@@ -4745,3 +4745,24 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 4fa3271] auto(ingestion+ai): synced 2026-09-20 history data
+ 3 files changed, 4676 insertions(+), 1 deletion(-)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_UK_National_Archives_1789860431.txt
+To github.com:zenkio/hk-history-research.git
+   7b81d36..4fa3271  main -> main
+LLM analysis failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+Git push completed.
+[2026-09-20T00:27:23.374275] Starting source ingestion...
+Saved: raw_UK_National_Archives_1789860443.txt
+Saved: raw_UK_National_Archives_1789860443.txt
+Saved: raw_UK_National_Archives_1789860443.txt
+Skipping HK_Memory_Project due to error or offline feed: HTTP Error 404: Not Found
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:6: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

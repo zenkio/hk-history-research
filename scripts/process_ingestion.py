@@ -26,7 +26,7 @@ def analyze_and_route(filepath):
         content = f.read()
 
     # LLM Analysis
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     prompt = f"""Analyze the following text about Hong Kong history and return a structured response:
     1. Summary (one sentence)
     2. Tags (comma separated)

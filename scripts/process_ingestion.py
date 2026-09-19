@@ -32,9 +32,8 @@ def process_file(filepath):
 
 def run_git_commit():
     try:
-        # Use full paths and ensure environment
         env = os.environ.copy()
-        env["PATH"] = "/usr/bin:" + env.get("PATH", "")
+        env["GIT_SSH_COMMAND"] = "ssh -o BatchMode=yes"
         
         subprocess.run(["/usr/bin/git", "add", "."], cwd=PROJECT_ROOT, check=True, env=env)
         msg = f"auto(ingestion): synced {datetime.now().strftime('%Y-%m-%d')} history data"

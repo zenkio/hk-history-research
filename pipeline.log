@@ -40,3 +40,41 @@ Saved: raw_UK_National_Archives_1789859962.txt
 Saved: raw_UK_National_Archives_1789859962.txt
 Saved: raw_UK_National_Archives_1789859962.txt
 Skipping HK_Memory_Project due to error or offline feed: HTTP Error 404: Not Found
+[main b34eb1a] auto(ingestion): synced 2026-09-20 history data
+ 3 files changed, 21 insertions(+), 2 deletions(-)
+ create mode 100644 04_Ingestion_Queue/raw_UK_National_Archives_1789859962.txt
+To github.com:zenkio/hk-history-research.git
+   112c3b1..b34eb1a  main -> main
+Git push completed.
+[2026-09-20T00:26:31.305905] Starting source ingestion...
+Saved: raw_UK_National_Archives_1789860391.txt
+Saved: raw_UK_National_Archives_1789860391.txt
+Saved: raw_UK_National_Archives_1789860391.txt
+Skipping HK_Memory_Project due to error or offline feed: HTTP Error 404: Not Found
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:6: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/zenkio/hk-history-research/scripts/process_ingestion.py", line 7, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2026-09-20T00:26:39.318079] Starting source ingestion...
+Saved: raw_UK_National_Archives_1789860399.txt
+Saved: raw_UK_National_Archives_1789860399.txt
+Saved: raw_UK_National_Archives_1789860399.txt
+Skipping HK_Memory_Project due to error or offline feed: HTTP Error 404: Not Found
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:6: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

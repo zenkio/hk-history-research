@@ -7123,3 +7123,64 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main f0d9cc8] auto(ingestion+ai-lite): synced 2026-09-20 history data
+ 24 files changed, 3842 insertions(+)
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1789941602_2966542610649722645.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789941611_-7756944537070206375.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789941611_3552079731144198379.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789941611_8044410895620374609.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789941611_8338105401188231103.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789941611_896107692695793984.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789941606_-8896406412083680384.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789941606_1692875259220738451.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789941606_2272183153262591340.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789941606_6182773191236936477.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789941606_7235713595497833304.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789941602_-4990401557474905883.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789941602_-56371567432970521.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789941602_-6911616655660618498.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789941602_2436541307122904663.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789941603_-3618395490759440631.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789941603_3535621986928124176.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789941603_4318402070160937110.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789941610_-3029008457163181031.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789941610_-6659969315067852260.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789941610_2426745151636688021.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789941610_4861118981812753159.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789941610_7056796323903846336.txt
+To github.com:zenkio/hk-history-research.git
+   bdfa0ed..f0d9cc8  main -> main
+Git push completed.
+[2026-09-20T23:30:01.485271] Starting source ingestion...
+Saved: raw_HK_History_Centre_1789943401_7304748004478541141.txt
+Saved: raw_HK_History_Centre_1789943401_-2947638524868414137.txt
+Saved: raw_HK_History_Centre_1789943401_5081578620156911052.txt
+Saved: raw_HK_History_Centre_1789943401_-4867282252074774127.txt
+Saved: raw_HK_History_Centre_1789943401_-28127660507929413.txt
+Saved: raw_Historical_Photos_HK_1789943401_3562954866233348322.txt
+Saved: raw_Historical_Photos_HK_1789943401_7244517956353515269.txt
+Saved: raw_Historical_Photos_HK_1789943401_9020626347696898654.txt
+Saved: raw_Gwulo_Old_HK_1789943403_-3475612511739628104.txt
+Saved: raw_Gwulo_Old_HK_1789943403_5298182012880135894.txt
+Saved: raw_Gwulo_Old_HK_1789943403_-1047588544866990234.txt
+Saved: raw_Gwulo_Old_HK_1789943403_-1159027164599707110.txt
+Saved: raw_Gwulo_Old_HK_1789943403_-2754201409814434092.txt
+Saved: raw_Industrial_History_HK_1789943407_6035345705070585778.txt
+Saved: raw_Industrial_History_HK_1789943407_-3643279973933515633.txt
+Saved: raw_Industrial_History_HK_1789943407_6084003222190231152.txt
+Saved: raw_Industrial_History_HK_1789943407_7983350111192121193.txt
+Saved: raw_Industrial_History_HK_1789943407_-28631506397128402.txt
+Saved: raw_Battle_For_HK_1789943408_-8466141030705399542.txt
+Saved: raw_Battle_For_HK_1789943408_36199250310162449.txt
+Saved: raw_Battle_For_HK_1789943408_1972419327242468330.txt
+Saved: raw_Battle_For_HK_1789943408_-6027307016977147265.txt
+Saved: raw_Battle_For_HK_1789943408_2034405254214282321.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

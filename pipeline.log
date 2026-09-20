@@ -6515,4 +6515,260 @@ Please retry in 28.927443514s. [links {
 , retry_delay {
   seconds: 28
 }
+][main 64f244f] auto(ingestion+ai): synced 2026-09-20 history data
+ 24 files changed, 4448 insertions(+)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1789936210_-3533253117998259272.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1789936210_-5201274698344558478.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1789936210_-539745172936066762.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1789936210_-689035525918342836.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1789936210_-7372635850086055621.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1789936204_-3639732387985580563.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1789936204_-4075253690933167321.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1789936204_-8359193884880881558.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1789936204_1344345492222740296.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1789936204_3619143396328550470.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1789936202_-1907524402751063636.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1789936202_3540956311621893898.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1789936202_5170315127671085403.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1789936202_6459757296702157481.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1789936202_7421489690203862389.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1789936202_-2033142177098172456.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1789936202_-6418982728676219754.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1789936202_1132582298095382505.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1789936208_-7217483409687039181.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1789936208_-8027728438062750281.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1789936208_5330266848653591178.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1789936208_7040499472450112863.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1789936208_7569867480363926431.txt
+To github.com:zenkio/hk-history-research.git
+   abe396c..64f244f  main -> main
+
+LLM analysis failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 28.721911235s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 28
+}
 ]
+LLM analysis failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 28.531317289s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 28
+}
+]
+LLM analysis failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 28.157080632s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 28
+}
+]
+LLM analysis failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 27.909954855s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 27
+}
+]
+Git push completed.
+[2026-09-20T21:51:12.532954] Starting source ingestion...
+Saved: raw_HK_History_Centre_1789937472_1985128618994971885.txt
+Saved: raw_HK_History_Centre_1789937472_7080044043916039080.txt
+Saved: raw_HK_History_Centre_1789937472_7204234714402741960.txt
+Saved: raw_HK_History_Centre_1789937472_217647827275082902.txt
+Saved: raw_HK_History_Centre_1789937472_-455906911798768066.txt
+Saved: raw_Historical_Photos_HK_1789937473_-4168075305222151132.txt
+Saved: raw_Historical_Photos_HK_1789937473_6665763148103324889.txt
+Saved: raw_Historical_Photos_HK_1789937473_-3473442814332422631.txt
+Saved: raw_Gwulo_Old_HK_1789937476_3430049024828623255.txt
+Saved: raw_Gwulo_Old_HK_1789937476_5732430166919484234.txt
+Saved: raw_Gwulo_Old_HK_1789937476_388262704636525423.txt
+Saved: raw_Gwulo_Old_HK_1789937476_-7209502844854752019.txt
+Saved: raw_Gwulo_Old_HK_1789937476_6494213362263430940.txt
+Saved: raw_Industrial_History_HK_1789937479_-5708008797794608097.txt
+Saved: raw_Industrial_History_HK_1789937479_3167714929775131188.txt
+Saved: raw_Industrial_History_HK_1789937479_-7871450122160730320.txt
+Saved: raw_Industrial_History_HK_1789937479_1745166682583015587.txt
+Saved: raw_Industrial_History_HK_1789937479_-3741132773375938858.txt
+Saved: raw_Battle_For_HK_1789937480_6770010933227637641.txt
+Saved: raw_Battle_For_HK_1789937480_4522545276007171039.txt
+Saved: raw_Battle_For_HK_1789937480_5384633273659974173.txt
+Saved: raw_Battle_For_HK_1789937480_8267027528573862004.txt
+Saved: raw_Battle_For_HK_1789937480_5680528999590663763.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/zenkio/hk-history-research/scripts/process_ingestion.py", line 10, in <module>
+    from google.generativeai.types import FinishReason
+ImportError: cannot import name 'FinishReason' from 'google.generativeai.types' (/home/zenkio/hk-history-research/venv/lib/python3.12/site-packages/google/generativeai/types/__init__.py)
+[2026-09-20T21:53:49.445694] Starting source ingestion...
+Saved: raw_HK_History_Centre_1789937629_-2212656498748016711.txt
+Saved: raw_HK_History_Centre_1789937629_-2293733429165653421.txt
+Saved: raw_HK_History_Centre_1789937629_-1597108275023042127.txt
+Saved: raw_HK_History_Centre_1789937629_8741499216518682716.txt
+Saved: raw_HK_History_Centre_1789937629_-4693246029130629149.txt
+Saved: raw_Historical_Photos_HK_1789937630_7067476580317325898.txt
+Saved: raw_Historical_Photos_HK_1789937630_3281794405331780086.txt
+Saved: raw_Historical_Photos_HK_1789937630_-4045156841608498552.txt
+Saved: raw_Gwulo_Old_HK_1789937633_-1718362652490513332.txt
+Saved: raw_Gwulo_Old_HK_1789937633_3663077668798312888.txt
+Saved: raw_Gwulo_Old_HK_1789937633_-7174207072213072171.txt
+Saved: raw_Gwulo_Old_HK_1789937633_8218577347360449112.txt
+Saved: raw_Gwulo_Old_HK_1789937633_-8560641458002251081.txt
+Saved: raw_Industrial_History_HK_1789937639_738580469855952863.txt
+Saved: raw_Industrial_History_HK_1789937639_413183240039336514.txt
+Saved: raw_Industrial_History_HK_1789937639_-3705095679873187560.txt
+Saved: raw_Industrial_History_HK_1789937639_3016959491555958099.txt
+Saved: raw_Industrial_History_HK_1789937639_6345743186918477013.txt
+Saved: raw_Battle_For_HK_1789937640_-3736866163292207112.txt
+Saved: raw_Battle_For_HK_1789937640_-7812540207596593278.txt
+Saved: raw_Battle_For_HK_1789937640_-6901371961568650657.txt
+Saved: raw_Battle_For_HK_1789937640_7344921964204895910.txt
+Saved: raw_Battle_For_HK_1789937640_7927138188364152711.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+[2026-09-20T22:00:01.595999] Starting source ingestion...
+Saved: raw_HK_History_Centre_1789938002_-3528949209341274937.txt
+Saved: raw_HK_History_Centre_1789938002_8904914211091068204.txt
+Saved: raw_HK_History_Centre_1789938002_-4909054270095704087.txt
+Saved: raw_HK_History_Centre_1789938002_3110296516540906751.txt
+Saved: raw_HK_History_Centre_1789938002_8930689194952897692.txt
+Saved: raw_Historical_Photos_HK_1789938002_1704622691685770681.txt
+Saved: raw_Historical_Photos_HK_1789938002_-385532011488795291.txt
+Saved: raw_Historical_Photos_HK_1789938002_8098334721882035940.txt
+Saved: raw_Gwulo_Old_HK_1789938005_-5391408636221366865.txt
+Saved: raw_Gwulo_Old_HK_1789938005_7708396566908064836.txt
+Saved: raw_Gwulo_Old_HK_1789938005_705522419897351755.txt
+Saved: raw_Gwulo_Old_HK_1789938005_-1987534468688526376.txt
+Saved: raw_Gwulo_Old_HK_1789938005_-3957046496912881935.txt
+Saved: raw_Industrial_History_HK_1789938009_9218248156331268583.txt
+Saved: raw_Industrial_History_HK_1789938009_5834183390228998622.txt
+Saved: raw_Industrial_History_HK_1789938009_-2548797825261824214.txt
+Saved: raw_Industrial_History_HK_1789938009_-4590857775839614447.txt
+Saved: raw_Industrial_History_HK_1789938009_-7667293854871446226.txt
+Saved: raw_Battle_For_HK_1789938011_4881130161802661094.txt
+Saved: raw_Battle_For_HK_1789938011_4299801378437295401.txt
+Saved: raw_Battle_For_HK_1789938011_-2585217551255896341.txt
+Saved: raw_Battle_For_HK_1789938011_-4209123114937415879.txt
+Saved: raw_Battle_For_HK_1789938011_4150988888029717052.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+[2026-09-20T22:00:09.765028] Starting source ingestion...
+Saved: raw_HK_History_Centre_1789938010_-2182306200329586250.txt
+Saved: raw_HK_History_Centre_1789938010_7024173114687842458.txt
+Saved: raw_HK_History_Centre_1789938010_8036797365431261122.txt
+Saved: raw_HK_History_Centre_1789938010_-8119565676981481110.txt
+Saved: raw_HK_History_Centre_1789938010_-5775929273092722183.txt
+Saved: raw_Historical_Photos_HK_1789938010_-8361356896350821734.txt
+Saved: raw_Historical_Photos_HK_1789938010_8059353098916988588.txt
+Saved: raw_Historical_Photos_HK_1789938010_138466593140800166.txt
+Saved: raw_Gwulo_Old_HK_1789938012_-250516484222969175.txt
+Saved: raw_Gwulo_Old_HK_1789938012_-2763052092185952864.txt
+Saved: raw_Gwulo_Old_HK_1789938012_3191483982855254380.txt
+Saved: raw_Gwulo_Old_HK_1789938012_6196106542107527897.txt
+Saved: raw_Gwulo_Old_HK_1789938012_-6669447380574349987.txt
+Saved: raw_Industrial_History_HK_1789938015_-2492169942013851323.txt
+Saved: raw_Industrial_History_HK_1789938015_2887707894674017341.txt
+Saved: raw_Industrial_History_HK_1789938015_-223319770184763634.txt
+Saved: raw_Industrial_History_HK_1789938015_8863960611954254783.txt
+Saved: raw_Industrial_History_HK_1789938015_-3893642405334827757.txt
+Saved: raw_Battle_For_HK_1789938016_-5078182522620460385.txt
+Saved: raw_Battle_For_HK_1789938016_7517947724975957720.txt
+Saved: raw_Battle_For_HK_1789938016_-3746451262286637297.txt
+Saved: raw_Battle_For_HK_1789938016_4920460513584349575.txt
+Saved: raw_Battle_For_HK_1789938016_896613811999081989.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

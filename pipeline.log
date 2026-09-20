@@ -4929,3 +4929,23 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main c249cac] auto(ingestion+ai): synced 2026-09-20 history data
+ 2 files changed, 34 insertions(+)
+ create mode 100644 01_Timeline/raw_UK_National_Archives_1789876801.txt
+To github.com:zenkio/hk-history-research.git
+   bf4aec3..c249cac  main -> main
+Git push completed.
+[2026-09-20T06:00:02.008187] Starting source ingestion...
+Saved: raw_UK_National_Archives_1789880402.txt
+Saved: raw_UK_National_Archives_1789880402.txt
+Saved: raw_UK_National_Archives_1789880402.txt
+Skipping HK_Memory_Project due to error or offline feed: HTTP Error 404: Not Found
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:6: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

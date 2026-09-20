@@ -22,9 +22,9 @@ def setup_dirs():
     os.makedirs(ANGLES_DIR, exist_ok=True)
     os.makedirs(UNVERIFIED_DIR, exist_ok=True)
 
-def call_gemini_with_backoff(content, max_retries=5):
+def call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite", max_retries=5):
     """Calls Gemini with exponential backoff and structured JSON output."""
-    model = genai.GenerativeModel('gemini-3.5-flash')
+    model = genai.GenerativeModel(model_name)
     
     prompt = f"""Analyze the following text about Hong Kong history.
     Return ONLY a JSON object with the following structure:
@@ -45,7 +45,6 @@ def call_gemini_with_backoff(content, max_retries=5):
             )
             return json.loads(response.text)
         except Exception as e:
-            # Simple check for rate limit (429 is not explicitly in the exception message usually)
             if attempt == max_retries - 1:
                 raise e
             sleep_time = (base_delay * (2 ** attempt)) + random.uniform(0, 1)
@@ -56,7 +55,8 @@ def analyze_and_route(filepath):
         content = f.read()
 
     try:
-        analysis = call_gemini_with_backoff(content)
+        # Use Flash-Lite for initial categorization
+        analysis = call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite")
         
         # Prepend analysis to file
         with open(filepath, 'r+', encoding='utf-8') as f:
@@ -85,7 +85,7 @@ def run_git_commit():
         env["GIT_SSH_COMMAND"] = "ssh -o BatchMode=yes"
         
         subprocess.run(["/usr/bin/git", "add", "."], cwd=PROJECT_ROOT, check=True, env=env)
-        msg = f"auto(ingestion+ai-hardened): synced {datetime.now().strftime('%Y-%m-%d')} history data"
+        msg = f"auto(ingestion+ai-lite): synced {datetime.now().strftime('%Y-%m-%d')} history data"
         subprocess.run(["/usr/bin/git", "commit", "-m", msg], cwd=PROJECT_ROOT, check=True, env=env)
         subprocess.run(["/usr/bin/git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True, env=env)
         print("Git push completed.")
@@ -94,12 +94,8 @@ def run_git_commit():
 
 if __name__ == "__main__":
     setup_dirs()
-    files_processed = False
-    for filename in os.listdir(QUEUE_DIR)[:2]:
-        filepath = os.path.join(QUEUE_DIR, filename)
-        if os.path.isfile(filepath) and filename.startswith("raw_"):
-            analyze_and_route(filepath)
-            files_processed = True
-    
-    if files_processed:
+    # Process only 1 file to be safe
+    files = [f for f in os.listdir(QUEUE_DIR) if f.startswith("raw_") and os.path.isfile(os.path.join(QUEUE_DIR, f))]
+    if files:
+        analyze_and_route(os.path.join(QUEUE_DIR, files[0]))
         run_git_commit()

@@ -17677,3 +17677,5 @@ https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/READM
 To github.com:zenkio/hk-history-research.git
    aa19501..1126d2d  main -> main
 Git push completed.
+/home/zenkio/hk-history-research/scripts/run_pipeline.sh: line 6: /home/zenkio/hk-history-research/scripts/fetch_sources.py: cannot execute: required file not found
+/home/zenkio/hk-history-research/scripts/run_pipeline.sh: line 7: /home/zenkio/hk-history-research/scripts/process_ingestion.py: cannot execute: required file not found

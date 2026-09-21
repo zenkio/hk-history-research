@@ -17649,3 +17649,31 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 1126d2d] auto(ingestion+ai-lite): synced 2026-09-21 history data
+ 24 files changed, 3843 insertions(+)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1789948813_5203379826651935229.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789948813_-8906540728380621010.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789948813_-903988759230220986.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789948813_4082787067151120631.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1789948813_6975123807206312699.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789948808_-2177838515978938203.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789948808_-4281786761756893981.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789948808_-4587052108338533107.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789948808_-5871458624848415000.txt
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1789948808_7515893161445977984.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789948803_-163215612000176318.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789948803_-3913122764333638979.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789948803_-5870571435460296093.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789948803_-6148157603474311900.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1789948803_8005872862342239633.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789948804_-2117049951386014354.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789948804_-7875898113646676593.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1789948804_-8673138616624447998.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789948811_-7572433012118379034.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789948811_1893804908317461733.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789948811_8939341587351244145.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789948812_561402219020642551.txt
+ create mode 100644 04_Ingestion_Queue/raw_Industrial_History_HK_1789948812_5702916186235940967.txt
+To github.com:zenkio/hk-history-research.git
+   aa19501..1126d2d  main -> main
+Git push completed.

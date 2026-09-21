@@ -23,9 +23,7 @@ def setup_dirs():
     os.makedirs(UNVERIFIED_DIR, exist_ok=True)
 
 def call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite", max_retries=5):
-    """Calls Gemini with exponential backoff and structured JSON output."""
     model = genai.GenerativeModel(model_name)
-    
     prompt = f"""Analyze the following text about Hong Kong history.
     Return ONLY a JSON object with the following structure:
     {{
@@ -55,16 +53,13 @@ def analyze_and_route(filepath):
         content = f.read()
 
     try:
-        # Use Flash-Lite for initial categorization
         analysis = call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite")
         
-        # Prepend analysis to file
         with open(filepath, 'r+', encoding='utf-8') as f:
             old_content = f.read()
             f.seek(0, 0)
             f.write(f"---\n{json.dumps(analysis, indent=2)}\n---\n\n{old_content}")
             
-        # Determine destination
         category = analysis.get("category", "Unverified")
         if category == "Timeline":
             dest = os.path.join(TIMELINE_DIR, os.path.basename(filepath))
@@ -85,7 +80,7 @@ def run_git_commit():
         env["GIT_SSH_COMMAND"] = "ssh -o BatchMode=yes"
         
         subprocess.run(["/usr/bin/git", "add", "."], cwd=PROJECT_ROOT, check=True, env=env)
-        msg = f"auto(ingestion+ai-lite): synced {datetime.now().strftime('%Y-%m-%d')} history data"
+        msg = f"auto(ingestion+ai-batch): synced {datetime.now().strftime('%Y-%m-%d %H:%M')} history data"
         subprocess.run(["/usr/bin/git", "commit", "-m", msg], cwd=PROJECT_ROOT, check=True, env=env)
         subprocess.run(["/usr/bin/git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True, env=env)
         print("Git push completed.")
@@ -94,8 +89,11 @@ def run_git_commit():
 
 if __name__ == "__main__":
     setup_dirs()
-    # Process only 1 file to be safe
+    # Process ALL files in the queue in one batch
     files = [f for f in os.listdir(QUEUE_DIR) if f.startswith("raw_") and os.path.isfile(os.path.join(QUEUE_DIR, f))]
     if files:
-        analyze_and_route(os.path.join(QUEUE_DIR, files[0]))
+        for f in files:
+            analyze_and_route(os.path.join(QUEUE_DIR, f))
+        
+        # Perform commit/push only ONCE at the end of the batch
         run_git_commit()

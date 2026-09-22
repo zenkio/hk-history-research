@@ -11,7 +11,6 @@ permissions:
   pages: write
   id-token: write
 
-# 關鍵設定：防止背景 Bot 頻繁 Push 導致 Deployment 互相沖突崩潰
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -25,8 +24,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 必須設為 0，Quartz Graph View 才能讀取完整的 Git Commit 歷史與雙向連結
 
       - name: Setup Node.js v24
         uses: actions/setup-node@v4

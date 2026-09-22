@@ -19765,3 +19765,32 @@ To github.com:zenkio/hk-history-research.git
    e2b71ed..9f1b377  main -> main
 Quota exceeded for gemini-3.1-flash-lite, trying next model...
 Git push completed.
+[2026-09-22T13:30:01.723649] Starting source ingestion...
+Saved: raw_HK_History_Centre_1790080202_4611341754539882900.txt
+Saved: raw_HK_History_Centre_1790080202_-1139573446155792454.txt
+Saved: raw_HK_History_Centre_1790080202_4431105232931893002.txt
+Saved: raw_HK_History_Centre_1790080202_5299476646252766905.txt
+Saved: raw_HK_History_Centre_1790080202_-1766372534640008788.txt
+Saved: raw_Historical_Photos_HK_1790080203_3300679596672875525.txt
+Saved: raw_Historical_Photos_HK_1790080203_-8312213545104162657.txt
+Saved: raw_Historical_Photos_HK_1790080203_4482154290286751711.txt
+Saved: raw_Historical_Photos_HK_1790080203_-258524456739268084.txt
+Saved: raw_Gwulo_Old_HK_1790080205_-2953635527758525252.txt
+Saved: raw_Gwulo_Old_HK_1790080205_-8990306180518943151.txt
+Saved: raw_Gwulo_Old_HK_1790080205_279908096591802795.txt
+Saved: raw_Gwulo_Old_HK_1790080205_6895692276269452615.txt
+Saved: raw_Gwulo_Old_HK_1790080205_-6598353113930093260.txt
+Saved: raw_Battle_For_HK_1790080216_5081074668466052850.txt
+Saved: raw_Battle_For_HK_1790080216_-7597360139446902084.txt
+Saved: raw_Battle_For_HK_1790080216_5677569947289257407.txt
+Saved: raw_Battle_For_HK_1790080216_-8218801885804488332.txt
+Saved: raw_Battle_For_HK_1790080216_8717718927582299457.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:10: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

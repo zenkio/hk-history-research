@@ -1,0 +1,710 @@
+---
+{
+  "summary": "This update from the Gwulo website highlights new historical discussions, photo identifications, and community research regarding 20th-century Hong Kong architecture, wartime events, and cultural landmarks.",
+  "tags": [
+    "Hong Kong history",
+    "Gwulo",
+    "archival photography",
+    "World War II",
+    "local heritage"
+  ],
+  "category": "Timeline"
+}
+---
+
+Title: <a href="https://gwulo.com/node/62644" hreflang="en">New on Gwulo: 2026, week 32</a>
+Source: https://gwulo.com/node/62644
+Feed: Gwulo_Old_HK
+
+Content:
+<p>What's new and updated on the Gwulo website:</p>
+<p><strong>General</strong></p>
+<ul>
+<li><strong>Gwulo talks in York and Edinburgh</strong>. The venues are booked, and look perfect for viewing old photos - York has a large screen &amp; projector that is used for a community cinema, and Edinburgh has tiered seating and is one of the venues for Edinburgh Fringe. Links to details &amp; booking below (please let any friends know you think might be interested!):
+<ul>
+<li><a href="https://gwulo.com/node/62632"><strong>York on Saturday 5 September 2026</strong></a><br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62640"><strong>Edinburgh on Wednesday 9 September 2026</strong></a><br />&nbsp;</li>
+</ul>
+</li>
+<li>Thanks to philk, moddsey, and Jimmy for identifying the location of these slides in <a href="https://www.youtube.com/watch?v=jd1slNB-Hbc"><strong>last week's video</strong></a>:
+<ul>
+<li>Shatin Valley
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55690" hreflang="en"><img alt="19 Ploughing" class="image-style-extra-large-640x640-" height="434" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/zk19-ploughing.slide_.3200.2026-06-18-0011.zip_.1200px.jpg?itok=SigO0uNR" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>19 Ploughing, by <a href="https://gwulo.com/user/1">Admin</a></figcaption>
+</figure>
+</li>
+</ul>
+</li>
+<li>Victoria Park Swimming Pool
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55686" hreflang="en"><img alt="15 &lt;no title&gt;" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/zk15-no-title-...-chinese-lady.slide_.3200.2026-06-18-0013.zip_.1200px.jpg?itok=-ppVYw1o" width="429" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>15 , by <a href="https://gwulo.com/user/1">Admin</a></figcaption>
+</figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>But the location of these two is still unknown:
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55688" hreflang="en"><img alt="17 Country View N.T." class="image-style-extra-large-640x640-" height="435" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/zk17-country-view-n.t.slide_.3200.2026-06-18-0015.zip_.1200px.jpg?itok=nA30TMdX" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>17 Country View N.T., by <a href="https://gwulo.com/user/1">Admin</a></figcaption>
+</figure>
+</li>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55683" hreflang="en"><img alt="12 Dragon Boat Racing" class="image-style-extra-large-640x640-" height="435" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/zk12-dragon-boat-racing.slide_.3200.2026-06-18-0018.zip_.1200px.jpg?itok=B783VYRg" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>12 Dragon Boat Racing, by <a href="https://gwulo.com/user/1">Admin</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+</li>
+</ul>
+</li>
+<li><a href="https://gwulo.com/node/62619"><strong>First football matches after WWII</strong></a><br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62620"><strong>Early History and Migrations of Saiyingpun School (1850s–1891)</strong></a><br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/61525"><em><strong>Time to Remember</strong></em><strong> (audio; radio series 1960-70s)</strong></a><br />&nbsp;</li>
+<li>Readers ask:
+<ul>
+<li><a href="https://gwulo.com/comment/80547#comment-80547"><strong>Looking for a photo of 1 Queen's Road West with red facade signage</strong></a><br />&nbsp;</li>
+<li><a href="https://gwulo.com/media/55667"><strong>Who were ASECO (Asiatic European Corporation Ltd.) and A.J. van der Weiden</strong></a>, in Hong Kong in the mid-1960s<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62628"><strong>What was the name of the disco in Bank of America Tower in the 1990s?</strong></a><br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62639"><strong>Is there any documentation that lists Shipping movements in / out of HK in the period of my interest (1843-1845)</strong></a>; Port Authority documents, Newspapers, being 2 that immediately come to mind?<br />&nbsp;</li>
+<li class="ck-list-marker-bold"><strong>Can you identify any of the people in these caricatures drawn in the 1930s?</strong>
+<ul>
+<li>There are two sketches of the first man
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55714" hreflang="en"><img alt="Portrait of an unknown person - can you help ID him?" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4862.jpeg?itok=Rjs5e1Qy" width="480" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Portrait of an unknown person - can you help ID him?, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+</li>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55715" hreflang="en"><img alt="Portrait of an unknown person - can you help ID him?" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4863.jpeg?itok=JcEoJAKj" width="480" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Portrait of an unknown person - can you help ID him?, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+</li>
+</ul>
+</li>
+<li>But only one of this man, labelled 'Red Blouse' in Russian
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55713" hreflang="en"><img alt="Portrait of an unknown person - can you help ID him?" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4861.jpeg?itok=4uO38JM5" width="480" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Portrait of an unknown person - can you help ID him?, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+</li>
+</ul>
+</li>
+<li>And no clues for this one
+<ul>
+<li>
+<figure class="caption caption-drupal-media">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55716" hreflang="en"><img alt="Portrait of an unknown person - can you help ID him?" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4864.jpeg?itok=LYQUeNRw" width="480" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Portrait of an unknown person - can you help ID him?, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><br /><strong>Places</strong></p>
+<!--break-->
+<p><em>(Click a Place's link below to visit its page - you'll see all the photos we have for it, and can add your memories of the Place to its comments.)</em></p>
+<ul>
+<li>Kowloon
+<ul>
+<li><a href="https://gwulo.com/node/62621"><strong>Kai Tak Runway 13 / 31</strong></a> [1958- ]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62636"><strong>Tai Hang Sai Estate</strong></a> [c.1965- ]</li>
+</ul>
+</li>
+<li>Hong Kong Island
+<ul>
+<li><a href="https://gwulo.com/node/62641"><strong>Aberdeen Main Road Public Toilet</strong></a> [????- ]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62611"><strong>Factory of Hong Kong Rubber Manufactory Ltd on New Praya, Kennedy Town</strong></a> [1936-????]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62613"><strong>Godowns on M.L. 182 - 177, Shek Tong Tsui</strong></a> [????-????]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62634"><strong>14 Queen's Road Central</strong></a> [????-c.1928]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62624"><strong>Rock Lane, Wanchai</strong></a> [c.1889-c.1992]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62617"><strong>Saiyingpun School from 1878 to 1891 (Actually classrooms)</strong></a> [????-????]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62616"><strong>School Quarter from 1878 to 1890 (where Fung Fu and his family lived)</strong></a> [????-????]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62637"><strong>Wing Fat Printing Co.'s printing works, Causeway Bay</strong></a> [????-????]</li>
+</ul>
+</li>
+<li>New Territories
+<ul>
+<li><a href="https://gwulo.com/node/62626"><strong>Li Yuan / Li Garden Folly</strong></a> [????-????]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62610"><strong>Old Tsung Kyam Church 崇謙堂</strong></a> [c.1927- ]<br />&nbsp;</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><br /><strong>Organisations &amp; People</strong></p>
+<p><em>(To see other pages on Gwulo that mention them, first click their name below to visit their page, then click their 'What links here' tab.)</em></p>
+<ul>
+<li><a href="https://gwulo.com/node/62630"><strong>Elsie ELLIOTT (aka Mrs Elsie Tu, 杜葉錫恩, CBE GBM)</strong></a> [1913-2015]<br />&nbsp;</li>
+<li>WW2
+<ul>
+<li><a href="https://gwulo.com/node/62562"><strong>Po Tin CHAK (aka 翟寶田醫生)</strong></a> [1922-2021], St John Ambulance / RAMC<br />&nbsp;</li>
+<li>Interned in Stanley Camp
+<ul>
+<li><a href="https://gwulo.com/node/11512"><strong>Albert Edward CAREY</strong></a> [1901-1944], HK Police<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62612"><strong>Frank EDWARDS</strong></a> [1886-????], Engineer Superintendent<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62642"><strong>Timothy MCCARTHY (aka Tim)</strong></a> [1912-2001], HK Police from 1934-1949<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/9264"><strong>John Ferguson MCGOWAN (aka Jack)</strong></a> [1899-1948]</li>
+</ul>
+</li>
+<li>HKVDC
+<ul>
+<li><a href="https://gwulo.com/node/62622"><strong>Adam BONE</strong></a> [1910-1942]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62638"><strong>Herbert BURSON</strong></a> [c.1904-1941]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62633"><strong>James Joseph HIGGINS</strong></a> [????-1943]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62591"><strong>Wing Ching KWOK (aka Gunner #4317 郭永澄)</strong></a> [1941-1941]</li>
+</ul>
+</li>
+<li>Other armed forces
+<ul>
+<li><a href="https://gwulo.com/node/62623"><strong>George William BOWDEN</strong></a> [1905-1941], Leading Seaman, HMS Tamar<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62627"><strong>Peter CHOI (aka Royal Artillery Gunner (5153) 蔡炳堯)</strong></a> [1922-2020]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62625"><strong>John MONRO (aka Lieutenant Colonel, MC, RA)</strong></a> [1914-1981]<br />&nbsp;</li>
+<li><a href="https://gwulo.com/node/62609"><strong>Stanley Arthur MUSTO</strong></a> [????-1942], HKSRA<br />&nbsp;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>&nbsp;</p>
+<p><strong>Photos</strong></p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55712" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4860.jpeg?itok=gqnD9MWP" width="480" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55711" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4859.jpeg?itok=c05wPTP0" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55710" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4857.jpeg?itok=mDUAMj4r" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55709" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4856.jpeg?itok=FlA2tQpX" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55708" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4855.jpeg?itok=W8oQeKIO" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55707" hreflang="en"><img alt="Life in 1930s Hong Kong" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_4854.jpeg?itok=NgMxLR2i" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Life in 1930s Hong Kong, by <a href="https://gwulo.com/user/340392">marmi011</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55610" hreflang="en"><img alt="Queen's Road Central - postcard" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/queen%27s-road-central-hk-pc-for-gwulo.jpeg?itok=hY7PTYm9" width="403" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Queen's Road Central - postcard, by <a href="https://gwulo.com/user/342069">dby</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55626" hreflang="en"><img alt="11-13 December 1941, Japanese 38th Division entered Tsim Sha Tsui" class="image-style-extra-large-640x640-" height="423" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/hong--kong-1941..and-the-truck-is-a-morris-pu-8cwt.jpg?itok=FFjzjgpv" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>11-13 December 1941, Japanese 38th Division entered Tsim Sha Tsui, by <a href="https://gwulo.com/user/349421">h9430500</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55417" hreflang="en"><img alt="Japanese bombardment of HKSRA 25 Medium Battery positions around Tiger Balm Garden on 16 December 1941" class="image-style-extra-large-640x640-" height="557" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/artillery-on-balm-garden-battery-modified.jpg?itok=e8_uIUsQ" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Japanese bombardment of HKSRA 25 Medium Battery positions around Tiger Balm Garden on 16 December 1941, by <a href="https://gwulo.com/user/349421">h9430500</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55619" hreflang="en"><img alt="1938 - Pottinger Street - looking up." class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/1938---pottinger-street---looking-up..jpg?itok=W4iv18WV" width="505" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>1938 - Pottinger Street - looking up., by <a href="https://gwulo.com/user/342889">essarem</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55618" hreflang="en"><img alt="1938 - Pottinger Street - looking down" class="image-style-extra-large-640x640-" height="441" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/1938---an-unidentified-street%3B-knowledge-sought..jpg?itok=sVifIQb8" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>1938 - Pottinger Street - looking down, by <a href="https://gwulo.com/user/342889">essarem</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55645" hreflang="en"><img alt="Football match in Nov. 1945 at Club de Recreio" class="image-style-extra-large-640x640-" height="487" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/fb-v-cmdo-_1945.10a.png?itok=KtfcCnTM" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Football match in Nov. 1945 at Club de Recreio, by <a href="https://gwulo.com/user/349286">hkspace_wl</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55647" hreflang="en"><img alt="The Hong Kong Rubber Manufactory, Ltd.- Hong Kong Sunday Herald 26 July 1936" class="image-style-extra-large-640x640-" height="510" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/hong-kong-rubber-manufactory-ltd.jpg?itok=woXuewEM" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>The Hong Kong Rubber Manufactory, Ltd.- Hong Kong Sunday Herald 26 July 1936, by <a href="https://gwulo.com/user/335417">Freddie</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55636" hreflang="en"><img alt="1937 Typhoon - Damage to Factory of Hong Kong Rubber Manufactory Ltd on Praya, Kennedy Town" class="image-style-extra-large-640x640-" height="426" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/1937-warehouse-damage-1.jpg?itok=mT2bR5Nt" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>1937 Typhoon - Damage to Factory of Hong Kong Rubber Manufactory Ltd on Praya, Kennedy Town, by <a href="https://gwulo.com/user/461">moddsey</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55649" hreflang="en"><img alt="1900s Kerosine Godowns, Kennedy Town New Praya" class="image-style-extra-large-640x640-" height="512" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/20260729_154903.jpg?itok=w8WyMBhZ" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>1900s Kerosine Godowns, Kennedy Town New Praya, by <a href="https://gwulo.com/user/335417">Freddie</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55627" hreflang="en"><img alt="China Provident Godowns" class="image-style-extra-large-640x640-" height="340" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/vlcsnap-00232.jpg?itok=NnIWWHH5" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>China Provident Godowns, by <a href="https://gwulo.com/user/345">philk</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55338" hreflang="en"><img alt="Magazine Gap received heavy strafing from Japanese planes (23Dec41)" class="image-style-extra-large-640x640-" height="316" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/mgap2.jpg?itok=I-DZwwln" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Magazine Gap received heavy strafing from Japanese planes (20Dec41), by <a href="https://gwulo.com/user/349421">h9430500</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55628" hreflang="en"><img alt="0-4-4 Tank Locomotive supplied to KCR for the Fanling - Sha Tau Kok LIne" class="image-style-extra-large-640x640-" height="464" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/bagnell-0-4-4-loco-sep1925.jpg?itok=9ylBhxix" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>0-4-4 Tank Locomotive supplied to KCR for the Fanling - Sha Tau Kok LIne, by <a href="https://gwulo.com/user/1330">Chinarail</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55620" hreflang="en"><img alt="Ex-KCR Bagnall 0-4-0 tank locomotive in the Philippines 1993 " class="image-style-extra-large-640x640-" height="419" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/album-200.jpg?itok=WPcmEPsE" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Ex-KCR Bagnall 0-4-0 tank locomotive in the Philippines 1993 , by <a href="https://gwulo.com/user/1330">Chinarail</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55651" hreflang="en"><img alt="Tuen Mun-Sunday lunch visitors dropping in at the  Kadoorie's Boulder Lodge" class="image-style-extra-large-640x640-" height="455" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-07/sunday-lunch-visitors-dropping-in-to-the--kadoorie%27s-boulder-lodge-1983.jpg?itok=HYYYB9ZG" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Tuen Mun-Sunday lunch visitors dropping in at the Kadoorie's Boulder Lodge, by <a href="https://gwulo.com/user/632">IDJ</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55663" hreflang="en"><img alt="img 2850" class="image-style-extra-large-640x640-" height="408" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/img_2850.jpeg?itok=PkJIwNNz" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>MS 6 3/4, Sha Tau Kok, by <a href="https://gwulo.com/user/350922">Pingau</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55693" hreflang="en"><img alt="1928 - barking deer at Fanling" class="image-style-extra-large-640x640-" height="595" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/1928---barking-deer-at-fanling.jpg?itok=g0XHhCmC" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>1928 - barking deer at Fanling, by <a href="https://gwulo.com/user/342889">essarem</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55706" hreflang="en"><img alt="Official Seals of General Post Office from Queen Victoria to King George VI era (1894-1954)" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/official-seals-of-general-post-office.png?itok=6zi4_KUC" width="490" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Official Seals of General Post Office from Queen Victoria to King George VI era (1894-1954), by <a href="https://gwulo.com/user/348546">HCIIL</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55705" hreflang="en"><img alt="Chinese Funeral on Queen's Road Central" class="image-style-extra-large-640x640-" height="508" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/194726_v0_large.jpg?itok=facx5CxN" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Chinese Funeral on Queen's Road Central, by <a href="https://gwulo.com/user/333486">Klaus</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55724" hreflang="en"><img alt="Man Hing House (Front view)" class="image-style-extra-large-640x640-" height="480" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/image2.jpeg?itok=7Q-EMuob" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Man Hing House (Front view), by <a href="https://gwulo.com/user/350346">EthanCK</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55662" hreflang="en"><img alt="Kimberley Road" class="image-style-extra-large-640x640-" height="427" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/454833013_1561458708050734_7610677904443820027_n.jpg?itok=SC9gM6hQ" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Kimberley Road, by <a href="https://gwulo.com/user/345">philk</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55726" hreflang="en"><img alt="Hong Kong New Years Eve 1947" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/17b9b3f7-3679-41f5-9659-780fb9afbb72.png?itok=QtxKaBj1" width="512" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Hong Kong New Years Eve 1947: McCarthy / Gownes / Everest, by <a href="https://gwulo.com/user/350885">Philomena</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55699" hreflang="en"><img alt="PB003 &amp; LL003 Telegraph Bay 1963" class="image-style-extra-large-640x640-" height="640" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/pb003-telegraph-bay.jpg?itok=PQygb3kv" width="599" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>PB003 &amp; LL003 Telegraph Bay 1963, by <a href="https://gwulo.com/user/335417">Freddie</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55695" hreflang="en"><img alt="Pillbox 005 and Lyon Light 005 Aerial Photo 1963-Telegraph Bay" class="image-style-extra-large-640x640-" height="585" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/pb005-ll005-aerial-1963.jpg?itok=mM82slUl" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Pillbox 005 and Lyon Light 005 Aerial Photo 1963-Telegraph Bay, by <a href="https://gwulo.com/user/335417">Freddie</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55718" hreflang="en"><img alt="Richmond Estate " class="image-style-extra-large-640x640-" height="409" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/richmondestate.jpg?itok=9erNXyrg" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Richmond Estate , by <a href="https://gwulo.com/user/343696">WYIP</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55722" hreflang="en"><img alt="Deep Water Bay with barbed wire, HK Golf Club's club house converted to a food dump (1940s)" class="image-style-extra-large-640x640-" height="351" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/dwb-1941.PNG?itok=TYs55hhS" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Deep Water Bay with barbed wire, HK Golf Club's club house converted to a food dump (1940s), by <a href="https://gwulo.com/user/349421">h9430500</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<figure class="caption caption-drupal-media align-center">
+<article class="media media--type-image media--view-mode-embedded-in-ckeditor">
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <a href="https://gwulo.com/media/55730" hreflang="en"><img alt="Opening of CKR on Oct 1911, 1st train arrived Shenzhen Railway Station" class="image-style-extra-large-640x640-" height="413" src="https://gwulo.com/sites/default/files/styles/extra_large_640x640_/public/2026-08/516533140_24507848565465358_7169680613817959209_n.jpg?itok=l3tkOejx" width="640" />
+
+</a>
+</div>
+      
+  </article>
+
+<figcaption>Opening of CKR on Oct 1911, 1st train arrived Shenzhen Railway Station, by <a href="https://gwulo.com/user/349421">h9430500</a></figcaption>
+</figure>
+<p>&nbsp;</p>
+<p>Click to<strong> </strong><a href="https://gwulo.com/recent-photos"><strong>see all recently added photos</strong></a>.</p>

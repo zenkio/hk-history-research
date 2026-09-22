@@ -1,4 +1,4 @@
-#!/home/zenkio/hk-history-research/venv/bin/python3
+#!/usr/bin/env python3
 import os
 import urllib.request
 import xml.etree.ElementTree as ET

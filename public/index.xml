@@ -6,11 +6,65 @@
       <description>Last 10 notes on Quartz 5</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>00_Meta</title>
+    <link>https://quartz.jzhao.xyz/00_meta/</link>
+    <guid>https://quartz.jzhao.xyz/00_meta/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 22 Sep 2026 06:45:29 GMT</pubDate>
+  </item><item>
+    <title>Guides</title>
+    <link>https://quartz.jzhao.xyz/guides/</link>
+    <guid>https://quartz.jzhao.xyz/guides/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 22 Sep 2026 06:45:29 GMT</pubDate>
+  </item><item>
+    <title>Sources</title>
+    <link>https://quartz.jzhao.xyz/sources/</link>
+    <guid>https://quartz.jzhao.xyz/sources/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 22 Sep 2026 06:45:29 GMT</pubDate>
+  </item><item>
     <title>Tag Index</title>
     <link>https://quartz.jzhao.xyz/tags/</link>
     <guid>https://quartz.jzhao.xyz/tags/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Mon, 21 Sep 2026 01:26:51 GMT</pubDate>
+    <pubDate>Tue, 22 Sep 2026 06:45:29 GMT</pubDate>
+  </item><item>
+    <title>File_Index_And_Purposes</title>
+    <link>https://quartz.jzhao.xyz/00_meta/file_index_and_purposes</link>
+    <guid>https://quartz.jzhao.xyz/00_meta/file_index_and_purposes</guid>
+    <description><![CDATA[ File Index and Purposes This file acts as the master index for the project’s structure and the purpose of each component. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+  </item><item>
+    <title>Autonomous_Pipeline_Rules</title>
+    <link>https://quartz.jzhao.xyz/guides/autonomous_pipeline_rules</link>
+    <guid>https://quartz.jzhao.xyz/guides/autonomous_pipeline_rules</guid>
+    <description><![CDATA[ Autonomous Pipeline Rules Placeholder for rules governing the automated data research pipeline. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+  </item><item>
+    <title>Free_Bot_Ecosystem_Guide</title>
+    <link>https://quartz.jzhao.xyz/guides/free_bot_ecosystem_guide</link>
+    <guid>https://quartz.jzhao.xyz/guides/free_bot_ecosystem_guide</guid>
+    <description><![CDATA[ Free Bot Ecosystem Guide Placeholder for documentation on the bot ecosystem used for research. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+  </item><item>
+    <title>SSOT_Operating_Guide</title>
+    <link>https://quartz.jzhao.xyz/guides/ssot_operating_guide</link>
+    <guid>https://quartz.jzhao.xyz/guides/ssot_operating_guide</guid>
+    <description><![CDATA[ SSOT Operating Guide Placeholder for the Single Source of Truth operating procedures. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+  </item><item>
+    <title>Timeline_Framework</title>
+    <link>https://quartz.jzhao.xyz/guides/timeline_framework</link>
+    <guid>https://quartz.jzhao.xyz/guides/timeline_framework</guid>
+    <description><![CDATA[ Timeline Framework Placeholder for the structured Hong Kong history timeline framework. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+  </item><item>
+    <title>README</title>
+    <link>https://quartz.jzhao.xyz/readme</link>
+    <guid>https://quartz.jzhao.xyz/readme</guid>
+    <description><![CDATA[ Quartz v5 “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming Quartz is a set of tools that helps you publish your digital garden and notes as a website for free. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
   </item>
     </channel>
   </rss>

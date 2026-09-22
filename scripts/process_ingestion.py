@@ -1,4 +1,4 @@
-#!/home/zenkio/hk-history-research/venv/bin/python3
+#!/usr/bin/env python3
 import os
 import shutil
 import subprocess
@@ -6,10 +6,14 @@ import time
 import random
 import json
 from datetime import datetime
+from dotenv import load_dotenv
 import google.generativeai as genai
 
+# Load environment variables from the .env file
+load_dotenv()
+
 # Configure API
-genai.configure(api_key="AIzaSyALsBmRBxPMPs8IPeVeuGLYOHvaCgpLzYM")
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 PROJECT_ROOT = "/home/zenkio/hk-history-research"
 QUEUE_DIR = os.path.join(PROJECT_ROOT, "04_Ingestion_Queue")
@@ -22,8 +26,10 @@ def setup_dirs():
     os.makedirs(ANGLES_DIR, exist_ok=True)
     os.makedirs(UNVERIFIED_DIR, exist_ok=True)
 
-def call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite", max_retries=5):
-    model = genai.GenerativeModel(model_name)
+# Model hierarchy for fallback
+MODEL_TIERS = ["gemini-3.1-flash-lite", "gemini-3.5-flash-lite", "gemma-4-26b"]
+
+def call_gemini_with_fallback(content, max_retries=3):
     prompt = f"""Analyze the following text about Hong Kong history.
     Return ONLY a JSON object with the following structure:
     {{
@@ -34,26 +40,32 @@ def call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite", max_re
     Text: {content}
     """
     
-    base_delay = 2
-    for attempt in range(max_retries):
+    for model_name in MODEL_TIERS:
         try:
+            model = genai.GenerativeModel(model_name)
             response = model.generate_content(
                 prompt,
                 generation_config={"response_mime_type": "application/json"}
             )
             return json.loads(response.text)
         except Exception as e:
-            if attempt == max_retries - 1:
-                raise e
-            sleep_time = (base_delay * (2 ** attempt)) + random.uniform(0, 1)
-            time.sleep(sleep_time)
+            # Check for Quota Exceeded (429)
+            if "429" in str(e):
+                print(f"Quota exceeded for {model_name}, trying next model...")
+                continue
+            else:
+                # For non-429 errors, we might want to fail or retry
+                print(f"Error with {model_name}: {e}")
+                continue
+    
+    raise Exception("All models exhausted or failed.")
 
 def analyze_and_route(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
     try:
-        analysis = call_gemini_with_backoff(content, model_name="gemini-2.5-flash-lite")
+        analysis = call_gemini_with_fallback(content)
         
         with open(filepath, 'r+', encoding='utf-8') as f:
             old_content = f.read()

@@ -37,8 +37,8 @@ jobs:
         run: npm ci
 
       - name: Build Quartz Site
-        # Using npx quartz build as the most reliable way to invoke the installed CLI
-        run: npx quartz build
+        # Using explicit package name to ensure correct CLI invocation
+        run: npx @jackyzha0/quartz build
 
       - name: Disable Jekyll in Public Output
         run: touch public/.nojekyll

@@ -1,4 +1,7 @@
 venv/
 node_modules/
-quartz/
 .env
+server.pid
+server.log
+pipeline.log
+public/

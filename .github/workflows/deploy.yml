@@ -1,15 +1,17 @@
-name: Deploy Quartz to GitHub Pages
+name: Deploy Quartz 5.0 to GitHub Pages
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 關鍵設定：防止背景 Bot 頻繁 Push 導致 Deployment 互相沖突崩潰
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -21,24 +23,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # 必須設為 0，Quartz Graph View 才能讀取完整的 Git Commit 歷史與雙向連結
 
-      - name: Setup Node.js
+      - name: Setup Node.js v24
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci || npm install
 
-      - name: Build Quartz
-        run: node quartz/bootstrap-cli.mjs build
+      - name: Build Quartz Site
+        run: npx quartz build
 
-      - name: Upload artifact
+      - name: Disable Jekyll in Public Output
+        run: touch public/.nojekyll
+
+      - name: Upload Quartz Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public

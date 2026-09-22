@@ -19740,3 +19740,28 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 9f1b377] auto(ingestion+ai-batch): synced 2026-09-22 13:06 history data
+ 22 files changed, 4072 insertions(+), 8 deletions(-)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790078415_-1752756811763975313.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790078415_-4594870507449068601.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790078415_-7777984477832765922.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790078405_-8063381198151552656.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790078405_4744279008407645702.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790078405_4773200092006108007.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790078405_936346256790692909.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790078402_-2344643591395961368.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790078402_6949604644181200622.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790078402_7328968452577317269.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790078402_7904114594375453814.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790078403_3072221105723692478.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790078415_1036197190317588039.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790078415_6181929581242513472.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790078405_2860992655237496871.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790078403_-3136590606129636762.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790078403_1635190618285926720.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790078403_480653894983779173.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790078402_-3302584585200160440.txt
+To github.com:zenkio/hk-history-research.git
+   e2b71ed..9f1b377  main -> main
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Git push completed.

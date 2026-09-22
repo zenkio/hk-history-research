@@ -1,3 +1,16 @@
+---
+{
+  "summary": "A guest blog post by historian Dr Catherine S. Chan discusses her book exploring the history of dogs in British colonial Hong Kong.",
+  "tags": [
+    "Hong Kong history",
+    "British colonial era",
+    "animal history",
+    "dogs"
+  ],
+  "category": "Angles"
+}
+---
+
 Title: Guest blog: Hong Kong’s animal outliers: Chinese ‘wonks’ in a British colonial city
 Source: https://blog.hphkbristol.net/2026/09/15/guest-blog-hong-kongs-animal-outliers-chinese-wonks-in-a-british-colonial-city/
 Feed: Historical_Photos_HK

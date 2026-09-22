@@ -1,0 +1,19 @@
+---
+{
+  "summary": "Professor Ray Yep, Research Director of the Hong Kong History Centre, shares a blog post focusing on Cold War history and colonial governance in Hong Kong.",
+  "tags": [
+    "Ray Yep",
+    "Cold War",
+    "Colonial Governance",
+    "Hong Kong History Centre"
+  ],
+  "category": "Angles"
+}
+---
+
+Title: An Island Boy
+Source: https://blog.hphkbristol.net/2026/09/22/island-boy/
+Feed: Historical_Photos_HK
+
+Content:
+This post comes from Professor Ray Yep, Research Director of the Hong Kong History Centre. Ray&#8217;s research focuses on Cold War history and colonial governance of Hong Kong. His latest publications include Man in a hurry: Murray MacLehose and Colonial &#8230; <a href="https://blog.hphkbristol.net/2026/09/22/island-boy/">Continue reading <span class="meta-nav">&#8594;</span></a>

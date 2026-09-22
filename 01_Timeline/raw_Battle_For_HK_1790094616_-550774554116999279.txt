@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This text explores the wartime remains and history of the 3.7-inch AA gun battery at Stanley Gap, focusing on the fierce fighting and tragic events that occurred there on December 19, 1941.",
+  "tags": [
+    "Stanley Gap",
+    "Battle for Hong Kong",
+    "WWII",
+    "AA Battery",
+    "Jardines Lookout"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Stanley Gap in the Battle for Hong Kong
 Source: http://battleforhongkong.blogspot.com/2025/08/stanley-gap-in-battle-for-hong-kong.html
 Feed: Battle_For_HK

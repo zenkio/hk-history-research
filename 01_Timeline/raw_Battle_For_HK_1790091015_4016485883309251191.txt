@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This text provides a historical overview of the Royal Navy receiving ships stationed in Hong Kong Harbour during the 19th and 20th centuries, detailing the roles, histories, and fates of vessels like HMS Minden, HMS Alligator, and HMS Tamar.",
+  "tags": [
+    "Royal Navy",
+    "Hong Kong Harbour",
+    "Receiving Ships",
+    "Maritime History",
+    "19th Century"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Receiving ships in Hong Kong Harbour during the 19th Century
 Source: http://battleforhongkong.blogspot.com/2025/05/receiving-ships-in-hong-kong-harbour.html
 Feed: Battle_For_HK

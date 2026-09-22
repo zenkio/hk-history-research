@@ -1,3 +1,17 @@
+---
+{
+  "summary": "Vivian Kong, Co-Director of the Hong Kong History Centre, discusses promoting family history research and preservation among the global Hong Kong diaspora.",
+  "tags": [
+    "Hong Kong History Centre",
+    "family history",
+    "diaspora",
+    "Vivian Kong",
+    "University of Bristol"
+  ],
+  "category": "Angles"
+}
+---
+
 Title: HPHK and Family History
 Source: https://blog.hphkbristol.net/2026/09/10/hphk-and-family-history/
 Feed: Historical_Photos_HK

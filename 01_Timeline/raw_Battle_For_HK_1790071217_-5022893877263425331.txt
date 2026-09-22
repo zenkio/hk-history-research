@@ -1,3 +1,18 @@
+---
+{
+  "summary": "This article examines 1941 correspondence between Hong Kong Governors Sir Geoffry Northcote, Sir Mark Young, and Colonial Office official Sir Edward Gent, revealing internal colonial administrative challenges, corruption concerns, and pre-war defense preparations.",
+  "tags": [
+    "Hong Kong history",
+    "colonial administration",
+    "Sir Mark Young",
+    "Sir Geoffry Northcote",
+    "World War II",
+    "British Empire"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Exchange of letters between the Governor of Hong Kong and the Colonial Office in London in 1941
 Source: http://battleforhongkong.blogspot.com/2025/11/exchange-of-letters-between-governor-of.html
 Feed: Battle_For_HK

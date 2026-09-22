@@ -19134,4 +19134,546 @@ metadata {
 }
 , locale: "en-US"
 message: "API key not valid. Please pass a valid API key."
+][main 88fcb97] auto(ingestion+ai-batch): synced 2026-09-22 12:16 history data
+ 383 files changed, 22886 insertions(+), 226 deletions(-)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790069417_5703931918898650213.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790071217_6009353648359266365.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790074817_-62850529852794430.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790074817_6192112542314468417.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790069405_-1124865645930419663.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790071206_52783655058939789.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790071206_7130405402230117010.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790074806_-4056523205487658077.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790074806_-4844785549825990471.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790074806_-7443019996619591595.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790074806_2120154539916472075.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790074806_2887703658297098064.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790069402_8791793059780027014.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790071203_2182151791290124551.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790074802_-7141960741598656655.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790074802_1773329331847248394.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790074802_608140960946016653.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790074802_6451578698064718756.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790071203_1063784091469817045.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790071203_5098341766748760483.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790074803_-5025547022995474387.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790074803_1840468683064067794.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790069405_3145966214229602166.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790069405_8052241217195086880.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790071206_-7523693597125712775.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790069403_-1224564682337330513.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790069403_5215368088884787352.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790074803_-3246137594901648554.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937480_5680528999590663763.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937480_6770010933227637641.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937480_8267027528573862004.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937640_-3736866163292207112.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937640_-6901371961568650657.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937640_-7812540207596593278.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937640_7344921964204895910.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789937640_7927138188364152711.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938011_-2585217551255896341.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938011_-4209123114937415879.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938011_4150988888029717052.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938011_4299801378437295401.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938011_4881130161802661094.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938016_-3746451262286637297.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938016_-5078182522620460385.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938016_4920460513584349575.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938016_7517947724975957720.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789938016_896613811999081989.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789939810_-2557354427662106313.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789939810_120575283769029098.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789939810_2105423919052755583.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789939810_5611128385736065075.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789939810_7317641085668252341.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789941611_-7756944537070206375.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789941611_3552079731144198379.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789941611_8044410895620374609.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789941611_8338105401188231103.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789941611_896107692695793984.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789943408_-6027307016977147265.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789943408_-8466141030705399542.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789943408_1972419327242468330.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789943408_2034405254214282321.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789943408_36199250310162449.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789945213_-4700333949597003948.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789945213_-4994244727927471772.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789945213_4432157260818275858.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789945213_8681626058506876615.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789945213_969532985948079410.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789947010_-1189919612727528942.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789947010_-1877197856132674406.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789947010_-4199694566658698744.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789947010_-5630375451620069567.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789947010_819706067516103186.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789948813_-8906540728380621010.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789948813_-903988759230220986.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789948813_4082787067151120631.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Battle_For_HK_1789948813_6975123807206312699.txt (100%)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790066728_-1437088679545464537.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790066728_-2658531210249564171.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790066728_-3422053780365203660.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790066728_-789022250353732909.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790066728_8608224494091140711.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790067615_-4084563051009316652.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790067615_-6857825564485247159.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790067615_1406272512642547378.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790067615_4345583514249954036.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790067615_7382894841931896834.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790069417_-222023975971521989.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790069417_-5710113156432527348.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790069417_-6526849181543755502.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790069417_1408564029060371805.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790071217_-6938488495482290981.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790071217_7576709292960259611.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937476_-7209502844854752019.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937476_3430049024828623255.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937476_5732430166919484234.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937476_6494213362263430940.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937633_-1718362652490513332.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937633_-7174207072213072171.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937633_-8560641458002251081.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789937633_3663077668798312888.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938005_-1987534468688526376.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938005_-3957046496912881935.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938005_-5391408636221366865.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938005_7708396566908064836.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938012_-250516484222969175.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938012_-2763052092185952864.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938012_-6669447380574349987.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938012_3191483982855254380.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789938012_6196106542107527897.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789939805_-2088604491175932297.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789939805_-2150248064665549563.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789939805_-2435285595846491418.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789939805_-6217211211192251003.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789939805_2405493000900633629.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789941606_-8896406412083680384.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789941606_1692875259220738451.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789941606_2272183153262591340.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789941606_6182773191236936477.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789941606_7235713595497833304.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789943403_-1047588544866990234.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789943403_-1159027164599707110.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789943403_-2754201409814434092.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789943403_5298182012880135894.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789945208_-184146925991819437.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789945208_-6238193583912518343.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789945208_-8846755918290687293.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789945208_1195533589276671393.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789945208_6031609682975061618.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789947005_-284538709997602865.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789947005_-7216530180059710426.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789947005_-9201547968178364656.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789947005_2560076242434233679.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789947005_3172582525089826707.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789948808_-2177838515978938203.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789948808_-4281786761756893981.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789948808_-4587052108338533107.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789948808_-5871458624848415000.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1789948808_7515893161445977984.txt (100%)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790066716_-1946436024167018511.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790066716_-2215291468887058400.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790066716_-5655966941286532364.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790066716_-6883323110925115732.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790066716_1695945931629540836.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790067604_1108941445672871039.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790067604_1885516627462471094.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790067604_4424281772062761068.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790067604_5162009218639952134.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790067604_8453333042593329384.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790069405_-3618207837165482608.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790069405_8420229221635092746.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790071206_-3802543213953194432.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790071206_8603429778567536625.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937472_-455906911798768066.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937472_1985128618994971885.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937472_217647827275082902.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937472_7204234714402741960.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937629_-1597108275023042127.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937629_-2212656498748016711.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937629_-2293733429165653421.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937629_-4693246029130629149.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789937629_8741499216518682716.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938002_-3528949209341274937.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938002_-4909054270095704087.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938002_3110296516540906751.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938002_8904914211091068204.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938002_8930689194952897692.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938010_-2182306200329586250.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938010_-5775929273092722183.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938010_-8119565676981481110.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938010_7024173114687842458.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789938010_8036797365431261122.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789939802_-5606108444408849002.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789939802_2053764815072148137.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789939802_8048027675733198081.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789939802_8053845956300892411.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789941602_-4990401557474905883.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789941602_-56371567432970521.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789941602_-6911616655660618498.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789941602_2436541307122904663.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789943401_-28127660507929413.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789943401_-4867282252074774127.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789943401_5081578620156911052.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789943401_7304748004478541141.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789945203_-1241636231238142595.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789945203_-8556210976097308440.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789945203_-8802940209909581242.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789945203_1532046984476115373.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789945203_8337852428284907157.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789947002_-3855993076237607678.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789947002_-482827122089897410.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789947002_-7877673791851699687.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789947002_5829776715422143557.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789948803_-163215612000176318.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789948803_-3913122764333638979.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789948803_-5870571435460296093.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789948803_-6148157603474311900.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_HK_History_Centre_1789948803_8005872862342239633.txt (100%)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790066712_-2684941789739777329.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790066712_-269672957315791587.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790066712_-7691811573403303762.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790066712_-888512670978768939.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790066712_-8939404147962707849.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790067601_-3098007085979032967.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790067601_-4075980325226310494.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790067601_-7481041977790596007.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790067601_1287350314404085454.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790067601_7991118390041472590.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790069402_-2984055584294117783.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790069402_-4437089953718172566.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790069402_6234854906180902570.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790069402_6903793286452957943.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790071203_-2173659800122736347.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790071203_-3694268868510832707.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790071203_-5787751208501500690.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790074802_-6704246443317510348.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789937473_-4168075305222151132.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789937473_6665763148103324889.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789937630_-4045156841608498552.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789937630_7067476580317325898.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938002_-385532011488795291.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938002_1704622691685770681.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938002_8098334721882035940.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938010_-8361356896350821734.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938010_138466593140800166.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789938010_8059353098916988588.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789939802_7426947106062000017.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789939802_7834568192445910562.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789939802_7868846850034387184.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789941603_-3618395490759440631.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789941603_3535621986928124176.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789941603_4318402070160937110.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789943401_3562954866233348322.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789943401_7244517956353515269.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789943401_9020626347696898654.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789945203_-3783663441819283837.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789945203_2300333808546812631.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789945203_3333270762826953401.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789947002_-496954342644581348.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789947002_-8147140472632495455.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789947002_5129240972461065543.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789948804_-2117049951386014354.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789948804_-7875898113646676593.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Historical_Photos_HK_1789948804_-8673138616624447998.txt (100%)
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790066713_-2696004494815231214.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790066713_-6207132778805769183.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790066713_-7794144716264211626.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790066713_-8742065381859476775.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790067601_-7366652309783699163.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790067601_-7576667434565357905.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790067601_-8221535594530373905.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790067601_933820758008278029.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790069403_-4007387371086234189.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790071203_5038560919895884628.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790071203_6633545850673171725.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937479_-3741132773375938858.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937479_-5708008797794608097.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937479_1745166682583015587.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937479_3167714929775131188.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937639_-3705095679873187560.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937639_413183240039336514.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937639_6345743186918477013.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789937639_738580469855952863.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938009_-2548797825261824214.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938009_-4590857775839614447.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938009_-7667293854871446226.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938009_5834183390228998622.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938009_9218248156331268583.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938015_-223319770184763634.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938015_-2492169942013851323.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938015_-3893642405334827757.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938015_2887707894674017341.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789938015_8863960611954254783.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789939809_-4775374057784978332.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789939809_-7999965453844882089.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789939809_4576823294202512925.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789939809_4578287562272456101.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789939809_6880777008062634718.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789941610_-3029008457163181031.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789941610_-6659969315067852260.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789941610_2426745151636688021.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789941610_4861118981812753159.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789941610_7056796323903846336.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789943407_-28631506397128402.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789943407_-3643279973933515633.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789943407_6035345705070585778.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789943407_6084003222190231152.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789943407_7983350111192121193.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789945212_-1696588129826636210.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789945212_-5161823754665172912.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789945212_-7394903301338653112.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789945212_4597162346147550206.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789945212_5439689050212977558.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789947009_-384257925448854459.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789947009_-6238654513933946172.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789947009_-8270256720181722113.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789947009_2770513255032585678.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789947009_7329300868362808770.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789948811_-7572433012118379034.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789948811_1893804908317461733.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789948811_8939341587351244145.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789948812_561402219020642551.txt (100%)
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Industrial_History_HK_1789948812_5702916186235940967.txt (100%)
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1790071217_-1326941941831189167.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1790071217_-5022893877263425331.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1790074817_-5278648820472290774.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1790074817_-5809638336955840842.txt
+ create mode 100644 04_Ingestion_Queue/raw_Battle_For_HK_1790074817_-8061078815775510793.txt
+ create mode 100644 04_Ingestion_Queue/raw_HK_History_Centre_1790071203_-5084384579850350627.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1790069403_6673460360935652099.txt
+ create mode 100644 04_Ingestion_Queue/raw_Historical_Photos_HK_1790074803_-6664278211212738677.txt
+ create mode 100644 public/00_Meta/File_Index_And_Purposes.html
+ create mode 100644 public/00_meta/file_index_and_purposes-og-image.webp
+ create mode 100644 public/00_meta/file_index_and_purposes.html
+ create mode 100644 public/00_meta/index-og-image.webp
+ create mode 100644 public/00_meta/index.html
+ create mode 100644 public/01_timeline/raw_battle_for_hk_1789948813_5203379826651935229.txt
+ create mode 100644 public/01_timeline/raw_gwulo_old_hk_1789943403_-3475612511739628104.txt
+ create mode 100644 public/01_timeline/raw_hk_history_centre_1789939802_5968581398925074126.txt
+ create mode 100644 public/01_timeline/raw_hk_history_centre_1789941602_2966542610649722645.txt
+ create mode 100644 public/01_timeline/raw_hk_history_centre_1789943401_-2947638524868414137.txt
+ create mode 100644 public/01_timeline/raw_hk_history_centre_1789947002_-7744649353557985154.txt
+ create mode 100644 public/01_timeline/raw_uk_national_archives_1789876801.txt
+ create mode 100644 public/01_timeline/raw_uk_national_archives_1789880402.txt
+ create mode 100644 public/01_timeline/raw_uk_national_archives_1789912803.txt
+ create mode 100644 public/01_timeline/raw_uk_national_archives_1789927202.txt
+ create mode 100644 public/01_timeline/raw_uk_national_archives_1789932602.txt
+ create mode 100644 public/03_angles/raw_historical_photos_hk_1789937630_3281794405331780086.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789860544.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789862402.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789866001.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789869602.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789873201.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789887602.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789891202.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789894803.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789898401.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789905602.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789914602.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789916403.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789918203.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789921803.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789923603.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789925403.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789929004.txt
+ create mode 100644 public/03_angles/raw_uk_national_archives_1789930804.txt
+ create mode 100644 public/Guides/Autonomous_Pipeline_Rules.html
+ create mode 100644 public/Guides/Free_Bot_Ecosystem_Guide.html
+ create mode 100644 public/Guides/SSOT_Operating_Guide.html
+ create mode 100644 public/Guides/Timeline_Framework.html
+ create mode 100644 public/README.html
+ create mode 100644 public/Sources/Sources_Registry.html
+ create mode 100644 public/guides/autonomous_pipeline_rules-og-image.webp
+ create mode 100644 public/guides/autonomous_pipeline_rules.html
+ create mode 100644 public/guides/free_bot_ecosystem_guide-og-image.webp
+ create mode 100644 public/guides/free_bot_ecosystem_guide.html
+ create mode 100644 public/guides/index-og-image.webp
+ create mode 100644 public/guides/index.html
+ create mode 100644 public/guides/ssot_operating_guide-og-image.webp
+ create mode 100644 public/guides/ssot_operating_guide.html
+ create mode 100644 public/guides/timeline_framework-og-image.webp
+ create mode 100644 public/guides/timeline_framework.html
+ create mode 100644 public/readme-og-image.webp
+ create mode 100644 public/readme.html
+ create mode 100644 public/sources/index-og-image.webp
+ create mode 100644 public/sources/index.html
+ create mode 100644 public/sources/sources_registry-og-image.webp
+ create mode 100644 public/sources/sources_registry.html
+ delete mode 100644 public/static/giscus/dark.css
+ delete mode 100644 public/static/giscus/light.css
+ delete mode 100644 public/static/icon.png
+ delete mode 100644 public/static/og-image.png
+ create mode 100755 scripts/serve_preview.py
+ create mode 100644 server.log
+ create mode 100644 server.pid
+To github.com:zenkio/hk-history-research.git
+   d0c353b..88fcb97  main -> main
+
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
 ]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+LLM analysis failed: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+Git push completed.
+[2026-09-22T12:30:01.993715] Starting source ingestion...
+Saved: raw_HK_History_Centre_1790076602_8087335063752461459.txt
+Saved: raw_HK_History_Centre_1790076602_7840399295716070861.txt
+Saved: raw_HK_History_Centre_1790076602_2105074580598998693.txt
+Saved: raw_HK_History_Centre_1790076602_-1303019668994870458.txt
+Saved: raw_HK_History_Centre_1790076602_4324850241694218692.txt
+Saved: raw_Historical_Photos_HK_1790076602_-1441442483910215484.txt
+Saved: raw_Historical_Photos_HK_1790076602_8331032374414758412.txt
+Saved: raw_Historical_Photos_HK_1790076602_-2549173416256759253.txt
+Saved: raw_Historical_Photos_HK_1790076602_524700017288399011.txt
+Saved: raw_Gwulo_Old_HK_1790076604_4770474036315973487.txt
+Saved: raw_Gwulo_Old_HK_1790076604_-1458512255665344664.txt
+Saved: raw_Gwulo_Old_HK_1790076604_-2360061253878763466.txt
+Saved: raw_Gwulo_Old_HK_1790076604_5153251758689761226.txt
+Saved: raw_Gwulo_Old_HK_1790076604_-733269178773311643.txt
+Saved: raw_Battle_For_HK_1790076615_-3950907793255662547.txt
+Saved: raw_Battle_For_HK_1790076615_-870939440682695270.txt
+Saved: raw_Battle_For_HK_1790076615_-5706214047531709506.txt
+Saved: raw_Battle_For_HK_1790076615_-8547507399734176666.txt
+Saved: raw_Battle_For_HK_1790076615_7144266174327816044.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:10: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

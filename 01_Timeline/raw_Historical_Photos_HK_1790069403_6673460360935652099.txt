@@ -1,3 +1,16 @@
+---
+{
+  "summary": "The Hong Kong History Centre at the University of Bristol has launched an online platform featuring a collection of historical photographs released under a Creative Commons licence.",
+  "tags": [
+    "Hong Kong History",
+    "Photography",
+    "Digital Archives",
+    "University of Bristol"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Introducing Historical Photographs of Hong Kong
 Source: https://blog.hphkbristol.net/2026/09/02/introducing-historical-photographs-of-hong-kong/
 Feed: Historical_Photos_HK

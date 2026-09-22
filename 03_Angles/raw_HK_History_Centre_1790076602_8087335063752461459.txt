@@ -1,0 +1,19 @@
+---
+{
+  "summary": "The Hong Kong History Centre has launched an open access online platform featuring historical photographs of Hong Kong.",
+  "tags": [
+    "Hong Kong",
+    "Photography",
+    "Digital Archives",
+    "History"
+  ],
+  "category": "Angles"
+}
+---
+
+Title: We’ve launched an open access platform, Historical Photographs of Hong Kong!
+Source: https://www.hkhistory.net/2026/09/09/hphk-launch/
+Feed: HK_History_Centre
+
+Content:
+<p>New resource alert! We&#8217;ve launched an open access platform, <a href="http://hphkbristol.net">Historical Photographs of Hong Kong</a>. We&#8217;ll &#8230;</p>

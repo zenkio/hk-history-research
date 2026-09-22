@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This book review examines Francis Braun's 1982 memoir, which details his experiences in Japanese-occupied Hong Kong and the failed effort to issue overprinted banknotes following the war.",
+  "tags": [
+    "Hong Kong history",
+    "Japanese occupation",
+    "banknotes",
+    "Francis Braun",
+    "book review"
+  ],
+  "category": "Angles"
+}
+---
+
 Title: Book Review: The Banknote that never was
 Source: http://battleforhongkong.blogspot.com/2025/05/book-rview-banknote-that-never-was.html
 Feed: Battle_For_HK

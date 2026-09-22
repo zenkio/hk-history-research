@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This article details the historical significance and current state of the 3.7-inch AA gun battery site at Stanley Gap, which was a critical location during the Battle of Hong Kong in 1941.",
+  "tags": [
+    "Battle of Hong Kong",
+    "Stanley Gap",
+    "WWII",
+    "Military History",
+    "Hong Kong History"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Stanley Gap in the Battle for Hong Kong
 Source: http://battleforhongkong.blogspot.com/2025/08/stanley-gap-in-battle-for-hong-kong.html
 Feed: Battle_For_HK

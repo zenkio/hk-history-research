@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This text provides a weekly update from the Gwulo website detailing historical Hong Kong discussions, photo identifications, and community research regarding people, places, and events from the 19th and 20th centuries.",
+  "tags": [
+    "Gwulo",
+    "Local History",
+    "World War II",
+    "Historic Photos",
+    "Hong Kong"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: <a href="https://gwulo.com/node/62644" hreflang="en">New on Gwulo: 2026, week 32</a>
 Source: https://gwulo.com/node/62644
 Feed: Gwulo_Old_HK

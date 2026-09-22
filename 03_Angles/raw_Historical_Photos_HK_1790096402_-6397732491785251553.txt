@@ -1,3 +1,16 @@
+---
+{
+  "summary": "Professor Ray Yep discusses his research on Hong Kong's Cold War history and colonial governance, featuring his latest publication on Murray MacLehose.",
+  "tags": [
+    "Ray Yep",
+    "Cold War",
+    "Colonial Governance",
+    "Murray MacLehose"
+  ],
+  "category": "Angles"
+}
+---
+
 Title: An Island Boy
 Source: https://blog.hphkbristol.net/2026/09/22/island-boy/
 Feed: Historical_Photos_HK

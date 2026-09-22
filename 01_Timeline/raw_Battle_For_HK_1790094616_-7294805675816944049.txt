@@ -1,3 +1,16 @@
+---
+{
+  "summary": "This text details the deployment, equipment, and historical records of 2-inch and 3-inch mortars used by Allied forces during the Battle for Hong Kong in December 1941.",
+  "tags": [
+    "Battle for Hong Kong",
+    "World War II",
+    "Military History",
+    "Mortars"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: Mortars deployed in the Battle for Hong Kong December 1941
 Source: http://battleforhongkong.blogspot.com/2025/10/mortars-deployed-in-battle-for-hong.html
 Feed: Battle_For_HK

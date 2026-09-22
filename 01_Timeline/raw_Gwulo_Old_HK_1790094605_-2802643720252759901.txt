@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This text provides a weekly update from the Gwulo website detailing historical discussions, wartime diary transcriptions, new historical photographs, and research regarding Hong Kong's past.",
+  "tags": [
+    "Gwulo",
+    "World War II",
+    "Local History",
+    "Historical Photos",
+    "Hong Kong"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: <a href="https://gwulo.com/node/63194" hreflang="en">New on Gwulo: 2026, week 38</a>
 Source: https://gwulo.com/node/63194
 Feed: Gwulo_Old_HK

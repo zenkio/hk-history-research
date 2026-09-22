@@ -20255,3 +20255,143 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 72e7e01] auto(ingestion+ai-batch): synced 2026-09-22 17:36 history data
+ 57 files changed, 8226 insertions(+)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790091015_-3956805605308034485.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790091015_-8929212051841534647.txt
+ rename {04_Ingestion_Queue => 01_Timeline}/raw_Battle_For_HK_1790091015_4016485883309251191.txt (96%)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790092815_-1495422791924172455.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790092815_-6578721070772535080.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790092815_391477080208235795.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790094616_-550774554116999279.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790094616_-901334136278939541.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790091004_-7348691087744724427.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790091004_-7930065112134484455.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790091004_702782506770969303.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790092805_-5328715714826196291.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790092805_114969446268179185.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790092805_4976983336802104988.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790092805_6433107406926774109.txt
+ rename {04_Ingestion_Queue => 01_Timeline}/raw_HK_History_Centre_1790091002_-1267399319695448591.txt (75%)
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790091002_-1674046215140195655.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790091002_-7741913823593375470.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790091002_599660782255071088.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790092802_-1267268214742977913.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790092802_-8444342759783918930.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790092802_4252710042825322337.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790092802_6881308911641532653.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790094602_-5123919211867166317.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790091002_4939527953899897569.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790092802_-8705011280800811437.txt
+ rename 04_Ingestion_Queue/raw_Historical_Photos_HK_1790091002_6339026950472051096.txt => 01_Timeline/raw_Historical_Photos_HK_1790092802_4926900674758641958.txt (62%)
+ rename 04_Ingestion_Queue/raw_Historical_Photos_HK_1790091002_4939527953899897569.txt => 01_Timeline/raw_Historical_Photos_HK_1790094602_597032455621859153.txt (63%)
+ rename {04_Ingestion_Queue => 03_Angles}/raw_Battle_For_HK_1790091015_-8291205182126572579.txt (96%)
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790092815_-6341715335758597129.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790092815_8952722421843948147.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790094616_-1689171990045043301.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790091004_4755691280318748199.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790094605_-4711105045679762066.txt
+ create mode 100644 03_Angles/raw_HK_History_Centre_1790091002_-1726034528099303815.txt
+ create mode 100644 03_Angles/raw_HK_History_Centre_1790092802_-3560614421120894341.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790091002_-7385768521740254351.txt
+ rename {04_Ingestion_Queue => 03_Angles}/raw_Historical_Photos_HK_1790091002_-8734527488505547785.txt (70%)
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790091002_6339026950472051096.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790092802_1499645207257962167.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790092802_8884306032499554615.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790094602_-6437697588931406677.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790094602_2514330491472235294.txt
+ rename 04_Ingestion_Queue/{ => Unverified}/raw_Gwulo_Old_HK_1790091004_-1453097945368022085.txt (100%)
+ rename 04_Ingestion_Queue/{raw_Gwulo_Old_HK_1790091004_-7930065112134484455.txt => Unverified/raw_Gwulo_Old_HK_1790092805_-6182594030857802804.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_Battle_For_HK_1790091015_-3956805605308034485.txt => raw_Battle_For_HK_1790094616_-3581697668959285631.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_Battle_For_HK_1790091015_-8929212051841534647.txt => raw_Battle_For_HK_1790094616_-7294805675816944049.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_Gwulo_Old_HK_1790091004_4755691280318748199.txt => raw_Gwulo_Old_HK_1790094605_-2802643720252759901.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_Gwulo_Old_HK_1790091004_702782506770969303.txt => raw_Gwulo_Old_HK_1790094605_-9126148873041785401.txt} (100%)
+ create mode 100644 04_Ingestion_Queue/raw_Gwulo_Old_HK_1790094605_5295872294209888926.txt
+ rename 04_Ingestion_Queue/{raw_Gwulo_Old_HK_1790091004_-7348691087744724427.txt => raw_Gwulo_Old_HK_1790094605_9010111530922476136.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_HK_History_Centre_1790091002_-7741913823593375470.txt => raw_HK_History_Centre_1790094602_1170921940490708297.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_HK_History_Centre_1790091002_-1726034528099303815.txt => raw_HK_History_Centre_1790094602_3289626538043464633.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_HK_History_Centre_1790091002_-1674046215140195655.txt => raw_HK_History_Centre_1790094602_3372545494079787820.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_HK_History_Centre_1790091002_599660782255071088.txt => raw_HK_History_Centre_1790094602_5744438074774296317.txt} (100%)
+ rename 04_Ingestion_Queue/{raw_Historical_Photos_HK_1790091002_-7385768521740254351.txt => raw_Historical_Photos_HK_1790094602_-9048338601481757327.txt} (100%)
+To github.com:zenkio/hk-history-research.git
+   0d2957c..72e7e01  main -> main
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Error with gemini-3.5-flash-lite: 504 Deadline Exceeded
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Git push completed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Traceback (most recent call last):
+  File "/home/zenkio/hk-history-research/scripts/process_ingestion.py", line 108, in <module>
+    analyze_and_route(os.path.join(QUEUE_DIR, f))
+  File "/home/zenkio/hk-history-research/scripts/process_ingestion.py", line 64, in analyze_and_route
+    with open(filepath, 'r', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zenkio/hk-history-research/04_Ingestion_Queue/raw_Gwulo_Old_HK_1790091004_-7930065112134484455.txt'
+[2026-09-22T18:00:01.744411] Starting source ingestion...
+Saved: raw_HK_History_Centre_1790096402_1703530481757270689.txt
+Saved: raw_HK_History_Centre_1790096402_-1221343898096097957.txt
+Saved: raw_HK_History_Centre_1790096402_-9173024256467710387.txt
+Saved: raw_HK_History_Centre_1790096402_-7115740706227520306.txt
+Saved: raw_HK_History_Centre_1790096402_1986489520275009040.txt
+Saved: raw_Historical_Photos_HK_1790096402_-6397732491785251553.txt
+Saved: raw_Historical_Photos_HK_1790096402_-3064838997763062297.txt
+Saved: raw_Historical_Photos_HK_1790096402_4486105845211527425.txt
+Saved: raw_Historical_Photos_HK_1790096402_133895604995661882.txt
+Saved: raw_Gwulo_Old_HK_1790096405_3487873512485405058.txt
+Saved: raw_Gwulo_Old_HK_1790096405_4532140933250641950.txt
+Saved: raw_Gwulo_Old_HK_1790096405_7258672596747191374.txt
+Saved: raw_Gwulo_Old_HK_1790096405_3088511968861162484.txt
+Saved: raw_Gwulo_Old_HK_1790096405_9024305780959841004.txt
+Saved: raw_Battle_For_HK_1790096416_-6680764013128271592.txt
+Saved: raw_Battle_For_HK_1790096416_3642000865247649828.txt
+Saved: raw_Battle_For_HK_1790096416_-3901387748501609860.txt
+Saved: raw_Battle_For_HK_1790096416_-1231942716766910790.txt
+Saved: raw_Battle_For_HK_1790096416_-6198193534359545722.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:10: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

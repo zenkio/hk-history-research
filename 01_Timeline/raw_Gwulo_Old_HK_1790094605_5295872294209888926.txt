@@ -1,3 +1,17 @@
+---
+{
+  "summary": "This weekly update from the Gwulo website highlights new historical content, wartime diaries, biographies, community discussions, and historic photographs related to Hong Kong.",
+  "tags": [
+    "Gwulo",
+    "Hong Kong history",
+    "World War II",
+    "POW camp",
+    "historical photographs"
+  ],
+  "category": "Timeline"
+}
+---
+
 Title: <a href="https://gwulo.com/node/62715" hreflang="en">New on Gwulo: 2026, week 34</a>
 Source: https://gwulo.com/node/62715
 Feed: Gwulo_Old_HK

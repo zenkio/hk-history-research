@@ -37,7 +37,8 @@ jobs:
         run: npm ci
 
       - name: Build Quartz Site
-        run: npx quartz build
+        # Use the npm script defined in package.json
+        run: npm run quartz build
 
       - name: Disable Jekyll in Public Output
         run: touch public/.nojekyll

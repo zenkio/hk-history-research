@@ -20643,3 +20643,114 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 6247b40] auto(ingestion+ai-batch): synced 2026-09-22 20:30 history data
+ 25 files changed, 4073 insertions(+)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790105411_1200506548736381723.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790105411_8949975884603866242.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790105404_-2486084993721504962.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790105404_-5749110715622753193.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790105404_-7936663142117450380.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790105404_2270800011429519644.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790105404_-3013965165440254307.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790105410_-1918627193888911049.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790105410_-4799807843989337622.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790105410_-8289965172557677936.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790105411_-3068236597997825068.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790105411_2363050299794308913.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790105406_-1303728016012531607.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790105406_6177949397066930080.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790105404_5749416146424134757.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790105404_785003561049667152.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790105411_-7130214413209492951.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790105406_-202091001860639638.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790105406_-7629505560440097242.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790105406_6542551780872213097.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790105404_4138040001016015054.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790105404_-6066037625458230773.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1790105410_-1095607875399290694.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1790105410_3786340917876557231.txt
+To github.com:zenkio/hk-history-research.git
+   0677103..6247b40  main -> main
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Git push completed.
+[2026-09-22T21:30:03.052811] Starting source ingestion...
+Saved: raw_HK_History_Centre_1790109003_-4173006825759503991.txt
+Saved: raw_HK_History_Centre_1790109003_-6812913422970038595.txt
+Saved: raw_HK_History_Centre_1790109003_-469144955169688010.txt
+Saved: raw_HK_History_Centre_1790109003_-4940705867739875375.txt
+Saved: raw_HK_History_Centre_1790109003_4434684526065516915.txt
+Saved: raw_Historical_Photos_HK_1790109003_-9074396043546531994.txt
+Saved: raw_Historical_Photos_HK_1790109003_-3849164841866586502.txt
+Saved: raw_Historical_Photos_HK_1790109003_8527911675286768346.txt
+Saved: raw_Historical_Photos_HK_1790109003_-2048095225847064202.txt
+Saved: raw_Gwulo_Old_HK_1790109006_-5216373417065997436.txt
+Saved: raw_Gwulo_Old_HK_1790109006_5207872150093160311.txt
+Saved: raw_Gwulo_Old_HK_1790109006_-1511012986175215123.txt
+Saved: raw_Gwulo_Old_HK_1790109006_1193475451628473741.txt
+Saved: raw_Gwulo_Old_HK_1790109006_-6625293075754677224.txt
+Saved: raw_Industrial_History_HK_1790109011_-2131414637981492015.txt
+Saved: raw_Industrial_History_HK_1790109011_6870275703610608889.txt
+Saved: raw_Industrial_History_HK_1790109011_-8189546916828919824.txt
+Saved: raw_Industrial_History_HK_1790109011_-6484319181856074531.txt
+Saved: raw_Industrial_History_HK_1790109011_-7516645974125978588.txt
+Saved: raw_Battle_For_HK_1790109013_7762608615531735988.txt
+Saved: raw_Battle_For_HK_1790109013_-5347848093337867903.txt
+Saved: raw_Battle_For_HK_1790109013_1122231733772885311.txt
+Saved: raw_Battle_For_HK_1790109013_-1500712238832470545.txt
+Saved: raw_Battle_For_HK_1790109013_6886207872468849092.txt
+/home/zenkio/hk-history-research/scripts/process_ingestion.py:10: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai

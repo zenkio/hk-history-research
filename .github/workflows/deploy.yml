@@ -36,7 +36,8 @@ jobs:
         run: npm ci || npm install
 
       - name: Build Quartz Site
-        run: npx quartz build
+        # Use --no-install to ensure we use the version in package.json
+        run: npx --no-install quartz build
 
       - name: Disable Jekyll in Public Output
         run: touch public/.nojekyll

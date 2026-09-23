@@ -121,6 +121,7 @@ class ModelPool:
         self.last_call = {}
         self.token_log = {}
         self.no_media = set()  # models found this run to reject image/video input
+        self.unavailable = set()  # models not usable in this run only (missing key, no free match)
         self.state = self._load_state()
         self._resolve_ids()
         self._resolve_openrouter()
@@ -173,9 +174,11 @@ class ModelPool:
             m["api_id"] = hit
             if hit:
                 taken.add(hit)
-            elif m["display"] not in self.state["parked"]:
-                reason = "no OPENROUTER_API_KEY" if not self.or_key else f"no free model matching {m.get('pick')}"
-                self.state["parked"][m["display"]] = reason
+            else:
+                # Not parked for the day: a later step may have the key, and the free list changes.
+                self.unavailable.add(m["display"])
+                print(f"  [pool] {m['display']} skipped this run: "
+                      + ("no OPENROUTER_API_KEY" if not self.or_key else f"no free model matching {m.get('pick')}"))
             self.state.setdefault("resolved", {})[m["display"]] = hit
         self.state["openrouter_free"] = [d["id"] for d in free]
 
@@ -222,7 +225,7 @@ class ModelPool:
         self.save()
 
     def remaining(self, key, role):
-        if key in self.state["parked"]:
+        if key in self.state["parked"] or key in self.unavailable:
             return 0
         left = self.models[key]["rpd"] - self.used(key)
         rec, cap = self._provider_used(self._provider(key))

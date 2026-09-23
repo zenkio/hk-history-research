@@ -31,8 +31,10 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## 🔥 Burning (fix first)
 
-- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable". Read `parked` and `available` in `scripts/quota_state.json` after the next run, then fix the model id or switch verification to another route.
-- [ ] **Watch the first runs after the PR #2 and evidence merges**: the repair step, video summaries, Commons photos, and the Gemma 26B id. Check the Actions logs and `quota_state.json`.
+- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.
+- [ ] **14 source pages are off the site until the quota reset.** The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
+- [x] ~~OpenRouter wrongly switched off for the day when a step lacks the key~~: now skipped per run; the key is also passed to the classify step.
+- [x] ~~Model ids~~: Gemma 26B resolves to `gemma-4-26b-a4b-it`, Gemini 3 Flash to `gemini-3-flash-preview`. OpenRouter picked `qwen/qwen3.8-27b:free`; no free DeepSeek model exists now, so the second slot falls back to GLM, Kimi or Llama 4.
 
 ## Now (current focus: verification)
 

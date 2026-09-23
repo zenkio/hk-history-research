@@ -15,6 +15,9 @@ concurrency:
   group: ingestion
   cancel-in-progress: false
 
+env:
+  PYTHONUNBUFFERED: "1"  # stream script output so the log shows timing
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -58,6 +61,7 @@ jobs:
       - name: Process and publish
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python3 scripts/process_ingestion.py
 
       # Spend the quota RSS did not need on AI-drafted history pages.

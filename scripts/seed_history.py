@@ -30,6 +30,7 @@ import subprocess
 from datetime import datetime
 
 from gemini_pool import ModelPool, QuotaExhausted
+from textutil import make_summary
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -294,6 +295,7 @@ def write_event_page(era, ev, data, model):
         "era": yaml_str(name),
         "tags": tag_list(tags),
         "summary": yaml_str(data.get("summary", ev.get("summary", ""))),
+        "description": yaml_str(make_summary(data.get("summary") or ev.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
@@ -309,6 +311,7 @@ def write_overview_page(era, data, model):
         "title": yaml_str(f"{era[:2]} · {name} ({span})"),
         "tags": tag_list(list(data.get("tags", [])) + ["ai-draft", "era-overview"]),
         "summary": yaml_str(data.get("summary", "")),
+        "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
@@ -331,6 +334,7 @@ def write_entity_page(ent, data, model):
         "title_zh": yaml_str(data["title_zh"]) if data.get("title_zh") else None,
         "tags": tag_list(list(data.get("tags", [])) + ["ai-draft", ent["kind"]]),
         "summary": yaml_str(data.get("summary", "")),
+        "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),

@@ -50,6 +50,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/fetch_sources.py
 
+      - name: Repair truncated summaries and thin pages
+        run: python3 scripts/repair_content.py --commit
+
       - name: Process and publish
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

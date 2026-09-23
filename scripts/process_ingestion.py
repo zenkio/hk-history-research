@@ -7,6 +7,7 @@ import time
 import subprocess
 from datetime import datetime
 from gemini_pool import ModelPool, QuotaExhausted
+from textutil import make_summary, yaml_quote
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(PROJECT_ROOT, "04_Ingestion_Queue")
@@ -25,7 +26,8 @@ PUBLICATION DATE: {pub_date}
 Return exactly this JSON structure:
 {{
     "title": "Concise title max 10 words describing the historical topic or event",
-    "narrative": "3-6 sentences in encyclopedic third-person past tense. Start directly with the historical content. Use **bold** for key names and dates. Attribute claims to their source. No preamble.",
+    "narrative": "150-350 words of markdown in encyclopedic third-person past tense, as full paragraphs. Report everything of historical value in the source (names, dates, places, numbers, what happened and why). Start directly with the historical content. Use **bold** for key names and dates. Attribute claims to their source. No preamble. If the source is only a short teaser, write only what it actually says.",
+    "context": "2-4 sentences of general historical background that helps a reader place this in Hong Kong history, from your own knowledge. Empty string if not relevant.",
     "historical_date": "When the described event happened (not when published). YYYY-MM-DD if specific date known, YYYY if only year known, YYYY/YYYY for a range like 1941/1945, empty string if cannot determine.",
     "year_tags": ["1941", "1942"],
     "tags": ["lowercase-hyphenated-topic", "max-6-tags"],
@@ -144,13 +146,14 @@ def analyze_and_route(pool, filepath):
     tags_yaml = "[" + ", ".join(f'"{t}"' for t in all_tags) + "]"
     lines = [
         "---",
-        f'title: "{title}"',
+        f"title: {yaml_quote(title)}",
     ]
     if historical_date:
         lines.append(f"date: {historical_date}")
     lines += [
         f"tags: {tags_yaml}",
-        f'summary: "{narrative[:120].replace(chr(34), chr(39))}"',
+        f"summary: {yaml_quote(make_summary(narrative))}",
+        f"description: {yaml_quote(make_summary(narrative))}",
         f"confidence: {confidence}",
         f"source_feed: {feed_name}",
         f'source_url: "{url}"',
@@ -159,6 +162,11 @@ def analyze_and_route(pool, filepath):
         "",
         narrative,
         "",
+    ]
+    context = analysis.get("context", "").strip()
+    if context:
+        lines += ["## Historical context", "", "> [!note] General background (AI, not from the source)", "", context, ""]
+    lines += [
         f"> Source: [{feed_name}]({url})",
     ]
     output = "\n".join(lines)

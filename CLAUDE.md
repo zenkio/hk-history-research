@@ -28,7 +28,7 @@ RSS Feeds → fetch_sources.py → 04_Ingestion_Queue/
 
 **Automation:**
 - `.github/workflows/ingestion.yml` — runs every 3 hours, calls `scripts/run_pipeline.sh`
-- `.github/workflows/deploy.yml` — triggers on every push to main, builds and deploys Quartz
+- `.github/workflows/deploy.yml` — builds and deploys Quartz on push to main, when an ingestion run completes, and hourly. Bot pushes (GITHUB_TOKEN) never trigger `push` workflows, so the extra triggers are required.
 
 ## Build & Development
 
@@ -71,6 +71,8 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 **Model pool:** `scripts/models.json` holds each free-tier model's RPM/TPM/RPD (copied from AI Studio) and a `routing` table naming which models serve each role, in order: `outline` (3.x Flash, 20 RPD each), `draft` (3.5/3.1 Flash Lite at 500 RPD, then Flash, then Gemma 4, which is TPM-bound at 16K), `classify` (Flash Lite, then Gemma), `verify` (2.5 Flash / Flash Lite, the only free models with Google Search grounding). `scripts/gemini_pool.py` resolves AI Studio display names to real API ids via `models.list()`, paces RPM and TPM, records usage in `scripts/quota_state.json` (resets at Pacific midnight), parks a model for the day on a daily-quota 429 or 404, and holds `reserve_for_ingestion` calls on classify models.
 
 **History seeding:** `scripts/seed_history.py` spends leftover quota on AI-drafted pages (tag `ai-draft`): era overviews and event pages in `content/01_Timeline/<NN-era>/`, and people/place pages in `content/02_Entities/`. Each run first fact-checks the oldest unchecked event pages with search grounding, replacing the "Claims to verify" checklist with verdicts and web sources (`confidence: ai-draft-checked`, tags `search-checked` / `needs-correction`). Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
+
+**Repair:** `scripts/repair_content.py` runs before classification each run: rebuilds summaries cut mid-word, adds `description` (what Quartz shows in search and previews), re-fetches teaser-only RSS pages into the queue once (`scripts/repaired_urls.json`), and removes `_NNNNNN` duplicate pages.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).
 

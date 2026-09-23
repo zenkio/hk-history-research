@@ -1,25 +1,34 @@
 {
-  "_comment": "Free-tier limits copied from the AI Studio rate-limit page (2026-09-23). Each model has its OWN daily bucket. 'display' is the AI Studio name and is used to look up the real API id via models.list(); 'id' is the fallback if the lookup fails. Quotas reset at midnight Pacific. routing lists, per task, which models to try in order.",
+  "_comment": "Free-tier limits copied from the AI Studio rate-limit page (2026-09-23). Each model has its OWN daily bucket. 'display' is the AI Studio name and is used to look up the real API id via models.list(); 'id' is the fallback if the lookup fails. Quotas reset at midnight Pacific. routing lists, per task, which models to try in order. OpenRouter entries use 'pick' (preferred name fragments) instead of a fixed id, because the ':free' list changes; 'providers' holds account-wide limits (OpenRouter: 50 free requests/day, 1000 after a lifetime $10 top-up).",
   "quota_reset_timezone": "America/Los_Angeles",
   "reserve_for_ingestion": 30,
   "models": [
-    {"display": "Gemini 3.8 Flash",      "id": "gemini-3.8-flash",      "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 3.7 Flash",      "id": "gemini-3.7-flash",      "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 3.6 Flash",      "id": "gemini-3.6-flash",      "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 3.5 Flash",      "id": "gemini-3.5-flash",      "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 3 Flash",        "id": "gemini-3-flash",        "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 3.5 Flash Lite", "id": "gemini-3.5-flash-lite", "rpm": 15, "tpm": 250000, "rpd": 500,   "json_mode": true},
-    {"display": "Gemini 3.1 Flash Lite", "id": "gemini-3.1-flash-lite", "rpm": 15, "tpm": 250000, "rpd": 500,   "json_mode": true},
-    {"display": "Gemini 2.5 Flash",      "id": "gemini-2.5-flash",      "rpm": 5,  "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemini 2.5 Flash Lite", "id": "gemini-2.5-flash-lite", "rpm": 10, "tpm": 250000, "rpd": 20,    "json_mode": true},
-    {"display": "Gemma 4 31B",           "id": "gemma-4-31b-it",        "rpm": 30, "tpm": 16000,  "rpd": 14400, "json_mode": false},
-    {"display": "Gemma 4 26B",           "id": "gemma-4-26b-it",        "rpm": 30, "tpm": 16000,  "rpd": 14400, "json_mode": false}
+    {"display": "Gemini 3.8 Flash", "id": "gemini-3.8-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 3.7 Flash", "id": "gemini-3.7-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 3.6 Flash", "id": "gemini-3.6-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 3.5 Flash", "id": "gemini-3.5-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 3 Flash", "id": "gemini-3-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 3.5 Flash Lite", "id": "gemini-3.5-flash-lite", "rpm": 15, "tpm": 250000, "rpd": 500, "json_mode": true},
+    {"display": "Gemini 3.1 Flash Lite", "id": "gemini-3.1-flash-lite", "rpm": 15, "tpm": 250000, "rpd": 500, "json_mode": true},
+    {"display": "Gemini 2.5 Flash", "id": "gemini-2.5-flash", "rpm": 5, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemini 2.5 Flash Lite", "id": "gemini-2.5-flash-lite", "rpm": 10, "tpm": 250000, "rpd": 20, "json_mode": true},
+    {"display": "Gemma 4 31B", "id": "gemma-4-31b-it", "rpm": 30, "tpm": 16000, "rpd": 14400, "json_mode": false},
+    {"display": "Gemma 4 26B", "id": "gemma-4-26b-it", "rpm": 30, "tpm": 16000, "rpd": 14400, "json_mode": false},
+    {"display": "OpenRouter Qwen", "provider": "openrouter", "pick": [ "qwen3", "qwen" ], "rpm": 15, "tpm": 1000000, "rpd": 50, "json_mode": false},
+    {"display": "OpenRouter DeepSeek", "provider": "openrouter", "pick": [ "deepseek" ], "rpm": 15, "tpm": 1000000, "rpd": 50, "json_mode": false}
   ],
   "routing": {
-    "_comment": "outline = era plans and overviews (few calls, best models); draft = event and entity pages (bulk); classify = RSS articles; verify = Google Search grounded fact-check (only Gemini 2.x has free search grounding).",
-    "outline":  ["Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite"],
-    "draft":    ["Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite", "Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemma 4 31B", "Gemma 4 26B"],
+    "_comment": "outline = era plans and overviews (few calls, best models); draft = event and entity pages (bulk); classify = RSS articles; verify = Google Search grounded fact-check (only Gemini 2.x has free search grounding). translate = Traditional Chinese versions: Chinese-native OpenRouter free models first, then Gemma.",
+    "outline": ["Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite"],
+    "draft": ["Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite", "Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemma 4 31B", "Gemma 4 26B"],
     "classify": ["Gemini 3.1 Flash Lite", "Gemini 3.5 Flash Lite", "Gemma 4 31B", "Gemma 4 26B"],
-    "verify":   ["Gemini 2.5 Flash", "Gemini 2.5 Flash Lite"]
+    "verify": ["Gemini 2.5 Flash", "Gemini 2.5 Flash Lite"],
+    "translate": ["OpenRouter Qwen", "OpenRouter DeepSeek", "Gemma 4 31B", "Gemma 4 26B"]
+  },
+  "providers": {
+    "openrouter": {
+      "rpd": 50,
+      "reset_timezone": "UTC"
+    }
   }
 }

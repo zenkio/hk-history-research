@@ -64,4 +64,5 @@ jobs:
       - name: Seed history drafts with leftover quota
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python3 scripts/seed_history.py --minutes 45

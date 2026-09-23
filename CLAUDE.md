@@ -72,6 +72,8 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **History seeding:** `scripts/seed_history.py` spends leftover quota on AI-drafted pages (tag `ai-draft`): era overviews and event pages in `content/01_Timeline/<NN-era>/`, and people/place pages in `content/02_Entities/`. Each run first fact-checks the oldest unchecked event pages with search grounding, replacing the "Claims to verify" checklist with verdicts and web sources (`confidence: ai-draft-checked`, tags `search-checked` / `needs-correction`). Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
 
+**OpenRouter and translation:** `models.json` entries with `"provider": "openrouter"` pick a current `:free` model by name fragment at startup and share the account-wide `providers.openrouter.rpd` limit (50/day; 1000 after a lifetime $10 top-up), using `OPENROUTER_API_KEY`. `scripts/translate.py` writes Traditional Chinese (Hong Kong) versions to `content/zh/<same path>` with links both ways; every run spends the OpenRouter budget on it, and Gemma continues once the drafting plan is complete. Progress: `translations` in `seed_plan.json`.
+
 **Repair:** `scripts/repair_content.py` runs before classification each run: rebuilds summaries cut mid-word, adds `description` (what Quartz shows in search and previews), re-fetches teaser-only RSS pages into the queue once (`scripts/repaired_urls.json`), and removes `_NNNNNN` duplicate pages.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).

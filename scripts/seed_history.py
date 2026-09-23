@@ -16,7 +16,9 @@ Work is resumable and tracked in scripts/seed_plan.json:
   5. deepen   - ask each era for events it still misses, MAX_ROUNDS times
                 (role "outline"), which feeds steps 3 and 4 again
 Separately, every run first spends the "verify" budget fact-checking drafted
-event pages with Google Search grounding, which adds real web sources.
+event pages with Google Search grounding, which adds real web sources, then
+the OpenRouter free budget on Traditional Chinese versions (translate.py).
+Once the plan is complete, spare Gemma capacity continues the translations.
 
 Usage: python3 scripts/seed_history.py [--max-calls N] [--minutes M] [--no-commit]
 """
@@ -31,6 +33,7 @@ from datetime import datetime
 
 from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary
+from translate import translate_batch
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -441,10 +444,14 @@ def run(max_calls, minutes, commit=False):
     print(f"Quota at start: {pool.summary()}")
     print(f"Model ids: {pool.state['resolved']}")
     done += verify_pages(pool, plan, deadline)
+    # OpenRouter's free budget is separate from Gemini's, so spend it every run.
+    openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
+    done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:
-            print("Seed plan complete: every era outlined, drafted and deepened.")
+            print("Seed plan complete: every era outlined, drafted and deepened. Translating with spare capacity.")
+            done += translate_batch(pool, plan, deadline, limit=max_calls - done, save=save_plan)
             break
         kind, arg = task
         try:
@@ -509,7 +516,7 @@ def run(max_calls, minutes, commit=False):
 
 
 def git_commit():
-    paths = ["content/01_Timeline", "content/02_Entities", "scripts/seed_plan.json", "scripts/quota_state.json"]
+    paths = ["content/01_Timeline", "content/02_Entities", "content/zh", "scripts/seed_plan.json", "scripts/quota_state.json"]
     subprocess.run(["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
                    cwd=PROJECT_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:

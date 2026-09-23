@@ -31,8 +31,8 @@ USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-rese
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 FREE_LICENSE = re.compile(r"public domain|^pd\b|pd-|cc0|^cc[ -]by(-sa)?\b", re.I)
 MAX_SOURCE_PHOTOS = 3
-MAX_EVENT_PHOTOS = 2
-CANDIDATES = 4
+MAX_EVENT_PHOTOS = 4   # enough to compare angles; more turns an event page into a gallery
+CANDIDATES = 8          # vision checks per page; most search hits are generic views
 MAX_IMAGE_BYTES = 4_000_000
 STOPWORDS = set("""a an the of and or in on at to for from by with during after before under over into
 its his her their new first second great end rise fall era period age""".split())
@@ -139,7 +139,7 @@ def search_query(title):
     return q
 
 
-def commons_search(query, limit=8):
+def commons_search(query, limit=15):
     params = {
         "action": "query", "format": "json", "generator": "search", "gsrnamespace": "6",
         "gsrsearch": f"{query} filetype:bitmap", "gsrlimit": str(limit),

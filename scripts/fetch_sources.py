@@ -65,7 +65,7 @@ def fetch_rss():
     for feed in FEEDS:
         try:
             d = feedparser.parse(feed["url"])
-            for entry in d.entries[:5]:
+            for entry in d.entries[:20]:
                 link = entry.get('link', '')
                 if not link:
                     continue

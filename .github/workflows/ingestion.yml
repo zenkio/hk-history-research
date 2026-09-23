@@ -8,9 +8,15 @@ on:
 permissions:
   contents: write
 
+# A seeding run can last up to ~2h; never let two runs push at once.
+concurrency:
+  group: ingestion
+  cancel-in-progress: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
+    timeout-minutes: 170
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -48,3 +54,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/process_ingestion.py
+
+      # Spend the quota RSS did not need on AI-drafted history pages.
+      - name: Seed history drafts with leftover quota
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/seed_history.py --minutes 140

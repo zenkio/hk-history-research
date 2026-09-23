@@ -6,20 +6,13 @@ import html
 import time
 import subprocess
 from datetime import datetime
-from dotenv import load_dotenv
-from google import genai
-from google.genai import types
-
-load_dotenv()
+from gemini_pool import ModelPool, QuotaExhausted
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(PROJECT_ROOT, "04_Ingestion_Queue")
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 ANGLES_DIR = os.path.join(PROJECT_ROOT, "content", "03_Angles")
 UNVERIFIED_DIR = os.path.join(PROJECT_ROOT, "content", "04_Unverified")
-
-# Models available on free tier API key (in order of preference)
-MODEL_TIERS = ["gemini-3.1-flash-lite", "gemini-3.5-flash-lite"]
 
 GEMINI_PROMPT = """You are a Hong Kong history researcher. Analyze this source text and respond with ONLY a JSON object.
 
@@ -90,30 +83,14 @@ def make_slug(text, max_len=80):
     return slug or "article"
 
 
-def call_gemini(content, url, pub_date):
-    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+def call_gemini(pool, content, url, pub_date):
     prompt = GEMINI_PROMPT.format(
         content=strip_html(content)[:6000],
         url=url,
         pub_date=pub_date
     )
-    for model_name in MODEL_TIERS:
-        try:
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json"
-                )
-            )
-            return json.loads(response.text)
-        except Exception as e:
-            if "429" in str(e) or "quota" in str(e).lower():
-                print(f"Quota exceeded for {model_name}, trying next...")
-                continue
-            print(f"Error with {model_name}: {e}")
-            continue
-    raise Exception("All models exhausted or failed.")
+    analysis = pool.generate_json("classify", prompt)[0]
+    return analysis
 
 
 def dest_path(category, slug):
@@ -131,7 +108,7 @@ def dest_path(category, slug):
     return path
 
 
-def analyze_and_route(filepath):
+def analyze_and_route(pool, filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         raw = f.read()
 
@@ -145,7 +122,9 @@ def analyze_and_route(filepath):
     body = raw[body_start:].strip() if body_start != -1 else raw
 
     try:
-        analysis = call_gemini(body, url, pub_date)
+        analysis = call_gemini(pool, body, url, pub_date)
+    except QuotaExhausted:
+        raise  # leave the file queued for the next run
     except Exception as e:
         print(f"LLM failed for {os.path.basename(filepath)}: {e}")
         os.replace(filepath, os.path.join(UNVERIFIED_DIR, os.path.basename(filepath)))
@@ -190,14 +169,14 @@ def analyze_and_route(filepath):
     os.remove(filepath)
     print(f"[{category}] {title[:60]} → {os.path.basename(output_path)}")
 
-    # Rate limit: stay under 15 RPM
-    time.sleep(4)
-
 
 def run_git_commit():
     try:
+        # The queue is tracked too, so files left over when quota runs out
+        # survive to the next CI run instead of vanishing with the runner.
+        paths = ["content/", "scripts/seen_urls.json", "scripts/quota_state.json", "04_Ingestion_Queue/"]
         subprocess.run(
-            ["git", "add", "content/", "scripts/seen_urls.json"],
+            ["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
             cwd=PROJECT_ROOT, check=True
         )
         result = subprocess.run(
@@ -226,6 +205,11 @@ if __name__ == "__main__":
         print("No files to process.")
     else:
         print(f"Processing {len(files)} files...")
-        for f in files:
-            analyze_and_route(os.path.join(QUEUE_DIR, f))
+        pool = ModelPool()
+        try:
+            for f in files:
+                analyze_and_route(pool, os.path.join(QUEUE_DIR, f))
+        except QuotaExhausted as e:
+            print(f"Stopping early, remaining files stay queued: {e}")
+        print(f"Quota used today: {pool.summary()}")
         run_git_commit()

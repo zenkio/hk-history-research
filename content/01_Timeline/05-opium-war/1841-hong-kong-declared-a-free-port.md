@@ -4,7 +4,7 @@ title_zh: "香港宣佈為自由港"
 date: 1841-06-07
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "charles-elliot", "colonial-history", "first-opium-war", "free-port", "opium-war", "trade"]
+tags: ["photo-corroborated", "1841", "ai-draft", "charles-elliot", "colonial-history", "first-opium-war", "free-port", "opium-war", "trade"]
 summary: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
 description: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
 confidence: ai-draft
@@ -46,5 +46,23 @@ The declaration of the free port laid the institutional cornerstone for Hong Kon
 
 - [ ] Charles Elliot issued the specific free port proclamation on June 7, 1841
 - [ ] The proclamation explicitly exempted all foreign vessels from customs duties and tonnage dues upon arrival in Hong Kong harbor
+
+## Photos from this period
+
+![A letter from Charles Elliot to Chinese officials dated June 1841 regarding the status of Hong Kong as a free port.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/C_Elliot_to_Ch-i-shan_declares_Hong_Kong_free_port.jpg/960px-C_Elliot_to_Ch-i-shan_declares_Hong_Kong_free_port.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A letter from Charles Elliot to Chinese officials dated June 1841 regarding the status of Hong Kong as a free port.* (document). Foreign Office, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:C_Elliot_to_Ch-i-shan_declares_Hong_Kong_free_port.jpg).
+Corroborates: It serves as primary documentary evidence of the British declaration and enforcement of Hong Kong's status as an open port for trade.
+
+![A printed proclamation in Chinese by Charles Elliot declaring Hong Kong a free port and promising protection to Chinese traders.](https://upload.wikimedia.org/wikipedia/commons/c/c7/Printed_proclamation_promising_protection_to_Chinese_who_come_to_trade_in_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A printed proclamation in Chinese by Charles Elliot declaring Hong Kong a free port and promising protection to Chinese traders.* (document). Foreign Office, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Printed_proclamation_promising_protection_to_Chinese_who_come_to_trade_in_Hong_Kong.jpg).
+Corroborates: It is the primary document announcing the duty-free status of Hong Kong on June 7, 1841.
+
+![The proclamation issued by British Plenipotentiary Charles Elliot on June 7, 1841, declaring Hong Kong a free port.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/C_Elliot_proclamation_to_maritime_provinces.jpg/960px-C_Elliot_proclamation_to_maritime_provinces.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The proclamation issued by British Plenipotentiary Charles Elliot on June 7, 1841, declaring Hong Kong a free port.* (document). Foreign Office, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:C_Elliot_proclamation_to_maritime_provinces.jpg).
+Corroborates: It is the primary document announcing the establishment of Hong Kong as an open, duty-free port.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

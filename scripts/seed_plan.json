@@ -17745,5 +17745,31 @@
       "status": "done",
       "file": "People/indigenous-clans.md"
     }
+  },
+  "photos": {
+    "05-opium-war/1810-surrender-of-pirate-admiral-cheung-po-tsai.md": "none",
+    "05-opium-war/1821-opium-depots-shift-to-lintin-island.md": "none",
+    "05-opium-war/1832-reinforcement-of-tung-chung-fort.md": "none",
+    "05-opium-war/1834-abolition-of-the-east-india-company-monopoly.md": "none",
+    "05-opium-war/1834-the-napier-affair-in-canton.md": "none",
+    "05-opium-war/1839-lin-zexu-enforces-opium-blockade.md": "none",
+    "05-opium-war/1839-destruction-of-confiscated-opium-at-humen.md": "none",
+    "05-opium-war/1839-the-lin-weixi-affair-in-tsim-sha-tsui.md": "none",
+    "05-opium-war/1839-evacuation-of-british-community-to-hong-kong-anchorage.md": "none",
+    "05-opium-war/1839-the-battle-of-kowloon.md": "none",
+    "05-opium-war/1839-the-battle-of-chuenpi.md": [
+      "File:Chuenpee battle 1839.jpg"
+    ],
+    "05-opium-war/1840-british-expeditionary-fleet-gathers-in-hong-kong.md": "none",
+    "05-opium-war/1841-negotiation-of-the-convention-of-chuenpi.md": "none",
+    "05-opium-war/1841-formal-british-possession-of-hong-kong-island.md": "none",
+    "05-opium-war/1841-elliot-guarantees-local-chinese-customary-rights.md": "none",
+    "05-opium-war/1841-hong-kongs-first-colonial-census.md": "none",
+    "05-opium-war/1841-hong-kong-declared-a-free-port.md": [
+      "File:C Elliot to Ch-i-shan declares Hong Kong free port.jpg",
+      "File:Printed proclamation promising protection to Chinese who come to trade in Hong Kong.jpg",
+      "File:C Elliot proclamation to maritime provinces.jpg"
+    ],
+    "05-opium-war/1841-first-public-land-auction-in-hong-kong.md": "none"
   }
 }

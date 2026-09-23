@@ -4,7 +4,7 @@ title_zh: "穿鼻之戰"
 date: 1839-11-03
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "bocca-tigris", "charles-elliot", "first-opium-war", "opium-war", "qing-dynasty", "royal-navy"]
+tags: ["photo-corroborated", "1839", "ai-draft", "bocca-tigris", "charles-elliot", "first-opium-war", "opium-war", "qing-dynasty", "royal-navy"]
 summary: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First Opium War."
 description: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First…"
 confidence: ai-draft
@@ -43,5 +43,13 @@ The Battle of Chuenpi (**穿鼻之戰**) is widely viewed by historians as the c
 
 - [ ] Exact number of Qing war junks deployed and lost during the engagement on November 3, 1839
 - [ ] Direct orders given by Charles Elliot to the commanders of HMS Volage and HMS Hyacinth prior to the engagement
+
+## Photos from this period
+
+![A first-hand 1839 drawing depicting the naval battle between British warships and Chinese junks near Chuenpi.](https://upload.wikimedia.org/wikipedia/commons/8/82/Chuenpee_battle_1839.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A first-hand 1839 drawing depicting the naval battle between British warships and Chinese junks near Chuenpi.* (artwork). Peter William Hamilton, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chuenpee_battle_1839.jpg).
+Corroborates: It provides a contemporary visual representation of the naval engagement that marked a decisive escalation in the First Opium War.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

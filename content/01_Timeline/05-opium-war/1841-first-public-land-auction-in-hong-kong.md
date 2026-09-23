@@ -1,0 +1,46 @@
+---
+title: "First Public Land Auction in Hong Kong"
+title_zh: "香港首次公開土地拍賣"
+date: 1841-06-14
+year: 1841
+era: "Canton trade and the First Opium War"
+tags: ["1841", "ai-draft", "colonial-history", "crown-lease", "first-land-auction", "first-opium-war", "opium-war", "victoria-city"]
+summary: "On June 14, 1841, British authorities held the first public land auction in Hong Kong, offering initial waterfront lots that laid the foundations for Victoria City and commercial expansion."
+confidence: ai-draft
+draft_model: Gemini 3.5 Flash Lite
+ingested: 2026-09-23
+---
+
+> [!warning] AI draft
+> Written from general knowledge by an AI model, without cited sources. Treat it as a starting outline and verify claims before relying on them.
+
+## Background
+
+Following the British occupation of Hong Kong Island in **January 1841** during the First Opium War, British Plenipotentiary **Captain Charles Elliot** sought to establish a permanent trading base and administrative center. Naval and military forces had already claimed various strategic points along the northern shore, but British merchants urgently needed formal land titles to construct secure godowns (warehouses), wharves, and merchant houses. The makeshift commercial settlement operating out of nearby coastal areas required a structured land tenure system to replace informal occupation.
+
+## What happened
+
+On **June 14, 1841**, the colonial administration held the first public land auction in Hong Kong. Initial waterfront lots were offered along the northern shore of the island in the area that would soon be named Victoria City (維多利亞城). British and foreign agency houses bid aggressively for the parcels to secure prime locations for trade and storage. The auction initiated a rapid wave of civilian construction, transforming the coastline into a bustling entrepôt as godowns and wharves quickly emerged from the rocky terrain.
+
+## Significance
+
+This first land sale established the crown lease system as the fundamental model for property ownership in Hong Kong, generating early colonial revenue and shaping the spatial layout of Victoria City (維多利亞城). While it marked a crucial step in formalizing the British presence, the long-term economic and social impacts remain subject to differing historical interpretations regarding colonial dispossession and regional trade integration.
+
+## Perspectives
+
+- **British colonial administration**: Viewed the land auction as a necessary and progressive step to establish the rule of law, secure private property rights, and foster a thriving free-port economy under the British Crown.
+- **Qing dynasty officials**: Condemned the auction and the broader occupation of Hong Kong Island as illegal acts of foreign aggression and unilateral encroachment on sovereign Chinese territory.
+- **Local and later scholarship**: Examine how the early colonial land system dislocated indigenous fishermen and farmers while rapidly restructuring the local geography to serve foreign mercantile interests.
+
+## People and places
+
+- [[02_Entities/People/captain-charles-elliot|Captain Charles Elliot (義律)]]
+- [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
+- [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
+
+## Claims to verify
+
+- [ ] The first public land auction took place specifically on June 14, 1841.
+- [ ] Initial waterfront lots auctioned formed the primary basis for early Victoria City development.
+
+Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

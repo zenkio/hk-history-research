@@ -1,0 +1,43 @@
+---
+title: "Founding of the Po Leung Kuk"
+title_zh: "保良局的成立"
+date: 1878-01-01
+year: 1878
+era: "Kowloon and the Victorian colony"
+tags: ["1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
+summary: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
+confidence: ai-draft
+draft_model: Gemini 3.5 Flash Lite
+ingested: 2026-09-23
+---
+
+> [!warning] AI draft
+> Written from general knowledge by an AI model, without cited sources. Treat it as a starting outline and verify claims before relying on them.
+
+## Background
+During the late **19th century**, the rapid economic growth of the British colony of Hong Kong coincided with severe social challenges, including the abduction and trafficking of women and children. Many victims were forced into prostitution or sold into the abusive domestic servant trade known as the **mui tsai** (妹仔) system. While the colonial government maintained a general policy of non-interference in traditional Chinese customs unless overtly criminal, mounting public concern and pressure from local elites prompted action.
+
+## What happened
+In **1878**, a group of influential Chinese merchants petitioned the colonial government for permission to establish an organization dedicated to protecting women and children from kidnapping. Led by figures such as **Dong Zhongliang** and supported by colonial officials including Governor **John Pope Hennessy**, the society became known as the **Po Leung Kuk** (保良局), translating roughly to the "Society for the Protection of Women and Children." Operating with both Chinese philanthropic traditions and official sanction, the Kuk worked closely with the **Hong Kong Police Force** to rescue victims, shelter them, and eventually arrange marriages or repatriate them when possible.
+
+## Significance
+The founding of the Po Leung Kuk represented a crucial precedent for Chinese participation in the administration of the colony. It demonstrated the growing social and political influence of the Chinese merchant elite, who acted as intermediaries between the colonial authorities and the local population. Modern scholars view the institution as a foundational pillar of Hong Kong's civil society, blending traditional Chinese philanthropy with Western institutional frameworks to address urban social crises.
+
+## Perspectives
+
+- **British colonial administration**: Colonial officials viewed the Po Leung Kuk as a valuable mechanism to maintain social stability and assist the understaffed police force in managing complex cultural issues among the Chinese population without committing extensive government funds.
+- **Local Chinese merchant elite**: For the prominent merchants, establishing the Kuk was a way to assert moral leadership, demonstrate civic responsibility, and preserve traditional social order while negotiating greater influence within the colonial hierarchy.
+- **Later scholarship**: Modern historians analyze the Kuk as an early example of hybrid governance, noting that while it provided vital humanitarian relief, it also operated within patriarchal structures that sometimes reinforced traditional hierarchies.
+
+## People and places
+
+- [[02_Entities/People/john-pope-hennessy|John Pope Hennessy]]
+- [[02_Entities/People/dong-zhongliang|Dong Zhongliang (董仲良)]]
+- [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
+
+## Claims to verify
+
+- [ ] The exact petition date and founding members listed in the initial 1878 colonial records
+- [ ] The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
+
+Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

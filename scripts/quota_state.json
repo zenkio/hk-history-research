@@ -1,9 +1,22 @@
 {
   "day": "2026-09-22",
   "used": {
-    "Gemini 3.1 Flash Lite": 53
+    "Gemini 3.1 Flash Lite": 470,
+    "Gemini 3.8 Flash": 20,
+    "Gemini 3.7 Flash": 20,
+    "Gemini 3.6 Flash": 20,
+    "Gemini 3.5 Flash": 18,
+    "Gemini 3 Flash": 1,
+    "Gemini 3.5 Flash Lite": 470,
+    "Gemma 4 31B": 3,
+    "Gemma 4 26B": 1
   },
-  "parked": {},
+  "parked": {
+    "Gemini 3.6 Flash": "daily quota hit",
+    "Gemini 3.5 Flash": "daily quota hit",
+    "Gemini 3 Flash": "unavailable as gemini-3-flash",
+    "Gemma 4 26B": "unavailable as gemma-4-26b-it"
+  },
   "resolved": {
     "Gemini 3.8 Flash": "gemini-3.8-flash",
     "Gemini 3.7 Flash": "gemini-3.7-flash",

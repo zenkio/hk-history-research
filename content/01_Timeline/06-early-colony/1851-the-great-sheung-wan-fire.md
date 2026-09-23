@@ -1,0 +1,47 @@
+---
+title: "The Great Sheung Wan Fire"
+title_zh: "上環大火"
+date: 1851-12-28
+year: 1851
+era: "The early colony"
+tags: ["1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
+summary: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation project."
+confidence: ai-draft
+draft_model: Gemini 3.5 Flash Lite
+ingested: 2026-09-23
+---
+
+> [!warning] AI draft
+> Written from general knowledge by an AI model, without cited sources. Treat it as a starting outline and verify claims before relying on them.
+
+## Background
+
+In the early years of British colonial rule, the area of Sheung Wan (上環) developed rapidly as a commercial and residential hub for the growing Chinese population. Housing was predominantly high-density and constructed from highly combustible materials, featuring closely packed timber structures that lacked modern fire safety infrastructure. By December **1851**, the district was extremely congested, creating conditions ripe for disaster.
+
+## What happened
+
+On the night of **December 28, 1851**, a fierce fire broke out in the bustling Sheung Wan district. Fueled by strong winter winds and the tightly packed wooden construction of local dwellings, the blaze spread rapidly through the neighborhood. Despite efforts by residents and colonial authorities to contain the flames, the fire burned through a massive swath of the district, reducing hundreds of Chinese homes and businesses to ash and leaving thousands of residents homeless.
+
+## Significance
+
+The disaster became a turning point in the urban planning and infrastructure development of early colonial Hong Kong. To prevent future catastrophes and improve sanitary conditions, the colonial government initiated the colony's first major land reclamation project along Bonham Strand (文咸街). Debris from the fire and earth from nearby hills were used to reclaim land from the harbor, altering the shoreline and creating new, better-regulated space for the expanding port city.
+
+Local communities and colonial administrators viewed the aftermath through different lenses, shaping how future urban policies and property regulations were enacted in the young colony.
+
+## Perspectives
+
+- **British Colonial Authorities**: Colonial officials viewed the disaster primarily as an urgent urban planning and public health crisis. They used the destruction as justification to impose stricter building regulations, improve spatial organization, and initiate land reclamation to modernize the colony's infrastructure.
+- **Local Chinese Residents**: For the displaced Chinese community, the fire represented a catastrophic loss of property and shelter, further intensifying the hardships of living in a rapidly changing colonial port city under foreign administration.
+
+## People and places
+
+- [[02_Entities/Places/sheung-wan|Sheung Wan (上環)]]
+- [[02_Entities/Places/bonham-strand|Bonham Strand (文咸街)]]
+
+## Claims to verify
+
+- [ ] The exact date of the fire was December 28, 1851.
+- [ ] The fire directly prompted the land reclamation project along Bonham Strand.
+- [ ] Hundreds of Chinese homes were destroyed in the blaze.
+
+Part of: [[01_Timeline/06-early-colony/index|The early colony]]

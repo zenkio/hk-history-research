@@ -27,8 +27,8 @@ RSS Feeds → fetch_sources.py → 04_Ingestion_Queue/
 - `scripts/` — Python pipeline scripts
 
 **Automation:**
-- `.github/workflows/ingestion.yml` — runs every 3 hours, calls `scripts/run_pipeline.sh`
-- `.github/workflows/deploy.yml` — builds and deploys Quartz on a human push to main and after each ingestion run completes (so at most every 3h). Bot pushes (GITHUB_TOKEN) never trigger `push` workflows, hence the `workflow_run` trigger.
+- `.github/workflows/ingestion.yml` — runs hourly (45-minute seeding cap): fetch, repair, classify, seed
+- `.github/workflows/deploy.yml` — builds and deploys Quartz on a human push to main and every 3 hours on a schedule. Bot pushes (GITHUB_TOKEN) never trigger `push` workflows, hence the schedule.
 
 ## Build & Development
 

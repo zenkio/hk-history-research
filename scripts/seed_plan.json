@@ -8555,7 +8555,8 @@
       "mentions": [
         "Establishment of Panyu as a regional market hub"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/tung-wan.md"
     },
     "person:none": {
       "name": "None (無)",
@@ -8563,7 +8564,8 @@
       "mentions": [
         "Development of agrarian terracing and land management"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/none.md"
     },
     "person:emperor-xuanzong": {
       "name": "Emperor Xuanzong (唐玄宗)",
@@ -8571,7 +8573,8 @@
       "mentions": [
         "Establishment of the Tuen Mun naval supply depot"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/emperor-xuanzong.md"
     },
     "place:sha-lo-wan": {
       "name": "Sha Lo Wan (沙螺灣)",
@@ -8579,7 +8582,8 @@
       "mentions": [
         "Flourishing of incense trade in coastal villages"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/sha-lo-wan.md"
     }
   }
 }

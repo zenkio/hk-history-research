@@ -3,6 +3,7 @@ title: "Kai Tak Airport (啟德機場)"
 title_zh: "啟德機場"
 tags: ["ai-draft", "aviation", "british-colonial-era", "kai-tak", "kowloon", "place", "transport-history"]
 summary: "Kai Tak Airport served as Hong Kong's primary international aviation hub from the **1920s** until **1998**, renowned globally for its challenging approach through urban Kowloon."
+description: "Kai Tak Airport served as Hong Kong's primary international aviation hub from the 1920s until 1998, renowned globally for its challenging approach through urban Kowloon."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

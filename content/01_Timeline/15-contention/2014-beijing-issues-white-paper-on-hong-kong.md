@@ -6,6 +6,7 @@ year: 2014
 era: "Political contention and protest"
 tags: ["2014", "ai-draft", "basic-law", "comprehensive-jurisdiction", "contention", "one-country-two-systems", "white-paper"]
 summary: "On June 10, 2014, the State Council of the People's Republic of China released a landmark white paper asserting comprehensive jurisdiction over Hong Kong, a move that intensified local political anxieties."
+description: "On June 10, 2014, the State Council of the People's Republic of China released a landmark white paper asserting comprehensive jurisdiction over Hong Kong, a move that intensified local political anxieties."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

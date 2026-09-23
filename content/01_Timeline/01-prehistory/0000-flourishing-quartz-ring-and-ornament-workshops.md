@@ -5,6 +5,7 @@ year: -1200
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "craft-specialization", "indigenous-history", "prehistory", "quartz-rings", "sham-wan"]
 summary: "Around **c. 1200 BCE** during the Middle to Late Bronze Age, local communities in the Hong Kong region developed specialized workshops for crafting intricate quartz rings and personal ornaments."
+description: "Around c. 1200 BCE during the Middle to Late Bronze Age, local communities in the Hong Kong region developed specialized workshops for crafting intricate quartz rings and personal ornaments."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1968
 era: "Riots and the MacLehose reforms"
 tags: ["1968", "ai-draft", "colonial-governance", "district-administration", "grassroots-communication", "maclehose-era", "riots-and-reform"]
 summary: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
+description: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

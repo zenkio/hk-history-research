@@ -2,7 +2,8 @@
 title: "Biography of Robert and Marjorie Grindley in wartime Hong Kong"
 date: 1941-01-01
 tags: ["1920", "1934", "1936", "1940", "1941", "1942", "1945", "1951", "1954", "1980", "2018", "colonial-hong-kong", "hkvdc", "japanese-occupation", "stanley-internment-camp", "wwii"]
-summary: "**Robert John Vaughan Grindley**, a former Royal Navy sailor turned prison officer, served in the **Stanley Platoon** of"
+summary: "Robert John Vaughan Grindley, a former Royal Navy sailor turned prison officer, served in the Stanley Platoon of the Hong Kong Volunteer Defence Corps during the 1941 Battle of Hong Kong."
+description: "Robert John Vaughan Grindley, a former Royal Navy sailor turned prison officer, served in the Stanley Platoon of the Hong Kong Volunteer Defence Corps during the 1941 Battle of Hong Kong."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/03/robert-marjory-grindley.html"

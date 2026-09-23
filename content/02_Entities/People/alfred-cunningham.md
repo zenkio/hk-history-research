@@ -3,6 +3,7 @@ title: "Alfred Cunningham (康寧)"
 title_zh: "康寧"
 tags: ["ai-draft", "british-colonial-period", "hong-kong-history", "journalism", "media-history", "person", "south-china-morning-post"]
 summary: "Alfred Cunningham was a British journalist and author who played a pivotal role in the establishment of the South China Morning Post in Hong Kong."
+description: "Alfred Cunningham was a British journalist and author who played a pivotal role in the establishment of the South China Morning Post in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

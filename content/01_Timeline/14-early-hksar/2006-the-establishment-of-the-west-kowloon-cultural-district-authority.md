@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2000s-hong-kong", "2006", "ai-draft", "cultural-policy", "early-hksar", "hksar-history", "urban-planning", "west-kowloon"]
 summary: "In 2006, the Hong Kong government moved to formalize the management of the West Kowloon Cultural District, signaling a strategic shift toward state-led development of the city's arts and cultural landscape."
+description: "In 2006, the Hong Kong government moved to formalize the management of the West Kowloon Cultural District, signaling a strategic shift toward state-led development of the city's arts and cultural landscape."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

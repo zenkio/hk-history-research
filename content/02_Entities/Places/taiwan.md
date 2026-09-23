@@ -3,6 +3,7 @@ title: "Taiwan (臺灣)"
 title_zh: "臺灣"
 tags: ["ai-draft", "cross-strait", "great-clearance", "place", "qing-dynasty", "refugees", "taiwan"]
 summary: "Taiwan served as a crucial strategic frontier for the Qing dynasty's maritime policies affecting the Hong Kong region and later became a destination and political refuge for various communities connected to Hong Kong's turbulent history."
+description: "Taiwan served as a crucial strategic frontier for the Qing dynasty's maritime policies affecting the Hong Kong region and later became a destination and political refuge for various communities connected to Hong Kong's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

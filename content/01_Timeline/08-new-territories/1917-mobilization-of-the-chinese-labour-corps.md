@@ -6,6 +6,7 @@ year: 1917
 era: "The New Territories lease and the early 20th century"
 tags: ["1917", "ai-draft", "british-colony", "chinese-labour-corps", "labor-migration", "logistics", "new-territories", "world-war-i"]
 summary: "During the First World War, Hong Kong served as a vital logistical hub and transit depot for thousands of Chinese laborers recruited to support the Allied war effort on the Western Front."
+description: "During the First World War, Hong Kong served as a vital logistical hub and transit depot for thousands of Chinese laborers recruited to support the Allied war effort on the Western Front."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

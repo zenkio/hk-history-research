@@ -3,6 +3,7 @@ title: "Nanyue Kingdom (南越國)"
 title_zh: "南越國"
 tags: ["ai-draft", "ancient-history", "archaeology", "imperial-china", "nanyue-kingdom", "place", "pre-colonial"]
 summary: "The Nanyue Kingdom was a vassal state and later an independent power based in Panyu that exerted the earliest recorded imperial administrative control over the territory of present-day Hong Kong."
+description: "The Nanyue Kingdom was a vassal state and later an independent power based in Panyu that exerted the earliest recorded imperial administrative control over the territory of present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

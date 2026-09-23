@@ -3,6 +3,7 @@ title: "Pearl River (珠江)"
 title_zh: "珠江"
 tags: ["ai-draft", "canton-system", "geography", "humen", "opium-war", "pearl-river", "place"]
 summary: "The Pearl River is the vast estuarine river system of southern China that connects Guangzhou and the interior to the South China Sea, serving as the vital maritime corridor for trade, colonial expansion, and regional integration that enabled the rise of Hong Kong."
+description: "The Pearl River is the vast estuarine river system of southern China that connects Guangzhou and the interior to the South China Sea, serving as the vital maritime corridor for trade, colonial expansion, and regional…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "catholic-education", "colonial-history", "early-20th-century", "marist-brothers", "new-territories", "social-mobility"]
 summary: "Founded in 1912, the St. Francis Xavier School marked an expansion of Catholic educational influence in Hong Kong during the early 20th century."
+description: "Founded in 1912, the St. Francis Xavier School marked an expansion of Catholic educational influence in Hong Kong during the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

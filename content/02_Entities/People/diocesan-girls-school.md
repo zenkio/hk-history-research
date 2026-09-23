@@ -3,6 +3,7 @@ title: "Diocesan Girls' School (拔萃女書院)"
 title_zh: "拔萃女書院"
 tags: ["ai-draft", "colonial-era", "education", "hong-kong-history", "missionary-schools", "person", "women-in-education"]
 summary: "Diocesan Girls' School is one of Hong Kong's oldest and most prestigious secondary schools, reflecting the evolution of elite female education in the territory."
+description: "Diocesan Girls' School is one of Hong Kong's oldest and most prestigious secondary schools, reflecting the evolution of elite female education in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

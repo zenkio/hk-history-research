@@ -6,6 +6,7 @@ year: 1987
 era: "Sino-British negotiations and the transition"
 tags: ["1987", "ai-draft", "black-monday", "financial-regulation", "hong-kong-stock-exchange", "sino-british-transition", "transition"]
 summary: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial financial sector."
+description: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

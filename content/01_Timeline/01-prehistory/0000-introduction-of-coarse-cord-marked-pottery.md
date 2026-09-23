@@ -5,6 +5,7 @@ year: -3500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "lingnan", "neolithic-transition", "pottery", "prehistory"]
 summary: "Around **35000 BCE**, local communities in the Hong Kong region began producing coarse cord-marked pottery, marking a significant technological shift in prehistoric food storage and preparation."
+description: "Around 35000 BCE, local communities in the Hong Kong region began producing coarse cord-marked pottery, marking a significant technological shift in prehistoric food storage and preparation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

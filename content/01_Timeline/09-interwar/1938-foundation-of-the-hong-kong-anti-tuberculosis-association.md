@@ -6,6 +6,7 @@ year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1938", "ai-draft", "colonial-history", "interwar", "interwar-period", "public-health", "social-welfare", "tuberculosis", "urban-history"]
 summary: "Established in 1938, the Hong Kong Anti-Tuberculosis Association marked a pivotal shift in colonial health policy and community mobilization against the territory's persistent tuberculosis epidemic."
+description: "Established in 1938, the Hong Kong Anti-Tuberculosis Association marked a pivotal shift in colonial health policy and community mobilization against the territory's persistent tuberculosis epidemic."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

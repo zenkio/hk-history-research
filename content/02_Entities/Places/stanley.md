@@ -3,6 +3,7 @@ title: "Stanley (赤柱)"
 title_zh: "赤柱"
 tags: ["ai-draft", "battle-of-hong-kong", "colonial-history", "hong-kong-history", "place", "stanley", "world-war-two"]
 summary: "Stanley is a historic coastal settlement on the southern shore of Hong Kong Island that served as an early administrative center and became a focal point of conflict during the Japanese occupation."
+description: "Stanley is a historic coastal settlement on the southern shore of Hong Kong Island that served as an early administrative center and became a focal point of conflict during the Japanese occupation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

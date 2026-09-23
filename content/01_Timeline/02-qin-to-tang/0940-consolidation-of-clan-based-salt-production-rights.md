@@ -5,6 +5,7 @@ year: 940
 era: "Imperial frontier: Qin to Tang"
 tags: ["940", "ai-draft", "clan-history", "economic-history", "indigenous-society", "qin-to-tang", "salt-trade", "tang-dynasty"]
 summary: "During the transition from the late Tang (唐朝) to the Five Dynasties and Ten Kingdoms period, local powerful lineages in the Pearl River Delta solidified control over salt marshes, laying the foundation for the region's long-term rural social hierarchy."
+description: "During the transition from the late Tang (唐朝) to the Five Dynasties and Ten Kingdoms period, local powerful lineages in the Pearl River Delta solidified control over salt marshes, laying the foundation for the region's…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

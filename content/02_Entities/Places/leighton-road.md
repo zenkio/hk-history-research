@@ -3,6 +3,7 @@ title: "Leighton Road (禮頓道)"
 title_zh: "禮頓道"
 tags: ["ai-draft", "causeway-bay", "colonial-history", "hong-kong-island", "leighton-road", "place", "po-leung-kuk"]
 summary: "Leighton Road is a major thoroughfare in Causeway Bay, Hong Kong Island, significant for housing the historic Po Leung Kuk Permanent Headquarters."
+description: "Leighton Road is a major thoroughfare in Causeway Bay, Hong Kong Island, significant for housing the historic Po Leung Kuk Permanent Headquarters."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

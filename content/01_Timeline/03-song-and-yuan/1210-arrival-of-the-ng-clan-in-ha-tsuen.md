@@ -6,6 +6,7 @@ year: 1210
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1210", "ai-draft", "ha-tsuen", "lineage-history", "migration", "new-territories", "ng-clan", "song-and-yuan", "song-dynasty"]
 summary: "During the late Song dynasty, the Ng clan migrated southward to the northwestern New Territories, establishing enduring agricultural settlements and ancestral lineages that shaped the region's social structure."
+description: "During the late Song dynasty, the Ng clan migrated southward to the northwestern New Territories, establishing enduring agricultural settlements and ancestral lineages that shaped the region's social structure."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ma-chow Wong (麥周黃)"
 title_zh: "麥周黃"
 tags: ["19th-century", "ai-draft", "caldwell-anstey-scandal", "colonial-history", "comprador", "hong-kong-history", "person"]
 summary: "Ma-chow Wong was a pivotal Chinese comprador and compurgator whose business dealings and arrest triggered the explosive Caldwell-Anstey corruption scandal of the 1850s in colonial Hong Kong."
+description: "Ma-chow Wong was a pivotal Chinese comprador and compurgator whose business dealings and arrest triggered the explosive Caldwell-Anstey corruption scandal of the 1850s in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

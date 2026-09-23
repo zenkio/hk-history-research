@@ -6,6 +6,7 @@ year: 1720
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1720", "ai-draft", "land-tenure", "migration", "ming-and-qing", "new-territories", "punti-hakka-conflict", "qing-dynasty", "social-history"]
 summary: "During the mid-18th century, competition for arable land in the Pearl River Delta intensified as population growth spurred migration, leading to documented administrative interventions in Punti and Hakka land disputes."
+description: "During the mid-18th century, competition for arable land in the Pearl River Delta intensified as population growth spurred migration, leading to documented administrative interventions in Punti and Hakka land disputes."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

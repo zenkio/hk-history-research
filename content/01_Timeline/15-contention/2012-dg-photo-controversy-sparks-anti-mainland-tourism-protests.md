@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "ai-draft", "anti-mainland-protests", "canton-road", "contention", "dolce-and-gabbana", "individual-visit-scheme", "localism"]
 summary: "In January 2012, public anger erupted outside the flagship store of Italian luxury brand Dolce & Gabbana in Tsim Sha Tsui after security guards barred locals from taking photographs while permitting mainland Chinese tourists to do so. This incident catalyzed broader societal tensions regarding the economic and cultural impact of mainland visitors on Hong Kong."
+description: "In January 2012, public anger erupted outside the flagship store of Italian luxury brand Dolce & Gabbana in Tsim Sha Tsui after security guards barred locals from taking photographs while permitting mainland Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

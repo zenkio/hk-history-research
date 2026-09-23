@@ -3,6 +3,7 @@ title: "Sai Ying Pun (西營盤)"
 title_zh: "西營盤"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "place", "social-reform", "urban-development", "western-district"]
 summary: "Sai Ying Pun is one of the earliest colonial settlements in Hong Kong, serving as a significant administrative, military, and commercial hub during the mid-19th century."
+description: "Sai Ying Pun is one of the earliest colonial settlements in Hong Kong, serving as a significant administrative, military, and commercial hub during the mid-19th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

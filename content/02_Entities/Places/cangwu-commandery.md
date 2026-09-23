@@ -3,6 +3,7 @@ title: "Cangwu Commandery (蒼梧郡)"
 title_zh: "蒼梧郡"
 tags: ["administrative-geography", "ai-draft", "eastern-wu", "han-dynasty", "lingnan-region", "maritime-history", "place"]
 summary: "Cangwu Commandery (蒼梧郡) was an administrative division of imperial China that historically encompassed parts of the Lingnan region, serving as a jurisdictional anchor for early maritime oversight in the South China Sea."
+description: "Cangwu Commandery (蒼梧郡) was an administrative division of imperial China that historically encompassed parts of the Lingnan region, serving as a jurisdictional anchor for early maritime oversight in the South China Sea."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Man clan (文氏)"
 title_zh: "文氏"
 tags: ["ai-draft", "ancestral-lineage", "five-great-clans", "hong-kong-history", "new-territories", "person", "san-tin"]
 summary: "The Man clan is one of the Five Great Clans of the New Territories, holding a prominent historical presence in the San Tin area since the late Southern Song dynasty."
+description: "The Man clan is one of the Five Great Clans of the New Territories, holding a prominent historical presence in the San Tin area since the late Southern Song dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

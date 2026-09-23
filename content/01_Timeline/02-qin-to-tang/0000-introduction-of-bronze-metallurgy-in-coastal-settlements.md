@@ -5,6 +5,7 @@ year: -1000
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "ancient-china", "archaeology", "bronze-age", "maritime-history", "metallurgy", "prehistoric-hong-kong", "qin-to-tang"]
 summary: "During the late second millennium to early first millennium BCE, coastal communities in the Hong Kong region began adopting bronze tools and weapons, marking a technological shift from the Neolithic period."
+description: "During the late second millennium to early first millennium BCE, coastal communities in the Hong Kong region began adopting bronze tools and weapons, marking a technological shift from the Neolithic period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

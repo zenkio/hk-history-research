@@ -3,6 +3,7 @@ title: "Ho Sheung Heung (河上鄉)"
 title_zh: "河上鄉"
 tags: ["ai-draft", "hau-clan", "ho-sheung-heung", "hong-kong-history", "lineage-villages", "new-territories", "place"]
 summary: "Ho Sheung Heung is a historic village in the North District of Hong Kong, significant for its deep-rooted connection to the Hau (侯) clan and the traditional sociopolitical structure of the New Territories."
+description: "Ho Sheung Heung is a historic village in the North District of Hong Kong, significant for its deep-rooted connection to the Hau (侯) clan and the traditional sociopolitical structure of the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

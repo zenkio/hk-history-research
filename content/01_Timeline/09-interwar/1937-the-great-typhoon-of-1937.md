@@ -6,6 +6,7 @@ year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1937", "ai-draft", "great-typhoon", "interwar", "maritime-history", "meteorology", "natural-disaster"]
 summary: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
+description: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -35000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "geography", "migration", "pleistocene", "prehistory"]
 summary: "During the late Pleistocene, fluctuating sea levels created land bridges that allowed early human populations to migrate into the region now known as Hong Kong."
+description: "During the late Pleistocene, fluctuating sea levels created land bridges that allowed early human populations to migrate into the region now known as Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

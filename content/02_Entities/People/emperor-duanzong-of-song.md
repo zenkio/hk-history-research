@@ -3,6 +3,7 @@ title: "Emperor Duanzong of Song (宋端宗)"
 title_zh: "宋端宗"
 tags: ["ai-draft", "imperial-history", "maritime-history", "person", "song-dynasty", "southern-song", "sung-wong-toi"]
 summary: "Emperor Duanzong (Zhao Shi) was the penultimate monarch of the Southern Song Dynasty who sought refuge in the Hong Kong region while fleeing the Mongol invasion."
+description: "Emperor Duanzong (Zhao Shi) was the penultimate monarch of the Southern Song Dynasty who sought refuge in the Hong Kong region while fleeing the Mongol invasion."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

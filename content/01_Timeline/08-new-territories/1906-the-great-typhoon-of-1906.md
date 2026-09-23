@@ -6,6 +6,7 @@ year: 1906
 era: "The New Territories lease and the early 20th century"
 tags: ["1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
 summary: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
+description: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

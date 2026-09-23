@@ -3,6 +3,7 @@ title: "Hong Kong Waters (香港水域)"
 title_zh: "香港水域"
 tags: ["ai-draft", "fishing-communities", "hoklo", "maritime-history", "pearl-river-delta", "place", "tanka"]
 summary: "Hong Kong Waters (香港水域) served as the vital maritime space where diverse coastal populations, particularly the Tanka and Hoklo communities, lived, fished, and navigated centuries before British colonial rule."
+description: "Hong Kong Waters (香港水域) served as the vital maritime space where diverse coastal populations, particularly the Tanka and Hoklo communities, lived, fished, and navigated centuries before British colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

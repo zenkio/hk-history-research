@@ -6,6 +6,7 @@ year: 1855
 era: "The early colony"
 tags: ["1855", "19th-century-hong-kong", "ai-draft", "colonial-history", "comprador-system", "early-colony", "economic-history", "trade-relations"]
 summary: "By 1855, Chinese intermediaries known as compradors became essential to the Hong Kong economy, facilitating trade between foreign merchant houses and the Chinese interior."
+description: "By 1855, Chinese intermediaries known as compradors became essential to the Hong Kong economy, facilitating trade between foreign merchant houses and the Chinese interior."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

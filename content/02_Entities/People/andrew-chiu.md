@@ -3,6 +3,7 @@ title: "Andrew Chiu (趙家賢)"
 title_zh: "趙家賢"
 tags: ["2020-primaries", "ai-draft", "democratic-party", "district-council", "hong-kong-politics", "national-security-law", "person"]
 summary: "Andrew Chiu (趙家賢) is a Hong Kong politician and former District Councillor who played a central role in the 2020 pro-democracy legislative primaries."
+description: "Andrew Chiu (趙家賢) is a Hong Kong politician and former District Councillor who played a central role in the 2020 pro-democracy legislative primaries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

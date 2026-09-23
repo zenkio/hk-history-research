@@ -3,6 +3,7 @@ title: "Ping Che (坪輋)"
 title_zh: "坪輋"
 tags: ["ai-draft", "hong-kong-planning", "land-development", "new-territories", "north-district", "place", "rural-history"]
 summary: "Ping Che is a rural area in the North District of the New Territories that has become a focal point for debates regarding Hong Kong's land development policy and agricultural preservation."
+description: "Ping Che is a rural area in the North District of the New Territories that has become a focal point for debates regarding Hong Kong's land development policy and agricultural preservation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Dongjiang Column members (東江縱隊成員)"
 title_zh: "東江縱隊成員"
 tags: ["ai-draft", "guerrilla-warfare", "hong-kong-history", "person", "resistance-movements", "second-sino-japanese-war", "world-war-ii"]
 summary: "The Dongjiang Column (東江縱隊) was a guerrilla force active in South China and Hong Kong during the Second Sino-Japanese War, significant for its role in anti-Japanese operations and the evacuation of intellectuals."
+description: "The Dongjiang Column (東江縱隊) was a guerrilla force active in South China and Hong Kong during the Second Sino-Japanese War, significant for its role in anti-Japanese operations and the evacuation of intellectuals."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

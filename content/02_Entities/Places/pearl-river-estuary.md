@@ -3,6 +3,7 @@ title: "Pearl River estuary (珠江口)"
 title_zh: "珠江口"
 tags: ["ai-draft", "geopolitics", "maritime-history", "pearl-river", "place", "qing-dynasty", "tung-chung"]
 summary: "The Pearl River Estuary is a critical maritime gateway connecting the river delta to the South China Sea, serving as the strategic arena for Hong Kong's defense, trade, and geopolitical evolution."
+description: "The Pearl River Estuary is a critical maritime gateway connecting the river delta to the South China Sea, serving as the strategic arena for Hong Kong's defense, trade, and geopolitical evolution."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

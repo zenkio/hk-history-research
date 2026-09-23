@@ -3,6 +3,7 @@ title: "Karl Gützlaff (郭實獵)"
 title_zh: "郭實獵"
 tags: ["ai-draft", "colonial-history", "diplomacy", "linguistics", "missionaries", "nineteenth-century", "person"]
 summary: "Karl Gützlaff was a prominent Prussian missionary and linguist whose early voyages along the China coast and later work as an interpreter for the British Empire played a foundational role in the pre-colonial and early colonial history of Hong Kong."
+description: "Karl Gützlaff was a prominent Prussian missionary and linguist whose early voyages along the China coast and later work as an interpreter for the British Empire played a foundational role in the pre-colonial and early…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

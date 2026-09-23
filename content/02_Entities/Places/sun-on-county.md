@@ -3,6 +3,7 @@ title: "Sun On County (新安縣)"
 title_zh: "新安縣"
 tags: ["ai-draft", "hakka-resettlement", "hong-kong-history", "new-territories", "place", "qing-dynasty", "sun-on-county"]
 summary: "Sun On County was the historical administrative division that governed the territory of modern-day Hong Kong and Shenzhen for over two centuries prior to the British colonial era."
+description: "Sun On County was the historical administrative division that governed the territory of modern-day Hong Kong and Shenzhen for over two centuries prior to the British colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

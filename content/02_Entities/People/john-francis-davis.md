@@ -3,6 +3,7 @@ title: "John Francis Davis (約翰·戴維斯)"
 title_zh: "約翰·戴維斯"
 tags: ["19th-century", "ai-draft", "british-empire", "colonial-history", "hong-kong-governors", "hong-kong-police", "person"]
 summary: "Sir John Francis Davis was the second Governor of Hong Kong, whose tenure saw the formal institutionalization of colonial governance and the establishment of the Hong Kong Police Force."
+description: "Sir John Francis Davis was the second Governor of Hong Kong, whose tenure saw the formal institutionalization of colonial governance and the establishment of the Hong Kong Police Force."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

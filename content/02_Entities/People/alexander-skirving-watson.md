@@ -3,6 +3,7 @@ title: "Alexander Skirving Watson (亞歷山大·屈臣)"
 title_zh: "亞歷山大·屈臣"
 tags: ["ai-draft", "business-history", "colonial-history", "hong-kong-dispensary", "nineteenth-century", "person", "pharmaceuticals"]
 summary: "A pharmacist and colonial entrepreneur whose leadership of the Hong Kong Dispensary helped establish the foundation of the modern pharmaceutical industry in Hong Kong."
+description: "A pharmacist and colonial entrepreneur whose leadership of the Hong Kong Dispensary helped establish the foundation of the modern pharmaceutical industry in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1981
 era: "Riots and the MacLehose reforms"
 tags: ["1981", "ai-draft", "british-nationality-act", "colonial-history", "identity", "right-of-abode", "riots-and-reform"]
 summary: "The passage of the British Nationality Act 1981 reclassified Hong Kong residents, stripping them of the right of abode in the United Kingdom and generating profound local anxiety regarding their future political status."
+description: "The passage of the British Nationality Act 1981 reclassified Hong Kong residents, stripping them of the right of abode in the United Kingdom and generating profound local anxiety regarding their future political status."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

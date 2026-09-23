@@ -6,6 +6,7 @@ year: 2000
 era: "The early HKSAR"
 tags: ["2000", "ai-draft", "early-hksar", "governance", "housing-authority", "infrastructure", "public-housing", "scandal"]
 summary: "The discovery of severely substandard foundations in newly built public housing estates in 2000 led to high-profile resignations and systemic reforms in Hong Kong's construction governance."
+description: "The discovery of severely substandard foundations in newly built public housing estates in 2000 led to high-profile resignations and systemic reforms in Hong Kong's construction governance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

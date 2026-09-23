@@ -6,6 +6,7 @@ year: 2019
 era: "Political contention and protest"
 tags: ["2019", "2019-protests", "ai-draft", "contention", "digital-dissent", "lennon-walls", "political-communication", "public-space", "urban-history"]
 summary: "In 2019, decentralized 'Lennon Walls' emerged across Hong Kong as a form of non-hierarchical, crowd-sourced visual dissent."
+description: "In 2019, decentralized 'Lennon Walls' emerged across Hong Kong as a form of non-hierarchical, crowd-sourced visual dissent."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2011
 era: "Political contention and protest"
 tags: ["2011", "ai-draft", "contention", "economic-policy", "labor-rights", "minimum-wage", "wealth-inequality"]
 summary: "On May 1, 2011, Hong Kong enacted its first-ever statutory minimum wage, setting an initial rate of HK$28 per hour to protect low-income workers against severe wealth disparity. This landmark legislation fundamentally shifted the territory's traditionally laissez-faire labor market policies."
+description: "On May 1, 2011, Hong Kong enacted its first-ever statutory minimum wage, setting an initial rate of HK$28 per hour to protect low-income workers against severe wealth disparity."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

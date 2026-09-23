@@ -6,6 +6,7 @@ year: 1310
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1310", "ai-draft", "ancestral-worship", "clans", "neo-confucianism", "new-territories", "song-and-yuan", "song-yuan-period"]
 summary: "During the early 14th century, influential immigrant lineages in the New Territories region institutionalized Neo-Confucian ancestral worship and clan governance, laying the foundations for rural society."
+description: "During the early 14th century, influential immigrant lineages in the New Territories region institutionalized Neo-Confucian ancestral worship and clan governance, laying the foundations for rural society."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

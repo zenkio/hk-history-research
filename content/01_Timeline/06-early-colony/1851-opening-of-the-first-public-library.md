@@ -6,6 +6,7 @@ year: 1851
 era: "The early colony"
 tags: ["1851", "ai-draft", "colonial-history", "cultural-development", "early-colony", "education-history", "nineteenth-century", "public-libraries", "victoria-city"]
 summary: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
+description: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

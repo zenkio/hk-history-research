@@ -6,6 +6,7 @@ year: 1948
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1948", "ai-draft", "colonial-history", "kmt-ccp-rivalry", "labour-movement", "postwar-refugees", "trade-unions"]
 summary: "In 1948, the colonial government enacted the Trade Union Registration Ordinance, bringing labor organizations under strict official supervision and deeply entrenching the Chinese Civil War's political divide within the local workforce."
+description: "In 1948, the colonial government enacted the Trade Union Registration Ordinance, bringing labor organizations under strict official supervision and deeply entrenching the Chinese Civil War's political divide within the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

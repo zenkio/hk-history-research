@@ -3,6 +3,7 @@ title: "Kam Tin (錦田)"
 title_zh: "錦田"
 tags: ["ai-draft", "british-colonial-history", "kam-tin", "new-territories", "place", "tang-clan", "walled-villages"]
 summary: "Kam Tin is a historic agricultural plain in the New Territories, significantly shaped by the dominance of the Tang clan and its complex interactions with imperial Chinese administration, British colonial rule, and local resistance."
+description: "Kam Tin is a historic agricultural plain in the New Territories, significantly shaped by the dominance of the Tang clan and its complex interactions with imperial Chinese administration, British colonial rule, and local…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

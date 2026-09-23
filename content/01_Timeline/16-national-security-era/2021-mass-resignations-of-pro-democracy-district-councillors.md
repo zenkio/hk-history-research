@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "district-councils", "local-politics", "mass-resignation", "national-security-era", "national-security-law"]
 summary: "In July 2021, over 200 pro-democracy district councillors resigned en masse following widespread media reports that Beijing authorities planned to disqualify them and retroactively demand the repayment of all public salaries and allowances."
+description: "In July 2021, over 200 pro-democracy district councillors resigned en masse following widespread media reports that Beijing authorities planned to disqualify them and retroactively demand the repayment of all public…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Prague (布拉格)"
 title_zh: "布拉格"
 tags: ["ai-draft", "civil-society", "international-influence", "lennon-wall", "place", "political-history", "protest-culture"]
 summary: "The capital of the Czech Republic served as the historical inspiration for the 'Lennon Wall,' a form of non-violent political expression that became a prominent feature of Hong Kong's 2014 and 2019 protest movements."
+description: "The capital of the Czech Republic served as the historical inspiration for the 'Lennon Wall,' a form of non-violent political expression that became a prominent feature of Hong Kong's 2014 and 2019 protest movements."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

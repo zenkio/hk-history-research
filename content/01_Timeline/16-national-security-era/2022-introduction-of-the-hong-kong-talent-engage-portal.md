@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "economic-policy", "hong-kong-talent-engage", "human-capital", "labor-market", "migration", "national-security-era"]
 summary: "On December 28, 2022, the Hong Kong government launched the 'Hong Kong Talent Engage' (人才服務窗口) portal as a centralized digital platform to attract international professionals."
+description: "On December 28, 2022, the Hong Kong government launched the 'Hong Kong Talent Engage' (人才服務窗口) portal as a centralized digital platform to attract international professionals."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

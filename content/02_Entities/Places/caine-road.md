@@ -3,6 +3,7 @@ title: "Caine Road (堅道)"
 title_zh: "堅道"
 tags: ["ai-draft", "colonial-history", "infrastructure", "mid-levels", "place", "urban-development"]
 summary: "Caine Road is a historic thoroughfare in the Mid-Levels of Hong Kong Island that played a significant role in early colonial urban development and later modern connectivity."
+description: "Caine Road is a historic thoroughfare in the Mid-Levels of Hong Kong Island that played a significant role in early colonial urban development and later modern connectivity."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

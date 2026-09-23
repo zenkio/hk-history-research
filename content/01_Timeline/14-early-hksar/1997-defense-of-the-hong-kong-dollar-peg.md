@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "asian-financial-crisis", "currency-peg", "early-hksar", "hkma", "hong-kong-dollar", "monetary-policy"]
 summary: "During the onset of the Asian Financial Crisis in October 1997, Hong Kong monetary authorities successfully defended the linked exchange rate system against aggressive speculative attacks, preserving currency stability at the expense of high interest rates and sharp asset market contractions."
+description: "During the onset of the Asian Financial Crisis in October 1997, Hong Kong monetary authorities successfully defended the linked exchange rate system against aggressive speculative attacks, preserving currency stability…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

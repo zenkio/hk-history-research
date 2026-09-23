@@ -5,6 +5,7 @@ year: -300
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "ancient-hong-kong", "bronze-age", "maritime-history", "qin-to-tang", "shipbuilding", "yue-culture"]
 summary: "Between 300 BCE and 214 BCE, the indigenous Yue (越) tribes of the Pearl River Delta developed advanced maritime technologies that facilitated regional dominance in navigation and trade."
+description: "Between 300 BCE and 214 BCE, the indigenous Yue (越) tribes of the Pearl River Delta developed advanced maritime technologies that facilitated regional dominance in navigation and trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

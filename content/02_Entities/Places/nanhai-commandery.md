@@ -3,6 +3,7 @@ title: "Nanhai Commandery (南海郡)"
 title_zh: "南海郡"
 tags: ["ai-draft", "ancient-history", "han-dynasty", "nanhai-commandery", "nanyue-kingdom", "place", "qin-dynasty"]
 summary: "Established during the Qin dynasty conquest of Lingnan, Nanhai Commandery is the earliest known imperial administrative unit encompassing the territory that is now Hong Kong."
+description: "Established during the Qin dynasty conquest of Lingnan, Nanhai Commandery is the earliest known imperial administrative unit encompassing the territory that is now Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

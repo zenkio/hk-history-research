@@ -3,6 +3,7 @@ title: "Ng Cho-fan (吳楚帆)"
 title_zh: "吳楚帆"
 tags: ["ai-draft", "cantonese-cinema", "film-history", "hong-kong-history", "ng-cho-fan", "person", "union-film"]
 summary: "Ng Cho-fan was a leading actor and filmmaker in mid-century Hong Kong cinema who co-founded Union Film Enterprise, shaping the moral and artistic standards of Cantonese-language films."
+description: "Ng Cho-fan was a leading actor and filmmaker in mid-century Hong Kong cinema who co-founded Union Film Enterprise, shaping the moral and artistic standards of Cantonese-language films."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

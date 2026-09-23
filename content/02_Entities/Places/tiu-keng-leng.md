@@ -3,6 +3,7 @@ title: "Tiu Keng Leng (調景嶺)"
 title_zh: "調景嶺"
 tags: ["ai-draft", "hong-kong-history", "place", "refugee-settlements", "sai-kung", "tiu-keng-leng", "urban-development"]
 summary: "Tiu Keng Leng is a coastal area in Sai Kung District that transitioned from a remote village to a pivotal settlement for refugees fleeing the mainland after 1949, and later into a modern residential hub."
+description: "Tiu Keng Leng is a coastal area in Sai Kung District that transitioned from a remote village to a pivotal settlement for refugees fleeing the mainland after 1949, and later into a modern residential hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

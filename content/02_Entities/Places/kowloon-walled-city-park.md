@@ -3,6 +3,7 @@ title: "Kowloon Walled City Park (九龍城寨公園)"
 title_zh: "九龍城寨公園"
 tags: ["ai-draft", "colonial-history", "heritage-conservation", "hong-kong-history", "kowloon", "place", "urban-development"]
 summary: "A public park built on the site of the former Kowloon Walled City, an enclave characterized by its unique legal status and dense urban history."
+description: "A public park built on the site of the former Kowloon Walled City, an enclave characterized by its unique legal status and dense urban history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

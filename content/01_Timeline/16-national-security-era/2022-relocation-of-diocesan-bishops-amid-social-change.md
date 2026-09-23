@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "catholic-church", "diplomacy", "national-security-era", "national-security-law", "religious-history", "social-change"]
 summary: "In late 2022, the Catholic Diocese of Hong Kong experienced leadership transitions reflecting the evolving relationship between the Vatican, the mainland Chinese authorities, and the local church."
+description: "In late 2022, the Catholic Diocese of Hong Kong experienced leadership transitions reflecting the evolving relationship between the Vatican, the mainland Chinese authorities, and the local church."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

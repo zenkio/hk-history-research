@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1991", "ai-draft", "cantopop", "hutchison-whampoa", "media-history", "satellite-television", "star-tv", "transition"]
 summary: "On May 8, 1991, Satellite Television Asian Region (STAR TV) was launched in Hong Kong, marking the birth of Asia's first multi-channel satellite television network and transforming the territory into a regional broadcasting hub."
+description: "On May 8, 1991, Satellite Television Asian Region (STAR TV) was launched in Hong Kong, marking the birth of Asia's first multi-channel satellite television network and transforming the territory into a regional…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

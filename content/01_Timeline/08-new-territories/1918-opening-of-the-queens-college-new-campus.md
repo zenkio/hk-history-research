@@ -6,6 +6,7 @@ year: 1918
 era: "The New Territories lease and the early 20th century"
 tags: ["1918", "ai-draft", "british-empire", "colonial-education", "early-20th-century", "hong-kong-history", "new-territories", "queen-s-college"]
 summary: "In 1918, Queen's College relocated to its new premises in Causeway Bay, marking a significant milestone in the development of colonial secular education in Hong Kong."
+description: "In 1918, Queen's College relocated to its new premises in Causeway Bay, marking a significant milestone in the development of colonial secular education in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

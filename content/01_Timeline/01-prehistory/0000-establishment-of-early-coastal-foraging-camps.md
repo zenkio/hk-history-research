@@ -5,6 +5,7 @@ year: -6000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "holocene", "marine-foraging", "neolithic", "prehistory", "sham-wan"]
 summary: "Around 6000 to 5000 BCE, nomadic groups established seasonal foraging sites along the coast of Hong Kong, marking the start of intensive marine resource exploitation."
+description: "Around 6000 to 5000 BCE, nomadic groups established seasonal foraging sites along the coast of Hong Kong, marking the start of intensive marine resource exploitation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

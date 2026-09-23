@@ -3,6 +3,7 @@ title: "Toronto (多倫多)"
 title_zh: "多倫多"
 tags: ["ai-draft", "brain-drain", "canada", "history", "hong-kong-diaspora", "migration", "place"]
 summary: "Toronto is a major Canadian city that became a primary destination for Hong Kong emigrants seeking stability during the transition of sovereignty in the late 20th century."
+description: "Toronto is a major Canadian city that became a primary destination for Hong Kong emigrants seeking stability during the transition of sovereignty in the late 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "japanese-occupation", "social-control", "surveillance", "tonarigumi", "world-war-ii"]
 summary: "In April 1942, Japanese occupation authorities in Hong Kong formally introduced the Tonarigumi neighborhood surveillance system to enforce collective responsibility, monitor urban residents, and suppress anti-Japanese activities."
+description: "In April 1942, Japanese occupation authorities in Hong Kong formally introduced the Tonarigumi neighborhood surveillance system to enforce collective responsibility, monitor urban residents, and suppress anti-Japanese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

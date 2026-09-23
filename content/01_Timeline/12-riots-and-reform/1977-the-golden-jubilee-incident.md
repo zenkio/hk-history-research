@@ -6,6 +6,7 @@ year: 1977
 era: "Riots and the MacLehose reforms"
 tags: ["1977", "ai-draft", "civil-engagement", "colonial-history", "education-reform", "golden-jubilee-incident", "riots-and-reform", "student-movement"]
 summary: "The Golden Jubilee Incident of 1977 was a major student and teacher mobilization protesting alleged corruption within a Catholic school, which catalyzed broader political awareness and youth activism in late-colonial Hong Kong."
+description: "The Golden Jubilee Incident of 1977 was a major student and teacher mobilization protesting alleged corruption within a Catholic school, which catalyzed broader political awareness and youth activism in late-colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

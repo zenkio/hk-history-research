@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "contention", "extreme-weather", "labor-rights", "natural-disaster", "transport-chaos", "typhoon-mangkhut"]
 summary: "On September 16, 2018, Super Typhoon Mangkhut battered Hong Kong, causing widespread destruction, severe transport gridlock, and intense public debate over labor policies during extreme weather."
+description: "On September 16, 2018, Super Typhoon Mangkhut battered Hong Kong, causing widespread destruction, severe transport gridlock, and intense public debate over labor policies during extreme weather."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

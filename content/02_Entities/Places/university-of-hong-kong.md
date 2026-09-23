@@ -3,6 +3,7 @@ title: "University of Hong Kong (香港大學)"
 title_zh: "香港大學"
 tags: ["ai-draft", "campus-politics", "colonial-history", "higher-education", "historical-memory", "place", "university-of-hong-kong"]
 summary: "The University of Hong Kong is the territory's oldest institution of higher learning, serving as a vital site for political discourse, cultural preservation, and historical controversy across the British colonial and post-colonial eras."
+description: "The University of Hong Kong is the territory's oldest institution of higher learning, serving as a vital site for political discourse, cultural preservation, and historical controversy across the British colonial and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

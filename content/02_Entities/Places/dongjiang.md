@@ -3,6 +3,7 @@ title: "Dongjiang (東江)"
 title_zh: "東江"
 tags: ["ai-draft", "guangdong", "hong-kong-history", "infrastructure", "pearl-river-delta", "place", "water-security"]
 summary: "The Dongjiang (East River) is a major tributary of the Pearl River in Guangdong Province that serves as the primary source of fresh water for Hong Kong."
+description: "The Dongjiang (East River) is a major tributary of the Pearl River in Guangdong Province that serves as the primary source of fresh water for Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

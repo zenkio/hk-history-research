@@ -3,6 +3,7 @@ title: "Jiang Zemin (江澤民)"
 title_zh: "江澤民"
 tags: ["ai-draft", "hong-kong-handover", "jiang-zemin", "modern-chinese-history", "person", "prc-history", "sovereignty-transfer"]
 summary: "As the President of the People's Republic of China from 1993 to 2003, Jiang Zemin served as the central leadership figure during the 1997 transfer of sovereignty over Hong Kong."
+description: "As the President of the People's Republic of China from 1993 to 2003, Jiang Zemin served as the central leadership figure during the 1997 transfer of sovereignty over Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

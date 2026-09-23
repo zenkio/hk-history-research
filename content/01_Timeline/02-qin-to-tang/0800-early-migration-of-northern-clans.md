@@ -5,6 +5,7 @@ year: 800
 era: "Imperial frontier: Qin to Tang"
 tags: ["800", "agriculture", "ai-draft", "lineage-clans", "migration", "new-territories", "qin-to-tang", "tang-dynasty"]
 summary: "Around the **8th century**, during the Tang dynasty, the earliest ancestors of prominent lineage clans began migrating from northern Chinese provinces to settle the fertile alluvial plains of the modern New Territories."
+description: "Around the 8th century, during the Tang dynasty, the earliest ancestors of prominent lineage clans began migrating from northern Chinese provinces to settle the fertile alluvial plains of the modern New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

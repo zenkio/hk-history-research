@@ -6,6 +6,7 @@ year: 1957
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1957", "ai-draft", "colonial-history", "economic-development", "industrialization", "post-war-history", "postwar-refugees", "vocational-education"]
 summary: "In 1957, the opening of the Hong Kong Technical College marked a pivotal shift in colonial education policy to support the territory's transition into a manufacturing hub."
+description: "In 1957, the opening of the Hong Kong Technical College marked a pivotal shift in colonial education policy to support the territory's transition into a manufacturing hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

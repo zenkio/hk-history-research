@@ -5,6 +5,7 @@ year: -500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "pearl-river-delta", "prehistory", "trade"]
 summary: "Around **500 BCE**, coastal settlements in the region that is now Hong Kong integrated into expanding regional exchange networks, trading marine goods, pottery, and stone ornaments."
+description: "Around 500 BCE, coastal settlements in the region that is now Hong Kong integrated into expanding regional exchange networks, trading marine goods, pottery, and stone ornaments."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1350
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1350", "ai-draft", "folk-religion", "maritime-history", "mazu", "song-and-yuan", "tin-hau", "yuan-dynasty"]
 summary: "During the late Yuan dynasty, the cult of the sea goddess Mazu transformed from a regional Fujianese belief into the central spiritual protector for fishing and coastal communities across Hong Kong."
+description: "During the late Yuan dynasty, the cult of the sea goddess Mazu transformed from a regional Fujianese belief into the central spiritual protector for fishing and coastal communities across Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

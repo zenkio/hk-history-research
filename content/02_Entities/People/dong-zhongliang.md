@@ -3,6 +3,7 @@ title: "Dong Zhongliang (董仲良)"
 title_zh: "董仲良"
 tags: ["19th-century", "ai-draft", "colonial-history", "hong-kong-merchants", "person", "po-leung-kuk", "social-welfare"]
 summary: "Dong Zhongliang was a prominent merchant and community leader in late 19th-century Hong Kong who served as one of the inaugural directors of the Po Leung Kuk."
+description: "Dong Zhongliang was a prominent merchant and community leader in late 19th-century Hong Kong who served as one of the inaugural directors of the Po Leung Kuk."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

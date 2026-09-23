@@ -3,6 +3,7 @@ title: "Ng Clan Ancestors (吳氏祖先)"
 title_zh: "吳氏祖先"
 tags: ["ai-draft", "ha-tsuen", "lineage-history", "local-history", "new-territories", "ng-clan", "person"]
 summary: "The early forebears of the Ng clan whose descendants established prominent settlements in Ha Tsuen represent the broader pattern of lineage-based migration and land reclamation in the New Territories."
+description: "The early forebears of the Ng clan whose descendants established prominent settlements in Ha Tsuen represent the broader pattern of lineage-based migration and land reclamation in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

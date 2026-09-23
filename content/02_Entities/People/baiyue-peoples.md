@@ -3,6 +3,7 @@ title: "Baiyue peoples (百越)"
 title_zh: "百越"
 tags: ["ai-draft", "archaeology", "baiyue", "indigenous-peoples", "lingnan", "person", "prehistoric-hong-kong"]
 summary: "The Baiyue peoples were a diverse group of indigenous societies inhabiting southern China and northern Vietnam who laid the foundational prehistoric culture of Hong Kong."
+description: "The Baiyue peoples were a diverse group of indigenous societies inhabiting southern China and northern Vietnam who laid the foundational prehistoric culture of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

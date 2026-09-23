@@ -6,6 +6,7 @@ year: 1200
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1200", "agriculture", "ai-draft", "clan-history", "land-reclamation", "new-territories", "song-and-yuan", "southern-song"]
 summary: "Between 1200 and 1250, the migration of powerful mainland clans into the New Territories brought sophisticated irrigation and wet-rice cultivation methods that transformed the region's agricultural productivity."
+description: "Between 1200 and 1250, the migration of powerful mainland clans into the New Territories brought sophisticated irrigation and wet-rice cultivation methods that transformed the region's agricultural productivity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

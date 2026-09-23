@@ -5,6 +5,7 @@ year: -800
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "pottery", "prehistory", "tuen-mun"]
 summary: "Around **800 BCE**, during the Bronze Age, specialized pottery-making kilns were established in the modern-day Tuen Mun area, marking an important step toward regional craft specialization."
+description: "Around 800 BCE, during the Bronze Age, specialized pottery-making kilns were established in the modern-day Tuen Mun area, marking an important step toward regional craft specialization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ruitaro Fujita (藤田類太郎)"
 title_zh: "藤田類太郎"
 tags: ["ai-draft", "colonial-history", "government-house", "japanese-occupation", "person", "world-war-ii"]
 summary: "Ruitaro Fujita was a Japanese naval officer who served as a signatory during the formal surrender of Japanese forces in Hong Kong in 1945."
+description: "Ruitaro Fujita was a Japanese naval officer who served as a signatory during the formal surrender of Japanese forces in Hong Kong in 1945."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

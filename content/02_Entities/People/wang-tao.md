@@ -3,6 +3,7 @@ title: "Wang Tao (王韜)"
 title_zh: "王韜"
 tags: ["ai-draft", "hong-kong-history", "intellectual-history", "journalism", "person", "qing-dynasty", "translation"]
 summary: "Wang Tao was a seminal nineteenth-century scholar, journalist, and reformer who utilized his exile in Hong Kong to pioneer modern Chinese journalism and cross-cultural translation."
+description: "Wang Tao was a seminal nineteenth-century scholar, journalist, and reformer who utilized his exile in Hong Kong to pioneer modern Chinese journalism and cross-cultural translation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2010
 era: "Political contention and protest"
 tags: ["2010", "ai-draft", "contention", "express-rail-link", "infrastructure", "localism", "protests", "youth-activism"]
 summary: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political activism."
+description: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

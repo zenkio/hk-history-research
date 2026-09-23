@@ -3,6 +3,7 @@ title: "Victoria City (維多利亞城)"
 title_zh: "維多利亞城"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "place", "urban-development", "victoria-city"]
 summary: "Victoria City was the early urban center of British colonial Hong Kong, serving as the seat of government, commerce, and administration from the mid-nineteenth century onward."
+description: "Victoria City was the early urban center of British colonial Hong Kong, serving as the seat of government, commerce, and administration from the mid-nineteenth century onward."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

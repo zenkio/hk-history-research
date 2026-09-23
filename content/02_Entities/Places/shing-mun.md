@@ -3,6 +3,7 @@ title: "Shing Mun (城門)"
 title_zh: "城門"
 tags: ["ai-draft", "colonial-history", "new-territories", "place", "reservoirs", "shing-mun", "water-crisis"]
 summary: "Shing Mun is a valley and former village cluster in the New Territories that became a crucial focal point for Hong Kong's water supply infrastructure, most notably during the severe drought and water crisis of 1929."
+description: "Shing Mun is a valley and former village cluster in the New Territories that became a crucial focal point for Hong Kong's water supply infrastructure, most notably during the severe drought and water crisis of 1929."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

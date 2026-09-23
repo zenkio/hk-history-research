@@ -3,6 +3,7 @@ title: "Lu Kun (盧坤)"
 title_zh: "盧坤"
 tags: ["ai-draft", "canton-system", "history", "lu-kun", "napier-affair", "person", "qing-dynasty"]
 summary: "Lu Kun was a high-ranking Qing dynasty official in Guangdong whose hardline stance during the Napier Affair shaped early British-Chinese diplomatic tensions leading up to the First Opium War."
+description: "Lu Kun was a high-ranking Qing dynasty official in Guangdong whose hardline stance during the Napier Affair shaped early British-Chinese diplomatic tensions leading up to the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

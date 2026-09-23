@@ -4,6 +4,7 @@ title_zh: "地下新聞網絡的運作"
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["ai-draft", "hong-kong-history", "japanese-occupation", "resistance-movements", "underground-press", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong (1941-1945), resistance groups covertly disseminated Allied news to counter strict media censorship and maintain public morale."
+description: "During the Japanese occupation of Hong Kong (1941-1945), resistance groups covertly disseminated Allied news to counter strict media censorship and maintain public morale."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "demographics", "food-shortage", "japanese-occupation", "mass-repatriation", "world-war-ii"]
 summary: "In January 1942, the Japanese military administration in Hong Kong initiated a mass repatriation policy, forcibly deporting hundreds of thousands of urban residents to mainland China to combat severe food shortages."
+description: "In January 1942, the Japanese military administration in Hong Kong initiated a mass repatriation policy, forcibly deporting hundreds of thousands of urban residents to mainland China to combat severe food shortages."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

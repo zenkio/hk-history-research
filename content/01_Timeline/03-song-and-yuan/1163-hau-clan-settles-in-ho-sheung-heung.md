@@ -6,6 +6,7 @@ year: 1163
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1163", "ai-draft", "hau-clan", "ho-sheung-heung", "lineage-history", "new-territories", "song-and-yuan", "song-dynasty"]
 summary: "Around 1163, the Hau clan migrated southward from Guangdong to establish their settlement at Ho Sheung Heung, laying down deep roots that would make them one of the prominent founding lineages of the northern New Territories."
+description: "Around 1163, the Hau clan migrated southward from Guangdong to establish their settlement at Ho Sheung Heung, laying down deep roots that would make them one of the prominent founding lineages of the northern New…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

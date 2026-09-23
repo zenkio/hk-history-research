@@ -2,7 +2,8 @@
 title: "Death of Lt. Ralph Shrigley during Japanese Occupation"
 date: 1944-06-28
 tags: ["1898", "1917", "1919", "1928", "1932", "1936", "1939", "1940", "1941", "1942", "1944", "1947", "1950", "2009", "2023", "hkvdc", "japanese-occupation", "military-history", "pow-camp", "victoria-gaol", "wwii"]
-summary: "**Ralph James Shrigley**, an officer in the **Hong Kong Volunteer Defence Corps** (HKVDC), was captured and interned by "
+summary: "Ralph James Shrigley, an officer in the Hong Kong Volunteer Defence Corps (HKVDC), was captured and interned by Japanese forces following the 1941 surrender of Hong Kong."
+description: "Ralph James Shrigley, an officer in the Hong Kong Volunteer Defence Corps (HKVDC), was captured and interned by Japanese forces following the 1941 surrender of Hong Kong."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/07/lt-ralph-shrigley-hkvdc-who-took-his.html"

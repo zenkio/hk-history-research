@@ -2,6 +2,7 @@
 title: "03 · Song and Yuan: salt, pearls and clans (960-1368)"
 tags: ["ai-draft", "era-overview", "imperial-refugees", "indigenous-history", "maritime-trade", "new-territories-clans", "song-dynasty", "yuan-dynasty"]
 summary: "The Song and Yuan eras marked a transformative period in Hong Kong's history, characterized by the settlement of powerful lineage clans and the expansion of state-controlled salt and pearl industries. The era also transformed the region into a dramatic final theater for the fleeing Southern Song imperial court as it resisted Mongol conquest."
+description: "The Song and Yuan eras marked a transformative period in Hong Kong's history, characterized by the settlement of powerful lineage clans and the expansion of state-controlled salt and pearl industries."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash
 ingested: 2026-09-23

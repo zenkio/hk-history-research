@@ -3,6 +3,7 @@ title: "John Lee Ka-chiu (李家超)"
 title_zh: "李家超"
 tags: ["ai-draft", "chief-executive", "hong-kong-police", "john-lee", "national-security", "person", "security-bureau"]
 summary: "John Lee Ka-chiu is a former Hong Kong police officer and government official who served as the sixth Chief Executive of the territory, overseeing a period of significant legal and political transformation."
+description: "John Lee Ka-chiu is a former Hong Kong police officer and government official who served as the sixth Chief Executive of the territory, overseeing a period of significant legal and political transformation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

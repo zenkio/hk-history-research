@@ -3,6 +3,7 @@ title: "Shen Junru (沈鈞儒)"
 title_zh: "沈鈞儒"
 tags: ["ai-draft", "history-of-hong-kong", "national-salvation-movement", "person", "political-refugees", "second-sino-japanese-war"]
 summary: "Shen Junru was a prominent Chinese intellectual and lawyer who sought refuge in Hong Kong in the late 1930s, becoming a central figure in the wartime National Salvation movement."
+description: "Shen Junru was a prominent Chinese intellectual and lawyer who sought refuge in Hong Kong in the late 1930s, becoming a central figure in the wartime National Salvation movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

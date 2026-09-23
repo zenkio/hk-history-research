@@ -6,6 +6,7 @@ year: 1857
 era: "The early colony"
 tags: ["1857", "ai-draft", "community-policing", "early-colony", "indirect-rule", "john-bowring", "tepo-system"]
 summary: "In **1857**, Governor John Bowring formally recognized the Chinese neighborhood headman system, known as the Tepo (地保), to assist colonial authorities with local administration, security, and community policing."
+description: "In 1857, Governor John Bowring formally recognized the Chinese neighborhood headman system, known as the Tepo (地保), to assist colonial authorities with local administration, security, and community policing."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

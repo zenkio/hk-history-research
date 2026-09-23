@@ -3,6 +3,7 @@ title: "British Army Aid Group members (英軍服務團成員)"
 title_zh: "英軍服務團"
 tags: ["ai-draft", "british-colonial-era", "hong-kong-history", "intelligence-agencies", "person", "resistance-movements", "world-war-two"]
 summary: "The British Army Aid Group was a military intelligence and humanitarian organization formed in 1942 to assist Allied prisoners of war and gather intelligence in Japanese-occupied Hong Kong."
+description: "The British Army Aid Group was a military intelligence and humanitarian organization formed in 1942 to assist Allied prisoners of war and gather intelligence in Japanese-occupied Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

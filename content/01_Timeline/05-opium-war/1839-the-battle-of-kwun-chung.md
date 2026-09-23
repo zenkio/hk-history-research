@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "battle-of-kwun-chung", "first-opium-war", "guan-tianpei", "hong-kong-history", "lin-zexu", "opium-war"]
 summary: "On November 4, 1839, Qing naval forces engaged British warships off the Kowloon peninsula, marking a significant escalation in hostilities during the prelude to the First Opium War."
+description: "On November 4, 1839, Qing naval forces engaged British warships off the Kowloon peninsula, marking a significant escalation in hostilities during the prelude to the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

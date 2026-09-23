@@ -6,6 +6,7 @@ year: 1998
 era: "The early HKSAR"
 tags: ["1998", "ai-draft", "aviation", "chek-lap-kok", "early-hksar", "hksar", "infrastructure", "kai-tak"]
 summary: "On July 6, 1998, the new Hong Kong International Airport opened at Chek Lap Kok, replacing the legendary Kai Tak Airport and marking a monumental engineering milestone for the newly established HKSAR."
+description: "On July 6, 1998, the new Hong Kong International Airport opened at Chek Lap Kok, replacing the legendary Kai Tak Airport and marking a monumental engineering milestone for the newly established HKSAR."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

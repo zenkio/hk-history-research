@@ -3,6 +3,7 @@ title: "Hung Shing (洪聖)"
 title_zh: "洪聖"
 tags: ["ai-draft", "ap-lei-chau", "hung-shing", "local-religion", "maritime-history", "person", "qing-dynasty"]
 summary: "Hung Shing is a deified Southern Tang dynasty official widely venerated as a god of the sea in Guangdong and Hong Kong."
+description: "Hung Shing is a deified Southern Tang dynasty official widely venerated as a god of the sea in Guangdong and Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

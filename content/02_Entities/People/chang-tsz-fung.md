@@ -3,6 +3,7 @@ title: "Chang Tsz-fung (張梓峯)"
 title_zh: "張梓峯"
 tags: ["ai-draft", "hong-kong-coliseum", "hong-kong-entertainment", "industrial-safety", "mirror-concert-accident", "person"]
 summary: "Chang Tsz-fung (張梓峯) is a stage technician who was one of the individuals injured during the 2022 Mirror concert accident at the Hong Kong Coliseum."
+description: "Chang Tsz-fung (張梓峯) is a stage technician who was one of the individuals injured during the 2022 Mirror concert accident at the Hong Kong Coliseum."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

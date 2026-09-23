@@ -3,6 +3,7 @@ title: "Song Defu (宋德福)"
 title_zh: "宋德福"
 tags: ["ai-draft", "cepa", "economic-policy", "hong-kong-economy", "mainland-hong-kong-relations", "person", "prc-history"]
 summary: "Song Defu (宋德福) was a senior Chinese official who played a pivotal role in the early development of the Closer Economic Partnership Arrangement (CEPA) between the Mainland and the Hong Kong Special Administrative Region."
+description: "Song Defu (宋德福) was a senior Chinese official who played a pivotal role in the early development of the Closer Economic Partnership Arrangement (CEPA) between the Mainland and the Hong Kong Special Administrative…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

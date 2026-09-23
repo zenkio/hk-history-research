@@ -3,6 +3,7 @@ title: "Yijing (義淨)"
 title_zh: "義淨"
 tags: ["ai-draft", "buddhist-pilgrimage", "maritime-history", "pearl-river-delta", "person", "tang-dynasty", "yijing"]
 summary: "Monk Yijing (義淨) was a prominent Tang dynasty pilgrim and translator whose documented maritime journeys through the Pearl River delta highlight the early role of the Hong Kong region as a vital node in Asian Buddhist maritime routes."
+description: "Monk Yijing (義淨) was a prominent Tang dynasty pilgrim and translator whose documented maritime journeys through the Pearl River delta highlight the early role of the Hong Kong region as a vital node in Asian Buddhist…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

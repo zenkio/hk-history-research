@@ -3,6 +3,7 @@ title: "MacLehose (麥理浩)"
 title_zh: "麥理浩"
 tags: ["ai-draft", "bilingualism", "colonial-history", "governance", "hong-kong-history", "person", "social-reform"]
 summary: "As the longest-serving Governor of Hong Kong, Murray MacLehose oversaw a transformative period of social reform and infrastructure development that reshaped the colony's governance and identity."
+description: "As the longest-serving Governor of Hong Kong, Murray MacLehose oversaw a transformative period of social reform and infrastructure development that reshaped the colony's governance and identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

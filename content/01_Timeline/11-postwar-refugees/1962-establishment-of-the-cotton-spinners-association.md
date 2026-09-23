@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1962", "ai-draft", "economic-history", "industrialisation", "postwar-recovery", "postwar-refugees", "textile-industry", "trade-policy"]
 summary: "In 1962, the formal establishment of the Cotton Spinners Association marked the maturation of Hong Kong's textile industry, which had become the engine of the territory's postwar economic transformation."
+description: "In 1962, the formal establishment of the Cotton Spinners Association marked the maturation of Hong Kong's textile industry, which had become the engine of the territory's postwar economic transformation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Leslie Cheung (張國榮)"
 title_zh: "張國榮"
 tags: ["1980s-hong-kong", "ai-draft", "cantopop", "cultural-icon", "hong-kong-cinema", "lgbtq-history", "person"]
 summary: "Leslie Cheung was a seminal Cantopop singer and actor whose career and cultural impact became emblematic of Hong Kong's creative peak and identity during the late 20th century."
+description: "Leslie Cheung was a seminal Cantopop singer and actor whose career and cultural impact became emblematic of Hong Kong's creative peak and identity during the late 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
 summary: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
+description: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Daoguang Emperor (道光帝)"
 title_zh: "道光帝"
 tags: ["ai-draft", "daoguang-emperor", "first-opium-war", "hong-kong-history", "person", "qing-dynasty", "treaty-of-nanking"]
 summary: "The Daoguang Emperor was the sixth emperor of the Qing dynasty, whose reign encompassed the First Opium War and the initial cession of Hong Kong Island to the British."
+description: "The Daoguang Emperor was the sixth emperor of the Qing dynasty, whose reign encompassed the First Opium War and the initial cession of Hong Kong Island to the British."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

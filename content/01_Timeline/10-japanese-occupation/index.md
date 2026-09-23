@@ -2,6 +2,7 @@
 title: "10 · Battle of Hong Kong and the Japanese occupation (1941-1945)"
 tags: ["ai-draft", "battle-of-hong-kong", "era-overview", "japanese-occupation", "local-history", "pacific-war", "world-war-ii"]
 summary: "This era marks the violent end of British colonial defense, the brutal three-and-a-half-year Japanese military occupation known locally as the 'three years and eight months' (三年零八個月), and the eventual liberation that reshaped the territory's postwar trajectory. Through rapid military collapse, severe economic hardship, and complex resistance and collaboration, the period fundamentally disrupted Hong Kong's social fabric."
+description: "This era marks the violent end of British colonial defense, the brutal three-and-a-half-year Japanese military occupation known locally as the 'three years and eight months' (三年零八個月), and the eventual liberation that…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

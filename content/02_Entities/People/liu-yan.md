@@ -3,6 +3,7 @@ title: "Liu Yan (劉龑)"
 title_zh: "劉龑"
 tags: ["ai-draft", "five-dynasties", "hong-kong-origins", "lingnan-history", "liu-yan", "person", "southern-han"]
 summary: "Liu Yan was the founding emperor of the Southern Han (南漢) dynasty whose consolidation of the Lingnan region solidified administrative influence over the territory now known as Hong Kong."
+description: "Liu Yan was the founding emperor of the Southern Han (南漢) dynasty whose consolidation of the Lingnan region solidified administrative influence over the territory now known as Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

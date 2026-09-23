@@ -3,6 +3,7 @@ title: "Ronald Li (李福兆)"
 title_zh: "李福兆"
 tags: ["ai-draft", "black-monday", "financial-history", "hong-kong-finance", "person", "ronald-li", "stock-exchange-of-hong-kong"]
 summary: "Ronald Li was a prominent Hong Kong financier and the first chairman of the Stock Exchange of Hong Kong, best known for his central role in the 1987 stock market collapse."
+description: "Ronald Li was a prominent Hong Kong financier and the first chairman of the Stock Exchange of Hong Kong, best known for his central role in the 1987 stock market collapse."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

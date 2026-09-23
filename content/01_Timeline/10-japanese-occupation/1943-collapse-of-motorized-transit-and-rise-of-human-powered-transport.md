@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "fuel-shortage", "japanese-occupation", "rickshaws", "transport-history", "world-war-two"]
 summary: "By October 1943, severe fuel blockades and resource shortages during the Japanese occupation completely paralyzed Hong Kong's motorized transport, forcing the population to rely on walking, bicycles, and revived rickshaw networks."
+description: "By October 1943, severe fuel blockades and resource shortages during the Japanese occupation completely paralyzed Hong Kong's motorized transport, forcing the population to rely on walking, bicycles, and revived…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -2,6 +2,7 @@
 title: "11 · Postwar recovery, refugees and industrialisation (1945-1966)"
 tags: ["ai-draft", "colonial-history", "era-overview", "industrialisation", "postwar-hong-kong", "refugee-crisis", "shek-kip-mei"]
 summary: "This transformative era witnessed Hong Kong's rapid transition from a war-ravaged colonial outpost into a bustling manufacturing hub driven by waves of refugees and shifting geopolitical realities. Amidst severe socio-economic challenges, the foundation of modern urban infrastructure and industrial prowess was established."
+description: "This transformative era witnessed Hong Kong's rapid transition from a war-ravaged colonial outpost into a bustling manufacturing hub driven by waves of refugees and shifting geopolitical realities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

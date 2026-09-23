@@ -6,6 +6,7 @@ year: 1904
 era: "The New Territories lease and the early 20th century"
 tags: ["1904", "ai-draft", "british-colony", "healthcare", "maternity-hospital", "medical-history", "new-territories"]
 summary: "On June 3, 1904, the Alice Memorial Maternity Hospital opened as Hong Kong's first dedicated maternity facility, significantly expanding maternal healthcare and training opportunities for Chinese midwives under colonial administration."
+description: "On June 3, 1904, the Alice Memorial Maternity Hospital opened as Hong Kong's first dedicated maternity facility, significantly expanding maternal healthcare and training opportunities for Chinese midwives under colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

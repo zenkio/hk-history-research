@@ -3,6 +3,7 @@ title: "Yiu Chung-yim (姚松炎)"
 title_zh: "姚松炎"
 tags: ["ai-draft", "basic-law", "hong-kong-politics", "legislative-council", "oath-taking-controversy", "person", "yiu-chung-yim"]
 summary: "Yiu Chung-yim is an academic and former Legislative Council member whose disqualification in 2017 became a focal point in the debate over Hong Kong's political autonomy and the interpretation of the Basic Law."
+description: "Yiu Chung-yim is an academic and former Legislative Council member whose disqualification in 2017 became a focal point in the debate over Hong Kong's political autonomy and the interpretation of the Basic Law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

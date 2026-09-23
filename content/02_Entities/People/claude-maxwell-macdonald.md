@@ -3,6 +3,7 @@ title: "Claude Maxwell MacDonald (麥克唐納)"
 title_zh: "麥克唐納"
 tags: ["ai-draft", "british-empire", "colonial-history", "diplomacy", "new-territories", "person", "qing-dynasty"]
 summary: "Sir Claude Maxwell MacDonald was the British diplomat who served as the primary negotiator for the 1898 Convention for the Extension of Hong Kong."
+description: "Sir Claude Maxwell MacDonald was the British diplomat who served as the primary negotiator for the 1898 Convention for the Extension of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

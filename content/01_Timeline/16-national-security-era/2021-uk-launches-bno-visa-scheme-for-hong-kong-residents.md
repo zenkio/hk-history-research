@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "bno-visa", "demographics", "emigration", "national-security-era", "national-security-law", "sino-british-relations"]
 summary: "On January 31, 2021, the British government launched a bespoke visa pathway for British National (Overseas) passport holders, enabling eligible Hong Kong residents and their dependents to move, work, and study in the United Kingdom."
+description: "On January 31, 2021, the British government launched a bespoke visa pathway for British National (Overseas) passport holders, enabling eligible Hong Kong residents and their dependents to move, work, and study in the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

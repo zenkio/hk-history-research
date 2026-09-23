@@ -3,6 +3,7 @@ title: "Lamma Island (南丫島)"
 title_zh: "南丫島"
 tags: ["ai-draft", "archaeology", "baiyue-culture", "hong-kong-history", "lamma-island", "neolithic-history", "place"]
 summary: "Lamma Island is a major outlying island in Hong Kong renowned for its rich Neolithic archaeological sites that illuminate early maritime settlement and regional trade."
+description: "Lamma Island is a major outlying island in Hong Kong renowned for its rich Neolithic archaeological sites that illuminate early maritime settlement and regional trade."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

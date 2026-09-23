@@ -5,6 +5,7 @@ year: 500
 era: "Imperial frontier: Qin to Tang"
 tags: ["500", "ai-draft", "archaeology", "imperial-frontier", "lime-kilns", "maritime-trade", "proto-industrialization", "qin-to-tang"]
 summary: "Around the 5th century, industrial-scale lime production emerged along Hong Kong's coastal areas, utilizing abundant marine resources to supply essential mortar and waterproofing materials."
+description: "Around the 5th century, industrial-scale lime production emerged along Hong Kong's coastal areas, utilizing abundant marine resources to supply essential mortar and waterproofing materials."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

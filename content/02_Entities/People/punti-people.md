@@ -3,6 +3,7 @@ title: "Punti people (本地人)"
 title_zh: "本地人"
 tags: ["ai-draft", "demography", "hong-kong-history", "lineage-society", "new-territories", "person", "punti"]
 summary: "The Punti (本地) are the long-established inhabitants of the Pearl River Delta, representing the predominant lineage-based landholding groups in the New Territories prior to the arrival of other migrant groups."
+description: "The Punti (本地) are the long-established inhabitants of the Pearl River Delta, representing the predominant lineage-based landholding groups in the New Territories prior to the arrival of other migrant groups."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

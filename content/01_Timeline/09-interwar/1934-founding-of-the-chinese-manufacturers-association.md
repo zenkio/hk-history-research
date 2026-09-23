@@ -6,6 +6,7 @@ year: 1934
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1934", "ai-draft", "economic-history", "imperial-preference", "interwar", "manufacturing", "trade-policy"]
 summary: "In 1934, local industrialists established the Chinese Manufacturers' Association to promote locally made goods and navigate imperial trade policies, marking a crucial step in Hong Kong's transition toward an industrial manufacturing economy."
+description: "In 1934, local industrialists established the Chinese Manufacturers' Association to promote locally made goods and navigate imperial trade policies, marking a crucial step in Hong Kong's transition toward an industrial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

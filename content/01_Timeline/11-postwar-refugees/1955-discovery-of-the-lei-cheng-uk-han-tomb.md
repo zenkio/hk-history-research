@@ -6,6 +6,7 @@ year: 1955
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1955", "ai-draft", "archaeology", "colonial-history", "han-dynasty", "lei-cheng-uk", "postwar-hong-kong", "postwar-refugees"]
 summary: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese civilization in Hong Kong."
+description: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

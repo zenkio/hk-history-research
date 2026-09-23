@@ -3,6 +3,7 @@ title: "William Peel (貝璐)"
 title_zh: "貝璐"
 tags: ["1930s", "ai-draft", "british-hong-kong", "colonial-history", "governors-of-hong-kong", "person", "transport-history"]
 summary: "Sir William Peel served as the 18th Governor of Hong Kong from 1930 to 1935, a period defined by the global economic depression and significant changes to the territory's infrastructure."
+description: "Sir William Peel served as the 18th Governor of Hong Kong from 1930 to 1935, a period defined by the global economic depression and significant changes to the territory's infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

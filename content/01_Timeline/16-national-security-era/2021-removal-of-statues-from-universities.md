@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "2021-events", "academic-freedom", "ai-draft", "campus-protests", "historical-memory", "national-security-era", "national-security-law"]
 summary: "In December 2021, several universities in Hong Kong removed monuments commemorating historical protests, marking a significant shift in campus iconography following the implementation of the National Security Law."
+description: "In December 2021, several universities in Hong Kong removed monuments commemorating historical protests, marking a significant shift in campus iconography following the implementation of the National Security Law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

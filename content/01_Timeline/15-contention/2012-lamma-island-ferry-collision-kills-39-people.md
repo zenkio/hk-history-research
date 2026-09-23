@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "ai-draft", "contention", "lamma-island", "marine-department", "maritime-disaster", "public-safety", "safety-regulation"]
 summary: "On October 1, 2012, a fatal collision between two passenger ferries off Lamma Island resulted in the deaths of 39 people, exposing deep-seated regulatory failures within the Hong Kong government."
+description: "On October 1, 2012, a fatal collision between two passenger ferries off Lamma Island resulted in the deaths of 39 people, exposing deep-seated regulatory failures within the Hong Kong government."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1930
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1930", "ai-draft", "colonial-era", "economic-history", "interwar", "interwar-period", "manufacturing", "trade-promotion"]
 summary: "Held in 1930, the First Hong Kong Industrial Exhibition served as a pivotal moment in the transition of the colonial economy from a pure entrepôt to a site of domestic manufacturing."
+description: "Held in 1930, the First Hong Kong Industrial Exhibition served as a pivotal moment in the transition of the colonial economy from a pure entrepôt to a site of domestic manufacturing."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

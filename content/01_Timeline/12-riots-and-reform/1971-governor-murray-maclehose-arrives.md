@@ -6,6 +6,7 @@ year: 1971
 era: "Riots and the MacLehose reforms"
 tags: ["1971", "ai-draft", "colonial-history", "governance", "icac", "maclehose-reforms", "riots-and-reform"]
 summary: "On November 19, 1971, Sir Murray MacLehose assumed office as the 25th Governor of Hong Kong, initiating a transformative decade of administrative, social, and infrastructural reform that redefined the territory's governance."
+description: "On November 19, 1971, Sir Murray MacLehose assumed office as the 25th Governor of Hong Kong, initiating a transformative decade of administrative, social, and infrastructural reform that redefined the territory's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

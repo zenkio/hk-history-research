@@ -6,6 +6,7 @@ year: 1986
 era: "Sino-British negotiations and the transition"
 tags: ["1986", "ai-draft", "colonial-administration", "economic-transition", "higher-education", "hong-kong-history", "science-and-technology", "transition"]
 summary: "In 1986, the colonial administration decided to establish the Hong Kong University of Science and Technology (HKUST) to address the territory's urgent need for a high-tech skilled workforce during the transition period."
+description: "In 1986, the colonial administration decided to establish the Hong Kong University of Science and Technology (HKUST) to address the territory's urgent need for a high-tech skilled workforce during the transition period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

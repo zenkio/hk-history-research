@@ -6,6 +6,7 @@ year: 1750
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1750", "agriculture", "ai-draft", "hakka", "ming-and-qing", "new-territories", "qing-dynasty", "sweet-potato"]
 summary: "Around 1750, the introduction of New World sweet potatoes by Hakka settlers transformed the agricultural landscape of Hong Kong's interior, enabling the cultivation of barren hillsides and supporting a local demographic expansion."
+description: "Around 1750, the introduction of New World sweet potatoes by Hakka settlers transformed the agricultural landscape of Hong Kong's interior, enabling the cultivation of barren hillsides and supporting a local demographic…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: 411
 era: "Imperial frontier: Qin to Tang"
 tags: ["411", "ai-draft", "eastern-jin", "imperial-frontier", "lantau-island", "lu-xun", "piracy", "qin-to-tang"]
 summary: "In **411**, the rebel leader **Lu Xun** fled to Lantau Island following military defeats, establishing a temporary stronghold that highlighted the region's geographical isolation and strategic role."
+description: "In 411, the rebel leader Lu Xun fled to Lantau Island following military defeats, establishing a temporary stronghold that highlighted the region's geographical isolation and strategic role."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

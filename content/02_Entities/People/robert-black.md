@@ -3,6 +3,7 @@ title: "Robert Black (柏立基)"
 title_zh: "柏立基"
 tags: ["ai-draft", "british-administration", "colonial-history", "hong-kong-governors", "person", "refugee-crisis", "twentieth-century"]
 summary: "Sir Robert Black was the 23rd Governor of Hong Kong, serving from 1958 to 1964 during a period of significant demographic, industrial, and social change."
+description: "Sir Robert Black was the 23rd Governor of Hong Kong, serving from 1958 to 1964 during a period of significant demographic, industrial, and social change."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

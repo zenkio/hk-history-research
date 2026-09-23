@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1996", "ai-draft", "handover-era", "hong-kong-identity", "olympic-games", "sports-history", "transition", "windsurfing"]
 summary: "On July 29, 1996, windsurfer Lee Lai-shan secured Hong Kong's first-ever Olympic gold medal at the Atlanta Games, providing a powerful boost to local civic pride during the final year of British administration."
+description: "On July 29, 1996, windsurfer Lee Lai-shan secured Hong Kong's first-ever Olympic gold medal at the Atlanta Games, providing a powerful boost to local civic pride during the final year of British administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

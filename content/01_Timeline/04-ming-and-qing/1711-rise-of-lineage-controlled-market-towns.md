@@ -6,6 +6,7 @@ year: 1711
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1711", "ai-draft", "indigenous-clans", "lineage-economy", "market-towns", "ming-and-qing", "qing-dynasty", "tai-po"]
 summary: "During the mid-Qing dynasty, powerful indigenous clans in the New Territories established organized regional market towns, most notably the Tai Po Old Market, transforming the rural economy and consolidating clan dominance."
+description: "During the mid-Qing dynasty, powerful indigenous clans in the New Territories established organized regional market towns, most notably the Tai Po Old Market, transforming the rural economy and consolidating clan…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

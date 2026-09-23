@@ -5,6 +5,7 @@ year: 412
 era: "Imperial frontier: Qin to Tang"
 tags: ["412", "ai-draft", "buddhist-pilgrimage", "eastern-jin", "faxian", "maritime-silk-road", "qin-to-tang", "south-china-sea"]
 summary: "In **412**, the Chinese Buddhist pilgrim Faxian journeyed by sea from India back to China, navigating treacherous waters in the region that included the maritime approaches to Hong Kong, illustrating the growing strategic importance of these shipping lanes."
+description: "In 412, the Chinese Buddhist pilgrim Faxian journeyed by sea from India back to China, navigating treacherous waters in the region that included the maritime approaches to Hong Kong, illustrating the growing strategic…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

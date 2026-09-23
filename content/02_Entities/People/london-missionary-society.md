@@ -3,6 +3,7 @@ title: "London Missionary Society (倫敦會)"
 title_zh: "倫敦會"
 tags: ["ai-draft", "christianity", "colonial-history", "education", "missionary-societies", "person", "social-welfare"]
 summary: "The London Missionary Society (LMS) was a prominent British non-denominational missionary organization that played a foundational role in establishing education, medical services, and social infrastructure in early colonial Hong Kong."
+description: "The London Missionary Society (LMS) was a prominent British non-denominational missionary organization that played a foundational role in establishing education, medical services, and social infrastructure in early…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

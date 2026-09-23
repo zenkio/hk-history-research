@@ -3,6 +3,7 @@ title: "Beijing (北京)"
 title_zh: "北京"
 tags: ["ai-draft", "basic-law", "beijing", "joint-declaration", "place", "sino-british-relations", "sovereignty"]
 summary: "The capital of China served as the central site for imperial diplomacy, sovereignty negotiations, and policy decisions that fundamentally shaped the colonial governance, economic stability, and ultimate decolonization of Hong Kong."
+description: "The capital of China served as the central site for imperial diplomacy, sovereignty negotiations, and policy decisions that fundamentally shaped the colonial governance, economic stability, and ultimate decolonization…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

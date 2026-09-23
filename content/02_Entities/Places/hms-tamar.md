@@ -3,6 +3,7 @@ title: "HMS Tamar (添馬艦)"
 title_zh: "添馬艦"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "hong-kong-island", "place", "royal-navy", "victoria-harbour"]
 summary: "HMS Tamar was a British Royal Navy troopship and later a shore-based naval station that served as the focal point of the British naval presence in Hong Kong for over a century."
+description: "HMS Tamar was a British Royal Navy troopship and later a shore-based naval station that served as the focal point of the British naval presence in Hong Kong for over a century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

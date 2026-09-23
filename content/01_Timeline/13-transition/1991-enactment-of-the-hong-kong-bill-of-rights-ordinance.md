@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1991", "ai-draft", "bill-of-rights", "human-liberties", "legal-history", "sino-british-joint-declaration", "transition"]
 summary: "On June 8, 1991, the colonial Hong Kong government enacted the Hong Kong Bill of Rights Ordinance to incorporate key international human rights covenants into local law, seeking to bolster public confidence ahead of the 1997 handover."
+description: "On June 8, 1991, the colonial Hong Kong government enacted the Hong Kong Bill of Rights Ordinance to incorporate key international human rights covenants into local law, seeking to bolster public confidence ahead of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

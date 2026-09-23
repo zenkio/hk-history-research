@@ -6,6 +6,7 @@ year: 1858
 era: "The early colony"
 tags: ["1858", "ai-draft", "chinese-merchants", "early-colony", "nam-pak-hong", "trade-history"]
 summary: "In **1858**, Chinese merchant syndicates formed the Nam Pak Hong Association to regulate and expand trade between China and Southeast Asia, establishing local mercantile dominance during the early colonial era."
+description: "In 1858, Chinese merchant syndicates formed the Nam Pak Hong Association to regulate and expand trade between China and Southeast Asia, establishing local mercantile dominance during the early colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

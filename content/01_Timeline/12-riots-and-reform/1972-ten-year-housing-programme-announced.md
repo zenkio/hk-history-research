@@ -6,6 +6,7 @@ year: 1972
 era: "Riots and the MacLehose reforms"
 tags: ["1972", "ai-draft", "housing-policy", "mac-lehose-era", "new-towns", "public-housing", "riots-and-reform", "urban-development"]
 summary: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through new public estates and New Towns."
+description: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

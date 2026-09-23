@@ -6,6 +6,7 @@ year: 1979
 era: "Riots and the MacLehose reforms"
 tags: ["1970s", "1979", "ai-draft", "infrastructure", "mtr", "public-transport", "riots-and-reform", "urban-development"]
 summary: "On October 1, 1979, the Mass Transit Railway (MTR) officially commenced passenger service in Hong Kong, marking a transformative milestone in the territory's public transportation history and urban development."
+description: "On October 1, 1979, the Mass Transit Railway (MTR) officially commenced passenger service in Hong Kong, marking a transformative milestone in the territory's public transportation history and urban development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

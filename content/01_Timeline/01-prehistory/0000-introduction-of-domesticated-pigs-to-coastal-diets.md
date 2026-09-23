@@ -5,6 +5,7 @@ year: -3500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "animal-husbandry", "archaeology", "dietary-history", "neolithic", "prehistory"]
 summary: "Around 3500 BCE, archaeological evidence indicates that domesticated pigs were introduced to the coastal diets of the Hong Kong region, marking a pivotal shift in prehistoric subsistence strategies."
+description: "Around 3500 BCE, archaeological evidence indicates that domesticated pigs were introduced to the coastal diets of the Hong Kong region, marking a pivotal shift in prehistoric subsistence strategies."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

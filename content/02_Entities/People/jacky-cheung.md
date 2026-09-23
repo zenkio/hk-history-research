@@ -3,6 +3,7 @@ title: "Jacky Cheung (張學友)"
 title_zh: "張學友"
 tags: ["1990s", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-cinema", "jacky-cheung", "person"]
 summary: "Jacky Cheung is a renowned Hong Kong singer and actor who rose to international prominence as one of Cantopop's 'Four Heavenly Kings' during the 1990s."
+description: "Jacky Cheung is a renowned Hong Kong singer and actor who rose to international prominence as one of Cantopop's 'Four Heavenly Kings' during the 1990s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

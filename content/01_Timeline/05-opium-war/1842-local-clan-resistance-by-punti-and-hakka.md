@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "ai-draft", "colonial-history", "land-rights", "opium-war", "property-law", "punti-hakka", "treaty-of-nanking"]
 summary: "Initial conflicts between British colonial land surveys and the traditional property rights of indigenous Punti and Hakka communities following the 1842 cession."
+description: "Initial conflicts between British colonial land surveys and the traditional property rights of indigenous Punti and Hakka communities following the 1842 cession."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

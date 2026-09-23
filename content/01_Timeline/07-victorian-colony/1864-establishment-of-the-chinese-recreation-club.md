@@ -6,6 +6,7 @@ year: 1864
 era: "Kowloon and the Victorian colony"
 tags: ["1864", "ai-draft", "chinese-diaspora", "colonial-history", "middle-class", "social-history", "urban-development", "victorian-colony", "victorian-era"]
 summary: "Founded in 1864, the Chinese Recreation Club (中華遊樂會) emerged as a pioneering social institution for the local Chinese elite, marking a shift in the social organization of colonial Hong Kong."
+description: "Founded in 1864, the Chinese Recreation Club (中華遊樂會) emerged as a pioneering social institution for the local Chinese elite, marking a shift in the social organization of colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Tang Chung Ling Ancestral Hall (松嶺鄧公祠)"
 title_zh: "松嶺鄧公祠"
 tags: ["ai-draft", "ancestral-hall", "lung-yeuk-tau", "ming-dynasty", "new-territories", "place", "tang-clan"]
 summary: "Tang Chung Ling Ancestral Hall in Lung Yeuk Tau is one of Hong Kong's most significant clan ancestral halls, illustrating the lineage and regional dominance of the Tang clan in the New Territories."
+description: "Tang Chung Ling Ancestral Hall in Lung Yeuk Tau is one of Hong Kong's most significant clan ancestral halls, illustrating the lineage and regional dominance of the Tang clan in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "St. Stephen's College (聖士提反書院)"
 title_zh: "聖士提反書院"
 tags: ["ai-draft", "battle-of-hong-kong", "hong-kong-history", "pacific-war", "place", "st-stephens-college", "stanley"]
 summary: "Established in 1903, St. Stephen's College is a prominent secondary school in Stanley that serves as a focal point for understanding the impact of the Battle of Hong Kong and the subsequent Japanese occupation."
+description: "Established in 1903, St. Stephen's College is a prominent secondary school in Stanley that serves as a focal point for understanding the impact of the Battle of Hong Kong and the subsequent Japanese occupation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

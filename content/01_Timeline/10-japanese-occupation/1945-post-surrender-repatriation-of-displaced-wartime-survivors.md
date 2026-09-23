@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-military-administration", "japanese-occupation", "post-war-reconstruction", "refugees", "repatriation"]
 summary: "Following the liberation of Hong Kong in September 1945, British military administration and local authorities faced an immense humanitarian crisis in feeding, sheltering, and repatriating hundreds of thousands of displaced residents and refugees."
+description: "Following the liberation of Hong Kong in September 1945, British military administration and local authorities faced an immense humanitarian crisis in feeding, sheltering, and repatriating hundreds of thousands of…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

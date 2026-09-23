@@ -3,6 +3,7 @@ title: "Baiyue (百越)"
 title_zh: "百越"
 tags: ["ai-draft", "archaeology", "early-settlement", "lingnan", "neolithic", "person", "prehistory"]
 summary: "The Baiyue were a diverse group of non-Sinitic tribal peoples who inhabited southern China and northern Vietnam, representing the indigenous precursors to modern Hong Kong's earliest settled agricultural societies."
+description: "The Baiyue were a diverse group of non-Sinitic tribal peoples who inhabited southern China and northern Vietnam, representing the indigenous precursors to modern Hong Kong's earliest settled agricultural societies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

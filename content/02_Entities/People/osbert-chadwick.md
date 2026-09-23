@@ -3,6 +3,7 @@ title: "Osbert Chadwick"
 title_zh: "查特威克"
 tags: ["ai-draft", "colonial-history", "osbert-chadwick", "person", "public-health", "sanitary-board", "urban-planning"]
 summary: "Osbert Chadwick was a British sanitary engineer whose **1882** report fundamentally shaped Hong Kong's public health policies and urban infrastructure."
+description: "Osbert Chadwick was a British sanitary engineer whose 1882 report fundamentally shaped Hong Kong's public health policies and urban infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

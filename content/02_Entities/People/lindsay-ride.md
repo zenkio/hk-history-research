@@ -3,6 +3,7 @@ title: "Lindsay Ride (賴特)"
 title_zh: "賴特"
 tags: ["ai-draft", "british-army-aid-group", "intelligence", "japanese-occupation", "person", "university-of-hong-kong", "world-war-ii"]
 summary: "Lindsay Ride was a prominent academic and military officer who played a crucial role in establishing the British Army Aid Group during the Second World War to rescue prisoners and gather intelligence in Japanese-occupied Hong Kong."
+description: "Lindsay Ride was a prominent academic and military officer who played a crucial role in establishing the British Army Aid Group during the Second World War to rescue prisoners and gather intelligence in…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

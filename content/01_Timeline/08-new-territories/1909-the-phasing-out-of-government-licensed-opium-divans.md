@@ -6,6 +6,7 @@ year: 1909
 era: "The New Territories lease and the early 20th century"
 tags: ["1909", "ai-draft", "colonial-history", "early-20th-century", "law-enforcement", "new-territories", "opium-trade", "public-finance"]
 summary: "In March 1909, following intense pressure from the British imperial government and rising domestic anti-opium sentiment, Hong Kong initiated the closure of its government-licensed opium dens, beginning a difficult fiscal transition away from the colony's heavy reliance on the opium trade."
+description: "In March 1909, following intense pressure from the British imperial government and rising domestic anti-opium sentiment, Hong Kong initiated the closure of its government-licensed opium dens, beginning a difficult…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

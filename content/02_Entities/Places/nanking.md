@@ -3,6 +3,7 @@ title: "Nanking (南京)"
 title_zh: "南京"
 tags: ["ai-draft", "british-empire", "colonial-history", "first-opium-war", "place", "qing-dynasty", "treaty-of-nanking"]
 summary: "Nanking served as the site for the signing of the 1842 treaty that formally ceded Hong Kong Island to the British Empire, marking the beginning of colonial rule."
+description: "Nanking served as the site for the signing of the 1842 treaty that formally ceded Hong Kong Island to the British Empire, marking the beginning of colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

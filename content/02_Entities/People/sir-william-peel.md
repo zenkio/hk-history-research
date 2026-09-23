@@ -3,6 +3,7 @@ title: "Sir William Peel (貝璐)"
 title_zh: "貝璐"
 tags: ["ai-draft", "colonial-history", "economic-history", "governors-of-hong-kong", "person", "tourism-development", "twentieth-century"]
 summary: "Sir William Peel was the 18th Governor of Hong Kong who oversaw the colony during the global economic depression of the 1930s and initiated early efforts toward tourism development."
+description: "Sir William Peel was the 18th Governor of Hong Kong who oversaw the colony during the global economic depression of the 1930s and initiated early efforts toward tourism development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

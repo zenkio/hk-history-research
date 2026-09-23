@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1991", "ai-draft", "colonial-history", "constitutional-law", "handover", "human-rights", "legal-system", "transition"]
 summary: "On June 8, 1991, the Hong Kong government enacted the Bill of Rights Ordinance to incorporate the International Covenant on Civil and Political Rights into local law ahead of the 1997 handover."
+description: "On June 8, 1991, the Hong Kong government enacted the Bill of Rights Ordinance to incorporate the International Covenant on Civil and Political Rights into local law ahead of the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

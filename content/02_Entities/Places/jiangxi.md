@@ -3,6 +3,7 @@ title: "Jiangxi (江西)"
 title_zh: "江西"
 tags: ["ai-draft", "hakka", "jiangxi", "migration", "place", "qing-dynasty", "sheung-shui"]
 summary: "Jiangxi is an inland province in southeastern China whose population movements and administrative policies significantly influenced the lineage settlement and demographic makeup of the Hong Kong region."
+description: "Jiangxi is an inland province in southeastern China whose population movements and administrative policies significantly influenced the lineage settlement and demographic makeup of the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

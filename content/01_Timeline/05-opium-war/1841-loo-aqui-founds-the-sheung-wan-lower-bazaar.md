@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "chinese-merchants", "colonial-history", "loo-aqui", "opium-war", "sheung-wan"]
 summary: "In August 1841, Chinese provisioner Loo Aqui established permanent commercial shops and housing in Sheung Wan, creating Hong Kong's first organized Chinese mercantile quarter under early British administration."
+description: "In August 1841, Chinese provisioner Loo Aqui established permanent commercial shops and housing in Sheung Wan, creating Hong Kong's first organized Chinese mercantile quarter under early British administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

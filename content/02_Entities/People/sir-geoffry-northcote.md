@@ -3,6 +3,7 @@ title: "Sir Geoffry Northcote (羅富國)"
 title_zh: "羅富國"
 tags: ["ai-draft", "british-empire", "colonial-history", "geoffry-northcote", "hong-kong-governors", "person", "second-world-war"]
 summary: "Sir Geoffry Northcote was the 20th Governor of Hong Kong, serving during a critical period of regional instability preceding the Second World War."
+description: "Sir Geoffry Northcote was the 20th Governor of Hong Kong, serving during a critical period of regional instability preceding the Second World War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

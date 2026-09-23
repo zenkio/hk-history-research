@@ -3,6 +3,7 @@ title: "Zou Taofen (鄒韜奮)"
 title_zh: "鄒韜奮"
 tags: ["ai-draft", "hong-kong-history", "journalism", "national-salvation-association", "person", "second-sino-japanese-war", "zou-taofen"]
 summary: "Zou Taofen was a prominent Chinese journalist and political activist whose presence in Hong Kong during the late 1930s served as a focal point for anti-Japanese mobilization and intellectual discourse."
+description: "Zou Taofen was a prominent Chinese journalist and political activist whose presence in Hong Kong during the late 1930s served as a focal point for anti-Japanese mobilization and intellectual discourse."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

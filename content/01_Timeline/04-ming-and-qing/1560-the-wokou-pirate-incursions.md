@@ -6,6 +6,7 @@ year: 1560
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1560", "ai-draft", "coastal-defense", "maritime-history", "ming-and-qing", "ming-dynasty", "piracy", "self-defense", "wokou"]
 summary: "During the mid-16th century, the coastal regions of the Pearl River Delta faced persistent instability due to Wokou raids, leading to significant changes in local defense and settlement patterns."
+description: "During the mid-16th century, the coastal regions of the Pearl River Delta faced persistent instability due to Wokou raids, leading to significant changes in local defense and settlement patterns."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "cultural-assimilation", "hong-kong-history", "japanese-occupation", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public ritual."
+description: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

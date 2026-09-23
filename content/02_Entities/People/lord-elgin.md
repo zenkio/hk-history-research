@@ -3,6 +3,7 @@ title: "Lord Elgin (額爾金)"
 title_zh: "額爾金"
 tags: ["ai-draft", "british-empire", "convention-of-peking", "kowloon", "person", "second-opium-war"]
 summary: "Lord Elgin was a British colonial administrator and diplomat whose military actions and treaty negotiations directly expanded British control over the Kowloon Peninsula, shaping the territorial expanse of colonial Hong Kong."
+description: "Lord Elgin was a British colonial administrator and diplomat whose military actions and treaty negotiations directly expanded British control over the Kowloon Peninsula, shaping the territorial expanse of colonial Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

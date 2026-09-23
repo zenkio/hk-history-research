@@ -3,6 +3,7 @@ title: "Yeung Clan (楊氏)"
 title_zh: "楊氏"
 tags: ["ai-draft", "lineage-history", "local-history", "new-territories", "person", "song-loyalists", "yeung-clan"]
 summary: "The Yeung Clan (楊氏) is one of the prominent lineages historically settled in the New Territories, associated locally with early village establishment and interactions with Song dynasty loyalists."
+description: "The Yeung Clan (楊氏) is one of the prominent lineages historically settled in the New Territories, associated locally with early village establishment and interactions with Song dynasty loyalists."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Lo Wu (羅湖)"
 title_zh: "羅湖"
 tags: ["ai-draft", "border-crossing", "hong-kong-history", "infrastructure", "north-district", "place", "shenzhen-river"]
 summary: "Lo Wu is a border crossing point between Hong Kong and mainland China, serving as the primary land gateway for cross-boundary passengers since the early 20th century."
+description: "Lo Wu is a border crossing point between Hong Kong and mainland China, serving as the primary land gateway for cross-boundary passengers since the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

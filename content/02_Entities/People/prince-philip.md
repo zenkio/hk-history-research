@@ -3,6 +3,7 @@ title: "Prince Philip (愛丁堡公爵)"
 title_zh: "菲臘親王 (愛丁堡公爵)"
 tags: ["ai-draft", "british-colonial-era", "hong-kong-history", "monarchy", "person", "prince-philip", "queen-elizabeth-ii"]
 summary: "As the consort of Queen Elizabeth II, Prince Philip accompanied the British monarch on official visits to Hong Kong, symbolizing the colonial link between the United Kingdom and the territory during the post-war era."
+description: "As the consort of Queen Elizabeth II, Prince Philip accompanied the British monarch on official visits to Hong Kong, symbolizing the colonial link between the United Kingdom and the territory during the post-war era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Tai Wan (大灣)"
 title_zh: "大灣"
 tags: ["ai-draft", "archaeology", "cultural-heritage", "lamma-island", "maritime-history", "place", "prehistoric-hong-kong"]
 summary: "Tai Wan is a significant archaeological site on Lamma Island that provides evidence of long-term human habitation and specialized marine resource processing in prehistoric Hong Kong."
+description: "Tai Wan is a significant archaeological site on Lamma Island that provides evidence of long-term human habitation and specialized marine resource processing in prehistoric Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

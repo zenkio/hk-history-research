@@ -3,6 +3,7 @@ title: "Zhoushan (舟山)"
 title_zh: "舟山"
 tags: ["ai-draft", "british-east-india-company", "canton-trade-system", "maritime-history", "place", "qing-dynasty", "trade-policy"]
 summary: "Zhoushan served as an early alternative to Guangzhou for British maritime trade and remains significant for understanding the evolution of the Canton Trade System."
+description: "Zhoushan served as an early alternative to Guangzhou for British maritime trade and remains significant for understanding the evolution of the Canton Trade System."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1858
 era: "The early colony"
 tags: ["1858", "ai-draft", "colonial-history", "early-colony", "economic-history", "hong-kong-administration", "legislation", "nineteenth-century", "opium-trade"]
 summary: "In 1858, the British colonial government in Hong Kong enacted the Opium Ordinance, which introduced a formal licensing system for opium divans and shops. This legislative move effectively integrated the taxation of the opium trade into the official colonial revenue stream."
+description: "In 1858, the British colonial government in Hong Kong enacted the Opium Ordinance, which introduced a formal licensing system for opium divans and shops."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

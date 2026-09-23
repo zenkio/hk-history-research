@@ -3,6 +3,7 @@ title: "Lin Weixi (林維喜)"
 title_zh: "林維喜"
 tags: ["ai-draft", "colonial-history", "first-opium-war", "lin-zexu", "person", "qing-dynasty", "tsim-sha-tsui"]
 summary: "Lin Weixi was a villager whose death in 1839 served as the immediate catalyst for the diplomatic breakdown between the Qing Empire and Great Britain, precipitating the First Opium War."
+description: "Lin Weixi was a villager whose death in 1839 served as the immediate catalyst for the diplomatic breakdown between the Qing Empire and Great Britain, precipitating the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

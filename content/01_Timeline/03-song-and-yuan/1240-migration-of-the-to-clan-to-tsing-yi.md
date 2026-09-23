@@ -6,6 +6,7 @@ year: 1240
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1240", "ai-draft", "clan-migration", "local-history", "maritime-trade", "song-and-yuan", "song-dynasty", "tsing-yi"]
 summary: "Around 1240 during the Song dynasty, the To clan established settlements on Tsing Yi Island, initiating early maritime trade, fishing, and agriculture in Hong Kong's central harbor."
+description: "Around 1240 during the Song dynasty, the To clan established settlements on Tsing Yi Island, initiating early maritime trade, fishing, and agriculture in Hong Kong's central harbor."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

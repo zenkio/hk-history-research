@@ -3,6 +3,7 @@ title: "Victoria (維多利亞女王)"
 title_zh: "維多利亞女王"
 tags: ["ai-draft", "british-monarchy", "colonial-history", "historiography", "person", "victorian-era"]
 summary: "Queen Victoria was the reigning British monarch during the initial establishment of Hong Kong as a British colony, lending her name to numerous foundational institutions and geographical features."
+description: "Queen Victoria was the reigning British monarch during the initial establishment of Hong Kong as a British colony, lending her name to numerous foundational institutions and geographical features."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

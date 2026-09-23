@@ -3,6 +3,7 @@ title: "Chusan (定海)"
 title_zh: "定海"
 tags: ["ai-draft", "colonial-history", "first-opium-war", "hong-kong-origins", "place", "sir-henry-pottinger", "treaty-of-nanking"]
 summary: "Chusan was the first territory occupied by the British during the First Opium War and served as an initial base of operations that influenced the subsequent British preference for Hong Kong Island."
+description: "Chusan was the first territory occupied by the British during the First Opium War and served as an initial base of operations that influenced the subsequent British preference for Hong Kong Island."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "british-surrender", "japanese-occupation", "world-war-ii"]
 summary: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
+description: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

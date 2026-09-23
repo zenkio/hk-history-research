@@ -6,6 +6,7 @@ year: 1933
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1933", "ai-draft", "cmb", "colonial-governance", "interwar", "interwar-history", "kmb", "public-transport"]
 summary: "In June 1933, the Hong Kong government formally overhauled the colony's urban public transport by granting exclusive long-term bus operating franchises to two companies, laying the foundation for modern franchised bus networks."
+description: "In June 1933, the Hong Kong government formally overhauled the colony's urban public transport by granting exclusive long-term bus operating franchises to two companies, laying the foundation for modern franchised bus…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

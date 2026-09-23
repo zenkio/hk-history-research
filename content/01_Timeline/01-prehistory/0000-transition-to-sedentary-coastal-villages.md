@@ -5,6 +5,7 @@ year: -2200
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "coastal-villages", "neolithic", "prehistory", "settlement-patterns"]
 summary: "Around 2200 BCE, communities in the Hong Kong region began transitioning toward more permanent coastal settlements, balancing marine foraging with early agricultural practices."
+description: "Around 2200 BCE, communities in the Hong Kong region began transitioning toward more permanent coastal settlements, balancing marine foraging with early agricultural practices."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

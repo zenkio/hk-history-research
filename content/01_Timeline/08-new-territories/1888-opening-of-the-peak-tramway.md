@@ -6,6 +6,7 @@ year: 1888
 era: "The New Territories lease and the early 20th century"
 tags: ["1880s", "1888", "ai-draft", "colonial-history", "new-territories", "peak-tram", "transportation", "urban-development"]
 summary: "On May 30, 1888, the Peak Tramway officially commenced operations, connecting the central business district of Hong Kong to Victoria Peak and transforming the geographic and social landscape of the colony."
+description: "On May 30, 1888, the Peak Tramway officially commenced operations, connecting the central business district of Hong Kong to Victoria Peak and transforming the geographic and social landscape of the colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

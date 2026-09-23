@@ -6,6 +6,7 @@ year: 1747
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1747", "ai-draft", "causeway-bay", "fishing-community", "maritime-religion", "ming-and-qing", "qing-dynasty", "tin-hau-temple"]
 summary: "In **1747**, the **Tai (戴)** family established the Tin Hau Temple in Causeway Bay to honor the goddess of the sea, reflecting the vital role of maritime deities in early coastal fishing communities."
+description: "In 1747, the Tai (戴) family established the Tin Hau Temple in Causeway Bay to honor the goddess of the sea, reflecting the vital role of maritime deities in early coastal fishing communities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

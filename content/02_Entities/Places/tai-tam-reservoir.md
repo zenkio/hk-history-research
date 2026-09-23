@@ -3,6 +3,7 @@ title: "Tai Tam Reservoir (大潭水塘)"
 title_zh: "大潭水塘"
 tags: ["ai-draft", "colonial-history", "heritage-conservation", "hong-kong-island", "infrastructure", "place", "water-management"]
 summary: "The Tai Tam Reservoir system is a historic network of water storage facilities on Hong Kong Island that played a critical role in addressing the colony's chronic water shortages during the late 19th and early 20th centuries."
+description: "The Tai Tam Reservoir system is a historic network of water storage facilities on Hong Kong Island that played a critical role in addressing the colony's chronic water shortages during the late 19th and early 20th…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

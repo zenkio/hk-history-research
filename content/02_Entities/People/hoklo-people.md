@@ -3,6 +3,7 @@ title: "Hoklo People (福佬人)"
 title_zh: "福佬人"
 tags: ["ai-draft", "colonial-era", "fujian", "hoklo", "indigenous-groups", "maritime-history", "person"]
 summary: "The Hoklo people are a major Chinese ethnolinguistic group originating from Fujian who formed crucial fishing and trading communities in early Hong Kong history."
+description: "The Hoklo people are a major Chinese ethnolinguistic group originating from Fujian who formed crucial fishing and trading communities in early Hong Kong history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

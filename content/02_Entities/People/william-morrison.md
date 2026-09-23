@@ -3,6 +3,7 @@ title: "William Morrison (威廉·莫里森)"
 title_zh: "威廉·莫里森"
 tags: ["ai-draft", "colonial-history", "colonial-surgeon", "nineteenth-century", "person", "public-health", "william-morrison"]
 summary: "William Morrison was the first Colonial Surgeon of Hong Kong, serving as the foundational figure in the development of the territory's early public health administration."
+description: "William Morrison was the first Colonial Surgeon of Hong Kong, serving as the foundational figure in the development of the territory's early public health administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

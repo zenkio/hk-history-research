@@ -3,6 +3,7 @@ title: "London Missionary Society (倫敦傳道會)"
 title_zh: "倫敦傳道會"
 tags: ["ai-draft", "christianity", "education", "hong-kong-history", "london-missionary-society", "medical-history", "place"]
 summary: "The London Missionary Society was a prominent British Protestant missionary organisation that played a foundational role in establishing Western medical education, printing, and schooling in early colonial Hong Kong."
+description: "The London Missionary Society was a prominent British Protestant missionary organisation that played a foundational role in establishing Western medical education, printing, and schooling in early colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

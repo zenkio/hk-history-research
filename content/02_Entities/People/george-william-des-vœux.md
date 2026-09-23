@@ -3,6 +3,7 @@ title: "George William Des Vœux (德輔)"
 title_zh: "德輔"
 tags: ["ai-draft", "colonial-history", "governors-of-hong-kong", "hong-kong-college-of-medicine", "nineteenth-century", "person", "urban-development"]
 summary: "Sir George William Des Vœux was the tenth Governor of Hong Kong, known for overseeing significant infrastructure development and supporting the establishment of early Western-style medical education for the Chinese community."
+description: "Sir George William Des Vœux was the tenth Governor of Hong Kong, known for overseeing significant infrastructure development and supporting the establishment of early Western-style medical education for the Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

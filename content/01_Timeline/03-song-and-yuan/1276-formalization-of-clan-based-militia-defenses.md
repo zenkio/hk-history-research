@@ -6,6 +6,7 @@ year: 1276
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1276", "ai-draft", "clan-history", "local-governance", "medieval-hong-kong", "militia", "new-territories", "song-and-yuan", "song-dynasty"]
 summary: "During the final years of the Southern Song dynasty (1276-1279), the influx of the imperial court and mounting instability prompted local clans to formalize autonomous militia structures for regional security."
+description: "During the final years of the Southern Song dynasty (1276-1279), the influx of the imperial court and mounting instability prompted local clans to formalize autonomous militia structures for regional security."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

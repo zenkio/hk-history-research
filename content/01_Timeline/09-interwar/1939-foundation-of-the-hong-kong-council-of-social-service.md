@@ -6,6 +6,7 @@ year: 1939
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1939", "ai-draft", "charity", "civil-society", "hong-kong-history", "interwar", "interwar-history", "social-welfare"]
 summary: "In 1939, the Hong Kong Council of Social Service was established to streamline the efforts of charitable organizations amidst the humanitarian pressures of the interwar period."
+description: "In 1939, the Hong Kong Council of Social Service was established to streamline the efforts of charitable organizations amidst the humanitarian pressures of the interwar period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

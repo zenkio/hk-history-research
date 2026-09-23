@@ -3,6 +3,7 @@ title: "Dongguan County (東莞縣)"
 title_zh: "東莞縣"
 tags: ["administrative-history", "ai-draft", "dongguan-county", "imperial-china", "place", "xin-an-county"]
 summary: "Dongguan County was the historical administrative parent of the territory that now forms Hong Kong before the creation of Xin'an County."
+description: "Dongguan County was the historical administrative parent of the territory that now forms Hong Kong before the creation of Xin'an County."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

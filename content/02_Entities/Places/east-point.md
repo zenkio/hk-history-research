@@ -3,6 +3,7 @@ title: "East Point (東角)"
 title_zh: "東角"
 tags: ["ai-draft", "causeway-bay", "colonial-history", "east-point", "jardine-matheson", "land-reclamation", "place"]
 summary: "East Point was an early British colonial settlement on Hong Kong Island established by the trading house Jardine, Matheson & Co., which became a pivotal industrial and commercial hub."
+description: "East Point was an early British colonial settlement on Hong Kong Island established by the trading house Jardine, Matheson & Co., which became a pivotal industrial and commercial hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

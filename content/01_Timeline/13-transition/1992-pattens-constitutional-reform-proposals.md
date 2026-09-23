@@ -6,6 +6,7 @@ year: 1992
 era: "Sino-British negotiations and the transition"
 tags: ["1992", "1995-elections", "ai-draft", "basic-law", "constitutional-reform", "decolonisation", "sino-british-relations", "transition"]
 summary: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce opposition from Beijing and fundamentally altering the trajectory of the Sino-British transition."
+description: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

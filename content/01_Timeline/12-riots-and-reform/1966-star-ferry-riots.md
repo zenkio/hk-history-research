@@ -6,6 +6,7 @@ year: 1966
 era: "Riots and the MacLehose reforms"
 tags: ["1960s", "1966", "ai-draft", "colonial-history", "protest", "riots-and-reform", "social-unrest", "star-ferry-riots"]
 summary: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
+description: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

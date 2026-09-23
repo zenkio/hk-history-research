@@ -3,6 +3,7 @@ title: "Hoon-chung Chater (遮打)"
 title_zh: "遮打"
 tags: ["ai-draft", "business-history", "colonial-history", "hongkong-electric", "infrastructure", "paul-chater", "person"]
 summary: "Sir Paul Chater was a prominent businessman and philanthropist who played a central role in the commercial development and early electrification of colonial Hong Kong."
+description: "Sir Paul Chater was a prominent businessman and philanthropist who played a central role in the commercial development and early electrification of colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

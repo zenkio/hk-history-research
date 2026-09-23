@@ -3,6 +3,7 @@ title: "Mandarin Oriental Hotel (文華東方酒店)"
 title_zh: "香港文華東方酒店"
 tags: ["ai-draft", "central", "colonial-history", "hong-kong-landmarks", "hospitality", "leslie-cheung", "place"]
 summary: "The Mandarin Oriental is a historic luxury hotel in Central that serves as an enduring symbol of Hong Kong's mid-twentieth-century economic ascent and a focal point for significant cultural events."
+description: "The Mandarin Oriental is a historic luxury hotel in Central that serves as an enduring symbol of Hong Kong's mid-twentieth-century economic ascent and a focal point for significant cultural events."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

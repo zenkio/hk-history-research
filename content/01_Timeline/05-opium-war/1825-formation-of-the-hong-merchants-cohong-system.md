@@ -6,6 +6,7 @@ year: 1825
 era: "Canton trade and the First Opium War"
 tags: ["1825", "ai-draft", "canton-trade", "cohong", "maritime-history", "opium-war", "opium-war-precursors", "qing-dynasty"]
 summary: "By 1825, the Cohong system served as the formalized, state-mandated intermediary for all maritime trade between the Qing Empire and foreign powers, establishing the economic framework of the Canton System."
+description: "By 1825, the Cohong system served as the formalized, state-mandated intermediary for all maritime trade between the Qing Empire and foreign powers, establishing the economic framework of the Canton System."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

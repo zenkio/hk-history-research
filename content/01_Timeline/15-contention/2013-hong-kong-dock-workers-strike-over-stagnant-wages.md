@@ -6,6 +6,7 @@ year: 2013
 era: "Political contention and protest"
 tags: ["2013", "ai-draft", "contention", "dock-workers-strike", "income-inequality", "kwai-tsing", "labor-rights"]
 summary: "Beginning on March 28, 2013, contract workers at the Kwai Tsing Container Terminals launched a historic 40-day strike to protest stagnant wages and grueling working conditions, drawing widespread public attention to severe wealth disparity and corporate power in Hong Kong."
+description: "Beginning on March 28, 2013, contract workers at the Kwai Tsing Container Terminals launched a historic 40-day strike to protest stagnant wages and grueling working conditions, drawing widespread public attention to…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

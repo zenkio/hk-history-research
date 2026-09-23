@@ -6,6 +6,7 @@ year: 1599
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1599", "ai-draft", "ming-and-qing", "ming-dynasty", "piracy", "tang-clan", "walled-village", "yuen-long"]
 summary: "In **1599**, the influential Tang clan constructed the fortified village of Kat Hing Wai in Yuen Long to defend against escalating coastal piracy and local banditry during the late Ming dynasty."
+description: "In 1599, the influential Tang clan constructed the fortified village of Kat Hing Wai in Yuen Long to defend against escalating coastal piracy and local banditry during the late Ming dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

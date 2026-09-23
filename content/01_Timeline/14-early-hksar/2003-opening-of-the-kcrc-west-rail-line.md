@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "early-hksar", "hksar-history", "infrastructure", "new-territories", "railway", "transport-history", "urban-development"]
 summary: "On December 20, 2003, the West Rail Line opened to the public, marking a major milestone in Hong Kong's railway development and transport connectivity in the Northwest New Territories."
+description: "On December 20, 2003, the West Rail Line opened to the public, marking a major milestone in Hong Kong's railway development and transport connectivity in the Northwest New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

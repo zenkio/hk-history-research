@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "chief-executive", "electoral-reform", "national-security-era", "national-security-law", "patriots-administering-hong-kong"]
 summary: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
+description: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

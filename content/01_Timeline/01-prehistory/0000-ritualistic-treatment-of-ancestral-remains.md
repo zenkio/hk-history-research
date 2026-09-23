@@ -5,6 +5,7 @@ year: -1200
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "ancestor-worship", "archaeology", "bronze-age", "hong-kong-history", "prehistory", "secondary-burial"]
 summary: "Archaeological evidence from circa 1200 BCE suggests sophisticated burial customs in Hong Kong, highlighting the development of complex social and spiritual structures."
+description: "Archaeological evidence from circa 1200 BCE suggests sophisticated burial customs in Hong Kong, highlighting the development of complex social and spiritual structures."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

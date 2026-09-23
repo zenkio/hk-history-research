@@ -3,6 +3,7 @@ title: "Beverley McLachlin (麥嘉琳)"
 title_zh: "麥嘉琳"
 tags: ["ai-draft", "beverley-mclachlin", "court-of-final-appeal", "judiciary", "legal-history", "person", "rule-of-law"]
 summary: "Beverley McLachlin is a former Chief Justice of Canada who served as a Non-Permanent Judge of the Court of Final Appeal of Hong Kong from 2018 to 2024."
+description: "Beverley McLachlin is a former Chief Justice of Canada who served as a Non-Permanent Judge of the Court of Final Appeal of Hong Kong from 2018 to 2024."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Britain (英國)"
 title_zh: "英國"
 tags: ["ai-draft", "british-empire", "colonial-history", "legal-history", "mui-tsai", "place"]
 summary: "As the sovereign colonial power governing Hong Kong, Britain shaped the territory's legal, administrative, and social structures, including the contentious intervention in traditional domestic service practices."
+description: "As the sovereign colonial power governing Hong Kong, Britain shaped the territory's legal, administrative, and social structures, including the contentious intervention in traditional domestic service practices."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

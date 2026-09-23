@@ -5,6 +5,7 @@ year: -400
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "jade-artifacts", "prehistory", "trade-networks", "warring-states"]
 summary: "Around 400 BCE, the appearance of Sichuan-style slit jade rings in the Hong Kong region demonstrated that local coastal communities were integrated into extensive continental prestige-goods exchange networks."
+description: "Around 400 BCE, the appearance of Sichuan-style slit jade rings in the Hong Kong region demonstrated that local coastal communities were integrated into extensive continental prestige-goods exchange networks."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

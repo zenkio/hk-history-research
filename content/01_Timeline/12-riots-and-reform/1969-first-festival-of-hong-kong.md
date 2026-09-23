@@ -6,6 +6,7 @@ year: 1969
 era: "Riots and the MacLehose reforms"
 tags: ["1967-riots", "1969", "ai-draft", "civic-identity", "colonial-history", "festival-of-hong-kong", "riots-and-reform", "social-reform"]
 summary: "Held in December 1969, the First Festival of Hong Kong was a massive government-organized civic and cultural event designed to foster local pride and defuse social tensions in the wake of the 1967 riots."
+description: "Held in December 1969, the First Festival of Hong Kong was a massive government-organized civic and cultural event designed to foster local pride and defuse social tensions in the wake of the 1967 riots."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

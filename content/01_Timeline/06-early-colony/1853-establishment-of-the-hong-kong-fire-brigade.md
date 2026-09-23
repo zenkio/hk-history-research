@@ -6,6 +6,7 @@ year: 1853
 era: "The early colony"
 tags: ["1853", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-safety", "urban-development"]
 summary: "In 1853, following recurrent catastrophic fires in the rapidly expanding settlement, the colonial government established the Hong Kong Fire Brigade."
+description: "In 1853, following recurrent catastrophic fires in the rapidly expanding settlement, the colonial government established the Hong Kong Fire Brigade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

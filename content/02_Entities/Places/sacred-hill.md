@@ -3,6 +3,7 @@ title: "Sacred Hill (聖山)"
 title_zh: "聖山"
 tags: ["ai-draft", "hong-kong-history", "imperial-residence", "kowloon-city", "place", "southern-song", "sung-wong-toi"]
 summary: "Sacred Hill was a prominent granite hill in Kowloon, Hong Kong, historically associated with the final years of the Southern Song Dynasty and the flight of the child emperors."
+description: "Sacred Hill was a prominent granite hill in Kowloon, Hong Kong, historically associated with the final years of the Southern Song Dynasty and the flight of the child emperors."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

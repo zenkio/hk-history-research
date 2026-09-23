@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "ai-draft", "colonial-history", "first-opium-war", "land-tenure", "opium-war", "urban-planning", "victoria-city"]
 summary: "In **1842**, following the initial British occupation of Hong Kong Island, colonial authorities began the formal demarcation of the first urban settlement, named Victoria City. This spatial blueprint laid the administrative and geographical foundation for the future development of the colony's northern shore."
+description: "In 1842, following the initial British occupation of Hong Kong Island, colonial authorities began the formal demarcation of the first urban settlement, named Victoria City."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

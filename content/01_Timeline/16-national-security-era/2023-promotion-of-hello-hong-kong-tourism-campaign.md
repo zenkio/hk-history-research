@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "economic-recovery", "hong-kong-history", "international-relations", "national-security-era", "post-pandemic", "tourism-policy"]
 summary: "On February 2, 2023, the Hong Kong government launched the 'Hello Hong Kong' campaign to rejuvenate the city's international image and stimulate the economy following the cessation of strict pandemic-era travel restrictions."
+description: "On February 2, 2023, the Hong Kong government launched the 'Hello Hong Kong' campaign to rejuvenate the city's international image and stimulate the economy following the cessation of strict pandemic-era travel…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

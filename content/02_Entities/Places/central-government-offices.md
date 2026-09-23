@@ -3,6 +3,7 @@ title: "Central Government Offices (政府總部)"
 title_zh: "政府總部"
 tags: ["ai-draft", "central-district", "government-history", "hong-kong-administration", "place", "political-architecture", "tamar"]
 summary: "The Central Government Offices (政府總部) serve as the administrative heart of Hong Kong, functioning as the primary seat of government for both the colonial administration and the post-1997 Special Administrative Region."
+description: "The Central Government Offices (政府總部) serve as the administrative heart of Hong Kong, functioning as the primary seat of government for both the colonial administration and the post-1997 Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

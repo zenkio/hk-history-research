@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "contention", "digital-infrastructure", "financial-history", "fintech", "hong-kong-economy", "monetary-policy"]
 summary: "On September 30, 2018, the Hong Kong Monetary Authority launched the Faster Payment System (FPS), a real-time retail payment infrastructure that enabled instantaneous fund transfers across different banks and e-wallet operators."
+description: "On September 30, 2018, the Hong Kong Monetary Authority launched the Faster Payment System (FPS), a real-time retail payment infrastructure that enabled instantaneous fund transfers across different banks and e-wallet…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Theodor Joset (西奧多·若瑟)"
 title_zh: "西奧多·若瑟"
 tags: ["ai-draft", "catholic-church", "colonial-era", "missionary-history", "person", "religion"]
 summary: "Theodor Joset was a Swiss Catholic missionary and the first Prefect Apostolic of Hong Kong, playing a foundational role in establishing the Roman Catholic Church in the newly colonized British territory."
+description: "Theodor Joset was a Swiss Catholic missionary and the first Prefect Apostolic of Hong Kong, playing a foundational role in establishing the Roman Catholic Church in the newly colonized British territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

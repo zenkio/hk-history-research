@@ -4,6 +4,7 @@ title_zh: "遣返貧民政策"
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["ai-draft", "battle-of-hong-kong", "deportation", "humanitarian-crisis", "japanese-occupation", "world-war-ii"]
 summary: "Between 1942 and 1943, the Japanese occupation authorities forcibly deported over one million Hong Kong residents to mainland China to alleviate critical food shortages."
+description: "Between 1942 and 1943, the Japanese occupation authorities forcibly deported over one million Hong Kong residents to mainland China to alleviate critical food shortages."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

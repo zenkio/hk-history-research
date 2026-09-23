@@ -3,6 +3,7 @@ title: "Umetaro Nagano (梅澤梅太郎)"
 title_zh: "梅澤梅太郎"
 tags: ["ai-draft", "hong-kong-history", "japanese-occupation", "person", "surrender", "world-war-ii"]
 summary: "Umetaro Nagano (梅澤梅太郎) was a Japanese merchant based in Hong Kong whose involvement in the formal surrender ceremonies marked a significant transition in the city's wartime history."
+description: "Umetaro Nagano (梅澤梅太郎) was a Japanese merchant based in Hong Kong whose involvement in the formal surrender ceremonies marked a significant transition in the city's wartime history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

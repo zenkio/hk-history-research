@@ -3,6 +3,7 @@ title: "Peking (北京)"
 title_zh: "北京"
 tags: ["ai-draft", "british-colonialism", "hong-kong-history", "peking", "place", "qing-dynasty", "unequal-treaties"]
 summary: "Peking served as the capital of the Qing dynasty and the administrative center where the unequal treaties that defined the territorial extent of colonial Hong Kong were negotiated and signed."
+description: "Peking served as the capital of the Qing dynasty and the administrative center where the unequal treaties that defined the territorial extent of colonial Hong Kong were negotiated and signed."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

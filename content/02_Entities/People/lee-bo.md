@@ -3,6 +3,7 @@ title: "Lee Bo (李波)"
 title_zh: "李波"
 tags: ["ai-draft", "basic-law", "causeway-bay-books", "freedom-of-press", "hong-kong-history", "person", "politics"]
 summary: "Lee Bo was a shareholder of Causeway Bay Books (銅鑼灣書店) whose disappearance in 2015 sparked significant international concern regarding the autonomy of Hong Kong's legal system under the 'One Country, Two Systems' framework."
+description: "Lee Bo was a shareholder of Causeway Bay Books (銅鑼灣書店) whose disappearance in 2015 sparked significant international concern regarding the autonomy of Hong Kong's legal system under the 'One Country, Two Systems'…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Lee Lai-shan (李麗珊)"
 title_zh: "李麗珊"
 tags: ["1996-atlanta", "ai-draft", "cheung-chau", "lee-lai-shan", "olympic-gold", "person", "windsurfing"]
 summary: "Lee Lai-shan is a windsurfer who won Hong Kong's first-ever Olympic gold medal at the 1996 Atlanta Games, becoming a symbol of local identity and athletic achievement."
+description: "Lee Lai-shan is a windsurfer who won Hong Kong's first-ever Olympic gold medal at the 1996 Atlanta Games, becoming a symbol of local identity and athletic achievement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1830
 era: "Canton trade and the First Opium War"
 tags: ["1830", "ai-draft", "canton-system", "industrial-revolution", "maritime-history", "opium-war", "pearl-river-delta", "steam-navigation"]
 summary: "In 1830, the arrival of early steamships on the Pearl River marked a pivotal shift in maritime technology, disrupting traditional wind-dependent trade cycles."
+description: "In 1830, the arrival of early steamships on the Pearl River marked a pivotal shift in maritime technology, disrupting traditional wind-dependent trade cycles."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

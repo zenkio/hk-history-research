@@ -3,6 +3,7 @@ title: "Christine Loh (陸恭蕙)"
 title_zh: "陸恭蕙"
 tags: ["ai-draft", "environmental-protection", "hong-kong-politics", "legislative-council", "person", "public-policy", "victoria-harbour"]
 summary: "Christine Loh is a prominent Hong Kong politician, activist, and scholar who played a pivotal role in the advocacy for environmental preservation and legislative transparency in the territory."
+description: "Christine Loh is a prominent Hong Kong politician, activist, and scholar who played a pivotal role in the advocacy for environmental preservation and legislative transparency in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

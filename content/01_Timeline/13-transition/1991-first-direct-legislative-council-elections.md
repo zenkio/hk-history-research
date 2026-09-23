@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1991", "ai-draft", "direct-elections", "legislative-council", "pro-democracy", "sino-british-joint-declaration", "transition", "transition-era"]
 summary: "On September 15, 1991, Hong Kong held its first direct elections to the Legislative Council, marking a significant milestone in the territory's political development during the transitional period."
+description: "On September 15, 1991, Hong Kong held its first direct elections to the Legislative Council, marking a significant milestone in the territory's political development during the transitional period."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

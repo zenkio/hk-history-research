@@ -3,6 +3,7 @@ title: "Joshua Wong (黃之鋒)"
 title_zh: "黃之鋒"
 tags: ["ai-draft", "hong-kong-47", "joshua-wong", "person", "scholarism", "student-activism", "umbrella-movement"]
 summary: "Joshua Wong is a prominent Hong Kong student activist and politician who gained international recognition for his leadership in youth-led political movements."
+description: "Joshua Wong is a prominent Hong Kong student activist and politician who gained international recognition for his leadership in youth-led political movements."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

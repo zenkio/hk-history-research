@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "ai-draft", "civil-society", "contention", "identity", "national-education", "scholarism", "student-protest"]
 summary: "In September 2012, massive student-led sit-ins and hunger strikes outside the government headquarters compelled the Hong Kong administration to shelve its controversial Moral and National Education curriculum."
+description: "In September 2012, massive student-led sit-ins and hunger strikes outside the government headquarters compelled the Hong Kong administration to shelve its controversial Moral and National Education curriculum."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

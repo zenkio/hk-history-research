@@ -6,6 +6,7 @@ year: 1856
 era: "The early colony"
 tags: ["1856", "ai-draft", "arrow-incident", "british-colony", "early-colony", "foreign-relations", "qing-dynasty", "second-opium-war"]
 summary: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and trade of the young Hong Kong colony."
+description: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "canton-trade", "first-opium-war", "imperialism", "maritime-history", "opium-war", "royal-navy"]
 summary: "During the escalating tensions of 1839, the British Royal Navy identified the deep-water harbor of Hong Kong as an essential tactical refuge, signaling a shift in the island’s role from a local maritime shelter to a strategic node in imperial logistics."
+description: "During the escalating tensions of 1839, the British Royal Navy identified the deep-water harbor of Hong Kong as an essential tactical refuge, signaling a shift in the island’s role from a local maritime shelter to a…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

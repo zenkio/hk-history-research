@@ -6,6 +6,7 @@ year: 1828
 era: "Canton trade and the First Opium War"
 tags: ["1828", "ai-draft", "american-history", "canton-trade", "opium-war", "opium-war-precursors", "pearl-river-delta", "thirteen-factories"]
 summary: "During the early 19th century, the expansion of American maritime trade into the Pearl River Delta introduced new competition to the long-standing British dominance of the Canton System."
+description: "During the early 19th century, the expansion of American maritime trade into the Pearl River Delta introduced new competition to the long-standing British dominance of the Canton System."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

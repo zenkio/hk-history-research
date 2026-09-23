@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "hong-kong-47", "judicial-system", "national-security-era", "national-security-law", "pro-democracy", "subversion-trial"]
 summary: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
+description: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

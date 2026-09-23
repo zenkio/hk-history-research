@@ -6,6 +6,7 @@ year: 1965
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1965", "ai-draft", "economic-history", "industrialization", "manufacturing", "postwar-refugees", "refugees", "textiles"]
 summary: "By the mid-1960s, Hong Kong transformed from a entrepôt into a major manufacturing center, leading the world in garment and light goods exports."
+description: "By the mid-1960s, Hong Kong transformed from a entrepôt into a major manufacturing center, leading the world in garment and light goods exports."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

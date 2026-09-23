@@ -3,6 +3,7 @@ title: "Chinese mercantile leaders (華商領袖)"
 title_zh: "華商領袖"
 tags: ["ai-draft", "chinese-merchants", "civic-leaders", "colonial-era", "economic-history", "hong-kong-history", "person"]
 summary: "Chinese mercantile leaders were influential figures who bridged the gap between colonial administration and the local Chinese community, significantly shaping Hong Kong's economic and institutional development."
+description: "Chinese mercantile leaders were influential figures who bridged the gap between colonial administration and the local Chinese community, significantly shaping Hong Kong's economic and institutional development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

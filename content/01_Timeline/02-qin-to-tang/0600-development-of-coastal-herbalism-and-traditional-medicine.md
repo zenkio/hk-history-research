@@ -5,6 +5,7 @@ year: 600
 era: "Imperial frontier: Qin to Tang"
 tags: ["600", "ai-draft", "coastal-culture", "herbal-medicine", "maritime-history", "qin-to-tang", "tang-dynasty", "traditional-chinese-medicine"]
 summary: "During the early Tang Dynasty, geographic isolation facilitated the integration of indigenous subtropical botanical knowledge into the broader framework of Traditional Chinese Medicine in the Hong Kong region."
+description: "During the early Tang Dynasty, geographic isolation facilitated the integration of indigenous subtropical botanical knowledge into the broader framework of Traditional Chinese Medicine in the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

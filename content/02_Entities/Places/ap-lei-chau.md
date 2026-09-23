@@ -3,6 +3,7 @@ title: "Ap Lei Chau (鴨脷洲)"
 title_zh: "鴨脷洲"
 tags: ["aberdeen", "ai-draft", "ap-lei-chau", "hung-shing-temple", "maritime-history", "place", "qing-dynasty"]
 summary: "Ap Lei Chau is an island in Hong Kong known for its dense population, maritime heritage, and historical connection to the construction of the Hung Shing Temple."
+description: "Ap Lei Chau is an island in Hong Kong known for its dense population, maritime heritage, and historical connection to the construction of the Hung Shing Temple."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

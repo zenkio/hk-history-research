@@ -3,6 +3,7 @@ title: "An Lushan (安祿山)"
 title_zh: "安祿山"
 tags: ["ai-draft", "an-lushan", "lingnan-history", "migration", "person", "tang-dynasty", "uen-mun"]
 summary: "A powerful military governor of Sogdian and Göktürk descent whose rebellion against the Tang Dynasty triggered widespread social displacement, indirectly affecting the development of maritime trade and refugee settlements in the Lingnan region."
+description: "A powerful military governor of Sogdian and Göktürk descent whose rebellion against the Tang Dynasty triggered widespread social displacement, indirectly affecting the development of maritime trade and refugee…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

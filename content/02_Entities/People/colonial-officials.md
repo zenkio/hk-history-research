@@ -3,6 +3,7 @@ title: "Colonial officials"
 title_zh: "殖民地官員"
 tags: ["ai-draft", "british-empire", "colonial-history", "government", "medical-history", "person"]
 summary: "British administrative personnel who governed Hong Kong and interacted with local communities, missionary efforts, and Qing authorities."
+description: "British administrative personnel who governed Hong Kong and interacted with local communities, missionary efforts, and Qing authorities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Lord Sumption (岑耀信)"
 title_zh: "岑耀信"
 tags: ["ai-draft", "court-of-final-appeal", "hong-kong-judiciary", "judicial-independence", "lord-sumption", "national-security-law", "person"]
 summary: "A former Justice of the UK Supreme Court who served as a non-permanent judge of the Hong Kong Court of Final Appeal until his resignation in 2024."
+description: "A former Justice of the UK Supreme Court who served as a non-permanent judge of the Hong Kong Court of Final Appeal until his resignation in 2024."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

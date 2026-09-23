@@ -3,6 +3,7 @@ title: "Harry Parkes (巴夏禮)"
 title_zh: "巴夏禮"
 tags: ["ai-draft", "british-colonial-history", "diplomacy", "kowloon-peninsula", "nineteenth-century", "person", "second-opium-war"]
 summary: "Harry Parkes was a prominent British diplomat and colonial official whose aggressive negotiation tactics significantly influenced British imperial expansion in Hong Kong and China during the 19th century."
+description: "Harry Parkes was a prominent British diplomat and colonial official whose aggressive negotiation tactics significantly influenced British imperial expansion in Hong Kong and China during the 19th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

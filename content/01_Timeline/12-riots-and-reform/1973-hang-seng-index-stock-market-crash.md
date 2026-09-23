@@ -6,6 +6,7 @@ year: 1973
 era: "Riots and the MacLehose reforms"
 tags: ["1973", "ai-draft", "financial-regulation", "hang-seng-index", "maclehose-era", "riots-and-reform", "stock-market-crash"]
 summary: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors. The financial disaster exposed the urgent need for tighter regulatory oversight and catalysed significant modernization of the territory's financial infrastructure."
+description: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

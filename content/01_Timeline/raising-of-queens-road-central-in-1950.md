@@ -1,7 +1,8 @@
 ---
 title: "Raising of Queen's Road Central in 1950"
 tags: ["1950", "1951", "colonial-hong-kong", "hong-kong-infrastructure", "queens-road-central", "transport-history", "urban-development"]
-summary: "In **1950**, the colonial administration initiated a project to elevate the level of **Queen's Road Central** between **"
+summary: "In 1950, the colonial administration initiated a project to elevate the level of Queen's Road Central between Ice House Street and Pedder Street."
+description: "In 1950, the colonial administration initiated a project to elevate the level of Queen's Road Central between Ice House Street and Pedder Street."
 confidence: high
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/raising-of-queens-road-to-be-completed-in-february/"

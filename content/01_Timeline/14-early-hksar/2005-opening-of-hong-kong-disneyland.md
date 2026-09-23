@@ -6,6 +6,7 @@ year: 2005
 era: "The early HKSAR"
 tags: ["2005", "ai-draft", "early-hksar", "economy", "hksar-government", "hong-kong-disneyland", "lantau-island", "tourism"]
 summary: "On September 12, 2005, Hong Kong Disneyland officially opened on Lantau Island as part of a joint venture between the HKSAR Government and The Walt Disney Company to boost tourism and economic recovery."
+description: "On September 12, 2005, Hong Kong Disneyland officially opened on Lantau Island as part of a joint venture between the HKSAR Government and The Walt Disney Company to boost tourism and economic recovery."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

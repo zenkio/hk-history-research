@@ -5,6 +5,7 @@ year: -200
 era: "Imperial frontier: Qin to Tang"
 tags: ["agriculture", "ai-draft", "ancient-history", "archaeology", "han-dynasty", "land-use", "qin-to-tang"]
 summary: "Around the 2nd century BCE, the adoption of intensive wet-rice agriculture transformed Hong Kong's landscape, facilitating the region's earliest documented population growth."
+description: "Around the 2nd century BCE, the adoption of intensive wet-rice agriculture transformed Hong Kong's landscape, facilitating the region's earliest documented population growth."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

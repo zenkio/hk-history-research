@@ -3,6 +3,7 @@ title: "Roman Tam (羅文)"
 title_zh: "羅文"
 tags: ["ai-draft", "cantopop", "entertainment", "hong-kong-history", "lion-rock-spirit", "person"]
 summary: "Roman Tam was an iconic Cantopop singer whose versatile performances and embodiment of the perseverance of the era cemented his status as the legendary 'Principal Tam' of Hong Kong popular culture."
+description: "Roman Tam was an iconic Cantopop singer whose versatile performances and embodiment of the perseverance of the era cemented his status as the legendary 'Principal Tam' of Hong Kong popular culture."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "John Bremridge (彭勵治)"
 title_zh: "彭勵治"
 tags: ["ai-draft", "british-hong-kong", "colonial-administration", "economic-policy", "financial-history", "hong-kong-dollar", "person"]
 summary: "Sir John Bremridge was a British colonial administrator and businessman who served as the Financial Secretary of Hong Kong during the transition to the pegged exchange rate system in 1983."
+description: "Sir John Bremridge was a British colonial administrator and businessman who served as the Financial Secretary of Hong Kong during the transition to the pegged exchange rate system in 1983."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

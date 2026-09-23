@@ -5,6 +5,7 @@ year: -3000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "coastal-settlement", "maritime-culture", "neolithic", "prehistory"]
 summary: "Around 3000 BCE, Neolithic inhabitants in the Hong Kong region developed advanced seafaring skills, establishing seasonal coastal camps to exploit rich marine resources."
+description: "Around 3000 BCE, Neolithic inhabitants in the Hong Kong region developed advanced seafaring skills, establishing seasonal coastal camps to exploit rich marine resources."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

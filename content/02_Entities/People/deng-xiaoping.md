@@ -3,6 +3,7 @@ title: "Deng Xiaoping (鄧小平)"
 title_zh: "鄧小平"
 tags: ["ai-draft", "deng-xiaoping", "hong-kong-history", "one-country-two-systems", "person", "sino-british-joint-declaration", "sovereignty"]
 summary: "Paramount leader of the People's Republic of China who formulated the 'One Country, Two Systems' framework that shaped Hong Kong's return to Chinese sovereignty."
+description: "Paramount leader of the People's Republic of China who formulated the 'One Country, Two Systems' framework that shaped Hong Kong's return to Chinese sovereignty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

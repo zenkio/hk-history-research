@@ -6,6 +6,7 @@ year: 1908
 era: "The New Territories lease and the early 20th century"
 tags: ["1908", "ai-draft", "colonial-history", "kellett-island", "maritime-leisure", "new-territories", "reclamation", "urban-development"]
 summary: "In 1908, the Royal Hong Kong Yacht Club established its permanent clubhouse at Kellett Island, marking a significant shift in the spatial organization of Victoria Harbour."
+description: "In 1908, the Royal Hong Kong Yacht Club established its permanent clubhouse at Kellett Island, marking a significant shift in the spatial organization of Victoria Harbour."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1840
 era: "Canton trade and the First Opium War"
 tags: ["1840", "ai-draft", "colonial-history", "land-tenure", "local-resistance", "new-territories", "opium-war"]
 summary: "During the early stages of British expansion in 1840, agrarian communities in the New Territories and surrounding areas engaged in localized resistance against nascent colonial activities. These skirmishes underscored the friction between traditional village social structures and the rapid imposition of foreign maritime authority."
+description: "During the early stages of British expansion in 1840, agrarian communities in the New Territories and surrounding areas engaged in localized resistance against nascent colonial activities."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

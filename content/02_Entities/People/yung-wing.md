@@ -3,6 +3,7 @@ title: "Yung Wing (容閎)"
 title_zh: "容閎"
 tags: ["ai-draft", "education", "hong-kong-history", "morrison-school", "person", "qing-dynasty", "yung-wing"]
 summary: "Yung Wing was a pioneering Chinese educationalist and diplomat who studied at the Morrison Education Society School in Hong Kong and later orchestrated the historic Chinese Educational Mission."
+description: "Yung Wing was a pioneering Chinese educationalist and diplomat who studied at the Morrison Education Society School in Hong Kong and later orchestrated the historic Chinese Educational Mission."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

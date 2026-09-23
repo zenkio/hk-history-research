@@ -6,6 +6,7 @@ year: 1869
 era: "Kowloon and the Victorian colony"
 tags: ["1869", "ai-draft", "city-hall", "civic-culture", "colonial-history", "victorian-colony", "victorian-hong-kong"]
 summary: "On November 2, 1869, the First Hong Kong City Hall was officially opened, providing a civic complex funded by public subscription that included a library, theater, and museum."
+description: "On November 2, 1869, the First Hong Kong City Hall was officially opened, providing a civic complex funded by public subscription that included a library, theater, and museum."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

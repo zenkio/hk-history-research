@@ -6,6 +6,7 @@ year: 1644
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1644", "ai-draft", "maritime-history", "ming-and-qing", "ming-dynasty", "piracy", "qing-dynasty", "southern-ming"]
 summary: "The collapse of the Ming dynasty in 1644 plunged the Hong Kong region into decades of maritime warfare, coastal devastation, and chaotic power struggles between Qing forces, Ming loyalists, and pirate fleets."
+description: "The collapse of the Ming dynasty in 1644 plunged the Hong Kong region into decades of maritime warfare, coastal devastation, and chaotic power struggles between Qing forces, Ming loyalists, and pirate fleets."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

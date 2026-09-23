@@ -6,6 +6,7 @@ year: 1867
 era: "Kowloon and the Victorian colony"
 tags: ["1867", "ai-draft", "colonial-governance", "prostitution", "public-health", "venereal-diseases-ordinance", "victorian-colony", "victorian-era"]
 summary: "On July 19, 1867, the Legislative Council passed the Venereal Diseases Ordinance, legalizing and regulating prostitution in the colony to combat high rates of infection among British troops."
+description: "On July 19, 1867, the Legislative Council passed the Venereal Diseases Ordinance, legalizing and regulating prostitution in the colony to combat high rates of infection among British troops."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2002
 era: "The early HKSAR"
 tags: ["2002", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-economy", "lion-rock-spirit"]
 summary: "The passing of legendary Cantopop singer Roman Tam in October 2002 coincided with severe economic hardships in Hong Kong, propelling his classic song 'Below the Lion Rock' into a powerful cultural symbol of collective resilience."
+description: "The passing of legendary Cantopop singer Roman Tam in October 2002 coincided with severe economic hardships in Hong Kong, propelling his classic song 'Below the Lion Rock' into a powerful cultural symbol of collective…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ngau Chi Wan (牛池灣)"
 title_zh: "牛池灣"
 tags: ["ai-draft", "colonial-era", "hakka-settlement", "new-kowloon", "ngau-chi-wan", "place", "urban-history"]
 summary: "Ngau Chi Wan is a historic area in New Kowloon that evolved from a rural Hakka settlement into an urbanized district, reflecting the broader patterns of land use change and urbanization in Hong Kong."
+description: "Ngau Chi Wan is a historic area in New Kowloon that evolved from a rural Hakka settlement into an urbanized district, reflecting the broader patterns of land use change and urbanization in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

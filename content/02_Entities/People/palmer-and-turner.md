@@ -3,6 +3,7 @@ title: "Palmer and Turner"
 title_zh: "巴馬丹拿"
 tags: ["ai-draft", "architecture", "british-hong-kong", "colonial-history", "hong-kong-central", "person", "urban-development"]
 summary: "Palmer and Turner is one of Hong Kong's oldest and most influential architectural firms, responsible for defining the city's skyline through the design of iconic colonial-era landmarks."
+description: "Palmer and Turner is one of Hong Kong's oldest and most influential architectural firms, responsible for defining the city's skyline through the design of iconic colonial-era landmarks."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

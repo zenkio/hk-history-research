@@ -3,6 +3,7 @@ title: "Central District (中環)"
 title_zh: "中環"
 tags: ["ai-draft", "central-district", "colonial-history", "economic-history", "hong-kong-island", "place", "urban-development"]
 summary: "Central is the historic heart of Hong Kong's governance, finance, and trade, serving as the nucleus of the city's development since the early colonial era."
+description: "Central is the historic heart of Hong Kong's governance, finance, and trade, serving as the nucleus of the city's development since the early colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

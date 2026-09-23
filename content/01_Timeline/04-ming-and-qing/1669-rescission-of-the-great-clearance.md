@@ -6,6 +6,7 @@ year: 1669
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1669", "ai-draft", "great-clearance", "migration", "ming-and-qing", "new-territories", "qing-dynasty"]
 summary: "In **1669**, the Qing court officially rescinded the devastating coastal evacuation known as the Great Clearance, allowing displaced residents to return to their ancestral lands in present-day Hong Kong."
+description: "In 1669, the Qing court officially rescinded the devastating coastal evacuation known as the Great Clearance, allowing displaced residents to return to their ancestral lands in present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "2012-protests", "ai-draft", "contention", "hong-kong-history", "locust-rhetoric", "mainland-relations", "social-identity"]
 summary: "Around 2012, Hong Kong experienced a surge in anti-Mainland sentiment characterized by the controversial 'locust' metaphor, reflecting intensifying social and economic friction between the city and the Mainland."
+description: "Around 2012, Hong Kong experienced a surge in anti-Mainland sentiment characterized by the controversial 'locust' metaphor, reflecting intensifying social and economic friction between the city and the Mainland."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

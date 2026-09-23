@@ -3,6 +3,7 @@ title: "Punti Clan (本地氏族)"
 title_zh: "本地氏族"
 tags: ["ai-draft", "clans", "colonial-history", "hong-kong-history", "new-territories", "person", "punti"]
 summary: "The Punti (本地) are the long-established inhabitants of the New Territories, whose traditional social structure and land rights significantly shaped the colonial development of Hong Kong."
+description: "The Punti (本地) are the long-established inhabitants of the New Territories, whose traditional social structure and land rights significantly shaped the colonial development of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

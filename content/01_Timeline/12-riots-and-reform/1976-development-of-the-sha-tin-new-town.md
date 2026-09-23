@@ -6,6 +6,7 @@ year: 1976
 era: "Riots and the MacLehose reforms"
 tags: ["1976", "ai-draft", "hong-kong-history", "maclehose-reforms", "new-towns", "post-war-hong-kong", "riots-and-reform", "urban-development"]
 summary: "The development of Sha Tin New Town in the 1970s marked a pivotal shift in colonial urban planning, transitioning from dense inner-city habitation to organized suburban growth."
+description: "The development of Sha Tin New Town in the 1970s marked a pivotal shift in colonial urban planning, transitioning from dense inner-city habitation to organized suburban growth."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

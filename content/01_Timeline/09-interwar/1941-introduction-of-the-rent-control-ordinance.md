@@ -6,6 +6,7 @@ year: 1941
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1941", "ai-draft", "colonial-history", "economic-intervention", "housing-policy", "interwar", "interwar-period", "rent-control"]
 summary: "In 1941, the Hong Kong colonial government enacted the Rent Control Ordinance to regulate housing costs amidst the severe inflation and social instability caused by the encroaching Second Sino-Japanese War."
+description: "In 1941, the Hong Kong colonial government enacted the Rent Control Ordinance to regulate housing costs amidst the severe inflation and social instability caused by the encroaching Second Sino-Japanese War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

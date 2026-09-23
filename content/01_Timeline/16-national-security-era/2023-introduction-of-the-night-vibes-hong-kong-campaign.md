@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "hong-kong-economy", "national-security-era", "post-pandemic", "public-policy", "retail-sector", "tourism"]
 summary: "In September 2023, the Hong Kong government launched the 'Night Vibes Hong Kong' campaign to stimulate the local economy and revitalize nightlife following the COVID-19 pandemic."
+description: "In September 2023, the Hong Kong government launched the 'Night Vibes Hong Kong' campaign to stimulate the local economy and revitalize nightlife following the COVID-19 pandemic."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

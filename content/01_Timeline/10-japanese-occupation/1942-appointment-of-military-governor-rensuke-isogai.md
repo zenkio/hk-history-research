@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "japanese-occupation", "military-governor", "rensuke-isogai", "three-years-and-eight-months", "world-war-ii"]
 summary: "On February 20, 1942, Lieutenant General Rensuke Isogai assumed office as Hong Kong's first Japanese Military Governor, formally establishing direct imperial military administration over the territory following the British surrender."
+description: "On February 20, 1942, Lieutenant General Rensuke Isogai assumed office as Hong Kong's first Japanese Military Governor, formally establishing direct imperial military administration over the territory following the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

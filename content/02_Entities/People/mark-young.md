@@ -3,6 +3,7 @@ title: "Mark Young (楊慕琦)"
 title_zh: "楊慕琦"
 tags: ["ai-draft", "colonial-history", "government-policy", "mark-young", "person", "post-war-hong-kong", "rent-control"]
 summary: "Sir Mark Young was the Governor of Hong Kong who proposed democratic reforms known as the 'Young Plan' and oversaw the introduction of post-war rent control measures."
+description: "Sir Mark Young was the Governor of Hong Kong who proposed democratic reforms known as the 'Young Plan' and oversaw the introduction of post-war rent control measures."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

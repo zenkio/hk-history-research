@@ -6,6 +6,7 @@ year: 1905
 era: "The New Territories lease and the early 20th century"
 tags: ["1905", "ai-draft", "anti-american-boycott", "chinese-exclusion-act", "colonial-history", "merchant-guilds", "new-territories"]
 summary: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the local Chinese community."
+description: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

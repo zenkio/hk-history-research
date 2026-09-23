@@ -6,6 +6,7 @@ year: 1887
 era: "The New Territories lease and the early 20th century"
 tags: ["1887", "ai-draft", "colonial-hong-kong", "higher-education", "london-missionary-society", "medical-history", "new-territories", "sun-yat-sen"]
 summary: "Established in October 1887 by the London Missionary Society, the Hong Kong College of Medicine for Chinese provided formal Western medical training to local students and notably educated future revolutionary leader Sun Yat-sen."
+description: "Established in October 1887 by the London Missionary Society, the Hong Kong College of Medicine for Chinese provided formal Western medical training to local students and notably educated future revolutionary leader Sun…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

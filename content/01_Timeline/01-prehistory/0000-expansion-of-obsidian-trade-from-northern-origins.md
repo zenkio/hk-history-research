@@ -5,6 +5,7 @@ year: -1500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "maritime-history", "neolithic-period", "obsidian", "prehistory", "trade-networks"]
 summary: "Between 1500 BCE and 1200 BCE, archaeological evidence of non-indigenous obsidian in Hong Kong suggests the integration of the region into expansive, long-distance prehistoric trade networks."
+description: "Between 1500 BCE and 1200 BCE, archaeological evidence of non-indigenous obsidian in Hong Kong suggests the integration of the region into expansive, long-distance prehistoric trade networks."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

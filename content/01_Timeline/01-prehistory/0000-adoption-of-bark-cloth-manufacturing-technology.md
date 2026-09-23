@@ -5,6 +5,7 @@ year: -3000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bark-cloth", "material-culture", "neolithic-period", "prehistoric-hong-kong", "prehistory"]
 summary: "Around **c. 3000 BCE**, early inhabitants of the Hong Kong region began utilizing specialized stone tools to manufacture bark cloth, marking a crucial advancement in local prehistoric material culture and textile history."
+description: "Around c. 3000 BCE, early inhabitants of the Hong Kong region began utilizing specialized stone tools to manufacture bark cloth, marking a crucial advancement in local prehistoric material culture and textile history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

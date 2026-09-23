@@ -3,6 +3,7 @@ title: "Queen's College (皇仁書院)"
 title_zh: "皇仁書院"
 tags: ["ai-draft", "causeway-bay", "colonial-history", "education", "hong-kong-institutions", "place", "secondary-schools"]
 summary: "Queen's College is the first government-run secondary school in Hong Kong and a significant institution in the development of the colonial education system."
+description: "Queen's College is the first government-run secondary school in Hong Kong and a significant institution in the development of the colonial education system."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

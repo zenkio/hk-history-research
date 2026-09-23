@@ -3,6 +3,7 @@ title: "Edward Youde (尤德)"
 title_zh: "尤德"
 tags: ["1980s", "ai-draft", "british-colonial-era", "hong-kong-governors", "person", "political-history", "sino-british-negotiations"]
 summary: "Edward Youde served as the 26th Governor of Hong Kong from 1982 to 1986, playing a pivotal role in the negotiations concerning the territory's sovereignty handover."
+description: "Edward Youde served as the 26th Governor of Hong Kong from 1982 to 1986, playing a pivotal role in the negotiations concerning the territory's sovereignty handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

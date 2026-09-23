@@ -3,6 +3,7 @@ title: "Mirs Bay (大鵬灣)"
 title_zh: "大鵬灣"
 tags: ["ai-draft", "allied-airmen", "dongjiang-column", "japanese-occupation", "mirs-bay", "new-territories", "place"]
 summary: "Mirs Bay is a major coastal body of water northeast of Hong Kong that served as a crucial maritime corridor for wartime resistance networks and Allied rescue operations during the Japanese occupation."
+description: "Mirs Bay is a major coastal body of water northeast of Hong Kong that served as a crucial maritime corridor for wartime resistance networks and Allied rescue operations during the Japanese occupation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

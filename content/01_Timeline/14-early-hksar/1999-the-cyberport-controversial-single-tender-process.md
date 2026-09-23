@@ -6,6 +6,7 @@ year: 1999
 era: "The early HKSAR"
 tags: ["1999", "ai-draft", "cyberport", "early-hksar", "economic-policy", "government-transparency", "hksar-history", "public-tender"]
 summary: "In March 1999, the Hong Kong government's decision to award the development contract for Cyberport to Pacific Century Group without a public tender sparked significant public concern regarding transparency and government-business relations."
+description: "In March 1999, the Hong Kong government's decision to award the development contract for Cyberport to Pacific Century Group without a public tender sparked significant public concern regarding transparency and…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

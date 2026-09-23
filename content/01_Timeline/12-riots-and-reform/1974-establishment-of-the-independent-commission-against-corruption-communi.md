@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "anti-corruption", "colonial-history", "community-relations", "icac", "maclehose-reforms", "riots-and-reform"]
 summary: "Established in February 1974 alongside the Independent Commission Against Corruption, the Community Relations Department pioneered public education and engagement strategies to shift societal attitudes and root out deep-seated systemic corruption in daily life."
+description: "Established in February 1974 alongside the Independent Commission Against Corruption, the Community Relations Department pioneered public education and engagement strategies to shift societal attitudes and root out…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

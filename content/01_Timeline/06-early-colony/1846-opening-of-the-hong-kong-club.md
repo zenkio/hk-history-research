@@ -6,6 +6,7 @@ year: 1846
 era: "The early colony"
 tags: ["1846", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-club", "social-history"]
 summary: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
+description: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

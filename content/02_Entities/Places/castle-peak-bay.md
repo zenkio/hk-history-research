@@ -3,6 +3,7 @@ title: "Castle Peak Bay (青山灣)"
 title_zh: "青山灣"
 tags: ["ai-draft", "hong-kong-history", "maritime-history", "new-territories", "place", "tuen-mun", "urban-development"]
 summary: "Castle Peak Bay is a natural bay in Tuen Mun that served as a traditional maritime hub and subsequently transformed into a key development site for the Tuen Mun New Town."
+description: "Castle Peak Bay is a natural bay in Tuen Mun that served as a traditional maritime hub and subsequently transformed into a key development site for the Tuen Mun New Town."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

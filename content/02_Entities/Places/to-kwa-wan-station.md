@@ -3,6 +3,7 @@ title: "To Kwa Wan Station (土瓜灣站)"
 title_zh: "土瓜灣站"
 tags: ["ai-draft", "archaeology", "hong-kong-transport", "infrastructure", "mtr", "place", "to-kwa-wan"]
 summary: "To Kwa Wan Station is a key transit hub on the Tuen Ma line that serves a historic residential district while becoming a focal point for archaeological and infrastructure-related controversies."
+description: "To Kwa Wan Station is a key transit hub on the Tuen Ma line that serves a historic residential district while becoming a focal point for archaeological and infrastructure-related controversies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

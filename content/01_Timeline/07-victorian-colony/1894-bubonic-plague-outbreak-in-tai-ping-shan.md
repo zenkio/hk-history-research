@@ -6,6 +6,7 @@ year: 1894
 era: "Kowloon and the Victorian colony"
 tags: ["1894", "ai-draft", "bubonic-plague", "colonial-history", "public-health", "sanitation", "tai-ping-shan", "victorian-colony"]
 summary: "In May 1894, a devastating outbreak of the bubonic plague struck the densely populated Tai Ping Shan district of Hong Kong, claiming thousands of lives and fundamentally altering colonial public health policies."
+description: "In May 1894, a devastating outbreak of the bubonic plague struck the densely populated Tai Ping Shan district of Hong Kong, claiming thousands of lives and fundamentally altering colonial public health policies."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

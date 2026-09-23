@@ -5,6 +5,7 @@ year: 650
 era: "Imperial frontier: Qin to Tang"
 tags: ["650", "agrarian-history", "ai-draft", "hong-kong-history", "land-management", "maritime-trade", "qin-to-tang", "tang-dynasty"]
 summary: "During the Tang Dynasty, the introduction of advanced agrarian techniques, including hillside terracing, transformed the local landscape to support a growing maritime population."
+description: "During the Tang Dynasty, the introduction of advanced agrarian techniques, including hillside terracing, transformed the local landscape to support a growing maritime population."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

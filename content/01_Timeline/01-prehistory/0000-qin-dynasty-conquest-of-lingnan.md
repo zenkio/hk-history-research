@@ -5,6 +5,7 @@ year: -214
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "ancient-history", "imperial-expansion", "lingnan", "nanhai-commandery", "prehistory", "qin-dynasty"]
 summary: "Around **214 BCE**, Emperor Qin Shi Huang extended his empire's southern frontier by conquering the Lingnan region, formally incorporating the territory that includes modern-day Hong Kong into the newly established Nanhai Commandery."
+description: "Around 214 BCE, Emperor Qin Shi Huang extended his empire's southern frontier by conquering the Lingnan region, formally incorporating the territory that includes modern-day Hong Kong into the newly established Nanhai…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

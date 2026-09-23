@@ -3,6 +3,7 @@ title: "Hong Kong Coliseum (香港體育館)"
 title_zh: "香港體育館"
 tags: ["ai-draft", "architecture", "cantopop", "cultural-landmarks", "hong-kong-history", "hung-hom", "place"]
 summary: "The Hong Kong Coliseum is a prominent multi-purpose indoor arena in Hung Hom that serves as a central venue for major sports events, international concerts, and significant cultural gatherings in the territory."
+description: "The Hong Kong Coliseum is a prominent multi-purpose indoor arena in Hung Hom that serves as a central venue for major sports events, international concerts, and significant cultural gatherings in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kai Tak (啟德)"
 title_zh: "啟德"
 tags: ["ai-draft", "aviation", "british-colonial-era", "kai-tak", "kowloon", "place", "urban-history"]
 summary: "Kai Tak was Hong Kong's primary international airport from 1925 to 1998, serving as a vital aviation hub and a symbol of the territory's rapid post-war modernization."
+description: "Kai Tak was Hong Kong's primary international airport from 1925 to 1998, serving as a vital aviation hub and a symbol of the territory's rapid post-war modernization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

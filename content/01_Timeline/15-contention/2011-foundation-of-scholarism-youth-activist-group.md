@@ -6,6 +6,7 @@ year: 2011
 era: "Political contention and protest"
 tags: ["2011", "ai-draft", "civic-activism", "contention", "joshua-wong", "national-education", "scholarism", "student-movement"]
 summary: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
+description: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

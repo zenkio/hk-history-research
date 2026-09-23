@@ -3,6 +3,7 @@ title: "Wuhan (武漢)"
 title_zh: "武漢"
 tags: ["ai-draft", "china-hong-kong-relations", "covid-19", "place", "public-health", "wuhan"]
 summary: "Wuhan is a major transportation and industrial hub in central China, significant to Hong Kong primarily as the reported point of origin for the 2019 novel coronavirus (COVID-19) outbreak."
+description: "Wuhan is a major transportation and industrial hub in central China, significant to Hong Kong primarily as the reported point of origin for the 2019 novel coronavirus (COVID-19) outbreak."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

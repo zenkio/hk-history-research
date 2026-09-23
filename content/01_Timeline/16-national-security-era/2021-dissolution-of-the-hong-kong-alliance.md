@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "civil-society", "hong-kong-alliance", "national-security-era", "national-security-law", "pro-democracy", "tiananmen-vigil"]
 summary: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
+description: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

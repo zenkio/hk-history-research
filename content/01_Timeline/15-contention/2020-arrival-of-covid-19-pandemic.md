@@ -6,6 +6,7 @@ year: 2020
 era: "Political contention and protest"
 tags: ["2020", "ai-draft", "border-control", "contention", "covid-19", "protest-movement", "public-health"]
 summary: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the previous year."
+description: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

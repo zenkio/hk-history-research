@@ -6,6 +6,7 @@ year: 1350
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1350", "ai-draft", "lineage-society", "ping-shan", "rural-history", "song-and-yuan", "song-yuan-era", "tang-clan", "walled-villages"]
 summary: "Around 1350, the Tang clan in Ping Shan established a structured village system that provided regional stability during the decline of the Yuan dynasty."
+description: "Around 1350, the Tang clan in Ping Shan established a structured village system that provided regional stability during the decline of the Yuan dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Agnes Chow (周庭)"
 title_zh: "周庭"
 tags: ["ai-draft", "demosisto", "hong-kong-activism", "national-security-law", "person", "politics", "student-movement"]
 summary: "Agnes Chow is a prominent Hong Kong pro-democracy activist and former spokesperson who gained international attention for her role in student-led political movements."
+description: "Agnes Chow is a prominent Hong Kong pro-democracy activist and former spokesperson who gained international attention for her role in student-led political movements."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

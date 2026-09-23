@@ -6,6 +6,7 @@ year: 1920
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1920", "1920s", "ai-draft", "interwar", "interwar-hong-kong", "labor-movement", "mechanics-strike", "trade-unions"]
 summary: "In **April 1920**, thousands of skilled Chinese mechanics in Hong Kong launched a successful strike for higher wages, marking a watershed moment for the colony's organized labor movement."
+description: "In April 1920, thousands of skilled Chinese mechanics in Hong Kong launched a successful strike for higher wages, marking a watershed moment for the colony's organized labor movement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

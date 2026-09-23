@@ -3,6 +3,7 @@ title: "Sir Henry May (梅含理)"
 title_zh: "梅含理"
 tags: ["ai-draft", "british-imperialism", "colonial-history", "hong-kong-governors", "person", "transportation", "twentieth-century"]
 summary: "Sir Henry May was the 15th Governor of Hong Kong, whose administration was marked by the expansion of colonial infrastructure and the geopolitical tensions of the early 20th century."
+description: "Sir Henry May was the 15th Governor of Hong Kong, whose administration was marked by the expansion of colonial infrastructure and the geopolitical tensions of the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

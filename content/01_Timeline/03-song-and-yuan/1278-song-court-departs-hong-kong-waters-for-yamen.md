@@ -6,6 +6,7 @@ year: 1278
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1278", "ai-draft", "imperial-court", "migration", "naval-history", "song-and-yuan", "song-dynasty", "yuen-dynasty"]
 summary: "In June **1278**, the retreating Southern Song court and its remaining fleet departed Hong Kong waters under intense Mongol pressure, sailing west toward their final fateful stand at Yamen."
+description: "In June 1278, the retreating Southern Song court and its remaining fleet departed Hong Kong waters under intense Mongol pressure, sailing west toward their final fateful stand at Yamen."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

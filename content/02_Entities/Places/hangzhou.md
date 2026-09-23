@@ -3,6 +3,7 @@ title: "Hangzhou (杭州)"
 title_zh: "杭州"
 tags: ["ai-draft", "hangzhou", "hong-kong-history", "imperial-court", "mongol-invasion", "place", "southern-song"]
 summary: "Hangzhou was the capital of the Southern Song dynasty and the political center from which the imperial court fled south toward Hong Kong during the Mongol invasion."
+description: "Hangzhou was the capital of the Southern Song dynasty and the political center from which the imperial court fled south toward Hong Kong during the Mongol invasion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

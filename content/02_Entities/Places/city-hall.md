@@ -3,6 +3,7 @@ title: "City Hall (香港大會堂)"
 title_zh: "香港大會堂"
 tags: ["ai-draft", "central", "colonial-history", "cultural-heritage", "lu-xun", "modernist-architecture", "place"]
 summary: "The City Hall is a landmark civic complex in Central that has served as a center for cultural, social, and political gathering in Hong Kong since its 1962 opening."
+description: "The City Hall is a landmark civic complex in Central that has served as a center for cultural, social, and political gathering in Hong Kong since its 1962 opening."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

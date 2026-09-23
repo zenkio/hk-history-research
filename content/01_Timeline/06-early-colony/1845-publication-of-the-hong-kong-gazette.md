@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "19th-century", "ai-draft", "colonial-history", "early-colony", "government-records", "hong-kong-gazette", "legal-history"]
 summary: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
+description: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

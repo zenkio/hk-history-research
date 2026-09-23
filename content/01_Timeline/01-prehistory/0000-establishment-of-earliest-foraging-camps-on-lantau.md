@@ -5,6 +5,7 @@ year: -6000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "holocene", "hunter-gatherer", "lantau-island", "prehistory"]
 summary: "Around 6000 BCE, nomadic groups established seasonal foraging camps on Lantau Island, marking the earliest known human activity in the region following post-glacial sea-level rises."
+description: "Around 6000 BCE, nomadic groups established seasonal foraging camps on Lantau Island, marking the earliest known human activity in the region following post-glacial sea-level rises."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

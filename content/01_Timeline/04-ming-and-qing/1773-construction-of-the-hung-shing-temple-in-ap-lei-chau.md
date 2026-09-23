@@ -6,6 +6,7 @@ year: 1773
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1773", "ai-draft", "ap-lei-chau", "hung-shing-temple", "maritime-trade", "ming-and-qing", "qing-dynasty", "shipbuilding"]
 summary: "Built in **1773**, the Hung Shing Temple in Ap Lei Chau reflects the growing maritime and shipbuilding activities of local coastal communities during the mid-Qing dynasty."
+description: "Built in 1773, the Hung Shing Temple in Ap Lei Chau reflects the growing maritime and shipbuilding activities of local coastal communities during the mid-Qing dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

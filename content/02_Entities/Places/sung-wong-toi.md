@@ -3,6 +3,7 @@ title: "Sung Wong Toi (宋王臺)"
 title_zh: "宋王臺"
 tags: ["ai-draft", "archaeology", "heritage-site", "hong-kong-history", "kowloon", "place", "song-dynasty"]
 summary: "Sung Wong Toi is a historical memorial site in Kowloon commemorating the final days of the Southern Song dynasty as the imperial court sought refuge in the region."
+description: "Sung Wong Toi is a historical memorial site in Kowloon commemorating the final days of the Southern Song dynasty as the imperial court sought refuge in the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

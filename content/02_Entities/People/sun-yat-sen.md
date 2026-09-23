@@ -3,6 +3,7 @@ title: "Sun Yat-sen (孫中山)"
 title_zh: "孫中山"
 tags: ["ai-draft", "british-hong-kong", "hong-kong-history", "person", "sun-yat-sen", "xingzhonghui", "xinhai-revolution"]
 summary: "Sun Yat-sen was a revolutionary leader whose formative medical education and early organizational activities in colonial Hong Kong laid the groundwork for the 1911 revolution that ended imperial rule in China."
+description: "Sun Yat-sen was a revolutionary leader whose formative medical education and early organizational activities in colonial Hong Kong laid the groundwork for the 1911 revolution that ended imperial rule in China."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

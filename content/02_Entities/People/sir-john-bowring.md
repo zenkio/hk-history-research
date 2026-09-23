@@ -3,6 +3,7 @@ title: "Sir John Bowring (寶寧)"
 title_zh: "寶寧"
 tags: ["ai-draft", "arrow-incident", "bowring-street", "british-colonial-era", "governor-hong-kong", "person", "second-opium-war"]
 summary: "Sir John Bowring served as the fourth Governor of Hong Kong, presiding over a tumultuous period of rising Anglo-Chinese tensions that culminated in the Second Opium War."
+description: "Sir John Bowring served as the fourth Governor of Hong Kong, presiding over a tumultuous period of rising Anglo-Chinese tensions that culminated in the Second Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

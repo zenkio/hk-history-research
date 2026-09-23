@@ -5,6 +5,7 @@ year: 700
 era: "Imperial frontier: Qin to Tang"
 tags: ["700", "ai-draft", "deep-water-anchorages", "maritime-silk-road", "qin-to-tang", "tang-dynasty", "trade-routes"]
 summary: "During the Tang dynasty, Hong Kong's sheltered deep-water anchorages emerged as vital transit points for international merchant vessels navigating the maritime trade routes between Southeast Asia and Guangzhou."
+description: "During the Tang dynasty, Hong Kong's sheltered deep-water anchorages emerged as vital transit points for international merchant vessels navigating the maritime trade routes between Southeast Asia and Guangzhou."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1860
 era: "Kowloon and the Victorian colony"
 tags: ["1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
 summary: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical footprint of the fledgling Hong Kong colony."
+description: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

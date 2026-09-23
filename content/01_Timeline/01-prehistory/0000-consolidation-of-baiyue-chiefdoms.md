@@ -5,6 +5,7 @@ year: -500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "baiyue", "bronze-age", "hong-kong-history", "prehistory"]
 summary: "Between 500 and 250 BCE, the disparate coastal tribes of the Lingnan region began organizing into larger, more structured entities known as the Baiyue (百越)."
+description: "Between 500 and 250 BCE, the disparate coastal tribes of the Lingnan region began organizing into larger, more structured entities known as the Baiyue (百越)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

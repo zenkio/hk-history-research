@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2006", "ai-draft", "democratic-politics", "early-hksar", "hksar-history", "legislative-council", "political-protest", "social-activism"]
 summary: "On October 1, 2006, the League of Social Democrats (LSD) was formally established, introducing a more confrontational style of grassroots activism into Hong Kong's political arena."
+description: "On October 1, 2006, the League of Social Democrats (LSD) was formally established, introducing a more confrontational style of grassroots activism into Hong Kong's political arena."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

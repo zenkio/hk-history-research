@@ -3,6 +3,7 @@ title: "Zheng Yi (鄭一)"
 title_zh: "鄭一"
 tags: ["ai-draft", "hong-kong-history", "maritime-history", "pearl-river-delta", "person", "piracy", "qing-dynasty"]
 summary: "Zheng Yi (鄭一) was a prominent Chinese pirate leader whose formation of the Red Flag Fleet in the early 19th century established a dominant maritime power that significantly influenced the waters surrounding Hong Kong."
+description: "Zheng Yi (鄭一) was a prominent Chinese pirate leader whose formation of the Red Flag Fleet in the early 19th century established a dominant maritime power that significantly influenced the waters surrounding Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

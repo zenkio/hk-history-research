@@ -6,6 +6,7 @@ year: 1952
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1952", "ai-draft", "cantonese-cinema", "film-history", "postwar-hong-kong", "postwar-refugees", "social-realism", "union-film"]
 summary: "Established in July 1952, Union Film Enterprise was a pioneering Hong Kong film cooperative that sought to elevate the artistic and moral standards of Cantonese-language cinema through socially conscious storytelling."
+description: "Established in July 1952, Union Film Enterprise was a pioneering Hong Kong film cooperative that sought to elevate the artistic and moral standards of Cantonese-language cinema through socially conscious storytelling."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

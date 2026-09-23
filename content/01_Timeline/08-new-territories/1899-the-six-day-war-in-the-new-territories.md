@@ -6,6 +6,7 @@ year: 1899
 era: "The New Territories lease and the early 20th century"
 tags: ["1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
 summary: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their military defeat."
+description: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

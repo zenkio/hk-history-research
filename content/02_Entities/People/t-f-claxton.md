@@ -3,6 +3,7 @@ title: "T. F. Claxton"
 title_zh: "克拉克斯頓"
 tags: ["ai-draft", "colonial-history", "hong-kong-personalities", "maritime-history", "meteorology", "person", "royal-observatory"]
 summary: "Thomas Folkes Claxton served as the Director of the Royal Observatory, Hong Kong, and was a key figure in the development of the colony's meteorological and time-keeping services during the early 20th century."
+description: "Thomas Folkes Claxton served as the Director of the Royal Observatory, Hong Kong, and was a key figure in the development of the colony's meteorological and time-keeping services during the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

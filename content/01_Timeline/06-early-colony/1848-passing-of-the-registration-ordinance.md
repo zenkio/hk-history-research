@@ -6,6 +6,7 @@ year: 1848
 era: "The early colony"
 tags: ["1848", "19th-century", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "migration", "registration-ordinance", "social-control"]
 summary: "In 1848, the British colonial government enacted the Registration Ordinance, a legislative measure requiring all Chinese inhabitants of Hong Kong to register, underscoring the complexities of governing a transient population."
+description: "In 1848, the British colonial government enacted the Registration Ordinance, a legislative measure requiring all Chinese inhabitants of Hong Kong to register, underscoring the complexities of governing a transient…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

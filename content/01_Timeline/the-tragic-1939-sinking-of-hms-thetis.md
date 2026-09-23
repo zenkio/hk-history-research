@@ -2,7 +2,8 @@
 title: "The Tragic 1939 Sinking of HMS Thetis"
 date: 1939-06-01
 tags: ["1936", "1938", "1939", "1940", "1943", "british-navy", "hms-thetis", "maritime-disaster", "submarine-history", "wwii"]
-summary: "The submarine **HMS Thetis** sank during sea trials in Liverpool Bay on **1 June 1939**, resulting in ninety-nine fatali"
+summary: "The submarine HMS Thetis sank during sea trials in Liverpool Bay on 1 June 1939, resulting in ninety-nine fatalities."
+description: "The submarine HMS Thetis sank during sea trials in Liverpool Bay on 1 June 1939, resulting in ninety-nine fatalities."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/10/the-tragic-loss-of-submarine-hms-thetis.html"

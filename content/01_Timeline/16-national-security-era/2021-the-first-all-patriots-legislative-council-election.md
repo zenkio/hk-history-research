@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "basic-law", "electoral-reform", "hong-kong-politics", "legislative-council", "national-security-era", "patriots-administering-hong-kong"]
 summary: "Held on December 19, 2021, this election marked the first implementation of the reformed electoral system in Hong Kong, emphasizing the requirement that only patriots could participate in governance."
+description: "Held on December 19, 2021, this election marked the first implementation of the reformed electoral system in Hong Kong, emphasizing the requirement that only patriots could participate in governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Hong Kong Island (香港島)"
 title_zh: "香港島"
 tags: ["ai-draft", "british-colonial-era", "first-opium-war", "local-history", "place", "treaty-of-nanking"]
 summary: "Hong Kong Island was the initial nucleus of British colonial expansion in East Asia, transitioning from a sparsely populated fishing and agricultural region into a global entrepôt following the First Opium War."
+description: "Hong Kong Island was the initial nucleus of British colonial expansion in East Asia, transitioning from a sparsely populated fishing and agricultural region into a global entrepôt following the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1197
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1197", "ai-draft", "lantau-island", "maritime-history", "peasant-uprising", "salt-smuggling", "song-and-yuan", "song-dynasty"]
 summary: "In 1197, salt producers on Lantau Island rebelled against the Song dynasty's strict state salt monopolies and anti-smuggling measures, leading to a violent military suppression by imperial authorities."
+description: "In 1197, salt producers on Lantau Island rebelled against the Song dynasty's strict state salt monopolies and anti-smuggling measures, leading to a violent military suppression by imperial authorities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

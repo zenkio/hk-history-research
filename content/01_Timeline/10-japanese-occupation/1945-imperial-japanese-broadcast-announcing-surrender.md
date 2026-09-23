@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-colonial-history", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
+description: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

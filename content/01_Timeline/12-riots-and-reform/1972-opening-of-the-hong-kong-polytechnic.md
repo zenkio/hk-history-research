@@ -6,6 +6,7 @@ year: 1972
 era: "Riots and the MacLehose reforms"
 tags: ["1972", "ai-draft", "education-history", "hong-kong-history", "industrialization", "maclehose-era", "riots-and-reform", "vocational-training"]
 summary: "On August 1, 1972, the Hong Kong Polytechnic was formally established, marking a pivotal shift in the colonial government's commitment to tertiary education and industrial development."
+description: "On August 1, 1972, the Hong Kong Polytechnic was formally established, marking a pivotal shift in the colonial government's commitment to tertiary education and industrial development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

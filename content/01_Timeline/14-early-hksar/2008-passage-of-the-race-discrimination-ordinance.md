@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "early-hksar", "hksar-history", "human-rights", "legal-reform", "legislation", "racial-discrimination"]
 summary: "On July 10, 2008, the Legislative Council passed the Race Discrimination Ordinance, marking a significant evolution in Hong Kong's anti-discrimination legal framework."
+description: "On July 10, 2008, the Legislative Council passed the Race Discrimination Ordinance, marking a significant evolution in Hong Kong's anti-discrimination legal framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

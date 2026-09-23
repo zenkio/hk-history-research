@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "battle-of-hong-kong", "colonialism", "japanese-occupation", "the-peak", "urban-history", "world-war-ii"]
 summary: "In 1942, the Japanese occupation authorities reorganized the residential landscape of The Peak, evicting former British colonial elites to accommodate Japanese civil and military officials. This act served to dismantle the physical symbols of British authority and established a new Japanese-centric administrative hierarchy."
+description: "In 1942, the Japanese occupation authorities reorganized the residential landscape of The Peak, evicting former British colonial elites to accommodate Japanese civil and military officials."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

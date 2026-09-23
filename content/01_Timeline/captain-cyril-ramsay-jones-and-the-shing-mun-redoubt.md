@@ -2,7 +2,8 @@
 title: "Captain Cyril Ramsay Jones and the Shing Mun Redoubt"
 date: 1941-12-09
 tags: ["1910", "1924", "1937", "1938", "1939", "1941", "1944", "battle-of-hong-kong", "gin-drinkers-line", "military-history", "royal-scots", "wwii"]
-summary: "Captain **Cyril Ramsay Jones** of the **2nd Battalion Royal Scots** commanded 'A' Company during the defense of Hong Kon"
+summary: "Captain Cyril Ramsay Jones of the 2nd Battalion Royal Scots commanded 'A' Company during the defense of Hong Kong."
+description: "Captain Cyril Ramsay Jones of the 2nd Battalion Royal Scots commanded 'A' Company during the defense of Hong Kong."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/02/captain-cyril-ramsay-jones-2rs.html"

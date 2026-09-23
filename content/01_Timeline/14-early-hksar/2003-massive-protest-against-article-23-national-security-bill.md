@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "article-23", "civil-society", "early-hksar", "july-1st-march", "one-country-two-systems", "tung-chee-hwa"]
 summary: "On July 1, 2003, over half a million Hong Kong residents marched against proposed national security legislation, leading the government to shelve the bill and catalyzing the city's modern pro-democracy movement."
+description: "On July 1, 2003, over half a million Hong Kong residents marched against proposed national security legislation, leading the government to shelve the bill and catalyzing the city's modern pro-democracy movement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Exchange Square (交易廣場)"
 title_zh: "交易廣場"
 tags: ["ai-draft", "central", "financial-history", "hong-kong-architecture", "place", "reclamation", "stock-exchange"]
 summary: "Exchange Square is a prominent office complex in Central that has served as the headquarters of the Stock Exchange of Hong Kong since 1986, reflecting the territory's rise as a global financial hub."
+description: "Exchange Square is a prominent office complex in Central that has served as the headquarters of the Stock Exchange of Hong Kong since 1986, reflecting the territory's rise as a global financial hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

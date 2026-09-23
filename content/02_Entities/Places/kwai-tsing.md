@@ -3,6 +3,7 @@ title: "Kwai Tsing (葵青)"
 title_zh: "葵青"
 tags: ["2015", "ai-draft", "kwai-tsing", "lead-water-scandal", "new-territories", "place", "public-housing"]
 summary: "Kwai Tsing is a major industrial, port, and residential district in the New Territories that gained critical historical significance during the 2015 public housing lead contamination scandal."
+description: "Kwai Tsing is a major industrial, port, and residential district in the New Territories that gained critical historical significance during the 2015 public housing lead contamination scandal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

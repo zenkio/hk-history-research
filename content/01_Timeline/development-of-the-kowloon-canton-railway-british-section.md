@@ -2,7 +2,8 @@
 title: "Development of the Kowloon-Canton Railway British Section"
 date: 1898-01-01
 tags: ["1898", "1905", "british-colonialism", "colonial-infrastructure", "hong-kong-history", "kowloon-canton-railway", "transportation-history"]
-summary: "The **Kowloon-Canton Railway** project was conceived to secure Hong Kong’s status as a primary trade hub by connecting i"
+summary: "The Kowloon-Canton Railway project was conceived to secure Hong Kong’s status as a primary trade hub by connecting it to the trunk line leading to Peking."
+description: "The Kowloon-Canton Railway project was conceived to secure Hong Kong’s status as a primary trade hub by connecting it to the trunk line leading to Peking."
 confidence: high
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/the-kowloon-canton-railway-british-section-far-eastern-review-article/"

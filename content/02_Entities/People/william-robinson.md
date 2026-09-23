@@ -3,6 +3,7 @@ title: "William Robinson"
 title_zh: "羅便臣"
 tags: ["19th-century", "ai-draft", "colonial-history", "governor", "person", "public-health", "sanitary-board"]
 summary: "Sir William Robinson served as the 11th Governor of Hong Kong during a period marked by rapid urban development, public health challenges, and the establishment of the Sanitary Board."
+description: "Sir William Robinson served as the 11th Governor of Hong Kong during a period marked by rapid urban development, public health challenges, and the establishment of the Sanitary Board."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

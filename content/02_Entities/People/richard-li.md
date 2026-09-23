@@ -3,6 +3,7 @@ title: "Richard Li (李澤楷)"
 title_zh: "李澤楷"
 tags: ["ai-draft", "business-elites", "cyberport", "hong-kong-economy", "person", "richard-li"]
 summary: "Richard Li is a prominent Hong Kong businessman and telecommunications tycoon whose ventures, most notably the Cyberport project, significantly shaped the territory's technology infrastructure and economic policy at the turn of the twenty-first century."
+description: "Richard Li is a prominent Hong Kong businessman and telecommunications tycoon whose ventures, most notably the Cyberport project, significantly shaped the territory's technology infrastructure and economic policy at the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

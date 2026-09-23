@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "ai-draft", "british-military", "first-opium-war", "hong-kong-fever", "malaria", "opium-war", "public-health"]
 summary: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of the fledgling colony."
+description: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

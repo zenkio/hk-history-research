@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "19th-century-hong-kong", "ai-draft", "british-empire", "colonial-history", "demography", "early-colony"]
 summary: "In 1845, the colonial administration conducted the first formal census of Hong Kong, providing an initial demographic baseline for the burgeoning port city."
+description: "In 1845, the colonial administration conducted the first formal census of Hong Kong, providing an initial demographic baseline for the burgeoning port city."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Statue Square (皇后像廣場)"
 title_zh: "皇后像廣場"
 tags: ["ai-draft", "british-colonial-history", "central", "japanese-occupation", "place", "statue-square", "urban-history"]
 summary: "Statue Square is a public pedestrian space in Central that served as the symbolic heart of the British colonial administration and later became a focal point for migrant domestic workers on weekends."
+description: "Statue Square is a public pedestrian space in Central that served as the symbolic heart of the British colonial administration and later became a focal point for migrant domestic workers on weekends."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

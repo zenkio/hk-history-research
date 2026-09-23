@@ -3,6 +3,7 @@ title: "Wong Yuk-man (黃毓民)"
 title_zh: "黃毓民"
 tags: ["ai-draft", "hong-kong-politics", "legislative-council", "media-history", "person", "pro-democracy-movement", "radio-broadcasting"]
 summary: "Wong Yuk-man is a prominent political figure, journalist, and former Legislative Council member known for his provocative style in talk radio and his significant influence on Hong Kong's radical democratic movement."
+description: "Wong Yuk-man is a prominent political figure, journalist, and former Legislative Council member known for his provocative style in talk radio and his significant influence on Hong Kong's radical democratic movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

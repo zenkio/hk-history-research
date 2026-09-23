@@ -6,6 +6,7 @@ year: 1950
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1950", "ai-draft", "colonial-history", "ngos", "postwar-recovery", "postwar-refugees", "refugee-crisis", "social-welfare"]
 summary: "In 1950, various voluntary agencies unified to form the Hong Kong Council of Social Service (香港社會服務聯會) to better coordinate welfare efforts amidst the massive influx of refugees and rapid industrialization."
+description: "In 1950, various voluntary agencies unified to form the Hong Kong Council of Social Service (香港社會服務聯會) to better coordinate welfare efforts amidst the massive influx of refugees and rapid industrialization."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

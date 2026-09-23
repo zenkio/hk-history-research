@@ -6,6 +6,7 @@ year: 1851
 era: "The early colony"
 tags: ["1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
 summary: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation project."
+description: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

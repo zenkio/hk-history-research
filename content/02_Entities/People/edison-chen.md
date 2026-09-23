@@ -3,6 +3,7 @@ title: "Edison Chen (陳冠希)"
 title_zh: "陳冠希"
 tags: ["ai-draft", "cantopop", "digital-privacy", "edison-chen", "hong-kong-cinema", "media-scandals", "person"]
 summary: "Edison Chen is a Canadian-born Hong Kong actor, singer, and entrepreneur whose career was profoundly impacted by the 2008 celebrity photo leak scandal, marking a watershed moment in Hong Kong celebrity culture, digital privacy, and media ethics."
+description: "Edison Chen is a Canadian-born Hong Kong actor, singer, and entrepreneur whose career was profoundly impacted by the 2008 celebrity photo leak scandal, marking a watershed moment in Hong Kong celebrity culture, digital…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

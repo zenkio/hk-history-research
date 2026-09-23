@@ -3,6 +3,7 @@ title: "Guangdong (廣東)"
 title_zh: "廣東"
 tags: ["ai-draft", "guangdong", "migration", "pearl-river-delta", "place", "qing-dynasty", "xin-an-county"]
 summary: "Guangdong is the neighboring mainland province whose historical administrative, economic, and demographic shifts directly shaped the development, governance, and population of Hong Kong."
+description: "Guangdong is the neighboring mainland province whose historical administrative, economic, and demographic shifts directly shaped the development, governance, and population of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

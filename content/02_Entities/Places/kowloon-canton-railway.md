@@ -3,6 +3,7 @@ title: "Kowloon-Canton Railway (九廣鐵路)"
 title_zh: "九廣鐵路"
 tags: ["ai-draft", "colonial-hong-kong", "infrastructure", "modern-china", "new-territories", "place", "transportation-history"]
 summary: "The Kowloon-Canton Railway was a strategic rail link connecting British Hong Kong to mainland China that served as a critical artery for trade, military logistics, and migration throughout the 20th century."
+description: "The Kowloon-Canton Railway was a strategic rail link connecting British Hong Kong to mainland China that served as a critical artery for trade, military logistics, and migration throughout the 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Gui Minhai (桂民海)"
 title_zh: "桂民海"
 tags: ["ai-draft", "causeway-bay-books", "gui-minhai", "hong-kong-history", "human-rights", "one-country-two-systems", "person"]
 summary: "Gui Minhai is a Swedish-Chinese publisher whose 2015 disappearance from Thailand and subsequent detention in mainland China became a focal point in debates regarding the erosion of 'One Country, Two Systems' in Hong Kong."
+description: "Gui Minhai is a Swedish-Chinese publisher whose 2015 disappearance from Thailand and subsequent detention in mainland China became a focal point in debates regarding the erosion of 'One Country, Two Systems' in Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

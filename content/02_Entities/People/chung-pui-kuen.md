@@ -3,6 +3,7 @@ title: "Chung Pui-kuen (鍾沛權)"
 title_zh: "鍾沛權"
 tags: ["ai-draft", "hong-kong-media", "journalism", "legal-history", "person", "press-freedom", "stand-news"]
 summary: "Chung Pui-kuen is a prominent Hong Kong journalist and the former editor-in-chief of the independent digital media outlet Stand News (立場新聞)."
+description: "Chung Pui-kuen is a prominent Hong Kong journalist and the former editor-in-chief of the independent digital media outlet Stand News (立場新聞)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

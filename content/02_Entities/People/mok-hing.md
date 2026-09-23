@@ -3,6 +3,7 @@ title: "Mok Hing (莫慶)"
 title_zh: "莫慶"
 tags: ["ai-draft", "colonial-era", "merchant-elites", "mok-hing", "person", "south-china-athletic-association", "sports-history"]
 summary: "Mok Hing was a prominent early 20th-century Hong Kong merchant and sports pioneer instrumental in the founding of the South China Athletic Association."
+description: "Mok Hing was a prominent early 20th-century Hong Kong merchant and sports pioneer instrumental in the founding of the South China Athletic Association."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

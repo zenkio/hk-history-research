@@ -6,6 +6,7 @@ year: 1914
 era: "The New Territories lease and the early 20th century"
 tags: ["1914", "ai-draft", "colonial-era", "early-20th-century", "economic-development", "hong-kong-history", "industrial-history", "new-territories"]
 summary: "Held in 1914, the First Hong Kong Industrial Exhibition marked a pivotal moment in the colony's shift from a purely entrepôt economy toward a burgeoning manufacturing base."
+description: "Held in 1914, the First Hong Kong Industrial Exhibition marked a pivotal moment in the colony's shift from a purely entrepôt economy toward a burgeoning manufacturing base."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

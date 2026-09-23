@@ -5,6 +5,7 @@ year: 950
 era: "Imperial frontier: Qin to Tang"
 tags: ["950", "ai-draft", "five-dynasties", "military-garrison", "pearl-diving", "qin-to-tang", "southern-han", "tai-po"]
 summary: "Around 950 CE, the Southern Han state established the Mei-chuan Garrison to militarize and monopolize the lucrative pearl-diving operations in the Tai Po region, marking a pivotal step in the early administrative integration of the Hong Kong area."
+description: "Around 950 CE, the Southern Han state established the Mei-chuan Garrison to militarize and monopolize the lucrative pearl-diving operations in the Tai Po region, marking a pivotal step in the early administrative…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

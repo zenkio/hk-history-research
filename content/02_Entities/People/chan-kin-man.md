@@ -3,6 +3,7 @@ title: "Chan Kin-man (陳健民)"
 title_zh: "陳健民"
 tags: ["ai-draft", "chan-kin-man", "civil-disobedience", "hong-kong-politics", "occupy-central", "person", "sociology"]
 summary: "Chan Kin-man is a prominent Hong Kong sociologist and activist best known as a co-founder of the Occupy Central with Love and Peace movement."
+description: "Chan Kin-man is a prominent Hong Kong sociologist and activist best known as a co-founder of the Occupy Central with Love and Peace movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

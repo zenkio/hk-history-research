@@ -3,6 +3,7 @@ title: "None identified as primary individual actors in this specific local cont
 title_zh: "倭寇海盜入侵"
 tags: ["ai-draft", "coastal-defence", "hong-kong-history", "maritime-history", "ming-dynasty", "person", "wokou"]
 summary: "The Wokou incursions were maritime raids that impacted the coastal regions of the Pearl River Delta, including the territory that is now Hong Kong, during the Ming dynasty."
+description: "The Wokou incursions were maritime raids that impacted the coastal regions of the Pearl River Delta, including the territory that is now Hong Kong, during the Ming dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

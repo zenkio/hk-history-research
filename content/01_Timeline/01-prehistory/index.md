@@ -2,6 +2,7 @@
 title: "01 · Prehistory and early settlement (to 214 BCE)"
 tags: ["ai-draft", "archaeology", "baiyue", "bronze-age", "era-overview", "lingnan", "neolithic", "prehistory"]
 summary: "Before its integration into the imperial Chinese system, the region that became Hong Kong was shaped by dramatic environmental transformations and diverse maritime cultures. From Paleolithic toolmakers to the complex Baiyue societies of the Bronze Age, early inhabitants adapted to a dynamic coastal landscape."
+description: "Before its integration into the imperial Chinese system, the region that became Hong Kong was shaped by dramatic environmental transformations and diverse maritime cultures."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash
 ingested: 2026-09-23

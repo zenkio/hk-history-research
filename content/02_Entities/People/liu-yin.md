@@ -3,6 +3,7 @@ title: "Liu Yin (劉隱)"
 title_zh: "劉隱"
 tags: ["ai-draft", "five-dynasties", "lingnan-history", "pearl-river-delta", "person", "southern-han", "tang-dynasty"]
 summary: "Liu Yin was a regional warlord and military governor during the late Tang Dynasty and Five Dynasties period whose consolidation of the Lingnan region laid the foundations for the Southern Han Kingdom (南漢) and influenced the early administration of the Pearl River Delta."
+description: "Liu Yin was a regional warlord and military governor during the late Tang Dynasty and Five Dynasties period whose consolidation of the Lingnan region laid the foundations for the Southern Han Kingdom (南漢) and influenced…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

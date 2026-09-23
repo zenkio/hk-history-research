@@ -3,6 +3,7 @@ title: "Benny Tai (戴耀廷)"
 title_zh: "戴耀廷"
 tags: ["ai-draft", "benny-tai", "hong-kong-47", "legal-scholar", "person", "rule-of-law", "umbrella-movement"]
 summary: "Benny Tai Yiu-ting is a former Hong Kong legal scholar and activist whose advocacy for democratic reform and civil disobedience made him a central figure in the territory's political movements before his imprisonment under the National Security Law."
+description: "Benny Tai Yiu-ting is a former Hong Kong legal scholar and activist whose advocacy for democratic reform and civil disobedience made him a central figure in the territory's political movements before his imprisonment…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

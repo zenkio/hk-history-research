@@ -3,6 +3,7 @@ title: "Anglican Church (聖公會)"
 title_zh: "聖公會"
 tags: ["ai-draft", "anglican-church", "colonial-education", "diocesan-girls-school", "hong-kong-history", "person", "religious-history"]
 summary: "The Anglican Church played a foundational role in shaping Hong Kong's educational and social welfare infrastructure during the British colonial era."
+description: "The Anglican Church played a foundational role in shaping Hong Kong's educational and social welfare infrastructure during the British colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

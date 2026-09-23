@@ -3,6 +3,7 @@ title: "Maria Tam (譚惠珠)"
 title_zh: "譚惠珠"
 tags: ["ai-draft", "basic-law", "constitutional-law", "hong-kong-politics", "legal-history", "maria-tam", "person"]
 summary: "Maria Tam is a prominent Hong Kong barrister and politician who has played a significant role in the transition of sovereignty and the development of the city's constitutional framework."
+description: "Maria Tam is a prominent Hong Kong barrister and politician who has played a significant role in the transition of sovereignty and the development of the city's constitutional framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

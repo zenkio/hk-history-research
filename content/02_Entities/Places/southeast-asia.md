@@ -3,6 +3,7 @@ title: "Southeast Asia (南洋)"
 title_zh: "南洋"
 tags: ["ai-draft", "maritime-trade", "mercantile-history", "nam-pak-hong", "nanyang", "place", "trade-history"]
 summary: "The region known as Southeast Asia was a vital trading partner and destination for the diaspora that underpinned the economic prosperity of the Nam Pak Hong (南北行) trade in colonial Hong Kong."
+description: "The region known as Southeast Asia was a vital trading partner and destination for the diaspora that underpinned the economic prosperity of the Nam Pak Hong (南北行) trade in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

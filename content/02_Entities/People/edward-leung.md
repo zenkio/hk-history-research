@@ -3,6 +3,7 @@ title: "Edward Leung (梁天琦)"
 title_zh: "梁天琦"
 tags: ["ai-draft", "hong-kong-history", "localism", "mong-kok-clash", "person", "politics"]
 summary: "Edward Leung is a former activist and spokesperson for Hong Kong Indigenous who emerged as a prominent figure in the localist movement during the mid-2010s."
+description: "Edward Leung is a former activist and spokesperson for Hong Kong Indigenous who emerged as a prominent figure in the localist movement during the mid-2010s."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

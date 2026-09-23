@@ -6,6 +6,7 @@ year: 1857
 era: "The early colony"
 tags: ["1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
 summary: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
+description: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

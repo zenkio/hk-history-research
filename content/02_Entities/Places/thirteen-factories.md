@@ -3,6 +3,7 @@ title: "Thirteen Factories (十三行)"
 title_zh: "十三行"
 tags: ["ai-draft", "canton-system", "colonial-history", "compradors", "maritime-trade", "place", "qing-dynasty"]
 summary: "The Thirteen Factories served as the primary nexus for Western trade in southern China, establishing the commercial networks and fiscal structures that preceded the formation of colonial Hong Kong."
+description: "The Thirteen Factories served as the primary nexus for Western trade in southern China, establishing the commercial networks and fiscal structures that preceded the formation of colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1904
 era: "The New Territories lease and the early 20th century"
 tags: ["1904", "ai-draft", "colonial-history", "new-territories", "peak-district-reservation-ordinance", "racial-segregation", "urban-planning", "victoria-peak"]
 summary: "In 1904, the Hong Kong colonial government enacted the Peak District Reservation Ordinance, legally restricting residential settlement at Victoria Peak to non-Chinese Europeans and institutionalizing racial segregation in housing."
+description: "In 1904, the Hong Kong colonial government enacted the Peak District Reservation Ordinance, legally restricting residential settlement at Victoria Peak to non-Chinese Europeans and institutionalizing racial segregation…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

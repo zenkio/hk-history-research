@@ -3,6 +3,7 @@ title: "Ma Liu Shui (馬料水)"
 title_zh: "馬料水"
 tags: ["ai-draft", "cuhk", "ma-liu-shui", "new-territories", "place", "railway-history", "tolo-harbour"]
 summary: "Ma Liu Shui is a coastal area in the New Territories that became a vital educational and transportation hub, most notably serving as the founding site of the Chinese University of Hong Kong."
+description: "Ma Liu Shui is a coastal area in the New Territories that became a vital educational and transportation hub, most notably serving as the founding site of the Chinese University of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

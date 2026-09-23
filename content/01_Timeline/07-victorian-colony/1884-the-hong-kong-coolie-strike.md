@@ -6,6 +6,7 @@ year: 1884
 era: "Kowloon and the Victorian colony"
 tags: ["1884", "ai-draft", "british-colony", "coolie-strike", "labor-history", "sino-french-war", "victorian-colony"]
 summary: "In September 1884, Chinese cargo handlers and boatmen launched a general strike to protest British colonial policies and support China during the Sino-French War, marking a watershed moment in local working-class political consciousness."
+description: "In September 1884, Chinese cargo handlers and boatmen launched a general strike to protest British colonial policies and support China during the Sino-French War, marking a watershed moment in local working-class…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

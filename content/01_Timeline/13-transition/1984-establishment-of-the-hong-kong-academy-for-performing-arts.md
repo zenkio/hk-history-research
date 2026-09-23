@@ -6,6 +6,7 @@ year: 1984
 era: "Sino-British negotiations and the transition"
 tags: ["1984", "ai-draft", "colonial-era", "cultural-history", "education-policy", "hong-kong-1980s", "performing-arts", "transition"]
 summary: "Established in 1984, the Hong Kong Academy for Performing Arts (HKAPA) marked a pivotal shift toward the formalization and professional training of local talent in the performing arts."
+description: "Established in 1984, the Hong Kong Academy for Performing Arts (HKAPA) marked a pivotal shift toward the formalization and professional training of local talent in the performing arts."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

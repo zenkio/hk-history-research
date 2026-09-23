@@ -5,6 +5,7 @@ year: 500
 era: "Imperial frontier: Qin to Tang"
 tags: ["500", "ai-draft", "coastal-development", "imperial-frontier", "maritime-history", "qin-to-tang", "southern-dynasties", "trade-networks"]
 summary: "During the mid-6th century, the coastal region of modern-day Hong Kong emerged as a strategic transit hub for international maritime trade between Southeast Asia and Southern China."
+description: "During the mid-6th century, the coastal region of modern-day Hong Kong emerged as a strategic transit hub for international maritime trade between Southeast Asia and Southern China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1688
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1688", "ai-draft", "coastal-defense", "great-clearance", "hong-kong-history", "maritime-history", "ming-and-qing", "piracy", "qing-dynasty"]
 summary: "In 1688, the Qing government established a coastal watch station at Fat Tong Mun to secure maritime routes against piracy and consolidate regional control following the Great Clearance."
+description: "In 1688, the Qing government established a coastal watch station at Fat Tong Mun to secure maritime routes against piracy and consolidate regional control following the Great Clearance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

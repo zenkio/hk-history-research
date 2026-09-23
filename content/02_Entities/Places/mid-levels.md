@@ -3,6 +3,7 @@ title: "Mid-Levels (半山)"
 title_zh: "半山"
 tags: ["ai-draft", "colonial-history", "infrastructure", "mid-levels", "place", "urban-development", "victoria-peak"]
 summary: "Mid-Levels is an affluent residential area situated on the slopes of Victoria Peak, historically significant for its colonial-era European settlement and the opening of the Mid-Levels Escalator in 1993."
+description: "Mid-Levels is an affluent residential area situated on the slopes of Victoria Peak, historically significant for its colonial-era European settlement and the opening of the Mid-Levels Escalator in 1993."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

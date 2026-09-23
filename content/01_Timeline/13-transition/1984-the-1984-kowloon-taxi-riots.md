@@ -6,6 +6,7 @@ year: 1984
 era: "Sino-British negotiations and the transition"
 tags: ["1984", "ai-draft", "kowloon", "labor-strike", "sino-british-negotiations", "taxi-riots", "transition"]
 summary: "In January 1984, a strike by Hong Kong taxi drivers protesting government tax and license fee increases escalated into widespread rioting in Kowloon, exposing broader economic anxieties during the ongoing Sino-British negotiations."
+description: "In January 1984, a strike by Hong Kong taxi drivers protesting government tax and license fee increases escalated into widespread rioting in Kowloon, exposing broader economic anxieties during the ongoing Sino-British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

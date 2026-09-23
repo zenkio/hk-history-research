@@ -3,6 +3,7 @@ title: "Ronald Li Fook-shiu (李福兆)"
 title_zh: "李福兆"
 tags: ["ai-draft", "business", "colonial-era", "finance", "hong-kong-history", "person", "stock-exchange"]
 summary: "Ronald Li Fook-shiu was a prominent Hong Kong financier and the first chairman of the Stock Exchange of Hong Kong, instrumental in modernizing the local securities market before his career ended in a landmark corruption scandal."
+description: "Ronald Li Fook-shiu was a prominent Hong Kong financier and the first chairman of the Stock Exchange of Hong Kong, instrumental in modernizing the local securities market before his career ended in a landmark corruption…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Sir Michael Seymour (西摩爾)"
 title_zh: "西摩爾"
 tags: ["ai-draft", "arrow-incident", "british-colonialism", "hong-kong-history", "person", "royal-navy", "second-opium-war"]
 summary: "Sir Michael Seymour was a British Admiral who commanded the naval forces during the early stages of the Second Opium War, playing a pivotal role in military escalations that directly impacted Hong Kong's security and trade."
+description: "Sir Michael Seymour was a British Admiral who commanded the naval forces during the early stages of the Second Opium War, playing a pivotal role in military escalations that directly impacted Hong Kong's security and…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

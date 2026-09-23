@@ -3,6 +3,7 @@ title: "Kitasato Shibasaburō (北里柴三郎)"
 title_zh: "北里柴三郎"
 tags: ["1894-plague", "ai-draft", "bacteriology", "hong-kong-history", "medical-science", "person", "public-health"]
 summary: "A prominent Japanese physician and bacteriologist whose competing research during the 1894 Hong Kong plague outbreak sparked an enduring international scientific controversy."
+description: "A prominent Japanese physician and bacteriologist whose competing research during the 1894 Hong Kong plague outbreak sparked an enduring international scientific controversy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1792
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1792", "ai-draft", "cheung-chau", "epidemics", "intangible-heritage", "jiao-festival", "ming-and-qing", "pak-tai", "qing-dynasty"]
 summary: "In 1792, fishermen and residents of Cheung Chau established communal Taoist rituals dedicated to Pak Tai to combat severe plagues and appease wandering maritime spirits, laying the foundation for an enduring cultural tradition."
+description: "In 1792, fishermen and residents of Cheung Chau established communal Taoist rituals dedicated to Pak Tai to combat severe plagues and appease wandering maritime spirits, laying the foundation for an enduring cultural…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

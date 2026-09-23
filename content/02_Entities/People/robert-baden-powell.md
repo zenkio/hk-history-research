@@ -3,6 +3,7 @@ title: "Robert Baden-Powell"
 title_zh: "羅伯特·貝登堡"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "education", "person", "scouting", "social-organizations"]
 summary: "As the founder of the international Scout Movement, Robert Baden-Powell served as the intellectual architect for the establishment of scouting in Hong Kong, an organization that evolved to reflect both colonial educational values and local community identity."
+description: "As the founder of the international Scout Movement, Robert Baden-Powell served as the intellectual architect for the establishment of scouting in Hong Kong, an organization that evolved to reflect both colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

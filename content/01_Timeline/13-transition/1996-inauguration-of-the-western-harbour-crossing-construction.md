@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1990s", "1996", "ai-draft", "british-hong-kong", "infrastructure", "transition", "transition-period", "transport-history", "urban-development"]
 summary: "In 1996, construction commenced on the Western Harbour Crossing (西區海底隧道), the final major infrastructure project initiated by the British colonial administration before the 1997 handover."
+description: "In 1996, construction commenced on the Western Harbour Crossing (西區海底隧道), the final major infrastructure project initiated by the British colonial administration before the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

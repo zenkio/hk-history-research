@@ -3,6 +3,7 @@ title: "Guanfu Salt Field (官富場)"
 title_zh: "官富場"
 tags: ["ai-draft", "economic-history", "hong-kong-history", "place", "salt-industry", "song-dynasty", "yuan-dynasty"]
 summary: "Guanfu Salt Field was a major salt production site during the Song and Yuan dynasties that established early state-led economic activity in the coastal waters of present-day Hong Kong."
+description: "Guanfu Salt Field was a major salt production site during the Song and Yuan dynasties that established early state-led economic activity in the coastal waters of present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

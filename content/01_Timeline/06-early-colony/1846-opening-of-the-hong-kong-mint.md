@@ -6,6 +6,7 @@ year: 1846
 era: "The early colony"
 tags: ["1846", "ai-draft", "colonial-history", "early-colony", "economic-development", "monetary-policy", "trade-history"]
 summary: "In 1846, the colonial government initiated the establishment of a local mint in Hong Kong to address currency shortages and standardize trade mediums."
+description: "In 1846, the colonial government initiated the establishment of a local mint in Hong Kong to address currency shortages and standardize trade mediums."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

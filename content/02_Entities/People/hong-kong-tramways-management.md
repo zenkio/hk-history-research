@@ -3,6 +3,7 @@ title: "Hong Kong Tramways Management"
 title_zh: "香港電車管理層"
 tags: ["1913", "ai-draft", "colonial-history", "hong-kong-tramways", "labor-strike", "person"]
 summary: "Hong Kong Tramways Management directed the operations of the iconic public transport system during a period of intense labor disputes, most notably the Great Tramway Strike of **1913**."
+description: "Hong Kong Tramways Management directed the operations of the iconic public transport system during a period of intense labor disputes, most notably the Great Tramway Strike of 1913."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

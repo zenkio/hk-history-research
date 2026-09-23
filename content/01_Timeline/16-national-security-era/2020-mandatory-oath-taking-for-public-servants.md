@@ -6,6 +6,7 @@ year: 2020
 era: "The National Security Law era"
 tags: ["2020", "ai-draft", "basic-law", "civil-service", "hksar-government", "national-security-era", "national-security-law", "political-loyalty"]
 summary: "In October 2020, the Hong Kong government mandated that all civil servants take an oath or sign a declaration to uphold the Basic Law and swear allegiance to the HKSAR."
+description: "In October 2020, the Hong Kong government mandated that all civil servants take an oath or sign a declaration to uphold the Basic Law and swear allegiance to the HKSAR."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -1500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "fishing-economy", "maritime-history", "neolithic-era", "prehistory"]
 summary: "Around 1500 BCE, improvements in maritime technology enabled Neolithic populations in Hong Kong to transition from sheltered coastal foraging to deep-sea fishing."
+description: "Around 1500 BCE, improvements in maritime technology enabled Neolithic populations in Hong Kong to transition from sheltered coastal foraging to deep-sea fishing."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

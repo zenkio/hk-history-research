@@ -6,6 +6,7 @@ year: 1982
 era: "Riots and the MacLehose reforms"
 tags: ["1982", "1997-handover", "ai-draft", "cold-war-diplomacy", "colonial-history", "riots-and-reform", "sino-british-negotiations", "sovereignty"]
 summary: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the New Territories lease."
+description: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

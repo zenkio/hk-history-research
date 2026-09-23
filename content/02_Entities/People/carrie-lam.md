@@ -3,6 +3,7 @@ title: "Carrie Lam (林鄭月娥)"
 title_zh: "林鄭月娥"
 tags: ["2019-protests", "ai-draft", "chief-executive", "civil-service", "hong-kong-history", "person", "politics"]
 summary: "Carrie Lam served as the fourth Chief Executive of Hong Kong from 2017 to 2022, presiding over one of the most turbulent periods in the city's modern history."
+description: "Carrie Lam served as the fourth Chief Executive of Hong Kong from 2017 to 2022, presiding over one of the most turbulent periods in the city's modern history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

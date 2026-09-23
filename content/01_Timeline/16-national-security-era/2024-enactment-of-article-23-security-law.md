@@ -6,6 +6,7 @@ year: 2024
 era: "The National Security Law era"
 tags: ["2024", "ai-draft", "article-23", "basic-law", "hong-kong-politics", "legislation", "national-security", "national-security-era"]
 summary: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
+description: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

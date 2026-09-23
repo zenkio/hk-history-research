@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonial-history", "first-opium-war", "infrastructure", "opium-war", "queens-road", "urban-development"]
 summary: "In June 1841, British authorities and local labourers began the construction of Queen's Road, marking the creation of Hong Kong Island's first major arterial thoroughfare and laying the physical foundation for early colonial urban development."
+description: "In June 1841, British authorities and local labourers began the construction of Queen's Road, marking the creation of Hong Kong Island's first major arterial thoroughfare and laying the physical foundation for early…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

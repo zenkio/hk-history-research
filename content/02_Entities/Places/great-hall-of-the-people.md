@@ -3,6 +3,7 @@ title: "Great Hall of the People (人民大會堂)"
 title_zh: "人民大會堂"
 tags: ["ai-draft", "basic-law", "beijing", "constitutional-history", "hong-kong-history", "one-country-two-systems", "place"]
 summary: "The Great Hall of the People in Beijing is the site where the National People's Congress meets and where the Hong Kong Basic Law was formally promulgated in 1990."
+description: "The Great Hall of the People in Beijing is the site where the National People's Congress meets and where the Hong Kong Basic Law was formally promulgated in 1990."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

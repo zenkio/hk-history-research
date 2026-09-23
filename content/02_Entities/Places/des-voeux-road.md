@@ -3,6 +3,7 @@ title: "Des Voeux Road (德輔道)"
 title_zh: "德輔道"
 tags: ["ai-draft", "central-district", "colonial-history", "hong-kong-island", "infrastructure", "place", "urban-development"]
 summary: "Des Voeux Road is a major thoroughfare in Central and Western District, representing a pivotal outcome of the Praya Reclamation Scheme that fundamentally reshaped Hong Kong's waterfront."
+description: "Des Voeux Road is a major thoroughfare in Central and Western District, representing a pivotal outcome of the Praya Reclamation Scheme that fundamentally reshaped Hong Kong's waterfront."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

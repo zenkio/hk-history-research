@@ -3,6 +3,7 @@ title: "Andy Lau (劉德華)"
 title_zh: "劉德華"
 tags: ["1990s", "ai-draft", "andy-lau", "cantopop", "four-heavenly-kings", "hong-kong-cinema", "person"]
 summary: "Andy Lau is an iconic Hong Kong actor, singer, and cultural figure who rose to prominence as one of Cantopop's 'Four Heavenly Kings' in the 1990s."
+description: "Andy Lau is an iconic Hong Kong actor, singer, and cultural figure who rose to prominence as one of Cantopop's 'Four Heavenly Kings' in the 1990s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

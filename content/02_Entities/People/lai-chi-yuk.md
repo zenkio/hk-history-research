@@ -3,6 +3,7 @@ title: "Lai Chi-yuk (賴際熙)"
 title_zh: "賴際熙"
 tags: ["ai-draft", "chinese-education", "colonial-era", "hong-kong-history", "intellectual-history", "person", "qing-scholar"]
 summary: "A prominent Qing dynasty scholar who relocated to Hong Kong and played a pivotal role in the preservation of traditional Chinese learning and the establishment of the University of Hong Kong's Chinese department."
+description: "A prominent Qing dynasty scholar who relocated to Hong Kong and played a pivotal role in the preservation of traditional Chinese learning and the establishment of the University of Hong Kong's Chinese department."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

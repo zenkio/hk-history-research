@@ -2,7 +2,8 @@
 title: "Historical Analysis of HMS Marlborough and the Battle of Hong Kong"
 date: 1855-01-01
 tags: ["1855", "1924", "1941", "battle-of-hong-kong", "hms-marlborough", "military-history", "pacific-war", "royal-navy"]
-summary: "Launched in **1855**, **HMS Marlborough** served as a prominent **First Rate** battleship and flagship of the Mediterran"
+summary: "Launched in 1855, HMS Marlborough served as a prominent First Rate battleship and flagship of the Mediterranean Fleet until 1864."
+description: "Launched in 1855, HMS Marlborough served as a prominent First Rate battleship and flagship of the Mediterranean Fleet until 1864."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2024/04/hms-marlborough-1855-1924.html"

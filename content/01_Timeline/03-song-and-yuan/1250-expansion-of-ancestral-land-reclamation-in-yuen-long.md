@@ -6,6 +6,7 @@ year: 1250
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1250", "agricultural-history", "ai-draft", "clans", "land-reclamation", "lineage-culture", "medieval-china", "song-and-yuan", "yuen-long"]
 summary: "During the mid-13th century, expanding clans in the Yuen Long plain systematically transformed coastal wetlands into productive agricultural land. This transition established the economic and social foundations for the lineage-based village structures that persist today."
+description: "During the mid-13th century, expanding clans in the Yuen Long plain systematically transformed coastal wetlands into productive agricultural land."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

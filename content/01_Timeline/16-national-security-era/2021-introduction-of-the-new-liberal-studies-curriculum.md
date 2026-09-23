@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "curriculum-development", "education-reform", "hong-kong-history", "liberal-studies", "national-security-era", "national-security-law"]
 summary: "In April 2021, the Education Bureau announced the replacement of the Liberal Studies curriculum with the Citizenship and Social Development (CSD) subject. This shift represented a major overhaul of the secondary school senior curriculum in alignment with the National Security Law."
+description: "In April 2021, the Education Bureau announced the replacement of the Liberal Studies curriculum with the Citizenship and Social Development (CSD) subject."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

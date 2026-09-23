@@ -6,6 +6,7 @@ year: 1688
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1688", "ai-draft", "genealogy", "imperial-administration", "local-history", "ming-and-qing", "qing-dynasty", "xin-an-gazetteer"]
 summary: "In 1688, the Qing administration published the first surviving edition of the Xin'an County Gazetteer, providing a foundational written record of the villages, clan geography, and customs of the region covering modern-day Hong Kong."
+description: "In 1688, the Qing administration published the first surviving edition of the Xin'an County Gazetteer, providing a foundational written record of the villages, clan geography, and customs of the region covering…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Au Tai-tin (區大典)"
 title_zh: "區大典"
 tags: ["ai-draft", "chinese-studies", "colonial-era", "confucianism", "education-history", "hong-kong-scholars", "person"]
 summary: "Au Tai-tin was a prominent Qing dynasty scholar and educator who played a significant role in the development of Confucian studies in early 20th-century Hong Kong."
+description: "Au Tai-tin was a prominent Qing dynasty scholar and educator who played a significant role in the development of Confucian studies in early 20th-century Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

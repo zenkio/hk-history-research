@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "early-hksar", "hksar-history", "human-rights", "legislation", "legislative-council", "racial-equality"]
 summary: "On July 10, 2008, the Legislative Council of Hong Kong passed the Race Discrimination Ordinance, marking the first time the territory established comprehensive legal protections against racial discrimination."
+description: "On July 10, 2008, the Legislative Council of Hong Kong passed the Race Discrimination Ordinance, marking the first time the territory established comprehensive legal protections against racial discrimination."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

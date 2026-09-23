@@ -5,6 +5,7 @@ year: 850
 era: "Imperial frontier: Qin to Tang"
 tags: ["850", "agarwood", "ai-draft", "coastal-villages", "economic-history", "imperial-frontier", "maritime-trade", "qin-to-tang", "tang-dynasty"]
 summary: "During the late Tang Dynasty, the cultivation and processing of agarwood transformed coastal settlements in the Hong Kong region into vital nodes of the maritime silk trade."
+description: "During the late Tang Dynasty, the cultivation and processing of agarwood transformed coastal settlements in the Hong Kong region into vital nodes of the maritime silk trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

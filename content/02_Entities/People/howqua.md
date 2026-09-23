@@ -3,6 +3,7 @@ title: "Howqua (伍秉鑒)"
 title_zh: "伍秉鑒"
 tags: ["ai-draft", "canton-system", "cohong", "jardine-matheson", "person", "qing-dynasty", "trade-history"]
 summary: "Howqua was the most prominent merchant of the Cohong in Canton, whose vast wealth and trade networks provided the essential capital and logistical foundation for the early development of Hong Kong as a treaty port."
+description: "Howqua was the most prominent merchant of the Cohong in Canton, whose vast wealth and trade networks provided the essential capital and logistical foundation for the early development of Hong Kong as a treaty port."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

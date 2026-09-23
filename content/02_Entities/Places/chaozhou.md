@@ -3,6 +3,7 @@ title: "Chaozhou (潮州)"
 title_zh: "潮州"
 tags: ["ai-draft", "chaozhou", "cultural-history", "diaspora", "guangdong", "migration", "place"]
 summary: "Chaozhou is a cultural and historical center in eastern Guangdong whose diaspora has played a significant role in the socio-economic and religious development of Hong Kong."
+description: "Chaozhou is a cultural and historical center in eastern Guangdong whose diaspora has played a significant role in the socio-economic and religious development of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

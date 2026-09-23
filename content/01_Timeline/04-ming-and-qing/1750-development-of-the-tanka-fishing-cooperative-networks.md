@@ -6,6 +6,7 @@ year: 1750
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1750", "ai-draft", "coastal-economy", "fishing-cooperatives", "maritime-history", "ming-and-qing", "qing-dynasty", "tanka-people"]
 summary: "Between 1750 and 1800, the Tanka boat people consolidated complex maritime networks that facilitated regional trade and deep-sea fishing, anchoring the coastal economy of the Pearl River Delta."
+description: "Between 1750 and 1800, the Tanka boat people consolidated complex maritime networks that facilitated regional trade and deep-sea fishing, anchoring the coastal economy of the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

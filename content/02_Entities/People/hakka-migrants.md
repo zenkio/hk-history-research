@@ -3,6 +3,7 @@ title: "Hakka Migrants (客家移民)"
 title_zh: "客家移民"
 tags: ["ai-draft", "hakka", "migration", "new-territories", "ngau-chi-wan", "person", "qing-dynasty"]
 summary: "Hakka migrants played a foundational role in the rural demographic and agricultural development of Hong Kong, particularly in the New Territories and urban fringe settlements like Ngau Chi Wan."
+description: "Hakka migrants played a foundational role in the rural demographic and agricultural development of Hong Kong, particularly in the New Territories and urban fringe settlements like Ngau Chi Wan."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

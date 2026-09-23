@@ -6,6 +6,7 @@ year: 2016
 era: "Political contention and protest"
 tags: ["2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
 summary: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into hours of street battles between protesters and police."
+description: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

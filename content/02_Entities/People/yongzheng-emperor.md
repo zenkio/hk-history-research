@@ -3,6 +3,7 @@ title: "Yongzheng Emperor (雍正帝)"
 title_zh: "雍正帝"
 tags: ["ai-draft", "hong-kong-history", "imperial-edicts", "person", "qing-dynasty", "tanka-people", "yongzheng-emperor"]
 summary: "The Yongzheng Emperor was a Qing dynasty ruler whose 1729 edict aimed to integrate marginalized maritime populations, including those in the waters around Hong Kong, into the imperial tax and household registration systems."
+description: "The Yongzheng Emperor was a Qing dynasty ruler whose 1729 edict aimed to integrate marginalized maritime populations, including those in the waters around Hong Kong, into the imperial tax and household registration…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

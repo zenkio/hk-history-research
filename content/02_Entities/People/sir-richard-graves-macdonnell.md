@@ -3,6 +3,7 @@ title: "Sir Richard Graves MacDonnell (麥理Donnell)"
 title_zh: "麥當奴"
 tags: ["ai-draft", "colonial-history", "governor-of-hong-kong", "hong-kong-history", "nineteenth-century", "person", "public-policy"]
 summary: "Sir Richard Graves MacDonnell was the sixth Governor of Hong Kong, serving from 1866 to 1872, known for his fiscal reforms and the controversial implementation of the Contagious Diseases Ordinance."
+description: "Sir Richard Graves MacDonnell was the sixth Governor of Hong Kong, serving from 1866 to 1872, known for his fiscal reforms and the controversial implementation of the Contagious Diseases Ordinance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Alexander Matheson (渣甸·馬地臣)"
 title_zh: "渣甸·馬地臣"
 tags: ["ai-draft", "colonial-history", "hong-kong-founders", "jardine-matheson", "mercantile-era", "person", "trade-history"]
 summary: "A pivotal Scottish merchant and co-founder of Jardine, Matheson & Co., who played a foundational role in the establishment of Hong Kong's commercial infrastructure."
+description: "A pivotal Scottish merchant and co-founder of Jardine, Matheson & Co., who played a foundational role in the establishment of Hong Kong's commercial infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1985
 era: "Sino-British negotiations and the transition"
 tags: ["1985", "ai-draft", "functional-constituencies", "indirect-elections", "legislative-council", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation during the transitional period."
+description: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

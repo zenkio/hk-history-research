@@ -1,7 +1,8 @@
 ---
 title: "Historical Development of Airport Apron Buses in Hong Kong"
 tags: ["airport-apron-buses", "aviation-infrastructure", "hong-kong-industry", "transport-history"]
-summary: "The **Industrial History of Hong Kong Group** identifies airport apron buses as a component of the territory's forgotten"
+summary: "The Industrial History of Hong Kong Group identifies airport apron buses as a component of the territory's forgotten transportation history."
+description: "The Industrial History of Hong Kong Group identifies airport apron buses as a component of the territory's forgotten transportation history."
 confidence: medium
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/airport-apron-buses/"

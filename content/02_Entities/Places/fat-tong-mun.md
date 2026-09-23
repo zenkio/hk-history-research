@@ -3,6 +3,7 @@ title: "Fat Tong Mun (佛堂門)"
 title_zh: "佛堂門"
 tags: ["ai-draft", "coastal-defense", "hong-kong-geography", "maritime-history", "new-territories", "place", "qing-dynasty"]
 summary: "Fat Tong Mun is a strategic maritime channel between the Clear Water Bay Peninsula and Tung Lung Chau, historically significant as a gateway for navigation and coastal defense in the Pearl River Delta."
+description: "Fat Tong Mun is a strategic maritime channel between the Clear Water Bay Peninsula and Tung Lung Chau, historically significant as a gateway for navigation and coastal defense in the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

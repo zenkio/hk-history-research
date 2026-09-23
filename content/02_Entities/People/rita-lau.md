@@ -3,6 +3,7 @@ title: "Rita Lau (劉吳惠蘭)"
 title_zh: "劉吳惠蘭"
 tags: ["ai-draft", "civil-service", "commerce-and-economic-development", "digital-television", "hong-kong-government", "person", "public-policy"]
 summary: "Rita Lau Ng Wai-lan is a former senior Hong Kong government official who served as the Secretary for Commerce and Economic Development."
+description: "Rita Lau Ng Wai-lan is a former senior Hong Kong government official who served as the Secretary for Commerce and Economic Development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

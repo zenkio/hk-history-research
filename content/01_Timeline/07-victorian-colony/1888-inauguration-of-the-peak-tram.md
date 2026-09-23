@@ -6,6 +6,7 @@ year: 1888
 era: "Kowloon and the Victorian colony"
 tags: ["1888", "ai-draft", "colonial-history", "peak-tram", "transportation", "urban-development", "victorian-colony"]
 summary: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
+description: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

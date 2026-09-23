@@ -3,6 +3,7 @@ title: "Lee Ngai (李我)"
 title_zh: "李我"
 tags: ["ai-draft", "cantonese-culture", "history", "lee-ngai", "mass-media", "person", "radio-broadcasting"]
 summary: "Lee Ngai was a pioneering Hong Kong radio broadcaster and scriptwriter famed for his 'talking whole plays' (講敘單人肉搏劇) storytelling style, which significantly shaped local popular culture and mass media in the mid-20th century."
+description: "Lee Ngai was a pioneering Hong Kong radio broadcaster and scriptwriter famed for his 'talking whole plays' (講敘單人肉搏劇) storytelling style, which significantly shaped local popular culture and mass media in the mid-20th…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

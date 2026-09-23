@@ -3,6 +3,7 @@ title: "Peninsula Hotel (半島酒店)"
 title_zh: "半島酒店"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "landmark", "place", "tsim-sha-tsui", "world-war-ii"]
 summary: "Opened in 1928, the Peninsula Hotel is a historic landmark in Tsim Sha Tsui that served as a central site for the British colonial administration and, notably, as the location of the formal surrender to Japanese forces in 1941."
+description: "Opened in 1928, the Peninsula Hotel is a historic landmark in Tsim Sha Tsui that served as a central site for the British colonial administration and, notably, as the location of the formal surrender to Japanese forces…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

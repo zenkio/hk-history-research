@@ -3,6 +3,7 @@ title: "Sir Cecil Clementi (金文泰)"
 title_zh: "金文泰"
 tags: ["ai-draft", "british-hong-kong", "clementi-middle-school", "colonial-history", "education-reform", "hong-kong-governors", "person"]
 summary: "Sir Cecil Clementi was the 17th Governor of Hong Kong, remembered for his promotion of Chinese culture and his complex role in navigating colonial administration during a period of rising nationalism."
+description: "Sir Cecil Clementi was the 17th Governor of Hong Kong, remembered for his promotion of Chinese culture and his complex role in navigating colonial administration during a period of rising nationalism."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

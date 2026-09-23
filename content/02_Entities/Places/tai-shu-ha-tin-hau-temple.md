@@ -3,6 +3,7 @@ title: "Tai Shu Ha Tin Hau Temple (大樹下天后廟)"
 title_zh: "大樹下天后廟"
 tags: ["ai-draft", "local-history", "new-territories", "place", "shap-pat-heung", "tin-hau-temple", "yuen-long"]
 summary: "The Tai Shu Ha Tin Hau Temple in Yuen Long is a historically significant coastal deity temple that served as the religious and administrative focal point for the powerful Shap Pat Heung alliance in the New Territories."
+description: "The Tai Shu Ha Tin Hau Temple in Yuen Long is a historically significant coastal deity temple that served as the religious and administrative focal point for the powerful Shap Pat Heung alliance in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

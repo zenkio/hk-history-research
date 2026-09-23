@@ -6,6 +6,7 @@ year: 1860
 era: "The early colony"
 tags: ["1860", "ai-draft", "british-colony", "convention-of-peking", "early-colony", "harry-parkes", "kowloon-peninsula", "second-opium-war"]
 summary: "In March 1860, British diplomat Harry Parkes secured a perpetual lease of the Kowloon Peninsula, expanding the fledgling colony's territory to improve harbor defense and alleviate severe overcrowding on Hong Kong Island."
+description: "In March 1860, British diplomat Harry Parkes secured a perpetual lease of the Kowloon Peninsula, expanding the fledgling colony's territory to improve harbor defense and alleviate severe overcrowding on Hong Kong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

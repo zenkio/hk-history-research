@@ -5,6 +5,7 @@ year: 850
 era: "Imperial frontier: Qin to Tang"
 tags: ["850", "ai-draft", "coastal-trade", "cultural-heritage", "maritime-history", "qin-to-tang", "tang-dynasty"]
 summary: "During the late Tang Dynasty, the expansion of maritime trade led to the establishment of religious and logistical sites along the coastal waters of Hong Kong."
+description: "During the late Tang Dynasty, the expansion of maritime trade led to the establishment of religious and logistical sites along the coastal waters of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

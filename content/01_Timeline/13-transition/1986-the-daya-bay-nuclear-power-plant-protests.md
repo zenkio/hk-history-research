@@ -6,6 +6,7 @@ year: 1986
 era: "Sino-British negotiations and the transition"
 tags: ["1986", "ai-draft", "civic-mobilization", "daya-bay", "environmentalism", "protests", "sino-british-transition", "transition"]
 summary: "In 1986, public anxiety over the construction of the Daya Bay Nuclear Power Plant led to an unprecedented petition movement in Hong Kong, marking a watershed moment for local civic mobilization and environmental awareness during the Sino-British transition."
+description: "In 1986, public anxiety over the construction of the Daya Bay Nuclear Power Plant led to an unprecedented petition movement in Hong Kong, marking a watershed moment for local civic mobilization and environmental…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

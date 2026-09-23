@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1930s", "1935", "ai-draft", "architecture", "colonial-history", "financial-history", "hsbc", "interwar"]
 summary: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
+description: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

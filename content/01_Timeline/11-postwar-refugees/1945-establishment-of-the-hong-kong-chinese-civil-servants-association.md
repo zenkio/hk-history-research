@@ -6,6 +6,7 @@ year: 1945
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1945", "ai-draft", "civil-service", "colonial-administration", "labor-history", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
 summary: "The founding of the Hong Kong Chinese Civil Servants' Association in late 1945 marked a crucial early milestone in local labor organization and representation for Chinese employees within the colonial administration."
+description: "The founding of the Hong Kong Chinese Civil Servants' Association in late 1945 marked a crucial early milestone in local labor organization and representation for Chinese employees within the colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

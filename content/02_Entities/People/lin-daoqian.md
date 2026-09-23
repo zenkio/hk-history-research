@@ -3,6 +3,7 @@ title: "Lin Daoqian (林道乾)"
 title_zh: "林道乾"
 tags: ["ai-draft", "hong-kong-history", "lantau-island", "lin-daoqian", "ming-dynasty", "person", "piracy"]
 summary: "Lin Daoqian was a 16th-century maritime figure and pirate leader whose interactions with the Ming dynasty and coastal communities brought him into the waters around present-day Hong Kong."
+description: "Lin Daoqian was a 16th-century maritime figure and pirate leader whose interactions with the Ming dynasty and coastal communities brought him into the waters around present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1900
 era: "The New Territories lease and the early 20th century"
 tags: ["1900", "ai-draft", "british-colonial-history", "huizhou-uprising", "new-territories", "qing-dynasty", "revive-china-society", "sun-yat-sen"]
 summary: "In October 1900, **Sun Yat-sen** and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal role in early Chinese revolutionary history."
+description: "In October 1900, Sun Yat-sen and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

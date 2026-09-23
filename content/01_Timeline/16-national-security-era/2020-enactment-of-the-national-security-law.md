@@ -6,6 +6,7 @@ year: 2020
 era: "The National Security Law era"
 tags: ["2020", "ai-draft", "civil-liberties", "legal-system", "national-security-era", "national-security-law", "one-country-two-systems"]
 summary: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, marking a fundamental turning point in the city's legal and political landscape."
+description: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, marking a fundamental turning point in the city's legal and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

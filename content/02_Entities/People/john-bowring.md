@@ -3,6 +3,7 @@ title: "John Bowring (寶寧)"
 title_zh: "寶寧"
 tags: ["ai-draft", "british-empire", "colonial-history", "education-reform", "governors-of-hong-kong", "nineteenth-century", "person"]
 summary: "Sir John Bowring served as the fourth Governor of Hong Kong from 1854 to 1859 and was a pivotal figure in the development of colonial administration and early public education initiatives."
+description: "Sir John Bowring served as the fourth Governor of Hong Kong from 1854 to 1859 and was a pivotal figure in the development of colonial administration and early public education initiatives."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

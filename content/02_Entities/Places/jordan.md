@@ -3,6 +3,7 @@ title: "Jordan (佐敦)"
 title_zh: "佐敦"
 tags: ["ai-draft", "colonial-history", "kowloon", "place", "social-unrest", "urban-development", "yau-tsim-mong"]
 summary: "Jordan is a vibrant, densely populated district in Yau Tsim Mong known for its historical role as a commercial hub and its significance during mid-20th-century social unrest."
+description: "Jordan is a vibrant, densely populated district in Yau Tsim Mong known for its historical role as a commercial hub and its significance during mid-20th-century social unrest."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

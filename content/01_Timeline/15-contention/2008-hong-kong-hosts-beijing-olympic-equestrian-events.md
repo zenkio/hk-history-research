@@ -6,6 +6,7 @@ year: 2008
 era: "Political contention and protest"
 tags: ["2008", "ai-draft", "civic-pride", "contention", "equestrian", "hong-kong-jockey-club", "olympic-games"]
 summary: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
+description: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

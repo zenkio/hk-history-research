@@ -5,6 +5,7 @@ year: -2000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "early-agriculture", "neolithic-period", "pearl-river-delta", "prehistory", "subsistence-strategies"]
 summary: "Between 2000 BCE and 1500 BCE, evidence of micro-remains suggests that Neolithic inhabitants of Hong Kong began diversifying their subsistence strategies beyond maritime foraging."
+description: "Between 2000 BCE and 1500 BCE, evidence of micro-remains suggests that Neolithic inhabitants of Hong Kong began diversifying their subsistence strategies beyond maritime foraging."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

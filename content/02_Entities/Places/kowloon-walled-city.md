@@ -3,6 +3,7 @@ title: "Kowloon Walled City (九龍寨城)"
 title_zh: "九龍寨城"
 tags: ["ai-draft", "colonial-history", "hong-kong-history", "kowloon", "place", "qing-dynasty", "urban-planning"]
 summary: "Kowloon Walled City was a densely populated, ungoverned enclave in Kowloon that served as a unique point of diplomatic friction between the British colonial government and the Qing dynasty (and later the People's Republic of China)."
+description: "Kowloon Walled City was a densely populated, ungoverned enclave in Kowloon that served as a unique point of diplomatic friction between the British colonial government and the Qing dynasty (and later the People's…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "James Legge (理雅各)"
 title_zh: "理雅各"
 tags: ["ai-draft", "education", "hong-kong-history", "missionary", "person", "sinology", "translation"]
 summary: "James Legge was a Scottish missionary and scholar whose bilingual translations of Chinese classics in Hong Kong significantly shaped Western academic understanding of Chinese culture."
+description: "James Legge was a Scottish missionary and scholar whose bilingual translations of Chinese classics in Hong Kong significantly shaped Western academic understanding of Chinese culture."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

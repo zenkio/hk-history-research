@@ -6,6 +6,7 @@ year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1937", "ai-draft", "architecture", "colonial-history", "heritage-conservation", "interwar", "king-yin-lei", "mid-levels"]
 summary: "Completed in 1937, the King Yin Lei mansion in Mid-Levels stands as a prominent example of Chinese Renaissance architecture, commissioned by wealthy industrialists during a period of economic growth in colonial Hong Kong."
+description: "Completed in 1937, the King Yin Lei mansion in Mid-Levels stands as a prominent example of Chinese Renaissance architecture, commissioned by wealthy industrialists during a period of economic growth in colonial Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

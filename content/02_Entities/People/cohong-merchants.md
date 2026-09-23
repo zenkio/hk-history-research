@@ -3,6 +3,7 @@ title: "Cohong merchants (公行)"
 title_zh: "公行"
 tags: ["ai-draft", "canton-system", "economic-history", "hong-kong-history", "person", "qing-dynasty", "trade-monopoly"]
 summary: "A guild of licensed Chinese merchants in Canton (廣州) who held a monopoly on foreign trade, whose restrictive practices contributed to the tensions leading to the British acquisition of Hong Kong."
+description: "A guild of licensed Chinese merchants in Canton (廣州) who held a monopoly on foreign trade, whose restrictive practices contributed to the tensions leading to the British acquisition of Hong Kong."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

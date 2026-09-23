@@ -3,6 +3,7 @@ title: "Norman Chan (陳德霖)"
 title_zh: "陳德霖"
 tags: ["ai-draft", "banking", "civil-service", "finance", "hkma", "hong-kong-history", "person"]
 summary: "Norman Chan is a prominent Hong Kong civil servant and banker who served as the Chief Executive of the Hong Kong Monetary Authority from 2009 to 2019, playing a critical role in the city's financial stability and digital payment evolution."
+description: "Norman Chan is a prominent Hong Kong civil servant and banker who served as the Chief Executive of the Hong Kong Monetary Authority from 2009 to 2019, playing a critical role in the city's financial stability and…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

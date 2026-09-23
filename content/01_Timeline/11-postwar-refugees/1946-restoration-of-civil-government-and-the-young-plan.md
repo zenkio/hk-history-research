@@ -6,6 +6,7 @@ year: 1946
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1946", "ai-draft", "british-colonial-history", "civil-government", "constitutional-reform", "postwar-hong-kong", "postwar-refugees", "young-plan"]
 summary: "Following the end of Japanese occupation, civilian administration was restored in Hong Kong under Governor Sir Mark Young, who proposed limited political reforms for greater local representation that were ultimately shelved."
+description: "Following the end of Japanese occupation, civilian administration was restored in Hong Kong under Governor Sir Mark Young, who proposed limited political reforms for greater local representation that were ultimately…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

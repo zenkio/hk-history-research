@@ -3,6 +3,7 @@ title: "Emperor Duanzong (宋端宗)"
 title_zh: "宋端宗"
 tags: ["ai-draft", "emperor-duanzong", "hong-kong-history", "kowloon", "person", "sacred-hill", "southern-song"]
 summary: "Emperor Duanzong of the Southern Song dynasty was a child monarch whose fleeing imperial court sought refuge in the territory of modern-day Hong Kong while escaping advancing Mongol forces."
+description: "Emperor Duanzong of the Southern Song dynasty was a child monarch whose fleeing imperial court sought refuge in the territory of modern-day Hong Kong while escaping advancing Mongol forces."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

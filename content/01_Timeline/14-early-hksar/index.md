@@ -2,6 +2,7 @@
 title: "14 · The early HKSAR (1997-2008)"
 tags: ["ai-draft", "article-23", "era-overview", "hksar-history", "hong-kong-economy", "one-country-two-systems", "sars-2003"]
 summary: "This foundational decade of the Hong Kong Special Administrative Region tested the 'One Country, Two Systems' framework through profound economic shocks, public health crises, and intense political mobilization. Navigating the aftermath of the 1997 handover, the city balanced integration with mainland China against deep-seated local expectations for autonomy and governance reform."
+description: "This foundational decade of the Hong Kong Special Administrative Region tested the 'One Country, Two Systems' framework through profound economic shocks, public health crises, and intense political mobilization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

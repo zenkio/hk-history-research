@@ -6,6 +6,7 @@ year: 1936
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1936", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "shing-mun-reservoir", "water-supply"]
 summary: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
+description: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

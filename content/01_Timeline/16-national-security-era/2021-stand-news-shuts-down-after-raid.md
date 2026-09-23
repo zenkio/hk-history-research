@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "media-shutdown", "national-security-era", "national-security-law", "press-freedom", "stand-news"]
 summary: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
+description: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

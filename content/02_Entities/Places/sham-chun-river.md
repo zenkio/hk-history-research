@@ -3,6 +3,7 @@ title: "Sham Chun River (深圳河)"
 title_zh: "深圳河"
 tags: ["ai-draft", "border", "new-territories", "place", "refugees", "sham-chun-river", "treaty-of-peking"]
 summary: "The Sham Chun River is a natural boundary river that has served as the territorial border between Hong Kong and mainland China through successive colonial, wartime, and contemporary eras."
+description: "The Sham Chun River is a natural boundary river that has served as the territorial border between Hong Kong and mainland China through successive colonial, wartime, and contemporary eras."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

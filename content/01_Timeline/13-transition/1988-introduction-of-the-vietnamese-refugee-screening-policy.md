@@ -6,6 +6,7 @@ year: 1988
 era: "Sino-British negotiations and the transition"
 tags: ["1988", "ai-draft", "boat-people", "closed-camps", "immigration-policy", "sino-british-transition", "transition", "vietnamese-refugees"]
 summary: "On June 16, 1988, the Hong Kong government abandoned its long-standing policy of granting temporary refuge to all Vietnamese asylum seekers, introducing a mandatory screening process to distinguish political refugees from economic migrants."
+description: "On June 16, 1988, the Hong Kong government abandoned its long-standing policy of granting temporary refuge to all Vietnamese asylum seekers, introducing a mandatory screening process to distinguish political refugees…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

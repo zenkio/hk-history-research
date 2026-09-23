@@ -6,6 +6,7 @@ year: 1923
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1923", "ai-draft", "british-hong-kong", "chinese-nationalism", "hku", "interwar", "sun-yat-sen"]
 summary: "In February 1923, Republic of China founding father Sun Yat-sen delivered a landmark speech at the University of Hong Kong, reflecting on how the colony's orderly environment directly inspired his revolutionary ambitions."
+description: "In February 1923, Republic of China founding father Sun Yat-sen delivered a landmark speech at the University of Hong Kong, reflecting on how the colony's orderly environment directly inspired his revolutionary…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

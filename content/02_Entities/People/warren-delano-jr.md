@@ -3,6 +3,7 @@ title: "Warren Delano Jr. (德拉諾)"
 title_zh: "德拉諾"
 tags: ["ai-draft", "colonial-history", "opium-trade", "pearl-river-delta", "person", "russell-and-co", "warren-delano-jr"]
 summary: "Warren Delano Jr. was a prominent American merchant and opium trader whose involvement with Russell & Co. significantly shaped early 19th-century trade relations in the Pearl River Delta."
+description: "Warren Delano Jr. was a prominent American merchant and opium trader whose involvement with Russell & Co. significantly shaped early 19th-century trade relations in the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

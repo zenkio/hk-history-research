@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "assimilation", "education", "japanese-occupation", "language-policy", "world-war-ii"]
 summary: "In **July 1942**, the Japanese military administration established language schools in occupied Hong Kong to mandate Japanese language learning for civil servants, teachers, and students as part of a broader Japanization policy."
+description: "In July 1942, the Japanese military administration established language schools in occupied Hong Kong to mandate Japanese language learning for civil servants, teachers, and students as part of a broader Japanization…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

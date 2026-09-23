@@ -6,6 +6,7 @@ year: 1958
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1958", "ai-draft", "industrialisation", "new-territories", "postwar-hong-kong", "postwar-refugees", "satellite-town", "urban-planning"]
 summary: "In **1958**, the colonial government designated Tsuen Wan as Hong Kong's first satellite town, transforming a traditional rural and industrial area into a planned urban hub to accommodate rapid population growth and industrial expansion."
+description: "In 1958, the colonial government designated Tsuen Wan as Hong Kong's first satellite town, transforming a traditional rural and industrial area into a planned urban hub to accommodate rapid population growth and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

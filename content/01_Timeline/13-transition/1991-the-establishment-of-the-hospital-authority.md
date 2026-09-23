@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1990s-hong-kong", "1991", "ai-draft", "colonial-history", "healthcare-reform", "hospital-authority", "public-administration", "transition"]
 summary: "In 1991, Hong Kong established the Hospital Authority to centralize the management of public hospitals, marking a pivotal transition in the delivery of healthcare services."
+description: "In 1991, Hong Kong established the Hospital Authority to centralize the management of public hospitals, marking a pivotal transition in the delivery of healthcare services."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Frederick Lugard (盧吉)"
 title_zh: "盧吉"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "education", "governor", "person", "transportation"]
 summary: "Sir Frederick Lugard, 1st Baron Lugard, served as the 14th Governor of Hong Kong and was instrumental in shaping the colony's educational and transport infrastructure."
+description: "Sir Frederick Lugard, 1st Baron Lugard, served as the 14th Governor of Hong Kong and was instrumental in shaping the colony's educational and transport infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

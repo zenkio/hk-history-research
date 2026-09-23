@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "canton-system", "first-opium-war", "lin-zexu", "maritime-trade", "opium-war", "qing-dynasty"]
 summary: "In 1839, the public execution of an opium dealer near the walls of Macau underscored the escalating clash between the Qing government's prohibition policies and the entrenched practices of foreign traders."
+description: "In 1839, the public execution of an opium dealer near the walls of Macau underscored the escalating clash between the Qing government's prohibition policies and the entrenched practices of foreign traders."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kap Shui Mun (汲水門)"
 title_zh: "汲水門"
 tags: ["ai-draft", "canton-system", "geopolitics", "lantau-island", "maritime-history", "pearl-river-delta", "place"]
 summary: "A narrow strategic strait separating Lantau Island from the mainland, historically significant as a maritime gateway and defensive checkpoint for the Pearl River Delta."
+description: "A narrow strategic strait separating Lantau Island from the mainland, historically significant as a maritime gateway and defensive checkpoint for the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

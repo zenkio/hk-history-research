@@ -3,6 +3,7 @@ title: "Sir David Trench (戴麟趾)"
 title_zh: "戴麟趾"
 tags: ["1967-riots", "ai-draft", "british-administration", "colonial-history", "governors-of-hong-kong", "hong-kong-history", "person"]
 summary: "Sir David Trench served as the 24th Governor of Hong Kong, overseeing the territory during a period of significant social upheaval and economic transformation in the 1960s."
+description: "Sir David Trench served as the 24th Governor of Hong Kong, overseeing the territory during a period of significant social upheaval and economic transformation in the 1960s."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

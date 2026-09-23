@@ -6,6 +6,7 @@ year: 1965
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1965", "ai-draft", "demographics", "family-planning", "postwar-history", "postwar-refugees", "public-health", "social-policy"]
 summary: "In 1965, the Family Planning Association of Hong Kong formalized its efforts to promote reproductive health and contraception, addressing the immense social pressures of a rapidly expanding postwar population."
+description: "In 1965, the Family Planning Association of Hong Kong formalized its efforts to promote reproductive health and contraception, addressing the immense social pressures of a rapidly expanding postwar population."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

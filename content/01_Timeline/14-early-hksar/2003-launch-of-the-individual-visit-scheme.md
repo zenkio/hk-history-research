@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "early-hksar", "economy", "hksar", "individual-visit-scheme", "sars", "tourism"]
 summary: "Launched on July 28, 2003, the Individual Visit Scheme fundamentally transformed Hong Kong's tourism and retail sectors by allowing mainland Chinese residents to visit the city independently."
+description: "Launched on July 28, 2003, the Individual Visit Scheme fundamentally transformed Hong Kong's tourism and retail sectors by allowing mainland Chinese residents to visit the city independently."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

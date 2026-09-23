@@ -3,6 +3,7 @@ title: "David Trench (戴麟趾)"
 title_zh: "戴麟趾"
 tags: ["1967-riots", "ai-draft", "british-colonial-period", "governor", "hong-kong-history", "person", "political-figures"]
 summary: "Sir David Trench served as the 24th Governor of Hong Kong from 1964 to 1971, presiding over a period of significant social transformation and the 1967 Leftist Riots."
+description: "Sir David Trench served as the 24th Governor of Hong Kong from 1964 to 1971, presiding over a period of significant social transformation and the 1967 Leftist Riots."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

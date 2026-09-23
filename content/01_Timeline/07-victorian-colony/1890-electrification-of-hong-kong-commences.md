@@ -6,6 +6,7 @@ year: 1890
 era: "Kowloon and the Victorian colony"
 tags: ["1890", "ai-draft", "hong-kong-electric", "infrastructure", "urban-history", "victorian-colony", "victorian-era", "wan-chai"]
 summary: "In December 1890, the Hongkong Electric Company began commercial power generation from its Wan Chai station, illuminating parts of Victoria City with electric streetlights and marking a major technological shift in the British colony."
+description: "In December 1890, the Hongkong Electric Company began commercial power generation from its Wan Chai station, illuminating parts of Victoria City with electric streetlights and marking a major technological shift in the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1977
 era: "Riots and the MacLehose reforms"
 tags: ["1977", "ai-draft", "colonial-history", "icac", "mac-lehose-reforms", "police-mutiny", "riots-and-reform", "rule-of-law"]
 summary: "In November 1977, amid escalating tensions and protests by police officers against the Independent Commission Against Corruption, Governor Murray MacLehose announced a partial amnesty. This decisive move quelled an impending mutiny within the force while drawing lasting debate over the compromise of the rule of law."
+description: "In November 1977, amid escalating tensions and protests by police officers against the Independent Commission Against Corruption, Governor Murray MacLehose announced a partial amnesty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

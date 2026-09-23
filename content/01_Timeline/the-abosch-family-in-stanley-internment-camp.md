@@ -2,7 +2,8 @@
 title: "The Abosch Family in Stanley Internment Camp"
 date: 1941-01-01
 tags: ["1941", "1945", "1947", "1950", "1976", "civilian-internees", "hong-kong-history", "japanese-occupation", "stanley-internment-camp", "wwii"]
-summary: "During the Japanese occupation of Hong Kong, **Josef Abosch**, his wife **Rosa**, and their son **Ralph Frank** were int"
+summary: "During the Japanese occupation of Hong Kong, Josef Abosch, his wife Rosa, and their son Ralph Frank were interned at the Stanley Internment Camp."
+description: "During the Japanese occupation of Hong Kong, Josef Abosch, his wife Rosa, and their son Ralph Frank were interned at the Stanley Internment Camp."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2022/11/josef-abosch-and-family-in-stanley.html"

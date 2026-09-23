@@ -3,6 +3,7 @@ title: "Hong Kong (香港)"
 title_zh: "香港"
 tags: ["ai-draft", "archaeology", "hong-kong-history", "indigenous-communities", "maritime-culture", "place", "prehistoric-hong-kong"]
 summary: "Hong Kong is a historically significant coastal region whose trajectory has been shaped by thousands of years of geological change, maritime adaptation, and shifting regional powers."
+description: "Hong Kong is a historically significant coastal region whose trajectory has been shaped by thousands of years of geological change, maritime adaptation, and shifting regional powers."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

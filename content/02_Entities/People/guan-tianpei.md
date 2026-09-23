@@ -3,6 +3,7 @@ title: "Guan Tianpei (關天培)"
 title_zh: "關天培"
 tags: ["ai-draft", "first-opium-war", "guan-tianpei", "kwun-chung", "military-history", "person", "qing-dynasty"]
 summary: "Guan Tianpei was a prominent Qing dynasty naval commander whose defensive operations around the Pearl River Delta during the First Opium War intersect with early military engagements in the Hong Kong region."
+description: "Guan Tianpei was a prominent Qing dynasty naval commander whose defensive operations around the Pearl River Delta during the First Opium War intersect with early military engagements in the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

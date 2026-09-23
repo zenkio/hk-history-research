@@ -3,6 +3,7 @@ title: "Lu Jia (呂嘉)"
 title_zh: "呂嘉"
 tags: ["ai-draft", "ancient-china", "han-dynasty", "lingnan-history", "lu-jia", "nanyue", "person"]
 summary: "Lu Jia (呂嘉) was a prominent Prime Minister of the Nanyue kingdom whose resistance against the Han dynasty precipitated the annexation of the region, including the territory that is now Hong Kong."
+description: "Lu Jia (呂嘉) was a prominent Prime Minister of the Nanyue kingdom whose resistance against the Han dynasty precipitated the annexation of the region, including the territory that is now Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

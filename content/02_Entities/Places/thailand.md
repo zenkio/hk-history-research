@@ -3,6 +3,7 @@ title: "Thailand (泰國)"
 title_zh: "泰國"
 tags: ["ai-draft", "causeway-bay-booksellers", "geopolitics", "gui-minhai", "hong-kong-history", "international-relations", "place"]
 summary: "Thailand has served as a significant location for Hong Kong expatriates, dissidents, and business interests, most notably intersecting with the controversy surrounding the disappearance of Causeway Bay Booksellers."
+description: "Thailand has served as a significant location for Hong Kong expatriates, dissidents, and business interests, most notably intersecting with the controversy surrounding the disappearance of Causeway Bay Booksellers."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

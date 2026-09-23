@@ -6,6 +6,7 @@ year: 1921
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1921", "ai-draft", "colonial-history", "interwar", "interwar-period", "scouting-movement", "social-institutions", "youth-education"]
 summary: "In 1921, the formal establishment of the Hong Kong Boy Scouts Association marked a milestone in the institutionalization of Western youth movements within the colonial territory."
+description: "In 1921, the formal establishment of the Hong Kong Boy Scouts Association marked a milestone in the institutionalization of Western youth movements within the colonial territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

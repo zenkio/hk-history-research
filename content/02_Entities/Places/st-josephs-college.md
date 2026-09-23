@@ -3,6 +3,7 @@ title: "St. Joseph's College (聖若瑟書院)"
 title_zh: "聖若瑟書院"
 tags: ["ai-draft", "catholic-schools", "colonial-era", "education", "hong-kong-history", "place", "scouting"]
 summary: "St. Joseph's College is one of Hong Kong's oldest secondary schools, established by the Lasallian Brothers, and holds historical significance as a cradle of the territory's scouting movement."
+description: "St. Joseph's College is one of Hong Kong's oldest secondary schools, established by the Lasallian Brothers, and holds historical significance as a cradle of the territory's scouting movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

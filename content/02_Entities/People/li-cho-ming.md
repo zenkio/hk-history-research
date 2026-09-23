@@ -3,6 +3,7 @@ title: "Li Cho-ming (李卓敏)"
 title_zh: "李卓敏"
 tags: ["ai-draft", "colonial-history", "cuhk", "education-pioneers", "higher-education", "li-cho-ming", "person"]
 summary: "Li Cho-ming was a distinguished educator and economist who served as the founding Vice-Chancellor of the Chinese University of Hong Kong, playing a pivotal role in shaping higher education in the territory."
+description: "Li Cho-ming was a distinguished educator and economist who served as the founding Vice-Chancellor of the Chinese University of Hong Kong, playing a pivotal role in shaping higher education in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

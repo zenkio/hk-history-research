@@ -3,6 +3,7 @@ title: "West Kowloon (西九龍)"
 title_zh: "西九龍"
 tags: ["ai-draft", "culture", "hong-kong-history", "kewloon", "place", "reclamation", "urban-development"]
 summary: "West Kowloon is a reclaimed area in Hong Kong that has transitioned from a maritime and logistics hub into the city's premier center for arts and cultural development."
+description: "West Kowloon is a reclaimed area in Hong Kong that has transitioned from a maritime and logistics hub into the city's premier center for arts and cultural development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

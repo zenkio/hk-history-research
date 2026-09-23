@@ -6,6 +6,7 @@ year: 1836
 era: "Canton trade and the First Opium War"
 tags: ["1836", "ai-draft", "economic-history", "first-opium-war", "monetary-policy", "opium-trade", "opium-war", "qing-dynasty"]
 summary: "In 1836, the Qing government intensified its efforts to curb the massive outflow of silver caused by the opium trade, leading to severe economic destabilization in southern China."
+description: "In 1836, the Qing government intensified its efforts to curb the massive outflow of silver caused by the opium trade, leading to severe economic destabilization in southern China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

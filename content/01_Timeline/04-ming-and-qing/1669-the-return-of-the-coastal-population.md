@@ -6,6 +6,7 @@ year: 1669
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1669", "ai-draft", "great-clearance", "hakka", "hong-kong-history", "land-rights", "migration", "ming-and-qing", "qing-dynasty"]
 summary: "In 1669, the Qing dynasty officially rescinded the Great Clearance (遷界令) edict, permitting residents to return to the coastal regions of Guangdong, sparking a complex process of land reclamation and demographic reconfiguration."
+description: "In 1669, the Qing dynasty officially rescinded the Great Clearance (遷界令) edict, permitting residents to return to the coastal regions of Guangdong, sparking a complex process of land reclamation and demographic…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kwun Chung (官涌)"
 title_zh: "官涌"
 tags: ["ai-draft", "british-colonial-history", "first-opium-war", "kowloon", "kwun-chung", "place", "qing-dynasty"]
 summary: "Kwun Chung is a historical area in Kowloon peninsula that is primarily significant as the site of a notable armed engagement during the First Opium War."
+description: "Kwun Chung is a historical area in Kowloon peninsula that is primarily significant as the site of a notable armed engagement during the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

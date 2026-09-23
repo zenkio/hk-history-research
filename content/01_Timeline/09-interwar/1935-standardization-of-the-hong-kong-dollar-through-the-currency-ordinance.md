@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1935", "ai-draft", "colonial-administration", "currency-reform", "economic-history", "hong-kong-dollar", "interwar", "monetary-history", "silver-standard"]
 summary: "In 1935, the colonial government enacted the Currency Ordinance, ending the silver standard and pegging the Hong Kong dollar to the British pound sterling to stabilize the local economy."
+description: "In 1935, the colonial government enacted the Currency Ordinance, ending the silver standard and pegging the Hong Kong dollar to the British pound sterling to stabilize the local economy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

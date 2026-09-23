@@ -4,6 +4,7 @@ title_zh: "深水埗戰俘營囚禁事件"
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["ai-draft", "colonial-history", "japanese-occupation", "pow-camps", "sham-shui-po", "world-war-ii"]
 summary: "Following the fall of Hong Kong in 1941, the Sham Shui Po Barracks were repurposed by Imperial Japanese forces into a primary detention site for Allied prisoners of war, marking a period of extreme hardship during the occupation."
+description: "Following the fall of Hong Kong in 1941, the Sham Shui Po Barracks were repurposed by Imperial Japanese forces into a primary detention site for Allied prisoners of war, marking a period of extreme hardship during the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

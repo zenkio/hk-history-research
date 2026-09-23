@@ -3,6 +3,7 @@ title: "Feng Ruofang (馮若芳)"
 title_zh: "馮若芳"
 tags: ["ai-draft", "hong-kong-history", "maritime-history", "person", "piracy", "qing-dynasty"]
 summary: "Feng Ruofang was a maritime commander active in the Pearl River Estuary whose raids shaped the volatile security landscape of the region."
+description: "Feng Ruofang was a maritime commander active in the Pearl River Estuary whose raids shaped the volatile security landscape of the region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

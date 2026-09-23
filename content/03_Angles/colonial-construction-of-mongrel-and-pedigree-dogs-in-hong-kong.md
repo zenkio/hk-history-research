@@ -2,7 +2,8 @@
 title: "Colonial Construction of Mongrel and Pedigree Dogs in Hong Kong"
 date: 1900-01-01
 tags: ["1803", "1914", "1921", "1924", "1947", "1966", "1972", "animal-welfare", "british-colonialism", "colonial-history", "dog-fancy", "hong-kong", "social-history"]
-summary: "During the **twentieth century**, the British colonial administration in Hong Kong implemented restrictive dog-control m"
+summary: "During the twentieth century, the British colonial administration in Hong Kong implemented restrictive dog-control measures, leading to the mass culling of native 'tong gau' or 'wonk' dogs. As explored by Dr."
+description: "During the twentieth century, the British colonial administration in Hong Kong implemented restrictive dog-control measures, leading to the mass culling of native 'tong gau' or 'wonk' dogs. As explored by Dr."
 confidence: high
 source_feed: Historical_Photos_HK
 source_url: "https://blog.hphkbristol.net/2026/09/15/guest-blog-hong-kongs-animal-outliers-chinese-wonks-in-a-british-colonial-city/"

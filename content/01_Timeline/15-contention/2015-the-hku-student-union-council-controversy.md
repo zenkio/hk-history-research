@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "academic-freedom", "ai-draft", "contention", "hku-controversy", "hong-kong-politics", "student-protest", "university-governance"]
 summary: "The 2015 HKU Council controversy centered on the appointment of a Pro-Vice-Chancellor, sparking major student-led protests over academic autonomy and political interference."
+description: "The 2015 HKU Council controversy centered on the appointment of a Pro-Vice-Chancellor, sparking major student-led protests over academic autonomy and political interference."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

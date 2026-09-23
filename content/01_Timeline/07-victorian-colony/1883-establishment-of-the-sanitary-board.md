@@ -6,6 +6,7 @@ year: 1883
 era: "Kowloon and the Victorian colony"
 tags: ["1883", "ai-draft", "colonial-history", "municipal-governance", "public-health", "sanitary-board", "urban-reform", "victorian-colony"]
 summary: "Established on June 5, 1883, the Sanitary Board marked Hong Kong's first formal step toward institutionalized municipal governance and public health reform amidst deteriorating sanitary conditions."
+description: "Established on June 5, 1883, the Sanitary Board marked Hong Kong's first formal step toward institutionalized municipal governance and public health reform amidst deteriorating sanitary conditions."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

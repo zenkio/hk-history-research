@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "co-location-scheme", "contention", "high-speed-rail", "legal-controversy", "transportation", "west-kowloon-station"]
 summary: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
+description: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

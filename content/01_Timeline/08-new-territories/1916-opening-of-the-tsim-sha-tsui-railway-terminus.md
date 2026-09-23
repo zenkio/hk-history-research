@@ -6,6 +6,7 @@ year: 1916
 era: "The New Territories lease and the early 20th century"
 tags: ["1916", "ai-draft", "clock-tower", "colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport", "tsim-sha-tsui-terminus"]
 summary: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
+description: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

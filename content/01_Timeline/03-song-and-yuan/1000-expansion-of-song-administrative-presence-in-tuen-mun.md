@@ -6,6 +6,7 @@ year: 1000
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1000", "administrative-history", "ai-draft", "coastal-trade", "maritime-history", "song-and-yuan", "song-dynasty", "tuen-mun"]
 summary: "Between 1000 and 1100, the Northern Song Dynasty significantly strengthened its naval and administrative infrastructure in Tuen Mun to secure the thriving maritime trade routes connecting Guangzhou to the South China Sea."
+description: "Between 1000 and 1100, the Northern Song Dynasty significantly strengthened its naval and administrative infrastructure in Tuen Mun to secure the thriving maritime trade routes connecting Guangzhou to the South China…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

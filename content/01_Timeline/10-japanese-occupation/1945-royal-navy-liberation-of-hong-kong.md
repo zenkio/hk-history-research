@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-administration", "japanese-occupation", "liberation", "royal-navy", "world-war-ii"]
 summary: "On August 30, 1945, a British Royal Navy fleet led by Rear-Admiral Cecil Harcourt arrived in Victoria Harbour to liberate Hong Kong from Japanese occupation and restore colonial administration."
+description: "On August 30, 1945, a British Royal Navy fleet led by Rear-Admiral Cecil Harcourt arrived in Victoria Harbour to liberate Hong Kong from Japanese occupation and restore colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

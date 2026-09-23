@@ -6,6 +6,7 @@ year: 1675
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1675", "ai-draft", "ancestral-halls", "great-clearance", "land-rights", "lineage", "ming-and-qing", "qing-dynasty", "weitou"]
 summary: "Following the revocation of the Great Clearance in 1669, the Weitou (圍頭) people solidified their presence in the New Territories by constructing ancestral halls to define lineage land rights."
+description: "Following the revocation of the Great Clearance in 1669, the Weitou (圍頭) people solidified their presence in the New Territories by constructing ancestral halls to define lineage land rights."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

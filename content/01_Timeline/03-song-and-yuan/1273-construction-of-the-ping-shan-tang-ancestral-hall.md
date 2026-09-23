@@ -6,6 +6,7 @@ year: 1273
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1273", "ai-draft", "ancestral-hall", "new-territories", "ping-shan", "song-and-yuan", "song-dynasty", "tang-clan"]
 summary: "In **1273**, the Tang clan constructed the grand Tang Ancestral Hall in Ping Shan, marking a pivotal moment in the lineage organization and local socio-political dominance of the New Territories' early settlers."
+description: "In 1273, the Tang clan constructed the grand Tang Ancestral Hall in Ping Shan, marking a pivotal moment in the lineage organization and local socio-political dominance of the New Territories' early settlers."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1922", "ai-draft", "british-colonial-era", "interwar", "labor-history", "seamens-strike", "trade-unions"]
 summary: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant significant wage increases."
+description: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

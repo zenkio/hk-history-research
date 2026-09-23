@@ -3,6 +3,7 @@ title: "Lingnan University (嶺南大學)"
 title_zh: "嶺南大學"
 tags: ["academic-freedom", "ai-draft", "campus-culture", "higher-education", "hong-kong-history", "lingnan-university", "place"]
 summary: "Lingnan University is a liberal arts institution with roots in 19th-century Canton, functioning as a vital link in the historical and intellectual transition of Chinese higher education to Hong Kong."
+description: "Lingnan University is a liberal arts institution with roots in 19th-century Canton, functioning as a vital link in the historical and intellectual transition of Chinese higher education to Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

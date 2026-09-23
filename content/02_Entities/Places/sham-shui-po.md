@@ -3,6 +3,7 @@ title: "Sham Shui Po (深水埗)"
 title_zh: "深水埗"
 tags: ["ai-draft", "archaeology", "kowloon", "local-history", "place", "postwar-hong-kong", "sham-shui-po"]
 summary: "Sham Shui Po is a historic working-class district in Kowloon that has served as a vital manufacturing, immigration, and commercial hub throughout Hong Kong's modern development."
+description: "Sham Shui Po is a historic working-class district in Kowloon that has served as a vital manufacturing, immigration, and commercial hub throughout Hong Kong's modern development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

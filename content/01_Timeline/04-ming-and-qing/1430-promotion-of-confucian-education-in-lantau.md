@@ -6,6 +6,7 @@ year: 1430
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1430", "ai-draft", "coastal-administration", "confucianism", "education-history", "lantau-island", "lineage-culture", "ming-and-qing", "ming-dynasty"]
 summary: "During the early Ming dynasty, the establishment of Confucian academies in Lantau served to integrate local lineages into the broader Chinese imperial educational and administrative framework."
+description: "During the early Ming dynasty, the establishment of Confucian academies in Lantau served to integrate local lineages into the broader Chinese imperial educational and administrative framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

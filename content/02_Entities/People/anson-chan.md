@@ -3,6 +3,7 @@ title: "Anson Chan (陳方安生)"
 title_zh: "陳方安生"
 tags: ["ai-draft", "anson-chan", "chief-secretary", "civil-service", "democracy-movement", "handover", "person"]
 summary: "Anson Chan was a prominent civil servant who served as the Chief Secretary of Hong Kong during the transition of sovereignty and later became a leading advocate for democratic reforms."
+description: "Anson Chan was a prominent civil servant who served as the Chief Secretary of Hong Kong during the transition of sovereignty and later became a leading advocate for democratic reforms."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

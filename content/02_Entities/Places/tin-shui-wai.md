@@ -3,6 +3,7 @@ title: "Tin Shui Wai (天水圍)"
 title_zh: "天水圍"
 tags: ["ai-draft", "hong-kong-history", "infrastructure", "new-territories", "place", "urban-planning", "west-rail-line"]
 summary: "Tin Shui Wai is a major new town in the New Territories that evolved from a traditional agricultural area into a high-density residential hub connected to the urban core via the West Rail Line."
+description: "Tin Shui Wai is a major new town in the New Territories that evolved from a traditional agricultural area into a high-density residential hub connected to the urban core via the West Rail Line."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

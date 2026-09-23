@@ -6,6 +6,7 @@ year: 1975
 era: "Riots and the MacLehose reforms"
 tags: ["1975", "ai-draft", "clara-maersk", "mac-lehose-era", "port-of-first-asylum", "riots-and-reform", "vietnamese-refugees"]
 summary: "On May 4, 1975, the Danish freighter Clara Maersk arrived in Hong Kong carrying over 3,700 Vietnamese refugees, marking the beginning of Hong Kong's quarter-century role as a port of first asylum."
+description: "On May 4, 1975, the Danish freighter Clara Maersk arrived in Hong Kong carrying over 3,700 Vietnamese refugees, marking the beginning of Hong Kong's quarter-century role as a port of first asylum."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

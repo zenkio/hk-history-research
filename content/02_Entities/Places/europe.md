@@ -3,6 +3,7 @@ title: "Europe (歐洲)"
 title_zh: "歐洲"
 tags: ["ai-draft", "british-empire", "chinese-labour-corps", "colonial-history", "first-world-war", "migration", "place"]
 summary: "Europe was the primary destination for the Chinese Labour Corps (中國勞工旅) during the First World War, an event that indirectly impacted Hong Kong through the transit of laborers and the shifting geopolitical influence of the British Empire."
+description: "Europe was the primary destination for the Chinese Labour Corps (中國勞工旅) during the First World War, an event that indirectly impacted Hong Kong through the transit of laborers and the shifting geopolitical influence of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

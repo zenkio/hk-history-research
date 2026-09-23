@@ -6,6 +6,7 @@ year: 1790
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1790", "ai-draft", "maritime-history", "military-buildup", "ming-and-qing", "pearl-river-delta", "piracy", "qing-dynasty", "zheng-yi"]
 summary: "During the final decade of the 18th century, the Pearl River Delta saw the consolidation of fractured pirate groups into a highly organized maritime confederation under the leadership of Zheng Yi."
+description: "During the final decade of the 18th century, the Pearl River Delta saw the consolidation of fractured pirate groups into a highly organized maritime confederation under the leadership of Zheng Yi."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1962", "ai-draft", "colonial-history", "housing-crisis", "postwar-hong-kong", "postwar-refugees", "social-welfare", "tenancy-law"]
 summary: "In 1962, the Hong Kong government passed the Tenancy (Notice of Termination) Ordinance to combat severe housing shortages, runaway rents, and arbitrary evictions that plagued the overcrowded urban areas during the postwar manufacturing boom."
+description: "In 1962, the Hong Kong government passed the Tenancy (Notice of Termination) Ordinance to combat severe housing shortages, runaway rents, and arbitrary evictions that plagued the overcrowded urban areas during the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

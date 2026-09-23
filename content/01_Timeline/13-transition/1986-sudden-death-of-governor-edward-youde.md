@@ -6,6 +6,7 @@ year: 1986
 era: "Sino-British negotiations and the transition"
 tags: ["1986", "ai-draft", "governor-youde", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
+description: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

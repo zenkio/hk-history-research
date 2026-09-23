@@ -3,6 +3,7 @@ title: "Captain Charles Elliot (義律)"
 title_zh: "義律"
 tags: ["ai-draft", "british-empire", "colonial-history", "first-opium-war", "land-administration", "person"]
 summary: "As the British Plenipotentiary, Charles Elliot played a central role in the initial occupation of Hong Kong and the establishment of the early colonial administration."
+description: "As the British Plenipotentiary, Charles Elliot played a central role in the initial occupation of Hong Kong and the establishment of the early colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

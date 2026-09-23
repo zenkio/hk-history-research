@@ -6,6 +6,7 @@ year: 1853
 era: "The early colony"
 tags: ["1853", "19th-century", "ai-draft", "colonial-history", "early-colony", "public-safety", "urban-development", "volunteerism"]
 summary: "In 1853, following recurrent and devastating fires in the rapidly developing colonial port, the first volunteer fire brigade was organized by residents to address the lack of formalized emergency services."
+description: "In 1853, following recurrent and devastating fires in the rapidly developing colonial port, the first volunteer fire brigade was organized by residents to address the lack of formalized emergency services."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

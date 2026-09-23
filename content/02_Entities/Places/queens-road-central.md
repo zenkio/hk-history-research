@@ -3,6 +3,7 @@ title: "Queen's Road Central (皇后大道中)"
 title_zh: "皇后大道中"
 tags: ["ai-draft", "central-district", "colonial-history", "hong-kong-island", "place", "transportation", "urban-development"]
 summary: "Queen's Road Central is one of the earliest major thoroughfares in colonial Hong Kong, serving as the historical backbone of the Central business district."
+description: "Queen's Road Central is one of the earliest major thoroughfares in colonial Hong Kong, serving as the historical backbone of the Central business district."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

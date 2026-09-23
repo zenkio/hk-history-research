@@ -6,6 +6,7 @@ year: 1910
 era: "The New Territories lease and the early 20th century"
 tags: ["1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
 summary: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland China."
+description: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

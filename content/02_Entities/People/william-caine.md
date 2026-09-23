@@ -3,6 +3,7 @@ title: "William Caine (凱恩)"
 title_zh: "凱恩"
 tags: ["19th-century", "ai-draft", "british-administration", "chief-magistrate", "colonial-history", "person"]
 summary: "William Caine was a British colonial administrator and military officer who served as the first Chief Magistrate of Hong Kong and played a foundational role in establishing early colonial governance."
+description: "William Caine was a British colonial administrator and military officer who served as the first Chief Magistrate of Hong Kong and played a foundational role in establishing early colonial governance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Tang (鄧)"
 title_zh: "鄧氏"
 tags: ["ai-draft", "kam-tin", "land-history", "lineage-culture", "new-territories", "person", "tang-clan"]
 summary: "The Tang clan is one of the Five Great Clans of the New Territories, holding a significant historical role in land ownership, lineage, and local governance since the late Song dynasty."
+description: "The Tang clan is one of the Five Great Clans of the New Territories, holding a significant historical role in land ownership, lineage, and local governance since the late Song dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

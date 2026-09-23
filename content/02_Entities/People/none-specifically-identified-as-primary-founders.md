@@ -3,6 +3,7 @@ title: "None specifically identified as primary founders"
 title_zh: "東華醫院"
 tags: ["ai-draft", "chinese-community", "colonial-era", "healthcare", "hong-kong-history", "person", "social-welfare"]
 summary: "Tung Wah Hospital was established in 1870 as the first hospital in Hong Kong to provide traditional Chinese medicine to the local Chinese population."
+description: "Tung Wah Hospital was established in 1870 as the first hospital in Hong Kong to provide traditional Chinese medicine to the local Chinese population."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

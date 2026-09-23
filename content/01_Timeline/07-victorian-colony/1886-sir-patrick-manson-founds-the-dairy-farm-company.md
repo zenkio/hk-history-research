@@ -6,6 +6,7 @@ year: 1886
 era: "Kowloon and the Victorian colony"
 tags: ["1886", "ai-draft", "colonial-history", "dairy-farm", "medicine", "public-health", "victorian-colony"]
 summary: "In July 1886, Scottish physician Sir Patrick Manson established the Dairy Farm Company in Pok Fu Lam to supply hygienic, disease-free milk to the British colony of Hong Kong, significantly advancing local public health standards."
+description: "In July 1886, Scottish physician Sir Patrick Manson established the Dairy Farm Company in Pok Fu Lam to supply hygienic, disease-free milk to the British colony of Hong Kong, significantly advancing local public health…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

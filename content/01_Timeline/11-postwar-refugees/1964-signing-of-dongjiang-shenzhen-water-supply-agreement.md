@@ -6,6 +6,7 @@ year: 1964
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1964", "ai-draft", "cold-war", "hong-kong-economy", "infrastructure", "postwar-history", "postwar-refugees", "water-supply"]
 summary: "On April 22, 1964, Hong Kong signed a landmark agreement with Guangdong province to import raw water from the Dongjiang river, providing a crucial long-term solution to the territory's severe water shortages."
+description: "On April 22, 1964, Hong Kong signed a landmark agreement with Guangdong province to import raw water from the Dongjiang river, providing a crucial long-term solution to the territory's severe water shortages."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

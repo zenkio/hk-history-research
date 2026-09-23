@@ -3,6 +3,7 @@ title: "Emperor Xuanzong of Tang (唐玄宗)"
 title_zh: "唐玄宗"
 tags: ["ai-draft", "hong-kong-origins", "imperial-history", "maritime-trade", "person", "tang-dynasty", "tuen-mun"]
 summary: "Emperor Xuanzong of Tang was the seventh emperor of the Tang Dynasty whose administration formally established the Tuen Mun (屯門) military garrison, marking a significant early integration of the Hong Kong region into the imperial administrative framework."
+description: "Emperor Xuanzong of Tang was the seventh emperor of the Tang Dynasty whose administration formally established the Tuen Mun (屯門) military garrison, marking a significant early integration of the Hong Kong region into…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

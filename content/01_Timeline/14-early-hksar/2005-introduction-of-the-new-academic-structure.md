@@ -6,6 +6,7 @@ year: 2005
 era: "The early HKSAR"
 tags: ["2005", "3-3-4-system", "academic-curriculum", "ai-draft", "early-hksar", "education-reform", "hksar-history", "liberal-studies"]
 summary: "In May 2005, the Hong Kong government announced the formal implementation of a '3+3+4' academic structure, marking a pivotal shift from the British colonial education model to a modernized four-year undergraduate system."
+description: "In May 2005, the Hong Kong government announced the formal implementation of a '3+3+4' academic structure, marking a pivotal shift from the British colonial education model to a modernized four-year undergraduate…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Manchuria (滿洲)"
 title_zh: "滿洲"
 tags: ["ai-draft", "anti-japanese-boycott", "colonial-era", "hong-kong-history", "manchuria", "mukden-incident", "place"]
 summary: "A region in Northeast Asia whose geopolitical instability in the 1930s directly fueled anti-Japanese sentiment and civil unrest within Hong Kong."
+description: "A region in Northeast Asia whose geopolitical instability in the 1930s directly fueled anti-Japanese sentiment and civil unrest within Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

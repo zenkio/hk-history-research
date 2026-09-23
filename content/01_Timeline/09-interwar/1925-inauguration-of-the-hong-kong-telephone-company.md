@@ -6,6 +6,7 @@ year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1925", "ai-draft", "business-history", "infrastructure", "interwar", "interwar-hong-kong", "telecommunications", "urban-development"]
 summary: "In 1925, the Hong Kong Telephone Company (香港電話有限公司) was inaugurated, marking a pivotal transition from manual exchange services to an automated telecommunications network in the colony."
+description: "In 1925, the Hong Kong Telephone Company (香港電話有限公司) was inaugurated, marking a pivotal transition from manual exchange services to an automated telecommunications network in the colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

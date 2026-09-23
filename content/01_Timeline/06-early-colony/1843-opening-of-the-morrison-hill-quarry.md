@@ -6,6 +6,7 @@ year: 1843
 era: "The early colony"
 tags: ["1843", "19th-century", "ai-draft", "colonial-history", "early-colony", "hong-kong-island", "industrial-history", "infrastructure", "urban-development"]
 summary: "Established in 1843, the Morrison Hill Quarry provided essential granite for the rapid expansion of Victoria City during the early years of British colonial administration."
+description: "Established in 1843, the Morrison Hill Quarry provided essential granite for the rapid expansion of Victoria City during the early years of British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Wang Yumai (王煜寀)"
 title_zh: "王煜寀"
 tags: ["ai-draft", "gazetteer", "historiography", "local-history", "person", "qing-dynasty", "xin-an-county"]
 summary: "Wang Yumai was a Qing dynasty scholar-official who played a significant role in the compilation of the Xin'an County Gazetteer (新安縣志), an essential historical record for the Hong Kong region."
+description: "Wang Yumai was a Qing dynasty scholar-official who played a significant role in the compilation of the Xin'an County Gazetteer (新安縣志), an essential historical record for the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

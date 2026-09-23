@@ -6,6 +6,7 @@ year: 1898
 era: "The New Territories lease and the early 20th century"
 tags: ["1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
 summary: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
+description: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

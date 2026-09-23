@@ -3,6 +3,7 @@ title: "Australia (澳洲)"
 title_zh: "澳洲"
 tags: ["ai-draft", "british-colonialism", "evacuation", "hong-kong-history", "pacific-war", "place", "second-world-war"]
 summary: "Australia served as a primary destination for the British-organized evacuation of non-combatant women and children from Hong Kong during the months preceding the Pacific War."
+description: "Australia served as a primary destination for the British-organized evacuation of non-combatant women and children from Hong Kong during the months preceding the Pacific War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

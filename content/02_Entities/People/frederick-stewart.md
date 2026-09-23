@@ -3,6 +3,7 @@ title: "Frederick Stewart (史釗域)"
 title_zh: "史釗域"
 tags: ["19th-century", "ai-draft", "colonial-history", "education", "hong-kong-government", "person", "queens-college"]
 summary: "A pivotal colonial educator and administrator often regarded as the 'founder of Hong Kong education' for his instrumental role in establishing the Government Central School."
+description: "A pivotal colonial educator and administrator often regarded as the 'founder of Hong Kong education' for his instrumental role in establishing the Government Central School."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

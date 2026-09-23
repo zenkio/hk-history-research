@@ -3,6 +3,7 @@ title: "Emperor Wu of Han (漢武帝)"
 title_zh: "漢武帝"
 tags: ["ai-draft", "archaeology", "han-dynasty", "imperial-expansion", "nanyue", "person", "salt-industry"]
 summary: "Emperor Wu of Han was the seventh emperor of the Han dynasty whose military expansion southward brought the region encompassing modern-day Hong Kong under imperial Chinese administration."
+description: "Emperor Wu of Han was the seventh emperor of the Han dynasty whose military expansion southward brought the region encompassing modern-day Hong Kong under imperial Chinese administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

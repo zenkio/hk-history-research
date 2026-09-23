@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "concert-accident", "hong-kong-coliseum", "mirror", "national-security-era", "pop-culture", "stage-safety"]
 summary: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety and labor conditions."
+description: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

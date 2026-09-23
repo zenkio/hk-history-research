@@ -6,6 +6,7 @@ year: 1513
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1513", "ai-draft", "jorge-alvares", "maritime-history", "ming-and-qing", "ming-dynasty", "portuguese-trade", "tuen-mun"]
 summary: "In May 1513, Portuguese explorer Jorge Álvares arrived at Tuen Mun, marking the beginning of documented direct European contact with the Hong Kong region and initiating a turbulent era of trade and maritime conflict in the Pearl River Delta."
+description: "In May 1513, Portuguese explorer Jorge Álvares arrived at Tuen Mun, marking the beginning of documented direct European contact with the Hong Kong region and initiating a turbulent era of trade and maritime conflict in…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

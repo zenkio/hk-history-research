@@ -6,6 +6,7 @@ year: 2001
 era: "The early HKSAR"
 tags: ["2001", "ai-draft", "anson-chan", "civil-service", "early-hksar", "hksar-history", "political-tensions", "tung-chee-hwa"]
 summary: "In **April 2001**, Chief Secretary **Anson Chan** announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region. Her departure highlighted growing friction between the traditional, fiercely independent civil service and Beijing-appointed leadership."
+description: "In April 2001, Chief Secretary Anson Chan announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

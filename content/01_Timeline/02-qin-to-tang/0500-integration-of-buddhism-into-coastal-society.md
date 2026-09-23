@@ -5,6 +5,7 @@ year: 500
 era: "Imperial frontier: Qin to Tang"
 tags: ["500", "ai-draft", "buddhism", "cultural-exchange", "lingnan", "maritime-history", "qin-to-tang", "southern-dynasties"]
 summary: "During the 6th and 7th centuries, the arrival of Buddhist teachings began to influence coastal settlements in the Lingnan region, marking a shift in local spiritual and cultural life."
+description: "During the 6th and 7th centuries, the arrival of Buddhist teachings began to influence coastal settlements in the Lingnan region, marking a shift in local spiritual and cultural life."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

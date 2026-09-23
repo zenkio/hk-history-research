@@ -6,6 +6,7 @@ year: 1976
 era: "Riots and the MacLehose reforms"
 tags: ["1970s", "1976", "ai-draft", "country-parks", "environmental-conservation", "maclehose-reforms", "riots-and-reform", "urban-planning"]
 summary: "On August 16, 1976, the enactment of the Country Parks Ordinance formally established the legal framework for protecting Hong Kong's major natural areas, preserving vast tracts of countryside amid rapid urban expansion."
+description: "On August 16, 1976, the enactment of the Country Parks Ordinance formally established the legal framework for protecting Hong Kong's major natural areas, preserving vast tracts of countryside amid rapid urban expansion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

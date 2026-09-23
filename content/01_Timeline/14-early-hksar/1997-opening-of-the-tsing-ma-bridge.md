@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "civil-engineering", "early-hksar", "hksar-history", "infrastructure", "transportation"]
 summary: "On April 27, 1997, the Tsing Ma Bridge (青馬大橋) was officially opened, serving as a critical infrastructure link for the new international airport and a symbol of late-colonial civil engineering."
+description: "On April 27, 1997, the Tsing Ma Bridge (青馬大橋) was officially opened, serving as a critical infrastructure link for the new international airport and a symbol of late-colonial civil engineering."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

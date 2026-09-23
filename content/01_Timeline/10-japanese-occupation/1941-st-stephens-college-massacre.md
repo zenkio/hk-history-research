@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
 summary: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
+description: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

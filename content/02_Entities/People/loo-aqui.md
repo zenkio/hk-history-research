@@ -3,6 +3,7 @@ title: "Loo Aqui (盧亞貴)"
 title_zh: "皿亞貴"
 tags: ["ai-draft", "colonial-history", "early-hong-kong", "loo-aqui", "merchants", "person", "sheung-wan"]
 summary: "Loo Aqui was an influential early Chinese merchant and community leader in British colonial Hong Kong who played a central role in the establishment of the Sheung Wan Lower Bazaar."
+description: "Loo Aqui was an influential early Chinese merchant and community leader in British colonial Hong Kong who played a central role in the establishment of the Sheung Wan Lower Bazaar."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -2500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "maritime-history", "neolithic", "prehistory", "stone-tools"]
 summary: "Around 2500 BCE, ancient communities in the Hong Kong region advanced their lithic technology by mass-producing highly polished stepped stone adzes, which served as vital woodworking tools for constructing marine vessels."
+description: "Around 2500 BCE, ancient communities in the Hong Kong region advanced their lithic technology by mass-producing highly polished stepped stone adzes, which served as vital woodworking tools for constructing marine…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

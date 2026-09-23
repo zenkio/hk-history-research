@@ -5,6 +5,7 @@ year: -1500
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "archaeology", "bronze-age", "coastal-defense", "early-settlement", "hong-kong-history", "qin-to-tang"]
 summary: "During the mid-to-late second millennium BCE, inhabitants of the Hong Kong region constructed fortified earthworks to secure coastal settlements. These structures provide early evidence of organized social labor and maritime defensive strategies."
+description: "During the mid-to-late second millennium BCE, inhabitants of the Hong Kong region constructed fortified earthworks to secure coastal settlements."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

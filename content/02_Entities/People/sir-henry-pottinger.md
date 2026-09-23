@@ -3,6 +3,7 @@ title: "Sir Henry Pottinger (砵甸乍)"
 title_zh: "砵甸乍"
 tags: ["ai-draft", "british-governor", "colonial-history", "first-opium-war", "person", "treaty-of-nanking"]
 summary: "Sir Henry Pottinger was the first Governor of Hong Kong and the British plenipotentiary who negotiated the Treaty of Nanking, establishing Hong Kong as a British Crown Colony."
+description: "Sir Henry Pottinger was the first Governor of Hong Kong and the British plenipotentiary who negotiated the Treaty of Nanking, establishing Hong Kong as a British Crown Colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

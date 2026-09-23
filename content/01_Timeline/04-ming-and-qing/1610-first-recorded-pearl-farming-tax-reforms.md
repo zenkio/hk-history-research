@@ -6,6 +6,7 @@ year: 1610
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1610", "ai-draft", "ming-and-qing", "ming-dynasty", "pearl-diving", "social-history", "tanka-people", "taxation-history"]
 summary: "Around 1610, the Ming dynasty implemented significant tax reforms regarding pearl harvesting in Tai Po, which triggered major socio-economic shifts for the local coastal population."
+description: "Around 1610, the Ming dynasty implemented significant tax reforms regarding pearl harvesting in Tai Po, which triggered major socio-economic shifts for the local coastal population."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

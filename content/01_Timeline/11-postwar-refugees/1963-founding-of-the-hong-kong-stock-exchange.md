@@ -6,6 +6,7 @@ year: 1963
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1963", "ai-draft", "colonial-era", "economic-development", "financial-history", "industrialisation", "postwar-history", "postwar-refugees"]
 summary: "In 1963, the Hong Kong Stock Exchange (香港證券交易所) was established, marking a pivotal transition from informal trading to a formalised financial market."
+description: "In 1963, the Hong Kong Stock Exchange (香港證券交易所) was established, marking a pivotal transition from informal trading to a formalised financial market."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2013
 era: "Political contention and protest"
 tags: ["2013", "ai-draft", "civil-disobedience", "contention", "democratic-development", "hong-kong-politics", "occupy-central", "political-reform", "universal-suffrage"]
 summary: "On March 27, 2013, three academics and activists formally proposed a civil disobedience campaign to demand universal suffrage, initiating a pivotal chapter in Hong Kong's political history."
+description: "On March 27, 2013, three academics and activists formally proposed a civil disobedience campaign to demand universal suffrage, initiating a pivotal chapter in Hong Kong's political history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Johannes Chan (陳文敏)"
 title_zh: "陳文敏"
 tags: ["academic-freedom", "ai-draft", "hku", "hong-kong-history", "johannes-chan", "legal-scholar", "person"]
 summary: "Johannes Chan is a prominent legal scholar and human rights expert whose career at the University of Hong Kong has often intersected with the city's complex discourse on academic freedom and institutional governance."
+description: "Johannes Chan is a prominent legal scholar and human rights expert whose career at the University of Hong Kong has often intersected with the city's complex discourse on academic freedom and institutional governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

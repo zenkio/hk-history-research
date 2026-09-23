@@ -3,6 +3,7 @@ title: "Liu lineage (廖氏)"
 title_zh: "上水廖氏"
 tags: ["ai-draft", "five-great-clans", "hong-kong-history", "lineage-culture", "new-territories", "person", "sheung-shui"]
 summary: "The Liu lineage is one of the Five Great Clans of the New Territories, playing a foundational role in the development and ancestral heritage of Sheung Shui."
+description: "The Liu lineage is one of the Five Great Clans of the New Territories, playing a foundational role in the development and ancestral heritage of Sheung Shui."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

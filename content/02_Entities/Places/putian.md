@@ -3,6 +3,7 @@ title: "Putian (莆田)"
 title_zh: "莆田"
 tags: ["ai-draft", "fujian", "maritime-history", "meizhou", "place", "putian", "tin-hau"]
 summary: "Putian is a coastal prefecture in Fujian province that serves as the legendary and historical birthplace of the maritime deity Tin Hau, profoundly influencing the spread of her worship to Hong Kong."
+description: "Putian is a coastal prefecture in Fujian province that serves as the legendary and historical birthplace of the maritime deity Tin Hau, profoundly influencing the spread of her worship to Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

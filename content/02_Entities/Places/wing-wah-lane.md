@@ -3,6 +3,7 @@ title: "Wing Wah Lane (榮華里)"
 title_zh: "榮華里"
 tags: ["ai-draft", "central", "hong-kong-island", "lan-kwai-fong", "place", "public-safety", "urban-history"]
 summary: "Wing Wah Lane is a pedestrianized thoroughfare in Central, Hong Kong, historically significant as a dining precinct and for its proximity to the site of the 1993 Lan Kwai Fong disaster."
+description: "Wing Wah Lane is a pedestrianized thoroughfare in Central, Hong Kong, historically significant as a dining precinct and for its proximity to the site of the 1993 Lan Kwai Fong disaster."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

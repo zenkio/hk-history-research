@@ -3,6 +3,7 @@ title: "Sung Wong Toi Garden (宋王臺花園)"
 title_zh: "宋王臺花園"
 tags: ["ai-draft", "cultural-heritage", "hong-kong-history", "kai-tak", "kowloon", "place", "song-dynasty"]
 summary: "Sung Wong Toi Garden is a historical site in Kowloon commemorating the final days of the Southern Song Dynasty and serving as a focal point for evolving narratives of Hong Kong's cultural identity."
+description: "Sung Wong Toi Garden is a historical site in Kowloon commemorating the final days of the Southern Song Dynasty and serving as a focal point for evolving narratives of Hong Kong's cultural identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

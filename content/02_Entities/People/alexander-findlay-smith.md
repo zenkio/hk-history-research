@@ -3,6 +3,7 @@ title: "Alexander Findlay Smith"
 title_zh: "亞歷山大·芬利·史密斯"
 tags: ["ai-draft", "colonial-history", "infrastructure", "peak-tram", "person", "transportation", "victoria-peak"]
 summary: "Alexander Findlay Smith was a Scottish entrepreneur who played a pivotal role in the establishment and early operation of the Peak Tram, fundamentally altering Hong Kong's urban geography and residential patterns."
+description: "Alexander Findlay Smith was a Scottish entrepreneur who played a pivotal role in the establishment and early operation of the Peak Tram, fundamentally altering Hong Kong's urban geography and residential patterns."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

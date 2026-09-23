@@ -3,6 +3,7 @@ title: "Stubbs Road (司徒拔道)"
 title_zh: "司徒拔道"
 tags: ["ai-draft", "architecture", "colonial-history", "hong-kong-island", "king-yin-lei", "place", "stubbs-road"]
 summary: "Stubbs Road is a major historical thoroughfare connecting the mid-levels of Hong Kong Island to the peak and southern districts, significant for its role in urban development and elite residential architecture such as King Yin Lei Mansion."
+description: "Stubbs Road is a major historical thoroughfare connecting the mid-levels of Hong Kong Island to the peak and southern districts, significant for its role in urban development and elite residential architecture such as…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

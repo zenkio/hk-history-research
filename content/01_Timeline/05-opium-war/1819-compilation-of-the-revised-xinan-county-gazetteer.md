@@ -6,6 +6,7 @@ year: 1819
 era: "Canton trade and the First Opium War"
 tags: ["1819", "ai-draft", "lineage-villages", "local-history", "opium-war", "pre-colonial", "qing-dynasty", "xin-an-gazetteer"]
 summary: "In 1819, the Qing administration published an updated local gazetteer for Xin'an County, providing a comprehensive pre-colonial record of the geography, settlements, and economy of the region that later became Hong Kong."
+description: "In 1819, the Qing administration published an updated local gazetteer for Xin'an County, providing a comprehensive pre-colonial record of the geography, settlements, and economy of the region that later became Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "St. John's College (聖約翰學院)"
 title_zh: "聖約翰學院"
 tags: ["ai-draft", "christian-heritage", "colonial-history", "higher-education", "place", "residential-hall", "university-of-hong-kong"]
 summary: "St. John's College is one of the oldest residential halls at the University of Hong Kong, serving as a significant institution for student life and higher education development in the territory."
+description: "St. John's College is one of the oldest residential halls at the University of Hong Kong, serving as a significant institution for student life and higher education development in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

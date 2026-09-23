@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "battle-of-hong-kong", "colonial-history", "japanese-occupation", "university-of-hong-kong", "world-war-ii"]
 summary: "Following the fall of Hong Kong in 1941, the University of Hong Kong suspended all academic operations, with its campus repurposed by Japanese forces for military use."
+description: "Following the fall of Hong Kong in 1941, the University of Hong Kong suspended all academic operations, with its campus repurposed by Japanese forces for military use."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Doi Takahiko (土井市之進)"
 title_zh: "土井市之進"
 tags: ["ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "imperial-japanese-army", "military-history", "person", "world-war-two"]
 summary: "Doi Takahiko was a Japanese military officer who served with the Imperial Japanese Army during the Battle of Hong Kong and is specifically noted for his command presence during the breakthrough of the Gin Drinkers Line."
+description: "Doi Takahiko was a Japanese military officer who served with the Imperial Japanese Army during the Battle of Hong Kong and is specifically noted for his command presence during the breakthrough of the Gin Drinkers Line."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

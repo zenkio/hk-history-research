@@ -6,6 +6,7 @@ year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1928", "ai-draft", "chinese-elites", "chinese-temples-ordinance", "colonial-governance", "interwar", "interwar-hong-kong", "religious-institutions"]
 summary: "In **1928**, the Hong Kong colonial government enacted the Chinese Temples Ordinance to establish centralized bureaucratic oversight over traditional Chinese religious properties and revenues, formalizing state-community mediation through co-opted Chinese elites."
+description: "In 1928, the Hong Kong colonial government enacted the Chinese Temples Ordinance to establish centralized bureaucratic oversight over traditional Chinese religious properties and revenues, formalizing state-community…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

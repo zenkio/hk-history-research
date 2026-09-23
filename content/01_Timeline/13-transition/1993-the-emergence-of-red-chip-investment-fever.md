@@ -6,6 +6,7 @@ year: 1993
 era: "Sino-British negotiations and the transition"
 tags: ["1990s", "1993", "ai-draft", "economic-reform", "financial-history", "hong-kong-stock-exchange", "red-chips", "state-owned-enterprises", "transition"]
 summary: "Beginning in 1993, the listing of mainland Chinese state-owned enterprises on the Hong Kong Stock Exchange marked a pivotal shift in the integration of the territory's financial markets with the economy of the People's Republic of China."
+description: "Beginning in 1993, the listing of mainland Chinese state-owned enterprises on the Hong Kong Stock Exchange marked a pivotal shift in the integration of the territory's financial markets with the economy of the People's…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

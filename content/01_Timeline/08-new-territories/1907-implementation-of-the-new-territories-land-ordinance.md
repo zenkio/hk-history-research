@@ -6,6 +6,7 @@ year: 1907
 era: "The New Territories lease and the early 20th century"
 tags: ["1907", "ai-draft", "british-hong-kong", "colonial-history", "land-reform", "legal-history", "new-territories"]
 summary: "In 1907, the British colonial administration formalised the New Territories Land Ordinance to codify land ownership following the 1898 lease of the region. This legal framework sought to reconcile customary local land practices with the requirements of a centralized colonial property system."
+description: "In 1907, the British colonial administration formalised the New Territories Land Ordinance to codify land ownership following the 1898 lease of the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

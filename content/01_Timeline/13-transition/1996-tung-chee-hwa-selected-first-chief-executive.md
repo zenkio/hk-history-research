@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1996", "ai-draft", "basic-law", "chief-executive", "hong-kong-handover", "sino-british-joint-declaration", "transition", "tung-chee-hwa"]
 summary: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
+description: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

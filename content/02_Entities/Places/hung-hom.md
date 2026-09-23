@@ -3,6 +3,7 @@ title: "Hung Hom (紅磡)"
 title_zh: "紅磡"
 tags: ["ai-draft", "hong-kong-coliseum", "hong-kong-history", "industrial-history", "kowloon", "place", "urban-development"]
 summary: "Hung Hom is a major waterfront district in Kowloon, historically significant for its transition from a quiet village to a vital hub of industrial, maritime, and modern cultural activity."
+description: "Hung Hom is a major waterfront district in Kowloon, historically significant for its transition from a quiet village to a vital hub of industrial, maritime, and modern cultural activity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

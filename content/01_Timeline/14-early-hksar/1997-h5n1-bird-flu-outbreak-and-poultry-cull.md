@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "bird-flu", "early-hksar", "h5n1", "poultry-cull", "public-health"]
 summary: "In late December 1997, the newly established Hong Kong Special Administrative Region government ordered the slaughter of approximately 1.3 million chickens to halt the world's first documented outbreak of the H5N1 avian influenza in humans."
+description: "In late December 1997, the newly established Hong Kong Special Administrative Region government ordered the slaughter of approximately 1.3 million chickens to halt the world's first documented outbreak of the H5N1 avian…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

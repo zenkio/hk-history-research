@@ -3,6 +3,7 @@ title: "Central Plains (中原)"
 title_zh: "中原"
 tags: ["ai-draft", "chinese-civilization", "hong-kong-history", "indigenous-clans", "migration", "new-territories", "place"]
 summary: "The Central Plains refers to the historical heartland of Chinese civilization, representing the ancestral origin for many of the indigenous clans that settled in the New Territories of Hong Kong."
+description: "The Central Plains refers to the historical heartland of Chinese civilization, representing the ancestral origin for many of the indigenous clans that settled in the New Territories of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

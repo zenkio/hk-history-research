@@ -6,6 +6,7 @@ year: 1320
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1320", "ai-draft", "coastal-economy", "maritime-history", "oyster-farming", "song-and-yuan", "tang-clan", "yuan-dynasty"]
 summary: "During the Yuan dynasty, the formalization of oyster cultivation in Deep Bay established a foundational economic structure for local clans, particularly the Tang clan."
+description: "During the Yuan dynasty, the formalization of oyster cultivation in Deep Bay established a foundational economic structure for local clans, particularly the Tang clan."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

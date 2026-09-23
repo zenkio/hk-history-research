@@ -6,6 +6,7 @@ year: 1729
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1729", "ai-draft", "boat-people", "ming-and-qing", "qing-dynasty", "social-history", "tai-o", "tanka", "yongzheng-edict"]
 summary: "In 1729, the Yongzheng Emperor issued a landmark decree permitting the marginalized Tanka boat people to register for land residence, fundamentally reshaping coastal settlements in Hong Kong."
+description: "In 1729, the Yongzheng Emperor issued a landmark decree permitting the marginalized Tanka boat people to register for land residence, fundamentally reshaping coastal settlements in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

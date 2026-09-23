@@ -3,6 +3,7 @@ title: "Jubilee Sports Centre (銀禧體育中心)"
 title_zh: "銀禧體育中心"
 tags: ["ai-draft", "british-colonial-period", "elite-athletics", "hong-kong-history", "place", "sha-tin", "sports-infrastructure"]
 summary: "Established as a premier elite athlete training facility in the late 20th century, the centre serves as a significant landmark in the development of Hong Kong's professional sports infrastructure."
+description: "Established as a premier elite athlete training facility in the late 20th century, the centre serves as a significant landmark in the development of Hong Kong's professional sports infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

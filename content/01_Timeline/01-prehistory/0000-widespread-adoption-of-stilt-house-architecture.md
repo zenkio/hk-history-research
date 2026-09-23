@@ -5,6 +5,7 @@ year: -300
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "architecture", "maritime-history", "prehistoric-hong-kong", "prehistory", "stilt-houses"]
 summary: "Around **c. 300 BCE**, coastal communities across the region increasingly adopted Ganlan-style stilt houses, demonstrating an ingenious adaptation to the sub-tropical tidal environment."
+description: "Around c. 300 BCE, coastal communities across the region increasingly adopted Ganlan-style stilt houses, demonstrating an ingenious adaptation to the sub-tropical tidal environment."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

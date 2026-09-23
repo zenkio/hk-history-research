@@ -6,6 +6,7 @@ year: 1983
 era: "Sino-British negotiations and the transition"
 tags: ["1983", "ai-draft", "exchange-rate-peg", "financial-history", "hong-kong-dollar", "monetary-policy", "sino-british-negotiations", "transition"]
 summary: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
+description: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "decentralization", "housing", "maclehose-era", "new-towns", "riots-and-reform", "urban-planning"]
 summary: "In **1974**, the colonial government formally initiated development on the Tuen Mun New Town, marking a cornerstone of Governor **Sir Murray MacLehose**'s ambitious decentralization strategy to alleviate severe inner-city congestion."
+description: "In 1974, the colonial government formally initiated development on the Tuen Mun New Town, marking a cornerstone of Governor Sir Murray MacLehose's ambitious decentralization strategy to alleviate severe inner-city…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

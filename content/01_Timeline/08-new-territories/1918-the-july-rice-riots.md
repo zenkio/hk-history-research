@@ -6,6 +6,7 @@ year: 1918
 era: "The New Territories lease and the early 20th century"
 tags: ["1918", "ai-draft", "british-colonial-history", "inflation", "new-territories", "rice-riots", "social-unrest", "world-war-i"]
 summary: "In July 1918, severe wartime inflation and grain shortages sparked widespread panic and looting across Hong Kong, exposing the deep socioeconomic vulnerability of the local working class."
+description: "In July 1918, severe wartime inflation and grain shortages sparked widespread panic and looting across Hong Kong, exposing the deep socioeconomic vulnerability of the local working class."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

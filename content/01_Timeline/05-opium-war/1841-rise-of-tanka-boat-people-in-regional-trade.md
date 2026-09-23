@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "first-opium-war", "logistics", "maritime-trade", "opium-war", "social-stratification", "tanka"]
 summary: "The Tanka fishing communities provided essential logistical support and pilotage to the British during the First Opium War, facilitating the establishment of Hong Kong as a strategic anchorage."
+description: "The Tanka fishing communities provided essential logistical support and pilotage to the British during the First Opium War, facilitating the establishment of Hong Kong as a strategic anchorage."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

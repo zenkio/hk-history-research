@@ -3,6 +3,7 @@ title: "Isogai Rensuke (磯谷廉介)"
 title_zh: "磯谷廉介"
 tags: ["ai-draft", "hong-kong-history", "isogai-rensuke", "japanese-occupation", "military-government", "person", "world-war-ii"]
 summary: "Isogai Rensuke was the first Japanese Governor of Hong Kong during the military occupation from 1942 to 1944, a period marked by severe hardship for the local population."
+description: "Isogai Rensuke was the first Japanese Governor of Hong Kong during the military occupation from 1942 to 1944, a period marked by severe hardship for the local population."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

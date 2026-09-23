@@ -3,6 +3,7 @@ title: "Kwu Tung (古洞)"
 title_zh: "古洞"
 tags: ["ai-draft", "hong-kong-history", "kwu-tung", "land-use", "new-territories", "place", "urban-development"]
 summary: "Kwu Tung is a rural area in the Northern District of the New Territories that has evolved from an agrarian landscape into a focal point for modern urban expansion and cross-border integration."
+description: "Kwu Tung is a rural area in the Northern District of the New Territories that has evolved from an agrarian landscape into a focal point for modern urban expansion and cross-border integration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

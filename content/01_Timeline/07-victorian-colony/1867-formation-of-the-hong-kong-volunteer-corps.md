@@ -6,6 +6,7 @@ year: 1867
 era: "Kowloon and the Victorian colony"
 tags: ["1867", "19th-century-hong-kong", "ai-draft", "british-empire", "colonial-history", "local-defense", "military-history", "victorian-colony"]
 summary: "In 1867, the Hong Kong Volunteer Corps (香港義勇軍) was established as the first organized militia, marking a shift toward colonial resident involvement in the territory's internal security."
+description: "In 1867, the Hong Kong Volunteer Corps (香港義勇軍) was established as the first organized militia, marking a shift toward colonial resident involvement in the territory's internal security."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "hong-kong-history", "legislative-council", "national-security-era", "national-security-law", "pro-democracy"]
 summary: "On January 6, 2021, Hong Kong authorities arrested 53 pro-democracy figures under the National Security Law for their involvement in an unofficial primary election held the previous year."
+description: "On January 6, 2021, Hong Kong authorities arrested 53 pro-democracy figures under the National Security Law for their involvement in an unofficial primary election held the previous year."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1931
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1931", "aberdeen-reservoir", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "public-works", "water-supply"]
 summary: "Completed in 1931, the Aberdeen Reservoir was a major infrastructure project undertaken by the colonial government to alleviate severe water shortages in a rapidly growing Hong Kong."
+description: "Completed in 1931, the Aberdeen Reservoir was a major infrastructure project undertaken by the colonial government to alleviate severe water shortages in a rapidly growing Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

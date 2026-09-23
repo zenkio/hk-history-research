@@ -3,6 +3,7 @@ title: "Szeto Wah (司徒華)"
 title_zh: "司徒華"
 tags: ["ai-draft", "democracy-movement", "education-sector", "hong-kong-history", "legislative-council", "person", "political-figures"]
 summary: "A prominent Hong Kong educator, politician, and pro-democracy activist who was a foundational figure in the territory's transition toward representative government."
+description: "A prominent Hong Kong educator, politician, and pro-democracy activist who was a foundational figure in the territory's transition toward representative government."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

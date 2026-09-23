@@ -3,6 +3,7 @@ title: "Shum Tsik-sum (岑日初)"
 title_zh: "岑日初"
 tags: ["ai-draft", "architecture", "colonial-history", "herbal-merchant", "king-yin-lei", "person", "shum-tsik-sum"]
 summary: "Shum Tsik-sum was a prominent early 20th-century Hong Kong merchant and herbalist connected to the construction of the historic King Yin Lei mansion."
+description: "Shum Tsik-sum was a prominent early 20th-century Hong Kong merchant and herbalist connected to the construction of the historic King Yin Lei mansion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

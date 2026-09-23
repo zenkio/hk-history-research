@@ -3,6 +3,7 @@ title: "Morrison Hill (摩理臣山)"
 title_zh: "摩理臣山"
 tags: ["ai-draft", "colonial-history", "hong-kong-geography", "place", "reclamation", "urban-development", "wan-chai"]
 summary: "A former prominent hill in Wan Chai that underwent extensive reclamation and levelling to facilitate Hong Kong's urban expansion during the late 19th and early 20th centuries."
+description: "A former prominent hill in Wan Chai that underwent extensive reclamation and levelling to facilitate Hong Kong's urban expansion during the late 19th and early 20th centuries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

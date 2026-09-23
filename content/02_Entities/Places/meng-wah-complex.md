@@ -3,6 +3,7 @@ title: "Meng Wah Complex (孟華科技樓)"
 title_zh: "孟華科技樓"
 tags: ["ai-draft", "architecture", "education", "hku", "hong-kong-history", "place", "student-movement"]
 summary: "The Meng Wah Complex is a major academic facility at the University of Hong Kong that serves as a site of historical and political significance within the campus."
+description: "The Meng Wah Complex is a major academic facility at the University of Hong Kong that serves as a site of historical and political significance within the campus."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

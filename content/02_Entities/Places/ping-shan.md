@@ -3,6 +3,7 @@ title: "Ping Shan (屏山)"
 title_zh: "屏山"
 tags: ["ai-draft", "ancestral-hall", "heritage-trail", "new-territories", "ping-shan", "place", "tang-clan"]
 summary: "Ping Shan is a historic area in the New Territories and the traditional stronghold of the Tang clan, one of the Five Great Clans of Hong Kong, significant for its preserved vernacular architecture including the Ping Shan Tang Ancestral Hall."
+description: "Ping Shan is a historic area in the New Territories and the traditional stronghold of the Tang clan, one of the Five Great Clans of Hong Kong, significant for its preserved vernacular architecture including the Ping…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

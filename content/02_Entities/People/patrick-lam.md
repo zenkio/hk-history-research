@@ -3,6 +3,7 @@ title: "Patrick Lam (林紹桐)"
 title_zh: "林紹桐"
 tags: ["ai-draft", "hong-kong-journalism", "patrick-lam", "person", "press-freedom", "sedition-laws", "stand-news"]
 summary: "Patrick Lam (林紹桐) is a Hong Kong journalist and former chief editor of the online media outlet Stand News who became a central figure in legal proceedings concerning press freedom in the territory."
+description: "Patrick Lam (林紹桐) is a Hong Kong journalist and former chief editor of the online media outlet Stand News who became a central figure in legal proceedings concerning press freedom in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

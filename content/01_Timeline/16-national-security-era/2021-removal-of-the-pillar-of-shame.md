@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "censorship", "freedom-of-expression", "national-security-era", "national-security-law", "pillar-of-shame", "tiananmen-square", "university-of-hong-kong"]
 summary: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes under the National Security Law."
+description: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

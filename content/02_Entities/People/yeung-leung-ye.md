@@ -3,6 +3,7 @@ title: "Yeung Leung-ye (楊亮節)"
 title_zh: "楊亮節"
 tags: ["ai-draft", "cultural-heritage", "hau-wong", "hong-kong-history", "local-veneration", "person", "song-dynasty"]
 summary: "Yeung Leung-ye (楊亮節) was a Song dynasty general and court official whose legacy is preserved through the local veneration of Hau Wong in Hong Kong."
+description: "Yeung Leung-ye (楊亮節) was a Song dynasty general and court official whose legacy is preserved through the local veneration of Hau Wong in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2006", "ai-draft", "bus-uncle", "early-hksar", "hksar-history", "internet-culture", "urban-life", "viral-video"]
 summary: "In April 2006, a secretly filmed mobile phone video of a heated argument between two passengers on a Hong Kong bus became one of the territory's earliest international internet viral sensations."
+description: "In April 2006, a secretly filmed mobile phone video of a heated argument between two passengers on a Hong Kong bus became one of the territory's earliest international internet viral sensations."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1963
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1960s", "1963", "ai-draft", "colonial-history", "infrastructure", "postwar-hong-kong", "postwar-refugees", "public-health"]
 summary: "On September 10, 1963, the inauguration of Queen Elizabeth Hospital marked a major expansion of public healthcare capacity in British Hong Kong, opening as the largest general hospital in the Commonwealth to serve a rapidly growing population."
+description: "On September 10, 1963, the inauguration of Queen Elizabeth Hospital marked a major expansion of public healthcare capacity in British Hong Kong, opening as the largest general hospital in the Commonwealth to serve a…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

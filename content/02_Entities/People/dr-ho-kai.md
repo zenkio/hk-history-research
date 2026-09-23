@@ -3,6 +3,7 @@ title: "Dr. Ho Kai (何啟)"
 title_zh: "何啟"
 tags: ["ai-draft", "colonial-era", "higher-education", "historical-figure", "legislative-council", "medical-history", "person"]
 summary: "Dr. Ho Kai was a prominent Eurasian barrister, physician, and legislator in colonial Hong Kong who played a pivotal role in founding the Hong Kong College of Medicine for Chinese."
+description: "Dr. Ho Kai was a prominent Eurasian barrister, physician, and legislator in colonial Hong Kong who played a pivotal role in founding the Hong Kong College of Medicine for Chinese."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

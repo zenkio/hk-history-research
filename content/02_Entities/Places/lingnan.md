@@ -3,6 +3,7 @@ title: "Lingnan (嶺南)"
 title_zh: "嶺南"
 tags: ["ai-draft", "archaeology", "baiyue", "lingnan", "nanyue", "place", "qin-dynasty"]
 summary: "Lingnan is a historical and geographical region south of the Nanling Mountains that encompasses modern Guangdong, Guangxi, and Hong Kong, serving as the primary geographic framework for the region's early development."
+description: "Lingnan is a historical and geographical region south of the Nanling Mountains that encompasses modern Guangdong, Guangxi, and Hong Kong, serving as the primary geographic framework for the region's early development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

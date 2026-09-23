@@ -2,6 +2,7 @@
 title: "06 · The early colony (1842-1860)"
 tags: ["ai-draft", "british-empire", "early-colony", "era-overview", "history", "kowloon", "opium-wars"]
 summary: "This foundational era spans the initial British occupation and formal establishment of Hong Kong as a strategic trading post under the Treaty of Nanjing. Marked by rapid infrastructural development, social tensions, and regional upheaval, it laid the groundwork for the territory's distinct colonial trajectory."
+description: "This foundational era spans the initial British occupation and formal establishment of Hong Kong as a strategic trading post under the Treaty of Nanjing."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

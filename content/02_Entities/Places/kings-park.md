@@ -3,6 +3,7 @@ title: "King's Park (京士柏)"
 title_zh: "京士柏"
 tags: ["ai-draft", "colonial-history", "kings-park", "kowloon", "place", "queen-elizabeth-hospital", "urban-development"]
 summary: "King's Park is an urban hill area in Kowloon that transitioned from a military campground and early colonial recreation ground into a major medical and residential hub."
+description: "King's Park is an urban hill area in Kowloon that transitioned from a military campground and early colonial recreation ground into a major medical and residential hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

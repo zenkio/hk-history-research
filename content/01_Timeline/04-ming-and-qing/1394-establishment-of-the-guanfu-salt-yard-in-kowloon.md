@@ -6,6 +6,7 @@ year: 1394
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1394", "ai-draft", "economic-history", "guanfu-salt-yard", "kowloon", "ming-and-qing", "ming-dynasty", "salt-monopoly"]
 summary: "In 1394, the Ming dynasty formally established the Guanfu Salt Yard in modern-day Kowloon, integrating local coastal salt production into the centralized state monopoly system and tightening administrative control over the region's inhabitants."
+description: "In 1394, the Ming dynasty formally established the Guanfu Salt Yard in modern-day Kowloon, integrating local coastal salt production into the centralized state monopoly system and tightening administrative control over…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

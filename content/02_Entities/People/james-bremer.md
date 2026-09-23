@@ -3,6 +3,7 @@ title: "James Bremer (煲麥)"
 title_zh: "煲麥"
 tags: ["ai-draft", "british-colonial-history", "first-opium-war", "hong-kong-foundation", "person", "possession-point", "royal-navy"]
 summary: "Sir James Bremer was a British naval officer who served as Commander-in-Chief of the East Indies and China Station and was a key figure in the early British naval occupation of Hong Kong."
+description: "Sir James Bremer was a British naval officer who served as Commander-in-Chief of the East Indies and China Station and was a key figure in the early British naval occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

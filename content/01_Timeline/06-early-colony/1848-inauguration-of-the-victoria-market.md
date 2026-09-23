@@ -6,6 +6,7 @@ year: 1848
 era: "The early colony"
 tags: ["1848", "ai-draft", "early-colonial-history", "early-colony", "economic-history", "trade-regulation", "urban-development", "victoria-market"]
 summary: "In 1848, the British colonial government established the Victoria Market as the first centralized commercial hub to formalize food trade and tax collection."
+description: "In 1848, the British colonial government established the Victoria Market as the first centralized commercial hub to formalize food trade and tax collection."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

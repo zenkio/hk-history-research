@@ -3,6 +3,7 @@ title: "The Peak (太平山)"
 title_zh: "太平山"
 tags: ["ai-draft", "colonial-history", "geography", "place", "race-relations", "urban-development"]
 summary: "The Peak is Hong Kong's most prominent geographical landmark and historical elite residential enclave, deeply intertwined with the colony's racial segregation and colonial governance."
+description: "The Peak is Hong Kong's most prominent geographical landmark and historical elite residential enclave, deeply intertwined with the colony's racial segregation and colonial governance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

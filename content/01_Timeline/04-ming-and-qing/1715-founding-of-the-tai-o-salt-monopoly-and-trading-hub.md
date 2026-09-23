@@ -6,6 +6,7 @@ year: 1715
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1715", "ai-draft", "economic-history", "lantau-island", "ming-and-qing", "qing-dynasty", "salt-monopoly", "trade"]
 summary: "Around 1715, the formal establishment of official oversight over salt yards transformed Tai O into a structured economic enclave, linking remote fishing communities to the wider Guangdong market."
+description: "Around 1715, the formal establishment of official oversight over salt yards transformed Tai O into a structured economic enclave, linking remote fishing communities to the wider Guangdong market."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

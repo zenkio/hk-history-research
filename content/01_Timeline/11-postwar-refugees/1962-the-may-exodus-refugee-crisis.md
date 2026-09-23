@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1962", "ai-draft", "colonial-history", "great-leap-forward", "migration", "postwar-refugees", "refugee-crisis"]
 summary: "In May 1962, tens of thousands of mainland Chinese refugees flooded across the border into Hong Kong, escaping the devastating aftermath of the Great Leap Forward and overwhelming the colonial administration's emergency services."
+description: "In May 1962, tens of thousands of mainland Chinese refugees flooded across the border into Hong Kong, escaping the devastating aftermath of the Great Leap Forward and overwhelming the colonial administration's emergency…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

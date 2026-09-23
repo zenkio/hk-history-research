@@ -3,6 +3,7 @@ title: "Lion Rock (獅子山)"
 title_zh: "獅子山"
 tags: ["ai-draft", "below-the-lion-rock", "hong-kong-history", "lion-rock", "local-identity", "place", "rthk"]
 summary: "Lion Rock is a prominent peak in Kowloon that serves as a defining geographical landmark and a powerful symbol of local Hong Kong identity, notably tied to the public television series **Below the Lion Rock** (獅子山下)."
+description: "Lion Rock is a prominent peak in Kowloon that serves as a defining geographical landmark and a powerful symbol of local Hong Kong identity, notably tied to the public television series Below the Lion Rock (獅子山下)."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

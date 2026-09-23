@@ -6,6 +6,7 @@ year: 2013
 era: "Political contention and protest"
 tags: ["2013", "ai-draft", "contention", "elderly-poverty", "hong-kong-government", "legislative-council", "public-policy", "social-welfare"]
 summary: "On April 1, 2013, the Hong Kong government officially launched the Old Age Living Allowance to provide financial support to elderly residents with limited means."
+description: "On April 1, 2013, the Hong Kong government officially launched the Old Age Living Allowance to provide financial support to elderly residents with limited means."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -2,6 +2,7 @@
 title: "04 · Ming and Qing coast: pirates, the Great Clearance, forts (1368-1800)"
 tags: ["ai-draft", "era-overview", "great-clearance", "maritime-history", "ming-dynasty", "new-territories", "pirates", "qing-dynasty"]
 summary: "During the Ming and Qing dynasties, the region that would become Hong Kong evolved from a peripheral maritime frontier into a highly contested arena of imperial administration, global trade, and coastal conflict. Characterized by periods of severe disruption—most notably the Great Clearance—and subsequent resettlement, the area's social fabric was fundamentally reshaped by lineage growth, pirate confederacies, and defensive fort construction."
+description: "During the Ming and Qing dynasties, the region that would become Hong Kong evolved from a peripheral maritime frontier into a highly contested arena of imperial administration, global trade, and coastal conflict."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash
 ingested: 2026-09-23

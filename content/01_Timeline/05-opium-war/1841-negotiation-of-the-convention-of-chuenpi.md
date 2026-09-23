@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "cession-of-hong-kong", "charles-elliot", "convention-of-chuenpi", "first-opium-war", "opium-war", "qishan"]
 summary: "On January 20, 1841, British plenipotentiary Charles Elliot and Qing imperial commissioner Qishan preliminarily agreed to the Convention of Chuenpi, which included the initial cession of Hong Kong Island to the British Crown."
+description: "On January 20, 1841, British plenipotentiary Charles Elliot and Qing imperial commissioner Qishan preliminarily agreed to the Convention of Chuenpi, which included the initial cession of Hong Kong Island to the British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

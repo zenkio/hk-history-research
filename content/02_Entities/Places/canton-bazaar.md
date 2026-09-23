@@ -3,6 +3,7 @@ title: "Canton Bazaar (廣府墟)"
 title_zh: "廣府墟"
 tags: ["ai-draft", "boycotts", "canton-bazaar", "colonial-era", "economic-history", "place", "wan-chai"]
 summary: "The Canton Bazaar was a commercial settlement established in Wan Chai following the 1908 Canton-Hong Kong general strike and boycott, serving as a significant site of economic nationalism and Sino-British friction."
+description: "The Canton Bazaar was a commercial settlement established in Wan Chai following the 1908 Canton-Hong Kong general strike and boycott, serving as a significant site of economic nationalism and Sino-British friction."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

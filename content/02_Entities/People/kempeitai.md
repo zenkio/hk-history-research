@@ -3,6 +3,7 @@ title: "Kempeitai (憲兵隊)"
 title_zh: "憲兵隊"
 tags: ["ai-draft", "hong-kong-history", "japanese-occupation", "kempeitai", "military-history", "person", "world-war-ii"]
 summary: "The Kempeitai were the military police arm of the Imperial Japanese Army, acting as the primary instrument of internal security and repression during the Japanese occupation of Hong Kong."
+description: "The Kempeitai were the military police arm of the Imperial Japanese Army, acting as the primary instrument of internal security and repression during the Japanese occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

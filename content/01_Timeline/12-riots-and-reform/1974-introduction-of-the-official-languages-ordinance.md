@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "colonial-history", "hong-kong-legal-history", "language-policy", "maclehose-reforms", "riots-and-reform"]
 summary: "On February 15, 1974, the Hong Kong government enacted the Official Languages Ordinance, establishing Chinese as an official language alongside English. This legislative milestone fundamentally altered the linguistic landscape of the colonial administration."
+description: "On February 15, 1974, the Hong Kong government enacted the Official Languages Ordinance, establishing Chinese as an official language alongside English."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

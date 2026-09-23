@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "colonial-history", "currency-dispute", "economic-tensions", "hong-kong-1912", "new-territories", "tramway-boycott"]
 summary: "In 1912 and 1913, Hong Kong residents launched a major boycott against the tramway company and colonial authorities over the rejection of mainland Chinese subsidiary coins, reflecting deep-seated economic and racial tensions."
+description: "In 1912 and 1913, Hong Kong residents launched a major boycott against the tramway company and colonial authorities over the rejection of mainland Chinese subsidiary coins, reflecting deep-seated economic and racial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

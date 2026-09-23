@@ -3,6 +3,7 @@ title: "Franklin Gimson (詹遜)"
 title_zh: "詹遜"
 tags: ["ai-draft", "british-administration", "colonial-history", "franklin-gimson", "hong-kong-history", "person", "second-world-war"]
 summary: "Franklin Gimson was the British colonial official who served as the Colonial Secretary of Hong Kong and briefly headed the provisional administration following the Japanese surrender in 1945."
+description: "Franklin Gimson was the British colonial official who served as the Colonial Secretary of Hong Kong and briefly headed the provisional administration following the Japanese surrender in 1945."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

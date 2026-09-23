@@ -6,6 +6,7 @@ year: 1888
 era: "Kowloon and the Victorian colony"
 tags: ["1880s", "1888", "ai-draft", "colonial-history", "dorabjee-naorojee", "public-transport", "star-ferry", "victoria-harbour", "victorian-colony"]
 summary: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
+description: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

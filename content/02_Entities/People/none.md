@@ -3,6 +3,7 @@ title: "None (無)"
 title_zh: "農耕梯田與土地管理之發展"
 tags: ["agriculture", "ai-draft", "environmental-history", "land-management", "new-territories", "person", "traditional-farming"]
 summary: "The practice of creating stepped farmland and managing irrigation in the New Territories (新界), which shaped the region's social, economic, and physical landscape."
+description: "The practice of creating stepped farmland and managing irrigation in the New Territories (新界), which shaped the region's social, economic, and physical landscape."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

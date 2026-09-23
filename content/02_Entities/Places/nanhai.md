@@ -3,6 +3,7 @@ title: "Nanhai (南海)"
 title_zh: "南海"
 tags: ["ai-draft", "hong-kong-history", "imperial-china", "lei-cheng-uk", "nanhai", "pearl-river-delta", "place"]
 summary: "Nanhai is a historically significant county in the Pearl River Delta that served as the administrative jurisdiction for much of the territory now known as Hong Kong prior to the British colonial period."
+description: "Nanhai is a historically significant county in the Pearl River Delta that served as the administrative jurisdiction for much of the territory now known as Hong Kong prior to the British colonial period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

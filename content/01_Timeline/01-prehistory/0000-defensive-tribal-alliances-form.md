@@ -5,6 +5,7 @@ year: -250
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "baiyue", "prehistory", "qin-dynasty", "tribal-alliances"]
 summary: "Around 250 BCE, local Baiyue clans in the Lingnan region formed defensive tribal alliances in response to increasing geopolitical and military pressure from expanding northern Chinese states."
+description: "Around 250 BCE, local Baiyue clans in the Lingnan region formed defensive tribal alliances in response to increasing geopolitical and military pressure from expanding northern Chinese states."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

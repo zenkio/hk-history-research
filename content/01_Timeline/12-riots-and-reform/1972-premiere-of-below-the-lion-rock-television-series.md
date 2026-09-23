@@ -6,6 +6,7 @@ year: 1972
 era: "Riots and the MacLehose reforms"
 tags: ["1972", "ai-draft", "hong-kong-identity", "lion-rock-spirit", "maclehose-era", "riots-and-reform", "rthk", "television-history"]
 summary: "The premiere of Radio Television Hong Kong's drama series 'Below the Lion Rock' in October 1972 marked the beginning of a cultural milestone that reflected the socio-economic realities of grassroots citizens and contributed to the shaping of a distinct local Hong Kong identity."
+description: "The premiere of Radio Television Hong Kong's drama series 'Below the Lion Rock' in October 1972 marked the beginning of a cultural milestone that reflected the socio-economic realities of grassroots citizens and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

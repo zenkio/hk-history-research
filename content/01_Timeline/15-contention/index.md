@@ -2,6 +2,7 @@
 title: "15 · Political contention and protest (2008-2020)"
 tags: ["ai-draft", "era-overview", "extradition-bill", "hong-kong-history", "national-security-law", "political-contention", "umbrella-movement"]
 summary: "This era witnessed a profound transformation in Hong Kong's political landscape, marked by escalating tensions between local aspirations for democratic reform and the central government's assertion of sovereignty. The period culminated in mass civil disobedience, sweeping legislative controversies, and the eventual implementation of sweeping security legislation."
+description: "This era witnessed a profound transformation in Hong Kong's political landscape, marked by escalating tensions between local aspirations for democratic reform and the central government's assertion of sovereignty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1368
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1368", "administrative-control", "ai-draft", "dongguan", "imperial-history", "indigenous-lineages", "ming-and-qing", "ming-dynasty"]
 summary: "In 1368, the newly founded Ming Dynasty incorporated the Hong Kong region into Dongguan County, marking the beginning of formal imperial administration over the area's indigenous lineages and coastal settlements."
+description: "In 1368, the newly founded Ming Dynasty incorporated the Hong Kong region into Dongguan County, marking the beginning of formal imperial administration over the area's indigenous lineages and coastal settlements."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

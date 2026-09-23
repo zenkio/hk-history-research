@@ -3,6 +3,7 @@ title: "Hong Kong West Kowloon Railway Station (香港西九龍站)"
 title_zh: "香港西九龍站"
 tags: ["ai-draft", "cross-border", "express-rail-link", "hong-kong-history", "place", "transport-infrastructure", "west-kowloon"]
 summary: "The Hong Kong West Kowloon Railway Station (香港西九龍站) is a major terminus serving the Guangzhou-Shenzhen-Hong Kong Express Rail Link, functioning as a critical physical and legal connection between Hong Kong and Mainland China."
+description: "The Hong Kong West Kowloon Railway Station (香港西九龍站) is a major terminus serving the Guangzhou-Shenzhen-Hong Kong Express Rail Link, functioning as a critical physical and legal connection between Hong Kong and Mainland…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

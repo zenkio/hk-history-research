@@ -6,6 +6,7 @@ year: 1370
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1370", "ai-draft", "coastal-defense", "hong-kong-origins", "maritime-history", "military-garrison", "ming-and-qing", "ming-dynasty"]
 summary: "In approximately 1370, the early Ming dynasty established a permanent military presence in Tuen Mun to secure the coastline and regulate maritime trade."
+description: "In approximately 1370, the early Ming dynasty established a permanent military presence in Tuen Mun to secure the coastline and regulate maritime trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

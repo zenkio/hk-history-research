@@ -6,6 +6,7 @@ year: 2013
 era: "Political contention and protest"
 tags: ["2013", "ai-draft", "contention", "free-to-air-license", "hktv", "media-freedom", "protests"]
 summary: "On October 20, 2013, tens of thousands of Hong Kong citizens demonstrated outside the government headquarters to protest the Executive Council's rejection of Hong Kong Television Network's free-to-air broadcasting license application, reflecting widespread public anxiety over declining media pluralism and freedom of expression."
+description: "On October 20, 2013, tens of thousands of Hong Kong citizens demonstrated outside the government headquarters to protest the Executive Council's rejection of Hong Kong Television Network's free-to-air broadcasting…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonial-history", "first-opium-war", "henry-pottinger", "opium-war", "treaty-of-nanking"]
 summary: "On August 10, 1841, Sir Henry Pottinger arrived in Hong Kong to replace Captain Charles Elliot as Chief Superintendent of Trade and Plenipotentiary, shifting British strategy toward a more aggressive northern military campaign and formal colonial administration."
+description: "On August 10, 1841, Sir Henry Pottinger arrived in Hong Kong to replace Captain Charles Elliot as Chief Superintendent of Trade and Plenipotentiary, shifting British strategy toward a more aggressive northern military…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

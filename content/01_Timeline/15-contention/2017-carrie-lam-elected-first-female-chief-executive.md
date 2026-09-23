@@ -6,6 +6,7 @@ year: 2017
 era: "Political contention and protest"
 tags: ["2017", "2017-election", "ai-draft", "carrie-lam", "chief-executive", "contention", "election-committee", "hong-kong-politics"]
 summary: "On March 26, 2017, Carrie Lam was chosen as Hong Kong's first female Chief Executive, securing 777 votes from the Election Committee amid deep political divisions."
+description: "On March 26, 2017, Carrie Lam was chosen as Hong Kong's first female Chief Executive, securing 777 votes from the Election Committee amid deep political divisions."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

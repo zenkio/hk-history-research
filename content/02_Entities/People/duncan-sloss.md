@@ -3,6 +3,7 @@ title: "Duncan Sloss (史樂詩)"
 title_zh: "史樂詩"
 tags: ["academic-administration", "ai-draft", "colonial-history", "education", "hku", "person", "world-war-ii"]
 summary: "Duncan Sloss was a British academic who served as the Vice-Chancellor of the University of Hong Kong (HKU) during the turbulent period of the Japanese occupation of Hong Kong."
+description: "Duncan Sloss was a British academic who served as the Vice-Chancellor of the University of Hong Kong (HKU) during the turbulent period of the Japanese occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

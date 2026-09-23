@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "bocca-tigris", "charles-elliot", "first-opium-war", "opium-war", "qing-dynasty", "royal-navy"]
 summary: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First Opium War."
+description: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

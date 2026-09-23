@@ -6,6 +6,7 @@ year: 1900
 era: "The New Territories lease and the early 20th century"
 tags: ["1900", "ai-draft", "british-colonialism", "land-court", "new-territories", "property-rights"]
 summary: "In 1900, the British colonial government established the New Territories Land Court to systematically survey, register, and convert traditional Chinese land ownership into Crown leases following the 1898 lease expansion."
+description: "In 1900, the British colonial government established the New Territories Land Court to systematically survey, register, and convert traditional Chinese land ownership into Crown leases following the 1898 lease…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

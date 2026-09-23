@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "contention", "hong-kong-transport", "infrastructure-development", "mtr-scandal", "political-contention", "public-governance"]
 summary: "Beginning in 2018, revelations of construction malpractice and missing safety documents at the MTR Shatin to Central Link sparked intense public scrutiny regarding government oversight and corporate accountability."
+description: "Beginning in 2018, revelations of construction malpractice and missing safety documents at the MTR Shatin to Central Link sparked intense public scrutiny regarding government oversight and corporate accountability."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

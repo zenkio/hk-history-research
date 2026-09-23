@@ -6,6 +6,7 @@ year: 1874
 era: "The New Territories lease and the early 20th century"
 tags: ["1874", "ai-draft", "colonial-history", "new-territories", "public-transport", "rickshaw", "urban-mobility"]
 summary: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
+description: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

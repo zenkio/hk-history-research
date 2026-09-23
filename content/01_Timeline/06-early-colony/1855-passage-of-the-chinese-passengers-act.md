@@ -6,6 +6,7 @@ year: 1855
 era: "The early colony"
 tags: ["1855", "ai-draft", "british-imperialism", "chinese-passengers-act", "coolie-trade", "early-colony", "emigration", "human-trafficking"]
 summary: "Enacted on August 14, 1855, the British Chinese Passengers Act aimed to regulate the abusive global coolie trade operating through Hong Kong, attempting to curb horrific conditions and human trafficking on emigrant ships."
+description: "Enacted on August 14, 1855, the British Chinese Passengers Act aimed to regulate the abusive global coolie trade operating through Hong Kong, attempting to curb horrific conditions and human trafficking on emigrant…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

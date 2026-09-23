@@ -5,6 +5,7 @@ year: 980
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["980", "ai-draft", "fishing-community", "hoklo", "maritime-history", "song-and-yuan", "song-dynasty", "tanka"]
 summary: "During the early Song dynasty between 960 and 1000, boat-dwelling populations established permanent maritime and coastal communities across Hong Kong waters, laying the foundations for the region's early marine economy."
+description: "During the early Song dynasty between 960 and 1000, boat-dwelling populations established permanent maritime and coastal communities across Hong Kong waters, laying the foundations for the region's early marine economy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

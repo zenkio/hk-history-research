@@ -3,6 +3,7 @@ title: "Kemal Bokhary (包默克)"
 title_zh: "包默克"
 tags: ["1993-tragedy", "ai-draft", "hong-kong-judiciary", "kemal-bokhary", "lan-kwai-fong", "legal-history", "person"]
 summary: "Kemal Bokhary is a prominent Hong Kong jurist who served as a Permanent Judge of the Court of Final Appeal and chaired the inquiry into the 1993 Lan Kwai Fong disaster."
+description: "Kemal Bokhary is a prominent Hong Kong jurist who served as a Permanent Judge of the Court of Final Appeal and chaired the inquiry into the 1993 Lan Kwai Fong disaster."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

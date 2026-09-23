@@ -3,6 +3,7 @@ title: "Sir Gordon Bremer (伯麥)"
 title_zh: "伯麥"
 tags: ["ai-draft", "british-navy", "charles-elliot", "colonial-history", "first-opium-war", "gordon-bremer", "person"]
 summary: "Sir Gordon Bremer was a British naval commander during the First Opium War who jointly took formal possession of Hong Kong Island alongside Captain Charles Elliot in 1841."
+description: "Sir Gordon Bremer was a British naval commander during the First Opium War who jointly took formal possession of Hong Kong Island alongside Captain Charles Elliot in 1841."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1984
 era: "Sino-British negotiations and the transition"
 tags: ["1984", "ai-draft", "diplomacy", "one-country-two-systems", "sino-british-joint-declaration", "sovereignty", "transition"]
 summary: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
+description: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

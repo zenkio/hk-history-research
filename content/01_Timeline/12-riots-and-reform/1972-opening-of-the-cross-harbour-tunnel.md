@@ -6,6 +6,7 @@ year: 1972
 era: "Riots and the MacLehose reforms"
 tags: ["1972", "ai-draft", "cross-harbour-tunnel", "infrastructure", "maclehose-era", "riots-and-reform", "transportation"]
 summary: "On August 2, 1972, the opening of the Cross-Harbour Tunnel established the first permanent road link between Hong Kong Island and Kowloon, fundamentally transforming the territory's transportation, commerce, and daily life."
+description: "On August 2, 1972, the opening of the Cross-Harbour Tunnel established the first permanent road link between Hong Kong Island and Kowloon, fundamentally transforming the territory's transportation, commerce, and daily…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "General Zhao Tuo (趙佗)"
 title_zh: "趙佗"
 tags: ["ai-draft", "archaeology", "hong-kong-history", "lingnan", "nanyue", "person", "qin-dynasty"]
 summary: "General Zhao Tuo was the founder of the Nanyue Kingdom (南越國), whose administrative expansion into the Lingnan region established the earliest imperial Chinese political framework governing the territory of present-day Hong Kong."
+description: "General Zhao Tuo was the founder of the Nanyue Kingdom (南越國), whose administrative expansion into the Lingnan region established the earliest imperial Chinese political framework governing the territory of present-day…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

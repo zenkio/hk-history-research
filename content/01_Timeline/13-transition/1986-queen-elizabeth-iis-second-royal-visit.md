@@ -6,6 +6,7 @@ year: 1986
 era: "Sino-British negotiations and the transition"
 tags: ["1986", "ai-draft", "british-colony", "royal-visit", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate continued British commitment."
+description: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

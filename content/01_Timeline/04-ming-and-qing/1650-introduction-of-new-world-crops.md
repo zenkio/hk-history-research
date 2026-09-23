@@ -6,6 +6,7 @@ year: 1650
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1650", "agricultural-history", "ai-draft", "great-clearance", "ming-and-qing", "ming-qing-transition", "new-world-crops", "subsistence-farming"]
 summary: "During the late 17th century, the introduction of drought-resistant crops from the Americas allowed settlers to cultivate the rugged hillsides of the Hong Kong region, significantly altering local subsistence patterns."
+description: "During the late 17th century, the introduction of drought-resistant crops from the Americas allowed settlers to cultivate the rugged hillsides of the Hong Kong region, significantly altering local subsistence patterns."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

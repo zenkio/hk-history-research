@@ -3,6 +3,7 @@ title: "Wanli Emperor (萬曆帝)"
 title_zh: "萬曆帝"
 tags: ["administrative-history", "ai-draft", "local-history", "ming-dynasty", "person", "wanli-emperor", "xin-an-county"]
 summary: "The Ming dynasty monarch whose reign saw the formal establishment of Xin'an County (新安縣), an administrative unit that encompassed modern-day Hong Kong."
+description: "The Ming dynasty monarch whose reign saw the formal establishment of Xin'an County (新安縣), an administrative unit that encompassed modern-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

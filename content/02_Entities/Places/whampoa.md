@@ -3,6 +3,7 @@ title: "Whampoa (黃埔)"
 title_zh: "黃埔"
 tags: ["ai-draft", "canton-system", "cohong", "maritime-history", "pearl-river-delta", "place", "qing-dynasty"]
 summary: "Whampoa was a vital anchorage for Western merchant vessels during the 18th and 19th centuries, serving as the essential gateway for the Canton System and the precursor to Hong Kong's development as a maritime hub."
+description: "Whampoa was a vital anchorage for Western merchant vessels during the 18th and 19th centuries, serving as the essential gateway for the Canton System and the precursor to Hong Kong's development as a maritime hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

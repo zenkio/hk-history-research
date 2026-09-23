@@ -3,6 +3,7 @@ title: "Thomas Boswell Watson (湯馬士·屈臣)"
 title_zh: "湯馬士·屈臣"
 tags: ["ai-draft", "business-history", "colonial-history", "hong-kong-dispensary", "nineteenth-century", "person", "pharmacology"]
 summary: "Thomas Boswell Watson was a pioneering British pharmacist whose establishment of the Hong Kong Dispensary laid the foundation for the corporate history of A.S. Watson & Co."
+description: "Thomas Boswell Watson was a pioneering British pharmacist whose establishment of the Hong Kong Dispensary laid the foundation for the corporate history of A.S. Watson & Co."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1936
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1936", "ai-draft", "colonial-governance", "interwar", "interwar-hong-kong", "pedestrian-rights", "traffic-safety", "urban-history"]
 summary: "In 1936, the Hong Kong Pedestrians’ Protection Association (香港行人保護協會) was established to address rising public concern over traffic safety amidst the rapid motorization of the colony."
+description: "In 1936, the Hong Kong Pedestrians’ Protection Association (香港行人保護協會) was established to address rising public concern over traffic safety amidst the rapid motorization of the colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

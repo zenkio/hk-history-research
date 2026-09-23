@@ -3,6 +3,7 @@ title: "Tramway Union Representatives"
 title_zh: "電車業工會代表"
 tags: ["ai-draft", "colonial-era", "labor-history", "person", "trade-unions", "tramway-strike"]
 summary: "Tramway Union Representatives were labor leaders who negotiated on behalf of workers during significant industrial actions, most notably the 1922 Great Tramway Strike."
+description: "Tramway Union Representatives were labor leaders who negotiated on behalf of workers during significant industrial actions, most notably the 1922 Great Tramway Strike."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

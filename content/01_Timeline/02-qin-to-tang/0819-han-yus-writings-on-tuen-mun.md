@@ -5,6 +5,7 @@ year: 819
 era: "Imperial frontier: Qin to Tang"
 tags: ["819", "ai-draft", "coastal-defense", "han-yu", "maritime-history", "qin-to-tang", "tang-dynasty", "tuen-mun"]
 summary: "In **819**, the renowned Tang dynasty scholar and official **Han Yu** wrote about the strategic military importance of Tuen Mun, providing early textual evidence of the region's role in imperial coastal defense."
+description: "In 819, the renowned Tang dynasty scholar and official Han Yu wrote about the strategic military importance of Tuen Mun, providing early textual evidence of the region's role in imperial coastal defense."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Canton (廣州)"
 title_zh: "廣州"
 tags: ["ai-draft", "canton", "canton-system", "first-opium-war", "lin-zexu", "pearl-river-delta", "place"]
 summary: "Canton was the primary administrative and commercial center of southern China that served as the mainland nexus for British trade, diplomatic friction, and military operations leading to the establishment of Hong Kong."
+description: "Canton was the primary administrative and commercial center of southern China that served as the mainland nexus for British trade, diplomatic friction, and military operations leading to the establishment of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

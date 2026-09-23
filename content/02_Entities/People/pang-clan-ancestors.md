@@ -3,6 +3,7 @@ title: "Pang Clan Ancestors (彭氏祖先)"
 title_zh: "彭氏祖先"
 tags: ["ai-draft", "ancestral-clans", "fanling-wai", "hong-kong-history", "new-territories", "pang-clan", "person"]
 summary: "The Pang Clan Ancestors were early settlers in the Northern New Territories, establishing the walled village of Fanling Wai (粉嶺圍) and influencing the cultural landscape of the region."
+description: "The Pang Clan Ancestors were early settlers in the Northern New Territories, establishing the walled village of Fanling Wai (粉嶺圍) and influencing the cultural landscape of the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

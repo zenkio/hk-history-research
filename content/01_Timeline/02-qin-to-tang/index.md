@@ -2,6 +2,7 @@
 title: "02 · Imperial frontier: Qin to Tang (214 BCE-960)"
 tags: ["administrative-history", "ai-draft", "archaeology", "coastal-industries", "era-overview", "imperial-frontier", "maritime-silk-road", "qin-to-tang"]
 summary: "During this millennium, the region that is now Hong Kong transitioned from an indigenous Baiyue (百越) frontier into a strategic maritime outpost of successive Chinese dynasties. Through waves of military conquest, administrative integration, and the rise of marine-based industries, the area became crucial to regional trade and empire-wide defense."
+description: "During this millennium, the region that is now Hong Kong transitioned from an indigenous Baiyue (百越) frontier into a strategic maritime outpost of successive Chinese dynasties."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash
 ingested: 2026-09-23

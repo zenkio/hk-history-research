@@ -6,6 +6,7 @@ year: 1841
 era: "The early colony"
 tags: ["1841", "ai-draft", "british-colonialism", "early-colony", "first-opium-war", "hong-kong-history", "possession-point"]
 summary: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
+description: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

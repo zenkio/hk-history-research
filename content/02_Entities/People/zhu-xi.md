@@ -3,6 +3,7 @@ title: "Zhu Xi (朱熹)"
 title_zh: "朱熹"
 tags: ["ai-draft", "ancestral-rituals", "neo-confucianism", "new-territories", "person", "song-dynasty", "zhu-xi"]
 summary: "Zhu Xi (朱熹) was a preeminent Song dynasty Neo-Confucian scholar whose ritual and philosophical teachings deeply shaped the kinship structures and ancestral worship practices of lineages in the Hong Kong New Territories."
+description: "Zhu Xi (朱熹) was a preeminent Song dynasty Neo-Confucian scholar whose ritual and philosophical teachings deeply shaped the kinship structures and ancestral worship practices of lineages in the Hong Kong New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

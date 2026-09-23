@@ -3,6 +3,7 @@ title: "Alexander Grantham (葛量洪)"
 title_zh: "葛量洪"
 tags: ["ai-draft", "alexander-grantham", "governor", "person", "public-housing", "refugees", "shek-kip-mei"]
 summary: "Sir Alexander Grantham served as the 22nd Governor of Hong Kong from 1947 to 1957, steering the colony through the massive influx of refugees from the Chinese Civil War and laying the foundations of modern public housing following the Shek Kip Mei fire."
+description: "Sir Alexander Grantham served as the 22nd Governor of Hong Kong from 1947 to 1957, steering the colony through the massive influx of refugees from the Chinese Civil War and laying the foundations of modern public…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

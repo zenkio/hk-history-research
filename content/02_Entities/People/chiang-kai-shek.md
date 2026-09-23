@@ -3,6 +3,7 @@ title: "Chiang Kai-shek (蔣介石)"
 title_zh: "蔣介石"
 tags: ["ai-draft", "british-hong-kong", "diplomatic-history", "nationalism", "person", "republic-of-china", "world-war-ii"]
 summary: "Chiang Kai-shek was the leader of the Republic of China whose insistence on the retrocession of Hong Kong during and after World War II created significant diplomatic tension between the Nationalist government and the British Empire."
+description: "Chiang Kai-shek was the leader of the Republic of China whose insistence on the retrocession of Hong Kong during and after World War II created significant diplomatic tension between the Nationalist government and the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

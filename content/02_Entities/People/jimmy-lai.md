@@ -3,6 +3,7 @@ title: "Jimmy Lai (黎智英)"
 title_zh: "黎智英"
 tags: ["ai-draft", "apple-daily", "civil-society", "hong-kong-history", "media-freedom", "national-security-law", "person"]
 summary: "Jimmy Lai (黎智英) is a prominent Hong Kong media entrepreneur and activist whose professional trajectory and political stance reflect the shifting landscape of press freedom and civil society in Hong Kong."
+description: "Jimmy Lai (黎智英) is a prominent Hong Kong media entrepreneur and activist whose professional trajectory and political stance reflect the shifting landscape of press freedom and civil society in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

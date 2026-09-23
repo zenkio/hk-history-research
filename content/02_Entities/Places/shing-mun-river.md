@@ -3,6 +3,7 @@ title: "Shing Mun River (城門河)"
 title_zh: "城門河"
 tags: ["ai-draft", "hong-kong-history", "hydrology", "new-territories", "place", "sha-tin", "urban-development"]
 summary: "Shing Mun River is a significant waterway in the Sha Tin District of Hong Kong that underwent major channelization during the late 20th-century development of the Sha Tin New Town."
+description: "Shing Mun River is a significant waterway in the Sha Tin District of Hong Kong that underwent major channelization during the late 20th-century development of the Sha Tin New Town."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

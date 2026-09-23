@@ -3,6 +3,7 @@ title: "Han Yu (韓愈)"
 title_zh: "韓愈"
 tags: ["ai-draft", "classical-literature", "hong-kong-origins", "literary-history", "person", "tang-dynasty", "tuen-mun"]
 summary: "A prominent Tang dynasty statesman and writer whose presence in local literature helped frame Tuen Mun (屯門) as a significant maritime gateway in early Chinese history."
+description: "A prominent Tang dynasty statesman and writer whose presence in local literature helped frame Tuen Mun (屯門) as a significant maritime gateway in early Chinese history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ray Wong (黃台仰)"
 title_zh: "黃台仰"
 tags: ["activism", "ai-draft", "hong-kong-history", "localism", "mong-kok-clash", "person", "political-exile"]
 summary: "Ray Wong (黃台仰) is a Hong Kong activist and the former spokesperson for Hong Kong Indigenous, known for his involvement in the 2016 Mong Kok civil unrest."
+description: "Ray Wong (黃台仰) is a Hong Kong activist and the former spokesperson for Hong Kong Indigenous, known for his involvement in the 2016 Mong Kok civil unrest."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

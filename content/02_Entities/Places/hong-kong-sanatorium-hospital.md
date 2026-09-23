@@ -3,6 +3,7 @@ title: "Hong Kong Sanatorium & Hospital (香港養和醫院)"
 title_zh: "香港養和醫院"
 tags: ["ai-draft", "anita-mui", "cantopop", "happy-valley", "hong-kong-sanatorium", "medical-history", "place"]
 summary: "The Hong Kong Sanatorium & Hospital (香港養和醫院) is a leading private medical institution in Happy Valley that has served prominent community figures, including the Canto-pop icon Anita Mui during her final days."
+description: "The Hong Kong Sanatorium & Hospital (香港養和醫院) is a leading private medical institution in Happy Valley that has served prominent community figures, including the Canto-pop icon Anita Mui during her final days."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

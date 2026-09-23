@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "district-council", "electoral-reform", "hong-kong-politics", "national-security-era", "national-security-law", "voter-turnout"]
 summary: "On December 10, 2023, Hong Kong held its first District Council elections under a drastically overhauled electoral system, resulting in a record-low voter turnout of 27.5% amid the implementation of the National Security Law."
+description: "On December 10, 2023, Hong Kong held its first District Council elections under a drastically overhauled electoral system, resulting in a record-low voter turnout of 27.5% amid the implementation of the National…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: 917
 era: "Imperial frontier: Qin to Tang"
 tags: ["917", "ai-draft", "five-dynasties", "maritime-trade", "qin-to-tang", "salt-production", "southern-han", "tang-dynasty"]
 summary: "Following the collapse of the Tang dynasty, the region encompassing modern-day Hong Kong fell under the control of the Southern Han kingdom in 917, initiating a period of increased resource exploitation."
+description: "Following the collapse of the Tang dynasty, the region encompassing modern-day Hong Kong fell under the control of the Southern Han kingdom in 917, initiating a period of increased resource exploitation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

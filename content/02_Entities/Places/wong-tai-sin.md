@@ -3,6 +3,7 @@ title: "Wong Tai Sin (黃大仙)"
 title_zh: "黃大仙"
 tags: ["ai-draft", "climate-resilience", "kowloon", "place", "public-housing", "religious-heritage", "urban-history"]
 summary: "Wong Tai Sin is a district in Kowloon known for its significant religious heritage, public housing developments, and vulnerability to extreme weather events due to its unique topographical basin."
+description: "Wong Tai Sin is a district in Kowloon known for its significant religious heritage, public housing developments, and vulnerability to extreme weather events due to its unique topographical basin."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

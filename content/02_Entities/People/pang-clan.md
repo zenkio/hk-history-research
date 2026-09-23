@@ -3,6 +3,7 @@ title: "Pang clan (彭氏)"
 title_zh: "彭氏"
 tags: ["ai-draft", "fanling", "five-great-clans", "hong-kong-history", "new-territories", "pang-clan", "person"]
 summary: "The Pang clan is one of the historically significant lineages of the New Territories, traditionally associated with the early settlement and defense of the Fanling area."
+description: "The Pang clan is one of the historically significant lineages of the New Territories, traditionally associated with the early settlement and defense of the Fanling area."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

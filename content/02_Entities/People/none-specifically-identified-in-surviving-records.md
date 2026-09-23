@@ -3,6 +3,7 @@ title: "None specifically identified in surviving records"
 title_zh: "大嶼山儒學推廣"
 tags: ["ai-draft", "confucianism", "education-history", "lantau-island", "local-studies", "person", "qing-dynasty"]
 summary: "The efforts to establish Confucian schooling on Lantau Island during the late Qing dynasty reflect the integration of local society into the broader imperial educational framework."
+description: "The efforts to establish Confucian schooling on Lantau Island during the late Qing dynasty reflect the integration of local society into the broader imperial educational framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

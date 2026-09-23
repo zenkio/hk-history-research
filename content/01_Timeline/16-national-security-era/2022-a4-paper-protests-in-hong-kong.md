@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "a4-paper-protests", "ai-draft", "free-speech", "national-security-era", "national-security-law", "student-activism", "zero-covid"]
 summary: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
+description: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

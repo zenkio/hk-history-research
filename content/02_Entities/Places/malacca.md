@@ -3,6 +3,7 @@ title: "Malacca (馬六甲)"
 title_zh: "馬六甲"
 tags: ["ai-draft", "malacca", "maritime-history", "ming-dynasty", "place", "portuguese-empire", "tunmen"]
 summary: "A pivotal maritime hub in the Malay Peninsula whose 16th-century history intersects with the origins of early European-Ming Chinese conflicts in the Pearl River Delta."
+description: "A pivotal maritime hub in the Malay Peninsula whose 16th-century history intersects with the origins of early European-Ming Chinese conflicts in the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

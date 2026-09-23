@@ -6,6 +6,7 @@ year: 2007
 era: "The early HKSAR"
 tags: ["2007", "ai-draft", "broadcasting", "digital-television", "early-hksar", "hksar-history", "media", "technology", "telecommunications"]
 summary: "In late 2007, the Hong Kong government initiated public consultations to facilitate the transition from analog to digital television broadcasting, marking a major milestone in local telecommunications modernization."
+description: "In late 2007, the Hong Kong government initiated public consultations to facilitate the transition from analog to digital television broadcasting, marking a major milestone in local telecommunications modernization."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

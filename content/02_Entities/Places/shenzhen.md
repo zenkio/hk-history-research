@@ -3,6 +3,7 @@ title: "Shenzhen (深圳)"
 title_zh: "深圳"
 tags: ["ai-draft", "border", "cross-border", "infrastructure", "place", "special-economic-zone", "water-supply"]
 summary: "Shenzhen is a major sub-provincial city in Guangdong province bordering Hong Kong, serving as the primary land gateway and an indispensable economic and infrastructural partner to the territory."
+description: "Shenzhen is a major sub-provincial city in Guangdong province bordering Hong Kong, serving as the primary land gateway and an indispensable economic and infrastructural partner to the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

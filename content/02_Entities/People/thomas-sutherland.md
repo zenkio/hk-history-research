@@ -3,6 +3,7 @@ title: "Thomas Sutherland (蘇石蘭)"
 title_zh: "蘇石蘭"
 tags: ["ai-draft", "banking-history", "colonial-history", "hsbc", "merchant-history", "nineteenth-century", "person"]
 summary: "Thomas Sutherland (蘇石蘭) was a Scottish shipping executive best known as the primary founder of The Hongkong and Shanghai Banking Corporation (HSBC) in 1865."
+description: "Thomas Sutherland (蘇石蘭) was a Scottish shipping executive best known as the primary founder of The Hongkong and Shanghai Banking Corporation (HSBC) in 1865."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

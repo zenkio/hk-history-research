@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
 summary: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
+description: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

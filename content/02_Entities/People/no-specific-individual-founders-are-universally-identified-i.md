@@ -3,6 +3,7 @@ title: "No specific individual founders are universally identified in extant 186
 title_zh: "中華遊樂會"
 tags: ["ai-draft", "colonial-era", "community-history", "hong-kong-history", "person", "social-clubs", "sporting-history"]
 summary: "The Chinese Recreation Club is a historic sporting institution established to provide recreational facilities for the Chinese community during the colonial era."
+description: "The Chinese Recreation Club is a historic sporting institution established to provide recreational facilities for the Chinese community during the colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

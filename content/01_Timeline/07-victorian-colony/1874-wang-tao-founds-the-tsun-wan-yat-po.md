@@ -6,6 +6,7 @@ year: 1874
 era: "Kowloon and the Victorian colony"
 tags: ["1874", "ai-draft", "chinese-journalism", "colonial-history", "late-qing-reform", "tsun-wan-yat-po", "victorian-colony", "wang-tao"]
 summary: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
+description: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

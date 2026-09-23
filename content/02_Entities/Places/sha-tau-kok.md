@@ -3,6 +3,7 @@ title: "Sha Tau Kok (沙頭角)"
 title_zh: "沙頭角"
 tags: ["ai-draft", "border-history", "chung-ying-street", "colonial-era", "new-territories", "place", "sha-tau-kok"]
 summary: "Sha Tau Kok is a border town situated at the northeastern extremity of the New Territories, historically defined by its strategic position between Hong Kong and mainland China."
+description: "Sha Tau Kok is a border town situated at the northeastern extremity of the New Territories, historically defined by its strategic position between Hong Kong and mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

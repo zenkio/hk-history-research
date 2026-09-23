@@ -3,6 +3,7 @@ title: "King Yin Lei (景賢里)"
 title_zh: "景賢里"
 tags: ["ai-draft", "architecture", "heritage-conservation", "historic-building", "hong-kong-island", "place", "stubbs-road"]
 summary: "King Yin Lei is a historic mansion on Stubbs Road, Hong Kong, notable for its blending of Chinese Renaissance architectural styles and its preservation following public mobilization."
+description: "King Yin Lei is a historic mansion on Stubbs Road, Hong Kong, notable for its blending of Chinese Renaissance architectural styles and its preservation following public mobilization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

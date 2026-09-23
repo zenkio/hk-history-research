@@ -3,6 +3,7 @@ title: "Anita Mui (梅艷芳)"
 title_zh: "梅艷芳"
 tags: ["1980s", "1990s", "ai-draft", "cantopop", "cultural-icon", "hong-kong-cinema", "person"]
 summary: "Anita Mui was a preeminent Cantopop singer and film actress whose versatility and humanitarian work solidified her status as the 'Daughter of Hong Kong.'"
+description: "Anita Mui was a preeminent Cantopop singer and film actress whose versatility and humanitarian work solidified her status as the 'Daughter of Hong Kong.'"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

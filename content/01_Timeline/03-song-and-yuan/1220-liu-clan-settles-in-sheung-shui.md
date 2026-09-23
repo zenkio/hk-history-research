@@ -6,6 +6,7 @@ year: 1220
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1220", "ai-draft", "lineage-society", "liu-clan", "new-territories-history", "sheung-shui", "song-and-yuan", "song-dynasty"]
 summary: "Around 1220, the Liu lineage established roots in Sheung Shui, marking a pivotal phase in the agricultural development and lineage-building of northern Hong Kong."
+description: "Around 1220, the Liu lineage established roots in Sheung Shui, marking a pivotal phase in the agricultural development and lineage-building of northern Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

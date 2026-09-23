@@ -5,6 +5,7 @@ year: 618
 era: "Imperial frontier: Qin to Tang"
 tags: ["618", "ai-draft", "indigenous-peoples", "lingnan", "maritime-society", "qin-to-tang", "tang-dynasty", "tanka-history"]
 summary: "During the early **Tang Dynasty (唐朝)**, around **618 CE**, the marginalized coastal and riverine populations of the Lingnan region increasingly consolidated into the distinct boat-dwelling Dan (蜑家 or 蛋家) community, establishing enduring maritime traditions in the waters around Hong Kong."
+description: "During the early Tang Dynasty (唐朝), around 618 CE, the marginalized coastal and riverine populations of the Lingnan region increasingly consolidated into the distinct boat-dwelling Dan (蜑家 or 蛋家) community, establishing…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

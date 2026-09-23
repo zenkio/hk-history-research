@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "hong-kong-history", "japanese-occupation", "kempeitai", "urban-history", "world-war-ii"]
 summary: "In 1942, the Imperial Japanese Army converted the luxury Hotel Cecil into the headquarters of the Kempeitai, signaling the consolidation of military police control over the occupied territory."
+description: "In 1942, the Imperial Japanese Army converted the luxury Hotel Cecil into the headquarters of the Kempeitai, signaling the consolidation of military police control over the occupied territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

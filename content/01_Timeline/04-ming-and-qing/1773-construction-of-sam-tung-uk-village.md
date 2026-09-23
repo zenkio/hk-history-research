@@ -6,6 +6,7 @@ year: 1773
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1773", "ai-draft", "hakka-history", "ming-and-qing", "new-territories", "qing-dynasty", "sam-tung-uk", "tsuen-wan"]
 summary: "In 1773, the Hakka Chan clan established the fortified rural settlement of Sam Tung Uk in Tsuen Wan, reflecting the expansion of inland migrants into the coastal regions of the Qing Empire."
+description: "In 1773, the Hakka Chan clan established the fortified rural settlement of Sam Tung Uk in Tsuen Wan, reflecting the expansion of inland migrants into the coastal regions of the Qing Empire."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

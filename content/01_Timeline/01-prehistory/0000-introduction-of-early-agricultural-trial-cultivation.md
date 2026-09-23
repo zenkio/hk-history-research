@@ -5,6 +5,7 @@ year: -1000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "prehistory", "rice-cultivation", "subsistence", "yue-culture"]
 summary: "Around 1000 BCE, archaeological evidence suggests that early inhabitants of the Hong Kong region began experimenting with rice cultivation, marking a transition from purely maritime subsistence to a mixed economy."
+description: "Around 1000 BCE, archaeological evidence suggests that early inhabitants of the Hong Kong region began experimenting with rice cultivation, marking a transition from purely maritime subsistence to a mixed economy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ricky Wong (王維基)"
 title_zh: "王維基"
 tags: ["ai-draft", "hktv", "hong-kong-entrepreneurs", "mass-protests", "media-history", "person", "ricky-wong"]
 summary: "Ricky Wong Wai-kay is a Hong Kong entrepreneur and telecommunications pioneer whose failed bid to launch a free-to-air television station sparked massive public protests in 2013."
+description: "Ricky Wong Wai-kay is a Hong Kong entrepreneur and telecommunications pioneer whose failed bid to launch a free-to-air television station sparked massive public protests in 2013."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

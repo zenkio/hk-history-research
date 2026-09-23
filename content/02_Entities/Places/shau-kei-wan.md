@@ -3,6 +3,7 @@ title: "Shau Kei Wan (筲箕灣)"
 title_zh: "筲箕灣"
 tags: ["ai-draft", "eastern-district", "hong-kong-history", "maritime-heritage", "place", "shau-kei-wan", "urban-development"]
 summary: "Shau Kei Wan is a historic coastal area in the Eastern District of Hong Kong Island, originating as a fishing village and evolving into a significant urban hub."
+description: "Shau Kei Wan is a historic coastal area in the Eastern District of Hong Kong Island, originating as a fishing village and evolving into a significant urban hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

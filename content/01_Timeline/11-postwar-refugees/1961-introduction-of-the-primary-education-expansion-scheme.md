@@ -6,6 +6,7 @@ year: 1961
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1961", "ai-draft", "colonial-history", "industrialisation", "postwar-recovery", "postwar-refugees", "primary-education", "social-welfare"]
 summary: "In **1961**, the Hong Kong government launched the Primary Education Expansion Scheme to massively increase subsidized primary school places, addressing the severe educational deficit among the surging postwar youth population."
+description: "In 1961, the Hong Kong government launched the Primary Education Expansion Scheme to massively increase subsidized primary school places, addressing the severe educational deficit among the surging postwar youth…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

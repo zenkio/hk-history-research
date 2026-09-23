@@ -3,6 +3,7 @@ title: "Lan Kwai Fong (蘭桂坊)"
 title_zh: "蘭桂坊"
 tags: ["ai-draft", "central", "colonial-hong-kong", "nightlife", "place", "public-safety", "urban-history"]
 summary: "Lan Kwai Fong is a renowned entertainment district in Central, Hong Kong, historically known for its colonial-era transformation from a residential street into the city's premier nightlife hub."
+description: "Lan Kwai Fong is a renowned entertainment district in Central, Hong Kong, historically known for its colonial-era transformation from a residential street into the city's premier nightlife hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

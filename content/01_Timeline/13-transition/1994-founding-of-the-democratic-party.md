@@ -6,6 +6,7 @@ year: 1994
 era: "Sino-British negotiations and the transition"
 tags: ["1994", "ai-draft", "democracy", "democratic-party", "electoral-reform", "hong-kong-history", "political-transition", "transition"]
 summary: "On October 2, 1994, the United Democrats of Hong Kong and Meeting Point merged to form the Democratic Party, marking a major consolidation of the pro-democracy camp during the transition period."
+description: "On October 2, 1994, the United Democrats of Hong Kong and Meeting Point merged to form the Democratic Party, marking a major consolidation of the pro-democracy camp during the transition period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

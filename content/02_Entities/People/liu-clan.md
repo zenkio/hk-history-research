@@ -3,6 +3,7 @@ title: "Liu clan (廖氏)"
 title_zh: "廖氏"
 tags: ["ai-draft", "five-great-clans", "hong-kong-history", "lineage-culture", "liu-clan", "new-territories", "person"]
 summary: "The Liu clan is one of the Five Great Clans of the New Territories, holding deep ancestral roots in Sheung Shui and playing a significant role in the historical social and land-holding structures of Hong Kong."
+description: "The Liu clan is one of the Five Great Clans of the New Territories, holding deep ancestral roots in Sheung Shui and playing a significant role in the historical social and land-holding structures of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

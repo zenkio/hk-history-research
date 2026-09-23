@@ -3,6 +3,7 @@ title: "Lo Siu-lan (盧少蘭)"
 title_zh: "盧少蘭"
 tags: ["ai-draft", "choi-hung-estate", "judicial-review", "link-reit", "person", "public-housing"]
 summary: "Lo Siu-lan is a Hong Kong public housing resident who successfully challenged the initial public offering of the Link REIT in 2004, marking a pivotal moment in public housing governance and judicial review in Hong Kong."
+description: "Lo Siu-lan is a Hong Kong public housing resident who successfully challenged the initial public offering of the Link REIT in 2004, marking a pivotal moment in public housing governance and judicial review in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

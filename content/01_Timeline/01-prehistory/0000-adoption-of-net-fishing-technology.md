@@ -5,6 +5,7 @@ year: -4000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "fishing-technology", "maritime-history", "neolithic-period", "prehistory"]
 summary: "Around 4000 BCE, the Neolithic inhabitants of the Hong Kong region transitioned toward more intensive maritime exploitation through the use of ceramic net sinkers."
+description: "Around 4000 BCE, the Neolithic inhabitants of the Hong Kong region transitioned toward more intensive maritime exploitation through the use of ceramic net sinkers."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

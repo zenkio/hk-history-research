@@ -3,6 +3,7 @@ title: "Hong Kong City Hall (香港大會堂)"
 title_zh: "香港大會堂"
 tags: ["ai-draft", "architecture", "civic-life", "colonial-history", "cultural-heritage", "hong-kong-government", "place"]
 summary: "Hong Kong City Hall is a landmark civic complex that has served as a central hub for the territory's cultural, social, and political life since the colonial era."
+description: "Hong Kong City Hall is a landmark civic complex that has served as a central hub for the territory's cultural, social, and political life since the colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

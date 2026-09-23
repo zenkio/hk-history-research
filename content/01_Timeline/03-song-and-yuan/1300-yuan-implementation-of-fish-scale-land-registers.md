@@ -6,6 +6,7 @@ year: 1300
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1300", "ai-draft", "clans", "land-registers", "property-rights", "song-and-yuan", "taxation", "yuan-dynasty"]
 summary: "Around 1300, the Mongol Yuan dynasty introduced systematic land registration in the region, establishing the foundation for private property rights and formal tax obligations that deeply affected local clans in areas like Tuen Mun (屯門) and Kam Tin (錦田)."
+description: "Around 1300, the Mongol Yuan dynasty introduced systematic land registration in the region, establishing the foundation for private property rights and formal tax obligations that deeply affected local clans in areas…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "George Ho (何佐芝)"
 title_zh: "何佐芝"
 tags: ["ai-draft", "broadcasting", "commercial-radio", "hong-kong-history", "media-pioneer", "person", "philanthropy"]
 summary: "George Ho was a prominent Hong Kong media mogul and philanthropist who founded Commercial Radio Hong Kong, significantly shaping the development of local broadcasting."
+description: "George Ho was a prominent Hong Kong media mogul and philanthropist who founded Commercial Radio Hong Kong, significantly shaping the development of local broadcasting."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

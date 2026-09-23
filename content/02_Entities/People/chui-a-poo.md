@@ -3,6 +3,7 @@ title: "Chui A-poo (徐亞保)"
 title_zh: "徐亞保"
 tags: ["ai-draft", "british-hong-kong", "chui-a-poo", "person", "piracy", "qing-dynasty", "royal-navy"]
 summary: "Chui A-poo (徐亞保) was a prominent 19th-century pirate leader in the South China Sea whose conflicts with the British Royal Navy significantly shaped colonial anti-piracy operations and Hong Kong's early maritime security."
+description: "Chui A-poo (徐亞保) was a prominent 19th-century pirate leader in the South China Sea whose conflicts with the British Royal Navy significantly shaped colonial anti-piracy operations and Hong Kong's early maritime…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

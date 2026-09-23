@@ -6,6 +6,7 @@ year: 1982
 era: "Sino-British negotiations and the transition"
 tags: ["1982", "ai-draft", "deng-xiaoping", "margaret-thatcher", "sino-british-joint-declaration", "sovereignty-negotiations", "transition"]
 summary: "On September 24, 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally launching diplomatic negotiations concerning the future of Hong Kong after the expiration of the New Territories lease in 1997."
+description: "On September 24, 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally launching diplomatic negotiations concerning the future of Hong Kong after the expiration of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

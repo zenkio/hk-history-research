@@ -6,6 +6,7 @@ year: 1757
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1757", "ai-draft", "canton-trade-system", "cohong", "foreign-merchants", "maritime-trade", "ming-and-qing", "qing-dynasty"]
 summary: "In 1757, the Qianlong Emperor restricted all maritime trade with Western nations to the port of Guangzhou, transforming the coastal waters and sheltered anchorages of the Hong Kong region into vital logistical hubs for international merchant shipping."
+description: "In 1757, the Qianlong Emperor restricted all maritime trade with Western nations to the port of Guangzhou, transforming the coastal waters and sheltered anchorages of the Hong Kong region into vital logistical hubs for…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

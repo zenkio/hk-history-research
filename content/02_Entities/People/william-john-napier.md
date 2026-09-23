@@ -3,6 +3,7 @@ title: "William John Napier"
 title_zh: "律勞卑"
 tags: ["ai-draft", "canton-system", "first-opium-war", "person", "qing-dynasty", "select-committee", "william-john-napier"]
 summary: "Lord Napier served as the first Chief Superintendent of British Trade in China, whose unsuccessful 1834 mission to establish direct diplomatic relations with Qing authorities marked a critical escalation toward the First Opium War."
+description: "Lord Napier served as the first Chief Superintendent of British Trade in China, whose unsuccessful 1834 mission to establish direct diplomatic relations with Qing authorities marked a critical escalation toward the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

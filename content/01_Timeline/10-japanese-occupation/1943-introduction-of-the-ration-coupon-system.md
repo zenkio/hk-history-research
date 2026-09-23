@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "food-shortage", "japanese-occupation", "ration-system", "world-war-two"]
 summary: "In March 1943, the Japanese military administration formally introduced a strict household rationing system for staple foods like rice in occupied Hong Kong, compounding severe supply shortages and forcing residents into dangerous survival measures."
+description: "In March 1943, the Japanese military administration formally introduced a strict household rationing system for staple foods like rice in occupied Hong Kong, compounding severe supply shortages and forcing residents…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

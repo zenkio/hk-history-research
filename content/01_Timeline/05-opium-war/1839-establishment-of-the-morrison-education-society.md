@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "canton-trade", "education", "first-opium-war", "morrison-education-society", "opium-war", "protestant-missions"]
 summary: "Founded in 1839 to promote Western education among Chinese youth, the Morrison Education Society marked an early organized effort in cross-cultural intellectual engagement during the turbulent prelude to British colonial rule."
+description: "Founded in 1839 to promote Western education among Chinese youth, the Morrison Education Society marked an early organized effort in cross-cultural intellectual engagement during the turbulent prelude to British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

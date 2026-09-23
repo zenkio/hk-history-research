@@ -3,6 +3,7 @@ title: "Tung Chung (東涌)"
 title_zh: "東涌"
 tags: ["ai-draft", "colonial-history", "lantau-island", "maritime-history", "piracy", "place", "qing-dynasty"]
 summary: "Tung Chung is a historic settlement on Lantau Island that served as a critical strategic site for maritime defense and piracy suppression in the Qing dynasty."
+description: "Tung Chung is a historic settlement on Lantau Island that served as a critical strategic site for maritime defense and piracy suppression in the Qing dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

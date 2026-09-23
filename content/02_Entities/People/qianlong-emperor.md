@@ -3,6 +3,7 @@ title: "Qianlong Emperor (乾隆帝)"
 title_zh: "乾隆帝"
 tags: ["ai-draft", "canton-system", "foreign-relations", "imperial-china", "maritime-history", "person", "qing-dynasty"]
 summary: "The Qianlong Emperor was the sixth ruler of the Qing dynasty whose trade policies and interactions with the British East India Company set the regulatory framework for maritime commerce in the Canton region, directly influencing the conditions that led to the eventual establishment of Hong Kong as a British colony."
+description: "The Qianlong Emperor was the sixth ruler of the Qing dynasty whose trade policies and interactions with the British East India Company set the regulatory framework for maritime commerce in the Canton region, directly…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

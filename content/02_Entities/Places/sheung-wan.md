@@ -3,6 +3,7 @@ title: "Sheung Wan (上環)"
 title_zh: "上環"
 tags: ["ai-draft", "colonial-history", "place", "sheung-wan", "tung-wah-hospital", "urban-reclamation", "victorian-hong-kong"]
 summary: "Sheung Wan is one of Hong Kong's earliest urban districts, serving as an important early commercial and administrative hub for the British colonial administration while maintaining deep ties to traditional Chinese society."
+description: "Sheung Wan is one of Hong Kong's earliest urban districts, serving as an important early commercial and administrative hub for the British colonial administration while maintaining deep ties to traditional Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

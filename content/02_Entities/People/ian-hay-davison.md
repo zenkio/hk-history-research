@@ -3,6 +3,7 @@ title: "Ian Hay Davison (戴維森)"
 title_zh: "戴維森"
 tags: ["ai-draft", "black-monday", "financial-history", "hong-kong-stock-exchange", "person", "regulatory-reform", "securities-review-committee"]
 summary: "Ian Hay Davison was a prominent British accountant who chaired the Securities Review Committee in 1987, playing a pivotal role in the modernization of Hong Kong's financial regulatory framework following the October stock market crash."
+description: "Ian Hay Davison was a prominent British accountant who chaired the Securities Review Committee in 1987, playing a pivotal role in the modernization of Hong Kong's financial regulatory framework following the October…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

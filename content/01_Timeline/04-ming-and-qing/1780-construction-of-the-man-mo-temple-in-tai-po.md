@@ -6,6 +6,7 @@ year: 1780
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1780", "ai-draft", "lineage-society", "local-religion", "man-mo-temple", "ming-and-qing", "ming-qing-coast", "tai-po"]
 summary: "Around 1780, local communities in Tai Po erected a dual-deity temple dedicated to the civil god Man Tai and the martial god Mo Tai to secure divine protection, social order, and civil harmony for their expanding agrarian and trading settlements."
+description: "Around 1780, local communities in Tai Po erected a dual-deity temple dedicated to the civil god Man Tai and the martial god Mo Tai to secure divine protection, social order, and civil harmony for their expanding…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

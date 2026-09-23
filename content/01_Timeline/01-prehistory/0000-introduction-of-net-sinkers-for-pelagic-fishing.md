@@ -5,6 +5,7 @@ year: -3500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "fishing-technology", "maritime-history", "neolithic", "prehistory"]
 summary: "Around 3500 to 3000 BCE, the adoption of specialized net sinkers marked a transformative shift in Hong Kong’s Neolithic maritime economy, enabling systematic offshore fishing."
+description: "Around 3500 to 3000 BCE, the adoption of specialized net sinkers marked a transformative shift in Hong Kong’s Neolithic maritime economy, enabling systematic offshore fishing."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Shek Kip Mei (石硤尾)"
 title_zh: "石硤尾"
 tags: ["ai-draft", "colonial-history", "kowloon", "place", "public-housing", "refugees"]
 summary: "Shek Kip Mei is a residential area in Kowloon that became the birthplace of Hong Kong's public housing program following a devastating fire in 1953."
+description: "Shek Kip Mei is a residential area in Kowloon that became the birthplace of Hong Kong's public housing program following a devastating fire in 1953."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

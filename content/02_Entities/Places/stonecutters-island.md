@@ -3,6 +3,7 @@ title: "Stonecutters Island (昂船洲)"
 title_zh: "昂船洲"
 tags: ["ai-draft", "colonial-history", "kowloon", "land-reclamation", "military-history", "place", "victoria-harbour"]
 summary: "Stonecutters Island is a former island in Victoria Harbour that played a significant strategic role in the British naval defense of Hong Kong."
+description: "Stonecutters Island is a former island in Victoria Harbour that played a significant strategic role in the British naval defense of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

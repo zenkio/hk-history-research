@@ -3,6 +3,7 @@ title: "Western Front (西方戰線)"
 title_zh: "西方戰線"
 tags: ["ai-draft", "chinese-labour-corps", "colonial-era", "first-world-war", "hong-kong-history", "labour-migration", "place"]
 summary: "The Western Front refers to the primary theater of the First World War in France and Belgium, which holds significance for Hong Kong due to the deployment of thousands of laborers recruited from the region to support the Allied war effort."
+description: "The Western Front refers to the primary theater of the First World War in France and Belgium, which holds significance for Hong Kong due to the deployment of thousands of laborers recruited from the region to support…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

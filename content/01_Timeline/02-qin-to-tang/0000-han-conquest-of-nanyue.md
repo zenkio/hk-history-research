@@ -5,6 +5,7 @@ year: -111
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "ancient-history", "han-dynasty", "imperial-expansion", "lingnan", "nanyue", "qin-to-tang"]
 summary: "In 111 BCE, Emperor Wu of Han launched a decisive military campaign that conquered the Kingdom of Nanyue, bringing the modern Hong Kong region under direct imperial Chinese administrative control for the first time."
+description: "In 111 BCE, Emperor Wu of Han launched a decisive military campaign that conquered the Kingdom of Nanyue, bringing the modern Hong Kong region under direct imperial Chinese administrative control for the first time."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

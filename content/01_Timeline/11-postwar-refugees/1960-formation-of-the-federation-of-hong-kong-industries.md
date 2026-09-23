@@ -6,6 +6,7 @@ year: 1960
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1960", "1960s", "ai-draft", "economic-development", "federation-of-hong-kong-industries", "industrialisation", "post-war-history", "postwar-refugees"]
 summary: "Established in 1960, the Federation of Hong Kong Industries served as a pivotal organization for professionalizing the territory's manufacturing sector during its post-war economic transformation."
+description: "Established in 1960, the Federation of Hong Kong Industries served as a pivotal organization for professionalizing the territory's manufacturing sector during its post-war economic transformation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

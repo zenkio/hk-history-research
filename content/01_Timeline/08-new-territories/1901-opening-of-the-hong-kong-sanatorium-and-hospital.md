@@ -6,6 +6,7 @@ year: 1901
 era: "The New Territories lease and the early 20th century"
 tags: ["1901", "ai-draft", "colonial-era", "healthcare-development", "hong-kong-sanatorium", "medical-history", "new-territories"]
 summary: "In 1901, a group of prominent Chinese medical practitioners established the Yeung Wo Nursing Home (養和療養院) in Happy Valley, marking a transition toward modern private healthcare managed by the local Chinese community."
+description: "In 1901, a group of prominent Chinese medical practitioners established the Yeung Wo Nursing Home (養和療養院) in Happy Valley, marking a transition toward modern private healthcare managed by the local Chinese community."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Rennie's Mill (調景嶺)"
 title_zh: "調景嶺"
 tags: ["ai-draft", "cold-war", "hong-kong-history", "kmt", "place", "refugees", "urban-development"]
 summary: "Rennie's Mill was a prominent refugee settlement established in 1950 that served as a political and social enclave for those fleeing the Chinese Communist Party following the establishment of the People's Republic of China."
+description: "Rennie's Mill was a prominent refugee settlement established in 1950 that served as a political and social enclave for those fleeing the Chinese Communist Party following the establishment of the People's Republic of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

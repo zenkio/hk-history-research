@@ -3,6 +3,7 @@ title: "Zheng Chenggong (鄭成功)"
 title_zh: "鄧成功"
 tags: ["ai-draft", "great-clearance", "maritime-history", "ming-dynasty", "person", "qing-dynasty", "zheng-chenggong"]
 summary: "Zheng Chenggong was a loyalist military commander of the late Ming dynasty whose maritime resistance against the Qing empire heavily impacted the coastal populations of Guangdong, including the future territory of Hong Kong."
+description: "Zheng Chenggong was a loyalist military commander of the late Ming dynasty whose maritime resistance against the Qing empire heavily impacted the coastal populations of Guangdong, including the future territory of Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

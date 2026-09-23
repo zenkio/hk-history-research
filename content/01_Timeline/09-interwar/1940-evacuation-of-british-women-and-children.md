@@ -6,6 +6,7 @@ year: 1940
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1940", "ai-draft", "british-empire", "evacuation", "hong-kong-history", "interwar", "pacific-war", "world-war-ii"]
 summary: "In July 1940, facing the escalating threat of Japanese expansionism, the Hong Kong colonial government ordered the compulsory evacuation of over 3,000 European women and children to Australia."
+description: "In July 1940, facing the escalating threat of Japanese expansionism, the Hong Kong colonial government ordered the compulsory evacuation of over 3,000 European women and children to Australia."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

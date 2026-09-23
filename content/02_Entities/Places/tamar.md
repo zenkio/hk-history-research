@@ -3,6 +3,7 @@ title: "Tamar (添馬)"
 title_zh: "添馬"
 tags: ["admiralty", "ai-draft", "civil-protests", "colonial-history", "hong-kong-government", "place", "tamar"]
 summary: "Tamar is a strategic waterfront site in Admiralty that has transitioned from a key British naval base to the administrative heart of the Hong Kong Special Administrative Region government."
+description: "Tamar is a strategic waterfront site in Admiralty that has transitioned from a key British naval base to the administrative heart of the Hong Kong Special Administrative Region government."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

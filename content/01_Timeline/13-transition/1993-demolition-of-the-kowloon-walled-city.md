@@ -6,6 +6,7 @@ year: 1993
 era: "Sino-British negotiations and the transition"
 tags: ["1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
 summary: "On **March 23, 1993**, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
+description: "On March 23, 1993, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Lintin Island (內伶仃島)"
 title_zh: "內伶仃島"
 tags: ["ai-draft", "colonial-era", "maritime-history", "opium-trade", "pearl-river-delta", "place", "qing-dynasty"]
 summary: "Lintin Island is an island in the Pearl River Estuary that served as a critical anchorage for the illegal opium trade, profoundly influencing the geopolitical conditions leading to the First Opium War and the subsequent establishment of the British colony of Hong Kong."
+description: "Lintin Island is an island in the Pearl River Estuary that served as a critical anchorage for the illegal opium trade, profoundly influencing the geopolitical conditions leading to the First Opium War and the subsequent…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

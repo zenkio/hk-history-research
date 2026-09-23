@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "battle-of-kowloon", "charles-elliot", "first-opium-war", "lin-zexu", "naval-clash", "opium-war"]
 summary: "The Battle of Kowloon on September 4, 1839, marked the first military engagement of the First Opium War in Hong Kong waters, involving a naval clash between British pinnaces and Qing war junks."
+description: "The Battle of Kowloon on September 4, 1839, marked the first military engagement of the First Opium War in Hong Kong waters, involving a naval clash between British pinnaces and Qing war junks."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

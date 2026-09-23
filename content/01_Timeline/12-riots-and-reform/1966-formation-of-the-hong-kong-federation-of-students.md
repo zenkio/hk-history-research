@@ -6,6 +6,7 @@ year: 1966
 era: "Riots and the MacLehose reforms"
 tags: ["1960s", "1966", "ai-draft", "colonial-history", "hkfs", "political-activism", "riots-and-reform", "student-movement"]
 summary: "On May 25, 1966, the Hong Kong Federation of Students was established as an umbrella organization for tertiary student unions, marking a pivotal shift toward organized political and social activism in the colonial era."
+description: "On May 25, 1966, the Hong Kong Federation of Students was established as an umbrella organization for tertiary student unions, marking a pivotal shift toward organized political and social activism in the colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

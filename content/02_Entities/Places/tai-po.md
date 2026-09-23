@@ -3,6 +3,7 @@ title: "Tai Po (大埔)"
 title_zh: "大埔"
 tags: ["ai-draft", "new-territories", "place", "railway-history", "southern-han", "tai-po", "tolo-harbour"]
 summary: "Tai Po is a major district in the New Territories with a long history stretching from medieval pearl harvesting through British colonial development to wartime resistance."
+description: "Tai Po is a major district in the New Territories with a long history stretching from medieval pearl harvesting through British colonial development to wartime resistance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

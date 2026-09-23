@@ -3,6 +3,7 @@ title: "Wellington Street (威靈頓街)"
 title_zh: "威靈頓街"
 tags: ["ai-draft", "central", "colonial-era", "hong-kong-history", "place", "urban-development", "wellington-street"]
 summary: "Located in Central, Wellington Street is one of the oldest streets in Hong Kong, serving as a vital commercial artery that tracks the evolution of the city's urban landscape from the colonial era to the present."
+description: "Located in Central, Wellington Street is one of the oldest streets in Hong Kong, serving as a vital commercial artery that tracks the evolution of the city's urban landscape from the colonial era to the present."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

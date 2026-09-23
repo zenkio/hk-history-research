@@ -6,6 +6,7 @@ year: 1821
 era: "Canton trade and the First Opium War"
 tags: ["1821", "ai-draft", "british-imperialism", "canton-trade", "first-opium-war", "lintin-island", "opium-war", "smuggling"]
 summary: "In **1821**, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the illicit drug trade."
+description: "In 1821, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

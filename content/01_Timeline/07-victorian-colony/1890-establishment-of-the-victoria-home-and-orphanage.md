@@ -6,6 +6,7 @@ year: 1890
 era: "Kowloon and the Victorian colony"
 tags: ["1890", "19th-century-hong-kong", "ai-draft", "colonial-history", "gender-studies", "missionary-work", "social-welfare", "victorian-colony"]
 summary: "In 1890, the Victoria Home and Orphanage was established in Hong Kong to provide refuge for abandoned women and children, reflecting the colonial administration's evolving approach to social welfare during a period of intense demographic change."
+description: "In 1890, the Victoria Home and Orphanage was established in Hong Kong to provide refuge for abandoned women and children, reflecting the colonial administration's evolving approach to social welfare during a period of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kwai Tsing Container Terminals (葵青貨櫃碼頭)"
 title_zh: "葵青貨櫃碼頭"
 tags: ["2013-strike", "ai-draft", "hong-kong-economy", "kwai-tsing", "labor-rights", "maritime-history", "place"]
 summary: "The Kwai Tsing Container Terminals are a major maritime logistics hub in Hong Kong that became the focal point of the historic 2013 dock workers strike."
+description: "The Kwai Tsing Container Terminals are a major maritime logistics hub in Hong Kong that became the focal point of the historic 2013 dock workers strike."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

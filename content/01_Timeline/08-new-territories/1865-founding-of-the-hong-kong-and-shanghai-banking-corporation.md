@@ -6,6 +6,7 @@ year: 1865
 era: "The New Territories lease and the early 20th century"
 tags: ["1865", "19th-century", "ai-draft", "banking-history", "british-empire", "hsbc", "new-territories", "trade-finance"]
 summary: "Established on March 3, 1865, the Hong Kong and Shanghai Banking Corporation was founded to finance the rapidly expanding trade networks between China, Europe, and India, eventually becoming a pillar of British financial dominance in Asia."
+description: "Established on March 3, 1865, the Hong Kong and Shanghai Banking Corporation was founded to finance the rapidly expanding trade networks between China, Europe, and India, eventually becoming a pillar of British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

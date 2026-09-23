@@ -5,6 +5,7 @@ year: 300
 era: "Imperial frontier: Qin to Tang"
 tags: ["300", "ai-draft", "ancestor-veneration", "frontier-societies", "hong-kong-history", "lineage-studies", "qin-to-tang", "six-dynasties"]
 summary: "Between the 4th and 5th centuries, the integration of indigenous spiritual practices with Han Chinese ritual customs established a foundation for lineage identity in the Lingnan region."
+description: "Between the 4th and 5th centuries, the integration of indigenous spiritual practices with Han Chinese ritual customs established a foundation for lineage identity in the Lingnan region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

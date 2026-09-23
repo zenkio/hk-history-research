@@ -6,6 +6,7 @@ year: 1977
 era: "Riots and the MacLehose reforms"
 tags: ["1977", "ai-draft", "maclehose-era", "riots-and-reform", "school-corruption", "social-activism", "student-movement", "teacher-unions"]
 summary: "The 1977-1978 Precious Blood Golden Jubilee School Incident was a major student and teacher protest against alleged corruption and mismanagement by the school principal, catalyzing the growth of independent social activism and professional unionism in Hong Kong."
+description: "The 1977-1978 Precious Blood Golden Jubilee School Incident was a major student and teacher protest against alleged corruption and mismanagement by the school principal, catalyzing the growth of independent social…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

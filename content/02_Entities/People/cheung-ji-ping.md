@@ -3,6 +3,7 @@ title: "Cheung Ji-ping (張志平)"
 title_zh: "張志平"
 tags: ["ai-draft", "causeway-bay-booksellers", "hong-kong-politics", "mighty-current-media", "one-country-two-systems", "person", "press-freedom"]
 summary: "Cheung Ji-ping (張志平) was a staff member of the Mighty Current Media publishing house whose 2015 disappearance became a central point of international concern regarding the erosion of 'one country, two systems' in Hong Kong."
+description: "Cheung Ji-ping (張志平) was a staff member of the Mighty Current Media publishing house whose 2015 disappearance became a central point of international concern regarding the erosion of 'one country, two systems' in Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

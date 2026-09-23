@@ -6,6 +6,7 @@ year: 1420
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1420", "ai-draft", "economic-history", "geographical-naming", "incense-trade", "local-origins", "ming-and-qing", "ming-dynasty"]
 summary: "During the **1420s**, the cultivation and processing of valuable incense trees expanded significantly across Lantau Island and the New Territories, creating a vital regional trade network that eventually gave rise to the name Hong Kong."
+description: "During the 1420s, the cultivation and processing of valuable incense trees expanded significantly across Lantau Island and the New Territories, creating a vital regional trade network that eventually gave rise to the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

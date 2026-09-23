@@ -6,6 +6,7 @@ year: 2010
 era: "Political contention and protest"
 tags: ["2010", "ai-draft", "basic-law", "constitutional-reform", "contention", "legislative-council", "pan-democrats"]
 summary: "In June 2010, Hong Kong's Legislative Council passed a modified constitutional reform package for the 2012 elections, marking a rare instance of political compromise between Beijing, the SAR government, and moderate pro-democracy legislators."
+description: "In June 2010, Hong Kong's Legislative Council passed a modified constitutional reform package for the 2012 elections, marking a rare instance of political compromise between Beijing, the SAR government, and moderate…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

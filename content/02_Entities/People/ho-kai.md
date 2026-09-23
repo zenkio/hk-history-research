@@ -3,6 +3,7 @@ title: "Ho Kai (何啟)"
 title_zh: "何啟"
 tags: ["ai-draft", "colonial-history", "education-reform", "hong-kong-figures", "kai-tak", "legislative-council", "person"]
 summary: "Sir Kai Ho Kai was a prominent physician, barrister, and legislative councillor who played a foundational role in the modernization of Hong Kong's education, healthcare, and infrastructure."
+description: "Sir Kai Ho Kai was a prominent physician, barrister, and legislative councillor who played a foundational role in the modernization of Hong Kong's education, healthcare, and infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

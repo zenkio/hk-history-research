@@ -3,6 +3,7 @@ title: "Yamen (崖門)"
 title_zh: "崖門"
 tags: ["ai-draft", "battle-of-yamen", "hau-wong", "hong-kong-history", "imperial-flight", "place", "song-dynasty"]
 summary: "Yamen was the site of the decisive naval battle in **1279** where the invading Mongol forces destroyed the retreating Song imperial fleet, marking the absolute end of the Southern Song dynasty and sending ripples of refugee migration and localized veneration into the Hong Kong region."
+description: "Yamen was the site of the decisive naval battle in 1279 where the invading Mongol forces destroyed the retreating Song imperial fleet, marking the absolute end of the Southern Song dynasty and sending ripples of refugee…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

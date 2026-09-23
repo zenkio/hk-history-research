@@ -3,6 +3,7 @@ title: "Paul Chan Mo-po (陳茂波)"
 title_zh: "陳茂波"
 tags: ["ai-draft", "economic-policy", "financial-secretary", "hong-kong-government", "hong-kong-history", "person"]
 summary: "Paul Chan Mo-po is a prominent Hong Kong politician currently serving as the Financial Secretary, known for overseeing the territory's fiscal policy and economic initiatives."
+description: "Paul Chan Mo-po is a prominent Hong Kong politician currently serving as the Financial Secretary, known for overseeing the territory's fiscal policy and economic initiatives."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

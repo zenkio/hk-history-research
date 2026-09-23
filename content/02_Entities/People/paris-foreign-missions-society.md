@@ -3,6 +3,7 @@ title: "Paris Foreign Missions Society (巴黎外方傳教會)"
 title_zh: "巴黎外方傳教會"
 tags: ["19th-century", "ai-draft", "catholic-church", "colonial-hong-kong", "missionary-history", "person", "religious-history"]
 summary: "The Paris Foreign Missions Society (Missions Étrangères de Paris) was a Catholic missionary organization instrumental in establishing the administrative foundation of the Roman Catholic Church in early colonial Hong Kong."
+description: "The Paris Foreign Missions Society (Missions Étrangères de Paris) was a Catholic missionary organization instrumental in establishing the administrative foundation of the Roman Catholic Church in early colonial Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kat Hing Wai (吉慶圍)"
 title_zh: "吉慶圍"
 tags: ["ai-draft", "colonial-history", "new-territories", "place", "six-day-war", "tang-clan", "walled-village"]
 summary: "Kat Hing Wai is a prominent walled village in Yuen Long inhabited primarily by the Tang clan, serving as a key site for understanding indigenous New Territories history, lineage society, and armed resistance against British colonial takeover."
+description: "Kat Hing Wai is a prominent walled village in Yuen Long inhabited primarily by the Tang clan, serving as a key site for understanding indigenous New Territories history, lineage society, and armed resistance against…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

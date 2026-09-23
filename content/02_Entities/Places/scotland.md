@@ -3,6 +3,7 @@ title: "Scotland (蘇格蘭)"
 title_zh: "蘇格蘭"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "jardine-matheson", "place", "scottish-diaspora", "social-history"]
 summary: "Scotland is a constituent country of the United Kingdom whose cultural and commercial influence was significant during the early development of Hong Kong as a British colony."
+description: "Scotland is a constituent country of the United Kingdom whose cultural and commercial influence was significant during the early development of Hong Kong as a British colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Yuen Long (元朗)"
 title_zh: "元朗"
 tags: ["2019-protests", "ai-draft", "colonial-history", "kat-hing-wai", "new-territories", "place", "yuen-long"]
 summary: "Yuen Long is a major region in the northwestern New Territories of Hong Kong, significant for its complex agrarian history, walled villages, and pivotal role in modern civil unrest."
+description: "Yuen Long is a major region in the northwestern New Territories of Hong Kong, significant for its complex agrarian history, walled villages, and pivotal role in modern civil unrest."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

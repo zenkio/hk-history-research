@@ -6,6 +6,7 @@ year: 1274
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1274", "ai-draft", "epigraphy", "maritime-history", "rock-inscription", "song-and-yuan", "song-dynasty", "tin-hau"]
 summary: "In **1274**, an inscription detailing the renovation of a Tin Hau temple was carved onto the cliffs of Joss House Bay, marking Hong Kong's oldest surviving dated historical relic."
+description: "In 1274, an inscription detailing the renovation of a Tin Hau temple was carved onto the cliffs of Joss House Bay, marking Hong Kong's oldest surviving dated historical relic."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

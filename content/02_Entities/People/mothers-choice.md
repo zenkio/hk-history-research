@@ -3,6 +3,7 @@ title: "Mother's Choice (母親的抉擇)"
 title_zh: "母親的抉擇"
 tags: ["adoption", "ai-draft", "charity", "hong-kong-history", "ngos", "person", "social-welfare"]
 summary: "Mother's Choice is a Hong Kong-based charitable organization that provides support for children without families and pregnant teenagers, representing a significant shift in the city's social welfare landscape."
+description: "Mother's Choice is a Hong Kong-based charitable organization that provides support for children without families and pregnant teenagers, representing a significant shift in the city's social welfare landscape."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

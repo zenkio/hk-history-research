@@ -6,6 +6,7 @@ year: 1851
 era: "The early colony"
 tags: ["1851", "ai-draft", "early-colony", "maritime-security", "piracy", "royal-navy"]
 summary: "The **1851** arrest and subsequent death in custody of the notorious pirate leader **Chui A-poo** (徐亞保) underscored the severe maritime security challenges facing the early British colony of Hong Kong and its regional trade networks."
+description: "The 1851 arrest and subsequent death in custody of the notorious pirate leader Chui A-poo (徐亞保) underscored the severe maritime security challenges facing the early British colony of Hong Kong and its regional trade…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

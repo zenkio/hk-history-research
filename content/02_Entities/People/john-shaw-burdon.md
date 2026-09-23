@@ -3,6 +3,7 @@ title: "John Shaw Burdon (包爾騰)"
 title_zh: "包爾騰"
 tags: ["ai-draft", "anglican-church", "bishop-of-victoria", "colonial-history", "missionary", "person", "social-welfare"]
 summary: "John Shaw Burdon was a prominent British clergyman and the third Bishop of Victoria who played a significant role in the expansion of Anglican missionary work and social welfare in colonial Hong Kong."
+description: "John Shaw Burdon was a prominent British clergyman and the third Bishop of Victoria who played a significant role in the expansion of Anglican missionary work and social welfare in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

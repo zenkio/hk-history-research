@@ -6,6 +6,7 @@ year: 1888
 era: "The New Territories lease and the early 20th century"
 tags: ["1888", "ai-draft", "colonial-era", "new-territories", "star-ferry", "transport-history", "urban-development", "victoria-harbour"]
 summary: "The establishment of the cross-harbour ferry service in the late 19th century laid the foundation for modern urban integration between Hong Kong Island and the Kowloon Peninsula."
+description: "The establishment of the cross-harbour ferry service in the late 19th century laid the foundation for modern urban integration between Hong Kong Island and the Kowloon Peninsula."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1859
 era: "The early colony"
 tags: ["1859", "ai-draft", "colonial-history", "early-colony", "economic-history", "hong-kong-government", "land-policy", "public-finance"]
 summary: "In 1859, the colonial government formalized the systematic auctioning of Crown land, setting a precedent that would dictate the economic structure of Hong Kong for over a century."
+description: "In 1859, the colonial government formalized the systematic auctioning of Crown land, setting a precedent that would dictate the economic structure of Hong Kong for over a century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1983
 era: "Sino-British negotiations and the transition"
 tags: ["1983", "ai-draft", "colonial-era", "hong-kong-history", "land-policy", "letter-b", "new-territories", "transition", "urban-development"]
 summary: "In 1983, the Hong Kong colonial government formalized the 'Letter B' (乙種換地權益書) system to facilitate urban development in the New Territories, fundamentally altering the land tenure landscape."
+description: "In 1983, the Hong Kong colonial government formalized the 'Letter B' (乙種換地權益書) system to facilitate urban development in the New Territories, fundamentally altering the land tenure landscape."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

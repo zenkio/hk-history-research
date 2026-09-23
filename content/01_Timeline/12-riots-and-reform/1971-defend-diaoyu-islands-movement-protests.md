@@ -6,6 +6,7 @@ year: 1971
 era: "Riots and the MacLehose reforms"
 tags: ["1971", "ai-draft", "defend-diaoyu-islands", "political-consciousness", "riots-and-reform", "student-activism", "victoria-park"]
 summary: "On July 7, 1971, student activists in Hong Kong gathered in Victoria Park to protest the impending handover of the disputed Diaoyu Islands to Japan, marking a watershed moment for local youth activism and political consciousness."
+description: "On July 7, 1971, student activists in Hong Kong gathered in Victoria Park to protest the impending handover of the disputed Diaoyu Islands to Japan, marking a watershed moment for local youth activism and political…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

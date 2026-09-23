@@ -3,6 +3,7 @@ title: "Hakka Clan (客家氏族)"
 title_zh: "客家氏族"
 tags: ["ai-draft", "hakka", "hong-kong-history", "lineage-society", "new-territories", "person", "punti"]
 summary: "The Hakka (客家) are a Han Chinese sub-ethnic group whose migration and settlement in the New Territories from the mid-Qing dynasty onward profoundly shaped the region's socio-economic landscape and inter-communal dynamics."
+description: "The Hakka (客家) are a Han Chinese sub-ethnic group whose migration and settlement in the New Territories from the mid-Qing dynasty onward profoundly shaped the region's socio-economic landscape and inter-communal…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

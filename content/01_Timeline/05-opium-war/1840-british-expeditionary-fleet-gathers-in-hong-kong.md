@@ -6,6 +6,7 @@ year: 1840
 era: "Canton trade and the First Opium War"
 tags: ["1840", "ai-draft", "british-navy", "first-opium-war", "gunboat-diplomacy", "hong-kong-history", "opium-war"]
 summary: "In June 1840, a massive British military armada assembled in Hong Kong waters to establish a forward operating base at the outset of the First Opium War."
+description: "In June 1840, a massive British military armada assembled in Hong Kong waters to establish a forward operating base at the outset of the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

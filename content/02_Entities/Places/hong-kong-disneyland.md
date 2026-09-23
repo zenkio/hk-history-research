@@ -3,6 +3,7 @@ title: "Hong Kong Disneyland (香港迪士尼樂園)"
 title_zh: "香港迪士尼樂園"
 tags: ["ai-draft", "lantau-island", "place", "post-1997", "theme-parks", "tourism", "urban-development"]
 summary: "Hong Kong Disneyland is a major theme park located on Lantau Island that serves as a focal point for discussions on Hong Kong's role in the global tourism economy and post-1997 urban development."
+description: "Hong Kong Disneyland is a major theme park located on Lantau Island that serves as a focal point for discussions on Hong Kong's role in the global tourism economy and post-1997 urban development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

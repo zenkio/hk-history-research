@@ -5,6 +5,7 @@ year: -200
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "archaeology", "han-dynasty", "lingnan-culture", "maritime-history", "prehistory", "qin-to-tang", "shell-middens"]
 summary: "Around 200 BCE, archaeological evidence indicates the consolidation of coastal shell midden sites, marking a shift toward semi-permanent habitation focused on estuarine resources."
+description: "Around 200 BCE, archaeological evidence indicates the consolidation of coastal shell midden sites, marking a shift toward semi-permanent habitation focused on estuarine resources."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

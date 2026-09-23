@@ -3,6 +3,7 @@ title: "West Kowloon Cultural District (西九文化區)"
 title_zh: "西九文化區"
 tags: ["ai-draft", "arts-district", "hong-kong-palace-museum", "m-plus", "place", "urban-planning", "west-kowloon"]
 summary: "The West Kowloon Cultural District is a major waterfront arts and cultural quarter in Hong Kong designed to house world-class museums, theaters, and public green spaces."
+description: "The West Kowloon Cultural District is a major waterfront arts and cultural quarter in Hong Kong designed to house world-class museums, theaters, and public green spaces."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: 50
 era: "Imperial frontier: Qin to Tang"
 tags: ["50", "ai-draft", "ancient-china", "coastal-defense", "han-dynasty", "lingnan-region", "maritime-history", "qin-to-tang"]
 summary: "During the Han Dynasty, the establishment of coastal outposts in the Lingnan region marked an early effort to secure maritime trade routes and regulate local resource extraction."
+description: "During the Han Dynasty, the establishment of coastal outposts in the Lingnan region marked an early effort to secure maritime trade routes and regulate local resource extraction."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

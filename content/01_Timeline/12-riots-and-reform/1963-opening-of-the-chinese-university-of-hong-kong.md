@@ -6,6 +6,7 @@ year: 1963
 era: "Riots and the MacLehose reforms"
 tags: ["1963", "ai-draft", "chinese-university", "higher-education", "hong-kong-history", "maclehose-era", "riots-and-reform", "student-activism"]
 summary: "Established on October 17, 1963, the Chinese University of Hong Kong was created to provide higher education primarily in the Chinese medium, eventually becoming a major hub for local intellectual movements and social activism."
+description: "Established on October 17, 1963, the Chinese University of Hong Kong was created to provide higher education primarily in the Chinese medium, eventually becoming a major hub for local intellectual movements and social…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

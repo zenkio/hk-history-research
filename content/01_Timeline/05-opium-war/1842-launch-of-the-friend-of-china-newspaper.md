@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "ai-draft", "british-colonial-history", "first-opium-war", "journalism", "mercantilism", "opium-war", "print-media"]
 summary: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
+description: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

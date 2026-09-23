@@ -3,6 +3,7 @@ title: "Ilibu (伊里布)"
 title_zh: "伊里布"
 tags: ["ai-draft", "colonial-history", "diplomatic-history", "first-opium-war", "person", "qing-dynasty", "treaty-of-nanking"]
 summary: "Ilibu was a high-ranking Qing official who played a pivotal role in the diplomatic negotiations of the First Opium War and the early phases of the Treaty of Nanking."
+description: "Ilibu was a high-ranking Qing official who played a pivotal role in the diplomatic negotiations of the First Opium War and the early phases of the Treaty of Nanking."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

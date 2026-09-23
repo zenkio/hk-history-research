@@ -3,6 +3,7 @@ title: "Kublai Khan (忽必烈)"
 title_zh: "忽必烈"
 tags: ["ai-draft", "hong-kong-history", "kublai-khan", "mui-wo", "person", "southern-song", "yuan-dynasty"]
 summary: "The founder of the Yuan dynasty whose expansionist policies led to the flight of the Southern Song court to Hong Kong, permanently altering the region's historical narrative."
+description: "The founder of the Yuan dynasty whose expansionist policies led to the flight of the Southern Song court to Hong Kong, permanently altering the region's historical narrative."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

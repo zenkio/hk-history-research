@@ -3,6 +3,7 @@ title: "Mount Cameron (金馬倫山)"
 title_zh: "金馬倫山"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "japanese-occupation", "mount-cameron", "place", "shinto-shrine"]
 summary: "Mount Cameron is a peak on Hong Kong Island notable for its affluent residential character and its historical selection as the site for the wartime Hong Kong Shinto Shrine."
+description: "Mount Cameron is a peak on Hong Kong Island notable for its affluent residential character and its historical selection as the site for the wartime Hong Kong Shinto Shrine."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

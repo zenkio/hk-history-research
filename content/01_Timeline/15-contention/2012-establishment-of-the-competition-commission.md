@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "ai-draft", "competition-ordinance", "contention", "economic-policy", "laissez-faire", "legislative-history", "market-regulation"]
 summary: "On June 14, 2012, the Legislative Council passed the Competition Ordinance, marking a significant evolution in Hong Kong's long-standing laissez-faire economic model."
+description: "On June 14, 2012, the Legislative Council passed the Competition Ordinance, marking a significant evolution in Hong Kong's long-standing laissez-faire economic model."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

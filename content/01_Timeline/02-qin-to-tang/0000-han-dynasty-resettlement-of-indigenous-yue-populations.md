@@ -5,6 +5,7 @@ year: -110
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "frontier-history", "han-dynasty", "indigenous-yue", "nanyue", "qin-to-tang", "resettlement"]
 summary: "Following the fall of the Nanyue kingdom in 111 BCE, Han Dynasty authorities implemented policies that included the resettlement of coastal indigenous Yue populations, marking a crucial phase in the integration of the Hong Kong region into the imperial administration."
+description: "Following the fall of the Nanyue kingdom in 111 BCE, Han Dynasty authorities implemented policies that included the resettlement of coastal indigenous Yue populations, marking a crucial phase in the integration of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1851
 era: "The early colony"
 tags: ["1850s", "1851", "ai-draft", "colonial-history", "early-colony", "reclamation", "sheung-wan-fire", "urban-development"]
 summary: "Following a catastrophic fire in Sheung Wan in 1851, colonial authorities initiated the Bonham Strand reclamation project to expand commercial land and mitigate urban congestion."
+description: "Following a catastrophic fire in Sheung Wan in 1851, colonial authorities initiated the Bonham Strand reclamation project to expand commercial land and mitigate urban congestion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

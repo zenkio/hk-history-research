@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "heritage-destruction", "japanese-occupation", "kai-tak-airport", "kowloon-walled-city", "sung-wong-toi", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong in January 1943, occupation authorities forced local laborers to demolish significant historical landmarks, including the Kowloon Walled City walls and the ancient Sung Wong Toi rock, to facilitate the expansion of Kai Tak Airport for military use."
+description: "During the Japanese occupation of Hong Kong in January 1943, occupation authorities forced local laborers to demolish significant historical landmarks, including the Kowloon Walled City walls and the ancient Sung Wong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

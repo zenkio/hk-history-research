@@ -3,6 +3,7 @@ title: "Chen Lin (陳林)"
 title_zh: "陳林"
 tags: ["ai-draft", "assassination", "colonial-hong-kong", "person", "qing-dynasty", "revive-china-society", "yeung-ku-wan"]
 summary: "Chen Lin (陳林) was a Qing dynasty loyalist and operative involved in the 1901 assassination of the revolutionary Yeung Ku-wan in Hong Kong."
+description: "Chen Lin (陳林) was a Qing dynasty loyalist and operative involved in the 1901 assassination of the revolutionary Yeung Ku-wan in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1844
 era: "The early colony"
 tags: ["1844", "ai-draft", "british-governance", "colonial-history", "early-colony", "legislative-council", "nineteenth-century", "political-development"]
 summary: "In 1844, the British colonial administration established the Legislative Council, marking a pivotal step in the formalization of governance in the nascent colony."
+description: "In 1844, the British colonial administration established the Legislative Council, marking a pivotal step in the formalization of governance in the nascent colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

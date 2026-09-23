@@ -3,6 +3,7 @@ title: "Admiralty (金鐘)"
 title_zh: "金鐘"
 tags: ["admiralty", "ai-draft", "governance", "hong-kong-history", "place", "political-protest", "urban-development"]
 summary: "Admiralty is a major commercial and administrative hub in Central and Western District that has served as a pivotal site for political demonstrations and governance in Hong Kong."
+description: "Admiralty is a major commercial and administrative hub in Central and Western District that has served as a pivotal site for political demonstrations and governance in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

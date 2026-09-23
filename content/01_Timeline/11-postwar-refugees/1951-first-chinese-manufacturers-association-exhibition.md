@@ -6,6 +6,7 @@ year: 1951
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1951", "ai-draft", "cma-exhibition", "economic-history", "entrepot-trade", "made-in-hong-kong", "manufacturing", "postwar-recovery", "postwar-refugees"]
 summary: "Held in 1951, this landmark exhibition marked a pivotal shift in Hong Kong’s economic identity, signalling its transition from a regional entrepôt to an emerging global manufacturing hub."
+description: "Held in 1951, this landmark exhibition marked a pivotal shift in Hong Kong’s economic identity, signalling its transition from a regional entrepôt to an emerging global manufacturing hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

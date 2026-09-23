@@ -3,6 +3,7 @@ title: "Ho Tung (何東)"
 title_zh: "何東"
 tags: ["ai-draft", "colonial-era", "eurasian-identity", "hong-kong-history", "mui-tsai", "person", "philanthropy"]
 summary: "Robert Ho Tung was a prominent Eurasian businessman and philanthropist who bridged the colonial divide in early 20th-century Hong Kong through his vast commercial influence and social advocacy."
+description: "Robert Ho Tung was a prominent Eurasian businessman and philanthropist who bridged the colonial divide in early 20th-century Hong Kong through his vast commercial influence and social advocacy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

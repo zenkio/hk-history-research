@@ -6,6 +6,7 @@ year: 1300
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1300", "ai-draft", "lineage-society", "local-governance", "new-territories", "song-and-yuan", "song-dynasty", "temple-history", "yuan-dynasty"]
 summary: "During the late Yuan dynasty, local temples in the territory transitioned from simple religious shrines into vital community centers for governance, economic administration, and social cohesion."
+description: "During the late Yuan dynasty, local temples in the territory transitioned from simple religious shrines into vital community centers for governance, economic administration, and social cohesion."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

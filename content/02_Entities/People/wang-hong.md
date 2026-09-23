@@ -3,6 +3,7 @@ title: "Wang Hong (汪鋐)"
 title_zh: "汪鋐"
 tags: ["ai-draft", "maritime-history", "military-history", "ming-dynasty", "pearl-river-delta", "person", "tuen-mun"]
 summary: "Wang Hong was a Ming dynasty official whose military campaigns in the 1520s against Portuguese trade interests in the Pearl River Delta were pivotal to the early maritime history of the Hong Kong region."
+description: "Wang Hong was a Ming dynasty official whose military campaigns in the 1520s against Portuguese trade interests in the Pearl River Delta were pivotal to the early maritime history of the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

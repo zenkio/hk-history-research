@@ -6,6 +6,7 @@ year: 1919
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1919", "ai-draft", "colonial-history", "food-security", "inflation", "interwar", "interwar-hong-kong", "rice-riots"]
 summary: "Post-World War I supply shortages and soaring inflation triggered widespread rioting and rice looting in July 1919, forcing the colonial government to implement emergency market controls."
+description: "Post-World War I supply shortages and soaring inflation triggered widespread rioting and rice looting in July 1919, forcing the colonial government to implement emergency market controls."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

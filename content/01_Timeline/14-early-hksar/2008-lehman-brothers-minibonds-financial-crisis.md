@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "banking-regulation", "early-hksar", "financial-crisis", "lehman-brothers", "minibonds", "protests"]
 summary: "The collapse of Lehman Brothers in 2008 exposed tens of thousands of Hong Kong retail investors to massive losses on complex credit-linked notes, sparking widespread protests and intense scrutiny of local banking regulatory practices."
+description: "The collapse of Lehman Brothers in 2008 exposed tens of thousands of Hong Kong retail investors to massive losses on complex credit-linked notes, sparking widespread protests and intense scrutiny of local banking…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

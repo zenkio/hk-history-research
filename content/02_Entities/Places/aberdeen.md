@@ -3,6 +3,7 @@ title: "Aberdeen (香港仔)"
 title_zh: "香港仔"
 tags: ["1841-census", "aberdeen", "ai-draft", "colonial-history", "hong-kong-island", "maritime-culture", "place"]
 summary: "Aberdeen is a historic maritime settlement on the southern coast of Hong Kong Island that served as a vital anchorage and trade hub before the establishment of the British colonial administration."
+description: "Aberdeen is a historic maritime settlement on the southern coast of Hong Kong Island that served as a vital anchorage and trade hub before the establishment of the British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

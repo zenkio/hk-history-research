@@ -2,7 +2,8 @@
 title: "Childhood and Urban Mobility in 1970s Hong Kong"
 date: 1972-08-02
 tags: ["1956", "1966", "1967", "1970", "1972", "1973", "1983", "1984", "colonial-hong-kong", "shau-kei-wan", "social-history", "transportation-infrastructure", "urban-history"]
-summary: "During the **1970s**, the youth of **Hong Kong Island** often experienced significant geographical isolation, as the har"
+summary: "During the 1970s, the youth of Hong Kong Island often experienced significant geographical isolation, as the harbour acted as a major social and physical barrier."
+description: "During the 1970s, the youth of Hong Kong Island often experienced significant geographical isolation, as the harbour acted as a major social and physical barrier."
 confidence: medium
 source_feed: Historical_Photos_HK
 source_url: "https://blog.hphkbristol.net/2026/09/22/island-boy/"

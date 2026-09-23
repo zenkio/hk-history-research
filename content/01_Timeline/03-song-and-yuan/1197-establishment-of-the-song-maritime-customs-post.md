@@ -6,6 +6,7 @@ year: 1197
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1197", "ai-draft", "customs-history", "maritime-silk-road", "song-and-yuan", "song-dynasty", "trade-regulations", "tuen-mun"]
 summary: "In 1197, the Song Dynasty established a maritime customs post at Tuen Mun to regulate trade, marking a pivotal moment in Hong Kong's integration into the maritime Silk Road."
+description: "In 1197, the Song Dynasty established a maritime customs post at Tuen Mun to regulate trade, marking a pivotal moment in Hong Kong's integration into the maritime Silk Road."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

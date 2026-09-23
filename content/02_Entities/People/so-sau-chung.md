@@ -3,6 +3,7 @@ title: "So Sau-chung (蘇守忠)"
 title_zh: "蘇守忠"
 tags: ["ai-draft", "colonial-history", "hong-kong-1960s", "person", "so-sau-chung", "social-activism", "star-ferry-riots"]
 summary: "So Sau-chung was a Hong Kong activist whose 1966 hunger strike against Star Ferry fare increases served as the catalyst for the Star Ferry Riots."
+description: "So Sau-chung was a Hong Kong activist whose 1966 hunger strike against Star Ferry fare increases served as the catalyst for the Star Ferry Riots."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1935", "ai-draft", "catholic-church", "interwar", "interwar-hong-kong", "juvenile-welfare", "social-welfare", "vocational-education"]
 summary: "In 1935, the Salesians of Don Bosco established the Aberdeen Industrial School to provide vocational training and welfare support for disadvantaged youth during a period of rapid population growth in Hong Kong."
+description: "In 1935, the Salesians of Don Bosco established the Aberdeen Industrial School to provide vocational training and welfare support for disadvantaged youth during a period of rapid population growth in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

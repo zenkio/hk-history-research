@@ -6,6 +6,7 @@ year: 1844
 era: "The early colony"
 tags: ["1840s", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-police-force", "law-and-order"]
 summary: "In **1844**, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
+description: "In 1844, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

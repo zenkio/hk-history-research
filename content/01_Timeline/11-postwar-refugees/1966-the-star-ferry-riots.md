@@ -6,6 +6,7 @@ year: 1966
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
 summary: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
+description: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

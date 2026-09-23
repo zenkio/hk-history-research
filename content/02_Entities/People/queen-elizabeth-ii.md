@@ -3,6 +3,7 @@ title: "Queen Elizabeth II (伊麗莎白二世)"
 title_zh: "伊麗莎白二世"
 tags: ["ai-draft", "british-monarchy", "colonial-history", "handover", "hong-kong-history", "person", "royal-visits"]
 summary: "Queen Elizabeth II (伊麗莎白二世) was the British monarch whose reign spanned the core decades of Hong Kong's post-war economic transformation and the prelude to its 1997 handover."
+description: "Queen Elizabeth II (伊麗莎白二世) was the British monarch whose reign spanned the core decades of Hong Kong's post-war economic transformation and the prelude to its 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

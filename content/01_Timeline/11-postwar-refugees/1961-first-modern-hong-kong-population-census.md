@@ -6,6 +6,7 @@ year: 1961
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1961", "ai-draft", "colonial-history", "demographics", "population-census", "postwar-recovery", "postwar-refugees", "urban-planning"]
 summary: "Conducted on March 7, 1961, Hong Kong's first modern comprehensive population census revealed a total population exceeding three million, providing vital data that reshaped government civic planning and industrial development."
+description: "Conducted on March 7, 1961, Hong Kong's first modern comprehensive population census revealed a total population exceeding three million, providing vital data that reshaped government civic planning and industrial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

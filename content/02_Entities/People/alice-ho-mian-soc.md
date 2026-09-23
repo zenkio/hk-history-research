@@ -3,6 +3,7 @@ title: "Alice Ho Mian-soc (雅麗氏)"
 title_zh: "何妙齡雅麗氏"
 tags: ["ai-draft", "alice-ho-mian-soc", "alice-memorial-hospital", "hong-kong-philanthropy", "kai-ho-kai", "medical-history", "person"]
 summary: "Alice Ho Mian-soc was a prominent philanthropist whose family's financial and social backing facilitated the establishment of Hong Kong's first Western-style hospital to serve the local Chinese population."
+description: "Alice Ho Mian-soc was a prominent philanthropist whose family's financial and social backing facilitated the establishment of Hong Kong's first Western-style hospital to serve the local Chinese population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

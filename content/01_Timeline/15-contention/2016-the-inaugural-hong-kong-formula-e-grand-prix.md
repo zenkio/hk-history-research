@@ -6,6 +6,7 @@ year: 2016
 era: "Political contention and protest"
 tags: ["2016", "ai-draft", "central-district", "contention", "formula-e", "sports-history", "sustainable-innovation", "urban-development"]
 summary: "On October 9, 2016, Hong Kong hosted its first-ever Formula E race, marking the city's debut as a global venue for sustainable high-speed electric vehicle racing."
+description: "On October 9, 2016, Hong Kong hosted its first-ever Formula E race, marking the city's debut as a global venue for sustainable high-speed electric vehicle racing."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

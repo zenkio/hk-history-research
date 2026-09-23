@@ -3,6 +3,7 @@ title: "Taipo (大埔)"
 title_zh: "大埔"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "new-territories", "place", "tai-po", "urban-development"]
 summary: "Tai Po is a significant district in the New Territories that transitioned from a traditional market town to a modern residential and industrial hub, reflecting the broader evolution of Hong Kong's land development."
+description: "Tai Po is a significant district in the New Territories that transitioned from a traditional market town to a modern residential and industrial hub, reflecting the broader evolution of Hong Kong's land development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

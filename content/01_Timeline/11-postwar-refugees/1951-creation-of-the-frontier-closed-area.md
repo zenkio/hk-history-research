@@ -6,6 +6,7 @@ year: 1951
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1951", "ai-draft", "border-control", "frontier-closed-area", "illegal-immigration", "new-territories", "postwar-history", "postwar-refugees", "smuggling"]
 summary: "In **June 1951**, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
+description: "In June 1951, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

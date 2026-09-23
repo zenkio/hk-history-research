@@ -6,6 +6,7 @@ year: 1843
 era: "The early colony"
 tags: ["1843", "ai-draft", "early-colony", "epidemic", "hong-kong-fever", "malaria", "public-health"]
 summary: "Between 1843 and 1844, a severe epidemic known as 'Hong Kong Fever'—largely believed by modern medicine to be malaria—decimated the early British garrison and civilian population, nearly leading London to abandon the fledgling colony."
+description: "Between 1843 and 1844, a severe epidemic known as 'Hong Kong Fever'—largely believed by modern medicine to be malaria—decimated the early British garrison and civilian population, nearly leading London to abandon the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

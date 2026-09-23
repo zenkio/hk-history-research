@@ -6,6 +6,7 @@ year: 1952
 era: "Riots and the MacLehose reforms"
 tags: ["1952", "ai-draft", "chinese-student-weekly", "hong-kong-history", "local-identity", "maclehose-era", "post-war-hong-kong", "riots-and-reform"]
 summary: "First published on July 27, 1952, the Chinese Student Weekly became a pivotal cultural and intellectual platform for generations of Hong Kong youth, fostering a distinct local identity during the turbulent decades leading into the MacLehose era."
+description: "First published on July 27, 1952, the Chinese Student Weekly became a pivotal cultural and intellectual platform for generations of Hong Kong youth, fostering a distinct local identity during the turbulent decades…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "None specifically identified in broad historical summary"
 title_zh: "香港華人書記會"
 tags: ["ai-draft", "clerical-workforce", "colonial-history", "hong-kong-society", "labor-history", "person", "professional-associations"]
 summary: "An early professional organization established by the Chinese clerical workforce to advocate for their interests within the British colonial administrative and commercial structure."
+description: "An early professional organization established by the Chinese clerical workforce to advocate for their interests within the British colonial administrative and commercial structure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Isojiro Isogai (矶谷廉介)"
 title_zh: "磯谷廉介"
 tags: ["ai-draft", "hong-kong-history", "iso-jiro-isogai", "japanese-occupation", "person", "world-war-ii"]
 summary: "Isojiro Isogai was a Japanese lieutenant general who served as the first military governor of occupied Hong Kong during the Pacific War."
+description: "Isojiro Isogai was a Japanese lieutenant general who served as the first military governor of occupied Hong Kong during the Pacific War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

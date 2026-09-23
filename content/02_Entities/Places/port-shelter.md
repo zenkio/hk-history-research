@@ -3,6 +3,7 @@ title: "Port Shelter (牛尾海)"
 title_zh: "牛尾海"
 tags: ["ai-draft", "battle-of-hong-kong", "coastal-geography", "maritime-history", "new-territories", "place", "sai-kung"]
 summary: "Port Shelter is a significant coastal inlet in the eastern New Territories that served as a critical maritime thoroughfare and defensive zone during the 20th century."
+description: "Port Shelter is a significant coastal inlet in the eastern New Territories that served as a critical maritime thoroughfare and defensive zone during the 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

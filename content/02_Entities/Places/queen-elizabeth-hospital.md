@@ -3,6 +3,7 @@ title: "Queen Elizabeth Hospital (伊利沙伯醫院)"
 title_zh: "伊利沙伯醫院"
 tags: ["ai-draft", "colonial-history", "healthcare", "hong-kong-medical-history", "kowloon", "place", "public-service"]
 summary: "Queen Elizabeth Hospital is a major public hospital in Jordan, Kowloon, which has served as a central pillar of Hong Kong's public healthcare system since its opening in 1963."
+description: "Queen Elizabeth Hospital is a major public hospital in Jordan, Kowloon, which has served as a central pillar of Hong Kong's public healthcare system since its opening in 1963."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

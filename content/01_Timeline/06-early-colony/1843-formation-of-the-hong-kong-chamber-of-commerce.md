@@ -6,6 +6,7 @@ year: 1843
 era: "The early colony"
 tags: ["1843", "ai-draft", "british-empire", "colonial-history", "early-colony", "economic-development", "merchant-history", "trade-policy"]
 summary: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
+description: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

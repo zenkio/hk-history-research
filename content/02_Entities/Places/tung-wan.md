@@ -3,6 +3,7 @@ title: "Tung Wan (東灣)"
 title_zh: "東灣"
 tags: ["ai-draft", "panyu", "place", "tung-wan"]
 summary: "I do not have reliable historical data regarding Tung Wan (東灣) as a specific landmark or entity in the context of Hong Kong history or the Panyu market hub."
+description: "I do not have reliable historical data regarding Tung Wan (東灣) as a specific landmark or entity in the context of Hong Kong history or the Panyu market hub."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

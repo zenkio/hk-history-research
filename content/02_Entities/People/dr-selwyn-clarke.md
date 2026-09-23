@@ -3,6 +3,7 @@ title: "Dr. Selwyn-Clarke (塞爾溫-克拉克)"
 title_zh: "塞爾溫-克拉克"
 tags: ["ai-draft", "colonial-history", "hong-kong-history", "medical-history", "person", "post-war-reconstruction", "public-health"]
 summary: "Dr. Percy Selwyn-Clarke was a British colonial medical administrator who served as the Director of Medical Services in Hong Kong and became a pivotal figure in the post-war efforts to combat tuberculosis."
+description: "Dr. Percy Selwyn-Clarke was a British colonial medical administrator who served as the Director of Medical Services in Hong Kong and became a pivotal figure in the post-war efforts to combat tuberculosis."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

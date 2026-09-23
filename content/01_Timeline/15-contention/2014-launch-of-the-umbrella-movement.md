@@ -6,6 +6,7 @@ year: 2014
 era: "Political contention and protest"
 tags: ["2014", "ai-draft", "civil-disobedience", "contention", "protest", "umbrella-movement", "universal-suffrage"]
 summary: "On September 28, 2014, police fired tear gas at pro-democracy protesters in Hong Kong, sparking a 79-day occupation of major thoroughfares demanding genuine universal suffrage."
+description: "On September 28, 2014, police fired tear gas at pro-democracy protesters in Hong Kong, sparking a 79-day occupation of major thoroughfares demanding genuine universal suffrage."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

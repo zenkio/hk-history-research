@@ -3,6 +3,7 @@ title: "Guanfu Salt Yard (官富場)"
 title_zh: "官富場"
 tags: ["ai-draft", "kowloon", "local-history", "place", "salt-production", "song-dynasty"]
 summary: "Guanfu Salt Yard was a historically significant state-managed salt production center established during the Song dynasty in present-day Kowloon, serving as a foundational economic and administrative hub for the region."
+description: "Guanfu Salt Yard was a historically significant state-managed salt production center established during the Song dynasty in present-day Kowloon, serving as a foundational economic and administrative hub for the region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

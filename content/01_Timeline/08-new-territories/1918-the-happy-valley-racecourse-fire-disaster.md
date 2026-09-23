@@ -6,6 +6,7 @@ year: 1918
 era: "The New Territories lease and the early 20th century"
 tags: ["1918", "ai-draft", "colonial-history", "disaster", "happy-valley-fire", "new-territories", "public-safety"]
 summary: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building regulations."
+description: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

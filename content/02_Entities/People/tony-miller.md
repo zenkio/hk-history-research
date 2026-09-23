@@ -3,6 +3,7 @@ title: "Tony Miller (苗學禮)"
 title_zh: "苗學禮"
 tags: ["ai-draft", "civil-servant", "colonial-era", "housing-department", "person", "public-housing", "shatins-scandal"]
 summary: "Tony Miller was a prominent British colonial civil servant in Hong Kong who served in key housing and economic roles during the transition to Chinese sovereignty."
+description: "Tony Miller was a prominent British colonial civil servant in Hong Kong who served in key housing and economic roles during the transition to Chinese sovereignty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

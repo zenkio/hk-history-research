@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "hong-kong-history", "japanese-occupation", "lisbon-maru", "prisoners-of-war", "world-war-ii"]
 summary: "In October 1942, the armed Japanese freighter Lisbon Maru, carrying over 1,800 British prisoners of war captured in the Battle of Hong Kong, was torpedoed by an American submarine, leading to massive loss of life under disputed circumstances."
+description: "In October 1942, the armed Japanese freighter Lisbon Maru, carrying over 1,800 British prisoners of war captured in the Battle of Hong Kong, was torpedoed by an American submarine, leading to massive loss of life under…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

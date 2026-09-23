@@ -3,6 +3,7 @@ title: "Wong Nai Chung Gap (黃泥涌峽)"
 title_zh: "黃泥涌峽"
 tags: ["ai-draft", "battle-of-hong-kong", "hong-kong-history", "military-history", "place", "wong-nai-chung", "world-war-ii"]
 summary: "A strategic mountain pass on Hong Kong Island that served as a critical battlefield during the 1941 Battle of Hong Kong and a vital link in the territory's transport infrastructure."
+description: "A strategic mountain pass on Hong Kong Island that served as a critical battlefield during the 1941 Battle of Hong Kong and a vital link in the territory's transport infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

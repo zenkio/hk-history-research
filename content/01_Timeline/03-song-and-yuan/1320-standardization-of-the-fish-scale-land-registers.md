@@ -6,6 +6,7 @@ year: 1320
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1320", "ai-draft", "cadastral-survey", "hong-kong-history", "imperial-administration", "land-reform", "song-and-yuan", "taxation", "yuan-dynasty"]
 summary: "Around 1320, the Yuan dynasty implemented the Fish-Scale Land Registers (魚鱗圖冊) in the southern provinces, significantly impacting land tenure and tax administration in the Hong Kong region."
+description: "Around 1320, the Yuan dynasty implemented the Fish-Scale Land Registers (魚鱗圖冊) in the southern provinces, significantly impacting land tenure and tax administration in the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

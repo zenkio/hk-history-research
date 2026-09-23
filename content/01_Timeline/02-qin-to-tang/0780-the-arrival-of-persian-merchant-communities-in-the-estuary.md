@@ -5,6 +5,7 @@ year: 780
 era: "Imperial frontier: Qin to Tang"
 tags: ["780", "ai-draft", "cultural-exchange", "maritime-history", "pearl-river-delta", "qin-to-tang", "tang-dynasty", "trade-routes"]
 summary: "Between 780 and 820, during the height of the Tang Dynasty's maritime expansion, Persian maritime merchants became prominent figures in the trade networks of the Pearl River Estuary."
+description: "Between 780 and 820, during the height of the Tang Dynasty's maritime expansion, Persian maritime merchants became prominent figures in the trade networks of the Pearl River Estuary."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

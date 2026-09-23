@@ -6,6 +6,7 @@ year: 1963
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1960s", "1963", "ai-draft", "bilingual-education", "chinese-university-of-hong-kong", "higher-education", "postwar-hong-kong", "postwar-refugees"]
 summary: "On **October 17, 1963**, the Chinese University of Hong Kong was formally established through the amalgamation of three existing post-secondary colleges, providing a federal, bilingual alternative to the University of Hong Kong."
+description: "On October 17, 1963, the Chinese University of Hong Kong was formally established through the amalgamation of three existing post-secondary colleges, providing a federal, bilingual alternative to the University of Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1959
 era: "Riots and the MacLehose reforms"
 tags: ["1950s", "1959", "ai-draft", "broadcasting-history", "cantonese-pop-culture", "commercial-radio", "mass-media", "riots-and-reform"]
 summary: "On August 26, 1959, Commercial Radio Hong Kong officially commenced broadcasting, introducing the territory's first major commercial radio competitor to Rediffusion and the state-backed Radio Hong Kong."
+description: "On August 26, 1959, Commercial Radio Hong Kong officially commenced broadcasting, introducing the territory's first major commercial radio competitor to Rediffusion and the state-backed Radio Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

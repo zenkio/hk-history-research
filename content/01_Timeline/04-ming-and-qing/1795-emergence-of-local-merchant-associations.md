@@ -6,6 +6,7 @@ year: 1795
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1795", "ai-draft", "economic-development", "market-towns", "merchant-history", "ming-and-qing", "qing-dynasty"]
 summary: "Between 1795 and 1800, the establishment of merchant-led organizations in the Pearl River Delta signaled a transition toward formal commercial regulation in the coastal regions."
+description: "Between 1795 and 1800, the establishment of merchant-led organizations in the Pearl River Delta signaled a transition toward formal commercial regulation in the coastal regions."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

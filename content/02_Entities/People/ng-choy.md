@@ -3,6 +3,7 @@ title: "Ng Choy (伍才)"
 title_zh: "伍才"
 tags: ["ai-draft", "colonial-history", "hong-kong-elites", "john-pope-hennessy", "legal-pioneer", "legislative-council", "person"]
 summary: "Ng Choy (Wu Tingfang) was a prominent legal pioneer who became the first Chinese Legislative Councillor in Hong Kong and a major figure in late Qing dynasty diplomacy."
+description: "Ng Choy (Wu Tingfang) was a prominent legal pioneer who became the first Chinese Legislative Councillor in Hong Kong and a major figure in late Qing dynasty diplomacy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

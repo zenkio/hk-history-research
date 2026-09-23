@@ -2,6 +2,7 @@
 title: "08 · The New Territories lease and the early 20th century (1898-1918)"
 tags: ["ai-draft", "british-colonial", "early-20th-century", "era-overview", "infrastructure", "new-territories", "xinhai-revolution"]
 summary: "This era marked a dramatic territorial expansion of the British colony through the 99-year lease of the New Territories, alongside rapid modernization, infrastructural growth, and profound impacts from revolutionary movements in mainland China. Amidst local resistance, devastating natural disasters, and global conflict, Hong Kong transformed into a vital geopolitical and economic hub in East Asia."
+description: "This era marked a dramatic territorial expansion of the British colony through the 99-year lease of the New Territories, alongside rapid modernization, infrastructural growth, and profound impacts from revolutionary…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

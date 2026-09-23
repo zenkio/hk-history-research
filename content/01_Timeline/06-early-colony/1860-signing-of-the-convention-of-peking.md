@@ -6,6 +6,7 @@ year: 1860
 era: "The early colony"
 tags: ["1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
 summary: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
+description: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

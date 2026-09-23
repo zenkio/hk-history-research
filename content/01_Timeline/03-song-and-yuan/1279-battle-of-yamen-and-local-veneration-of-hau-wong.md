@@ -6,6 +6,7 @@ year: 1279
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1279", "ai-draft", "battle-of-yamen", "hau-wong", "hk-history", "local-religion", "song-and-yuan", "song-dynasty"]
 summary: "The decisive Mongol victory at the Battle of Yamen in 1279 marked the fall of the Southern Song Dynasty and inspired the enduring local veneration of loyalist figures such as Hau Wong across Hong Kong."
+description: "The decisive Mongol victory at the Battle of Yamen in 1279 marked the fall of the Southern Song Dynasty and inspired the enduring local veneration of loyalist figures such as Hau Wong across Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

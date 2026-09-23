@@ -3,6 +3,7 @@ title: "Siu Lek Yuen (小瀝源)"
 title_zh: "小瀝源"
 tags: ["ai-draft", "hong-kong-history", "new-territories", "place", "sha-tin", "transportation", "urban-development"]
 summary: "Siu Lek Yuen is a historical village and valley area in Sha Tin that transitioned from a traditional agricultural settlement into a modern industrial and residential hub within the New Territories."
+description: "Siu Lek Yuen is a historical village and valley area in Sha Tin that transitioned from a traditional agricultural settlement into a modern industrial and residential hub within the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

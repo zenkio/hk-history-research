@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "ai-draft", "contention", "governance", "public-health", "public-housing", "water-contamination"]
 summary: "In **July 2015**, routine testing at a newly completed public housing estate revealed dangerous levels of lead in the drinking water, igniting a widespread public health scare and exposing systemic regulatory failures in construction and plumbing."
+description: "In July 2015, routine testing at a newly completed public housing estate revealed dangerous levels of lead in the drinking water, igniting a widespread public health scare and exposing systemic regulatory failures in…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

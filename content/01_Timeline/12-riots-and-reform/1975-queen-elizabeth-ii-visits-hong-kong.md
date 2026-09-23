@@ -6,6 +6,7 @@ year: 1975
 era: "Riots and the MacLehose reforms"
 tags: ["1975", "ai-draft", "civic-pride", "colonial-history", "maclehose-era", "riots-and-reform", "royal-visit"]
 summary: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations. The highly publicized four-day tour generated widespread civic pageantry while also prompting varied interpretations across local and international political spectrums."
+description: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

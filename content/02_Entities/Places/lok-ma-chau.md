@@ -3,6 +3,7 @@ title: "Lok Ma Chau (落馬洲)"
 title_zh: "落馬洲"
 tags: ["ai-draft", "border-crossing", "cross-boundary", "history-of-hong-kong", "new-territories", "north-district", "place"]
 summary: "A border area in the North District of Hong Kong that has served as a critical gateway for cross-boundary movement and trade between Hong Kong and Mainland China since the mid-20th century."
+description: "A border area in the North District of Hong Kong that has served as a critical gateway for cross-boundary movement and trade between Hong Kong and Mainland China since the mid-20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

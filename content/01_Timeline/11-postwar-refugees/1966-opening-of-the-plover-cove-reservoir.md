@@ -6,6 +6,7 @@ year: 1966
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1966", "ai-draft", "colonial-development", "engineering", "hong-kong-1960s", "postwar-history", "postwar-refugees", "water-infrastructure"]
 summary: "Completed in 1966, the Plover Cove Reservoir was the world's first major sea-water reservoir, marking a pivotal engineering solution to Hong Kong's chronic water shortages during its postwar industrial expansion."
+description: "Completed in 1966, the Plover Cove Reservoir was the world's first major sea-water reservoir, marking a pivotal engineering solution to Hong Kong's chronic water shortages during its postwar industrial expansion."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

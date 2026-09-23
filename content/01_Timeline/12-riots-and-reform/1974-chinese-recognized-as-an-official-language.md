@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "chinese-language-movement", "colonial-history", "language-rights", "maclehose-era", "official-languages-ordinance", "riots-and-reform"]
 summary: "In 1974, the Official Languages Ordinance was enacted in Hong Kong, elevating the Chinese language to equal legal status with English following years of sustained grassroots and student advocacy."
+description: "In 1974, the Official Languages Ordinance was enacted in Hong Kong, elevating the Chinese language to equal legal status with English following years of sustained grassroots and student advocacy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

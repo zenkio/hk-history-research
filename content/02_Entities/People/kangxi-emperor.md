@@ -3,6 +3,7 @@ title: "Kangxi Emperor (康熙帝)"
 title_zh: "康熙帝"
 tags: ["ai-draft", "great-clearance", "hakka", "kangxi-emperor", "new-territories", "person", "qing-dynasty"]
 summary: "The fourth emperor of the Qing dynasty whose policies of coastal clearance and subsequent repopulation fundamentally shaped the demographic and social landscape of early Hong Kong."
+description: "The fourth emperor of the Qing dynasty whose policies of coastal clearance and subsequent repopulation fundamentally shaped the demographic and social landscape of early Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

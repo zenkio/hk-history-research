@@ -3,6 +3,7 @@ title: "Rupert Murdoch"
 title_zh: "魯柏·梅鐸"
 tags: ["ai-draft", "broadcasting", "media", "news-corporation", "person", "rupert-murdoch", "star-tv"]
 summary: "Australian-born media mogul whose acquisition of STAR TV in **1993** significantly impacted Hong Kong's broadcasting landscape and regional satellite television geopolitics."
+description: "Australian-born media mogul whose acquisition of STAR TV in 1993 significantly impacted Hong Kong's broadcasting landscape and regional satellite television geopolitics."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

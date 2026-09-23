@@ -6,6 +6,7 @@ year: 1875
 era: "Kowloon and the Victorian colony"
 tags: ["1875", "ai-draft", "colonial-hong-kong", "maritime-history", "port-development", "social-welfare", "victorian-colony", "victorian-era"]
 summary: "In 1875, the Sailors' Home was established in West Point to provide essential welfare for the growing transient maritime population of Hong Kong."
+description: "In 1875, the Sailors' Home was established in West Point to provide essential welfare for the growing transient maritime population of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

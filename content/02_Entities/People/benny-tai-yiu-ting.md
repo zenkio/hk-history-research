@@ -3,6 +3,7 @@ title: "Benny Tai Yiu-ting (戴耀廷)"
 title_zh: "戴耀廷"
 tags: ["academic", "ai-draft", "constitutional-law", "legal-history", "person", "political-activism", "umbrella-movement"]
 summary: "Benny Tai Yiu-ting is a former associate professor of law at the University of Hong Kong whose advocacy for constitutional reform and civil disobedience has been a significant point of contention in Hong Kong's legal and political history."
+description: "Benny Tai Yiu-ting is a former associate professor of law at the University of Hong Kong whose advocacy for constitutional reform and civil disobedience has been a significant point of contention in Hong Kong's legal…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

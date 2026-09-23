@@ -3,6 +3,7 @@ title: "Sai Kung (西貢)"
 title_zh: "西貢"
 tags: ["ai-draft", "archaeology", "hong-kong-history", "new-territories", "place", "pottery", "sai-kung"]
 summary: "Sai Kung is a district in the eastern New Territories known for its diverse geographical landscape and its significant role in the archaeological narrative of early human habitation in Hong Kong."
+description: "Sai Kung is a district in the eastern New Territories known for its diverse geographical landscape and its significant role in the archaeological narrative of early human habitation in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

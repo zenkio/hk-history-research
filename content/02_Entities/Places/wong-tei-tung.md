@@ -3,6 +3,7 @@ title: "Wong Tei Tung (黃地峒)"
 title_zh: "黃地峒"
 tags: ["ai-draft", "archaeology", "lamma-island", "paleolithic", "place", "prehistoric-hong-kong", "wong-tei-tung"]
 summary: "Wong Tei Tung is an important archaeological site on Lamma Island that provides crucial evidence of prehistoric human activity in the region during the Paleolithic period."
+description: "Wong Tei Tung is an important archaeological site on Lamma Island that provides crucial evidence of prehistoric human activity in the region during the Paleolithic period."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

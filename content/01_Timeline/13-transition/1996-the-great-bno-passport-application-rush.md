@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1996", "1997-handover", "ai-draft", "bno-passport", "british-nationality", "immigration", "sino-british-joint-declaration", "transition"]
 summary: "In early 1996, tens of thousands of Hong Kong residents queued overnight outside immigration offices ahead of the crucial deadline to register for British National (Overseas) status before the 1997 handover."
+description: "In early 1996, tens of thousands of Hong Kong residents queued overnight outside immigration offices ahead of the crucial deadline to register for British National (Overseas) status before the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

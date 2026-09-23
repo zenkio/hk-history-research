@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "british-empire", "japanese-occupation", "world-war-ii"]
 summary: "On December 8, 1941, Imperial Japanese forces launched a surprise assault on the British Crown Colony of Hong Kong, coinciding with the attack on Pearl Harbor and initiating the Battle of Hong Kong."
+description: "On December 8, 1941, Imperial Japanese forces launched a surprise assault on the British Crown Colony of Hong Kong, coinciding with the attack on Pearl Harbor and initiating the Battle of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Yau Wai-ching (游蕙禎)"
 title_zh: "游蕙禎"
 tags: ["ai-draft", "basic-law", "hong-kong-history", "legislative-council", "localism", "oath-taking-controversy", "person"]
 summary: "Yau Wai-ching is a former Hong Kong politician and activist whose disqualification from the Legislative Council following the 2016 oath-taking controversy remains a significant event in local constitutional history."
+description: "Yau Wai-ching is a former Hong Kong politician and activist whose disqualification from the Legislative Council following the 2016 oath-taking controversy remains a significant event in local constitutional history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

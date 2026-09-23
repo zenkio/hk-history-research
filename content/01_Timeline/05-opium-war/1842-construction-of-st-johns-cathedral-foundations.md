@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "ai-draft", "british-colonial-history", "church-of-england", "first-opium-war", "opium-war", "st-johns-cathedral"]
 summary: "In 1842, foundational work began for St. John's Cathedral in the newly established British colony of Hong Kong, marking the physical and institutional roots of the Church of England in the territory."
+description: "In 1842, foundational work began for St. John's Cathedral in the newly established British colony of Hong Kong, marking the physical and institutional roots of the Church of England in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "William Milne (米爾恩)"
 title_zh: "米爾恩"
 tags: ["ai-draft", "early-modern-history", "linguistics", "london-missionary-society", "pearl-river-delta", "person", "protestantism"]
 summary: "A Scottish missionary of the London Missionary Society who pioneered Protestant outreach in the Pearl River Delta and developed early Chinese-English linguistic tools."
+description: "A Scottish missionary of the London Missionary Society who pioneered Protestant outreach in the Pearl River Delta and developed early Chinese-English linguistic tools."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "charles-elliot", "extraterritoriality", "first-opium-war", "lin-weixi-affair", "opium-war", "tsim-sha-tsui"]
 summary: "A fatal brawl in July 1839 involving British sailors and local villager Lin Weixi in Tsim Sha Tsui ignited a severe jurisdictional crisis, directly precipitating the First Opium War."
+description: "A fatal brawl in July 1839 involving British sailors and local villager Lin Weixi in Tsim Sha Tsui ignited a severe jurisdictional crisis, directly precipitating the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

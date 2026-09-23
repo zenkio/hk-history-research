@@ -3,6 +3,7 @@ title: "Tang lineage members (鄧氏族人)"
 title_zh: "鄧氏族人"
 tags: ["ai-draft", "five-great-clans", "kam-tin", "new-territories", "person", "tang-lineage", "yee-kung-study-hall"]
 summary: "The Tang lineage members are one of the 'Five Great Clans' of the New Territories, whose centuries-long presence in areas such as Kam Tin significantly shaped the agrarian, social, and architectural landscape of Hong Kong."
+description: "The Tang lineage members are one of the 'Five Great Clans' of the New Territories, whose centuries-long presence in areas such as Kam Tin significantly shaped the agrarian, social, and architectural landscape of Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

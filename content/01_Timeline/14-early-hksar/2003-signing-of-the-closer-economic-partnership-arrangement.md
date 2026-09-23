@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "cepa", "early-hksar", "economic-recovery", "free-trade", "hksar-history", "sars-2003"]
 summary: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial crisis and the SARS outbreak."
+description: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

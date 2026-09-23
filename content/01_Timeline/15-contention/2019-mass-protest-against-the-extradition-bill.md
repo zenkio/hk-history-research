@@ -6,6 +6,7 @@ year: 2019
 era: "Political contention and protest"
 tags: ["2019", "ai-draft", "contention", "extradition-bill", "june-9", "one-country-two-systems", "protest", "rule-of-law"]
 summary: "On June 9, 2019, an estimated one million people marched through Hong Kong to protest a proposed extradition bill, marking the beginning of months of unprecedented civil unrest."
+description: "On June 9, 2019, an estimated one million people marched through Hong Kong to protest a proposed extradition bill, marking the beginning of months of unprecedented civil unrest."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

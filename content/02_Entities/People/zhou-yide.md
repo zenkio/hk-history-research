@@ -3,6 +3,7 @@ title: "Zhou Yide (周有德)"
 title_zh: "周有德"
 tags: ["ai-draft", "great-clearance", "guangdong-history", "hong-kong-origins", "person", "qing-dynasty", "zhou-yide"]
 summary: "Zhou Yide was a Qing dynasty official who served as the Governor of Guangdong during the early Kangxi period, playing a significant role in the administration of the coastal evacuation policy."
+description: "Zhou Yide was a Qing dynasty official who served as the Governor of Guangdong during the early Kangxi period, playing a significant role in the administration of the coastal evacuation policy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

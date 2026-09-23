@@ -6,6 +6,7 @@ year: 1958
 era: "Riots and the MacLehose reforms"
 tags: ["1958", "1967-riots", "ai-draft", "civil-unrest", "colonial-history", "law-enforcement", "police-tactical-unit", "riots-and-reform"]
 summary: "Established on February 17, 1958, the Police Tactical Unit (PTU) was formed to manage rising civil unrest in colonial Hong Kong, later becoming the frontline security force during the turbulent political protests of the late 1960s."
+description: "Established on February 17, 1958, the Police Tactical Unit (PTU) was formed to manage rising civil unrest in colonial Hong Kong, later becoming the frontline security force during the turbulent political protests of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

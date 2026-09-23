@@ -6,6 +6,7 @@ year: 1926
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1926", "ai-draft", "chinese-department", "clementi", "education", "hku", "interwar", "interwar-hong-kong", "nationalism"]
 summary: "In 1926, Governor Cecil Clementi established the Department of Chinese at the University of Hong Kong to foster traditional scholarship, a move interpreted variously as an academic advancement, a political counterweight to radical mainland nationalism, and a preservation of imperial culture."
+description: "In 1926, Governor Cecil Clementi established the Department of Chinese at the University of Hong Kong to foster traditional scholarship, a move interpreted variously as an academic advancement, a political counterweight…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

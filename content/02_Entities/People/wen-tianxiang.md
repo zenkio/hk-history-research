@@ -3,6 +3,7 @@ title: "Wen Tianxiang (文天祥)"
 title_zh: "文天祥"
 tags: ["ai-draft", "hong-kong-history", "man-clan", "person", "san-tin", "southern-song", "wen-tianxiang"]
 summary: "Wen Tianxiang was a loyalist prime minister of the Southern Song dynasty whose resistance against the Mongol invasion became a powerful symbol of loyalty, deeply influencing local Hong Kong identity and lineage history."
+description: "Wen Tianxiang was a loyalist prime minister of the Southern Song dynasty whose resistance against the Mongol invasion became a powerful symbol of loyalty, deeply influencing local Hong Kong identity and lineage history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

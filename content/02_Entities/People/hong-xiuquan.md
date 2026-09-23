@@ -3,6 +3,7 @@ title: "Hong Xiuquan (洪秀全)"
 title_zh: "洪秀全"
 tags: ["ai-draft", "hakka", "hong-kong-history", "migration", "person", "qing-dynasty", "taiping-rebellion"]
 summary: "The leader of the Taiping Rebellion whose failed uprising triggered massive waves of migration that fundamentally reshaped Hong Kong's demographics and economy during the mid-19th century."
+description: "The leader of the Taiping Rebellion whose failed uprising triggered massive waves of migration that fundamentally reshaped Hong Kong's demographics and economy during the mid-19th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Dan people (蜑家)"
 title_zh: "蜑家"
 tags: ["ai-draft", "colonial-era", "dan-people", "hong-kong-origins", "maritime-history", "person", "tanka"]
 summary: "The Dan (蜑家) or Tanka people are a traditional boat-dwelling maritime community whose distinct social evolution and integration into Hong Kong society remain central to the region's coastal history."
+description: "The Dan (蜑家) or Tanka people are a traditional boat-dwelling maritime community whose distinct social evolution and integration into Hong Kong society remain central to the region's coastal history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

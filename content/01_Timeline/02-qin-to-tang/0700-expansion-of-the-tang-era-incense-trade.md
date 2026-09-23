@@ -5,6 +5,7 @@ year: 700
 era: "Imperial frontier: Qin to Tang"
 tags: ["700", "ai-draft", "economic-history", "hong-kong-origins", "incense-trade", "maritime-silk-road", "qin-to-tang", "tang-dynasty"]
 summary: "During the 8th century, the coastal regions of the Pearl River Delta, including modern-day Hong Kong, developed into a specialized center for the cultivation and export of incense, meeting the high demand of the Tang imperial court."
+description: "During the 8th century, the coastal regions of the Pearl River Delta, including modern-day Hong Kong, developed into a specialized center for the cultivation and export of incense, meeting the high demand of the Tang…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

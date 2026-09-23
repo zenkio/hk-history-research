@@ -3,6 +3,7 @@ title: "Tung Chee-hwa (董建華)"
 title_zh: "董建華"
 tags: ["ai-draft", "biography", "chief-executive", "government", "handover", "person", "politics"]
 summary: "Tung Chee-hwa served as the first Chief Executive of the Hong Kong Special Administrative Region from 1997 to 2005, navigating the territory through its historic transition from British rule and major socio-economic crises."
+description: "Tung Chee-hwa served as the first Chief Executive of the Hong Kong Special Administrative Region from 1997 to 2005, navigating the territory through its historic transition from British rule and major socio-economic…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1847
 era: "The early colony"
 tags: ["1847", "19th-century", "ai-draft", "building-ordinance", "early-colonial-history", "early-colony", "public-safety", "urban-planning", "victoria-city"]
 summary: "In 1847, the colonial administration implemented the first building regulations in Hong Kong to address fire hazards and poor sanitation within the rapidly expanding urban settlement."
+description: "In 1847, the colonial administration implemented the first building regulations in Hong Kong to address fire hazards and poor sanitation within the rapidly expanding urban settlement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

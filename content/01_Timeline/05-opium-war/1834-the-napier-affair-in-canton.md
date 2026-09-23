@@ -6,6 +6,7 @@ year: 1834
 era: "Canton trade and the First Opium War"
 tags: ["1834", "ai-draft", "british-diplomacy", "canton-system", "first-opium-war", "lord-napier", "opium-war", "qing-dynasty"]
 summary: "In **1834**, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his untimely death."
+description: "In 1834, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

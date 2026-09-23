@@ -6,6 +6,7 @@ year: 1301
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1301", "ai-draft", "maritime-history", "salt-tax", "song-and-yuan", "trade-regulation", "tuan-mun", "yuan-dynasty"]
 summary: "In **1301**, Yuan dynasty administrators established an expanded salt inspection office at Tuen Mun to tighten maritime control, suppress smuggling, and enforce state monopolies."
+description: "In 1301, Yuan dynasty administrators established an expanded salt inspection office at Tuen Mun to tighten maritime control, suppress smuggling, and enforce state monopolies."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

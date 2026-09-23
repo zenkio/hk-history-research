@@ -6,6 +6,7 @@ year: 2020
 era: "Political contention and protest"
 tags: ["2020", "ai-draft", "consumer-behavior", "contention", "economic-activism", "hong-kong-history", "political-protest", "social-polarization"]
 summary: "Emerging in 2020, the 'Yellow Economic Circle' was a socio-political strategy where supporters of the pro-democracy movement prioritized patronage of businesses sympathetic to their cause."
+description: "Emerging in 2020, the 'Yellow Economic Circle' was a socio-political strategy where supporters of the pro-democracy movement prioritized patronage of businesses sympathetic to their cause."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

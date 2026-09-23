@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "barter-economy", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
 summary: "By December 1944, severe hyperinflation rendered Japanese military yen virtually worthless in occupied Hong Kong, compelling residents to abandon currency entirely in favor of a barter economy to secure basic survival necessities like rice."
+description: "By December 1944, severe hyperinflation rendered Japanese military yen virtually worthless in occupied Hong Kong, compelling residents to abandon currency entirely in favor of a barter economy to secure basic survival…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

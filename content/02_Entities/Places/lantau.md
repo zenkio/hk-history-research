@@ -3,6 +3,7 @@ title: "Lantau (大嶼山)"
 title_zh: "大嶼山"
 tags: ["ai-draft", "austronesian", "coastal-defense", "hong-kong-history", "lantau-island", "maritime-history", "place"]
 summary: "Lantau is the largest island in Hong Kong, serving as a significant site for early maritime activity and a focal point for evolving regional power dynamics."
+description: "Lantau is the largest island in Hong Kong, serving as a significant site for early maritime activity and a focal point for evolving regional power dynamics."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

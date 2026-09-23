@@ -6,6 +6,7 @@ year: 1883
 era: "Kowloon and the Victorian colony"
 tags: ["1883", "ai-draft", "british-colony", "hong-kong-observatory", "meteorology", "typhoon-warnings", "victorian-colony"]
 summary: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
+description: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1937", "ai-draft", "colonial-policy", "interwar", "interwar-history", "public-housing", "social-welfare", "urban-development"]
 summary: "In 1937, the Hong Kong colonial government opened its first public housing initiative in Wanchai, reflecting an emerging, albeit limited, state commitment to addressing substandard working-class living conditions."
+description: "In 1937, the Hong Kong colonial government opened its first public housing initiative in Wanchai, reflecting an emerging, albeit limited, state commitment to addressing substandard working-class living conditions."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

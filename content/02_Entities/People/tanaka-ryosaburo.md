@@ -3,6 +3,7 @@ title: "Tanaka Ryosaburo (田中龍三)"
 title_zh: "田中龍三"
 tags: ["ai-draft", "colonial-administration", "history-of-hong-kong", "japanese-occupation", "person", "world-war-ii"]
 summary: "Tanaka Ryosaburo was a Japanese colonial administrator who served as the Governor of Hong Kong during the final days of the Japanese occupation."
+description: "Tanaka Ryosaburo was a Japanese colonial administrator who served as the Governor of Hong Kong during the final days of the Japanese occupation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

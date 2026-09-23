@@ -3,6 +3,7 @@ title: "Chow Hang-tung (鄒幸彤)"
 title_zh: "鄒幸彤"
 tags: ["ai-draft", "hong-kong-history", "human-rights", "legal-activism", "national-security-law", "person", "tiananmen-commemoration"]
 summary: "Chow Hang-tung is a human rights lawyer and activist who served as a key leader of the Hong Kong Alliance in Support of Patriotic Democratic Movements of China."
+description: "Chow Hang-tung is a human rights lawyer and activist who served as a key leader of the Hong Kong Alliance in Support of Patriotic Democratic Movements of China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

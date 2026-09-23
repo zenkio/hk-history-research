@@ -3,6 +3,7 @@ title: "Denise Ho (何韻詩)"
 title_zh: "何韻詩"
 tags: ["activism", "ai-draft", "cantopop", "hong-kong-history", "person", "press-freedom", "pro-democracy"]
 summary: "Denise Ho is a prominent Hong Kong singer, actress, and activist known for her transition from a mainstream Canto-pop star to a vocal figure in the city's pro-democracy movement."
+description: "Denise Ho is a prominent Hong Kong singer, actress, and activist known for her transition from a mainstream Canto-pop star to a vocal figure in the city's pro-democracy movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

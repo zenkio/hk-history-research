@@ -5,6 +5,7 @@ year: -1300
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "maritime-religion", "prehistory", "rock-carvings"]
 summary: "Around **c. 1300 BCE**, during the Bronze Age, early inhabitants of the region carved intricate geometric and zoomorphic patterns into coastal rock faces, reflecting early maritime cultures."
+description: "Around c. 1300 BCE, during the Bronze Age, early inhabitants of the region carved intricate geometric and zoomorphic patterns into coastal rock faces, reflecting early maritime cultures."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

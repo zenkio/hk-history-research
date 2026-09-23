@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "colonial-era", "first-opium-war", "medical-history", "missionaries", "opium-war", "public-health"]
 summary: "In **1841**, the Medical Missionary Society in China established a hospital facility to provide Western medical care to local Chinese populations and foreign sailors amid rampant tropical diseases."
+description: "In 1841, the Medical Missionary Society in China established a hospital facility to provide Western medical care to local Chinese populations and foreign sailors amid rampant tropical diseases."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1989
 era: "Sino-British negotiations and the transition"
 tags: ["1989", "1989-crackdown", "ai-draft", "brain-drain", "diaspora", "emigration", "sino-british-negotiations", "transition", "transition-period"]
 summary: "Following the events of 1989, Hong Kong experienced a significant exodus of professional talent as residents sought stability and residency in Commonwealth nations."
+description: "Following the events of 1989, Hong Kong experienced a significant exodus of professional talent as residents sought stability and residency in Commonwealth nations."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

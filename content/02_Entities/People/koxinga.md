@@ -3,6 +3,7 @@ title: "Koxinga (鄭成功)"
 title_zh: "鄭成功"
 tags: ["ai-draft", "great-clearance", "hong-kong-history", "koxinga", "ming-loyalist", "person", "qing-dynasty"]
 summary: "Koxinga was a late Ming dynasty loyalist whose maritime resistance against the Qing dynasty indirectly impacted the Hong Kong region through drastic coastal evacuation policies."
+description: "Koxinga was a late Ming dynasty loyalist whose maritime resistance against the Qing dynasty indirectly impacted the Hong Kong region through drastic coastal evacuation policies."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

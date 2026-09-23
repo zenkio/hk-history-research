@@ -3,6 +3,7 @@ title: "Chong Lok-yin (方穎恆)"
 title_zh: "莊樂彥"
 tags: ["2000s", "ai-draft", "bus-uncle", "internet-culture", "media-history", "person"]
 summary: "Chong Lok-yin is a Hong Kong citizen whose involvement in the 2006 'Bus Uncle' viral video incident became a notable early example of internet culture and public discourse in the city."
+description: "Chong Lok-yin is a Hong Kong citizen whose involvement in the 2006 'Bus Uncle' viral video incident became a notable early example of internet culture and public discourse in the city."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

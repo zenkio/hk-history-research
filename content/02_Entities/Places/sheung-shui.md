@@ -3,6 +3,7 @@ title: "Sheung Shui (上水)"
 title_zh: "上水"
 tags: ["ai-draft", "british-colonial-history", "liu-clan", "new-territories", "olympic-equestrian", "place", "sheung-shui"]
 summary: "Sheung Shui is a historical market town in the North District of Hong Kong's New Territories, significant for its early Punti clan settlement and its modern role in hosting the 2008 Olympic equestrian events."
+description: "Sheung Shui is a historical market town in the North District of Hong Kong's New Territories, significant for its early Punti clan settlement and its modern role in hosting the 2008 Olympic equestrian events."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

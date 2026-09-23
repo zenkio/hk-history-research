@@ -6,6 +6,7 @@ year: 1899
 era: "The New Territories lease and the early 20th century"
 tags: ["1899", "ai-draft", "british-imperialism", "colonial-history", "kowloon-walled-city", "new-territories", "qing-dynasty"]
 summary: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave. This event created a complex jurisdictional anomaly that would persist for decades."
+description: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

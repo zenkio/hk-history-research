@@ -6,6 +6,7 @@ year: 1898
 era: "Kowloon and the Victorian colony"
 tags: ["1898", "ai-draft", "british-empire", "hong-kong-history", "new-territories", "qing-dynasty", "second-convention-of-peking", "victorian-colony"]
 summary: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting the stage for its 1997 return."
+description: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

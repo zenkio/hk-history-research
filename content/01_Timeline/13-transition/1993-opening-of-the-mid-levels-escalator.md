@@ -6,6 +6,7 @@ year: 1993
 era: "Sino-British negotiations and the transition"
 tags: ["1993", "ai-draft", "colonial-era", "engineering", "gentrification", "infrastructure", "transition", "urban-transport"]
 summary: "On October 15, 1993, the world's longest outdoor covered escalator system officially opened in Hong Kong, connecting Central to the Mid-Levels and reshaping the urban geography and social life of the colonial city during its transitional era."
+description: "On October 15, 1993, the world's longest outdoor covered escalator system officially opened in Hong Kong, connecting Central to the Mid-Levels and reshaping the urban geography and social life of the colonial city…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

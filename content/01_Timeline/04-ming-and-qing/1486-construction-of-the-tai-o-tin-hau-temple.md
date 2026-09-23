@@ -6,6 +6,7 @@ year: 1486
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1486", "ai-draft", "lantau-island", "ming-and-qing", "ming-dynasty", "religion", "tai-o", "tin-hau"]
 summary: "Traditionally dated to **1486**, the construction of the Tai O Tin Hau Temple on Lantau Island marks the earliest recorded establishment of a Tin Hau shrine in the region, highlighting the growing spiritual needs of early coastal communities."
+description: "Traditionally dated to 1486, the construction of the Tai O Tin Hau Temple on Lantau Island marks the earliest recorded establishment of a Tin Hau shrine in the region, highlighting the growing spiritual needs of early…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

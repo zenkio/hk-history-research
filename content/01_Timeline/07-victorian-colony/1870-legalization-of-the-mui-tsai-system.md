@@ -6,6 +6,7 @@ year: 1870
 era: "Kowloon and the Victorian colony"
 tags: ["1870", "ai-draft", "colonial-history", "domestic-service", "human-rights", "mui-tsai", "social-customs", "victorian-colony", "victorian-era"]
 summary: "During the late 19th century, the British colonial administration formally acknowledged the 'Mui Tsai' (妹仔) practice, integrating a traditional Chinese system of domestic service into the legal framework of the Victorian colony."
+description: "During the late 19th century, the British colonial administration formally acknowledged the 'Mui Tsai' (妹仔) practice, integrating a traditional Chinese system of domestic service into the legal framework of the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

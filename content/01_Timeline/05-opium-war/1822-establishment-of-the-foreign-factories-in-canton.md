@@ -6,6 +6,7 @@ year: 1822
 era: "Canton trade and the First Opium War"
 tags: ["1822", "ai-draft", "canton-system", "economic-history", "first-opium-war", "maritime-trade", "opium-war", "qing-dynasty", "thirteen-factories"]
 summary: "The 1822 fire in the Canton factories highlighted the vulnerabilities of the restrictive trade system, accelerating the search for alternative maritime bases."
+description: "The 1822 fire in the Canton factories highlighted the vulnerabilities of the restrictive trade system, accelerating the search for alternative maritime bases."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

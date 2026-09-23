@@ -3,6 +3,7 @@ title: "Tai Po Hoi (大埔海)"
 title_zh: "大埔海"
 tags: ["ai-draft", "hong-kong-history", "new-territories", "pearl-harvesting", "place", "tai-po-hoi", "tolo-harbour"]
 summary: "Tai Po Hoi is a historical body of water in Hong Kong historically renowned for its lucrative pearl harvesting industry."
+description: "Tai Po Hoi is a historical body of water in Hong Kong historically renowned for its lucrative pearl harvesting industry."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

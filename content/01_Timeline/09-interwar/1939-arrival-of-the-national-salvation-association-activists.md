@@ -6,6 +6,7 @@ year: 1939
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1939", "ai-draft", "colonial-history", "intellectual-history", "interwar", "national-salvation-association", "refugee-crisis", "second-sino-japanese-war"]
 summary: "Following the outbreak of the Second Sino-Japanese War, Hong Kong became a critical center for activists and intellectuals fleeing mainland China. The arrival of members from the National Salvation Association transformed the territory into a nexus for anti-Japanese intelligence and cultural resistance."
+description: "Following the outbreak of the Second Sino-Japanese War, Hong Kong became a critical center for activists and intellectuals fleeing mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

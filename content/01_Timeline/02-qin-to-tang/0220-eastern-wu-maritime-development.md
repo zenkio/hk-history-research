@@ -5,6 +5,7 @@ year: 220
 era: "Imperial frontier: Qin to Tang"
 tags: ["220", "ai-draft", "eastern-wu", "maritime-history", "qin-to-tang", "three-kingdoms", "trade-routes"]
 summary: "During the Three Kingdoms period, the Eastern Wu state expanded maritime trade and administrative control along the southern coast, increasing shipping activity in the waters around Hong Kong."
+description: "During the Three Kingdoms period, the Eastern Wu state expanded maritime trade and administrative control along the southern coast, increasing shipping activity in the waters around Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

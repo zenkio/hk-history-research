@@ -6,6 +6,7 @@ year: 1350
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1350", "ai-draft", "genealogy", "hong-kong-history", "land-tenure", "lineage-studies", "song-and-yuan", "yuant-dynasty"]
 summary: "During the twilight of the Yuan dynasty (1350–1368), the solidification of lineage records and landholding patterns established the foundation for the enduring influence of the 'Five Great Clans' in the New Territories."
+description: "During the twilight of the Yuan dynasty (1350–1368), the solidification of lineage records and landholding patterns established the foundation for the enduring influence of the 'Five Great Clans' in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

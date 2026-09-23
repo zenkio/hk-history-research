@@ -3,6 +3,7 @@ title: "Sir Hercules Robinson (夏喬士·羅便臣)"
 title_zh: "夏喬士·羅便臣"
 tags: ["ai-draft", "colonial-history", "governor", "hong-kong-administration", "land-policy", "nineteenth-century", "person"]
 summary: "Sir Hercules Robinson served as the fifth Governor of Hong Kong from 1859 to 1865, overseeing the formalization of colonial land administration and the expansion of the colony's infrastructure."
+description: "Sir Hercules Robinson served as the fifth Governor of Hong Kong from 1859 to 1865, overseeing the formalization of colonial land administration and the expansion of the colony's infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

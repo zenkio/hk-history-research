@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "colonial-history", "first-opium-war", "natural-disaster", "opium-war", "typhoon"]
 summary: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental vulnerabilities of the island."
+description: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

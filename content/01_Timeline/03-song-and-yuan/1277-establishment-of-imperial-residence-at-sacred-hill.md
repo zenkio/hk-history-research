@@ -6,6 +6,7 @@ year: 1277
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1277", "ai-draft", "imperial-refuge", "kowloon", "mongol-conquest", "song-and-yuan", "song-dynasty", "sung-wong-toi"]
 summary: "Between 1277 and 1279, the retreating Southern Song court established a temporary imperial refuge at Sacred Hill in modern-day Kowloon, an event that remains a cornerstone of local historical memory."
+description: "Between 1277 and 1279, the retreating Southern Song court established a temporary imperial refuge at Sacred Hill in modern-day Kowloon, an event that remains a cornerstone of local historical memory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

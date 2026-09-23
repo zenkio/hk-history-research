@@ -6,6 +6,7 @@ year: 1858
 era: "The early colony"
 tags: ["1858", "ai-draft", "botany", "colonial-history", "early-colony", "public-health", "urban-development", "victorian-era"]
 summary: "In 1858, the colonial government established a small trial botanical garden, marking the beginning of formal efforts to cultivate exotic flora in the harsh tropical environment of Hong Kong."
+description: "In 1858, the colonial government established a small trial botanical garden, marking the beginning of formal efforts to cultivate exotic flora in the harsh tropical environment of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

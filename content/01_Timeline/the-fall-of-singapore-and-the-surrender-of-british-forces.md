@@ -2,7 +2,8 @@
 title: "The Fall of Singapore and the Surrender of British Forces"
 date: 1942-02-15
 tags: ["1066", "1781", "1941", "1942", "2023", "british-empire", "fall-of-singapore", "japanese-occupation", "military-history", "wwii"]
-summary: "On **15 February 1942**, **Lt General Arthur Percival** surrendered British, Australian, Indian, and Malay troops to **L"
+summary: "On 15 February 1942, Lt General Arthur Percival surrendered British, Australian, Indian, and Malay troops to Lt General Tomoyuki Yamashita at the former Ford Motor Factory in Singapore."
+description: "On 15 February 1942, Lt General Arthur Percival surrendered British, Australian, Indian, and Malay troops to Lt General Tomoyuki Yamashita at the former Ford Motor Factory in Singapore."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/03/the-surrender-at-singapore.html"

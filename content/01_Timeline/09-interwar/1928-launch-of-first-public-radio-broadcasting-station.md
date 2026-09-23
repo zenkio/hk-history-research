@@ -6,6 +6,7 @@ year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1928", "ai-draft", "colonial-history", "interwar", "mass-media", "radio-broadcasting", "rthk"]
 summary: "On June 30, 1928, the colonial government inaugurated Hong Kong's first public radio broadcasting station, laying the groundwork for modern electronic media and public broadcasting in the territory."
+description: "On June 30, 1928, the colonial government inaugurated Hong Kong's first public radio broadcasting station, laying the groundwork for modern electronic media and public broadcasting in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

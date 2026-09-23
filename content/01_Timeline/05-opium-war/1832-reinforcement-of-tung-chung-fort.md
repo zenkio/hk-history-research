@@ -6,6 +6,7 @@ year: 1832
 era: "Canton trade and the First Opium War"
 tags: ["1832", "ai-draft", "first-opium-war", "lantau-island", "maritime-smuggling", "opium-war", "qing-dynasty", "tung-chung-fort"]
 summary: "In **1832**, the Qing dynasty reinforced the Tung Chung Fort on Lantau Island to strengthen coastal defense and suppress rampant maritime smuggling in the Pearl River estuary."
+description: "In 1832, the Qing dynasty reinforced the Tung Chung Fort on Lantau Island to strengthen coastal defense and suppress rampant maritime smuggling in the Pearl River estuary."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -4000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "chek-lap-kok", "maritime-culture", "neolithic", "prehistory"]
 summary: "Around **c. 4000 BCE**, early human communities established seasonal camps on Chek Lap Kok island, leaving behind stone tools and pottery that demonstrate the early exploitation of Hong Kong's coastal and offshore resources."
+description: "Around c. 4000 BCE, early human communities established seasonal camps on Chek Lap Kok island, leaving behind stone tools and pottery that demonstrate the early exploitation of Hong Kong's coastal and offshore resources."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

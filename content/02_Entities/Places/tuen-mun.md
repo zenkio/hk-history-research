@@ -3,6 +3,7 @@ title: "Tuen Mun (屯門)"
 title_zh: "屯門"
 tags: ["ai-draft", "han-chinese-expansion", "maritime-silk-road", "military-history", "new-territories", "place", "tuen-mun"]
 summary: "Tuen Mun is a coastal region in western the New Territories with a deep maritime and military history dating back over two millennia."
+description: "Tuen Mun is a coastal region in western the New Territories with a deep maritime and military history dating back over two millennia."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

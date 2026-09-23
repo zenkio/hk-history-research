@@ -3,6 +3,7 @@ title: "Nanjing (南京)"
 title_zh: "南京"
 tags: ["ai-draft", "colonial-history", "diplomatic-history", "hong-kong-origins", "place", "qing-dynasty", "treaty-of-nanking"]
 summary: "The capital of Jiangsu province, Nanjing served as the site for the 1842 signing of the Treaty of Nanking, which formally ceded Hong Kong Island to Great Britain."
+description: "The capital of Jiangsu province, Nanjing served as the site for the 1842 signing of the Treaty of Nanking, which formally ceded Hong Kong Island to Great Britain."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Baggio Leung (梁頌恆)"
 title_zh: "梁頌恆"
 tags: ["ai-draft", "basic-law", "hong-kong-politics", "legislative-council", "localism", "oath-taking-controversy", "person"]
 summary: "Baggio Leung was a Hong Kong politician and former Legislative Council member whose disqualification following an oath-taking controversy became a landmark case in Hong Kong's constitutional and political history."
+description: "Baggio Leung was a Hong Kong politician and former Legislative Council member whose disqualification following an oath-taking controversy became a landmark case in Hong Kong's constitutional and political history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

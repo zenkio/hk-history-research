@@ -6,6 +6,7 @@ year: 1911
 era: "The New Territories lease and the early 20th century"
 tags: ["1911", "ai-draft", "chinese-elite", "chinese-general-chamber-of-commerce", "colonial-era", "economic-history", "new-territories"]
 summary: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese bourgeois elite."
+description: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

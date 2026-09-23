@@ -3,6 +3,7 @@ title: "Chan Lun (陳倫)"
 title_zh: "陳倫"
 tags: ["1922-strike", "ai-draft", "colonial-era", "hong-kong-history", "labor-rights", "person", "seamens-strike"]
 summary: "Chan Lun was a labor activist and maritime worker who participated in the landmark 1922 Hong Kong Seamen's Strike."
+description: "Chan Lun was a labor activist and maritime worker who participated in the landmark 1922 Hong Kong Seamen's Strike."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

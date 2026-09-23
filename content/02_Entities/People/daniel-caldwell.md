@@ -3,6 +3,7 @@ title: "Daniel Caldwell (高德)"
 title_zh: "高德"
 tags: ["19th-century", "ai-draft", "caldwell-anstey-scandal", "colonial-history", "corruption", "daniel-caldwell", "person"]
 summary: "Daniel Caldwell was a prominent colonial official and interpreter whose career culminated in the explosive Caldwell-Anstey corruption scandal of the 1850s."
+description: "Daniel Caldwell was a prominent colonial official and interpreter whose career culminated in the explosive Caldwell-Anstey corruption scandal of the 1850s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

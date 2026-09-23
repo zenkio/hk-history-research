@@ -6,6 +6,7 @@ year: 1998
 era: "The early HKSAR"
 tags: ["1998", "ai-draft", "airport-express", "early-hksar", "hksar-history", "infrastructure", "mtr", "urban-development"]
 summary: "On June 22, 1998, the MTR's Airport Railway officially commenced service, providing a critical transport link between the newly opened Hong Kong International Airport at Chek Lap Kok and the Central business district."
+description: "On June 22, 1998, the MTR's Airport Railway officially commenced service, providing a critical transport link between the newly opened Hong Kong International Airport at Chek Lap Kok and the Central business district."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

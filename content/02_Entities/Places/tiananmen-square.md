@@ -3,6 +3,7 @@ title: "Tiananmen Square (天安門廣場)"
 title_zh: "天安門廣場"
 tags: ["ai-draft", "china-hong-kong-relations", "collective-memory", "hong-kong-history", "june-fourth", "place", "political-protests"]
 summary: "Tiananmen Square is a city square in the center of Beijing that has served as a focal point for political movements and diplomatic events which have significantly shaped the collective memory and political identity of Hong Kong."
+description: "Tiananmen Square is a city square in the center of Beijing that has served as a focal point for political movements and diplomatic events which have significantly shaped the collective memory and political identity of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

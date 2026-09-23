@@ -3,6 +3,7 @@ title: "Copper Causeway (銅鑼灣)"
 title_zh: "銅鑼灣"
 tags: ["ai-draft", "causeway-bay", "colonial-history", "hong-kong-island", "place", "transportation-history", "urban-development"]
 summary: "A major district on Hong Kong Island that evolved from a sheltered coastal inlet into a premier commercial and residential hub."
+description: "A major district on Hong Kong Island that evolved from a sheltered coastal inlet into a premier commercial and residential hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

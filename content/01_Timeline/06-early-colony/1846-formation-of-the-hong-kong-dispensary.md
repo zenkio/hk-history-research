@@ -6,6 +6,7 @@ year: 1846
 era: "The early colony"
 tags: ["1846", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "economic-development", "medical-history", "pharmaceutical-industry"]
 summary: "In 1846, the Hong Kong Dispensary was established to address the colonial medical needs, eventually evolving into the multinational A.S. Watson & Co."
+description: "In 1846, the Hong Kong Dispensary was established to address the colonial medical needs, eventually evolving into the multinational A.S. Watson & Co."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

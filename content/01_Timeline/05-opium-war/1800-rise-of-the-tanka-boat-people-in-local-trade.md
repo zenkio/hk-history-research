@@ -6,6 +6,7 @@ year: 1800
 era: "Canton trade and the First Opium War"
 tags: ["1800", "ai-draft", "canton-trade", "colonial-history", "economic-logistics", "maritime-history", "opium-war", "tanka-people"]
 summary: "Between 1800 and 1842, the Tanka (疍家) and Hoklo (鶴佬) populations served as the indispensable maritime infrastructure supporting the Canton trade system in the Pearl River Delta."
+description: "Between 1800 and 1842, the Tanka (疍家) and Hoklo (鶴佬) populations served as the indispensable maritime infrastructure supporting the Canton trade system in the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

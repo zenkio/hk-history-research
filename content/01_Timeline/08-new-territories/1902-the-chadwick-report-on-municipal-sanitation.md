@@ -6,6 +6,7 @@ year: 1902
 era: "The New Territories lease and the early 20th century"
 tags: ["1902", "ai-draft", "colonial-history", "epidemic", "housing-reform", "new-territories", "public-health", "sanitation"]
 summary: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major legislative reform."
+description: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

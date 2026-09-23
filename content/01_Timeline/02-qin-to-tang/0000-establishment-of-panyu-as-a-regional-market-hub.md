@@ -5,6 +5,7 @@ year: -214
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "early-trade", "maritime-history", "panyu", "qin-dynasty", "qin-to-tang", "regional-integration"]
 summary: "The establishment of Panyu in 214 BCE provided an administrative anchor that integrated Hong Kong’s coastal fringes into the broader economy of the Lingnan region."
+description: "The establishment of Panyu in 214 BCE provided an administrative anchor that integrated Hong Kong’s coastal fringes into the broader economy of the Lingnan region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

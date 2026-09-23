@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "allied-airmen", "east-river-column", "japanese-occupation", "maritime-history", "resistance-movement", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong in 1944, local fishermen and clandestine resistance networks risked their lives to shelter downed American pilots and smuggle them safely into Free China."
+description: "During the Japanese occupation of Hong Kong in 1944, local fishermen and clandestine resistance networks risked their lives to shelter downed American pilots and smuggle them safely into Free China."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

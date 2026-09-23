@@ -3,6 +3,7 @@ title: "Stanley Camp (赤柱拘留營)"
 title_zh: "赤柱拘留營"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "japanese-occupation", "place", "stanley", "world-war-ii"]
 summary: "Stanley Internment Camp was the primary facility used by Imperial Japanese forces to incarcerate Allied civilians in Hong Kong during the Second World War."
+description: "Stanley Internment Camp was the primary facility used by Imperial Japanese forces to incarcerate Allied civilians in Hong Kong during the Second World War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

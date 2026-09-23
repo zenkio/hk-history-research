@@ -6,6 +6,7 @@ year: 2024
 era: "The National Security Law era"
 tags: ["2024", "ai-draft", "hong-kong-47", "legal-history", "national-security-era", "national-security-law", "subversion-trial"]
 summary: "On May 30, 2024, a Hong Kong court convicted fourteen pro-democracy activists of subversion under the Beijing-imposed National Security Law, concluding the territory's largest mass trial under the legislation."
+description: "On May 30, 2024, a Hong Kong court convicted fourteen pro-democracy activists of subversion under the Beijing-imposed National Security Law, concluding the territory's largest mass trial under the legislation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

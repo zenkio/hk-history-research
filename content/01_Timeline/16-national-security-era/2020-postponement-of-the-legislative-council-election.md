@@ -6,6 +6,7 @@ year: 2020
 era: "The National Security Law era"
 tags: ["2020", "ai-draft", "carrie-lam", "covid-19", "election-postponement", "legislative-council", "national-security-era", "national-security-law"]
 summary: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
+description: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1973
 era: "Riots and the MacLehose reforms"
 tags: ["1973", "ai-draft", "cultural-history", "hong-kong-arts-festival", "maclehose-era", "performing-arts", "riots-and-reform"]
 summary: "The first Hong Kong Arts Festival was held in February 1973, marking a major milestone in the territory's cultural development during the governorship of Sir Murray MacLehose."
+description: "The first Hong Kong Arts Festival was held in February 1973, marking a major milestone in the territory's cultural development during the governorship of Sir Murray MacLehose."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

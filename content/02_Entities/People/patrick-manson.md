@@ -3,6 +3,7 @@ title: "Patrick Manson (孟生)"
 title_zh: "孟生"
 tags: ["ai-draft", "colonial-history", "education", "hong-kong-college-of-medicine", "medical-history", "patrick-manson", "person"]
 summary: "A Scottish physician known as the 'Father of Tropical Medicine', whose tenure in Hong Kong was instrumental in the establishment of the colony's first Western-style medical school."
+description: "A Scottish physician known as the 'Father of Tropical Medicine', whose tenure in Hong Kong was instrumental in the establishment of the colony's first Western-style medical school."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

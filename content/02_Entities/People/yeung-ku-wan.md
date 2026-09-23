@@ -3,6 +3,7 @@ title: "Yeung Ku-wan (楊衢雲)"
 title_zh: "楊衢雲"
 tags: ["1911-revolution", "ai-draft", "furen-literary-society", "hong-kong-history", "person", "revive-china-society", "yeung-ku-wan"]
 summary: "Yeung Ku-wan was a pivotal revolutionary figure and educator who co-founded the Hong Kong chapter of the Revive China Society, playing a critical role in early republican efforts against the Qing dynasty."
+description: "Yeung Ku-wan was a pivotal revolutionary figure and educator who co-founded the Hong Kong chapter of the Revive China Society, playing a critical role in early republican efforts against the Qing dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

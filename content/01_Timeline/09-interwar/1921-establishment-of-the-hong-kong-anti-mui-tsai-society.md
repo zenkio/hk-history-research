@@ -6,6 +6,7 @@ year: 1921
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1921", "ai-draft", "civic-activism", "colonial-history", "humanitarianism", "interwar", "interwar-period", "mui-tsai", "social-reform"]
 summary: "In 1921, local reformers established the Hong Kong Anti-Mui Tsai Society to advocate for the abolition of the mui tsai system of domestic servitude, marking a significant moment in colonial social reform."
+description: "In 1921, local reformers established the Hong Kong Anti-Mui Tsai Society to advocate for the abolition of the mui tsai system of domestic servitude, marking a significant moment in colonial social reform."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

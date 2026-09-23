@@ -5,6 +5,7 @@ year: 960
 era: "Imperial frontier: Qin to Tang"
 tags: ["960", "ai-draft", "maritime-trade", "pearl-harvesting", "qin-to-tang", "salt-monopoly", "southern-han", "tenth-century"]
 summary: "Around 960, the Southern Han Dynasty exercised its peak economic and administrative influence over the Pearl River Delta, driven by state-managed monopolies in salt and pearl harvesting that shaped the region's early maritime commerce."
+description: "Around 960, the Southern Han Dynasty exercised its peak economic and administrative influence over the Pearl River Delta, driven by state-managed monopolies in salt and pearl harvesting that shaped the region's early…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

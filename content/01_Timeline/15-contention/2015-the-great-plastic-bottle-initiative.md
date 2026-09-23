@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "ai-draft", "civic-engagement", "contention", "environmental-activism", "grassroots-movements", "hong-kong-history", "waste-management"]
 summary: "The 2015 Great Plastic Bottle Initiative represented a pivotal moment where grassroots environmental activism intersected with broader socio-political demands for increased civic agency in Hong Kong."
+description: "The 2015 Great Plastic Bottle Initiative represented a pivotal moment where grassroots environmental activism intersected with broader socio-political demands for increased civic agency in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

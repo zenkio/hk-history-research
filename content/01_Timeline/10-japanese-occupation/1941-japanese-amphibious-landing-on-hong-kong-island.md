@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "amphibious-landing", "battle-of-hong-kong", "british-garrison", "japanese-occupation", "pacific-war", "world-war-ii"]
 summary: "On December 18, 1941, Imperial Japanese forces successfully crossed Victoria Harbour under the cover of darkness and artillery bombardment, establishing a critical beachhead on Hong Kong Island and accelerating the colony's eventual surrender."
+description: "On December 18, 1941, Imperial Japanese forces successfully crossed Victoria Harbour under the cover of darkness and artillery bombardment, establishing a critical beachhead on Hong Kong Island and accelerating the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

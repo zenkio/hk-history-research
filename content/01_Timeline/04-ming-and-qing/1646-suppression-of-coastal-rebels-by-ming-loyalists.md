@@ -6,6 +6,7 @@ year: 1646
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1646", "ai-draft", "civil-war", "maritime-history", "ming-and-qing", "ming-dynasty", "population-displacement", "qing-dynasty"]
 summary: "During the mid-17th century, the transition from Ming to Qing rule triggered intense conflict in the Pearl River Delta, leading to widespread displacement of local populations in the Hong Kong region."
+description: "During the mid-17th century, the transition from Ming to Qing rule triggered intense conflict in the Pearl River Delta, leading to widespread displacement of local populations in the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

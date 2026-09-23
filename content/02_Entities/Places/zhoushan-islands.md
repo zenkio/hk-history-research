@@ -3,6 +3,7 @@ title: "Zhoushan Islands (舟山群島)"
 title_zh: "舟山群島"
 tags: ["ai-draft", "hong-kong-history", "lisbon-maru", "maritime-history", "place", "world-war-ii", "zhoushan-islands"]
 summary: "An archipelago off the coast of Zhejiang province that serves as a significant site in the maritime history of the Pacific theater during the Second World War, specifically regarding the sinking of the Lisbon Maru."
+description: "An archipelago off the coast of Zhejiang province that serves as a significant site in the maritime history of the Pacific theater during the Second World War, specifically regarding the sinking of the Lisbon Maru."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

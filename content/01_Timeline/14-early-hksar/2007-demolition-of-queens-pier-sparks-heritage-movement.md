@@ -6,6 +6,7 @@ year: 2007
 era: "The early HKSAR"
 tags: ["2007", "ai-draft", "civil-society", "early-hksar", "heritage-conservation", "hksar-history", "queens-pier", "urban-reclamation"]
 summary: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
+description: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

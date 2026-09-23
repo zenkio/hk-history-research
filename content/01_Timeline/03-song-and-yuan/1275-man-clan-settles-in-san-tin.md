@@ -6,6 +6,7 @@ year: 1275
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1275", "ai-draft", "five-great-clans", "man-clan", "new-territories-history", "san-tin", "song-and-yuan", "song-dynasty", "yuan-dynasty"]
 summary: "Around 1275, kinsmen of the prominent Southern Song loyalist Wen Tianxiang established settlements in San Tin, marking a foundational chapter in the history of the New Territories' powerful lineage clans."
+description: "Around 1275, kinsmen of the prominent Southern Song loyalist Wen Tianxiang established settlements in San Tin, marking a foundational chapter in the history of the New Territories' powerful lineage clans."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

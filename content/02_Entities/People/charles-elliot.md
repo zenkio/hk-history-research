@@ -3,6 +3,7 @@ title: "Charles Elliot (義律)"
 title_zh: "義律"
 tags: ["ai-draft", "british-colonial-history", "charles-elliot", "convention-of-chuenpi", "first-opium-war", "hong-kong-history", "person"]
 summary: "Charles Elliot was the Chief Superintendent of British Trade in China whose actions during the First Opium War led to the initial British occupation and early administration of Hong Kong."
+description: "Charles Elliot was the Chief Superintendent of British Trade in China whose actions during the First Opium War led to the initial British occupation and early administration of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "icac", "maclehose-reforms", "police-corruption", "riots-and-reform", "rule-of-law"]
 summary: "In response to widespread public frustration over rampant corruption, Governor Murray MacLehose established the Independent Commission Against Corruption on February 15, 1974, fundamentally transforming Hong Kong's governance and public administration."
+description: "In response to widespread public frustration over rampant corruption, Governor Murray MacLehose established the Independent Commission Against Corruption on February 15, 1974, fundamentally transforming Hong Kong's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

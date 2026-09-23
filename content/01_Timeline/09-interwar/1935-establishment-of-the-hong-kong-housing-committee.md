@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1935", "ai-draft", "colonial-history", "housing-policy", "interwar", "interwar-period", "public-health", "urban-development"]
 summary: "In 1935, the colonial government established the Hong Kong Housing Committee to investigate the territory's worsening housing crisis and poor sanitary conditions."
+description: "In 1935, the colonial government established the Hong Kong Housing Committee to investigate the territory's worsening housing crisis and poor sanitary conditions."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

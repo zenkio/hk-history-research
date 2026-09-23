@@ -5,6 +5,7 @@ year: -5000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "coastal-settlement", "marine-subsistence", "neolithic", "prehistory", "shell-middens"]
 summary: "Between 5000 and 3000 BCE, early coastal inhabitants in the Hong Kong region created extensive shell middens, marking a significant transition in subsistence patterns toward marine resources."
+description: "Between 5000 and 3000 BCE, early coastal inhabitants in the Hong Kong region created extensive shell middens, marking a significant transition in subsistence patterns toward marine resources."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

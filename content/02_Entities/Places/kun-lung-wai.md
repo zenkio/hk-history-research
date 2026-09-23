@@ -3,6 +3,7 @@ title: "Kun Lung Wai (金嶺圍)"
 title_zh: "金嶺圍"
 tags: ["ai-draft", "fanling", "hong-kong-history", "new-territories", "place", "tang-clan", "walled-villages"]
 summary: "Kun Lung Wai is a historic walled village in Fanling, representing the enduring legacy of the Tang clan in the New Territories."
+description: "Kun Lung Wai is a historic walled village in Fanling, representing the enduring legacy of the Tang clan in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

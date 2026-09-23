@@ -3,6 +3,7 @@ title: "Liao Zhongkai (廖仲愷)"
 title_zh: "廖仲愷"
 tags: ["ai-draft", "british-colonial-history", "canton-hong-kong-strike", "diplomatic-history", "kuomintang", "person", "republic-of-china"]
 summary: "Liao Zhongkai was a key architect of the Nationalist-Communist alliance who played a pivotal role in organizing the Canton-Hong Kong Strike and Boycott (1925–1926)."
+description: "Liao Zhongkai was a key architect of the Nationalist-Communist alliance who played a pivotal role in organizing the Canton-Hong Kong Strike and Boycott (1925–1926)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

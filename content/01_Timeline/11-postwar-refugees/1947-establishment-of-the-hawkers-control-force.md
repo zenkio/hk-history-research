@@ -6,6 +6,7 @@ year: 1947
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1947", "ai-draft", "colonial-administration", "hawkers", "postwar-history", "postwar-refugees", "refugees", "urban-management"]
 summary: "In 1947, the colonial administration established the Hawkers Control Force to manage the sudden proliferation of street vendors following the massive migration of refugees into Hong Kong."
+description: "In 1947, the colonial administration established the Hawkers Control Force to manage the sudden proliferation of street vendors following the massive migration of refugees into Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

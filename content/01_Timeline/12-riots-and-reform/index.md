@@ -2,6 +2,7 @@
 title: "12 · Riots and the MacLehose reforms (1966-1982)"
 tags: ["1967-riots", "ai-draft", "colonial-history", "era-overview", "hong-kong-identity", "icac", "mac-lehose-reforms"]
 summary: "This transformative era shifted Hong Kong from a volatile post-war colony plagued by social unrest into a modern, institutionalized metropolis under Governor Murray MacLehose. Driven by crises such as the 1967 Leftist Riots and widespread corruption, sweeping reforms in housing, education, and anti-corruption fundamentally reshaped society."
+description: "This transformative era shifted Hong Kong from a volatile post-war colony plagued by social unrest into a modern, institutionalized metropolis under Governor Murray MacLehose."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

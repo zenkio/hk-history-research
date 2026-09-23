@@ -6,6 +6,7 @@ year: 1573
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1573", "ai-draft", "coastal-defense", "local-administration", "ming-and-qing", "ming-dynasty", "piracy", "xin-an-county"]
 summary: "In 1573, the Ming court established Xin'an County by carving territory out of Dongguan to strengthen coastal administration and suppress piracy in the Pearl River Delta, laying the administrative foundation for modern Hong Kong."
+description: "In 1573, the Ming court established Xin'an County by carving territory out of Dongguan to strengthen coastal administration and suppress piracy in the Pearl River Delta, laying the administrative foundation for modern…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

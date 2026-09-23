@@ -6,6 +6,7 @@ year: 1952
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1952", "ai-draft", "cantonese-cinema", "cultural-identity", "film-history", "postwar-recovery", "postwar-refugees", "refugees"]
 summary: "Around 1952, the establishment of structured studio systems in Hong Kong marked the beginning of a golden age for local Cantonese filmmaking, providing a cultural outlet for a rapidly growing refugee population."
+description: "Around 1952, the establishment of structured studio systems in Hong Kong marked the beginning of a golden age for local Cantonese filmmaking, providing a cultural outlet for a rapidly growing refugee population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

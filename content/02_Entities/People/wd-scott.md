@@ -3,6 +3,7 @@ title: "W.D. Scott"
 title_zh: "史葛"
 tags: ["1980s", "ai-draft", "colonial-history", "hong-kong-administration", "hospital-authority", "person", "public-health"]
 summary: "W.D. Scott was a senior British colonial administrator who chaired the 1985 committee that recommended the restructuring of Hong Kong’s public hospital system, ultimately leading to the formation of the Hospital Authority."
+description: "W.D."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

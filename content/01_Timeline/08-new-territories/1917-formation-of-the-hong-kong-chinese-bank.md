@@ -6,6 +6,7 @@ year: 1917
 era: "The New Territories lease and the early 20th century"
 tags: ["1917", "ai-draft", "banking-sector", "chinese-merchants", "colonial-era", "early-20th-century", "economic-history", "hong-kong-history", "new-territories"]
 summary: "In 1917, the establishment of the Hong Kong Chinese Bank marked a pivotal shift in the colonial economy, reflecting the growing financial influence of local Chinese merchant capitalists."
+description: "In 1917, the establishment of the Hong Kong Chinese Bank marked a pivotal shift in the colonial economy, reflecting the growing financial influence of local Chinese merchant capitalists."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

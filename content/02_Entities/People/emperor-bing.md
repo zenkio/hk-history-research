@@ -3,6 +3,7 @@ title: "Emperor Bing (宋帝昺)"
 title_zh: "宋帝昺"
 tags: ["ai-draft", "emperor-bing", "history", "kowloon", "person", "southern-song", "sung-wong-toi"]
 summary: "Emperor Bing was the final ruler of the Southern Song dynasty whose brief refuge in the Hong Kong region left a lasting imprint on local topography, folklore, and ancestral veneration."
+description: "Emperor Bing was the final ruler of the Southern Song dynasty whose brief refuge in the Hong Kong region left a lasting imprint on local topography, folklore, and ancestral veneration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

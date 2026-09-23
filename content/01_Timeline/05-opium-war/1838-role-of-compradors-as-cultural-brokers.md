@@ -6,6 +6,7 @@ year: 1838
 era: "Canton trade and the First Opium War"
 tags: ["1838", "ai-draft", "canton-trade", "comprador-system", "cultural-exchange", "economic-history", "hong-kong-origins", "opium-war", "qing-dynasty"]
 summary: "During the late Canton System era, Chinese compradors acted as essential intermediaries between Western merchants and the Chinese domestic market, facilitating trade while navigating conflicting legal and cultural frameworks."
+description: "During the late Canton System era, Chinese compradors acted as essential intermediaries between Western merchants and the Chinese domestic market, facilitating trade while navigating conflicting legal and cultural…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

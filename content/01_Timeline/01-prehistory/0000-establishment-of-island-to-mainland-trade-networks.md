@@ -5,6 +5,7 @@ year: -3000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "early-settlement", "maritime-trade", "neolithic-period", "prehistoric-hong-kong", "prehistory"]
 summary: "Archaeological findings from the late Neolithic period suggest the formation of sophisticated maritime trade routes connecting Hong Kong's islands to the South China mainland."
+description: "Archaeological findings from the late Neolithic period suggest the formation of sophisticated maritime trade routes connecting Hong Kong's islands to the South China mainland."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

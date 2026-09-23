@@ -3,6 +3,7 @@ title: "Elsie Tu (杜葉錫恩)"
 title_zh: "杜葉錫恩"
 tags: ["activism", "ai-draft", "colonial-history", "hong-kong-politics", "person", "social-reform", "urban-council"]
 summary: "Elsie Tu was a prominent social reformer and politician in Hong Kong whose advocacy for the underprivileged during the colonial era significantly influenced the territory's social policies."
+description: "Elsie Tu was a prominent social reformer and politician in Hong Kong whose advocacy for the underprivileged during the colonial era significantly influenced the territory's social policies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

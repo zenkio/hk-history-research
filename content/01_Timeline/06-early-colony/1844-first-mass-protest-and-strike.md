@@ -6,6 +6,7 @@ year: 1844
 era: "The early colony"
 tags: ["1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "labor-strike", "protest"]
 summary: "In **November 1844**, Chinese merchants and laborers in early colonial Hong Kong organized a successful general strike and mass protest against a government registration ordinance and poll tax, compelling the British colonial administration to back down."
+description: "In November 1844, Chinese merchants and laborers in early colonial Hong Kong organized a successful general strike and mass protest against a government registration ordinance and poll tax, compelling the British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

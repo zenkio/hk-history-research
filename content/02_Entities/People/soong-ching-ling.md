@@ -3,6 +3,7 @@ title: "Soong Ching-ling (宋慶齡)"
 title_zh: "宋慶齡"
 tags: ["ai-draft", "china-defense-league", "hong-kong-history", "person", "second-sino-japanese-war", "soong-ching-ling", "wartime-relief"]
 summary: "Soong Ching-ling was a prominent Chinese political figure and philanthropist whose establishment of the China Defense League in Hong Kong played a crucial role in securing international medical relief during the Second Sino-Japanese War."
+description: "Soong Ching-ling was a prominent Chinese political figure and philanthropist whose establishment of the China Defense League in Hong Kong played a crucial role in securing international medical relief during the Second…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2006", "ai-draft", "civil-protest", "early-hksar", "heritage-conservation", "hksar-history", "localism", "star-ferry", "urban-development"]
 summary: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
+description: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

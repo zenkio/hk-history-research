@@ -3,6 +3,7 @@ title: "Fanling (粉嶺)"
 title_zh: "粉嶺"
 tags: ["ai-draft", "clan-history", "colonial-history", "land-rights", "new-territories", "north-district", "place"]
 summary: "Fanling is a significant historical and residential region in the North District of the New Territories that reflects the complex evolution of land rights and settlement patterns in Hong Kong."
+description: "Fanling is a significant historical and residential region in the North District of the New Territories that reflects the complex evolution of land rights and settlement patterns in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

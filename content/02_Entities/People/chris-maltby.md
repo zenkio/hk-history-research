@@ -3,6 +3,7 @@ title: "Chris Maltby (莫德庇)"
 title_zh: "莫德庇"
 tags: ["ai-draft", "british-colonial-era", "chief-secretary", "civil-service", "hong-kong-handover", "person", "political-history"]
 summary: "Chris Maltby was a British colonial official who served as the Chief Secretary of Hong Kong during the final years of British administration."
+description: "Chris Maltby was a British colonial official who served as the Chief Secretary of Hong Kong during the final years of British administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "medical-history", "nineteenth-century", "public-health"]
 summary: "In 1845, the British colonial administration established the Colonial Surgeon's Office to address the severe mortality rates plaguing the early settlement of Victoria."
+description: "In 1845, the British colonial administration established the Colonial Surgeon's Office to address the severe mortality rates plaguing the early settlement of Victoria."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

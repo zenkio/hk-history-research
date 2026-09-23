@@ -3,6 +3,7 @@ title: "Queen Mary (瑪麗王后)"
 title_zh: "瑪麗王后"
 tags: ["ai-draft", "british-royalty", "colonial-history", "healthcare", "person", "queen-mary", "queen-mary-hospital"]
 summary: "Queen Mary was the Queen consort of the United Kingdom and British Dominions whose name was commemorated in Hong Kong through major public healthcare infrastructure."
+description: "Queen Mary was the Queen consort of the United Kingdom and British Dominions whose name was commemorated in Hong Kong through major public healthcare infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

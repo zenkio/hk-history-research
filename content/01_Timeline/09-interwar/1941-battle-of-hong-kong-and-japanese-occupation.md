@@ -6,6 +6,7 @@ year: 1941
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "interwar", "japanese-occupation", "pacific-war", "world-war-ii"]
 summary: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
+description: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

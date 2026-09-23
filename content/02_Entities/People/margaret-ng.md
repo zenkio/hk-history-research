@@ -3,6 +3,7 @@ title: "Margaret Ng (吳靄儀)"
 title_zh: "吳靄儀"
 tags: ["ai-draft", "hong-kong-history", "legal-profession", "legislative-council", "person", "rule-of-law", "stand-news"]
 summary: "Margaret Ng is a prominent Hong Kong barrister, politician, and writer who served as a long-standing representative for the legal functional constituency in the Legislative Council."
+description: "Margaret Ng is a prominent Hong Kong barrister, politician, and writer who served as a long-standing representative for the legal functional constituency in the Legislative Council."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

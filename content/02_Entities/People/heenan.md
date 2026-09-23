@@ -3,6 +3,7 @@ title: "Heenan (何南)"
 title_zh: "何南"
 tags: ["ai-draft", "colonial-history", "intelligence", "person", "secret-networks", "world-war-ii"]
 summary: "Heenan is a historical figure associated with the covert operations of the secret underground intelligence network in Hong Kong."
+description: "Heenan is a historical figure associated with the covert operations of the secret underground intelligence network in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

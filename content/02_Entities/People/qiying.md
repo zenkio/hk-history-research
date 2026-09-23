@@ -3,6 +3,7 @@ title: "Qiying (耆英)"
 title_zh: "耆英"
 tags: ["ai-draft", "colonial-hong-kong", "diplomatic-history", "first-opium-war", "person", "qing-dynasty", "treaty-of-nanking"]
 summary: "Qiying was a prominent Qing dynasty imperial commissioner and diplomat who played a central role in negotiating early treaties between the Qing Empire and Western powers, including the Treaty of Nanking."
+description: "Qiying was a prominent Qing dynasty imperial commissioner and diplomat who played a central role in negotiating early treaties between the Qing Empire and Western powers, including the Treaty of Nanking."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

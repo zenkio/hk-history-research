@@ -3,6 +3,7 @@ title: "Lawrence Collins (賀輔明)"
 title_zh: "賀輔明"
 tags: ["ai-draft", "common-law", "hong-kong-court-of-final-appeal", "judiciary", "legal-history", "person", "rule-of-law"]
 summary: "Lawrence Collins (賀輔明) was a distinguished British judge who served as one of the final overseas non-permanent judges of the Hong Kong Court of Final Appeal."
+description: "Lawrence Collins (賀輔明) was a distinguished British judge who served as one of the final overseas non-permanent judges of the Hong Kong Court of Final Appeal."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

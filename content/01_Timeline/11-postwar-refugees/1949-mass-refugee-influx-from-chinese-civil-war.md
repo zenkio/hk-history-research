@@ -6,6 +6,7 @@ year: 1949
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1949", "ai-draft", "chinese-civil-war", "industrialisation", "postwar-recovery", "postwar-refugees", "refugees", "shek-kip-mei"]
 summary: "Between **1945** and **1950**, hundreds of thousands of refugees fled mainland China for Hong Kong following the Communist victory, fundamentally transforming the territory's demographics, economy, and social fabric."
+description: "Between 1945 and 1950, hundreds of thousands of refugees fled mainland China for Hong Kong following the Communist victory, fundamentally transforming the territory's demographics, economy, and social fabric."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

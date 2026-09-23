@@ -6,6 +6,7 @@ year: 1889
 era: "Kowloon and the Victorian colony"
 tags: ["1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
 summary: "In **1889**, businessman **Sir Paul Chater** (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
+description: "In 1889, businessman Sir Paul Chater (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: 250
 era: "Imperial frontier: Qin to Tang"
 tags: ["250", "ai-draft", "aquaculture", "coastal-history", "economic-development", "jin-dynasty", "lingnan-history", "oyster-farming", "qin-to-tang"]
 summary: "Between 250 and 300 CE, early coastal communities in the Pearl River Delta refined oyster cultivation practices, establishing a long-term economic foundation for the region."
+description: "Between 250 and 300 CE, early coastal communities in the Pearl River Delta refined oyster cultivation practices, establishing a long-term economic foundation for the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

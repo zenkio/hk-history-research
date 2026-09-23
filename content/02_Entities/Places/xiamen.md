@@ -3,6 +3,7 @@ title: "Xiamen (廈門)"
 title_zh: "廈門"
 tags: ["ai-draft", "canton-trade-system", "colonial-history", "maritime-trade", "place", "treaty-ports", "xiamen"]
 summary: "Xiamen was one of the original five treaty ports that fundamentally altered the economic landscape of the Pearl River Delta and the British colonial trajectory in Hong Kong."
+description: "Xiamen was one of the original five treaty ports that fundamentally altered the economic landscape of the Pearl River Delta and the British colonial trajectory in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

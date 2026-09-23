@@ -3,6 +3,7 @@ title: "Yuen Long Plain (元朗平原)"
 title_zh: "元朗平原"
 tags: ["agricultural-history", "ai-draft", "new-territories", "place", "qing-dynasty", "shap-pat-heung", "yuen-long"]
 summary: "The Yuen Long Plain is the largest alluvial lowland in the New Territories and served as the geographic and agricultural foundation for the establishment of the powerful Shap Pat Heung Alliance."
+description: "The Yuen Long Plain is the largest alluvial lowland in the New Territories and served as the geographic and agricultural foundation for the establishment of the powerful Shap Pat Heung Alliance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

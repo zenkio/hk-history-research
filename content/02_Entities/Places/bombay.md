@@ -3,6 +3,7 @@ title: "Bombay (孟買)"
 title_zh: "孟買"
 tags: ["ai-draft", "colonial-history", "economic-history", "hsbc", "india-china-relations", "place", "trade"]
 summary: "Bombay served as a vital financial and logistical link in the British imperial trade network, providing the institutional template and capital flows essential to the establishment of the Hongkong and Shanghai Banking Corporation (HSBC)."
+description: "Bombay served as a vital financial and logistical link in the British imperial trade network, providing the institutional template and capital flows essential to the establishment of the Hongkong and Shanghai Banking…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Local Merchant Elites (本地華商)"
 title_zh: "本地華商"
 tags: ["ai-draft", "banking-history", "colonial-history", "economic-development", "hong-kong-elites", "mercantile-history", "person"]
 summary: "Local Merchant Elites were a pivotal class of Chinese entrepreneurs who served as intermediaries between the colonial government and the Chinese population, fundamentally shaping the socio-economic development of early Hong Kong."
+description: "Local Merchant Elites were a pivotal class of Chinese entrepreneurs who served as intermediaries between the colonial government and the Chinese population, fundamentally shaping the socio-economic development of early…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2004
 era: "The early HKSAR"
 tags: ["2004", "ai-draft", "commercial-radio", "early-hksar", "hksar-history", "hong-kong-history", "media-freedom", "political-discourse"]
 summary: "In 2004, Hong Kong's airwaves became the epicenter of political debate as outspoken radio hosts challenged the status quo, fundamentally altering the city's relationship with media and governance."
+description: "In 2004, Hong Kong's airwaves became the epicenter of political debate as outspoken radio hosts challenged the status quo, fundamentally altering the city's relationship with media and governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Zeng Sheng (會生)"
 title_zh: "曾生"
 tags: ["ai-draft", "east-river-column", "guerrilla-warfare", "hong-kong-history", "person", "world-war-ii", "zeng-sheng"]
 summary: "Zeng Sheng was a prominent commander of the East River Column (東江縱隊), a guerrilla force that played a significant role in resisting Japanese occupation in the Hong Kong and Guangdong region during World War II."
+description: "Zeng Sheng was a prominent commander of the East River Column (東江縱隊), a guerrilla force that played a significant role in resisting Japanese occupation in the Hong Kong and Guangdong region during World War II."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

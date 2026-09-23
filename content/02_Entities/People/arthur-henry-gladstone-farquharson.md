@@ -3,6 +3,7 @@ title: "Arthur Henry Gladstone Farquharson (夏理遜)"
 title_zh: "夏理遜"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "new-territories", "nineteenth-century", "person", "six-day-war"]
 summary: "Arthur Henry Gladstone Farquharson was a British colonial official who served as the District Officer for the New Territories during the period surrounding the 1899 Six-Day War."
+description: "Arthur Henry Gladstone Farquharson was a British colonial official who served as the District Officer for the New Territories during the period surrounding the 1899 Six-Day War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

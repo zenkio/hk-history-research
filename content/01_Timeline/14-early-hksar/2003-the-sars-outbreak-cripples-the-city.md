@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "amoy-gardens", "early-hksar", "economy", "hksar-history", "public-health", "sars-2003"]
 summary: "In the spring of **2003**, the Severe Acute Respiratory Syndrome epidemic struck Hong Kong, causing profound public health trauma, social panic, and severe economic contraction."
+description: "In the spring of 2003, the Severe Acute Respiratory Syndrome epidemic struck Hong Kong, causing profound public health trauma, social panic, and severe economic contraction."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

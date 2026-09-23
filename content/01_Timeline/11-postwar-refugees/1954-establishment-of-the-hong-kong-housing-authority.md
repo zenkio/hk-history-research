@@ -6,6 +6,7 @@ year: 1954
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1954", "ai-draft", "housing-authority", "postwar-recovery", "postwar-refugees", "shek-kip-mei-fire", "social-welfare", "urban-development"]
 summary: "In **1954**, the colonial government established the Hong Kong Housing Authority to address severe housing shortages and the proliferation of squatter settlements following rapid postwar population growth. This body marked a pivotal shift toward state-led permanent public housing development."
+description: "In 1954, the colonial government established the Hong Kong Housing Authority to address severe housing shortages and the proliferation of squatter settlements following rapid postwar population growth."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

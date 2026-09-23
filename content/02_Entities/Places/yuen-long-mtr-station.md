@@ -3,6 +3,7 @@ title: "Yuen Long MTR station (元朗站)"
 title_zh: "元朗站"
 tags: ["ai-draft", "hong-kong-history", "mtr", "new-territories", "place", "transportation", "yuen-long"]
 summary: "Yuen Long Station is a major transport interchange in the New Territories, serving as a critical node in Hong Kong's railway network and a site of significant recent political discourse."
+description: "Yuen Long Station is a major transport interchange in the New Territories, serving as a critical node in Hong Kong's railway network and a site of significant recent political discourse."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1972
 era: "Riots and the MacLehose reforms"
 tags: ["1972", "ai-draft", "colonial-history", "land-policy", "maclehose-reforms", "new-territories", "riots-and-reform", "small-house-policy"]
 summary: "Introduced in December 1972, the Small House Policy granted indigenous male villagers in the New Territories the right to apply to build a village house, profoundly shaping land use and community politics for decades."
+description: "Introduced in December 1972, the Small House Policy granted indigenous male villagers in the New Territories the right to apply to build a village house, profoundly shaping land use and community politics for decades."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

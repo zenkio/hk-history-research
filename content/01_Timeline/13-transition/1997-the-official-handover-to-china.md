@@ -6,6 +6,7 @@ year: 1997
 era: "Sino-British negotiations and the transition"
 tags: ["1997", "ai-draft", "british-colonial-history", "handover", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
+description: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

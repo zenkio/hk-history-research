@@ -5,6 +5,7 @@ year: 331
 era: "Imperial frontier: Qin to Tang"
 tags: ["331", "ai-draft", "ancient-hong-kong", "dongguan-county", "imperial-frontier", "jin-dynasty", "local-administration", "qin-to-tang"]
 summary: "In 331, the Jin Dynasty established Dongguan County, placing the territory of modern-day Hong Kong under a localized administrative authority for the first time in its recorded history."
+description: "In 331, the Jin Dynasty established Dongguan County, placing the territory of modern-day Hong Kong under a localized administrative authority for the first time in its recorded history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

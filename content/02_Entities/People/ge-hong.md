@@ -3,6 +3,7 @@ title: "Ge Hong (葛洪)"
 title_zh: "葛洪"
 tags: ["ai-draft", "alchemy", "daoism", "ge-hong", "history", "lingnan", "person"]
 summary: "Ge Hong was a Jin dynasty scholar, Daoist alchemist, and physician whose writings and legendary travels in the Lingnan region connect early Chinese proto-scientific practices with the cultural heritage of Hong Kong."
+description: "Ge Hong was a Jin dynasty scholar, Daoist alchemist, and physician whose writings and legendary travels in the Lingnan region connect early Chinese proto-scientific practices with the cultural heritage of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

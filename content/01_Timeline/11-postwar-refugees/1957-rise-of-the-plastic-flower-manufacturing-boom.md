@@ -6,6 +6,7 @@ year: 1957
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1950s", "1957", "ai-draft", "cottage-labour", "light-industry", "manufacturing-boom", "plastic-flowers", "postwar-economy", "postwar-refugees"]
 summary: "Beginning around 1957, the rapid expansion of plastic flower production transformed Hong Kong's economy, driving its light industrial revolution and providing widespread home-assembly employment."
+description: "Beginning around 1957, the rapid expansion of plastic flower production transformed Hong Kong's economy, driving its light industrial revolution and providing widespread home-assembly employment."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

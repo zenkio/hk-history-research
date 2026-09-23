@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "ai-draft", "contention", "hong-kong-history", "localism", "political-discourse", "sovereignty", "student-movement"]
 summary: "Following the 2014 Umbrella Movement, Hong Kong's political discourse shifted from calls for democratic reform to debates regarding the city's existential status and independence."
+description: "Following the 2014 Umbrella Movement, Hong Kong's political discourse shifted from calls for democratic reform to debates regarding the city's existential status and independence."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

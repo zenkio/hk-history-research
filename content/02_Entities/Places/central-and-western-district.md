@@ -3,6 +3,7 @@ title: "Central and Western District (中西區)"
 title_zh: "中西區"
 tags: ["ai-draft", "central-and-western-district", "district-council", "local-history", "place", "politics"]
 summary: "The Central and Western District is the historical, political, and financial core of Hong Kong, which became a focal point during the mass resignations of pro-democracy district councillors following the implementation of the National Security Law."
+description: "The Central and Western District is the historical, political, and financial core of Hong Kong, which became a focal point during the mass resignations of pro-democracy district councillors following the implementation…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

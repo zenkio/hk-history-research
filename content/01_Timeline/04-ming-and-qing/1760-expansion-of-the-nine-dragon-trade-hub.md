@@ -6,6 +6,7 @@ year: 1760
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1760", "ai-draft", "canton-system", "kowloon", "logistics", "maritime-history", "ming-and-qing", "qing-dynasty", "trade-history"]
 summary: "Between 1760 and 1790, Kowloon emerged as a strategic logistical node supporting the Canton System, serving as an essential transit point for foreign trade vessels."
+description: "Between 1760 and 1790, Kowloon emerged as a strategic logistical node supporting the Canton System, serving as an essential transit point for foreign trade vessels."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

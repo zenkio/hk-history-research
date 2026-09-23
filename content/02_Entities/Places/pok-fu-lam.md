@@ -3,6 +3,7 @@ title: "Pok Fu Lam (薄扶林)"
 title_zh: "薄扶林"
 tags: ["ai-draft", "colonial-infrastructure", "hong-kong-history", "place", "pok-fu-lam", "southern-district", "water-supply"]
 summary: "A historic area on the southwestern coast of Hong Kong Island, significant for its role in early colonial infrastructure, water supply, and the development of the city's academic and residential landscape."
+description: "A historic area on the southwestern coast of Hong Kong Island, significant for its role in early colonial infrastructure, water supply, and the development of the city's academic and residential landscape."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1948
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1948", "ai-draft", "british-colonial-history", "kowloon-walled-city", "postwar-refugees", "riots", "sino-british-relations", "squatters"]
 summary: "In January 1948, British colonial attempts to clear and demolish the Kowloon Walled City triggered violent protests and a diplomatic standoff with the Chinese Nationalist government over sovereignty and jurisdiction."
+description: "In January 1948, British colonial attempts to clear and demolish the Kowloon Walled City triggered violent protests and a diplomatic standoff with the Chinese Nationalist government over sovereignty and jurisdiction."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Niu Jian (牛鑑)"
 title_zh: "牛鑑"
 tags: ["ai-draft", "first-opium-war", "hong-kong-history", "niu-jian", "person", "qing-dynasty", "treaty-of-nanking"]
 summary: "Niu Jian (牛鑑) was the Liangjiang Governor-General who served as a primary Qing dynasty negotiator during the final stages of the First Opium War and the drafting of the Treaty of Nanking."
+description: "Niu Jian (牛鑑) was the Liangjiang Governor-General who served as a primary Qing dynasty negotiator during the final stages of the First Opium War and the drafting of the Treaty of Nanking."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

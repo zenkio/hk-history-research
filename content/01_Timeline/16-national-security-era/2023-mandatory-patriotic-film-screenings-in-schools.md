@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "civic-education", "curriculum-reform", "hong-kong-schools", "national-security-era", "national-security-law", "patriotic-education"]
 summary: "In 2023, the Education Bureau formalised requirements for Hong Kong schools to conduct screenings of patriotic films as part of a broader initiative to strengthen national identity among students."
+description: "In 2023, the Education Bureau formalised requirements for Hong Kong schools to conduct screenings of patriotic films as part of a broader initiative to strengthen national identity among students."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

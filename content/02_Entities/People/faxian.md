@@ -3,6 +3,7 @@ title: "Faxian (法顯)"
 title_zh: "法顯"
 tags: ["ai-draft", "ancient-geography", "buddhism", "faxian", "maritime-history", "person", "south-china-sea"]
 summary: "Faxian was a 5th-century Buddhist monk whose recorded maritime return journey from India through the South China Sea provides some of the earliest historical geography relevant to the waters around Hong Kong."
+description: "Faxian was a 5th-century Buddhist monk whose recorded maritime return journey from India through the South China Sea provides some of the earliest historical geography relevant to the waters around Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Guangzhou (廣州)"
 title_zh: "廣州"
 tags: ["ai-draft", "canton-trade", "maritime-silk-road", "pearl-river-delta", "place", "tang-dynasty"]
 summary: "Guangzhou is a major southern Chinese port city whose administrative, economic, and military development deeply shaped the history, trade networks, and maritime security of Hong Kong from the Tang dynasty onward."
+description: "Guangzhou is a major southern Chinese port city whose administrative, economic, and military development deeply shaped the history, trade networks, and maritime security of Hong Kong from the Tang dynasty onward."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

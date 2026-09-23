@@ -5,6 +5,7 @@ year: -4500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "hong-kong-origins", "maritime-history", "neolithic", "prehistory"]
 summary: "Archaeological findings dating to approximately 4500–4000 BCE indicate that early inhabitants of the Hong Kong region established specialized sites for the intensive processing and preservation of marine resources."
+description: "Archaeological findings dating to approximately 4500–4000 BCE indicate that early inhabitants of the Hong Kong region established specialized sites for the intensive processing and preservation of marine resources."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Pak Yin (白燕)"
 title_zh: "白燕"
 tags: ["ai-draft", "cantonese-cinema", "film-history", "hong-kong-history", "pak-yin", "person", "union-film"]
 summary: "Pak Yin was a legendary Hong Kong film actress who co-founded Union Film Enterprise and came to define the moral complexity of mid-century Cantonese cinema."
+description: "Pak Yin was a legendary Hong Kong film actress who co-founded Union Film Enterprise and came to define the moral complexity of mid-century Cantonese cinema."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

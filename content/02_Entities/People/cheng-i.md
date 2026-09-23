@@ -3,6 +3,7 @@ title: "Cheng I (鄭一)"
 title_zh: "鄭一"
 tags: ["ai-draft", "hong-kong-origins", "maritime-history", "person", "pirate-history", "qing-dynasty"]
 summary: "A prominent maritime leader in the late 18th and early 19th centuries whose organization of pirate fleets laid the foundations for the pirate confederacies that operated extensively in the waters around Hong Kong."
+description: "A prominent maritime leader in the late 18th and early 19th centuries whose organization of pirate fleets laid the foundations for the pirate confederacies that operated extensively in the waters around Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

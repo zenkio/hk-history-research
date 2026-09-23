@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "famine", "japanese-occupation", "rationing", "starvation", "world-war-two"]
 summary: "During the final years of the Japanese occupation in 1944 and 1945, severe wartime blockades and resource depletion reduced food imports to Hong Kong to near zero, resulting in widespread famine, severe malnutrition, and a massive demographic collapse marked by hundreds of daily street deaths."
+description: "During the final years of the Japanese occupation in 1944 and 1945, severe wartime blockades and resource depletion reduced food imports to Hong Kong to near zero, resulting in widespread famine, severe malnutrition…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "deforestation", "environmental-history", "fuel-shortage", "japanese-occupation", "world-war-ii"]
 summary: "During the final years of the Japanese occupation of Hong Kong from 1944 to 1945, acute fuel shortages led to widespread and indiscriminate logging across the territory's hillsides, resulting in severe ecological devastation."
+description: "During the final years of the Japanese occupation of Hong Kong from 1944 to 1945, acute fuel shortages led to widespread and indiscriminate logging across the territory's hillsides, resulting in severe ecological…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

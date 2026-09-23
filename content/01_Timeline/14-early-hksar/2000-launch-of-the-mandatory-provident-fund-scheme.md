@@ -6,6 +6,7 @@ year: 2000
 era: "The early HKSAR"
 tags: ["2000", "ai-draft", "early-hksar", "economy", "hksar-history", "mandatory-provident-fund", "retirement-protection", "social-security"]
 summary: "On December 1, 2000, the Hong Kong Special Administrative Region government officially launched the Mandatory Provident Fund (強制性公積金) scheme, establishing a compulsory, privately-managed contributory retirement protection system for the local workforce."
+description: "On December 1, 2000, the Hong Kong Special Administrative Region government officially launched the Mandatory Provident Fund (強制性公積金) scheme, establishing a compulsory, privately-managed contributory retirement…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

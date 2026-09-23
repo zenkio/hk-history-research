@@ -6,6 +6,7 @@ year: 1860
 era: "Kowloon and the Victorian colony"
 tags: ["1860", "ai-draft", "diocesan-girls-school", "education-history", "missionary-schools", "victorian-colony", "womens-history"]
 summary: "Founded in 1860 as the Diocesan Native Female Training School, this institution marked an early and significant step toward formal education for girls in the colonial era."
+description: "Founded in 1860 as the Diocesan Native Female Training School, this institution marked an early and significant step toward formal education for girls in the colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

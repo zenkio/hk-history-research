@@ -6,6 +6,7 @@ year: 1520
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1520", "ai-draft", "coastal-development", "early-settlement", "economic-history", "ming-and-qing", "ming-dynasty", "salt-production"]
 summary: "Around 1520, the establishment of the Xiliang Salt Fields (西瀝鹽場) marked a significant phase in the development of the coastal regions surrounding present-day Hong Kong. This expansion of salt production created an economic foundation that supported the growth of early settler villages."
+description: "Around 1520, the establishment of the Xiliang Salt Fields (西瀝鹽場) marked a significant phase in the development of the coastal regions surrounding present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

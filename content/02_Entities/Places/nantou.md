@@ -3,6 +3,7 @@ title: "Nantou (南頭)"
 title_zh: "南頭"
 tags: ["ai-draft", "colonial-history", "imperial-china", "nantou", "new-territories", "place", "xin-an-county"]
 summary: "Nantou served as the long-standing administrative and military headquarters for the region that encompassed present-day Hong Kong during the imperial era."
+description: "Nantou served as the long-standing administrative and military headquarters for the region that encompassed present-day Hong Kong during the imperial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

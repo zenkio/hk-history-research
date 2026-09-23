@@ -3,6 +3,7 @@ title: "Lau Kong-wah (劉江華)"
 title_zh: "劉江華"
 tags: ["ai-draft", "dab", "electoral-reform", "hong-kong-government", "lau-kong-wah", "legislative-council", "person"]
 summary: "Lau Kong-wah was a prominent Hong Kong politician and government official whose career spanned the colonial and post-handover eras, notably marked by his involvement with the Democratic Alliance for the Betterment and Progress of Hong Kong (DAB) and his participation in key legislative votes."
+description: "Lau Kong-wah was a prominent Hong Kong politician and government official whose career spanned the colonial and post-handover eras, notably marked by his involvement with the Democratic Alliance for the Betterment and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

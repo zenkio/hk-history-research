@@ -3,6 +3,7 @@ title: "Hoklo (鶴佬)"
 title_zh: "鶴佬"
 tags: ["ai-draft", "ethnic-groups", "hoklo", "hong-kong-history", "maritime-history", "new-territories", "person"]
 summary: "The Hoklo are a maritime and coastal people of Southern Chinese origin who played a foundational role in the development of Hong Kong's early fishing and trading industries."
+description: "The Hoklo are a maritime and coastal people of Southern Chinese origin who played a foundational role in the development of Hong Kong's early fishing and trading industries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Shing Mun Reservoir (城門水塘)"
 title_zh: "城門水塘"
 tags: ["ai-draft", "colonial-history", "infrastructure", "new-territories", "place", "urban-development", "water-supply"]
 summary: "The Shing Mun Reservoir is a major water storage facility in the New Territories that played a pivotal role in addressing Hong Kong's historical water scarcity."
+description: "The Shing Mun Reservoir is a major water storage facility in the New Territories that played a pivotal role in addressing Hong Kong's historical water scarcity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

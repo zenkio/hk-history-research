@@ -6,6 +6,7 @@ year: 1800
 era: "Canton trade and the First Opium War"
 tags: ["1800", "ai-draft", "canton-trade", "cohong", "east-india-company", "opium-war", "qing-dynasty", "trade-history"]
 summary: "By the year 1800, the East India Company had entrenched its operations in Canton under the restrictive Canton System, creating an economic imbalance that pressured Britain to seek alternative territorial concessions."
+description: "By the year 1800, the East India Company had entrenched its operations in Canton under the restrictive Canton System, creating an economic imbalance that pressured Britain to seek alternative territorial concessions."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Nam Cheong (南昌)"
 title_zh: "南昌"
 tags: ["ai-draft", "kowloon", "place", "railway-history", "sham-shui-po", "transportation", "urban-development"]
 summary: "Nam Cheong is a major transport interchange and residential area in Sham Shui Po, serving as a critical nexus for Hong Kong's western railway connectivity."
+description: "Nam Cheong is a major transport interchange and residential area in Sham Shui Po, serving as a critical nexus for Hong Kong's western railway connectivity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

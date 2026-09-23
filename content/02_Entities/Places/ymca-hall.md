@@ -3,6 +3,7 @@ title: "YMCA Hall (青年會書院/香港中華基督教青年會)"
 title_zh: "青年會書院 (香港中華基督教青年會)"
 tags: ["ai-draft", "central", "colonial-history", "cultural-heritage", "intellectual-history", "lu-xun", "place"]
 summary: "The YMCA Hall in Central served as a prominent venue for public intellectuals and social gatherings during the early 20th century."
+description: "The YMCA Hall in Central served as a prominent venue for public intellectuals and social gatherings during the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1995
 era: "Sino-British negotiations and the transition"
 tags: ["1995", "1995-election", "ai-draft", "chris-patten", "handover", "legislative-council", "sino-british-joint-declaration", "transition"]
 summary: "On September 17, 1995, Hong Kong held its final Legislative Council election under British administration, resulting in the territory's first fully elected legislature. This milestone drew strong condemnation from Beijing for violating prior agreements, setting the stage for the dissolution of the council in 1997."
+description: "On September 17, 1995, Hong Kong held its final Legislative Council election under British administration, resulting in the territory's first fully elected legislature."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

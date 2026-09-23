@@ -6,6 +6,7 @@ year: 1895
 era: "Kowloon and the Victorian colony"
 tags: ["1895", "ai-draft", "british-hong-kong", "revolution", "sun-yat-sen", "victorian-colony", "xingzhonghui"]
 summary: "In February 1895, Dr. Sun Yat-sen established the Hong Kong branch of the Revive China Society, transforming the British colony into an essential operational base for anti-Qing revolutionary planning."
+description: "In February 1895, Dr. Sun Yat-sen established the Hong Kong branch of the Revive China Society, transforming the British colony into an essential operational base for anti-Qing revolutionary planning."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

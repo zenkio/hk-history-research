@@ -3,6 +3,7 @@ title: "Tang Clan (鄧氏)"
 title_zh: "鄧氏"
 tags: ["ai-draft", "indigenous-history", "new-territories", "person", "song-dynasty", "tang-clan", "walled-villages"]
 summary: "The Tang clan is one of the Five Great Clans of the New Territories, holding a foundational role in the history, migration, and fortified settlement patterns of Hong Kong."
+description: "The Tang clan is one of the Five Great Clans of the New Territories, holding a foundational role in the history, migration, and fortified settlement patterns of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

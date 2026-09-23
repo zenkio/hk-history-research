@@ -3,6 +3,7 @@ title: "Tai Tam (大潭)"
 title_zh: "大潭"
 tags: ["ai-draft", "battle-of-hong-kong", "hong-kong-history", "infrastructure", "place", "tai-tam", "water-supply"]
 summary: "Tai Tam is a prominent geographic area on the southern side of Hong Kong Island, historically significant for its water catchment systems and its role as a strategic entry point during the Battle of Hong Kong."
+description: "Tai Tam is a prominent geographic area on the southern side of Hong Kong Island, historically significant for its water catchment systems and its role as a strategic entry point during the Battle of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

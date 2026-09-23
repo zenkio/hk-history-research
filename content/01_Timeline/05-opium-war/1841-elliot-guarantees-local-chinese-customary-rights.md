@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "charles-elliot", "chinese-customary-law", "first-opium-war", "hong-kong-history", "legal-pluralism", "opium-war"]
 summary: "In February 1841, British plenipotentiary Charles Elliot issued proclamations assuring indigenous villagers on Hong Kong Island that their property, religious practices, and traditional laws would be respected."
+description: "In February 1841, British plenipotentiary Charles Elliot issued proclamations assuring indigenous villagers on Hong Kong Island that their property, religious practices, and traditional laws would be respected."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

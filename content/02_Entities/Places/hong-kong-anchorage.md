@@ -3,6 +3,7 @@ title: "Hong Kong Anchorage (香港錨地)"
 title_zh: "香港錨地"
 tags: ["ai-draft", "british-colonialism", "hong-kong-history", "maritime-history", "place", "port-operations", "victoria-harbour"]
 summary: "The Hong Kong Anchorage (香港錨地) served as a vital maritime staging area and temporary refuge in Victoria Harbour throughout the colonial period."
+description: "The Hong Kong Anchorage (香港錨地) served as a vital maritime staging area and temporary refuge in Victoria Harbour throughout the colonial period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

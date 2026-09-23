@@ -6,6 +6,7 @@ year: 1572
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1572", "ai-draft", "coastal-defense", "lantau-island", "maritime-history", "ming-and-qing", "ming-dynasty", "piracy"]
 summary: "In 1572, the notorious pirate leader Lin Daoqian utilized Lantau Island as a strategic base for his maritime raids, exposing the limits of Ming naval power in the region."
+description: "In 1572, the notorious pirate leader Lin Daoqian utilized Lantau Island as a strategic base for his maritime raids, exposing the limits of Ming naval power in the region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

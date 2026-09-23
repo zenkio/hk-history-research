@@ -6,6 +6,7 @@ year: 1880
 era: "Kowloon and the Victorian colony"
 tags: ["1880", "ai-draft", "colonial-history", "legislative-council", "ng-choy", "political-representation", "victorian-colony", "victorian-era"]
 summary: "In 1880, barrister Ng Choy became the first ethnic Chinese member of Hong Kong's Legislative Council, marking a significant, albeit limited, milestone in colonial political representation."
+description: "In 1880, barrister Ng Choy became the first ethnic Chinese member of Hong Kong's Legislative Council, marking a significant, albeit limited, milestone in colonial political representation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

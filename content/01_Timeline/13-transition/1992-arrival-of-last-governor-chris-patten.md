@@ -6,6 +6,7 @@ year: 1992
 era: "Sino-British negotiations and the transition"
 tags: ["1992", "1997-handover", "ai-draft", "chris-patten", "colonial-history", "sino-british-joint-declaration", "transition"]
 summary: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public engagement."
+description: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

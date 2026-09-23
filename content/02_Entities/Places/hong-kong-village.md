@@ -3,6 +3,7 @@ title: "Hong Kong Village (香港村)"
 title_zh: "香港村"
 tags: ["ai-draft", "causeway-bay", "hong-kong-village", "local-history", "place", "pre-colonial", "tin-hau-temple"]
 summary: "Hong Kong Village is a historical settlement on Hong Kong Island whose origins and early significance are closely tied to regional maritime trade and the establishment of local religious institutions such as the Tin Hau Temple in Causeway Bay."
+description: "Hong Kong Village is a historical settlement on Hong Kong Island whose origins and early significance are closely tied to regional maritime trade and the establishment of local religious institutions such as the Tin Hau…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

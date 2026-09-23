@@ -3,6 +3,7 @@ title: "Ming officials (明朝官員)"
 title_zh: "明朝官員"
 tags: ["ai-draft", "coastal-administration", "hong-kong-history", "imperial-china", "ming-dynasty", "pearl-farming", "person"]
 summary: "Ming dynasty officials were representatives of the imperial administration responsible for overseeing the coastal regions of the Pearl River Delta, including the Pearl River estuary and early tax collection efforts."
+description: "Ming dynasty officials were representatives of the imperial administration responsible for overseeing the coastal regions of the Pearl River Delta, including the Pearl River estuary and early tax collection efforts."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

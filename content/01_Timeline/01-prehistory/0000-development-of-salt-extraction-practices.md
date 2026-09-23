@@ -5,6 +5,7 @@ year: -2000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "economic-history", "neolithic-era", "prehistory", "salt-production"]
 summary: "Around 2000 BCE, early inhabitants of Hong Kong began leveraging coastal geography to develop salt production techniques, laying the foundation for a long-standing economic tradition."
+description: "Around 2000 BCE, early inhabitants of Hong Kong began leveraging coastal geography to develop salt production techniques, laying the foundation for a long-standing economic tradition."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Sir George Bonham (文咸)"
 title_zh: "文咸"
 tags: ["ai-draft", "british-empire", "colonial-history", "diplomatic-history", "hong-kong-governors", "nineteenth-century", "person"]
 summary: "Sir George Bonham served as the third Governor of Hong Kong from 1848 to 1854, a period marked by fiscal reform, colonial expansion, and the development of the city's administrative framework."
+description: "Sir George Bonham served as the third Governor of Hong Kong from 1848 to 1854, a period marked by fiscal reform, colonial expansion, and the development of the city's administrative framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

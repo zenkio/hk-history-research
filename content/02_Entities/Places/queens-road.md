@@ -3,6 +3,7 @@ title: "Queen's Road (皇后大道)"
 title_zh: "皇后大道"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "place", "street-history", "urban-development", "victoria-city"]
 summary: "Queen's Road is one of the earliest major thoroughfares in Hong Kong, serving as the central axis for the development of Victoria City."
+description: "Queen's Road is one of the earliest major thoroughfares in Hong Kong, serving as the central axis for the development of Victoria City."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

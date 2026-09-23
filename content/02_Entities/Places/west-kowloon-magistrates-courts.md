@@ -3,6 +3,7 @@ title: "West Kowloon Magistrates' Courts (西九龍裁判法院)"
 title_zh: "西九龍裁判法院"
 tags: ["ai-draft", "hong-kong-47", "hong-kong-judiciary", "legal-history", "national-security-law", "place", "west-kowloon"]
 summary: "The West Kowloon Magistrates' Courts is a major judicial facility in Hong Kong, serving as the venue for significant legal proceedings, including high-profile national security trials."
+description: "The West Kowloon Magistrates' Courts is a major judicial facility in Hong Kong, serving as the venue for significant legal proceedings, including high-profile national security trials."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

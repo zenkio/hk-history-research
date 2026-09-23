@@ -3,6 +3,7 @@ title: "Beacon Hill (煙墩山)"
 title_zh: "煙墩山"
 tags: ["ai-draft", "beacon-hill", "british-colonial-period", "hong-kong-history", "infrastructure", "kowloon-canton-railway", "place"]
 summary: "Beacon Hill is a prominent peak in the Kowloon Hills that served as a significant geographical obstacle and strategic marker during the construction of early colonial infrastructure."
+description: "Beacon Hill is a prominent peak in the Kowloon Hills that served as a significant geographical obstacle and strategic marker during the construction of early colonial infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

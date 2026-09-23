@@ -3,6 +3,7 @@ title: "James Tien (田北俊)"
 title_zh: "田北俊"
 tags: ["ai-draft", "article-23", "hk-history", "hong-kong-politics", "liberal-party", "person", "pro-establishment"]
 summary: "James Tien is a prominent Hong Kong businessman and politician who played a decisive role in the 2003 legislative withdrawal of the Article 23 security bill."
+description: "James Tien is a prominent Hong Kong businessman and politician who played a decisive role in the 2003 legislative withdrawal of the Article 23 security bill."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

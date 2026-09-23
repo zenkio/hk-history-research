@@ -6,6 +6,7 @@ year: 1525
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1525", "ai-draft", "ancestral-hall", "local-history", "lung-yeuk-tau", "ming-and-qing", "ming-dynasty", "new-territories", "tang-clan"]
 summary: "Around 1525, the influential Tang clan constructed the Tang Chung Ling Ancestral Hall in Lung Yeuk Tau, marking a major milestone in lineage consolidation and territorial dominance in the northern New Territories."
+description: "Around 1525, the influential Tang clan constructed the Tang Chung Ling Ancestral Hall in Lung Yeuk Tau, marking a major milestone in lineage consolidation and territorial dominance in the northern New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1892
 era: "Kowloon and the Victorian colony"
 tags: ["1892", "ai-draft", "colonial-history", "ho-kai", "late-qing", "opium-trade", "public-health", "social-reform", "victorian-colony"]
 summary: "In 1892, a coalition of Chinese and Western activists established the Hong Kong Anti-Opium Society to oppose the British colonial government's opium monopoly and taxation policies."
+description: "In 1892, a coalition of Chinese and Western activists established the Hong Kong Anti-Opium Society to oppose the British colonial government's opium monopoly and taxation policies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

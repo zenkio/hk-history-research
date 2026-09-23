@@ -3,6 +3,7 @@ title: "Zheng Shiliang (鄭士良)"
 title_zh: "鄭士良"
 tags: ["ai-draft", "history-of-hong-kong", "huizhou-uprising", "person", "sun-yat-sen", "xingzhonghui", "zheng-shiliang"]
 summary: "Zheng Shiliang (鄭士良) was a prominent revolutionary leader and close associate of Sun Yat-sen who utilized Hong Kong as a critical base for organizing the 1900 Huizhou Uprising."
+description: "Zheng Shiliang (鄭士良) was a prominent revolutionary leader and close associate of Sun Yat-sen who utilized Hong Kong as a critical base for organizing the 1900 Huizhou Uprising."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

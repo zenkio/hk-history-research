@@ -3,6 +3,7 @@ title: "Tseung Kwan O (將軍澳)"
 title_zh: "將軍澳"
 tags: ["ai-draft", "apple-daily", "hong-kong-history", "place", "sai-kung", "tseung-kwan-o", "urban-development"]
 summary: "Tseung Kwan O is a significant residential and industrial new town in the Sai Kung District, historically serving as a bay and coastal village area before its extensive reclamation for urban development."
+description: "Tseung Kwan O is a significant residential and industrial new town in the Sai Kung District, historically serving as a bay and coastal village area before its extensive reclamation for urban development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1843
 era: "The early colony"
 tags: ["1843", "ai-draft", "bilingualism", "early-colony", "education", "missionaries"]
 summary: "In 1843, the Morrison Education Society School relocated from Macao to Hong Kong, marking an early milestone in the establishment of Western-style education in the newly founded British colony."
+description: "In 1843, the Morrison Education Society School relocated from Macao to Hong Kong, marking an early milestone in the establishment of Western-style education in the newly founded British colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Chek Lap Kok (赤鱲角)"
 title_zh: "赤鱲角"
 tags: ["ai-draft", "aviation", "infrastructure", "lantau", "place", "reclamation", "transport"]
 summary: "Chek Lap Kok is an island off the coast of Lantau Island that was massively leveled and expanded to become the site of Hong Kong's modern international airport."
+description: "Chek Lap Kok is an island off the coast of Lantau Island that was massively leveled and expanded to become the site of Hong Kong's modern international airport."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

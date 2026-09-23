@@ -3,6 +3,7 @@ title: "Lee Ming-gun (李明鍵)"
 title_zh: "李明鍵"
 tags: ["2005-events", "activism", "ai-draft", "hong-kong-history", "lee-ming-gun", "person", "wto-protests"]
 summary: "Lee Ming-gun (李明鍵) was a South Korean activist and trade unionist who gained prominence in Hong Kong during the 2005 World Trade Organization (WTO) Ministerial Conference protests."
+description: "Lee Ming-gun (李明鍵) was a South Korean activist and trade unionist who gained prominence in Hong Kong during the 2005 World Trade Organization (WTO) Ministerial Conference protests."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

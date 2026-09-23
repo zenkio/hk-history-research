@@ -3,6 +3,7 @@ title: "Kwun Tong (觀塘)"
 title_zh: "觀塘"
 tags: ["ai-draft", "industrial-history", "kowloon", "kwun-tong", "mtr", "place", "urban-development"]
 summary: "Kwun Tong is a major residential and former industrial hub in Kowloon that played a pivotal role in Hong Kong's postwar manufacturing boom and modern urban transit expansion."
+description: "Kwun Tong is a major residential and former industrial hub in Kowloon that played a pivotal role in Hong Kong's postwar manufacturing boom and modern urban transit expansion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

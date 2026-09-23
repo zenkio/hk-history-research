@@ -3,6 +3,7 @@ title: "Andrew Shortrede"
 title_zh: "蕭德"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "journalism", "nineteenth-century", "person", "the-china-mail"]
 summary: "Andrew Shortrede was a Scottish printer and publisher who played a pivotal role in the early development of Hong Kong's press by co-founding The China Mail."
+description: "Andrew Shortrede was a Scottish printer and publisher who played a pivotal role in the early development of Hong Kong's press by co-founding The China Mail."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

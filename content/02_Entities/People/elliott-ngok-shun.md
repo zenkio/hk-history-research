@@ -3,6 +3,7 @@ title: "Elliott Ngok-shun (蘇守忠)"
 title_zh: "蘇守忠"
 tags: ["ai-draft", "civil-protest", "colonial-era", "elliott-ngok-shun", "hong-kong-history", "person", "star-ferry-riots"]
 summary: "Elliott Ngok-shun was a Hong Kong activist whose 1966 hunger strike protesting Star Ferry fare increases served as a primary catalyst for the 1966 Star Ferry Riots."
+description: "Elliott Ngok-shun was a Hong Kong activist whose 1966 hunger strike protesting Star Ferry fare increases served as a primary catalyst for the 1966 Star Ferry Riots."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

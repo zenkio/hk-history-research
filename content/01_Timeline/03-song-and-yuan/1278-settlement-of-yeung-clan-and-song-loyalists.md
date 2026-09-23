@@ -6,6 +6,7 @@ year: 1278
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1278", "ai-draft", "migration", "new-territories-history", "song-and-yuan", "song-dynasty", "song-loyalists", "yeung-clan"]
 summary: "Following the collapse of the Song dynasty in the late 13th century, imperial relatives and loyalists, including members of the Yeung clan, settled in the region that is now Hong Kong, laying roots for powerful local gentry lineages."
+description: "Following the collapse of the Song dynasty in the late 13th century, imperial relatives and loyalists, including members of the Yeung clan, settled in the region that is now Hong Kong, laying roots for powerful local…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

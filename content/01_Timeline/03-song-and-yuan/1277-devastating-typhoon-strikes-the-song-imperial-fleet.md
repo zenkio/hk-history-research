@@ -6,6 +6,7 @@ year: 1277
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1277", "13th-century", "ai-draft", "imperial-fleet", "lantau-island", "song-and-yuan", "song-dynasty", "typhoon"]
 summary: "In December 1277, a catastrophic typhoon struck the retreating Southern Song imperial fleet off Lantau Island, devastating the remaining royal ships, causing heavy casualties, and critically weakening the health of the young Emperor Duanzong."
+description: "In December 1277, a catastrophic typhoon struck the retreating Southern Song imperial fleet off Lantau Island, devastating the remaining royal ships, causing heavy casualties, and critically weakening the health of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

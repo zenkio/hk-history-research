@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "civil-society", "colonial-history", "education", "modernization", "new-territories", "social-welfare", "ymca"]
 summary: "In 1912, the Chinese Young Men's Christian Association (YMCA) was formally established in Hong Kong, marking a shift in the territory's social organization and the promotion of modern civic ideals."
+description: "In 1912, the Chinese Young Men's Christian Association (YMCA) was formally established in Hong Kong, marking a shift in the territory's social organization and the promotion of modern civic ideals."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

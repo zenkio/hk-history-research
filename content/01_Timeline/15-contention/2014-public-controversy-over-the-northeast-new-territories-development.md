@@ -6,6 +6,7 @@ year: 2014
 era: "Political contention and protest"
 tags: ["2014", "ai-draft", "contention", "hong-kong-protests", "housing-policy", "land-justice", "rural-heritage", "urban-development"]
 summary: "In June 2014, the legislative process for the Northeast New Territories development project triggered large-scale protests over concerns regarding land justice, forced evictions, and the preservation of rural heritage."
+description: "In June 2014, the legislative process for the Northeast New Territories development project triggered large-scale protests over concerns regarding land justice, forced evictions, and the preservation of rural heritage."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

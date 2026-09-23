@@ -3,6 +3,7 @@ title: "Kwai Luen Estate (葵聯邨)"
 title_zh: "葵聯邨"
 tags: ["2015", "ai-draft", "housing-authority", "kwai-chung", "lead-water-scandal", "place", "public-housing"]
 summary: "Kwai Luen Estate is a public housing estate in Kwai Chung that became a central focal point during the 2015 Hong Kong lead-in-water scandal."
+description: "Kwai Luen Estate is a public housing estate in Kwai Chung that became a central focal point during the 2015 Hong Kong lead-in-water scandal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

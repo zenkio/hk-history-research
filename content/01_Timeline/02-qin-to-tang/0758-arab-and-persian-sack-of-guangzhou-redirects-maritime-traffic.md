@@ -5,6 +5,7 @@ year: 758
 era: "Imperial frontier: Qin to Tang"
 tags: ["758", "ai-draft", "guangzhou", "maritime-silk-road", "qin-to-tang", "tang-dynasty", "trade-routes"]
 summary: "In **758**, a violent uprising and raid by Arab and Persian merchants in Guangzhou disrupted international maritime trade, prompting shipping networks to temporarily seek alternative, sheltered anchorages in the remote bays of present-day Hong Kong."
+description: "In 758, a violent uprising and raid by Arab and Persian merchants in Guangzhou disrupted international maritime trade, prompting shipping networks to temporarily seek alternative, sheltered anchorages in the remote bays…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

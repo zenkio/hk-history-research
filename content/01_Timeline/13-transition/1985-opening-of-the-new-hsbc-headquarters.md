@@ -6,6 +6,7 @@ year: 1985
 era: "Sino-British negotiations and the transition"
 tags: ["1985", "ai-draft", "architecture", "central", "financial-hub", "hsbc", "sino-british-joint-declaration", "transition"]
 summary: "On November 18, 1985, the iconic high-tech headquarters of the Hongkong and Shanghai Banking Corporation opened in Central, serving as a powerful architectural statement of confidence during the Sino-British transition period."
+description: "On November 18, 1985, the iconic high-tech headquarters of the Hongkong and Shanghai Banking Corporation opened in Central, serving as a powerful architectural statement of confidence during the Sino-British transition…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

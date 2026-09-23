@@ -3,6 +3,7 @@ title: "Humen (虎門)"
 title_zh: "虎門"
 tags: ["ai-draft", "humen", "lin-zexu", "opium-war", "pearl-river-delta", "place", "qing-dynasty"]
 summary: "Humen is a strategically vital fortification site in the Pearl River estuary where Qing official Lin Zexu destroyed confiscated opium, precipitating the First Opium War and the subsequent British acquisition of Hong Kong."
+description: "Humen is a strategically vital fortification site in the Pearl River estuary where Qing official Lin Zexu destroyed confiscated opium, precipitating the First Opium War and the subsequent British acquisition of Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

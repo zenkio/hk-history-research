@@ -3,6 +3,7 @@ title: "Hong Kong Botanical Gardens (香港動植物公園)"
 title_zh: "香港動植物公園"
 tags: ["ai-draft", "botanical-gardens", "colonial-history", "place", "public-space", "urban-history", "victoria-city"]
 summary: "The Hong Kong Botanical Gardens, established in the mid-nineteenth century, served as a prominent colonial public space and scientific institution in Victoria City."
+description: "The Hong Kong Botanical Gardens, established in the mid-nineteenth century, served as a prominent colonial public space and scientific institution in Victoria City."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

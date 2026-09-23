@@ -3,6 +3,7 @@ title: "Causeway Bay (銅鑼灣)"
 title_zh: "銅鑼灣"
 tags: ["ai-draft", "booksellers", "causeway-bay", "individual-visit-scheme", "place", "umbrella-movement", "urban-history"]
 summary: "Causeway Bay is a major retail and urban hub on Hong Kong Island whose transformation from a typhoon shelter and industrial area reflects the territory's rapid economic and political evolution."
+description: "Causeway Bay is a major retail and urban hub on Hong Kong Island whose transformation from a typhoon shelter and industrial area reflects the territory's rapid economic and political evolution."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

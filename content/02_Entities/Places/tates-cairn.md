@@ -3,6 +3,7 @@ title: "Tate's Cairn (大老山)"
 title_zh: "大老山"
 tags: ["ai-draft", "hong-kong-geography", "infrastructure", "kowloon", "new-territories", "place", "transportation"]
 summary: "Tate's Cairn is a prominent mountain in the Kowloon Peak range that serves as a critical geographic barrier and infrastructure corridor between Kowloon and the New Territories."
+description: "Tate's Cairn is a prominent mountain in the Kowloon Peak range that serves as a critical geographic barrier and infrastructure corridor between Kowloon and the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

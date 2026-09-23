@@ -3,6 +3,7 @@ title: "Wen Rulin (溫汝霖)"
 title_zh: "溫汝霖"
 tags: ["ai-draft", "historiography", "local-history", "person", "qing-dynasty", "wen-rulin", "xin-an-gazetteer"]
 summary: "Wen Rulin was a Qing dynasty scholar-official and a key co-compiler of the 1819 edition of the Xin'an County Gazetteer, a foundational text for the historical geography of Hong Kong."
+description: "Wen Rulin was a Qing dynasty scholar-official and a key co-compiler of the 1819 edition of the Xin'an County Gazetteer, a foundational text for the historical geography of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

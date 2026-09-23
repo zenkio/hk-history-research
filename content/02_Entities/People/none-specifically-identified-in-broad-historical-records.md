@@ -3,6 +3,7 @@ title: "None specifically identified in broad historical records"
 title_zh: "粵語教材標準化"
 tags: ["ai-draft", "cantonese-language", "colonial-hong-kong", "curriculum-development", "education-history", "linguistic-policy", "person"]
 summary: "The introduction of standardized Cantonese textbooks in Hong Kong marked a pivotal transition in local education, reflecting shifting administrative priorities and cultural identity."
+description: "The introduction of standardized Cantonese textbooks in Hong Kong marked a pivotal transition in local education, reflecting shifting administrative priorities and cultural identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

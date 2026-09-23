@@ -3,6 +3,7 @@ title: "Tse Tsan-tai (謝纘泰)"
 title_zh: "謝纘泰"
 tags: ["ai-draft", "furen-literary-society", "hong-kong-history", "journalist", "person", "revolutionary", "xingzhonghui"]
 summary: "Tse Tsan-tai was a prominent Hong Kong revolutionary, journalist, and social reformer who played a key role in the anti-Qing movement and the founding of the South China Morning Post."
+description: "Tse Tsan-tai was a prominent Hong Kong revolutionary, journalist, and social reformer who played a key role in the anti-Qing movement and the founding of the South China Morning Post."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

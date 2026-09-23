@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1960s", "1962", "ai-draft", "architecture", "city-hall", "colonial-history", "culture", "postwar-refugees"]
 summary: "On March 2, 1962, the new Hong Kong City Hall opened as a modernist civic hub, providing accessible cultural and community spaces for the populace."
+description: "On March 2, 1962, the new Hong Kong City Hall opened as a modernist civic hub, providing accessible cultural and community spaces for the populace."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1292
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1292", "ai-draft", "economic-history", "guanfu-salt-field", "imperial-revenue", "salt-industry", "song-and-yuan", "yuan-dynasty"]
 summary: "In **1292**, the Mongol Yuan dynasty reorganized the Guanfu salt field (官富場) in Hong Kong to consolidate state control over lucrative coastal resources and secure imperial revenue."
+description: "In 1292, the Mongol Yuan dynasty reorganized the Guanfu salt field (官富場) in Hong Kong to consolidate state control over lucrative coastal resources and secure imperial revenue."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

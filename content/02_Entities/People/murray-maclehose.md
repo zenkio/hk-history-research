@@ -3,6 +3,7 @@ title: "Murray MacLehose (麥理浩)"
 title_zh: "麥理浩"
 tags: ["ai-draft", "colonial-era", "governors", "history", "icac", "person", "social-reform"]
 summary: "Murray MacLehose served as the longest-reigning Governor of Hong Kong from 1971 to 1982, profoundly reshaping the territory's social welfare, housing, and administrative landscape."
+description: "Murray MacLehose served as the longest-reigning Governor of Hong Kong from 1971 to 1982, profoundly reshaping the territory's social welfare, housing, and administrative landscape."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

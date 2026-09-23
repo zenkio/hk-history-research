@@ -3,6 +3,7 @@ title: "Chan Kai Kow (陳啟鎏)"
 title_zh: "陳啟鎏"
 tags: ["ai-draft", "central-school", "colonial-education", "frederick-stewart", "hong-kong-history", "person"]
 summary: "Chan Kai Kow (陳啟鎏) was a prominent early graduate and educator associated with the Central School, representing the first generation of bilingual students trained under the British colonial education system."
+description: "Chan Kai Kow (陳啟鎏) was a prominent early graduate and educator associated with the Central School, representing the first generation of bilingual students trained under the British colonial education system."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

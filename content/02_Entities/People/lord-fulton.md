@@ -3,6 +3,7 @@ title: "Lord Fulton (富爾敦)"
 title_zh: "富爾敦"
 tags: ["ai-draft", "chinese-university", "colonial-history", "education-reform", "higher-education", "person"]
 summary: "Lord Fulton was a British academic administrator who chaired the 1963 commission that recommended the establishment of the Chinese University of Hong Kong."
+description: "Lord Fulton was a British academic administrator who chaired the 1963 commission that recommended the establishment of the Chinese University of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

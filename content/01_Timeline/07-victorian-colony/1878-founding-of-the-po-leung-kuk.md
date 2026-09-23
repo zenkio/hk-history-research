@@ -6,6 +6,7 @@ year: 1878
 era: "Kowloon and the Victorian colony"
 tags: ["1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
 summary: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
+description: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

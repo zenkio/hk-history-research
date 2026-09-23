@@ -6,6 +6,7 @@ year: 1994
 era: "Sino-British negotiations and the transition"
 tags: ["1994", "ai-draft", "anti-corruption", "british-rule", "governance", "hong-kong-history", "icac", "transition", "transitional-period"]
 summary: "By 1994, the Independent Commission Against Corruption (ICAC) had successfully transitioned from an investigative body into a cornerstone of Hong Kong's civil institutional identity through sustained public outreach. This effort proved essential in maintaining social stability and institutional continuity during the final years of British administration."
+description: "By 1994, the Independent Commission Against Corruption (ICAC) had successfully transitioned from an investigative body into a cornerstone of Hong Kong's civil institutional identity through sustained public outreach."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

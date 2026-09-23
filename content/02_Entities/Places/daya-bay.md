@@ -3,6 +3,7 @@ title: "Daya Bay (大亞灣)"
 title_zh: "大亞灣"
 tags: ["ai-draft", "guangdong", "infrastructure", "maritime-history", "place", "regional-security", "second-sino-japanese-war"]
 summary: "Daya Bay is a large coastal inlet in Guangdong Province that has historically served as a strategic maritime gateway for both trade and military maneuvers impacting Hong Kong."
+description: "Daya Bay is a large coastal inlet in Guangdong Province that has historically served as a strategic maritime gateway for both trade and military maneuvers impacting Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

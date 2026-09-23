@@ -3,6 +3,7 @@ title: "South China Sea (南海)"
 title_zh: "南海"
 tags: ["ai-draft", "colonial-history", "geography", "hong-kong-development", "maritime-history", "place", "south-china-sea"]
 summary: "The South China Sea (南海) serves as the vital maritime corridor that facilitated Hong Kong's development from a regional fishing base into a global entrepôt."
+description: "The South China Sea (南海) serves as the vital maritime corridor that facilitated Hong Kong's development from a regional fishing base into a global entrepôt."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

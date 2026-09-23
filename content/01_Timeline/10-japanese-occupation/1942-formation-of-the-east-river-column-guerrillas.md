@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "east-river-column", "japanese-occupation", "new-territories", "resistance-movement", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence gathering and the rescue of Allied personnel."
+description: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

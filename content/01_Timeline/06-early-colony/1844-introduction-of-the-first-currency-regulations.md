@@ -6,6 +6,7 @@ year: 1844
 era: "The early colony"
 tags: ["1844", "ai-draft", "colonial-history", "currency-regulations", "early-colony", "economic-history", "hong-kong-trade", "nineteenth-century"]
 summary: "In 1844, the colonial government issued the first currency regulations to address the chaotic monetary environment of early Hong Kong."
+description: "In 1844, the colonial government issued the first currency regulations to address the chaotic monetary environment of early Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

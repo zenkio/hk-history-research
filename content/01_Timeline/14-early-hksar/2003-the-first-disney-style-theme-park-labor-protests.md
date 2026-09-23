@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "early-hksar", "economic-development", "hksar-history", "hong-kong-disneyland", "labor-rights"]
 summary: "In early 2003, labor activists began organizing against the working conditions and corporate impacts associated with the construction of Hong Kong Disneyland, marking a friction point in the territory's early post-colonial development."
+description: "In early 2003, labor activists began organizing against the working conditions and corporate impacts associated with the construction of Hong Kong Disneyland, marking a friction point in the territory's early…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

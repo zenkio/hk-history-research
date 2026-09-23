@@ -3,6 +3,7 @@ title: "John Cowperthwaite (郭伯偉)"
 title_zh: "郭伯偉"
 tags: ["ai-draft", "colonial-history", "economic-policy", "financial-secretary", "hong-kong-economy", "john-cowperthwaite", "person"]
 summary: "Sir John Cowperthwaite was a British colonial official who served as Financial Secretary of Hong Kong, widely credited with fostering the territory's rapid economic growth through policies of 'positive non-interventionism'."
+description: "Sir John Cowperthwaite was a British colonial official who served as Financial Secretary of Hong Kong, widely credited with fostering the territory's rapid economic growth through policies of 'positive…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kevin Yeung (楊潤雄)"
 title_zh: "楊潤雄"
 tags: ["ai-draft", "civic-education", "education-reform", "government-officials", "hong-kong-politics", "liberal-studies", "person"]
 summary: "Kevin Yeung is a senior Hong Kong government official who served as Secretary for Education and later as Secretary for Culture, Sports and Tourism, playing a pivotal role in the restructuring of the local secondary school curriculum."
+description: "Kevin Yeung is a senior Hong Kong government official who served as Secretary for Education and later as Secretary for Culture, Sports and Tourism, playing a pivotal role in the restructuring of the local secondary…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

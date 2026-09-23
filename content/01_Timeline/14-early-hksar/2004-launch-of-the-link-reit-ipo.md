@@ -6,6 +6,7 @@ year: 2004
 era: "The early HKSAR"
 tags: ["2004", "ai-draft", "early-hksar", "hksar-history", "hong-kong-economy", "link-reit", "privatization", "public-housing"]
 summary: "On December 16, 2004, the Hong Kong Housing Authority initiated the initial public offering for The Link REIT, marking a significant transition in the management of public estate commercial facilities."
+description: "On December 16, 2004, the Hong Kong Housing Authority initiated the initial public offering for The Link REIT, marking a significant transition in the management of public estate commercial facilities."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

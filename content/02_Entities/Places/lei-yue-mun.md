@@ -3,6 +3,7 @@ title: "Lei Yue Mun (鯉魚門)"
 title_zh: "鯉魚門"
 tags: ["ai-draft", "fishing-villages", "lei-yue-mun", "maritime-history", "place", "typhoon-mangkhut", "victoria-harbour"]
 summary: "Lei Yue Mun is a historic coastal settlement and strategic marine channel in eastern Victoria Harbour that has evolved from a pirate stronghold and fishing village into a renowned seafood dining destination."
+description: "Lei Yue Mun is a historic coastal settlement and strategic marine channel in eastern Victoria Harbour that has evolved from a pirate stronghold and fishing village into a renowned seafood dining destination."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

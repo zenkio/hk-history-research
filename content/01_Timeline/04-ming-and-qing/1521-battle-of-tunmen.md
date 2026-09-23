@@ -6,6 +6,7 @@ year: 1521
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1521", "ai-draft", "battle-of-tunmen", "coastal-defense", "ming-and-qing", "ming-dynasty", "naval-history", "portuguese-trade"]
 summary: "In **1521**, Ming dynasty naval forces engaged and defeated a Portuguese fleet off the coast of Tuen Mun, marking a decisive clash over trade and sovereignty along the southern Chinese coast."
+description: "In 1521, Ming dynasty naval forces engaged and defeated a Portuguese fleet off the coast of Tuen Mun, marking a decisive clash over trade and sovereignty along the southern Chinese coast."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

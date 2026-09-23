@@ -3,6 +3,7 @@ title: "West Point (西營盤)"
 title_zh: "西營盤"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "maritime-history", "place", "sai-ying-pun", "urban-development"]
 summary: "West Point is a historical district in Sai Ying Pun that served as one of the earliest sites for British military and civilian infrastructure following the colonization of Hong Kong."
+description: "West Point is a historical district in Sai Ying Pun that served as one of the earliest sites for British military and civilian infrastructure following the colonization of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

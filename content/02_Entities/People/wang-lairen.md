@@ -3,6 +3,7 @@ title: "Wang Lairen (王來任)"
 title_zh: "王來任"
 tags: ["ai-draft", "great-clearance", "hong-kong-history", "kangxi-emperor", "new-territories", "person", "qing-dynasty"]
 summary: "Wang Lairen was a Qing dynasty official whose petition to the Kangxi Emperor was instrumental in the rescission of the Great Clearance, a policy that devastated the coastal regions of the Pearl River Delta."
+description: "Wang Lairen was a Qing dynasty official whose petition to the Kangxi Emperor was instrumental in the rescission of the Great Clearance, a policy that devastated the coastal regions of the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

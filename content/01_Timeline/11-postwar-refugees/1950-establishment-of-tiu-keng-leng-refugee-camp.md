@@ -6,6 +6,7 @@ year: 1950
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1950", "ai-draft", "british-colonial-history", "cold-war", "kuomintang", "postwar-refugees", "refugee-camp", "tiu-keng-leng"]
 summary: "In **1950**, the British colonial government relocated thousands of Kuomintang loyalist refugees to Tiu Keng Leng, establishing a distinct pro-Nationalist enclave in Hong Kong."
+description: "In 1950, the British colonial government relocated thousands of Kuomintang loyalist refugees to Tiu Keng Leng, establishing a distinct pro-Nationalist enclave in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

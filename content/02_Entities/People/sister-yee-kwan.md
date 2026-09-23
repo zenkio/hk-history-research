@@ -3,6 +3,7 @@ title: "Sister Yee-kwan (蘇羅斯)"
 title_zh: "蘇羅斯"
 tags: ["ai-draft", "catholic-church", "colonial-era", "education-history", "person", "precious-blood-golden-jubilee-school", "student-movement"]
 summary: "Sister Yee-kwan was a Catholic nun and educator whose role in the Precious Blood Golden Jubilee School Incident became a focal point for tensions within the Catholic Church and Hong Kong's educational sector in the late 1970s."
+description: "Sister Yee-kwan was a Catholic nun and educator whose role in the Precious Blood Golden Jubilee School Incident became a focal point for tensions within the Catholic Church and Hong Kong's educational sector in the late…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

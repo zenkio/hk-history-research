@@ -3,6 +3,7 @@ title: "Yang Ti-liang (楊鐵樑)"
 title_zh: "楊鐵樑"
 tags: ["ai-draft", "chief-justice", "hong-kong-handover", "judiciary", "legal-history", "person", "politics"]
 summary: "Yang Ti-liang was a prominent jurist and the first ethnic Chinese Chief Justice of Hong Kong, later playing a pivotal role in the territory's transition to the Special Administrative Region."
+description: "Yang Ti-liang was a prominent jurist and the first ethnic Chinese Chief Justice of Hong Kong, later playing a pivotal role in the territory's transition to the Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

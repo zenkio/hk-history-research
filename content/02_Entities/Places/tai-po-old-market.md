@@ -3,6 +3,7 @@ title: "Tai Po Old Market (大埔舊墟)"
 title_zh: "大埔舊墟"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "lineage-history", "market-towns", "new-territories", "place"]
 summary: "Tai Po Old Market (大埔舊墟) was a pivotal lineage-controlled market town in the New Territories, illustrating the complex intersection of indigenous land management, Qing dynasty administration, and colonial economic shifts."
+description: "Tai Po Old Market (大埔舊墟) was a pivotal lineage-controlled market town in the New Territories, illustrating the complex intersection of indigenous land management, Qing dynasty administration, and colonial economic…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

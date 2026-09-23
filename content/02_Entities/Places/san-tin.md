@@ -3,6 +3,7 @@ title: "San Tin (新田)"
 title_zh: "新田"
 tags: ["ai-draft", "hong-kong-history", "man-clan", "new-territories", "place", "walled-village", "yuen-long"]
 summary: "San Tin is a significant historic area in the northwestern New Territories, primarily known as the ancestral home of the Man (文) clan, one of the Five Great Clans of Hong Kong."
+description: "San Tin is a significant historic area in the northwestern New Territories, primarily known as the ancestral home of the Man (文) clan, one of the Five Great Clans of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

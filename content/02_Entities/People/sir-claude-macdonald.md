@@ -3,6 +3,7 @@ title: "Sir Claude MacDonald"
 title_zh: "竇納樂"
 tags: ["ai-draft", "british-colonialism", "diplomatic-history", "late-qing-dynasty", "new-territories", "person", "second-convention-of-peking"]
 summary: "Sir Claude MacDonald was a British diplomat who served as the Minister to China and played a pivotal role in the negotiation of the Second Convention of Peking in 1898."
+description: "Sir Claude MacDonald was a British diplomat who served as the Minister to China and played a pivotal role in the negotiation of the Second Convention of Peking in 1898."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "collaboration", "japanese-occupation", "local-elites", "wartime-economy", "world-war-ii"]
 summary: "In August 1943, the Japanese occupation authorities established the Overseas Chinese Association to co-opt local elites and mobilize resources for the war effort."
+description: "In August 1943, the Japanese occupation authorities established the Overseas Chinese Association to co-opt local elites and mobilize resources for the war effort."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

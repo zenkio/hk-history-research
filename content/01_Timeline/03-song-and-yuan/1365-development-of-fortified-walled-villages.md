@@ -6,6 +6,7 @@ year: 1365
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1365", "ai-draft", "clan-history", "fortifications", "new-territories", "song-and-yuan", "walled-villages", "yuan-dynasty"]
 summary: "During the late Yuan dynasty around **c. 1365**, powerful indigenous lineages in the Hong Kong region began constructing fortified walled villages featuring moats and iron gates to defend against rising banditry and social instability."
+description: "During the late Yuan dynasty around c."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

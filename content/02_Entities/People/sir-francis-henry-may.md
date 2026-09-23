@@ -3,6 +3,7 @@ title: "Sir Francis Henry May (梅含理)"
 title_zh: "梅含理"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "governors-of-hong-kong", "person", "political-history", "twentieth-century"]
 summary: "Sir Francis Henry May (梅含理) was a long-serving colonial administrator who served as the 15th Governor of Hong Kong during the turbulent years of the First World War and the 1912 assassination attempt."
+description: "Sir Francis Henry May (梅含理) was a long-serving colonial administrator who served as the 15th Governor of Hong Kong during the turbulent years of the First World War and the 1912 assassination attempt."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

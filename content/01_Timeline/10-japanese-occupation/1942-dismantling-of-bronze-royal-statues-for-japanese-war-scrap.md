@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "bronze-statues", "cultural-heritage", "hsbc-lions", "japanese-occupation", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, historic public monuments including the Queen Victoria statue and HSBC's bronze lions were dismantled and shipped to Japan to be melted down for war materials."
+description: "During the Japanese occupation of Hong Kong, historic public monuments including the Queen Victoria statue and HSBC's bronze lions were dismantled and shipped to Japan to be melted down for war materials."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

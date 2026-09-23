@@ -3,6 +3,7 @@ title: "Tsing Yi (青衣)"
 title_zh: "青衣"
 tags: ["ai-draft", "new-territories", "place", "satellite-town", "tsing-yi", "tsuen-wan", "urban-history"]
 summary: "Tsing Yi is an island in the Tsuen Wan district that transformed from a rural fishing and salt-producing community into a vital industrial and residential node during Hong Kong's satellite town development."
+description: "Tsing Yi is an island in the Tsuen Wan district that transformed from a rural fishing and salt-producing community into a vital industrial and residential node during Hong Kong's satellite town development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

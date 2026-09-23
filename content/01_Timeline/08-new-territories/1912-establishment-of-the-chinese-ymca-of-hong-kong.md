@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "colonial-history", "cultural-identity", "early-twentieth-century", "education", "modernization", "new-territories", "social-organizations"]
 summary: "In 1912, the Chinese YMCA of Hong Kong was established as a social and intellectual hub for the city's emerging Chinese middle class."
+description: "In 1912, the Chinese YMCA of Hong Kong was established as a social and intellectual hub for the city's emerging Chinese middle class."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

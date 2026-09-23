@@ -6,6 +6,7 @@ year: 1973
 era: "Riots and the MacLehose reforms"
 tags: ["1970s-hong-kong", "1973", "ai-draft", "colonial-history", "maclehose-era", "riots-and-reform", "street-hawkers", "urban-governance"]
 summary: "In 1973, the colonial government established the Hawker Control Force to regulate the city's vast informal street economy as part of a broader shift toward centralized urban management."
+description: "In 1973, the colonial government established the Hawker Control Force to regulate the city's vast informal street economy as part of a broader shift toward centralized urban management."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

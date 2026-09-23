@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "canton-trade", "first-opium-war", "imperial-edict", "lin-zexu", "opium-war", "pearl-river-delta"]
 summary: "On December 6, 1839, the Qing court escalated hostilities by ordering the complete cessation of all trade with Britain, forcing British merchants and officials to abandon Canton and relocate their operations to the Pearl River estuary."
+description: "On December 6, 1839, the Qing court escalated hostilities by ordering the complete cessation of all trade with Britain, forcing British merchants and officials to abandon Canton and relocate their operations to the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

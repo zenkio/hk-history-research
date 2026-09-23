@@ -3,6 +3,7 @@ title: "Greater Bay Area (粵港澳大灣區)"
 title_zh: "粵港澳大灣區"
 tags: ["ai-draft", "economic-history", "geopolitics", "hong-kong-policy", "pearl-river-delta", "place", "regional-integration"]
 summary: "The Greater Bay Area is a strategic economic and integration initiative encompassing Hong Kong, Macau, and nine cities in Guangdong Province, aimed at transforming the region into a global innovation and logistics hub."
+description: "The Greater Bay Area is a strategic economic and integration initiative encompassing Hong Kong, Macau, and nine cities in Guangdong Province, aimed at transforming the region into a global innovation and logistics hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

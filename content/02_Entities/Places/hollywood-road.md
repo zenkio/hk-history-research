@@ -3,6 +3,7 @@ title: "Hollywood Road (荷李活道)"
 title_zh: "荷李活道"
 tags: ["ai-draft", "central-district", "colonial-era", "hong-kong-history", "man-mo-temple", "place", "sun-yat-sen"]
 summary: "Hollywood Road is one of Hong Kong's earliest colonial-era thoroughfares, serving as a vital urban artery that witnessed the intersection of British administration, Chinese religious life, and revolutionary history."
+description: "Hollywood Road is one of Hong Kong's earliest colonial-era thoroughfares, serving as a vital urban artery that witnessed the intersection of British administration, Chinese religious life, and revolutionary history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

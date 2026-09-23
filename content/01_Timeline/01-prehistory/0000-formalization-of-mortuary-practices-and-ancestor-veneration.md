@@ -5,6 +5,7 @@ year: -800
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "ancestor-veneration", "archaeology", "bronze-age", "mortuary-rites", "pearl-river-delta", "prehistory"]
 summary: "Between 800 BCE and 500 BCE, archaeological evidence in the Pearl River Delta reveals a transition toward formalized burial rites and complex social structures. These mortuary practices suggest the early development of ancestor veneration within local coastal communities."
+description: "Between 800 BCE and 500 BCE, archaeological evidence in the Pearl River Delta reveals a transition toward formalized burial rites and complex social structures."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

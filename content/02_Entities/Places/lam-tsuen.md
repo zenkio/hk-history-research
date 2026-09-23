@@ -3,6 +3,7 @@ title: "Lam Tsuen (林村)"
 title_zh: "林村"
 tags: ["ai-draft", "british-colonial-era", "indigenous-history", "lam-tsuen", "new-territories", "place", "six-day-war"]
 summary: "Lam Tsuen is a historic valley in the New Territories of Hong Kong significant for its ancient indigenous settlements, agrarian heritage, and its role as a center of resistance during the British takeover in 1899."
+description: "Lam Tsuen is a historic valley in the New Territories of Hong Kong significant for its ancient indigenous settlements, agrarian heritage, and its role as a center of resistance during the British takeover in 1899."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

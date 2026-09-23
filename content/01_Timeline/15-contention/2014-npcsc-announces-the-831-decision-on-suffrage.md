@@ -6,6 +6,7 @@ year: 2014
 era: "Political contention and protest"
 tags: ["2014", "ai-draft", "basic-law", "contention", "hong-kong-politics", "npcsc-831-decision", "umbrella-movement", "universal-suffrage"]
 summary: "On August 31, 2014, the Standing Committee of the National People's Congress issued a restrictive framework for Hong Kong's future Chief Executive elections, effectively dashing hopes for open nominations and setting the stage for prolonged civil disobedience."
+description: "On August 31, 2014, the Standing Committee of the National People's Congress issued a restrictive framework for Hong Kong's future Chief Executive elections, effectively dashing hopes for open nominations and setting…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

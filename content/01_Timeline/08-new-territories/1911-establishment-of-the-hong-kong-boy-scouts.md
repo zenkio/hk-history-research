@@ -6,6 +6,7 @@ year: 1911
 era: "The New Territories lease and the early 20th century"
 tags: ["1911", "ai-draft", "british-colonialism", "early-20th-century", "education-history", "new-territories", "scouting", "social-history", "youth-organizations"]
 summary: "In 1911, the Boy Scout movement was formally established in Hong Kong, marking the introduction of British imperial youth organization structures into the local colonial education system."
+description: "In 1911, the Boy Scout movement was formally established in Hong Kong, marking the introduction of British imperial youth organization structures into the local colonial education system."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

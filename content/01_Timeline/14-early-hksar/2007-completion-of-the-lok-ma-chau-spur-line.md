@@ -6,6 +6,7 @@ year: 2007
 era: "The early HKSAR"
 tags: ["2007", "ai-draft", "cross-border-infrastructure", "early-hksar", "hksar-history", "pearl-river-delta", "rail-transport", "urban-development"]
 summary: "On August 15, 2007, the MTR Corporation opened the Lok Ma Chau Spur Line, creating a crucial second rail link between Hong Kong and Mainland China. This infrastructure project aimed to alleviate congestion at the Lo Wu checkpoint and deepen socio-economic integration within the Pearl River Delta."
+description: "On August 15, 2007, the MTR Corporation opened the Lok Ma Chau Spur Line, creating a crucial second rail link between Hong Kong and Mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

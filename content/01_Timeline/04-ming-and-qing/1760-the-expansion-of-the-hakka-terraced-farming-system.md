@@ -6,6 +6,7 @@ year: 1760
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1760", "agricultural-history", "ai-draft", "hakka-history", "land-use", "ming-and-qing", "qing-dynasty", "rural-development"]
 summary: "Around 1760, the migration and settlement of Hakka people into the hilly interiors of Hong Kong transformed the region's agricultural landscape through the implementation of advanced terracing techniques."
+description: "Around 1760, the migration and settlement of Hakka people into the hilly interiors of Hong Kong transformed the region's agricultural landscape through the implementation of advanced terracing techniques."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

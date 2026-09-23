@@ -3,6 +3,7 @@ title: "Lu Xiufu (陸秀夫)"
 title_zh: "陸秀夫"
 tags: ["ai-draft", "hau-wong", "kowloon", "lu-xiufu", "person", "southern-song", "yamen"]
 summary: "Lu Xiufu was a loyalist chancellor of the Southern Song dynasty who famously carried the young child emperor into the sea at the Battle of Yamen, leaving a lasting legacy in Hong Kong's history and folklore."
+description: "Lu Xiufu was a loyalist chancellor of the Southern Song dynasty who famously carried the young child emperor into the sea at the Battle of Yamen, leaving a lasting legacy in Hong Kong's history and folklore."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

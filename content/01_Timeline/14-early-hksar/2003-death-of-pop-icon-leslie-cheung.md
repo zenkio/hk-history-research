@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-cinema", "leslie-cheung", "sars-2003"]
 summary: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
+description: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2020
 era: "The National Security Law era"
 tags: ["2020", "ai-draft", "apple-daily", "jimmy-lai", "media-censorship", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom. This event marked a profound turning point for press freedom and civil liberties in the territory."
+description: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

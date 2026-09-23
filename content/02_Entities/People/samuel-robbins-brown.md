@@ -3,6 +3,7 @@ title: "Samuel Robbins Brown (勃朗)"
 title_zh: "勃朗"
 tags: ["19th-century", "ai-draft", "education", "missionary", "morrison-school", "person", "yung-wing"]
 summary: "Samuel Robbins Brown was an American missionary and educator whose leadership of the Morrison Education Society School bridged early Protestant educational efforts in China and the emerging British colonial establishment in Hong Kong."
+description: "Samuel Robbins Brown was an American missionary and educator whose leadership of the Morrison Education Society School bridged early Protestant educational efforts in China and the emerging British colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

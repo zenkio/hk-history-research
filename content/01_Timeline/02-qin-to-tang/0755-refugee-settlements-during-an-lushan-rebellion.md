@@ -5,6 +5,7 @@ year: 755
 era: "Imperial frontier: Qin to Tang"
 tags: ["755", "ai-draft", "an-lushan-rebellion", "coastal-settlements", "demographic-change", "frontier-studies", "migration-history", "qin-to-tang", "tang-dynasty"]
 summary: "Between 755 and 763, the chaos of the An Lushan Rebellion triggered a significant migration of refugees from Northern China to the southern coastal regions, including the area now known as Hong Kong."
+description: "Between 755 and 763, the chaos of the An Lushan Rebellion triggered a significant migration of refugees from Northern China to the southern coastal regions, including the area now known as Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

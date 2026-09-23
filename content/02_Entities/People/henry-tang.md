@@ -3,6 +3,7 @@ title: "Henry Tang (唐英年)"
 title_zh: "唐英年"
 tags: ["2012-election", "ai-draft", "chief-executive-election", "henry-tang", "hong-kong-history", "hong-kong-politics", "person"]
 summary: "A prominent Hong Kong politician and businessman who served as the Chief Secretary for Administration and was a major candidate in the 2012 Chief Executive election."
+description: "A prominent Hong Kong politician and businessman who served as the Chief Secretary for Administration and was a major candidate in the 2012 Chief Executive election."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

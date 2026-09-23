@@ -6,6 +6,7 @@ year: 1903
 era: "The New Territories lease and the early 20th century"
 tags: ["1903", "ai-draft", "colonial-press", "journalism-history", "new-territories", "newspapers", "south-china-morning-post"]
 summary: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
+description: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

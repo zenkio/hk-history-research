@@ -5,6 +5,7 @@ year: -1000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "maritime-history", "prehistory", "shell-middens", "subsistence-strategies"]
 summary: "Around 1000 to 800 BCE, archaeological evidence suggests a shift toward systematic, large-scale mollusk harvesting in the Hong Kong region, marking a significant evolution in maritime subsistence strategies."
+description: "Around 1000 to 800 BCE, archaeological evidence suggests a shift toward systematic, large-scale mollusk harvesting in the Hong Kong region, marking a significant evolution in maritime subsistence strategies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

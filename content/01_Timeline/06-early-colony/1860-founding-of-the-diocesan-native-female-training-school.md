@@ -6,6 +6,7 @@ year: 1860
 era: "The early colony"
 tags: ["1860", "ai-draft", "early-colony", "female-education", "missionary-schools", "social-history"]
 summary: "Established in 1860, the Diocesan Native Female Training School was founded to provide education for local Chinese girls, marking a pioneering step in female education and social advancement in the early colony."
+description: "Established in 1860, the Diocesan Native Female Training School was founded to provide education for local Chinese girls, marking a pioneering step in female education and social advancement in the early colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

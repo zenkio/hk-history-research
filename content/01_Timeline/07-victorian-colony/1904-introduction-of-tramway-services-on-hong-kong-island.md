@@ -6,6 +6,7 @@ year: 1904
 era: "Kowloon and the Victorian colony"
 tags: ["1904", "ai-draft", "colonial-infrastructure", "public-transport", "tramways", "urban-history", "victorian-colony"]
 summary: "The introduction of the electric tramway system in July 1904 fundamentally transformed urban commuting, daily life, and commercial geography along the northern shore of Hong Kong Island."
+description: "The introduction of the electric tramway system in July 1904 fundamentally transformed urban commuting, daily life, and commercial geography along the northern shore of Hong Kong Island."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

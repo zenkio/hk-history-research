@@ -6,6 +6,7 @@ year: 1956
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1956", "ai-draft", "british-colonial-history", "chinese-civil-war", "cold-war", "double-tenth-riots", "kuomintang", "postwar-refugees"]
 summary: "The 1956 Double Tenth Riots were severe civil disturbances in Hong Kong sparked by political friction between pro-Nationalist and pro-Communist factions, resulting in significant casualties and highlighting deep-seated societal divides."
+description: "The 1956 Double Tenth Riots were severe civil disturbances in Hong Kong sparked by political friction between pro-Nationalist and pro-Communist factions, resulting in significant casualties and highlighting deep-seated…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

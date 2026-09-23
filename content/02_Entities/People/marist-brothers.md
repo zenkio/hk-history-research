@@ -3,6 +3,7 @@ title: "Marist Brothers (聖母昆仲會)"
 title_zh: "聖母昆仲會"
 tags: ["ai-draft", "catholic-education", "colonial-era", "hong-kong-history", "missionary-orders", "person", "st-francis-xavier-school"]
 summary: "The Marist Brothers are a Roman Catholic religious institute that established significant educational institutions in Hong Kong, contributing to the development of the city's Catholic schooling system."
+description: "The Marist Brothers are a Roman Catholic religious institute that established significant educational institutions in Hong Kong, contributing to the development of the city's Catholic schooling system."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

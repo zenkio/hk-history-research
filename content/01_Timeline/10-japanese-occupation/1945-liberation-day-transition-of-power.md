@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-military-administration", "decolonization", "japanese-occupation", "liberation-day", "sovereignty", "world-war-ii"]
 summary: "On August 30, 1945, the arrival of the British Pacific Fleet marked the end of the Japanese occupation and the beginning of a British military administration in Hong Kong."
+description: "On August 30, 1945, the arrival of the British Pacific Fleet marked the end of the Japanese occupation and the beginning of a British military administration in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1330
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1330", "ai-draft", "economic-history", "maritime-trade", "market-towns", "song-and-yuan", "yuan-dynasty"]
 summary: "During the late Yuan dynasty, regularized periodic markets began to emerge at strategic junctions across the territory, facilitating the exchange of goods between local agrarian communities and maritime traders."
+description: "During the late Yuan dynasty, regularized periodic markets began to emerge at strategic junctions across the territory, facilitating the exchange of goods between local agrarian communities and maritime traders."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

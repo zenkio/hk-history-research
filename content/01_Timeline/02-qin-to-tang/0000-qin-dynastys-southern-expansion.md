@@ -5,6 +5,7 @@ year: -214
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "ancient-history", "archaeology", "lingnan", "nanhai-commandery", "qin-dynasty", "qin-to-tang"]
 summary: "In 214 BCE, the forces of the Qin Dynasty conquered the Lingnan region, incorporating the territory of modern Hong Kong into the newly established Nanhai Commandery and marking the beginning of formal imperial administration."
+description: "In 214 BCE, the forces of the Qin Dynasty conquered the Lingnan region, incorporating the territory of modern Hong Kong into the newly established Nanhai Commandery and marking the beginning of formal imperial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

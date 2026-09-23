@@ -3,6 +3,7 @@ title: "Sha Chau (沙洲)"
 title_zh: "沙洲"
 tags: ["ai-draft", "archaeology", "marine-park", "maritime-history", "new-territories", "place", "pottery"]
 summary: "Sha Chau is a small group of islands in the western waters of Hong Kong that holds significant archaeological evidence of early human activity and kiln-fired pottery production."
+description: "Sha Chau is a small group of islands in the western waters of Hong Kong that holds significant archaeological evidence of early human activity and kiln-fired pottery production."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

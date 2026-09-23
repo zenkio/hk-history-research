@@ -6,6 +6,7 @@ year: 1955
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1955", "ai-draft", "colonial-era", "economic-history", "industrialisation", "manufacturing", "postwar-recovery", "postwar-refugees"]
 summary: "During the mid-1950s, amidst rapid post-war industrial expansion, early institutional efforts emerged to modernize Hong Kong's manufacturing sector and improve export competitiveness."
+description: "During the mid-1950s, amidst rapid post-war industrial expansion, early institutional efforts emerged to modernize Hong Kong's manufacturing sector and improve export competitiveness."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Ta Kwu Ling (打鼓嶺)"
 title_zh: "打鼓嶺"
 tags: ["ai-draft", "border-history", "hong-kong-history", "new-territories", "north-district", "place", "urban-planning"]
 summary: "Ta Kwu Ling is a rural area in the North District of Hong Kong, known for its strategic location along the border with mainland China and its significance in land development debates."
+description: "Ta Kwu Ling is a rural area in the North District of Hong Kong, known for its strategic location along the border with mainland China and its significance in land development debates."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

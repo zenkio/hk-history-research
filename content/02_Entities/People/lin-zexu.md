@@ -3,6 +3,7 @@ title: "Lin Zexu (林則徐)"
 title_zh: "林則徐"
 tags: ["ai-draft", "first-opium-war", "humen", "kowloon", "lin-zexu", "person", "qing-dynasty"]
 summary: "Imperial Commissioner Lin Zexu played a central role in suppressing the opium trade in the late 1830s, an enforcement campaign that directly precipitated the First Opium War and the subsequent British occupation of Hong Kong."
+description: "Imperial Commissioner Lin Zexu played a central role in suppressing the opium trade in the late 1830s, an enforcement campaign that directly precipitated the First Opium War and the subsequent British occupation of Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

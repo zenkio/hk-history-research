@@ -3,6 +3,7 @@ title: "Dorabjee Naorojee (爹核士·娜律哲)"
 title_zh: "爹核士·娜律哲"
 tags: ["ai-draft", "colonial-history", "entrepreneurs", "parsi-community", "person", "star-ferry", "victoria-harbour"]
 summary: "Dorabjee Naorojee was a prominent Parsi merchant and entrepreneur in colonial Hong Kong who is best remembered for establishing the precursor to the iconic Star Ferry service."
+description: "Dorabjee Naorojee was a prominent Parsi merchant and entrepreneur in colonial Hong Kong who is best remembered for establishing the precursor to the iconic Star Ferry service."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

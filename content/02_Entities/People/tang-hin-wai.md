@@ -3,6 +3,7 @@ title: "Tang Hin-wai (鄧漢韙)"
 title_zh: "鄧漢韙"
 tags: ["ai-draft", "local-history", "new-territories", "person", "ping-shan", "tang-clan"]
 summary: "Tang Hin-wai (鄧漢韙) is a historical figure associated with the lineage and ancestral heritage of the Tang clan, one of the Five Great Clans of the New Territories, and the construction of the Ping Shan Tang Ancestral Hall (屏山鄧氏宗祠)."
+description: "Tang Hin-wai (鄧漢韙) is a historical figure associated with the lineage and ancestral heritage of the Tang clan, one of the Five Great Clans of the New Territories, and the construction of the Ping Shan Tang Ancestral…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

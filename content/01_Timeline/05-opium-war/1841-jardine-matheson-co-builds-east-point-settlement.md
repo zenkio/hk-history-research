@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "colonial-infrastructure", "east-point", "first-opium-war", "godowns", "jardine-matheson", "opium-war"]
 summary: "In November **1841**, the prominent British trading house Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point, establishing private corporate dominance over the newly occupied territory's early infrastructure."
+description: "In November 1841, the prominent British trading house Jardine, Matheson & Co."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -350
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "baiyue", "bronze-age", "prehistory", "social-stratification"]
 summary: "Around 350 BCE, archaeological evidence in the Hong Kong region suggests a transition from egalitarian hunter-gatherer bands to more complex, stratified tribal chiefdoms, as evidenced by differentiated grave goods."
+description: "Around 350 BCE, archaeological evidence in the Hong Kong region suggests a transition from egalitarian hunter-gatherer bands to more complex, stratified tribal chiefdoms, as evidenced by differentiated grave goods."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

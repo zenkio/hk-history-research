@@ -5,6 +5,7 @@ year: -110
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "ancient-hong-kong", "economic-history", "han-dynasty", "imperial-monopoly", "qin-to-tang", "salt-industry"]
 summary: "Around 110 BCE, the implementation of the Han dynasty imperial salt monopoly stimulated the formal growth of coastal salt-boiling operations in the region, particularly around sheltered bays."
+description: "Around 110 BCE, the implementation of the Han dynasty imperial salt monopoly stimulated the formal growth of coastal salt-boiling operations in the region, particularly around sheltered bays."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

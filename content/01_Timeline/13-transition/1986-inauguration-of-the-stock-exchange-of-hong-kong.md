@@ -6,6 +6,7 @@ year: 1986
 era: "Sino-British negotiations and the transition"
 tags: ["1986", "ai-draft", "british-colonial-era", "economic-development", "financial-markets", "hong-kong-history", "stock-exchange", "transition"]
 summary: "On April 2, 1986, four separate stock exchanges merged to form the Stock Exchange of Hong Kong, marking a pivotal modernization of the city's financial infrastructure during the transitional period."
+description: "On April 2, 1986, four separate stock exchanges merged to form the Stock Exchange of Hong Kong, marking a pivotal modernization of the city's financial infrastructure during the transitional period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Fujian (福建)"
 title_zh: "福建"
 tags: ["ai-draft", "fujian", "great-clearance", "migration", "new-territories", "place", "qing-dynasty"]
 summary: "Fujian is a coastal province in southeastern China whose diaspora, trade networks, and maritime migrations significantly shaped the economic, cultural, and demographic development of Hong Kong over centuries."
+description: "Fujian is a coastal province in southeastern China whose diaspora, trade networks, and maritime migrations significantly shaped the economic, cultural, and demographic development of Hong Kong over centuries."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

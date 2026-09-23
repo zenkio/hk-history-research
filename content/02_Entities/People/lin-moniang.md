@@ -3,6 +3,7 @@ title: "Lin Moniang (林默娘)"
 title_zh: "林默娘"
 tags: ["ai-draft", "lin-moniang", "local-religion", "maritime-history", "person", "song-dynasty", "tin-hau"]
 summary: "Lin Moniang (林默娘), posthumously known as Tin Hau (天后), is a Song dynasty figure whose deification as the Goddess of the Sea profoundly shaped the maritime culture, community organization, and territorial identity of Hong Kong."
+description: "Lin Moniang (林默娘), posthumously known as Tin Hau (天后), is a Song dynasty figure whose deification as the Goddess of the Sea profoundly shaped the maritime culture, community organization, and territorial identity of…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

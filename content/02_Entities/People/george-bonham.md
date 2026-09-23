@@ -3,6 +3,7 @@ title: "George Bonham (文咸)"
 title_zh: "文咸"
 tags: ["ai-draft", "british-empire", "colonial-history", "hong-kong-governors", "nineteenth-century", "person", "registration-ordinance"]
 summary: "Sir George Bonham was the third Governor of Hong Kong, known for his administrative consolidation and his controversial role in the implementation of the Registration Ordinance."
+description: "Sir George Bonham was the third Governor of Hong Kong, known for his administrative consolidation and his controversial role in the implementation of the Registration Ordinance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

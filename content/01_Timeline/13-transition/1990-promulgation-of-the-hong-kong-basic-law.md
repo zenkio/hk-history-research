@@ -6,6 +6,7 @@ year: 1990
 era: "Sino-British negotiations and the transition"
 tags: ["1990", "ai-draft", "basic-law", "constitutional-law", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative Region of the People's Republic of China."
+description: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

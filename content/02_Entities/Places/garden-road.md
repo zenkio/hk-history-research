@@ -3,6 +3,7 @@ title: "Garden Road (花園道)"
 title_zh: "花園道"
 tags: ["ai-draft", "central-district", "colonial-history", "hong-kong-transport", "peak-tram", "place", "urban-development"]
 summary: "Garden Road is a major thoroughfare in Central, Hong Kong, serving as the historical and functional link between the city’s business district and the prestigious Peak residential area via the Peak Tram."
+description: "Garden Road is a major thoroughfare in Central, Hong Kong, serving as the historical and functional link between the city’s business district and the prestigious Peak residential area via the Peak Tram."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

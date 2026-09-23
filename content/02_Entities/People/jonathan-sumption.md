@@ -3,6 +3,7 @@ title: "Jonathan Sumption (岑耀信)"
 title_zh: "岑耀信"
 tags: ["ai-draft", "court-of-final-appeal", "hong-kong-politics", "judiciary", "legal-history", "person", "rule-of-law"]
 summary: "Jonathan Sumption is a prominent British jurist and former overseas non-permanent judge of the Hong Kong Court of Final Appeal whose 2024 resignation became a focal point in international debates regarding the rule of law in Hong Kong."
+description: "Jonathan Sumption is a prominent British jurist and former overseas non-permanent judge of the Hong Kong Court of Final Appeal whose 2024 resignation became a focal point in international debates regarding the rule of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

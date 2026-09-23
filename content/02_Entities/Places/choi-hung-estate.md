@@ -3,6 +3,7 @@ title: "Choi Hung Estate (彩虹邨)"
 title_zh: "彩虹邨"
 tags: ["ai-draft", "colonial-history", "hong-kong-architecture", "place", "public-housing", "urban-development", "wong-tai-sin"]
 summary: "Completed in the 1960s, Choi Hung Estate is one of Hong Kong's oldest and most iconic public housing developments, reflecting the rapid urbanization and social policy shifts of the post-war era."
+description: "Completed in the 1960s, Choi Hung Estate is one of Hong Kong's oldest and most iconic public housing developments, reflecting the rapid urbanization and social policy shifts of the post-war era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

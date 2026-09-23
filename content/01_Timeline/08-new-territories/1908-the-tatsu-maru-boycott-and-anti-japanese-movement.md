@@ -6,6 +6,7 @@ year: 1908
 era: "The New Territories lease and the early 20th century"
 tags: ["1908", "ai-draft", "anti-japanese-movement", "boycott", "british-colonial-history", "chinese-nationalism", "new-territories", "tatsu-maru"]
 summary: "In March 1908, a widespread merchant and consumer boycott of Japanese goods erupted in Hong Kong following the seizure of a Japanese steamer carrying arms, marking a significant early manifestation of modern Chinese nationalism in the British colony."
+description: "In March 1908, a widespread merchant and consumer boycott of Japanese goods erupted in Hong Kong following the seizure of a Japanese steamer carrying arms, marking a significant early manifestation of modern Chinese…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

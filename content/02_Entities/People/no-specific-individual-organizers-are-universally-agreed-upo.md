@@ -3,6 +3,7 @@ title: "No specific individual organizers are universally agreed upon"
 title_zh: "第一屆香港工業博覽會"
 tags: ["ai-draft", "colonial-era", "hong-kong-economy", "industrial-history", "manufacturing", "person", "tai-po"]
 summary: "Held in 1938, this landmark event marked the emergence of Hong Kong as a burgeoning manufacturing hub during a period of intense regional instability."
+description: "Held in 1938, this landmark event marked the emergence of Hong Kong as a burgeoning manufacturing hub during a period of intense regional instability."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

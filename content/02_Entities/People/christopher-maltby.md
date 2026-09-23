@@ -3,6 +3,7 @@ title: "Christopher Maltby (莫德庇)"
 title_zh: "莫德庇"
 tags: ["ai-draft", "battle-of-hong-kong", "british-military", "japanese-occupation", "person", "world-war-ii"]
 summary: "Major-General Christopher Maltby was the General Officer Commanding British forces in Hong Kong during the December **1941** Japanese invasion."
+description: "Major-General Christopher Maltby was the General Officer Commanding British forces in Hong Kong during the December 1941 Japanese invasion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

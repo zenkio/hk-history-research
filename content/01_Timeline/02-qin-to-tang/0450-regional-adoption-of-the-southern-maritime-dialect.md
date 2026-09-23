@@ -5,6 +5,7 @@ year: 450
 era: "Imperial frontier: Qin to Tang"
 tags: ["450", "ai-draft", "ancient-china", "baiyue", "cantonese-origins", "imperial-frontier", "lingnan-culture", "linguistic-history", "qin-to-tang"]
 summary: "Around the 5th and 6th centuries, the integration of arriving settlers and indigenous Baiyue populations catalyzed a distinct linguistic synthesis in the Lingnan region."
+description: "Around the 5th and 6th centuries, the integration of arriving settlers and indigenous Baiyue populations catalyzed a distinct linguistic synthesis in the Lingnan region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1911
 era: "The New Territories lease and the early 20th century"
 tags: ["1911", "1911-census", "ai-draft", "colonial-history", "new-territories", "population-growth", "qing-dynasty", "refugees"]
 summary: "Conducted in May 1911, this comprehensive census recorded a population spike to over 450,000, driven largely by refugees fleeing the turmoil of the collapsing Qing Dynasty."
+description: "Conducted in May 1911, this comprehensive census recorded a population spike to over 450,000, driven largely by refugees fleeing the turmoil of the collapsing Qing Dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

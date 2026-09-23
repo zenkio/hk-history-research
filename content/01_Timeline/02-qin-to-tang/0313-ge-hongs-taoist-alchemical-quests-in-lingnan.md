@@ -5,6 +5,7 @@ year: 313
 era: "Imperial frontier: Qin to Tang"
 tags: ["313", "ai-draft", "alchemy", "history", "jin-dynasty", "qin-to-tang", "religion", "taoism"]
 summary: "In **313**, the renowned scholar and alchemist **Ge Hong** traveled to the Lingnan region, where his pursuit of Taoist immortality and traditional medicine left a lasting cultural imprint on the rugged hills of what is now Hong Kong."
+description: "In 313, the renowned scholar and alchemist Ge Hong traveled to the Lingnan region, where his pursuit of Taoist immortality and traditional medicine left a lasting cultural imprint on the rugged hills of what is now Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

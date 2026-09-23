@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "ai-draft", "colonial-history", "early-colony", "happy-valley-cemetery", "mortality", "public-health"]
 summary: "Established in 1845 to address catastrophic mortality rates among the early colonial population, the Happy Valley Cemetery provided a multi-faith burial ground that underscored the severe public health challenges faced by the fledgling British colony."
+description: "Established in 1845 to address catastrophic mortality rates among the early colonial population, the Happy Valley Cemetery provided a multi-faith burial ground that underscored the severe public health challenges faced…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

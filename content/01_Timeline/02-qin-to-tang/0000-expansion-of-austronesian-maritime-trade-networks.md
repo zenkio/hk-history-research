@@ -5,6 +5,7 @@ year: -1500
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "austronesian", "baiyue", "maritime-history", "prehistoric-hong-kong", "qin-to-tang", "trade-networks"]
 summary: "Long before the formal integration of the region into the Chinese empire, coastal communities in Hong Kong participated in vast maritime networks that facilitated regional cultural and material exchange."
+description: "Long before the formal integration of the region into the Chinese empire, coastal communities in Hong Kong participated in vast maritime networks that facilitated regional cultural and material exchange."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

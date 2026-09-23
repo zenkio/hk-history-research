@@ -6,6 +6,7 @@ year: 1993
 era: "Sino-British negotiations and the transition"
 tags: ["1993", "ai-draft", "banking-sector", "exchange-fund", "financial-regulation", "hkma", "sino-british-transition", "transition"]
 summary: "On April 1, 1993, the Hong Kong Monetary Authority was established through the merger of the Office of the Commissioner of Banking and the Exchange Fund Office, centralizing the territory's financial regulation and currency management ahead of the 1997 handover."
+description: "On April 1, 1993, the Hong Kong Monetary Authority was established through the merger of the Office of the Commissioner of Banking and the Exchange Fund Office, centralizing the territory's financial regulation and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

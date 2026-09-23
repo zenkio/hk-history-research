@@ -3,6 +3,7 @@ title: "Yuen Long Kau Hui (元朗舊墟)"
 title_zh: "元朗舊墟"
 tags: ["ai-draft", "clan-history", "market-town", "new-territories", "place", "yuen-long"]
 summary: "Yuen Long Kau Hui is a historically significant market settlement in the New Territories that illustrates the complex clan dynamics and economic organization of the region prior to British colonial rule."
+description: "Yuen Long Kau Hui is a historically significant market settlement in the New Territories that illustrates the complex clan dynamics and economic organization of the region prior to British colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

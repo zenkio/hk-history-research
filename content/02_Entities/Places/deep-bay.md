@@ -3,6 +3,7 @@ title: "Deep Bay (後海灣)"
 title_zh: "後海灣"
 tags: ["ai-draft", "deep-bay", "lau-fau-shan", "maritime-history", "new-territories", "oyster-farming", "place"]
 summary: "Deep Bay is a semi-enclosed coastal body of water situated between the northwestern New Territories of Hong Kong and Shenzhen, historically vital for its traditional oyster farming industry and cross-border maritime interactions."
+description: "Deep Bay is a semi-enclosed coastal body of water situated between the northwestern New Territories of Hong Kong and Shenzhen, historically vital for its traditional oyster farming industry and cross-border maritime…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Xin'an (新安)"
 title_zh: "新安"
 tags: ["administrative-history", "ai-draft", "migration", "new-territories", "place", "qing-dynasty", "xin-an"]
 summary: "Xin'an was a historical county encompassing modern-day Hong Kong and Shenzhen that served as the administrative framework for the region during the Ming and Qing dynasties."
+description: "Xin'an was a historical county encompassing modern-day Hong Kong and Shenzhen that served as the administrative framework for the region during the Ming and Qing dynasties."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

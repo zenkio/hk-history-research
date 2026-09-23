@@ -3,6 +3,7 @@ title: "Queen Victoria (維多利亞女王)"
 title_zh: "維多利亞女王"
 tags: ["19th-century", "ai-draft", "british-empire", "colonial-history", "hong-kong-island", "person"]
 summary: "Queen Victoria was the reigning monarch of the United Kingdom during the mid-19th-century acquisition and early colonial development of Hong Kong, lending her name to numerous landmarks and institutions across the territory."
+description: "Queen Victoria was the reigning monarch of the United Kingdom during the mid-19th-century acquisition and early colonial development of Hong Kong, lending her name to numerous landmarks and institutions across the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

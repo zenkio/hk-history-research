@@ -3,6 +3,7 @@ title: "East India Company (東印度公司)"
 title_zh: "東印度公司"
 tags: ["ai-draft", "canton-system", "colonial-era", "east-india-company", "opium-war", "person", "trade-history"]
 summary: "A British royal charter company that monopolized trade in Asia and played a pivotal role in the economic tensions and conflicts leading to the British acquisition of Hong Kong."
+description: "A British royal charter company that monopolized trade in Asia and played a pivotal role in the economic tensions and conflicts leading to the British acquisition of Hong Kong."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

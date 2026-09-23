@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "colonial-infrastructure", "education", "healthcare", "missionary-work", "opium-war", "pearl-river-delta"]
 summary: "The transition of Protestant missions from the restricted trade environment of Canton to the newly ceded territory of Hong Kong, establishing the roots of colonial social services."
+description: "The transition of Protestant missions from the restricted trade environment of Canton to the newly ceded territory of Hong Kong, establishing the roots of colonial social services."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

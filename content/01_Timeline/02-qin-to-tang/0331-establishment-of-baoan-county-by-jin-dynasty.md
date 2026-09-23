@@ -5,6 +5,7 @@ year: 331
 era: "Imperial frontier: Qin to Tang"
 tags: ["331", "ai-draft", "ancient-hong-kong", "baoan-county", "imperial-administration", "jin-dynasty", "nanhai-commandery", "qin-to-tang"]
 summary: "In 331, the Jin Dynasty split the Nanhai Commandery to establish Bao'an County, bringing the modern Hong Kong territory under localized imperial administration for the first time."
+description: "In 331, the Jin Dynasty split the Nanhai Commandery to establish Bao'an County, bringing the modern Hong Kong territory under localized imperial administration for the first time."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

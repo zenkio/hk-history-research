@@ -6,6 +6,7 @@ year: 1894
 era: "Kowloon and the Victorian colony"
 tags: ["1894", "1894-epidemic", "ai-draft", "alexandre-yersin", "plague-bacillus", "public-health", "victorian-colony", "victorian-hong-kong"]
 summary: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
+description: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

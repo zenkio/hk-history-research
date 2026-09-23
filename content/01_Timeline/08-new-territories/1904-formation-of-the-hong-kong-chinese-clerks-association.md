@@ -6,6 +6,7 @@ year: 1904
 era: "The New Territories lease and the early 20th century"
 tags: ["1904", "ai-draft", "colonial-history", "modern-chinese-history", "new-territories", "new-territories-lease", "professional-associations", "social-stratification"]
 summary: "In 1904, the establishment of the Hong Kong Chinese Clerks Association signaled the emergence of a rising middle class of English-educated professionals in the colony."
+description: "In 1904, the establishment of the Hong Kong Chinese Clerks Association signaled the emergence of a rising middle class of English-educated professionals in the colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

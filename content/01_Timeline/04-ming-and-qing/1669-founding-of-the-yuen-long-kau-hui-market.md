@@ -6,6 +6,7 @@ year: 1669
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1669", "ai-draft", "great-clearance", "markets", "ming-and-qing", "qing-dynasty", "tang-lineage", "yuen-long"]
 summary: "Following the revocation of the Qing dynasty's Great Clearance policy in **1669**, the powerful Tang lineage established the Yuen Long Kau Hui market to revive regional commerce and agricultural exchange in the northwestern New Territories."
+description: "Following the revocation of the Qing dynasty's Great Clearance policy in 1669, the powerful Tang lineage established the Yuen Long Kau Hui market to revive regional commerce and agricultural exchange in the northwestern…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

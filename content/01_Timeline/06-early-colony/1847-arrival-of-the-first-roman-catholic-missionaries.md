@@ -6,6 +6,7 @@ year: 1847
 era: "The early colony"
 tags: ["1847", "ai-draft", "colonial-history", "early-colony", "education-history", "nineteenth-century", "religious-history", "social-welfare"]
 summary: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
+description: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Gage Street (結志街)"
 title_zh: "結志街"
 tags: ["ai-draft", "central", "colonial-history", "place", "revolutionary-history", "urban-development", "yeung-ku-wan"]
 summary: "Gage Street is one of the oldest streets in Central, Hong Kong, historically significant as a hub for early Chinese commerce and a site of political unrest during the late Qing dynasty."
+description: "Gage Street is one of the oldest streets in Central, Hong Kong, historically significant as a hub for early Chinese commerce and a site of political unrest during the late Qing dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

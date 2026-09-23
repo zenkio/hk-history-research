@@ -6,6 +6,7 @@ year: 1961
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1961", "ai-draft", "colonial-governance", "education-policy", "industrialisation", "postwar-hong-kong", "postwar-refugees"]
 summary: "The 1961 Education Policy marked a pivotal shift toward universal primary education, reflecting the colonial administration's transition from passive governance to an active role in socio-economic development."
+description: "The 1961 Education Policy marked a pivotal shift toward universal primary education, reflecting the colonial administration's transition from passive governance to an active role in socio-economic development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

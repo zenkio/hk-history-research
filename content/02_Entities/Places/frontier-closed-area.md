@@ -3,6 +3,7 @@ title: "Frontier Closed Area (邊境禁區)"
 title_zh: "邊境禁區"
 tags: ["ai-draft", "border-security", "colonial-history", "frontier-closed-area", "geopolitics", "new-territories", "place"]
 summary: "The Frontier Closed Area was a buffer zone established along the border between Hong Kong and mainland China, serving as a critical control mechanism for migration, security, and smuggling throughout the colonial and post-colonial eras."
+description: "The Frontier Closed Area was a buffer zone established along the border between Hong Kong and mainland China, serving as a critical control mechanism for migration, security, and smuggling throughout the colonial and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Victoria (維多利亞城)"
 title_zh: "維多利亞城"
 tags: ["ai-draft", "british-administration", "colonial-history", "hong-kong-island", "place", "urban-history", "victoria"]
 summary: "Victoria was the early urban center of the British colonial administration in Hong Kong, serving as the political, commercial, and media hub of the territory."
+description: "Victoria was the early urban center of the British colonial administration in Hong Kong, serving as the political, commercial, and media hub of the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

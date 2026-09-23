@@ -6,6 +6,7 @@ year: 1684
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1684", "ai-draft", "demographics", "great-clearance", "hakka-resettlement", "ming-and-qing", "new-territories", "qing-dynasty"]
 summary: "In **1684**, following the devastation of the Great Clearance, the Qing government officially encouraged Hakka families from inland provinces to migrate and repopulate the coastal areas of Hong Kong, fundamentally reshaping the region's demographic landscape."
+description: "In 1684, following the devastation of the Great Clearance, the Qing government officially encouraged Hakka families from inland provinces to migrate and repopulate the coastal areas of Hong Kong, fundamentally reshaping…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

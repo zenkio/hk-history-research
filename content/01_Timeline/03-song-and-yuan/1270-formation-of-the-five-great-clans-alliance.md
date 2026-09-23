@@ -6,6 +6,7 @@ year: 1270
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1270", "ai-draft", "clan-history", "lineage", "new-territories", "rural-governance", "song-and-yuan", "song-dynasty"]
 summary: "During the late Southern Song Dynasty, five major lineages established a collaborative socio-political network in the New Territories that shaped the region's land management and social hierarchy for centuries."
+description: "During the late Southern Song Dynasty, five major lineages established a collaborative socio-political network in the New Territories that shaped the region's land management and social hierarchy for centuries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

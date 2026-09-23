@@ -6,6 +6,7 @@ year: 1100
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1100", "agriculture", "ai-draft", "champa-rice", "economic-history", "new-territories", "song-and-yuan", "song-dynasty"]
 summary: "Around **1100**, the introduction of early-ripening Champa rice transformed agriculture in the New Territories, enabling double-cropping and significantly increasing local food production."
+description: "Around 1100, the introduction of early-ripening Champa rice transformed agriculture in the New Territories, enabling double-cropping and significantly increasing local food production."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

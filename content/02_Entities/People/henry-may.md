@@ -3,6 +3,7 @@ title: "Henry May (梅含理)"
 title_zh: "梅含理"
 tags: ["ai-draft", "british-administration", "colonial-history", "early-twentieth-century", "education-history", "governors-of-hong-kong", "person"]
 summary: "Sir Henry May was a long-serving British colonial official who served as the 15th Governor of Hong Kong, marking a period defined by colonial consolidation and the onset of the First World War."
+description: "Sir Henry May was a long-serving British colonial official who served as the 15th Governor of Hong Kong, marking a period defined by colonial consolidation and the onset of the First World War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

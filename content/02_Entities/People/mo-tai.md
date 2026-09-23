@@ -3,6 +3,7 @@ title: "Mo Tai (武帝)"
 title_zh: "武帝"
 tags: ["ai-draft", "man-mo-temple", "mo-tai", "new-territories", "person", "qing-dynasty", "tai-po"]
 summary: "Mo Tai, commonly referring to the Martial Emperor or God of War, is a revered deity in Hong Kong history whose worship is prominently linked to traditional community governance and temple construction in the New Territories."
+description: "Mo Tai, commonly referring to the Martial Emperor or God of War, is a revered deity in Hong Kong history whose worship is prominently linked to traditional community governance and temple construction in the New…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

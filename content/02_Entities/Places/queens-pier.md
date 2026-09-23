@@ -3,6 +3,7 @@ title: "Queen's Pier (皇后碼頭)"
 title_zh: "皇后碼頭"
 tags: ["ai-draft", "central-district", "colonial-history", "heritage-conservation", "hong-kong-architecture", "place", "urban-development"]
 summary: "Queen's Pier was a significant public landing facility in Central, serving as a ceremonial gateway for British colonial officials and a symbolic site for grassroots heritage activism."
+description: "Queen's Pier was a significant public landing facility in Central, serving as a ceremonial gateway for British colonial officials and a symbolic site for grassroots heritage activism."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

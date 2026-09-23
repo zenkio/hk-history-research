@@ -3,6 +3,7 @@ title: "Wan Chai (灣仔)"
 title_zh: "灣仔"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "place", "protests", "urban-development", "wan-chai"]
 summary: "Wan Chai is a major commercial and residential district on Hong Kong Island that has evolved from an early British colonial settlement and fishing village into a focal point for major historical events, reclamation, and public demonstrations."
+description: "Wan Chai is a major commercial and residential district on Hong Kong Island that has evolved from an early British colonial settlement and fishing village into a focal point for major historical events, reclamation, and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1858
 era: "The early colony"
 tags: ["1858", "19th-century-hong-kong", "ai-draft", "british-empire", "caldwell-anstey-scandal", "colonial-corruption", "early-colony", "piracy"]
 summary: "In **1858**, the public exposure of Registrar General Daniel Caldwell's ties to the pirate Ma-chow Wong ignited a massive political crisis in early colonial Hong Kong, exposing deep-seated factionalism and corruption within the administration."
+description: "In 1858, the public exposure of Registrar General Daniel Caldwell's ties to the pirate Ma-chow Wong ignited a massive political crisis in early colonial Hong Kong, exposing deep-seated factionalism and corruption within…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

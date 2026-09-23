@@ -3,6 +3,7 @@ title: "Possession Point (水坑口)"
 title_zh: "水坑口"
 tags: ["ai-draft", "british-landing", "colonial-history", "first-opium-war", "place", "possession-point", "sheung-wan"]
 summary: "Possession Point is the historic site on Hong Kong Island where British forces first landed and formally claimed the territory in 1841."
+description: "Possession Point is the historic site on Hong Kong Island where British forces first landed and formally claimed the territory in 1841."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

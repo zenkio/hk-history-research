@@ -5,6 +5,7 @@ year: 670
 era: "Imperial frontier: Qin to Tang"
 tags: ["670", "ai-draft", "maritime-history", "pearl-river-delta", "piracy", "qin-to-tang", "tang-dynasty"]
 summary: "Around 670 CE, the notorious pirate leader Feng Ruofang exploited the complex geography of the Pearl River estuary to raid foreign merchant vessels, exposing the administrative and naval limits of the early Tang dynasty."
+description: "Around 670 CE, the notorious pirate leader Feng Ruofang exploited the complex geography of the Pearl River estuary to raid foreign merchant vessels, exposing the administrative and naval limits of the early Tang…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

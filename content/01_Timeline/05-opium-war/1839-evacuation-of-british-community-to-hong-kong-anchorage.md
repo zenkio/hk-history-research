@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "british-evacuation", "canton-trade", "charles-elliot", "first-opium-war", "lin-zexu", "opium-war", "victoria-harbour"]
 summary: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime capacity of the area."
+description: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

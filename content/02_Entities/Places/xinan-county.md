@@ -3,6 +3,7 @@ title: "Xin'an County (新安縣)"
 title_zh: "新安縣"
 tags: ["ai-draft", "hong-kong-history", "ming-dynasty", "new-territories", "place", "qing-dynasty", "xin-an-county"]
 summary: "Xin'an County was a historical administrative district established during the Ming dynasty that encompassed the entirety of modern-day Hong Kong and Shenzhen, serving as the foundational territorial framework for the region's subsequent development."
+description: "Xin'an County was a historical administrative district established during the Ming dynasty that encompassed the entirety of modern-day Hong Kong and Shenzhen, serving as the foundational territorial framework for the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Su Pak-lam (蘇伯林)"
 title_zh: "蘇伯林"
 tags: ["1922-seamens-strike", "ai-draft", "hong-kong-history", "labor-history", "person", "trade-unions"]
 summary: "Su Pak-lam (蘇伯林) was an active labor organizer and prominent figure in the 1922 Hong Kong Seamen's Strike."
+description: "Su Pak-lam (蘇伯林) was an active labor organizer and prominent figure in the 1922 Hong Kong Seamen's Strike."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

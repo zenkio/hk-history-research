@@ -3,6 +3,7 @@ title: "Shanghai (上海)"
 title_zh: "上海"
 tags: ["ai-draft", "banking", "economic-history", "migration", "place", "shanghai", "textile-industry"]
 summary: "As China's preeminent treaty port and commercial capital before 1949, Shanghai served as a primary economic rival, financial incubator, and later a crucial source of industrial capital and refugee migration that shaped Hong Kong's modern trajectory."
+description: "As China's preeminent treaty port and commercial capital before 1949, Shanghai served as a primary economic rival, financial incubator, and later a crucial source of industrial capital and refugee migration that shaped…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

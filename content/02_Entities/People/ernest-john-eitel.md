@@ -3,6 +3,7 @@ title: "Ernest John Eitel (歐德)"
 title_zh: "歐德"
 tags: ["ai-draft", "colonial-history", "historiography", "land-tenure", "missionaries", "ordinance-1888", "person"]
 summary: "Ernest John Eitel was a German-born British colonial official, LMS missionary, and scholar whose administrative and legislative work, notably Ordinance No. 1 of 1888, shaped land tenure and colonial governance in Hong Kong."
+description: "Ernest John Eitel was a German-born British colonial official, LMS missionary, and scholar whose administrative and legislative work, notably Ordinance No."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

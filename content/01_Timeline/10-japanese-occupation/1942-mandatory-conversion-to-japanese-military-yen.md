@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "economic-history", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
 summary: "In July 1942, the Japanese occupation administration banned the Hong Kong Dollar and enforced the use of unbacked military yen, leading to severe inflation and the destruction of local personal savings."
+description: "In July 1942, the Japanese occupation administration banned the Hong Kong Dollar and enforced the use of unbacked military yen, leading to severe inflation and the destruction of local personal savings."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

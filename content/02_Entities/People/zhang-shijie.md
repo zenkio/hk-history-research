@@ -3,6 +3,7 @@ title: "Zhang Shijie (張世傑)"
 title_zh: "張世傑"
 tags: ["ai-draft", "chinese-dynasties", "hong-kong-history", "kowloon", "person", "southern-song", "zhang-shijie"]
 summary: "Zhang Shijie was a key military leader of the dying Southern Song dynasty who fiercely defended the imperial court during its desperate flight through the territories that now form Hong Kong."
+description: "Zhang Shijie was a key military leader of the dying Southern Song dynasty who fiercely defended the imperial court during its desperate flight through the territories that now form Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

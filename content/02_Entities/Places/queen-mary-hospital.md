@@ -3,6 +3,7 @@ title: "Queen Mary Hospital (瑪麗醫院)"
 title_zh: "瑪麗醫院"
 tags: ["ai-draft", "hong-kong-history", "leslie-cheung", "medical-history", "place", "pok-fu-lam", "public-health"]
 summary: "Queen Mary Hospital is a major public hospital in Pok Fu Lam, serving as the primary teaching hospital for the University of Hong Kong and a critical center for advanced medical care."
+description: "Queen Mary Hospital is a major public hospital in Pok Fu Lam, serving as the primary teaching hospital for the University of Hong Kong and a critical center for advanced medical care."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

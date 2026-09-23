@@ -6,6 +6,7 @@ year: 2001
 era: "The early HKSAR"
 tags: ["2001", "ai-draft", "early-hksar", "heritage-conservation", "hksar-history", "redevelopment", "urban-planning", "urban-renewal"]
 summary: "On May 1, 2001, the Urban Renewal Authority (URA) replaced the Land Development Corporation, marking a strategic shift in Hong Kong’s approach to urban regeneration."
+description: "On May 1, 2001, the Urban Renewal Authority (URA) replaced the Land Development Corporation, marking a strategic shift in Hong Kong’s approach to urban regeneration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

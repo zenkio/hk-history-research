@@ -3,6 +3,7 @@ title: "Lee Ming-shu (李明述)"
 title_zh: "李明述"
 tags: ["ai-draft", "architecture", "colonial-era", "heritage-preservation", "hong-kong-history", "king-yin-lei", "person"]
 summary: "Lee Ming-shu was a prominent merchant and figure connected to the early history and construction of the Declared Monument King Yin Lei (景賢里) in Hong Kong."
+description: "Lee Ming-shu was a prominent merchant and figure connected to the early history and construction of the Declared Monument King Yin Lei (景賢里) in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

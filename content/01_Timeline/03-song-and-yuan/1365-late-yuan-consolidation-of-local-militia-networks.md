@@ -6,6 +6,7 @@ year: 1365
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1365", "ai-draft", "clan-history", "local-militia", "new-territories-history", "piracy", "song-and-yuan", "yuan-dynasty"]
 summary: "Amid the collapse of central Yuan authority between 1365 and 1368, prominent lineages in the Hong Kong region established fortified local defense networks to counter escalating maritime piracy and regional banditry."
+description: "Amid the collapse of central Yuan authority between 1365 and 1368, prominent lineages in the Hong Kong region established fortified local defense networks to counter escalating maritime piracy and regional banditry."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

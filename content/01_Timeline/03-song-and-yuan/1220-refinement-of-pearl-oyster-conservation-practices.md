@@ -6,6 +6,7 @@ year: 1220
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1220", "ai-draft", "hong-kong-history", "marine-conservation", "maritime-trade", "pearl-industry", "song-and-yuan", "song-dynasty"]
 summary: "Around 1220, local authorities in the Southern Song dynasty implemented regulated seasonal harvesting to protect the pearl industry in the waters of Tai Po."
+description: "Around 1220, local authorities in the Southern Song dynasty implemented regulated seasonal harvesting to protect the pearl industry in the waters of Tai Po."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

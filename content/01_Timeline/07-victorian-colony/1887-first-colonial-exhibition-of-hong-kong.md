@@ -6,6 +6,7 @@ year: 1887
 era: "Kowloon and the Victorian colony"
 tags: ["1887", "19th-century", "ai-draft", "colonial-history", "economic-development", "hong-kong-history", "trade-exhibition", "victorian-colony"]
 summary: "Held in 1887, this exhibition served as a public demonstration of Hong Kong's burgeoning industrial capabilities and its role as a key node in the British imperial trading network."
+description: "Held in 1887, this exhibition served as a public demonstration of Hong Kong's burgeoning industrial capabilities and its role as a key node in the British imperial trading network."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

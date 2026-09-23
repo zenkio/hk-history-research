@@ -3,6 +3,7 @@ title: "Tai O (大澳)"
 title_zh: "大澳"
 tags: ["ai-draft", "fishing-village", "lantau-island", "maritime-history", "place", "stilt-houses", "tai-o"]
 summary: "Located on the western edge of Lantau Island, Tai O is a historic settlement renowned for its unique stilt-house architecture and long-standing association with the Tanka (蜑家) fishing community."
+description: "Located on the western edge of Lantau Island, Tai O is a historic settlement renowned for its unique stilt-house architecture and long-standing association with the Tanka (蜑家) fishing community."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

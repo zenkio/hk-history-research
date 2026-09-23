@@ -3,6 +3,7 @@ title: "Edinburgh Place (愛丁堡廣場)"
 title_zh: "愛丁堡廣場"
 tags: ["ai-draft", "central", "edinburgh-place", "heritage-conservation", "place", "star-ferry", "urban-history"]
 summary: "Edinburgh Place is a prominent public open space in Central, Hong Kong, that served as a civic focal point and the site of intense heritage preservation protests during the demolition of the old Star Ferry Pier."
+description: "Edinburgh Place is a prominent public open space in Central, Hong Kong, that served as a civic focal point and the site of intense heritage preservation protests during the demolition of the old Star Ferry Pier."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

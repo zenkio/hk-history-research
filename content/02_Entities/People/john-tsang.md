@@ -3,6 +3,7 @@ title: "John Tsang (曾俊華)"
 title_zh: "曾俊華"
 tags: ["ai-draft", "chief-executive-election", "civil-service", "financial-secretary", "hong-kong-politics", "person"]
 summary: "John Tsang is a prominent Hong Kong civil servant and politician who served as Financial Secretary for a decade and was a candidate in the 2017 Chief Executive election."
+description: "John Tsang is a prominent Hong Kong civil servant and politician who served as Financial Secretary for a decade and was a candidate in the 2017 Chief Executive election."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "George Wyndham Cooke (郭富)"
 title_zh: "郭富"
 tags: ["19th-century", "ai-draft", "british-empire", "colonial-history", "george-wyndham-cooke", "journalism", "person"]
 summary: "George Wyndham Cooke was a British journalist and correspondent best known for his early observations of the British colony of Hong Kong during the mid-19th century."
+description: "George Wyndham Cooke was a British journalist and correspondent best known for his early observations of the British colony of Hong Kong during the mid-19th century."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

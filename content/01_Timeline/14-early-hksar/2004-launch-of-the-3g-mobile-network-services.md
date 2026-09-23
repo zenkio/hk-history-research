@@ -6,6 +6,7 @@ year: 2004
 era: "The early HKSAR"
 tags: ["2004", "3g-network", "ai-draft", "early-hksar", "economic-infrastructure", "hksar-development", "mobile-technology", "telecommunications-history"]
 summary: "On January 28, 2004, Hong Kong officially entered the 3G era, marking a pivotal shift in the region’s telecommunications landscape and mobile internet usage."
+description: "On January 28, 2004, Hong Kong officially entered the 3G era, marking a pivotal shift in the region’s telecommunications landscape and mobile internet usage."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

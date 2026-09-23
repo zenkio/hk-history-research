@@ -3,6 +3,7 @@ title: "Anthony Cheung (張炳良)"
 title_zh: "張炳良"
 tags: ["academic", "ai-draft", "democratic-party", "government-official", "hong-kong-politics", "person", "transport-and-housing"]
 summary: "Anthony Cheung is a prominent Hong Kong academic and former government official who played a key role in the formation of the Democratic Party and served as Secretary for Transport and Housing."
+description: "Anthony Cheung is a prominent Hong Kong academic and former government official who played a key role in the formation of the Democratic Party and served as Secretary for Transport and Housing."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

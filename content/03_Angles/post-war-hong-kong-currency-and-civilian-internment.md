@@ -2,7 +2,8 @@
 title: "Post-war Hong Kong Currency and Civilian Internment"
 date: 1941-01-01
 tags: ["1941", "1942", "1943", "1945", "civilian-internment", "currency-reform", "hong-kong-history", "japanese-occupation", "wwii"]
-summary: "Following the **1945** Japanese surrender, authorities prepared to overprint Chinese and Japanese banknotes as Hong Kong"
+summary: "Following the 1945 Japanese surrender, authorities prepared to overprint Chinese and Japanese banknotes as Hong Kong Dollars, though these were ultimately rendered unnecessary by the arrival of new British currency."
+description: "Following the 1945 Japanese surrender, authorities prepared to overprint Chinese and Japanese banknotes as Hong Kong Dollars, though these were ultimately rendered unnecessary by the arrival of new British currency."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2025/05/book-rview-banknote-that-never-was.html"

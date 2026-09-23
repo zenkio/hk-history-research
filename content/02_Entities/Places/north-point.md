@@ -3,6 +3,7 @@ title: "North Point (北角)"
 title_zh: "北角"
 tags: ["ai-draft", "battle-of-hong-kong", "hong-kong-island", "migration", "north-point", "place", "urban-history"]
 summary: "North Point is a major residential and commercial area on the northern shore of Hong Kong Island that underwent significant industrial and demographic transformation throughout the 20th century."
+description: "North Point is a major residential and commercial area on the northern shore of Hong Kong Island that underwent significant industrial and demographic transformation throughout the 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

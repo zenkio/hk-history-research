@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonial-rule", "charles-elliot", "first-opium-war", "opium-war", "possession-point"]
 summary: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
+description: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

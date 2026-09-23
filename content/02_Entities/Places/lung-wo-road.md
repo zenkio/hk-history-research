@@ -3,6 +3,7 @@ title: "Lung Wo Road (龍和道)"
 title_zh: "龍和道"
 tags: ["ai-draft", "central-district", "formula-e", "hong-kong-history", "place", "reclamation", "urban-development"]
 summary: "Lung Wo Road is a major thoroughfare in Central, Hong Kong, serving as a critical infrastructure project that reclaimed land for the city's modern waterfront."
+description: "Lung Wo Road is a major thoroughfare in Central, Hong Kong, serving as a critical infrastructure project that reclaimed land for the city's modern waterfront."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

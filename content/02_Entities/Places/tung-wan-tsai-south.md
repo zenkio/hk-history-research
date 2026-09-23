@@ -3,6 +3,7 @@ title: "Tung Wan Tsai South (東灣仔南)"
 title_zh: "東灣仔南"
 tags: ["ai-draft", "archaeology", "heritage-preservation", "ma-wan", "maritime-history", "place", "prehistoric-hong-kong"]
 summary: "Tung Wan Tsai South is a significant archaeological site on Ma Wan island that provides critical evidence of prehistoric human settlement in the Hong Kong region."
+description: "Tung Wan Tsai South is a significant archaeological site on Ma Wan island that provides critical evidence of prehistoric human settlement in the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

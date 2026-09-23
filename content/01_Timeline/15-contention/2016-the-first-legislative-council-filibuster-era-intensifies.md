@@ -6,6 +6,7 @@ year: 2016
 era: "Political contention and protest"
 tags: ["2016", "ai-draft", "contention", "filibuster", "hong-kong-politics", "legislative-council", "legislative-procedure", "political-protest"]
 summary: "During 2016, the use of systematic filibustering tactics in the Legislative Council reached an apex, profoundly altering the legislative process and intensifying tensions between the pro-democracy camp and the government."
+description: "During 2016, the use of systematic filibustering tactics in the Legislative Council reached an apex, profoundly altering the legislative process and intensifying tensions between the pro-democracy camp and the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

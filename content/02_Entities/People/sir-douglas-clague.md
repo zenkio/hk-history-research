@@ -3,6 +3,7 @@ title: "Sir Douglas Clague (祈德尊)"
 title_zh: "祈德尊"
 tags: ["ai-draft", "business-leaders", "colonial-history", "cross-harbour-tunnel", "hutchison-international", "person", "sir-douglas-clague"]
 summary: "Sir Douglas Clague was a prominent British colonial businessman, military officer, and unofficial member of the Executive and Legislative Councils who played a pivotal role in Hong Kong's post-war commercial development, most notably through Hutchison International and the Cross-Harbour Tunnel."
+description: "Sir Douglas Clague was a prominent British colonial businessman, military officer, and unofficial member of the Executive and Legislative Councils who played a pivotal role in Hong Kong's post-war commercial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

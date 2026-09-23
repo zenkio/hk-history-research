@@ -3,6 +3,7 @@ title: "French Mission Building (法國外方傳道會大樓)"
 title_zh: "法國外方傳道會大樓"
 tags: ["ai-draft", "architectural-heritage", "central-district", "colonial-history", "french-mission", "place", "provisional-administration"]
 summary: "The French Mission Building is a historic neo-classical structure on Battery Path that served as a significant site for colonial governance and religious activity in Hong Kong."
+description: "The French Mission Building is a historic neo-classical structure on Battery Path that served as a significant site for colonial governance and religious activity in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

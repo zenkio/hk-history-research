@@ -3,6 +3,7 @@ title: "Kowloon City (九龍城)"
 title_zh: "九龍城"
 tags: ["ai-draft", "hau-wong", "kai-tak", "kowloon-city", "place", "song-dynasty", "walled-city"]
 summary: "Kowloon City is a historic district in Hong Kong of profound significance, serving as a refuge for fleeing Song dynasty royalty, a center of coastal military defense, and later the site of the densely populated Kowloon Walled City."
+description: "Kowloon City is a historic district in Hong Kong of profound significance, serving as a refuge for fleeing Song dynasty royalty, a center of coastal military defense, and later the site of the densely populated Kowloon…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

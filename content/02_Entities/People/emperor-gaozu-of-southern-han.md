@@ -3,6 +3,7 @@ title: "Emperor Gaozu of Southern Han (劉龑)"
 title_zh: "南漢高祖 (劉龑)"
 tags: ["ai-draft", "five-dynasties", "lingnan", "maritime-history", "person", "southern-han", "tuen-mun"]
 summary: "Emperor Gaozu was the founder of the Southern Han dynasty whose administrative consolidation of the Lingnan region significantly impacted the maritime security and commercial development of the Tuen Mun area."
+description: "Emperor Gaozu was the founder of the Southern Han dynasty whose administrative consolidation of the Lingnan region significantly impacted the maritime security and commercial development of the Tuen Mun area."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

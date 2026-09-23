@@ -3,6 +3,7 @@ title: "Albert Ho (何俊仁)"
 title_zh: "何俊仁"
 tags: ["ai-draft", "civil-society", "democratic-party", "hong-kong-politics", "legislative-council", "person"]
 summary: "Albert Ho is a prominent Hong Kong lawyer and politician who served as a key figure in the pro-democracy movement and the Democratic Party."
+description: "Albert Ho is a prominent Hong Kong lawyer and politician who served as a key figure in the pro-democracy movement and the Democratic Party."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

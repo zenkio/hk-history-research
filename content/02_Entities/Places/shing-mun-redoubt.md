@@ -3,6 +3,7 @@ title: "Shing Mun Redoubt (城門堡壘)"
 title_zh: "城門堡壘"
 tags: ["ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "military-history", "place", "shing-mun-redoubt", "world-war-two"]
 summary: "Shing Mun Redoubt was a key British defensive fortification forming part of the Gin Drinkers Line, marking a pivotal early point in the 1941 Battle of Hong Kong."
+description: "Shing Mun Redoubt was a key British defensive fortification forming part of the Gin Drinkers Line, marking a pivotal early point in the 1941 Battle of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2009
 era: "Political contention and protest"
 tags: ["2009", "academic-history", "ai-draft", "contention", "curriculum-policy", "education-reform", "hkdse", "liberal-studies", "nss-curriculum"]
 summary: "In 2009, Hong Kong implemented the '3-3-4' academic structure, replacing the traditional British-style system with a reorganized model of secondary and tertiary education."
+description: "In 2009, Hong Kong implemented the '3-3-4' academic structure, replacing the traditional British-style system with a reorganized model of secondary and tertiary education."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

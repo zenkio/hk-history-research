@@ -6,6 +6,7 @@ year: 2005
 era: "The early HKSAR"
 tags: ["2005", "ai-draft", "chief-executive", "early-hksar", "hksar-history", "political-crisis", "resignation", "tung-chee-hwa"]
 summary: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public popularity."
+description: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

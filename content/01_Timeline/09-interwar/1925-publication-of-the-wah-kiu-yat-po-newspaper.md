@@ -6,6 +6,7 @@ year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1925", "ai-draft", "canton-hong-kong-strike", "chinese-language-media", "colonial-history", "interwar", "interwar-period", "wah-kiu-yat-po"]
 summary: "The founding of the Wah Kiu Yat Po in 1925 marked the emergence of a major Chinese-language voice in Hong Kong during a period of intense regional socio-political turbulence."
+description: "The founding of the Wah Kiu Yat Po in 1925 marked the emergence of a major Chinese-language voice in Hong Kong during a period of intense regional socio-political turbulence."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

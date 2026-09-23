@@ -3,6 +3,7 @@ title: "Isogai Rentarō (磯谷廉介)"
 title_zh: "磯谷廉介"
 tags: ["ai-draft", "colonial-administration", "hong-kong-history", "isogai-rentaro", "japanese-occupation", "person", "world-war-ii"]
 summary: "Isogai Rentarō was a Japanese Lieutenant General who served as the first Governor of Japanese-occupied Hong Kong from 1942 to 1944."
+description: "Isogai Rentarō was a Japanese Lieutenant General who served as the first Governor of Japanese-occupied Hong Kong from 1942 to 1944."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

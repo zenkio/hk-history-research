@@ -3,6 +3,7 @@ title: "Sir Andrew Caldecott (貝璐)"
 title_zh: "貝璐"
 tags: ["ai-draft", "colonial-history", "governor", "infrastructure", "new-territories", "person", "shing-mun-reservoir"]
 summary: "Sir Andrew Caldecott served as the 17th Governor of Hong Kong, overseeing significant public works and navigating the complex administrative challenges of the 1930s."
+description: "Sir Andrew Caldecott served as the 17th Governor of Hong Kong, overseeing significant public works and navigating the complex administrative challenges of the 1930s."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

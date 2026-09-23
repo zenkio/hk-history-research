@@ -3,6 +3,7 @@ title: "To Clan (陶氏)"
 title_zh: "陶氏"
 tags: ["ai-draft", "lineage-history", "new-territories", "person", "to-clan", "tsing-yi"]
 summary: "The To clan is one of the historic lineage groups of the New Territories, with traditions tracing their migration and settlement in areas such as Tsing Yi."
+description: "The To clan is one of the historic lineage groups of the New Territories, with traditions tracing their migration and settlement in areas such as Tsing Yi."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

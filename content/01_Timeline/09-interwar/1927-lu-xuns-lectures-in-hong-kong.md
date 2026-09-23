@@ -6,6 +6,7 @@ year: 1927
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1927", "ai-draft", "intellectual-history", "interwar", "interwar-hong-kong", "literary-history", "lu-xun", "new-culture-movement"]
 summary: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
+description: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

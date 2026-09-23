@@ -6,6 +6,7 @@ year: 1931
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1931", "ai-draft", "colonial-history", "interwar", "interwar-period", "public-health", "social-welfare", "tuberculosis"]
 summary: "In 1931, the Hong Kong Tuberculosis Association (香港防癆會) was established to address the mounting crisis of tuberculosis in the city's densely populated tenements."
+description: "In 1931, the Hong Kong Tuberculosis Association (香港防癆會) was established to address the mounting crisis of tuberculosis in the city's densely populated tenements."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

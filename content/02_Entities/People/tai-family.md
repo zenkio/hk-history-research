@@ -3,6 +3,7 @@ title: "Tai family (戴氏家族)"
 title_zh: "戴氏家族"
 tags: ["ai-draft", "causeway-bay", "local-history", "person", "qing-dynasty", "tai-family", "tin-hau-temple"]
 summary: "The Tai family (戴氏家族) were prominent early local inhabitants and benefactors associated with the administration and construction of the Tin Hau Temple in Causeway Bay (銅鑼灣天后古廟)."
+description: "The Tai family (戴氏家族) were prominent early local inhabitants and benefactors associated with the administration and construction of the Tin Hau Temple in Causeway Bay (銅鑼灣天后古廟)."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

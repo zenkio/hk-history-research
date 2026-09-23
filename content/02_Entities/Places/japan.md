@@ -3,6 +3,7 @@ title: "Japan (日本)"
 title_zh: "日本"
 tags: ["ai-draft", "colonial-history", "japanese-occupation", "place", "statues", "world-war-ii"]
 summary: "During the Pacific War, the Japanese military occupation of Hong Kong led to the requisition and removal of iconic bronze public monuments for wartime scrap metal."
+description: "During the Pacific War, the Japanese military occupation of Hong Kong led to the requisition and removal of iconic bronze public monuments for wartime scrap metal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

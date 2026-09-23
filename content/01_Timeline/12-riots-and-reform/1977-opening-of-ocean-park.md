@@ -6,6 +6,7 @@ year: 1977
 era: "Riots and the MacLehose reforms"
 tags: ["1977", "ai-draft", "hong-kong-history", "leisure", "maclehose-era", "ocean-park", "riots-and-reform", "tourism"]
 summary: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
+description: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Yung Shue Wan (榕樹灣)"
 title_zh: "槻樹灣"
 tags: ["ai-draft", "ferry-collision", "lamma-island", "maritime-history", "place", "yung-shue-wan"]
 summary: "Yung Shue Wan is a major settlement on Lamma Island (南岬洲) that serves as a residential and recreational hub, notably connected to the tragic Lamma Island ferry collision in **2012**."
+description: "Yung Shue Wan is a major settlement on Lamma Island (南岬洲) that serves as a residential and recreational hub, notably connected to the tragic Lamma Island ferry collision in 2012."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

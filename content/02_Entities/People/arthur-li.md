@@ -3,6 +3,7 @@ title: "Arthur Li (李國章)"
 title_zh: "李國章"
 tags: ["ai-draft", "education-reform", "higher-education", "hong-kong-politics", "new-senior-secondary", "person", "public-administration"]
 summary: "Arthur Li is a prominent Hong Kong educator and politician who served as Secretary for Education and Manpower and later as Chairman of the Council of the University of Hong Kong."
+description: "Arthur Li is a prominent Hong Kong educator and politician who served as Secretary for Education and Manpower and later as Chairman of the Council of the University of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

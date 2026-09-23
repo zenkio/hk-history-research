@@ -6,6 +6,7 @@ year: 1277
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1277", "ai-draft", "dynastic-history", "imperial-court", "kowloon", "mongol-conquest", "song-and-yuan", "southern-song"]
 summary: "In April 1277, fleeing the advancing Mongol armies, the young Southern Song Emperor Duanzong and his imperial court sought temporary refuge in the Kowloon area."
+description: "In April 1277, fleeing the advancing Mongol armies, the young Southern Song Emperor Duanzong and his imperial court sought temporary refuge in the Kowloon area."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1871
 era: "Kowloon and the Victorian colony"
 tags: ["1871", "ai-draft", "botanical-gardens", "colonial-history", "horticulture", "public-parks", "victorian-colony", "victorian-era"]
 summary: "The formal opening of the Hong Kong Botanical Gardens in August 1871 marked the establishment of a dual-purpose scientific and recreational space in the growing Victorian colony."
+description: "The formal opening of the Hong Kong Botanical Gardens in August 1871 marked the establishment of a dual-purpose scientific and recreational space in the growing Victorian colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

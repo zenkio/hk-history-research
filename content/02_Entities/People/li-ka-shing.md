@@ -3,6 +3,7 @@ title: "Li Ka-shing (李嘉誠)"
 title_zh: "李嘉誠"
 tags: ["ai-draft", "colonial-era", "economy", "li-ka-shing", "manufacturing", "person", "plastic-flowers"]
 summary: "Li Ka-shing (李嘉誠) is a prominent Hong Kong business magnate whose early career trajectory closely mirrored the rise of the territory's postwar manufacturing sector, particularly the plastic flower boom."
+description: "Li Ka-shing (李嘉誠) is a prominent Hong Kong business magnate whose early career trajectory closely mirrored the rise of the territory's postwar manufacturing sector, particularly the plastic flower boom."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

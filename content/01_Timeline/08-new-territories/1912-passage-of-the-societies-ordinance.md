@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1911-revolution", "1912", "ai-draft", "british-colonial-history", "legislation", "new-territories", "secret-societies", "societies-ordinance"]
 summary: "In 1912, following the collapse of the Qing dynasty and the Chinese Revolution, the Hong Kong colonial government enacted the Societies Ordinance to strictly monitor, register, and suppress political groups and secret societies."
+description: "In 1912, following the collapse of the Qing dynasty and the Chinese Revolution, the Hong Kong colonial government enacted the Societies Ordinance to strictly monitor, register, and suppress political groups and secret…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

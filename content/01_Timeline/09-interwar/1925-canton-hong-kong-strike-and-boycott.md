@@ -6,6 +6,7 @@ year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1925", "ai-draft", "boycott", "british-colonialism", "canton-hong-kong-strike", "interwar", "kuomintang", "labor-movement"]
 summary: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
+description: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

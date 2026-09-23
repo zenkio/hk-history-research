@@ -3,6 +3,7 @@ title: "Qin Shi Huang (秦始皇)"
 title_zh: "秦始皇"
 tags: ["ai-draft", "ancient-history", "imperial-expansion", "lingnan", "nanyue", "person", "qin-dynasty"]
 summary: "Qin Shi Huang was the founding emperor of the Qin dynasty whose southern military expansion incorporated the Lingnan region, indirectly laying the administrative foundations for early Chinese presence in modern Hong Kong."
+description: "Qin Shi Huang was the founding emperor of the Qin dynasty whose southern military expansion incorporated the Lingnan region, indirectly laying the administrative foundations for early Chinese presence in modern Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

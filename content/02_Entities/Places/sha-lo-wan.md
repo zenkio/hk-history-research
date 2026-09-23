@@ -3,6 +3,7 @@ title: "Sha Lo Wan (沙螺灣)"
 title_zh: "沙螺灣"
 tags: ["ai-draft", "coastal-villages", "incense-trade", "maritime-trade", "new-territories", "place", "tuen-mun"]
 summary: "A coastal village in the New Territories historically linked to the maritime incense trade and regional exchange networks."
+description: "A coastal village in the New Territories historically linked to the maritime incense trade and regional exchange networks."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

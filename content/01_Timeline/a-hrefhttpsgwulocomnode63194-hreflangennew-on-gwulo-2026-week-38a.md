@@ -2,6 +2,7 @@
 title: "New on Gwulo: 2026, week 38"
 tags: ["Hong Kong history", "Gwulo website", "wartime diaries", "photographs", "places"]
 summary: "This update to Gwulo.com features new and updated content, including wartime diary entries from 1942 and 1945, a collect"
+description: "This update to Gwulo.com features new and updated content, including wartime diary entries from 1942 and 1945, a collect"
 confidence: medium
 source_feed: Gwulo_Old_HK
 source_url: "https://gwulo.com/node/63194"

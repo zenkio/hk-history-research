@@ -6,6 +6,7 @@ year: 2024
 era: "The National Security Law era"
 tags: ["2024", "ai-draft", "court-of-final-appeal", "hong-kong-politics", "judicial-independence", "national-security-era", "national-security-law", "rule-of-law"]
 summary: "In June 2024, the resignation of high-profile overseas Non-Permanent Judges (NPJs) from the Hong Kong Court of Final Appeal signaled a shift in the international perception of the city's judicial independence following the implementation of the National Security Law."
+description: "In June 2024, the resignation of high-profile overseas Non-Permanent Judges (NPJs) from the Hong Kong Court of Final Appeal signaled a shift in the international perception of the city's judicial independence following…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

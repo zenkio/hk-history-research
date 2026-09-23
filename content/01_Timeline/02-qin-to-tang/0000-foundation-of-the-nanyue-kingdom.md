@@ -5,6 +5,7 @@ year: -204
 era: "Imperial frontier: Qin to Tang"
 tags: ["ai-draft", "cultural-synthesis", "imperial-frontier", "nanyue-kingdom", "qin-dynasty", "qin-to-tang", "zhao-tuo"]
 summary: "Following the collapse of the Qin dynasty in **-204**, Chinese general Zhao Tuo established the Nanyue Kingdom, incorporating the modern Hong Kong region and initiating a vital era of regional autonomy and cultural synthesis."
+description: "Following the collapse of the Qin dynasty in -204, Chinese general Zhao Tuo established the Nanyue Kingdom, incorporating the modern Hong Kong region and initiating a vital era of regional autonomy and cultural…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

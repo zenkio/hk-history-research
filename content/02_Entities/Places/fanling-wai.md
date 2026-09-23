@@ -3,6 +3,7 @@ title: "Fanling Wai (粉嶺圍)"
 title_zh: "粉嶺圍"
 tags: ["ai-draft", "fanling-wai", "hong-kong-history", "new-territories", "pang-clan", "place", "walled-village"]
 summary: "Fanling Wai is a historic walled village in the New Territories, serving as the ancestral seat of the Pang clan and a significant example of traditional lineage-based settlement in Hong Kong."
+description: "Fanling Wai is a historic walled village in the New Territories, serving as the ancestral seat of the Pang clan and a significant example of traditional lineage-based settlement in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

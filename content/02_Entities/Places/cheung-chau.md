@@ -3,6 +3,7 @@ title: "Cheung Chau (長洲)"
 title_zh: "長洲"
 tags: ["ai-draft", "cheung-chau", "hong-kong-history", "outlying-islands", "pirate-history", "place", "tangible-heritage"]
 summary: "Cheung Chau is an outlying island of Hong Kong historically significant for its maritime trade, piracy, indigenous fishing communities, and enduring religious traditions."
+description: "Cheung Chau is an outlying island of Hong Kong historically significant for its maritime trade, piracy, indigenous fishing communities, and enduring religious traditions."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1939
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1939", "ai-draft", "air-raid-precautions", "british-colonial-history", "civil-defense", "interwar", "world-war-two"]
 summary: "Amid escalating global tensions in 1939, the Hong Kong government formally enacted Air Raid Precautions to prepare the colony for potential aerial bombardment from the Japanese empire."
+description: "Amid escalating global tensions in 1939, the Hong Kong government formally enacted Air Raid Precautions to prepare the colony for potential aerial bombardment from the Japanese empire."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

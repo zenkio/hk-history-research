@@ -3,6 +3,7 @@ title: "John Major (馬卓安)"
 title_zh: "馬卓安"
 tags: ["ai-draft", "british-colonial-era", "handover", "hong-kong-history", "john-major", "person", "uk-politics"]
 summary: "As the Prime Minister of the United Kingdom from 1990 to 1997, John Major oversaw the final years of British colonial administration in Hong Kong and the transition of sovereignty to the People's Republic of China."
+description: "As the Prime Minister of the United Kingdom from 1990 to 1997, John Major oversaw the final years of British colonial administration in Hong Kong and the transition of sovereignty to the People's Republic of China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

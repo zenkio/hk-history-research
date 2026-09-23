@@ -3,6 +3,7 @@ title: "Fan Lau (分流)"
 title_zh: "分流"
 tags: ["ai-draft", "archaeology", "coastal-defense", "hong-kong-history", "lantau-island", "place", "qing-dynasty"]
 summary: "Fan Lau is a remote headland on the southwestern tip of Lantau Island, notable for its historical coastal defense installations and long-standing association with local maritime communities."
+description: "Fan Lau is a remote headland on the southwestern tip of Lantau Island, notable for its historical coastal defense installations and long-standing association with local maritime communities."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

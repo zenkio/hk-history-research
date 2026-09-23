@@ -3,6 +3,7 @@ title: "Sebastien Buemi (布美)"
 title_zh: "布美"
 tags: ["2016-events", "ai-draft", "central-district", "formula-e", "motorsport", "person", "sports-history"]
 summary: "Sebastien Buemi is a Swiss professional racing driver who secured his place in Hong Kong history by winning the inaugural 2016 Hong Kong ePrix."
+description: "Sebastien Buemi is a Swiss professional racing driver who secured his place in Hong Kong history by winning the inaugural 2016 Hong Kong ePrix."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

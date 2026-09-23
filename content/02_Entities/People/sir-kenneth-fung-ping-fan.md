@@ -3,6 +3,7 @@ title: "Sir Kenneth Fung Ping-fan (馮秉芬)"
 title_zh: "馮秉芬"
 tags: ["ai-draft", "business-elite", "colonial-era", "cross-harbour-tunnel", "executive-council", "person", "philanthropy"]
 summary: "Sir Kenneth Fung Ping-fan was a prominent Hong Kong businessman, philanthropist, and unofficial member of the Executive and Legislative Councils whose public service spanned the mid-20th century."
+description: "Sir Kenneth Fung Ping-fan was a prominent Hong Kong businessman, philanthropist, and unofficial member of the Executive and Legislative Councils whose public service spanned the mid-20th century."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

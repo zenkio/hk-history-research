@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "cinema", "cultural-assimilation", "japanese-occupation", "propaganda", "world-war-ii"]
 summary: "In May 1943, the Japanese occupation authorities reopened the former Pearl Theater as the Dai To Theater (大東戲院) to broadcast military propaganda and enforce cultural assimilation among the local population."
+description: "In May 1943, the Japanese occupation authorities reopened the former Pearl Theater as the Dai To Theater (大東戲院) to broadcast military propaganda and enforce cultural assimilation among the local population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

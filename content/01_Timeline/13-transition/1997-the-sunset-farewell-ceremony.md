@@ -6,6 +6,7 @@ year: 1997
 era: "Sino-British negotiations and the transition"
 tags: ["1997", "ai-draft", "british-colonial-rule", "hms-tamar", "hong-kong-handover", "sino-british-joint-declaration", "transition"]
 summary: "Held on June 30, 1997, amid heavy rain at the HMS Tamar naval base, the Sunset Farewell Ceremony marked the official conclusion of 156 years of British colonial administration in Hong Kong."
+description: "Held on June 30, 1997, amid heavy rain at the HMS Tamar naval base, the Sunset Farewell Ceremony marked the official conclusion of 156 years of British colonial administration in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

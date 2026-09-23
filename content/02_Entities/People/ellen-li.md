@@ -3,6 +3,7 @@ title: "Ellen Li (李曹秀群)"
 title_zh: "李曹秀群"
 tags: ["ai-draft", "colonial-hong-kong", "family-planning", "legislative-council", "person", "social-activism", "womens-history"]
 summary: "Ellen Li (李曹秀群) was a pioneering Hong Kong social activist and the first woman to be appointed to the Legislative Council, known for her advocacy in family planning and social welfare."
+description: "Ellen Li (李曹秀群) was a pioneering Hong Kong social activist and the first woman to be appointed to the Legislative Council, known for her advocacy in family planning and social welfare."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

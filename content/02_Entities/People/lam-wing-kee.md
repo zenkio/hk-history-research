@@ -3,6 +3,7 @@ title: "Lam Wing-kee (林榮基)"
 title_zh: "林榮基"
 tags: ["ai-draft", "causeway-bay-books", "freedom-of-press", "hong-kong-history", "human-rights", "one-country-two-systems", "person"]
 summary: "Lam Wing-kee is a prominent Hong Kong bookseller whose 2015 detention in mainland China became a focal point for international debates regarding the autonomy of the 'One Country, Two Systems' framework."
+description: "Lam Wing-kee is a prominent Hong Kong bookseller whose 2015 detention in mainland China became a focal point for international debates regarding the autonomy of the 'One Country, Two Systems' framework."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

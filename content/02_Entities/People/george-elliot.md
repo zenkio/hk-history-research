@@ -3,6 +3,7 @@ title: "George Elliot (義律)"
 title_zh: "義律"
 tags: ["ai-draft", "british-colonial-era", "first-opium-war", "george-elliot", "history", "hong-kong-fever", "person"]
 summary: "George Elliot was a British naval officer and co-Plenipotentiary during the First Opium War whose actions intertwined with the early British occupation of Hong Kong and the devastating health crises that plagued the newly established garrison."
+description: "George Elliot was a British naval officer and co-Plenipotentiary during the First Opium War whose actions intertwined with the early British occupation of Hong Kong and the devastating health crises that plagued the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

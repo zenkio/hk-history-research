@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "19th-century-hong-kong", "ai-draft", "british-sovereignty", "colonial-history", "early-colony", "legal-system", "public-punishment"]
 summary: "In 1845, the colonial government carried out its first public execution in the Happy Valley area, marking a significant moment in the establishment of British legal authority in the early colony."
+description: "In 1845, the colonial government carried out its first public execution in the Happy Valley area, marking a significant moment in the establishment of British legal authority in the early colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

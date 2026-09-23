@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "first-opium-war", "humen", "lin-zexu", "opium-trade", "opium-war", "qing-dynasty"]
 summary: "In June 1839, Imperial Commissioner Lin Zexu oversaw the public destruction of over one thousand tons of confiscated foreign opium at Humen, marking a critical catalyst for the First Opium War."
+description: "In June 1839, Imperial Commissioner Lin Zexu oversaw the public destruction of over one thousand tons of confiscated foreign opium at Humen, marking a critical catalyst for the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

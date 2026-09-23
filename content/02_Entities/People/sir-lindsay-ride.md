@@ -3,6 +3,7 @@ title: "Sir Lindsay Ride"
 title_zh: "賴廉士"
 tags: ["ai-draft", "british-army-aid-group", "colonial-history", "hong-kong-history", "person", "university-of-hong-kong", "world-war-two"]
 summary: "Sir Lindsay Ride was a British military officer and academic who founded the British Army Aid Group (BAAG) during the Japanese occupation of Hong Kong and later served as Vice-Chancellor of the University of Hong Kong."
+description: "Sir Lindsay Ride was a British military officer and academic who founded the British Army Aid Group (BAAG) during the Japanese occupation of Hong Kong and later served as Vice-Chancellor of the University of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

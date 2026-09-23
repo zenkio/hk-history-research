@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "assassination-attempt", "colonial-history", "francis-may", "new-territories", "xinhai-revolution"]
 summary: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
+description: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

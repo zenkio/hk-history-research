@@ -3,6 +3,7 @@ title: "Sir Henry Arthur Blake (卜力]"
 title_zh: "卜力"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "governor-blake", "kowloon-walled-city", "new-territories", "person"]
 summary: "Sir Henry Arthur Blake was the 12th Governor of Hong Kong who played a pivotal role in the expansion of British territory and the administrative formalization of the New Territories."
+description: "Sir Henry Arthur Blake was the 12th Governor of Hong Kong who played a pivotal role in the expansion of British territory and the administrative formalization of the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

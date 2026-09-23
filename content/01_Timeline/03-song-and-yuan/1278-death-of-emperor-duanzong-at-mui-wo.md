@@ -6,6 +6,7 @@ year: 1278
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1278", "ai-draft", "imperial-refugees", "lantau-island", "mongol-conquest", "mui-wo", "song-and-yuan", "song-dynasty"]
 summary: "On May 8, 1278, the seven-year-old child Emperor Duanzong of the Song dynasty died in Mui Wo on Lantau Island after fleeing the advancing Mongol forces, resulting in the hurried enthronement of his younger brother, Emperor Bing."
+description: "On May 8, 1278, the seven-year-old child Emperor Duanzong of the Song dynasty died in Mui Wo on Lantau Island after fleeing the advancing Mongol forces, resulting in the hurried enthronement of his younger brother…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

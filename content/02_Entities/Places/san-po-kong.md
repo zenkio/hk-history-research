@@ -3,6 +3,7 @@ title: "San Po Kong (新蒲崗)"
 title_zh: "新蒲崗"
 tags: ["1967-riots", "ai-draft", "hong-kong-history", "industrial-history", "kowloon", "place", "san-po-kong"]
 summary: "San Po Kong is a prominent industrial and residential area in Kowloon that gained historical significance as the epicenter of the 1967 Leftist Riots."
+description: "San Po Kong is a prominent industrial and residential area in Kowloon that gained historical significance as the epicenter of the 1967 Leftist Riots."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

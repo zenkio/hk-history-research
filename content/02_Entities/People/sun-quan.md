@@ -3,6 +3,7 @@ title: "Sun Quan (孫權)"
 title_zh: "孫權"
 tags: ["ai-draft", "ancient-china", "eastern-wu", "lingnan-region", "maritime-history", "person", "three-kingdoms"]
 summary: "Sun Quan was the founding emperor of the Eastern Wu (東吳) dynasty whose administrative expansion into the Lingnan region initiated early maritime interest in the coastal waters near Hong Kong."
+description: "Sun Quan was the founding emperor of the Eastern Wu (東吳) dynasty whose administrative expansion into the Lingnan region initiated early maritime interest in the coastal waters near Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

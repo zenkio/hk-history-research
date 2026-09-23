@@ -3,6 +3,7 @@ title: "Leon Lai (黎明)"
 title_zh: "黎明"
 tags: ["1990s", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-cinema", "leon-lai", "person"]
 summary: "Leon Lai is a prominent Hong Kong singer and actor who became one of Cantopop's 'Four Heavenly Kings' during the golden era of the territory's entertainment industry in the 1990s."
+description: "Leon Lai is a prominent Hong Kong singer and actor who became one of Cantopop's 'Four Heavenly Kings' during the golden era of the territory's entertainment industry in the 1990s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

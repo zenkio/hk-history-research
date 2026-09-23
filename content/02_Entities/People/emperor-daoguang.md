@@ -3,6 +3,7 @@ title: "Emperor Daoguang (道光帝)"
 title_zh: "道光帝"
 tags: ["ai-draft", "emperor-daoguang", "first-opium-war", "hong-kong-history", "person", "qing-dynasty", "treaty-of-nanking"]
 summary: "Emperor Daoguang was the Qing dynasty ruler whose reign saw the escalation of the opium trade and the First Opium War, ultimately leading to the ceding of Hong Kong Island to Britain."
+description: "Emperor Daoguang was the Qing dynasty ruler whose reign saw the escalation of the opium trade and the First Opium War, ultimately leading to the ceding of Hong Kong Island to Britain."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

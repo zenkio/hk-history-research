@@ -6,6 +6,7 @@ year: 1962
 era: "Riots and the MacLehose reforms"
 tags: ["1962", "ai-draft", "colonial-history", "natural-disaster", "riots-and-reform", "squatter-housing", "typhoon-wanda", "urban-reform"]
 summary: "In September 1962, Typhoon Wanda struck Hong Kong, causing catastrophic loss of life and property and exposing the extreme vulnerability of the colony's burgeoning squatter settlements."
+description: "In September 1962, Typhoon Wanda struck Hong Kong, causing catastrophic loss of life and property and exposing the extreme vulnerability of the colony's burgeoning squatter settlements."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

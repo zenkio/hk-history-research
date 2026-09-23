@@ -6,6 +6,7 @@ year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1920s", "1922", "ai-draft", "colonial-infrastructure", "hong-kong-tramways", "interwar", "public-transport", "urban-history"]
 summary: "The modernization of Hong Kong's tram system in the early 1920s improved urban transit infrastructure, facilitating mass mobility for the growing working-class population amid labor unrest."
+description: "The modernization of Hong Kong's tram system in the early 1920s improved urban transit infrastructure, facilitating mass mobility for the growing working-class population amid labor unrest."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

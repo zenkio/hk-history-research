@@ -3,6 +3,7 @@ title: "None specifically recorded as the sole founder of the 1876 iteration"
 title_zh: "中外新報"
 tags: ["19th-century", "ai-draft", "colonial-era", "hong-kong-history", "journalism", "person", "print-media"]
 summary: "The Chung Ngoi San Po was a pioneering Chinese-language newspaper in Hong Kong that played a crucial role in regional communication and the development of the local press."
+description: "The Chung Ngoi San Po was a pioneering Chinese-language newspaper in Hong Kong that played a crucial role in regional communication and the development of the local press."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

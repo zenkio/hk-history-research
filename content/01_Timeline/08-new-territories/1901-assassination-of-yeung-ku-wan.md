@@ -6,6 +6,7 @@ year: 1901
 era: "The New Territories lease and the early 20th century"
 tags: ["1901", "ai-draft", "assassination", "british-hong-kong", "new-territories", "qing-dynasty", "revive-china-society", "yeung-ku-wan"]
 summary: "On January 10, 1901, revolutionary leader Yeung Ku-wan was assassinated in his Central Hong Kong home by an agent of the Qing government, highlighting how mainland Chinese political violence crossed into British colonial territory."
+description: "On January 10, 1901, revolutionary leader Yeung Ku-wan was assassinated in his Central Hong Kong home by an agent of the Qing government, highlighting how mainland Chinese political violence crossed into British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

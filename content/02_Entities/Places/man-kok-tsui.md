@@ -3,6 +3,7 @@ title: "Man Kok Tsui (萬角咀)"
 title_zh: "萬角咀"
 tags: ["ai-draft", "archaeology", "bronze-age", "cultural-heritage", "lantau-island", "place", "prehistoric-hong-kong"]
 summary: "Man Kok Tsui is an archaeological site on Lantau Island that provides essential evidence regarding the transition of regional burial rites and early metallurgical techniques in coastal Hong Kong."
+description: "Man Kok Tsui is an archaeological site on Lantau Island that provides essential evidence regarding the transition of regional burial rites and early metallurgical techniques in coastal Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

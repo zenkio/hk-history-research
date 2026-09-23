@@ -3,6 +3,7 @@ title: "Clement Attlee"
 title_zh: "艾德禮"
 tags: ["ai-draft", "british-hong-kong", "clement-attlee", "colonial-administration", "diplomatic-history", "person", "post-war-history"]
 summary: "Clement Attlee was the British Prime Minister who oversaw the post-World War II restoration of British colonial rule in Hong Kong following the Japanese occupation."
+description: "Clement Attlee was the British Prime Minister who oversaw the post-World War II restoration of British colonial rule in Hong Kong following the Japanese occupation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

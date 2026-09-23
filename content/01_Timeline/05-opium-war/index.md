@@ -2,6 +2,7 @@
 title: "05 · Canton trade and the First Opium War (1800-1842)"
 tags: ["ai-draft", "canton-trade", "era-overview", "hong-kong-history", "lin-zexu", "opium-war", "treaty-of-nanking"]
 summary: "This era traces the transformation of the Pearl River Delta from a strictly regulated imperial trading post into a contested zone of British colonial expansion. It covers the destabilization of the Qing trade system, the escalation of the opium trade, and the military conflicts that permanently altered the geopolitical landscape of Hong Kong."
+description: "This era traces the transformation of the Pearl River Delta from a strictly regulated imperial trading post into a contested zone of British colonial expansion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

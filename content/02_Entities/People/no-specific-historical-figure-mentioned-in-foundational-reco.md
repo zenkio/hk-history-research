@@ -3,6 +3,7 @@ title: "No specific historical figure mentioned in foundational records"
 title_zh: "第一屆香港工業博覽會"
 tags: ["1930s", "ai-draft", "economic-history", "hong-kong-history", "industrialization", "manufacturing", "person"]
 summary: "The 1938 exhibition served as a pivotal moment in Hong Kong's economic history, marking the transition from a trade-focused entrepôt to a self-sustaining industrial manufacturing hub."
+description: "The 1938 exhibition served as a pivotal moment in Hong Kong's economic history, marking the transition from a trade-focused entrepôt to a self-sustaining industrial manufacturing hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

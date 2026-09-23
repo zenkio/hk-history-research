@@ -6,6 +6,7 @@ year: 1979
 era: "Riots and the MacLehose reforms"
 tags: ["1979", "1997", "ai-draft", "deng-xiaoping", "mac-lehose", "riots-and-reform", "sino-british-relations", "sovereignty"]
 summary: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's sovereignty after 1997."
+description: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Tang King Po (鄧鏡波)"
 title_zh: "鄧鏡波"
 tags: ["ai-draft", "colonial-era", "hong-kong-education", "industrialist", "person", "philanthropist", "textile-history"]
 summary: "Tang King Po (鄧鏡波) was a prominent Hong Kong industrialist and philanthropist whose early ventures in textiles and printing helped shape the city’s economic transition in the mid-20th century."
+description: "Tang King Po (鄧鏡波) was a prominent Hong Kong industrialist and philanthropist whose early ventures in textiles and printing helped shape the city’s economic transition in the mid-20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

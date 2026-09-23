@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "imperial-rule", "japanese-occupation", "mount-cameron", "shinto-shrine", "world-war-ii"]
 summary: "On May 19, 1943, Japanese occupation authorities held a groundbreaking ceremony for the grand Hong Kong Shinto Shrine on Mount Cameron, aiming to physically and spiritually cement imperial hegemony over the territory."
+description: "On May 19, 1943, Japanese occupation authorities held a groundbreaking ceremony for the grand Hong Kong Shinto Shrine on Mount Cameron, aiming to physically and spiritually cement imperial hegemony over the territory."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

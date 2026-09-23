@@ -6,6 +6,7 @@ year: 1668
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1668", "ai-draft", "border-control", "coastal-defense", "great-clearance", "military-history", "ming-and-qing", "qing-dynasty"]
 summary: "In 1668, the Qing dynasty established a series of military watch posts, signal towers, and fortified passes along the newly drawn evacuation perimeter in the modern Hong Kong and Shenzhen region to defend against coastal resistance forces."
+description: "In 1668, the Qing dynasty established a series of military watch posts, signal towers, and fortified passes along the newly drawn evacuation perimeter in the modern Hong Kong and Shenzhen region to defend against…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1250
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1250", "ai-draft", "fanling-wai", "lineage-history", "new-territories", "pang-clan", "song-and-yuan", "song-dynasty"]
 summary: "Around 1250 during the Song dynasty, the Pang clan established their ancestral settlement in Fanling Wai, laying the foundation for a durable agricultural community in the New Territories."
+description: "Around 1250 during the Song dynasty, the Pang clan established their ancestral settlement in Fanling Wai, laying the foundation for a durable agricultural community in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

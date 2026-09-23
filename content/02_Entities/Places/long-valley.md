@@ -3,6 +3,7 @@ title: "Long Valley (塱原)"
 title_zh: "塱原"
 tags: ["ai-draft", "biodiversity", "environmental-history", "new-territories", "place", "transportation", "wetlands"]
 summary: "Long Valley is a significant freshwater wetland and agricultural area in the Northern New Territories, recognized both for its biodiversity and its complex integration into regional infrastructure development."
+description: "Long Valley is a significant freshwater wetland and agricultural area in the Northern New Territories, recognized both for its biodiversity and its complex integration into regional infrastructure development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

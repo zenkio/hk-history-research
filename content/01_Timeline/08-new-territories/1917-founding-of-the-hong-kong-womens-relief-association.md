@@ -6,6 +6,7 @@ year: 1917
 era: "The New Territories lease and the early 20th century"
 tags: ["1917", "ai-draft", "colonial-history", "hong-kong-1917", "new-territories", "philanthropy", "social-welfare", "womens-history", "world-war-i"]
 summary: "In 1917, the Hong Kong Women's Relief Association was established to coordinate female charitable efforts, marking a significant evolution in colonial social welfare."
+description: "In 1917, the Hong Kong Women's Relief Association was established to coordinate female charitable efforts, marking a significant evolution in colonial social welfare."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

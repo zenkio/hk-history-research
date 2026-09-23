@@ -6,6 +6,7 @@ year: 2013
 era: "Political contention and protest"
 tags: ["2013", "2013-controversy", "ai-draft", "cantonese", "contention", "education-bureau", "hong-kong-identity", "language-policy"]
 summary: "In 2013, a government initiative to promote Mandarin in local schools triggered a widespread public backlash, highlighting deep-seated anxieties over the preservation of Cantonese as the core of Hong Kong's linguistic and cultural identity."
+description: "In 2013, a government initiative to promote Mandarin in local schools triggered a widespread public backlash, highlighting deep-seated anxieties over the preservation of Cantonese as the core of Hong Kong's linguistic…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

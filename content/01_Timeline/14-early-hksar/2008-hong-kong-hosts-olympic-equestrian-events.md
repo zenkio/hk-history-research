@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "beijing-olympics", "early-hksar", "equestrian-events", "one-country-two-systems", "patriotism"]
 summary: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the city."
+description: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

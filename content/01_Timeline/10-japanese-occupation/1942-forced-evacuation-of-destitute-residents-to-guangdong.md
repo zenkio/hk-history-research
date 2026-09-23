@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "forced-evacuation", "hong-kong-history", "japanese-occupation", "refugees", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, occupation authorities forcibly deported over one million starving urban residents across the border to mainland China to alleviate severe local food shortages."
+description: "During the Japanese occupation of Hong Kong, occupation authorities forcibly deported over one million starving urban residents across the border to mainland China to alleviate severe local food shortages."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

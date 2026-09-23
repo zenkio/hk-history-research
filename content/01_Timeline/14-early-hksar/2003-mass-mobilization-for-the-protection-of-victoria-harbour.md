@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "early-hksar", "environmental-activism", "hksar-history", "judicial-review", "urban-planning", "victoria-harbour"]
 summary: "In early 2003, the Society for Protection of the Harbour achieved a landmark legal victory against the Hong Kong government, marking a pivotal moment in the city's civic environmentalism."
+description: "In early 2003, the Society for Protection of the Harbour achieved a landmark legal victory against the Hong Kong government, marking a pivotal moment in the city's civic environmentalism."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

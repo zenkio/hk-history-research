@@ -3,6 +3,7 @@ title: "Hau Clan Ancestors (侯氏祖先)"
 title_zh: "侯氏祖先"
 tags: ["ai-draft", "five-great-clans", "hau-clan", "ho-sheung-heung", "hong-kong-history", "new-territories", "person"]
 summary: "The Hau clan ancestors were among the earliest settlers in the New Territories, establishing the village of Ho Sheung Heung during the Southern Song dynasty."
+description: "The Hau clan ancestors were among the earliest settlers in the New Territories, establishing the village of Ho Sheung Heung during the Southern Song dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

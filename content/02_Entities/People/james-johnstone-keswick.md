@@ -3,6 +3,7 @@ title: "James Johnstone Keswick (堅忌威)"
 title_zh: "堅忌威"
 tags: ["ai-draft", "colonial-history", "jardine-matheson", "legislative-council", "nineteenth-century-hong-kong", "person", "praya-reclamation"]
 summary: "James Johnstone Keswick was a prominent taipan of Jardine, Matheson & Co. who played a pivotal role in the commercial and infrastructural development of colonial Hong Kong, most notably the Praya Reclamation Scheme."
+description: "James Johnstone Keswick was a prominent taipan of Jardine, Matheson & Co. who played a pivotal role in the commercial and infrastructural development of colonial Hong Kong, most notably the Praya Reclamation Scheme."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

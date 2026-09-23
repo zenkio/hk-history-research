@@ -6,6 +6,7 @@ year: 1884
 era: "Kowloon and the Victorian colony"
 tags: ["1884", "ai-draft", "colonial-history", "happy-valley", "hong-kong-jockey-club", "horse-racing", "victorian-colony", "victorian-era"]
 summary: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
+description: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

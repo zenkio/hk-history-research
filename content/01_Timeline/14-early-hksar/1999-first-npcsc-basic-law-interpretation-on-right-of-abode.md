@@ -6,6 +6,7 @@ year: 1999
 era: "The early HKSAR"
 tags: ["1999", "ai-draft", "basic-law", "early-hksar", "judicial-independence", "npcsc-interpretation", "one-country-two-systems", "right-of-abode"]
 summary: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for mainland-born children and sparking intense debate over judicial independence and the 'One Country, Two Systems' framework."
+description: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

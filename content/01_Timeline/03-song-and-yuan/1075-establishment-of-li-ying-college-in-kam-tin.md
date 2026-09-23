@@ -6,6 +6,7 @@ year: 1075
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1075", "ai-draft", "confucian-education", "imperial-examinations", "kam-tin", "lineage-history", "song-and-yuan", "song-dynasty"]
 summary: "Around **1075**, the region's first formal study hall, Li-Ying College, was established in Kam Tin, introducing Confucian education and imperial examination preparation to local lineages."
+description: "Around 1075, the region's first formal study hall, Li-Ying College, was established in Kam Tin, introducing Confucian education and imperial examination preparation to local lineages."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

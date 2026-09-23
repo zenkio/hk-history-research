@@ -3,6 +3,7 @@ title: "Qingdao (青島)"
 title_zh: "青島"
 tags: ["ai-draft", "chinese-labour-corps", "colonial-era", "first-world-war", "hong-kong-history", "place", "qingdao"]
 summary: "Qingdao was a German-held port whose capture by Allied forces during World War I involved a contingent of the Hong Kong-based Chinese Labour Corps and influenced the colonial administration's wartime policies."
+description: "Qingdao was a German-held port whose capture by Allied forces during World War I involved a contingent of the Hong Kong-based Chinese Labour Corps and influenced the colonial administration's wartime policies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

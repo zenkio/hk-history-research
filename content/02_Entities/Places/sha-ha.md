@@ -3,6 +3,7 @@ title: "Sha Ha (沙下)"
 title_zh: "沙下"
 tags: ["ai-draft", "archaeology", "baiyue", "maritime-history", "neolithic", "place", "sai-kung"]
 summary: "Sha Ha is a significant archaeological site in Sai Kung, representing a long-term habitation area that provides critical insights into the maritime and technological history of early Hong Kong."
+description: "Sha Ha is a significant archaeological site in Sai Kung, representing a long-term habitation area that provides critical insights into the maritime and technological history of early Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Chek Chu (赤柱)"
 title_zh: "赤柱"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "maritime-history", "place", "southern-district", "stanley"]
 summary: "Stanley, historically known as Chek Chu, is a peninsula on the southern coast of Hong Kong Island that served as a significant early settlement and an administrative center during the formative years of British colonial rule."
+description: "Stanley, historically known as Chek Chu, is a peninsula on the southern coast of Hong Kong Island that served as a significant early settlement and an administrative center during the formative years of British colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

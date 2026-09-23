@@ -6,6 +6,7 @@ year: 1976
 era: "Riots and the MacLehose reforms"
 tags: ["1970s", "1976", "ai-draft", "home-ownership-scheme", "housing-policy", "maclehose-reforms", "public-housing", "riots-and-reform"]
 summary: "On December 28, 1976, the Hong Kong government announced the launch of the Home Ownership Scheme to help lower-to-middle income families purchase their own apartments, marking a major shift in local housing policy."
+description: "On December 28, 1976, the Hong Kong government announced the launch of the Home Ownership Scheme to help lower-to-middle income families purchase their own apartments, marking a major shift in local housing policy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

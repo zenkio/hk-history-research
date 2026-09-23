@@ -5,6 +5,7 @@ year: 850
 era: "Imperial frontier: Qin to Tang"
 tags: ["850", "ai-draft", "archaeology", "changsha-ware", "global-trade", "maritime-silk-road", "qin-to-tang", "tang-dynasty"]
 summary: "During the mid-Tang dynasty around c. **850**, the region encompassing modern Hong Kong served as a vital maritime replenishment stop in the burgeoning global ceramic trade, as evidenced by archaeological finds of Changsha ware."
+description: "During the mid-Tang dynasty around c."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

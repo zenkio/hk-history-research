@@ -3,6 +3,7 @@ title: "Cecil Harcourt (夏愨)"
 title_zh: "夏愨"
 tags: ["ai-draft", "british-administration", "cecil-harcourt", "japanese-occupation", "person", "royal-navy", "world-war-ii"]
 summary: "Admiral Sir Cecil Harcourt was the Royal Navy commander who accepted the Japanese surrender of Hong Kong and established the post-war British military administration in August **1945**."
+description: "Admiral Sir Cecil Harcourt was the Royal Navy commander who accepted the Japanese surrender of Hong Kong and established the post-war British military administration in August 1945."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

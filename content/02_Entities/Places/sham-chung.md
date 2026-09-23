@@ -3,6 +3,7 @@ title: "Sham Chung (深涌)"
 title_zh: "深涌"
 tags: ["ai-draft", "conservation", "hakka-culture", "new-territories", "place", "rural-history", "sai-kung"]
 summary: "Sham Chung is a rural area on the Sai Kung Peninsula known for its historical Hakka settlements and complex debates surrounding land development and conservation."
+description: "Sham Chung is a rural area on the Sai Kung Peninsula known for its historical Hakka settlements and complex debates surrounding land development and conservation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2016
 era: "Political contention and protest"
 tags: ["2016", "ai-draft", "basic-law", "beijing-intervention", "contention", "disqualification", "legislative-council", "localism", "oath-taking-controversy"]
 summary: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to their disqualification."
+description: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

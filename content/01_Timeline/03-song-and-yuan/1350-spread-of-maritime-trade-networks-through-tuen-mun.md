@@ -6,6 +6,7 @@ year: 1350
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1350", "ai-draft", "economic-history", "maritime-trade", "pearl-river-delta", "song-and-yuan", "tuen-mun", "yuan-dynasty"]
 summary: "During the mid-14th century, Tuen Mun flourished as an important maritime port of call along international trade routes linking Southeast Asia and the Chinese coast."
+description: "During the mid-14th century, Tuen Mun flourished as an important maritime port of call along international trade routes linking Southeast Asia and the Chinese coast."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

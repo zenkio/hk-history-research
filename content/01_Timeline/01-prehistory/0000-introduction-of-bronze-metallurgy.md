@@ -5,6 +5,7 @@ year: -1500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "double-molds", "metallurgy", "prehistory"]
 summary: "Around **c. 1500 BCE**, local communities in the Hong Kong region began adopting bronze-casting technology, marking a significant technological shift during the Bronze Age."
+description: "Around c. 1500 BCE, local communities in the Hong Kong region began adopting bronze-casting technology, marking a significant technological shift during the Bronze Age."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

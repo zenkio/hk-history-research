@@ -6,6 +6,7 @@ year: 1915
 era: "The New Territories lease and the early 20th century"
 tags: ["1915", "ai-draft", "colonial-infrastructure", "maritime-history", "mong-kok", "new-territories", "tanka", "typhoon-shelter"]
 summary: "In 1915, the completion of the Mong Kok Tsui Typhoon Shelter provided essential maritime infrastructure following the catastrophic 1906 typhoon, offering refuge to the marginalized boat-dwelling Tanka population."
+description: "In 1915, the completion of the Mong Kok Tsui Typhoon Shelter provided essential maritime infrastructure following the catastrophic 1906 typhoon, offering refuge to the marginalized boat-dwelling Tanka population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

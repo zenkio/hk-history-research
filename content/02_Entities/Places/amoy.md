@@ -3,6 +3,7 @@ title: "Amoy (廈門)"
 title_zh: "廈門"
 tags: ["ai-draft", "colonial-history", "first-opium-war", "maritime-trade", "place", "sir-henry-pottinger", "treaty-ports"]
 summary: "Amoy was a pivotal treaty port and logistics hub that served as a critical staging ground for British naval and diplomatic operations leading to the establishment of Hong Kong as a colony."
+description: "Amoy was a pivotal treaty port and logistics hub that served as a critical staging ground for British naval and diplomatic operations leading to the establishment of Hong Kong as a colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

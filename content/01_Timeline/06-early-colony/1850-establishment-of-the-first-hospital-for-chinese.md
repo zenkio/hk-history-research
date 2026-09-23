@@ -6,6 +6,7 @@ year: 1850
 era: "The early colony"
 tags: ["1850", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "public-health", "social-welfare", "western-medicine"]
 summary: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
+description: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

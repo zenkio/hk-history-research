@@ -5,6 +5,7 @@ year: -6000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archipelago", "geological-history", "holocene", "prehistory", "sea-level-rise"]
 summary: "Around **6000 BCE**, post-glacial global warming caused massive sea level rises that submerged low-lying river valleys, transforming what was once an inland extension of the Guangdong mainland into Hong Kong's characteristic rugged archipelago and sheltered bays."
+description: "Around 6000 BCE, post-glacial global warming caused massive sea level rises that submerged low-lying river valleys, transforming what was once an inland extension of the Guangdong mainland into Hong Kong's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

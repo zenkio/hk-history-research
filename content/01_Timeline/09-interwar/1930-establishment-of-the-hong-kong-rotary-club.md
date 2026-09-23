@@ -6,6 +6,7 @@ year: 1930
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1930", "ai-draft", "business-history", "colonial-history", "interwar", "interwar-history", "mercantile-class", "rotary-club", "social-development"]
 summary: "In 1930, the Hong Kong Rotary Club was inaugurated as the first of its kind in the region, serving as a formal bridge for professional interaction between international expatriates and local Chinese business leaders."
+description: "In 1930, the Hong Kong Rotary Club was inaugurated as the first of its kind in the region, serving as a formal bridge for professional interaction between international expatriates and local Chinese business leaders."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

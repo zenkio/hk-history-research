@@ -3,6 +3,7 @@ title: "Starry Lee (李慧琼)"
 title_zh: "李慧琼"
 tags: ["ai-draft", "dab", "hong-kong-politics", "legislative-council", "person", "pro-establishment", "starry-lee"]
 summary: "Starry Lee is a prominent Hong Kong politician and leader of the Democratic Alliance for the Betterment and Progress of Hong Kong (DAB) who has played a central role in the city's legislative and electoral developments."
+description: "Starry Lee is a prominent Hong Kong politician and leader of the Democratic Alliance for the Betterment and Progress of Hong Kong (DAB) who has played a central role in the city's legislative and electoral developments."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "contention", "hong-kong-history", "hong-kong-national-party", "localism", "national-security", "societies-ordinance"]
 summary: "On September 24, 2018, the Hong Kong government officially banned the pro-independence Hong Kong National Party under the Societies Ordinance, marking the first time a political organization was outlawed since the 1997 handover."
+description: "On September 24, 2018, the Hong Kong government officially banned the pro-independence Hong Kong National Party under the Societies Ordinance, marking the first time a political organization was outlawed since the 1997…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

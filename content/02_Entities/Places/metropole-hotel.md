@@ -3,6 +3,7 @@ title: "Metropole Hotel (京華國際酒店)"
 title_zh: "京華國際酒店"
 tags: ["ai-draft", "epidemiology", "history-of-hong-kong", "kowloon", "place", "public-health", "sars"]
 summary: "The Metropole Hotel is a commercial hotel in Waterloo Road, Kowloon, that gained historical significance as a primary site of transmission during the 2003 SARS outbreak."
+description: "The Metropole Hotel is a commercial hotel in Waterloo Road, Kowloon, that gained historical significance as a primary site of transmission during the 2003 SARS outbreak."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

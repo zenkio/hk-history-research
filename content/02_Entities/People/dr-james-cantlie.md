@@ -3,6 +3,7 @@ title: "Dr. James Cantlie (康德黎)"
 title_zh: "康德黎"
 tags: ["ai-draft", "british-colony", "dr-james-cantlie", "hong-kong-college-of-medicine", "medical-history", "person", "sun-yat-sen"]
 summary: "Dr. James Cantlie was a British physician and co-founder of the Hong Kong College of Medicine for Chinese who played a pivotal role in the early medical education of Sun Yat-sen."
+description: "Dr. James Cantlie was a British physician and co-founder of the Hong Kong College of Medicine for Chinese who played a pivotal role in the early medical education of Sun Yat-sen."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

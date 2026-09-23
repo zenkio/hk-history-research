@@ -3,6 +3,7 @@ title: "Central Police Station Compound (中區警署建築群)"
 title_zh: "中區警署建築群"
 tags: ["ai-draft", "architecture", "central", "colonial-history", "heritage-conservation", "law-enforcement", "place"]
 summary: "The Central Police Station Compound served as the historic heart of law enforcement and colonial administration in Hong Kong, and its later expansion reflects evolving debates over heritage preservation and urban development."
+description: "The Central Police Station Compound served as the historic heart of law enforcement and colonial administration in Hong Kong, and its later expansion reflects evolving debates over heritage preservation and urban…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

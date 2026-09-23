@@ -5,6 +5,7 @@ year: -500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "metallurgy", "prehistory", "yue-culture"]
 summary: "Between 500 BCE and 300 BCE, local communities in Hong Kong transitioned from imported bronze artifacts to local production, indicating an evolution in regional technological capability."
+description: "Between 500 BCE and 300 BCE, local communities in Hong Kong transitioned from imported bronze artifacts to local production, indicating an evolution in regional technological capability."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

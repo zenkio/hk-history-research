@@ -6,6 +6,7 @@ year: 1110
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1110", "ai-draft", "deep-bay", "local-industry", "maritime-history", "oyster-farming", "song-and-yuan", "song-dynasty"]
 summary: "During the Northern Song dynasty, local coastal communities in Deep Bay pioneered commercial oyster cultivation, establishing a foundational marine industry that endured for centuries."
+description: "During the Northern Song dynasty, local coastal communities in Deep Bay pioneered commercial oyster cultivation, establishing a foundational marine industry that endured for centuries."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

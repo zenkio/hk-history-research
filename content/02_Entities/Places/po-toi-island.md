@@ -3,6 +3,7 @@ title: "Po Toi Island (蒲台島)"
 title_zh: "蒲台島"
 tags: ["ai-draft", "archaeology", "hong-kong-geography", "islands", "maritime-history", "place", "po-toi"]
 summary: "Po Toi Island is the southernmost island of Hong Kong, known for its rugged granite landscape, historic village settlements, and ancient coastal rock carvings."
+description: "Po Toi Island is the southernmost island of Hong Kong, known for its rugged granite landscape, historic village settlements, and ancient coastal rock carvings."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1643
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1643", "ai-draft", "economic-history", "lantau-island", "ming-and-qing", "ming-dynasty", "qing-dynasty", "silver-mining"]
 summary: "In 1643, official state-directed silver mining operations commenced at Silvermine Bay on Lantau Island, precipitating intense taxation disputes and friction between incoming miners and local agricultural communities during the volatile transition from the Ming to the Qing dynasty."
+description: "In 1643, official state-directed silver mining operations commenced at Silvermine Bay on Lantau Island, precipitating intense taxation disputes and friction between incoming miners and local agricultural communities…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

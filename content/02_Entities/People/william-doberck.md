@@ -3,6 +3,7 @@ title: "William Doberck (杜佩克)"
 title_zh: "杜佩克"
 tags: ["ai-draft", "colonial-history", "hong-kong-observatory", "meteorology", "person", "scientific-history", "typhoon-1906"]
 summary: "William Doberck was the inaugural Director of the Hong Kong Observatory and a pioneering figure in the development of meteorological and magnetic science in the territory."
+description: "William Doberck was the inaugural Director of the Hong Kong Observatory and a pioneering figure in the development of meteorological and magnetic science in the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

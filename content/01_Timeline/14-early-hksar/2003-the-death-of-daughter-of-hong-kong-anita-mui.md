@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "anita-mui", "cantopop", "early-hksar", "hksar-history", "hong-kong-cinema"]
 summary: "The passing of iconic singer and actress Anita Mui on December 30, 2003, deeply mourned by the public, capped off a particularly tragic year for Hong Kong and marked a profound milestone in the collective memory of the territory."
+description: "The passing of iconic singer and actress Anita Mui on December 30, 2003, deeply mourned by the public, capped off a particularly tragic year for Hong Kong and marked a profound milestone in the collective memory of the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

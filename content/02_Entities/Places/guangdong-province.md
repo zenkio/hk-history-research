@@ -3,6 +3,7 @@ title: "Guangdong Province (廣東省)"
 title_zh: "廣東省"
 tags: ["administrative-geography", "ai-draft", "guangdong", "hong-kong-history", "ming-dynasty", "place", "xin-an-county"]
 summary: "Guangdong is the coastal province of South China that historically encompasses the territory of Hong Kong, serving as the administrative, cultural, and geographic cradle of the region."
+description: "Guangdong is the coastal province of South China that historically encompasses the territory of Hong Kong, serving as the administrative, cultural, and geographic cradle of the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

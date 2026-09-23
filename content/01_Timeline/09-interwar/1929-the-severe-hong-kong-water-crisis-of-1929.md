@@ -6,6 +6,7 @@ year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1929", "ai-draft", "colonial-history", "drought", "infrastructure", "interwar", "water-crisis"]
 summary: "An acute drought in 1929 triggered severe water rationing and emergency water imports by sea to Hong Kong, exposing critical infrastructure vulnerabilities and accelerating long-term reservoir development."
+description: "An acute drought in 1929 triggered severe water rationing and emergency water imports by sea to Hong Kong, exposing critical infrastructure vulnerabilities and accelerating long-term reservoir development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

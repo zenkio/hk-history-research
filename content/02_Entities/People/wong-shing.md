@@ -3,6 +3,7 @@ title: "Wong Shing (黃勝)"
 title_zh: "黃勝"
 tags: ["ai-draft", "colonial-era", "education", "hong-kong-history", "journalism", "person", "public-service"]
 summary: "Wong Shing was a prominent nineteenth-century educator, journalist, and government official who served as a vital bridge between the British colonial administration and the local Chinese community in Hong Kong."
+description: "Wong Shing was a prominent nineteenth-century educator, journalist, and government official who served as a vital bridge between the British colonial administration and the local Chinese community in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1786
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1786", "ai-draft", "community-defense", "fanling", "kun-lung-wai", "ming-and-qing", "qing-dynasty", "tang-clan", "walled-village"]
 summary: "In 1786, the Tang clan of Fanling reinforced and expanded the defensive walls and gates of Kun Lung Wai, illustrating the persistent need for localized protection in the turbulent coastal regions of the Qing Empire."
+description: "In 1786, the Tang clan of Fanling reinforced and expanded the defensive walls and gates of Kun Lung Wai, illustrating the persistent need for localized protection in the turbulent coastal regions of the Qing Empire."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1871
 era: "Kowloon and the Victorian colony"
 tags: ["1871", "ai-draft", "colonial-history", "hong-kong-trade", "nineteenth-century", "public-health", "urban-development", "victorian-colony"]
 summary: "In 1871, the completion of the Western Market marked a pivotal shift in the colonial administration's efforts to regulate urban commerce and sanitation within the growing Chinese business district."
+description: "In 1871, the completion of the Western Market marked a pivotal shift in the colonial administration's efforts to regulate urban commerce and sanitation within the growing Chinese business district."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

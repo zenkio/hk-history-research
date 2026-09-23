@@ -5,6 +5,7 @@ year: 589
 era: "Imperial frontier: Qin to Tang"
 tags: ["589", "administrative-consolidation", "ai-draft", "imperial-frontier", "maritime-trade", "qin-to-tang", "sui-dynasty", "taxation"]
 summary: "In **589**, the Sui Dynasty reunified China, bringing the Hong Kong region under renewed centralized administrative control and establishing early foundations for taxation on regional maritime trade."
+description: "In 589, the Sui Dynasty reunified China, bringing the Hong Kong region under renewed centralized administrative control and establishing early foundations for taxation on regional maritime trade."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

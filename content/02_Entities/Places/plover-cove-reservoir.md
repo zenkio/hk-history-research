@@ -3,6 +3,7 @@ title: "Plover Cove Reservoir (船灣淡水湖)"
 title_zh: "船灣淡水湖"
 tags: ["ai-draft", "colonial-history", "engineering", "infrastructure", "new-territories", "place", "water-supply"]
 summary: "Plover Cove Reservoir is the world's first major reservoir built by damming a coastal inlet, serving as a critical infrastructure response to Hong Kong's mid-20th-century water crises."
+description: "Plover Cove Reservoir is the world's first major reservoir built by damming a coastal inlet, serving as a critical infrastructure response to Hong Kong's mid-20th-century water crises."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

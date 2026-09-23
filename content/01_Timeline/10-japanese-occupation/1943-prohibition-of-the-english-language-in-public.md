@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "colonial-history", "hong-kong-history", "japanese-occupation", "linguistic-policy", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, authorities implemented a policy to suppress the English language, aiming to dismantle colonial infrastructure and enforce cultural assimilation."
+description: "During the Japanese occupation of Hong Kong, authorities implemented a policy to suppress the English language, aiming to dismantle colonial infrastructure and enforce cultural assimilation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

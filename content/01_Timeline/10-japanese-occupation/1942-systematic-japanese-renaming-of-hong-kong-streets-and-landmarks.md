@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "colonial-history", "japanese-occupation", "urban-history", "world-war-ii"]
 summary: "In April 1942, the Japanese military administration systematically replaced British colonial place names in Hong Kong with Japanese titles to erase Western influence and promote imperial assimilation."
+description: "In April 1942, the Japanese military administration systematically replaced British colonial place names in Hong Kong with Japanese titles to erase Western influence and promote imperial assimilation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

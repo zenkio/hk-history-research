@@ -3,6 +3,7 @@ title: "Macao (澳門)"
 title_zh: "澳門"
 tags: ["ai-draft", "british-imperialism", "first-opium-war", "macao", "pearl-river-delta", "place", "portuguese-history"]
 summary: "Macao was a Portuguese trading post near the Pearl River Delta that served as a vital precursor, refuge, and diplomatic base for British operations leading to the establishment of Hong Kong."
+description: "Macao was a Portuguese trading post near the Pearl River Delta that served as a vital precursor, refuge, and diplomatic base for British operations leading to the establishment of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

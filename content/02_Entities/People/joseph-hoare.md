@@ -3,6 +3,7 @@ title: "Joseph Hoare (霍約瑟)"
 title_zh: "霍約瑟"
 tags: ["ai-draft", "anglican-church", "bishop-of-victoria", "education-history", "person", "st-stephens-college"]
 summary: "Joseph Hoare was an Anglican bishop whose educational and ecclesiastical initiatives contributed to the early development of secondary schooling and Christian institutions in Hong Kong."
+description: "Joseph Hoare was an Anglican bishop whose educational and ecclesiastical initiatives contributed to the early development of secondary schooling and Christian institutions in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

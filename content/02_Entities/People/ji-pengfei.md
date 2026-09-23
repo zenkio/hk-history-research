@@ -3,6 +3,7 @@ title: "Ji Pengfei (姬鵬飛)"
 title_zh: "姬鵬飛"
 tags: ["ai-draft", "basic-law", "constitutional-history", "hong-kong-history", "ji-pengfei", "person", "sino-british-negotiations"]
 summary: "Ji Pengfei was a senior Chinese diplomat and politician who served as the Chairman of the Drafting Committee for the Basic Law of the Hong Kong Special Administrative Region."
+description: "Ji Pengfei was a senior Chinese diplomat and politician who served as the Chairman of the Drafting Committee for the Basic Law of the Hong Kong Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "William Jardine (渣甸)"
 title_zh: "渣甸"
 tags: ["ai-draft", "colonial-history", "hong-kong-founding", "jardine-matheson", "nineteenth-century", "opium-trade", "person"]
 summary: "William Jardine (渣甸) was a Scottish merchant and co-founder of Jardine, Matheson & Co., whose aggressive advocacy for British intervention in China played a pivotal role in the outbreak of the First Opium War and the subsequent establishment of Hong Kong as a British colony."
+description: "William Jardine (渣甸) was a Scottish merchant and co-founder of Jardine, Matheson & Co., whose aggressive advocacy for British intervention in China played a pivotal role in the outbreak of the First Opium War and the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Edinburgh Place Ferry Pier (愛丁堡廣場碼頭)"
 title_zh: "愛丁堡廣場碼頭"
 tags: ["ai-draft", "central-district", "heritage-conservation", "hong-kong-history", "place", "star-ferry", "urban-planning"]
 summary: "The third-generation Star Ferry pier was a prominent modernist landmark in Central that became a focal point for Hong Kong's heritage conservation movement."
+description: "The third-generation Star Ferry pier was a prominent modernist landmark in Central that became a focal point for Hong Kong's heritage conservation movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Hubert Roy Gittins (吉廷斯)"
 title_zh: "吉廷斯"
 tags: ["ai-draft", "british-administration", "colonial-history", "hong-kong-education", "person", "post-war-reconstruction", "twentieth-century"]
 summary: "Hubert Roy Gittins was a colonial education official whose namesake report played a pivotal role in shaping the post-war educational infrastructure of Hong Kong."
+description: "Hubert Roy Gittins was a colonial education official whose namesake report played a pivotal role in shaping the post-war educational infrastructure of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -2000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "burials", "lamma-island", "neolithic", "prehistory"]
 summary: "Archaeological excavations at Tung Wan Tsai South on Lamma Island have uncovered human remains dating back to approximately 2000 BCE, offering vital physical and genetic insights into Hong Kong's prehistoric inhabitants."
+description: "Archaeological excavations at Tung Wan Tsai South on Lamma Island have uncovered human remains dating back to approximately 2000 BCE, offering vital physical and genetic insights into Hong Kong's prehistoric…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2000
 era: "The early HKSAR"
 tags: ["2000", "3-3-4-system", "ai-draft", "curriculum-development", "early-hksar", "education-reform", "hksar-history", "public-policy"]
 summary: "In the early 2000s, the Hong Kong government initiated a fundamental restructuring of its education system, transitioning from a British-influenced model to the 3-3-4 structure."
+description: "In the early 2000s, the Hong Kong government initiated a fundamental restructuring of its education system, transitioning from a British-influenced model to the 3-3-4 structure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1967
 era: "Riots and the MacLehose reforms"
 tags: ["1967", "1967-riots", "ai-draft", "colonial-history", "education-reform", "gittins-report", "riots-and-reform", "social-welfare"]
 summary: "Commissioned in the wake of social unrest, the 1967 Gittins Report exposed severe deficiencies in Hong Kong's primary education system and laid the groundwork for future reforms aimed at improving social stability."
+description: "Commissioned in the wake of social unrest, the 1967 Gittins Report exposed severe deficiencies in Hong Kong's primary education system and laid the groundwork for future reforms aimed at improving social stability."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

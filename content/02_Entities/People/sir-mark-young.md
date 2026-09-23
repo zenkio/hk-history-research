@@ -3,6 +3,7 @@ title: "Sir Mark Young (楊慕琦)"
 title_zh: "楊慕琦"
 tags: ["ai-draft", "british-history", "colonial-era", "governor", "person", "world-war-two", "young-plan"]
 summary: "Sir Mark Young was the 21st Governor of Hong Kong, known for his leadership during the defense of the colony in 1941 and his post-war proposal for democratic reform known as the Young Plan."
+description: "Sir Mark Young was the 21st Governor of Hong Kong, known for his leadership during the defense of the colony in 1941 and his post-war proposal for democratic reform known as the Young Plan."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

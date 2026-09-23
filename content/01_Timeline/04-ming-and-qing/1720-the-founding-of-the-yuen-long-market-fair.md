@@ -6,6 +6,7 @@ year: 1720
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1720", "agrarian-reform", "ai-draft", "economic-history", "market-fair", "ming-and-qing", "new-territories", "qing-dynasty", "tang-clan"]
 summary: "Around 1720, the establishment of the Yuen Long Market Fair signaled a shift toward commercialized agricultural production in the New Territories."
+description: "Around 1720, the establishment of the Yuen Long Market Fair signaled a shift toward commercialized agricultural production in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

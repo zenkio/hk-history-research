@@ -3,6 +3,7 @@ title: "James Matheson (麥地臣)"
 title_zh: "麥地臣"
 tags: ["ai-draft", "british-merchants", "colonial-history", "hong-kong-origins", "jardine-matheson", "opium-trade", "person"]
 summary: "James Matheson was a prominent Scottish merchant and co-founder of Jardine, Matheson & Co. who played a foundational role in the establishment of British commercial interests in Hong Kong."
+description: "James Matheson was a prominent Scottish merchant and co-founder of Jardine, Matheson & Co. who played a foundational role in the establishment of British commercial interests in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

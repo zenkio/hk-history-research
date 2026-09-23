@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "ai-draft", "china-mail", "colonial-press", "early-colony", "early-hong-kong", "media-history"]
 summary: "The establishment of The China Mail in 1845 marked a major milestone in the development of Hong Kong's early colonial press, providing a vital medium for commercial news and public discourse."
+description: "The establishment of The China Mail in 1845 marked a major milestone in the development of Hong Kong's early colonial press, providing a vital medium for commercial news and public discourse."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

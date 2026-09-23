@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "bunkers", "forced-labor", "japanese-occupation", "world-war-ii"]
 summary: "In June 1945, facing the increasing likelihood of an Allied amphibious assault, the Japanese occupation authorities instituted a mass civilian labor draft to construct extensive underground defense networks and hillside bunkers across Hong Kong."
+description: "In June 1945, facing the increasing likelihood of an Allied amphibious assault, the Japanese occupation authorities instituted a mass civilian labor draft to construct extensive underground defense networks and hillside…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

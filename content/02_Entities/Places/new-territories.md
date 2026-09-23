@@ -3,6 +3,7 @@ title: "New Territories (新界)"
 title_zh: "新界"
 tags: ["ai-draft", "colonial-history", "five-great-clans", "local-heritage", "new-territories", "place", "walled-villages"]
 summary: "The New Territories form the largest of Hong Kong's three main regions, serving as the historical homeland for the region's major indigenous clans and later becoming a crucial zone for urbanization and cross-border integration."
+description: "The New Territories form the largest of Hong Kong's three main regions, serving as the historical homeland for the region's major indigenous clans and later becoming a crucial zone for urbanization and cross-border…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

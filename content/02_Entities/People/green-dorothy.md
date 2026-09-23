@@ -3,6 +3,7 @@ title: "Green, Dorothy (格林)"
 title_zh: "格林"
 tags: ["ai-draft", "civil-society", "colonial-era", "hong-kong-council-women", "person", "womens-history"]
 summary: "Dorothy Green was an activist and educator connected to the early development of women's rights advocacy in colonial Hong Kong."
+description: "Dorothy Green was an activist and educator connected to the early development of women's rights advocacy in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Happy Valley (跑馬地)"
 title_zh: "跑馬地"
 tags: ["ai-draft", "colonial-era", "happy-valley", "hong-kong-history", "hong-kong-tramways", "place", "urban-development"]
 summary: "Happy Valley is a historic neighborhood on Hong Kong Island known for its long-standing role as the centre of local horse racing and its diverse institutional landmarks."
+description: "Happy Valley is a historic neighborhood on Hong Kong Island known for its long-standing role as the centre of local horse racing and its diverse institutional landmarks."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

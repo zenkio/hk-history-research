@@ -3,6 +3,7 @@ title: "Victoria Park (維多利亞公園)"
 title_zh: "維多利亞公園"
 tags: ["ai-draft", "causeway-bay", "civil-society", "hong-kong-history", "place", "protests", "victoria-park"]
 summary: "Victoria Park is Hong Kong's largest public park on Hong Kong Island, serving as a primary civic space for mass gatherings, political protests, and cultural events."
+description: "Victoria Park is Hong Kong's largest public park on Hong Kong Island, serving as a primary civic space for mass gatherings, political protests, and cultural events."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

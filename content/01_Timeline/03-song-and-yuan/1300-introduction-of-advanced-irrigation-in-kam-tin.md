@@ -6,6 +6,7 @@ year: 1300
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1300", "agricultural-history", "ai-draft", "clan-society", "kam-tin", "land-management", "song-and-yuan", "yuen-dynasty"]
 summary: "Around 1300, the implementation of sophisticated water management systems in Kam Tin transformed local agriculture, facilitating the expansion of permanent clan settlements in the New Territories."
+description: "Around 1300, the implementation of sophisticated water management systems in Kam Tin transformed local agriculture, facilitating the expansion of permanent clan settlements in the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

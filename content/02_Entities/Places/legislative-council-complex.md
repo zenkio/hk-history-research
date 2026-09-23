@@ -3,6 +3,7 @@ title: "Legislative Council Complex (立法會綜合大樓)"
 title_zh: "立法會綜合大樓"
 tags: ["ai-draft", "civic-action", "hong-kong-politics", "legislative-council", "place", "tamar", "urban-history"]
 summary: "The Legislative Council Complex serves as the seat of Hong Kong's legislature and stands as a central venue for political deliberation and public protest."
+description: "The Legislative Council Complex serves as the seat of Hong Kong's legislature and stands as a central venue for political deliberation and public protest."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

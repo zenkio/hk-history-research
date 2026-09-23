@@ -6,6 +6,7 @@ year: 1870
 era: "Kowloon and the Victorian colony"
 tags: ["1870", "ai-draft", "chinese-philanthropy", "colonial-history", "sheung-wan", "traditional-chinese-medicine", "tung-wah-hospital", "victorian-colony"]
 summary: "Founded in 1870 by local Chinese leaders, the Tung Wah Hospital introduced traditional Chinese medical care to colonial Hong Kong and quickly expanded into a powerful charitable and quasi-governmental institution representing the local Chinese community."
+description: "Founded in 1870 by local Chinese leaders, the Tung Wah Hospital introduced traditional Chinese medical care to colonial Hong Kong and quickly expanded into a powerful charitable and quasi-governmental institution…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

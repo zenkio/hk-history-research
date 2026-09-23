@@ -6,6 +6,7 @@ year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1929", "ai-draft", "child-labor", "colonial-history", "interwar", "mui-tsai", "social-reform", "women-and-children"]
 summary: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child servitude."
+description: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

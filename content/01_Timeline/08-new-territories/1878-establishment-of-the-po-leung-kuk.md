@@ -6,6 +6,7 @@ year: 1878
 era: "The New Territories lease and the early 20th century"
 tags: ["1878", "ai-draft", "chinese-philanthropy", "colonial-history", "human-trafficking", "new-territories", "po-leung-kuk", "social-welfare"]
 summary: "Established in November 1878, the Po Leung Kuk was founded by local Chinese elites with colonial government support to combat the rampant kidnapping and trafficking of women and children in Hong Kong."
+description: "Established in November 1878, the Po Leung Kuk was founded by local Chinese elites with colonial government support to combat the rampant kidnapping and trafficking of women and children in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

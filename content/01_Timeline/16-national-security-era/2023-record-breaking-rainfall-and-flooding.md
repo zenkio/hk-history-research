@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "climate-change", "extreme-weather", "flooding", "infrastructure", "national-security-era", "typhoon-haikui"]
 summary: "On **September 7, 2023**, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui. The unprecedented downpour caused widespread urban flooding, transport paralysis, and infrastructure damage across the territory."
+description: "On September 7, 2023, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

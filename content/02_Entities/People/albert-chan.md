@@ -3,6 +3,7 @@ title: "Albert Chan (陳偉業)"
 title_zh: "陳偉業"
 tags: ["ai-draft", "albert-chan", "democracy-movement", "hong-kong-politics", "legislative-council", "new-territories", "person"]
 summary: "Albert Chan is a prominent Hong Kong politician and former Legislative Council member known for his long-standing role in the democratic movement and his advocacy for the rights of New Territories residents."
+description: "Albert Chan is a prominent Hong Kong politician and former Legislative Council member known for his long-standing role in the democratic movement and his advocacy for the rights of New Territories residents."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

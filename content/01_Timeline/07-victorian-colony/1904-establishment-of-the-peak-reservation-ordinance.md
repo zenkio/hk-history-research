@@ -6,6 +6,7 @@ year: 1904
 era: "Kowloon and the Victorian colony"
 tags: ["1904", "ai-draft", "british-hong-kong", "colonial-history", "peak-reservation-ordinance", "racial-segregation", "urban-planning", "victorian-colony"]
 summary: "Enacted in 1904, the Peak Reservation Ordinance legally restricted Victoria Peak exclusively for European residential use, cementing deep-seated colonial social and racial stratification in Hong Kong."
+description: "Enacted in 1904, the Peak Reservation Ordinance legally restricted Victoria Peak exclusively for European residential use, cementing deep-seated colonial social and racial stratification in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "19th-century-hong-kong", "administrative-history", "ai-draft", "british-empire", "colonial-history", "first-opium-war", "opium-war"]
 summary: "In 1842, the formalization of the Colonial Secretary's Office established the administrative foundation for British rule in Hong Kong following the First Opium War."
+description: "In 1842, the formalization of the Colonial Secretary's Office established the administrative foundation for British rule in Hong Kong following the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -81
 era: "Imperial frontier: Qin to Tang"
 tags: ["agriculture", "ai-draft", "archaeology", "han-dynasty", "iron-tools", "lingnan", "qin-to-tang"]
 summary: "Around 81 BCE, the expansion of the Han dynasty's iron monopoly facilitated the introduction of durable iron implements to the Lingnan coastal region, gradually transforming local indigenous subsistence practices."
+description: "Around 81 BCE, the expansion of the Han dynasty's iron monopoly facilitated the introduction of durable iron implements to the Lingnan coastal region, gradually transforming local indigenous subsistence practices."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

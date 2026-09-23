@@ -3,6 +3,7 @@ title: "Song Emperor (宋帝)"
 title_zh: "宋帝昺"
 tags: ["ai-draft", "imperial-history", "lantau-island", "person", "song-dynasty", "southern-song", "sung-wong-toi"]
 summary: "Emperor Bing was the final ruler of the Southern Song dynasty whose brief flight through the Lantau and Kowloon regions in the late 13th century remains a significant anchor for Hong Kong's historical narrative."
+description: "Emperor Bing was the final ruler of the Southern Song dynasty whose brief flight through the Lantau and Kowloon regions in the late 13th century remains a significant anchor for Hong Kong's historical narrative."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

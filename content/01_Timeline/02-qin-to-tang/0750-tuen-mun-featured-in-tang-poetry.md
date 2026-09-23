@@ -5,6 +5,7 @@ year: 750
 era: "Imperial frontier: Qin to Tang"
 tags: ["750", "ai-draft", "frontier", "literary-history", "maritime-trade", "poetry", "qin-to-tang", "tang-dynasty"]
 summary: "Around 750 CE during the Tang dynasty, strategic locations in modern-day Hong Kong began appearing in imperial literature, transforming Tuen Mun from a remote garrison into a recognized literary frontier."
+description: "Around 750 CE during the Tang dynasty, strategic locations in modern-day Hong Kong began appearing in imperial literature, transforming Tuen Mun from a remote garrison into a recognized literary frontier."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

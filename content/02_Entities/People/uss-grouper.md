@@ -3,6 +3,7 @@ title: "USS Grouper"
 title_zh: "鱸魚號潛艇"
 tags: ["ai-draft", "hong-kong-history", "lisbon-maru", "naval-history", "person", "us-navy", "world-war-ii"]
 summary: "The USS Grouper was a United States Navy Gato-class submarine whose patrol activities in the South China Sea remain historically linked to the sinking of the Lisbon Maru."
+description: "The USS Grouper was a United States Navy Gato-class submarine whose patrol activities in the South China Sea remain historically linked to the sinking of the Lisbon Maru."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

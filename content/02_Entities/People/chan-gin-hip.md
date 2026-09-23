@@ -3,6 +3,7 @@ title: "Chan Gin-hip (陳幹業)"
 title_zh: "陳幹業"
 tags: ["ai-draft", "architecture", "heritage-conservation", "hong-kong-history", "king-yin-lei", "person"]
 summary: "Chan Gin-hip (陳幹業) is a historical figure associated with the preservation and heritage context of the Declared Monument King Yin Lei Mansion (景賢里) in Hong Kong."
+description: "Chan Gin-hip (陳幹業) is a historical figure associated with the preservation and heritage context of the Declared Monument King Yin Lei Mansion (景賢里) in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

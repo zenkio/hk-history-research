@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "charles-elliot", "colonial-history", "first-opium-war", "free-port", "opium-war", "trade"]
 summary: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
+description: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Leong Che-hung (梁智鴻)"
 title_zh: "梁智鴻"
 tags: ["ai-draft", "hku", "hong-kong-politics", "legislative-council", "medical-profession", "person", "public-health"]
 summary: "Leong Che-hung is a prominent Hong Kong medical surgeon, former politician, and public administrator who has held significant roles in the territory's healthcare and academic governance."
+description: "Leong Che-hung is a prominent Hong Kong medical surgeon, former politician, and public administrator who has held significant roles in the territory's healthcare and academic governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

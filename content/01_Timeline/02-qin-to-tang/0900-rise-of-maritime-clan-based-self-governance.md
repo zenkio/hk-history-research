@@ -5,6 +5,7 @@ year: 900
 era: "Imperial frontier: Qin to Tang"
 tags: ["900", "ai-draft", "clan-governance", "coastal-society", "historical-transition", "maritime-history", "qin-to-tang", "settlement-patterns", "tang-dynasty"]
 summary: "During the twilight of the Tang Dynasty (618–907), the weakening of imperial administration allowed coastal lineages in the Pearl River Delta to establish decentralized control over maritime trade and local resources."
+description: "During the twilight of the Tang Dynasty (618–907), the weakening of imperial administration allowed coastal lineages in the Pearl River Delta to establish decentralized control over maritime trade and local resources."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

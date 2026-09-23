@@ -3,6 +3,7 @@ title: "Heng Fa Chuen (杏花邨)"
 title_zh: "杏花邨"
 tags: ["ai-draft", "coastal-flooding", "hong-kong-island", "housing-estate", "mtr", "place", "typhoon-mangkhut"]
 summary: "Heng Fa Chuen is a major private housing estate and former MTR depot site in Chai Wan, notable for its coastal vulnerability during extreme weather events such as Typhoon Mangkhut in 2018."
+description: "Heng Fa Chuen is a major private housing estate and former MTR depot site in Chai Wan, notable for its coastal vulnerability during extreme weather events such as Typhoon Mangkhut in 2018."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

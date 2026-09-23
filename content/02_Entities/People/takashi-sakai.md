@@ -3,6 +3,7 @@ title: "Takashi Sakai (酒井隆)"
 title_zh: "酒井隆"
 tags: ["ai-draft", "battle-of-hong-kong", "japanese-occupation", "military-history", "person", "takashi-sakai", "world-war-ii"]
 summary: "Takashi Sakai was the Japanese Lieutenant General who commanded the invasion of Hong Kong in December 1941 and served as the first Governor of occupied Hong Kong."
+description: "Takashi Sakai was the Japanese Lieutenant General who commanded the invasion of Hong Kong in December 1941 and served as the first Governor of occupied Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

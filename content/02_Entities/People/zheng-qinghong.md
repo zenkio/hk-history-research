@@ -3,6 +3,7 @@ title: "Zheng Qinghong (曾慶紅)"
 title_zh: "曾慶紅"
 tags: ["ai-draft", "central-government", "hong-kong-disneyland", "hong-kong-history", "person", "prc-politics", "zeng-qinghong"]
 summary: "A senior Chinese Communist Party official who played a significant role in managing Hong Kong affairs and oversaw the development of Hong Kong Disneyland during the early 2000s."
+description: "A senior Chinese Communist Party official who played a significant role in managing Hong Kong affairs and oversaw the development of Hong Kong Disneyland during the early 2000s."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

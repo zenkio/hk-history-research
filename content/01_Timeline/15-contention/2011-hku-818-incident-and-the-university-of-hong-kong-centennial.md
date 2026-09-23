@@ -6,6 +6,7 @@ year: 2011
 era: "Political contention and protest"
 tags: ["2011", "academic-freedom", "ai-draft", "contention", "hku-818", "li-keqiang", "political-history", "student-protest", "university-autonomy"]
 summary: "The 818 Incident occurred during the University of Hong Kong's centenary celebrations, highlighting rising tensions between student activists and the government regarding the visit of mainland Chinese officials."
+description: "The 818 Incident occurred during the University of Hong Kong's centenary celebrations, highlighting rising tensions between student activists and the government regarding the visit of mainland Chinese officials."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

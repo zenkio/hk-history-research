@@ -6,6 +6,7 @@ year: 1575
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1575", "ai-draft", "che-kung-temple", "folk-religion", "ming-and-qing", "ming-dynasty", "new-territories", "plague"]
 summary: "Around **1575**, villagers in Sha Tin established the original Che Kung Temple to combat a severe plague and local unrest, reflecting early community-level ritual responses to health and social crises in the region."
+description: "Around 1575, villagers in Sha Tin established the original Che Kung Temple to combat a severe plague and local unrest, reflecting early community-level ritual responses to health and social crises in the region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

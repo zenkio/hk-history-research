@@ -3,6 +3,7 @@ title: "Wuchang (武昌)"
 title_zh: "武昌"
 tags: ["1911-uprising", "ai-draft", "chinese-history", "hong-kong-relations", "place", "sun-yat-sen", "xinhai-revolution"]
 summary: "Wuchang is a historic city in Hubei province, significant for being the site of the 1911 Wuchang Uprising that precipitated the Xinhai Revolution, an event which profoundly influenced political movements in Hong Kong."
+description: "Wuchang is a historic city in Hubei province, significant for being the site of the 1911 Wuchang Uprising that precipitated the Xinhai Revolution, an event which profoundly influenced political movements in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

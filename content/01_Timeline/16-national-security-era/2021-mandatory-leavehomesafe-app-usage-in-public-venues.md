@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "covid-19", "digital-privacy", "leave-homesafe", "national-security-era", "public-health", "surveillance"]
 summary: "On December 9, 2021, the Hong Kong government expanded the mandatory use of its 'LeaveHomeSafe' digital contact tracing application to virtually all regulated public premises, significantly shifting public health policy and intensifying local and international debates regarding digital privacy and state surveillance."
+description: "On December 9, 2021, the Hong Kong government expanded the mandatory use of its 'LeaveHomeSafe' digital contact tracing application to virtually all regulated public premises, significantly shifting public health policy…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

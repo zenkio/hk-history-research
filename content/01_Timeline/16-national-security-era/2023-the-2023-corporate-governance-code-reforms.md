@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "board-diversity", "corporate-governance", "economic-policy", "financial-regulation", "hkex", "national-security-era", "nsl-era"]
 summary: "In January 2023, the Hong Kong Exchanges and Clearing (HKEX) implemented significant revisions to its Corporate Governance Code, mandating greater board diversity and enhanced transparency for listed companies."
+description: "In January 2023, the Hong Kong Exchanges and Clearing (HKEX) implemented significant revisions to its Corporate Governance Code, mandating greater board diversity and enhanced transparency for listed companies."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1847
 era: "The early colony"
 tags: ["1847", "ai-draft", "chinese-community", "early-colony", "hollywood-road", "man-mo-temple"]
 summary: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
+description: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1374
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1374", "ai-draft", "economic-history", "forced-labor", "ming-and-qing", "ming-dynasty", "pearl-diving", "tolo-harbour"]
 summary: "In 1374, the founding Ming dynasty emperor ordered the resumption of state-managed pearl harvesting in Tolo Harbour, bringing severe economic and physical hardship to the local population."
+description: "In 1374, the founding Ming dynasty emperor ordered the resumption of state-managed pearl harvesting in Tolo Harbour, bringing severe economic and physical hardship to the local population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

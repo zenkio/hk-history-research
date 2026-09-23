@@ -3,6 +3,7 @@ title: "Pearl River Delta (珠江三角洲)"
 title_zh: "珠江三角洲"
 tags: ["ai-draft", "archaeology", "baiyue", "hong-kong-history", "maritime-culture", "pearl-river-delta", "place"]
 summary: "The Pearl River Delta is the geographic and cultural foundation of the Hong Kong region, acting as a vital conduit for maritime trade, technological diffusion, and human migration throughout southern Chinese history."
+description: "The Pearl River Delta is the geographic and cultural foundation of the Hong Kong region, acting as a vital conduit for maritime trade, technological diffusion, and human migration throughout southern Chinese history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

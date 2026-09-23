@@ -5,6 +5,7 @@ year: -4000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "lamma-island", "neolithic", "prehistory", "sham-wan"]
 summary: "Around **4000 BCE**, early Neolithic communities established coastal settlements at Sham Wan on Lamma Island, relying on marine resources and hunting."
+description: "Around 4000 BCE, early Neolithic communities established coastal settlements at Sham Wan on Lamma Island, relying on marine resources and hunting."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

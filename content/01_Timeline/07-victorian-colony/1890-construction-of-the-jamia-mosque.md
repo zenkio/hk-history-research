@@ -6,6 +6,7 @@ year: 1890
 era: "Kowloon and the Victorian colony"
 tags: ["1890", "ai-draft", "ethnic-minorities", "islam-in-hong-kong", "jamia-mosque", "shelley-street", "victorian-colony", "victorian-era"]
 summary: "In **1890**, the Jamia Mosque on Shelley Street underwent a major rebuilding and expansion to accommodate Hong Kong's growing and diverse Muslim community."
+description: "In 1890, the Jamia Mosque on Shelley Street underwent a major rebuilding and expansion to accommodate Hong Kong's growing and diverse Muslim community."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

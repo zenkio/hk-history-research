@@ -6,6 +6,7 @@ year: 1841
 era: "The early colony"
 tags: ["1841", "ai-draft", "british-imperialism", "early-colonial-history", "early-colony", "postal-service", "trade-infrastructure"]
 summary: "On August 1, 1841, the formal establishment of a postal service in Hong Kong marked a pivotal moment in the colony's development as an international trade node."
+description: "On August 1, 1841, the formal establishment of a postal service in Hong Kong marked a pivotal moment in the colony's development as an international trade node."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

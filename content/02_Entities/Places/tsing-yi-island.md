@@ -3,6 +3,7 @@ title: "Tsing Yi Island (青衣島)"
 title_zh: "青衣島"
 tags: ["ai-draft", "british-colonial-era", "local-history", "new-territories", "place", "to-clan", "tsing-yi"]
 summary: "Tsing Yi Island is an important island in Hong Kong's Tsuen Wan district that transformed from a rural fishing and farming community, historically shaped by lineages like the To clan, into a major industrial and transport hub."
+description: "Tsing Yi Island is an important island in Hong Kong's Tsuen Wan district that transformed from a rural fishing and farming community, historically shaped by lineages like the To clan, into a major industrial and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1985
 era: "Sino-British negotiations and the transition"
 tags: ["1985", "ai-draft", "basic-law", "constitutional-drafting", "decolonization", "political-history", "sino-british-negotiations", "transition"]
 summary: "In 1985, the Basic Law Consultative Committee (基本法諮詢委員會) was formed to facilitate public participation in the drafting of Hong Kong's mini-constitution following the Sino-British Joint Declaration."
+description: "In 1985, the Basic Law Consultative Committee (基本法諮詢委員會) was formed to facilitate public participation in the drafting of Hong Kong's mini-constitution following the Sino-British Joint Declaration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

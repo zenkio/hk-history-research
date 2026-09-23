@@ -3,6 +3,7 @@ title: "C. W. Jeffreys"
 title_zh: "謝菲士"
 tags: ["1937-typhoon", "ai-draft", "colonial-history", "harbour-master", "maritime-history", "natural-disaster", "person"]
 summary: "C. W. Jeffreys was a British maritime official and government figure in Hong Kong who served as the Harbour Master during the devastating 1937 typhoon."
+description: "C. W. Jeffreys was a British maritime official and government figure in Hong Kong who served as the Harbour Master during the devastating 1937 typhoon."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

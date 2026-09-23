@@ -3,6 +3,7 @@ title: "Lau Chin-shek (劉千石)"
 title_zh: "劉千石"
 tags: ["ai-draft", "hong-kong-history", "labour-movement", "lau-chin-shek", "legislative-council", "person", "trade-unions"]
 summary: "Lau Chin-shek was a prominent Hong Kong trade unionist and politician who served as a founding figure of the Hong Kong Confederation of Trade Unions and a long-time member of the Legislative Council."
+description: "Lau Chin-shek was a prominent Hong Kong trade unionist and politician who served as a founding figure of the Hong Kong Confederation of Trade Unions and a long-time member of the Legislative Council."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

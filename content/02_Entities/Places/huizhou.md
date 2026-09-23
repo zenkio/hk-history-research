@@ -3,6 +3,7 @@ title: "Huizhou (惠州)"
 title_zh: "惠州"
 tags: ["ai-draft", "colonial-hong-kong", "huizhou", "place", "qing-dynasty", "revolutionary-history", "sun-yat-sen"]
 summary: "A prefecture-level city in Guangdong province that served as the focal point for regional revolutionary activity and cross-border insurgency involving Hong Kong at the turn of the 20th century."
+description: "A prefecture-level city in Guangdong province that served as the focal point for regional revolutionary activity and cross-border insurgency involving Hong Kong at the turn of the 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

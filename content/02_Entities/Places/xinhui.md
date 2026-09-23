@@ -3,6 +3,7 @@ title: "Xinhui (新會)"
 title_zh: "新會"
 tags: ["ai-draft", "guangdong-history", "imperial-retreat", "pearl-river-delta", "place", "southern-song", "yamen"]
 summary: "A district in Guangdong Province that serves as the final site of the Southern Song dynasty court following their retreat from Hong Kong waters in 1279."
+description: "A district in Guangdong Province that serves as the final site of the Southern Song dynasty court following their retreat from Hong Kong waters in 1279."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

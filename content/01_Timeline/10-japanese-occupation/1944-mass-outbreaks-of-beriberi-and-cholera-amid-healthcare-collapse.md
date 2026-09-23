@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "beriberi", "cholera", "japanese-occupation", "malnutrition", "public-health", "world-war-two"]
 summary: "By **1944**, severe food shortages, rationing, and the collapse of municipal sanitation under the Japanese occupation triggered devastating outbreaks of beriberi and cholera throughout Hong Kong."
+description: "By 1944, severe food shortages, rationing, and the collapse of municipal sanitation under the Japanese occupation triggered devastating outbreaks of beriberi and cholera throughout Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

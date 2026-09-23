@@ -3,6 +3,7 @@ title: "Mok Clan (莫氏)"
 title_zh: "莫氏"
 tags: ["ai-draft", "hong-kong-clans", "lineage-history", "new-territories", "person", "rural-history", "sha-tau-kok"]
 summary: "The Mok Clan (莫氏) is a prominent lineage in the New Territories, notably identified as one of the early settlers and primary landholders in the Sha Tau Kok (沙頭角) region."
+description: "The Mok Clan (莫氏) is a prominent lineage in the New Territories, notably identified as one of the early settlers and primary landholders in the Sha Tau Kok (沙頭角) region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

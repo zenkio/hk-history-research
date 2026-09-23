@@ -3,6 +3,7 @@ title: "Leung Kwok-hung (梁國雄)"
 title_zh: "梁國雄"
 tags: ["ai-draft", "democracy-activism", "history", "hong-kong-politics", "legislative-council", "person", "protest-culture"]
 summary: "A prominent Hong Kong activist and former Legislative Council member known for his confrontational political style and commitment to pro-democracy and social justice causes."
+description: "A prominent Hong Kong activist and former Legislative Council member known for his confrontational political style and commitment to pro-democracy and social justice causes."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

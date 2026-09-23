@@ -3,6 +3,7 @@ title: "K. M. A. Barnett (貝納特)"
 title_zh: "貝納特"
 tags: ["ai-draft", "british-hong-kong", "colonial-history", "demography", "hong-kong-census", "person", "public-administration"]
 summary: "K. M. A. Barnett was a senior British colonial administrator and statistician who played a pivotal role in organizing the first modern population census of Hong Kong in 1961."
+description: "K. M. A. Barnett was a senior British colonial administrator and statistician who played a pivotal role in organizing the first modern population census of Hong Kong in 1961."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

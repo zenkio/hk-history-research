@@ -5,6 +5,7 @@ year: -2000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "neolithic", "prehistory", "rite-of-passage", "ritual-practice"]
 summary: "Around **2000 BCE**, prehistoric communities in the region that is now Hong Kong began practicing ritual tooth ablation, deliberately extracting upper lateral incisors as a cultural marker of maturity and tribal identity."
+description: "Around 2000 BCE, prehistoric communities in the region that is now Hong Kong began practicing ritual tooth ablation, deliberately extracting upper lateral incisors as a cultural marker of maturity and tribal identity."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

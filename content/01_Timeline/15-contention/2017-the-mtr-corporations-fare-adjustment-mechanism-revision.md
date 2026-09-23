@@ -6,6 +6,7 @@ year: 2017
 era: "Political contention and protest"
 tags: ["2017", "ai-draft", "contention", "economic-policy", "fare-adjustment", "infrastructure", "mtr", "public-transport", "social-unrest"]
 summary: "In March 2017, the MTR Corporation announced a revision to its Fare Adjustment Mechanism following years of mounting public pressure regarding the company's profitability and rising living costs."
+description: "In March 2017, the MTR Corporation announced a revision to its Fare Adjustment Mechanism following years of mounting public pressure regarding the company's profitability and rising living costs."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

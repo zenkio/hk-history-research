@@ -6,6 +6,7 @@ year: 2024
 era: "The National Security Law era"
 tags: ["2024", "ai-draft", "court-of-final-appeal", "hong-kong-politics", "judiciary", "national-security-era", "national-security-law", "rule-of-law"]
 summary: "In June 2024, several prominent overseas non-permanent judges of the Court of Final Appeal resigned from their positions, marking a significant shift in the composition of Hong Kong's highest court."
+description: "In June 2024, several prominent overseas non-permanent judges of the Court of Final Appeal resigned from their positions, marking a significant shift in the composition of Hong Kong's highest court."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

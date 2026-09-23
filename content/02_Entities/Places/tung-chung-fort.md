@@ -3,6 +3,7 @@ title: "Tung Chung Fort (東涌炮台)"
 title_zh: "東涌炮台"
 tags: ["ai-draft", "heritage-site", "hong-kong-history", "lantau-island", "maritime-defense", "place", "qing-dynasty"]
 summary: "Tung Chung Fort is a historic walled fortification on Lantau Island that serves as a testament to the complex maritime defense history of the Pearl River Delta."
+description: "Tung Chung Fort is a historic walled fortification on Lantau Island that serves as a testament to the complex maritime defense history of the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

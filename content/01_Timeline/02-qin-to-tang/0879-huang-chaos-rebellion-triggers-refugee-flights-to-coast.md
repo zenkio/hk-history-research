@@ -5,6 +5,7 @@ year: 879
 era: "Imperial frontier: Qin to Tang"
 tags: ["879", "ai-draft", "demographic-shift", "huang-chao-rebellion", "pearl-river-delta", "qin-to-tang", "refugee-migration", "tang-dynasty"]
 summary: "The devastating sacking of Guangzhou by rebel forces in 879 during the late Tang dynasty triggered massive refugee migrations to the isolated coastal bays and islands of present-day Hong Kong, fundamentally altering the region's demographic landscape."
+description: "The devastating sacking of Guangzhou by rebel forces in 879 during the late Tang dynasty triggered massive refugee migrations to the isolated coastal bays and islands of present-day Hong Kong, fundamentally altering the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

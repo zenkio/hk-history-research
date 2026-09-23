@@ -3,6 +3,7 @@ title: "Lord Collins (郝廉思)"
 title_zh: "郝廉思"
 tags: ["ai-draft", "court-of-final-appeal", "hong-kong-judiciary", "legal-history", "overseas-judges", "person", "rule-of-law"]
 summary: "Lord Collins is a British jurist whose resignation as a Non-Permanent Judge of the Hong Kong Court of Final Appeal in 2024 sparked significant debate regarding the city's rule of law."
+description: "Lord Collins is a British jurist whose resignation as a Non-Permanent Judge of the Hong Kong Court of Final Appeal in 2024 sparked significant debate regarding the city's rule of law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

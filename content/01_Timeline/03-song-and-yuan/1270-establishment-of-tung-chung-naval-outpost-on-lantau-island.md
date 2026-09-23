@@ -6,6 +6,7 @@ year: 1270
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1270", "ai-draft", "lantau-island", "maritime-trade", "naval-outpost", "piracy", "song-and-yuan", "song-dynasty"]
 summary: "During the late Southern Song dynasty, approximately between 1270 and 1275, the imperial government established a naval outpost on Lantau Island to secure vital maritime trade routes and suppress rampant piracy in the Pearl River estuary."
+description: "During the late Southern Song dynasty, approximately between 1270 and 1275, the imperial government established a naval outpost on Lantau Island to secure vital maritime trade routes and suppress rampant piracy in the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

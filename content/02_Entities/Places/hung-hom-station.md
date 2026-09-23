@@ -3,6 +3,7 @@ title: "Hung Hom Station (紅磡站)"
 title_zh: "紅磡站"
 tags: ["ai-draft", "hong-kong-transport", "kowloon", "mtr", "place", "railway-history", "urban-development"]
 summary: "Hung Hom Station is a major multi-modal transit hub in Kowloon, serving as a critical interchange between cross-border rail services and Hong Kong's local MTR network."
+description: "Hung Hom Station is a major multi-modal transit hub in Kowloon, serving as a critical interchange between cross-border rail services and Hong Kong's local MTR network."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Song Bing (宋兵)"
 title_zh: "宋兵"
 tags: ["ai-draft", "clan-history", "hong-kong-history", "militia", "new-territories", "person", "song-dynasty"]
 summary: "The term refers to the historical military personnel of the Southern Song dynasty (南宋), whose presence in the New Territories is often invoked in local ancestral narratives regarding clan-based defense systems."
+description: "The term refers to the historical military personnel of the Southern Song dynasty (南宋), whose presence in the New Territories is often invoked in local ancestral narratives regarding clan-based defense systems."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

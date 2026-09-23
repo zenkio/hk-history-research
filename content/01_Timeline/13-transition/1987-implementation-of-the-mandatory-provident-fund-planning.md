@@ -6,6 +6,7 @@ year: 1987
 era: "Sino-British negotiations and the transition"
 tags: ["1987", "ai-draft", "colonial-policy", "hong-kong-history", "mpf", "retirement-planning", "social-welfare", "transition"]
 summary: "Beginning in 1987, the colonial administration initiated formal discussions on a compulsory retirement protection scheme to address the social security needs of an aging population ahead of the 1997 handover."
+description: "Beginning in 1987, the colonial administration initiated formal discussions on a compulsory retirement protection scheme to address the social security needs of an aging population ahead of the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Regina Ip (葉劉淑儀)"
 title_zh: "葉劉淑儀"
 tags: ["ai-draft", "article-23", "executive-council", "government-officials", "hong-kong-politics", "july-1st-rally", "person"]
 summary: "Regina Ip is a prominent Hong Kong politician who served as the Secretary for Security and is currently a key member of the Executive Council, known for her central role in the 2003 Article 23 legislation efforts."
+description: "Regina Ip is a prominent Hong Kong politician who served as the Secretary for Security and is currently a key member of the Executive Council, known for her central role in the 2003 Article 23 legislation efforts."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

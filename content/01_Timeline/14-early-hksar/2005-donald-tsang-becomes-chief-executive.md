@@ -6,6 +6,7 @@ year: 2005
 era: "The early HKSAR"
 tags: ["2005", "ai-draft", "chief-executive", "donald-tsang", "early-hksar", "hksar-history", "hong-kong-politics"]
 summary: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
+description: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Hong Kong Polytechnic University (香港理工大學)"
 title_zh: "香港理工大學"
 tags: ["2019-protests", "ai-draft", "campus-history", "higher-education", "hung-hom", "place"]
 summary: "The Hong Kong Polytechnic University is a major public research university that became a focal point of intense confrontation during the 2019 anti-extradition bill protests."
+description: "The Hong Kong Polytechnic University is a major public research university that became a focal point of intense confrontation during the 2019 anti-extradition bill protests."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

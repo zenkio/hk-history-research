@@ -6,6 +6,7 @@ year: 1522
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1522", "ai-draft", "maritime-ban", "ming-and-qing", "ming-dynasty", "naval-battle", "pearl-river-delta", "portuguese-trade"]
 summary: "In 1522, Ming dynasty naval forces engaged and defeated Portuguese ships in the waters around Hong Kong, a clash that reinforced China's strict maritime trade bans."
+description: "In 1522, Ming dynasty naval forces engaged and defeated Portuguese ships in the waters around Hong Kong, a clash that reinforced China's strict maritime trade bans."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

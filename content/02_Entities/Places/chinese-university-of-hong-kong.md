@@ -3,6 +3,7 @@ title: "Chinese University of Hong Kong (香港中文大學)"
 title_zh: "香港中文大學"
 tags: ["ai-draft", "cuhk", "education", "higher-education", "hong-kong-history", "place", "social-movements"]
 summary: "Founded in 1963, The Chinese University of Hong Kong (CUHK) is a prominent public research university known for its emphasis on Chinese studies and its role as a site for significant socio-political discourse in Hong Kong."
+description: "Founded in 1963, The Chinese University of Hong Kong (CUHK) is a prominent public research university known for its emphasis on Chinese studies and its role as a site for significant socio-political discourse in Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

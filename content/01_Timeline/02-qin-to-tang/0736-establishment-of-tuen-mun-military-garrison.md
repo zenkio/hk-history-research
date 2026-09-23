@@ -5,6 +5,7 @@ year: 736
 era: "Imperial frontier: Qin to Tang"
 tags: ["736", "ai-draft", "imperial-frontier", "maritime-trade", "military-garrison", "qin-to-tang", "tang-dynasty", "tuen-mun"]
 summary: "In 736, the Tang dynasty established a military garrison at Tuen Mun to secure maritime trade routes and suppress coastal piracy along the southern frontier."
+description: "In 736, the Tang dynasty established a military garrison at Tuen Mun to secure maritime trade routes and suppress coastal piracy along the southern frontier."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Chuenpi (穿鼻)"
 title_zh: "穿鼻"
 tags: ["ai-draft", "diplomatic-history", "first-opium-war", "hong-kong-history", "pearl-river-estuary", "place", "qing-dynasty"]
 summary: "Chuenpi is a historic maritime location near the Pearl River Estuary that served as a critical site for early diplomatic negotiations during the First Opium War."
+description: "Chuenpi is a historic maritime location near the Pearl River Estuary that served as a critical site for early diplomatic negotiations during the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

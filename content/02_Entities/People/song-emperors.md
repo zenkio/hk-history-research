@@ -3,6 +3,7 @@ title: "Song Emperors (宋朝皇帝)"
 title_zh: "宋朝皇帝"
 tags: ["ai-draft", "history", "hong-kong-origins", "imperial-court", "person", "song-dynasty", "tuen-mun"]
 summary: "The flight of the Southern Song court to the region during the late 13th century remains a pivotal, albeit debated, episode in the historiography of Hong Kong's cultural identity."
+description: "The flight of the Southern Song court to the region during the late 13th century remains a pivotal, albeit debated, episode in the historiography of Hong Kong's cultural identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

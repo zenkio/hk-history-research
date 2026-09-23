@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "early-hksar", "financial-history", "hksar-history", "public-transport", "smart-card", "technology-adoption", "urban-mobility"]
 summary: "On September 1, 1997, the Octopus card was officially launched, marking a technological milestone in Hong Kong's public transport and retail payment systems."
+description: "On September 1, 1997, the Octopus card was officially launched, marking a technological milestone in Hong Kong's public transport and retail payment systems."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

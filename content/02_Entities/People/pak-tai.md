@@ -3,6 +3,7 @@ title: "Pak Tai (北帝)"
 title_zh: "北帝"
 tags: ["ai-draft", "cheung-chau", "hong-kong-history", "person", "religion", "taoism", "traditional-culture"]
 summary: "Pak Tai is a prominent Taoist deity worshipped widely across Hong Kong, particularly among coastal and fishing communities seeking protection and prosperity."
+description: "Pak Tai is a prominent Taoist deity worshipped widely across Hong Kong, particularly among coastal and fishing communities seeking protection and prosperity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

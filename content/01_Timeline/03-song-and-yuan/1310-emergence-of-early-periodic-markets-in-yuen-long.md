@@ -6,6 +6,7 @@ year: 1310
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1310", "ai-draft", "clans", "periodic-markets", "song-and-yuan", "trade", "yuan-dynasty", "yuen-long"]
 summary: "Around 1310 during the Yuan dynasty, informal periodic markets began to emerge in the Yuen Long area, facilitating trade between inland farming clans and coastal fishing communities."
+description: "Around 1310 during the Yuan dynasty, informal periodic markets began to emerge in the Yuen Long area, facilitating trade between inland farming clans and coastal fishing communities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

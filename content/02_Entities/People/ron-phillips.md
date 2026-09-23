@@ -3,6 +3,7 @@ title: "Ron Phillips"
 title_zh: "菲腊斯"
 tags: ["ai-draft", "british-administration", "city-hall", "colonial-history", "person", "urban-development"]
 summary: "Ron Phillips was a British colonial official whose administrative career in Hong Kong intersected with significant civic developments, most notably the opening of the Hong Kong City Hall."
+description: "Ron Phillips was a British colonial official whose administrative career in Hong Kong intersected with significant civic developments, most notably the opening of the Hong Kong City Hall."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

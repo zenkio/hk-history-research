@@ -3,6 +3,7 @@ title: "Tang Fu-hip (鄧符協)"
 title_zh: "鄧符協"
 tags: ["ai-draft", "hong-kong-history", "kam-tin", "new-territories", "person", "song-dynasty", "tang-clan"]
 summary: "Tang Fu-hip is historically recognized as the progenitor of the Tang Clan in Kam Tin, marking the beginning of the prominent Five Great Clans of the New Territories."
+description: "Tang Fu-hip is historically recognized as the progenitor of the Tang Clan in Kam Tin, marking the beginning of the prominent Five Great Clans of the New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1973
 era: "Riots and the MacLehose reforms"
 tags: ["1973", "ai-draft", "icac", "maclehose-reforms", "peter-godber", "police-corruption", "riots-and-reform"]
 summary: "The **1973** flight of Chief Superintendent **Peter Godber** (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission Against Corruption (ICAC)."
+description: "The 1973 flight of Chief Superintendent Peter Godber (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

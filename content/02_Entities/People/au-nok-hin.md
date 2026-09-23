@@ -3,6 +3,7 @@ title: "Au Nok-hin (區諾軒)"
 title_zh: "區諾軒"
 tags: ["ai-draft", "au-nok-hin", "hong-kong-politics", "legislative-council", "national-security-law", "person", "pro-democracy-activism"]
 summary: "Au Nok-hin is a former Hong Kong legislator and political activist who became a central figure in the 2020 pro-democracy camp primary elections and the subsequent legal proceedings under the National Security Law."
+description: "Au Nok-hin is a former Hong Kong legislator and political activist who became a central figure in the 2020 pro-democracy camp primary elections and the subsequent legal proceedings under the National Security Law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

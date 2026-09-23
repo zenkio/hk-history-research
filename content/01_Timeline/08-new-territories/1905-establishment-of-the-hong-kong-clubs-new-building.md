@@ -6,6 +6,7 @@ year: 1905
 era: "The New Territories lease and the early 20th century"
 tags: ["1905", "ai-draft", "architecture", "british-empire", "colonial-history", "hong-kong-club", "new-territories", "social-history"]
 summary: "In 1905, the Hong Kong Club completed a grand new headquarters at Statue Square, reinforcing its role as the center of British colonial social and political life."
+description: "In 1905, the Hong Kong Club completed a grand new headquarters at Statue Square, reinforcing its role as the center of British colonial social and political life."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1560
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1560", "ai-draft", "economic-history", "imperial-taxation", "kwun-tong", "ming-and-qing", "ming-dynasty", "salt-production"]
 summary: "During the mid-Ming dynasty around **1560**, local coastal inhabitants in the Kwun Tong area expanded traditional salt panning operations, creating an important local industry for regional trade and imperial taxation."
+description: "During the mid-Ming dynasty around 1560, local coastal inhabitants in the Kwun Tong area expanded traditional salt panning operations, creating an important local industry for regional trade and imperial taxation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

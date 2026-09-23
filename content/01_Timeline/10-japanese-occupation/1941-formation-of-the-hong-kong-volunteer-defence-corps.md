@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "hong-kong-history", "japanese-occupation", "military-history", "world-war-ii"]
 summary: "In 1941, the Hong Kong Volunteer Defence Corps (HKVDC) became a central element of the territory's final defense efforts, mobilizing a diverse group of residents to serve alongside regular British forces."
+description: "In 1941, the Hong Kong Volunteer Defence Corps (HKVDC) became a central element of the territory's final defense efforts, mobilizing a diverse group of residents to serve alongside regular British forces."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

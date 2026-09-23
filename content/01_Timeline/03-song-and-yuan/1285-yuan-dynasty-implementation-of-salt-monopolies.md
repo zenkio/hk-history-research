@@ -6,6 +6,7 @@ year: 1285
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1285", "ai-draft", "economic-history", "imperial-administration", "salt-monopoly", "song-and-yuan", "yuan-dynasty"]
 summary: "Between **1285 and 1290**, the newly established Mongol Yuan administration significantly tightened state control over Hong Kong's lucrative coastal salt production fields, integrating local output into broader imperial supply networks."
+description: "Between 1285 and 1290, the newly established Mongol Yuan administration significantly tightened state control over Hong Kong's lucrative coastal salt production fields, integrating local output into broader imperial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

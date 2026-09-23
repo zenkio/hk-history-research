@@ -6,6 +6,7 @@ year: 1913
 era: "The New Territories lease and the early 20th century"
 tags: ["1913", "ai-draft", "colonial-history", "hong-kong-history", "infrastructure", "new-territories", "technical-training", "vocational-education"]
 summary: "In 1913, the Hong Kong government established the Government Technical Institute to provide specialized industrial and vocational education, marking a shift in the colony's educational focus."
+description: "In 1913, the Hong Kong government established the Government Technical Institute to provide specialized industrial and vocational education, marking a shift in the colony's educational focus."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Tong King-sing (唐景星)"
 title_zh: "唐景星"
 tags: ["ai-draft", "colonial-history", "comprador", "jardine-matheson", "nineteenth-century", "person", "trade-history"]
 summary: "Tong King-sing was a prominent 19th-century comprador who facilitated early commercial ties between Western trading firms and Chinese markets, serving as a critical bridge in Hong Kong's nascent colonial economy."
+description: "Tong King-sing was a prominent 19th-century comprador who facilitated early commercial ties between Western trading firms and Chinese markets, serving as a critical bridge in Hong Kong's nascent colonial economy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

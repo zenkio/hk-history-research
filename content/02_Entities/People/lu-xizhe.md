@@ -3,6 +3,7 @@ title: "Lu Xizhe (魯希哲)"
 title_zh: "魯希哲"
 tags: ["ai-draft", "gazetteer", "hong-kong-history", "lu-xizhe", "person", "qing-dynasty", "xin-an-county"]
 summary: "Lu Xizhe was a Ming Dynasty scholar and official who served as the compiler of the 1688 edition of the Xin'an County Gazetteer, a foundational text for the study of Hong Kong's historical geography."
+description: "Lu Xizhe was a Ming Dynasty scholar and official who served as the compiler of the 1688 edition of the Xin'an County Gazetteer, a foundational text for the study of Hong Kong's historical geography."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

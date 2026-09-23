@@ -3,6 +3,7 @@ title: "Tam Achoy (譚亞財)"
 title_zh: "譚亞財"
 tags: ["ai-draft", "chinese-merchant", "colonial-era", "comprador", "hong-kong-history", "man-mo-temple", "person"]
 summary: "Tam Achoy was a prominent 19th-century Chinese merchant and comprador who played a significant role in the early development of colonial Hong Kong and the establishment of local religious institutions."
+description: "Tam Achoy was a prominent 19th-century Chinese merchant and comprador who played a significant role in the early development of colonial Hong Kong and the establishment of local religious institutions."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

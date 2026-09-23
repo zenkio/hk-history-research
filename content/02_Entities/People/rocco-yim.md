@@ -3,6 +3,7 @@ title: "Rocco Yim (嚴迅奇)"
 title_zh: "嚴迅奇"
 tags: ["ai-draft", "architect", "architecture", "hong-kong-palace-museum", "person", "rocco-yim", "west-kowloon"]
 summary: "Rocco Yim is a prominent Hong Kong architect whose works, including the Hong Kong Palace Museum, have significantly shaped the city's modern cultural and urban landscape."
+description: "Rocco Yim is a prominent Hong Kong architect whose works, including the Hong Kong Palace Museum, have significantly shaped the city's modern cultural and urban landscape."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

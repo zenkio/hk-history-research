@@ -3,6 +3,7 @@ title: "Sai Wan (西灣)"
 title_zh: "西灣"
 tags: ["ai-draft", "archaeology", "coastal-history", "new-territories", "place", "rural-heritage", "sai-kung"]
 summary: "Sai Wan is a coastal area on the eastern side of the Sai Kung Peninsula that holds significance in both local maritime history and regional archaeological discourse."
+description: "Sai Wan is a coastal area on the eastern side of the Sai Kung Peninsula that holds significance in both local maritime history and regional archaeological discourse."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

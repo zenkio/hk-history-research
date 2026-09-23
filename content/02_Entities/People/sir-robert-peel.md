@@ -3,6 +3,7 @@ title: "Sir Robert Peel (羅伯特·皮爾爵士)"
 title_zh: "羅伯特·皮爾爵士"
 tags: ["ai-draft", "british-administration", "colonial-history", "hong-kong-police", "nineteenth-century", "person", "sir-robert-peel"]
 summary: "As the British Prime Minister who oversaw the First Opium War, Sir Robert Peel shaped the early colonial policies that led to the establishment of the Hong Kong Police Force."
+description: "As the British Prime Minister who oversaw the First Opium War, Sir Robert Peel shaped the early colonial policies that led to the establishment of the Hong Kong Police Force."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

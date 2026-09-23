@@ -6,6 +6,7 @@ year: 1100
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1100", "ai-draft", "clan-history", "gentry-lineage", "migration", "new-territories", "sha-tau-kok", "song-and-yuan", "song-dynasty"]
 summary: "During the 12th century, the Mok clan established roots in the Sha Tau Kok region, marking a pivotal moment in the migration of prominent lineages into the Hong Kong New Territories."
+description: "During the 12th century, the Mok clan established roots in the Sha Tau Kok region, marking a pivotal moment in the migration of prominent lineages into the Hong Kong New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

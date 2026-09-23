@@ -6,6 +6,7 @@ year: 1731
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1731", "ai-draft", "lantau-island", "maritime-defense", "military-history", "ming-and-qing", "qing-dynasty"]
 summary: "In **1731**, the Qing government constructed the Tung Chung Fort on Lantau Island to strengthen maritime defense and regulate shipping traffic within the Pearl River estuary."
+description: "In 1731, the Qing government constructed the Tung Chung Fort on Lantau Island to strengthen maritime defense and regulate shipping traffic within the Pearl River estuary."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

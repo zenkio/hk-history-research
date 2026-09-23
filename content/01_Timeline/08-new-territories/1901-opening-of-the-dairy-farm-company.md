@@ -6,6 +6,7 @@ year: 1901
 era: "The New Territories lease and the early 20th century"
 tags: ["1901", "ai-draft", "cold-storage", "colonial-history", "dairy-farm", "food-supply", "new-territories", "public-health", "urban-modernization"]
 summary: "The establishment of the Dairy Farm Company in 1886 and its expansion in the early 20th century transformed Hong Kong's food supply through modern hygiene practices and refrigeration."
+description: "The establishment of the Dairy Farm Company in 1886 and its expansion in the early 20th century transformed Hong Kong's food supply through modern hygiene practices and refrigeration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

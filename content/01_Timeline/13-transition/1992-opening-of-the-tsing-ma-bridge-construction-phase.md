@@ -6,6 +6,7 @@ year: 1992
 era: "Sino-British negotiations and the transition"
 tags: ["1992", "ai-draft", "airport-core-programme", "colonial-history", "engineering", "infrastructure", "transition", "transition-era", "transportation"]
 summary: "In 1992, construction commenced on the Tsing Ma Bridge, a cornerstone of the massive Airport Core Programme designed to modernize Hong Kong's infrastructure ahead of the 1997 handover."
+description: "In 1992, construction commenced on the Tsing Ma Bridge, a cornerstone of the massive Airport Core Programme designed to modernize Hong Kong's infrastructure ahead of the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

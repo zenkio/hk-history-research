@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "asian-financial-crisis", "early-hksar", "hksar-history", "housing-policy", "negative-equity", "tung-chee-hwa"]
 summary: "Introduced in October 1997 by Chief Executive Tung Chee-hwa, the ambitious 85,000-unit housing policy aimed to solve Hong Kong's chronic housing shortage, but instead collided with the Asian Financial Crisis to trigger a severe property market collapse and widespread negative equity."
+description: "Introduced in October 1997 by Chief Executive Tung Chee-hwa, the ambitious 85,000-unit housing policy aimed to solve Hong Kong's chronic housing shortage, but instead collided with the Asian Financial Crisis to trigger…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

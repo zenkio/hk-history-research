@@ -5,6 +5,7 @@ year: -1000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "baiyue", "bronze-age", "maritime-history", "prehistoric-hong-kong", "prehistory"]
 summary: "Around 1000 BCE, the indigenous inhabitants of the Hong Kong region became deeply integrated into the maritime Baiyue cultural sphere of southern China, marked by distinct technological and artistic traditions."
+description: "Around 1000 BCE, the indigenous inhabitants of the Hong Kong region became deeply integrated into the maritime Baiyue cultural sphere of southern China, marked by distinct technological and artistic traditions."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

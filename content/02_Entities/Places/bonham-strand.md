@@ -3,6 +3,7 @@ title: "Bonham Strand (文咸街)"
 title_zh: "文咸街"
 tags: ["ai-draft", "colonial-history", "hong-kong-trade", "nineteenth-century", "place", "sheung-wan", "urban-development"]
 summary: "Named after the third Governor of Hong Kong, Bonham Strand was a pivotal reclamation site that became the heart of the Chinese merchant community and early coastal trade."
+description: "Named after the third Governor of Hong Kong, Bonham Strand was a pivotal reclamation site that became the heart of the Chinese merchant community and early coastal trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

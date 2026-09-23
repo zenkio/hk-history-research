@@ -3,6 +3,7 @@ title: "Cheong Ming-chi (張鳴岐)"
 title_zh: "張鳴岐"
 tags: ["ai-draft", "chinese-history", "colonial-hong-kong", "man-mo-temple", "merchant-class", "person", "philanthropy"]
 summary: "Cheong Ming-chi was a prominent Chinese merchant and philanthropist in the late 19th century who played a significant role in the administration and development of the Man Mo Temple in Hong Kong."
+description: "Cheong Ming-chi was a prominent Chinese merchant and philanthropist in the late 19th century who played a significant role in the administration and development of the Man Mo Temple in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

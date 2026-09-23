@@ -6,6 +6,7 @@ year: 1909
 era: "The New Territories lease and the early 20th century"
 tags: ["1909", "ai-draft", "colonial-history", "early-20th-century", "legislation", "maritime-trade", "new-territories", "port-development"]
 summary: "In 1909, the colonial government enacted the Merchant Shipping Ordinance to modernize port regulations and accommodate the rapid expansion of international maritime trade in Victoria Harbour."
+description: "In 1909, the colonial government enacted the Merchant Shipping Ordinance to modernize port regulations and accommodate the rapid expansion of international maritime trade in Victoria Harbour."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

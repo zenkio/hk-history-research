@@ -3,6 +3,7 @@ title: "Shelley Street (些利街)"
 title_zh: "些利街"
 tags: ["ai-draft", "central", "colonial-history", "islamic-community", "jamia-mosque", "place", "shelley-street"]
 summary: "Shelley Street is a historic thoroughfare in Central, Hong Kong Island, significant for its association with the early Muslim community and the construction of the Jamia Mosque."
+description: "Shelley Street is a historic thoroughfare in Central, Hong Kong Island, significant for its association with the early Muslim community and the construction of the Jamia Mosque."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

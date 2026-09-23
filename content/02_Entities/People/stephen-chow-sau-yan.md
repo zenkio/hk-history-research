@@ -3,6 +3,7 @@ title: "Stephen Chow Sau-yan (周守仁)"
 title_zh: "周守仁"
 tags: ["ai-draft", "catholic-church", "diplomacy", "hong-kong-history", "person", "religious-leadership", "stephen-chow"]
 summary: "Stephen Chow Sau-yan is the current Bishop of the Catholic Diocese of Hong Kong, a role that places him at the intersection of religious leadership, social advocacy, and complex regional diplomacy."
+description: "Stephen Chow Sau-yan is the current Bishop of the Catholic Diocese of Hong Kong, a role that places him at the intersection of religious leadership, social advocacy, and complex regional diplomacy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

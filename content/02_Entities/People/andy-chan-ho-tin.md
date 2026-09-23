@@ -3,6 +3,7 @@ title: "Andy Chan Ho-tin (陳浩天)"
 title_zh: "陳浩天"
 tags: ["ai-draft", "andy-chan", "hong-kong-national-party", "localism", "person", "politics", "secession"]
 summary: "Andy Chan Ho-tin is a Hong Kong activist and founder of the banned pro-independence Hong Kong National Party, whose political activities became a focal point in the debate over Beijing's sovereignty and local autonomy."
+description: "Andy Chan Ho-tin is a Hong Kong activist and founder of the banned pro-independence Hong Kong National Party, whose political activities became a focal point in the debate over Beijing's sovereignty and local autonomy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -600
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "green-sea-turtle", "marine-harvesting", "prehistory", "sham-wan"]
 summary: "Around 600 BCE, coastal communities in prehistoric Hong Kong engaged in the systematic, seasonal harvesting of nesting green sea turtles at Sham Wan, reflecting an advanced adaptation to marine ecosystems."
+description: "Around 600 BCE, coastal communities in prehistoric Hong Kong engaged in the systematic, seasonal harvesting of nesting green sea turtles at Sham Wan, reflecting an advanced adaptation to marine ecosystems."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

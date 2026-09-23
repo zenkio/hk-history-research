@@ -6,6 +6,7 @@ year: 2004
 era: "The early HKSAR"
 tags: ["2004", "ai-draft", "early-hksar", "housing-policy", "judicial-review", "link-reit", "privatization", "public-housing"]
 summary: "In December 2004, public housing resident Lo Siu-lan successfully obtained a legal injunction that temporarily halted the mega initial public offering of Link REIT, sparking intense debate over the governance and privatization of public assets in the early HKSAR."
+description: "In December 2004, public housing resident Lo Siu-lan successfully obtained a legal injunction that temporarily halted the mega initial public offering of Link REIT, sparking intense debate over the governance and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

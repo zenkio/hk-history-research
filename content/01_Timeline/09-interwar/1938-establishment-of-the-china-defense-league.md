@@ -6,6 +6,7 @@ year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1938", "ai-draft", "british-hong-kong", "china-defense-league", "humanitarian-aid", "interwar", "second-sino-japanese-war", "soong-ching-ling"]
 summary: "In June 1938, Soong Ching-ling founded the China Defense League in Hong Kong to coordinate international humanitarian relief and medical supplies for China's anti-Japanese resistance."
+description: "In June 1938, Soong Ching-ling founded the China Defense League in Hong Kong to coordinate international humanitarian relief and medical supplies for China's anti-Japanese resistance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

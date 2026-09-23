@@ -3,6 +3,7 @@ title: "Shenzhen Bay (深圳灣)"
 title_zh: "深圳灣"
 tags: ["ai-draft", "cross-boundary", "geography", "infrastructure", "new-territories", "place", "shenzhen"]
 summary: "Shenzhen Bay is a coastal inlet between Hong Kong's New Territories and the city of Shenzhen that serves as a critical geographic node for cross-boundary transportation and ecological conservation."
+description: "Shenzhen Bay is a coastal inlet between Hong Kong's New Territories and the city of Shenzhen that serves as a critical geographic node for cross-boundary transportation and ecological conservation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

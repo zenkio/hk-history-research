@@ -3,6 +3,7 @@ title: "Mong Kok Tsui (旺角咀)"
 title_zh: "旺角咀"
 tags: ["ai-draft", "colonial-era", "kowloon", "maritime-history", "mong-kok", "place", "urban-development"]
 summary: "Mong Kok Tsui is a historical headland and coastal area in Kowloon that became a focal point for early maritime infrastructure and urban development during Hong Kong's colonial period."
+description: "Mong Kok Tsui is a historical headland and coastal area in Kowloon that became a focal point for early maritime infrastructure and urban development during Hong Kong's colonial period."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

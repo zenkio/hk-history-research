@@ -6,6 +6,7 @@ year: 1953
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1953", "ai-draft", "colonial-history", "postwar-refugees", "public-housing", "refugees", "shek-kip-mei-fire"]
 summary: "A devastating Christmas Day fire in 1953 left over 53,000 squatters homeless, fundamentally transforming British colonial policy and launching Hong Kong's iconic public housing program."
+description: "A devastating Christmas Day fire in 1953 left over 53,000 squatters homeless, fundamentally transforming British colonial policy and launching Hong Kong's iconic public housing program."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

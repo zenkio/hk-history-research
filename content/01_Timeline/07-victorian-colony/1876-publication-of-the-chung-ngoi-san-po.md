@@ -6,6 +6,7 @@ year: 1876
 era: "Kowloon and the Victorian colony"
 tags: ["1876", "ai-draft", "colonial-era", "hong-kong-history", "intellectual-history", "media-development", "press-history", "victorian-colony"]
 summary: "In 1876, the continued publication and expansion of the Chung Ngoi San Po (中外新報) marked a pivotal moment in the emergence of a distinctive Chinese-language press in colonial Hong Kong."
+description: "In 1876, the continued publication and expansion of the Chung Ngoi San Po (中外新報) marked a pivotal moment in the emergence of a distinctive Chinese-language press in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

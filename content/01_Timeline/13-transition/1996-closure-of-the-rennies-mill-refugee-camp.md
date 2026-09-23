@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1996", "ai-draft", "cold-war", "hong-kong-handover", "kuomintang", "refugee-history", "transition", "urban-development"]
 summary: "In 1996, the British colonial government oversaw the demolition of the Rennie's Mill refugee camp, ending the existence of a distinctive enclave that had served as a bastion for Kuomintang supporters since the late 1940s."
+description: "In 1996, the British colonial government oversaw the demolition of the Rennie's Mill refugee camp, ending the existence of a distinctive enclave that had served as a bastion for Kuomintang supporters since the late…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -2,7 +2,8 @@
 title: "Historical Photographs of Hong Kong Digitization Project"
 date: 1981-01-01
 tags: ["1981", "1984", "1986", "1989", "2026", "archival-collections", "british-hong-kong", "hong-kong-history", "shek-o", "vernacular-photography"]
-summary: "The **Hong Kong History Centre** launched the Historical Photographs of Hong Kong (**HPHK**) platform in **2026** to pub"
+summary: "The Hong Kong History Centre launched the Historical Photographs of Hong Kong (HPHK) platform in 2026 to publish donated photographic materials held by the University of Bristol Library."
+description: "The Hong Kong History Centre launched the Historical Photographs of Hong Kong (HPHK) platform in 2026 to publish donated photographic materials held by the University of Bristol Library."
 confidence: high
 source_feed: Historical_Photos_HK
 source_url: "https://blog.hphkbristol.net/2026/09/02/introducing-historical-photographs-of-hong-kong/"

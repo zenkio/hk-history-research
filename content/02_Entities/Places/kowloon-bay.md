@@ -3,6 +3,7 @@ title: "Kowloon Bay (九龍灣)"
 title_zh: "九龍灣"
 tags: ["ai-draft", "kai-tak", "kowloon-bay", "place", "reclamation", "salt-industry", "song-dynasty"]
 summary: "Kowloon Bay is a major urban body of water and surrounding district in Hong Kong whose coastline has been profoundly reshaped by centuries of salt production, imperial flight, and massive aviation-related reclamation."
+description: "Kowloon Bay is a major urban body of water and surrounding district in Hong Kong whose coastline has been profoundly reshaped by centuries of salt production, imperial flight, and massive aviation-related reclamation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

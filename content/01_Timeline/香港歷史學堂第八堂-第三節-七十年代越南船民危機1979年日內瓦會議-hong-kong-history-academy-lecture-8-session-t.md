@@ -2,6 +2,7 @@
 title: "《香港歷史學堂》第八堂 | 第三節 | 七十年代越南船民危機：1979年日內瓦會議 “Hong Kong History Academy” | Lecture 8 | Session three | Geneva Conference 1979"
 tags: ["Vietnamese refugees", "1970s", "Hong Kong history", "international crisis", "asylum"]
 summary: "This session of the 'Hong Kong History Academy' discusses the Vietnamese refugee crisis in the 1970s, focusing on its or"
+description: "This session of the 'Hong Kong History Academy' discusses the Vietnamese refugee crisis in the 1970s, focusing on its or"
 confidence: medium
 source_feed: HK_History_Centre
 source_url: "https://www.hkhistory.net/2026/08/27/3614/"

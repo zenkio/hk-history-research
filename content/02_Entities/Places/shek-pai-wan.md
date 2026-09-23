@@ -3,6 +3,7 @@ title: "Shek Pai Wan (石排灣)"
 title_zh: "石排灣"
 tags: ["ai-draft", "hong-kong-island", "incense-trade", "maritime-history", "ming-dynasty", "place", "shek-pai-wan"]
 summary: "Shek Pai Wan is a historic coastal area on the south side of Hong Kong Island, central to the development of the maritime incense trade during the Ming dynasty."
+description: "Shek Pai Wan is a historic coastal area on the south side of Hong Kong Island, central to the development of the maritime incense trade during the Ming dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Kennedy Town (堅尼地城)"
 title_zh: "堅尼地城"
 tags: ["ai-draft", "central-and-western-district", "gentrification", "hong-kong-history", "place", "transportation-history", "urban-development"]
 summary: "Kennedy Town is a historic waterfront district on the western edge of Hong Kong Island that serves as a vital junction for early industrial development and modern transit infrastructure."
+description: "Kennedy Town is a historic waterfront district on the western edge of Hong Kong Island that serves as a vital junction for early industrial development and modern transit infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

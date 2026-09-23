@@ -5,6 +5,7 @@ year: 720
 era: "Imperial frontier: Qin to Tang"
 tags: ["720", "ai-draft", "economic-history", "imperial-taxation", "maritime-history", "pearl-river-delta", "qin-to-tang", "tang-dynasty"]
 summary: "During the 8th century, the Tang dynasty formalized the collection of marine tributes from the coastal regions of the Pearl River Delta, marking a pivotal transition in the region's economic integration into the imperial administrative framework."
+description: "During the 8th century, the Tang dynasty formalized the collection of marine tributes from the coastal regions of the Pearl River Delta, marking a pivotal transition in the region's economic integration into the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

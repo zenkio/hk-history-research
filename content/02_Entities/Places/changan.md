@@ -3,6 +3,7 @@ title: "Chang'an (長安)"
 title_zh: "長安"
 tags: ["ai-draft", "imperial-china", "lingnan", "maritime-history", "place", "silk-road", "tang-dynasty"]
 summary: "As the imperial capital of the Tang Dynasty, Chang'an served as the administrative and economic center that oversaw the integration of the Lingnan region, including the coastal areas of modern-day Hong Kong, into the maritime Silk Road."
+description: "As the imperial capital of the Tang Dynasty, Chang'an served as the administrative and economic center that oversaw the integration of the Lingnan region, including the coastal areas of modern-day Hong Kong, into the…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

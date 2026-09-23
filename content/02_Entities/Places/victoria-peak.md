@@ -3,6 +3,7 @@ title: "Victoria Peak (太平山)"
 title_zh: "太平山"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "peak-tram", "place", "urban-planning", "victoria-peak"]
 summary: "Victoria Peak is a prominent geographic landmark on Hong Kong Island that served as an exclusive colonial residential enclave and a vital site for transportation, defense, and civil administration."
+description: "Victoria Peak is a prominent geographic landmark on Hong Kong Island that served as an exclusive colonial residential enclave and a vital site for transportation, defense, and civil administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

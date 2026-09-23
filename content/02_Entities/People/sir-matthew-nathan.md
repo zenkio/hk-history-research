@@ -3,6 +3,7 @@ title: "Sir Matthew Nathan (彌敦)"
 title_zh: "彌敦"
 tags: ["ai-draft", "british-empire", "colonial-history", "kowloon", "person", "urban-development"]
 summary: "Sir Matthew Nathan served as the 13th Governor of Hong Kong from 1904 to 1907, leaving a lasting physical imprint on the colony's urban development through infrastructure expansion such as Nathan Road."
+description: "Sir Matthew Nathan served as the 13th Governor of Hong Kong from 1904 to 1907, leaving a lasting physical imprint on the colony's urban development through infrastructure expansion such as Nathan Road."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

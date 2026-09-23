@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "election-committee", "electoral-reform", "legislative-council", "national-security-era", "national-security-law", "patriots-governing-hong-kong"]
 summary: "On March 11, 2021, China's National People's Congress approved sweeping changes to Hong Kong's electoral system to ensure that only 'patriots' govern the territory, significantly reducing directly elected seats."
+description: "On March 11, 2021, China's National People's Congress approved sweeping changes to Hong Kong's electoral system to ensure that only 'patriots' govern the territory, significantly reducing directly elected seats."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

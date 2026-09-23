@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "ai-draft", "article-23", "basic-law", "civil-protest", "early-hksar", "hksar-history", "july-1st-rally"]
 summary: "On July 1, 2003, approximately 500,000 citizens marched in Hong Kong to protest proposed national security legislation, marking a significant moment in the territory's post-colonial history."
+description: "On July 1, 2003, approximately 500,000 citizens marched in Hong Kong to protest proposed national security legislation, marking a significant moment in the territory's post-colonial history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

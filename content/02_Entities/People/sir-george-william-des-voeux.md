@@ -3,6 +3,7 @@ title: "Sir George William Des Voeux (德輔)"
 title_zh: "德輔"
 tags: ["19th-century", "ai-draft", "colonial-history", "governor", "infrastructure", "peak-tram", "person"]
 summary: "Sir George William Des Voeux was the 10th Governor of Hong Kong, presiding over significant infrastructure expansion including the Peak Tramway and early reclamation projects."
+description: "Sir George William Des Voeux was the 10th Governor of Hong Kong, presiding over significant infrastructure expansion including the Peak Tramway and early reclamation projects."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

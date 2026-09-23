@@ -3,6 +3,7 @@ title: "Kellett Island (奇力島)"
 title_zh: "奇力島"
 tags: ["ai-draft", "causeway-bay", "colonial-history", "geography", "hong-kong-reclamation", "maritime-history", "place"]
 summary: "Kellett Island is a former island in Victoria Harbour that served as a British naval base before being connected to the mainland during the mid-20th century."
+description: "Kellett Island is a former island in Victoria Harbour that served as a British naval base before being connected to the mainland during the mid-20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2020
 era: "The National Security Law era"
 tags: ["2020", "ai-draft", "beijing-hong-kong-relations", "constitutional-change", "hong-kong-politics", "national-security-era", "national-security-law"]
 summary: "On July 8, 2020, the Office for Safeguarding National Security of the Central People's Government in the Hong Kong Special Administrative Region was officially inaugurated, establishing a formal mechanism for mainland authorities to supervise national security affairs in the territory."
+description: "On July 8, 2020, the Office for Safeguarding National Security of the Central People's Government in the Hong Kong Special Administrative Region was officially inaugurated, establishing a formal mechanism for mainland…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

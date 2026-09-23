@@ -3,6 +3,7 @@ title: "Bocca Tigris (虎門)"
 title_zh: "虎門"
 tags: ["ai-draft", "battle-of-chuenpi", "bocca-tigris", "first-opium-war", "napier-affair", "pearl-river", "place"]
 summary: "Bocca Tigris is the estuary of the Pearl River featuring historical fortifications that served as a critical defense gateway to Canton and played a pivotal role in early British-Qing military conflicts."
+description: "Bocca Tigris is the estuary of the Pearl River featuring historical fortifications that served as a critical defense gateway to Canton and played a pivotal role in early British-Qing military conflicts."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

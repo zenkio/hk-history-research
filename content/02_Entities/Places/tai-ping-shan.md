@@ -3,6 +3,7 @@ title: "Tai Ping Shan (太平山)"
 title_zh: "太平山"
 tags: ["ai-draft", "bubonic-plague", "colonial-history", "place", "public-health", "sheung-wan", "urban-development"]
 summary: "Tai Ping Shan is a historic district in Sheung Wan that served as a central site for early Chinese settlement and the epicenter of the 1894 bubonic plague outbreak."
+description: "Tai Ping Shan is a historic district in Sheung Wan that served as a central site for early Chinese settlement and the epicenter of the 1894 bubonic plague outbreak."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

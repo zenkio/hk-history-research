@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "district-council", "electoral-reform", "local-governance", "national-security-era", "national-security-law", "political-development"]
 summary: "On May 2, 2023, the Hong Kong government announced a major overhaul of the District Council system, significantly reducing the number of directly elected seats and introducing a stringent candidate vetting mechanism."
+description: "On May 2, 2023, the Hong Kong government announced a major overhaul of the District Council system, significantly reducing the number of directly elected seats and introducing a stringent candidate vetting mechanism."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

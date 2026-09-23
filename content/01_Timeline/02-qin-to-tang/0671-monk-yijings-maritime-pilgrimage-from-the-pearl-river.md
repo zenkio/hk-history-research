@@ -5,6 +5,7 @@ year: 671
 era: "Imperial frontier: Qin to Tang"
 tags: ["671", "ai-draft", "buddhism", "maritime-history", "pearl-river-delta", "qin-to-tang", "tang-dynasty", "yijing"]
 summary: "In 671, the Tang dynasty Buddhist monk Yijing departed from Guangzhou on a maritime pilgrimage to India, navigating through the coastal waters of present-day Hong Kong."
+description: "In 671, the Tang dynasty Buddhist monk Yijing departed from Guangzhou on a maritime pilgrimage to India, navigating through the coastal waters of present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

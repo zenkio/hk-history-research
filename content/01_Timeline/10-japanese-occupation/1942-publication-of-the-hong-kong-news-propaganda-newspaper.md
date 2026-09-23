@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "censorship", "hong-kong-news", "japanese-occupation", "propaganda", "world-war-ii"]
 summary: "Following the British surrender of Hong Kong in December 1941, the Japanese military administration established the Hong Kong News to serve as its primary English-language propaganda organ. The publication enforced strict censorship and promoted Japanese cultural assimilation until the end of the occupation in 1945."
+description: "Following the British surrender of Hong Kong in December 1941, the Japanese military administration established the Hong Kong News to serve as its primary English-language propaganda organ."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

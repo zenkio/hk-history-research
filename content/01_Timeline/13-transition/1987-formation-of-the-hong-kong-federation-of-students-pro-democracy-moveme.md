@@ -6,6 +6,7 @@ year: 1987
 era: "Sino-British negotiations and the transition"
 tags: ["1987", "ai-draft", "basic-law", "democratic-reform", "hong-kong-history", "sovereignty-transition", "student-activism", "transition"]
 summary: "In 1987, the Hong Kong Federation of Students (HKFS) intensified its advocacy for direct elections and democratic reform, significantly influencing the public discourse surrounding the drafting of the Basic Law."
+description: "In 1987, the Hong Kong Federation of Students (HKFS) intensified its advocacy for direct elections and democratic reform, significantly influencing the public discourse surrounding the drafting of the Basic Law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

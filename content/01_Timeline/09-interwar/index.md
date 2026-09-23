@@ -2,6 +2,7 @@
 title: "09 · Interwar Hong Kong: strikes, boycotts and growth (1919-1941)"
 tags: ["ai-draft", "british-colonialism", "canton-hong-kong-boycott", "era-overview", "interwar-history", "labor-strikes", "world-war-two"]
 summary: "This tumultuous era bridges the aftermath of the First World War and the outbreak of the Pacific War, marked by severe labor unrest, nationalist mobilization from mainland China, and rapid modernization. Despite political turbulence and economic shocks, the colony expanded its infrastructure, reformed social practices, and cemented its role as a vital entrepôt before falling to Japanese invasion in **1941**."
+description: "This tumultuous era bridges the aftermath of the First World War and the outbreak of the Pacific War, marked by severe labor unrest, nationalist mobilization from mainland China, and rapid modernization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

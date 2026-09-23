@@ -6,6 +6,7 @@ year: 1965
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1965", "ai-draft", "banking-crisis", "financial-regulation", "hang-seng-bank", "hsbc", "postwar-refugees"]
 summary: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
+description: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

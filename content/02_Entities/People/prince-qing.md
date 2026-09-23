@@ -3,6 +3,7 @@ title: "Prince Qing (慶親王)"
 title_zh: "慶親王"
 tags: ["ai-draft", "british-hong-kong", "diplomacy", "new-territories", "person", "qing-dynasty", "yikuang"]
 summary: "Prince Qing was a high-ranking official of the Qing Dynasty who played a pivotal role in the diplomatic negotiations that shaped the territorial extent of British Hong Kong."
+description: "Prince Qing was a high-ranking official of the Qing Dynasty who played a pivotal role in the diplomatic negotiations that shaped the territorial extent of British Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

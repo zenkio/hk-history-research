@@ -3,6 +3,7 @@ title: "Sam Hui (許冠傑)"
 title_zh: "許冠傑"
 tags: ["1970s", "ai-draft", "cantopop", "games-gamblers-play", "hong-kong-music", "person", "sam-hui"]
 summary: "Sam Hui (許冠傑) is a seminal Hong Kong singer, songwriter, and actor often regarded as the godfather of Cantopop for pioneering the use of vernacular Cantonese in popular music."
+description: "Sam Hui (許冠傑) is a seminal Hong Kong singer, songwriter, and actor often regarded as the godfather of Cantopop for pioneering the use of vernacular Cantonese in popular music."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

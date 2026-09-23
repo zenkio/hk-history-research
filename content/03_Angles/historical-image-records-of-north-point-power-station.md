@@ -2,7 +2,8 @@
 title: "Historical Image Records of North Point Power Station"
 date: 1948-01-01
 tags: ["1948", "1951", "1961", "1970", "hong-kong-industry", "industrial-heritage", "infrastructure", "north-point-power-station", "power-generation"]
-summary: "The **North Point Power Station** was a significant industrial facility in Hong Kong, documented through various photogr"
+summary: "The North Point Power Station was a significant industrial facility in Hong Kong, documented through various photographs spanning from the late 1940s to the early 1970s."
+description: "The North Point Power Station was a significant industrial facility in Hong Kong, documented through various photographs spanning from the late 1940s to the early 1970s."
 confidence: medium
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/north-point-power-station-images/"

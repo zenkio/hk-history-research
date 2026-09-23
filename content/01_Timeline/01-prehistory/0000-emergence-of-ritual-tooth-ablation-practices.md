@@ -5,6 +5,7 @@ year: -1000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "hong-kong-origins", "human-evolution", "neolithic-history", "prehistory", "ritual-practices"]
 summary: "Around 1000 BCE, coastal populations in the Hong Kong region began the practice of ritual tooth ablation, marking a significant development in the social and cultural identity of early Neolithic inhabitants."
+description: "Around 1000 BCE, coastal populations in the Hong Kong region began the practice of ritual tooth ablation, marking a significant development in the social and cultural identity of early Neolithic inhabitants."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

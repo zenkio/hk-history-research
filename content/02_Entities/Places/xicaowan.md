@@ -3,6 +3,7 @@ title: "Xicaowan (西草灣)"
 title_zh: "西草灣"
 tags: ["ai-draft", "lantau-island", "maritime-history", "ming-dynasty", "naval-conflict", "place", "xicaowan"]
 summary: "Xicaowan (西草灣) is a coastal location on Lantau Island historically significant as the site of a 16th-century naval engagement between Portuguese explorers and Ming dynasty forces."
+description: "Xicaowan (西草灣) is a coastal location on Lantau Island historically significant as the site of a 16th-century naval engagement between Portuguese explorers and Ming dynasty forces."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

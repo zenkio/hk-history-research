@@ -3,6 +3,7 @@ title: "Lee Kai-yin (李啟言)"
 title_zh: "李啟言"
 tags: ["ai-draft", "hong-kong-entertainment", "lee-kai-yin", "mirror-concert-accident", "performing-arts", "person", "workplace-safety"]
 summary: "Lee Kai-yin is a professional dancer whose severe injury during a Mirror concert in 2022 sparked a significant public debate regarding workplace safety and the oversight of the live performance industry in Hong Kong."
+description: "Lee Kai-yin is a professional dancer whose severe injury during a Mirror concert in 2022 sparked a significant public debate regarding workplace safety and the oversight of the live performance industry in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

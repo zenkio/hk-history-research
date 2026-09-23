@@ -3,6 +3,7 @@ title: "Li Hongzhang (李鴻章)"
 title_zh: "李鴻章"
 tags: ["ai-draft", "diplomacy", "hong-kong-history", "li-hongzhang", "new-territories", "person", "qing-dynasty"]
 summary: "A prominent late-Qing statesman and diplomat who acted as the primary representative for the Qing government in the negotiations that led to the expansion of British Hong Kong."
+description: "A prominent late-Qing statesman and diplomat who acted as the primary representative for the Qing government in the negotiations that led to the expansion of British Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

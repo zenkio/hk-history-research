@@ -6,6 +6,7 @@ year: 1881
 era: "Kowloon and the Victorian colony"
 tags: ["1881", "ai-draft", "hong-kong-telegraph", "journalism", "media-history", "victorian-colony"]
 summary: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
+description: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

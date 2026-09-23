@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "ai-draft", "causeway-bay-books", "contention", "cross-border-enforcement", "free-speech", "one-country-two-systems"]
 summary: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the erosion of the 'One Country, Two Systems' framework."
+description: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

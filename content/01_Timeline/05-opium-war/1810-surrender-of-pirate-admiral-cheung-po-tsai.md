@@ -6,6 +6,7 @@ year: 1810
 era: "Canton trade and the First Opium War"
 tags: ["1810", "ai-draft", "cheung-po-tsai", "lantau-island", "opium-war", "piracy", "qing-dynasty"]
 summary: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau Island."
+description: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

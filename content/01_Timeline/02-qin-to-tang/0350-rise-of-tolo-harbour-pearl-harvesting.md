@@ -5,6 +5,7 @@ year: 350
 era: "Imperial frontier: Qin to Tang"
 tags: ["350", "ai-draft", "jin-dynasty", "maritime-history", "pearl-harvesting", "qin-to-tang", "tai-po", "tribute-economy"]
 summary: "Around the mid-fourth century, pearl diving began to flourish in Tai Po's Tolo Harbour, establishing a lucrative luxury trade that drew the direct attention of the Chinese imperial court."
+description: "Around the mid-fourth century, pearl diving began to flourish in Tai Po's Tolo Harbour, establishing a lucrative luxury trade that drew the direct attention of the Chinese imperial court."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

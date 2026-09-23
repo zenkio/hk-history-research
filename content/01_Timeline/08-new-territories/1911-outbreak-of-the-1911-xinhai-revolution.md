@@ -6,6 +6,7 @@ year: 1911
 era: "The New Territories lease and the early 20th century"
 tags: ["1911", "ai-draft", "british-colony", "new-territories", "qing-dynasty", "refugees", "xinhai-revolution"]
 summary: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees, capital, and revolutionary activity."
+description: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

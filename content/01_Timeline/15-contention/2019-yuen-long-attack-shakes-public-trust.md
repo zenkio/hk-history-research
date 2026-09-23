@@ -6,6 +6,7 @@ year: 2019
 era: "Political contention and protest"
 tags: ["2019", "2019-protests", "721-incident", "ai-draft", "contention", "new-territories", "police-trust", "yuen-long-attack"]
 summary: "On July 21, 2019, a violent attack by armed men against commuters and protesters at the Yuen Long MTR station severely damaged public trust in the police and deepened the city's political crisis."
+description: "On July 21, 2019, a violent attack by armed men against commuters and protesters at the Yuen Long MTR station severely damaged public trust in the police and deepened the city's political crisis."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

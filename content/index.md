@@ -1,5 +1,6 @@
 ---
 title: Hong Kong History Research
+description: "Hong Kong History Research A living archive of Hong Kong history, focused on 1841 to today."
 ---
 
 # Hong Kong History Research

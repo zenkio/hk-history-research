@@ -3,6 +3,7 @@ title: "No specific individual founders are universally identified as the singul
 title_zh: "香港中華基督教青年會"
 tags: ["ai-draft", "christian-missionary", "colonial-history", "hong-kong-history", "person", "religious-organization", "social-welfare"]
 summary: "The Chinese Young Men's Christian Association of Hong Kong (中華基督教青年會) was established in 1901 to provide social, educational, and spiritual services to the local Chinese population during the colonial era."
+description: "The Chinese Young Men's Christian Association of Hong Kong (中華基督教青年會) was established in 1901 to provide social, educational, and spiritual services to the local Chinese population during the colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

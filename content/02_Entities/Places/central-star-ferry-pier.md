@@ -3,6 +3,7 @@ title: "Central Star Ferry Pier (中環天星碼頭)"
 title_zh: "中環天星碼頭"
 tags: ["ai-draft", "central-star-ferry-pier", "civil-society", "heritage-conservation", "hong-kong-history", "place", "urban-reclamation"]
 summary: "The Central Star Ferry Pier was a prominent modernist waterfront landmark whose controversial demolition in 2006 catalyzed modern heritage conservation and local identity movements in Hong Kong."
+description: "The Central Star Ferry Pier was a prominent modernist waterfront landmark whose controversial demolition in 2006 catalyzed modern heritage conservation and local identity movements in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

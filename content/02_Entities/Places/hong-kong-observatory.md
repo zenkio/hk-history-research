@@ -3,6 +3,7 @@ title: "Hong Kong Observatory (香港天文台)"
 title_zh: "香港天文台"
 tags: ["ai-draft", "colonial-infrastructure", "hong-kong-history", "maritime-history", "meteorology", "place", "tsim-sha-tsui"]
 summary: "The Hong Kong Observatory is a government department established in 1883 that has served as the territory's primary authority for meteorological, geophysical, and timekeeping services."
+description: "The Hong Kong Observatory is a government department established in 1883 that has served as the territory's primary authority for meteorological, geophysical, and timekeeping services."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

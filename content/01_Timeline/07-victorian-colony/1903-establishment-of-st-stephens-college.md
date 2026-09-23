@@ -6,6 +6,7 @@ year: 1903
 era: "Kowloon and the Victorian colony"
 tags: ["1903", "ai-draft", "anglican-church", "bilingualism", "colonial-hong-kong", "education-history", "st-stephens-college", "victorian-colony"]
 summary: "Established in 1903, St. Stephen's College was founded in Hong Kong to provide a bilingual education blending Western and Chinese traditions, reflecting the maturation of the colony's educational landscape and the rise of a bilingual elite."
+description: "Established in 1903, St."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

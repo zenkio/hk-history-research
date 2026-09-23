@@ -3,6 +3,7 @@ title: "Vancouver (溫哥華)"
 title_zh: "溫哥華"
 tags: ["ai-draft", "canada", "diaspora", "migration", "place", "sovereignty", "transnationalism"]
 summary: "A major Canadian city that became a primary destination for Hong Kong emigrants, particularly during the period of uncertainty preceding the 1997 handover."
+description: "A major Canadian city that became a primary destination for Hong Kong emigrants, particularly during the period of uncertainty preceding the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

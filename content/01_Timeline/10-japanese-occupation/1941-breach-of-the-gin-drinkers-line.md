@@ -6,6 +6,7 @@ year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1941", "ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "japanese-occupation", "new-territories", "shing-mun-redoubt", "world-war-ii"]
 summary: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
+description: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

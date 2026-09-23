@@ -2,7 +2,8 @@
 title: "Biography of Hong Kong Resident Henry Jemson Tebbutt"
 date: 1941-01-01
 tags: ["1893", "1917", "1925", "1932", "1941", "1942", "1944", "1945", "1946", "1951", "1967", "1984", "1988", "2023", "hkvdc", "hong-kong-history", "japanese-occupation", "prisoner-of-war", "wwii"]
-summary: "According to the blog post by **Philip Cracknell**, **Henry Jemson Tebbutt** (1893–1967) was an architect and military o"
+summary: "According to the blog post by Philip Cracknell, Henry Jemson Tebbutt (1893–1967) was an architect and military officer who lived in Hong Kong prior to the Second World War."
+description: "According to the blog post by Philip Cracknell, Henry Jemson Tebbutt (1893–1967) was an architect and military officer who lived in Hong Kong prior to the Second World War."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/04/henry-jemson-tebbutt.html"

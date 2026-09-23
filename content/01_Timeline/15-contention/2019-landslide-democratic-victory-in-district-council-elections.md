@@ -6,6 +6,7 @@ year: 2019
 era: "Political contention and protest"
 tags: ["2019", "2019-protests", "ai-draft", "contention", "democracy", "district-council-elections", "local-government", "voting"]
 summary: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
+description: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

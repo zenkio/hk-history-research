@@ -3,6 +3,7 @@ title: "Hakka settlers (客家居民)"
 title_zh: "客家居民"
 tags: ["agriculture", "ai-draft", "hakka", "migration", "new-territories", "person", "qing-dynasty"]
 summary: "Hakka settlers were migrant communities from inland China who played a vital, historically contested role in developing the agricultural landscape and rural society of the Hong Kong region."
+description: "Hakka settlers were migrant communities from inland China who played a vital, historically contested role in developing the agricultural landscape and rural society of the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

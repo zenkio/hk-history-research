@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2006", "ai-draft", "early-hksar", "economic-policy", "hksar-history", "labor-rights", "social-welfare", "statutory-minimum-wage"]
 summary: "In 2006, the Hong Kong government initiated formal discussions on a statutory minimum wage, marking a shift from its traditional commitment to a strictly laissez-faire labor market."
+description: "In 2006, the Hong Kong government initiated formal discussions on a statutory minimum wage, marking a shift from its traditional commitment to a strictly laissez-faire labor market."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

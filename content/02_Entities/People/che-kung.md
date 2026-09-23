@@ -3,6 +3,7 @@ title: "Che Kung (車公)"
 title_zh: "車公"
 tags: ["ai-draft", "che-kung", "folk-religion", "hong-kong-history", "new-territories", "person", "sha-tin"]
 summary: "Che Kung is a revered deity in Hong Kong folk religion, best known for the historic Che Kung Temple in Sha Tin (沙田車公廟) and annual festival rituals."
+description: "Che Kung is a revered deity in Hong Kong folk religion, best known for the historic Che Kung Temple in Sha Tin (沙田車公廟) and annual festival rituals."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

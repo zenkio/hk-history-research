@@ -3,6 +3,7 @@ title: "Leung Chun-ying (梁振英)"
 title_zh: "梁振英"
 tags: ["ai-draft", "basic-law", "chief-executive", "hong-kong-history", "person", "umbrella-movement"]
 summary: "Leung Chun-ying (梁振英) served as the third Chief Executive of Hong Kong from 2012 to 2017, presiding over a period of intense political polarization and constitutional debate."
+description: "Leung Chun-ying (梁振英) served as the third Chief Executive of Hong Kong from 2012 to 2017, presiding over a period of intense political polarization and constitutional debate."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

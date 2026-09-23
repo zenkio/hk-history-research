@@ -3,6 +3,7 @@ title: "D'Aguilar Street (德己立街)"
 title_zh: "德己立街"
 tags: ["ai-draft", "central-district", "colonial-era", "hong-kong-history", "lan-kwai-fong", "place", "urban-development"]
 summary: "D'Aguilar Street is a historically significant thoroughfare in Central, Hong Kong, known for its role in colonial urban development and as the site of the 1993 Lan Kwai Fong disaster."
+description: "D'Aguilar Street is a historically significant thoroughfare in Central, Hong Kong, known for its role in colonial urban development and as the site of the 1993 Lan Kwai Fong disaster."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

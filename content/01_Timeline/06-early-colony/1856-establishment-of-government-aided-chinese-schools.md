@@ -6,6 +6,7 @@ year: 1856
 era: "The early colony"
 tags: ["1856", "ai-draft", "bilingual-education", "colonial-policy", "early-colony", "education-history", "hong-kong-history"]
 summary: "In **1856**, the early British colonial administration in Hong Kong began providing financial support to local Chinese schools, marking the beginning of state-supported education for the Chinese population."
+description: "In 1856, the early British colonial administration in Hong Kong began providing financial support to local Chinese schools, marking the beginning of state-supported education for the Chinese population."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

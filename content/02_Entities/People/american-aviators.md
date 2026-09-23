@@ -3,6 +3,7 @@ title: "American aviators"
 title_zh: "美國飛行員"
 tags: ["ai-draft", "american-aviators", "local-history", "person", "resistance-movement", "world-war-ii"]
 summary: "American aviators downed in the South China Theatre during World War II who became central to rescue narratives involving local Hong Kong fishermen and guerrillas."
+description: "American aviators downed in the South China Theatre during World War II who became central to rescue narratives involving local Hong Kong fishermen and guerrillas."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Yau Ma Tei (油麻地)"
 title_zh: "油麻地"
 tags: ["ai-draft", "colonial-era", "hong-kong-culture", "kowloon", "maritime-heritage", "place", "urban-history"]
 summary: "Yau Ma Tei is a historic district in the West Kowloon area of Hong Kong, serving as a vital nexus for maritime trade, local culture, and grassroots social movements throughout the 20th century."
+description: "Yau Ma Tei is a historic district in the West Kowloon area of Hong Kong, serving as a vital nexus for maritime trade, local culture, and grassroots social movements throughout the 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1100
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1100", "ai-draft", "economic-history", "pearl-harvesting", "song-and-yuan", "song-dynasty", "south-sea-pearls", "tai-po"]
 summary: "Around 1100 during the Song dynasty, Tai Po Hoi emerged as a major imperial pearl harvesting site, where local divers endured severe dangers to collect prized South Sea pearls for the Chinese court."
+description: "Around 1100 during the Song dynasty, Tai Po Hoi emerged as a major imperial pearl harvesting site, where local divers endured severe dangers to collect prized South Sea pearls for the Chinese court."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

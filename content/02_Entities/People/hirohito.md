@@ -3,6 +3,7 @@ title: "Hirohito (昭和天皇)"
 title_zh: "昭和天皇"
 tags: ["ai-draft", "emperor-hirohito", "hong-kong-history", "japanese-occupation", "person", "showa-era", "world-war-ii"]
 summary: "As the Emperor of Japan during the Second World War, Hirohito was the sovereign figurehead under whose authority Japanese forces occupied Hong Kong from 1941 to 1945."
+description: "As the Emperor of Japan during the Second World War, Hirohito was the sovereign figurehead under whose authority Japanese forces occupied Hong Kong from 1941 to 1945."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

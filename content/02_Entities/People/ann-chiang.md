@@ -3,6 +3,7 @@ title: "Ann Chiang (蔣麗芸)"
 title_zh: "蔣麗芸"
 tags: ["ai-draft", "ann-chiang", "dab", "lead-water-scandal", "legislative-council", "person", "public-housing"]
 summary: "Ann Chiang Lai-wan is a former Hong Kong legislator whose political career intersected with major public health controversies, notably the 2015 public housing lead contamination scandal."
+description: "Ann Chiang Lai-wan is a former Hong Kong legislator whose political career intersected with major public health controversies, notably the 2015 public housing lead contamination scandal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

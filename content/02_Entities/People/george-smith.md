@@ -3,6 +3,7 @@ title: "George Smith (佐治·史密夫)"
 title_zh: "佐治·史密夫"
 tags: ["ai-draft", "anglican-church", "colonial-history", "person", "religious-history", "st-johns-cathedral", "victorian-era"]
 summary: "George Smith served as the second Bishop of Victoria and played a foundational role in the institutional development of the Anglican Church in colonial Hong Kong."
+description: "George Smith served as the second Bishop of Victoria and played a foundational role in the institutional development of the Anglican Church in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

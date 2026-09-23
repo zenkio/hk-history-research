@@ -3,6 +3,7 @@ title: "Shek Tong Tsui (石塘咀)"
 title_zh: "石塘咀"
 tags: ["ai-draft", "colonial-policy", "hong-kong-history", "place", "shek-tong-tsui", "urban-development", "western-district"]
 summary: "Shek Tong Tsui was a prominent entertainment district in the early 20th century, historically synonymous with the city's licensed brothel industry before its eventual abolition."
+description: "Shek Tong Tsui was a prominent entertainment district in the early 20th century, historically synonymous with the city's licensed brothel industry before its eventual abolition."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

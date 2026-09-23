@@ -3,6 +3,7 @@ title: "Chan clan (陳氏宗族)"
 title_zh: "陳氏宗族"
 tags: ["ai-draft", "chan-clan", "hakka-culture", "hong-kong-history", "person", "sam-tung-uk", "tsuen-wan"]
 summary: "The Chan clan is one of the historically prominent lineages in the New Territories, best known for their role in the founding and development of Sam Tung Uk Village (三棟屋村)."
+description: "The Chan clan is one of the historically prominent lineages in the New Territories, best known for their role in the founding and development of Sam Tung Uk Village (三棟屋村)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

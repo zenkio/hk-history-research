@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "broadcasting", "digital-television", "early-hksar", "hksar-history", "media-policy", "technological-transition", "telecommunications"]
 summary: "As 2008 drew to a close, Hong Kong finalized its transition to digital terrestrial television (DTT), marking a pivotal shift in the city's media infrastructure."
+description: "As 2008 drew to a close, Hong Kong finalized its transition to digital terrestrial television (DTT), marking a pivotal shift in the city's media infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

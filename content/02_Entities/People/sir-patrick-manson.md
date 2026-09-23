@@ -3,6 +3,7 @@ title: "Sir Patrick Manson (麥遜)"
 title_zh: "麥遜"
 tags: ["ai-draft", "colonial-history", "dairy-farm", "person", "public-health", "sir-patrick-manson", "tropical-medicine"]
 summary: "Sir Patrick Manson was a Scottish physician whose pioneering parasitological research and founding of the Dairy Farm Company significantly shaped public health and commerce in colonial Hong Kong."
+description: "Sir Patrick Manson was a Scottish physician whose pioneering parasitological research and founding of the Dairy Farm Company significantly shaped public health and commerce in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Salesians of Don Bosco (慈幼會)"
 title_zh: "慈幼會"
 tags: ["aberdeen", "ai-draft", "catholic-church", "education", "person", "salesians", "vocational-training"]
 summary: "The Salesians of Don Bosco are a Catholic religious congregation whose foundational educational and industrial work in Hong Kong significantly shaped vocational training and youth welfare from the late nineteenth century onward."
+description: "The Salesians of Don Bosco are a Catholic religious congregation whose foundational educational and industrial work in Hong Kong significantly shaped vocational training and youth welfare from the late nineteenth…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

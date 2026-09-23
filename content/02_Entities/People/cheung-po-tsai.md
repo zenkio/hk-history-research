@@ -3,6 +3,7 @@ title: "Cheung Po Tsai (張保仔)"
 title_zh: "張保仔"
 tags: ["ai-draft", "cheung-chau", "hong-kong-history", "maritime-history", "person", "piracy", "qing-dynasty"]
 summary: "Cheung Po Tsai was a prominent 19th-century pirate leader whose operations in the waters surrounding Hong Kong shaped regional maritime history and colonial administration."
+description: "Cheung Po Tsai was a prominent 19th-century pirate leader whose operations in the waters surrounding Hong Kong shaped regional maritime history and colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

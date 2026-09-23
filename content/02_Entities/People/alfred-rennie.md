@@ -3,6 +3,7 @@ title: "Alfred Rennie"
 title_zh: "艾爾弗雷德·連尼"
 tags: ["ai-draft", "alfred-rennie", "colonial-era", "hong-kong-history", "industrial-history", "person", "ties-keng-leng"]
 summary: "A Canadian entrepreneur whose failed flour milling venture in Tiu Keng Leng inadvertently gave the area its historic name, Rennie's Mill."
+description: "A Canadian entrepreneur whose failed flour milling venture in Tiu Keng Leng inadvertently gave the area its historic name, Rennie's Mill."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

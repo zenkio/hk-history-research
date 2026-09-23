@@ -3,6 +3,7 @@ title: "Augustine Heard (赫德)"
 title_zh: "赫德"
 tags: ["ai-draft", "american-merchants", "hong-kong-colonial", "maritime-history", "nineteenth-century", "pearl-river-delta", "person"]
 summary: "Augustine Heard was a prominent American merchant and shipping magnate who played a significant role in the expansion of maritime trade between the United States and the Pearl River Delta during the mid-19th century."
+description: "Augustine Heard was a prominent American merchant and shipping magnate who played a significant role in the expansion of maritime trade between the United States and the Pearl River Delta during the mid-19th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

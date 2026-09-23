@@ -3,6 +3,7 @@ title: "Tsuen Wan (荃灣)"
 title_zh: "荃灣"
 tags: ["ai-draft", "new-territories", "place", "sam-tung-uk", "textile-industry", "tsuen-wan", "typhoon-wanda"]
 summary: "Tsuen Wan is a major new town and historical industrial hub in the New Territories that transformed from rural settlements into a cornerstone of Hong Kong's postwar manufacturing economy."
+description: "Tsuen Wan is a major new town and historical industrial hub in the New Territories that transformed from rural settlements into a cornerstone of Hong Kong's postwar manufacturing economy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

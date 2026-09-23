@@ -6,6 +6,7 @@ year: 1200
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1200", "ai-draft", "economic-history", "hong-kong-origins", "maritime-history", "salt-production", "song-and-yuan", "song-dynasty"]
 summary: "During the 13th century, the Song Dynasty expanded its administrative reach into the islands around the Pearl River Delta to formalize control over lucrative maritime industries."
+description: "During the 13th century, the Song Dynasty expanded its administrative reach into the islands around the Pearl River Delta to formalize control over lucrative maritime industries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

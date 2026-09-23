@@ -3,6 +3,7 @@ title: "Alex Chow (周永康)"
 title_zh: "周永康"
 tags: ["ai-draft", "democracy", "hong-kong-politics", "person", "protest", "student-activism", "umbrella-movement"]
 summary: "Alex Chow is a student activist and a prominent leader of the 2014 Umbrella Movement in Hong Kong."
+description: "Alex Chow is a student activist and a prominent leader of the 2014 Umbrella Movement in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

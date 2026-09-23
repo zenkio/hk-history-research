@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "border-reopening", "covid-19", "cross-border-travel", "national-security-era", "post-pandemic-recovery"]
 summary: "On January 8, 2023, Hong Kong officially reopened its land and sea borders with mainland China without quarantine requirements, ending nearly three years of strict pandemic-related isolation."
+description: "On January 8, 2023, Hong Kong officially reopened its land and sea borders with mainland China without quarantine requirements, ending nearly three years of strict pandemic-related isolation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

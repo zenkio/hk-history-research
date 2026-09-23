@@ -5,6 +5,7 @@ year: 100
 era: "Imperial frontier: Qin to Tang"
 tags: ["100", "ai-draft", "ancient-hong-kong", "coastal-navigation", "han-dynasty", "imperial-frontier", "maritime-history", "qin-to-tang"]
 summary: "During the second century CE, advancements in navigational knowledge and coastal charting facilitated more frequent transit through the waters surrounding the Hong Kong region."
+description: "During the second century CE, advancements in navigational knowledge and coastal charting facilitated more frequent transit through the waters surrounding the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

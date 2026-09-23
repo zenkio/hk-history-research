@@ -6,6 +6,7 @@ year: 1948
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1948", "ai-draft", "ftu", "labor-movement", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
 summary: "The Hong Kong Federation of Trade Unions was established in 1948 amidst postwar economic hardship and rising political tensions, quickly emerging as a dominant force in local labor and leftist politics."
+description: "The Hong Kong Federation of Trade Unions was established in 1948 amidst postwar economic hardship and rising political tensions, quickly emerging as a dominant force in local labor and leftist politics."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

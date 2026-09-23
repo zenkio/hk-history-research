@@ -5,6 +5,7 @@ year: 736
 era: "Imperial frontier: Qin to Tang"
 tags: ["736", "ai-draft", "imperial-frontier", "maritime-history", "naval-garrison", "pearl-river-delta", "qin-to-tang", "tang-dynasty"]
 summary: "In 736, the Tang Dynasty established a naval garrison at Tuen Mun to secure maritime routes in the Pearl River Delta. This development marked a formal administrative integration of the region into the imperial military system."
+description: "In 736, the Tang Dynasty established a naval garrison at Tuen Mun to secure maritime routes in the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

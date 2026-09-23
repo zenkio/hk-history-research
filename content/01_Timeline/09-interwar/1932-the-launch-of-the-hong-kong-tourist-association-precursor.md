@@ -6,6 +6,7 @@ year: 1932
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1932", "ai-draft", "colonial-administration", "economic-history", "interwar", "interwar-hong-kong", "service-industry", "tourism", "trade"]
 summary: "In 1932, colonial authorities and local stakeholders initiated the first formal efforts to promote Hong Kong as an international destination, signaling the early transition toward a service-based economy."
+description: "In 1932, colonial authorities and local stakeholders initiated the first formal efforts to promote Hong Kong as an international destination, signaling the early transition toward a service-based economy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

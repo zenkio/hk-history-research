@@ -3,6 +3,7 @@ title: "Dorabjee Naorojee Mithaiwala (德庇治·拿羅哲·米泰華拿)"
 title_zh: "德庇治·拿羅哲·米泰華拿"
 tags: ["ai-draft", "colonial-history", "parsi-community", "person", "star-ferry", "transportation", "victoria-harbour"]
 summary: "Dorabjee Naorojee Mithaiwala was a Parsi entrepreneur in colonial Hong Kong best known for founding the iconic Star Ferry service across Victoria Harbour."
+description: "Dorabjee Naorojee Mithaiwala was a Parsi entrepreneur in colonial Hong Kong best known for founding the iconic Star Ferry service across Victoria Harbour."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

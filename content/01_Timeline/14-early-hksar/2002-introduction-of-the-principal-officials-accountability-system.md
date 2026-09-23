@@ -6,6 +6,7 @@ year: 2002
 era: "The early HKSAR"
 tags: ["2002", "ai-draft", "civil-service", "early-hksar", "governance", "hksar-history", "principal-officials-accountability-syste", "tung-chee-hwa"]
 summary: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
+description: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

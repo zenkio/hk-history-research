@@ -3,6 +3,7 @@ title: "Lady May (梅夫人)"
 title_zh: "梅夫人"
 tags: ["ai-draft", "colonial-history", "early-20th-century", "hong-kong-social-welfare", "person", "philanthropy", "women-in-history"]
 summary: "Lady May, the wife of Governor Sir Henry May, was a prominent figure in early 20th-century Hong Kong social work, best known for her role in establishing the Hong Kong Women's Relief Association."
+description: "Lady May, the wife of Governor Sir Henry May, was a prominent figure in early 20th-century Hong Kong social work, best known for her role in establishing the Hong Kong Women's Relief Association."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

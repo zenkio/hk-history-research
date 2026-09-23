@@ -3,6 +3,7 @@ title: "Emperor Liu Chang (劉鋹)"
 title_zh: "劉鋹"
 tags: ["ai-draft", "five-dynasties", "maritime-history", "pearl-garrison", "person", "southern-han", "tuen-mun"]
 summary: "As the final ruler of the Southern Han (南漢) dynasty, Liu Chang oversaw the formal institutionalization of the Pearl Garrison (屯門寨) in the Tuen Mun area, marking a significant early administrative milestone in Hong Kong's history."
+description: "As the final ruler of the Southern Han (南漢) dynasty, Liu Chang oversaw the formal institutionalization of the Pearl Garrison (屯門寨) in the Tuen Mun area, marking a significant early administrative milestone in Hong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

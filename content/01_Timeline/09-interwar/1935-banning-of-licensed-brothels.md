@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1935", "ai-draft", "colonial-policy", "interwar", "interwar-period", "prohibition", "social-history"]
 summary: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
+description: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

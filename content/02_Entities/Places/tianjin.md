@@ -3,6 +3,7 @@ title: "Tianjin (天津)"
 title_zh: "天津"
 tags: ["ai-draft", "colonial-history", "foreign-relations", "opium-trade", "place", "qing-dynasty", "treaty-ports"]
 summary: "A major port city in northern China whose 19th-century treaties profoundly expanded British influence and trade privileges, significantly impacting the colonial trajectory of Hong Kong."
+description: "A major port city in northern China whose 19th-century treaties profoundly expanded British influence and trade privileges, significantly impacting the colonial trajectory of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

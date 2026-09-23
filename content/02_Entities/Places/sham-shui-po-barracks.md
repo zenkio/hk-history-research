@@ -3,6 +3,7 @@ title: "Sham Shui Po Barracks (深水埗軍營)"
 title_zh: "深水埗軍營"
 tags: ["ai-draft", "colonial-hong-kong", "heritage-conservation", "military-history", "place", "sham-shui-po", "world-war-ii"]
 summary: "The Sham Shui Po Barracks was a significant British military facility that served as a central prisoner-of-war camp during the Japanese occupation of Hong Kong."
+description: "The Sham Shui Po Barracks was a significant British military facility that served as a central prisoner-of-war camp during the Japanese occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

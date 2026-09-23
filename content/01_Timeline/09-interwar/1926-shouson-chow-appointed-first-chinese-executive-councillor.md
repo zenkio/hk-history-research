@@ -6,6 +6,7 @@ year: 1926
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1926", "ai-draft", "canton-hong-kong-strike", "colonial-governance", "executive-council", "interwar", "interwar-hong-kong", "shouson-chow"]
 summary: "On July 9, 1926, Sir Shouson Chow became the first Chinese member appointed to Hong Kong's Executive Council, marking a milestone in the formal inclusion of local elites within the colonial administration."
+description: "On July 9, 1926, Sir Shouson Chow became the first Chinese member appointed to Hong Kong's Executive Council, marking a milestone in the formal inclusion of local elites within the colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

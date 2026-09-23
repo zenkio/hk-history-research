@@ -6,6 +6,7 @@ year: 1851
 era: "The early colony"
 tags: ["1851", "ai-draft", "colonial-history", "early-colony", "maritime-history", "meteorology", "nineteenth-century", "typhoons"]
 summary: "Around 1851, early meteorological tracking efforts began in Hong Kong to mitigate the significant threat typhoons posed to maritime commerce."
+description: "Around 1851, early meteorological tracking efforts began in Hong Kong to mitigate the significant threat typhoons posed to maritime commerce."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

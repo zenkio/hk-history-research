@@ -3,6 +3,7 @@ title: "Cheung Ying (張瑛)"
 title_zh: "張瑛"
 tags: ["ai-draft", "cantonese-cinema", "cheung-ying", "film-history", "hong-kong-history", "person", "union-film"]
 summary: "Cheung Ying was a prominent Hong Kong film actor and director who co-founded Union Film Enterprise, playing a vital role in shaping the golden age of Cantonese cinema during the mid-20th century."
+description: "Cheung Ying was a prominent Hong Kong film actor and director who co-founded Union Film Enterprise, playing a vital role in shaping the golden age of Cantonese cinema during the mid-20th century."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

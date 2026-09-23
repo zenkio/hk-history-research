@@ -3,6 +3,7 @@ title: "Alan Tam (譚詠麟)"
 title_zh: "譚詠麟"
 tags: ["1980s", "ai-draft", "alan-tam", "cantopop", "hong-kong-music", "person", "the-wynners"]
 summary: "Alan Tam (譚詠麟) is a legendary Cantopop singer and actor whose immense popularity in the 1980s helped define the golden age of Hong Kong popular culture."
+description: "Alan Tam (譚詠麟) is a legendary Cantopop singer and actor whose immense popularity in the 1980s helped define the golden age of Hong Kong popular culture."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

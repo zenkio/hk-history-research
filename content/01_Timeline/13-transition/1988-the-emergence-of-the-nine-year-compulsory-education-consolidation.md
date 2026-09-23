@@ -6,6 +6,7 @@ year: 1988
 era: "Sino-British negotiations and the transition"
 tags: ["1988", "ai-draft", "colonial-era", "education-history", "educational-policy", "hong-kong-1980s", "social-development", "transition"]
 summary: "By 1988, the consolidation of the nine-year compulsory education system became a hallmark of Hong Kong's social development during the transitional period leading up to the 1997 handover."
+description: "By 1988, the consolidation of the nine-year compulsory education system became a hallmark of Hong Kong's social development during the transitional period leading up to the 1997 handover."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

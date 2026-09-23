@@ -3,6 +3,7 @@ title: "None specifically identified as primary leaders"
 title_zh: "香港迪士尼樂園勞工抗議"
 tags: ["ai-draft", "hong-kong-disneyland", "hong-kong-history", "industrial-relations", "labor-movements", "lantau-island", "person"]
 summary: "A series of labor disputes and industrial actions occurring during the construction and early operation of Hong Kong Disneyland, highlighting tensions between multinational corporate practices and local labor standards."
+description: "A series of labor disputes and industrial actions occurring during the construction and early operation of Hong Kong Disneyland, highlighting tensions between multinational corporate practices and local labor standards."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

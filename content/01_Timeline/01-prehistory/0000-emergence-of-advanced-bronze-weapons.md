@@ -5,6 +5,7 @@ year: -800
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "bronze-age", "prehistory", "social-stratification", "weapons"]
 summary: "Around **c. 800 BCE**, the archaeological record of the Hong Kong region reveals an influx of sophisticated bronze weapons, marking a technological and social turning point during the late Bronze Age."
+description: "Around c. 800 BCE, the archaeological record of the Hong Kong region reveals an influx of sophisticated bronze weapons, marking a technological and social turning point during the late Bronze Age."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

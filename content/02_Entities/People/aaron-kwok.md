@@ -3,6 +3,7 @@ title: "Aaron Kwok (郭富城)"
 title_zh: "郭富城"
 tags: ["1990s", "aaron-kwok", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-cinema", "person"]
 summary: "Aaron Kwok is a prominent Hong Kong singer and actor who rose to fame in the early 1990s as one of Cantopop's 'Four Heavenly Kings'."
+description: "Aaron Kwok is a prominent Hong Kong singer and actor who rose to fame in the early 1990s as one of Cantopop's 'Four Heavenly Kings'."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

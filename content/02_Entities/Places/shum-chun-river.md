@@ -3,6 +3,7 @@ title: "Shum Chun River (深圳河)"
 title_zh: "深圳河"
 tags: ["ai-draft", "border-geography", "colonial-era", "hong-kong-history", "new-territories", "place", "shum-chun-river"]
 summary: "The Shum Chun River acts as the primary natural border between the Hong Kong Special Administrative Region and mainland China, serving as a critical water source and administrative boundary throughout history."
+description: "The Shum Chun River acts as the primary natural border between the Hong Kong Special Administrative Region and mainland China, serving as a critical water source and administrative boundary throughout history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

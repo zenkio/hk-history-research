@@ -6,6 +6,7 @@ year: 1999
 era: "The early HKSAR"
 tags: ["1999", "ai-draft", "crony-capitalism", "cyberport", "early-hksar", "economy", "hksar-history", "pccw", "tung-chee-hwa"]
 summary: "In March 1999, the Hong Kong government controversially granted the Cyberport development rights to Richard Li's PCCW without an open bidding process, intensifying debates over government-business collusion."
+description: "In March 1999, the Hong Kong government controversially granted the Cyberport development rights to Richard Li's PCCW without an open bidding process, intensifying debates over government-business collusion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "british-colony", "early-hksar", "hksar", "one-country-two-systems", "transfer-of-sovereignty"]
 summary: "On July 1, 1997, the United Kingdom transferred control of Hong Kong to the People's Republic of China, ending over 150 years of British colonial rule and establishing the Hong Kong Special Administrative Region."
+description: "On July 1, 1997, the United Kingdom transferred control of Hong Kong to the People's Republic of China, ending over 150 years of British colonial rule and establishing the Hong Kong Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

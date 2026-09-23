@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "civil-society", "historical-memory", "hong-kong-history", "june-4th-museum", "national-security-era", "national-security-law"]
 summary: "On June 2, 2021, the June 4th Museum in Hong Kong was shuttered by its organizers following an investigation by the Food and Environmental Hygiene Department, marking a shift in the city's approach to historical commemoration."
+description: "On June 2, 2021, the June 4th Museum in Hong Kong was shuttered by its organizers following an investigation by the Food and Environmental Hygiene Department, marking a shift in the city's approach to historical…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

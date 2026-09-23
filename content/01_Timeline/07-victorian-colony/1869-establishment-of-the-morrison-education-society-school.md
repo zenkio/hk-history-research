@@ -6,6 +6,7 @@ year: 1869
 era: "Kowloon and the Victorian colony"
 tags: ["1869", "ai-draft", "colonial-history", "cultural-exchange", "education-history", "hong-kong-studies", "missionary-work", "victorian-colony"]
 summary: "Established as a bridge for East-West intellectual exchange, this institution played a crucial role in forming Hong Kong's early bilingual elite."
+description: "Established as a bridge for East-West intellectual exchange, this institution played a crucial role in forming Hong Kong's early bilingual elite."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

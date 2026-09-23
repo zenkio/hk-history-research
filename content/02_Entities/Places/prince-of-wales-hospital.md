@@ -3,6 +3,7 @@ title: "Prince of Wales Hospital (威爾斯親王醫院)"
 title_zh: "威爾斯親王醫院"
 tags: ["ai-draft", "hong-kong-history", "medical-infrastructure", "place", "public-health", "sars", "shatin"]
 summary: "Located in Shatin, this major public hospital is a key medical institution in the New Territories and was the initial epicenter of the 2003 SARS outbreak in Hong Kong."
+description: "Located in Shatin, this major public hospital is a key medical institution in the New Territories and was the initial epicenter of the 2003 SARS outbreak in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

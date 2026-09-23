@@ -3,6 +3,7 @@ title: "Ben Chung (鍾錦麟)"
 title_zh: "鍾錦麟"
 tags: ["ai-draft", "ben-chung", "district-council", "hong-kong-47", "national-security-law", "person", "sai-kung"]
 summary: "Ben Chung (鍾錦麟) is a former Sai Kung District Councillor and a notable figure involved in the January 2021 mass arrest of pro-democracy activists."
+description: "Ben Chung (鍾錦麟) is a former Sai Kung District Councillor and a notable figure involved in the January 2021 mass arrest of pro-democracy activists."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

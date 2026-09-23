@@ -3,6 +3,7 @@ title: "Chuenpee (穿鼻)"
 title_zh: "穿鼻"
 tags: ["ai-draft", "charles-elliot", "chuenpee", "convention-of-chuenpee", "first-opium-war", "place", "qing-dynasty"]
 summary: "Chuenpee is a coastal location in Guangdong province historically significant for early British-Qing military engagements during the First Opium War and the drafting of the abortive Convention of Chuenpee in 1841."
+description: "Chuenpee is a coastal location in Guangdong province historically significant for early British-Qing military engagements during the First Opium War and the drafting of the abortive Convention of Chuenpee in 1841."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

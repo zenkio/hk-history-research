@@ -6,6 +6,7 @@ year: 1912
 era: "The New Territories lease and the early 20th century"
 tags: ["1912", "ai-draft", "british-colony", "colonial-governance", "early-20th-century", "higher-education", "new-territories", "university-history"]
 summary: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and modern professionals."
+description: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

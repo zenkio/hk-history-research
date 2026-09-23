@@ -6,6 +6,7 @@ year: 1854
 era: "The early colony"
 tags: ["1854", "ai-draft", "british-empire", "colonial-history", "early-colony", "mercantile-society", "scottish-diaspora", "social-history"]
 summary: "In 1854, the establishment of the St. Andrew's Society of Hong Kong formalised the social influence of the Scottish community within the burgeoning British colonial administration."
+description: "In 1854, the establishment of the St. Andrew's Society of Hong Kong formalised the social influence of the Scottish community within the burgeoning British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

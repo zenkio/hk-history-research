@@ -6,6 +6,7 @@ year: 1913
 era: "The New Territories lease and the early 20th century"
 tags: ["1913", "ai-draft", "colonial-history", "education-ordinance", "new-territories", "republican-nationalism", "vernacular-schools"]
 summary: "In 1913, the Hong Kong colonial government enacted the Education Ordinance to bring all private vernacular Chinese schools under official supervision, primarily aiming to monitor and curb the spread of anti-colonial republican nationalism."
+description: "In 1913, the Hong Kong colonial government enacted the Education Ordinance to bring all private vernacular Chinese schools under official supervision, primarily aiming to monitor and curb the spread of anti-colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

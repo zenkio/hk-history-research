@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "british-army-aid-group", "intelligence-network", "japanese-occupation", "kempeitai", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, underground operatives collaborating with the British Army Aid Group gathered crucial military intelligence inside the occupied city despite severe risks of torture and execution by the Kempeitai."
+description: "During the Japanese occupation of Hong Kong, underground operatives collaborating with the British Army Aid Group gathered crucial military intelligence inside the occupied city despite severe risks of torture and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

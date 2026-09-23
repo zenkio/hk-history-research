@@ -1,7 +1,8 @@
 ---
 title: "Mortar Deployment During the 1941 Battle for Hong Kong"
 tags: ["1941", "1948", "2025", "battle-for-hong-kong", "infantry-weapons", "japanese-occupation", "military-history", "wwii"]
-summary: "During the **December 1941** Battle for Hong Kong, British and Canadian forces faced significant equipment shortages reg"
+summary: "During the December 1941 Battle for Hong Kong, British and Canadian forces faced significant equipment shortages regarding infantry mortars. According to the London Gazette report by Major General C. M."
+description: "During the December 1941 Battle for Hong Kong, British and Canadian forces faced significant equipment shortages regarding infantry mortars. According to the London Gazette report by Major General C. M."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2025/10/mortars-deployed-in-battle-for-hong.html"

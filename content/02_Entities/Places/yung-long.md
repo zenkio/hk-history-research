@@ -3,6 +3,7 @@ title: "Yung Long (榕朗)"
 title_zh: "榕朗"
 tags: ["ai-draft", "bark-cloth", "local-history", "new-territories", "place", "yung-long"]
 summary: "Yung Long is a historical locality in Hong Kong whose traditional economy and regional networks are occasionally referenced in studies concerning early indigenous technologies such as bark cloth manufacturing."
+description: "Yung Long is a historical locality in Hong Kong whose traditional economy and regional networks are occasionally referenced in studies concerning early indigenous technologies such as bark cloth manufacturing."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

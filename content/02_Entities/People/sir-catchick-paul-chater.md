@@ -3,6 +3,7 @@ title: "Sir Catchick Paul Chater (遮打)"
 title_zh: "遮打"
 tags: ["ai-draft", "business-leaders", "central", "colonial-history", "infrastructure", "person", "star-ferry"]
 summary: "Sir Catchick Paul Chater was an Armenian-born businessman, municipal leader, and unofficial member of the Executive and Legislative Councils who played a foundational role in shaping early Hong Kong's financial and physical infrastructure."
+description: "Sir Catchick Paul Chater was an Armenian-born businessman, municipal leader, and unofficial member of the Executive and Legislative Councils who played a foundational role in shaping early Hong Kong's financial and…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

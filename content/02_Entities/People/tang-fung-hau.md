@@ -3,6 +3,7 @@ title: "Tang Fung-hau (鄧馮遜)"
 title_zh: "鄧馮遜"
 tags: ["ai-draft", "local-history", "lung-yeuk-tau", "new-territories", "person", "tang-clan"]
 summary: "Tang Fung-hau is a historical figure associated with the lineage of the Tang clan of Kam Tin and the construction of the Tang Chung Ling Ancestral Hall in Lung Yeuk Tau."
+description: "Tang Fung-hau is a historical figure associated with the lineage of the Tang clan of Kam Tin and the construction of the Tang Chung Ling Ancestral Hall in Lung Yeuk Tau."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

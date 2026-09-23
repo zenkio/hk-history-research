@@ -6,6 +6,7 @@ year: 1877
 era: "Kowloon and the Victorian colony"
 tags: ["1877", "ai-draft", "colonial-history", "john-pope-hennessy", "property-rights", "racial-policy", "victorian-colony", "victorian-hong-kong"]
 summary: "In 1877, Governor John Pope Hennessy introduced progressive reforms in Hong Kong that dismantled discriminatory colonial laws, allowing Chinese residents to purchase property in Central and naturalize as British subjects."
+description: "In 1877, Governor John Pope Hennessy introduced progressive reforms in Hong Kong that dismantled discriminatory colonial laws, allowing Chinese residents to purchase property in Central and naturalize as British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

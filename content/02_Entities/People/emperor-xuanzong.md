@@ -3,6 +3,7 @@ title: "Emperor Xuanzong (唐玄宗)"
 title_zh: "唐玄宗"
 tags: ["ai-draft", "imperial-china", "naval-history", "person", "tang-dynasty", "tuen-mun"]
 summary: "The seventh emperor of the Tang Dynasty whose administration established a naval supply depot at Tuen Mun (屯門) to support maritime expeditions."
+description: "The seventh emperor of the Tang Dynasty whose administration established a naval supply depot at Tuen Mun (屯門) to support maritime expeditions."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

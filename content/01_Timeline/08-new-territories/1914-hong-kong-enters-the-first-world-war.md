@@ -6,6 +6,7 @@ year: 1914
 era: "The New Territories lease and the early 20th century"
 tags: ["1914", "ai-draft", "british-empire", "colonial-history", "internment", "new-territories", "world-war-i"]
 summary: "Following Britain's declaration of war on August 4, 1914, Hong Kong rapidly transitioned to a wartime footing, mobilizing its defense corps, interning German residents, and seizing enemy commercial assets."
+description: "Following Britain's declaration of war on August 4, 1914, Hong Kong rapidly transitioned to a wartime footing, mobilizing its defense corps, interning German residents, and seizing enemy commercial assets."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

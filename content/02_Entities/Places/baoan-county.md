@@ -3,6 +3,7 @@ title: "Baoan County (寶安縣)"
 title_zh: "寶安縣"
 tags: ["administrative-geography", "ai-draft", "baoan", "hong-kong-history", "imperial-china", "new-territories", "place"]
 summary: "Baoan County was a historical administrative division in the Pearl River Delta that encompassed the territory of present-day Hong Kong and Shenzhen for much of the imperial era."
+description: "Baoan County was a historical administrative division in the Pearl River Delta that encompassed the territory of present-day Hong Kong and Shenzhen for much of the imperial era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1841
 era: "The early colony"
 tags: ["1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "nineteenth-century", "urban-planning", "victoria-city"]
 summary: "In 1841, the British colonial government initiated the planning of Victoria City, a foundational urban grid that shaped the geographical and social structure of early Hong Kong."
+description: "In 1841, the British colonial government initiated the planning of Victoria City, a foundational urban grid that shaped the geographical and social structure of early Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

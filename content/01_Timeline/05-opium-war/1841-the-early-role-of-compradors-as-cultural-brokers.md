@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "canton-system", "colonial-transition", "compradors", "cultural-brokerage", "first-opium-war", "opium-war", "trade-history"]
 summary: "An examination of how Chinese intermediaries facilitated the transition from the Qing trade monopoly to British colonial administration in early Hong Kong."
+description: "An examination of how Chinese intermediaries facilitated the transition from the Qing trade monopoly to British colonial administration in early Hong Kong."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

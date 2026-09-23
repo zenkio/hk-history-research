@@ -3,6 +3,7 @@ title: "Lee Cheuk-yan (李卓人)"
 title_zh: "李卓人"
 tags: ["ai-draft", "hong-kong-politics", "human-rights", "labour-movement", "legislative-council", "person", "pro-democracy-camp"]
 summary: "Lee Cheuk-yan is a prominent Hong Kong trade unionist, former politician, and activist whose career spans the transition from British colonial rule to the post-1997 era."
+description: "Lee Cheuk-yan is a prominent Hong Kong trade unionist, former politician, and activist whose career spans the transition from British colonial rule to the post-1997 era."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

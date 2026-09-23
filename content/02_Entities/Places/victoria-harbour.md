@@ -3,6 +3,7 @@ title: "Victoria Harbour (維多利亞港)"
 title_zh: "維多利亞港"
 tags: ["ai-draft", "british-colonialism", "hong-kong-history", "maritime-trade", "place", "reclamation", "victoria-harbour"]
 summary: "Victoria Harbour is the natural landform separating Hong Kong Island and the Kowloon Peninsula, serving as the foundational geographic anchor for the region's development into a major global trade and financial hub."
+description: "Victoria Harbour is the natural landform separating Hong Kong Island and the Kowloon Peninsula, serving as the foundational geographic anchor for the region's development into a major global trade and financial hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

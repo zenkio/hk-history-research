@@ -6,6 +6,7 @@ year: 1846
 era: "The early colony"
 tags: ["1846", "ai-draft", "colonial-infrastructure", "early-colony", "logistics", "maritime-history", "steam-power", "victorian-era"]
 summary: "In 1846, the establishment of the first dedicated steamship wharf in Victoria City marked a pivotal moment in Hong Kong’s transition from a fledgling naval station to a primary logistical hub for East Asian trade."
+description: "In 1846, the establishment of the first dedicated steamship wharf in Victoria City marked a pivotal moment in Hong Kong’s transition from a fledgling naval station to a primary logistical hub for East Asian trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

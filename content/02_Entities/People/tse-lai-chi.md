@@ -3,6 +3,7 @@ title: "Tse Lai-chi (謝雨詩)"
 title_zh: "謝雨詩"
 tags: ["ai-draft", "collaboration", "hong-kong-history", "japanese-occupation", "local-elites", "person", "second-world-war"]
 summary: "Tse Lai-chi was a prominent local figure during the Japanese occupation of Hong Kong who served on collaborative administrative councils."
+description: "Tse Lai-chi was a prominent local figure during the Japanese occupation of Hong Kong who served on collaborative administrative councils."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

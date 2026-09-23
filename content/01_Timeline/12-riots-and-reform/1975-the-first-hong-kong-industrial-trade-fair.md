@@ -6,6 +6,7 @@ year: 1975
 era: "Riots and the MacLehose reforms"
 tags: ["1970s", "1975", "ai-draft", "economic-development", "industrial-history", "made-in-hong-kong", "manufacturing", "riots-and-reform", "trade-fair"]
 summary: "Held in 1975, the First Hong Kong Industrial Trade Fair served as a pivotal showcase for the territory’s manufacturing prowess, cementing the 'Made in Hong Kong' brand on the global stage."
+description: "Held in 1975, the First Hong Kong Industrial Trade Fair served as a pivotal showcase for the territory’s manufacturing prowess, cementing the 'Made in Hong Kong' brand on the global stage."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

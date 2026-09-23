@@ -6,6 +6,7 @@ year: 1981
 era: "Riots and the MacLehose reforms"
 tags: ["1981", "ai-draft", "light-rail-transit", "maclehose-era", "new-towns", "riots-and-reform", "transport-history", "urban-planning"]
 summary: "In 1981, the colonial government initiated the planning of the Light Rail Transit system to address the transit needs of the rapidly expanding New Territories new towns."
+description: "In 1981, the colonial government initiated the planning of the Light Rail Transit system to address the transit needs of the rapidly expanding New Territories new towns."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

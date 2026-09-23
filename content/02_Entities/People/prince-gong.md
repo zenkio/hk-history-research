@@ -3,6 +3,7 @@ title: "Prince Gong (恭親王)"
 title_zh: "恭親王"
 tags: ["ai-draft", "colonial-era", "convention-of-peking", "diplomatic-history", "kowloon-peninsula", "person", "qing-dynasty"]
 summary: "Prince Gong was a prominent Qing dynasty statesman who represented the imperial government in the negotiations that led to the permanent cession of the Kowloon Peninsula to Britain."
+description: "Prince Gong was a prominent Qing dynasty statesman who represented the imperial government in the negotiations that led to the permanent cession of the Kowloon Peninsula to Britain."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

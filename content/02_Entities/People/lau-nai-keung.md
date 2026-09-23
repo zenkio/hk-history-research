@@ -3,6 +3,7 @@ title: "Lau Nai-keung (劉乃強)"
 title_zh: "劉乃強"
 tags: ["ai-draft", "basic-law", "history-of-hk", "hong-kong-politics", "meeting-point", "person", "pro-beijing"]
 summary: "Lau Nai-keung (劉乃強) was a prominent Hong Kong politician and commentator known for his transition from a democracy activist in the 1980s to a staunch supporter of Beijing's policies in his later career."
+description: "Lau Nai-keung (劉乃強) was a prominent Hong Kong politician and commentator known for his transition from a democracy activist in the 1980s to a staunch supporter of Beijing's policies in his later career."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

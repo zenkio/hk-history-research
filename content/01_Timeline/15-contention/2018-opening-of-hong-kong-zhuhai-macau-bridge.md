@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "ai-draft", "contention", "economy", "greater-bay-area", "infrastructure", "regional-integration", "transportation"]
 summary: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta. The megaproject was designed to advance regional integration, though it sparked considerable debate over costs, utility, and political autonomy."
+description: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

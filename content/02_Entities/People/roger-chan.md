@@ -3,6 +3,7 @@ title: "Roger Chan (曾浩樂)"
 title_zh: "曾浩樂"
 tags: ["2000s", "ai-draft", "bus-uncle", "internet-culture", "media-history", "person"]
 summary: "Roger Chan is the individual whose surreptitiously filmed mobile video of a verbal altercation on a Hong Kong bus became the city's first major viral internet phenomenon in 2006."
+description: "Roger Chan is the individual whose surreptitiously filmed mobile video of a verbal altercation on a Hong Kong bus became the city's first major viral internet phenomenon in 2006."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

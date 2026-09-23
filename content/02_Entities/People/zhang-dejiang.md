@@ -3,6 +3,7 @@ title: "Zhang Dejiang (張德江)"
 title_zh: "張德江"
 tags: ["831-decision", "ai-draft", "beijing-hong-kong-relations", "constitutional-reform", "npcsc", "person", "political-history"]
 summary: "Zhang Dejiang was a senior Chinese official who served as Chairman of the Standing Committee of the National People's Congress (NPCSC) and oversaw Hong Kong affairs during a period of significant political tension."
+description: "Zhang Dejiang was a senior Chinese official who served as Chairman of the Standing Committee of the National People's Congress (NPCSC) and oversaw Hong Kong affairs during a period of significant political tension."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

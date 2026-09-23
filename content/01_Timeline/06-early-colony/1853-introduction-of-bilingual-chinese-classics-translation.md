@@ -6,6 +6,7 @@ year: 1853
 era: "The early colony"
 tags: ["1853", "ai-draft", "bilingual-translation", "confucian-classics", "early-colony", "james-legge", "sinology"]
 summary: "In **1853**, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
+description: "In 1853, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

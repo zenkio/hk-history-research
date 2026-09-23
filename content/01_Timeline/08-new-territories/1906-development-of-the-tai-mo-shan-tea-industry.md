@@ -6,6 +6,7 @@ year: 1906
 era: "The New Territories lease and the early 20th century"
 tags: ["1906", "agricultural-history", "ai-draft", "colonial-history", "hakka-culture", "new-territories", "tea-industry"]
 summary: "In the early 20th century, the British colonial administration encouraged the expansion of tea cultivation on the slopes of Tai Mo Shan as part of an effort to modernize the agricultural output of the newly leased New Territories."
+description: "In the early 20th century, the British colonial administration encouraged the expansion of tea cultivation on the slopes of Tai Mo Shan as part of an effort to modernize the agricultural output of the newly leased New…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

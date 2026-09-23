@@ -3,6 +3,7 @@ title: "Chinese Manufacturers' Association (香港中華廠商聯合會)"
 title_zh: "香港中華廠商聯合會"
 tags: ["ai-draft", "business-history", "hong-kong-economy", "industrial-history", "manufacturing", "person", "trade-associations"]
 summary: "The Chinese Manufacturers' Association of Hong Kong is a prominent industrial and commercial organization that played a critical role in the transition of Hong Kong from an entrepôt to a global manufacturing hub."
+description: "The Chinese Manufacturers' Association of Hong Kong is a prominent industrial and commercial organization that played a critical role in the transition of Hong Kong from an entrepôt to a global manufacturing hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

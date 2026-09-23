@@ -3,6 +3,7 @@ title: "Jehangir Ruttonjee (律敦治)"
 title_zh: "律敦治"
 tags: ["ai-draft", "colonial-history", "parsi-community", "person", "philanthropy", "public-health", "ruttonjee"]
 summary: "Jehangir Ruttonjee was a prominent Hong Kong Parsi philanthropist and businessman whose pivotal efforts in public health led to the establishment of the Ruttonjee Sanatorium to combat tuberculosis."
+description: "Jehangir Ruttonjee was a prominent Hong Kong Parsi philanthropist and businessman whose pivotal efforts in public health led to the establishment of the Ruttonjee Sanatorium to combat tuberculosis."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

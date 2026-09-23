@@ -3,6 +3,7 @@ title: "Stanley Internment Camp (赤柱拘留營)"
 title_zh: "赤柱拘留營"
 tags: ["ai-draft", "british-colonial-history", "hong-kong-history", "japanese-occupation", "place", "stanley", "world-war-two"]
 summary: "The Stanley Internment Camp was the primary facility used by Japanese forces during the occupation of Hong Kong to hold civilian internees, representing a pivotal site of suffering and resilience during the Second World War."
+description: "The Stanley Internment Camp was the primary facility used by Japanese forces during the occupation of Hong Kong to hold civilian internees, representing a pivotal site of suffering and resilience during the Second World…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

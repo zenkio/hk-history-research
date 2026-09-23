@@ -6,6 +6,7 @@ year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1928", "ai-draft", "aviation", "colonial-history", "infrastructure", "interwar", "interwar-period", "kowloon"]
 summary: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
+description: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

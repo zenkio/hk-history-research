@@ -3,6 +3,7 @@ title: "Peter Godber (葛柏)"
 title_zh: "葛柏"
 tags: ["1970s-hong-kong", "ai-draft", "colonial-history", "icac", "person", "peter-godber", "police-corruption"]
 summary: "Peter Godber was a high-ranking British colonial police officer whose 1973 corruption scandal served as the catalyst for the establishment of the Independent Commission Against Corruption (ICAC)."
+description: "Peter Godber was a high-ranking British colonial police officer whose 1973 corruption scandal served as the catalyst for the establishment of the Independent Commission Against Corruption (ICAC)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

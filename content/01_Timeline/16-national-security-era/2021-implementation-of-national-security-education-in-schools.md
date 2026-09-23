@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "curriculum", "education-reform", "national-security-era", "national-security-law", "patriotism", "schools"]
 summary: "In September 2021, the Hong Kong government introduced comprehensive national security education across all primary and secondary schools to foster patriotism and law-abiding awareness."
+description: "In September 2021, the Hong Kong government introduced comprehensive national security education across all primary and secondary schools to foster patriotism and law-abiding awareness."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

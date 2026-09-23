@@ -3,6 +3,7 @@ title: "Boundary Street (界限街)"
 title_zh: "界限街"
 tags: ["ai-draft", "boundary-street", "british-colony", "convention-of-peking", "kowloon", "place", "urban-history"]
 summary: "Boundary Street is an east-west thoroughfare in Kowloon that historically marked the demarcation line between the British-administered colony and the territories leased from Qing China."
+description: "Boundary Street is an east-west thoroughfare in Kowloon that historically marked the demarcation line between the British-administered colony and the territories leased from Qing China."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

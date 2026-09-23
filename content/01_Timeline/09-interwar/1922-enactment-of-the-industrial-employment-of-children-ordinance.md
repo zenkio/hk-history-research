@@ -6,6 +6,7 @@ year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1922", "ai-draft", "child-labor", "colonial-governance", "industrialization", "interwar", "labor-history"]
 summary: "In **1922**, the Hong Kong government enacted the Industrial Employment of Children Ordinance, establishing the first statutory limits on child labor amidst growing industrialization and labor activism."
+description: "In 1922, the Hong Kong government enacted the Industrial Employment of Children Ordinance, establishing the first statutory limits on child labor amidst growing industrialization and labor activism."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "None specifically identified as the sole founder"
 title_zh: "香港天文台的成立"
 tags: ["ai-draft", "colonial-history", "maritime-trade", "meteorology", "person", "scientific-history", "tsim-sha-tsui"]
 summary: "The Hong Kong Observatory was established in 1883 to provide meteorological and time services, representing a critical intersection of colonial administration, maritime safety, and international scientific cooperation."
+description: "The Hong Kong Observatory was established in 1883 to provide meteorological and time services, representing a critical intersection of colonial administration, maritime safety, and international scientific cooperation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

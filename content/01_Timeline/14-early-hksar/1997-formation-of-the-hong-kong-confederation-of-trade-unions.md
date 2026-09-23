@@ -6,6 +6,7 @@ year: 1997
 era: "The early HKSAR"
 tags: ["1997", "ai-draft", "civil-society", "early-hksar", "hksar-history", "labor-rights", "political-development", "post-colonial", "trade-unions"]
 summary: "Established in 1990 and growing in influence through the 1997 handover, the Hong Kong Confederation of Trade Unions (HKCTU) became a primary vehicle for organized labor and democratic advocacy in the early SAR period."
+description: "Established in 1990 and growing in influence through the 1997 handover, the Hong Kong Confederation of Trade Unions (HKCTU) became a primary vehicle for organized labor and democratic advocacy in the early SAR period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

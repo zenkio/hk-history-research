@@ -3,6 +3,7 @@ title: "Zhuhai (珠海)"
 title_zh: "珠海"
 tags: ["ai-draft", "greater-bay-area", "guangdong", "infrastructure", "maritime-history", "pearl-river-delta", "place"]
 summary: "Zhuhai is a major city in the Pearl River Delta that has become a critical strategic partner for Hong Kong through modern infrastructure integration and regional economic development."
+description: "Zhuhai is a major city in the Pearl River Delta that has become a critical strategic partner for Hong Kong through modern infrastructure integration and regional economic development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

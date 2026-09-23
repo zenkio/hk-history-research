@@ -6,6 +6,7 @@ year: 1989
 era: "Sino-British negotiations and the transition"
 tags: ["1989", "ai-draft", "aviation", "hong-kong-economy", "infrastructure", "rose-garden-project", "sino-british-transition", "transition"]
 summary: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the 1989 Tiananmen Square crackdown."
+description: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

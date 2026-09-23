@@ -6,6 +6,7 @@ year: 1921
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1921", "ai-draft", "colonial-history", "gender-roles", "interwar", "interwar-hong-kong", "social-welfare", "womens-history"]
 summary: "Established in 1921, the Hong Kong Chinese Women’s Club (香港中華婦女會) served as a milestone for the emergence of elite female-led social activism in colonial Hong Kong."
+description: "Established in 1921, the Hong Kong Chinese Women’s Club (香港中華婦女會) served as a milestone for the emergence of elite female-led social activism in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

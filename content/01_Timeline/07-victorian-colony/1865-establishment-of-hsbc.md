@@ -6,6 +6,7 @@ year: 1865
 era: "Kowloon and the Victorian colony"
 tags: ["1865", "ai-draft", "banking", "colonial-economy", "hsbc", "trade", "victorian-colony"]
 summary: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
+description: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

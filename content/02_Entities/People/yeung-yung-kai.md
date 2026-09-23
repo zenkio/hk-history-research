@@ -3,6 +3,7 @@ title: "Yeung Yung-kai (楊永強)"
 title_zh: "楊永強"
 tags: ["2003-outbreak", "ai-draft", "hong-kong-government", "person", "political-history", "public-health", "sars"]
 summary: "Yeung Yung-kai (also known as E. K. Yeung) served as the Secretary for Health, Welfare and Food during the 2003 SARS outbreak in Hong Kong, a period that became a defining challenge for the territory's public health administration."
+description: "Yeung Yung-kai (also known as E. K."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

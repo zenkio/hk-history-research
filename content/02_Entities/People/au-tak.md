@@ -3,6 +3,7 @@ title: "Au Tak (區德)"
 title_zh: "區德"
 tags: ["ai-draft", "hong-kong-history", "hong-kong-merchants", "kai-tak", "kowloon", "person", "urban-development"]
 summary: "Au Tak (區德) was a prominent Chinese merchant and philanthropist whose land reclamation project in Kowloon ultimately provided the site for Hong Kong’s original airport."
+description: "Au Tak (區德) was a prominent Chinese merchant and philanthropist whose land reclamation project in Kowloon ultimately provided the site for Hong Kong’s original airport."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

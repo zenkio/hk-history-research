@@ -6,6 +6,7 @@ year: 1915
 era: "The New Territories lease and the early 20th century"
 tags: ["1915", "ai-draft", "colonial-history", "legislative-history", "maternal-healthcare", "midwifery", "new-territories", "public-health"]
 summary: "In 1915, the Hong Kong colonial government passed the Midwives Ordinance to regulate midwifery, aiming to modernize maternal healthcare practices amid rising concerns over public health."
+description: "In 1915, the Hong Kong colonial government passed the Midwives Ordinance to regulate midwifery, aiming to modernize maternal healthcare practices amid rising concerns over public health."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1200
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1200", "ai-draft", "archaeology", "industry", "lantau-island", "lime-kilns", "song-and-yuan", "song-dynasty"]
 summary: "Around **1200**, the coastal areas of Lantau Island reached the height of their lime production industry, supplying essential construction and maritime materials throughout the Pearl River Delta during the Song dynasty."
+description: "Around 1200, the coastal areas of Lantau Island reached the height of their lime production industry, supplying essential construction and maritime materials throughout the Pearl River Delta during the Song dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

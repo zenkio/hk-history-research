@@ -5,6 +5,7 @@ year: 150
 era: "Imperial frontier: Qin to Tang"
 tags: ["150", "ai-draft", "archaeology", "han-dynasty", "imperial-frontier", "kowloon-history", "lei-cheng-uk-tomb", "qin-to-tang"]
 summary: "Around **150** CE, an elaborate brick-built tomb was constructed in modern-day Kowloon, serving as a primary archaeological anchor for the history of the region during the Eastern Han dynasty."
+description: "Around 150 CE, an elaborate brick-built tomb was constructed in modern-day Kowloon, serving as a primary archaeological anchor for the history of the region during the Eastern Han dynasty."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1935", "ai-draft", "british-empire", "currency-reform", "economy", "hong-kong-dollar", "interwar", "silver-standard"]
 summary: "In December 1935, Hong Kong officially abandoned the silver standard and pegged its currency to the British pound, aligning with monetary reforms in mainland China."
+description: "In December 1935, Hong Kong officially abandoned the silver standard and pegged its currency to the British pound, aligning with monetary reforms in mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

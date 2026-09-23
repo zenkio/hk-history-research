@@ -6,6 +6,7 @@ year: 1841
 era: "The early colony"
 tags: ["1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-architecture", "legal-system", "victoria-gaol"]
 summary: "The construction of the Victoria Gaol in 1841 marked a pivotal moment in the formalization of British colonial rule and legal administration in the newly claimed territory."
+description: "The construction of the Victoria Gaol in 1841 marked a pivotal moment in the formalization of British colonial rule and legal administration in the newly claimed territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

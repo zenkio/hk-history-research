@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1970s", "1974", "ai-draft", "cantonese-music", "cantopop", "hong-kong-culture", "riots-and-reform", "sam-hui"]
 summary: "In October 1974, singer-songwriter **Sam Hui** released the album **Games Gamblers Play** (鬼馬雙星), a cultural milestone that popularized vernacular Cantonese lyrics in pop music and helped launch the golden age of Cantopop."
+description: "In October 1974, singer-songwriter Sam Hui released the album Games Gamblers Play (鬼馬雙星), a cultural milestone that popularized vernacular Cantonese lyrics in pop music and helped launch the golden age of Cantopop."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

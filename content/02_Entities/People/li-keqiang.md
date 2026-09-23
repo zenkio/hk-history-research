@@ -3,6 +3,7 @@ title: "Li Keqiang (李克強)"
 title_zh: "李克強"
 tags: ["academic-freedom", "ai-draft", "beijing-hk-relations", "hku-818-incident", "hong-kong-history", "person", "university-of-hong-kong"]
 summary: "Li Keqiang was a senior leader of the People's Republic of China who served as Premier and whose 2011 visit to the University of Hong Kong remains a significant point of discussion regarding academic freedom and campus security."
+description: "Li Keqiang was a senior leader of the People's Republic of China who served as Premier and whose 2011 visit to the University of Hong Kong remains a significant point of discussion regarding academic freedom and campus…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

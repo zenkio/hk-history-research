@@ -5,6 +5,7 @@ year: -2500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "ceramics", "early-settlement", "hong-kong-history", "maritime-trade", "neolithic-period", "prehistory"]
 summary: "Between 2500 and 2000 BCE, the appearance of distinct ceramic styles suggests that early inhabitants of the Hong Kong region were active participants in a broader maritime exchange network along the South China coast."
+description: "Between 2500 and 2000 BCE, the appearance of distinct ceramic styles suggests that early inhabitants of the Hong Kong region were active participants in a broader maritime exchange network along the South China coast."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

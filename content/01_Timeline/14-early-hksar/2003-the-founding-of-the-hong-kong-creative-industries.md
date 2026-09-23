@@ -6,6 +6,7 @@ year: 2003
 era: "The early HKSAR"
 tags: ["2003", "2003-sars", "ai-draft", "creative-industries", "cultural-development", "early-hksar", "economic-policy", "hksar-history"]
 summary: "Following the economic downturn of the late 1990s and the 2003 SARS epidemic, the Hong Kong government officially identified creative industries as a strategic pillar for economic restructuring."
+description: "Following the economic downturn of the late 1990s and the 2003 SARS epidemic, the Hong Kong government officially identified creative industries as a strategic pillar for economic restructuring."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

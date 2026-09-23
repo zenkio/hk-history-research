@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "contemporary-art", "cultural-policy", "m-plus", "national-security-era", "national-security-law", "west-kowloon"]
 summary: "On November 12, 2021, Asia's first global museum of contemporary visual culture opened in the West Kowloon Cultural District, immediately drawing public acclaim alongside intense scrutiny regarding artistic freedom under the National Security Law."
+description: "On November 12, 2021, Asia's first global museum of contemporary visual culture opened in the West Kowloon Cultural District, immediately drawing public acclaim alongside intense scrutiny regarding artistic freedom…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Rosanna Wong (黃秀清)"
 title_zh: "黃秀清"
 tags: ["ai-draft", "hong-kong-history", "housing-authority", "person", "public-housing", "rosanna-wong", "short-piling-scandal"]
 summary: "Rosanna Wong Yick-ming is a prominent Hong Kong social worker and public administrator best known for her tenure as chairwoman of the Housing Authority during the critical public housing short-piling construction scandal of the late 1990s."
+description: "Rosanna Wong Yick-ming is a prominent Hong Kong social worker and public administrator best known for her tenure as chairwoman of the Housing Authority during the critical public housing short-piling construction…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

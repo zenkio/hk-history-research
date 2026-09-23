@@ -3,6 +3,7 @@ title: "Hau Clan (侯氏)"
 title_zh: "侯氏"
 tags: ["ai-draft", "five-great-clans", "genealogy", "ho-sheung-heung", "new-territories", "person", "yuen-long"]
 summary: "The Hau Clan is one of the Five Great Clans of the New Territories, playing a pivotal role in the early land development and social organization of the Yuen Long region."
+description: "The Hau Clan is one of the Five Great Clans of the New Territories, playing a pivotal role in the early land development and social organization of the Yuen Long region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

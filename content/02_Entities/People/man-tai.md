@@ -3,6 +3,7 @@ title: "Man Tai (文帝)"
 title_zh: "文帝"
 tags: ["ai-draft", "local-history", "man-mo-temple", "man-tai", "new-territories", "person", "tai-po"]
 summary: "Man Tai is a historical deity and literary figure associated with the construction of the Man Mo Temple (文武廟) in Tai Po (大埔), reflecting the religious and social organization of the New Territories during the colonial era."
+description: "Man Tai is a historical deity and literary figure associated with the construction of the Man Mo Temple (文武廟) in Tai Po (大埔), reflecting the religious and social organization of the New Territories during the colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

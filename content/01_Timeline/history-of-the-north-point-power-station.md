@@ -2,7 +2,8 @@
 title: "History of the North Point Power Station"
 date: 1919-01-01
 tags: ["1919", "1920", "1922", "1932", "1934", "1935", "colonial-hong-kong", "electricity-generation", "energy", "industrial-history", "infrastructure", "north-point"]
-summary: "The **Hong Kong Electric Company** established the **North Point** power station to replace outdated infrastructure and "
+summary: "The Hong Kong Electric Company established the North Point power station to replace outdated infrastructure and meet rising energy demands."
+description: "The Hong Kong Electric Company established the North Point power station to replace outdated infrastructure and meet rising energy demands."
 confidence: high
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/north-point-power-station-use-this-version/"

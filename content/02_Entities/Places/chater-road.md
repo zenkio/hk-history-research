@@ -3,6 +3,7 @@ title: "Chater Road (遮打道)"
 title_zh: "遮打道"
 tags: ["ai-draft", "central-district", "colonial-history", "japanese-occupation", "place", "sir-paul-chater", "urban-development"]
 summary: "Chater Road is a major thoroughfare in Central, Hong Kong, named after the prominent businessman Sir Paul Chater, serving as a historical hub for colonial governance and financial activity."
+description: "Chater Road is a major thoroughfare in Central, Hong Kong, named after the prominent businessman Sir Paul Chater, serving as a historical hub for colonial governance and financial activity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

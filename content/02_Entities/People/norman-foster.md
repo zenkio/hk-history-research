@@ -3,6 +3,7 @@ title: "Norman Foster"
 title_zh: "霍Norman Foster (諾曼·福斯特)"
 tags: ["ai-draft", "architecture", "british-hong-kong", "central", "hsbc", "norman-foster", "person"]
 summary: "British architect **Norman Foster** designed the iconic **HSBC Main Building** (香港總行大廈), which opened in **1985** and became a symbol of Hong Kong's late-colonial economic confidence and high-tech architectural innovation."
+description: "British architect Norman Foster designed the iconic HSBC Main Building (香港總行大廈), which opened in 1985 and became a symbol of Hong Kong's late-colonial economic confidence and high-tech architectural innovation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

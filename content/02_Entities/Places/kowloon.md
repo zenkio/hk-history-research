@@ -3,6 +3,7 @@ title: "Kowloon (九龍)"
 title_zh: "九龍"
 tags: ["ai-draft", "british-colonial-history", "hong-kong-history", "kowloon", "kowloon-walled-city", "place"]
 summary: "Kowloon is an urban area of Hong Kong that played a pivotal strategic, residential, and infrastructural role in the territory's colonial development and wartime history."
+description: "Kowloon is an urban area of Hong Kong that played a pivotal strategic, residential, and infrastructural role in the territory's colonial development and wartime history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

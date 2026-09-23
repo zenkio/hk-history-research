@@ -6,6 +6,7 @@ year: 1996
 era: "Sino-British negotiations and the transition"
 tags: ["1996", "ai-draft", "basic-law", "hong-kong-handover", "political-history", "provisional-legislative-council", "sino-british-relations", "transition"]
 summary: "On December 21, 1996, the Beijing-appointed Selection Committee established the Provisional Legislative Council to serve as the interim legislative body for the Hong Kong Special Administrative Region."
+description: "On December 21, 1996, the Beijing-appointed Selection Committee established the Provisional Legislative Council to serve as the interim legislative body for the Hong Kong Special Administrative Region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Zheng Yanxiong (鄭雁雄)"
 title_zh: "鄭雁雄"
 tags: ["ai-draft", "china-politics", "hong-kong-politics", "liaison-office", "national-security", "person", "zheng-yanxiong"]
 summary: "Zheng Yanxiong is a senior Chinese official who serves as the Director of the Liaison Office of the Central People's Government in the Hong Kong Special Administrative Region and was the first head of the Office for Safeguarding National Security."
+description: "Zheng Yanxiong is a senior Chinese official who serves as the Director of the Liaison Office of the Central People's Government in the Hong Kong Special Administrative Region and was the first head of the Office for…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

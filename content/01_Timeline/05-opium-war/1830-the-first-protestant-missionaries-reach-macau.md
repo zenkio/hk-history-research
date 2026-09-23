@@ -6,6 +6,7 @@ year: 1830
 era: "Canton trade and the First Opium War"
 tags: ["1830", "ai-draft", "canton-system", "cultural-exchange", "macau-history", "opium-war", "protestant-missions", "qing-dynasty", "robert-morrison"]
 summary: "During the early 19th century, Protestant missionaries arrived in Macau to translate religious texts and study local languages, laying the groundwork for cultural exchange and institutional development in the region."
+description: "During the early 19th century, Protestant missionaries arrived in Macau to translate religious texts and study local languages, laying the groundwork for cultural exchange and institutional development in the region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

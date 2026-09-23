@@ -6,6 +6,7 @@ year: 1959
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1950s", "1959", "ai-draft", "cantonese-culture", "commercial-radio", "mass-media", "postwar-hong-kong", "postwar-refugees"]
 summary: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that quickly became embedded in working-class daily life."
+description: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

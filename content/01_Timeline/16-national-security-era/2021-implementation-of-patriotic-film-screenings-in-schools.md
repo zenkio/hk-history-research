@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "curriculum-development", "education-reform", "hong-kong-history", "national-security-era", "national-security-law", "patriotic-education"]
 summary: "In July 2021, the Hong Kong Education Bureau mandated that public schools organize screenings of patriotic films as part of a broader curriculum shift to foster national identity."
+description: "In July 2021, the Hong Kong Education Bureau mandated that public schools organize screenings of patriotic films as part of a broader curriculum shift to foster national identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

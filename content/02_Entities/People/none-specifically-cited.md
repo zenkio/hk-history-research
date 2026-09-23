@@ -3,6 +3,7 @@ title: "None specifically cited"
 title_zh: "種族歧視條例"
 tags: ["ai-draft", "equal-opportunities", "hong-kong-law", "human-rights", "legislation", "person", "social-policy"]
 summary: "The Race Discrimination Ordinance (RDO) is a piece of Hong Kong legislation enacted in 2008 to protect individuals from discrimination, harassment, and vilification on the grounds of race."
+description: "The Race Discrimination Ordinance (RDO) is a piece of Hong Kong legislation enacted in 2008 to protect individuals from discrimination, harassment, and vilification on the grounds of race."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

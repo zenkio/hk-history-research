@@ -3,6 +3,7 @@ title: "Winston Churchill"
 title_zh: "溫斯頓·邱吉爾"
 tags: ["ai-draft", "british-colonial", "hong-kong-history", "imperial-strategy", "person", "second-world-war"]
 summary: "As Prime Minister of the United Kingdom, Winston Churchill oversaw the wartime strategy that led to the Japanese occupation of Hong Kong and its subsequent liberation in 1945."
+description: "As Prime Minister of the United Kingdom, Winston Churchill oversaw the wartime strategy that led to the Japanese occupation of Hong Kong and its subsequent liberation in 1945."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

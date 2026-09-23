@@ -3,6 +3,7 @@ title: "Sir Paul Chater (遮打)"
 title_zh: "遮打"
 tags: ["ai-draft", "central-district", "colonial-history", "hong-kong-business", "person", "praya-reclamation", "sir-paul-chater"]
 summary: "Sir Paul Chater was a prominent Armenian-British businessman and philanthropist whose leadership in the Praya Reclamation Scheme fundamentally reshaped Hong Kong’s central business district."
+description: "Sir Paul Chater was a prominent Armenian-British businessman and philanthropist whose leadership in the Praya Reclamation Scheme fundamentally reshaped Hong Kong’s central business district."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

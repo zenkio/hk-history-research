@@ -2,7 +2,8 @@
 title: "The War Separation of the Archibald and Frances Cook Family"
 date: 1941-01-01
 tags: ["1941", "1942", "hong-kong-history", "japanese-occupation", "merchant-navy", "pacific-war", "stanley-internment-camp"]
-summary: "During the outbreak of the Pacific War in **December 1941**, Captain **Archibald Cook** was operating the SS Fatshan bet"
+summary: "During the outbreak of the Pacific War in December 1941, Captain Archibald Cook was operating the SS Fatshan between Hong Kong and Canton when he was taken into custody by Japanese forces."
+description: "During the outbreak of the Pacific War in December 1941, Captain Archibald Cook was operating the SS Fatshan between Hong Kong and Canton when he was taken into custody by Japanese forces."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2023/02/archibald-and-frances-cook-their-story.html"

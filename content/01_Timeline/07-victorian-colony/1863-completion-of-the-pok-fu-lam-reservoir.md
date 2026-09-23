@@ -6,6 +6,7 @@ year: 1863
 era: "Kowloon and the Victorian colony"
 tags: ["1863", "19th-century", "ai-draft", "colonial-history", "infrastructure", "pok-fu-lam-reservoir", "public-health", "victorian-colony", "water-supply"]
 summary: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
+description: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

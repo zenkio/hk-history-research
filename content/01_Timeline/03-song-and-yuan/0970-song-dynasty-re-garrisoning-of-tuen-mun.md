@@ -5,6 +5,7 @@ year: 970
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["970", "ai-draft", "maritime-trade", "military-history", "pearl-river-delta", "song-and-yuan", "song-dynasty", "tuen-mun"]
 summary: "Around **970**, the early Song Dynasty court stationed troops at Tuen Mun to secure vital maritime trade routes entering the Pearl River Delta. This strategic move integrated the region more firmly into imperial defense and commercial networks."
+description: "Around 970, the early Song Dynasty court stationed troops at Tuen Mun to secure vital maritime trade routes entering the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

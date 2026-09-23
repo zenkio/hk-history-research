@@ -6,6 +6,7 @@ year: 1833
 era: "Canton trade and the First Opium War"
 tags: ["1833", "ai-draft", "british-diplomacy", "canton-system", "east-india-company", "first-opium-war", "opium-war"]
 summary: "In 1833, the British government abolished the East India Company's monopoly on the China trade and established the Select Committee of Superintendents of Trade in Canton, marking a pivotal transition from corporate commerce to direct state-to-state diplomacy."
+description: "In 1833, the British government abolished the East India Company's monopoly on the China trade and established the Select Committee of Superintendents of Trade in Canton, marking a pivotal transition from corporate…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

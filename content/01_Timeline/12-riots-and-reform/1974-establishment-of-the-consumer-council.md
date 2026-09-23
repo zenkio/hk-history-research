@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "colonial-governance", "consumer-rights", "economic-history", "hong-kong-1970s", "maclehose-reforms", "riots-and-reform"]
 summary: "In 1974, the colonial government established the Consumer Council to safeguard consumer rights amidst Hong Kong's rapid economic development."
+description: "In 1974, the colonial government established the Consumer Council to safeguard consumer rights amidst Hong Kong's rapid economic development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

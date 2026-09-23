@@ -5,6 +5,7 @@ year: 50
 era: "Imperial frontier: Qin to Tang"
 tags: ["50", "agriculture", "ai-draft", "archaeology", "han-dynasty", "history-of-hong-kong", "iron-age", "qin-to-tang"]
 summary: "During the 1st century, the introduction of iron implements to the Hong Kong region catalyzed a transition from primitive stone-tool cultivation to more intensive agricultural practices. This technological shift laid the foundation for the region's increasing integration into the broader economic structures of the Han Dynasty."
+description: "During the 1st century, the introduction of iron implements to the Hong Kong region catalyzed a transition from primitive stone-tool cultivation to more intensive agricultural practices."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

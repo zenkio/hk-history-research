@@ -6,6 +6,7 @@ year: 1711
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1711", "ai-draft", "ming-and-qing", "qing-dynasty", "shap-pat-heung", "tang-clan", "tin-hau-temple", "yuen-long"]
 summary: "In **1711**, eighteen farming villages in the Yuen Long plain formed the Shap Pat Heung alliance, centered around the Tin Hau Temple, to coordinate defense and social matters in response to the dominance of the powerful Tang clan."
+description: "In 1711, eighteen farming villages in the Yuen Long plain formed the Shap Pat Heung alliance, centered around the Tin Hau Temple, to coordinate defense and social matters in response to the dominance of the powerful…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -2,6 +2,7 @@
 title: "07 · Kowloon and the Victorian colony (1860-1898)"
 tags: ["ai-draft", "colonial-history", "era-overview", "hong-kong-origins", "kowloon", "unequal-treaties", "victorian-era"]
 summary: "This era marks the physical expansion of the British colony onto the Kowloon Peninsula and the gradual maturation of Hong Kong into a global maritime trade hub. It was characterized by rapid institutional growth, severe natural disasters, and the early seeds of modern Chinese political and social organization."
+description: "This era marks the physical expansion of the British colony onto the Kowloon Peninsula and the gradual maturation of Hong Kong into a global maritime trade hub."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

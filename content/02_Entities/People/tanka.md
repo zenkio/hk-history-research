@@ -3,6 +3,7 @@ title: "Tanka (疍家)"
 title_zh: "疍家"
 tags: ["ai-draft", "ethnic-minorities", "hong-kong-culture", "maritime-history", "pearl-river-delta", "person", "tanka"]
 summary: "The Tanka are a traditional boat-dwelling community whose maritime expertise and distinct cultural identity shaped the early development of Hong Kong's coastal economy."
+description: "The Tanka are a traditional boat-dwelling community whose maritime expertise and distinct cultural identity shaped the early development of Hong Kong's coastal economy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

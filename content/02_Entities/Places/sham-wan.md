@@ -3,6 +3,7 @@ title: "Sham Wan (深灣)"
 title_zh: "深灣"
 tags: ["ai-draft", "archaeology", "hong-kong-history", "lamma-island", "neolithic", "place", "sham-wan"]
 summary: "Sham Wan on Lamma Island is one of Hong Kong's most significant archaeological sites, preserving crucial evidence of Neolithic settlement, fine geometric pottery, and advanced quartz ornament production."
+description: "Sham Wan on Lamma Island is one of Hong Kong's most significant archaeological sites, preserving crucial evidence of Neolithic settlement, fine geometric pottery, and advanced quartz ornament production."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

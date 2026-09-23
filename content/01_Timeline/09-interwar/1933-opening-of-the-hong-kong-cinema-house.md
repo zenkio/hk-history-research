@@ -6,6 +6,7 @@ year: 1933
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1930s-architecture", "1933", "ai-draft", "cantonese-cinema", "interwar", "interwar-hong-kong", "popular-culture", "urban-history"]
 summary: "The 1933 opening of the Hong Kong Cinema House (香港大戲院) marked a pivotal moment in the development of local entertainment infrastructure during the interwar period."
+description: "The 1933 opening of the Hong Kong Cinema House (香港大戲院) marked a pivotal moment in the development of local entertainment infrastructure during the interwar period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

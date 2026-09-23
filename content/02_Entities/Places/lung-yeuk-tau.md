@@ -3,6 +3,7 @@ title: "Lung Yeuk Tau (龍躍頭)"
 title_zh: "龍躍頭"
 tags: ["ai-draft", "heritage", "lung-yeuk-tau", "new-territories", "place", "tang-clan", "walled-village"]
 summary: "Lung Yeuk Tau is one of the historic walled villages of the Tang clan in the New Territories, significant for its preserved traditional lineage structures including the Tang Chung Ling Ancestral Hall."
+description: "Lung Yeuk Tau is one of the historic walled villages of the Tang clan in the New Territories, significant for its preserved traditional lineage structures including the Tang Chung Ling Ancestral Hall."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

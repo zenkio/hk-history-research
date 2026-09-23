@@ -3,6 +3,7 @@ title: "Clear Water Bay Peninsula (清水灣半島)"
 title_zh: "清水灣半島"
 tags: ["ai-draft", "archaeology", "hong-kong-history", "maritime-heritage", "new-territories", "place", "sai-kung"]
 summary: "The Clear Water Bay Peninsula is a prominent geographical feature in the Sai Kung District, notable for its significant maritime history and the presence of the oldest datable rock inscription in Hong Kong."
+description: "The Clear Water Bay Peninsula is a prominent geographical feature in the Sai Kung District, notable for its significant maritime history and the presence of the oldest datable rock inscription in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

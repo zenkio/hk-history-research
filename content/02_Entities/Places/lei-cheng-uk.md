@@ -3,6 +3,7 @@ title: "Lei Cheng Uk (李鄭屋)"
 title_zh: "李鄭屋"
 tags: ["ai-draft", "archaeology", "han-tomb", "hong-kong-history", "lei-cheng-uk", "new-kowloon", "place"]
 summary: "Lei Cheng Uk is an urban area in New Kowloon best known for the discovery of an ancient Eastern Han dynasty tomb in 1955."
+description: "Lei Cheng Uk is an urban area in New Kowloon best known for the discovery of an ancient Eastern Han dynasty tomb in 1955."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

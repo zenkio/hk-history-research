@@ -3,6 +3,7 @@ title: "Margaret Thatcher (戴卓爾夫人)"
 title_zh: "戴卓爾夫人"
 tags: ["ai-draft", "colonial-history", "deng-xiaoping", "margaret-thatcher", "person", "sino-british-joint-declaration", "sovereignty-negotiations"]
 summary: "Margaret Thatcher was the Prime Minister of the United Kingdom whose **1982** visit to Beijing initiated formal sovereignty negotiations over Hong Kong, ultimately leading to the Sino-British Joint Declaration."
+description: "Margaret Thatcher was the Prime Minister of the United Kingdom whose 1982 visit to Beijing initiated formal sovereignty negotiations over Hong Kong, ultimately leading to the Sino-British Joint Declaration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

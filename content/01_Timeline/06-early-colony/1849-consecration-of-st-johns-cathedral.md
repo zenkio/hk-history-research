@@ -6,6 +6,7 @@ year: 1849
 era: "The early colony"
 tags: ["1849", "ai-draft", "anglican-church", "architecture", "british-colonial-era", "early-colony", "st-johns-cathedral", "victoria-city"]
 summary: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
+description: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

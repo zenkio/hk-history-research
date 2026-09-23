@@ -3,6 +3,7 @@ title: "Church Missionary Society (英國聖公會差會)"
 title_zh: "英國聖公會差會"
 tags: ["ai-draft", "anglican-church", "colonial-era", "education", "missionary-history", "person", "social-welfare"]
 summary: "The Church Missionary Society was a prominent Anglican evangelical organization that played a foundational role in establishing colonial education, medical services, and social welfare institutions in Hong Kong."
+description: "The Church Missionary Society was a prominent Anglican evangelical organization that played a foundational role in establishing colonial education, medical services, and social welfare institutions in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

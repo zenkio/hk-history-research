@@ -3,6 +3,7 @@ title: "Hormusjee Naorojee Mody (摩地)"
 title_zh: "摩地"
 tags: ["ai-draft", "colonial-history", "hong-kong-university", "parsi-community", "person", "philanthropy", "tsim-sha-tsui"]
 summary: "A prominent Parsi businessman and philanthropist who was a pivotal figure in the development of Hong Kong's real estate, trade, and tertiary education sectors."
+description: "A prominent Parsi businessman and philanthropist who was a pivotal figure in the development of Hong Kong's real estate, trade, and tertiary education sectors."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

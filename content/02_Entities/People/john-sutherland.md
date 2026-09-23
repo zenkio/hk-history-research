@@ -3,6 +3,7 @@ title: "John Sutherland"
 title_zh: "約翰·薩瑟蘭"
 tags: ["ai-draft", "colonial-era", "hongkong-and-whampoa-dock", "maritime-history", "person", "shipbuilding"]
 summary: "John Sutherland was a nineteenth-century maritime figure associated with the early development and operations of the Hongkong and Whampoa Dock Company."
+description: "John Sutherland was a nineteenth-century maritime figure associated with the early development and operations of the Hongkong and Whampoa Dock Company."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

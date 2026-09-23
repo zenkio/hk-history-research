@@ -3,6 +3,7 @@ title: "Emperor Hongwu (明太祖)"
 title_zh: "明太祖"
 tags: ["ai-draft", "imperial-history", "ming-dynasty", "pearl-diving", "person", "tai-po"]
 summary: "Emperor Hongwu, founder of the Ming dynasty, issued early edicts that indirectly shaped the volatile maritime economy and pearl diving industry of the early Hong Kong region."
+description: "Emperor Hongwu, founder of the Ming dynasty, issued early edicts that indirectly shaped the volatile maritime economy and pearl diving industry of the early Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Wong Nei Chong Gap (黃泥涌峽)"
 title_zh: "黃泥涌峽"
 tags: ["ai-draft", "battle-of-hong-kong", "hong-kong-history", "military-history", "place", "wong-nei-chong", "wwii"]
 summary: "Wong Nei Chong Gap is a critical mountain pass on Hong Kong Island that served as a strategic military chokepoint during the 1941 Battle of Hong Kong."
+description: "Wong Nei Chong Gap is a critical mountain pass on Hong Kong Island that served as a strategic military chokepoint during the 1941 Battle of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

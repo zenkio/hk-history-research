@@ -3,6 +3,7 @@ title: "Ma Wan (馬灣)"
 title_zh: "馬灣"
 tags: ["ai-draft", "archaeology", "cultural-heritage", "hong-kong-history", "ma-wan", "new-territories", "place"]
 summary: "Ma Wan is an island located between Lantau Island and Tsing Yi, significant for its extensive archaeological deposits and its transformation from a traditional fishing village to a modern residential hub."
+description: "Ma Wan is an island located between Lantau Island and Tsing Yi, significant for its extensive archaeological deposits and its transformation from a traditional fishing village to a modern residential hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Cheong Ah Lum (張亞林)"
 title_zh: "張亞林"
 tags: ["ai-draft", "colonial-history", "esing-bakery", "hong-kong-legal-history", "nineteenth-century", "person", "second-opium-war"]
 summary: "Cheong Ah Lum was the proprietor of the Esing Bakery whose alleged involvement in the 1857 poisoning incident became a pivotal moment in colonial Hong Kong's legal and racial history."
+description: "Cheong Ah Lum was the proprietor of the Esing Bakery whose alleged involvement in the 1857 poisoning incident became a pivotal moment in colonial Hong Kong's legal and racial history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1400
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1400", "ai-draft", "ancestral-worship", "kam-tin", "land-tenure", "lineage-society", "ming-and-qing", "ming-dynasty", "new-territories"]
 summary: "Between 1400 and 1500, the Tang lineage consolidated its presence in the New Territories, establishing a sophisticated land-holding system and ancestral structure that would dictate rural life for centuries."
+description: "Between 1400 and 1500, the Tang lineage consolidated its presence in the New Territories, establishing a sophisticated land-holding system and ancestral structure that would dictate rural life for centuries."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

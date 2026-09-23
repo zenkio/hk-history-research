@@ -3,6 +3,7 @@ title: "Tai Mo Shan (大帽山)"
 title_zh: "大帽山"
 tags: ["agriculture", "ai-draft", "british-colonial-history", "country-parks", "geography", "new-territories", "place"]
 summary: "As Hong Kong's highest peak, Tai Mo Shan serves as a significant geographical landmark that has shaped local agricultural development, colonial strategic defense, and recreational culture."
+description: "As Hong Kong's highest peak, Tai Mo Shan serves as a significant geographical landmark that has shaped local agricultural development, colonial strategic defense, and recreational culture."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

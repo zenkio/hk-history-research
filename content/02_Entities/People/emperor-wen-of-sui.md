@@ -3,6 +3,7 @@ title: "Emperor Wen of Sui (隋文帝)"
 title_zh: "隋文帝"
 tags: ["administrative-history", "ai-draft", "chinese-history", "imperial-china", "lingnan", "person", "sui-dynasty"]
 summary: "Emperor Wen of Sui was the founder of the Sui Dynasty, whose administrative reforms established the political framework for southern regions that would eventually encompass Hong Kong."
+description: "Emperor Wen of Sui was the founder of the Sui Dynasty, whose administrative reforms established the political framework for southern regions that would eventually encompass Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

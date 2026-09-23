@@ -6,6 +6,7 @@ year: 2008
 era: "Political contention and protest"
 tags: ["2008", "ai-draft", "arts-infrastructure", "contention", "cultural-policy", "hong-kong-government", "urban-planning", "west-kowloon"]
 summary: "In 2008, the Hong Kong government established the West Kowloon Cultural District Authority to oversee the development of a major arts hub, signaling a transition toward centrally-planned cultural infrastructure."
+description: "In 2008, the Hong Kong government established the West Kowloon Cultural District Authority to oversee the development of a major arts hub, signaling a transition toward centrally-planned cultural infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

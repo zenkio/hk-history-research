@@ -6,6 +6,7 @@ year: 1843
 era: "The early colony"
 tags: ["1843", "ai-draft", "british-empire", "crown-colony", "early-colony", "first-opium-war", "henry-pottinger", "treaty-of-nanking"]
 summary: "On June 26, 1843, Hong Kong was formally proclaimed a British Crown Colony, and Sir Henry Pottinger was sworn in as its first Governor, marking the institutional beginning of British administration."
+description: "On June 26, 1843, Hong Kong was formally proclaimed a British Crown Colony, and Sir Henry Pottinger was sworn in as its first Governor, marking the institutional beginning of British administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

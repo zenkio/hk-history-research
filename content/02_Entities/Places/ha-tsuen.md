@@ -3,6 +3,7 @@ title: "Ha Tsuen (廈村)"
 title_zh: "廈村"
 tags: ["ai-draft", "ha-tsuen", "indigenous-history", "lineage-village", "new-territories", "ng-clan", "place"]
 summary: "Ha Tsuen is a historic rural settlement in Yuen Long, significant for the early settlement and dominance of the Ng clan in the northwestern New Territories."
+description: "Ha Tsuen is a historic rural settlement in Yuen Long, significant for the early settlement and dominance of the Ng clan in the northwestern New Territories."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

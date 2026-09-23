@@ -6,6 +6,7 @@ year: 1130
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1130", "ai-draft", "buddhism", "cultural-heritage", "maritime-history", "song-and-yuan", "song-dynasty", "tuen-mun"]
 summary: "During the 12th century, the Tuen Mun region saw the establishment of early Buddhist structures, marking a shift toward permanent settlement in the Lingnan coastal corridor."
+description: "During the 12th century, the Tuen Mun region saw the establishment of early Buddhist structures, marking a shift toward permanent settlement in the Lingnan coastal corridor."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

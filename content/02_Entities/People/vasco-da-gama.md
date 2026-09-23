@@ -3,6 +3,7 @@ title: "Vasco da Gama (達·伽馬)"
 title_zh: "達·伽馬"
 tags: ["age-of-discovery", "ai-draft", "colonial-history", "maritime-history", "ming-dynasty", "person", "portuguese-exploration"]
 summary: "As the pioneering Portuguese explorer who established the maritime route from Europe to India, Vasco da Gama created the geopolitical conditions that led to the first European contacts with the Pearl River Delta."
+description: "As the pioneering Portuguese explorer who established the maritime route from Europe to India, Vasco da Gama created the geopolitical conditions that led to the first European contacts with the Pearl River Delta."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

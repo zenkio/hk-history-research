@@ -3,6 +3,7 @@ title: "Lord Napier (律勞卑)"
 title_zh: "律勞卑"
 tags: ["ai-draft", "british-diplomacy", "canton-system", "east-india-company", "lord-napier", "person", "qing-dynasty"]
 summary: "Lord Napier was the first British Chief Superintendent of Trade in China whose failed diplomatic mission in Canton exposed the weaknesses of the Canton System and accelerated the geopolitical shifts leading to the acquisition of Hong Kong."
+description: "Lord Napier was the first British Chief Superintendent of Trade in China whose failed diplomatic mission in Canton exposed the weaknesses of the Canton System and accelerated the geopolitical shifts leading to the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

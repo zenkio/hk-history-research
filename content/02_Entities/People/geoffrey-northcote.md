@@ -3,6 +3,7 @@ title: "Geoffrey Northcote (羅富國)"
 title_zh: "羅富國"
 tags: ["ai-draft", "british-colonial", "governor", "person", "taxation", "world-war-ii"]
 summary: "Geoffrey Northcote served as the Governor of Hong Kong from 1937 to 1941, presiding over the colony during the tense buildup to the Pacific War and the initial implementation of emergency war measures."
+description: "Geoffrey Northcote served as the Governor of Hong Kong from 1937 to 1941, presiding over the colony during the tense buildup to the Pacific War and the initial implementation of emergency war measures."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -1500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "prehistoric-hong-kong", "prehistory", "shouldered-axe", "stone-age", "technology"]
 summary: "Around **c. 1500 BCE**, prehistoric communities in the Hong Kong region widely adopted shouldered stone axe technology, marking a significant advancement in local woodworking and shelter construction capabilities."
+description: "Around c. 1500 BCE, prehistoric communities in the Hong Kong region widely adopted shouldered stone axe technology, marking a significant advancement in local woodworking and shelter construction capabilities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

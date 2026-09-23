@@ -6,6 +6,7 @@ year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1937", "ai-draft", "civil-society", "feminism", "interwar", "interwar-hong-kong", "social-welfare", "women-rights"]
 summary: "In 1937, the Hong Kong Council of Women was established to advocate for women's rights and social welfare, marking a crucial step in local civil society development."
+description: "In 1937, the Hong Kong Council of Women was established to advocate for women's rights and social welfare, marking a crucial step in local civil society development."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

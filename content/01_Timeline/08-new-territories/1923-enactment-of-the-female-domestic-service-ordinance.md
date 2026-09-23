@@ -6,6 +6,7 @@ year: 1923
 era: "The New Territories lease and the early 20th century"
 tags: ["1923", "ai-draft", "british-colonial-history", "child-labour", "mui-tsai", "new-territories", "social-reform", "womens-history"]
 summary: "The enactment of the Female Domestic Service Ordinance in 1923 marked a major legislative intervention by the British colonial government into the traditional Chinese practice of bonded child domestic servitude, known as mui tsai."
+description: "The enactment of the Female Domestic Service Ordinance in 1923 marked a major legislative intervention by the British colonial government into the traditional Chinese practice of bonded child domestic servitude, known…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1858
 era: "The early colony"
 tags: ["1858", "ai-draft", "british-colonialism", "early-colony", "hong-kong-history", "opium-trade", "second-opium-war", "treaty-of-tientsin"]
 summary: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
+description: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

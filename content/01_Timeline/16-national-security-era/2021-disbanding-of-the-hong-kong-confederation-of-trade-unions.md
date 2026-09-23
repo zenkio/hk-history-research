@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "civil-society", "hkctu", "hong-kong-history", "labor-movement", "national-security-era", "national-security-law"]
 summary: "The Hong Kong Confederation of Trade Unions, the city's largest independent labor coalition, dissolved in October 2021 after 31 years of operations amid increasing political pressure under the National Security Law."
+description: "The Hong Kong Confederation of Trade Unions, the city's largest independent labor coalition, dissolved in October 2021 after 31 years of operations amid increasing political pressure under the National Security Law."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

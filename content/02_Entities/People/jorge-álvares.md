@@ -3,6 +3,7 @@ title: "Jorge Álvares (若體·阿瓦雷斯)"
 title_zh: "若體·阿瓦雷斯"
 tags: ["ai-draft", "jorge-alvares", "ming-dynasty", "pearl-river-delta", "person", "portuguese-exploration", "tuen-mun"]
 summary: "Jorge Álvares was a Portuguese explorer and merchant whose 1513 voyage marked the first documented European arrival in China by sea, establishing early contact in the Pearl River Delta region."
+description: "Jorge Álvares was a Portuguese explorer and merchant whose 1513 voyage marked the first documented European arrival in China by sea, establishing early contact in the Pearl River Delta region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

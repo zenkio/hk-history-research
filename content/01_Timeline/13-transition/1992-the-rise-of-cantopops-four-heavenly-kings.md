@@ -6,6 +6,7 @@ year: 1992
 era: "Sino-British negotiations and the transition"
 tags: ["1992", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-culture", "mass-media", "soft-power", "transition"]
 summary: "In 1992, the Hong Kong entertainment industry consolidated around four dominant male pop stars, a phenomenon that marked a commercial peak for Cantopop and projected the city's soft power across the Chinese-speaking world."
+description: "In 1992, the Hong Kong entertainment industry consolidated around four dominant male pop stars, a phenomenon that marked a commercial peak for Cantopop and projected the city's soft power across the Chinese-speaking…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

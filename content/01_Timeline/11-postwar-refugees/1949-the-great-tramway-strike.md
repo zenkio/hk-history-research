@@ -6,6 +6,7 @@ year: 1949
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1949", "ai-draft", "cold-war", "colonial-history", "labor-history", "leftist-unions", "postwar-refugees", "tramway-strike"]
 summary: "The 1949–1950 Great Tramway Strike was a major labor dispute organized by pro-Beijing trade unions that severely disrupted public transport and heightened Cold War tensions in colonial Hong Kong."
+description: "The 1949–1950 Great Tramway Strike was a major labor dispute organized by pro-Beijing trade unions that severely disrupted public transport and heightened Cold War tensions in colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

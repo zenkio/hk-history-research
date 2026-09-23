@@ -3,6 +3,7 @@ title: "John Pope Hennessy (軒尼詩)"
 title_zh: "軒尼詩"
 tags: ["ai-draft", "colonial-history", "john-pope-hennessy", "ng-choy", "person", "po-leung-kuk", "racial-policies"]
 summary: "John Pope Hennessy served as the 8th Governor of Hong Kong from 1877 to 1882, leaving a legacy defined by controversial racial reforms, the expansion of local Chinese representation, and fierce clashes with the colony's European elite."
+description: "John Pope Hennessy served as the 8th Governor of Hong Kong from 1877 to 1882, leaving a legacy defined by controversial racial reforms, the expansion of local Chinese representation, and fierce clashes with the colony's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

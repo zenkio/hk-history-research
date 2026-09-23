@@ -6,6 +6,7 @@ year: 2019
 era: "Political contention and protest"
 tags: ["2019", "2019-protests", "ai-draft", "civil-unrest", "contention", "hong-kong-history", "polyu-siege"]
 summary: "Beginning on **November 17, 2019**, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of the 2019 social unrest."
+description: "Beginning on November 17, 2019, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Calcutta (加爾各答)"
 title_zh: "加爾各答"
 tags: ["ai-draft", "british-empire", "finance", "hong-kong-history", "hsbc", "place", "trade-history"]
 summary: "Calcutta (加爾各答), the former capital of British India, served as a crucial financial and administrative hub whose capital flows and banking infrastructure directly influenced the founding of the Hongkong and Shanghai Banking Corporation (HSBC)."
+description: "Calcutta (加爾各答), the former capital of British India, served as a crucial financial and administrative hub whose capital flows and banking infrastructure directly influenced the founding of the Hongkong and Shanghai…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

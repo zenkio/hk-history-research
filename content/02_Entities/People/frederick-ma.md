@@ -3,6 +3,7 @@ title: "Frederick Ma (馬時亨)"
 title_zh: "馬時亨"
 tags: ["ai-draft", "frederick-ma", "hong-kong-politics", "mtr-corporation", "person", "public-administration", "transport-infrastructure"]
 summary: "Frederick Ma Si-hang is a prominent Hong Kong business executive and former government official who served as the Secretary for Commerce and Economic Development and later as Chairman of the MTR Corporation."
+description: "Frederick Ma Si-hang is a prominent Hong Kong business executive and former government official who served as the Secretary for Commerce and Economic Development and later as Chairman of the MTR Corporation."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Happy Valley Racecourse (跑馬地馬場)"
 title_zh: "跑馬地馬場"
 tags: ["ai-draft", "colonial-era", "hong-kong-history", "place", "sports-culture", "urban-development", "wan-chai"]
 summary: "Located in the heart of Hong Kong Island, this historic venue represents the evolution of the city's social, colonial, and sporting heritage."
+description: "Located in the heart of Hong Kong Island, this historic venue represents the evolution of the city's social, colonial, and sporting heritage."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1866
 era: "Kowloon and the Victorian colony"
 tags: ["1866", "ai-draft", "chinese-elites", "colonial-history", "district-watch-force", "policing", "victorian-colony", "victorian-era"]
 summary: "Established in **1866**, the District Watch Force was created to police Chinese neighborhoods in colonial Hong Kong, empowering local elites in community security and governance."
+description: "Established in 1866, the District Watch Force was created to police Chinese neighborhoods in colonial Hong Kong, empowering local elites in community security and governance."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

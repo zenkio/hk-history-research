@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "civil-society", "hong-kong-history", "labor-unions", "national-security-era", "national-security-law", "teachers-union"]
 summary: "The Hong Kong Professional Teachers' Union, the city's largest teachers' organization, formally dissolved on August 10, 2021, following intense criticism from mainland Chinese state media and local authorities amid the implementation of the National Security Law."
+description: "The Hong Kong Professional Teachers' Union, the city's largest teachers' organization, formally dissolved on August 10, 2021, following intense criticism from mainland Chinese state media and local authorities amid the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

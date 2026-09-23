@@ -3,6 +3,7 @@ title: "Upper Station Street (上差館街)"
 title_zh: "上差館街"
 tags: ["ai-draft", "colonial-history", "hong-kong-island", "place", "po-leung-kuk", "sheung-wan", "upper-station-street"]
 summary: "Upper Station Street is a historic thoroughfare in Sheung Wan, Hong Kong, significant for its early colonial administrative role and its connection to the founding of the Po Leung Kuk Permanent Headquarters."
+description: "Upper Station Street is a historic thoroughfare in Sheung Wan, Hong Kong, significant for its early colonial administrative role and its connection to the founding of the Po Leung Kuk Permanent Headquarters."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

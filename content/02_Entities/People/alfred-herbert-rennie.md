@@ -3,6 +3,7 @@ title: "Alfred Herbert Rennie (麥理浩 - note: historical namesake, though oft
 title_zh: "艾爾弗雷德·赫伯特·倫尼"
 tags: ["ai-draft", "colonial-history", "hong-kong-refugees", "industrial-history", "person", "tiu-keng-leng", "urban-development"]
 summary: "Alfred Herbert Rennie was a Canadian entrepreneur whose flour mill at Tiu Keng Leng became a landmark associated with the area's later history as a refugee settlement."
+description: "Alfred Herbert Rennie was a Canadian entrepreneur whose flour mill at Tiu Keng Leng became a landmark associated with the area's later history as a refugee settlement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

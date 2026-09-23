@@ -3,6 +3,7 @@ title: "Lau Siu-lai (劉小麗)"
 title_zh: "劉小麗"
 tags: ["ai-draft", "basic-law", "hong-kong-politics", "kowloon-west", "legislative-council", "oath-taking-controversy", "person"]
 summary: "Lau Siu-lai is a former Hong Kong academic and politician whose disqualification from the Legislative Council following an oath-taking controversy became a focal point in discussions regarding political representation and the interpretation of the Basic Law."
+description: "Lau Siu-lai is a former Hong Kong academic and politician whose disqualification from the Legislative Council following an oath-taking controversy became a focal point in discussions regarding political representation…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

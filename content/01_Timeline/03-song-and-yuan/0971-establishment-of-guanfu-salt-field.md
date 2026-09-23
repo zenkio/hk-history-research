@@ -5,6 +5,7 @@ year: 971
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["971", "ai-draft", "economic-history", "imperial-monopoly", "kowloon", "salt-administration", "song-and-yuan", "song-dynasty"]
 summary: "In **971**, the Song dynasty established the official Guanfu Salt Field in present-day Kowloon, transforming the region into a key imperial economic hub and integrating the local coastal economy into the broader empire."
+description: "In 971, the Song dynasty established the official Guanfu Salt Field in present-day Kowloon, transforming the region into a key imperial economic hub and integrating the local coastal economy into the broader empire."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

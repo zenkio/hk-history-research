@@ -3,6 +3,7 @@ title: "Mainland China (中國內地)"
 title_zh: "中國內地"
 tags: ["ai-draft", "cross-border-relations", "economic-history", "geopolitics", "integration", "place", "sovereignty"]
 summary: "Mainland China refers to the sovereign territory of the People's Republic of China, whose political, economic, and social relationship with Hong Kong has served as the fundamental architect of the territory's identity and development across history."
+description: "Mainland China refers to the sovereign territory of the People's Republic of China, whose political, economic, and social relationship with Hong Kong has served as the fundamental architect of the territory's identity…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

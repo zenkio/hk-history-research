@@ -3,6 +3,7 @@ title: "Zhao Ziyang (趙紫陽)"
 title_zh: "趙紫陽"
 tags: ["ai-draft", "diplomatic-history", "hong-kong-history", "person", "sino-british-joint-declaration", "sovereignty-transfer", "zhao-ziyang"]
 summary: "Zhao Ziyang was a senior leader of the People's Republic of China who served as Premier and General Secretary, playing a pivotal role in the negotiations for the Sino-British Joint Declaration regarding the future of Hong Kong."
+description: "Zhao Ziyang was a senior leader of the People's Republic of China who served as Premier and General Secretary, playing a pivotal role in the negotiations for the Sino-British Joint Declaration regarding the future of…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

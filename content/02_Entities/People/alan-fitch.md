@@ -3,6 +3,7 @@ title: "Alan Fitch"
 title_zh: "費哲"
 tags: ["1960s", "ai-draft", "british-administration", "city-hall", "colonial-history", "person", "urban-council"]
 summary: "Alan Fitch was a British municipal official whose exact role regarding the opening of the Hong Kong City Hall remains sparsely documented in mainstream historical records."
+description: "Alan Fitch was a British municipal official whose exact role regarding the opening of the Hong Kong City Hall remains sparsely documented in mainstream historical records."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

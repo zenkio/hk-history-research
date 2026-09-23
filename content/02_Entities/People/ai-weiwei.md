@@ -3,6 +3,7 @@ title: "Ai Weiwei (艾未未)"
 title_zh: "艾未未"
 tags: ["ai-draft", "ai-weiwei", "censorship", "contemporary-art", "m-plus-museum", "person", "west-kowloon"]
 summary: "Ai Weiwei is a prominent contemporary Chinese artist and dissident whose works and political activism have intersected with Hong Kong's cultural landscape, notably through acquisitions and exhibitions at the M+ Museum."
+description: "Ai Weiwei is a prominent contemporary Chinese artist and dissident whose works and political activism have intersected with Hong Kong's cultural landscape, notably through acquisitions and exhibitions at the M+ Museum."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

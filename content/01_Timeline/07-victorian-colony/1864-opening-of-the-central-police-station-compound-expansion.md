@@ -6,6 +6,7 @@ year: 1864
 era: "Kowloon and the Victorian colony"
 tags: ["1864", "ai-draft", "colonial-history", "law-enforcement", "urban-growth", "victorian-colony", "victorian-era"]
 summary: "In **1864**, the Central Police Station Compound in Hong Kong underwent a significant expansion to bolster colonial law enforcement infrastructure amid rapid population growth and urban crime."
+description: "In 1864, the Central Police Station Compound in Hong Kong underwent a significant expansion to bolster colonial law enforcement infrastructure amid rapid population growth and urban crime."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1929", "ai-draft", "civil-service", "colonial-history", "interwar", "interwar-period", "labor-movements", "professional-associations"]
 summary: "In 1929, the Hong Kong Chinese Civil Servants’ Association was established, marking a pivotal moment in the organizational capacity of the local Chinese workforce within the colonial administration."
+description: "In 1929, the Hong Kong Chinese Civil Servants’ Association was established, marking a pivotal moment in the organizational capacity of the local Chinese workforce within the colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1962", "ai-draft", "disaster-relief", "postwar-refugees", "squatter-homes", "typhoon-wanda", "urban-planning", "weather-disaster"]
 summary: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements. This disaster exposed the vulnerabilities of the rapidly expanding postwar population and accelerated long-term improvements in local emergency infrastructure and housing policy."
+description: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

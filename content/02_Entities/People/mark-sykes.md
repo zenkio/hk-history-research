@@ -3,6 +3,7 @@ title: "Mark Sykes (麥斯葛)"
 title_zh: "麥斯葛"
 tags: ["ai-draft", "british-colonial", "hkvdc", "hong-kong-history", "pacific-war", "person", "world-war-ii"]
 summary: "Mark Sykes was a British military officer and colonial official who served in the Hong Kong Volunteer Defence Corps during the lead-up to the Pacific War."
+description: "Mark Sykes was a British military officer and colonial official who served in the Hong Kong Volunteer Defence Corps during the lead-up to the Pacific War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

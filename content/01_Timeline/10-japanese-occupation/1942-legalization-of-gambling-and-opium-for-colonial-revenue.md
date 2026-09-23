@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "colonial-revenue", "gambling", "japanese-occupation", "opium", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong beginning in **December 1941**, the military administration legalized and monopolized gambling, prostitution, and opium dens to generate critical state revenue and exert social control over the civilian population."
+description: "During the Japanese occupation of Hong Kong beginning in December 1941, the military administration legalized and monopolized gambling, prostitution, and opium dens to generate critical state revenue and exert social…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

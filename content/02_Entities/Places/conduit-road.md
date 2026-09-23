@@ -3,6 +3,7 @@ title: "Conduit Road (幹德道)"
 title_zh: "幹德道"
 tags: ["ai-draft", "colonial-history", "conduit-road", "hong-kong-island", "mid-levels", "place", "urban-development"]
 summary: "Conduit Road is a historic residential thoroughfare in the Mid-Levels of Hong Kong Island, significant for urban development and its later connection to the Central-to-Mid-Levels Escalator system."
+description: "Conduit Road is a historic residential thoroughfare in the Mid-Levels of Hong Kong Island, significant for urban development and its later connection to the Central-to-Mid-Levels Escalator system."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

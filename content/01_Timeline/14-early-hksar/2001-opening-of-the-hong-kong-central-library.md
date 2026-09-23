@@ -6,6 +6,7 @@ year: 2001
 era: "The early HKSAR"
 tags: ["2001", "ai-draft", "causeway-bay", "cultural-infrastructure", "early-hksar", "hksar-history", "public-libraries", "urban-development"]
 summary: "On May 17, 2001, the Hong Kong Central Library opened in Causeway Bay, serving as the flagship institution of the city's public library system."
+description: "On May 17, 2001, the Hong Kong Central Library opened in Causeway Bay, serving as the flagship institution of the city's public library system."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

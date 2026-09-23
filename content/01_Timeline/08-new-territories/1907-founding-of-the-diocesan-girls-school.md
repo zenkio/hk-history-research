@@ -6,6 +6,7 @@ year: 1907
 era: "The New Territories lease and the early 20th century"
 tags: ["1900s", "1907", "ai-draft", "colonial-education", "hong-kong-history", "missionary-history", "new-territories", "womens-history"]
 summary: "In 1907, the Diocesan Girls' School was formally established in Hong Kong, marking a pivotal expansion of formal education for girls during the early colonial period."
+description: "In 1907, the Diocesan Girls' School was formally established in Hong Kong, marking a pivotal expansion of formal education for girls during the early colonial period."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

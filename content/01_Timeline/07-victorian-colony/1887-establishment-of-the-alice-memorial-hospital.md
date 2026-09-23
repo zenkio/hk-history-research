@@ -6,6 +6,7 @@ year: 1887
 era: "Kowloon and the Victorian colony"
 tags: ["1887", "19th-century", "ai-draft", "alice-memorial-hospital", "ho-kai", "hong-kong-college-of-medicine", "london-missionary-society", "medical-history", "victorian-colony"]
 summary: "Established on February 16, 1887, the Alice Memorial Hospital was founded by the London Missionary Society to provide Western medical care to the underprivileged Chinese community in Hong Kong and laid the foundational groundwork for modern medical education in the colony."
+description: "Established on February 16, 1887, the Alice Memorial Hospital was founded by the London Missionary Society to provide Western medical care to the underprivileged Chinese community in Hong Kong and laid the foundational…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

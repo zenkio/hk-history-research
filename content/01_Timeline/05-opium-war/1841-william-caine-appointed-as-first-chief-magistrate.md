@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonialism", "first-chief-magistrate", "first-opium-war", "legal-history", "opium-war", "william-caine"]
 summary: "On April 30, 1841, Captain William Caine was appointed as the first Chief Magistrate of Hong Kong, establishing early British legal administration and policing over the nascent settlement."
+description: "On April 30, 1841, Captain William Caine was appointed as the first Chief Magistrate of Hong Kong, establishing early British legal administration and policing over the nascent settlement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

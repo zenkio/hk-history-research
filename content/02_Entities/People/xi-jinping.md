@@ -3,6 +3,7 @@ title: "Xi Jinping (習近平)"
 title_zh: "習近平"
 tags: ["ai-draft", "greater-bay-area", "hong-kong-history", "national-security-law", "person", "politics", "xi-jinping"]
 summary: "Xi Jinping is the General Secretary of the Chinese Communist Party and President of the People's Republic of China, whose policies have fundamentally reshaped Hong Kong's political, legal, and economic landscape since 2012."
+description: "Xi Jinping is the General Secretary of the Chinese Communist Party and President of the People's Republic of China, whose policies have fundamentally reshaped Hong Kong's political, legal, and economic landscape since…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

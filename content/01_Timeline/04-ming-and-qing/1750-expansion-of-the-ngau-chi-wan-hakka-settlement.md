@@ -6,6 +6,7 @@ year: 1750
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1750", "agriculture", "ai-draft", "hakka", "migration", "ming-and-qing", "qing-dynasty", "rural-history"]
 summary: "Around 1750, newly arrived Hakka migrants expanded hillside terraced farming in Ngau Chi Wan, permanently shaping the rural demographic landscape of Hong Kong's urban fringe."
+description: "Around 1750, newly arrived Hakka migrants expanded hillside terraced farming in Ngau Chi Wan, permanently shaping the rural demographic landscape of Hong Kong's urban fringe."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Hongwu Emperor (洪武帝)"
 title_zh: "洪武帝"
 tags: ["administration", "ai-draft", "hong-kong-origins", "imperial-history", "ming-dynasty", "person", "zhu-yuanzhang"]
 summary: "As the founder of the Ming dynasty, the Hongwu Emperor initiated administrative policies that formalised the integration of the Hong Kong region into the imperial bureaucracy."
+description: "As the founder of the Ming dynasty, the Hongwu Emperor initiated administrative policies that formalised the integration of the Hong Kong region into the imperial bureaucracy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

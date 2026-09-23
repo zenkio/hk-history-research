@@ -6,6 +6,7 @@ year: 1991
 era: "Sino-British negotiations and the transition"
 tags: ["1991", "ai-draft", "hong-kong-history", "infrastructure", "sha-tin", "transition", "transportation", "urban-development"]
 summary: "Completed in 1991, the Tate's Cairn Tunnel represented a major expansion of Hong Kong's transport infrastructure during the final decade of British colonial administration."
+description: "Completed in 1991, the Tate's Cairn Tunnel represented a major expansion of Hong Kong's transport infrastructure during the final decade of British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Alexandre Yersin (耶爾森)"
 title_zh: "耶爾森"
 tags: ["ai-draft", "alexandre-yersin", "bubonic-plague", "colonial-history", "person", "public-health", "tai-ping-shan"]
 summary: "Alexandre Yersin was a Swiss-French bacteriologist who identified the causative agent of the bubonic plague during the 1894 outbreak in Hong Kong."
+description: "Alexandre Yersin was a Swiss-French bacteriologist who identified the causative agent of the bubonic plague during the 1894 outbreak in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

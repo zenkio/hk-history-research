@@ -6,6 +6,7 @@ year: 1998
 era: "The early HKSAR"
 tags: ["1998", "ai-draft", "early-hksar", "education-policy", "hksar-history", "hong-kong-society", "medium-of-instruction", "mother-tongue-teaching"]
 summary: "In 1998, the Hong Kong Education Department mandated that the majority of secondary schools transition to Chinese as the medium of instruction, a policy that significantly reshaped the local educational landscape."
+description: "In 1998, the Hong Kong Education Department mandated that the majority of secondary schools transition to Chinese as the medium of instruction, a policy that significantly reshaped the local educational landscape."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

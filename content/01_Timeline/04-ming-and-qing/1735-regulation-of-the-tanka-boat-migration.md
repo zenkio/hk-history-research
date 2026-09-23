@@ -6,6 +6,7 @@ year: 1735
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1735", "ai-draft", "coastal-governance", "maritime-migration", "ming-and-qing", "qing-dynasty", "social-policy", "tanka-history"]
 summary: "In 1735, the Qing imperial government issued decrees mandating the settlement of Tanka boat-dwelling populations onto land, marking a shift in the state's management of coastal communities."
+description: "In 1735, the Qing imperial government issued decrees mandating the settlement of Tanka boat-dwelling populations onto land, marking a shift in the state's management of coastal communities."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

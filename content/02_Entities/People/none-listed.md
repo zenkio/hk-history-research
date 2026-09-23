@@ -3,6 +3,7 @@ title: "None listed (individual editors remain protected by privacy/security con
 title_zh: "香港本地媒體機構的整合"
 tags: ["ai-draft", "corporate-consolidation", "hong-kong-journalism", "media-history", "person", "political-economy", "press-freedom"]
 summary: "The consolidation of Hong Kong's media landscape reflects evolving socio-political pressures and changing business environments throughout the territory's history."
+description: "The consolidation of Hong Kong's media landscape reflects evolving socio-political pressures and changing business environments throughout the territory's history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

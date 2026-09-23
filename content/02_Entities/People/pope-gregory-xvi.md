@@ -3,6 +3,7 @@ title: "Pope Gregory XVI (額我略十六世)"
 title_zh: "額我略十六世"
 tags: ["1841", "ai-draft", "apostolic-prefecture", "catholic-church", "colonial-history", "person", "vatican"]
 summary: "Pope Gregory XVI was the head of the Catholic Church who established the Apostolic Prefecture of Hong Kong in **1841**, laying the institutional foundation for the local Catholic community."
+description: "Pope Gregory XVI was the head of the Catholic Church who established the Apostolic Prefecture of Hong Kong in 1841, laying the institutional foundation for the local Catholic community."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

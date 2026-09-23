@@ -3,6 +3,7 @@ title: "Canada (加拿大)"
 title_zh: "加拿大"
 tags: ["ai-draft", "diaspora", "emigration", "hong-kong-history", "international-relations", "place", "transnationalism"]
 summary: "Canada has served as a primary destination for Hong Kong emigrants, particularly during periods of significant political and economic transition."
+description: "Canada has served as a primary destination for Hong Kong emigrants, particularly during periods of significant political and economic transition."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -5,6 +5,7 @@ year: -2500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "fine-geometric-pottery", "lingnan-culture", "neolithic-period", "prehistoric-hong-kong", "prehistory"]
 summary: "Around **2500 BCE**, prehistoric communities in the region that is now Hong Kong began producing sophisticated ceramics marked by intricate geometric patterns, reflecting broader technological and cultural developments across the Lingnan area."
+description: "Around 2500 BCE, prehistoric communities in the region that is now Hong Kong began producing sophisticated ceramics marked by intricate geometric patterns, reflecting broader technological and cultural developments…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

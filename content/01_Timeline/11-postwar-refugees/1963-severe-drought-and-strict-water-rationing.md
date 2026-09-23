@@ -6,6 +6,7 @@ year: 1963
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1963", "1963-drought", "ai-draft", "colonial-history", "manufacturing", "postwar-infrastructure", "postwar-refugees", "water-rationing"]
 summary: "An unprecedented drought in 1963 forced the Hong Kong colonial government to impose extreme water rationing, limiting mains supply to just four hours every four days and profoundly impacting both daily life and the burgeoning manufacturing sector."
+description: "An unprecedented drought in 1963 forced the Hong Kong colonial government to impose extreme water rationing, limiting mains supply to just four hours every four days and profoundly impacting both daily life and the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

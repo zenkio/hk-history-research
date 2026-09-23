@@ -3,6 +3,7 @@ title: "Alvin Leung (梁耀權)"
 title_zh: "梁耀權"
 tags: ["2000s", "ai-draft", "bus-uncle", "hong-kong-media", "internet-culture", "kowloon-motor-bus", "person"]
 summary: "Alvin Leung is the passenger who engaged in a widely publicized verbal altercation on a Hong Kong bus in 2006, sparking a major internet phenomenon."
+description: "Alvin Leung is the passenger who engaged in a widely publicized verbal altercation on a Hong Kong bus in 2006, sparking a major internet phenomenon."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

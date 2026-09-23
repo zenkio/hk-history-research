@@ -6,6 +6,7 @@ year: 1923
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1923", "ai-draft", "higher-education", "interwar", "interwar-period", "medical-history", "professional-networks", "public-health"]
 summary: "Established in 1923, the University of Hong Kong Medical Society became a key professional and academic network for medical students and practitioners, advancing modern healthcare and public health standards in the territory."
+description: "Established in 1923, the University of Hong Kong Medical Society became a key professional and academic network for medical students and practitioners, advancing modern healthcare and public health standards in the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

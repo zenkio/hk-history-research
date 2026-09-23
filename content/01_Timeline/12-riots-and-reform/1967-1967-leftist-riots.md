@@ -6,6 +6,7 @@ year: 1967
 era: "Riots and the MacLehose reforms"
 tags: ["1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
 summary: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British colonial administration."
+description: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

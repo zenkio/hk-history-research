@@ -3,6 +3,7 @@ title: "Huang Chao (黃巢)"
 title_zh: "黃巢"
 tags: ["ai-draft", "chinese-history", "huang-chao", "new-territories", "person", "refugee-history", "tang-dynasty"]
 summary: "Huang Chao was a Tang dynasty rebel leader whose uprising drove significant refugee migrations to the southern coast, including the Hong Kong region."
+description: "Huang Chao was a Tang dynasty rebel leader whose uprising drove significant refugee migrations to the southern coast, including the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Diamond Hill (鑽石山)"
 title_zh: "鑽石山"
 tags: ["ai-draft", "infrastructure", "kowloon", "local-history", "place", "transportation", "urban-development"]
 summary: "Diamond Hill is a historically significant area in Kowloon that transitioned from a collection of rural villages and squatter settlements into a major residential and transportation hub."
+description: "Diamond Hill is a historically significant area in Kowloon that transitioned from a collection of rural villages and squatter settlements into a major residential and transportation hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

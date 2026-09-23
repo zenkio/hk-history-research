@@ -3,6 +3,7 @@ title: "Ürümqi (烏魯木齊)"
 title_zh: "烏魯木齊"
 tags: ["2022-events", "ai-draft", "hong-kong-history", "place", "social-protests", "xinjiang", "ürümqi"]
 summary: "The capital of the Xinjiang Uyghur Autonomous Region, significant in Hong Kong history as the site of a 2022 fire that catalyzed solidarity protests in the city."
+description: "The capital of the Xinjiang Uyghur Autonomous Region, significant in Hong Kong history as the site of a 2022 fire that catalyzed solidarity protests in the city."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

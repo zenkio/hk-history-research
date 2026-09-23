@@ -3,6 +3,7 @@ title: "David Akers-Jones (鍾逸傑)"
 title_zh: "鍾逸傑"
 tags: ["1986-transition", "ai-draft", "british-administration", "colonial-history", "hong-kong-government", "new-territories", "person"]
 summary: "A senior British colonial official who served as the Chief Secretary and briefly as the Acting Governor of Hong Kong following the sudden death of Edward Youde."
+description: "A senior British colonial official who served as the Chief Secretary and briefly as the Acting Governor of Hong Kong following the sudden death of Edward Youde."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Hong Kong Convention and Exhibition Centre (香港會議展覽中心)"
 title_zh: "香港會議展覽中心"
 tags: ["ai-draft", "architecture", "hong-kong-history", "place", "protest", "trade", "wan-chai"]
 summary: "Located on the Wan Chai waterfront, this landmark facility is a significant venue for international trade and political events, serving as a symbol of Hong Kong's identity as a global financial and logistical hub."
+description: "Located on the Wan Chai waterfront, this landmark facility is a significant venue for international trade and political events, serving as a symbol of Hong Kong's identity as a global financial and logistical hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

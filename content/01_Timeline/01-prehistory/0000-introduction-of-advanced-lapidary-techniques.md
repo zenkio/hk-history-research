@@ -5,6 +5,7 @@ year: -2500
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "ancient-culture", "archaeology", "craft-specialization", "lapidary-techniques", "neolithic-history", "prehistoric-hong-kong", "prehistory"]
 summary: "Around 2500 BCE, archaeological evidence indicates the adoption of advanced stone-working techniques in the Hong Kong region, marking a shift toward craft specialization."
+description: "Around 2500 BCE, archaeological evidence indicates the adoption of advanced stone-working techniques in the Hong Kong region, marking a shift toward craft specialization."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

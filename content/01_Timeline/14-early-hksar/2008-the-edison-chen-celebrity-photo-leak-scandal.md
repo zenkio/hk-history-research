@@ -6,6 +6,7 @@ year: 2008
 era: "The early HKSAR"
 tags: ["2008", "ai-draft", "cybercrime", "early-hksar", "edison-chen", "hong-kong-media", "internet-privacy", "photo-leak"]
 summary: "In January 2008, the mass online leak of private, sexually explicit photographs involving Hong Kong entertainer Edison Chen and multiple prominent female celebrities sparked a massive cultural and legal crisis regarding privacy, morality, and cybercrime."
+description: "In January 2008, the mass online leak of private, sexually explicit photographs involving Hong Kong entertainer Edison Chen and multiple prominent female celebrities sparked a massive cultural and legal crisis regarding…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1962
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1962", "ai-draft", "chinese-manufacturers-association", "economy", "industrialization", "made-in-hong-kong", "postwar-recovery", "postwar-refugees"]
 summary: "The Chinese Manufacturers' Association Exhibition, first launched earlier but reaching a major milestone by **1962**, served as the premier showcase for the rapidly expanding 'Made in Hong Kong' manufacturing sector, boosting local industrial confidence and civic pride during a period of massive demographic and economic transition."
+description: "The Chinese Manufacturers' Association Exhibition, first launched earlier but reaching a major milestone by 1962, served as the premier showcase for the rapidly expanding 'Made in Hong Kong' manufacturing sector…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Lyemun Pass (鯉魚門)"
 title_zh: "鯉魚門"
 tags: ["ai-draft", "coastal-defence", "colonial-era", "hong-kong-geography", "maritime-history", "place", "victoria-harbour"]
 summary: "Lyemun Pass is a critical maritime gateway in eastern Victoria Harbour that has served as a strategic military point, a piracy deterrent, and a historic fishing hub."
+description: "Lyemun Pass is a critical maritime gateway in eastern Victoria Harbour that has served as a strategic military point, a piracy deterrent, and a historic fishing hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 2023
 era: "The National Security Law era"
 tags: ["2023", "ai-draft", "district-council", "electoral-reform", "grassroots-democracy", "hong-kong-politics", "national-security-era", "national-security-law"]
 summary: "On July 6, 2023, the Hong Kong government finalized a reform that replaced the majority of directly elected District Council seats with a system managed by three appointed committees."
+description: "On July 6, 2023, the Hong Kong government finalized a reform that replaced the majority of directly elected District Council seats with a system managed by three appointed committees."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

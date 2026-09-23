@@ -6,6 +6,7 @@ year: 1075
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1075", "ai-draft", "five-great-clans", "kam-tin", "new-territories-history", "song-and-yuan", "song-dynasty", "tang-clan"]
 summary: "Around **1075**, the Tang clan patriarch **Tang Fu-hip** settled in the New Territories, establishing roots in Kam Tin that would grow into the dominant landowning influence of the Five Great Clans."
+description: "Around 1075, the Tang clan patriarch Tang Fu-hip settled in the New Territories, establishing roots in Kam Tin that would grow into the dominant landowning influence of the Five Great Clans."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

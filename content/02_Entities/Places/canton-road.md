@@ -3,6 +3,7 @@ title: "Canton Road (廣東道)"
 title_zh: "廣東道"
 tags: ["ai-draft", "canton-road", "dg-controversy", "kowloon", "place", "protests", "tourism"]
 summary: "Canton Road is a major thoroughfare in Kowloon that became a flashpoint for cross-border cultural and economic tensions during the anti-Mainland tourism protests of the early 2010s."
+description: "Canton Road is a major thoroughfare in Kowloon that became a flashpoint for cross-border cultural and economic tensions during the anti-Mainland tourism protests of the early 2010s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1740
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1740", "ai-draft", "education", "imperial-examinations", "kam-tin", "lineage-history", "ming-and-qing", "qing-dynasty"]
 summary: "Around 1740 during the Qing dynasty, the influential Tang lineage of Kam Tin established the Yee Kung Study Hall to advance Confucian education and support candidates aiming for the imperial examinations."
+description: "Around 1740 during the Qing dynasty, the influential Tang lineage of Kam Tin established the Yee Kung Study Hall to advance Confucian education and support candidates aiming for the imperial examinations."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

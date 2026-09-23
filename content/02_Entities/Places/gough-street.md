@@ -3,6 +3,7 @@ title: "Gough Street (歌賦街)"
 title_zh: "歌賦街"
 tags: ["ai-draft", "central", "colonial-history", "education", "heritage", "hong-kong-island", "place"]
 summary: "Gough Street is a historically significant thoroughfare in Central, Hong Kong, best known as the site of the original Government Central School."
+description: "Gough Street is a historically significant thoroughfare in Central, Hong Kong, best known as the site of the original Government Central School."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

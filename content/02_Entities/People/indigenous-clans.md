@@ -3,6 +3,7 @@ title: "Indigenous Clans (原居民宗族)"
 title_zh: "原居民宗族"
 tags: ["ai-draft", "colonial-history", "land-rights", "lineage-villages", "new-territories", "person", "social-hierarchy"]
 summary: "The hereditary kinship groups who settled the New Territories (新界) prior to 1898, maintaining significant social, political, and land-owning influence in Hong Kong."
+description: "The hereditary kinship groups who settled the New Territories (新界) prior to 1898, maintaining significant social, political, and land-owning influence in Hong Kong."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

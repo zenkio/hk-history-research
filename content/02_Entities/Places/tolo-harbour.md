@@ -3,6 +3,7 @@ title: "Tolo Harbour (吐露港)"
 title_zh: "吐露港"
 tags: ["ai-draft", "maritime-history", "new-territories", "pearl-harvesting", "place", "tai-po", "tolo-harbour"]
 summary: "Tolo Harbour is a large inlet in the northeastern New Territories that has served as a center for maritime industry, pearl cultivation, and strategic settlement throughout Hong Kong's history."
+description: "Tolo Harbour is a large inlet in the northeastern New Territories that has served as a center for maritime industry, pearl cultivation, and strategic settlement throughout Hong Kong's history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

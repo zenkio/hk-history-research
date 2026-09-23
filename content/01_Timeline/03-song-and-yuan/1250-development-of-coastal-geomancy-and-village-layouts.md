@@ -6,6 +6,7 @@ year: 1250
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1250", "ai-draft", "cultural-heritage", "feng-shui", "five-great-clans", "settlement-history", "song-and-yuan", "song-dynasty", "yuan-dynasty"]
 summary: "During the late Southern Song and early Yuan dynasties, the settlement patterns of the Five Great Clans in the New Territories became increasingly structured through the application of traditional Chinese geomancy."
+description: "During the late Southern Song and early Yuan dynasties, the settlement patterns of the Five Great Clans in the New Territories became increasingly structured through the application of traditional Chinese geomancy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

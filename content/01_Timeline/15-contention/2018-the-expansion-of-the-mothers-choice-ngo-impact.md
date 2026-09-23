@@ -6,6 +6,7 @@ year: 2018
 era: "Political contention and protest"
 tags: ["2018", "adoption", "ai-draft", "contention", "history-of-hong-kong", "non-governmental-organizations", "social-welfare", "teenage-pregnancy"]
 summary: "In 2018, the non-governmental organization Mother's Choice (母親的抉擇) expanded its outreach, reflecting shifting paradigms in Hong Kong's social welfare landscape regarding teen pregnancy and adoption."
+description: "In 2018, the non-governmental organization Mother's Choice (母親的抉擇) expanded its outreach, reflecting shifting paradigms in Hong Kong's social welfare landscape regarding teen pregnancy and adoption."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

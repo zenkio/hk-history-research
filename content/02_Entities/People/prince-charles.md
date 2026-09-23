@@ -3,6 +3,7 @@ title: "Prince Charles (查爾斯王子)"
 title_zh: "查爾斯三世"
 tags: ["1997-handover", "ai-draft", "british-monarchy", "decolonization", "hong-kong-history", "king-charles-iii", "person"]
 summary: "As the Prince of Wales, he represented the British monarchy at the 1997 handover ceremony, marking the formal end of British colonial rule in Hong Kong."
+description: "As the Prince of Wales, he represented the British monarchy at the 1997 handover ceremony, marking the formal end of British colonial rule in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

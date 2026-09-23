@@ -3,6 +3,7 @@ title: "Ye Mingchen (葉名琛)"
 title_zh: "葉名琛"
 tags: ["ai-draft", "arrow-incident", "colonial-history", "person", "qing-dynasty", "second-opium-war", "ye-mingchen"]
 summary: "Ye Mingchen was the Viceroy of Liangguang whose uncompromising diplomatic approach during the Arrow Incident became a primary trigger for the Second Opium War and significantly impacted Hong Kong's security and colonial development."
+description: "Ye Mingchen was the Viceroy of Liangguang whose uncompromising diplomatic approach during the Arrow Incident became a primary trigger for the Second Opium War and significantly impacted Hong Kong's security and colonial…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

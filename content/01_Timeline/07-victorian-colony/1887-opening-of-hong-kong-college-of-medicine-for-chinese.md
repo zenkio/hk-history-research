@@ -6,6 +6,7 @@ year: 1887
 era: "Kowloon and the Victorian colony"
 tags: ["1887", "ai-draft", "british-colony", "higher-education", "hong-kong-history", "medical-history", "sun-yat-sen", "victorian-colony"]
 summary: "In October 1887, the Hong Kong College of Medicine for Chinese was established to train local practitioners in Western medicine, eventually numbering future revolutionary leader Sun Yat-sen among its first graduates."
+description: "In October 1887, the Hong Kong College of Medicine for Chinese was established to train local practitioners in Western medicine, eventually numbering future revolutionary leader Sun Yat-sen among its first graduates."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

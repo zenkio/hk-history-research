@@ -3,6 +3,7 @@ title: "Hakka people (客家人)"
 title_zh: "客家人"
 tags: ["agriculture", "ai-draft", "hakka", "hong-kong-history", "migration", "new-territories", "person"]
 summary: "The Hakka are a Han Chinese subgroup whose migration and adaptation to the rugged terrain of the New Territories played a foundational role in the agricultural and social development of Hong Kong."
+description: "The Hakka are a Han Chinese subgroup whose migration and adaptation to the rugged terrain of the New Territories played a foundational role in the agricultural and social development of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

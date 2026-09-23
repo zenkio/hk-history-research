@@ -6,6 +6,7 @@ year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1937", "ai-draft", "british-colonial-era", "interwar", "medical-history", "public-health", "queen-mary-hospital", "university-of-hong-kong"]
 summary: "On April 13, 1937, Queen Mary Hospital officially opened as the British colony's premier public teaching facility, marking a major advancement in Hong Kong's medical infrastructure and clinical education."
+description: "On April 13, 1937, Queen Mary Hospital officially opened as the British colony's premier public teaching facility, marking a major advancement in Hong Kong's medical infrastructure and clinical education."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

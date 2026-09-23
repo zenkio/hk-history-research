@@ -1,7 +1,8 @@
 ---
 title: "Historical Overview of Kowloon Dock Operations"
 tags: ["industrial-heritage", "kowloon-dock", "maritime-history", "shipbuilding"]
-summary: "The industrial development of Hong Kong's maritime infrastructure included the operation of **Kowloon Dock**. This site "
+summary: "The industrial development of Hong Kong's maritime infrastructure included the operation of Kowloon Dock."
+description: "The industrial development of Hong Kong's maritime infrastructure included the operation of Kowloon Dock."
 confidence: medium
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/kowloon-dock-already-to-work/"

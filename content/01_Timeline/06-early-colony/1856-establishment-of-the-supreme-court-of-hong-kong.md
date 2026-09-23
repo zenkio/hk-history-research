@@ -6,6 +6,7 @@ year: 1856
 era: "The early colony"
 tags: ["1856", "ai-draft", "british-administration", "colonial-history", "early-colony", "hong-kong-1856", "judicial-reform", "legal-history"]
 summary: "In 1856, the reorganization of the judiciary into the Supreme Court of Hong Kong formalized the application of English law within the burgeoning colony."
+description: "In 1856, the reorganization of the judiciary into the Supreme Court of Hong Kong formalized the application of English law within the burgeoning colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

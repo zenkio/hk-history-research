@@ -6,6 +6,7 @@ year: 2006
 era: "The early HKSAR"
 tags: ["2006", "aging-society", "ai-draft", "demographics", "early-hksar", "hksar-history", "migration", "population-census", "social-policy"]
 summary: "The 2006 Hong Kong By-census provided a statistical portrait of a maturing society, documenting the challenges of an aging populace and the evolving integration of arrivals from Mainland China."
+description: "The 2006 Hong Kong By-census provided a statistical portrait of a maturing society, documenting the challenges of an aging populace and the evolving integration of arrivals from Mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

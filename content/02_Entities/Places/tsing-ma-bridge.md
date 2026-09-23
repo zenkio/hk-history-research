@@ -3,6 +3,7 @@ title: "Tsing Ma Bridge (青馬大橋)"
 title_zh: "青馬大橋"
 tags: ["ai-draft", "engineering", "hong-kong-history", "infrastructure", "lantau-link", "place", "transportation"]
 summary: "Tsing Ma Bridge is a major suspension bridge connecting Tsing Yi and Ma Wan, serving as a critical infrastructure link for the Lantau Link and Hong Kong International Airport."
+description: "Tsing Ma Bridge is a major suspension bridge connecting Tsing Yi and Ma Wan, serving as a critical infrastructure link for the Lantau Link and Hong Kong International Airport."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

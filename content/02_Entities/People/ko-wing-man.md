@@ -3,6 +3,7 @@ title: "Ko Wing-man (高永文)"
 title_zh: "高永文"
 tags: ["ai-draft", "hong-kong-government", "hospital-authority", "ko-wing-man", "lead-water-scandal", "person", "public-health"]
 summary: "Ko Wing-man (高永文) is a prominent Hong Kong orthopedic surgeon and public official who served as the Secretary for Food and Health during the 2015 public housing lead contamination scandal."
+description: "Ko Wing-man (高永文) is a prominent Hong Kong orthopedic surgeon and public official who served as the Secretary for Food and Health during the 2015 public housing lead contamination scandal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

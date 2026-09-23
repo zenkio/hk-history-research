@@ -3,6 +3,7 @@ title: "Wang Lai (王來)"
 title_zh: "王來"
 tags: ["ai-draft", "coastal-policy", "great-clearance", "hong-kong-history", "person", "qing-dynasty", "xin-an"]
 summary: "Wang Lai was a local official during the early Qing dynasty whose involvement in the implementation of the Great Clearance policy significantly impacted the demographics and settlement patterns of the Hong Kong region."
+description: "Wang Lai was a local official during the early Qing dynasty whose involvement in the implementation of the Great Clearance policy significantly impacted the demographics and settlement patterns of the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "british-colonial-history", "first-opium-war", "legal-history", "opium-war", "supreme-court"]
 summary: "On October 30, 1841, the Supreme Court of Hong Kong held its inaugural session, establishing early British legal frameworks in the nascent colony and laying the foundation for common law jurisdiction distinct from mainland legal traditions."
+description: "On October 30, 1841, the Supreme Court of Hong Kong held its inaugural session, establishing early British legal frameworks in the nascent colony and laying the foundation for common law jurisdiction distinct from…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

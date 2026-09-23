@@ -6,6 +6,7 @@ year: 2005
 era: "The early HKSAR"
 tags: ["2005", "ai-draft", "anti-globalization", "early-hksar", "hong-kong-police", "south-korean-farmers", "wan-chai", "wto-protests"]
 summary: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
+description: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

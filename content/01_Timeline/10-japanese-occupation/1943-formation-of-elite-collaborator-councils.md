@@ -6,6 +6,7 @@ year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1943", "ai-draft", "collaborator-councils", "indirect-rule", "japanese-occupation", "local-elites", "world-war-ii"]
 summary: "In **1943**, the Japanese occupation authorities established the Chinese Representative Council and the Chinese Cooperative Council to co-opt local elites, facilitate social control, and aid in the governance of occupied Hong Kong."
+description: "In 1943, the Japanese occupation authorities established the Chinese Representative Council and the Chinese Cooperative Council to co-opt local elites, facilitate social control, and aid in the governance of occupied…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

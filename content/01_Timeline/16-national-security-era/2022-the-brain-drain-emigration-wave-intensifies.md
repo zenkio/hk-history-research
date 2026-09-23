@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "brain-drain", "demographics", "emigration", "hong-kong-history", "national-security-era", "national-security-law"]
 summary: "Following the implementation of the National Security Law, Hong Kong experienced a marked increase in outward migration of middle-class professionals and families during 2022. This demographic shift significantly altered the composition of the local workforce and the city's social landscape."
+description: "Following the implementation of the National Security Law, Hong Kong experienced a marked increase in outward migration of middle-class professionals and families during 2022."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

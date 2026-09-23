@@ -3,6 +3,7 @@ title: "Lincoln Leong (梁國權)"
 title_zh: "梁國權"
 tags: ["ai-draft", "hong-kong-politics", "infrastructure", "mtr-corporation", "person", "shatin-to-central-link", "transportation-history"]
 summary: "Lincoln Leong is a former Chief Executive Officer of the MTR Corporation who served during a period of significant operational and infrastructure challenges for Hong Kong's railway network."
+description: "Lincoln Leong is a former Chief Executive Officer of the MTR Corporation who served during a period of significant operational and infrastructure challenges for Hong Kong's railway network."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Law Yan-pak (羅文錦)"
 title_zh: "羅文錦"
 tags: ["ai-draft", "colonial-history", "executive-council", "hong-kong-elites", "legal-profession", "person", "twentieth-century"]
 summary: "Law Yan-pak was a prominent solicitor and the first Chinese member of the Executive Council of Hong Kong, acting as a key intermediary between the colonial administration and the Chinese elite."
+description: "Law Yan-pak was a prominent solicitor and the first Chinese member of the Executive Council of Hong Kong, acting as a key intermediary between the colonial administration and the Chinese elite."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

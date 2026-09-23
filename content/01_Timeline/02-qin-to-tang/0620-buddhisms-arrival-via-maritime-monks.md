@@ -5,6 +5,7 @@ year: 620
 era: "Imperial frontier: Qin to Tang"
 tags: ["620", "ai-draft", "buddhism", "coastal-settlements", "maritime-history", "qin-to-tang", "religious-history", "tang-dynasty"]
 summary: "During the early Tang Dynasty, the expansion of maritime trade routes brought Buddhist influence to the coastal regions of the Lingnan area, including present-day Hong Kong."
+description: "During the early Tang Dynasty, the expansion of maritime trade routes brought Buddhist influence to the coastal regions of the Lingnan area, including present-day Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

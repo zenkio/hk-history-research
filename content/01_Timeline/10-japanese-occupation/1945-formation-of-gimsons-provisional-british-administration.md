@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-administration", "franklin-gimson", "japanese-occupation", "post-war-restoration", "world-war-ii"]
 summary: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
+description: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

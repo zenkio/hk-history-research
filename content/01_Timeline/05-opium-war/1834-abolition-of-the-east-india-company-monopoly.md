@@ -6,6 +6,7 @@ year: 1834
 era: "Canton trade and the First Opium War"
 tags: ["1834", "ai-draft", "canton-system", "east-india-company", "first-opium-war", "free-trade", "jardine-matheson", "opium-war"]
 summary: "On April 22, 1834, the British East India Company lost its monopoly on the China trade, unleashing private merchant houses and sharply escalating commercial and diplomatic tensions with Qing authorities."
+description: "On April 22, 1834, the British East India Company lost its monopoly on the China trade, unleashing private merchant houses and sharply escalating commercial and diplomatic tensions with Qing authorities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

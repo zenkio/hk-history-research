@@ -3,6 +3,7 @@ title: "Captain Kellett (奇力)"
 title_zh: "奇力"
 tags: ["ai-draft", "colonial-history", "geography", "hong-kong-islands", "maritime-history", "person", "royal-navy"]
 summary: "A British naval officer whose surveys of the territory during the First Opium War led to the naming of several landmarks, most notably Kellett Island."
+description: "A British naval officer whose surveys of the territory during the First Opium War led to the naming of several landmarks, most notably Kellett Island."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

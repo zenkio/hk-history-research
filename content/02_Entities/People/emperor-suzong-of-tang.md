@@ -3,6 +3,7 @@ title: "Emperor Suzong of Tang (唐肅宗)"
 title_zh: "唐肅宗"
 tags: ["ai-draft", "guangzhou", "hong-kong-history", "maritime-trade", "person", "tang-dynasty"]
 summary: "Emperor Suzong of Tang (唐肅宗) was an emperor of the Tang dynasty whose reign coincided with maritime trade shifts that indirectly impacted the development of the Pearl River Delta and early connections to the Hong Kong region."
+description: "Emperor Suzong of Tang (唐肅宗) was an emperor of the Tang dynasty whose reign coincided with maritime trade shifts that indirectly impacted the development of the Pearl River Delta and early connections to the Hong Kong…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

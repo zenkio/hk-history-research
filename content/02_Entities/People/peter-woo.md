@@ -3,6 +3,7 @@ title: "Peter Woo (吳光正)"
 title_zh: "吳光正"
 tags: ["ai-draft", "business-leaders", "executive-council", "handover", "hong-kong-history", "person", "political-history"]
 summary: "Peter Woo is a prominent Hong Kong business magnate and political figure who played a significant role in the city's transition of sovereignty and subsequent governance."
+description: "Peter Woo is a prominent Hong Kong business magnate and political figure who played a significant role in the city's transition of sovereignty and subsequent governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Main Building (本部大樓)"
 title_zh: "本部大樓"
 tags: ["ai-draft", "architectural-heritage", "battle-of-hong-kong", "colonial-history", "education", "place", "university-of-hong-kong"]
 summary: "The Main Building is the oldest structure at the University of Hong Kong, serving as a symbolic and physical epicenter of higher education in the territory since the early 20th century."
+description: "The Main Building is the oldest structure at the University of Hong Kong, serving as a symbolic and physical epicenter of higher education in the territory since the early 20th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

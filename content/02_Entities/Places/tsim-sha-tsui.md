@@ -3,6 +3,7 @@ title: "Tsim Sha Tsui (尖沙咀)"
 title_zh: "尖沙咀"
 tags: ["ai-draft", "colonial-history", "kowloon", "place", "star-ferry-riots", "transportation", "tsim-sha-tsui"]
 summary: "Tsim Sha Tsui is a major commercial and transport hub in southern Kowloon that has played a pivotal role in Hong Kong's maritime trade, colonial administration, and social unrest."
+description: "Tsim Sha Tsui is a major commercial and transport hub in southern Kowloon that has played a pivotal role in Hong Kong's maritime trade, colonial administration, and social unrest."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

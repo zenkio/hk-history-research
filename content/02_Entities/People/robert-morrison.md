@@ -3,6 +3,7 @@ title: "Robert Morrison (馬禮遜)"
 title_zh: "馬禮遜"
 tags: ["ai-draft", "canton", "historiography", "morrison-education-society", "person", "protestant-missions", "robert-morrison"]
 summary: "Robert Morrison was a pioneering Anglo-Scottish Protestant missionary and lexicographer whose linguistic legacy laid the groundwork for British missionary and educational efforts in early colonial Hong Kong."
+description: "Robert Morrison was a pioneering Anglo-Scottish Protestant missionary and lexicographer whose linguistic legacy laid the groundwork for British missionary and educational efforts in early colonial Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

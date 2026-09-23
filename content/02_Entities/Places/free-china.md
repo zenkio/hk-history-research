@@ -3,6 +3,7 @@ title: "Free China (自由中國)"
 title_zh: "自由中國"
 tags: ["ai-draft", "allied-airmen", "free-china", "hong-kong-history", "japanese-occupation", "place", "world-war-ii"]
 summary: "Free China was a wartime designation and ideological concept used by the resistance networks, including those involved in the Secret Rescue of Allied Airmen, to signify unoccupied territories and anti-Japanese base areas during the Second World War."
+description: "Free China was a wartime designation and ideological concept used by the resistance networks, including those involved in the Secret Rescue of Allied Airmen, to signify unoccupied territories and anti-Japanese base…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

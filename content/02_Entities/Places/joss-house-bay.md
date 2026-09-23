@@ -3,6 +3,7 @@ title: "Joss House Bay (大廟灣)"
 title_zh: "大廟灣"
 tags: ["ai-draft", "hong-kong-history", "maritime-history", "monuments", "place", "sai-kung", "tin-hau"]
 summary: "Joss House Bay is a coastal inlet in the Sai Kung District, historically significant for the Tin Hau Temple and the oldest datable rock inscription in Hong Kong."
+description: "Joss House Bay is a coastal inlet in the Sai Kung District, historically significant for the Tin Hau Temple and the oldest datable rock inscription in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

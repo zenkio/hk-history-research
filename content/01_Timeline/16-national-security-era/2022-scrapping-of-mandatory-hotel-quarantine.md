@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "aviation", "covid-19", "economic-reopening", "john-lee", "national-security-era", "public-health"]
 summary: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of its economic reopening."
+description: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

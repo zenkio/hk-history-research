@@ -6,6 +6,7 @@ year: 1910
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1910", "ai-draft", "colonial-society", "interwar", "interwar-hong-kong", "local-identity", "south-china-athletic-association", "sports-history"]
 summary: "Founded in the early 20th century and rising to prominence during the interwar period, the South China Athletic Association became a vital institution for fostering a distinct local Chinese identity through competitive sports."
+description: "Founded in the early 20th century and rising to prominence during the interwar period, the South China Athletic Association became a vital institution for fostering a distinct local Chinese identity through competitive…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

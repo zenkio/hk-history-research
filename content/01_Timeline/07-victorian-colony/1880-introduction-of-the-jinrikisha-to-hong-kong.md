@@ -6,6 +6,7 @@ year: 1880
 era: "Kowloon and the Victorian colony"
 tags: ["1880", "1880s", "ai-draft", "colonial-era", "labor-history", "transportation-history", "urban-development", "victorian-colony"]
 summary: "In approximately 1880, human-pulled rickshaws imported from Japan were introduced to Hong Kong, revolutionizing urban public transportation and creating new employment for the local working class."
+description: "In approximately 1880, human-pulled rickshaws imported from Japan were introduced to Hong Kong, revolutionizing urban public transportation and creating new employment for the local working class."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

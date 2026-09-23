@@ -3,6 +3,7 @@ title: "Chen Yizhong (陳宜中)"
 title_zh: "陳宜中"
 tags: ["ai-draft", "chen-yizhong", "hong-kong-history", "person", "southern-song", "yuan-dynasty"]
 summary: "Chen Yizhong was a chancellor of the late Southern Song dynasty who played a pivotal role in leading the imperial court's flight southward into the territory that is now Hong Kong."
+description: "Chen Yizhong was a chancellor of the late Southern Song dynasty who played a pivotal role in leading the imperial court's flight southward into the territory that is now Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

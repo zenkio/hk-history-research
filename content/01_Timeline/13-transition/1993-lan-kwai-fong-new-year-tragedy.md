@@ -6,6 +6,7 @@ year: 1993
 era: "Sino-British negotiations and the transition"
 tags: ["1993", "ai-draft", "colonial-hong-kong", "crowd-safety", "lan-kwai-fong", "public-tragedy", "transition"]
 summary: "A fatal crowd crush in the nightlife district of Lan Kwai Fong during New Year's Eve celebrations in 1992 resulted in 21 deaths, prompting major reforms in Hong Kong's emergency management and public safety protocols."
+description: "A fatal crowd crush in the nightlife district of Lan Kwai Fong during New Year's Eve celebrations in 1992 resulted in 21 deaths, prompting major reforms in Hong Kong's emergency management and public safety protocols."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

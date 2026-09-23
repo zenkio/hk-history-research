@@ -3,6 +3,7 @@ title: "Lu Xun (盧循)"
 title_zh: "盧循"
 tags: ["ai-draft", "early-history", "jin-dynasty", "lantau-island", "lu-xun", "maritime-history", "person"]
 summary: "Lu Xun was a Jin dynasty rebel leader whose forces operated in the waters and islands of modern-day Hong Kong during the early fifth century."
+description: "Lu Xun was a Jin dynasty rebel leader whose forces operated in the waters and islands of modern-day Hong Kong during the early fifth century."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

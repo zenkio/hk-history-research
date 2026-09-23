@@ -3,6 +3,7 @@ title: "China (中國)"
 title_zh: "中國"
 tags: ["ai-draft", "china", "colonial-history", "geopolitics", "place", "sovereignty", "trade"]
 summary: "China is the neighboring sovereign state whose dynastic transitions, geopolitical shifts, and economic policies have continuously shaped the sovereignty, administration, and development of Hong Kong."
+description: "China is the neighboring sovereign state whose dynastic transitions, geopolitical shifts, and economic policies have continuously shaped the sovereignty, administration, and development of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

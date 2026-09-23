@@ -6,6 +6,7 @@ year: 1863
 era: "Kowloon and the Victorian colony"
 tags: ["1863", "ai-draft", "british-colony", "industrial-economy", "kowloon", "maritime-history", "shipbuilding", "victorian-colony"]
 summary: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
+description: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -2,7 +2,8 @@
 title: "Launch of Historical Photographs of Hong Kong digital platform"
 date: 2026-09-09
 tags: ["2026", "digital-archives", "historical-preservation", "hong-kong-history", "visual-culture"]
-summary: "On **9 September 2026**, the **Hong Kong History Centre** at the **University of Bristol** launched an open-access digit"
+summary: "On 9 September 2026, the Hong Kong History Centre at the University of Bristol launched an open-access digital platform titled 'Historical Photographs of Hong Kong.' This resource provides public access to a digitized…"
+description: "On 9 September 2026, the Hong Kong History Centre at the University of Bristol launched an open-access digital platform titled 'Historical Photographs of Hong Kong.' This resource provides public access to a digitized…"
 confidence: high
 source_feed: HK_History_Centre
 source_url: "https://www.hkhistory.net/2026/09/09/hphk-launch/"

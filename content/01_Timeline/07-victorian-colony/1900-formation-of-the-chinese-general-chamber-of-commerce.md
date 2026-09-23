@@ -6,6 +6,7 @@ year: 1900
 era: "Kowloon and the Victorian colony"
 tags: ["1900", "ai-draft", "chinese-elites", "chinese-general-chamber-of-commerce", "colonial-hong-kong", "economic-history", "merchant-networks", "victorian-colony"]
 summary: "Emerging around the turn of the twentieth century from late 19th-century merchant networks, the Chinese General Chamber of Commerce provided Chinese business leaders with an institutional platform to coordinate commercial interests and interact with the colonial administration."
+description: "Emerging around the turn of the twentieth century from late 19th-century merchant networks, the Chinese General Chamber of Commerce provided Chinese business leaders with an institutional platform to coordinate…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Raymond Chan Chi-chuen (陳志全)"
 title_zh: "陳志全"
 tags: ["ai-draft", "democracy-activism", "filibuster", "hong-kong-politics", "legislative-council", "people-power", "person"]
 summary: "Raymond Chan Chi-chuen is a Hong Kong politician and former broadcaster who served as a member of the Legislative Council, known for his activism and participation in legislative obstructionism."
+description: "Raymond Chan Chi-chuen is a Hong Kong politician and former broadcaster who served as a member of the Legislative Council, known for his activism and participation in legislative obstructionism."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Macau (澳門)"
 title_zh: "澳門"
 tags: ["ai-draft", "geopolitics", "macau", "pearl-river-delta", "place", "portuguese-history", "regional-trade"]
 summary: "Macau is a neighboring special administrative region of China whose early Portuguese settlement and trade rivalry profoundly shaped the geopolitical dynamics leading to the establishment of British Hong Kong."
+description: "Macau is a neighboring special administrative region of China whose early Portuguese settlement and trade rivalry profoundly shaped the geopolitical dynamics leading to the establishment of British Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

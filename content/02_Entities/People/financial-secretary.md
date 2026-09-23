@@ -3,6 +3,7 @@ title: "Financial Secretary (財政司)"
 title_zh: "財政司"
 tags: ["ai-draft", "colonial-history", "economy", "financial-secretary", "government", "hkma", "person"]
 summary: "The Financial Secretary of Hong Kong is a principal government official responsible for the territory's financial, monetary, and economic policies, playing a pivotal role in the establishment of the Hong Kong Monetary Authority."
+description: "The Financial Secretary of Hong Kong is a principal government official responsible for the territory's financial, monetary, and economic policies, playing a pivotal role in the establishment of the Hong Kong Monetary…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

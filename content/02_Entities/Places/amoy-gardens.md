@@ -3,6 +3,7 @@ title: "Amoy Gardens (淘大花園)"
 title_zh: "淘大花園"
 tags: ["ai-draft", "hong-kong-history", "kowloon-bay", "place", "public-health", "sars-outbreak", "urban-planning"]
 summary: "A large-scale private residential estate in Kowloon Bay that became the epicenter of the 2003 SARS outbreak in Hong Kong, serving as a critical case study in urban planning and public health."
+description: "A large-scale private residential estate in Kowloon Bay that became the epicenter of the 2003 SARS outbreak in Hong Kong, serving as a critical case study in urban planning and public health."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

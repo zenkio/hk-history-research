@@ -3,6 +3,7 @@ title: "David Wilson (衛奕信)"
 title_zh: "衛奕信"
 tags: ["ai-draft", "colonial-history", "hong-kong-governors", "person", "rose-garden-project", "sino-british-relations", "transition-period"]
 summary: "David Wilson served as the 27th Governor of Hong Kong from 1987 to 1992, overseeing the territory during a period of significant political tension following the 1984 Sino-British Joint Declaration."
+description: "David Wilson served as the 27th Governor of Hong Kong from 1987 to 1992, overseeing the territory during a period of significant political tension following the 1984 Sino-British Joint Declaration."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

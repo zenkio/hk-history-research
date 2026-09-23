@@ -6,6 +6,7 @@ year: 1874
 era: "Kowloon and the Victorian colony"
 tags: ["1874", "ai-draft", "colonial-era", "great-typhoon", "maritime-history", "meteorology", "victoria-harbour", "victorian-colony"]
 summary: "On September 22, 1874, a devastating typhoon struck Hong Kong, destroying the harbor and coastal communities, resulting in thousands of fatalities, and prompting significant reforms in maritime safety and weather forecasting."
+description: "On September 22, 1874, a devastating typhoon struck Hong Kong, destroying the harbor and coastal communities, resulting in thousands of fatalities, and prompting significant reforms in maritime safety and weather…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Fanling North (粉嶺北)"
 title_zh: "粉嶺北"
 tags: ["ai-draft", "fanling-north", "hong-kong-history", "land-rights", "new-territories", "place", "urban-development"]
 summary: "Fanling North is a significant development zone in the New Territories, historically defined by rural indigenous settlements and increasingly at the center of modern urban planning debates."
+description: "Fanling North is a significant development zone in the New Territories, historically defined by rural indigenous settlements and increasingly at the center of modern urban planning debates."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

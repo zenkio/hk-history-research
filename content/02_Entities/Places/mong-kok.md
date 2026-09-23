@@ -3,6 +3,7 @@ title: "Mong Kok (旺角)"
 title_zh: "旺角"
 tags: ["ai-draft", "hong-kong-history", "kowloon", "mong-kok", "place", "social-activism", "urban-history"]
 summary: "Mong Kok is one of Hong Kong's most densely populated and commercially vibrant districts, serving as a focal point for grassroots social activism and urban history."
+description: "Mong Kok is one of Hong Kong's most densely populated and commercially vibrant districts, serving as a focal point for grassroots social activism and urban history."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

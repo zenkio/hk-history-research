@@ -3,6 +3,7 @@ title: "Mui Wo (梅窩)"
 title_zh: "梅窩"
 tags: ["ai-draft", "hong-kong-history", "imperial-refuge", "lantau-island", "mui-wo", "place", "southern-song"]
 summary: "Mui Wo is a rural town on Lantau Island that serves as a key historical site connected to the flight of the Southern Song court."
+description: "Mui Wo is a rural town on Lantau Island that serves as a key historical site connected to the flight of the Southern Song court."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

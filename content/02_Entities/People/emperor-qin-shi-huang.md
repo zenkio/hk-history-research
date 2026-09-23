@@ -3,6 +3,7 @@ title: "Emperor Qin Shi Huang (秦始皇)"
 title_zh: "秦始皇"
 tags: ["ai-draft", "ancient-history", "imperial-expansion", "lingnan", "person", "qin-dynasty"]
 summary: "Emperor Qin Shi Huang was the founder of the Qin Dynasty whose southern military campaigns initiated direct imperial Chinese administration over the Hong Kong region."
+description: "Emperor Qin Shi Huang was the founder of the Qin Dynasty whose southern military campaigns initiated direct imperial Chinese administration over the Hong Kong region."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

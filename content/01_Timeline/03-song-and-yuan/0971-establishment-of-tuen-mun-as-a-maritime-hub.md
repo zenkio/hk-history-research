@@ -5,6 +5,7 @@ year: 971
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["971", "ai-draft", "history-of-hong-kong", "maritime-silk-road", "maritime-trade", "song-and-yuan", "song-dynasty", "uen-mun"]
 summary: "In 971, the Song dynasty government formally designated Tuen Mun as a maritime tax and transit port, marking the region's integration into the Maritime Silk Road."
+description: "In 971, the Song dynasty government formally designated Tuen Mun as a maritime tax and transit port, marking the region's integration into the Maritime Silk Road."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

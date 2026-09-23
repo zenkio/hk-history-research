@@ -3,6 +3,7 @@ title: "Sam Tung Uk (三棟屋)"
 title_zh: "三棟屋"
 tags: ["ai-draft", "cultural-heritage", "hakka-culture", "new-territories", "place", "tsuen-wan", "walled-village"]
 summary: "Sam Tung Uk is a well-preserved Hakka walled village in Tsuen Wan that exemplifies the traditional social structure and architecture of the New Territories before rapid urbanization."
+description: "Sam Tung Uk is a well-preserved Hakka walled village in Tsuen Wan that exemplifies the traditional social structure and architecture of the New Territories before rapid urbanization."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

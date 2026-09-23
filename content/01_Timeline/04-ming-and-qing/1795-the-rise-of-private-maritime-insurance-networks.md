@@ -6,6 +6,7 @@ year: 1795
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1795", "ai-draft", "maritime-history", "ming-and-qing", "pearl-river-delta", "piracy", "qing-dynasty", "trade-networks"]
 summary: "By 1795, persistent instability in the Pearl River Delta led coastal traders to formalize informal risk-sharing agreements to protect their maritime commerce."
+description: "By 1795, persistent instability in the Pearl River Delta led coastal traders to formalize informal risk-sharing agreements to protect their maritime commerce."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

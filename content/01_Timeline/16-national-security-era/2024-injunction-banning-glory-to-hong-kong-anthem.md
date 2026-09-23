@@ -6,6 +6,7 @@ year: 2024
 era: "The National Security Law era"
 tags: ["2024", "ai-draft", "censorship", "freedom-of-speech", "glory-to-hong-kong", "judiciary", "national-security-era", "national-security-law"]
 summary: "On May 8, 2024, the High Court of Hong Kong granted an injunction to ban the unlawful broadcasting, distribution, or performance of the 2019 protest song 'Glory to Hong Kong' (願榮光歸香港), marking a significant legal milestone under the National Security Law era."
+description: "On May 8, 2024, the High Court of Hong Kong granted an injunction to ban the unlawful broadcasting, distribution, or performance of the 2019 protest song 'Glory to Hong Kong' (願榮光歸香港), marking a significant legal…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

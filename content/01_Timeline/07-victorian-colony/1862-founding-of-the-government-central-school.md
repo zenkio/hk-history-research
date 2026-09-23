@@ -6,6 +6,7 @@ year: 1862
 era: "Kowloon and the Victorian colony"
 tags: ["1862", "ai-draft", "colonial-education", "frederick-stewart", "government-central-school", "queens-college", "victorian-colony", "victorian-hong-kong"]
 summary: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
+description: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

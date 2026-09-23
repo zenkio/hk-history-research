@@ -3,6 +3,7 @@ title: "Esing Bakery (裕盛辦餅店)"
 title_zh: "裕盛辦餅店"
 tags: ["ai-draft", "cheong-ah-lum", "colonial-hong-kong", "esing-bakery", "hong-kong-history", "place", "second-opium-war"]
 summary: "The Esing Bakery was a commercial establishment in colonial Hong Kong whose 1857 poisoning incident became a pivotal event in early British-Chinese relations."
+description: "The Esing Bakery was a commercial establishment in colonial Hong Kong whose 1857 poisoning incident became a pivotal event in early British-Chinese relations."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

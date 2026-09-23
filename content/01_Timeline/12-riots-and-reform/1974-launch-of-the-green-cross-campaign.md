@@ -6,6 +6,7 @@ year: 1974
 era: "Riots and the MacLehose reforms"
 tags: ["1974", "ai-draft", "industrial-safety", "labor-rights", "maclehose-reforms", "manufacturing-history", "riots-and-reform", "social-policy"]
 summary: "In 1974, the colonial government launched the Green Cross Campaign (綠十字運動) to address escalating industrial accidents during Hong Kong's manufacturing peak. This initiative marked a critical shift toward state-led intervention in occupational safety and labor welfare."
+description: "In 1974, the colonial government launched the Green Cross Campaign (綠十字運動) to address escalating industrial accidents during Hong Kong's manufacturing peak."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

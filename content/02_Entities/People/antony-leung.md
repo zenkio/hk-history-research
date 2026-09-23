@@ -3,6 +3,7 @@ title: "Antony Leung (梁錦松)"
 title_zh: "梁錦松"
 tags: ["ai-draft", "antony-leung", "financial-secretary", "hk-politics", "hong-kong-government", "person", "urban-renewal"]
 summary: "Antony Leung Kam-chung is a prominent Hong Kong banker and politician who served as the Financial Secretary of the Hong Kong Special Administrative Region from 2001 to 2003."
+description: "Antony Leung Kam-chung is a prominent Hong Kong banker and politician who served as the Financial Secretary of the Hong Kong Special Administrative Region from 2001 to 2003."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

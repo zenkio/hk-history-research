@@ -3,6 +3,7 @@ title: "Zhao Bing (趙昺)"
 title_zh: "趙昺"
 tags: ["ai-draft", "emperor-bing", "hong-kong-history", "imperial-china", "person", "southern-song", "sung-wong-toi"]
 summary: "Zhao Bing was the final emperor of the Southern Song dynasty whose flight to and eventual death near the shores of Hong Kong remain central to the region's historical identity."
+description: "Zhao Bing was the final emperor of the Southern Song dynasty whose flight to and eventual death near the shores of Hong Kong remain central to the region's historical identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

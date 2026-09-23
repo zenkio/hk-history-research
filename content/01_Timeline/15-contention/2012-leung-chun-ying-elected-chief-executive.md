@@ -6,6 +6,7 @@ year: 2012
 era: "Political contention and protest"
 tags: ["2012", "ai-draft", "beijing-relations", "chief-executive-election", "contention", "leung-chun-ying", "localism", "umbrella-movement"]
 summary: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang. His victory marked the beginning of a deeply polarized political era that would see intensifying debates over democratic reform and local identity."
+description: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1661
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1661", "ai-draft", "great-clearance", "koxinga", "maritime-history", "migration", "ming-and-qing", "qing-dynasty"]
 summary: "In **1661**, the Qing court issued the Great Clearance edict, forcing coastal residents in Hong Kong and neighboring regions to evacuate inland to sever supply lines to the anti-Qing loyalist Koxinga."
+description: "In 1661, the Qing court issued the Great Clearance edict, forcing coastal residents in Hong Kong and neighboring regions to evacuate inland to sever supply lines to the anti-Qing loyalist Koxinga."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

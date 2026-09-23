@@ -6,6 +6,7 @@ year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1938", "ai-draft", "british-colonial-history", "guangzhou", "interwar", "kowloon-canton-railway", "refugee-crisis", "second-sino-japanese-war"]
 summary: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
+description: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

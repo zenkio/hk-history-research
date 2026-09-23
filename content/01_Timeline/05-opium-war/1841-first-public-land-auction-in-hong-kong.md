@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "colonial-history", "crown-lease", "first-land-auction", "first-opium-war", "opium-war", "victoria-city"]
 summary: "On June 14, 1841, British authorities held the first public land auction in Hong Kong, offering initial waterfront lots that laid the foundations for Victoria City and commercial expansion."
+description: "On June 14, 1841, British authorities held the first public land auction in Hong Kong, offering initial waterfront lots that laid the foundations for Victoria City and commercial expansion."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

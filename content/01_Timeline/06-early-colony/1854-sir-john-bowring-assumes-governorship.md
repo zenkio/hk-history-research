@@ -6,6 +6,7 @@ year: 1854
 era: "The early colony"
 tags: ["1854", "ai-draft", "colonial-governance", "early-colony", "free-trade", "governor-bowring"]
 summary: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
+description: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

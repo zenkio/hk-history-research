@@ -6,6 +6,7 @@ year: 1888
 era: "The New Territories lease and the early 20th century"
 tags: ["1888", "ai-draft", "colonial-history", "new-territories", "public-health", "spatial-segregation", "urban-planning"]
 summary: "In **1888**, colonial authorities enacted Ordinance No. 1, largely shaped by Inspector of Schools **Ernest John Eitel**, formalizing residential separation policies that restricted Chinese residency in specific upscale districts of Hong Kong."
+description: "In 1888, colonial authorities enacted Ordinance No."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

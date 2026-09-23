@@ -3,6 +3,7 @@ title: "Fung Wai-wah (馮偉華)"
 title_zh: "馮偉華"
 tags: ["ai-draft", "civil-society", "education", "fung-wai-wah", "person", "ptu", "union-leader"]
 summary: "Fung Wai-wah (馮偉華) is a prominent Hong Kong educator and union leader who served as president of the Hong Kong Professional Teachers' Union (香港教育專業人員協會) during a period of escalating political tension and the organization's eventual dissolution."
+description: "Fung Wai-wah (馮偉華) is a prominent Hong Kong educator and union leader who served as president of the Hong Kong Professional Teachers' Union (香港教育專業人員協會) during a period of escalating political tension and the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Sichuan (四川)"
 title_zh: "四川"
 tags: ["ai-draft", "jade-rings", "material-culture", "place", "regional-history", "sichuan", "trade-networks"]
 summary: "Sichuan is a southwestern Chinese province whose historical trade and material culture influenced Hong Kong through regional artifact exchange, notably via the circulation of southwestern-style jade ornaments."
+description: "Sichuan is a southwestern Chinese province whose historical trade and material culture influenced Hong Kong through regional artifact exchange, notably via the circulation of southwestern-style jade ornaments."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

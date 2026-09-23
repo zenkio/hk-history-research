@@ -6,6 +6,7 @@ year: 1932
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1932", "ai-draft", "chinese-philanthropy", "interwar", "interwar-hong-kong", "po-leung-kuk", "social-welfare", "women-and-children"]
 summary: "In 1932, the Po Leung Kuk completed its expanded permanent headquarters on Leighton Road, solidifying its position as the preeminent Chinese-run welfare and child-protection institution in British Hong Kong during the interwar period."
+description: "In 1932, the Po Leung Kuk completed its expanded permanent headquarters on Leighton Road, solidifying its position as the preeminent Chinese-run welfare and child-protection institution in British Hong Kong during the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

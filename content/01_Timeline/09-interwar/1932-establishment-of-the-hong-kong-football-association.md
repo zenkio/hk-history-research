@@ -6,6 +6,7 @@ year: 1932
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1930s", "1932", "ai-draft", "colonial-era", "football-history", "hong-kong-history", "interwar", "sports-governance"]
 summary: "In 1932, the formal establishment of the Hong Kong Football Association (香港足球總會) provided a unified governance structure for the sport during a period of rapid social change."
+description: "In 1932, the formal establishment of the Hong Kong Football Association (香港足球總會) provided a unified governance structure for the sport during a period of rapid social change."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

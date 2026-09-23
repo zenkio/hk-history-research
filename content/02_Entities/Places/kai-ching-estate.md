@@ -3,6 +3,7 @@ title: "Kai Ching Estate (啟晴邨)"
 title_zh: "啟晴邨"
 tags: ["2015-events", "ai-draft", "kai-ching-estate", "kowloon-city", "lead-contamination", "place", "public-housing"]
 summary: "Kai Ching Estate is a public housing estate in Kowloon City that became the epicenter of the major 2015 Hong Kong public housing lead contamination scandal."
+description: "Kai Ching Estate is a public housing estate in Kowloon City that became the epicenter of the major 2015 Hong Kong public housing lead contamination scandal."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

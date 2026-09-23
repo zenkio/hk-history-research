@@ -3,6 +3,7 @@ title: "Thomas Chisholm Anstey (安思地)"
 title_zh: "安思地"
 tags: ["19th-century", "ai-draft", "attorney-general", "caldwell-anstey-scandal", "colonial-corruption", "hong-kong-history", "person"]
 summary: "Thomas Chisholm Anstey was the Attorney General of Hong Kong whose aggressive crusade against colonial corruption triggered the explosive Caldwell-Anstey scandal of the late 1850s."
+description: "Thomas Chisholm Anstey was the Attorney General of Hong Kong whose aggressive crusade against colonial corruption triggered the explosive Caldwell-Anstey scandal of the late 1850s."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

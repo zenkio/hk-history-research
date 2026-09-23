@@ -3,6 +3,7 @@ title: "Charles Ford (科德)"
 title_zh: "科德"
 tags: ["ai-draft", "botanical-gardens", "charles-ford", "colonial-history", "horticulture", "person", "victoria-city"]
 summary: "Charles Ford was a prominent colonial botanist and superintendent of the Hong Kong Botanical Gardens who significantly advanced botanical research and urban greening in the late nineteenth century."
+description: "Charles Ford was a prominent colonial botanist and superintendent of the Hong Kong Botanical Gardens who significantly advanced botanical research and urban greening in the late nineteenth century."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

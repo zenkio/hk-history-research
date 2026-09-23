@@ -2,6 +2,7 @@
 title: "13 · Sino-British negotiations and the transition (1982-1997)"
 tags: ["ai-draft", "basic-law", "colonial-history", "era-overview", "hong-kong-handover", "one-country-two-systems", "sino-british-joint-declaration"]
 summary: "This era encompasses the fifteen years between the initiation of sovereignty talks and the transfer of Hong Kong's administration to the People's Republic of China. Marked by economic restructuring, political reform, and mass emigration anxiety, it concluded with the 1997 handover."
+description: "This era encompasses the fifteen years between the initiation of sovereignty talks and the transfer of Hong Kong's administration to the People's Republic of China."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

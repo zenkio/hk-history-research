@@ -3,6 +3,7 @@ title: "Chinese Labour Corps laborers (華工)"
 title_zh: "中國勞工旅"
 tags: ["ai-draft", "chinese-labour-corps", "colonial-history", "hong-kong-history", "labour-migration", "person", "world-war-i"]
 summary: "The Chinese Labour Corps (華工) consisted of approximately 140,000 Chinese men recruited by the British and French during the First World War, with many transiting through or recruited from Hong Kong."
+description: "The Chinese Labour Corps (華工) consisted of approximately 140,000 Chinese men recruited by the British and French during the First World War, with many transiting through or recruited from Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1978
 era: "Riots and the MacLehose reforms"
 tags: ["1978", "ai-draft", "education-reform", "history", "maclehose-era", "riots-and-reform", "social-policy", "workforce-development"]
 summary: "In September 1978, the Hong Kong government introduced nine years of free and compulsory education, a milestone reform that reshaped the territory's social mobility and workforce capabilities."
+description: "In September 1978, the Hong Kong government introduced nine years of free and compulsory education, a milestone reform that reshaped the territory's social mobility and workforce capabilities."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

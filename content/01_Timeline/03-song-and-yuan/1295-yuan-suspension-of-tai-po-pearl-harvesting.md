@@ -6,6 +6,7 @@ year: 1295
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1295", "ai-draft", "economic-history", "maritime-trade", "pearl-harvesting", "song-and-yuan", "tai-po", "yuan-dynasty"]
 summary: "In **1295**, extreme mortality rates among local divers forced the Yuan dynasty authorities to suspend official pearl harvesting operations in Tai Po Hoi, highlighting the deadly human cost of the imperial luxury trade."
+description: "In 1295, extreme mortality rates among local divers forced the Yuan dynasty authorities to suspend official pearl harvesting operations in Tai Po Hoi, highlighting the deadly human cost of the imperial luxury trade."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

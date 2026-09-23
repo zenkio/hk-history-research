@@ -6,6 +6,7 @@ year: 1945
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1945", "ai-draft", "british-colonial-history", "japanese-occupation", "liberation", "postwar-recovery", "postwar-refugees", "world-war-ii"]
 summary: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
+description: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

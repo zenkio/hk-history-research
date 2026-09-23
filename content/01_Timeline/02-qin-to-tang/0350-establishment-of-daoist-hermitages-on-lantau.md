@@ -5,6 +5,7 @@ year: 350
 era: "Imperial frontier: Qin to Tang"
 tags: ["350", "ai-draft", "daoism", "eastern-jin", "hermit-tradition", "lantau-island", "maritime-history", "qin-to-tang"]
 summary: "During the late 4th century, Lantau Island became a remote retreat for Daoist practitioners, marking an early intersection between imperial religious culture and the maritime frontier."
+description: "During the late 4th century, Lantau Island became a remote retreat for Daoist practitioners, marking an early intersection between imperial religious culture and the maritime frontier."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

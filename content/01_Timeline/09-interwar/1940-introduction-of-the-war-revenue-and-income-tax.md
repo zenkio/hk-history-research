@@ -6,6 +6,7 @@ year: 1940
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1940", "ai-draft", "colonial-history", "income-tax", "interwar", "public-finance", "war-revenue", "world-war-two"]
 summary: "Facing mounting financial pressures from the Second World War and an influx of refugees, the Hong Kong government introduced the colony's first direct income and profits taxes in 1940, breaking with a long-standing tradition of indirect taxation."
+description: "Facing mounting financial pressures from the Second World War and an influx of refugees, the Hong Kong government introduced the colony's first direct income and profits taxes in 1940, breaking with a long-standing…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

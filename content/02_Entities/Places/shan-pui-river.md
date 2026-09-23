@@ -3,6 +3,7 @@ title: "Shan Pui River (山貝河)"
 title_zh: "山貝河"
 tags: ["ai-draft", "kau-hui", "new-territories", "place", "river-trade", "shan-pui-river", "yuen-long"]
 summary: "Shan Pui River is a vital watercourse in Yuen Long that served as a crucial transport and economic artery during the establishment of the historic Yuen Long Kau Hui market."
+description: "Shan Pui River is a vital watercourse in Yuen Long that served as a crucial transport and economic artery during the establishment of the historic Yuen Long Kau Hui market."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

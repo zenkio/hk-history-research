@@ -3,6 +3,7 @@ title: "Yuan officials (元朝官員)"
 title_zh: "元朝官員"
 tags: ["ai-draft", "coastal-administration", "hong-kong-history", "imperial-china", "person", "salt-industry", "yuan-dynasty"]
 summary: "Representatives of the Mongol-led Yuan dynasty tasked with administering the coastal regions of the Pearl River Delta, including the salt production facilities that defined early Hong Kong's economic structure."
+description: "Representatives of the Mongol-led Yuan dynasty tasked with administering the coastal regions of the Pearl River Delta, including the salt production facilities that defined early Hong Kong's economic structure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

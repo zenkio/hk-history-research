@@ -3,6 +3,7 @@ title: "Qishan (琦善)"
 title_zh: "琦善"
 tags: ["ai-draft", "charles-elliot", "convention-of-chuenpi", "first-opium-war", "person", "qing-dynasty"]
 summary: "Qishan was the Qing imperial commissioner whose unauthorized concessions during negotiations with Britain led directly to the initial British occupation of Hong Kong."
+description: "Qishan was the Qing imperial commissioner whose unauthorized concessions during negotiations with Britain led directly to the initial British occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

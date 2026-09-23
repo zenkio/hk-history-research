@@ -6,6 +6,7 @@ year: 1957
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1957", "ai-draft", "broadcasting", "mass-media", "postwar-hong-kong", "postwar-refugees", "rediffusion", "television-history"]
 summary: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
+description: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

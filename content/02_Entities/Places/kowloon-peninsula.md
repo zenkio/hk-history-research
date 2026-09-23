@@ -3,6 +3,7 @@ title: "Kowloon Peninsula (九龍半島)"
 title_zh: "九龍半島"
 tags: ["ai-draft", "british-colony", "convention-of-peking", "history", "kowloon", "place", "victoria-harbour"]
 summary: "The Kowloon Peninsula is a contiguous landmass jutting southward from the Chinese mainland that forms the urban core of Hong Kong, profoundly shaped by nineteenth-century imperial expansion and colonial administration."
+description: "The Kowloon Peninsula is a contiguous landmass jutting southward from the Chinese mainland that forms the urban core of Hong Kong, profoundly shaped by nineteenth-century imperial expansion and colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

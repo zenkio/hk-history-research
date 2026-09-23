@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "hong-kong-history", "independent-media", "journalism", "national-security-era", "national-security-law", "press-freedom"]
 summary: "Following the closure of Stand News, the sudden shutdown of Citizen News in early 2022 marked a pivotal contraction in Hong Kong's independent media landscape under the National Security Law."
+description: "Following the closure of Stand News, the sudden shutdown of Citizen News in early 2022 marked a pivotal contraction in Hong Kong's independent media landscape under the National Security Law."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

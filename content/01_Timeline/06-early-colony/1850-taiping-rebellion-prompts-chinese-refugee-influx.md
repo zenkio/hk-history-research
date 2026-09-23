@@ -6,6 +6,7 @@ year: 1850
 era: "The early colony"
 tags: ["1850", "ai-draft", "demographics", "early-colony", "migration", "refugee-influx", "taiping-rebellion"]
 summary: "The outbreak of the Taiping Rebellion in **1850** triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
+description: "The outbreak of the Taiping Rebellion in 1850 triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

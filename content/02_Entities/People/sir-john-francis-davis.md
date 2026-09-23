@@ -3,6 +3,7 @@ title: "Sir John Francis Davis (戴維斯)"
 title_zh: "戴維斯"
 tags: ["19th-century", "ai-draft", "british-hong-kong", "colonial-history", "governors", "person"]
 summary: "Sir John Francis Davis was the second Governor of Hong Kong, whose administrative policies and strict fiscal approach significantly shaped the early colonial development and social unrest of the territory."
+description: "Sir John Francis Davis was the second Governor of Hong Kong, whose administrative policies and strict fiscal approach significantly shaped the early colonial development and social unrest of the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

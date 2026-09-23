@@ -6,6 +6,7 @@ year: 1841
 era: "Canton trade and the First Opium War"
 tags: ["1841", "ai-draft", "apostolic-prefecture", "catholic-church", "colonial-history", "first-opium-war", "opium-war", "religion"]
 summary: "On April 22, 1841, Pope Gregory XVI established the Apostolic Prefecture of Hong Kong, separating the territory's Catholic administration from the Diocese of Macau and appointing Father Theodor Joset as its first prefect."
+description: "On April 22, 1841, Pope Gregory XVI established the Apostolic Prefecture of Hong Kong, separating the territory's Catholic administration from the Diocese of Macau and appointing Father Theodor Joset as its first…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

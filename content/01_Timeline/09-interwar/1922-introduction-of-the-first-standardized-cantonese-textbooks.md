@@ -6,6 +6,7 @@ year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
 tags: ["1922", "ai-draft", "cantonese", "colonial-hong-kong", "education-history", "interwar", "interwar-period", "linguistic-evolution"]
 summary: "In 1922, Hong Kong authorities and local educators initiated the codification of Cantonese-based curriculum materials, marking a divergence from the vernacular movements occurring in mainland China."
+description: "In 1922, Hong Kong authorities and local educators initiated the codification of Cantonese-based curriculum materials, marking a divergence from the vernacular movements occurring in mainland China."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

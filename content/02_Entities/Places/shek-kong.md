@@ -3,6 +3,7 @@ title: "Shek Kong (石崗)"
 title_zh: "石崗"
 tags: ["ai-draft", "colonial-history", "military-history", "new-territories", "place", "shek-kong", "six-day-war"]
 summary: "Shek Kong is a strategically significant area in the New Territories, historically marked by its rural village life and the establishment of a major military airfield under British colonial rule."
+description: "Shek Kong is a strategically significant area in the New Territories, historically marked by its rural village life and the establishment of a major military airfield under British colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

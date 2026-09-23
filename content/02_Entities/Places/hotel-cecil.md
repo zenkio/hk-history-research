@@ -3,6 +3,7 @@ title: "Hotel Cecil (賽西爾酒店)"
 title_zh: "賽西爾酒店"
 tags: ["ai-draft", "central-district", "colonial-history", "japanese-occupation", "kempeitai", "place", "world-war-two"]
 summary: "The Hotel Cecil was a prominent colonial-era building on Statue Square that served as a headquarters for the Japanese military police during the occupation of Hong Kong."
+description: "The Hotel Cecil was a prominent colonial-era building on Statue Square that served as a headquarters for the Japanese military police during the occupation of Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

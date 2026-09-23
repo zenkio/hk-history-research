@@ -3,6 +3,7 @@ title: "Tanka People (蜑家人)"
 title_zh: "蜑家人"
 tags: ["ai-draft", "boat-people", "indigenous-communities", "maritime-history", "new-territories", "person", "tanka"]
 summary: "The Tanka people are a boat-dwelling ethnic group whose historical presence in Hong Kong's waters is foundational to the region's maritime economy and pre-colonial coastal society."
+description: "The Tanka people are a boat-dwelling ethnic group whose historical presence in Hong Kong's waters is foundational to the region's maritime economy and pre-colonial coastal society."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

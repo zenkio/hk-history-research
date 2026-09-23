@@ -3,6 +3,7 @@ title: "United Kingdom"
 title_zh: "英國"
 tags: ["ai-draft", "british-rule", "colonial-history", "hong-kong-history", "nationality-law", "place", "sovereignty"]
 summary: "The United Kingdom served as the sovereign power governing Hong Kong from 1841 to 1997, profoundly shaping the territory's legal, political, and social development."
+description: "The United Kingdom served as the sovereign power governing Hong Kong from 1841 to 1997, profoundly shaping the territory's legal, political, and social development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

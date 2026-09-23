@@ -3,6 +3,7 @@ title: "Jens Galschiøt"
 title_zh: "高志活"
 tags: ["academic-freedom", "ai-draft", "hong-kong-history", "jens-galschiot", "person", "pillar-of-shame", "tiananmen-commemoration"]
 summary: "Jens Galschiøt is a Danish sculptor known for creating the 'Pillar of Shame,' a monument that became a central focal point for debates regarding historical memory and freedom of expression in Hong Kong."
+description: "Jens Galschiøt is a Danish sculptor known for creating the 'Pillar of Shame,' a monument that became a central focal point for debates regarding historical memory and freedom of expression in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

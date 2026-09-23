@@ -6,6 +6,7 @@ year: 1904
 era: "The New Territories lease and the early 20th century"
 tags: ["1904", "ai-draft", "colonial-history", "hong-kong-tramways", "new-territories", "public-transport", "urban-growth"]
 summary: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
+description: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

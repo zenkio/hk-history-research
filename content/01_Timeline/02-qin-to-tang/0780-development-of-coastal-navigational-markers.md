@@ -5,6 +5,7 @@ year: 780
 era: "Imperial frontier: Qin to Tang"
 tags: ["780", "ai-draft", "coastal-navigation", "maritime-history", "pearl-river-delta", "qin-to-tang", "silk-road", "tang-dynasty"]
 summary: "Between 780 and 800, Tang dynasty mariners expanded the systemic mapping and naming of major headlands around the Pearl River Delta to support increasing maritime trade."
+description: "Between 780 and 800, Tang dynasty mariners expanded the systemic mapping and naming of major headlands around the Pearl River Delta to support increasing maritime trade."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

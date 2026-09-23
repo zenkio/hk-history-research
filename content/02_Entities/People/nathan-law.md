@@ -3,6 +3,7 @@ title: "Nathan Law (羅冠聰)"
 title_zh: "羅冠聰"
 tags: ["activism", "ai-draft", "democracy-movement", "demosisto", "hong-kong-politics", "legislative-council", "person"]
 summary: "Nathan Law is a prominent Hong Kong activist and former politician who became the youngest person ever elected to the Legislative Council, playing a central role in the city's democratic movement."
+description: "Nathan Law is a prominent Hong Kong activist and former politician who became the youngest person ever elected to the Legislative Council, playing a central role in the city's democratic movement."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

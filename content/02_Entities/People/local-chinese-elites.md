@@ -3,6 +3,7 @@ title: "Local Chinese Elites (華人紳商)"
 title_zh: "華人紳商"
 tags: ["ai-draft", "chinese-elites", "colonial-history", "district-watch-force", "merchant-class", "person", "social-order"]
 summary: "Local Chinese elites were influential merchants and community leaders who bridged the gap between the colonial government and the Chinese population, playing a pivotal role in the creation of the District Watch Force."
+description: "Local Chinese elites were influential merchants and community leaders who bridged the gap between the colonial government and the Chinese population, playing a pivotal role in the creation of the District Watch Force."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

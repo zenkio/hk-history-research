@@ -3,6 +3,7 @@ title: "Sha Tin (沙田)"
 title_zh: "沙田"
 tags: ["ai-draft", "housing", "new-towns", "olympic-equestrian", "place", "sha-tin", "typhoon-wanda"]
 summary: "Sha Tin is a major district and new town in the New Territories that transformed from a rural valley of scattered villages into one of Hong Kong's most populous residential and institutional hubs."
+description: "Sha Tin is a major district and new town in the New Territories that transformed from a rural valley of scattered villages into one of Hong Kong's most populous residential and institutional hubs."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

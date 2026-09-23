@@ -6,6 +6,7 @@ year: 1977
 era: "Riots and the MacLehose reforms"
 tags: ["1977", "ai-draft", "cultural-identity", "hong-kong-history", "maclehose-era", "performing-arts", "riots-and-reform", "urban-council"]
 summary: "Established in 1977 as the first professional drama troupe in the territory, the Hong Kong Repertory Theatre marked a shift toward institutionalized support for local performing arts."
+description: "Established in 1977 as the first professional drama troupe in the territory, the Hong Kong Repertory Theatre marked a shift toward institutionalized support for local performing arts."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

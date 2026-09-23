@@ -3,6 +3,7 @@ title: "Henry Pottinger (璞鼎察)"
 title_zh: "璞鼎察"
 tags: ["ai-draft", "colonial-history", "first-opium-war", "henry-pottinger", "hong-kong-governors", "person", "treaty-of-nanking"]
 summary: "Sir Henry Pottinger was the first Governor of Hong Kong and the primary British negotiator of the Treaty of Nanking, which formalized the cession of Hong Kong Island to the British Empire."
+description: "Sir Henry Pottinger was the first Governor of Hong Kong and the primary British negotiator of the Treaty of Nanking, which formalized the cession of Hong Kong Island to the British Empire."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

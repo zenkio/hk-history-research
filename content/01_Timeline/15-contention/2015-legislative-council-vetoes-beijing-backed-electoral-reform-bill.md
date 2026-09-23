@@ -6,6 +6,7 @@ year: 2015
 era: "Political contention and protest"
 tags: ["2015", "ai-draft", "beijing", "contention", "electoral-reform", "legislative-council", "umbrella-movement", "universal-suffrage"]
 summary: "On June 18, 2015, Hong Kong's Legislative Council overwhelmingly rejected a Beijing-backed electoral reform package after a bizarre legislative blunder involving pro-establishment lawmakers. The vote effectively stalled any near-term transition to universal suffrage for the Chief Executive."
+description: "On June 18, 2015, Hong Kong's Legislative Council overwhelmingly rejected a Beijing-backed electoral reform package after a bizarre legislative blunder involving pro-establishment lawmakers."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

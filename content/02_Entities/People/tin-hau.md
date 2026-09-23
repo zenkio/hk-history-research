@@ -3,6 +3,7 @@ title: "Tin Hau (天后)"
 title_zh: "天后"
 tags: ["ai-draft", "hong-kong-history", "joss-house-bay", "maritime-culture", "person", "religion", "tin-hau"]
 summary: "Tin Hau is the Chinese Goddess of the Sea, whose widespread veneration in Hong Kong serves as a historical focal point for maritime communities and local identity."
+description: "Tin Hau is the Chinese Goddess of the Sea, whose widespread veneration in Hong Kong serves as a historical focal point for maritime communities and local identity."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

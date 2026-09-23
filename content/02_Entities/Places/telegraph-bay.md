@@ -3,6 +3,7 @@ title: "Telegraph Bay (鋼線灣)"
 title_zh: "鋼線灣"
 tags: ["ai-draft", "cyberport", "hong-kong-history", "place", "public-tender", "telegraph-bay", "urban-development"]
 summary: "Telegraph Bay is a bay on the southwestern coast of Hong Kong Island that transitioned from an isolated rural area to the high-tech hub of the Cyberport project amid considerable public debate."
+description: "Telegraph Bay is a bay on the southwestern coast of Hong Kong Island that transitioned from an isolated rural area to the high-tech hub of the Cyberport project amid considerable public debate."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

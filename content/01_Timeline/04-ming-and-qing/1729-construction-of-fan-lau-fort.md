@@ -6,6 +6,7 @@ year: 1729
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1729", "ai-draft", "coastal-defense", "fortifications", "lantau-island", "maritime-piracy", "ming-and-qing", "qing-dynasty"]
 summary: "In **1729**, Qing authorities constructed Fan Lau Fort on the southwestern tip of Lantau Island to strengthen coastal defense and combat maritime piracy."
+description: "In 1729, Qing authorities constructed Fan Lau Fort on the southwestern tip of Lantau Island to strengthen coastal defense and combat maritime piracy."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

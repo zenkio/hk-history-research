@@ -3,6 +3,7 @@ title: "Sir Robert Black (柏立基)"
 title_zh: "柏立基"
 tags: ["1960s", "ai-draft", "city-hall", "colonial-history", "governor", "person"]
 summary: "Sir Robert Black was the 23rd Governor of Hong Kong, presiding over a period of rapid demographic growth, industrialization, and major civic developments including the opening of the Hong Kong City Hall."
+description: "Sir Robert Black was the 23rd Governor of Hong Kong, presiding over a period of rapid demographic growth, industrialization, and major civic developments including the opening of the Hong Kong City Hall."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

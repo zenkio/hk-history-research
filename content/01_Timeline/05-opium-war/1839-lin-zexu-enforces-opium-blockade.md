@@ -6,6 +6,7 @@ year: 1839
 era: "Canton trade and the First Opium War"
 tags: ["1839", "ai-draft", "canton-trade", "first-opium-war", "lin-zexu", "opium-war", "thirteen-factories"]
 summary: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
+description: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

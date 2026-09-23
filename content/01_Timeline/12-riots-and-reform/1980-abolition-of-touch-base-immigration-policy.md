@@ -6,6 +6,7 @@ year: 1980
 era: "Riots and the MacLehose reforms"
 tags: ["1980", "ai-draft", "colonial-history", "identity-card", "immigration", "maclehose-era", "riots-and-reform"]
 summary: "On October 23, 1980, the colonial Hong Kong government officially abolished the 'Touch Base' policy, ending the loophole that allowed illegal immigrants from mainland China to remain if they successfully reached the urban areas."
+description: "On October 23, 1980, the colonial Hong Kong government officially abolished the 'Touch Base' policy, ending the loophole that allowed illegal immigrants from mainland China to remain if they successfully reached the…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

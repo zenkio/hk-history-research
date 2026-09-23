@@ -2,7 +2,8 @@
 title: "The Last Voyage of ML 310 from Singapore"
 date: 1942-02-13
 tags: ["1934", "1935", "1938", "1941", "1942", "evacuation", "japanese-occupation", "naval-history", "singapore-campaign", "wwii"]
-summary: "In **February 1942**, amidst the imminent fall of Singapore, several high-ranking British military officers attempted to"
+summary: "In February 1942, amidst the imminent fall of Singapore, several high-ranking British military officers attempted to evacuate the island to Batavia."
+description: "In February 1942, amidst the imminent fall of Singapore, several high-ranking British military officers attempted to evacuate the island to Batavia."
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2022/03/ml-310-escape-from-singapore-february.html"

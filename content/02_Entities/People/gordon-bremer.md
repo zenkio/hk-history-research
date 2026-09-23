@@ -3,6 +3,7 @@ title: "Gordon Bremer (靴莫)"
 title_zh: "靴莫"
 tags: ["ai-draft", "british-colonial-era", "first-opium-war", "hong-kong-origins", "naval-history", "nineteenth-century", "person"]
 summary: "Sir James John Gordon Bremer was a British naval officer who played a critical role in the early British naval occupation of Hong Kong Island during the First Opium War."
+description: "Sir James John Gordon Bremer was a British naval officer who played a critical role in the early British naval occupation of Hong Kong Island during the First Opium War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

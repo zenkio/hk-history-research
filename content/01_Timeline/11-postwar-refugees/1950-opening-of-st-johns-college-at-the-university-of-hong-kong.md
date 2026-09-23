@@ -6,6 +6,7 @@ year: 1950
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1950", "ai-draft", "higher-education", "postwar-recovery", "postwar-refugees", "st-johns-college", "university-of-hong-kong"]
 summary: "In **1950**, the formal opening of St. John's College marked a pivotal moment in the revival of residential campus life and higher education at the University of Hong Kong following the severe disruptions of the Pacific War."
+description: "In 1950, the formal opening of St. John's College marked a pivotal moment in the revival of residential campus life and higher education at the University of Hong Kong following the severe disruptions of the Pacific War."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

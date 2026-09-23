@@ -3,6 +3,7 @@ title: "Gin Drinkers Line (醉酒灣防線)"
 title_zh: "醉酒灣防線"
 tags: ["ai-draft", "british-hong-kong", "fortifications", "kwoon-tong", "military-history", "place", "world-war-two"]
 summary: "The Gin Drinkers Line was a British defensive line stretching across the Kowloon Peninsula, designed to protect Hong Kong against a land-based invasion during the Second World War."
+description: "The Gin Drinkers Line was a British defensive line stretching across the Kowloon Peninsula, designed to protect Hong Kong against a land-based invasion during the Second World War."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

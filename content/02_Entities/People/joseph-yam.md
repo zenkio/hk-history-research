@@ -3,6 +3,7 @@ title: "Joseph Yam (任志剛)"
 title_zh: "任志剛"
 tags: ["ai-draft", "asian-financial-crisis", "currency-peg", "financial-history", "hong-kong-monetary-authority", "joseph-yam", "person"]
 summary: "Joseph Yam served as the first Chief Executive of the Hong Kong Monetary Authority and was a central figure in managing the territory's currency and financial stability during the handover and the 1997 Asian Financial Crisis."
+description: "Joseph Yam served as the first Chief Executive of the Hong Kong Monetary Authority and was a central figure in managing the territory's currency and financial stability during the handover and the 1997 Asian Financial…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

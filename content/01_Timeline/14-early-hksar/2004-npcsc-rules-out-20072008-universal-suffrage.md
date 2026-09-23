@@ -6,6 +6,7 @@ year: 2004
 era: "The early HKSAR"
 tags: ["2004", "ai-draft", "basic-law", "early-hksar", "npcsc", "one-country-two-systems", "political-reform", "universal-suffrage"]
 summary: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense local and international debate."
+description: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

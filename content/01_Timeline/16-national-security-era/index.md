@@ -2,6 +2,7 @@
 title: "16 · The National Security Law era (2020-present)"
 tags: ["ai-draft", "article-23", "civil-society", "era-overview", "hong-kong-history", "national-security-law", "politics"]
 summary: "This era has been defined by sweeping political and legal restructuring following the implementation of national security legislation. It has fundamentally reshaped governance, civil society, and Hong Kong's position in the international community."
+description: "This era has been defined by sweeping political and legal restructuring following the implementation of national security legislation."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

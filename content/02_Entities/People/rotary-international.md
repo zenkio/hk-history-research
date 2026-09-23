@@ -3,6 +3,7 @@ title: "Rotary International (國際扶輪)"
 title_zh: "國際扶輪"
 tags: ["ai-draft", "civic-organizations", "colonial-history", "hong-kong-social-history", "person", "philanthropy", "professional-networks"]
 summary: "Rotary International is a global service organization whose establishment in Hong Kong in 1931 marked the beginning of international non-governmental philanthropic networking in the colony."
+description: "Rotary International is a global service organization whose establishment in Hong Kong in 1931 marked the beginning of international non-governmental philanthropic networking in the colony."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

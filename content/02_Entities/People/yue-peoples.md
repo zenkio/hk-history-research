@@ -3,6 +3,7 @@ title: "Yue peoples (越族)"
 title_zh: "越族"
 tags: ["ai-draft", "ancient-history", "baiyue", "hong-kong-origins", "lingnan-region", "maritime-history", "person"]
 summary: "The Yue peoples were a diverse group of non-Sinitic tribes who inhabited the coastal regions of southern China and northern Vietnam, forming the ancestral foundation for the earliest settled communities in the Hong Kong region."
+description: "The Yue peoples were a diverse group of non-Sinitic tribes who inhabited the coastal regions of southern China and northern Vietnam, forming the ancestral foundation for the earliest settled communities in the Hong Kong…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

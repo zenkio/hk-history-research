@@ -3,6 +3,7 @@ title: "Admiral Sir Cecil Harcourt (夏情逞)"
 title_zh: "夏慤"
 tags: ["ai-draft", "british-colonial-history", "cecil-harcourt", "hong-kong-government", "military-administration", "person", "world-war-ii"]
 summary: "Admiral Sir Cecil Harcourt was the Commander-in-Chief of the British Pacific Fleet who accepted the Japanese surrender in Hong Kong and served as the colony's first post-war military administrator."
+description: "Admiral Sir Cecil Harcourt was the Commander-in-Chief of the British Pacific Fleet who accepted the Japanese surrender in Hong Kong and served as the colony's first post-war military administrator."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

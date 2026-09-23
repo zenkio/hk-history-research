@@ -6,6 +6,7 @@ year: 1870
 era: "Kowloon and the Victorian colony"
 tags: ["1870", "ai-draft", "clan-associations", "colonial-era", "education-history", "migration", "mutual-aid", "victorian-colony"]
 summary: "During the 1870s, the burgeoning migrant Chinese population in British Hong Kong established vital clan associations and early educational precursors to provide mutual aid and preserve cultural heritage."
+description: "During the 1870s, the burgeoning migrant Chinese population in British Hong Kong established vital clan associations and early educational precursors to provide mutual aid and preserve cultural heritage."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

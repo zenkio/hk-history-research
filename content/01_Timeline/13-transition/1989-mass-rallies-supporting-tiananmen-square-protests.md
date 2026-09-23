@@ -6,6 +6,7 @@ year: 1989
 era: "Sino-British negotiations and the transition"
 tags: ["1989", "ai-draft", "emigration", "hong-kong-history", "protests", "sino-british-transition", "tiananmen-square", "transition"]
 summary: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square. This massive mobilization fundamentally altered local political consciousness and deepened public anxiety regarding the impending 1997 sovereignty transfer."
+description: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

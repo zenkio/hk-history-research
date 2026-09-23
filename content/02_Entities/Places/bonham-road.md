@@ -3,6 +3,7 @@ title: "Bonham Road (般咸道)"
 title_zh: "般咸道"
 tags: ["ai-draft", "colonial-era", "education", "hong-kong-history", "mid-levels", "place", "urban-development"]
 summary: "Bonham Road is a major thoroughfare in the Mid-Levels of Hong Kong Island that has served as a critical axis for the city's educational and colonial institutional development."
+description: "Bonham Road is a major thoroughfare in the Mid-Levels of Hong Kong Island that has served as a critical axis for the city's educational and colonial institutional development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

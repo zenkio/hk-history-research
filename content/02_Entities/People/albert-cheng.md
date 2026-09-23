@@ -3,6 +3,7 @@ title: "Albert Cheng (鄭經翰)"
 title_zh: "鄭經翰"
 tags: ["ai-draft", "civil-society", "commercial-radio", "hong-kong-media", "person", "politics", "radio-broadcasting"]
 summary: "Albert Cheng (鄭經翰) is a prominent media personality and former politician whose radio talk shows in the 1990s revolutionized public discourse in Hong Kong."
+description: "Albert Cheng (鄭經翰) is a prominent media personality and former politician whose radio talk shows in the 1990s revolutionized public discourse in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

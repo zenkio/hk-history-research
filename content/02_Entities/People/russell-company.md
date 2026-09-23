@@ -3,6 +3,7 @@ title: "Russell & Company (羅素洋行)"
 title_zh: "羅素洋行"
 tags: ["ai-draft", "american-trade", "opium-trade", "pearl-river", "person", "steam-navigation", "treaty-ports"]
 summary: "A prominent American trading house that significantly influenced 19th-century commerce in Hong Kong and pioneered the use of steam navigation on the Pearl River."
+description: "A prominent American trading house that significantly influenced 19th-century commerce in Hong Kong and pioneered the use of steam navigation on the Pearl River."
 confidence: ai-draft
 draft_model: Gemma 4 31B
 ingested: 2026-09-23

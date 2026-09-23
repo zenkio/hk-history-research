@@ -3,6 +3,7 @@ title: "Chris Patten (彭定康)"
 title_zh: "彭定康"
 tags: ["ai-draft", "british-colonial-era", "chris-patten", "constitutional-reform", "handover", "last-governor", "person"]
 summary: "Chris Patten served as the 28th and last Governor of Hong Kong from 1992 to 1997, leaving a profound and contentious political legacy during the final years of British colonial rule."
+description: "Chris Patten served as the 28th and last Governor of Hong Kong from 1992 to 1997, leaving a profound and contentious political legacy during the final years of British colonial rule."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

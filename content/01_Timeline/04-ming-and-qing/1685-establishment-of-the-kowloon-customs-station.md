@@ -6,6 +6,7 @@ year: 1685
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1685", "ai-draft", "great-clearance", "kowloon-customs", "maritime-trade", "ming-and-qing", "qing-dynasty", "smuggling"]
 summary: "In 1685, the Qing dynasty established a customs station in Kowloon to regulate maritime trade and curb smuggling, marking a significant administrative integration of the region into the imperial taxation system following the lifting of the Great Clearance."
+description: "In 1685, the Qing dynasty established a customs station in Kowloon to regulate maritime trade and curb smuggling, marking a significant administrative integration of the region into the imperial taxation system…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

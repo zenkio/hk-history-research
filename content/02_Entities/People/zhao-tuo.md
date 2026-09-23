@@ -3,6 +3,7 @@ title: "Zhao Tuo (趙佗)"
 title_zh: "趙佗"
 tags: ["ai-draft", "han-dynasty", "lingnan", "nanyue-kingdom", "person", "qin-dynasty", "zhao-tuo"]
 summary: "Zhao Tuo was a Qin dynasty general who established the Nanyue kingdom, marking the initial integration of the Lingnan region, including the Hong Kong area, into centralized imperial administration."
+description: "Zhao Tuo was a Qin dynasty general who established the Nanyue kingdom, marking the initial integration of the Lingnan region, including the Hong Kong area, into centralized imperial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

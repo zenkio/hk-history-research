@@ -3,6 +3,7 @@ title: "Robert Hotung (何東)"
 title_zh: "何東"
 tags: ["ai-draft", "colonial-history", "comprador-networks", "eurasian-identity", "hong-kong-biography", "jardine-matheson", "person"]
 summary: "Sir Robert Hotung was a prominent Eurasian entrepreneur and philanthropist whose rise as a comprador cemented the influence of the Hong Kong Eurasian community in the colonial social hierarchy."
+description: "Sir Robert Hotung was a prominent Eurasian entrepreneur and philanthropist whose rise as a comprador cemented the influence of the Hong Kong Eurasian community in the colonial social hierarchy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

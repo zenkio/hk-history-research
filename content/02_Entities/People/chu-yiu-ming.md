@@ -3,6 +3,7 @@ title: "Chu Yiu-ming (朱耀明)"
 title_zh: "朱耀明"
 tags: ["ai-draft", "christian-ministry", "civil-rights", "democracy-advocacy", "hong-kong-history", "occupy-central", "person"]
 summary: "Chu Yiu-ming is a retired Baptist minister and activist who co-founded the Occupy Central with Love and Peace movement, playing a central role in Hong Kong's civil society and democracy advocacy."
+description: "Chu Yiu-ming is a retired Baptist minister and activist who co-founded the Occupy Central with Love and Peace movement, playing a central role in Hong Kong's civil society and democracy advocacy."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

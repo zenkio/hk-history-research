@@ -6,6 +6,7 @@ year: 1973
 era: "Riots and the MacLehose reforms"
 tags: ["1973", "ai-draft", "grassroots-mobilization", "maclehose-reforms", "mutual-aid-committees", "public-housing", "riots-and-reform", "urban-governance"]
 summary: "In March 1973, the colonial government officially launched the Mutual Aid Committee (MAC) scheme to foster grassroots community building, improve urban security, and enhance civic participation across Hong Kong's expanding public housing estates."
+description: "In March 1973, the colonial government officially launched the Mutual Aid Committee (MAC) scheme to foster grassroots community building, improve urban security, and enhance civic participation across Hong Kong's…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

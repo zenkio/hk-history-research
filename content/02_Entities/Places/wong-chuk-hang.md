@@ -3,6 +3,7 @@ title: "Wong Chuk Hang (黃竹坑)"
 title_zh: "黃竹坑"
 tags: ["ai-draft", "hong-kong-island", "industrial-history", "ocean-park", "place", "southern-district", "urban-development"]
 summary: "Wong Chuk Hang is a valley and district on the south side of Hong Kong Island that transitioned from a rural agricultural and fishing settlement into a major industrial and recreational hub."
+description: "Wong Chuk Hang is a valley and district on the south side of Hong Kong Island that transitioned from a rural agricultural and fishing settlement into a major industrial and recreational hub."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

@@ -6,6 +6,7 @@ year: 1990
 era: "Sino-British negotiations and the transition"
 tags: ["1990", "1997-handover", "ai-draft", "brain-drain", "canadian-immigration", "emigration", "sino-british-joint-declaration", "transition", "transnationalism"]
 summary: "Following the 1984 signing of the Sino-British Joint Declaration, Hong Kong experienced a significant wave of emigration to Canada driven by political uncertainty regarding the 1997 transition."
+description: "Following the 1984 signing of the Sino-British Joint Declaration, Hong Kong experienced a significant wave of emigration to Canada driven by political uncertainty regarding the 1997 transition."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

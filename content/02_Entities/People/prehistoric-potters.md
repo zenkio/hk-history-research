@@ -3,6 +3,7 @@ title: "Prehistoric Potters (史前制陶工匠)"
 title_zh: "史前制陶工匠"
 tags: ["ai-draft", "archaeology", "ceramics", "hong-kong-history", "neolithic", "person", "prehistory"]
 summary: "The prehistoric potters of Hong Kong were early artisans whose ceramic traditions define the region's Neolithic and Bronze Age archaeological records."
+description: "The prehistoric potters of Hong Kong were early artisans whose ceramic traditions define the region's Neolithic and Bronze Age archaeological records."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

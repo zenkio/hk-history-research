@@ -6,6 +6,7 @@ year: 1949
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1949", "ai-draft", "community-organising", "kaifong-associations", "postwar-history", "postwar-refugees", "refugees", "social-welfare"]
 summary: "Beginning in November 1949 with the establishment of the Sham Shui Po Kaifong Association, traditional neighborhood mutual-aid networks were revived to deliver essential social welfare and relief to the massive influx of refugees arriving in post-war Hong Kong."
+description: "Beginning in November 1949 with the establishment of the Sham Shui Po Kaifong Association, traditional neighborhood mutual-aid networks were revived to deliver essential social welfare and relief to the massive influx…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

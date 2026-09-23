@@ -6,6 +6,7 @@ year: 1949
 era: "Postwar recovery, refugees and industrialisation"
 tags: ["1949", "ai-draft", "colonial-era", "philanthropy", "postwar-history", "postwar-refugees", "public-health", "tuberculosis"]
 summary: "On February 23, 1949, the Ruttonjee Sanatorium officially opened in Wan Chai, marking a major milestone in postwar Hong Kong's public health history by addressing the territory's devastating tuberculosis crisis."
+description: "On February 23, 1949, the Ruttonjee Sanatorium officially opened in Wan Chai, marking a major milestone in postwar Hong Kong's public health history by addressing the territory's devastating tuberculosis crisis."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

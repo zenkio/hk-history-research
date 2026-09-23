@@ -3,6 +3,7 @@ title: "Zheng Yi Sao (鄭一嫂)"
 title_zh: "鄭一嫂"
 tags: ["ai-draft", "hong-kong-history", "maritime-history", "person", "piracy", "qing-dynasty", "south-china-sea"]
 summary: "Zheng Yi Sao was one of the most powerful maritime leaders in the South China Sea during the early 19th century, commanding a vast confederation of pirates that exerted significant influence over the waters surrounding Hong Kong."
+description: "Zheng Yi Sao was one of the most powerful maritime leaders in the South China Sea during the early 19th century, commanding a vast confederation of pirates that exerted significant influence over the waters surrounding…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

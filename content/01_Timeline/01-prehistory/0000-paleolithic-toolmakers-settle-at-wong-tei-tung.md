@@ -5,6 +5,7 @@ year: -38000
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "paleolithic", "prehistory", "stone-tools", "wong-tei-tung"]
 summary: "Archaeological discoveries at Wong Tei Tung on Sham Chung peninsula provide the earliest known evidence of human activity in the Hong Kong region, dating back to the Paleolithic era around 38,000 BCE."
+description: "Archaeological discoveries at Wong Tei Tung on Sham Chung peninsula provide the earliest known evidence of human activity in the Hong Kong region, dating back to the Paleolithic era around 38,000 BCE."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

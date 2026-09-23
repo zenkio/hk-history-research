@@ -5,6 +5,7 @@ year: -400
 era: "Prehistory and early settlement"
 tags: ["ai-draft", "archaeology", "iron-age", "prehistory", "technology", "warring-states"]
 summary: "Around **c. 400 BCE**, iron technology began to appear in the Hong Kong region during the late Warring States period, gradually transforming local subsistence patterns, agriculture, and craftsmanship."
+description: "Around c. 400 BCE, iron technology began to appear in the Hong Kong region during the late Warring States period, gradually transforming local subsistence patterns, agriculture, and craftsmanship."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

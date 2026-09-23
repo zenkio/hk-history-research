@@ -3,6 +3,7 @@ title: "Bishop George Smith (施美夫)"
 title_zh: "施美夫"
 tags: ["19th-century", "ai-draft", "anglican-church", "bishop-george-smith", "colonial-education", "diocesan-girls-school", "person"]
 summary: "Bishop George Smith was a prominent mid-19th-century British Anglican missionary and the first Bishop of Victoria, whose educational initiatives laid foundational blocks for schooling in colonial Hong Kong, including the establishment of the Diocesan Native Female Training School (later the Diocesan Girls' School)."
+description: "Bishop George Smith was a prominent mid-19th-century British Anglican missionary and the first Bishop of Victoria, whose educational initiatives laid foundational blocks for schooling in colonial Hong Kong, including…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

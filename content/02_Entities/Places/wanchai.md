@@ -3,6 +3,7 @@ title: "Wanchai (灣仔)"
 title_zh: "灣仔"
 tags: ["ai-draft", "colonial-history", "education", "hong-kong-history", "place", "urban-development", "wanchai"]
 summary: "Wanchai is a major urban district on Hong Kong Island that transitioned from a quiet coastal fishing village into a dense commercial and residential hub, reflecting the evolution of Hong Kong’s colonial, social, and religious history."
+description: "Wanchai is a major urban district on Hong Kong Island that transitioned from a quiet coastal fishing village into a dense commercial and residential hub, reflecting the evolution of Hong Kong’s colonial, social, and…"
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

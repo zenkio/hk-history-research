@@ -3,6 +3,7 @@ title: "Penny's Bay (竹篙灣)"
 title_zh: "竹篙灣"
 tags: ["ai-draft", "hong-kong-disneyland", "lantau-island", "place", "public-health", "reclamation", "urban-development"]
 summary: "Penny's Bay is a reclaimed coastal area on Lantau Island that transformed from a historic rural village site into the focal point for Hong Kong's major tourism and quarantine infrastructure."
+description: "Penny's Bay is a reclaimed coastal area on Lantau Island that transformed from a historic rural village site into the focal point for Hong Kong's major tourism and quarantine infrastructure."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

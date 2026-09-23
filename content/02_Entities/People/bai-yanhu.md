@@ -3,6 +3,7 @@ title: "Bai Yanhu (百齡)"
 title_zh: "白彥虎"
 tags: ["ai-draft", "cheung-po-tsai", "hong-kong-history", "maritime-history", "person", "piracy", "qing-dynasty"]
 summary: "Bai Yanhu (白彥虎) was a Qing dynasty military commander associated with the suppression of pirate activities in the South China Sea, including the surrender negotiations involving Cheung Po Tsai."
+description: "Bai Yanhu (白彥虎) was a Qing dynasty military commander associated with the suppression of pirate activities in the South China Sea, including the surrender negotiations involving Cheung Po Tsai."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

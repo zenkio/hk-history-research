@@ -3,6 +3,7 @@ title: "Liu Yuxi (劉禹錫)"
 title_zh: "劉禹錫"
 tags: ["ai-draft", "chinese-literature", "local-history", "maritime-history", "person", "tang-dynasty", "tuen-mun"]
 summary: "A prominent Tang Dynasty poet and official whose literary works offer significant, albeit debated, insights into the maritime activities of Tuen Mun (屯門) during the 9th century."
+description: "A prominent Tang Dynasty poet and official whose literary works offer significant, albeit debated, insights into the maritime activities of Tuen Mun (屯門) during the 9th century."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

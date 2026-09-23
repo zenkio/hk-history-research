@@ -3,6 +3,7 @@ title: "Clear Water Bay (清水灣)"
 title_zh: "清水灣"
 tags: ["ai-draft", "education", "hkust", "land-use", "new-territories", "place", "sai-kung"]
 summary: "Clear Water Bay is a coastal region in the Sai Kung District, historically characterized by rural maritime settlements and recognized today as the location of the Hong Kong University of Science and Technology."
+description: "Clear Water Bay is a coastal region in the Sai Kung District, historically characterized by rural maritime settlements and recognized today as the location of the Hong Kong University of Science and Technology."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

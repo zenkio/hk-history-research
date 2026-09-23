@@ -3,6 +3,7 @@ title: "London (倫敦)"
 title_zh: "倫敦"
 tags: ["ai-draft", "british-empire", "colonial-office", "constitutional-reform", "imperial-history", "place"]
 summary: "London is the capital of the United Kingdom and the seat of the imperial administration that directed Hong Kong's colonial governance, legal frameworks, and ultimate decolonization."
+description: "London is the capital of the United Kingdom and the seat of the imperial administration that directed Hong Kong's colonial governance, legal frameworks, and ultimate decolonization."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

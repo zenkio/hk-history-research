@@ -6,6 +6,7 @@ year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1942", "ai-draft", "battle-of-hong-kong", "civilian-internees", "japanese-occupation", "stanley-internment-camp", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on **January 19, 1942**, confining nearly 3,000 British and Allied civilians under increasingly harsh conditions."
+description: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on January 19, 1942, confining nearly 3,000 British and Allied civilians under increasingly harsh…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

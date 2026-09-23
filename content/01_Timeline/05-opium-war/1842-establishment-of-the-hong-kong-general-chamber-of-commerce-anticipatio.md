@@ -6,6 +6,7 @@ year: 1842
 era: "Canton trade and the First Opium War"
 tags: ["1842", "agency-houses", "ai-draft", "canton-trade", "chamber-of-commerce", "colonial-history", "opium-war"]
 summary: "Following the conclusion of hostilities in the First Opium War in 1842, British mercantile houses in Hong Kong began organizing to advocate for their commercial interests and push for essential infrastructural development."
+description: "Following the conclusion of hostilities in the First Opium War in 1842, British mercantile houses in Hong Kong began organizing to advocate for their commercial interests and push for essential infrastructural…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

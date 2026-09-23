@@ -6,6 +6,7 @@ year: 2021
 era: "The National Security Law era"
 tags: ["2021", "ai-draft", "apple-daily", "media-history", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in Hong Kong."
+description: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

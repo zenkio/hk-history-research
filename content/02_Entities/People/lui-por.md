@@ -3,6 +3,7 @@ title: "Lui Por (呂波)"
 title_zh: "呂波"
 tags: ["ai-draft", "causeway-bay-books", "china-hong-kong-relations", "hong-kong-history", "lui-por", "person", "press-freedom"]
 summary: "Lui Por (呂波) was a manager at Causeway Bay Books (銅鑼灣書店), whose 2015 disappearance brought international attention to the erosion of Hong Kong's press freedom and the reach of mainland Chinese security operations."
+description: "Lui Por (呂波) was a manager at Causeway Bay Books (銅鑼灣書店), whose 2015 disappearance brought international attention to the erosion of Hong Kong's press freedom and the reach of mainland Chinese security operations."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

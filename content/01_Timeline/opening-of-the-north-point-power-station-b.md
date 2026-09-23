@@ -2,7 +2,8 @@
 title: "Opening of the North Point Power Station B"
 date: 1958-12-15
 tags: ["1955", "1958", "1959", "hong-kong-electric", "industrial-history", "infrastructure", "north-point", "power-generation"]
-summary: "The **Hongkong Electric Company** officially inaugurated its new **North Point Power Station B** on **December 15, 1958*"
+summary: "The Hongkong Electric Company officially inaugurated its new North Point Power Station B on December 15, 1958."
+description: "The Hongkong Electric Company officially inaugurated its new North Point Power Station B on December 15, 1958."
 confidence: high
 source_feed: Industrial_History_HK
 source_url: "https://industrialhistoryhk.org/new-power-station-to-open-at-north-point-newspaper-article-1958/"

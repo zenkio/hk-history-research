@@ -6,6 +6,7 @@ year: 2022
 era: "The National Security Law era"
 tags: ["2022", "ai-draft", "covid-19", "healthcare-crisis", "national-security-era", "omicron", "public-health"]
 summary: "In early 2022, Hong Kong experienced its most severe wave of the COVID-19 pandemic, overwhelming the healthcare system, leading to high mortality rates particularly among the elderly, and prompting stringent social distancing and lockdown measures."
+description: "In early 2022, Hong Kong experienced its most severe wave of the COVID-19 pandemic, overwhelming the healthcare system, leading to high mortality rates particularly among the elderly, and prompting stringent social…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

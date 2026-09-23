@@ -3,6 +3,7 @@ title: "Panyu (番禺)"
 title_zh: "番禺"
 tags: ["ai-draft", "han-dynasty", "lingnan", "nanyue-kingdom", "panyu", "place", "qin-dynasty"]
 summary: "Panyu was an ancient commandery and the capital of the Nanyue Kingdom, serving as the early administrative and military hub that integrated the modern Hong Kong region into imperial Chinese administration."
+description: "Panyu was an ancient commandery and the capital of the Nanyue Kingdom, serving as the early administrative and military hub that integrated the modern Hong Kong region into imperial Chinese administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

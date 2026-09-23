@@ -3,6 +3,7 @@ title: "Western Market (西港城)"
 title_zh: "西港城"
 tags: ["ai-draft", "architectural-heritage", "colonial-history", "edwardian-architecture", "hong-kong-monuments", "place", "sheung-wan"]
 summary: "Western Market is an Edwardian-style building in Sheung Wan, serving as a significant landmark of Hong Kong's late 19th-century colonial administration and commercial development."
+description: "Western Market is an Edwardian-style building in Sheung Wan, serving as a significant landmark of Hong Kong's late 19th-century colonial administration and commercial development."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

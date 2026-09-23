@@ -6,6 +6,7 @@ year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1945", "ai-draft", "british-administration", "government-house", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
+description: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

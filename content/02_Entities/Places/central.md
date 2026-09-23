@@ -3,6 +3,7 @@ title: "Central (中環)"
 title_zh: "中環"
 tags: ["ai-draft", "central", "colonial-history", "finance", "hong-kong-island", "place", "urban-development"]
 summary: "Central is the historic, political, and financial heart of Hong Kong, serving as the core urban district since the earliest days of British colonial administration."
+description: "Central is the historic, political, and financial heart of Hong Kong, serving as the core urban district since the earliest days of British colonial administration."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

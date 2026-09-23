@@ -3,6 +3,7 @@ title: "Sir Cecil Harcourt (夏愨)"
 title_zh: "夏愨"
 tags: ["ai-draft", "british-colonial-history", "hong-kong-administration", "person", "royal-navy", "world-war-two"]
 summary: "Sir Cecil Harcourt was the British admiral who accepted the formal Japanese surrender of Hong Kong in 1945 and served as the commander of the British Military Administration that restored colonial governance."
+description: "Sir Cecil Harcourt was the British admiral who accepted the formal Japanese surrender of Hong Kong in 1945 and served as the commander of the British Military Administration that restored colonial governance."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

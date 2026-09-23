@@ -2,6 +2,7 @@
 title: "Exchange of letters between the Governor of Hong Kong and the Colonial Office in London in 1941"
 tags: ["Hong Kong", "Colonial Office", "Governor", "1941", "Correspondence", "Corruption", "Japanese Invasion"]
 summary: "This document contains a series of letters exchanged in 1941 between the Governor of Hong Kong and the Colonial Office i"
+description: "This document contains a series of letters exchanged in 1941 between the Governor of Hong Kong and the Colonial Office i"
 confidence: medium
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2025/11/exchange-of-letters-between-governor-of.html"

@@ -3,6 +3,7 @@ title: "Lord Palmerston (巴麥尊)"
 title_zh: "巴麥尊"
 tags: ["ai-draft", "british-empire", "colonial-history", "diplomacy", "first-opium-war", "person"]
 summary: "As British Foreign Secretary during the First Opium War, Lord Palmerston directed the naval strategy that led to the acquisition of Hong Kong Island."
+description: "As British Foreign Secretary during the First Opium War, Lord Palmerston directed the naval strategy that led to the acquisition of Hong Kong Island."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

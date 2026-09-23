@@ -3,6 +3,7 @@ title: "Peter Parker (伯駕)"
 title_zh: "伯駕"
 tags: ["ai-draft", "hong-kong-history", "medical-missionary", "nineteenth-century", "person", "peter-parker", "sino-western-relations"]
 summary: "Peter Parker was an American medical missionary and diplomat whose pioneering work in ophthalmic surgery and involvement in early Western medical institutions laid foundational links for Sino-Western exchange, intersecting with the early history of the Medical Missionary Society Hospital."
+description: "Peter Parker was an American medical missionary and diplomat whose pioneering work in ophthalmic surgery and involvement in early Western medical institutions laid foundational links for Sino-Western exchange…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

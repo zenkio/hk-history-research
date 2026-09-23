@@ -3,6 +3,7 @@ title: "Martin Lee (李柱銘)"
 title_zh: "李柱銘"
 tags: ["ai-draft", "basic-law", "democratic-party", "hong-kong-history", "legislative-council", "martin-lee", "person"]
 summary: "Martin Lee is a prominent Hong Kong barrister and politician widely regarded as a founding figure of the city's democratic movement."
+description: "Martin Lee is a prominent Hong Kong barrister and politician widely regarded as a founding figure of the city's democratic movement."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

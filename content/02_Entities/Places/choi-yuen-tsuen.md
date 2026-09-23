@@ -3,6 +3,7 @@ title: "Choi Yuen Tsuen (菜園村)"
 title_zh: "菜園村"
 tags: ["ai-draft", "choi-yuen-tsuen", "hong-kong-history", "new-territories", "place", "social-movements", "xrl"]
 summary: "Choi Yuen Tsuen was a village in Pat Heung, New Territories, that became a focal point of civil society activism during the 2009-2010 protests against the Guangzhou-Shenzhen-Hong Kong Express Rail Link (XRL)."
+description: "Choi Yuen Tsuen was a village in Pat Heung, New Territories, that became a focal point of civil society activism during the 2009-2010 protests against the Guangzhou-Shenzhen-Hong Kong Express Rail Link (XRL)."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

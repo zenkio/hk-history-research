@@ -3,6 +3,7 @@ title: "Donald Tsang (曾蔭權)"
 title_zh: "曾蔭權"
 tags: ["2012-constitutional-reform", "ai-draft", "chief-executive", "colonial-civil-service", "donald-tsang", "hong-kong-history", "person"]
 summary: "Donald Tsang Yam-kuen was the second Chief Executive of the Hong Kong Special Administrative Region, serving from 2005 to 2012 following a long career as a civil servant under British colonial rule and the post-handover government."
+description: "Donald Tsang Yam-kuen was the second Chief Executive of the Hong Kong Special Administrative Region, serving from 2005 to 2012 following a long career as a civil servant under British colonial rule and the post-handover…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

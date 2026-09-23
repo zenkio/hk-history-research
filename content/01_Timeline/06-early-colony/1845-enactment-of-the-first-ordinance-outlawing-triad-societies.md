@@ -6,6 +6,7 @@ year: 1845
 era: "The early colony"
 tags: ["1845", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "legislation", "organized-crime", "triads"]
 summary: "In March 1845, the colonial government passed Ordinance No. 1 of 1845, officially outlawing Chinese secret societies and marking the beginning of a prolonged struggle between British authorities and underground criminal syndicates in Hong Kong."
+description: "In March 1845, the colonial government passed Ordinance No."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

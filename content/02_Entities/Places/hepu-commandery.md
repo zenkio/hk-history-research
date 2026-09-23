@@ -3,6 +3,7 @@ title: "Hepu Commandery (合浦郡)"
 title_zh: "合浦郡"
 tags: ["ai-draft", "baiyue", "han-dynasty", "hepu-commandery", "imperial-expansion", "lingnan", "place"]
 summary: "Hepu Commandery was an administrative division established by the Han dynasty in the southern frontier, significant to the broader history of Han expansion and the displacement of indigenous Yue populations."
+description: "Hepu Commandery was an administrative division established by the Han dynasty in the southern frontier, significant to the broader history of Han expansion and the displacement of indigenous Yue populations."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -3,6 +3,7 @@ title: "Liu Jianlun (劉劍倫)"
 title_zh: "劉劍倫"
 tags: ["2003", "ai-draft", "hong-kong-history", "medical-history", "person", "public-health", "sars-outbreak"]
 summary: "Liu Jianlun was a mainland Chinese physician whose arrival in Hong Kong while infected with SARS in 2003 served as the catalyst for the rapid spread of the virus throughout the territory."
+description: "Liu Jianlun was a mainland Chinese physician whose arrival in Hong Kong while infected with SARS in 2003 served as the catalyst for the rapid spread of the virus throughout the territory."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

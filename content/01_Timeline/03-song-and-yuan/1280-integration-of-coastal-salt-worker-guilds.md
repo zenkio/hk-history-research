@@ -6,6 +6,7 @@ year: 1280
 era: "Song and Yuan: salt, pearls and clans"
 tags: ["1280", "ai-draft", "coastal-administration", "economic-history", "feudal-taxation", "salt-industry", "song-and-yuan", "yuan-dynasty"]
 summary: "During the late 13th century, the Yuan Dynasty implemented administrative reforms to centralize salt production in the Lingnan region, consolidating independent workers into state-controlled structures."
+description: "During the late 13th century, the Yuan Dynasty implemented administrative reforms to centralize salt production in the Lingnan region, consolidating independent workers into state-controlled structures."
 confidence: ai-draft
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23

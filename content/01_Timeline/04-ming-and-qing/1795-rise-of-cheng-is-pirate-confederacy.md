@@ -6,6 +6,7 @@ year: 1795
 era: "Ming and Qing coast: pirates, the Great Clearance, forts"
 tags: ["1795", "ai-draft", "cheung-chau", "lantau", "maritime-history", "ming-and-qing", "pirates", "qing-dynasty"]
 summary: "In **1795**, the pirate leader **Cheng I** began uniting fragmented South China Sea pirate fleets into a massive confederacy, establishing formidable bases around the islands of **Lantau** and **Cheung Chau**."
+description: "In 1795, the pirate leader Cheng I began uniting fragmented South China Sea pirate fleets into a massive confederacy, establishing formidable bases around the islands of Lantau and Cheung Chau."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

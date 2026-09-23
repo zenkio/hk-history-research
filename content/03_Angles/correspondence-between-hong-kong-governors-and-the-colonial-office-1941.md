@@ -2,7 +2,8 @@
 title: "Correspondence Between Hong Kong Governors and the Colonial Office 1941"
 date: 1941-01-01
 tags: ["1881", "1886", "1895", "1904", "1909", "1935", "1937", "1938", "1941", "1942", "1946", "1948", "1974", "british-hong-kong", "colonial-administration", "colonial-office", "diplomatic-history", "wwii"]
-summary: "Between **1941** and the eve of the Japanese invasion of Hong Kong, diplomatic correspondence was exchanged between Hong"
+summary: "Between 1941 and the eve of the Japanese invasion of Hong Kong, diplomatic correspondence was exchanged between Hong Kong Governors Sir Geoffry Northcote and Sir Mark Young and the British Colonial Office representative…"
+description: "Between 1941 and the eve of the Japanese invasion of Hong Kong, diplomatic correspondence was exchanged between Hong Kong Governors Sir Geoffry Northcote and Sir Mark Young and the British Colonial Office…"
 confidence: high
 source_feed: Battle_For_HK
 source_url: "http://battleforhongkong.blogspot.com/2025/11/exchange-of-letters-between-governor-of.html"

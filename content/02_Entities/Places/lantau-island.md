@@ -3,6 +3,7 @@ title: "Lantau Island (大嶼山)"
 title_zh: "大嶼山"
 tags: ["ai-draft", "hong-kong-history", "lantau-island", "maritime-history", "new-territories", "place", "song-dynasty"]
 summary: "Lantau Island is Hong Kong's largest outlying island, serving as a critical focal point for coastal trade, maritime defense, salt production, and prehistoric habitation across centuries of regional history."
+description: "Lantau Island is Hong Kong's largest outlying island, serving as a critical focal point for coastal trade, maritime defense, salt production, and prehistoric habitation across centuries of regional history."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

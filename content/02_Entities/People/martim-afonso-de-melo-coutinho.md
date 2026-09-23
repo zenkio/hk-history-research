@@ -3,6 +3,7 @@ title: "Martim Afonso de Melo Coutinho"
 title_zh: "馬丁·阿方索·德·梅洛·庫蒂尼奧"
 tags: ["ai-draft", "battle-of-tunmen", "battle-of-xicaowan", "martim-afonso-de-melo-coutinho", "ming-dynasty", "person", "portuguese-expansion"]
 summary: "Martim Afonso de Melo Coutinho was a Portuguese commander whose expeditions in the early 16th century played a direct role in the armed conflicts between the Portuguese Crown and Ming Dynasty China in the waters around present-day Hong Kong."
+description: "Martim Afonso de Melo Coutinho was a Portuguese commander whose expeditions in the early 16th century played a direct role in the armed conflicts between the Portuguese Crown and Ming Dynasty China in the waters around…"
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

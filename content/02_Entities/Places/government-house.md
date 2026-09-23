@@ -3,6 +3,7 @@ title: "Government House (港督府)"
 title_zh: "港督府"
 tags: ["1967-riots", "ai-draft", "architecture", "british-colonial-era", "government-house", "japanese-occupation", "place"]
 summary: "Government House served as the official residence and office of the British Governors of Hong Kong and later as the ceremonial venue for the Hong Kong Special Administrative Region government."
+description: "Government House served as the official residence and office of the British Governors of Hong Kong and later as the ceremonial venue for the Hong Kong Special Administrative Region government."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

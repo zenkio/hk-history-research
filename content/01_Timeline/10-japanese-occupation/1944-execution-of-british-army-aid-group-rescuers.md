@@ -6,6 +6,7 @@ year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
 tags: ["1944", "ai-draft", "british-army-aid-group", "espionage", "japanese-occupation", "resistance", "world-war-ii"]
 summary: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
+description: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
 confidence: ai-draft
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23

@@ -46,8 +46,9 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
   Output: a `## Evidence` section per page, `evidence_grade` in the frontmatter, and a site page listing pages by grade.
 - [ ] **P1 Order: core period first** (1841+), and within it the most-linked events first. _(Ordering is done; the engine is still to build.)_
-- [x] **P1 Deep Research import** built (`scripts/research_import.py`): link-checks every citation and attaches only rows with a working link. Waiting on the owner's first Deep Research results.
-- [ ] **P1 Review `research/unmatched.md`**: missing events found by Deep Research. Add the real ones to the plan.
+- [x] **P1 Deep Research import** built (`scripts/research_import.py`): link-checks every citation and attaches only rows with a working link. First file (1834–1842) imported: 17 of 25 rows matched pages. DOIs and ISBNs are verified by title against Crossref/Open Library, and `[cite: N]` numbers are resolved to the source list.
+- [ ] **P1 Review `research/unmatched.md`**: missing events found by Deep Research (8 from 1834–1842, e.g. the 1840 expeditionary force and the 1842 Chinese Registration Ordinance). Add the real ones to the plan as new events.
+- [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1842–1860, then 1860–1898).
 
 ## Next
 

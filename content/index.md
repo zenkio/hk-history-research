@@ -4,7 +4,9 @@ title: Hong Kong History Research
 
 # Hong Kong History Research
 
-A living archive of Hong Kong history, drawn from academic sources, colonial records, and specialist blogs. Updated automatically every 3 hours by an anonymous research bot.
+> 中文讀者：請使用瀏覽器的「翻譯此網頁」功能（例如 Chrome 右鍵 →「翻譯成中文（繁體）」）。
+
+A living archive of Hong Kong history, focused on 1841 to today. Most pages are still **AI drafts** (tagged [[tags/ai-draft|ai-draft]]) that are being checked against primary sources, scholarship and photographs; sourced articles come from specialist historians and archives. Updated automatically every 3 hours.
 
 ## The Full Story, Era by Era
 

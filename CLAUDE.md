@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Start here
+
+**Read `BACKLOG.md` first.** It is the single source of truth for scope (1841 to today first), priorities (verification before new content), the burning list and the decisions log. Put new ideas in its Inbox; don't start them unprompted. Deep Research hand-offs live in `research/` (prompts to give the owner, results in `research/inbox/`).
+
 ## Project Purpose
 
 An automated pipeline that fetches Hong Kong history content from RSS feeds, classifies it with Gemini AI, and publishes it as a searchable, browsable website via Quartz (static site generator) on GitHub Pages.
@@ -70,9 +74,11 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **Model pool:** `scripts/models.json` holds each free-tier model's RPM/TPM/RPD (copied from AI Studio) and a `routing` table naming which models serve each role, in order: `outline` (3.x Flash, 20 RPD each), `draft` (3.5/3.1 Flash Lite at 500 RPD, then Flash, then Gemma 4, which is TPM-bound at 16K), `classify` (Flash Lite, then Gemma), `verify` (2.5 Flash / Flash Lite, the only free models with Google Search grounding). `scripts/gemini_pool.py` resolves AI Studio display names to real API ids via `models.list()`, paces RPM and TPM, records usage in `scripts/quota_state.json` (resets at Pacific midnight), parks a model for the day on a daily-quota 429 or 404, and holds `reserve_for_ingestion` calls on classify models.
 
+**Priority:** `seed_history.py` treats eras from `CORE_ERA_START` (`05-opium-war`, i.e. 1841 on) as core: they are drafted, verified and illustrated first, and only they are deepened.
+
 **History seeding:** `scripts/seed_history.py` spends leftover quota on AI-drafted pages (tag `ai-draft`): era overviews and event pages in `content/01_Timeline/<NN-era>/`, and people/place pages in `content/02_Entities/`. Each run first fact-checks the oldest unchecked event pages with search grounding, replacing the "Claims to verify" checklist with verdicts and web sources (`confidence: ai-draft-checked`, tags `search-checked` / `needs-correction`). Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
 
-**OpenRouter and translation:** `models.json` entries with `"provider": "openrouter"` pick a current `:free` model by name fragment at startup and share the account-wide `providers.openrouter.rpd` limit (50/day; 1000 after a lifetime $10 top-up), using `OPENROUTER_API_KEY`. `scripts/translate.py` writes Traditional Chinese (Hong Kong) versions to `content/zh/<same path>` with links both ways; every run spends the OpenRouter budget on it, and Gemma continues once the drafting plan is complete. Progress: `translations` in `seed_plan.json`.
+**OpenRouter and translation:** `models.json` entries with `"provider": "openrouter"` pick a current `:free` model by name fragment at startup and share the account-wide `providers.openrouter.rpd` limit (50/day; 1000 after a lifetime $10 top-up), using `OPENROUTER_API_KEY`. `scripts/translate.py` writes Traditional Chinese (Hong Kong) versions to `content/zh/<same path>` with links both ways. It is switched off (`TRANSLATE_WITH_AI = False` in `seed_history.py`): readers use browser translation and the AI budget goes to verification. Progress: `translations` in `seed_plan.json`.
 
 **Videos:** `fetch_sources.py` records YouTube ids embedded or linked in a post (`videos:` header in the queue file). `process_ingestion.py` has Gemini watch up to 2 per post (role `video`, low media resolution, ~100 tokens/s), feeds that summary into the article, and adds a `## Video` section with the embed, an AI-summary callout and timestamped key points. A 400 / INVALID_ARGUMENT (e.g. private video) raises `RequestRejected` at once instead of retrying across models.
 

@@ -227,12 +227,12 @@ def find_event_photos(pool, path, used=frozenset()):
     return chosen
 
 
-def photos_batch(pool, plan, deadline, limit=None, save=None):
-    """Illustrate event pages in plan order; QuotaExhausted from the vision role ends the batch."""
+def photos_batch(pool, plan, deadline, limit=None, save=None, events=None):
+    """Illustrate event pages (in `events` order, default plan order); QuotaExhausted from the vision role ends the batch."""
     done_map = plan.setdefault("photos", {})
     used = {f for v in done_map.values() if isinstance(v, list) for f in v}
     done = 0
-    for ev in plan.get("events", []):
+    for ev in events if events is not None else plan.get("events", []):
         rel = ev.get("file")
         if not rel or rel in done_map:
             continue

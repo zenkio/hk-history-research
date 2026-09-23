@@ -5,13 +5,11 @@ on:
     branches:
       - main
   # Pushes made by the ingestion bot (GITHUB_TOKEN) never trigger `push`
-  # workflows, so rebuild when an ingestion run ends and hourly while one is
-  # still committing drafts.
+  # workflows, so rebuild once each ingestion run (every 3h) has finished
+  # committing. Mid-run commits are picked up by that rebuild.
   workflow_run:
     workflows: ["Automated History Research Ingestion"]
     types: [completed]
-  schedule:
-    - cron: '45 * * * *'
   workflow_dispatch:
 
 permissions:

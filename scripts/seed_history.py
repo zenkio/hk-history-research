@@ -42,6 +42,12 @@ TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 PLAN_FILE = os.path.join(PROJECT_ROOT, "scripts", "seed_plan.json")
 ENTITY_DIR = os.path.join(PROJECT_ROOT, "content", "02_Entities")
 MAX_ROUNDS = 5
+# Project focus (see BACKLOG.md): 1841 to today. Earlier eras stay as background:
+# no more deepening, and they go last for verification and photos.
+CORE_ERA_START = "05-opium-war"
+# Readers can use the browser's built-in translation; AI translation is off so the
+# OpenRouter and Gemma budgets go to research and verification instead.
+TRANSLATE_WITH_AI = False
 PHOTO_EVENTS_PER_RUN = 20
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
@@ -375,7 +381,7 @@ def apply_verification(path, verdicts, sources, model):
 def verify_pages(pool, plan, deadline):
     """Spend the daily search-grounded budget checking the oldest unchecked drafts."""
     checked = 0
-    for ev in plan["events"]:
+    for ev in by_priority(plan["events"]):
         if time.time() > deadline or pool.total_remaining("verify") == 0:
             break
         if ev["status"] != "done" or ev.get("verified"):
@@ -419,6 +425,15 @@ def outline(pool, plan, era, count, exclude=None):
     return added
 
 
+def is_core(era):
+    return era >= CORE_ERA_START
+
+
+def by_priority(events):
+    """Core-period events first, plan order otherwise."""
+    return sorted(events, key=lambda e: not is_core(e["era"]))
+
+
 def next_task(plan):
     for slug, _, _ in ERAS:
         if not plan["eras"][slug]["outlined"]:
@@ -426,14 +441,14 @@ def next_task(plan):
     for slug, _, _ in ERAS:
         if not plan["eras"][slug]["overview"]:
             return ("overview", slug)
-    pending = [e for e in plan["events"] if e["status"] == "pending"]
+    pending = by_priority(e for e in plan["events"] if e["status"] == "pending")
     if pending:
         return ("draft", pending[0])
     ents = [e for e in plan["entities"].values() if e["status"] == "pending"]
     if ents:
         return ("entity", max(ents, key=lambda e: len(e["mentions"])))
     # Everything drafted: deepen the thinnest era that still has rounds left.
-    candidates = [s for s, _, _ in ERAS if plan["eras"][s]["rounds"] < MAX_ROUNDS]
+    candidates = [s for s, _, _ in ERAS if is_core(s) and plan["eras"][s]["rounds"] < MAX_ROUNDS]
     if candidates:
         return ("deepen", min(candidates, key=lambda s: len(era_events(plan, s))))
     return None
@@ -447,16 +462,19 @@ def run(max_calls, minutes, commit=False):
     print(f"Quota at start: {pool.summary()}")
     print(f"Model ids: {pool.state['resolved']}")
     done += verify_pages(pool, plan, deadline)
-    # OpenRouter's free budget is separate from Gemini's, so spend it every run.
-    openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
-    done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
+    if TRANSLATE_WITH_AI:
+        # OpenRouter's free budget is separate from Gemini's, so spend it every run.
+        openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
+        done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
     # Illustrate a slice of event pages with freely licensed Wikimedia Commons photos.
-    done += photos_batch(pool, plan, deadline, limit=PHOTO_EVENTS_PER_RUN, save=save_plan)
+    done += photos_batch(pool, plan, deadline, limit=PHOTO_EVENTS_PER_RUN, save=save_plan,
+                         events=by_priority(plan["events"]))
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:
-            print("Seed plan complete: every era outlined, drafted and deepened. Translating with spare capacity.")
-            done += translate_batch(pool, plan, deadline, limit=max_calls - done, save=save_plan)
+            print("Seed plan complete: every era outlined, drafted and deepened.")
+            if TRANSLATE_WITH_AI:
+                done += translate_batch(pool, plan, deadline, limit=max_calls - done, save=save_plan)
             break
         kind, arg = task
         try:

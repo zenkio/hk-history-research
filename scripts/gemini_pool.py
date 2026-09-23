@@ -36,6 +36,8 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1"
 # Free-list entries that are not general text models.
 OPENROUTER_SKIP = re.compile(r"(vl|vision|coder|math|embed|guard|audio|image|ocr)", re.I)
 EXPECTED_OUTPUT_TOKENS = 1500
+# A YouTube video at low media resolution costs roughly 100 tokens per second.
+VIDEO_TOKEN_ESTIMATE = 150_000
 TRANSIENT_TRIES = 4      # per request on large-quota models, for 503/500/timeouts
 SCARCE_RPD = 50          # models this small move on after one overload error: Google still bills it
 IDLE_CYCLES = 3          # full passes over the routing list before giving up on a transient outage
@@ -45,6 +47,10 @@ ALLOWED_EXTRA = re.compile(r"^(preview|latest|exp|it|a\d+b|\d+)$")
 
 class QuotaExhausted(Exception):
     """No model serving the requested role has budget left today."""
+
+
+class RequestRejected(Exception):
+    """The request itself is invalid (e.g. a private video); retrying or switching models won't help."""
 
 
 def _is_daily_quota(msg):
@@ -244,14 +250,14 @@ class ModelPool:
         self.save()
         print(f"  [pool] {key} parked for today: {reason}")
 
-    def _pace(self, key, prompt):
+    def _pace(self, key, prompt, extra=0):
         m = self.models[key]
         wait = self.last_call.get(key, 0) + 60.0 / m["rpm"] * 1.15 - time.time()
         if wait > 0:
             time.sleep(wait)
         # Tokens per minute: sliding 60s window of real usage.
         log = self.token_log.setdefault(key, deque())
-        need = len(prompt) // 2 + EXPECTED_OUTPUT_TOKENS
+        need = min(len(prompt) // 2 + EXPECTED_OUTPUT_TOKENS + extra, m["tpm"])
         while True:
             now = time.time()
             while log and now - log[0][0] > 60:
@@ -262,26 +268,29 @@ class ModelPool:
         self.last_call[key] = time.time()
 
     # ---- calls -------------------------------------------------------
-    def generate_json(self, role, prompt, search=False, only=None):
+    def generate_json(self, role, prompt, search=False, only=None, media=None):
         """Return (parsed_json, model_display_name, sources) from the best model with budget left.
 
         search=True enables Google Search grounding; sources then lists the web pages used.
         only restricts the role's routing to these model names.
+        media is a list of public URLs (e.g. YouTube) the model watches along with the prompt;
+        only Google models accept it.
         Transient server errors (503 "high demand" etc.) are retried with backoff; only when
         every model is out of budget, or still failing after IDLE_CYCLES passes, does this
         raise QuotaExhausted.
         """
-        return self._generate(role, prompt, _parse_json, search, only)
+        return self._generate(role, prompt, _parse_json, search, only, media)
 
     def generate_text(self, role, prompt, parse, only=None):
         """Like generate_json, but `parse(text)` turns the raw reply into a result (raise ValueError to retry)."""
-        return self._generate(role, prompt, parse, False, only)
+        return self._generate(role, prompt, parse, False, only, None)
 
-    def _generate(self, role, prompt, parse, search, only):
-        keys = [k for k in self.routing.get(role, []) if only is None or k in only]
+    def _generate(self, role, prompt, parse, search, only, media):
+        keys = [k for k in self.routing.get(role, [])
+                if (only is None or k in only) and not (media and self._provider(k) != "google")]
         for cycle in range(IDLE_CYCLES):
             for key in keys:
-                result = self._try_model(key, role, prompt, search, parse)
+                result = self._try_model(key, role, prompt, search, parse, media)
                 if result is not None:
                     return result
             if sum(self.remaining(k, role) for k in keys) == 0:
@@ -291,7 +300,15 @@ class ModelPool:
             time.sleep(wait)
         raise QuotaExhausted(f"No budget left for role '{role}'. {self.summary()}")
 
-    def _call_google(self, m, prompt, search, want_json):
+    def _call_google(self, m, prompt, search, want_json, media=None):
+        if media:
+            cfg = types.GenerateContentConfig(
+                response_mime_type="application/json" if want_json and m["json_mode"] else None,
+                media_resolution=types.MediaResolution.MEDIA_RESOLUTION_LOW)
+            contents = [types.Part(file_data=types.FileData(file_uri=u)) for u in media] + [types.Part(text=prompt)]
+            resp = self.client.models.generate_content(model=m["api_id"], contents=contents, config=cfg)
+            tokens = getattr(getattr(resp, "usage_metadata", None), "total_token_count", None)
+            return resp.text, [], tokens
         if search:
             # JSON mode cannot be combined with tools; parse the text instead.
             cfg = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())])
@@ -318,20 +335,20 @@ class ModelPool:
         text = data["choices"][0]["message"].get("content") or ""
         return text, [], (data.get("usage") or {}).get("total_tokens")
 
-    def _try_model(self, key, role, prompt, search, parse):
+    def _try_model(self, key, role, prompt, search, parse, media=None):
         m = self.models[key]
         bad_json = transient = 0
         # AI Studio counts 503 "high demand" failures against RPD, so a 20-per-day
         # model must not spend its budget retrying an overload.
         max_transient = 1 if m["rpd"] <= SCARCE_RPD else TRANSIENT_TRIES
         while self.remaining(key, role) > 0 and bad_json < 3 and transient < max_transient:
-            self._pace(key, prompt)
+            self._pace(key, prompt, extra=VIDEO_TOKEN_ESTIMATE * len(media or []))
             self._count(key)
             try:
                 if self._provider(key) == "openrouter":
                     text, sources, tokens = self._call_openrouter(m, prompt)
                 else:
-                    text, sources, tokens = self._call_google(m, prompt, search, parse is _parse_json)
+                    text, sources, tokens = self._call_google(m, prompt, search, parse is _parse_json, media)
                 self.token_log.setdefault(key, deque()).append(
                     (time.time(), tokens or len(prompt) // 2 + EXPECTED_OUTPUT_TOKENS))
                 return parse(text), key, sources
@@ -355,6 +372,8 @@ class ModelPool:
                     transient += 1
                     if transient < max_transient:
                         time.sleep(15 * transient)
+                elif "400" in msg or "INVALID_ARGUMENT" in msg:
+                    raise RequestRejected(msg[:300])
                 elif "404" in msg or "NOT_FOUND" in msg or "not supported" in msg.lower():
                     self._park(key, f"unavailable as {m['api_id']}: {msg[:160]}")
                     return None

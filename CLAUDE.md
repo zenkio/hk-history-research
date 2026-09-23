@@ -74,7 +74,9 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **OpenRouter and translation:** `models.json` entries with `"provider": "openrouter"` pick a current `:free` model by name fragment at startup and share the account-wide `providers.openrouter.rpd` limit (50/day; 1000 after a lifetime $10 top-up), using `OPENROUTER_API_KEY`. `scripts/translate.py` writes Traditional Chinese (Hong Kong) versions to `content/zh/<same path>` with links both ways; every run spends the OpenRouter budget on it, and Gemma continues once the drafting plan is complete. Progress: `translations` in `seed_plan.json`.
 
-**Repair:** `scripts/repair_content.py` runs before classification each run: rebuilds summaries cut mid-word, adds `description` (what Quartz shows in search and previews), re-fetches teaser-only RSS pages into the queue once (`scripts/repaired_urls.json`), and removes `_NNNNNN` duplicate pages.
+**Videos:** `fetch_sources.py` records YouTube ids embedded or linked in a post (`videos:` header in the queue file). `process_ingestion.py` has Gemini watch up to 2 per post (role `video`, low media resolution, ~100 tokens/s), feeds that summary into the article, and adds a `## Video` section with the embed, an AI-summary callout and timestamped key points. A 400 / INVALID_ARGUMENT (e.g. private video) raises `RequestRejected` at once instead of retrying across models.
+
+**Repair:** `scripts/repair_content.py` runs before classification each run: rebuilds summaries cut mid-word, adds `description` (what Quartz shows in search and previews), checks every RSS page against its source once (`scripts/repaired_urls.json`) and re-queues it if it is only a teaser or the source embeds a video we have not summarised, and removes `_NNNNNN` duplicate pages.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).
 

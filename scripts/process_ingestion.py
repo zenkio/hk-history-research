@@ -58,7 +58,7 @@ def parse_header(content):
     """Extract source_url, feed, pub_date, title from the plain-text header written by fetch_sources.py."""
     meta = {}
     for line in content.splitlines():
-        for key in ("source_url", "feed", "pub_date", "title"):
+        for key in ("source_url", "feed", "pub_date", "title", "videos"):
             if line.startswith(f"{key}:"):
                 meta[key] = line[len(key) + 1:].strip()
     return meta
@@ -83,6 +83,65 @@ def make_slug(text, max_len=80):
     slug = re.sub(r'[\s_]+', '-', slug)
     slug = slug.strip('-')[:max_len]
     return slug or "article"
+
+
+MAX_VIDEOS = 2
+VIDEO_PROMPT = """Watch this video. It is linked from a Hong Kong history post titled "{title}".
+Report what the video itself says and shows, so a reader who cannot watch it gets the same facts
+and viewpoints. Do not add outside knowledge; if something is unclear in the video, say so.
+
+Respond with ONLY this JSON:
+{{"speaker": "Who presents it (name and role) if stated, else empty",
+  "language": "Main spoken language",
+  "summary": "200-400 words of markdown in English, third person, attributing claims to the speaker. Use **bold** for key names and dates.",
+  "key_points": [{{"time": "mm:ss", "point": "One fact, claim, source or viewpoint stated at that moment"}}],
+  "people": ["Name (中文名 if given)"],
+  "years": ["1979"]}}"""
+
+
+def summarize_videos(pool, video_ids, title):
+    """AI summaries of the YouTube videos a post links to. Posts that are only a blurb plus a
+    video would otherwise publish almost nothing."""
+    out = []
+    for vid in video_ids[:MAX_VIDEOS]:
+        url = f"https://www.youtube.com/watch?v={vid}"
+        try:
+            data, model, _ = pool.generate_json("video", VIDEO_PROMPT.format(title=title), media=[url])
+        except QuotaExhausted:
+            raise  # keep the post queued until video quota is back
+        except Exception as e:
+            print(f"  video {vid} could not be summarised: {str(e)[:120]}")
+            continue
+        data.update(id=vid, url=url, model=model)
+        out.append(data)
+        print(f"  video {vid} summarised ({model})")
+    return out
+
+
+def seconds(stamp):
+    parts = [int(p) for p in re.findall(r"\d+", str(stamp))][-3:]
+    total = 0
+    for p in parts:
+        total = total * 60 + p
+    return total
+
+
+def video_section(videos):
+    lines = []
+    for v in videos:
+        lines += ["## Video", "", f"![]({v['url']})", "",
+                  f"> [!info] What the video says (AI summary by {v['model']}, not a transcript)", ""]
+        if v.get("speaker"):
+            lines += [f"**Presenter:** {v['speaker']}" + (f" · **Language:** {v['language']}" if v.get("language") else ""), ""]
+        lines += [v.get("summary", "").strip(), ""]
+        points = [k for k in v.get("key_points", []) if k.get("point")]
+        if points:
+            lines += ["### Key points", ""]
+            for k in points:
+                t = seconds(k.get("time", ""))
+                lines.append(f"- [{k.get('time', '')}](https://youtu.be/{v['id']}?t={t}) {k['point']}")
+            lines.append("")
+    return lines
 
 
 def call_gemini(pool, content, url, pub_date):
@@ -122,6 +181,14 @@ def analyze_and_route(pool, filepath):
     # Body is everything after the blank line following headers
     body_start = raw.find("\n\n")
     body = raw[body_start:].strip() if body_start != -1 else raw
+
+    video_ids = [v for v in meta.get("videos", "").split(",") if v]
+    videos = summarize_videos(pool, video_ids, meta.get("title", "")) if video_ids else []
+    if videos:
+        # Let the article be written from what the video says, not just the post's blurb.
+        # Put it first so the 6,000-character input cap never cuts it off.
+        body = ("VIDEO CONTENT (AI summary of the linked video):\n" + "\n\n".join(
+            v.get("summary", "") for v in videos) + "\n\nPOST TEXT:\n" + body)
 
     try:
         analysis = call_gemini(pool, body, url, pub_date)
@@ -166,6 +233,7 @@ def analyze_and_route(pool, filepath):
     context = analysis.get("context", "").strip()
     if context:
         lines += ["## Historical context", "", "> [!note] General background (AI, not from the source)", "", context, ""]
+    lines += video_section(videos)
     lines += [
         f"> Source: [{feed_name}]({url})",
     ]

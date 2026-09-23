@@ -4,10 +4,11 @@
 1. Summaries: older RSS pages stored `summary` as the first 120 characters of the
    body, cut mid-word. Rebuild it from whole sentences and add `description`,
    which Quartz shows in search results and link previews.
-2. Thin pages: RSS pages whose body is only a feed teaser ("We'll …") or under
-   60 words are re-fetched from their source URL and put back in the ingestion
-   queue so process_ingestion.py rewrites them from the full article. Each URL
-   is retried once (scripts/repaired_urls.json).
+2. Thin pages and missed videos: every RSS page is checked against its source
+   once (scripts/repaired_urls.json). It goes back into the ingestion queue if
+   our page is only a feed teaser ("We'll …") or under 60 words, or if the
+   source post embeds a YouTube video we have not summarised yet, so
+   process_ingestion.py rewrites it from the full article and the video.
 3. Duplicates: `name_123456.md` copies of `name.md` with the same title are removed.
 
 Usage: python3 scripts/repair_content.py [--commit]
@@ -99,7 +100,7 @@ def remove_duplicates(pages):
 
 def requeue_thin(pages):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from fetch_sources import fetch_article_text
+    from fetch_sources import fetch_article
 
     tried = {}
     if os.path.exists(REPAIRED_FILE):
@@ -112,21 +113,25 @@ def requeue_thin(pages):
         url = get_field(fm, "source_url")
         text = article_text(body)
         thin = len(re.findall(r"\w+", text)) < MIN_WORDS or re.search(r"(…|\.\.\.|\[&#8230;\])\s*$", text)
-        if not thin or not url or url in tried:
+        if not url or url in tried or "\n## Video" in body:
             continue
         tried[url] = datetime.now().isoformat()
-        full = fetch_article_text(url)
-        if not full or len(full) < 400:
+        full, videos = fetch_article(url)
+        if not thin and not videos:
+            continue
+        if (not full or len(full) < 400) and not videos:
             print(f"[repair] could not fetch more than a teaser for {url}")
             continue
         os.makedirs(QUEUE_DIR, exist_ok=True)
         name = "raw_repair_" + os.path.basename(path)
         with open(os.path.join(QUEUE_DIR, name), "w", encoding="utf-8") as f:
             f.write(f"source_url: {url}\nfeed: {get_field(fm, 'source_feed') or 'unknown'}\n"
-                    f"pub_date: {get_field(fm, 'date') or ''}\ntitle: {get_field(fm, 'title')}\n\n{full}\n")
+                    f"pub_date: {get_field(fm, 'date') or ''}\ntitle: {get_field(fm, 'title')}\n"
+                    + (f"videos: {','.join(videos)}\n" if videos else "") + f"\n{full or ''}\n")
         os.remove(path)
         requeued += 1
-        print(f"[repair] re-queued thin page {os.path.relpath(path, CONTENT)}")
+        why = f"{len(videos)} video(s)" if videos else "thin page"
+        print(f"[repair] re-queued {os.path.relpath(path, CONTENT)} ({why})")
     with open(REPAIRED_FILE, "w", encoding="utf-8") as f:
         json.dump(tried, f, indent=2, ensure_ascii=False)
     return requeued

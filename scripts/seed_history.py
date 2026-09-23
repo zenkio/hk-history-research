@@ -36,6 +36,7 @@ TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 PLAN_FILE = os.path.join(PROJECT_ROOT, "scripts", "seed_plan.json")
 ENTITY_DIR = os.path.join(PROJECT_ROOT, "content", "02_Entities")
 MAX_ROUNDS = 5
+COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
 ERAS = [
     ("01-prehistory", "Prehistory and early settlement", "to 214 BCE"),
@@ -428,7 +429,7 @@ def next_task(plan):
     return None
 
 
-def run(max_calls, minutes):
+def run(max_calls, minutes, commit=False):
     pool = ModelPool()
     plan = load_plan()
     deadline = time.time() + minutes * 60
@@ -488,6 +489,11 @@ def run(max_calls, minutes):
                 plan["eras"][arg]["outlined" if kind == "outline" else "overview"] = True
         save_plan(plan)
         done += 1
+        if commit and done % COMMIT_EVERY == 0:
+            try:
+                git_commit()
+            except subprocess.CalledProcessError as e:
+                print(f"Periodic commit failed, will retry at the end: {e}")
     counts = {}
     for e in plan["events"]:
         counts[e["status"]] = counts.get(e["status"], 0) + 1
@@ -520,6 +526,6 @@ if __name__ == "__main__":
     args = ap.parse_args()
     if not os.environ.get("GEMINI_API_KEY"):
         sys.exit("GEMINI_API_KEY is not set")
-    ran = run(args.max_calls, args.minutes)
+    ran = run(args.max_calls, args.minutes, commit=not args.no_commit)
     if ran and not args.no_commit:
         git_commit()

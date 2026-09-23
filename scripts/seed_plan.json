@@ -17724,7 +17724,8 @@
       "mentions": [
         "Introduction of Steam Navigation on the Pearl River"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/russell-company.md"
     },
     "person:william-milne": {
       "name": "William Milne (米爾恩)",
@@ -17732,7 +17733,8 @@
       "mentions": [
         "The First Protestant Missionaries in the Delta"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/william-milne.md"
     },
     "person:indigenous-clans": {
       "name": "Indigenous Clans (原居民宗族)",
@@ -17740,7 +17742,8 @@
       "mentions": [
         "Local Clan Resistance by Punti and Hakka"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/indigenous-clans.md"
     }
   }
 }

@@ -27,8 +27,8 @@ RSS Feeds → fetch_sources.py → 04_Ingestion_Queue/
 - `scripts/` — Python pipeline scripts
 
 **Automation:**
-- `.github/workflows/ingestion.yml` — runs every 3 hours, calls `scripts/run_pipeline.sh`
-- `.github/workflows/deploy.yml` — triggers on every push to main, builds and deploys Quartz
+- `.github/workflows/ingestion.yml` — runs hourly (45-minute seeding cap): fetch, repair, classify, seed
+- `.github/workflows/deploy.yml` — builds and deploys Quartz on a human push to main and every 3 hours on a schedule. Bot pushes (GITHUB_TOKEN) never trigger `push` workflows, hence the schedule.
 
 ## Build & Development
 
@@ -71,6 +71,14 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 **Model pool:** `scripts/models.json` holds each free-tier model's RPM/TPM/RPD (copied from AI Studio) and a `routing` table naming which models serve each role, in order: `outline` (3.x Flash, 20 RPD each), `draft` (3.5/3.1 Flash Lite at 500 RPD, then Flash, then Gemma 4, which is TPM-bound at 16K), `classify` (Flash Lite, then Gemma), `verify` (2.5 Flash / Flash Lite, the only free models with Google Search grounding). `scripts/gemini_pool.py` resolves AI Studio display names to real API ids via `models.list()`, paces RPM and TPM, records usage in `scripts/quota_state.json` (resets at Pacific midnight), parks a model for the day on a daily-quota 429 or 404, and holds `reserve_for_ingestion` calls on classify models.
 
 **History seeding:** `scripts/seed_history.py` spends leftover quota on AI-drafted pages (tag `ai-draft`): era overviews and event pages in `content/01_Timeline/<NN-era>/`, and people/place pages in `content/02_Entities/`. Each run first fact-checks the oldest unchecked event pages with search grounding, replacing the "Claims to verify" checklist with verdicts and web sources (`confidence: ai-draft-checked`, tags `search-checked` / `needs-correction`). Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
+
+**OpenRouter and translation:** `models.json` entries with `"provider": "openrouter"` pick a current `:free` model by name fragment at startup and share the account-wide `providers.openrouter.rpd` limit (50/day; 1000 after a lifetime $10 top-up), using `OPENROUTER_API_KEY`. `scripts/translate.py` writes Traditional Chinese (Hong Kong) versions to `content/zh/<same path>` with links both ways; every run spends the OpenRouter budget on it, and Gemma continues once the drafting plan is complete. Progress: `translations` in `seed_plan.json`.
+
+**Videos:** `fetch_sources.py` records YouTube ids embedded or linked in a post (`videos:` header in the queue file). `process_ingestion.py` has Gemini watch up to 2 per post (role `video`, low media resolution, ~100 tokens/s), feeds that summary into the article, and adds a `## Video` section with the embed, an AI-summary callout and timestamped key points. A 400 / INVALID_ARGUMENT (e.g. private video) raises `RequestRejected` at once instead of retrying across models.
+
+**Photos:** `scripts/photos.py`, two paths split by copyright. (1) Photos inside source posts (HPHK, Gwulo): `fetch_sources.py` records them (`images:` header); `process_ingestion.py` has the `vision` role describe up to 3 and adds a `## Photos in the source` section of caption cards linking to the photo and post, never re-hosting or embedding. (2) Wikimedia Commons: each seeding run searches Commons for `PHOTO_EVENTS_PER_RUN` event pages, keeps only free licences (PD/CC0/CC BY/CC BY-SA), has the `vision` role judge relevance against the page, and adds `## Photos from this period` with author, licence, link and what the photo corroborates or contradicts (tag `photo-corroborated`); a Commons file is used on one page only. Progress: `photos` in `seed_plan.json`. Models that reject image input are skipped for media for the rest of the run.
+
+**Repair:** `scripts/repair_content.py` runs before classification each run: rebuilds summaries cut mid-word, adds `description` (what Quartz shows in search and previews), checks every RSS page against its source once (`scripts/repaired_urls.json`) and re-queues it if it is only a teaser or the source embeds a video we have not summarised, and removes `_NNNNNN` duplicate pages.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).
 

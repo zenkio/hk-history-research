@@ -4,6 +4,7 @@ import re
 import json
 import urllib.request
 import urllib.error
+from urllib.parse import urljoin
 import feedparser
 from datetime import datetime
 
@@ -32,7 +33,39 @@ def save_seen_urls(seen):
         json.dump(seen, f, indent=2, ensure_ascii=False)
 
 
-def fetch_article_text(url):
+YOUTUBE_RE = re.compile(
+    r"(?:youtube(?:-nocookie)?\.com/(?:embed/|watch\?(?:[^\"'<>\s]*&)?v=|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{11})")
+
+
+def find_videos(html):
+    """YouTube video ids embedded or linked in a page, in order, without duplicates."""
+    return list(dict.fromkeys(YOUTUBE_RE.findall(html or "")))
+
+
+IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
+IMG_SKIP = re.compile(r"logo|icon|avatar|gravatar|emoji|banner|button|badge|pixel|spinner|sprite|placeholder|/ads?/|feed|share", re.I)
+
+
+def find_images(html, base_url, limit=6):
+    """Content photos in a post (not logos, icons or tracking pixels), as absolute URLs."""
+    out = []
+    for tag in IMG_RE.findall(html or ""):
+        src = re.search(r'\b(?:data-src|data-orig-file|src)=["\']([^"\']+)["\']', tag)
+        if not src:
+            continue
+        url = urljoin(base_url, src.group(1).replace("&amp;", "&"))
+        width = re.search(r'\bwidth=["\']?(\d+)', tag)
+        if (not re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I) or IMG_SKIP.search(url)
+                or (width and int(width.group(1)) < 200) or url in out):
+            continue
+        out.append(url)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fetch_article(url):
+    """Return (plain text, [youtube ids], [photo urls]) for an article page, or (None, [], []) on failure."""
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
@@ -43,9 +76,13 @@ def fetch_article_text(url):
         text = re.sub(r'<[^>]+>', ' ', text)
         text = re.sub(r'&[a-z#0-9]+;', ' ', text)
         text = re.sub(r'\s+', ' ', text).strip()
-        return text[:8000]
+        return text[:8000], find_videos(html), find_images(html, url)
     except Exception:
-        return None
+        return None, [], []
+
+
+def fetch_article_text(url):
+    return fetch_article(url)[0]
 
 
 def make_slug(text, max_len=60):
@@ -79,8 +116,14 @@ def fetch_rss():
                 rss_text = re.sub(r'<[^>]+>', ' ', rss_desc)
                 rss_text = re.sub(r'\s+', ' ', rss_text).strip()
 
-                # Try to fetch full article; fall back to RSS description
-                full_text = fetch_article_text(link) or rss_text
+                # Try to fetch full article; fall back to RSS description.
+                # Posts that are mostly a YouTube video are summarised from the
+                # video itself later, so keep the ids.
+                page_text, videos, images = fetch_article(link)
+                full_text = page_text or rss_text
+                rss_html = rss_desc + "".join(c.get("value", "") for c in entry.get("content", []))
+                videos = list(dict.fromkeys(videos + find_videos(rss_html)))
+                images = list(dict.fromkeys(images + find_images(rss_html, link)))
 
                 slug = make_slug(title)
                 filename = f"raw_{feed['name']}_{slug}.md"
@@ -96,7 +139,12 @@ def fetch_rss():
                     f.write(f"source_url: {link}\n")
                     f.write(f"feed: {feed['name']}\n")
                     f.write(f"pub_date: {pub_date}\n")
-                    f.write(f"title: {title}\n\n")
+                    f.write(f"title: {title}\n")
+                    if videos:
+                        f.write(f"videos: {','.join(videos)}\n")
+                    if images:
+                        f.write(f"images: {' '.join(images)}\n")
+                    f.write("\n")
                     f.write(full_text + "\n")
 
                 seen[link] = datetime.now().isoformat()

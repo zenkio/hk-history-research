@@ -16,7 +16,10 @@ Work is resumable and tracked in scripts/seed_plan.json:
   5. deepen   - ask each era for events it still misses, MAX_ROUNDS times
                 (role "outline"), which feeds steps 3 and 4 again
 Separately, every run first spends the "verify" budget fact-checking drafted
-event pages with Google Search grounding, which adds real web sources.
+event pages with Google Search grounding, which adds real web sources, then
+the OpenRouter free budget on Traditional Chinese versions (translate.py),
+then looks for Wikimedia Commons photos for a slice of event pages (photos.py).
+Once the plan is complete, spare Gemma capacity continues the translations.
 
 Usage: python3 scripts/seed_history.py [--max-calls N] [--minutes M] [--no-commit]
 """
@@ -30,12 +33,17 @@ import subprocess
 from datetime import datetime
 
 from gemini_pool import ModelPool, QuotaExhausted
+from textutil import make_summary
+from translate import translate_batch
+from photos import photos_batch
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 PLAN_FILE = os.path.join(PROJECT_ROOT, "scripts", "seed_plan.json")
 ENTITY_DIR = os.path.join(PROJECT_ROOT, "content", "02_Entities")
 MAX_ROUNDS = 5
+PHOTO_EVENTS_PER_RUN = 20
+COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
 ERAS = [
     ("01-prehistory", "Prehistory and early settlement", "to 214 BCE"),
@@ -293,6 +301,7 @@ def write_event_page(era, ev, data, model):
         "era": yaml_str(name),
         "tags": tag_list(tags),
         "summary": yaml_str(data.get("summary", ev.get("summary", ""))),
+        "description": yaml_str(make_summary(data.get("summary") or ev.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
@@ -308,6 +317,7 @@ def write_overview_page(era, data, model):
         "title": yaml_str(f"{era[:2]} · {name} ({span})"),
         "tags": tag_list(list(data.get("tags", [])) + ["ai-draft", "era-overview"]),
         "summary": yaml_str(data.get("summary", "")),
+        "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
@@ -330,6 +340,7 @@ def write_entity_page(ent, data, model):
         "title_zh": yaml_str(data["title_zh"]) if data.get("title_zh") else None,
         "tags": tag_list(list(data.get("tags", [])) + ["ai-draft", ent["kind"]]),
         "summary": yaml_str(data.get("summary", "")),
+        "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
@@ -428,7 +439,7 @@ def next_task(plan):
     return None
 
 
-def run(max_calls, minutes):
+def run(max_calls, minutes, commit=False):
     pool = ModelPool()
     plan = load_plan()
     deadline = time.time() + minutes * 60
@@ -436,10 +447,16 @@ def run(max_calls, minutes):
     print(f"Quota at start: {pool.summary()}")
     print(f"Model ids: {pool.state['resolved']}")
     done += verify_pages(pool, plan, deadline)
+    # OpenRouter's free budget is separate from Gemini's, so spend it every run.
+    openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
+    done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
+    # Illustrate a slice of event pages with freely licensed Wikimedia Commons photos.
+    done += photos_batch(pool, plan, deadline, limit=PHOTO_EVENTS_PER_RUN, save=save_plan)
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:
-            print("Seed plan complete: every era outlined, drafted and deepened.")
+            print("Seed plan complete: every era outlined, drafted and deepened. Translating with spare capacity.")
+            done += translate_batch(pool, plan, deadline, limit=max_calls - done, save=save_plan)
             break
         kind, arg = task
         try:
@@ -488,6 +505,11 @@ def run(max_calls, minutes):
                 plan["eras"][arg]["outlined" if kind == "outline" else "overview"] = True
         save_plan(plan)
         done += 1
+        if commit and done % COMMIT_EVERY == 0:
+            try:
+                git_commit()
+            except subprocess.CalledProcessError as e:
+                print(f"Periodic commit failed, will retry at the end: {e}")
     counts = {}
     for e in plan["events"]:
         counts[e["status"]] = counts.get(e["status"], 0) + 1
@@ -499,7 +521,7 @@ def run(max_calls, minutes):
 
 
 def git_commit():
-    paths = ["content/01_Timeline", "content/02_Entities", "scripts/seed_plan.json", "scripts/quota_state.json"]
+    paths = ["content/01_Timeline", "content/02_Entities", "content/zh", "scripts/seed_plan.json", "scripts/quota_state.json"]
     subprocess.run(["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
                    cwd=PROJECT_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:
@@ -520,6 +542,6 @@ if __name__ == "__main__":
     args = ap.parse_args()
     if not os.environ.get("GEMINI_API_KEY"):
         sys.exit("GEMINI_API_KEY is not set")
-    ran = run(args.max_calls, args.minutes)
+    ran = run(args.max_calls, args.minutes, commit=not args.no_commit)
     if ran and not args.no_commit:
         git_commit()

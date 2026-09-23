@@ -2,13 +2,15 @@ name: Automated History Research Ingestion
 
 on:
   schedule:
-    - cron: '0 */3 * * *' # Run every 3 hours
+    # Hourly: Gemini quotas are spent in the first run or two of each day; after
+    # that Gemma is limited by tokens/minute, so running more often uses more of it.
+    - cron: '5 * * * *'
   workflow_dispatch: # Allows manual trigger
 
 permissions:
   contents: write
 
-# A seeding run can last up to ~2h; never let two runs push at once.
+# Never let two runs push at once; a late run queues behind the current one.
 concurrency:
   group: ingestion
   cancel-in-progress: false
@@ -16,7 +18,7 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 170
+    timeout-minutes: 70
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -50,6 +52,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/fetch_sources.py
 
+      - name: Repair truncated summaries and thin pages
+        run: python3 scripts/repair_content.py --commit
+
       - name: Process and publish
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -59,4 +64,5 @@ jobs:
       - name: Seed history drafts with leftover quota
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 scripts/seed_history.py --minutes 140
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python3 scripts/seed_history.py --minutes 45

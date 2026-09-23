@@ -8,6 +8,7 @@ import subprocess
 from datetime import datetime
 from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary, yaml_quote
+from photos import describe_source_photos, source_photo_section
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(PROJECT_ROOT, "04_Ingestion_Queue")
@@ -58,7 +59,7 @@ def parse_header(content):
     """Extract source_url, feed, pub_date, title from the plain-text header written by fetch_sources.py."""
     meta = {}
     for line in content.splitlines():
-        for key in ("source_url", "feed", "pub_date", "title", "videos"):
+        for key in ("source_url", "feed", "pub_date", "title", "videos", "images"):
             if line.startswith(f"{key}:"):
                 meta[key] = line[len(key) + 1:].strip()
     return meta
@@ -85,6 +86,10 @@ def make_slug(text, max_len=80):
     return slug or "article"
 
 
+PHOTO_CREDITS = {
+    "Historical_Photos_HK": "Historical Photographs of Hong Kong (University of Bristol) and the donating families",
+    "Gwulo_Old_HK": "their Gwulo contributors",
+}
 MAX_VIDEOS = 2
 VIDEO_PROMPT = """Watch this video. It is linked from a Hong Kong history post titled "{title}".
 Report what the video itself says and shows, so a reader who cannot watch it gets the same facts
@@ -190,6 +195,12 @@ def analyze_and_route(pool, filepath):
         body = ("VIDEO CONTENT (AI summary of the linked video):\n" + "\n\n".join(
             v.get("summary", "") for v in videos) + "\n\nPOST TEXT:\n" + body)
 
+    image_urls = meta.get("images", "").split()
+    photos = describe_source_photos(pool, image_urls, meta.get("title", ""), url) if image_urls else []
+    if photos:
+        body += "\n\nPHOTOS IN THE POST (AI descriptions):\n" + "\n".join(
+            f"- {p.get('caption', '')}: {p.get('shows', '')} (date clues: {p.get('date_estimate', '')})" for p in photos)
+
     try:
         analysis = call_gemini(pool, body, url, pub_date)
     except QuotaExhausted:
@@ -234,6 +245,7 @@ def analyze_and_route(pool, filepath):
     if context:
         lines += ["## Historical context", "", "> [!note] General background (AI, not from the source)", "", context, ""]
     lines += video_section(videos)
+    lines += source_photo_section(photos, url, PHOTO_CREDITS.get(feed_name, "the original post's owners"))
     lines += [
         f"> Source: [{feed_name}]({url})",
     ]

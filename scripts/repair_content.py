@@ -116,7 +116,7 @@ def requeue_thin(pages):
         if not url or url in tried or "\n## Video" in body:
             continue
         tried[url] = datetime.now().isoformat()
-        full, videos = fetch_article(url)
+        full, videos, images = fetch_article(url)
         if not thin and not videos:
             continue
         if (not full or len(full) < 400) and not videos:
@@ -127,7 +127,8 @@ def requeue_thin(pages):
         with open(os.path.join(QUEUE_DIR, name), "w", encoding="utf-8") as f:
             f.write(f"source_url: {url}\nfeed: {get_field(fm, 'source_feed') or 'unknown'}\n"
                     f"pub_date: {get_field(fm, 'date') or ''}\ntitle: {get_field(fm, 'title')}\n"
-                    + (f"videos: {','.join(videos)}\n" if videos else "") + f"\n{full or ''}\n")
+                    + (f"videos: {','.join(videos)}\n" if videos else "")
+                    + (f"images: {' '.join(images)}\n" if images else "") + f"\n{full or ''}\n")
         os.remove(path)
         requeued += 1
         why = f"{len(videos)} video(s)" if videos else "thin page"

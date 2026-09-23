@@ -17,7 +17,8 @@ Work is resumable and tracked in scripts/seed_plan.json:
                 (role "outline"), which feeds steps 3 and 4 again
 Separately, every run first spends the "verify" budget fact-checking drafted
 event pages with Google Search grounding, which adds real web sources, then
-the OpenRouter free budget on Traditional Chinese versions (translate.py).
+the OpenRouter free budget on Traditional Chinese versions (translate.py),
+then looks for Wikimedia Commons photos for a slice of event pages (photos.py).
 Once the plan is complete, spare Gemma capacity continues the translations.
 
 Usage: python3 scripts/seed_history.py [--max-calls N] [--minutes M] [--no-commit]
@@ -34,12 +35,14 @@ from datetime import datetime
 from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary
 from translate import translate_batch
+from photos import photos_batch
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 PLAN_FILE = os.path.join(PROJECT_ROOT, "scripts", "seed_plan.json")
 ENTITY_DIR = os.path.join(PROJECT_ROOT, "content", "02_Entities")
 MAX_ROUNDS = 5
+PHOTO_EVENTS_PER_RUN = 20
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
 ERAS = [
@@ -447,6 +450,8 @@ def run(max_calls, minutes, commit=False):
     # OpenRouter's free budget is separate from Gemini's, so spend it every run.
     openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
     done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
+    # Illustrate a slice of event pages with freely licensed Wikimedia Commons photos.
+    done += photos_batch(pool, plan, deadline, limit=PHOTO_EVENTS_PER_RUN, save=save_plan)
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:

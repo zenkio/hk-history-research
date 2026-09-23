@@ -38,6 +38,7 @@ OPENROUTER_SKIP = re.compile(r"(vl|vision|coder|math|embed|guard|audio|image|ocr
 EXPECTED_OUTPUT_TOKENS = 1500
 # A YouTube video at low media resolution costs roughly 100 tokens per second.
 VIDEO_TOKEN_ESTIMATE = 150_000
+IMAGE_TOKEN_ESTIMATE = 1_500
 TRANSIENT_TRIES = 4      # per request on large-quota models, for 503/500/timeouts
 SCARCE_RPD = 50          # models this small move on after one overload error: Google still bills it
 IDLE_CYCLES = 3          # full passes over the routing list before giving up on a transient outage
@@ -119,6 +120,7 @@ class ModelPool:
         self.client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
         self.last_call = {}
         self.token_log = {}
+        self.no_media = set()  # models found this run to reject image/video input
         self.state = self._load_state()
         self._resolve_ids()
         self._resolve_openrouter()
@@ -273,8 +275,8 @@ class ModelPool:
 
         search=True enables Google Search grounding; sources then lists the web pages used.
         only restricts the role's routing to these model names.
-        media is a list of public URLs (e.g. YouTube) the model watches along with the prompt;
-        only Google models accept it.
+        media is a list the model sees along with the prompt: public URLs (e.g. YouTube) and/or
+        (bytes, mime_type) images; only Google models accept it.
         Transient server errors (503 "high demand" etc.) are retried with backoff; only when
         every model is out of budget, or still failing after IDLE_CYCLES passes, does this
         raise QuotaExhausted.
@@ -287,7 +289,8 @@ class ModelPool:
 
     def _generate(self, role, prompt, parse, search, only, media):
         keys = [k for k in self.routing.get(role, [])
-                if (only is None or k in only) and not (media and self._provider(k) != "google")]
+                if (only is None or k in only)
+                and not (media and (self._provider(k) != "google" or k in self.no_media))]
         for cycle in range(IDLE_CYCLES):
             for key in keys:
                 result = self._try_model(key, role, prompt, search, parse, media)
@@ -302,10 +305,14 @@ class ModelPool:
 
     def _call_google(self, m, prompt, search, want_json, media=None):
         if media:
+            has_video = any(isinstance(x, str) for x in media)
             cfg = types.GenerateContentConfig(
                 response_mime_type="application/json" if want_json and m["json_mode"] else None,
-                media_resolution=types.MediaResolution.MEDIA_RESOLUTION_LOW)
-            contents = [types.Part(file_data=types.FileData(file_uri=u)) for u in media] + [types.Part(text=prompt)]
+                # Low resolution keeps long videos within TPM; photos need detail (signs, dates).
+                media_resolution=types.MediaResolution.MEDIA_RESOLUTION_LOW if has_video else None)
+            contents = [types.Part(file_data=types.FileData(file_uri=x)) if isinstance(x, str)
+                        else types.Part.from_bytes(data=x[0], mime_type=x[1]) for x in media]
+            contents.append(types.Part(text=prompt))
             resp = self.client.models.generate_content(model=m["api_id"], contents=contents, config=cfg)
             tokens = getattr(getattr(resp, "usage_metadata", None), "total_token_count", None)
             return resp.text, [], tokens
@@ -342,7 +349,8 @@ class ModelPool:
         # model must not spend its budget retrying an overload.
         max_transient = 1 if m["rpd"] <= SCARCE_RPD else TRANSIENT_TRIES
         while self.remaining(key, role) > 0 and bad_json < 3 and transient < max_transient:
-            self._pace(key, prompt, extra=VIDEO_TOKEN_ESTIMATE * len(media or []))
+            self._pace(key, prompt, extra=sum(VIDEO_TOKEN_ESTIMATE if isinstance(x, str) else IMAGE_TOKEN_ESTIMATE
+                                              for x in media or []))
             self._count(key)
             try:
                 if self._provider(key) == "openrouter":
@@ -372,6 +380,11 @@ class ModelPool:
                     transient += 1
                     if transient < max_transient:
                         time.sleep(15 * transient)
+                elif media and re.search(r"modalit|image input|does not support (image|video)", msg, re.I):
+                    # This model can't see images/video; another in the routing may.
+                    print(f"  [pool] {key} cannot take this media; skipping it for media this run")
+                    self.no_media.add(key)
+                    return None
                 elif "400" in msg or "INVALID_ARGUMENT" in msg:
                     raise RequestRejected(msg[:300])
                 elif "404" in msg or "NOT_FOUND" in msg or "not supported" in msg.lower():

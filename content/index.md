@@ -48,6 +48,8 @@ A chronological backbone from prehistory to today. These pages are **AI drafts**
 
 - [[01_Timeline/|📅 Timeline]] — dated historical events, sorted chronologically
 - [[03_Angles/|⚖️ Angles]] — analysis, photographs, and perspectives
+- [[02_Entities/People/|👤 People]] and [[02_Entities/Places/|📍 Places]] — AI-drafted reference pages
+- [[tags/needs-correction|❌ Needs correction]] — drafts where a search fact-check found an error
 
 ---
 *Sources: [HK History Centre](https://www.hkhistory.net) · [Gwulo Old HK](https://gwulo.com) · [Battle for HK](http://battleforhongkong.blogspot.com) · [Industrial History HK](https://industrialhistoryhk.org) · [Historical Photos HK](https://blog.hphkbristol.net)*

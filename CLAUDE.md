@@ -68,9 +68,9 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **Environment:** `GEMINI_API_KEY` in `.env` locally, GitHub secret for CI.
 
-**Model pool:** `scripts/models.json` lists each free-tier model with its RPM/RPD caps and the roles it serves (`classify`, `outline`, `draft`). `scripts/gemini_pool.py` drains models in listed order per role, records usage in `scripts/quota_state.json` (resets at Pacific midnight, when Gemini quotas reset), parks a model for the day on a real daily-quota 429 or a 404, and holds `reserve_for_ingestion` calls on classify-capable models so RSS processing is never starved.
+**Model pool:** `scripts/models.json` holds each free-tier model's RPM/TPM/RPD (copied from AI Studio) and a `routing` table naming which models serve each role, in order: `outline` (3.x Flash, 20 RPD each), `draft` (3.5/3.1 Flash Lite at 500 RPD, then Flash, then Gemma 4, which is TPM-bound at 16K), `classify` (Flash Lite, then Gemma), `verify` (2.5 Flash / Flash Lite, the only free models with Google Search grounding). `scripts/gemini_pool.py` resolves AI Studio display names to real API ids via `models.list()`, paces RPM and TPM, records usage in `scripts/quota_state.json` (resets at Pacific midnight), parks a model for the day on a daily-quota 429 or 404, and holds `reserve_for_ingestion` calls on classify models.
 
-**History seeding:** `scripts/seed_history.py` uses leftover quota to write AI-drafted pages (tag `ai-draft`, `confidence: ai-draft`) into `content/01_Timeline/<NN-era>/`, one folder per era with an `index.md` overview. Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
+**History seeding:** `scripts/seed_history.py` spends leftover quota on AI-drafted pages (tag `ai-draft`): era overviews and event pages in `content/01_Timeline/<NN-era>/`, and people/place pages in `content/02_Entities/`. Each run first fact-checks the oldest unchecked event pages with search grounding, replacing the "Claims to verify" checklist with verdicts and web sources (`confidence: ai-draft-checked`, tags `search-checked` / `needs-correction`). Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).
 

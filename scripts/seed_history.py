@@ -8,11 +8,15 @@ can later confirm, correct, or replace. Every page it writes is marked as an
 unverified AI draft.
 
 Work is resumable and tracked in scripts/seed_plan.json:
-  1. outline  - list the key events of each era   (role "outline", ~16 calls)
-  2. overview - write an overview page per era    (role "outline", ~16 calls)
-  3. draft    - write one page per event          (role "draft", ~300+ calls)
-  4. deepen   - once an era is fully drafted, ask for events it still misses,
-                up to MAX_ROUNDS extra rounds per era
+  1. outline  - list the key events of each era    (role "outline", 16 calls)
+  2. overview - write an overview page per era     (role "outline", 16 calls)
+  3. draft    - write one page per event           (role "draft", ~400 calls)
+  4. entity   - write a page per person and place mentioned by the events,
+                most-mentioned first               (role "draft", ~1000+ calls)
+  5. deepen   - ask each era for events it still misses, MAX_ROUNDS times
+                (role "outline"), which feeds steps 3 and 4 again
+Separately, every run first spends the "verify" budget fact-checking drafted
+event pages with Google Search grounding, which adds real web sources.
 
 Usage: python3 scripts/seed_history.py [--max-calls N] [--minutes M] [--no-commit]
 """
@@ -30,7 +34,8 @@ from gemini_pool import ModelPool, QuotaExhausted
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
 PLAN_FILE = os.path.join(PROJECT_ROOT, "scripts", "seed_plan.json")
-MAX_ROUNDS = 3
+ENTITY_DIR = os.path.join(PROJECT_ROOT, "content", "02_Entities")
+MAX_ROUNDS = 5
 
 ERAS = [
     ("01-prehistory", "Prehistory and early settlement", "to 214 BCE"),
@@ -109,6 +114,33 @@ Respond with ONLY this JSON:
   "tags": ["lowercase-hyphenated-topic", "max-6"],
   "claims_to_verify": ["Specific factual claims on this page a researcher should check against primary sources"]}}"""
 
+ENTITY_PROMPT = """You are writing a reference page for a Hong Kong history website.
+
+{kind}: {name}
+Mentioned in these pages: {context}
+
+{style}
+If you do not know reliable facts about this {kind_lower}, say so briefly rather than guessing.
+
+Respond with ONLY this JSON:
+{{"title": "English name",
+  "title_zh": "Traditional Chinese name",
+  "summary": "One sentence on who or what this is and why it matters to Hong Kong",
+  "body": "200-400 words of markdown with ## headings. Focus on the connection to Hong Kong. Use **bold** for key names and dates.",
+  "timeline": [{{"year": "YYYY", "event": "One line"}}],
+  "tags": ["lowercase-hyphenated", "max-5"]}}"""
+
+VERIFY_PROMPT = """You are fact-checking a draft page of a Hong Kong history website.
+Use Google Search to check each claim below against reliable sources
+(archives, universities, government, museums, encyclopedias, major newspapers).
+
+Page title: {title}
+Claims:
+{claims}
+
+Respond with ONLY a JSON object, no other text:
+{{"verdicts": [{{"claim": "the claim", "status": "supported | contradicted | unclear", "note": "One sentence: what the sources say, with the correct fact if contradicted"}}]}}"""
+
 
 # ---- plan state ------------------------------------------------------
 
@@ -118,6 +150,7 @@ def load_plan():
             plan = json.load(f)
     else:
         plan = {"eras": {}, "events": []}
+    plan.setdefault("entities", {})
     for slug, _, _ in ERAS:
         plan["eras"].setdefault(slug, {"outlined": False, "overview": False, "rounds": 0})
     return plan
@@ -160,6 +193,29 @@ def add_events(plan, era, events):
         known.add(make_slug(title))
         added += 1
     return added
+
+
+def entity_key(name):
+    """'Charles Elliot (義律)' -> 'charles-elliot'; falls back to the Chinese if there is no English."""
+    english = re.sub(r"[（(].*?[)）]", "", name).strip()
+    return make_slug(english or name, 60)
+
+
+def entity_link(kind, name):
+    folder = "People" if kind == "person" else "Places"
+    return f"[[02_Entities/{folder}/{entity_key(name)}|{name}]]"
+
+
+def register_entities(plan, ev, data):
+    for kind, field in (("person", "people"), ("place", "places")):
+        for name in data.get(field, []) or []:
+            name = str(name).strip()
+            key = f"{kind}:{entity_key(name)}"
+            if not name or key.endswith(":event"):
+                continue
+            ent = plan["entities"].setdefault(key, {"name": name, "kind": kind, "mentions": [], "status": "pending"})
+            if ev["title"] not in ent["mentions"]:
+                ent["mentions"].append(ev["title"])
 
 
 # ---- page writing ----------------------------------------------------
@@ -223,7 +279,8 @@ def write_event_page(era, ev, data, model):
     body += render_perspectives(data.get("perspectives"))
     if data.get("people") or data.get("places"):
         body += ["", "## People and places", ""]
-        body += [f"- {x}" for x in data.get("people", []) + data.get("places", [])]
+        body += [f"- {entity_link('person', x)}" for x in data.get("people", [])]
+        body += [f"- {entity_link('place', x)}" for x in data.get("places", [])]
     if data.get("claims_to_verify"):
         body += ["", "## Claims to verify", ""]
         body += [f"- [ ] {c}" for c in data["claims_to_verify"]]
@@ -260,6 +317,81 @@ def write_overview_page(era, data, model):
     return rel
 
 
+def write_entity_page(ent, data, model):
+    folder = "People" if ent["kind"] == "person" else "Places"
+    rel = os.path.join(folder, f"{entity_key(ent['name'])}.md")
+    body = [data.get("body", "").strip()]
+    if data.get("timeline"):
+        body += ["", "## Timeline", ""]
+        body += [f"- **{t.get('year', '')}**: {t.get('event', '')}" for t in data["timeline"]]
+    body += ["", "## Mentioned in", ""] + [f"- {t}" for t in ent["mentions"]]
+    meta = {
+        "title": yaml_str(ent["name"]),
+        "title_zh": yaml_str(data["title_zh"]) if data.get("title_zh") else None,
+        "tags": tag_list(list(data.get("tags", [])) + ["ai-draft", ent["kind"]]),
+        "summary": yaml_str(data.get("summary", "")),
+        "confidence": "ai-draft",
+        "draft_model": model,
+        "ingested": datetime.now().strftime("%Y-%m-%d"),
+    }
+    write_page(os.path.join(ENTITY_DIR, rel), meta, body)
+    return rel
+
+
+def apply_verification(path, verdicts, sources, model):
+    """Replace the page's claim checklist with fact-check results and web sources."""
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    icon = {"supported": "✅", "contradicted": "❌", "unclear": "❔"}
+    lines = ["## Fact check", "",
+             f"Checked with Google Search grounding by {model} on {datetime.now().strftime('%Y-%m-%d')}.", ""]
+    for v in verdicts:
+        status = str(v.get("status", "unclear")).strip().lower()
+        lines.append(f"- {icon.get(status, '❔')} **{status}**: {v.get('claim', '')}. {v.get('note', '')}".rstrip())
+    if sources:
+        lines += ["", "## Sources", ""] + [f"- [{s['title']}]({s['uri']})" for s in sources]
+    block = "\n".join(lines) + "\n\n"
+    text = re.sub(r"## Claims to verify\n.*?(?=Part of: )", lambda _: block, text, count=1, flags=re.DOTALL)
+    contradicted = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
+    text = text.replace("confidence: ai-draft\n", "confidence: ai-draft-checked\n", 1)
+    extra = '"search-checked"' + (', "needs-correction"' if contradicted else "")
+    text = re.sub(r"^tags: \[", lambda _: f"tags: [{extra}, ", text, count=1, flags=re.MULTILINE)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+    return contradicted
+
+
+def verify_pages(pool, plan, deadline):
+    """Spend the daily search-grounded budget checking the oldest unchecked drafts."""
+    checked = 0
+    for ev in plan["events"]:
+        if time.time() > deadline or pool.total_remaining("verify") == 0:
+            break
+        if ev["status"] != "done" or ev.get("verified"):
+            continue
+        path = os.path.join(TIMELINE_DIR, ev["file"])
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            claims = re.findall(r"^- \[ \] (.+)$", f.read(), flags=re.MULTILINE)
+        if not claims:
+            ev["verified"] = "no-claims"
+            continue
+        try:
+            data, model, sources = pool.generate_json("verify", VERIFY_PROMPT.format(
+                title=ev["title"], claims="\n".join(f"- {c}" for c in claims)), search=True)
+        except QuotaExhausted:
+            break
+        verdicts = data.get("verdicts", []) if isinstance(data, dict) else []
+        bad = apply_verification(path, verdicts, sources, model)
+        ev["verified"] = datetime.now().strftime("%Y-%m-%d")
+        save_plan(plan)
+        checked += 1
+        print(f"[verify] {ev['file']}: {len(verdicts)} claims, {len(sources)} sources"
+              + (" - NEEDS CORRECTION" if bad else "") + f" ({model})")
+    return checked
+
+
 # ---- steps -----------------------------------------------------------
 
 def outline(pool, plan, era, count, exclude=None):
@@ -268,7 +400,7 @@ def outline(pool, plan, era, count, exclude=None):
     if exclude:
         existing = ("\nThese events are already covered, so list DIFFERENT ones "
                     "(gaps, social history, lesser-known episodes):\n- " + "\n- ".join(exclude) + "\n")
-    data, model = pool.generate_json("outline", OUTLINE_PROMPT.format(
+    data, model, _ = pool.generate_json("outline", OUTLINE_PROMPT.format(
         name=name, span=span, count=count, existing=existing))
     events = data.get("events", data) if isinstance(data, dict) else data
     added = add_events(plan, era, events if isinstance(events, list) else [])
@@ -286,6 +418,9 @@ def next_task(plan):
     pending = [e for e in plan["events"] if e["status"] == "pending"]
     if pending:
         return ("draft", pending[0])
+    ents = [e for e in plan["entities"].values() if e["status"] == "pending"]
+    if ents:
+        return ("entity", max(ents, key=lambda e: len(e["mentions"])))
     # Everything drafted: deepen the thinnest era that still has rounds left.
     candidates = [s for s, _, _ in ERAS if plan["eras"][s]["rounds"] < MAX_ROUNDS]
     if candidates:
@@ -299,6 +434,8 @@ def run(max_calls, minutes):
     deadline = time.time() + minutes * 60
     done = 0
     print(f"Quota at start: {pool.summary()}")
+    print(f"Model ids: {pool.state['resolved']}")
+    done += verify_pages(pool, plan, deadline)
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:
@@ -316,7 +453,7 @@ def run(max_calls, minutes):
             elif kind == "overview":
                 name, span = ERA_BY_SLUG[arg]
                 titles = "; ".join(e["title"] for e in era_events(plan, arg))
-                data, model = pool.generate_json("outline", OVERVIEW_PROMPT.format(
+                data, model, _ = pool.generate_json("outline", OVERVIEW_PROMPT.format(
                     name=name, span=span, titles=titles, style=STYLE))
                 rel = write_overview_page(arg, data, model)
                 plan["eras"][arg]["overview"] = True
@@ -324,19 +461,28 @@ def run(max_calls, minutes):
             elif kind == "draft":
                 ev = arg
                 name, span = ERA_BY_SLUG[ev["era"]]
-                data, model = pool.generate_json("draft", EVENT_PROMPT.format(
+                data, model, _ = pool.generate_json("draft", EVENT_PROMPT.format(
                     name=name, span=span, title=ev["title"], date=ev["date"] or ev["year"],
                     summary=ev["summary"], style=STYLE))
                 ev["file"] = write_event_page(ev["era"], ev, data, model)
                 ev["status"] = "done"
+                register_entities(plan, ev, data)
                 print(f"[draft] {ev['file']} ({model})")
+            elif kind == "entity":
+                ent = arg
+                data, model, _ = pool.generate_json("draft", ENTITY_PROMPT.format(
+                    kind=ent["kind"].title(), kind_lower=ent["kind"], name=ent["name"],
+                    context="; ".join(ent["mentions"][:8]), style=STYLE))
+                ent["file"] = write_entity_page(ent, data, model)
+                ent["status"] = "done"
+                print(f"[entity] {ent['file']} ({model})")
         except QuotaExhausted as e:
             print(f"Out of quota: {e}")
             break
         except Exception as e:
             # A malformed response should not stall the queue forever.
             print(f"[{kind}] failed: {e}")
-            if kind == "draft":
+            if kind in ("draft", "entity"):
                 arg["status"] = "failed"
             elif kind in ("outline", "overview"):
                 plan["eras"][arg]["outlined" if kind == "outline" else "overview"] = True
@@ -345,12 +491,15 @@ def run(max_calls, minutes):
     counts = {}
     for e in plan["events"]:
         counts[e["status"]] = counts.get(e["status"], 0) + 1
-    print(f"Ran {done} tasks. Events: {counts}. Quota now: {pool.summary()}")
+    ent_done = sum(1 for e in plan["entities"].values() if e["status"] == "done")
+    checked = sum(1 for e in plan["events"] if e.get("verified"))
+    print(f"Ran {done} tasks. Events: {counts}, fact-checked {checked}. "
+          f"Entities: {ent_done}/{len(plan['entities'])}. Quota now: {pool.summary()}")
     return done
 
 
 def git_commit():
-    paths = ["content/01_Timeline", "scripts/seed_plan.json", "scripts/quota_state.json"]
+    paths = ["content/01_Timeline", "content/02_Entities", "scripts/seed_plan.json", "scripts/quota_state.json"]
     subprocess.run(["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
                    cwd=PROJECT_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:

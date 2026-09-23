@@ -89,7 +89,7 @@ def call_gemini(pool, content, url, pub_date):
         url=url,
         pub_date=pub_date
     )
-    analysis, _ = pool.generate_json("classify", prompt)
+    analysis = pool.generate_json("classify", prompt)[0]
     return analysis
 
 

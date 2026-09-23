@@ -20865,3 +20865,135 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
+[main 3b5172d] auto(ingestion+ai-batch): synced 2026-09-22 22:00 history data
+ 25 files changed, 4141 insertions(+)
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790110815_-1023569250660835567.txt
+ create mode 100644 01_Timeline/raw_Battle_For_HK_1790110815_8553458139513906486.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790110808_-1207011182600768311.txt
+ create mode 100644 01_Timeline/raw_Gwulo_Old_HK_1790110808_124758012090507242.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790110803_-2526481307936388396.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790110803_-4232707824261034925.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790110803_355516113677607006.txt
+ create mode 100644 01_Timeline/raw_HK_History_Centre_1790110803_5779971410610652597.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790110805_5535177511447725857.txt
+ create mode 100644 01_Timeline/raw_Historical_Photos_HK_1790110805_7330330162111234366.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790110813_-1868369317669413276.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790110813_-4922314674378605947.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790110813_-8358132545232414848.txt
+ create mode 100644 01_Timeline/raw_Industrial_History_HK_1790110813_-8410197916436317584.txt
+ create mode 100644 03_Angles/raw_Battle_For_HK_1790110815_-3657747597809384722.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790110808_-5409634890421414259.txt
+ create mode 100644 03_Angles/raw_Gwulo_Old_HK_1790110808_1220293877224902162.txt
+ create mode 100644 03_Angles/raw_Historical_Photos_HK_1790110805_-7882873386124728.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790110815_3156265510219869094.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Battle_For_HK_1790110815_9213577400409868634.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Gwulo_Old_HK_1790110808_-4381309672219663329.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_HK_History_Centre_1790110803_-5866065168646847167.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Historical_Photos_HK_1790110805_6924703910990699432.txt
+ create mode 100644 04_Ingestion_Queue/Unverified/raw_Industrial_History_HK_1790110813_2487655681084723590.txt
+To github.com:zenkio/hk-history-research.git
+   a2ae467..3b5172d  main -> main
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Quota exceeded for gemini-3.1-flash-lite, trying next model...
+Quota exceeded for gemini-3.5-flash-lite, trying next model...
+Error with gemma-4-26b: 404 models/gemma-4-26b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+LLM analysis failed: All models exhausted or failed.
+Git push completed.
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+python3: can't open file '/home/zenkio/scripts/fetch_sources.py': [Errno 2] No such file or directory
+python3: can't open file '/home/zenkio/scripts/process_ingestion.py': [Errno 2] No such file or directory
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+python3: can't open file '/home/zenkio/scripts/fetch_sources.py': [Errno 2] No such file or directory
+python3: can't open file '/home/zenkio/scripts/process_ingestion.py': [Errno 2] No such file or directory
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.

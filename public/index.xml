@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>Quartz 5</title>
-      <link>https://quartz.jzhao.xyz</link>
-      <description>Last 10 notes on Quartz 5</description>
+      <title>HK History Research</title>
+      <link>https://zenkio.github.io/hk-history-research</link>
+      <description>Last 10 notes on HK History Research</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>00_Meta</title>
-    <link>https://quartz.jzhao.xyz/00_meta/</link>
-    <guid>https://quartz.jzhao.xyz/00_meta/</guid>
+    <link>https://zenkio.github.io/hk-history-research/00_meta/</link>
+    <guid>https://zenkio.github.io/hk-history-research/00_meta/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 22 Sep 2026 16:56:35 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
+  </item><item>
+    <title>01_Timeline</title>
+    <link>https://zenkio.github.io/hk-history-research/01_timeline/</link>
+    <guid>https://zenkio.github.io/hk-history-research/01_timeline/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
+  </item><item>
+    <title>03_Angles</title>
+    <link>https://zenkio.github.io/hk-history-research/03_angles/</link>
+    <guid>https://zenkio.github.io/hk-history-research/03_angles/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
+  </item><item>
+    <title>04_Unverified</title>
+    <link>https://zenkio.github.io/hk-history-research/04_unverified/</link>
+    <guid>https://zenkio.github.io/hk-history-research/04_unverified/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
     <title>Guides</title>
-    <link>https://quartz.jzhao.xyz/guides/</link>
-    <guid>https://quartz.jzhao.xyz/guides/</guid>
+    <link>https://zenkio.github.io/hk-history-research/guides/</link>
+    <guid>https://zenkio.github.io/hk-history-research/guides/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 22 Sep 2026 16:56:35 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
     <title>Sources</title>
-    <link>https://quartz.jzhao.xyz/sources/</link>
-    <guid>https://quartz.jzhao.xyz/sources/</guid>
+    <link>https://zenkio.github.io/hk-history-research/sources/</link>
+    <guid>https://zenkio.github.io/hk-history-research/sources/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 22 Sep 2026 16:56:35 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
-    <title>Tag Index</title>
-    <link>https://quartz.jzhao.xyz/tags/</link>
-    <guid>https://quartz.jzhao.xyz/tags/</guid>
+    <title>hong-kong-history</title>
+    <link>https://zenkio.github.io/hk-history-research/tags/hong-kong-history</link>
+    <guid>https://zenkio.github.io/hk-history-research/tags/hong-kong-history</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 22 Sep 2026 16:56:35 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
-    <title>index</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
-    <description><![CDATA[ Home. ]]></description>
-    <pubDate>Tue, 22 Sep 2026 13:36:18 GMT</pubDate>
+    <title>gwulo-website</title>
+    <link>https://zenkio.github.io/hk-history-research/tags/gwulo-website</link>
+    <guid>https://zenkio.github.io/hk-history-research/tags/gwulo-website</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
-    <title>File_Index_And_Purposes</title>
-    <link>https://quartz.jzhao.xyz/00_meta/file_index_and_purposes</link>
-    <guid>https://quartz.jzhao.xyz/00_meta/file_index_and_purposes</guid>
-    <description><![CDATA[ File Index and Purposes This file acts as the master index for the project’s structure and the purpose of each component. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+    <title>wartime-diaries</title>
+    <link>https://zenkio.github.io/hk-history-research/tags/wartime-diaries</link>
+    <guid>https://zenkio.github.io/hk-history-research/tags/wartime-diaries</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item><item>
-    <title>Autonomous_Pipeline_Rules</title>
-    <link>https://quartz.jzhao.xyz/guides/autonomous_pipeline_rules</link>
-    <guid>https://quartz.jzhao.xyz/guides/autonomous_pipeline_rules</guid>
-    <description><![CDATA[ Autonomous Pipeline Rules Placeholder for rules governing the automated data research pipeline. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
-  </item><item>
-    <title>Free_Bot_Ecosystem_Guide</title>
-    <link>https://quartz.jzhao.xyz/guides/free_bot_ecosystem_guide</link>
-    <guid>https://quartz.jzhao.xyz/guides/free_bot_ecosystem_guide</guid>
-    <description><![CDATA[ Free Bot Ecosystem Guide Placeholder for documentation on the bot ecosystem used for research. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
-  </item><item>
-    <title>SSOT_Operating_Guide</title>
-    <link>https://quartz.jzhao.xyz/guides/ssot_operating_guide</link>
-    <guid>https://quartz.jzhao.xyz/guides/ssot_operating_guide</guid>
-    <description><![CDATA[ SSOT Operating Guide Placeholder for the Single Source of Truth operating procedures. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
-  </item><item>
-    <title>Timeline_Framework</title>
-    <link>https://quartz.jzhao.xyz/guides/timeline_framework</link>
-    <guid>https://quartz.jzhao.xyz/guides/timeline_framework</guid>
-    <description><![CDATA[ Timeline Framework Placeholder for the structured Hong Kong history timeline framework. ]]></description>
-    <pubDate>Mon, 21 Sep 2026 08:30:09 GMT</pubDate>
+    <title>photographs</title>
+    <link>https://zenkio.github.io/hk-history-research/tags/photographs</link>
+    <guid>https://zenkio.github.io/hk-history-research/tags/photographs</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 23 Sep 2026 00:35:23 GMT</pubDate>
   </item>
     </channel>
   </rss>

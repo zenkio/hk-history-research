@@ -51,6 +51,7 @@ python3 scripts/serve_preview.py public 8000
 # Run individual pipeline steps
 python3 scripts/fetch_sources.py     # fetch RSS → 04_Ingestion_Queue/
 python3 scripts/process_ingestion.py # classify → content/
+python3 scripts/seed_history.py --minutes 30 --no-commit  # AI-draft history pages
 ```
 
 ## Quartz Configuration
@@ -67,7 +68,9 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **Environment:** `GEMINI_API_KEY` in `.env` locally, GitHub secret for CI.
 
-**Model fallback order:** `gemini-2.0-flash-lite` → `gemini-2.0-flash` → `gemini-1.5-flash`
+**Model pool:** `scripts/models.json` lists each free-tier model with its RPM/RPD caps and the roles it serves (`classify`, `outline`, `draft`). `scripts/gemini_pool.py` drains models in listed order per role, records usage in `scripts/quota_state.json` (resets at Pacific midnight, when Gemini quotas reset), parks a model for the day on a real daily-quota 429 or a 404, and holds `reserve_for_ingestion` calls on classify-capable models so RSS processing is never starved.
+
+**History seeding:** `scripts/seed_history.py` uses leftover quota to write AI-drafted pages (tag `ai-draft`, `confidence: ai-draft`) into `content/01_Timeline/<NN-era>/`, one folder per era with an `index.md` overview. Progress lives in `scripts/seed_plan.json`, so runs resume where they stopped. Runs after RSS ingestion in the same workflow.
 
 **SDK:** Uses `google.genai` (not the deprecated `google.generativeai`).
 

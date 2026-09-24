@@ -31,6 +31,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## 🔥 Burning (fix first)
 
+- [ ] **Run 9 (2026-09-24) was cancelled at the 70-minute limit and committed nothing.** Gemma 31B was overloaded, so every photo description waited minutes; the classify step only committed at the end, so 3 finished pages (1979 Geneva Conference with video, 2 wartime posts) were lost; the seeding step (research import, evidence, fact-check retry) never ran. _Fix in PR #5: commit per page, a 20-minute budget for classify, `continue-on-error` so seeding always runs, and a 10-minute cooldown for a model after repeated overloads._
+
 - [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.
 - [ ] **14 source pages are off the site until the quota reset.** The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
 - [x] ~~OpenRouter wrongly switched off for the day when a step lacks the key~~: now skipped per run; the key is also passed to the classify step.
@@ -74,6 +76,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## Done
 
+- 2026-09-24: Parallel workers (Gemini / research / photos) in the seeding step; commit per page; overload cooldown.
+
 - 2026-09-24: Evidence engine v1 and Deep Research importer.
 
 - 2026-09-24: Focus set: 1841+ first; AI translation off; pre-1841 eras no longer deepened.
@@ -89,4 +93,5 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 | 2026-09-23 | Rights-held photos are described and linked, never embedded | Copyright belongs to donors and families |
 | 2026-09-24 | Core scope 1841 to today; pre-1841 only with evidence | Owner priority |
 | 2026-09-24 | AI translation off; browser translation for now | Spend AI budget on verification |
+| 2026-09-24 | Parallel workers per quota inside one job, not separate jobs | Separate jobs would race on git pushes and edit the same pages; threads share one checkout with page locks |
 | 2026-09-24 | Verification before any new content type | AI drafts are ~95% of the site and unproven |

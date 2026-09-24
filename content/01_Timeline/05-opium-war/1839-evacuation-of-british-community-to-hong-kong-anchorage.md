@@ -4,10 +4,11 @@ title_zh: "英國社群撤退至香港錨地"
 date: 1839-08-26
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "british-evacuation", "canton-trade", "charles-elliot", "first-opium-war", "lin-zexu", "opium-war", "victoria-harbour"]
+tags: ["evidence-none", "1839", "ai-draft", "british-evacuation", "canton-trade", "charles-elliot", "first-opium-war", "lin-zexu", "opium-war", "victoria-harbour"]
 summary: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime capacity of the area."
 description: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,13 @@ The encampment of the British community in Victoria Harbour marked a critical tu
 
 - [ ] The exact date of the complete British evacuation from Macau to the Hong Kong anchorage on or around August 26, 1839.
 - [ ] The extent of logistical supply chains maintained between the anchored British fleet and local villagers in Kowloon and surrounding islands during the autumn of 1839.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the specific date of the 1839 evacuation and the logistical supply chains between the British fleet and local villagers is missing.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

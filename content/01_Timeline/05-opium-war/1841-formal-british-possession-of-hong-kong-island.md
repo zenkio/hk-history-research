@@ -4,10 +4,11 @@ title_zh: "正式佔領香港島"
 date: 1841-01-26
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "british-colonial-rule", "charles-elliot", "first-opium-war", "opium-war", "possession-point"]
+tags: ["evidence-none", "1841", "ai-draft", "british-colonial-rule", "charles-elliot", "first-opium-war", "opium-war", "possession-point"]
 summary: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
 description: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -48,5 +49,13 @@ This event established the physical and administrative foothold that would trans
 - [ ] Commodore Sir Gordon Bremer formally raised the Union Jack at Possession Point on January 26, 1841.
 - [ ] A 21-gun salute was fired by Royal Navy ships during the landing ceremony.
 - [ ] Charles Elliot issued a proclamation regarding local laws and customs on the day of the landing.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for all claims (1, 2, and 3) is still needed as none of the provided sources relate to the formal British possession of Hong Kong Island in 1841.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

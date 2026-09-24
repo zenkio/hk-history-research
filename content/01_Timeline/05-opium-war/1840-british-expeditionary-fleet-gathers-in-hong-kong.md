@@ -4,10 +4,11 @@ title_zh: "英國遠征艦隊集結香港"
 date: 1840-06-21
 year: 1840
 era: "Canton trade and the First Opium War"
-tags: ["1840", "ai-draft", "british-navy", "first-opium-war", "gunboat-diplomacy", "hong-kong-history", "opium-war"]
+tags: ["evidence-none", "1840", "ai-draft", "british-navy", "first-opium-war", "gunboat-diplomacy", "hong-kong-history", "opium-war"]
 summary: "In June 1840, a massive British military armada assembled in Hong Kong waters to establish a forward operating base at the outset of the First Opium War."
 description: "In June 1840, a massive British military armada assembled in Hong Kong waters to establish a forward operating base at the outset of the First Opium War."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The gathering of the fleet in Hong Kong waters is viewed by historians as a crit
 
 - [ ] The exact arrival dates and composition of the British expeditionary fleet gathering in Hong Kong waters in June 1840.
 - [ ] The nature of interactions between the gathered British forces and the local inhabitants of Hong Kong Island prior to formal annexation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** All evidence regarding the 1840 British expeditionary fleet's arrival and its interactions with local inhabitants is missing.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

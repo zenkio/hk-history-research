@@ -23,7 +23,7 @@
     "05-opium-war": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "06-early-colony": {
       "outlined": true,
@@ -78,7 +78,7 @@
     "16-national-security-era": {
       "outlined": true,
       "overview": true,
-      "rounds": 3
+      "rounds": 4
     }
   },
   "events": [
@@ -8451,6 +8451,169 @@
       "summary": "The HKMA introduced FPS to enable instant, cross-institution payments, significantly accelerating Hong Kong's transition into a digital economy.",
       "status": "done",
       "file": "15-contention/2018-launch-of-the-faster-payment-system.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Edgar Cheung Ka-long Wins Olympic Fencing Gold",
+      "year": 2021,
+      "date": "2021-07-26",
+      "summary": "Hong Kong fencer Edgar Cheung Ka-long won the city's first Olympic gold medal in 25 years, sparking a massive wave of local pride and interest in sports.",
+      "status": "done",
+      "file": "16-national-security-era/2021-edgar-cheung-ka-long-wins-olympic-fencing-gold.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Northern Metropolis Development Strategy Announced",
+      "year": 2021,
+      "date": "2021-10-06",
+      "summary": "The government announced a massive strategy to transform the northern territories bordering Shenzhen into a high-tech hub, integrating Hong Kong's economy deeper with the Mainland.",
+      "status": "done",
+      "file": "16-national-security-era/2021-northern-metropolis-development-strategy-announced.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Sinking of the Iconic Jumbo Floating Restaurant",
+      "year": 2022,
+      "date": "2022-06-19",
+      "summary": "The world-famous floating restaurant capsized and sank in the South China Sea while being towed away, symbolizing the end of a nostalgic era for Hong Kong tourism.",
+      "status": "done",
+      "file": "16-national-security-era/2022-sinking-of-the-iconic-jumbo-floating-restaurant.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Light Public Housing Scheme Launched",
+      "year": 2022,
+      "date": "2022-10-19",
+      "summary": "The Chief Executive introduced the Light Public Housing scheme to quickly build temporary units, addressing the severe housing crisis for low-income residents in subdivided flats.",
+      "status": "done",
+      "file": "16-national-security-era/2022-light-public-housing-scheme-launched.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Opening of the Tseung Kwan O Cross Bay Link",
+      "year": 2022,
+      "date": "2022-12-11",
+      "summary": "The iconic bridge opened as Hong Kong's first marine viaduct featuring a cycle track and footpath, transforming local transit and daily recreation.",
+      "status": "done",
+      "file": "16-national-security-era/2022-opening-of-the-tseung-kwan-o-cross-bay-link.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Full Implementation of SIM Card Real-name Registration",
+      "year": 2023,
+      "date": "2023-02-23",
+      "summary": "Mandatory real-name registration for phone SIM cards came into full effect, ending anonymous mobile communication amid heightened data privacy concerns.",
+      "status": "done",
+      "file": "16-national-security-era/2023-full-implementation-of-sim-card-real-name-registration.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Launch of Importation of Labor Schemes",
+      "year": 2023,
+      "date": "2023-06-13",
+      "summary": "To combat acute manpower shortages across construction and transport sectors, the government launched streamlined schemes to import thousands of non-local workers.",
+      "status": "done",
+      "file": "16-national-security-era/2023-launch-of-importation-of-labor-schemes.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "HKD-RMB Dual Counter Financial Model Launched",
+      "year": 2023,
+      "date": "2023-06-19",
+      "summary": "The Hong Kong Stock Exchange launched a model allowing investors to trade major shares in both Hong Kong Dollars and Chinese Renminbi, bolstering offshore RMB business.",
+      "status": "done",
+      "file": "16-national-security-era/2023-hkd-rmb-dual-counter-financial-model-launched.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "The Rise of the Northbound Consumption Trend",
+      "year": 2023,
+      "date": "2023-12-31",
+      "summary": "Hong Kong residents began traveling to Shenzhen in record numbers for shopping and dining, creating a major economic challenge for local retail and catering industries.",
+      "status": "done",
+      "file": "16-national-security-era/2023-the-rise-of-the-northbound-consumption-trend.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Indefinite Postponement of Municipal Waste Charging Scheme",
+      "year": 2024,
+      "date": "2024-05-27",
+      "summary": "Following intense public pushback and logistical difficulties during trial runs, the government indefinitely suspended the long-planned municipal solid waste charging scheme.",
+      "status": "done",
+      "file": "16-national-security-era/2024-indefinite-postponement-of-municipal-waste-charging-scheme.md"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Robert Morrison Publishes First Chinese-English Dictionary",
+      "year": 1815,
+      "date": "1815",
+      "summary": "The pioneering Protestant missionary published his monumental dictionary in Macau, laying the linguistic foundation for Western diplomacy and trade interaction in the Pearl River Delta.",
+      "status": "done",
+      "file": "05-opium-war/1815-robert-morrison-publishes-first-chinese-english-dictionary.md"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Establishment of the General Chamber of Commerce in Canton",
+      "year": 1823,
+      "date": "1823",
+      "summary": "Foreign merchants united to formally lobby against the restrictive Cohong monopoly, marking a rise in organized Western commercial assertiveness before the Opium War.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Introduction of Steam-Powered River Vessels",
+      "year": 1828,
+      "date": "1828",
+      "summary": "The deployment of early steamships on the Pearl River accelerated communications and cargo transport between Canton, Macau, and the outer anchorages.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Rise of Protestant Press and Printing in the Delta",
+      "year": 1832,
+      "date": "1832",
+      "summary": "Missionary printing presses produced localized Chinese-language literature and periodicals, shaping early cultural exchange and information dissemination prior to colonial rule.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Introduction of the First Colonial Legal Code in Hong Kong",
+      "year": 1841,
+      "date": "1841-04-30",
+      "summary": "Captain Charles Elliot issued provisional criminal and civil regulations to govern the nascent British settlement before formal sovereignty was recognized.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Establishment of the Roman Catholic Mission in Hong Kong",
+      "year": 1841,
+      "date": "1841-04-22",
+      "summary": "Prefect Theodore Joset established the Catholic mission to serve the spiritual needs of European soldiers, sailors, and the local Chinese population.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Construction of the First Government House",
+      "year": 1842,
+      "date": "1842",
+      "summary": "Building began on an official residence for the colonial governor on Pottinger Street, symbolizing the permanent physical anchoring of British administration on the island.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "Founding of the Dreadnought Seamen's Hospital",
+      "year": 1842,
+      "date": "1842",
+      "summary": "Medical facilities were established to combat rampant tropical diseases among British naval personnel and merchants during the early occupation phase.",
+      "status": "pending"
+    },
+    {
+      "era": "05-opium-war",
+      "title": "First Public Land Auction of Marine Lots",
+      "year": 1842,
+      "date": "1842-06-14",
+      "summary": "The colonial government auctioned prime waterfront properties along Queen's Road, establishing the foundational real estate market that drove Hong Kong's commercial growth.",
+      "status": "pending"
     }
   ],
   "entities": {
@@ -9074,7 +9237,14 @@
         "HKTV Free-to-Air License Denial Protests",
         "Typhoon Mangkhut Infrastructure Chaos",
         "Rise of the Yellow Economic Circle",
-        "Launch of the Faster Payment System"
+        "Launch of the Faster Payment System",
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold",
+        "Light Public Housing Scheme Launched",
+        "Full Implementation of SIM Card Real-name Registration",
+        "Launch of Importation of Labor Schemes",
+        "HKD-RMB Dual Counter Financial Model Launched",
+        "The Rise of the Northbound Consumption Trend",
+        "Indefinite Postponement of Municipal Waste Charging Scheme"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -9297,7 +9467,8 @@
         "Construction of the Fat Tong Mun Coastal Watch",
         "Regulation of the Tanka Boat Migration",
         "The Rise of Private Maritime Insurance Networks",
-        "Rise of Tanka Boat People in Regional Trade"
+        "Rise of Tanka Boat People in Regional Trade",
+        "Robert Morrison Publishes First Chinese-English Dictionary"
       ],
       "status": "done",
       "file": "Places/pearl-river-delta.md"
@@ -9721,7 +9892,8 @@
         "Establishment of the Roman Catholic Prefecture Apostolic",
         "Publication of the Chinese Mail Newspaper",
         "Opening of the Ko Shan Road Playground",
-        "Opening of the Tuen Mun Highway"
+        "Opening of the Tuen Mun Highway",
+        "Opening of the Tseung Kwan O Cross Bay Link"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -10150,7 +10322,8 @@
         "Establishment of the EIC Factory in Canton",
         "Introduction of Steam Navigation on the Pearl River",
         "The Early Role of Compradors as Cultural Brokers",
-        "The First Protestant Missionaries in the Delta"
+        "The First Protestant Missionaries in the Delta",
+        "Robert Morrison Publishes First Chinese-English Dictionary"
       ],
       "status": "done",
       "file": "Places/canton.md"
@@ -10333,7 +10506,8 @@
       "name": "San Tin (新田)",
       "kind": "place",
       "mentions": [
-        "Man Clan Settles in San Tin"
+        "Man Clan Settles in San Tin",
+        "Northern Metropolis Development Strategy Announced"
       ],
       "status": "done",
       "file": "Places/san-tin.md"
@@ -10637,7 +10811,8 @@
         "The First Protestant Missionaries Reach Macau",
         "Establishment of the Morrison Education Society School",
         "The Execution of the Opium Merchant in Macau",
-        "The First Protestant Missionaries in the Delta"
+        "The First Protestant Missionaries in the Delta",
+        "Robert Morrison Publishes First Chinese-English Dictionary"
       ],
       "status": "done",
       "file": "Places/macau.md"
@@ -10752,7 +10927,8 @@
         "Emergence of Local Merchant Associations",
         "The Tuen Mun-Yuen Long Light Rail Planning Begins",
         "Formalization of Clan-Based Militia Defenses",
-        "The Founding of the Yuen Long Market Fair"
+        "The Founding of the Yuen Long Market Fair",
+        "Northern Metropolis Development Strategy Announced"
       ],
       "status": "done",
       "file": "Places/yuen-long.md"
@@ -10826,7 +11002,9 @@
         "The Daya Bay Nuclear Power Plant Protests",
         "Forced Evacuation of Destitute Residents to Guangdong",
         "Establishment of the Provisional Legislative Council",
-        "Completion of the Lok Ma Chau Spur Line"
+        "Completion of the Lok Ma Chau Spur Line",
+        "Northern Metropolis Development Strategy Announced",
+        "The Rise of the Northbound Consumption Trend"
       ],
       "status": "done",
       "file": "Places/shenzhen.md"
@@ -11483,7 +11661,8 @@
         "Establishment of the Aberdeen Industrial School",
         "Construction of the Aberdeen Reservoir",
         "Development of the Tanka Fishing Cooperative Networks",
-        "Establishment of the Grantham Hospital for Tuberculosis"
+        "Establishment of the Grantham Hospital for Tuberculosis",
+        "Sinking of the Iconic Jumbo Floating Restaurant"
       ],
       "status": "done",
       "file": "Places/aberdeen.md"
@@ -13737,7 +13916,8 @@
         "Initial Human Migration via Land Bridges",
         "Shift to Deep-Sea Fishing Economies",
         "Faxian's Maritime Return Through the South China Sea",
-        "Rise of Specialized Marine Mollusk Harvesting"
+        "Rise of Specialized Marine Mollusk Harvesting",
+        "Sinking of the Iconic Jumbo Floating Restaurant"
       ],
       "status": "done",
       "file": "Places/south-china-sea.md"
@@ -14232,7 +14412,8 @@
         "Signing of the Closer Economic Partnership Arrangement",
         "The Rise of Cantopop's 'Four Heavenly Kings'",
         "The Emergence of 'Red Chip' Investment Fever",
-        "Hong Kong's 2006 Population Census Reveals Demographic Shifts"
+        "Hong Kong's 2006 Population Census Reveals Demographic Shifts",
+        "HKD-RMB Dual Counter Financial Model Launched"
       ],
       "status": "done",
       "file": "Places/mainland-china.md"
@@ -14607,7 +14788,8 @@
         "Implementation of National Security Education in Schools",
         "Mandatory Oath-Taking for Public Servants",
         "Establishment of the Liaison Office National Security Department",
-        "The First All-Patriots Legislative Council Election"
+        "The First All-Patriots Legislative Council Election",
+        "Northern Metropolis Development Strategy Announced"
       ],
       "status": "done",
       "file": "People/carrie-lam.md"
@@ -14691,7 +14873,8 @@
       "kind": "place",
       "mentions": [
         "Arrest of Jimmy Lai and Apple Daily Raid",
-        "Closure of the Rennie's Mill Refugee Camp"
+        "Closure of the Rennie's Mill Refugee Camp",
+        "Opening of the Tseung Kwan O Cross Bay Link"
       ],
       "status": "done",
       "file": "Places/tseung-kwan-o.md"
@@ -14801,7 +14984,10 @@
         "Launch of the Top Talent Pass Scheme",
         "Revamping of the District Council System",
         "Promotion of 'Hello Hong Kong' Tourism Campaign",
-        "Implementation of the New District Council 'Three Committees'"
+        "Implementation of the New District Council 'Three Committees'",
+        "Light Public Housing Scheme Launched",
+        "Launch of Importation of Labor Schemes",
+        "Indefinite Postponement of Municipal Waste Charging Scheme"
       ],
       "status": "done",
       "file": "People/john-lee.md"
@@ -15813,7 +15999,8 @@
       "name": "Lee Lai-shan (李麗珊)",
       "kind": "person",
       "mentions": [
-        "Lee Lai-shan Wins Hong Kong's First Olympic Gold"
+        "Lee Lai-shan Wins Hong Kong's First Olympic Gold",
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold"
       ],
       "status": "done",
       "file": "People/lee-lai-shan.md"
@@ -16165,7 +16352,8 @@
         "Opening of the Morrison Hill Quarry",
         "The First Protestant Missionaries Reach Macau",
         "Establishment of the Morrison Education Society School",
-        "The First Protestant Missionaries in the Delta"
+        "The First Protestant Missionaries in the Delta",
+        "Robert Morrison Publishes First Chinese-English Dictionary"
       ],
       "status": "done",
       "file": "People/robert-morrison.md"
@@ -18721,7 +18909,8 @@
       "mentions": [
         "HKTV Free-to-Air License Denial Protests"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/tim-mei-avenue.md"
     },
     "place:to-kwa-wan": {
       "name": "To Kwa Wan (土瓜灣)",
@@ -18729,7 +18918,97 @@
       "mentions": [
         "MTR Shatin to Central Link Scandal"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/to-kwa-wan.md"
+    },
+    "person:edgar-cheung-ka-long": {
+      "name": "Edgar Cheung Ka-long (張家朗)",
+      "kind": "person",
+      "mentions": [
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold"
+      ],
+      "status": "done",
+      "file": "People/edgar-cheung-ka-long.md"
+    },
+    "person:daniele-garozzo": {
+      "name": "Daniele Garozzo",
+      "kind": "person",
+      "mentions": [
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold"
+      ],
+      "status": "done",
+      "file": "People/daniele-garozzo.md"
+    },
+    "place:tokyo": {
+      "name": "Tokyo (東京)",
+      "kind": "place",
+      "mentions": [
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold"
+      ],
+      "status": "done",
+      "file": "Places/tokyo.md"
+    },
+    "place:north-district": {
+      "name": "North District (北區)",
+      "kind": "place",
+      "mentions": [
+        "Northern Metropolis Development Strategy Announced"
+      ],
+      "status": "done",
+      "file": "Places/north-district.md"
+    },
+    "place:paracel-islands": {
+      "name": "Paracel Islands (西沙群島)",
+      "kind": "place",
+      "mentions": [
+        "Sinking of the Iconic Jumbo Floating Restaurant"
+      ],
+      "status": "done",
+      "file": "Places/paracel-islands.md"
+    },
+    "place:lam-tin": {
+      "name": "Lam Tin (藍田)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Tseung Kwan O Cross Bay Link"
+      ],
+      "status": "done",
+      "file": "Places/lam-tin.md"
+    },
+    "person:nicolas-aguzin": {
+      "name": "Nicolas Aguzin (歐冠昇)",
+      "kind": "person",
+      "mentions": [
+        "HKD-RMB Dual Counter Financial Model Launched"
+      ],
+      "status": "done",
+      "file": "People/nicolas-aguzin.md"
+    },
+    "place:luohu": {
+      "name": "Luohu (羅湖)",
+      "kind": "place",
+      "mentions": [
+        "The Rise of the Northbound Consumption Trend"
+      ],
+      "status": "failed"
+    },
+    "place:futian": {
+      "name": "Futian (福田)",
+      "kind": "place",
+      "mentions": [
+        "The Rise of the Northbound Consumption Trend"
+      ],
+      "status": "done",
+      "file": "Places/futian.md"
+    },
+    "person:tse-chin-wan": {
+      "name": "Tse Chin-wan (謝展寰)",
+      "kind": "person",
+      "mentions": [
+        "Indefinite Postponement of Municipal Waste Charging Scheme"
+      ],
+      "status": "done",
+      "file": "People/tse-chin-wan.md"
     }
   }
 }

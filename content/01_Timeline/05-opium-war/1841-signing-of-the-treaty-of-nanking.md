@@ -4,7 +4,7 @@ title_zh: "南京條約簽署"
 date: 1842-08-29
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
+tags: ["photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
 summary: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 description: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 confidence: ai-draft
@@ -47,5 +47,18 @@ The Treaty of Nanking is widely viewed by historians as the first of the "unequa
 
 - [ ] The exact date of the signing ceremony aboard HMS Cornwallis on August 29, 1842.
 - [ ] The precise titles and roles of the Qing commissioners present at the negotiations.
+
+## Photos from this period
+
+![A replica of the Treaty of Nanking on display at the Hong Kong Museum of History.](https://upload.wikimedia.org/wikipedia/commons/0/05/Replica_of_Treaty_of_Nanking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A replica of the Treaty of Nanking on display at the Hong Kong Museum of History.* (artefact). Rachel from Los Angeles, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Replica_of_Treaty_of_Nanking.jpg).
+Corroborates: It provides a visual representation of the document that ended the First Opium War and ceded Hong Kong Island to the British.
+
+![A painting showing shipping and trade activity across the Pearl River at Canton around 1849.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Shipping_Off_Canton_RMG_BHC1777.tiff/lossy-page1-960px-Shipping_Off_Canton_RMG_BHC1777.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A painting showing shipping and trade activity across the Pearl River at Canton around 1849.* (artwork). anonymous, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shipping_Off_Canton_RMG_BHC1777.tiff).
+Corroborates: It illustrates one of the five ports, Canton, opened to European traders as a result of the Treaty of Nanking.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

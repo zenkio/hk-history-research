@@ -4,7 +4,7 @@ title_zh: "鴉片貿易合法化"
 date: 1858-06-26
 year: 1858
 era: "The early colony"
-tags: ["1858", "ai-draft", "british-colonialism", "early-colony", "hong-kong-history", "opium-trade", "second-opium-war", "treaty-of-tientsin"]
+tags: ["photo-corroborated", "1858", "ai-draft", "british-colonialism", "early-colony", "hong-kong-history", "opium-trade", "second-opium-war", "treaty-of-tientsin"]
 summary: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
 description: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
 confidence: ai-draft
@@ -44,5 +44,14 @@ The legalization under the Treaty of Tientsin transformed Hong Kong from a contr
 
 - [ ] The exact tariff rates and regulatory mechanisms applied to opium imports under the supplementary agreements of the Treaty of Tientsin
 - [ ] The precise volume of opium passing through Hong Kong financial institutions immediately following the 1858 treaty
+
+## Photos from this period
+
+![An artwork depicting a British steam-powered warship engaging Chinese junk ships during the Opium Wars.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Opium_Wars.jpg/960px-Opium_Wars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*An artwork depicting a British steam-powered warship engaging Chinese junk ships during the Opium Wars.* (artwork). Upendra Bhojani, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Opium_Wars.jpg).
+Corroborates: It illustrates the military conflict and naval superiority used by Britain to force the opening of Chinese markets and the eventual legalization of the opium trade.
+⚠️ Possible conflict: The image metadata refers to the First Opium War (1839–1842), while the legalization event occurred in 1858 following the Second Opium War.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

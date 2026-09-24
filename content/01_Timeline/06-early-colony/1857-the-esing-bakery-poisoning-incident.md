@@ -4,7 +4,7 @@ title_zh: "裕盛餅店落毒案"
 date: 1857-01-15
 year: 1857
 era: "The early colony"
-tags: ["1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
+tags: ["photo-corroborated", "1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
 summary: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 description: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 confidence: ai-draft
@@ -45,5 +45,18 @@ The Esing Bakery incident left a lasting impact on the governance and social fab
 
 - [ ] Exact number of Europeans who consumed the poisoned bread and fell ill on January 15, 1857.
 - [ ] The precise legal arguments and evidence presented during Cheong Ah Lum's trial.
+
+## Photos from this period
+
+![An 1857 illustration from The Illustrated London News depicting an examination related to the Esing Bakery poisoning incident.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Esing_Bakery_Incident_%28examination%29.jpg/960px-Esing_Bakery_Incident_%28examination%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*An 1857 illustration from The Illustrated London News depicting an examination related to the Esing Bakery poisoning incident.* (artwork). Baptista, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esing_Bakery_Incident_(examination).jpg).
+Corroborates: It corroborates the legal proceedings and racial dynamics following the poisoning event in colonial Hong Kong.
+
+![Contemporary illustrations from The Illustrated London News showing the shop of Esing the baker and his examination at the police office in Victoria, Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Esing_Bakery_Incident.jpg/960px-Esing_Bakery_Incident.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Contemporary illustrations from The Illustrated London News showing the shop of Esing the baker and his examination at the police office in Victoria, Hong Kong.* (artwork). Baptista, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esing_Bakery_Incident.jpg).
+Corroborates: It depicts the specific bakery and the legal proceedings related to the poisoning incident mentioned on the page.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

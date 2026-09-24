@@ -4,7 +4,7 @@ title_zh: "香港警隊的建立"
 date: 1844-05-01
 year: 1844
 era: "The early colony"
-tags: ["1840s", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-police-force", "law-and-order"]
+tags: ["photo-corroborated", "1840s", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-police-force", "law-and-order"]
 summary: "In **1844**, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
 description: "In 1844, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
 confidence: ai-draft
@@ -40,5 +40,19 @@ The creation of the police force marked a crucial step in the institutional deve
 
 - [ ] The Hong Kong Police Force was formally established by ordinance on May 1, 1844.
 - [ ] The early force composition included European, Indian, and Chinese officers.
+
+## Photos from this period
+
+![A portrait of William Caine alongside a page from the Hong Kong Gazette dated May 1, 1841.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png/960px-First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A portrait of William Caine alongside a page from the Hong Kong Gazette dated May 1, 1841.* (document). police.gov.hk, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png).
+Corroborates: It identifies William Caine, the first head of the Hong Kong Police Force, and documents his early appointment as Chief Magistrate responsible for law and order.
+⚠️ Possible conflict: The Gazette page is dated 1841, whereas the event page specifies the establishment of the police force in 1844.
+
+![Portrait of William Caine, the first head of the Hong Kong Police Force.](https://upload.wikimedia.org/wikipedia/commons/a/a1/First_Head_of_the_Police_Force_William_Caine_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*Portrait of William Caine, the first head of the Hong Kong Police Force.* (contemporary photo). police.gov.hk, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:First_Head_of_the_Police_Force_William_Caine_(cropped).png).
+Corroborates: It depicts the first individual to lead the newly established force mentioned in the summary.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

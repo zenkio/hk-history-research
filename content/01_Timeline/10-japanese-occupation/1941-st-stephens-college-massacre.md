@@ -4,7 +4,7 @@ title_zh: "聖士提反書院大屠殺"
 date: 1941-12-25
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
+tags: ["photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
 summary: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 description: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 confidence: ai-draft
@@ -42,5 +42,13 @@ The massacre at St. Stephen's College became a powerful symbol of the brutality 
 
 - [ ] The exact number of casualties and fatalities resulting from the bayonet attack at St. Stephen's College on December 25, 1941.
 - [ ] The precise chain of command and unit identities of the Imperial Japanese forces that entered the college premises.
+
+## Photos from this period
+
+![A memorial stone at Stanley Military Cemetery commemorates those who died at St. Stephen's on December 25, 1941.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg/960px-Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A memorial stone at Stanley Military Cemetery commemorates those who died at St. Stephen's on December 25, 1941.* (later photo of the site). Nick-D, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg).
+Corroborates: The inscription on the stone confirms the date and location of the massacre described in the summary.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "南北行公所的崛起"
 date: 1858-01-01
 year: 1858
 era: "The early colony"
-tags: ["1858", "ai-draft", "chinese-merchants", "early-colony", "nam-pak-hong", "trade-history"]
+tags: ["evidence-none", "1858", "ai-draft", "chinese-merchants", "early-colony", "nam-pak-hong", "trade-history"]
 summary: "In **1858**, Chinese merchant syndicates formed the Nam Pak Hong Association to regulate and expand trade between China and Southeast Asia, establishing local mercantile dominance during the early colonial era."
 description: "In 1858, Chinese merchant syndicates formed the Nam Pak Hong Association to regulate and expand trade between China and Southeast Asia, establishing local mercantile dominance during the early colonial era."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The rise of the Nam Pak Hong Association marked a crucial milestone in the econo
 
 - [ ] The Nam Pak Hong Association was formally established or organized in the specific year of 1858.
 - [ ] The association's initial regulatory scope covered both northern mainland trade and southern Nanyang shipping routes.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the founding year of 1858 and the specific trade routes covered by the Nam Pak Hong Association is required.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

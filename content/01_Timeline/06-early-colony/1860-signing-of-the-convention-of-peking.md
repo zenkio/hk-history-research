@@ -4,10 +4,11 @@ title_zh: "北京條約"
 date: 1860-10-24
 year: 1860
 era: "The early colony"
-tags: ["photo-corroborated", "1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
+tags: ["evidence-none", "photo-corroborated", "1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
 summary: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 description: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,6 +50,14 @@ This territorial expansion fundamentally changed the geography and strategic cap
 
 *A section of the Chinese text from the Convention of Peking detailing the cession of Kowloon to Great Britain.* (document). Qing Government, China in conjunction with the Europeans (French, British, Russian) in 1860, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Convention_of_Peking.jpg).
 Corroborates: It provides primary documentary evidence of the formal cession of the Kowloon Peninsula mentioned in the page summary.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 1860 Convention of Peking, such as treaty texts or maps detailing the coordinates and administrative transfer of the Kowloon Peninsula.
 
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

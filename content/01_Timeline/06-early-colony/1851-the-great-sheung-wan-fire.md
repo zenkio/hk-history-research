@@ -4,10 +4,11 @@ title_zh: "上環大火"
 date: 1851-12-28
 year: 1851
 era: "The early colony"
-tags: ["1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
+tags: ["evidence-none", "1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
 summary: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation project."
 description: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ Local communities and colonial administrators viewed the aftermath through diffe
 - [ ] The exact date of the fire was December 28, 1851.
 - [ ] The fire directly prompted the land reclamation project along Bonham Strand.
 - [ ] Hundreds of Chinese homes were destroyed in the blaze.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed for all three claims, as none of the provided sources specifically address the Great Sheung Wan Fire of 1851.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

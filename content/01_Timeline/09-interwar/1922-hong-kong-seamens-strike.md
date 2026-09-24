@@ -4,7 +4,7 @@ title_zh: "香港海員大罷工"
 date: 1922-01-12
 year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1922", "ai-draft", "british-colonial-era", "interwar", "labor-history", "seamens-strike", "trade-unions"]
+tags: ["photo-corroborated", "1922", "ai-draft", "british-colonial-era", "interwar", "labor-history", "seamens-strike", "trade-unions"]
 summary: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant significant wage increases."
 description: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant…"
 confidence: ai-draft
@@ -47,5 +47,18 @@ Modern scholarship frequently views the 1922 strike as a watershed moment in the
 - [ ] Exact number of striking workers reached or exceeded 120,000
 - [ ] Precise casualty figures resulting from the Sha Tin incident on March 4, 1922
 - [ ] Agreed percentage range of wage increases secured in the final settlement
+
+## Photos from this period
+
+![A view of the Hong Kong waterfront during the seamen's strike of 1922.](https://upload.wikimedia.org/wikipedia/commons/0/0d/Hong-kong-1922-strike-over.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A view of the Hong Kong waterfront during the seamen's strike of 1922.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong-kong-1922-strike-over.jpg).
+Corroborates: It corroborates the location and timing of the maritime and allied workers' strike.
+
+![A group photograph of strikers from the Hong Kong Seamen's Union in 1922.](https://upload.wikimedia.org/wikipedia/commons/1/15/1922_Seamen_Strike.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A group photograph of strikers from the Hong Kong Seamen's Union in 1922.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1922_Seamen_Strike.png).
+Corroborates: It provides a visual record of the workers who participated in the massive 1922 strike.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

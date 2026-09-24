@@ -4,10 +4,11 @@ title_zh: "中外雙語經典翻譯之始"
 date: 1853-01-01
 year: 1853
 era: "The early colony"
-tags: ["1853", "ai-draft", "bilingual-translation", "confucian-classics", "early-colony", "james-legge", "sinology"]
+tags: ["evidence-none", "1853", "ai-draft", "bilingual-translation", "confucian-classics", "early-colony", "james-legge", "sinology"]
 summary: "In **1853**, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
 description: "In 1853, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ Legge’s translation project laid foundational groundwork for modern sinology a
 
 - [ ] James Legge began publishing his core translations of the Chinese classics around 1853.
 - [ ] Wang Tao collaborated closely with James Legge on these translation and publishing efforts.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed for both claims, specifically sources discussing James Legge's translations of Chinese classics starting in 1853 and his collaboration with Wang Tao.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

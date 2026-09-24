@@ -4,10 +4,11 @@ title_zh: "1874年甲戌風災"
 date: 1874-09-22
 year: 1874
 era: "Kowloon and the Victorian colony"
-tags: ["photo-corroborated", "1874", "ai-draft", "colonial-era", "great-typhoon", "maritime-history", "meteorology", "victoria-harbour", "victorian-colony"]
+tags: ["evidence-a", "photo-corroborated", "1874", "ai-draft", "colonial-era", "great-typhoon", "maritime-history", "meteorology", "victoria-harbour", "victorian-colony"]
 summary: "On September 22, 1874, a devastating typhoon struck Hong Kong, destroying the harbor and coastal communities, resulting in thousands of fatalities, and prompting significant reforms in maritime safety and weather forecasting."
 description: "On September 22, 1874, a devastating typhoon struck Hong Kong, destroying the harbor and coastal communities, resulting in thousands of fatalities, and prompting significant reforms in maritime safety and weather…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -61,6 +62,27 @@ Corroborates: It provides visual evidence of the devastating destruction caused 
 
 *A photograph of a severely damaged building in the aftermath of the Great Typhoon of 1874.* (contemporary photo). Lai Afong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lai_Afong_1874_Hong_Kong_Typhoon_4.jpg).
 Corroborates: It provides visual evidence of the devastation caused by the storm in Hong Kong.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), CO 1069/445, 1874. HONG KONG 2. Hong Kong and Macao: the typhoon of 22 September 1874.](https://discovery.nationalarchives.gov.uk/details/r/C11443691) (claims 1): An official colonial archive record regarding the September 1874 typhoon.
+- [*Hong Kong Daily Press 1874-09-28* (1874), Internet Archive.](https://archive.org/details/NPDP18740928) (claims 1): Contemporary news reporting on the typhoon's wreckage and aftermath.
+- [*Hong Kong Daily Press 1874-10-02* (1874), Internet Archive.](https://archive.org/details/NPDP18741002) (claims 1, 2): Contemporary reporting on the government's response to the typhoon.
+- [*Hong Kong Daily Press 1874-11-13* (1874), Internet Archive.](https://archive.org/details/NPDP18741113) (claims 1): Contemporary news coverage regarding the effects of the typhoon.
+
+### Scholarship (grade B)
+
+- [Fiona Williamson (2017). *Uncertain Skies. Forecasting Typhoons in Hong Kong, ca. 1874-1906*. Singapore Management University Institutional Knowledge (InK) (Singapore Management University).](https://doi.org/10.1408/90449) (claims 2): Covers typhoon forecasting in Hong Kong from 1874 to 1906.
+- [Hing Yim Mok, Wing Hong Lui, Dick Shum Lau (2020). *Reconstruction of the track and a simulation of the storm surge associated with the calamitous typhoon affecting the Pearl River Estuary in September 1874*. Climate of the past.](https://doi.org/10.5194/cp-16-51-2020) (claims 1): Discusses the 1874 typhoon and casualties in the Pearl River Estuary.
+- [Hing Yim Mok, Wing Hong Lui, Dick Shum Lau (2019). *Reconstruction of track and simulation of storm surge associated with the calamitous typhoon affecting the Pearl River Estuary in September 1874*.](https://doi.org/10.5194/cp-2019-36) (claims 1): Discusses the 1874 typhoon and casualties in the Pearl River Estuary.
+
+**Still needed:** Specific colonial police and medical reports from September and October 1874 are needed to verify exact death toll estimates.
 
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,10 +4,11 @@ title_zh: "薄扶林水塘完工"
 date: 1863-01-01
 year: 1863
 era: "Kowloon and the Victorian colony"
-tags: ["1863", "19th-century", "ai-draft", "colonial-history", "infrastructure", "pok-fu-lam-reservoir", "public-health", "victorian-colony", "water-supply"]
+tags: ["evidence-b", "1863", "19th-century", "ai-draft", "colonial-history", "infrastructure", "pok-fu-lam-reservoir", "public-health", "victorian-colony", "water-supply"]
 summary: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
 description: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,17 @@ The completion of the **Pok Fu Lam Reservoir** (薄扶林水塘) fundamentally t
 
 - [ ] Whether the reservoir was fully operational by the exact year 1863 or if that date marks the completion of the primary dam structure.
 - [ ] The specific engineering firms and colonial officials directly responsible for the construction oversight.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Deying Tang (2023). *5. Local Reservoirs and Chinese Aqueducts: The Politics of Water Security in Hong Kong*. University of Hawaii Press eBooks.](https://doi.org/10.1515/9780824894375-007) (claims 1, 2): The title explicitly mentions local reservoirs and the politics of water security in Hong Kong.
+
+**Still needed:** Specific details confirming if 1863 refers to full operation or dam completion, and the names of the engineering firms and officials involved.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

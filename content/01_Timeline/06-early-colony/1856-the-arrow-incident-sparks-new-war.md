@@ -4,10 +4,11 @@ title_zh: "亞羅號事件引發新戰爭"
 date: 1856-10-08
 year: 1856
 era: "The early colony"
-tags: ["1856", "ai-draft", "arrow-incident", "british-colony", "early-colony", "foreign-relations", "qing-dynasty", "second-opium-war"]
+tags: ["evidence-none", "1856", "ai-draft", "arrow-incident", "british-colony", "early-colony", "foreign-relations", "qing-dynasty", "second-opium-war"]
 summary: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and trade of the young Hong Kong colony."
 description: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -48,5 +49,13 @@ The incident provided the pretext that British authorities, led by **Sir John Bo
 
 - [ ] Whether the Arrow's colonial registration had legally expired at the time of the seizure
 - [ ] Whether the British flag was actually flying on the vessel when Qing authorities boarded it
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** All evidence regarding the Arrow's colonial registration and the status of the British flag during the 1856 incident is still needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

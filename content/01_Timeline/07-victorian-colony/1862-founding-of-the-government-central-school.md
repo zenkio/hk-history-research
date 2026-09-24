@@ -4,10 +4,11 @@ title_zh: "中央書院創立"
 date: 1862-02-15
 year: 1862
 era: "Kowloon and the Victorian colony"
-tags: ["1862", "ai-draft", "colonial-education", "frederick-stewart", "government-central-school", "queens-college", "victorian-colony", "victorian-hong-kong"]
+tags: ["evidence-none", "1862", "ai-draft", "colonial-education", "frederick-stewart", "government-central-school", "queens-college", "victorian-colony", "victorian-hong-kong"]
 summary: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
 description: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ The establishment of the Government Central School marked a pivotal turning poin
 - [ ] The Government Central School officially opened on February 15, 1862.
 - [ ] Frederick Stewart served as the first headmaster of the Government Central School.
 - [ ] The institution was renamed Queen's College in 1894.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the opening date, the identity of the first headmaster, and the renaming of the institution.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

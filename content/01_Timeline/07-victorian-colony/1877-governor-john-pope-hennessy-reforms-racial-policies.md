@@ -4,10 +4,11 @@ title_zh: "軒尼詩總督改革種族政策"
 date: 1877-01-01
 year: 1877
 era: "Kowloon and the Victorian colony"
-tags: ["1877", "ai-draft", "colonial-history", "john-pope-hennessy", "property-rights", "racial-policy", "victorian-colony", "victorian-hong-kong"]
+tags: ["evidence-b", "1877", "ai-draft", "colonial-history", "john-pope-hennessy", "property-rights", "racial-policy", "victorian-colony", "victorian-hong-kong"]
 summary: "In 1877, Governor John Pope Hennessy introduced progressive reforms in Hong Kong that dismantled discriminatory colonial laws, allowing Chinese residents to purchase property in Central and naturalize as British subjects."
 description: "In 1877, Governor John Pope Hennessy introduced progressive reforms in Hong Kong that dismantled discriminatory colonial laws, allowing Chinese residents to purchase property in Central and naturalize as British…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,17 @@ In **1877**, **John Pope Hennessy** (軒尼詩) assumed office as the 8th Govern
 - [ ] John Pope Hennessy assumed office as Governor of Hong Kong in 1877.
 - [ ] Hennessy permitted Chinese residents to purchase property in Central.
 - [ ] Ng Choy was appointed as the first Chinese member of the Legislative Council during or closely following this era.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Cecilia L. Chu (2012). *Speculative Modern: Urban Forms and the Politics of Property in Colonial Hong Kong*. eScholarship (California Digital Library).](https://openalex.org/W2203730128) (claims 2): The source discusses the politics of property development in Hong Kong starting from the 1870s.
+
+**Still needed:** Evidence is needed to confirm Hennessy's exact start date, his specific role in permitting property purchases in Central, and the appointment of Ng Choy to the Legislative Council.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

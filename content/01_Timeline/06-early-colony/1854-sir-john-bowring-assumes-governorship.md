@@ -4,10 +4,11 @@ title_zh: "寶寧爵士就任總督"
 date: 1854-04-13
 year: 1854
 era: "The early colony"
-tags: ["1854", "ai-draft", "colonial-governance", "early-colony", "free-trade", "governor-bowring"]
+tags: ["evidence-none", "1854", "ai-draft", "colonial-governance", "early-colony", "free-trade", "governor-bowring"]
 summary: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
 description: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ Bowring's governorship marked a philosophical shift in early British administrat
 
 - [ ] Sir John Bowring officially assumed the governorship of Hong Kong on April 13, 1854.
 - [ ] Bowring advocated for the political representation of Chinese residents during his administration.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the date Sir John Bowring assumed the governorship and his advocacy for Chinese political representation is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

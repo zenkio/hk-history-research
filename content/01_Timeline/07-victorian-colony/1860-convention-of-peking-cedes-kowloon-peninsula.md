@@ -4,10 +4,11 @@ title_zh: "北京條約割讓九龍半島"
 date: 1860-10-24
 year: 1860
 era: "Kowloon and the Victorian colony"
-tags: ["1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
+tags: ["evidence-none", "1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
 summary: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical footprint of the fledgling Hong Kong colony."
 description: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ This territorial expansion marked the second major phase in the creation of mode
 
 - [ ] Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?
 - [ ] Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the terms of the Convention of Peking (1860), the specific boundary of Kowloon, and the military occupation status of Kowloon prior to the treaty is required.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

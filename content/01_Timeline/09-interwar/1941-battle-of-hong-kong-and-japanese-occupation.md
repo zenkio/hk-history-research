@@ -4,7 +4,7 @@ title_zh: "香港保衛戰與日佔時期"
 date: 1941-12-08
 year: 1941
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "interwar", "japanese-occupation", "pacific-war", "world-war-ii"]
+tags: ["photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "interwar", "japanese-occupation", "pacific-war", "world-war-ii"]
 summary: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
 description: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
 confidence: ai-draft
@@ -45,5 +45,28 @@ The fall of Hong Kong shattered British imperial prestige in Asia and subjected 
 
 - [ ] Exact troop numbers and casualty figures for both Allied defenders and Japanese attackers during the December 1941 campaign.
 - [ ] The precise timeline of water supply disruption on Hong Kong Island during the siege.
+
+## Photos from this period
+
+![Japanese troops are seen from behind, facing a decorated stage during a celebration at the Hong Kong Cricket Club in 1942.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Japanese_troops_celebrating_occupation_of_Hong_Kong_Anniversaries_in_1942.jpg/960px-Japanese_troops_celebrating_occupation_of_Hong_Kong_Anniversaries_in_1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Japanese troops are seen from behind, facing a decorated stage during a celebration at the Hong Kong Cricket Club in 1942.* (contemporary photo). Unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Japanese_troops_celebrating_occupation_of_Hong_Kong_Anniversaries_in_1942.jpg).
+Corroborates: The image illustrates the presence and activities of the Japanese forces during the occupation of Hong Kong.
+
+![Japanese soldiers at the Lo Wu Bridge on the Guangdong-Hong Kong border during a blockade in late 1938.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/1938_Japanese_at_Lo_Wu_Bridge%2C_Guangdong-Hong_Kong_border.jpg/960px-1938_Japanese_at_Lo_Wu_Bridge%2C_Guangdong-Hong_Kong_border.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Japanese soldiers at the Lo Wu Bridge on the Guangdong-Hong Kong border during a blockade in late 1938.* (contemporary photo). uncredited, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1938_Japanese_at_Lo_Wu_Bridge,_Guangdong-Hong_Kong_border.jpg).
+Corroborates: It provides historical context by showing Japanese military actions intended to isolate Hong Kong shortly before the 1941 invasion.
+
+![Two Japanese Type 94 tankettes drive through a street on Hong Kong Island during the Japanese occupation.](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Two_Japanese_Type_94_tankettes_were_running_on_a_street_in_Hong_Kong_Island.jpg/960px-Two_Japanese_Type_94_tankettes_were_running_on_a_street_in_Hong_Kong_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Two Japanese Type 94 tankettes drive through a street on Hong Kong Island during the Japanese occupation.* (contemporary photo). Unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Two_Japanese_Type_94_tankettes_were_running_on_a_street_in_Hong_Kong_Island.jpg).
+Corroborates: It visually demonstrates the presence of Japanese military vehicles in Hong Kong following the occupation.
+
+![Military personnel are pictured in a courtroom during the Hong Kong War Crimes Trial.](https://upload.wikimedia.org/wikipedia/commons/4/4f/Hong_Kong_War_Crimes_Trial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*Military personnel are pictured in a courtroom during the Hong Kong War Crimes Trial.* (contemporary photo). unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_War_Crimes_Trial.jpg).
+Corroborates: It illustrates the legal aftermath of the Japanese occupation and the battle for Hong Kong.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

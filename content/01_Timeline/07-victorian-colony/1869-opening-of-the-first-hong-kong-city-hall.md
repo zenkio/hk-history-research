@@ -4,10 +4,11 @@ title_zh: "第一代香港大會堂落成"
 date: 1869-11-02
 year: 1869
 era: "Kowloon and the Victorian colony"
-tags: ["1869", "ai-draft", "city-hall", "civic-culture", "colonial-history", "victorian-colony", "victorian-hong-kong"]
+tags: ["evidence-none", "1869", "ai-draft", "city-hall", "civic-culture", "colonial-history", "victorian-colony", "victorian-hong-kong"]
 summary: "On November 2, 1869, the First Hong Kong City Hall was officially opened, providing a civic complex funded by public subscription that included a library, theater, and museum."
 description: "On November 2, 1869, the First Hong Kong City Hall was officially opened, providing a civic complex funded by public subscription that included a library, theater, and museum."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ While the City Hall was hailed as a major milestone in the development of Hong K
 - [ ] The exact opening date of the First Hong Kong City Hall was November 2, 1869.
 - [ ] Sir Richard Graves MacDonnell officially opened the complex.
 - [ ] The funding structure relied heavily on public subscription.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the specific opening date, the person who performed the opening ceremony, and the details of the funding structure.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

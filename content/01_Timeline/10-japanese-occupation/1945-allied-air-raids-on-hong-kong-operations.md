@@ -4,7 +4,7 @@ title_zh: "盟軍空襲香港行動"
 date: 1945-01-16
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
+tags: ["photo-corroborated", "1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
 summary: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 description: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 confidence: ai-draft
@@ -41,5 +41,14 @@ The air raids marked a turning point in the physical devastation experienced by 
 
 - [ ] Exact participation and composition of U.S. Navy Task Force 38 units involved on January 16, 1945
 - [ ] Precise tonnage of bombs dropped and total civilian casualty estimates resulting specifically from the January 16 raids
+
+## Photos from this period
+
+![An annotated aerial view of Hong Kong Harbor showing smoke from the Kowloon Docks and burning vessels during a US air raid in October 1944.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1%2C_annotated.jpg/960px-1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1%2C_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*An annotated aerial view of Hong Kong Harbor showing smoke from the Kowloon Docks and burning vessels during a US air raid in October 1944.* (contemporary photo). FDR Presidential Library &amp; Museum, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1,_annotated.jpg).
+Corroborates: It provides visual context for the type of aerial warfare conducted by Allied forces against Japanese-occupied Hong Kong.
+⚠️ Possible conflict: The photograph depicts a raid from October 16, 1944, rather than the January 16, 1945, raid described on the page.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

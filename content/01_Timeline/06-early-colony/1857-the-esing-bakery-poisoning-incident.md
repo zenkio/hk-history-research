@@ -4,10 +4,11 @@ title_zh: "裕盛餅店落毒案"
 date: 1857-01-15
 year: 1857
 era: "The early colony"
-tags: ["photo-corroborated", "1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
+tags: ["evidence-b", "photo-corroborated", "1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
 summary: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 description: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -57,6 +58,18 @@ Corroborates: It corroborates the legal proceedings and racial dynamics followin
 
 *Contemporary illustrations from The Illustrated London News showing the shop of Esing the baker and his examination at the police office in Victoria, Hong Kong.* (artwork). Baptista, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esing_Bakery_Incident.jpg).
 Corroborates: It depicts the specific bakery and the legal proceedings related to the poisoning incident mentioned on the page.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [JASON KAI WEI LEE (2021). *Poisoned Bread: The Esing Bakery incident of 1857 and racism in colonial Hong Kong*. Armstrong Undergraduate Journal of History.](https://doi.org/10.20429/aujh.2021.110202) (claims 1, 2): Discusses the scale of the poisoning event and the trial of the bakery owner, Cheong Alum.
+- [Thomas Larkin (2023). *“A Life of Suspicion and Distrust”*. Pacific Historical Review.](https://doi.org/10.1525/phr.2023.92.2.135) (claims 1): Describes the January 15 poisoning event and its impact on the Western community.
+- [Thomas Larkin (2021). *"A Life of Suspicion and Distrust": Race, Sino-American Relations, and the 1857 Poison Panic in Hong Kong*. Bristol Research (University of Bristol).](https://doi.org/10.1525/phr.2023.92.2.135) (claims 1): Describes the January 15 poisoning event and its impact on the Western community.
 
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

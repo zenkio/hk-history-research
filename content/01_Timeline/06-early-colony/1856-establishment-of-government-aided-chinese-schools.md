@@ -4,10 +4,11 @@ title_zh: "資助華文中學的建立"
 date: 1856-01-01
 year: 1856
 era: "The early colony"
-tags: ["1856", "ai-draft", "bilingual-education", "colonial-policy", "early-colony", "education-history", "hong-kong-history"]
+tags: ["evidence-none", "1856", "ai-draft", "bilingual-education", "colonial-policy", "early-colony", "education-history", "hong-kong-history"]
 summary: "In **1856**, the early British colonial administration in Hong Kong began providing financial support to local Chinese schools, marking the beginning of state-supported education for the Chinese population."
 description: "In 1856, the early British colonial administration in Hong Kong began providing financial support to local Chinese schools, marking the beginning of state-supported education for the Chinese population."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The events of **1856** represent a critical turning point in the history of Hong
 
 - [ ] The colonial government formally initiated financial grants to Chinese schools specifically in the year 1856.
 - [ ] The scope and administrative mechanism of the 1856 school funding policy.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the 1856 initiation of government grants to Chinese schools and the specifics of the funding policy's administrative mechanism is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

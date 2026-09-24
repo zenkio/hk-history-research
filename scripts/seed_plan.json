@@ -78,7 +78,7 @@
     "16-national-security-era": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     }
   },
   "events": [
@@ -9486,6 +9486,96 @@
       "summary": "Grassroots tenant protests against soaring public housing rents highlighted widening social inequality and fueled active civic engagement in urban governance.",
       "status": "done",
       "file": "13-transition/1993-the-launch-of-the-imelda-marcos-public-housing-scandal-protests.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Launch of the Happy Hong Kong Campaign to Boost Local Consumption",
+      "year": 2023,
+      "date": "2023-04-25",
+      "summary": "The government launched a series of weekend bazaars and gourmet marketplaces to stimulate domestic spending and revive post-pandemic retail spirits.",
+      "status": "done",
+      "file": "16-national-security-era/2023-launch-of-the-happy-hong-kong-campaign-to-boost-local-consumption.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Establishment of the Office of the Director for National Security",
+      "year": 2020,
+      "date": "2020-07-08",
+      "summary": "Beijing officially inaugurated its primary intelligence and enforcement agency on Hong Kong soil, marking a foundational shift in the city's governance architecture.",
+      "status": "done",
+      "file": "16-national-security-era/2020-establishment-of-the-office-of-the-director-for-national-security.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Launch of the Greater Bay Area Youth Employment Scheme",
+      "year": 2021,
+      "date": "2021-01-08",
+      "summary": "The government subsidized Hong Kong university graduates to work in mainland tech hubs, accelerating integration into the regional economy.",
+      "status": "done",
+      "file": "16-national-security-era/2021-launch-of-the-greater-bay-area-youth-employment-scheme.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Revamping of Public Broadcasting Guidelines for RTHK",
+      "year": 2021,
+      "date": "2021-05-19",
+      "summary": "Radio Television Hong Kong introduced rigorous editorial accountability and cancelled satirical programs, altering the landscape of public service media.",
+      "status": "done",
+      "file": "16-national-security-era/2021-revamping-of-public-broadcasting-guidelines-for-rthk.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Phased Implementation of the Municipal Solid Waste Charging Proposal",
+      "year": 2023,
+      "date": "2023-07-13",
+      "summary": "The Legislative Council passed delayed legislation requiring designated garbage bags, prompting widespread public debate on urban sustainability and civic habits.",
+      "status": "done",
+      "file": "16-national-security-era/2023-phased-implementation-of-the-municipal-solid-waste-charging-proposal.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Opening of the Central Government Offices at the Former Metropark Hotel",
+      "year": 2021,
+      "date": "2021-02-28",
+      "summary": "The mainland's national security apparatus permanently converted a commercial hotel into its fortified headquarters, visibly altering the urban fabric of Causeway Bay.",
+      "status": "done",
+      "file": "16-national-security-era/2021-opening-of-the-central-government-offices-at-the-former-metropark-hote.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Launch of the 'Hello Hong Kong' Global Advertising Blitz",
+      "year": 2023,
+      "date": "2023-02-02",
+      "summary": "Authorities distributed 500,000 free airline tickets worldwide to restore international confidence and revive the city's tourism-dependent economy.",
+      "status": "done",
+      "file": "16-national-security-era/2023-launch-of-the-hello-hong-kong-global-advertising-blitz.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Revision of Liberal Studies Textbook Content to Emphasize National Identity",
+      "year": 2021,
+      "date": "2021-06-10",
+      "summary": "Publishers censored critical political topics in school textbooks to align with revamped civic education guidelines mandated by Beijing.",
+      "status": "done",
+      "file": "16-national-security-era/2021-revision-of-liberal-studies-textbook-content-to-emphasize-national-ide.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Introduction of the Digital RMB Pilot Testing in Hong Kong",
+      "year": 2020,
+      "date": "2020-12-04",
+      "summary": "The Hong Kong Monetary Authority began cross-border trials of China's sovereign digital currency, integrating the city into the mainland's financial fintech networks.",
+      "status": "done",
+      "file": "16-national-security-era/2020-introduction-of-the-digital-rmb-pilot-testing-in-hong-kong.md"
+    },
+    {
+      "era": "16-national-security-era",
+      "title": "Relocation of Major Foreign Chambers and Expatriate Staff",
+      "year": 2022,
+      "date": "2022-03-15",
+      "summary": "Stricter pandemic controls and geopolitical shifts prompted a steady outflow of multinational companies and foreign nationals, reshaping the international business community.",
+      "status": "done",
+      "file": "16-national-security-era/2022-relocation-of-major-foreign-chambers-and-expatriate-staff.md"
     }
   ],
   "entities": {
@@ -9552,7 +9642,8 @@
         "Regulation of the Tanka Boat Migration",
         "The Expansion of the Hakka Terraced Farming System",
         "Enactment of the Female Domestic Service Ordinance Amendment",
-        "Operation of Repatriation Vessels to Mainland China"
+        "Operation of Repatriation Vessels to Mainland China",
+        "Launch of the Greater Bay Area Youth Employment Scheme"
       ],
       "status": "done",
       "file": "Places/guangdong.md"
@@ -10188,7 +10279,16 @@
         "The Premiere of Stanley Kwan's Center Stage",
         "Establishment of the University Grants Committee Sector Expansion",
         "The First International Film Festival Awards in Hong Kong",
-        "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests"
+        "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests",
+        "Launch of the Happy Hong Kong Campaign to Boost Local Consumption",
+        "Establishment of the Office of the Director for National Security",
+        "Launch of the Greater Bay Area Youth Employment Scheme",
+        "Revamping of Public Broadcasting Guidelines for RTHK",
+        "Phased Implementation of the Municipal Solid Waste Charging Proposal",
+        "Launch of the 'Hello Hong Kong' Global Advertising Blitz",
+        "Revision of Liberal Studies Textbook Content to Emphasize National Identity",
+        "Introduction of the Digital RMB Pilot Testing in Hong Kong",
+        "Relocation of Major Foreign Chambers and Expatriate Staff"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -11987,7 +12087,8 @@
         "Completion of the Lok Ma Chau Spur Line",
         "Northern Metropolis Development Strategy Announced",
         "The Rise of the Northbound Consumption Trend",
-        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy",
+        "Launch of the Greater Bay Area Youth Employment Scheme"
       ],
       "status": "done",
       "file": "Places/shenzhen.md"
@@ -15116,7 +15217,8 @@
         "First 'July 1st' Rally Mass Mobilization",
         "Closure of the 64 Museum",
         "Opening of the Hong Kong Central Library",
-        "Opening of Victoria Park in Causeway Bay"
+        "Opening of Victoria Park in Causeway Bay",
+        "Opening of the Central Government Offices at the Former Metropark Hotel"
       ],
       "status": "done",
       "file": "Places/victoria-park.md"
@@ -15484,7 +15586,8 @@
         "The Emergence of 'Red Chip' Investment Fever",
         "Hong Kong's 2006 Population Census Reveals Demographic Shifts",
         "HKD-RMB Dual Counter Financial Model Launched",
-        "Enactment of the Emergency (Principal) Regulations Amendment"
+        "Enactment of the Emergency (Principal) Regulations Amendment",
+        "Introduction of the Digital RMB Pilot Testing in Hong Kong"
       ],
       "status": "done",
       "file": "Places/mainland-china.md"
@@ -15524,7 +15627,9 @@
         "Establishment of the Liaison Office National Security Department",
         "Opening of the Royal Hong Kong Yacht Club at Kellett Island",
         "Opening of the Hong Kong Central Library",
-        "Opening of Victoria Park in Causeway Bay"
+        "Opening of Victoria Park in Causeway Bay",
+        "Establishment of the Office of the Director for National Security",
+        "Opening of the Central Government Offices at the Former Metropark Hotel"
       ],
       "status": "done",
       "file": "Places/causeway-bay.md"
@@ -15570,7 +15675,8 @@
       "name": "Hong Kong Convention and Exhibition Centre (香港會議展覽中心)",
       "kind": "place",
       "mentions": [
-        "WTO Ministerial Conference Protests"
+        "WTO Ministerial Conference Protests",
+        "Launch of the 'Hello Hong Kong' Global Advertising Blitz"
       ],
       "status": "done",
       "file": "Places/hong-kong-convention-and-exhibition-centre.md"
@@ -15863,7 +15969,8 @@
         "Establishment of the Liaison Office National Security Department",
         "The First All-Patriots Legislative Council Election",
         "Northern Metropolis Development Strategy Announced",
-        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy",
+        "Establishment of the Office of the Director for National Security"
       ],
       "status": "done",
       "file": "People/carrie-lam.md"
@@ -16063,7 +16170,8 @@
         "Implementation of the New District Council 'Three Committees'",
         "Light Public Housing Scheme Launched",
         "Launch of Importation of Labor Schemes",
-        "Indefinite Postponement of Municipal Waste Charging Scheme"
+        "Indefinite Postponement of Municipal Waste Charging Scheme",
+        "Launch of the 'Hello Hong Kong' Global Advertising Blitz"
       ],
       "status": "done",
       "file": "People/john-lee.md"
@@ -18419,7 +18527,8 @@
       "kind": "person",
       "mentions": [
         "Establishment of the Office for Safeguarding National Security",
-        "Establishment of the Liaison Office National Security Department"
+        "Establishment of the Liaison Office National Security Department",
+        "Establishment of the Office of the Director for National Security"
       ],
       "status": "done",
       "file": "People/zheng-yanxiong.md"
@@ -20044,7 +20153,8 @@
       "name": "Tokyo (東京)",
       "kind": "place",
       "mentions": [
-        "Edgar Cheung Ka-long Wins Olympic Fencing Gold"
+        "Edgar Cheung Ka-long Wins Olympic Fencing Gold",
+        "Relocation of Major Foreign Chambers and Expatriate Staff"
       ],
       "status": "done",
       "file": "Places/tokyo.md"
@@ -20313,7 +20423,8 @@
       "name": "Singapore (新加坡)",
       "kind": "place",
       "mentions": [
-        "Arrival of the First Submarine Telegraph Cable"
+        "Arrival of the First Submarine Telegraph Cable",
+        "Relocation of Major Foreign Chambers and Expatriate Staff"
       ],
       "status": "done",
       "file": "Places/singapore.md"
@@ -20442,7 +20553,8 @@
       "mentions": [
         "The Premiere of Stanley Kwan's Center Stage"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/stanley-kwan.md"
     },
     "person:ruan-lingyu": {
       "name": "Ruan Lingyu (阮玲玉)",
@@ -20450,7 +20562,8 @@
       "mentions": [
         "The Premiere of Stanley Kwan's Center Stage"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/ruan-lingyu.md"
     },
     "place:berlin": {
       "name": "Berlin (柏林)",
@@ -20458,7 +20571,8 @@
       "mentions": [
         "The Premiere of Stanley Kwan's Center Stage"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/berlin.md"
     },
     "place:hong-kong-museum-of-science": {
       "name": "Hong Kong Museum of Science (香港科學館)",
@@ -20466,7 +20580,8 @@
       "mentions": [
         "Opening of the Hong Kong Museum of Science"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/hong-kong-museum-of-science.md"
     },
     "place:tsim-sha-tsui-east": {
       "name": "Tsim Sha Tsui East (尖沙咀東)",
@@ -20474,7 +20589,8 @@
       "mentions": [
         "Opening of the Hong Kong Museum of Science"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/tsim-sha-tsui-east.md"
     },
     "person:imelda-marcos": {
       "name": "Imelda Marcos",
@@ -20482,7 +20598,62 @@
       "mentions": [
         "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/imelda-marcos.md"
+    },
+    "person:paul-chan": {
+      "name": "Paul Chan (陳茂波)",
+      "kind": "person",
+      "mentions": [
+        "Launch of the Happy Hong Kong Campaign to Boost Local Consumption"
+      ],
+      "status": "done",
+      "file": "People/paul-chan.md"
+    },
+    "person:luo-huining": {
+      "name": "Luo Huining (駱惠寧)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Office of the Director for National Security"
+      ],
+      "status": "done",
+      "file": "People/luo-huining.md"
+    },
+    "person:patrick-li": {
+      "name": "Patrick Li (李百全)",
+      "kind": "person",
+      "mentions": [
+        "Revamping of Public Broadcasting Guidelines for RTHK"
+      ],
+      "status": "done",
+      "file": "People/patrick-li.md"
+    },
+    "place:causeway-road": {
+      "name": "Causeway Road (高士威道)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Central Government Offices at the Former Metropark Hotel"
+      ],
+      "status": "done",
+      "file": "Places/causeway-road.md"
+    },
+    "person:eddie-yue": {
+      "name": "Eddie Yue (余偉文)",
+      "kind": "person",
+      "mentions": [
+        "Introduction of the Digital RMB Pilot Testing in Hong Kong"
+      ],
+      "status": "done",
+      "file": "People/eddie-yue.md"
+    },
+    "place:guangdong-hong-kong-macao-greater-bay-area": {
+      "name": "Guangdong-Hong Kong-Macao Greater Bay Area (粵港澳大灣區)",
+      "kind": "place",
+      "mentions": [
+        "Relocation of Major Foreign Chambers and Expatriate Staff"
+      ],
+      "status": "done",
+      "file": "Places/guangdong-hong-kong-macao-greater-bay-area.md"
     }
   }
 }

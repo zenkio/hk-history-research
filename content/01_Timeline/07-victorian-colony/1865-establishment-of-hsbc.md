@@ -4,10 +4,11 @@ title_zh: "香港上海匯豐銀行之創立"
 date: 1865-03-03
 year: 1865
 era: "Kowloon and the Victorian colony"
-tags: ["1865", "ai-draft", "banking", "colonial-economy", "hsbc", "trade", "victorian-colony"]
+tags: ["evidence-none", "1865", "ai-draft", "banking", "colonial-economy", "hsbc", "trade", "victorian-colony"]
 summary: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
 description: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The creation of the bank marked a pivotal transition in the economic history of 
 
 - [ ] The exact date of commencement of operations on March 3, 1865
 - [ ] The specific composition and nationalities of the founding committee members
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the specific commencement date in 1865 and details regarding the founding committee's composition and nationalities is needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

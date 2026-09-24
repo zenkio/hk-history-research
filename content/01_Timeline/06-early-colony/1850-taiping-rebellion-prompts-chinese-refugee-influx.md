@@ -4,10 +4,11 @@ title_zh: "太平天國促使華人難民湧入"
 date: 1850-01-01
 year: 1850
 era: "The early colony"
-tags: ["1850", "ai-draft", "demographics", "early-colony", "migration", "refugee-influx", "taiping-rebellion"]
+tags: ["evidence-none", "1850", "ai-draft", "demographics", "early-colony", "migration", "refugee-influx", "taiping-rebellion"]
 summary: "The outbreak of the Taiping Rebellion in **1850** triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
 description: "The outbreak of the Taiping Rebellion in 1850 triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ This large-scale migration fundamentally reshaped Hong Kong's identity from a sm
 
 - [ ] Exact population growth statistics for Hong Kong between 1850 and 1860 resulting from the Taiping Rebellion
 - [ ] Specific regulations enacted by the colonial government to manage the influx of mainland refugees in the 1850s
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed for both the population growth statistics of Hong Kong (1850-1860) and the specific colonial regulations used to manage Taiping Rebellion refugees.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

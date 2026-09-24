@@ -4,7 +4,7 @@ title_zh: "一九三七年香港大風災"
 date: 1937-09-02
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1937", "ai-draft", "great-typhoon", "interwar", "maritime-history", "meteorology", "natural-disaster"]
+tags: ["photo-corroborated", "1937", "ai-draft", "great-typhoon", "interwar", "maritime-history", "meteorology", "natural-disaster"]
 summary: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
 description: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
 confidence: ai-draft
@@ -44,5 +44,28 @@ The disaster remains one of the deadliest natural calamities in Hong Kong's hist
 
 - [ ] The official colonial death toll of approximately 11,000 fatalities
 - [ ] The exact meteorological readings and warning signals issued by the Royal Observatory on September 2, 1937
+
+## Photos from this period
+
+![A hand-drawn surface weather analysis map showing a low-pressure system near Hong Kong on September 1, 1937.](https://upload.wikimedia.org/wikipedia/commons/4/46/1937_Hong_Kong_typhoon_analysis_1_Sept.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A hand-drawn surface weather analysis map showing a low-pressure system near Hong Kong on September 1, 1937.* (map). NOAA Central Library, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1937_Hong_Kong_typhoon_analysis_1_Sept.png).
+Corroborates: It corroborates the presence of a significant typhoon approaching Hong Kong just before the catastrophic storm struck on September 2.
+
+![A historical poster documenting the meteorological data, vessel losses, and geographical impact of the Great Typhoon of September 2, 1937, in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/1937_great_typhoon_of_hong_kong_poster.jpg/960px-1937_great_typhoon_of_hong_kong_poster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A historical poster documenting the meteorological data, vessel losses, and geographical impact of the Great Typhoon of September 2, 1937, in Hong Kong.* (document). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1937_great_typhoon_of_hong_kong_poster.jpg).
+Corroborates: It directly corroborates the event's date, the scale of maritime loss, and the widespread damage to the Hong Kong colony.
+
+![A street in Hong Kong is heavily flooded, with people and vintage cars navigating the water.](https://upload.wikimedia.org/wikipedia/commons/e/e5/Destruction_of_the_Great_Typhoon_of_1937_in_Hong_Kong_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A street in Hong Kong is heavily flooded, with people and vintage cars navigating the water.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Destruction_of_the_Great_Typhoon_of_1937_in_Hong_Kong_(3).png).
+Corroborates: The image illustrates the severe flooding in the city caused by the Great Typhoon of 1937.
+
+![A damaged wooden vessel with Chinese characters on its hull sits partially submerged or grounded near a dilapidated building.](https://upload.wikimedia.org/wikipedia/commons/d/dd/Destruction_of_the_Great_Typhoon_of_1937_in_Hong_Kong_%284%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A damaged wooden vessel with Chinese characters on its hull sits partially submerged or grounded near a dilapidated building.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Destruction_of_the_Great_Typhoon_of_1937_in_Hong_Kong_(4).png).
+Corroborates: It visually corroborates the devastating impact the typhoon had on maritime fleets in Hong Kong.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

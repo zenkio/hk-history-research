@@ -610,7 +610,7 @@ def git_commit():
         return
     msg = f"auto(seed): AI-drafted history pages {datetime.now().strftime('%Y-%m-%d %H:%M')}"
     subprocess.run(["git", "commit", "-m", msg], cwd=PROJECT_ROOT, check=True)
-    subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
+    subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"], cwd=PROJECT_ROOT, check=True)
     subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
     print("Git push completed.")
 

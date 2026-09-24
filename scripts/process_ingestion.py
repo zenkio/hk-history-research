@@ -282,7 +282,7 @@ def run_git_commit():
             return
         msg = f"auto(ingestion+ai-batch): synced {datetime.now().strftime('%Y-%m-%d %H:%M')} history data"
         subprocess.run(["git", "commit", "-m", msg], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
+        subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"], cwd=PROJECT_ROOT, check=True)
         subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
         print("Git push completed.")
     except subprocess.CalledProcessError as e:

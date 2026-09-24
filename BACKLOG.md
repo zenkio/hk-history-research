@@ -31,6 +31,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## 🔥 Burning (fix first)
 
+- [ ] **Run 11 failed in 37 s**: `repair_content.py` ran `git pull --rebase` while `scripts/seen_urls.json` (updated by the fetch step) was uncommitted. Every run that fetches a new article would fail. _Fix in PR #6: `--autostash` on all three pull-rebases, and a repair commit failure no longer fails the job._
+
 - [ ] **Run 9 (2026-09-24) was cancelled at the 70-minute limit and committed nothing.** Gemma 31B was overloaded, so every photo description waited minutes; the classify step only committed at the end, so 3 finished pages (1979 Geneva Conference with video, 2 wartime posts) were lost; the seeding step (research import, evidence, fact-check retry) never ran. _Fix in PR #5: commit per page, a 20-minute budget for classify, `continue-on-error` so seeding always runs, and a 10-minute cooldown for a model after repeated overloads._
 
 - [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.

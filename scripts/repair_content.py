@@ -155,7 +155,7 @@ def git_commit():
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:
         return
     subprocess.run(["git", "commit", "-m", "auto(repair): fix truncated summaries and thin pages"], cwd=PROJECT_ROOT, check=True)
-    subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
+    subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"], cwd=PROJECT_ROOT, check=True)
     subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
 
 
@@ -172,4 +172,8 @@ if __name__ == "__main__":
     fixed = fix_summaries(load_pages())
     print(f"[repair] removed {removed} duplicates, re-queued {requeued} thin pages, fixed {fixed} summaries")
     if args.commit:
-        git_commit()
+        try:
+            git_commit()
+        except subprocess.CalledProcessError as e:
+            # Never fail the job over a commit: the next step commits content/ again.
+            print(f"[repair] commit/push failed, will be retried by a later step: {e}")

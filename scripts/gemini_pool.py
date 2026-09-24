@@ -41,7 +41,8 @@ VIDEO_TOKEN_ESTIMATE = 150_000
 IMAGE_TOKEN_ESTIMATE = 1_500
 TRANSIENT_TRIES = 4      # per request on large-quota models, for 503/500/timeouts
 SCARCE_RPD = 50          # models this small move on after one overload error: Google still bills it
-IDLE_CYCLES = 3          # full passes over the routing list before giving up on a transient outage
+IDLE_CYCLES = 3
+COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload retries          # full passes over the routing list before giving up on a transient outage
 # Suffix tokens an API id may add to a configured name and still be the same model.
 ALLOWED_EXTRA = re.compile(r"^(preview|latest|exp|it|a\d+b|\d+)$")
 
@@ -122,6 +123,7 @@ class ModelPool:
         self.token_log = {}
         self.no_media = set()  # models found this run to reject image/video input
         self.unavailable = set()  # models not usable in this run only (missing key, no free match)
+        self.cooldown = {}  # model -> time until which it is skipped after repeated overloads
         self.state = self._load_state()
         self._resolve_ids()
         self._resolve_openrouter()
@@ -292,7 +294,7 @@ class ModelPool:
 
     def _generate(self, role, prompt, parse, search, only, media):
         keys = [k for k in self.routing.get(role, [])
-                if (only is None or k in only)
+                if (only is None or k in only) and self.cooldown.get(k, 0) < time.time()
                 and not (media and (self._provider(k) != "google" or k in self.no_media))]
         for cycle in range(IDLE_CYCLES):
             for key in keys:
@@ -398,5 +400,8 @@ class ModelPool:
                     time.sleep(5)
                     transient += 1
         if transient >= max_transient:
+            # A model that keeps answering "overloaded" costs minutes per call in backoff;
+            # rest it so the next model in the routing does the work meanwhile.
+            self.cooldown[key] = time.time() + COOLDOWN_SECONDS
             print(f"  [pool] {key} overloaded, trying the next model")
         return None

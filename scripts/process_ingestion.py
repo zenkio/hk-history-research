@@ -282,6 +282,7 @@ def run_git_commit():
             return
         msg = f"auto(ingestion+ai-batch): synced {datetime.now().strftime('%Y-%m-%d %H:%M')} history data"
         subprocess.run(["git", "commit", "-m", msg], cwd=PROJECT_ROOT, check=True)
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
         subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
         print("Git push completed.")
     except subprocess.CalledProcessError as e:
@@ -300,9 +301,16 @@ if __name__ == "__main__":
     else:
         print(f"Processing {len(files)} files...")
         pool = ModelPool()
+        # Leave time for the seeding step (evidence, research import); the rest stays queued.
+        deadline = time.time() + float(os.environ.get("INGEST_MINUTES", "20")) * 60
         try:
             for f in files:
+                if time.time() > deadline:
+                    print("Time budget used; remaining files stay queued for the next run.")
+                    break
                 analyze_and_route(pool, os.path.join(QUEUE_DIR, f))
+                # Commit each finished page, so a cancelled job loses at most one.
+                run_git_commit()
         except QuotaExhausted as e:
             print(f"Stopping early, remaining files stay queued: {e}")
         print(f"Quota used today: {pool.summary()}")

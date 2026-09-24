@@ -63,7 +63,7 @@
     "13-transition": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "14-early-hksar": {
       "outlined": true,
@@ -9358,7 +9358,8 @@
       "year": 1975,
       "date": "1975-10-12",
       "summary": "Aligning with the United Nations International Women's Year, Hong Kong began dismantling colonial-era legal disparities regarding female employment, property, and family rights.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1975-passage-of-the-anti-discrimination-womens-rights-reforms.md"
     },
     {
       "era": "12-riots-and-reform",
@@ -9366,7 +9367,8 @@
       "year": 1977,
       "date": "1977-04-01",
       "summary": "This consolidated financial safety net provided essential monetary support to the elderly, disabled, and destitute, shifting welfare from charity to government responsibility.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1977-establishment-of-the-social-security-assistance-scheme.md"
     },
     {
       "era": "12-riots-and-reform",
@@ -9374,7 +9376,8 @@
       "year": 1978,
       "date": "1978-06-20",
       "summary": "This grassroots advocacy group empowered factory workers through education and labor rights campaigns during the peak of Hong Kong's manufacturing boom.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1978-formation-of-the-hong-kong-christian-industrial-committee.md"
     },
     {
       "era": "12-riots-and-reform",
@@ -9382,7 +9385,8 @@
       "year": 1979,
       "date": "1979-09-01",
       "summary": "Following the 1979 Fok Chun-wah commission, this localization and pay reform professionalized the civil service and cemented a neutral bureaucratic backbone for governance.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1979-launch-of-the-senior-civil-service-pay-scale-overhaul.md"
     },
     {
       "era": "12-riots-and-reform",
@@ -9390,7 +9394,8 @@
       "year": 1980,
       "date": "1980-09-01",
       "summary": "As the first secondary institution in the new towns, it symbolized the decentralized expansion of quality public education alongside rapid suburban development.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1980-opening-of-the-sha-tin-government-secondary-school.md"
     },
     {
       "era": "12-riots-and-reform",
@@ -9398,7 +9403,89 @@
       "year": 1981,
       "date": "1981-06-05",
       "summary": "This reform proposal restructured local government by establishing District Boards, laying the crucial groundwork for representative democracy and community participation.",
-      "status": "pending"
+      "status": "done",
+      "file": "12-riots-and-reform/1981-publication-of-the-maclehose-district-administration-green-paper.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Opening of the Hong Kong Cultural Centre",
+      "year": 1989,
+      "date": "1989-11-08",
+      "summary": "The inauguration of the iconic Tsim Sha Tsui landmark symbolized the maturation of Hong Kong's performing arts scene during a period of intense political transition.",
+      "status": "done",
+      "file": "13-transition/1989-opening-of-the-hong-kong-cultural-centre.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the Hospital Authority",
+      "year": 1990,
+      "date": "1990-12-01",
+      "summary": "This statutory body was formed to manage all public hospitals, fundamentally restructuring healthcare delivery and improving medical standards before the handover.",
+      "status": "done",
+      "file": "13-transition/1990-establishment-of-the-hospital-authority.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Release of Wong Kar-wai's Days of Being Wild",
+      "year": 1990,
+      "date": "1990-12-15",
+      "summary": "This critically acclaimed film captured the melancholic, rootless zeitgeist of Hong Kong youth grappling with identity and impending 1997 uncertainties.",
+      "status": "done",
+      "file": "13-transition/1990-release-of-wong-kar-wais-days-of-being-wild.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "The Commercial Launch of Metro Broadcast",
+      "year": 1991,
+      "date": "1991-07-01",
+      "summary": "Breaking Commercial Radio and RTHK's long-standing duopoly, the new station diversified the local media landscape and reflected a vibrant consumer culture.",
+      "status": "done",
+      "file": "13-transition/1991-the-commercial-launch-of-metro-broadcast.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "The Premiere of Stanley Kwan's Center Stage",
+      "year": 1991,
+      "date": "1991-11-28",
+      "summary": "Starring Maggie Cheung, this metacinematic masterpiece explored Hong Kong's cultural anxieties through the lens of early Chinese cinema history.",
+      "status": "done",
+      "file": "13-transition/1991-the-premiere-of-stanley-kwans-center-stage.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the University Grants Committee Sector Expansion",
+      "year": 1991,
+      "date": "1991",
+      "summary": "A massive government push to double tertiary education enrollment aimed to retain professional talent and boost the knowledge-based economy ahead of 1997.",
+      "status": "done",
+      "file": "13-transition/1991-establishment-of-the-university-grants-committee-sector-expansion.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Opening of the Hong Kong Museum of Science",
+      "year": 1991,
+      "date": "1991-04-18",
+      "summary": "The opening of the Tsim Sha Tsui East museum marked a growing government investment in public education, science literacy, and cultural infrastructure.",
+      "status": "done",
+      "file": "13-transition/1991-opening-of-the-hong-kong-museum-of-science.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "The First International Film Festival Awards in Hong Kong",
+      "year": 1992,
+      "date": "1992-04-10",
+      "summary": "The institutionalization of regional cinema celebration underscored Hong Kong's status as the undisputed 'Hollywood of the East' during its golden age.",
+      "status": "done",
+      "file": "13-transition/1992-the-first-international-film-festival-awards-in-hong-kong.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests",
+      "year": 1993,
+      "date": "1993-05-12",
+      "summary": "Grassroots tenant protests against soaring public housing rents highlighted widening social inequality and fueled active civic engagement in urban governance.",
+      "status": "done",
+      "file": "13-transition/1993-the-launch-of-the-imelda-marcos-public-housing-scandal-protests.md"
     }
   ],
   "entities": {
@@ -10089,7 +10176,19 @@
         "Establishment of the Hong Kong Sea Transport Workers Union",
         "Enactment of the Employment Ordinance",
         "Establishment of the Fight Violent Crime Campaign",
-        "Launch of the Jockey Club Kwai Chung Athlete's Village"
+        "Launch of the Jockey Club Kwai Chung Athlete's Village",
+        "Passage of the Anti-Discrimination Women's Rights Reforms",
+        "Establishment of the Social Security Assistance Scheme",
+        "Formation of the Hong Kong Christian Industrial Committee",
+        "Launch of the Senior Civil Service Pay Scale Overhaul",
+        "Opening of the Sha Tin Government Secondary School",
+        "Publication of the MacLehose District Administration Green Paper",
+        "Establishment of the Hospital Authority",
+        "The Commercial Launch of Metro Broadcast",
+        "The Premiere of Stanley Kwan's Center Stage",
+        "Establishment of the University Grants Committee Sector Expansion",
+        "The First International Film Festival Awards in Hong Kong",
+        "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -11092,7 +11191,10 @@
         "Implementation of the New Territories Block Crown Lease System",
         "Phytophthora Outbreak and Agriculture Shift",
         "Founding of the Royal Hong Kong Golf Club",
-        "Emergency Reunification of Displaced Families Post-Liberation"
+        "Emergency Reunification of Displaced Families Post-Liberation",
+        "Passage of the Anti-Discrimination Women's Rights Reforms",
+        "Opening of the Sha Tin Government Secondary School",
+        "Publication of the MacLehose District Administration Green Paper"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -11609,7 +11711,8 @@
         "Inauguration of the Cultural Centre Design and Construction",
         "Opening of the Hong Kong Museum of History",
         "Opening of the Peninsula Hotel",
-        "Conversion of Peninsula Hotel into Japanese Officers Club"
+        "Conversion of Peninsula Hotel into Japanese Officers Club",
+        "Opening of the Hong Kong Cultural Centre"
       ],
       "status": "done",
       "file": "Places/tsim-sha-tsui.md"
@@ -11632,7 +11735,8 @@
         "Typhoon Wanda Strikes Hong Kong",
         "Development of the Sha Tin New Town",
         "Opening of the Tate's Cairn Tunnel",
-        "MTR Shatin to Central Link Scandal"
+        "MTR Shatin to Central Link Scandal",
+        "Opening of the Sha Tin Government Secondary School"
       ],
       "status": "done",
       "file": "Places/sha-tin.md"
@@ -12385,7 +12489,8 @@
         "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
         "Lamma Island Ferry Collision",
         "Inauguration of the Yaumatei Typhoon Shelter",
-        "Establishment of the Praya Reclamation Scheme"
+        "Establishment of the Praya Reclamation Scheme",
+        "Opening of the Hong Kong Cultural Centre"
       ],
       "status": "done",
       "file": "Places/victoria-harbour.md"
@@ -13208,7 +13313,8 @@
         "Founding of the Hong Kong and Shanghai Banking Corporation",
         "Founding of the Post-War Cantonese Cinema Studio System",
         "Opening of the Hong Kong Cinema House",
-        "Arrival of the National Salvation Association activists"
+        "Arrival of the National Salvation Association activists",
+        "The Premiere of Stanley Kwan's Center Stage"
       ],
       "status": "done",
       "file": "Places/shanghai.md"
@@ -14715,7 +14821,8 @@
         "Formation of the Society for Community Organization",
         "Establishment of the Public Enquiry Service Centres",
         "Enactment of the Employment Ordinance",
-        "Establishment of the Fight Violent Crime Campaign"
+        "Establishment of the Fight Violent Crime Campaign",
+        "Establishment of the Social Security Assistance Scheme"
       ],
       "status": "done",
       "file": "People/murray-maclehose.md"
@@ -14771,7 +14878,9 @@
         "Launch of the Green Cross Campaign",
         "Introduction of the Labour Tribunal",
         "Launch of the Social Welfare White Paper",
-        "Launch of the Jockey Club Kwai Chung Athlete's Village"
+        "Launch of the Jockey Club Kwai Chung Athlete's Village",
+        "Opening of the Sha Tin Government Secondary School",
+        "Publication of the MacLehose District Administration Green Paper"
       ],
       "status": "done",
       "file": "People/sir-murray-maclehose.md"
@@ -14802,7 +14911,9 @@
       "name": "MacLehose (麥理浩)",
       "kind": "person",
       "mentions": [
-        "Chinese Recognized as an Official Language"
+        "Chinese Recognized as an Official Language",
+        "Passage of the Anti-Discrimination Women's Rights Reforms",
+        "Launch of the Senior Civil Service Pay Scale Overhaul"
       ],
       "status": "done",
       "file": "People/maclehose.md"
@@ -15210,7 +15321,8 @@
       "mentions": [
         "The Sunset Farewell Ceremony",
         "Transfer of Sovereignty over Hong Kong",
-        "Inauguration of the Cultural Centre Design and Construction"
+        "Inauguration of the Cultural Centre Design and Construction",
+        "Opening of the Hong Kong Cultural Centre"
       ],
       "status": "done",
       "file": "People/prince-charles.md"
@@ -15318,7 +15430,8 @@
       "mentions": [
         "Death of Pop Icon Leslie Cheung",
         "The Rise of Cantopop's 'Four Heavenly Kings'",
-        "The Death of 'Daughter of Hong Kong' Anita Mui"
+        "The Death of 'Daughter of Hong Kong' Anita Mui",
+        "Release of Wong Kar-wai's Days of Being Wild"
       ],
       "status": "done",
       "file": "People/leslie-cheung.md"
@@ -16764,7 +16877,8 @@
         "Launch of STAR TV Satellite Network",
         "Cyberport Project Awarded Without Public Tender",
         "Hong Kong Dock Workers Strike Over Stagnant Wages",
-        "The Cyberport Controversial Single Tender Process"
+        "The Cyberport Controversial Single Tender Process",
+        "The Commercial Launch of Metro Broadcast"
       ],
       "status": "done",
       "file": "People/li-ka-shing.md"
@@ -16882,7 +16996,8 @@
       "name": "Jacky Cheung (張學友)",
       "kind": "person",
       "mentions": [
-        "The Rise of Cantopop's 'Four Heavenly Kings'"
+        "The Rise of Cantopop's 'Four Heavenly Kings'",
+        "Release of Wong Kar-wai's Days of Being Wild"
       ],
       "status": "done",
       "file": "People/jacky-cheung.md"
@@ -16891,7 +17006,8 @@
       "name": "Andy Lau (劉德華)",
       "kind": "person",
       "mentions": [
-        "The Rise of Cantopop's 'Four Heavenly Kings'"
+        "The Rise of Cantopop's 'Four Heavenly Kings'",
+        "Release of Wong Kar-wai's Days of Being Wild"
       ],
       "status": "done",
       "file": "People/andy-lau.md"
@@ -18127,7 +18243,8 @@
       "name": "Lau Chin-shek (劉千石)",
       "kind": "person",
       "mentions": [
-        "Formation of the Hong Kong Confederation of Trade Unions"
+        "Formation of the Hong Kong Confederation of Trade Unions",
+        "Formation of the Hong Kong Christian Industrial Committee"
       ],
       "status": "done",
       "file": "People/lau-chin-shek.md"
@@ -19808,7 +19925,8 @@
       "name": "Hong Kong Cultural Centre (香港文化中心)",
       "kind": "place",
       "mentions": [
-        "Inauguration of the Cultural Centre Design and Construction"
+        "Inauguration of the Cultural Centre Design and Construction",
+        "Opening of the Hong Kong Cultural Centre"
       ],
       "status": "done",
       "file": "Places/hong-kong-cultural-centre.md"
@@ -20235,6 +20353,136 @@
       ],
       "status": "done",
       "file": "Places/high-street-mental-hospital.md"
+    },
+    "person:fok-chun-wah": {
+      "name": "Fok Chun-wah (霍晉焯)",
+      "kind": "person",
+      "mentions": [
+        "Launch of the Senior Civil Service Pay Scale Overhaul"
+      ],
+      "status": "done",
+      "file": "People/fok-chun-wah.md"
+    },
+    "person:princess-diana": {
+      "name": "Princess Diana (戴安娜王妃)",
+      "kind": "person",
+      "mentions": [
+        "Opening of the Hong Kong Cultural Centre"
+      ],
+      "status": "done",
+      "file": "People/princess-diana.md"
+    },
+    "person:woo-pak-chuen": {
+      "name": "Woo Pak-chuen (胡百全)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Hospital Authority"
+      ],
+      "status": "done",
+      "file": "People/woo-pak-chuen.md"
+    },
+    "person:wong-kar-wai": {
+      "name": "Wong Kar-wai (王家衛)",
+      "kind": "person",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild"
+      ],
+      "status": "done",
+      "file": "People/wong-kar-wai.md"
+    },
+    "person:maggie-cheung": {
+      "name": "Maggie Cheung (張曼玉)",
+      "kind": "person",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild",
+        "The Premiere of Stanley Kwan's Center Stage"
+      ],
+      "status": "done",
+      "file": "People/maggie-cheung.md"
+    },
+    "person:carina-lau": {
+      "name": "Carina Lau (劉嘉玲)",
+      "kind": "person",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild"
+      ],
+      "status": "done",
+      "file": "People/carina-lau.md"
+    },
+    "person:tony-leung-chiu-wai": {
+      "name": "Tony Leung Chiu-wai (梁朝僉)",
+      "kind": "person",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild"
+      ],
+      "status": "done",
+      "file": "People/tony-leung-chiu-wai.md"
+    },
+    "person:christopher-doyle": {
+      "name": "Christopher Doyle (杜可風)",
+      "kind": "person",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild"
+      ],
+      "status": "done",
+      "file": "People/christopher-doyle.md"
+    },
+    "place:hong-kng": {
+      "name": "Hong Kng (香港)",
+      "kind": "place",
+      "mentions": [
+        "Release of Wong Kar-wai's Days of Being Wild"
+      ],
+      "status": "done",
+      "file": "Places/hong-kng.md"
+    },
+    "person:stanley-kwan": {
+      "name": "Stanley Kwan (關錦鵬)",
+      "kind": "person",
+      "mentions": [
+        "The Premiere of Stanley Kwan's Center Stage"
+      ],
+      "status": "pending"
+    },
+    "person:ruan-lingyu": {
+      "name": "Ruan Lingyu (阮玲玉)",
+      "kind": "person",
+      "mentions": [
+        "The Premiere of Stanley Kwan's Center Stage"
+      ],
+      "status": "pending"
+    },
+    "place:berlin": {
+      "name": "Berlin (柏林)",
+      "kind": "place",
+      "mentions": [
+        "The Premiere of Stanley Kwan's Center Stage"
+      ],
+      "status": "pending"
+    },
+    "place:hong-kong-museum-of-science": {
+      "name": "Hong Kong Museum of Science (香港科學館)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Hong Kong Museum of Science"
+      ],
+      "status": "pending"
+    },
+    "place:tsim-sha-tsui-east": {
+      "name": "Tsim Sha Tsui East (尖沙咀東)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Hong Kong Museum of Science"
+      ],
+      "status": "pending"
+    },
+    "person:imelda-marcos": {
+      "name": "Imelda Marcos",
+      "kind": "person",
+      "mentions": [
+        "The Launch of the 'Imelda Marcos' Public Housing Scandal Protests"
+      ],
+      "status": "pending"
     }
   }
 }

@@ -4,10 +4,11 @@ title_zh: "聖公會聖約翰座堂奉獻日"
 date: 1849-03-11
 year: 1849
 era: "The early colony"
-tags: ["1849", "ai-draft", "anglican-church", "architecture", "british-colonial-era", "early-colony", "st-johns-cathedral", "victoria-city"]
+tags: ["evidence-none", "1849", "ai-draft", "anglican-church", "architecture", "british-colonial-era", "early-colony", "st-johns-cathedral", "victoria-city"]
 summary: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
 description: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The completion and consecration of the cathedral represented more than a religio
 
 - [ ] St. John's Cathedral was officially consecrated on March 11, 1849.
 - [ ] Bishop George Smith presided over the consecration ceremony.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is still needed to support both the date of the consecration and the identity of the presiding bishop for St. John's Cathedral.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

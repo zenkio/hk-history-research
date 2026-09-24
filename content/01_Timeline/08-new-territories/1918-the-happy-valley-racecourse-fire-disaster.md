@@ -4,7 +4,7 @@ title_zh: "跑馬地馬場大火"
 date: 1918-02-26
 year: 1918
 era: "The New Territories lease and the early 20th century"
-tags: ["1918", "ai-draft", "colonial-history", "disaster", "happy-valley-fire", "new-territories", "public-safety"]
+tags: ["photo-corroborated", "1918", "ai-draft", "colonial-history", "disaster", "happy-valley-fire", "new-territories", "public-safety"]
 summary: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building regulations."
 description: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building…"
 confidence: ai-draft
@@ -41,5 +41,18 @@ The sheer scale of the tragedy shocked the colonial administration and the local
 
 - [ ] The exact death toll exceeded 600 spectators, though precise figures vary across contemporary reports.
 - [ ] Temporary grandstands were constructed primarily of bamboo and wood.
+
+## Photos from this period
+
+![A crowd of spectators at the Happy Valley Racecourse in Hong Kong on February 26, 1918, prior to the fire disaster.](https://upload.wikimedia.org/wikipedia/commons/7/71/Happy_Valley_Racecourse_before_fire_on_26th_February_1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A crowd of spectators at the Happy Valley Racecourse in Hong Kong on February 26, 1918, prior to the fire disaster.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Happy_Valley_Racecourse_before_fire_on_26th_February_1918.jpg).
+Corroborates: It illustrates the scale of the crowd and the setting of the racecourse on the day of the catastrophic event.
+
+![A photograph of the massive smoke plume rising from the Happy Valley Racecourse during the 1918 fire disaster.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/HappyvalleyfireHK1918.jpg/960px-HappyvalleyfireHK1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A photograph of the massive smoke plume rising from the Happy Valley Racecourse during the 1918 fire disaster.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HappyvalleyfireHK1918.jpg).
+Corroborates: It provides visual evidence of the catastrophic fire and the scale of the crowd present during the disaster.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

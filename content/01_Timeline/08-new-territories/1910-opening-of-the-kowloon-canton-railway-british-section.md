@@ -4,10 +4,11 @@ title_zh: "九廣鐵路英段通車"
 date: 1910-10-01
 year: 1910
 era: "The New Territories lease and the early 20th century"
-tags: ["photo-corroborated", "1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
+tags: ["evidence-none", "photo-corroborated", "1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
 summary: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland China."
 description: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -52,6 +53,14 @@ The opening of the railway modernized regional transport and physically bound th
 
 *Extract from the Hong Kong Government Gazette dated October 7, 1910, notifying the public of the opening of the British Section of the Kowloon-Canton Railway.* (document). Hong Kong Government Printer, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gazette_notice_safe_opening_KCR_Oct_1910.jpg).
 Corroborates: It confirms the official opening of the railway's British Section on October 1, 1910.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the exact passenger and freight volumes for October 1910 and the specific contractual agreements between the British colonial government and the Qing dynasty is required.
 
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

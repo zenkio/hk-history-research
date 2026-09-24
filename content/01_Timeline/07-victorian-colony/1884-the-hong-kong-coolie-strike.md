@@ -4,10 +4,11 @@ title_zh: "香港苦力罷工"
 date: 1884-01-01
 year: 1884
 era: "Kowloon and the Victorian colony"
-tags: ["1884", "ai-draft", "british-colony", "coolie-strike", "labor-history", "sino-french-war", "victorian-colony"]
+tags: ["evidence-none", "1884", "ai-draft", "british-colony", "coolie-strike", "labor-history", "sino-french-war", "victorian-colony"]
 summary: "In September 1884, Chinese cargo handlers and boatmen launched a general strike to protest British colonial policies and support China during the Sino-French War, marking a watershed moment in local working-class political consciousness."
 description: "In September 1884, Chinese cargo handlers and boatmen launched a general strike to protest British colonial policies and support China during the Sino-French War, marking a watershed moment in local working-class…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The **Hong Kong Coolie Strike** is widely viewed by modern historians as an earl
 
 - [ ] The exact number of workers who participated in the general strike of September 1884
 - [ ] The precise extent of involvement by local trade guilds and secret societies in organizing the strike
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the number of participants and the role of trade guilds and secret societies in the 1884 Hong Kong Coolie Strike is missing.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

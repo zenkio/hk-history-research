@@ -4,10 +4,11 @@ title_zh: "批填海計劃"
 date: 1889-01-01
 year: 1889
 era: "Kowloon and the Victorian colony"
-tags: ["1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
+tags: ["evidence-none", "1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
 summary: "In **1889**, businessman **Sir Paul Chater** (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 description: "In 1889, businessman Sir Paul Chater (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The reclamation drastically altered the geography and economic geography of Vict
 
 - [ ] The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal
 - [ ] The precise legislative council vote tallies approving the project
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the exact acreage reclaimed and the legislative council vote tallies for the 1889 Praya Reclamation Scheme is still needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

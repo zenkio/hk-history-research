@@ -4,10 +4,11 @@ title_zh: "香港捲入第一次世界大戰"
 date: 1914-08-04
 year: 1914
 era: "The New Territories lease and the early 20th century"
-tags: ["1914", "ai-draft", "british-empire", "colonial-history", "internment", "new-territories", "world-war-i"]
+tags: ["evidence-none", "1914", "ai-draft", "british-empire", "colonial-history", "internment", "new-territories", "world-war-i"]
 summary: "Following Britain's declaration of war on August 4, 1914, Hong Kong rapidly transitioned to a wartime footing, mobilizing its defense corps, interning German residents, and seizing enemy commercial assets."
 description: "Following Britain's declaration of war on August 4, 1914, Hong Kong rapidly transitioned to a wartime footing, mobilizing its defense corps, interning German residents, and seizing enemy commercial assets."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The outbreak of the First World War marked a significant turning point in Hong K
 - [ ] Exact timeline of telegraphic communication arrival in Hong Kong on August 4-5, 1914
 - [ ] Complete inventory of German commercial enterprises confiscated in Hong Kong in 1914
 - [ ] Number of German residents interned immediately following the declaration of war
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the telegraphic communication timeline, the inventory of confiscated German enterprises, and the number of interned German residents in August 1914 is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

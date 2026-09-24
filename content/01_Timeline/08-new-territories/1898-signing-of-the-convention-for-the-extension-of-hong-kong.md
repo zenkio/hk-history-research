@@ -4,10 +4,11 @@ title_zh: "香港展拓專條簽訂"
 date: 1898-06-09
 year: 1898
 era: "The New Territories lease and the early 20th century"
-tags: ["photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
+tags: ["evidence-none", "photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
 summary: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 description: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -54,6 +55,14 @@ Corroborates: It depicts the treaty document that leased the New Territories to 
 
 *Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.* (artwork). Yumeto, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg).
 Corroborates: It illustrates the practical outcome of the Convention for the Extension of Hong Kong, specifically the establishment of the boundary for the leased New Territories.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for boundary demarcations in the 1899 Convention of Peking and the roles/instructions of diplomats during the 1898 negotiations is still needed.
 
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

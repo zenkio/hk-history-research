@@ -4,10 +4,11 @@ title_zh: "太平山鼠疫"
 date: 1894-01-01
 year: 1894
 era: "Kowloon and the Victorian colony"
-tags: ["1894", "ai-draft", "bubonic-plague", "colonial-history", "public-health", "sanitation", "tai-ping-shan", "victorian-colony"]
+tags: ["evidence-b", "1894", "ai-draft", "bubonic-plague", "colonial-history", "public-health", "sanitation", "tai-ping-shan", "victorian-colony"]
 summary: "In May 1894, a devastating outbreak of the bubonic plague struck the densely populated Tai Ping Shan district of Hong Kong, claiming thousands of lives and fundamentally altering colonial public health policies."
 description: "In May 1894, a devastating outbreak of the bubonic plague struck the densely populated Tai Ping Shan district of Hong Kong, claiming thousands of lives and fundamentally altering colonial public health policies."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,19 @@ The **1894** outbreak resulted in the deaths of over **2,000** people and led to
 - [ ] The exact death toll exceeded 2,000 people during the initial 1894 outbreak.
 - [ ] Alexandre Yersin arrived in Hong Kong in May 1894 to independently identify the plague bacillus concurrently with Kitasato Shibasaburo.
 - [ ] The colonial government demolished specific tenement blocks in Tai Ping Shan immediately following the peak of the epidemic.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Pryor Eg (1975). *The great plague of Hong Kong.*. PubMed.](https://openalex.org/W2399263408) (claims 1, 2, 3): The title indicates a general history of the plague in Hong Kong, which likely covers all three claims.
+- [PT Lee (2013). *Colonialism versus Nationalism: The Plague of Hong Kong in 1894*. The HKU Scholars Hub (University of Hong Kong).](https://openalex.org/W2279995391) (claims 3): The note mentions the colonial government's implementation of public health measures.
+- [Y. H. Phoebe Tang, Lionel Frost, Ruth A. Morgan (2024). *Public Health in a Transnational Context: Hong Kong and the Third Bubonic Plague Pandemic*. Journal of Urban History.](https://doi.org/10.1177/00961442241277148) (claims 3): The note mentions examining the impact of responses to the plague pandemic in Hong Kong.
+
+**Still needed:** Explicit evidence for the exact death toll and the details of Alexandre Yersin's arrival and research.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

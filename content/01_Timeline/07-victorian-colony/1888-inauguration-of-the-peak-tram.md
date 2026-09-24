@@ -4,10 +4,11 @@ title_zh: "山頂纜車啟用"
 date: 1888-05-30
 year: 1888
 era: "Kowloon and the Victorian colony"
-tags: ["1888", "ai-draft", "colonial-history", "peak-tram", "transportation", "urban-development", "victorian-colony"]
+tags: ["evidence-none", "1888", "ai-draft", "colonial-history", "peak-tram", "transportation", "urban-development", "victorian-colony"]
 summary: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
 description: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The opening of the Peak Tram fundamentally reshaped the social and spatial geogr
 
 - [ ] Did Governor Sir Des Voeux personally operate or attend the official inauguration on May 30, 1888?
 - [ ] What were the exact passenger numbers and fare structures during the first month of operation?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for Governor Sir Des Voeux's attendance at the inauguration and the passenger numbers and fare structures for the first month of the Peak Tram's operation.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

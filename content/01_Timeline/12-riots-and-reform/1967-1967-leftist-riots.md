@@ -4,7 +4,7 @@ title_zh: "一九六七年香港暴動"
 date: 1967-05-06
 year: 1967
 era: "Riots and the MacLehose reforms"
-tags: ["1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
+tags: ["photo-corroborated", "1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
 summary: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British colonial administration."
 description: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British…"
 confidence: ai-draft
@@ -47,5 +47,28 @@ The **1967 Leftist Riots** marked a major turning point in Hong Kong’s modern 
 
 - [ ] Exact number of real versus dummy bombs planted during the 1967 campaign according to police records.
 - [ ] The precise degree of direct command or financial support given by Beijing authorities to the local struggle committee.
+
+## Photos from this period
+
+![A newspaper clipping from the Wah Kiu Yat Po reporting on leftist students planting bombs and causing traffic disruptions.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg/960px-Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A newspaper clipping from the Wah Kiu Yat Po reporting on leftist students planting bombs and causing traffic disruptions.* (document). 華僑日報（Wah Kiu Yat Po）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg).
+Corroborates: It corroborates the massive bomb campaign led by pro-communist elements against the British colonial administration during the 1967 riots.
+
+![A newspaper clipping from July 26, 1967, reporting that three television stars received threatening letters from leftist rioters.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Leung_Shun_Yin%2C_Pong_Bik_Wan%2C_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg/960px-Leung_Shun_Yin%2C_Pong_Bik_Wan%2C_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A newspaper clipping from July 26, 1967, reporting that three television stars received threatening letters from leftist rioters.* (document). 工商日報（Kung Sheung Daily News）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Leung_Shun_Yin,_Pong_Bik_Wan,_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg).
+Corroborates: It corroborates the atmosphere of intimidation and the targeting of public figures by pro-communist elements during the 1967 riots.
+
+![A confrontation between the Hong Kong Police and protesters during the 1967 Leftist Riots.](https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1967_Hong_Kong_riots-Communists_and_Police.jpg/960px-1967_Hong_Kong_riots-Communists_and_Police.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A confrontation between the Hong Kong Police and protesters during the 1967 Leftist Riots.* (contemporary photo). Roger Wollstadt, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1967_Hong_Kong_riots-Communists_and_Police.jpg).
+Corroborates: It illustrates the violent confrontations and security operations undertaken by the British colonial administration during the riots.
+
+![A newspaper clipping from October 1967 reporting on rewards for reporting hidden explosives and praising the Hong Kong Police.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg/960px-Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A newspaper clipping from October 1967 reporting on rewards for reporting hidden explosives and praising the Hong Kong Police.* (document). 華僑日報（Wah Kiu Yat Po）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg).
+Corroborates: It corroborates the massive bomb campaign and police response during the 1967 Leftist Riots.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

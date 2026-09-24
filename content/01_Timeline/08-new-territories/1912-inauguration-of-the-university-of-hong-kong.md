@@ -4,10 +4,11 @@ title_zh: "香港大學成立典禮"
 date: 1912-03-30
 year: 1912
 era: "The New Territories lease and the early 20th century"
-tags: ["1912", "ai-draft", "british-colony", "colonial-governance", "early-20th-century", "higher-education", "new-territories", "university-history"]
+tags: ["evidence-none", "1912", "ai-draft", "british-colony", "colonial-governance", "early-20th-century", "higher-education", "new-territories", "university-history"]
 summary: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and modern professionals."
 description: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The founding of the university represented a pivotal moment in the educational a
 - [ ] Governor Frederick Lugard officially inaugurated the University of Hong Kong on March 30, 1912.
 - [ ] Sir Hormusjee Naorojee Mody provided the initial financial donation for the construction of the main building.
 - [ ] The Hong Kong College of Medicine for Chinese was formally incorporated into the new university as its Faculty of Medicine.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence from 1912 contemporary news reports or university archives is needed to verify the inauguration date, the role of Governor Lugard, the donation by Sir Hormusjee Naorojee Mody, and the incorporation of the Hong Kong College of Medicine.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

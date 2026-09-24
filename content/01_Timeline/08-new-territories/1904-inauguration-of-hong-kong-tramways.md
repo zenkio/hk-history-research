@@ -4,10 +4,11 @@ title_zh: "香港電車啟用"
 date: 1904-07-30
 year: 1904
 era: "The New Territories lease and the early 20th century"
-tags: ["1904", "ai-draft", "colonial-history", "hong-kong-tramways", "new-territories", "public-transport", "urban-growth"]
+tags: ["evidence-none", "1904", "ai-draft", "colonial-history", "hong-kong-tramways", "new-territories", "public-transport", "urban-growth"]
 summary: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
 description: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The inauguration of the tramway system served as a primary catalyst for the line
 
 - [ ] Exact passenger numbers on the opening day of July 30, 1904
 - [ ] Precise corporate restructuring timeline between the London-incorporated entity and Hong Kong Tramways Limited
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence such as contemporary newspapers from July 1904 or historical corporate records is needed to verify passenger counts and restructuring timelines.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

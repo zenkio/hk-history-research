@@ -4,10 +4,11 @@ title_zh: "尖沙咀火車站啟用"
 date: 1916-03-28
 year: 1916
 era: "The New Territories lease and the early 20th century"
-tags: ["1916", "ai-draft", "clock-tower", "colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport", "tsim-sha-tsui-terminus"]
+tags: ["evidence-b", "1916", "ai-draft", "clock-tower", "colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport", "tsim-sha-tsui-terminus"]
 summary: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
 description: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,17 @@ The completion of the terminus anchored Kowloon as the colony's primary internat
 
 - [ ] The exact opening date of the Tsim Sha Tsui Railway Terminus was March 28, 1916.
 - [ ] The extent to which construction was fully completed by the date of the formal opening ceremony.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Adonis M. Y. Li (2023). *Visions of public and private mobility: the Kowloon railway terminus in Hong Kong*. Urban History.](https://doi.org/10.1017/s0963926823000019) (claims 1, 2): The article explores the Kowloon railway terminus in Hong Kong.
+
+**Still needed:** Specific historical records or sources are needed to confirm the exact opening date and the construction completion status of the Tsim Sha Tsui Railway Terminus.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,10 +4,11 @@ title_zh: "華工兵團的動員"
 date: 1917-01-01
 year: 1917
 era: "The New Territories lease and the early 20th century"
-tags: ["1917", "ai-draft", "british-colony", "chinese-labour-corps", "labor-migration", "logistics", "new-territories", "world-war-i"]
+tags: ["evidence-none", "1917", "ai-draft", "british-colony", "chinese-labour-corps", "labor-migration", "logistics", "new-territories", "world-war-i"]
 summary: "During the First World War, Hong Kong served as a vital logistical hub and transit depot for thousands of Chinese laborers recruited to support the Allied war effort on the Western Front."
 description: "During the First World War, Hong Kong served as a vital logistical hub and transit depot for thousands of Chinese laborers recruited to support the Allied war effort on the Western Front."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The mobilization transformed Hong Kong into an active participant in a global co
 
 - [ ] Exact passenger numbers and ship manifests for Chinese Labour Corps members transiting through Hong Kong in 1917
 - [ ] Specific locations of transit camps established within the colony during the mobilization period
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the 1917 Chinese Labour Corps mobilization, specifically passenger manifests and transit camp locations in Hong Kong, is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

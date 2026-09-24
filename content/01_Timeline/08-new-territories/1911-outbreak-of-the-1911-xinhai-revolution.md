@@ -4,10 +4,11 @@ title_zh: "一九一一年辛亥革命爆發"
 date: 1911-10-10
 year: 1911
 era: "The New Territories lease and the early 20th century"
-tags: ["1911", "ai-draft", "british-colony", "new-territories", "qing-dynasty", "refugees", "xinhai-revolution"]
+tags: ["evidence-none", "1911", "ai-draft", "british-colony", "new-territories", "qing-dynasty", "refugees", "xinhai-revolution"]
 summary: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees, capital, and revolutionary activity."
 description: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The events of **1911** cemented Hong Kong's role as a crucial nexus between main
 
 - [ ] Exact estimates of the refugee influx into Hong Kong immediately following October 10, 1911
 - [ ] The specific official directives issued by the British colonial government regarding neutrality during the Wuchang Uprising
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed regarding specific 1911 refugee statistics for Hong Kong and official British colonial directives concerning neutrality during the Wuchang Uprising.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

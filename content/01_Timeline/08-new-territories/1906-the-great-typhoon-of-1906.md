@@ -4,10 +4,11 @@ title_zh: "一九○六年丙午風災"
 date: 1906-09-18
 year: 1906
 era: "The New Territories lease and the early 20th century"
-tags: ["photo-corroborated", "1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
+tags: ["evidence-a", "photo-corroborated", "1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
 summary: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 description: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -71,6 +72,23 @@ Corroborates: It provides visual evidence of the devastating impact the typhoon 
 
 *Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_typhoon_damage.jpg).
 Corroborates: It corroborates the devastating impact of the typhoon on maritime infrastructure and buildings.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [*Hong Kong Weekly Press 1906-10-06* (1906), Internet Archive.](https://archive.org/details/NPWP19061006) (claims 2): It contains contemporary reports regarding the typhoon and the observatory's warning performance.
+
+### Scholarship (grade B)
+
+- [Hing Yim Mok, Chi Ming Shun, Stephen G. Davies (2022). *A historical re-analysis of the calamitous midget typhoon passing through Hong Kong on 18 September 1906 and its storm surge impact to Hong Kong*. Tropical Cyclone Research and Review.](https://doi.org/10.1016/j.tcrr.2022.09.005) (claims 1, 2): It is a historical re-analysis of the specific 1906 typhoon.
+- [Fiona Williamson (2017). *Uncertain Skies. Forecasting Typhoons in Hong Kong, ca. 1874-1906*. Singapore Management University Institutional Knowledge (InK) (Singapore Management University).](https://doi.org/10.1408/90449) (claims 2): It covers the history of typhoon forecasting in Hong Kong up to 1906.
+
+**Still needed:** Specific fatality numbers and a chronological log of the meteorological warnings issued on the morning of the typhoon are required.
 
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

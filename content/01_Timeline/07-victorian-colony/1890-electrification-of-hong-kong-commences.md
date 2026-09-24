@@ -4,10 +4,11 @@ title_zh: "香港電燈供電開端"
 date: 1890-12-01
 year: 1890
 era: "Kowloon and the Victorian colony"
-tags: ["1890", "ai-draft", "hong-kong-electric", "infrastructure", "urban-history", "victorian-colony", "victorian-era", "wan-chai"]
+tags: ["evidence-none", "1890", "ai-draft", "hong-kong-electric", "infrastructure", "urban-history", "victorian-colony", "victorian-era", "wan-chai"]
 summary: "In December 1890, the Hongkong Electric Company began commercial power generation from its Wan Chai station, illuminating parts of Victoria City with electric streetlights and marking a major technological shift in the British colony."
 description: "In December 1890, the Hongkong Electric Company began commercial power generation from its Wan Chai station, illuminating parts of Victoria City with electric streetlights and marking a major technological shift in the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The commencement of electrical power generation laid the groundwork for modern u
 
 - [ ] The exact launch date of December 1, 1890 for the commencement of public electricity supply by the Hongkong Electric Company
 - [ ] The precise location and operational capacity of the initial Wan Chai power station
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the exact launch date of public electricity supply and the location and capacity of the initial Wan Chai power station is still needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

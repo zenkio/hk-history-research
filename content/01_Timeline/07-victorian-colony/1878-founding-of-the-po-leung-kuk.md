@@ -4,10 +4,11 @@ title_zh: "保良局的成立"
 date: 1878-01-01
 year: 1878
 era: "Kowloon and the Victorian colony"
-tags: ["1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
+tags: ["evidence-none", "1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
 summary: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 description: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The founding of the Po Leung Kuk represented a crucial precedent for Chinese par
 
 - [ ] The exact petition date and founding members listed in the initial 1878 colonial records
 - [ ] The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the exact 1878 petition date, the list of founding members from colonial records, and the relationship between the Po Leung Kuk and the Registrar General's Office is still needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

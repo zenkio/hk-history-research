@@ -4,10 +4,11 @@ title_zh: "南華早報創辦"
 date: 1903-11-06
 year: 1903
 era: "The New Territories lease and the early 20th century"
-tags: ["1903", "ai-draft", "colonial-press", "journalism-history", "new-territories", "newspapers", "south-china-morning-post"]
+tags: ["evidence-none", "1903", "ai-draft", "colonial-press", "journalism-history", "new-territories", "newspapers", "south-china-morning-post"]
 summary: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
 description: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The launch of the *South China Morning Post* established what would become one o
 
 - [ ] The exact date of the first publication was November 6, 1903
 - [ ] Tse Tsan-tai and Alfred Cunningham were the primary co-founders of the newspaper
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to confirm the exact first publication date and the identities of the primary co-founders of the South China Morning Post.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

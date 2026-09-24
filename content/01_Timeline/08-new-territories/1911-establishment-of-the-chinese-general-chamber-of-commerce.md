@@ -4,10 +4,11 @@ title_zh: "香港中華總商會的成立"
 date: 1911-01-01
 year: 1911
 era: "The New Territories lease and the early 20th century"
-tags: ["1911", "ai-draft", "chinese-elite", "chinese-general-chamber-of-commerce", "colonial-era", "economic-history", "new-territories"]
+tags: ["evidence-none", "1911", "ai-draft", "chinese-elite", "chinese-general-chamber-of-commerce", "colonial-era", "economic-history", "new-territories"]
 summary: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese bourgeois elite."
 description: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The creation of the chamber marked a pivotal moment in the self-organization of 
 
 - [ ] The exact foundational date and founding members of the Chinese General Chamber of Commerce in 1911
 - [ ] The precise nature of the relationship and correspondence between the newly formed chamber and the colonial government
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Specific evidence regarding the founding date, members, and colonial government relations of the Chinese General Chamber of Commerce in 1911 is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

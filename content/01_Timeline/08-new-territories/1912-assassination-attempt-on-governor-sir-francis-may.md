@@ -4,10 +4,11 @@ title_zh: "刺殺署理港督梅含理事件"
 date: 1912-07-04
 year: 1912
 era: "The New Territories lease and the early 20th century"
-tags: ["1912", "ai-draft", "assassination-attempt", "colonial-history", "francis-may", "new-territories", "xinhai-revolution"]
+tags: ["evidence-none", "1912", "ai-draft", "assassination-attempt", "colonial-history", "francis-may", "new-territories", "xinhai-revolution"]
 summary: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
 description: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The failed assassination attempt sent shockwaves through the colonial administra
 - [ ] The exact date of the assassination attempt was July 4, 1912.
 - [ ] Sir Francis Henry May was the specific target of the lone gunman.
 - [ ] The identity and precise political affiliations of the lone gunman remain a subject of historical inquiry.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the specific date, the identity of the target, and the details of the perpetrator for the assassination attempt on Sir Francis May.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

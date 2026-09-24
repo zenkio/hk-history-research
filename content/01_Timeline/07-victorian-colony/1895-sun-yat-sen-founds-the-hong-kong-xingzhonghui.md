@@ -4,10 +4,11 @@ title_zh: "孫中山創立香港興中會"
 date: 1895-02-21
 year: 1895
 era: "Kowloon and the Victorian colony"
-tags: ["1895", "ai-draft", "british-hong-kong", "revolution", "sun-yat-sen", "victorian-colony", "xingzhonghui"]
+tags: ["evidence-none", "1895", "ai-draft", "british-hong-kong", "revolution", "sun-yat-sen", "victorian-colony", "xingzhonghui"]
 summary: "In February 1895, Dr. Sun Yat-sen established the Hong Kong branch of the Revive China Society, transforming the British colony into an essential operational base for anti-Qing revolutionary planning."
 description: "In February 1895, Dr. Sun Yat-sen established the Hong Kong branch of the Revive China Society, transforming the British colony into an essential operational base for anti-Qing revolutionary planning."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The establishment of the Hong Kong Xingzhonghui marked a critical turning point 
 
 - [ ] Whether the exact founding date of the Hong Kong Xingzhonghui was February 21, 1895, or occurred slightly earlier or later in that month.
 - [ ] The precise address and commercial name of the front organization used for the society's first local headquarters.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the exact founding date and the address and commercial name of the first headquarters is still needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

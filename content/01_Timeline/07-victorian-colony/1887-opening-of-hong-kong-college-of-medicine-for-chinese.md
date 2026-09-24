@@ -4,10 +4,11 @@ title_zh: "香港華人醫學書院開辦"
 date: 1887-10-01
 year: 1887
 era: "Kowloon and the Victorian colony"
-tags: ["1887", "ai-draft", "british-colony", "higher-education", "hong-kong-history", "medical-history", "sun-yat-sen", "victorian-colony"]
+tags: ["evidence-a", "1887", "ai-draft", "british-colony", "higher-education", "hong-kong-history", "medical-history", "sun-yat-sen", "victorian-colony"]
 summary: "In October 1887, the Hong Kong College of Medicine for Chinese was established to train local practitioners in Western medicine, eventually numbering future revolutionary leader Sun Yat-sen among its first graduates."
 description: "In October 1887, the Hong Kong College of Medicine for Chinese was established to train local practitioners in Western medicine, eventually numbering future revolutionary leader Sun Yat-sen among its first graduates."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,17 @@ The opening of the college marked a major milestone in the educational and medic
 
 - [ ] Exact opening date and founding committee members of the Hong Kong College of Medicine for Chinese in 1887
 - [ ] Sun Yat-sen's precise graduation date and academic standing within his cohort
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [*Hong Kong Daily Press 1888-10-03* (1888), Internet Archive.](https://archive.org/details/NPDP18881003) (claims 1): Mentions the anniversary of the college's opening.
+
+**Still needed:** Founding committee members, and Sun Yat-sen's precise graduation date and academic standing.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

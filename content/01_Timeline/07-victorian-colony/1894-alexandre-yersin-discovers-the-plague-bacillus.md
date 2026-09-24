@@ -4,10 +4,11 @@ title_zh: "耶爾森發現鼠疫桿菌"
 date: 1894-06-20
 year: 1894
 era: "Kowloon and the Victorian colony"
-tags: ["1894", "1894-epidemic", "ai-draft", "alexandre-yersin", "plague-bacillus", "public-health", "victorian-colony", "victorian-hong-kong"]
+tags: ["evidence-b", "1894", "1894-epidemic", "ai-draft", "alexandre-yersin", "plague-bacillus", "public-health", "victorian-colony", "victorian-hong-kong"]
 summary: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
 description: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,19 @@ The discovery marked a monumental breakthrough in modern medicine and epidemiolo
 - [ ] Alexandre Yersin isolated the plague bacillus on or around June 20, 1894.
 - [ ] Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong.
 - [ ] Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Barbara J. Hawgood (2008). *Alexandre Yersin (1863–1943): discoverer of the plague bacillus, explorer and agronomist*. Journal of Medical Biography.](https://doi.org/10.1258/jmb.2007.007017) (claims 1): Identifies Yersin as the discoverer of the plague bacillus.
+- [Tom Solomon (1997). *Hong Kong, 1894: the role of James A Lowson in the controversial discovery of the plague bacillus*. The Lancet.](https://doi.org/10.1016/s0140-6736(97)01438-4) (claims 1, 3): Discusses the 1894 discovery in Hong Kong and mentions it was controversial, which relates to the competing research.
+- [David P. Steensma, Robert A. Kyle (2020). *Alexandre Yersin: Discoverer of the Plague Bacillus*. Mayo Clinic Proceedings.](https://doi.org/10.1016/j.mayocp.2019.11.006) (claims 1): Identifies Yersin as the discoverer of the plague bacillus.
+
+**Still needed:** Evidence for the makeshift straw hut (Claim 2) is not mentioned in any of the provided source descriptions.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

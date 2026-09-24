@@ -4,7 +4,7 @@ title_zh: "九龍城寨拆卸"
 date: 1993-03-23
 year: 1993
 era: "Sino-British negotiations and the transition"
-tags: ["1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
+tags: ["photo-corroborated", "1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
 summary: "On **March 23, 1993**, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 description: "On March 23, 1993, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 confidence: ai-draft
@@ -44,5 +44,28 @@ The destruction of the Kowloon Walled City marked a pivotal moment during the tr
 - [ ] The exact start date of structural demolition as March 23, 1993
 - [ ] The formal signing date and terms of the Sino-British agreement to demolish the Walled City in 1987
 - [ ] The exact population figures of the Walled City immediately prior to the clearance operations beginning
+
+## Photos from this period
+
+![A photograph depicting the extreme architectural density and complex structure of the Kowloon Walled City.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Kowloon_Walled_City%2C_Kowloon%2C_China_%28Cropped%29.tif/lossy-page1-960px-Kowloon_Walled_City%2C_Kowloon%2C_China_%28Cropped%29.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A photograph depicting the extreme architectural density and complex structure of the Kowloon Walled City.* (contemporary photo). Paul Rudolph, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City,_Kowloon,_China_(Cropped).tif).
+Corroborates: It provides a visual representation of the enclave before its demolition in 1993.
+
+![Stone remnants and carved slabs from the South Gate of the Kowloon Walled City.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg/960px-Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Stone remnants and carved slabs from the South Gate of the Kowloon Walled City.* (later photo of the site). Cathouse116, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg).
+Corroborates: The image shows physical remnants of the historical structures that once occupied the site before its demolition.
+
+![An aerial view of the Kowloon Walled City in 1989, illustrating its extreme urban density.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Kowloon_Walled_City_-_1989_Aerial.jpg/960px-Kowloon_Walled_City_-_1989_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*An aerial view of the Kowloon Walled City in 1989, illustrating its extreme urban density.* (contemporary photo). Ian Lambot, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_-_1989_Aerial.jpg).
+Corroborates: It provides a visual record of the Kowloon Walled City shortly before the demolition process began in 1993.
+
+![A museum model depicting an early stage of the Kowloon Walled City's layout.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg/960px-Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A museum model depicting an early stage of the Kowloon Walled City's layout.* (artefact). Ceeseven, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg).
+Corroborates: It provides a historical visual representation of the site that was demolished in 1993.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "辰丸事件 boykot 與反日運動"
 date: 1908-01-01
 year: 1908
 era: "The New Territories lease and the early 20th century"
-tags: ["1908", "ai-draft", "anti-japanese-movement", "boycott", "british-colonial-history", "chinese-nationalism", "new-territories", "tatsu-maru"]
+tags: ["evidence-none", "1908", "ai-draft", "anti-japanese-movement", "boycott", "british-colonial-history", "chinese-nationalism", "new-territories", "tatsu-maru"]
 summary: "In March 1908, a widespread merchant and consumer boycott of Japanese goods erupted in Hong Kong following the seizure of a Japanese steamer carrying arms, marking a significant early manifestation of modern Chinese nationalism in the British colony."
 description: "In March 1908, a widespread merchant and consumer boycott of Japanese goods erupted in Hong Kong following the seizure of a Japanese steamer carrying arms, marking a significant early manifestation of modern Chinese…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The **Tatsu Maru boycott** is widely viewed by historians as a watershed moment 
 
 - [ ] The precise timeline of merchant meetings and boycott enforcement actions within Hong Kong in March 1908.
 - [ ] The extent of direct involvement by colonial police in suppressing the anti-Japanese demonstrations.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the timeline of merchant meetings, boycott enforcement, and colonial police involvement within Hong Kong during the 1908 Tatsu Maru boycott is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

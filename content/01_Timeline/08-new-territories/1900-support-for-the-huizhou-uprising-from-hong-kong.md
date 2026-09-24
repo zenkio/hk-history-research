@@ -4,10 +4,11 @@ title_zh: "香港對惠州起義的支持"
 date: 1900-10-06
 year: 1900
 era: "The New Territories lease and the early 20th century"
-tags: ["1900", "ai-draft", "british-colonial-history", "huizhou-uprising", "new-territories", "qing-dynasty", "revive-china-society", "sun-yat-sen"]
+tags: ["evidence-none", "1900", "ai-draft", "british-colonial-history", "huizhou-uprising", "new-territories", "qing-dynasty", "revive-china-society", "sun-yat-sen"]
 summary: "In October 1900, **Sun Yat-sen** and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal role in early Chinese revolutionary history."
 description: "In October 1900, Sun Yat-sen and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The event underscored Hong Kong's dual and contradictory role in the late Qing p
 
 - [ ] The exact extent of direct financial and arms transit through Hong Kong for the October 1900 Huizhou Uprising
 - [ ] Specific deportation orders or police actions taken by the Hong Kong government against revolutionaries around October 1900
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both claims 1 and 2 is still needed, as none of the provided sources relate to the 1900 Huizhou Uprising or revolutionary activities in Hong Kong.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

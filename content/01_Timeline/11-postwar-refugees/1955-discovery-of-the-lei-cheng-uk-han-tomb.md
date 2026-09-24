@@ -4,7 +4,7 @@ title_zh: "李鄭屋漢墓的發現"
 date: 1955-08-09
 year: 1955
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1955", "ai-draft", "archaeology", "colonial-history", "han-dynasty", "lei-cheng-uk", "postwar-hong-kong", "postwar-refugees"]
+tags: ["photo-corroborated", "1955", "ai-draft", "archaeology", "colonial-history", "han-dynasty", "lei-cheng-uk", "postwar-hong-kong", "postwar-refugees"]
 summary: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese civilization in Hong Kong."
 description: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese…"
 confidence: ai-draft
@@ -43,5 +43,13 @@ Before this discovery, knowledge of Hong Kong's early history relied heavily on 
 - [ ] Construction workers uncovered the tomb on August 9, 1955.
 - [ ] Over fifty grave goods were recovered from the multi-chamber tomb.
 - [ ] The tomb structure is definitively dated to the Eastern Han dynasty.
+
+## Photos from this period
+
+![A large crowd gathers at the hillside where the Lei Cheng Uk Han Tomb was discovered in 1955.](https://upload.wikimedia.org/wikipedia/commons/4/4c/Lcutomb_1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A large crowd gathers at the hillside where the Lei Cheng Uk Han Tomb was discovered in 1955.* (contemporary photo). Sing Pao, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lcutomb_1955.jpg).
+Corroborates: It provides a visual record of the discovery of the ancient tomb as described in the event.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,10 +4,11 @@ title_zh: "香港天文台創立"
 date: 1883-03-02
 year: 1883
 era: "Kowloon and the Victorian colony"
-tags: ["1883", "ai-draft", "british-colony", "hong-kong-observatory", "meteorology", "typhoon-warnings", "victorian-colony"]
+tags: ["evidence-none", "1883", "ai-draft", "british-colony", "hong-kong-observatory", "meteorology", "typhoon-warnings", "victorian-colony"]
 summary: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
 description: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The founding of the Observatory marked a critical transition from ad hoc weather
 
 - [ ] The Hong Kong Observatory was officially established on March 2, 1883.
 - [ ] William Doberck served as the first director of the Hong Kong Observatory.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the official establishment date and the first director of the Hong Kong Observatory is still needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

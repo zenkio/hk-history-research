@@ -4,10 +4,11 @@ title_zh: "新界六日戰爭"
 date: 1899-04-14
 year: 1899
 era: "The New Territories lease and the early 20th century"
-tags: ["photo-corroborated", "1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
+tags: ["evidence-b", "photo-corroborated", "1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
 summary: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their military defeat."
 description: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -59,6 +60,18 @@ Corroborates: This official announcement of the British takeover precipitated th
 
 *British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.* (contemporary photo). The National Archives UK, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:British_take_over_the_New_Territories.jpg).
 Corroborates: It documents the official colonial takeover of the New Territories that triggered the armed resistance of the local indigenous clans.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Patrick H. Hase (2008). *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*. Project Muse (Johns Hopkins University).](https://openalex.org/W607746270) (claims 1, 2): This scholarship specifically focuses on the Six-Day War of 1899 and the resistance in the New Territories.
+
+**Still needed:** Explicit confirmation of exact casualty numbers and details on Qing officials' involvement in Shenzhen is not provided in the snippet.
 
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

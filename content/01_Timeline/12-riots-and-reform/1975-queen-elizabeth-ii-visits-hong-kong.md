@@ -4,7 +4,7 @@ title_zh: "英國女王伊麗莎白二世訪港"
 date: 1975-05-04
 year: 1975
 era: "Riots and the MacLehose reforms"
-tags: ["1975", "ai-draft", "civic-pride", "colonial-history", "maclehose-era", "riots-and-reform", "royal-visit"]
+tags: ["photo-corroborated", "1975", "ai-draft", "civic-pride", "colonial-history", "maclehose-era", "riots-and-reform", "royal-visit"]
 summary: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations. The highly publicized four-day tour generated widespread civic pageantry while also prompting varied interpretations across local and international political spectrums."
 description: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations."
 confidence: ai-draft
@@ -45,5 +45,13 @@ The visit is often remembered as a high-water mark of colonial civic engagement,
 - [ ] Queen Elizabeth II arrived in Hong Kong on May 4, 1975.
 - [ ] The royal itinerary included visits to Choi Hung Estate, Kwun Tong, and Queen Elizabeth Hospital.
 - [ ] The visit represented the first time a reigning British monarch visited the territory.
+
+## Photos from this period
+
+![A modern view of Oi Man Estate in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/An_old_public_housing_estate_in_a_sunny_day.jpg/960px-An_old_public_housing_estate_in_a_sunny_day.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A modern view of Oi Man Estate in Hong Kong.* (later photo of the site). Rex4712, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:An_old_public_housing_estate_in_a_sunny_day.jpg).
+Corroborates: The estate is identified as a location visited by Queen Elizabeth II during her 1975 tour.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

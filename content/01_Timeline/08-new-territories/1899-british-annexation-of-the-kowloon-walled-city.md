@@ -4,10 +4,11 @@ title_zh: "英軍佔領九龍寨城"
 date: 1899-12-27
 year: 1899
 era: "The New Territories lease and the early 20th century"
-tags: ["1899", "ai-draft", "british-imperialism", "colonial-history", "kowloon-walled-city", "new-territories", "qing-dynasty"]
+tags: ["evidence-none", "1899", "ai-draft", "british-imperialism", "colonial-history", "kowloon-walled-city", "new-territories", "qing-dynasty"]
 summary: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave. This event created a complex jurisdictional anomaly that would persist for decades."
 description: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The annexation marked a decisive assertion of unilateral British authority in vi
 
 - [ ] British troops entered and occupied the Kowloon Walled City on December 27, 1899.
 - [ ] Governor Sir Henry Arthur Blake ordered the expulsion of Qing officials from the Walled City.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the British occupation of the Kowloon Walled City on December 27, 1899, and Governor Sir Henry Arthur Blake's orders regarding Qing officials.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

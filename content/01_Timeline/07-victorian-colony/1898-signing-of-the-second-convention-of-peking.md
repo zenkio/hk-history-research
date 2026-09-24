@@ -4,10 +4,11 @@ title_zh: "展拓香港界址專條"
 date: 1898-06-09
 year: 1898
 era: "Kowloon and the Victorian colony"
-tags: ["photo-corroborated", "1898", "ai-draft", "british-empire", "hong-kong-history", "new-territories", "qing-dynasty", "second-convention-of-peking", "victorian-colony"]
+tags: ["evidence-a", "photo-corroborated", "1898", "ai-draft", "british-empire", "hong-kong-history", "new-territories", "qing-dynasty", "second-convention-of-peking", "victorian-colony"]
 summary: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting the stage for its 1997 return."
 description: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -66,6 +67,23 @@ Corroborates: It corroborates the expansion of the colony's size through the lea
 
 *Sir Henry Arthur Blake, Governor of Hong Kong, and the Viceroy of Guangdong, circa 1898.* (contemporary photo). Not identified, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sir_Henry_Arthur_Blake_and_Viceroy_of_Guangdong.jpg).
 Corroborates: It depicts the primary British and Chinese officials involved in the administration and diplomatic relations during the signing of the Second Convention of Peking.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), CO 700/HongKongandChina12, 1898. Hong Kong Extension. Reproduction of the map attached to the Convention between Great Britain and China signed at Peking on the 9 June 1898. About 5 miles to 1 inch. Author, Publisher, etc: War Office](https://discovery.nationalarchives.gov.uk/details/r/C3476966) (claims 1): Contains a reproduction of the map attached to the Convention signed on 9 June 1898.
+- [The National Archives (UK), FO 925/2345, 1898. Hong Kong extension. Reproduction of the map attached to the convention between Great Britain and China signed at Peking on the 9 June 1898. IDWO 1376. 1:314,265. War Office.](https://discovery.nationalarchives.gov.uk/details/r/C3818710) (claims 1): Contains a reproduction of the map attached to the Convention signed on 9 June 1898.
+- [The National Archives (UK), FO 925/25162, 1921. Map of Hong-Kong and the territory leased to Great Britain under the convention between Great Britain and China, signed at Peking, 9 June 1898. GSGS 1393. 1:84,480. War Office.](https://discovery.nationalarchives.gov.uk/details/r/C3823285) (claims 1): Map of the territory leased under the Convention signed on 9 June 1898.
+- [The National Archives (UK), FO 925/25037, 1905. Map of Hong Kong and of the territory leased to Great Britain under the Convention between Great Britain and China, signed at Peking, 9 June 1898. TSGS 1393. 1:84,480. War Office.](https://discovery.nationalarchives.gov.uk/details/r/C3823160) (claims 1): Map of the territory leased under the Convention signed on 9 June 1898.
+- [The National Archives (UK), FO 925/25219, 1923. Map of Hong Kong and of the territory leased to Great Britain under the Convention between Great Britain and China signed at Peking on 9 June 1898. GSGS 1393. 1:1,84,490. War Office.](https://discovery.nationalarchives.gov.uk/details/r/C3823342) (claims 1): Map of the territory leased under the Convention signed on 9 June 1898.
+- [The National Archives (UK), CO 700/HongKongandChina30, 1905. Map of Hong-Kong and of the Territory leased to Great Britain under the Convention between Great Britain and China signed at Peking on the 9 June, 1898. [Earlier edition in Case.] 3/4 inch to 1 mile. ](https://discovery.nationalarchives.gov.uk/details/r/C3476984) (claims 1): Map of the territory leased under the Convention signed on 9 June 1898.
+
+**Still needed:** Evidence for diplomatic communications regarding the 99-year lease duration and explicit island counts is still needed.
 
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

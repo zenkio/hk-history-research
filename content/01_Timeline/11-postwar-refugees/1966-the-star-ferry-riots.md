@@ -4,7 +4,7 @@ title_zh: "天星小輪加價暴動"
 date: 1966-04-04
 year: 1966
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
+tags: ["photo-corroborated", "1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
 summary: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 description: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 confidence: ai-draft
@@ -47,5 +47,13 @@ The Star Ferry Riots marked a turning point in Hong Kong's postwar history. Whil
 - [ ] The exact date So Sau-chung began his hunger strike at the Star Ferry pier
 - [ ] The precise number of casualties and arrests recorded during the April 1966 disturbances
 - [ ] The specific findings and recommendations of the Kowloon Disturbances 1966 Commission of Inquiry
+
+## Photos from this period
+
+![A petition form created by Elsie Elliot to oppose the increase in public transport fares in 1966.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Elliot_petition.jpg/960px-Elliot_petition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A petition form created by Elsie Elliot to oppose the increase in public transport fares in 1966.* (document). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elliot_petition.jpg).
+Corroborates: It corroborates the widespread public opposition and organized protests against the proposed Star Ferry fare increase.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,10 +4,11 @@ title_zh: "伍珅被任命為首位華人立法局議員"
 date: 1880-01-01
 year: 1880
 era: "Kowloon and the Victorian colony"
-tags: ["1880", "ai-draft", "colonial-history", "legislative-council", "ng-choy", "political-representation", "victorian-colony", "victorian-era"]
+tags: ["evidence-none", "1880", "ai-draft", "colonial-history", "legislative-council", "ng-choy", "political-representation", "victorian-colony", "victorian-era"]
 summary: "In 1880, barrister Ng Choy became the first ethnic Chinese member of Hong Kong's Legislative Council, marking a significant, albeit limited, milestone in colonial political representation."
 description: "In 1880, barrister Ng Choy became the first ethnic Chinese member of Hong Kong's Legislative Council, marking a significant, albeit limited, milestone in colonial political representation."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ Historians generally view **Ng Choy**'s appointment as a watershed moment for lo
 - [ ] Ng Choy was officially appointed to the Legislative Council in the year 1880.
 - [ ] Ng Choy was the first ethnic Chinese person to serve as a Legislative Councillor in Hong Kong.
 - [ ] Governor John Pope Hennessy was responsible for making the appointment.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for all three claims is missing; the provided sources focus on modern political history and social movements rather than the 1880 appointment of Ng Choy.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

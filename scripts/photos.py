@@ -24,6 +24,7 @@ import urllib.request
 from datetime import datetime
 
 from gemini_pool import QuotaExhausted, RequestRejected
+from state import PAGE_LOCK
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -186,6 +187,11 @@ def photo_block(photos):
 
 
 def add_photos_to_page(path, photos):
+    with PAGE_LOCK:
+        return _add_photos_to_page_unlocked(path, photos)
+
+
+def _add_photos_to_page_unlocked(path, photos):
     text = _page_parts(path)[0]
     block = "\n".join(photo_block(photos)) + "\n"
     if "\nPart of: " in text:
@@ -227,12 +233,12 @@ def find_event_photos(pool, path, used=frozenset()):
     return chosen
 
 
-def photos_batch(pool, plan, deadline, limit=None, save=None, events=None):
-    """Illustrate event pages (in `events` order, default plan order); QuotaExhausted from the vision role ends the batch."""
-    done_map = plan.setdefault("photos", {})
+def photos_batch(pool, done_map, events, deadline, limit=None, save=None):
+    """Illustrate event pages in `events` order; progress in done_map (rel -> files or "none").
+    QuotaExhausted from the vision role ends the batch."""
     used = {f for v in done_map.values() if isinstance(v, list) for f in v}
     done = 0
-    for ev in events if events is not None else plan.get("events", []):
+    for ev in events:
         rel = ev.get("file")
         if not rel or rel in done_map:
             continue
@@ -254,6 +260,6 @@ def photos_batch(pool, plan, deadline, limit=None, save=None, events=None):
         done += 1
         print(f"[photos] {rel}: {len(chosen)} photo(s)")
         if save:
-            save(plan)
+            save(done_map)
         time.sleep(1)  # be polite to the Commons API
     return done

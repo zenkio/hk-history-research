@@ -28,6 +28,8 @@ import urllib.parse
 import urllib.request
 from datetime import datetime
 
+from state import PAGE_LOCK
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INBOX = os.path.join(PROJECT_ROOT, "research", "inbox")
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -187,6 +189,11 @@ def research_block(row, source_name, results):
 
 
 def attach(path, block, best_grade):
+    with PAGE_LOCK:
+        return _attach_unlocked(path, block, best_grade)
+
+
+def _attach_unlocked(path, block, best_grade):
     with open(path, encoding="utf-8") as f:
         text = f.read()
     text = re.sub(r"\n## Research notes\n.*?(?=\n## |\nPart of: |\Z)", "\n", text, flags=re.S)
@@ -210,12 +217,11 @@ def attach(path, block, best_grade):
     return current if not best_grade or rank.get(best_grade, 0) <= rank.get(current, 0) else best_grade
 
 
-def import_inbox(plan):
+def import_inbox(events, grades):
+    """Import every file in research/inbox/; grades (rel -> evidence grade) is updated in place."""
     files = sorted(glob.glob(os.path.join(INBOX, "*.md")))
     if not files:
         return 0
-    events = plan.get("events", [])
-    grades = plan.setdefault("evidence", {})
     unmatched, attached = [], 0
     for fpath in files:
         name = os.path.basename(fpath)

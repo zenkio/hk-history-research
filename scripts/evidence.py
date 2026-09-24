@@ -30,6 +30,7 @@ import urllib.request
 from datetime import datetime
 
 from gemini_pool import QuotaExhausted, RequestRejected
+from state import PAGE_LOCK, atomic_write
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -170,6 +171,11 @@ def evidence_block(kept, missing, model):
 
 
 def write_evidence(path, grade, lines):
+    with PAGE_LOCK:
+        return _write_evidence_unlocked(path, grade, lines)
+
+
+def _write_evidence_unlocked(path, grade, lines):
     text = read_page(path)[0]
     block = "\n".join(lines) + "\n"
     text = re.sub(r"\n## Evidence\n.*?(?=\n## |\nPart of: |\Z)", "\n", text, flags=re.S)
@@ -232,8 +238,8 @@ def evidence_for_page(pool, path):
     return grade
 
 
-def evidence_batch(pool, plan, deadline, events, limit=None, save=None):
-    done_map = plan.setdefault("evidence", {})
+def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
+    """Attach evidence to event pages in `events` order; progress in done_map (rel -> grade)."""
     done = 0
     for ev in events:
         rel = ev.get("file")
@@ -259,15 +265,14 @@ def evidence_batch(pool, plan, deadline, events, limit=None, save=None):
         done += 1
         print(f"[evidence] {rel}: grade {grade}")
         if save:
-            save(plan)
+            save(done_map)
     return done
 
 
-def write_status_page(plan):
+def write_status_page(events, grades):
     """content/00_Meta/Evidence_Status.md: how much of the site is backed by evidence."""
     from collections import Counter
-    grades = plan.get("evidence", {})
-    total = sum(1 for e in plan.get("events", []) if e.get("status") == "done")
+    total = sum(1 for e in events if e.get("status") == "done")
     c = Counter(grades.values())
     lines = ["---", 'title: "Evidence status"', 'description: "How many AI-drafted pages have archive or scholarly evidence attached."',
              "---", "",
@@ -281,21 +286,21 @@ def write_status_page(plan):
              "contradictions found: [[tags/needs-correction|needs-correction]].", ""]
     path = os.path.join(PROJECT_ROOT, "content", "00_Meta", "Evidence_Status.md")
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    atomic_write(path, "\n".join(lines))
 
 
 if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from gemini_pool import ModelPool
-    from seed_history import load_plan, save_plan, by_priority
+    import state
+    from seed_history import load_plan, by_priority
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=5)
     ap.add_argument("--minutes", type=float, default=30)
     args = ap.parse_args()
     plan = load_plan()
-    n = evidence_batch(ModelPool(), plan, time.time() + args.minutes * 60, by_priority(plan["events"]),
-                       limit=args.limit, save=save_plan)
-    write_status_page(plan)
-    save_plan(plan)
+    grades = state.load("evidence")
+    n = evidence_batch(ModelPool(), grades, by_priority(plan["events"]), time.time() + args.minutes * 60,
+                       limit=args.limit, save=lambda d: state.save("evidence", d))
+    write_status_page(plan["events"], grades)
     print(f"Evidence attached to {n} pages")

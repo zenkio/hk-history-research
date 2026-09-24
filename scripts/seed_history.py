@@ -30,6 +30,8 @@ import sys
 import json
 import time
 import argparse
+import threading
+import traceback
 import subprocess
 from datetime import datetime
 
@@ -39,6 +41,8 @@ from translate import translate_batch
 from photos import photos_batch
 from evidence import evidence_batch, write_status_page
 from research_import import import_inbox
+import state
+from state import PAGE_LOCK
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -51,8 +55,9 @@ CORE_ERA_START = "05-opium-war"
 # Readers can use the browser's built-in translation; AI translation is off so the
 # OpenRouter and Gemma budgets go to research and verification instead.
 TRANSLATE_WITH_AI = False
-PHOTO_EVENTS_PER_RUN = 20
-EVIDENCE_PAGES_PER_RUN = 40
+# Upper bounds per run; in practice the run's time budget stops the workers first.
+PHOTO_EVENTS_PER_RUN = 60
+EVIDENCE_PAGES_PER_RUN = 150
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
 ERAS = [
@@ -169,6 +174,11 @@ def load_plan():
     else:
         plan = {"eras": {}, "events": []}
     plan.setdefault("entities", {})
+    # Worker progress lives in scripts/state/<name>.json so parallel threads never share a file.
+    for key in ("photos", "evidence"):
+        if key in plan:
+            merged = {**plan.pop(key), **state.load(key)}
+            state.save(key, merged)
     for slug, _, _ in ERAS:
         plan["eras"].setdefault(slug, {"outlined": False, "overview": False, "rounds": 0})
     return plan
@@ -360,6 +370,11 @@ def write_entity_page(ent, data, model):
 
 
 def apply_verification(path, verdicts, sources, model):
+    with PAGE_LOCK:
+        return _apply_verification_unlocked(path, verdicts, sources, model)
+
+
+def _apply_verification_unlocked(path, verdicts, sources, model):
     """Replace the page's claim checklist with fact-check results and web sources."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -458,28 +473,58 @@ def next_task(plan):
     return None
 
 
+def research_worker(pool, events, deadline):
+    """OpenRouter + free archive APIs (+ Gemma): Deep Research import, then evidence grades."""
+    grades = state.load("evidence")
+    import_inbox(events, grades)
+    state.save("evidence", grades)
+    n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
+                       save=lambda d: state.save("evidence", d))
+    write_status_page(events, grades)
+    return n
+
+
+def photos_worker(pool, events, deadline):
+    """Gemma vision + Wikimedia Commons: photos for event pages."""
+    return photos_batch(pool, state.load("photos"), events, deadline, limit=PHOTO_EVENTS_PER_RUN,
+                        save=lambda d: state.save("photos", d))
+
+
+def start_worker(name, fn, results):
+    def target():
+        try:
+            results[name] = fn()
+        except Exception:
+            print(f"[{name}] worker crashed:")
+            traceback.print_exc()
+            results[name] = 0
+    t = threading.Thread(target=target, name=name, daemon=True)
+    t.start()
+    return t
+
+
 def run(max_calls, minutes, commit=False):
+    """Three workers run in parallel, each on a different quota, so a slow or exhausted
+    provider only holds up its own work:
+      research (thread): OpenRouter + archive APIs -> Deep Research import, evidence
+      photos   (thread): Gemma vision + Commons    -> photo evidence
+      gemini   (main):   Gemini 2.5 / 3.x           -> fact-check, then drafting
+    """
     pool = ModelPool()
     plan = load_plan()
     deadline = time.time() + minutes * 60
-    done = 0
     print(f"Quota at start: {pool.summary()}")
     print(f"Model ids: {pool.state['resolved']}")
-    done += verify_pages(pool, plan, deadline)
-    # Owner-supplied Gemini Deep Research results (research/inbox/), link-checked.
-    import_inbox(plan)
-    save_plan(plan)
-    # Top priority (BACKLOG.md): attach archive and scholarly evidence to drafted pages.
-    done += evidence_batch(pool, plan, deadline, by_priority(plan["events"]),
-                           limit=EVIDENCE_PAGES_PER_RUN, save=save_plan)
-    write_status_page(plan)
+    events = by_priority(plan["events"])  # snapshot: workers never see the drafting loop's appends
+    results = {}
+    workers = [start_worker("research", lambda: research_worker(pool, events, deadline), results),
+               start_worker("photos", lambda: photos_worker(pool, events, deadline), results)]
+
+    done = verify_pages(pool, plan, deadline)
     if TRANSLATE_WITH_AI:
         # OpenRouter's free budget is separate from Gemini's, so spend it every run.
         openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
         done += translate_batch(pool, plan, deadline, only=openrouter, save=save_plan)
-    # Illustrate a slice of event pages with freely licensed Wikimedia Commons photos.
-    done += photos_batch(pool, plan, deadline, limit=PHOTO_EVENTS_PER_RUN, save=save_plan,
-                         events=by_priority(plan["events"]))
     while done < max_calls and time.time() < deadline:
         task = next_task(plan)
         if task is None:
@@ -539,11 +584,17 @@ def run(max_calls, minutes, commit=False):
                 git_commit()
             except subprocess.CalledProcessError as e:
                 print(f"Periodic commit failed, will retry at the end: {e}")
+    for t in workers:
+        t.join(timeout=max(0, deadline - time.time()) + 180)
+        if t.is_alive():
+            print(f"[{t.name}] still running at the deadline; its progress so far is saved")
+    done += sum(results.values())
     counts = {}
     for e in plan["events"]:
         counts[e["status"]] = counts.get(e["status"], 0) + 1
     ent_done = sum(1 for e in plan["entities"].values() if e["status"] == "done")
     checked = sum(1 for e in plan["events"] if e.get("verified"))
+    print(f"Workers: {results}")
     print(f"Ran {done} tasks. Events: {counts}, fact-checked {checked}. "
           f"Entities: {ent_done}/{len(plan['entities'])}. Quota now: {pool.summary()}")
     return done
@@ -551,7 +602,7 @@ def run(max_calls, minutes, commit=False):
 
 def git_commit():
     paths = ["content/00_Meta", "content/01_Timeline", "content/02_Entities", "content/zh",
-             "research", "scripts/seed_plan.json", "scripts/quota_state.json"]
+             "research", "scripts/state", "scripts/seed_plan.json", "scripts/quota_state.json"]
     subprocess.run(["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
                    cwd=PROJECT_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:

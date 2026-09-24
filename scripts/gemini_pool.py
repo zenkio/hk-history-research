@@ -17,6 +17,7 @@ import os
 import re
 import json
 import time
+import threading
 import urllib.request
 import urllib.error
 from collections import deque
@@ -124,6 +125,10 @@ class ModelPool:
         self.no_media = set()  # models found this run to reject image/video input
         self.unavailable = set()  # models not usable in this run only (missing key, no free match)
         self.cooldown = {}  # model -> time until which it is skipped after repeated overloads
+        # Thread safety: seed_history runs several workers on one pool. `lock` guards the
+        # quota state; one lock per model serialises pacing so RPM/TPM hold across threads.
+        self.lock = threading.RLock()
+        self.model_locks = {}
         self.state = self._load_state()
         self._resolve_ids()
         self._resolve_openrouter()
@@ -197,8 +202,11 @@ class ModelPool:
         return state
 
     def save(self):
-        with open(STATE_FILE, "w", encoding="utf-8") as f:
-            json.dump(self.state, f, indent=2)
+        with self.lock:
+            tmp = STATE_FILE + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(self.state, f, indent=2)
+            os.replace(tmp, STATE_FILE)
 
     # ---- budget ------------------------------------------------------
     def used(self, key):
@@ -220,13 +228,18 @@ class ModelPool:
         return rec, cfg["rpd"]
 
     def _count(self, key):
-        self.state["used"][key] = self.used(key) + 1
-        rec, _ = self._provider_used(self._provider(key))
-        if rec is not None:
-            rec["count"] += 1
-        self.save()
+        with self.lock:
+            self.state["used"][key] = self.used(key) + 1
+            rec, _ = self._provider_used(self._provider(key))
+            if rec is not None:
+                rec["count"] += 1
+            self.save()
 
     def remaining(self, key, role):
+        with self.lock:
+            return self._remaining(key, role)
+
+    def _remaining(self, key, role):
         if key in self.state["parked"] or key in self.unavailable:
             return 0
         left = self.models[key]["rpd"] - self.used(key)
@@ -243,6 +256,10 @@ class ModelPool:
         return sum(self.remaining(k, role) for k in self.routing.get(role, []))
 
     def summary(self):
+        with self.lock:
+            return self._summary()
+
+    def _summary(self):
         parts = []
         for key, m in self.models.items():
             if self.used(key) or key in self.state["parked"]:
@@ -253,25 +270,35 @@ class ModelPool:
         return ", ".join(parts) or "nothing used yet"
 
     def _park(self, key, reason):
-        self.state["parked"][key] = reason
-        self.save()
+        with self.lock:
+            self.state["parked"][key] = reason
+            self.save()
         print(f"  [pool] {key} parked for today: {reason}")
 
     def _pace(self, key, prompt, extra=0):
+        with self.lock:
+            model_lock = self.model_locks.setdefault(key, threading.Lock())
+        with model_lock:
+            self._pace_locked(key, prompt, extra)
+
+    def _pace_locked(self, key, prompt, extra):
         m = self.models[key]
         wait = self.last_call.get(key, 0) + 60.0 / m["rpm"] * 1.15 - time.time()
         if wait > 0:
             time.sleep(wait)
         # Tokens per minute: sliding 60s window of real usage.
-        log = self.token_log.setdefault(key, deque())
+        with self.lock:
+            log = self.token_log.setdefault(key, deque())
         need = min(len(prompt) // 2 + EXPECTED_OUTPUT_TOKENS + extra, m["tpm"])
         while True:
-            now = time.time()
-            while log and now - log[0][0] > 60:
-                log.popleft()
-            if not log or sum(t for _, t in log) + need <= m["tpm"]:
-                break
-            time.sleep(max(0.5, 60 - (now - log[0][0])))
+            with self.lock:
+                now = time.time()
+                while log and now - log[0][0] > 60:
+                    log.popleft()
+                if not log or sum(t for _, t in log) + need <= m["tpm"]:
+                    break
+                oldest = log[0][0]
+            time.sleep(max(0.5, 60 - (now - oldest)))
         self.last_call[key] = time.time()
 
     # ---- calls -------------------------------------------------------
@@ -362,7 +389,8 @@ class ModelPool:
                     text, sources, tokens = self._call_openrouter(m, prompt)
                 else:
                     text, sources, tokens = self._call_google(m, prompt, search, parse is _parse_json, media)
-                self.token_log.setdefault(key, deque()).append(
+                with self.lock:
+                    self.token_log.setdefault(key, deque()).append(
                     (time.time(), tokens or len(prompt) // 2 + EXPECTED_OUTPUT_TOKENS))
                 return parse(text), key, sources
             except (json.JSONDecodeError, TypeError, ValueError, KeyError, IndexError):

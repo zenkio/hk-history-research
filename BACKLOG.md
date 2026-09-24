@@ -76,6 +76,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## Done
 
+- 2026-09-24: Parallel workers (Gemini / research / photos) in the seeding step; commit per page; overload cooldown.
+
 - 2026-09-24: Evidence engine v1 and Deep Research importer.
 
 - 2026-09-24: Focus set: 1841+ first; AI translation off; pre-1841 eras no longer deepened.
@@ -91,4 +93,5 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 | 2026-09-23 | Rights-held photos are described and linked, never embedded | Copyright belongs to donors and families |
 | 2026-09-24 | Core scope 1841 to today; pre-1841 only with evidence | Owner priority |
 | 2026-09-24 | AI translation off; browser translation for now | Spend AI budget on verification |
+| 2026-09-24 | Parallel workers per quota inside one job, not separate jobs | Separate jobs would race on git pushes and edit the same pages; threads share one checkout with page locks |
 | 2026-09-24 | Verification before any new content type | AI drafts are ~95% of the site and unproven |

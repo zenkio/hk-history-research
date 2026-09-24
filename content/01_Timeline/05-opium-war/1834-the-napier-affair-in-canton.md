@@ -48,4 +48,15 @@ The Napier Affair highlighted the irreconcilable differences between British not
 - [ ] Lord Napier arrived in Canton in July 1834 and attempted to deliver a direct letter to Viceroy Lu Kun.
 - [ ] British warships forced their way past the Bocca Tigris forts in September 1834 before Napier retreated to Macao and died in October 1834.
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Great Britain, Foreign Office, *Correspondence Relating to China* (1840), FO 17/7; *The Chinese Repository*, Vol. 3, No. 4 (August 1834), pp. 188–192. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/7)
+- **Grade B:** Fairbank, J.K. (1953), *Trade and Diplomacy on the China Coast: The Opening of Treaty Ports, 1842-1854*, Harvard University Press, DOI: 10.1007/978-1-349-00508-6. [DOI ?](https://doi.org/10.1007/978-1-349-00508-6)
+- **Grade C:** UK National Archives FO 17 Series Records Overview, https://discovery.nationalarchives.gov.uk/details/r/C4320. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320)
+
+**Disputes or myths:** Contradicts the common myth that Anglo-Chinese conflict was purely about opium, demonstrating that fundamental diplomatic friction over Westphalian equality versus tributary protocol initiated the confrontation.
+
+
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

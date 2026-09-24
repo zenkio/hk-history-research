@@ -47,4 +47,15 @@ Pottinger's arrival marked a crucial turning point in Hong Kong's transition fro
 - [ ] Sir Henry Pottinger officially arrived in Hong Kong on August 10, 1841
 - [ ] Lord Palmerston explicitly dismissed Charles Elliot due to dissatisfaction with the Convention of Chuenpi
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Foreign Office Instructions to Pottinger, 1841, UK National Archives, FO 17/55; *The Chinese Repository*, Vol. 10, No. 8 (August 1841), pp. 478–480. [link ✗](https://theartsjournal.org/index.php/site/article/download/528/302/1533) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/55)
+- **Grade B:** Fairbank, J.K. (1953), *Trade and Diplomacy on the China Coast: The Opening of Treaty Ports, 1842-1854*, Harvard University Press, DOI: 10.1007/978-1-349-00508-6. [DOI ?](https://doi.org/10.1007/978-1-349-00508-6)
+- **Grade C:** UK National Archives Governor Profiles. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320) [link ✓](https://www.gale.com/product-catalog/primary-sources/china-and-the-modern-world/china-and-the-modern-world-hongkong-britain-china)
+
+**Disputes or myths:** While Foreign Secretary Palmerston famously dismissed Hong Kong as a "barren island," Pottinger recognized that Victoria Harbour was vital for long-term commerce.
+
+
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

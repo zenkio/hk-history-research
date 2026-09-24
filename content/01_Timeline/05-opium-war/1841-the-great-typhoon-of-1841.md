@@ -4,10 +4,11 @@ title_zh: "一八四一年己丑風災"
 date: 1841-07-21
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "colonial-history", "first-opium-war", "natural-disaster", "opium-war", "typhoon"]
+tags: ["evidence-a", "1841", "ai-draft", "colonial-history", "first-opium-war", "natural-disaster", "opium-war", "typhoon"]
 summary: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental vulnerabilities of the island."
 description: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,16 @@ The disaster served as a brutal awakening for the British colonial authorities r
 
 - [ ] Did the Great Typhoon specifically strike Hong Kong on July 21, 1841?
 - [ ] What was the exact extent of the damage to the British fleet and matshed settlements according to primary naval records?
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Meteorological Logs &amp; Colonial Despatches, July 1841, UK National Archives, CO 129/1, fo. 210–225; *Canton Register*, Vol. 14, No. 29 (20 July 1841). [link ✓](https://archive.org/download/linzexuyapianzha00hong/linzexuyapianzha00hong.pdf) [link ✓](https://houghton.hk/hong-kong-part-1/) [link ✓](https://sillares.uanl.mx/index.php/s/article/view/140) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/1)
+- **Grade B:** Pryor, M. (2015), "Street Tree Planting in Hong Kong in the Early Colonial Period (1842-98)", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 55, pp. 33–56. [link ✗](https://www.researchgate.net/publication/290549944\_Watching\_over\_Hong\_Kong\_Private\_policing\_1841-1941)
+- **Grade C:** Gwulo: Old Hong Kong Database, https://gwulo.com/node/8740. [link ✓](https://gwulo.com/node/8740) [link ✗](https://wiki.fibis.org/w/Hong\_Kong)
+
+**Disputes or myths:** The destruction was cited in Parliament as proof that Hong Kong was unviable, nearly driving the British Cabinet to abandon the territory altogether.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

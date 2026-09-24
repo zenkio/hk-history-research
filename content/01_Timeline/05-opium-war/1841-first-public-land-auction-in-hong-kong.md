@@ -4,10 +4,11 @@ title_zh: "香港首次公開土地拍賣"
 date: 1841-06-14
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "colonial-history", "crown-lease", "first-land-auction", "first-opium-war", "opium-war", "victoria-city"]
+tags: ["evidence-a", "1841", "ai-draft", "colonial-history", "crown-lease", "first-land-auction", "first-opium-war", "opium-war", "victoria-city"]
 summary: "On June 14, 1841, British authorities held the first public land auction in Hong Kong, offering initial waterfront lots that laid the foundations for Victoria City and commercial expansion."
 description: "On June 14, 1841, British authorities held the first public land auction in Hong Kong, offering initial waterfront lots that laid the foundations for Victoria City and commercial expansion."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,16 @@ This first land sale established the crown lease system as the fundamental model
 
 - [ ] The first public land auction took place specifically on June 14, 1841.
 - [ ] Initial waterfront lots auctioned formed the primary basis for early Victoria City development.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Schedule of Public Land Sales, 14 June 1841, UK National Archives, CO 129/1, fo. 120–135. [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [link ✓](https://sillares.uanl.mx/index.php/s/article/view/140) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/1)
+- **Grade B:** Chu, C. (2022), *Building Colonial Hong Kong: Speculative Development and Segregation in the City*, Routledge, DOI: 10.4324/9781003264668. [DOI ✗](https://doi.org/10.4324/9781003264668) _(DOI resolves to: Common Hegemony, Populism, and the New Municipalism)_ [link ✓](https://www.cambridge.org/core/journals/historical-journal/article/british-colonial-rule-over-littoral-space-and-watercraft-in-hong-kong-18411898/F2D72C473E01D8939AD03EEFB93447D1)
+- **Grade C:** Hong Kong Land Registry Historical Portal, https://www.landreg.gov.hk. [link ✓](https://www.landreg.gov.hk) [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf)
+
+**Disputes or myths:** European purchasers believed they were acquiring freehold titles, but London initially refused to confirm titles because legal sovereignty remained unratified.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

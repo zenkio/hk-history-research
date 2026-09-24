@@ -4,10 +4,11 @@ title_zh: "尖沙咀林維喜事件"
 date: 1839-07-07
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "charles-elliot", "extraterritoriality", "first-opium-war", "lin-weixi-affair", "opium-war", "tsim-sha-tsui"]
+tags: ["evidence-a", "1839", "ai-draft", "charles-elliot", "extraterritoriality", "first-opium-war", "lin-weixi-affair", "opium-war", "tsim-sha-tsui"]
 summary: "A fatal brawl in July 1839 involving British sailors and local villager Lin Weixi in Tsim Sha Tsui ignited a severe jurisdictional crisis, directly precipitating the First Opium War."
 description: "A fatal brawl in July 1839 involving British sailors and local villager Lin Weixi in Tsim Sha Tsui ignited a severe jurisdictional crisis, directly precipitating the First Opium War."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,16 @@ The refusal of **Charles Elliot** to hand over British subjects enraged Qing off
 
 - [ ] Exact nationality of all sailors involved in the Tsim Sha Tsui brawl
 - [ ] Details of the makeshift trial held by Charles Elliot aboard the British ship
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Elliot to Palmerston, 3 August 1839, UK National Archives, FO 17/32; *The Chinese Repository*, Vol. 8, No. 4 (August 1839), pp. 180–184. [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/32)
+- **Grade B:** Munn, C. (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1880*, Hong Kong University Press, ISBN: 9789622095366. [ISBN ✗](https://openlibrary.org/isbn/9789622095366) _(ISBN is: Consuming Hong Kong)_ [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE)
+- **Grade C:** Hong Kong Museum of History, Exhibition Archives on the First Opium War. [link ✓](https://www.cambridge.org/core/journals/historical-journal/article/british-colonial-rule-over-littoral-space-and-watercraft-in-hong-kong-18411898/F2D72C473E01D8939AD03EEFB93447D1)
+
+**Disputes or myths:** Dispels the myth of an organized military raid; the civilian brawl became the critical legal *casus belli* regarding British claims to extraterritorial judicial immunity on the China coast.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

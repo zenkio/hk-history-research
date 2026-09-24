@@ -4,10 +4,11 @@ title_zh: "南京條約簽署"
 date: 1842-08-29
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
+tags: ["evidence-b", "photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
 summary: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 description: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -59,6 +60,18 @@ Corroborates: It provides a visual representation of the document that ended the
 
 *A painting showing shipping and trade activity across the Pearl River at Canton around 1849.* (artwork). anonymous, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shipping_Off_Canton_RMG_BHC1777.tiff).
 Corroborates: It illustrates one of the five ports, Canton, opened to European traders as a result of the Treaty of Nanking.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [John D. Wong (2018). *From the Treaty of Nanking to the Joint Declaration: The Struggle for Equality through State Documents*. Law & Literature.](https://doi.org/10.1080/1535685x.2018.1423759) (claims 1, 2): It examines the Treaty of Nanking as a state document.
+
+**Still needed:** Confirmation of the exact signing date, the ceremony location aboard HMS Cornwallis, and the precise titles of the Qing commissioners is still needed.
 
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

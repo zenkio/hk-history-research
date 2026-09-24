@@ -43,7 +43,7 @@
     "09-interwar": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "10-japanese-occupation": {
       "outlined": true,
@@ -73,7 +73,7 @@
     "15-contention": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "16-national-security-era": {
       "outlined": true,
@@ -8872,7 +8872,8 @@
       "year": 2003,
       "date": "2003-03-30",
       "summary": "Faulty sewage designs in a dense residential estate caused a massive super-spreader event, exposing public health vulnerabilities and transforming urban hygiene standards.",
-      "status": "pending"
+      "status": "done",
+      "file": "14-early-hksar/2003-outbreak-of-amoy-gardens-sars-cluster.md"
     },
     {
       "era": "14-early-hksar",
@@ -8880,6 +8881,182 @@
       "year": 2004,
       "date": "2004-06-15",
       "summary": "The government body ramped up efforts to foster national identity and patriotism among youth, sparking ongoing debates over national versus local civic values.",
+      "status": "done",
+      "file": "14-early-hksar/2004-establishment-of-the-committee-on-the-promotion-of-civic-education.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Establishment of the Aberdeen Technical School",
+      "year": 1921,
+      "date": "1921",
+      "summary": "The Salesians of Don Bosco took over the Aberdeen Trade School, providing industrial education and vocational training for underprivileged Chinese youth.",
+      "status": "done",
+      "file": "09-interwar/1921-establishment-of-the-aberdeen-technical-school.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Establishment of the Dairy Farm Pok Fu Lam Farm",
+      "year": 1923,
+      "date": "1923",
+      "summary": "Dairy Farm expanded its operations in Pok Fu Lam, modernizing local milk production and shaping the dietary habits of the urban population.",
+      "status": "done",
+      "file": "09-interwar/1923-establishment-of-the-dairy-farm-pok-fu-lam-farm.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Opening of the Peninsula Hotel",
+      "year": 1928,
+      "date": "1928-12-11",
+      "summary": "The opening of the luxury Peninsula Hotel in Tsim Sha Tsui cemented Kowloon's status as a burgeoning transport and tourism hub tied to the railway.",
+      "status": "done",
+      "file": "09-interwar/1928-opening-of-the-peninsula-hotel.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Establishment of the Aberdeen Fishing Vocational School",
+      "year": 1930,
+      "date": "1930",
+      "summary": "Specialized schooling initiatives began addressing the unique educational and social welfare needs of Hong Kong's traditional boat-dwelling Tanka community.",
+      "status": "done",
+      "file": "09-interwar/1930-establishment-of-the-aberdeen-fishing-vocational-school.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Founding of the Hong Kong Chinese General Chamber of Commerce Building",
+      "year": 1930,
+      "date": "1930",
+      "summary": "The chamber consolidated its physical and economic influence in Central, representing the growing power of local Chinese merchant elites.",
+      "status": "done",
+      "file": "09-interwar/1930-founding-of-the-hong-kong-chinese-general-chamber-of-commerce-building.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Establishment of the St. John's Ambulance Brigade Hong Kong Command",
+      "year": 1933,
+      "date": "1933",
+      "summary": "Formal organization of the brigade enhanced civil defense, emergency first aid training, and community health preparedness across the colony.",
+      "status": "done",
+      "file": "09-interwar/1933-establishment-of-the-st-johns-ambulance-brigade-hong-kong-command.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Completion of the Wong Nai Chung Reservoir",
+      "year": 1934,
+      "date": "1934",
+      "summary": "The successful completion of the reservoir infrastructure addressed the escalating water demands of a rapidly growing urban population.",
+      "status": "done",
+      "file": "09-interwar/1934-completion-of-the-wong-nai-chung-reservoir.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Opening of the Central Market Building",
+      "year": 1939,
+      "date": "1939-05-01",
+      "summary": "The Bauhaus-style Central Market opened in Victoria City, introducing modern sanitary standards and municipal organization to local food retail.",
+      "status": "done",
+      "file": "09-interwar/1939-opening-of-the-central-market-building.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Formation of the Hong Kong Auxiliary Nursing Service",
+      "year": 1939,
+      "date": "1939",
+      "summary": "Voluntary medical mobilization began in response to the escalating threat of war in the region, empowering local women in healthcare.",
+      "status": "done",
+      "file": "09-interwar/1939-formation-of-the-hong-kong-auxiliary-nursing-service.md"
+    },
+    {
+      "era": "09-interwar",
+      "title": "Establishment of the Wartime Supply Committee",
+      "year": 1940,
+      "date": "1940",
+      "summary": "The colonial government established emergency boards to manage food rationing, price controls, and supply chain bottlenecks amid wartime shortages.",
+      "status": "done",
+      "file": "09-interwar/1940-establishment-of-the-wartime-supply-committee.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo",
+      "year": 2008,
+      "date": "2008-10-08",
+      "summary": "Activist Leung Kwok-hung took his oath wearing a Che Guevara shirt, institutionalizing radical disruption and direct action inside the Legislative Council.",
+      "status": "done",
+      "file": "15-contention/2008-leung-kwok-hung-spreads-long-hair-protest-culture-in-legco.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Ma Tau Wai Road Building Collapse Kills Four",
+      "year": 2010,
+      "date": "2010-01-29",
+      "summary": "The sudden collapse of an aging tenement building in To Kwa Wan exposed deep structural flaws in urban renewal and public safety regulations.",
+      "status": "done",
+      "file": "15-contention/2010-ma-tau-wai-road-building-collapse-kills-four.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "HKU Anatomy Department Body Donation Scandal",
+      "year": 2011,
+      "date": "2011-05-15",
+      "summary": "The discovery of discarded human body parts in a landfill highlighted ethical lapses in medical education and led to stricter tissue governance.",
+      "status": "done",
+      "file": "15-contention/2011-hku-anatomy-department-body-donation-scandal.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Inauguration of the 334 Academic Structure",
+      "year": 2012,
+      "date": "2012-09-03",
+      "summary": "Hong Kong schools transitioned to the three-year junior secondary, three-year senior secondary, and four-year university system, reshaping youth education.",
+      "status": "done",
+      "file": "15-contention/2012-inauguration-of-the-334-academic-structure.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "HK Television City Demolition and Creative Industry Anxiety",
+      "year": 2013,
+      "date": "2013-04-12",
+      "summary": "The demolition of the historic Clear Water Bay studio symbolized the shifting landscape of local media production amid rising mainland influence.",
+      "status": "done",
+      "file": "15-contention/2013-hk-television-city-demolition-and-creative-industry-anxiety.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Watson's Water Strike Over Working Conditions",
+      "year": 2014,
+      "date": "2014-05-15",
+      "summary": "Factory workers launched a high-profile strike demanding better pay and cooling down allowances, reflecting rising labor tension amid inflation.",
+      "status": "pending"
+    },
+    {
+      "era": "15-contention",
+      "title": "Lead-in-Water Crisis Spreads to Public Housing Estates",
+      "year": 2015,
+      "date": "2015-07-10",
+      "summary": "Widespread heavy metal contamination in newly built public housing water supplies sparked public health panic and political accountability demands.",
+      "status": "pending"
+    },
+    {
+      "era": "15-contention",
+      "title": "Fishball Revolution Riots Erupt in Mong Kok",
+      "year": 2016,
+      "date": "2016-02-08",
+      "summary": "A crackdown on unlicensed street hawkers during Chinese New Year escalated into violent street clashes, signaling a radical turn in localist politics.",
+      "status": "pending"
+    },
+    {
+      "era": "15-contention",
+      "title": "Opening of the West Kowloon Station and Boundary Crossing Controversy",
+      "year": 2018,
+      "date": "2018-09-23",
+      "summary": "The implementation of mainland Chinese laws inside the West Kowloon terminus raised constitutional concerns regarding the 'One Country, Two Systems' framework.",
+      "status": "pending"
+    },
+    {
+      "era": "15-contention",
+      "title": "Urgent Migration Surge and BNO Passport Inquiries",
+      "year": 2020,
+      "date": "2020-07-01",
+      "summary": "Following the enactment of the National Security Law, thousands of residents rushed to secure foreign travel documents, marking a historical demographic shift.",
       "status": "pending"
     }
   ],
@@ -9531,7 +9708,17 @@
         "Discontinuation of the Two-Cent Coin",
         "Launch of the Quality Education Fund Projects",
         "Restructuring of the Municipal Councils",
-        "Launch of the Hong Kong Design Centre"
+        "Launch of the Hong Kong Design Centre",
+        "Establishment of the Committee on the Promotion of Civic Education",
+        "Establishment of the Dairy Farm Pok Fu Lam Farm",
+        "Establishment of the Aberdeen Fishing Vocational School",
+        "Founding of the Hong Kong Chinese General Chamber of Commerce Building",
+        "Establishment of the St. John's Ambulance Brigade Hong Kong Command",
+        "Formation of the Hong Kong Auxiliary Nursing Service",
+        "Establishment of the Wartime Supply Committee",
+        "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo",
+        "HKU Anatomy Department Body Donation Scandal",
+        "Inauguration of the 334 Academic Structure"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -10183,7 +10370,8 @@
         "Opening of the Ko Shan Road Playground",
         "Opening of the Tuen Mun Highway",
         "Opening of the Tseung Kwan O Cross Bay Link",
-        "Inauguration of the Yaumatei Typhoon Shelter"
+        "Inauguration of the Yaumatei Typhoon Shelter",
+        "Opening of the Peninsula Hotel"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -10622,7 +10810,8 @@
         "Establishment of the General Chamber of Commerce in Canton",
         "Introduction of Steam-Powered River Vessels",
         "Rise of Protestant Press and Printing in the Delta",
-        "Launch of the First Regular Steamship Service"
+        "Launch of the First Regular Steamship Service",
+        "Establishment of the Wartime Supply Committee"
       ],
       "status": "done",
       "file": "Places/canton.md"
@@ -10916,7 +11105,8 @@
         "Battle of Yamen and Local Veneration of Hau Wong",
         "Completion of Kai Tak Airport Runway Extension",
         "Discovery of Toxic Lead in Public Housing Drinking Water",
-        "Discovery of Lead in Public Housing Water"
+        "Discovery of Lead in Public Housing Water",
+        "Ma Tau Wai Road Building Collapse Kills Four"
       ],
       "status": "done",
       "file": "Places/kowloon-city.md"
@@ -11036,7 +11226,8 @@
         "First Chinese Manufacturers' Association Exhibition",
         "Opening of the Tsim Sha Tsui Police Station",
         "Inauguration of the Cultural Centre Design and Construction",
-        "Opening of the Hong Kong Museum of History"
+        "Opening of the Hong Kong Museum of History",
+        "Opening of the Peninsula Hotel"
       ],
       "status": "done",
       "file": "Places/tsim-sha-tsui.md"
@@ -11127,7 +11318,8 @@
         "Jorge Álvares Lands at Tuen Mun",
         "Formal British Possession of Hong Kong Island",
         "Enactment of Air Raid Precautions",
-        "UN Embargo on China Triggers Industrial Shift"
+        "UN Embargo on China Triggers Industrial Shift",
+        "Establishment of the Committee on the Promotion of Civic Education"
       ],
       "status": "done",
       "file": "Places/china.md"
@@ -11888,7 +12080,10 @@
         "Establishment of the Aberdeen Dockyards",
         "Establishment of the Praya Reclamation Scheme",
         "Promulgation of the First Colonial Land Regulations",
-        "Establishment of the Public Dispensary for Chinese"
+        "Establishment of the Public Dispensary for Chinese",
+        "Establishment of the Aberdeen Technical School",
+        "Opening of the Peninsula Hotel",
+        "Completion of the Wong Nai Chung Reservoir"
       ],
       "status": "done",
       "file": "Places/hong-kong-island.md"
@@ -11984,7 +12179,9 @@
         "Development of the Tanka Fishing Cooperative Networks",
         "Establishment of the Grantham Hospital for Tuberculosis",
         "Sinking of the Iconic Jumbo Floating Restaurant",
-        "Establishment of the Aberdeen Dockyards"
+        "Establishment of the Aberdeen Dockyards",
+        "Establishment of the Aberdeen Technical School",
+        "Establishment of the Aberdeen Fishing Vocational School"
       ],
       "status": "done",
       "file": "Places/aberdeen.md"
@@ -12060,7 +12257,8 @@
         "Opening of the Tsim Sha Tsui Police Station",
         "Completion of the Central Market Building",
         "Establishment of the Praya Reclamation Scheme",
-        "Promulgation of the First Colonial Land Regulations"
+        "Promulgation of the First Colonial Land Regulations",
+        "Opening of the Central Market Building"
       ],
       "status": "done",
       "file": "Places/victoria-city.md"
@@ -12585,7 +12783,8 @@
         "Opening of the Dairy Farm Company",
         "Closure of the University of Hong Kong",
         "Closure of Dairy Farm and Collapse of Livestock Industry",
-        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm"
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
+        "Establishment of the Dairy Farm Pok Fu Lam Farm"
       ],
       "status": "done",
       "file": "Places/pok-fu-lam.md"
@@ -12717,7 +12916,8 @@
         "Opening of the Airport Railway",
         "MTR Shatin to Central Link Scandal",
         "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
-        "Asian Financial Crisis Property Market Crash"
+        "Asian Financial Crisis Property Market Crash",
+        "Founding of the Hong Kong Chinese General Chamber of Commerce Building"
       ],
       "status": "done",
       "file": "Places/central.md"
@@ -13272,7 +13472,8 @@
         "Launch of the 'Quit Schooling' or Independent HK Discussion",
         "Removal of Statues from Universities",
         "The HKU Student Union Council Controversy",
-        "Seizure and Conversion of Hong Kong University Buildings"
+        "Seizure and Conversion of Hong Kong University Buildings",
+        "HKU Anatomy Department Body Donation Scandal"
       ],
       "status": "done",
       "file": "Places/university-of-hong-kong.md"
@@ -14672,7 +14873,8 @@
       "name": "Amoy Gardens (淘大花園)",
       "kind": "place",
       "mentions": [
-        "The SARS Outbreak Cripples the City"
+        "The SARS Outbreak Cripples the City",
+        "Outbreak of Amoy Gardens SARS Cluster"
       ],
       "status": "done",
       "file": "Places/amoy-gardens.md"
@@ -15213,7 +15415,8 @@
       "mentions": [
         "Arrest of Jimmy Lai and Apple Daily Raid",
         "Closure of the Rennie's Mill Refugee Camp",
-        "Opening of the Tseung Kwan O Cross Bay Link"
+        "Opening of the Tseung Kwan O Cross Bay Link",
+        "HK Television City Demolition and Creative Industry Anxiety"
       ],
       "status": "done",
       "file": "Places/tseung-kwan-o.md"
@@ -15960,7 +16163,8 @@
       "mentions": [
         "Sir Patrick Manson Founds the Dairy Farm Company",
         "Opening of the Dairy Farm Company",
-        "Closure of Dairy Farm and Collapse of Livestock Industry"
+        "Closure of Dairy Farm and Collapse of Livestock Industry",
+        "Establishment of the Dairy Farm Pok Fu Lam Farm"
       ],
       "status": "done",
       "file": "People/sir-patrick-manson.md"
@@ -17223,7 +17427,8 @@
       "name": "Salesians of Don Bosco (慈幼會)",
       "kind": "person",
       "mentions": [
-        "Establishment of the Aberdeen Industrial School"
+        "Establishment of the Aberdeen Industrial School",
+        "Establishment of the Aberdeen Technical School"
       ],
       "status": "done",
       "file": "People/salesians-of-don-bosco.md"
@@ -17598,7 +17803,8 @@
       "kind": "person",
       "mentions": [
         "The First Legislative Council 'Filibuster' Era Intensifies",
-        "Founding of the League of Social Democrats"
+        "Founding of the League of Social Democrats",
+        "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo"
       ],
       "status": "done",
       "file": "People/leung-kwok-hung.md"
@@ -18344,7 +18550,8 @@
       "kind": "place",
       "mentions": [
         "Creation of the Hong Kong University of Science and Technology",
-        "Establishment of the Hong Kong University of Science and Technology Planning"
+        "Establishment of the Hong Kong University of Science and Technology Planning",
+        "HK Television City Demolition and Creative Industry Anxiety"
       ],
       "status": "done",
       "file": "Places/clear-water-bay.md"
@@ -18985,7 +19192,8 @@
       "name": "Central Market (中環街市)",
       "kind": "place",
       "mentions": [
-        "Completion of the Central Market Building"
+        "Completion of the Central Market Building",
+        "Opening of the Central Market Building"
       ],
       "status": "done",
       "file": "Places/central-market.md"
@@ -19264,7 +19472,8 @@
       "name": "To Kwa Wan (土瓜灣)",
       "kind": "place",
       "mentions": [
-        "MTR Shatin to Central Link Scandal"
+        "MTR Shatin to Central Link Scandal",
+        "Ma Tau Wai Road Building Collapse Kills Four"
       ],
       "status": "done",
       "file": "Places/to-kwa-wan.md"
@@ -19472,13 +19681,67 @@
       "mentions": [
         "Establishment of the Equal Opportunities Commission"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/anna-wu.md"
     },
     "place:kowloon-tong": {
       "name": "Kowloon Tong (九龍塘)",
       "kind": "place",
       "mentions": [
         "Launch of the Hong Kong Design Centre"
+      ],
+      "status": "done",
+      "file": "Places/kowloon-tong.md"
+    },
+    "person:yat-wah-tsang": {
+      "name": "Yat-wah Tsang (曾德華)",
+      "kind": "person",
+      "mentions": [
+        "Outbreak of Amoy Gardens SARS Cluster"
+      ],
+      "status": "done",
+      "file": "People/yat-wah-tsang.md"
+    },
+    "place:ngau-tau-kok": {
+      "name": "Ngau Tau Kok (牛頭角)",
+      "kind": "place",
+      "mentions": [
+        "Outbreak of Amoy Gardens SARS Cluster"
+      ],
+      "status": "done",
+      "file": "Places/ngau-tau-kok.md"
+    },
+    "person:elly-kadoorie": {
+      "name": "Elly Kadoorie (嘉道理)",
+      "kind": "person",
+      "mentions": [
+        "Opening of the Peninsula Hotel"
+      ],
+      "status": "done",
+      "file": "People/elly-kadoorie.md"
+    },
+    "place:wong-nai-chung-reservoir": {
+      "name": "Wong Nai Chung Reservoir (黃泥涌水塘)",
+      "kind": "place",
+      "mentions": [
+        "Completion of the Wong Nai Chung Reservoir"
+      ],
+      "status": "done",
+      "file": "Places/wong-nai-chung-reservoir.md"
+    },
+    "place:legislative-council": {
+      "name": "Legislative Council (立法會)",
+      "kind": "place",
+      "mentions": [
+        "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo"
+      ],
+      "status": "pending"
+    },
+    "place:ma-tau-wai-road": {
+      "name": "Ma Tau Wai Road (馬頭圍道)",
+      "kind": "place",
+      "mentions": [
+        "Ma Tau Wai Road Building Collapse Kills Four"
       ],
       "status": "pending"
     }

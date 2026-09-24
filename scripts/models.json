@@ -18,11 +18,11 @@
     {"display": "OpenRouter DeepSeek", "provider": "openrouter", "pick": [ "deepseek", "glm", "kimi", "llama-4" ], "rpm": 15, "tpm": 1000000, "rpd": 50, "json_mode": false}
   ],
   "routing": {
-    "_comment": "outline = era plans and overviews (few calls, best models); draft = event and entity pages (bulk); classify = RSS articles; verify = Google Search grounded fact-check (only Gemini 2.x has free search grounding). translate = Traditional Chinese versions: Chinese-native OpenRouter free models first, then Gemma. video = watch YouTube videos linked from RSS posts (Gemini only; ~100 tokens/s at low resolution, so a 250K TPM model is needed). vision = read photos (Gemma first: large quota; a model that cannot take images is skipped per call). evidence = judge which archive/scholarly search results really relate to a page (OpenRouter's free budget first, then Gemma).",
+    "_comment": "outline = era plans and overviews (few calls, best models); draft = event and entity pages (bulk); classify = RSS articles; verify = judge drafted claims against Wikipedia extracts (Gemini 2.5, the only free search-grounded models, is closed to new users). translate = Traditional Chinese versions: Chinese-native OpenRouter free models first, then Gemma. video = watch YouTube videos linked from RSS posts (Gemini only; ~100 tokens/s at low resolution, so a 250K TPM model is needed). vision = read photos (Gemma first: large quota; a model that cannot take images is skipped per call). evidence = judge which archive/scholarly search results really relate to a page (OpenRouter's free budget first, then Gemma).",
     "outline": ["Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite"],
     "draft": ["Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite", "Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash", "Gemini 3.5 Flash", "Gemini 3 Flash", "Gemma 4 31B", "Gemma 4 26B"],
     "classify": ["Gemini 3.1 Flash Lite", "Gemini 3.5 Flash Lite", "Gemma 4 31B", "Gemma 4 26B"],
-    "verify": ["Gemini 2.5 Flash", "Gemini 2.5 Flash Lite"],
+    "verify": ["Gemma 4 31B", "Gemma 4 26B", "Gemini 3.1 Flash Lite", "Gemini 3.5 Flash Lite"],
     "translate": ["OpenRouter Qwen", "OpenRouter DeepSeek", "Gemma 4 31B", "Gemma 4 26B"],
     "video": ["Gemini 3.1 Flash Lite", "Gemini 3.5 Flash Lite", "Gemini 3.8 Flash", "Gemini 3.7 Flash", "Gemini 3.6 Flash"],
     "vision": ["Gemma 4 31B", "Gemma 4 26B", "Gemini 3.1 Flash Lite", "Gemini 3.5 Flash Lite"],

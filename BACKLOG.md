@@ -25,18 +25,14 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 |---|---|---|
 | A | Primary sources | UK National Archives (CO 129), HK Government Gazette, Blue Books, contemporary newspapers, contemporary photos |
 | B | Scholarship | Peer-reviewed papers, academic books (OpenAlex/Crossref DOI), JRAS Hong Kong Branch |
-| C | Reference | Encyclopedias, museums, HK government sites, Wikidata |
+| C | Reference | Edited encyclopedias (Britannica), museums, HK government sites. **Not Wikipedia/Wikidata**: anyone can edit them, so they are cross-checks and pointers to sources, never evidence |
 | D | Web | Blogs, general web results |
 | – | Unverified | AI draft only |
 
 ## 🔥 Burning (fix first)
 
-- [ ] **Run 11 failed in 37 s**: `repair_content.py` ran `git pull --rebase` while `scripts/seen_urls.json` (updated by the fetch step) was uncommitted. Every run that fetches a new article would fail. _Fix in PR #6: `--autostash` on all three pull-rebases, and a repair commit failure no longer fails the job._
-
-- [ ] **Run 9 (2026-09-24) was cancelled at the 70-minute limit and committed nothing.** Gemma 31B was overloaded, so every photo description waited minutes; the classify step only committed at the end, so 3 finished pages (1979 Geneva Conference with video, 2 wartime posts) were lost; the seeding step (research import, evidence, fact-check retry) never ran. _Fix in PR #5: commit per page, a 20-minute budget for classify, `continue-on-error` so seeding always runs, and a 10-minute cooldown for a model after repeated overloads._
-
-- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.
-- [ ] **14 source pages are off the site until the quota reset.** The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
+- [ ] **Fact-check is broken: Gemini 2.5 Flash and Flash Lite are closed to new users** (404 "no longer available to new users"). They were the only free models with Google Search grounding. Gemini 3.x search grounding is 0/day on the free tier (AI Studio). _Fix in PR #7: a Wikipedia cross-check. Gemma compares each claim with Wikipedia text only (agrees / differs / not in Wikipedia) and lists the books and papers Wikipedia cites, with DOI/ISBN checked. Wikipedia never counts as evidence (anyone can edit it), so it never raises a grade. Up to 80 pages a run, core eras first._
+- [ ] **10 source pages still waiting in the ingestion queue** (were 14). The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
 - [x] ~~OpenRouter wrongly switched off for the day when a step lacks the key~~: now skipped per run; the key is also passed to the classify step.
 - [x] ~~Model ids~~: Gemma 26B resolves to `gemma-4-26b-a4b-it`, Gemini 3 Flash to `gemini-3-flash-preview`. OpenRouter picked `qwen/qwen3.8-27b:free`; no free DeepSeek model exists now, so the second slot falls back to GLM, Kimi or Llama 4.
 
@@ -48,7 +44,7 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
   2. OpenAlex / Crossref: academic works on the topic; Gemma or OpenRouter confirms relevance.
   3. Internet Archive full text: old books and official publications; AI reads the passage and marks the claim supported or contradicted.
   4. UK National Archives Discovery: link the matching CO 129 files.
-  5. Google Search grounding: only for claims still unresolved (40 a day).
+  5. Wikipedia cross-check is live, but it is a pointer, not evidence. Next: have the evidence engine read the sources Wikipedia cites and mark each claim supported or not, so Wikipedia's own statements are tested too.
 
   Output: a `## Evidence` section per page, `evidence_grade` in the frontmatter, and a site page listing pages by grade.
 - [ ] **P1 Order: core period first** (1841+), and within it the most-linked events first. _(Ordering is done; the engine is still to build.)_
@@ -57,6 +53,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 - [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1842–1860, then 1860–1898).
 
 ## Next
+
+- [ ] **P2 Myths and disputes hub.** One page listing claims where the draft, Wikipedia and the evidence disagree (tag `wikipedia-differs`, Deep Research "Disputes or myths"), with what the primary sources actually say. Readers want to know what is made up.
 
 - [ ] **P2 Place pages by angle.** Fixed sections per place: overview, politics & government, economy & work, food, daily life & culture, nature, animals & weather, buildings, happy moments, sad moments, photos. Each links to its events.
 - [ ] **P2 Topic hubs** across places: typhoons, fires, food history, housing, festivals, epidemics.
@@ -78,6 +76,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## Done
 
+- 2026-09-24: Run 12 (first run on PR #6): 52 pages graded (A 14, B 8, none 30), 21 of 118 pages got Commons photos, Deep Research 1834–1842 imported. Runs 9 and 11 failures fixed (PRs #5, #6).
+
 - 2026-09-24: Parallel workers (Gemini / research / photos) in the seeding step; commit per page; overload cooldown.
 
 - 2026-09-24: Evidence engine v1 and Deep Research importer.
@@ -96,4 +96,5 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 | 2026-09-24 | Core scope 1841 to today; pre-1841 only with evidence | Owner priority |
 | 2026-09-24 | AI translation off; browser translation for now | Spend AI budget on verification |
 | 2026-09-24 | Parallel workers per quota inside one job, not separate jobs | Separate jobs would race on git pushes and edit the same pages; threads share one checkout with page locks |
+| 2026-09-24 | Wikipedia is a cross-check, never evidence | Anyone can edit it; agreement proves nothing, but its citations are leads |
 | 2026-09-24 | Verification before any new content type | AI drafts are ~95% of the site and unproven |

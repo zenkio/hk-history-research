@@ -282,8 +282,10 @@ def write_status_page(events, grades):
              f"| [[tags/evidence-b\\|B]] | Scholarship linked (articles, academic books) | {c.get('B', 0)} |",
              f"| [[tags/evidence-none\\|none]] | Searched, nothing relevant found yet | {c.get('none', 0)} |",
              f"| – | Not searched yet | {total - len(grades)} |", "",
-             "Fact-checked with Google Search: see [[tags/search-checked|search-checked]]; "
-             "contradictions found: [[tags/needs-correction|needs-correction]].", ""]
+             "Wikipedia is used only as a cross-check and never counts as evidence, because anyone can edit it: "
+             "[[tags/wikipedia-checked|compared with Wikipedia]]; "
+             "[[tags/wikipedia-differs|draft and Wikipedia differ]] (either may be wrong: these are the pages "
+             "most worth checking against primary sources).", ""]
     path = os.path.join(PROJECT_ROOT, "content", "00_Meta", "Evidence_Status.md")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     atomic_write(path, "\n".join(lines))

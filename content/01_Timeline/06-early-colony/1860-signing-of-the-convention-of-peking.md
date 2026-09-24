@@ -4,7 +4,7 @@ title_zh: "北京條約"
 date: 1860-10-24
 year: 1860
 era: "The early colony"
-tags: ["1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
+tags: ["photo-corroborated", "1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
 summary: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 description: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 confidence: ai-draft
@@ -42,5 +42,13 @@ This territorial expansion fundamentally changed the geography and strategic cap
 
 - [ ] The exact coordinates and boundary markers established for the Kowloon Peninsula under the Convention of Peking
 - [ ] The specific administrative mechanisms used to transfer jurisdiction of Kowloon from Qing officials to British colonial authorities
+
+## Photos from this period
+
+![A section of the Chinese text from the Convention of Peking detailing the cession of Kowloon to Great Britain.](https://upload.wikimedia.org/wikipedia/commons/5/5c/Convention_of_Peking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A section of the Chinese text from the Convention of Peking detailing the cession of Kowloon to Great Britain.* (document). Qing Government, China in conjunction with the Europeans (French, British, Russian) in 1860, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Convention_of_Peking.jpg).
+Corroborates: It provides primary documentary evidence of the formal cession of the Kowloon Peninsula mentioned in the page summary.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

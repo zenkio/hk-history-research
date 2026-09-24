@@ -4,10 +4,11 @@ title_zh: "《德臣西報》創辦"
 date: 1845-02-20
 year: 1845
 era: "The early colony"
-tags: ["1845", "ai-draft", "china-mail", "colonial-press", "early-colony", "early-hong-kong", "media-history"]
+tags: ["evidence-none", "1845", "ai-draft", "china-mail", "colonial-press", "early-colony", "early-hong-kong", "media-history"]
 summary: "The establishment of The China Mail in 1845 marked a major milestone in the development of Hong Kong's early colonial press, providing a vital medium for commercial news and public discourse."
 description: "The establishment of The China Mail in 1845 marked a major milestone in the development of Hong Kong's early colonial press, providing a vital medium for commercial news and public discourse."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The launch of *The China Mail* represents the crystallization of a local press a
 
 - [ ] The exact launch date of The China Mail as February 20, 1845.
 - [ ] The initial circulation numbers and primary financial backers of the newspaper during its first year of operation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the launch date and the initial circulation and financial backers of The China Mail is still needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

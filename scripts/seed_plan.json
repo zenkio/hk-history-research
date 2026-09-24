@@ -33,7 +33,7 @@
     "07-victorian-colony": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "08-new-territories": {
       "outlined": true,
@@ -48,7 +48,7 @@
     "10-japanese-occupation": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "11-postwar-refugees": {
       "outlined": true,
@@ -9025,7 +9025,8 @@
       "year": 2014,
       "date": "2014-05-15",
       "summary": "Factory workers launched a high-profile strike demanding better pay and cooling down allowances, reflecting rising labor tension amid inflation.",
-      "status": "pending"
+      "status": "done",
+      "file": "15-contention/2014-watsons-water-strike-over-working-conditions.md"
     },
     {
       "era": "15-contention",
@@ -9033,7 +9034,8 @@
       "year": 2015,
       "date": "2015-07-10",
       "summary": "Widespread heavy metal contamination in newly built public housing water supplies sparked public health panic and political accountability demands.",
-      "status": "pending"
+      "status": "done",
+      "file": "15-contention/2015-lead-in-water-crisis-spreads-to-public-housing-estates.md"
     },
     {
       "era": "15-contention",
@@ -9041,7 +9043,8 @@
       "year": 2016,
       "date": "2016-02-08",
       "summary": "A crackdown on unlicensed street hawkers during Chinese New Year escalated into violent street clashes, signaling a radical turn in localist politics.",
-      "status": "pending"
+      "status": "done",
+      "file": "15-contention/2016-fishball-revolution-riots-erupt-in-mong-kok.md"
     },
     {
       "era": "15-contention",
@@ -9049,7 +9052,8 @@
       "year": 2018,
       "date": "2018-09-23",
       "summary": "The implementation of mainland Chinese laws inside the West Kowloon terminus raised constitutional concerns regarding the 'One Country, Two Systems' framework.",
-      "status": "pending"
+      "status": "done",
+      "file": "15-contention/2018-opening-of-the-west-kowloon-station-and-boundary-crossing-controversy.md"
     },
     {
       "era": "15-contention",
@@ -9057,6 +9061,170 @@
       "year": 2020,
       "date": "2020-07-01",
       "summary": "Following the enactment of the National Security Law, thousands of residents rushed to secure foreign travel documents, marking a historical demographic shift.",
+      "status": "done",
+      "file": "15-contention/2020-urgent-migration-surge-and-bno-passport-inquiries.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Establishment of the Hong Kong General Chamber of Commerce",
+      "year": 1861,
+      "date": "1861-05-29",
+      "summary": "Western merchants formed the chamber to unify commercial interests and lobby the colonial government on trade, infrastructure, and port policies.",
+      "status": "done",
+      "file": "07-victorian-colony/1861-establishment-of-the-hong-kong-general-chamber-of-commerce.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Introduction of Gas Street Lighting in Victoria",
+      "year": 1864,
+      "date": "1864-12-03",
+      "summary": "The Hong Kong and China Gas Company lit Victoria's first gas lamps, significantly improving public safety and transforming nighttime urban life.",
+      "status": "done",
+      "file": "07-victorian-colony/1864-introduction-of-gas-street-lighting-in-victoria.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Formation of the Nam Pak Hong Association",
+      "year": 1868,
+      "date": "1868",
+      "summary": "Chinese trading houses organised a powerful guild network managing entrepôt trade between Mainland China and Southeast Asia, cementing Chinese commercial influence.",
+      "status": "done",
+      "file": "07-victorian-colony/1868-formation-of-the-nam-pak-hong-association.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Arrival of the First Submarine Telegraph Cable",
+      "year": 1871,
+      "date": "1871-04-18",
+      "summary": "A telegraph cable connected Hong Kong to London via Singapore, dramatically accelerating global trade communications and news distribution.",
+      "status": "done",
+      "file": "07-victorian-colony/1871-arrival-of-the-first-submarine-telegraph-cable.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Publication of the Chadwick Report on Sanitary Conditions",
+      "year": 1882,
+      "date": "1882",
+      "summary": "Osbert Chadwick's damning investigation exposed severe overcrowding and poor sanitation in urban areas, forcing public health reforms.",
+      "status": "done",
+      "file": "07-victorian-colony/1882-publication-of-the-chadwick-report-on-sanitary-conditions.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Completion of the Tai Tam Reservoir Scheme",
+      "year": 1888,
+      "date": "1888",
+      "summary": "Engineers completed a major dam and tunnel network that secured Victoria's long-term water supply and enabled rapid urban expansion into the late 19th century.",
+      "status": "done",
+      "file": "07-victorian-colony/1888-completion-of-the-tai-tam-reservoir-scheme.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Founding of the Royal Hong Kong Golf Club",
+      "year": 1889,
+      "date": "1889-05-10",
+      "summary": "British residents established the club at Happy Valley, highlighting the rise of exclusive elite sports culture in Victorian Hong Kong.",
+      "status": "done",
+      "file": "07-victorian-colony/1889-founding-of-the-royal-hong-kong-golf-club.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "Founding of the Association of Stockbrokers in Hong Kong",
+      "year": 1891,
+      "date": "1891-02-03",
+      "summary": "Local financiers established Hong Kong's first formal stock exchange, creating a structured capital market for growing regional businesses.",
+      "status": "done",
+      "file": "07-victorian-colony/1891-founding-of-the-association-of-stockbrokers-in-hong-kong.md"
+    },
+    {
+      "era": "07-victorian-colony",
+      "title": "First Moving Picture Screening in Hong Kong",
+      "year": 1897,
+      "date": "1897-04",
+      "summary": "Public film demonstrations brought Lumière Cinematographe technology to Victoria, marking the arrival of modern visual entertainment in the colony.",
+      "status": "done",
+      "file": "07-victorian-colony/1897-first-moving-picture-screening-in-hong-kong.md"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Confiscation of Radios and Ban on News Listening",
+      "year": 1941,
+      "date": "1941-12-28",
+      "summary": "The Japanese military administration confiscated all private radio receivers and banned listening to foreign broadcasts to enforce information control and curb Allied propaganda.",
+      "status": "done",
+      "file": "10-japanese-occupation/1941-confiscation-of-radios-and-ban-on-news-listening.md"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Establishment of the Hok Aik Hui Welfare Association",
+      "year": 1942,
+      "date": "1942-03",
+      "summary": "Local Chinese elites were coerced into establishing this Japanese-sponsored welfare organization to manage civilian relief and facilitate social control.",
+      "status": "done",
+      "file": "10-japanese-occupation/1942-establishment-of-the-hok-aik-hui-welfare-association.md"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Reopening of the Peak Tram for Japanese Elite Use",
+      "year": 1942,
+      "date": "1942-06",
+      "summary": "The Peak Tram resumed limited operations strictly to serve the newly relocated Japanese military and civilian officials occupying the Victoria Peak mansions.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Introduction of Japanese Cuisine and Cooking Classes",
+      "year": 1943,
+      "date": "1943-05",
+      "summary": "Authorities promoted Japanese dietary staples like soybeans and sweet potatoes through cooking demonstrations to alter local food habits amid severe rice shortages.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Conversion of Peninsula Hotel into Japanese Officers Club",
+      "year": 1943,
+      "date": "1943-09",
+      "summary": "The luxury Peninsula Hotel was transformed into an exclusive social and administrative hub for high-ranking Imperial Japanese military officers.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Imposition of Special Wartime Property Taxes",
+      "year": 1944,
+      "date": "1944-02",
+      "summary": "The occupation government levied harsh urban property and municipal taxes payable only in military yen to finance escalating occupation costs.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Operation of Repatriation Vessels to Mainland China",
+      "year": 1944,
+      "date": "1944-07",
+      "summary": "Continuous forced deportations of urban residents to rural Guangdong were carried out via crowded coastal vessels to mitigate acute food shortages in the city.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Establishment of Underground Orphanage Relief Networks",
+      "year": 1944,
+      "date": "1944-10",
+      "summary": "Local charitable individuals secretly operated underground shelters to protect and feed abandoned children amidst escalating wartime destitution.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Secret Operation of Wartime Black Markets",
+      "year": 1945,
+      "date": "1945-03",
+      "summary": "An extensive underground economy thrived around typhoon shelters and alleyways, trading smuggled food and medicine using hidden British currency.",
+      "status": "pending"
+    },
+    {
+      "era": "10-japanese-occupation",
+      "title": "Emergency Reunification of Displaced Families Post-Liberation",
+      "year": 1945,
+      "date": "1945-09",
+      "summary": "Following the surrender, the returning administration established registration centers to help separated family members locate relatives displaced by wartime evacuations.",
       "status": "pending"
     }
   ],
@@ -9718,7 +9886,18 @@
         "Establishment of the Wartime Supply Committee",
         "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo",
         "HKU Anatomy Department Body Donation Scandal",
-        "Inauguration of the 334 Academic Structure"
+        "Inauguration of the 334 Academic Structure",
+        "Watson's Water Strike Over Working Conditions",
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy",
+        "Urgent Migration Surge and BNO Passport Inquiries",
+        "Establishment of the Hong Kong General Chamber of Commerce",
+        "Formation of the Nam Pak Hong Association",
+        "Arrival of the First Submarine Telegraph Cable",
+        "Founding of the Royal Hong Kong Golf Club",
+        "Founding of the Association of Stockbrokers in Hong Kong",
+        "First Moving Picture Screening in Hong Kong",
+        "Confiscation of Radios and Ban on News Listening",
+        "Establishment of the Hok Aik Hui Welfare Association"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -10371,7 +10550,9 @@
         "Opening of the Tuen Mun Highway",
         "Opening of the Tseung Kwan O Cross Bay Link",
         "Inauguration of the Yaumatei Typhoon Shelter",
-        "Opening of the Peninsula Hotel"
+        "Opening of the Peninsula Hotel",
+        "Establishment of the Hong Kong General Chamber of Commerce",
+        "Formation of the Nam Pak Hong Association"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -10463,7 +10644,8 @@
         "Expansion of the Tang-Era Incense Trade",
         "Refinement of Pearl Oyster Conservation Practices",
         "First Recorded Pearl Farming Tax Reforms",
-        "Phytophthora Outbreak and Agriculture Shift"
+        "Phytophthora Outbreak and Agriculture Shift",
+        "Watson's Water Strike Over Working Conditions"
       ],
       "status": "done",
       "file": "Places/tai-po.md"
@@ -10547,7 +10729,8 @@
         "Establishment of the Song Maritime Customs Post",
         "The Execution of the Opium Merchant in Macau",
         "Introduction of the First Colonial Legal Code in Hong Kong",
-        "Publication of Early English-Chinese Phrasebooks and Dictionaries"
+        "Publication of Early English-Chinese Phrasebooks and Dictionaries",
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
       ],
       "status": "done",
       "file": "Places/guangzhou.md"
@@ -10711,7 +10894,8 @@
         "Passage of the Matrimonial Causes Ordinance Reform",
         "Establishment of the Public Enquiry Service Centres",
         "Implementation of the New Territories Block Crown Lease System",
-        "Phytophthora Outbreak and Agriculture Shift"
+        "Phytophthora Outbreak and Agriculture Shift",
+        "Founding of the Royal Hong Kong Golf Club"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -11500,7 +11684,8 @@
         "Establishment of the Provisional Legislative Council",
         "Completion of the Lok Ma Chau Spur Line",
         "Northern Metropolis Development Strategy Announced",
-        "The Rise of the Northbound Consumption Trend"
+        "The Rise of the Northbound Consumption Trend",
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
       ],
       "status": "done",
       "file": "Places/shenzhen.md"
@@ -12083,7 +12268,8 @@
         "Establishment of the Public Dispensary for Chinese",
         "Establishment of the Aberdeen Technical School",
         "Opening of the Peninsula Hotel",
-        "Completion of the Wong Nai Chung Reservoir"
+        "Completion of the Wong Nai Chung Reservoir",
+        "Publication of the Chadwick Report on Sanitary Conditions"
       ],
       "status": "done",
       "file": "Places/hong-kong-island.md"
@@ -12258,7 +12444,8 @@
         "Completion of the Central Market Building",
         "Establishment of the Praya Reclamation Scheme",
         "Promulgation of the First Colonial Land Regulations",
-        "Opening of the Central Market Building"
+        "Opening of the Central Market Building",
+        "Completion of the Tai Tam Reservoir Scheme"
       ],
       "status": "done",
       "file": "Places/victoria-city.md"
@@ -12386,7 +12573,8 @@
         "Registration and Reform of the Mui Tsai System",
         "Restoration of Civil Government and the Young Plan",
         "Police Chief Peter Godber Flees",
-        "Enactment of the Industrial Employment of Children Ordinance"
+        "Enactment of the Industrial Employment of Children Ordinance",
+        "Arrival of the First Submarine Telegraph Cable"
       ],
       "status": "done",
       "file": "Places/london.md"
@@ -12423,7 +12611,9 @@
         "William Caine Appointed as First Chief Magistrate",
         "Creation of the District Watch Force",
         "Construction of St. John's Cathedral Foundations",
-        "Establishment of the Diocesan Girls' School"
+        "Establishment of the Diocesan Girls' School",
+        "Introduction of Gas Street Lighting in Victoria",
+        "First Moving Picture Screening in Hong Kong"
       ],
       "status": "done",
       "file": "Places/victoria.md"
@@ -12498,7 +12688,9 @@
         "Initiation of the Bonham Strand land reclamation project",
         "Demarcation of Victoria City Boundaries",
         "Establishment of the Alice Memorial Hospital",
-        "Completion of the Western Market"
+        "Completion of the Western Market",
+        "Introduction of Gas Street Lighting in Victoria",
+        "Formation of the Nam Pak Hong Association"
       ],
       "status": "done",
       "file": "Places/sheung-wan.md"
@@ -12662,7 +12854,8 @@
         "Formation of the Hong Kong Volunteer Corps",
         "First Colonial Exhibition of Hong Kong",
         "Opening of the Tsim Sha Tsui Police Station",
-        "Establishment of the Kowloon British School"
+        "Establishment of the Kowloon British School",
+        "Founding of the Royal Hong Kong Golf Club"
       ],
       "status": "done",
       "file": "Places/kowloon-peninsula.md"
@@ -12784,7 +12977,8 @@
         "Closure of the University of Hong Kong",
         "Closure of Dairy Farm and Collapse of Livestock Industry",
         "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
-        "Establishment of the Dairy Farm Pok Fu Lam Farm"
+        "Establishment of the Dairy Farm Pok Fu Lam Farm",
+        "Completion of the Tai Tam Reservoir Scheme"
       ],
       "status": "done",
       "file": "Places/pok-fu-lam.md"
@@ -13106,7 +13300,8 @@
         "Passage of the Venereal Diseases Ordinance",
         "Establishment of the Sanitary Board",
         "Opening of the Kennedy Town Slaughterhouse",
-        "Establishment of the Public Dispensary for Chinese"
+        "Establishment of the Public Dispensary for Chinese",
+        "Publication of the Chadwick Report on Sanitary Conditions"
       ],
       "status": "done",
       "file": "Places/tai-ping-shan.md"
@@ -13313,7 +13508,8 @@
         "Founding of the Hong Kong Jockey Club",
         "Opening of the Happy Valley Cemetery",
         "Opening of the Hong Kong Sanatorium and Hospital",
-        "First Public Execution at Happy Valley"
+        "First Public Execution at Happy Valley",
+        "Founding of the Royal Hong Kong Golf Club"
       ],
       "status": "done",
       "file": "Places/happy-valley.md"
@@ -13548,7 +13744,8 @@
       "mentions": [
         "Kai Tak Expands into Commercial Airfield",
         "Allied Air Raids on Hong Kong Operations",
-        "Rose Garden Project Announcement"
+        "Rose Garden Project Announcement",
+        "Lead-in-Water Crisis Spreads to Public Housing Estates"
       ],
       "status": "done",
       "file": "Places/kai-tak.md"
@@ -13835,7 +14032,8 @@
       "kind": "place",
       "mentions": [
         "Japanese Amphibious Landing on Hong Kong Island",
-        "The Severe Hong Kong Water Crisis of 1929"
+        "The Severe Hong Kong Water Crisis of 1929",
+        "Completion of the Tai Tam Reservoir Scheme"
       ],
       "status": "done",
       "file": "Places/tai-tam.md"
@@ -13969,7 +14167,8 @@
         "Forced Evacuation of Destitute Residents to Guangdong",
         "Prohibition of the English Language in Public",
         "The Famine-Induced De-urbanization of Kowloon",
-        "Mass Looting of Private Property and Colonial Banks"
+        "Mass Looting of Private Property and Colonial Banks",
+        "Confiscation of Radios and Ban on News Listening"
       ],
       "status": "done",
       "file": "People/isogai-rensuke.md"
@@ -14483,7 +14682,8 @@
         "The Brain Drain: Emigration Wave Intensifies",
         "Departure of Hong Kong’s Last Overseas Judges",
         "The Resignation of Non-Permanent Judges",
-        "Standardization of the Hong Kong Dollar through the Currency Ordinance"
+        "Standardization of the Hong Kong Dollar through the Currency Ordinance",
+        "Urgent Migration Surge and BNO Passport Inquiries"
       ],
       "status": "done",
       "file": "Places/united-kingdom.md"
@@ -15191,7 +15391,8 @@
         "Launch of the Umbrella Movement",
         "Mong Kok Clash (Fishball Revolution)",
         "The 1984 Kowloon Taxi Riots",
-        "The Great Plastic Bottle Initiative"
+        "The Great Plastic Bottle Initiative",
+        "Fishball Revolution Riots Erupt in Mong Kok"
       ],
       "status": "done",
       "file": "Places/mong-kok.md"
@@ -15254,7 +15455,8 @@
       "name": "Edward Leung (梁天琦)",
       "kind": "person",
       "mentions": [
-        "Mong Kok Clash (Fishball Revolution)"
+        "Mong Kok Clash (Fishball Revolution)",
+        "Fishball Revolution Riots Erupt in Mong Kok"
       ],
       "status": "done",
       "file": "People/edward-leung.md"
@@ -15330,7 +15532,8 @@
         "Mandatory Oath-Taking for Public Servants",
         "Establishment of the Liaison Office National Security Department",
         "The First All-Patriots Legislative Council Election",
-        "Northern Metropolis Development Strategy Announced"
+        "Northern Metropolis Development Strategy Announced",
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
       ],
       "status": "done",
       "file": "People/carrie-lam.md"
@@ -15357,7 +15560,8 @@
       "name": "West Kowloon Station (香港西九龍站)",
       "kind": "place",
       "mentions": [
-        "High-Speed Rail Link Opens with Co-Location Scheme"
+        "High-Speed Rail Link Opens with Co-Location Scheme",
+        "Opening of the West Kowloon Station and Boundary Crossing Controversy"
       ],
       "status": "done",
       "file": "Places/west-kowloon-station.md"
@@ -16182,7 +16386,8 @@
       "name": "Osbert Chadwick",
       "kind": "person",
       "mentions": [
-        "The Chadwick Report on Municipal Sanitation"
+        "The Chadwick Report on Municipal Sanitation",
+        "Publication of the Chadwick Report on Sanitary Conditions"
       ],
       "status": "done",
       "file": "People/osbert-chadwick.md"
@@ -16603,7 +16808,8 @@
       "mentions": [
         "Public Housing Short-Piling Construction Scandal",
         "Establishment of Tsuen Wan as Hong Kong's First Satellite Town",
-        "Discovery of Lead in Public Housing Water"
+        "Discovery of Lead in Public Housing Water",
+        "Lead-in-Water Crisis Spreads to Public Housing Estates"
       ],
       "status": "done",
       "file": "Places/kwai-chung.md"
@@ -16751,7 +16957,8 @@
       "kind": "person",
       "mentions": [
         "Discovery of Toxic Lead in Public Housing Drinking Water",
-        "Discovery of Lead in Public Housing Water"
+        "Discovery of Lead in Public Housing Water",
+        "Lead-in-Water Crisis Spreads to Public Housing Estates"
       ],
       "status": "done",
       "file": "People/ko-wing-man.md"
@@ -19735,7 +19942,8 @@
       "mentions": [
         "Leung Kwok-hung Spreads 'Long Hair' Protest Culture in LegCo"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/legislative-council.md"
     },
     "place:ma-tau-wai-road": {
       "name": "Ma Tau Wai Road (馬頭圍道)",
@@ -19743,7 +19951,53 @@
       "mentions": [
         "Ma Tau Wai Road Building Collapse Kills Four"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/ma-tau-wai-road.md"
+    },
+    "place:portland-street": {
+      "name": "Portland Street (砵蘭街)",
+      "kind": "place",
+      "mentions": [
+        "Fishball Revolution Riots Erupt in Mong Kok"
+      ],
+      "status": "done",
+      "file": "Places/portland-street.md"
+    },
+    "person:the-directors-of-the-hong-kong-and-china-gas-company": {
+      "name": "The directors of the Hong Kong and China Gas Company",
+      "kind": "person",
+      "mentions": [
+        "Introduction of Gas Street Lighting in Victoria"
+      ],
+      "status": "done",
+      "file": "People/the-directors-of-the-hong-kong-and-china-gas-company.md"
+    },
+    "place:singapore": {
+      "name": "Singapore (新加坡)",
+      "kind": "place",
+      "mentions": [
+        "Arrival of the First Submarine Telegraph Cable"
+      ],
+      "status": "done",
+      "file": "Places/singapore.md"
+    },
+    "person:w-chatham": {
+      "name": "W. Chatham",
+      "kind": "person",
+      "mentions": [
+        "Completion of the Tai Tam Reservoir Scheme"
+      ],
+      "status": "done",
+      "file": "People/w-chatham.md"
+    },
+    "person:lumière-brothers": {
+      "name": "Lumière brothers (盧米埃爾兄弟)",
+      "kind": "person",
+      "mentions": [
+        "First Moving Picture Screening in Hong Kong"
+      ],
+      "status": "done",
+      "file": "People/lumière-brothers.md"
     }
   }
 }

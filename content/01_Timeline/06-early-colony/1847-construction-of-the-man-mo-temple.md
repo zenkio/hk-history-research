@@ -4,10 +4,11 @@ title_zh: "文武廟建廟"
 date: 1847-01-01
 year: 1847
 era: "The early colony"
-tags: ["1847", "ai-draft", "chinese-community", "early-colony", "hollywood-road", "man-mo-temple"]
+tags: ["evidence-none", "1847", "ai-draft", "chinese-community", "early-colony", "hollywood-road", "man-mo-temple"]
 summary: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
 description: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The establishment of the temple marked a crucial milestone in the institutionali
 
 - [ ] Verify the exact completion year of the Man Mo Temple as recorded in surviving bilingual stone plaques or land deeds from the 1840s.
 - [ ] Confirm the specific roles and financial contributions of Tam Achoy and other founding merchants in the temple's construction.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** All evidence regarding the construction date of the Man Mo Temple and the contributions of Tam Achoy and other founding merchants is missing.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

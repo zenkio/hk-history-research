@@ -4,10 +4,11 @@ title_zh: "香港會所開張"
 date: 1846-05-26
 year: 1846
 era: "The early colony"
-tags: ["1846", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-club", "social-history"]
+tags: ["evidence-none", "1846", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-club", "social-history"]
 summary: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
 description: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The opening of the club marked the consolidation of a distinct British expatriat
 
 - [ ] The exact founding date of the Hong Kong Club as May 26, 1846
 - [ ] The original membership criteria and restrictions during the 1840s
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the founding date of the Hong Kong Club and its original membership criteria during the 1840s.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

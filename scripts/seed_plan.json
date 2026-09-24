@@ -53,12 +53,12 @@
     "11-postwar-refugees": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "12-riots-and-reform": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "13-transition": {
       "outlined": true,
@@ -9169,7 +9169,8 @@
       "year": 1942,
       "date": "1942-06",
       "summary": "The Peak Tram resumed limited operations strictly to serve the newly relocated Japanese military and civilian officials occupying the Victoria Peak mansions.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1942-reopening-of-the-peak-tram-for-japanese-elite-use.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9177,7 +9178,8 @@
       "year": 1943,
       "date": "1943-05",
       "summary": "Authorities promoted Japanese dietary staples like soybeans and sweet potatoes through cooking demonstrations to alter local food habits amid severe rice shortages.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1943-introduction-of-japanese-cuisine-and-cooking-classes.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9185,7 +9187,8 @@
       "year": 1943,
       "date": "1943-09",
       "summary": "The luxury Peninsula Hotel was transformed into an exclusive social and administrative hub for high-ranking Imperial Japanese military officers.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1943-conversion-of-peninsula-hotel-into-japanese-officers-club.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9193,7 +9196,8 @@
       "year": 1944,
       "date": "1944-02",
       "summary": "The occupation government levied harsh urban property and municipal taxes payable only in military yen to finance escalating occupation costs.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1944-imposition-of-special-wartime-property-taxes.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9201,7 +9205,8 @@
       "year": 1944,
       "date": "1944-07",
       "summary": "Continuous forced deportations of urban residents to rural Guangdong were carried out via crowded coastal vessels to mitigate acute food shortages in the city.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1944-operation-of-repatriation-vessels-to-mainland-china.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9209,7 +9214,8 @@
       "year": 1944,
       "date": "1944-10",
       "summary": "Local charitable individuals secretly operated underground shelters to protect and feed abandoned children amidst escalating wartime destitution.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1944-establishment-of-underground-orphanage-relief-networks.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9217,7 +9223,8 @@
       "year": 1945,
       "date": "1945-03",
       "summary": "An extensive underground economy thrived around typhoon shelters and alleyways, trading smuggled food and medicine using hidden British currency.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1945-secret-operation-of-wartime-black-markets.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -9225,6 +9232,172 @@
       "year": 1945,
       "date": "1945-09",
       "summary": "Following the surrender, the returning administration established registration centers to help separated family members locate relatives displaced by wartime evacuations.",
+      "status": "done",
+      "file": "10-japanese-occupation/1945-emergency-reunification-of-displaced-families-post-liberation.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Urban Council Resettlement Department",
+      "year": 1954,
+      "date": "1954",
+      "summary": "Created to streamline the administration of emergency housing following the Shek Kip Mei fire, marking the government's permanent entry into public housing.",
+      "status": "done",
+      "file": "11-postwar-refugees/1954-establishment-of-the-urban-council-resettlement-department.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Social Welfare Office",
+      "year": 1948,
+      "date": "1948",
+      "summary": "Transformed social relief from ad-hoc post-war charity into a formalized government responsibility addressing massive poverty and destitution.",
+      "status": "done",
+      "file": "11-postwar-refugees/1948-establishment-of-the-social-welfare-office.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Promulgation of the Colonial Development and Welfare Acts Funding",
+      "year": 1945,
+      "date": "1945-1950",
+      "summary": "Injected critical British financial aid that jump-started public infrastructure repairs and health services in the immediate postwar vacuum.",
+      "status": "done",
+      "file": "11-postwar-refugees/1945-promulgation-of-the-colonial-development-and-welfare-acts-funding.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Passage of the Factories and Industrial Undertakings Ordinance",
+      "year": 1955,
+      "date": "1955",
+      "summary": "Established basic statutory workplace safety, working hours, and employment standards as the colony rapidly industrialized.",
+      "status": "done",
+      "file": "11-postwar-refugees/1955-passage-of-the-factories-and-industrial-undertakings-ordinance.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Hong Kong Productivity Council",
+      "year": 1965,
+      "date": "1965",
+      "summary": "Aimed to modernize local manufacturing techniques and boost efficiency as Hong Kong shifted from simple assembly to higher-value export production.",
+      "status": "done",
+      "file": "11-postwar-refugees/1965-establishment-of-the-hong-kong-productivity-council.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Aberdeen Technical School Expansion",
+      "year": 1952,
+      "date": "1952",
+      "summary": "Provided crucial vocational training for working-class youth to feed the expanding manufacturing workforce.",
+      "status": "done",
+      "file": "11-postwar-refugees/1952-establishment-of-the-aberdeen-technical-school-expansion.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Opening of Queen Mary Hospital Psychiatric Wing",
+      "year": 1955,
+      "date": "1955",
+      "summary": "Significantly upgraded institutional mental health care capacity to cope with the severe psychological strains of war trauma and refugee poverty.",
+      "status": "done",
+      "file": "11-postwar-refugees/1955-opening-of-queen-mary-hospital-psychiatric-wing.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Enactment of the Emergency (Principal) Regulations Amendment",
+      "year": 1950,
+      "date": "1950",
+      "summary": "Tightened internal security and border controls in response to the Chinese Communist Revolution and potential cross-border subversion.",
+      "status": "done",
+      "file": "11-postwar-refugees/1950-enactment-of-the-emergency-principal-regulations-amendment.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Launch of the Government Chinese Language School Expansion",
+      "year": 1961,
+      "date": "1961",
+      "summary": "Expanded vernacular secondary education to meet the demographic pressure of the postwar baby boom generation.",
+      "status": "done",
+      "file": "11-postwar-refugees/1961-launch-of-the-government-chinese-language-school-expansion.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Hong Kong Sea Transport Workers Union",
+      "year": 1949,
+      "date": "1949",
+      "summary": "Highlighted the intense labor activism and political polarization between Kuomintang and Communist factions among maritime workers.",
+      "status": "done",
+      "file": "11-postwar-refugees/1949-establishment-of-the-hong-kong-sea-transport-workers-union.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Enactment of the Employment Ordinance",
+      "year": 1968,
+      "date": "1968-01-01",
+      "summary": "This landmark legislation significantly improved labor rights and job security by establishing statutory regulations for termination, sickness allowances, and severance pay.",
+      "status": "done",
+      "file": "12-riots-and-reform/1968-enactment-of-the-employment-ordinance.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Establishment of the Fight Violent Crime Campaign",
+      "year": 1973,
+      "date": "1973-02-01",
+      "summary": "This massive community-wide mobilization fostered unprecedented public cooperation with law enforcement to curb rampant gang violence and syndicates during the early 1970s.",
+      "status": "done",
+      "file": "12-riots-and-reform/1973-establishment-of-the-fight-violent-crime-campaign.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Launch of the Jockey Club Kwai Chung Athlete's Village",
+      "year": 1974,
+      "date": "1974-05-15",
+      "summary": "The opening reflected a growing government focus on recreational infrastructure to improve physical well-being and social cohesion for working-class youth in new industrial areas.",
+      "status": "done",
+      "file": "12-riots-and-reform/1974-launch-of-the-jockey-club-kwai-chung-athletes-village.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Passage of the Anti-Discrimination Women's Rights Reforms",
+      "year": 1975,
+      "date": "1975-10-12",
+      "summary": "Aligning with the United Nations International Women's Year, Hong Kong began dismantling colonial-era legal disparities regarding female employment, property, and family rights.",
+      "status": "pending"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Establishment of the Social Security Assistance Scheme",
+      "year": 1977,
+      "date": "1977-04-01",
+      "summary": "This consolidated financial safety net provided essential monetary support to the elderly, disabled, and destitute, shifting welfare from charity to government responsibility.",
+      "status": "pending"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Formation of the Hong Kong Christian Industrial Committee",
+      "year": 1978,
+      "date": "1978-06-20",
+      "summary": "This grassroots advocacy group empowered factory workers through education and labor rights campaigns during the peak of Hong Kong's manufacturing boom.",
+      "status": "pending"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Launch of the Senior Civil Service Pay Scale Overhaul",
+      "year": 1979,
+      "date": "1979-09-01",
+      "summary": "Following the 1979 Fok Chun-wah commission, this localization and pay reform professionalized the civil service and cemented a neutral bureaucratic backbone for governance.",
+      "status": "pending"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Opening of the Sha Tin Government Secondary School",
+      "year": 1980,
+      "date": "1980-09-01",
+      "summary": "As the first secondary institution in the new towns, it symbolized the decentralized expansion of quality public education alongside rapid suburban development.",
+      "status": "pending"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Publication of the MacLehose District Administration Green Paper",
+      "year": 1981,
+      "date": "1981-06-05",
+      "summary": "This reform proposal restructured local government by establishing District Boards, laying the crucial groundwork for representative democracy and community participation.",
       "status": "pending"
     }
   ],
@@ -9291,7 +9464,8 @@
         "The Establishment of the Weitou Ancestral Halls",
         "Regulation of the Tanka Boat Migration",
         "The Expansion of the Hakka Terraced Farming System",
-        "Enactment of the Female Domestic Service Ordinance Amendment"
+        "Enactment of the Female Domestic Service Ordinance Amendment",
+        "Operation of Repatriation Vessels to Mainland China"
       ],
       "status": "done",
       "file": "Places/guangdong.md"
@@ -9897,7 +10071,25 @@
         "Founding of the Association of Stockbrokers in Hong Kong",
         "First Moving Picture Screening in Hong Kong",
         "Confiscation of Radios and Ban on News Listening",
-        "Establishment of the Hok Aik Hui Welfare Association"
+        "Establishment of the Hok Aik Hui Welfare Association",
+        "Reopening of the Peak Tram for Japanese Elite Use",
+        "Introduction of Japanese Cuisine and Cooking Classes",
+        "Conversion of Peninsula Hotel into Japanese Officers Club",
+        "Imposition of Special Wartime Property Taxes",
+        "Operation of Repatriation Vessels to Mainland China",
+        "Secret Operation of Wartime Black Markets",
+        "Emergency Reunification of Displaced Families Post-Liberation",
+        "Establishment of the Urban Council Resettlement Department",
+        "Establishment of the Social Welfare Office",
+        "Promulgation of the Colonial Development and Welfare Acts Funding",
+        "Passage of the Factories and Industrial Undertakings Ordinance",
+        "Establishment of the Hong Kong Productivity Council",
+        "Enactment of the Emergency (Principal) Regulations Amendment",
+        "Launch of the Government Chinese Language School Expansion",
+        "Establishment of the Hong Kong Sea Transport Workers Union",
+        "Enactment of the Employment Ordinance",
+        "Establishment of the Fight Violent Crime Campaign",
+        "Launch of the Jockey Club Kwai Chung Athlete's Village"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -9971,7 +10163,8 @@
         "Establishment of Permanent Communal Storage Pits",
         "The Expansion of the Hakka Terraced Farming System",
         "The Rise of Private Maritime Insurance Networks",
-        "Launch of the Lady MacLehose Holiday Village"
+        "Launch of the Lady MacLehose Holiday Village",
+        "Secret Operation of Wartime Black Markets"
       ],
       "status": "done",
       "file": "Places/sai-kung.md"
@@ -10552,7 +10745,10 @@
         "Inauguration of the Yaumatei Typhoon Shelter",
         "Opening of the Peninsula Hotel",
         "Establishment of the Hong Kong General Chamber of Commerce",
-        "Formation of the Nam Pak Hong Association"
+        "Formation of the Nam Pak Hong Association",
+        "Operation of Repatriation Vessels to Mainland China",
+        "Establishment of Underground Orphanage Relief Networks",
+        "Emergency Reunification of Displaced Families Post-Liberation"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -10895,7 +11091,8 @@
         "Establishment of the Public Enquiry Service Centres",
         "Implementation of the New Territories Block Crown Lease System",
         "Phytophthora Outbreak and Agriculture Shift",
-        "Founding of the Royal Hong Kong Golf Club"
+        "Founding of the Royal Hong Kong Golf Club",
+        "Emergency Reunification of Displaced Families Post-Liberation"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -11411,7 +11608,8 @@
         "Opening of the Tsim Sha Tsui Police Station",
         "Inauguration of the Cultural Centre Design and Construction",
         "Opening of the Hong Kong Museum of History",
-        "Opening of the Peninsula Hotel"
+        "Opening of the Peninsula Hotel",
+        "Conversion of Peninsula Hotel into Japanese Officers Club"
       ],
       "status": "done",
       "file": "Places/tsim-sha-tsui.md"
@@ -11836,7 +12034,8 @@
         "Ten-Year Housing Programme Announced",
         "Establishment of Tsuen Wan as Hong Kong's First Satellite Town",
         "Typhoon Wanda Strikes Hong Kong",
-        "Opening of the Tuen Mun Highway"
+        "Opening of the Tuen Mun Highway",
+        "Launch of the Jockey Club Kwai Chung Athlete's Village"
       ],
       "status": "done",
       "file": "Places/tsuen-wan.md"
@@ -12269,7 +12468,8 @@
         "Establishment of the Aberdeen Technical School",
         "Opening of the Peninsula Hotel",
         "Completion of the Wong Nai Chung Reservoir",
-        "Publication of the Chadwick Report on Sanitary Conditions"
+        "Publication of the Chadwick Report on Sanitary Conditions",
+        "Establishment of Underground Orphanage Relief Networks"
       ],
       "status": "done",
       "file": "Places/hong-kong-island.md"
@@ -12367,7 +12567,8 @@
         "Sinking of the Iconic Jumbo Floating Restaurant",
         "Establishment of the Aberdeen Dockyards",
         "Establishment of the Aberdeen Technical School",
-        "Establishment of the Aberdeen Fishing Vocational School"
+        "Establishment of the Aberdeen Fishing Vocational School",
+        "Establishment of the Aberdeen Technical School Expansion"
       ],
       "status": "done",
       "file": "Places/aberdeen.md"
@@ -12613,7 +12814,8 @@
         "Construction of St. John's Cathedral Foundations",
         "Establishment of the Diocesan Girls' School",
         "Introduction of Gas Street Lighting in Victoria",
-        "First Moving Picture Screening in Hong Kong"
+        "First Moving Picture Screening in Hong Kong",
+        "Emergency Reunification of Displaced Families Post-Liberation"
       ],
       "status": "done",
       "file": "Places/victoria.md"
@@ -12978,7 +13180,8 @@
         "Closure of Dairy Farm and Collapse of Livestock Industry",
         "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
         "Establishment of the Dairy Farm Pok Fu Lam Farm",
-        "Completion of the Tai Tam Reservoir Scheme"
+        "Completion of the Tai Tam Reservoir Scheme",
+        "Opening of Queen Mary Hospital Psychiatric Wing"
       ],
       "status": "done",
       "file": "Places/pok-fu-lam.md"
@@ -13209,7 +13412,8 @@
         "Enactment of Air Raid Precautions",
         "Systematic Japanese Renaming of Hong Kong Streets and Landmarks",
         "Establishment of the Peak Reservation Ordinance",
-        "Opening of the Peak Tramway"
+        "Opening of the Peak Tramway",
+        "Reopening of the Peak Tram for Japanese Elite Use"
       ],
       "status": "done",
       "file": "Places/victoria-peak.md"
@@ -13921,7 +14125,8 @@
         "Battle of Hong Kong and Japanese Occupation",
         "Black Christmas and British Surrender",
         "Liberation of Hong Kong from Japanese Occupation",
-        "Restoration of Civil Government and the Young Plan"
+        "Restoration of Civil Government and the Young Plan",
+        "Promulgation of the Colonial Development and Welfare Acts Funding"
       ],
       "status": "done",
       "file": "People/sir-mark-young.md"
@@ -14052,7 +14257,8 @@
       "name": "Peninsula Hotel (半島酒店)",
       "kind": "place",
       "mentions": [
-        "Black Christmas and British Surrender"
+        "Black Christmas and British Surrender",
+        "Conversion of Peninsula Hotel into Japanese Officers Club"
       ],
       "status": "done",
       "file": "Places/peninsula-hotel.md"
@@ -14066,7 +14272,8 @@
         "Launch of Cultural Japanization Campaign",
         "Imperial Japanese Broadcast Announcing Surrender",
         "Systematic Japanese Renaming of Hong Kong Streets and Landmarks",
-        "Censorship and Purge of the Pre-War Press"
+        "Censorship and Purge of the Pre-War Press",
+        "Conversion of Peninsula Hotel into Japanese Officers Club"
       ],
       "status": "done",
       "file": "People/rensuke-isogai.md"
@@ -14076,7 +14283,8 @@
       "kind": "person",
       "mentions": [
         "Establishment of Stanley Internment Camp",
-        "Formation of Gimson's Provisional British Administration"
+        "Formation of Gimson's Provisional British Administration",
+        "Emergency Reunification of Displaced Families Post-Liberation"
       ],
       "status": "done",
       "file": "People/franklin-gimson.md"
@@ -14300,7 +14508,9 @@
         "Establishment of the Hong Kong Housing Authority",
         "Kowloon Walled City Eviction Riots",
         "Opening of the Hong Kong Technical College",
-        "Standardization of the Hong Kong Dollar through the Currency Ordinance"
+        "Standardization of the Hong Kong Dollar through the Currency Ordinance",
+        "Establishment of the Urban Council Resettlement Department",
+        "Enactment of the Emergency (Principal) Regulations Amendment"
       ],
       "status": "done",
       "file": "People/alexander-grantham.md"
@@ -14314,7 +14524,8 @@
         "Establishment of the Hong Kong Housing Authority",
         "Ten-Year Housing Programme Announced",
         "Mass Transit Railway (MTR) Begins Service",
-        "Typhoon Wanda Strikes Hong Kong"
+        "Typhoon Wanda Strikes Hong Kong",
+        "Establishment of the Urban Council Resettlement Department"
       ],
       "status": "done",
       "file": "Places/shek-kip-mei.md"
@@ -14502,7 +14713,9 @@
         "Launch of the Lady MacLehose Holiday Village",
         "Enactment of the Legal Aid Ordinance Expansion",
         "Formation of the Society for Community Organization",
-        "Establishment of the Public Enquiry Service Centres"
+        "Establishment of the Public Enquiry Service Centres",
+        "Enactment of the Employment Ordinance",
+        "Establishment of the Fight Violent Crime Campaign"
       ],
       "status": "done",
       "file": "People/murray-maclehose.md"
@@ -14523,7 +14736,8 @@
       "mentions": [
         "1967 Leftist Riots",
         "Opening of the Plover Cove Reservoir",
-        "Establishment of the Urban Council Franchise Reform"
+        "Establishment of the Urban Council Franchise Reform",
+        "Enactment of the Employment Ordinance"
       ],
       "status": "done",
       "file": "People/david-trench.md"
@@ -14556,7 +14770,8 @@
         "Opening of the Tuen Mun New Town",
         "Launch of the Green Cross Campaign",
         "Introduction of the Labour Tribunal",
-        "Launch of the Social Welfare White Paper"
+        "Launch of the Social Welfare White Paper",
+        "Launch of the Jockey Club Kwai Chung Athlete's Village"
       ],
       "status": "done",
       "file": "People/sir-murray-maclehose.md"
@@ -15132,7 +15347,8 @@
       "kind": "place",
       "mentions": [
         "Death of Pop Icon Leslie Cheung",
-        "Opening of Queen Mary Hospital"
+        "Opening of Queen Mary Hospital",
+        "Opening of Queen Mary Hospital Psychiatric Wing"
       ],
       "status": "done",
       "file": "Places/queen-mary-hospital.md"
@@ -15154,7 +15370,8 @@
         "The Rise of Cantopop's 'Four Heavenly Kings'",
         "The Emergence of 'Red Chip' Investment Fever",
         "Hong Kong's 2006 Population Census Reveals Demographic Shifts",
-        "HKD-RMB Dual Counter Financial Model Launched"
+        "HKD-RMB Dual Counter Financial Model Launched",
+        "Enactment of the Emergency (Principal) Regulations Amendment"
       ],
       "status": "done",
       "file": "Places/mainland-china.md"
@@ -16809,7 +17026,8 @@
         "Public Housing Short-Piling Construction Scandal",
         "Establishment of Tsuen Wan as Hong Kong's First Satellite Town",
         "Discovery of Lead in Public Housing Water",
-        "Lead-in-Water Crisis Spreads to Public Housing Estates"
+        "Lead-in-Water Crisis Spreads to Public Housing Estates",
+        "Launch of the Jockey Club Kwai Chung Athlete's Village"
       ],
       "status": "done",
       "file": "Places/kwai-chung.md"
@@ -18307,7 +18525,8 @@
       "kind": "place",
       "mentions": [
         "Completion of the Lok Ma Chau Spur Line",
-        "Implementation of the Repatriation of the Destitute"
+        "Implementation of the Repatriation of the Destitute",
+        "Enactment of the Emergency (Principal) Regulations Amendment"
       ],
       "status": "done",
       "file": "Places/lo-wu.md"
@@ -19998,6 +20217,24 @@
       ],
       "status": "done",
       "file": "People/lumière-brothers.md"
+    },
+    "person:david-macdougall": {
+      "name": "David MacDougall",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Social Welfare Office"
+      ],
+      "status": "done",
+      "file": "People/david-macdougall.md"
+    },
+    "place:high-street-mental-hospital": {
+      "name": "High Street Mental Hospital (高街精神病院)",
+      "kind": "place",
+      "mentions": [
+        "Opening of Queen Mary Hospital Psychiatric Wing"
+      ],
+      "status": "done",
+      "file": "Places/high-street-mental-hospital.md"
     }
   }
 }

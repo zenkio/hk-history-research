@@ -143,5 +143,6 @@ def cited_sources(titles, claims):
         else:
             ok, note = check_isbn(isbn, tpl)
             if ok is False and note.startswith("ISBN is") and not re.search(r"[A-Za-z]{3}", title):
-                ok = None  # Chinese title vs romanised catalogue title: cannot compare            out.append({"title": title, "url": f"https://openlibrary.org/isbn/{isbn}", "kind": "ISBN", "ok": ok, "note": note})
+                ok = None  # Chinese title vs romanised catalogue title: cannot compare
+            out.append({"title": title, "url": f"https://openlibrary.org/isbn/{isbn}", "kind": "ISBN", "ok": ok, "note": note})
     return out

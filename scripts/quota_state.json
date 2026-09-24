@@ -1,9 +1,9 @@
 {
   "day": "2026-09-24",
   "used": {
-    "Gemini 3.1 Flash Lite": 4,
-    "Gemini 3.5 Flash Lite": 4,
-    "Gemma 4 31B": 8
+    "Gemini 3.1 Flash Lite": 5,
+    "Gemini 3.5 Flash Lite": 5,
+    "Gemma 4 31B": 12
   },
   "parked": {},
   "resolved": {

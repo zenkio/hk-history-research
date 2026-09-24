@@ -31,12 +31,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## 🔥 Burning (fix first)
 
-- [ ] **Run 11 failed in 37 s**: `repair_content.py` ran `git pull --rebase` while `scripts/seen_urls.json` (updated by the fetch step) was uncommitted. Every run that fetches a new article would fail. _Fix in PR #6: `--autostash` on all three pull-rebases, and a repair commit failure no longer fails the job._
-
-- [ ] **Run 9 (2026-09-24) was cancelled at the 70-minute limit and committed nothing.** Gemma 31B was overloaded, so every photo description waited minutes; the classify step only committed at the end, so 3 finished pages (1979 Geneva Conference with video, 2 wartime posts) were lost; the seeding step (research import, evidence, fact-check retry) never ran. _Fix in PR #5: commit per page, a 20-minute budget for classify, `continue-on-error` so seeding always runs, and a 10-minute cooldown for a model after repeated overloads._
-
-- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.
-- [ ] **14 source pages are off the site until the quota reset.** The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
+- [ ] **Fact-check is broken: Gemini 2.5 Flash and Flash Lite are closed to new users** (404 "no longer available to new users"). They were the only free models with Google Search grounding. _Fix in PR #7: fact-checks now read Wikipedia extracts (no key) and Gemma judges each claim against that text only; tag `fact-checked`, sources listed, grade C. Up to 80 pages a run, core eras first._
+- [ ] **10 source pages still waiting in the ingestion queue** (were 14). The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
 - [x] ~~OpenRouter wrongly switched off for the day when a step lacks the key~~: now skipped per run; the key is also passed to the classify step.
 - [x] ~~Model ids~~: Gemma 26B resolves to `gemma-4-26b-a4b-it`, Gemini 3 Flash to `gemini-3-flash-preview`. OpenRouter picked `qwen/qwen3.8-27b:free`; no free DeepSeek model exists now, so the second slot falls back to GLM, Kimi or Llama 4.
 
@@ -48,7 +44,7 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
   2. OpenAlex / Crossref: academic works on the topic; Gemma or OpenRouter confirms relevance.
   3. Internet Archive full text: old books and official publications; AI reads the passage and marks the claim supported or contradicted.
   4. UK National Archives Discovery: link the matching CO 129 files.
-  5. Google Search grounding: only for claims still unresolved (40 a day).
+  5. Wikipedia fact-check (grade C) is live; claims it marks "unclear" need 1 to 4.
 
   Output: a `## Evidence` section per page, `evidence_grade` in the frontmatter, and a site page listing pages by grade.
 - [ ] **P1 Order: core period first** (1841+), and within it the most-linked events first. _(Ordering is done; the engine is still to build.)_
@@ -77,6 +73,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 - Maps: historical map overlays by year.
 
 ## Done
+
+- 2026-09-24: Run 12 (first run on PR #6): 52 pages graded (A 14, B 8, none 30), 21 of 118 pages got Commons photos, Deep Research 1834–1842 imported. Runs 9 and 11 failures fixed (PRs #5, #6).
 
 - 2026-09-24: Parallel workers (Gemini / research / photos) in the seeding step; commit per page; overload cooldown.
 

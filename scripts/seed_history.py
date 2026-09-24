@@ -17,7 +17,7 @@ Work is resumable and tracked in scripts/seed_plan.json:
                 (role "outline"), which feeds steps 3 and 4 again
 Separately, every run first attaches archive/scholarly evidence to a slice of
 drafted pages (evidence.py), spends the "verify" budget fact-checking drafted
-event pages with Google Search grounding, which adds real web sources, then
+event pages against Wikipedia (wikipedia.py), which adds reference links, then
 the OpenRouter free budget on Traditional Chinese versions (translate.py),
 then looks for Wikimedia Commons photos for a slice of event pages (photos.py).
 Once the plan is complete, spare Gemma capacity continues the translations.
@@ -42,6 +42,7 @@ from photos import photos_batch
 from evidence import evidence_batch, write_status_page
 from research_import import import_inbox
 import state
+import wikipedia
 from state import PAGE_LOCK
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -57,6 +58,7 @@ CORE_ERA_START = "05-opium-war"
 TRANSLATE_WITH_AI = False
 # Upper bounds per run; in practice the run's time budget stops the workers first.
 PHOTO_EVENTS_PER_RUN = 60
+VERIFY_PAGES_PER_RUN = 80  # Gemma: ~30 s a page, leaves time for drafting
 EVIDENCE_PAGES_PER_RUN = 150
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
@@ -154,12 +156,16 @@ Respond with ONLY this JSON:
   "tags": ["lowercase-hyphenated", "max-5"]}}"""
 
 VERIFY_PROMPT = """You are fact-checking a draft page of a Hong Kong history website.
-Use Google Search to check each claim below against reliable sources
-(archives, universities, government, museums, encyclopedias, major newspapers).
+Check each claim below against the reference text only (extracts from Wikipedia).
+"supported": the text states it. "contradicted": the text states something different
+(give the correct fact). "unclear": the text does not cover it. Do not use outside knowledge.
 
 Page title: {title}
 Claims:
 {claims}
+
+Reference text:
+{reference}
 
 Respond with ONLY a JSON object, no other text:
 {{"verdicts": [{{"claim": "the claim", "status": "supported | contradicted | unclear", "note": "One sentence: what the sources say, with the correct fact if contradicted"}}]}}"""
@@ -380,7 +386,9 @@ def _apply_verification_unlocked(path, verdicts, sources, model):
         text = f.read()
     icon = {"supported": "✅", "contradicted": "❌", "unclear": "❔"}
     lines = ["## Fact check", "",
-             f"Checked with Google Search grounding by {model} on {datetime.now().strftime('%Y-%m-%d')}.", ""]
+             f"Checked by {model} against the Wikipedia articles below (grade C, reference) on "
+             f"{datetime.now().strftime('%Y-%m-%d')}. \"Unclear\" means Wikipedia does not cover the claim; "
+             "it still needs a primary or scholarly source.", ""]
     for v in verdicts:
         status = str(v.get("status", "unclear")).strip().lower()
         lines.append(f"- {icon.get(status, '❔')} **{status}**: {v.get('claim', '')}. {v.get('note', '')}".rstrip())
@@ -390,18 +398,18 @@ def _apply_verification_unlocked(path, verdicts, sources, model):
     text = re.sub(r"## Claims to verify\n.*?(?=Part of: )", lambda _: block, text, count=1, flags=re.DOTALL)
     contradicted = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
     text = text.replace("confidence: ai-draft\n", "confidence: ai-draft-checked\n", 1)
-    extra = '"search-checked"' + (', "needs-correction"' if contradicted else "")
+    extra = '"fact-checked"' + (', "needs-correction"' if contradicted else "")
     text = re.sub(r"^tags: \[", lambda _: f"tags: [{extra}, ", text, count=1, flags=re.MULTILINE)
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
     return contradicted
 
 
-def verify_pages(pool, plan, deadline):
-    """Spend the daily search-grounded budget checking the oldest unchecked drafts."""
+def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
+    """Fact-check the highest-priority unchecked drafts against Wikipedia."""
     checked = 0
     for ev in by_priority(plan["events"]):
-        if time.time() > deadline or pool.total_remaining("verify") == 0:
+        if time.time() > deadline or checked >= limit or pool.total_remaining("verify") == 0:
             break
         if ev["status"] != "done" or ev.get("verified"):
             continue
@@ -414,11 +422,22 @@ def verify_pages(pool, plan, deadline):
             ev["verified"] = "no-claims"
             continue
         try:
-            data, model, sources = pool.generate_json("verify", VERIFY_PROMPT.format(
-                title=ev["title"], claims="\n".join(f"- {c}" for c in claims)), search=True)
+            reference, sources = wikipedia.reference_text(ev["title"], claims)
+        except Exception as e:
+            print(f"[verify] Wikipedia unreachable ({e}); stopping fact-checks for this run")
+            break
+        if not reference:
+            ev["verified"] = "no-reference"
+            save_plan(plan)
+            continue
+        try:
+            data, model, _ = pool.generate_json("verify", VERIFY_PROMPT.format(
+                title=ev["title"], claims="\n".join(f"- {c}" for c in claims), reference=reference))
         except QuotaExhausted:
             break
         verdicts = data.get("verdicts", []) if isinstance(data, dict) else []
+        if not verdicts:
+            continue
         bad = apply_verification(path, verdicts, sources, model)
         ev["verified"] = datetime.now().strftime("%Y-%m-%d")
         save_plan(plan)

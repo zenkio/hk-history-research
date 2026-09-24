@@ -50,7 +50,9 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 - [ ] **P1 Order: core period first** (1841+), and within it the most-linked events first. _(Ordering is done; the engine is still to build.)_
 - [x] **P1 Deep Research import** built (`scripts/research_import.py`): link-checks every citation and attaches only rows with a working link. First file (1834–1842) imported: 17 of 25 rows matched pages. DOIs and ISBNs are verified by title against Crossref/Open Library, and `[cite: N]` numbers are resolved to the source list.
 - [ ] **P1 Review `research/unmatched.md`**: missing events found by Deep Research (8 from 1834–1842, e.g. the 1840 expeditionary force and the 1842 Chinese Registration Ordinance). Add the real ones to the plan as new events.
-- [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1842–1860, then 1860–1898).
+- [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1834–1842 and 1842–1860 done; next 1860–1898).
+- [ ] **P1 Owner: run Deep Research prompt 02 (source map)** once, save as `research/source-map.md`.
+- [ ] **P1 Hong Kong government records as evidence sources.** Today only UK records are searched (National Archives catalogue: CO 129, FO 17). Add, most useful first: HKU Hong Kong Government Reports Online (Gazette 1842–1941, Blue Books, Hansard, Sessional Papers), old HK newspapers (HKPL MMIS), Government Records Service (HKRS catalogue). Use the source map to choose and test them.
 
 ## Next
 

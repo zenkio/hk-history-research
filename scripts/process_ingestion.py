@@ -59,7 +59,7 @@ def parse_header(content):
     """Extract source_url, feed, pub_date, title from the plain-text header written by fetch_sources.py."""
     meta = {}
     for line in content.splitlines():
-        for key in ("source_url", "feed", "pub_date", "title", "videos", "images"):
+        for key in ("source_url", "feed", "pub_date", "title", "videos", "images", "replaces"):
             if line.startswith(f"{key}:"):
                 meta[key] = line[len(key) + 1:].strip()
     return meta
@@ -255,6 +255,12 @@ def analyze_and_route(pool, filepath):
         f.write(output)
 
     os.remove(filepath)
+    # A re-queued page (repair_content.py) is only removed once its replacement exists.
+    old = meta.get("replaces")
+    if old:
+        old_path = os.path.join(PROJECT_ROOT, old)
+        if os.path.exists(old_path) and os.path.abspath(old_path) != os.path.abspath(output_path):
+            os.remove(old_path)
     print(f"[{category}] {title[:60]} → {os.path.basename(output_path)}")
 
 

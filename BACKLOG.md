@@ -31,12 +31,15 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
 ## 🔥 Burning (fix first)
 
-- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable". Read `parked` and `available` in `scripts/quota_state.json` after the next run, then fix the model id or switch verification to another route.
-- [ ] **Watch the first runs after the PR #2 merge**: the repair step, video summaries, Commons photos, and the Gemma 26B id. Check the Actions logs and `quota_state.json`.
+- [ ] **Fact-check is broken.** The Gemini 2.5 models are parked as "unavailable" (parked before error details were logged). They retry after the 07:00 UTC quota reset; read `parked` in `scripts/quota_state.json` or the Actions log, then fix the id or reroute.
+- [ ] **14 source pages are off the site until the quota reset.** The repair run on 2026-09-23 re-queued them (11 have videos to summarise), but the video quota was spent. They come back after 07:00 UTC. _Fixed for the future: repair now keeps the old page until its replacement is written._
+- [x] ~~OpenRouter wrongly switched off for the day when a step lacks the key~~: now skipped per run; the key is also passed to the classify step.
+- [x] ~~Model ids~~: Gemma 26B resolves to `gemma-4-26b-a4b-it`, Gemini 3 Flash to `gemini-3-flash-preview`. OpenRouter picked `qwen/qwen3.8-27b:free`; no free DeepSeek model exists now, so the second slot falls back to GLM, Kimi or Llama 4.
 
 ## Now (current focus: verification)
 
-- [ ] **P1 Evidence engine.** For every AI claim, collect evidence and grade the page A–D:
+- [x] **P1 Evidence engine v1** built (`scripts/evidence.py`): OpenAlex + National Archives + Internet Archive, AI relevance filter, grades A/B/none, status page. _Not yet built: Wikidata date checks, Internet Archive full-text passage checks._
+- [ ] **P1 Evidence engine v2.** For every AI claim, collect evidence and grade the page A–D:
   1. Wikidata: check dates and names with Python (no AI).
   2. OpenAlex / Crossref: academic works on the topic; Gemma or OpenRouter confirms relevance.
   3. Internet Archive full text: old books and official publications; AI reads the passage and marks the claim supported or contradicted.
@@ -45,7 +48,9 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 
   Output: a `## Evidence` section per page, `evidence_grade` in the frontmatter, and a site page listing pages by grade.
 - [ ] **P1 Order: core period first** (1841+), and within it the most-linked events first. _(Ordering is done; the engine is still to build.)_
-- [ ] **P1 Deep Research import.** Ingest the results the owner pastes from Gemini Deep Research (`research/inbox/`) as grade A/B evidence and attach them to the matching pages.
+- [x] **P1 Deep Research import** built (`scripts/research_import.py`): link-checks every citation and attaches only rows with a working link. First file (1834–1842) imported: 17 of 25 rows matched pages. DOIs and ISBNs are verified by title against Crossref/Open Library, and `[cite: N]` numbers are resolved to the source list.
+- [ ] **P1 Review `research/unmatched.md`**: missing events found by Deep Research (8 from 1834–1842, e.g. the 1840 expeditionary force and the 1842 Chinese Registration Ordinance). Add the real ones to the plan as new events.
+- [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1842–1860, then 1860–1898).
 
 ## Next
 
@@ -68,6 +73,8 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 - Maps: historical map overlays by year.
 
 ## Done
+
+- 2026-09-24: Evidence engine v1 and Deep Research importer.
 
 - 2026-09-24: Focus set: 1841+ first; AI translation off; pre-1841 eras no longer deepened.
 - 2026-09-23: PR #2: hourly pipeline, 3-hourly deploy, quota fixes, summary and teaser repair, video summaries, photos (source cards and Commons), OpenRouter support.

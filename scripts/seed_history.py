@@ -15,7 +15,8 @@ Work is resumable and tracked in scripts/seed_plan.json:
                 most-mentioned first               (role "draft", ~1000+ calls)
   5. deepen   - ask each era for events it still misses, MAX_ROUNDS times
                 (role "outline"), which feeds steps 3 and 4 again
-Separately, every run first spends the "verify" budget fact-checking drafted
+Separately, every run first attaches archive/scholarly evidence to a slice of
+drafted pages (evidence.py), spends the "verify" budget fact-checking drafted
 event pages with Google Search grounding, which adds real web sources, then
 the OpenRouter free budget on Traditional Chinese versions (translate.py),
 then looks for Wikimedia Commons photos for a slice of event pages (photos.py).
@@ -36,6 +37,8 @@ from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary
 from translate import translate_batch
 from photos import photos_batch
+from evidence import evidence_batch, write_status_page
+from research_import import import_inbox
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
@@ -49,6 +52,7 @@ CORE_ERA_START = "05-opium-war"
 # OpenRouter and Gemma budgets go to research and verification instead.
 TRANSLATE_WITH_AI = False
 PHOTO_EVENTS_PER_RUN = 20
+EVIDENCE_PAGES_PER_RUN = 40
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
 
 ERAS = [
@@ -462,6 +466,13 @@ def run(max_calls, minutes, commit=False):
     print(f"Quota at start: {pool.summary()}")
     print(f"Model ids: {pool.state['resolved']}")
     done += verify_pages(pool, plan, deadline)
+    # Owner-supplied Gemini Deep Research results (research/inbox/), link-checked.
+    import_inbox(plan)
+    save_plan(plan)
+    # Top priority (BACKLOG.md): attach archive and scholarly evidence to drafted pages.
+    done += evidence_batch(pool, plan, deadline, by_priority(plan["events"]),
+                           limit=EVIDENCE_PAGES_PER_RUN, save=save_plan)
+    write_status_page(plan)
     if TRANSLATE_WITH_AI:
         # OpenRouter's free budget is separate from Gemini's, so spend it every run.
         openrouter = [k for k in pool.routing.get("translate", []) if pool.models[k].get("provider") == "openrouter"]
@@ -539,7 +550,8 @@ def run(max_calls, minutes, commit=False):
 
 
 def git_commit():
-    paths = ["content/01_Timeline", "content/02_Entities", "content/zh", "scripts/seed_plan.json", "scripts/quota_state.json"]
+    paths = ["content/00_Meta", "content/01_Timeline", "content/02_Entities", "content/zh",
+             "research", "scripts/seed_plan.json", "scripts/quota_state.json"]
     subprocess.run(["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
                    cwd=PROJECT_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT).returncode == 0:

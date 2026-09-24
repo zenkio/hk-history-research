@@ -127,9 +127,10 @@ def requeue_thin(pages):
         with open(os.path.join(QUEUE_DIR, name), "w", encoding="utf-8") as f:
             f.write(f"source_url: {url}\nfeed: {get_field(fm, 'source_feed') or 'unknown'}\n"
                     f"pub_date: {get_field(fm, 'date') or ''}\ntitle: {get_field(fm, 'title')}\n"
+                    f"replaces: {os.path.relpath(path, PROJECT_ROOT)}\n"
                     + (f"videos: {','.join(videos)}\n" if videos else "")
                     + (f"images: {' '.join(images)}\n" if images else "") + f"\n{full or ''}\n")
-        os.remove(path)
+        # The old page stays live until process_ingestion.py writes its replacement.
         requeued += 1
         why = f"{len(videos)} video(s)" if videos else "thin page"
         print(f"[repair] re-queued {os.path.relpath(path, CONTENT)} ({why})")

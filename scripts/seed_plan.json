@@ -38,7 +38,7 @@
     "08-new-territories": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "09-interwar": {
       "outlined": true,
@@ -8557,7 +8557,8 @@
       "year": 1823,
       "date": "1823",
       "summary": "Foreign merchants united to formally lobby against the restrictive Cohong monopoly, marking a rise in organized Western commercial assertiveness before the Opium War.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1823-establishment-of-the-general-chamber-of-commerce-in-canton.md"
     },
     {
       "era": "05-opium-war",
@@ -8565,7 +8566,8 @@
       "year": 1828,
       "date": "1828",
       "summary": "The deployment of early steamships on the Pearl River accelerated communications and cargo transport between Canton, Macau, and the outer anchorages.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1828-introduction-of-steam-powered-river-vessels.md"
     },
     {
       "era": "05-opium-war",
@@ -8573,7 +8575,8 @@
       "year": 1832,
       "date": "1832",
       "summary": "Missionary printing presses produced localized Chinese-language literature and periodicals, shaping early cultural exchange and information dissemination prior to colonial rule.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1832-rise-of-protestant-press-and-printing-in-the-delta.md"
     },
     {
       "era": "05-opium-war",
@@ -8581,7 +8584,8 @@
       "year": 1841,
       "date": "1841-04-30",
       "summary": "Captain Charles Elliot issued provisional criminal and civil regulations to govern the nascent British settlement before formal sovereignty was recognized.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1841-introduction-of-the-first-colonial-legal-code-in-hong-kong.md"
     },
     {
       "era": "05-opium-war",
@@ -8589,7 +8593,8 @@
       "year": 1841,
       "date": "1841-04-22",
       "summary": "Prefect Theodore Joset established the Catholic mission to serve the spiritual needs of European soldiers, sailors, and the local Chinese population.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1841-establishment-of-the-roman-catholic-mission-in-hong-kong.md"
     },
     {
       "era": "05-opium-war",
@@ -8597,7 +8602,8 @@
       "year": 1842,
       "date": "1842",
       "summary": "Building began on an official residence for the colonial governor on Pottinger Street, symbolizing the permanent physical anchoring of British administration on the island.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1842-construction-of-the-first-government-house.md"
     },
     {
       "era": "05-opium-war",
@@ -8605,7 +8611,8 @@
       "year": 1842,
       "date": "1842",
       "summary": "Medical facilities were established to combat rampant tropical diseases among British naval personnel and merchants during the early occupation phase.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1842-founding-of-the-dreadnought-seamens-hospital.md"
     },
     {
       "era": "05-opium-war",
@@ -8613,7 +8620,89 @@
       "year": 1842,
       "date": "1842-06-14",
       "summary": "The colonial government auctioned prime waterfront properties along Queen's Road, establishing the foundational real estate market that drove Hong Kong's commercial growth.",
-      "status": "pending"
+      "status": "done",
+      "file": "05-opium-war/1842-first-public-land-auction-of-marine-lots.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Opening of the Kennedy Town Slaughterhouse",
+      "year": 1894,
+      "date": "1894",
+      "summary": "Established to centralize meat inspection and curb the spread of infectious diseases following the devastating third plague pandemic.",
+      "status": "done",
+      "file": "08-new-territories/1894-opening-of-the-kennedy-town-slaughterhouse.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
+      "year": 1886,
+      "date": "1886",
+      "summary": "Introduced modern dairy farming and refrigeration techniques to supply safe milk to the colony's growing European and local population.",
+      "status": "done",
+      "file": "08-new-territories/1886-establishment-of-the-dairy-farm-companys-pok-fu-lam-farm.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Founding of the St. Stephen's College",
+      "year": 1903,
+      "date": "1903",
+      "summary": "Founded by the Anglican Church to provide bilingual secondary education tailored for Chinese elites, blending traditional Chinese studies with Western learning.",
+      "status": "done",
+      "file": "08-new-territories/1903-founding-of-the-st-stephens-college.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Enactment of the Female Domestic Service Ordinance Amendment",
+      "year": 1904,
+      "date": "1904",
+      "summary": "Strengthened regulations over the Mui Tsai system, marking an early legislative step in curbing the exploitation of young bonded domestic servants.",
+      "status": "done",
+      "file": "08-new-territories/1904-enactment-of-the-female-domestic-service-ordinance-amendment.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Establishment of the Ho Tung Workshop and Philanthropic Endeavors",
+      "year": 1906,
+      "date": "1906",
+      "summary": "Sir Robert Ho Tung began his prominent philanthropic work, bridging the gap between the British colonial administration and the local Chinese community.",
+      "status": "done",
+      "file": "08-new-territories/1906-establishment-of-the-ho-tung-workshop-and-philanthropic-endeavors.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Inauguration of the Yaumatei Typhoon Shelter",
+      "year": 1915,
+      "date": "1915",
+      "summary": "Built to protect the expanding maritime population and boat-dwellers on the Kowloon peninsula from frequent and deadly typhoons.",
+      "status": "done",
+      "file": "08-new-territories/1915-inauguration-of-the-yaumatei-typhoon-shelter.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Founding of the Hong Kong Chinese Women's Club",
+      "year": 1918,
+      "date": "1918",
+      "summary": "Marked an important milestone in women's organized social welfare, education reform, and philanthropy within the local community.",
+      "status": "done",
+      "file": "08-new-territories/1918-founding-of-the-hong-kong-chinese-womens-club.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Implementation of the New Territories Block Crown Lease System",
+      "year": 1905,
+      "date": "1905",
+      "summary": "Regularized traditional land ownership rights in the newly leased territories, integrating rural agrarian societies into the British legal framework.",
+      "status": "done",
+      "file": "08-new-territories/1905-implementation-of-the-new-territories-block-crown-lease-system.md"
+    },
+    {
+      "era": "08-new-territories",
+      "title": "Establishment of the Post Office Savings Bank",
+      "year": 1901,
+      "date": "1901",
+      "summary": "Encouraged thrift among the working-class population by providing secure government-backed savings facilities across post office branches.",
+      "status": "done",
+      "file": "08-new-territories/1901-establishment-of-the-post-office-savings-bank.md"
     }
   ],
   "entities": {
@@ -8678,7 +8767,8 @@
         "Refugee Settlements During An Lushan Rebellion",
         "The Establishment of the Weitou Ancestral Halls",
         "Regulation of the Tanka Boat Migration",
-        "The Expansion of the Hakka Terraced Farming System"
+        "The Expansion of the Hakka Terraced Farming System",
+        "Enactment of the Female Domestic Service Ordinance Amendment"
       ],
       "status": "done",
       "file": "Places/guangdong.md"
@@ -9244,7 +9334,13 @@
         "Launch of Importation of Labor Schemes",
         "HKD-RMB Dual Counter Financial Model Launched",
         "The Rise of the Northbound Consumption Trend",
-        "Indefinite Postponement of Municipal Waste Charging Scheme"
+        "Indefinite Postponement of Municipal Waste Charging Scheme",
+        "Establishment of the Roman Catholic Mission in Hong Kong",
+        "Founding of the Dreadnought Seamen's Hospital",
+        "Enactment of the Female Domestic Service Ordinance Amendment",
+        "Establishment of the Ho Tung Workshop and Philanthropic Endeavors",
+        "Founding of the Hong Kong Chinese Women's Club",
+        "Establishment of the Post Office Savings Bank"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -9468,7 +9564,9 @@
         "Regulation of the Tanka Boat Migration",
         "The Rise of Private Maritime Insurance Networks",
         "Rise of Tanka Boat People in Regional Trade",
-        "Robert Morrison Publishes First Chinese-English Dictionary"
+        "Robert Morrison Publishes First Chinese-English Dictionary",
+        "Establishment of the General Chamber of Commerce in Canton",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "Places/pearl-river-delta.md"
@@ -9893,7 +9991,8 @@
         "Publication of the Chinese Mail Newspaper",
         "Opening of the Ko Shan Road Playground",
         "Opening of the Tuen Mun Highway",
-        "Opening of the Tseung Kwan O Cross Bay Link"
+        "Opening of the Tseung Kwan O Cross Bay Link",
+        "Inauguration of the Yaumatei Typhoon Shelter"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -10066,7 +10165,8 @@
         "Development of Coastal Navigational Markers",
         "Expansion of Song Administrative Presence in Tuen Mun",
         "Establishment of the Song Maritime Customs Post",
-        "The Execution of the Opium Merchant in Macau"
+        "The Execution of the Opium Merchant in Macau",
+        "Introduction of the First Colonial Legal Code in Hong Kong"
       ],
       "status": "done",
       "file": "Places/guangzhou.md"
@@ -10228,7 +10328,8 @@
         "Closure of Dairy Farm and Collapse of Livestock Industry",
         "Launch of the Lady MacLehose Holiday Village",
         "Passage of the Matrimonial Causes Ordinance Reform",
-        "Establishment of the Public Enquiry Service Centres"
+        "Establishment of the Public Enquiry Service Centres",
+        "Implementation of the New Territories Block Crown Lease System"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -10323,7 +10424,10 @@
         "Introduction of Steam Navigation on the Pearl River",
         "The Early Role of Compradors as Cultural Brokers",
         "The First Protestant Missionaries in the Delta",
-        "Robert Morrison Publishes First Chinese-English Dictionary"
+        "Robert Morrison Publishes First Chinese-English Dictionary",
+        "Establishment of the General Chamber of Commerce in Canton",
+        "Introduction of Steam-Powered River Vessels",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "Places/canton.md"
@@ -10812,7 +10916,9 @@
         "Establishment of the Morrison Education Society School",
         "The Execution of the Opium Merchant in Macau",
         "The First Protestant Missionaries in the Delta",
-        "Robert Morrison Publishes First Chinese-English Dictionary"
+        "Robert Morrison Publishes First Chinese-English Dictionary",
+        "Introduction of Steam-Powered River Vessels",
+        "Establishment of the Roman Catholic Mission in Hong Kong"
       ],
       "status": "done",
       "file": "Places/macau.md"
@@ -11344,7 +11450,8 @@
         "Launch of The Friend of China Newspaper",
         "Morrison Education Society School moves to Hong Kong",
         "Establishment of the Select Committee of Superintendents of Trade",
-        "Establishment of the Morrison Education Society"
+        "Establishment of the Morrison Education Society",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "Places/macao.md"
@@ -11356,7 +11463,8 @@
         "The Napier Affair in Canton",
         "Destruction of Confiscated Opium at Humen",
         "Establishment of the EIC Factory in Canton",
-        "Introduction of Steam Navigation on the Pearl River"
+        "Introduction of Steam Navigation on the Pearl River",
+        "Introduction of Steam-Powered River Vessels"
       ],
       "status": "done",
       "file": "Places/pearl-river.md"
@@ -11416,7 +11524,8 @@
         "Loo Aqui Founds the Sheung Wan Lower Bazaar",
         "Imperial Edict Closing Canton to British Merchants",
         "First Meeting of the Supreme Court of Hong Kong",
-        "Establishment of the Hong Kong Post Office"
+        "Establishment of the Hong Kong Post Office",
+        "First Public Land Auction of Marine Lots"
       ],
       "status": "done",
       "file": "People/charles-elliot.md"
@@ -11498,7 +11607,8 @@
         "Establishment of the Kowloon British School",
         "Inauguration of the Cultural Centre Design and Construction",
         "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
-        "Lamma Island Ferry Collision"
+        "Lamma Island Ferry Collision",
+        "Inauguration of the Yaumatei Typhoon Shelter"
       ],
       "status": "done",
       "file": "Places/victoria-harbour.md"
@@ -11568,7 +11678,12 @@
         "Implementation of the New Territories Land Exchange Entitlements",
         "Local Clan Resistance by Punti and Hakka",
         "Formation of the Hong Kong Cricket Club",
-        "Severe Deforestation of Hong Kong Hillsides for Fuel"
+        "Severe Deforestation of Hong Kong Hillsides for Fuel",
+        "Introduction of the First Colonial Legal Code in Hong Kong",
+        "Construction of the First Government House",
+        "First Public Land Auction of Marine Lots",
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
+        "Founding of the St. Stephen's College"
       ],
       "status": "done",
       "file": "Places/hong-kong-island.md"
@@ -11681,7 +11796,8 @@
       "kind": "person",
       "mentions": [
         "First Public Land Auction in Hong Kong",
-        "Captain Charles Elliot Issues Proclamation to Hong Kong Inhabitants"
+        "Captain Charles Elliot Issues Proclamation to Hong Kong Inhabitants",
+        "Introduction of the First Colonial Legal Code in Hong Kong"
       ],
       "status": "done",
       "file": "People/captain-charles-elliot.md"
@@ -11750,7 +11866,8 @@
         "Establishment of the Victoria City Grid",
         "Launch of The Friend of China Newspaper",
         "Construction of St. John's Cathedral Foundations",
-        "Establishment of the Colonial Secretary's Office"
+        "Establishment of the Colonial Secretary's Office",
+        "Construction of the First Government House"
       ],
       "status": "done",
       "file": "People/sir-henry-pottinger.md"
@@ -12257,7 +12374,8 @@
         "Cyberport Project Awarded Without Public Tender",
         "Opening of the Dairy Farm Company",
         "Closure of the University of Hong Kong",
-        "Closure of Dairy Farm and Collapse of Livestock Industry"
+        "Closure of Dairy Farm and Collapse of Livestock Industry",
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm"
       ],
       "status": "done",
       "file": "Places/pok-fu-lam.md"
@@ -12387,7 +12505,8 @@
         "Establishment of the Chinese YMCA of Hong Kong",
         "Inauguration of the Victoria Market",
         "Opening of the Airport Railway",
-        "MTR Shatin to Central Link Scandal"
+        "MTR Shatin to Central Link Scandal",
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm"
       ],
       "status": "done",
       "file": "Places/central.md"
@@ -12442,7 +12561,8 @@
       "kind": "person",
       "mentions": [
         "Opening of Hong Kong College of Medicine for Chinese",
-        "Establishment of the Alice Memorial Hospital"
+        "Establishment of the Alice Memorial Hospital",
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm"
       ],
       "status": "done",
       "file": "People/patrick-manson.md"
@@ -12573,7 +12693,8 @@
         "Bubonic Plague Outbreak in Tai Ping Shan",
         "Alexandre Yersin Discovers the Plague Bacillus",
         "Passage of the Venereal Diseases Ordinance",
-        "Establishment of the Sanitary Board"
+        "Establishment of the Sanitary Board",
+        "Opening of the Kennedy Town Slaughterhouse"
       ],
       "status": "done",
       "file": "Places/tai-ping-shan.md"
@@ -12757,7 +12878,8 @@
       "mentions": [
         "Inauguration of Hong Kong Tramways",
         "Introduction of Tramway Services on Hong Kong Island",
-        "Introduction of the Tramway Electric Tracking System"
+        "Introduction of the Tramway Electric Tracking System",
+        "Opening of the Kennedy Town Slaughterhouse"
       ],
       "status": "done",
       "file": "Places/kennedy-town.md"
@@ -13220,7 +13342,8 @@
         "Battle of Hong Kong and Japanese Occupation",
         "St. Stephen's College Massacre",
         "Establishment of St. Stephen's College",
-        "Establishment of the Hong Kong Sea School in Stanley"
+        "Establishment of the Hong Kong Sea School in Stanley",
+        "Founding of the St. Stephen's College"
       ],
       "status": "done",
       "file": "Places/stanley.md"
@@ -15120,7 +15243,8 @@
         "Establishment of the Victoria City Grid",
         "Construction Commences on Queen's Road",
         "Systematic Japanese Renaming of Hong Kong Streets and Landmarks",
-        "Demarcation of Victoria City Boundaries"
+        "Demarcation of Victoria City Boundaries",
+        "First Public Land Auction of Marine Lots"
       ],
       "status": "done",
       "file": "Places/queens-road.md"
@@ -16353,7 +16477,8 @@
         "The First Protestant Missionaries Reach Macau",
         "Establishment of the Morrison Education Society School",
         "The First Protestant Missionaries in the Delta",
-        "Robert Morrison Publishes First Chinese-English Dictionary"
+        "Robert Morrison Publishes First Chinese-English Dictionary",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "People/robert-morrison.md"
@@ -16747,7 +16872,8 @@
       "name": "Joseph Hoare (霍約瑟)",
       "kind": "person",
       "mentions": [
-        "Establishment of St. Stephen's College"
+        "Establishment of St. Stephen's College",
+        "Founding of the St. Stephen's College"
       ],
       "status": "done",
       "file": "People/joseph-hoare.md"
@@ -17770,7 +17896,8 @@
       "name": "Karl Gützlaff (郭實獵)",
       "kind": "person",
       "mentions": [
-        "The First Protestant Missionaries Reach Macau"
+        "The First Protestant Missionaries Reach Macau",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "People/karl-gützlaff.md"
@@ -18574,7 +18701,8 @@
       "name": "William Milne (米爾恩)",
       "kind": "person",
       "mentions": [
-        "The First Protestant Missionaries in the Delta"
+        "The First Protestant Missionaries in the Delta",
+        "Rise of Protestant Press and Printing in the Delta"
       ],
       "status": "done",
       "file": "People/william-milne.md"
@@ -19009,6 +19137,77 @@
       ],
       "status": "done",
       "file": "People/tse-chin-wan.md"
+    },
+    "person:hoppo": {
+      "name": "Hoppo (粵海關監督)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the General Chamber of Commerce in Canton"
+      ],
+      "status": "done",
+      "file": "People/hoppo.md"
+    },
+    "person:theodore-joset": {
+      "name": "Theodore Joset (西奧多·約瑟特)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Roman Catholic Mission in Hong Kong"
+      ],
+      "status": "done",
+      "file": "People/theodore-joset.md"
+    },
+    "place:pottinger-street": {
+      "name": "Pottinger Street (砵甸乍街)",
+      "kind": "place",
+      "mentions": [
+        "Construction of the First Government House"
+      ],
+      "status": "done",
+      "file": "Places/pottinger-street.md"
+    },
+    "person:alexander-robert-johnston": {
+      "name": "Alexander Robert Johnston (莊士敦)",
+      "kind": "person",
+      "mentions": [
+        "First Public Land Auction of Marine Lots"
+      ],
+      "status": "done",
+      "file": "People/alexander-robert-johnston.md"
+    },
+    "place:western-district": {
+      "name": "Western District (西環)",
+      "kind": "place",
+      "mentions": [
+        "Founding of the St. Stephen's College"
+      ],
+      "status": "done",
+      "file": "Places/western-district.md"
+    },
+    "person:sir-robert-ho-tung": {
+      "name": "Sir Robert Ho Tung (何東)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Ho Tung Workshop and Philanthropic Endeavors"
+      ],
+      "status": "done",
+      "file": "People/sir-robert-ho-tung.md"
+    },
+    "place:yaumatei": {
+      "name": "Yaumatei (油麻地)",
+      "kind": "place",
+      "mentions": [
+        "Inauguration of the Yaumatei Typhoon Shelter"
+      ],
+      "status": "done",
+      "file": "Places/yaumatei.md"
+    },
+    "place:new-kowloon": {
+      "name": "New Kowloon (新九龍)",
+      "kind": "place",
+      "mentions": [
+        "Implementation of the New Territories Block Crown Lease System"
+      ],
+      "status": "pending"
     }
   }
 }

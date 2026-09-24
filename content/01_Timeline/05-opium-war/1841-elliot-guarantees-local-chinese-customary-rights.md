@@ -4,10 +4,11 @@ title_zh: "義律保證本地華人習俗權利"
 date: 1841-02-02
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "charles-elliot", "chinese-customary-law", "first-opium-war", "hong-kong-history", "legal-pluralism", "opium-war"]
+tags: ["evidence-b", "1841", "ai-draft", "charles-elliot", "chinese-customary-law", "first-opium-war", "hong-kong-history", "legal-pluralism", "opium-war"]
 summary: "In February 1841, British plenipotentiary Charles Elliot issued proclamations assuring indigenous villagers on Hong Kong Island that their property, religious practices, and traditional laws would be respected."
 description: "In February 1841, British plenipotentiary Charles Elliot issued proclamations assuring indigenous villagers on Hong Kong Island that their property, religious practices, and traditional laws would be respected."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,17 @@ This early policy laid the foundational framework for legal pluralism in British
 
 - [ ] Charles Elliot issued specific proclamations regarding Chinese customary rights on February 2, 1841.
 - [ ] The precise wording and immediate distribution scope of the 1841 proclamations across Hong Kong Island villages.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Cho Kiu Chiang (2023). *Beyond Legal Pluralism: Chinese Customs and Customary Laws in Colonial Hong Kong (1841–1997)*. Translocal Chinese East Asian Perspectives.](https://doi.org/10.1163/24522015-17010004) (claims 1, 2): Discusses Chinese customs and customary laws in colonial Hong Kong starting from 1841.
+
+**Still needed:** Primary sources or detailed accounts specifically verifying the February 2, 1841 date and the precise wording of the proclamations.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

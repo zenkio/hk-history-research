@@ -159,6 +159,7 @@ VERIFY_PROMPT = """You are fact-checking a draft page of a Hong Kong history web
 Check each claim below against the reference text only (extracts from Wikipedia).
 "supported": the text states it. "contradicted": the text states something different
 (give the correct fact). "unclear": the text does not cover it. Do not use outside knowledge.
+If the reference text is about a different subject than this page, set "on_topic" to false.
 
 Page title: {title}
 Claims:
@@ -168,7 +169,7 @@ Reference text:
 {reference}
 
 Respond with ONLY a JSON object, no other text:
-{{"verdicts": [{{"claim": "the claim", "status": "supported | contradicted | unclear", "note": "One sentence: what the sources say, with the correct fact if contradicted"}}]}}"""
+{{"on_topic": true, "verdicts": [{{"claim": "the claim", "status": "supported | contradicted | unclear", "note": "One sentence: what the reference text says, with its version of the fact if different"}}]}}"""
 
 
 # ---- plan state ------------------------------------------------------
@@ -432,8 +433,8 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
             ev["verified"] = "no-claims"
             continue
         try:
-            reference, sources, titles = wikipedia.reference_text(ev["title"], claims)
-            cites = wikipedia.cited_sources(titles, claims) if reference else []
+            reference, sources, titles = wikipedia.reference_text(
+                ev["title"], claims, ev.get("year") if isinstance(ev.get("year"), int) else None)
         except Exception as e:
             print(f"[verify] Wikipedia unreachable ({e}); stopping fact-checks for this run")
             break
@@ -447,8 +448,17 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
         except QuotaExhausted:
             break
         verdicts = data.get("verdicts", []) if isinstance(data, dict) else []
+        if isinstance(data, dict) and data.get("on_topic") is False:
+            print(f"[verify] {ev['file']}: Wikipedia articles found are off-topic ({', '.join(titles)})")
+            ev["verified"] = "no-reference"
+            save_plan(plan)
+            continue
         if not verdicts:
             continue
+        try:
+            cites = wikipedia.cited_sources(titles, claims)
+        except Exception:
+            cites = []
         bad = apply_verification(path, verdicts, sources, model, cites)
         ev["verified"] = datetime.now().strftime("%Y-%m-%d")
         save_plan(plan)

@@ -14,6 +14,8 @@ to where Wikipedia got it, or see that it cites nothing.
 """
 import re
 import json
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -21,16 +23,36 @@ API = "https://en.wikipedia.org/w/api.php"
 USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 ARTICLES = 2
 MAX_CITES = 5
+MIN_PARA_OVERLAP = 2  # a paragraph must share 2+ words with the page to be sent
+EVENT_WORDS = set("founding foundation opening establishment restoration introduction launch start end "
+                  "beginning creation formation signing outbreak arrival death birth first new".split())
+MIN_CITE_OVERLAP = 2  # a cited work's title must share 2+ words with the page's claims
+GENERIC = {"Hong Kong", "British Hong Kong", "History of Hong Kong", "China", "History of China",
+           "Qing dynasty", "Kowloon", "New Territories", "Hong Kong Island"}
+TRIES = 3
+PAUSE = 1.0  # seconds between API calls
 MAX_CHARS = 7000  # ~2K tokens: fits Gemma's 16K TPM with room for the claims
 STOP = set("the a an of and or in on at to for by with from was were is are be been as that this "
            "which it its his her their into after before during hong kong".split())
 
 
 def _api(**params):
+    """GET the MediaWiki API. Wikimedia rate-limits by IP (CI runners share IPs), so a 429
+    waits for its Retry-After (capped) and tries again, and calls are spaced out."""
     params.update(format="json", formatversion="2")
     req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params), headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
+    for attempt in range(TRIES):
+        time.sleep(PAUSE)
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == TRIES - 1:
+                raise
+            ra = e.headers.get("Retry-After") or ""
+            wait = min(int(ra) if ra.isdigit() else 30, 90)
+            print(f"  [wikipedia] rate limited, waiting {wait}s")
+            time.sleep(wait)
 
 
 def _words(s):
@@ -38,8 +60,11 @@ def _words(s):
 
 
 def search(query, limit=ARTICLES):
-    hits = _api(action="query", list="search", srsearch=query, srlimit=str(limit + 2))["query"]["search"]
-    return [h["title"] for h in hits if "(disambiguation)" not in h["title"]][:limit]
+    """Specific articles only: the overview articles match every query and cite everything."""
+    hits = _api(action="query", list="search", srsearch=query, srlimit=str(limit + 4))["query"]["search"]
+    return [h["title"] for h in hits
+            if "(disambiguation)" not in h["title"] and h["title"] not in GENERIC
+            and not re.match(r"(\d{3,4}s? in |List of |Timeline of )", h["title"])][:limit]
 
 
 def article(title):
@@ -47,11 +72,20 @@ def article(title):
     return pages[0].get("extract", "") if pages else ""
 
 
-def reference_text(title, claims):
-    """(text, sources): the most relevant Wikipedia paragraphs for these claims, with their articles."""
+def query_for(title, year=None):
+    """Search words: the page title without generic event words, plus the year."""
+    words = [w for w in re.findall(r"[\w'-]+", title) if w.lower() not in STOP | EVENT_WORDS]
+    return " ".join(words + ([str(year)] if year else []))
+
+
+def reference_text(title, claims, year=None):
+    """(text, sources, titles): the most relevant Wikipedia paragraphs for these claims."""
     want = _words(title + " " + " ".join(claims))
+    key = _words(title) - EVENT_WORDS
+    found = search(query_for(title, year)) or search(query_for(title))
+    # Prefer articles named like the event (e.g. "Young Plan"); otherwise only the top hit.
+    titles = [t for t in found if _words(t) & key] or found[:1]
     scored, sources = [], []
-    titles = search(f"{title} Hong Kong")
     for t in titles:
         body = article(t)
         if not body:
@@ -66,7 +100,7 @@ def reference_text(title, claims):
     scored.sort(key=lambda s: -s[0])
     out, size = [], 0
     for score, t, para in scored:
-        if score == 0 or size + len(para) > MAX_CHARS:
+        if score < MIN_PARA_OVERLAP or size + len(para) > MAX_CHARS:
             continue
         out.append(f"[{t}] {para}")
         size += len(para)
@@ -95,7 +129,7 @@ def cited_sources(titles, claims):
         for tpl in CITE_RE.findall(wikitext):
             title = _field(tpl, "title")
             doi, isbn = _field(tpl, "doi"), re.sub(r"[^\dXx]", "", _field(tpl, "isbn"))
-            if title and (doi or isbn):
+            if title and (doi or isbn) and len(want & _words(title)) >= MIN_CITE_OVERLAP:
                 cites.append((len(want & _words(title)), title, doi, isbn, tpl))
     cites.sort(key=lambda c: -c[0])
     out, seen = [], set()
@@ -108,5 +142,6 @@ def cited_sources(titles, claims):
             out.append({"title": title, "url": f"https://doi.org/{doi}", "kind": "DOI", "ok": ok, "note": note})
         else:
             ok, note = check_isbn(isbn, tpl)
-            out.append({"title": title, "url": f"https://openlibrary.org/isbn/{isbn}", "kind": "ISBN", "ok": ok, "note": note})
+            if ok is False and note.startswith("ISBN is") and not re.search(r"[A-Za-z]{3}", title):
+                ok = None  # Chinese title vs romanised catalogue title: cannot compare            out.append({"title": title, "url": f"https://openlibrary.org/isbn/{isbn}", "kind": "ISBN", "ok": ok, "note": note})
     return out

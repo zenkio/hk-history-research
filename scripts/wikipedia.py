@@ -4,7 +4,13 @@ Google Search grounding is not available on the free tier for the models we can
 use (Gemini 2.5 is closed to new users), so fact-checks read Wikipedia instead:
 search for the page's topic, fetch the top articles as plain text, and keep the
 paragraphs that share the most words with the claims. The model then judges each
-claim against that text only. Wikipedia is a grade C (reference) source.
+claim against that text only.
+
+Wikipedia is anyone-can-edit, so agreeing with it proves nothing: it never raises a
+page's evidence grade (A/B come only from archives and scholarship). Instead
+cited_sources() pulls the books and papers the article cites, and checks each DOI/ISBN
+against Crossref/Open Library, so readers (and the evidence engine) can follow a claim
+to where Wikipedia got it, or see that it cites nothing.
 """
 import re
 import json
@@ -14,6 +20,7 @@ import urllib.request
 API = "https://en.wikipedia.org/w/api.php"
 USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 ARTICLES = 2
+MAX_CITES = 5
 MAX_CHARS = 7000  # ~2K tokens: fits Gemma's 16K TPM with room for the claims
 STOP = set("the a an of and or in on at to for by with from was were is are be been as that this "
            "which it its his her their into after before during hong kong".split())
@@ -63,4 +70,43 @@ def reference_text(title, claims):
             continue
         out.append(f"[{t}] {para}")
         size += len(para)
-    return "\n\n".join(out), sources
+    return "\n\n".join(out), sources, titles
+
+
+CITE_RE = re.compile(r"\{\{\s*cite[^{}]*\}\}", re.I)
+
+
+def _field(tpl, name):
+    m = re.search(rf"\|\s*{name}\s*=\s*([^|}}]+)", tpl, re.I)
+    return m.group(1).strip() if m else ""
+
+
+def cited_sources(titles, claims):
+    """Books/papers the articles cite that are most on-topic, with DOI/ISBN checked:
+    [{"title", "url", "kind", "ok", "note"}]."""
+    from research_import import check_doi, check_isbn
+    want = _words(" ".join(claims))
+    cites = []
+    for t in titles:
+        try:
+            wikitext = _api(action="parse", prop="wikitext", page=t)["parse"]["wikitext"]
+        except Exception:
+            continue
+        for tpl in CITE_RE.findall(wikitext):
+            title = _field(tpl, "title")
+            doi, isbn = _field(tpl, "doi"), re.sub(r"[^\dXx]", "", _field(tpl, "isbn"))
+            if title and (doi or isbn):
+                cites.append((len(want & _words(title)), title, doi, isbn, tpl))
+    cites.sort(key=lambda c: -c[0])
+    out, seen = [], set()
+    for score, title, doi, isbn, tpl in cites:
+        if len(out) >= MAX_CITES or (doi or isbn) in seen:
+            continue
+        seen.add(doi or isbn)
+        if doi:
+            ok, note = check_doi(doi, tpl)
+            out.append({"title": title, "url": f"https://doi.org/{doi}", "kind": "DOI", "ok": ok, "note": note})
+        else:
+            ok, note = check_isbn(isbn, tpl)
+            out.append({"title": title, "url": f"https://openlibrary.org/isbn/{isbn}", "kind": "ISBN", "ok": ok, "note": note})
+    return out

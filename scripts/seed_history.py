@@ -17,7 +17,7 @@ Work is resumable and tracked in scripts/seed_plan.json:
                 (role "outline"), which feeds steps 3 and 4 again
 Separately, every run first attaches archive/scholarly evidence to a slice of
 drafted pages (evidence.py), spends the "verify" budget fact-checking drafted
-event pages against Wikipedia (wikipedia.py), which adds reference links, then
+event pages against Wikipedia (wikipedia.py) and lists the sources it cites, then
 the OpenRouter free budget on Traditional Chinese versions (translate.py),
 then looks for Wikimedia Commons photos for a slice of event pages (photos.py).
 Once the plan is complete, spare Gemma capacity continues the translations.
@@ -375,38 +375,48 @@ def write_entity_page(ent, data, model):
     return rel
 
 
-def apply_verification(path, verdicts, sources, model):
+def apply_verification(path, verdicts, sources, model, cites=()):
     with PAGE_LOCK:
-        return _apply_verification_unlocked(path, verdicts, sources, model)
+        return _apply_verification_unlocked(path, verdicts, sources, model, cites)
 
 
-def _apply_verification_unlocked(path, verdicts, sources, model):
-    """Replace the page's claim checklist with fact-check results and web sources."""
+def _apply_verification_unlocked(path, verdicts, sources, model, cites=()):
+    """Replace the page's claim checklist with a comparison against Wikipedia.
+
+    Wikipedia can be edited by anyone, so this is a cross-check, not evidence: it never
+    changes evidence_grade. Where the two differ, either may be wrong."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
-    icon = {"supported": "✅", "contradicted": "❌", "unclear": "❔"}
-    lines = ["## Fact check", "",
-             f"Checked by {model} against the Wikipedia articles below (grade C, reference) on "
-             f"{datetime.now().strftime('%Y-%m-%d')}. \"Unclear\" means Wikipedia does not cover the claim; "
-             "it still needs a primary or scholarly source.", ""]
+    label = {"supported": ("✅", "agrees with Wikipedia"), "contradicted": ("⚠️", "differs from Wikipedia"),
+             "unclear": ("❔", "not in Wikipedia")}
+    lines = ["## Wikipedia cross-check", "",
+             f"> [!warning] Compared with Wikipedia by {model} on {datetime.now().strftime('%Y-%m-%d')}. "
+             "Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. "
+             "Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.", ""]
     for v in verdicts:
         status = str(v.get("status", "unclear")).strip().lower()
-        lines.append(f"- {icon.get(status, '❔')} **{status}**: {v.get('claim', '')}. {v.get('note', '')}".rstrip())
+        icon, words = label.get(status, label["unclear"])
+        lines.append(f"- {icon} **{words}**: {v.get('claim', '')}. {v.get('note', '')}".rstrip())
     if sources:
-        lines += ["", "## Sources", ""] + [f"- [{s['title']}]({s['uri']})" for s in sources]
+        lines += ["", "**Articles compared:** " + ", ".join(f"[{s['title']}]({s['uri']})" for s in sources)]
+    if cites:
+        lines += ["", "**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):", ""]
+        lines += [f"- {'✓' if c['ok'] else '✗' if c['ok'] is False else '?'} [{c['title']}]({c['url']}) ({c['kind']})"
+                  + ("" if c["ok"] else f" _{c['note']}_") for c in cites]
+    elif sources:
+        lines += ["", "_The compared articles cite no book or paper with a DOI/ISBN on this topic._"]
     block = "\n".join(lines) + "\n\n"
     text = re.sub(r"## Claims to verify\n.*?(?=Part of: )", lambda _: block, text, count=1, flags=re.DOTALL)
-    contradicted = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
-    text = text.replace("confidence: ai-draft\n", "confidence: ai-draft-checked\n", 1)
-    extra = '"fact-checked"' + (', "needs-correction"' if contradicted else "")
+    differs = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
+    extra = '"wikipedia-checked"' + (', "wikipedia-differs"' if differs else "")
     text = re.sub(r"^tags: \[", lambda _: f"tags: [{extra}, ", text, count=1, flags=re.MULTILINE)
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
-    return contradicted
+    return differs
 
 
 def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
-    """Fact-check the highest-priority unchecked drafts against Wikipedia."""
+    """Cross-check the highest-priority unchecked drafts against Wikipedia (never raises a grade)."""
     checked = 0
     for ev in by_priority(plan["events"]):
         if time.time() > deadline or checked >= limit or pool.total_remaining("verify") == 0:
@@ -422,7 +432,8 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
             ev["verified"] = "no-claims"
             continue
         try:
-            reference, sources = wikipedia.reference_text(ev["title"], claims)
+            reference, sources, titles = wikipedia.reference_text(ev["title"], claims)
+            cites = wikipedia.cited_sources(titles, claims) if reference else []
         except Exception as e:
             print(f"[verify] Wikipedia unreachable ({e}); stopping fact-checks for this run")
             break
@@ -438,12 +449,12 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
         verdicts = data.get("verdicts", []) if isinstance(data, dict) else []
         if not verdicts:
             continue
-        bad = apply_verification(path, verdicts, sources, model)
+        bad = apply_verification(path, verdicts, sources, model, cites)
         ev["verified"] = datetime.now().strftime("%Y-%m-%d")
         save_plan(plan)
         checked += 1
         print(f"[verify] {ev['file']}: {len(verdicts)} claims, {len(sources)} sources"
-              + (" - NEEDS CORRECTION" if bad else "") + f" ({model})")
+              + (" - DIFFERS FROM WIKIPEDIA" if bad else "") + f", {len(cites)} cited sources" + f" ({model})")
     return checked
 
 
@@ -614,7 +625,7 @@ def run(max_calls, minutes, commit=False):
     ent_done = sum(1 for e in plan["entities"].values() if e["status"] == "done")
     checked = sum(1 for e in plan["events"] if e.get("verified"))
     print(f"Workers: {results}")
-    print(f"Ran {done} tasks. Events: {counts}, fact-checked {checked}. "
+    print(f"Ran {done} tasks. Events: {counts}, Wikipedia-checked {checked}. "
           f"Entities: {ent_done}/{len(plan['entities'])}. Quota now: {pool.summary()}")
     return done
 

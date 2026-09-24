@@ -58,12 +58,12 @@
     "12-riots-and-reform": {
       "outlined": true,
       "overview": true,
-      "rounds": 3
+      "rounds": 4
     },
     "13-transition": {
       "outlined": true,
       "overview": true,
-      "rounds": 3
+      "rounds": 4
     },
     "14-early-hksar": {
       "outlined": true,
@@ -8190,6 +8190,186 @@
       "summary": "Began cultural showcases that nurtured local artistic talents and enriched daily life amidst economic hardships.",
       "status": "done",
       "file": "11-postwar-refugees/1958-launch-of-the-first-annual-hong-kong-arts-festival-precursor.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Establishment of the Urban Council Franchise Reform",
+      "year": 1970,
+      "date": "1970",
+      "summary": "The lowering of voting qualifications for the Urban Council expanded the local electorate and marked a cautious early step toward civic political participation.",
+      "status": "done",
+      "file": "12-riots-and-reform/1970-establishment-of-the-urban-council-franchise-reform.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Introduction of the Labour Tribunal",
+      "year": 1973,
+      "date": "1973",
+      "summary": "The creation of the Labour Tribunal provided an informal, accessible venue for workers to resolve employment disputes without expensive legal representation.",
+      "status": "done",
+      "file": "12-riots-and-reform/1973-introduction-of-the-labour-tribunal.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Launch of the Lady MacLehose Holiday Village",
+      "year": 1979,
+      "date": "1979",
+      "summary": "Opened in Sai Kung, it provided affordable recreational camps for working-class families, reflecting a growing focus on leisure and public welfare.",
+      "status": "done",
+      "file": "12-riots-and-reform/1979-launch-of-the-lady-maclehose-holiday-village.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Enactment of the Legal Aid Ordinance Expansion",
+      "year": 1970,
+      "date": "1970",
+      "summary": "Broadening legal aid services ensured that impoverished residents could access representation in civil and criminal courts, improving social equity.",
+      "status": "done",
+      "file": "12-riots-and-reform/1970-enactment-of-the-legal-aid-ordinance-expansion.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Establishment of the Hong Kong Export Credit Insurance Corporation",
+      "year": 1966,
+      "date": "1966",
+      "summary": "This statutory body protected local manufacturers against payment risks abroad, significantly boosting Hong Kong's export-driven industrial economy.",
+      "status": "done",
+      "file": "12-riots-and-reform/1966-establishment-of-the-hong-kong-export-credit-insurance-corporation.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Launch of the Social Welfare White Paper",
+      "year": 1973,
+      "date": "1973",
+      "summary": "The landmark policy document outlined a comprehensive government commitment to public assistance, setting the framework for modern social welfare.",
+      "status": "done",
+      "file": "12-riots-and-reform/1973-launch-of-the-social-welfare-white-paper.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Formation of the Society for Community Organization",
+      "year": 1971,
+      "date": "1971",
+      "summary": "SOCO emerged as a vital grassroots advocacy group empowering marginalized communities to demand better housing, labor rights, and social justice.",
+      "status": "done",
+      "file": "12-riots-and-reform/1971-formation-of-the-society-for-community-organization.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Passage of the Matrimonial Causes Ordinance Reform",
+      "year": 1971,
+      "date": "1971",
+      "summary": "This legal reform abolished the system of concubinage and established monogamy as the legal standard, advancing women's rights in family law.",
+      "status": "done",
+      "file": "12-riots-and-reform/1971-passage-of-the-matrimonial-causes-ordinance-reform.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Opening of the Hong Kong Baptist College Campus",
+      "year": 1966,
+      "date": "1966",
+      "summary": "The expansion of post-secondary institutions helped meet the educational demands of the booming post-war baby boom generation.",
+      "status": "done",
+      "file": "12-riots-and-reform/1966-opening-of-the-hong-kong-baptist-college-campus.md"
+    },
+    {
+      "era": "12-riots-and-reform",
+      "title": "Establishment of the Public Enquiry Service Centres",
+      "year": 1974,
+      "date": "1974",
+      "summary": "Set up across various districts, these centers bridged the communication gap between citizens and the colonial administration, enhancing government transparency.",
+      "status": "done",
+      "file": "12-riots-and-reform/1974-establishment-of-the-public-enquiry-service-centres.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the Urban Council Elections Expansion",
+      "year": 1983,
+      "date": "1983-03-10",
+      "summary": "The reform of the Urban Council marked a significant step in local democratization by increasing the proportion of elected members, fostering grassroots political participation.",
+      "status": "done",
+      "file": "13-transition/1983-establishment-of-the-urban-council-elections-expansion.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Release of Tsui Hark's Zu: Warriors from the Magic Mountain",
+      "year": 1983,
+      "date": "1983-02-03",
+      "summary": "This groundbreaking fantasy film revolutionized Hong Kong cinema's special effects and production scale, showcasing the local industry's creative peak during the transitional era.",
+      "status": "done",
+      "file": "13-transition/1983-release-of-tsui-harks-zu-warriors-from-the-magic-mountain.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Opening of the Tuen Mun Highway",
+      "year": 1983,
+      "date": "1983-05-17",
+      "summary": "Connecting the expanding New Town of Tuen Mun to urban Kowloon, this critical infrastructure project accommodated massive suburban population growth.",
+      "status": "done",
+      "file": "13-transition/1983-opening-of-the-tuen-mun-highway.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Consolidation of the Independent Music Scene and Commercial Radio 2",
+      "year": 1985,
+      "date": "1985-06-15",
+      "summary": "The rise of alternative youth culture through innovative radio broadcasting provided a cultural outlet for anxieties surrounding the impending 1997 handover.",
+      "status": "done",
+      "file": "13-transition/1985-consolidation-of-the-independent-music-scene-and-commercial-radio-2.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Launch of the Home Ownership Scheme Phase VII",
+      "year": 1985,
+      "date": "1985-09-01",
+      "summary": "This government housing initiative expanded public sector home-ownership, stabilizing the middle class and anchoring societal stability amid political uncertainty.",
+      "status": "done",
+      "file": "13-transition/1985-launch-of-the-home-ownership-scheme-phase-vii.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the Hong Kong University of Science and Technology Planning",
+      "year": 1986,
+      "date": "1986-07-21",
+      "summary": "The founding initiative for HKUST aimed to transition Hong Kong's economy toward high-tech and knowledge-based industries in preparation for future economic shifts.",
+      "status": "done",
+      "file": "13-transition/1986-establishment-of-the-hong-kong-university-of-science-and-technology-pl.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Inauguration of the Cultural Centre Design and Construction",
+      "year": 1986,
+      "date": "1986-11-10",
+      "summary": "The creation of the iconic Tsim Sha Tsui cultural hub symbolized Hong Kong's ambition to become a premier international arts and performance metropolis.",
+      "status": "done",
+      "file": "13-transition/1986-inauguration-of-the-cultural-centre-design-and-construction.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the Hong Kong Consumer Council Price Watch",
+      "year": 1988,
+      "date": "1988-04-12",
+      "summary": "Amid inflationary pressures and consumer anxiety leading up to the handover, expanded consumer advocacy helped protect everyday livelihoods.",
+      "status": "done",
+      "file": "13-transition/1988-establishment-of-the-hong-kong-consumer-council-price-watch.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Premiere of John Woo's The Killer",
+      "year": 1989,
+      "date": "1989-07-06",
+      "summary": "This quintessential 'heroic bloodshed' film captured the existential angst, loyalty, and cinematic brilliance of Hong Kong society on the eve of the 1990s.",
+      "status": "done",
+      "file": "13-transition/1989-premiere-of-john-woos-the-killer.md"
+    },
+    {
+      "era": "13-transition",
+      "title": "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
+      "year": 1993,
+      "date": "1993-01-15",
+      "summary": "Ongoing maritime transport adaptations reflected the changing urban geography and commuter needs of a rapidly expanding Victoria Harbour metropolis.",
+      "status": "done",
+      "file": "13-transition/1993-establishment-of-the-jockey-club-tak-shing-pier-ferry-services.md"
     }
   ],
   "entities": {
@@ -8790,7 +8970,24 @@
         "Formation of the Hong Kong Girl Guides Association Headquarters",
         "Establishment of the Hong Kong Sea School in Stanley",
         "Establishment of the Grantham Hospital for Tuberculosis",
-        "Launch of the First Annual Hong Kong Arts Festival Precursor"
+        "Launch of the First Annual Hong Kong Arts Festival Precursor",
+        "Establishment of the Urban Council Franchise Reform",
+        "Introduction of the Labour Tribunal",
+        "Enactment of the Legal Aid Ordinance Expansion",
+        "Establishment of the Hong Kong Export Credit Insurance Corporation",
+        "Launch of the Social Welfare White Paper",
+        "Formation of the Society for Community Organization",
+        "Passage of the Matrimonial Causes Ordinance Reform",
+        "Opening of the Hong Kong Baptist College Campus",
+        "Establishment of the Public Enquiry Service Centres",
+        "Establishment of the Urban Council Elections Expansion",
+        "Release of Tsui Hark's Zu: Warriors from the Magic Mountain",
+        "Consolidation of the Independent Music Scene and Commercial Radio 2",
+        "Launch of the Home Ownership Scheme Phase VII",
+        "Establishment of the Hong Kong University of Science and Technology Planning",
+        "Establishment of the Hong Kong Consumer Council Price Watch",
+        "Premiere of John Woo's The Killer",
+        "Establishment of the Jockey Club Tak Shing Pier Ferry Services"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -8862,7 +9059,8 @@
         "Expansion of Obsidian Trade from Northern Origins",
         "Establishment of Permanent Communal Storage Pits",
         "The Expansion of the Hakka Terraced Farming System",
-        "The Rise of Private Maritime Insurance Networks"
+        "The Rise of Private Maritime Insurance Networks",
+        "Launch of the Lady MacLehose Holiday Village"
       ],
       "status": "done",
       "file": "Places/sai-kung.md"
@@ -9089,7 +9287,9 @@
         "Establishment of the Song Maritime Customs Post",
         "Formalization of Clan-Based Militia Defenses",
         "Development of Local Temple Networks as Social Hubs",
-        "The Rise of Private Maritime Insurance Networks"
+        "The Rise of Private Maritime Insurance Networks",
+        "Opening of the Tuen Mun Highway",
+        "Launch of the Home Ownership Scheme Phase VII"
       ],
       "status": "done",
       "file": "Places/tuen-mun.md"
@@ -9432,7 +9632,8 @@
         "Integration of Coastal Salt Worker Guilds",
         "Establishment of the Roman Catholic Prefecture Apostolic",
         "Publication of the Chinese Mail Newspaper",
-        "Opening of the Ko Shan Road Playground"
+        "Opening of the Ko Shan Road Playground",
+        "Opening of the Tuen Mun Highway"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -9764,7 +9965,10 @@
         "The Early Role of Compradors as Cultural Brokers",
         "Local Clan Resistance by Punti and Hakka",
         "Severe Deforestation of Hong Kong Hillsides for Fuel",
-        "Closure of Dairy Farm and Collapse of Livestock Industry"
+        "Closure of Dairy Farm and Collapse of Livestock Industry",
+        "Launch of the Lady MacLehose Holiday Village",
+        "Passage of the Matrimonial Causes Ordinance Reform",
+        "Establishment of the Public Enquiry Service Centres"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -10268,7 +10472,8 @@
         "D&G Photo Controversy Sparks Anti-Mainland Tourism Protests",
         "Inauguration of the Star Ferry Service",
         "First Chinese Manufacturers' Association Exhibition",
-        "Opening of the Tsim Sha Tsui Police Station"
+        "Opening of the Tsim Sha Tsui Police Station",
+        "Inauguration of the Cultural Centre Design and Construction"
       ],
       "status": "done",
       "file": "Places/tsim-sha-tsui.md"
@@ -10681,7 +10886,8 @@
         "Rise of Hong Kong as a Global Textile Hub",
         "Ten-Year Housing Programme Announced",
         "Establishment of Tsuen Wan as Hong Kong's First Satellite Town",
-        "Typhoon Wanda Strikes Hong Kong"
+        "Typhoon Wanda Strikes Hong Kong",
+        "Opening of the Tuen Mun Highway"
       ],
       "status": "done",
       "file": "Places/tsuen-wan.md"
@@ -11021,7 +11227,9 @@
         "Opening of the Royal Hong Kong Yacht Club at Kellett Island",
         "Enactment of the Merchant Shipping Ordinance",
         "Opening of the Tsim Sha Tsui Police Station",
-        "Establishment of the Kowloon British School"
+        "Establishment of the Kowloon British School",
+        "Inauguration of the Cultural Centre Design and Construction",
+        "Establishment of the Jockey Club Tak Shing Pier Ferry Services"
       ],
       "status": "done",
       "file": "Places/victoria-harbour.md"
@@ -13283,7 +13491,12 @@
         "Development of the Sha Tin New Town",
         "Founding of the Hong Kong Repertory Theatre",
         "The Tuen Mun-Yuen Long Light Rail Planning Begins",
-        "Establishment of the Hong Kong Academy for Performing Arts"
+        "Establishment of the Hong Kong Academy for Performing Arts",
+        "Establishment of the Urban Council Franchise Reform",
+        "Launch of the Lady MacLehose Holiday Village",
+        "Enactment of the Legal Aid Ordinance Expansion",
+        "Formation of the Society for Community Organization",
+        "Establishment of the Public Enquiry Service Centres"
       ],
       "status": "done",
       "file": "People/murray-maclehose.md"
@@ -13303,7 +13516,8 @@
       "kind": "person",
       "mentions": [
         "1967 Leftist Riots",
-        "Opening of the Plover Cove Reservoir"
+        "Opening of the Plover Cove Reservoir",
+        "Establishment of the Urban Council Franchise Reform"
       ],
       "status": "done",
       "file": "People/david-trench.md"
@@ -13334,7 +13548,9 @@
         "Launch of the Mutual Aid Committee Scheme",
         "Establishment of the Independent Commission Against Corruption Community Relations Department",
         "Opening of the Tuen Mun New Town",
-        "Launch of the Green Cross Campaign"
+        "Launch of the Green Cross Campaign",
+        "Introduction of the Labour Tribunal",
+        "Launch of the Social Welfare White Paper"
       ],
       "status": "done",
       "file": "People/sir-murray-maclehose.md"
@@ -13343,7 +13559,8 @@
       "name": "Sir David Trench (戴麟趾)",
       "kind": "person",
       "mentions": [
-        "Governor Murray MacLehose Arrives"
+        "Governor Murray MacLehose Arrives",
+        "Launch of the Social Welfare White Paper"
       ],
       "status": "done",
       "file": "People/sir-david-trench.md"
@@ -13498,7 +13715,8 @@
       "kind": "person",
       "mentions": [
         "First Indirect Elections to the Legislative Council",
-        "Sudden Death of Governor Edward Youde"
+        "Sudden Death of Governor Edward Youde",
+        "Establishment of the Urban Council Elections Expansion"
       ],
       "status": "done",
       "file": "People/edward-youde.md"
@@ -13765,7 +13983,8 @@
       "kind": "person",
       "mentions": [
         "The Sunset Farewell Ceremony",
-        "Transfer of Sovereignty over Hong Kong"
+        "Transfer of Sovereignty over Hong Kong",
+        "Inauguration of the Cultural Centre Design and Construction"
       ],
       "status": "done",
       "file": "People/prince-charles.md"
@@ -16566,7 +16785,8 @@
       "name": "Castle Peak Bay (青山灣)",
       "kind": "place",
       "mentions": [
-        "Opening of the Tuen Mun New Town"
+        "Opening of the Tuen Mun New Town",
+        "Opening of the Tuen Mun Highway"
       ],
       "status": "done",
       "file": "Places/castle-peak-bay.md"
@@ -17484,7 +17704,8 @@
       "name": "Clear Water Bay (清水灣)",
       "kind": "place",
       "mentions": [
-        "Creation of the Hong Kong University of Science and Technology"
+        "Creation of the Hong Kong University of Science and Technology",
+        "Establishment of the Hong Kong University of Science and Technology Planning"
       ],
       "status": "done",
       "file": "Places/clear-water-bay.md"
@@ -18226,6 +18447,113 @@
       ],
       "status": "done",
       "file": "Places/grantham-hospital.md"
+    },
+    "person:maclehose-murray": {
+      "name": "MacLehose, Murray (麥理浩)",
+      "kind": "person",
+      "mentions": [
+        "Passage of the Matrimonial Causes Ordinance Reform"
+      ],
+      "status": "done",
+      "file": "People/maclehose-murray.md"
+    },
+    "person:tsui-hark": {
+      "name": "Tsui Hark (徐克)",
+      "kind": "person",
+      "mentions": [
+        "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
+      ],
+      "status": "done",
+      "file": "People/tsui-hark.md"
+    },
+    "person:adam-cheng": {
+      "name": "Adam Cheng (鄭少秋)",
+      "kind": "person",
+      "mentions": [
+        "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
+      ],
+      "status": "done",
+      "file": "People/adam-cheng.md"
+    },
+    "person:brigitte-lin": {
+      "name": "Brigitte Lin (林青霞)",
+      "kind": "person",
+      "mentions": [
+        "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
+      ],
+      "status": "pending"
+    },
+    "person:yuen-biao": {
+      "name": "Yuen Biao (元彪)",
+      "kind": "person",
+      "mentions": [
+        "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
+      ],
+      "status": "pending"
+    },
+    "person:uncle-ray": {
+      "name": "Uncle Ray (郭利民)",
+      "kind": "person",
+      "mentions": [
+        "Consolidation of the Independent Music Scene and Commercial Radio 2"
+      ],
+      "status": "pending"
+    },
+    "place:shatin": {
+      "name": "Shatin (沙田)",
+      "kind": "place",
+      "mentions": [
+        "Launch of the Home Ownership Scheme Phase VII"
+      ],
+      "status": "pending"
+    },
+    "place:sai-kung-district": {
+      "name": "Sai Kung District (西貢區)",
+      "kind": "place",
+      "mentions": [
+        "Establishment of the Hong Kong University of Science and Technology Planning"
+      ],
+      "status": "pending"
+    },
+    "person:sir-david-wilson": {
+      "name": "Sir David Wilson (衛奕信)",
+      "kind": "person",
+      "mentions": [
+        "Inauguration of the Cultural Centre Design and Construction"
+      ],
+      "status": "pending"
+    },
+    "place:hong-kong-cultural-centre": {
+      "name": "Hong Kong Cultural Centre (香港文化中心)",
+      "kind": "place",
+      "mentions": [
+        "Inauguration of the Cultural Centre Design and Construction"
+      ],
+      "status": "pending"
+    },
+    "person:john-woo": {
+      "name": "John Woo (吳宇森)",
+      "kind": "person",
+      "mentions": [
+        "Premiere of John Woo's The Killer"
+      ],
+      "status": "pending"
+    },
+    "person:chow-yun-fat": {
+      "name": "Chow Yun-fat (周潤發)",
+      "kind": "person",
+      "mentions": [
+        "Premiere of John Woo's The Killer"
+      ],
+      "status": "pending"
+    },
+    "person:danny-lee": {
+      "name": "Danny Lee (李修賢)",
+      "kind": "person",
+      "mentions": [
+        "Premiere of John Woo's The Killer"
+      ],
+      "status": "pending"
     }
   }
 }

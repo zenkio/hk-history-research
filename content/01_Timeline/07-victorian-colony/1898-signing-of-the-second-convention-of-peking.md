@@ -4,7 +4,7 @@ title_zh: "展拓香港界址專條"
 date: 1898-06-09
 year: 1898
 era: "Kowloon and the Victorian colony"
-tags: ["1898", "ai-draft", "british-empire", "hong-kong-history", "new-territories", "qing-dynasty", "second-convention-of-peking", "victorian-colony"]
+tags: ["photo-corroborated", "1898", "ai-draft", "british-empire", "hong-kong-history", "new-territories", "qing-dynasty", "second-convention-of-peking", "victorian-colony"]
 summary: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting the stage for its 1997 return."
 description: "On June 9, 1898, the United Kingdom and the Qing dynasty signed an agreement leasing the New Territories and outlying islands to Britain for 99 years, drastically expanding the colony's size and inadvertently setting…"
 confidence: ai-draft
@@ -44,5 +44,28 @@ The acquisition transformed Hong Kong's geography, economy, and demographic make
 
 - [ ] The exact boundary lines and island counts specified in the Second Convention of Peking
 - [ ] The precise diplomatic communications between Sir Claude MacDonald and the Zongli Yamen leading to the choice of a 99-year lease duration
+
+## Photos from this period
+
+![The Chinese version of the Convention for the Extension of Hong Kong Territory, signed in 1898.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/The_Convention_for_the_Extension_of_Hong_Kong_Territory_%28Ch%27ing_version%29.png/960px-The_Convention_for_the_Extension_of_Hong_Kong_Territory_%28Ch%27ing_version%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The Chinese version of the Convention for the Extension of Hong Kong Territory, signed in 1898.* (document). The Government of Ch'ing (China), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Convention_for_the_Extension_of_Hong_Kong_Territory_(Ch%27ing_version).png).
+Corroborates: It is the official document that established the 99-year lease of the New Territories to Britain.
+
+![A reproduction of the map attached to the 1898 Convention of Peking, outlining the expansion of the Hong Kong territory.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_1.jpg/960px-Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A reproduction of the map attached to the 1898 Convention of Peking, outlining the expansion of the Hong Kong territory.* (map). Unknown., Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_1.jpg).
+Corroborates: It illustrates the geographical areas, including the New Territories and outlying islands, that were leased to Britain under the agreement.
+
+![A map showing the geography of the New Territories as part of the 1898 Convention for the Extension of Hong Kong Territory.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_2.jpg/960px-Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A map showing the geography of the New Territories as part of the 1898 Convention for the Extension of Hong Kong Territory.* (map). Unknown., Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Map_of_The_Convention_for_the_Extension_of_Hong_Kong_Territory_in_1898_-_2.jpg).
+Corroborates: It corroborates the expansion of the colony's size through the leasing of the New Territories.
+
+![Sir Henry Arthur Blake, Governor of Hong Kong, and the Viceroy of Guangdong, circa 1898.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Sir_Henry_Arthur_Blake_and_Viceroy_of_Guangdong.jpg/960px-Sir_Henry_Arthur_Blake_and_Viceroy_of_Guangdong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Sir Henry Arthur Blake, Governor of Hong Kong, and the Viceroy of Guangdong, circa 1898.* (contemporary photo). Not identified, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sir_Henry_Arthur_Blake_and_Viceroy_of_Guangdong.jpg).
+Corroborates: It depicts the primary British and Chinese officials involved in the administration and diplomatic relations during the signing of the Second Convention of Peking.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,10 +4,11 @@ title_zh: "東涌 fort的擴建 (Note: 東涌炮台)"
 date: 1832-01-01
 year: 1832
 era: "Canton trade and the First Opium War"
-tags: ["1832", "ai-draft", "first-opium-war", "lantau-island", "maritime-smuggling", "opium-war", "qing-dynasty", "tung-chung-fort"]
+tags: ["evidence-none", "1832", "ai-draft", "first-opium-war", "lantau-island", "maritime-smuggling", "opium-war", "qing-dynasty", "tung-chung-fort"]
 summary: "In **1832**, the Qing dynasty reinforced the Tung Chung Fort on Lantau Island to strengthen coastal defense and suppress rampant maritime smuggling in the Pearl River estuary."
 description: "In 1832, the Qing dynasty reinforced the Tung Chung Fort on Lantau Island to strengthen coastal defense and suppress rampant maritime smuggling in the Pearl River estuary."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The reinforcement of Tung Chung Fort represents a key regional effort by the Qin
 
 - [ ] Whether the specific structural expansions at Tung Chung occurred precisely in the year 1832 according to official Qing provincial gazetteers.
 - [ ] The exact administrative rationale recorded in regional military reports regarding smuggling versus anti-piracy operations.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the specific structural expansions of Tung Chung Fort in 1832 and the recorded administrative rationale for those operations is completely missing.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

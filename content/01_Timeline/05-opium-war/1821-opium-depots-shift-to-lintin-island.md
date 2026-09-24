@@ -4,10 +4,11 @@ title_zh: "鴉片貨船轉移內伶仃島"
 date: 1821-01-01
 year: 1821
 era: "Canton trade and the First Opium War"
-tags: ["1821", "ai-draft", "british-imperialism", "canton-trade", "first-opium-war", "lintin-island", "opium-war", "smuggling"]
+tags: ["evidence-none", "1821", "ai-draft", "british-imperialism", "canton-trade", "first-opium-war", "lintin-island", "opium-war", "smuggling"]
 summary: "In **1821**, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the illicit drug trade."
 description: "In 1821, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The establishment of the Lintin depot system fundamentally transformed the geogr
 
 - [ ] Exact date and administrative specifics of the 1821 Qing edicts that directly triggered the permanent anchoring of hulks at Lintin Island
 - [ ] The precise timeline when private British firms began utilizing armed receiving hulks compared to the East India Company
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for both the 1821 Qing edicts and the specific timeline regarding the use of receiving hulks by private firms versus the East India Company is still needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

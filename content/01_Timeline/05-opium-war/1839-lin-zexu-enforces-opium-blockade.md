@@ -4,10 +4,11 @@ title_zh: "林則徐查禁鴉片"
 date: 1839-03-24
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "canton-trade", "first-opium-war", "lin-zexu", "opium-war", "thirteen-factories"]
+tags: ["evidence-none", "1839", "ai-draft", "canton-trade", "first-opium-war", "lin-zexu", "opium-war", "thirteen-factories"]
 summary: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
 description: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The blockade and subsequent destruction of property dealt a severe economic blow
 
 - [ ] Exact date and duration of the complete blockade of the foreign factories starting in March 1839
 - [ ] The precise total number of chests of opium surrendered to Commissioner Lin Zexu
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for the exact date and duration of the 1839 blockade and the precise total number of chests of opium surrendered is still needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

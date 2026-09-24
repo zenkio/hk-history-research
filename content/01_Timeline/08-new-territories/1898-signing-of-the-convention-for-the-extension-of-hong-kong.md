@@ -4,7 +4,7 @@ title_zh: "香港展拓專條簽訂"
 date: 1898-06-09
 year: 1898
 era: "The New Territories lease and the early 20th century"
-tags: ["1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
+tags: ["photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
 summary: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 description: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 confidence: ai-draft
@@ -42,5 +42,18 @@ The acquisition fundamentally transformed Hong Kong's geography, economy, and ad
 
 - [ ] Exact boundary demarcations agreed upon in the 1899 Convention of Peking
 - [ ] Specific role and instructions of British and Qing diplomats during the 1898 negotiations
+
+## Photos from this period
+
+![A replica of the Convention for the Extension of Hong Kong Territory on display at the Hong Kong Museum of History.](https://upload.wikimedia.org/wikipedia/commons/f/f9/Kowloon_Lease_%285345421450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A replica of the Convention for the Extension of Hong Kong Territory on display at the Hong Kong Museum of History.* (document). InSapphoWeTrust from Los Angeles, California, USA, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Lease_(5345421450).jpg).
+Corroborates: It depicts the treaty document that leased the New Territories to Britain for 99 years starting in 1898.
+
+![Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg/960px-20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.* (artwork). Yumeto, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg).
+Corroborates: It illustrates the practical outcome of the Convention for the Extension of Hong Kong, specifically the establishment of the boundary for the leased New Territories.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

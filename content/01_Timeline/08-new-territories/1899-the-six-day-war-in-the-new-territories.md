@@ -4,7 +4,7 @@ title_zh: "新界六日戰爭"
 date: 1899-04-14
 year: 1899
 era: "The New Territories lease and the early 20th century"
-tags: ["1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
+tags: ["photo-corroborated", "1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
 summary: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their military defeat."
 description: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their…"
 confidence: ai-draft
@@ -47,5 +47,18 @@ The conflict marked the final major armed resistance against British expansion i
 
 - [ ] The exact casualty numbers for the indigenous militia during the six-day conflict
 - [ ] The degree of direct involvement or tacit approval by Qing officials in Shenzhen regarding the villagers' resistance
+
+## Photos from this period
+
+![The Proclamation of the New Territories, issued by Sir Henry Blake, Governor of Hong Kong, on April 9, 1899.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/New_Territories_Proclamation.jpg/960px-New_Territories_Proclamation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The Proclamation of the New Territories, issued by Sir Henry Blake, Governor of Hong Kong, on April 9, 1899.* (document). Hong Kong Government, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:New_Territories_Proclamation.jpg).
+Corroborates: This official announcement of the British takeover precipitated the armed resistance from indigenous clans that led to the Six-Day War.
+
+![British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.](https://upload.wikimedia.org/wikipedia/commons/e/e9/British_take_over_the_New_Territories.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.* (contemporary photo). The National Archives UK, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:British_take_over_the_New_Territories.jpg).
+Corroborates: It documents the official colonial takeover of the New Territories that triggered the armed resistance of the local indigenous clans.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

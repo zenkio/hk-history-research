@@ -73,7 +73,7 @@
     "15-contention": {
       "outlined": true,
       "overview": true,
-      "rounds": 3
+      "rounds": 4
     },
     "16-national-security-era": {
       "outlined": true,
@@ -8370,6 +8370,87 @@
       "summary": "Ongoing maritime transport adaptations reflected the changing urban geography and commuter needs of a rapidly expanding Victoria Harbour metropolis.",
       "status": "done",
       "file": "13-transition/1993-establishment-of-the-jockey-club-tak-shing-pier-ferry-services.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Introduction of the Minimum Wage Ordinance",
+      "year": 2011,
+      "date": "2011-05-01",
+      "summary": "Hong Kong implemented its first statutory minimum wage to protect low-income workers, sparking intense debate over labor rights and corporate costs.",
+      "status": "done",
+      "file": "15-contention/2011-introduction-of-the-minimum-wage-ordinance.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Lamma Island Ferry Collision",
+      "year": 2012,
+      "date": "2012-10-01",
+      "summary": "A fatal collision between passenger ferries resulted in 39 deaths, exposing severe maritime safety failures and prompting deep public grief.",
+      "status": "done",
+      "file": "15-contention/2012-lamma-island-ferry-collision.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Hong Kong Dock Workers Strike",
+      "year": 2013,
+      "date": "2013-03-28",
+      "summary": "Contractors' laborers at HIT staged a historic 40-day strike against stagnant wages, highlighting severe wealth inequality and harsh working conditions.",
+      "status": "done",
+      "file": "15-contention/2013-hong-kong-dock-workers-strike.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "HKTV Free-to-Air License Denial Protests",
+      "year": 2013,
+      "date": "2013-10-20",
+      "summary": "Public outrage over the government's rejection of HKTV's broadcast license application triggered mass rallies defending media pluralism and freedom of expression.",
+      "status": "done",
+      "file": "15-contention/2013-hktv-free-to-air-license-denial-protests.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Discovery of Lead in Public Housing Water",
+      "year": 2015,
+      "date": "2015-07-10",
+      "summary": "Widespread public health panic ensued after toxic lead levels were detected in drinking water across multiple public housing estates.",
+      "status": "done",
+      "file": "15-contention/2015-discovery-of-lead-in-public-housing-water.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Typhoon Mangkhut Infrastructure Chaos",
+      "year": 2018,
+      "date": "2018-09-16",
+      "summary": "Super Typhoon Mangkhut devastated the city with record winds and storm surges, sparking major socio-economic friction over post-storm transit paralysis.",
+      "status": "done",
+      "file": "15-contention/2018-typhoon-mangkhut-infrastructure-chaos.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "MTR Shatin to Central Link Scandal",
+      "year": 2018,
+      "date": "2018-05-30",
+      "summary": "Severe construction flaws and falsified safety reports surfaced regarding the MTR rail project, deeply shaking public trust in regulatory oversight.",
+      "status": "done",
+      "file": "15-contention/2018-mtr-shatin-to-central-link-scandal.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Rise of the Yellow Economic Circle",
+      "year": 2019,
+      "date": "2019-11-01",
+      "summary": "Pro-democracy consumers created an alternative network of businesses to sustain ideological solidarity and economic resistance following social unrest.",
+      "status": "done",
+      "file": "15-contention/2019-rise-of-the-yellow-economic-circle.md"
+    },
+    {
+      "era": "15-contention",
+      "title": "Launch of the Faster Payment System",
+      "year": 2018,
+      "date": "2018-09-30",
+      "summary": "The HKMA introduced FPS to enable instant, cross-institution payments, significantly accelerating Hong Kong's transition into a digital economy.",
+      "status": "done",
+      "file": "15-contention/2018-launch-of-the-faster-payment-system.md"
     }
   ],
   "entities": {
@@ -8987,7 +9068,13 @@
         "Establishment of the Hong Kong University of Science and Technology Planning",
         "Establishment of the Hong Kong Consumer Council Price Watch",
         "Premiere of John Woo's The Killer",
-        "Establishment of the Jockey Club Tak Shing Pier Ferry Services"
+        "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
+        "Introduction of the Minimum Wage Ordinance",
+        "Hong Kong Dock Workers Strike",
+        "HKTV Free-to-Air License Denial Protests",
+        "Typhoon Mangkhut Infrastructure Chaos",
+        "Rise of the Yellow Economic Circle",
+        "Launch of the Faster Payment System"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -9014,7 +9101,8 @@
         "Introduction of Net Sinkers for Pelagic Fishing",
         "Emergence of Regional Ceramic Style Exchange Networks",
         "Adoption of Casting Molds for Bronze Utility Tools",
-        "Establishment of Bronze-Age Coastal Defensive Earthworks"
+        "Establishment of Bronze-Age Coastal Defensive Earthworks",
+        "Lamma Island Ferry Collision"
       ],
       "status": "done",
       "file": "Places/lamma-island.md"
@@ -10354,7 +10442,8 @@
         "Establishment of Imperial Residence at Sacred Hill",
         "Battle of Yamen and Local Veneration of Hau Wong",
         "Completion of Kai Tak Airport Runway Extension",
-        "Discovery of Toxic Lead in Public Housing Drinking Water"
+        "Discovery of Toxic Lead in Public Housing Drinking Water",
+        "Discovery of Lead in Public Housing Water"
       ],
       "status": "done",
       "file": "Places/kowloon-city.md"
@@ -10495,7 +10584,8 @@
         "Establishment of Che Kung Temple in Sha Tin",
         "Typhoon Wanda Strikes Hong Kong",
         "Development of the Sha Tin New Town",
-        "Opening of the Tate's Cairn Tunnel"
+        "Opening of the Tate's Cairn Tunnel",
+        "MTR Shatin to Central Link Scandal"
       ],
       "status": "done",
       "file": "Places/sha-tin.md"
@@ -11229,7 +11319,8 @@
         "Opening of the Tsim Sha Tsui Police Station",
         "Establishment of the Kowloon British School",
         "Inauguration of the Cultural Centre Design and Construction",
-        "Establishment of the Jockey Club Tak Shing Pier Ferry Services"
+        "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
+        "Lamma Island Ferry Collision"
       ],
       "status": "done",
       "file": "Places/victoria-harbour.md"
@@ -12116,7 +12207,8 @@
         "Establishment of the Hong Kong Club's New Building",
         "Establishment of the Chinese YMCA of Hong Kong",
         "Inauguration of the Victoria Market",
-        "Opening of the Airport Railway"
+        "Opening of the Airport Railway",
+        "MTR Shatin to Central Link Scandal"
       ],
       "status": "done",
       "file": "Places/central.md"
@@ -14033,7 +14125,8 @@
         "Leung Chun-ying Elected Chief Executive",
         "Introduction of Hong Kong's First Statutory Minimum Wage",
         "Hong Kong's 2006 Population Census Reveals Demographic Shifts",
-        "The Introduction of the Statutory Minimum Wage Consultation"
+        "The Introduction of the Statutory Minimum Wage Consultation",
+        "Introduction of the Minimum Wage Ordinance"
       ],
       "status": "done",
       "file": "People/donald-tsang.md"
@@ -14158,7 +14251,8 @@
       "kind": "place",
       "mentions": [
         "Massive Protest Against Article 23 National Security Bill",
-        "First 'July 1st' Rally Mass Mobilization"
+        "First 'July 1st' Rally Mass Mobilization",
+        "HKTV Free-to-Air License Denial Protests"
       ],
       "status": "done",
       "file": "Places/central-government-offices.md"
@@ -14362,7 +14456,8 @@
       "mentions": [
         "Launch of the Umbrella Movement",
         "Mass Protest Against the Extradition Bill",
-        "Public Controversy over the Northeast New Territories Development"
+        "Public Controversy over the Northeast New Territories Development",
+        "HKTV Free-to-Air License Denial Protests"
       ],
       "status": "done",
       "file": "Places/admiralty.md"
@@ -14750,7 +14845,8 @@
         "Opening of the KCRC West Rail Line",
         "Opening of the Hong Kong Technical College",
         "Opening of the Hong Kong Polytechnic",
-        "Opening of the Ko Shan Road Playground"
+        "Opening of the Ko Shan Road Playground",
+        "MTR Shatin to Central Link Scandal"
       ],
       "status": "done",
       "file": "Places/hung-hom.md"
@@ -15774,7 +15870,8 @@
       "kind": "place",
       "mentions": [
         "Public Housing Short-Piling Construction Scandal",
-        "Establishment of Tsuen Wan as Hong Kong's First Satellite Town"
+        "Establishment of Tsuen Wan as Hong Kong's First Satellite Town",
+        "Discovery of Lead in Public Housing Water"
       ],
       "status": "done",
       "file": "Places/kwai-chung.md"
@@ -15874,7 +15971,8 @@
       "name": "Yung Shue Wan (榕樹灣)",
       "kind": "place",
       "mentions": [
-        "Lamma Island Ferry Collision Kills 39 People"
+        "Lamma Island Ferry Collision Kills 39 People",
+        "Lamma Island Ferry Collision"
       ],
       "status": "done",
       "file": "Places/yung-shue-wan.md"
@@ -15892,7 +15990,8 @@
       "name": "Ricky Wong (王維基)",
       "kind": "person",
       "mentions": [
-        "Mass Protests Over HKTV Free-to-Air License Denial"
+        "Mass Protests Over HKTV Free-to-Air License Denial",
+        "HKTV Free-to-Air License Denial Protests"
       ],
       "status": "done",
       "file": "People/ricky-wong.md"
@@ -15919,7 +16018,8 @@
       "name": "Ko Wing-man (高永文)",
       "kind": "person",
       "mentions": [
-        "Discovery of Toxic Lead in Public Housing Drinking Water"
+        "Discovery of Toxic Lead in Public Housing Drinking Water",
+        "Discovery of Lead in Public Housing Water"
       ],
       "status": "done",
       "file": "People/ko-wing-man.md"
@@ -15937,7 +16037,8 @@
       "name": "Kai Ching Estate (啟晴邨)",
       "kind": "place",
       "mentions": [
-        "Discovery of Toxic Lead in Public Housing Drinking Water"
+        "Discovery of Toxic Lead in Public Housing Drinking Water",
+        "Discovery of Lead in Public Housing Water"
       ],
       "status": "done",
       "file": "Places/kai-ching-estate.md"
@@ -15946,7 +16047,8 @@
       "name": "Kwai Luen Estate (葵聯邨)",
       "kind": "place",
       "mentions": [
-        "Discovery of Toxic Lead in Public Housing Drinking Water"
+        "Discovery of Toxic Lead in Public Housing Drinking Water",
+        "Discovery of Lead in Public Housing Water"
       ],
       "status": "done",
       "file": "Places/kwai-luen-estate.md"
@@ -15964,7 +16066,8 @@
       "name": "Heng Fa Chuen (杏花邨)",
       "kind": "place",
       "mentions": [
-        "Typhoon Mangkhut Inflicts Severe Damage and Transport Chaos"
+        "Typhoon Mangkhut Inflicts Severe Damage and Transport Chaos",
+        "Typhoon Mangkhut Infrastructure Chaos"
       ],
       "status": "done",
       "file": "Places/heng-fa-chuen.md"
@@ -15973,7 +16076,8 @@
       "name": "Lei Yue Mun (鯉魚門)",
       "kind": "place",
       "mentions": [
-        "Typhoon Mangkhut Inflicts Severe Damage and Transport Chaos"
+        "Typhoon Mangkhut Inflicts Severe Damage and Transport Chaos",
+        "Typhoon Mangkhut Infrastructure Chaos"
       ],
       "status": "done",
       "file": "Places/lei-yue-mun.md"
@@ -17885,7 +17989,8 @@
       "name": "Norman Chan (陳德霖)",
       "kind": "person",
       "mentions": [
-        "Launch of the Faster Payment System (FPS)"
+        "Launch of the Faster Payment System (FPS)",
+        "Launch of the Faster Payment System"
       ],
       "status": "done",
       "file": "People/norman-chan.md"
@@ -18481,7 +18586,8 @@
       "mentions": [
         "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/brigitte-lin.md"
     },
     "person:yuen-biao": {
       "name": "Yuen Biao (元彪)",
@@ -18489,7 +18595,8 @@
       "mentions": [
         "Release of Tsui Hark's Zu: Warriors from the Magic Mountain"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/yuen-biao.md"
     },
     "person:uncle-ray": {
       "name": "Uncle Ray (郭利民)",
@@ -18497,7 +18604,8 @@
       "mentions": [
         "Consolidation of the Independent Music Scene and Commercial Radio 2"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/uncle-ray.md"
     },
     "place:shatin": {
       "name": "Shatin (沙田)",
@@ -18505,7 +18613,8 @@
       "mentions": [
         "Launch of the Home Ownership Scheme Phase VII"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/shatin.md"
     },
     "place:sai-kung-district": {
       "name": "Sai Kung District (西貢區)",
@@ -18513,7 +18622,8 @@
       "mentions": [
         "Establishment of the Hong Kong University of Science and Technology Planning"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/sai-kung-district.md"
     },
     "person:sir-david-wilson": {
       "name": "Sir David Wilson (衛奕信)",
@@ -18521,7 +18631,8 @@
       "mentions": [
         "Inauguration of the Cultural Centre Design and Construction"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/sir-david-wilson.md"
     },
     "place:hong-kong-cultural-centre": {
       "name": "Hong Kong Cultural Centre (香港文化中心)",
@@ -18529,7 +18640,8 @@
       "mentions": [
         "Inauguration of the Cultural Centre Design and Construction"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "Places/hong-kong-cultural-centre.md"
     },
     "person:john-woo": {
       "name": "John Woo (吳宇森)",
@@ -18537,7 +18649,8 @@
       "mentions": [
         "Premiere of John Woo's The Killer"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/john-woo.md"
     },
     "person:chow-yun-fat": {
       "name": "Chow Yun-fat (周潤發)",
@@ -18545,13 +18658,76 @@
       "mentions": [
         "Premiere of John Woo's The Killer"
       ],
-      "status": "pending"
+      "status": "done",
+      "file": "People/chow-yun-fat.md"
     },
     "person:danny-lee": {
       "name": "Danny Lee (李修賢)",
       "kind": "person",
       "mentions": [
         "Premiere of John Woo's The Killer"
+      ],
+      "status": "done",
+      "file": "People/danny-lee.md"
+    },
+    "person:matthew-cheung": {
+      "name": "Matthew Cheung (張建宗)",
+      "kind": "person",
+      "mentions": [
+        "Introduction of the Minimum Wage Ordinance"
+      ],
+      "status": "done",
+      "file": "People/matthew-cheung.md"
+    },
+    "person:lamma-iv-crew": {
+      "name": "Lamma IV crew",
+      "kind": "person",
+      "mentions": [
+        "Lamma Island Ferry Collision"
+      ],
+      "status": "done",
+      "file": "People/lamma-iv-crew.md"
+    },
+    "person:sea-smooth-crew": {
+      "name": "Sea Smooth crew",
+      "kind": "person",
+      "mentions": [
+        "Lamma Island Ferry Collision"
+      ],
+      "status": "done",
+      "file": "People/sea-smooth-crew.md"
+    },
+    "place:kwai-chung-container-terminal": {
+      "name": "Kwai Chung Container Terminal (葵涌貨櫃碼頭)",
+      "kind": "place",
+      "mentions": [
+        "Hong Kong Dock Workers Strike"
+      ],
+      "status": "done",
+      "file": "Places/kwai-chung-container-terminal.md"
+    },
+    "person:cy-leung": {
+      "name": "CY Leung (梁振英)",
+      "kind": "person",
+      "mentions": [
+        "HKTV Free-to-Air License Denial Protests"
+      ],
+      "status": "done",
+      "file": "People/cy-leung.md"
+    },
+    "place:tim-mei-avenue": {
+      "name": "Tim Mei Avenue (添美道)",
+      "kind": "place",
+      "mentions": [
+        "HKTV Free-to-Air License Denial Protests"
+      ],
+      "status": "pending"
+    },
+    "place:to-kwa-wan": {
+      "name": "To Kwa Wan (土瓜灣)",
+      "kind": "place",
+      "mentions": [
+        "MTR Shatin to Central Link Scandal"
       ],
       "status": "pending"
     }

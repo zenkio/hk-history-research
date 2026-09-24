@@ -4,7 +4,7 @@ title_zh: "一九○六年丙午風災"
 date: 1906-09-18
 year: 1906
 era: "The New Territories lease and the early 20th century"
-tags: ["1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
+tags: ["photo-corroborated", "1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
 summary: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 description: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 confidence: ai-draft
@@ -47,5 +47,30 @@ Historians also note that the disaster disproportionately impacted the marginali
 
 - [ ] The precise death toll of the 1906 typhoon, given that historical estimates range significantly from 6,000 to over 15,000 fatalities.
 - [ ] The exact sequence of meteorological communications and warning signals issued—or failed to be issued—by the Hong Kong Observatory on the morning of September 18, 1906.
+
+## Photos from this period
+
+![A weather chart from the Zi-ka-wei Observatory showing a typhoon positioned close to Hong Kong on September 18, 1906.](https://upload.wikimedia.org/wikipedia/commons/7/71/1906_Hong_Kong_Typhoon_Zi_Ka_Wei_weather_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A weather chart from the Zi-ka-wei Observatory showing a typhoon positioned close to Hong Kong on September 18, 1906.* (map). 上海徐家匯天文台
+
+The Zi-ka-wei Observatory, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_Typhoon_Zi_Ka_Wei_weather_map.jpg).
+Corroborates: It corroborates the timing and location of the catastrophic typhoon that struck Hong Kong on this date.
+
+![Track map of the 1906 typhoon that struck Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Hong_Kong_1906_track.png/960px-Hong_Kong_1906_track.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Track map of the 1906 typhoon that struck Hong Kong.* (map). Cyclonebiskit, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_1906_track.png).
+Corroborates: It illustrates the trajectory of the storm as it moved across the Pacific and made landfall in southern China, affecting Hong Kong.
+
+![Destruction at the Star Ferry wharf on the Hong Kong side following the 1906 typhoon.](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png/960px-1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Destruction at the Star Ferry wharf on the Hong Kong side following the 1906 typhoon.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png).
+Corroborates: It provides visual evidence of the devastating impact the typhoon had on Hong Kong's maritime infrastructure.
+
+![Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/1906_Hong_Kong_typhoon_damage.jpg/960px-1906_Hong_Kong_typhoon_damage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_typhoon_damage.jpg).
+Corroborates: It corroborates the devastating impact of the typhoon on maritime infrastructure and buildings.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,7 +4,7 @@ title_zh: "九廣鐵路英段通車"
 date: 1910-10-01
 year: 1910
 era: "The New Territories lease and the early 20th century"
-tags: ["1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
+tags: ["photo-corroborated", "1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
 summary: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland China."
 description: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland…"
 confidence: ai-draft
@@ -45,5 +45,13 @@ The opening of the railway modernized regional transport and physically bound th
 
 - [ ] Verify the exact passenger and freight volume during the first month of operation in October 1910.
 - [ ] Confirm the precise contractual agreements between the British colonial government and the Qing dynasty regarding the cross-border railway connection.
+
+## Photos from this period
+
+![Extract from the Hong Kong Government Gazette dated October 7, 1910, notifying the public of the opening of the British Section of the Kowloon-Canton Railway.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gazette_notice_safe_opening_KCR_Oct_1910.jpg/960px-Gazette_notice_safe_opening_KCR_Oct_1910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Extract from the Hong Kong Government Gazette dated October 7, 1910, notifying the public of the opening of the British Section of the Kowloon-Canton Railway.* (document). Hong Kong Government Printer, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gazette_notice_safe_opening_KCR_Oct_1910.jpg).
+Corroborates: It confirms the official opening of the railway's British Section on October 1, 1910.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

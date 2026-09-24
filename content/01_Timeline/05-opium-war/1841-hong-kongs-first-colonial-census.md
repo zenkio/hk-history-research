@@ -4,10 +4,11 @@ title_zh: "香港首次殖民地人口普查"
 date: 1841-05-15
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "british-colonial-history", "census", "demographics", "first-opium-war", "opium-war"]
+tags: ["evidence-none", "1841", "ai-draft", "british-colonial-history", "census", "demographics", "first-opium-war", "opium-war"]
 summary: "Conducted on May 15, 1841, the first colonial census recorded a population of approximately 7,450 residents on Hong Kong Island, establishing a baseline for early British administration."
 description: "Conducted on May 15, 1841, the first colonial census recorded a population of approximately 7,450 residents on Hong Kong Island, establishing a baseline for early British administration."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ This early census represents the foundational document of Hong Kong's colonial d
 
 - [ ] The preliminary census of Hong Kong Island was conducted specifically on May 15, 1841.
 - [ ] The recorded population figure of approximately 7,450 excluded British military personnel and foreign merchants.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence supporting the specific date and population figures of the 1841 census is missing from all provided sources.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

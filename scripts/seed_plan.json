@@ -28,7 +28,7 @@
     "06-early-colony": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "07-victorian-colony": {
       "outlined": true,
@@ -68,7 +68,7 @@
     "14-early-hksar": {
       "outlined": true,
       "overview": true,
-      "rounds": 4
+      "rounds": 5
     },
     "15-contention": {
       "outlined": true,
@@ -8703,6 +8703,184 @@
       "summary": "Encouraged thrift among the working-class population by providing secure government-backed savings facilities across post office branches.",
       "status": "done",
       "file": "08-new-territories/1901-establishment-of-the-post-office-savings-bank.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Establishment of the Aberdeen Dockyards",
+      "year": 1857,
+      "date": "1857",
+      "summary": "The founding of early dockyard facilities in Aberdeen laid the foundational infrastructure for Hong Kong's rise as a premier maritime repair and shipbuilding hub in East Asia.",
+      "status": "done",
+      "file": "06-early-colony/1857-establishment-of-the-aberdeen-dockyards.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Launch of the First Regular Steamship Service",
+      "year": 1845,
+      "date": "1845",
+      "summary": "The introduction of regular steam-powered maritime communication improved trade integration and reduced transit times between Hong Kong, Canton, and regional ports.",
+      "status": "done",
+      "file": "06-early-colony/1845-launch-of-the-first-regular-steamship-service.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Publication of Early English-Chinese Phrasebooks and Dictionaries",
+      "year": 1843,
+      "date": "1843",
+      "summary": "The creation of linguistic guides by early colonial scholars facilitated vital commercial and administrative communication between the British administration and the local Chinese populace.",
+      "status": "done",
+      "file": "06-early-colony/1843-publication-of-early-english-chinese-phrasebooks-and-dictionaries.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Opening of the Morrison Education Society School",
+      "year": 1842,
+      "date": "1842",
+      "summary": "Relocating from Macao to Hong Kong, this pioneering institution provided Western and classical education, shaping the colony's earliest bilingual intelligentsia.",
+      "status": "done",
+      "file": "06-early-colony/1842-opening-of-the-morrison-education-society-school.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Formation of the Moran & Co. Sugar Refinery",
+      "year": 1855,
+      "date": "1855",
+      "summary": "The establishment of early industrial processing plants diversified the colony's economy beyond purely entrepôt trade into light manufacturing.",
+      "status": "done",
+      "file": "06-early-colony/1855-formation-of-the-moran-co-sugar-refinery.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Establishment of the Praya Reclamation Scheme",
+      "year": 1851,
+      "date": "1851",
+      "summary": "Initiated to expand flat usable waterfront land along Victoria Harbour, this major engineering effort transformed the physical geography and commercial capacity of early Victoria City.",
+      "status": "done",
+      "file": "06-early-colony/1851-establishment-of-the-praya-reclamation-scheme.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Arrival of the Sisters of St. Paul de Chartres",
+      "year": 1848,
+      "date": "1848",
+      "summary": "The arrival of these Catholic nuns initiated organized social welfare, orphanage care, and educational services for destitute women and children in the colony.",
+      "status": "done",
+      "file": "06-early-colony/1848-arrival-of-the-sisters-of-st-paul-de-chartres.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Promulgation of the First Colonial Land Regulations",
+      "year": 1844,
+      "date": "1844",
+      "summary": "The formalization of leasehold systems and municipal land management established the legal bedrock for urban property development and colonial public finance.",
+      "status": "done",
+      "file": "06-early-colony/1844-promulgation-of-the-first-colonial-land-regulations.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Establishment of the Public Dispensary for Chinese",
+      "year": 1858,
+      "date": "1858",
+      "summary": "Created to address glaring health disparities, this facility marked an early institutional effort to provide Western medical care to the impoverished indigenous Chinese community.",
+      "status": "done",
+      "file": "06-early-colony/1858-establishment-of-the-public-dispensary-for-chinese.md"
+    },
+    {
+      "era": "06-early-colony",
+      "title": "Formation of the Chinese Merchant Guild System",
+      "year": 1850,
+      "date": "1850",
+      "summary": "The self-organization of local merchant guilds provided vital social cohesion, dispute resolution, and economic self-governance for the rapidly growing Chinese immigrant population.",
+      "status": "done",
+      "file": "06-early-colony/1850-formation-of-the-chinese-merchant-guild-system.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Establishment of the Equal Opportunities Commission",
+      "year": 1996,
+      "date": "1996-09-20",
+      "summary": "The statutory body was set up to eliminate discrimination ahead of the handover, marking a shift toward institutional human rights protections in Hong Kong.",
+      "status": "done",
+      "file": "14-early-hksar/1996-establishment-of-the-equal-opportunities-commission.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Asian Financial Crisis Property Market Crash",
+      "year": 1997,
+      "date": "1997-10-01",
+      "summary": "The onset of the Asian financial turmoil immediately following the handover triggered a severe property crash, plunging thousands into negative equity and reshaping the local economy.",
+      "status": "done",
+      "file": "14-early-hksar/1997-asian-financial-crisis-property-market-crash.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Opening of the Hong Kong Museum of History",
+      "year": 1998,
+      "date": "1998-07-01",
+      "summary": "The modern facility opened in Tsim Sha Tsui, providing a newly curated narrative of Hong Kong's local identity and heritage as a distinct society.",
+      "status": "done",
+      "file": "14-early-hksar/1998-opening-of-the-hong-kong-museum-of-history.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Phytophthora Outbreak and Agriculture Shift",
+      "year": 1999,
+      "date": "1999-05-15",
+      "summary": "A major agricultural crisis affected local crops, accelerating the territory's transition from a primary producer to a fully service-oriented and import-reliant economy.",
+      "status": "done",
+      "file": "14-early-hksar/1999-phytophthora-outbreak-and-agriculture-shift.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Discontinuation of the Two-Cent Coin",
+      "year": 2000,
+      "date": "2000-01-01",
+      "summary": "The formal phasing out of the rare denomination reflected the modernization of daily commerce and the growing prevalence of electronic payment methods like the Octopus card.",
+      "status": "done",
+      "file": "14-early-hksar/2000-discontinuation-of-the-two-cent-coin.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Launch of the Quality Education Fund Projects",
+      "year": 2001,
+      "date": "2001-03-12",
+      "summary": "Widespread funding injections catalyzed school-based reforms, modernizing classrooms and integrating information technology into Hong Kong's traditional education system.",
+      "status": "done",
+      "file": "14-early-hksar/2001-launch-of-the-quality-education-fund-projects.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Restructuring of the Municipal Councils",
+      "year": 2000,
+      "date": "2000-01-01",
+      "summary": "The abolition of the Urban Council and Regional Council centralized municipal services under the government, marking a significant setback for municipal-level democratic participation.",
+      "status": "done",
+      "file": "14-early-hksar/2000-restructuring-of-the-municipal-councils.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Launch of the Hong Kong Design Centre",
+      "year": 2002,
+      "date": "2002-04-18",
+      "summary": "Established to champion design excellence, it signaled the government's strategic push to diversify the economy into creative industries and innovation.",
+      "status": "done",
+      "file": "14-early-hksar/2002-launch-of-the-hong-kong-design-centre.md"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Outbreak of Amoy Gardens SARS Cluster",
+      "year": 2003,
+      "date": "2003-03-30",
+      "summary": "Faulty sewage designs in a dense residential estate caused a massive super-spreader event, exposing public health vulnerabilities and transforming urban hygiene standards.",
+      "status": "pending"
+    },
+    {
+      "era": "14-early-hksar",
+      "title": "Establishment of the Committee on the Promotion of Civic Education",
+      "year": 2004,
+      "date": "2004-06-15",
+      "summary": "The government body ramped up efforts to foster national identity and patriotism among youth, sparking ongoing debates over national versus local civic values.",
+      "status": "pending"
     }
   ],
   "entities": {
@@ -9340,7 +9518,20 @@
         "Enactment of the Female Domestic Service Ordinance Amendment",
         "Establishment of the Ho Tung Workshop and Philanthropic Endeavors",
         "Founding of the Hong Kong Chinese Women's Club",
-        "Establishment of the Post Office Savings Bank"
+        "Establishment of the Post Office Savings Bank",
+        "Launch of the First Regular Steamship Service",
+        "Publication of Early English-Chinese Phrasebooks and Dictionaries",
+        "Opening of the Morrison Education Society School",
+        "Formation of the Moran & Co. Sugar Refinery",
+        "Arrival of the Sisters of St. Paul de Chartres",
+        "Formation of the Chinese Merchant Guild System",
+        "Establishment of the Equal Opportunities Commission",
+        "Asian Financial Crisis Property Market Crash",
+        "Opening of the Hong Kong Museum of History",
+        "Discontinuation of the Two-Cent Coin",
+        "Launch of the Quality Education Fund Projects",
+        "Restructuring of the Municipal Councils",
+        "Launch of the Hong Kong Design Centre"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -10083,7 +10274,8 @@
         "Opening of the Plover Cove Reservoir",
         "Expansion of the Tang-Era Incense Trade",
         "Refinement of Pearl Oyster Conservation Practices",
-        "First Recorded Pearl Farming Tax Reforms"
+        "First Recorded Pearl Farming Tax Reforms",
+        "Phytophthora Outbreak and Agriculture Shift"
       ],
       "status": "done",
       "file": "Places/tai-po.md"
@@ -10166,7 +10358,8 @@
         "Expansion of Song Administrative Presence in Tuen Mun",
         "Establishment of the Song Maritime Customs Post",
         "The Execution of the Opium Merchant in Macau",
-        "Introduction of the First Colonial Legal Code in Hong Kong"
+        "Introduction of the First Colonial Legal Code in Hong Kong",
+        "Publication of Early English-Chinese Phrasebooks and Dictionaries"
       ],
       "status": "done",
       "file": "Places/guangzhou.md"
@@ -10329,7 +10522,8 @@
         "Launch of the Lady MacLehose Holiday Village",
         "Passage of the Matrimonial Causes Ordinance Reform",
         "Establishment of the Public Enquiry Service Centres",
-        "Implementation of the New Territories Block Crown Lease System"
+        "Implementation of the New Territories Block Crown Lease System",
+        "Phytophthora Outbreak and Agriculture Shift"
       ],
       "status": "done",
       "file": "Places/new-territories.md"
@@ -10427,7 +10621,8 @@
         "Robert Morrison Publishes First Chinese-English Dictionary",
         "Establishment of the General Chamber of Commerce in Canton",
         "Introduction of Steam-Powered River Vessels",
-        "Rise of Protestant Press and Printing in the Delta"
+        "Rise of Protestant Press and Printing in the Delta",
+        "Launch of the First Regular Steamship Service"
       ],
       "status": "done",
       "file": "Places/canton.md"
@@ -10840,7 +11035,8 @@
         "Inauguration of the Star Ferry Service",
         "First Chinese Manufacturers' Association Exhibition",
         "Opening of the Tsim Sha Tsui Police Station",
-        "Inauguration of the Cultural Centre Design and Construction"
+        "Inauguration of the Cultural Centre Design and Construction",
+        "Opening of the Hong Kong Museum of History"
       ],
       "status": "done",
       "file": "Places/tsim-sha-tsui.md"
@@ -10872,7 +11068,8 @@
       "name": "Shek Pai Wan (石排灣)",
       "kind": "place",
       "mentions": [
-        "Expansion of the Guanxiang Incense Trade"
+        "Expansion of the Guanxiang Incense Trade",
+        "Establishment of the Aberdeen Dockyards"
       ],
       "status": "done",
       "file": "Places/shek-pai-wan.md"
@@ -11034,7 +11231,8 @@
         "The Tuen Mun-Yuen Long Light Rail Planning Begins",
         "Formalization of Clan-Based Militia Defenses",
         "The Founding of the Yuen Long Market Fair",
-        "Northern Metropolis Development Strategy Announced"
+        "Northern Metropolis Development Strategy Announced",
+        "Phytophthora Outbreak and Agriculture Shift"
       ],
       "status": "done",
       "file": "Places/yuen-long.md"
@@ -11451,7 +11649,9 @@
         "Morrison Education Society School moves to Hong Kong",
         "Establishment of the Select Committee of Superintendents of Trade",
         "Establishment of the Morrison Education Society",
-        "Rise of Protestant Press and Printing in the Delta"
+        "Rise of Protestant Press and Printing in the Delta",
+        "Publication of Early English-Chinese Phrasebooks and Dictionaries",
+        "Opening of the Morrison Education Society School"
       ],
       "status": "done",
       "file": "Places/macao.md"
@@ -11608,7 +11808,8 @@
         "Inauguration of the Cultural Centre Design and Construction",
         "Establishment of the Jockey Club Tak Shing Pier Ferry Services",
         "Lamma Island Ferry Collision",
-        "Inauguration of the Yaumatei Typhoon Shelter"
+        "Inauguration of the Yaumatei Typhoon Shelter",
+        "Establishment of the Praya Reclamation Scheme"
       ],
       "status": "done",
       "file": "Places/victoria-harbour.md"
@@ -11683,7 +11884,11 @@
         "Construction of the First Government House",
         "First Public Land Auction of Marine Lots",
         "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
-        "Founding of the St. Stephen's College"
+        "Founding of the St. Stephen's College",
+        "Establishment of the Aberdeen Dockyards",
+        "Establishment of the Praya Reclamation Scheme",
+        "Promulgation of the First Colonial Land Regulations",
+        "Establishment of the Public Dispensary for Chinese"
       ],
       "status": "done",
       "file": "Places/hong-kong-island.md"
@@ -11715,7 +11920,8 @@
         "Negotiation of the Convention of Chuenpi",
         "First Major Outbreak of Hong Kong Fever",
         "Introduction of the first currency regulations",
-        "Formation of the Hong Kong Legislative Council"
+        "Formation of the Hong Kong Legislative Council",
+        "Promulgation of the First Colonial Land Regulations"
       ],
       "status": "done",
       "file": "People/henry-pottinger.md"
@@ -11777,7 +11983,8 @@
         "Construction of the Aberdeen Reservoir",
         "Development of the Tanka Fishing Cooperative Networks",
         "Establishment of the Grantham Hospital for Tuberculosis",
-        "Sinking of the Iconic Jumbo Floating Restaurant"
+        "Sinking of the Iconic Jumbo Floating Restaurant",
+        "Establishment of the Aberdeen Dockyards"
       ],
       "status": "done",
       "file": "Places/aberdeen.md"
@@ -11851,7 +12058,9 @@
         "The Early Role of Compradors as Cultural Brokers",
         "Founding of the Hongkong Hotel",
         "Opening of the Tsim Sha Tsui Police Station",
-        "Completion of the Central Market Building"
+        "Completion of the Central Market Building",
+        "Establishment of the Praya Reclamation Scheme",
+        "Promulgation of the First Colonial Land Regulations"
       ],
       "status": "done",
       "file": "Places/victoria-city.md"
@@ -12158,7 +12367,8 @@
         "Passage of the Chinese Passengers Act",
         "Formalization of the Tepo neighborhood headman system",
         "Passage of the Opium Ordinance",
-        "Establishment of the Supreme Court of Hong Kong"
+        "Establishment of the Supreme Court of Hong Kong",
+        "Establishment of the Praya Reclamation Scheme"
       ],
       "status": "done",
       "file": "People/john-bowring.md"
@@ -12506,7 +12716,8 @@
         "Inauguration of the Victoria Market",
         "Opening of the Airport Railway",
         "MTR Shatin to Central Link Scandal",
-        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm"
+        "Establishment of the Dairy Farm Company's Pok Fu Lam Farm",
+        "Asian Financial Crisis Property Market Crash"
       ],
       "status": "done",
       "file": "Places/central.md"
@@ -12694,7 +12905,8 @@
         "Alexandre Yersin Discovers the Plague Bacillus",
         "Passage of the Venereal Diseases Ordinance",
         "Establishment of the Sanitary Board",
-        "Opening of the Kennedy Town Slaughterhouse"
+        "Opening of the Kennedy Town Slaughterhouse",
+        "Establishment of the Public Dispensary for Chinese"
       ],
       "status": "done",
       "file": "Places/tai-ping-shan.md"
@@ -14339,7 +14551,10 @@
         "Opening of the Airport Railway",
         "The Cyberport Controversial Single Tender Process",
         "Opening of the Hong Kong Central Library",
-        "The Founding of the Hong Kong Creative Industries"
+        "The Founding of the Hong Kong Creative Industries",
+        "Asian Financial Crisis Property Market Crash",
+        "Launch of the Quality Education Fund Projects",
+        "Restructuring of the Municipal Councils"
       ],
       "status": "done",
       "file": "People/tung-chee-hwa.md"
@@ -14408,7 +14623,8 @@
       "kind": "person",
       "mentions": [
         "Defense of the Hong Kong Dollar Peg",
-        "Establishment of the Hong Kong Monetary Authority"
+        "Establishment of the Hong Kong Monetary Authority",
+        "Asian Financial Crisis Property Market Crash"
       ],
       "status": "done",
       "file": "People/joseph-yam.md"
@@ -15300,7 +15516,8 @@
       "kind": "person",
       "mentions": [
         "Rise of the first Chinese comprador networks",
-        "Morrison Education Society School moves to Hong Kong"
+        "Morrison Education Society School moves to Hong Kong",
+        "Opening of the Morrison Education Society School"
       ],
       "status": "done",
       "file": "People/tong-king-sing.md"
@@ -16478,7 +16695,9 @@
         "Establishment of the Morrison Education Society School",
         "The First Protestant Missionaries in the Delta",
         "Robert Morrison Publishes First Chinese-English Dictionary",
-        "Rise of Protestant Press and Printing in the Delta"
+        "Rise of Protestant Press and Printing in the Delta",
+        "Publication of Early English-Chinese Phrasebooks and Dictionaries",
+        "Opening of the Morrison Education Society School"
       ],
       "status": "done",
       "file": "People/robert-morrison.md"
@@ -16487,7 +16706,8 @@
       "name": "Samuel Robbins Brown (勃朗)",
       "kind": "person",
       "mentions": [
-        "Morrison Education Society School moves to Hong Kong"
+        "Morrison Education Society School moves to Hong Kong",
+        "Opening of the Morrison Education Society School"
       ],
       "status": "done",
       "file": "People/samuel-robbins-brown.md"
@@ -19206,6 +19426,59 @@
       "kind": "place",
       "mentions": [
         "Implementation of the New Territories Block Crown Lease System"
+      ],
+      "status": "done",
+      "file": "Places/new-kowloon.md"
+    },
+    "person:john-dent": {
+      "name": "John Dent (甸特)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Aberdeen Dockyards"
+      ],
+      "status": "done",
+      "file": "People/john-dent.md"
+    },
+    "person:moran-co": {
+      "name": "Moran & Co. (摩理臣洋行)",
+      "kind": "person",
+      "mentions": [
+        "Formation of the Moran & Co. Sugar Refinery"
+      ],
+      "status": "done",
+      "file": "People/moran-co.md"
+    },
+    "person:sisters-of-st-paul-de-chartres": {
+      "name": "Sisters of St. Paul de Chartres (沙爾德聖保祿女修會)",
+      "kind": "person",
+      "mentions": [
+        "Arrival of the Sisters of St. Paul de Chartres"
+      ],
+      "status": "done",
+      "file": "People/sisters-of-st-paul-de-chartres.md"
+    },
+    "place:man-mo-temple": {
+      "name": "Man Mo Temple (文武廟)",
+      "kind": "place",
+      "mentions": [
+        "Formation of the Chinese Merchant Guild System"
+      ],
+      "status": "done",
+      "file": "Places/man-mo-temple.md"
+    },
+    "person:anna-wu": {
+      "name": "Anna Wu (胡紅玉)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Equal Opportunities Commission"
+      ],
+      "status": "pending"
+    },
+    "place:kowloon-tong": {
+      "name": "Kowloon Tong (九龍塘)",
+      "kind": "place",
+      "mentions": [
+        "Launch of the Hong Kong Design Centre"
       ],
       "status": "pending"
     }

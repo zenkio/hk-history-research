@@ -53,7 +53,7 @@
     "11-postwar-refugees": {
       "outlined": true,
       "overview": true,
-      "rounds": 3
+      "rounds": 4
     },
     "12-riots-and-reform": {
       "outlined": true,
@@ -8053,7 +8053,8 @@
       "year": 1941,
       "date": "1941-1942",
       "summary": "Systematic confiscation of civilian wealth, bank vaults, and private godowns crippled local merchant networks and destroyed middle-class savings.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1941-mass-looting-of-private-property-and-colonial-banks.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -8061,7 +8062,8 @@
       "year": 1942,
       "date": "1942-1945",
       "summary": "Military authorities institutionalized forced sexual slavery by establishing military brothels, inflicting profound trauma on local and regional women.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1942-establishment-of-controlled-prostitution-and-comfort-stations.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -8069,7 +8071,8 @@
       "year": 1942,
       "date": "1942",
       "summary": "Major educational institutions across the territory were repurposed into military installations, halting schooling for an entire generation of children.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1942-widespread-conversion-of-schools-into-military-barracks.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -8077,7 +8080,8 @@
       "year": 1942,
       "date": "1942-1943",
       "summary": "Public symbols of British colonial rule were systematically dismantled and melted down to erase Western influence from the urban landscape.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1942-destruction-of-british-war-memorials-and-colonial-heritage.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -8085,7 +8089,8 @@
       "year": 1941,
       "date": "1941-1945",
       "summary": "Independent newspapers were banned or absorbed into propaganda outlets, suppressing free speech and dictating the flow of public information.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1941-censorship-and-purge-of-the-pre-war-press.md"
     },
     {
       "era": "10-japanese-occupation",
@@ -8093,7 +8098,98 @@
       "year": 1945,
       "date": "1945",
       "summary": "The sudden collapse of the military yen left worthless paper currency in circulation, necessitating an urgent return to stable British coinage.",
-      "status": "pending"
+      "status": "done",
+      "file": "10-japanese-occupation/1945-post-war-economic-chaos-and-currency-replacement.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Hong Kong Air Cadet Corps",
+      "year": 1946,
+      "date": "1946-09-01",
+      "summary": "Founded to provide disciplined youth training, reflecting the postwar reconstruction of civic institutions and youth engagement.",
+      "status": "done",
+      "file": "11-postwar-refugees/1946-establishment-of-the-hong-kong-air-cadet-corps.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Formation of the Hong Kong Sea Cadet Corps",
+      "year": 1950,
+      "date": "1950-02-12",
+      "summary": "Established to foster maritime skills and discipline among local youth during the early Cold War era.",
+      "status": "done",
+      "file": "11-postwar-refugees/1950-formation-of-the-hong-kong-sea-cadet-corps.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Opening of Victoria Park in Causeway Bay",
+      "year": 1957,
+      "date": "1957-10-14",
+      "summary": "Opened on reclaimed land to provide much-needed public recreational space for Hong Kong's rapidly growing urban population.",
+      "status": "done",
+      "file": "11-postwar-refugees/1957-opening-of-victoria-park-in-causeway-bay.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Independent Police Force Band",
+      "year": 1951,
+      "date": "1951",
+      "summary": "Formed to boost public morale and community relations through music during a period of intense social transition.",
+      "status": "done",
+      "file": "11-postwar-refugees/1951-establishment-of-the-independent-police-force-band.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Inauguration of the Lady MacLehose Clinic",
+      "year": 1953,
+      "date": "1953",
+      "summary": "Opened to address the severe healthcare challenges and widespread infectious diseases among impoverished refugees.",
+      "status": "done",
+      "file": "11-postwar-refugees/1953-inauguration-of-the-lady-maclehose-clinic.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Formation of the Hong Kong Girl Guides Association Headquarters",
+      "year": 1950,
+      "date": "1950",
+      "summary": "Marked the revival and expansion of youth development organizations catering to the postwar generation.",
+      "status": "done",
+      "file": "11-postwar-refugees/1950-formation-of-the-hong-kong-girl-guides-association-headquarters.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Hong Kong Sea School in Stanley",
+      "year": 1946,
+      "date": "1946-09-16",
+      "summary": "Founded to provide vocational and nautical training for underprivileged boys, aiding postwar rehabilitation.",
+      "status": "done",
+      "file": "11-postwar-refugees/1946-establishment-of-the-hong-kong-sea-school-in-stanley.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Opening of the Ko Shan Road Playground",
+      "year": 1951,
+      "date": "1951",
+      "summary": "Developed as part of early efforts to create community spaces and alleviate overcrowding in Kowloon.",
+      "status": "done",
+      "file": "11-postwar-refugees/1951-opening-of-the-ko-shan-road-playground.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Establishment of the Grantham Hospital for Tuberculosis",
+      "year": 1957,
+      "date": "1957-01-08",
+      "summary": "Opened to combat the devastating tuberculosis epidemic plaguing the refugee population and working class.",
+      "status": "done",
+      "file": "11-postwar-refugees/1957-establishment-of-the-grantham-hospital-for-tuberculosis.md"
+    },
+    {
+      "era": "11-postwar-refugees",
+      "title": "Launch of the First Annual Hong Kong Arts Festival Precursor",
+      "year": 1958,
+      "date": "1958",
+      "summary": "Began cultural showcases that nurtured local artistic talents and enriched daily life amidst economic hardships.",
+      "status": "done",
+      "file": "11-postwar-refugees/1958-launch-of-the-first-annual-hong-kong-arts-festival-precursor.md"
     }
   ],
   "entities": {
@@ -8680,7 +8776,21 @@
         "Promulgation of the Married Women's Property Ordinance",
         "Establishment of the Ho Tung Engineering Workshop",
         "Closure of Dairy Farm and Collapse of Livestock Industry",
-        "Seizure and Conversion of Hong Kong University Buildings"
+        "Seizure and Conversion of Hong Kong University Buildings",
+        "Mass Looting of Private Property and Colonial Banks",
+        "Establishment of Controlled Prostitution and Comfort Stations",
+        "Destruction of British War Memorials and Colonial Heritage",
+        "Censorship and Purge of the Pre-War Press",
+        "Post-War Economic Chaos and Currency Replacement",
+        "Establishment of the Hong Kong Air Cadet Corps",
+        "Formation of the Hong Kong Sea Cadet Corps",
+        "Opening of Victoria Park in Causeway Bay",
+        "Establishment of the Independent Police Force Band",
+        "Inauguration of the Lady MacLehose Clinic",
+        "Formation of the Hong Kong Girl Guides Association Headquarters",
+        "Establishment of the Hong Kong Sea School in Stanley",
+        "Establishment of the Grantham Hospital for Tuberculosis",
+        "Launch of the First Annual Hong Kong Arts Festival Precursor"
       ],
       "status": "done",
       "file": "Places/hong-kong.md"
@@ -9321,7 +9431,8 @@
         "Implementation of the New Territories Land Exchange Entitlements",
         "Integration of Coastal Salt Worker Guilds",
         "Establishment of the Roman Catholic Prefecture Apostolic",
-        "Publication of the Chinese Mail Newspaper"
+        "Publication of the Chinese Mail Newspaper",
+        "Opening of the Ko Shan Road Playground"
       ],
       "status": "done",
       "file": "Places/kowloon.md"
@@ -11056,7 +11167,9 @@
         "Establishment of the Tung Wah Hospital",
         "Dismantling of Bronze Royal Statues for Japanese War Scrap",
         "Demarcation of Victoria City Boundaries",
-        "Establishment of the Hong Kong Club's New Building"
+        "Establishment of the Hong Kong Club's New Building",
+        "Destruction of British War Memorials and Colonial Heritage",
+        "Opening of Victoria Park in Causeway Bay"
       ],
       "status": "done",
       "file": "People/queen-victoria.md"
@@ -11070,7 +11183,8 @@
         "Establishment of the Hongkong and Whampoa Dock Company",
         "Establishment of the Aberdeen Industrial School",
         "Construction of the Aberdeen Reservoir",
-        "Development of the Tanka Fishing Cooperative Networks"
+        "Development of the Tanka Fishing Cooperative Networks",
+        "Establishment of the Grantham Hospital for Tuberculosis"
       ],
       "status": "done",
       "file": "Places/aberdeen.md"
@@ -11957,7 +12071,8 @@
         "Demarcation of Victoria City Boundaries",
         "Establishment of the Urban Renewal Authority",
         "Mass Mobilization for the Protection of Victoria Harbour",
-        "Establishment of the Hong Kong Academy for Performing Arts"
+        "Establishment of the Hong Kong Academy for Performing Arts",
+        "Establishment of Controlled Prostitution and Comfort Stations"
       ],
       "status": "done",
       "file": "Places/wan-chai.md"
@@ -12625,7 +12740,8 @@
       "mentions": [
         "Battle of Hong Kong and Japanese Occupation",
         "St. Stephen's College Massacre",
-        "Establishment of St. Stephen's College"
+        "Establishment of St. Stephen's College",
+        "Establishment of the Hong Kong Sea School in Stanley"
       ],
       "status": "done",
       "file": "Places/stanley.md"
@@ -12736,7 +12852,8 @@
         "Appointment of Military Governor Rensuke Isogai",
         "Launch of Cultural Japanization Campaign",
         "Imperial Japanese Broadcast Announcing Surrender",
-        "Systematic Japanese Renaming of Hong Kong Streets and Landmarks"
+        "Systematic Japanese Renaming of Hong Kong Streets and Landmarks",
+        "Censorship and Purge of the Pre-War Press"
       ],
       "status": "done",
       "file": "People/rensuke-isogai.md"
@@ -12836,7 +12953,8 @@
         "Groundbreaking of the Hong Kong Shinto Shrine on Mount Cameron",
         "Forced Evacuation of Destitute Residents to Guangdong",
         "Prohibition of the English Language in Public",
-        "The Famine-Induced De-urbanization of Kowloon"
+        "The Famine-Induced De-urbanization of Kowloon",
+        "Mass Looting of Private Property and Colonial Banks"
       ],
       "status": "done",
       "file": "People/isogai-rensuke.md"
@@ -12855,7 +12973,8 @@
       "kind": "person",
       "mentions": [
         "Imperial Japanese Broadcast Announcing Surrender",
-        "Post-Surrender Repatriation of Displaced Wartime Survivors"
+        "Post-Surrender Repatriation of Displaced Wartime Survivors",
+        "Post-War Economic Chaos and Currency Replacement"
       ],
       "status": "done",
       "file": "People/sir-cecil-harcourt.md"
@@ -13444,7 +13563,8 @@
         "Inauguration of the Chinese Manufacturers' Association Exhibition",
         "First 'July 1st' Rally Mass Mobilization",
         "Closure of the 64 Museum",
-        "Opening of the Hong Kong Central Library"
+        "Opening of the Hong Kong Central Library",
+        "Opening of Victoria Park in Causeway Bay"
       ],
       "status": "done",
       "file": "Places/victoria-park.md"
@@ -13838,7 +13958,8 @@
         "Opening of the Queen's College New Campus",
         "Establishment of the Liaison Office National Security Department",
         "Opening of the Royal Hong Kong Yacht Club at Kellett Island",
-        "Opening of the Hong Kong Central Library"
+        "Opening of the Hong Kong Central Library",
+        "Opening of Victoria Park in Causeway Bay"
       ],
       "status": "done",
       "file": "Places/causeway-bay.md"
@@ -14409,7 +14530,8 @@
         "The Siege of the Hong Kong Polytechnic University",
         "Opening of the KCRC West Rail Line",
         "Opening of the Hong Kong Technical College",
-        "Opening of the Hong Kong Polytechnic"
+        "Opening of the Hong Kong Polytechnic",
+        "Opening of the Ko Shan Road Playground"
       ],
       "status": "done",
       "file": "Places/hung-hom.md"
@@ -15088,7 +15210,8 @@
       "kind": "place",
       "mentions": [
         "Dismantling of Bronze Royal Statues for Japanese War Scrap",
-        "Establishment of the Hong Kong Club's New Building"
+        "Establishment of the Hong Kong Club's New Building",
+        "Destruction of British War Memorials and Colonial Heritage"
       ],
       "status": "done",
       "file": "Places/statue-square.md"
@@ -15346,7 +15469,8 @@
       "kind": "place",
       "mentions": [
         "Opening of the Mid-Levels Escalator",
-        "Opening of the King Yin Lei Mansion"
+        "Opening of the King Yin Lei Mansion",
+        "Mass Looting of Private Property and Colonial Banks"
       ],
       "status": "done",
       "file": "Places/mid-levels.md"
@@ -16194,7 +16318,8 @@
       "kind": "place",
       "mentions": [
         "Publication of Eitel's Ordinance No. 1 of 1888",
-        "The Peak District Rezoning for Japanese Officials"
+        "The Peak District Rezoning for Japanese Officials",
+        "Mass Looting of Private Property and Colonial Banks"
       ],
       "status": "done",
       "file": "Places/the-peak.md"
@@ -18029,6 +18154,78 @@
       ],
       "status": "done",
       "file": "People/robert-ho-tung.md"
+    },
+    "place:kings-college": {
+      "name": "King's College (英皇書院)",
+      "kind": "place",
+      "mentions": [
+        "Widespread Conversion of Schools into Military Barracks"
+      ],
+      "status": "done",
+      "file": "Places/kings-college.md"
+    },
+    "place:diocesan-boys-school": {
+      "name": "Diocesan Boys' School (拔萃男書院)",
+      "kind": "place",
+      "mentions": [
+        "Widespread Conversion of Schools into Military Barracks"
+      ],
+      "status": "done",
+      "file": "Places/diocesan-boys-school.md"
+    },
+    "person:royal-navy": {
+      "name": "Royal Navy (英國皇家海軍)",
+      "kind": "person",
+      "mentions": [
+        "Formation of the Hong Kong Sea Cadet Corps"
+      ],
+      "status": "done",
+      "file": "People/royal-navy.md"
+    },
+    "person:lady-maclehose": {
+      "name": "Lady MacLehose (麥理浩夫人)",
+      "kind": "person",
+      "mentions": [
+        "Inauguration of the Lady MacLehose Clinic"
+      ],
+      "status": "done",
+      "file": "People/lady-maclehose.md"
+    },
+    "place:ko-shan-road-playground": {
+      "name": "Ko Shan Road Playground (高山道遊樂場)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Ko Shan Road Playground"
+      ],
+      "status": "done",
+      "file": "Places/ko-shan-road-playground.md"
+    },
+    "place:ma-tau-wai": {
+      "name": "Ma Tau Wai (馬頭角)",
+      "kind": "place",
+      "mentions": [
+        "Opening of the Ko Shan Road Playground"
+      ],
+      "status": "done",
+      "file": "Places/ma-tau-wai.md"
+    },
+    "person:sir-alexander-grantham": {
+      "name": "Sir Alexander Grantham (葛量洪)",
+      "kind": "person",
+      "mentions": [
+        "Establishment of the Grantham Hospital for Tuberculosis"
+      ],
+      "status": "done",
+      "file": "People/sir-alexander-grantham.md"
+    },
+    "place:grantham-hospital": {
+      "name": "Grantham Hospital (葛量洪醫院)",
+      "kind": "place",
+      "mentions": [
+        "Establishment of the Grantham Hospital for Tuberculosis"
+      ],
+      "status": "done",
+      "file": "Places/grantham-hospital.md"
     }
   }
 }

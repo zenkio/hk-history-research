@@ -4,10 +4,11 @@ title_zh: "張保仔投降"
 date: 1810-04-20
 year: 1810
 era: "Canton trade and the First Opium War"
-tags: ["1810", "ai-draft", "cheung-po-tsai", "lantau-island", "opium-war", "piracy", "qing-dynasty"]
+tags: ["evidence-none", "1810", "ai-draft", "cheung-po-tsai", "lantau-island", "opium-war", "piracy", "qing-dynasty"]
 summary: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau Island."
 description: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The surrender marked a major turning point in the maritime history of the Pearl 
 - [ ] Cheung Po Tsai formally surrendered his fleet on April 20, 1810, at Tung Chung.
 - [ ] Bai Yanhu personally accepted the surrender on behalf of the Qing government.
 - [ ] Cheung Po Tsai was subsequently integrated into the Qing naval military structure.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+
+**Still needed:** Evidence for all claims (1, 2, and 3) is still needed as the candidate sources are unrelated to Cheung Po Tsai.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

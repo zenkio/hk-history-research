@@ -4,10 +4,11 @@ title_zh: "香港宣佈成為英國皇家殖民地"
 date: 1843-06-26
 year: 1843
 era: "The early colony"
-tags: ["1843", "ai-draft", "british-empire", "crown-colony", "early-colony", "first-opium-war", "henry-pottinger", "treaty-of-nanking"]
+tags: ["evidence-a", "1843", "ai-draft", "british-empire", "crown-colony", "early-colony", "first-opium-war", "henry-pottinger", "treaty-of-nanking"]
 summary: "On June 26, 1843, Hong Kong was formally proclaimed a British Crown Colony, and Sir Henry Pottinger was sworn in as its first Governor, marking the institutional beginning of British administration."
 description: "On June 26, 1843, Hong Kong was formally proclaimed a British Crown Colony, and Sir Henry Pottinger was sworn in as its first Governor, marking the institutional beginning of British administration."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -51,5 +52,16 @@ This event transformed a temporary military encampment into a permanent British 
 - [ ] Ratifications of the Treaty of Nanking were officially exchanged on June 26, 1843.
 - [ ] Sir Henry Pottinger was sworn in as the first Governor on the exact date of June 26, 1843.
 - [ ] The specific structural details of the early Executive and Legislative Councils established by the 1843 royal charter.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Royal Charter of the Colony of Hong Kong, 5 April 1843, UK National Archives, CO 129/2; *The Friend of China and Hongkong Gazette*, 29 June 1843. [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE) [link ✗](https://en.wikisource.org/wiki/Europe\_in\_China/Chapter\_13) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/2)
+- **Grade B:** Endacott, G.B. (1964), *Government and People in Hong Kong 1841–1962*, Hong Kong University Press. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/role-of-hong-kong-educated-chinese-in-the-shaping-of-modern-china/5187A4F296313C414F5CD4CB5BC9F649) [link ✗](https://etheses.whiterose.ac.uk/id/eprint/23889/1/Florence%20Mok\_PhD%20Thesis.pdf)
+- **Grade C:** Hong Kong Government Constitutional and Mainland Affairs Bureau Records.
+
+**Disputes or myths:** Often confused with the 1841 Possession Point landing, formal Crown Colony status and constitution began only with treaty ratification and charter reading on June 26, 1843.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

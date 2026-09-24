@@ -4,10 +4,11 @@ title_zh: "《中國之友》報創刊"
 date: 1842-03-17
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["1842", "ai-draft", "british-colonial-history", "first-opium-war", "journalism", "mercantilism", "opium-war", "print-media"]
+tags: ["evidence-a", "1842", "ai-draft", "british-colonial-history", "first-opium-war", "journalism", "mercantilism", "opium-war", "print-media"]
 summary: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
 description: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,16 @@ The launch of the newspaper marked a critical milestone in the development of Ho
 
 - [ ] The exact founding date of The Friend of China was March 17, 1842.
 - [ ] George Wyndham Cooke was the initial founder and editor of the newspaper.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *The Friend of China and Hongkong Gazette*, Vol. 1, No. 1 (24 March 1842); UK National Archives, CO 129/2. [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE) [link ✗](https://en.wikisource.org/wiki/Europe\_in\_China/Chapter\_13) [link ✓](https://houghton.hk/china1793-1844-part-12/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/2)
+- **Grade B:** Sweeting, A. (1990), *Education in Hong Kong, Pre-1841 to 1941: Fact and Opinion*, Hong Kong University Press. [link ✗](https://theartsjournal.org/index.php/site/article/download/528/302/1533)
+- **Grade C:** Hong Kong Newspaper Collection, HKU Libraries Digital Repository, https://lib.hku.hk. [link ✓](https://lib.hku.hk) [link ✗](https://wiki.fibis.org/w/Hong\_Kong) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+
+**Disputes or myths:** Often categorized as an independent press organ, it functioned under direct government financial patronage until the official *Hong Kong Government Gazette* was established.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

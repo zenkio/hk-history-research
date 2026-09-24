@@ -4,10 +4,11 @@ title_zh: "馬禮遜學堂遷港"
 date: 1843-01-01
 year: 1843
 era: "The early colony"
-tags: ["1843", "ai-draft", "bilingualism", "early-colony", "education", "missionaries"]
+tags: ["evidence-b", "1843", "ai-draft", "bilingualism", "early-colony", "education", "missionaries"]
 summary: "In 1843, the Morrison Education Society School relocated from Macao to Hong Kong, marking an early milestone in the establishment of Western-style education in the newly founded British colony."
 description: "In 1843, the Morrison Education Society School relocated from Macao to Hong Kong, marking an early milestone in the establishment of Western-style education in the newly founded British colony."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,16 @@ The relocation is widely regarded by historians as the foundational moment for W
 
 - [ ] The Morrison Education Society School officially completed its relocation from Macao to Hong Kong in the year 1843.
 - [ ] Yung Wing and Tong King-sing were among the students who attended the school during its early years.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Morrison Education Society *Fourth Annual Report*, in *The Chinese Repository*, Vol. 11, No. 10 (October 1842), pp. 541–556. [link ✗](https://www.researchgate.net/publication/227603474\_Hong\_Kong's\_New\_English\_Language\_Policy\_in\_Education)
+- **Grade B:** Ng, A.C.H. (1987), *Incidental Leaders: History of Hong Kong Elite*, Hong Kong University Press. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/role-of-hong-kong-educated-chinese-in-the-shaping-of-modern-china/5187A4F296313C414F5CD4CB5BC9F649)
+- **Grade C:** Hong Kong Educational Museum Records. [link ✓](https://dianapang.net/4p2/beyond-church-and-chapels)
+
+**Disputes or myths:** Rejects claims that early education was state-funded; early schooling was constructed and managed entirely by Protestant missionary organization capital.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

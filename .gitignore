@@ -6,3 +6,4 @@ server.log
 pipeline.log
 public/
 __pycache__/
+quartz/.quartz-cache/

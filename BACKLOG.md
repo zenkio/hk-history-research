@@ -51,8 +51,13 @@ A trustworthy, browsable history of Hong Kong where every statement can be trace
 - [x] **P1 Deep Research import** built (`scripts/research_import.py`): link-checks every citation and attaches only rows with a working link. First file (1834–1842) imported: 17 of 25 rows matched pages. DOIs and ISBNs are verified by title against Crossref/Open Library, and `[cite: N]` numbers are resolved to the source list.
 - [ ] **P1 Review `research/unmatched.md`**: missing events found by Deep Research (8 from 1834–1842, e.g. the 1840 expeditionary force and the 1842 Chinese Registration Ordinance). Add the real ones to the plan as new events.
 - [ ] **P1 Owner: run Deep Research prompt 01 for the next eras** (1834–1842 and 1842–1860 done; next 1860–1898).
-- [ ] **P1 Owner: run Deep Research prompt 02 (source map)** once, save as `research/source-map.md`.
-- [ ] **P1 Hong Kong government records as evidence sources.** Today only UK records are searched (National Archives catalogue: CO 129, FO 17). Add, most useful first: HKU Hong Kong Government Reports Online (Gazette 1842–1941, Blue Books, Hansard, Sessional Papers), old HK newspapers (HKPL MMIS), Government Records Service (HKRS catalogue). Use the source map to choose and test them.
+- [x] ~~P1 Owner: run Deep Research prompt 02 (source map)~~: saved as `research/source-map.md` (2026-09-25).
+- [ ] **P1 Hong Kong government records as evidence sources.** Today only UK records are searched (National Archives catalogue: CO 129, FO 17). Candidates from the source map, tested from the sandbox on 2026-09-25 (test again from GitHub Actions before building):
+  - Historical Laws of Hong Kong Online (`oelawhk.lib.hku.hk`, Omeka API) and HKU Digital Repository / Government Reports Online (Gazette, Blue Books, Hansard; OAI-PMH): connection reset from the sandbox; earlier a catalogue search worked. Most valuable, build first.
+  - LegCo open data (Hansard, votes): TLS certificate error from the sandbox.
+  - Trove API v3 (Australian newspapers covering HK): works, needs a free API key (`TROVE_API_KEY`).
+  - Chronicling America: the old JSON search is retired (404); the new loc.gov API timed out.
+  - HKPL MMIS old newspapers (Chinese and English): no public API.
 
 ## Next
 

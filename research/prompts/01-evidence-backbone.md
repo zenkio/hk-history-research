@@ -43,8 +43,13 @@ For each event, one row in this Markdown table:
 |---|---|---|---|---|---|---|---|
 
 - Put full citations in the source cells: title, author or issuing body, date, archive reference, and URL if one exists.
+- **Every URL must point to the specific item**: the catalogue entry, the digitised page, the article or the book record.
+  Never a website's homepage (e.g. not `https://www.pro.gov.hk` or `https://www.hsbc.com`): a script checks each
+  link, and homepage links are ignored. If there is no specific URL, give the archive reference, DOI or ISBN instead.
+- Give a DOI for every journal article and an ISBN for every book where one exists; they are verified automatically.
 - Write "none found" rather than leaving a cell empty or guessing.
 - Do not invent references. If you are unsure a source exists, leave it out.
+- Keep the numbered source list at the end of the answer (the `[cite: N]` numbers must resolve to it).
 
 After the table, add:
 - **## Key sources for this era**: the 5–10 most useful collections, books or archives, with URLs.

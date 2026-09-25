@@ -14,5 +14,7 @@ Prompts:
 
 Rules for results:
 - Keep the table format the prompt asks for; the importer depends on it.
-- Paste the full answer, including the source list with URLs.
+- Paste the full answer, including the numbered source list with URLs at the end
+  (without it, `[cite: N]` references cannot be checked and the row is not attached).
+- To redo an era, upload the new answer under the same file name in `inbox/` (it replaces the old one).
 - One era per file.

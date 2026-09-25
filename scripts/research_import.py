@@ -10,6 +10,7 @@ can cite sources that do not exist, so every reference is checked:
   - "[cite: N]" numbers are resolved through the numbered source list at the end of the
     answer (unwrapping google.com/url redirects) and link-checked; piracy/document-dump
     sites are skipped;
+  - bare homepages (www.hsbc.com) are shown as "?" and never count as verification;
   - UK National Archives references (CO 129/1, FO 17/32, ...) become catalogue search
     links, marked as not independently verified.
 Only rows with at least one verified reference are attached, as a `## Research notes`
@@ -160,6 +161,11 @@ def check_cell(cell, refs):
         urls += [refs[int(n)][1] for n in re.findall(r"\d+", m) if int(n) in refs]
     for u in dict.fromkeys(urls):
         if "doi.org/" in u or SKIP_DOMAINS.search(u):
+            continue
+        if not urllib.parse.urlparse(u).path.strip("/"):
+            # A bare homepage (hsbc.com, www.pro.gov.hk) says where to look, not what was found:
+            # it never verifies a row or raises a grade.
+            out.append(("site", u, None, "homepage only, not a specific record"))
             continue
         out.append(("link", u, link_ok(u), ""))
     for ref in dict.fromkeys(ARCHIVE_RE.findall(cell)):

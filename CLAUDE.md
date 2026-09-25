@@ -97,9 +97,11 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 ## Git workflow
 
 - The owner reviews and merges every pull request; Claude opens them and never pushes to `main`.
-- **One branch per pull request.** Start each new piece of work on a new branch from the latest
-  `origin/main` (`git fetch origin && git checkout -b claude/<short-topic> origin/main`). Never reuse
-  a branch whose pull request has been merged, even for a follow-up.
+- **At most one open pull request from Claude at a time.** While it is open, add further work to
+  that same branch (it is not merged yet) and update its description; don't open a second one.
+- **A new branch after every merge.** Once that pull request is merged, start the next piece of work on
+  a new branch from the latest `origin/main` (`git fetch origin && git checkout -b claude/<short-topic>
+  origin/main`). Never reuse a branch whose pull request has been merged, even for a follow-up.
 - The pipeline commits to `main` every hour, so fetch right before branching and before pushing.
 
 ## Important Constraints

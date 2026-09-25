@@ -276,18 +276,21 @@ def _attach_unlocked(path, block, best_grade, regrade=False):
 GRADING_VERSION = 2  # 2: grade by what a reference is; homepages and encyclopedias never count
 
 
-def import_file(fpath, events, grades, unmatched, regrade=False):
+def import_file(fpath, events, grades, unmatched, regrade=False, regraded=None):
+    """regraded: pages already regraded in this pass; later files only raise their grade."""
+    regraded = set() if regraded is None else regraded
     name = os.path.basename(fpath)
     with open(fpath, encoding="utf-8") as f:
         text = f.read()
     rows, refs = parse_tables(text), reference_list(text)
     print(f"[research] {'regrading' if regrade else 'importing'} {name}: {len(rows)} rows")
-    attached = 0
+    attached, matched = 0, set()
     for row in rows:
         ev = match_page(row, events)
         if not ev:
             unmatched.append((name, row))
             continue
+        matched.add(ev["file"])
         results = [(label, col(row, key), check_cell(col(row, key), refs))
                    for label, key in (("Grade A", "grade a"), ("Grade B", "grade b"), ("Grade C", "grade c"))]
         if not any(ok for _, _, checks in results for _, _, ok, _ in checks):
@@ -295,15 +298,29 @@ def import_file(fpath, events, grades, unmatched, regrade=False):
             path = os.path.join(TIMELINE_DIR, ev["file"])
             if regrade and os.path.exists(path) and f"Deep Research ({name})" in open(path, encoding="utf-8").read():
                 # Notes from an older import that no longer hold up: remove them and their grade.
-                grades[ev["file"]] = attach(path, "", None, regrade=True)
+                grades[ev["file"]] = attach(path, "", None, regrade=ev["file"] not in regraded)
+                regraded.add(ev["file"])
                 print(f"[research] {ev['file']}: notes from {name} removed, grade {grades[ev['file']]}")
             continue
         best = row_grade(results)
         before = grades.get(ev["file"])
-        grades[ev["file"]] = attach(os.path.join(TIMELINE_DIR, ev["file"]), research_block(row, name, results), best, regrade)
+        fresh = regrade and ev["file"] not in regraded
+        grades[ev["file"]] = attach(os.path.join(TIMELINE_DIR, ev["file"]), research_block(row, name, results), best, fresh)
+        regraded.add(ev["file"])
         attached += 1
         change = f" (grade {before} -> {grades[ev['file']]})" if regrade and before != grades[ev["file"]] else ""
         print(f"[research] {ev['file']} <- {col(row, 'event')[:60]}{change}")
+    if regrade:
+        # Notes an older, looser matcher put on a page that no row matches any more.
+        for path in glob.glob(os.path.join(TIMELINE_DIR, "**", "*.md"), recursive=True):
+            rel = os.path.relpath(path, TIMELINE_DIR)
+            if rel in matched or rel in regraded:
+                continue
+            with open(path, encoding="utf-8") as f:
+                if f"Deep Research ({name})" not in f.read():
+                    continue
+            grades[rel] = attach(path, "", None, regrade=True)
+            print(f"[research] {rel}: notes from {name} no longer match this page, removed (grade {grades[rel]})")
     return attached
 
 
@@ -314,8 +331,9 @@ def import_inbox(events, grades):
     done_dir = os.path.join(INBOX, "done")
     meta = state.load("research")
     if meta.get("grading_version", 1) < GRADING_VERSION:
+        regraded = set()
         for fpath in sorted(glob.glob(os.path.join(done_dir, "*.md"))):
-            import_file(fpath, events, grades, [], regrade=True)
+            import_file(fpath, events, grades, [], regrade=True, regraded=regraded)
         meta["grading_version"] = GRADING_VERSION
         state.save("research", meta)
     files = sorted(glob.glob(os.path.join(INBOX, "*.md")))

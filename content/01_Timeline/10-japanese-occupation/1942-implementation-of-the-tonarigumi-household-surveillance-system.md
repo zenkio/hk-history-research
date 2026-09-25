@@ -37,7 +37,7 @@ The establishment of the **Tonarigumi** marked a critical phase in the instituti
 
 ## Claims to verify
 
-- [ ] The exact formal decree date and rollout timeline of the Tonarigumi system across different urban districts of Hong Kong in April 1942.
-- [ ] The specific administrative structure and penalty mechanisms enforced by neighborhood leaders under the Japanese military administration.
+- ❔ The exact formal decree date and rollout timeline of the Tonarigumi system across different urban districts of Hong Kong in April 1942.
+- ❔ The specific administrative structure and penalty mechanisms enforced by neighborhood leaders under the Japanese military administration.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

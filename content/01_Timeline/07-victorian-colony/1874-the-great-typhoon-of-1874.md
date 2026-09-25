@@ -38,8 +38,8 @@ The disaster exposed severe vulnerabilities in Hong Kong's disaster preparedness
 
 ## Claims to verify
 
-- [ ] Verify the exact death toll estimates recorded in colonial police and medical reports from September and October 1874.
-- [ ] Confirm the precise timeline of meteorological advocacy leading from the 1874 typhoon to the founding of the Hong Kong Observatory.
+- ❔ Verify the exact death toll estimates recorded in colonial police and medical reports from September and October 1874.
+- ❔ Confirm the precise timeline of meteorological advocacy leading from the 1874 typhoon to the founding of the Hong Kong Observatory.
 
 ## Photos from this period
 

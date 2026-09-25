@@ -42,7 +42,7 @@ The establishment of the Nanyue Kingdom marked a critical turning point in the h
 
 ## Claims to verify
 
-- [ ] General Zhao Tuo declared the establishment of the Nanyue Kingdom in -204.
-- [ ] The territory of modern Hong Kong was definitively administered under the Nanyue Kingdom during Zhao Tuo's reign.
+- ❔ General Zhao Tuo declared the establishment of the Nanyue Kingdom in -204.
+- ❔ The territory of modern Hong Kong was definitively administered under the Nanyue Kingdom during Zhao Tuo's reign.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

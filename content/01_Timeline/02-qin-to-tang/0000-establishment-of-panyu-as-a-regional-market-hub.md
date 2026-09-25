@@ -38,8 +38,8 @@ The founding of Panyu marked the first step in the formal integration of the Hon
 
 ## Claims to verify
 
-- [ ] The precise extent of Qin administrative jurisdiction over the islands of modern-day Hong Kong.
-- [ ] The archaeological dating of specific salt-processing sites in Tung Wan to the Qin period.
-- [ ] The role of Panyu as a primary commercial hub versus a purely military logistics base in 214 BCE.
+- ❔ The precise extent of Qin administrative jurisdiction over the islands of modern-day Hong Kong.
+- ❔ The archaeological dating of specific salt-processing sites in Tung Wan to the Qin period.
+- ❔ The role of Panyu as a primary commercial hub versus a purely military logistics base in 214 BCE.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

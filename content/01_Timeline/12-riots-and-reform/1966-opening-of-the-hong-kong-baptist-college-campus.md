@@ -38,7 +38,7 @@ The establishment and expansion of tertiary institutions like Baptist College re
 
 ## Claims to verify
 
-- [ ] The Hong Kong Baptist College officially opened its new campus in 1966
-- [ ] The institution was founded in 1956 by the Baptist Convention of Hong Kong
+- ❔ The Hong Kong Baptist College officially opened its new campus in 1966
+- ❔ The institution was founded in 1956 by the Baptist Convention of Hong Kong
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

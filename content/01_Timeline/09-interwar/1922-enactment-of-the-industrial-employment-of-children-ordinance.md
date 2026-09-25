@@ -37,7 +37,7 @@ Historians view the **1922** ordinance as a pivotal, albeit modest, turning poin
 
 ## Claims to verify
 
-- [ ] The exact vote count or legislative debate details surrounding the 1922 ordinance in the Legislative Council.
-- [ ] The specific minimum age threshold initially established by the Industrial Employment of Children Ordinance.
+- ❔ The exact vote count or legislative debate details surrounding the 1922 ordinance in the Legislative Council.
+- ❔ The specific minimum age threshold initially established by the Industrial Employment of Children Ordinance.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

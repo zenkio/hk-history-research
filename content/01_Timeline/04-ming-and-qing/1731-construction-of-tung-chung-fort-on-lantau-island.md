@@ -39,7 +39,7 @@ The establishment of the fort reflects the Qing dynasty's evolving strategy for 
 
 ## Claims to verify
 
-- [ ] Verify whether the initial structural foundations established in 1731 were entirely stone or initially earth and timber, given later 1817 expansions.
-- [ ] Cross-reference local gazetteer records regarding the exact troop numbers stationed at Tung Chung during the Yongzheng reign.
+- ❔ Verify whether the initial structural foundations established in 1731 were entirely stone or initially earth and timber, given later 1817 expansions.
+- ❔ Cross-reference local gazetteer records regarding the exact troop numbers stationed at Tung Chung during the Yongzheng reign.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

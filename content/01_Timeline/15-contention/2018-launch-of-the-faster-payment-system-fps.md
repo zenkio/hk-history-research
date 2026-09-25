@@ -36,7 +36,7 @@ The introduction of FPS marked a pivotal shift in the daily commerce of Hong Kon
 
 ## Claims to verify
 
-- [ ] Verify the exact number of participating banks and SVF operators at the time of the September 30, 2018 launch.
-- [ ] Confirm the initial currency support specifications for the Faster Payment System at launch.
+- ❔ Verify the exact number of participating banks and SVF operators at the time of the September 30, 2018 launch.
+- ❔ Confirm the initial currency support specifications for the Faster Payment System at launch.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

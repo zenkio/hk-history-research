@@ -36,7 +36,7 @@ The founding of the Sha Tin temple marks an important early example of community
 
 ## Claims to verify
 
-- [ ] The original Che Kung Temple in Sha Tin was established around 1575.
-- [ ] The temple was built in response to a specific plague and local unrest during the late Ming dynasty.
+- ❔ The original Che Kung Temple in Sha Tin was established around 1575.
+- ❔ The temple was built in response to a specific plague and local unrest during the late Ming dynasty.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

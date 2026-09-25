@@ -36,7 +36,7 @@ The consolidation of these rights was foundational to the development of the **N
 
 ## Claims to verify
 
-- [ ] The extent to which 10th-century salt pans were controlled by specific named lineages versus decentralized salt-maker groups.
-- [ ] The direct correlation between pre-Song salt marsh control and the genealogical records of prominent clans registered in the late imperial period.
+- ❔ The extent to which 10th-century salt pans were controlled by specific named lineages versus decentralized salt-maker groups.
+- ❔ The direct correlation between pre-Song salt marsh control and the genealogical records of prominent clans registered in the late imperial period.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

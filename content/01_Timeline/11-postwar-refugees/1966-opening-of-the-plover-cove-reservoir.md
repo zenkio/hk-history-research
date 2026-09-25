@@ -38,8 +38,8 @@ The completion of the reservoir stands as a testament to the engineering ingenui
 
 ## Claims to verify
 
-- [ ] The specific date of the reservoir's formal opening ceremony.
-- [ ] The exact quantity of freshwater capacity added to Hong Kong's total reserves upon completion in 1966.
-- [ ] Details regarding the number of villages displaced by the project.
+- ❔ The specific date of the reservoir's formal opening ceremony.
+- ❔ The exact quantity of freshwater capacity added to Hong Kong's total reserves upon completion in 1966.
+- ❔ Details regarding the number of villages displaced by the project.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -43,7 +43,7 @@ Urban planning debates during this period exposed deep-seated divisions over the
 
 ## Claims to verify
 
-- [ ] Did the physical clearance and repossession of Queen's Pier by the government occur precisely on August 1, 2007?
-- [ ] Were all dismantled structural components of Queen's Pier successfully stored for future reconstruction according to official government statements?
+- ❔ Did the physical clearance and repossession of Queen's Pier by the government occur precisely on August 1, 2007?
+- ❔ Were all dismantled structural components of Queen's Pier successfully stored for future reconstruction according to official government statements?
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -42,7 +42,7 @@ Later scholarship views the **1912** ordinance as a watershed moment in the evol
 
 ## Claims to verify
 
-- [ ] Exact legislative voting records and specific Governor involvement in the 1912 Societies Ordinance enactment
-- [ ] The precise number of organizations dissolved or registered under the ordinance in its first year
+- ❔ Exact legislative voting records and specific Governor involvement in the 1912 Societies Ordinance enactment
+- ❔ The precise number of organizations dissolved or registered under the ordinance in its first year
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -40,7 +40,7 @@ The emergence of the Chinese merchant guild system marked a crucial turning poin
 
 ## Claims to verify
 
-- [ ] The specific extent of formal and informal administrative powers exercised by Chinese merchant guilds around 1850.
-- [ ] The precise timeline and developmental overlap between early trade guilds and the administration of the Man Mo Temple.
+- ❔ The specific extent of formal and informal administrative powers exercised by Chinese merchant guilds around 1850.
+- ❔ The precise timeline and developmental overlap between early trade guilds and the administration of the Man Mo Temple.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

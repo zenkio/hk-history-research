@@ -36,8 +36,8 @@ The establishment of the Consumer Council is often viewed as a pivotal step in t
 
 ## Claims to verify
 
-- [ ] The exact official inauguration date of the Consumer Council.
-- [ ] The legislative ordinance that established the Consumer Council as a statutory body in 1974.
-- [ ] The initial mandate and powers granted to the Council regarding price controls.
+- ❔ The exact official inauguration date of the Consumer Council.
+- ❔ The legislative ordinance that established the Consumer Council as a statutory body in 1974.
+- ❔ The initial mandate and powers granted to the Council regarding price controls.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

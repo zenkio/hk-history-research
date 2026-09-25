@@ -36,7 +36,7 @@ The establishment of the association represents an important moment in the histo
 
 ## Claims to verify
 
-- [ ] The exact organizational structure and initial board members of the Hong Kong Women's Relief Association in 1917.
-- [ ] The level of direct financial or administrative support provided by the colonial government to the association at its inception.
+- ❔ The exact organizational structure and initial board members of the Hong Kong Women's Relief Association in 1917.
+- ❔ The level of direct financial or administrative support provided by the colonial government to the association at its inception.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

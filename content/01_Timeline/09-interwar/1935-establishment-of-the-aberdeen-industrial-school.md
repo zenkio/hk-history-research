@@ -37,7 +37,7 @@ The founding of the school marked a notable development in the history of Hong K
 
 ## Claims to verify
 
-- [ ] The exact opening date and official naming records of the Aberdeen Industrial School in 1935 colonial administration and Salesian archival records.
-- [ ] The precise nature and extent of financial subsidies provided by the Hong Kong government to the Salesians for the school's establishment.
+- ❔ The exact opening date and official naming records of the Aberdeen Industrial School in 1935 colonial administration and Salesian archival records.
+- ❔ The precise nature and extent of financial subsidies provided by the Hong Kong government to the Salesians for the school's establishment.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

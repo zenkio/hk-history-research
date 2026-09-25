@@ -39,7 +39,7 @@ The concentration of pottery kilns in Tuen Mun represents some of the earliest k
 
 ## Claims to verify
 
-- [ ] Specific archaeological excavation reports confirming kiln structures dated to c. 800 BCE in Tuen Mun
-- [ ] The exact technological classification of the ceramic wares produced in these early kilns
+- ❔ Specific archaeological excavation reports confirming kiln structures dated to c. 800 BCE in Tuen Mun
+- ❔ The exact technological classification of the ceramic wares produced in these early kilns
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

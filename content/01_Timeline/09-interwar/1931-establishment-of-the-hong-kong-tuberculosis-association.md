@@ -35,7 +35,7 @@ The creation of the association marked a transition in Hong Kong’s public heal
 
 ## Claims to verify
 
-- [ ] Confirm the specific inaugural date and founding members of the Hong Kong Tuberculosis Association in 1931.
-- [ ] Verify the extent of government financial support vs. private philanthropic funding at the time of inception.
+- ❔ Confirm the specific inaugural date and founding members of the Hong Kong Tuberculosis Association in 1931.
+- ❔ Verify the extent of government financial support vs. private philanthropic funding at the time of inception.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

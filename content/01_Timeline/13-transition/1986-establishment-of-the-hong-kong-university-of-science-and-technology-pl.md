@@ -38,7 +38,7 @@ The initiative marked a pivotal shift in Hong Kong's educational and economic st
 
 ## Claims to verify
 
-- [ ] Official formation date of the planning committee for the third university on July 21, 1986
-- [ ] Specific allocation of initial funding between the Hong Kong government and private donors
+- ❔ Official formation date of the planning committee for the third university on July 21, 1986
+- ❔ Specific allocation of initial funding between the Hong Kong government and private donors
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

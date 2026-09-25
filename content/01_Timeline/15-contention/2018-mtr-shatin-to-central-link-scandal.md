@@ -41,7 +41,7 @@ The scandal severely damaged the reputation of the **MTR Corporation** for engin
 
 ## Claims to verify
 
-- [ ] Exact details of the media reports published on May 30, 2018 regarding the Hung Hom station extension
-- [ ] Official findings of the Commission of Inquiry into the Construction Works at the Hung Hom Station Extension
+- ❔ Exact details of the media reports published on May 30, 2018 regarding the Hung Hom station extension
+- ❔ Official findings of the Commission of Inquiry into the Construction Works at the Hung Hom Station Extension
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

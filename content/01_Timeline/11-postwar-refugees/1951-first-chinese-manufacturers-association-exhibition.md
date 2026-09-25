@@ -37,8 +37,8 @@ The exhibition is widely cited by historians as a symbolic turning point in the 
 
 ## Claims to verify
 
-- [ ] The specific month and date of the 1951 exhibition opening.
-- [ ] The official participation figures or visitor counts recorded by the CMA for the first exhibition.
-- [ ] The degree of direct colonial government financial support for the first iteration of the event.
+- ❔ The specific month and date of the 1951 exhibition opening.
+- ❔ The official participation figures or visitor counts recorded by the CMA for the first exhibition.
+- ❔ The degree of direct colonial government financial support for the first iteration of the event.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

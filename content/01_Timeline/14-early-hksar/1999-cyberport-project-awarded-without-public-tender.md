@@ -40,7 +40,7 @@ The no-bid award became a watershed moment in early HKSAR history, crystallizing
 
 ## Claims to verify
 
-- [ ] The exact date of the formal announcement granting the Cyberport project to Richard Li's company without public tender.
-- [ ] The specific financial arrangements and residential-commercial land-use ratios negotiated between the HKSAR government and Pacific Century Group.
+- ❔ The exact date of the formal announcement granting the Cyberport project to Richard Li's company without public tender.
+- ❔ The specific financial arrangements and residential-commercial land-use ratios negotiated between the HKSAR government and Pacific Century Group.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

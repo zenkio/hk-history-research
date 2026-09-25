@@ -35,7 +35,7 @@ The cultural events of **1958** marked a pivotal shift in Hong Kong’s identity
 
 ## Claims to verify
 
-- [ ] The exact scope and titles of the multi-arts precursor events held in 1958 that directly preceded later structured festivals.
-- [ ] The degree of official colonial government sponsorship versus grassroots community organization in the 1958 cultural showcases.
+- ❔ The exact scope and titles of the multi-arts precursor events held in 1958 that directly preceded later structured festivals.
+- ❔ The degree of official colonial government sponsorship versus grassroots community organization in the 1958 cultural showcases.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

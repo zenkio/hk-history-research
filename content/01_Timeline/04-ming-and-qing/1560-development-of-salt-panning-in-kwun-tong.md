@@ -38,7 +38,7 @@ The expansion of salt pans in Kwun Tong contributed significantly to the local e
 
 ## Claims to verify
 
-- [ ] Specific administrative records linking Kwun Tong salt production directly to the **1560** timeframe
-- [ ] The exact extent of official Ming salt monopoly enforcement within the immediate coastal waters of modern Kowloon
+- ❔ Specific administrative records linking Kwun Tong salt production directly to the **1560** timeframe
+- ❔ The exact extent of official Ming salt monopoly enforcement within the immediate coastal waters of modern Kowloon
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

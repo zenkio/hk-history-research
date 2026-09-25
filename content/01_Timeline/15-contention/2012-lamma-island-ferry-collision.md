@@ -39,8 +39,8 @@ The disaster was one of Hong Kong's deadliest maritime accidents in decades, pro
 
 ## Claims to verify
 
-- [ ] The exact collision time was approximately 8:23 p.m. on October 1, 2012.
-- [ ] The death toll resulting from the collision was 39 people.
-- [ ] The Commission of Inquiry identified systemic failures within the Marine Department.
+- ❔ The exact collision time was approximately 8:23 p.m. on October 1, 2012.
+- ❔ The death toll resulting from the collision was 39 people.
+- ❔ The Commission of Inquiry identified systemic failures within the Marine Department.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

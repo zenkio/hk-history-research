@@ -35,7 +35,7 @@ This geological transformation laid the foundational physical geography for all 
 
 ## Claims to verify
 
-- [ ] Did significant post-glacial sea level stabilization and valley submergence in the Pearl River Delta region peak around 6000 BCE?
-- [ ] How do core samples from Hong Kong's seabed corroborate the mid-Holocene marine transgression timeline?
+- ❔ Did significant post-glacial sea level stabilization and valley submergence in the Pearl River Delta region peak around 6000 BCE?
+- ❔ How do core samples from Hong Kong's seabed corroborate the mid-Holocene marine transgression timeline?
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

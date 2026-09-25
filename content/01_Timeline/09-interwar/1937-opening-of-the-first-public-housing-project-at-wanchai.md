@@ -35,8 +35,8 @@ The opening of these housing units is often cited by historians as a nascent, al
 
 ## Claims to verify
 
-- [ ] Verify the exact official name of the 1937 Wanchai housing project in colonial archives.
-- [ ] Confirm the number of units or families originally housed in the 1937 Wanchai project.
-- [ ] Determine the degree to which this project was government-funded versus government-facilitated via private developers.
+- ❔ Verify the exact official name of the 1937 Wanchai housing project in colonial archives.
+- ❔ Confirm the number of units or families originally housed in the 1937 Wanchai project.
+- ❔ Determine the degree to which this project was government-funded versus government-facilitated via private developers.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

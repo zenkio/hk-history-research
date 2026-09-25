@@ -41,7 +41,7 @@ The conversion of the Peninsula Hotel stands as a potent physical manifestation 
 
 ## Claims to verify
 
-- [ ] Exact month and year the Peninsula Hotel was officially converted into the Japanese Officers Club
-- [ ] Specific administrative functions hosted within the hotel during 1943
+- ❔ Exact month and year the Peninsula Hotel was officially converted into the Japanese Officers Club
+- ❔ Specific administrative functions hosted within the hotel during 1943
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

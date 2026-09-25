@@ -35,7 +35,7 @@ This transition marked a foundational turning point in the prehistory of the reg
 
 ## Claims to verify
 
-- [ ] Archaeological evidence of sedentary architecture or postholes dating specifically to c. 2200 BCE in the region
-- [ ] The extent and nature of early agricultural practices during the late Neolithic in coastal Guangdong
+- ❔ Archaeological evidence of sedentary architecture or postholes dating specifically to c. 2200 BCE in the region
+- ❔ The extent and nature of early agricultural practices during the late Neolithic in coastal Guangdong
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

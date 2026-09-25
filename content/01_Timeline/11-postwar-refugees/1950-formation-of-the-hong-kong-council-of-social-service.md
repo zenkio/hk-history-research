@@ -35,7 +35,7 @@ The establishment of the HKCSS marked a turning point in the professionalization
 
 ## Claims to verify
 
-- [ ] Verify the exact founding month of the Hong Kong Council of Social Service in 1950.
-- [ ] Identify the specific primary voluntary agencies that were the original founding members of the HKCSS.
+- ❔ Verify the exact founding month of the Hong Kong Council of Social Service in 1950.
+- ❔ Identify the specific primary voluntary agencies that were the original founding members of the HKCSS.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -38,8 +38,8 @@ The formation of the Polytechnic is widely seen by historians as a maturation of
 
 ## Claims to verify
 
-- [ ] Exact enrollment numbers in the first academic year 1972-73.
-- [ ] The specific sequence of administrative transfers from the Technical College to the Polytechnic board.
-- [ ] Official policy documents linking the 1967 riots to the specific timeline of the Polytechnic Planning Committee's recommendations.
+- ❔ Exact enrollment numbers in the first academic year 1972-73.
+- ❔ The specific sequence of administrative transfers from the Technical College to the Polytechnic board.
+- ❔ Official policy documents linking the 1967 riots to the specific timeline of the Polytechnic Planning Committee's recommendations.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -38,7 +38,7 @@ CEPA represented the first free trade agreement concluded by Hong Kong and the f
 
 ## Claims to verify
 
-- [ ] CEPA was officially signed on June 29, 2003.
-- [ ] Tung Chee-hwa and Song Defu were the principal signatories for their respective governments.
+- ❔ CEPA was officially signed on June 29, 2003.
+- ❔ Tung Chee-hwa and Song Defu were the principal signatories for their respective governments.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

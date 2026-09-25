@@ -39,8 +39,8 @@ The resignations have prompted intense debate regarding the future of Hong Kong'
 
 ## Claims to verify
 
-- [ ] Confirm the exact number of overseas non-permanent judges who resigned in June 2024.
-- [ ] Verify the official statements released by the HKSAR government regarding the resignations.
-- [ ] Verify the explicit reasons cited by the resigning judges in their public statements.
+- ❔ Confirm the exact number of overseas non-permanent judges who resigned in June 2024.
+- ❔ Verify the official statements released by the HKSAR government regarding the resignations.
+- ❔ Verify the explicit reasons cited by the resigning judges in their public statements.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

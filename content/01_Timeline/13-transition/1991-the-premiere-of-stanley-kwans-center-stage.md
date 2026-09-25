@@ -40,7 +40,7 @@ The film is widely regarded by critics and scholars as a watershed moment in Hon
 
 ## Claims to verify
 
-- [ ] Center Stage premiered on November 28, 1991.
-- [ ] Maggie Cheung won the Silver Bear for Best Actress at the 42nd Berlin International Film Festival for her role in the film.
+- ❔ Center Stage premiered on November 28, 1991.
+- ❔ Maggie Cheung won the Silver Bear for Best Actress at the 42nd Berlin International Film Festival for her role in the film.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

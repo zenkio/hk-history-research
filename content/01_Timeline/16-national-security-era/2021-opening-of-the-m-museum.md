@@ -37,7 +37,7 @@ The launch of **M+** marked a watershed moment for Hong Kong's cultural sector. 
 
 ## Claims to verify
 
-- [ ] M+ officially opened to the public on November 12, 2021.
-- [ ] The Sigg Collection formed a central part of the inaugural exhibitions.
+- ❔ M+ officially opened to the public on November 12, 2021.
+- ❔ The Sigg Collection formed a central part of the inaugural exhibitions.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

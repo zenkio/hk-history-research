@@ -40,8 +40,8 @@ The institution is recognized for producing several of the most influential figu
 
 ## Claims to verify
 
-- [ ] The precise year of the school's relocation and consolidation in Hong Kong
-- [ ] The full list of prominent graduates who attended the school after 1860
-- [ ] The extent of the direct influence the Morrison Education Society held over the school's daily curriculum by 1869
+- ❔ The precise year of the school's relocation and consolidation in Hong Kong
+- ❔ The full list of prominent graduates who attended the school after 1860
+- ❔ The extent of the direct influence the Morrison Education Society held over the school's daily curriculum by 1869
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

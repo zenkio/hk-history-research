@@ -37,8 +37,8 @@ The establishment of the institute is widely regarded as the precursor to formal
 
 ## Claims to verify
 
-- [ ] Verify the specific inaugural year of the Government Technical Institute in official archives.
-- [ ] Confirm the specific relationship between the Victoria Technical School and the Government Technical Institute in 1913.
-- [ ] Check colonial records for the initial student enrollment figures or demographics.
+- ❔ Verify the specific inaugural year of the Government Technical Institute in official archives.
+- ❔ Confirm the specific relationship between the Victoria Technical School and the Government Technical Institute in 1913.
+- ❔ Check colonial records for the initial student enrollment figures or demographics.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

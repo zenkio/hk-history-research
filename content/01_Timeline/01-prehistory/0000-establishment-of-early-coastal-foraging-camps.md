@@ -36,7 +36,7 @@ The establishment of these foraging camps marks the beginning of intensive human
 
 ## Claims to verify
 
-- [ ] Verify the specific radiometric dating ranges for the earliest shell midden layers at Sham Wan.
-- [ ] Determine the consensus on whether these groups are considered linguistically or ethnically related to the later Yue (越) peoples.
+- ❔ Verify the specific radiometric dating ranges for the earliest shell midden layers at Sham Wan.
+- ❔ Determine the consensus on whether these groups are considered linguistically or ethnically related to the later Yue (越) peoples.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

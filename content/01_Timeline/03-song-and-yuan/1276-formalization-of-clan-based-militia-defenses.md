@@ -42,7 +42,7 @@ This period marks the genesis of the autonomous village security systems that ch
 
 ## Claims to verify
 
-- [ ] The exact level of military cooperation between local clans and the Southern Song imperial court during 1276-1279.
-- [ ] The degree to which militia structures were pre-existing versus formally established specifically in response to the Mongol arrival.
+- ❔ The exact level of military cooperation between local clans and the Southern Song imperial court during 1276-1279.
+- ❔ The degree to which militia structures were pre-existing versus formally established specifically in response to the Mongol arrival.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

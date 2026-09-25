@@ -42,8 +42,8 @@ This first land sale established the crown lease system as the fundamental model
 
 ## Claims to verify
 
-- [ ] The first public land auction took place specifically on June 14, 1841.
-- [ ] Initial waterfront lots auctioned formed the primary basis for early Victoria City development.
+- ❔ The first public land auction took place specifically on June 14, 1841.
+- ❔ Initial waterfront lots auctioned formed the primary basis for early Victoria City development.
 
 ## Research notes
 

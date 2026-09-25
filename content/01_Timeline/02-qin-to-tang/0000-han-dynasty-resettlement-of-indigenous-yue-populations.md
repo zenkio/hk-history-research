@@ -42,7 +42,7 @@ The resettlement and administrative integration initiated around **-110** (appro
 
 ## Claims to verify
 
-- [ ] Specific evidence of forced Yue population resettlement specifically occurring within the geographic boundaries of modern Hong Kong around 110 BCE.
-- [ ] The exact administrative jurisdiction governing the Hong Kong area immediately following the fall of Nanyue in 111 BCE.
+- ❔ Specific evidence of forced Yue population resettlement specifically occurring within the geographic boundaries of modern Hong Kong around 110 BCE.
+- ❔ The exact administrative jurisdiction governing the Hong Kong area immediately following the fall of Nanyue in 111 BCE.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

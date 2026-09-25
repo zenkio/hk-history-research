@@ -37,7 +37,7 @@ The opening of the Yeung Wo Nursing Home is recognized by historians as a milest
 
 ## Claims to verify
 
-- [ ] Verify the exact date of incorporation of the Yeung Wo Nursing Home in 1901.
-- [ ] Confirm the specific founding members and their professional credentials in primary records from the 1901 period.
+- ❔ Verify the exact date of incorporation of the Yeung Wo Nursing Home in 1901.
+- ❔ Confirm the specific founding members and their professional credentials in primary records from the 1901 period.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -37,7 +37,7 @@ The onset of the pandemic marked a watershed moment for Hong Kong society. The i
 
 ## Claims to verify
 
-- [ ] The first two COVID-19 cases in Hong Kong were officially confirmed on January 23, 2020.
-- [ ] The arrival of the pandemic directly coincided with a significant reduction in large-scale street protests.
+- ❔ The first two COVID-19 cases in Hong Kong were officially confirmed on January 23, 2020.
+- ❔ The arrival of the pandemic directly coincided with a significant reduction in large-scale street protests.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

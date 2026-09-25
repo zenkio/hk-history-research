@@ -42,8 +42,8 @@ Over time, the institution cemented horse racing as a permanent fixture of Hong 
 
 ## Claims to verify
 
-- [ ] The exact date of establishment as November 4, 1884, in primary club records
-- [ ] The original founding members and their exact corporate affiliations
-- [ ] The precise timeline of Chinese merchant admission to full club membership
+- ❔ The exact date of establishment as November 4, 1884, in primary club records
+- ❔ The original founding members and their exact corporate affiliations
+- ❔ The precise timeline of Chinese merchant admission to full club membership
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

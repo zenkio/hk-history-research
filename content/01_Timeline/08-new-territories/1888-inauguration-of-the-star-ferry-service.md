@@ -42,7 +42,7 @@ The inauguration of the ferry service fundamentally transformed the daily integr
 
 ## Claims to verify
 
-- [ ] Dorabjee Naorojee Mithaiwala founded the initial cross-harbour ferry service in 1888.
-- [ ] The Star Ferry Company was formally incorporated in 1898 under the leadership of Catchick Paul Chater.
+- ❔ Dorabjee Naorojee Mithaiwala founded the initial cross-harbour ferry service in 1888.
+- ❔ The Star Ferry Company was formally incorporated in 1898 under the leadership of Catchick Paul Chater.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

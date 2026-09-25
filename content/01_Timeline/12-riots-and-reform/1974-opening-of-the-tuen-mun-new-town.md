@@ -39,7 +39,7 @@ The opening and subsequent development of Tuen Mun New Town fundamentally reshap
 
 ## Claims to verify
 
-- [ ] The exact administrative milestones and dates marking the formal opening of Tuen Mun New Town in 1974.
-- [ ] Official population projections and initial housing targets set for Tuen Mun during its early planning stages.
+- ❔ The exact administrative milestones and dates marking the formal opening of Tuen Mun New Town in 1974.
+- ❔ Official population projections and initial housing targets set for Tuen Mun during its early planning stages.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -42,7 +42,7 @@ The creation of the Apostolic Prefecture marked a pivotal moment in the institut
 
 ## Claims to verify
 
-- [ ] Pope Gregory XVI formally decreed the establishment of the Apostolic Prefecture of Hong Kong on April 22, 1841.
-- [ ] Father Theodor Joset was appointed as the first Prefect Apostolic of Hong Kong.
+- ❔ Pope Gregory XVI formally decreed the establishment of the Apostolic Prefecture of Hong Kong on April 22, 1841.
+- ❔ Father Theodor Joset was appointed as the first Prefect Apostolic of Hong Kong.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

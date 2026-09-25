@@ -39,7 +39,7 @@ The establishment of these ferry services highlighted the cooperative role of no
 
 ## Claims to verify
 
-- [ ] Exact operational launch date of January 15, 1993 for the Jockey Club Tak Shing Pier Ferry Services
-- [ ] Specific financial and operational relationship between the Hong Kong Jockey Club and Tak Shing Ferries
+- ❔ Exact operational launch date of January 15, 1993 for the Jockey Club Tak Shing Pier Ferry Services
+- ❔ Specific financial and operational relationship between the Hong Kong Jockey Club and Tak Shing Ferries
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

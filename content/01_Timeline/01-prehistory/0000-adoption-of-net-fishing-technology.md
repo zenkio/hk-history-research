@@ -38,7 +38,7 @@ The widespread adoption of net fishing signifies a transition toward a more sede
 
 ## Claims to verify
 
-- [ ] Verify the carbon-14 dating consensus for net sinkers found at the Sham Wan site.
-- [ ] Examine the specific composition of ceramic net sinkers compared to stone sinkers found in the same strata.
+- ❔ Verify the carbon-14 dating consensus for net sinkers found at the Sham Wan site.
+- ❔ Examine the specific composition of ceramic net sinkers compared to stone sinkers found in the same strata.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

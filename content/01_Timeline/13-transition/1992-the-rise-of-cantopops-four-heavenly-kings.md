@@ -47,7 +47,7 @@ The cementing of the Four Heavenly Kings represented the absolute zenith of Cant
 
 ## Claims to verify
 
-- [ ] The exact newspaper and date in 1992 when the term 'Four Heavenly Kings' was first coined in print.
-- [ ] The specific sales figures and award ceremonies that formally solidified the status of the four singers in 1992.
+- ❔ The exact newspaper and date in 1992 when the term 'Four Heavenly Kings' was first coined in print.
+- ❔ The specific sales figures and award ceremonies that formally solidified the status of the four singers in 1992.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

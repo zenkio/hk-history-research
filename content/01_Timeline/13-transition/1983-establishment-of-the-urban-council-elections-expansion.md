@@ -40,7 +40,7 @@ The **1983** expansion of the Urban Council is widely viewed by historians as a 
 
 ## Claims to verify
 
-- [ ] The exact composition and seat distribution of the Urban Council following the March 1983 reforms
-- [ ] The specific voter turnout and franchise eligibility statistics for the 1983 Urban Council election
+- ❔ The exact composition and seat distribution of the Urban Council following the March 1983 reforms
+- ❔ The specific voter turnout and franchise eligibility statistics for the 1983 Urban Council election
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

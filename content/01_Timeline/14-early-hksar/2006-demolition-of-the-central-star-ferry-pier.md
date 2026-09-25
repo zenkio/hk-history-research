@@ -41,8 +41,8 @@ The destruction of the Central Star Ferry Pier is widely regarded by historians 
 
 ## Claims to verify
 
-- [ ] The exact date the third-generation Central Star Ferry Pier was closed and demolition commenced in November 2006.
-- [ ] The architectural style and opening year of the third-generation Central Star Ferry Pier.
-- [ ] The extent of public consultation conducted by the HKSAR government prior to the Central reclamation project.
+- ❔ The exact date the third-generation Central Star Ferry Pier was closed and demolition commenced in November 2006.
+- ❔ The architectural style and opening year of the third-generation Central Star Ferry Pier.
+- ❔ The extent of public consultation conducted by the HKSAR government prior to the Central reclamation project.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

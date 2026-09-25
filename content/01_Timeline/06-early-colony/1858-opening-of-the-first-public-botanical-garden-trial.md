@@ -37,8 +37,8 @@ This initiative represented a wider Victorian movement to bring order to the col
 
 ## Claims to verify
 
-- [ ] The exact location of the 1858 trial plot relative to the current Hong Kong Zoological and Botanical Gardens.
-- [ ] The extent of local community involvement or displacement resulting from the specific site selection in 1858.
-- [ ] The primary motivation of the colonial government for the trial (sanitary vs. aesthetic).
+- ❔ The exact location of the 1858 trial plot relative to the current Hong Kong Zoological and Botanical Gardens.
+- ❔ The extent of local community involvement or displacement resulting from the specific site selection in 1858.
+- ❔ The primary motivation of the colonial government for the trial (sanitary vs. aesthetic).
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -39,8 +39,8 @@ The creation of the Office represented a structural turning point in Hong Kong's
 
 ## Claims to verify
 
-- [ ] The Office for Safeguarding National Security was officially inaugurated on July 8, 2020.
-- [ ] Zheng Yanxiong was appointed as the inaugural director of the office.
-- [ ] The initial temporary headquarters was located in the Metropark Hotel Causeway Bay.
+- ❔ The Office for Safeguarding National Security was officially inaugurated on July 8, 2020.
+- ❔ Zheng Yanxiong was appointed as the inaugural director of the office.
+- ❔ The initial temporary headquarters was located in the Metropark Hotel Causeway Bay.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

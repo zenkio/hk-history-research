@@ -40,7 +40,7 @@ The infusion of CDWA funding marked a pivotal turning point in British colonial 
 
 ## Claims to verify
 
-- [ ] The exact monetary sums allocated to Hong Kong under the Colonial Development and Welfare Acts between 1945 and 1950
-- [ ] The specific public works projects directly financed by CDWA funds during the immediate postwar military and civil administration
+- ❔ The exact monetary sums allocated to Hong Kong under the Colonial Development and Welfare Acts between 1945 and 1950
+- ❔ The specific public works projects directly financed by CDWA funds during the immediate postwar military and civil administration
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

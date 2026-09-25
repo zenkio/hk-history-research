@@ -37,7 +37,7 @@ Later scholarship and political analysts view the accountability system as a wat
 
 ## Claims to verify
 
-- [ ] The exact date the Principal Officials Accountability System took effect was July 1, 2002.
-- [ ] Top policy secretaries ceased to be career civil servants and became political appointees under the new system.
+- ❔ The exact date the Principal Officials Accountability System took effect was July 1, 2002.
+- ❔ Top policy secretaries ceased to be career civil servants and became political appointees under the new system.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

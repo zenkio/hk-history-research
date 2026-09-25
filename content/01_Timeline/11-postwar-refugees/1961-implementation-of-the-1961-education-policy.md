@@ -36,7 +36,7 @@ This policy is widely viewed as a watershed moment in Hong Kong's social history
 
 ## Claims to verify
 
-- [ ] Verify the exact fiscal year the budget for primary education expansion was formally approved.
-- [ ] Identify specific government reports or white papers from 1961 that formally announced this policy shift.
+- ❔ Verify the exact fiscal year the budget for primary education expansion was formally approved.
+- ❔ Identify specific government reports or white papers from 1961 that formally announced this policy shift.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

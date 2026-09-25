@@ -36,8 +36,8 @@ These installations are often cited by scholars as a hallmark of 21st-century pr
 
 ## Claims to verify
 
-- [ ] The specific date of the first Lennon Wall emergence in 2019.
-- [ ] The extent to which Telegram and LIHKG were used to coordinate specific physical wall locations.
-- [ ] The legal classification of these walls under Hong Kong's public order and defacement ordinances.
+- ❔ The specific date of the first Lennon Wall emergence in 2019.
+- ❔ The extent to which Telegram and LIHKG were used to coordinate specific physical wall locations.
+- ❔ The legal classification of these walls under Hong Kong's public order and defacement ordinances.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

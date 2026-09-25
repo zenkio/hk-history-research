@@ -36,7 +36,7 @@ Later scholarship often examines the cemetery not only as a response to a public
 
 ## Claims to verify
 
-- [ ] The exact official opening date or year of the Happy Valley Cemetery as 1845 in primary colonial records
-- [ ] The specific allocation of multi-faith plots during the initial 1845 layout
+- ❔ The exact official opening date or year of the Happy Valley Cemetery as 1845 in primary colonial records
+- ❔ The specific allocation of multi-faith plots during the initial 1845 layout
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -38,8 +38,8 @@ The organization serves as a case study for the negotiation of cultural identity
 
 ## Claims to verify
 
-- [ ] Confirm the exact month and date of the formal charter or inaugural meeting in 1912.
-- [ ] Verify the specific roster of founding members to clarify the influence of London Missionary Society versus local merchant guilds.
-- [ ] Investigate primary documents regarding early colonial government correspondence concerning the YMCA's role in local social stability.
+- ❔ Confirm the exact month and date of the formal charter or inaugural meeting in 1912.
+- ❔ Verify the specific roster of founding members to clarify the influence of London Missionary Society versus local merchant guilds.
+- ❔ Investigate primary documents regarding early colonial government correspondence concerning the YMCA's role in local social stability.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

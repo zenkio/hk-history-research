@@ -38,8 +38,8 @@ The protests are often viewed as a bellwether for the evolving relationship betw
 
 ## Claims to verify
 
-- [ ] Verify specific dates of the first organized labor protests associated with the Penny's Bay construction site in 2003.
-- [ ] Identify which specific trade unions or labor organizations were the primary organizers of the 2003 demonstrations.
-- [ ] Cross-reference the HKSAR government's official response to labor complaints during the 2003 construction period.
+- ❔ Verify specific dates of the first organized labor protests associated with the Penny's Bay construction site in 2003.
+- ❔ Identify which specific trade unions or labor organizations were the primary organizers of the 2003 demonstrations.
+- ❔ Cross-reference the HKSAR government's official response to labor complaints during the 2003 construction period.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -42,8 +42,8 @@ The formation of this structure established a lineage-based governance model tha
 
 ## Claims to verify
 
-- [ ] The specific date of 1270 as a formal consolidation point for all five clans.
-- [ ] The historical accuracy of treating the five clans as a singular 'alliance' versus five independent land-holding entities.
-- [ ] The extent to which clan collaboration was a defensive response to Mongol expansion.
+- ❔ The specific date of 1270 as a formal consolidation point for all five clans.
+- ❔ The historical accuracy of treating the five clans as a singular 'alliance' versus five independent land-holding entities.
+- ❔ The extent to which clan collaboration was a defensive response to Mongol expansion.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

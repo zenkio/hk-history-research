@@ -36,8 +36,8 @@ The arrival of these figures is widely interpreted as a catalyst for the introdu
 
 ## Claims to verify
 
-- [ ] Primary source evidence linking Ge Hong or his direct followers to specific sites on Lantau.
-- [ ] Archaeological evidence of 4th-century architectural remains in the Lantau region.
-- [ ] The timeline of institutional Daoism expanding into the southern maritime provinces during the Eastern Jin period.
+- ❔ Primary source evidence linking Ge Hong or his direct followers to specific sites on Lantau.
+- ❔ Archaeological evidence of 4th-century architectural remains in the Lantau region.
+- ❔ The timeline of institutional Daoism expanding into the southern maritime provinces during the Eastern Jin period.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

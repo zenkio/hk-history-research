@@ -38,7 +38,7 @@ The founding of Union Film is widely viewed by film historians as a watershed mo
 
 ## Claims to verify
 
-- [ ] Union Film Enterprise was officially incorporated in July 1952.
-- [ ] The cooperative model utilized by Union Film fundamentally altered production standards across the broader Cantonese film industry.
+- ❔ Union Film Enterprise was officially incorporated in July 1952.
+- ❔ The cooperative model utilized by Union Film fundamentally altered production standards across the broader Cantonese film industry.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

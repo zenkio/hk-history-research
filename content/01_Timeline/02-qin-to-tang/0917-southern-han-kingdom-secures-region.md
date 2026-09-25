@@ -40,7 +40,7 @@ Under Southern Han rule, the integration of the Hong Kong region into a localize
 
 ## Claims to verify
 
-- [ ] Did Southern Han formally establish administrative control over the Tuen Mun area specifically in the year 917?
-- [ ] What primary archaeological evidence confirms intensive pearl harvesting in Hong Kong waters during the Southern Han period?
+- ❔ Did Southern Han formally establish administrative control over the Tuen Mun area specifically in the year 917?
+- ❔ What primary archaeological evidence confirms intensive pearl harvesting in Hong Kong waters during the Southern Han period?
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -39,7 +39,7 @@ The 1688 gazetteer remains an irreplaceable historical anchor for the study of s
 
 ## Claims to verify
 
-- [ ] Was the 1688 edition definitively the very first gazetteer compiled for Xin'an County, or did earlier Ming-era drafts exist?
-- [ ] What specific local lineages were granted prominent mentions in the 1688 edition?
+- ❔ Was the 1688 edition definitively the very first gazetteer compiled for Xin'an County, or did earlier Ming-era drafts exist?
+- ❔ What specific local lineages were granted prominent mentions in the 1688 edition?
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -38,8 +38,8 @@ The commencement of electrical power generation laid the groundwork for modern u
 
 ## Claims to verify
 
-- [ ] The exact launch date of December 1, 1890 for the commencement of public electricity supply by the Hongkong Electric Company
-- [ ] The precise location and operational capacity of the initial Wan Chai power station
+- ❔ The exact launch date of December 1, 1890 for the commencement of public electricity supply by the Hongkong Electric Company
+- ❔ The precise location and operational capacity of the initial Wan Chai power station
 
 ## Evidence
 

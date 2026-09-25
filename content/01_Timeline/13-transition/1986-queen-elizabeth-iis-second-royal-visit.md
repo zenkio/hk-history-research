@@ -43,7 +43,7 @@ The visit held deep symbolic value, though its exact impact remains a subject of
 
 ## Claims to verify
 
-- [ ] Queen Elizabeth II arrived in Hong Kong on October 21, 1986.
-- [ ] The itinerary included visits to Sha Tin and the Jubilee Sports Centre.
+- ❔ Queen Elizabeth II arrived in Hong Kong on October 21, 1986.
+- ❔ The itinerary included visits to Sha Tin and the Jubilee Sports Centre.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

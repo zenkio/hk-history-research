@@ -36,7 +36,7 @@ The creation of the commission represented a departure in Hong Kong's legal hist
 
 ## Claims to verify
 
-- [ ] The Equal Opportunities Commission was formally established on September 20, 1996.
-- [ ] The commission was established as a statutory body under the Sex Discrimination Ordinance.
+- ❔ The Equal Opportunities Commission was formally established on September 20, 1996.
+- ❔ The commission was established as a statutory body under the Sex Discrimination Ordinance.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

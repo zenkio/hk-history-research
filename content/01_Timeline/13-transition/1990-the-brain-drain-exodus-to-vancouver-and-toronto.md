@@ -42,8 +42,8 @@ This period of migration fundamentally altered the social fabric of Hong Kong an
 
 ## Claims to verify
 
-- [ ] Annual net emigration statistics for Hong Kong between 1989 and 1993
-- [ ] Verification of the term 'astronaut families' usage in mainstream media during the early 1990s
-- [ ] Correlation between the 1989 Tiananmen Square protests and spikes in Canadian visa applications by Hong Kong residents
+- ❔ Annual net emigration statistics for Hong Kong between 1989 and 1993
+- ❔ Verification of the term 'astronaut families' usage in mainstream media during the early 1990s
+- ❔ Correlation between the 1989 Tiananmen Square protests and spikes in Canadian visa applications by Hong Kong residents
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

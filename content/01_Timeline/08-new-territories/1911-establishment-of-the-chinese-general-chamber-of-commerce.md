@@ -38,8 +38,8 @@ The creation of the chamber marked a pivotal moment in the self-organization of 
 
 ## Claims to verify
 
-- [ ] The exact foundational date and founding members of the Chinese General Chamber of Commerce in 1911
-- [ ] The precise nature of the relationship and correspondence between the newly formed chamber and the colonial government
+- ❔ The exact foundational date and founding members of the Chinese General Chamber of Commerce in 1911
+- ❔ The precise nature of the relationship and correspondence between the newly formed chamber and the colonial government
 
 ## Evidence
 

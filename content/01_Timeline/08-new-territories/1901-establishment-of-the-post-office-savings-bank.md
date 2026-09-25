@@ -35,7 +35,7 @@ The creation of the savings bank marked an important step in extending formal fi
 
 ## Claims to verify
 
-- [ ] The exact founding ordinance date of the Post Office Savings Bank in 1901
-- [ ] The initial deposit limits and interest rates offered to early account holders
+- ❔ The exact founding ordinance date of the Post Office Savings Bank in 1901
+- ❔ The initial deposit limits and interest rates offered to early account holders
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

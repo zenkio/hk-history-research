@@ -39,7 +39,7 @@ The founding of the Tai Po Man Mo Temple illustrates how religious architecture 
 
 ## Claims to verify
 
-- [ ] The Man Mo Temple in Tai Po was specifically established around the year 1780.
-- [ ] The temple served as a primary venue for local dispute resolution and market governance during the Qing period.
+- ❔ The Man Mo Temple in Tai Po was specifically established around the year 1780.
+- ❔ The temple served as a primary venue for local dispute resolution and market governance during the Qing period.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

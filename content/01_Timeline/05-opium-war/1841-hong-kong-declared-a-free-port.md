@@ -45,8 +45,8 @@ The declaration of the free port laid the institutional cornerstone for Hong Kon
 
 ## Claims to verify
 
-- [ ] Charles Elliot issued the specific free port proclamation on June 7, 1841
-- [ ] The proclamation explicitly exempted all foreign vessels from customs duties and tonnage dues upon arrival in Hong Kong harbor
+- ❔ Charles Elliot issued the specific free port proclamation on June 7, 1841
+- ❔ The proclamation explicitly exempted all foreign vessels from customs duties and tonnage dues upon arrival in Hong Kong harbor
 
 ## Photos from this period
 

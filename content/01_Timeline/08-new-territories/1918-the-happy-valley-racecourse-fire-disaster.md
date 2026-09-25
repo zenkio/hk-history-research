@@ -40,8 +40,8 @@ The sheer scale of the tragedy shocked the colonial administration and the local
 
 ## Claims to verify
 
-- [ ] The exact death toll exceeded 600 spectators, though precise figures vary across contemporary reports.
-- [ ] Temporary grandstands were constructed primarily of bamboo and wood.
+- ❔ The exact death toll exceeded 600 spectators, though precise figures vary across contemporary reports.
+- ❔ Temporary grandstands were constructed primarily of bamboo and wood.
 
 ## Photos from this period
 

@@ -38,7 +38,7 @@ The creation of the Colonial Secretary's Office signaled the formal start of a c
 
 ## Claims to verify
 
-- [ ] The exact month in 1842 the Colonial Secretary's Office was officially gazetted or functional.
-- [ ] The extent to which the office inherited functions from the earlier naval administration under Charles Elliot.
+- ❔ The exact month in 1842 the Colonial Secretary's Office was officially gazetted or functional.
+- ❔ The extent to which the office inherited functions from the earlier naval administration under Charles Elliot.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

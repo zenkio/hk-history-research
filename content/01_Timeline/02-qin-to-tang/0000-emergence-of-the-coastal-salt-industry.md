@@ -39,7 +39,7 @@ The emergence of the coastal salt industry marked a pivotal transition for the r
 
 ## Claims to verify
 
-- [ ] Implementation date of the Han salt monopoly specifically impacting the coastal Pearl River Delta region around c. 110 BCE
-- [ ] Direct archaeological correlation of early salt-boiling pans in Kowloon Bay dating to the Western Han period
+- ❔ Implementation date of the Han salt monopoly specifically impacting the coastal Pearl River Delta region around c. 110 BCE
+- ❔ Direct archaeological correlation of early salt-boiling pans in Kowloon Bay dating to the Western Han period
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

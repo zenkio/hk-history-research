@@ -39,8 +39,8 @@ The strike at **Watson's Water** served as a prominent micro-illustration of bro
 
 ## Claims to verify
 
-- [ ] The exact start date of the Watson's Water strike was May 15, 2014.
-- [ ] The strike took place primarily at the Tai Po manufacturing plant.
-- [ ] Management and labor agreed to a compromise on wages and heat allowances after mediation.
+- ❔ The exact start date of the Watson's Water strike was May 15, 2014.
+- ❔ The strike took place primarily at the Tai Po manufacturing plant.
+- ❔ Management and labor agreed to a compromise on wages and heat allowances after mediation.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

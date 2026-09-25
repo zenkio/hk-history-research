@@ -41,7 +41,7 @@ The development of dockyards in Aberdeen laid the foundational infrastructure th
 
 ## Claims to verify
 
-- [ ] The exact timeline and nature of the earliest ship repair facilities established in Aberdeen in 1857
-- [ ] The extent of local workforce participation in the nascent Aberdeen dockyard operations
+- ❔ The exact timeline and nature of the earliest ship repair facilities established in Aberdeen in 1857
+- ❔ The extent of local workforce participation in the nascent Aberdeen dockyard operations
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

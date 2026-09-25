@@ -36,7 +36,7 @@ The shift to double-cropping fundamentally altered the rural economy of the regi
 
 ## Claims to verify
 
-- [ ] Did widespread adoption of Champa rice in the Hong Kong region specifically occur around 1100?
-- [ ] To what extent did double-cropping replace single-cropping in the Pearl River Delta during the Northern Song dynasty?
+- ❔ Did widespread adoption of Champa rice in the Hong Kong region specifically occur around 1100?
+- ❔ To what extent did double-cropping replace single-cropping in the Pearl River Delta during the Northern Song dynasty?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

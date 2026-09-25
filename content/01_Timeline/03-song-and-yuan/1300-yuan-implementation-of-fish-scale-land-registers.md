@@ -37,7 +37,7 @@ This bureaucratic standardization marked a critical turning point in the integra
 
 ## Claims to verify
 
-- [ ] Did the Yuan dynasty officially implement fish-scale land registers specifically in the Hong Kong region around the year 1300, or did this practice develop more broadly during the late Yuan and early Ming periods?
-- [ ] To what extent did local clans in the New Territories participate in or resist early imperial land surveys under Mongol rule?
+- ❔ Did the Yuan dynasty officially implement fish-scale land registers specifically in the Hong Kong region around the year 1300, or did this practice develop more broadly during the late Yuan and early Ming periods?
+- ❔ To what extent did local clans in the New Territories participate in or resist early imperial land surveys under Mongol rule?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

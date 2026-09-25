@@ -41,7 +41,7 @@ Operating under the strictures of the **National Security Law** enacted in June 
 
 ## Claims to verify
 
-- [ ] Exact dates and locations of student gatherings involving blank paper in Hong Kong in late November 2022
-- [ ] Specific police intervention numbers and arrests related to the A4 paper demonstrations in Hong Kong
+- ❔ Exact dates and locations of student gatherings involving blank paper in Hong Kong in late November 2022
+- ❔ Specific police intervention numbers and arrests related to the A4 paper demonstrations in Hong Kong
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

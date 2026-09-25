@@ -42,7 +42,7 @@ The founding of St. Stephen's College marked a significant milestone in the evol
 
 ## Claims to verify
 
-- [ ] St. Stephen's College was officially established in the year 1903.
-- [ ] Bishop Joseph Hoare played a central role in the founding of the college.
+- ❔ St. Stephen's College was officially established in the year 1903.
+- ❔ Bishop Joseph Hoare played a central role in the founding of the college.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

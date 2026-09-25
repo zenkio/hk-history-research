@@ -43,8 +43,8 @@ The sheer scale of destruction wrought by Typhoon Wanda marked a critical turnin
 
 ## Claims to verify
 
-- [ ] Typhoon Wanda struck Hong Kong on September 1, 1962
-- [ ] The typhoon caused massive destruction to squatter settlements, particularly in areas like Sha Tin
-- [ ] The disaster served as a catalyst for accelerating public infrastructure and housing reforms
+- ❔ Typhoon Wanda struck Hong Kong on September 1, 1962
+- ❔ The typhoon caused massive destruction to squatter settlements, particularly in areas like Sha Tin
+- ❔ The disaster served as a catalyst for accelerating public infrastructure and housing reforms
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

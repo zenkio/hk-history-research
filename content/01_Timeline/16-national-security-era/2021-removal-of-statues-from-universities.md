@@ -41,8 +41,8 @@ These removals are viewed by observers as a pivotal moment in the physical and s
 
 ## Claims to verify
 
-- [ ] Verify the specific legal or safety justifications provided by each university for the removal of their respective statues.
-- [ ] Confirm the exact dates and times for the removal of the Goddess of Democracy at CUHK and the relief carving at Lingnan University.
-- [ ] Investigate the status of the sculptures following their removal from campus grounds.
+- ❔ Verify the specific legal or safety justifications provided by each university for the removal of their respective statues.
+- ❔ Confirm the exact dates and times for the removal of the Goddess of Democracy at CUHK and the relief carving at Lingnan University.
+- ❔ Investigate the status of the sculptures following their removal from campus grounds.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

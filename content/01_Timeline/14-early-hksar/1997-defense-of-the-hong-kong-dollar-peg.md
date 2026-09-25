@@ -40,7 +40,7 @@ The successful defense of the currency peg in October 1997 preserved the credibi
 
 ## Claims to verify
 
-- [ ] Exact peak interest rate levels reached during the October 23, 1997 speculative attack.
-- [ ] The precise quantum of foreign reserves utilized by the HKMA to defend the peg during the October 1997 episode.
+- ❔ Exact peak interest rate levels reached during the October 23, 1997 speculative attack.
+- ❔ The precise quantum of foreign reserves utilized by the HKMA to defend the peg during the October 1997 episode.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

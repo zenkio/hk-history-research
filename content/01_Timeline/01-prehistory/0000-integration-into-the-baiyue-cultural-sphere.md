@@ -37,7 +37,7 @@ This integration laid the foundational cultural and economic identity of the reg
 
 ## Claims to verify
 
-- [ ] Archaeological assemblages in Hong Kong dated to c. 1000 BCE show distinct geometric hard pottery and bronze casting traditions shared with the wider Pearl River Delta.
-- [ ] Indigenous coastal communities of the region relied on maritime trade and fishing networks characteristic of the Baiyue cultural sphere.
+- ❔ Archaeological assemblages in Hong Kong dated to c. 1000 BCE show distinct geometric hard pottery and bronze casting traditions shared with the wider Pearl River Delta.
+- ❔ Indigenous coastal communities of the region relied on maritime trade and fishing networks characteristic of the Baiyue cultural sphere.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

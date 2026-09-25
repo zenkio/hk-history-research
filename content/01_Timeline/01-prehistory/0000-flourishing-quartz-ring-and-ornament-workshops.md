@@ -40,7 +40,7 @@ The flourishing of quartz ring workshops challenges older historiographical mode
 
 ## Claims to verify
 
-- [ ] Excavations at Sham Wan and related sites demonstrate specialized quartz working specifically around c. 1200 BCE.
-- [ ] Quartz raw materials used in these workshops were sourced locally or through coastal trade networks.
+- ❔ Excavations at Sham Wan and related sites demonstrate specialized quartz working specifically around c. 1200 BCE.
+- ❔ Quartz raw materials used in these workshops were sourced locally or through coastal trade networks.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

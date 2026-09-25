@@ -38,8 +38,8 @@ The return to the coast fundamentally altered the social fabric of the New Terri
 
 ## Claims to verify
 
-- [ ] Confirm the exact year of the official lifting of the Great Clearance edict (1669 vs 1668).
-- [ ] Verify the extent of government-sponsored versus spontaneous migration of Hakka groups into the New Territories after 1669.
-- [ ] Evaluate the primary source evidence for inter-group conflict immediately following the return to the coast versus later periods.
+- ❔ Confirm the exact year of the official lifting of the Great Clearance edict (1669 vs 1668).
+- ❔ Verify the extent of government-sponsored versus spontaneous migration of Hakka groups into the New Territories after 1669.
+- ❔ Evaluate the primary source evidence for inter-group conflict immediately following the return to the coast versus later periods.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

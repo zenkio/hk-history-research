@@ -36,7 +36,7 @@ The launch of FPS marked a watershed moment in Hong Kong's financial technology 
 
 ## Claims to verify
 
-- [ ] The Faster Payment System was officially launched on September 30, 2018.
-- [ ] FPS was developed under the coordination of the Hong Kong Monetary Authority and operated by EPS Company (Hong Kong) Limited.
+- ❔ The Faster Payment System was officially launched on September 30, 2018.
+- ❔ FPS was developed under the coordination of the Hong Kong Monetary Authority and operated by EPS Company (Hong Kong) Limited.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

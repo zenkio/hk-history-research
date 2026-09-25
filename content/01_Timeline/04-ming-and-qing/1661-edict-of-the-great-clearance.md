@@ -40,7 +40,7 @@ The Great Clearance devastated the local society and economy of the Hong Kong re
 
 ## Claims to verify
 
-- [ ] Verify the exact enforcement dates and casualty estimates in Xin'an County archives
-- [ ] Examine local genealogy records regarding the percentage of families who returned after 1669
+- ❔ Verify the exact enforcement dates and casualty estimates in Xin'an County archives
+- ❔ Examine local genealogy records regarding the percentage of families who returned after 1669
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

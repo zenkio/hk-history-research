@@ -42,7 +42,7 @@ The incident is widely viewed by media scholars and sociologists as a watershed 
 
 ## Claims to verify
 
-- [ ] The exact date the video was filmed on KMB Route 68X
-- [ ] The precise viewership statistics reported by international media at the time
+- ❔ The exact date the video was filmed on KMB Route 68X
+- ❔ The precise viewership statistics reported by international media at the time
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

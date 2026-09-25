@@ -36,7 +36,7 @@ The elevation of Chinese to an official language was a critical turning point in
 
 ## Claims to verify
 
-- [ ] The Official Languages Ordinance was formally enacted on March 13, 1974.
-- [ ] Student activism from the Chinese University of Hong Kong played a central role in the Chinese Language Movement.
+- ❔ The Official Languages Ordinance was formally enacted on March 13, 1974.
+- ❔ Student activism from the Chinese University of Hong Kong played a central role in the Chinese Language Movement.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

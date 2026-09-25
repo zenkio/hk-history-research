@@ -38,7 +38,7 @@ This early legal enactment laid the groundwork for the eventual transplantation 
 
 ## Claims to verify
 
-- [ ] Captain Charles Elliot issued provisional criminal and civil regulations specifically on April 30, 1841.
-- [ ] The precise scope and enforcement mechanisms of the April 1841 provisional regulations over local Chinese residents.
+- ❔ Captain Charles Elliot issued provisional criminal and civil regulations specifically on April 30, 1841.
+- ❔ The precise scope and enforcement mechanisms of the April 1841 provisional regulations over local Chinese residents.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

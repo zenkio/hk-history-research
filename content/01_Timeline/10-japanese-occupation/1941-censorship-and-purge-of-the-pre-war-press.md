@@ -36,7 +36,7 @@ The systematic purge of the pre-war press fundamentally altered Hong Kong's medi
 
 ## Claims to verify
 
-- [ ] The exact date when specific pre-war newspapers were officially ordered to cease publication or merge under Japanese administration
-- [ ] The complete roster of newspapers permitted to publish during the occupation years
+- ❔ The exact date when specific pre-war newspapers were officially ordered to cease publication or merge under Japanese administration
+- ❔ The complete roster of newspapers permitted to publish during the occupation years
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

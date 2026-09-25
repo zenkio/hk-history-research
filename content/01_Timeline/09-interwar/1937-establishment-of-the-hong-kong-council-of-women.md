@@ -39,7 +39,7 @@ The creation of the council marked a significant milestone in the history of loc
 
 ## Claims to verify
 
-- [ ] Exact founding date and founding members of the Hong Kong Council of Women in 1937
-- [ ] The precise organizational relationship between the council and existing anti-mui-tsai campaigns
+- ❔ Exact founding date and founding members of the Hong Kong Council of Women in 1937
+- ❔ The precise organizational relationship between the council and existing anti-mui-tsai campaigns
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

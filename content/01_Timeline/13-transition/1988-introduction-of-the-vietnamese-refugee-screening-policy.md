@@ -39,7 +39,7 @@ The implementation of the screening policy marked a fundamental turning point in
 
 ## Claims to verify
 
-- [ ] The exact administrative mechanisms and legal criteria used by the Hong Kong government during the June 1988 screening process.
-- [ ] The precise diplomatic communications between British, Hong Kong, and Vietnamese authorities preceding the implementation of the policy.
+- ❔ The exact administrative mechanisms and legal criteria used by the Hong Kong government during the June 1988 screening process.
+- ❔ The precise diplomatic communications between British, Hong Kong, and Vietnamese authorities preceding the implementation of the policy.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

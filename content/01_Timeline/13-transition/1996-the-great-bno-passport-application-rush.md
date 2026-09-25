@@ -37,7 +37,7 @@ The BNO application rush highlighted the complex identity politics and deep-seat
 
 ## Claims to verify
 
-- [ ] Exact daily application statistics during the March 1996 BNO rush
-- [ ] Specific statutory deadlines established for BNO registration prior to June 30, 1997
+- ❔ Exact daily application statistics during the March 1996 BNO rush
+- ❔ Specific statutory deadlines established for BNO registration prior to June 30, 1997
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

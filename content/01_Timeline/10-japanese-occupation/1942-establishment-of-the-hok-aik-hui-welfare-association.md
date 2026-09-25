@@ -35,7 +35,7 @@ The establishment of the Hok Aik Hui marked a crucial step in the Japanese strat
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hok Aik Hui Welfare Association in March 1942
-- [ ] The specific scope of administrative duties assigned to local elites by the Japanese military administration
+- ❔ The exact founding date of the Hok Aik Hui Welfare Association in March 1942
+- ❔ The specific scope of administrative duties assigned to local elites by the Japanese military administration
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

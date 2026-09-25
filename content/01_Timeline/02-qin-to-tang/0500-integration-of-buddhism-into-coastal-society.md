@@ -36,8 +36,8 @@ The integration of Buddhism facilitated a cultural bridge between the remote sou
 
 ## Claims to verify
 
-- [ ] Archaeological evidence of Buddhist artifacts in Hong Kong dated specifically to the 6th century
-- [ ] The extent of state-sponsored temple building in the coastal south during the Northern and Southern Dynasties
-- [ ] The veracity of records linking early maritime trade routes in Tuen Mun to monastic support networks
+- ❔ Archaeological evidence of Buddhist artifacts in Hong Kong dated specifically to the 6th century
+- ❔ The extent of state-sponsored temple building in the coastal south during the Northern and Southern Dynasties
+- ❔ The veracity of records linking early maritime trade routes in Tuen Mun to monastic support networks
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

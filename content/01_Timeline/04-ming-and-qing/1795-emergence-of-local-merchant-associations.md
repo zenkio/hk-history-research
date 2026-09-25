@@ -37,8 +37,8 @@ The emergence of these associations represents a pivotal shift from a subsistenc
 
 ## Claims to verify
 
-- [ ] Precise dating of the formation of the Yuen Long market association.
-- [ ] The extent to which Qing magistrates formally recognized these guilds in local gazetteers during the 1790s.
-- [ ] The role of specific clans in the establishment of early market associations.
+- ❔ Precise dating of the formation of the Yuen Long market association.
+- ❔ The extent to which Qing magistrates formally recognized these guilds in local gazetteers during the 1790s.
+- ❔ The role of specific clans in the establishment of early market associations.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

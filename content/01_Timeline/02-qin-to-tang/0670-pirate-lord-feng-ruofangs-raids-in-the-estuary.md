@@ -36,7 +36,7 @@ The raids led by **Feng Ruofang** highlighted the severe limitations of early **
 
 ## Claims to verify
 
-- [ ] Feng Ruofang actively operated in the Pearl River estuary around the year 670 CE.
-- [ ] The scale and impact of Feng Ruofang's raids significantly challenged early Tang naval capabilities in the south.
+- ❔ Feng Ruofang actively operated in the Pearl River estuary around the year 670 CE.
+- ❔ The scale and impact of Feng Ruofang's raids significantly challenged early Tang naval capabilities in the south.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

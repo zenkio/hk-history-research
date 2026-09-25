@@ -47,7 +47,7 @@ The Joint Declaration was a landmark international treaty registered with the Un
 
 ## Claims to verify
 
-- [ ] The exact wording of the autonomy provisions agreed upon in the Joint Declaration annexes
-- [ ] The specific nature of local consultation conducted by the British administration prior to the signing
+- ❔ The exact wording of the autonomy provisions agreed upon in the Joint Declaration annexes
+- ❔ The specific nature of local consultation conducted by the British administration prior to the signing
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

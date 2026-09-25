@@ -40,8 +40,8 @@ This event highlighted the deep connection between local Hong Kong politics and 
 
 ## Claims to verify
 
-- [ ] Did the anti-Japanese riots in Kowloon specifically occur on September 26, 1931, or spanned multiple days surrounding that date?
-- [ ] What were the exact casualty figures and property damage reported by the colonial police during the September 1931 riots?
+- ❔ Did the anti-Japanese riots in Kowloon specifically occur on September 26, 1931, or spanned multiple days surrounding that date?
+- ❔ What were the exact casualty figures and property damage reported by the colonial police during the September 1931 riots?
 
 ## Evidence
 

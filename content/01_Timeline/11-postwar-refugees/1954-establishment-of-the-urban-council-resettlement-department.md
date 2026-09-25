@@ -42,7 +42,7 @@ The creation of the Resettlement Department is widely viewed as a watershed mome
 
 ## Claims to verify
 
-- [ ] The precise administrative mechanisms that transferred responsibilities from the Emergency Relief Committee to the newly formed Resettlement Department in 1954.
-- [ ] The exact timeline of the transition from temporary tent cities to permanent multi-storey resettlement blocks.
+- ❔ The precise administrative mechanisms that transferred responsibilities from the Emergency Relief Committee to the newly formed Resettlement Department in 1954.
+- ❔ The exact timeline of the transition from temporary tent cities to permanent multi-storey resettlement blocks.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

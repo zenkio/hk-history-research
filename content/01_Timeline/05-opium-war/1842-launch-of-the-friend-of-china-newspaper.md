@@ -43,8 +43,8 @@ The launch of the newspaper marked a critical milestone in the development of Ho
 
 ## Claims to verify
 
-- [ ] The exact founding date of The Friend of China was March 17, 1842.
-- [ ] George Wyndham Cooke was the initial founder and editor of the newspaper.
+- ❔ The exact founding date of The Friend of China was March 17, 1842.
+- ❔ George Wyndham Cooke was the initial founder and editor of the newspaper.
 
 ## Research notes
 

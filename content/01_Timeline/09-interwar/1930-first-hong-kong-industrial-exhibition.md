@@ -37,8 +37,8 @@ Historians generally regard this exhibition as the foundational step in Hong Kon
 
 ## Claims to verify
 
-- [ ] Confirm the exact dates of the 1930 exhibition venue usage at the City Hall.
-- [ ] Verify the extent of formal involvement by the colonial government in the 1930 event planning.
-- [ ] Confirm the formal name of the organizing body in 1930 versus later iterations of the CMA.
+- ❔ Confirm the exact dates of the 1930 exhibition venue usage at the City Hall.
+- ❔ Verify the extent of formal involvement by the colonial government in the 1930 event planning.
+- ❔ Confirm the formal name of the organizing body in 1930 versus later iterations of the CMA.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

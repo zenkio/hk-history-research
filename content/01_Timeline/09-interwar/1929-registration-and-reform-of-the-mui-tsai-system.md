@@ -41,8 +41,8 @@ The **1929** registration marked a critical legal turning point in shifting the 
 
 ## Claims to verify
 
-- [ ] The exact administrative mechanisms and penalties enforced during the November 1929 mui tsai registration deadline
-- [ ] The precise number of mui tsai successfully registered by the colonial government following the enactment
+- ❔ The exact administrative mechanisms and penalties enforced during the November 1929 mui tsai registration deadline
+- ❔ The precise number of mui tsai successfully registered by the colonial government following the enactment
 
 ## Evidence
 

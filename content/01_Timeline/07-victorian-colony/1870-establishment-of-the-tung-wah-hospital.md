@@ -48,9 +48,9 @@ Beyond its initial medical function, the hospital rapidly evolved into an indisp
 
 ## Claims to verify
 
-- [ ] The hospital was formally established and funded with a combination of merchant donations and a government land grant in 1870.
-- [ ] Tung Wah Hospital officially opened to patients in 1872.
-- [ ] The institution functioned as an intermediary between the colonial government and the local Chinese population throughout the late nineteenth century.
+- ❔ The hospital was formally established and funded with a combination of merchant donations and a government land grant in 1870.
+- ❔ Tung Wah Hospital officially opened to patients in 1872.
+- ❔ The institution functioned as an intermediary between the colonial government and the local Chinese population throughout the late nineteenth century.
 
 ## Research notes
 

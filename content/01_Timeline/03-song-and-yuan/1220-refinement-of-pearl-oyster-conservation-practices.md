@@ -36,7 +36,7 @@ The implementation of these conservation practices highlights the economic impor
 
 ## Claims to verify
 
-- [ ] Verify the specific administrative mandate issued around 1220 regarding pearl harvesting.
-- [ ] Investigate the extent of imperial versus local control over the Tolo Harbour pearl beds.
+- ❔ Verify the specific administrative mandate issued around 1220 regarding pearl harvesting.
+- ❔ Investigate the extent of imperial versus local control over the Tolo Harbour pearl beds.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

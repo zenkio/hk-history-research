@@ -38,7 +38,7 @@ The integration of the Hong Kong territory into the broader Tang maritime networ
 
 ## Claims to verify
 
-- [ ] Specific administrative functions of Tuen Mun as a naval garrison during the Tang dynasty
-- [ ] The exact volume and frequency of foreign merchant vessels anchoring in Hong Kong waters c. 700
+- ❔ Specific administrative functions of Tuen Mun as a naval garrison during the Tang dynasty
+- ❔ The exact volume and frequency of foreign merchant vessels anchoring in Hong Kong waters c. 700
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

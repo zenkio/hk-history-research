@@ -39,8 +39,8 @@ The mass emigration reshaped the social and demographic fabric of the city. Whil
 
 ## Claims to verify
 
-- [ ] Verify the specific annual emigration numbers for 1989-1992 reported by the Hong Kong government.
-- [ ] Confirm the impact of the 'astronaut' phenomenon on the 1990s civil service retention rates.
-- [ ] Check legislative records regarding the government's response to professional staff vacancies during the 1990-1992 period.
+- ❔ Verify the specific annual emigration numbers for 1989-1992 reported by the Hong Kong government.
+- ❔ Confirm the impact of the 'astronaut' phenomenon on the 1990s civil service retention rates.
+- ❔ Check legislative records regarding the government's response to professional staff vacancies during the 1990-1992 period.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

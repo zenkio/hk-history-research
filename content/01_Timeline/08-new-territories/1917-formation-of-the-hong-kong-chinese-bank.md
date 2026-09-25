@@ -36,8 +36,8 @@ The emergence of the bank is often interpreted as an indicator of the increasing
 
 ## Claims to verify
 
-- [ ] The exact incorporation date of the Hong Kong Chinese Bank in 1917.
-- [ ] The list of founding directors involved in the establishment of the Hong Kong Chinese Bank.
-- [ ] The extent of the bank's interaction with the colonial government regarding regulatory policy.
+- ❔ The exact incorporation date of the Hong Kong Chinese Bank in 1917.
+- ❔ The list of founding directors involved in the establishment of the Hong Kong Chinese Bank.
+- ❔ The extent of the bank's interaction with the colonial government regarding regulatory policy.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

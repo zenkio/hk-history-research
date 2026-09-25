@@ -35,8 +35,8 @@ This era marked a shift from isolated local subsistence to participation in the 
 
 ## Claims to verify
 
-- [ ] Archaeological evidence of international cargo in Tuen Mun dating specifically to 500-550
-- [ ] Degree of administrative oversight by Southern Dynasties officials over coastal shipping lanes
-- [ ] Extent of permanent settlement versus transient maritime populations during the 6th century
+- ❔ Archaeological evidence of international cargo in Tuen Mun dating specifically to 500-550
+- ❔ Degree of administrative oversight by Southern Dynasties officials over coastal shipping lanes
+- ❔ Extent of permanent settlement versus transient maritime populations during the 6th century
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

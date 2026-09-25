@@ -40,8 +40,8 @@ The formation of the Democratic Party represented the most significant consolida
 
 ## Claims to verify
 
-- [ ] Date of the official founding ceremony of the Democratic Party
-- [ ] List of founding members of the merger
-- [ ] Official internal documents regarding the platform consensus between United Democrats and Meeting Point
+- ❔ Date of the official founding ceremony of the Democratic Party
+- ❔ List of founding members of the merger
+- ❔ Official internal documents regarding the platform consensus between United Democrats and Meeting Point
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

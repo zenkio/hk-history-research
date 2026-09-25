@@ -36,8 +36,8 @@ The Green Cross Campaign represented a significant transition in Hong Kong’s g
 
 ## Claims to verify
 
-- [ ] The exact start date of the Green Cross Campaign as 1974.
-- [ ] The official mandate and authority given to the Labour Department regarding safety enforcement during the campaign.
-- [ ] The extent to which the Green Cross symbol was universally adopted across Hong Kong's diverse range of industrial sectors.
+- ❔ The exact start date of the Green Cross Campaign as 1974.
+- ❔ The official mandate and authority given to the Labour Department regarding safety enforcement during the campaign.
+- ❔ The extent to which the Green Cross symbol was universally adopted across Hong Kong's diverse range of industrial sectors.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

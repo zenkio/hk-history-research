@@ -39,8 +39,8 @@ The lectures served as a major catalyst for local literary discourse and modern 
 
 ## Claims to verify
 
-- [ ] Verify the exact dates of Lu Xun's arrival in Hong Kong in February 1927.
-- [ ] Confirm the specific venues and exact titles of the lectures delivered by Lu Xun during his Hong Kong visit.
+- ❔ Verify the exact dates of Lu Xun's arrival in Hong Kong in February 1927.
+- ❔ Confirm the specific venues and exact titles of the lectures delivered by Lu Xun during his Hong Kong visit.
 
 ## Evidence
 

@@ -39,8 +39,8 @@ The introduction of these registers marked a shift in the relationship between t
 
 ## Claims to verify
 
-- [ ] Verify if the specific date of 1320 for Fish-Scale Land Register implementation in the Pearl River Delta is universally accepted in primary Yuan records.
-- [ ] Confirm the extent to which these registers effectively reached the coastal islands of the Hong Kong region versus the inland districts.
-- [ ] Assess the availability of primary extant documents from the Yuan dynasty confirming local clan land registration in the region.
+- ❔ Verify if the specific date of 1320 for Fish-Scale Land Register implementation in the Pearl River Delta is universally accepted in primary Yuan records.
+- ❔ Confirm the extent to which these registers effectively reached the coastal islands of the Hong Kong region versus the inland districts.
+- ❔ Assess the availability of primary extant documents from the Yuan dynasty confirming local clan land registration in the region.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

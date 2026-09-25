@@ -40,7 +40,7 @@ The influx of refugees resulting from **Huang Chao's Rebellion** is widely regar
 
 ## Claims to verify
 
-- [ ] Did the sacking of Guangzhou by Huang Chao in 879 directly cause verifiable permanent migrations specifically into the geographic boundaries of modern Hong Kong?
-- [ ] To what extent can New Territories clan genealogies claiming late-Tang refugee origins be corroborated by archaeological or contemporary written evidence?
+- ❔ Did the sacking of Guangzhou by Huang Chao in 879 directly cause verifiable permanent migrations specifically into the geographic boundaries of modern Hong Kong?
+- ❔ To what extent can New Territories clan genealogies claiming late-Tang refugee origins be corroborated by archaeological or contemporary written evidence?
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

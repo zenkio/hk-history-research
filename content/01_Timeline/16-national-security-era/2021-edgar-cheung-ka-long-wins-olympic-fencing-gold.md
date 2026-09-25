@@ -43,8 +43,8 @@ The victory generated an unprecedented wave of public euphoria across **Hong Kon
 
 ## Claims to verify
 
-- [ ] Edgar Cheung Ka-long won Hong Kong's first Olympic gold medal in 25 years on July 26, 2021.
-- [ ] The final score of the gold medal match against Daniele Garozzo was 15-14.
-- [ ] This was Hong Kong's second-ever Olympic gold medal after Lee Lai-shan's win in 1996.
+- ❔ Edgar Cheung Ka-long won Hong Kong's first Olympic gold medal in 25 years on July 26, 2021.
+- ❔ The final score of the gold medal match against Daniele Garozzo was 15-14.
+- ❔ This was Hong Kong's second-ever Olympic gold medal after Lee Lai-shan's win in 1996.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

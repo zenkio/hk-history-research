@@ -41,7 +41,7 @@ This period marked the transition from transient migrant settlement to the estab
 
 ## Claims to verify
 
-- [ ] The exact timeline of the earliest surviving genealogies compared to the mid-14th century date.
-- [ ] The degree to which Yuan dynasty central policies influenced local land registration in the Lingnan region.
+- ❔ The exact timeline of the earliest surviving genealogies compared to the mid-14th century date.
+- ❔ The degree to which Yuan dynasty central policies influenced local land registration in the Lingnan region.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

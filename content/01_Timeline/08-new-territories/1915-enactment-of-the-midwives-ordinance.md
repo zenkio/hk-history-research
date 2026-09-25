@@ -35,7 +35,7 @@ The ordinance marked a pivotal shift in the colonial state's approach to the pri
 
 ## Claims to verify
 
-- [ ] Confirm the exact numerical impact of the 1915 ordinance on registered midwife statistics in the years immediately following.
-- [ ] Verify the extent to which the 1915 ordinance carried criminal penalties for non-compliance for unregistered practitioners during the first decade.
+- ❔ Confirm the exact numerical impact of the 1915 ordinance on registered midwife statistics in the years immediately following.
+- ❔ Verify the extent to which the 1915 ordinance carried criminal penalties for non-compliance for unregistered practitioners during the first decade.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

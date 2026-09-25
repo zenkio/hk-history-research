@@ -36,8 +36,8 @@ This event marked a definitive shift in the governance of Hong Kong. For the gov
 
 ## Claims to verify
 
-- [ ] Verify the exact date of the Civil Service Bureau announcement regarding the declaration requirement
-- [ ] Check the percentage of civil servants who refused to sign the declaration versus those who resigned
-- [ ] Cross-reference the specific clauses of the National Security Law cited by the Civil Service Bureau in official circulars
+- ❔ Verify the exact date of the Civil Service Bureau announcement regarding the declaration requirement
+- ❔ Check the percentage of civil servants who refused to sign the declaration versus those who resigned
+- ❔ Cross-reference the specific clauses of the National Security Law cited by the Civil Service Bureau in official circulars
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

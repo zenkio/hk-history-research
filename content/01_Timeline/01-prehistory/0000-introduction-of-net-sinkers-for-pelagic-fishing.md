@@ -38,7 +38,7 @@ While the precise social organization behind this industry remains unknown, the 
 
 ## Claims to verify
 
-- [ ] Verify the carbon-dating accuracy for the specific net sinker finds at Sham Wan relative to the 3500-3000 BCE window.
-- [ ] Confirm if the classification of these artifacts as exclusively for 'pelagic' fishing is universally accepted by regional maritime archaeologists.
+- ❔ Verify the carbon-dating accuracy for the specific net sinker finds at Sham Wan relative to the 3500-3000 BCE window.
+- ❔ Confirm if the classification of these artifacts as exclusively for 'pelagic' fishing is universally accepted by regional maritime archaeologists.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

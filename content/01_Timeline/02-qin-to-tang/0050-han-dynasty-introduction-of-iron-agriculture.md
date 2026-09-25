@@ -35,7 +35,7 @@ The adoption of iron technology is widely interpreted by scholars as a turning p
 
 ## Claims to verify
 
-- [ ] Verify the dating of specific iron tool finds in the Hong Kong SAR to the 50-100 CE window.
-- [ ] Assess the extent of Han administrative control over the New Territories region during the Eastern Han period.
+- ❔ Verify the dating of specific iron tool finds in the Hong Kong SAR to the 50-100 CE window.
+- ❔ Assess the extent of Han administrative control over the New Territories region during the Eastern Han period.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

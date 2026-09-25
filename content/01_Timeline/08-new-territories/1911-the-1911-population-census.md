@@ -39,8 +39,8 @@ The census data provided colonial authorities with critical metrics regarding ho
 
 ## Claims to verify
 
-- [ ] The 1911 population census officially recorded a total population exceeding 450,000.
-- [ ] The population spike was directly and primarily caused by refugees fleeing the fall of the Qing Dynasty.
+- ❔ The 1911 population census officially recorded a total population exceeding 450,000.
+- ❔ The population spike was directly and primarily caused by refugees fleeing the fall of the Qing Dynasty.
 
 ## Research notes
 

@@ -40,7 +40,7 @@ This legislative step marked the beginning of decades of intense debate over the
 
 ## Claims to verify
 
-- [ ] Specific textual provisions and enforcement mechanisms outlined in the 1904 Female Domestic Service Ordinance Amendment
-- [ ] Exact degree of consultation between colonial officials and local Chinese elites regarding the 1904 legislation
+- ❔ Specific textual provisions and enforcement mechanisms outlined in the 1904 Female Domestic Service Ordinance Amendment
+- ❔ Exact degree of consultation between colonial officials and local Chinese elites regarding the 1904 legislation
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

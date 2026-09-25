@@ -36,8 +36,8 @@ The formation of the Federation marked a maturation of Hong Kong's industrial po
 
 ## Claims to verify
 
-- [ ] Verification of the exact date of the Federation of Hong Kong Industries Ordinance enactment.
-- [ ] Specific membership numbers of the Federation at the time of its 1960 founding.
-- [ ] Extent of the government's financial or legislative involvement in the initial formation of the body.
+- ❔ Verification of the exact date of the Federation of Hong Kong Industries Ordinance enactment.
+- ❔ Specific membership numbers of the Federation at the time of its 1960 founding.
+- ❔ Extent of the government's financial or legislative involvement in the initial formation of the body.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

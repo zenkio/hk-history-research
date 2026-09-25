@@ -43,7 +43,7 @@ The Battle of Xicaowan marked a crucial turning point in early Sino-Western rela
 
 ## Claims to verify
 
-- [ ] Exact geographical coordinates and modern identification of Xicaowan
-- [ ] The precise size and composition of the Ming and Portuguese naval forces involved in 1522
+- ❔ Exact geographical coordinates and modern identification of Xicaowan
+- ❔ The precise size and composition of the Ming and Portuguese naval forces involved in 1522
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

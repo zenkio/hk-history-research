@@ -40,7 +40,7 @@ The arrival of the Cinematographe is widely regarded by historians as the founda
 
 ## Claims to verify
 
-- [ ] The exact dates and specific venue of the first Lumière Cinematographe screening in Hong Kong in April 1897.
-- [ ] The extent of local Chinese audience participation versus European expatriate attendance at the initial screenings.
+- ❔ The exact dates and specific venue of the first Lumière Cinematographe screening in Hong Kong in April 1897.
+- ❔ The extent of local Chinese audience participation versus European expatriate attendance at the initial screenings.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

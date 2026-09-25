@@ -37,7 +37,7 @@ The establishment of the Tuen Mun garrison marks one of the earliest well-docume
 
 ## Claims to verify
 
-- [ ] A military garrison of exactly 2,000 soldiers was stationed in Tuen Mun in the year 736.
-- [ ] The primary mandate of the Tuen Mun garrison was the protection of merchant shipping and defense against coastal piracy during the Tang dynasty.
+- ❔ A military garrison of exactly 2,000 soldiers was stationed in Tuen Mun in the year 736.
+- ❔ The primary mandate of the Tuen Mun garrison was the protection of merchant shipping and defense against coastal piracy during the Tang dynasty.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -36,8 +36,8 @@ The transition to the '3-3-4' system represents a major shift in the pedagogical
 
 ## Claims to verify
 
-- [ ] The exact date of the legislative passage of the 3-3-4 reform package.
-- [ ] The formal stated objectives of the Liberal Studies curriculum at the time of its 2009 introduction.
-- [ ] The official timeline of university degree expansion from three to four years.
+- ❔ The exact date of the legislative passage of the 3-3-4 reform package.
+- ❔ The formal stated objectives of the Liberal Studies curriculum at the time of its 2009 introduction.
+- ❔ The official timeline of university degree expansion from three to four years.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

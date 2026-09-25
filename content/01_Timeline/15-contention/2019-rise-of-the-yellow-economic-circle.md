@@ -38,7 +38,7 @@ The phenomenon represented a novel form of consumer activism and economic protes
 
 ## Claims to verify
 
-- [ ] The widespread adoption of mobile applications and directories specifically designed to map and promote yellow-certified businesses in late 2019.
-- [ ] Public statements by government officials regarding the legality and social impact of the Yellow Economic Circle.
+- ❔ The widespread adoption of mobile applications and directories specifically designed to map and promote yellow-certified businesses in late 2019.
+- ❔ Public statements by government officials regarding the legality and social impact of the Yellow Economic Circle.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -36,7 +36,7 @@ The currency replacement marked the definitive return of British colonial rule a
 
 ## Claims to verify
 
-- [ ] The exact exchange rate policies and timeline enforced by the British military administration regarding the military yen in late 1945.
-- [ ] The total volume of military yen in circulation at the time of the Japanese surrender.
+- ❔ The exact exchange rate policies and timeline enforced by the British military administration regarding the military yen in late 1945.
+- ❔ The total volume of military yen in circulation at the time of the Japanese surrender.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

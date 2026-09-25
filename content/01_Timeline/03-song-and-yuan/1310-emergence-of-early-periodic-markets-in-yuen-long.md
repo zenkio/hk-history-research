@@ -37,7 +37,7 @@ The emergence of these early markets marks a pivotal moment in the socio-economi
 
 ## Claims to verify
 
-- [ ] Informal periodic markets emerged in Yuen Long around 1310
-- [ ] Trade specifically occurred between inland farming clans and coastal fishing communities during the Yuan dynasty
+- ❔ Informal periodic markets emerged in Yuen Long around 1310
+- ❔ Trade specifically occurred between inland farming clans and coastal fishing communities during the Yuan dynasty
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -40,7 +40,7 @@ The consolidation of the Dan community laid the foundational social structure fo
 
 ## Claims to verify
 
-- [ ] The specific consolidation of the Dan identity specifically around the year 618 CE in the Hong Kong region
-- [ ] The exact administrative relationship between early Tang authorities in Tuen Mun and local boat-dwelling populations
+- ❔ The specific consolidation of the Dan identity specifically around the year 618 CE in the Hong Kong region
+- ❔ The exact administrative relationship between early Tang authorities in Tuen Mun and local boat-dwelling populations
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

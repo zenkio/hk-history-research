@@ -39,8 +39,8 @@ The introduction of the ordinance represented a fundamental shift in the colonia
 
 ## Claims to verify
 
-- [ ] Exact date of the ordinance's enactment in 1941.
-- [ ] The specific legislative scope of the 1941 ordinance compared to post-war rent control acts.
-- [ ] Documentation of public reaction among landlords and tenant organizations in contemporary 1941 newspapers.
+- ❔ Exact date of the ordinance's enactment in 1941.
+- ❔ The specific legislative scope of the 1941 ordinance compared to post-war rent control acts.
+- ❔ Documentation of public reaction among landlords and tenant organizations in contemporary 1941 newspapers.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

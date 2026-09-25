@@ -38,7 +38,7 @@ The founding of the Council marked a strategic pivot in economic policy. While t
 
 ## Claims to verify
 
-- [ ] The exact legislative ordinance and enactment date for the establishment of the Hong Kong Productivity Council in 1965.
-- [ ] The initial funding structure and governance model implemented by the colonial government for the Council.
+- ❔ The exact legislative ordinance and enactment date for the establishment of the Hong Kong Productivity Council in 1965.
+- ❔ The initial funding structure and governance model implemented by the colonial government for the Council.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

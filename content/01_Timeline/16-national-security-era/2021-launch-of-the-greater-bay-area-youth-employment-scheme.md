@@ -40,7 +40,7 @@ The scheme marked a concrete step in Beijing and Hong Kong's broader strategy to
 
 ## Claims to verify
 
-- [ ] The Greater Bay Area Youth Employment Scheme was officially launched on January 8, 2021.
-- [ ] The government-subsidized monthly allowance was set at up to HK$18,000 for up to 18 months.
+- ❔ The Greater Bay Area Youth Employment Scheme was officially launched on January 8, 2021.
+- ❔ The government-subsidized monthly allowance was set at up to HK$18,000 for up to 18 months.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

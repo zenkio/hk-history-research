@@ -36,7 +36,7 @@ The establishment of the Competition Commission represented a fundamental shift 
 
 ## Claims to verify
 
-- [ ] The exact date the Competition Ordinance was passed in the Legislative Council.
-- [ ] The official timeline of the Competition Commission's full commencement date versus the enactment of the Ordinance.
+- ❔ The exact date the Competition Ordinance was passed in the Legislative Council.
+- ❔ The official timeline of the Competition Commission's full commencement date versus the enactment of the Ordinance.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

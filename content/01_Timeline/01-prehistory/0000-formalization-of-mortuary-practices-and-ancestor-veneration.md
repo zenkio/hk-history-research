@@ -35,7 +35,7 @@ These burial patterns are significant because they indicate the consolidation of
 
 ## Claims to verify
 
-- [ ] Correlation between the specific geometric pottery styles and the dating of -800 to -500.
-- [ ] The extent to which secondary burial practices in Sha Ha were widespread versus limited to an elite minority.
+- ❔ Correlation between the specific geometric pottery styles and the dating of -800 to -500.
+- ❔ The extent to which secondary burial practices in Sha Ha were widespread versus limited to an elite minority.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

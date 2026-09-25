@@ -37,8 +37,8 @@ The construction of these temples is widely interpreted as a manifestation of th
 
 ## Claims to verify
 
-- [ ] Verify specific archaeological evidence for 12th-century Buddhist temple foundations in Tuen Mun.
-- [ ] Examine the correlation between Song Dynasty coastal salt production and local religious architecture.
-- [ ] Assess the historiographical reliability of local clan genealogies in dating early religious structures.
+- ❔ Verify specific archaeological evidence for 12th-century Buddhist temple foundations in Tuen Mun.
+- ❔ Examine the correlation between Song Dynasty coastal salt production and local religious architecture.
+- ❔ Assess the historiographical reliability of local clan genealogies in dating early religious structures.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

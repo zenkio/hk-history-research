@@ -38,7 +38,7 @@ The enforcement of the mandatory app usage marked a critical intersection of pub
 
 ## Claims to verify
 
-- [ ] The exact date the universal mandate for LeaveHomeSafe took effect across almost all public venues was December 9, 2021.
-- [ ] Exemptions were provided for specific demographics such as young children and the elderly under designated conditions.
+- ❔ The exact date the universal mandate for LeaveHomeSafe took effect across almost all public venues was December 9, 2021.
+- ❔ Exemptions were provided for specific demographics such as young children and the elderly under designated conditions.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

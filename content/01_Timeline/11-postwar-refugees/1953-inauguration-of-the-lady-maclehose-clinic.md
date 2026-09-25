@@ -39,8 +39,8 @@ The establishment of the clinic reflects the shifting priorities of the Hong Kon
 
 ## Claims to verify
 
-- [ ] Exact inauguration date of the Lady MacLehose Clinic in 1953
-- [ ] Specific administrative affiliation and funding sources for the clinic's establishment
-- [ ] Initial patient capacity and primary medical services offered at the clinic upon opening
+- ❔ Exact inauguration date of the Lady MacLehose Clinic in 1953
+- ❔ Specific administrative affiliation and funding sources for the clinic's establishment
+- ❔ Initial patient capacity and primary medical services offered at the clinic upon opening
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

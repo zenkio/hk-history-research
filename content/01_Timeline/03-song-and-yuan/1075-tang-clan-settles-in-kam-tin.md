@@ -37,7 +37,7 @@ The settlement of the Tang clan marked a crucial turning point in the demographi
 
 ## Claims to verify
 
-- [ ] Tang Fu-hip settled in Kam Tin precisely around the year 1075.
-- [ ] The establishment of private academies by early Tang settlers initiated the landowning dominance of the Five Great Clans.
+- ❔ Tang Fu-hip settled in Kam Tin precisely around the year 1075.
+- ❔ The establishment of private academies by early Tang settlers initiated the landowning dominance of the Five Great Clans.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

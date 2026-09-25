@@ -42,7 +42,7 @@ The promulgation of the National Security Law marked a watershed moment in Hong 
 
 ## Claims to verify
 
-- [ ] The National Security Law was enacted and came into effect on June 30, 2020.
-- [ ] The law was added to Annex III of the Basic Law without passing through Hong Kong's Legislative Council.
+- ❔ The National Security Law was enacted and came into effect on June 30, 2020.
+- ❔ The law was added to Annex III of the Basic Law without passing through Hong Kong's Legislative Council.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

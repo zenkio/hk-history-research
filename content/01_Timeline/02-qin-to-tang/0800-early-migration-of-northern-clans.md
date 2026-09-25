@@ -37,6 +37,6 @@ This early migration wave laid the foundational social and economic structures o
 
 ## Claims to verify
 
-- [ ] Specific migration dates rely heavily on post-Tang clan genealogies compiled centuries later rather than contemporary Tang-era census or tax records.
+- ❔ Specific migration dates rely heavily on post-Tang clan genealogies compiled centuries later rather than contemporary Tang-era census or tax records.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

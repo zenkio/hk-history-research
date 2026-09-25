@@ -44,8 +44,8 @@ The gathering of the fleet in Hong Kong waters is viewed by historians as a crit
 
 ## Claims to verify
 
-- [ ] The exact arrival dates and composition of the British expeditionary fleet gathering in Hong Kong waters in June 1840.
-- [ ] The nature of interactions between the gathered British forces and the local inhabitants of Hong Kong Island prior to formal annexation.
+- ❔ The exact arrival dates and composition of the British expeditionary fleet gathering in Hong Kong waters in June 1840.
+- ❔ The nature of interactions between the gathered British forces and the local inhabitants of Hong Kong Island prior to formal annexation.
 
 ## Evidence
 

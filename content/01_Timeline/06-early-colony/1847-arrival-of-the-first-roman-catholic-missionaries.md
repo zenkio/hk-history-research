@@ -38,8 +38,8 @@ The establishment of the Catholic mission introduced a new layer of social servi
 
 ## Claims to verify
 
-- [ ] The exact date of the formal establishment of the Apostolic Prefecture.
-- [ ] The extent to which Anglican colonial officials actively opposed the Catholic mission in the 1840s.
-- [ ] The number of local converts during the initial years of the mission.
+- ❔ The exact date of the formal establishment of the Apostolic Prefecture.
+- ❔ The extent to which Anglican colonial officials actively opposed the Catholic mission in the 1840s.
+- ❔ The number of local converts during the initial years of the mission.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

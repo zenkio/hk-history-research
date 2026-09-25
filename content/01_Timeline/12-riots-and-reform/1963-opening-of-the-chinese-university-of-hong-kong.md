@@ -37,7 +37,7 @@ CUHK filled a crucial gap by offering tertiary instruction in Chinese, shaping g
 
 ## Claims to verify
 
-- [ ] The Chinese University of Hong Kong was formally established on October 17, 1963.
-- [ ] The university initially integrated Chung Chi College, New Asia College, and United College under a federal structure.
+- ❔ The Chinese University of Hong Kong was formally established on October 17, 1963.
+- ❔ The university initially integrated Chung Chi College, New Asia College, and United College under a federal structure.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

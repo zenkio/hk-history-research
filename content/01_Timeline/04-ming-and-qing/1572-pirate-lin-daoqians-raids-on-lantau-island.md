@@ -38,7 +38,7 @@ The events of 1572 highlighted the severe vulnerability of the delta's coastal a
 
 ## Claims to verify
 
-- [ ] Did Lin Daoqian explicitly use Lantau Island as a base in the specific year 1572, or should the timeline be viewed as a broader period during the Wanli era?
-- [ ] What specific Ming naval units were dispatched to counter Lin Daoqian in the Pearl River estuary?
+- ❔ Did Lin Daoqian explicitly use Lantau Island as a base in the specific year 1572, or should the timeline be viewed as a broader period during the Wanli era?
+- ❔ What specific Ming naval units were dispatched to counter Lin Daoqian in the Pearl River estuary?
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

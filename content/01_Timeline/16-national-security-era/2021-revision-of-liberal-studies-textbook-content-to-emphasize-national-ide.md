@@ -42,7 +42,7 @@ This curricular overhaul marked a watershed moment in Hong Kong's educational hi
 
 ## Claims to verify
 
-- [ ] The exact date of June 10, 2021, for the specific wave of textbook revisions or vetting outcomes.
-- [ ] The specific statutory mechanisms used by the Education Bureau to mandate textbook content changes.
+- ❔ The exact date of June 10, 2021, for the specific wave of textbook revisions or vetting outcomes.
+- ❔ The specific statutory mechanisms used by the Education Bureau to mandate textbook content changes.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

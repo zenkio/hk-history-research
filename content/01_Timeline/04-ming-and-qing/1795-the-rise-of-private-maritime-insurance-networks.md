@@ -42,7 +42,7 @@ These insurance networks signify an important evolution in the socio-economic hi
 
 ## Claims to verify
 
-- [ ] The extent to which 1795 represents a formalization point for mutual aid funds in the region.
-- [ ] The degree of overlap between lineage-based associations and maritime insurance pooling.
+- ❔ The extent to which 1795 represents a formalization point for mutual aid funds in the region.
+- ❔ The degree of overlap between lineage-based associations and maritime insurance pooling.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

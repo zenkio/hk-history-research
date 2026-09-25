@@ -40,8 +40,8 @@ The arrival of the fleet marked the conclusion of the Japanese occupation and th
 
 ## Claims to verify
 
-- [ ] The specific date of the formal surrender ceremony versus the date of the fleet's arrival.
-- [ ] The official diplomatic communications between the UK and the Republic of China regarding the administration of Hong Kong in August 1945.
-- [ ] The extent of local involvement in the transition period compared to military-directed tasks.
+- ❔ The specific date of the formal surrender ceremony versus the date of the fleet's arrival.
+- ❔ The official diplomatic communications between the UK and the Republic of China regarding the administration of Hong Kong in August 1945.
+- ❔ The extent of local involvement in the transition period compared to military-directed tasks.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

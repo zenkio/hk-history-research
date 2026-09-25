@@ -35,7 +35,7 @@ The health crisis of **1944** underscored the devastating human cost of the occu
 
 ## Claims to verify
 
-- [ ] Exact mortality statistics for beriberi and cholera in March 1944.
-- [ ] The specific distribution channels and rationing amounts of Vitamin B1-rich foods during early 1944.
+- ❔ Exact mortality statistics for beriberi and cholera in March 1944.
+- ❔ The specific distribution channels and rationing amounts of Vitamin B1-rich foods during early 1944.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -37,7 +37,7 @@ This legislative milestone fundamentally altered the relationship between labor 
 
 ## Claims to verify
 
-- [ ] The initial statutory minimum wage was set at HK$28 per hour upon implementation on May 1, 2011.
-- [ ] The Provisional Minimum Wage Commission was responsible for recommending the initial rate.
+- ❔ The initial statutory minimum wage was set at HK$28 per hour upon implementation on May 1, 2011.
+- ❔ The Provisional Minimum Wage Commission was responsible for recommending the initial rate.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

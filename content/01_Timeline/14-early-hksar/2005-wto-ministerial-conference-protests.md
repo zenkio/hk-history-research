@@ -39,8 +39,8 @@ The protests put local security forces and the 'One Country, Two Systems' framew
 
 ## Claims to verify
 
-- [ ] Exact number of protesters detained and prosecuted in Hong Kong courts following the December 2005 clashes
-- [ ] Official police casualty figures and specific crowd control munitions deployed during the Wan Chai protests
+- ❔ Exact number of protesters detained and prosecuted in Hong Kong courts following the December 2005 clashes
+- ❔ Official police casualty figures and specific crowd control munitions deployed during the Wan Chai protests
 
 ## Photos from this period
 

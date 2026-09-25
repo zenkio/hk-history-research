@@ -42,8 +42,8 @@ Legge’s translation project laid foundational groundwork for modern sinology a
 
 ## Claims to verify
 
-- [ ] James Legge began publishing his core translations of the Chinese classics around 1853.
-- [ ] Wang Tao collaborated closely with James Legge on these translation and publishing efforts.
+- ❔ James Legge began publishing his core translations of the Chinese classics around 1853.
+- ❔ Wang Tao collaborated closely with James Legge on these translation and publishing efforts.
 
 ## Evidence
 

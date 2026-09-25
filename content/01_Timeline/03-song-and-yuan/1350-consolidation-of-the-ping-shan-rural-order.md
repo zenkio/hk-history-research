@@ -37,8 +37,8 @@ The consolidation of the **Ping Shan** rural order serves as a primary example o
 
 ## Claims to verify
 
-- [ ] The exact dating of the consolidation of Ping Shan's structural organization to 1350.
-- [ ] The degree to which the 14th-century defensive architecture in Ping Shan matches the extant structures surviving today.
-- [ ] The extent to which clan-based governance served as an official proxy for the failing Yuan state.
+- ❔ The exact dating of the consolidation of Ping Shan's structural organization to 1350.
+- ❔ The degree to which the 14th-century defensive architecture in Ping Shan matches the extant structures surviving today.
+- ❔ The extent to which clan-based governance served as an official proxy for the failing Yuan state.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

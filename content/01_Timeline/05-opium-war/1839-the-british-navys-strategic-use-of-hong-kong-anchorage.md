@@ -39,7 +39,7 @@ The strategic realization of Hong Kong’s potential as a 'harbor of refuge' mar
 
 ## Claims to verify
 
-- [ ] The exact date when the British fleet first sought shelter in the Hong Kong harbor in 1839.
-- [ ] The extent to which the deep-water harbor was formally recognized by the British Admiralty versus local merchant captains prior to 1839.
+- ❔ The exact date when the British fleet first sought shelter in the Hong Kong harbor in 1839.
+- ❔ The extent to which the deep-water harbor was formally recognized by the British Admiralty versus local merchant captains prior to 1839.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

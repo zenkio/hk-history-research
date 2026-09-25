@@ -36,7 +36,7 @@ The outcome was widely interpreted as a clear, quantifiable expression of public
 
 ## Claims to verify
 
-- [ ] Voter turnout reached 71.2% with nearly 2.94 million votes cast.
-- [ ] Pro-democracy candidates won control of 17 out of 18 District Councils.
+- ❔ Voter turnout reached 71.2% with nearly 2.94 million votes cast.
+- ❔ Pro-democracy candidates won control of 17 out of 18 District Councils.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

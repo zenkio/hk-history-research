@@ -38,8 +38,8 @@ The formation of the dispensary serves as a case study for the integration of co
 
 ## Claims to verify
 
-- [ ] The exact date of the founding of the Hong Kong Dispensary as 1846.
-- [ ] The initial location of the pharmacy on Wellington Street.
-- [ ] The timeline of Thomas Boswell Watson's arrival in Hong Kong relative to the store's opening.
+- ❔ The exact date of the founding of the Hong Kong Dispensary as 1846.
+- ❔ The initial location of the pharmacy on Wellington Street.
+- ❔ The timeline of Thomas Boswell Watson's arrival in Hong Kong relative to the store's opening.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

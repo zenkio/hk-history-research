@@ -36,8 +36,8 @@ This shift marked a profound transition in Hong Kong politics. Prior to **2015**
 
 ## Claims to verify
 
-- [ ] The specific editorial timeline of the University of Hong Kong's 'Undergrad' magazine regarding independence in 2015
-- [ ] The extent to which 2014 protest infrastructure directly enabled the 2015 shift in political discourse
-- [ ] The official response of the University of Hong Kong administration to the content published in 2015
+- ❔ The specific editorial timeline of the University of Hong Kong's 'Undergrad' magazine regarding independence in 2015
+- ❔ The extent to which 2014 protest infrastructure directly enabled the 2015 shift in political discourse
+- ❔ The official response of the University of Hong Kong administration to the content published in 2015
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

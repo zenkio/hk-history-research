@@ -38,7 +38,7 @@ The establishment of the association is viewed by historians as an important wat
 
 ## Claims to verify
 
-- [ ] The Hong Kong Chinese Civil Servants' Association was formally established on December 30, 1945.
-- [ ] The association was founded specifically to advocate for local Chinese employees within the colonial administration during the post-war recovery period.
+- ❔ The Hong Kong Chinese Civil Servants' Association was formally established on December 30, 1945.
+- ❔ The association was founded specifically to advocate for local Chinese employees within the colonial administration during the post-war recovery period.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

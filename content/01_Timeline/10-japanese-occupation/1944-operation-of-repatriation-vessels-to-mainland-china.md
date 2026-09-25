@@ -38,7 +38,7 @@ This operation starkly illustrates the brutal realities of the three years and e
 
 ## Claims to verify
 
-- [ ] Specific shipping manifests or Japanese administrative orders detailing the exact scale and scheduling of repatriation vessels in July 1944
-- [ ] Primary accounts documenting the mortality rates and sanitary conditions aboard the coastal vessels bound for Guangdong
+- ❔ Specific shipping manifests or Japanese administrative orders detailing the exact scale and scheduling of repatriation vessels in July 1944
+- ❔ Primary accounts documenting the mortality rates and sanitary conditions aboard the coastal vessels bound for Guangdong
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

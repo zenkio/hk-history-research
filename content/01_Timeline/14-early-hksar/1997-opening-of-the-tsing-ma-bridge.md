@@ -39,7 +39,7 @@ The completion of the Tsing Ma Bridge served as a major physical expansion of Ho
 
 ## Claims to verify
 
-- [ ] Confirmation of the specific engineering records regarding the status of the 'world's longest span suspension bridge' for dual-use traffic in 1997.
-- [ ] Verification of the exact date of the opening ceremony hosted by the colonial government.
+- ❔ Confirmation of the specific engineering records regarding the status of the 'world's longest span suspension bridge' for dual-use traffic in 1997.
+- ❔ Verification of the exact date of the opening ceremony hosted by the colonial government.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

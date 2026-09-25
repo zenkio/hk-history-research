@@ -36,8 +36,8 @@ The transition to DTT symbolized Hong Kong’s commitment to maintaining its sta
 
 ## Claims to verify
 
-- [ ] Specific dates of the final analog switch-off legislative mandates
-- [ ] Total number of public consultation submissions received during 2008
-- [ ] Government expenditure on public awareness campaigns for digital television
+- ❔ Specific dates of the final analog switch-off legislative mandates
+- ❔ Total number of public consultation submissions received during 2008
+- ❔ Government expenditure on public awareness campaigns for digital television
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

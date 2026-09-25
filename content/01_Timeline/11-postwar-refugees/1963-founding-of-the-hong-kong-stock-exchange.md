@@ -36,7 +36,7 @@ The creation of the exchange provided the essential capital infrastructure neede
 
 ## Claims to verify
 
-- [ ] Verify the exact date of incorporation for the Hong Kong Stock Exchange in 1963.
-- [ ] Determine the relationship between the 1891 Association of Stockbrokers and the 1963 Exchange.
+- ❔ Verify the exact date of incorporation for the Hong Kong Stock Exchange in 1963.
+- ❔ Determine the relationship between the 1891 Association of Stockbrokers and the 1963 Exchange.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

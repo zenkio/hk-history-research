@@ -45,8 +45,8 @@ The **2012** reform package represented a watershed moment in Hong Kong's politi
 
 ## Claims to verify
 
-- [ ] The exact date of the passage of the 2012 constitutional reform package in June 2010
-- [ ] The precise structural changes to the Legislative Council and Election Committee seats
-- [ ] The nature and extent of direct negotiations between the Democratic Party and Beijing officials in 2010
+- ❔ The exact date of the passage of the 2012 constitutional reform package in June 2010
+- ❔ The precise structural changes to the Legislative Council and Election Committee seats
+- ❔ The nature and extent of direct negotiations between the Democratic Party and Beijing officials in 2010
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

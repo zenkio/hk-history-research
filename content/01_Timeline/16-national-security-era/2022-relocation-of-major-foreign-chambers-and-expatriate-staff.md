@@ -42,7 +42,7 @@ The departure of foreign chambers and expatriate staff sparked widespread discus
 
 ## Claims to verify
 
-- [ ] Chamber of commerce survey data regarding expatriate retention difficulties in early 2022
-- [ ] Specific numbers of regional headquarters relocated from Hong Kong to Singapore in 2022
+- ❔ Chamber of commerce survey data regarding expatriate retention difficulties in early 2022
+- ❔ Specific numbers of regional headquarters relocated from Hong Kong to Singapore in 2022
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

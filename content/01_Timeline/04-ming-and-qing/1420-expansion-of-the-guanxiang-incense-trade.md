@@ -39,7 +39,7 @@ This economic expansion left a permanent linguistic and cultural mark on the ter
 
 ## Claims to verify
 
-- [ ] Specific export volumes or tax revenues related to the Guanxiang trade in the 1420s.
-- [ ] The exact timeline of when the name 'Hong Kong' was first applied to Shek Pai Wan versus the entire territory.
+- ❔ Specific export volumes or tax revenues related to the Guanxiang trade in the 1420s.
+- ❔ The exact timeline of when the name 'Hong Kong' was first applied to Shek Pai Wan versus the entire territory.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -39,8 +39,8 @@ The event served as a stark preview of the impending **First Opium War**. For th
 
 ## Claims to verify
 
-- [ ] Verify the specific identity of the executed merchant in local Qing administrative records.
-- [ ] Confirm the precise location relative to the historical Macau walls.
-- [ ] Determine the extent to which the execution was explicitly intended as a deterrent to foreign residents versus Chinese subjects.
+- ❔ Verify the specific identity of the executed merchant in local Qing administrative records.
+- ❔ Confirm the precise location relative to the historical Macau walls.
+- ❔ Determine the extent to which the execution was explicitly intended as a deterrent to foreign residents versus Chinese subjects.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

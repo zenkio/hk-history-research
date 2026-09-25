@@ -37,7 +37,7 @@ The arrival of the sisters is widely regarded by historians as the foundation of
 
 ## Claims to verify
 
-- [ ] The exact arrival date and composition of the first group of Sisters of St. Paul de Chartres in 1848.
-- [ ] The specific locations and institutional names of the first shelters and schools established by the sisters in early Hong Kong.
+- ❔ The exact arrival date and composition of the first group of Sisters of St. Paul de Chartres in 1848.
+- ❔ The specific locations and institutional names of the first shelters and schools established by the sisters in early Hong Kong.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

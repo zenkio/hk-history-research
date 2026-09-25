@@ -37,7 +37,7 @@ The attempt to monitor weather was fundamentally linked to the colonial project 
 
 ## Claims to verify
 
-- [ ] Verify the existence of specific, government-sanctioned meteorological records dated to 1851.
-- [ ] Determine the degree to which individual ship logs from 1851 were consolidated by colonial authorities.
+- ❔ Verify the existence of specific, government-sanctioned meteorological records dated to 1851.
+- ❔ Determine the degree to which individual ship logs from 1851 were consolidated by colonial authorities.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

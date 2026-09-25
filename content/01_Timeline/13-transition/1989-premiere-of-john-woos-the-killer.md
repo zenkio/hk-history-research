@@ -38,7 +38,7 @@ On **July 6, 1989**, *The Killer* (喋血雙雄) premiered in Hong Kong cinemas.
 
 ## Claims to verify
 
-- [ ] The exact theatrical release date of The Killer in Hong Kong was July 6, 1989.
-- [ ] Initial box office performance of The Killer in local cinemas compared to other 1989 releases.
+- ❔ The exact theatrical release date of The Killer in Hong Kong was July 6, 1989.
+- ❔ Initial box office performance of The Killer in local cinemas compared to other 1989 releases.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

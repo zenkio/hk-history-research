@@ -37,7 +37,7 @@ The establishment of the Tuen Mun Salt Inspection Office marks a pivotal moment 
 
 ## Claims to verify
 
-- [ ] Was the specific salt inspection office at Tuen Mun formally established or significantly upgraded in the year 1301 according to primary Yuan sources?
-- [ ] What were the exact administrative titles used for the officials stationed at the Tuen Mun salt office during this period?
+- ❔ Was the specific salt inspection office at Tuen Mun formally established or significantly upgraded in the year 1301 according to primary Yuan sources?
+- ❔ What were the exact administrative titles used for the officials stationed at the Tuen Mun salt office during this period?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

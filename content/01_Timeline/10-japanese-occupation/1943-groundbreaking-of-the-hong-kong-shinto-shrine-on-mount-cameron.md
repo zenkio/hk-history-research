@@ -42,7 +42,7 @@ The initiation of the shrine project represented the most visible architectural 
 
 ## Claims to verify
 
-- [ ] Was the groundbreaking ceremony for the Hong Kong Shinto Shrine officially held precisely on May 19, 1943?
-- [ ] To what extent was construction completed before the Japanese surrender in 1945?
+- ❔ Was the groundbreaking ceremony for the Hong Kong Shinto Shrine officially held precisely on May 19, 1943?
+- ❔ To what extent was construction completed before the Japanese surrender in 1945?
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

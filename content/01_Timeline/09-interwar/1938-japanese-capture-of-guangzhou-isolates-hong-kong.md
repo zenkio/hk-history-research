@@ -39,9 +39,9 @@ The capture of Guangzhou fundamentally isolated Hong Kong economically and strat
 
 ## Claims to verify
 
-- [ ] Japanese forces captured Guangzhou on October 21, 1938.
-- [ ] The capture of Guangzhou completely severed the operations of the Kowloon-Canton Railway at the border.
-- [ ] The fall of Guangzhou brought Japanese military forces directly to the border of the Hong Kong New Territories.
+- ❔ Japanese forces captured Guangzhou on October 21, 1938.
+- ❔ The capture of Guangzhou completely severed the operations of the Kowloon-Canton Railway at the border.
+- ❔ The fall of Guangzhou brought Japanese military forces directly to the border of the Hong Kong New Territories.
 
 ## Evidence
 

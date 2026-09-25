@@ -38,8 +38,8 @@ This large-scale migration fundamentally reshaped Hong Kong's identity from a sm
 
 ## Claims to verify
 
-- [ ] Exact population growth statistics for Hong Kong between 1850 and 1860 resulting from the Taiping Rebellion
-- [ ] Specific regulations enacted by the colonial government to manage the influx of mainland refugees in the 1850s
+- ❔ Exact population growth statistics for Hong Kong between 1850 and 1860 resulting from the Taiping Rebellion
+- ❔ Specific regulations enacted by the colonial government to manage the influx of mainland refugees in the 1850s
 
 ## Evidence
 

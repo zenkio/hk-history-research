@@ -41,7 +41,7 @@ This monetary pivot fundamentally integrated Hong Kong's financial infrastructur
 
 ## Claims to verify
 
-- [ ] The exact legislative steps and emergency procedures used by the Hong Kong Legislative Council on December 5, 1935.
-- [ ] The initial exchange rate fixed between the Hong Kong dollar and sterling under the 1935 Currency Ordinance.
+- ❔ The exact legislative steps and emergency procedures used by the Hong Kong Legislative Council on December 5, 1935.
+- ❔ The initial exchange rate fixed between the Hong Kong dollar and sterling under the 1935 Currency Ordinance.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

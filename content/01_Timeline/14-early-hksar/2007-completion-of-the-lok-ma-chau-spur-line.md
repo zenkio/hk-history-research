@@ -40,8 +40,8 @@ The completion of the spur line is widely recognized as a turning point in the p
 
 ## Claims to verify
 
-- [ ] Verify the official opening date as August 15, 2007.
-- [ ] Confirm the specific legal or planning mechanisms used to resolve the Long Valley dispute.
-- [ ] Cross-reference the projected versus actual passenger usage in the first year of operation.
+- ❔ Verify the official opening date as August 15, 2007.
+- ❔ Confirm the specific legal or planning mechanisms used to resolve the Long Valley dispute.
+- ❔ Cross-reference the projected versus actual passenger usage in the first year of operation.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -47,7 +47,7 @@ At the same time, the event sparked diverse political interpretations regarding 
 
 ## Claims to verify
 
-- [ ] Equine disease control regulations were the primary reason for moving the equestrian events to Hong Kong.
-- [ ] The International Olympic Committee officially rated the Hong Kong equestrian venues among the best in Olympic history.
+- ❔ Equine disease control regulations were the primary reason for moving the equestrian events to Hong Kong.
+- ❔ The International Olympic Committee officially rated the Hong Kong equestrian venues among the best in Olympic history.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

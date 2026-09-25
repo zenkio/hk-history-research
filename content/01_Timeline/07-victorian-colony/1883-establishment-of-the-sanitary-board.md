@@ -42,8 +42,8 @@ Historians generally view the creation of the Sanitary Board as a critical precu
 
 ## Claims to verify
 
-- [ ] The Sanitary Board was formally established on June 5, 1883 under the Public Health Ordinance.
-- [ ] The Board initially functioned as a departmental committee rather than an independent municipal council.
+- ❔ The Sanitary Board was formally established on June 5, 1883 under the Public Health Ordinance.
+- ❔ The Board initially functioned as a departmental committee rather than an independent municipal council.
 
 ## Research notes
 

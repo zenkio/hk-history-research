@@ -37,7 +37,7 @@ The establishment of the **1890** Central Market building reflected broader impe
 
 ## Claims to verify
 
-- [ ] The Central Market building was completed in the year 1890.
-- [ ] The rebuilding project was explicitly designed to centralize food distribution and sanitation management in Victoria City.
+- ❔ The Central Market building was completed in the year 1890.
+- ❔ The rebuilding project was explicitly designed to centralize food distribution and sanitation management in Victoria City.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

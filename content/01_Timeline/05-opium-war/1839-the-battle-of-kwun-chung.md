@@ -42,7 +42,7 @@ The engagement at Kwun Chung served as a crucial military prelude to the First O
 
 ## Claims to verify
 
-- [ ] Exact order of engagement and signaling between HMS Volage, HMS Hyacinth, and Qing war junks on November 4, 1839
-- [ ] Casualty figures reported by both Qing commanders and British naval logs
+- ❔ Exact order of engagement and signaling between HMS Volage, HMS Hyacinth, and Qing war junks on November 4, 1839
+- ❔ Casualty figures reported by both Qing commanders and British naval logs
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -43,9 +43,9 @@ The period of systemic starvation remains one of the darkest chapters in Hong Ko
 
 ## Claims to verify
 
-- [ ] Exact daily mortality figures from street collection records in 1944 and 1945
-- [ ] Specific caloric values and quantities of the official rice rations distributed during the peak of the shortage
-- [ ] The precise volume of maritime food imports reaching Hong Kong ports between late 1944 and mid-1945
+- ❔ Exact daily mortality figures from street collection records in 1944 and 1945
+- ❔ Specific caloric values and quantities of the official rice rations distributed during the peak of the shortage
+- ❔ The precise volume of maritime food imports reaching Hong Kong ports between late 1944 and mid-1945
 
 ## Evidence
 

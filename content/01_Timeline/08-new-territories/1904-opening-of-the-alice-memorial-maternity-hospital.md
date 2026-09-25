@@ -38,7 +38,7 @@ The establishment of the hospital marked a pivotal moment in the modernization o
 
 ## Claims to verify
 
-- [ ] The Alice Memorial Maternity Hospital officially opened on June 3, 1904.
-- [ ] It was recognized as Hong Kong's first dedicated maternity hospital.
+- ❔ The Alice Memorial Maternity Hospital officially opened on June 3, 1904.
+- ❔ It was recognized as Hong Kong's first dedicated maternity hospital.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

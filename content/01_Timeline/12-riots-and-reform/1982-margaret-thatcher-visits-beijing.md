@@ -40,7 +40,7 @@ The visit shattered the long-standing political ambiguity surrounding Hong Kong'
 
 ## Claims to verify
 
-- [ ] Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
-- [ ] The New Territories lease was established by the 1898 Convention for the Extension of Hong Kong Territory.
+- ❔ Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
+- ❔ The New Territories lease was established by the 1898 Convention for the Extension of Hong Kong Territory.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

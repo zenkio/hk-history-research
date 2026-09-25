@@ -42,7 +42,7 @@ Laying the groundwork for decades of future urban expansion, the reclamation per
 
 ## Claims to verify
 
-- [ ] The precise legislative and administrative origins of the 1851 reclamation proposal following the waterfront fire.
-- [ ] The exact extent of shoreline modification achieved during the initial 1851 phase compared to later nineteenth-century expansions.
+- ❔ The precise legislative and administrative origins of the 1851 reclamation proposal following the waterfront fire.
+- ❔ The exact extent of shoreline modification achieved during the initial 1851 phase compared to later nineteenth-century expansions.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -43,7 +43,7 @@ The demarcation of Victoria City's boundaries represents a crucial turning point
 
 ## Claims to verify
 
-- [ ] The exact extent and markers used for the Victoria City boundaries specifically in the year 1842, as opposed to later statutory expansions in 1857 and 1903.
-- [ ] The degree to which formal municipal boundary ordinances were enacted in 1842 versus informal administrative surveying.
+- ❔ The exact extent and markers used for the Victoria City boundaries specifically in the year 1842, as opposed to later statutory expansions in 1857 and 1903.
+- ❔ The degree to which formal municipal boundary ordinances were enacted in 1842 versus informal administrative surveying.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

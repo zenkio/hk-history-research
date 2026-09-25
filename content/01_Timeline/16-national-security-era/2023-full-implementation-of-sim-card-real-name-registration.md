@@ -38,7 +38,7 @@ The full implementation marked a significant structural shift in Hong Kong's tel
 
 ## Claims to verify
 
-- [ ] The exact number of SIM cards deactivated immediately following the February 23, 2023 deadline.
-- [ ] The precise statutory limits on the number of pre-paid SIM cards an individual user could register per telecommunications operator.
+- ❔ The exact number of SIM cards deactivated immediately following the February 23, 2023 deadline.
+- ❔ The precise statutory limits on the number of pre-paid SIM cards an individual user could register per telecommunications operator.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

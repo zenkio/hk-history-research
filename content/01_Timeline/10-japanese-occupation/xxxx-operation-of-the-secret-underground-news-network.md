@@ -36,8 +36,8 @@ The existence of these underground networks served as a crucial psychological li
 
 ## Claims to verify
 
-- [ ] The specific distribution channels for 'mosquito papers' in 1943.
-- [ ] The exact level of coordination between the British Army Aid Group and the Dongjiang Column regarding information sharing.
-- [ ] The official Japanese policy regarding the possession of shortwave radios in Hong Kong.
+- ❔ The specific distribution channels for 'mosquito papers' in 1943.
+- ❔ The exact level of coordination between the British Army Aid Group and the Dongjiang Column regarding information sharing.
+- ❔ The official Japanese policy regarding the possession of shortwave radios in Hong Kong.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

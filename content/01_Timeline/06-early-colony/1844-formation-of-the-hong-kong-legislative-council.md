@@ -37,8 +37,8 @@ The formation of the Legislative Council represents the establishment of the bed
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the inaugural meeting of the Legislative Council in 1844.
-- [ ] Confirm the exact composition of the inaugural Legislative Council members.
-- [ ] Investigate primary documents regarding the official British mandate for the Council's creation.
+- ❔ Verify the specific date of the inaugural meeting of the Legislative Council in 1844.
+- ❔ Confirm the exact composition of the inaugural Legislative Council members.
+- ❔ Investigate primary documents regarding the official British mandate for the Council's creation.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

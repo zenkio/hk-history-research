@@ -36,8 +36,8 @@ The inauguration of the Association represented the formal introduction of Weste
 
 ## Claims to verify
 
-- [ ] Confirm the specific official registration date of the Hong Kong Boy Scouts Association in 1921.
-- [ ] Verify the extent of early Chinese enrollment versus expatriate enrollment in 1921.
-- [ ] Determine the degree of formal oversight exercised by the colonial government versus the Boy Scouts UK headquarters in London.
+- ❔ Confirm the specific official registration date of the Hong Kong Boy Scouts Association in 1921.
+- ❔ Verify the extent of early Chinese enrollment versus expatriate enrollment in 1921.
+- ❔ Determine the degree of formal oversight exercised by the colonial government versus the Boy Scouts UK headquarters in London.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -43,8 +43,8 @@ The legalization under the Treaty of Tientsin transformed Hong Kong from a contr
 
 ## Claims to verify
 
-- [ ] The exact tariff rates and regulatory mechanisms applied to opium imports under the supplementary agreements of the Treaty of Tientsin
-- [ ] The precise volume of opium passing through Hong Kong financial institutions immediately following the 1858 treaty
+- ❔ The exact tariff rates and regulatory mechanisms applied to opium imports under the supplementary agreements of the Treaty of Tientsin
+- ❔ The precise volume of opium passing through Hong Kong financial institutions immediately following the 1858 treaty
 
 ## Photos from this period
 

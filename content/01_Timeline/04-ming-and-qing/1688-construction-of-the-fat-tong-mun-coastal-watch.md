@@ -38,8 +38,8 @@ The establishment of the **Fat Tong Mun Coastal Watch** marked an important step
 
 ## Claims to verify
 
-- [ ] Confirm if the 1688 date refers to the specific commissioning of a permanent structure or a re-organization of existing local patrol points.
-- [ ] Verify the extent to which the 1688 installation functioned as a permanent garrison versus a seasonal or signal-based observation post.
-- [ ] Cross-reference the specific administrative records from the Xin'an County (新安縣) gazetteers regarding the construction of the Fat Tong Mun facility.
+- ❔ Confirm if the 1688 date refers to the specific commissioning of a permanent structure or a re-organization of existing local patrol points.
+- ❔ Verify the extent to which the 1688 installation functioned as a permanent garrison versus a seasonal or signal-based observation post.
+- ❔ Cross-reference the specific administrative records from the Xin'an County (新安縣) gazetteers regarding the construction of the Fat Tong Mun facility.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -47,8 +47,8 @@ From a historiographical standpoint, the hospital exemplifies the complex interp
 
 ## Claims to verify
 
-- [ ] The Alice Memorial Hospital officially opened on February 16, 1887.
-- [ ] Ho Kai funded the hospital in memory of his wife Alice Ho Mian-soc.
-- [ ] The hospital directly led to the founding of the Hong Kong College of Medicine for Chinese.
+- ❔ The Alice Memorial Hospital officially opened on February 16, 1887.
+- ❔ Ho Kai funded the hospital in memory of his wife Alice Ho Mian-soc.
+- ❔ The hospital directly led to the founding of the Hong Kong College of Medicine for Chinese.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

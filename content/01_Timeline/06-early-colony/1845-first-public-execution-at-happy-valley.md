@@ -38,8 +38,8 @@ The execution served as a critical tool for the administration to project power.
 
 ## Claims to verify
 
-- [ ] Confirm the specific identity of the person executed in 1845 through colonial judicial records.
-- [ ] Verify if the 1845 execution is officially recorded in the Blue Books or early colonial government gazettes.
-- [ ] Determine if there were earlier public executions in the colony prior to 1845.
+- ❔ Confirm the specific identity of the person executed in 1845 through colonial judicial records.
+- ❔ Verify if the 1845 execution is officially recorded in the Blue Books or early colonial government gazettes.
+- ❔ Determine if there were earlier public executions in the colony prior to 1845.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

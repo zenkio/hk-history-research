@@ -41,7 +41,7 @@ The disbanding of the HKCTU marked a major turning point for the local labor mov
 
 ## Claims to verify
 
-- [ ] The exact vote tally among HKCTU delegates during the October 3, 2021 dissolution meeting
-- [ ] The precise nature and timeline of official warnings or investigations directed at HKCTU leadership prior to the vote
+- ❔ The exact vote tally among HKCTU delegates during the October 3, 2021 dissolution meeting
+- ❔ The precise nature and timeline of official warnings or investigations directed at HKCTU leadership prior to the vote
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

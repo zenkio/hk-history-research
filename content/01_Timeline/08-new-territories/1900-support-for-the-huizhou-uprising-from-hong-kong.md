@@ -42,8 +42,8 @@ The event underscored Hong Kong's dual and contradictory role in the late Qing p
 
 ## Claims to verify
 
-- [ ] The exact extent of direct financial and arms transit through Hong Kong for the October 1900 Huizhou Uprising
-- [ ] Specific deportation orders or police actions taken by the Hong Kong government against revolutionaries around October 1900
+- ❔ The exact extent of direct financial and arms transit through Hong Kong for the October 1900 Huizhou Uprising
+- ❔ Specific deportation orders or police actions taken by the Hong Kong government against revolutionaries around October 1900
 
 ## Evidence
 

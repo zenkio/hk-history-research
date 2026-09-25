@@ -37,8 +37,8 @@ Historians generally interpret the **1914** exhibition as a symbolic departure f
 
 ## Claims to verify
 
-- [ ] The official organizational body responsible for the 1914 exhibition
-- [ ] The specific venue where the 1914 exhibition took place
-- [ ] Primary source documentation confirming the exact duration and participation count of the 1914 event
+- ❔ The official organizational body responsible for the 1914 exhibition
+- ❔ The specific venue where the 1914 exhibition took place
+- ❔ Primary source documentation confirming the exact duration and participation count of the 1914 event
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

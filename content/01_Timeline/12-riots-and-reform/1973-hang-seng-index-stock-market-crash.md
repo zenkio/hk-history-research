@@ -42,8 +42,8 @@ The **1973** crash laid bare the deficiencies of a largely unregulated financial
 
 ## Claims to verify
 
-- [ ] The Hang Seng Index peaked at 1,774.96 points on March 9, 1973.
-- [ ] The market index subsequently fell to around 150 points in 1974.
-- [ ] Four distinct stock exchanges were operating in Hong Kong during the early 1970s.
+- ❔ The Hang Seng Index peaked at 1,774.96 points on March 9, 1973.
+- ❔ The market index subsequently fell to around 150 points in 1974.
+- ❔ Four distinct stock exchanges were operating in Hong Kong during the early 1970s.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

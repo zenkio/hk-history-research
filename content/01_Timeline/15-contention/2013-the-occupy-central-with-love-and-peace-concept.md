@@ -41,8 +41,8 @@ The launch of the Occupy Central concept marked a shift in Hong Kong’s protest
 
 ## Claims to verify
 
-- [ ] The exact date of the publication of the manifesto in the Hong Kong Economic Journal.
-- [ ] The official number of deliberation sessions held by the movement organizers between 2013 and 2014.
-- [ ] The original intent of the organizers regarding the specific duration of the proposed occupation.
+- ❔ The exact date of the publication of the manifesto in the Hong Kong Economic Journal.
+- ❔ The official number of deliberation sessions held by the movement organizers between 2013 and 2014.
+- ❔ The original intent of the organizers regarding the specific duration of the proposed occupation.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

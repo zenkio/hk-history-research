@@ -36,7 +36,7 @@ The conversion of schools into military installations marked a devastating blow 
 
 ## Claims to verify
 
-- [ ] Specific dates when individual schools were formally requisitioned by the Japanese military in 1942
-- [ ] The exact number of educational institutions converted into military barracks versus other wartime uses
+- ❔ Specific dates when individual schools were formally requisitioned by the Japanese military in 1942
+- ❔ The exact number of educational institutions converted into military barracks versus other wartime uses
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

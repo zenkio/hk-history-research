@@ -40,7 +40,7 @@ The establishment of the **Guanfu Salt Yard** marked a pivotal moment in the int
 
 ## Claims to verify
 
-- [ ] The exact year of the establishment of the Guanfu Salt Yard as 1394
-- [ ] The specific administrative boundaries and jurisdiction of the Guanfu Salt Yard during the early Ming period
+- ❔ The exact year of the establishment of the Guanfu Salt Yard as 1394
+- ❔ The specific administrative boundaries and jurisdiction of the Guanfu Salt Yard during the early Ming period
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

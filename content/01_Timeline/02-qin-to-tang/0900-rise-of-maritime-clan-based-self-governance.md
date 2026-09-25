@@ -35,8 +35,8 @@ This period is viewed as the formative era for the clan-based society that would
 
 ## Claims to verify
 
-- [ ] The extent to which Tuen Mun functioned as an independent port during the late Tang period.
-- [ ] The archaeological evidence for continuous lineage occupation in the New Territories dating to the 10th century.
-- [ ] The degree to which Tang central records document the abandonment of the coastal military outposts in the region.
+- ❔ The extent to which Tuen Mun functioned as an independent port during the late Tang period.
+- ❔ The archaeological evidence for continuous lineage occupation in the New Territories dating to the 10th century.
+- ❔ The degree to which Tang central records document the abandonment of the coastal military outposts in the region.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -49,8 +49,8 @@ By integrating the Kowloon Peninsula into the colony, the British established a 
 
 ## Claims to verify
 
-- [ ] Whether the specific date of March 20, 1860, marks the exact signing of the initial Kowloon lease agreement prior to the formal October ratification of the Convention of Peking.
-- [ ] The precise diplomatic title and Qing counterpart involved in executing the Kowloon lease agreement alongside Harry Parkes.
+- ❔ Whether the specific date of March 20, 1860, marks the exact signing of the initial Kowloon lease agreement prior to the formal October ratification of the Convention of Peking.
+- ❔ The precise diplomatic title and Qing counterpart involved in executing the Kowloon lease agreement alongside Harry Parkes.
 
 ## Research notes
 

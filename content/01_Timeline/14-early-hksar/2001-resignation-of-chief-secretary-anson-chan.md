@@ -45,7 +45,7 @@ On **13 January 2001**, **Chan** unexpectedly announced that she would step down
 
 ## Claims to verify
 
-- [ ] Anson Chan announced her resignation on January 13, 2001, and officially stepped down on April 30, 2001.
-- [ ] Donald Tsang succeeded Anson Chan as Chief Secretary.
+- ❔ Anson Chan announced her resignation on January 13, 2001, and officially stepped down on April 30, 2001.
+- ❔ Donald Tsang succeeded Anson Chan as Chief Secretary.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

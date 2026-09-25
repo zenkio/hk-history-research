@@ -35,7 +35,7 @@ The expansion of these techniques provided a sustainable food source and trade c
 
 ## Claims to verify
 
-- [ ] Archaeological evidence confirming the use of stone/stake methods specifically within the 250-300 CE period in Deep Bay.
-- [ ] The extent to which 3rd-century oyster cultivation was organized into formal economic structures versus household subsistence.
+- ❔ Archaeological evidence confirming the use of stone/stake methods specifically within the 250-300 CE period in Deep Bay.
+- ❔ The extent to which 3rd-century oyster cultivation was organized into formal economic structures versus household subsistence.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

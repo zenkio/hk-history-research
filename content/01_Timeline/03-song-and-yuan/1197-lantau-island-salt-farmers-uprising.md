@@ -35,7 +35,7 @@ The Lantau Island salt farmers' uprising is one of the earliest recorded localiz
 
 ## Claims to verify
 
-- [ ] Did the Lantau salt farmers' uprising specifically occur in the year 1197?
-- [ ] What specific imperial military units were deployed to suppress the Lantau salt producers according to primary Song sources?
+- ❔ Did the Lantau salt farmers' uprising specifically occur in the year 1197?
+- ❔ What specific imperial military units were deployed to suppress the Lantau salt producers according to primary Song sources?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

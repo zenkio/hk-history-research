@@ -38,7 +38,7 @@ The formation of the FTU marked a turning point in Hong Kong's social and politi
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hong Kong Federation of Trade Unions on April 20, 1948
-- [ ] The precise list of founding trade unions and their initial membership numbers
+- ❔ The exact founding date of the Hong Kong Federation of Trade Unions on April 20, 1948
+- ❔ The precise list of founding trade unions and their initial membership numbers
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

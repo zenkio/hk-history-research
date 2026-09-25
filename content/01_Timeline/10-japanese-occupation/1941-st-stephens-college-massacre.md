@@ -41,8 +41,8 @@ The massacre at St. Stephen's College became a powerful symbol of the brutality 
 
 ## Claims to verify
 
-- [ ] The exact number of casualties and fatalities resulting from the bayonet attack at St. Stephen's College on December 25, 1941.
-- [ ] The precise chain of command and unit identities of the Imperial Japanese forces that entered the college premises.
+- ❔ The exact number of casualties and fatalities resulting from the bayonet attack at St. Stephen's College on December 25, 1941.
+- ❔ The precise chain of command and unit identities of the Imperial Japanese forces that entered the college premises.
 
 ## Photos from this period
 

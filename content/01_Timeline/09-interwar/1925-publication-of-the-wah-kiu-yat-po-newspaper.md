@@ -36,7 +36,7 @@ Over subsequent decades, the *Wah Kiu Yat Po* evolved into one of Hong Kong's mo
 
 ## Claims to verify
 
-- [ ] The exact founding date and initial ownership structure of the Wah Kiu Yat Po in 1925.
-- [ ] The specific nature of colonial press censorship applied to the Wah Kiu Yat Po during the Canton-Hong Kong strike.
+- ❔ The exact founding date and initial ownership structure of the Wah Kiu Yat Po in 1925.
+- ❔ The specific nature of colonial press censorship applied to the Wah Kiu Yat Po during the Canton-Hong Kong strike.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

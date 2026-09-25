@@ -45,8 +45,8 @@ The successful amphibious landing marked the beginning of the end for the defens
 
 ## Claims to verify
 
-- [ ] Exact timing and waves of the Japanese troop movements across Victoria Harbour on the night of December 18, 1941
-- [ ] The precise casualty figures sustained by both defending Allied troops and landing Japanese forces during the initial beachhead establishment
+- ❔ Exact timing and waves of the Japanese troop movements across Victoria Harbour on the night of December 18, 1941
+- ❔ The precise casualty figures sustained by both defending Allied troops and landing Japanese forces during the initial beachhead establishment
 
 ## Evidence
 

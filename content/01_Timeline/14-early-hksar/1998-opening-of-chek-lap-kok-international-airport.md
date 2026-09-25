@@ -42,7 +42,7 @@ Despite the initial operational hiccups, the opening of the Chek Lap Kok facilit
 
 ## Claims to verify
 
-- [ ] The official opening date of the Chek Lap Kok airport was July 6, 1998.
-- [ ] The transition period involved moving all aircraft and equipment from Kai Tak to Chek Lap Kok overnight.
+- ❔ The official opening date of the Chek Lap Kok airport was July 6, 1998.
+- ❔ The transition period involved moving all aircraft and equipment from Kai Tak to Chek Lap Kok overnight.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -38,7 +38,7 @@ The incorporation of the region into Dongguan County laid the foundation for str
 
 ## Claims to verify
 
-- [ ] The exact administrative mechanisms and taxation structure applied to the Hong Kong region immediately following the founding of the Ming Dynasty in 1368.
-- [ ] The precise timing and nature of local lineage registration within Dongguan County during the early Ming period.
+- ❔ The exact administrative mechanisms and taxation structure applied to the Hong Kong region immediately following the founding of the Ming Dynasty in 1368.
+- ❔ The precise timing and nature of local lineage registration within Dongguan County during the early Ming period.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

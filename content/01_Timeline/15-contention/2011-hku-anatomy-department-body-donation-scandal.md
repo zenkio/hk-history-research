@@ -39,7 +39,7 @@ The scandal highlighted systemic vulnerabilities in how medical institutions han
 
 ## Claims to verify
 
-- [ ] Human body parts from the University of Hong Kong were discovered in a landfill around May 15, 2011.
-- [ ] The incident led to immediate internal investigations and subsequent reforms in the university's anatomical waste disposal procedures.
+- ❔ Human body parts from the University of Hong Kong were discovered in a landfill around May 15, 2011.
+- ❔ The incident led to immediate internal investigations and subsequent reforms in the university's anatomical waste disposal procedures.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -41,7 +41,7 @@ The suspension and subsequent indefinite shelving of the curriculum marked a maj
 
 ## Claims to verify
 
-- [ ] The exact timeline of the September 8, 2012 announcement by Chief Executive Leung Chun-ying regarding the shelving of the curriculum guidelines.
-- [ ] The precise number of participants and organizations involved in the Tamar sit-ins.
+- ❔ The exact timeline of the September 8, 2012 announcement by Chief Executive Leung Chun-ying regarding the shelving of the curriculum guidelines.
+- ❔ The precise number of participants and organizations involved in the Tamar sit-ins.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

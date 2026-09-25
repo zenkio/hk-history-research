@@ -35,8 +35,8 @@ The emergence of the association serves as a primary marker of Hong Kong’s tra
 
 ## Claims to verify
 
-- [ ] Verify the official registration date of the Hong Kong Pedestrians’ Protection Association in 1936 records.
-- [ ] Investigate the primary leadership and specific legislative petitions submitted by the association during the mid-1930s.
-- [ ] Confirm the extent of the impact of the association on colonial traffic ordinances passed between 1936 and 1941.
+- ❔ Verify the official registration date of the Hong Kong Pedestrians’ Protection Association in 1936 records.
+- ❔ Investigate the primary leadership and specific legislative petitions submitted by the association during the mid-1930s.
+- ❔ Confirm the extent of the impact of the association on colonial traffic ordinances passed between 1936 and 1941.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

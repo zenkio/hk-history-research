@@ -39,7 +39,7 @@ The launch of Metro Broadcast marked a significant milestone in Hong Kong's medi
 
 ## Claims to verify
 
-- [ ] Metro Broadcast officially launched its commercial operations on July 1, 1991.
-- [ ] Hutchison Whampoa was the primary corporate entity behind the establishment of Metro Broadcast.
+- ❔ Metro Broadcast officially launched its commercial operations on July 1, 1991.
+- ❔ Hutchison Whampoa was the primary corporate entity behind the establishment of Metro Broadcast.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

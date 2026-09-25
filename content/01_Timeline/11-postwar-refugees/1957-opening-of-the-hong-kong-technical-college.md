@@ -37,7 +37,7 @@ The establishment of the college is widely viewed as the cornerstone of Hong Kon
 
 ## Claims to verify
 
-- [ ] The exact opening date and whether any inaugural ceremonies were led by Governor Alexander Grantham.
-- [ ] The specific breakdown of funding contributions between the Hong Kong government and the local private sector for the Hung Hom campus.
+- ❔ The exact opening date and whether any inaugural ceremonies were led by Governor Alexander Grantham.
+- ❔ The specific breakdown of funding contributions between the Hong Kong government and the local private sector for the Hung Hom campus.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

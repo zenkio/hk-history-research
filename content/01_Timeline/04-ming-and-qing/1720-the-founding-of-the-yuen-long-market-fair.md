@@ -38,8 +38,8 @@ The emergence of the Yuen Long Market Fair represents a pivotal shift from local
 
 ## Claims to verify
 
-- [ ] The exact year of the founding of Yuen Long Old Market.
-- [ ] The extent of Qing magistrate involvement in the initial authorization of the market.
-- [ ] The role of the Tang clan specifically compared to other local clans in market administration.
+- ❔ The exact year of the founding of Yuen Long Old Market.
+- ❔ The extent of Qing magistrate involvement in the initial authorization of the market.
+- ❔ The role of the Tang clan specifically compared to other local clans in market administration.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

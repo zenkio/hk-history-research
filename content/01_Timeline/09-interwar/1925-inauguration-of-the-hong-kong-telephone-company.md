@@ -36,8 +36,8 @@ The introduction of a consolidated, automated telephone network is regarded by h
 
 ## Claims to verify
 
-- [ ] Confirm the exact date of incorporation for the Hong Kong Telephone Company in 1925.
-- [ ] Verify the specific date the first automated exchange became operational in Hong Kong.
-- [ ] Check the specific legal terms of the original 1925 franchise agreement between the colonial government and the company.
+- ❔ Confirm the exact date of incorporation for the Hong Kong Telephone Company in 1925.
+- ❔ Verify the specific date the first automated exchange became operational in Hong Kong.
+- ❔ Check the specific legal terms of the original 1925 franchise agreement between the colonial government and the company.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

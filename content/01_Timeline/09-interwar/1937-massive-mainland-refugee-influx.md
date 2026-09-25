@@ -42,8 +42,8 @@ This unprecedented demographic shock fundamentally transformed Hong Kong's socia
 
 ## Claims to verify
 
-- [ ] Exact population estimates of refugees entering Hong Kong between 1937 and 1941 remain subjects of scholarly debate due to informal border crossings.
-- [ ] The specific allocation of colonial government funds for refugee relief during the initial months of the war requires verification from primary administrative reports.
+- ❔ Exact population estimates of refugees entering Hong Kong between 1937 and 1941 remain subjects of scholarly debate due to informal border crossings.
+- ❔ The specific allocation of colonial government funds for refugee relief during the initial months of the war requires verification from primary administrative reports.
 
 ## Evidence
 

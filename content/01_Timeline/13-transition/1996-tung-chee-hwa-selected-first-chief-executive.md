@@ -42,7 +42,7 @@ The selection of **Tung Chee-hwa** symbolized both continuity and change for Hon
 
 ## Claims to verify
 
-- [ ] Tung Chee-hwa received exactly 320 votes out of 400 from the Selection Committee on December 11, 1996.
-- [ ] The Selection Committee meeting for the vote was held in Shenzhen.
+- ❔ Tung Chee-hwa received exactly 320 votes out of 400 from the Selection Committee on December 11, 1996.
+- ❔ The Selection Committee meeting for the vote was held in Shenzhen.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

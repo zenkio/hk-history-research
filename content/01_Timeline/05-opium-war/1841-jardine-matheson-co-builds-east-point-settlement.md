@@ -44,7 +44,7 @@ The establishment of the **East Point** settlement marked a crucial moment in th
 
 ## Claims to verify
 
-- [ ] Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point in November 1841.
-- [ ] The land at East Point was acquired through the earliest government land sales conducted by the early British administration on Hong Kong Island.
+- ❔ Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point in November 1841.
+- ❔ The land at East Point was acquired through the earliest government land sales conducted by the early British administration on Hong Kong Island.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -41,8 +41,8 @@ The accident exposed systemic safety oversights and regulatory gaps within the H
 
 ## Claims to verify
 
-- [ ] The exact date of the concert accident was July 28, 2022.
-- [ ] Dancer Lee Kai-yin sustained severe spinal injuries from the falling screen.
+- ❔ The exact date of the concert accident was July 28, 2022.
+- ❔ Dancer Lee Kai-yin sustained severe spinal injuries from the falling screen.
 
 ## Photos from this period
 

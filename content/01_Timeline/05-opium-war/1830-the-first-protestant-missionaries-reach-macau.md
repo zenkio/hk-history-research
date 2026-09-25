@@ -39,8 +39,8 @@ The activities of these early missionaries are seen as a turning point in the in
 
 ## Claims to verify
 
-- [ ] Exact date of Robert Morrison's first entry into Canton versus his establishment in Macau.
-- [ ] The legal status of private printing presses under the Canton System in the 1820s.
-- [ ] The extent to which Gützlaff's activities were officially sanctioned by the London Missionary Society in 1830.
+- ❔ Exact date of Robert Morrison's first entry into Canton versus his establishment in Macau.
+- ❔ The legal status of private printing presses under the Canton System in the 1820s.
+- ❔ The extent to which Gützlaff's activities were officially sanctioned by the London Missionary Society in 1830.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -41,9 +41,9 @@ The founding of the university represented a pivotal moment in the educational a
 
 ## Claims to verify
 
-- [ ] Governor Frederick Lugard officially inaugurated the University of Hong Kong on March 30, 1912.
-- [ ] Sir Hormusjee Naorojee Mody provided the initial financial donation for the construction of the main building.
-- [ ] The Hong Kong College of Medicine for Chinese was formally incorporated into the new university as its Faculty of Medicine.
+- ❔ Governor Frederick Lugard officially inaugurated the University of Hong Kong on March 30, 1912.
+- ❔ Sir Hormusjee Naorojee Mody provided the initial financial donation for the construction of the main building.
+- ❔ The Hong Kong College of Medicine for Chinese was formally incorporated into the new university as its Faculty of Medicine.
 
 ## Evidence
 

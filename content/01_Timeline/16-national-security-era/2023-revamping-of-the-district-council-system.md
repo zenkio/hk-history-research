@@ -36,8 +36,8 @@ This reform fundamentally altered the institutional landscape of local governanc
 
 ## Claims to verify
 
-- [ ] The exact percentage split of elected vs appointed/ex-officio seats after the 2023 reform.
-- [ ] The specific legal mechanism used to mandate the District Committee vetting process.
-- [ ] The total number of seats before and after the 2023 restructuring.
+- ❔ The exact percentage split of elected vs appointed/ex-officio seats after the 2023 reform.
+- ❔ The specific legal mechanism used to mandate the District Committee vetting process.
+- ❔ The total number of seats before and after the 2023 restructuring.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

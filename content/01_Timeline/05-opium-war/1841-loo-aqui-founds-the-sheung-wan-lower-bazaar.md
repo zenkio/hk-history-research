@@ -41,7 +41,7 @@ The founding of the Lower Bazaar marked a crucial early step in the integration 
 
 ## Claims to verify
 
-- [ ] Did Loo Aqui specifically found the Lower Bazaar in August 1841, or was the development more gradual?
-- [ ] What was the exact official recognition granted by the early British administration to the Lower Bazaar project?
+- ❔ Did Loo Aqui specifically found the Lower Bazaar in August 1841, or was the development more gradual?
+- ❔ What was the exact official recognition granted by the early British administration to the Lower Bazaar project?
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

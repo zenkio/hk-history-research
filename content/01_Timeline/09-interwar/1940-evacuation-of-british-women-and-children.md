@@ -41,8 +41,8 @@ The evacuation underscored the British realization of Hong Kong's military vulne
 
 ## Claims to verify
 
-- [ ] The exact number of European women and children evacuated from Hong Kong in July 1940.
-- [ ] The precise destinations and vessels used for the July 1940 evacuation.
+- ❔ The exact number of European women and children evacuated from Hong Kong in July 1940.
+- ❔ The precise destinations and vessels used for the July 1940 evacuation.
 
 ## Evidence
 

@@ -44,9 +44,9 @@ Scholars debate the primary drivers and long-term outcomes of the strike, but it
 
 ## Claims to verify
 
-- [ ] The exact number of workers who participated in the exodus to Guangzhou.
-- [ ] The precise financial losses incurred by the Hong Kong government during the 16-month blockade.
-- [ ] The degree of direct operational control exerted by the Chinese Communist Party versus the Kuomintang over the strike committee.
+- ❔ The exact number of workers who participated in the exodus to Guangzhou.
+- ❔ The precise financial losses incurred by the Hong Kong government during the 16-month blockade.
+- ❔ The degree of direct operational control exerted by the Chinese Communist Party versus the Kuomintang over the strike committee.
 
 ## Photos from this period
 

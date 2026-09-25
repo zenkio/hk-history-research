@@ -38,8 +38,8 @@ This reform is widely considered the birth of the modern, independent Hong Kong 
 
 ## Claims to verify
 
-- [ ] The specific legislative details of the 1935 Currency Ordinance.
-- [ ] The exact initial exchange rate pegged to the British pound sterling.
-- [ ] The role of the Exchange Fund at its inception.
+- ❔ The specific legislative details of the 1935 Currency Ordinance.
+- ❔ The exact initial exchange rate pegged to the British pound sterling.
+- ❔ The role of the Exchange Fund at its inception.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -38,7 +38,7 @@ These amendments marked a turning point in Hong Kong's legal and political lands
 
 ## Claims to verify
 
-- [ ] The exact statutory wording and enactment date of the Emergency (Principal) Regulations Amendment in 1950.
-- [ ] The specific extent to which deportation powers were utilized against political activists immediately following the 1950 amendment.
+- ❔ The exact statutory wording and enactment date of the Emergency (Principal) Regulations Amendment in 1950.
+- ❔ The specific extent to which deportation powers were utilized against political activists immediately following the 1950 amendment.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

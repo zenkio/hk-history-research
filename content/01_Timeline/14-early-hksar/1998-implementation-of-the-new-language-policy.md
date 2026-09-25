@@ -35,7 +35,7 @@ The policy sparked intense social and political debate. Proponents argued that i
 
 ## Claims to verify
 
-- [ ] The exact percentage of schools mandated to adopt Chinese-medium instruction in 1998.
-- [ ] Official Education Department guidelines regarding the criteria for English-medium exemption.
+- ❔ The exact percentage of schools mandated to adopt Chinese-medium instruction in 1998.
+- ❔ Official Education Department guidelines regarding the criteria for English-medium exemption.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -37,7 +37,7 @@ The establishment and scaling of the Pok Fu Lam Farm marked a crucial turning po
 
 ## Claims to verify
 
-- [ ] Dairy Farm significantly expanded its Pok Fu Lam operations in 1923.
-- [ ] The expansion directly influenced urban dietary habits and milk pasteurization standards in interwar Hong Kong.
+- ❔ Dairy Farm significantly expanded its Pok Fu Lam operations in 1923.
+- ❔ The expansion directly influenced urban dietary habits and milk pasteurization standards in interwar Hong Kong.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

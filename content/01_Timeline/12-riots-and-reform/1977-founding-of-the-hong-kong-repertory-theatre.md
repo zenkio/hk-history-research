@@ -36,7 +36,7 @@ The professionalization of the Hong Kong Repertory Theatre is often cited by sch
 
 ## Claims to verify
 
-- [ ] Verify the specific official month and inaugural production of the Hong Kong Repertory Theatre in 1977.
-- [ ] Confirm the specific funding mechanism transition between the Urban Council and early troupe management.
+- ❔ Verify the specific official month and inaugural production of the Hong Kong Repertory Theatre in 1977.
+- ❔ Confirm the specific funding mechanism transition between the Urban Council and early troupe management.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -44,8 +44,8 @@ The riots served as a stark wake-up call for the British colonial administration
 
 ## Claims to verify
 
-- [ ] Exact casualty figures and death toll reported by the colonial government versus independent estimates
-- [ ] The precise sequence of events regarding the removal of the Nationalist flag at the Li Uk Yew resettlement estate
+- ❔ Exact casualty figures and death toll reported by the colonial government versus independent estimates
+- ❔ The precise sequence of events regarding the removal of the Nationalist flag at the Li Uk Yew resettlement estate
 
 ## Evidence
 

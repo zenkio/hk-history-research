@@ -37,8 +37,8 @@ The establishment of the Kennedy Town Slaughterhouse is often viewed by historia
 
 ## Claims to verify
 
-- [ ] Exact operational opening date of the Kennedy Town Slaughterhouse
-- [ ] Specific administrative ordinances governing meat inspection in 1894
-- [ ] Extent of local merchant resistance to the relocation of slaughtering facilities
+- ❔ Exact operational opening date of the Kennedy Town Slaughterhouse
+- ❔ Specific administrative ordinances governing meat inspection in 1894
+- ❔ Extent of local merchant resistance to the relocation of slaughtering facilities
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

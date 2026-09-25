@@ -36,7 +36,7 @@ The transition of leadership and the repositioning of the Church under the **Nat
 
 ## Claims to verify
 
-- [ ] The specific date and nature of the transition affecting the diocese on December 4, 2022.
-- [ ] The degree to which the Sino-Vatican agreement directly influenced the specific administrative personnel changes in Hong Kong during late 2022.
+- ❔ The specific date and nature of the transition affecting the diocese on December 4, 2022.
+- ❔ The degree to which the Sino-Vatican agreement directly influenced the specific administrative personnel changes in Hong Kong during late 2022.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

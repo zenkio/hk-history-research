@@ -42,7 +42,7 @@ This high-level encounter marked the official commencement of formal Sino-Britis
 
 ## Claims to verify
 
-- [ ] Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
-- [ ] The New Territories lease was set to expire on June 30, 1997.
+- ❔ Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
+- ❔ The New Territories lease was set to expire on June 30, 1997.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

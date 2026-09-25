@@ -38,8 +38,8 @@ The rise of the Tanka established a socio-economic dichotomy that would characte
 
 ## Claims to verify
 
-- [ ] The exact level of social and legal restriction placed upon the Tanka population during the Song and Yuan periods.
-- [ ] The extent to which Tanka communities interacted with regional salt-tax administrative centers.
-- [ ] Documentation confirming the presence of distinct Tanka boat-dwelling communities in the Hong Kong region specifically by 1275.
+- ❔ The exact level of social and legal restriction placed upon the Tanka population during the Song and Yuan periods.
+- ❔ The extent to which Tanka communities interacted with regional salt-tax administrative centers.
+- ❔ Documentation confirming the presence of distinct Tanka boat-dwelling communities in the Hong Kong region specifically by 1275.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

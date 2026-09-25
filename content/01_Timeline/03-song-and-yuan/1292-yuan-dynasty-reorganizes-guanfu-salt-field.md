@@ -36,7 +36,7 @@ The **1292** reorganization illustrates the deep integration of the Hong Kong re
 
 ## Claims to verify
 
-- [ ] The exact administrative restructuring of the Guanfu salt field occurred specifically in the year 1292.
-- [ ] The Yuan dynasty's policies altered the hereditary status and tax quotas of local salt households in the Hong Kong region.
+- ❔ The exact administrative restructuring of the Guanfu salt field occurred specifically in the year 1292.
+- ❔ The Yuan dynasty's policies altered the hereditary status and tax quotas of local salt households in the Hong Kong region.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

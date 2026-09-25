@@ -41,7 +41,7 @@ The arrival of the jinrikisha transformed the streetscape and daily rhythms of c
 
 ## Claims to verify
 
-- [ ] Exact year of the jinrikisha's introduction to Hong Kong
-- [ ] Specific colonial ordinances regulating early rickshaw operations
+- ❔ Exact year of the jinrikisha's introduction to Hong Kong
+- ❔ Specific colonial ordinances regulating early rickshaw operations
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -36,8 +36,8 @@ The accumulation of these middens serves as a critical indicator of a profound d
 
 ## Claims to verify
 
-- [ ] Verify the specific radio-carbon dating ranges for the lowest cultural layers at Sham Wan.
-- [ ] Assess the consensus on whether the shell middens were strictly habitation sites or communal refuse dumps.
-- [ ] Review current academic theories on the relationship between Neolithic Hong Kong shell-gatherers and the broader Lingnan region populations.
+- ❔ Verify the specific radio-carbon dating ranges for the lowest cultural layers at Sham Wan.
+- ❔ Assess the consensus on whether the shell middens were strictly habitation sites or communal refuse dumps.
+- ❔ Review current academic theories on the relationship between Neolithic Hong Kong shell-gatherers and the broader Lingnan region populations.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

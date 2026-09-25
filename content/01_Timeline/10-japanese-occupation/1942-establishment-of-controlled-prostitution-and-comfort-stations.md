@@ -36,7 +36,7 @@ This institutionalized system represents one of the darkest chapters of the Japa
 
 ## Claims to verify
 
-- [ ] The exact number and precise locations of all comfort stations operated in Hong Kong between 1942 and 1945.
-- [ ] The demographic breakdown and total number of women subjected to forced prostitution in Hong Kong during the occupation.
+- ❔ The exact number and precise locations of all comfort stations operated in Hong Kong between 1942 and 1945.
+- ❔ The demographic breakdown and total number of women subjected to forced prostitution in Hong Kong during the occupation.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

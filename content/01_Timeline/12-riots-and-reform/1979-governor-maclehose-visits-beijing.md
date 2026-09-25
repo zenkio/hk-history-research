@@ -39,8 +39,8 @@ This visit transformed the Hong Kong question from a localized administrative ma
 
 ## Claims to verify
 
-- [ ] Governor Murray MacLehose's visit to Beijing took place on March 29, 1979.
-- [ ] This was the first official visit by a sitting Hong Kong governor to the People's Republic of China.
-- [ ] Deng Xiaoping told investors to put their hearts at ease regarding their investments in Hong Kong during these meetings.
+- ❔ Governor Murray MacLehose's visit to Beijing took place on March 29, 1979.
+- ❔ This was the first official visit by a sitting Hong Kong governor to the People's Republic of China.
+- ❔ Deng Xiaoping told investors to put their hearts at ease regarding their investments in Hong Kong during these meetings.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

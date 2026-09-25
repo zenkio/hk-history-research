@@ -38,8 +38,8 @@ The appearance of fine geometric pottery is viewed by archaeologists as a key ma
 
 ## Claims to verify
 
-- [ ] Fine geometric pottery traditions in the Hong Kong region began around 2500 BCE.
-- [ ] Sham Wan on Lamma Island and Tuen Mun yielded significant stratified archaeological layers containing geometric-patterned ceramics.
-- [ ] The transition from cord-marked pottery to fine geometric pottery indicates improved kiln technology and craft specialization.
+- ❔ Fine geometric pottery traditions in the Hong Kong region began around 2500 BCE.
+- ❔ Sham Wan on Lamma Island and Tuen Mun yielded significant stratified archaeological layers containing geometric-patterned ceramics.
+- ❔ The transition from cord-marked pottery to fine geometric pottery indicates improved kiln technology and craft specialization.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

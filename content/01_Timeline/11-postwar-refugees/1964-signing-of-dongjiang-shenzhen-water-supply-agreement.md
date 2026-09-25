@@ -39,7 +39,7 @@ The **Dongjiang-Shenzhen Water Supply Agreement** fundamentally transformed Hong
 
 ## Claims to verify
 
-- [ ] The Dongjiang-Shenzhen Water Supply Agreement was officially signed on April 22, 1964.
-- [ ] The 1963 water crisis in Hong Kong involved a rationing schedule of four hours every four days.
+- ❔ The Dongjiang-Shenzhen Water Supply Agreement was officially signed on April 22, 1964.
+- ❔ The 1963 water crisis in Hong Kong involved a rationing schedule of four hours every four days.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

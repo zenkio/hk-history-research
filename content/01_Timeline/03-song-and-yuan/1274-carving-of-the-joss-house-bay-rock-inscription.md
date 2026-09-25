@@ -37,8 +37,8 @@ As Hong Kong's oldest surviving dated historical relic, the Joss House Bay Rock 
 
 ## Claims to verify
 
-- [ ] The inscription was carved specifically in the year 1274.
-- [ ] The text records the structural renovation of a pre-existing Tin Hau temple at the site.
-- [ ] The Joss House Bay inscription is officially recognized as Hong Kong's oldest surviving dated historical relic.
+- ❔ The inscription was carved specifically in the year 1274.
+- ❔ The text records the structural renovation of a pre-existing Tin Hau temple at the site.
+- ❔ The Joss House Bay inscription is officially recognized as Hong Kong's oldest surviving dated historical relic.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

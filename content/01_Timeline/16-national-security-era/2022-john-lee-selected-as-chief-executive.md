@@ -39,7 +39,7 @@ On **May 8, 2022**, **John Lee** (李家超), who had recently resigned from his
 
 ## Claims to verify
 
-- [ ] John Lee received 1,416 support votes out of 1,464 cast on May 8, 2022.
-- [ ] John Lee was the sole candidate in the 2022 Chief Executive election.
+- ❔ John Lee received 1,416 support votes out of 1,464 cast on May 8, 2022.
+- ❔ John Lee was the sole candidate in the 2022 Chief Executive election.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

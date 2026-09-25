@@ -39,8 +39,8 @@ The epidemic severely crippled Hong Kong's economy, particularly tourism, retail
 
 ## Claims to verify
 
-- [ ] Exact epidemiological tracing of the index patient to the Metropole Hotel
-- [ ] Total infection and death toll statistics officially recognized by the World Health Organization
-- [ ] Specific timeline of the government response and Hospital Authority coordination
+- ❔ Exact epidemiological tracing of the index patient to the Metropole Hotel
+- ❔ Total infection and death toll statistics officially recognized by the World Health Organization
+- ❔ Specific timeline of the government response and Hospital Authority coordination
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

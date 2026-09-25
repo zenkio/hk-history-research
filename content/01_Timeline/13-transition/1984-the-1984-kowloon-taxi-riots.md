@@ -41,8 +41,8 @@ The **1984 Kowloon Taxi Riots** shocked the colonial government, serving as a st
 
 ## Claims to verify
 
-- [ ] The exact date the taxi strike and subsequent riots began was January 13, 1984.
-- [ ] The specific tax and license fee increases proposed by the colonial government that triggered the drivers' strike.
-- [ ] The total number of arrests, injuries, and the extent of property damage reported during the Kowloon disturbances.
+- ❔ The exact date the taxi strike and subsequent riots began was January 13, 1984.
+- ❔ The specific tax and license fee increases proposed by the colonial government that triggered the drivers' strike.
+- ❔ The total number of arrests, injuries, and the extent of property damage reported during the Kowloon disturbances.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

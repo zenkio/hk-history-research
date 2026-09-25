@@ -37,7 +37,7 @@ The establishment of the Tuen Mun garrison marks a critical juncture in the inte
 
 ## Claims to verify
 
-- [ ] Verify the exact date or timeframe of the formal establishment of the Tuen Mun military facility in early Ming records.
-- [ ] Cross-reference the specific administrative classification of the Tuen Mun installation in the Ming Shilu.
+- ❔ Verify the exact date or timeframe of the formal establishment of the Tuen Mun military facility in early Ming records.
+- ❔ Cross-reference the specific administrative classification of the Tuen Mun installation in the Ming Shilu.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

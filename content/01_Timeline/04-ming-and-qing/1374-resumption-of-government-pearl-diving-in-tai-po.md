@@ -38,7 +38,7 @@ This event illustrates the early Ming dynasty's tight fiscal control over southe
 
 ## Claims to verify
 
-- [ ] Emperor Hongwu officially ordered the resumption of government pearl diving in Tai Po in the year 1374.
-- [ ] The exact demographic impact and scale of local displacement resulting from the 1374 decree.
+- ❔ Emperor Hongwu officially ordered the resumption of government pearl diving in Tai Po in the year 1374.
+- ❔ The exact demographic impact and scale of local displacement resulting from the 1374 decree.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -42,7 +42,7 @@ The creation of Xin'an County marked a turning point in the imperial integration
 
 ## Claims to verify
 
-- [ ] Xin'an County was officially established in the first year of the Wanli reign (1573).
-- [ ] Xin'an County was carved directly out of territory previously belonging to Dongguan County.
+- ❔ Xin'an County was officially established in the first year of the Wanli reign (1573).
+- ❔ Xin'an County was carved directly out of territory previously belonging to Dongguan County.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

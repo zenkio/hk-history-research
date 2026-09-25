@@ -38,8 +38,8 @@ The tea industry on Tai Mo Shan represents a pivotal moment in the early colonia
 
 ## Claims to verify
 
-- [ ] Determine if specific 1906 archival documents detail a formal government-sponsored tea expansion program or if this was an anecdotal development.
-- [ ] Verify the extent to which Tai Mo Shan tea was exported versus consumed locally during the early 20th century.
-- [ ] Investigate the specific impact of the 1898 lease terms on traditional land-use rights for tea farmers.
+- ❔ Determine if specific 1906 archival documents detail a formal government-sponsored tea expansion program or if this was an anecdotal development.
+- ❔ Verify the extent to which Tai Mo Shan tea was exported versus consumed locally during the early 20th century.
+- ❔ Investigate the specific impact of the 1898 lease terms on traditional land-use rights for tea farmers.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

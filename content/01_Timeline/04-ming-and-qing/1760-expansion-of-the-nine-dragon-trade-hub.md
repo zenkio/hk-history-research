@@ -39,8 +39,8 @@ This period marked a transformation of the Kowloon peninsula from a largely agra
 
 ## Claims to verify
 
-- [ ] The specific impact of the 1757 Canton System edict on local Kowloon maritime traffic
-- [ ] The precise timing of the informal development of provisioning stations in the Kowloon Bay area
-- [ ] The extent to which Qing naval officials documented or regulated trade activity in Kowloon prior to the Opium Wars
+- ❔ The specific impact of the 1757 Canton System edict on local Kowloon maritime traffic
+- ❔ The precise timing of the informal development of provisioning stations in the Kowloon Bay area
+- ❔ The extent to which Qing naval officials documented or regulated trade activity in Kowloon prior to the Opium Wars
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

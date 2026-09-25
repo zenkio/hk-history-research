@@ -36,7 +36,7 @@ The **1844** regulations represent the earliest attempt by the British colonial 
 
 ## Claims to verify
 
-- [ ] The specific legislative document or proclamation date in 1844 regarding currency regulation.
-- [ ] The extent to which Henry Pottinger was directly involved in drafting the 1844 monetary proclamations.
+- ❔ The specific legislative document or proclamation date in 1844 regarding currency regulation.
+- ❔ The extent to which Henry Pottinger was directly involved in drafting the 1844 monetary proclamations.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

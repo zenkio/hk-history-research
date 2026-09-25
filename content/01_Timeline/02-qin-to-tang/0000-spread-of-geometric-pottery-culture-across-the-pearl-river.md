@@ -36,7 +36,7 @@ The proliferation of geometric pottery is widely interpreted by scholars as evid
 
 ## Claims to verify
 
-- [ ] The exact dating of geometric pottery emergence in Hong Kong sites versus the broader Pearl River Delta.
-- [ ] The correlation between stamped pottery motifs and specific Baiyue tribal lineages.
+- ❔ The exact dating of geometric pottery emergence in Hong Kong sites versus the broader Pearl River Delta.
+- ❔ The correlation between stamped pottery motifs and specific Baiyue tribal lineages.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

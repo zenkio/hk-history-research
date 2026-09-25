@@ -36,7 +36,7 @@ The ordinance marked a turning point in the governance of labor in Hong Kong, es
 
 ## Claims to verify
 
-- [ ] The exact legislative mechanics and enforcement priorities of the 1948 Trade Union Registration Ordinance regarding external political affiliations.
-- [ ] The immediate registration statistics and dissolution rates of labor unions following the enactment of the 1948 ordinance.
+- ❔ The exact legislative mechanics and enforcement priorities of the 1948 Trade Union Registration Ordinance regarding external political affiliations.
+- ❔ The immediate registration statistics and dissolution rates of labor unions following the enactment of the 1948 ordinance.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

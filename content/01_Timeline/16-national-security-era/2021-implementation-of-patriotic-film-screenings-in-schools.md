@@ -35,8 +35,8 @@ This policy represents a significant juncture in the evolution of Hong Kong’s 
 
 ## Claims to verify
 
-- [ ] Did the Education Bureau issue a formal circular regarding film screenings in July 2021?
-- [ ] Were there specific films officially recommended or mandated by the Education Bureau for these screenings?
-- [ ] What was the specific rate of school participation reported by the government for the initial phase?
+- ❔ Did the Education Bureau issue a formal circular regarding film screenings in July 2021?
+- ❔ Were there specific films officially recommended or mandated by the Education Bureau for these screenings?
+- ❔ What was the specific rate of school participation reported by the government for the initial phase?
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

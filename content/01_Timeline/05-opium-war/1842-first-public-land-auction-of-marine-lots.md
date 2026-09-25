@@ -39,7 +39,7 @@ This auction marked the genesis of Hong Kong's distinctive land-lease system, wh
 
 ## Claims to verify
 
-- [ ] The exact date of the first public land auction was June 14, 1842.
-- [ ] Specific participating firms such as Jardine, Matheson & Co. acquired lots at this specific auction.
+- ❔ The exact date of the first public land auction was June 14, 1842.
+- ❔ Specific participating firms such as Jardine, Matheson & Co. acquired lots at this specific auction.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

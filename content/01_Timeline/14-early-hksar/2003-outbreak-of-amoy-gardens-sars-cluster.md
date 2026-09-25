@@ -38,7 +38,7 @@ The Amoy Gardens outbreak served as a watershed moment for Hong Kong's public he
 
 ## Claims to verify
 
-- [ ] The exact number of residents infected at Amoy Gardens during the peak of the outbreak
-- [ ] The precise mechanics of aerosol transmission through the drainage system as confirmed by WHO and government engineering reports
+- ❔ The exact number of residents infected at Amoy Gardens during the peak of the outbreak
+- ❔ The precise mechanics of aerosol transmission through the drainage system as confirmed by WHO and government engineering reports
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

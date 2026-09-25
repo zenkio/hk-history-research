@@ -41,8 +41,8 @@ The opening of the club marked the consolidation of a distinct British expatriat
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hong Kong Club as May 26, 1846
-- [ ] The original membership criteria and restrictions during the 1840s
+- ❔ The exact founding date of the Hong Kong Club as May 26, 1846
+- ❔ The original membership criteria and restrictions during the 1840s
 
 ## Research notes
 

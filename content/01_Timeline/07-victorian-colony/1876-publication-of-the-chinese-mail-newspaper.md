@@ -39,7 +39,7 @@ The introduction of these Chinese-language media platforms provided a vital chan
 
 ## Claims to verify
 
-- [ ] The precise founding date and ownership structure of Wah Tze Yat Po in relation to The Chinese Mail in 1876
-- [ ] The extent of colonial censorship applied to Chinese-language newspapers during the 1870s
+- ❔ The precise founding date and ownership structure of Wah Tze Yat Po in relation to The Chinese Mail in 1876
+- ❔ The extent of colonial censorship applied to Chinese-language newspapers during the 1870s
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

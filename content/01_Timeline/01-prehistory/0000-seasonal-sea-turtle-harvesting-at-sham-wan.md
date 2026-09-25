@@ -39,7 +39,7 @@ This early exploitation demonstrates an advanced understanding of marine animal 
 
 ## Claims to verify
 
-- [ ] Archaeological evidence at Sham Wan directly indicates seasonal targeting of green sea turtles around c. 600 BCE.
-- [ ] Prehistoric coastal communities in the region possessed specialized knowledge of marine animal lifecycles.
+- ❔ Archaeological evidence at Sham Wan directly indicates seasonal targeting of green sea turtles around c. 600 BCE.
+- ❔ Prehistoric coastal communities in the region possessed specialized knowledge of marine animal lifecycles.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

@@ -41,8 +41,8 @@ Bowring's governorship marked a philosophical shift in early British administrat
 
 ## Claims to verify
 
-- [ ] Sir John Bowring officially assumed the governorship of Hong Kong on April 13, 1854.
-- [ ] Bowring advocated for the political representation of Chinese residents during his administration.
+- ❔ Sir John Bowring officially assumed the governorship of Hong Kong on April 13, 1854.
+- ❔ Bowring advocated for the political representation of Chinese residents during his administration.
 
 ## Evidence
 

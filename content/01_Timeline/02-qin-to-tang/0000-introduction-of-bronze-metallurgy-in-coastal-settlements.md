@@ -36,8 +36,8 @@ The introduction of bronze metallurgy significantly impacted the efficiency of t
 
 ## Claims to verify
 
-- [ ] Exact dating of bronze artifacts at Sha Ha site
-- [ ] Extent of local casting versus importation of bronze goods
-- [ ] Correlation between bronze adoption and population density changes in the region
+- ❔ Exact dating of bronze artifacts at Sha Ha site
+- ❔ Extent of local casting versus importation of bronze goods
+- ❔ Correlation between bronze adoption and population density changes in the region
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -38,8 +38,8 @@ The passage of the Opium Ordinance is often cited by historians as a defining mo
 
 ## Claims to verify
 
-- [ ] The exact date of the Opium Ordinance's passage in 1858.
-- [ ] The specific breakdown of the tax revenue generated from opium licenses versus other colonial taxes in the late 1850s.
-- [ ] The role of Sir John Bowring in the specific drafting or advocacy of this ordinance.
+- ❔ The exact date of the Opium Ordinance's passage in 1858.
+- ❔ The specific breakdown of the tax revenue generated from opium licenses versus other colonial taxes in the late 1850s.
+- ❔ The role of Sir John Bowring in the specific drafting or advocacy of this ordinance.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

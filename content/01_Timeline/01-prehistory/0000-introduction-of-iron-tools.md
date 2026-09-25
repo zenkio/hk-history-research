@@ -35,7 +35,7 @@ The transition to iron tools marked a critical technological turning point for t
 
 ## Claims to verify
 
-- [ ] Iron artifacts in the Hong Kong region date precisely to approximately 400 BCE.
-- [ ] Iron tools directly and rapidly replaced bronze and stone implements in local settlements.
+- ❔ Iron artifacts in the Hong Kong region date precisely to approximately 400 BCE.
+- ❔ Iron tools directly and rapidly replaced bronze and stone implements in local settlements.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

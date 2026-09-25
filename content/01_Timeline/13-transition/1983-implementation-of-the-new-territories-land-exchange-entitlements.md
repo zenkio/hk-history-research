@@ -38,8 +38,8 @@ The introduction of **Letter B** played a central role in the rapid expansion of
 
 ## Claims to verify
 
-- [ ] The exact date of the formalization of the Letter B system.
-- [ ] The transition process from Letter A to Letter B schemes.
-- [ ] The specific legal status of Letter B holders in the mid-1980s.
+- ❔ The exact date of the formalization of the Letter B system.
+- ❔ The transition process from Letter A to Letter B schemes.
+- ❔ The specific legal status of Letter B holders in the mid-1980s.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

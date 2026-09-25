@@ -42,7 +42,7 @@ Youde's death marked the first and only time a sitting Governor of Hong Kong die
 
 ## Claims to verify
 
-- [ ] Edward Youde died in his sleep at the British Embassy in Beijing on December 5, 1986.
-- [ ] David Akers-Jones served as Acting Governor immediately following Youde's death.
+- ❔ Edward Youde died in his sleep at the British Embassy in Beijing on December 5, 1986.
+- ❔ David Akers-Jones served as Acting Governor immediately following Youde's death.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

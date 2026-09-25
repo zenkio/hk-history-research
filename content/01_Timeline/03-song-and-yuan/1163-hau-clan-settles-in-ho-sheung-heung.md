@@ -37,7 +37,7 @@ The settlement of the Hau clan is a key milestone in the history of the New Terr
 
 ## Claims to verify
 
-- [ ] The Hau clan specifically settled at Ho Sheung Heung in the year 1163.
-- [ ] The migration of the Hau clan originated directly from mainland Guangdong during the Song dynasty.
+- ❔ The Hau clan specifically settled at Ho Sheung Heung in the year 1163.
+- ❔ The migration of the Hau clan originated directly from mainland Guangdong during the Song dynasty.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

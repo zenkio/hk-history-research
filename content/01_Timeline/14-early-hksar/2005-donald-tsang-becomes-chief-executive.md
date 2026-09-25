@@ -40,7 +40,7 @@ By early **2005**, the administration of Hong Kong's first Chief Executive, **Tu
 
 ## Claims to verify
 
-- [ ] Donald Tsang officially took office on June 21, 2005
-- [ ] The election was uncontested due to a lack of sufficient nominations for rival candidates
+- ❔ Donald Tsang officially took office on June 21, 2005
+- ❔ The election was uncontested due to a lack of sufficient nominations for rival candidates
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

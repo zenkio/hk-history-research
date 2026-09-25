@@ -36,7 +36,7 @@ The aftermath of Typhoon Mangkhut triggered intense public debate regarding gove
 
 ## Claims to verify
 
-- [ ] The Hong Kong Observatory issued Hurricane Signal No. 10 on September 16, 2018.
-- [ ] Severe transport gridlock occurred on September 17, 2018, due to blocked roads and suspended rail services.
+- ❔ The Hong Kong Observatory issued Hurricane Signal No. 10 on September 16, 2018.
+- ❔ Severe transport gridlock occurred on September 17, 2018, due to blocked roads and suspended rail services.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -39,8 +39,8 @@ The establishment of the new campus is often viewed as the fruition of the colon
 
 ## Claims to verify
 
-- [ ] Verify the exact construction start and completion date of the 1918 Causeway Bay campus.
-- [ ] Confirm the student enrollment figures for the 1918 school year.
-- [ ] Verify if the 1918 opening was formally delayed by First World War logistics.
+- ❔ Verify the exact construction start and completion date of the 1918 Causeway Bay campus.
+- ❔ Confirm the student enrollment figures for the 1918 school year.
+- ❔ Verify if the 1918 opening was formally delayed by First World War logistics.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -36,7 +36,7 @@ The evolution of the committee illustrates the complex ideological transition of
 
 ## Claims to verify
 
-- [ ] The Committee on the Promotion of Civic Education was originally established in 1984 under the colonial government.
-- [ ] The committee noticeably ramped up national identity and patriotism campaigns targeting youth around 2004.
+- ❔ The Committee on the Promotion of Civic Education was originally established in 1984 under the colonial government.
+- ❔ The committee noticeably ramped up national identity and patriotism campaigns targeting youth around 2004.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

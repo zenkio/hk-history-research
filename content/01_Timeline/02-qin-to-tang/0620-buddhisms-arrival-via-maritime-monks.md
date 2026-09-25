@@ -35,7 +35,7 @@ The introduction of Buddhism to the coastal frontier signifies the transition of
 
 ## Claims to verify
 
-- [ ] The extent of Tang-era archaeological remains in Tuen Mun related to Buddhist activity.
-- [ ] The reliability of post-Tang local gazetteers in documenting early 7th-century religious structures.
+- ❔ The extent of Tang-era archaeological remains in Tuen Mun related to Buddhist activity.
+- ❔ The reliability of post-Tang local gazetteers in documenting early 7th-century religious structures.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

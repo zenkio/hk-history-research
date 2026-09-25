@@ -42,7 +42,7 @@ The resignation marked a watershed moment in the political history of the early 
 
 ## Claims to verify
 
-- [ ] Tung Chee-hwa officially submitted his resignation on March 12, 2005, citing health reasons.
-- [ ] Tung was appointed as a Vice-Chairman of the CPPCC shortly after stepping down.
+- ❔ Tung Chee-hwa officially submitted his resignation on March 12, 2005, citing health reasons.
+- ❔ Tung was appointed as a Vice-Chairman of the CPPCC shortly after stepping down.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

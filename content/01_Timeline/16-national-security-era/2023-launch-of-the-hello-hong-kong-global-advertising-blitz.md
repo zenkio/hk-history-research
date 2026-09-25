@@ -40,7 +40,7 @@ The campaign marked a pivotal symbolic and economic turning point for the territ
 
 ## Claims to verify
 
-- [ ] The 'Hello Hong Kong' campaign officially launched on February 2, 2023.
-- [ ] Approximately 500,000 free airline tickets were distributed as part of the initiative.
+- ❔ The 'Hello Hong Kong' campaign officially launched on February 2, 2023.
+- ❔ Approximately 500,000 free airline tickets were distributed as part of the initiative.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -40,7 +40,7 @@ The establishment of the hospital represented a crucial milestone in the develop
 
 ## Claims to verify
 
-- [ ] Queen Elizabeth Hospital was the largest general hospital in the British Commonwealth at the time of its opening.
-- [ ] The inauguration ceremony took place specifically on September 10, 1963.
+- ❔ Queen Elizabeth Hospital was the largest general hospital in the British Commonwealth at the time of its opening.
+- ❔ The inauguration ceremony took place specifically on September 10, 1963.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

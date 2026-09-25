@@ -37,7 +37,7 @@ The mapping of the Hong Kong coastline by Tang mariners served to bridge the gap
 
 ## Claims to verify
 
-- [ ] The extent to which Tang maritime records differentiate between state-led mapping and indigenous seafaring knowledge.
-- [ ] The accuracy of the 780-800 timeframe in relation to extant historical fragments concerning Pearl River navigation.
+- ❔ The extent to which Tang maritime records differentiate between state-led mapping and indigenous seafaring knowledge.
+- ❔ The accuracy of the 780-800 timeframe in relation to extant historical fragments concerning Pearl River navigation.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

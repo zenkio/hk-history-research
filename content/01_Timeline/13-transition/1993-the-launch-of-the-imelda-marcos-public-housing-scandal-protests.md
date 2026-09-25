@@ -40,7 +40,7 @@ The protests marked a notable moment in the evolution of local civic engagement 
 
 ## Claims to verify
 
-- [ ] Specific rent increase percentages implemented by the Hong Kong Housing Authority in early 1993
-- [ ] Exact dates and organizational details of the 'Imelda Marcos' satirical protests in May 1993
+- ❔ Specific rent increase percentages implemented by the Hong Kong Housing Authority in early 1993
+- ❔ Exact dates and organizational details of the 'Imelda Marcos' satirical protests in May 1993
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

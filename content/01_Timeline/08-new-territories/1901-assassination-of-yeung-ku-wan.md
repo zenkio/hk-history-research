@@ -45,9 +45,9 @@ The murder of **Yeung Ku-wan** sent shockwaves through the local revolutionary n
 
 ## Claims to verify
 
-- [ ] Yeung Ku-wan died on January 11, 1901, at Alice Memorial Hospital.
-- [ ] The assassin Chen Lin was successfully apprehended, tried, and executed by the Hong Kong colonial government.
-- [ ] The exact address of the assassination was No. 52 Gage Street in Central.
+- ❔ Yeung Ku-wan died on January 11, 1901, at Alice Memorial Hospital.
+- ❔ The assassin Chen Lin was successfully apprehended, tried, and executed by the Hong Kong colonial government.
+- ❔ The exact address of the assassination was No. 52 Gage Street in Central.
 
 ## Evidence
 

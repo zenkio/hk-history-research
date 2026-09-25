@@ -40,7 +40,7 @@ In the wake of Tam's passing and ongoing economic distress, 'Below the Lion Rock
 
 ## Claims to verify
 
-- [ ] Roman Tam passed away on October 18, 2002, at Queen Mary Hospital.
-- [ ] The song 'Below the Lion Rock' was originally released in 1979 as a television theme song.
+- ❔ Roman Tam passed away on October 18, 2002, at Queen Mary Hospital.
+- ❔ The song 'Below the Lion Rock' was originally released in 1979 as a television theme song.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

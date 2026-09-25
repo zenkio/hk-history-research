@@ -47,8 +47,8 @@ The incident provided the pretext that British authorities, led by **Sir John Bo
 
 ## Claims to verify
 
-- [ ] Whether the Arrow's colonial registration had legally expired at the time of the seizure
-- [ ] Whether the British flag was actually flying on the vessel when Qing authorities boarded it
+- ❔ Whether the Arrow's colonial registration had legally expired at the time of the seizure
+- ❔ Whether the British flag was actually flying on the vessel when Qing authorities boarded it
 
 ## Research notes
 

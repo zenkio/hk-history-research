@@ -37,7 +37,7 @@ The arrival and permanent settlement of the Man clan in San Tin completed a cruc
 
 ## Claims to verify
 
-- [ ] The exact arrival date of the Man clan in San Tin is traditionally placed around c. 1275, though specific genealogical records vary.
-- [ ] The direct genealogical connection between the San Tin Man clan and Wen Tianxiang requires cross-verification with surviving clan genealogies (zupu).
+- ❔ The exact arrival date of the Man clan in San Tin is traditionally placed around c. 1275, though specific genealogical records vary.
+- ❔ The direct genealogical connection between the San Tin Man clan and Wen Tianxiang requires cross-verification with surviving clan genealogies (zupu).
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

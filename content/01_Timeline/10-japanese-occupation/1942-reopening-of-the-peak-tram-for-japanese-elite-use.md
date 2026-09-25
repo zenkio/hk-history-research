@@ -39,7 +39,7 @@ The resumption of the Peak Tram symbolizes the physical and social restructuring
 
 ## Claims to verify
 
-- [ ] The Peak Tram officially resumed limited operations specifically in June 1942.
-- [ ] Service on the reopened tram was restricted exclusively to Japanese military and civilian personnel.
+- ❔ The Peak Tram officially resumed limited operations specifically in June 1942.
+- ❔ Service on the reopened tram was restricted exclusively to Japanese military and civilian personnel.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

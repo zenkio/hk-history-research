@@ -39,7 +39,7 @@ The episode marked a watershed moment in early HKSAR history, highlighting the r
 
 ## Claims to verify
 
-- [ ] The exact date of the Court of Appeal injunction obtained by Lo Siu-lan was December 14, 2004.
-- [ ] The number of retail and parking facilities initially packaged into Link REIT was approximately 180.
+- ❔ The exact date of the Court of Appeal injunction obtained by Lo Siu-lan was December 14, 2004.
+- ❔ The number of retail and parking facilities initially packaged into Link REIT was approximately 180.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

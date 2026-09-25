@@ -43,7 +43,7 @@ This natural disaster marked a critical turning point in the final desperate sta
 
 ## Claims to verify
 
-- [ ] Did the specific typhoon strike the fleet in December 1277, or is the exact dating subject to chronological debate in primary sources?
-- [ ] To what extent did Emperor Duanzong's fall into the water during the storm directly cause his subsequent death?
+- ❔ Did the specific typhoon strike the fleet in December 1277, or is the exact dating subject to chronological debate in primary sources?
+- ❔ To what extent did Emperor Duanzong's fall into the water during the storm directly cause his subsequent death?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

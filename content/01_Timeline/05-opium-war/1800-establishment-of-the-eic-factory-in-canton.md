@@ -39,8 +39,8 @@ The solidification of this trading relationship established a precarious economi
 
 ## Claims to verify
 
-- [ ] The official status of the EIC as a quasi-sovereign entity during the 1800 Canton trade
-- [ ] Specific volume and impact of trade restrictions enforced by the Cohong in 1800
-- [ ] Evidence linking the specific administrative structure of the 1800 factory to later territorial demands
+- ❔ The official status of the EIC as a quasi-sovereign entity during the 1800 Canton trade
+- ❔ Specific volume and impact of trade restrictions enforced by the Cohong in 1800
+- ❔ Evidence linking the specific administrative structure of the 1800 factory to later territorial demands
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

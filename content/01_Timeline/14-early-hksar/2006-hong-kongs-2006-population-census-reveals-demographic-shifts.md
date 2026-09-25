@@ -37,8 +37,8 @@ The findings of the **2006** by-census became a cornerstone for urban planning a
 
 ## Claims to verify
 
-- [ ] Verify the specific median age reported in the 2006 By-census summary.
-- [ ] Check the official number of Mainland arrivals reported for the 2001-2006 period in government documents.
-- [ ] Confirm the exact dates of the 2006 By-census collection period.
+- ❔ Verify the specific median age reported in the 2006 By-census summary.
+- ❔ Check the official number of Mainland arrivals reported for the 2001-2006 period in government documents.
+- ❔ Confirm the exact dates of the 2006 By-census collection period.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

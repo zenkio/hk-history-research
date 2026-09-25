@@ -38,7 +38,7 @@ The transition from corporate monopoly to Crown representation fundamentally alt
 
 ## Claims to verify
 
-- [ ] The exact statutory act abolishing the East India Company's trade monopoly took effect in 1833.
-- [ ] The Qing imperial court formally rejected the credentials of the British Superintendents of Trade upon their arrival in Canton.
+- ❔ The exact statutory act abolishing the East India Company's trade monopoly took effect in 1833.
+- ❔ The Qing imperial court formally rejected the credentials of the British Superintendents of Trade upon their arrival in Canton.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

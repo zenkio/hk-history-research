@@ -43,8 +43,8 @@ The mobilization transformed Hong Kong into an active participant in a global co
 
 ## Claims to verify
 
-- [ ] Exact passenger numbers and ship manifests for Chinese Labour Corps members transiting through Hong Kong in 1917
-- [ ] Specific locations of transit camps established within the colony during the mobilization period
+- ❔ Exact passenger numbers and ship manifests for Chinese Labour Corps members transiting through Hong Kong in 1917
+- ❔ Specific locations of transit camps established within the colony during the mobilization period
 
 ## Evidence
 

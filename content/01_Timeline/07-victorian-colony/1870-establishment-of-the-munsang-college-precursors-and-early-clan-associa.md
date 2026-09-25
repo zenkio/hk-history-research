@@ -37,7 +37,7 @@ The proliferation of clan associations and educational initiatives in the **1870
 
 ## Claims to verify
 
-- [ ] The precise timeline and founding dates of specific clan associations operating in Kowloon during the 1870s.
-- [ ] The direct institutional lineages connecting 1870s educational precursors to later schools such as Munsang College.
+- ❔ The precise timeline and founding dates of specific clan associations operating in Kowloon during the 1870s.
+- ❔ The direct institutional lineages connecting 1870s educational precursors to later schools such as Munsang College.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -37,8 +37,8 @@ The creation of the ICAC marked a watershed moment in Hong Kong's institutional 
 
 ## Claims to verify
 
-- [ ] The Independent Commission Against Corruption was officially established on February 15, 1974.
-- [ ] Peter Godber's flight from Hong Kong in 1973 served as the direct catalyst for the creation of the ICAC.
-- [ ] The ICAC operates independently of the civil service and reports directly to the Governor.
+- ❔ The Independent Commission Against Corruption was officially established on February 15, 1974.
+- ❔ Peter Godber's flight from Hong Kong in 1973 served as the direct catalyst for the creation of the ICAC.
+- ❔ The ICAC operates independently of the civil service and reports directly to the Governor.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -37,8 +37,8 @@ This ordinance marked a critical turning point in the institutionalization of ra
 
 ## Claims to verify
 
-- [ ] The Peak District Reservation Ordinance was officially enacted in 1904.
-- [ ] The ordinance legally barred all Chinese individuals from residing at Victoria Peak regardless of property ownership or wealth.
+- ❔ The Peak District Reservation Ordinance was officially enacted in 1904.
+- ❔ The ordinance legally barred all Chinese individuals from residing at Victoria Peak regardless of property ownership or wealth.
 
 ## Research notes
 

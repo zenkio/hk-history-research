@@ -37,7 +37,7 @@ The opening of the library is often viewed as a milestone in the development of 
 
 ## Claims to verify
 
-- [ ] Confirm the exact total gross floor area stated in the original 2001 planning documents.
-- [ ] Verify the official participation list for the opening ceremony on May 17, 2001.
+- ❔ Confirm the exact total gross floor area stated in the original 2001 planning documents.
+- ❔ Verify the official participation list for the opening ceremony on May 17, 2001.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

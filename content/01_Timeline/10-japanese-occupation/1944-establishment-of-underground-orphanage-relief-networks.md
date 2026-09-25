@@ -39,7 +39,7 @@ While formal documentation from this clandestine period remains sparse, the emer
 
 ## Claims to verify
 
-- [ ] Exact dates and locations of clandestine underground shelters operating in October 1944
-- [ ] The specific degree of coordination between local charitable individuals and resistance groups
+- ❔ Exact dates and locations of clandestine underground shelters operating in October 1944
+- ❔ The specific degree of coordination between local charitable individuals and resistance groups
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

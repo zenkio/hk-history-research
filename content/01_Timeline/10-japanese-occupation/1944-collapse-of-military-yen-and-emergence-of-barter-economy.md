@@ -39,8 +39,8 @@ The total collapse of the monetary system exposed the complete failure of Japane
 
 ## Claims to verify
 
-- [ ] Specific exchange rates or inflation indices for the military yen in December 1944
-- [ ] Official decrees regarding the prohibition of the Hong Kong dollar and enforcement of military yen
-- [ ] Quantifiable black market volumes of rice traded for specific luxury items
+- ❔ Specific exchange rates or inflation indices for the military yen in December 1944
+- ❔ Official decrees regarding the prohibition of the Hong Kong dollar and enforcement of military yen
+- ❔ Quantifiable black market volumes of rice traded for specific luxury items
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

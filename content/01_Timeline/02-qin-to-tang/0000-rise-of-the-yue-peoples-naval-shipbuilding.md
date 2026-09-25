@@ -37,7 +37,7 @@ This era of maritime innovation established the Pearl River Delta as a significa
 
 ## Claims to verify
 
-- [ ] The specific engineering characteristics of 'bird-beak' prows in regional archaeological contexts.
-- [ ] The extent of indigenous shipbuilding influence on subsequent Han dynasty naval tactics in the south.
+- ❔ The specific engineering characteristics of 'bird-beak' prows in regional archaeological contexts.
+- ❔ The extent of indigenous shipbuilding influence on subsequent Han dynasty naval tactics in the south.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

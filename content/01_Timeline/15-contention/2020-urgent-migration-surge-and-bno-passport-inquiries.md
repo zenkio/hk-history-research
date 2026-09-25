@@ -39,7 +39,7 @@ This rapid wave of inquiries and subsequent departures contributed to a notable 
 
 ## Claims to verify
 
-- [ ] Exact figures of BNO passport renewals and applications submitted in July 2020
-- [ ] Specific policy announcements made by the British Home Office regarding BNO status in mid-2020
+- ❔ Exact figures of BNO passport renewals and applications submitted in July 2020
+- ❔ Specific policy announcements made by the British Home Office regarding BNO status in mid-2020
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

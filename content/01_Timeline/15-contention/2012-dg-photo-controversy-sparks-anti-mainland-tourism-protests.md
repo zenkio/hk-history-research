@@ -40,8 +40,8 @@ The Dolce & Gabbana controversy is widely viewed by historians and sociologists 
 
 ## Claims to verify
 
-- [ ] Dolce & Gabbana security guards prohibited locals from photographing the storefront exterior on January 5, 2012.
-- [ ] A protest involving several hundred demonstrators took place outside the Tsim Sha Tsui store on January 8, 2012.
-- [ ] Store staff justified the photography ban by claiming the pavement was private property.
+- ❔ Dolce & Gabbana security guards prohibited locals from photographing the storefront exterior on January 5, 2012.
+- ❔ A protest involving several hundred demonstrators took place outside the Tsim Sha Tsui store on January 8, 2012.
+- ❔ Store staff justified the photography ban by claiming the pavement was private property.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

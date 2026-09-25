@@ -37,7 +37,7 @@ These early alliances represent a crucial chapter in the pre-imperial history of
 
 ## Claims to verify
 
-- [ ] Specific defensive tribal alliances were formally organized in the Hong Kong area specifically around 250 BCE.
-- [ ] Material culture shifts in the Pearl River Delta during the mid-3rd century BCE directly reflect coordinated military cooperation among Baiyue clans.
+- ❔ Specific defensive tribal alliances were formally organized in the Hong Kong area specifically around 250 BCE.
+- ❔ Material culture shifts in the Pearl River Delta during the mid-3rd century BCE directly reflect coordinated military cooperation among Baiyue clans.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

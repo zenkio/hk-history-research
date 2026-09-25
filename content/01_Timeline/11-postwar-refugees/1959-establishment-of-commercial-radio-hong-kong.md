@@ -45,8 +45,8 @@ Later scholarship often highlights how private broadcasters like CRHK navigated 
 
 ## Claims to verify
 
-- [ ] Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959.
-- [ ] George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited.
+- ❔ Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959.
+- ❔ George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited.
 
 ## Evidence
 

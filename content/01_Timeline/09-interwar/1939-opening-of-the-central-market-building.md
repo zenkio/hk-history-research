@@ -36,7 +36,7 @@ The opening of the Central Market represented a major shift in colonial urban ma
 
 ## Claims to verify
 
-- [ ] The Central Market Building officially opened on May 1, 1939.
-- [ ] The building was designed in the Bauhaus and Streamline Moderne architectural styles.
+- ❔ The Central Market Building officially opened on May 1, 1939.
+- ❔ The building was designed in the Bauhaus and Streamline Moderne architectural styles.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

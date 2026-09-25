@@ -35,7 +35,7 @@ Historians generally view the **1955** ordinance as a pivotal, if incremental, s
 
 ## Claims to verify
 
-- [ ] The exact legislative mechanics and specific provisions enacted under the 1955 ordinance compared to prior labor legislation.
-- [ ] The number of active labor inspectors and factory inspections conducted in the immediate aftermath of the ordinance's passage.
+- ❔ The exact legislative mechanics and specific provisions enacted under the 1955 ordinance compared to prior labor legislation.
+- ❔ The number of active labor inspectors and factory inspections conducted in the immediate aftermath of the ordinance's passage.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

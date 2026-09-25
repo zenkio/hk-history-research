@@ -37,8 +37,8 @@ The discovery of the **Lei Cheng Uk Han Tomb** (李鄭屋漢墓) in **1955** dur
 
 ## Claims to verify
 
-- [ ] The tomb was constructed around 150 CE during the Eastern Han dynasty.
-- [ ] Bricks within the tomb bear inscriptions such as Ji Bu Zuo.
-- [ ] The tomb was discovered in 1955 during resettlement estate construction.
+- ❔ The tomb was constructed around 150 CE during the Eastern Han dynasty.
+- ❔ Bricks within the tomb bear inscriptions such as Ji Bu Zuo.
+- ❔ The tomb was discovered in 1955 during resettlement estate construction.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -36,8 +36,8 @@ The Golden Jubilee Incident is widely viewed by historians as a watershed moment
 
 ## Claims to verify
 
-- [ ] The exact timeline of protests and negotiations between May 1977 and July 1978
-- [ ] The specific financial allegations leveled against the school management committee
-- [ ] The precise number of students and teachers affected by the school closure
+- ❔ The exact timeline of protests and negotiations between May 1977 and July 1978
+- ❔ The specific financial allegations leveled against the school management committee
+- ❔ The precise number of students and teachers affected by the school closure
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

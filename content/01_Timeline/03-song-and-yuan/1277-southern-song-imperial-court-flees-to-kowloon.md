@@ -42,7 +42,7 @@ While the court's presence in the territory was brief and marked by military des
 
 ## Claims to verify
 
-- [ ] The exact dates and logistics of Emperor Duanzong's arrival in Kowloon in April 1277 according to surviving primary sources like the History of Song.
-- [ ] The precise geographical locations used by the mobile court during their stay in the Kowloon area.
+- ❔ The exact dates and logistics of Emperor Duanzong's arrival in Kowloon in April 1277 according to surviving primary sources like the History of Song.
+- ❔ The precise geographical locations used by the mobile court during their stay in the Kowloon area.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

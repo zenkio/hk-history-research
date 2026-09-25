@@ -36,8 +36,8 @@ The shift toward digital television was more than a technical upgrade; it repres
 
 ## Claims to verify
 
-- [ ] Confirm the exact end date of the first public consultation period in late 2007.
-- [ ] Verify the official title of the consultation document released by the Office of the Telecommunications Authority.
-- [ ] Cross-reference the specific legal requirements imposed on ATV and TVB regarding digital infrastructure rollout at that time.
+- ❔ Confirm the exact end date of the first public consultation period in late 2007.
+- ❔ Verify the official title of the consultation document released by the Office of the Telecommunications Authority.
+- ❔ Cross-reference the specific legal requirements imposed on ATV and TVB regarding digital infrastructure rollout at that time.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

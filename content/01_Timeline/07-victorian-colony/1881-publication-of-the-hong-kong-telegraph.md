@@ -39,7 +39,7 @@ The introduction of the *Hong Kong Telegraph* broadened the scope of public disc
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hong Kong Telegraph as June 15, 1881
-- [ ] The initial founders and editorial stance of the newspaper upon its launch
+- ❔ The exact founding date of the Hong Kong Telegraph as June 15, 1881
+- ❔ The initial founders and editorial stance of the newspaper upon its launch
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -38,7 +38,7 @@ The series is widely regarded by cultural historians as a catalyst for the cryst
 
 ## Claims to verify
 
-- [ ] Radio Television Hong Kong broadcast the premiere of "Below the Lion Rock" on October 18, 1972.
-- [ ] The series began as a 15-minute black-and-white production before transitioning to color and longer formats.
+- ❔ Radio Television Hong Kong broadcast the premiere of "Below the Lion Rock" on October 18, 1972.
+- ❔ The series began as a 15-minute black-and-white production before transitioning to color and longer formats.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

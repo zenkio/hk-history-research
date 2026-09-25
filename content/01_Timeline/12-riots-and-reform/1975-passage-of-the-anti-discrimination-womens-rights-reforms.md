@@ -41,7 +41,7 @@ These mid-1970s initiatives laid the groundwork for modern gender equality legis
 
 ## Claims to verify
 
-- [ ] Specific legislative motions or policy announcements regarding women's rights introduced on or around October 12, 1975.
-- [ ] The precise administrative steps taken by the colonial government in response to the United Nations International Women's Year.
+- ❔ Specific legislative motions or policy announcements regarding women's rights introduced on or around October 12, 1975.
+- ❔ The precise administrative steps taken by the colonial government in response to the United Nations International Women's Year.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

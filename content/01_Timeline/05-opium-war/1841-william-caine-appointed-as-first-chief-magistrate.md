@@ -43,8 +43,8 @@ The appointment marked a foundational step in the establishment of a British col
 
 ## Claims to verify
 
-- [ ] Captain William Caine was officially appointed as Chief Magistrate on April 30, 1841.
-- [ ] Caine concurrently headed the early police force and the magistracy during the initial occupation.
+- ❔ Captain William Caine was officially appointed as Chief Magistrate on April 30, 1841.
+- ❔ Caine concurrently headed the early police force and the magistracy during the initial occupation.
 
 ## Research notes
 

@@ -37,8 +37,8 @@ The 818 Incident is often cited by scholars and observers as a pivotal moment in
 
 ## Claims to verify
 
-- [ ] Verification of the specific police deployment numbers during the 818 event.
-- [ ] Legal analysis of the university's authority to restrict student movement under the HKU Ordinance.
-- [ ] Comparison of official university statements issued on the day of the incident versus subsequent retrospective reports.
+- ❔ Verification of the specific police deployment numbers during the 818 event.
+- ❔ Legal analysis of the university's authority to restrict student movement under the HKU Ordinance.
+- ❔ Comparison of official university statements issued on the day of the incident versus subsequent retrospective reports.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

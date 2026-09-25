@@ -43,9 +43,9 @@ Historians generally view **Ng Choy**'s appointment as a watershed moment for lo
 
 ## Claims to verify
 
-- [ ] Ng Choy was officially appointed to the Legislative Council in the year 1880.
-- [ ] Ng Choy was the first ethnic Chinese person to serve as a Legislative Councillor in Hong Kong.
-- [ ] Governor John Pope Hennessy was responsible for making the appointment.
+- ❔ Ng Choy was officially appointed to the Legislative Council in the year 1880.
+- ❔ Ng Choy was the first ethnic Chinese person to serve as a Legislative Councillor in Hong Kong.
+- ❔ Governor John Pope Hennessy was responsible for making the appointment.
 
 ## Evidence
 

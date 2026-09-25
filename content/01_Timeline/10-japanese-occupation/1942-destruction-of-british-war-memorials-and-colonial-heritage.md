@@ -37,7 +37,7 @@ The systematic destruction of colonial heritage marked a profound physical ruptu
 
 ## Claims to verify
 
-- [ ] The exact timeline for the removal and melting down of the Queen Victoria statue and other Statue Square monuments between 1942 and 1943
-- [ ] The specific destinations and records of bronze statues shipped from Hong Kong to Japan for wartime manufacturing
+- ❔ The exact timeline for the removal and melting down of the Queen Victoria statue and other Statue Square monuments between 1942 and 1943
+- ❔ The specific destinations and records of bronze statues shipped from Hong Kong to Japan for wartime manufacturing
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

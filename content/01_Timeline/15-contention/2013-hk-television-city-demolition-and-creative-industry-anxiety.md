@@ -36,7 +36,7 @@ The disappearance of the physical TVB studio complex became a powerful symbol fo
 
 ## Claims to verify
 
-- [ ] Exact demolition commencement date of April 12, 2013 for the Clear Water Bay studio complex
-- [ ] Property transaction details and subsequent redevelopment plans for the former TVB site
+- ❔ Exact demolition commencement date of April 12, 2013 for the Clear Water Bay studio complex
+- ❔ Property transaction details and subsequent redevelopment plans for the former TVB site
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -38,7 +38,7 @@ The ordinance played a defining role in shaping Hong Kong's unique geographic an
 
 ## Claims to verify
 
-- [ ] The Country Parks Ordinance was formally enacted on August 16, 1976.
-- [ ] The legislation established the Country Parks Authority and the Country Parks Board.
+- ❔ The Country Parks Ordinance was formally enacted on August 16, 1976.
+- ❔ The legislation established the Country Parks Authority and the Country Parks Board.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

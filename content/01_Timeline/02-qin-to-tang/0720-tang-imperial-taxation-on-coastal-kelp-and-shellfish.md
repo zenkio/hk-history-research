@@ -36,7 +36,7 @@ This period of taxation represents the formal inclusion of the Hong Kong region 
 
 ## Claims to verify
 
-- [ ] The exact start date of marine product taxation in the Tuen Mun region during the Tang dynasty.
-- [ ] The extent of the administrative role of Tuen Mun in collecting maritime taxes before the establishment of the salt administration offices in later dynasties.
+- ❔ The exact start date of marine product taxation in the Tuen Mun region during the Tang dynasty.
+- ❔ The extent of the administrative role of Tuen Mun in collecting maritime taxes before the establishment of the salt administration offices in later dynasties.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

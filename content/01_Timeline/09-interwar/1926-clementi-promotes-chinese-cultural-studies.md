@@ -44,8 +44,8 @@ The creation of the Chinese Department marked a significant turning point in the
 
 ## Claims to verify
 
-- [ ] Governor Cecil Clementi officially established the Department of Chinese at the University of Hong Kong in 1926.
-- [ ] Lai Chi-yuk and Au Tai-tin were among the foundational scholars appointed to the new department.
+- ❔ Governor Cecil Clementi officially established the Department of Chinese at the University of Hong Kong in 1926.
+- ❔ Lai Chi-yuk and Au Tai-tin were among the foundational scholars appointed to the new department.
 
 ## Evidence
 

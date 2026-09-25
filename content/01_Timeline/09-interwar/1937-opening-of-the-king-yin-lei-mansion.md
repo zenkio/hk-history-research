@@ -44,8 +44,8 @@ King Yin Lei is widely recognized by architectural historians as a masterpiece o
 
 ## Claims to verify
 
-- [ ] The mansion was completed precisely in the year 1937.
-- [ ] Shum Tsik-sum and his wife commissioned the original construction under the name Yee Kuk.
-- [ ] Chan Gin-hip and Lee Ming-shu served as the principal architects for the estate.
+- ❔ The mansion was completed precisely in the year 1937.
+- ❔ Shum Tsik-sum and his wife commissioned the original construction under the name Yee Kuk.
+- ❔ Chan Gin-hip and Lee Ming-shu served as the principal architects for the estate.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

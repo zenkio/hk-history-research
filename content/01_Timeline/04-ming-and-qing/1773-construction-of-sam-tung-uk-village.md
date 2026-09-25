@@ -38,7 +38,7 @@ The construction of Sam Tung Uk serves as a key physical example of lineage-base
 
 ## Claims to verify
 
-- [ ] The exact establishment date of Sam Tung Uk as 1773 based on surviving clan land deeds or ancestral hall records.
-- [ ] The precise migratory route and ancestral origins of the Chan clan prior to settling in Tsuen Wan.
+- ❔ The exact establishment date of Sam Tung Uk as 1773 based on surviving clan land deeds or ancestral hall records.
+- ❔ The precise migratory route and ancestral origins of the Chan clan prior to settling in Tsuen Wan.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

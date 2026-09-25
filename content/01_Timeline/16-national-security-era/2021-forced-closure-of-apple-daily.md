@@ -36,7 +36,7 @@ The cessation of *Apple Daily* is widely regarded by observers as a watershed mo
 
 ## Claims to verify
 
-- [ ] Apple Daily published its final edition on June 24, 2021, after corporate assets were frozen by authorities.
-- [ ] Next Digital and Apple Daily executives were arrested under the National Security Law in June 2021.
+- ❔ Apple Daily published its final edition on June 24, 2021, after corporate assets were frozen by authorities.
+- ❔ Next Digital and Apple Daily executives were arrested under the National Security Law in June 2021.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

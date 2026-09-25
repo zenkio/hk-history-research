@@ -38,8 +38,8 @@ The establishment of these elite councils marked a critical turning point in the
 
 ## Claims to verify
 
-- [ ] Exact inauguration dates and membership rosters of the Chinese Representative Council and Chinese Cooperative Council in 1943
-- [ ] The precise jurisdictional boundaries and executive powers granted to the councils by the Japanese military administration
+- ❔ Exact inauguration dates and membership rosters of the Chinese Representative Council and Chinese Cooperative Council in 1943
+- ❔ The precise jurisdictional boundaries and executive powers granted to the councils by the Japanese military administration
 
 ## Evidence
 

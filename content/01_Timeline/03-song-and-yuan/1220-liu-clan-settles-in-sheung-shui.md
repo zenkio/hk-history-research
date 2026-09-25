@@ -40,7 +40,7 @@ The settlement of the Liu clan is a key example of how major lineages shaped the
 
 ## Claims to verify
 
-- [ ] Did the Liu clan specifically settle in Sheung Shui around c. 1220 according to extant clan genealogies and local gazetteers?
-- [ ] What primary source documentation exists to confirm the exact migration route of the Liu lineage from Jiangxi to Guangdong and Hong Kong?
+- ❔ Did the Liu clan specifically settle in Sheung Shui around c. 1220 according to extant clan genealogies and local gazetteers?
+- ❔ What primary source documentation exists to confirm the exact migration route of the Liu lineage from Jiangxi to Guangdong and Hong Kong?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

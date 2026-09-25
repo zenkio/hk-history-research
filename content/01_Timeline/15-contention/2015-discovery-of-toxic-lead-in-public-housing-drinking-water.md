@@ -43,7 +43,7 @@ The scandal led to intense public outcry and demands for accountability from gov
 
 ## Claims to verify
 
-- [ ] Did the Democratic Party publicly announce the Kai Ching Estate lead findings on July 5, 2015?
-- [ ] What were the exact blood lead levels recorded among affected residents during the initial screenings?
+- ❔ Did the Democratic Party publicly announce the Kai Ching Estate lead findings on July 5, 2015?
+- ❔ What were the exact blood lead levels recorded among affected residents during the initial screenings?
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

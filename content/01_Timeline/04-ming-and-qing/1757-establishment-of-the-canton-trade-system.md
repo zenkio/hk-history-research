@@ -44,7 +44,7 @@ The consolidation of trade in Guangzhou fundamentally shaped the economic and ge
 
 ## Claims to verify
 
-- [ ] The exact phrasing and scope of the 1757 imperial edict regarding the restriction of all Western trade exclusively to Guangzhou.
-- [ ] The degree to which outlying anchorages in the Hong Kong region were officially recognized versus informally utilized by foreign fleets prior to 1841.
+- ❔ The exact phrasing and scope of the 1757 imperial edict regarding the restriction of all Western trade exclusively to Guangzhou.
+- ❔ The degree to which outlying anchorages in the Hong Kong region were officially recognized versus informally utilized by foreign fleets prior to 1841.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

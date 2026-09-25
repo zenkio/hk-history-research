@@ -41,8 +41,8 @@ This territorial expansion fundamentally changed the geography and strategic cap
 
 ## Claims to verify
 
-- [ ] The exact coordinates and boundary markers established for the Kowloon Peninsula under the Convention of Peking
-- [ ] The specific administrative mechanisms used to transfer jurisdiction of Kowloon from Qing officials to British colonial authorities
+- ❔ The exact coordinates and boundary markers established for the Kowloon Peninsula under the Convention of Peking
+- ❔ The specific administrative mechanisms used to transfer jurisdiction of Kowloon from Qing officials to British colonial authorities
 
 ## Photos from this period
 

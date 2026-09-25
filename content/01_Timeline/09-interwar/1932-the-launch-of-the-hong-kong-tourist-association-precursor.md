@@ -38,8 +38,8 @@ The creation of this body represents a pivotal moment in the shift toward a serv
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the foundation of the Hong Kong Travel Association in 1932.
-- [ ] Confirm the level of financial participation by the colonial government versus private firms.
-- [ ] Ascertain the extent to which the 1932 body served as the direct administrative predecessor to the Hong Kong Tourist Association (HKTA) founded later in 1957.
+- ❔ Verify the specific date of the foundation of the Hong Kong Travel Association in 1932.
+- ❔ Confirm the level of financial participation by the colonial government versus private firms.
+- ❔ Ascertain the extent to which the 1932 body served as the direct administrative predecessor to the Hong Kong Tourist Association (HKTA) founded later in 1957.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

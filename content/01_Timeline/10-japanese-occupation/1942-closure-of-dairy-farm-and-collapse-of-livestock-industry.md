@@ -39,7 +39,7 @@ The shutdown of major agricultural producers like Dairy Farm had immediate and d
 
 ## Claims to verify
 
-- [ ] The exact date when Dairy Farm officially ceased its fresh milk production operations following the December 1941 surrender.
-- [ ] The precise volume of livestock requisitioned by the Japanese military administration from Dairy Farm and New Territories farms in 1942.
+- ❔ The exact date when Dairy Farm officially ceased its fresh milk production operations following the December 1941 surrender.
+- ❔ The precise volume of livestock requisitioned by the Japanese military administration from Dairy Farm and New Territories farms in 1942.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

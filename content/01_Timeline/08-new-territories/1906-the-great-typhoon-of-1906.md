@@ -46,8 +46,8 @@ Historians also note that the disaster disproportionately impacted the marginali
 
 ## Claims to verify
 
-- [ ] The precise death toll of the 1906 typhoon, given that historical estimates range significantly from 6,000 to over 15,000 fatalities.
-- [ ] The exact sequence of meteorological communications and warning signals issued—or failed to be issued—by the Hong Kong Observatory on the morning of September 18, 1906.
+- ❔ The precise death toll of the 1906 typhoon, given that historical estimates range significantly from 6,000 to over 15,000 fatalities.
+- ❔ The exact sequence of meteorological communications and warning signals issued—or failed to be issued—by the Hong Kong Observatory on the morning of September 18, 1906.
 
 ## Photos from this period
 

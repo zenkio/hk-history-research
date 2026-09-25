@@ -36,7 +36,7 @@ The scheme represented a direct intervention by the government under the post-20
 
 ## Claims to verify
 
-- [ ] The exact number of planned Light Public Housing units announced in the October 2022 Policy Address
-- [ ] The specific statutory processes and funding approvals sought from the Legislative Council for the scheme
+- ❔ The exact number of planned Light Public Housing units announced in the October 2022 Policy Address
+- ❔ The specific statutory processes and funding approvals sought from the Legislative Council for the scheme
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

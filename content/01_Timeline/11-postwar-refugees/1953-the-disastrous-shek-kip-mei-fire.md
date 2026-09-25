@@ -42,8 +42,8 @@ The Shek Kip Mei fire marks a watershed moment in Hong Kong's history. Prior to 
 
 ## Claims to verify
 
-- [ ] Exact number of people left homeless by the Shek Kip Mei fire on December 25, 1953
-- [ ] Direct causal link between the fire and the immediate formulation of the multi-story resettlement block policy
+- ❔ Exact number of people left homeless by the Shek Kip Mei fire on December 25, 1953
+- ❔ Direct causal link between the fire and the immediate formulation of the multi-story resettlement block policy
 
 ## Evidence
 

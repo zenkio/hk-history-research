@@ -40,7 +40,7 @@ The intensive economic exploitation during this period laid vital groundwork for
 
 ## Claims to verify
 
-- [ ] The exact extent of Southern Han administrative control over the outlying islands of modern Hong Kong around 960.
-- [ ] The primary textual sources documenting state-managed pearl diving operations in the Tai Po region during the tenth century.
+- ❔ The exact extent of Southern Han administrative control over the outlying islands of modern Hong Kong around 960.
+- ❔ The primary textual sources documenting state-managed pearl diving operations in the Tai Po region during the tenth century.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

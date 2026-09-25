@@ -43,8 +43,8 @@ The arrival of these missionaries established a long-term social infrastructure 
 
 ## Claims to verify
 
-- [ ] The exact date the first permanent Protestant mission house was established in Hong Kong
-- [ ] The specific number of schools or clinics opened by the London Missionary Society between 1841 and 1845
-- [ ] The legal status of missionaries in the Thirteen Factories prior to 1841
+- ❔ The exact date the first permanent Protestant mission house was established in Hong Kong
+- ❔ The specific number of schools or clinics opened by the London Missionary Society between 1841 and 1845
+- ❔ The legal status of missionaries in the Thirteen Factories prior to 1841
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

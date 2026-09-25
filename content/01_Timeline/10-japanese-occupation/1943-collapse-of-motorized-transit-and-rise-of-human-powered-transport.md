@@ -40,7 +40,7 @@ The collapse of motorized transit severely disrupted the economic recovery and d
 
 ## Claims to verify
 
-- [ ] Exact operational status of China Motor Bus and Hongkong Tramways in October 1943
-- [ ] Specific Japanese military directives regarding civilian bicycle registration and rickshaw permits in 1943
+- ❔ Exact operational status of China Motor Bus and Hongkong Tramways in October 1943
+- ❔ Specific Japanese military directives regarding civilian bicycle registration and rickshaw permits in 1943
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

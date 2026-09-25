@@ -42,7 +42,7 @@ The expansion of technical institutions like the Aberdeen Technical School playe
 
 ## Claims to verify
 
-- [ ] Exact financial contributions and government subsidies provided for the Aberdeen Technical School expansion in 1952
-- [ ] Exact student enrollment numbers and curriculum changes implemented following the 1952 expansion project
+- ❔ Exact financial contributions and government subsidies provided for the Aberdeen Technical School expansion in 1952
+- ❔ Exact student enrollment numbers and curriculum changes implemented following the 1952 expansion project
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

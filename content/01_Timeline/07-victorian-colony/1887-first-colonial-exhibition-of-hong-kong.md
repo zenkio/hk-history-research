@@ -41,8 +41,8 @@ For the British colonial administration, the exhibition was a tool for 'soft pow
 
 ## Claims to verify
 
-- [ ] Verify exact location of the 1887 exhibition grounds in primary colonial records.
-- [ ] Confirm the level of official government sponsorship versus private merchant funding.
-- [ ] Cross-reference Chinese-language contemporary newspapers for local perspectives on the event.
+- ❔ Verify exact location of the 1887 exhibition grounds in primary colonial records.
+- ❔ Confirm the level of official government sponsorship versus private merchant funding.
+- ❔ Cross-reference Chinese-language contemporary newspapers for local perspectives on the event.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

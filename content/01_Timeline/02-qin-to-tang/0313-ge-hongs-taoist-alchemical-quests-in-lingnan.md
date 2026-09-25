@@ -37,7 +37,7 @@ Around **313**, historical tradition places **Ge Hong** in the Lingnan area, whe
 
 ## Claims to verify
 
-- [ ] Did Ge Hong physically reside within the exact modern boundaries of Hong Kong, or is his connection to the territory purely a product of later Lingnan hagiographical tradition?
-- [ ] What primary textual evidence from the Jin dynasty specifically places Ge Hong south of the Pearl River Delta?
+- ❔ Did Ge Hong physically reside within the exact modern boundaries of Hong Kong, or is his connection to the territory purely a product of later Lingnan hagiographical tradition?
+- ❔ What primary textual evidence from the Jin dynasty specifically places Ge Hong south of the Pearl River Delta?
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

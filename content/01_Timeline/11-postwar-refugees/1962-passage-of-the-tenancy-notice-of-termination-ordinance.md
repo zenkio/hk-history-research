@@ -39,7 +39,7 @@ The ordinance marked a critical turning point in the evolution of Hong Kong’s 
 
 ## Claims to verify
 
-- [ ] The exact legislative mechanics and specific provisions of the Tenancy (Notice of Termination) Ordinance passed in 1962.
-- [ ] The extent of enforcement and the number of eviction disputes brought before the courts following the ordinance's enactment.
+- ❔ The exact legislative mechanics and specific provisions of the Tenancy (Notice of Termination) Ordinance passed in 1962.
+- ❔ The extent of enforcement and the number of eviction disputes brought before the courts following the ordinance's enactment.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

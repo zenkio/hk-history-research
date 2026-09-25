@@ -40,7 +40,7 @@ Leung's actions institutionalized a new style of parliamentary politics in Hong 
 
 ## Claims to verify
 
-- [ ] Leung Kwok-hung wore a Che Guevara shirt during the specific oath-taking ceremony on October 8, 2008.
-- [ ] Leung added unauthorized political slogans to his statutory oath of office on that date.
+- ❔ Leung Kwok-hung wore a Che Guevara shirt during the specific oath-taking ceremony on October 8, 2008.
+- ❔ Leung added unauthorized political slogans to his statutory oath of office on that date.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -45,7 +45,7 @@ This election represented the culmination of democratic development under Britis
 
 ## Claims to verify
 
-- [ ] The exact voter turnout percentage for the September 17, 1995 Legislative Council election.
-- [ ] The precise distribution of seats among political parties in the 1995 Legislative Council.
+- ❔ The exact voter turnout percentage for the September 17, 1995 Legislative Council election.
+- ❔ The precise distribution of seats among political parties in the 1995 Legislative Council.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

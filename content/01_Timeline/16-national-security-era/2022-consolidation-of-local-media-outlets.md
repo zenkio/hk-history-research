@@ -36,8 +36,8 @@ The closure of **Citizen News** is widely regarded by historians and observers a
 
 ## Claims to verify
 
-- [ ] Verification of the exact date of the announcement by Citizen News.
-- [ ] Official statements regarding the investigation into Stand News and its relation to other media outlets.
-- [ ] Documentation of the legal definitions applied to journalists under the 2020 National Security Law.
+- ❔ Verification of the exact date of the announcement by Citizen News.
+- ❔ Official statements regarding the investigation into Stand News and its relation to other media outlets.
+- ❔ Documentation of the legal definitions applied to journalists under the 2020 National Security Law.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

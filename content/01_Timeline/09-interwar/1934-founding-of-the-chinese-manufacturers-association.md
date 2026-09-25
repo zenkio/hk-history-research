@@ -39,7 +39,7 @@ The founding of the Chinese Manufacturers' Association reflected Hong Kong's str
 
 ## Claims to verify
 
-- [ ] The Chinese Manufacturers' Association was formally established in 1934.
-- [ ] The pursuit of Imperial Preference tariff benefits was a primary catalyst for the association's creation.
+- ❔ The Chinese Manufacturers' Association was formally established in 1934.
+- ❔ The pursuit of Imperial Preference tariff benefits was a primary catalyst for the association's creation.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

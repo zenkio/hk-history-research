@@ -38,8 +38,8 @@ The sudden abolition marked a major turning point in colonial social policy, shi
 
 ## Claims to verify
 
-- [ ] Did the final closure of licensed brothels take effect precisely on June 30, 1935?
-- [ ] What specific Colonial Office dispatches prompted the final termination of the licensing system?
+- ❔ Did the final closure of licensed brothels take effect precisely on June 30, 1935?
+- ❔ What specific Colonial Office dispatches prompted the final termination of the licensing system?
 
 ## Evidence
 

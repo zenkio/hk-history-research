@@ -37,8 +37,8 @@ The presence of the Song administration in Tuen Mun marked a transition from a r
 
 ## Claims to verify
 
-- [ ] Exact dates of the establishment of the Song naval station in Tuen Mun.
-- [ ] The specific rank and mandate of the officials stationed in Tuen Mun during the 11th century.
-- [ ] The extent to which archaeological ceramic finds correlate specifically with naval activity rather than general commercial transit.
+- ❔ Exact dates of the establishment of the Song naval station in Tuen Mun.
+- ❔ The specific rank and mandate of the officials stationed in Tuen Mun during the 11th century.
+- ❔ The extent to which archaeological ceramic finds correlate specifically with naval activity rather than general commercial transit.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

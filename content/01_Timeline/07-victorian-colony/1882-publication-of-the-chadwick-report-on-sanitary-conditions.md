@@ -39,9 +39,9 @@ The publication of the Chadwick Report marked a turning point in the colonial ad
 
 ## Claims to verify
 
-- [ ] Osbert Chadwick was commissioned and published his sanitary report in 1882.
-- [ ] The Chadwick Report specifically criticized the drainage, ventilation, and waste management of Tai Ping Shan tenements.
-- [ ] The findings directly contributed to the later establishment of the Sanitary Board and subsequent urban health regulations.
+- ❔ Osbert Chadwick was commissioned and published his sanitary report in 1882.
+- ❔ The Chadwick Report specifically criticized the drainage, ventilation, and waste management of Tai Ping Shan tenements.
+- ❔ The findings directly contributed to the later establishment of the Sanitary Board and subsequent urban health regulations.
 
 ## Research notes
 

@@ -44,7 +44,7 @@ The resettlement initiative of **1684** permanently altered the ethnic and cultu
 
 ## Claims to verify
 
-- [ ] The exact terms and tax exemptions offered in the 1684 Qing resettlement edicts specifically concerning Sun On County
-- [ ] The precise timeline and volume of Hakka migration into the Hong Kong region immediately following the revocation of the Great Clearance
+- ❔ The exact terms and tax exemptions offered in the 1684 Qing resettlement edicts specifically concerning Sun On County
+- ❔ The precise timeline and volume of Hakka migration into the Hong Kong region immediately following the revocation of the Great Clearance
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

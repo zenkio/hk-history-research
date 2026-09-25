@@ -38,8 +38,8 @@ The implementation of the ration coupon system marked a turning point in the tot
 
 ## Claims to verify
 
-- [ ] Exact implementation date of the comprehensive staple food rationing system in March 1943
-- [ ] Specific caloric values or weight allocations assigned per person under the official ration coupons
-- [ ] Mechanisms of distribution used by neighborhood associations during the occupation
+- ❔ Exact implementation date of the comprehensive staple food rationing system in March 1943
+- ❔ Specific caloric values or weight allocations assigned per person under the official ration coupons
+- ❔ Mechanisms of distribution used by neighborhood associations during the occupation
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

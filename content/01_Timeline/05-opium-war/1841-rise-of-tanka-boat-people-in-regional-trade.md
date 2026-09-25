@@ -40,8 +40,8 @@ The role of the Tanka was instrumental in the viability of Hong Kong as an ancho
 
 ## Claims to verify
 
-- [ ] The specific extent of Qing restrictions on Tanka land ownership and education during the early 1800s.
-- [ ] The volume and types of supplies provided by Tanka communities to the British fleet in 1841.
-- [ ] The degree to which Tanka pilotage was essential for British naval movements in the Pearl River Delta.
+- ❔ The specific extent of Qing restrictions on Tanka land ownership and education during the early 1800s.
+- ❔ The volume and types of supplies provided by Tanka communities to the British fleet in 1841.
+- ❔ The degree to which Tanka pilotage was essential for British naval movements in the Pearl River Delta.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

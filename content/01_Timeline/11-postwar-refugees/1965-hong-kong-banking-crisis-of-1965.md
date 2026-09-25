@@ -37,7 +37,7 @@ The crisis exposed vulnerabilities in Hong Kong's loosely regulated financial sy
 
 ## Claims to verify
 
-- [ ] The exact date and sequence of the run on Ming Tak Bank on February 6, 1965
-- [ ] The exact percentage and terms under which HSBC acquired its stake in Hang Seng Bank
+- ❔ The exact date and sequence of the run on Ming Tak Bank on February 6, 1965
+- ❔ The exact percentage and terms under which HSBC acquired its stake in Hang Seng Bank
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

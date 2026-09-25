@@ -41,8 +41,8 @@ The acquisition fundamentally transformed Hong Kong's geography, economy, and ad
 
 ## Claims to verify
 
-- [ ] Exact boundary demarcations agreed upon in the 1899 Convention of Peking
-- [ ] Specific role and instructions of British and Qing diplomats during the 1898 negotiations
+- ❔ Exact boundary demarcations agreed upon in the 1899 Convention of Peking
+- ❔ Specific role and instructions of British and Qing diplomats during the 1898 negotiations
 
 ## Photos from this period
 

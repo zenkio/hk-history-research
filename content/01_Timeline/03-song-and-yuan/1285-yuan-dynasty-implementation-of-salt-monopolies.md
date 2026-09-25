@@ -37,7 +37,7 @@ This systematic integration marked a turning point in the governance of the regi
 
 ## Claims to verify
 
-- [ ] Specific administrative edicts or tax quotas imposed on Hong Kong salt fields between 1285 and 1290
-- [ ] The exact structural changes to local salt production organization under early Yuan rule
+- ❔ Specific administrative edicts or tax quotas imposed on Hong Kong salt fields between 1285 and 1290
+- ❔ The exact structural changes to local salt production organization under early Yuan rule
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

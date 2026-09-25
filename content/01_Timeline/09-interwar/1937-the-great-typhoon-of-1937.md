@@ -43,8 +43,8 @@ The disaster remains one of the deadliest natural calamities in Hong Kong's hist
 
 ## Claims to verify
 
-- [ ] The official colonial death toll of approximately 11,000 fatalities
-- [ ] The exact meteorological readings and warning signals issued by the Royal Observatory on September 2, 1937
+- ❔ The official colonial death toll of approximately 11,000 fatalities
+- ❔ The exact meteorological readings and warning signals issued by the Royal Observatory on September 2, 1937
 
 ## Photos from this period
 

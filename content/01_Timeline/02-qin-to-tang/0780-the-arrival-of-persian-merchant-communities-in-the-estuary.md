@@ -36,7 +36,7 @@ The presence of Persian merchants in the estuary introduced advanced navigationa
 
 ## Claims to verify
 
-- [ ] Verify the archaeological evidence linking specific Tuen Mun site artifacts exclusively to 8th-9th century Persian trade.
-- [ ] Confirm the extent to which 'Bo-si' ships in Tang official records refer specifically to Persian merchants versus a generic term for West Asian traders.
+- ❔ Verify the archaeological evidence linking specific Tuen Mun site artifacts exclusively to 8th-9th century Persian trade.
+- ❔ Confirm the extent to which 'Bo-si' ships in Tang official records refer specifically to Persian merchants versus a generic term for West Asian traders.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

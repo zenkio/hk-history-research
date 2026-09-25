@@ -45,8 +45,8 @@ The arrival of the Royal Navy marked the abrupt end of the three years and eight
 
 ## Claims to verify
 
-- [ ] Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945.
-- [ ] The formal Japanese surrender in Hong Kong was signed on September 16, 1945.
+- ❔ Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945.
+- ❔ The formal Japanese surrender in Hong Kong was signed on September 16, 1945.
 
 ## Photos from this period
 

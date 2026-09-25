@@ -38,8 +38,8 @@ The launch of STAR TV cemented Hong Kong's status as a premier regional media an
 
 ## Claims to verify
 
-- [ ] STAR TV officially launched on May 8, 1991
-- [ ] The network utilized the AsiaSat 1 satellite for its initial transmissions
-- [ ] The initial broadcast featured five distinct channels supported by advertising
+- ❔ STAR TV officially launched on May 8, 1991
+- ❔ The network utilized the AsiaSat 1 satellite for its initial transmissions
+- ❔ The initial broadcast featured five distinct channels supported by advertising
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

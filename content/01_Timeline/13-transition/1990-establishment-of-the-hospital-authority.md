@@ -39,7 +39,7 @@ The creation of the Hospital Authority marked one of the most significant instit
 
 ## Claims to verify
 
-- [ ] The Hospital Authority was formally established on December 1, 1990 under the Hospital Authority Ordinance.
-- [ ] The Woo review committee recommended the separation of medical policy from hospital operations.
+- ❔ The Hospital Authority was formally established on December 1, 1990 under the Hospital Authority Ordinance.
+- ❔ The Woo review committee recommended the separation of medical policy from hospital operations.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

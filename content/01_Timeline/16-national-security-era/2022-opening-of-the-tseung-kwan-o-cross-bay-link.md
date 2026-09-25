@@ -40,7 +40,7 @@ The opening significantly transformed local transit by providing a more direct r
 
 ## Claims to verify
 
-- [ ] The Tseung Kwan O Cross Bay Link officially opened on December 11, 2022.
-- [ ] It is Hong Kong's first marine viaduct featuring a cycle track and footpath.
+- ❔ The Tseung Kwan O Cross Bay Link officially opened on December 11, 2022.
+- ❔ It is Hong Kong's first marine viaduct featuring a cycle track and footpath.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -37,8 +37,8 @@ The formalization of a customs post underscores Hong Kong’s identity as a vita
 
 ## Claims to verify
 
-- [ ] The specific year 1197 as recorded in the Song Shi regarding the Tuen Mun tax post.
-- [ ] The precise nature and scale of the armed conflict between imperial forces and local residents following the tax imposition.
-- [ ] Archaeological evidence or remains of the Song-era customs structure in Tuen Mun.
+- ❔ The specific year 1197 as recorded in the Song Shi regarding the Tuen Mun tax post.
+- ❔ The precise nature and scale of the armed conflict between imperial forces and local residents following the tax imposition.
+- ❔ Archaeological evidence or remains of the Song-era customs structure in Tuen Mun.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

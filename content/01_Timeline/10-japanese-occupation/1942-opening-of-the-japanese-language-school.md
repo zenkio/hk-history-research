@@ -36,7 +36,7 @@ The enforcement of language education serves as a primary example of wartime cul
 
 ## Claims to verify
 
-- [ ] Specific administrative decrees mandating Japanese language classes for civil servants and teachers issued in July 1942
-- [ ] Enrollment numbers and specific founding dates of the official Japanese Language School in Hong Kong
+- ❔ Specific administrative decrees mandating Japanese language classes for civil servants and teachers issued in July 1942
+- ❔ Enrollment numbers and specific founding dates of the official Japanese Language School in Hong Kong
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

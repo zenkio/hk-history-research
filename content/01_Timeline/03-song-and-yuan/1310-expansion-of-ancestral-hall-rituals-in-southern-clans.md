@@ -37,7 +37,7 @@ The formalization of ancestral rituals fundamentally shaped the social hierarchy
 
 ## Claims to verify
 
-- [ ] Specific dating of ancestral hall institutionalization to the 1310-1320 decade across multiple New Territories lineages
-- [ ] Degree of direct Neo-Confucian textual influence on early southern migration lineages versus localized folk religion adaptations
+- ❔ Specific dating of ancestral hall institutionalization to the 1310-1320 decade across multiple New Territories lineages
+- ❔ Degree of direct Neo-Confucian textual influence on early southern migration lineages versus localized folk religion adaptations
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

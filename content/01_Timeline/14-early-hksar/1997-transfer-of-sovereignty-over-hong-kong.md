@@ -46,9 +46,9 @@ This event marked a major milestone in global decolonization and modern Chinese 
 
 ## Claims to verify
 
-- [ ] The exact timing of the flag-raising and lowering ceremonies during the midnight transition
-- [ ] The precise number of foreign dignitaries and local officials in attendance at the handover ceremony
-- [ ] The exact statutory mechanisms used for the dissolution of the colonial legislature and the swearing-in of the Provisional Legislative Council
+- ❔ The exact timing of the flag-raising and lowering ceremonies during the midnight transition
+- ❔ The precise number of foreign dignitaries and local officials in attendance at the handover ceremony
+- ❔ The exact statutory mechanisms used for the dissolution of the colonial legislature and the swearing-in of the Provisional Legislative Council
 
 ## Photos from this period
 

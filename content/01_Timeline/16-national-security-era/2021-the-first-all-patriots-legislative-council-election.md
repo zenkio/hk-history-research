@@ -36,8 +36,8 @@ The election represented a fundamental shift in Hong Kong’s political architec
 
 ## Claims to verify
 
-- [ ] Verify exact turnout percentage provided by the Electoral Affairs Commission for the 2021 election.
-- [ ] Verify the specific number of candidates disqualified by the Candidate Eligibility Review Committee.
-- [ ] Confirm the final seat allocation ratios for the 2021 election as established by the 2021 amendments.
+- ❔ Verify exact turnout percentage provided by the Electoral Affairs Commission for the 2021 election.
+- ❔ Verify the specific number of candidates disqualified by the Candidate Eligibility Review Committee.
+- ❔ Confirm the final seat allocation ratios for the 2021 election as established by the 2021 amendments.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

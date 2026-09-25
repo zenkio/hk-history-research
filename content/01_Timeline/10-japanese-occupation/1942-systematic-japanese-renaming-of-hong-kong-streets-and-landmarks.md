@@ -38,7 +38,7 @@ The renaming campaign served as a powerful tool of psychological warfare and cul
 
 ## Claims to verify
 
-- [ ] Did the systematic renaming of Hong Kong streets officially take place specifically in April 1942?
-- [ ] Were Queen's Road and Victoria Peak officially renamed to Meiji-dori and Kasugayama respectively?
+- ❔ Did the systematic renaming of Hong Kong streets officially take place specifically in April 1942?
+- ❔ Were Queen's Road and Victoria Peak officially renamed to Meiji-dori and Kasugayama respectively?
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

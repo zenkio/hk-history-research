@@ -36,8 +36,8 @@ The presence of this non-indigenous material serves as a key indicator of the re
 
 ## Claims to verify
 
-- [ ] Verify the specific chemical matching of excavated obsidian to northern volcanic sources.
-- [ ] Confirm the established date range for the presence of obsidian in Sha Ha or similar sites.
-- [ ] Evaluate the debate regarding whether the obsidian was transported by organized trade or individual group movement.
+- ❔ Verify the specific chemical matching of excavated obsidian to northern volcanic sources.
+- ❔ Confirm the established date range for the presence of obsidian in Sha Ha or similar sites.
+- ❔ Evaluate the debate regarding whether the obsidian was transported by organized trade or individual group movement.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

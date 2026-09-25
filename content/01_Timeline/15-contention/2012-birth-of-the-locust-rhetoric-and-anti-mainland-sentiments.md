@@ -35,8 +35,8 @@ The rise of this rhetoric signaled a profound transformation in the relationship
 
 ## Claims to verify
 
-- [ ] The specific date and publisher of the January 2012 full-page anti-Mainland advertisement.
-- [ ] The exact timeframe when the term 'locust' entered mainstream public discourse in Hong Kong.
-- [ ] The official response from the HKSAR government regarding the birth tourism issue in 2012.
+- ❔ The specific date and publisher of the January 2012 full-page anti-Mainland advertisement.
+- ❔ The exact timeframe when the term 'locust' entered mainstream public discourse in Hong Kong.
+- ❔ The official response from the HKSAR government regarding the birth tourism issue in 2012.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -37,8 +37,8 @@ The establishment of the Tuen Mun naval garrison is widely recognized as a turni
 
 ## Claims to verify
 
-- [ ] Verify the specific reference to the 736 date in the Old Book of Tang (舊唐書).
-- [ ] Confirm the extent of the archaeological evidence currently available at Tuen Mun regarding Tang-era military structures.
-- [ ] Evaluate the administrative relationship between the Tuen Mun garrison and the regional command at Canton.
+- ❔ Verify the specific reference to the 736 date in the Old Book of Tang (舊唐書).
+- ❔ Confirm the extent of the archaeological evidence currently available at Tuen Mun regarding Tang-era military structures.
+- ❔ Evaluate the administrative relationship between the Tuen Mun garrison and the regional command at Canton.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

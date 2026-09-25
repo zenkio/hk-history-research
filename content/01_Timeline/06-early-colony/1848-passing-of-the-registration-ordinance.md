@@ -38,8 +38,8 @@ The Registration Ordinance remains a pivotal moment in the history of Hong Kong'
 
 ## Claims to verify
 
-- [ ] The specific month and date of the ordinance's initial enactment in 1848.
-- [ ] The degree to which the Ordinance was effectively enforced versus how often it was ignored by the migrant population.
-- [ ] The extent of organized protest led by the local merchant class against the 1848 measure.
+- ❔ The specific month and date of the ordinance's initial enactment in 1848.
+- ❔ The degree to which the Ordinance was effectively enforced versus how often it was ignored by the migrant population.
+- ❔ The extent of organized protest led by the local merchant class against the 1848 measure.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

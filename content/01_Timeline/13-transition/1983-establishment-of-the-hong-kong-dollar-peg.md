@@ -42,7 +42,7 @@ While initially conceived as an emergency measure to quell panic and curb inflat
 
 ## Claims to verify
 
-- [ ] The exact exchange rate of 7.80 HKD to 1 USD was officially implemented on October 17, 1983.
-- [ ] The Hong Kong dollar reached its historical low of 9.60 against the US dollar in September 1983.
+- ❔ The exact exchange rate of 7.80 HKD to 1 USD was officially implemented on October 17, 1983.
+- ❔ The Hong Kong dollar reached its historical low of 9.60 against the US dollar in September 1983.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

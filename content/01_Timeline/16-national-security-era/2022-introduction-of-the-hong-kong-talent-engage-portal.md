@@ -37,8 +37,8 @@ The introduction of the portal represented a formal shift in Hong Kong’s migra
 
 ## Claims to verify
 
-- [ ] Confirm the exact launch date of the Hong Kong Talent Engage portal.
-- [ ] Verify the official government department responsible for the administration of the Talent Service Unit.
-- [ ] Cross-reference labor force participation statistics around the time of the portal's launch.
+- ❔ Confirm the exact launch date of the Hong Kong Talent Engage portal.
+- ❔ Verify the official government department responsible for the administration of the Talent Service Unit.
+- ❔ Cross-reference labor force participation statistics around the time of the portal's launch.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

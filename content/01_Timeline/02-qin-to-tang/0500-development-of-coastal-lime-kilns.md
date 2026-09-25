@@ -34,7 +34,7 @@ The proliferation of coastal lime kilns represents an important early phase of i
 
 ## Claims to verify
 
-- [ ] Industrial-scale lime kilns emerged in the Hong Kong region around c. 500.
-- [ ] Early lime production in the region primarily utilized oyster shells and coral for coastal construction and vessel waterproofing.
+- ❔ Industrial-scale lime kilns emerged in the Hong Kong region around c. 500.
+- ❔ Early lime production in the region primarily utilized oyster shells and coral for coastal construction and vessel waterproofing.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -39,7 +39,7 @@ The campaign marked a symbolic shift toward post-pandemic normalcy and governmen
 
 ## Claims to verify
 
-- [ ] The Happy Hong Kong Campaign was officially launched on April 25, 2023.
-- [ ] The campaign featured gourmet marketplaces and discounted cinema tickets.
+- ❔ The Happy Hong Kong Campaign was officially launched on April 25, 2023.
+- ❔ The campaign featured gourmet marketplaces and discounted cinema tickets.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -37,8 +37,8 @@ These advancements in land management were critical for the development of **Tue
 
 ## Claims to verify
 
-- [ ] Correlation between Tang-era kiln sites and agricultural terrace locations
-- [ ] The extent to which imperial edicts directly influenced local farming techniques in the Lingnan region
-- [ ] Archaeological evidence of rice cultivation in the Tuen Mun area during the 8th century
+- ❔ Correlation between Tang-era kiln sites and agricultural terrace locations
+- ❔ The extent to which imperial edicts directly influenced local farming techniques in the Lingnan region
+- ❔ Archaeological evidence of rice cultivation in the Tuen Mun area during the 8th century
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

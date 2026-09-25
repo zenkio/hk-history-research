@@ -44,8 +44,8 @@ The East River Column emerged as one of the primary indigenous armed resistance 
 
 ## Claims to verify
 
-- [ ] Exact reorganization date and structural lineage of the guerrilla units leading to the East River Column in early February 1942
-- [ ] The precise roster of Allied airmen and prisoners rescued by the column in and around Hong Kong
+- ❔ Exact reorganization date and structural lineage of the guerrilla units leading to the East River Column in early February 1942
+- ❔ The precise roster of Allied airmen and prisoners rescued by the column in and around Hong Kong
 
 ## Evidence
 

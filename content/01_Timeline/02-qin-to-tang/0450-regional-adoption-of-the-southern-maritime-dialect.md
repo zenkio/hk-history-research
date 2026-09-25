@@ -37,8 +37,8 @@ This period marks the foundation of the distinct cultural and linguistic identit
 
 ## Claims to verify
 
-- [ ] The exact extent of linguistic synthesis occurring specifically between 450-500 CE.
-- [ ] Archaeological evidence confirming permanent multi-ethnic residential patterns in Hong Kong during the Northern and Southern dynasties.
-- [ ] The degree to which the Baiyue languages influenced the tonal development of pre-Tang Southern Sinitic.
+- ❔ The exact extent of linguistic synthesis occurring specifically between 450-500 CE.
+- ❔ Archaeological evidence confirming permanent multi-ethnic residential patterns in Hong Kong during the Northern and Southern dynasties.
+- ❔ The degree to which the Baiyue languages influenced the tonal development of pre-Tang Southern Sinitic.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -44,8 +44,8 @@ The breach of the Gin Drinkers Line is widely regarded by historians as a critic
 
 ## Claims to verify
 
-- [ ] The exact timeline of the assault on the Shing Mun Redoubt between the night of December 9 and the morning of December 10, 1941.
-- [ ] The specific troop numbers and regimental units involved in holding the Shing Mun Redoubt at the time of the breach.
+- ❔ The exact timeline of the assault on the Shing Mun Redoubt between the night of December 9 and the morning of December 10, 1941.
+- ❔ The specific troop numbers and regimental units involved in holding the Shing Mun Redoubt at the time of the breach.
 
 ## Evidence
 

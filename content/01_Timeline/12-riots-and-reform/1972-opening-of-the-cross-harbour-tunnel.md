@@ -42,8 +42,8 @@ The tunnel marked a monumental milestone in Hong Kong's infrastructure developme
 
 ## Claims to verify
 
-- [ ] The Cross-Harbour Tunnel officially opened to traffic on August 2, 1972.
-- [ ] Construction of the tunnel began in 1969 using a submerged tube method.
-- [ ] The project was executed under a franchise granted to the Cross-Harbour Tunnel Company led by Sir Kenneth Fung Ping-fan and Sir Douglas Clague.
+- ❔ The Cross-Harbour Tunnel officially opened to traffic on August 2, 1972.
+- ❔ Construction of the tunnel began in 1969 using a submerged tube method.
+- ❔ The project was executed under a franchise granted to the Cross-Harbour Tunnel Company led by Sir Kenneth Fung Ping-fan and Sir Douglas Clague.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

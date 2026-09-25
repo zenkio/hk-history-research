@@ -38,7 +38,7 @@ The founding of the club is widely regarded by historians as a crucial turning p
 
 ## Claims to verify
 
-- [ ] The exact founding date and initial membership list of the Hong Kong Chinese Women's Club in 1918.
-- [ ] The extent of direct interaction between the early club founders and colonial government departments.
+- ❔ The exact founding date and initial membership list of the Hong Kong Chinese Women's Club in 1918.
+- ❔ The extent of direct interaction between the early club founders and colonial government departments.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -38,8 +38,8 @@ This period marks a pivotal shift in understanding Hong Kong's early history as 
 
 ## Claims to verify
 
-- [ ] Verify the specific dating of the transition in ceramic styles at Sham Wan based on the latest radiocarbon data.
-- [ ] Check the consensus on whether the ceramic similarities represent trade in finished goods versus the migration of potters.
-- [ ] Confirm the extent of the geographic reach of these specific ceramic style networks in the current archaeological record.
+- ❔ Verify the specific dating of the transition in ceramic styles at Sham Wan based on the latest radiocarbon data.
+- ❔ Check the consensus on whether the ceramic similarities represent trade in finished goods versus the migration of potters.
+- ❔ Confirm the extent of the geographic reach of these specific ceramic style networks in the current archaeological record.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

@@ -42,8 +42,8 @@ This landing represents the first recorded direct maritime contact between Europ
 
 ## Claims to verify
 
-- [ ] Jorge Álvares arrived in the Tuen Mun area in May 1513
-- [ ] The exact geographical identification of the Portuguese 'Tamão' as Tuen Mun
-- [ ] The erection of a Portuguese stone pillar at the landing site
+- ❔ Jorge Álvares arrived in the Tuen Mun area in May 1513
+- ❔ The exact geographical identification of the Portuguese 'Tamão' as Tuen Mun
+- ❔ The erection of a Portuguese stone pillar at the landing site
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

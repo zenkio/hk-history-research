@@ -38,8 +38,8 @@ The opening of the tunnel was widely viewed as a milestone in the modernization 
 
 ## Claims to verify
 
-- [ ] Verify the exact official opening date of June 26, 1991.
-- [ ] Confirm the total length of the tunnel as 3.9 kilometers.
-- [ ] Check if it was the longest road tunnel in Hong Kong at the time of completion.
+- ❔ Verify the exact official opening date of June 26, 1991.
+- ❔ Confirm the total length of the tunnel as 3.9 kilometers.
+- ❔ Check if it was the longest road tunnel in Hong Kong at the time of completion.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

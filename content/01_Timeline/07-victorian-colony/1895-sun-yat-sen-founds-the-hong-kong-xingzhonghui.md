@@ -45,8 +45,8 @@ The establishment of the Hong Kong Xingzhonghui marked a critical turning point 
 
 ## Claims to verify
 
-- [ ] Whether the exact founding date of the Hong Kong Xingzhonghui was February 21, 1895, or occurred slightly earlier or later in that month.
-- [ ] The precise address and commercial name of the front organization used for the society's first local headquarters.
+- ❔ Whether the exact founding date of the Hong Kong Xingzhonghui was February 21, 1895, or occurred slightly earlier or later in that month.
+- ❔ The precise address and commercial name of the front organization used for the society's first local headquarters.
 
 ## Evidence
 

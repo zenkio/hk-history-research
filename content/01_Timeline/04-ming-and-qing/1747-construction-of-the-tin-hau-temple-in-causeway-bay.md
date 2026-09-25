@@ -40,8 +40,8 @@ The temple stands as a testament to the socio-religious life of early Hong Kong'
 
 ## Claims to verify
 
-- [ ] The Tai family initiated the construction of the Causeway Bay Tin Hau Temple in 1747.
-- [ ] An incense burner was allegedly discovered by the shore by local fisherfolk, prompting the shrine's creation.
-- [ ] The temple was originally located directly on the coastline prior to later land reclamation.
+- ❔ The Tai family initiated the construction of the Causeway Bay Tin Hau Temple in 1747.
+- ❔ An incense burner was allegedly discovered by the shore by local fisherfolk, prompting the shrine's creation.
+- ❔ The temple was originally located directly on the coastline prior to later land reclamation.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

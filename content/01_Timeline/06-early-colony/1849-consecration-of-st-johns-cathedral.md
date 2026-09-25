@@ -41,8 +41,8 @@ The completion and consecration of the cathedral represented more than a religio
 
 ## Claims to verify
 
-- [ ] St. John's Cathedral was officially consecrated on March 11, 1849.
-- [ ] Bishop George Smith presided over the consecration ceremony.
+- ❔ St. John's Cathedral was officially consecrated on March 11, 1849.
+- ❔ Bishop George Smith presided over the consecration ceremony.
 
 ## Research notes
 

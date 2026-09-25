@@ -38,8 +38,8 @@ For the British colonial government, the tunnel represented the culmination of d
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the official groundbreaking ceremony in 1996.
-- [ ] Confirm the exact terms of the BOT franchise agreement and any public controversy recorded in the Legislative Council minutes at the time.
-- [ ] Check the primary documents regarding the project's original completion timeline relative to the airport project.
+- ❔ Verify the specific date of the official groundbreaking ceremony in 1996.
+- ❔ Confirm the exact terms of the BOT franchise agreement and any public controversy recorded in the Legislative Council minutes at the time.
+- ❔ Check the primary documents regarding the project's original completion timeline relative to the airport project.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

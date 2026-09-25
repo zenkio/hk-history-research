@@ -39,8 +39,8 @@ These stepped adzes were essential woodworking instruments, heavily utilized for
 
 ## Claims to verify
 
-- [ ] Stepped stone adze production in the Hong Kong region intensified around c. 2500 BCE.
-- [ ] Stepped stone adzes were primarily utilized for constructing heavy-duty marine canoes and advanced woodworking.
-- [ ] Sham Wan and Ma Wan serve as primary archaeological sites for mid-Holocene lithic industries in Hong Kong.
+- ❔ Stepped stone adze production in the Hong Kong region intensified around c. 2500 BCE.
+- ❔ Stepped stone adzes were primarily utilized for constructing heavy-duty marine canoes and advanced woodworking.
+- ❔ Sham Wan and Ma Wan serve as primary archaeological sites for mid-Holocene lithic industries in Hong Kong.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

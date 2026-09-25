@@ -40,8 +40,8 @@ The establishment of the temple marked a crucial milestone in the institutionali
 
 ## Claims to verify
 
-- [ ] Verify the exact completion year of the Man Mo Temple as recorded in surviving bilingual stone plaques or land deeds from the 1840s.
-- [ ] Confirm the specific roles and financial contributions of Tam Achoy and other founding merchants in the temple's construction.
+- ❔ Verify the exact completion year of the Man Mo Temple as recorded in surviving bilingual stone plaques or land deeds from the 1840s.
+- ❔ Confirm the specific roles and financial contributions of Tam Achoy and other founding merchants in the temple's construction.
 
 ## Evidence
 

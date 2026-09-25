@@ -42,7 +42,7 @@ The controversy surrounding the West Kowloon Station boundary crossing highlight
 
 ## Claims to verify
 
-- [ ] The exact statutory mechanism and Standing Committee of the National People's Congress resolution used to justify the Mainland Port Area.
-- [ ] The legislative voting procedures and opposition tactics employed during the passage of the co-location bill in the Legislative Council.
+- ❔ The exact statutory mechanism and Standing Committee of the National People's Congress resolution used to justify the Mainland Port Area.
+- ❔ The legislative voting procedures and opposition tactics employed during the passage of the co-location bill in the Legislative Council.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

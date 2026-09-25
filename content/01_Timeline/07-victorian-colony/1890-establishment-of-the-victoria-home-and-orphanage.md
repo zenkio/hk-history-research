@@ -38,8 +38,8 @@ The establishment of the home marked a notable shift in colonial social policy. 
 
 ## Claims to verify
 
-- [ ] Exact founding date of the Victoria Home and Orphanage in 1890.
-- [ ] The specific extent of financial or land-grant involvement by the colonial government at the time of founding.
-- [ ] The institutional relationship between the Victoria Home and existing local charitable groups like the Tung Wah Hospital.
+- ❔ Exact founding date of the Victoria Home and Orphanage in 1890.
+- ❔ The specific extent of financial or land-grant involvement by the colonial government at the time of founding.
+- ❔ The institutional relationship between the Victoria Home and existing local charitable groups like the Tung Wah Hospital.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

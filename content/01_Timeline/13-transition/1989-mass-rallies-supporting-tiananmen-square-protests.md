@@ -40,7 +40,7 @@ The events of **May 1989** marked a watershed moment in modern Hong Kong history
 
 ## Claims to verify
 
-- [ ] Verify contemporary estimates of the crowd size for the May 21, 1989 march in Hong Kong.
-- [ ] Examine official colonial government assessments of public order and security during the mobilization.
+- ❔ Verify contemporary estimates of the crowd size for the May 21, 1989 march in Hong Kong.
+- ❔ Examine official colonial government assessments of public order and security during the mobilization.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

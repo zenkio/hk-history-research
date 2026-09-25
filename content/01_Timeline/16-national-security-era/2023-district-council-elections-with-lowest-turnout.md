@@ -35,7 +35,7 @@ Interpretations of the December 2023 election vary starkly. Pro-establishment fi
 
 ## Claims to verify
 
-- [ ] The official final voter turnout rate for the December 10, 2023 District Council election was 27.5%.
-- [ ] Directly elected seats in the District Councils were reduced to approximately 19% under the 2023 electoral overhaul.
+- ❔ The official final voter turnout rate for the December 10, 2023 District Council election was 27.5%.
+- ❔ Directly elected seats in the District Councils were reduced to approximately 19% under the 2023 electoral overhaul.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

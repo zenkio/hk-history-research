@@ -40,7 +40,7 @@ The policy became a cornerstone of New Territories land policy, balancing coloni
 
 ## Claims to verify
 
-- [ ] The exact date of implementation as December 1, 1972
-- [ ] The specific eligibility criteria established for indigenous male villagers under the original 1972 policy framework
+- ❔ The exact date of implementation as December 1, 1972
+- ❔ The specific eligibility criteria established for indigenous male villagers under the original 1972 policy framework
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

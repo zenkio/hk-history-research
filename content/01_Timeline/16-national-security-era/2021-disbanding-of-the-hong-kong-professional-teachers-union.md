@@ -36,7 +36,7 @@ The dissolution of the PTU is widely regarded by observers as a major milestone 
 
 ## Claims to verify
 
-- [ ] The exact date of the dissolution vote and announcement by the PTU leadership was August 10, 2021.
-- [ ] The PTU was founded in 1973 and was recognized as Hong Kong's largest single-industry trade union at the time of its closure.
+- ❔ The exact date of the dissolution vote and announcement by the PTU leadership was August 10, 2021.
+- ❔ The PTU was founded in 1973 and was recognized as Hong Kong's largest single-industry trade union at the time of its closure.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

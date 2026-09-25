@@ -37,8 +37,8 @@ This period established the foundational geography of Hong Kong as a critical no
 
 ## Claims to verify
 
-- [ ] Chronology of specific archaeological site occupations in Sha Ha and Sham Wan.
-- [ ] The extent to which artifacts found in Hong Kong sites indicate non-local trade origins versus local production.
-- [ ] The definitive classification of the cultural identity of pre-Qin maritime groups in the Pearl River Delta.
+- ❔ Chronology of specific archaeological site occupations in Sha Ha and Sham Wan.
+- ❔ The extent to which artifacts found in Hong Kong sites indicate non-local trade origins versus local production.
+- ❔ The definitive classification of the cultural identity of pre-Qin maritime groups in the Pearl River Delta.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -43,8 +43,8 @@ The **1977 amnesty** remains one of the most controversial episodes in modern Ho
 
 ## Claims to verify
 
-- [ ] Governor MacLehose announced the partial amnesty specifically on November 5, 1977.
-- [ ] The amnesty cut-off date applied to corruption offences committed before January 1, 1977.
-- [ ] Hundreds of police officers marched on ICAC headquarters in October 1977 prior to the amnesty announcement.
+- ❔ Governor MacLehose announced the partial amnesty specifically on November 5, 1977.
+- ❔ The amnesty cut-off date applied to corruption offences committed before January 1, 1977.
+- ❔ Hundreds of police officers marched on ICAC headquarters in October 1977 prior to the amnesty announcement.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

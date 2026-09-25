@@ -39,9 +39,9 @@ Over time, the role of the District Watch Force extended far beyond basic neighb
 
 ## Claims to verify
 
-- [ ] The District Watch Force was formally established in 1866.
-- [ ] The force was funded and supervised by local Chinese merchants.
-- [ ] The organization eventually evolved into an influential advisory body to the colonial government.
+- ❔ The District Watch Force was formally established in 1866.
+- ❔ The force was funded and supervised by local Chinese merchants.
+- ❔ The organization eventually evolved into an influential advisory body to the colonial government.
 
 ## Research notes
 

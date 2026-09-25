@@ -37,7 +37,7 @@ The radio ban marked the beginning of total information isolation for Hong Kong 
 
 ## Claims to verify
 
-- [ ] Did the Japanese military administration specifically issue the radio confiscation order on December 28, 1941?
-- [ ] What were the exact legal penalties for possessing a radio receiver during the early months of the occupation?
+- ❔ Did the Japanese military administration specifically issue the radio confiscation order on December 28, 1941?
+- ❔ What were the exact legal penalties for possessing a radio receiver during the early months of the occupation?
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

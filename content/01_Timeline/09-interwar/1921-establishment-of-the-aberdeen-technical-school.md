@@ -41,7 +41,7 @@ The establishment and subsequent development of the school under Salesian admini
 
 ## Claims to verify
 
-- [ ] The exact administrative transfer date and legal agreement between the previous operators and the Salesians of Don Bosco in 1921.
-- [ ] The initial enrollment numbers and specific trades taught during the first year of Salesian administration at the Aberdeen Trade School.
+- ❔ The exact administrative transfer date and legal agreement between the previous operators and the Salesians of Don Bosco in 1921.
+- ❔ The initial enrollment numbers and specific trades taught during the first year of Salesian administration at the Aberdeen Trade School.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -36,7 +36,7 @@ This disruption marked an important early catalyst in bringing the coastal water
 
 ## Claims to verify
 
-- [ ] Arab and Persian merchants sacked and burned Guangzhou in the year 758.
-- [ ] The disruption in Guangzhou directly forced shipping networks to seek shelter in Hong Kong waters such as Tuen Mun.
+- ❔ Arab and Persian merchants sacked and burned Guangzhou in the year 758.
+- ❔ The disruption in Guangzhou directly forced shipping networks to seek shelter in Hong Kong waters such as Tuen Mun.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

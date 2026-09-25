@@ -35,7 +35,7 @@ The settlement at Sham Wan provides crucial empirical data for understanding the
 
 ## Claims to verify
 
-- [ ] Initial Neolithic settlement at Sham Wan began around 4000 BCE.
-- [ ] Early settlers relied on a combination of marine exploitation and hunting.
+- ❔ Initial Neolithic settlement at Sham Wan began around 4000 BCE.
+- ❔ Early settlers relied on a combination of marine exploitation and hunting.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

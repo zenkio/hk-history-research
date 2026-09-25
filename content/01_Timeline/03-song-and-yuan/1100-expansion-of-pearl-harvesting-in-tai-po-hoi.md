@@ -35,7 +35,7 @@ The expansion of pearl harvesting integrated the Hong Kong region more closely i
 
 ## Claims to verify
 
-- [ ] Did formal imperial expansion of pearl harvesting in Tai Po Hoi specifically occur around the year 1100?
-- [ ] What were the exact administrative mechanisms used by the Song dynasty to oversee pearl collection in the region?
+- ❔ Did formal imperial expansion of pearl harvesting in Tai Po Hoi specifically occur around the year 1100?
+- ❔ What were the exact administrative mechanisms used by the Song dynasty to oversee pearl collection in the region?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

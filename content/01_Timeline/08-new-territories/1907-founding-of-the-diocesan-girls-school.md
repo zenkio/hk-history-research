@@ -38,8 +38,8 @@ The founding of the school is widely regarded as a significant milestone in the 
 
 ## Claims to verify
 
-- [ ] Verify the specific location of the school in 1907
-- [ ] Confirm the degree of administrative support provided by the colonial government at the time of founding
-- [ ] Determine the exact student demographics during the first year of operation
+- ❔ Verify the specific location of the school in 1907
+- ❔ Confirm the degree of administrative support provided by the colonial government at the time of founding
+- ❔ Determine the exact student demographics during the first year of operation
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

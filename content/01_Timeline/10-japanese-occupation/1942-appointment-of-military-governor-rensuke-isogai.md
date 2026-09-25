@@ -38,8 +38,8 @@ The appointment of **Rensuke Isogai** marked the definitive beginning of the thr
 
 ## Claims to verify
 
-- [ ] Lieutenant General Rensuke Isogai was officially appointed as Military Governor on February 20, 1942.
-- [ ] The Military Governor's Office centralized all executive, legislative, and judicial power under the Japanese Imperial Army upon Isogai's accession.
+- ❔ Lieutenant General Rensuke Isogai was officially appointed as Military Governor on February 20, 1942.
+- ❔ The Military Governor's Office centralized all executive, legislative, and judicial power under the Japanese Imperial Army upon Isogai's accession.
 
 ## Evidence
 

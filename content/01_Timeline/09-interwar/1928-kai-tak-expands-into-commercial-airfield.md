@@ -44,8 +44,8 @@ The formal establishment and expansion of **Kai Tak Airfield** marked a pivotal 
 
 ## Claims to verify
 
-- [ ] The exact legal mechanism and financial cost of the colonial government's acquisition of the Kai Tak land in 1928.
-- [ ] The precise timeline of the first commercial flights and official airmail services operating out of Kai Tak following the 1928 expansion.
+- ❔ The exact legal mechanism and financial cost of the colonial government's acquisition of the Kai Tak land in 1928.
+- ❔ The precise timeline of the first commercial flights and official airmail services operating out of Kai Tak following the 1928 expansion.
 
 ## Evidence
 

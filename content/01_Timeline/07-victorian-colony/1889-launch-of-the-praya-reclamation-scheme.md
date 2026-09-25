@@ -41,8 +41,8 @@ The reclamation drastically altered the geography and economic geography of Vict
 
 ## Claims to verify
 
-- [ ] The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal
-- [ ] The precise legislative council vote tallies approving the project
+- ❔ The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal
+- ❔ The precise legislative council vote tallies approving the project
 
 ## Research notes
 

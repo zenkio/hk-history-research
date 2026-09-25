@@ -40,7 +40,7 @@ The establishment of Fan Lau Fort reflects the Qing dynasty's evolving strategy 
 
 ## Claims to verify
 
-- [ ] Fan Lau Fort was specifically constructed in the year 1729.
-- [ ] The fort was built directly by Qing military forces as part of an official provincial defense initiative.
+- ❔ Fan Lau Fort was specifically constructed in the year 1729.
+- ❔ The fort was built directly by Qing military forces as part of an official provincial defense initiative.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

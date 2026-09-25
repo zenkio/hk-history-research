@@ -41,9 +41,9 @@ Before this discovery, knowledge of Hong Kong's early history relied heavily on 
 
 ## Claims to verify
 
-- [ ] Construction workers uncovered the tomb on August 9, 1955.
-- [ ] Over fifty grave goods were recovered from the multi-chamber tomb.
-- [ ] The tomb structure is definitively dated to the Eastern Han dynasty.
+- ❔ Construction workers uncovered the tomb on August 9, 1955.
+- ❔ Over fifty grave goods were recovered from the multi-chamber tomb.
+- ❔ The tomb structure is definitively dated to the Eastern Han dynasty.
 
 ## Photos from this period
 

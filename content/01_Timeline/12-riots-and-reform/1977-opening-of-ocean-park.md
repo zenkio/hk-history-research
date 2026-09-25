@@ -41,7 +41,7 @@ The establishment of Ocean Park is frequently interpreted as a symbol of Hong Ko
 
 ## Claims to verify
 
-- [ ] Ocean Park officially opened on January 10, 1977.
-- [ ] The Hong Kong Jockey Club solely funded the initial construction of Ocean Park.
+- ❔ Ocean Park officially opened on January 10, 1977.
+- ❔ The Hong Kong Jockey Club solely funded the initial construction of Ocean Park.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

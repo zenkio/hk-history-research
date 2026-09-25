@@ -35,7 +35,7 @@ The creation of the Overseas Chinese Association highlights the complex dynamics
 
 ## Claims to verify
 
-- [ ] The exact founding date and structural mandate of the Overseas Chinese Association in August 1943
-- [ ] The specific identities and internal dynamics of the local elites appointed to lead the association
+- ❔ The exact founding date and structural mandate of the Overseas Chinese Association in August 1943
+- ❔ The specific identities and internal dynamics of the local elites appointed to lead the association
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

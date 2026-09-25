@@ -37,8 +37,8 @@ The inauguration of the **Victoria Market** represented a critical shift in colo
 
 ## Claims to verify
 
-- [ ] The exact completion date of the original Victoria Market building.
-- [ ] The specific legislative ordinance that mandated the move to the Victoria Market.
-- [ ] The extent to which taxation policy was the primary driver for the market's creation versus hygiene concerns.
+- ❔ The exact completion date of the original Victoria Market building.
+- ❔ The specific legislative ordinance that mandated the move to the Victoria Market.
+- ❔ The extent to which taxation policy was the primary driver for the market's creation versus hygiene concerns.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

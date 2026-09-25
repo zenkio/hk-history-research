@@ -39,8 +39,8 @@ Historians generally view the festival as a watershed moment in the evolution of
 
 ## Claims to verify
 
-- [ ] The exact opening date of the First Festival of Hong Kong was December 6, 1969.
-- [ ] The festival was explicitly organized as a response to the social alienation highlighted by the 1967 riots.
-- [ ] Government archives confirm the precise attendance figures and budgetary allocation for the event.
+- ❔ The exact opening date of the First Festival of Hong Kong was December 6, 1969.
+- ❔ The festival was explicitly organized as a response to the social alienation highlighted by the 1967 riots.
+- ❔ Government archives confirm the precise attendance figures and budgetary allocation for the event.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -35,7 +35,7 @@ The establishment of these sites marks a transition in the region from a purely 
 
 ## Claims to verify
 
-- [ ] The extent to which 9th-century coastal shrines were officially sanctioned by the Tang government versus being purely local, grassroots constructions.
-- [ ] Archaeological evidence confirming the presence of Tang-era religious structures specifically in the Tuen Mun or Lantau coastal areas.
+- ❔ The extent to which 9th-century coastal shrines were officially sanctioned by the Tang government versus being purely local, grassroots constructions.
+- ❔ Archaeological evidence confirming the presence of Tang-era religious structures specifically in the Tuen Mun or Lantau coastal areas.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

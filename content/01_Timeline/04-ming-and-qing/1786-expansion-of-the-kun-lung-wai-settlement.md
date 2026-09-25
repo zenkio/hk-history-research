@@ -39,7 +39,7 @@ The fortification of Kun Lung Wai in 1786 highlights the fragile nature of rural
 
 ## Claims to verify
 
-- [ ] Kun Lung Wai specifically underwent major expansion work documented around the year 1786.
-- [ ] The defensive walls and gates of the settlement were actively reinforced by the local Tang lineage during the mid-Qing period.
+- ❔ Kun Lung Wai specifically underwent major expansion work documented around the year 1786.
+- ❔ The defensive walls and gates of the settlement were actively reinforced by the local Tang lineage during the mid-Qing period.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

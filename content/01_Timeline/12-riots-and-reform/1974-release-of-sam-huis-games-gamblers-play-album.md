@@ -40,7 +40,7 @@ The massive popularity of the album is widely credited by music historians with 
 
 ## Claims to verify
 
-- [ ] Did the album Games Gamblers Play officially release on October 17, 1974?
-- [ ] Did the album break existing local sales records upon its release?
+- ❔ Did the album Games Gamblers Play officially release on October 17, 1974?
+- ❔ Did the album break existing local sales records upon its release?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

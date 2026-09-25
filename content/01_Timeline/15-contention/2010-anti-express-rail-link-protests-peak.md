@@ -40,7 +40,7 @@ The events of January 2010 are widely viewed by historians and political analyst
 
 ## Claims to verify
 
-- [ ] The exact number of demonstrators gathered outside the Legislative Council complex on January 16, 2010.
-- [ ] The precise procedural steps and voting tally during the Finance Committee meeting on the day of the funding approval.
+- ❔ The exact number of demonstrators gathered outside the Legislative Council complex on January 16, 2010.
+- ❔ The precise procedural steps and voting tally during the Finance Committee meeting on the day of the funding approval.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

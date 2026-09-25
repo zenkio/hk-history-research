@@ -36,8 +36,8 @@ This era serves as the critical transition between purely archaeological, non-li
 
 ## Claims to verify
 
-- [ ] The dating of geometric-stamped pottery findings in Hong Kong to the late Warring States period.
-- [ ] The extent to which northern political expansion influenced sociopolitical shifts in the Lingnan coastal region.
-- [ ] The precise organizational structure of the Baiyue chiefdoms prior to the Qin dynasty.
+- ❔ The dating of geometric-stamped pottery findings in Hong Kong to the late Warring States period.
+- ❔ The extent to which northern political expansion influenced sociopolitical shifts in the Lingnan coastal region.
+- ❔ The precise organizational structure of the Baiyue chiefdoms prior to the Qin dynasty.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

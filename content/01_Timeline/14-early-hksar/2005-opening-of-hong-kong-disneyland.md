@@ -43,7 +43,7 @@ The opening of the park represented a key strategic effort by the government to 
 
 ## Claims to verify
 
-- [ ] The exact financial breakdown of the joint venture agreement signed in November 1999 between the HKSAR Government and The Walt Disney Company.
-- [ ] Official attendance figures recorded during the first year of Hong Kong Disneyland's operation compared to initial government projections.
+- ❔ The exact financial breakdown of the joint venture agreement signed in November 1999 between the HKSAR Government and The Walt Disney Company.
+- ❔ Official attendance figures recorded during the first year of Hong Kong Disneyland's operation compared to initial government projections.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -38,7 +38,7 @@ The legislative approval marked a watershed moment in Hong Kong's environmental 
 
 ## Claims to verify
 
-- [ ] The Legislative Council passed the municipal solid waste charging legislation on July 13, 2023.
-- [ ] The policy mandates the use of designated garbage bags or labels for municipal waste disposal.
+- ❔ The Legislative Council passed the municipal solid waste charging legislation on July 13, 2023.
+- ❔ The policy mandates the use of designated garbage bags or labels for municipal waste disposal.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

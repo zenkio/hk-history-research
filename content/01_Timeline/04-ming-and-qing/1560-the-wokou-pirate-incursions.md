@@ -39,8 +39,8 @@ The Wokou era represents a formative period for the social structure of the New 
 
 ## Claims to verify
 
-- [ ] The specific extent of Wokou incursions in the Hong Kong region between 1560 and 1570.
-- [ ] The degree to which Ming military records document specific defensive structures built in Hong Kong during this decade.
-- [ ] The historical accuracy of attributing current New Territories walled village structures specifically to the 16th-century Wokou period versus later Qing periods.
+- ❔ The specific extent of Wokou incursions in the Hong Kong region between 1560 and 1570.
+- ❔ The degree to which Ming military records document specific defensive structures built in Hong Kong during this decade.
+- ❔ The historical accuracy of attributing current New Territories walled village structures specifically to the 16th-century Wokou period versus later Qing periods.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

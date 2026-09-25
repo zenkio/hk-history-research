@@ -40,7 +40,7 @@ The enactment of the law fundamentally altered Hong Kong's legal framework and c
 
 ## Claims to verify
 
-- [ ] The exact vote count and unanimous passage by the NPCSC on June 30, 2020
-- [ ] The precise wording added to Annex III of the Basic Law
+- ❔ The exact vote count and unanimous passage by the NPCSC on June 30, 2020
+- ❔ The precise wording added to Annex III of the Basic Law
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

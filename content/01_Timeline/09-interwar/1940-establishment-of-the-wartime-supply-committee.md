@@ -36,7 +36,7 @@ The creation of the Wartime Supply Committee marked a significant departure from
 
 ## Claims to verify
 
-- [ ] The exact month and legislative mechanism used to establish the Wartime Supply Committee in 1940
-- [ ] The specific composition of the committee members representing colonial officials versus local merchant elites
+- ❔ The exact month and legislative mechanism used to establish the Wartime Supply Committee in 1940
+- ❔ The specific composition of the committee members representing colonial officials versus local merchant elites
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

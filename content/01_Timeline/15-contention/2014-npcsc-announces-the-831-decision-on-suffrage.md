@@ -41,7 +41,7 @@ The decision shattered expectations among local pro-democracy groups that unhind
 
 ## Claims to verify
 
-- [ ] The NPCSC officially released its resolution on universal suffrage in Hong Kong on August 31, 2014.
-- [ ] The decision required Chief Executive candidates to be endorsed by a majority of a broadly representative nominating committee.
+- ❔ The NPCSC officially released its resolution on universal suffrage in Hong Kong on August 31, 2014.
+- ❔ The decision required Chief Executive candidates to be endorsed by a majority of a broadly representative nominating committee.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

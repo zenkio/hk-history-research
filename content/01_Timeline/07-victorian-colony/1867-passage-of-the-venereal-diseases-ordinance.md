@@ -39,8 +39,8 @@ The ordinance became a focal point of intense moral, legal, and political debate
 
 ## Claims to verify
 
-- [ ] The exact date of the passage of the Venereal Diseases Ordinance by the Legislative Council was July 19, 1867.
-- [ ] The specific operational mechanisms and enforcement methods of the Lock Hospitals established under the ordinance.
+- ❔ The exact date of the passage of the Venereal Diseases Ordinance by the Legislative Council was July 19, 1867.
+- ❔ The specific operational mechanisms and enforcement methods of the Lock Hospitals established under the ordinance.
 
 ## Research notes
 

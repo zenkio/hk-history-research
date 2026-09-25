@@ -36,7 +36,7 @@ The shift toward local casting suggests a significant increase in technological 
 
 ## Claims to verify
 
-- [ ] The dating of stone molds found at Man Kok Tsui relative to other regional bronze sites.
-- [ ] The extent to which bronze tool production replaced stone tool production in the local economy during this period.
+- ❔ The dating of stone molds found at Man Kok Tsui relative to other regional bronze sites.
+- ❔ The extent to which bronze tool production replaced stone tool production in the local economy during this period.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

@@ -42,7 +42,7 @@ This episode marks one of the earliest documented instances where the inhabitant
 
 ## Claims to verify
 
-- [ ] The specific extent of material aid provided by indigenous boat people and coastal villagers to the Southern Song court in 1277.
-- [ ] The precise geographic locations within modern Hong Kong waters utilized by the fleeing imperial court as documented in primary historical texts versus later local genealogies.
+- ❔ The specific extent of material aid provided by indigenous boat people and coastal villagers to the Southern Song court in 1277.
+- ❔ The precise geographic locations within modern Hong Kong waters utilized by the fleeing imperial court as documented in primary historical texts versus later local genealogies.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

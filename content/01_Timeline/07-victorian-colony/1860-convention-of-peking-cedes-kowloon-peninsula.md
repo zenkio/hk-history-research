@@ -46,8 +46,8 @@ This territorial expansion marked the second major phase in the creation of mode
 
 ## Claims to verify
 
-- [ ] Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?
-- [ ] Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?
+- ❔ Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?
+- ❔ Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?
 
 
 ## Research notes

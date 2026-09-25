@@ -37,7 +37,7 @@ The arrival of the telegraph cable accelerated the integration of Hong Kong into
 
 ## Claims to verify
 
-- [ ] The exact date of the cable's operational landing in Hong Kong was April 18, 1871.
-- [ ] The specific corporate entities involved in laying and operating the initial Hong Kong connection.
+- ❔ The exact date of the cable's operational landing in Hong Kong was April 18, 1871.
+- ❔ The specific corporate entities involved in laying and operating the initial Hong Kong connection.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -39,7 +39,7 @@ The creation of the Social Welfare Office is widely viewed by historians as a fo
 
 ## Claims to verify
 
-- [ ] The Social Welfare Office was officially established within the Secretariat for Chinese Affairs in 1948.
-- [ ] Postwar relief efforts immediately following 1945 relied primarily on UNRRA and ad-hoc charities before government institutionalization.
+- ❔ The Social Welfare Office was officially established within the Secretariat for Chinese Affairs in 1948.
+- ❔ Postwar relief efforts immediately following 1945 relied primarily on UNRRA and ad-hoc charities before government institutionalization.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

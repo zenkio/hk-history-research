@@ -40,8 +40,8 @@ The creation of the bank marked a pivotal transition in the economic history of 
 
 ## Claims to verify
 
-- [ ] The exact date of commencement of operations on March 3, 1865
-- [ ] The specific composition and nationalities of the founding committee members
+- ❔ The exact date of commencement of operations on March 3, 1865
+- ❔ The specific composition and nationalities of the founding committee members
 
 ## Evidence
 

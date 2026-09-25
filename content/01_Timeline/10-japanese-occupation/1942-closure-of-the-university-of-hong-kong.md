@@ -37,8 +37,8 @@ The closure of the university symbolized a broader collapse of civil society and
 
 ## Claims to verify
 
-- [ ] Specific dates of the formal cessation of all classes at HKU
-- [ ] Total volume of library materials lost during the occupation
-- [ ] Specific usage of the Main Building by Japanese military units
+- ❔ Specific dates of the formal cessation of all classes at HKU
+- ❔ Total volume of library materials lost during the occupation
+- ❔ Specific usage of the Main Building by Japanese military units
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

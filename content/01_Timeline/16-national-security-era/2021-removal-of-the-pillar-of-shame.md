@@ -41,7 +41,7 @@ The removal of the Pillar of Shame marked a significant turning point in Hong Ko
 
 ## Claims to verify
 
-- [ ] The exact legal justifications provided by the University of Hong Kong council for the removal.
-- [ ] The current physical location and preservation status of the dismantled sculpture components.
+- ❔ The exact legal justifications provided by the University of Hong Kong council for the removal.
+- ❔ The current physical location and preservation status of the dismantled sculpture components.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

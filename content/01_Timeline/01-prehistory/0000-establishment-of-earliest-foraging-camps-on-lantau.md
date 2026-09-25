@@ -35,8 +35,8 @@ The identification of these camps is pivotal for understanding the earliest huma
 
 ## Claims to verify
 
-- [ ] The dating of the earliest identified lithic assemblages on Lantau to 6000 BCE.
-- [ ] The extent to which archaeological findings at Lantau sites can be definitively categorized as seasonal foraging camps rather than transient transit points.
-- [ ] The correlation between post-glacial sea-level rise and the specific distribution of lithic finds in the Pearl River Delta region.
+- ❔ The dating of the earliest identified lithic assemblages on Lantau to 6000 BCE.
+- ❔ The extent to which archaeological findings at Lantau sites can be definitively categorized as seasonal foraging camps rather than transient transit points.
+- ❔ The correlation between post-glacial sea-level rise and the specific distribution of lithic finds in the Pearl River Delta region.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

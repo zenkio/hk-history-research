@@ -36,7 +36,7 @@ The introduction of 3G is widely regarded as the catalyst for the mobile data re
 
 ## Claims to verify
 
-- [ ] Verify the exact date of the Hutchison 3G launch on January 28, 2004.
-- [ ] Confirm the list of the four initial 3G spectrum license winners in the 2001 auction.
+- ❔ Verify the exact date of the Hutchison 3G launch on January 28, 2004.
+- ❔ Confirm the list of the four initial 3G spectrum license winners in the 2001 auction.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

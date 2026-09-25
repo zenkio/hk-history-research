@@ -35,7 +35,7 @@ The reforms represented a concerted effort to modernize Hong Kong's business env
 
 ## Claims to verify
 
-- [ ] Verify the specific effective date of the diversity requirements introduced in the 2023 HKEX Corporate Governance Code reforms.
-- [ ] Confirm the specific policy threshold for independent non-executive director (INED) tenure changes mandated in the 2023 update.
+- ❔ Verify the specific effective date of the diversity requirements introduced in the 2023 HKEX Corporate Governance Code reforms.
+- ❔ Confirm the specific policy threshold for independent non-executive director (INED) tenure changes mandated in the 2023 update.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

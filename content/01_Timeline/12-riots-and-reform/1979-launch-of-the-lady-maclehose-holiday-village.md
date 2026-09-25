@@ -37,7 +37,7 @@ The establishment of the holiday village reflected the colonial administration's
 
 ## Claims to verify
 
-- [ ] The exact opening month and date of the Lady MacLehose Holiday Village in 1979
-- [ ] Original capacity and administration structure of the camp upon its initial launch
+- ❔ The exact opening month and date of the Lady MacLehose Holiday Village in 1979
+- ❔ Original capacity and administration structure of the camp upon its initial launch
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

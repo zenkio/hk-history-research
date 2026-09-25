@@ -39,8 +39,8 @@ Faced with an escalating crisis that threatened the legitimacy of colonial rule,
 
 ## Claims to verify
 
-- [ ] Peter Godber boarded a flight out of Kai Tak Airport on June 8, 1973.
-- [ ] Governor Murray MacLehose announced the creation of the ICAC in October 1973 in direct response to the Godber affair.
-- [ ] Godber was extradited from the United Kingdom back to Hong Kong in 1974.
+- ❔ Peter Godber boarded a flight out of Kai Tak Airport on June 8, 1973.
+- ❔ Governor Murray MacLehose announced the creation of the ICAC in October 1973 in direct response to the Godber affair.
+- ❔ Godber was extradited from the United Kingdom back to Hong Kong in 1974.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

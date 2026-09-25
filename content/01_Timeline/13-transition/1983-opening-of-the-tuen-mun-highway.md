@@ -38,7 +38,7 @@ The completion of the highway was a critical catalyst for the expansion of Tuen 
 
 ## Claims to verify
 
-- [ ] The exact official opening date of the Tuen Mun Highway was May 17, 1983.
-- [ ] The initial configuration of the Tuen Mun Highway upon opening in 1983.
+- ❔ The exact official opening date of the Tuen Mun Highway was May 17, 1983.
+- ❔ The initial configuration of the Tuen Mun Highway upon opening in 1983.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

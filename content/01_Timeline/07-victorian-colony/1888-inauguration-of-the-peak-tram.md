@@ -43,8 +43,8 @@ The opening of the Peak Tram fundamentally reshaped the social and spatial geogr
 
 ## Claims to verify
 
-- [ ] Did Governor Sir Des Voeux personally operate or attend the official inauguration on May 30, 1888?
-- [ ] What were the exact passenger numbers and fare structures during the first month of operation?
+- ❔ Did Governor Sir Des Voeux personally operate or attend the official inauguration on May 30, 1888?
+- ❔ What were the exact passenger numbers and fare structures during the first month of operation?
 
 ## Research notes
 

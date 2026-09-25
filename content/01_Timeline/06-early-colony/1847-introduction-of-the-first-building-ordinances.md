@@ -39,8 +39,8 @@ These ordinances mark a pivotal moment in Hong Kong’s transition from a makesh
 
 ## Claims to verify
 
-- [ ] Confirm the specific legal title of the 1847 ordinance in the colonial gazette.
-- [ ] Verify the extent to which these ordinances were effectively enforced across non-European residential zones during the 1840s.
-- [ ] Check if any fires specifically triggered the 1847 legislation or if it was purely preventative.
+- ❔ Confirm the specific legal title of the 1847 ordinance in the colonial gazette.
+- ❔ Verify the extent to which these ordinances were effectively enforced across non-European residential zones during the 1840s.
+- ❔ Check if any fires specifically triggered the 1847 legislation or if it was purely preventative.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

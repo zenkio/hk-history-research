@@ -41,7 +41,7 @@ The founding of the school is widely recognized by historians as a foundational 
 
 ## Claims to verify
 
-- [ ] The exact founding date and initial location of the Diocesan Native Female Training School in 1860
-- [ ] The initial enrollment numbers and curriculum taught during the school's first decade of operation
+- ❔ The exact founding date and initial location of the Diocesan Native Female Training School in 1860
+- ❔ The initial enrollment numbers and curriculum taught during the school's first decade of operation
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

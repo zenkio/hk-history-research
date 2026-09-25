@@ -37,8 +37,8 @@ The establishment of the office fundamentally altered the legal and security arc
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the official opening ceremony attended by officials.
-- [ ] Confirm the jurisdictional reach of the office over local versus central security cases as interpreted by the Hong Kong Department of Justice.
-- [ ] Check the official status of the office's staff under local Hong Kong legislation regarding legal immunity.
+- ❔ Verify the specific date of the official opening ceremony attended by officials.
+- ❔ Confirm the jurisdictional reach of the office over local versus central security cases as interpreted by the Hong Kong Department of Justice.
+- ❔ Check the official status of the office's staff under local Hong Kong legislation regarding legal immunity.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

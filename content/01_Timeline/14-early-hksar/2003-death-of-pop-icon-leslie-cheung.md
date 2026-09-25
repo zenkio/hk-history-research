@@ -40,8 +40,8 @@ The sudden loss of such a major cultural figure compounded the collective trauma
 
 ## Claims to verify
 
-- [ ] Leslie Cheung died on April 1, 2003, after falling from the Mandarin Oriental Hotel in Central.
-- [ ] Cheung was pronounced dead at Queen Mary Hospital at the age of 46.
-- [ ] A suicide note mentioning severe depression was recovered by the police.
+- ❔ Leslie Cheung died on April 1, 2003, after falling from the Mandarin Oriental Hotel in Central.
+- ❔ Cheung was pronounced dead at Queen Mary Hospital at the age of 46.
+- ❔ A suicide note mentioning severe depression was recovered by the police.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

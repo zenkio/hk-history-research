@@ -36,7 +36,7 @@ The scandal served as a watershed moment for internet culture, digital privacy, 
 
 ## Claims to verify
 
-- [ ] The exact date when the first photographs were uploaded to internet forums in January 2008
-- [ ] The precise number of arrests made by the Hong Kong Police Force during the initial weeks of the investigation
+- ❔ The exact date when the first photographs were uploaded to internet forums in January 2008
+- ❔ The precise number of arrests made by the Hong Kong Police Force during the initial weeks of the investigation
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

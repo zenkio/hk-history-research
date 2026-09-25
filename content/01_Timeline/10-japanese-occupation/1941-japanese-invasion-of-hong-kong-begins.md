@@ -45,8 +45,8 @@ The commencement of hostilities on **December 8, 1941** marked the end of Hong K
 
 ## Claims to verify
 
-- [ ] Exact timing of the first aerial bombardment on Kai Tak Airport relative to the crossing of the Sham Chun River
-- [ ] Exact composition and strength of the defending garrison on the morning of December 8, 1941
+- ❔ Exact timing of the first aerial bombardment on Kai Tak Airport relative to the crossing of the Sham Chun River
+- ❔ Exact composition and strength of the defending garrison on the morning of December 8, 1941
 
 ## Evidence
 

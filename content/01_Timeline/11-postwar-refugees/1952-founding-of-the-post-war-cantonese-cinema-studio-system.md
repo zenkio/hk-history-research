@@ -40,7 +40,7 @@ This emerging studio system catalyzed a golden age of post-war Cantonese cinema.
 
 ## Claims to verify
 
-- [ ] The precise timeline of how the post-war studio infrastructure consolidated around the year 1952
-- [ ] The extent of cross-migration of Shanghai and Guangzhou film personnel into the Hong Kong studio system
+- ❔ The precise timeline of how the post-war studio infrastructure consolidated around the year 1952
+- ❔ The extent of cross-migration of Shanghai and Guangzhou film personnel into the Hong Kong studio system
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

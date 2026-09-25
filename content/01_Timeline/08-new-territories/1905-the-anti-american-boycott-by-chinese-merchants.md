@@ -40,7 +40,7 @@ The **1905** anti-American boycott marked a watershed moment in the political aw
 
 ## Claims to verify
 
-- [ ] The precise extent of financial losses suffered by American import businesses in Hong Kong during the 1905 boycott.
-- [ ] The degree of direct involvement or tacit approval by the Qing government regarding the Hong Kong merchant operations.
+- ❔ The precise extent of financial losses suffered by American import businesses in Hong Kong during the 1905 boycott.
+- ❔ The degree of direct involvement or tacit approval by the Qing government regarding the Hong Kong merchant operations.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

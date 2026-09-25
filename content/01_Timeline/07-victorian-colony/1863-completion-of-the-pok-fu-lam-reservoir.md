@@ -40,8 +40,8 @@ The completion of the **Pok Fu Lam Reservoir** (薄扶林水塘) fundamentally t
 
 ## Claims to verify
 
-- [ ] Whether the reservoir was fully operational by the exact year 1863 or if that date marks the completion of the primary dam structure.
-- [ ] The specific engineering firms and colonial officials directly responsible for the construction oversight.
+- ❔ Whether the reservoir was fully operational by the exact year 1863 or if that date marks the completion of the primary dam structure.
+- ❔ The specific engineering firms and colonial officials directly responsible for the construction oversight.
 
 ## Evidence
 

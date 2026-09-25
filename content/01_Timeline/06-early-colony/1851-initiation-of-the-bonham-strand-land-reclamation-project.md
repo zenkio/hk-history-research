@@ -42,7 +42,7 @@ Bonham Strand marked Hong Kong's first major coastal reclamation project, settin
 
 ## Claims to verify
 
-- [ ] The exact date and casualty or property damage statistics of the 1851 Sheung Wan fire
-- [ ] The precise administrative decrees and engineering contracts issued by Governor Bonham for the Bonham Strand reclamation
+- ❔ The exact date and casualty or property damage statistics of the 1851 Sheung Wan fire
+- ❔ The precise administrative decrees and engineering contracts issued by Governor Bonham for the Bonham Strand reclamation
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

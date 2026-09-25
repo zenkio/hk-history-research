@@ -41,7 +41,7 @@ The Basic Law became the constitutional cornerstone of the Hong Kong Special Adm
 
 ## Claims to verify
 
-- [ ] The Third Session of the Seventh National People's Congress formally promulgated the Basic Law on April 4, 1990.
-- [ ] The drafting committee included appointed members from both mainland China and Hong Kong starting in 1985.
+- ❔ The Third Session of the Seventh National People's Congress formally promulgated the Basic Law on April 4, 1990.
+- ❔ The drafting committee included appointed members from both mainland China and Hong Kong starting in 1985.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

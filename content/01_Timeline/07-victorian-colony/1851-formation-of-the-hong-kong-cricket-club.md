@@ -40,7 +40,7 @@ The development of the club and its prominent footprint in the heart of Victoria
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hong Kong Cricket Club as 1851, given the scarcity of early primary records.
-- [ ] The precise chronology and extent of the clubhouse facility expansions in Chater Garden during the 1880s.
+- ❔ The exact founding date of the Hong Kong Cricket Club as 1851, given the scarcity of early primary records.
+- ❔ The precise chronology and extent of the clubhouse facility expansions in Chater Garden during the 1880s.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

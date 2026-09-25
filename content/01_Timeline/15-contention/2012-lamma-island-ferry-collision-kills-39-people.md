@@ -43,8 +43,8 @@ The disaster shocked the public, contrasting sharply with Hong Kong's reputation
 
 ## Claims to verify
 
-- [ ] The exact number of fatalities was 39, including eight children.
-- [ ] The Lamma IV sank within approximately two to three minutes after the collision.
-- [ ] The Commission of Inquiry report highlighted that the Marine Department had failed to check the vessel's stability compliance for 16 years.
+- ❔ The exact number of fatalities was 39, including eight children.
+- ❔ The Lamma IV sank within approximately two to three minutes after the collision.
+- ❔ The Commission of Inquiry report highlighted that the Marine Department had failed to check the vessel's stability compliance for 16 years.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

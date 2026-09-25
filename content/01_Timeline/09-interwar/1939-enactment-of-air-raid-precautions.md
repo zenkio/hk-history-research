@@ -42,8 +42,8 @@ The implementation of Air Raid Precautions marked a critical turning point in Ho
 
 ## Claims to verify
 
-- [ ] The precise legislative or administrative mechanism used to enact Air Raid Precautions in 1939
-- [ ] The exact number and capacity of air-raid shelters completed by the end of 1939
+- ❔ The precise legislative or administrative mechanism used to enact Air Raid Precautions in 1939
+- ❔ The exact number and capacity of air-raid shelters completed by the end of 1939
 
 ## Evidence
 

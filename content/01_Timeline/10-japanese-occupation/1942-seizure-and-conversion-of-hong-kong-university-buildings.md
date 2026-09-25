@@ -41,8 +41,8 @@ The seizure of the university buildings symbolized the abrupt termination of Bri
 
 ## Claims to verify
 
-- [ ] Exact dates when the Imperial Japanese Army officially took over the University of Hong Kong main buildings in 1942
-- [ ] The specific designation and administrative structure of the military hospital established within the university premises
-- [ ] The exact number of faculty members and students remaining on campus or displaced during the conversion
+- ❔ Exact dates when the Imperial Japanese Army officially took over the University of Hong Kong main buildings in 1942
+- ❔ The specific designation and administrative structure of the military hospital established within the university premises
+- ❔ The exact number of faculty members and students remaining on campus or displaced during the conversion
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

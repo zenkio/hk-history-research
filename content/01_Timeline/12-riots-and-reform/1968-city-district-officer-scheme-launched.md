@@ -37,7 +37,7 @@ The scheme marked a significant pivot in colonial governance away from pure elit
 
 ## Claims to verify
 
-- [ ] The exact launch date of the City District Officer Scheme was June 18, 1968.
-- [ ] The specific number and boundaries of the initial districts established under the 1968 scheme.
+- ❔ The exact launch date of the City District Officer Scheme was June 18, 1968.
+- ❔ The specific number and boundaries of the initial districts established under the 1968 scheme.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

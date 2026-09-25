@@ -36,8 +36,8 @@ The campaign serves as a notable example of state-directed economic intervention
 
 ## Claims to verify
 
-- [ ] The official start date of the 'Night Vibes Hong Kong' campaign.
-- [ ] The specific participation rate of major retail chains during the initial launch phase.
-- [ ] Government budget allocations designated for the campaign's execution.
+- ❔ The official start date of the 'Night Vibes Hong Kong' campaign.
+- ❔ The specific participation rate of major retail chains during the initial launch phase.
+- ❔ Government budget allocations designated for the campaign's execution.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

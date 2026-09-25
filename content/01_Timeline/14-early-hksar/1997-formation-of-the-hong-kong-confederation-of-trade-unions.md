@@ -37,8 +37,8 @@ The role of the **HKCTU** in the early SAR era remains a subject of study regard
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the inaugural meeting of the HKCTU
-- [ ] Confirm the initial number of affiliated unions at the time of the 1997 handover
-- [ ] Examine legislative records regarding the HKCTU's specific influence on the introduction of the Minimum Wage Ordinance in the subsequent decade
+- ❔ Verify the specific date of the inaugural meeting of the HKCTU
+- ❔ Confirm the initial number of affiliated unions at the time of the 1997 handover
+- ❔ Examine legislative records regarding the HKCTU's specific influence on the introduction of the Minimum Wage Ordinance in the subsequent decade
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -38,8 +38,8 @@ The arrival of these populations is often cited as a turning point in the integr
 
 ## Claims to verify
 
-- [ ] Evidence of specific Tang-era kiln site dating within the territory of modern Hong Kong
-- [ ] Documentary records confirming the extent of Tang administrative control in the Tuen Mun area post-755
-- [ ] Archaeological correlation between northern ceramic styles and southern coastal excavation sites from the mid-8th century
+- ❔ Evidence of specific Tang-era kiln site dating within the territory of modern Hong Kong
+- ❔ Documentary records confirming the extent of Tang administrative control in the Tuen Mun area post-755
+- ❔ Archaeological correlation between northern ceramic styles and southern coastal excavation sites from the mid-8th century
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

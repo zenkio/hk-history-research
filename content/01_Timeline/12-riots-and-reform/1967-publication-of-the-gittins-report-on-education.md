@@ -37,7 +37,7 @@ Although the report's recommendations were not immediately implemented in full, 
 
 ## Claims to verify
 
-- [ ] The Gittins Report was officially published in 1967 following the onset of the 1967 riots.
-- [ ] Hubert Roy Gittins chaired the committee that produced the primary education report.
+- ❔ The Gittins Report was officially published in 1967 following the onset of the 1967 riots.
+- ❔ Hubert Roy Gittins chaired the committee that produced the primary education report.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

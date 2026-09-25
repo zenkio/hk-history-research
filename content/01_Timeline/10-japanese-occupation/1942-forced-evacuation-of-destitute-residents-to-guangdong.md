@@ -42,7 +42,7 @@ The forced evacuation stands as one of the most severe humanitarian disasters of
 
 ## Claims to verify
 
-- [ ] Exact total number of residents forcibly deported between 1942 and 1943
-- [ ] The precise administrative mechanism and level of local elite participation in executing the repatriation quotas
+- ❔ Exact total number of residents forcibly deported between 1942 and 1943
+- ❔ The precise administrative mechanism and level of local elite participation in executing the repatriation quotas
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

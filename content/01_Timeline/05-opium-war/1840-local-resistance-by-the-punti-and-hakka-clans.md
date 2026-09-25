@@ -40,7 +40,7 @@ The resistance of the Punti and Hakka clans is historically significant for high
 
 ## Claims to verify
 
-- [ ] Verify the specific documentation of armed skirmishes involving local clans during the year 1840.
-- [ ] Assess the degree of communication between local clan leaders and the Qing magistrate in Sun On (新安) regarding British movements.
+- ❔ Verify the specific documentation of armed skirmishes involving local clans during the year 1840.
+- ❔ Assess the degree of communication between local clan leaders and the Qing magistrate in Sun On (新安) regarding British movements.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

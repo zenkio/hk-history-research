@@ -41,7 +41,7 @@ These early linguistic guides facilitated vital commercial and administrative co
 
 ## Claims to verify
 
-- [ ] Specific publication dates and authorship of the earliest English-Chinese phrasebooks produced in Hong Kong circa 1843
-- [ ] The extent to which early colonial officials relied on specific dictionaries for administrative work
+- ❔ Specific publication dates and authorship of the earliest English-Chinese phrasebooks produced in Hong Kong circa 1843
+- ❔ The extent to which early colonial officials relied on specific dictionaries for administrative work
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -37,7 +37,7 @@ The HKTV license denial and the subsequent protests crystallized broader grievan
 
 ## Claims to verify
 
-- [ ] The exact number of participants who attended the October 20, 2013 protest outside the government headquarters.
-- [ ] The precise statutory reasons documented in the Executive Council's confidential deliberation records regarding the HKTV license rejection.
+- ❔ The exact number of participants who attended the October 20, 2013 protest outside the government headquarters.
+- ❔ The precise statutory reasons documented in the Executive Council's confidential deliberation records regarding the HKTV license rejection.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

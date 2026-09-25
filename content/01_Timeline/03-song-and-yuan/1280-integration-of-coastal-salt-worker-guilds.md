@@ -38,7 +38,7 @@ The integration of salt guilds represents a broader trend of administrative encr
 
 ## Claims to verify
 
-- [ ] Verify the existence of specific Yuan-era salt guilds in the Pearl River Delta region via local gazetteers.
-- [ ] Determine the extent to which salt production remained a decentralized versus state-monopolized activity specifically in the Hong Kong region between 1280 and 1300.
+- ❔ Verify the existence of specific Yuan-era salt guilds in the Pearl River Delta region via local gazetteers.
+- ❔ Determine the extent to which salt production remained a decentralized versus state-monopolized activity specifically in the Hong Kong region between 1280 and 1300.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

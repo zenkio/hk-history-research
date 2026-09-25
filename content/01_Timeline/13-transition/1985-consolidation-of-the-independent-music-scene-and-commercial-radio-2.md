@@ -39,7 +39,7 @@ The consolidation of the independent music scene provided an unprecedented cultu
 
 ## Claims to verify
 
-- [ ] Commercial Radio 2's specific programming schedules and DJ lineups dedicated to independent music in mid-1985
-- [ ] The exact organizational links between indie musicians and CR2 producers during the transitional era
+- ❔ Commercial Radio 2's specific programming schedules and DJ lineups dedicated to independent music in mid-1985
+- ❔ The exact organizational links between indie musicians and CR2 producers during the transitional era
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

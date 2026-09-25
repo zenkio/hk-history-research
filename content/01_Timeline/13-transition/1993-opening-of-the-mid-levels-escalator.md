@@ -39,7 +39,7 @@ The opening of the escalator system profoundly transformed the urban landscape o
 
 ## Claims to verify
 
-- [ ] Verify the exact inauguration date of October 15, 1993, against official Public Works Department archives.
-- [ ] Confirm the original projected versus final construction cost figures for the escalator system.
+- ❔ Verify the exact inauguration date of October 15, 1993, against official Public Works Department archives.
+- ❔ Confirm the original projected versus final construction cost figures for the escalator system.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

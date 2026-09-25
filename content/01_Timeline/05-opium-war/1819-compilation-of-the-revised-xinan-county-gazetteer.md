@@ -44,7 +44,7 @@ For contemporary historians, the 1819 gazetteer serves as an invaluable baseline
 
 ## Claims to verify
 
-- [ ] The 1819 Xin'an County Gazetteer was officially completed and published under the specific editorial supervision of Wang Lai and Wen Rulin.
-- [ ] The text provides the most detailed pre-colonial demographic and economic data available for the territory comprising modern Hong Kong.
+- ❔ The 1819 Xin'an County Gazetteer was officially completed and published under the specific editorial supervision of Wang Lai and Wen Rulin.
+- ❔ The text provides the most detailed pre-colonial demographic and economic data available for the territory comprising modern Hong Kong.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

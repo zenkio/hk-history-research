@@ -41,7 +41,7 @@ The establishment of the Athlete's Village marked a pivotal shift in urban gover
 
 ## Claims to verify
 
-- [ ] The exact opening date of the Jockey Club Kwai Chung Athlete's Village on May 15, 1974.
-- [ ] The specific funding contributions made by the Hong Kong Jockey Club toward the construction of the village.
+- ❔ The exact opening date of the Jockey Club Kwai Chung Athlete's Village on May 15, 1974.
+- ❔ The specific funding contributions made by the Hong Kong Jockey Club toward the construction of the village.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

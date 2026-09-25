@@ -37,7 +37,7 @@ The introduction of the **Hong Kong Gazette** marked a transition from a provisi
 
 ## Claims to verify
 
-- [ ] Verify the precise date of the first publication of the Hong Kong Gazette in 1845 through the Public Records Office.
-- [ ] Examine whether the 1845 publication was the first official government paper or a successor to shorter-lived printed bulletins.
+- ❔ Verify the precise date of the first publication of the Hong Kong Gazette in 1845 through the Public Records Office.
+- ❔ Examine whether the 1845 publication was the first official government paper or a successor to shorter-lived printed bulletins.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

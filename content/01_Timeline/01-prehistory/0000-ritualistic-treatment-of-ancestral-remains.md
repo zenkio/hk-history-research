@@ -36,8 +36,8 @@ The existence of secondary burial practices is widely regarded by archaeologists
 
 ## Claims to verify
 
-- [ ] Verify the carbon dating accuracy of secondary burial sites at Sham Wan as circa 1200 BCE.
-- [ ] Confirm the classification of these sites as strictly 'Bronze Age' versus 'Late Neolithic/Bronze Age transition'.
-- [ ] Check the consensus on whether these remains definitively indicate formal ancestor worship rather than simple funerary hygiene.
+- ❔ Verify the carbon dating accuracy of secondary burial sites at Sham Wan as circa 1200 BCE.
+- ❔ Confirm the classification of these sites as strictly 'Bronze Age' versus 'Late Neolithic/Bronze Age transition'.
+- ❔ Check the consensus on whether these remains definitively indicate formal ancestor worship rather than simple funerary hygiene.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

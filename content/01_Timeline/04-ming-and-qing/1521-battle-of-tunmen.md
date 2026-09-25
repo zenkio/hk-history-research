@@ -43,8 +43,8 @@ The **Battle of Tunmen** (屯門海戰) halted early Portuguese attempts to forc
 
 ## Claims to verify
 
-- [ ] Wang Hong commanded the specific Ming naval forces at the Battle of Tunmen in 1521.
-- [ ] The exact tactical use of fire ships by Ming forces during the engagement.
-- [ ] The precise location of the fortifications constructed by the Portuguese in the Tuen Mun area.
+- ❔ Wang Hong commanded the specific Ming naval forces at the Battle of Tunmen in 1521.
+- ❔ The exact tactical use of fire ships by Ming forces during the engagement.
+- ❔ The precise location of the fortifications constructed by the Portuguese in the Tuen Mun area.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -37,8 +37,8 @@ This period marks a pivotal, albeit gradual, diversification of the local econom
 
 ## Claims to verify
 
-- [ ] The dating of the transition to agricultural practices at Sha Ha (沙下) as approximately 1000 BCE.
-- [ ] The extent to which rice cultivation was a primary food source versus a supplementary activity during the late Bronze Age in Hong Kong.
-- [ ] The role of environmental changes in influencing the shift toward inland agriculture.
+- ❔ The dating of the transition to agricultural practices at Sha Ha (沙下) as approximately 1000 BCE.
+- ❔ The extent to which rice cultivation was a primary food source versus a supplementary activity during the late Bronze Age in Hong Kong.
+- ❔ The role of environmental changes in influencing the shift toward inland agriculture.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

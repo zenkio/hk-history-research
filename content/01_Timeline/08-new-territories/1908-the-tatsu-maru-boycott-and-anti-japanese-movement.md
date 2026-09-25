@@ -41,8 +41,8 @@ The **Tatsu Maru boycott** is widely viewed by historians as a watershed moment 
 
 ## Claims to verify
 
-- [ ] The precise timeline of merchant meetings and boycott enforcement actions within Hong Kong in March 1908.
-- [ ] The extent of direct involvement by colonial police in suppressing the anti-Japanese demonstrations.
+- ❔ The precise timeline of merchant meetings and boycott enforcement actions within Hong Kong in March 1908.
+- ❔ The extent of direct involvement by colonial police in suppressing the anti-Japanese demonstrations.
 
 ## Evidence
 

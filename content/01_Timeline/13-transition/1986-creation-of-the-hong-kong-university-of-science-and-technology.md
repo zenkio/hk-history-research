@@ -37,7 +37,7 @@ The creation of HKUST is widely viewed as a pivotal moment in Hong Kong's late-c
 
 ## Claims to verify
 
-- [ ] The precise date of the initial government approval for the campus in 1986.
-- [ ] The official reasoning provided in the Legislative Council transcripts regarding the focus on science and technology during the mid-1980s.
+- ❔ The precise date of the initial government approval for the campus in 1986.
+- ❔ The official reasoning provided in the Legislative Council transcripts regarding the focus on science and technology during the mid-1980s.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

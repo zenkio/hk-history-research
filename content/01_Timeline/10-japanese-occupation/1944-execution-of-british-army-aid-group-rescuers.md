@@ -42,8 +42,8 @@ The event marked a devastating blow to the underground networks operating within
 
 ## Claims to verify
 
-- [ ] Exact number and identities of the 33 individuals executed on January 11, 1944
-- [ ] Degree of Kempeitai infiltration into the BAAG network leading up to the arrests
+- ❔ Exact number and identities of the 33 individuals executed on January 11, 1944
+- ❔ Degree of Kempeitai infiltration into the BAAG network leading up to the arrests
 
 ## Evidence
 

@@ -40,8 +40,8 @@ The epidemic cast severe doubt on the viability of the entire colonial enterpris
 
 ## Claims to verify
 
-- [ ] Exact mortality and morbidity statistics for the British garrison during the 1843 outbreak
-- [ ] Specific debates and correspondence within the British Parliament regarding the potential abandonment of Hong Kong
+- ❔ Exact mortality and morbidity statistics for the British garrison during the 1843 outbreak
+- ❔ Specific debates and correspondence within the British Parliament regarding the potential abandonment of Hong Kong
 
 
 ## Research notes

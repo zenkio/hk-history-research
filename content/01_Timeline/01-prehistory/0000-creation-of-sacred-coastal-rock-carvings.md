@@ -39,7 +39,7 @@ The rock carvings represent some of the earliest tangible evidence of human ritu
 
 ## Claims to verify
 
-- [ ] Dating of the rock carvings to approximately 1300 BCE based on stylistic comparisons and regional Bronze Age contexts
-- [ ] Correlation between the location of the carvings near the shoreline and maritime or shamanistic worship practices
+- ❔ Dating of the rock carvings to approximately 1300 BCE based on stylistic comparisons and regional Bronze Age contexts
+- ❔ Correlation between the location of the carvings near the shoreline and maritime or shamanistic worship practices
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

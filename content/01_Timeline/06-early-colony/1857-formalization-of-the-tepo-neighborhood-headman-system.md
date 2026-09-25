@@ -38,7 +38,7 @@ The formalization of the Tepo system laid the early foundation for indirect rule
 
 ## Claims to verify
 
-- [ ] Governor John Bowring officially formalized the Tepo neighborhood headman system specifically in the year 1857.
-- [ ] The Tepo headmen were officially tasked by the colonial government with reporting crimes and assisting in urban security.
+- ❔ Governor John Bowring officially formalized the Tepo neighborhood headman system specifically in the year 1857.
+- ❔ The Tepo headmen were officially tasked by the colonial government with reporting crimes and assisting in urban security.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

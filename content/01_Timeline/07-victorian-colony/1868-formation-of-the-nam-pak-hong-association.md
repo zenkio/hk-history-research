@@ -41,7 +41,7 @@ The formation of the association cemented the economic and social influence of t
 
 ## Claims to verify
 
-- [ ] The Nam Pak Hong Association was formally established in the year 1868.
-- [ ] The association functioned primarily as a self-governing guild and arbitration board for trade between Mainland China and Southeast Asia.
+- ❔ The Nam Pak Hong Association was formally established in the year 1868.
+- ❔ The association functioned primarily as a self-governing guild and arbitration board for trade between Mainland China and Southeast Asia.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

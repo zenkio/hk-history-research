@@ -44,7 +44,7 @@ This early press established a crucial vector for information exchange between C
 
 ## Claims to verify
 
-- [ ] The exact volume and titles of Chinese-language periodicals printed and circulated in the Pearl River Delta specifically in the year 1832
-- [ ] The extent to which Qing local authorities successfully intercepted and suppressed early missionary printing operations
+- ❔ The exact volume and titles of Chinese-language periodicals printed and circulated in the Pearl River Delta specifically in the year 1832
+- ❔ The extent to which Qing local authorities successfully intercepted and suppressed early missionary printing operations
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

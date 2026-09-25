@@ -41,8 +41,8 @@ The disaster served as a brutal awakening for the British colonial authorities r
 
 ## Claims to verify
 
-- [ ] Did the Great Typhoon specifically strike Hong Kong on July 21, 1841?
-- [ ] What was the exact extent of the damage to the British fleet and matshed settlements according to primary naval records?
+- ❔ Did the Great Typhoon specifically strike Hong Kong on July 21, 1841?
+- ❔ What was the exact extent of the damage to the British fleet and matshed settlements according to primary naval records?
 
 ## Research notes
 

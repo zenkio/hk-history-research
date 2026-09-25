@@ -44,8 +44,8 @@ The formation of Gimson's provisional administration was a crucial step in the i
 
 ## Claims to verify
 
-- [ ] Did Franklin Gimson officially establish the provisional administration precisely on August 23, 1945?
-- [ ] Which specific buildings were utilized by Gimson and his staff during the provisional administration prior to Harcourt's arrival?
+- ❔ Did Franklin Gimson officially establish the provisional administration precisely on August 23, 1945?
+- ❔ Which specific buildings were utilized by Gimson and his staff during the provisional administration prior to Harcourt's arrival?
 
 ## Evidence
 

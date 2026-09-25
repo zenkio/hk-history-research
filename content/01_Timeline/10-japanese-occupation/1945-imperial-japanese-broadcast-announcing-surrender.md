@@ -45,8 +45,8 @@ The broadcast marked the cessation of active hostilities in Hong Kong and the te
 
 ## Claims to verify
 
-- [ ] Exact details of how and when the radio broadcast was heard by military and civilian personnel within occupied Hong Kong on August 15, 1945
-- [ ] The precise command structure and communication logs of the Japanese garrison in Hong Kong immediately following the Emperor's announcement
+- ❔ Exact details of how and when the radio broadcast was heard by military and civilian personnel within occupied Hong Kong on August 15, 1945
+- ❔ The precise command structure and communication logs of the Japanese garrison in Hong Kong immediately following the Emperor's announcement
 
 ## Evidence
 

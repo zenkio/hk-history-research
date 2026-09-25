@@ -36,7 +36,7 @@ Later scholarship views the school as a pioneer in vocational training for indig
 
 ## Claims to verify
 
-- [ ] The exact founding year and primary financial backers of the Aberdeen Fishing Vocational School in or around 1930.
-- [ ] The initial enrollment numbers and curriculum specifics during the school's earliest years of operation.
+- ❔ The exact founding year and primary financial backers of the Aberdeen Fishing Vocational School in or around 1930.
+- ❔ The initial enrollment numbers and curriculum specifics during the school's earliest years of operation.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

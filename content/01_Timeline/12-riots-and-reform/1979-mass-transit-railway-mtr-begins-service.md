@@ -42,7 +42,7 @@ The opening of the MTR fundamentally revolutionized daily commuting and urban sp
 
 ## Claims to verify
 
-- [ ] The MTR officially commenced passenger service on October 1, 1979.
-- [ ] The cross-harbour extension to Central opened in February 1980.
+- ❔ The MTR officially commenced passenger service on October 1, 1979.
+- ❔ The cross-harbour extension to Central opened in February 1980.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

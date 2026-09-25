@@ -37,7 +37,7 @@ The rise of lineage-controlled market towns laid the institutional foundation fo
 
 ## Claims to verify
 
-- [ ] The exact founding date and circumstances of the Tai Po Old Market around 1711
-- [ ] The precise extent of tax-levying and judicial powers held by clans over independent market participants
+- ❔ The exact founding date and circumstances of the Tai Po Old Market around 1711
+- ❔ The precise extent of tax-levying and judicial powers held by clans over independent market participants
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

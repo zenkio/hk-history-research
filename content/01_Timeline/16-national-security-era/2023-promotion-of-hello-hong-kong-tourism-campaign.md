@@ -36,8 +36,8 @@ The launch of 'Hello Hong Kong' served as a symbolic turning point, moving the t
 
 ## Claims to verify
 
-- [ ] Exact number of flight tickets allocated for the Hello Hong Kong campaign.
-- [ ] Specific promotional agencies involved in the campaign's global outreach strategy.
-- [ ] Official tourism data tracking arrivals in the quarter immediately following the launch.
+- ❔ Exact number of flight tickets allocated for the Hello Hong Kong campaign.
+- ❔ Specific promotional agencies involved in the campaign's global outreach strategy.
+- ❔ Official tourism data tracking arrivals in the quarter immediately following the launch.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

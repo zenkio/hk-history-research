@@ -38,8 +38,8 @@ The mass mobilization is widely regarded as a turning point in HKSAR political h
 
 ## Claims to verify
 
-- [ ] Exact police crowd estimates for July 1, 2003
-- [ ] Official resignation timeline for Regina Ip following the protest
-- [ ] Scope of original Article 23 bill versus subsequent legislative attempts
+- ❔ Exact police crowd estimates for July 1, 2003
+- ❔ Official resignation timeline for Regina Ip following the protest
+- ❔ Scope of original Article 23 bill versus subsequent legislative attempts
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

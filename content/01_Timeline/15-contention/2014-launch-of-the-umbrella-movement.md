@@ -45,8 +45,8 @@ The movement marked one of the most protracted periods of civil unrest in Hong K
 
 ## Claims to verify
 
-- [ ] The exact number of tear gas rounds fired by police on September 28, 2014
-- [ ] The precise peak number of participants occupying the various sites during the 79 days
-- [ ] The formal internal directives given to the police force prior to the deployment of tear gas
+- ❔ The exact number of tear gas rounds fired by police on September 28, 2014
+- ❔ The precise peak number of participants occupying the various sites during the 79 days
+- ❔ The formal internal directives given to the police force prior to the deployment of tear gas
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

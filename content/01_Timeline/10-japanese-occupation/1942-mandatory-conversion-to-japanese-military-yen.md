@@ -36,8 +36,8 @@ The forced currency conversion remains one of the most economically devastating 
 
 ## Claims to verify
 
-- [ ] The exact official exchange rate enforced on July 24, 1942, between the Hong Kong Dollar and the military yen.
-- [ ] The total nominal value of Hong Kong Dollars confiscated or exchanged during the occupation.
+- ❔ The exact official exchange rate enforced on July 24, 1942, between the Hong Kong Dollar and the military yen.
+- ❔ The total nominal value of Hong Kong Dollars confiscated or exchanged during the occupation.
 
 ## Evidence
 

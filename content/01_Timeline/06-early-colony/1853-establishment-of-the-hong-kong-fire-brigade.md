@@ -35,7 +35,7 @@ The creation of the **Hong Kong Fire Brigade** is often viewed as a pivotal mome
 
 ## Claims to verify
 
-- [ ] Verify the specific date of 1853 for the formal establishment versus earlier informal firefighting arrangements.
-- [ ] Investigate the extent to which the 1853 brigade was purely a volunteer force or a government-salaried entity.
+- ❔ Verify the specific date of 1853 for the formal establishment versus earlier informal firefighting arrangements.
+- ❔ Investigate the extent to which the 1853 brigade was purely a volunteer force or a government-salaried entity.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

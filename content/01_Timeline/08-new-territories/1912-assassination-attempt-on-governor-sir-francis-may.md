@@ -41,9 +41,9 @@ The failed assassination attempt sent shockwaves through the colonial administra
 
 ## Claims to verify
 
-- [ ] The exact date of the assassination attempt was July 4, 1912.
-- [ ] Sir Francis Henry May was the specific target of the lone gunman.
-- [ ] The identity and precise political affiliations of the lone gunman remain a subject of historical inquiry.
+- ❔ The exact date of the assassination attempt was July 4, 1912.
+- ❔ Sir Francis Henry May was the specific target of the lone gunman.
+- ❔ The identity and precise political affiliations of the lone gunman remain a subject of historical inquiry.
 
 ## Evidence
 

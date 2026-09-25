@@ -39,8 +39,8 @@ MacLehose's arrival marked the beginning of what many historians consider the go
 
 ## Claims to verify
 
-- [ ] Sir Murray MacLehose assumed the office of Governor of Hong Kong on November 19, 1971.
-- [ ] MacLehose served the longest tenure of any Hong Kong governor.
-- [ ] The Independent Commission Against Corruption was established in 1974 during his administration.
+- ❔ Sir Murray MacLehose assumed the office of Governor of Hong Kong on November 19, 1971.
+- ❔ MacLehose served the longest tenure of any Hong Kong governor.
+- ❔ The Independent Commission Against Corruption was established in 1974 during his administration.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

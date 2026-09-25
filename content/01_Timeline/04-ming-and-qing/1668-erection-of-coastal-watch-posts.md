@@ -41,7 +41,7 @@ The erection of these coastal watch posts marked a transition from total abandon
 
 ## Claims to verify
 
-- [ ] Governor Wang Lai formally petitioned the Qing court regarding the border posts in 1668.
-- [ ] Specific numbers and exact locations of the watch posts erected along the Xin'an county perimeter.
+- ❔ Governor Wang Lai formally petitioned the Qing court regarding the border posts in 1668.
+- ❔ Specific numbers and exact locations of the watch posts erected along the Xin'an county perimeter.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

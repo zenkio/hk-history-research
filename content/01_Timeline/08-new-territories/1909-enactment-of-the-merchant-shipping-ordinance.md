@@ -38,8 +38,8 @@ The enactment of this ordinance signaled the maturation of Hong Kong’s maritim
 
 ## Claims to verify
 
-- [ ] The specific provisions contained within the 1909 Merchant Shipping Ordinance compared to the 1899 version.
-- [ ] The extent to which the 1909 Ordinance explicitly targeted the regulation of non-European vessels and Tanka watermen.
+- ❔ The specific provisions contained within the 1909 Merchant Shipping Ordinance compared to the 1899 version.
+- ❔ The extent to which the 1909 Ordinance explicitly targeted the regulation of non-European vessels and Tanka watermen.
 
 ## Research notes
 

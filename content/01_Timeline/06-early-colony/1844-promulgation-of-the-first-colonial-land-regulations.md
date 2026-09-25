@@ -41,7 +41,7 @@ These regulations laid the legal and financial bedrock for Hong Kong's urban pro
 
 ## Claims to verify
 
-- [ ] The exact lease durations specified in the 1844 regulations.
-- [ ] The precise mechanism and revenue outcomes of the early land auctions held in Victoria City.
+- ❔ The exact lease durations specified in the 1844 regulations.
+- ❔ The precise mechanism and revenue outcomes of the early land auctions held in Victoria City.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

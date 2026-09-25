@@ -36,8 +36,8 @@ Salt production functioned as an early economic engine for the region. Because s
 
 ## Claims to verify
 
-- [ ] The dating of the earliest archaeological evidence for salt-boiling pottery in Hong Kong.
-- [ ] The correlation between ceramic typology and salt production functions.
-- [ ] The extent of trade between Neolithic coastal settlements in Hong Kong and the mainland.
+- ❔ The dating of the earliest archaeological evidence for salt-boiling pottery in Hong Kong.
+- ❔ The correlation between ceramic typology and salt production functions.
+- ❔ The extent of trade between Neolithic coastal settlements in Hong Kong and the mainland.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

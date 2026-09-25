@@ -41,7 +41,7 @@ The opening of Grantham Hospital marked a major milestone in Hong Kong's public 
 
 ## Claims to verify
 
-- [ ] Grantham Hospital officially opened on January 8, 1957.
-- [ ] The hospital was primarily funded through a combination of government support and public donations.
+- ❔ Grantham Hospital officially opened on January 8, 1957.
+- ❔ The hospital was primarily funded through a combination of government support and public donations.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

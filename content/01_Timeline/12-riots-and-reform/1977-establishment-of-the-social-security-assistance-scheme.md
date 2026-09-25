@@ -37,7 +37,7 @@ The introduction of the scheme is widely viewed by historians as a watershed mom
 
 ## Claims to verify
 
-- [ ] The Social Security Assistance Scheme was officially launched on April 1, 1977.
-- [ ] The scheme successfully consolidated previous fragmented relief measures into a single statutory framework.
+- ❔ The Social Security Assistance Scheme was officially launched on April 1, 1977.
+- ❔ The scheme successfully consolidated previous fragmented relief measures into a single statutory framework.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

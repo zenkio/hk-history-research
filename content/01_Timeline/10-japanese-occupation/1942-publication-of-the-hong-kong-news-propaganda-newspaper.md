@@ -38,7 +38,7 @@ The newspaper remains a critical primary source for documenting daily life, admi
 
 ## Claims to verify
 
-- [ ] The exact launch date of the Hong Kong News in 1942
-- [ ] The extent of circulation and readership among the remaining foreign and local populations during the occupation
+- ❔ The exact launch date of the Hong Kong News in 1942
+- ❔ The extent of circulation and readership among the remaining foreign and local populations during the occupation
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

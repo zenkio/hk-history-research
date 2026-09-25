@@ -38,7 +38,7 @@ This period of localized consolidation marked a crucial turning point in the soc
 
 ## Claims to verify
 
-- [ ] Specific formal militia alliances formed precisely between 1365 and 1368 in the modern Hong Kong territory
-- [ ] The exact degree of imperial administrative abandonment in coastal Guangdong during the final years of Yuan rule
+- ❔ Specific formal militia alliances formed precisely between 1365 and 1368 in the modern Hong Kong territory
+- ❔ The exact degree of imperial administrative abandonment in coastal Guangdong during the final years of Yuan rule
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

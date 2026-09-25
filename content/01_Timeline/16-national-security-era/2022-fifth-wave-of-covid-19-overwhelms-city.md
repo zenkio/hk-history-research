@@ -39,7 +39,7 @@ The fifth wave marked a critical turning point in Hong Kong's pandemic response.
 
 ## Claims to verify
 
-- [ ] Exact peak daily case numbers and death tolls recorded during February and March 2022
-- [ ] Specific timelines and operational capacity of mainland Chinese medical assistance teams deployed to Hong Kong
+- ❔ Exact peak daily case numbers and death tolls recorded during February and March 2022
+- ❔ Specific timelines and operational capacity of mainland Chinese medical assistance teams deployed to Hong Kong
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

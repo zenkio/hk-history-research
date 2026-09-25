@@ -40,7 +40,7 @@ Patten's proposals triggered an immediate and furious response from the governme
 
 ## Claims to verify
 
-- [ ] Governor Chris Patten delivered his constitutional reform proposals during his Policy Address on October 7, 1992.
-- [ ] The reform proposals successfully passed through the Legislative Council in 1994 despite opposition from Beijing.
+- ❔ Governor Chris Patten delivered his constitutional reform proposals during his Policy Address on October 7, 1992.
+- ❔ The reform proposals successfully passed through the Legislative Council in 1994 despite opposition from Beijing.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

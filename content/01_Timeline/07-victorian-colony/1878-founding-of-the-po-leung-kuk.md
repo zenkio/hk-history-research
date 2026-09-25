@@ -39,8 +39,8 @@ The founding of the Po Leung Kuk represented a crucial precedent for Chinese par
 
 ## Claims to verify
 
-- [ ] The exact petition date and founding members listed in the initial 1878 colonial records
-- [ ] The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
+- ❔ The exact petition date and founding members listed in the initial 1878 colonial records
+- ❔ The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
 
 ## Research notes
 

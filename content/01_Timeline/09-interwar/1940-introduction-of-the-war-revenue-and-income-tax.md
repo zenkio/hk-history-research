@@ -40,7 +40,7 @@ Historians generally view the introduction of the 1940 income tax as a watershed
 
 ## Claims to verify
 
-- [ ] The exact date and legislative mechanics of the War Revenue Ordinance passed in 1940
-- [ ] The specific allocation of tax revenues between local defense and imperial war efforts
+- ❔ The exact date and legislative mechanics of the War Revenue Ordinance passed in 1940
+- ❔ The specific allocation of tax revenues between local defense and imperial war efforts
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -36,7 +36,7 @@ The expansion of legal aid is widely regarded as a foundational pillar of the br
 
 ## Claims to verify
 
-- [ ] The exact implementation date and statutory scope of the Legal Aid Ordinance expansion in 1970
-- [ ] The specific financial eligibility criteria utilized by the Legal Aid Department during its initial years of operation
+- ❔ The exact implementation date and statutory scope of the Legal Aid Ordinance expansion in 1970
+- ❔ The specific financial eligibility criteria utilized by the Legal Aid Department during its initial years of operation
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

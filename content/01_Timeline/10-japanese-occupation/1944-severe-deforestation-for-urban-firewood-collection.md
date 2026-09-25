@@ -39,7 +39,7 @@ The catastrophic loss of forest cover triggered severe secondary environmental c
 
 ## Claims to verify
 
-- [ ] The exact volume or percentage of forest cover lost specifically between 1944 and 1945.
-- [ ] The formal ordinances or rationing permits issued by the Japanese occupation authorities regarding wood collection.
+- ❔ The exact volume or percentage of forest cover lost specifically between 1944 and 1945.
+- ❔ The formal ordinances or rationing permits issued by the Japanese occupation authorities regarding wood collection.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

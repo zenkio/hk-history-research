@@ -36,7 +36,7 @@ The foundation of the association is often viewed as a turning point in the prof
 
 ## Claims to verify
 
-- [ ] The exact organizational date of the Hong Kong Anti-Tuberculosis Association in 1938
-- [ ] The initial level of financial involvement provided by the colonial government at the founding of the association
+- ❔ The exact organizational date of the Hong Kong Anti-Tuberculosis Association in 1938
+- ❔ The initial level of financial involvement provided by the colonial government at the founding of the association
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

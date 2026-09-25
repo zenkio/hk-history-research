@@ -39,7 +39,7 @@ The opening of the museum marked a significant milestone in institutionalizing a
 
 ## Claims to verify
 
-- [ ] The Hong Kong Museum of History officially opened its new Tsim Sha Tsui site on July 1, 1998.
-- [ ] The permanent exhibition 'The Hong Kong Story' was designed to showcase the region's history from prehistoric times to the 1997 handover.
+- ❔ The Hong Kong Museum of History officially opened its new Tsim Sha Tsui site on July 1, 1998.
+- ❔ The permanent exhibition 'The Hong Kong Story' was designed to showcase the region's history from prehistoric times to the 1997 handover.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

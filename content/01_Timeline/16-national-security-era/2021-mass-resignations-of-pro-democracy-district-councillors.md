@@ -40,7 +40,7 @@ The mass resignations marked the virtual elimination of the organized opposition
 
 ## Claims to verify
 
-- [ ] Exact cumulative number of pro-democracy district councillors who resigned in July 2021
-- [ ] Verification of official threats regarding the retroactive recovery of operational expenses and salaries
+- ❔ Exact cumulative number of pro-democracy district councillors who resigned in July 2021
+- ❔ Verification of official threats regarding the retroactive recovery of operational expenses and salaries
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

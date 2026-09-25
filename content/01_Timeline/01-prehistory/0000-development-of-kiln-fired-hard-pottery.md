@@ -37,7 +37,7 @@ The creation of kiln-fired hard pottery marked a major technological milestone f
 
 ## Claims to verify
 
-- [ ] Kiln-fired hard pottery production in the Hong Kong region intensified around c. 700 BCE.
-- [ ] High-temperature kilns allowed for the vitrification of clay and improved storage capabilities for agricultural goods.
+- ❔ Kiln-fired hard pottery production in the Hong Kong region intensified around c. 700 BCE.
+- ❔ High-temperature kilns allowed for the vitrification of clay and improved storage capabilities for agricultural goods.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

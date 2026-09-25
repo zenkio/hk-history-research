@@ -38,8 +38,8 @@ The ordinance marked a pivotal moment in Hong Kong’s constitutional developmen
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the final legislative reading on June 8, 1991.
-- [ ] Confirm the specific amendments made to the Letters Patent in relation to the Bill of Rights.
-- [ ] Cross-reference Beijing's formal diplomatic protests regarding the ordinance to the British government.
+- ❔ Verify the specific date of the final legislative reading on June 8, 1991.
+- ❔ Confirm the specific amendments made to the Letters Patent in relation to the Bill of Rights.
+- ❔ Cross-reference Beijing's formal diplomatic protests regarding the ordinance to the British government.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

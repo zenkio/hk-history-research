@@ -41,7 +41,7 @@ Morrison’s dictionary fundamentally transformed the nature of cross-cultural c
 
 ## Claims to verify
 
-- [ ] Did Robert Morrison publish the very first Chinese-English dictionary in 1815, or were there earlier unpublished manuscripts by Catholic missionaries that served as his basis?
-- [ ] What exact legal penalties did Morrison's Chinese assistants face under Qing law for aiding a foreigner in compiling a Chinese dictionary?
+- ❔ Did Robert Morrison publish the very first Chinese-English dictionary in 1815, or were there earlier unpublished manuscripts by Catholic missionaries that served as his basis?
+- ❔ What exact legal penalties did Morrison's Chinese assistants face under Qing law for aiding a foreigner in compiling a Chinese dictionary?
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

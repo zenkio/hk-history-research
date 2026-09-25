@@ -36,8 +36,8 @@ The work of the FPAHK is often seen as a critical element in the demographic tra
 
 ## Claims to verify
 
-- [ ] The official date of the formal transition from the Eugenics League to the FPAHK.
-- [ ] The degree of direct government financial support provided to the FPAHK in the 1960s.
-- [ ] The specific year the 'Two is Enough' campaign was launched.
+- ❔ The official date of the formal transition from the Eugenics League to the FPAHK.
+- ❔ The degree of direct government financial support provided to the FPAHK in the 1960s.
+- ❔ The specific year the 'Two is Enough' campaign was launched.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

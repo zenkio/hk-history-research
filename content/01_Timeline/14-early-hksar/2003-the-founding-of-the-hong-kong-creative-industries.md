@@ -37,7 +37,7 @@ The formal prioritization of creative industries represented a significant pivot
 
 ## Claims to verify
 
-- [ ] Verification of the specific phrasing regarding 'creative industries' in the 2003 Policy Address.
-- [ ] The timeline of the official establishment of the Central Policy Unit's involvement in cultural research.
+- ❔ Verification of the specific phrasing regarding 'creative industries' in the 2003 Policy Address.
+- ❔ The timeline of the official establishment of the Central Policy Unit's involvement in cultural research.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

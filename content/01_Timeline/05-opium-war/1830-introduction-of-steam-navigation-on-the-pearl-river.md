@@ -39,8 +39,8 @@ Historians widely agree that steam navigation fundamentally altered the strategi
 
 ## Claims to verify
 
-- [ ] Confirm the specific arrival date of the first steamship in the Pearl River.
-- [ ] Verify the impact of steamship smoke/noise on local perceptions as documented in contemporary Qing provincial archives.
-- [ ] Assess the extent to which early steamship usage influenced the decision to prioritize the Hong Kong harbor over other coastal alternatives.
+- ❔ Confirm the specific arrival date of the first steamship in the Pearl River.
+- ❔ Verify the impact of steamship smoke/noise on local perceptions as documented in contemporary Qing provincial archives.
+- ❔ Assess the extent to which early steamship usage influenced the decision to prioritize the Hong Kong harbor over other coastal alternatives.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

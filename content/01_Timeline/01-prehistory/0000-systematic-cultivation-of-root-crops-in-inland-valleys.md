@@ -35,8 +35,8 @@ This period marks a pivotal shift in the subsistence strategy of early Hong Kong
 
 ## Claims to verify
 
-- [ ] The precise identification of the root crop species (taro/yam) via starch analysis.
-- [ ] The dating of inland valley soil strata correlated with mid-to-late Neolithic ceramic types.
-- [ ] The extent to which inland settlement patterns differed from coastal settlement patterns during the second millennium BCE.
+- ❔ The precise identification of the root crop species (taro/yam) via starch analysis.
+- ❔ The dating of inland valley soil strata correlated with mid-to-late Neolithic ceramic types.
+- ❔ The extent to which inland settlement patterns differed from coastal settlement patterns during the second millennium BCE.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

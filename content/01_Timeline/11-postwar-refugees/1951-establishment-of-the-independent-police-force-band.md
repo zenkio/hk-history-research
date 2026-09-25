@@ -35,7 +35,7 @@ The creation of the band reflected a broader shift in colonial governance toward
 
 ## Claims to verify
 
-- [ ] The exact month and formal decree associated with the establishment of the Independent Police Force Band in 1951
-- [ ] The initial composition and repertoire of the band during its first year of operation
+- ❔ The exact month and formal decree associated with the establishment of the Independent Police Force Band in 1951
+- ❔ The initial composition and repertoire of the band during its first year of operation
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

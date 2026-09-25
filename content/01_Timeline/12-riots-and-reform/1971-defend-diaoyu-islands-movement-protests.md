@@ -41,7 +41,7 @@ While the geopolitical outcome of the territorial dispute remained unchanged, th
 
 ## Claims to verify
 
-- [ ] Exact police troop numbers and arrest figures during the July 7, 1971 Victoria Park demonstration
-- [ ] The precise organizational links between overseas Chinese student groups in the US and university student unions in Hong Kong in mid-1971
+- ❔ Exact police troop numbers and arrest figures during the July 7, 1971 Victoria Park demonstration
+- ❔ The precise organizational links between overseas Chinese student groups in the US and university student unions in Hong Kong in mid-1971
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

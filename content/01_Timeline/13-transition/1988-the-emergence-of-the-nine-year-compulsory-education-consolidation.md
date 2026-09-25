@@ -36,7 +36,7 @@ The solidification of nine-year education had profound implications for Hong Kon
 
 ## Claims to verify
 
-- [ ] The specific mandate and influence of the Education Commission report released in 1988 regarding compulsory education.
-- [ ] The exact timeline of when nine-year compulsory education transitioned from 'implementation' to 'consolidation' in government policy documents.
+- ❔ The specific mandate and influence of the Education Commission report released in 1988 regarding compulsory education.
+- ❔ The exact timeline of when nine-year compulsory education transitioned from 'implementation' to 'consolidation' in government policy documents.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

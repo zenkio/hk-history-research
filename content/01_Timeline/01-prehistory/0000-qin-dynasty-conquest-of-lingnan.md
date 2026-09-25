@@ -38,7 +38,7 @@ The Qin conquest marked a profound turning point in the historical trajectory of
 
 ## Claims to verify
 
-- [ ] Did Qin administration exercise direct territorial control over the islands of modern Hong Kong, or was control limited to inland administrative centers like Panyu?
-- [ ] What was the exact military route and strategy employed by Qin forces in the immediate coastal sectors of Nanhai Commandery?
+- ❔ Did Qin administration exercise direct territorial control over the islands of modern Hong Kong, or was control limited to inland administrative centers like Panyu?
+- ❔ What was the exact military route and strategy employed by Qin forces in the immediate coastal sectors of Nanhai Commandery?
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

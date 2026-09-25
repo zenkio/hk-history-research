@@ -35,7 +35,7 @@ The rise of these specialized harvesting practices signifies a profound adaptati
 
 ## Claims to verify
 
-- [ ] Verify the carbon-14 dating ranges associated with major shell midden sites in Hong Kong (e.g., Lamma Island or Tung Wan).
-- [ ] Confirm the specific species identified in shell middens to support the claim of 'specialized' harvesting.
+- ❔ Verify the carbon-14 dating ranges associated with major shell midden sites in Hong Kong (e.g., Lamma Island or Tung Wan).
+- ❔ Confirm the specific species identified in shell middens to support the claim of 'specialized' harvesting.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

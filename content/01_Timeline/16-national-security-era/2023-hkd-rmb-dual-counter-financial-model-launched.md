@@ -40,7 +40,7 @@ Proponents argued that the dual counter model represented a crucial step in the 
 
 ## Claims to verify
 
-- [ ] The HKD-RMB Dual Counter Model was officially launched on June 19, 2023.
-- [ ] Over twenty major companies participated in the initial phase of the dual counter model.
+- ❔ The HKD-RMB Dual Counter Model was officially launched on June 19, 2023.
+- ❔ Over twenty major companies participated in the initial phase of the dual counter model.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

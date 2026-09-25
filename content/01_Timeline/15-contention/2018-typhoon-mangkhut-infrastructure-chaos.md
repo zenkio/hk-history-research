@@ -39,7 +39,7 @@ The aftermath of Typhoon Mangkhut exposed vulnerabilities in Hong Kong's disaste
 
 ## Claims to verify
 
-- [ ] The exact number of downed trees reported by the government following Typhoon Mangkhut
-- [ ] The specific economic loss estimates calculated for Hong Kong after the storm
+- ❔ The exact number of downed trees reported by the government following Typhoon Mangkhut
+- ❔ The specific economic loss estimates calculated for Hong Kong after the storm
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

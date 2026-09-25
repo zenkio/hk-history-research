@@ -38,7 +38,7 @@ The establishment of the office represents a fundamental change in the constitut
 
 ## Claims to verify
 
-- [ ] Verify the specific list of jurisdiction cases handled by the office in its first year.
-- [ ] Confirm the exact legal basis under the Basic Law used to mandate the establishment of the office.
+- ❔ Verify the specific list of jurisdiction cases handled by the office in its first year.
+- ❔ Confirm the exact legal basis under the Basic Law used to mandate the establishment of the office.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

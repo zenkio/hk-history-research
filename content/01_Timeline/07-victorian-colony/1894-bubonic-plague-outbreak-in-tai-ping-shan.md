@@ -40,9 +40,9 @@ The **1894** outbreak resulted in the deaths of over **2,000** people and led to
 
 ## Claims to verify
 
-- [ ] The exact death toll exceeded 2,000 people during the initial 1894 outbreak.
-- [ ] Alexandre Yersin arrived in Hong Kong in May 1894 to independently identify the plague bacillus concurrently with Kitasato Shibasaburo.
-- [ ] The colonial government demolished specific tenement blocks in Tai Ping Shan immediately following the peak of the epidemic.
+- ❔ The exact death toll exceeded 2,000 people during the initial 1894 outbreak.
+- ❔ Alexandre Yersin arrived in Hong Kong in May 1894 to independently identify the plague bacillus concurrently with Kitasato Shibasaburo.
+- ❔ The colonial government demolished specific tenement blocks in Tai Ping Shan immediately following the peak of the epidemic.
 
 ## Research notes
 

@@ -36,8 +36,8 @@ The introduction of television fundamentally altered how local residents consume
 
 ## Claims to verify
 
-- [ ] Did Rediffusion Television officially launch its wired broadcast service on May 29, 1957?
-- [ ] Was Rediffusion Television the first television broadcasting service in Hong Kong and the Chinese-speaking world?
+- ❔ Did Rediffusion Television officially launch its wired broadcast service on May 29, 1957?
+- ❔ Was Rediffusion Television the first television broadcasting service in Hong Kong and the Chinese-speaking world?
 
 ## Evidence
 

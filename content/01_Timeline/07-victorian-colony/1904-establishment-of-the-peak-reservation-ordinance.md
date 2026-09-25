@@ -41,7 +41,7 @@ This ordinance marked a profound turning point in the social and spatial organiz
 
 ## Claims to verify
 
-- [ ] The Peak Reservation Ordinance was officially enacted in the year 1904 under Governor Matthew Nathan.
-- [ ] The legislation explicitly required the Governor's special exemption for non-Europeans to reside in the Peak district.
+- ❔ The Peak Reservation Ordinance was officially enacted in the year 1904 under Governor Matthew Nathan.
+- ❔ The legislation explicitly required the Governor's special exemption for non-Europeans to reside in the Peak district.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

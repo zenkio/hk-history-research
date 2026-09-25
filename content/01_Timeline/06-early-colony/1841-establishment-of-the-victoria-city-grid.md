@@ -38,8 +38,8 @@ The creation of the **Victoria City** grid is widely cited as the moment the col
 
 ## Claims to verify
 
-- [ ] The specific year the grid plan was finalized by the colonial survey office.
-- [ ] The extent to which the 'segregation' of districts was a conscious policy versus an organic market-driven outcome.
-- [ ] The exact boundaries of the original 1841 Victoria City survey.
+- ❔ The specific year the grid plan was finalized by the colonial survey office.
+- ❔ The extent to which the 'segregation' of districts was a conscious policy versus an organic market-driven outcome.
+- ❔ The exact boundaries of the original 1841 Victoria City survey.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

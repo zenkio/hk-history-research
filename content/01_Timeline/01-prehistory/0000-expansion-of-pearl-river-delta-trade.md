@@ -34,7 +34,7 @@ The expansion of trade around **500 BCE** demonstrates that early Hong Kong was 
 
 ## Claims to verify
 
-- [ ] Coastal settlements in Hong Kong participated in regional exchange networks involving pottery and stone ornaments around 500 BCE.
-- [ ] Hard geometric pottery and polished stone tools circulated widely across the Pearl River Delta during this period.
+- ❔ Coastal settlements in Hong Kong participated in regional exchange networks involving pottery and stone ornaments around 500 BCE.
+- ❔ Hard geometric pottery and polished stone tools circulated widely across the Pearl River Delta during this period.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

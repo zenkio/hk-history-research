@@ -37,7 +37,7 @@ The expansion of the electric tram network fundamentally altered urban daily lif
 
 ## Claims to verify
 
-- [ ] Exact timeline of the double-tracking and electrical system upgrades between 1920 and 1925
-- [ ] Direct correlation between the 1922 strikes and tramway operational policy changes
+- ❔ Exact timeline of the double-tracking and electrical system upgrades between 1920 and 1925
+- ❔ Direct correlation between the 1922 strikes and tramway operational policy changes
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

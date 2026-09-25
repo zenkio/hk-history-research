@@ -44,8 +44,8 @@ Tiu Keng Leng became a unique geopolitical anomaly during the Cold War, represen
 
 ## Claims to verify
 
-- [ ] The exact month and formal administrative orders establishing the camp in 1950
-- [ ] The precise initial population figures of refugees relocated to Tiu Keng Leng during the 1950 resettlement operation
+- ❔ The exact month and formal administrative orders establishing the camp in 1950
+- ❔ The precise initial population figures of refugees relocated to Tiu Keng Leng during the 1950 resettlement operation
 
 ## Evidence
 

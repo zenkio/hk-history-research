@@ -35,8 +35,8 @@ The implementation of the 334 academic structure fundamentally reshaped youth ed
 
 ## Claims to verify
 
-- [ ] The 334 academic structure officially commenced across Hong Kong schools and universities on September 3, 2012.
-- [ ] The reform replaced the HKCEE and HKALE with the HKDSE.
-- [ ] The transition resulted in a double cohort of university applicants.
+- ❔ The 334 academic structure officially commenced across Hong Kong schools and universities on September 3, 2012.
+- ❔ The reform replaced the HKCEE and HKALE with the HKDSE.
+- ❔ The transition resulted in a double cohort of university applicants.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

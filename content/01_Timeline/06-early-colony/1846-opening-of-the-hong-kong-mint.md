@@ -37,8 +37,8 @@ The creation of the mint represents an early colonial attempt to assert economic
 
 ## Claims to verify
 
-- [ ] Verify the exact operational lifespan and date of the 1846 mint establishment.
-- [ ] Confirm the specific types of currency produced by the mint in its initial phase.
-- [ ] Assess contemporary primary source records regarding the public reception of the minted coins.
+- ❔ Verify the exact operational lifespan and date of the 1846 mint establishment.
+- ❔ Confirm the specific types of currency produced by the mint in its initial phase.
+- ❔ Assess contemporary primary source records regarding the public reception of the minted coins.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

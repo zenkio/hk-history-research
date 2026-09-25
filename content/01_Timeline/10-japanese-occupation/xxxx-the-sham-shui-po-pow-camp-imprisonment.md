@@ -34,8 +34,8 @@ The camp is often analyzed as a focal point for understanding the transition bet
 
 ## Claims to verify
 
-- [ ] Exact number of Allied prisoners held at the Sham Shui Po site at peak capacity.
-- [ ] The specific timeline of when Indian soldiers were separated from British and Canadian troops in the camp system.
-- [ ] The survival rate statistics for prisoners specifically held at Sham Shui Po versus those transferred to Japan.
+- ❔ Exact number of Allied prisoners held at the Sham Shui Po site at peak capacity.
+- ❔ The specific timeline of when Indian soldiers were separated from British and Canadian troops in the camp system.
+- ❔ The survival rate statistics for prisoners specifically held at Sham Shui Po versus those transferred to Japan.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

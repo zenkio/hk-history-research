@@ -40,7 +40,7 @@ The gardens quickly became a central fixture of Victorian social life in the col
 
 ## Claims to verify
 
-- [ ] Exact completion milestones and operational status of the Hong Kong Botanical Gardens as of August 6, 1871
-- [ ] The extent of public access granted to different ethnic communities during the early years of the gardens
+- ❔ Exact completion milestones and operational status of the Hong Kong Botanical Gardens as of August 6, 1871
+- ❔ The extent of public access granted to different ethnic communities during the early years of the gardens
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

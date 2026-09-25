@@ -43,8 +43,8 @@ The completion of the terminus anchored Kowloon as the colony's primary internat
 
 ## Claims to verify
 
-- [ ] The exact opening date of the Tsim Sha Tsui Railway Terminus was March 28, 1916.
-- [ ] The extent to which construction was fully completed by the date of the formal opening ceremony.
+- ❔ The exact opening date of the Tsim Sha Tsui Railway Terminus was March 28, 1916.
+- ❔ The extent to which construction was fully completed by the date of the formal opening ceremony.
 
 ## Evidence
 

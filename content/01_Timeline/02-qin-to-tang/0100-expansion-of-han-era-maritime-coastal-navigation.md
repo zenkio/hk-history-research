@@ -36,8 +36,8 @@ This period marked the transformation of Hong Kong’s waters from a peripheral 
 
 ## Claims to verify
 
-- [ ] Evidence of specific Han-era navigational charts in the Lingnan region
-- [ ] Degree of indigenous maritime autonomy versus imperial administrative oversight during the 2nd century
-- [ ] Extent of vessel technology changes in the Pearl River Delta during the Eastern Han period
+- ❔ Evidence of specific Han-era navigational charts in the Lingnan region
+- ❔ Degree of indigenous maritime autonomy versus imperial administrative oversight during the 2nd century
+- ❔ Extent of vessel technology changes in the Pearl River Delta during the Eastern Han period
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

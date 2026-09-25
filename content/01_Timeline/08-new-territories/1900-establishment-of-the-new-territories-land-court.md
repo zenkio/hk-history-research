@@ -41,8 +41,8 @@ The creation of the Land Court marked the formal imposition of British property 
 
 ## Claims to verify
 
-- [ ] The Land Court Ordinance was officially enacted in the year 1900.
-- [ ] The primary mandate of the court was the conversion of traditional deeds into Crown leases.
+- ❔ The Land Court Ordinance was officially enacted in the year 1900.
+- ❔ The primary mandate of the court was the conversion of traditional deeds into Crown leases.
 
 ## Research notes
 

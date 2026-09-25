@@ -42,8 +42,8 @@ The mass migration provided a dual economic impact that shaped modern Hong Kong.
 
 ## Claims to verify
 
-- [ ] Exact demographic estimates of the Hong Kong population between 1945 and 1950
-- [ ] The precise chronology and policy shifts of the colonial government regarding border closures
+- ❔ Exact demographic estimates of the Hong Kong population between 1945 and 1950
+- ❔ The precise chronology and policy shifts of the colonial government regarding border closures
 
 ## Evidence
 

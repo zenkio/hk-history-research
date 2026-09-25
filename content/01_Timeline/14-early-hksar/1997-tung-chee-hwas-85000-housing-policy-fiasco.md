@@ -41,8 +41,8 @@ The 85,000 housing policy became a defining misstep of the early HKSAR era, seve
 
 ## Claims to verify
 
-- [ ] Tung Chee-hwa announced the 85,000 housing target in his policy address on October 8, 1997.
-- [ ] Hong Kong property prices dropped by over 50 percent following the Asian Financial Crisis.
-- [ ] The government officially dropped the 85,000 housing target by 2002.
+- ❔ Tung Chee-hwa announced the 85,000 housing target in his policy address on October 8, 1997.
+- ❔ Hong Kong property prices dropped by over 50 percent following the Asian Financial Crisis.
+- ❔ The government officially dropped the 85,000 housing target by 2002.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

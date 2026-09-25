@@ -40,7 +40,7 @@ The formalization of the **Tai O** salt trade marked a critical turning point in
 
 ## Claims to verify
 
-- [ ] The exact administrative mechanisms and dating of the formal salt monopoly establishment at Tai O around 1715.
-- [ ] The degree of direct Qing bureaucratic presence versus proxy management by licensed salt merchants in early 18th-century Lantau.
+- ❔ The exact administrative mechanisms and dating of the formal salt monopoly establishment at Tai O around 1715.
+- ❔ The degree of direct Qing bureaucratic presence versus proxy management by licensed salt merchants in early 18th-century Lantau.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

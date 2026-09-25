@@ -40,7 +40,7 @@ The consolidation of Tin Hau worship marked a crucial development in the cultura
 
 ## Claims to verify
 
-- [ ] The specific proliferation of Tin Hau shrines in the Hong Kong region by approximately 1350.
-- [ ] The precise timeline of the transition of Mazu worship from a strictly Fujianese immigrant cult to the broader local boat-people population during the late Yuan dynasty.
+- ❔ The specific proliferation of Tin Hau shrines in the Hong Kong region by approximately 1350.
+- ❔ The precise timeline of the transition of Mazu worship from a strictly Fujianese immigrant cult to the broader local boat-people population during the late Yuan dynasty.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

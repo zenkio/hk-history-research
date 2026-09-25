@@ -41,8 +41,8 @@ The delay of the election marked a watershed moment in Hong Kong's constitutiona
 
 ## Claims to verify
 
-- [ ] The exact invocation of the Emergency Regulations Ordinance by the Chief Executive on July 31, 2020
-- [ ] The subsequent ruling by the NPCSC regarding the extension of the legislative term
+- ❔ The exact invocation of the Emergency Regulations Ordinance by the Chief Executive on July 31, 2020
+- ❔ The subsequent ruling by the NPCSC regarding the extension of the legislative term
 
 ## Photos from this period
 

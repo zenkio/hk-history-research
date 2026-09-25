@@ -36,7 +36,7 @@ The introduction of the **Octopus card** is widely cited by urban planners and h
 
 ## Claims to verify
 
-- [ ] The exact date the Octopus system reached its first 1 million cards in circulation.
-- [ ] The full list of initial transport operators involved in the joint venture at the time of the 1997 launch.
+- ❔ The exact date the Octopus system reached its first 1 million cards in circulation.
+- ❔ The full list of initial transport operators involved in the joint venture at the time of the 1997 launch.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

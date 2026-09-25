@@ -39,8 +39,8 @@ The campaign fundamentally disrupted the pre-war social order of Hong Kong, thou
 
 ## Claims to verify
 
-- [ ] Specific dates and official decrees related to the renaming of Queen's Road and other major thoroughfares
-- [ ] Exact curriculum mandates imposed on local schools regarding Japanese language instruction
+- ❔ Specific dates and official decrees related to the renaming of Queen's Road and other major thoroughfares
+- ❔ Exact curriculum mandates imposed on local schools regarding Japanese language instruction
 
 ## Evidence
 

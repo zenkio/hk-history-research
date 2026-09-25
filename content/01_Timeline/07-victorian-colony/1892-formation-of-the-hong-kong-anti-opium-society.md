@@ -37,8 +37,8 @@ The formation of the Society represents one of the earliest instances of a local
 
 ## Claims to verify
 
-- [ ] Confirm the exact month and founding date of the Hong Kong Anti-Opium Society in 1892.
-- [ ] Verify the extent of Ho Kai's leadership role within the organization during its inception.
-- [ ] Assess the primary sources regarding the colonial government's formal response to the Society's initial petition.
+- ❔ Confirm the exact month and founding date of the Hong Kong Anti-Opium Society in 1892.
+- ❔ Verify the extent of Ho Kai's leadership role within the organization during its inception.
+- ❔ Assess the primary sources regarding the colonial government's formal response to the Society's initial petition.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -48,8 +48,8 @@ The death of Emperor Duanzong in Mui Wo marked a critical, desperate phase for t
 
 ## Claims to verify
 
-- [ ] Emperor Duanzong died in Mui Wo on May 8, 1278
-- [ ] Zhao Bing was enthroned as Emperor Bing following Duanzong's death
-- [ ] The imperial court stayed in Mui Wo during their flight from Mongol forces
+- ❔ Emperor Duanzong died in Mui Wo on May 8, 1278
+- ❔ Zhao Bing was enthroned as Emperor Bing following Duanzong's death
+- ❔ The imperial court stayed in Mui Wo during their flight from Mongol forces
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -40,8 +40,8 @@ While the project successfully laid the physical foundations for Hong Kong's mod
 
 ## Claims to verify
 
-- [ ] Governor David Wilson officially announced the Port and Airport Development Strategy on October 11, 1989.
-- [ ] The infrastructure package included relocating the airport from Kai Tak to Chek Lap Kok.
-- [ ] Concerns raised by Beijing over financial reserves ultimately led to the 1991 Memorandum of Understanding.
+- ❔ Governor David Wilson officially announced the Port and Airport Development Strategy on October 11, 1989.
+- ❔ The infrastructure package included relocating the airport from Kai Tak to Chek Lap Kok.
+- ❔ Concerns raised by Beijing over financial reserves ultimately led to the 1991 Memorandum of Understanding.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

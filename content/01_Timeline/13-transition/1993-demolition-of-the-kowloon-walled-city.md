@@ -41,9 +41,9 @@ The destruction of the Kowloon Walled City marked a pivotal moment during the tr
 
 ## Claims to verify
 
-- [ ] The exact start date of structural demolition as March 23, 1993
-- [ ] The formal signing date and terms of the Sino-British agreement to demolish the Walled City in 1987
-- [ ] The exact population figures of the Walled City immediately prior to the clearance operations beginning
+- ❔ The exact start date of structural demolition as March 23, 1993
+- ❔ The formal signing date and terms of the Sino-British agreement to demolish the Walled City in 1987
+- ❔ The exact population figures of the Walled City immediately prior to the clearance operations beginning
 
 ## Photos from this period
 

@@ -42,7 +42,7 @@ The proclamation represents the foundational administrative document of British 
 
 ## Claims to verify
 
-- [ ] Captain Charles Elliot issued the specific proclamation to the inhabitants of Hong Kong on January 29, 1841.
-- [ ] The proclamation explicitly promised protection of local property, religious practices, and native customs under British governance.
+- ❔ Captain Charles Elliot issued the specific proclamation to the inhabitants of Hong Kong on January 29, 1841.
+- ❔ The proclamation explicitly promised protection of local property, religious practices, and native customs under British governance.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

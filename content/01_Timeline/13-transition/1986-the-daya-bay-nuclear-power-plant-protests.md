@@ -41,7 +41,7 @@ The Daya Bay protests are widely regarded by historians and political analysts a
 
 ## Claims to verify
 
-- [ ] Exact number of signatures collected in the petition against the Daya Bay Nuclear Power Plant
-- [ ] Specific dates of delegation visits to Beijing in 1986
+- ❔ Exact number of signatures collected in the petition against the Daya Bay Nuclear Power Plant
+- ❔ Specific dates of delegation visits to Beijing in 1986
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

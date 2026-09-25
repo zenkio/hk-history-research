@@ -38,7 +38,7 @@ The establishment of early hospitals marked a critical turning point in the surv
 
 ## Claims to verify
 
-- [ ] Exact operational dates and physical location of the early seamen's hospital facilities in 1842
-- [ ] Mortality rates and specific disease pathologies affecting British troops during the initial occupation of Hong Kong
+- ❔ Exact operational dates and physical location of the early seamen's hospital facilities in 1842
+- ❔ Mortality rates and specific disease pathologies affecting British troops during the initial occupation of Hong Kong
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -39,7 +39,7 @@ The formation of the Corps reflected broader colonial administrative efforts to 
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Hong Kong Sea Cadet Corps as February 12, 1950
-- [ ] The direct involvement and sponsorship of the Royal Navy at the time of establishment
+- ❔ The exact founding date of the Hong Kong Sea Cadet Corps as February 12, 1950
+- ❔ The direct involvement and sponsorship of the Royal Navy at the time of establishment
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

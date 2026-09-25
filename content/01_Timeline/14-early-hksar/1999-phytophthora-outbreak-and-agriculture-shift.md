@@ -37,7 +37,7 @@ The **1999** Phytophthora outbreak served as a critical turning point for Hong K
 
 ## Claims to verify
 
-- [ ] The precise extent of crop loss and economic damage specifically caused by Phytophthora in 1999 compared to general market pressures.
-- [ ] Specific government relief measures or agricultural extension services deployed in response to the 1999 outbreak.
+- ❔ The precise extent of crop loss and economic damage specifically caused by Phytophthora in 1999 compared to general market pressures.
+- ❔ Specific government relief measures or agricultural extension services deployed in response to the 1999 outbreak.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

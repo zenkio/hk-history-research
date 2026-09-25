@@ -37,7 +37,7 @@ The establishment of the Public Enquiry Service Centres marked a notable shift i
 
 ## Claims to verify
 
-- [ ] The exact rollout dates of the Public Enquiry Service Centres across different districts in 1974
-- [ ] The specific administrative department originally tasked with overseeing the centers prior to later reorganization
+- ❔ The exact rollout dates of the Public Enquiry Service Centres across different districts in 1974
+- ❔ The specific administrative department originally tasked with overseeing the centers prior to later reorganization
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -39,7 +39,7 @@ The rise of the Tolo Harbour pearl industry marked an important early integratio
 
 ## Claims to verify
 
-- [ ] Pearl harvesting specifically began to flourish in Tolo Harbour around the year 350.
-- [ ] Jin dynasty administrative records explicitly identify Tai Po waters as a primary source of imperial pearl tribute.
+- ❔ Pearl harvesting specifically began to flourish in Tolo Harbour around the year 350.
+- ❔ Jin dynasty administrative records explicitly identify Tai Po waters as a primary source of imperial pearl tribute.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

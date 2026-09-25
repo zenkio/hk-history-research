@@ -37,7 +37,7 @@ The closure of the museum is viewed by observers as a pivotal moment in the shif
 
 ## Claims to verify
 
-- [ ] The specific sequence of communications between the Food and Environmental Hygiene Department and the Hong Kong Alliance in Support of Patriotic Democratic Movements of China regarding the license.
-- [ ] The official legal status of the items removed from the museum during the investigation.
+- ❔ The specific sequence of communications between the Food and Environmental Hygiene Department and the Hong Kong Alliance in Support of Patriotic Democratic Movements of China regarding the license.
+- ❔ The official legal status of the items removed from the museum during the investigation.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

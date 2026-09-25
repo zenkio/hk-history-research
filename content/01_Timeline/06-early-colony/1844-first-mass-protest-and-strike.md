@@ -43,9 +43,9 @@ This event is widely recognized by historians as the first major instance of col
 
 ## Claims to verify
 
-- [ ] Governor Sir John Francis Davis enacted a specific registration ordinance and poll tax in late 1844.
-- [ ] A coordinated general strike and cessation of commerce occurred on or around November 4, 1844.
-- [ ] The colonial government officially repealed or suspended the ordinance as a direct result of the protests.
+- ❔ Governor Sir John Francis Davis enacted a specific registration ordinance and poll tax in late 1844.
+- ❔ A coordinated general strike and cessation of commerce occurred on or around November 4, 1844.
+- ❔ The colonial government officially repealed or suspended the ordinance as a direct result of the protests.
 
 ## Research notes
 

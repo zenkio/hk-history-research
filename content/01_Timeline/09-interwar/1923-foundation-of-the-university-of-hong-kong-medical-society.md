@@ -36,7 +36,7 @@ The foundation of the Society marked an important milestone in the institutional
 
 ## Claims to verify
 
-- [ ] The University of Hong Kong Medical Society was formally established in 1923.
-- [ ] The Society served as a primary platform for medical students to discuss clinical cases and research.
+- ❔ The University of Hong Kong Medical Society was formally established in 1923.
+- ❔ The Society served as a primary platform for medical students to discuss clinical cases and research.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

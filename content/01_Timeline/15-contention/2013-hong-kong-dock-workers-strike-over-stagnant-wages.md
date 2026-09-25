@@ -42,8 +42,8 @@ The **2013** dock workers strike is widely regarded as a watershed moment in con
 
 ## Claims to verify
 
-- [ ] Did the strike officially begin on March 28, 2013?
-- [ ] Did the final settlement result in a 9.8 percent wage increase?
-- [ ] Were the strikes entirely organized by the Union of Hong Kong Dockers?
+- ❔ Did the strike officially begin on March 28, 2013?
+- ❔ Did the final settlement result in a 9.8 percent wage increase?
+- ❔ Were the strikes entirely organized by the Union of Hong Kong Dockers?
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

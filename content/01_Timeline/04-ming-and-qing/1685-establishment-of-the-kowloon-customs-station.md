@@ -41,7 +41,7 @@ The creation of the Kowloon Customs Station represented an early effort by the Q
 
 ## Claims to verify
 
-- [ ] Exact establishment date and administrative subordination of the Kowloon Customs Station in 1685 relative to the broader Guangdong Maritime Customs network
-- [ ] Primary source documentation detailing the precise physical location of the early Qing-era Kowloon Customs outpost versus its late 19th-century successor
+- ❔ Exact establishment date and administrative subordination of the Kowloon Customs Station in 1685 relative to the broader Guangdong Maritime Customs network
+- ❔ Primary source documentation detailing the precise physical location of the early Qing-era Kowloon Customs outpost versus its late 19th-century successor
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

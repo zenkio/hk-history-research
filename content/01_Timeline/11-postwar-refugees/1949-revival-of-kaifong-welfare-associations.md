@@ -41,7 +41,7 @@ The revival of the *kaifong* associations represented a crucial turning point in
 
 ## Claims to verify
 
-- [ ] The Sham Shui Po Kaifong Association was formally established in November 1949.
-- [ ] The Secretariat for Chinese Affairs actively encouraged and supervised the revival of the kaifong associations.
+- ❔ The Sham Shui Po Kaifong Association was formally established in November 1949.
+- ❔ The Secretariat for Chinese Affairs actively encouraged and supervised the revival of the kaifong associations.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

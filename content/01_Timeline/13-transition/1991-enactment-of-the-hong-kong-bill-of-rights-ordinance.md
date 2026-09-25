@@ -40,8 +40,8 @@ The ordinance represented a watershed moment in Hong Kong legal history, shiftin
 
 ## Claims to verify
 
-- [ ] The Hong Kong Bill of Rights Ordinance was enacted on June 8, 1991.
-- [ ] The ordinance incorporated the International Covenant on Civil and Political Rights into local Hong Kong law.
-- [ ] Beijing authorities criticized the legislation for allegedly overriding other laws improperly.
+- ❔ The Hong Kong Bill of Rights Ordinance was enacted on June 8, 1991.
+- ❔ The ordinance incorporated the International Covenant on Civil and Political Rights into local Hong Kong law.
+- ❔ Beijing authorities criticized the legislation for allegedly overriding other laws improperly.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

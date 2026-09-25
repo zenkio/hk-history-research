@@ -40,7 +40,7 @@ The advent of steam power marked the beginning of a technological shift in South
 
 ## Claims to verify
 
-- [ ] Specific records of steam-powered vessels operating on the Pearl River delta in or around 1828
-- [ ] Official Qing responses to early foreign steam navigation prior to the First Opium War
+- ❔ Specific records of steam-powered vessels operating on the Pearl River delta in or around 1828
+- ❔ Official Qing responses to early foreign steam navigation prior to the First Opium War
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -37,7 +37,7 @@ The shelter represented a major expansion of colonial public works into the Kowl
 
 ## Claims to verify
 
-- [ ] The Mong Kok Tsui Typhoon Shelter was officially completed in 1915.
-- [ ] The construction project was initiated directly in response to the 1906 typhoon.
+- ❔ The Mong Kok Tsui Typhoon Shelter was officially completed in 1915.
+- ❔ The construction project was initiated directly in response to the 1906 typhoon.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

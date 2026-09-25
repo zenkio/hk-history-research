@@ -39,8 +39,8 @@ The completion of the railway fundamentally altered the physical and economic ge
 
 ## Claims to verify
 
-- [ ] Exact date of the Airport Railway's commercial opening
-- [ ] The specific breakdown of project funding between colonial and post-1997 budgets
-- [ ] Inauguration details involving specific government officials
+- ❔ Exact date of the Airport Railway's commercial opening
+- ❔ The specific breakdown of project funding between colonial and post-1997 budgets
+- ❔ Inauguration details involving specific government officials
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

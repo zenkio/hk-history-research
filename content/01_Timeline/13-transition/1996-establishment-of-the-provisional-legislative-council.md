@@ -38,7 +38,7 @@ The creation of the **PLC** represented a direct challenge to the authority of t
 
 ## Claims to verify
 
-- [ ] Exact number of votes cast for each member during the December 21, 1996 selection process.
-- [ ] The full legal justification provided by the British colonial government for challenging the PLC's legitimacy in the Hong Kong courts.
+- ❔ Exact number of votes cast for each member during the December 21, 1996 selection process.
+- ❔ The full legal justification provided by the British colonial government for challenging the PLC's legitimacy in the Hong Kong courts.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

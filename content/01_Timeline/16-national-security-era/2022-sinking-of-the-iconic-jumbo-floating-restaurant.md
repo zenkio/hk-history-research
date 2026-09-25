@@ -44,7 +44,7 @@ The loss of the floating restaurant sparked widespread discussion regarding the 
 
 ## Claims to verify
 
-- [ ] The Jumbo Floating Restaurant capsized and sank near the Paracel Islands on June 19, 2022.
-- [ ] Aberdeen Restaurant Enterprises announced the sinking after encountering adverse weather conditions during towing.
+- ❔ The Jumbo Floating Restaurant capsized and sank near the Paracel Islands on June 19, 2022.
+- ❔ Aberdeen Restaurant Enterprises announced the sinking after encountering adverse weather conditions during towing.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

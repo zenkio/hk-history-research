@@ -44,7 +44,7 @@ The epidemic severely tested the resolve of the early British administration and
 
 ## Claims to verify
 
-- [ ] Exact mortality statistics for British troops during the June 1842 outbreak
-- [ ] Specific engineering and sanitation decrees issued by the colonial government in response to the epidemic
+- ❔ Exact mortality statistics for British troops during the June 1842 outbreak
+- ❔ Specific engineering and sanitation decrees issued by the colonial government in response to the epidemic
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

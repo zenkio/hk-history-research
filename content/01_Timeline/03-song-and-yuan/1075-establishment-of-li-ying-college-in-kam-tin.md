@@ -37,7 +37,7 @@ The founding of Li-Ying College represented a pivotal shift in the cultural land
 
 ## Claims to verify
 
-- [ ] Whether Li-Ying College was specifically founded in the year 1075 or if this date is a later lineage retrojection.
-- [ ] The exact extent of imperial examination success achieved by early Kam Tin scholars during the Song dynasty.
+- ❔ Whether Li-Ying College was specifically founded in the year 1075 or if this date is a later lineage retrojection.
+- ❔ The exact extent of imperial examination success achieved by early Kam Tin scholars during the Song dynasty.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

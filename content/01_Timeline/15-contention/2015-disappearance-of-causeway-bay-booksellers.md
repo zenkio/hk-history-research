@@ -50,8 +50,8 @@ The incident became a watershed moment for Hong Kong's political landscape. It s
 
 ## Claims to verify
 
-- [ ] Lee Bo's exact method of crossing the border without his home return permit
-- [ ] The precise legal justifications provided by mainland authorities for detaining each of the five booksellers
+- ❔ Lee Bo's exact method of crossing the border without his home return permit
+- ❔ The precise legal justifications provided by mainland authorities for detaining each of the five booksellers
 
 ## Photos from this period
 

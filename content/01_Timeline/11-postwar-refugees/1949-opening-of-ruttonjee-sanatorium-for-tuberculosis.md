@@ -37,7 +37,7 @@ The opening of the sanatorium marked a critical turning point in Hong Kong's pub
 
 ## Claims to verify
 
-- [ ] The exact opening date of the Ruttonjee Sanatorium was February 23, 1949.
-- [ ] Tuberculosis was the leading cause of death in postwar Hong Kong.
+- ❔ The exact opening date of the Ruttonjee Sanatorium was February 23, 1949.
+- ❔ Tuberculosis was the leading cause of death in postwar Hong Kong.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

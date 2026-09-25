@@ -36,7 +36,7 @@ The formalization of storage is considered a proxy for social complexity. The ab
 
 ## Claims to verify
 
-- [ ] The precise dating of storage pit clusters at Sha Ha (沙下) archaeological site.
-- [ ] The extent to which subterranean pits in the region were used for grain versus marine product storage.
+- ❔ The precise dating of storage pit clusters at Sha Ha (沙下) archaeological site.
+- ❔ The extent to which subterranean pits in the region were used for grain versus marine product storage.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

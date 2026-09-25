@@ -36,7 +36,7 @@ The foundation of Scholarism marked a turning point in Hong Kong political histo
 
 ## Claims to verify
 
-- [ ] Scholarism was officially founded on May 29, 2011.
-- [ ] The primary initial objective of Scholarism was to oppose the Moral and National Education curriculum.
+- ❔ Scholarism was officially founded on May 29, 2011.
+- ❔ The primary initial objective of Scholarism was to oppose the Moral and National Education curriculum.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

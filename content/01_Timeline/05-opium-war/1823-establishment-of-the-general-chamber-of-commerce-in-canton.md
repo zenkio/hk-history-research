@@ -38,7 +38,7 @@ The formation of the chamber represented a crucial evolution in foreign commerci
 
 ## Claims to verify
 
-- [ ] Specific archival records documenting the exact founding date and formal membership of the 1823 Canton chamber
-- [ ] The precise nature of interactions between the newly formed chamber and the Qing Hoppo
+- ❔ Specific archival records documenting the exact founding date and formal membership of the 1823 Canton chamber
+- ❔ The precise nature of interactions between the newly formed chamber and the Qing Hoppo
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

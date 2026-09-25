@@ -37,7 +37,7 @@ The founding of the Tai O Tin Hau temple is widely cited as a benchmark for the 
 
 ## Claims to verify
 
-- [ ] Whether the Tai O Tin Hau Temple was genuinely established in 1486 or if this date reflects a later reconstruction attributed to an earlier period
-- [ ] The extent of written primary documentation surviving from the Ming dynasty concerning the early phases of the Tai O temple
+- ❔ Whether the Tai O Tin Hau Temple was genuinely established in 1486 or if this date reflects a later reconstruction attributed to an earlier period
+- ❔ The extent of written primary documentation surviving from the Ming dynasty concerning the early phases of the Tai O temple
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

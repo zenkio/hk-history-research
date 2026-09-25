@@ -42,9 +42,9 @@ The outbreak of the First World War marked a significant turning point in Hong K
 
 ## Claims to verify
 
-- [ ] Exact timeline of telegraphic communication arrival in Hong Kong on August 4-5, 1914
-- [ ] Complete inventory of German commercial enterprises confiscated in Hong Kong in 1914
-- [ ] Number of German residents interned immediately following the declaration of war
+- ❔ Exact timeline of telegraphic communication arrival in Hong Kong on August 4-5, 1914
+- ❔ Complete inventory of German commercial enterprises confiscated in Hong Kong in 1914
+- ❔ Number of German residents interned immediately following the declaration of war
 
 ## Evidence
 

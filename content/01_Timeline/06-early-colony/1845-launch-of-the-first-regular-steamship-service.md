@@ -39,7 +39,7 @@ The inauguration of regular steam navigation fundamentally altered the economic 
 
 ## Claims to verify
 
-- [ ] Specific operating company and exact maiden voyage date of the first regular steamship service in 1845
-- [ ] Extent of the displacement of traditional Chinese junk trade by early British-operated steam vessels
+- ❔ Specific operating company and exact maiden voyage date of the first regular steamship service in 1845
+- ❔ Extent of the displacement of traditional Chinese junk trade by early British-operated steam vessels
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -37,8 +37,8 @@ The unification is widely regarded by economic historians as a turning point tha
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the official opening of the unified exchange in 1986.
-- [ ] Confirm the official list of the four founding exchanges that comprised the merger.
-- [ ] Examine legislative records regarding the Stock Exchanges Unification Ordinance.
+- ❔ Verify the specific date of the official opening of the unified exchange in 1986.
+- ❔ Confirm the official list of the four founding exchanges that comprised the merger.
+- ❔ Examine legislative records regarding the Stock Exchanges Unification Ordinance.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

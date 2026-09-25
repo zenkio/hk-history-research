@@ -37,8 +37,8 @@ Historians identify the opening of such theaters as a catalyst for the 'Golden A
 
 ## Claims to verify
 
-- [ ] The exact inauguration date of the Hong Kong Cinema House in 1933.
-- [ ] The primary ownership or corporate backing of the Hong Kong Cinema House at the time of its opening.
-- [ ] The influence of the theater's architectural design on subsequent cinema construction in Hong Kong during the late 1930s.
+- ❔ The exact inauguration date of the Hong Kong Cinema House in 1933.
+- ❔ The primary ownership or corporate backing of the Hong Kong Cinema House at the time of its opening.
+- ❔ The influence of the theater's architectural design on subsequent cinema construction in Hong Kong during the late 1930s.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -46,7 +46,7 @@ Though commercially unsuccessful upon its initial release, *Days of Being Wild* 
 
 ## Claims to verify
 
-- [ ] Days of Being Wild was released in Hong Kong on December 15, 1990.
-- [ ] The film underperformed at the local box office upon its initial release, leading to the cancellation of a planned second part.
+- ❔ Days of Being Wild was released in Hong Kong on December 15, 1990.
+- ❔ The film underperformed at the local box office upon its initial release, leading to the cancellation of a planned second part.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

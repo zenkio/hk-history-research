@@ -43,8 +43,8 @@ The relocation is widely regarded by historians as the foundational moment for W
 
 ## Claims to verify
 
-- [ ] The Morrison Education Society School officially completed its relocation from Macao to Hong Kong in the year 1843.
-- [ ] Yung Wing and Tong King-sing were among the students who attended the school during its early years.
+- ❔ The Morrison Education Society School officially completed its relocation from Macao to Hong Kong in the year 1843.
+- ❔ Yung Wing and Tong King-sing were among the students who attended the school during its early years.
 
 ## Research notes
 

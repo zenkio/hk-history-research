@@ -36,7 +36,7 @@ The creation of **Bao'an County** (**寶安縣**) marks a watershed moment in th
 
 ## Claims to verify
 
-- [ ] Bao'an County was specifically established in the year 331 during the Eastern Jin Dynasty.
-- [ ] The territory of modern Hong Kong was placed under the jurisdiction of Bao'an County upon its creation.
+- ❔ Bao'an County was specifically established in the year 331 during the Eastern Jin Dynasty.
+- ❔ The territory of modern Hong Kong was placed under the jurisdiction of Bao'an County upon its creation.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

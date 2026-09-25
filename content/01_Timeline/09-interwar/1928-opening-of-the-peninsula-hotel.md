@@ -41,7 +41,7 @@ The opening of the Peninsula cemented Kowloon's status as a burgeoning commercia
 
 ## Claims to verify
 
-- [ ] Verify the exact VIP attendees and speeches given at the opening ceremony on December 11, 1928.
-- [ ] Confirm the exact initial room capacity and financial backing structure reported in contemporary colonial registries.
+- ❔ Verify the exact VIP attendees and speeches given at the opening ceremony on December 11, 1928.
+- ❔ Confirm the exact initial room capacity and financial backing structure reported in contemporary colonial registries.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

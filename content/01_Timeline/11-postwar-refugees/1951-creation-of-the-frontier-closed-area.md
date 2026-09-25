@@ -40,7 +40,7 @@ The creation of the Frontier Closed Area marked a critical turning point in the 
 
 ## Claims to verify
 
-- [ ] The exact gazetted date and legal ordinance used to establish the Frontier Closed Area in June 1951
-- [ ] The initial geographic extent and boundaries of the restricted zone when first implemented
+- ❔ The exact gazetted date and legal ordinance used to establish the Frontier Closed Area in June 1951
+- ❔ The initial geographic extent and boundaries of the restricted zone when first implemented
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

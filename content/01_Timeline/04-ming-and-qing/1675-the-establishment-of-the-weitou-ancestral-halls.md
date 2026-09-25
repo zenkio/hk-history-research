@@ -38,7 +38,7 @@ The proliferation of these halls was a strategy for survival and territorial mar
 
 ## Claims to verify
 
-- [ ] Exact correlation between the 1669 return and the 1675 acceleration of ancestral hall construction.
-- [ ] The extent to which Qing administration directly encouraged or formally codified the land-claim function of these specific ancestral halls.
+- ❔ Exact correlation between the 1669 return and the 1675 acceleration of ancestral hall construction.
+- ❔ The extent to which Qing administration directly encouraged or formally codified the land-claim function of these specific ancestral halls.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

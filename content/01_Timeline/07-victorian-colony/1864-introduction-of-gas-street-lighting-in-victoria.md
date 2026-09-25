@@ -37,7 +37,7 @@ The transition to gas lighting significantly transformed nighttime urban life in
 
 ## Claims to verify
 
-- [ ] The exact date of the first gas lighting in Victoria as December 3, 1864
-- [ ] The initial operational capacity and location of the Sheung Wan gasworks plant
+- ❔ The exact date of the first gas lighting in Victoria as December 3, 1864
+- ❔ The initial operational capacity and location of the Sheung Wan gasworks plant
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

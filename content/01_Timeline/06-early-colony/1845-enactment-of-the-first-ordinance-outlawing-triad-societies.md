@@ -42,8 +42,8 @@ This enactment marked the official commencement of the colonial state's long-run
 
 ## Claims to verify
 
-- [ ] Ordinance No. 1 of 1845 was specifically enacted on or around March 1, 1845.
-- [ ] Governor John Francis Davis spearheaded the legislative efforts against secret societies during this period.
+- ❔ Ordinance No. 1 of 1845 was specifically enacted on or around March 1, 1845.
+- ❔ Governor John Francis Davis spearheaded the legislative efforts against secret societies during this period.
 
 ## Research notes
 

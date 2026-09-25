@@ -40,7 +40,7 @@ This electoral milestone fundamentally altered Hong Kong's political landscape b
 
 ## Claims to verify
 
-- [ ] The exact number of functional constituency and electoral college seats contested in the September 26, 1985 Legislative Council elections.
-- [ ] The voter turnout statistics and composition of the electoral college for the 1985 elections.
+- ❔ The exact number of functional constituency and electoral college seats contested in the September 26, 1985 Legislative Council elections.
+- ❔ The voter turnout statistics and composition of the electoral college for the 1985 elections.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -38,7 +38,7 @@ The **Cohong** system functioned as both a facilitator and a bottleneck for inte
 
 ## Claims to verify
 
-- [ ] The exact level of personal liability imposed on Hong merchants for the actions of foreign traders.
-- [ ] The extent to which the Cohong were actively involved in or pressured to facilitate the illegal opium trade by 1825.
+- ❔ The exact level of personal liability imposed on Hong merchants for the actions of foreign traders.
+- ❔ The extent to which the Cohong were actively involved in or pressured to facilitate the illegal opium trade by 1825.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

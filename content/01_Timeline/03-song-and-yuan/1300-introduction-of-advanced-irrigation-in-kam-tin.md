@@ -37,7 +37,7 @@ The adoption of these irrigation systems was pivotal to the socioeconomic develo
 
 ## Claims to verify
 
-- [ ] The precise timeframe of the construction of the earliest irrigation channels in Kam Tin.
-- [ ] Archaeological evidence confirming the specific engineering techniques employed by the Tang clan during the early 14th century.
+- ❔ The precise timeframe of the construction of the earliest irrigation channels in Kam Tin.
+- ❔ Archaeological evidence confirming the specific engineering techniques employed by the Tang clan during the early 14th century.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

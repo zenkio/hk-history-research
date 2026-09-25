@@ -37,8 +37,8 @@ The establishment of the Sailors' Home marked an early attempt by the colonial a
 
 ## Claims to verify
 
-- [ ] Confirm the exact opening date of the Sailors' Home in 1875.
-- [ ] Verify the extent of government funding versus private subscription for the building of the facility.
-- [ ] Ascertain the specific location within West Point where the original 1875 structure was built.
+- ❔ Confirm the exact opening date of the Sailors' Home in 1875.
+- ❔ Verify the extent of government funding versus private subscription for the building of the facility.
+- ❔ Ascertain the specific location within West Point where the original 1875 structure was built.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

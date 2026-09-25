@@ -39,7 +39,7 @@ The adoption of bark cloth manufacturing represents a major milestone in the tec
 
 ## Claims to verify
 
-- [ ] Stone grooved beaters from Hong Kong sites date specifically to around c. 3000 BCE.
-- [ ] The grooved stone implements found in local strata were functionally used exclusively or primarily for bark cloth manufacturing.
+- ❔ Stone grooved beaters from Hong Kong sites date specifically to around c. 3000 BCE.
+- ❔ The grooved stone implements found in local strata were functionally used exclusively or primarily for bark cloth manufacturing.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

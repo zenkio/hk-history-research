@@ -35,7 +35,7 @@ This fiscal measure marked a critical phase of intensified economic exploitation
 
 ## Claims to verify
 
-- [ ] Specific legislation date and exact tax rates implemented in February 1944 regarding urban property.
-- [ ] Total volume of military yen collected through these specific property and municipal taxes.
+- ❔ Specific legislation date and exact tax rates implemented in February 1944 regarding urban property.
+- ❔ Total volume of military yen collected through these specific property and municipal taxes.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

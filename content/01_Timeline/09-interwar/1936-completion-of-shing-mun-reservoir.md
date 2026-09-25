@@ -39,8 +39,8 @@ The completion of the Shing Mun Reservoir marked a major milestone in Hong Kong'
 
 ## Claims to verify
 
-- [ ] Did the official opening ceremony take place precisely on January 30, 1936?
-- [ ] What were the exact displacement figures for local villagers in the Shing Mun valley?
+- ❔ Did the official opening ceremony take place precisely on January 30, 1936?
+- ❔ What were the exact displacement figures for local villagers in the Shing Mun valley?
 
 ## Evidence
 

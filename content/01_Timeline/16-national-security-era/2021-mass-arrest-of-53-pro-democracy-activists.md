@@ -45,8 +45,8 @@ The mass arrests marked a decisive turning point in Hong Kong's political landsc
 
 ## Claims to verify
 
-- [ ] Over 1,000 police officers were mobilized during the January 6, 2021 raids.
-- [ ] Exactly 53 pro-democracy figures were arrested on January 6, 2021.
-- [ ] More than 600,000 residents participated in the July 2020 primary election.
+- ❔ Over 1,000 police officers were mobilized during the January 6, 2021 raids.
+- ❔ Exactly 53 pro-democracy figures were arrested on January 6, 2021.
+- ❔ More than 600,000 residents participated in the July 2020 primary election.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

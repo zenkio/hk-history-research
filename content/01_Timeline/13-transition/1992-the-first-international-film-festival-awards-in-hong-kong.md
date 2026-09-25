@@ -36,7 +36,7 @@ The creation of formalized international film awards in Hong Kong underscored th
 
 ## Claims to verify
 
-- [ ] Verify the exact date of April 10, 1992, in relation to the specific international film awards ceremony held in Hong Kong that year.
-- [ ] Confirm the official name and founding details of the inaugural international film awards event established in Hong Kong in 1992.
+- ❔ Verify the exact date of April 10, 1992, in relation to the specific international film awards ceremony held in Hong Kong that year.
+- ❔ Confirm the official name and founding details of the inaugural international film awards event established in Hong Kong in 1992.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -38,6 +38,6 @@ The establishment of the Yuen Long Kau Hui illustrates how local elite lineages 
 
 ## Claims to verify
 
-- [ ] Did the Tang lineage officially establish the Yuen Long Kau Hui immediately following the lifting of the Great Clearance in 1669, or did market activity develop somewhat later in the Qing period?
+- ❔ Did the Tang lineage officially establish the Yuen Long Kau Hui immediately following the lifting of the Great Clearance in 1669, or did market activity develop somewhat later in the Qing period?
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

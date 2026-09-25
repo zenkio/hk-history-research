@@ -45,9 +45,9 @@ The **May Exodus** (逃港潮) marked a turning point in Hong Kong's demographic
 
 ## Claims to verify
 
-- [ ] Exact daily tallies of border crossers during May 1962
-- [ ] The precise number of forced repatriations conducted by colonial authorities
-- [ ] The degree of tacit official permission given by Guangdong authorities during the initial surge
+- ❔ Exact daily tallies of border crossers during May 1962
+- ❔ The precise number of forced repatriations conducted by colonial authorities
+- ❔ The degree of tacit official permission given by Guangdong authorities during the initial surge
 
 ## Evidence
 

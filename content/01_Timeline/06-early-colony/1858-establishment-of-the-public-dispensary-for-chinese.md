@@ -39,7 +39,7 @@ The establishment of the dispensary is widely viewed as a foundational moment in
 
 ## Claims to verify
 
-- [ ] The Public Dispensary for Chinese was officially established in the year 1858.
-- [ ] The dispensary was created specifically to target health disparities affecting the impoverished Chinese population.
+- ❔ The Public Dispensary for Chinese was officially established in the year 1858.
+- ❔ The dispensary was created specifically to target health disparities affecting the impoverished Chinese population.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -37,7 +37,7 @@ The establishment of the Supreme Court was a pivotal moment in the institutional
 
 ## Claims to verify
 
-- [ ] The Supreme Court of Hong Kong held its first meeting on October 30, 1841.
-- [ ] Charles Elliot implemented temporary governance arrangements prior to the establishment of the court.
+- ❔ The Supreme Court of Hong Kong held its first meeting on October 30, 1841.
+- ❔ Charles Elliot implemented temporary governance arrangements prior to the establishment of the court.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

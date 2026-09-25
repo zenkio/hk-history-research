@@ -37,8 +37,8 @@ This era marked a fundamental shift in Hong Kong’s legislative culture. The in
 
 ## Claims to verify
 
-- [ ] Number of quorum counts requested during the 2015-2016 legislative session.
-- [ ] Specific proposals by the pro-establishment camp to amend the Rules of Procedure in 2016.
-- [ ] The official definition of filibustering according to the Legislative Council Secretariat during this period.
+- ❔ Number of quorum counts requested during the 2015-2016 legislative session.
+- ❔ Specific proposals by the pro-establishment camp to amend the Rules of Procedure in 2016.
+- ❔ The official definition of filibustering according to the Legislative Council Secretariat during this period.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -39,8 +39,8 @@ The activities of these intellectuals significantly politicized Hong Kong’s ur
 
 ## Claims to verify
 
-- [ ] Confirm the specific arrival dates of core National Salvation Association leadership in Hong Kong in 1939.
-- [ ] Verify the extent of the Colonial Secretariat's secret directives regarding the management of anti-Japanese cultural associations during the 1937-1941 period.
-- [ ] Determine the number of registered newspapers in Hong Kong that were directly affiliated with or influenced by the National Salvation Association.
+- ❔ Confirm the specific arrival dates of core National Salvation Association leadership in Hong Kong in 1939.
+- ❔ Verify the extent of the Colonial Secretariat's secret directives regarding the management of anti-Japanese cultural associations during the 1937-1941 period.
+- ❔ Determine the number of registered newspapers in Hong Kong that were directly affiliated with or influenced by the National Salvation Association.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

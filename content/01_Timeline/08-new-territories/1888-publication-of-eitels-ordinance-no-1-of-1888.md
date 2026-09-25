@@ -38,7 +38,7 @@ This legislation marked a turning point in the urban development and social stra
 
 ## Claims to verify
 
-- [ ] Exact legislative wording and provisions of Ordinance No. 1 of 1888 regarding residential restrictions
-- [ ] The precise extent of Ernest John Eitel's authorship and influence over the final text of the ordinance
+- ❔ Exact legislative wording and provisions of Ordinance No. 1 of 1888 regarding residential restrictions
+- ❔ The precise extent of Ernest John Eitel's authorship and influence over the final text of the ordinance
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

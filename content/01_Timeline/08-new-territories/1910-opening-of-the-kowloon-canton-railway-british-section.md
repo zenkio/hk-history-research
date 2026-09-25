@@ -44,8 +44,8 @@ The opening of the railway modernized regional transport and physically bound th
 
 ## Claims to verify
 
-- [ ] Verify the exact passenger and freight volume during the first month of operation in October 1910.
-- [ ] Confirm the precise contractual agreements between the British colonial government and the Qing dynasty regarding the cross-border railway connection.
+- ❔ Verify the exact passenger and freight volume during the first month of operation in October 1910.
+- ❔ Confirm the precise contractual agreements between the British colonial government and the Qing dynasty regarding the cross-border railway connection.
 
 ## Photos from this period
 

@@ -37,7 +37,7 @@ The legal victory is widely regarded by scholars as a watershed moment for civic
 
 ## Claims to verify
 
-- [ ] The exact date of the court ruling as January 9, 2003.
-- [ ] The specific legal arguments used in the Court of First Instance ruling regarding the Protection of the Harbour Ordinance.
+- ❔ The exact date of the court ruling as January 9, 2003.
+- ❔ The specific legal arguments used in the Court of First Instance ruling regarding the Protection of the Harbour Ordinance.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

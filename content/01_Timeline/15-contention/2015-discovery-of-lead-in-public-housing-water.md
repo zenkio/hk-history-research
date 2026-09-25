@@ -39,7 +39,7 @@ The lead water scandal severely damaged public trust in government oversight, ho
 
 ## Claims to verify
 
-- [ ] The Democratic Party publicly announced the test results for Kai Ching Estate on July 10, 2015.
-- [ ] Excessive lead levels were officially confirmed in multiple public housing estates including Kwai Luen Estate.
+- ❔ The Democratic Party publicly announced the test results for Kai Ching Estate on July 10, 2015.
+- ❔ Excessive lead levels were officially confirmed in multiple public housing estates including Kwai Luen Estate.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

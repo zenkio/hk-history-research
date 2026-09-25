@@ -40,8 +40,8 @@ The arrival of American competition fundamentally altered the dynamics of the Ca
 
 ## Claims to verify
 
-- [ ] The specific market share percentage of American versus British trade in Canton in 1828.
-- [ ] The extent to which American firms utilized Lintin Island as an unofficial transshipment hub compared to British firms.
-- [ ] The regulatory impact of the arrival of American commercial agents on the Qing Co-hong (公行) system.
+- ❔ The specific market share percentage of American versus British trade in Canton in 1828.
+- ❔ The extent to which American firms utilized Lintin Island as an unofficial transshipment hub compared to British firms.
+- ❔ The regulatory impact of the arrival of American commercial agents on the Qing Co-hong (公行) system.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

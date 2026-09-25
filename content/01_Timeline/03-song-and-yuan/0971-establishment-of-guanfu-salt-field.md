@@ -35,7 +35,7 @@ The establishment of the Guanfu Salt Field marks a critical turning point in the
 
 ## Claims to verify
 
-- [ ] The Guanfu Salt Field was officially established specifically in the year 971.
-- [ ] The administrative jurisdiction of the Guanfu Salt Field covered the modern Kowloon Bay area during the early Song dynasty.
+- ❔ The Guanfu Salt Field was officially established specifically in the year 971.
+- ❔ The administrative jurisdiction of the Guanfu Salt Field covered the modern Kowloon Bay area during the early Song dynasty.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

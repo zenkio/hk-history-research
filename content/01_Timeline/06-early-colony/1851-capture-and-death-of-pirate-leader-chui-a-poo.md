@@ -41,7 +41,7 @@ The downfall of **Chui A-poo** marked a significant, albeit partial, milestone i
 
 ## Claims to verify
 
-- [ ] Chui A-poo was captured in the year 1851.
-- [ ] Chui A-poo died in colonial custody prior to the conclusion of his trial.
+- ❔ Chui A-poo was captured in the year 1851.
+- ❔ Chui A-poo died in colonial custody prior to the conclusion of his trial.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

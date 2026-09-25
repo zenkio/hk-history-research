@@ -37,8 +37,8 @@ In **412**, **Faxian** boarded a merchant vessel in India bound for Guangzhou (�
 
 ## Claims to verify
 
-- [ ] Faxian's ship reached the coast of China in the year 412.
-- [ ] Faxian authored the text known as A Record of Buddhist Kingdoms (佛國記).
-- [ ] The maritime shipping lanes utilized during the Eastern Jin passed directly through the waters surrounding modern Hong Kong.
+- ❔ Faxian's ship reached the coast of China in the year 412.
+- ❔ Faxian authored the text known as A Record of Buddhist Kingdoms (佛國記).
+- ❔ The maritime shipping lanes utilized during the Eastern Jin passed directly through the waters surrounding modern Hong Kong.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -39,8 +39,8 @@ The Cyberport incident became a flashpoint for debates concerning 'crony capital
 
 ## Claims to verify
 
-- [ ] The specific date of the official announcement in March 1999.
-- [ ] The exact contractual details of the public-private partnership agreement.
-- [ ] Records of the Legislative Council debates following the announcement.
+- ❔ The specific date of the official announcement in March 1999.
+- ❔ The exact contractual details of the public-private partnership agreement.
+- ❔ Records of the Legislative Council debates following the announcement.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

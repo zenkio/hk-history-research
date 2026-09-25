@@ -40,7 +40,7 @@ The opening of the hotel is traditionally seen by historians as a milestone in t
 
 ## Claims to verify
 
-- [ ] The exact opening date and month of the Hongkong Hotel in 1868
-- [ ] The original location and architectural details of the first Hongkong Hotel building before the 1901 fire
+- ❔ The exact opening date and month of the Hongkong Hotel in 1868
+- ❔ The original location and architectural details of the first Hongkong Hotel building before the 1901 fire
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

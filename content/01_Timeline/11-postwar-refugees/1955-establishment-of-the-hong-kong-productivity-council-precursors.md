@@ -36,7 +36,7 @@ These early modernization efforts marked a critical pivot in Hong Kong's economi
 
 ## Claims to verify
 
-- [ ] Specific advisory committees or institutional precursors active in 1955 that directly contributed to the formation of the Hong Kong Productivity Council.
-- [ ] The extent of formal colonial government funding and coordination for industrial modernization prior to the official founding of the HKPC in 1967.
+- ❔ Specific advisory committees or institutional precursors active in 1955 that directly contributed to the formation of the Hong Kong Productivity Council.
+- ❔ The extent of formal colonial government funding and coordination for industrial modernization prior to the official founding of the HKPC in 1967.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

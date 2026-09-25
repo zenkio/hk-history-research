@@ -38,7 +38,7 @@ The implementation of the co-location arrangement marked a major milestone in ph
 
 ## Claims to verify
 
-- [ ] The Guangzhou-Shenzhen-Hong Kong Express Rail Link officially opened on September 23, 2018.
-- [ ] The co-location scheme established a Mainland Port Area within West Kowloon Station subject to mainland Chinese jurisdiction.
+- ❔ The Guangzhou-Shenzhen-Hong Kong Express Rail Link officially opened on September 23, 2018.
+- ❔ The co-location scheme established a Mainland Port Area within West Kowloon Station subject to mainland Chinese jurisdiction.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -38,7 +38,7 @@ This period marked a turning point in Hong Kong’s political culture, as studen
 
 ## Claims to verify
 
-- [ ] Whether the HKFS formally adopted the name 'Pro-Democracy Movement' in 1987 or if it was a descriptive label for their ongoing campaigns.
-- [ ] The exact influence of student lobbying on the specific clauses of the 1988 White Paper on representative government.
+- ❔ Whether the HKFS formally adopted the name 'Pro-Democracy Movement' in 1987 or if it was a descriptive label for their ongoing campaigns.
+- ❔ The exact influence of student lobbying on the specific clauses of the 1988 White Paper on representative government.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

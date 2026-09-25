@@ -36,6 +36,6 @@ The establishment of early coastal market towns laid the socioeconomic foundatio
 
 ## Claims to verify
 
-- [ ] Whether regularized periodic markets specifically began forming in the Hong Kong region between 1330 and 1340, or if this represents a broader continuum of commercial development during the late Yuan period.
+- ❔ Whether regularized periodic markets specifically began forming in the Hong Kong region between 1330 and 1340, or if this represents a broader continuum of commercial development during the late Yuan period.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

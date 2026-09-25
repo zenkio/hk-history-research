@@ -36,7 +36,7 @@ The initiation of these consultations signaled a fundamental change in the relat
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the first formal government consultation paper or legislative panel discussion regarding minimum wage in 2006.
-- [ ] Confirm the exact timeline of the transition from the Wage Protection Movement to the formal legislative process.
+- ❔ Verify the specific date of the first formal government consultation paper or legislative panel discussion regarding minimum wage in 2006.
+- ❔ Confirm the exact timeline of the transition from the Wage Protection Movement to the formal legislative process.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

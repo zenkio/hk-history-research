@@ -38,7 +38,7 @@ The establishment of the school is widely viewed by historians as a physical man
 
 ## Claims to verify
 
-- [ ] Was the Sha Tin Government Secondary School precisely the first secondary school to open in the Sha Tin new town?
-- [ ] What was the exact initial enrollment figure on September 1, 1980?
+- ❔ Was the Sha Tin Government Secondary School precisely the first secondary school to open in the Sha Tin new town?
+- ❔ What was the exact initial enrollment figure on September 1, 1980?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

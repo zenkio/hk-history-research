@@ -41,7 +41,7 @@ The environmental devastation of the occupation years created a legacy that took
 
 ## Claims to verify
 
-- [ ] Specific volume or tonnage of timber harvested from Hong Kong hillsides between 1942 and 1945.
-- [ ] Exact administrative orders issued by the Japanese military regarding authorized logging areas.
+- ❔ Specific volume or tonnage of timber harvested from Hong Kong hillsides between 1942 and 1945.
+- ❔ Exact administrative orders issued by the Japanese military regarding authorized logging areas.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

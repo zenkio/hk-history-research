@@ -39,7 +39,7 @@ The campaign marked a turning point in government-led civic mobilization and pub
 
 ## Claims to verify
 
-- [ ] The Clean Hong Kong campaign was officially launched on November 1, 1972.
-- [ ] Miss Lap Sap and Lap Sap Chung were introduced as mascots during this period.
+- ❔ The Clean Hong Kong campaign was officially launched on November 1, 1972.
+- ❔ Miss Lap Sap and Lap Sap Chung were introduced as mascots during this period.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

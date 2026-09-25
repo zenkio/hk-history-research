@@ -46,8 +46,8 @@ The successful hosting of the equestrian events is widely viewed by historians a
 
 ## Claims to verify
 
-- [ ] The equestrian events were officially relocated to Hong Kong due to equine disease and quarantine requirements.
-- [ ] The Hong Kong Jockey Club funded and constructed the primary competition venues at Sha Tin and Beas River.
-- [ ] The events took place between August 9 and August 20, 2008.
+- ❔ The equestrian events were officially relocated to Hong Kong due to equine disease and quarantine requirements.
+- ❔ The Hong Kong Jockey Club funded and constructed the primary competition venues at Sha Tin and Beas River.
+- ❔ The events took place between August 9 and August 20, 2008.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

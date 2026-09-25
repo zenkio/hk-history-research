@@ -45,7 +45,7 @@ The rescission of the Great Clearance marked a crucial turning point in the demo
 
 ## Claims to verify
 
-- [ ] Did officials Zhou Yide and Wang Lairen jointly submit the primary memorial leading directly to the 1669 rescission?
-- [ ] What exact proportion of the evacuated population returned versus settling elsewhere permanently?
+- ❔ Did officials Zhou Yide and Wang Lairen jointly submit the primary memorial leading directly to the 1669 rescission?
+- ❔ What exact proportion of the evacuated population returned versus settling elsewhere permanently?
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

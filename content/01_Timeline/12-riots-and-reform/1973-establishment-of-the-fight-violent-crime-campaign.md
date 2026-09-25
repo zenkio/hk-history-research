@@ -37,7 +37,7 @@ Historians generally view the campaign as a watershed moment in the relationship
 
 ## Claims to verify
 
-- [ ] Did the Fight Violent Crime Campaign officially launch precisely on February 1, 1973?
-- [ ] What specific media channels were most effective in the initial rollout of the public mobilization strategy?
+- ❔ Did the Fight Violent Crime Campaign officially launch precisely on February 1, 1973?
+- ❔ What specific media channels were most effective in the initial rollout of the public mobilization strategy?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

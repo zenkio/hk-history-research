@@ -34,7 +34,7 @@ The adoption of wet-rice farming was a pivotal moment in the environmental and s
 
 ## Claims to verify
 
-- [ ] Correlation between Han administration expansion and agricultural intensification in the Pearl River Delta
-- [ ] Archaeological evidence dating the shift to wet-rice paddies specifically to 200-100 BCE in Hong Kong sites
+- ❔ Correlation between Han administration expansion and agricultural intensification in the Pearl River Delta
+- ❔ Archaeological evidence dating the shift to wet-rice paddies specifically to 200-100 BCE in Hong Kong sites
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

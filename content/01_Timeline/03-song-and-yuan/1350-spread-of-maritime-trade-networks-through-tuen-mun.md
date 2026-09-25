@@ -38,7 +38,7 @@ The integration of **Tuen Mun** into broader maritime trade networks highlights 
 
 ## Claims to verify
 
-- [ ] Specific volume and frequency of international merchant vessels stopping at Tuen Mun between 1350 and 1360
-- [ ] Exact administrative jurisdiction and naval presence maintained by the Yuan government in the Tuen Mun area during the mid-14th century
+- ❔ Specific volume and frequency of international merchant vessels stopping at Tuen Mun between 1350 and 1360
+- ❔ Exact administrative jurisdiction and naval presence maintained by the Yuan government in the Tuen Mun area during the mid-14th century
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -47,7 +47,7 @@ The dissolution of the Hong Kong Alliance marked a major turning point in Hong K
 
 ## Claims to verify
 
-- [ ] The exact vote tally among Alliance members to dissolve on September 25, 2021
-- [ ] The formal legal notices and correspondence exchanged between the Hong Kong Police Force and the Alliance regarding the 'foreign agent' designation
+- ❔ The exact vote tally among Alliance members to dissolve on September 25, 2021
+- ❔ The formal legal notices and correspondence exchanged between the Hong Kong Police Force and the Alliance regarding the 'foreign agent' designation
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

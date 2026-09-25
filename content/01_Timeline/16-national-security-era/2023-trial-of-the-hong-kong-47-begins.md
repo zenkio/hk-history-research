@@ -42,7 +42,7 @@ The trial represents the largest single prosecution under the National Security 
 
 ## Claims to verify
 
-- [ ] The exact number of defendants who pleaded guilty versus those who maintained their innocence at the start of the trial on February 6, 2023.
-- [ ] The procedural composition of the three-judge panel hearing the case without a jury under the National Security Law.
+- ❔ The exact number of defendants who pleaded guilty versus those who maintained their innocence at the start of the trial on February 6, 2023.
+- ❔ The procedural composition of the three-judge panel hearing the case without a jury under the National Security Law.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -39,7 +39,7 @@ The introduction of cord-marked pottery is widely viewed by archaeologists as a 
 
 ## Claims to verify
 
-- [ ] Coarse cord-marked pottery production in the Hong Kong region dates back approximately to 35000 BCE.
-- [ ] Cord-wrapped paddles were used to impress patterns onto wet clay by early artisans in southern China.
+- ❔ Coarse cord-marked pottery production in the Hong Kong region dates back approximately to 35000 BCE.
+- ❔ Cord-wrapped paddles were used to impress patterns onto wet clay by early artisans in southern China.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

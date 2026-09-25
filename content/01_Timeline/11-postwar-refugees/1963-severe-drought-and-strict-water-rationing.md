@@ -43,7 +43,7 @@ The **1963** drought served as a harsh turning point in Hong Kong's infrastructu
 
 ## Claims to verify
 
-- [ ] Mains water supply was restricted to four hours every four days starting in May 1963.
-- [ ] Emergency water import agreements were officially negotiated and executed with Guangdong authorities during the 1963 crisis.
+- ❔ Mains water supply was restricted to four hours every four days starting in May 1963.
+- ❔ Emergency water import agreements were officially negotiated and executed with Guangdong authorities during the 1963 crisis.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

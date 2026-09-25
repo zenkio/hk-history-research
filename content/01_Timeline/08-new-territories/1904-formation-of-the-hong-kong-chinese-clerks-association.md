@@ -37,8 +37,8 @@ The formation of this association is significant because it marks the institutio
 
 ## Claims to verify
 
-- [ ] The exact date of formal registration for the Hong Kong Chinese Clerks Association.
-- [ ] The original charter or stated objectives of the association as reported in contemporary newspapers like the China Mail.
-- [ ] The membership overlap between the association and other contemporary professional organizations.
+- ❔ The exact date of formal registration for the Hong Kong Chinese Clerks Association.
+- ❔ The original charter or stated objectives of the association as reported in contemporary newspapers like the China Mail.
+- ❔ The membership overlap between the association and other contemporary professional organizations.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

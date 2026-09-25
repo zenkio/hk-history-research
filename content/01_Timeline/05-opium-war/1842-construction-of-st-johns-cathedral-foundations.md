@@ -40,7 +40,7 @@ The construction of the cathedral foundations carried multiple layers of meaning
 
 ## Claims to verify
 
-- [ ] Exact date of the initial ground-breaking or foundation laying for St. John's Cathedral in 1842
-- [ ] The precise land grant allocation process overseen by Sir Henry Pottinger for Anglican church use
+- ❔ Exact date of the initial ground-breaking or foundation laying for St. John's Cathedral in 1842
+- ❔ The precise land grant allocation process overseen by Sir Henry Pottinger for Anglican church use
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

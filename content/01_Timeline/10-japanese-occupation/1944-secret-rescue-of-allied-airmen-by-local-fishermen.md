@@ -45,7 +45,7 @@ For decades, mainstream historical narratives primarily credited formal military
 
 ## Claims to verify
 
-- [ ] The precise number of American airmen rescued by local fishermen in Hong Kong waters during 1944
-- [ ] The exact coordination mechanisms between independent fishermen and the East River Column during maritime evacuations
+- ❔ The precise number of American airmen rescued by local fishermen in Hong Kong waters during 1944
+- ❔ The exact coordination mechanisms between independent fishermen and the East River Column during maritime evacuations
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

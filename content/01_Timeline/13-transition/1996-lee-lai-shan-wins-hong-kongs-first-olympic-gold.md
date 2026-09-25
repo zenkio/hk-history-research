@@ -41,7 +41,7 @@ The victory was met with immense jubilation across Hong Kong, temporarily oversh
 
 ## Claims to verify
 
-- [ ] Lee Lai-shan won Hong Kong's first Olympic gold medal on July 29, 1996.
-- [ ] The victory took place at the Atlanta Olympic Games sailing events in Savannah, Georgia.
+- ❔ Lee Lai-shan won Hong Kong's first Olympic gold medal on July 29, 1996.
+- ❔ The victory took place at the Atlanta Olympic Games sailing events in Savannah, Georgia.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

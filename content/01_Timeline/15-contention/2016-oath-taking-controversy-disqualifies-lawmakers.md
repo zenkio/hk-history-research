@@ -45,8 +45,8 @@ The oath-taking controversy marked a major turning point in Hong Kong's politica
 
 ## Claims to verify
 
-- [ ] The NPC Standing Committee issued an interpretation of Basic Law Article 104 in November 2016.
-- [ ] Six legislators were ultimately disqualified through court rulings stemming from the oath-taking ceremony on October 12, 2016.
+- ❔ The NPC Standing Committee issued an interpretation of Basic Law Article 104 in November 2016.
+- ❔ Six legislators were ultimately disqualified through court rulings stemming from the oath-taking ceremony on October 12, 2016.
 
 ## Photos from this period
 

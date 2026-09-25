@@ -38,7 +38,7 @@ The launch of public radio represented a major milestone in Hong Kong's media hi
 
 ## Claims to verify
 
-- [ ] The exact launch date of station GOW as June 30, 1928
-- [ ] The initial callsign being GOW before transitioning to ZBW
+- ❔ The exact launch date of station GOW as June 30, 1928
+- ❔ The initial callsign being GOW before transitioning to ZBW
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

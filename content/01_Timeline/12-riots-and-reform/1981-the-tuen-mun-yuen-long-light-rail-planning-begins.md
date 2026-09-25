@@ -38,7 +38,7 @@ The initiation of the light rail project marked a pivotal moment in the physical
 
 ## Claims to verify
 
-- [ ] The exact start date of the formal consultancy for the Light Rail project in 1981.
-- [ ] The extent of local community resistance specifically documented during the 1981 planning phase.
+- ❔ The exact start date of the formal consultancy for the Light Rail project in 1981.
+- ❔ The extent of local community resistance specifically documented during the 1981 planning phase.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -43,8 +43,8 @@ The scandal laid bare the fragility and compromised integrity of the early colon
 
 ## Claims to verify
 
-- [ ] Specific charges brought by Attorney General Thomas Chisholm Anstey against Daniel Caldwell in 1858
-- [ ] The precise nature of the official findings and the Colonial Office's final disciplinary decisions regarding Caldwell and Anstey
+- ❔ Specific charges brought by Attorney General Thomas Chisholm Anstey against Daniel Caldwell in 1858
+- ❔ The precise nature of the official findings and the Colonial Office's final disciplinary decisions regarding Caldwell and Anstey
 
 ## Research notes
 

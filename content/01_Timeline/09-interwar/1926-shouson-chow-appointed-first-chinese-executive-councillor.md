@@ -40,7 +40,7 @@ This appointment is widely viewed as a symbolic turning point in colonial govern
 
 ## Claims to verify
 
-- [ ] Sir Shouson Chow was officially appointed to the Executive Council on July 9, 1926.
-- [ ] Shouson Chow was the first Chinese member to sit on the Executive Council of Hong Kong.
+- ❔ Sir Shouson Chow was officially appointed to the Executive Council on July 9, 1926.
+- ❔ Shouson Chow was the first Chinese member to sit on the Executive Council of Hong Kong.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

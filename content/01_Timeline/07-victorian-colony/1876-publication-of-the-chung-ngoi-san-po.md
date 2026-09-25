@@ -38,7 +38,7 @@ The rise of the Chinese-language press in this era is widely viewed by historian
 
 ## Claims to verify
 
-- [ ] The specific operational independence of the Chung Ngoi San Po from the Hong Kong Daily Press in 1876
-- [ ] The exact editorial stance of the Chung Ngoi San Po regarding the Qing Self-Strengthening Movement
+- ❔ The specific operational independence of the Chung Ngoi San Po from the Hong Kong Daily Press in 1876
+- ❔ The exact editorial stance of the Chung Ngoi San Po regarding the Qing Self-Strengthening Movement
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

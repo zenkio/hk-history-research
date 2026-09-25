@@ -47,9 +47,9 @@ The disaster resulted in the deaths of over 800 British prisoners, making it one
 
 ## Claims to verify
 
-- [ ] Exact number of British prisoners embarked on the Lisbon Maru in September 1942
-- [ ] Precise casualty statistics resulting from the torpedo strike, suffocation, and shooting in the water
-- [ ] Exact number of survivors rescued by Chinese fishermen versus those who perished
+- ❔ Exact number of British prisoners embarked on the Lisbon Maru in September 1942
+- ❔ Precise casualty statistics resulting from the torpedo strike, suffocation, and shooting in the water
+- ❔ Exact number of survivors rescued by Chinese fishermen versus those who perished
 
 ## Evidence
 

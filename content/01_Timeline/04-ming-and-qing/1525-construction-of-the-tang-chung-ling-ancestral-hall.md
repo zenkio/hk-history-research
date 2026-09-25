@@ -37,7 +37,7 @@ The establishment of the grand ancestral hall institutionalized lineage power an
 
 ## Claims to verify
 
-- [ ] The precise construction date of the Tang Chung Ling Ancestral Hall around 1525.
-- [ ] The specific lineage connection to Tang Fung-hau as the primary honoree of the hall.
+- ❔ The precise construction date of the Tang Chung Ling Ancestral Hall around 1525.
+- ❔ The specific lineage connection to Tang Fung-hau as the primary honoree of the hall.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -44,7 +44,7 @@ At the same time, the transition highlighted the complex tensions between coloni
 
 ## Claims to verify
 
-- [ ] The Matrimonial Causes Ordinance Reform was officially passed and implemented in the year 1971.
-- [ ] The Hong Kong Council of Women played a primary advocacy role in pushing for the abolition of concubinage.
+- ❔ The Matrimonial Causes Ordinance Reform was officially passed and implemented in the year 1971.
+- ❔ The Hong Kong Council of Women played a primary advocacy role in pushing for the abolition of concubinage.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

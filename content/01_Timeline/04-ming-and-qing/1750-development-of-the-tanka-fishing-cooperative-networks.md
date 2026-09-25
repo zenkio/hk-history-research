@@ -38,7 +38,7 @@ The role of these networks was twofold. Economically, they provided the logistic
 
 ## Claims to verify
 
-- [ ] Verify the specific timeline of the formalization of Tanka guilds in Hong Kong waters between 1750 and 1800.
-- [ ] Check primary records regarding the extent of Qing administrative interaction with floating populations during the mid-18th century.
+- ❔ Verify the specific timeline of the formalization of Tanka guilds in Hong Kong waters between 1750 and 1800.
+- ❔ Check primary records regarding the extent of Qing administrative interaction with floating populations during the mid-18th century.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

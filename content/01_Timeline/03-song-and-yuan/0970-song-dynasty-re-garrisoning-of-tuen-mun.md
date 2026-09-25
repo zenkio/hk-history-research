@@ -36,7 +36,7 @@ The re-garrisoning of Tuen Mun marked an important step in the administrative an
 
 ## Claims to verify
 
-- [ ] The exact year 970 as the precise date for the re-garrisoning of Tuen Mun in Song official histories
-- [ ] The specific troop numbers and administrative rank of the garrison commander stationed at Tuen Mun during the early Song period
+- ❔ The exact year 970 as the precise date for the re-garrisoning of Tuen Mun in Song official histories
+- ❔ The specific troop numbers and administrative rank of the garrison commander stationed at Tuen Mun during the early Song period
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

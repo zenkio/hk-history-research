@@ -36,8 +36,8 @@ These early ancestor veneration cults represent a pivotal shift in the social or
 
 ## Claims to verify
 
-- [ ] The extent to which archaeological evidence from the 4th century supports formal ancestor shrines in the Pearl River Delta.
-- [ ] The degree of overlap between indigenous Yue mortuary customs and early Han Chinese lineage rituals in the Lingnan region.
-- [ ] The methodology used in later clan genealogies to establish links to the Six Dynasties period.
+- ❔ The extent to which archaeological evidence from the 4th century supports formal ancestor shrines in the Pearl River Delta.
+- ❔ The degree of overlap between indigenous Yue mortuary customs and early Han Chinese lineage rituals in the Lingnan region.
+- ❔ The methodology used in later clan genealogies to establish links to the Six Dynasties period.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

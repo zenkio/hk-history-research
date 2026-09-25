@@ -35,7 +35,7 @@ The formation of the association is often viewed by historians as the 'coming of
 
 ## Claims to verify
 
-- [ ] Verify the exact legal incorporation date of the Cotton Spinners Association in 1962.
-- [ ] Determine the degree to which the association's creation was influenced by specific British government directives regarding trade quotas.
+- ❔ Verify the exact legal incorporation date of the Cotton Spinners Association in 1962.
+- ❔ Determine the degree to which the association's creation was influenced by specific British government directives regarding trade quotas.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

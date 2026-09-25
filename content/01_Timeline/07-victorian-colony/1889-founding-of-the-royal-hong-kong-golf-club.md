@@ -38,7 +38,7 @@ The founding of the golf club is frequently cited by historians as a prime examp
 
 ## Claims to verify
 
-- [ ] The exact meeting date of May 10, 1889 for the founding of the Hong Kong Golf Club
-- [ ] The initial number of founding members present at the inaugural meeting
+- ❔ The exact meeting date of May 10, 1889 for the founding of the Hong Kong Golf Club
+- ❔ The initial number of founding members present at the inaugural meeting
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -43,7 +43,7 @@ The establishment of the imperial residence at Sacred Hill cemented the territor
 
 ## Claims to verify
 
-- [ ] Did the court specifically reside on Sacred Hill in May 1277, or is the timeline derived from generalized regional movements?
-- [ ] What primary historical sources explicitly connect the Sacred Hill rock inscription to the 1277 imperial visit?
+- ❔ Did the court specifically reside on Sacred Hill in May 1277, or is the timeline derived from generalized regional movements?
+- ❔ What primary historical sources explicitly connect the Sacred Hill rock inscription to the 1277 imperial visit?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

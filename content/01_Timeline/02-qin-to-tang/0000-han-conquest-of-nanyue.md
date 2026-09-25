@@ -42,7 +42,7 @@ The conquest marked a fundamental turning point in the geopolitical and administ
 
 ## Claims to verify
 
-- [ ] Emperor Wu of Han launched the decisive conquest of Nanyue in 111 BCE.
-- [ ] The Hong Kong region was placed under the jurisdiction of Panyu County within Nanhai Commandery following the conquest.
+- ❔ Emperor Wu of Han launched the decisive conquest of Nanyue in 111 BCE.
+- ❔ The Hong Kong region was placed under the jurisdiction of Panyu County within Nanhai Commandery following the conquest.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

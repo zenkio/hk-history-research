@@ -38,8 +38,8 @@ The events of **1911** cemented Hong Kong's role as a crucial nexus between main
 
 ## Claims to verify
 
-- [ ] Exact estimates of the refugee influx into Hong Kong immediately following October 10, 1911
-- [ ] The specific official directives issued by the British colonial government regarding neutrality during the Wuchang Uprising
+- ❔ Exact estimates of the refugee influx into Hong Kong immediately following October 10, 1911
+- ❔ The specific official directives issued by the British colonial government regarding neutrality during the Wuchang Uprising
 
 ## Evidence
 

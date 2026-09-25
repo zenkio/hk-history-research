@@ -37,7 +37,7 @@ The settlement of the **Yeung clan** and other Song loyalists marked a crucial t
 
 ## Claims to verify
 
-- [ ] Specific migration routes and arrival dates of the Yeung clan in Kowloon and the New Territories around 1278
-- [ ] The extent to which surviving lineage genealogies accurately reflect direct imperial descent versus later gentry status elevation
+- ❔ Specific migration routes and arrival dates of the Yeung clan in Kowloon and the New Territories around 1278
+- ❔ The extent to which surviving lineage genealogies accurately reflect direct imperial descent versus later gentry status elevation
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

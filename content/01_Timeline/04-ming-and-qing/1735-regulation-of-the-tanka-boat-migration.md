@@ -39,8 +39,8 @@ The **1735** mandates represent a pivotal, if partially unsuccessful, attempt by
 
 ## Claims to verify
 
-- [ ] Verify the specific text of the 1735 imperial decree regarding Tanka settlement.
-- [ ] Assess the regional effectiveness of the 1735 resettlement mandate in the New Territories (新界).
-- [ ] Distinguish between voluntary resettlement incentives and coerced land-dwelling edicts.
+- ❔ Verify the specific text of the 1735 imperial decree regarding Tanka settlement.
+- ❔ Assess the regional effectiveness of the 1735 resettlement mandate in the New Territories (新界).
+- ❔ Distinguish between voluntary resettlement incentives and coerced land-dwelling edicts.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

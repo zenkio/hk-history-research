@@ -42,7 +42,7 @@ Queen's Road served as the backbone of early colonial Hong Kong, shaping the spa
 
 ## Claims to verify
 
-- [ ] Exact commencement date of Queen's Road construction in June 1841
-- [ ] Degree of involvement and conditions of local Chinese labourers in early road building
+- ❔ Exact commencement date of Queen's Road construction in June 1841
+- ❔ Degree of involvement and conditions of local Chinese labourers in early road building
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

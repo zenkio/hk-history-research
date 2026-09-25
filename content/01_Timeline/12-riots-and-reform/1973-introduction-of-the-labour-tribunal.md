@@ -37,7 +37,7 @@ The introduction of the tribunal marked a major shift in Hong Kong's industrial 
 
 ## Claims to verify
 
-- [ ] The Labour Tribunal was formally established in 1973 under the Labour Tribunal Ordinance.
-- [ ] Legal representation was generally not permitted in the Labour Tribunal to keep proceedings accessible and inexpensive.
+- ❔ The Labour Tribunal was formally established in 1973 under the Labour Tribunal Ordinance.
+- ❔ Legal representation was generally not permitted in the Labour Tribunal to keep proceedings accessible and inexpensive.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -37,7 +37,7 @@ The establishment of the festival is widely viewed by historians as a pivotal mo
 
 ## Claims to verify
 
-- [ ] The inaugural Hong Kong Arts Festival officially opened on February 26, 1973.
-- [ ] Sir Murray MacLehose actively championed the establishment of the festival as part of his broader social and cultural reforms.
+- ❔ The inaugural Hong Kong Arts Festival officially opened on February 26, 1973.
+- ❔ Sir Murray MacLehose actively championed the establishment of the festival as part of his broader social and cultural reforms.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

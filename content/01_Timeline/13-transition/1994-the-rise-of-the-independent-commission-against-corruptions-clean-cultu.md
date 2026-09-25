@@ -36,7 +36,7 @@ The consolidation of the ICAC’s culture by the mid-1990s serves as a critical 
 
 ## Claims to verify
 
-- [ ] The specific shift in ICAC community relations programming in the year 1994.
-- [ ] The extent to which private sector anti-corruption initiatives were emphasized in the mid-1990s compared to the 1970s.
+- ❔ The specific shift in ICAC community relations programming in the year 1994.
+- ❔ The extent to which private sector anti-corruption initiatives were emphasized in the mid-1990s compared to the 1970s.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

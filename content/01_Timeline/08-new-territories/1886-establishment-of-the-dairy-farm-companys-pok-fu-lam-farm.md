@@ -38,7 +38,7 @@ The establishment of the Pok Fu Lam Farm marked a pivotal turning point in colon
 
 ## Claims to verify
 
-- [ ] Patrick Manson and his associates officially founded the Dairy Farm Company in 1886.
-- [ ] The initial herd of cattle and refrigeration machinery were imported specifically to combat milk-borne diseases in the colony.
+- ❔ Patrick Manson and his associates officially founded the Dairy Farm Company in 1886.
+- ❔ The initial herd of cattle and refrigeration machinery were imported specifically to combat milk-borne diseases in the colony.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

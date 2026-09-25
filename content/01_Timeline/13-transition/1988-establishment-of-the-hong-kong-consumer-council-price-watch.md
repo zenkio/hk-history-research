@@ -35,7 +35,7 @@ The expansion of structured price monitoring marked a crucial evolution in Hong 
 
 ## Claims to verify
 
-- [ ] The Consumer Council specifically formalized or expanded its price watch initiatives around April 12, 1988.
-- [ ] Public anxiety over inflation and the 1997 transition directly influenced the demand for heightened consumer advocacy during this period.
+- ❔ The Consumer Council specifically formalized or expanded its price watch initiatives around April 12, 1988.
+- ❔ Public anxiety over inflation and the 1997 transition directly influenced the demand for heightened consumer advocacy during this period.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

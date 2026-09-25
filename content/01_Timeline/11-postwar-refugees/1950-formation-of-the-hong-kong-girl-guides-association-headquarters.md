@@ -38,7 +38,7 @@ The opening of the headquarters reflected the broader institutional stabilizatio
 
 ## Claims to verify
 
-- [ ] The exact month and date of the 1950 headquarters opening for the Hong Kong Girl Guides Association.
-- [ ] The specific funding sources and colonial government involvement in establishing the 1950 headquarters.
+- ❔ The exact month and date of the 1950 headquarters opening for the Hong Kong Girl Guides Association.
+- ❔ The specific funding sources and colonial government involvement in establishing the 1950 headquarters.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

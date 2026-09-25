@@ -38,7 +38,7 @@ The formation of the society is often viewed as a marker of the solidification o
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the inaugural meeting of the St. Andrew's Society of Hong Kong in 1854.
-- [ ] Confirm the original list of founding members to assess the overlap between society leadership and major trading hong directors.
+- ❔ Verify the specific date of the inaugural meeting of the St. Andrew's Society of Hong Kong in 1854.
+- ❔ Confirm the original list of founding members to assess the overlap between society leadership and major trading hong directors.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

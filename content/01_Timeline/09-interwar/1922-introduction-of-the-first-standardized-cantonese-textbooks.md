@@ -37,8 +37,8 @@ The introduction of these texts is often cited as a pivotal moment in the codifi
 
 ## Claims to verify
 
-- [ ] The exact year of the first publication of standardized Cantonese textbooks in Hong Kong
-- [ ] The extent to which these textbooks were government-mandated versus privately introduced
-- [ ] The degree to which the Hong Kong textbook committee communicated with or diverged from the mainland's Guoyu (國語) movement
+- ❔ The exact year of the first publication of standardized Cantonese textbooks in Hong Kong
+- ❔ The extent to which these textbooks were government-mandated versus privately introduced
+- ❔ The degree to which the Hong Kong textbook committee communicated with or diverged from the mainland's Guoyu (國語) movement
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

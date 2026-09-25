@@ -42,9 +42,9 @@ The visit is often remembered as a high-water mark of colonial civic engagement,
 
 ## Claims to verify
 
-- [ ] Queen Elizabeth II arrived in Hong Kong on May 4, 1975.
-- [ ] The royal itinerary included visits to Choi Hung Estate, Kwun Tong, and Queen Elizabeth Hospital.
-- [ ] The visit represented the first time a reigning British monarch visited the territory.
+- ❔ Queen Elizabeth II arrived in Hong Kong on May 4, 1975.
+- ❔ The royal itinerary included visits to Choi Hung Estate, Kwun Tong, and Queen Elizabeth Hospital.
+- ❔ The visit represented the first time a reigning British monarch visited the territory.
 
 ## Photos from this period
 

@@ -44,8 +44,8 @@ The opening of the college marked a major milestone in the educational and medic
 
 ## Claims to verify
 
-- [ ] Exact opening date and founding committee members of the Hong Kong College of Medicine for Chinese in 1887
-- [ ] Sun Yat-sen's precise graduation date and academic standing within his cohort
+- ❔ Exact opening date and founding committee members of the Hong Kong College of Medicine for Chinese in 1887
+- ❔ Sun Yat-sen's precise graduation date and academic standing within his cohort
 
 ## Research notes
 

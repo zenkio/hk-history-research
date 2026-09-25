@@ -41,7 +41,7 @@ The shelter represented a shift in colonial administration policy toward address
 
 ## Claims to verify
 
-- [ ] Exact completion date and inauguration ceremonies of the Yaumatei Typhoon Shelter in 1915
-- [ ] Specific engineering dimensions and initial vessel capacity of the shelter as recorded in Public Works Department reports
+- ❔ Exact completion date and inauguration ceremonies of the Yaumatei Typhoon Shelter in 1915
+- ❔ Specific engineering dimensions and initial vessel capacity of the shelter as recorded in Public Works Department reports
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

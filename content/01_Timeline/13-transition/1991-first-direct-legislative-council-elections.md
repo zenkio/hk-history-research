@@ -41,7 +41,7 @@ This election represented a watershed moment, introducing direct democratic repr
 
 ## Claims to verify
 
-- [ ] Pro-democracy candidates won 16 out of the 18 directly elected geographical seats in the 1991 Legislative Council election.
-- [ ] Voter turnout was affected by severe weather on September 15, 1991.
+- ❔ Pro-democracy candidates won 16 out of the 18 directly elected geographical seats in the 1991 Legislative Council election.
+- ❔ Voter turnout was affected by severe weather on September 15, 1991.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

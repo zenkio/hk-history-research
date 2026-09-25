@@ -39,8 +39,8 @@ The establishment of the clubhouse symbolized the growing prominence of maritime
 
 ## Claims to verify
 
-- [ ] Confirm the exact completion date of the 1908 clubhouse structure.
-- [ ] Verify the legal process through which the colonial government transferred Kellett Island for the club's use.
-- [ ] Determine the extent of displacement of local boat people resulting from the island's closure to the public.
+- ❔ Confirm the exact completion date of the 1908 clubhouse structure.
+- ❔ Verify the legal process through which the colonial government transferred Kellett Island for the club's use.
+- ❔ Determine the extent of displacement of local boat people resulting from the island's closure to the public.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

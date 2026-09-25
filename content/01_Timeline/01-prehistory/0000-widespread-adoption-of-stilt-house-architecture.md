@@ -41,7 +41,7 @@ The adoption of stilt-house architecture represents a crucial milestone in human
 
 ## Claims to verify
 
-- [ ] The precise dating of the widespread adoption of Ganlan-style stilt houses to c. 300 BCE based on regional archaeological stratigraphy.
-- [ ] The direct technological continuity between prehistoric pile-dwelling sites in the Pearl River Delta and historic fishing village stilt houses.
+- ❔ The precise dating of the widespread adoption of Ganlan-style stilt houses to c. 300 BCE based on regional archaeological stratigraphy.
+- ❔ The direct technological continuity between prehistoric pile-dwelling sites in the Pearl River Delta and historic fishing village stilt houses.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

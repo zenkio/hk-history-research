@@ -38,7 +38,7 @@ The mid-18th century expansion into areas like Ngau Chi Wan represents a crucial
 
 ## Claims to verify
 
-- [ ] The specific timeline of Hakka settlement and terraced farming expansion in Ngau Chi Wan around 1750
-- [ ] The extent of interaction and land tenure disputes between Hakka migrants and Punti communities in Xin'an County during the mid-Qing period
+- ❔ The specific timeline of Hakka settlement and terraced farming expansion in Ngau Chi Wan around 1750
+- ❔ The extent of interaction and land tenure disputes between Hakka migrants and Punti communities in Xin'an County during the mid-Qing period
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

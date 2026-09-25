@@ -37,7 +37,7 @@ The establishment and reopening of collegiate housing in the early postwar years
 
 ## Claims to verify
 
-- [ ] Exact opening date and official ceremonies associated with St. John's College in 1950
-- [ ] The extent of wartime damage and the precise timeline of the rebuilding of St. John's College facilities
+- ❔ Exact opening date and official ceremonies associated with St. John's College in 1950
+- ❔ The extent of wartime damage and the precise timeline of the rebuilding of St. John's College facilities
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

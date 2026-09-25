@@ -41,7 +41,7 @@ The incident is widely regarded by historians as a watershed moment in Hong Kong
 
 ## Claims to verify
 
-- [ ] The exact timeline of student and teacher strikes between late 1977 and 1978
-- [ ] The specific administrative interventions and decisions made by the Hong Kong Government's Education Department during the crisis
+- ❔ The exact timeline of student and teacher strikes between late 1977 and 1978
+- ❔ The specific administrative interventions and decisions made by the Hong Kong Government's Education Department during the crisis
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

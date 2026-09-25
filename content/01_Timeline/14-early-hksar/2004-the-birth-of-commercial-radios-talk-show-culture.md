@@ -37,8 +37,8 @@ This era signaled a shift in the role of media in Hong Kong, moving from a role 
 
 ## Claims to verify
 
-- [ ] Confirm the specific dates of resignations for Albert Cheng and Wong Yuk-man in 2004.
-- [ ] Verify the official statements released by CRHK management during the 2004 resignation period.
-- [ ] Document public reaction statistics or protest participation related to the radio hosts' departures.
+- ❔ Confirm the specific dates of resignations for Albert Cheng and Wong Yuk-man in 2004.
+- ❔ Verify the official statements released by CRHK management during the 2004 resignation period.
+- ❔ Document public reaction statistics or protest participation related to the radio hosts' departures.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

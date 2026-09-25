@@ -35,8 +35,8 @@ The formation of the volunteer brigade highlights the tension between the coloni
 
 ## Claims to verify
 
-- [ ] Verify the specific date of 1853 for the initial formation of the volunteer fire brigade against primary source records in the Hong Kong Government Gazette or contemporary newspaper reports.
-- [ ] Investigate the specific names of the founding organizers mentioned in 1853 archival records.
-- [ ] Determine the extent of official colonial funding or legal recognition granted to the volunteer brigade at the time of its inception.
+- ❔ Verify the specific date of 1853 for the initial formation of the volunteer fire brigade against primary source records in the Hong Kong Government Gazette or contemporary newspaper reports.
+- ❔ Investigate the specific names of the founding organizers mentioned in 1853 archival records.
+- ❔ Determine the extent of official colonial funding or legal recognition granted to the volunteer brigade at the time of its inception.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

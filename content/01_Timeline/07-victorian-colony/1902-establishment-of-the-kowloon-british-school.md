@@ -40,7 +40,7 @@ The establishment of the Kowloon British School marked a pivotal transition in t
 
 ## Claims to verify
 
-- [ ] The exact date and administrative steps taken by the colonial government to plan the Kowloon British School during the late 1890s
-- [ ] The precise opening date and initial location of the school prior to the construction of the permanent Nathan Road premises
+- ❔ The exact date and administrative steps taken by the colonial government to plan the Kowloon British School during the late 1890s
+- ❔ The precise opening date and initial location of the school prior to the construction of the permanent Nathan Road premises
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

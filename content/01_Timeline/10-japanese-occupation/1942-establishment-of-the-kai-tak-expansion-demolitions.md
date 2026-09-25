@@ -36,7 +36,7 @@ The Kai Tak expansion demolitions represent a profound cultural and physical rup
 
 ## Claims to verify
 
-- [ ] Exact dates and scope of the demolitions ordered by the Japanese military administration
-- [ ] The precise extent of damage inflicted on the Sung Wong Toi monument during the airfield expansion
+- ❔ Exact dates and scope of the demolitions ordered by the Japanese military administration
+- ❔ The precise extent of damage inflicted on the Sung Wong Toi monument during the airfield expansion
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

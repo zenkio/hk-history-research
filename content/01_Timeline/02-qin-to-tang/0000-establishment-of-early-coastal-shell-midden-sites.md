@@ -36,8 +36,8 @@ The emergence of these sites represents a pivotal stage in the regional transiti
 
 ## Claims to verify
 
-- [ ] The exact dating of the transition from seasonal foraging to shell midden accumulation in the Hong Kong region.
-- [ ] The correlation between Geometrically patterned pottery styles and the movement of specific linguistic or ethnic groups in early Southern China.
-- [ ] The extent of imperial administrative reach into the Pearl River estuary during the late Qin and early Han periods.
+- ❔ The exact dating of the transition from seasonal foraging to shell midden accumulation in the Hong Kong region.
+- ❔ The correlation between Geometrically patterned pottery styles and the movement of specific linguistic or ethnic groups in early Southern China.
+- ❔ The extent of imperial administrative reach into the Pearl River estuary during the late Qin and early Han periods.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

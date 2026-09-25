@@ -44,7 +44,7 @@ The closure of Stand News marked a major turning point for press freedom in Hong
 
 ## Claims to verify
 
-- [ ] The exact number of police officers deployed during the December 29, 2021 raid
-- [ ] The precise amount of assets frozen by authorities during the operation
+- ❔ The exact number of police officers deployed during the December 29, 2021 raid
+- ❔ The precise amount of assets frozen by authorities during the operation
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

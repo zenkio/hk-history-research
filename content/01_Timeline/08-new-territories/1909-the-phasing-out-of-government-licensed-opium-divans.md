@@ -36,7 +36,7 @@ The closure of the licensed divans marked a pivotal moment in the economic and s
 
 ## Claims to verify
 
-- [ ] The exact date when the formal phasing out of government-licensed opium divans commenced in Hong Kong was March 1, 1909.
-- [ ] Opium monopolies provided a major percentage of Hong Kong's colonial government revenue prior to the 1909 restrictions.
+- ❔ The exact date when the formal phasing out of government-licensed opium divans commenced in Hong Kong was March 1, 1909.
+- ❔ Opium monopolies provided a major percentage of Hong Kong's colonial government revenue prior to the 1909 restrictions.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

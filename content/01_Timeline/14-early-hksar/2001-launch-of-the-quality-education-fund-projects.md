@@ -36,7 +36,7 @@ The widespread injection of QEF funding marked a pivotal shift in Hong Kong's ed
 
 ## Claims to verify
 
-- [ ] The Quality Education Fund was initially established with an allocation of $5 billion Hong Kong dollars announced in the 1997 Policy Address.
-- [ ] Specific operational milestones and public exhibitions of QEF projects occurred around March 2001.
+- ❔ The Quality Education Fund was initially established with an allocation of $5 billion Hong Kong dollars announced in the 1997 Policy Address.
+- ❔ Specific operational milestones and public exhibitions of QEF projects occurred around March 2001.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

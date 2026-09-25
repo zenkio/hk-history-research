@@ -36,7 +36,7 @@ This educational reform marked a pivotal transition in Hong Kong's pedagogical l
 
 ## Claims to verify
 
-- [ ] Official Education Bureau curriculum guidelines issued for September 2021
-- [ ] Specific subject name changes from Liberal Studies to Citizenship and Social Development
+- ❔ Official Education Bureau curriculum guidelines issued for September 2021
+- ❔ Specific subject name changes from Liberal Studies to Citizenship and Social Development
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

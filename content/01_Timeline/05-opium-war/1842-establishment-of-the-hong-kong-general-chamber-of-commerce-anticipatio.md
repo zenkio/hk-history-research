@@ -41,7 +41,7 @@ Early mercantile coordination set the precedent for the powerful influence of bu
 
 ## Claims to verify
 
-- [ ] Specific archival records of formal merchant meetings held in 1842 regarding chamber organization prior to the official 1861 charter
-- [ ] Direct correspondence between early agency houses and colonial administrators concerning port infrastructure
+- ❔ Specific archival records of formal merchant meetings held in 1842 regarding chamber organization prior to the official 1861 charter
+- ❔ Direct correspondence between early agency houses and colonial administrators concerning port infrastructure
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

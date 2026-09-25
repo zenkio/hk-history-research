@@ -44,8 +44,8 @@ The Esing Bakery incident left a lasting impact on the governance and social fab
 
 ## Claims to verify
 
-- [ ] Exact number of Europeans who consumed the poisoned bread and fell ill on January 15, 1857.
-- [ ] The precise legal arguments and evidence presented during Cheong Ah Lum's trial.
+- ❔ Exact number of Europeans who consumed the poisoned bread and fell ill on January 15, 1857.
+- ❔ The precise legal arguments and evidence presented during Cheong Ah Lum's trial.
 
 ## Photos from this period
 

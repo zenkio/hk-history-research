@@ -35,7 +35,7 @@ The establishment of the service marked a notable shift in the role of women wit
 
 ## Claims to verify
 
-- [ ] Exact establishment date and founding administrative orders of the Hong Kong Auxiliary Nursing Service in 1939
-- [ ] Total number of active volunteers enrolled in the service prior to December 1941
+- ❔ Exact establishment date and founding administrative orders of the Hong Kong Auxiliary Nursing Service in 1939
+- ❔ Total number of active volunteers enrolled in the service prior to December 1941
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -37,7 +37,7 @@ This late-war mobilization marked one of the most severe disruptions to the civi
 
 ## Claims to verify
 
-- [ ] Specific execution dates and scale of the civilian labor draft ordered by the Japanese military administration in June 1945
-- [ ] Exact number of civilians conscripted for hillside tunnel and bunker construction in the final months of the occupation
+- ❔ Specific execution dates and scale of the civilian labor draft ordered by the Japanese military administration in June 1945
+- ❔ Exact number of civilians conscripted for hillside tunnel and bunker construction in the final months of the occupation
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

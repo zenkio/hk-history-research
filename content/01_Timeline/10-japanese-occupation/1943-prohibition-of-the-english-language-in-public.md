@@ -36,7 +36,7 @@ The linguistic shift was intended to facilitate complete administrative control 
 
 ## Claims to verify
 
-- [ ] The specific legislative documents or decrees issued in 1943 regarding the prohibition of English in private business.
-- [ ] The degree to which Japanese was actually utilized in local commercial transactions compared to the persistence of Cantonese.
+- ❔ The specific legislative documents or decrees issued in 1943 regarding the prohibition of English in private business.
+- ❔ The degree to which Japanese was actually utilized in local commercial transactions compared to the persistence of Cantonese.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -43,7 +43,7 @@ The **July 21 incident** marked a watershed moment in the **2019** protests. Whi
 
 ## Claims to verify
 
-- [ ] The exact timeline of emergency calls made to the Yuen Long police station and the corresponding police dispatch logs.
-- [ ] Official and independent investigations regarding the extent of coordination between the attackers and local community or political figures.
+- ❔ The exact timeline of emergency calls made to the Yuen Long police station and the corresponding police dispatch logs.
+- ❔ Official and independent investigations regarding the extent of coordination between the attackers and local community or political figures.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

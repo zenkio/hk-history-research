@@ -39,7 +39,7 @@ The consolidation of maritime forces under **Cheng I** laid the groundwork for o
 
 ## Claims to verify
 
-- [ ] Cheng I specifically began organizing the confederacy around the year 1795
-- [ ] The exact organizational structure of the Six Fleets during its early formation phase
+- ❔ Cheng I specifically began organizing the confederacy around the year 1795
+- ❔ The exact organizational structure of the Six Fleets during its early formation phase
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

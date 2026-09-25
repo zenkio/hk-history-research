@@ -39,8 +39,8 @@ The introduction of pasteurized milk and consistent refrigeration is widely cred
 
 ## Claims to verify
 
-- [ ] Verify the specific operational milestones of the Dairy Farm Company in the year 1901.
-- [ ] Assess the extent to which Dairy Farm products were integrated into the diets of the Chinese middle class by the early 1900s.
-- [ ] Examine primary records regarding the public health statistics directly attributed to the consumption of pasteurized milk in this era.
+- ❔ Verify the specific operational milestones of the Dairy Farm Company in the year 1901.
+- ❔ Assess the extent to which Dairy Farm products were integrated into the diets of the Chinese middle class by the early 1900s.
+- ❔ Examine primary records regarding the public health statistics directly attributed to the consumption of pasteurized milk in this era.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

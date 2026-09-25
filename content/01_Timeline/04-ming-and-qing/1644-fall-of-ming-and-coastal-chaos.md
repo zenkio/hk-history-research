@@ -43,7 +43,7 @@ The tumultuous transition from Ming to Qing exposed the extreme vulnerability of
 
 ## Claims to verify
 
-- [ ] The exact degree of direct involvement by local Hong Kong villagers in Southern Ming military campaigns.
-- [ ] The specific extent of naval engagements occurring directly within Hong Kong waters during the 1644 transition.
+- ❔ The exact degree of direct involvement by local Hong Kong villagers in Southern Ming military campaigns.
+- ❔ The specific extent of naval engagements occurring directly within Hong Kong waters during the 1644 transition.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

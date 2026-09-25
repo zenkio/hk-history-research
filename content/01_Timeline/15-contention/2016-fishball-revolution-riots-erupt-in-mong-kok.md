@@ -40,7 +40,7 @@ The events of **February 2016**, widely dubbed the "Fishball Revolution" by part
 
 ## Claims to verify
 
-- [ ] Police fired exactly two warning shots into the air during the clashes.
-- [ ] The term 'Fishball Revolution' was coined and widely adopted during the immediate aftermath of the event.
+- ❔ Police fired exactly two warning shots into the air during the clashes.
+- ❔ The term 'Fishball Revolution' was coined and widely adopted during the immediate aftermath of the event.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

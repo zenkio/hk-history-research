@@ -36,7 +36,7 @@ Historians view the founding of the Moran & Co. Sugar Refinery as an early indic
 
 ## Claims to verify
 
-- [ ] Moran & Co. established a sugar refinery in Hong Kong in 1855.
-- [ ] The refinery sourced raw sugar from regional suppliers for international export.
+- ❔ Moran & Co. established a sugar refinery in Hong Kong in 1855.
+- ❔ The refinery sourced raw sugar from regional suppliers for international export.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

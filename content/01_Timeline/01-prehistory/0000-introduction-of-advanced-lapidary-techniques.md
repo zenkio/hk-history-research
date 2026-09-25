@@ -35,7 +35,7 @@ The widespread appearance of these beads and ornaments is interpreted by many sc
 
 ## Claims to verify
 
-- [ ] Dating of stone beads to approximately 2500 BCE in regional archaeological stratigraphy.
-- [ ] The correlation between advanced lapidary output and social stratification in Pearl River Delta Neolithic sites.
+- ❔ Dating of stone beads to approximately 2500 BCE in regional archaeological stratigraphy.
+- ❔ The correlation between advanced lapidary output and social stratification in Pearl River Delta Neolithic sites.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

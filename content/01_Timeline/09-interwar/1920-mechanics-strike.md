@@ -37,9 +37,9 @@ The successful **1920** Mechanics' Strike is widely viewed by historians as a cr
 
 ## Claims to verify
 
-- [ ] Did the Mechanics' Strike specifically occur in April 1920?
-- [ ] What exact percentage wage increase was demanded and ultimately granted to the mechanics?
-- [ ] Which specific shipyards or engineering firms were most affected by the walkout?
+- ❔ Did the Mechanics' Strike specifically occur in April 1920?
+- ❔ What exact percentage wage increase was demanded and ultimately granted to the mechanics?
+- ❔ Which specific shipyards or engineering firms were most affected by the walkout?
 
 ## Evidence
 

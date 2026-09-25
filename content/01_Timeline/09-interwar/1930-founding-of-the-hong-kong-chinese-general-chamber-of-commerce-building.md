@@ -37,8 +37,8 @@ The completion of the headquarters underscored the rising economic and social cl
 
 ## Claims to verify
 
-- [ ] The exact completion date of the Chinese General Chamber of Commerce building in 1930
-- [ ] The specific address and architectural details of the 1930 headquarters in Central
-- [ ] The extent of direct colonial government funding or regulatory oversight regarding the building project
+- ❔ The exact completion date of the Chinese General Chamber of Commerce building in 1930
+- ❔ The specific address and architectural details of the 1930 headquarters in Central
+- ❔ The extent of direct colonial government funding or regulatory oversight regarding the building project
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

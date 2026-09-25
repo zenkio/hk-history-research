@@ -37,8 +37,8 @@ The expansion of these watchtowers represents the formal integration of the Ling
 
 ## Claims to verify
 
-- [ ] The specific function of burial sites like Lei Cheng Uk as indicators of administrative permanence
-- [ ] The archaeological evidence supporting a systematic network of watchtowers between 50-150 CE
-- [ ] The extent of state control over pearl harvesting during the Eastern Han period
+- ❔ The specific function of burial sites like Lei Cheng Uk as indicators of administrative permanence
+- ❔ The archaeological evidence supporting a systematic network of watchtowers between 50-150 CE
+- ❔ The extent of state control over pearl harvesting during the Eastern Han period
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

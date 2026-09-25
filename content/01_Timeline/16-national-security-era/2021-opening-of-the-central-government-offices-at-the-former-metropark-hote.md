@@ -37,7 +37,7 @@ This event represented a tangible manifestation of Beijing's direct security app
 
 ## Claims to verify
 
-- [ ] The Office for Safeguarding National Security officially inaugurated its permanent headquarters at the former Metropark Hotel on February 28, 2021.
-- [ ] The building previously operated as the Metropark Hotel Causeway Bay prior to its requisition and conversion.
+- ❔ The Office for Safeguarding National Security officially inaugurated its permanent headquarters at the former Metropark Hotel on February 28, 2021.
+- ❔ The building previously operated as the Metropark Hotel Causeway Bay prior to its requisition and conversion.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

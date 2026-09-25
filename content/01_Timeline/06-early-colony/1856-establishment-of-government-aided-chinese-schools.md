@@ -40,8 +40,8 @@ The events of **1856** represent a critical turning point in the history of Hong
 
 ## Claims to verify
 
-- [ ] The colonial government formally initiated financial grants to Chinese schools specifically in the year 1856.
-- [ ] The scope and administrative mechanism of the 1856 school funding policy.
+- ❔ The colonial government formally initiated financial grants to Chinese schools specifically in the year 1856.
+- ❔ The scope and administrative mechanism of the 1856 school funding policy.
 
 ## Evidence
 

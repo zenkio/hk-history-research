@@ -36,7 +36,7 @@ The creation of the PTU marked a turning point in Hong Kong's internal security 
 
 ## Claims to verify
 
-- [ ] The exact formal establishment date of the Police Tactical Unit as February 17, 1958.
-- [ ] The initial operational scope and deployment strategies mandated for the PTU at its inception.
+- ❔ The exact formal establishment date of the Police Tactical Unit as February 17, 1958.
+- ❔ The initial operational scope and deployment strategies mandated for the PTU at its inception.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

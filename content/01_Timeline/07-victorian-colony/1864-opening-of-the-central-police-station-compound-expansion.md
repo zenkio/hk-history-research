@@ -37,7 +37,7 @@ Historians view the **1864** expansion as a physical manifestation of the consol
 
 ## Claims to verify
 
-- [ ] Specific architectural completion dates for the Central Police Station expansion in 1864
-- [ ] Exact correspondence between population growth statistics and the commissioning of the 1864 police compound expansion
+- ❔ Specific architectural completion dates for the Central Police Station expansion in 1864
+- ❔ Exact correspondence between population growth statistics and the commissioning of the 1864 police compound expansion
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

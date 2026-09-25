@@ -37,8 +37,8 @@ The instability of this period set the stage for the **Great Clearance** (*Qianj
 
 ## Claims to verify
 
-- [ ] Specific military movements of Qing loyalist forces in the Xin'an (新安) district in 1646
-- [ ] The extent to which 1646 specifically influenced the 1661 Great Clearance policy
-- [ ] Verification of specific clan records documenting displacement in the New Territories during the mid-1640s
+- ❔ Specific military movements of Qing loyalist forces in the Xin'an (新安) district in 1646
+- ❔ The extent to which 1646 specifically influenced the 1661 Great Clearance policy
+- ❔ Verification of specific clan records documenting displacement in the New Territories during the mid-1640s
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

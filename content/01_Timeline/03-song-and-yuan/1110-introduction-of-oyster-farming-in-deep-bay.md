@@ -36,7 +36,7 @@ The introduction of oyster farming transformed Deep Bay into one of the region's
 
 ## Claims to verify
 
-- [ ] Commercial oyster cultivation in Deep Bay specifically began between 1110 and 1120.
-- [ ] Northern Song dynasty settlers introduced artificial substrate methods such as stones and tiles for spat collection in the region.
+- ❔ Commercial oyster cultivation in Deep Bay specifically began between 1110 and 1120.
+- ❔ Northern Song dynasty settlers introduced artificial substrate methods such as stones and tiles for spat collection in the region.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

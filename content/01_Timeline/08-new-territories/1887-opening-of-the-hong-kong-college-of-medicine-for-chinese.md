@@ -40,8 +40,8 @@ The college represents a pivotal milestone in the history of Hong Kong education
 
 ## Claims to verify
 
-- [ ] The college officially opened around October 1887 under the auspices of the London Missionary Society.
-- [ ] Sun Yat-sen was among the inaugural or earliest cohorts of students at the institution.
-- [ ] The college eventually merged to become the Faculty of Medicine at the University of Hong Kong.
+- ❔ The college officially opened around October 1887 under the auspices of the London Missionary Society.
+- ❔ Sun Yat-sen was among the inaugural or earliest cohorts of students at the institution.
+- ❔ The college eventually merged to become the Faculty of Medicine at the University of Hong Kong.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

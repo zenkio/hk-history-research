@@ -38,7 +38,7 @@ Kat Hing Wai stands as one of the most prominent surviving examples of the walle
 
 ## Claims to verify
 
-- [ ] Whether the exact construction year of Kat Hing Wai can be definitively verified as 1599 through extant genealogy records
-- [ ] The precise timeline of when the outer walls and iron gates were added versus later restorations
+- ❔ Whether the exact construction year of Kat Hing Wai can be definitively verified as 1599 through extant genealogy records
+- ❔ The precise timeline of when the outer walls and iron gates were added versus later restorations
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

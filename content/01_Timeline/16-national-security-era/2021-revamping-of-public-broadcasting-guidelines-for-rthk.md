@@ -39,7 +39,7 @@ The restructuring of RTHK represented a fundamental turning point in the landsca
 
 ## Claims to verify
 
-- [ ] Radio Television Hong Kong officially introduced the revised editorial guidelines on May 19, 2021.
-- [ ] Multiple satirical and public-affairs programs, including Headliner, were permanently canceled or pulled following the appointment of Patrick Li as Director of Broadcasting.
+- ❔ Radio Television Hong Kong officially introduced the revised editorial guidelines on May 19, 2021.
+- ❔ Multiple satirical and public-affairs programs, including Headliner, were permanently canceled or pulled following the appointment of Patrick Li as Director of Broadcasting.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

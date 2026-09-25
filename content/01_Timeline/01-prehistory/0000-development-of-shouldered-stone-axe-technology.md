@@ -38,7 +38,7 @@ The technological shift toward shouldered axes had profound implications for dai
 
 ## Claims to verify
 
-- [ ] The approximate dating of shouldered stone axe technology to c. 1500 BCE in the Hong Kong region based on regional archaeological stratigraphy.
-- [ ] The technical advantages of shouldered stone axes regarding hafting security and woodworking efficiency.
+- ❔ The approximate dating of shouldered stone axe technology to c. 1500 BCE in the Hong Kong region based on regional archaeological stratigraphy.
+- ❔ The technical advantages of shouldered stone axes regarding hafting security and woodworking efficiency.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

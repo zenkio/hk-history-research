@@ -42,9 +42,9 @@ Local communities and colonial administrators viewed the aftermath through diffe
 
 ## Claims to verify
 
-- [ ] The exact date of the fire was December 28, 1851.
-- [ ] The fire directly prompted the land reclamation project along Bonham Strand.
-- [ ] Hundreds of Chinese homes were destroyed in the blaze.
+- ❔ The exact date of the fire was December 28, 1851.
+- ❔ The fire directly prompted the land reclamation project along Bonham Strand.
+- ❔ Hundreds of Chinese homes were destroyed in the blaze.
 
 ## Research notes
 

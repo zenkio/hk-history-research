@@ -37,8 +37,8 @@ The founding of the **HKAPA** is often viewed as a landmark moment in the instit
 
 ## Claims to verify
 
-- [ ] The exact date the HKAPA Ordinance was passed in the Legislative Council.
-- [ ] Specific funding sources allocated by the colonial government for the initial capital construction of the campus.
-- [ ] The influence of the 1982 Green Paper on the Development of Cultural Services on the academy's founding.
+- ❔ The exact date the HKAPA Ordinance was passed in the Legislative Council.
+- ❔ Specific funding sources allocated by the colonial government for the initial capital construction of the campus.
+- ❔ The influence of the 1982 Green Paper on the Development of Cultural Services on the academy's founding.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -36,7 +36,7 @@ This technological leap had profound social implications. Navigating the open se
 
 ## Claims to verify
 
-- [ ] The dating of the transition to deep-sea fishing based on specific stone tool typologies in the Pearl River Delta.
-- [ ] The correlation between 'Geometric Pottery' culture and the transition to offshore navigation.
+- ❔ The dating of the transition to deep-sea fishing based on specific stone tool typologies in the Pearl River Delta.
+- ❔ The correlation between 'Geometric Pottery' culture and the transition to offshore navigation.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

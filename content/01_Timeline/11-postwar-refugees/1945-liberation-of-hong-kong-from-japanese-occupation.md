@@ -44,8 +44,8 @@ The liberation ended the immediate wartime suffering and initiated a rapid trans
 
 ## Claims to verify
 
-- [ ] Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945.
-- [ ] The formal surrender ceremony took place at Government House on September 16, 1945.
+- ❔ Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945.
+- ❔ The formal surrender ceremony took place at Government House on September 16, 1945.
 
 ## Photos from this period
 

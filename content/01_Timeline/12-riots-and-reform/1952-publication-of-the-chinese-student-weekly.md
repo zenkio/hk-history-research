@@ -37,7 +37,7 @@ Although the magazine's active years slightly predated the peak of the 1960s rio
 
 ## Claims to verify
 
-- [ ] Exact founding date of July 27, 1952 for the Chinese Student Weekly
-- [ ] Full operational history and structural ties of the Hong Kong Student International Publishing Society
+- ❔ Exact founding date of July 27, 1952 for the Chinese Student Weekly
+- ❔ Full operational history and structural ties of the Hong Kong Student International Publishing Society
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

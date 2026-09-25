@@ -42,7 +42,7 @@ The announcement marked a major strategic shift in Hong Kong's urban planning pa
 
 ## Claims to verify
 
-- [ ] The Northern Metropolis Development Strategy was officially announced on October 6, 2021, in the Policy Address.
-- [ ] The proposed development area covers approximately 300 square kilometers.
+- ❔ The Northern Metropolis Development Strategy was officially announced on October 6, 2021, in the Policy Address.
+- ❔ The proposed development area covers approximately 300 square kilometers.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

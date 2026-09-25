@@ -39,7 +39,7 @@ This industrial boom cemented Hong Kong's status as a global economic player and
 
 ## Claims to verify
 
-- [ ] Specific export volume statistics for garments in 1965
-- [ ] Exact figures on Shanghainese capital and machinery relocation to Hong Kong in the late 1940s and 1950s
+- ❔ Specific export volume statistics for garments in 1965
+- ❔ Exact figures on Shanghainese capital and machinery relocation to Hong Kong in the late 1940s and 1950s
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

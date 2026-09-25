@@ -38,7 +38,7 @@ As a physical and permanent alteration, tooth ablation served as a visual marker
 
 ## Claims to verify
 
-- [ ] Ritual tooth ablation of upper lateral incisors occurred in the Hong Kong region around 2000 BCE.
-- [ ] Dental modification served as a visual marker of tribal identity and maturity in Neolithic southern China.
+- ❔ Ritual tooth ablation of upper lateral incisors occurred in the Hong Kong region around 2000 BCE.
+- ❔ Dental modification served as a visual marker of tribal identity and maturity in Neolithic southern China.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

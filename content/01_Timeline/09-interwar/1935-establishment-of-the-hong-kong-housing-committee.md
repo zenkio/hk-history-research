@@ -37,8 +37,8 @@ The creation of this committee marks a landmark shift in the philosophy of colon
 
 ## Claims to verify
 
-- [ ] Confirm the official mandate and terms of reference for the 1935 Hong Kong Housing Committee.
-- [ ] Verify the specific impact of the committee’s findings on colonial public health regulations in the late 1930s.
-- [ ] Investigate the extent to which private developers influenced the committee's final recommendations.
+- ❔ Confirm the official mandate and terms of reference for the 1935 Hong Kong Housing Committee.
+- ❔ Verify the specific impact of the committee’s findings on colonial public health regulations in the late 1930s.
+- ❔ Investigate the extent to which private developers influenced the committee's final recommendations.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -43,9 +43,9 @@ In **1877**, **John Pope Hennessy** (軒尼詩) assumed office as the 8th Govern
 
 ## Claims to verify
 
-- [ ] John Pope Hennessy assumed office as Governor of Hong Kong in 1877.
-- [ ] Hennessy permitted Chinese residents to purchase property in Central.
-- [ ] Ng Choy was appointed as the first Chinese member of the Legislative Council during or closely following this era.
+- ❔ John Pope Hennessy assumed office as Governor of Hong Kong in 1877.
+- ❔ Hennessy permitted Chinese residents to purchase property in Central.
+- ❔ Ng Choy was appointed as the first Chinese member of the Legislative Council during or closely following this era.
 
 ## Research notes
 

@@ -38,8 +38,8 @@ The ordinance marked a significant expansion of colonial state reach into the so
 
 ## Claims to verify
 
-- [ ] The Chinese Temples Ordinance was officially enacted in the year 1928.
-- [ ] The Chinese Temples Committee was established to oversee temple registration and surplus revenues.
-- [ ] The legislation was introduced partly in response to the aftermath of the 1925-1926 Canton-Hong Kong strike and boycott.
+- ❔ The Chinese Temples Ordinance was officially enacted in the year 1928.
+- ❔ The Chinese Temples Committee was established to oversee temple registration and surplus revenues.
+- ❔ The legislation was introduced partly in response to the aftermath of the 1925-1926 Canton-Hong Kong strike and boycott.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

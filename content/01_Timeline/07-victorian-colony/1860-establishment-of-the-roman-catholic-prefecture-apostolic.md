@@ -43,7 +43,7 @@ The creation of the Prefecture Apostolic marked a turning point in the instituti
 
 ## Claims to verify
 
-- [ ] The exact formal decree date and administrative boundaries set by the Vatican for the Prefecture Apostolic in 1860
-- [ ] The precise division of responsibilities between the Institute of Charity and PIME during the transition of the prefecture
+- ❔ The exact formal decree date and administrative boundaries set by the Vatican for the Prefecture Apostolic in 1860
+- ❔ The precise division of responsibilities between the Institute of Charity and PIME during the transition of the prefecture
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

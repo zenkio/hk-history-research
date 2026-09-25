@@ -40,7 +40,7 @@ The scheme triggered an unprecedented tourism and retail boom in Hong Kong, inje
 
 ## Claims to verify
 
-- [ ] The Individual Visit Scheme was officially launched on July 28, 2003.
-- [ ] The pilot program initially covered four Guangdong cities: Guangzhou, Shenzhen, Zhuhai, and Foshan.
+- ❔ The Individual Visit Scheme was officially launched on July 28, 2003.
+- ❔ The pilot program initially covered four Guangdong cities: Guangzhou, Shenzhen, Zhuhai, and Foshan.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

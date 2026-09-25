@@ -45,8 +45,8 @@ The **1967 Leftist Riots** marked a major turning point in Hong Kong’s modern 
 
 ## Claims to verify
 
-- [ ] Exact number of real versus dummy bombs planted during the 1967 campaign according to police records.
-- [ ] The precise degree of direct command or financial support given by Beijing authorities to the local struggle committee.
+- ❔ Exact number of real versus dummy bombs planted during the 1967 campaign according to police records.
+- ❔ The precise degree of direct command or financial support given by Beijing authorities to the local struggle committee.
 
 ## Photos from this period
 

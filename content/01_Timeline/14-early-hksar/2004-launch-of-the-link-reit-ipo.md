@@ -36,8 +36,8 @@ The privatization shifted the management of community-based retail from a govern
 
 ## Claims to verify
 
-- [ ] The exact number of shopping centers and car parks included in the initial divestment portfolio.
-- [ ] The specific legal arguments used in the judicial review brought by Lo Siu-lan.
-- [ ] Financial data regarding the fiscal deficit that motivated the divestment strategy.
+- ❔ The exact number of shopping centers and car parks included in the initial divestment portfolio.
+- ❔ The specific legal arguments used in the judicial review brought by Lo Siu-lan.
+- ❔ Financial data regarding the fiscal deficit that motivated the divestment strategy.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

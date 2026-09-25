@@ -40,7 +40,7 @@ The raid and subsequent arrests were widely interpreted as a watershed moment fo
 
 ## Claims to verify
 
-- [ ] Over 200 police officers participated in the August 10, 2020 raid on Apple Daily.
-- [ ] Jimmy Lai was arrested on suspicion of colluding with foreign forces and conspiracy to defraud.
+- ❔ Over 200 police officers participated in the August 10, 2020 raid on Apple Daily.
+- ❔ Jimmy Lai was arrested on suspicion of colluding with foreign forces and conspiracy to defraud.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -40,7 +40,7 @@ The destruction of these sites represented a profound loss of tangible heritage 
 
 ## Claims to verify
 
-- [ ] Did the demolition of the Kowloon Walled City walls and Sung Wong Toi specifically begin in January 1943, or was it spread across a different timeline during the occupation?
-- [ ] What precise volume of materials from the historic sites was reused for the Kai Tak runway expansion?
+- ❔ Did the demolition of the Kowloon Walled City walls and Sung Wong Toi specifically begin in January 1943, or was it spread across a different timeline during the occupation?
+- ❔ What precise volume of materials from the historic sites was reused for the Kai Tak runway expansion?
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

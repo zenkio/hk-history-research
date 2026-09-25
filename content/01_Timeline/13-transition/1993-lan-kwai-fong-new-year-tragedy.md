@@ -41,7 +41,7 @@ In the aftermath of the tragedy, the **Hong Kong Government** (香港政府) com
 
 ## Claims to verify
 
-- [ ] Exact casualty figures reported in the official inquiry
-- [ ] Specific statutory changes enacted immediately following the Bokhary commission report
+- ❔ Exact casualty figures reported in the official inquiry
+- ❔ Specific statutory changes enacted immediately following the Bokhary commission report
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

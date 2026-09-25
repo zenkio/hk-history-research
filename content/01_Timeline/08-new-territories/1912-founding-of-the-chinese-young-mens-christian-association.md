@@ -37,7 +37,7 @@ The founding of the Chinese YMCA is often viewed as a pivotal moment in the deve
 
 ## Claims to verify
 
-- [ ] Verification of the precise registration date of the Chinese YMCA in 1912
-- [ ] Documentation confirming the complete organizational separation from the pre-existing expatriate YMCA
+- ❔ Verification of the precise registration date of the Chinese YMCA in 1912
+- ❔ Documentation confirming the complete organizational separation from the pre-existing expatriate YMCA
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

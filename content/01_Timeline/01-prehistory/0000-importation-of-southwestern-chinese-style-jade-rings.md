@@ -36,7 +36,7 @@ The importation of southwestern-style jade rings challenges simplistic historica
 
 ## Claims to verify
 
-- [ ] Sichuan-style slit jade rings (jue) from c. 400 BCE have been recovered from archaeological contexts in the Hong Kong region.
-- [ ] Local communities actively participated in inter-regional exchange networks connecting the Pearl River Delta with southwestern China prior to the Qin conquest.
+- ❔ Sichuan-style slit jade rings (jue) from c. 400 BCE have been recovered from archaeological contexts in the Hong Kong region.
+- ❔ Local communities actively participated in inter-regional exchange networks connecting the Pearl River Delta with southwestern China prior to the Qin conquest.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

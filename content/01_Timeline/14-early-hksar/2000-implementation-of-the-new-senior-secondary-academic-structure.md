@@ -38,8 +38,8 @@ The transition to the 3-3-4 system represents one of the most substantial struct
 
 ## Claims to verify
 
-- [ ] The exact month and day the Education Commission released the specific 2000 reform proposals.
-- [ ] The timeline of the pilot schemes launched prior to the full implementation of the HKDSE.
-- [ ] The extent to which the reform was influenced by mainland Chinese educational policies versus Hong Kong's internal Education Commission deliberations.
+- ❔ The exact month and day the Education Commission released the specific 2000 reform proposals.
+- ❔ The timeline of the pilot schemes launched prior to the full implementation of the HKDSE.
+- ❔ The extent to which the reform was influenced by mainland Chinese educational policies versus Hong Kong's internal Education Commission deliberations.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

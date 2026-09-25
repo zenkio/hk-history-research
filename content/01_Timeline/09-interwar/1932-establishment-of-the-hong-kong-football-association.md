@@ -36,7 +36,7 @@ The formalization of the **HKFA** signaled the transition of football from a cas
 
 ## Claims to verify
 
-- [ ] The exact date and inaugural committee members of the 1932 HKFA formation
-- [ ] The extent of communication between the HKFA and the Football Association (FA) in England at the time of establishment
+- ❔ The exact date and inaugural committee members of the 1932 HKFA formation
+- ❔ The extent of communication between the HKFA and the Football Association (FA) in England at the time of establishment
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

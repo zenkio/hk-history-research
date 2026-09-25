@@ -38,7 +38,7 @@ The tramway drastically reshaped the spatial dynamics of Hong Kong Island by con
 
 ## Claims to verify
 
-- [ ] The electric tramway system officially commenced operations on July 20, 1904.
-- [ ] The original concession was operated by the Electric Traction Company of Hong Kong Limited before becoming Hong Kong Tramways.
+- ❔ The electric tramway system officially commenced operations on July 20, 1904.
+- ❔ The original concession was operated by the Electric Traction Company of Hong Kong Limited before becoming Hong Kong Tramways.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

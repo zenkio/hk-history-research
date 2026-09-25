@@ -37,7 +37,7 @@ The repatriation process marked the chaotic first phase of Hong Kong's postwar r
 
 ## Claims to verify
 
-- [ ] Precise population statistics of returning refugees in September 1945
-- [ ] Specific casualty and mortality rates in BMA-run refugee camps
+- ❔ Precise population statistics of returning refugees in September 1945
+- ❔ Specific casualty and mortality rates in BMA-run refugee camps
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

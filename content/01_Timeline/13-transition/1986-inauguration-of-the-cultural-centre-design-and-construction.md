@@ -39,7 +39,7 @@ The creation of the iconic Tsim Sha Tsui cultural hub symbolized Hong Kong's amb
 
 ## Claims to verify
 
-- [ ] The official inauguration ceremony of the Cultural Centre design and construction took place on November 10, 1986.
-- [ ] The architectural design was overseen by the colonial government's public works departments before its official opening in 1989.
+- ❔ The official inauguration ceremony of the Cultural Centre design and construction took place on November 10, 1986.
+- ❔ The architectural design was overseen by the colonial government's public works departments before its official opening in 1989.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

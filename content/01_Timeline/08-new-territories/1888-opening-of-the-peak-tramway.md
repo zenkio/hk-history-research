@@ -40,8 +40,8 @@ The opening of the funicular railway fundamentally reshaped Hong Kong's urban ge
 
 ## Claims to verify
 
-- [ ] The Peak Tramway officially opened on May 30, 1888.
-- [ ] Sir George William Des Voeux officially inaugurated the tramway.
-- [ ] Alexander Findlay Smith held the primary franchise for the tramway's construction.
+- ❔ The Peak Tramway officially opened on May 30, 1888.
+- ❔ Sir George William Des Voeux officially inaugurated the tramway.
+- ❔ Alexander Findlay Smith held the primary franchise for the tramway's construction.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

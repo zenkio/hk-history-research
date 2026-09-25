@@ -43,8 +43,8 @@ The acquisition transformed Hong Kong's geography, economy, and demographic make
 
 ## Claims to verify
 
-- [ ] The exact boundary lines and island counts specified in the Second Convention of Peking
-- [ ] The precise diplomatic communications between Sir Claude MacDonald and the Zongli Yamen leading to the choice of a 99-year lease duration
+- ❔ The exact boundary lines and island counts specified in the Second Convention of Peking
+- ❔ The precise diplomatic communications between Sir Claude MacDonald and the Zongli Yamen leading to the choice of a 99-year lease duration
 
 ## Photos from this period
 

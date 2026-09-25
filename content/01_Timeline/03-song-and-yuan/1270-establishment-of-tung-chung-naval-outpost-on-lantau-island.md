@@ -37,7 +37,7 @@ The establishment of the Tung Chung outpost marks an important administrative an
 
 ## Claims to verify
 
-- [ ] The exact dates of the establishment of the Tung Chung naval outpost between 1270 and 1275
-- [ ] The specific administrative designation and troop strength of the Song military installation on Lantau Island
+- ❔ The exact dates of the establishment of the Tung Chung naval outpost between 1270 and 1275
+- ❔ The specific administrative designation and troop strength of the Song military installation on Lantau Island
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -37,7 +37,7 @@ The creation of the post office represented one of the earliest steps toward for
 
 ## Claims to verify
 
-- [ ] The precise physical location of the first post office building in 1841.
-- [ ] The extent to which private merchant courier services were displaced by the colonial post office.
+- ❔ The precise physical location of the first post office building in 1841.
+- ❔ The extent to which private merchant courier services were displaced by the colonial post office.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

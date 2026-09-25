@@ -38,7 +38,7 @@ The establishment of the hospital significantly elevated the standard of modern 
 
 ## Claims to verify
 
-- [ ] Queen Mary Hospital officially opened on April 13, 1937
-- [ ] The hospital was established to serve as the primary teaching facility for the University of Hong Kong Faculty of Medicine
+- ❔ Queen Mary Hospital officially opened on April 13, 1937
+- ❔ The hospital was established to serve as the primary teaching facility for the University of Hong Kong Faculty of Medicine
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

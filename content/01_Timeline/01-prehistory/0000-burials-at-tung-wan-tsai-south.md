@@ -38,8 +38,8 @@ The discoveries at Tung Wan Tsai South provide invaluable physical and genetic e
 
 ## Claims to verify
 
-- [ ] Human remains at Tung Wan Tsai South date to approximately 2000 BCE.
-- [ ] Acidic soil in Hong Kong generally limits the preservation of ancient human bones.
-- [ ] Excavations at Tung Wan Tsai South yielded significant late Neolithic or early Bronze Age artifacts alongside skeletal remains.
+- ❔ Human remains at Tung Wan Tsai South date to approximately 2000 BCE.
+- ❔ Acidic soil in Hong Kong generally limits the preservation of ancient human bones.
+- ❔ Excavations at Tung Wan Tsai South yielded significant late Neolithic or early Bronze Age artifacts alongside skeletal remains.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

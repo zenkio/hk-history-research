@@ -38,7 +38,7 @@ The edict marked a crucial turning point in the demographic and spatial developm
 
 ## Claims to verify
 
-- [ ] The Yongzheng Emperor issued a specific edict regarding Tanka household registration in the year 1729.
-- [ ] The edict explicitly granted Tanka boat people the right to purchase land and register for household taxation.
+- ❔ The Yongzheng Emperor issued a specific edict regarding Tanka household registration in the year 1729.
+- ❔ The edict explicitly granted Tanka boat people the right to purchase land and register for household taxation.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

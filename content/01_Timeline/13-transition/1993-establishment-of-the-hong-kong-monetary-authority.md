@@ -41,8 +41,8 @@ The creation of the HKMA marked a major milestone in the modernization of Hong K
 
 ## Claims to verify
 
-- [ ] The Hong Kong Monetary Authority was officially established on April 1, 1993.
-- [ ] The HKMA was formed by merging the Office of the Commissioner of Banking and the Exchange Fund Office.
-- [ ] Joseph Yam served as the first Chief Executive of the HKMA.
+- ❔ The Hong Kong Monetary Authority was officially established on April 1, 1993.
+- ❔ The HKMA was formed by merging the Office of the Commissioner of Banking and the Exchange Fund Office.
+- ❔ Joseph Yam served as the first Chief Executive of the HKMA.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -41,8 +41,8 @@ The events, frequently labeled by participants and media as the "Fishball Revolu
 
 ## Claims to verify
 
-- [ ] Police fired two warning shots into the air during the clashes on February 9, 2016.
-- [ ] The confrontation began as a dispute over unlicensed Lunar New Year street hawkers.
+- ❔ Police fired two warning shots into the air during the clashes on February 9, 2016.
+- ❔ The confrontation began as a dispute over unlicensed Lunar New Year street hawkers.
 
 ## Photos from this period
 

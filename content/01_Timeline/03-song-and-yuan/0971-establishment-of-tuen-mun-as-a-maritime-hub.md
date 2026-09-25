@@ -37,8 +37,8 @@ The formalization of **Tuen Mun** served as a critical integration of the Hong K
 
 ## Claims to verify
 
-- [ ] The exact administrative designation of the Tuen Mun facility in 971
-- [ ] The extent to which the Tuen Mun garrison influenced the settlement patterns of the five major clans
-- [ ] The physical archaeological evidence of a formal 10th-century port facility at Tuen Mun
+- ❔ The exact administrative designation of the Tuen Mun facility in 971
+- ❔ The extent to which the Tuen Mun garrison influenced the settlement patterns of the five major clans
+- ❔ The physical archaeological evidence of a formal 10th-century port facility at Tuen Mun
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

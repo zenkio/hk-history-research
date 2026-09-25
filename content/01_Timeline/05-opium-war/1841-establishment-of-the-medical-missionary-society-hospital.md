@@ -39,7 +39,7 @@ The establishment of the hospital marked the tentative beginning of institutiona
 
 ## Claims to verify
 
-- [ ] The exact opening date and specific location of the Medical Missionary Society Hospital in Hong Kong in 1841
-- [ ] The extent of local Chinese patient attendance at the early missionary hospital versus British military personnel
+- ❔ The exact opening date and specific location of the Medical Missionary Society Hospital in Hong Kong in 1841
+- ❔ The extent of local Chinese patient attendance at the early missionary hospital versus British military personnel
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

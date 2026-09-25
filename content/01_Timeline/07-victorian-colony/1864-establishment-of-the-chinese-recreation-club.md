@@ -37,8 +37,8 @@ The creation of the Chinese Recreation Club is viewed as a pivotal moment in the
 
 ## Claims to verify
 
-- [ ] Verify the specific registration date of the Chinese Recreation Club in government archives circa 1864
-- [ ] Confirm the original list of founding members or initial board of directors
-- [ ] Distinguish the original 1864 iteration of the club from subsequent 20th-century organizations with similar names
+- ❔ Verify the specific registration date of the Chinese Recreation Club in government archives circa 1864
+- ❔ Confirm the original list of founding members or initial board of directors
+- ❔ Distinguish the original 1864 iteration of the club from subsequent 20th-century organizations with similar names
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

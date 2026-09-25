@@ -39,8 +39,8 @@ The widespread adoption of these farming techniques fundamentally altered the de
 
 ## Claims to verify
 
-- [ ] The exact timeframe of peak Hakka migration to the Hong Kong region being around 1760.
-- [ ] The extent to which terraced farming was a unique import of the Hakka as opposed to a shared technology of Southern China.
-- [ ] The role of the Qing government's land tax policy in incentivizing the cultivation of marginal mountain plots.
+- ❔ The exact timeframe of peak Hakka migration to the Hong Kong region being around 1760.
+- ❔ The extent to which terraced farming was a unique import of the Hakka as opposed to a shared technology of Southern China.
+- ❔ The role of the Qing government's land tax policy in incentivizing the cultivation of marginal mountain plots.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

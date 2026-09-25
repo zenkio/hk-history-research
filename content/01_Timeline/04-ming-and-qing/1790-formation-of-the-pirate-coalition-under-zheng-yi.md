@@ -39,8 +39,8 @@ The centralization of these fleets forced the Qing imperial government to shift 
 
 ## Claims to verify
 
-- [ ] The specific year Zheng Yi began his formal alliance building
-- [ ] The extent to which Qing naval records document the transition from small-scale piracy to the Red Flag Fleet before 1800
-- [ ] The specific contents of the 'pirate laws' attributed to the early coalition
+- ❔ The specific year Zheng Yi began his formal alliance building
+- ❔ The extent to which Qing naval records document the transition from small-scale piracy to the Red Flag Fleet before 1800
+- ❔ The specific contents of the 'pirate laws' attributed to the early coalition
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -36,6 +36,6 @@ The expansion of Ho Tung's philanthropic endeavors marked a crucial evolution in
 
 ## Claims to verify
 
-- [ ] Specific dates and organizational involvement of Sir Robert Ho Tung in 1906 philanthropic initiatives as recorded in primary colonial dispatches and Chinese community records.
+- ❔ Specific dates and organizational involvement of Sir Robert Ho Tung in 1906 philanthropic initiatives as recorded in primary colonial dispatches and Chinese community records.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

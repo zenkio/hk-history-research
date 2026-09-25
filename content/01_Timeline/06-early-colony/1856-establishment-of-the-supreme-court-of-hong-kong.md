@@ -37,7 +37,7 @@ The creation of the Supreme Court of Hong Kong is viewed by historians as a cruc
 
 ## Claims to verify
 
-- [ ] Verify the exact date of the Supreme Court Ordinance enactment in 1856.
-- [ ] Confirm the specific transition from the previous Summary Jurisdiction Ordinance to the 1856 structure.
+- ❔ Verify the exact date of the Supreme Court Ordinance enactment in 1856.
+- ❔ Confirm the specific transition from the previous Summary Jurisdiction Ordinance to the 1856 structure.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -40,7 +40,7 @@ The relocation and operation of the Morrison Education Society School represente
 
 ## Claims to verify
 
-- [ ] The exact month and day in 1842 when the Morrison Education Society School officially opened its doors in Hong Kong.
-- [ ] The complete enrollment figures and demographic breakdown of the student body during its first year in Hong Kong.
+- ❔ The exact month and day in 1842 when the Morrison Education Society School officially opened its doors in Hong Kong.
+- ❔ The complete enrollment figures and demographic breakdown of the student body during its first year in Hong Kong.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

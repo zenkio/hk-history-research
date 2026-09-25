@@ -39,7 +39,7 @@ Historians note that while the immediate crisis was managed through emergency lo
 
 ## Claims to verify
 
-- [ ] Exact daily water rationing schedules implemented in 1929
-- [ ] Specific volume and sources of emergency water imported by sea in 1929
+- ❔ Exact daily water rationing schedules implemented in 1929
+- ❔ Specific volume and sources of emergency water imported by sea in 1929
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

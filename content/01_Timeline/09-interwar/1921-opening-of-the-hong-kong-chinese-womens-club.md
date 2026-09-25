@@ -35,7 +35,7 @@ The emergence of the club is often interpreted as a primary indicator of shiftin
 
 ## Claims to verify
 
-- [ ] Confirm the formal charter date of the Hong Kong Chinese Women’s Club (香港中華婦女會) in 1921.
-- [ ] Verify the founding membership list to determine the socioeconomic background of the initial organizers.
+- ❔ Confirm the formal charter date of the Hong Kong Chinese Women’s Club (香港中華婦女會) in 1921.
+- ❔ Verify the founding membership list to determine the socioeconomic background of the initial organizers.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

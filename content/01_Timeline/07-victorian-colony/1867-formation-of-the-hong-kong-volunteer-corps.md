@@ -39,8 +39,8 @@ The creation of the Volunteer Corps symbolized a transition in colonial governan
 
 ## Claims to verify
 
-- [ ] Exact date of the initial formation ordinance in 1867
-- [ ] The specific number of original volunteers during the first year of operation
-- [ ] Legal documents clarifying the relationship between the Corps and the formal British garrison
+- ❔ Exact date of the initial formation ordinance in 1867
+- ❔ The specific number of original volunteers during the first year of operation
+- ❔ Legal documents clarifying the relationship between the Corps and the formal British garrison
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

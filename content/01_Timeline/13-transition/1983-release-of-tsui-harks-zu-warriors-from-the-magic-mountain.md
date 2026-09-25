@@ -42,7 +42,7 @@ The film is widely regarded as a watershed moment in Hong Kong cinema. It bridge
 
 ## Claims to verify
 
-- [ ] Zu: Warriors from the Magic Mountain was officially released on February 3, 1983.
-- [ ] Hollywood special effects personnel were hired to work on the production alongside local Hong Kong technicians.
+- ❔ Zu: Warriors from the Magic Mountain was officially released on February 3, 1983.
+- ❔ Hollywood special effects personnel were hired to work on the production alongside local Hong Kong technicians.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

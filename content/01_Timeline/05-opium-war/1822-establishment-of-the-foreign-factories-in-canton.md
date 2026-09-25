@@ -38,7 +38,7 @@ The **1822** fire served as a critical turning point in the strategic thinking o
 
 ## Claims to verify
 
-- [ ] The exact start date and ignition source of the 1822 Canton factory fire.
-- [ ] The extent to which British firms officially petitioned for an alternative port specifically citing the 1822 fire in their records.
+- ❔ The exact start date and ignition source of the 1822 Canton factory fire.
+- ❔ The extent to which British firms officially petitioned for an alternative port specifically citing the 1822 fire in their records.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

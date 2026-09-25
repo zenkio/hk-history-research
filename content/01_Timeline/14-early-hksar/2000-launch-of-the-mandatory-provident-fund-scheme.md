@@ -36,7 +36,7 @@ The launch of the MPF represented a watershed moment in the development of Hong 
 
 ## Claims to verify
 
-- [ ] The Mandatory Provident Fund scheme officially commenced operation on December 1, 2000.
-- [ ] Participation was made compulsory for most employees aged 18 to 64 and their employers.
+- ❔ The Mandatory Provident Fund scheme officially commenced operation on December 1, 2000.
+- ❔ Participation was made compulsory for most employees aged 18 to 64 and their employers.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

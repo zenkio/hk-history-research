@@ -41,9 +41,9 @@ While the City Hall was hailed as a major milestone in the development of Hong K
 
 ## Claims to verify
 
-- [ ] The exact opening date of the First Hong Kong City Hall was November 2, 1869.
-- [ ] Sir Richard Graves MacDonnell officially opened the complex.
-- [ ] The funding structure relied heavily on public subscription.
+- ❔ The exact opening date of the First Hong Kong City Hall was November 2, 1869.
+- ❔ Sir Richard Graves MacDonnell officially opened the complex.
+- ❔ The funding structure relied heavily on public subscription.
 
 ## Evidence
 

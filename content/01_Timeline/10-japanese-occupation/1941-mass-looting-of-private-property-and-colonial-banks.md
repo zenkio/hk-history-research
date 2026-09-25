@@ -44,7 +44,7 @@ This mass appropriation of wealth dismantled the economic infrastructure of the 
 
 ## Claims to verify
 
-- [ ] The exact volume of bullion and currency successfully evacuated by colonial banks versus what was seized by Japanese forces.
-- [ ] The precise mechanisms and inventories recorded during the requisition of private godowns in the immediate aftermath of the surrender.
+- ❔ The exact volume of bullion and currency successfully evacuated by colonial banks versus what was seized by Japanese forces.
+- ❔ The precise mechanisms and inventories recorded during the requisition of private godowns in the immediate aftermath of the surrender.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

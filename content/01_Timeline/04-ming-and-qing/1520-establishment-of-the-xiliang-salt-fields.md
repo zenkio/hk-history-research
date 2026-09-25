@@ -41,8 +41,8 @@ The salt fields provided the vital economic backbone for early settler villages.
 
 ## Claims to verify
 
-- [ ] Specific date of formal administrative registry for the Xiliang Salt Fields in Dongguan County records.
-- [ ] The exact geographical boundaries of the Xiliang Salt Fields in relation to modern-day coastal Hong Kong.
-- [ ] The extent of state control versus private lineage operation in the mid-Ming salt industry.
+- ❔ Specific date of formal administrative registry for the Xiliang Salt Fields in Dongguan County records.
+- ❔ The exact geographical boundaries of the Xiliang Salt Fields in relation to modern-day coastal Hong Kong.
+- ❔ The extent of state control versus private lineage operation in the mid-Ming salt industry.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -36,7 +36,7 @@ The introduction of the ordinance marked a major step in the localization of Hon
 
 ## Claims to verify
 
-- [ ] The exact implementation date of the Official Languages Ordinance being February 15, 1974.
-- [ ] The specific legislative extent of the ordinance regarding court proceedings versus general administrative communication.
+- ❔ The exact implementation date of the Official Languages Ordinance being February 15, 1974.
+- ❔ The specific legislative extent of the ordinance regarding court proceedings versus general administrative communication.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

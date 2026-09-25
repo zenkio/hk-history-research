@@ -35,8 +35,8 @@ The initiative marked a departure from traditional street protests, shifting the
 
 ## Claims to verify
 
-- [ ] The specific date the term 'Yellow Economic Circle' first appeared in mainstream media.
-- [ ] The efficacy and financial impact of the movement on SMEs during 2020.
-- [ ] Legal analysis regarding whether patronage boycotts constitute illegal discrimination under local law.
+- ❔ The specific date the term 'Yellow Economic Circle' first appeared in mainstream media.
+- ❔ The efficacy and financial impact of the movement on SMEs during 2020.
+- ❔ Legal analysis regarding whether patronage boycotts constitute illegal discrimination under local law.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

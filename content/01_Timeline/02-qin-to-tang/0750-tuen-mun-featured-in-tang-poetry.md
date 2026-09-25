@@ -37,7 +37,7 @@ The integration of **Tuen Mun** into Tang poetry marked the earliest literary re
 
 ## Claims to verify
 
-- [ ] Exact dating of Liu Yuxi's references to Tuen Mun
-- [ ] Administrative boundaries of Dongguan County during the mid-Tang period
+- ❔ Exact dating of Liu Yuxi's references to Tuen Mun
+- ❔ Administrative boundaries of Dongguan County during the mid-Tang period
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

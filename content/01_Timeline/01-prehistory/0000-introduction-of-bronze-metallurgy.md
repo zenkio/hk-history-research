@@ -38,7 +38,7 @@ The introduction of bronze metallurgy represented a major technological mileston
 
 ## Claims to verify
 
-- [ ] Bronze metallurgy was introduced to the Hong Kong region around c. 1500 BCE
-- [ ] Local craftsmen used double-molds to produce weapons, fishhooks, and ritual vessels
+- ❔ Bronze metallurgy was introduced to the Hong Kong region around c. 1500 BCE
+- ❔ Local craftsmen used double-molds to produce weapons, fishhooks, and ritual vessels
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

@@ -37,8 +37,8 @@ The formalization of medical oversight reflected the British administration's re
 
 ## Claims to verify
 
-- [ ] Did the formal title of the office in 1845 strictly function as 'Colonial Surgeon's Office' in all official records.
-- [ ] The exact start date or month of William Morrison’s appointment in 1845.
-- [ ] The extent to which the 1845 office mandate explicitly included or excluded non-government residents.
+- ❔ Did the formal title of the office in 1845 strictly function as 'Colonial Surgeon's Office' in all official records.
+- ❔ The exact start date or month of William Morrison’s appointment in 1845.
+- ❔ The extent to which the 1845 office mandate explicitly included or excluded non-government residents.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

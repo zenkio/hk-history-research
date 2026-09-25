@@ -44,8 +44,8 @@ The establishment marked a major milestone in local educational history by insti
 
 ## Claims to verify
 
-- [ ] The Chinese University of Hong Kong was formally established on October 17, 1963.
-- [ ] Li Cho-ming served as the university's first vice-chancellor.
-- [ ] The university was formed through the amalgamation of New Asia College, Chung Chi College, and United College.
+- ❔ The Chinese University of Hong Kong was formally established on October 17, 1963.
+- ❔ Li Cho-ming served as the university's first vice-chancellor.
+- ❔ The university was formed through the amalgamation of New Asia College, Chung Chi College, and United College.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

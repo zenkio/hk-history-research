@@ -40,8 +40,8 @@ This early policy laid the foundational framework for legal pluralism in British
 
 ## Claims to verify
 
-- [ ] Charles Elliot issued specific proclamations regarding Chinese customary rights on February 2, 1841.
-- [ ] The precise wording and immediate distribution scope of the 1841 proclamations across Hong Kong Island villages.
+- ❔ Charles Elliot issued specific proclamations regarding Chinese customary rights on February 2, 1841.
+- ❔ The precise wording and immediate distribution scope of the 1841 proclamations across Hong Kong Island villages.
 
 ## Evidence
 

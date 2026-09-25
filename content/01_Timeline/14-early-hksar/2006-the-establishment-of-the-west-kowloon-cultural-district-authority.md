@@ -36,8 +36,8 @@ The creation of the Authority represented a fundamental change in the administra
 
 ## Claims to verify
 
-- [ ] The exact date the Consultative Committee was formed in 2006.
-- [ ] The full list of statutory powers granted to the Authority under the 2008 ordinance.
-- [ ] The financial breakdown of the initial government endowment compared to the original project estimates.
+- ❔ The exact date the Consultative Committee was formed in 2006.
+- ❔ The full list of statutory powers granted to the Authority under the 2008 ordinance.
+- ❔ The financial breakdown of the initial government endowment compared to the original project estimates.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -38,8 +38,8 @@ The Hong Kong ePrix served as a high-profile platform for the discourse on smart
 
 ## Claims to verify
 
-- [ ] Verify the exact official start time of the race on October 9, 2016.
-- [ ] Confirm the specific length of the track circuit as reported by official FIA documents for the 2016 race.
-- [ ] Cross-reference the economic impact reports released by the government regarding the 2016 event.
+- ❔ Verify the exact official start time of the race on October 9, 2016.
+- ❔ Confirm the specific length of the track circuit as reported by official FIA documents for the 2016 race.
+- ❔ Cross-reference the economic impact reports released by the government regarding the 2016 event.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

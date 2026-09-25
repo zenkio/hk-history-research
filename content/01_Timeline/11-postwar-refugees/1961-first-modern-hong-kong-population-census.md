@@ -42,8 +42,8 @@ The **1961** census marked a turning point in evidence-based governance in Hong 
 
 ## Claims to verify
 
-- [ ] The First Modern Hong Kong Population Census was officially conducted on March 7, 1961.
-- [ ] The 1961 census recorded a total population of approximately 3,133,131.
+- ❔ The First Modern Hong Kong Population Census was officially conducted on March 7, 1961.
+- ❔ The 1961 census recorded a total population of approximately 3,133,131.
 
 ## Evidence
 

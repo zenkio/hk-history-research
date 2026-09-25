@@ -38,7 +38,7 @@ The phasing out of the two-cent coin is viewed by economic historians as a minor
 
 ## Claims to verify
 
-- [ ] The exact legislative or regulatory mechanism used by the Hong Kong Monetary Authority to demonetize the two-cent coin around 2000.
-- [ ] The precise dates announced for the cessation of the two-cent coin's status as legal tender.
+- ❔ The exact legislative or regulatory mechanism used by the Hong Kong Monetary Authority to demonetize the two-cent coin around 2000.
+- ❔ The precise dates announced for the cessation of the two-cent coin's status as legal tender.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

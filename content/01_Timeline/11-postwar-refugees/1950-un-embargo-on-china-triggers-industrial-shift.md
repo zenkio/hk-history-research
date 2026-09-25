@@ -40,8 +40,8 @@ The embargo is widely viewed by historians as the catalyst for Hong Kong's mirac
 
 ## Claims to verify
 
-- [ ] The exact enforcement mechanisms and local implementation timeline of the UN embargo in Hong Kong in December 1950.
-- [ ] The precise rate of factory establishment and capital migration from Shanghai to Hong Kong immediately following the embargo.
+- ❔ The exact enforcement mechanisms and local implementation timeline of the UN embargo in Hong Kong in December 1950.
+- ❔ The precise rate of factory establishment and capital migration from Shanghai to Hong Kong immediately following the embargo.
 
 ## Evidence
 

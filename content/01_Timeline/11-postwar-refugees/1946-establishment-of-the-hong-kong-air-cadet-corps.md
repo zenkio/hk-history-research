@@ -38,7 +38,7 @@ The founding of the Corps reflected a broader trend of institutional rebuilding 
 
 ## Claims to verify
 
-- [ ] The Hong Kong Air Cadet Corps was officially established on September 1, 1946.
-- [ ] The organization was modeled directly on British cadet structures of the period.
+- ❔ The Hong Kong Air Cadet Corps was officially established on September 1, 1946.
+- ❔ The organization was modeled directly on British cadet structures of the period.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

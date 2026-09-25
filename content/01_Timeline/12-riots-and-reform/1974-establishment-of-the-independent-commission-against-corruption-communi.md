@@ -44,7 +44,7 @@ The creation of the CRD marked a pioneering milestone in global anti-corruption 
 
 ## Claims to verify
 
-- [ ] Did the Community Relations Department officially commence operations on February 15, 1974, alongside the rest of the ICAC?
-- [ ] What were the precise statutory functions assigned to the Community Relations Department under the initial 1974 ordinance?
+- ❔ Did the Community Relations Department officially commence operations on February 15, 1974, alongside the rest of the ICAC?
+- ❔ What were the precise statutory functions assigned to the Community Relations Department under the initial 1974 ordinance?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

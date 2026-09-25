@@ -37,6 +37,6 @@ The founding of the chamber marked a major milestone in the institutionalization
 
 ## Claims to verify
 
-- [ ] The Hong Kong General Chamber of Commerce was formally established on May 29, 1861.
+- ❔ The Hong Kong General Chamber of Commerce was formally established on May 29, 1861.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

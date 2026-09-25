@@ -38,7 +38,7 @@ The overhaul marked a crucial step in the professionalization of Hong Kong's bur
 
 ## Claims to verify
 
-- [ ] The exact implementation date and terms of the Senior Civil Service Pay Scale overhaul following the Fok Chun-wah commission recommendations.
-- [ ] The specific structural differences between local and expatriate civil service pay scales prior to the 1979 reforms.
+- ❔ The exact implementation date and terms of the Senior Civil Service Pay Scale overhaul following the Fok Chun-wah commission recommendations.
+- ❔ The specific structural differences between local and expatriate civil service pay scales prior to the 1979 reforms.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -35,7 +35,7 @@ The archaeological finds on Chek Lap Kok are crucial for understanding the deep 
 
 ## Claims to verify
 
-- [ ] Early human activity on Chek Lap Kok dates back to approximately c. 4000 BCE based on archaeological stratigraphy.
-- [ ] Excavations on the island recovered polished stone adzes and corded ware pottery characteristic of the South China Neolithic.
+- ❔ Early human activity on Chek Lap Kok dates back to approximately c. 4000 BCE based on archaeological stratigraphy.
+- ❔ Excavations on the island recovered polished stone adzes and corded ware pottery characteristic of the South China Neolithic.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

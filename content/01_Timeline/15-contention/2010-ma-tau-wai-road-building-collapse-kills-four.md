@@ -40,8 +40,8 @@ The tragedy sent shockwaves through Hong Kong society, laying bare the severe sa
 
 ## Claims to verify
 
-- [ ] The exact construction year of No. 45J Ma Tau Wai Road as 1955.
-- [ ] The precise death toll and timeline of the rescue operation on January 29, 2010.
-- [ ] Official inquiry findings regarding unauthorized ground-floor alterations as the primary catalyst for the collapse.
+- ❔ The exact construction year of No. 45J Ma Tau Wai Road as 1955.
+- ❔ The precise death toll and timeline of the rescue operation on January 29, 2010.
+- ❔ Official inquiry findings regarding unauthorized ground-floor alterations as the primary catalyst for the collapse.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

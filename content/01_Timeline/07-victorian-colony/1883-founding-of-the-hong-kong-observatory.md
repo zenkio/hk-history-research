@@ -38,8 +38,8 @@ The founding of the Observatory marked a critical transition from ad hoc weather
 
 ## Claims to verify
 
-- [ ] The Hong Kong Observatory was officially established on March 2, 1883.
-- [ ] William Doberck served as the first director of the Hong Kong Observatory.
+- ❔ The Hong Kong Observatory was officially established on March 2, 1883.
+- ❔ William Doberck served as the first director of the Hong Kong Observatory.
 
 ## Evidence
 

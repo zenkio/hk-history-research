@@ -40,7 +40,7 @@ The formation of SOCO in **1971** represented a watershed moment in Hong Kong's 
 
 ## Claims to verify
 
-- [ ] The exact month and founding circumstances of the Society for Community Organization in 1971
-- [ ] The direct involvement and institutional lineage of founding members and religious organizations
+- ❔ The exact month and founding circumstances of the Society for Community Organization in 1971
+- ❔ The direct involvement and institutional lineage of founding members and religious organizations
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

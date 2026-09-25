@@ -42,7 +42,7 @@ The crisis exposed critical flaws in Hong Kong's financial self-regulation. In r
 
 ## Claims to verify
 
-- [ ] The exact percentage drop of the Hang Seng Index upon reopening on October 26, 1987
-- [ ] The precise mechanics and emergency loans mobilized by the government and the Exchange Banks' Association during the four-day closure
+- ❔ The exact percentage drop of the Hang Seng Index upon reopening on October 26, 1987
+- ❔ The precise mechanics and emergency loans mobilized by the government and the Exchange Banks' Association during the four-day closure
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

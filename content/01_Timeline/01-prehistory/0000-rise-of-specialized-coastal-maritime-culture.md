@@ -38,7 +38,7 @@ The emergence of this specialized coastal maritime culture laid the foundational
 
 ## Claims to verify
 
-- [ ] Neolithic inhabitants in the Hong Kong region developed specialized seafaring skills around 3000 BCE.
-- [ ] Early populations established seasonal coastal camps to exploit marine resources in the Pearl River Delta region.
+- ❔ Neolithic inhabitants in the Hong Kong region developed specialized seafaring skills around 3000 BCE.
+- ❔ Early populations established seasonal coastal camps to exploit marine resources in the Pearl River Delta region.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

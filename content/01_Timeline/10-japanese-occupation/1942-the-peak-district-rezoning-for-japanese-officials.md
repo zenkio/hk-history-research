@@ -37,8 +37,8 @@ Historians identify the rezoning as a pivotal shift in the urban geography of oc
 
 ## Claims to verify
 
-- [ ] The exact number of British residential properties reallocated to Japanese officials in 1942.
-- [ ] The specific legislative documents issued by the Japanese Military Administration regarding property seizures in the Peak District.
-- [ ] The extent to which Japanese officials permanently relocated their families to the Peak vs. using the houses as temporary administrative quarters.
+- ❔ The exact number of British residential properties reallocated to Japanese officials in 1942.
+- ❔ The specific legislative documents issued by the Japanese Military Administration regarding property seizures in the Peak District.
+- ❔ The extent to which Japanese officials permanently relocated their families to the Peak vs. using the houses as temporary administrative quarters.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

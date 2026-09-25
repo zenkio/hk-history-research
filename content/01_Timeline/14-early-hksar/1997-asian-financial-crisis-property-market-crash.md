@@ -42,7 +42,7 @@ The property crash effectively ended the high-growth, high-property-price consen
 
 ## Claims to verify
 
-- [ ] The exact percentage drop in property values between the peak in 1997 and the subsequent trough.
-- [ ] The peak number of residential mortgage accounts that fell into negative equity status during the worst years of the crisis.
+- ❔ The exact percentage drop in property values between the peak in 1997 and the subsequent trough.
+- ❔ The peak number of residential mortgage accounts that fell into negative equity status during the worst years of the crisis.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

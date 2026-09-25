@@ -39,8 +39,8 @@ The release of the white paper sparked immediate and widespread controversy in H
 
 ## Claims to verify
 
-- [ ] The State Council published the white paper on June 10, 2014.
-- [ ] The white paper explicitly used the term 'comprehensive jurisdiction' (全面管治權) regarding Beijing's authority over Hong Kong.
-- [ ] The document categorized judges as part of the 'administrators' required to be patriotic.
+- ❔ The State Council published the white paper on June 10, 2014.
+- ❔ The white paper explicitly used the term 'comprehensive jurisdiction' (全面管治權) regarding Beijing's authority over Hong Kong.
+- ❔ The document categorized judges as part of the 'administrators' required to be patriotic.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

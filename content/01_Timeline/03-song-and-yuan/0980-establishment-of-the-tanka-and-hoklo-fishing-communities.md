@@ -40,7 +40,7 @@ This formative period marked the emergence of Hong Kong's early marine economy, 
 
 ## Claims to verify
 
-- [ ] The precise timeline of Tanka and Hoklo permanent settlement formation in Hong Kong waters between 960 and 1000.
-- [ ] The administrative categorization and taxation status of boat-dwelling populations during the early Song dynasty.
+- ❔ The precise timeline of Tanka and Hoklo permanent settlement formation in Hong Kong waters between 960 and 1000.
+- ❔ The administrative categorization and taxation status of boat-dwelling populations during the early Song dynasty.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -39,8 +39,8 @@ The establishment of the franchised bus monopoly marked a pivotal turning point 
 
 ## Claims to verify
 
-- [ ] The exact formal agreements and gazette dates for the granting of the KMB and CMB franchises in June 1933.
-- [ ] The specific terms of the regulatory oversight exercised by the colonial government over fare-setting during the initial franchise period.
+- ❔ The exact formal agreements and gazette dates for the granting of the KMB and CMB franchises in June 1933.
+- ❔ The specific terms of the regulatory oversight exercised by the colonial government over fare-setting during the initial franchise period.
 
 ## Evidence
 

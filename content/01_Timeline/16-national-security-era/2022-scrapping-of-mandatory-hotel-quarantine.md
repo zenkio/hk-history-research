@@ -39,7 +39,7 @@ The implementation of the '0+3' scheme represented a pivotal psychological and l
 
 ## Claims to verify
 
-- [ ] Mandatory hotel quarantine was replaced by the '0+3' scheme on September 26, 2022.
-- [ ] Chief Executive John Lee announced the policy change on September 24, 2022.
+- ❔ Mandatory hotel quarantine was replaced by the '0+3' scheme on September 26, 2022.
+- ❔ Chief Executive John Lee announced the policy change on September 24, 2022.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

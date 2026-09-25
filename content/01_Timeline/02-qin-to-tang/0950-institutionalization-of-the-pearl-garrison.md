@@ -36,7 +36,7 @@ The institutionalization of the pearl garrison represents a crucial transition i
 
 ## Claims to verify
 
-- [ ] The Mei-chuan Garrison was specifically established around the year 950 CE by the Southern Han state.
-- [ ] Pearl-diving operations in Tai Po were directly militarized to prevent private smuggling and ensure monopoly control.
+- ❔ The Mei-chuan Garrison was specifically established around the year 950 CE by the Southern Han state.
+- ❔ Pearl-diving operations in Tai Po were directly militarized to prevent private smuggling and ensure monopoly control.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

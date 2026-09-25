@@ -42,7 +42,7 @@ The opening of the cultural hub symbolized the maturation of Hong Kong's perform
 
 ## Claims to verify
 
-- [ ] The exact guest list and royal attendees present at the opening ceremony on November 8, 1989.
-- [ ] Official cost estimates and construction timeline details from Urban Council records.
+- ❔ The exact guest list and royal attendees present at the opening ceremony on November 8, 1989.
+- ❔ Official cost estimates and construction timeline details from Urban Council records.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

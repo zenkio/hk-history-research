@@ -39,8 +39,8 @@ The incense trade marked a pivotal transition for the region from a peripheral z
 
 ## Claims to verify
 
-- [ ] Archaeological evidence of 8th-century incense processing sites in the New Territories
-- [ ] Extent of Tang military oversight in Tuen Mun regarding commercial maritime transit
-- [ ] Etymological origins of the name 'Hong Kong' in relation to Tang-era geography
+- ❔ Archaeological evidence of 8th-century incense processing sites in the New Territories
+- ❔ Extent of Tang military oversight in Tuen Mun regarding commercial maritime transit
+- ❔ Etymological origins of the name 'Hong Kong' in relation to Tang-era geography
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

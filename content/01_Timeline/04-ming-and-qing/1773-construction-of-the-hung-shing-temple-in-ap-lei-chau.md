@@ -37,7 +37,7 @@ The establishment of the temple marks a tangible milestone in the transition of 
 
 ## Claims to verify
 
-- [ ] The temple was constructed specifically in the year 1773 based on surviving dedicatory inscriptions.
-- [ ] Funding was provided collectively by local merchants and shipbuilders rather than an imperial decree.
+- ❔ The temple was constructed specifically in the year 1773 based on surviving dedicatory inscriptions.
+- ❔ Funding was provided collectively by local merchants and shipbuilders rather than an imperial decree.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

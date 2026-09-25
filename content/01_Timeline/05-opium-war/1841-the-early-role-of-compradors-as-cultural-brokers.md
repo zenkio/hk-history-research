@@ -42,8 +42,8 @@ The role of the comprador was fundamental to the survival and growth of the earl
 
 ## Claims to verify
 
-- [ ] The exact timing of the shift from Cohong-led trade to individual comprador contracts in Hong Kong circa 1841.
-- [ ] The extent to which British officials relied on compradors for land tenure negotiations in the early 1840s.
-- [ ] The legal status of comprador agreements under the early British colonial court system.
+- ❔ The exact timing of the shift from Cohong-led trade to individual comprador contracts in Hong Kong circa 1841.
+- ❔ The extent to which British officials relied on compradors for land tenure negotiations in the early 1840s.
+- ❔ The legal status of comprador agreements under the early British colonial court system.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -39,8 +39,8 @@ The opening of the West Rail Line fundamentally altered the daily commute for hu
 
 ## Claims to verify
 
-- [ ] Exact date of official public opening and first revenue-earning train service.
-- [ ] The official number of initial stations at the time of the December 20, 2003, launch.
-- [ ] Specific initial fare policies compared to pre-existing bus routes.
+- ❔ Exact date of official public opening and first revenue-earning train service.
+- ❔ The official number of initial stations at the time of the December 20, 2003, launch.
+- ❔ Specific initial fare policies compared to pre-existing bus routes.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

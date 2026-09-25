@@ -37,7 +37,7 @@ The founding of the Po Leung Kuk marked a crucial milestone in early Hong Kong h
 
 ## Claims to verify
 
-- [ ] The exact date of the formal establishment and petition approval by Governor John Pope Hennessy on November 8, 1878.
-- [ ] The precise original name and membership composition of the founding Chinese merchants.
+- ❔ The exact date of the formal establishment and petition approval by Governor John Pope Hennessy on November 8, 1878.
+- ❔ The precise original name and membership composition of the founding Chinese merchants.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

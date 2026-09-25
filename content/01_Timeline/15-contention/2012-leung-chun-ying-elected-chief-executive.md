@@ -42,8 +42,8 @@ Leung's tenure as Chief Executive is widely viewed by historians and political a
 
 ## Claims to verify
 
-- [ ] Leung Chun-ying received 689 votes from the Election Committee on March 25, 2012.
-- [ ] Henry Tang received 285 votes and Albert Ho received 42 votes in the same election.
-- [ ] Leung Chun-ying assumed office as Chief Executive on July 1, 2012.
+- ❔ Leung Chun-ying received 689 votes from the Election Committee on March 25, 2012.
+- ❔ Henry Tang received 285 votes and Albert Ho received 42 votes in the same election.
+- ❔ Leung Chun-ying assumed office as Chief Executive on July 1, 2012.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

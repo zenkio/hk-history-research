@@ -36,8 +36,8 @@ The event is widely regarded by economic historians as a milestone in the consol
 
 ## Claims to verify
 
-- [ ] Official attendance figures for the 1975 trade fair.
-- [ ] The exact organizational relationship between the 1975 trade fair and the longstanding Chinese Manufacturers' Association 'Brands and Products Expo'.
-- [ ] Specific international trade contracts signed directly at the 1975 venue.
+- ❔ Official attendance figures for the 1975 trade fair.
+- ❔ The exact organizational relationship between the 1975 trade fair and the longstanding Chinese Manufacturers' Association 'Brands and Products Expo'.
+- ❔ Specific international trade contracts signed directly at the 1975 venue.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

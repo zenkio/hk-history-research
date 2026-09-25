@@ -42,7 +42,7 @@ Historians generally view the opening of the City Hall as a milestone in the dev
 
 ## Claims to verify
 
-- [ ] The exact seating capacities of the concert hall and theatre at the time of opening in 1962.
-- [ ] The precise financial breakdown of the public funds used to construct the modernist complex.
+- ❔ The exact seating capacities of the concert hall and theatre at the time of opening in 1962.
+- ❔ The precise financial breakdown of the public funds used to construct the modernist complex.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

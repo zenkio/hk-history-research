@@ -38,7 +38,7 @@ The establishment of the union highlighted the complex intersection of local lab
 
 ## Claims to verify
 
-- [ ] Exact founding date and registration details of the Hong Kong Sea Transport Workers Union in 1949
-- [ ] Specific leadership affiliations and factional splits within the union during its formative year
+- ❔ Exact founding date and registration details of the Hong Kong Sea Transport Workers Union in 1949
+- ❔ Specific leadership affiliations and factional splits within the union during its formative year
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

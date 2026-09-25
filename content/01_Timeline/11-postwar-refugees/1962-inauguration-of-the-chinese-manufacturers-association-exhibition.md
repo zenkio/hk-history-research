@@ -40,7 +40,7 @@ The exhibition was widely regarded as a pivotal morale booster, fostering a dist
 
 ## Claims to verify
 
-- [ ] Specific visitor attendance numbers for the 1962 exhibition according to official Chinese Manufacturers' Association reports
-- [ ] Exact venue locations utilized by the exhibition in 1962
+- ❔ Specific visitor attendance numbers for the 1962 exhibition according to official Chinese Manufacturers' Association reports
+- ❔ Exact venue locations utilized by the exhibition in 1962
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

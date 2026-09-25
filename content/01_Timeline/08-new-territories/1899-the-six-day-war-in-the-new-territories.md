@@ -46,8 +46,8 @@ The conflict marked the final major armed resistance against British expansion i
 
 ## Claims to verify
 
-- [ ] The exact casualty numbers for the indigenous militia during the six-day conflict
-- [ ] The degree of direct involvement or tacit approval by Qing officials in Shenzhen regarding the villagers' resistance
+- ❔ The exact casualty numbers for the indigenous militia during the six-day conflict
+- ❔ The degree of direct involvement or tacit approval by Qing officials in Shenzhen regarding the villagers' resistance
 
 ## Photos from this period
 

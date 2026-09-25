@@ -36,8 +36,8 @@ The implementation of the OALA marked a shift in Hong Kong’s welfare policy to
 
 ## Claims to verify
 
-- [ ] The exact start date of OALA payments.
-- [ ] The specific income and asset thresholds set at the time of implementation in 2013.
-- [ ] The details of the Legislative Council filibustering process regarding the funding bill.
+- ❔ The exact start date of OALA payments.
+- ❔ The specific income and asset thresholds set at the time of implementation in 2013.
+- ❔ The details of the Legislative Council filibustering process regarding the funding bill.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

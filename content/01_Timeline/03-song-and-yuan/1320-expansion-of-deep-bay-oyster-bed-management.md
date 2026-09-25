@@ -38,7 +38,7 @@ The systematic development of oyster beds established a long-term economic model
 
 ## Claims to verify
 
-- [ ] Confirm the degree to which Yuan dynasty official records acknowledge private clan management of tidal flats.
-- [ ] Verify the archaeological evidence for specific oyster-cultivation techniques dated precisely to the 1320s.
+- ❔ Confirm the degree to which Yuan dynasty official records acknowledge private clan management of tidal flats.
+- ❔ Verify the archaeological evidence for specific oyster-cultivation techniques dated precisely to the 1320s.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

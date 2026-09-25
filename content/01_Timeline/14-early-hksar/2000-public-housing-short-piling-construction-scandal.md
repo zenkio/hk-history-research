@@ -44,7 +44,7 @@ The short-piling scandal marked a watershed moment for governance and public wor
 
 ## Claims to verify
 
-- [ ] Did two blocks of Yu Chui Court get demolished due to short piling?
-- [ ] Did Rosanna Wong resign on June 24, 2000?
+- ❔ Did two blocks of Yu Chui Court get demolished due to short piling?
+- ❔ Did Rosanna Wong resign on June 24, 2000?
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

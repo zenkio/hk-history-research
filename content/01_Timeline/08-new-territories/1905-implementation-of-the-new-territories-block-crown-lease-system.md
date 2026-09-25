@@ -36,7 +36,7 @@ This monumental administrative undertaking established a modern property registr
 
 ## Claims to verify
 
-- [ ] Did the Block Crown Lease survey process finish precisely in 1905 or did minor supplementary registrations continue into later years?
-- [ ] What were the exact mechanisms used to reconcile conflicting indigenous land deeds during the cadastral survey?
+- ❔ Did the Block Crown Lease survey process finish precisely in 1905 or did minor supplementary registrations continue into later years?
+- ❔ What were the exact mechanisms used to reconcile conflicting indigenous land deeds during the cadastral survey?
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

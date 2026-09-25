@@ -37,8 +37,8 @@ The decision to permit the Mui Tsai system became one of the most enduring human
 
 ## Claims to verify
 
-- [ ] The exact legal instrument or government circular issued in 1870 defining Mui Tsai status
-- [ ] The extent to which 1870 acts were influenced by the British fear of disrupting the Tallow and Sugar trade networks
-- [ ] Whether 'legalization' was an active legislative act or a passive policy of non-interference
+- ❔ The exact legal instrument or government circular issued in 1870 defining Mui Tsai status
+- ❔ The extent to which 1870 acts were influenced by the British fear of disrupting the Tallow and Sugar trade networks
+- ❔ Whether 'legalization' was an active legislative act or a passive policy of non-interference
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

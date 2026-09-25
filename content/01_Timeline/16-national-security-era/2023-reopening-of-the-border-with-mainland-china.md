@@ -40,7 +40,7 @@ The reopening marked a pivotal turning point for Hong Kong's post-pandemic recov
 
 ## Claims to verify
 
-- [ ] The exact date when quarantine-free travel resumed between Hong Kong and mainland China was January 8, 2023.
-- [ ] Initial daily quotas were implemented for specific land boundary control points upon reopening.
+- ❔ The exact date when quarantine-free travel resumed between Hong Kong and mainland China was January 8, 2023.
+- ❔ Initial daily quotas were implemented for specific land boundary control points upon reopening.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

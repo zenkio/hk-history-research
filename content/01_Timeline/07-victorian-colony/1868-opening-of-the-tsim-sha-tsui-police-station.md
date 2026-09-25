@@ -38,7 +38,7 @@ The creation of the Tsim Sha Tsui Police Station is widely viewed as a crucial s
 
 ## Claims to verify
 
-- [ ] The exact month and day of the opening of the first Tsim Sha Tsui Police Station in 1868
-- [ ] The precise original location and architectural composition of the 1868 station building before later rebuilds
+- ❔ The exact month and day of the opening of the first Tsim Sha Tsui Police Station in 1868
+- ❔ The precise original location and architectural composition of the 1868 station building before later rebuilds
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

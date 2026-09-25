@@ -41,8 +41,8 @@ The introduction of these techniques marked a pivotal shift in the local economy
 
 ## Claims to verify
 
-- [ ] Verification of the specific dates of migration for the 'Five Great Clans' of the New Territories.
-- [ ] Archaeological evidence of irrigation infrastructure dating back to the 13th century in the New Territories.
-- [ ] The transition rate from salt-extraction to rice cultivation in the Southern Song period.
+- ❔ Verification of the specific dates of migration for the 'Five Great Clans' of the New Territories.
+- ❔ Archaeological evidence of irrigation infrastructure dating back to the 13th century in the New Territories.
+- ❔ The transition rate from salt-extraction to rice cultivation in the Southern Song period.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

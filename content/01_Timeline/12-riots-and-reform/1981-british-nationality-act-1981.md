@@ -41,7 +41,7 @@ The implementation of the Act marked a critical turning point in Hong Kong's soc
 
 ## Claims to verify
 
-- [ ] The British Nationality Act 1981 received royal assent and took effect on the specific legal timeline affecting CUKC status.
-- [ ] Exact wording of the citizenship tiers created under the 1981 Act regarding dependent territories.
+- ❔ The British Nationality Act 1981 received royal assent and took effect on the specific legal timeline affecting CUKC status.
+- ❔ Exact wording of the citizenship tiers created under the 1981 Act regarding dependent territories.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

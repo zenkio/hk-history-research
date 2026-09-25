@@ -39,7 +39,7 @@ The launch of the visa scheme precipitated a significant demographic shift in Ho
 
 ## Claims to verify
 
-- [ ] The exact number of applications submitted to the UK Home Office in the first year of the BNO visa scheme
-- [ ] The formal diplomatic protests issued by the Chinese Ministry of Foreign Affairs regarding the BNO passport non-recognition policy
+- ❔ The exact number of applications submitted to the UK Home Office in the first year of the BNO visa scheme
+- ❔ The formal diplomatic protests issued by the Chinese Ministry of Foreign Affairs regarding the BNO passport non-recognition policy
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

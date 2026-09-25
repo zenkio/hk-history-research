@@ -38,7 +38,7 @@ The monetary crisis exacerbated the already tense diplomatic environment in sout
 
 ## Claims to verify
 
-- [ ] The exact percentage of silver devaluation caused by the opium trade between 1830 and 1836.
-- [ ] The specific legislative documents detailing the 1836 anti-silver outflow measures.
+- ❔ The exact percentage of silver devaluation caused by the opium trade between 1830 and 1836.
+- ❔ The specific legislative documents detailing the 1836 anti-silver outflow measures.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

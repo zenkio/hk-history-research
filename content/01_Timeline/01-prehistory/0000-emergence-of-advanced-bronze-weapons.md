@@ -36,7 +36,7 @@ The sudden appearance of advanced weaponry carries profound implications for the
 
 ## Claims to verify
 
-- [ ] Advanced bronze ge-halberds and socketed axes in the Lingnan region date approximately to c. 800 BCE.
-- [ ] The presence of these weapons correlates directly with increased social stratification and tribal conflict in local archaeological models.
+- ❔ Advanced bronze ge-halberds and socketed axes in the Lingnan region date approximately to c. 800 BCE.
+- ❔ The presence of these weapons correlates directly with increased social stratification and tribal conflict in local archaeological models.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

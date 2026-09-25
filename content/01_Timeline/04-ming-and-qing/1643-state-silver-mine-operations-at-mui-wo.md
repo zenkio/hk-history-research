@@ -37,7 +37,7 @@ The state silver mining operations at Mui Wo illustrate the reach and limitation
 
 ## Claims to verify
 
-- [ ] State-directed silver mining officially commenced specifically in the year 1643 at Mui Wo.
-- [ ] Taxation disputes between miners and agriculturalists were a direct result of the Ming state operations.
+- ❔ State-directed silver mining officially commenced specifically in the year 1643 at Mui Wo.
+- ❔ Taxation disputes between miners and agriculturalists were a direct result of the Ming state operations.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

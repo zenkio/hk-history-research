@@ -35,7 +35,7 @@ This structural expansion fundamentally transformed Hong Kong's educational land
 
 ## Claims to verify
 
-- [ ] The specific target percentage of the age cohort designated for first-year degree places in 1991
-- [ ] The exact timeline of polytechnics achieving full university status during the early 1990s
+- ❔ The specific target percentage of the age cohort designated for first-year degree places in 1991
+- ❔ The exact timeline of polytechnics achieving full university status during the early 1990s
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

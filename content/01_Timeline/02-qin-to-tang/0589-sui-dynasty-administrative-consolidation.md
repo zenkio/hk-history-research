@@ -36,7 +36,7 @@ The administrative actions of the Sui dynasty laid important structural preceden
 
 ## Claims to verify
 
-- [ ] Specific local administrative units established or reorganized in the Hong Kong region under the Sui Dynasty in 589.
-- [ ] The exact nature and reach of Sui taxation policies regarding salt and maritime trade in Tuen Mun.
+- ❔ Specific local administrative units established or reorganized in the Hong Kong region under the Sui Dynasty in 589.
+- ❔ The exact nature and reach of Sui taxation policies regarding salt and maritime trade in Tuen Mun.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

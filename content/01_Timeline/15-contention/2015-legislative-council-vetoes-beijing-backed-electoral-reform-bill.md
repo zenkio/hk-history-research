@@ -47,8 +47,8 @@ The veto of the reform package froze Hong Kong's constitutional development, lea
 
 ## Claims to verify
 
-- [ ] The exact vote count was 28 against and 8 in favor.
-- [ ] The number of pro-establishment lawmakers who walked out of the chamber prior to the vote.
-- [ ] The specific justification provided by pro-establishment lawmakers for leaving the chamber.
+- ❔ The exact vote count was 28 against and 8 in favor.
+- ❔ The number of pro-establishment lawmakers who walked out of the chamber prior to the vote.
+- ❔ The specific justification provided by pro-establishment lawmakers for leaving the chamber.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

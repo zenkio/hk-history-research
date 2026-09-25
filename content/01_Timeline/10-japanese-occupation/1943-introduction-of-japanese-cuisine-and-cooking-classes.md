@@ -35,7 +35,7 @@ The promotion of Japanese cuisine and cooking techniques highlights the intersec
 
 ## Claims to verify
 
-- [ ] Public cooking classes specifically focusing on Japanese staples were actively organized in May 1943.
-- [ ] The occupation administration systematically promoted soybeans and sweet potatoes as official rice substitutes.
+- ❔ Public cooking classes specifically focusing on Japanese staples were actively organized in May 1943.
+- ❔ The occupation administration systematically promoted soybeans and sweet potatoes as official rice substitutes.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

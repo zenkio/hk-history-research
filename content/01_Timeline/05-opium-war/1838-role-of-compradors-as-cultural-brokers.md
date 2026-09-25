@@ -38,8 +38,8 @@ The comprador class became the structural backbone of the burgeoning trade hub t
 
 ## Claims to verify
 
-- [ ] Specific legal restrictions prohibiting foreign merchants from learning Chinese in 1838
-- [ ] The extent to which compradors were held legally liable for the debts of their foreign employers under Qing law
-- [ ] The level of direct involvement of compradors in the specific logistics of the opium trade versus legal commodities
+- ❔ Specific legal restrictions prohibiting foreign merchants from learning Chinese in 1838
+- ❔ The extent to which compradors were held legally liable for the debts of their foreign employers under Qing law
+- ❔ The level of direct involvement of compradors in the specific logistics of the opium trade versus legal commodities
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -36,8 +36,8 @@ The enactment of the ordinance is widely viewed by historians as a transformativ
 
 ## Claims to verify
 
-- [ ] Specific scope of exemptions for immigration powers in the original 2008 text
-- [ ] Exact date of Legislative Council final vote
-- [ ] Extent of EOC formal influence on the drafting process
+- ❔ Specific scope of exemptions for immigration powers in the original 2008 text
+- ❔ Exact date of Legislative Council final vote
+- ❔ Extent of EOC formal influence on the drafting process
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

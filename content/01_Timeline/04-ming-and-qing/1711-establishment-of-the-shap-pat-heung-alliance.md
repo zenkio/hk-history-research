@@ -36,8 +36,8 @@ The formation of the Shap Pat Heung marked a crucial turning point in the social
 
 ## Claims to verify
 
-- [ ] The Shap Pat Heung alliance was officially established in the specific year of 1711.
-- [ ] The alliance was formed specifically in direct opposition to the Tang clan's dominance.
-- [ ] The Tai Shu Ha Tin Hau Temple served as the original administrative center from the alliance's inception.
+- ❔ The Shap Pat Heung alliance was officially established in the specific year of 1711.
+- ❔ The alliance was formed specifically in direct opposition to the Tang clan's dominance.
+- ❔ The Tai Shu Ha Tin Hau Temple served as the original administrative center from the alliance's inception.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

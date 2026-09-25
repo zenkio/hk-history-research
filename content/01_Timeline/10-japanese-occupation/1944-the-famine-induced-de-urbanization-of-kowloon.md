@@ -37,8 +37,8 @@ This period marked the nadir of Hong Kong's physical development. The de-urbaniz
 
 ## Claims to verify
 
-- [ ] The extent to which urban dismantling was organized by survivalist groups versus individual household actions.
-- [ ] The specific types of infrastructure materials most commonly salvaged for fuel in 1944.
-- [ ] The correlation between the 1944 food shortages and the physical degradation rates of tenement housing in Kowloon.
+- ❔ The extent to which urban dismantling was organized by survivalist groups versus individual household actions.
+- ❔ The specific types of infrastructure materials most commonly salvaged for fuel in 1944.
+- ❔ The correlation between the 1944 food shortages and the physical degradation rates of tenement housing in Kowloon.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

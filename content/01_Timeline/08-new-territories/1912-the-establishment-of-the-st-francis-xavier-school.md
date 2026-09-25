@@ -39,8 +39,8 @@ The founding of the school serves as a case study for the role of private, relig
 
 ## Claims to verify
 
-- [ ] Confirm the exact location of the original 1912 school building in Wanchai.
-- [ ] Verify the official records of the Marist Brothers regarding the exact opening date in 1912.
-- [ ] Assess the socioeconomic background of the inaugural student body through surviving admission archives.
+- ❔ Confirm the exact location of the original 1912 school building in Wanchai.
+- ❔ Verify the official records of the Marist Brothers regarding the exact opening date in 1912.
+- ❔ Assess the socioeconomic background of the inaugural student body through surviving admission archives.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

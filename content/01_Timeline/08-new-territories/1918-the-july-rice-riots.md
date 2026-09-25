@@ -35,7 +35,7 @@ The **July Rice Riots** laid bare the severe wealth disparity in early 20th-cent
 
 ## Claims to verify
 
-- [ ] Exact chronology of the escalation of looting incidents in July 1918
-- [ ] Specific emergency price controls or rationing measures enacted by the colonial government in response to the riots
+- ❔ Exact chronology of the escalation of looting incidents in July 1918
+- ❔ Specific emergency price controls or rationing measures enacted by the colonial government in response to the riots
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -37,7 +37,7 @@ The construction of the hall was a cornerstone in establishing the enduring auto
 
 ## Claims to verify
 
-- [ ] Whether the specific founding date of 1273 for the Tang Ancestral Hall can be definitively corroborated by surviving primary genealogies or if it represents a later retrospective dating.
-- [ ] The exact genealogical lineage linking the Ping Shan branch to the broader Song-era migration waves into Guangdong.
+- ❔ Whether the specific founding date of 1273 for the Tang Ancestral Hall can be definitively corroborated by surviving primary genealogies or if it represents a later retrospective dating.
+- ❔ The exact genealogical lineage linking the Ping Shan branch to the broader Song-era migration waves into Guangdong.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

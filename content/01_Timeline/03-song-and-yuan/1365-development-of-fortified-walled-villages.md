@@ -39,7 +39,7 @@ The emergence of the fortified walled village marked a profound evolution in the
 
 ## Claims to verify
 
-- [ ] Specific defensive features such as iron gates were widely adopted in Hong Kong villages by c. 1365.
-- [ ] The escalation of late Yuan banditry was the primary catalyst for initial walled village construction in the territory.
+- ❔ Specific defensive features such as iron gates were widely adopted in Hong Kong villages by c. 1365.
+- ❔ The escalation of late Yuan banditry was the primary catalyst for initial walled village construction in the territory.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

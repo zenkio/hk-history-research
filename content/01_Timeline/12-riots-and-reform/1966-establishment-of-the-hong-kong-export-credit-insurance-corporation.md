@@ -35,7 +35,7 @@ The creation of the corporation provided a crucial institutional safety net for 
 
 ## Claims to verify
 
-- [ ] The exact legislative enactment date and statutory powers granted under the original 1966 Hong Kong Export Credit Insurance Corporation Ordinance.
-- [ ] The initial volume of insurance coverage issued by the corporation during its first year of operation.
+- ❔ The exact legislative enactment date and statutory powers granted under the original 1966 Hong Kong Export Credit Insurance Corporation Ordinance.
+- ❔ The initial volume of insurance coverage issued by the corporation during its first year of operation.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

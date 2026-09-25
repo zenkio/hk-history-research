@@ -37,7 +37,7 @@ Yijing's journey provides crucial primary documentation of the active maritime r
 
 ## Claims to verify
 
-- [ ] Yijing departed Guangzhou in the year 671 on a Persian ship.
-- [ ] Yijing's specific sailing route passed directly through the waters of modern-day Hong Kong.
+- ❔ Yijing departed Guangzhou in the year 671 on a Persian ship.
+- ❔ Yijing's specific sailing route passed directly through the waters of modern-day Hong Kong.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

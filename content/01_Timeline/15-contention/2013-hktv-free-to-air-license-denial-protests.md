@@ -43,7 +43,7 @@ The **HKTV** license denial protests marked a significant mobilization of urban 
 
 ## Claims to verify
 
-- [ ] The exact number of participants who attended the October 20, 2013 rally outside the Central Government Offices
-- [ ] The specific criteria used by the Executive Council in evaluating the HKTV broadcast license application
+- ❔ The exact number of participants who attended the October 20, 2013 rally outside the Central Government Offices
+- ❔ The specific criteria used by the Executive Council in evaluating the HKTV broadcast license application
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

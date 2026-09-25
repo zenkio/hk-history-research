@@ -37,8 +37,8 @@ The creation of the prison represented the shift from a temporary military encam
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the foundation stone laying for the first Victoria Gaol structure.
-- [ ] Cross-reference the initial capacity and prisoner population demographics in 1841.
-- [ ] Clarify the distinction between the original 1841 structure and the subsequent 1850s masonry improvements.
+- ❔ Verify the specific date of the foundation stone laying for the first Victoria Gaol structure.
+- ❔ Cross-reference the initial capacity and prisoner population demographics in 1841.
+- ❔ Clarify the distinction between the original 1841 structure and the subsequent 1850s masonry improvements.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

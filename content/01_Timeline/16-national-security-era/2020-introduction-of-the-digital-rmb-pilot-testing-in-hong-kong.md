@@ -40,7 +40,7 @@ This pilot test represented a milestone in deepening financial connectivity betw
 
 ## Claims to verify
 
-- [ ] The Hong Kong Monetary Authority announced discussions regarding digital RMB technical testing on December 4, 2020.
-- [ ] Initial testing phases involved HKMA and People's Bank of China staff and selected merchants.
+- ❔ The Hong Kong Monetary Authority announced discussions regarding digital RMB technical testing on December 4, 2020.
+- ❔ Initial testing phases involved HKMA and People's Bank of China staff and selected merchants.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

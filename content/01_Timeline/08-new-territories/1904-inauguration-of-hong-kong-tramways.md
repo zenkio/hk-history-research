@@ -41,8 +41,8 @@ The inauguration of the tramway system served as a primary catalyst for the line
 
 ## Claims to verify
 
-- [ ] Exact passenger numbers on the opening day of July 30, 1904
-- [ ] Precise corporate restructuring timeline between the London-incorporated entity and Hong Kong Tramways Limited
+- ❔ Exact passenger numbers on the opening day of July 30, 1904
+- ❔ Precise corporate restructuring timeline between the London-incorporated entity and Hong Kong Tramways Limited
 
 ## Evidence
 

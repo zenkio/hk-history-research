@@ -39,7 +39,7 @@ The restructuring marked a major turning point in Hong Kong's governance structu
 
 ## Claims to verify
 
-- [ ] The exact legislative voting record for the abolition of the municipal councils in the Legislative Council.
-- [ ] The precise administrative rationale and internal government reports leading up to the 2000 restructuring.
+- ❔ The exact legislative voting record for the abolition of the municipal councils in the Legislative Council.
+- ❔ The precise administrative rationale and internal government reports leading up to the 2000 restructuring.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

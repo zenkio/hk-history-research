@@ -35,8 +35,8 @@ The discovery fundamentally pushed back the timeline of human presence in the te
 
 ## Claims to verify
 
-- [ ] The Wong Tei Tung site was discovered in 2003.
-- [ ] Stone tool artifacts from the site have been radiocarbon or technologically dated to approximately 38,000 BCE.
-- [ ] The site served primarily as a lithic workshop for manufacturing stone implements.
+- ❔ The Wong Tei Tung site was discovered in 2003.
+- ❔ Stone tool artifacts from the site have been radiocarbon or technologically dated to approximately 38,000 BCE.
+- ❔ The site served primarily as a lithic workshop for manufacturing stone implements.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

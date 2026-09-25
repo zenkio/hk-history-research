@@ -43,8 +43,8 @@ The annexation marked a decisive assertion of unilateral British authority in vi
 
 ## Claims to verify
 
-- [ ] British troops entered and occupied the Kowloon Walled City on December 27, 1899.
-- [ ] Governor Sir Henry Arthur Blake ordered the expulsion of Qing officials from the Walled City.
+- ❔ British troops entered and occupied the Kowloon Walled City on December 27, 1899.
+- ❔ Governor Sir Henry Arthur Blake ordered the expulsion of Qing officials from the Walled City.
 
 ## Research notes
 

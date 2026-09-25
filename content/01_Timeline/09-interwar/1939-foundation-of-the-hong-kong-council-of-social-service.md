@@ -35,7 +35,7 @@ Historians identify the foundation of the Council as a watershed moment for Hong
 
 ## Claims to verify
 
-- [ ] Verify the specific charter members of the Hong Kong Council of Social Service in 1939.
-- [ ] Confirm the extent to which the colonial government provided direct funding or oversight to the Council at its inception.
+- ❔ Verify the specific charter members of the Hong Kong Council of Social Service in 1939.
+- ❔ Confirm the extent to which the colonial government provided direct funding or oversight to the Council at its inception.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

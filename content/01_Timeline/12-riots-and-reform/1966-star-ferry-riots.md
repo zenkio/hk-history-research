@@ -48,8 +48,8 @@ The **Star Ferry Riots** shattered the complacency of the colonial administratio
 
 ## Claims to verify
 
-- [ ] Elliott Ngok-shun began his hunger strike on April 4, 1966.
-- [ ] The exact casualty and arrest figures reported during the April 1966 disturbances.
-- [ ] The precise legislative mechanism and public consultation process used by the Star Ferry Company for the 1966 fare increase.
+- ❔ Elliott Ngok-shun began his hunger strike on April 4, 1966.
+- ❔ The exact casualty and arrest figures reported during the April 1966 disturbances.
+- ❔ The precise legislative mechanism and public consultation process used by the Star Ferry Company for the 1966 fare increase.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

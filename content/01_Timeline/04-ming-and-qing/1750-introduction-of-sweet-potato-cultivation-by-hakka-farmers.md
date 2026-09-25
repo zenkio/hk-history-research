@@ -41,7 +41,7 @@ The widespread adoption of sweet potatoes fundamentally altered the agrarian eco
 
 ## Claims to verify
 
-- [ ] The precise timeline of sweet potato adoption specifically within the geographic boundaries of modern Hong Kong around the year 1750
-- [ ] The extent to which Hakka migration patterns directly correlated with the cultivation of marginal hillsides in the mid-Qing period
+- ❔ The precise timeline of sweet potato adoption specifically within the geographic boundaries of modern Hong Kong around the year 1750
+- ❔ The extent to which Hakka migration patterns directly correlated with the cultivation of marginal hillsides in the mid-Qing period
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

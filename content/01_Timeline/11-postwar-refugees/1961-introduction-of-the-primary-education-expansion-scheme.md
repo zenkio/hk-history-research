@@ -39,7 +39,7 @@ This policy marked a turning point in the colonial government's social welfare r
 
 ## Claims to verify
 
-- [ ] The exact numerical targets set by the Primary Education Expansion Scheme in 1961
-- [ ] The precise proportion of government-funded versus private school places following the scheme's implementation
+- ❔ The exact numerical targets set by the Primary Education Expansion Scheme in 1961
+- ❔ The precise proportion of government-funded versus private school places following the scheme's implementation
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

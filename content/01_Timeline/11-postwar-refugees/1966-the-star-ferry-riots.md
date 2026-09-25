@@ -44,9 +44,9 @@ The Star Ferry Riots marked a turning point in Hong Kong's postwar history. Whil
 
 ## Claims to verify
 
-- [ ] The exact date So Sau-chung began his hunger strike at the Star Ferry pier
-- [ ] The precise number of casualties and arrests recorded during the April 1966 disturbances
-- [ ] The specific findings and recommendations of the Kowloon Disturbances 1966 Commission of Inquiry
+- ❔ The exact date So Sau-chung began his hunger strike at the Star Ferry pier
+- ❔ The precise number of casualties and arrests recorded during the April 1966 disturbances
+- ❔ The specific findings and recommendations of the Kowloon Disturbances 1966 Commission of Inquiry
 
 ## Photos from this period
 

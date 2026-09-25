@@ -36,7 +36,7 @@ The incense trade provided the first major instance of Hong Kong’s rural econo
 
 ## Claims to verify
 
-- [ ] Verify the specific extent to which archaeological evidence confirms widespread incense harvesting in the Hong Kong region prior to the Southern Song Dynasty.
-- [ ] Clarify the degree of central imperial oversight versus local communal autonomy in the 9th-century incense trade.
+- ❔ Verify the specific extent to which archaeological evidence confirms widespread incense harvesting in the Hong Kong region prior to the Southern Song Dynasty.
+- ❔ Clarify the degree of central imperial oversight versus local communal autonomy in the 9th-century incense trade.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -39,8 +39,8 @@ The lead-in-water crisis severely impacted public confidence in housing construc
 
 ## Claims to verify
 
-- [ ] Water samples from Kai Ching Estate exceeded WHO lead guidelines in July 2015
-- [ ] The contamination was primarily attributed to lead-containing solder used in plumbing joints
-- [ ] Government established a Commission of Inquiry to investigate the root causes of the excess lead
+- ❔ Water samples from Kai Ching Estate exceeded WHO lead guidelines in July 2015
+- ❔ The contamination was primarily attributed to lead-containing solder used in plumbing joints
+- ❔ Government established a Commission of Inquiry to investigate the root causes of the excess lead
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

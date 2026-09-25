@@ -41,7 +41,7 @@ In the wake of this tragedy, fleeing loyalists and local populations in the Pear
 
 ## Claims to verify
 
-- [ ] Whether Yeung Leung-ye specifically died in or immediately before the events surrounding the Battle of Yamen
-- [ ] The exact historical origins of the earliest Hau Wong temples in Hong Kong
+- ❔ Whether Yeung Leung-ye specifically died in or immediately before the events surrounding the Battle of Yamen
+- ❔ The exact historical origins of the earliest Hau Wong temples in Hong Kong
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

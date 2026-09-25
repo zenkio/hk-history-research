@@ -40,7 +40,7 @@ The establishment of the Dairy Farm Company marked a major turning point in Hong
 
 ## Claims to verify
 
-- [ ] The exact founding month of the Dairy Farm Company as July 1886
-- [ ] The initial number of dairy cows imported by Sir Patrick Manson
+- ❔ The exact founding month of the Dairy Farm Company as July 1886
+- ❔ The initial number of dairy cows imported by Sir Patrick Manson
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

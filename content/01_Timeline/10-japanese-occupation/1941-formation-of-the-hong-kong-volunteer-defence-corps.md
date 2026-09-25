@@ -38,8 +38,8 @@ The existence and actions of the **HKVDC** serve as a focal point for understand
 
 ## Claims to verify
 
-- [ ] Verify the exact date of the final mobilization of the HKVDC in 1941.
-- [ ] Verify the official ethnic composition and breakdown of the volunteer units in 1941.
-- [ ] Confirm the specific defensive sectors assigned to the HKVDC during the Battle of Hong Kong.
+- ❔ Verify the exact date of the final mobilization of the HKVDC in 1941.
+- ❔ Verify the official ethnic composition and breakdown of the volunteer units in 1941.
+- ❔ Confirm the specific defensive sectors assigned to the HKVDC during the Battle of Hong Kong.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

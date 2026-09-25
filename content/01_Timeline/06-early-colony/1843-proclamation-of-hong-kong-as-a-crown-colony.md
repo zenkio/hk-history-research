@@ -49,9 +49,9 @@ This event transformed a temporary military encampment into a permanent British 
 
 ## Claims to verify
 
-- [ ] Ratifications of the Treaty of Nanking were officially exchanged on June 26, 1843.
-- [ ] Sir Henry Pottinger was sworn in as the first Governor on the exact date of June 26, 1843.
-- [ ] The specific structural details of the early Executive and Legislative Councils established by the 1843 royal charter.
+- ❔ Ratifications of the Treaty of Nanking were officially exchanged on June 26, 1843.
+- ❔ Sir Henry Pottinger was sworn in as the first Governor on the exact date of June 26, 1843.
+- ❔ The specific structural details of the early Executive and Legislative Councils established by the 1843 royal charter.
 
 ## Research notes
 

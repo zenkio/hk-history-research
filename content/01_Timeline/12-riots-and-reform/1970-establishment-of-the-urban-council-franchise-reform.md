@@ -40,7 +40,7 @@ Historians often view the **1970** franchise reform as a tentative yet vital ste
 
 ## Claims to verify
 
-- [ ] The exact statutory changes and specific voter qualification thresholds introduced in the 1970 Urban Council reform ordinances
-- [ ] The precise statistical increase in voter registration following the 1970 franchise expansion
+- ❔ The exact statutory changes and specific voter qualification thresholds introduced in the 1970 Urban Council reform ordinances
+- ❔ The precise statistical increase in voter registration following the 1970 franchise expansion
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

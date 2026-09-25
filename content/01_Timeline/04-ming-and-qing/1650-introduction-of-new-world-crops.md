@@ -36,7 +36,7 @@ This botanical introduction fundamentally changed the carrying capacity of the l
 
 ## Claims to verify
 
-- [ ] The specific timeline of when sweet potatoes and maize reached the specific coastal districts of Guangdong/Hong Kong.
-- [ ] The degree to which the Great Clearance period directly forced the adoption of these crops versus earlier spontaneous diffusion.
+- ❔ The specific timeline of when sweet potatoes and maize reached the specific coastal districts of Guangdong/Hong Kong.
+- ❔ The degree to which the Great Clearance period directly forced the adoption of these crops versus earlier spontaneous diffusion.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

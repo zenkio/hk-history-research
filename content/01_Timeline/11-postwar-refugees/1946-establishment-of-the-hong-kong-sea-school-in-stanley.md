@@ -36,7 +36,7 @@ The foundation of the school marked an important early step in Hong Kong's socia
 
 ## Claims to verify
 
-- [ ] The exact formal opening date of the Hong Kong Sea School as September 16, 1946
-- [ ] The initial founding mandate and target demographic of the school in its first year of operation
+- ❔ The exact formal opening date of the Hong Kong Sea School as September 16, 1946
+- ❔ The initial founding mandate and target demographic of the school in its first year of operation
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

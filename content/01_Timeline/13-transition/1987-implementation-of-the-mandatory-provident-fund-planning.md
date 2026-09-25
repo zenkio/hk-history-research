@@ -37,7 +37,7 @@ The initiation of these proposals in **1987** served as a cornerstone for late-c
 
 ## Claims to verify
 
-- [ ] The specific sequence of public consultation papers released between 1987 and 1992.
-- [ ] The official stance of major chambers of commerce regarding the initial 1987 proposals.
+- ❔ The specific sequence of public consultation papers released between 1987 and 1992.
+- ❔ The official stance of major chambers of commerce regarding the initial 1987 proposals.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

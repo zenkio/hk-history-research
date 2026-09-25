@@ -41,7 +41,7 @@ The intelligence gathered by the Hong Kong underground network provided the Alli
 
 ## Claims to verify
 
-- [ ] Exact volume and specific operational targets of intelligence transmitted by the underground network to the BAAG
-- [ ] The precise organizational links between urban underground agents and rural guerrilla forces such as the Hong Kong-Kowloon Independent Brigade
+- ❔ Exact volume and specific operational targets of intelligence transmitted by the underground network to the BAAG
+- ❔ The precise organizational links between urban underground agents and rural guerrilla forces such as the Hong Kong-Kowloon Independent Brigade
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

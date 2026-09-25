@@ -36,8 +36,8 @@ The controversy marked a pivotal moment in the articulation of a distinct 'Hong 
 
 ## Claims to verify
 
-- [ ] Verify the specific content and phrasing of the Education Bureau's 2013 article on the 'Deepening Understanding of Mainland China' series.
-- [ ] Confirm the timeline and scale of the public protests following the website publication.
-- [ ] Check for any formal legislative or administrative reversals of the language policy following the public response.
+- ❔ Verify the specific content and phrasing of the Education Bureau's 2013 article on the 'Deepening Understanding of Mainland China' series.
+- ❔ Confirm the timeline and scale of the public protests following the website publication.
+- ❔ Check for any formal legislative or administrative reversals of the language policy following the public response.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

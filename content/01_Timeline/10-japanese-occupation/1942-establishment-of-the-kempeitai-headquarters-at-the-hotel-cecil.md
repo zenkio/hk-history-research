@@ -38,7 +38,7 @@ The transition of the Hotel Cecil serves as a material symbol of the transition 
 
 ## Claims to verify
 
-- [ ] Precise dates of the conversion of the Hotel Cecil into the Kempeitai headquarters.
-- [ ] The extent of civilian detention and specific types of interrogation methods documented at the Hotel Cecil site.
+- ❔ Precise dates of the conversion of the Hotel Cecil into the Kempeitai headquarters.
+- ❔ The extent of civilian detention and specific types of interrogation methods documented at the Hotel Cecil site.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

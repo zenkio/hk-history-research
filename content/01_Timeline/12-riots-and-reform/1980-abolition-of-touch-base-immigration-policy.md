@@ -45,8 +45,8 @@ The abolition marked a definitive turning point in Hong Kong's immigration histo
 
 ## Claims to verify
 
-- [ ] The exact date of the abolition of the Touch Base policy was October 23, 1980.
-- [ ] Mandatory identity card checks and harsher penalties for employers were introduced simultaneously with the abolition.
-- [ ] The policy change involved coordination between the Hong Kong colonial administration and authorities in Guangdong.
+- ❔ The exact date of the abolition of the Touch Base policy was October 23, 1980.
+- ❔ Mandatory identity card checks and harsher penalties for employers were introduced simultaneously with the abolition.
+- ❔ The policy change involved coordination between the Hong Kong colonial administration and authorities in Guangdong.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

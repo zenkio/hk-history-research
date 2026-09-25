@@ -41,8 +41,8 @@ The creation of the Housing Authority laid the permanent foundation for Hong Kon
 
 ## Claims to verify
 
-- [ ] The precise legislative mechanism and exact date of the establishment of the Hong Kong Housing Authority in 1954.
-- [ ] The direct administrative relationship between the newly formed Housing Authority and the Resettlement Department in the immediate aftermath of the Shek Kip Mei fire.
+- ❔ The precise legislative mechanism and exact date of the establishment of the Hong Kong Housing Authority in 1954.
+- ❔ The direct administrative relationship between the newly formed Housing Authority and the Resettlement Department in the immediate aftermath of the Shek Kip Mei fire.
 
 ## Evidence
 

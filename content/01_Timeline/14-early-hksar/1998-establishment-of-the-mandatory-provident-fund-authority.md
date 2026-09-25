@@ -35,7 +35,7 @@ The creation of the **MPFA** marked a critical structural change in Hong Kong's 
 
 ## Claims to verify
 
-- [ ] Verify the specific gazette date of the Mandatory Provident Fund Schemes Authority establishment.
-- [ ] Confirm the official transition dates from the passing of the Ordinance to the operational launch of the MPF system.
+- ❔ Verify the specific gazette date of the Mandatory Provident Fund Schemes Authority establishment.
+- ❔ Confirm the official transition dates from the passing of the Ordinance to the operational launch of the MPF system.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

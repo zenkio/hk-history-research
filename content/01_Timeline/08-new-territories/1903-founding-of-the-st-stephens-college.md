@@ -39,7 +39,7 @@ The founding of St. Stephen's College marked a pivotal shift in colonial educati
 
 ## Claims to verify
 
-- [ ] St. Stephen's College was officially founded in 1903 by the Anglican Church under Bishop Joseph Hoare.
-- [ ] The curriculum was intentionally structured to blend traditional Chinese classical studies with Western learning.
+- ❔ St. Stephen's College was officially founded in 1903 by the Anglican Church under Bishop Joseph Hoare.
+- ❔ The curriculum was intentionally structured to blend traditional Chinese classical studies with Western learning.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

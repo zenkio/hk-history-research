@@ -38,8 +38,8 @@ The completion of the clubhouse at Statue Square in **1905** served as a physica
 
 ## Claims to verify
 
-- [ ] Verify the specific architectural style classification provided by the firm Leigh & Orange.
-- [ ] Confirm the exact completion date of the building as 1905 through primary archival records.
-- [ ] Investigate the initial membership policies regarding ethnic restrictions in the 1905 building.
+- ❔ Verify the specific architectural style classification provided by the firm Leigh & Orange.
+- ❔ Confirm the exact completion date of the building as 1905 through primary archival records.
+- ❔ Investigate the initial membership policies regarding ethnic restrictions in the 1905 building.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

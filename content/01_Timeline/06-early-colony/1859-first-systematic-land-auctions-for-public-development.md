@@ -37,8 +37,8 @@ This institutional shift established the 'high land price' policy. By auctioning
 
 ## Claims to verify
 
-- [ ] The exact year the transition to systematic auction procedures was formalized as 1859.
-- [ ] The extent to which the 1859 auctions were driven by Sir Hercules Robinson's specific fiscal directives.
-- [ ] The claim that current land-revenue reliance is a direct, unbroken institutional descendant of these specific 1859 auctions.
+- ❔ The exact year the transition to systematic auction procedures was formalized as 1859.
+- ❔ The extent to which the 1859 auctions were driven by Sir Hercules Robinson's specific fiscal directives.
+- ❔ The claim that current land-revenue reliance is a direct, unbroken institutional descendant of these specific 1859 auctions.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

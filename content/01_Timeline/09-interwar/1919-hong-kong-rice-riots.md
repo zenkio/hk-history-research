@@ -36,8 +36,8 @@ The **1919** rice riots marked a critical turning point in colonial governance a
 
 ## Claims to verify
 
-- [ ] Exact dates and casualty figures associated with the July 1919 disturbances
-- [ ] Specific emergency regulations enacted by the colonial government in response to the rice shortage
+- ❔ Exact dates and casualty figures associated with the July 1919 disturbances
+- ❔ Specific emergency regulations enacted by the colonial government in response to the rice shortage
 
 ## Evidence
 

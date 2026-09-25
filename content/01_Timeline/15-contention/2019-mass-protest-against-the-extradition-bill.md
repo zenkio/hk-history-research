@@ -38,8 +38,8 @@ The demonstration marked a watershed moment in contemporary Hong Kong history. T
 
 ## Claims to verify
 
-- [ ] Organizer and police estimates of the crowd size on June 9, 2019
-- [ ] The exact legislative timeline and official government statements regarding the suspension of the bill
+- ❔ Organizer and police estimates of the crowd size on June 9, 2019
+- ❔ The exact legislative timeline and official government statements regarding the suspension of the bill
 
 ## Photos from this period
 

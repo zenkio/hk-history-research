@@ -37,7 +37,7 @@ The establishment of the Queen Mary Hospital psychiatric wing represented a cruc
 
 ## Claims to verify
 
-- [ ] The psychiatric wing at Queen Mary Hospital officially opened in 1955.
-- [ ] The High Street Mental Hospital was the primary institutional facility for psychiatric care prior to the mid-1950s expansion.
+- ❔ The psychiatric wing at Queen Mary Hospital officially opened in 1955.
+- ❔ The High Street Mental Hospital was the primary institutional facility for psychiatric care prior to the mid-1950s expansion.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -40,7 +40,7 @@ The April 2004 ruling marked a major turning point in Hong Kong's constitutional
 
 ## Claims to verify
 
-- [ ] The NPCSC issued its official interpretation regarding the 2007 and 2008 elections on April 6, 2004.
-- [ ] The interpretation established a formal five-step mechanism for amending Hong Kong's electoral methods.
+- ❔ The NPCSC issued its official interpretation regarding the 2007 and 2008 elections on April 6, 2004.
+- ❔ The interpretation established a formal five-step mechanism for amending Hong Kong's electoral methods.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

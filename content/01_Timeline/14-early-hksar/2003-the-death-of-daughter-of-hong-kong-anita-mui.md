@@ -42,8 +42,8 @@ The death of **Anita Mui** became a defining cultural moment for the early HKSAR
 
 ## Claims to verify
 
-- [ ] Anita Mui passed away on December 30, 2003, at the Hong Kong Sanatorium & Hospital.
-- [ ] Mui publicly announced her cervical cancer diagnosis in September 2003.
-- [ ] Her farewell concert series took place at the Hong Kong Coliseum in November 2003.
+- ❔ Anita Mui passed away on December 30, 2003, at the Hong Kong Sanatorium & Hospital.
+- ❔ Mui publicly announced her cervical cancer diagnosis in September 2003.
+- ❔ Her farewell concert series took place at the Hong Kong Coliseum in November 2003.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

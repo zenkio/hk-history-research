@@ -38,8 +38,8 @@ The success of this reclamation effort provided the economic base for the long-t
 
 ## Claims to verify
 
-- [ ] The exact start date of major dike construction in Yuen Long compared to the broader Southern Song era.
-- [ ] The extent to which salt production competed with or complemented early rice farming in the 13th-century Yuen Long plain.
-- [ ] The degree of state involvement versus clan autonomy in 13th-century land reclamation projects.
+- ❔ The exact start date of major dike construction in Yuen Long compared to the broader Southern Song era.
+- ❔ The extent to which salt production competed with or complemented early rice farming in the 13th-century Yuen Long plain.
+- ❔ The degree of state involvement versus clan autonomy in 13th-century land reclamation projects.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

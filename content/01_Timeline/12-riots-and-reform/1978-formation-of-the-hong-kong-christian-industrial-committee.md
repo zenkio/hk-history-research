@@ -36,7 +36,7 @@ The emergence of the committee marked a significant shift in civil society, brid
 
 ## Claims to verify
 
-- [ ] The precise organizational milestones leading to the formal establishment of the Hong Kong Christian Industrial Committee around 1978.
-- [ ] The extent of collaboration between faith-based labor organizations and colonial-era labor departments.
+- ❔ The precise organizational milestones leading to the formal establishment of the Hong Kong Christian Industrial Committee around 1978.
+- ❔ The extent of collaboration between faith-based labor organizations and colonial-era labor departments.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

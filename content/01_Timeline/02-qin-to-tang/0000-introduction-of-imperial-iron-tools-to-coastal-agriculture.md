@@ -40,7 +40,7 @@ The introduction of iron tools marked a critical technological turning point for
 
 ## Claims to verify
 
-- [ ] The precise timeline of iron tool adoption in coastal Hong Kong around 81 BCE
-- [ ] The extent of direct state control versus private trade in distributing iron implements to the Lingnan coast
+- ❔ The precise timeline of iron tool adoption in coastal Hong Kong around 81 BCE
+- ❔ The extent of direct state control versus private trade in distributing iron implements to the Lingnan coast
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

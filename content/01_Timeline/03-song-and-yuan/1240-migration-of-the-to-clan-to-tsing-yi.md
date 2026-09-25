@@ -37,7 +37,7 @@ The settlement of Tsing Yi by the To clan represents an important chapter in the
 
 ## Claims to verify
 
-- [ ] The exact migration date of the To clan to Tsing Yi around 1240
-- [ ] The extent of maritime trade conducted by early settlers on Tsing Yi during the Song period
+- ❔ The exact migration date of the To clan to Tsing Yi around 1240
+- ❔ The extent of maritime trade conducted by early settlers on Tsing Yi during the Song period
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

@@ -41,7 +41,7 @@ The establishment of the playground reflected a modest shift in colonial governa
 
 ## Claims to verify
 
-- [ ] Verify the exact opening date or month of the Ko Shan Road Playground in 1951 through primary colonial public works or Urban Council records.
-- [ ] Confirm the specific land-use designation of the site prior to its conversion into a playground.
+- ❔ Verify the exact opening date or month of the Ko Shan Road Playground in 1951 through primary colonial public works or Urban Council records.
+- ❔ Confirm the specific land-use designation of the site prior to its conversion into a playground.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

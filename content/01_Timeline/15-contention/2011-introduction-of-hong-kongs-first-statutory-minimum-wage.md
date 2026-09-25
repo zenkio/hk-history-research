@@ -36,7 +36,7 @@ The introduction of the statutory minimum wage marked a historic turning point f
 
 ## Claims to verify
 
-- [ ] The statutory minimum wage of HK$28 per hour took effect on May 1, 2011.
-- [ ] The Minimum Wage Ordinance exempted live-in domestic helpers and certain other specific groups.
+- ❔ The statutory minimum wage of HK$28 per hour took effect on May 1, 2011.
+- ❔ The Minimum Wage Ordinance exempted live-in domestic helpers and certain other specific groups.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

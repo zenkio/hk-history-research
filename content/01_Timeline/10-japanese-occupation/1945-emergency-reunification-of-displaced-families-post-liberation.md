@@ -39,7 +39,7 @@ The post-liberation reunification efforts represented a critical step in the dem
 
 ## Claims to verify
 
-- [ ] The exact dates when the first official family reunification registration centers opened in September 1945.
-- [ ] The specific volume of missing person reports processed by authorities during the initial weeks following the Japanese surrender.
+- ❔ The exact dates when the first official family reunification registration centers opened in September 1945.
+- ❔ The specific volume of missing person reports processed by authorities during the initial weeks following the Japanese surrender.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

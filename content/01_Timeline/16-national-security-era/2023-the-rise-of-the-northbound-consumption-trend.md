@@ -41,7 +41,7 @@ The northbound consumption trend marked a notable shift in post-pandemic consume
 
 ## Claims to verify
 
-- [ ] Record numbers of Hong Kong residents traveled to Shenzhen for consumption during late 2023.
-- [ ] Local retail and catering sectors experienced measurable drops in weekend revenues due to cross-border travel.
+- ❔ Record numbers of Hong Kong residents traveled to Shenzhen for consumption during late 2023.
+- ❔ Local retail and catering sectors experienced measurable drops in weekend revenues due to cross-border travel.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

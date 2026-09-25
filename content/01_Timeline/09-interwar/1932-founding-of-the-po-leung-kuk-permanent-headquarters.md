@@ -38,8 +38,8 @@ The establishment of the Leighton Road facility marked a crucial milestone in th
 
 ## Claims to verify
 
-- [ ] The Po Leung Kuk permanent headquarters on Leighton Road was completed and inaugurated in 1932.
-- [ ] The original premises of the Po Leung Kuk were located on Upper Station Street.
-- [ ] The organization was founded in 1878 specifically to combat kidnapping and human trafficking.
+- ❔ The Po Leung Kuk permanent headquarters on Leighton Road was completed and inaugurated in 1932.
+- ❔ The original premises of the Po Leung Kuk were located on Upper Station Street.
+- ❔ The organization was founded in 1878 specifically to combat kidnapping and human trafficking.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

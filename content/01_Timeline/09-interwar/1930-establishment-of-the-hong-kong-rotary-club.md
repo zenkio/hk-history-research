@@ -38,8 +38,8 @@ Some scholarship suggests the club was a vital mechanism for co-opting the Chine
 
 ## Claims to verify
 
-- [ ] Verify the exact official charter date of the Hong Kong Rotary Club in 1930.
-- [ ] Confirm the ratio of British to Chinese members during the inaugural year of the club.
-- [ ] Investigate if any colonial government officials were directly involved in the club's founding board.
+- ❔ Verify the exact official charter date of the Hong Kong Rotary Club in 1930.
+- ❔ Confirm the ratio of British to Chinese members during the inaugural year of the club.
+- ❔ Investigate if any colonial government officials were directly involved in the club's founding board.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

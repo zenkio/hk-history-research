@@ -38,7 +38,7 @@ The expansion of the HOS through phases like Phase VII served as a crucial instr
 
 ## Claims to verify
 
-- [ ] The exact launch date of Home Ownership Scheme Phase VII as September 1, 1985
-- [ ] The specific housing estates included in Phase VII of the Home Ownership Scheme
+- ❔ The exact launch date of Home Ownership Scheme Phase VII as September 1, 1985
+- ❔ The specific housing estates included in Phase VII of the Home Ownership Scheme
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

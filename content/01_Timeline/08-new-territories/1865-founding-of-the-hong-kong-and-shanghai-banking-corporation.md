@@ -39,8 +39,8 @@ Over the subsequent decades, the bank grew to become the preeminent financial in
 
 ## Claims to verify
 
-- [ ] The exact date of formal establishment and opening of the Hong Kong and Shanghai Banking Corporation on March 3, 1865.
-- [ ] The precise roster of founding merchant houses and individuals involved in the initial prospectus.
+- ❔ The exact date of formal establishment and opening of the Hong Kong and Shanghai Banking Corporation on March 3, 1865.
+- ❔ The precise roster of founding merchant houses and individuals involved in the initial prospectus.
 
 ## Research notes
 

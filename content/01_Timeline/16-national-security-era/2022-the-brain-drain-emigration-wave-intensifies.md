@@ -38,8 +38,8 @@ The exodus of 2022 represented more than a demographic change; it impacted the c
 
 ## Claims to verify
 
-- [ ] Total number of permanent resident departures in 2022
-- [ ] Specific labor sector vacancy rates attributed to emigration in 2022
-- [ ] Net population change statistics provided by the Census and Statistics Department for 2022
+- ❔ Total number of permanent resident departures in 2022
+- ❔ Specific labor sector vacancy rates attributed to emigration in 2022
+- ❔ Net population change statistics provided by the Census and Statistics Department for 2022
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

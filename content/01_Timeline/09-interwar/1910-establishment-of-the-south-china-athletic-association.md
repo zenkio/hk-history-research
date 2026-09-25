@@ -39,7 +39,7 @@ The prominence of the South China Athletic Association during the interwar years
 
 ## Claims to verify
 
-- [ ] The exact timeline and founding circumstances of the Chinese Athletic Association around 1910 and its formal transition into the South China Athletic Association in 1920.
-- [ ] The extent of racial segregation in colonial Hong Kong sports clubs during the early 20th century.
+- ❔ The exact timeline and founding circumstances of the Chinese Athletic Association around 1910 and its formal transition into the South China Athletic Association in 1920.
+- ❔ The extent of racial segregation in colonial Hong Kong sports clubs during the early 20th century.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

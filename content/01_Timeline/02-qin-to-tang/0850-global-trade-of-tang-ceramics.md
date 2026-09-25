@@ -36,7 +36,7 @@ The accumulation of ceramic shards provides tangible material evidence of the re
 
 ## Claims to verify
 
-- [ ] Specific dating of Changsha ceramic shards found in Hong Kong to c. 850
-- [ ] The exact volume and distribution of Tang ceramic finds across different Hong Kong archaeological sites
+- ❔ Specific dating of Changsha ceramic shards found in Hong Kong to c. 850
+- ❔ The exact volume and distribution of Tang ceramic finds across different Hong Kong archaeological sites
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

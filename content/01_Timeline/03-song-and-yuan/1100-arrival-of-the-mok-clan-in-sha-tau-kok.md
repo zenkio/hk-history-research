@@ -37,8 +37,8 @@ The settlement of the **Mok** family is viewed as a microcosmic example of the '
 
 ## Claims to verify
 
-- [ ] Confirm the specific genealogical records of the Sha Tau Kok Mok branch regarding the 12th-century arrival date.
-- [ ] Verify the archaeological evidence for 12th-century agricultural expansion in the Sha Tau Kok area.
-- [ ] Compare the Mok clan’s migration narrative with general patterns of Song Dynasty northward-to-southward migration.
+- ❔ Confirm the specific genealogical records of the Sha Tau Kok Mok branch regarding the 12th-century arrival date.
+- ❔ Verify the archaeological evidence for 12th-century agricultural expansion in the Sha Tau Kok area.
+- ❔ Compare the Mok clan’s migration narrative with general patterns of Song Dynasty northward-to-southward migration.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

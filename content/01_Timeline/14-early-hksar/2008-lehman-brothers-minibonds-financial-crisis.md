@@ -36,7 +36,7 @@ The crisis exposed severe vulnerabilities in Hong Kong's dual-regulatory framewo
 
 ## Claims to verify
 
-- [ ] The exact number of affected retail investors in Hong Kong holding Lehman-backed structured products.
-- [ ] The precise recovery percentages achieved under the subsequent Lehman Minibonds settlement schemes.
+- ❔ The exact number of affected retail investors in Hong Kong holding Lehman-backed structured products.
+- ❔ The precise recovery percentages achieved under the subsequent Lehman Minibonds settlement schemes.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -44,8 +44,8 @@ The surrender marked the end of British colonial rule and the beginning of the p
 
 ## Claims to verify
 
-- [ ] Governor Sir Mark Young surrendered at the Peninsula Hotel on December 25, 1941.
-- [ ] The Battle of Hong Kong lasted for 18 days from December 8 to December 25, 1941.
+- ❔ Governor Sir Mark Young surrendered at the Peninsula Hotel on December 25, 1941.
+- ❔ The Battle of Hong Kong lasted for 18 days from December 8 to December 25, 1941.
 
 ## Evidence
 

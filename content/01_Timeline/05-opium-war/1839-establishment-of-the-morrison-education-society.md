@@ -39,7 +39,7 @@ Historians view the society as a foundational institution in the educational his
 
 ## Claims to verify
 
-- [ ] The Morrison Education Society was formally established in the year 1839.
-- [ ] Yung Wing attended the Morrison Education Society School.
+- ❔ The Morrison Education Society was formally established in the year 1839.
+- ❔ Yung Wing attended the Morrison Education Society School.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

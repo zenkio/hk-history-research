@@ -37,7 +37,7 @@ This mid-14th-century surge in piracy illustrates the fragility of late Yuan imp
 
 ## Claims to verify
 
-- [ ] The direct correlation between the decline of Yuan central authority around c. 1350 and specific surges in pirate attacks in the Tuen Mun area.
-- [ ] The extent to which local clan lineages in the New Territories organized formal defenses specifically during the late Yuan period versus later dynastic transitions.
+- ❔ The direct correlation between the decline of Yuan central authority around c. 1350 and specific surges in pirate attacks in the Tuen Mun area.
+- ❔ The extent to which local clan lineages in the New Territories organized formal defenses specifically during the late Yuan period versus later dynastic transitions.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

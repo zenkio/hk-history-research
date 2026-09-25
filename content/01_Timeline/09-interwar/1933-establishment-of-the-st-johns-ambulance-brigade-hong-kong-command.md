@@ -35,7 +35,7 @@ The institutionalization of the brigade marked a pivotal step in the evolution o
 
 ## Claims to verify
 
-- [ ] The exact month and administrative decree associated with the establishment of the Hong Kong Command in 1933
-- [ ] The precise composition and initial number of local volunteers enlisted under the new command structure
+- ❔ The exact month and administrative decree associated with the establishment of the Hong Kong Command in 1933
+- ❔ The precise composition and initial number of local volunteers enlisted under the new command structure
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

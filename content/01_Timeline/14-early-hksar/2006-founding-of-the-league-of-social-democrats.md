@@ -38,7 +38,7 @@ The emergence of the LSD marked a distinct shift in Hong Kong’s political cult
 
 ## Claims to verify
 
-- [ ] Verify the exact official registration date of the League of Social Democrats with the Companies Registry.
-- [ ] Confirm the full list of founding members present at the October 1, 2006, announcement.
+- ❔ Verify the exact official registration date of the League of Social Democrats with the Companies Registry.
+- ❔ Confirm the full list of founding members present at the October 1, 2006, announcement.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

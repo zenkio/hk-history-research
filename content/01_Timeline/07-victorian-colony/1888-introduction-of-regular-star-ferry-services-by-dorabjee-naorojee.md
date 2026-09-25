@@ -43,7 +43,7 @@ The establishment of Naorojee's regular steam ferry service marked a pivotal tur
 
 ## Claims to verify
 
-- [ ] Dorabjee Naorojee launched the regularized steam ferry service across Victoria Harbour in May 1888.
-- [ ] The enterprise was formally incorporated or reorganized as the Star Ferry Company in 1898.
+- ❔ Dorabjee Naorojee launched the regularized steam ferry service across Victoria Harbour in May 1888.
+- ❔ The enterprise was formally incorporated or reorganized as the Star Ferry Company in 1898.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

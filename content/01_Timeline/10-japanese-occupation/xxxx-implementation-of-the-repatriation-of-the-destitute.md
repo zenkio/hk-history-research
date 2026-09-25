@@ -37,8 +37,8 @@ The mass expulsion serves as a defining event of the 'Three Years and Eight Mont
 
 ## Claims to verify
 
-- [ ] Verify the official numerical estimates of those deported between 1942 and 1943.
-- [ ] Investigate the role of the Japanese military police (Kempeitai) in the physical execution of the deportations.
-- [ ] Check official proclamations issued by the Japanese military administration regarding residency requirements during the occupation.
+- ❔ Verify the official numerical estimates of those deported between 1942 and 1943.
+- ❔ Investigate the role of the Japanese military police (Kempeitai) in the physical execution of the deportations.
+- ❔ Check official proclamations issued by the Japanese military administration regarding residency requirements during the occupation.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

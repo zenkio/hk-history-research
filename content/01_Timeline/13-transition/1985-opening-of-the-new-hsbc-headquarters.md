@@ -39,8 +39,8 @@ The opening of the HSBC headquarters served as a tangible manifestation of corpo
 
 ## Claims to verify
 
-- [ ] The exact official opening date of the HSBC headquarters was November 18, 1985.
-- [ ] The building was financed entirely as a statement of confidence in the 1984 Joint Declaration.
-- [ ] The construction made it the most expensive building in the world at that specific time.
+- ❔ The exact official opening date of the HSBC headquarters was November 18, 1985.
+- ❔ The building was financed entirely as a statement of confidence in the 1984 Joint Declaration.
+- ❔ The construction made it the most expensive building in the world at that specific time.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

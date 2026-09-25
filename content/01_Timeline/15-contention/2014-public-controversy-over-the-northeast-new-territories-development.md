@@ -39,7 +39,7 @@ The controversy underscored a deepening divide in Hong Kong society regarding th
 
 ## Claims to verify
 
-- [ ] The exact number of participants present at the Legislative Council on 2014-06-13.
-- [ ] The specific legislative funding request item discussed during the Finance Committee meeting on that date.
+- ❔ The exact number of participants present at the Legislative Council on 2014-06-13.
+- ❔ The specific legislative funding request item discussed during the Finance Committee meeting on that date.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

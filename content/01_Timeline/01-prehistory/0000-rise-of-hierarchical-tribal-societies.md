@@ -39,7 +39,7 @@ This structural evolution marks a critical turning point in the pre-imperial his
 
 ## Claims to verify
 
-- [ ] Grave goods from c. 350 BCE sites in the region show consistent patterns of social stratification.
-- [ ] Pre-Qin coastal communities in the Pearl River Delta possessed specialized craft production indicating hierarchical chiefdoms.
+- ❔ Grave goods from c. 350 BCE sites in the region show consistent patterns of social stratification.
+- ❔ Pre-Qin coastal communities in the Pearl River Delta possessed specialized craft production indicating hierarchical chiefdoms.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

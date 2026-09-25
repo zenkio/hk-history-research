@@ -36,8 +36,8 @@ The existence of these trade networks challenges earlier colonial-era depictions
 
 ## Claims to verify
 
-- [ ] The geochemical origin of specific stone tool materials found in Lamma Island excavations
-- [ ] The dating accuracy of Neolithic sites in the Pearl River Delta relative to the -3000 to -2000 timeframe
-- [ ] The consensus on the definition and scope of the 'Geomantic Stone Culture' label
+- ❔ The geochemical origin of specific stone tool materials found in Lamma Island excavations
+- ❔ The dating accuracy of Neolithic sites in the Pearl River Delta relative to the -3000 to -2000 timeframe
+- ❔ The consensus on the definition and scope of the 'Geomantic Stone Culture' label
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

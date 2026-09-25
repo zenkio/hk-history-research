@@ -41,7 +41,7 @@ The departure from Hong Kong waters marked the final chapter of the Song court's
 
 ## Claims to verify
 
-- [ ] The exact month of June 1278 for the departure from local waters.
-- [ ] The specific tactical deployments of the Yuan naval forces pursuing the Song fleet in the immediate Hong Kong area.
+- ❔ The exact month of June 1278 for the departure from local waters.
+- ❔ The specific tactical deployments of the Yuan naval forces pursuing the Song fleet in the immediate Hong Kong area.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

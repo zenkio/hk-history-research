@@ -39,7 +39,7 @@ The enactment of the 1913 ordinance fundamentally altered the relationship betwe
 
 ## Claims to verify
 
-- [ ] The exact legislative mechanisms and immediate enforcement actions taken by the Hong Kong government following the 1913 Education Ordinance passage.
-- [ ] The extent of resistance or compliance among specific private vernacular schools in Hong Kong during the initial implementation phase.
+- ❔ The exact legislative mechanisms and immediate enforcement actions taken by the Hong Kong government following the 1913 Education Ordinance passage.
+- ❔ The extent of resistance or compliance among specific private vernacular schools in Hong Kong during the initial implementation phase.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

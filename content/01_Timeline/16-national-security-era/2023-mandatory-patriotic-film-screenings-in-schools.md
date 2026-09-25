@@ -35,7 +35,7 @@ The introduction of mandatory screenings represents a key shift in the pedagogic
 
 ## Claims to verify
 
-- [ ] Verify the specific directives issued by the Education Bureau regarding the frequency of patriotic film screenings in the 2023 academic year.
-- [ ] Confirm the extent to which film screenings were classified as 'mandatory' versus 'highly recommended' in official policy documents.
+- ❔ Verify the specific directives issued by the Education Bureau regarding the frequency of patriotic film screenings in the 2023 academic year.
+- ❔ Confirm the extent to which film screenings were classified as 'mandatory' versus 'highly recommended' in official policy documents.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

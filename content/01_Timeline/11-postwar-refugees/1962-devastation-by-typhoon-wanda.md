@@ -38,8 +38,8 @@ The immediate aftermath of Typhoon Wanda forced a critical reassessment of gover
 
 ## Claims to verify
 
-- [ ] Verify the exact official death toll and missing persons count reported by the colonial government following Typhoon Wanda.
-- [ ] Check contemporary government records regarding the precise wind speeds and storm surge levels recorded at the Royal Observatory on September 1, 1962.
+- ❔ Verify the exact official death toll and missing persons count reported by the colonial government following Typhoon Wanda.
+- ❔ Check contemporary government records regarding the precise wind speeds and storm surge levels recorded at the Royal Observatory on September 1, 1962.
 
 ## Evidence
 

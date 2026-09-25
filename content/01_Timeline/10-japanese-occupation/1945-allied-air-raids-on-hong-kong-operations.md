@@ -40,8 +40,8 @@ The air raids marked a turning point in the physical devastation experienced by 
 
 ## Claims to verify
 
-- [ ] Exact participation and composition of U.S. Navy Task Force 38 units involved on January 16, 1945
-- [ ] Precise tonnage of bombs dropped and total civilian casualty estimates resulting specifically from the January 16 raids
+- ❔ Exact participation and composition of U.S. Navy Task Force 38 units involved on January 16, 1945
+- ❔ Precise tonnage of bombs dropped and total civilian casualty estimates resulting specifically from the January 16 raids
 
 ## Photos from this period
 

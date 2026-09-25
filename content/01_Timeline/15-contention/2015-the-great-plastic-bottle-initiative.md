@@ -37,8 +37,8 @@ Historians identify the initiative as a hallmark of the 'localized civic engagem
 
 ## Claims to verify
 
-- [ ] The official start date of the Great Plastic Bottle Initiative as May 1, 2015.
-- [ ] The involvement level of specific civil society groups in the organizing committee.
-- [ ] Whether the government issued formal public statements regarding this specific initiative.
+- ❔ The official start date of the Great Plastic Bottle Initiative as May 1, 2015.
+- ❔ The involvement level of specific civil society groups in the organizing committee.
+- ❔ Whether the government issued formal public statements regarding this specific initiative.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

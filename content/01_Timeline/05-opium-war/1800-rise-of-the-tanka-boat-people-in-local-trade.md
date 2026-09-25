@@ -40,8 +40,8 @@ The rise of the Tanka in local trade represents a period where indigenous mariti
 
 ## Claims to verify
 
-- [ ] The specific extent to which Tanka pilots were employed by the East India Company during the 1830s.
-- [ ] The legal status of boat-dwelling populations in Qing census records for the San On County (新安縣) area prior to 1841.
-- [ ] Documentation of Tanka involvement in supply chains during the blockade of the Pearl River in 1839.
+- ❔ The specific extent to which Tanka pilots were employed by the East India Company during the 1830s.
+- ❔ The legal status of boat-dwelling populations in Qing census records for the San On County (新安縣) area prior to 1841.
+- ❔ Documentation of Tanka involvement in supply chains during the blockade of the Pearl River in 1839.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

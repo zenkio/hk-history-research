@@ -36,7 +36,7 @@ The MAC scheme rapidly expanded across the territory, eventually encompassing th
 
 ## Claims to verify
 
-- [ ] The exact administrative rollout date of March 29, 1973 for the formal scheme launch.
-- [ ] The initial total number of Mutual Aid Committees established within the first year of the scheme.
+- ❔ The exact administrative rollout date of March 29, 1973 for the formal scheme launch.
+- ❔ The initial total number of Mutual Aid Committees established within the first year of the scheme.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

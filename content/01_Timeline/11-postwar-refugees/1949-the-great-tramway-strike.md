@@ -41,7 +41,7 @@ The strike marked a crucial turning point in Hong Kong's labor and political his
 
 ## Claims to verify
 
-- [ ] Exact dates of the beginning and end of the Tramway Strike between December 1949 and February 1950
-- [ ] The precise nature of the settlement terms agreed upon by the Tramways management and the union
+- ❔ Exact dates of the beginning and end of the Tramway Strike between December 1949 and February 1950
+- ❔ The precise nature of the settlement terms agreed upon by the Tramways management and the union
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

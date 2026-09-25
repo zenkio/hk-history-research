@@ -39,7 +39,7 @@ The drastic intervention successfully halted the immediate outbreak, with no fur
 
 ## Claims to verify
 
-- [ ] The exact total number of poultry culled during the late December 1997 operation
-- [ ] The precise date the H5N1 virus was first isolated and identified in the index patient
+- ❔ The exact total number of poultry culled during the late December 1997 operation
+- ❔ The precise date the H5N1 virus was first isolated and identified in the index patient
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

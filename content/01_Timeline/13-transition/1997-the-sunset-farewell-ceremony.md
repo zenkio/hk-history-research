@@ -42,7 +42,7 @@ The ceremony served as the dramatic visual conclusion to the British presence in
 
 ## Claims to verify
 
-- [ ] Exact timeline and protocol of the Sunset Farewell Ceremony at HMS Tamar on June 30, 1997
-- [ ] Weather conditions and precise attendance list of dignitaries at the farewell event
+- ❔ Exact timeline and protocol of the Sunset Farewell Ceremony at HMS Tamar on June 30, 1997
+- ❔ Weather conditions and precise attendance list of dignitaries at the farewell event
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -37,7 +37,7 @@ This educational expansion profoundly elevated the overall literacy and skill le
 
 ## Claims to verify
 
-- [ ] Did the full implementation of compulsory junior secondary education take effect precisely on September 1, 1978?
-- [ ] What exact proportion of secondary school-age children were already enrolled in schools prior to the 1978 mandate?
+- ❔ Did the full implementation of compulsory junior secondary education take effect precisely on September 1, 1978?
+- ❔ What exact proportion of secondary school-age children were already enrolled in schools prior to the 1978 mandate?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

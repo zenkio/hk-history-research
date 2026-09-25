@@ -39,8 +39,8 @@ The consolidation of the Tang lineage represents the foundation of the 'New Terr
 
 ## Claims to verify
 
-- [ ] Exact dates of the establishment of the oldest ancestral halls in Kam Tin.
-- [ ] The extent to which imperial taxation reached the Yuen Long plain during the mid-Ming period.
-- [ ] Documentation verifying the specific land-tenure agreements between the Tang lineage and neighboring settlers.
+- ❔ Exact dates of the establishment of the oldest ancestral halls in Kam Tin.
+- ❔ The extent to which imperial taxation reached the Yuen Long plain during the mid-Ming period.
+- ❔ Documentation verifying the specific land-tenure agreements between the Tang lineage and neighboring settlers.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

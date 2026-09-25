@@ -37,7 +37,7 @@ The settlement of the Pang clan at Fanling Wai represents a key chapter in the e
 
 ## Claims to verify
 
-- [ ] The Pang clan settled in Fanling Wai around the year 1250
-- [ ] The exact migration route of the Pang ancestors from northern China to the New Territories
+- ❔ The Pang clan settled in Fanling Wai around the year 1250
+- ❔ The exact migration route of the Pang ancestors from northern China to the New Territories
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

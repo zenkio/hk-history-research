@@ -40,7 +40,7 @@ The closure of Rennie's Mill is widely viewed by historians as the final dismant
 
 ## Claims to verify
 
-- [ ] The specific breakdown of compensation packages offered to residents by the colonial government in 1996.
-- [ ] The extent of communication between the British administration and the Beijing government regarding the 'political sensitivity' of the site prior to the clearance.
+- ❔ The specific breakdown of compensation packages offered to residents by the colonial government in 1996.
+- ❔ The extent of communication between the British administration and the Beijing government regarding the 'political sensitivity' of the site prior to the clearance.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

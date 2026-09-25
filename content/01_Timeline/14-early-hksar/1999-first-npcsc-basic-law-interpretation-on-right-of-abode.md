@@ -40,7 +40,7 @@ The **June 26, 1999** interpretation marked a watershed moment in the history of
 
 ## Claims to verify
 
-- [ ] The exact phrasing and constitutional justification provided in the NPCSC interpretation issued on June 26, 1999.
-- [ ] The precise statistical estimates of potential migrants cited by the Hong Kong government to justify seeking the interpretation.
+- ❔ The exact phrasing and constitutional justification provided in the NPCSC interpretation issued on June 26, 1999.
+- ❔ The precise statistical estimates of potential migrants cited by the Hong Kong government to justify seeking the interpretation.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

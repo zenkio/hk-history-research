@@ -38,7 +38,7 @@ The establishment of the Western Market signaled a new era in the colonial manag
 
 ## Claims to verify
 
-- [ ] Verify if the specific opening date of the original 1871 market is documented in the Public Works Department records.
-- [ ] Investigate the specific legislation governing market operations in 1871 to confirm the extent of colonial administrative control.
+- ❔ Verify if the specific opening date of the original 1871 market is documented in the Public Works Department records.
+- ❔ Investigate the specific legislation governing market operations in 1871 to confirm the extent of colonial administrative control.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

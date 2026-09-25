@@ -42,7 +42,7 @@ The election was historically significant for producing Hong Kong's first female
 
 ## Claims to verify
 
-- [ ] Carrie Lam received 777 votes in the March 26, 2017 election.
-- [ ] Carrie Lam took office on July 1, 2017.
+- ❔ Carrie Lam received 777 votes in the March 26, 2017 election.
+- ❔ Carrie Lam took office on July 1, 2017.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

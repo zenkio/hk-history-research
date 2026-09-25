@@ -39,7 +39,7 @@ The launch marked a significant pivot in Hong Kong's labor and economic policy, 
 
 ## Claims to verify
 
-- [ ] The exact quotas established for the construction and transport sectors upon the initial June 2023 announcement
-- [ ] Specific statutory requirements regarding accommodation and wage parity for imported workers under the revised schemes
+- ❔ The exact quotas established for the construction and transport sectors upon the initial June 2023 announcement
+- ❔ Specific statutory requirements regarding accommodation and wage parity for imported workers under the revised schemes
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

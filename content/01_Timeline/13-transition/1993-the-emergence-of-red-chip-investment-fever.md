@@ -38,8 +38,8 @@ The emergence of the 'Red Chip' fever fundamentally altered the DNA of the Hong 
 
 ## Claims to verify
 
-- [ ] Verify the exact date of the memorandum of understanding between HKEX and the CSRC.
-- [ ] Confirm the precise number of initial state-owned enterprise listings in 1993.
-- [ ] Check the statistical impact of 1993 listings on the HKEX total market capitalization.
+- ❔ Verify the exact date of the memorandum of understanding between HKEX and the CSRC.
+- ❔ Confirm the precise number of initial state-owned enterprise listings in 1993.
+- ❔ Check the statistical impact of 1993 listings on the HKEX total market capitalization.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

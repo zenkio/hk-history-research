@@ -36,8 +36,8 @@ The siege marked a turning point in the **2019** protests, resulting in a signif
 
 ## Claims to verify
 
-- [ ] Exact number of individuals trapped inside the campus during the siege
-- [ ] Total number of arrests made during and immediately after the twelve-day standoff
-- [ ] Chronology of the police decision to blockade rather than immediately storm the university grounds
+- ❔ Exact number of individuals trapped inside the campus during the siege
+- ❔ Total number of arrests made during and immediately after the twelve-day standoff
+- ❔ Chronology of the police decision to blockade rather than immediately storm the university grounds
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

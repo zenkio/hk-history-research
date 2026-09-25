@@ -40,8 +40,8 @@ The opening of the third HSBC building was widely celebrated as a testament to H
 
 ## Claims to verify
 
-- [ ] Verify whether the building was officially the tallest in Asia upon its opening on October 10, 1935.
-- [ ] Confirm if the choice of October 10 for the opening ceremony was intentional or coincidental regarding Double Ten Day.
+- ❔ Verify whether the building was officially the tallest in Asia upon its opening on October 10, 1935.
+- ❔ Confirm if the choice of October 10 for the opening ceremony was intentional or coincidental regarding Double Ten Day.
 
 ## Evidence
 

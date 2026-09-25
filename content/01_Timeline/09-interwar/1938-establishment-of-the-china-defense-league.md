@@ -39,7 +39,7 @@ The establishment of the League marked a major milestone in mobilizing global so
 
 ## Claims to verify
 
-- [ ] The exact founding date of the China Defense League as June 14, 1938
-- [ ] The specific logistical routes used by the League to transport medical supplies from Hong Kong to mainland resistance zones
+- ❔ The exact founding date of the China Defense League as June 14, 1938
+- ❔ The specific logistical routes used by the League to transport medical supplies from Hong Kong to mainland resistance zones
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

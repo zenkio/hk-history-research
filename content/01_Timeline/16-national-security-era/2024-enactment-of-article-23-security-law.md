@@ -36,7 +36,7 @@ The enactment marked the fulfillment of Hong Kong's long-standing constitutional
 
 ## Claims to verify
 
-- [ ] The Safeguarding National Security Bill was passed unanimously by the Legislative Council on March 19, 2024.
-- [ ] The ordinance officially took effect upon gazettal on March 23, 2024.
+- ❔ The Safeguarding National Security Bill was passed unanimously by the Legislative Council on March 19, 2024.
+- ❔ The ordinance officially took effect upon gazettal on March 23, 2024.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

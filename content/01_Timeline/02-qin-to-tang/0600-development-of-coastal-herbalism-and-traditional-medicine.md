@@ -34,8 +34,8 @@ This period highlights the emergence of a regional medical identity distinct fro
 
 ## Claims to verify
 
-- [ ] The extent of medical knowledge transmission in the Tuen Mun region during the mid-7th century.
-- [ ] The veracity of oral traditions attributing specific 'Cool Tea' foundations to the Tang Dynasty period.
-- [ ] The degree of botanical exchange between maritime traders and local coastal inhabitants during the 7th century.
+- ❔ The extent of medical knowledge transmission in the Tuen Mun region during the mid-7th century.
+- ❔ The veracity of oral traditions attributing specific 'Cool Tea' foundations to the Tang Dynasty period.
+- ❔ The degree of botanical exchange between maritime traders and local coastal inhabitants during the 7th century.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

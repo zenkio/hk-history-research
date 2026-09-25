@@ -36,7 +36,7 @@ The establishment of the Chamber marked a pivotal shift in the socio-political l
 
 ## Claims to verify
 
-- [ ] The exact foundational year and formal registration details of the Chinese General Chamber of Commerce around 1900
-- [ ] The initial level of formal recognition granted by the British colonial administration to the Chinese General Chamber of Commerce upon its establishment
+- ❔ The exact foundational year and formal registration details of the Chinese General Chamber of Commerce around 1900
+- ❔ The initial level of formal recognition granted by the British colonial administration to the Chinese General Chamber of Commerce upon its establishment
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

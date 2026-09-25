@@ -41,8 +41,8 @@ This policy drastically reduced Hong Kong's population from an estimated pre-war
 
 ## Claims to verify
 
-- [ ] Exact population figures before and after the 1942 repatriation policy
-- [ ] Official Japanese administration decrees regarding the exact start date of the mass deportation program
+- ❔ Exact population figures before and after the 1942 repatriation policy
+- ❔ Official Japanese administration decrees regarding the exact start date of the mass deportation program
 
 ## Evidence
 

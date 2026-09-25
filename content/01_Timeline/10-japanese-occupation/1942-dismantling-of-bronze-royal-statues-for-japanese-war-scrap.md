@@ -42,7 +42,7 @@ The removal of the royal and commercial monuments represented a deliberate attem
 
 ## Claims to verify
 
-- [ ] Exact shipping manifests and dates for the transport of Hong Kong bronze statues to Japan in 1942
-- [ ] The precise metallurgical composition and ultimate fate of the specific statues melted in Japan versus those found and returned after 1945
+- ❔ Exact shipping manifests and dates for the transport of Hong Kong bronze statues to Japan in 1942
+- ❔ The precise metallurgical composition and ultimate fate of the specific statues melted in Japan versus those found and returned after 1945
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -39,7 +39,7 @@ The reconstruction of the Jamia Mosque stands as a physical testament to the mul
 
 ## Claims to verify
 
-- [ ] The exact completion date of the 1890 rebuilding of the Jamia Mosque.
-- [ ] The precise composition and financial contributors behind the 1890 expansion.
+- ❔ The exact completion date of the 1890 rebuilding of the Jamia Mosque.
+- ❔ The precise composition and financial contributors behind the 1890 expansion.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

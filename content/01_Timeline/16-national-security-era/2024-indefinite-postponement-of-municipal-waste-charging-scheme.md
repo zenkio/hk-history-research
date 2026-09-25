@@ -40,7 +40,7 @@ The indefinite postponement marked a rare policy retreat for the administration 
 
 ## Claims to verify
 
-- [ ] The official announcement to indefinitely postpone the scheme was made on May 27, 2024.
-- [ ] The Waste Disposal (Charging for Municipal Solid Waste) (Amendment) Ordinance was passed in August 2021.
+- ❔ The official announcement to indefinitely postpone the scheme was made on May 27, 2024.
+- ❔ The Waste Disposal (Charging for Municipal Solid Waste) (Amendment) Ordinance was passed in August 2021.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

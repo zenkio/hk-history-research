@@ -43,7 +43,7 @@ While the official narrative highlights the center as a grassroots-industry coll
 
 ## Claims to verify
 
-- [ ] The Hong Kong Design Centre was officially launched on April 18, 2002.
-- [ ] The center was founded as a joint initiative by local design associations with backing from the HKSAR government.
+- ❔ The Hong Kong Design Centre was officially launched on April 18, 2002.
+- ❔ The center was founded as a joint initiative by local design associations with backing from the HKSAR government.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

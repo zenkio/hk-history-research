@@ -36,8 +36,8 @@ This reform represented one of the most substantial structural changes to the HK
 
 ## Claims to verify
 
-- [ ] The specific date of the official announcement by the Education and Manpower Bureau in 2005.
-- [ ] The specific sequence and timeline of the 3+3+4 transition period as outlined in the 2005 policy documents.
-- [ ] The degree to which the 3+3+4 reform was explicitly framed as a 'decolonization' effort in government rhetoric.
+- ❔ The specific date of the official announcement by the Education and Manpower Bureau in 2005.
+- ❔ The specific sequence and timeline of the 3+3+4 transition period as outlined in the 2005 policy documents.
+- ❔ The degree to which the 3+3+4 reform was explicitly framed as a 'decolonization' effort in government rhetoric.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

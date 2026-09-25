@@ -36,7 +36,7 @@ The expanded presence of **Mother's Choice** in **2018** highlights a shift in H
 
 ## Claims to verify
 
-- [ ] Verify the specific operational expansion milestones of Mother's Choice in 2018 vs other years
-- [ ] Confirm the extent of formal collaboration between the Social Welfare Department and Mother's Choice in 2018
+- ❔ Verify the specific operational expansion milestones of Mother's Choice in 2018 vs other years
+- ❔ Confirm the extent of formal collaboration between the Social Welfare Department and Mother's Choice in 2018
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

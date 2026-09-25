@@ -38,8 +38,8 @@ The construction of these local academies played a critical role in the formaliz
 
 ## Claims to verify
 
-- [ ] Confirm the existence of specific school or academy records dating to 1430 in Lantau archives.
-- [ ] Verify the extent to which Ming education policies were actively enforced on the islands versus mainland New Territories.
-- [ ] Investigate the role of the salt industry in funding these early educational initiatives.
+- ❔ Confirm the existence of specific school or academy records dating to 1430 in Lantau archives.
+- ❔ Verify the extent to which Ming education policies were actively enforced on the islands versus mainland New Territories.
+- ❔ Investigate the role of the salt industry in funding these early educational initiatives.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -40,7 +40,7 @@ This military campaign marked the first definitive incorporation of the Hong Kon
 
 ## Claims to verify
 
-- [ ] Did Qin administrative reach directly and continuously touch the specific islands of modern Hong Kong in 214 BCE, or was jurisdiction purely nominal?
-- [ ] What is the exact archaeological provenance of Qin-era artifacts discovered within the Hong Kong special administrative region?
+- ❔ Did Qin administrative reach directly and continuously touch the specific islands of modern Hong Kong in 214 BCE, or was jurisdiction purely nominal?
+- ❔ What is the exact archaeological provenance of Qin-era artifacts discovered within the Hong Kong special administrative region?
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

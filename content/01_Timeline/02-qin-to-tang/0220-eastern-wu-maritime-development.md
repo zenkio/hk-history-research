@@ -40,7 +40,7 @@ This era marks a transitional phase where the Hong Kong region shifted from a re
 
 ## Claims to verify
 
-- [ ] Specific administrative reach of Eastern Wu into the immediate waters and islands of modern Hong Kong
-- [ ] Frequency and documentation of merchant and naval vessel usage at Tuen Mun during the third century
+- ❔ Specific administrative reach of Eastern Wu into the immediate waters and islands of modern Hong Kong
+- ❔ Frequency and documentation of merchant and naval vessel usage at Tuen Mun during the third century
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

@@ -37,8 +37,8 @@ The transformation of temples into social hubs was central to the development of
 
 ## Claims to verify
 
-- [ ] The exact timeline of temple-based mediation practices in the Pearl River Delta during the 14th century.
-- [ ] The extent to which Yuan dynasty imperial policy explicitly encouraged the use of temples for local administration.
-- [ ] The earliest archaeological evidence linking specific Song-Yuan temple foundations to non-religious social functions.
+- ❔ The exact timeline of temple-based mediation practices in the Pearl River Delta during the 14th century.
+- ❔ The extent to which Yuan dynasty imperial policy explicitly encouraged the use of temples for local administration.
+- ❔ The earliest archaeological evidence linking specific Song-Yuan temple foundations to non-religious social functions.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

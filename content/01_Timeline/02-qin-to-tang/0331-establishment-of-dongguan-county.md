@@ -40,7 +40,7 @@ The establishment of Dongguan County in **331** is widely regarded by historians
 
 ## Claims to verify
 
-- [ ] Dongguan County was officially established in the year 331 during the Eastern Jin Dynasty.
-- [ ] The territory of modern Hong Kong was placed under the jurisdiction of the newly formed Dongguan County upon its creation.
+- ❔ Dongguan County was officially established in the year 331 during the Eastern Jin Dynasty.
+- ❔ The territory of modern Hong Kong was placed under the jurisdiction of the newly formed Dongguan County upon its creation.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

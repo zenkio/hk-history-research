@@ -38,8 +38,8 @@ The rise of the Nam Pak Hong Association marked a crucial milestone in the econo
 
 ## Claims to verify
 
-- [ ] The Nam Pak Hong Association was formally established or organized in the specific year of 1858.
-- [ ] The association's initial regulatory scope covered both northern mainland trade and southern Nanyang shipping routes.
+- ❔ The Nam Pak Hong Association was formally established or organized in the specific year of 1858.
+- ❔ The association's initial regulatory scope covered both northern mainland trade and southern Nanyang shipping routes.
 
 ## Evidence
 

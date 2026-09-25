@@ -39,7 +39,7 @@ The launch of the scheme marked a pivotal moment in Hong Kong's post-pandemic go
 
 ## Claims to verify
 
-- [ ] The Top Talent Pass Scheme officially began accepting applications on December 28, 2022.
-- [ ] The scheme specifically targets high earners and graduates from top global universities across three distinct categories.
+- ❔ The Top Talent Pass Scheme officially began accepting applications on December 28, 2022.
+- ❔ The scheme specifically targets high earners and graduates from top global universities across three distinct categories.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

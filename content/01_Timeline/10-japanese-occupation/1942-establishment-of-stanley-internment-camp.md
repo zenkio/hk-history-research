@@ -43,8 +43,8 @@ The establishment of Stanley Internment Camp marked a profound disruption of the
 
 ## Claims to verify
 
-- [ ] Exact census figures of civilian internees transferred to Stanley on January 19, 1942
-- [ ] The precise administrative orders issued by the Japanese military regarding the segregation of Western civilians
+- ❔ Exact census figures of civilian internees transferred to Stanley on January 19, 1942
+- ❔ The precise administrative orders issued by the Japanese military regarding the segregation of Western civilians
 
 ## Evidence
 

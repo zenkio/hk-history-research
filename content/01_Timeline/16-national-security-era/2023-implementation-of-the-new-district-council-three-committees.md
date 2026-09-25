@@ -36,8 +36,8 @@ This reform fundamentally altered the grassroots representation system in Hong K
 
 ## Claims to verify
 
-- [ ] The exact percentage split of elected versus appointed seats after the 2023 reform.
-- [ ] The formal legal description of the 'Three Committees' in the District Councils (Amendment) Bill 2023.
-- [ ] The voter turnout figures for the 2019 District Council elections used to contrast with the post-2023 landscape.
+- ❔ The exact percentage split of elected versus appointed seats after the 2023 reform.
+- ❔ The formal legal description of the 'Three Committees' in the District Councils (Amendment) Bill 2023.
+- ❔ The voter turnout figures for the 2019 District Council elections used to contrast with the post-2023 landscape.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

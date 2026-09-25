@@ -44,8 +44,8 @@ The episode marked a crucial juncture in Hong Kong's political development, repr
 
 ## Claims to verify
 
-- [ ] Did Governor Mark Young officially announce the constitutional reform plan specifically on 1 May 1946?
-- [ ] What were the exact proposed proportions of elected versus appointed members in the original Young Plan municipal council?
+- ❔ Did Governor Mark Young officially announce the constitutional reform plan specifically on 1 May 1946?
+- ❔ What were the exact proposed proportions of elected versus appointed members in the original Young Plan municipal council?
 
 ## Evidence
 

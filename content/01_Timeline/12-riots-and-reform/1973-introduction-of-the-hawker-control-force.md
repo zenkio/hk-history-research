@@ -36,8 +36,8 @@ The creation of the **Hawker Control Force** symbolized a shift in the colonial 
 
 ## Claims to verify
 
-- [ ] Did the formal establishment of the Hawker Control Force occur precisely in 1973?
-- [ ] Was the transfer of duties from the police to the Hawker Control Force an immediate or phased process?
-- [ ] What specific legislative instruments authorized the formation of the force?
+- ❔ Did the formal establishment of the Hawker Control Force occur precisely in 1973?
+- ❔ Was the transfer of duties from the police to the Hawker Control Force an immediate or phased process?
+- ❔ What specific legislative instruments authorized the formation of the force?
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

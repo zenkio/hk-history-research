@@ -38,7 +38,7 @@ This expansion marked a pivotal shift in colonial educational policy, recognizin
 
 ## Claims to verify
 
-- [ ] The specific administrative name and policy documents initiating the 1961 Chinese language school expansion.
-- [ ] Exact enrollment statistics and school construction figures associated with the 1961 educational initiative.
+- ❔ The specific administrative name and policy documents initiating the 1961 Chinese language school expansion.
+- ❔ Exact enrollment statistics and school construction figures associated with the 1961 educational initiative.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

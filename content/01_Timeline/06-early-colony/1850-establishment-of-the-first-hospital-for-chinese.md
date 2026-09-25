@@ -36,8 +36,8 @@ The establishment of this hospital represents a pivotal moment in the history of
 
 ## Claims to verify
 
-- [ ] Verification of the specific 1850 founding date and the physical location of the initial hospital premises.
-- [ ] Documentation confirming the funding sources of the original 1850 infirmary.
-- [ ] Records detailing the specific medical treatments provided to the local population during this period.
+- ❔ Verification of the specific 1850 founding date and the physical location of the initial hospital premises.
+- ❔ Documentation confirming the funding sources of the original 1850 infirmary.
+- ❔ Records detailing the specific medical treatments provided to the local population during this period.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

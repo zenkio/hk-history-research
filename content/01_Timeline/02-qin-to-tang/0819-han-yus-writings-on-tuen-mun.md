@@ -38,7 +38,7 @@ In **819**, the prominent Neo-Confucian pioneer, essayist, and government offici
 
 ## Claims to verify
 
-- [ ] Han Yu authored specific extant writings explicitly detailing the military fortifications or garrison size of Tuen Mun in the year 819.
-- [ ] The geographical designation 'Tuen Mun' in Han Yu's writings precisely corresponds to the modern-day district in Hong Kong.
+- ❔ Han Yu authored specific extant writings explicitly detailing the military fortifications or garrison size of Tuen Mun in the year 819.
+- ❔ The geographical designation 'Tuen Mun' in Han Yu's writings precisely corresponds to the modern-day district in Hong Kong.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

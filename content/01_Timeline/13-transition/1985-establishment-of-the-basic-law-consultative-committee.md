@@ -39,8 +39,8 @@ The establishment of the BLCC was a milestone in Hong Kong’s political develop
 
 ## Claims to verify
 
-- [ ] Exact number of initial members of the BLCC in 1985
-- [ ] The official mandate provided by the Basic Law Drafting Committee to the BLCC
-- [ ] The historical breakdown of professional representation within the 180-member committee
+- ❔ Exact number of initial members of the BLCC in 1985
+- ❔ The official mandate provided by the Basic Law Drafting Committee to the BLCC
+- ❔ The historical breakdown of professional representation within the 180-member committee
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

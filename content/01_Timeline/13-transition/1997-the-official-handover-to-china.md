@@ -43,7 +43,7 @@ This event marked a major milestone in modern Chinese history, concluding the er
 
 ## Claims to verify
 
-- [ ] The exact sequence of protocol and flag-raising timings during the midnight ceremony on July 1, 1997.
-- [ ] The precise number of foreign dignitaries and local representatives in attendance at the Hong Kong Convention and Exhibition Centre.
+- ❔ The exact sequence of protocol and flag-raising timings during the midnight ceremony on July 1, 1997.
+- ❔ The precise number of foreign dignitaries and local representatives in attendance at the Hong Kong Convention and Exhibition Centre.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

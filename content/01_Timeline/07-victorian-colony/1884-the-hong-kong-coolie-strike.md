@@ -36,8 +36,8 @@ The **Hong Kong Coolie Strike** is widely viewed by modern historians as an earl
 
 ## Claims to verify
 
-- [ ] The exact number of workers who participated in the general strike of September 1884
-- [ ] The precise extent of involvement by local trade guilds and secret societies in organizing the strike
+- ❔ The exact number of workers who participated in the general strike of September 1884
+- ❔ The precise extent of involvement by local trade guilds and secret societies in organizing the strike
 
 ## Evidence
 

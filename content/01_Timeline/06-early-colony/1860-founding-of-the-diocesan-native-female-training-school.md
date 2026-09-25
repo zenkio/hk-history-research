@@ -39,7 +39,7 @@ The founding of the school represented a crucial milestone as one of the earlies
 
 ## Claims to verify
 
-- [ ] The exact founding date of the Diocesan Native Female Training School in 1860
-- [ ] The initial enrollment numbers and demographic makeup of the first students
+- ❔ The exact founding date of the Diocesan Native Female Training School in 1860
+- ❔ The initial enrollment numbers and demographic makeup of the first students
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

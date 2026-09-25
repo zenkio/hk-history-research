@@ -37,8 +37,8 @@ Ritual tooth ablation serves as vital biological evidence of a shared social ide
 
 ## Claims to verify
 
-- [ ] Correlation between tooth ablation patterns in Sha Ha and wider Pearl River Delta sites.
-- [ ] The specific age range of individuals showing signs of ritual ablation.
-- [ ] The connection between the Geometric Pottery Culture and the emergence of these specific dental rites.
+- ❔ Correlation between tooth ablation patterns in Sha Ha and wider Pearl River Delta sites.
+- ❔ The specific age range of individuals showing signs of ritual ablation.
+- ❔ The connection between the Geometric Pottery Culture and the emergence of these specific dental rites.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

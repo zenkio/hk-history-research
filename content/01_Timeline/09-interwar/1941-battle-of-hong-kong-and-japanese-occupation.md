@@ -44,8 +44,8 @@ The fall of Hong Kong shattered British imperial prestige in Asia and subjected 
 
 ## Claims to verify
 
-- [ ] Exact troop numbers and casualty figures for both Allied defenders and Japanese attackers during the December 1941 campaign.
-- [ ] The precise timeline of water supply disruption on Hong Kong Island during the siege.
+- ❔ Exact troop numbers and casualty figures for both Allied defenders and Japanese attackers during the December 1941 campaign.
+- ❔ The precise timeline of water supply disruption on Hong Kong Island during the siege.
 
 ## Photos from this period
 

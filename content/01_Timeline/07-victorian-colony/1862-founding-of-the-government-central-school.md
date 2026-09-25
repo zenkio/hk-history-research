@@ -45,9 +45,9 @@ The establishment of the Government Central School marked a pivotal turning poin
 
 ## Claims to verify
 
-- [ ] The Government Central School officially opened on February 15, 1862.
-- [ ] Frederick Stewart served as the first headmaster of the Government Central School.
-- [ ] The institution was renamed Queen's College in 1894.
+- ❔ The Government Central School officially opened on February 15, 1862.
+- ❔ Frederick Stewart served as the first headmaster of the Government Central School.
+- ❔ The institution was renamed Queen's College in 1894.
 
 ## Evidence
 

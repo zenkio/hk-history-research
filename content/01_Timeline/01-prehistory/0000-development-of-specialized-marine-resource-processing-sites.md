@@ -37,7 +37,7 @@ The development of these specialized sites signifies a transition toward more co
 
 ## Claims to verify
 
-- [ ] Verification of the specific dating of 4500-4000 BCE for site specialization at Sham Wan.
-- [ ] Categorization of stone net sinkers as evidence of standardized mass-processing rather than opportunistic gathering.
+- ❔ Verification of the specific dating of 4500-4000 BCE for site specialization at Sham Wan.
+- ❔ Categorization of stone net sinkers as evidence of standardized mass-processing rather than opportunistic gathering.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

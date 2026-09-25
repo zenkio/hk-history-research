@@ -39,8 +39,8 @@ The resignation of these senior jurists is widely viewed by legal scholars as a 
 
 ## Claims to verify
 
-- [ ] The official statements released by the HKSAR government regarding the specific reasons for the resignations.
-- [ ] The official timeline of the expiration of Beverley McLachlin's term vs her stated intent.
-- [ ] Whether any other NPJs resigned in the same calendar month of 2024.
+- ❔ The official statements released by the HKSAR government regarding the specific reasons for the resignations.
+- ❔ The official timeline of the expiration of Beverley McLachlin's term vs her stated intent.
+- ❔ Whether any other NPJs resigned in the same calendar month of 2024.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

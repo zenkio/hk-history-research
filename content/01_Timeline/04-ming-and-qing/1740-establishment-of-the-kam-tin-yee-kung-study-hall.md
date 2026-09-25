@@ -38,7 +38,7 @@ The founding of the Yee Kung Study Hall illustrates the integration of the Hong 
 
 ## Claims to verify
 
-- [ ] Exact founding date of the Yee Kung Study Hall around 1740
-- [ ] Specific lineage leadership roles involved in the establishment of the study hall
+- ❔ Exact founding date of the Yee Kung Study Hall around 1740
+- ❔ Specific lineage leadership roles involved in the establishment of the study hall
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

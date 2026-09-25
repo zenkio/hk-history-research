@@ -38,8 +38,8 @@ The scandal became a focal point for broader grievances regarding governance in 
 
 ## Claims to verify
 
-- [ ] The exact start date of the Commission of Inquiry into the Shatin to Central Link project.
-- [ ] The total number of structural steel bars confirmed to have been intentionally shortened at the Hung Hom Station expansion site.
-- [ ] The specific legislative timeline regarding the discovery of missing construction documents.
+- ❔ The exact start date of the Commission of Inquiry into the Shatin to Central Link project.
+- ❔ The total number of structural steel bars confirmed to have been intentionally shortened at the Hung Hom Station expansion site.
+- ❔ The specific legislative timeline regarding the discovery of missing construction documents.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -40,7 +40,7 @@ The judicial handling of these disputes profoundly shaped the social geography o
 
 ## Claims to verify
 
-- [ ] Specific volume of land-dispute litigation recorded in Sun On County gazetteers during 1720-1750.
-- [ ] The extent to which Qing administrative records differentiated between 'Punti' and 'Hakka' as formal legal categories versus social classifications.
+- ❔ Specific volume of land-dispute litigation recorded in Sun On County gazetteers during 1720-1750.
+- ❔ The extent to which Qing administrative records differentiated between 'Punti' and 'Hakka' as formal legal categories versus social classifications.
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

@@ -41,7 +41,7 @@ Victoria Park quickly evolved into more than just a sports ground; it became a c
 
 ## Claims to verify
 
-- [ ] Victoria Park officially opened on October 14, 1957.
-- [ ] The park was constructed on reclaimed land in Causeway Bay.
+- ❔ Victoria Park officially opened on October 14, 1957.
+- ❔ The park was constructed on reclaimed land in Causeway Bay.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -38,7 +38,7 @@ This legislative development represented a key step in the gradual transformatio
 
 ## Claims to verify
 
-- [ ] The exact legislative text and enactment date of the Married Women's Property Ordinance in Hong Kong records.
-- [ ] The extent to which the ordinance applied uniformly across all demographic groups in the colony during the early twentieth century.
+- ❔ The exact legislative text and enactment date of the Married Women's Property Ordinance in Hong Kong records.
+- ❔ The extent to which the ordinance applied uniformly across all demographic groups in the colony during the early twentieth century.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

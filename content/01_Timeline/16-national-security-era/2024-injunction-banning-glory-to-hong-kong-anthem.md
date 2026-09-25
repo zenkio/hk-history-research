@@ -38,7 +38,7 @@ This legal action represents the first time a specific musical composition has b
 
 ## Claims to verify
 
-- [ ] The Court of Appeal granted the injunction banning 'Glory to Hong Kong' on May 8, 2024.
-- [ ] The Department of Justice originally applied for the injunction in June 2023 and was initially refused in July 2023.
+- ❔ The Court of Appeal granted the injunction banning 'Glory to Hong Kong' on May 8, 2024.
+- ❔ The Department of Justice originally applied for the injunction in June 2023 and was initially refused in July 2023.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

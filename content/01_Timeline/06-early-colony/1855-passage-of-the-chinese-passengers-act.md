@@ -46,8 +46,8 @@ The Act marked one of the earliest British legislative efforts to intervene in t
 
 ## Claims to verify
 
-- [ ] The exact text and provisions of the Chinese Passengers Act of 1855 regarding ship capacities and enforcement mechanisms.
-- [ ] The precise role and authority of the Hong Kong Emigration Officer in interviewing departing laborers under the 1855 Act.
+- ❔ The exact text and provisions of the Chinese Passengers Act of 1855 regarding ship capacities and enforcement mechanisms.
+- ❔ The precise role and authority of the Hong Kong Emigration Officer in interviewing departing laborers under the 1855 Act.
 
 ## Research notes
 

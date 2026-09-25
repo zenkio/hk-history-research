@@ -36,7 +36,7 @@ This reform marked a fundamental pivot in Hong Kong's education policy. Proponen
 
 ## Claims to verify
 
-- [ ] Verify the specific date of the official EDB circular release in April 2021.
-- [ ] Assess the percentage of curriculum content dedicated to national security versus other social topics in the initial CSD guidelines.
+- ❔ Verify the specific date of the official EDB circular release in April 2021.
+- ❔ Assess the percentage of curriculum content dedicated to national security versus other social topics in the initial CSD guidelines.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

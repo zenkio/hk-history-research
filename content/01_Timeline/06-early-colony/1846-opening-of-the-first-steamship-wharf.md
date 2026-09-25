@@ -38,8 +38,8 @@ The introduction of a dedicated steamship wharf signaled the shift of Hong Kong'
 
 ## Claims to verify
 
-- [ ] Confirm if the 1846 date marks a specific merchant-built pier or a formal government-sanctioned wharf.
-- [ ] Verify the specific location of the wharf along the early Victoria City waterfront.
-- [ ] Determine the exact name of the private firm or shipping line that initially funded the wharf construction.
+- ❔ Confirm if the 1846 date marks a specific merchant-built pier or a formal government-sanctioned wharf.
+- ❔ Verify the specific location of the wharf along the early Victoria City waterfront.
+- ❔ Determine the exact name of the private firm or shipping line that initially funded the wharf construction.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -43,9 +43,9 @@ The discovery marked a monumental breakthrough in modern medicine and epidemiolo
 
 ## Claims to verify
 
-- [ ] Alexandre Yersin isolated the plague bacillus on or around June 20, 1894.
-- [ ] Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong.
-- [ ] Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time.
+- ❔ Alexandre Yersin isolated the plague bacillus on or around June 20, 1894.
+- ❔ Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong.
+- ❔ Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time.
 
 ## Research notes
 

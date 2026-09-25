@@ -36,7 +36,7 @@ The rickshaw revolutionized daily urban mobility in Hong Kong, serving as the ba
 
 ## Claims to verify
 
-- [ ] Exact year of the rickshaw's introduction to Hong Kong is traditionally cited as 1874, though precise documentation in colonial archives warrants further verification.
-- [ ] Initial import source of the rickshaw vehicles directly from Japan to Hong Kong.
+- ❔ Exact year of the rickshaw's introduction to Hong Kong is traditionally cited as 1874, though precise documentation in colonial archives warrants further verification.
+- ❔ Initial import source of the rickshaw vehicles directly from Japan to Hong Kong.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

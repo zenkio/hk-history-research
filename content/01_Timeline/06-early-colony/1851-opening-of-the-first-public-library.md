@@ -38,8 +38,8 @@ Historians identify the establishment of this library as a symbolic turning poin
 
 ## Claims to verify
 
-- [ ] Verify the exact month of the library's opening in 1851 in primary government records.
-- [ ] Confirm the physical location of the 1851 library within the Victoria district.
-- [ ] Determine the primary language composition of the library's initial catalogue.
+- ❔ Verify the exact month of the library's opening in 1851 in primary government records.
+- ❔ Confirm the physical location of the 1851 library within the Victoria district.
+- ❔ Determine the primary language composition of the library's initial catalogue.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

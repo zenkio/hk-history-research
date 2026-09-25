@@ -40,7 +40,7 @@ The expansion of enterprises linked to figures like Ho Tung marked a transitiona
 
 ## Claims to verify
 
-- [ ] Exact archival records confirming the establishment and precise operational nature of the Ho Tung Engineering Workshop in 1895
-- [ ] The extent of Robert Ho Tung's direct financial ownership in specific engineering and mechanical workshops during the 1890s
+- ❔ Exact archival records confirming the establishment and precise operational nature of the Ho Tung Engineering Workshop in 1895
+- ❔ The extent of Robert Ho Tung's direct financial ownership in specific engineering and mechanical workshops during the 1890s
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -42,9 +42,9 @@ The completion of the runway extension fundamentally transformed Kai Tak into a 
 
 ## Claims to verify
 
-- [ ] The exact official opening date of the Kai Tak runway extension was September 12, 1958.
-- [ ] The runway length upon completion was 8,360 feet.
-- [ ] Hill-levelling at Ngau Chi Wan provided the fill material for the Kowloon Bay reclamation.
+- ❔ The exact official opening date of the Kai Tak runway extension was September 12, 1958.
+- ❔ The runway length upon completion was 8,360 feet.
+- ❔ Hill-levelling at Ngau Chi Wan provided the fill material for the Kowloon Bay reclamation.
 
 ## Evidence
 

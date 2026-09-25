@@ -40,8 +40,8 @@ The announcement marked a watershed moment in Hong Kong's socioeconomic governan
 
 ## Claims to verify
 
-- [ ] Governor Sir Murray MacLehose formally announced the Ten-Year Housing Programme on October 18, 1972.
-- [ ] The programme initially aimed to house 1.8 million people over a ten-year period.
-- [ ] The Hong Kong Housing Authority was established in 1973 to consolidate public housing responsibilities.
+- ❔ Governor Sir Murray MacLehose formally announced the Ten-Year Housing Programme on October 18, 1972.
+- ❔ The programme initially aimed to house 1.8 million people over a ten-year period.
+- ❔ The Hong Kong Housing Authority was established in 1973 to consolidate public housing responsibilities.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

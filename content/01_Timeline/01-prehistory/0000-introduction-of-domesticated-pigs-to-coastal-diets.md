@@ -35,7 +35,7 @@ The integration of domesticated pigs into local diets diversified prehistoric su
 
 ## Claims to verify
 
-- [ ] Domesticated pig remains securely dated to c. 3500 BCE have been excavated within the modern boundaries of Hong Kong.
-- [ ] The morphological differences between wild boar and early domesticated pig remains in South China are clearly distinguishable in the archaeological record.
+- ❔ Domesticated pig remains securely dated to c. 3500 BCE have been excavated within the modern boundaries of Hong Kong.
+- ❔ The morphological differences between wild boar and early domesticated pig remains in South China are clearly distinguishable in the archaeological record.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

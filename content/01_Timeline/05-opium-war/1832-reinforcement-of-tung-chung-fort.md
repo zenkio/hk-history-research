@@ -44,8 +44,8 @@ The reinforcement of Tung Chung Fort represents a key regional effort by the Qin
 
 ## Claims to verify
 
-- [ ] Whether the specific structural expansions at Tung Chung occurred precisely in the year 1832 according to official Qing provincial gazetteers.
-- [ ] The exact administrative rationale recorded in regional military reports regarding smuggling versus anti-piracy operations.
+- ❔ Whether the specific structural expansions at Tung Chung occurred precisely in the year 1832 according to official Qing provincial gazetteers.
+- ❔ The exact administrative rationale recorded in regional military reports regarding smuggling versus anti-piracy operations.
 
 ## Evidence
 

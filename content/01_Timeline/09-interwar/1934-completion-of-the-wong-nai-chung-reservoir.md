@@ -36,7 +36,7 @@ The reservoir marked a notable milestone in municipal engineering and public uti
 
 ## Claims to verify
 
-- [ ] Exact completion date and engineering specifications of the Wong Nai Chung Reservoir in 1934
-- [ ] Extent to which the reservoir measurably alleviated water shortages in surrounding urban areas upon completion
+- ❔ Exact completion date and engineering specifications of the Wong Nai Chung Reservoir in 1934
+- ❔ Extent to which the reservoir measurably alleviated water shortages in surrounding urban areas upon completion
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

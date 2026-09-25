@@ -38,7 +38,7 @@ Securing a stable long-term water supply transformed the physical and demographi
 
 ## Claims to verify
 
-- [ ] The exact completion date of the first phase of the Tai Tam Reservoir Scheme in 1888
-- [ ] The specific engineering volume and population figures served by the reservoir at the time of completion
+- ❔ The exact completion date of the first phase of the Tai Tam Reservoir Scheme in 1888
+- ❔ The specific engineering volume and population figures served by the reservoir at the time of completion
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

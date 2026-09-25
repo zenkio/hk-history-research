@@ -37,7 +37,7 @@ The **1845** census serves as a historical milestone, marking the transition fro
 
 ## Claims to verify
 
-- [ ] Verify the official 1845 census return number in archival colonial records.
-- [ ] Confirm the methodology used by the colonial office to count boat-dwelling populations during this period.
+- ❔ Verify the official 1845 census return number in archival colonial records.
+- ❔ Confirm the methodology used by the colonial office to count boat-dwelling populations during this period.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

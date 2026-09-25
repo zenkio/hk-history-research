@@ -40,7 +40,7 @@ The wartime black markets demonstrated the remarkable resilience and adaptabilit
 
 ## Claims to verify
 
-- [ ] The extent to which hidden British currency remained actively circulated and accepted in underground transactions by March 1945.
-- [ ] Specific operational patterns of black market networks within typhoon shelters during the final months of the occupation.
+- ❔ The extent to which hidden British currency remained actively circulated and accepted in underground transactions by March 1945.
+- ❔ Specific operational patterns of black market networks within typhoon shelters during the final months of the occupation.
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

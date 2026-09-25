@@ -38,8 +38,8 @@ This period establishes that the region was accessible to human occupation long 
 
 ## Claims to verify
 
-- [ ] Verify the specific dating of the final inundation of the Hong Kong coastal shelf.
-- [ ] Cross-reference lithic findings from the Hong Kong seabed with established mainland Lingnan tool typologies.
-- [ ] Confirm the extent of accepted archaeological consensus regarding the specific transit routes during the Last Glacial Maximum.
+- ❔ Verify the specific dating of the final inundation of the Hong Kong coastal shelf.
+- ❔ Cross-reference lithic findings from the Hong Kong seabed with established mainland Lingnan tool typologies.
+- ❔ Confirm the extent of accepted archaeological consensus regarding the specific transit routes during the Last Glacial Maximum.
 
 Part of: [[01_Timeline/01-prehistory/index|Prehistory and early settlement]]

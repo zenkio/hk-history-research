@@ -40,7 +40,7 @@ The event severely tested the resilience of Hong Kong's civil infrastructure and
 
 ## Claims to verify
 
-- [ ] Did the Hong Kong Observatory officially record 158.1 millimeters of rain between 11:00 PM and midnight on September 7, 2023?
-- [ ] Were all financial markets completely suspended during the extreme conditions period?
+- ❔ Did the Hong Kong Observatory officially record 158.1 millimeters of rain between 11:00 PM and midnight on September 7, 2023?
+- ❔ Were all financial markets completely suspended during the extreme conditions period?
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

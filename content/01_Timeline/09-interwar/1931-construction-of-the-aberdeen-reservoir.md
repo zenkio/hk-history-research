@@ -39,7 +39,7 @@ The project represented a critical step in the infrastructural modernization of 
 
 ## Claims to verify
 
-- [ ] Exact completion date of the Aberdeen Reservoir as 1931
-- [ ] Specific engineering composition of the upper and lower Aberdeen dams
+- ❔ Exact completion date of the Aberdeen Reservoir as 1931
+- ❔ Specific engineering composition of the upper and lower Aberdeen dams
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -37,7 +37,7 @@ Tsuen Wan's development marked a major turning point in Hong Kong's urban planni
 
 ## Claims to verify
 
-- [ ] The exact formal date or policy document in 1958 that designated Tsuen Wan as Hong Kong's first satellite town
-- [ ] The precise timeline of land reclamation and population growth in Tsuen Wan between 1950 and 1960
+- ❔ The exact formal date or policy document in 1958 that designated Tsuen Wan as Hong Kong's first satellite town
+- ❔ The precise timeline of land reclamation and population growth in Tsuen Wan between 1950 and 1960
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

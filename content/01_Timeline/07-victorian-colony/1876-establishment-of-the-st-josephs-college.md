@@ -37,7 +37,7 @@ The founding of St. Joseph's College marked a major milestone in the development
 
 ## Claims to verify
 
-- [ ] St. Joseph's College was formally established or took its name directly in the year 1876 following the transition from St. Saviour's College.
-- [ ] The exact curriculum taught during the initial years under the De La Salle Brothers.
+- ❔ St. Joseph's College was formally established or took its name directly in the year 1876 following the transition from St. Saviour's College.
+- ❔ The exact curriculum taught during the initial years under the De La Salle Brothers.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

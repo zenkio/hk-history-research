@@ -46,7 +46,7 @@ While the exact extent to which 13th-century layout practices were later modifie
 
 ## Claims to verify
 
-- [ ] The precise correlation between ancestral hall placement and the arrival dates of the first generation of each of the Five Great Clans.
-- [ ] The extent of environmental landscape modification required for early 13th-century village sites.
+- ❔ The precise correlation between ancestral hall placement and the arrival dates of the first generation of each of the Five Great Clans.
+- ❔ The extent of environmental landscape modification required for early 13th-century village sites.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

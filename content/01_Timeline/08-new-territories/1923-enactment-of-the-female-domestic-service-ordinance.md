@@ -40,7 +40,7 @@ The ordinance represented a pivotal moment in the evolution of social policy and
 
 ## Claims to verify
 
-- [ ] The Female Domestic Service Ordinance was formally enacted in 1923.
-- [ ] The ordinance required the registration of existing mui tsai while prohibiting the acquisition of new ones.
+- ❔ The Female Domestic Service Ordinance was formally enacted in 1923.
+- ❔ The ordinance required the registration of existing mui tsai while prohibiting the acquisition of new ones.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

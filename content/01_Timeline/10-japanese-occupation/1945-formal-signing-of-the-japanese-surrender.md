@@ -40,8 +40,8 @@ This event symbolized the restoration of pre-war sovereignty and the closure of 
 
 ## Claims to verify
 
-- [ ] The exact signatures and military ranks present at the Government House surrender ceremony on September 16, 1945.
-- [ ] The precise sequence of events leading Rear Admiral Harcourt to establish the initial military administration at Government House.
+- ❔ The exact signatures and military ranks present at the Government House surrender ceremony on September 16, 1945.
+- ❔ The precise sequence of events leading Rear Admiral Harcourt to establish the initial military administration at Government House.
 
 ## Evidence
 

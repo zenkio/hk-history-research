@@ -38,8 +38,8 @@ This ordinance marked a pivotal shift in the legal history of Hong Kong. It esta
 
 ## Claims to verify
 
-- [ ] The specific legislative timeline of the 1907 Ordinance versus earlier survey regulations
-- [ ] The exact level of indigenous resistance to the land survey process in 1907
-- [ ] The extent to which colonial land titles replaced vs. merely documented pre-existing Qing-era land deeds
+- ❔ The specific legislative timeline of the 1907 Ordinance versus earlier survey regulations
+- ❔ The exact level of indigenous resistance to the land survey process in 1907
+- ❔ The extent to which colonial land titles replaced vs. merely documented pre-existing Qing-era land deeds
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

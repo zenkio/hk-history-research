@@ -39,8 +39,8 @@ By September 2015, the Council officially rejected **Johannes Chan**'s appointme
 
 ## Claims to verify
 
-- [ ] The specific procedural criteria used by the search committee versus the Council for the Pro-Vice-Chancellor role.
-- [ ] The exact timeline of the Council's repeated deferral of the appointment between early 2015 and September 2015.
-- [ ] The composition of the Council and the influence of the Chief Executive's appointments on its decision-making.
+- ❔ The specific procedural criteria used by the search committee versus the Council for the Pro-Vice-Chancellor role.
+- ❔ The exact timeline of the Council's repeated deferral of the appointment between early 2015 and September 2015.
+- ❔ The composition of the Council and the influence of the Chief Executive's appointments on its decision-making.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

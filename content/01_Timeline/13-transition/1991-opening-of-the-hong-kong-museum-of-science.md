@@ -40,7 +40,7 @@ The establishment of the museum reflected a broader late-colonial policy shift t
 
 ## Claims to verify
 
-- [ ] The Hong Kong Museum of Science officially opened on April 18, 1991.
-- [ ] The museum was developed under the auspices of the Urban Council.
+- ❔ The Hong Kong Museum of Science officially opened on April 18, 1991.
+- ❔ The museum was developed under the auspices of the Urban Council.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

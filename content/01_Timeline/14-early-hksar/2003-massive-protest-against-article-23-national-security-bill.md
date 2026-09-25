@@ -47,8 +47,8 @@ Historians and political scientists note that the event marked the beginning of 
 
 ## Claims to verify
 
-- [ ] Exact crowd size estimates provided by police versus organizers on July 1, 2003
-- [ ] The precise sequence of events leading to James Tien's resignation from the Executive Council
-- [ ] The exact date the Article 23 bill was formally withdrawn from the Legislative Council
+- ❔ Exact crowd size estimates provided by police versus organizers on July 1, 2003
+- ❔ The precise sequence of events leading to James Tien's resignation from the Executive Council
+- ❔ The exact date the Article 23 bill was formally withdrawn from the Legislative Council
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

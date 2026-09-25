@@ -39,8 +39,8 @@ The arrival of the **Clara Maersk** is widely recognized by historians as the de
 
 ## Claims to verify
 
-- [ ] The exact number of refugees on board the Clara Maersk was approximately 3,700.
-- [ ] The Clara Maersk arrived in Hong Kong on May 4, 1975.
-- [ ] The colonial government briefly delayed disembarkation upon the ship's arrival.
+- ❔ The exact number of refugees on board the Clara Maersk was approximately 3,700.
+- ❔ The Clara Maersk arrived in Hong Kong on May 4, 1975.
+- ❔ The colonial government briefly delayed disembarkation upon the ship's arrival.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

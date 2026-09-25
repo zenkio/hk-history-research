@@ -38,7 +38,7 @@ The creation of the dock company marked a pivotal transition for Hong Kong from 
 
 ## Claims to verify
 
-- [ ] The exact formal incorporation date of July 1, 1863 as recorded in primary commercial registries.
-- [ ] The initial list of consolidated assets and founders involved in the formation of the company.
+- ❔ The exact formal incorporation date of July 1, 1863 as recorded in primary commercial registries.
+- ❔ The initial list of consolidated assets and founders involved in the formation of the company.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

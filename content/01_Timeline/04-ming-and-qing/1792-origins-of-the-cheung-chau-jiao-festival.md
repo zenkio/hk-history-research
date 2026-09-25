@@ -38,7 +38,7 @@ The establishment of the Cheung Chau Jiao Festival marked a crucial development 
 
 ## Claims to verify
 
-- [ ] Did a particularly severe plague occur on Cheung Chau in or around 1792?
-- [ ] What primary local epigraphic or archival evidence confirms the exact chronology of the early Jiao Festival rites prior to the 20th century?
+- ❔ Did a particularly severe plague occur on Cheung Chau in or around 1792?
+- ❔ What primary local epigraphic or archival evidence confirms the exact chronology of the early Jiao Festival rites prior to the 20th century?
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

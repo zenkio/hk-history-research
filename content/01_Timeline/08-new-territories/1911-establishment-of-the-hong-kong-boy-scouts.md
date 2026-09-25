@@ -39,8 +39,8 @@ The establishment of the Boy Scouts in Hong Kong represents the broader cultural
 
 ## Claims to verify
 
-- [ ] The exact date of the first officially registered Boy Scout troop in Hong Kong.
-- [ ] The specific influence of colonial officials vs. local schoolmasters in the formation of the first units.
-- [ ] The demographic composition of early scouts by ethnic background and social class.
+- ❔ The exact date of the first officially registered Boy Scout troop in Hong Kong.
+- ❔ The specific influence of colonial officials vs. local schoolmasters in the formation of the first units.
+- ❔ The demographic composition of early scouts by ethnic background and social class.
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

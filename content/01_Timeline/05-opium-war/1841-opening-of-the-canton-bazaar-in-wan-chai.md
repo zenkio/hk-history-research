@@ -40,7 +40,7 @@ The opening of the Canton Bazaar marked an important early chapter in the integr
 
 ## Claims to verify
 
-- [ ] The exact establishment date of the Canton Bazaar in Wan Chai as 1841
-- [ ] The specific extent of official British involvement in planning the Canton Bazaar versus spontaneous Chinese settlement
+- ❔ The exact establishment date of the Canton Bazaar in Wan Chai as 1841
+- ❔ The specific extent of official British involvement in planning the Canton Bazaar versus spontaneous Chinese settlement
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

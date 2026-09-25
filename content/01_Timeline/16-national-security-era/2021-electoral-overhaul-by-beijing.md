@@ -41,7 +41,7 @@ This legislative restructuring marked a profound turning point in Hong Kong's po
 
 ## Claims to verify
 
-- [ ] The National People's Congress passed the Decision on Improving the Electoral System of the Hong Kong Special Administrative Region on March 11, 2021.
-- [ ] The total number of seats in the Legislative Council was increased from 70 to 90 under the new system.
+- ❔ The National People's Congress passed the Decision on Improving the Electoral System of the Hong Kong Special Administrative Region on March 11, 2021.
+- ❔ The total number of seats in the Legislative Council was increased from 70 to 90 under the new system.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

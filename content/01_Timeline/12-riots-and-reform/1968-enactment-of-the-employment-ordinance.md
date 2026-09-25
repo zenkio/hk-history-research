@@ -38,7 +38,7 @@ Historians view the Employment Ordinance as a crucial turning point in Hong Kong
 
 ## Claims to verify
 
-- [ ] Exact legislative timeline and provisions of the original 1968 Employment Ordinance versus later amendments in the 1970s
-- [ ] The direct causal relationship perceived by contemporaries between the 1967 riots and the drafting of the ordinance
+- ❔ Exact legislative timeline and provisions of the original 1968 Employment Ordinance versus later amendments in the 1970s
+- ❔ The direct causal relationship perceived by contemporaries between the 1967 riots and the drafting of the ordinance
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

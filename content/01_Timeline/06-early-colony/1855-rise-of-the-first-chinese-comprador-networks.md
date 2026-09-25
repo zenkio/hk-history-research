@@ -40,8 +40,8 @@ The emergence of the comprador system established a unique socio-economic struct
 
 ## Claims to verify
 
-- [ ] The specific year 1855 as a peak consolidation period for the first wave of compradors.
-- [ ] The extent of legal formalization of comprador contracts in colonial courts before 1860.
-- [ ] The primary merchant houses that formalised the role of the comprador in Hong Kong during this decade.
+- ❔ The specific year 1855 as a peak consolidation period for the first wave of compradors.
+- ❔ The extent of legal formalization of comprador contracts in colonial courts before 1860.
+- ❔ The primary merchant houses that formalised the role of the comprador in Hong Kong during this decade.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

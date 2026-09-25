@@ -37,8 +37,8 @@ The creation of the URA represented a move toward a more interventionist state a
 
 ## Claims to verify
 
-- [ ] The exact statutory differences in land resumption powers between the Land Development Corporation and the Urban Renewal Authority.
-- [ ] The full list of initial urban renewal projects initiated between 2001 and 2003.
-- [ ] The specific financial reporting requirements placed upon the URA at its inception.
+- ❔ The exact statutory differences in land resumption powers between the Land Development Corporation and the Urban Renewal Authority.
+- ❔ The full list of initial urban renewal projects initiated between 2001 and 2003.
+- ❔ The specific financial reporting requirements placed upon the URA at its inception.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

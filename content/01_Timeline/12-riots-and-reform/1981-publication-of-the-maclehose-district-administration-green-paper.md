@@ -41,7 +41,7 @@ The publication of the Green Paper is widely regarded by historians as a foundat
 
 ## Claims to verify
 
-- [ ] The exact text and public reception of the Green Paper published on June 5, 1981
-- [ ] The precise proportion of appointed versus elected members initially proposed for the District Boards
+- ❔ The exact text and public reception of the Green Paper published on June 5, 1981
+- ❔ The precise proportion of appointed versus elected members initially proposed for the District Boards
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

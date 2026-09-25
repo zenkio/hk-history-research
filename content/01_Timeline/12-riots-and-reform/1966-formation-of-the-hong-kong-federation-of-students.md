@@ -35,7 +35,7 @@ The formation of the HKFS is widely viewed by historians as a milestone in the d
 
 ## Claims to verify
 
-- [ ] Verify the exact official registration date of the Hong Kong Federation of Students.
-- [ ] Confirm the initial number of participating student unions at the time of the 1966 inaugural meeting.
+- ❔ Verify the exact official registration date of the Hong Kong Federation of Students.
+- ❔ Confirm the initial number of participating student unions at the time of the 1966 inaugural meeting.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

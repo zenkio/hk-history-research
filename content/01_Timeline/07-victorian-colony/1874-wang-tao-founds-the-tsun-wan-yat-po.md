@@ -41,8 +41,8 @@ The founding of the *Tsun Wan Yat Po* is widely recognized as a turning point in
 
 ## Claims to verify
 
-- [ ] Tsun Wan Yat Po was the very first daily newspaper entirely owned and managed by Chinese in Hong Kong.
-- [ ] The exact launch date of the newspaper was February 5, 1874.
-- [ ] Ng Choy provided financial backing for the establishment of the newspaper.
+- ❔ Tsun Wan Yat Po was the very first daily newspaper entirely owned and managed by Chinese in Hong Kong.
+- ❔ The exact launch date of the newspaper was February 5, 1874.
+- ❔ Ng Choy provided financial backing for the establishment of the newspaper.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

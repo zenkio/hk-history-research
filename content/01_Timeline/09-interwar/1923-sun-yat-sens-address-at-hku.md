@@ -39,8 +39,8 @@ The address remains a frequently cited text in the historiography of modern Hong
 
 ## Claims to verify
 
-- [ ] Sun Yat-sen delivered a speech at the University of Hong Kong on February 20, 1923
-- [ ] Sun explicitly stated during the address that his revolutionary ideas were born in Hong Kong due to its good government
+- ❔ Sun Yat-sen delivered a speech at the University of Hong Kong on February 20, 1923
+- ❔ Sun explicitly stated during the address that his revolutionary ideas were born in Hong Kong due to its good government
 
 ## Evidence
 

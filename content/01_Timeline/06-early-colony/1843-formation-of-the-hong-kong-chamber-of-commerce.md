@@ -39,8 +39,8 @@ While the Chamber’s early years focused on consolidating British mercantile co
 
 ## Claims to verify
 
-- [ ] The exact inaugural meeting date in 1843.
-- [ ] The full list of founding merchant houses excluding Chinese firms.
-- [ ] The specific legislative influence exerted by the Chamber in its first five years.
+- ❔ The exact inaugural meeting date in 1843.
+- ❔ The full list of founding merchant houses excluding Chinese firms.
+- ❔ The specific legislative influence exerted by the Chamber in its first five years.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

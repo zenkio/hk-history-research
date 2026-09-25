@@ -36,7 +36,7 @@ The launch of the Home Ownership Scheme became a cornerstone of Hong Kong's dome
 
 ## Claims to verify
 
-- [ ] The Home Ownership Scheme was officially announced on December 28, 1976.
-- [ ] The scheme was administered by the Hong Kong Housing Authority to target lower-to-middle income families.
+- ❔ The Home Ownership Scheme was officially announced on December 28, 1976.
+- ❔ The scheme was administered by the Hong Kong Housing Authority to target lower-to-middle income families.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -44,7 +44,7 @@ The 1948 eviction crisis cemented the Kowloon Walled City's status as a near-aut
 
 ## Claims to verify
 
-- [ ] Exact casualty numbers resulting from the January 1948 clashes between residents and colonial police.
-- [ ] The precise diplomatic communications exchanged between the Foreign Office in London, the British Embassy in Nanjing, and the Hong Kong Government regarding the suspension of the eviction order.
+- ❔ Exact casualty numbers resulting from the January 1948 clashes between residents and colonial police.
+- ❔ The precise diplomatic communications exchanged between the Foreign Office in London, the British Embassy in Nanjing, and the Hong Kong Government regarding the suspension of the eviction order.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

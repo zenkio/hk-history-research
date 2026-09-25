@@ -45,9 +45,9 @@ Modern scholarship frequently views the 1922 strike as a watershed moment in the
 
 ## Claims to verify
 
-- [ ] Exact number of striking workers reached or exceeded 120,000
-- [ ] Precise casualty figures resulting from the Sha Tin incident on March 4, 1922
-- [ ] Agreed percentage range of wage increases secured in the final settlement
+- ❔ Exact number of striking workers reached or exceeded 120,000
+- ❔ Precise casualty figures resulting from the Sha Tin incident on March 4, 1922
+- ❔ Agreed percentage range of wage increases secured in the final settlement
 
 ## Photos from this period
 

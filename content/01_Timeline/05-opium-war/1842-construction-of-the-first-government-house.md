@@ -41,7 +41,7 @@ The construction of the First Government House served as a tangible symbol of th
 
 ## Claims to verify
 
-- [ ] Construction of the First Government House officially began specifically in the year 1842.
-- [ ] The exact architectural specifications and materials used for the initial building on Pottinger Street.
+- ❔ Construction of the First Government House officially began specifically in the year 1842.
+- ❔ The exact architectural specifications and materials used for the initial building on Pottinger Street.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

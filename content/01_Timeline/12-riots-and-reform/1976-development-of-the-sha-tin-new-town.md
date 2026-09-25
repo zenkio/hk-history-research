@@ -39,8 +39,8 @@ Sha Tin served as a model for subsequent New Town projects across Hong Kong. It 
 
 ## Claims to verify
 
-- [ ] The official commencement date of the Sha Tin New Town project.
-- [ ] The total planned versus actual population capacity during the 1976 phase.
-- [ ] The extent of compensation policies for indigenous villagers displaced by the reclamation.
+- ❔ The official commencement date of the Sha Tin New Town project.
+- ❔ The total planned versus actual population capacity during the 1976 phase.
+- ❔ The extent of compensation policies for indigenous villagers displaced by the reclamation.
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

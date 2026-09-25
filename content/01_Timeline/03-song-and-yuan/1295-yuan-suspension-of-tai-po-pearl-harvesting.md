@@ -39,7 +39,7 @@ The suspension of the Tai Po pearl harvest provides a vital window into the soci
 
 ## Claims to verify
 
-- [ ] Did the Yuan dynasty officially suspend Tai Po pearl harvesting specifically in the year 1295?
-- [ ] What specific primary sources document the mortality rates of pearl divers in Tai Po Hoi during the late 13th century?
+- ❔ Did the Yuan dynasty officially suspend Tai Po pearl harvesting specifically in the year 1295?
+- ❔ What specific primary sources document the mortality rates of pearl divers in Tai Po Hoi during the late 13th century?
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

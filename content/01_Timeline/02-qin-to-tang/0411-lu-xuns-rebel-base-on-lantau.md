@@ -39,7 +39,7 @@ The episode is frequently cited by historians as an early historical record docu
 
 ## Claims to verify
 
-- [ ] Lu Xun explicitly used Lantau Island as a stronghold in the year 411
-- [ ] The tactical nature of the rebel fleet's operations in the Pearl River Delta coastal waters
+- ❔ Lu Xun explicitly used Lantau Island as a stronghold in the year 411
+- ❔ The tactical nature of the rebel fleet's operations in the Pearl River Delta coastal waters
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

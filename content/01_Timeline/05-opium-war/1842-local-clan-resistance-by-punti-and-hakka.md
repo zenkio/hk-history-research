@@ -42,7 +42,7 @@ This tension created a precedent for how the colonial government handled indigen
 
 ## Claims to verify
 
-- [ ] The specific terminology used by the 1842 colonial administration to describe 'waste land'.
-- [ ] The frequency and scale of physical confrontations between surveyors and villagers in the immediate post-1842 period.
+- ❔ The specific terminology used by the 1842 colonial administration to describe 'waste land'.
+- ❔ The frequency and scale of physical confrontations between surveyors and villagers in the immediate post-1842 period.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

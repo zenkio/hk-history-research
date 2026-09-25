@@ -43,7 +43,7 @@ This total prohibition marked a point of no return in Qing-British relations, ex
 
 ## Claims to verify
 
-- [ ] Did the imperial edict formally take effect specifically on December 6, 1839, or was this the date of transmission or receipt by local authorities?
-- [ ] To what extent did clandestine trade continue between British merchants and Chinese intermediaries despite the total ban?
+- ❔ Did the imperial edict formally take effect specifically on December 6, 1839, or was this the date of transmission or receipt by local authorities?
+- ❔ To what extent did clandestine trade continue between British merchants and Chinese intermediaries despite the total ban?
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

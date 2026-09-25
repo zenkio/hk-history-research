@@ -41,7 +41,7 @@ The 1973 White Paper is widely regarded by historians as a turning point that tr
 
 ## Claims to verify
 
-- [ ] The exact formal title and publication month of the 1973 Social Welfare White Paper in primary archival records
-- [ ] The precise division of financial responsibilities between the colonial government and NGOs outlined in the 1973 framework
+- ❔ The exact formal title and publication month of the 1973 Social Welfare White Paper in primary archival records
+- ❔ The precise division of financial responsibilities between the colonial government and NGOs outlined in the 1973 framework
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

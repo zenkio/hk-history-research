@@ -37,8 +37,8 @@ The establishment of the society is widely regarded by historians as a milestone
 
 ## Claims to verify
 
-- [ ] The exact membership list of the founding committee of the Hong Kong Anti-Mui Tsai Society in 1921.
-- [ ] The correlation between the society's founding and the drafting process of the Female Domestic Service Ordinance of 1923.
-- [ ] Documentation regarding the specific reception of the society's manifesto by the colonial government in the year of its founding.
+- ❔ The exact membership list of the founding committee of the Hong Kong Anti-Mui Tsai Society in 1921.
+- ❔ The correlation between the society's founding and the drafting process of the Female Domestic Service Ordinance of 1923.
+- ❔ Documentation regarding the specific reception of the society's manifesto by the colonial government in the year of its founding.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

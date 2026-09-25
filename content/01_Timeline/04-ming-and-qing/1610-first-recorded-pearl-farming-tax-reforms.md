@@ -38,8 +38,8 @@ These reforms serve as a critical point of study for understanding the tension b
 
 ## Claims to verify
 
-- [ ] The specific year 1610 as the primary date of the Pearl Tax reform in Tai Po
-- [ ] The extent of Ming central control over the Tai Po pearl beds during the Wanli era
-- [ ] The exact nature of the tax burden placed on the Tanka divers
+- ❔ The specific year 1610 as the primary date of the Pearl Tax reform in Tai Po
+- ❔ The extent of Ming central control over the Tai Po pearl beds during the Wanli era
+- ❔ The exact nature of the tax burden placed on the Tanka divers
 
 Part of: [[01_Timeline/04-ming-and-qing/index|Ming and Qing coast: pirates, the Great Clearance, forts]]

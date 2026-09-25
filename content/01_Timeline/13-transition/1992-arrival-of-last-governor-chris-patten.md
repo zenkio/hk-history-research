@@ -44,7 +44,7 @@ Patten's arrival and subsequent tenure fundamentally transformed the political d
 
 ## Claims to verify
 
-- [ ] Chris Patten arrived in Hong Kong and was sworn in on July 9, 1992.
-- [ ] Patten broke with tradition by refusing to wear the white plumed colonial governor's uniform.
+- ❔ Chris Patten arrived in Hong Kong and was sworn in on July 9, 1992.
+- ❔ Patten broke with tradition by refusing to wear the white plumed colonial governor's uniform.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

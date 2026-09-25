@@ -41,8 +41,8 @@ The bridge symbolizes the "Airport Core Programme," a series of projects that fu
 
 ## Claims to verify
 
-- [ ] The exact start date of the Tsing Ma Bridge construction phase in 1992.
-- [ ] The full list of infrastructure projects included under the Airport Core Programme label.
-- [ ] The specific nature of the fiscal dispute between the UK and China concerning PADS funding in 1991-1992.
+- ❔ The exact start date of the Tsing Ma Bridge construction phase in 1992.
+- ❔ The full list of infrastructure projects included under the Airport Core Programme label.
+- ❔ The specific nature of the fiscal dispute between the UK and China concerning PADS funding in 1991-1992.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

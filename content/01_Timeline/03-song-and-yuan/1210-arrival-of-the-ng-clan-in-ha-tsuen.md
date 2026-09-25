@@ -37,7 +37,7 @@ The settlement of the Ng clan at Ha Tsuen represents a crucial chapter in the ag
 
 ## Claims to verify
 
-- [ ] The exact arrival dates of the Ng clan in Ha Tsuen between 1200 and 1220.
-- [ ] The precise genealogical links between the early settlers and subsequent lineage branches.
+- ❔ The exact arrival dates of the Ng clan in Ha Tsuen between 1200 and 1220.
+- ❔ The precise genealogical links between the early settlers and subsequent lineage branches.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

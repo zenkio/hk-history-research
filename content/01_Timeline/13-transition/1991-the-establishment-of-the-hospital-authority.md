@@ -38,8 +38,8 @@ The creation of the Hospital Authority represents one of the most significant ad
 
 ## Claims to verify
 
-- [ ] Confirm the exact official start date of the Hospital Authority's executive operations in 1991.
-- [ ] Verify the extent of civil service staff resistance during the 1991 transfer period.
-- [ ] Cross-reference the Scott Report recommendations with the actual structure of the HA as implemented.
+- ❔ Confirm the exact official start date of the Hospital Authority's executive operations in 1991.
+- ❔ Verify the extent of civil service staff resistance during the 1991 transfer period.
+- ❔ Cross-reference the Scott Report recommendations with the actual structure of the HA as implemented.
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

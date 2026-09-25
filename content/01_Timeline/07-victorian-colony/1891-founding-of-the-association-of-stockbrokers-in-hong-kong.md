@@ -38,7 +38,7 @@ The creation of the association marked a watershed moment in the financial histo
 
 ## Claims to verify
 
-- [ ] The Association of Stockbrokers in Hong Kong was formally established on February 3, 1891.
-- [ ] The association represented the first formal and organized stock exchange in the history of Hong Kong.
+- ❔ The Association of Stockbrokers in Hong Kong was formally established on February 3, 1891.
+- ❔ The association represented the first formal and organized stock exchange in the history of Hong Kong.
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

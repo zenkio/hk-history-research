@@ -35,8 +35,8 @@ The revision of the mechanism was widely viewed as a direct response to the poli
 
 ## Claims to verify
 
-- [ ] Confirm the exact percentage reduction applied to the 2017 fare adjustment calculation.
-- [ ] Verify the specific date of the official announcement by the MTR Corporation regarding the 2017 review outcome.
-- [ ] Identify the specific members of the Legislative Council who were most active in the 2017 fare revision debates.
+- ❔ Confirm the exact percentage reduction applied to the 2017 fare adjustment calculation.
+- ❔ Verify the specific date of the official announcement by the MTR Corporation regarding the 2017 review outcome.
+- ❔ Identify the specific members of the Legislative Council who were most active in the 2017 fare revision debates.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

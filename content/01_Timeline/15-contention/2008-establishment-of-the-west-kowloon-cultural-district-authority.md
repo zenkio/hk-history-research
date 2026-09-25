@@ -36,8 +36,8 @@ The establishment of the Authority marked a pivotal shift in Hong Kong’s appro
 
 ## Claims to verify
 
-- [ ] The specific date the West Kowloon Cultural District Authority Ordinance was passed by the Legislative Council.
-- [ ] The exact composition of the inaugural board of the West Kowloon Cultural District Authority.
-- [ ] The official administrative shift from the Planning Department's oversight to the statutory authority.
+- ❔ The specific date the West Kowloon Cultural District Authority Ordinance was passed by the Legislative Council.
+- ❔ The exact composition of the inaugural board of the West Kowloon Cultural District Authority.
+- ❔ The official administrative shift from the Planning Department's oversight to the statutory authority.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

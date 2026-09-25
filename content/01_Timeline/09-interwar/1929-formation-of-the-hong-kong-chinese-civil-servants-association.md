@@ -35,8 +35,8 @@ The formation of the association is often viewed as a maturation of the local Ch
 
 ## Claims to verify
 
-- [ ] Confirm the exact month of the association's founding in 1929.
-- [ ] Verify if the initial charter explicitly focused on salary parity or internal professional training.
-- [ ] Identify key founding members of the association.
+- ❔ Confirm the exact month of the association's founding in 1929.
+- ❔ Verify if the initial charter explicitly focused on salary parity or internal professional training.
+- ❔ Identify key founding members of the association.
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

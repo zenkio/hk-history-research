@@ -35,7 +35,7 @@ The establishment of the Hawkers Control Force serves as a microcosm of Hong Kon
 
 ## Claims to verify
 
-- [ ] Verify the exact operational commencement date of the Hawkers Control Force in 1947.
-- [ ] Investigate the specific legislative ordinances that provided the legal mandate for the Hawkers Control Force in the late 1940s.
+- ❔ Verify the exact operational commencement date of the Hawkers Control Force in 1947.
+- ❔ Investigate the specific legislative ordinances that provided the legal mandate for the Hawkers Control Force in the late 1940s.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

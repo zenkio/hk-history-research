@@ -43,7 +43,7 @@ Legal scholars and international observers view the verdicts as a watershed mome
 
 ## Claims to verify
 
-- [ ] Did the court deliver verdicts on May 30, 2024?
-- [ ] Were exactly 14 defendants convicted on that date out of the 47 accused?
+- ❔ Did the court deliver verdicts on May 30, 2024?
+- ❔ Were exactly 14 defendants convicted on that date out of the 47 accused?
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

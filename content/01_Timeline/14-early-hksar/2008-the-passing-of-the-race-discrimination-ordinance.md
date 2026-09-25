@@ -36,8 +36,8 @@ The passing of the RDO is widely viewed as a milestone in the evolution of Hong 
 
 ## Claims to verify
 
-- [ ] The exact voting tally in the Legislative Council on July 10, 2008.
-- [ ] The specific scope of exemptions related to language and immigration policies in the final text of the ordinance.
-- [ ] The timeline of pressure from the United Nations Committee on the Elimination of Racial Discrimination leading up to the 2008 passage.
+- ❔ The exact voting tally in the Legislative Council on July 10, 2008.
+- ❔ The specific scope of exemptions related to language and immigration policies in the final text of the ordinance.
+- ❔ The timeline of pressure from the United Nations Committee on the Elimination of Racial Discrimination leading up to the 2008 passage.
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

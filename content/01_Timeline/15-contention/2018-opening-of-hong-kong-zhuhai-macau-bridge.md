@@ -46,9 +46,9 @@ The bridge physically integrated Hong Kong deeper into the economic apparatus of
 
 ## Claims to verify
 
-- [ ] The Hong Kong-Zhuhai-Macau Bridge officially opened to traffic on October 24, 2018, following a ceremony on October 23.
-- [ ] The bridge spans approximately 55 kilometers and incorporates a tunnel and artificial islands.
-- [ ] Construction on the bridge officially commenced in December 2009.
+- ❔ The Hong Kong-Zhuhai-Macau Bridge officially opened to traffic on October 24, 2018, following a ceremony on October 23.
+- ❔ The bridge spans approximately 55 kilometers and incorporates a tunnel and artificial islands.
+- ❔ Construction on the bridge officially commenced in December 2009.
 
 ## Photos from this period
 

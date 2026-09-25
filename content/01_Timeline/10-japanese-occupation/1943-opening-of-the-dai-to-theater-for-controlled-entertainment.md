@@ -38,7 +38,7 @@ The opening of the Dai To Theater exemplifies the broader policy of total mobili
 
 ## Claims to verify
 
-- [ ] Did the Dai To Theater officially open specifically in May 1943?
-- [ ] Was the Dai To Theater the direct successor to the Pearl Theater?
+- ❔ Did the Dai To Theater officially open specifically in May 1943?
+- ❔ Was the Dai To Theater the direct successor to the Pearl Theater?
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

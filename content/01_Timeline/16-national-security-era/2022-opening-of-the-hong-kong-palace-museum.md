@@ -42,7 +42,7 @@ The opening of the museum marked a significant milestone in Hong Kong's cultural
 
 ## Claims to verify
 
-- [ ] The exact number and conservation conditions of artifacts loaned from the Beijing Palace Museum for the inaugural exhibition.
-- [ ] The total construction cost and funding sources for the Hong Kong Palace Museum building project.
+- ❔ The exact number and conservation conditions of artifacts loaned from the Beijing Palace Museum for the inaugural exhibition.
+- ❔ The total construction cost and funding sources for the Hong Kong Palace Museum building project.
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

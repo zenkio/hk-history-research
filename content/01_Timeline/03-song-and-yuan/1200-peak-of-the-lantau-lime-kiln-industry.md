@@ -36,7 +36,7 @@ The lime-burning industry highlights the early commercial integration of the Hon
 
 ## Claims to verify
 
-- [ ] The peak production period of Lantau lime kilns occurred around 1200.
-- [ ] Lime produced on Lantau was widely distributed throughout the Pearl River Delta for shipbuilding and mortar.
+- ❔ The peak production period of Lantau lime kilns occurred around 1200.
+- ❔ Lime produced on Lantau was widely distributed throughout the Pearl River Delta for shipbuilding and mortar.
 
 Part of: [[01_Timeline/03-song-and-yuan/index|Song and Yuan: salt, pearls and clans]]

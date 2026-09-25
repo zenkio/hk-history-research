@@ -38,7 +38,7 @@ The findings of the **1902** report served as the direct catalyst for sweeping l
 
 ## Claims to verify
 
-- [ ] Osbert Chadwick authored a second major sanitary report specifically in the year 1902
-- [ ] The 1903 Public Health and Buildings Ordinance was a direct legislative result of the 1902 Chadwick Report
+- ❔ Osbert Chadwick authored a second major sanitary report specifically in the year 1902
+- ❔ The 1903 Public Health and Buildings Ordinance was a direct legislative result of the 1902 Chadwick Report
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -39,8 +39,8 @@ The exploitation of the **Morrison Hill Quarry** represents a pivotal moment in 
 
 ## Claims to verify
 
-- [ ] Verify the exact start date of operations at Morrison Hill Quarry.
-- [ ] Confirm the specific colonial land ordinance that authorized the extraction of granite.
-- [ ] Cross-reference the naming convention of Morrison Hill with local geological records from the 1840s.
+- ❔ Verify the exact start date of operations at Morrison Hill Quarry.
+- ❔ Confirm the specific colonial land ordinance that authorized the extraction of granite.
+- ❔ Cross-reference the naming convention of Morrison Hill with local geological records from the 1840s.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

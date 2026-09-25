@@ -40,7 +40,7 @@ The ban represented a watershed moment for political expression and freedom of a
 
 ## Claims to verify
 
-- [ ] The Hong Kong National Party was officially banned on September 24, 2018.
-- [ ] This was the first time a political group was outlawed under the Societies Ordinance since the 1997 handover.
+- ❔ The Hong Kong National Party was officially banned on September 24, 2018.
+- ❔ This was the first time a political group was outlawed under the Societies Ordinance since the 1997 handover.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

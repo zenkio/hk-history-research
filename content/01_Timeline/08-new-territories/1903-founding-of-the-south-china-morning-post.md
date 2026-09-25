@@ -42,8 +42,8 @@ The launch of the *South China Morning Post* established what would become one o
 
 ## Claims to verify
 
-- [ ] The exact date of the first publication was November 6, 1903
-- [ ] Tse Tsan-tai and Alfred Cunningham were the primary co-founders of the newspaper
+- ❔ The exact date of the first publication was November 6, 1903
+- ❔ Tse Tsan-tai and Alfred Cunningham were the primary co-founders of the newspaper
 
 ## Evidence
 

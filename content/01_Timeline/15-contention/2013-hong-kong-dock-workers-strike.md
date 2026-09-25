@@ -39,7 +39,7 @@ The strike became a watershed moment in contemporary Hong Kong labor history. It
 
 ## Claims to verify
 
-- [ ] The strike officially lasted for 40 days starting on March 28, 2013.
-- [ ] The final settlement in May 2013 included a double-digit percentage wage increase for the outsourced laborers.
+- ❔ The strike officially lasted for 40 days starting on March 28, 2013.
+- ❔ The final settlement in May 2013 included a double-digit percentage wage increase for the outsourced laborers.
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

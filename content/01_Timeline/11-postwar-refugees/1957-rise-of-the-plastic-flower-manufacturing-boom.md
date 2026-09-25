@@ -39,7 +39,7 @@ The plastic flower boom marked a critical turning point in Hong Kong's transitio
 
 ## Claims to verify
 
-- [ ] The precise year when plastic flower manufacturing became the dominant sector of Hong Kong's light exports.
-- [ ] The exact percentage of the urban workforce engaged in home-assembly outwork during the peak years of 1957 to 1960.
+- ❔ The precise year when plastic flower manufacturing became the dominant sector of Hong Kong's light exports.
+- ❔ The exact percentage of the urban workforce engaged in home-assembly outwork during the peak years of 1957 to 1960.
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

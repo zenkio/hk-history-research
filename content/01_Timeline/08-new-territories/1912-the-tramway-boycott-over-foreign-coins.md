@@ -43,8 +43,8 @@ The tramway boycott highlighted the everyday friction between colonial governanc
 
 ## Claims to verify
 
-- [ ] Exact dates when the tramway company first banned mainland subsidiary coins in 1912 or 1913
-- [ ] The specific mechanisms used by the colonial government to resolve the tram boycott
+- ❔ Exact dates when the tramway company first banned mainland subsidiary coins in 1912 or 1913
+- ❔ The specific mechanisms used by the colonial government to resolve the tram boycott
 
 ## Evidence
 

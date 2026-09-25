@@ -36,8 +36,8 @@ The creation of these defensive earthworks marks a pivotal shift in the regional
 
 ## Claims to verify
 
-- [ ] Verification of radiocarbon dating for specific earthwork layers at Lamma Island sites.
-- [ ] Determination of whether the identified earthworks served defensive or purely residential purposes.
-- [ ] Confirmation of the transition from Neolithic to Bronze Age settlement patterns in the Pearl River Delta.
+- ❔ Verification of radiocarbon dating for specific earthwork layers at Lamma Island sites.
+- ❔ Determination of whether the identified earthworks served defensive or purely residential purposes.
+- ❔ Confirmation of the transition from Neolithic to Bronze Age settlement patterns in the Pearl River Delta.
 
 Part of: [[01_Timeline/02-qin-to-tang/index|Imperial frontier: Qin to Tang]]

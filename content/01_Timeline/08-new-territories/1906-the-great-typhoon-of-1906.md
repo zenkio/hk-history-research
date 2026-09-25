@@ -4,7 +4,7 @@ title_zh: "一九○六年丙午風災"
 date: 1906-09-18
 year: 1906
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-a", "photo-corroborated", "1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-a", "photo-corroborated", "1906", "ai-draft", "colonial-history", "great-typhoon-1906", "hong-kong-observatory", "maritime-disaster", "natural-disaster", "new-territories"]
 summary: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 description: "On September 18, 1906, a sudden and catastrophic typhoon struck Hong Kong without prior warning, resulting in massive loss of life and devastating maritime infrastructure."
 confidence: ai-draft
@@ -44,59 +44,17 @@ Historians also note that the disaster disproportionately impacted the marginali
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The precise death toll of the 1906 typhoon, given that historical estimates range significantly from 6,000 to over 15,000 fatalities.
-- ❔ The exact sequence of meteorological communications and warning signals issued—or failed to be issued—by the Hong Kong Observatory on the morning of September 18, 1906.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ⚠️ **differs from Wikipedia**: The precise death toll of the 1906 typhoon, given that historical estimates range significantly from 6,000 to over 15,000 fatalities. The text states the typhoon took the lives of around 15,000 people, without mentioning a range starting from 6,000.
+- ✅ **agrees with Wikipedia**: The exact sequence of meteorological communications and warning signals issued—or failed to be issued—by the Hong Kong Observatory on the morning of September 18, 1906. The text notes there was no indication of the typhoon before 7:44 am, a black drum was hoisted at 8:40 am, followed by the typhoon gun, and ferries ceased to operate by 9:00 am.
 
-![A weather chart from the Zi-ka-wei Observatory showing a typhoon positioned close to Hong Kong on September 18, 1906.](https://upload.wikimedia.org/wikipedia/commons/7/71/1906_Hong_Kong_Typhoon_Zi_Ka_Wei_weather_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: 1906 Hong Kong typhoon](https://en.wikipedia.org/wiki/1906_Hong_Kong_typhoon), [Wikipedia: 1937 Hong Kong typhoon](https://en.wikipedia.org/wiki/1937_Hong_Kong_typhoon)
 
-*A weather chart from the Zi-ka-wei Observatory showing a typhoon positioned close to Hong Kong on September 18, 1906.* (map). 上海徐家匯天文台
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-The Zi-ka-wei Observatory, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_Typhoon_Zi_Ka_Wei_weather_map.jpg).
-Corroborates: It corroborates the timing and location of the catastrophic typhoon that struck Hong Kong on this date.
-
-![Track map of the 1906 typhoon that struck Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Hong_Kong_1906_track.png/960px-Hong_Kong_1906_track.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Track map of the 1906 typhoon that struck Hong Kong.* (map). Cyclonebiskit, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_1906_track.png).
-Corroborates: It illustrates the trajectory of the storm as it moved across the Pacific and made landfall in southern China, affecting Hong Kong.
-
-![Destruction at the Star Ferry wharf on the Hong Kong side following the 1906 typhoon.](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png/960px-1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Destruction at the Star Ferry wharf on the Hong Kong side following the 1906 typhoon.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_Typhoon_Hong_Kong_Star_Ferry.png).
-Corroborates: It provides visual evidence of the devastating impact the typhoon had on Hong Kong's maritime infrastructure.
-
-![Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/1906_Hong_Kong_typhoon_damage.jpg/960px-1906_Hong_Kong_typhoon_damage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_typhoon_damage.jpg).
-Corroborates: It corroborates the devastating impact of the typhoon on maritime infrastructure and buildings.
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
-
-- **Grade A:** Hong Kong Observatory Official Report on the Typhoon of 18th September 1906, Hong Kong Sessional Papers, 1906; Colonial Office Records, CO 129/335. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/335)
-- **Grade B:** Campbell, I. (2005), "The Great Hong Kong Typhoon of 1906", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 45, pp. 121–140, https://www.jstor.org/stable/23889818. [link ✓](https://www.jstor.org/stable/23889818)
-- **Grade C:** Hong Kong Observatory, "Severe Typhoons in Hong Kong History", https://www.hko.gov.hk. [site ?](https://www.hko.gov.hk)
-
-**Disputes or myths:** Public sentiment blamed the Royal Observatory for negligence in warning the public; official inquiries proved the cyclone formed rapidly in immediate offshore waters outside telegraphic range.
-
-## Evidence
-
-> [!abstract] Evidence grade: **A**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Primary sources (grade A)
-
-- [*Hong Kong Weekly Press 1906-10-06* (1906), Internet Archive.](https://archive.org/details/NPWP19061006) (claims 2): It contains contemporary reports regarding the typhoon and the observatory's warning performance.
-
-### Scholarship (grade B)
-
-- [Hing Yim Mok, Chi Ming Shun, Stephen G. Davies (2022). *A historical re-analysis of the calamitous midget typhoon passing through Hong Kong on 18 September 1906 and its storm surge impact to Hong Kong*. Tropical Cyclone Research and Review.](https://doi.org/10.1016/j.tcrr.2022.09.005) (claims 1, 2): It is a historical re-analysis of the specific 1906 typhoon.
-- [Fiona Williamson (2017). *Uncertain Skies. Forecasting Typhoons in Hong Kong, ca. 1874-1906*. Singapore Management University Institutional Knowledge (InK) (Singapore Management University).](https://doi.org/10.1408/90449) (claims 2): It covers the history of typhoon forecasting in Hong Kong up to 1906.
-
-**Still needed:** Specific fatality numbers and a chronological log of the meteorological warnings issued on the morning of the typhoon are required.
+- ✓ [Typhoons and Depressions over the Far East, September 1937](https://doi.org/10.1175/1520-0493(1937)65<350:TADOTF>2.0.CO;2) (DOI)
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

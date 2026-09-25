@@ -4,7 +4,7 @@ title_zh: "一九一一年辛亥革命爆發"
 date: 1911-10-10
 year: 1911
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1911", "ai-draft", "british-colony", "new-territories", "qing-dynasty", "refugees", "xinhai-revolution"]
+tags: ["wikipedia-checked", "evidence-none", "1911", "ai-draft", "british-colony", "new-territories", "qing-dynasty", "refugees", "xinhai-revolution"]
 summary: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees, capital, and revolutionary activity."
 description: "The outbreak of the Xinhai Revolution on October 10, 1911, and the subsequent fall of the Qing dynasty dramatically reshaped Hong Kong's demographics, economy, and political landscape through an influx of refugees…"
 confidence: ai-draft
@@ -36,17 +36,15 @@ The events of **1911** cemented Hong Kong's role as a crucial nexus between main
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/wuchang|Wuchang (武昌)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact estimates of the refugee influx into Hong Kong immediately following October 10, 1911
-- ❔ The specific official directives issued by the British colonial government regarding neutrality during the Wuchang Uprising
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact estimates of the refugee influx into Hong Kong immediately following October 10, 1911. The reference text does not mention refugee influxes into Hong Kong following the Wuchang Uprising.
+- ❔ **not in Wikipedia**: The specific official directives issued by the British colonial government regarding neutrality during the Wuchang Uprising. The text states foreign powers adopted a wait-and-see attitude but does not provide specific official directives from the British colonial government.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 1911 (film)](https://en.wikipedia.org/wiki/1911_%28film%29), [Wikipedia: 1911 Revolution](https://en.wikipedia.org/wiki/1911_Revolution)
 
-**Still needed:** Evidence is needed regarding specific 1911 refugee statistics for Hong Kong and official British colonial directives concerning neutrality during the Wuchang Uprising.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

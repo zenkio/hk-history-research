@@ -4,7 +4,7 @@ title_zh: "省港大罷工"
 date: 1925-01-01
 year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-a", "photo-corroborated", "1925", "ai-draft", "boycott", "british-colonialism", "canton-hong-kong-strike", "interwar", "kuomintang", "labor-movement"]
+tags: ["wikipedia-checked", "evidence-a", "photo-corroborated", "1925", "ai-draft", "boycott", "british-colonialism", "canton-hong-kong-strike", "interwar", "kuomintang", "labor-movement"]
 summary: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
 description: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
 confidence: ai-draft
@@ -42,49 +42,16 @@ Scholars debate the primary drivers and long-term outcomes of the strike, but it
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 - [[02_Entities/Places/shanghai|Shanghai (上海)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of workers who participated in the exodus to Guangzhou.
-- ❔ The precise financial losses incurred by the Hong Kong government during the 16-month blockade.
-- ❔ The degree of direct operational control exerted by the Chinese Communist Party versus the Kuomintang over the strike committee.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: The exact number of workers who participated in the exodus to Guangzhou. The text provides estimates of Chinese citizens leaving for Guangdong, but does not provide an exact number of workers for Guangzhou.
+- ❔ **not in Wikipedia**: The precise financial losses incurred by the Hong Kong government during the 16-month blockade. The text mentions a 3 million pound trade loan from the British government but does not state the Hong Kong government's precise financial losses.
+- ❔ **not in Wikipedia**: The degree of direct operational control exerted by the Chinese Communist Party versus the Kuomintang over the strike committee. The text mentions the KMT's role in curtailing committee abilities and the CCP's affiliation with unions, but does not specify the degree of operational control.
 
-![Participants in the Canton-Hong Kong general strike of 1925 carrying banners.](https://upload.wikimedia.org/wikipedia/commons/c/c7/Photograph_of_pariticipants_in_the_Canton-Hong_Kong_general_strike_of_1925.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Canton–Hong Kong strike](https://en.wikipedia.org/wiki/Canton%E2%80%93Hong_Kong_strike)
 
-*Participants in the Canton-Hong Kong general strike of 1925 carrying banners.* (contemporary photo). unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Photograph_of_pariticipants_in_the_Canton-Hong_Kong_general_strike_of_1925.jpg).
-Corroborates: It illustrates the scale and nature of the mass protest during the 1925-1926 general strike.
-
-![A museum exhibit displaying text and newspaper clippings about the end of the Canton-Hong Kong Strike in 1926.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_220.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A museum exhibit displaying text and newspaper clippings about the end of the Canton-Hong Kong Strike in 1926.* (document). Mchelm Lgaowmd Wamoui, CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_220.jpg).
-Corroborates: It provides direct historical text and newspaper clippings regarding the strike's impact and its conclusion.
-
-![An exhibition panel featuring a historical photograph of the Workers' Inspection Corps training and a newspaper clipping detailing their blockade operations in 1925.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_140.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*An exhibition panel featuring a historical photograph of the Workers' Inspection Corps training and a newspaper clipping detailing their blockade operations in 1925.* (document). Mchelm Lgaowmd Wamoui, CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_140.jpg).
-Corroborates: It provides direct historical evidence of the Workers' Inspection Corps' training and their role in the blockade activities during the Canton-Hong Kong Strike and Boycott.
-
-![An exhibition panel displaying a political cartoon and a newspaper article concerning the anti-imperialist worker movements in Guangdong and Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_226.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*An exhibition panel displaying a political cartoon and a newspaper article concerning the anti-imperialist worker movements in Guangdong and Hong Kong.* (document). Mchelm Lgaowmd Wamoui, CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_226.jpg).
-Corroborates: The displayed cartoon and newspaper report provide direct historical context regarding the propaganda and media coverage used during the Canton-Hong Kong strike period.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **A**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Primary sources (grade A)
-
-- [The National Archives (UK), CO 882/11/1, 1925 Oct 30-1927 Dec 24. Hong Kong: 'Correspondence relating to the strike and boycott.' Includes reports of strikes and financial, commercial and political situations; the position in Canton; negotiations for withdrawal of b](https://discovery.nationalarchives.gov.uk/details/r/C8915447) (claims 1, 2, 3): This archive contains reports regarding the strikes, financial situations, and political positions during the period.
-
-### Scholarship (grade B)
-
-- [Rosemarie Chung Lu-cee (1969). *A study of the 1925-26 Canton-Hong Kong strike-boycott*.](https://doi.org/10.5353/th_b3194703) (claims 1, 2, 3): This is a scholarly study specifically focused on the 1925-26 strike-boycott.
-
-**Still needed:** Specific numerical data for the worker exodus and the exact financial losses are still required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

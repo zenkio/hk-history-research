@@ -4,7 +4,7 @@ title_zh: "香港對惠州起義的支持"
 date: 1900-10-06
 year: 1900
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1900", "ai-draft", "british-colonial-history", "huizhou-uprising", "new-territories", "qing-dynasty", "revive-china-society", "sun-yat-sen"]
+tags: ["wikipedia-checked", "evidence-none", "1900", "ai-draft", "british-colonial-history", "huizhou-uprising", "new-territories", "qing-dynasty", "revive-china-society", "sun-yat-sen"]
 summary: "In October 1900, **Sun Yat-sen** and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal role in early Chinese revolutionary history."
 description: "In October 1900, Sun Yat-sen and his revolutionary allies used Hong Kong as a crucial logistics, financial, and planning base to launch the Huizhou Uprising against the Qing dynasty, highlighting the colony's pivotal…"
 confidence: ai-draft
@@ -40,17 +40,15 @@ The event underscored Hong Kong's dual and contradictory role in the late Qing p
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 - [[02_Entities/Places/guangdong|Guangdong (廣東)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact extent of direct financial and arms transit through Hong Kong for the October 1900 Huizhou Uprising
-- ❔ Specific deportation orders or police actions taken by the Hong Kong government against revolutionaries around October 1900
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact extent of direct financial and arms transit through Hong Kong for the October 1900 Huizhou Uprising. The text mentions the October 1900 Huizhou Uprising but does not provide details on financial or arms transit through Hong Kong.
+- ❔ **not in Wikipedia**: Specific deportation orders or police actions taken by the Hong Kong government against revolutionaries around October 1900. The text mentions a ban in 1895 and an assassination in 1901, but not police actions or deportation orders in October 1900.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 1911 Revolution](https://en.wikipedia.org/wiki/1911_Revolution)
 
-**Still needed:** Evidence for both claims 1 and 2 is still needed, as none of the provided sources relate to the 1900 Huizhou Uprising or revolutionary activities in Hong Kong.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

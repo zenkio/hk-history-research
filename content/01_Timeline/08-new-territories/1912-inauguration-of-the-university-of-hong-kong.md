@@ -4,7 +4,7 @@ title_zh: "香港大學成立典禮"
 date: 1912-03-30
 year: 1912
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1912", "ai-draft", "british-colony", "colonial-governance", "early-20th-century", "higher-education", "new-territories", "university-history"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1912", "ai-draft", "british-colony", "colonial-governance", "early-20th-century", "higher-education", "new-territories", "university-history"]
 summary: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and modern professionals."
 description: "On March 30, 1912, the University of Hong Kong officially held its opening ceremony, marking the establishment of the British colony's first higher education institution designed to train colonial administrators and…"
 confidence: ai-draft
@@ -39,18 +39,16 @@ The founding of the university represented a pivotal moment in the educational a
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/bonham-road|Bonham Road (般咸道)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Frederick Lugard officially inaugurated the University of Hong Kong on March 30, 1912.
-- ❔ Sir Hormusjee Naorojee Mody provided the initial financial donation for the construction of the main building.
-- ❔ The Hong Kong College of Medicine for Chinese was formally incorporated into the new university as its Faculty of Medicine.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Governor Frederick Lugard officially inaugurated the University of Hong Kong on March 30, 1912. The official opening ceremony took place on 11 March 1912, whereas 30 March 1911 was the date the university was incorporated.
+- ✅ **agrees with Wikipedia**: Sir Hormusjee Naorojee Mody provided the initial financial donation for the construction of the main building. Sir Hormusjee Naorojee Mody pledged HK$150,000 towards construction and the Main Building was sponsored by him.
+- ✅ **agrees with Wikipedia**: The Hong Kong College of Medicine for Chinese was formally incorporated into the new university as its Faculty of Medicine. The text states the college was incorporated as HKU's medical school in 1911.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: University of Hong Kong](https://en.wikipedia.org/wiki/University_of_Hong_Kong)
 
-**Still needed:** Evidence from 1912 contemporary news reports or university archives is needed to verify the inauguration date, the role of Governor Lugard, the donation by Sir Hormusjee Naorojee Mody, and the incorporation of the Hong Kong College of Medicine.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

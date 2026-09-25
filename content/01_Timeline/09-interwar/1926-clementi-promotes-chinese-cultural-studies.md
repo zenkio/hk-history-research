@@ -4,7 +4,7 @@ title_zh: "金文泰推動中國文化研究"
 date: 1926-01-01
 year: 1926
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1926", "ai-draft", "chinese-department", "clementi", "education", "hku", "interwar", "interwar-hong-kong", "nationalism"]
+tags: ["wikipedia-checked", "evidence-none", "1926", "ai-draft", "chinese-department", "clementi", "education", "hku", "interwar", "interwar-hong-kong", "nationalism"]
 summary: "In 1926, Governor Cecil Clementi established the Department of Chinese at the University of Hong Kong to foster traditional scholarship, a move interpreted variously as an academic advancement, a political counterweight to radical mainland nationalism, and a preservation of imperial culture."
 description: "In 1926, Governor Cecil Clementi established the Department of Chinese at the University of Hong Kong to foster traditional scholarship, a move interpreted variously as an academic advancement, a political counterweight…"
 confidence: ai-draft
@@ -42,17 +42,15 @@ The creation of the Chinese Department marked a significant turning point in the
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/university-of-hong-kong|University of Hong Kong (香港大學)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Cecil Clementi officially established the Department of Chinese at the University of Hong Kong in 1926.
-- ❔ Lai Chi-yuk and Au Tai-tin were among the foundational scholars appointed to the new department.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Governor Cecil Clementi officially established the Department of Chinese at the University of Hong Kong in 1926. The text states that Clementi advocated for the establishment of a Chinese Department at the University of Hong Kong, but it does not confirm if or when it was officially established.
+- ❔ **not in Wikipedia**: Lai Chi-yuk and Au Tai-tin were among the foundational scholars appointed to the new department. The reference text does not mention Lai Chi-yuk or Au Tai-tin.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Cecil Clementi](https://en.wikipedia.org/wiki/Cecil_Clementi)
 
-**Still needed:** Evidence is needed to verify Governor Clementi's establishment of the Department of Chinese at HKU in 1926 and the specific appointments of Lai Chi-yuk and Au Tai-tin.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

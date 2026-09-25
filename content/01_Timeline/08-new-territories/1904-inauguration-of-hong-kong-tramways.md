@@ -4,7 +4,7 @@ title_zh: "香港電車啟用"
 date: 1904-07-30
 year: 1904
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1904", "ai-draft", "colonial-history", "hong-kong-tramways", "new-territories", "public-transport", "urban-growth"]
+tags: ["wikipedia-checked", "evidence-none", "1904", "ai-draft", "colonial-history", "hong-kong-tramways", "new-territories", "public-transport", "urban-growth"]
 summary: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
 description: "On July 30, 1904, the electric tramway commenced operations along the northern shore of Hong Kong Island, fundamentally transforming local public transportation and urban geography."
 confidence: ai-draft
@@ -39,17 +39,17 @@ The inauguration of the tramway system served as a primary catalyst for the line
 - [[02_Entities/Places/happy-valley|Happy Valley (跑馬地)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact passenger numbers on the opening day of July 30, 1904
-- ❔ Precise corporate restructuring timeline between the London-incorporated entity and Hong Kong Tramways Limited
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact passenger numbers on the opening day of July 30, 1904. The text mentions that regular tram service commenced on 30 July 1904, but it does not provide passenger numbers for that day.
+- ✅ **agrees with Wikipedia**: Precise corporate restructuring timeline between the London-incorporated entity and Hong Kong Tramways Limited. The text states the company was founded in London in 1902, the London Board was replaced by a Hong Kong Board in 1914, and the name was changed to Hong Kong Tramways Limited in 1922.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Tramways](https://en.wikipedia.org/wiki/Hong_Kong_Tramways)
 
-**Still needed:** Evidence such as contemporary newspapers from July 1904 or historical corporate records is needed to verify passenger counts and restructuring timelines.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Hongkong Tramways: A history of Hongkong Tramways Limited, and predecessor companies](https://openlibrary.org/isbn/9780900433313) (ISBN)
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

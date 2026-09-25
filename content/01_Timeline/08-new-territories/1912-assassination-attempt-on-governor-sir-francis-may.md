@@ -4,7 +4,7 @@ title_zh: "刺殺署理港督梅含理事件"
 date: 1912-07-04
 year: 1912
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1912", "ai-draft", "assassination-attempt", "colonial-history", "francis-may", "new-territories", "xinhai-revolution"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1912", "ai-draft", "assassination-attempt", "colonial-history", "francis-may", "new-territories", "xinhai-revolution"]
 summary: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
 description: "On July 4, 1912, newly arrived Governor Sir Francis Henry May survived a lone gunman's assassination attempt in Hong Kong, highlighting deep-seated anti-colonial tensions following the 1911 Xinhai Revolution."
 confidence: ai-draft
@@ -39,18 +39,16 @@ The failed assassination attempt sent shockwaves through the colonial administra
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/victoria|Victoria (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of the assassination attempt was July 4, 1912.
-- ❔ Sir Francis Henry May was the specific target of the lone gunman.
-- ❔ The identity and precise political affiliations of the lone gunman remain a subject of historical inquiry.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact date of the assassination attempt was July 4, 1912. The text states the attempt happened in July 1912 but does not specify the exact day.
+- ✅ **agrees with Wikipedia**: Sir Francis Henry May was the specific target of the lone gunman. The text states that May was the target of an assassination attempt.
+- ⚠️ **differs from Wikipedia**: The identity and precise political affiliations of the lone gunman remain a subject of historical inquiry. The text identifies the gunman as Li Hung-hung.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Governor of Hong Kong](https://en.wikipedia.org/wiki/Governor_of_Hong_Kong), [Wikipedia: Francis Henry May](https://en.wikipedia.org/wiki/Francis_Henry_May)
 
-**Still needed:** Evidence is needed to verify the specific date, the identity of the target, and the details of the perpetrator for the assassination attempt on Sir Francis May.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,7 +4,7 @@ title_zh: "南華早報創辦"
 date: 1903-11-06
 year: 1903
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1903", "ai-draft", "colonial-press", "journalism-history", "new-territories", "newspapers", "south-china-morning-post"]
+tags: ["wikipedia-checked", "evidence-none", "1903", "ai-draft", "colonial-press", "journalism-history", "new-territories", "newspapers", "south-china-morning-post"]
 summary: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
 description: "On November 6, 1903, the South China Morning Post was established in Hong Kong by Tse Tsan-tai and Alfred Cunningham, quickly becoming a leading English-language newspaper for colonial commerce and public discourse."
 confidence: ai-draft
@@ -40,17 +40,15 @@ The launch of the *South China Morning Post* established what would become one o
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of the first publication was November 6, 1903
-- ❔ Tse Tsan-tai and Alfred Cunningham were the primary co-founders of the newspaper
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact date of the first publication was November 6, 1903. The text states that the newspaper published its first issue on 6 November 1903.
+- ✅ **agrees with Wikipedia**: Tse Tsan-tai and Alfred Cunningham were the primary co-founders of the newspaper. The text states that Tse Tsan-tai and Alfred Cunningham founded the South China Morning Post.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: South China Morning Post](https://en.wikipedia.org/wiki/South_China_Morning_Post)
 
-**Still needed:** Evidence is needed to confirm the exact first publication date and the identities of the primary co-founders of the South China Morning Post.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,7 +4,7 @@ title_zh: "尖沙咀火車站啟用"
 date: 1916-03-28
 year: 1916
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "1916", "ai-draft", "clock-tower", "colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport", "tsim-sha-tsui-terminus"]
+tags: ["wikipedia-checked", "evidence-b", "1916", "ai-draft", "clock-tower", "colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport", "tsim-sha-tsui-terminus"]
 summary: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
 description: "On March 28, 1916, the grand Tsim Sha Tsui Railway Terminus officially opened, cementing Kowloon's status as the southern terminus of the Kowloon-Canton Railway and a vital international rail gateway."
 confidence: ai-draft
@@ -41,21 +41,15 @@ The completion of the terminus anchored Kowloon as the colony's primary internat
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact opening date of the Tsim Sha Tsui Railway Terminus was March 28, 1916.
-- ❔ The extent to which construction was fully completed by the date of the formal opening ceremony.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact opening date of the Tsim Sha Tsui Railway Terminus was March 28, 1916. The text states the British Section opened for traffic on 1 October 1910 and the station was completed in 1915, but does not mention a specific opening date of March 28, 1916.
+- ❔ **not in Wikipedia**: The extent to which construction was fully completed by the date of the formal opening ceremony. The text does not mention a formal opening ceremony or the status of construction at the time of such a ceremony.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Tsim Sha Tsui](https://en.wikipedia.org/wiki/Tsim_Sha_Tsui), [Wikipedia: East Tsim Sha Tsui station](https://en.wikipedia.org/wiki/East_Tsim_Sha_Tsui_station)
 
-### Scholarship (grade B)
-
-- [Adonis M. Y. Li (2023). *Visions of public and private mobility: the Kowloon railway terminus in Hong Kong*. Urban History.](https://doi.org/10.1017/s0963926823000019) (claims 1, 2): The article explores the Kowloon railway terminus in Hong Kong.
-
-**Still needed:** Specific historical records or sources are needed to confirm the exact opening date and the construction completion status of the Tsim Sha Tsui Railway Terminus.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

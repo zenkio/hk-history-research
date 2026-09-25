@@ -1353,7 +1353,8 @@
       "date": "1889",
       "summary": "Sir Paul Chater proposed this massive land reclamation project that reshaped Victoria Harbour's coastline, creating vital new commercial real estate in Central.",
       "status": "done",
-      "file": "07-victorian-colony/1889-launch-of-the-praya-reclamation-scheme.md"
+      "file": "07-victorian-colony/1889-launch-of-the-praya-reclamation-scheme.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "07-victorian-colony",
@@ -1362,7 +1363,9 @@
       "date": "1890-12-01",
       "summary": "The Hongkong Electric Company began powering public streetlights from its Wan Chai station, ushering the Victorian colony into the modern electrical age.",
       "status": "done",
-      "file": "07-victorian-colony/1890-electrification-of-hong-kong-commences.md"
+      "file": "07-victorian-colony/1890-electrification-of-hong-kong-commences.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "07-victorian-colony",
@@ -1371,7 +1374,8 @@
       "date": "1894-05",
       "summary": "A catastrophic outbreak of the Third Plague Pandemic killed over 2,000 people, prompting the controversial demolition of slums and sweeping sanitation reforms.",
       "status": "done",
-      "file": "07-victorian-colony/1894-bubonic-plague-outbreak-in-tai-ping-shan.md"
+      "file": "07-victorian-colony/1894-bubonic-plague-outbreak-in-tai-ping-shan.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "07-victorian-colony",
@@ -1380,7 +1384,8 @@
       "date": "1894-06-20",
       "summary": "Working inside a makeshift straw hut in Hong Kong, bacteriologist Alexandre Yersin isolated *Yersinia pestis*, solving the ancient mystery of how the plague was caused.",
       "status": "done",
-      "file": "07-victorian-colony/1894-alexandre-yersin-discovers-the-plague-bacillus.md"
+      "file": "07-victorian-colony/1894-alexandre-yersin-discovers-the-plague-bacillus.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "07-victorian-colony",
@@ -1389,7 +1394,9 @@
       "date": "1895-02-21",
       "summary": "Sun Yat-sen and fellow reformers established the Revive China Society's local headquarters, turning British Hong Kong into a vital base for plotting anti-Qing revolutionary actions.",
       "status": "done",
-      "file": "07-victorian-colony/1895-sun-yat-sen-founds-the-hong-kong-xingzhonghui.md"
+      "file": "07-victorian-colony/1895-sun-yat-sen-founds-the-hong-kong-xingzhonghui.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "07-victorian-colony",
@@ -1398,7 +1405,8 @@
       "date": "1898-06-09",
       "summary": "Britain secured a 99-year rent-free lease on the New Territories and 235 outlying islands, expanding the colony's territory twelvefold and setting the 1997 handover date.",
       "status": "done",
-      "file": "07-victorian-colony/1898-signing-of-the-second-convention-of-peking.md"
+      "file": "07-victorian-colony/1898-signing-of-the-second-convention-of-peking.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1407,7 +1415,8 @@
       "date": "1898-06-09",
       "summary": "Britain and Qing China signed the Second Convention of Peking, granting a 99-year lease of the New Territories and dramatically expanding the colony's landmass.",
       "status": "done",
-      "file": "08-new-territories/1898-signing-of-the-convention-for-the-extension-of-hong-kong.md"
+      "file": "08-new-territories/1898-signing-of-the-convention-for-the-extension-of-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1416,7 +1425,8 @@
       "date": "1899-04-14",
       "summary": "Local Cantonese and Hakka village clans staged armed resistance against British occupation before colonial forces suppressed the rebellion and established administrative control.",
       "status": "done",
-      "file": "08-new-territories/1899-the-six-day-war-in-the-new-territories.md"
+      "file": "08-new-territories/1899-the-six-day-war-in-the-new-territories.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1425,7 +1435,9 @@
       "date": "1899-12-27",
       "summary": "Britain unilaterally revoked Chinese jurisdiction within the Kowloon Walled City, expelling Qing magistrates and sowing the seeds for its decades-long status as an anomalous ungoverned enclave.",
       "status": "done",
-      "file": "08-new-territories/1899-british-annexation-of-the-kowloon-walled-city.md"
+      "file": "08-new-territories/1899-british-annexation-of-the-kowloon-walled-city.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "08-new-territories",
@@ -1434,7 +1446,8 @@
       "date": "1900-10-06",
       "summary": "Sun Yat-sen and his revolutionary network orchestrated the Huizhou rebellion using Hong Kong as a logistics and planning base, underscoring the colony's role in Chinese revolutionary politics.",
       "status": "done",
-      "file": "08-new-territories/1900-support-for-the-huizhou-uprising-from-hong-kong.md"
+      "file": "08-new-territories/1900-support-for-the-huizhou-uprising-from-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1443,7 +1456,8 @@
       "date": "1901-01-10",
       "summary": "Qing assassins murdered revolutionary leader Yeung Ku-wan in Central Hong Kong, illustrating how violent mainland power struggles spilled into the British territory.",
       "status": "done",
-      "file": "08-new-territories/1901-assassination-of-yeung-ku-wan.md"
+      "file": "08-new-territories/1901-assassination-of-yeung-ku-wan.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1452,7 +1466,8 @@
       "date": "1903-11-06",
       "summary": "Tse Tsan-tai and Alfred Cunningham established the English-language newspaper, creating a premier publication for colonial commerce, political commentary, and public discourse.",
       "status": "done",
-      "file": "08-new-territories/1903-founding-of-the-south-china-morning-post.md"
+      "file": "08-new-territories/1903-founding-of-the-south-china-morning-post.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1461,7 +1476,8 @@
       "date": "1904-07-30",
       "summary": "Electric tram service commenced along the northern shore of Hong Kong Island, revolutionizing urban transit and encouraging linear eastward and westward urban growth.",
       "status": "done",
-      "file": "08-new-territories/1904-inauguration-of-hong-kong-tramways.md"
+      "file": "08-new-territories/1904-inauguration-of-hong-kong-tramways.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1470,7 +1486,8 @@
       "date": "1904",
       "summary": "The colonial government formally restricted residential settlement at Victoria Peak to non-Chinese Europeans, institutionalizing spatial and racial segregation in housing.",
       "status": "done",
-      "file": "08-new-territories/1904-enactment-of-the-peak-district-reservation-ordinance.md"
+      "file": "08-new-territories/1904-enactment-of-the-peak-district-reservation-ordinance.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1479,7 +1496,8 @@
       "date": "1906-09-18",
       "summary": "A sudden, violent typhoon killed an estimated 10,000 to 15,000 people and destroyed maritime infrastructure, prompting significant overhauls in local meteorological warning systems.",
       "status": "done",
-      "file": "08-new-territories/1906-the-great-typhoon-of-1906.md"
+      "file": "08-new-territories/1906-the-great-typhoon-of-1906.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1488,7 +1506,8 @@
       "date": "1908-03",
       "summary": "A massive merchant and consumer boycott of Japanese goods erupted across Hong Kong, signaling the growing influence of modern Chinese nationalism among local residents.",
       "status": "done",
-      "file": "08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md"
+      "file": "08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1497,7 +1516,8 @@
       "date": "1910-10-01",
       "summary": "The completion of the British railway section modernized land transport into the New Territories and established a direct overland commercial conduit to mainland China.",
       "status": "done",
-      "file": "08-new-territories/1910-opening-of-the-kowloon-canton-railway-british-section.md"
+      "file": "08-new-territories/1910-opening-of-the-kowloon-canton-railway-british-section.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1506,7 +1526,8 @@
       "date": "1911-10-10",
       "summary": "The fall of the Qing dynasty triggered an influx of mainland refugees, capital, and republican political enthusiasm into Hong Kong.",
       "status": "done",
-      "file": "08-new-territories/1911-outbreak-of-the-1911-xinhai-revolution.md"
+      "file": "08-new-territories/1911-outbreak-of-the-1911-xinhai-revolution.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1515,7 +1536,8 @@
       "date": "1911",
       "summary": "Prominent Chinese merchants institutionalized their economic and social influence, providing a collective voice for the territory's rising Chinese bourgeois elite.",
       "status": "done",
-      "file": "08-new-territories/1911-establishment-of-the-chinese-general-chamber-of-commerce.md"
+      "file": "08-new-territories/1911-establishment-of-the-chinese-general-chamber-of-commerce.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1524,7 +1546,8 @@
       "date": "1912-03-30",
       "summary": "Hong Kong's first university opened its doors to educate colonial administrators and modern professionals for both Hong Kong and a modernizing China.",
       "status": "done",
-      "file": "08-new-territories/1912-inauguration-of-the-university-of-hong-kong.md"
+      "file": "08-new-territories/1912-inauguration-of-the-university-of-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1533,7 +1556,8 @@
       "date": "1912-07-04",
       "summary": "A lone gunman shot at incoming Governor Francis Henry May, demonstrating persistent anti-colonial grievances and prompting tighter security measures in the colony.",
       "status": "done",
-      "file": "08-new-territories/1912-assassination-attempt-on-governor-sir-francis-may.md"
+      "file": "08-new-territories/1912-assassination-attempt-on-governor-sir-francis-may.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1542,7 +1566,9 @@
       "date": "1912/1913",
       "summary": "A public boycott ensued when the government and tramway company banned discounted mainland Chinese subsidiary coins, highlighting racial and economic tensions over everyday currency.",
       "status": "done",
-      "file": "08-new-territories/1912-the-tramway-boycott-over-foreign-coins.md"
+      "file": "08-new-territories/1912-the-tramway-boycott-over-foreign-coins.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "08-new-territories",
@@ -1551,7 +1577,9 @@
       "date": "1914-08-04",
       "summary": "Upon Britain's declaration of war, Hong Kong mobilized its volunteer defense corps, interned enemy German residents, and confiscated valuable German commercial enterprises.",
       "status": "done",
-      "file": "08-new-territories/1914-hong-kong-enters-the-first-world-war.md"
+      "file": "08-new-territories/1914-hong-kong-enters-the-first-world-war.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "08-new-territories",
@@ -1560,7 +1588,8 @@
       "date": "1916-03-28",
       "summary": "The inauguration of the grand terminus and its iconic Clock Tower anchored Kowloon as the colony's primary international passenger and rail gateway.",
       "status": "done",
-      "file": "08-new-territories/1916-opening-of-the-tsim-sha-tsui-railway-terminus.md"
+      "file": "08-new-territories/1916-opening-of-the-tsim-sha-tsui-railway-terminus.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "08-new-territories",
@@ -1569,7 +1598,9 @@
       "date": "1917",
       "summary": "Hong Kong served as a major logistical hub and transit depot for thousands of Chinese workers recruited to support the Allied war effort on the Western Front.",
       "status": "done",
-      "file": "08-new-territories/1917-mobilization-of-the-chinese-labour-corps.md"
+      "file": "08-new-territories/1917-mobilization-of-the-chinese-labour-corps.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "08-new-territories",
@@ -1578,7 +1609,8 @@
       "date": "1918-02-26",
       "summary": "A catastrophic grandstand collapse and fire killed over 600 spectators during the annual races, leading to sweeping reforms in public venue safety standards and building regulations.",
       "status": "done",
-      "file": "08-new-territories/1918-the-happy-valley-racecourse-fire-disaster.md"
+      "file": "08-new-territories/1918-the-happy-valley-racecourse-fire-disaster.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1587,7 +1619,9 @@
       "date": "1919-07-26",
       "summary": "Post-World War I supply shortages and soaring prices triggered widespread rice looting, forcing the government to impose price controls and emergency distribution.",
       "status": "done",
-      "file": "09-interwar/1919-hong-kong-rice-riots.md"
+      "file": "09-interwar/1919-hong-kong-rice-riots.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1596,7 +1630,9 @@
       "date": "1920-04",
       "summary": "A successful wage strike by thousands of skilled Chinese mechanics demonstrated the growing power of organized labor in the colony.",
       "status": "done",
-      "file": "09-interwar/1920-mechanics-strike.md"
+      "file": "09-interwar/1920-mechanics-strike.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1605,7 +1641,8 @@
       "date": "1922-01-12",
       "summary": "Over 120,000 workers joined a massive maritime strike that paralyzed trade and forced colonial authorities and shipping companies to grant major wage increases.",
       "status": "done",
-      "file": "09-interwar/1922-hong-kong-seamens-strike.md"
+      "file": "09-interwar/1922-hong-kong-seamens-strike.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1614,7 +1651,9 @@
       "date": "1923-02-20",
       "summary": "Sun Yat-sen delivered a famous speech at the University of Hong Kong, declaring that the order and stability of Hong Kong inspired his revolutionary ideas.",
       "status": "done",
-      "file": "09-interwar/1923-sun-yat-sens-address-at-hku.md"
+      "file": "09-interwar/1923-sun-yat-sens-address-at-hku.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1623,7 +1662,8 @@
       "date": "1925/1926",
       "summary": "A 16-month anti-imperialist general strike and trade blockade devastated Hong Kong's economy and triggered a massive exodus of Chinese workers to Guangzhou.",
       "status": "done",
-      "file": "09-interwar/1925-canton-hong-kong-strike-and-boycott.md"
+      "file": "09-interwar/1925-canton-hong-kong-strike-and-boycott.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1632,7 +1672,8 @@
       "date": "1926",
       "summary": "Governor Cecil Clementi established the Department of Chinese at HKU to promote traditional Chinese scholarship as a counterweight to radical mainland nationalism.",
       "status": "done",
-      "file": "09-interwar/1926-clementi-promotes-chinese-cultural-studies.md"
+      "file": "09-interwar/1926-clementi-promotes-chinese-cultural-studies.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1641,7 +1682,8 @@
       "date": "1927-02-18",
       "summary": "Prominent intellectual Lu Xun delivered influential public lectures at YMCA Hall, stimulating local literary discourse and modern cultural debates.",
       "status": "done",
-      "file": "09-interwar/1927-lu-xuns-lectures-in-hong-kong.md"
+      "file": "09-interwar/1927-lu-xuns-lectures-in-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",

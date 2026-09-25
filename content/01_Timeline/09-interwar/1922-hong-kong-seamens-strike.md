@@ -4,7 +4,7 @@ title_zh: "香港海員大罷工"
 date: 1922-01-12
 year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-b", "photo-corroborated", "1922", "ai-draft", "british-colonial-era", "interwar", "labor-history", "seamens-strike", "trade-unions"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1922", "ai-draft", "british-colonial-era", "interwar", "labor-history", "seamens-strike", "trade-unions"]
 summary: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant significant wage increases."
 description: "Beginning on January 12, 1922, over 120,000 Hong Kong maritime and allied workers launched a massive strike that paralyzed local trade and ultimately forced colonial authorities and shipping companies to grant…"
 confidence: ai-draft
@@ -43,35 +43,16 @@ Modern scholarship frequently views the 1922 strike as a watershed moment in the
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 - [[02_Entities/Places/sha-tin|Sha Tin (沙田)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact number of striking workers reached or exceeded 120,000
-- ❔ Precise casualty figures resulting from the Sha Tin incident on March 4, 1922
-- ❔ Agreed percentage range of wage increases secured in the final settlement
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Exact number of striking workers reached or exceeded 120,000. The text states the strike garnered over 30,000 participants.
+- ❔ **not in Wikipedia**: Precise casualty figures resulting from the Sha Tin incident on March 4, 1922. The text does not mention a Sha Tin incident or casualties on March 4, 1922.
+- ✅ **agrees with Wikipedia**: Agreed percentage range of wage increases secured in the final settlement. Employers agreed to wage increases of 15–30%.
 
-![A view of the Hong Kong waterfront during the seamen's strike of 1922.](https://upload.wikimedia.org/wikipedia/commons/0/0d/Hong-kong-1922-strike-over.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Canton–Hong Kong strike](https://en.wikipedia.org/wiki/Canton%E2%80%93Hong_Kong_strike), [Wikipedia: 1922 seamen's strike](https://en.wikipedia.org/wiki/1922_seamen%27s_strike)
 
-*A view of the Hong Kong waterfront during the seamen's strike of 1922.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong-kong-1922-strike-over.jpg).
-Corroborates: It corroborates the location and timing of the maritime and allied workers' strike.
-
-![A group photograph of strikers from the Hong Kong Seamen's Union in 1922.](https://upload.wikimedia.org/wikipedia/commons/1/15/1922_Seamen_Strike.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*A group photograph of strikers from the Hong Kong Seamen's Union in 1922.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1922_Seamen_Strike.png).
-Corroborates: It provides a visual record of the workers who participated in the massive 1922 strike.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [偉群 陳 (1991). *The making of Hong Kong society : three studies of class formation in early Hong Kong*. Oxford University Press eBooks.](https://openalex.org/W624680348) (claims 1, 2, 3): This scholarly work specifically studies the seamen and the labouring class in early Hong Kong, making it a primary source for details regarding the 1922 strike.
-
-**Still needed:** Specific evidence is still needed to confirm the exact number of strikers, the casualty figures from the Sha Tin incident, and the precise wage increase percentages.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

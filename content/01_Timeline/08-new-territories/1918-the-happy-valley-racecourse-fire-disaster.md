@@ -4,7 +4,7 @@ title_zh: "跑馬地馬場大火"
 date: 1918-02-26
 year: 1918
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "photo-corroborated", "1918", "ai-draft", "colonial-history", "disaster", "happy-valley-fire", "new-territories", "public-safety"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1918", "ai-draft", "colonial-history", "disaster", "happy-valley-fire", "new-territories", "public-safety"]
 summary: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building regulations."
 description: "On February 26, 1918, a catastrophic grandstand collapse and fire at the Happy Valley Racecourse killed over 600 spectators during the annual Hong Kong Derby, prompting major reforms in public safety and building…"
 confidence: ai-draft
@@ -38,31 +38,15 @@ The sheer scale of the tragedy shocked the colonial administration and the local
 - [[02_Entities/Places/happy-valley-racecourse|Happy Valley Racecourse (跑馬地馬場)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact death toll exceeded 600 spectators, though precise figures vary across contemporary reports.
-- ❔ Temporary grandstands were constructed primarily of bamboo and wood.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact death toll exceeded 600 spectators, though precise figures vary across contemporary reports. The text mentions 670 lives were lost and that the Hongkong Telegraph reported 576 confirmed deaths.
+- ❔ **not in Wikipedia**: Temporary grandstands were constructed primarily of bamboo and wood. The text mentions bamboo matting was set ablaze, but does not state what the grandstand was constructed of.
 
-![A crowd of spectators at the Happy Valley Racecourse in Hong Kong on February 26, 1918, prior to the fire disaster.](https://upload.wikimedia.org/wikipedia/commons/7/71/Happy_Valley_Racecourse_before_fire_on_26th_February_1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Happy Valley Racecourse fire](https://en.wikipedia.org/wiki/Happy_Valley_Racecourse_fire)
 
-*A crowd of spectators at the Happy Valley Racecourse in Hong Kong on February 26, 1918, prior to the fire disaster.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Happy_Valley_Racecourse_before_fire_on_26th_February_1918.jpg).
-Corroborates: It illustrates the scale of the crowd and the setting of the racecourse on the day of the catastrophic event.
-
-![A photograph of the massive smoke plume rising from the Happy Valley Racecourse during the 1918 fire disaster.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/HappyvalleyfireHK1918.jpg/960px-HappyvalleyfireHK1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A photograph of the massive smoke plume rising from the Happy Valley Racecourse during the 1918 fire disaster.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HappyvalleyfireHK1918.jpg).
-Corroborates: It provides visual evidence of the catastrophic fire and the scale of the crowd present during the disaster.
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
-
-- **Grade A:** *Report of the Commission Appointed to Inquire into the Disaster at the Racecourse*, Hong Kong Sessional Papers, 1918; Colonial Office Records, CO 129/447. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/447)
-- **Grade B:** Hase, Patrick H. (1999), "The Happy Valley Racecourse Disaster of 1918", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 39, pp. 89–110, https://www.jstor.org/stable/23889710. [link ✓](https://www.jstor.org/stable/23889710)
-- **Grade C:** Hong Kong Jockey Club, "Happy Valley History", https://corporate.hkjc.com. [site ?](https://corporate.hkjc.com)
-
-**Disputes or myths:** Rumors alleged triad arson; official forensic inquiries established that structural collapse overloaded temporary food stalls beneath, spilling hot cooking oils onto dry bamboo scaffolding.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

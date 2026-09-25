@@ -4,7 +4,7 @@ title_zh: "香港理工大學圍困事件"
 date: 2019-11-17
 year: 2019
 era: "Political contention and protest"
-tags: ["2019", "2019-protests", "ai-draft", "civil-unrest", "contention", "hong-kong-history", "polyu-siege"]
+tags: ["photo-corroborated", "2019", "2019-protests", "ai-draft", "civil-unrest", "contention", "hong-kong-history", "polyu-siege"]
 summary: "Beginning on **November 17, 2019**, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of the 2019 social unrest."
 description: "Beginning on November 17, 2019, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of…"
 confidence: ai-draft
@@ -39,5 +39,28 @@ The siege marked a turning point in the **2019** protests, resulting in a signif
 - ❔ Exact number of individuals trapped inside the campus during the siege
 - ❔ Total number of arrests made during and immediately after the twelve-day standoff
 - ❔ Chronology of the police decision to blockade rather than immediately storm the university grounds
+
+## Photos from this period
+
+![An annotated map detailing the locations of conflict, blockades, and police movement during the PolyU siege in November 2019.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/HK_PolyU_Siege_Map.png/960px-HK_PolyU_Siege_Map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*An annotated map detailing the locations of conflict, blockades, and police movement during the PolyU siege in November 2019.* (map). Cypp0847, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_PolyU_Siege_Map.png).
+Corroborates: It provides a spatial overview of the battlefield, helping to visualize the strategic layout of the siege.
+
+![Piles of overturned chairs, umbrellas, and protest signs are visible on the steps of The Hong Kong Polytechnic University.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Hong_Kong_IMG_4822_%2849067510486%29.jpg/960px-Hong_Kong_IMG_4822_%2849067510486%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Piles of overturned chairs, umbrellas, and protest signs are visible on the steps of The Hong Kong Polytechnic University.* (contemporary photo). Studio Incendo, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_IMG_4822_(49067510486).jpg).
+Corroborates: The image captures the atmosphere and physical evidence of the protests at the university during the 2019 unrest.
+
+![A pile of discarded chairs and debris sits beneath a banner for the 25th Congregation of The Hong Kong Polytechnic University.](https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Hong_Kong_IMG_20191114_182144_%2849066992378%29.jpg/960px-Hong_Kong_IMG_20191114_182144_%2849066992378%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A pile of discarded chairs and debris sits beneath a banner for the 25th Congregation of The Hong Kong Polytechnic University.* (contemporary photo). Studio Incendo, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_IMG_20191114_182144_(49066992378).jpg).
+Corroborates: It illustrates the disruption of normal campus activities and the state of the university during the period of unrest in November 2019.
+
+![A view of fire and smoke near the stairs at the Hong Kong Polytechnic University during the 2019 protests.](https://upload.wikimedia.org/wikipedia/commons/6/61/HKPU_Entrance_with_fire_20191118.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A view of fire and smoke near the stairs at the Hong Kong Polytechnic University during the 2019 protests.* (contemporary photo). 梁柏堅（表弟） Pakkin Leung, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HKPU_Entrance_with_fire_20191118.jpg).
+Corroborates: It corroborates the description of the violent standoff and unrest at the university campus.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

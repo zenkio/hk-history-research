@@ -4,7 +4,7 @@ title_zh: "半山手扶電梯啟用"
 date: 1993-10-15
 year: 1993
 era: "Sino-British negotiations and the transition"
-tags: ["1993", "ai-draft", "colonial-era", "engineering", "gentrification", "infrastructure", "transition", "urban-transport"]
+tags: ["photo-corroborated", "1993", "ai-draft", "colonial-era", "engineering", "gentrification", "infrastructure", "transition", "urban-transport"]
 summary: "On October 15, 1993, the world's longest outdoor covered escalator system officially opened in Hong Kong, connecting Central to the Mid-Levels and reshaping the urban geography and social life of the colonial city during its transitional era."
 description: "On October 15, 1993, the world's longest outdoor covered escalator system officially opened in Hong Kong, connecting Central to the Mid-Levels and reshaping the urban geography and social life of the colonial city…"
 confidence: ai-draft
@@ -41,5 +41,13 @@ The opening of the escalator system profoundly transformed the urban landscape o
 
 - ❔ Verify the exact inauguration date of October 15, 1993, against official Public Works Department archives.
 - ❔ Confirm the original projected versus final construction cost figures for the escalator system.
+
+## Photos from this period
+
+![A modern view of the Central-Mid-Levels escalator system featuring a notice regarding temporary suspension in 2025.](https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/HK_%E4%B8%AD%E7%92%B0_Central_%E4%B8%AD%E7%92%B0%E8%87%B3%E5%8D%8A%E5%B1%B1%E8%87%AA%E5%8B%95%E6%89%B6%E6%89%8B%E9%9B%BB%E6%A2%AF%E7%B3%BB%E7%B5%B1_Central-Mid-Levels_escalators_opening_hours_January_2025_R12S_01.jpg/960px-HK_%E4%B8%AD%E7%92%B0_Central_%E4%B8%AD%E7%92%B0%E8%87%B3%E5%8D%8A%E5%B1%B1%E8%87%AA%E5%8B%95%E6%89%B6%E6%89%8B%E9%9B%BB%E6%A2%AF%E7%B3%BB%E7%B5%B1_Central-Mid-Levels_escalators_opening_hours_January_2025_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A modern view of the Central-Mid-Levels escalator system featuring a notice regarding temporary suspension in 2025.* (later photo of the site). ZEWIA dumlwp TELEAM, CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E7%92%B0_Central_%E4%B8%AD%E7%92%B0%E8%87%B3%E5%8D%8A%E5%B1%B1%E8%87%AA%E5%8B%95%E6%89%B6%E6%89%8B%E9%9B%BB%E6%A2%AF%E7%B3%BB%E7%B5%B1_Central-Mid-Levels_escalators_opening_hours_January_2025_R12S_01.jpg).
+Corroborates: It provides a contemporary view of the location described in the historical text.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

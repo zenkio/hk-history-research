@@ -4,7 +4,7 @@ title_zh: "批填海計劃"
 date: 1889-01-01
 year: 1889
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-b", "1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
 summary: "In **1889**, businessman **Sir Paul Chater** (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 description: "In 1889, businessman Sir Paul Chater (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 confidence: ai-draft
@@ -39,26 +39,15 @@ The reclamation drastically altered the geography and economic geography of Vict
 - [[02_Entities/Places/sheung-wan|Sheung Wan (上環)]]
 - [[02_Entities/Places/des-voeux-road|Des Voeux Road (德輔道)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal
-- ❔ The precise legislative council vote tallies approving the project
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal. The reference text does not mention an 1889 proposal or any specific acreage.
+- ❔ **not in Wikipedia**: The precise legislative council vote tallies approving the project. The reference text does not mention Legislative Council votes or tallies.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: Praya Reclamation Scheme](https://en.wikipedia.org/wiki/Praya_Reclamation_Scheme), [Wikipedia: Praya East Reclamation Scheme](https://en.wikipedia.org/wiki/Praya_East_Reclamation_Scheme)
 
-- **Grade A:** *Praya Reclamation Ordinance*, HK Ordinance No. 16 of 1889, *Hong Kong Government Gazette*, Jan 1889; TNA CO 129/240. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/240)
-- **Grade B:** Ho, Pui-yin (2004), *Making Urban Hong Kong: A History of Reclamation*, Routledge, ISBN 978-0415342209. [ISBN ✗](https://openlibrary.org/isbn/9780415342209) _(ISBN is: Women and Romanticism, 1750-1850)_ [link ✓](https://zolimacitymag.com/pao-yue-kong-hong-kong-maritime-trade-the-shipping-tycoons/) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf)
-- **Grade C:** Civil Engineering and Development Department, HK Government, "History of Land Reclamation", https://www.cedd.gov.hk. [site ?](https://www.cedd.gov.hk) [link ✗](https://www.emerald.com/stics/article/12/2/98/364326/A-night-soil-collection-point-the-public-toilets)
-
-**Disputes or myths:** Often cited as a public civic improvement project, it was heavily driven by private real estate speculation and hong cartels led by Catchick Paul Chater.
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence for the exact acreage reclaimed and the legislative council vote tallies for the 1889 Praya Reclamation Scheme is still needed.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

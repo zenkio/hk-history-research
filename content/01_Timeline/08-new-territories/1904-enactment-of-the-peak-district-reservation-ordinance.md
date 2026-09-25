@@ -4,7 +4,7 @@ title_zh: "山頂區保留條例頒布"
 date: 1904-01-01
 year: 1904
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "1904", "ai-draft", "colonial-history", "new-territories", "peak-district-reservation-ordinance", "racial-segregation", "urban-planning", "victoria-peak"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "1904", "ai-draft", "colonial-history", "new-territories", "peak-district-reservation-ordinance", "racial-segregation", "urban-planning", "victoria-peak"]
 summary: "In 1904, the Hong Kong colonial government enacted the Peak District Reservation Ordinance, legally restricting residential settlement at Victoria Peak to non-Chinese Europeans and institutionalizing racial segregation in housing."
 description: "In 1904, the Hong Kong colonial government enacted the Peak District Reservation Ordinance, legally restricting residential settlement at Victoria Peak to non-Chinese Europeans and institutionalizing racial segregation…"
 confidence: ai-draft
@@ -35,30 +35,15 @@ This ordinance marked a critical turning point in the institutionalization of ra
 - [[02_Entities/Places/victoria-peak|Victoria Peak (太平山)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Peak District Reservation Ordinance was officially enacted in 1904.
-- ❔ The ordinance legally barred all Chinese individuals from residing at Victoria Peak regardless of property ownership or wealth.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: The Peak District Reservation Ordinance was officially enacted in 1904. The text refers to the Peak District Reservation Ordinance 1904 and states the law was in force from 1904 to 1930.
+- ⚠️ **differs from Wikipedia**: The ordinance legally barred all Chinese individuals from residing at Victoria Peak regardless of property ownership or wealth. The ordinance allowed the Governor-in-Council to exempt any Chinese from its operation, and exemptions were granted to people such as Sir Robert Ho-Tung and Soong Mei-ling.
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: Peak District Reservation Ordinance 1904](https://en.wikipedia.org/wiki/Peak_District_Reservation_Ordinance_1904), [Wikipedia: Victoria Peak](https://en.wikipedia.org/wiki/Victoria_Peak)
 
-- **Grade A:** Hong Kong Government Gazette, Ordinance No. 4 of 1904, 26 April 1904; Colonial Office Records, CO 129/348/41845. [link ✗](https://www.researchgate.net/publication/239781077\_Discriminatory\_zoning\_in\_colonial\_Hong\_Kong\_A\_review\_of\_the\_post-war\_literature\_and\_some\_further\_evidence\_for\_an\_economic\_theory\_of\_discrimination) [link ✓](https://www.j3consultantshongkong.com/j3c-blog/victoria-peak-hong-kong-the-residence-at-22-barker-road) [link ✗](https://www.emerald.com/pm/article/29/1/50/321336/Discriminatory-zoning-in-colonial-Hong-KongA) [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/348)
-- **Grade B:** Carroll, John M. (2012), "The Peak: Residential Segregation in Colonial Hong Kong", in Goodman &amp; Goodman (eds.), *Twentieth-Century Colonialism and China*, Routledge, pp. 81–91. [link ✗](https://research-information.bris.ac.uk/files/214002594/Final\_Copy\_2019\_10\_01\_Chan\_C\_PhD\_Redacted.pdf)
-- **Grade C:** Hong Kong Public Libraries, "Historical Laws of Hong Kong", https://www.hkpl.gov.hk. [site ?](https://www.hkpl.gov.hk)
-
-**Disputes or myths:** Popular claims state Sir Robert Ho Tung was granted immediate exemption upon enactment, but Governor Lugard initially resisted granting Chinese property access on the Peak to maintain spatial separation.
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Cecilia L. Chu (2012). *Speculative Modern: Urban Forms and the Politics of Property in Colonial Hong Kong*. eScholarship (California Digital Library).](https://openalex.org/W2203730128) (claims 1, 2): The source examines the politics of property and urban development in colonial Hong Kong during the period the ordinance was enacted.
-
-**Still needed:** Direct evidence or specific mention of the Peak District Reservation Ordinance and its specific legal provisions.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

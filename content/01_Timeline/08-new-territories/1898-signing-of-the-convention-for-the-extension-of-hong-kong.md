@@ -4,7 +4,7 @@ title_zh: "香港展拓專條簽訂"
 date: 1898-06-09
 year: 1898
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
 summary: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 description: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 confidence: ai-draft
@@ -39,38 +39,15 @@ The acquisition fundamentally transformed Hong Kong's geography, economy, and ad
 - [[02_Entities/Places/sham-chun-river|Sham Chun River (深圳河)]]
 - [[02_Entities/Places/peking|Peking (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact boundary demarcations agreed upon in the 1899 Convention of Peking
-- ❔ Specific role and instructions of British and Qing diplomats during the 1898 negotiations
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ⚠️ **differs from Wikipedia**: Exact boundary demarcations agreed upon in the 1899 Convention of Peking. The text states the Second Convention of Peking was signed on 9 June 1898, not 1899.
+- ❔ **not in Wikipedia**: Specific role and instructions of British and Qing diplomats during the 1898 negotiations. The text mentions MacDonald's reasoning for the lease duration and a statement made by the British during negotiations, but does not provide the specific roles or instructions of the diplomats.
 
-![A replica of the Convention for the Extension of Hong Kong Territory on display at the Hong Kong Museum of History.](https://upload.wikimedia.org/wikipedia/commons/f/f9/Kowloon_Lease_%285345421450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Convention for the Extension of Hong Kong Territory](https://en.wikipedia.org/wiki/Convention_for_the_Extension_of_Hong_Kong_Territory), [Wikipedia: Hong Kong Convention and Exhibition Centre](https://en.wikipedia.org/wiki/Hong_Kong_Convention_and_Exhibition_Centre)
 
-*A replica of the Convention for the Extension of Hong Kong Territory on display at the Hong Kong Museum of History.* (document). InSapphoWeTrust from Los Angeles, California, USA, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Lease_(5345421450).jpg).
-Corroborates: It depicts the treaty document that leased the New Territories to Britain for 99 years starting in 1898.
-
-![Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg/960px-20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.* (artwork). Yumeto, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg).
-Corroborates: It illustrates the practical outcome of the Convention for the Extension of Hong Kong, specifically the establishment of the boundary for the leased New Territories.
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
-
-- **Grade A:** *Convention for the Extension of Hong Kong Territory*, June 9, 1898, Foreign Office Records, FO 17/1397, UK National Archives; *Hertslet's China Treaties*, Vol. 1, London: His Majesty's Stationery Office (HMSO), 1908, p. 25. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/1397)
-- **Grade B:** Carroll, John M. (2013), *A Concise History of Hong Kong*, Hong Kong University Press, ISBN: 9789888139286, https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf. [ISBN ✗](https://openlibrary.org/isbn/9789888139286) _(ISBN is: China's Foreign Places)_ [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
-- **Grade C:** Hong Kong Memory Project, "Convention for the Extension of Hong Kong Territory", https://www.hkmemory.hk. [site ?](https://www.hkmemory.hk) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
-
-**Disputes or myths:** Popular claims frequently confuse the 99-year lease of the New Territories with the permanent cessions of Hong Kong Island (1842) and Kowloon Peninsula (1860).
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence for boundary demarcations in the 1899 Convention of Peking and the roles/instructions of diplomats during the 1898 negotiations is still needed.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

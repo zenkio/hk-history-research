@@ -4,7 +4,7 @@ title_zh: "拆卸中環天星碼頭"
 date: 2006-11-12
 year: 2006
 era: "The early HKSAR"
-tags: ["2006", "ai-draft", "civil-protest", "early-hksar", "heritage-conservation", "hksar-history", "localism", "star-ferry", "urban-development"]
+tags: ["photo-corroborated", "2006", "ai-draft", "civil-protest", "early-hksar", "heritage-conservation", "hksar-history", "localism", "star-ferry", "urban-development"]
 summary: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
 description: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
 confidence: ai-draft
@@ -44,5 +44,13 @@ The destruction of the Central Star Ferry Pier is widely regarded by historians 
 - ❔ The exact date the third-generation Central Star Ferry Pier was closed and demolition commenced in November 2006.
 - ❔ The architectural style and opening year of the third-generation Central Star Ferry Pier.
 - ❔ The extent of public consultation conducted by the HKSAR government prior to the Central reclamation project.
+
+## Photos from this period
+
+![Hand-drawn protest signs and drawings by citizens hanging at the Central Star Ferry Pier on its last day of operation.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/3rd_Central_Star_Ferry_Pier_111106.JPG/960px-3rd_Central_Star_Ferry_Pier_111106.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Hand-drawn protest signs and drawings by citizens hanging at the Central Star Ferry Pier on its last day of operation.* (artwork). me (cychk), CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:3rd_Central_Star_Ferry_Pier_111106.JPG).
+Corroborates: The image illustrates the public sentiment and protests against the demolition of the pier as mentioned in the page summary.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

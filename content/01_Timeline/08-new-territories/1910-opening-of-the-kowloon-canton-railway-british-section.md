@@ -4,7 +4,7 @@ title_zh: "九廣鐵路英段通車"
 date: 1910-10-01
 year: 1910
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "photo-corroborated", "1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1910", "ai-draft", "british-colonial-history", "kowloon-canton-railway", "new-territories", "railway-transport"]
 summary: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland China."
 description: "On October 1, 1910, the British section of the Kowloon-Canton Railway officially opened, transforming land transport between urban Kowloon and the New Territories and establishing a vital overland link toward mainland…"
 confidence: ai-draft
@@ -42,25 +42,15 @@ The opening of the railway modernized regional transport and physically bound th
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 - [[02_Entities/Places/beacon-hill|Beacon Hill (煙墩山)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify the exact passenger and freight volume during the first month of operation in October 1910.
-- ❔ Confirm the precise contractual agreements between the British colonial government and the Qing dynasty regarding the cross-border railway connection.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Verify the exact passenger and freight volume during the first month of operation in October 1910. The text mentions that traffic was at first quiet with little demand, but it provides no exact volumes or the specific date of October 1910.
+- ❔ **not in Wikipedia**: Confirm the precise contractual agreements between the British colonial government and the Qing dynasty regarding the cross-border railway connection. The text summarizes agreements regarding financing and operation, but it does not provide the precise contractual agreements.
 
-![Extract from the Hong Kong Government Gazette dated October 7, 1910, notifying the public of the opening of the British Section of the Kowloon-Canton Railway.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gazette_notice_safe_opening_KCR_Oct_1910.jpg/960px-Gazette_notice_safe_opening_KCR_Oct_1910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Hong Kong West Kowloon station](https://en.wikipedia.org/wiki/Hong_Kong_West_Kowloon_station), [Wikipedia: Kowloon–Canton Railway](https://en.wikipedia.org/wiki/Kowloon%E2%80%93Canton_Railway)
 
-*Extract from the Hong Kong Government Gazette dated October 7, 1910, notifying the public of the opening of the British Section of the Kowloon-Canton Railway.* (document). Hong Kong Government Printer, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gazette_notice_safe_opening_KCR_Oct_1910.jpg).
-Corroborates: It confirms the official opening of the railway's British Section on October 1, 1910.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence regarding the exact passenger and freight volumes for October 1910 and the specific contractual agreements between the British colonial government and the Qing dynasty is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

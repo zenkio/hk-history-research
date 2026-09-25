@@ -4,7 +4,7 @@ title_zh: "新界六日戰爭"
 date: 1899-04-14
 year: 1899
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "photo-corroborated", "1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1899", "ai-draft", "british-colonialism", "local-resistance", "new-territories", "qing-dynasty", "six-day-war"]
 summary: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their military defeat."
 description: "In April 1899, indigenous Cantonese and Hakka clans in the New Territories mounted a brief but fierce armed resistance against the British colonial takeover, culminating in a six-day conflict that ended in their…"
 confidence: ai-draft
@@ -44,42 +44,17 @@ The conflict marked the final major armed resistance against British expansion i
 - [[02_Entities/Places/lam-tsuen|Lam Tsuen (林村)]]
 - [[02_Entities/Places/shek-kong|Shek Kong (石崗)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact casualty numbers for the indigenous militia during the six-day conflict
-- ❔ The degree of direct involvement or tacit approval by Qing officials in Shenzhen regarding the villagers' resistance
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact casualty numbers for the indigenous militia during the six-day conflict. The text states that the militia suffered 500 men killed in action.
+- ❔ **not in Wikipedia**: The degree of direct involvement or tacit approval by Qing officials in Shenzhen regarding the villagers' resistance. The text mentions suspicion regarding the Qing government's support but does not mention officials in Shenzhen or the specific degree of involvement.
 
-![The Proclamation of the New Territories, issued by Sir Henry Blake, Governor of Hong Kong, on April 9, 1899.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/New_Territories_Proclamation.jpg/960px-New_Territories_Proclamation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Six-Day War (1899)](https://en.wikipedia.org/wiki/Six-Day_War_%281899%29)
 
-*The Proclamation of the New Territories, issued by Sir Henry Blake, Governor of Hong Kong, on April 9, 1899.* (document). Hong Kong Government, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:New_Territories_Proclamation.jpg).
-Corroborates: This official announcement of the British takeover precipitated the armed resistance from indigenous clans that led to the Six-Day War.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-![British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.](https://upload.wikimedia.org/wikipedia/commons/e/e9/British_take_over_the_New_Territories.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.* (contemporary photo). The National Archives UK, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:British_take_over_the_New_Territories.jpg).
-Corroborates: It documents the official colonial takeover of the New Territories that triggered the armed resistance of the local indigenous clans.
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
-
-- **Grade A:** Colonial Office Records, Minutes of the Colonial Office, CO 129/294, UK National Archives; Hong Kong Government Gazette, April 1899. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/294)
-- **Grade B:** Hase, Patrick H. (2008), *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*, Hong Kong University Press, ISBN: 9789622098992. [ISBN ✓](https://openlibrary.org/isbn/9789622098992) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-- **Grade C:** Hong Kong Museum of History, "The Acquisition of the New Territories", Leisure and Cultural Services Department, https://www.museums.gov.hk. [site ?](https://www.museums.gov.hk) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
-
-**Disputes or myths:** Early British colonial despatches framed the conflict as anti-foreign riots incited by outside bandits, whereas scholarship demonstrates it was an organized resistance led by local landowning elites defending traditional lineage rights.
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Patrick H. Hase (2008). *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*. Project Muse (Johns Hopkins University).](https://openalex.org/W607746270) (claims 1, 2): This scholarship specifically focuses on the Six-Day War of 1899 and the resistance in the New Territories.
-
-**Still needed:** Explicit confirmation of exact casualty numbers and details on Qing officials' involvement in Shenzhen is not provided in the snippet.
+- ✓ [The Six-Day War of 1899: Hong Kong in the Age of Imperialism](https://openlibrary.org/isbn/9789622098992) (ISBN)
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

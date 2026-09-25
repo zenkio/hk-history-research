@@ -4,7 +4,7 @@ title_zh: "魯迅香港演講"
 date: 1927-02-18
 year: 1927
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-b", "1927", "ai-draft", "intellectual-history", "interwar", "interwar-hong-kong", "literary-history", "lu-xun", "new-culture-movement"]
+tags: ["wikipedia-checked", "evidence-b", "1927", "ai-draft", "intellectual-history", "interwar", "interwar-hong-kong", "literary-history", "lu-xun", "new-culture-movement"]
 summary: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
 description: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
 confidence: ai-draft
@@ -37,22 +37,17 @@ The lectures served as a major catalyst for local literary discourse and modern 
 - [[02_Entities/Places/ymca-hall|YMCA Hall (青年會書院/香港中華基督教青年會)]]
 - [[02_Entities/Places/city-hall|City Hall (香港大會堂)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify the exact dates of Lu Xun's arrival in Hong Kong in February 1927.
-- ❔ Confirm the specific venues and exact titles of the lectures delivered by Lu Xun during his Hong Kong visit.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Verify the exact dates of Lu Xun's arrival in Hong Kong in February 1927. The reference text does not mention Lu Xun's arrival in Hong Kong or his location in February 1927.
+- ❔ **not in Wikipedia**: Confirm the specific venues and exact titles of the lectures delivered by Lu Xun during his Hong Kong visit. The reference text does not mention any lectures delivered by Lu Xun in Hong Kong.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Lu Xun](https://en.wikipedia.org/wiki/Lu_Xun)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Chor‐yung Cheung, Tao Li (2008). *A new investigation into Lu Xun's lecture tour in Hong Kong (Part One)*.](https://openalex.org/W1502131061) (claims 1, 2): It re-examines the 1927 lecture tour in Hong Kong and its associated controversy.
-- [Lin Man-sh (2015). *A Few Questions about Lu Xun's Lecture in Hong Kong*. Journal of Shanxi Datong University.](https://openalex.org/W2362959126) (claims 1, 2): It mentions the timing of the lectures in February 1927 and provides two lecture titles.
-
-**Still needed:** The exact arrival date in February and the specific venues where the lectures were held are still required.
-
+- ✓ [Literature on the Eve of Revolution: Reflections on Lu Xun's Leftist Years, 1927–1936](https://doi.org/10.1177/009770047600200302) (DOI)
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

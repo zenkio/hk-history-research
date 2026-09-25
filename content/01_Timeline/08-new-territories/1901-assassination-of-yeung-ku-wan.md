@@ -4,7 +4,7 @@ title_zh: "楊衢雲遇刺案"
 date: 1901-01-10
 year: 1901
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-b", "1901", "ai-draft", "assassination", "british-hong-kong", "new-territories", "qing-dynasty", "revive-china-society", "yeung-ku-wan"]
+tags: ["wikipedia-checked", "evidence-b", "1901", "ai-draft", "assassination", "british-hong-kong", "new-territories", "qing-dynasty", "revive-china-society", "yeung-ku-wan"]
 summary: "On January 10, 1901, revolutionary leader Yeung Ku-wan was assassinated in his Central Hong Kong home by an agent of the Qing government, highlighting how mainland Chinese political violence crossed into British colonial territory."
 description: "On January 10, 1901, revolutionary leader Yeung Ku-wan was assassinated in his Central Hong Kong home by an agent of the Qing government, highlighting how mainland Chinese political violence crossed into British…"
 confidence: ai-draft
@@ -43,22 +43,18 @@ The murder of **Yeung Ku-wan** sent shockwaves through the local revolutionary n
 - [[02_Entities/Places/central|Central (中環)]]
 - [[02_Entities/Places/gage-street|Gage Street (結志街)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Yeung Ku-wan died on January 11, 1901, at Alice Memorial Hospital.
-- ❔ The assassin Chen Lin was successfully apprehended, tried, and executed by the Hong Kong colonial government.
-- ❔ The exact address of the assassination was No. 52 Gage Street in Central.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Yeung Ku-wan died on January 11, 1901, at Alice Memorial Hospital. The text confirms he died on 11 January 1901, but does not mention the hospital.
+- ❔ **not in Wikipedia**: The assassin Chen Lin was successfully apprehended, tried, and executed by the Hong Kong colonial government. The text identifies Chen Lin as the assassin but does not state whether he was apprehended, tried, or executed.
+- ❔ **not in Wikipedia**: The exact address of the assassination was No. 52 Gage Street in Central. The text confirms the assassination took place at 52 Gage Street, but it does not mention the district of Central.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Yeung Ku-wan](https://en.wikipedia.org/wiki/Yeung_Ku-wan)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Christopher Munn (2025). *Death of a Reformer*. Hong Kong University Press eBooks.](https://doi.org/10.5790/hongkong/9789888876884.003.0005) (claims 2): It discusses the legal consequences of Yeung Ku-wan's assassination by Qing agents.
-
-**Still needed:** Evidence for the date and location of death (Claim 1) and the specific address of the assassination (Claim 3) is still needed.
-
+- ✗ [Yeung Ku-wan – A Biography Written by a Family Member](https://openlibrary.org/isbn/9789881804167) (ISBN) _ISBN is: Yang Quyun jia zhuan_
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

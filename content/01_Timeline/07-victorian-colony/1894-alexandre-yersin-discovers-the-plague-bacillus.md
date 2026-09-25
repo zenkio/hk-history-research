@@ -4,7 +4,7 @@ title_zh: "耶爾森發現鼠疫桿菌"
 date: 1894-06-20
 year: 1894
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1894", "1894-epidemic", "ai-draft", "alexandre-yersin", "plague-bacillus", "public-health", "victorian-colony", "victorian-hong-kong"]
+tags: ["wikipedia-checked", "evidence-b", "1894", "1894-epidemic", "ai-draft", "alexandre-yersin", "plague-bacillus", "public-health", "victorian-colony", "victorian-hong-kong"]
 summary: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
 description: "In June 1894, Swiss-French bacteriologist Alexandre Yersin isolated the plague bacillus in a makeshift straw hut in Hong Kong during a devastating epidemic."
 confidence: ai-draft
@@ -41,33 +41,22 @@ The discovery marked a monumental breakthrough in modern medicine and epidemiolo
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/tai-ping-shan|Tai Ping Shan (太平山)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Alexandre Yersin isolated the plague bacillus on or around June 20, 1894.
-- ❔ Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong.
-- ❔ Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: Alexandre Yersin isolated the plague bacillus on or around June 20, 1894. The text states Yersin isolated the bacillus 15 days after June 5 and announced his discovery on June 20.
+- ❔ **not in Wikipedia**: Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong. The text does not mention the specific location or type of structure where Yersin conducted his research.
+- ✅ **agrees with Wikipedia**: Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time. The text describes Kitasato and Yersin as rivals who were both in Hong Kong investigating the plague during the same period.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: Alexandre Yersin](https://en.wikipedia.org/wiki/Alexandre_Yersin), [Wikipedia: 1894 Hong Kong plague](https://en.wikipedia.org/wiki/1894_Hong_Kong_plague)
 
-- **Grade A:** Yersin, Alexandre (1894), "La peste bubonique à Hong-Kong", *Annales de l'Institut Pasteur*, Vol. 8, pp. 662–667; HK Medical Reports 1894. [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en)
-- **Grade B:** Howard-Jones, Norman (1975), "Was Kitasato Shibasaburo the Co-discoverer of the Plague Bacillus?", *Medical History*, Vol. 19, No. 1, pp. 1–22, https://doi.org/10.1017/s0025727300019939. [DOI ?](https://doi.org/10.1017/s0025727300019939) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-- **Grade C:** Institut Pasteur Archives, "Alexandre Yersin and the Discovery of Plague Bacillus", https://www.pasteur.fr. [site ?](https://www.pasteur.fr) [link ✓](https://ihss.hku.hk/portfolio/elizabeth-sinn/) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-**Disputes or myths:** For decades Kitasato Shibasaburo was credited as co-discoverer, but historical analysis showed Kitasato's isolated cultures were contaminated with pneumococcus, leaving Yersin as sole discoverer.
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Barbara J. Hawgood (2008). *Alexandre Yersin (1863–1943): discoverer of the plague bacillus, explorer and agronomist*. Journal of Medical Biography.](https://doi.org/10.1258/jmb.2007.007017) (claims 1): Identifies Yersin as the discoverer of the plague bacillus.
-- [Tom Solomon (1997). *Hong Kong, 1894: the role of James A Lowson in the controversial discovery of the plague bacillus*. The Lancet.](https://doi.org/10.1016/s0140-6736(97)01438-4) (claims 1, 3): Discusses the 1894 discovery in Hong Kong and mentions it was controversial, which relates to the competing research.
-- [David P. Steensma, Robert A. Kyle (2020). *Alexandre Yersin: Discoverer of the Plague Bacillus*. Mayo Clinic Proceedings.](https://doi.org/10.1016/j.mayocp.2019.11.006) (claims 1): Identifies Yersin as the discoverer of the plague bacillus.
-
-**Still needed:** Evidence for the makeshift straw hut (Claim 2) is not mentioned in any of the provided source descriptions.
+- ✓ [Alexandre Yersin (1863–1943): discoverer of the plague bacillus, explorer and agronomist](https://doi.org/10.1258/jmb.2007.007017) (DOI)
+- ✓ [Plague history: Yersin's discovery of the causative bacterium in 1894 enabled, in the subsequent century, scientific progress in understanding the disease and the development of treatments and vaccines](https://doi.org/10.1111/1469-0691.12540) (DOI)
+- ✓ [Hong Kong, 1894: the role of James A Lowson in the controversial discovery of the plague bacillus.](https://doi.org/10.1016/S0140-6736(97)01438-4) (DOI)
+- ✓ [Was Shibasaburo Kitasato the Co-Discoverer of the Plague Bacillus?](https://doi.org/10.1353/pbm.1973.0034) (DOI)
+- ✓ [Alexandre Yersin (1863-1943) and the centenary of the plague in Nha Trang: A threat transformed](https://doi.org/10.1159/000018052) (DOI)
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,7 +4,7 @@ title_zh: "設定邊境禁區"
 date: 1951-01-01
 year: 1951
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1951", "ai-draft", "border-control", "frontier-closed-area", "illegal-immigration", "new-territories", "postwar-history", "postwar-refugees", "smuggling"]
+tags: ["photo-corroborated", "1951", "ai-draft", "border-control", "frontier-closed-area", "illegal-immigration", "new-territories", "postwar-history", "postwar-refugees", "smuggling"]
 summary: "In **June 1951**, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
 description: "In June 1951, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
 confidence: ai-draft
@@ -42,5 +42,29 @@ The creation of the Frontier Closed Area marked a critical turning point in the 
 
 - ❔ The exact gazetted date and legal ordinance used to establish the Frontier Closed Area in June 1951
 - ❔ The initial geographic extent and boundaries of the restricted zone when first implemented
+
+## Photos from this period
+
+![The border fence and security wall at Lo Wu, separating Hong Kong from mainland China.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Hong_Kong_-_China_border_fence.jpg/960px-Hong_Kong_-_China_border_fence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The border fence and security wall at Lo Wu, separating Hong Kong from mainland China.* (later photo of the site). Joe Jones, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_-_China_border_fence.jpg).
+Corroborates: It illustrates the physical infrastructure used to secure the border and regulate entry, which is the primary purpose of the Frontier Closed Area.
+
+![An artwork depicting British soldiers inspecting civilians and their goods at the Frontier Gate in the New Territories in 1945.](https://upload.wikimedia.org/wikipedia/commons/b/b9/The_Guard-house_of_the_5th_Commando_-_Frontier_Gate%2C_New_Territories%2C_Hong_Kong_Art.IWMARTLD5819.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*An artwork depicting British soldiers inspecting civilians and their goods at the Frontier Gate in the New Territories in 1945.* (artwork). Morris, James, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Guard-house_of_the_5th_Commando_-_Frontier_Gate,_New_Territories,_Hong_Kong_Art.IWMARTLD5819.jpg).
+Corroborates: It illustrates the existing border control and inspection infrastructure at the location where the Frontier Closed Area was later established.
+⚠️ Possible conflict: The image dates from November 1945, preceding the formal establishment of the Frontier Closed Area in 1951.
+
+![A sign marking the Frontier Closed Area next to the Ng Tung River in Sheung Shui.](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_16.jpg/960px-HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A sign marking the Frontier Closed Area next to the Ng Tung River in Sheung Shui.* (later photo of the site). SSTF Zhang's Zhen 201108, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_16.jpg).
+Corroborates: It provides visual evidence of the existence and designation of the Frontier Closed Area mentioned in the text.
+
+![A sign marking the Frontier Closed Area stands next to a fence overlooking the Ng Tung River in Sheung Shui.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_17.jpg/960px-HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A sign marking the Frontier Closed Area stands next to a fence overlooking the Ng Tung River in Sheung Shui.* (later photo of the site). SSTF Zhang's Zhen 201108, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_17.jpg).
+Corroborates: The image shows the physical boundary and signage of the Frontier Closed Area established in 1951.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

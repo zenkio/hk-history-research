@@ -4,7 +4,7 @@ title_zh: "香港中華總商會的成立"
 date: 1911-01-01
 year: 1911
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1911", "ai-draft", "chinese-elite", "chinese-general-chamber-of-commerce", "colonial-era", "economic-history", "new-territories"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1911", "ai-draft", "chinese-elite", "chinese-general-chamber-of-commerce", "colonial-era", "economic-history", "new-territories"]
 summary: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese bourgeois elite."
 description: "In 1911, prominent Chinese merchants in Hong Kong established the Chinese General Chamber of Commerce to institutionalize their economic and social influence, providing a collective voice for the growing local Chinese…"
 confidence: ai-draft
@@ -36,17 +36,15 @@ The creation of the chamber marked a pivotal moment in the self-organization of 
 - [[02_Entities/People/chinese-mercantile-leaders|Chinese mercantile leaders (華商領袖)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact foundational date and founding members of the Chinese General Chamber of Commerce in 1911
-- ❔ The precise nature of the relationship and correspondence between the newly formed chamber and the colonial government
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact foundational date and founding members of the Chinese General Chamber of Commerce in 1911. The text states the Chinese General Chamber of Commerce was founded in 1900 by Ho Fook and Lau Chu-pak.
+- ❔ **not in Wikipedia**: The precise nature of the relationship and correspondence between the newly formed chamber and the colonial government. The reference text does not mention the relationship or correspondence between the chamber and the colonial government.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong General Chamber of Commerce](https://en.wikipedia.org/wiki/Hong_Kong_General_Chamber_of_Commerce), [Wikipedia: Chinese General Chamber of Commerce](https://en.wikipedia.org/wiki/Chinese_General_Chamber_of_Commerce)
 
-**Still needed:** Specific evidence regarding the founding date, members, and colonial government relations of the Chinese General Chamber of Commerce in 1911 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

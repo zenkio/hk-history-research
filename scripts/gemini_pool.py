@@ -33,6 +33,7 @@ load_dotenv()
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(SCRIPTS_DIR, "models.json")
 STATE_FILE = os.path.join(SCRIPTS_DIR, "quota_state.json")
+OPENROUTER_KEY_NAMES = ("OPENROUTER_API_KEY", "OPEN_ROUTER_KEY_RESEARCHER")
 OPENROUTER_URL = "https://openrouter.ai/api/v1"
 # Free-list entries that are not general text models.
 OPENROUTER_SKIP = re.compile(r"(vl|vision|coder|math|embed|guard|audio|image|ocr)", re.I)
@@ -43,7 +44,11 @@ IMAGE_TOKEN_ESTIMATE = 1_500
 TRANSIENT_TRIES = 4      # per request on large-quota models, for 503/500/timeouts
 SCARCE_RPD = 50          # models this small move on after one overload error: Google still bills it
 IDLE_CYCLES = 3
-COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload retries          # full passes over the routing list before giving up on a transient outage
+COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload retries
+# OpenRouter's free models are rate-limited upstream, often for many minutes: waiting 60 s and
+# retrying cost run 15 ~38 minutes of the research worker. Rest the model and let the next one
+# in the routing (Gemma) take the call instead.
+RATE_LIMIT_COOLDOWN = 300
 # Suffix tokens an API id may add to a configured name and still be the same model.
 ALLOWED_EXTRA = re.compile(r"^(preview|latest|exp|it|a\d+b|\d+)$")
 
@@ -164,7 +169,13 @@ class ModelPool:
         entries = [m for m in self.models.values() if m.get("provider") == "openrouter"]
         if not entries:
             return
-        self.or_key = (os.environ.get("OPENROUTER_API_KEY") or "").strip()  # a pasted secret can carry a space or newline
+        # Keys are tried in this order; one that OpenRouter rejects (401) is dropped for the run.
+        # A pasted secret can carry a space or newline, so values are stripped.
+        self.or_keys = [(name, os.environ[name].strip()) for name in OPENROUTER_KEY_NAMES
+                        if (os.environ.get(name) or "").strip()]
+        self.or_key_name, self.or_key = self.or_keys[0] if self.or_keys else (None, "")
+        if self.or_keys:
+            print(f"  [pool] OpenRouter keys available: {', '.join(n for n, _ in self.or_keys)}; using {self.or_key_name}")
         free = []
         if self.or_key:
             try:
@@ -185,7 +196,7 @@ class ModelPool:
                 # Not parked for the day: a later step may have the key, and the free list changes.
                 self.unavailable.add(m["display"])
                 print(f"  [pool] {m['display']} skipped this run: "
-                      + ("no OPENROUTER_API_KEY" if not self.or_key else f"no free model matching {m.get('pick')}"))
+                      + ("no OpenRouter key (" + " / ".join(OPENROUTER_KEY_NAMES) + ")" if not self.or_key else f"no free model matching {m.get('pick')}"))
             self.state.setdefault("resolved", {})[m["display"]] = hit
         self.state["openrouter_free"] = [d["id"] for d in free]
 
@@ -359,6 +370,18 @@ class ModelPool:
         tokens = getattr(getattr(resp, "usage_metadata", None), "total_token_count", None)
         return resp.text, _sources(resp), tokens
 
+    def _next_openrouter_key(self):
+        """Drop the OpenRouter key that was just rejected and switch to the next one, if any."""
+        with self.lock:
+            rejected = self.or_key_name
+            self.or_keys = [(n, v) for n, v in self.or_keys if n != rejected]
+            if not self.or_keys:
+                print(f"  [pool] OpenRouter rejected {rejected}; no other key left")
+                return False
+            self.or_key_name, self.or_key = self.or_keys[0]
+            print(f"  [pool] OpenRouter rejected {rejected}; switching to {self.or_key_name}")
+            return True
+
     def _call_openrouter(self, m, prompt):
         body = json.dumps({"model": m["api_id"], "messages": [{"role": "user", "content": prompt}]}).encode()
         req = urllib.request.Request(f"{OPENROUTER_URL}/chat/completions", data=body, headers={
@@ -376,7 +399,9 @@ class ModelPool:
 
     def _try_model(self, key, role, prompt, search, parse, media=None):
         m = self.models[key]
-        bad_json = transient = 0
+        if self.cooldown.get(key, 0) > time.time():
+            return None  # resting after rate limits or overloads earlier in this call chain
+        bad_json = transient = rate_limited = 0
         # AI Studio counts 503 "high demand" failures against RPD, so a 20-per-day
         # model must not spend its budget retrying an overload.
         max_transient = 1 if m["rpd"] <= SCARCE_RPD else TRANSIENT_TRIES
@@ -407,6 +432,12 @@ class ModelPool:
                             rec["count"] = cap
                             self.save()
                         return None
+                    rate_limited += 1
+                    if self._provider(key) == "openrouter" or rate_limited >= 2:
+                        self.cooldown[key] = time.time() + RATE_LIMIT_COOLDOWN
+                        print(f"  [pool] {key} per-minute limit; resting it {RATE_LIMIT_COOLDOWN // 60} min, "
+                              "the next model takes over")
+                        return None
                     print(f"  [pool] {key} per-minute limit, backing off 60s")
                     time.sleep(60)
                 elif _is_transient(msg) or "502" in msg or "timed out" in msg.lower():
@@ -419,6 +450,8 @@ class ModelPool:
                     self.no_media.add(key)
                     return None
                 elif re.match(r"(401|403)\b", msg) or "Missing Authentication" in msg or "API_KEY_INVALID" in msg:
+                    if self._provider(key) == "openrouter" and self._next_openrouter_key():
+                        continue  # retry this call with the next key
                     # A bad or missing key will not fix itself mid-run: skip the model, keep the quota.
                     print(f"  [pool] {key} rejected the API key ({msg[:80]}); skipped for this run. "
                           "Check the repository secret for spaces or line breaks.")

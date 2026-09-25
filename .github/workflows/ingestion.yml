@@ -64,6 +64,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
         run: python3 scripts/process_ingestion.py
 
       # Spend the quota RSS did not need on AI-drafted history pages.
@@ -71,4 +72,5 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
         run: python3 scripts/seed_history.py --minutes 45

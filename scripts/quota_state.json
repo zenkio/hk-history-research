@@ -1,7 +1,7 @@
 {
   "day": "2026-09-24",
   "used": {
-    "Gemini 3.1 Flash Lite": 26,
+    "Gemini 3.1 Flash Lite": 28,
     "Gemini 3.5 Flash Lite": 324,
     "Gemma 4 31B": 198,
     "Gemini 2.5 Flash": 1,
@@ -13,7 +13,7 @@
     "Gemini 3 Flash": 3,
     "OpenRouter Qwen": 9,
     "OpenRouter DeepSeek": 9,
-    "Gemma 4 26B": 78
+    "Gemma 4 26B": 81
   },
   "parked": {
     "Gemini 2.5 Flash": "unavailable as gemini-2.5-flash: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models",

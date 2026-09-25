@@ -9,6 +9,7 @@ from datetime import datetime
 from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary, yaml_quote
 from photos import describe_source_photos, source_photo_section
+import videos as yt
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(PROJECT_ROOT, "04_Ingestion_Queue")
@@ -105,21 +106,50 @@ Respond with ONLY this JSON:
 
 
 def summarize_videos(pool, video_ids, title):
-    """AI summaries of the YouTube videos a post links to. Posts that are only a blurb plus a
-    video would otherwise publish almost nothing."""
+    """Summaries of the YouTube videos a post links to (posts that are only a blurb plus a video
+    would otherwise publish almost nothing). Subtitles first; the AI watches the video only to
+    add what the subtitles miss, or when there are none (see videos.py)."""
     out = []
     for vid in video_ids[:MAX_VIDEOS]:
         url = f"https://www.youtube.com/watch?v={vid}"
-        try:
-            data, model, _ = pool.generate_json("video", VIDEO_PROMPT.format(title=title), media=[url])
-        except QuotaExhausted:
-            raise  # keep the post queued until video quota is back
-        except Exception as e:
-            print(f"  video {vid} could not be summarised: {str(e)[:120]}")
-            continue
+        tr = yt.fetch_transcript(vid)
+        data = None
+        if tr.get("segments"):
+            try:
+                data, model, _ = pool.generate_json("video_text", yt.TRANSCRIPT_PROMPT.format(
+                    title=title, kind=tr["kind"], lang=tr["lang"], text=yt.transcript_text(tr["segments"])))
+                data.update(source="subtitles", subtitles=f"{tr['kind']}, {tr['lang']}")
+                print(f"  video {vid} summarised from its subtitles ({tr['kind']}, {tr['lang']}; {model})")
+            except Exception as e:
+                print(f"  video {vid} subtitles could not be summarised: {str(e)[:120]}")
+                data = None
+        if data and pool.total_remaining("video") > 0:
+            # Spare video quota: watch it anyway, to learn what the subtitles miss.
+            try:
+                cmp, cmodel, _ = pool.generate_json("video", yt.COMPARE_PROMPT.format(
+                    title=title, summary=data.get("summary", "")), media=[url])
+                if isinstance(cmp, dict):
+                    data.update(compare=cmp, compare_model=cmodel)
+                    print(f"  video {vid} also watched ({cmodel}): subtitles enough = {cmp.get('subtitles_enough')}")
+            except Exception as e:
+                print(f"  video {vid} could not be watched for comparison: {str(e)[:120]}")
+        if not data:
+            try:
+                data, model, _ = pool.generate_json("video", VIDEO_PROMPT.format(title=title), media=[url])
+            except QuotaExhausted:
+                raise  # keep the post queued until video quota is back
+            except Exception as e:
+                print(f"  video {vid} could not be summarised: {str(e)[:120]}")
+                yt.record(vid, subtitles=None, subtitles_error=tr.get("error"), summarised=False)
+                continue
+            data.update(source="watched")
+            print(f"  video {vid} summarised by watching it ({model}; subtitles: {tr.get('error')})")
         data.update(id=vid, url=url, model=model)
+        cmp = data.get("compare") or {}
+        yt.record(vid, subtitles=data.get("subtitles"), subtitles_error=tr.get("error"), summarised=True,
+                  **({"subtitles_enough": bool(cmp.get("subtitles_enough")),
+                      "visual_only": len(cmp.get("visual_only") or [])} if cmp else {}))
         out.append(data)
-        print(f"  video {vid} summarised ({model})")
     return out
 
 
@@ -131,20 +161,37 @@ def seconds(stamp):
     return total
 
 
+def _stamp_link(vid, stamp):
+    return f"[{stamp}](https://youtu.be/{vid}?t={seconds(stamp)})"
+
+
 def video_section(videos):
     lines = []
     for v in videos:
-        lines += ["## Video", "", f"![]({v['url']})", "",
-                  f"> [!info] What the video says (AI summary by {v['model']}, not a transcript)", ""]
+        if v.get("source") == "subtitles":
+            how = f"AI summary by {v['model']} of the video's own subtitles ({v['subtitles']}), not a full transcript"
+        else:
+            how = f"AI summary by {v['model']} from watching the video, not a transcript"
+        lines += ["## Video", "", f"![]({v['url']})", "", f"> [!info] What the video says ({how})", ""]
         if v.get("speaker"):
             lines += [f"**Presenter:** {v['speaker']}" + (f" · **Language:** {v['language']}" if v.get("language") else ""), ""]
         lines += [v.get("summary", "").strip(), ""]
         points = [k for k in v.get("key_points", []) if k.get("point")]
         if points:
             lines += ["### Key points", ""]
-            for k in points:
-                t = seconds(k.get("time", ""))
-                lines.append(f"- [{k.get('time', '')}](https://youtu.be/{v['id']}?t={t}) {k['point']}")
+            lines += [f"- {_stamp_link(v['id'], k.get('time', ''))} {k['point']}" for k in points]
+            lines.append("")
+        cmp = v.get("compare") or {}
+        shown = [x for x in cmp.get("visual_only") or [] if x.get("what")]
+        fixes = [c for c in cmp.get("corrections") or [] if c]
+        if cmp:
+            lines += ["### What the video shows beyond its words", "",
+                      f"> [!note] {v['compare_model']} watched the video and compared it with the subtitle summary: "
+                      f"{cmp.get('why', '')}".rstrip(), ""]
+            lines += [f"- {_stamp_link(v['id'], x.get('time', ''))} {x['what']}" for x in shown]
+            lines += [f"- Correction: {c}" for c in fixes]
+            if not shown and not fixes:
+                lines.append("- Nothing beyond what the subtitles say.")
             lines.append("")
     return lines
 
@@ -268,7 +315,8 @@ def run_git_commit():
     try:
         # The queue is tracked too, so files left over when quota runs out
         # survive to the next CI run instead of vanishing with the runner.
-        paths = ["content/", "scripts/seen_urls.json", "scripts/quota_state.json", "04_Ingestion_Queue/"]
+        paths = ["content/", "scripts/seen_urls.json", "scripts/quota_state.json", "04_Ingestion_Queue/",
+                 "scripts/state/videos.json"]
         subprocess.run(
             ["git", "add", "-A", "--"] + [p for p in paths if os.path.exists(os.path.join(PROJECT_ROOT, p))],
             cwd=PROJECT_ROOT, check=True

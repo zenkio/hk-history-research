@@ -4,10 +4,11 @@ title_zh: "實施《維護國家安全條例》"
 date: 2024-03-23
 year: 2024
 era: "The National Security Law era"
-tags: ["2024", "ai-draft", "article-23", "basic-law", "hong-kong-politics", "legislation", "national-security", "national-security-era"]
+tags: ["evidence-none", "2024", "ai-draft", "article-23", "basic-law", "hong-kong-politics", "legislation", "national-security", "national-security-era"]
 summary: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
 description: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The enactment marked the fulfillment of Hong Kong's long-standing constitutional
 
 - ❔ The Safeguarding National Security Bill was passed unanimously by the Legislative Council on March 19, 2024.
 - ❔ The ordinance officially took effect upon gazettal on March 23, 2024.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the enactment of the Article 23 Safeguarding National Security Ordinance in March 2024 is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

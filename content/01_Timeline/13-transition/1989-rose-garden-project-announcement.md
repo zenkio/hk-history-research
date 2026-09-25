@@ -4,7 +4,7 @@ title_zh: "宣佈玫瑰園計劃"
 date: 1989-10-11
 year: 1989
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1989", "ai-draft", "aviation", "hong-kong-economy", "infrastructure", "rose-garden-project", "sino-british-transition", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1989", "ai-draft", "aviation", "hong-kong-economy", "infrastructure", "rose-garden-project", "sino-british-transition", "transition"]
 summary: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the 1989 Tiananmen Square crackdown."
 description: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the…"
 confidence: ai-draft
@@ -39,18 +39,16 @@ While the project successfully laid the physical foundations for Hong Kong's mod
 - [[02_Entities/Places/chek-lap-kok|Chek Lap Kok (赤鱲角)]]
 - [[02_Entities/Places/lantau-island|Lantau Island (大嶼山)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor David Wilson officially announced the Port and Airport Development Strategy on October 11, 1989.
-- ❔ The infrastructure package included relocating the airport from Kai Tak to Chek Lap Kok.
-- ❔ Concerns raised by Beijing over financial reserves ultimately led to the 1991 Memorandum of Understanding.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Governor David Wilson officially announced the Port and Airport Development Strategy on October 11, 1989. The text mentions Governor Wilson and the Rose Garden Project, but does not mention the Port and Airport Development Strategy or the date October 11, 1989.
+- ❔ **not in Wikipedia**: The infrastructure package included relocating the airport from Kai Tak to Chek Lap Kok. The text mentions the construction of a new Hong Kong International Airport but does not mention Kai Tak or Chek Lap Kok.
+- ❔ **not in Wikipedia**: Concerns raised by Beijing over financial reserves ultimately led to the 1991 Memorandum of Understanding. The text mentions a Memorandum of Understanding was signed after negotiations regarding debt concerns, but it does not mention financial reserves or the year 1991.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Handover of Hong Kong](https://en.wikipedia.org/wiki/Handover_of_Hong_Kong)
 
-**Still needed:** Evidence specifically regarding the 'Rose Garden Project' announcement from October 11, 1989, is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "王韜創立循環日報"
 date: 1874-02-05
 year: 1874
 era: "Kowloon and the Victorian colony"
-tags: ["1874", "ai-draft", "chinese-journalism", "colonial-history", "late-qing-reform", "tsun-wan-yat-po", "victorian-colony", "wang-tao"]
+tags: ["evidence-none", "1874", "ai-draft", "chinese-journalism", "colonial-history", "late-qing-reform", "tsun-wan-yat-po", "victorian-colony", "wang-tao"]
 summary: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
 description: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The founding of the *Tsun Wan Yat Po* is widely recognized as a turning point in
 - ❔ Tsun Wan Yat Po was the very first daily newspaper entirely owned and managed by Chinese in Hong Kong.
 - ❔ The exact launch date of the newspaper was February 5, 1874.
 - ❔ Ng Choy provided financial backing for the establishment of the newspaper.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the founding of the Tsun Wan Yat Po by Wang Tao on February 5, 1874, is required.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

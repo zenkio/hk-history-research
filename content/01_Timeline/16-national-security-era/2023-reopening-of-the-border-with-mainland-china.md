@@ -4,10 +4,11 @@ title_zh: "中港邊境重新開放"
 date: 2023-01-08
 year: 2023
 era: "The National Security Law era"
-tags: ["2023", "ai-draft", "border-reopening", "covid-19", "cross-border-travel", "national-security-era", "post-pandemic-recovery"]
+tags: ["evidence-none", "2023", "ai-draft", "border-reopening", "covid-19", "cross-border-travel", "national-security-era", "post-pandemic-recovery"]
 summary: "On January 8, 2023, Hong Kong officially reopened its land and sea borders with mainland China without quarantine requirements, ending nearly three years of strict pandemic-related isolation."
 description: "On January 8, 2023, Hong Kong officially reopened its land and sea borders with mainland China without quarantine requirements, ending nearly three years of strict pandemic-related isolation."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The reopening marked a pivotal turning point for Hong Kong's post-pandemic recov
 
 - ❔ The exact date when quarantine-free travel resumed between Hong Kong and mainland China was January 8, 2023.
 - ❔ Initial daily quotas were implemented for specific land boundary control points upon reopening.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the reopening of the border between Hong Kong and Mainland China on January 8, 2023, is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

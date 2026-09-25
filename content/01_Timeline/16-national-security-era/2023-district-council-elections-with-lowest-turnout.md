@@ -4,10 +4,11 @@ title_zh: "區議會選舉創歷史最低投票率"
 date: 2023-12-10
 year: 2023
 era: "The National Security Law era"
-tags: ["2023", "ai-draft", "district-council", "electoral-reform", "hong-kong-politics", "national-security-era", "national-security-law", "voter-turnout"]
+tags: ["evidence-none", "2023", "ai-draft", "district-council", "electoral-reform", "hong-kong-politics", "national-security-era", "national-security-law", "voter-turnout"]
 summary: "On December 10, 2023, Hong Kong held its first District Council elections under a drastically overhauled electoral system, resulting in a record-low voter turnout of 27.5% amid the implementation of the National Security Law."
 description: "On December 10, 2023, Hong Kong held its first District Council elections under a drastically overhauled electoral system, resulting in a record-low voter turnout of 27.5% amid the implementation of the National…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ Interpretations of the December 2023 election vary starkly. Pro-establishment fi
 
 - ❔ The official final voter turnout rate for the December 10, 2023 District Council election was 27.5%.
 - ❔ Directly elected seats in the District Councils were reduced to approximately 19% under the 2023 electoral overhaul.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the turnout rates and statistical results for the Hong Kong District Council Elections held on December 10, 2023, is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -4,10 +4,11 @@ title_zh: "華商買辦網絡的興起"
 date: 1855-01-01
 year: 1855
 era: "The early colony"
-tags: ["1855", "19th-century-hong-kong", "ai-draft", "colonial-history", "comprador-system", "early-colony", "economic-history", "trade-relations"]
+tags: ["evidence-b", "1855", "19th-century-hong-kong", "ai-draft", "colonial-history", "comprador-system", "early-colony", "economic-history", "trade-relations"]
 summary: "By 1855, Chinese intermediaries known as compradors became essential to the Hong Kong economy, facilitating trade between foreign merchant houses and the Chinese interior."
 description: "By 1855, Chinese intermediaries known as compradors became essential to the Hong Kong economy, facilitating trade between foreign merchant houses and the Chinese interior."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The emergence of the comprador system established a unique socio-economic struct
 - ❔ The specific year 1855 as a peak consolidation period for the first wave of compradors.
 - ❔ The extent of legal formalization of comprador contracts in colonial courts before 1860.
 - ❔ The primary merchant houses that formalised the role of the comprador in Hong Kong during this decade.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Lawrence Chua (2020). *Imperial Negotiations: Introducing Comprador Networks and Comparative Modernities*. Architectural Histories.](https://doi.org/10.5334/ah.550) (claims 1): The source explicitly discusses the role and historical context of 19th-century comprador networks.
+
+**Still needed:** Specific evidence regarding the exact emergence and formation of the first comprador networks during the mid-19th century (circa 1855).
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

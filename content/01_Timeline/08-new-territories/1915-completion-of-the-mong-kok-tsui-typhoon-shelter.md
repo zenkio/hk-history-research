@@ -4,10 +4,11 @@ title_zh: "旺角咀避風塘落成"
 date: 1915-01-01
 year: 1915
 era: "The New Territories lease and the early 20th century"
-tags: ["1915", "ai-draft", "colonial-infrastructure", "maritime-history", "mong-kok", "new-territories", "tanka", "typhoon-shelter"]
+tags: ["evidence-none", "1915", "ai-draft", "colonial-infrastructure", "maritime-history", "mong-kok", "new-territories", "tanka", "typhoon-shelter"]
 summary: "In 1915, the completion of the Mong Kok Tsui Typhoon Shelter provided essential maritime infrastructure following the catastrophic 1906 typhoon, offering refuge to the marginalized boat-dwelling Tanka population."
 description: "In 1915, the completion of the Mong Kok Tsui Typhoon Shelter provided essential maritime infrastructure following the catastrophic 1906 typhoon, offering refuge to the marginalized boat-dwelling Tanka population."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The shelter represented a major expansion of colonial public works into the Kowl
 
 - ❔ The Mong Kok Tsui Typhoon Shelter was officially completed in 1915.
 - ❔ The construction project was initiated directly in response to the 1906 typhoon.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the completion of the Mong Kok Tsui Typhoon Shelter on January 1, 1915, is still needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

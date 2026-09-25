@@ -4,7 +4,7 @@ title_zh: "九龍城寨拆卸"
 date: 1993-03-23
 year: 1993
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-b", "photo-corroborated", "1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
 summary: "On **March 23, 1993**, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 description: "On March 23, 1993, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 confidence: ai-draft
@@ -40,46 +40,22 @@ The destruction of the Kowloon Walled City marked a pivotal moment during the tr
 - [[02_Entities/Places/kowloon-walled-city-park|Kowloon Walled City Park (九龍城寨公園)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact start date of structural demolition as March 23, 1993
-- ❔ The formal signing date and terms of the Sino-British agreement to demolish the Walled City in 1987
-- ❔ The exact population figures of the Walled City immediately prior to the clearance operations beginning
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact start date of structural demolition as March 23, 1993. The text states that demolition of the walled city began on 23 March 1993.
+- ❔ **not in Wikipedia**: The formal signing date and terms of the Sino-British agreement to demolish the Walled City in 1987. The text provides the announcement date of 14 January 1987, but not the formal signing date or specific terms of the agreement.
+- ❔ **not in Wikipedia**: The exact population figures of the Walled City immediately prior to the clearance operations beginning. The text states there is no accurate population information available for much of the city's later existence, listing only an estimate of 33,000 from 1987.
 
-![A photograph depicting the extreme architectural density and complex structure of the Kowloon Walled City.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Kowloon_Walled_City%2C_Kowloon%2C_China_%28Cropped%29.tif/lossy-page1-960px-Kowloon_Walled_City%2C_Kowloon%2C_China_%28Cropped%29.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Kowloon Walled City Park](https://en.wikipedia.org/wiki/Kowloon_Walled_City_Park), [Wikipedia: Kowloon Walled City](https://en.wikipedia.org/wiki/Kowloon_Walled_City)
 
-*A photograph depicting the extreme architectural density and complex structure of the Kowloon Walled City.* (contemporary photo). Paul Rudolph, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City,_Kowloon,_China_(Cropped).tif).
-Corroborates: It provides a visual representation of the enclave before its demolition in 1993.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-![Stone remnants and carved slabs from the South Gate of the Kowloon Walled City.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg/960px-Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Stone remnants and carved slabs from the South Gate of the Kowloon Walled City.* (later photo of the site). Cathouse116, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Remnants_of_the_South_Gate_of_Kowloon_Walled_City_in_Hong_Kong.jpg).
-Corroborates: The image shows physical remnants of the historical structures that once occupied the site before its demolition.
-
-![An aerial view of the Kowloon Walled City in 1989, illustrating its extreme urban density.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Kowloon_Walled_City_-_1989_Aerial.jpg/960px-Kowloon_Walled_City_-_1989_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*An aerial view of the Kowloon Walled City in 1989, illustrating its extreme urban density.* (contemporary photo). Ian Lambot, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_-_1989_Aerial.jpg).
-Corroborates: It provides a visual record of the Kowloon Walled City shortly before the demolition process began in 1993.
-
-![A museum model depicting an early stage of the Kowloon Walled City's layout.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg/960px-Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A museum model depicting an early stage of the Kowloon Walled City's layout.* (artefact). Ceeseven, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg).
-Corroborates: It provides a historical visual representation of the site that was demolished in 1993.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Alistair Fraser, Eva Cheuk-Yin Li (2017). *The second life of Kowloon Walled City: Crime, media and cultural memory*. Crime Media Culture An International Journal.](https://doi.org/10.1177/1741659017703681): Discusses the history and cultural memory of the Kowloon Walled City.
-- [Lawrence May (2022). *Virtual Heterotopias and the Contested Histories of Kowloon Walled City*. Games and Culture.](https://doi.org/10.1177/15554120221115398): Discusses the contested histories and virtual reimagining of the site following its demolition.
-
-**Still needed:** Specific documentation or primary sources detailing the actual demolition process and the logistical events of March 23, 1993.
-
+- ✓ [Kowloon Walled City Revisited: Photography and Postcoloniality in the City of Darkness](https://doi.org/10.1215/215820251_6-2-202) (DOI)
+- ✓ [Un-Forgetting walls by lines on maps: A case study on property rights, cadastral mapping, and the landscape of the Kowloon Walled City.](https://doi.org/10.1016/j.landusepol.2016.05.022) (DOI)
+- ✓ [The second life of Kowloon Walled City: Crime, Media and cultural memory](https://doi.org/10.1177/1741659017703681) (DOI)
+- ✓ [City of Darkness: Life in Kowloon Walled City](https://openlibrary.org/isbn/9781873200131) (ISBN)
+- ✓ [The Walled City](https://openlibrary.org/isbn/9780316405058) (ISBN)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

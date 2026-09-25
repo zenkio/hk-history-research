@@ -4,7 +4,7 @@ title_zh: "頒布香港基本法"
 date: 1990-04-04
 year: 1990
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-a", "1990", "ai-draft", "basic-law", "constitutional-law", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
+tags: ["wikipedia-checked", "evidence-a", "1990", "ai-draft", "basic-law", "constitutional-law", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative Region of the People's Republic of China."
 description: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative…"
 confidence: ai-draft
@@ -40,20 +40,19 @@ The Basic Law became the constitutional cornerstone of the Hong Kong Special Adm
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/great-hall-of-the-people|Great Hall of the People (人民大會堂)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Third Session of the Seventh National People's Congress formally promulgated the Basic Law on April 4, 1990.
-- ❔ The drafting committee included appointed members from both mainland China and Hong Kong starting in 1985.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The Third Session of the Seventh National People's Congress formally promulgated the Basic Law on April 4, 1990. The text states the Basic Law was promulgated by the National People's Congress on 4 April 1990, but does not mention the specific session or the number of the congress.
+- ✅ **agrees with Wikipedia**: The drafting committee included appointed members from both mainland China and Hong Kong starting in 1985. The text states that the BLDC was created in 1985 and included 36 members from China and 23 members from Hong Kong.
 
-> [!abstract] Evidence grade: **A**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Hong Kong Basic Law](https://en.wikipedia.org/wiki/Hong_Kong_Basic_Law), [Wikipedia: 2020 Hong Kong national security law](https://en.wikipedia.org/wiki/2020_Hong_Kong_national_security_law)
 
-### Primary sources (grade A)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [The National Archives (UK), FCO 40/2994, 1990 Jan 1 - 1990 Dec 31. Future of Hong Kong: Basic Law Drafting Committee (BLDC) meetings and promulgation.](https://discovery.nationalarchives.gov.uk/details/r/C16654625) (claims 1): This archive record directly covers the Basic Law Drafting Committee meetings and the promulgation process.
-- [The National Archives (UK), FCO 40/2993, 1990 Jan 1 - 1990 Dec 31. Future of Hong Kong: Basic Law Drafting Committee (BLDC) meetings and promulgation.](https://discovery.nationalarchives.gov.uk/details/r/C16654624) (claims 1): This archive record directly covers the Basic Law Drafting Committee meetings and the promulgation process.
-
+- ✓ [The Politics of Cooptation in Hong Kong: A Study of the Basic Law Drafting Process](https://doi.org/10.1080/02598272.1992.10800260) (DOI)
+- ✓ [Routledge Handbook of Constitutional Law in Greater China](https://doi.org/10.4324/9781003128243) (DOI)
+- ✓ [Hong Kong's contentious national security law concerns some academics](https://doi.org/10.1038/d41586-020-01693-y) (DOI)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

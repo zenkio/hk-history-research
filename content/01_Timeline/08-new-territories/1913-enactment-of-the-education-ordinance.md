@@ -4,10 +4,11 @@ title_zh: "教育條例頒布"
 date: 1913-01-01
 year: 1913
 era: "The New Territories lease and the early 20th century"
-tags: ["1913", "ai-draft", "colonial-history", "education-ordinance", "new-territories", "republican-nationalism", "vernacular-schools"]
+tags: ["evidence-none", "1913", "ai-draft", "colonial-history", "education-ordinance", "new-territories", "republican-nationalism", "vernacular-schools"]
 summary: "In 1913, the Hong Kong colonial government enacted the Education Ordinance to bring all private vernacular Chinese schools under official supervision, primarily aiming to monitor and curb the spread of anti-colonial republican nationalism."
 description: "In 1913, the Hong Kong colonial government enacted the Education Ordinance to bring all private vernacular Chinese schools under official supervision, primarily aiming to monitor and curb the spread of anti-colonial…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The enactment of the 1913 ordinance fundamentally altered the relationship betwe
 
 - ❔ The exact legislative mechanisms and immediate enforcement actions taken by the Hong Kong government following the 1913 Education Ordinance passage.
 - ❔ The extent of resistance or compliance among specific private vernacular schools in Hong Kong during the initial implementation phase.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the enactment of the Education Ordinance of 1913 is still needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

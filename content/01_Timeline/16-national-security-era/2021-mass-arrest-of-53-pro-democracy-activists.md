@@ -4,10 +4,11 @@ title_zh: "民主派初選五十三人大搜捕"
 date: 2021-01-06
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "hong-kong-history", "legislative-council", "national-security-era", "national-security-law", "pro-democracy"]
+tags: ["evidence-none", "2021", "ai-draft", "hong-kong-history", "legislative-council", "national-security-era", "national-security-law", "pro-democracy"]
 summary: "On January 6, 2021, Hong Kong authorities arrested 53 pro-democracy figures under the National Security Law for their involvement in an unofficial primary election held the previous year."
 description: "On January 6, 2021, Hong Kong authorities arrested 53 pro-democracy figures under the National Security Law for their involvement in an unofficial primary election held the previous year."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -48,5 +49,13 @@ The mass arrests marked a decisive turning point in Hong Kong's political landsc
 - ❔ Over 1,000 police officers were mobilized during the January 6, 2021 raids.
 - ❔ Exactly 53 pro-democracy figures were arrested on January 6, 2021.
 - ❔ More than 600,000 residents participated in the July 2020 primary election.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the mass arrest of 53 pro-democracy activists on January 6, 2021, is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

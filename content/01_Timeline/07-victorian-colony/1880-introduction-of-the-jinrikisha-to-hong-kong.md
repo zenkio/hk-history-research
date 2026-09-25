@@ -4,10 +4,11 @@ title_zh: "人力車引入香港"
 date: 1880-01-01
 year: 1880
 era: "Kowloon and the Victorian colony"
-tags: ["1880", "1880s", "ai-draft", "colonial-era", "labor-history", "transportation-history", "urban-development", "victorian-colony"]
+tags: ["evidence-none", "1880", "1880s", "ai-draft", "colonial-era", "labor-history", "transportation-history", "urban-development", "victorian-colony"]
 summary: "In approximately 1880, human-pulled rickshaws imported from Japan were introduced to Hong Kong, revolutionizing urban public transportation and creating new employment for the local working class."
 description: "In approximately 1880, human-pulled rickshaws imported from Japan were introduced to Hong Kong, revolutionizing urban public transportation and creating new employment for the local working class."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The arrival of the jinrikisha transformed the streetscape and daily rhythms of c
 
 - ❔ Exact year of the jinrikisha's introduction to Hong Kong
 - ❔ Specific colonial ordinances regulating early rickshaw operations
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the introduction and early history of the jinrikisha in Hong Kong around 1880 is required.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

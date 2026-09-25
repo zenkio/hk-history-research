@@ -4,10 +4,11 @@ title_zh: "香港白紙運動"
 date: 2022-11-28
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "a4-paper-protests", "ai-draft", "free-speech", "national-security-era", "national-security-law", "student-activism", "zero-covid"]
+tags: ["evidence-none", "2022", "a4-paper-protests", "ai-draft", "free-speech", "national-security-era", "national-security-law", "student-activism", "zero-covid"]
 summary: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
 description: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ Operating under the strictures of the **National Security Law** enacted in June 
 
 - ❔ Exact dates and locations of student gatherings involving blank paper in Hong Kong in late November 2022
 - ❔ Specific police intervention numbers and arrests related to the A4 paper demonstrations in Hong Kong
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the A4 paper protests that occurred on November 28, 2022, is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -4,10 +4,11 @@ title_zh: "麥遜爵士創立牛奶公司"
 date: 1886-01-01
 year: 1886
 era: "Kowloon and the Victorian colony"
-tags: ["1886", "ai-draft", "colonial-history", "dairy-farm", "medicine", "public-health", "victorian-colony"]
+tags: ["evidence-b", "1886", "ai-draft", "colonial-history", "dairy-farm", "medicine", "public-health", "victorian-colony"]
 summary: "In July 1886, Scottish physician Sir Patrick Manson established the Dairy Farm Company in Pok Fu Lam to supply hygienic, disease-free milk to the British colony of Hong Kong, significantly advancing local public health standards."
 description: "In July 1886, Scottish physician Sir Patrick Manson established the Dairy Farm Company in Pok Fu Lam to supply hygienic, disease-free milk to the British colony of Hong Kong, significantly advancing local public health…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,17 @@ The establishment of the Dairy Farm Company marked a major turning point in Hong
 
 - ❔ The exact founding month of the Dairy Farm Company as July 1886
 - ❔ The initial number of dairy cows imported by Sir Patrick Manson
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [K K Y Lai, Jocelyn Chan, Karen Lai (2003). *Sir Patrick Manson: good medicine for the people of Hong Kong.*. PubMed.](https://openalex.org/W2276315747) (claims 1): It provides biographical information about Sir Patrick Manson, the subject of the page.
+
+**Still needed:** Evidence specifically confirming that Sir Patrick Manson founded the Dairy Farm Company in 1886.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

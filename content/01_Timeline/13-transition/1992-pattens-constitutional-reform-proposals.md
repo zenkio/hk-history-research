@@ -4,7 +4,7 @@ title_zh: "彭定康政改方案"
 date: 1992-10-07
 year: 1992
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1992", "1995-elections", "ai-draft", "basic-law", "constitutional-reform", "decolonisation", "sino-british-relations", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1992", "1995-elections", "ai-draft", "basic-law", "constitutional-reform", "decolonisation", "sino-british-relations", "transition"]
 summary: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce opposition from Beijing and fundamentally altering the trajectory of the Sino-British transition."
 description: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce…"
 confidence: ai-draft
@@ -39,17 +39,17 @@ Patten's proposals triggered an immediate and furious response from the governme
 - [[02_Entities/People/chris-patten|Chris Patten (彭定康)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Chris Patten delivered his constitutional reform proposals during his Policy Address on October 7, 1992.
-- ❔ The reform proposals successfully passed through the Legislative Council in 1994 despite opposition from Beijing.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Governor Chris Patten delivered his constitutional reform proposals during his Policy Address on October 7, 1992. Chris Patten announced his 1994-95 electoral arrangements during his inaugural policy address to the Legislative Council on 7 October 1992.
+- ✅ **agrees with Wikipedia**: The reform proposals successfully passed through the Legislative Council in 1994 despite opposition from Beijing. Bills giving effect to the proposals were passed on 24 February 1994 and 29 June 1994, despite Beijing's opposition and lobbying efforts.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 1994 Hong Kong electoral reform](https://en.wikipedia.org/wiki/1994_Hong_Kong_electoral_reform)
 
-**Still needed:** Sources specifically addressing Chris Patten's 1992 constitutional reform proposals are required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [The last governor: Chris Patten & the handover of Hong Kong](https://openlibrary.org/isbn/0316640182) (ISBN)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,7 +4,7 @@ title_zh: "第一屆香港工業博覽會"
 date: 1930-01-01
 year: 1930
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1930", "ai-draft", "colonial-era", "economic-history", "interwar", "interwar-period", "manufacturing", "trade-promotion"]
+tags: ["photo-corroborated", "1930", "ai-draft", "colonial-era", "economic-history", "interwar", "interwar-period", "manufacturing", "trade-promotion"]
 summary: "Held in 1930, the First Hong Kong Industrial Exhibition served as a pivotal moment in the transition of the colonial economy from a pure entrepôt to a site of domestic manufacturing."
 description: "Held in 1930, the First Hong Kong Industrial Exhibition served as a pivotal moment in the transition of the colonial economy from a pure entrepôt to a site of domestic manufacturing."
 confidence: ai-draft
@@ -40,5 +40,13 @@ Historians generally regard this exhibition as the foundational step in Hong Kon
 - ❔ Confirm the exact dates of the 1930 exhibition venue usage at the City Hall.
 - ❔ Verify the extent of formal involvement by the colonial government in the 1930 event planning.
 - ❔ Confirm the formal name of the organizing body in 1930 versus later iterations of the CMA.
+
+## Photos from this period
+
+![A 1967 newspaper clipping reporting on the 25th anniversary of the Hong Kong Industrial Products Exhibition.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ching_Wah_Street_bombing_and_25th_anniversary_of_the_Hong_Kong_Industrial_Products_Exhibition_ks1967-08-24_p6.jpg/960px-Ching_Wah_Street_bombing_and_25th_anniversary_of_the_Hong_Kong_Industrial_Products_Exhibition_ks1967-08-24_p6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A 1967 newspaper clipping reporting on the 25th anniversary of the Hong Kong Industrial Products Exhibition.* (document). 工商日報（Kung Sheung Daily News）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ching_Wah_Street_bombing_and_25th_anniversary_of_the_Hong_Kong_Industrial_Products_Exhibition_ks1967-08-24_p6.jpg).
+Corroborates: It corroborates the historical continuity and expansion of the industrial exhibition mentioned on the page.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

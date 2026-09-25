@@ -4,10 +4,11 @@ title_zh: "第五波疫情重創香港"
 date: 2022-01-01
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "ai-draft", "covid-19", "healthcare-crisis", "national-security-era", "omicron", "public-health"]
+tags: ["evidence-b", "2022", "ai-draft", "covid-19", "healthcare-crisis", "national-security-era", "omicron", "public-health"]
 summary: "In early 2022, Hong Kong experienced its most severe wave of the COVID-19 pandemic, overwhelming the healthcare system, leading to high mortality rates particularly among the elderly, and prompting stringent social distancing and lockdown measures."
 description: "In early 2022, Hong Kong experienced its most severe wave of the COVID-19 pandemic, overwhelming the healthcare system, leading to high mortality rates particularly among the elderly, and prompting stringent social…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,19 @@ The fifth wave marked a critical turning point in Hong Kong's pandemic response.
 
 - ❔ Exact peak daily case numbers and death tolls recorded during February and March 2022
 - ❔ Specific timelines and operational capacity of mainland Chinese medical assistance teams deployed to Hong Kong
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Talha Khan Burki (2022). *Hong Kong's fifth COVID-19 wave—the worst yet*. The Lancet Infectious Diseases.](https://doi.org/10.1016/s1473-3099(22)00167-0): Directly addresses the fifth COVID-19 wave in Hong Kong and its severity.
+- [Shuk‐Ching Wong, Albert Ka-Wing Au, Janice Lo (2022). *Evolution and Control of COVID-19 Epidemic in Hong Kong*. Viruses.](https://doi.org/10.3390/v14112519): Discusses the evolution and control of the epidemic in Hong Kong during 2022.
+- [Hsiang‐Yu Yuan, Colin B. Blakemore (2022). *The impact of contact tracing and testing on controlling COVID-19 outbreak without lockdown in Hong Kong: An observational study*. The Lancet Regional Health - Western Pacific.](https://doi.org/10.1016/j.lanwpc.2021.100374): Discusses how rapid case growth overloaded tracing and testing capacity in Hong Kong.
+
+**Still needed:** Evidence specifically documenting the situation as of the exact date of January 1, 2022.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

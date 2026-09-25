@@ -4,7 +4,7 @@ title_zh: "廉政公署的成立"
 date: 1974-02-15
 year: 1974
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-b", "1974", "ai-draft", "icac", "maclehose-reforms", "police-corruption", "riots-and-reform", "rule-of-law"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "1974", "ai-draft", "icac", "maclehose-reforms", "police-corruption", "riots-and-reform", "rule-of-law"]
 summary: "In response to widespread public frustration over rampant corruption, Governor Murray MacLehose established the Independent Commission Against Corruption on February 15, 1974, fundamentally transforming Hong Kong's governance and public administration."
 description: "In response to widespread public frustration over rampant corruption, Governor Murray MacLehose established the Independent Commission Against Corruption on February 15, 1974, fundamentally transforming Hong Kong's…"
 confidence: ai-draft
@@ -36,24 +36,16 @@ The creation of the ICAC marked a watershed moment in Hong Kong's institutional 
 - [[02_Entities/People/peter-godber|Peter Godber (葛柏)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Independent Commission Against Corruption was officially established on February 15, 1974.
-- ❔ Peter Godber's flight from Hong Kong in 1973 served as the direct catalyst for the creation of the ICAC.
-- ❔ The ICAC operates independently of the civil service and reports directly to the Governor.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The Independent Commission Against Corruption was officially established on February 15, 1974. The text states the ICAC was established on 15 February 1974.
+- ✅ **agrees with Wikipedia**: Peter Godber's flight from Hong Kong in 1973 served as the direct catalyst for the creation of the ICAC. The text mentions the ICAC was established after Godber's escape in 1973, which led to a public outcry and called for reforms in anti-corruption efforts.
+- ⚠️ **differs from Wikipedia**: The ICAC operates independently of the civil service and reports directly to the Governor. The text states that the ICAC reports directly to the Chief Executive of Hong Kong.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Independent Commission Against Corruption (Hong Kong)](https://en.wikipedia.org/wiki/Independent_Commission_Against_Corruption_%28Hong_Kong%29)
 
-### Scholarship (grade B)
-
-- [M. David Ermann, H. J. Lethbridge (1987). *Hard Graft in Hong Kong: Scandal, Corruption, the ICAC.*. Contemporary Sociology A Journal of Reviews.](https://doi.org/10.2307/2069929) (claims 1): Discusses the establishment of the ICAC in 1974.
-- [Ray Yep (2013). *The crusade against corruption in Hong Kong in the 1970s: Governor MacLehose as a zealous reformer or reluctant hero?*. China Information.](https://doi.org/10.1177/0920203x13482244) (claims 1): Discusses the creation of the ICAC in February 1974.
-- [Shaomin Li (2004). *Can China learn from Hong Kong's experience in fighting corruption?1*. Global Economic Review.](https://doi.org/10.1080/12265080408449838) (claims 1): Discusses the establishment of the ICAC.
-
-**Still needed:** Evidence confirming the specific day of the establishment (February 15, 1974).
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

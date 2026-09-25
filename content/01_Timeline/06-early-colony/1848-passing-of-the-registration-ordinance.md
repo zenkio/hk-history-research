@@ -4,10 +4,11 @@ title_zh: "人口登記條例"
 date: 1848-01-01
 year: 1848
 era: "The early colony"
-tags: ["1848", "19th-century", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "migration", "registration-ordinance", "social-control"]
+tags: ["evidence-none", "1848", "19th-century", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "migration", "registration-ordinance", "social-control"]
 summary: "In 1848, the British colonial government enacted the Registration Ordinance, a legislative measure requiring all Chinese inhabitants of Hong Kong to register, underscoring the complexities of governing a transient population."
 description: "In 1848, the British colonial government enacted the Registration Ordinance, a legislative measure requiring all Chinese inhabitants of Hong Kong to register, underscoring the complexities of governing a transient…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The Registration Ordinance remains a pivotal moment in the history of Hong Kong'
 - ❔ The specific month and date of the ordinance's initial enactment in 1848.
 - ❔ The degree to which the Ordinance was effectively enforced versus how often it was ignored by the migrant population.
 - ❔ The extent of organized protest led by the local merchant class against the 1848 measure.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence such as government gazettes, legislative council records, or contemporary historical scholarship from or about 1848 confirming the enactment of the Registration Ordinance is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

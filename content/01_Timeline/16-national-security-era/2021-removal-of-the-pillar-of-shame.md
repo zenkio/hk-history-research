@@ -4,10 +4,11 @@ title_zh: "移除國殤之柱"
 date: 2021-12-22
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "censorship", "freedom-of-expression", "national-security-era", "national-security-law", "pillar-of-shame", "tiananmen-square", "university-of-hong-kong"]
+tags: ["evidence-none", "2021", "ai-draft", "censorship", "freedom-of-expression", "national-security-era", "national-security-law", "pillar-of-shame", "tiananmen-square", "university-of-hong-kong"]
 summary: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes under the National Security Law."
 description: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The removal of the Pillar of Shame marked a significant turning point in Hong Ko
 
 - ❔ The exact legal justifications provided by the University of Hong Kong council for the removal.
 - ❔ The current physical location and preservation status of the dismantled sculpture components.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the event of the Pillar of Shame's removal on December 22, 2021, are needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

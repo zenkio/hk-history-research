@@ -4,10 +4,11 @@ title_zh: "北京主導選舉制度改革"
 date: 2021-03-11
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "election-committee", "electoral-reform", "legislative-council", "national-security-era", "national-security-law", "patriots-governing-hong-kong"]
+tags: ["evidence-b", "2021", "ai-draft", "election-committee", "electoral-reform", "legislative-council", "national-security-era", "national-security-law", "patriots-governing-hong-kong"]
 summary: "On March 11, 2021, China's National People's Congress approved sweeping changes to Hong Kong's electoral system to ensure that only 'patriots' govern the territory, significantly reducing directly elected seats."
 description: "On March 11, 2021, China's National People's Congress approved sweeping changes to Hong Kong's electoral system to ensure that only 'patriots' govern the territory, significantly reducing directly elected seats."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ This legislative restructuring marked a profound turning point in Hong Kong's po
 
 - ❔ The National People's Congress passed the Decision on Improving the Electoral System of the Hong Kong Special Administrative Region on March 11, 2021.
 - ❔ The total number of seats in the Legislative Council was increased from 70 to 90 under the new system.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Stan Hok-Wui Wong (2025). *Does Camp Identification Still Matter in Hong Kong after the 2021 Electoral Reform?*.](https://doi.org/10.4324/9781003564898-8): Directly discusses the 2021 electoral reform and the redesign of the city's electoral rules.
+
+**Still needed:** Specific documentation detailing the legal changes and implementation of the overhaul on March 11, 2021.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -4,10 +4,11 @@ title_zh: "《蘋果日報》被迫停刊"
 date: 2021-06-24
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "apple-daily", "media-history", "national-security-era", "national-security-law", "press-freedom"]
+tags: ["evidence-none", "2021", "ai-draft", "apple-daily", "media-history", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in Hong Kong."
 description: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The cessation of *Apple Daily* is widely regarded by observers as a watershed mo
 
 - ❔ Apple Daily published its final edition on June 24, 2021, after corporate assets were frozen by authorities.
 - ❔ Next Digital and Apple Daily executives were arrested under the National Security Law in June 2021.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the forced closure of Apple Daily on June 24, 2021, is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -2,8 +2,8 @@
   "day": "2026-09-25",
   "used": {
     "OpenRouter Qwen": 50,
-    "Gemma 4 31B": 169,
-    "Gemma 4 26B": 152,
+    "Gemma 4 31B": 242,
+    "Gemma 4 26B": 226,
     "Gemini 3.1 Flash Lite": 4
   },
   "parked": {},
@@ -20,7 +20,7 @@
     "Gemma 4 31B": "gemma-4-31b-it",
     "Gemma 4 26B": "gemma-4-26b-a4b-it",
     "OpenRouter Qwen": "qwen/qwen3.8-27b:free",
-    "OpenRouter DeepSeek": "z-ai/glm-5.2:free"
+    "OpenRouter DeepSeek": null
   },
   "available": [
     "gemini-2.5-computer-use-preview-10-2025",
@@ -74,7 +74,6 @@
     "nvidia/nemotron-3-super-120b-a12b:free",
     "cohere/north-mini-code:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-    "z-ai/glm-5.2:free",
     "nvidia/nemotron-3.5-content-safety:free",
     "liquid/lfm-2.5-2.6b:free"
   ],

@@ -4,7 +4,7 @@ title_zh: "支援北京學生運動大型集會"
 date: 1989-05-21
 year: 1989
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1989", "ai-draft", "emigration", "hong-kong-history", "protests", "sino-british-transition", "tiananmen-square", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1989", "ai-draft", "emigration", "hong-kong-history", "protests", "sino-british-transition", "tiananmen-square", "transition"]
 summary: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square. This massive mobilization fundamentally altered local political consciousness and deepened public anxiety regarding the impending 1997 sovereignty transfer."
 description: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square."
 confidence: ai-draft
@@ -39,17 +39,17 @@ The events of **May 1989** marked a watershed moment in modern Hong Kong history
 - [[02_Entities/Places/tiananmen-square|Tiananmen Square (天安門廣場)]]
 - [[02_Entities/Places/victoria-park|Victoria Park (維多利亞公園)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify contemporary estimates of the crowd size for the May 21, 1989 march in Hong Kong.
-- ❔ Examine official colonial government assessments of public order and security during the mobilization.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Verify contemporary estimates of the crowd size for the May 21, 1989 march in Hong Kong. The reference text does not mention a march in Hong Kong on May 21, 1989, or any crowd size estimates for such an event.
+- ❔ **not in Wikipedia**: Examine official colonial government assessments of public order and security during the mobilization. The reference text does not contain official colonial government assessments regarding public order and security during the 1989 mobilization.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 1989 Tiananmen Square protests and massacre](https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre), [Wikipedia: 20th anniversary of the 1989 Tiananmen Square protests and massacre](https://en.wikipedia.org/wiki/20th_anniversary_of_the_1989_Tiananmen_Square_protests_and_massacre)
 
-**Still needed:** Evidence specifically documenting the scale, dates, and participation of the mass rallies held in Hong Kong in support of the Tiananmen Square protests in May 1989.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Generational Differences in the Impact of Historical Events: The Tiananmen Square Incident in Contemporary Hong Kong Public Opinion](https://doi.org/10.1093/ijpor/edr042) (DOI)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

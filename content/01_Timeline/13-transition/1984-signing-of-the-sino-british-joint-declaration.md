@@ -4,7 +4,7 @@ title_zh: "中英聯合聲明簽署"
 date: 1984-12-19
 year: 1984
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1984", "ai-draft", "diplomacy", "one-country-two-systems", "sino-british-joint-declaration", "sovereignty", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1984", "ai-draft", "diplomacy", "one-country-two-systems", "sino-british-joint-declaration", "sovereignty", "transition"]
 summary: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
 description: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
 confidence: ai-draft
@@ -46,17 +46,17 @@ The Joint Declaration was a landmark international treaty registered with the Un
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact wording of the autonomy provisions agreed upon in the Joint Declaration annexes
-- ❔ The specific nature of local consultation conducted by the British administration prior to the signing
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact wording of the autonomy provisions agreed upon in the Joint Declaration annexes. The text mentions that the main text refers to an autonomous special administrative region and that Annex I elaborates basic policies, but it does not provide the exact wording from the annexes.
+- ✅ **agrees with Wikipedia**: The specific nature of local consultation conducted by the British administration prior to the signing. The text states that talks were conducted without meaningful input, noting the rejection of a referendum and the unsuccessful petitions from Unofficial Members of the Executive and Legislative Councils.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Sino-British Joint Declaration](https://en.wikipedia.org/wiki/Sino-British_Joint_Declaration)
 
-**Still needed:** Evidence specifically detailing the signing of the Sino-British Joint Declaration in 1984, such as the signatories, the venue, the date, and the content of the agreement, is required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Reassessing Thatcher's foreign policy: The Sino-British Declaration 1984](https://doi.org/10.1177/13691481231190502) (DOI)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,7 +4,7 @@ title_zh: "黑色星期一股市崩盤"
 date: 1987-10-19
 year: 1987
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-b", "1987", "ai-draft", "black-monday", "financial-regulation", "hong-kong-stock-exchange", "sino-british-transition", "transition"]
+tags: ["wikipedia-checked", "evidence-b", "1987", "ai-draft", "black-monday", "financial-regulation", "hong-kong-stock-exchange", "sino-british-transition", "transition"]
 summary: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial financial sector."
 description: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial…"
 confidence: ai-draft
@@ -41,21 +41,15 @@ The crisis exposed critical flaws in Hong Kong's financial self-regulation. In r
 - [[02_Entities/People/ian-hay-davison|Ian Hay Davison (戴維森)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact percentage drop of the Hang Seng Index upon reopening on October 26, 1987
-- ❔ The precise mechanics and emergency loans mobilized by the government and the Exchange Banks' Association during the four-day closure
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact percentage drop of the Hang Seng Index upon reopening on October 26, 1987. The text states Hong Kong had a drop of 45.8% in October 1987, but it does not mention October 26 or the index reopening.
+- ❔ **not in Wikipedia**: The precise mechanics and emergency loans mobilized by the government and the Exchange Banks' Association during the four-day closure. The reference text does not mention emergency loans, the Exchange Banks' Association, or a four-day closure.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Stock market crash](https://en.wikipedia.org/wiki/Stock_market_crash), [Wikipedia: 1973–1974 stock market crash](https://en.wikipedia.org/wiki/1973%E2%80%931974_stock_market_crash)
 
-### Scholarship (grade B)
-
-- [Gerald P. Jr. Dwyer, Rik W. Hafer (1988). *Are National Stock Markets Linked?*.](https://doi.org/10.20955/r.70.3-14.xtk): This 1988 study examines stock market connections during the period surrounding the 1987 crash.
-
-**Still needed:** Specific evidence regarding the impact and details of the 1987 Black Monday crash on the Hong Kong stock market.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

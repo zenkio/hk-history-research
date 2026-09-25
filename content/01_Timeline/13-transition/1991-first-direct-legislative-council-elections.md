@@ -4,7 +4,7 @@ title_zh: "立法局首次直接選舉"
 date: 1991-09-15
 year: 1991
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-b", "1991", "ai-draft", "direct-elections", "legislative-council", "pro-democracy", "sino-british-joint-declaration", "transition", "transition-era"]
+tags: ["wikipedia-checked", "evidence-b", "1991", "ai-draft", "direct-elections", "legislative-council", "pro-democracy", "sino-british-joint-declaration", "transition", "transition-era"]
 summary: "On September 15, 1991, Hong Kong held its first direct elections to the Legislative Council, marking a significant milestone in the territory's political development during the transitional period."
 description: "On September 15, 1991, Hong Kong held its first direct elections to the Legislative Council, marking a significant milestone in the territory's political development during the transitional period."
 confidence: ai-draft
@@ -40,21 +40,15 @@ This election represented a watershed moment, introducing direct democratic repr
 - [[02_Entities/People/szeto-wah|Szeto Wah (司徒華)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Pro-democracy candidates won 16 out of the 18 directly elected geographical seats in the 1991 Legislative Council election.
-- ❔ Voter turnout was affected by severe weather on September 15, 1991.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Pro-democracy candidates won 16 out of the 18 directly elected geographical seats in the 1991 Legislative Council election. The text states that 18 members were returned from geographical constituencies in 1991, but it does not specify how many pro-democracy candidates won.
+- ❔ **not in Wikipedia**: Voter turnout was affected by severe weather on September 15, 1991. The reference text does not mention voter turnout or weather conditions for the 1991 election.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Elections in Hong Kong](https://en.wikipedia.org/wiki/Elections_in_Hong_Kong), [Wikipedia: 2025 Hong Kong legislative election](https://en.wikipedia.org/wiki/2025_Hong_Kong_legislative_election)
 
-### Scholarship (grade B)
-
-- [Chung Fun Steven Hung (2016). *Reviewing and Evaluating the Direct Elections to the Legislative Council and the Transformation of Political Parties in Hong Kong, 1991-2016*. 美中公共管理.](https://doi.org/10.17265/1548-6591/2016.08.001) (claims 1): The paper evaluates the history and transformation of direct elections to the Legislative Council, covering the period from 1991 to 2016.
-
-**Still needed:** Specific details regarding the 1991 election, such as the list of candidates, voter turnout, or the official results.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

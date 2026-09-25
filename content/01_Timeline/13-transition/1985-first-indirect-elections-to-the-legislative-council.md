@@ -4,7 +4,7 @@ title_zh: "立法局首次間接選舉"
 date: 1985-09-26
 year: 1985
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1985", "ai-draft", "functional-constituencies", "indirect-elections", "legislative-council", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["wikipedia-checked", "evidence-none", "1985", "ai-draft", "functional-constituencies", "indirect-elections", "legislative-council", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation during the transitional period."
 description: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ This electoral milestone fundamentally altered Hong Kong's political landscape b
 - [[02_Entities/People/edward-youde|Edward Youde (尤德)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of functional constituency and electoral college seats contested in the September 26, 1985 Legislative Council elections.
-- ❔ The voter turnout statistics and composition of the electoral college for the 1985 elections.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact number of functional constituency and electoral college seats contested in the September 26, 1985 Legislative Council elections. The text states that 24 unofficial members were elected in September 1985 but does not specify the number of seats per constituency type.
+- ❔ **not in Wikipedia**: The voter turnout statistics and composition of the electoral college for the 1985 elections. While the text describes the composition of the electoral college, it does not provide voter turnout statistics for the 1985 elections.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 2025 Hong Kong legislative election](https://en.wikipedia.org/wiki/2025_Hong_Kong_legislative_election), [Wikipedia: Elections in Hong Kong](https://en.wikipedia.org/wiki/Elections_in_Hong_Kong)
 
-**Still needed:** Specific historical documentation or scholarly accounts regarding the 1985 indirect elections to the Legislative Council, including the electoral process and participants.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

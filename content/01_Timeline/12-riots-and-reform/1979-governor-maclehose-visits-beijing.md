@@ -4,7 +4,7 @@ title_zh: "麥理浩港督訪問北京"
 date: 1979-03-29
 year: 1979
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1979", "1997", "ai-draft", "deng-xiaoping", "mac-lehose", "riots-and-reform", "sino-british-relations", "sovereignty"]
+tags: ["wikipedia-checked", "evidence-none", "1979", "1997", "ai-draft", "deng-xiaoping", "mac-lehose", "riots-and-reform", "sino-british-relations", "sovereignty"]
 summary: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's sovereignty after 1997."
 description: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's…"
 confidence: ai-draft
@@ -38,18 +38,16 @@ This visit transformed the Hong Kong question from a localized administrative ma
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Murray MacLehose's visit to Beijing took place on March 29, 1979.
-- ❔ This was the first official visit by a sitting Hong Kong governor to the People's Republic of China.
-- ❔ Deng Xiaoping told investors to put their hearts at ease regarding their investments in Hong Kong during these meetings.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Governor Murray MacLehose's visit to Beijing took place on March 29, 1979. The text states that MacLehose held talks with Deng Xiaoping in 1979, but it does not mention the specific date or the city of Beijing.
+- ✅ **agrees with Wikipedia**: This was the first official visit by a sitting Hong Kong governor to the People's Republic of China. The text states that MacLehose was the first Governor of Hong Kong to make an official visit to China since the founding of the People's Republic of China.
+- ✅ **agrees with Wikipedia**: Deng Xiaoping told investors to put their hearts at ease regarding their investments in Hong Kong during these meetings. The text states that MacLehose quoted Deng Xiaoping as "telling Hong Kong investors to rest assured".
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Murray MacLehose, Baron MacLehose of Beoch](https://en.wikipedia.org/wiki/Murray_MacLehose%2C_Baron_MacLehose_of_Beoch)
 
-**Still needed:** Evidence specifically documenting Governor MacLehose's visit to Beijing on March 29, 1979, is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

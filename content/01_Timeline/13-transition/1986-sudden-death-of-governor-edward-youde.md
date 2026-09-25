@@ -4,7 +4,7 @@ title_zh: "港督尤德爵士猝逝"
 date: 1986-12-05
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1986", "ai-draft", "governor-youde", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["wikipedia-checked", "evidence-none", "1986", "ai-draft", "governor-youde", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
 description: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
 confidence: ai-draft
@@ -41,17 +41,15 @@ Youde's death marked the first and only time a sitting Governor of Hong Kong die
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Edward Youde died in his sleep at the British Embassy in Beijing on December 5, 1986.
-- ❔ David Akers-Jones served as Acting Governor immediately following Youde's death.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Edward Youde died in his sleep at the British Embassy in Beijing on December 5, 1986. The text states that Governor Edward Youde died suddenly in 1986, but does not mention the specific date, location, or manner of death.
+- ❔ **not in Wikipedia**: David Akers-Jones served as Acting Governor immediately following Youde's death. The reference text does not mention David Akers-Jones or who served as acting governor.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Pamela Youde Nethersole Eastern Hospital](https://en.wikipedia.org/wiki/Pamela_Youde_Nethersole_Eastern_Hospital)
 
-**Still needed:** Sources specifically documenting the circumstances, cause, or official reports regarding the death of Governor Edward Youde on December 5, 1986, are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

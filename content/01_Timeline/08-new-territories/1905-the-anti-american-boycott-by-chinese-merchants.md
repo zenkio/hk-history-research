@@ -4,10 +4,11 @@ title_zh: "華商抵制美貨運動"
 date: 1905-01-01
 year: 1905
 era: "The New Territories lease and the early 20th century"
-tags: ["1905", "ai-draft", "anti-american-boycott", "chinese-exclusion-act", "colonial-history", "merchant-guilds", "new-territories"]
+tags: ["evidence-none", "1905", "ai-draft", "anti-american-boycott", "chinese-exclusion-act", "colonial-history", "merchant-guilds", "new-territories"]
 summary: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the local Chinese community."
 description: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The **1905** anti-American boycott marked a watershed moment in the political aw
 
 - ❔ The precise extent of financial losses suffered by American import businesses in Hong Kong during the 1905 boycott.
 - ❔ The degree of direct involvement or tacit approval by the Qing government regarding the Hong Kong merchant operations.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Anti-American Boycott by Chinese Merchants in 1905 is missing.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

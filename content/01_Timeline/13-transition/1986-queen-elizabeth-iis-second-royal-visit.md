@@ -4,7 +4,7 @@ title_zh: "伊利沙伯女王第二次訪港"
 date: 1986-10-21
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1986", "ai-draft", "british-colony", "royal-visit", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["wikipedia-checked", "evidence-none", "1986", "ai-draft", "british-colony", "royal-visit", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate continued British commitment."
 description: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate…"
 confidence: ai-draft
@@ -42,17 +42,21 @@ The visit held deep symbolic value, though its exact impact remains a subject of
 - [[02_Entities/Places/sha-tin|Sha Tin (沙田)]]
 - [[02_Entities/Places/jubilee-sports-centre|Jubilee Sports Centre (銀禧體育中心)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Queen Elizabeth II arrived in Hong Kong on October 21, 1986.
-- ❔ The itinerary included visits to Sha Tin and the Jubilee Sports Centre.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Queen Elizabeth II arrived in Hong Kong on October 21, 1986. The text mentions a 1986 state visit to the People's Republic of China but does not mention a visit to Hong Kong or a specific arrival date.
+- ❔ **not in Wikipedia**: The itinerary included visits to Sha Tin and the Jubilee Sports Centre. The text does not mention Sha Tin or the Jubilee Sports Centre.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Elizabeth II](https://en.wikipedia.org/wiki/Elizabeth_II)
 
-**Still needed:** Evidence specifically documenting or detailing Queen Elizabeth II's second royal visit to Hong Kong in October 1986 is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Her Majesty Queen Elizabeth&nbsp;II: Platinum Jubilee Celebration: 70 Years: 1952–2022](https://openlibrary.org/isbn/9781841659398) (ISBN)
+- ✓ [Elizabeth the Queen: The Woman Behind the Throne](https://openlibrary.org/isbn/9781405932165) (ISBN)
+- ✓ [Elizabeth: A Biography of Her Majesty the Queen](https://openlibrary.org/isbn/9780141933337) (ISBN)
+- ✓ [Queen Elizabeth&nbsp;II: Her Life in Our Times](https://openlibrary.org/isbn/9780670919116) (ISBN)
+- ✓ [Royal: Her Majesty Queen Elizabeth&nbsp;II](https://openlibrary.org/isbn/0316859400) (ISBN)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

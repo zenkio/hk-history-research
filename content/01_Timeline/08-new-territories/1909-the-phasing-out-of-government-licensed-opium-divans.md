@@ -4,10 +4,11 @@ title_zh: "取締政府轄下合法鴉片煙館"
 date: 1909-03-01
 year: 1909
 era: "The New Territories lease and the early 20th century"
-tags: ["1909", "ai-draft", "colonial-history", "early-20th-century", "law-enforcement", "new-territories", "opium-trade", "public-finance"]
+tags: ["evidence-none", "1909", "ai-draft", "colonial-history", "early-20th-century", "law-enforcement", "new-territories", "opium-trade", "public-finance"]
 summary: "In March 1909, following intense pressure from the British imperial government and rising domestic anti-opium sentiment, Hong Kong initiated the closure of its government-licensed opium dens, beginning a difficult fiscal transition away from the colony's heavy reliance on the opium trade."
 description: "In March 1909, following intense pressure from the British imperial government and rising domestic anti-opium sentiment, Hong Kong initiated the closure of its government-licensed opium dens, beginning a difficult…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The closure of the licensed divans marked a pivotal moment in the economic and s
 
 - ❔ The exact date when the formal phasing out of government-licensed opium divans commenced in Hong Kong was March 1, 1909.
 - ❔ Opium monopolies provided a major percentage of Hong Kong's colonial government revenue prior to the 1909 restrictions.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the phasing out of government-licensed opium divans in Hong Kong around March 1, 1909, is needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

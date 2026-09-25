@@ -4,10 +4,11 @@ title_zh: "取消強制酒店檢疫"
 date: 2022-09-26
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "ai-draft", "aviation", "covid-19", "economic-reopening", "john-lee", "national-security-era", "public-health"]
+tags: ["evidence-none", "2022", "ai-draft", "aviation", "covid-19", "economic-reopening", "john-lee", "national-security-era", "public-health"]
 summary: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of its economic reopening."
 description: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The implementation of the '0+3' scheme represented a pivotal psychological and l
 
 - ❔ Mandatory hotel quarantine was replaced by the '0+3' scheme on September 26, 2022.
 - ❔ Chief Executive John Lee announced the policy change on September 24, 2022.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific news reports or official government announcements regarding Hong Kong's decision to scrap mandatory hotel quarantine in September 2022 are needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

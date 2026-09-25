@@ -4,7 +4,7 @@ title_zh: "市區重建局成立"
 date: 2001-05-01
 year: 2001
 era: "The early HKSAR"
-tags: ["2001", "ai-draft", "early-hksar", "heritage-conservation", "hksar-history", "redevelopment", "urban-planning", "urban-renewal"]
+tags: ["photo-corroborated", "2001", "ai-draft", "early-hksar", "heritage-conservation", "hksar-history", "redevelopment", "urban-planning", "urban-renewal"]
 summary: "On May 1, 2001, the Urban Renewal Authority (URA) replaced the Land Development Corporation, marking a strategic shift in Hong Kong’s approach to urban regeneration."
 description: "On May 1, 2001, the Urban Renewal Authority (URA) replaced the Land Development Corporation, marking a strategic shift in Hong Kong’s approach to urban regeneration."
 confidence: ai-draft
@@ -40,5 +40,13 @@ The creation of the URA represented a move toward a more interventionist state a
 - ❔ The exact statutory differences in land resumption powers between the Land Development Corporation and the Urban Renewal Authority.
 - ❔ The full list of initial urban renewal projects initiated between 2001 and 2003.
 - ❔ The specific financial reporting requirements placed upon the URA at its inception.
+
+## Photos from this period
+
+![The entrance to an Urban Renewal Authority (URA) district office branch in Gutzlaff Street, Central.](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/HK_Central_%E5%90%89%E5%A3%AB%E7%AC%A0%E8%A1%97_Gutzlaff_Street_URA_%E5%B8%82%E5%BB%BA%E5%B1%80_Urban_Renewal_Authority_%E8%81%96%E9%9B%85%E5%90%84%E7%A6%8F%E7%BE%A4%E6%9C%83_St_James%27_Settlement.jpg/960px-HK_Central_%E5%90%89%E5%A3%AB%E7%AC%A0%E8%A1%97_Gutzlaff_Street_URA_%E5%B8%82%E5%BB%BA%E5%B1%80_Urban_Renewal_Authority_%E8%81%96%E9%9B%85%E5%90%84%E7%A6%8F%E7%BE%A4%E6%9C%83_St_James%27_Settlement.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The entrance to an Urban Renewal Authority (URA) district office branch in Gutzlaff Street, Central.* (contemporary photo). Womeodemen, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_Central_%E5%90%89%E5%A3%AB%E7%AC%A0%E8%A1%97_Gutzlaff_Street_URA_%E5%B8%82%E5%BB%BA%E5%B1%80_Urban_Renewal_Authority_%E8%81%96%E9%9B%85%E5%90%84%E7%A6%8F%E7%BE%A4%E6%9C%83_St_James%27_Settlement.jpg).
+Corroborates: It provides a visual representation of the Urban Renewal Authority and its community service teams in Hong Kong.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

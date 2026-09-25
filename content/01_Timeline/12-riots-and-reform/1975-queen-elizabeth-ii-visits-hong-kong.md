@@ -4,7 +4,7 @@ title_zh: "英國女王伊麗莎白二世訪港"
 date: 1975-05-04
 year: 1975
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "photo-corroborated", "1975", "ai-draft", "civic-pride", "colonial-history", "maclehose-era", "riots-and-reform", "royal-visit"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1975", "ai-draft", "civic-pride", "colonial-history", "maclehose-era", "riots-and-reform", "royal-visit"]
 summary: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations. The highly publicized four-day tour generated widespread civic pageantry while also prompting varied interpretations across local and international political spectrums."
 description: "In May 1975, Queen Elizabeth II became the first reigning British monarch to visit Hong Kong, marking a milestone in colonial governance and public relations."
 confidence: ai-draft
@@ -41,26 +41,22 @@ The visit is often remembered as a high-water mark of colonial civic engagement,
 - [[02_Entities/Places/kwun-tong|Kwun Tong (觀塘)]]
 - [[02_Entities/Places/queen-elizabeth-hospital|Queen Elizabeth Hospital (伊利沙伯醫院)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Queen Elizabeth II arrived in Hong Kong on May 4, 1975.
-- ❔ The royal itinerary included visits to Choi Hung Estate, Kwun Tong, and Queen Elizabeth Hospital.
-- ❔ The visit represented the first time a reigning British monarch visited the territory.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Queen Elizabeth II arrived in Hong Kong on May 4, 1975. The reference text does not mention a visit to Hong Kong in 1975.
+- ❔ **not in Wikipedia**: The royal itinerary included visits to Choi Hung Estate, Kwun Tong, and Queen Elizabeth Hospital. The reference text does not mention these specific locations.
+- ❔ **not in Wikipedia**: The visit represented the first time a reigning British monarch visited the territory. The reference text does not mention if this was the first time a reigning monarch visited Hong Kong.
 
-![A modern view of Oi Man Estate in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/An_old_public_housing_estate_in_a_sunny_day.jpg/960px-An_old_public_housing_estate_in_a_sunny_day.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Elizabeth II](https://en.wikipedia.org/wiki/Elizabeth_II)
 
-*A modern view of Oi Man Estate in Hong Kong.* (later photo of the site). Rex4712, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:An_old_public_housing_estate_in_a_sunny_day.jpg).
-Corroborates: The estate is identified as a location visited by Queen Elizabeth II during her 1975 tour.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence regarding the specific royal visit of Queen Elizabeth II to Hong Kong on May 4, 1975, such as contemporary news reports or official records from that date.
-
+- ✓ [Royal: Her Majesty Queen Elizabeth&nbsp;II](https://openlibrary.org/isbn/0316859400) (ISBN)
+- ✓ [Elizabeth the Queen: The Woman Behind the Throne](https://openlibrary.org/isbn/9781405932165) (ISBN)
+- ✓ [Elizabeth: A Biography of Her Majesty the Queen](https://openlibrary.org/isbn/9780141933337) (ISBN)
+- ✓ [Queen Elizabeth&nbsp;II: Her Life in Our Times](https://openlibrary.org/isbn/9780670919116) (ISBN)
+- ✓ [Her Majesty Queen Elizabeth&nbsp;II: Platinum Jubilee Celebration: 70 Years: 1952–2022](https://openlibrary.org/isbn/9781841659398) (ISBN)
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

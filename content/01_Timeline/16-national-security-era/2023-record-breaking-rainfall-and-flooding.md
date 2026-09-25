@@ -4,10 +4,11 @@ title_zh: "世紀暴雨與水浸"
 date: 2023-09-07
 year: 2023
 era: "The National Security Law era"
-tags: ["2023", "ai-draft", "climate-change", "extreme-weather", "flooding", "infrastructure", "national-security-era", "typhoon-haikui"]
+tags: ["evidence-none", "2023", "ai-draft", "climate-change", "extreme-weather", "flooding", "infrastructure", "national-security-era", "typhoon-haikui"]
 summary: "On **September 7, 2023**, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui. The unprecedented downpour caused widespread urban flooding, transport paralysis, and infrastructure damage across the territory."
 description: "On September 7, 2023, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The event severely tested the resilience of Hong Kong's civil infrastructure and
 
 - ❔ Did the Hong Kong Observatory officially record 158.1 millimeters of rain between 11:00 PM and midnight on September 7, 2023?
 - ❔ Were all financial markets completely suspended during the extreme conditions period?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the specific rainfall intensity, flood extent, and impact of the September 7, 2023, event in Hong Kong is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

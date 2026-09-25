@@ -4,10 +4,11 @@ title_zh: "首次土地拍賣與公共發展"
 date: 1859-01-01
 year: 1859
 era: "The early colony"
-tags: ["1859", "ai-draft", "colonial-history", "early-colony", "economic-history", "hong-kong-government", "land-policy", "public-finance"]
+tags: ["evidence-none", "1859", "ai-draft", "colonial-history", "early-colony", "economic-history", "hong-kong-government", "land-policy", "public-finance"]
 summary: "In 1859, the colonial government formalized the systematic auctioning of Crown land, setting a precedent that would dictate the economic structure of Hong Kong for over a century."
 description: "In 1859, the colonial government formalized the systematic auctioning of Crown land, setting a precedent that would dictate the economic structure of Hong Kong for over a century."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ This institutional shift established the 'high land price' policy. By auctioning
 - ❔ The exact year the transition to systematic auction procedures was formalized as 1859.
 - ❔ The extent to which the 1859 auctions were driven by Sir Hercules Robinson's specific fiscal directives.
 - ❔ The claim that current land-revenue reliance is a direct, unbroken institutional descendant of these specific 1859 auctions.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specific to the history of land auctions in Hong Kong around 1859 is required.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

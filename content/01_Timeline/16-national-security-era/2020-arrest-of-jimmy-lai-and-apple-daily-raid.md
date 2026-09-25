@@ -4,10 +4,11 @@ title_zh: "黎智英被捕與蘋果日報搜查"
 date: 2020-08-10
 year: 2020
 era: "The National Security Law era"
-tags: ["2020", "ai-draft", "apple-daily", "jimmy-lai", "media-censorship", "national-security-era", "national-security-law", "press-freedom"]
+tags: ["evidence-none", "2020", "ai-draft", "apple-daily", "jimmy-lai", "media-censorship", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom. This event marked a profound turning point for press freedom and civil liberties in the territory."
 description: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The raid and subsequent arrests were widely interpreted as a watershed moment fo
 
 - ❔ Over 200 police officers participated in the August 10, 2020 raid on Apple Daily.
 - ❔ Jimmy Lai was arrested on suspicion of colluding with foreign forces and conspiracy to defraud.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the arrest of Jimmy Lai and the raid on Apple Daily on August 10, 2020.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

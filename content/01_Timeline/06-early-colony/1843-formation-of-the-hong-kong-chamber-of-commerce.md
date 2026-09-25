@@ -4,10 +4,11 @@ title_zh: "香港總商會之成立"
 date: 1843-01-01
 year: 1843
 era: "The early colony"
-tags: ["1843", "ai-draft", "british-empire", "colonial-history", "early-colony", "economic-development", "merchant-history", "trade-policy"]
+tags: ["evidence-none", "1843", "ai-draft", "british-empire", "colonial-history", "early-colony", "economic-development", "merchant-history", "trade-policy"]
 summary: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
 description: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ While the Chamber’s early years focused on consolidating British mercantile co
 - ❔ The exact inaugural meeting date in 1843.
 - ❔ The full list of founding merchant houses excluding Chinese firms.
 - ❔ The specific legislative influence exerted by the Chamber in its first five years.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific founding, purpose, or early members of the Hong Kong Chamber of Commerce in 1843 is required.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

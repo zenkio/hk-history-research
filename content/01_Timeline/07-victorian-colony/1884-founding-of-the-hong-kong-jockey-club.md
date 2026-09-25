@@ -4,10 +4,11 @@ title_zh: "香港賽馬會成立"
 date: 1884-11-04
 year: 1884
 era: "Kowloon and the Victorian colony"
-tags: ["1884", "ai-draft", "colonial-history", "happy-valley", "hong-kong-jockey-club", "horse-racing", "victorian-colony", "victorian-era"]
+tags: ["evidence-none", "1884", "ai-draft", "colonial-history", "happy-valley", "hong-kong-jockey-club", "horse-racing", "victorian-colony", "victorian-era"]
 summary: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
 description: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ Over time, the institution cemented horse racing as a permanent fixture of Hong 
 - ❔ The exact date of establishment as November 4, 1884, in primary club records
 - ❔ The original founding members and their exact corporate affiliations
 - ❔ The precise timeline of Chinese merchant admission to full club membership
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence or historical documents regarding the founding of the Hong Kong Jockey Club in 1884 are needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

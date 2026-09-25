@@ -4,10 +4,11 @@ title_zh: "MIRROR演唱會事故"
 date: 2022-07-28
 year: 2022
 era: "The National Security Law era"
-tags: ["photo-corroborated", "2022", "ai-draft", "concert-accident", "hong-kong-coliseum", "mirror", "national-security-era", "pop-culture", "stage-safety"]
+tags: ["evidence-none", "photo-corroborated", "2022", "ai-draft", "concert-accident", "hong-kong-coliseum", "mirror", "national-security-era", "pop-culture", "stage-safety"]
 summary: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety and labor conditions."
 description: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -55,6 +56,14 @@ Corroborates: It provides visual context for the concert venue and the scale of 
 
 *A large LED screen falls onto performers on stage during a Mirror concert at the Hong Kong Coliseum.* (contemporary photo). am730, CC BY 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_screen_hitting_dancer.jpg).
 Corroborates: The image provides a visual record of the accident described on the page, showing the falling screen and the stage setting.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the Mirror concert accident on July 28, 2022, is needed.
 
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

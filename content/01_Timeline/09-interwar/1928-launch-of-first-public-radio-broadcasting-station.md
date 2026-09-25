@@ -4,10 +4,11 @@ title_zh: "香港首個公共電台廣播服務啟播"
 date: 1928-06-30
 year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1928", "ai-draft", "colonial-history", "interwar", "mass-media", "radio-broadcasting", "rthk"]
+tags: ["evidence-none", "1928", "ai-draft", "colonial-history", "interwar", "mass-media", "radio-broadcasting", "rthk"]
 summary: "On June 30, 1928, the colonial government inaugurated Hong Kong's first public radio broadcasting station, laying the groundwork for modern electronic media and public broadcasting in the territory."
 description: "On June 30, 1928, the colonial government inaugurated Hong Kong's first public radio broadcasting station, laying the groundwork for modern electronic media and public broadcasting in the territory."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The launch of public radio represented a major milestone in Hong Kong's media hi
 
 - ❔ The exact launch date of station GOW as June 30, 1928
 - ❔ The initial callsign being GOW before transitioning to ZBW
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence verifying the launch of the first public radio broadcasting station in Hong Kong on June 30, 1928, is still needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

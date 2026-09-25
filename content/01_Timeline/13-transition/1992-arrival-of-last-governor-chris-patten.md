@@ -4,7 +4,7 @@ title_zh: "末任港督彭定康抵港"
 date: 1992-07-09
 year: 1992
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1992", "1997-handover", "ai-draft", "chris-patten", "colonial-history", "sino-british-joint-declaration", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1992", "1997-handover", "ai-draft", "chris-patten", "colonial-history", "sino-british-joint-declaration", "transition"]
 summary: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public engagement."
 description: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public…"
 confidence: ai-draft
@@ -43,17 +43,15 @@ Patten's arrival and subsequent tenure fundamentally transformed the political d
 - [[02_Entities/People/david-wilson|David Wilson (衛奕信)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Chris Patten arrived in Hong Kong and was sworn in on July 9, 1992.
-- ❔ Patten broke with tradition by refusing to wear the white plumed colonial governor's uniform.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Chris Patten arrived in Hong Kong and was sworn in on July 9, 1992. The text states he became governor in July 1992, but does not mention a specific arrival date or his swearing-in.
+- ❔ **not in Wikipedia**: Patten broke with tradition by refusing to wear the white plumed colonial governor's uniform. The text states he decided not to wear the official Court uniform, but does not describe it as white plumed.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chris Patten](https://en.wikipedia.org/wiki/Chris_Patten), [Wikipedia: Governor of Hong Kong](https://en.wikipedia.org/wiki/Governor_of_Hong_Kong)
 
-**Still needed:** Sources specifically documenting the arrival of Chris Patten on July 9, 1992, or details about his governorship are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

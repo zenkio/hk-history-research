@@ -4,10 +4,11 @@ title_zh: "第一所公共圖書館的成立"
 date: 1851-01-01
 year: 1851
 era: "The early colony"
-tags: ["1851", "ai-draft", "colonial-history", "cultural-development", "early-colony", "education-history", "nineteenth-century", "public-libraries", "victoria-city"]
+tags: ["evidence-none", "1851", "ai-draft", "colonial-history", "cultural-development", "early-colony", "education-history", "nineteenth-century", "public-libraries", "victoria-city"]
 summary: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
 description: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ Historians identify the establishment of this library as a symbolic turning poin
 - ❔ Verify the exact month of the library's opening in 1851 in primary government records.
 - ❔ Confirm the physical location of the 1851 library within the Victoria district.
 - ❔ Determine the primary language composition of the library's initial catalogue.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the opening of the first public library in Hong Kong in 1851 is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

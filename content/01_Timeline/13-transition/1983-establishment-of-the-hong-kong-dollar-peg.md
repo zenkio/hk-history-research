@@ -4,7 +4,7 @@ title_zh: "香港聯繫匯率制度的建立"
 date: 1983-10-17
 year: 1983
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1983", "ai-draft", "exchange-rate-peg", "financial-history", "hong-kong-dollar", "monetary-policy", "sino-british-negotiations", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1983", "ai-draft", "exchange-rate-peg", "financial-history", "hong-kong-dollar", "monetary-policy", "sino-british-negotiations", "transition"]
 summary: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
 description: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
 confidence: ai-draft
@@ -41,17 +41,15 @@ While initially conceived as an emergency measure to quell panic and curb inflat
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact exchange rate of 7.80 HKD to 1 USD was officially implemented on October 17, 1983.
-- ❔ The Hong Kong dollar reached its historical low of 9.60 against the US dollar in September 1983.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact exchange rate of 7.80 HKD to 1 USD was officially implemented on October 17, 1983. The text states that on 17 October 1983, the Hong Kong dollar was officially pegged to the U.S. dollar at a rate of HK$7.80 = US$1.
+- ✅ **agrees with Wikipedia**: The Hong Kong dollar reached its historical low of 9.60 against the US dollar in September 1983. The text states that on 24 September 1983, the Hong Kong dollar was devalued to a historical low at HK$9.60 to US$1.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong dollar](https://en.wikipedia.org/wiki/Hong_Kong_dollar)
 
-**Still needed:** Evidence specifically detailing the historical events, economic decisions, or the specific implementation of the Hong Kong dollar's linked exchange rate system on October 17, 1983.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

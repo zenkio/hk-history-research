@@ -4,10 +4,11 @@ title_zh: "李家超當選行政長官"
 date: 2022-05-08
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "ai-draft", "chief-executive", "electoral-reform", "national-security-era", "national-security-law", "patriots-administering-hong-kong"]
+tags: ["evidence-none", "2022", "ai-draft", "chief-executive", "electoral-reform", "national-security-era", "national-security-law", "patriots-administering-hong-kong"]
 summary: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
 description: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ On **May 8, 2022**, **John Lee** (李家超), who had recently resigned from his
 
 - ❔ John Lee received 1,416 support votes out of 1,464 cast on May 8, 2022.
 - ❔ John Lee was the sole candidate in the 2022 Chief Executive election.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence concerning the election or selection process of John Lee as Chief Executive in May 2022 is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -4,10 +4,11 @@ title_zh: "香港黃埔船塢公司之成立"
 date: 1863-07-01
 year: 1863
 era: "Kowloon and the Victorian colony"
-tags: ["1863", "ai-draft", "british-colony", "industrial-economy", "kowloon", "maritime-history", "shipbuilding", "victorian-colony"]
+tags: ["evidence-a", "1863", "ai-draft", "british-colony", "industrial-economy", "kowloon", "maritime-history", "shipbuilding", "victorian-colony"]
 summary: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
 description: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,17 @@ The creation of the dock company marked a pivotal transition for Hong Kong from 
 
 - ❔ The exact formal incorporation date of July 1, 1863 as recorded in primary commercial registries.
 - ❔ The initial list of consolidated assets and founders involved in the formation of the company.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [*Hong Kong Daily Press 1877-02-15* (1877), Internet Archive.](https://archive.org/details/NPDP18770215) (claims 1): The source explicitly mentions the 'HONGKONG AND WHAMPOA DOCK COMPANY LIMITED' in its title/note.
+
+**Still needed:** Primary source evidence or academic documentation specifically verifying the company's establishment date and founding details in 1863.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

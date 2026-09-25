@@ -4,10 +4,11 @@ title_zh: "域多利監獄的設立"
 date: 1841-01-01
 year: 1841
 era: "The early colony"
-tags: ["1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-architecture", "legal-system", "victoria-gaol"]
+tags: ["evidence-b", "1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-architecture", "legal-system", "victoria-gaol"]
 summary: "The construction of the Victoria Gaol in 1841 marked a pivotal moment in the formalization of British colonial rule and legal administration in the newly claimed territory."
 description: "The construction of the Victoria Gaol in 1841 marked a pivotal moment in the formalization of British colonial rule and legal administration in the newly claimed territory."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,17 @@ The creation of the prison represented the shift from a temporary military encam
 - ❔ Verify the specific date of the foundation stone laying for the first Victoria Gaol structure.
 - ❔ Cross-reference the initial capacity and prisoner population demographics in 1841.
 - ❔ Clarify the distinction between the original 1841 structure and the subsequent 1850s masonry improvements.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Frank Dikötter (2004). *‘A paradise for rascals’: Colonialism, punishment and the prison in Hong Kong (1841-1898)*. Crime Histoire et Sociétés.](https://doi.org/10.4000/chs.515) (claims 1): The article specifically examines the history of prisons and punishment in Hong Kong during the period starting in 1841.
+
+**Still needed:** Specific primary source evidence or administrative records detailing the exact founding and construction of the Victoria Gaol in 1841.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

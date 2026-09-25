@@ -4,10 +4,11 @@ title_zh: "盧亞貴創辦上環下街市集"
 date: 1841-01-01
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "chinese-merchants", "colonial-history", "loo-aqui", "opium-war", "sheung-wan"]
+tags: ["evidence-none", "1841", "ai-draft", "chinese-merchants", "colonial-history", "loo-aqui", "opium-war", "sheung-wan"]
 summary: "In August 1841, Chinese provisioner Loo Aqui established permanent commercial shops and housing in Sheung Wan, creating Hong Kong's first organized Chinese mercantile quarter under early British administration."
 description: "In August 1841, Chinese provisioner Loo Aqui established permanent commercial shops and housing in Sheung Wan, creating Hong Kong's first organized Chinese mercantile quarter under early British administration."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,11 @@ The founding of the Lower Bazaar marked a crucial early step in the integration 
 
 - ❔ Did Loo Aqui specifically found the Lower Bazaar in August 1841, or was the development more gradual?
 - ❔ What was the exact official recognition granted by the early British administration to the Lower Bazaar project?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

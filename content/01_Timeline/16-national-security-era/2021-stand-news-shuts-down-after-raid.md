@@ -4,10 +4,11 @@ title_zh: "立場新聞因搜查被迫停運"
 date: 2021-12-29
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "media-shutdown", "national-security-era", "national-security-law", "press-freedom", "stand-news"]
+tags: ["evidence-none", "2021", "ai-draft", "media-shutdown", "national-security-era", "national-security-law", "press-freedom", "stand-news"]
 summary: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
 description: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The closure of Stand News marked a major turning point for press freedom in Hong
 
 - ❔ The exact number of police officers deployed during the December 29, 2021 raid
 - ❔ The precise amount of assets frozen by authorities during the operation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the December 2021 raid on Stand News and its subsequent closure are needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

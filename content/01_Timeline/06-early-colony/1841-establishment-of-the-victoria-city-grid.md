@@ -4,10 +4,11 @@ title_zh: "維多利亞城規劃"
 date: 1841-01-01
 year: 1841
 era: "The early colony"
-tags: ["1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "nineteenth-century", "urban-planning", "victoria-city"]
+tags: ["evidence-none", "1841", "ai-draft", "british-empire", "colonial-history", "early-colony", "nineteenth-century", "urban-planning", "victoria-city"]
 summary: "In 1841, the British colonial government initiated the planning of Victoria City, a foundational urban grid that shaped the geographical and social structure of early Hong Kong."
 description: "In 1841, the British colonial government initiated the planning of Victoria City, a foundational urban grid that shaped the geographical and social structure of early Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The creation of the **Victoria City** grid is widely cited as the moment the col
 - ❔ The specific year the grid plan was finalized by the colonial survey office.
 - ❔ The extent to which the 'segregation' of districts was a conscious policy versus an organic market-driven outcome.
 - ❔ The exact boundaries of the original 1841 Victoria City survey.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the surveying, urban planning, or physical layout of the Victoria City grid established in the early 1840s is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

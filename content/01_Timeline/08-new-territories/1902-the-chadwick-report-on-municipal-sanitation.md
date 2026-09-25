@@ -4,10 +4,11 @@ title_zh: "查德威克市政衞生報告"
 date: 1902-01-01
 year: 1902
 era: "The New Territories lease and the early 20th century"
-tags: ["1902", "ai-draft", "colonial-history", "epidemic", "housing-reform", "new-territories", "public-health", "sanitation"]
+tags: ["evidence-none", "1902", "ai-draft", "colonial-history", "epidemic", "housing-reform", "new-territories", "public-health", "sanitation"]
 summary: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major legislative reform."
 description: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The findings of the **1902** report served as the direct catalyst for sweeping l
 
 - ❔ Osbert Chadwick authored a second major sanitary report specifically in the year 1902
 - ❔ The 1903 Public Health and Buildings Ordinance was a direct legislative result of the 1902 Chadwick Report
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** A source specifically discussing the contents, findings, or historical impact of the 1902 Chadwick Report on Municipal Sanitation in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

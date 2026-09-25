@@ -4,10 +4,11 @@ title_zh: "第一批羅馬天主教傳教士抵達"
 date: 1847-01-01
 year: 1847
 era: "The early colony"
-tags: ["1847", "ai-draft", "colonial-history", "early-colony", "education-history", "nineteenth-century", "religious-history", "social-welfare"]
+tags: ["evidence-none", "1847", "ai-draft", "colonial-history", "early-colony", "education-history", "nineteenth-century", "religious-history", "social-welfare"]
 summary: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
 description: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The establishment of the Catholic mission introduced a new layer of social servi
 - ❔ The exact date of the formal establishment of the Apostolic Prefecture.
 - ❔ The extent to which Anglican colonial officials actively opposed the Catholic mission in the 1840s.
 - ❔ The number of local converts during the initial years of the mission.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the arrival of the first Roman Catholic missionaries in Hong Kong in 1847 is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

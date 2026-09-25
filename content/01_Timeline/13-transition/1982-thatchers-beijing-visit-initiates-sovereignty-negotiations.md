@@ -4,7 +4,7 @@ title_zh: "戴卓爾夫人訪京開啟主權談判"
 date: 1982-09-24
 year: 1982
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-b", "1982", "ai-draft", "deng-xiaoping", "margaret-thatcher", "sino-british-joint-declaration", "sovereignty-negotiations", "transition"]
+tags: ["wikipedia-checked", "evidence-b", "1982", "ai-draft", "deng-xiaoping", "margaret-thatcher", "sino-british-joint-declaration", "sovereignty-negotiations", "transition"]
 summary: "On September 24, 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally launching diplomatic negotiations concerning the future of Hong Kong after the expiration of the New Territories lease in 1997."
 description: "On September 24, 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally launching diplomatic negotiations concerning the future of Hong Kong after the expiration of the…"
 confidence: ai-draft
@@ -41,21 +41,17 @@ This high-level encounter marked the official commencement of formal Sino-Britis
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
-- ❔ The New Territories lease was set to expire on June 30, 1997.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982. The text confirms Thatcher's visit to the PRC in September 1982 but does not provide the specific day.
+- ✅ **agrees with Wikipedia**: The New Territories lease was set to expire on June 30, 1997. The text states that the PRC would resume sovereignty over the New Territories with effect from 1 July 1997.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Handover of Hong Kong](https://en.wikipedia.org/wiki/Handover_of_Hong_Kong)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Ming Dong (1991). *The principles and flexibility in China's external relations : the case of Hong Kong*. London School of Economics and Political Science Research Online (London School of Economics and Political Science).](https://openalex.org/W1592776133) (claims 1): The source examines China's Hong Kong policy and its agreements with the British government during the period covering the 1982 visit.
-
-**Still needed:** Specific evidence or primary sources confirming the exact date of the visit and its direct role in initiating the negotiations.
-
+- ✓ [Deng Xiaoping and the transformation of China](https://openlibrary.org/isbn/9780674055445) (ISBN)
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

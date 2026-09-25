@@ -4,10 +4,11 @@ title_zh: "香港四十七人案開審"
 date: 2023-02-06
 year: 2023
 era: "The National Security Law era"
-tags: ["2023", "ai-draft", "hong-kong-47", "judicial-system", "national-security-era", "national-security-law", "pro-democracy", "subversion-trial"]
+tags: ["evidence-none", "2023", "ai-draft", "hong-kong-47", "judicial-system", "national-security-era", "national-security-law", "pro-democracy", "subversion-trial"]
 summary: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
 description: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The trial represents the largest single prosecution under the National Security 
 
 - ❔ The exact number of defendants who pleaded guilty versus those who maintained their innocence at the start of the trial on February 6, 2023.
 - ❔ The procedural composition of the three-judge panel hearing the case without a jury under the National Security Law.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the 2023 trial of the Hong Kong 47 is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

@@ -4,10 +4,11 @@ title_zh: "《香港憲報》出版"
 date: 1845-01-01
 year: 1845
 era: "The early colony"
-tags: ["photo-corroborated", "1845", "19th-century", "ai-draft", "colonial-history", "early-colony", "government-records", "hong-kong-gazette", "legal-history"]
+tags: ["evidence-none", "photo-corroborated", "1845", "19th-century", "ai-draft", "colonial-history", "early-colony", "government-records", "hong-kong-gazette", "legal-history"]
 summary: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
 description: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -64,6 +65,14 @@ Corroborates: It provides a direct example of the publication described in the e
 *A composite image featuring copies of 'The China Mail' and the first issue of 'The Hongkong Gazette' dated May 1st, 1841.* (document). Arnold Wright, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tcitp_d352_china_mail_and_the_hong_kong_gazette.jpg).
 Corroborates: It provides a visual representation of the 'Hongkong Gazette' mentioned in the event description.
 ⚠️ Possible conflict: The date on the Gazette in the image is May 1st, 1841, whereas the event is dated 1845.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence verifying the publication of the Hong Kong Gazette on January 1, 1845, is needed.
 
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

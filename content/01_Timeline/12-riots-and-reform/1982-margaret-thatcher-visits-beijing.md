@@ -4,7 +4,7 @@ title_zh: "戴卓爾夫人訪問北京"
 date: 1982-09-24
 year: 1982
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1982", "1997-handover", "ai-draft", "cold-war-diplomacy", "colonial-history", "riots-and-reform", "sino-british-negotiations", "sovereignty"]
+tags: ["wikipedia-checked", "evidence-none", "1982", "1997-handover", "ai-draft", "cold-war-diplomacy", "colonial-history", "riots-and-reform", "sino-british-negotiations", "sovereignty"]
 summary: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the New Territories lease."
 description: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the…"
 confidence: ai-draft
@@ -39,17 +39,21 @@ The visit shattered the long-standing political ambiguity surrounding Hong Kong'
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
-- ❔ The New Territories lease was established by the 1898 Convention for the Extension of Hong Kong Territory.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982. The text states she visited China in September 1982 to discuss sovereignty with Deng Xiaoping, but does not provide the specific day.
+- ❔ **not in Wikipedia**: The New Territories lease was established by the 1898 Convention for the Extension of Hong Kong Territory. The reference text does not mention the New Territories or the 1898 Convention for the Extension of Hong Kong Territory.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Margaret Thatcher](https://en.wikipedia.org/wiki/Margaret_Thatcher)
 
-**Still needed:** Evidence specifically detailing Margaret Thatcher's visit to Beijing on September 24, 1982, is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Margaret Thatcher: The Grocer's Daughter](https://openlibrary.org/isbn/9780712674188) (ISBN)
+- ✓ [The Foreign Politics of Opposition: Margaret Thatcher and the Transatlantic Relationship before Power](https://doi.org/10.1080/13619460903565358) (DOI)
+- ✓ [Margaret Thatcher: From Grantham to the Falklands](https://openlibrary.org/isbn/9780307958945) (ISBN)
+- ✓ [What Was Margaret Thatcher's Legacy for Women?](https://doi.org/10.1080/09612025.2013.801136) (DOI)
+- ✓ ['Her Rather Ambitious Washington Program': Margaret Thatcher's International Visitor Program Visit to the United States in 1967](https://doi.org/10.1080/13619460308565458) (DOI)
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

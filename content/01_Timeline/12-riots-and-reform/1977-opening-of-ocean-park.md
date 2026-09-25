@@ -4,7 +4,7 @@ title_zh: "海洋公園開幕"
 date: 1977-01-10
 year: 1977
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1977", "ai-draft", "hong-kong-history", "leisure", "maclehose-era", "ocean-park", "riots-and-reform", "tourism"]
+tags: ["wikipedia-checked", "evidence-none", "1977", "ai-draft", "hong-kong-history", "leisure", "maclehose-era", "ocean-park", "riots-and-reform", "tourism"]
 summary: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
 description: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
 confidence: ai-draft
@@ -40,17 +40,18 @@ The establishment of Ocean Park is frequently interpreted as a symbol of Hong Ko
 - [[02_Entities/Places/wong-chuk-hang|Wong Chuk Hang (黃竹坑)]]
 - [[02_Entities/Places/south-china-sea|South China Sea (南海)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Ocean Park officially opened on January 10, 1977.
-- ❔ The Hong Kong Jockey Club solely funded the initial construction of Ocean Park.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Ocean Park officially opened on January 10, 1977. The text states that Ocean Park officially opened on 10 January 1977.
+- ❔ **not in Wikipedia**: The Hong Kong Jockey Club solely funded the initial construction of Ocean Park. The text mentions that the Jockey Club provided further investment between 1982 and 1984, but does not state who funded the initial construction.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Ocean Park Hong Kong](https://en.wikipedia.org/wiki/Ocean_Park_Hong_Kong)
 
-**Still needed:** Evidence confirming the specific date and event of the opening of Ocean Park in 1977 is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Survivorship of odontocete cetaceans at Ocean Park, Hong Kong, 1974–1994](https://openlibrary.org/isbn/9789622093768) (ISBN)
+- ✗ [Ocean Park](https://doi.org/10.1016/B978-0-7506-6522-3.00011-0) (DOI) _DOI resolves to: Ocean ParkIn the Face of Competition from Hong Kong Disneyland_
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

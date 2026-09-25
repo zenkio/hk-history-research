@@ -4,10 +4,11 @@ title_zh: "華人醫院之建立"
 date: 1850-01-01
 year: 1850
 era: "The early colony"
-tags: ["1850", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "public-health", "social-welfare", "western-medicine"]
+tags: ["evidence-none", "1850", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "public-health", "social-welfare", "western-medicine"]
 summary: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
 description: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The establishment of this hospital represents a pivotal moment in the history of
 - ❔ Verification of the specific 1850 founding date and the physical location of the initial hospital premises.
 - ❔ Documentation confirming the funding sources of the original 1850 infirmary.
 - ❔ Records detailing the specific medical treatments provided to the local population during this period.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the founding or establishment of the first hospital dedicated to the Chinese population in Hong Kong is required.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

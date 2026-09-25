@@ -4,10 +4,11 @@ title_zh: "社團條例通過"
 date: 1912-01-01
 year: 1912
 era: "The New Territories lease and the early 20th century"
-tags: ["1911-revolution", "1912", "ai-draft", "british-colonial-history", "legislation", "new-territories", "secret-societies", "societies-ordinance"]
+tags: ["evidence-none", "1911-revolution", "1912", "ai-draft", "british-colonial-history", "legislation", "new-territories", "secret-societies", "societies-ordinance"]
 summary: "In 1912, following the collapse of the Qing dynasty and the Chinese Revolution, the Hong Kong colonial government enacted the Societies Ordinance to strictly monitor, register, and suppress political groups and secret societies."
 description: "In 1912, following the collapse of the Qing dynasty and the Chinese Revolution, the Hong Kong colonial government enacted the Societies Ordinance to strictly monitor, register, and suppress political groups and secret…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ Later scholarship views the **1912** ordinance as a watershed moment in the evol
 
 - ❔ Exact legislative voting records and specific Governor involvement in the 1912 Societies Ordinance enactment
 - ❔ The precise number of organizations dissolved or registered under the ordinance in its first year
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the passage and content of the Societies Ordinance of 1912 are needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

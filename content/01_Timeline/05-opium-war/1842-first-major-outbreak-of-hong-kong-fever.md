@@ -4,10 +4,11 @@ title_zh: "香港熱第一次大爆發"
 date: 1842-01-01
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["1842", "ai-draft", "british-military", "first-opium-war", "hong-kong-fever", "malaria", "opium-war", "public-health"]
+tags: ["evidence-none", "1842", "ai-draft", "british-military", "first-opium-war", "hong-kong-fever", "malaria", "opium-war", "public-health"]
 summary: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of the fledgling colony."
 description: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The epidemic severely tested the resolve of the early British administration and
 
 - ❔ Exact mortality statistics for British troops during the June 1842 outbreak
 - ❔ Specific engineering and sanitation decrees issued by the colonial government in response to the epidemic
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding a major disease outbreak in Hong Kong occurring around 1842 is required.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

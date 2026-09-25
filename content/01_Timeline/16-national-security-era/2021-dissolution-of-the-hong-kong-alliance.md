@@ -4,10 +4,11 @@ title_zh: "香港支聯會解散"
 date: 2021-09-25
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "civil-society", "hong-kong-alliance", "national-security-era", "national-security-law", "pro-democracy", "tiananmen-vigil"]
+tags: ["evidence-none", "2021", "ai-draft", "civil-society", "hong-kong-alliance", "national-security-era", "national-security-law", "pro-democracy", "tiananmen-vigil"]
 summary: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
 description: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,13 @@ The dissolution of the Hong Kong Alliance marked a major turning point in Hong K
 
 - ❔ The exact vote tally among Alliance members to dissolve on September 25, 2021
 - ❔ The formal legal notices and correspondence exchanged between the Hong Kong Police Force and the Alliance regarding the 'foreign agent' designation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the dissolution of the Hong Kong Alliance on September 25, 2021, is missing.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

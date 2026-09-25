@@ -4,10 +4,11 @@ title_zh: "新安縣志修纂"
 date: 1819-01-01
 year: 1819
 era: "Canton trade and the First Opium War"
-tags: ["1819", "ai-draft", "lineage-villages", "local-history", "opium-war", "pre-colonial", "qing-dynasty", "xin-an-gazetteer"]
+tags: ["evidence-none", "1819", "ai-draft", "lineage-villages", "local-history", "opium-war", "pre-colonial", "qing-dynasty", "xin-an-gazetteer"]
 summary: "In 1819, the Qing administration published an updated local gazetteer for Xin'an County, providing a comprehensive pre-colonial record of the geography, settlements, and economy of the region that later became Hong Kong."
 description: "In 1819, the Qing administration published an updated local gazetteer for Xin'an County, providing a comprehensive pre-colonial record of the geography, settlements, and economy of the region that later became Hong…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ For contemporary historians, the 1819 gazetteer serves as an invaluable baseline
 
 - ❔ The 1819 Xin'an County Gazetteer was officially completed and published under the specific editorial supervision of Wang Lai and Wen Rulin.
 - ❔ The text provides the most detailed pre-colonial demographic and economic data available for the territory comprising modern Hong Kong.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the compilation, authorship, or historical context of the Revised Xin'an County Gazetteer (1819) is required.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

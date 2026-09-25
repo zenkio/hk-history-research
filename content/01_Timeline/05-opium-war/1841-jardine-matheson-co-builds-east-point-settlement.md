@@ -4,10 +4,11 @@ title_zh: "渣甸洋行於東角建立聚落"
 date: 1841-01-01
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "colonial-infrastructure", "east-point", "first-opium-war", "godowns", "jardine-matheson", "opium-war"]
+tags: ["evidence-b", "1841", "ai-draft", "colonial-infrastructure", "east-point", "first-opium-war", "godowns", "jardine-matheson", "opium-war"]
 summary: "In November **1841**, the prominent British trading house Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point, establishing private corporate dominance over the newly occupied territory's early infrastructure."
 description: "In November 1841, the prominent British trading house Jardine, Matheson & Co."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,17 @@ The establishment of the **East Point** settlement marked a crucial moment in th
 
 - ❔ Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point in November 1841.
 - ❔ The land at East Point was acquired through the earliest government land sales conducted by the early British administration on Hong Kong Island.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Stan Neal (2015). *Jardine Matheson and Chinese Migration in the British Empire, 1833-1853*. Northumbria Research Link (Northumbria University).](https://openalex.org/W2762076288) (claims 1): It examines the activities of Jardine, Matheson & Co. during the exact period (1833-1853) the settlement was established.
+
+**Still needed:** Specific evidence documenting the construction and establishment of the East Point Settlement by Jardine, Matheson & Co.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

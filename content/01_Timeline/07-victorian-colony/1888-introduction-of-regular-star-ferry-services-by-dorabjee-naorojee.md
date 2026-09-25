@@ -4,10 +4,11 @@ title_zh: "九龍渡海小輪公司定期服務之開辦"
 date: 1888-01-01
 year: 1888
 era: "Kowloon and the Victorian colony"
-tags: ["1880s", "1888", "ai-draft", "colonial-history", "dorabjee-naorojee", "public-transport", "star-ferry", "victoria-harbour", "victorian-colony"]
+tags: ["evidence-none", "1880s", "1888", "ai-draft", "colonial-history", "dorabjee-naorojee", "public-transport", "star-ferry", "victoria-harbour", "victorian-colony"]
 summary: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
 description: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,11 @@ The establishment of Naorojee's regular steam ferry service marked a pivotal tur
 
 - ❔ Dorabjee Naorojee launched the regularized steam ferry service across Victoria Harbour in May 1888.
 - ❔ The enterprise was formally incorporated or reorganized as the Star Ferry Company in 1898.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

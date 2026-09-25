@@ -41,6 +41,10 @@ USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-rese
 URL_RE = re.compile(r"https?://[^\s)\]>|,;\"']+")
 DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s)\]>|,;\"']+)")
 STOP = set("the of and in to a an for on at by with from hong kong british".split())
+# Words every other event title has: sharing only these does not make two events the same.
+GENERIC = set("enactment passage ordinance ordinances act establishment establish founding foundation opening "
+              "formal official launch creation formation introduction outbreak great first new colonial government "
+              "signing arrival appointment commencement incident affair crisis reform reforms".split())
 ISBN_RE = re.compile(r"ISBN[:\s]*((?:97[89][-\s]?)?\d[\d\s-]{8,15}[\dXx])")
 CITE_RE = re.compile(r"\s*\[cite:\s*([\d,\s]+)\]")
 ARCHIVE_RE = re.compile(r"\b((?:CO|FO|ADM|WO|HO|T|MFQ)\s?\d{1,4}/\d{1,5})\b")
@@ -90,6 +94,8 @@ def words(s):
 
 
 def match_page(row, events):
+    """The event page for a Deep Research row: year within one, and the titles share a distinctive
+    word (not just "ordinance" or "establishment") with enough overlap overall."""
     year = re.search(r"\d{4}", col(row, "date") or "")
     year = int(year.group()) if year else None
     want = words(col(row, "event"))
@@ -98,6 +104,8 @@ def match_page(row, events):
         if not ev.get("file") or (year and isinstance(ev.get("year"), int) and abs(ev["year"] - year) > 1):
             continue
         have = words(ev["title"])
+        if not (want & have) - GENERIC:
+            continue
         s = len(want & have) / max(1, len(want | have))
         if s > score:
             best, score = ev, s
@@ -210,8 +218,10 @@ def row_grade(results):
 def research_block(row, source_name, results):
     lines = ["## Research notes", "",
              f"> [!note] From Gemini Deep Research ({source_name}), imported {datetime.now().strftime('%Y-%m-%d')}. "
-             "References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), "
-             "✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.", ""]
+             "References were checked automatically: ✓ the DOI/ISBN title matches or the link works, "
+             "✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). "
+             "A working link does not by itself prove the claim: the page's evidence grade counts only archive and "
+             "record links (A) and scholarly works (B).", ""]
     for label, cell, checks in results:
         if not cell or cell.lower().startswith("none"):
             continue
@@ -226,12 +236,15 @@ def research_block(row, source_name, results):
     return "\n".join(lines) + "\n\n"
 
 
-def attach(path, block, best_grade):
+def attach(path, block, best_grade, regrade=False):
     with PAGE_LOCK:
-        return _attach_unlocked(path, block, best_grade)
+        return _attach_unlocked(path, block, best_grade, regrade)
 
 
-def _attach_unlocked(path, block, best_grade):
+def _attach_unlocked(path, block, best_grade, regrade=False):
+    """Replace the page's Research notes and raise its grade to best_grade. With regrade, a page
+    whose grade came only from research notes (no evidence-engine section) gets exactly best_grade,
+    so a grade given by an older, looser import can go down."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
     text = re.sub(r"\n## Research notes\n.*?(?=\n## |\nPart of: |\Z)", "\n", text, flags=re.S)
@@ -242,47 +255,75 @@ def _attach_unlocked(path, block, best_grade):
     else:
         text = text.rstrip() + "\n\n" + block
     current = (re.search(r"^evidence_grade: *(\w+)", text, re.M) or [None, "none"])[1]
-    rank = {"A": 2, "B": 1}
-    if best_grade and rank.get(best_grade, 0) > rank.get(current, 0):
+    rank = {"none": 0, "B": 1, "A": 2}
+    if regrade and "\n## Evidence\n" not in text:
+        target = best_grade or "none"
+    else:
+        target = best_grade if best_grade and rank.get(best_grade, 0) > rank.get(current, 0) else current
+    if target != current:
         if re.search(r"^evidence_grade:", text, re.M):
-            text = re.sub(r"^evidence_grade:.*$", f"evidence_grade: {best_grade}", text, count=1, flags=re.M)
+            text = re.sub(r"^evidence_grade:.*$", f"evidence_grade: {target}", text, count=1, flags=re.M)
         else:
-            text = re.sub(r"^(confidence:.*)$", rf"\1\nevidence_grade: {best_grade}", text, count=1, flags=re.M)
+            text = re.sub(r"^(confidence:.*)$", rf"\1\nevidence_grade: {target}", text, count=1, flags=re.M)
         text = re.sub(r'"evidence-(a|b|none)", ', "", text)
-        text = re.sub(r"^tags: \[", f'tags: ["evidence-{best_grade.lower()}", ', text, count=1, flags=re.M)
+        text = re.sub(r"^tags: \[", f'tags: ["evidence-{target.lower()}", ', text, count=1, flags=re.M)
+    text = re.sub(r"\n{3,}(?=Part of: |## )", "\n\n", text)
     with open(path, "w", encoding="utf-8") as f:
         f.write(text)
-    return current if not best_grade or rank.get(best_grade, 0) <= rank.get(current, 0) else best_grade
+    return target
+
+
+GRADING_VERSION = 2  # 2: grade by what a reference is; homepages and encyclopedias never count
+
+
+def import_file(fpath, events, grades, unmatched, regrade=False):
+    name = os.path.basename(fpath)
+    with open(fpath, encoding="utf-8") as f:
+        text = f.read()
+    rows, refs = parse_tables(text), reference_list(text)
+    print(f"[research] {'regrading' if regrade else 'importing'} {name}: {len(rows)} rows")
+    attached = 0
+    for row in rows:
+        ev = match_page(row, events)
+        if not ev:
+            unmatched.append((name, row))
+            continue
+        results = [(label, col(row, key), check_cell(col(row, key), refs))
+                   for label, key in (("Grade A", "grade a"), ("Grade B", "grade b"), ("Grade C", "grade c"))]
+        if not any(ok for _, _, checks in results for _, _, ok, _ in checks):
+            unmatched.append((name, {**row, "_note": f"matched {ev['file']} but no reference could be verified"}))
+            path = os.path.join(TIMELINE_DIR, ev["file"])
+            if regrade and os.path.exists(path) and f"Deep Research ({name})" in open(path, encoding="utf-8").read():
+                # Notes from an older import that no longer hold up: remove them and their grade.
+                grades[ev["file"]] = attach(path, "", None, regrade=True)
+                print(f"[research] {ev['file']}: notes from {name} removed, grade {grades[ev['file']]}")
+            continue
+        best = row_grade(results)
+        before = grades.get(ev["file"])
+        grades[ev["file"]] = attach(os.path.join(TIMELINE_DIR, ev["file"]), research_block(row, name, results), best, regrade)
+        attached += 1
+        change = f" (grade {before} -> {grades[ev['file']]})" if regrade and before != grades[ev["file"]] else ""
+        print(f"[research] {ev['file']} <- {col(row, 'event')[:60]}{change}")
+    return attached
 
 
 def import_inbox(events, grades):
-    """Import every file in research/inbox/; grades (rel -> evidence grade) is updated in place."""
+    """Import every file in research/inbox/; grades (rel -> evidence grade) is updated in place.
+    Once per GRADING_VERSION, files already in inbox/done/ are re-checked and regraded."""
+    import state
+    done_dir = os.path.join(INBOX, "done")
+    meta = state.load("research")
+    if meta.get("grading_version", 1) < GRADING_VERSION:
+        for fpath in sorted(glob.glob(os.path.join(done_dir, "*.md"))):
+            import_file(fpath, events, grades, [], regrade=True)
+        meta["grading_version"] = GRADING_VERSION
+        state.save("research", meta)
     files = sorted(glob.glob(os.path.join(INBOX, "*.md")))
-    if not files:
-        return 0
     unmatched, attached = [], 0
     for fpath in files:
-        name = os.path.basename(fpath)
-        with open(fpath, encoding="utf-8") as f:
-            text = f.read()
-        rows, refs = parse_tables(text), reference_list(text)
-        print(f"[research] {name}: {len(rows)} rows")
-        for row in rows:
-            ev = match_page(row, events)
-            if not ev:
-                unmatched.append((name, row))
-                continue
-            results = [(label, col(row, key), check_cell(col(row, key), refs))
-                       for label, key in (("Grade A", "grade a"), ("Grade B", "grade b"), ("Grade C", "grade c"))]
-            if not any(ok for _, _, checks in results for _, _, ok, _ in checks):
-                unmatched.append((name, {**row, "_note": f"matched {ev['file']} but no reference could be verified"}))
-                continue
-            best = row_grade(results)
-            grades[ev["file"]] = attach(os.path.join(TIMELINE_DIR, ev["file"]), research_block(row, name, results), best)
-            attached += 1
-            print(f"[research] {ev['file']} <- {col(row, 'event')[:60]}")
-        os.makedirs(os.path.join(INBOX, "done"), exist_ok=True)
-        shutil.move(fpath, os.path.join(INBOX, "done", name))
+        attached += import_file(fpath, events, grades, unmatched)
+        os.makedirs(done_dir, exist_ok=True)
+        shutil.move(fpath, os.path.join(done_dir, os.path.basename(fpath)))
     if unmatched:
         with open(UNMATCHED, "a", encoding="utf-8") as f:
             f.write(f"\n## Imported {datetime.now().strftime('%Y-%m-%d')}\n\n"

@@ -10,12 +10,14 @@ can cite sources that do not exist, so every reference is checked:
   - "[cite: N]" numbers are resolved through the numbered source list at the end of the
     answer (unwrapping google.com/url redirects) and link-checked; piracy/document-dump
     sites are skipped;
-  - bare homepages (www.hsbc.com) are shown as "?" and never count as verification;
+  - bare homepages (www.hsbc.com) and encyclopedias (Wikipedia) are shown as "?" and never count;
+  - the grade comes from what a verified reference is (archive/record host: A; DOI, ISBN or
+    academic publisher: B; anything else raises nothing), not from the column it was put in;
   - UK National Archives references (CO 129/1, FO 17/32, ...) become catalogue search
     links, marked as not independently verified.
 Only rows with at least one verified reference are attached, as a `## Research notes`
-section. A working grade A link raises the page's evidence grade to A; a grade B link
-raises "none" to B.
+section. A verified archive/record link raises the page's evidence grade to A; a verified
+DOI, ISBN or academic publisher link raises "none" to B. Grades are never lowered.
 
 Rows that match no page are listed in research/unmatched.md: they are candidate events
 the timeline is missing. Processed files move to research/inbox/done/.
@@ -43,6 +45,18 @@ ISBN_RE = re.compile(r"ISBN[:\s]*((?:97[89][-\s]?)?\d[\d\s-]{8,15}[\dXx])")
 CITE_RE = re.compile(r"\s*\[cite:\s*([\d,\s]+)\]")
 ARCHIVE_RE = re.compile(r"\b((?:CO|FO|ADM|WO|HO|T|MFQ)\s?\d{1,4}/\d{1,5})\b")
 REF_LINE_RE = re.compile(r"^\s*(\d{1,3})\.\s+(.+?),?\s*\[(https?://[^\]]+)\]", re.M)
+# The grade comes from what a verified reference IS, not from the column Deep Research put it in:
+# its "Grade A" cells often cite blogs or Wikipedia through [cite: N].
+PRIMARY_HOSTS = re.compile(r"(^|\.)(nationalarchives\.gov\.uk|legislation\.gov\.uk|hansard\.parliament\.uk|"
+                           r"lib\.hku\.hk|hkpl\.gov\.hk|grs\.gov\.hk|legco\.gov\.hk|elegislation\.gov\.hk|"
+                           r"archive\.org|loc\.gov|trove\.nla\.gov\.au|bl\.uk|nlb\.gov\.sg|"
+                           r"hpcbristol\.net|hkmemory\.hk)$", re.I)
+SCHOLARLY_HOSTS = re.compile(r"(^|\.)(doi\.org|jstor\.org|cambridge\.org|brill\.com|tandfonline\.com|"
+                             r"emerald\.com|oup\.com|academic\.oup\.com|springer\.com|wiley\.com|sagepub\.com|"
+                             r"muse\.jhu\.edu|hkupress\.hku\.hk|hkjo\.lib\.hku\.hk|openalex\.org|"
+                             r"scholarlypublications\.universiteitleiden\.nl|escholarship\.org|ncbi\.nlm\.nih\.gov|"
+                             r"royalsocietypublishing\.org|research\.cuhk\.edu\.hk|hub\.hku\.hk)$", re.I)
+NOT_EVIDENCE = re.compile(r"(^|\.)(wikipedia\.org|wikiwand\.com|wikidata\.org|britannica\.com)$", re.I)
 SKIP_DOMAINS = re.compile(r"dokumen\.pub|scribd\.com|studocu|pdfcoffee|z-lib|libgen|annas-archive|coursehero", re.I)
 
 
@@ -162,6 +176,9 @@ def check_cell(cell, refs):
     for u in dict.fromkeys(urls):
         if "doi.org/" in u or SKIP_DOMAINS.search(u):
             continue
+        if NOT_EVIDENCE.search(urllib.parse.urlparse(u).hostname or ""):
+            out.append(("wiki", u, None, "encyclopedia, not evidence"))
+            continue
         if not urllib.parse.urlparse(u).path.strip("/"):
             # A bare homepage (hsbc.com, www.pro.gov.hk) says where to look, not what was found:
             # it never verifies a row or raises a grade.
@@ -173,6 +190,21 @@ def check_cell(cell, refs):
         out.append(("archive ref", f"https://discovery.nationalarchives.gov.uk/results/r?_q={q}", None,
                     f"{ref}: catalogue search, not independently verified"))
     return out
+
+
+def ref_grade(kind, url):
+    """Evidence grade a verified reference supports: A primary, B scholarship, None otherwise."""
+    host = urllib.parse.urlparse(url).hostname or ""
+    if kind in ("DOI", "ISBN") or SCHOLARLY_HOSTS.search(host):
+        return "B"
+    if PRIMARY_HOSTS.search(host):
+        return "A"
+    return None
+
+
+def row_grade(results):
+    grades = {ref_grade(kind, u) for _, _, checks in results for kind, u, ok, _ in checks if ok}
+    return "A" if "A" in grades else "B" if "B" in grades else None
 
 
 def research_block(row, source_name, results):
@@ -245,8 +277,7 @@ def import_inbox(events, grades):
             if not any(ok for _, _, checks in results for _, _, ok, _ in checks):
                 unmatched.append((name, {**row, "_note": f"matched {ev['file']} but no reference could be verified"}))
                 continue
-            best = next((g for g, (_, _, checks) in zip("ABC", results) if any(ok for _, _, ok, _ in checks)), None)
-            best = best if best in ("A", "B") else None
+            best = row_grade(results)
             grades[ev["file"]] = attach(os.path.join(TIMELINE_DIR, ev["file"]), research_block(row, name, results), best)
             attached += 1
             print(f"[research] {ev['file']} <- {col(row, 'event')[:60]}")

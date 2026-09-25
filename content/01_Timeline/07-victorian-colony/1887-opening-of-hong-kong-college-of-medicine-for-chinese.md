@@ -49,7 +49,7 @@ The opening of the college marked a major milestone in the educational and medic
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** *Inaugural Address of the Hong Kong College of Medicine for Chinese*, October 1887, HKRS 111, Hong Kong Public Records Office; *Hong Kong Daily Press*, Oct 3, 1887. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en)
 - **Grade B:** Li, Chung-yue (1997), "Medical Education in Hong Kong: The Early Years", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 37, pp. 115–130, https://www.jstor.org/stable/23890234. [link ✓](https://www.jstor.org/stable/23890234) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf)
@@ -67,6 +67,5 @@ The opening of the college marked a major milestone in the educational and medic
 - [*Hong Kong Daily Press 1888-10-03* (1888), Internet Archive.](https://archive.org/details/NPDP18881003) (claims 1): Mentions the anniversary of the college's opening.
 
 **Still needed:** Founding committee members, and Sun Yat-sen's precise graduation date and academic standing.
-
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

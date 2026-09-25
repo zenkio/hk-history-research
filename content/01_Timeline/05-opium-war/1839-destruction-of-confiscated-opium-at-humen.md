@@ -4,11 +4,11 @@ title_zh: "虎門銷煙"
 date: 1839-06-03
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["wikipedia-checked", "evidence-a", "1839", "ai-draft", "first-opium-war", "humen", "lin-zexu", "opium-trade", "opium-war", "qing-dynasty"]
+tags: ["evidence-b", "wikipedia-checked", "1839", "ai-draft", "first-opium-war", "humen", "lin-zexu", "opium-trade", "opium-war", "qing-dynasty"]
 summary: "In June 1839, Imperial Commissioner Lin Zexu oversaw the public destruction of over one thousand tons of confiscated foreign opium at Humen, marking a critical catalyst for the First Opium War."
 description: "In June 1839, Imperial Commissioner Lin Zexu oversaw the public destruction of over one thousand tons of confiscated foreign opium at Humen, marking a critical catalyst for the First Opium War."
 confidence: ai-draft
-evidence_grade: A
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -50,5 +50,15 @@ The event demonstrated the Qing government's resolute administrative enforcement
 **Articles compared:** [Wikipedia: Destruction of opium at Humen](https://en.wikipedia.org/wiki/Destruction_of_opium_at_Humen), [Wikipedia: First Opium War](https://en.wikipedia.org/wiki/First_Opium_War)
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Lin Zexu, Edicts to Foreign Merchants, 18 March 1839, in *Chou Ban Yi Wu Shi Mo* (Daoguang reign); *The Chinese Repository*, Vol. 8, No. 1 (May 1839), pp. 1–22. [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en)
+- **Grade B:** Fay, P.W. (1997), *The Opium War, 1840-1842: Barbarians in the Celestial Empire*, University of North Carolina Press, ISBN: 0807847143. [ISBN ✓](https://openlibrary.org/isbn/0807847143) [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✗](https://military-history.fandom.com/wiki/Second\_Battle\_of\_Chuenpi)
+- **Grade C:** National Palace Museum Digital Archive, Imperial Edicts of the Daoguang Reign, https://www.npm.gov.tw. [site ?](https://www.npm.gov.tw) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en)
+
+**Disputes or myths:** Contradicts the popular belief that the opium surrender completely halted trade; instead, it relocated foreign merchant shipping directly to the anchorages surrounding Hong Kong Island.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

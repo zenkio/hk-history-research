@@ -45,13 +45,12 @@ Over time, the role of the District Watch Force extended far beyond basic neighb
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** *Report of the Captain Superintendent of Police*, HK LegCo Sessional Papers 1866; Colonial Office Correspondence, TNA CO 129/112. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/112)
 - **Grade B:** Lethbridge, Henry J. (1978), "The District Watch Committee: The Emergence of a Chinese Elite", *Hong Kong: Stability and Change*, Oxford University Press, pp. 104–129. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A) [link ✗](https://www.emerald.com/stics/article/12/2/98/364326/A-night-soil-collection-point-the-public-toilets)
 - **Grade C:** Hong Kong Police Museum, "History of Community Policing in Hong Kong", https://www.police.gov.hk. [site ?](https://www.police.gov.hk)
 
 **Disputes or myths:** Myth frames it as purely a private security guard force, whereas it evolved into the primary advisory board bridging Chinese merchant leadership and colonial authorities.
-
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

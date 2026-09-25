@@ -4,7 +4,7 @@ title_zh: "保良局的成立"
 date: 1878-01-01
 year: 1878
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-b", "1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
 summary: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 description: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 confidence: ai-draft
@@ -37,27 +37,15 @@ The founding of the Po Leung Kuk represented a crucial precedent for Chinese par
 - [[02_Entities/People/dong-zhongliang|Dong Zhongliang (董仲良)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact petition date and founding members listed in the initial 1878 colonial records
-- ❔ The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: The exact petition date and founding members listed in the initial 1878 colonial records. The text states that on 8 November 1878, Lo Lai-ping, Shi Shang-kai, Fung Ming-shan and Tse Tat-shing presented a petition to the governor.
+- ❔ **not in Wikipedia**: The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade. The text mentions general difficulties with the colonial government due to cultural differences but does not mention the Registrar General's Office.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: Po Leung Kuk](https://en.wikipedia.org/wiki/Po_Leung_Kuk), [Wikipedia: Singapore Po Leung Kuk](https://en.wikipedia.org/wiki/Singapore_Po_Leung_Kuk)
 
-- **Grade A:** *Special Committee Report on Po Leung Kuk*, HK LegCo Sessional Papers 1893; *Hong Kong Government Gazette*, Ordinance No. 12 of 1893. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-- **Grade B:** Jaschok, Maria (1988), *Concubines and Bondservants: A Social History of Chinese Women in Hong Kong*, Zed Books, ISBN 978-0862327828; Miners, Norman (1981), *JRASHKB*, Vol. 21, pp. 91–113. [ISBN ✓](https://openlibrary.org/isbn/9780862327828) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-- **Grade C:** Po Leung Kuk Museum, "History and Heritage of Po Leung Kuk", https://www.poleungkuk.org.hk. [site ?](https://www.poleungkuk.org.hk) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-
-**Disputes or myths:** Western missionaries claimed Po Leung Kuk protected patriarchal slavery by preserving the *mui tsai* system, whereas Chinese founders viewed it as essential moral social protection.
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence for the exact 1878 petition date, the list of founding members from colonial records, and the relationship between the Po Leung Kuk and the Registrar General's Office is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

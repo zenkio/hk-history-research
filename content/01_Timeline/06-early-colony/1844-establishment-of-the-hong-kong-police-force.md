@@ -48,4 +48,14 @@ The creation of the police force marked a crucial step in the institutional deve
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Hong Kong Legislative Council Ordinance No. 1 of 1844, TNA CO 129/6; *Hong Kong Government Gazette*. [link ✓](https://www.cambridge.org/core/journals/historical-journal/article/british-colonial-rule-over-littoral-space-and-watercraft-in-hong-kong-18411898/F2D72C473E01D8939AD03EEFB93447D1) [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/national-custom-debating-female-servitude-in-late-nineteenthcentury-hong-kong1/213F3E4CD65129F92905B2768A0A3A50) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/6)
+- **Grade B:** O'Sullivan, Patricia (2012), "George Hennessy, an Irishman in the Hong Kong Police," *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 52, pp. 189–223. [link ✗](https://www.researchgate.net/publication/290549944\_Watching\_over\_Hong\_Kong\_Private\_policing\_1841-1941) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade C:** Hong Kong Police Force Museum History Portal, https://www.grs.gov.hk/en/related\_sites.html. [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Contradicts the perception that the police force was formed to provide equal civil protection; early policing primarily served to control native Chinese populations and safeguard European property.
+
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

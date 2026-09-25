@@ -4,11 +4,11 @@ title_zh: "南京條約簽署"
 date: 1842-08-29
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
+tags: ["evidence-none", "wikipedia-checked", "photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
 summary: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 description: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 confidence: ai-draft
-evidence_grade: B
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -54,5 +54,15 @@ The Treaty of Nanking is widely viewed by historians as the first of the "unequa
 **Articles compared:** [Wikipedia: Treaty of Nanking](https://en.wikipedia.org/wiki/Treaty_of_Nanking), [Wikipedia: Treaty of Chushul](https://en.wikipedia.org/wiki/Treaty_of_Chushul)
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Treaty between Her Majesty and the Emperor of China, August 29, 1842, TNA CO 129/1, https://co129.com/en/. [link ✗](https://co129.com/en/) [link ✓](https://www.gale.com/product-catalog/primary-sources/china-and-the-modern-world/china-and-the-modern-world-hongkong-britain-china) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/1)
+- **Grade B:** Tsang, Steve (2004), *A Modern History of Hong Kong*, I.B. Tauris, ISBN:9888139714. [ISBN ?](https://openlibrary.org/isbn/9888139714) [link ✗](https://www.liverpooluniversitypress.co.uk/doi/10.3828/tpr.2022.2) [link ✗](https://www.tandfonline.com/doi/abs/10.1080/03086534.2025.2591814)
+- **Grade C:** Hong Kong Public Records Office, Government Records Service Portal, https://www.grs.gov.hk/en/related\_sites.html. [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Contradicts the common myth that Hong Kong was a completely uninhabited "barren rock," ignoring established pre-existing indigenous Cantonese and Hakka fishing and agricultural villages.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

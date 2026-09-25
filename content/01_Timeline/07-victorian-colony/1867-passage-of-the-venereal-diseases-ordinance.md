@@ -42,15 +42,4 @@ The ordinance became a focal point of intense moral, legal, and political debate
 - ❔ The exact date of the passage of the Venereal Diseases Ordinance by the Legislative Council was July 19, 1867.
 - ❔ The specific operational mechanisms and enforcement methods of the Lock Hospitals established under the ordinance.
 
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
-
-- **Grade A:** MacDonnell, R.G., "Hongkong Emigration Ordinance, 1868", *Hong Kong Government Gazette*, Oct 17, 1868, Vol. XIII, No. 12; TNA CO 129/133. [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/133)
-- **Grade B:** Leong, Jack (2019), "The Hong Kong Connection: Chinese Emigration and Regulations", *Stanford Chinese Railroad Workers Project*, Stanford University, https://chineserailroadworkers.stanford.edu. [site ?](https://chineserailroadworkers.stanford.edu) [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf)
-- **Grade C:** Hong Kong Memory Project, "Emigration and Chinese Passenger Ships", https://www.hkmemory.hk. [site ?](https://www.hkmemory.hk) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong)
-
-**Disputes or myths:** Popular belief holds colonial authorities ignored human trafficking; in reality, Hong Kong enacted strict maritime health standards, forcing illicit coolie traders to shift operations to Macao.
-
-
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

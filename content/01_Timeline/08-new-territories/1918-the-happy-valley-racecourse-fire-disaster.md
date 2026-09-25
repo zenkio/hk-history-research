@@ -55,16 +55,14 @@ Corroborates: It illustrates the scale of the crowd and the setting of the racec
 *A photograph of the massive smoke plume rising from the Happy Valley Racecourse during the 1918 fire disaster.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HappyvalleyfireHK1918.jpg).
 Corroborates: It provides visual evidence of the catastrophic fire and the scale of the crowd present during the disaster.
 
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** *Report of the Commission Appointed to Inquire into the Disaster at the Racecourse*, Hong Kong Sessional Papers, 1918; Colonial Office Records, CO 129/447. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/447)
 - **Grade B:** Hase, Patrick H. (1999), "The Happy Valley Racecourse Disaster of 1918", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 39, pp. 89–110, https://www.jstor.org/stable/23889710. [link ✓](https://www.jstor.org/stable/23889710)
 - **Grade C:** Hong Kong Jockey Club, "Happy Valley History", https://corporate.hkjc.com. [site ?](https://corporate.hkjc.com)
 
 **Disputes or myths:** Rumors alleged triad arson; official forensic inquiries established that structural collapse overloaded temporary food stalls beneath, spilling hot cooking oils onto dry bamboo scaffolding.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

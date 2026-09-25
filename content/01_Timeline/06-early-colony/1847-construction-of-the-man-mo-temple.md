@@ -4,7 +4,7 @@ title_zh: "文武廟建廟"
 date: 1847-01-01
 year: 1847
 era: "The early colony"
-tags: ["evidence-none", "1847", "ai-draft", "chinese-community", "early-colony", "hollywood-road", "man-mo-temple"]
+tags: ["wikipedia-checked", "evidence-none", "1847", "ai-draft", "chinese-community", "early-colony", "hollywood-road", "man-mo-temple"]
 summary: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
 description: "Completed around 1847 on Hollywood Road, the Man Mo Temple emerged as the primary religious, social, and informal judicial center for the burgeoning Chinese community in early colonial Hong Kong."
 confidence: ai-draft
@@ -38,17 +38,15 @@ The establishment of the temple marked a crucial milestone in the institutionali
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify the exact completion year of the Man Mo Temple as recorded in surviving bilingual stone plaques or land deeds from the 1840s.
-- ❔ Confirm the specific roles and financial contributions of Tam Achoy and other founding merchants in the temple's construction.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Verify the exact completion year of the Man Mo Temple as recorded in surviving bilingual stone plaques or land deeds from the 1840s. The text mentions a Man Mo Temple was built in 1847, but it does not mention bilingual stone plaques or land deeds.
+- ❔ **not in Wikipedia**: Confirm the specific roles and financial contributions of Tam Achoy and other founding merchants in the temple's construction. The reference text does not mention Tam Achoy or the financial contributions of founding merchants.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Man Mo temples in Hong Kong](https://en.wikipedia.org/wiki/Man_Mo_temples_in_Hong_Kong)
 
-**Still needed:** All evidence regarding the construction date of the Man Mo Temple and the contributions of Tam Achoy and other founding merchants is missing.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

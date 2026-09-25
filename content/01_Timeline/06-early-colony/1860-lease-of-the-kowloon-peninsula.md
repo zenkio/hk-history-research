@@ -4,7 +4,7 @@ title_zh: "租借九龍半島"
 date: 1860-03-20
 year: 1860
 era: "The early colony"
-tags: ["evidence-a", "1860", "ai-draft", "british-colony", "convention-of-peking", "early-colony", "harry-parkes", "kowloon-peninsula", "second-opium-war"]
+tags: ["wikipedia-checked", "evidence-a", "1860", "ai-draft", "british-colony", "convention-of-peking", "early-colony", "harry-parkes", "kowloon-peninsula", "second-opium-war"]
 summary: "In March 1860, British diplomat Harry Parkes secured a perpetual lease of the Kowloon Peninsula, expanding the fledgling colony's territory to improve harbor defense and alleviate severe overcrowding on Hong Kong Island."
 description: "In March 1860, British diplomat Harry Parkes secured a perpetual lease of the Kowloon Peninsula, expanding the fledgling colony's territory to improve harbor defense and alleviate severe overcrowding on Hong Kong…"
 confidence: ai-draft
@@ -47,31 +47,15 @@ By integrating the Kowloon Peninsula into the colony, the British established a 
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 - [[02_Entities/Places/boundary-street|Boundary Street (界限街)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Whether the specific date of March 20, 1860, marks the exact signing of the initial Kowloon lease agreement prior to the formal October ratification of the Convention of Peking.
-- ❔ The precise diplomatic title and Qing counterpart involved in executing the Kowloon lease agreement alongside Harry Parkes.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: Whether the specific date of March 20, 1860, marks the exact signing of the initial Kowloon lease agreement prior to the formal October ratification of the Convention of Peking. The text states the territory was ceded in 1860 via a lease incorporated into the Convention of Peking, but it does not mention specific dates for the signing or ratification.
+- ❔ **not in Wikipedia**: The precise diplomatic title and Qing counterpart involved in executing the Kowloon lease agreement alongside Harry Parkes. The reference text does not mention Harry Parkes, any specific Qing counterparts, or diplomatic titles.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: Kowloon Peninsula](https://en.wikipedia.org/wiki/Kowloon_Peninsula), [Wikipedia: The Peninsula Hong Kong](https://en.wikipedia.org/wiki/The_Peninsula_Hong_Kong)
 
-- **Grade A:** *Hong Kong Government Gazette*, January 19, 1861, Vol. VII, No. 3; Colonial Office Correspondence, TNA CO 129/81. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/81)
-- **Grade B:** Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1880*, Hong Kong University Press, https://doi.org/10.5790/hongkong/9789622095397.001.0001. [DOI ?](https://doi.org/10.5790/hongkong/9789622095397.001.0001) [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A)
-- **Grade C:** Gwulo: Old Hong Kong, "Handover of Kowloon 1861", https://gwulo.com. [site ?](https://gwulo.com) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong)
-
-**Disputes or myths:** Popular myth claims Kowloon was entirely unpopulated "barren land", ignoring established Hakka and Cantonese agrarian villages such as Tsim Sha Tsui and Kowloon City.
-
-## Evidence
-
-> [!abstract] Evidence grade: **A**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Primary sources (grade A)
-
-- [The National Archives (UK), MPG 1/813, 1860. 3 items extracted from CO 129/77. (1-2) Copy of a deed of lease relating to the Kowloon Peninsula made between the British and Chinese Governments, 20 March 1860. No scale shown. (3) Copy of a plan of](https://discovery.nationalarchives.gov.uk/details/r/C3981502) (claims 1): It is an archive record of a deed of lease for the Kowloon Peninsula specifically dated March 20, 1860.
-
-**Still needed:** The specific name and precise diplomatic title of the Qing counterpart who executed the lease agreement alongside Harry Parkes.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

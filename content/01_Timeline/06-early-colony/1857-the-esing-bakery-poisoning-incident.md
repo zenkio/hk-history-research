@@ -4,7 +4,7 @@ title_zh: "裕盛餅店落毒案"
 date: 1857-01-15
 year: 1857
 era: "The early colony"
-tags: ["evidence-b", "photo-corroborated", "1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1857", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "public-health", "racial-tension", "second-opium-war"]
 summary: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 description: "On January 15, 1857, massive racial panic erupted in early colonial Hong Kong after arsenic was discovered in bread supplied by a Chinese-owned bakery to the European community."
 confidence: ai-draft
@@ -42,44 +42,17 @@ The Esing Bakery incident left a lasting impact on the governance and social fab
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/esing-bakery|Esing Bakery (裕盛辦餅店)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact number of Europeans who consumed the poisoned bread and fell ill on January 15, 1857.
-- ❔ The precise legal arguments and evidence presented during Cheong Ah Lum's trial.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Exact number of Europeans who consumed the poisoned bread and fell ill on January 15, 1857. The text provides a range of between 300 and 500 residents rather than an exact number.
+- ❔ **not in Wikipedia**: The precise legal arguments and evidence presented during Cheong Ah Lum's trial. The text summarizes the arguments regarding character and motive but does not provide precise legal arguments or specific evidence.
 
-![An 1857 illustration from The Illustrated London News depicting an examination related to the Esing Bakery poisoning incident.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Esing_Bakery_Incident_%28examination%29.jpg/960px-Esing_Bakery_Incident_%28examination%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Esing Bakery incident](https://en.wikipedia.org/wiki/Esing_Bakery_incident)
 
-*An 1857 illustration from The Illustrated London News depicting an examination related to the Esing Bakery poisoning incident.* (artwork). Baptista, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esing_Bakery_Incident_(examination).jpg).
-Corroborates: It corroborates the legal proceedings and racial dynamics following the poisoning event in colonial Hong Kong.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-![Contemporary illustrations from The Illustrated London News showing the shop of Esing the baker and his examination at the police office in Victoria, Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Esing_Bakery_Incident.jpg/960px-Esing_Bakery_Incident.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Contemporary illustrations from The Illustrated London News showing the shop of Esing the baker and his examination at the police office in Victoria, Hong Kong.* (artwork). Baptista, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Esing_Bakery_Incident.jpg).
-Corroborates: It depicts the specific bakery and the legal proceedings related to the poisoning incident mentioned on the page.
-
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
-
-- **Grade A:** Trial Records of Cheong Ah-lum, Attorney General vs. Esing Bakery, TNA CO 129/62; *The China Mail* (January 1857). [link ✗](https://co129.com/en/) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/62)
-- **Grade B:** Lowe, Christopher &amp; Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong*, Hong Kong University Press. [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/)
-- **Grade C:** Hong Kong Museum of Medical Sciences Archives, https://hkupress.hku.hk/. [site ?](https://hkupress.hku.hk/) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622098053.pdf) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
-
-**Disputes or myths:** Popular myth holds that Cheong Ah-lum was a Qing secret agent executing a planned biological attack; jury trials acquitted him due to lack of direct evidence.
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [JASON KAI WEI LEE (2021). *Poisoned Bread: The Esing Bakery incident of 1857 and racism in colonial Hong Kong*. Armstrong Undergraduate Journal of History.](https://doi.org/10.20429/aujh.2021.110202) (claims 1, 2): Discusses the scale of the poisoning event and the trial of the bakery owner, Cheong Alum.
-- [Thomas Larkin (2023). *“A Life of Suspicion and Distrust”*. Pacific Historical Review.](https://doi.org/10.1525/phr.2023.92.2.135) (claims 1): Describes the January 15 poisoning event and its impact on the Western community.
-- [Thomas Larkin (2021). *"A Life of Suspicion and Distrust": Race, Sino-American Relations, and the 1857 Poison Panic in Hong Kong*. Bristol Research (University of Bristol).](https://doi.org/10.1525/phr.2023.92.2.135) (claims 1): Describes the January 15 poisoning event and its impact on the Western community.
-
+- ✓ ['Caution! The bread is poisoned': The Hong Kong mass poisoning of January 1857](https://doi.org/10.1080/03086534.2014.974904) (DOI)
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

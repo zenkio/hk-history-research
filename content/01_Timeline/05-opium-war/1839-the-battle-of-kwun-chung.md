@@ -4,7 +4,7 @@ title_zh: "穿鼻之戰"
 date: 1839-11-04
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "battle-of-kwun-chung", "first-opium-war", "guan-tianpei", "hong-kong-history", "lin-zexu", "opium-war"]
+tags: ["photo-corroborated", "1839", "ai-draft", "battle-of-kwun-chung", "first-opium-war", "guan-tianpei", "hong-kong-history", "lin-zexu", "opium-war"]
 summary: "On November 4, 1839, Qing naval forces engaged British warships off the Kowloon peninsula, marking a significant escalation in hostilities during the prelude to the First Opium War."
 description: "On November 4, 1839, Qing naval forces engaged British warships off the Kowloon peninsula, marking a significant escalation in hostilities during the prelude to the First Opium War."
 confidence: ai-draft
@@ -44,5 +44,18 @@ The engagement at Kwun Chung served as a crucial military prelude to the First O
 
 - ❔ Exact order of engagement and signaling between HMS Volage, HMS Hyacinth, and Qing war junks on November 4, 1839
 - ❔ Casualty figures reported by both Qing commanders and British naval logs
+
+## Photos from this period
+
+![A schematic map showing the locations of three naval battles between China and Britain in 1839, including the Battle of Kwun Chung.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96-1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E6%B5%B7%E6%88%B0%E4%BD%8D%E7%BD%AE%E7%A4%BA%E6%84%8F%E5%9C%96.jpg/960px-%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96-1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E6%B5%B7%E6%88%B0%E4%BD%8D%E7%BD%AE%E7%A4%BA%E6%84%8F%E5%9C%96.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A schematic map showing the locations of three naval battles between China and Britain in 1839, including the Battle of Kwun Chung.* (map). LHRC.steve, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96-1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E6%B5%B7%E6%88%B0%E4%BD%8D%E7%BD%AE%E7%A4%BA%E6%84%8F%E5%9C%96.jpg).
+Corroborates: It corroborates the location and date of the Battle of Kwun Chung mentioned in the summary.
+
+![A schematic map illustrating the locations and dates of three naval battles between Chinese and British forces in 1839, including the Battle of Kwun Chung.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96%E6%A1%88%E4%BE%8B_1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E4%B8%89%E6%AC%A1%E6%B5%B7%E6%88%B0%E7%A4%BA%E6%84%8F%E5%9C%96.jpg/960px-%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96%E6%A1%88%E4%BE%8B_1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E4%B8%89%E6%AC%A1%E6%B5%B7%E6%88%B0%E7%A4%BA%E6%84%8F%E5%9C%96.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A schematic map illustrating the locations and dates of three naval battles between Chinese and British forces in 1839, including the Battle of Kwun Chung.* (map). LHRC.Richard, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%8F%A4%E7%B1%8D%E5%8F%AF%E8%A6%96%E5%8C%96%E6%A1%88%E4%BE%8B_1839%E5%B9%B4%E4%B8%AD%E8%8B%B1%E4%B8%89%E6%AC%A1%E6%B5%B7%E6%88%B0%E7%A4%BA%E6%84%8F%E5%9C%96.jpg).
+Corroborates: It corroborates the location and timing of the Battle of Kwun Chung as part of the 1839 naval hostilities.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -4,7 +4,7 @@ title_zh: "東華醫院創立"
 date: 1870-01-01
 year: 1870
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1870", "ai-draft", "chinese-philanthropy", "colonial-history", "sheung-wan", "traditional-chinese-medicine", "tung-wah-hospital", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-b", "1870", "ai-draft", "chinese-philanthropy", "colonial-history", "sheung-wan", "traditional-chinese-medicine", "tung-wah-hospital", "victorian-colony"]
 summary: "Founded in 1870 by local Chinese leaders, the Tung Wah Hospital introduced traditional Chinese medical care to colonial Hong Kong and quickly expanded into a powerful charitable and quasi-governmental institution representing the local Chinese community."
 description: "Founded in 1870 by local Chinese leaders, the Tung Wah Hospital introduced traditional Chinese medical care to colonial Hong Kong and quickly expanded into a powerful charitable and quasi-governmental institution…"
 confidence: ai-draft
@@ -46,28 +46,16 @@ Beyond its initial medical function, the hospital rapidly evolved into an indisp
 - [[02_Entities/Places/sheung-wan|Sheung Wan (上環)]]
 - [[02_Entities/Places/guangdong|Guangdong (廣東)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The hospital was formally established and funded with a combination of merchant donations and a government land grant in 1870.
-- ❔ Tung Wah Hospital officially opened to patients in 1872.
-- ❔ The institution functioned as an intermediary between the colonial government and the local Chinese population throughout the late nineteenth century.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: The hospital was formally established and funded with a combination of merchant donations and a government land grant in 1870. The text states construction was declared in 1870 and that the hospital received a government subsidy and land grant, but it does not mention merchant donations.
+- ✅ **agrees with Wikipedia**: Tung Wah Hospital officially opened to patients in 1872. The text states the grand opening occurred on 14 February 1872 and it was not declared an official establishment until 1872.
+- ❔ **not in Wikipedia**: The institution functioned as an intermediary between the colonial government and the local Chinese population throughout the late nineteenth century. The text states the organisation originally brought together influential Chinese magnates, but it does not describe it as an intermediary between the government and the population.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: Tung Wah Hospital](https://en.wikipedia.org/wiki/Tung_Wah_Hospital), [Wikipedia: Tung Wah Group of Hospitals](https://en.wikipedia.org/wiki/Tung_Wah_Group_of_Hospitals)
 
-- **Grade A:** *Tung Wah Hospital Ordinance*, HK Ordinance No. 1 of 1870, *Hong Kong Government Gazette*, March 26, 1870; TNA CO 129/144. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/144)
-- **Grade B:** Sinn, Elizabeth (1989), *Power and Charity: The Early History of the Tung Wah Hospital, Hong Kong*, Oxford University Press, ISBN 978-0195844015. [ISBN ?](https://openlibrary.org/isbn/9780195844015) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✓](https://ihss.hku.hk/portfolio/elizabeth-sinn/)
-- **Grade C:** Tung Wah Group of Hospitals Archives, "Origins and History of Tung Wah", https://www.tungwah.org.hk. [site ?](https://www.tungwah.org.hk) [link ✗](https://hkjapaneseclub.org/assets/admin/upfile/Cemetery-EN20230214.pdf)
-
-**Disputes or myths:** Often viewed solely as a medical provider, historians show it functioned as a powerful de facto Chinese civic government, arbitration body, and international diaspora network.
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence regarding the specific founding date, funding sources, official opening, and historical role of the Tung Wah Hospital is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

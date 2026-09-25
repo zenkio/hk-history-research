@@ -4,7 +4,7 @@ title_zh: "鴉片貿易合法化"
 date: 1858-06-26
 year: 1858
 era: "The early colony"
-tags: ["evidence-b", "photo-corroborated", "1858", "ai-draft", "british-colonialism", "early-colony", "hong-kong-history", "opium-trade", "second-opium-war", "treaty-of-tientsin"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1858", "ai-draft", "british-colonialism", "early-colony", "hong-kong-history", "opium-trade", "second-opium-war", "treaty-of-tientsin"]
 summary: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
 description: "The signing of the Treaty of Tientsin in June 1858 legalized the importation of opium into China, cementing Hong Kong's economic foundation as a central hub for the drug trade."
 confidence: ai-draft
@@ -41,30 +41,17 @@ The legalization under the Treaty of Tientsin transformed Hong Kong from a contr
 - [[02_Entities/Places/tianjin|Tianjin (天津)]]
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact tariff rates and regulatory mechanisms applied to opium imports under the supplementary agreements of the Treaty of Tientsin
-- ❔ The precise volume of opium passing through Hong Kong financial institutions immediately following the 1858 treaty
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: The exact tariff rates and regulatory mechanisms applied to opium imports under the supplementary agreements of the Treaty of Tientsin. The text mentions that the Treaty of Tientsin legalized the opium trade but does not provide the exact tariff rates or regulatory mechanisms.
+- ❔ **not in Wikipedia**: The precise volume of opium passing through Hong Kong financial institutions immediately following the 1858 treaty. The text does not contain information regarding the volume of opium passing through Hong Kong financial institutions after the 1858 treaty.
 
-![An artwork depicting a British steam-powered warship engaging Chinese junk ships during the Opium Wars.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Opium_Wars.jpg/960px-Opium_Wars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Opium Wars](https://en.wikipedia.org/wiki/Opium_Wars), [Wikipedia: First Opium War](https://en.wikipedia.org/wiki/First_Opium_War)
 
-*An artwork depicting a British steam-powered warship engaging Chinese junk ships during the Opium Wars.* (artwork). Upendra Bhojani, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Opium_Wars.jpg).
-Corroborates: It illustrates the military conflict and naval superiority used by Britain to force the opening of Chinese markets and the eventual legalization of the opium trade.
-⚠️ Possible conflict: The image metadata refers to the First Opium War (1839–1842), while the legalization event occurred in 1858 following the Second Opium War.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Jeffrey A. Miron, Chris Feige (2005). *The Opium Wars, Opium Legalization, and Opium Consumption in China*. National Bureau of Economic Research.](https://doi.org/10.3386/w11355) (claims 1): The title directly addresses the Opium Wars and the legalization of opium, which provides the historical and regulatory context for the treaty mentioned.
-
-**Still needed:** The exact tariff rates and regulatory mechanisms from the Treaty of Tientsin, and the precise volume of opium passing through Hong Kong financial institutions after 1858.
-
+- ✓ [Deterrence Through Strength: British Naval Power and Foreign Policy Under Pax Britannica](https://openlibrary.org/isbn/9780803235144) (ISBN)
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -56,11 +56,9 @@ Corroborates: It depicts the treaty document that leased the New Territories to 
 *Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.* (artwork). Yumeto, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg).
 Corroborates: It illustrates the practical outcome of the Convention for the Extension of Hong Kong, specifically the establishment of the boundary for the leased New Territories.
 
-
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** *Convention for the Extension of Hong Kong Territory*, June 9, 1898, Foreign Office Records, FO 17/1397, UK National Archives; *Hertslet's China Treaties*, Vol. 1, London: His Majesty's Stationery Office (HMSO), 1908, p. 25. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/1397)
 - **Grade B:** Carroll, John M. (2013), *A Concise History of Hong Kong*, Hong Kong University Press, ISBN: 9789888139286, https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf. [ISBN ✗](https://openlibrary.org/isbn/9789888139286) _(ISBN is: China's Foreign Places)_ [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
@@ -74,6 +72,5 @@ Corroborates: It illustrates the practical outcome of the Convention for the Ext
 > Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
 
 **Still needed:** Evidence for boundary demarcations in the 1899 Convention of Peking and the roles/instructions of diplomats during the 1898 negotiations is still needed.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

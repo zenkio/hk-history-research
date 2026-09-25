@@ -42,7 +42,7 @@ This ordinance marked a critical turning point in the institutionalization of ra
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Hong Kong Government Gazette, Ordinance No. 4 of 1904, 26 April 1904; Colonial Office Records, CO 129/348/41845. [link ✗](https://www.researchgate.net/publication/239781077\_Discriminatory\_zoning\_in\_colonial\_Hong\_Kong\_A\_review\_of\_the\_post-war\_literature\_and\_some\_further\_evidence\_for\_an\_economic\_theory\_of\_discrimination) [link ✓](https://www.j3consultantshongkong.com/j3c-blog/victoria-peak-hong-kong-the-residence-at-22-barker-road) [link ✗](https://www.emerald.com/pm/article/29/1/50/321336/Discriminatory-zoning-in-colonial-Hong-KongA) [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/348)
 - **Grade B:** Carroll, John M. (2012), "The Peak: Residential Segregation in Colonial Hong Kong", in Goodman &amp; Goodman (eds.), *Twentieth-Century Colonialism and China*, Routledge, pp. 81–91. [link ✗](https://research-information.bris.ac.uk/files/214002594/Final\_Copy\_2019\_10\_01\_Chan\_C\_PhD\_Redacted.pdf)
@@ -60,6 +60,5 @@ This ordinance marked a critical turning point in the institutionalization of ra
 - [Cecilia L. Chu (2012). *Speculative Modern: Urban Forms and the Politics of Property in Colonial Hong Kong*. eScholarship (California Digital Library).](https://openalex.org/W2203730128) (claims 1, 2): The source examines the politics of property and urban development in colonial Hong Kong during the period the ordinance was enacted.
 
 **Still needed:** Direct evidence or specific mention of the Peak District Reservation Ordinance and its specific legal provisions.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

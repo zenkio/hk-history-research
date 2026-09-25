@@ -73,10 +73,9 @@ Corroborates: It provides visual evidence of the devastating impact the typhoon 
 *Debris and wrecked ships on the shore following the 1906 Great Typhoon in Hong Kong.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1906_Hong_Kong_typhoon_damage.jpg).
 Corroborates: It corroborates the devastating impact of the typhoon on maritime infrastructure and buildings.
 
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Hong Kong Observatory Official Report on the Typhoon of 18th September 1906, Hong Kong Sessional Papers, 1906; Colonial Office Records, CO 129/335. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/335)
 - **Grade B:** Campbell, I. (2005), "The Great Hong Kong Typhoon of 1906", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 45, pp. 121–140, https://www.jstor.org/stable/23889818. [link ✓](https://www.jstor.org/stable/23889818)
@@ -99,6 +98,5 @@ Corroborates: It corroborates the devastating impact of the typhoon on maritime 
 - [Fiona Williamson (2017). *Uncertain Skies. Forecasting Typhoons in Hong Kong, ca. 1874-1906*. Singapore Management University Institutional Knowledge (InK) (Singapore Management University).](https://doi.org/10.1408/90449) (claims 2): It covers the history of typhoon forecasting in Hong Kong up to 1906.
 
 **Still needed:** Specific fatality numbers and a chronological log of the meteorological warnings issued on the morning of the typhoon are required.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

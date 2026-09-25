@@ -61,11 +61,9 @@ Corroborates: This official announcement of the British takeover precipitated th
 *British troops and local residents during the formal takeover ceremony in Tai Po on April 16, 1899.* (contemporary photo). The National Archives UK, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:British_take_over_the_New_Territories.jpg).
 Corroborates: It documents the official colonial takeover of the New Territories that triggered the armed resistance of the local indigenous clans.
 
-
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Colonial Office Records, Minutes of the Colonial Office, CO 129/294, UK National Archives; Hong Kong Government Gazette, April 1899. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/294)
 - **Grade B:** Hase, Patrick H. (2008), *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*, Hong Kong University Press, ISBN: 9789622098992. [ISBN ✓](https://openlibrary.org/isbn/9789622098992) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
@@ -83,6 +81,5 @@ Corroborates: It documents the official colonial takeover of the New Territories
 - [Patrick H. Hase (2008). *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*. Project Muse (Johns Hopkins University).](https://openalex.org/W607746270) (claims 1, 2): This scholarship specifically focuses on the Six-Day War of 1899 and the resistance in the New Territories.
 
 **Still needed:** Explicit confirmation of exact casualty numbers and details on Qing officials' involvement in Shenzhen is not provided in the snippet.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

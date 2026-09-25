@@ -4,11 +4,11 @@ title_zh: "英軍佔領水坑口"
 date: 1841-01-26
 year: 1841
 era: "The early colony"
-tags: ["wikipedia-checked", "evidence-a", "1841", "ai-draft", "british-colonialism", "early-colony", "first-opium-war", "hong-kong-history", "possession-point"]
+tags: ["evidence-none", "wikipedia-checked", "1841", "ai-draft", "british-colonialism", "early-colony", "first-opium-war", "hong-kong-history", "possession-point"]
 summary: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
 description: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
 confidence: ai-draft
-evidence_grade: A
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -54,5 +54,15 @@ This event marked the foundational moment of British colonial rule in Hong Kong,
 **Articles compared:** [Wikipedia: Sulphur Channel](https://en.wikipedia.org/wiki/Sulphur_Channel)
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Log of HMS *Wellesley*, 26 January 1841, UK National Archives, ADM 53/3874; *The Chinese Repository*, Vol. 10, No. 1 (January 1841), p. 64. [wiki ?](https://en.wikipedia.org/wiki/Convention\_of\_Chuenpi) [link ✓](https://industrialhistoryhk.org/hong-kong-the-first-construction-boom/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=ADM%2053/3874)
+- **Grade B:** Endacott, G.B. (1958), *A History of Hong Kong*, Oxford University Press. [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [link ✗](https://etheses.whiterose.ac.uk/id/eprint/23889/1/Florence%20Mok\_PhD%20Thesis.pdf)
+- **Grade C:** Public Records Office, Hong Kong Government Records Service, https://www.grs.gov.hk. [site ?](https://www.grs.gov.hk) [link ✗](https://co129.com/en/about-studying-co129)
+
+**Disputes or myths:** Popular tradition cites January 26 as the initial landing date, but Commander Edward Belcher actually landed on January 25, 1841, to conduct preliminary survey work.
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

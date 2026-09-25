@@ -4,7 +4,7 @@ title_zh: "香港天文台創立"
 date: 1883-03-02
 year: 1883
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1883", "ai-draft", "british-colony", "hong-kong-observatory", "meteorology", "typhoon-warnings", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-none", "1883", "ai-draft", "british-colony", "hong-kong-observatory", "meteorology", "typhoon-warnings", "victorian-colony"]
 summary: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
 description: "Established on March 2, 1883, the Hong Kong Observatory was founded to meet the scientific, maritime, and meteorological needs of the British colonial port through systematic weather observation and timekeeping."
 confidence: ai-draft
@@ -36,17 +36,15 @@ The founding of the Observatory marked a critical transition from ad hoc weather
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/hong-kong-observatory|Hong Kong Observatory (香港天文台)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Hong Kong Observatory was officially established on March 2, 1883.
-- ❔ William Doberck served as the first director of the Hong Kong Observatory.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The Hong Kong Observatory was officially established on March 2, 1883. The text states the Observatory was established on 2 March 1883.
+- ✅ **agrees with Wikipedia**: William Doberck served as the first director of the Hong Kong Observatory. The text states that William Doberck was its first director.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Observatory](https://en.wikipedia.org/wiki/Hong_Kong_Observatory)
 
-**Still needed:** Evidence for the official establishment date and the first director of the Hong Kong Observatory is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

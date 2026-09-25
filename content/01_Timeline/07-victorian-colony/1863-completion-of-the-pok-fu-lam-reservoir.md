@@ -4,7 +4,7 @@ title_zh: "薄扶林水塘完工"
 date: 1863-01-01
 year: 1863
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1863", "19th-century", "ai-draft", "colonial-history", "infrastructure", "pok-fu-lam-reservoir", "public-health", "victorian-colony", "water-supply"]
+tags: ["wikipedia-checked", "evidence-b", "1863", "19th-century", "ai-draft", "colonial-history", "infrastructure", "pok-fu-lam-reservoir", "public-health", "victorian-colony", "water-supply"]
 summary: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
 description: "Completed in 1863, the Pok Fu Lam Reservoir was Hong Kong's first public water supply project, designed to alleviate the growing colony's chronic freshwater shortages."
 confidence: ai-draft
@@ -38,21 +38,15 @@ The completion of the **Pok Fu Lam Reservoir** (薄扶林水塘) fundamentally t
 - [[02_Entities/Places/pok-fu-lam|Pok Fu Lam (薄扶林)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Whether the reservoir was fully operational by the exact year 1863 or if that date marks the completion of the primary dam structure.
-- ❔ The specific engineering firms and colonial officials directly responsible for the construction oversight.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Whether the reservoir was fully operational by the exact year 1863 or if that date marks the completion of the primary dam structure. The text states the reservoir was completed in 1863 but does not specify if this refers to it being fully operational or the completion of the primary dam structure.
+- ❔ **not in Wikipedia**: The specific engineering firms and colonial officials directly responsible for the construction oversight. The text mentions S. B. Rawling suggested the construction, but it does not name any engineering firms or officials responsible for oversight.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Pok Fu Lam](https://en.wikipedia.org/wiki/Pok_Fu_Lam), [Wikipedia: Pok Fu Lam Reservoir](https://en.wikipedia.org/wiki/Pok_Fu_Lam_Reservoir)
 
-### Scholarship (grade B)
-
-- [Deying Tang (2023). *5. Local Reservoirs and Chinese Aqueducts: The Politics of Water Security in Hong Kong*. University of Hawaii Press eBooks.](https://doi.org/10.1515/9780824894375-007) (claims 1, 2): The title explicitly mentions local reservoirs and the politics of water security in Hong Kong.
-
-**Still needed:** Specific details confirming if 1863 refers to full operation or dam completion, and the names of the engineering firms and officials involved.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

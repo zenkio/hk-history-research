@@ -4,11 +4,11 @@ title_zh: "香港疫 fever 爆發"
 date: 1843-01-01
 year: 1843
 era: "The early colony"
-tags: ["evidence-a", "1843", "ai-draft", "early-colony", "epidemic", "hong-kong-fever", "malaria", "public-health"]
+tags: ["evidence-b", "1843", "ai-draft", "early-colony", "epidemic", "hong-kong-fever", "malaria", "public-health"]
 summary: "Between 1843 and 1844, a severe epidemic known as 'Hong Kong Fever'—largely believed by modern medicine to be malaria—decimated the early British garrison and civilian population, nearly leading London to abandon the fledgling colony."
 description: "Between 1843 and 1844, a severe epidemic known as 'Hong Kong Fever'—largely believed by modern medicine to be malaria—decimated the early British garrison and civilian population, nearly leading London to abandon the…"
 confidence: ai-draft
-evidence_grade: A
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,16 +43,14 @@ The epidemic cast severe doubt on the viability of the entire colonial enterpris
 - ❔ Exact mortality and morbidity statistics for the British garrison during the 1843 outbreak
 - ❔ Specific debates and correspondence within the British Parliament regarding the potential abandonment of Hong Kong
 
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Colonial Surgeon Reports (1844–1845), Dr. Alexander Anderson, TNA CO 129/2 #186 &amp; CO 129/7. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/hong-kong-fever-of-1843-collective-trauma-and-the-reconfiguring-of-colonial-space/FF55DCF6382540ED72A8035C8869606F) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622098053.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/2) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/7)
 - **Grade B:** Cowell, Christopher (2013), "The Hong Kong Fever of 1843: Collective Trauma and the Reconfiguring of Colonial Space," *Modern Asian Studies*, Cambridge University Press, DOI:10.1017/S0026749X12000213. [DOI ?](https://doi.org/10.1017/S0026749X12000213) [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/hong-kong-fever-of-1843-collective-trauma-and-the-reconfiguring-of-colonial-space/FF55DCF6382540ED72A8035C8869606F)
 - **Grade C:** Hong Kong Museum of Medical Sciences Society Historical Portal, https://hkupress.hku.hk/. [site ?](https://hkupress.hku.hk/) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622098053.pdf)
 
 **Disputes or myths:** Colonial authorities incorrectly attributed the fever to toxic "miasma" or decomposed mineral gas released from excavated granite rather than mosquito-borne malaria transmission.
-
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

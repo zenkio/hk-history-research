@@ -4,10 +4,11 @@ title_zh: "嚴重乾旱與嚴格制水"
 date: 1963-01-01
 year: 1963
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1963", "1963-drought", "ai-draft", "colonial-history", "manufacturing", "postwar-infrastructure", "postwar-refugees", "water-rationing"]
+tags: ["evidence-none", "1963", "1963-drought", "ai-draft", "colonial-history", "manufacturing", "postwar-infrastructure", "postwar-refugees", "water-rationing"]
 summary: "An unprecedented drought in 1963 forced the Hong Kong colonial government to impose extreme water rationing, limiting mains supply to just four hours every four days and profoundly impacting both daily life and the burgeoning manufacturing sector."
 description: "An unprecedented drought in 1963 forced the Hong Kong colonial government to impose extreme water rationing, limiting mains supply to just four hours every four days and profoundly impacting both daily life and the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The **1963** drought served as a harsh turning point in Hong Kong's infrastructu
 
 - ❔ Mains water supply was restricted to four hours every four days starting in May 1963.
 - ❔ Emergency water import agreements were officially negotiated and executed with Guangdong authorities during the 1963 crisis.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Historical sources specifically documenting Hong Kong's severe 1963 drought and strict water rationing measures are still needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

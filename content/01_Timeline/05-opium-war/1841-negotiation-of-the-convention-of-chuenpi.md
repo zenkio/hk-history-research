@@ -59,4 +59,14 @@ As a diplomatic milestone, the Convention of Chuenpi marks the exact moment Hong
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Elliot's Circular to Her Majesty's Subjects, 20 January 1841, UK National Archives, FO 17/43; *The Chinese Repository*, Vol. 10, No. 1 (January 1841), pp. 63–64. [wiki ?](https://en.wikipedia.org/wiki/Convention\_of\_Chuenpi) [link ✗](https://www.researchgate.net/publication/339175041\_Barbarian\_Ships\_Sail\_Freely\_about\_the\_Seas\_Qing\_Reactions\_to\_the\_British\_Suppression\_of\_Piracy\_in\_South\_China\_1841-1856) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/43)
+- **Grade B:** Tsang, S. (2004), *A Modern History of Hong Kong*, I.B. Tauris, ISBN: 9781845114190. [ISBN ✓](https://openlibrary.org/isbn/9781845114190)
+- **Grade C:** Hong Kong Heritage Museum Historical Exhibition Timeline. [link ✗](https://theartsjournal.org/index.php/site/article/download/528/302/1533)
+
+**Disputes or myths:** Refutes the myth that this treaty legally ceded Hong Kong; both Queen Victoria and the Daoguang Emperor repudiated the convention and dismissed their respective negotiators.
+
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

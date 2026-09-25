@@ -4,7 +4,7 @@ title_zh: "中央書院創立"
 date: 1862-02-15
 year: 1862
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1862", "ai-draft", "colonial-education", "frederick-stewart", "government-central-school", "queens-college", "victorian-colony", "victorian-hong-kong"]
+tags: ["wikipedia-checked", "evidence-none", "1862", "ai-draft", "colonial-education", "frederick-stewart", "government-central-school", "queens-college", "victorian-colony", "victorian-hong-kong"]
 summary: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
 description: "In February 1862, the Hong Kong government established its first secular, bilingual public school, which later became Queen's College, laying the foundation for training a class of bilingual Chinese intermediaries."
 confidence: ai-draft
@@ -43,18 +43,16 @@ The establishment of the Government Central School marked a pivotal turning poin
 - [[02_Entities/Places/gough-street|Gough Street (歌賦街)]]
 - [[02_Entities/Places/hollywood-road|Hollywood Road (荷李活道)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Government Central School officially opened on February 15, 1862.
-- ❔ Frederick Stewart served as the first headmaster of the Government Central School.
-- ❔ The institution was renamed Queen's College in 1894.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The Government Central School officially opened on February 15, 1862. The reference text does not mention the opening date or the existence of the Government Central School.
+- ❔ **not in Wikipedia**: Frederick Stewart served as the first headmaster of the Government Central School. The reference text does not mention Frederick Stewart or a headmaster for the Government Central School.
+- ❔ **not in Wikipedia**: The institution was renamed Queen's College in 1894. The reference text does not mention Queen's College or the renaming of any institution in 1894.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Central, Hong Kong](https://en.wikipedia.org/wiki/Central%2C_Hong_Kong), [Wikipedia: Central Government Complex (Hong Kong)](https://en.wikipedia.org/wiki/Central_Government_Complex_%28Hong_Kong%29)
 
-**Still needed:** Evidence is needed to verify the opening date, the identity of the first headmaster, and the renaming of the institution.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -49,7 +49,7 @@ This event is widely recognized by historians as the first major instance of col
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Hong Kong Ordinance No. 16 of 1844 ("Registration of Inhabitants"), TNA CO 129/6. [link ✗](https://www.tandfonline.com/doi/full/10.1080/03086534.2025.2591814) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/6)
 - **Grade B:** Lowe, Lisa (2015), *The Intimacies of Four Continents*, Duke University Press, DOI:10.1215/9780822375647. [DOI ✓](https://doi.org/10.1215/9780822375647)
@@ -63,6 +63,5 @@ This event is widely recognized by historians as the first major instance of col
 > Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
 
 **Still needed:** Evidence for all three claims regarding the 1844 registration ordinance, the resulting general strike, and its repeal is missing.
-
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

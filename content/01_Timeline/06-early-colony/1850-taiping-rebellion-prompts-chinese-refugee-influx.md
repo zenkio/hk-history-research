@@ -4,7 +4,7 @@ title_zh: "太平天國促使華人難民湧入"
 date: 1850-01-01
 year: 1850
 era: "The early colony"
-tags: ["evidence-none", "1850", "ai-draft", "demographics", "early-colony", "migration", "refugee-influx", "taiping-rebellion"]
+tags: ["wikipedia-checked", "evidence-none", "1850", "ai-draft", "demographics", "early-colony", "migration", "refugee-influx", "taiping-rebellion"]
 summary: "The outbreak of the Taiping Rebellion in **1850** triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
 description: "The outbreak of the Taiping Rebellion in 1850 triggered a massive wave of migration from mainland China to Hong Kong, significantly transforming the demographic and economic landscape of the young British colony."
 confidence: ai-draft
@@ -36,17 +36,15 @@ This large-scale migration fundamentally reshaped Hong Kong's identity from a sm
 - [[02_Entities/People/hong-xiuquan|Hong Xiuquan (洪秀全)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact population growth statistics for Hong Kong between 1850 and 1860 resulting from the Taiping Rebellion
-- ❔ Specific regulations enacted by the colonial government to manage the influx of mainland refugees in the 1850s
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact population growth statistics for Hong Kong between 1850 and 1860 resulting from the Taiping Rebellion. The text mentions the Taiping Rebellion killed at least twenty million people but does not provide population statistics for Hong Kong.
+- ❔ **not in Wikipedia**: Specific regulations enacted by the colonial government to manage the influx of mainland refugees in the 1850s. The text does not mention any regulations enacted by a colonial government.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Han Chinese](https://en.wikipedia.org/wiki/Han_Chinese)
 
-**Still needed:** Evidence is needed for both the population growth statistics of Hong Kong (1850-1860) and the specific colonial regulations used to manage Taiping Rebellion refugees.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

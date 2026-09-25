@@ -4,10 +4,11 @@ title_zh: "一九六五年香港銀行危機"
 date: 1965-02-06
 year: 1965
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1965", "ai-draft", "banking-crisis", "financial-regulation", "hang-seng-bank", "hsbc", "postwar-refugees"]
+tags: ["evidence-none", "1965", "ai-draft", "banking-crisis", "financial-regulation", "hang-seng-bank", "hsbc", "postwar-refugees"]
 summary: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
 description: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The crisis exposed vulnerabilities in Hong Kong's loosely regulated financial sy
 
 - ❔ The exact date and sequence of the run on Ming Tak Bank on February 6, 1965
 - ❔ The exact percentage and terms under which HSBC acquired its stake in Hang Seng Bank
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically detailing the Hong Kong Banking Crisis of February 1965 are needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

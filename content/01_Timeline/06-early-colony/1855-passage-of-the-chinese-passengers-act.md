@@ -51,13 +51,12 @@ The Act marked one of the earliest British legislative efforts to intervene in t
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Imperial Act 18 &amp; 19 Vict. c. 104 (Chinese Passenger Act 1855); Hong Kong Emigration Ordinance, TNA CO 129/53 &amp; CO 129/391. [link ✗](https://www.tandfonline.com/doi/abs/10.1080/03086534.2025.2591814) [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf) [link ✓](https://lib.hku.hk/cgi-bin/co129/129227.pl?keyword=ordinance) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/53) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/391)
 - **Grade B:** Leong, Jack (2019), "Hong Kong Connection: Chinese Passenger Acts and Pacific Migration," Stanford University Chinese Railroad Workers Project. [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf)
 - **Grade C:** Hong Kong Public Records Office Emigration Archive Guide, https://www.grs.gov.hk/. [site ?](https://www.grs.gov.hk/) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
 
 **Disputes or myths:** Popular belief claims the Act eradicated the abusive coolie trade; illicit operators evaded Hong Kong regulations by shifting embarkation ports to Macao and treaty ports.
-
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

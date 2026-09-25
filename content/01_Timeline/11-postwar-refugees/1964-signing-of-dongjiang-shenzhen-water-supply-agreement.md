@@ -4,10 +4,11 @@ title_zh: "簽署東深供水協議"
 date: 1964-04-22
 year: 1964
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1964", "ai-draft", "cold-war", "hong-kong-economy", "infrastructure", "postwar-history", "postwar-refugees", "water-supply"]
+tags: ["evidence-none", "1964", "ai-draft", "cold-war", "hong-kong-economy", "infrastructure", "postwar-history", "postwar-refugees", "water-supply"]
 summary: "On April 22, 1964, Hong Kong signed a landmark agreement with Guangdong province to import raw water from the Dongjiang river, providing a crucial long-term solution to the territory's severe water shortages."
 description: "On April 22, 1964, Hong Kong signed a landmark agreement with Guangdong province to import raw water from the Dongjiang river, providing a crucial long-term solution to the territory's severe water shortages."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The **Dongjiang-Shenzhen Water Supply Agreement** fundamentally transformed Hong
 
 - ❔ The Dongjiang-Shenzhen Water Supply Agreement was officially signed on April 22, 1964.
 - ❔ The 1963 water crisis in Hong Kong involved a rationing schedule of four hours every four days.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** We need a historical source or document detailing the 1964 signing of the Dongjiang-Shenzhen Water Supply Agreement and its terms, as the current candidates focus on modern environmental science, water quality, and later water governance.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

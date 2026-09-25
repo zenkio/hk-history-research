@@ -4,10 +4,11 @@ title_zh: "律勞卑事件"
 date: 1834-01-01
 year: 1834
 era: "Canton trade and the First Opium War"
-tags: ["wikipedia-checked", "1834", "ai-draft", "british-diplomacy", "canton-system", "first-opium-war", "lord-napier", "opium-war", "qing-dynasty"]
+tags: ["evidence-a", "wikipedia-checked", "1834", "ai-draft", "british-diplomacy", "canton-system", "first-opium-war", "lord-napier", "opium-war", "qing-dynasty"]
 summary: "In **1834**, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his untimely death."
 description: "In 1834, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -55,5 +56,15 @@ The Napier Affair highlighted the irreconcilable differences between British not
 **Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
 - ✓ [Barbarian Eye: Lord Napier in China, 1834, the Prelude to Hong Kong](https://openlibrary.org/isbn/9781857531169) (ISBN)
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Great Britain, Foreign Office, *Correspondence Relating to China* (1840), FO 17/7; *The Chinese Repository*, Vol. 3, No. 4 (August 1834), pp. 188–192. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/7)
+- **Grade B:** Fairbank, J.K. (1953), *Trade and Diplomacy on the China Coast: The Opening of Treaty Ports, 1842-1854*, Harvard University Press, DOI: 10.1007/978-1-349-00508-6. [DOI ?](https://doi.org/10.1007/978-1-349-00508-6)
+- **Grade C:** UK National Archives FO 17 Series Records Overview, https://discovery.nationalarchives.gov.uk/details/r/C4320. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320)
+
+**Disputes or myths:** Contradicts the common myth that Anglo-Chinese conflict was purely about opium, demonstrating that fundamental diplomatic friction over Westphalian equality versus tributary protocol initiated the confrontation.
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

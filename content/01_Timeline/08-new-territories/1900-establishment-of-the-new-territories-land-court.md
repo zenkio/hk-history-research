@@ -46,13 +46,12 @@ The creation of the Land Court marked the formal imposition of British property 
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Hong Kong Government Gazette, Government Notification No. 312 of 1900; Hong Kong Sessional Papers, 1900, Paper No. 12.
 - **Grade B:** Chun, Allen (1990), "Policing Society: The 'Rational' Practice of British Colonial Land Administration in the New Territories of Hong Kong, c. 1900", *Journal of Historical Sociology*, 3(4): 401–422, DOI: 10.1111/j.1467-6443.1990.tb00125.x. [DOI ?](https://doi.org/10.1111/j.1467-6443.1990.tb00125.x) [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226)
 - **Grade C:** Lands Department, HKSAR Government, "History of Land Surveying in Hong Kong", https://www.landsd.gov.hk. [site ?](https://www.landsd.gov.hk)
 
 **Disputes or myths:** A common misconception holds that British land registration preserved customary Qing land practices intact; in reality, it replaced complex customary dual-ownership ("topsoil and subsoil") with single-leasehold Crown titles.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

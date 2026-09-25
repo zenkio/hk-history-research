@@ -45,13 +45,12 @@ The publication of the Chadwick Report marked a turning point in the colonial ad
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Chadwick, Osbert (1882), *Report on the Sanitary Condition of Hong Kong*, London: HMSO; UK Parliamentary Papers, C. 3828; TNA CO 882/4. [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20882/4)
 - **Grade B:** Bristow, Roger (1984), *A History of Hong Kong Town Planning*, Oxford University Press, ISBN 978-0195838237. [ISBN ?](https://openlibrary.org/isbn/9780195838237) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
 - **Grade C:** Hong Kong Museum of Medical Sciences, "Sanitary Development in Colonial Hong Kong", https://www.hkmms.org.hk. [site ?](https://www.hkmms.org.hk) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en) [link ✗](https://hkjapaneseclub.org/assets/admin/upfile/Cemetery-EN20230214.pdf)
 
 **Disputes or myths:** Colonial merchants blamed unsanitary conditions on inherent "Chinese filthiness", but Chadwick proved it stemmed from landlord exploitation, lack of water, and municipal inaction.
-
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

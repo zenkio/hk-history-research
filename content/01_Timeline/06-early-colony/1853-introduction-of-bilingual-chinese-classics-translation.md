@@ -4,7 +4,7 @@ title_zh: "中外雙語經典翻譯之始"
 date: 1853-01-01
 year: 1853
 era: "The early colony"
-tags: ["evidence-none", "1853", "ai-draft", "bilingual-translation", "confucian-classics", "early-colony", "james-legge", "sinology"]
+tags: ["wikipedia-checked", "evidence-none", "1853", "ai-draft", "bilingual-translation", "confucian-classics", "early-colony", "james-legge", "sinology"]
 summary: "In **1853**, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
 description: "In 1853, Scottish missionary James Legge began publishing his monumental English translations of Chinese classics in Hong Kong, marking a major milestone in cross-cultural scholarship during the early colonial era."
 confidence: ai-draft
@@ -40,17 +40,15 @@ Legge’s translation project laid foundational groundwork for modern sinology a
 - [[02_Entities/People/wang-tao|Wang Tao (王韜)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ James Legge began publishing his core translations of the Chinese classics around 1853.
-- ❔ Wang Tao collaborated closely with James Legge on these translation and publishing efforts.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: James Legge began publishing his core translations of the Chinese classics around 1853. The reference text does not mention James Legge or the date 1853.
+- ❔ **not in Wikipedia**: Wang Tao collaborated closely with James Legge on these translation and publishing efforts. The reference text does not mention Wang Tao or any collaboration with James Legge.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chinese language](https://en.wikipedia.org/wiki/Chinese_language)
 
-**Still needed:** Evidence is needed for both claims, specifically sources discussing James Legge's translations of Chinese classics starting in 1853 and his collaboration with Wang Tao.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

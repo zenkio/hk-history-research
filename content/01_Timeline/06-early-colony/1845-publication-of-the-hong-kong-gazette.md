@@ -4,7 +4,7 @@ title_zh: "《香港憲報》出版"
 date: 1845-01-01
 year: 1845
 era: "The early colony"
-tags: ["1845", "19th-century", "ai-draft", "colonial-history", "early-colony", "government-records", "hong-kong-gazette", "legal-history"]
+tags: ["photo-corroborated", "1845", "19th-century", "ai-draft", "colonial-history", "early-colony", "government-records", "hong-kong-gazette", "legal-history"]
 summary: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
 description: "In 1845, the colonial administration launched the 'Hong Kong Gazette' (香港憲報) to formalize the dissemination of government notifications and legislative policy."
 confidence: ai-draft
@@ -39,5 +39,31 @@ The introduction of the **Hong Kong Gazette** marked a transition from a provisi
 
 - ❔ Verify the precise date of the first publication of the Hong Kong Gazette in 1845 through the Public Records Office.
 - ❔ Examine whether the 1845 publication was the first official government paper or a successor to shorter-lived printed bulletins.
+
+## Photos from this period
+
+![The front page of Vol. I No. 1 of The Hong Kong Gazette, dated May 1st, 1841.](https://upload.wikimedia.org/wikipedia/commons/4/4c/The_Hong_Kong_Gazette_Vol._I_No._1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*The front page of Vol. I No. 1 of The Hong Kong Gazette, dated May 1st, 1841.* (document). The Hong Kong Gazette, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Hong_Kong_Gazette_Vol._I_No._1.jpg).
+Corroborates: It provides a primary source example of the official government publication used for dissemination of notifications and policy.
+⚠️ Possible conflict: The date on the document (1841) contradicts the date given in the event description (1845).
+
+![A detail from the masthead of the Hong Kong Government Gazette from 1853, featuring the British royal coat of arms.](https://upload.wikimedia.org/wikipedia/commons/3/3b/%22Hongkong%22_%22DIEU_ET_MON_DROIT%22_Hong_Kong_Government_Gazette_of_3_December_1853_art_detail%2C_from-_HKGovGazette_Old_Series_No_11_%28page_1_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A detail from the masthead of the Hong Kong Government Gazette from 1853, featuring the British royal coat of arms.* (document). Government of Hong Kong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%22Hongkong%22_%22DIEU_ET_MON_DROIT%22_Hong_Kong_Government_Gazette_of_3_December_1853_art_detail,_from-_HKGovGazette_Old_Series_No_11_(page_1_crop).jpg).
+Corroborates: It serves as a visual representative of the official government publication launched in 1845.
+
+![A page from an early edition of The Hongkong Gazette dated 1841, listing the populations of various villages and settlements.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/%E3%80%8A%E4%B8%AD%E5%9C%8B%E5%8F%A2%E5%A0%B1%E3%80%8B%E9%A6%99%E6%B8%AF%E5%B3%B6%E4%BA%BA%E5%8F%A3%E7%B5%B1%E8%A8%88_Hong_Kong_Island_Population_in_%22Chinese_Repository%22%2C_1841.jpg/960px-%E3%80%8A%E4%B8%AD%E5%9C%8B%E5%8F%A2%E5%A0%B1%E3%80%8B%E9%A6%99%E6%B8%AF%E5%B3%B6%E4%BA%BA%E5%8F%A3%E7%B5%B1%E8%A8%88_Hong_Kong_Island_Population_in_%22Chinese_Repository%22%2C_1841.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A page from an early edition of The Hongkong Gazette dated 1841, listing the populations of various villages and settlements.* (document). Unknown., Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E3%80%8A%E4%B8%AD%E5%9C%8B%E5%8F%A2%E5%A0%B1%E3%80%8B%E9%A6%99%E6%B8%AF%E5%B3%B6%E4%BA%BA%E5%8F%A3%E7%B5%B1%E8%A8%88_Hong_Kong_Island_Population_in_%22Chinese_Repository%22,_1841.jpg).
+Corroborates: It provides a direct example of the publication described in the event summary.
+⚠️ Possible conflict: The image is dated 1841, while the event summary indicates the Gazette was launched in 1845.
+
+![A composite image featuring copies of 'The China Mail' and the first issue of 'The Hongkong Gazette' dated May 1st, 1841.](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Tcitp_d352_china_mail_and_the_hong_kong_gazette.jpg/960px-Tcitp_d352_china_mail_and_the_hong_kong_gazette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A composite image featuring copies of 'The China Mail' and the first issue of 'The Hongkong Gazette' dated May 1st, 1841.* (document). Arnold Wright, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tcitp_d352_china_mail_and_the_hong_kong_gazette.jpg).
+Corroborates: It provides a visual representation of the 'Hongkong Gazette' mentioned in the event description.
+⚠️ Possible conflict: The date on the Gazette in the image is May 1st, 1841, whereas the event is dated 1845.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

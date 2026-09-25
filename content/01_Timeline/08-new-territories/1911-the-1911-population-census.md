@@ -44,13 +44,12 @@ The census data provided colonial authorities with critical metrics regarding ho
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** *Report on the Census of the Colony for 1911*, Hong Kong Sessional Papers, Papers No. 1911/17. [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226)
 - **Grade B:** Fan, Shuh Ching (1974), "The Population of Hong Kong", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 14, pp. 1–20, https://www.jstor.org/stable/23881627. [link ✓](https://www.jstor.org/stable/23881627)
 - **Grade C:** Census and Statistics Department, HKSAR Government, "Centenary Demographics", https://www.censtatd.gov.hk. [site ?](https://www.censtatd.gov.hk)
 
 **Disputes or myths:** Popular assumptions treat early 20th-century population growth as steady organic expansion; census data proved growth was driven by sudden surges of refugees escaping the Xinhai Revolution.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

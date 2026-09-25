@@ -4,7 +4,7 @@ title_zh: "香港動植物公園開幕"
 date: 1871-08-06
 year: 1871
 era: "Kowloon and the Victorian colony"
-tags: ["1871", "ai-draft", "botanical-gardens", "colonial-history", "horticulture", "public-parks", "victorian-colony", "victorian-era"]
+tags: ["photo-corroborated", "1871", "ai-draft", "botanical-gardens", "colonial-history", "horticulture", "public-parks", "victorian-colony", "victorian-era"]
 summary: "The formal opening of the Hong Kong Botanical Gardens in August 1871 marked the establishment of a dual-purpose scientific and recreational space in the growing Victorian colony."
 description: "The formal opening of the Hong Kong Botanical Gardens in August 1871 marked the establishment of a dual-purpose scientific and recreational space in the growing Victorian colony."
 confidence: ai-draft
@@ -42,5 +42,13 @@ The gardens quickly became a central fixture of Victorian social life in the col
 
 - ❔ Exact completion milestones and operational status of the Hong Kong Botanical Gardens as of August 6, 1871
 - ❔ The extent of public access granted to different ethnic communities during the early years of the gardens
+
+## Photos from this period
+
+![A sign at the entrance of the Hong Kong Zoological and Botanical Gardens displaying its opening hours and rules.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/HK_Central_ZAB_Garden_02_Opening_Hours_%E9%A6%99%E6%B8%AF%E5%8B%95%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92_Rules.JPG/960px-HK_Central_ZAB_Garden_02_Opening_Hours_%E9%A6%99%E6%B8%AF%E5%8B%95%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92_Rules.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A sign at the entrance of the Hong Kong Zoological and Botanical Gardens displaying its opening hours and rules.* (later photo of the site). Rondnoirm, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_Central_ZAB_Garden_02_Opening_Hours_%E9%A6%99%E6%B8%AF%E5%8B%95%E6%A4%8D%E7%89%A9%E5%85%AC%E5%9C%92_Rules.JPG).
+Corroborates: It provides a modern view of the site mentioned in the historical event.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

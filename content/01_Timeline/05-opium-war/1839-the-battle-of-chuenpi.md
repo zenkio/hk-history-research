@@ -51,4 +51,14 @@ The Battle of Chuenpi (**穿鼻之戰**) is widely viewed by historians as the c
 
 _The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+
+- **Grade A:** Captain H. Smith to Rear-Admiral F.L. Maitland, 3 November 1839, UK National Archives, ADM 1/5496; *The Chinese Repository*, Vol. 8, No. 7 (November 1839), pp. 486–491. [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=ADM%201/5496)
+- **Grade B:** Fay, P.W. (1997), *The Opium War, 1840-1842: Barbarians in the Celestial Empire*, University of North Carolina Press, ISBN: 0807847143. [ISBN ✓](https://openlibrary.org/isbn/0807847143) [link ✗](https://military-history.fandom.com/wiki/Second\_Battle\_of\_Chuenpi)
+- **Grade C:** National Maritime Museum Greenwich Archive Collections. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320)
+
+**Disputes or myths:** Western historians frequently date the formal military start of the Opium War to this naval battle, whereas Qing authorities viewed earlier food blockades as active warfare.
+
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

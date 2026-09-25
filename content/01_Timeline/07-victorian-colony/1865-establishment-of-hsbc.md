@@ -4,7 +4,7 @@ title_zh: "香港上海匯豐銀行之創立"
 date: 1865-03-03
 year: 1865
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1865", "ai-draft", "banking", "colonial-economy", "hsbc", "trade", "victorian-colony"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1865", "ai-draft", "banking", "colonial-economy", "hsbc", "trade", "victorian-colony"]
 summary: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
 description: "On March 3, 1865, local and international merchants established The Hongkong and Shanghai Banking Corporation, laying the foundation for Hong Kong's rise as a major international financial hub."
 confidence: ai-draft
@@ -38,17 +38,15 @@ The creation of the bank marked a pivotal transition in the economic history of 
 - [[02_Entities/Places/calcutta|Calcutta (加爾各答)]]
 - [[02_Entities/Places/bombay|Bombay (孟買)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of commencement of operations on March 3, 1865
-- ❔ The specific composition and nationalities of the founding committee members
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact date of commencement of operations on March 3, 1865. The text states that March 3, 1865, is when the Shanghai branch office was established, while the bank overall opened its doors in 1865.
+- ❔ **not in Wikipedia**: The specific composition and nationalities of the founding committee members. The reference text does not mention the composition or nationalities of the founding committee members.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: HSBC (Hong Kong)](https://en.wikipedia.org/wiki/HSBC_%28Hong_Kong%29), [Wikipedia: HSBC Building (Hong Kong)](https://en.wikipedia.org/wiki/HSBC_Building_%28Hong_Kong%29)
 
-**Still needed:** Evidence confirming the specific commencement date in 1865 and details regarding the founding committee's composition and nationalities is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

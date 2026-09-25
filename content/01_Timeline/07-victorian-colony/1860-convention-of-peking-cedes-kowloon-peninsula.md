@@ -4,7 +4,7 @@ title_zh: "北京條約割讓九龍半島"
 date: 1860-10-24
 year: 1860
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-b", "1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
 summary: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical footprint of the fledgling Hong Kong colony."
 description: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical…"
 confidence: ai-draft
@@ -44,28 +44,15 @@ This territorial expansion marked the second major phase in the creation of mode
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?
-- ❔ Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
+- ✅ **agrees with Wikipedia**: Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?. The text states that the Convention of Peking formally ceded the part of the Kowloon Peninsula south of Boundary Street to Britain on 24 October 1860.
+- ❔ **not in Wikipedia**: Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?. The text states that Britain's occupation of Kowloon was initiated in 1860, but it does not specify if this occurred before or after the formal signing of the treaty on 24 October.
 
-## Research notes
+**Articles compared:** [Wikipedia: Kowloon Peninsula](https://en.wikipedia.org/wiki/Kowloon_Peninsula), [Wikipedia: Convention of Peking](https://en.wikipedia.org/wiki/Convention_of_Peking)
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
-
-- **Grade A:** *Convention of Peking*, October 24, 1860, TNA CO 129/78; *Hertslet's China Treaties*, Vol. 1, London: His Majesty's Stationery Office, 1908. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/78)
-- **Grade B:** Tsang, Steve (2004), *A Modern History of Hong Kong*, I.B. Tauris, ISBN 978-1845114190; Endacott, G.B. (1958), *A History of Hong Kong*, Oxford University Press. [ISBN ✓](https://openlibrary.org/isbn/9781845114190) [link ✗](https://www.elibrary.imf.org/view/journals/002/1997/050/article-A001-en.xml) [link ✗](https://www.emerald.com/pap/article/24/3/253/452204/The-Guangdong-Hong-Kong-nexus-in-grassroots)
-- **Grade C:** Hong Kong Museum of History, "The Acquisition of Kowloon Peninsula", HK Government Heritage Page, https://www.lcsd.gov.hk/CE/Museum/History. [link ✓](https://www.lcsd.gov.hk/CE/Museum/History) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong) [link ✗](https://www.elibrary.imf.org/view/journals/002/1997/050/article-A001-en.xml)
-
-**Disputes or myths:** PRC official historiography considers the treaty "unequal" and invalid ab initio, denying British sovereignty ever existed, whereas British legal policy maintained full legal cession in perpetuity.
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence specifically detailing the terms of the Convention of Peking (1860), the specific boundary of Kowloon, and the military occupation status of Kowloon prior to the treaty is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

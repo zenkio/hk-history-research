@@ -48,13 +48,12 @@ The relocation is widely regarded by historians as the foundational moment for W
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Morrison Education Society *Fourth Annual Report*, in *The Chinese Repository*, Vol. 11, No. 10 (October 1842), pp. 541–556. [link ✗](https://www.researchgate.net/publication/227603474\_Hong\_Kong's\_New\_English\_Language\_Policy\_in\_Education)
 - **Grade B:** Ng, A.C.H. (1987), *Incidental Leaders: History of Hong Kong Elite*, Hong Kong University Press. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/role-of-hong-kong-educated-chinese-in-the-shaping-of-modern-china/5187A4F296313C414F5CD4CB5BC9F649)
 - **Grade C:** Hong Kong Educational Museum Records. [link ✓](https://dianapang.net/4p2/beyond-church-and-chapels)
 
 **Disputes or myths:** Rejects claims that early education was state-funded; early schooling was constructed and managed entirely by Protestant missionary organization capital.
-
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

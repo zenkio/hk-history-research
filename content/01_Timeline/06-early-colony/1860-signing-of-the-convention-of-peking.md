@@ -4,7 +4,7 @@ title_zh: "北京條約"
 date: 1860-10-24
 year: 1860
 era: "The early colony"
-tags: ["evidence-none", "photo-corroborated", "1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1860", "ai-draft", "british-empire", "convention-of-peking", "early-colony", "kowloon", "qing-dynasty", "second-opium-war", "unequal-treaties"]
 summary: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 description: "On October 24, 1860, the Convention of Peking formally ceded the Kowloon Peninsula to Great Britain, significantly expanding the nascent colony's territory and securing control over its vital deep-water harbor."
 confidence: ai-draft
@@ -39,25 +39,15 @@ This territorial expansion fundamentally changed the geography and strategic cap
 - [[02_Entities/Places/stonecutters-island|Stonecutters Island (昂船洲)]]
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact coordinates and boundary markers established for the Kowloon Peninsula under the Convention of Peking
-- ❔ The specific administrative mechanisms used to transfer jurisdiction of Kowloon from Qing officials to British colonial authorities
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: The exact coordinates and boundary markers established for the Kowloon Peninsula under the Convention of Peking. The text describes boundaries using landmarks such as Boundary Street and the Sham Chun River, but it does not provide exact coordinates or boundary markers.
+- ❔ **not in Wikipedia**: The specific administrative mechanisms used to transfer jurisdiction of Kowloon from Qing officials to British colonial authorities. The text mentions that the territory was ceded to Britain and was originally governed by Xin'an County, but it does not describe the administrative mechanisms used for the transfer.
 
-![A section of the Chinese text from the Convention of Peking detailing the cession of Kowloon to Great Britain.](https://upload.wikimedia.org/wikipedia/commons/5/5c/Convention_of_Peking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Convention for the Extension of Hong Kong Territory](https://en.wikipedia.org/wiki/Convention_for_the_Extension_of_Hong_Kong_Territory), [Wikipedia: Convention of Peking](https://en.wikipedia.org/wiki/Convention_of_Peking)
 
-*A section of the Chinese text from the Convention of Peking detailing the cession of Kowloon to Great Britain.* (document). Qing Government, China in conjunction with the Europeans (French, British, Russian) in 1860, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Convention_of_Peking.jpg).
-Corroborates: It provides primary documentary evidence of the formal cession of the Kowloon Peninsula mentioned in the page summary.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence specifically documenting the 1860 Convention of Peking, such as treaty texts or maps detailing the coordinates and administrative transfer of the Kowloon Peninsula.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

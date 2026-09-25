@@ -4,7 +4,7 @@ title_zh: "寶寧爵士就任總督"
 date: 1854-04-13
 year: 1854
 era: "The early colony"
-tags: ["evidence-none", "1854", "ai-draft", "colonial-governance", "early-colony", "free-trade", "governor-bowring"]
+tags: ["wikipedia-checked", "evidence-none", "1854", "ai-draft", "colonial-governance", "early-colony", "free-trade", "governor-bowring"]
 summary: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
 description: "On April 13, 1854, Sir John Bowring assumed office as the fourth Governor of Hong Kong, bringing a reform-minded agenda centered on free trade, infrastructure development, and greater inclusion of local residents."
 confidence: ai-draft
@@ -39,17 +39,20 @@ Bowring's governorship marked a philosophical shift in early British administrat
 - [[02_Entities/People/sir-george-bonham|Sir George Bonham (文咸)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Sir John Bowring officially assumed the governorship of Hong Kong on April 13, 1854.
-- ❔ Bowring advocated for the political representation of Chinese residents during his administration.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Sir John Bowring officially assumed the governorship of Hong Kong on April 13, 1854. The text states he arrived in Hong Kong and was sworn in on 13 April 1854.
+- ❔ **not in Wikipedia**: Bowring advocated for the political representation of Chinese residents during his administration. The text mentions he attempted democratic reform by proposing to increase Legislative Council membership through elections, but it does not explicitly state he advocated for the representation of Chinese residents.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: John Bowring](https://en.wikipedia.org/wiki/John_Bowring)
 
-**Still needed:** Evidence for both the date Sir John Bowring assumed the governorship and his advocacy for Chinese political representation is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Free Trade's First Missionary: Sir John Bowring in Europe and Asia](https://openlibrary.org/isbn/9789888208722) (ISBN)
+- ✓ [Sir John Bowring: the imperial role of a lifelong radical](https://doi.org/10.1080/03068374.2011.605604) (DOI)
+- ✓ [Jeremy Bentham and John Bowring: a study of the relationship between Bentham and the editor of his ''Collected Works''](https://doi.org/10.1111/j.1468-2281.1963.tb00620.x) (DOI)
+- ✓ [John Bowring and the global dissemination of free trade](https://doi.org/10.1017/s0018246x08006754) (DOI)
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

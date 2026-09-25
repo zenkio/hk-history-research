@@ -4,11 +4,11 @@ title_zh: "香港宣佈為自由港"
 date: 1841-06-07
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-a", "photo-corroborated", "1841", "ai-draft", "charles-elliot", "colonial-history", "first-opium-war", "free-port", "opium-war", "trade"]
+tags: ["evidence-b", "photo-corroborated", "1841", "ai-draft", "charles-elliot", "colonial-history", "first-opium-war", "free-port", "opium-war", "trade"]
 summary: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
 description: "On June 7, 1841, British Plenipotentiary Charles Elliot declared Hong Kong an open, duty-free port, establishing the foundation for its rise as a global maritime and commercial center."
 confidence: ai-draft
-evidence_grade: A
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -65,16 +65,14 @@ Corroborates: It is the primary document announcing the duty-free status of Hong
 *The proclamation issued by British Plenipotentiary Charles Elliot on June 7, 1841, declaring Hong Kong a free port.* (document). Foreign Office, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:C_Elliot_proclamation_to_maritime_provinces.jpg).
 Corroborates: It is the primary document announcing the establishment of Hong Kong as an open, duty-free port.
 
-
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Elliot's Proclamation to the Inhabitants of Hong Kong, 2 February 1841, UK National Archives, CO 129/1, fo. 15–18; *The Chinese Repository*, Vol. 10, No. 2 (February 1841), pp. 89–91. [link ✗](https://military-history.fandom.com/wiki/Second\_Battle\_of\_Chuenpi) [link ✓](https://sillares.uanl.mx/index.php/s/article/view/140) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/1)
 - **Grade B:** Munn, C. (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1880*, Hong Kong University Press, ISBN: 9789622095366. [ISBN ✗](https://openlibrary.org/isbn/9789622095366) _(ISBN is: Consuming Hong Kong)_ [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE)
 - **Grade C:** Hong Kong Museum of History Digital Collection. [link ✗](https://www.researchgate.net/publication/393672379\_British\_Colonial\_Rule\_over\_Littoral\_Space\_and\_Watercraft\_in\_Hong\_Kong\_1841-1898)
 
 **Disputes or myths:** Contradicts the assumption that English common law applied uniformly from day one; Elliot intentionally preserved legal duality to maintain native civil order.
-
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

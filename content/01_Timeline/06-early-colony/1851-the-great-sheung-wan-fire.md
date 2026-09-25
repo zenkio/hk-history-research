@@ -48,7 +48,7 @@ Local communities and colonial administrators viewed the aftermath through diffe
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Despatches on Sheung Wan Fire, Governor Jervois to Secretary of State, May 21, 1852, TNA CO 129/40, p. 108. [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✗](https://s3.us-west-1.wasabisys.com/p-library/books/3b5060e5d7e2180520f977e461a6f262.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/40)
 - **Grade B:** Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1870*, Hong Kong University Press, ISBN:9888139714. [ISBN ?](https://openlibrary.org/isbn/9888139714) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item:4107982/view) [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622099517.pdf)
@@ -62,6 +62,5 @@ Local communities and colonial administrators viewed the aftermath through diffe
 > Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
 
 **Still needed:** Evidence is needed for all three claims, as none of the provided sources specifically address the Great Sheung Wan Fire of 1851.
-
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

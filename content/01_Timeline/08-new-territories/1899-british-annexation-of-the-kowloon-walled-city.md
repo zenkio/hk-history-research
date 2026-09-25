@@ -48,7 +48,7 @@ The annexation marked a decisive assertion of unilateral British authority in vi
 
 ## Research notes
 
-> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
 
 - **Grade A:** Colonial Office Records, Chamberlain to Blake, 4 December 1899, CO 129/294, pp. 465–479, UK National Archives; Foreign Office Records, FO 17/1397. [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf) [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/294) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/1397)
 - **Grade B:** Kwong, Chi Man, and Tsoi, Yiu Lun (2014), *Eastern Fortress: A Military History of Hong Kong, 1840-1970*, Hong Kong University Press, ISBN: 9789888208715. [ISBN ✓](https://openlibrary.org/isbn/9789888208715) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
@@ -62,6 +62,5 @@ The annexation marked a decisive assertion of unilateral British authority in vi
 > Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
 
 **Still needed:** Sources specifically documenting the British occupation of the Kowloon Walled City on December 27, 1899, and Governor Sir Henry Arthur Blake's orders regarding Qing officials.
-
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

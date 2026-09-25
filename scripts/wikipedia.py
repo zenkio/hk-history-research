@@ -25,7 +25,9 @@ ARTICLES = 2
 MAX_CITES = 5
 MIN_PARA_OVERLAP = 2  # a paragraph must share 2+ words with the page to be sent
 EVENT_WORDS = set("founding foundation opening establishment restoration introduction launch start end "
-                  "beginning creation formation signing outbreak arrival death birth first new".split())
+                  "beginning creation formation signing outbreak arrival death birth first new construction "
+                  "consecration declared assumes gathers completion inauguration enactment passage proclamation "
+                  "devastating great sir governorship appointed prompts sparks moves".split())
 MIN_CITE_OVERLAP = 2  # a cited work's title must share 2+ words with the page's claims
 GENERIC = {"Hong Kong", "British Hong Kong", "History of Hong Kong", "China", "History of China",
            "Qing dynasty", "Kowloon", "New Territories", "Hong Kong Island"}
@@ -78,17 +80,31 @@ def query_for(title, year=None):
     return " ".join(words + ([str(year)] if year else []))
 
 
+def find_articles(title, year=None):
+    """Articles named like the event. "Hong Kong" anchors the search (without it, "St John's
+    Cathedral 1849" finds Helsinki Cathedral); the year is tried second because it dilutes the
+    title words; the overview articles are filtered out in search()."""
+    key = _words(title) - EVENT_WORDS
+    first = None
+    for query in (query_for(title) + " Hong Kong", query_for(title, year) + " Hong Kong"):
+        found = search(query)
+        first = first or found
+        named = [t for t in found if _words(t) & key]
+        if named:
+            return named
+    return (first or [])[:1]
+
+
 def reference_text(title, claims, year=None):
     """(text, sources, titles): the most relevant Wikipedia paragraphs for these claims."""
     want = _words(title + " " + " ".join(claims))
-    key = _words(title) - EVENT_WORDS
-    found = search(query_for(title, year)) or search(query_for(title))
-    # Prefer articles named like the event (e.g. "Young Plan"); otherwise only the top hit.
-    titles = [t for t in found if _words(t) & key] or found[:1]
+    titles = find_articles(title, year)
     scored, sources = [], []
     for t in titles:
         body = article(t)
-        if not body:
+        # The first article is the best match; any other must at least be about Hong Kong
+        # ("Malta Police Force" matches "police force" but says nothing about Hong Kong).
+        if not body or (t != titles[0] and "Hong Kong" not in body):
             continue
         sources.append({"title": f"Wikipedia: {t}",
                         "uri": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(t.replace(" ", "_"))})
@@ -98,13 +114,16 @@ def reference_text(title, claims, year=None):
                 continue
             scored.append((len(want & _words(para)), t, para))
     scored.sort(key=lambda s: -s[0])
-    out, size = [], 0
+    out, size, used = [], 0, set()
     for score, t, para in scored:
         if score < MIN_PARA_OVERLAP or size + len(para) > MAX_CHARS:
             continue
         out.append(f"[{t}] {para}")
         size += len(para)
-    return "\n\n".join(out), sources, titles
+        used.add(t)
+    # List only the articles whose text was actually compared.
+    sources = [s for s in sources if s["title"].removeprefix("Wikipedia: ") in used]
+    return "\n\n".join(out), sources, [t for t in titles if t in used]
 
 
 CITE_RE = re.compile(r"\{\{\s*cite[^{}]*\}\}", re.I)

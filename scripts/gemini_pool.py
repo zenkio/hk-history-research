@@ -44,7 +44,11 @@ IMAGE_TOKEN_ESTIMATE = 1_500
 TRANSIENT_TRIES = 4      # per request on large-quota models, for 503/500/timeouts
 SCARCE_RPD = 50          # models this small move on after one overload error: Google still bills it
 IDLE_CYCLES = 3
-COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload retries          # full passes over the routing list before giving up on a transient outage
+COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload retries
+# OpenRouter's free models are rate-limited upstream, often for many minutes: waiting 60 s and
+# retrying cost run 15 ~38 minutes of the research worker. Rest the model and let the next one
+# in the routing (Gemma) take the call instead.
+RATE_LIMIT_COOLDOWN = 300
 # Suffix tokens an API id may add to a configured name and still be the same model.
 ALLOWED_EXTRA = re.compile(r"^(preview|latest|exp|it|a\d+b|\d+)$")
 
@@ -395,7 +399,9 @@ class ModelPool:
 
     def _try_model(self, key, role, prompt, search, parse, media=None):
         m = self.models[key]
-        bad_json = transient = 0
+        if self.cooldown.get(key, 0) > time.time():
+            return None  # resting after rate limits or overloads earlier in this call chain
+        bad_json = transient = rate_limited = 0
         # AI Studio counts 503 "high demand" failures against RPD, so a 20-per-day
         # model must not spend its budget retrying an overload.
         max_transient = 1 if m["rpd"] <= SCARCE_RPD else TRANSIENT_TRIES
@@ -425,6 +431,12 @@ class ModelPool:
                             # OpenRouter's free limit is account-wide: stop every model on it.
                             rec["count"] = cap
                             self.save()
+                        return None
+                    rate_limited += 1
+                    if self._provider(key) == "openrouter" or rate_limited >= 2:
+                        self.cooldown[key] = time.time() + RATE_LIMIT_COOLDOWN
+                        print(f"  [pool] {key} per-minute limit; resting it {RATE_LIMIT_COOLDOWN // 60} min, "
+                              "the next model takes over")
                         return None
                     print(f"  [pool] {key} per-minute limit, backing off 60s")
                     time.sleep(60)

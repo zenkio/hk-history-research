@@ -4,10 +4,11 @@ title_zh: "宣佈頒布警廉特赦"
 date: 1977-11-05
 year: 1977
 era: "Riots and the MacLehose reforms"
-tags: ["1977", "ai-draft", "colonial-history", "icac", "mac-lehose-reforms", "police-mutiny", "riots-and-reform", "rule-of-law"]
+tags: ["evidence-none", "1977", "ai-draft", "colonial-history", "icac", "mac-lehose-reforms", "police-mutiny", "riots-and-reform", "rule-of-law"]
 summary: "In November 1977, amid escalating tensions and protests by police officers against the Independent Commission Against Corruption, Governor Murray MacLehose announced a partial amnesty. This decisive move quelled an impending mutiny within the force while drawing lasting debate over the compromise of the rule of law."
 description: "In November 1977, amid escalating tensions and protests by police officers against the Independent Commission Against Corruption, Governor Murray MacLehose announced a partial amnesty."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The **1977 amnesty** remains one of the most controversial episodes in modern Ho
 - ❔ Governor MacLehose announced the partial amnesty specifically on November 5, 1977.
 - ❔ The amnesty cut-off date applied to corruption offences committed before January 1, 1977.
 - ❔ Hundreds of police officers marched on ICAC headquarters in October 1977 prior to the amnesty announcement.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific historical records or news reports confirming the declaration of the Police-ICAC amnesty in Hong Kong on November 5, 1977, are needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

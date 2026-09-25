@@ -4,10 +4,11 @@ title_zh: "一九六七年香港暴動"
 date: 1967-05-06
 year: 1967
 era: "Riots and the MacLehose reforms"
-tags: ["photo-corroborated", "1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
+tags: ["evidence-b", "photo-corroborated", "1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
 summary: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British colonial administration."
 description: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -69,6 +70,21 @@ Corroborates: It illustrates the violent confrontations and security operations 
 
 *A newspaper clipping from October 1967 reporting on rewards for reporting hidden explosives and praising the Hong Kong Police.* (document). 華僑日報（Wah Kiu Yat Po）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg).
 Corroborates: It corroborates the massive bomb campaign and police response during the 1967 Leftist Riots.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Clement Tsz Ming Tong (2016). *The Hong Kong week of 1967 and the emergence of Hong Kong identity through contradistinction*. Journal of the Royal Asiatic Society Hong Kong Branch.](https://openalex.org/W2991204887): Discusses the 1967 riots and their influence on the emergence of Hong Kong identity.
+- [Gary Ka-wai Cheung (2009). *Hong Kong’s Watershed*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888052363): Provides an account and critical analysis of the 1967 riots based on declassified files.
+- [ (2009). *May Days in Hong Kong*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888052561): Studies the causes and impact of the anti-colonial riots that erupted in May 1967.
+- [Victor Fan (2019). *Extraterritoriality: Locating Hong Kong Cinema and Media*.](https://doi.org/10.1515/9781474440448): Discusses Hong Kong cinema and media in the context of the 1967 Leftist Riots.
+
+**Still needed:** No specific claims were provided to evaluate, so it is unclear if additional evidence is needed.
 
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

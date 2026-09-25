@@ -4,7 +4,7 @@ title_zh: "赤柱拘留營的建立"
 date: 1942-01-19
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1942", "ai-draft", "battle-of-hong-kong", "civilian-internees", "japanese-occupation", "stanley-internment-camp", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1942", "ai-draft", "battle-of-hong-kong", "civilian-internees", "japanese-occupation", "stanley-internment-camp", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on **January 19, 1942**, confining nearly 3,000 British and Allied civilians under increasingly harsh conditions."
 description: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on January 19, 1942, confining nearly 3,000 British and Allied civilians under increasingly harsh…"
 confidence: ai-draft
@@ -41,17 +41,20 @@ The establishment of Stanley Internment Camp marked a profound disruption of the
 - [[02_Entities/Places/stanley-internment-camp|Stanley Internment Camp (赤柱拘留營)]]
 - [[02_Entities/Places/st-stephens-college|St. Stephen's College (聖士提反書院)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact census figures of civilian internees transferred to Stanley on January 19, 1942
-- ❔ The precise administrative orders issued by the Japanese military regarding the segregation of Western civilians
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact census figures of civilian internees transferred to Stanley on January 19, 1942. The text states about 2,800 people were held at the camp from early January 1942, but does not provide exact census figures for January 19, 1942.
+- ❔ **not in Wikipedia**: The precise administrative orders issued by the Japanese military regarding the segregation of Western civilians. The text does not mention precise administrative orders issued by the Japanese military regarding the segregation of Western civilians.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Stanley Internment Camp](https://en.wikipedia.org/wiki/Stanley_Internment_Camp)
 
-**Still needed:** Evidence is needed regarding the exact census figures for civilian internees transferred to Stanley on January 19, 1942, and the specific Japanese military administrative orders concerning the segregation of Western civilians.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Hong Kong Internment, 1942–1945: Life in the Japanese Civilian Camp at Stanley](https://openlibrary.org/isbn/9789622098800) (ISBN)
+- ✓ [Stanley Internment Camp, Hong Kong, 1942–1945: A Study of Civilian Internment During The Second World War](https://doi.org/10.5353/th_b3120386) (DOI)
+- ✓ [The Internment of Western Civilians Under the Japanese 1941–1945](https://openlibrary.org/isbn/9780714655925) (ISBN)
+- ✓ [The Women of Stanley: internment in Hong Kong 1942–45](https://doi.org/10.1080/09612029600200119) (DOI)
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

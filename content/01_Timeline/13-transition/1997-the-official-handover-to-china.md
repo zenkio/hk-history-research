@@ -4,10 +4,11 @@ title_zh: "香港主權移交"
 date: 1997-07-01
 year: 1997
 era: "Sino-British negotiations and the transition"
-tags: ["1997", "ai-draft", "british-colonial-history", "handover", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-b", "1997", "ai-draft", "british-colonial-history", "handover", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
 description: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,19 @@ This event marked a major milestone in modern Chinese history, concluding the er
 
 - ❔ The exact sequence of protocol and flag-raising timings during the midnight ceremony on July 1, 1997.
 - ❔ The precise number of foreign dignitaries and local representatives in attendance at the Hong Kong Convention and Exhibition Centre.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Ken Hyland (1997). *Language Attitudes at the Handover*. English World-Wide A Journal of Varieties of English.](https://doi.org/10.1075/eww.18.2.03hyl): Discusses language attitudes during the 1997 handover and the end of British rule.
+- [Zhongdang Pan, Chin-Chuan Lee, Joseph Chan (2001). *Orchestrating the Family-Nation Chorus: Chinese Media and Nationalism in the Hong Kong Handover*. Mass Communication & Society.](https://doi.org/10.1207/s15327825mcs0403_05): Examines media discourses and nationalism surrounding the handover event.
+- [Gordon Mathews (1997). *Hèunggóngyàhn: On the past, present, and future of Hong Kong identity*. Bulletin of Concerned Asian Scholars.](https://doi.org/10.1080/14672715.1997.10413089): Focuses on the political and cultural transition of the 1 July 1997 return to China.
+
+**Still needed:** Official records or first-hand accounts specifically documenting the handover ceremony on 1 July 1997 are needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

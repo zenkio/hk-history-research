@@ -4,10 +4,11 @@ title_zh: "天星小輪加價事件"
 date: 1966-04-04
 year: 1966
 era: "Riots and the MacLehose reforms"
-tags: ["1960s", "1966", "ai-draft", "colonial-history", "protest", "riots-and-reform", "social-unrest", "star-ferry-riots"]
+tags: ["evidence-none", "1960s", "1966", "ai-draft", "colonial-history", "protest", "riots-and-reform", "social-unrest", "star-ferry-riots"]
 summary: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
 description: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -51,5 +52,13 @@ The **Star Ferry Riots** shattered the complacency of the colonial administratio
 - ❔ Elliott Ngok-shun began his hunger strike on April 4, 1966.
 - ❔ The exact casualty and arrest figures reported during the April 1966 disturbances.
 - ❔ The precise legislative mechanism and public consultation process used by the Star Ferry Company for the 1966 fare increase.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the Star Ferry Riots of April 4, 1966, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

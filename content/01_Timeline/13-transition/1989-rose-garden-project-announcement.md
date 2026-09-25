@@ -4,10 +4,11 @@ title_zh: "宣佈玫瑰園計劃"
 date: 1989-10-11
 year: 1989
 era: "Sino-British negotiations and the transition"
-tags: ["1989", "ai-draft", "aviation", "hong-kong-economy", "infrastructure", "rose-garden-project", "sino-british-transition", "transition"]
+tags: ["evidence-none", "1989", "ai-draft", "aviation", "hong-kong-economy", "infrastructure", "rose-garden-project", "sino-british-transition", "transition"]
 summary: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the 1989 Tiananmen Square crackdown."
 description: "On October 11, 1989, Governor David Wilson announced the massive Port and Airport Development Strategy, commonly known as the Rose Garden Project, to modernize infrastructure and restore public confidence following the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ While the project successfully laid the physical foundations for Hong Kong's mod
 - ❔ Governor David Wilson officially announced the Port and Airport Development Strategy on October 11, 1989.
 - ❔ The infrastructure package included relocating the airport from Kai Tak to Chek Lap Kok.
 - ❔ Concerns raised by Beijing over financial reserves ultimately led to the 1991 Memorandum of Understanding.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the 'Rose Garden Project' announcement from October 11, 1989, is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

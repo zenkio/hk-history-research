@@ -4,10 +4,11 @@ title_zh: "戴卓爾夫人訪問北京"
 date: 1982-09-24
 year: 1982
 era: "Riots and the MacLehose reforms"
-tags: ["1982", "1997-handover", "ai-draft", "cold-war-diplomacy", "colonial-history", "riots-and-reform", "sino-british-negotiations", "sovereignty"]
+tags: ["evidence-none", "1982", "1997-handover", "ai-draft", "cold-war-diplomacy", "colonial-history", "riots-and-reform", "sino-british-negotiations", "sovereignty"]
 summary: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the New Territories lease."
 description: "In September 1982, British Prime Minister Margaret Thatcher met with Chinese leader Deng Xiaoping in Beijing, formally initiating bilateral negotiations regarding the future of Hong Kong after the 1997 expiration of the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The visit shattered the long-standing political ambiguity surrounding Hong Kong'
 
 - ❔ Margaret Thatcher met with Deng Xiaoping in Beijing on September 24, 1982.
 - ❔ The New Territories lease was established by the 1898 Convention for the Extension of Hong Kong Territory.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing Margaret Thatcher's visit to Beijing on September 24, 1982, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,10 +4,11 @@ title_zh: "英國國民（海外）護照申領浪潮"
 date: 1996-03-30
 year: 1996
 era: "Sino-British negotiations and the transition"
-tags: ["1996", "1997-handover", "ai-draft", "bno-passport", "british-nationality", "immigration", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-b", "1996", "1997-handover", "ai-draft", "bno-passport", "british-nationality", "immigration", "sino-british-joint-declaration", "transition"]
 summary: "In early 1996, tens of thousands of Hong Kong residents queued overnight outside immigration offices ahead of the crucial deadline to register for British National (Overseas) status before the 1997 handover."
 description: "In early 1996, tens of thousands of Hong Kong residents queued overnight outside immigration offices ahead of the crucial deadline to register for British National (Overseas) status before the 1997 handover."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,17 @@ The BNO application rush highlighted the complex identity politics and deep-seat
 
 - ❔ Exact daily application statistics during the March 1996 BNO rush
 - ❔ Specific statutory deadlines established for BNO registration prior to June 30, 1997
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Dalton Rawcliffe (2026). *Managing Migration and Empire's End: Britain, Canada, and Australia's Response to Hong Kong's 1997 Handover*. Journal of Contemporary History.](https://doi.org/10.1177/00220094261443242) (claims 1): It discusses migration policies in response to the Hong Kong handover, providing the necessary context for the BNO passport rush.
+
+**Still needed:** Specific documentation or records detailing the scale and occurrence of the BNO passport application rush on March 30, 1996.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

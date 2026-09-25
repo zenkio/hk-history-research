@@ -4,7 +4,7 @@ title_zh: "城門水塘落成"
 date: 1936-01-30
 year: 1936
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1936", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "shing-mun-reservoir", "water-supply"]
+tags: ["wikipedia-checked", "evidence-none", "1936", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "shing-mun-reservoir", "water-supply"]
 summary: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
 description: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
 confidence: ai-draft
@@ -37,17 +37,15 @@ The completion of the Shing Mun Reservoir marked a major milestone in Hong Kong'
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the official opening ceremony take place precisely on January 30, 1936?
-- ❔ What were the exact displacement figures for local villagers in the Shing Mun valley?
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the official opening ceremony take me place precisely on January 30, 1936?. The reference text does not mention an official opening ceremony or its date.
+- ❔ **not in Wikipedia**: What were the exact displacement figures for local villagers in the Shing Mun valley?. The reference text states that local inhabitants were resettled in other parts of the New Territories but does not provide exact displacement figures.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Shing Mun Reservoir](https://en.wikipedia.org/wiki/Shing_Mun_Reservoir), [Wikipedia: Shing Mun](https://en.wikipedia.org/wiki/Shing_Mun)
 
-**Still needed:** Evidence is needed to confirm the exact date of the Shing Mun Reservoir's official opening ceremony and the specific number of villagers displaced from the Shing Mun valley.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

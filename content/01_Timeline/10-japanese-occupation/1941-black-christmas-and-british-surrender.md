@@ -4,7 +4,7 @@ title_zh: "黑色聖誕與英軍投降"
 date: 1941-12-25
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "british-surrender", "japanese-occupation", "world-war-ii"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "british-surrender", "japanese-occupation", "world-war-ii"]
 summary: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
 description: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
 confidence: ai-draft
@@ -42,17 +42,17 @@ The surrender marked the end of British colonial rule and the beginning of the p
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Sir Mark Young surrendered at the Peninsula Hotel on December 25, 1941.
-- ❔ The Battle of Hong Kong lasted for 18 days from December 8 to December 25, 1941.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Governor Sir Mark Young surrendered at the Peninsula Hotel on December 25, 1941. The text states that Governor Young surrendered at the Peninsula Hotel on 25 December 1941.
+- ⚠️ **differs from Wikipedia**: The Battle of Hong Kong lasted for 18 days from December 8 to December 25, 1941. The text states that the garrison had held out for 17 days.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Battle of Hong Kong](https://en.wikipedia.org/wiki/Battle_of_Hong_Kong)
 
-**Still needed:** Evidence from 1941 or later regarding the surrender of Governor Sir Mark Young and the duration of the Battle of Hong Kong is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ? [The battle for Hong Kong 1941–1945: Hostage to Fortune](https://openlibrary.org/isbn/9789622097797) (ISBN) _ISBN not found_
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "立法局首次間接選舉"
 date: 1985-09-26
 year: 1985
 era: "Sino-British negotiations and the transition"
-tags: ["1985", "ai-draft", "functional-constituencies", "indirect-elections", "legislative-council", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["evidence-none", "1985", "ai-draft", "functional-constituencies", "indirect-elections", "legislative-council", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation during the transitional period."
 description: "On September 26, 1985, Hong Kong held its first-ever indirect elections for the Legislative Council through functional constituencies and an electoral college, initiating a gradual process of political representation…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ This electoral milestone fundamentally altered Hong Kong's political landscape b
 
 - ❔ The exact number of functional constituency and electoral college seats contested in the September 26, 1985 Legislative Council elections.
 - ❔ The voter turnout statistics and composition of the electoral college for the 1985 elections.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific historical documentation or scholarly accounts regarding the 1985 indirect elections to the Legislative Council, including the electoral process and participants.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

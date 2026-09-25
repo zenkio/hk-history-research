@@ -4,7 +4,7 @@ title_zh: "英軍服務團營救人員被處決"
 date: 1944-01-11
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1944", "ai-draft", "british-army-aid-group", "espionage", "japanese-occupation", "resistance", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1944", "ai-draft", "british-army-aid-group", "espionage", "japanese-occupation", "resistance", "world-war-ii"]
 summary: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
 description: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
 confidence: ai-draft
@@ -40,17 +40,15 @@ The event marked a devastating blow to the underground networks operating within
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/guangdong|Guangdong (廣東)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact number and identities of the 33 individuals executed on January 11, 1944
-- ❔ Degree of Kempeitai infiltration into the BAAG network leading up to the arrests
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact number and identities of the 33 individuals executed on January 11, 1944. The reference text does not mention the execution of 33 individuals on January 11, 1944.
+- ❔ **not in Wikipedia**: Degree of Kempeitai infiltration into the BAAG network leading up to the arrests. The reference text does not mention the Kempeitai infiltrating the BAAG network or any subsequent arrests.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Japanese occupation of Hong Kong](https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong)
 
-**Still needed:** Evidence regarding the specific identities of the 33 executed BAAG members and historical details concerning Kempeitai infiltration of their network is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

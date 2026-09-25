@@ -4,7 +4,7 @@ title_zh: "突破醉酒灣防線"
 date: 1941-12-10
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-b", "1941", "ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "japanese-occupation", "new-territories", "shing-mun-redoubt", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-b", "1941", "ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "japanese-occupation", "new-territories", "shing-mun-redoubt", "world-war-ii"]
 summary: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
 description: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
 confidence: ai-draft
@@ -42,21 +42,15 @@ The breach of the Gin Drinkers Line is widely regarded by historians as a critic
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/port-shelter|Port Shelter (牛尾海)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact timeline of the assault on the Shing Mun Redoubt between the night of December 9 and the morning of December 10, 1941.
-- ❔ The specific troop numbers and regimental units involved in holding the Shing Mun Redoubt at the time of the breach.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact timeline of the assault on the Shing Mun Redoubt between the night of December 9 and the morning of December 10, 1941. The text states the sneak attack began at 21:00 on December 9 and the high ground was taken by 7:00 on December 10.
+- ✅ **agrees with Wikipedia**: The specific troop numbers and regimental units involved in holding the Shing Mun Redoubt at the time of the breach. The text mentions the redoubt was garrisoned by 43 troops (though another part says 30 soldiers) and refers to the Middlesex Regiment.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Gin Drinkers Line](https://en.wikipedia.org/wiki/Gin_Drinkers_Line)
 
-### Scholarship (grade B)
-
-- [Matthew Schwarzkopf (2019). *The Second Mission: Canadian Survival in Hong Kong Prisoner-of-War Camps, 1941-1945*. uO Research (University of Ottawa).](https://doi.org/10.20381/ruor-23148) (claims 1, 2): The source discusses Canadian soldiers involved in the defense of Hong Kong and the subsequent 1941 battle.
-
-**Still needed:** Specific evidence regarding the Shing Mun Redoubt's assault timeline and the exact regimental units stationed there is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

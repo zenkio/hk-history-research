@@ -4,7 +4,7 @@ title_zh: "香港上海匯豐銀行第三代總行大廈落成"
 date: 1935-10-10
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1930s", "1935", "ai-draft", "architecture", "colonial-history", "financial-history", "hsbc", "interwar"]
+tags: ["wikipedia-checked", "evidence-none", "1930s", "1935", "ai-draft", "architecture", "colonial-history", "financial-history", "hsbc", "interwar"]
 summary: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
 description: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
 confidence: ai-draft
@@ -38,17 +38,15 @@ The opening of the third HSBC building was widely celebrated as a testament to H
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify whether the building was officially the tallest in Asia upon its opening on October 10, 1935.
-- ❔ Confirm if the choice of October 10 for the opening ceremony was intentional or coincidental regarding Double Ten Day.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Verify whether the building was officially the tallest in Asia upon its opening on October 10, 1935. The text states the building opened in October 1935 and was the tallest structure in South East Asia, but does not specify October 10 or if it was the tallest in Asia.
+- ❔ **not in Wikipedia**: Confirm if the choice of October 10 for the opening ceremony was intentional or coincidental regarding Double Ten Day. The reference text does not mention the specific opening date or any mention of Double Ten Day.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: HSBC Building (Hong Kong)](https://en.wikipedia.org/wiki/HSBC_Building_%28Hong_Kong%29), [Wikipedia: HSBC lions](https://en.wikipedia.org/wiki/HSBC_lions)
 
-**Still needed:** Evidence regarding the building's height relative to other Asian buildings in 1935 and the historical context or intent behind selecting October 10 as its opening date.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

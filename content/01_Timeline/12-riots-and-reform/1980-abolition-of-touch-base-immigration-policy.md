@@ -4,10 +4,11 @@ title_zh: "取消壘上基政策"
 date: 1980-10-23
 year: 1980
 era: "Riots and the MacLehose reforms"
-tags: ["1980", "ai-draft", "colonial-history", "identity-card", "immigration", "maclehose-era", "riots-and-reform"]
+tags: ["evidence-none", "1980", "ai-draft", "colonial-history", "identity-card", "immigration", "maclehose-era", "riots-and-reform"]
 summary: "On October 23, 1980, the colonial Hong Kong government officially abolished the 'Touch Base' policy, ending the loophole that allowed illegal immigrants from mainland China to remain if they successfully reached the urban areas."
 description: "On October 23, 1980, the colonial Hong Kong government officially abolished the 'Touch Base' policy, ending the loophole that allowed illegal immigrants from mainland China to remain if they successfully reached the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -48,5 +49,11 @@ The abolition marked a definitive turning point in Hong Kong's immigration histo
 - ❔ The exact date of the abolition of the Touch Base policy was October 23, 1980.
 - ❔ Mandatory identity card checks and harsher penalties for employers were introduced simultaneously with the abolition.
 - ❔ The policy change involved coordination between the Hong Kong colonial administration and authorities in Guangdong.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

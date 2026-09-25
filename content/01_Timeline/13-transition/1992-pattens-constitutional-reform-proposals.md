@@ -4,10 +4,11 @@ title_zh: "彭定康政改方案"
 date: 1992-10-07
 year: 1992
 era: "Sino-British negotiations and the transition"
-tags: ["1992", "1995-elections", "ai-draft", "basic-law", "constitutional-reform", "decolonisation", "sino-british-relations", "transition"]
+tags: ["evidence-none", "1992", "1995-elections", "ai-draft", "basic-law", "constitutional-reform", "decolonisation", "sino-british-relations", "transition"]
 summary: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce opposition from Beijing and fundamentally altering the trajectory of the Sino-British transition."
 description: "In October 1992, newly appointed Hong Kong Governor Chris Patten introduced sweeping constitutional reform proposals to widen the electoral franchise for the 1995 Legislative Council elections, provoking fierce…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ Patten's proposals triggered an immediate and furious response from the governme
 
 - ❔ Governor Chris Patten delivered his constitutional reform proposals during his Policy Address on October 7, 1992.
 - ❔ The reform proposals successfully passed through the Legislative Council in 1994 despite opposition from Beijing.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically addressing Chris Patten's 1992 constitutional reform proposals are required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

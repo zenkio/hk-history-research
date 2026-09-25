@@ -4,10 +4,11 @@ title_zh: "民政主任計劃推行"
 date: 1968-06-18
 year: 1968
 era: "Riots and the MacLehose reforms"
-tags: ["1968", "ai-draft", "colonial-governance", "district-administration", "grassroots-communication", "maclehose-era", "riots-and-reform"]
+tags: ["evidence-none", "1968", "ai-draft", "colonial-governance", "district-administration", "grassroots-communication", "maclehose-era", "riots-and-reform"]
 summary: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
 description: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The scheme marked a significant pivot in colonial governance away from pure elit
 
 - ❔ The exact launch date of the City District Officer Scheme was June 18, 1968.
 - ❔ The specific number and boundaries of the initial districts established under the 1968 scheme.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the establishment, purpose, or specific details of the City District Officer (CDO) scheme launched in 1968 is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

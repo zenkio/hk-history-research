@@ -4,10 +4,11 @@ title_zh: "伊利沙伯女王第二次訪港"
 date: 1986-10-21
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["1986", "ai-draft", "british-colony", "royal-visit", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["evidence-none", "1986", "ai-draft", "british-colony", "royal-visit", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate continued British commitment."
 description: "In October 1986, Queen Elizabeth II made her second and final visit to Hong Kong, a landmark event during the early years of the Sino-British transition period intended to reassure the local population and demonstrate…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The visit held deep symbolic value, though its exact impact remains a subject of
 
 - ❔ Queen Elizabeth II arrived in Hong Kong on October 21, 1986.
 - ❔ The itinerary included visits to Sha Tin and the Jubilee Sports Centre.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting or detailing Queen Elizabeth II's second royal visit to Hong Kong in October 1986 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

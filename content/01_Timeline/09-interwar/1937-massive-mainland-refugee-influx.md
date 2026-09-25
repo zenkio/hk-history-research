@@ -4,7 +4,7 @@ title_zh: "大批內地難民湧入"
 date: 1937-07-07
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1930s", "1937", "ai-draft", "british-hong-kong", "interwar", "migration", "refugee-crisis", "second-sino-japanese-war"]
+tags: ["wikipedia-checked", "evidence-none", "1930s", "1937", "ai-draft", "british-hong-kong", "interwar", "migration", "refugee-crisis", "second-sino-japanese-war"]
 summary: "The outbreak of the Second Sino-Japanese War in 1937 triggered a massive wave of migration as hundreds of thousands fled mainland combat into British Hong Kong, severely straining local infrastructure and social services."
 description: "The outbreak of the Second Sino-Japanese War in 1937 triggered a massive wave of migration as hundreds of thousands fled mainland combat into British Hong Kong, severely straining local infrastructure and social…"
 confidence: ai-draft
@@ -40,17 +40,15 @@ This unprecedented demographic shock fundamentally transformed Hong Kong's socia
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact population estimates of refugees entering Hong Kong between 1937 and 1941 remain subjects of scholarly debate due to informal border crossings.
-- ❔ The specific allocation of colonial government funds for refugee relief during the initial months of the war requires verification from primary administrative reports.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact population estimates of refugees entering Hong Kong between 1937 and 1941 remain subjects of scholarly debate due to informal border crossings. The reference text does not mention population estimates for refugees between 1937 and 1941 or any scholarly debate regarding them.
+- ❔ **not in Wikipedia**: The specific allocation of colonial government funds for refugee relief during the initial months of the war requires verification from primary administrative reports. The reference text does not discuss the allocation of colonial government funds for refugee relief or the need for verification from primary reports.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong–Taiwan relations](https://en.wikipedia.org/wiki/Hong_Kong%E2%80%93Taiwan_relations)
 
-**Still needed:** Primary administrative reports or scholarly research specifically covering the 1937–1941 period are needed to address refugee population estimates and colonial fund allocations.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

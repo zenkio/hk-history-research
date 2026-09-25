@@ -4,10 +4,11 @@ title_zh: "海洋公園開幕"
 date: 1977-01-10
 year: 1977
 era: "Riots and the MacLehose reforms"
-tags: ["1977", "ai-draft", "hong-kong-history", "leisure", "maclehose-era", "ocean-park", "riots-and-reform", "tourism"]
+tags: ["evidence-none", "1977", "ai-draft", "hong-kong-history", "leisure", "maclehose-era", "ocean-park", "riots-and-reform", "tourism"]
 summary: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
 description: "The opening of Ocean Park in January 1977 marked a major milestone in Hong Kong's development of modern leisure spaces, reflecting the territory's growing economic prosperity during the MacLehose era."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The establishment of Ocean Park is frequently interpreted as a symbol of Hong Ko
 
 - ❔ Ocean Park officially opened on January 10, 1977.
 - ❔ The Hong Kong Jockey Club solely funded the initial construction of Ocean Park.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the specific date and event of the opening of Ocean Park in 1977 is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,7 +4,7 @@ title_zh: "《香港電訊報》出版"
 date: 1881-06-15
 year: 1881
 era: "Kowloon and the Victorian colony"
-tags: ["1881", "ai-draft", "hong-kong-telegraph", "journalism", "media-history", "victorian-colony"]
+tags: ["photo-corroborated", "1881", "ai-draft", "hong-kong-telegraph", "journalism", "media-history", "victorian-colony"]
 summary: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
 description: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
 confidence: ai-draft
@@ -41,5 +41,18 @@ The introduction of the *Hong Kong Telegraph* broadened the scope of public disc
 
 - ❔ The exact founding date of the Hong Kong Telegraph as June 15, 1881
 - ❔ The initial founders and editorial stance of the newspaper upon its launch
+
+## Photos from this period
+
+![A clipping from the Hong Kong Telegraph newspaper dated March 4, 1930, featuring an annual report of St Stephen's College.](https://upload.wikimedia.org/wikipedia/commons/f/f8/The_Hong_Kong_Telegraph%2C_1930-03-04.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A clipping from the Hong Kong Telegraph newspaper dated March 4, 1930, featuring an annual report of St Stephen's College.* (document). Hong Kong Telegraph, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Hong_Kong_Telegraph,_1930-03-04.png).
+Corroborates: It provides a visual example of the Hong Kong Telegraph, the newspaper whose launch is described on the page.
+
+![A composite image featuring a front page of The Hongkong Telegraph and a photograph of the newspaper's office.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Tcitp_d359_the_hong_kong_telegraph.jpg/960px-Tcitp_d359_the_hong_kong_telegraph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A composite image featuring a front page of The Hongkong Telegraph and a photograph of the newspaper's office.* (document). Arnold Wright, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tcitp_d359_the_hong_kong_telegraph.jpg).
+Corroborates: It provides a visual record of the publication's appearance and its operational space.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

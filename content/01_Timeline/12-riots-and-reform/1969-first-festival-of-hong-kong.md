@@ -4,10 +4,11 @@ title_zh: "第一屆香港節"
 date: 1969-12-06
 year: 1969
 era: "Riots and the MacLehose reforms"
-tags: ["1967-riots", "1969", "ai-draft", "civic-identity", "colonial-history", "festival-of-hong-kong", "riots-and-reform", "social-reform"]
+tags: ["evidence-none", "1967-riots", "1969", "ai-draft", "civic-identity", "colonial-history", "festival-of-hong-kong", "riots-and-reform", "social-reform"]
 summary: "Held in December 1969, the First Festival of Hong Kong was a massive government-organized civic and cultural event designed to foster local pride and defuse social tensions in the wake of the 1967 riots."
 description: "Held in December 1969, the First Festival of Hong Kong was a massive government-organized civic and cultural event designed to foster local pride and defuse social tensions in the wake of the 1967 riots."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ Historians generally view the festival as a watershed moment in the evolution of
 - ❔ The exact opening date of the First Festival of Hong Kong was December 6, 1969.
 - ❔ The festival was explicitly organized as a response to the social alienation highlighted by the 1967 riots.
 - ❔ Government archives confirm the precise attendance figures and budgetary allocation for the event.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the existence of the 'First Festival of Hong Kong' specifically on 1969-12-06 is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

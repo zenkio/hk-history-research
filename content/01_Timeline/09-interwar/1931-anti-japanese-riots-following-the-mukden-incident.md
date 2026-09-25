@@ -4,7 +4,7 @@ title_zh: "九一八事變後的反日騷動"
 date: 1931-09-26
 year: 1931
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1931", "ai-draft", "anti-japanese-riots", "british-colonial-history", "interwar", "kowloon", "mukden-incident"]
+tags: ["wikipedia-checked", "evidence-none", "1931", "ai-draft", "anti-japanese-riots", "british-colonial-history", "interwar", "kowloon", "mukden-incident"]
 summary: "The Mukden Incident of September 1931 triggered severe anti-Japanese sentiment across China, culminating in violent riots in Kowloon targeting Japanese residents and properties on September 26, 1931."
 description: "The Mukden Incident of September 1931 triggered severe anti-Japanese sentiment across China, culminating in violent riots in Kowloon targeting Japanese residents and properties on September 26, 1931."
 confidence: ai-draft
@@ -38,17 +38,18 @@ This event highlighted the deep connection between local Hong Kong politics and 
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/manchuria|Manchuria (滿洲)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the anti-Japanese riots in Kowloon specifically occur on September 26, 1931, or spanned multiple days surrounding that date?
-- ❔ What were the exact casualty figures and property damage reported by the colonial police during the September 1931 riots?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the anti-Japanese riots in Kowloon specifically occur on September 26, 1931, or spanned multiple days surrounding that date?. The reference text does not mention riots in Kowloon or the specific date of September 26, 1931.
+- ❔ **not in Wikipedia**: What were the exact casualty figures and property damage reported by the colonial police during the September 1931 riots?. The reference text does not provide casualty figures or property damage reports from colonial police regarding riots in September 1931.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Anti-Japanese sentiment in China](https://en.wikipedia.org/wiki/Anti-Japanese_sentiment_in_China), [Wikipedia: January 28 incident](https://en.wikipedia.org/wiki/January_28_incident)
 
-**Still needed:** Evidence regarding the specific dates of the 1931 Kowloon riots and official colonial police reports on casualties and property damage is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Participation in Anti-Japanese Demonstrations in China: Evidence from a Survey on Three Elite Universities in Beijing](https://doi.org/10.1017/jea.2016.21) (DOI)
+- ✓ [Chinese boycotts versus Japanese bombs: the failure of China's "revolutionary diplomacy", 1931 - 32](https://openlibrary.org/isbn/9780472101726) (ISBN)
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,10 +4,11 @@ title_zh: "麥理浩總督抵港"
 date: 1971-11-19
 year: 1971
 era: "Riots and the MacLehose reforms"
-tags: ["1971", "ai-draft", "colonial-history", "governance", "icac", "maclehose-reforms", "riots-and-reform"]
+tags: ["evidence-b", "1971", "ai-draft", "colonial-history", "governance", "icac", "maclehose-reforms", "riots-and-reform"]
 summary: "On November 19, 1971, Sir Murray MacLehose assumed office as the 25th Governor of Hong Kong, initiating a transformative decade of administrative, social, and infrastructural reform that redefined the territory's governance."
 description: "On November 19, 1971, Sir Murray MacLehose assumed office as the 25th Governor of Hong Kong, initiating a transformative decade of administrative, social, and infrastructural reform that redefined the territory's…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,17 @@ MacLehose's arrival marked the beginning of what many historians consider the go
 - ❔ Sir Murray MacLehose assumed the office of Governor of Hong Kong on November 19, 1971.
 - ❔ MacLehose served the longest tenure of any Hong Kong governor.
 - ❔ The Independent Commission Against Corruption was established in 1974 during his administration.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Ray Yep (2024). *Man in a Hurry*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888876341) (claims 1, 2): The source specifically focuses on Murray MacLehose's governorship in Hong Kong during the 1971–1982 period.
+
+**Still needed:** Evidence confirming the specific arrival date of November 19, 1971, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

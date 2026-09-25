@@ -1692,7 +1692,8 @@
       "date": "1928",
       "summary": "The colonial government officially acquired and expanded Kai Tak Airfield, laying the foundation for Hong Kong's emergence as an international aviation hub.",
       "status": "done",
-      "file": "09-interwar/1928-kai-tak-expands-into-commercial-airfield.md"
+      "file": "09-interwar/1928-kai-tak-expands-into-commercial-airfield.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1701,7 +1702,8 @@
       "date": "1929-11-30",
       "summary": "Under pressure from London and local social reformers, Hong Kong enacted legislation requiring mandatory registration to phase out traditional domestic child servitude.",
       "status": "done",
-      "file": "09-interwar/1929-registration-and-reform-of-the-mui-tsai-system.md"
+      "file": "09-interwar/1929-registration-and-reform-of-the-mui-tsai-system.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1710,7 +1712,8 @@
       "date": "1931-09-26",
       "summary": "Japan's invasion of Manchuria provoked intense anti-Japanese sentiment and violent public riots targeting Japanese businesses and residents in Kowloon.",
       "status": "done",
-      "file": "09-interwar/1931-anti-japanese-riots-following-the-mukden-incident.md"
+      "file": "09-interwar/1931-anti-japanese-riots-following-the-mukden-incident.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1719,7 +1722,9 @@
       "date": "1933-06-11",
       "summary": "The government granted exclusive public bus franchises to KMB in Kowloon and CMB on Hong Kong Island, modernizing urban public transportation.",
       "status": "done",
-      "file": "09-interwar/1933-franchised-bus-monopoly-system-established.md"
+      "file": "09-interwar/1933-franchised-bus-monopoly-system-established.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1728,7 +1733,8 @@
       "date": "1935-06-30",
       "summary": "Hong Kong officially outlawed licensed prostitution following British imperial mandates, significantly shifting the social landscape of nightlife districts.",
       "status": "done",
-      "file": "09-interwar/1935-banning-of-licensed-brothels.md"
+      "file": "09-interwar/1935-banning-of-licensed-brothels.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1737,7 +1743,8 @@
       "date": "1935-10-10",
       "summary": "HSBC opened its state-of-the-art modernist headquarters, then the tallest building in Asia and a symbol of Hong Kong's growing global financial stature.",
       "status": "done",
-      "file": "09-interwar/1935-opening-of-the-third-hsbc-building.md"
+      "file": "09-interwar/1935-opening-of-the-third-hsbc-building.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1746,7 +1753,8 @@
       "date": "1936-01-30",
       "summary": "The completion of the massive Jubilee Reservoir at Shing Mun greatly increased water storage to support the colony's rapidly growing population.",
       "status": "done",
-      "file": "09-interwar/1936-completion-of-shing-mun-reservoir.md"
+      "file": "09-interwar/1936-completion-of-shing-mun-reservoir.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1755,7 +1763,8 @@
       "date": "1937-07-07",
       "summary": "The outbreak of the Second Sino-Japanese War brought hundreds of thousands of refugees fleeing mainland combat into Hong Kong, straining public services.",
       "status": "done",
-      "file": "09-interwar/1937-massive-mainland-refugee-influx.md"
+      "file": "09-interwar/1937-massive-mainland-refugee-influx.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1764,7 +1773,8 @@
       "date": "1937-09-02",
       "summary": "A devastating typhoon and storm surge struck the colony, killing over 11,000 people and causing catastrophic damage to maritime fleets and coastal settlements.",
       "status": "done",
-      "file": "09-interwar/1937-the-great-typhoon-of-1937.md"
+      "file": "09-interwar/1937-the-great-typhoon-of-1937.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1773,7 +1783,8 @@
       "date": "1938-10-21",
       "summary": "Japanese forces occupied Guangzhou, severing Hong Kong's direct rail connections to southern China and placing hostiles right at the border.",
       "status": "done",
-      "file": "09-interwar/1938-japanese-capture-of-guangzhou-isolates-hong-kong.md"
+      "file": "09-interwar/1938-japanese-capture-of-guangzhou-isolates-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "09-interwar",
@@ -1782,7 +1793,9 @@
       "date": "1939",
       "summary": "Fearing imminent European and Asian conflict, the government constructed air-raid shelters, established civil defense units, and enforced blackouts.",
       "status": "done",
-      "file": "09-interwar/1939-enactment-of-air-raid-precautions.md"
+      "file": "09-interwar/1939-enactment-of-air-raid-precautions.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1791,7 +1804,9 @@
       "date": "1940-07-03",
       "summary": "Amid rising threat from Japan, the colonial government enforced the compulsory evacuation of over 3,000 European women and children to Australia.",
       "status": "done",
-      "file": "09-interwar/1940-evacuation-of-british-women-and-children.md"
+      "file": "09-interwar/1940-evacuation-of-british-women-and-children.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "09-interwar",
@@ -1800,7 +1815,8 @@
       "date": "1941-12-08",
       "summary": "Japanese troops launched a surprise invasion on the same day as Pearl Harbor, defeating Allied defenders after 18 days and initiating three and a half years of occupation.",
       "status": "done",
-      "file": "09-interwar/1941-battle-of-hong-kong-and-japanese-occupation.md"
+      "file": "09-interwar/1941-battle-of-hong-kong-and-japanese-occupation.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1809,7 +1825,9 @@
       "date": "1941-12-08",
       "summary": "Japanese forces launched a surprise attack on Hong Kong hours after Pearl Harbor, initiating the Battle of Hong Kong.",
       "status": "done",
-      "file": "10-japanese-occupation/1941-japanese-invasion-of-hong-kong-begins.md"
+      "file": "10-japanese-occupation/1941-japanese-invasion-of-hong-kong-begins.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1818,7 +1836,8 @@
       "date": "1941-12-10",
       "summary": "Japanese troops captured the strategic Shing Mun Redoubt, quickly breaking the main British defensive line in the New Territories.",
       "status": "done",
-      "file": "10-japanese-occupation/1941-breach-of-the-gin-drinkers-line.md"
+      "file": "10-japanese-occupation/1941-breach-of-the-gin-drinkers-line.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1827,7 +1846,9 @@
       "date": "1941-12-18",
       "summary": "Japanese troops crossed Victoria Harbour under heavy artillery fire, establishing a foothold on Hong Kong Island and pushing toward the south.",
       "status": "done",
-      "file": "10-japanese-occupation/1941-japanese-amphibious-landing-on-hong-kong-island.md"
+      "file": "10-japanese-occupation/1941-japanese-amphibious-landing-on-hong-kong-island.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1836,7 +1857,8 @@
       "date": "1941-12-25",
       "summary": "Japanese soldiers attacked a emergency military hospital in Stanley, bayoneting wounded soldiers and medical staff in one of the war's worst local atrocities.",
       "status": "done",
-      "file": "10-japanese-occupation/1941-st-stephens-college-massacre.md"
+      "file": "10-japanese-occupation/1941-st-stephens-college-massacre.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1845,7 +1867,8 @@
       "date": "1941-12-25",
       "summary": "Governor Sir Mark Young surrendered Hong Kong to the Japanese at the Peninsula Hotel, marking the start of three years and eight months of occupation.",
       "status": "done",
-      "file": "10-japanese-occupation/1941-black-christmas-and-british-surrender.md"
+      "file": "10-japanese-occupation/1941-black-christmas-and-british-surrender.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1854,7 +1877,9 @@
       "date": "1942-01-05",
       "summary": "Japanese authorities initiated forced deportations of civilians to mainland China to alleviate critical urban food shortages.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-establishment-of-mass-repatriation-policy.md"
+      "file": "10-japanese-occupation/1942-establishment-of-mass-repatriation-policy.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1863,7 +1888,8 @@
       "date": "1942-01-19",
       "summary": "Nearly 3,000 British, Allied, and Western civilians were imprisoned in Stanley Camp under harsh and overcrowded conditions.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-establishment-of-stanley-internment-camp.md"
+      "file": "10-japanese-occupation/1942-establishment-of-stanley-internment-camp.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1872,7 +1898,8 @@
       "date": "1942-02-03",
       "summary": "Communist-led anti-Japanese guerrillas established a strong resistance presence in the New Territories, rescuing Allied airmen and gathering intelligence.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-formation-of-the-east-river-column-guerrillas.md"
+      "file": "10-japanese-occupation/1942-formation-of-the-east-river-column-guerrillas.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1881,7 +1908,8 @@
       "date": "1942-02-20",
       "summary": "Lieutenant General Rensuke Isogai assumed office as Hong Kong's first Japanese Military Governor, restructuring administration under imperial authority.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-appointment-of-military-governor-rensuke-isogai.md"
+      "file": "10-japanese-occupation/1942-appointment-of-military-governor-rensuke-isogai.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1890,7 +1918,9 @@
       "date": "1942-07-01",
       "summary": "The Japanese administration banned the Hong Kong Dollar and forced the use of unbacked Military Yen, devastating local savings and the economy.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-mandatory-conversion-to-japanese-military-yen.md"
+      "file": "10-japanese-occupation/1942-mandatory-conversion-to-japanese-military-yen.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1899,7 +1929,8 @@
       "date": "1942-10-01",
       "summary": "An Allied submarine torpedoed an unmarked armed Japanese ship carrying over 1,800 British prisoners of war from Hong Kong, resulting in over 800 deaths.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-sinking-of-the-lisbon-maru.md"
+      "file": "10-japanese-occupation/1942-sinking-of-the-lisbon-maru.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1908,7 +1939,8 @@
       "date": "1942/1945",
       "summary": "Japanese authorities imposed Japanese language education, renamed major streets, and altered public holidays to forcibly assimilate the population.",
       "status": "done",
-      "file": "10-japanese-occupation/1942-launch-of-cultural-japanization-campaign.md"
+      "file": "10-japanese-occupation/1942-launch-of-cultural-japanization-campaign.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1917,7 +1949,9 @@
       "date": "1943-01-01",
       "summary": "The Japanese military created Chinese representative bodies to co-opt local business elites and assist in neighborhood social control.",
       "status": "done",
-      "file": "10-japanese-occupation/1943-formation-of-elite-collaborator-councils.md"
+      "file": "10-japanese-occupation/1943-formation-of-elite-collaborator-councils.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1926,7 +1960,8 @@
       "date": "1944-01-11",
       "summary": "Japanese authorities executed 33 resistance members involved in espionage and escaping intelligence networks operated by the British Army Aid Group.",
       "status": "done",
-      "file": "10-japanese-occupation/1944-execution-of-british-army-aid-group-rescuers.md"
+      "file": "10-japanese-occupation/1944-execution-of-british-army-aid-group-rescuers.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1935,7 +1970,9 @@
       "date": "1944/1945",
       "summary": "Severe wartime blockades reduced rice imports to near zero, leading to widespread famine, malnutrition, and street deaths across the territory.",
       "status": "done",
-      "file": "10-japanese-occupation/1944-systemic-starvation-and-extreme-rationing.md"
+      "file": "10-japanese-occupation/1944-systemic-starvation-and-extreme-rationing.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "10-japanese-occupation",
@@ -1944,7 +1981,8 @@
       "date": "1945-01-16",
       "summary": "U.S. Navy aircraft carried out massive bombing raids on Japanese shipping, docks, and military installations in Hong Kong under Operation Gratitude.",
       "status": "done",
-      "file": "10-japanese-occupation/1945-allied-air-raids-on-hong-kong-operations.md"
+      "file": "10-japanese-occupation/1945-allied-air-raids-on-hong-kong-operations.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1953,7 +1991,8 @@
       "date": "1945-08-15",
       "summary": "Emperor Hirohito announced Japan's unconditional surrender, ending active hostilities and initiating a power vacuum in Hong Kong.",
       "status": "done",
-      "file": "10-japanese-occupation/1945-imperial-japanese-broadcast-announcing-surrender.md"
+      "file": "10-japanese-occupation/1945-imperial-japanese-broadcast-announcing-surrender.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -1962,7 +2001,8 @@
       "date": "1945-08-23",
       "summary": "Released British Colonial Secretary Franklin Gimson established a interim civil government in Victoria prior to the arrival of military relief forces.",
       "status": "done",
-      "file": "10-japanese-occupation/1945-formation-of-gimsons-provisional-british-administration.md"
+      "file": "10-japanese-occupation/1945-formation-of-gimsons-provisional-british-administration.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",

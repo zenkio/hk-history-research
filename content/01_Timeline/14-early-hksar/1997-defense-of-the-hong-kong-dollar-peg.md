@@ -4,10 +4,11 @@ title_zh: "捍衛香港聯繫匯率"
 date: 1997-10-23
 year: 1997
 era: "The early HKSAR"
-tags: ["1997", "ai-draft", "asian-financial-crisis", "currency-peg", "early-hksar", "hkma", "hong-kong-dollar", "monetary-policy"]
+tags: ["evidence-b", "1997", "ai-draft", "asian-financial-crisis", "currency-peg", "early-hksar", "hkma", "hong-kong-dollar", "monetary-policy"]
 summary: "During the onset of the Asian Financial Crisis in October 1997, Hong Kong monetary authorities successfully defended the linked exchange rate system against aggressive speculative attacks, preserving currency stability at the expense of high interest rates and sharp asset market contractions."
 description: "During the onset of the Asian Financial Crisis in October 1997, Hong Kong monetary authorities successfully defended the linked exchange rate system against aggressive speculative attacks, preserving currency stability…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,17 @@ The successful defense of the currency peg in October 1997 preserved the credibi
 
 - ❔ Exact peak interest rate levels reached during the October 23, 1997 speculative attack.
 - ❔ The precise quantum of foreign reserves utilized by the HKMA to defend the peg during the October 1997 episode.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Robert Haney Scott (1997). *Pegged Exchange Rate Systems in Macau and Hong Kong*. Multinational Finance Journal.](https://doi.org/10.17578/1-2-5) (claims 1): It analyzes the pegged exchange rate system involving the Hong Kong dollar.
+
+**Still needed:** Specific evidence regarding the actions taken to defend the Hong Kong dollar peg on October 23, 1997.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

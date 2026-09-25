@@ -4,10 +4,11 @@ title_zh: "黑色星期一股市崩盤"
 date: 1987-10-19
 year: 1987
 era: "Sino-British negotiations and the transition"
-tags: ["1987", "ai-draft", "black-monday", "financial-regulation", "hong-kong-stock-exchange", "sino-british-transition", "transition"]
+tags: ["evidence-b", "1987", "ai-draft", "black-monday", "financial-regulation", "hong-kong-stock-exchange", "sino-british-transition", "transition"]
 summary: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial financial sector."
 description: "The global Black Monday crash of October 1987 triggered a dramatic four-day suspension of the Hong Kong Stock Exchange, exposing systemic vulnerabilities and prompting sweeping regulatory overhauls in the colonial…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,17 @@ The crisis exposed critical flaws in Hong Kong's financial self-regulation. In r
 
 - ❔ The exact percentage drop of the Hang Seng Index upon reopening on October 26, 1987
 - ❔ The precise mechanics and emergency loans mobilized by the government and the Exchange Banks' Association during the four-day closure
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Gerald P. Jr. Dwyer, Rik W. Hafer (1988). *Are National Stock Markets Linked?*.](https://doi.org/10.20955/r.70.3-14.xtk): This 1988 study examines stock market connections during the period surrounding the 1987 crash.
+
+**Still needed:** Specific evidence regarding the impact and details of the 1987 Black Monday crash on the Hong Kong stock market.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "香港成爲全球紡織業樞紐之崛起"
 date: 1965-01-01
 year: 1965
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1965", "ai-draft", "economic-history", "industrialization", "manufacturing", "postwar-refugees", "refugees", "textiles"]
+tags: ["evidence-none", "1965", "ai-draft", "economic-history", "industrialization", "manufacturing", "postwar-refugees", "refugees", "textiles"]
 summary: "By the mid-1960s, Hong Kong transformed from a entrepôt into a major manufacturing center, leading the world in garment and light goods exports."
 description: "By the mid-1960s, Hong Kong transformed from a entrepôt into a major manufacturing center, leading the world in garment and light goods exports."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ This industrial boom cemented Hong Kong's status as a global economic player and
 
 - ❔ Specific export volume statistics for garments in 1965
 - ❔ Exact figures on Shanghainese capital and machinery relocation to Hong Kong in the late 1940s and 1950s
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific evidence detailing the growth and development of Hong Kong as a global textile hub around 1965 is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

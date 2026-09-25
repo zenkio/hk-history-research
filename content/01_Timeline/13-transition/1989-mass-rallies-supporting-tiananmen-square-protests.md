@@ -4,10 +4,11 @@ title_zh: "支援北京學生運動大型集會"
 date: 1989-05-21
 year: 1989
 era: "Sino-British negotiations and the transition"
-tags: ["1989", "ai-draft", "emigration", "hong-kong-history", "protests", "sino-british-transition", "tiananmen-square", "transition"]
+tags: ["evidence-none", "1989", "ai-draft", "emigration", "hong-kong-history", "protests", "sino-british-transition", "tiananmen-square", "transition"]
 summary: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square. This massive mobilization fundamentally altered local political consciousness and deepened public anxiety regarding the impending 1997 sovereignty transfer."
 description: "On May 21, 1989, over one million Hong Kong residents marched in unprecedented solidarity with student demonstrators in Beijing's Tiananmen Square."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The events of **May 1989** marked a watershed moment in modern Hong Kong history
 
 - ❔ Verify contemporary estimates of the crowd size for the May 21, 1989 march in Hong Kong.
 - ❔ Examine official colonial government assessments of public order and security during the mobilization.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the scale, dates, and participation of the mass rallies held in Hong Kong in support of the Tiananmen Square protests in May 1989.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

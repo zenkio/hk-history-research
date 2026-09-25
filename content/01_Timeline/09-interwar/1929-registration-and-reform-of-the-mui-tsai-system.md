@@ -4,7 +4,7 @@ title_zh: "註冊及改革妹仔制度"
 date: 1929-11-30
 year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1929", "ai-draft", "child-labor", "colonial-history", "interwar", "mui-tsai", "social-reform", "women-and-children"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1929", "ai-draft", "child-labor", "colonial-history", "interwar", "mui-tsai", "social-reform", "women-and-children"]
 summary: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child servitude."
 description: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ The **1929** registration marked a critical legal turning point in shifting the 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/london|London (倫敦)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact administrative mechanisms and penalties enforced during the November 1929 mui tsai registration deadline
-- ❔ The precise number of mui tsai successfully registered by the colonial government following the enactment
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact administrative mechanisms and penalties enforced during the November 1929 mui tsai registration deadline. The reference text states that all mui tsais had to be registered prior to 31 May 1930, not November 1929.
+- ❔ **not in Wikipedia**: The precise number of mui tsai successfully registered by the colonial government following the enactment. The reference text does not provide the number of mui tsai who were registered.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Mui tsai](https://en.wikipedia.org/wiki/Mui_tsai)
 
-**Still needed:** Evidence detailing the specific administrative mechanisms, penalties, and the precise number of mui tsai registered during the November 1929 reform period is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

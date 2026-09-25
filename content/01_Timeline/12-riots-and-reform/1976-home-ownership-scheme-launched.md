@@ -4,10 +4,11 @@ title_zh: "居者有其屋計劃推出"
 date: 1976-12-28
 year: 1976
 era: "Riots and the MacLehose reforms"
-tags: ["1970s", "1976", "ai-draft", "home-ownership-scheme", "housing-policy", "maclehose-reforms", "public-housing", "riots-and-reform"]
+tags: ["evidence-none", "1970s", "1976", "ai-draft", "home-ownership-scheme", "housing-policy", "maclehose-reforms", "public-housing", "riots-and-reform"]
 summary: "On December 28, 1976, the Hong Kong government announced the launch of the Home Ownership Scheme to help lower-to-middle income families purchase their own apartments, marking a major shift in local housing policy."
 description: "On December 28, 1976, the Hong Kong government announced the launch of the Home Ownership Scheme to help lower-to-middle income families purchase their own apartments, marking a major shift in local housing policy."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The launch of the Home Ownership Scheme became a cornerstone of Hong Kong's dome
 
 - ❔ The Home Ownership Scheme was officially announced on December 28, 1976.
 - ❔ The scheme was administered by the Hong Kong Housing Authority to target lower-to-middle income families.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the launch of the Home Ownership Scheme in Hong Kong on December 28, 1976, is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

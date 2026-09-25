@@ -4,7 +4,7 @@ title_zh: "啟德擴建為商業機場"
 date: 1928-01-01
 year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1928", "ai-draft", "aviation", "colonial-history", "infrastructure", "interwar", "interwar-period", "kowloon"]
+tags: ["wikipedia-checked", "evidence-none", "1928", "ai-draft", "aviation", "colonial-history", "infrastructure", "interwar", "interwar-period", "kowloon"]
 summary: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
 description: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
 confidence: ai-draft
@@ -42,17 +42,17 @@ The formal establishment and expansion of **Kai Tak Airfield** marked a pivotal 
 - [[02_Entities/Places/kowloon-bay|Kowloon Bay (九龍灣)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact legal mechanism and financial cost of the colonial government's acquisition of the Kai Tak land in 1928.
-- ❔ The precise timeline of the first commercial flights and official airmail services operating out of Kai Tak following the 1928 expansion.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact legal mechanism and financial cost of the colonial government's acquisition of the Kai Tak land in 1928. The text states the government acquired the land after a business plan failed, but does not mention the legal mechanism, cost, or a 1928 acquisition date.
+- ❔ **not in Wikipedia**: The precise timeline of the first commercial flights and official airmail services operating out of Kai Tak following the 1928 expansion. The text mentions the first domestic airline was established in 1936, but provides no precise timeline for first commercial flights or airmail services after 1928.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Kai Tak Airport](https://en.wikipedia.org/wiki/Kai_Tak_Airport)
 
-**Still needed:** Evidence detailing the 1928 land acquisition legalities, costs, and the specific timeline of early commercial and airmail services at Kai Tak is required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Urban regeneration and heritage preservation with public participation: the case of the Kai Tak runway in Hong Kong](https://doi.org/10.2174/1874453200902010035) (DOI)
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

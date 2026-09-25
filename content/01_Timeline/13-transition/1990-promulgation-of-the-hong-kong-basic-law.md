@@ -4,10 +4,11 @@ title_zh: "頒布香港基本法"
 date: 1990-04-04
 year: 1990
 era: "Sino-British negotiations and the transition"
-tags: ["1990", "ai-draft", "basic-law", "constitutional-law", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-a", "1990", "ai-draft", "basic-law", "constitutional-law", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative Region of the People's Republic of China."
 description: "On April 4, 1990, China's National People's Congress formally adopted the Hong Kong Basic Law, establishing the legal framework for the territory's transition from British administration to a Special Administrative…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,16 @@ The Basic Law became the constitutional cornerstone of the Hong Kong Special Adm
 
 - ❔ The Third Session of the Seventh National People's Congress formally promulgated the Basic Law on April 4, 1990.
 - ❔ The drafting committee included appointed members from both mainland China and Hong Kong starting in 1985.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), FCO 40/2994, 1990 Jan 1 - 1990 Dec 31. Future of Hong Kong: Basic Law Drafting Committee (BLDC) meetings and promulgation.](https://discovery.nationalarchives.gov.uk/details/r/C16654625) (claims 1): This archive record directly covers the Basic Law Drafting Committee meetings and the promulgation process.
+- [The National Archives (UK), FCO 40/2993, 1990 Jan 1 - 1990 Dec 31. Future of Hong Kong: Basic Law Drafting Committee (BLDC) meetings and promulgation.](https://discovery.nationalarchives.gov.uk/details/r/C16654624) (claims 1): This archive record directly covers the Basic Law Drafting Committee meetings and the promulgation process.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

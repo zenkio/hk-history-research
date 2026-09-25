@@ -4,7 +4,7 @@ title_zh: "聖士提反書院大屠殺"
 date: 1941-12-25
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-b", "photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
 summary: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 description: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 confidence: ai-draft
@@ -39,29 +39,15 @@ The massacre at St. Stephen's College became a powerful symbol of the brutality 
 - [[02_Entities/Places/stanley|Stanley (赤柱)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of casualties and fatalities resulting from the bayonet attack at St. Stephen's College on December 25, 1941.
-- ❔ The precise chain of command and unit identities of the Imperial Japanese forces that entered the college premises.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: The exact number of casualties and fatalities resulting from the bayonet attack at St. Stephen's College on December 25, 1941. The text mentions that well over 100 people were cremated altogether, including those who died in the defense of Stanley, but it does not provide the exact number of casualties specifically from the bayonet attack.
+- ❔ **not in Wikipedia**: The precise chain of command and unit identities of the Imperial Japanese forces that entered the college premises. The text identifies the attackers as members of the Imperial Japanese Army but does not provide specific unit identities or a chain of command.
 
-![A memorial stone at Stanley Military Cemetery commemorates those who died at St. Stephen's on December 25, 1941.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg/960px-Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: St. Stephen's College massacre](https://en.wikipedia.org/wiki/St._Stephen%27s_College_massacre), [Wikipedia: St Stephen's College (Hong Kong)](https://en.wikipedia.org/wiki/St_Stephen%27s_College_%28Hong_Kong%29)
 
-*A memorial stone at Stanley Military Cemetery commemorates those who died at St. Stephen's on December 25, 1941.* (later photo of the site). Nick-D, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg).
-Corroborates: The inscription on the stone confirms the date and location of the massacre described in the summary.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Charles G. Roland (1997). *Massacre and Rape in Hong Kong: Two Case Studies Involving Medical Personnel and Patients*. Journal of Contemporary History.](https://doi.org/10.1177/002200949703200104) (claims 1, 2): This scholarship provides case studies of massacres in Hong Kong involving medical personnel, which is directly related to the St. Stephen's College incident.
-
-**Still needed:** Specific casualty counts and the exact Japanese military unit identities/command structures are still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "1981年英國國籍法令"
 date: 1981-10-30
 year: 1981
 era: "Riots and the MacLehose reforms"
-tags: ["1981", "ai-draft", "british-nationality-act", "colonial-history", "identity", "right-of-abode", "riots-and-reform"]
+tags: ["evidence-a", "1981", "ai-draft", "british-nationality-act", "colonial-history", "identity", "right-of-abode", "riots-and-reform"]
 summary: "The passage of the British Nationality Act 1981 reclassified Hong Kong residents, stripping them of the right of abode in the United Kingdom and generating profound local anxiety regarding their future political status."
 description: "The passage of the British Nationality Act 1981 reclassified Hong Kong residents, stripping them of the right of abode in the United Kingdom and generating profound local anxiety regarding their future political status."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,27 @@ The implementation of the Act marked a critical turning point in Hong Kong's soc
 
 - ❔ The British Nationality Act 1981 received royal assent and took effect on the specific legal timeline affecting CUKC status.
 - ❔ Exact wording of the citizenship tiers created under the 1981 Act regarding dependent territories.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), FCO 53/901, 1982 Jan 01 - 1982 Dec 31. British Nationality Act 1981: British Dependent Territories citizenship; Hong Kong.](https://discovery.nationalarchives.gov.uk/details/r/C15638968): Archive record specifically concerning the British Nationality Act 1981 and Hong Kong.
+- [The National Archives (UK), FCO 53/899, 1982 Jan 01 - 1982 Dec 31. British Nationality Act 1981: British Dependent Territories citizenship; Hong Kong.](https://discovery.nationalarchives.gov.uk/details/r/C15638966): Archive record specifically concerning the British Nationality Act 1981 and Hong Kong.
+- [The National Archives (UK), FCO 53/897, 1982 Jan 01 - 1982 Dec 31. British Nationality Act 1981: British Dependent Territories citizenship; Hong Kong.](https://discovery.nationalarchives.gov.uk/details/r/C15638964): Archive record specifically concerning the British Nationality Act 1981 and Hong Kong.
+- [The National Archives (UK), FCO 53/898, 1982 Jan 01 - 1982 Dec 31. British Nationality Act 1981: British Dependent Territories citizenship; Hong Kong.](https://discovery.nationalarchives.gov.uk/details/r/C15638965): Archive record specifically concerning the British Nationality Act 1981 and Hong Kong.
+- [The National Archives (UK), FCO 53/900, 1982 Jan 01 - 1982 Dec 31. British Nationality Act 1981: British Dependent Territories citizenship; Hong Kong.](https://discovery.nationalarchives.gov.uk/details/r/C15638967): Archive record specifically concerning the British Nationality Act 1981 and Hong Kong.
+- [The National Archives (UK), HO 213/2593, 1984 Jan 01 - 1984 Dec 31. British Nationality Act 1981: Hong Kong study; future of Hong Kong; negotiations with China.](https://discovery.nationalarchives.gov.uk/details/r/C16267147): Archive record regarding a study on the British Nationality Act 1981 and the future of Hong Kong.
+
+### Scholarship (grade B)
+
+- [Chi-kwan Mark (2019). *Decolonising Britishness? The 1981 British Nationality Act and the Identity Crisis of Hong Kong Elites*. The Journal of Imperial & Commonwealth History.](https://doi.org/10.1080/03086534.2019.1638619): Directly discusses the 1981 British Nationality Act, its Royal Assent date, and its impact on Hong Kong elites.
+- [Michaela Caroline Benson (2021). *Hong Kongers and the coloniality of British citizenship from decolonisation to ‘Global Britain’*. Current Sociology.](https://doi.org/10.1177/00113921211048530): Examines British immigration and nationality legislation specifically in relation to the people of Hong Kong.
+
+**Still needed:** The official full text of the British Nationality Act 1981 is needed to provide the primary legal basis for the page.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

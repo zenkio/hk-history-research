@@ -4,10 +4,11 @@ title_zh: "董建華當選首任行政長官"
 date: 1996-12-11
 year: 1996
 era: "Sino-British negotiations and the transition"
-tags: ["1996", "ai-draft", "basic-law", "chief-executive", "hong-kong-handover", "sino-british-joint-declaration", "transition", "tung-chee-hwa"]
+tags: ["evidence-none", "1996", "ai-draft", "basic-law", "chief-executive", "hong-kong-handover", "sino-british-joint-declaration", "transition", "tung-chee-hwa"]
 summary: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
 description: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The selection of **Tung Chee-hwa** symbolized both continuity and change for Hon
 
 - ❔ Tung Chee-hwa received exactly 320 votes out of 400 from the Selection Committee on December 11, 1996.
 - ❔ The Selection Committee meeting for the vote was held in Shenzhen.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically concerning the selection process, election details, or biography of Tung Chee-hwa as the first Chief Executive.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

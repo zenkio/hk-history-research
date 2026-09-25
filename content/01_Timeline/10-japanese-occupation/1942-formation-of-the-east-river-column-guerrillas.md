@@ -4,7 +4,7 @@ title_zh: "東江縱隊游擊隊的成立"
 date: 1942-02-03
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1942", "ai-draft", "east-river-column", "japanese-occupation", "new-territories", "resistance-movement", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1942", "ai-draft", "east-river-column", "japanese-occupation", "new-territories", "resistance-movement", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence gathering and the rescue of Allied personnel."
 description: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence…"
 confidence: ai-draft
@@ -42,17 +42,19 @@ The East River Column emerged as one of the primary indigenous armed resistance 
 - [[02_Entities/Places/guangdong|Guangdong (廣東)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact reorganization date and structural lineage of the guerrilla units leading to the East River Column in early February 1942
-- ❔ The precise roster of Allied airmen and prisoners rescued by the column in and around Hong Kong
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Exact reorganization date and structural lineage of the guerrilla units leading to the East River Column in early February 1942. The Hong Kong and Kowloon Independent Brigade was established on February 3, 1942, originating from two units that were merged in 1939.
+- ❔ **not in Wikipedia**: The precise roster of Allied airmen and prisoners rescued by the column in and around Hong Kong. The text states that around twenty to twenty-five Allied pilots were rescued, including Sir Lindsay Ride and Sir Douglas Clague, but does not provide a precise roster.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: East River Column](https://en.wikipedia.org/wiki/East_River_Column)
 
-**Still needed:** Evidence is needed regarding the specific reorganization date and structural lineage of the East River Column in February 1942, as well as a roster of the Allied airmen and prisoners rescued by them.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✗ [East River Column: Hong Kong Guerrillas in the Second World War and After](https://openlibrary.org/isbn/9789622098503) (ISBN) _ISBN is: East River Column
+            
+                Royal Asiatic Society Hong Kong Studies_
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

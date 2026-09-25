@@ -4,10 +4,11 @@ title_zh: "天星小輪加價暴動"
 date: 1966-04-04
 year: 1966
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["photo-corroborated", "1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
+tags: ["evidence-none", "photo-corroborated", "1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
 summary: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 description: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -54,6 +55,14 @@ The Star Ferry Riots marked a turning point in Hong Kong's postwar history. Whil
 
 *A petition form created by Elsie Elliot to oppose the increase in public transport fares in 1966.* (document). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elliot_petition.jpg).
 Corroborates: It corroborates the widespread public opposition and organized protests against the proposed Star Ferry fare increase.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the Star Ferry Riots of April 4, 1966, is needed.
 
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

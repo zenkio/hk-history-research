@@ -4,7 +4,7 @@ title_zh: "推行日化運動"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1942", "ai-draft", "cultural-assimilation", "hong-kong-history", "japanese-occupation", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1942", "ai-draft", "cultural-assimilation", "hong-kong-history", "japanese-occupation", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public ritual."
 description: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public…"
 confidence: ai-draft
@@ -37,17 +37,15 @@ The campaign fundamentally disrupted the pre-war social order of Hong Kong, thou
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Specific dates and official decrees related to the renaming of Queen's Road and other major thoroughfares
-- ❔ Exact curriculum mandates imposed on local schools regarding Japanese language instruction
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Specific dates and official decrees related to the renaming of Queen's Road and other major thoroughfares. The text mentions the renaming of Queen's Road in April 1942, but it does not provide specific dates or any mention of official decrees.
+- ❔ **not in Wikipedia**: Exact curriculum mandates imposed on local schools regarding Japanese language instruction. The text states that Japanese was a mandatory subject and English was forbidden, but it does not provide the exact curriculum mandates.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Japanese occupation of Hong Kong](https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong)
 
-**Still needed:** Evidence regarding the 1942 Japanese occupation is needed, specifically documentation of official decrees for renaming thoroughfares and mandates for Japanese language instruction in schools.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

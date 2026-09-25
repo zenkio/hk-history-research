@@ -4,10 +4,11 @@ title_zh: "十年建屋計劃公布"
 date: 1972-10-18
 year: 1972
 era: "Riots and the MacLehose reforms"
-tags: ["1972", "ai-draft", "housing-policy", "mac-lehose-era", "new-towns", "public-housing", "riots-and-reform", "urban-development"]
+tags: ["evidence-none", "1972", "ai-draft", "housing-policy", "mac-lehose-era", "new-towns", "public-housing", "riots-and-reform", "urban-development"]
 summary: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through new public estates and New Towns."
 description: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The announcement marked a watershed moment in Hong Kong's socioeconomic governan
 - ❔ Governor Sir Murray MacLehose formally announced the Ten-Year Housing Programme on October 18, 1972.
 - ❔ The programme initially aimed to house 1.8 million people over a ten-year period.
 - ❔ The Hong Kong Housing Authority was established in 1973 to consolidate public housing responsibilities.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the 1972 announcement of the Ten-Year Housing Programme in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,10 +4,11 @@ title_zh: "恆生指數股災"
 date: 1973-03-09
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["1973", "ai-draft", "financial-regulation", "hang-seng-index", "maclehose-era", "riots-and-reform", "stock-market-crash"]
+tags: ["evidence-none", "1973", "ai-draft", "financial-regulation", "hang-seng-index", "maclehose-era", "riots-and-reform", "stock-market-crash"]
 summary: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors. The financial disaster exposed the urgent need for tighter regulatory oversight and catalysed significant modernization of the territory's financial infrastructure."
 description: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The **1973** crash laid bare the deficiencies of a largely unregulated financial
 - ❔ The Hang Seng Index peaked at 1,774.96 points on March 9, 1973.
 - ❔ The market index subsequently fell to around 150 points in 1974.
 - ❔ Four distinct stock exchanges were operating in Hong Kong during the early 1970s.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Hang Seng Index crash on March 9, 1973, including its causes and market impact.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

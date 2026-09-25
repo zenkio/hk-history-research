@@ -4,10 +4,11 @@ title_zh: "港督尤德爵士猝逝"
 date: 1986-12-05
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["1986", "ai-draft", "governor-youde", "sino-british-joint-declaration", "transition", "transition-period"]
+tags: ["evidence-none", "1986", "ai-draft", "governor-youde", "sino-british-joint-declaration", "transition", "transition-period"]
 summary: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
 description: "The sudden death of Governor Edward Youde in Beijing on December 5, 1986, shocked Hong Kong during a critical juncture in Sino-British negotiations over the territory's future."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ Youde's death marked the first and only time a sitting Governor of Hong Kong die
 
 - ❔ Edward Youde died in his sleep at the British Embassy in Beijing on December 5, 1986.
 - ❔ David Akers-Jones served as Acting Governor immediately following Youde's death.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the circumstances, cause, or official reports regarding the death of Governor Edward Youde on December 5, 1986, are needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

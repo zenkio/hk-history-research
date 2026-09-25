@@ -4,7 +4,7 @@ title_zh: "人力車引入香港"
 date: 1874-01-01
 year: 1874
 era: "The New Territories lease and the early 20th century"
-tags: ["1874", "ai-draft", "colonial-history", "new-territories", "public-transport", "rickshaw", "urban-mobility"]
+tags: ["photo-corroborated", "1874", "ai-draft", "colonial-history", "new-territories", "public-transport", "rickshaw", "urban-mobility"]
 summary: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
 description: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
 confidence: ai-draft
@@ -38,5 +38,13 @@ The rickshaw revolutionized daily urban mobility in Hong Kong, serving as the ba
 
 - ❔ Exact year of the rickshaw's introduction to Hong Kong is traditionally cited as 1874, though precise documentation in colonial archives warrants further verification.
 - ❔ Initial import source of the rickshaw vehicles directly from Japan to Hong Kong.
+
+## Photos from this period
+
+![A photograph from the late 1860s showing a sedan chair and its operators on a waterfront in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/The_Peak%2C_Hong_Kong._Wellcome_L0055587.jpg/960px-The_Peak%2C_Hong_Kong._Wellcome_L0055587.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A photograph from the late 1860s showing a sedan chair and its operators on a waterfront in Hong Kong.* (contemporary photo). unknown, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Peak,_Hong_Kong._Wellcome_L0055587.jpg).
+Corroborates: It provides visual context for the mode of public transport used in Hong Kong immediately before the introduction of the rickshaw.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,10 +4,11 @@ title_zh: "九龍城寨拆卸"
 date: 1993-03-23
 year: 1993
 era: "Sino-British negotiations and the transition"
-tags: ["photo-corroborated", "1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
+tags: ["evidence-b", "photo-corroborated", "1993", "ai-draft", "demolition", "housing-policy", "kowloon-walled-city", "sino-british-joint-declaration", "transition", "urban-history"]
 summary: "On **March 23, 1993**, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 description: "On March 23, 1993, the clearance and subsequent demolition of the Kowloon Walled City officially commenced, dismantling one of the world's most densely populated and legally ambiguous urban enclaves."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -66,6 +67,19 @@ Corroborates: It provides a visual record of the Kowloon Walled City shortly bef
 
 *A museum model depicting an early stage of the Kowloon Walled City's layout.* (artefact). Ceeseven, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kowloon_Walled_City_Early_Stage_Model_in_History_Museum.jpg).
 Corroborates: It provides a historical visual representation of the site that was demolished in 1993.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Alistair Fraser, Eva Cheuk-Yin Li (2017). *The second life of Kowloon Walled City: Crime, media and cultural memory*. Crime Media Culture An International Journal.](https://doi.org/10.1177/1741659017703681): Discusses the history and cultural memory of the Kowloon Walled City.
+- [Lawrence May (2022). *Virtual Heterotopias and the Contested Histories of Kowloon Walled City*. Games and Culture.](https://doi.org/10.1177/15554120221115398): Discusses the contested histories and virtual reimagining of the site following its demolition.
+
+**Still needed:** Specific documentation or primary sources detailing the actual demolition process and the logistical events of March 23, 1993.
 
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "地鐵通車"
 date: 1979-10-01
 year: 1979
 era: "Riots and the MacLehose reforms"
-tags: ["1970s", "1979", "ai-draft", "infrastructure", "mtr", "public-transport", "riots-and-reform", "urban-development"]
+tags: ["evidence-none", "1970s", "1979", "ai-draft", "infrastructure", "mtr", "public-transport", "riots-and-reform", "urban-development"]
 summary: "On October 1, 1979, the Mass Transit Railway (MTR) officially commenced passenger service in Hong Kong, marking a transformative milestone in the territory's public transportation history and urban development."
 description: "On October 1, 1979, the Mass Transit Railway (MTR) officially commenced passenger service in Hong Kong, marking a transformative milestone in the territory's public transportation history and urban development."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The opening of the MTR fundamentally revolutionized daily commuting and urban sp
 
 - ❔ The MTR officially commenced passenger service on October 1, 1979.
 - ❔ The cross-harbour extension to Central opened in February 1980.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the specific start date of the MTR service (October 1, 1979) is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

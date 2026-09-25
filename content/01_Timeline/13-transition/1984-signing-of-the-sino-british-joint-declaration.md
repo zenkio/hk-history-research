@@ -4,10 +4,11 @@ title_zh: "中英聯合聲明簽署"
 date: 1984-12-19
 year: 1984
 era: "Sino-British negotiations and the transition"
-tags: ["1984", "ai-draft", "diplomacy", "one-country-two-systems", "sino-british-joint-declaration", "sovereignty", "transition"]
+tags: ["evidence-none", "1984", "ai-draft", "diplomacy", "one-country-two-systems", "sino-british-joint-declaration", "sovereignty", "transition"]
 summary: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
 description: "On December 19, 1984, the governments of the United Kingdom and the People's Republic of China signed the Sino-British Joint Declaration, establishing the framework for the transfer of Hong Kong's sovereignty in 1997."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,13 @@ The Joint Declaration was a landmark international treaty registered with the Un
 
 - ❔ The exact wording of the autonomy provisions agreed upon in the Joint Declaration annexes
 - ❔ The specific nature of local consultation conducted by the British administration prior to the signing
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the signing of the Sino-British Joint Declaration in 1984, such as the signatories, the venue, the date, and the content of the agreement, is required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

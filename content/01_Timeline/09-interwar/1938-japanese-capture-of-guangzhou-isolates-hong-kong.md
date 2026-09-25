@@ -4,7 +4,7 @@ title_zh: "日本佔領廣州孤立香港"
 date: 1938-10-21
 year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1938", "ai-draft", "british-colonial-history", "guangzhou", "interwar", "kowloon-canton-railway", "refugee-crisis", "second-sino-japanese-war"]
+tags: ["wikipedia-checked", "evidence-none", "1938", "ai-draft", "british-colonial-history", "guangzhou", "interwar", "kowloon-canton-railway", "refugee-crisis", "second-sino-japanese-war"]
 summary: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
 description: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
 confidence: ai-draft
@@ -37,18 +37,18 @@ The capture of Guangzhou fundamentally isolated Hong Kong economically and strat
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 - [[02_Entities/Places/daya-bay|Daya Bay (大亞灣)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Japanese forces captured Guangzhou on October 21, 1938.
-- ❔ The capture of Guangzhou completely severed the operations of the Kowloon-Canton Railway at the border.
-- ❔ The fall of Guangzhou brought Japanese military forces directly to the border of the Hong Kong New Territories.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Japanese forces captured Guangzhou on October 21, 1938. The text does not mention the specific date when Guangzhou was captured.
+- ❔ **not in Wikipedia**: The capture of Guangzhou completely severed the operations of the Kowloon-Canton Railway at the border. The text does not mention the Kowloon-Canton Railway or its operations.
+- ❔ **not in Wikipedia**: The fall of Guangzhou brought Japanese military forces directly to the border of the Hong Kong New Territories. The text does not mention the Hong Kong New Territories or the specific location of military forces relative to its border.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 104th Division (Imperial Japanese Army)](https://en.wikipedia.org/wiki/104th_Division_%28Imperial_Japanese_Army%29)
 
-**Still needed:** Evidence is needed to verify the specific date of the Japanese capture of Guangzhou in 1938 and its impact on the Kowloon-Canton Railway and the Hong Kong border.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Japanese Army in World War II: The South Pacific and New Guinea, 1942–43](https://openlibrary.org/isbn/1841768707) (ISBN)
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

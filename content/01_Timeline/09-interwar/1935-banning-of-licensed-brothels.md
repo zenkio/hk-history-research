@@ -4,7 +4,7 @@ title_zh: "取禁牌照妓院"
 date: 1935-06-30
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["evidence-none", "1935", "ai-draft", "colonial-policy", "interwar", "interwar-period", "prohibition", "social-history"]
+tags: ["wikipedia-checked", "evidence-none", "1935", "ai-draft", "colonial-policy", "interwar", "interwar-period", "prohibition", "social-history"]
 summary: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
 description: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
 confidence: ai-draft
@@ -36,17 +36,15 @@ The sudden abolition marked a major turning point in colonial social policy, shi
 - [[02_Entities/Places/sai-ying-pun|Sai Ying Pun (西營盤)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the final closure of licensed brothels take effect precisely on June 30, 1935?
-- ❔ What specific Colonial Office dispatches prompted the final termination of the licensing system?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the final closure of licensed brothels take effect precisely on June 30, 1935?. The text states licensed prostitution ended three years after a 1932 ban, but does not specify the exact date.
+- ❔ **not in Wikipedia**: What specific Colonial Office dispatches prompted the final termination of the licensing system?. The reference text does not mention Colonial Office dispatches.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Prostitution in Hong Kong](https://en.wikipedia.org/wiki/Prostitution_in_Hong_Kong)
 
-**Still needed:** Evidence is required to verify the exact date of the ban in Hong Kong and the specific Colonial Office dispatches that prompted it.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

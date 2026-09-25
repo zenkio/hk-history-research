@@ -4,10 +4,11 @@ title_zh: "中文法定語文地位"
 date: 1974-03-13
 year: 1974
 era: "Riots and the MacLehose reforms"
-tags: ["1974", "ai-draft", "chinese-language-movement", "colonial-history", "language-rights", "maclehose-era", "official-languages-ordinance", "riots-and-reform"]
+tags: ["evidence-none", "1974", "ai-draft", "chinese-language-movement", "colonial-history", "language-rights", "maclehose-era", "official-languages-ordinance", "riots-and-reform"]
 summary: "In 1974, the Official Languages Ordinance was enacted in Hong Kong, elevating the Chinese language to equal legal status with English following years of sustained grassroots and student advocacy."
 description: "In 1974, the Official Languages Ordinance was enacted in Hong Kong, elevating the Chinese language to equal legal status with English following years of sustained grassroots and student advocacy."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The elevation of Chinese to an official language was a critical turning point in
 
 - ❔ The Official Languages Ordinance was formally enacted on March 13, 1974.
 - ❔ Student activism from the Chinese University of Hong Kong played a central role in the Chinese Language Movement.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically confirming the official recognition of Chinese as an official language in Hong Kong on March 13, 1974.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,7 +4,7 @@ title_zh: "任命軍政長官磯谷廉介"
 date: 1942-02-20
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1942", "ai-draft", "japanese-occupation", "military-governor", "rensuke-isogai", "three-years-and-eight-months", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1942", "ai-draft", "japanese-occupation", "military-governor", "rensuke-isogai", "three-years-and-eight-months", "world-war-ii"]
 summary: "On February 20, 1942, Lieutenant General Rensuke Isogai assumed office as Hong Kong's first Japanese Military Governor, formally establishing direct imperial military administration over the territory following the British surrender."
 description: "On February 20, 1942, Lieutenant General Rensuke Isogai assumed office as Hong Kong's first Japanese Military Governor, formally establishing direct imperial military administration over the territory following the…"
 confidence: ai-draft
@@ -36,17 +36,15 @@ The appointment of **Rensuke Isogai** marked the definitive beginning of the thr
 - [[02_Entities/People/rensuke-isogai|Rensuke Isogai (磯谷廉介)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Lieutenant General Rensuke Isogai was officially appointed as Military Governor on February 20, 1942.
-- ❔ The Military Governor's Office centralized all executive, legislative, and judicial power under the Japanese Imperial Army upon Isogai's accession.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Lieutenant General Rensuke Isogai was officially appointed as Military Governor on February 20, 1942. The reference text does not mention Rensuke Isogai or his appointment date.
+- ❔ **not in Wikipedia**: The Military Governor's Office centralized all executive, legislative, and judicial power under the Japanese Imperial Army upon Isogai's accession. The reference text does not mention the Military Governor's Office or its administrative powers.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: History of Hong Kong (1800s–1930s)](https://en.wikipedia.org/wiki/History_of_Hong_Kong_%281800s%E2%80%931930s%29)
 
-**Still needed:** Evidence regarding Rensuke Isogai's official appointment date and the specific administrative powers transferred to the Military Governor's Office in Hong Kong in 1942 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "末任港督彭定康抵港"
 date: 1992-07-09
 year: 1992
 era: "Sino-British negotiations and the transition"
-tags: ["1992", "1997-handover", "ai-draft", "chris-patten", "colonial-history", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-none", "1992", "1997-handover", "ai-draft", "chris-patten", "colonial-history", "sino-british-joint-declaration", "transition"]
 summary: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public engagement."
 description: "On July 9, 1992, Chris Patten arrived in Hong Kong to assume office as the 28th and final British Governor, marking a significant departure from traditional colonial governance through a style of active public…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ Patten's arrival and subsequent tenure fundamentally transformed the political d
 
 - ❔ Chris Patten arrived in Hong Kong and was sworn in on July 9, 1992.
 - ❔ Patten broke with tradition by refusing to wear the white plumed colonial governor's uniform.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the arrival of Chris Patten on July 9, 1992, or details about his governorship are needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

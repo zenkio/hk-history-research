@@ -4,7 +4,7 @@ title_zh: "詹遜臨時香港政府之成立"
 date: 1945-08-23
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1945", "ai-draft", "british-administration", "franklin-gimson", "japanese-occupation", "post-war-restoration", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1945", "ai-draft", "british-administration", "franklin-gimson", "japanese-occupation", "post-war-restoration", "world-war-ii"]
 summary: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
 description: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
 confidence: ai-draft
@@ -42,15 +42,15 @@ The formation of Gimson's provisional administration was a crucial step in the i
 - [[02_Entities/Places/stanley-camp|Stanley Camp (赤柱拘留營)]]
 - [[02_Entities/Places/french-mission-building|French Mission Building (法國外方傳道會大樓)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did Franklin Gimson officially establish the provisional administration precisely on August 23, 1945?
-- ❔ Which specific buildings were utilized by Gimson and his staff during the provisional administration prior to Harcourt's arrival?
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did Franklin Gimson officially establish the provisional administration precisely on August 23, 1945?. Gimson announced the provisional government had been established on 27 August 1945, after taking over authority from Japan on 23 August.
+- ❔ **not in Wikipedia**: Which specific buildings were utilized by Gimson and his staff during the provisional administration prior to Harcourt's arrival?. The headquarters of the provisional government was set up in the Former French Mission Building.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Franklin Gimson](https://en.wikipedia.org/wiki/Franklin_Gimson)
 
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

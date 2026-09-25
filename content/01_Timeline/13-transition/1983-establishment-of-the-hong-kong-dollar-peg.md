@@ -4,10 +4,11 @@ title_zh: "香港聯繫匯率制度的建立"
 date: 1983-10-17
 year: 1983
 era: "Sino-British negotiations and the transition"
-tags: ["1983", "ai-draft", "exchange-rate-peg", "financial-history", "hong-kong-dollar", "monetary-policy", "sino-british-negotiations", "transition"]
+tags: ["evidence-none", "1983", "ai-draft", "exchange-rate-peg", "financial-history", "hong-kong-dollar", "monetary-policy", "sino-british-negotiations", "transition"]
 summary: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
 description: "In response to severe currency depreciation driven by political anxiety over the Sino-British negotiations, the Hong Kong government pegged the local currency to the US dollar on October 17, 1983."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ While initially conceived as an emergency measure to quell panic and curb inflat
 
 - ❔ The exact exchange rate of 7.80 HKD to 1 USD was officially implemented on October 17, 1983.
 - ❔ The Hong Kong dollar reached its historical low of 9.60 against the US dollar in September 1983.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the historical events, economic decisions, or the specific implementation of the Hong Kong dollar's linked exchange rate system on October 17, 1983.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

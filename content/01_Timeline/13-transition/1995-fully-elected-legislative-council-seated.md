@@ -4,10 +4,11 @@ title_zh: "立法局全體議員經選舉產生"
 date: 1995-09-17
 year: 1995
 era: "Sino-British negotiations and the transition"
-tags: ["1995", "1995-election", "ai-draft", "chris-patten", "handover", "legislative-council", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-none", "1995", "1995-election", "ai-draft", "chris-patten", "handover", "legislative-council", "sino-british-joint-declaration", "transition"]
 summary: "On September 17, 1995, Hong Kong held its final Legislative Council election under British administration, resulting in the territory's first fully elected legislature. This milestone drew strong condemnation from Beijing for violating prior agreements, setting the stage for the dissolution of the council in 1997."
 description: "On September 17, 1995, Hong Kong held its final Legislative Council election under British administration, resulting in the territory's first fully elected legislature."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ This election represented the culmination of democratic development under Britis
 
 - ❔ The exact voter turnout percentage for the September 17, 1995 Legislative Council election.
 - ❔ The precise distribution of seats among political parties in the 1995 Legislative Council.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the seating of the fully elected Legislative Council in September 1995 is required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

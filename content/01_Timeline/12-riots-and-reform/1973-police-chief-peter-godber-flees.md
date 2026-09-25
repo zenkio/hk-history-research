@@ -4,10 +4,11 @@ title_zh: "總警司葛柏潛逃事件"
 date: 1973-06-08
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["1973", "ai-draft", "icac", "maclehose-reforms", "peter-godber", "police-corruption", "riots-and-reform"]
+tags: ["evidence-none", "1973", "ai-draft", "icac", "maclehose-reforms", "peter-godber", "police-corruption", "riots-and-reform"]
 summary: "The **1973** flight of Chief Superintendent **Peter Godber** (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission Against Corruption (ICAC)."
 description: "The 1973 flight of Chief Superintendent Peter Godber (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ Faced with an escalating crisis that threatened the legitimacy of colonial rule,
 - ❔ Peter Godber boarded a flight out of Kai Tak Airport on June 8, 1973.
 - ❔ Governor Murray MacLehose announced the creation of the ICAC in October 1973 in direct response to the Godber affair.
 - ❔ Godber was extradited from the United Kingdom back to Hong Kong in 1974.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the identity of Peter Godber, his role as Police Chief, the circumstances of his corruption scandal, and his flight from Hong Kong in 1973.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

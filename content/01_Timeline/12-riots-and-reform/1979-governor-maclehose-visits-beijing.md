@@ -4,10 +4,11 @@ title_zh: "麥理浩港督訪問北京"
 date: 1979-03-29
 year: 1979
 era: "Riots and the MacLehose reforms"
-tags: ["1979", "1997", "ai-draft", "deng-xiaoping", "mac-lehose", "riots-and-reform", "sino-british-relations", "sovereignty"]
+tags: ["evidence-none", "1979", "1997", "ai-draft", "deng-xiaoping", "mac-lehose", "riots-and-reform", "sino-british-relations", "sovereignty"]
 summary: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's sovereignty after 1997."
 description: "In March 1979, Governor Murray MacLehose made the first official visit by a Hong Kong governor to the People's Republic of China, where paramount leader Deng Xiaoping formally raised the question of Hong Kong's…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ This visit transformed the Hong Kong question from a localized administrative ma
 - ❔ Governor Murray MacLehose's visit to Beijing took place on March 29, 1979.
 - ❔ This was the first official visit by a sitting Hong Kong governor to the People's Republic of China.
 - ❔ Deng Xiaoping told investors to put their hearts at ease regarding their investments in Hong Kong during these meetings.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting Governor MacLehose's visit to Beijing on March 29, 1979, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

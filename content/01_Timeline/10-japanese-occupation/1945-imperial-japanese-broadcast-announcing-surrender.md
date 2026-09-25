@@ -4,7 +4,7 @@ title_zh: "日本天皇宣佈無條件投降廣播"
 date: 1945-08-15
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "surrender", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
 description: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
 confidence: ai-draft
@@ -43,17 +43,18 @@ The broadcast marked the cessation of active hostilities in Hong Kong and the te
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 - [[02_Entities/Places/sham-shui-po|Sham Shui Po (深水埗)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact details of how and when the radio broadcast was heard by military and civilian personnel within occupied Hong Kong on August 15, 1945
-- ❔ The precise command structure and communication logs of the Japanese garrison in Hong Kong immediately following the Emperor's announcement
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact details of how and when the radio broadcast was heard by military and civilian personnel within occupied Hong Kong on August 15, 1945. The reference text mentions the broadcast time and date but does not provide details about how it was heard in occupied Hong Kong.
+- ❔ **not in Wikipedia**: The precise command structure and communication logs of the Japanese garrison in Hong Kong immediately following the Emperor's announcement. The reference text does not contain information regarding the Japanese garrison in Hong Kong.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Surrender of Japan](https://en.wikipedia.org/wiki/Surrender_of_Japan)
 
-**Still needed:** Evidence documenting the specific reception of the surrender broadcast by personnel in Hong Kong and the Japanese garrison's command logs is still needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [The Japanese-Soviet neutrality pact : a diplomatic history, 1941–1945 in SearchWorks catalog](https://openlibrary.org/isbn/9780415322928) (ISBN)
+- ✓ [The Soviet strategic offensive in Manchuria, 1945: "August storm"](https://openlibrary.org/isbn/9780714652795) (ISBN)
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

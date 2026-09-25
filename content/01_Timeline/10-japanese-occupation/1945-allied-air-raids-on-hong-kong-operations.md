@@ -4,7 +4,7 @@ title_zh: "盟軍空襲香港行動"
 date: 1945-01-16
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "photo-corroborated", "1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
 summary: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 description: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 confidence: ai-draft
@@ -38,26 +38,18 @@ The air raids marked a turning point in the physical devastation experienced by 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/kai-tak|Kai Tak (啟德)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact participation and composition of U.S. Navy Task Force 38 units involved on January 16, 1945
-- ❔ Precise tonnage of bombs dropped and total civilian casualty estimates resulting specifically from the January 16 raids
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Exact participation and composition of U.S. Navy Task Force 38 units involved on January 16, 1945. The text mentions aircraft from US Navy carriers were used but does not name Task Force 38 or specify its unit composition.
+- ❔ **not in Wikipedia**: Precise tonnage of bombs dropped and total civilian casualty estimates resulting specifically from the January 16 raids. The text mentions hundreds of civilians were killed or wounded and 14 died at Stanley, but it does not provide bomb tonnage or a total civilian casualty estimate.
 
-![An annotated aerial view of Hong Kong Harbor showing smoke from the Kowloon Docks and burning vessels during a US air raid in October 1944.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1%2C_annotated.jpg/960px-1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1%2C_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Air raids on Hong Kong](https://en.wikipedia.org/wiki/Air_raids_on_Hong_Kong)
 
-*An annotated aerial view of Hong Kong Harbor showing smoke from the Kowloon Docks and burning vessels during a US air raid in October 1944.* (contemporary photo). FDR Presidential Library &amp; Museum, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1,_annotated.jpg).
-Corroborates: It provides visual context for the type of aerial warfare conducted by Allied forces against Japanese-occupied Hong Kong.
-⚠️ Possible conflict: The photograph depicts a raid from October 16, 1944, rather than the January 16, 1945, raid described on the page.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence detailing the specific units of U.S. Navy Task Force 38 on January 16, 1945, as well as specific bomb tonnage and civilian casualty figures for that date, is needed.
-
+- ✓ [Hong Kong Internment, 1942–1945: Life in the Japanese Civilian Camp at Stanley](https://openlibrary.org/isbn/9789622098800) (ISBN)
+- ✓ [The British Pacific Fleet: The Royal Navy's Most Powerful Strike Force](https://openlibrary.org/isbn/9781591140443) (ISBN)
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

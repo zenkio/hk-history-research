@@ -4,10 +4,11 @@ title_zh: "《華人乘客法案》之通過"
 date: 1855-08-14
 year: 1855
 era: "The early colony"
-tags: ["1855", "ai-draft", "british-imperialism", "chinese-passengers-act", "coolie-trade", "early-colony", "emigration", "human-trafficking"]
+tags: ["evidence-a", "1855", "ai-draft", "british-imperialism", "chinese-passengers-act", "coolie-trade", "early-colony", "emigration", "human-trafficking"]
 summary: "Enacted on August 14, 1855, the British Chinese Passengers Act aimed to regulate the abusive global coolie trade operating through Hong Kong, attempting to curb horrific conditions and human trafficking on emigrant ships."
 description: "Enacted on August 14, 1855, the British Chinese Passengers Act aimed to regulate the abusive global coolie trade operating through Hong Kong, attempting to curb horrific conditions and human trafficking on emigrant…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,16 @@ The Act marked one of the earliest British legislative efforts to intervene in t
 
 - [ ] The exact text and provisions of the Chinese Passengers Act of 1855 regarding ship capacities and enforcement mechanisms.
 - [ ] The precise role and authority of the Hong Kong Emigration Officer in interviewing departing laborers under the 1855 Act.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Imperial Act 18 &amp; 19 Vict. c. 104 (Chinese Passenger Act 1855); Hong Kong Emigration Ordinance, TNA CO 129/53 &amp; CO 129/391. [link ✗](https://www.tandfonline.com/doi/abs/10.1080/03086534.2025.2591814) [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf) [link ✓](https://lib.hku.hk/cgi-bin/co129/129227.pl?keyword=ordinance) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/53) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/391)
+- **Grade B:** Leong, Jack (2019), "Hong Kong Connection: Chinese Passenger Acts and Pacific Migration," Stanford University Chinese Railroad Workers Project. [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf)
+- **Grade C:** Hong Kong Public Records Office Emigration Archive Guide, https://www.grs.gov.hk/. [site ?](https://www.grs.gov.hk/) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Popular belief claims the Act eradicated the abusive coolie trade; illicit operators evaded Hong Kong regulations by shifting embarkation ports to Macao and treaty ports.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

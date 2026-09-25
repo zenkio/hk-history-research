@@ -4,7 +4,7 @@ title_zh: "林則徐查禁鴉片"
 date: 1839-03-24
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1839", "ai-draft", "canton-trade", "first-opium-war", "lin-zexu", "opium-war", "thirteen-factories"]
+tags: ["wikipedia-checked", "evidence-none", "1839", "ai-draft", "canton-trade", "first-opium-war", "lin-zexu", "opium-war", "thirteen-factories"]
 summary: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
 description: "In March 1839, Qing Imperial Commissioner Lin Zexu enforced a strict blockade on foreign factories in Canton, demanding the surrender of all smuggled opium and precipitating the First Opium War."
 confidence: ai-draft
@@ -38,17 +38,17 @@ The blockade and subsequent destruction of property dealt a severe economic blow
 - [[02_Entities/Places/humen|Humen (虎門)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Exact date and duration of the complete blockade of the foreign factories starting in March 1839
-- [ ] The precise total number of chests of opium surrendered to Commissioner Lin Zexu
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact date and duration of the complete blockade of the foreign factories starting in March 1839. The text mentions an edict on 18 March 1839 and a blockade in March 1839, but does not provide an exact start date or a duration for the blockade.
+- ❔ **not in Wikipedia**: The precise total number of chests of opium surrendered to Commissioner Lin Zexu. The text provides conflicting totals, stating 20,000 chests in one section and 20,283 chests and 200 sacks in another.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: First Opium War](https://en.wikipedia.org/wiki/First_Opium_War), [Wikipedia: Opium Wars](https://en.wikipedia.org/wiki/Opium_Wars)
 
-**Still needed:** Evidence for the exact date and duration of the 1839 blockade and the precise total number of chests of opium surrendered is still needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Opium Regimes: China, Britain, and Japan, 1839–1952](https://doi.org/10.1525/california/9780520220096.001.0001) (DOI)
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

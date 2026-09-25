@@ -4,7 +4,7 @@ title_zh: "南京條約簽署"
 date: 1842-08-29
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-b", "photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1841", "ai-draft", "british-colonial-history", "first-opium-war", "opium-war", "qing-dynasty", "treaty-of-nanking", "unequal-treaties"]
 summary: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 description: "On August 29, 1842, representatives of Great Britain and the Qing Empire signed the Treaty of Nanking, ending the First Opium War and ceding Hong Kong Island to the British Crown."
 confidence: ai-draft
@@ -44,34 +44,15 @@ The Treaty of Nanking is widely viewed by historians as the first of the "unequa
 - [[02_Entities/Places/nanjing|Nanjing (南京)]]
 - [[02_Entities/Places/canton|Canton (廣州)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The exact date of the signing ceremony aboard HMS Cornwallis on August 29, 1842.
-- [ ] The precise titles and roles of the Qing commissioners present at the negotiations.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact date of the signing ceremony aboard HMS Cornwallis on August 29, 1842.. The text confirms the treaty was signed on 29 August 1842 on board HMS Cornwallis.
+- ❔ **not in Wikipedia**: The precise titles and roles of the Qing commissioners present at the negotiations.. The text identifies Keying and Yilibu as imperial commissioners, but does not provide titles or roles for Niu Jian.
 
-![A replica of the Treaty of Nanking on display at the Hong Kong Museum of History.](https://upload.wikimedia.org/wikipedia/commons/0/05/Replica_of_Treaty_of_Nanking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Treaty of Nanking](https://en.wikipedia.org/wiki/Treaty_of_Nanking), [Wikipedia: Treaty of Chushul](https://en.wikipedia.org/wiki/Treaty_of_Chushul)
 
-*A replica of the Treaty of Nanking on display at the Hong Kong Museum of History.* (artefact). Rachel from Los Angeles, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Replica_of_Treaty_of_Nanking.jpg).
-Corroborates: It provides a visual representation of the document that ended the First Opium War and ceded Hong Kong Island to the British.
-
-![A painting showing shipping and trade activity across the Pearl River at Canton around 1849.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Shipping_Off_Canton_RMG_BHC1777.tiff/lossy-page1-960px-Shipping_Off_Canton_RMG_BHC1777.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A painting showing shipping and trade activity across the Pearl River at Canton around 1849.* (artwork). anonymous, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shipping_Off_Canton_RMG_BHC1777.tiff).
-Corroborates: It illustrates one of the five ports, Canton, opened to European traders as a result of the Treaty of Nanking.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-24. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [John D. Wong (2018). *From the Treaty of Nanking to the Joint Declaration: The Struggle for Equality through State Documents*. Law & Literature.](https://doi.org/10.1080/1535685x.2018.1423759) (claims 1, 2): It examines the Treaty of Nanking as a state document.
-
-**Still needed:** Confirmation of the exact signing date, the ceremony location aboard HMS Cornwallis, and the precise titles of the Qing commissioners is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

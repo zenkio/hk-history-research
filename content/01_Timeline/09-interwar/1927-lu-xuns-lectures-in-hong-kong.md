@@ -4,10 +4,11 @@ title_zh: "魯迅香港演講"
 date: 1927-02-18
 year: 1927
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1927", "ai-draft", "intellectual-history", "interwar", "interwar-hong-kong", "literary-history", "lu-xun", "new-culture-movement"]
+tags: ["evidence-b", "1927", "ai-draft", "intellectual-history", "interwar", "interwar-hong-kong", "literary-history", "lu-xun", "new-culture-movement"]
 summary: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
 description: "In February 1927, prominent Chinese intellectual Lu Xun visited British-administered Hong Kong and delivered two influential public lectures, leaving a lasting impact on local literary and cultural discourse."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,18 @@ The lectures served as a major catalyst for local literary discourse and modern 
 
 - [ ] Verify the exact dates of Lu Xun's arrival in Hong Kong in February 1927.
 - [ ] Confirm the specific venues and exact titles of the lectures delivered by Lu Xun during his Hong Kong visit.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Chor‐yung Cheung, Tao Li (2008). *A new investigation into Lu Xun's lecture tour in Hong Kong (Part One)*.](https://openalex.org/W1502131061) (claims 1, 2): It re-examines the 1927 lecture tour in Hong Kong and its associated controversy.
+- [Lin Man-sh (2015). *A Few Questions about Lu Xun's Lecture in Hong Kong*. Journal of Shanxi Datong University.](https://openalex.org/W2362959126) (claims 1, 2): It mentions the timing of the lectures in February 1927 and provides two lecture titles.
+
+**Still needed:** The exact arrival date in February and the specific venues where the lectures were held are still required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

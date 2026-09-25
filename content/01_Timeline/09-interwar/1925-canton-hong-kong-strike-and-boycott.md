@@ -4,10 +4,11 @@ title_zh: "省港大罷工"
 date: 1925-01-01
 year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["photo-corroborated", "1925", "ai-draft", "boycott", "british-colonialism", "canton-hong-kong-strike", "interwar", "kuomintang", "labor-movement"]
+tags: ["evidence-a", "photo-corroborated", "1925", "ai-draft", "boycott", "british-colonialism", "canton-hong-kong-strike", "interwar", "kuomintang", "labor-movement"]
 summary: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
 description: "The Canton-Hong Kong Strike and Boycott of 1925-1926 was a massive 16-month anti-imperialist general strike and trade blockade that severely damaged Hong Kong's economy and reshaped regional politics."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -68,6 +69,22 @@ Corroborates: It provides direct historical evidence of the Workers' Inspection 
 
 *An exhibition panel displaying a political cartoon and a newspaper article concerning the anti-imperialist worker movements in Guangdong and Hong Kong.* (document). Mchelm Lgaowmd Wamoui, CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E8%80%81%E8%A1%97_Laojie_%E6%9D%B1%E9%96%80_Dongmen_%E6%80%9D%E6%9C%88%E6%9B%B8%E9%99%A2_Siyue_Shuyuan_Academy_photo_exhibition_%E5%BB%A3%E6%9D%B1%E7%9C%81%E7%B2%B5%E6%B8%AF%E6%BE%B3%E8%BF%91%E4%BB%A3_%E6%8A%97%E6%97%A5%E6%AD%B7%E5%8F%B2_Guangdong_HK_Macau_history_May_2024_R12S_226.jpg).
 Corroborates: The displayed cartoon and newspaper report provide direct historical context regarding the propaganda and media coverage used during the Canton-Hong Kong strike period.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), CO 882/11/1, 1925 Oct 30-1927 Dec 24. Hong Kong: 'Correspondence relating to the strike and boycott.' Includes reports of strikes and financial, commercial and political situations; the position in Canton; negotiations for withdrawal of b](https://discovery.nationalarchives.gov.uk/details/r/C8915447) (claims 1, 2, 3): This archive contains reports regarding the strikes, financial situations, and political positions during the period.
+
+### Scholarship (grade B)
+
+- [Rosemarie Chung Lu-cee (1969). *A study of the 1925-26 Canton-Hong Kong strike-boycott*.](https://doi.org/10.5353/th_b3194703) (claims 1, 2, 3): This is a scholarly study specifically focused on the 1925-26 strike-boycott.
+
+**Still needed:** Specific numerical data for the worker exodus and the exact financial losses are still required.
 
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

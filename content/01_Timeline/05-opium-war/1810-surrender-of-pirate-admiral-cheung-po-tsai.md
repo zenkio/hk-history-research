@@ -4,7 +4,7 @@ title_zh: "張保仔投降"
 date: 1810-04-20
 year: 1810
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1810", "ai-draft", "cheung-po-tsai", "lantau-island", "opium-war", "piracy", "qing-dynasty"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1810", "ai-draft", "cheung-po-tsai", "lantau-island", "opium-war", "piracy", "qing-dynasty"]
 summary: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau Island."
 description: "In April 1810, the notorious pirate leader Cheung Po Tsai surrendered his massive fleet to the Qing dynasty, bringing a temporary end to decades of dominant maritime piracy in the waters around Hong Kong and Lantau…"
 confidence: ai-draft
@@ -40,18 +40,16 @@ The surrender marked a major turning point in the maritime history of the Pearl 
 - [[02_Entities/Places/tung-chung|Tung Chung (東涌)]]
 - [[02_Entities/Places/pearl-river-delta|Pearl River Delta (珠江三角洲)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Cheung Po Tsai formally surrendered his fleet on April 20, 1810, at Tung Chung.
-- [ ] Bai Yanhu personally accepted the surrender on behalf of the Qing government.
-- [ ] Cheung Po Tsai was subsequently integrated into the Qing naval military structure.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Cheung Po Tsai formally surrendered his fleet on April 20, 1810, at Tung Chung.. Cheung Po Tsai surrendered his fleet on April 15, 1810, at Fu Iong Sa near Qianshan, though the instrument of surrender was signed on April 20.
+- ⚠️ **differs from Wikipedia**: Bai Yanhu personally accepted the surrender on behalf of the Qing government.. The text states that governor Bai Ling proceeded to receive the surrender.
+- ✅ **agrees with Wikipedia**: Cheung Po Tsai was subsequently integrated into the Qing naval military structure.. Cheung Po Tsai was rehabilitated and granted the position of admiral under the service of the Emperor.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Guangdong Pirate Confederation](https://en.wikipedia.org/wiki/Guangdong_Pirate_Confederation)
 
-**Still needed:** Evidence for all claims (1, 2, and 3) is still needed as the candidate sources are unrelated to Cheung Po Tsai.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

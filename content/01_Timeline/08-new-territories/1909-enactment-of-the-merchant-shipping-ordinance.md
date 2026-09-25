@@ -4,10 +4,11 @@ title_zh: "商船條例頒布"
 date: 1909-01-01
 year: 1909
 era: "The New Territories lease and the early 20th century"
-tags: ["1909", "ai-draft", "colonial-history", "early-20th-century", "legislation", "maritime-trade", "new-territories", "port-development"]
+tags: ["evidence-b", "1909", "ai-draft", "colonial-history", "early-20th-century", "legislation", "maritime-trade", "new-territories", "port-development"]
 summary: "In 1909, the colonial government enacted the Merchant Shipping Ordinance to modernize port regulations and accommodate the rapid expansion of international maritime trade in Victoria Harbour."
 description: "In 1909, the colonial government enacted the Merchant Shipping Ordinance to modernize port regulations and accommodate the rapid expansion of international maritime trade in Victoria Harbour."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,16 @@ The enactment of this ordinance signaled the maturation of Hong Kong’s maritim
 
 - [ ] The specific provisions contained within the 1909 Merchant Shipping Ordinance compared to the 1899 version.
 - [ ] The extent to which the 1909 Ordinance explicitly targeted the regulation of non-European vessels and Tanka watermen.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Ordinance No. 12 of 1908; Hong Kong Government Gazette, By-laws under Ordinance No. 24 of 1887 / 1908. [link ✗](https://s3.us-west-1.wasabisys.com/p-library/books/865871458b2ad633492d26a50e3da37c.pdf)
+- **Grade B:** Choa, G. H. (2000), *The Life and Times of Sir Kai Ho Kai*, Chinese University Press, ISBN: 9789622018730. [ISBN ✓](https://openlibrary.org/isbn/9789622018730)
+- **Grade C:** Department of Health Drug Office, "Pharmaceutical Control History", https://www.drugoffice.gov.hk. [site ?](https://www.drugoffice.gov.hk)
+
+**Disputes or myths:** Claims that colonial pharmaceutical regulations outlawed traditional Chinese medicine are inaccurate; the statute targeted synthetic Western poisons while explicitly exempting traditional Chinese apothecaries.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

@@ -4,10 +4,11 @@ title_zh: "香港上海匯豐銀行創辦"
 date: 1865-03-03
 year: 1865
 era: "The New Territories lease and the early 20th century"
-tags: ["1865", "19th-century", "ai-draft", "banking-history", "british-empire", "hsbc", "new-territories", "trade-finance"]
+tags: ["evidence-b", "1865", "19th-century", "ai-draft", "banking-history", "british-empire", "hsbc", "new-territories", "trade-finance"]
 summary: "Established on March 3, 1865, the Hong Kong and Shanghai Banking Corporation was founded to finance the rapidly expanding trade networks between China, Europe, and India, eventually becoming a pillar of British financial dominance in Asia."
 description: "Established on March 3, 1865, the Hong Kong and Shanghai Banking Corporation was founded to finance the rapidly expanding trade networks between China, Europe, and India, eventually becoming a pillar of British…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,16 @@ Over the subsequent decades, the bank grew to become the preeminent financial in
 
 - [ ] The exact date of formal establishment and opening of the Hong Kong and Shanghai Banking Corporation on March 3, 1865.
 - [ ] The precise roster of founding merchant houses and individuals involved in the initial prospectus.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Hong Kong Government Gazette*, Ordinance No. 5 of 1865 (HSBC Incorporation Ordinance); Colonial Office Correspondence, TNA CO 129/104. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/104)
+- **Grade B:** King, Frank H.H. (1987), *The History of The Hongkong and Shanghai Banking Corporation*, Cambridge University Press, ISBN 978-0521327060. [ISBN ✓](https://openlibrary.org/isbn/9780521327060) [link ✗](https://zolimacitymag.com/pao-yue-kong-hong-kong-maritime-trade-the-shipping-tycoons/)
+- **Grade C:** HSBC Group Archives, "HSBC History and Origins", https://www.hsbc.com/our-story. [link ✗](https://www.hsbc.com/our-story) [link ✗](https://www.elibrary.imf.org/view/journals/002/1997/050/article-A001-en.xml)
+
+**Disputes or myths:** Popularly believed to be a planned imperial British government project, whereas it was actually founded by private local hongs in Hong Kong and Shanghai to serve local commercial interests.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

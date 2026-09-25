@@ -4,10 +4,11 @@ title_zh: "註冊及改革妹仔制度"
 date: 1929-11-30
 year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1929", "ai-draft", "child-labor", "colonial-history", "interwar", "mui-tsai", "social-reform", "women-and-children"]
+tags: ["evidence-none", "1929", "ai-draft", "child-labor", "colonial-history", "interwar", "mui-tsai", "social-reform", "women-and-children"]
 summary: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child servitude."
 description: "Under intense pressure from the British Colonial Office and local reformers, Hong Kong enacted mandatory registration legislation in 1929 to monitor and eventually eliminate the traditional practice of domestic child…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The **1929** registration marked a critical legal turning point in shifting the 
 
 - [ ] The exact administrative mechanisms and penalties enforced during the November 1929 mui tsai registration deadline
 - [ ] The precise number of mui tsai successfully registered by the colonial government following the enactment
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence detailing the specific administrative mechanisms, penalties, and the precise number of mui tsai registered during the November 1929 reform period is still needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,10 +4,11 @@ title_zh: "日本進攻香港開始"
 date: 1941-12-08
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1941", "ai-draft", "battle-of-hong-kong", "british-empire", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1941", "ai-draft", "battle-of-hong-kong", "british-empire", "japanese-occupation", "world-war-ii"]
 summary: "On December 8, 1941, Imperial Japanese forces launched a surprise assault on the British Crown Colony of Hong Kong, coinciding with the attack on Pearl Harbor and initiating the Battle of Hong Kong."
 description: "On December 8, 1941, Imperial Japanese forces launched a surprise assault on the British Crown Colony of Hong Kong, coinciding with the attack on Pearl Harbor and initiating the Battle of Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The commencement of hostilities on **December 8, 1941** marked the end of Hong K
 
 - [ ] Exact timing of the first aerial bombardment on Kai Tak Airport relative to the crossing of the Sham Chun River
 - [ ] Exact composition and strength of the defending garrison on the morning of December 8, 1941
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific timing of the Kai Tak bombardment and the garrison's composition on December 8, 1941, is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "系統性饑荒與極端配給"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "famine", "japanese-occupation", "rationing", "starvation", "world-war-two"]
+tags: ["evidence-none", "1944", "ai-draft", "famine", "japanese-occupation", "rationing", "starvation", "world-war-two"]
 summary: "During the final years of the Japanese occupation in 1944 and 1945, severe wartime blockades and resource depletion reduced food imports to Hong Kong to near zero, resulting in widespread famine, severe malnutrition, and a massive demographic collapse marked by hundreds of daily street deaths."
 description: "During the final years of the Japanese occupation in 1944 and 1945, severe wartime blockades and resource depletion reduced food imports to Hong Kong to near zero, resulting in widespread famine, severe malnutrition…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The period of systemic starvation remains one of the darkest chapters in Hong Ko
 - [ ] Exact daily mortality figures from street collection records in 1944 and 1945
 - [ ] Specific caloric values and quantities of the official rice rations distributed during the peak of the shortage
 - [ ] The precise volume of maritime food imports reaching Hong Kong ports between late 1944 and mid-1945
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Historical records or scholarship specifically concerning Hong Kong during the Japanese occupation (1944-1945) regarding mortality, rationing, and maritime food imports are needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

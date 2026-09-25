@@ -4,7 +4,7 @@ title_zh: "九龍海戰"
 date: 1839-09-04
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["evidence-a", "1839", "ai-draft", "battle-of-kowloon", "charles-elliot", "first-opium-war", "lin-zexu", "naval-clash", "opium-war"]
+tags: ["wikipedia-checked", "evidence-a", "1839", "ai-draft", "battle-of-kowloon", "charles-elliot", "first-opium-war", "lin-zexu", "naval-clash", "opium-war"]
 summary: "The Battle of Kowloon on September 4, 1839, marked the first military engagement of the First Opium War in Hong Kong waters, involving a naval clash between British pinnaces and Qing war junks."
 description: "The Battle of Kowloon on September 4, 1839, marked the first military engagement of the First Opium War in Hong Kong waters, involving a naval clash between British pinnaces and Qing war junks."
 confidence: ai-draft
@@ -45,20 +45,15 @@ The engagement is historically significant as the opening military skirmish of t
 - [[02_Entities/Places/macao|Macao (澳門)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The exact timeline of the ultimatum delivered by Charles Elliot to the Qing naval commander prior to the exchange of fire
-- [ ] The precise number of casualties sustained by both British forces and Qing war junks during the engagement
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: The exact timeline of the ultimatum delivered by Charles Elliot to the Qing naval commander prior to the exchange of fire. Adam Elmslie stated that Elliot sent a message at 2 pm warning that the junks would be sunk if provisions were not received in half an hour.
+- ❔ **not in Wikipedia**: The precise number of casualties sustained by both British forces and Qing war junks during the engagement. The text mentions a report of 40 to 50 casualties inflicted on the British but notes that these accounts were fabricated.
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: Battle of Kowloon](https://en.wikipedia.org/wiki/Battle_of_Kowloon)
 
-- **Grade A:** Elliot's Despatches to Foreign Office, 5 September 1839, UK National Archives, FO 17/33; *The Chinese Repository*, Vol. 8, No. 5 (September 1839), pp. 321–323. [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✓](https://deemagclinic.com/2020/05/23/opium/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/33)
-- **Grade B:** Luk, G.C.H. (2022), "Accommodating Foreigners in a Littoral Borderland: The Lower Pearl River Delta during the Opium War", *Modern China*, Vol. 48, No. 1, pp. 197–228, DOI: 10.1177/0097700420982270. [DOI ?](https://doi.org/10.1177/0097700420982270) [link ✗](https://www.history.cuhk.edu.hk/en/profile/luk-chi-hung-gary/)
-- **Grade C:** Public Records Office, Hong Kong Government Records Service, HKMS230 Series. [link ✗](https://co129.com/en/about-studying-co129)
-
-**Disputes or myths:** Qing official reports claimed a decisive victory repulsing British invaders, whereas British operational logs record breaking the victualing blockade to obtain immediate provisions.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

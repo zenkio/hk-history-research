@@ -4,10 +4,11 @@ title_zh: "麗的映聲啟播"
 date: 1957-05-29
 year: 1957
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1957", "ai-draft", "broadcasting", "mass-media", "postwar-hong-kong", "postwar-refugees", "rediffusion", "television-history"]
+tags: ["evidence-none", "1957", "ai-draft", "broadcasting", "mass-media", "postwar-hong-kong", "postwar-refugees", "rediffusion", "television-history"]
 summary: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
 description: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The introduction of television fundamentally altered how local residents consume
 
 - [ ] Did Rediffusion Television officially launch its wired broadcast service on May 29, 1957?
 - [ ] Was Rediffusion Television the first television broadcasting service in Hong Kong and the Chinese-speaking world?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence verifying the specific launch date of Rediffusion Television's wired service and its status as the first broadcasting service in Hong Kong and the Chinese-speaking world is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

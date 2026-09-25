@@ -4,10 +4,11 @@ title_zh: "高德與安思地貪污醜聞爆發"
 date: 1858-01-01
 year: 1858
 era: "The early colony"
-tags: ["1858", "19th-century-hong-kong", "ai-draft", "british-empire", "caldwell-anstey-scandal", "colonial-corruption", "early-colony", "piracy"]
+tags: ["evidence-b", "1858", "19th-century-hong-kong", "ai-draft", "british-empire", "caldwell-anstey-scandal", "colonial-corruption", "early-colony", "piracy"]
 summary: "In **1858**, the public exposure of Registrar General Daniel Caldwell's ties to the pirate Ma-chow Wong ignited a massive political crisis in early colonial Hong Kong, exposing deep-seated factionalism and corruption within the administration."
 description: "In 1858, the public exposure of Registrar General Daniel Caldwell's ties to the pirate Ma-chow Wong ignited a massive political crisis in early colonial Hong Kong, exposing deep-seated factionalism and corruption within…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,16 @@ The scandal laid bare the fragility and compromised integrity of the early colon
 
 - [ ] Specific charges brought by Attorney General Thomas Chisholm Anstey against Daniel Caldwell in 1858
 - [ ] The precise nature of the official findings and the Colonial Office's final disciplinary decisions regarding Caldwell and Anstey
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Report of the Commission of Inquiry into the Charges against Daniel Richard Caldwell, *Hong Kong Government Gazette* (1860); TNA CO 129/78. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/national-custom-debating-female-servitude-in-late-nineteenthcentury-hong-kong1/213F3E4CD65129F92905B2768A0A3A50) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item:4107982/view) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/78)
+- **Grade B:** Munn, Christopher (1997), "The Caldwell Affair and the Corruption of Colonial Administration," *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 37. [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item:4107982/view) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/)
+- **Grade C:** Dictionary of Hong Kong Biography Portal, https://scholarlypublications.universiteitleiden.nl/. [site ?](https://scholarlypublications.universiteitleiden.nl/) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item:4107982/view) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/)
+
+**Disputes or myths:** Contradicts the myth that Caldwell was an unblemished cultural mediator; investigations showed he held financial stakes in pirate-linked brothels and informers.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

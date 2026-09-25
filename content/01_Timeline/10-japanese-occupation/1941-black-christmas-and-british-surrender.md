@@ -4,10 +4,11 @@ title_zh: "黑色聖誕與英軍投降"
 date: 1941-12-25
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "british-surrender", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "british-surrender", "japanese-occupation", "world-war-ii"]
 summary: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
 description: "On December 25, 1941, Governor Sir Mark Young surrendered the British Crown Colony of Hong Kong to the Empire of Japan at the Peninsula Hotel, initiating three years and eight months of brutal occupation."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The surrender marked the end of British colonial rule and the beginning of the p
 
 - [ ] Governor Sir Mark Young surrendered at the Peninsula Hotel on December 25, 1941.
 - [ ] The Battle of Hong Kong lasted for 18 days from December 8 to December 25, 1941.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence from 1941 or later regarding the surrender of Governor Sir Mark Young and the duration of the Battle of Hong Kong is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

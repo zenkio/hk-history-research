@@ -62,6 +62,17 @@ Corroborates: This official announcement of the British takeover precipitated th
 Corroborates: It documents the official colonial takeover of the New Territories that triggered the armed resistance of the local indigenous clans.
 
 
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Colonial Office Records, Minutes of the Colonial Office, CO 129/294, UK National Archives; Hong Kong Government Gazette, April 1899. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/294)
+- **Grade B:** Hase, Patrick H. (2008), *The Six-Day War of 1899: Hong Kong in the Age of Imperialism*, Hong Kong University Press, ISBN: 9789622098992. [ISBN ✓](https://openlibrary.org/isbn/9789622098992) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf) [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade C:** Hong Kong Museum of History, "The Acquisition of the New Territories", Leisure and Cultural Services Department, https://www.museums.gov.hk. [site ?](https://www.museums.gov.hk) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
+
+**Disputes or myths:** Early British colonial despatches framed the conflict as anti-foreign riots incited by outside bandits, whereas scholarship demonstrates it was an organized resistance led by local landowning elites defending traditional lineage rights.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **B**

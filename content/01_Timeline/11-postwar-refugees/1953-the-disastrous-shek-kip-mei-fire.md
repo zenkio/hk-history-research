@@ -4,10 +4,11 @@ title_zh: "石硤尾大火"
 date: 1953-12-25
 year: 1953
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1953", "ai-draft", "colonial-history", "postwar-refugees", "public-housing", "refugees", "shek-kip-mei-fire"]
+tags: ["evidence-none", "1953", "ai-draft", "colonial-history", "postwar-refugees", "public-housing", "refugees", "shek-kip-mei-fire"]
 summary: "A devastating Christmas Day fire in 1953 left over 53,000 squatters homeless, fundamentally transforming British colonial policy and launching Hong Kong's iconic public housing program."
 description: "A devastating Christmas Day fire in 1953 left over 53,000 squatters homeless, fundamentally transforming British colonial policy and launching Hong Kong's iconic public housing program."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The Shek Kip Mei fire marks a watershed moment in Hong Kong's history. Prior to 
 
 - [ ] Exact number of people left homeless by the Shek Kip Mei fire on December 25, 1953
 - [ ] Direct causal link between the fire and the immediate formulation of the multi-story resettlement block policy
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed specifically addressing the 1953 Shek Kip Mei fire, including the number of people displaced and its impact on the development of the resettlement policy.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

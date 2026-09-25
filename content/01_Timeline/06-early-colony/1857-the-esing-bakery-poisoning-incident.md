@@ -60,6 +60,16 @@ Corroborates: It corroborates the legal proceedings and racial dynamics followin
 Corroborates: It depicts the specific bakery and the legal proceedings related to the poisoning incident mentioned on the page.
 
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Trial Records of Cheong Ah-lum, Attorney General vs. Esing Bakery, TNA CO 129/62; *The China Mail* (January 1857). [link ✗](https://co129.com/en/) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/62)
+- **Grade B:** Lowe, Christopher &amp; Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong*, Hong Kong University Press. [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✓](https://www.hkhistory.net/2016/01/25/sweeting-summary-points-to-new-studies/)
+- **Grade C:** Hong Kong Museum of Medical Sciences Archives, https://hkupress.hku.hk/. [site ?](https://hkupress.hku.hk/) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622098053.pdf) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Popular myth holds that Cheong Ah-lum was a Qing secret agent executing a planned biological attack; jury trials acquitted him due to lack of direct evidence.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **B**

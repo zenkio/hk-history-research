@@ -4,10 +4,11 @@ title_zh: "推行日化運動"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "cultural-assimilation", "hong-kong-history", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "cultural-assimilation", "hong-kong-history", "japanese-occupation", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public ritual."
 description: "During the Japanese occupation of Hong Kong, military authorities implemented a sweeping cultural Japanization campaign to forcibly assimilate the local population through language, infrastructure renaming, and public…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The campaign fundamentally disrupted the pre-war social order of Hong Kong, thou
 
 - [ ] Specific dates and official decrees related to the renaming of Queen's Road and other major thoroughfares
 - [ ] Exact curriculum mandates imposed on local schools regarding Japanese language instruction
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the 1942 Japanese occupation is needed, specifically documentation of official decrees for renaming thoroughfares and mandates for Japanese language instruction in schools.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

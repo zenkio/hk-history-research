@@ -4,10 +4,11 @@ title_zh: "調景嶺難民營的建立"
 date: 1950-01-01
 year: 1950
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950", "ai-draft", "british-colonial-history", "cold-war", "kuomintang", "postwar-refugees", "refugee-camp", "tiu-keng-leng"]
+tags: ["evidence-none", "1950", "ai-draft", "british-colonial-history", "cold-war", "kuomintang", "postwar-refugees", "refugee-camp", "tiu-keng-leng"]
 summary: "In **1950**, the British colonial government relocated thousands of Kuomintang loyalist refugees to Tiu Keng Leng, establishing a distinct pro-Nationalist enclave in Hong Kong."
 description: "In 1950, the British colonial government relocated thousands of Kuomintang loyalist refugees to Tiu Keng Leng, establishing a distinct pro-Nationalist enclave in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ Tiu Keng Leng became a unique geopolitical anomaly during the Cold War, represen
 
 - [ ] The exact month and formal administrative orders establishing the camp in 1950
 - [ ] The precise initial population figures of refugees relocated to Tiu Keng Leng during the 1950 resettlement operation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific month, administrative orders, and initial population figures for the establishment of Tiu Keng Leng Refugee Camp in 1950 is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

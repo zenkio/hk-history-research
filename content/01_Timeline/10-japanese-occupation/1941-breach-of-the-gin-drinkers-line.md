@@ -4,10 +4,11 @@ title_zh: "突破醉酒灣防線"
 date: 1941-12-10
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1941", "ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "japanese-occupation", "new-territories", "shing-mun-redoubt", "world-war-ii"]
+tags: ["evidence-b", "1941", "ai-draft", "battle-of-hong-kong", "gin-drinkers-line", "japanese-occupation", "new-territories", "shing-mun-redoubt", "world-war-ii"]
 summary: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
 description: "On December 10, 1941, Japanese forces successfully captured the Shing Mun Redoubt, decisively breaching the British Gin Drinkers Line in the New Territories during the Battle of Hong Kong."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,17 @@ The breach of the Gin Drinkers Line is widely regarded by historians as a critic
 
 - [ ] The exact timeline of the assault on the Shing Mun Redoubt between the night of December 9 and the morning of December 10, 1941.
 - [ ] The specific troop numbers and regimental units involved in holding the Shing Mun Redoubt at the time of the breach.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Matthew Schwarzkopf (2019). *The Second Mission: Canadian Survival in Hong Kong Prisoner-of-War Camps, 1941-1945*. uO Research (University of Ottawa).](https://doi.org/10.20381/ruor-23148) (claims 1, 2): The source discusses Canadian soldiers involved in the defense of Hong Kong and the subsequent 1941 battle.
+
+**Still needed:** Specific evidence regarding the Shing Mun Redoubt's assault timeline and the exact regimental units stationed there is still needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

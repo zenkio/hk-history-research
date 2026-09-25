@@ -4,7 +4,7 @@ title_zh: "正式佔領香港島"
 date: 1841-01-26
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1841", "ai-draft", "british-colonial-rule", "charles-elliot", "first-opium-war", "opium-war", "possession-point"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1841", "ai-draft", "british-colonial-rule", "charles-elliot", "first-opium-war", "opium-war", "possession-point"]
 summary: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
 description: "On January 26, 1841, British forces formally raised the Union Jack at Possession Point, marking the beginning of British colonial administration over Hong Kong Island during the First Opium War."
 confidence: ai-draft
@@ -44,18 +44,16 @@ This event established the physical and administrative foothold that would trans
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/china|China (中國)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Commodore Sir Gordon Bremer formally raised the Union Jack at Possession Point on January 26, 1841.
-- [ ] A 21-gun salute was fired by Royal Navy ships during the landing ceremony.
-- [ ] Charles Elliot issued a proclamation regarding local laws and customs on the day of the landing.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Commodore Sir Gordon Bremer formally raised the Union Jack at Possession Point on January 26, 1841.. The text states the hoisting of the Union Jack was possibly done by either William Dowell or Mohammed Arab.
+- ❔ **not in Wikipedia**: A 21-gun salute was fired by Royal Navy ships during the landing ceremony.. The text mentions a royal salute from the men-of-war ships but does not specify the number of guns.
+- ❔ **not in Wikipedia**: Charles Elliot issued a proclamation regarding local laws and customs on the day of the landing.. The reference text does not mention Charles Elliot or a proclamation.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Possession Street](https://en.wikipedia.org/wiki/Possession_Street)
 
-**Still needed:** Evidence for all claims (1, 2, and 3) is still needed as none of the provided sources relate to the formal British possession of Hong Kong Island in 1841.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

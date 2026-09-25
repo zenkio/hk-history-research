@@ -4,10 +4,11 @@ title_zh: "香港機器工人罷工"
 date: 1920-01-01
 year: 1920
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1920", "1920s", "ai-draft", "interwar", "interwar-hong-kong", "labor-movement", "mechanics-strike", "trade-unions"]
+tags: ["evidence-none", "1920", "1920s", "ai-draft", "interwar", "interwar-hong-kong", "labor-movement", "mechanics-strike", "trade-unions"]
 summary: "In **April 1920**, thousands of skilled Chinese mechanics in Hong Kong launched a successful strike for higher wages, marking a watershed moment for the colony's organized labor movement."
 description: "In April 1920, thousands of skilled Chinese mechanics in Hong Kong launched a successful strike for higher wages, marking a watershed moment for the colony's organized labor movement."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The successful **1920** Mechanics' Strike is widely viewed by historians as a cr
 - [ ] Did the Mechanics' Strike specifically occur in April 1920?
 - [ ] What exact percentage wage increase was demanded and ultimately granted to the mechanics?
 - [ ] Which specific shipyards or engineering firms were most affected by the walkout?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence concerning the timeline, wage percentages, and specific companies involved in the 1920 Mechanics' Strike is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,11 +4,11 @@ title_zh: "香港警隊的建立"
 date: 1844-05-01
 year: 1844
 era: "The early colony"
-tags: ["evidence-none", "photo-corroborated", "1840s", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-police-force", "law-and-order"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1840s", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-police-force", "law-and-order"]
 summary: "In **1844**, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
 description: "In 1844, the colonial government established the Hong Kong Police Force to address rising crime and maintain order among a rapidly growing and diverse population."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,31 +37,15 @@ The creation of the police force marked a crucial step in the institutional deve
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/london|London (倫敦)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The Hong Kong Police Force was formally established by ordinance on May 1, 1844.
-- [ ] The early force composition included European, Indian, and Chinese officers.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The Hong Kong Police Force was formally established by ordinance on May 1, 1844.. The text states that the formal establishment of the force was gazetted on 1 May 1844.
+- ❔ **not in Wikipedia**: The early force composition included European, Indian, and Chinese officers.. The text mentions European and Indian military/police connections (Captain Caine and Captain Haly of the Madras Native Infantry) but does not explicitly describe the early force composition or the presence of Chinese officers.
 
-![A portrait of William Caine alongside a page from the Hong Kong Gazette dated May 1, 1841.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png/960px-First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Hong Kong Police Force](https://en.wikipedia.org/wiki/Hong_Kong_Police_Force), [Wikipedia: Malta Police Force](https://en.wikipedia.org/wiki/Malta_Police_Force)
 
-*A portrait of William Caine alongside a page from the Hong Kong Gazette dated May 1, 1841.* (document). police.gov.hk, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:First_Head_of_the_Police_Force_William_Caine%E2%80%99s_Collection_and_Government_Gazette_of_the_Establishment_of_the_Police_Force_in_1844.png).
-Corroborates: It identifies William Caine, the first head of the Hong Kong Police Force, and documents his early appointment as Chief Magistrate responsible for law and order.
-⚠️ Possible conflict: The Gazette page is dated 1841, whereas the event page specifies the establishment of the police force in 1844.
-
-![Portrait of William Caine, the first head of the Hong Kong Police Force.](https://upload.wikimedia.org/wikipedia/commons/a/a1/First_Head_of_the_Police_Force_William_Caine_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*Portrait of William Caine, the first head of the Hong Kong Police Force.* (contemporary photo). police.gov.hk, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:First_Head_of_the_Police_Force_William_Caine_(cropped).png).
-Corroborates: It depicts the first individual to lead the newly established force mentioned in the summary.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
-
-**Still needed:** Evidence for the formal establishment date (May 1, 1844) and the early ethnic composition of the force is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

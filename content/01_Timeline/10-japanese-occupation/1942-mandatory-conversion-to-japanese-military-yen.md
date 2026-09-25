@@ -4,10 +4,11 @@ title_zh: "強制使用軍票"
 date: 1942-07-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "economic-history", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "economic-history", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
 summary: "In July 1942, the Japanese occupation administration banned the Hong Kong Dollar and enforced the use of unbacked military yen, leading to severe inflation and the destruction of local personal savings."
 description: "In July 1942, the Japanese occupation administration banned the Hong Kong Dollar and enforced the use of unbacked military yen, leading to severe inflation and the destruction of local personal savings."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The forced currency conversion remains one of the most economically devastating 
 
 - [ ] The exact official exchange rate enforced on July 24, 1942, between the Hong Kong Dollar and the military yen.
 - [ ] The total nominal value of Hong Kong Dollars confiscated or exchanged during the occupation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific official exchange rate on July 24, 1942, and the total nominal value of Hong Kong Dollars exchanged or confiscated is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

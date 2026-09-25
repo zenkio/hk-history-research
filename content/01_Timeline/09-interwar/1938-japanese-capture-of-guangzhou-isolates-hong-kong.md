@@ -4,10 +4,11 @@ title_zh: "日本佔領廣州孤立香港"
 date: 1938-10-21
 year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1938", "ai-draft", "british-colonial-history", "guangzhou", "interwar", "kowloon-canton-railway", "refugee-crisis", "second-sino-japanese-war"]
+tags: ["evidence-none", "1938", "ai-draft", "british-colonial-history", "guangzhou", "interwar", "kowloon-canton-railway", "refugee-crisis", "second-sino-japanese-war"]
 summary: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
 description: "On October 21, 1938, Japanese forces captured Guangzhou, severing Hong Kong's vital overland rail connections to southern China and bringing the front line directly to the colony's border."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The capture of Guangzhou fundamentally isolated Hong Kong economically and strat
 - [ ] Japanese forces captured Guangzhou on October 21, 1938.
 - [ ] The capture of Guangzhou completely severed the operations of the Kowloon-Canton Railway at the border.
 - [ ] The fall of Guangzhou brought Japanese military forces directly to the border of the Hong Kong New Territories.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the specific date of the Japanese capture of Guangzhou in 1938 and its impact on the Kowloon-Canton Railway and the Hong Kong border.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

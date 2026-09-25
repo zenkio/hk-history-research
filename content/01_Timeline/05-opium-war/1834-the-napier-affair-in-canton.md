@@ -4,7 +4,7 @@ title_zh: "律勞卑事件"
 date: 1834-01-01
 year: 1834
 era: "Canton trade and the First Opium War"
-tags: ["1834", "ai-draft", "british-diplomacy", "canton-system", "first-opium-war", "lord-napier", "opium-war", "qing-dynasty"]
+tags: ["wikipedia-checked", "1834", "ai-draft", "british-diplomacy", "canton-system", "first-opium-war", "lord-napier", "opium-war", "qing-dynasty"]
 summary: "In **1834**, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his untimely death."
 description: "In 1834, Lord Napier's ill-fated mission to establish direct diplomatic relations with Qing officials in Canton collapsed due to fundamental disagreements over protocol, culminating in a brief military standoff and his…"
 confidence: ai-draft
@@ -43,20 +43,17 @@ The Napier Affair highlighted the irreconcilable differences between British not
 - [[02_Entities/Places/pearl-river|Pearl River (珠江)]]
 - [[02_Entities/Places/bocca-tigris|Bocca Tigris (虎門)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Lord Napier arrived in Canton in July 1834 and attempted to deliver a direct letter to Viceroy Lu Kun.
-- [ ] British warships forced their way past the Bocca Tigris forts in September 1834 before Napier retreated to Macao and died in October 1834.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: Lord Napier arrived in Canton in July 1834 and attempted to deliver a direct letter to Viceroy Lu Kun.. The text states he arrived in Canton in July 1834 and demanded to speak directly with Lu Kun, but does not mention a letter.
+- ✅ **agrees with Wikipedia**: British warships forced their way past the Bocca Tigris forts in September 1834 before Napier retreated to Macao and died in October 1834.. The text confirms that British warships breached the defences at the Bocca Tigris in September 1834, Napier was forced to retire to Macau in September 1834, and he died in October 1834.
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: William Napier, 9th Lord Napier](https://en.wikipedia.org/wiki/William_Napier%2C_9th_Lord_Napier)
 
-- **Grade A:** Great Britain, Foreign Office, *Correspondence Relating to China* (1840), FO 17/7; *The Chinese Repository*, Vol. 3, No. 4 (August 1834), pp. 188–192. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/7)
-- **Grade B:** Fairbank, J.K. (1953), *Trade and Diplomacy on the China Coast: The Opening of Treaty Ports, 1842-1854*, Harvard University Press, DOI: 10.1007/978-1-349-00508-6. [DOI ?](https://doi.org/10.1007/978-1-349-00508-6)
-- **Grade C:** UK National Archives FO 17 Series Records Overview, https://discovery.nationalarchives.gov.uk/details/r/C4320. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-**Disputes or myths:** Contradicts the common myth that Anglo-Chinese conflict was purely about opium, demonstrating that fundamental diplomatic friction over Westphalian equality versus tributary protocol initiated the confrontation.
-
+- ✓ [Barbarian Eye: Lord Napier in China, 1834, the Prelude to Hong Kong](https://openlibrary.org/isbn/9781857531169) (ISBN)
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

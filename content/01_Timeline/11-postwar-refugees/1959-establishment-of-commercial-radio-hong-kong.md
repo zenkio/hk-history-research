@@ -4,10 +4,11 @@ title_zh: "香港商業電台啟播"
 date: 1959-08-26
 year: 1959
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950s", "1959", "ai-draft", "cantonese-culture", "commercial-radio", "mass-media", "postwar-hong-kong", "postwar-refugees"]
+tags: ["evidence-none", "1950s", "1959", "ai-draft", "cantonese-culture", "commercial-radio", "mass-media", "postwar-hong-kong", "postwar-refugees"]
 summary: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that quickly became embedded in working-class daily life."
 description: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ Later scholarship often highlights how private broadcasters like CRHK navigated 
 
 - [ ] Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959.
 - [ ] George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to confirm the official commencement date of Commercial Radio Hong Kong and the identity of its primary founder, George Ho.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

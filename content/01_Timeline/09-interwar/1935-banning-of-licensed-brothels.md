@@ -4,10 +4,11 @@ title_zh: "取禁牌照妓院"
 date: 1935-06-30
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1935", "ai-draft", "colonial-policy", "interwar", "interwar-period", "prohibition", "social-history"]
+tags: ["evidence-none", "1935", "ai-draft", "colonial-policy", "interwar", "interwar-period", "prohibition", "social-history"]
 summary: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
 description: "On June 30, 1935, Hong Kong officially outlawed licensed prostitution under directives from the British Colonial Office, fundamentally altering the social and economic landscape of the territory's nightlife districts."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The sudden abolition marked a major turning point in colonial social policy, shi
 
 - [ ] Did the final closure of licensed brothels take effect precisely on June 30, 1935?
 - [ ] What specific Colonial Office dispatches prompted the final termination of the licensing system?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is required to verify the exact date of the ban in Hong Kong and the specific Colonial Office dispatches that prompted it.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

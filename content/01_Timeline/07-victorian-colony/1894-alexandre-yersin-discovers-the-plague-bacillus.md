@@ -47,6 +47,16 @@ The discovery marked a monumental breakthrough in modern medicine and epidemiolo
 - [ ] Yersin conducted his research inside a makeshift straw hut near the epidemic zone in Hong Kong.
 - [ ] Kitasato Shibasaburō was conducting independent plague research in Hong Kong at the same time.
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Yersin, Alexandre (1894), "La peste bubonique à Hong-Kong", *Annales de l'Institut Pasteur*, Vol. 8, pp. 662–667; HK Medical Reports 1894. [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en)
+- **Grade B:** Howard-Jones, Norman (1975), "Was Kitasato Shibasaburo the Co-discoverer of the Plague Bacillus?", *Medical History*, Vol. 19, No. 1, pp. 1–22, https://doi.org/10.1017/s0025727300019939. [DOI ?](https://doi.org/10.1017/s0025727300019939) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade C:** Institut Pasteur Archives, "Alexandre Yersin and the Discovery of Plague Bacillus", https://www.pasteur.fr. [site ?](https://www.pasteur.fr) [link ✓](https://ihss.hku.hk/portfolio/elizabeth-sinn/) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+
+**Disputes or myths:** For decades Kitasato Shibasaburo was credited as co-discoverer, but historical analysis showed Kitasato's isolated cultures were contaminated with pneumococcus, leaving Yersin as sole discoverer.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **B**

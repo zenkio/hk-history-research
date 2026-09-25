@@ -4,7 +4,7 @@ title_zh: "港珠澳大橋開通"
 date: 2018-10-23
 year: 2018
 era: "Political contention and protest"
-tags: ["2018", "ai-draft", "contention", "economy", "greater-bay-area", "infrastructure", "regional-integration", "transportation"]
+tags: ["photo-corroborated", "2018", "ai-draft", "contention", "economy", "greater-bay-area", "infrastructure", "regional-integration", "transportation"]
 summary: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta. The megaproject was designed to advance regional integration, though it sparked considerable debate over costs, utility, and political autonomy."
 description: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta."
 confidence: ai-draft
@@ -49,5 +49,13 @@ The bridge physically integrated Hong Kong deeper into the economic apparatus of
 - [ ] The Hong Kong-Zhuhai-Macau Bridge officially opened to traffic on October 24, 2018, following a ceremony on October 23.
 - [ ] The bridge spans approximately 55 kilometers and incorporates a tunnel and artificial islands.
 - [ ] Construction on the bridge officially commenced in December 2009.
+
+## Photos from this period
+
+![A gold HZM Bridge Shuttle Bus is pictured in Hong Kong a few days before the official opening of the Hong Kong-Zhuhai-Macau Bridge.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/VR5910_at_Hung_Hom_Ferry_%2820181020084026%29.jpg/960px-VR5910_at_Hung_Hom_Ferry_%2820181020084026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A gold HZM Bridge Shuttle Bus is pictured in Hong Kong a few days before the official opening of the Hong Kong-Zhuhai-Macau Bridge.* (contemporary photo). N509FZ, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:VR5910_at_Hung_Hom_Ferry_(20181020084026).jpg).
+Corroborates: It illustrates the specialized transport services established to facilitate travel across the new bridge connection.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

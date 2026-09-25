@@ -4,10 +4,11 @@ title_zh: "大批內地難民湧入"
 date: 1937-07-07
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1930s", "1937", "ai-draft", "british-hong-kong", "interwar", "migration", "refugee-crisis", "second-sino-japanese-war"]
+tags: ["evidence-none", "1930s", "1937", "ai-draft", "british-hong-kong", "interwar", "migration", "refugee-crisis", "second-sino-japanese-war"]
 summary: "The outbreak of the Second Sino-Japanese War in 1937 triggered a massive wave of migration as hundreds of thousands fled mainland combat into British Hong Kong, severely straining local infrastructure and social services."
 description: "The outbreak of the Second Sino-Japanese War in 1937 triggered a massive wave of migration as hundreds of thousands fled mainland combat into British Hong Kong, severely straining local infrastructure and social…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ This unprecedented demographic shock fundamentally transformed Hong Kong's socia
 
 - [ ] Exact population estimates of refugees entering Hong Kong between 1937 and 1941 remain subjects of scholarly debate due to informal border crossings.
 - [ ] The specific allocation of colonial government funds for refugee relief during the initial months of the war requires verification from primary administrative reports.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Primary administrative reports or scholarly research specifically covering the 1937–1941 period are needed to address refugee population estimates and colonial fund allocations.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,10 +4,11 @@ title_zh: "聯合國對華禁令觸發工業轉型"
 date: 1950-12-16
 year: 1950
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950", "ai-draft", "entrepot-trade", "industrialisation", "korean-war", "post-war-history", "postwar-refugees", "un-embargo"]
+tags: ["evidence-none", "1950", "ai-draft", "entrepot-trade", "industrialisation", "korean-war", "post-war-history", "postwar-refugees", "un-embargo"]
 summary: "The imposition of a United Nations trade embargo against China during the Korean War in December 1950 dismantled Hong Kong's traditional entrepôt economy, forcing a rapid and transformative shift toward export-oriented manufacturing."
 description: "The imposition of a United Nations trade embargo against China during the Korean War in December 1950 dismantled Hong Kong's traditional entrepôt economy, forcing a rapid and transformative shift toward export-oriented…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The embargo is widely viewed by historians as the catalyst for Hong Kong's mirac
 
 - [ ] The exact enforcement mechanisms and local implementation timeline of the UN embargo in Hong Kong in December 1950.
 - [ ] The precise rate of factory establishment and capital migration from Shanghai to Hong Kong immediately following the embargo.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific implementation of the 1950 UN embargo in Hong Kong and quantitative data on factory and capital migration from Shanghai to Hong Kong is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

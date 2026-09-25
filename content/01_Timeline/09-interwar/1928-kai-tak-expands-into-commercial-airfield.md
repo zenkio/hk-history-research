@@ -4,10 +4,11 @@ title_zh: "啟德擴建為商業機場"
 date: 1928-01-01
 year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1928", "ai-draft", "aviation", "colonial-history", "infrastructure", "interwar", "interwar-period", "kowloon"]
+tags: ["evidence-none", "1928", "ai-draft", "aviation", "colonial-history", "infrastructure", "interwar", "interwar-period", "kowloon"]
 summary: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
 description: "In 1928, the colonial government formally acquired and developed the Kai Tak area to establish a permanent airfield, laying the groundwork for Hong Kong's future as a major global aviation hub."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The formal establishment and expansion of **Kai Tak Airfield** marked a pivotal 
 
 - [ ] The exact legal mechanism and financial cost of the colonial government's acquisition of the Kai Tak land in 1928.
 - [ ] The precise timeline of the first commercial flights and official airmail services operating out of Kai Tak following the 1928 expansion.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence detailing the 1928 land acquisition legalities, costs, and the specific timeline of early commercial and airmail services at Kai Tak is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

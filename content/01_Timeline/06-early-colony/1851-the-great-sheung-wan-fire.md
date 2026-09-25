@@ -4,11 +4,11 @@ title_zh: "上環大火"
 date: 1851-12-28
 year: 1851
 era: "The early colony"
-tags: ["evidence-none", "1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
+tags: ["evidence-b", "1851", "ai-draft", "early-colony", "fire-disaster", "great-sheung-wan-fire", "land-reclamation", "urban-history"]
 summary: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation project."
 description: "On December 28, 1851, a massive fire devastated the densely populated Sheung Wan district of early colonial Hong Kong, destroying hundreds of Chinese homes and prompting the colony's first major land reclamation…"
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,6 +45,16 @@ Local communities and colonial administrators viewed the aftermath through diffe
 - [ ] The exact date of the fire was December 28, 1851.
 - [ ] The fire directly prompted the land reclamation project along Bonham Strand.
 - [ ] Hundreds of Chinese homes were destroyed in the blaze.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Despatches on Sheung Wan Fire, Governor Jervois to Secretary of State, May 21, 1852, TNA CO 129/40, p. 108. [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✗](https://s3.us-west-1.wasabisys.com/p-library/books/3b5060e5d7e2180520f977e461a6f262.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/40)
+- **Grade B:** Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1870*, Hong Kong University Press, ISBN:9888139714. [ISBN ?](https://openlibrary.org/isbn/9888139714) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item:4107982/view) [link ✗](https://www.academia.edu/33710020/ANGLO\_CHINA\_CHINESE\_PEOPLE\_AND\_BRITISH\_RULE\_IN\_HONG\_KONG\_1841\_1870) [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789622099517.pdf)
+- **Grade C:** Antiquities and Monuments Office Historical Urban Growth Portal, https://www.aab.gov.hk/. [site ?](https://www.aab.gov.hk/) [link ✗](https://scholars.hkbu.edu.hk/files/55021392/OA-0352.pdf) [link ✗](http://www.harbourdistrict.com.hk/enews/20070218/Cultural\_Heritage2002.pdf)
+
+**Disputes or myths:** Contradicts claims that Bonham Strand was an altruistic relief project; Governor Bonham used the clearance of Chinese dwellings to sell valuable reclaimed waterfront lots at high revenue.
 
 ## Evidence
 

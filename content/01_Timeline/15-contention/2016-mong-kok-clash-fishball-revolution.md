@@ -4,7 +4,7 @@ title_zh: "旺角騷亂"
 date: 2016-02-08
 year: 2016
 era: "Political contention and protest"
-tags: ["2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
+tags: ["photo-corroborated", "2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
 summary: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into hours of street battles between protesters and police."
 description: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into…"
 confidence: ai-draft
@@ -43,5 +43,28 @@ The events, frequently labeled by participants and media as the "Fishball Revolu
 
 - [ ] Police fired two warning shots into the air during the clashes on February 9, 2016.
 - [ ] The confrontation began as a dispute over unlicensed Lunar New Year street hawkers.
+
+## Photos from this period
+
+![A metal bucket containing bricks used by protesters during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2016_Mong_Kok_civil_unrest_drum.jpg/960px-2016_Mong_Kok_civil_unrest_drum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A metal bucket containing bricks used by protesters during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_drum.jpg).
+Corroborates: It illustrates the use of improvised materials like bricks during the street battles of the Mong Kok clash.
+
+![Silhouetted figures stand near a fire and barriers on a street during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2016_Mong_Kok_civil_unrest_fire_Barrier.jpg/960px-2016_Mong_Kok_civil_unrest_fire_Barrier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Silhouetted figures stand near a fire and barriers on a street during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_fire_Barrier.jpg).
+Corroborates: It corroborates the description of violent street clashes and the use of fires and obstacles during the unrest.
+
+![A firefighter stands next to a fire engine in Mong Kok at night, with a crowd and smoke visible in the background.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/2016_Mong_Kok_civil_unrest_fireman.jpg/960px-2016_Mong_Kok_civil_unrest_fireman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A firefighter stands next to a fire engine in Mong Kok at night, with a crowd and smoke visible in the background.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_fireman.jpg).
+Corroborates: The image illustrates the chaotic scene and emergency response during the Mong Kok unrest.
+
+![A street scene at night showing a crowd of people amidst smoke, debris, and loose pavement bricks during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg/960px-2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A street scene at night showing a crowd of people amidst smoke, debris, and loose pavement bricks during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg).
+Corroborates: The image corroborates the description of violent street battles and the chaotic environment of the Mong Kok clash.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

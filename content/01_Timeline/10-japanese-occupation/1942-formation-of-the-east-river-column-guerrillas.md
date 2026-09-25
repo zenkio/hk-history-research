@@ -4,10 +4,11 @@ title_zh: "東江縱隊游擊隊的成立"
 date: 1942-02-03
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "east-river-column", "japanese-occupation", "new-territories", "resistance-movement", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "east-river-column", "japanese-occupation", "new-territories", "resistance-movement", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence gathering and the rescue of Allied personnel."
 description: "Following the fall of Hong Kong in December 1941, Communist-led anti-Japanese guerrillas formally integrated and established a robust resistance network in the New Territories and Guangdong, engaging in intelligence…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The East River Column emerged as one of the primary indigenous armed resistance 
 
 - [ ] Exact reorganization date and structural lineage of the guerrilla units leading to the East River Column in early February 1942
 - [ ] The precise roster of Allied airmen and prisoners rescued by the column in and around Hong Kong
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed regarding the specific reorganization date and structural lineage of the East River Column in February 1942, as well as a roster of the Allied airmen and prisoners rescued by them.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

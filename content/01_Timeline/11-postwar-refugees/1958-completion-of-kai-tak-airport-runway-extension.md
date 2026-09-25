@@ -4,10 +4,11 @@ title_zh: "啟德機場跑道 延長工程完成"
 date: 1958-09-12
 year: 1958
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1958", "ai-draft", "aviation", "infrastructure", "kai-tak", "postwar-hong-kong", "postwar-refugees", "reclamation"]
+tags: ["evidence-none", "1958", "ai-draft", "aviation", "infrastructure", "kai-tak", "postwar-hong-kong", "postwar-refugees", "reclamation"]
 summary: "On September 12, 1958, the newly reclaimed runway at Kai Tak Airport officially opened, marking a major milestone in Hong Kong's development as an international aviation hub."
 description: "On September 12, 1958, the newly reclaimed runway at Kai Tak Airport officially opened, marking a major milestone in Hong Kong's development as an international aviation hub."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The completion of the runway extension fundamentally transformed Kai Tak into a 
 - [ ] The exact official opening date of the Kai Tak runway extension was September 12, 1958.
 - [ ] The runway length upon completion was 8,360 feet.
 - [ ] Hill-levelling at Ngau Chi Wan provided the fill material for the Kowloon Bay reclamation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to verify the 1958 opening date, the specific runway length at that time, and the use of Ngau Chi Wan hill-levelling material for reclamation.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

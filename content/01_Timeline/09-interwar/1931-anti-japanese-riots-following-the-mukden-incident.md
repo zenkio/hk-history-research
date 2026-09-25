@@ -4,10 +4,11 @@ title_zh: "九一八事變後的反日騷動"
 date: 1931-09-26
 year: 1931
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1931", "ai-draft", "anti-japanese-riots", "british-colonial-history", "interwar", "kowloon", "mukden-incident"]
+tags: ["evidence-none", "1931", "ai-draft", "anti-japanese-riots", "british-colonial-history", "interwar", "kowloon", "mukden-incident"]
 summary: "The Mukden Incident of September 1931 triggered severe anti-Japanese sentiment across China, culminating in violent riots in Kowloon targeting Japanese residents and properties on September 26, 1931."
 description: "The Mukden Incident of September 1931 triggered severe anti-Japanese sentiment across China, culminating in violent riots in Kowloon targeting Japanese residents and properties on September 26, 1931."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ This event highlighted the deep connection between local Hong Kong politics and 
 
 - [ ] Did the anti-Japanese riots in Kowloon specifically occur on September 26, 1931, or spanned multiple days surrounding that date?
 - [ ] What were the exact casualty figures and property damage reported by the colonial police during the September 1931 riots?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific dates of the 1931 Kowloon riots and official colonial police reports on casualties and property damage is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

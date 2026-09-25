@@ -4,11 +4,11 @@ title_zh: "聖公會聖約翰座堂奉獻日"
 date: 1849-03-11
 year: 1849
 era: "The early colony"
-tags: ["evidence-none", "1849", "ai-draft", "anglican-church", "architecture", "british-colonial-era", "early-colony", "st-johns-cathedral", "victoria-city"]
+tags: ["evidence-a", "1849", "ai-draft", "anglican-church", "architecture", "british-colonial-era", "early-colony", "st-johns-cathedral", "victoria-city"]
 summary: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
 description: "On March 11, 1849, St. John's Cathedral was consecrated in Victoria City, marking the establishment of a permanent Anglican presence and a key architectural symbol of British colonial authority in early Hong Kong."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,6 +43,16 @@ The completion and consecration of the cathedral represented more than a religio
 
 - [ ] St. John's Cathedral was officially consecrated on March 11, 1849.
 - [ ] Bishop George Smith presided over the consecration ceremony.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Despatches on Claim of Trustees of St. John's Cathedral, December 2, 1850, TNA CO 129/35, p. 95. [link ✓](https://www.aab.gov.hk/filemanager/aab/common/159meeting/AAB-40-2011-12-Annex-C.pdf) [link ✓](https://lib.hku.hk/cgi-bin/co129/129227.pl?keyword=government) [link ✓](https://lib.hku.hk/cgi-bin/co129/129227.pl?keyword=governor) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/35)
+- **Grade B:** Endacott, G.B. (1962), *A History of Hong Kong*, Oxford University Press / HKU Press. [link ✓](https://www.aab.gov.hk/filemanager/aab/common/159meeting/AAB-40-2011-12-Annex-C.pdf) [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf)
+- **Grade C:** Antiquities and Monuments Office Declared Monuments Portal, https://www.aab.gov.hk/. [site ?](https://www.aab.gov.hk/) [link ✗](http://www.harbourdistrict.com.hk/enews/20070218/Cultural\_Heritage2002.pdf) [link ✓](https://www.aab.gov.hk/filemanager/aab/common/159meeting/AAB-40-2011-12-Annex-C.pdf)
+
+**Disputes or myths:** Rejects the myth that the church was fully funded by the Crown; construction relied on private subscriber campaigns, officer donations, and bitter disputes over treasury assistance.
 
 ## Evidence
 

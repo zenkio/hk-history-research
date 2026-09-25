@@ -4,10 +4,11 @@ title_zh: "一九三七年香港大風災"
 date: 1937-09-02
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["photo-corroborated", "1937", "ai-draft", "great-typhoon", "interwar", "maritime-history", "meteorology", "natural-disaster"]
+tags: ["evidence-none", "photo-corroborated", "1937", "ai-draft", "great-typhoon", "interwar", "maritime-history", "meteorology", "natural-disaster"]
 summary: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
 description: "On September 2, 1937, a catastrophic typhoon and storm surge struck Hong Kong without advanced warning, resulting in massive loss of life and devastating coastal communities and maritime fleets."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -66,6 +67,14 @@ Corroborates: The image illustrates the severe flooding in the city caused by th
 
 *A damaged wooden vessel with Chinese characters on its hull sits partially submerged or grounded near a dilapidated building.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Destruction_of_the_Great_Typhoon_of_1937_in_Hong_Kong_(4).png).
 Corroborates: It visually corroborates the devastating impact the typhoon had on maritime fleets in Hong Kong.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 1937 typhoon's death toll and the Royal Observatory's meteorological readings/warning signals is required.
 
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

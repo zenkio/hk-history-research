@@ -4,11 +4,11 @@ title_zh: "山頂纜車啟用"
 date: 1888-05-30
 year: 1888
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1888", "ai-draft", "colonial-history", "peak-tram", "transportation", "urban-development", "victorian-colony"]
+tags: ["evidence-b", "1888", "ai-draft", "colonial-history", "peak-tram", "transportation", "urban-development", "victorian-colony"]
 summary: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
 description: "On May 30, 1888, the Peak Tram officially began operation as Asia's first cable funicular railway, connecting Central to Victoria Peak and transforming Hong Kong's geography of settlement."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,6 +45,16 @@ The opening of the Peak Tram fundamentally reshaped the social and spatial geogr
 
 - [ ] Did Governor Sir Des Voeux personally operate or attend the official inauguration on May 30, 1888?
 - [ ] What were the exact passenger numbers and fare structures during the first month of operation?
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Peak Tramway Ordinance*, HK Ordinance No. 6 of 1881; *Hong Kong Government Gazette*, May 30, 1888, Vol. XXXIV, No. 22. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✓](https://chineserailroadworkers.stanford.edu/wp-content/uploads/2019/04/Leong-Jack-Hong-Kong-Connection.pdf)
+- **Grade B:** Chan, Bruce A. (2018), "Life on the Mid-Levels and the Peak Tram Impact", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 58, pp. 141–162. [link ✗](https://zolimacitymag.com/the-lost-mansions-of-the-mid-levels/) [link ✓](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1A400C772104399815808DC88FCE7770/S0963926823000019a.pdf/visions-of-public-and-private-mobility-the-kowloon-railway-terminus-in-hong-kong.pdf)
+- **Grade C:** The Peak Tramways Co. Ltd., "History and Heritage of the Peak Tram", https://www.thepeak.com.hk. [site ?](https://www.thepeak.com.hk) [link ✗](https://zolimacitymag.com/the-lost-mansions-of-the-mid-levels/)
+
+**Disputes or myths:** Myth claims the tram was created for general mass transit, whereas it was built exclusively to allow wealthy European elites to reside in segregated Peak enclaves.
 
 ## Evidence
 

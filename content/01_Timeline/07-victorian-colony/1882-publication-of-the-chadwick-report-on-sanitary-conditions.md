@@ -4,10 +4,11 @@ title_zh: "查德域衞生狀況報告書發表"
 date: 1882-01-01
 year: 1882
 era: "Kowloon and the Victorian colony"
-tags: ["1882", "ai-draft", "chadwick-report", "colonial-history", "public-health", "sanitation", "urban-planning", "victorian-colony"]
+tags: ["evidence-b", "1882", "ai-draft", "chadwick-report", "colonial-history", "public-health", "sanitation", "urban-planning", "victorian-colony"]
 summary: "In **1882**, sanitary engineer **Osbert Chadwick** published a damning report detailing severe overcrowding and poor sanitation in urban Hong Kong, prompting major public health reforms amidst differing colonial and local priorities."
 description: "In 1882, sanitary engineer Osbert Chadwick published a damning report detailing severe overcrowding and poor sanitation in urban Hong Kong, prompting major public health reforms amidst differing colonial and local…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-24
 ---
@@ -41,5 +42,16 @@ The publication of the Chadwick Report marked a turning point in the colonial ad
 - [ ] Osbert Chadwick was commissioned and published his sanitary report in 1882.
 - [ ] The Chadwick Report specifically criticized the drainage, ventilation, and waste management of Tai Ping Shan tenements.
 - [ ] The findings directly contributed to the later establishment of the Sanitary Board and subsequent urban health regulations.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Chadwick, Osbert (1882), *Report on the Sanitary Condition of Hong Kong*, London: HMSO; UK Parliamentary Papers, C. 3828; TNA CO 882/4. [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20882/4)
+- **Grade B:** Bristow, Roger (1984), *A History of Hong Kong Town Planning*, Oxford University Press, ISBN 978-0195838237. [ISBN ?](https://openlibrary.org/isbn/9780195838237) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade C:** Hong Kong Museum of Medical Sciences, "Sanitary Development in Colonial Hong Kong", https://www.hkmms.org.hk. [site ?](https://www.hkmms.org.hk) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en) [link ✗](https://hkjapaneseclub.org/assets/admin/upfile/Cemetery-EN20230214.pdf)
+
+**Disputes or myths:** Colonial merchants blamed unsanitary conditions on inherent "Chinese filthiness", but Chadwick proved it stemmed from landlord exploitation, lack of water, and municipal inaction.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

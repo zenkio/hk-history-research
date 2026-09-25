@@ -4,10 +4,11 @@ title_zh: "香港首次現代人口普查"
 date: 1961-03-07
 year: 1961
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1961", "ai-draft", "colonial-history", "demographics", "population-census", "postwar-recovery", "postwar-refugees", "urban-planning"]
+tags: ["evidence-none", "1961", "ai-draft", "colonial-history", "demographics", "population-census", "postwar-recovery", "postwar-refugees", "urban-planning"]
 summary: "Conducted on March 7, 1961, Hong Kong's first modern comprehensive population census revealed a total population exceeding three million, providing vital data that reshaped government civic planning and industrial development."
 description: "Conducted on March 7, 1961, Hong Kong's first modern comprehensive population census revealed a total population exceeding three million, providing vital data that reshaped government civic planning and industrial…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The **1961** census marked a turning point in evidence-based governance in Hong 
 
 - [ ] The First Modern Hong Kong Population Census was officially conducted on March 7, 1961.
 - [ ] The 1961 census recorded a total population of approximately 3,133,131.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the official date and the total population figure recorded in the 1961 Hong Kong census is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

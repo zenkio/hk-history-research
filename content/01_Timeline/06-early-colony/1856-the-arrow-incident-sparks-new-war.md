@@ -4,11 +4,11 @@ title_zh: "亞羅號事件引發新戰爭"
 date: 1856-10-08
 year: 1856
 era: "The early colony"
-tags: ["evidence-none", "1856", "ai-draft", "arrow-incident", "british-colony", "early-colony", "foreign-relations", "qing-dynasty", "second-opium-war"]
+tags: ["evidence-a", "1856", "ai-draft", "arrow-incident", "british-colony", "early-colony", "foreign-relations", "qing-dynasty", "second-opium-war"]
 summary: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and trade of the young Hong Kong colony."
 description: "On October 8, 1856, the seizure of the British-registered vessel Arrow by Qing authorities in Guangzhou triggered a major diplomatic crisis and led directly to the Second Opium War, deeply impacting the security and…"
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,6 +49,16 @@ The incident provided the pretext that British authorities, led by **Sir John Bo
 
 - [ ] Whether the Arrow's colonial registration had legally expired at the time of the seizure
 - [ ] Whether the British flag was actually flying on the vessel when Qing authorities boarded it
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Despatches on Lorcha *Arrow*, Governor Bowring to Foreign Office / Colonial Office, TNA FO 17/233 &amp; TNA CO 129/58. [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml) [link ✓](https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/translation-and-the-british-colonial-mission-the-career-of-samuel-turner-fearon-and-the-establishment-of-chinese-studies-at-kings-college-london/5A440B53736E09B71F26B91B380BA79B) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/233) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/58)
+- **Grade B:** Wong, J.Y. (1998), *Deadly Dreams: Opium, Imperialism, and the Arrow War in China*, Cambridge University Press, ISBN:9888139714. [ISBN ?](https://openlibrary.org/isbn/9888139714) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml)
+- **Grade C:** UK National Archives Catalogue FO 17 Series, https://discovery.nationalarchives.gov.uk/. [site ?](https://discovery.nationalarchives.gov.uk/) [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320) [link ✗](https://warwick.ac.uk/fac/arts/history/students/modules/hi173/classesandreading/scramble\_for-china/james\_hevia\_introduction\_imperialism\_colonialism\_and\_china\_2003.pdf)
+
+**Disputes or myths:** Contradicts contemporary British claims that the ship was a validly registered British vessel; its colonial registration had expired days before the Qing seizure.
 
 ## Evidence
 

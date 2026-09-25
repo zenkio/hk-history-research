@@ -4,7 +4,7 @@ title_zh: "英軍佔領水坑口"
 date: 1841-01-26
 year: 1841
 era: "The early colony"
-tags: ["evidence-a", "1841", "ai-draft", "british-colonialism", "early-colony", "first-opium-war", "hong-kong-history", "possession-point"]
+tags: ["wikipedia-checked", "evidence-a", "1841", "ai-draft", "british-colonialism", "early-colony", "first-opium-war", "hong-kong-history", "possession-point"]
 summary: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
 description: "On January 26, 1841, British forces landed at Possession Point on Hong Kong Island, claiming the territory for the British Crown during the First Opium War."
 confidence: ai-draft
@@ -44,20 +44,15 @@ This event marked the foundational moment of British colonial rule in Hong Kong,
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/canton|Canton (廣州)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Whether the Union Jack was officially hoisted on January 26, 1841, or if formal ceremonies occurred slightly later.
-- [ ] The exact composition of the local population residing near Possession Point at the time of the landing.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: Whether the Union Jack was officially hoisted on January 26, 1841, or if formal ceremonies occurred slightly later.. The text states Captain Belcher raised the Union Jack and officially declared the island a colony on 26 January 1841.
+- ❔ **not in Wikipedia**: The exact composition of the local population residing near Possession Point at the time of the landing.. The reference text does not mention the local population.
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+**Articles compared:** [Wikipedia: Sulphur Channel](https://en.wikipedia.org/wiki/Sulphur_Channel)
 
-- **Grade A:** Log of HMS *Wellesley*, 26 January 1841, UK National Archives, ADM 53/3874; *The Chinese Repository*, Vol. 10, No. 1 (January 1841), p. 64. [link ✗](https://en.wikipedia.org/wiki/Convention\_of\_Chuenpi) [link ✓](https://industrialhistoryhk.org/hong-kong-the-first-construction-boom/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=ADM%2053/3874)
-- **Grade B:** Endacott, G.B. (1958), *A History of Hong Kong*, Oxford University Press. [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [link ✗](https://etheses.whiterose.ac.uk/id/eprint/23889/1/Florence%20Mok\_PhD%20Thesis.pdf)
-- **Grade C:** Public Records Office, Hong Kong Government Records Service, https://www.grs.gov.hk. [link ✓](https://www.grs.gov.hk) [link ✗](https://co129.com/en/about-studying-co129)
-
-**Disputes or myths:** Popular tradition cites January 26 as the initial landing date, but Commander Edward Belcher actually landed on January 25, 1841, to conduct preliminary survey work.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -4,10 +4,11 @@ title_zh: "聖士提反書院大屠殺"
 date: 1941-12-25
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
+tags: ["evidence-b", "photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "japanese-occupation", "stanley", "war-crimes", "world-war-ii"]
 summary: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 description: "On Christmas Day in 1941, invading Japanese soldiers committed a brutal atrocity at St. Stephen's College in Stanley, which was being used as an emergency military hospital."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,6 +50,18 @@ The massacre at St. Stephen's College became a powerful symbol of the brutality 
 
 *A memorial stone at Stanley Military Cemetery commemorates those who died at St. Stephen's on December 25, 1941.* (later photo of the site). Nick-D, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Memorial_to_the_victims_of_the_St_Stephen%27s_College_massacre_at_the_Stanley_Military_Cemetery_January_2026.jpg).
 Corroborates: The inscription on the stone confirms the date and location of the massacre described in the summary.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Charles G. Roland (1997). *Massacre and Rape in Hong Kong: Two Case Studies Involving Medical Personnel and Patients*. Journal of Contemporary History.](https://doi.org/10.1177/002200949703200104) (claims 1, 2): This scholarship provides case studies of massacres in Hong Kong involving medical personnel, which is directly related to the St. Stephen's College incident.
+
+**Still needed:** Specific casualty counts and the exact Japanese military unit identities/command structures are still needed.
 
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

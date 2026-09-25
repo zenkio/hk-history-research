@@ -4,10 +4,11 @@ title_zh: "專營巴士制度確立"
 date: 1933-06-11
 year: 1933
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1933", "ai-draft", "cmb", "colonial-governance", "interwar", "interwar-history", "kmb", "public-transport"]
+tags: ["evidence-none", "1933", "ai-draft", "cmb", "colonial-governance", "interwar", "interwar-history", "kmb", "public-transport"]
 summary: "In June 1933, the Hong Kong government formally overhauled the colony's urban public transport by granting exclusive long-term bus operating franchises to two companies, laying the foundation for modern franchised bus networks."
 description: "In June 1933, the Hong Kong government formally overhauled the colony's urban public transport by granting exclusive long-term bus operating franchises to two companies, laying the foundation for modern franchised bus…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The establishment of the franchised bus monopoly marked a pivotal turning point 
 
 - [ ] The exact formal agreements and gazette dates for the granting of the KMB and CMB franchises in June 1933.
 - [ ] The specific terms of the regulatory oversight exercised by the colonial government over fare-setting during the initial franchise period.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific documentation regarding the 1933 franchise agreements, gazette dates for KMB and CMB, and colonial fare-setting regulations is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

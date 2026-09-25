@@ -4,10 +4,11 @@ title_zh: "保甲局與地區巡邏隊的建立"
 date: 1866-01-01
 year: 1866
 era: "Kowloon and the Victorian colony"
-tags: ["1866", "ai-draft", "chinese-elites", "colonial-history", "district-watch-force", "policing", "victorian-colony", "victorian-era"]
+tags: ["evidence-b", "1866", "ai-draft", "chinese-elites", "colonial-history", "district-watch-force", "policing", "victorian-colony", "victorian-era"]
 summary: "Established in **1866**, the District Watch Force was created to police Chinese neighborhoods in colonial Hong Kong, empowering local elites in community security and governance."
 description: "Established in 1866, the District Watch Force was created to police Chinese neighborhoods in colonial Hong Kong, empowering local elites in community security and governance."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,16 @@ Over time, the role of the District Watch Force extended far beyond basic neighb
 - [ ] The District Watch Force was formally established in 1866.
 - [ ] The force was funded and supervised by local Chinese merchants.
 - [ ] The organization eventually evolved into an influential advisory body to the colonial government.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Report of the Captain Superintendent of Police*, HK LegCo Sessional Papers 1866; Colonial Office Correspondence, TNA CO 129/112. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/112)
+- **Grade B:** Lethbridge, Henry J. (1978), "The District Watch Committee: The Emergence of a Chinese Elite", *Hong Kong: Stability and Change*, Oxford University Press, pp. 104–129. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A) [link ✗](https://www.emerald.com/stics/article/12/2/98/364326/A-night-soil-collection-point-the-public-toilets)
+- **Grade C:** Hong Kong Police Museum, "History of Community Policing in Hong Kong", https://www.police.gov.hk. [site ?](https://www.police.gov.hk)
+
+**Disputes or myths:** Myth frames it as purely a private security guard force, whereas it evolved into the primary advisory board bridging Chinese merchant leadership and colonial authorities.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,10 +4,11 @@ title_zh: "香港保衛戰與日佔時期"
 date: 1941-12-08
 year: 1941
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "interwar", "japanese-occupation", "pacific-war", "world-war-ii"]
+tags: ["evidence-none", "photo-corroborated", "1941", "ai-draft", "battle-of-hong-kong", "black-christmas", "interwar", "japanese-occupation", "pacific-war", "world-war-ii"]
 summary: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
 description: "On December 8, 1941, Japanese forces invaded Hong Kong simultaneously with the attack on Pearl Harbor, initiating an eighteen-day battle and three and a half years of harsh military rule."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -67,6 +68,14 @@ Corroborates: It visually demonstrates the presence of Japanese military vehicle
 
 *Military personnel are pictured in a courtroom during the Hong Kong War Crimes Trial.* (contemporary photo). unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_War_Crimes_Trial.jpg).
 Corroborates: It illustrates the legal aftermath of the Japanese occupation and the battle for Hong Kong.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding exact troop numbers, casualty figures for the December 1941 campaign, and the precise timeline of water supply disruption on Hong Kong Island is still needed.
 
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

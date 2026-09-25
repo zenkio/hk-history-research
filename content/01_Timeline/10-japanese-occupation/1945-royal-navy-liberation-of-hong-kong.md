@@ -4,10 +4,11 @@ title_zh: "皇家海軍香港解放"
 date: 1945-08-30
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["photo-corroborated", "1945", "ai-draft", "british-administration", "japanese-occupation", "liberation", "royal-navy", "world-war-ii"]
+tags: ["evidence-a", "photo-corroborated", "1945", "ai-draft", "british-administration", "japanese-occupation", "liberation", "royal-navy", "world-war-ii"]
 summary: "On August 30, 1945, a British Royal Navy fleet led by Rear-Admiral Cecil Harcourt arrived in Victoria Harbour to liberate Hong Kong from Japanese occupation and restore colonial administration."
 description: "On August 30, 1945, a British Royal Navy fleet led by Rear-Admiral Cecil Harcourt arrived in Victoria Harbour to liberate Hong Kong from Japanese occupation and restore colonial administration."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -68,6 +69,18 @@ Corroborates: It provides a human perspective on the liberation by showing the j
 
 *Japanese soldiers being rounded up in the Fan Ling district of Hong Kong by British forces during the 1945 reoccupation.* (contemporary photo). No 9 Army Film &amp; Photographic Unit, Watson R (Sergeant), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_British_Reoccupation_of_Hong_Kong,_1945_SE4987.jpg).
 Corroborates: The image illustrates the practical aspects of the liberation, specifically the rounding up of Japanese occupation forces.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), ADM 358/1198, 1944 Jan 01 - 1945 Dec 31. Liberation of Hong Kong: miscellaneous correspondence concerning Royal Navy officers.](https://discovery.nationalarchives.gov.uk/details/r/C12760368) (claims 1, 2): This archive record specifically concerns the liberation of Hong Kong and correspondence regarding Royal Navy officers.
+
+**Still needed:** Specific documentation confirming the exact arrival date of Rear-Admiral Harcourt and the formal date of the surrender signing is still needed.
 
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

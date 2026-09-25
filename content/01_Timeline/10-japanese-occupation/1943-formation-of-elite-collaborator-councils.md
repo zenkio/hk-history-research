@@ -4,10 +4,11 @@ title_zh: "華民代表會與華民各界協議會之成立"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "collaborator-councils", "indirect-rule", "japanese-occupation", "local-elites", "world-war-ii"]
+tags: ["evidence-none", "1943", "ai-draft", "collaborator-councils", "indirect-rule", "japanese-occupation", "local-elites", "world-war-ii"]
 summary: "In **1943**, the Japanese occupation authorities established the Chinese Representative Council and the Chinese Cooperative Council to co-opt local elites, facilitate social control, and aid in the governance of occupied Hong Kong."
 description: "In 1943, the Japanese occupation authorities established the Chinese Representative Council and the Chinese Cooperative Council to co-opt local elites, facilitate social control, and aid in the governance of occupied…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The establishment of these elite councils marked a critical turning point in the
 
 - [ ] Exact inauguration dates and membership rosters of the Chinese Representative Council and Chinese Cooperative Council in 1943
 - [ ] The precise jurisdictional boundaries and executive powers granted to the councils by the Japanese military administration
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically addressing the 1943 Japanese occupation, including the inauguration dates, membership rosters, and legal powers of the Chinese Representative Council and Chinese Cooperative Council, is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

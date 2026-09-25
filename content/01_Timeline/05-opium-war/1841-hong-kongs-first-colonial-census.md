@@ -4,7 +4,7 @@ title_zh: "香港首次殖民地人口普查"
 date: 1841-05-15
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1841", "ai-draft", "british-colonial-history", "census", "demographics", "first-opium-war", "opium-war"]
+tags: ["wikipedia-checked", "evidence-none", "1841", "ai-draft", "british-colonial-history", "census", "demographics", "first-opium-war", "opium-war"]
 summary: "Conducted on May 15, 1841, the first colonial census recorded a population of approximately 7,450 residents on Hong Kong Island, establishing a baseline for early British administration."
 description: "Conducted on May 15, 1841, the first colonial census recorded a population of approximately 7,450 residents on Hong Kong Island, establishing a baseline for early British administration."
 confidence: ai-draft
@@ -38,17 +38,15 @@ This early census represents the foundational document of Hong Kong's colonial d
 - [[02_Entities/Places/aberdeen|Aberdeen (香港仔)]]
 - [[02_Entities/Places/chek-chu|Chek Chu (赤柱)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The preliminary census of Hong Kong Island was conducted specifically on May 15, 1841.
-- [ ] The recorded population figure of approximately 7,450 excluded British military personnel and foreign merchants.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The preliminary census of Hong Kong Island was conducted specifically on May 15, 1841.. The text mentions that the first census results were published in May 1841, but does not specify the exact date of conduct or the location.
+- ❔ **not in Wikipedia**: The recorded population figure of approximately 7,450 excluded British military personnel and foreign merchants.. The reference text does not mention any specific population figures or details about which groups were excluded.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Census and Statistics Department](https://en.wikipedia.org/wiki/Census_and_Statistics_Department)
 
-**Still needed:** Evidence supporting the specific date and population figures of the 1841 census is missing from all provided sources.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -4,10 +4,11 @@ title_zh: "盟軍空襲香港行動"
 date: 1945-01-16
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["photo-corroborated", "1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
+tags: ["evidence-none", "photo-corroborated", "1945", "ai-draft", "air-raids", "japanese-occupation", "operation-gratitude", "us-navy", "world-war-ii"]
 summary: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 description: "On January 16, 1945, U.S. Navy carrier aircraft launched massive bombing raids on Japanese-occupied Hong Kong under Operation Gratitude, targeting shipping, docks, and military infrastructure."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,6 +50,14 @@ The air raids marked a turning point in the physical devastation experienced by 
 *An annotated aerial view of Hong Kong Harbor showing smoke from the Kowloon Docks and burning vessels during a US air raid in October 1944.* (contemporary photo). FDR Presidential Library &amp; Museum, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1944-10-16_US_air_raids_on_Japanese-occupied_Hong_Kong_1,_annotated.jpg).
 Corroborates: It provides visual context for the type of aerial warfare conducted by Allied forces against Japanese-occupied Hong Kong.
 ⚠️ Possible conflict: The photograph depicts a raid from October 16, 1944, rather than the January 16, 1945, raid described on the page.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence detailing the specific units of U.S. Navy Task Force 38 on January 16, 1945, as well as specific bomb tonnage and civilian casualty figures for that date, is needed.
 
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

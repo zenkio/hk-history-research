@@ -4,10 +4,11 @@ title_zh: "確立歸鄉政策"
 date: 1942-01-05
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "demographics", "food-shortage", "japanese-occupation", "mass-repatriation", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "demographics", "food-shortage", "japanese-occupation", "mass-repatriation", "world-war-ii"]
 summary: "In January 1942, the Japanese military administration in Hong Kong initiated a mass repatriation policy, forcibly deporting hundreds of thousands of urban residents to mainland China to combat severe food shortages."
 description: "In January 1942, the Japanese military administration in Hong Kong initiated a mass repatriation policy, forcibly deporting hundreds of thousands of urban residents to mainland China to combat severe food shortages."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ This policy drastically reduced Hong Kong's population from an estimated pre-war
 
 - [ ] Exact population figures before and after the 1942 repatriation policy
 - [ ] Official Japanese administration decrees regarding the exact start date of the mass deportation program
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically covering Japanese administration decrees from 1942 and demographic data from the occupation period is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

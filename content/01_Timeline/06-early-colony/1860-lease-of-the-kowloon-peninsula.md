@@ -52,6 +52,16 @@ By integrating the Kowloon Peninsula into the colony, the British established a 
 - [ ] Whether the specific date of March 20, 1860, marks the exact signing of the initial Kowloon lease agreement prior to the formal October ratification of the Convention of Peking.
 - [ ] The precise diplomatic title and Qing counterpart involved in executing the Kowloon lease agreement alongside Harry Parkes.
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Hong Kong Government Gazette*, January 19, 1861, Vol. VII, No. 3; Colonial Office Correspondence, TNA CO 129/81. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/81)
+- **Grade B:** Munn, Christopher (2001), *Anglo-China: Chinese People and British Rule in Hong Kong, 1841–1880*, Hong Kong University Press, https://doi.org/10.5790/hongkong/9789622095397.001.0001. [DOI ?](https://doi.org/10.5790/hongkong/9789622095397.001.0001) [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A)
+- **Grade C:** Gwulo: Old Hong Kong, "Handover of Kowloon 1861", https://gwulo.com. [site ?](https://gwulo.com) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong)
+
+**Disputes or myths:** Popular myth claims Kowloon was entirely unpopulated "barren land", ignoring established Hakka and Cantonese agrarian villages such as Tsim Sha Tsui and Kowloon City.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **A**

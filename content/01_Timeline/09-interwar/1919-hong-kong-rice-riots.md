@@ -4,10 +4,11 @@ title_zh: "香港米暴"
 date: 1919-07-26
 year: 1919
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1919", "ai-draft", "colonial-history", "food-security", "inflation", "interwar", "interwar-hong-kong", "rice-riots"]
+tags: ["evidence-none", "1919", "ai-draft", "colonial-history", "food-security", "inflation", "interwar", "interwar-hong-kong", "rice-riots"]
 summary: "Post-World War I supply shortages and soaring inflation triggered widespread rioting and rice looting in July 1919, forcing the colonial government to implement emergency market controls."
 description: "Post-World War I supply shortages and soaring inflation triggered widespread rioting and rice looting in July 1919, forcing the colonial government to implement emergency market controls."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The **1919** rice riots marked a critical turning point in colonial governance a
 
 - [ ] Exact dates and casualty figures associated with the July 1919 disturbances
 - [ ] Specific emergency regulations enacted by the colonial government in response to the rice shortage
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence for the exact casualty figures and the specific emergency regulations enacted in response to the July 1919 rice shortage is still needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

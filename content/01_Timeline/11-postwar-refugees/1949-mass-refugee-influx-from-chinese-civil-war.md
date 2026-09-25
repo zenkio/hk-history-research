@@ -4,10 +4,11 @@ title_zh: "國共內戰與難民潮"
 date: 1949-01-01
 year: 1949
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1949", "ai-draft", "chinese-civil-war", "industrialisation", "postwar-recovery", "postwar-refugees", "refugees", "shek-kip-mei"]
+tags: ["evidence-b", "1949", "ai-draft", "chinese-civil-war", "industrialisation", "postwar-recovery", "postwar-refugees", "refugees", "shek-kip-mei"]
 summary: "Between **1945** and **1950**, hundreds of thousands of refugees fled mainland China for Hong Kong following the Communist victory, fundamentally transforming the territory's demographics, economy, and social fabric."
 description: "Between 1945 and 1950, hundreds of thousands of refugees fled mainland China for Hong Kong following the Communist victory, fundamentally transforming the territory's demographics, economy, and social fabric."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The mass migration provided a dual economic impact that shaped modern Hong Kong.
 
 - [ ] Exact demographic estimates of the Hong Kong population between 1945 and 1950
 - [ ] The precise chronology and policy shifts of the colonial government regarding border closures
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Glen Peterson (2012). *The Uneven Development of the International Refugee Regime in Postwar Asia: Evidence from China, Hong Kong and Indonesia*. Journal of Refugee Studies.](https://doi.org/10.1093/jrs/fes009) (claims 1, 2): It examines postwar refugee populations in China and Hong Kong and the international refugee regimes governing them.
+
+**Still needed:** Specific demographic figures for the 1945-1950 period and a detailed timeline of colonial border policies are still needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

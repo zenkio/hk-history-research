@@ -40,6 +40,16 @@ This ordinance marked a critical turning point in the institutionalization of ra
 - [ ] The Peak District Reservation Ordinance was officially enacted in 1904.
 - [ ] The ordinance legally barred all Chinese individuals from residing at Victoria Peak regardless of property ownership or wealth.
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Government Gazette, Ordinance No. 4 of 1904, 26 April 1904; Colonial Office Records, CO 129/348/41845. [link ✗](https://www.researchgate.net/publication/239781077\_Discriminatory\_zoning\_in\_colonial\_Hong\_Kong\_A\_review\_of\_the\_post-war\_literature\_and\_some\_further\_evidence\_for\_an\_economic\_theory\_of\_discrimination) [link ✓](https://www.j3consultantshongkong.com/j3c-blog/victoria-peak-hong-kong-the-residence-at-22-barker-road) [link ✗](https://www.emerald.com/pm/article/29/1/50/321336/Discriminatory-zoning-in-colonial-Hong-KongA) [link ✗](https://escholarship.org/content/qt3r14d2r5/qt3r14d2r5\_noSplash\_a95ba480e3a0f2d131538d79303209be.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/348)
+- **Grade B:** Carroll, John M. (2012), "The Peak: Residential Segregation in Colonial Hong Kong", in Goodman &amp; Goodman (eds.), *Twentieth-Century Colonialism and China*, Routledge, pp. 81–91. [link ✗](https://research-information.bris.ac.uk/files/214002594/Final\_Copy\_2019\_10\_01\_Chan\_C\_PhD\_Redacted.pdf)
+- **Grade C:** Hong Kong Public Libraries, "Historical Laws of Hong Kong", https://www.hkpl.gov.hk. [site ?](https://www.hkpl.gov.hk)
+
+**Disputes or myths:** Popular claims state Sir Robert Ho Tung was granted immediate exemption upon enactment, but Governor Lugard initially resisted granting Chinese property access on the Peak to maintain spatial separation.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **B**

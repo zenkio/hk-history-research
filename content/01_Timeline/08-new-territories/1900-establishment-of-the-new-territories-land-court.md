@@ -4,10 +4,11 @@ title_zh: "新界土地法庭的設立"
 date: 1900-01-01
 year: 1900
 era: "The New Territories lease and the early 20th century"
-tags: ["1900", "ai-draft", "british-colonialism", "land-court", "new-territories", "property-rights"]
+tags: ["evidence-b", "1900", "ai-draft", "british-colonialism", "land-court", "new-territories", "property-rights"]
 summary: "In 1900, the British colonial government established the New Territories Land Court to systematically survey, register, and convert traditional Chinese land ownership into Crown leases following the 1898 lease expansion."
 description: "In 1900, the British colonial government established the New Territories Land Court to systematically survey, register, and convert traditional Chinese land ownership into Crown leases following the 1898 lease…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,16 @@ The creation of the Land Court marked the formal imposition of British property 
 
 - [ ] The Land Court Ordinance was officially enacted in the year 1900.
 - [ ] The primary mandate of the court was the conversion of traditional deeds into Crown leases.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Government Gazette, Government Notification No. 312 of 1900; Hong Kong Sessional Papers, 1900, Paper No. 12.
+- **Grade B:** Chun, Allen (1990), "Policing Society: The 'Rational' Practice of British Colonial Land Administration in the New Territories of Hong Kong, c. 1900", *Journal of Historical Sociology*, 3(4): 401–422, DOI: 10.1111/j.1467-6443.1990.tb00125.x. [DOI ?](https://doi.org/10.1111/j.1467-6443.1990.tb00125.x) [link ✓](https://www.cambridge.org/core/journals/journal-of-chinese-history/article/guarding-the-shoreline-oyster-farming-salt-production-and-fishing-along-the-south-china-coast-16671978/8B380708883A8C7ACF78BD9BED63D226)
+- **Grade C:** Lands Department, HKSAR Government, "History of Land Surveying in Hong Kong", https://www.landsd.gov.hk. [site ?](https://www.landsd.gov.hk)
+
+**Disputes or myths:** A common misconception holds that British land registration preserved customary Qing land practices intact; in reality, it replaced complex customary dual-ownership ("topsoil and subsoil") with single-leasehold Crown titles.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

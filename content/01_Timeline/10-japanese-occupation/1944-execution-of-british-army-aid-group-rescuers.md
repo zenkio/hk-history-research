@@ -4,10 +4,11 @@ title_zh: "英軍服務團營救人員被處決"
 date: 1944-01-11
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "british-army-aid-group", "espionage", "japanese-occupation", "resistance", "world-war-ii"]
+tags: ["evidence-none", "1944", "ai-draft", "british-army-aid-group", "espionage", "japanese-occupation", "resistance", "world-war-ii"]
 summary: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
 description: "On January 11, 1944, Japanese occupation authorities executed 33 resistance members in Hong Kong for their involvement in espionage and intelligence networks operated by the British Army Aid Group."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The event marked a devastating blow to the underground networks operating within
 
 - [ ] Exact number and identities of the 33 individuals executed on January 11, 1944
 - [ ] Degree of Kempeitai infiltration into the BAAG network leading up to the arrests
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific identities of the 33 executed BAAG members and historical details concerning Kempeitai infiltration of their network is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

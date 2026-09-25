@@ -4,11 +4,11 @@ title_zh: "北京條約割讓九龍半島"
 date: 1860-10-24
 year: 1860
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
+tags: ["evidence-b", "1860", "ai-draft", "british-empire", "convention-of-peeking", "kowloon", "second-opium-war", "territorial-expansion", "victorian-colony"]
 summary: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical footprint of the fledgling Hong Kong colony."
 description: "Signed on October 24, 1860, the Convention of Peking officially ceded the Kowloon Peninsula south of Boundary Street and Stonecutters Island to Great Britain, significantly expanding the security and geographical…"
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -48,6 +48,17 @@ This territorial expansion marked the second major phase in the creation of mode
 
 - [ ] Did the Convention of Peking officially transfer Kowloon south of Boundary Street on October 24, 1860?
 - [ ] Were British troops occupying parts of Kowloon prior to the formal signing of the treaty?
+
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Convention of Peking*, October 24, 1860, TNA CO 129/78; *Hertslet's China Treaties*, Vol. 1, London: His Majesty's Stationery Office, 1908. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/78)
+- **Grade B:** Tsang, Steve (2004), *A Modern History of Hong Kong*, I.B. Tauris, ISBN 978-1845114190; Endacott, G.B. (1958), *A History of Hong Kong*, Oxford University Press. [ISBN ✓](https://openlibrary.org/isbn/9781845114190) [link ✗](https://www.elibrary.imf.org/view/journals/002/1997/050/article-A001-en.xml) [link ✗](https://www.emerald.com/pap/article/24/3/253/452204/The-Guangdong-Hong-Kong-nexus-in-grassroots)
+- **Grade C:** Hong Kong Museum of History, "The Acquisition of Kowloon Peninsula", HK Government Heritage Page, https://www.lcsd.gov.hk/CE/Museum/History. [link ✓](https://www.lcsd.gov.hk/CE/Museum/History) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong) [link ✗](https://www.elibrary.imf.org/view/journals/002/1997/050/article-A001-en.xml)
+
+**Disputes or myths:** PRC official historiography considers the treaty "unequal" and invalid ab initio, denying British sovereignty ever existed, whereas British legal policy maintained full legal cession in perpetuity.
 
 ## Evidence
 

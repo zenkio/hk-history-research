@@ -4,11 +4,11 @@ title_zh: "香港展拓專條簽訂"
 date: 1898-06-09
 year: 1898
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
+tags: ["evidence-b", "photo-corroborated", "1898", "ai-draft", "british-empire", "colonial-history", "new-territories", "qing-dynasty", "unequal-treaties"]
 summary: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 description: "On June 9, 1898, Britain and Qing China signed the Second Convention of Peking, leasing the New Territories for 99 years and expanding the colony's landmass tenfold."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -56,6 +56,17 @@ Corroborates: It depicts the treaty document that leased the New Territories to 
 *Museum models depicting the demarcation of the boundary between the British colony and the Qing Empire's Xin'an County.* (artwork). Yumeto, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231005_Models_in_the_Zhongying_Street_Historical_Museum.jpg).
 Corroborates: It illustrates the practical outcome of the Convention for the Extension of Hong Kong, specifically the establishment of the boundary for the leased New Territories.
 
+
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Convention for the Extension of Hong Kong Territory*, June 9, 1898, Foreign Office Records, FO 17/1397, UK National Archives; *Hertslet's China Treaties*, Vol. 1, London: His Majesty's Stationery Office (HMSO), 1908, p. 25. [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/1397)
+- **Grade B:** Carroll, John M. (2013), *A Concise History of Hong Kong*, Hong Kong University Press, ISBN: 9789888139286, https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf. [ISBN ✗](https://openlibrary.org/isbn/9789888139286) _(ISBN is: China's Foreign Places)_ [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
+- **Grade C:** Hong Kong Memory Project, "Convention for the Extension of Hong Kong Territory", https://www.hkmemory.hk. [site ?](https://www.hkmemory.hk) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
+
+**Disputes or myths:** Popular claims frequently confuse the 99-year lease of the New Territories with the permanent cessions of Hong Kong Island (1842) and Kowloon Peninsula (1860).
 
 ## Evidence
 

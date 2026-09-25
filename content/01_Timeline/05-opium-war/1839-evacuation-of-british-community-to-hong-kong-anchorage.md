@@ -4,7 +4,7 @@ title_zh: "英國社群撤退至香港錨地"
 date: 1839-08-26
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1839", "ai-draft", "british-evacuation", "canton-trade", "charles-elliot", "first-opium-war", "lin-zexu", "opium-war", "victoria-harbour"]
+tags: ["wikipedia-checked", "evidence-none", "1839", "ai-draft", "british-evacuation", "canton-trade", "charles-elliot", "first-opium-war", "lin-zexu", "opium-war", "victoria-harbour"]
 summary: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime capacity of the area."
 description: "In August 1839, following their expulsion from Macau under mounting Qing pressure, the British merchant community sought refuge aboard a fleet of ships anchored in Victoria Harbour, highlighting the strategic maritime…"
 confidence: ai-draft
@@ -46,17 +46,15 @@ The encampment of the British community in Victoria Harbour marked a critical tu
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The exact date of the complete British evacuation from Macau to the Hong Kong anchorage on or around August 26, 1839.
-- [ ] The extent of logistical supply chains maintained between the anchored British fleet and local villagers in Kowloon and surrounding islands during the autumn of 1839.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact date of the complete British evacuation from Macau to the Hong Kong anchorage on or around August 26, 1839.. The text states that Elliot ordered all British ships to leave the coast by 24 August, but it does not provide an exact date for a complete evacuation or mention the Hong Kong anchorage.
+- ❔ **not in Wikipedia**: The extent of logistical supply chains maintained between the anchored British fleet and local villagers in Kowloon and surrounding islands during the autumn of 1839.. The text mentions that the British fleet purchased provisions from local villagers in Kowloon, but it does not specify the extent of these supply chains or mention surrounding islands.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: First Opium War](https://en.wikipedia.org/wiki/First_Opium_War)
 
-**Still needed:** Evidence for both the specific date of the 1839 evacuation and the logistical supply chains between the British fleet and local villagers is missing.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

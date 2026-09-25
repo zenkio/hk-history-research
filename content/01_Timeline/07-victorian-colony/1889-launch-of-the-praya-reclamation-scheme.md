@@ -4,11 +4,11 @@ title_zh: "批填海計劃"
 date: 1889-01-01
 year: 1889
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
+tags: ["evidence-b", "1889", "ai-draft", "colonial-history", "praya-reclamation", "urban-expansion", "victoria-harbour", "victorian-colony"]
 summary: "In **1889**, businessman **Sir Paul Chater** (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 description: "In 1889, businessman Sir Paul Chater (遮打) and his associates launched the ambitious Praya Reclamation Scheme, fundamentally reshaping the coastline of Victoria Harbour and expanding Central's commercial district."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,6 +43,16 @@ The reclamation drastically altered the geography and economic geography of Vict
 
 - [ ] The exact acreage reclaimed under the initial 1889 Praya Reclamation Scheme proposal
 - [ ] The precise legislative council vote tallies approving the project
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Praya Reclamation Ordinance*, HK Ordinance No. 16 of 1889, *Hong Kong Government Gazette*, Jan 1889; TNA CO 129/240. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/240)
+- **Grade B:** Ho, Pui-yin (2004), *Making Urban Hong Kong: A History of Reclamation*, Routledge, ISBN 978-0415342209. [ISBN ✗](https://openlibrary.org/isbn/9780415342209) _(ISBN is: Women and Romanticism, 1750-1850)_ [link ✗](https://zolimacitymag.com/pao-yue-kong-hong-kong-maritime-trade-the-shipping-tycoons/) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf)
+- **Grade C:** Civil Engineering and Development Department, HK Government, "History of Land Reclamation", https://www.cedd.gov.hk. [site ?](https://www.cedd.gov.hk) [link ✗](https://www.emerald.com/stics/article/12/2/98/364326/A-night-soil-collection-point-the-public-toilets)
+
+**Disputes or myths:** Often cited as a public civic improvement project, it was heavily driven by private real estate speculation and hong cartels led by Catchick Paul Chater.
 
 ## Evidence
 

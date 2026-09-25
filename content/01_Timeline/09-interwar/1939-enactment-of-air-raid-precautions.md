@@ -4,10 +4,11 @@ title_zh: "防空措施之實施"
 date: 1939-01-01
 year: 1939
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1939", "ai-draft", "air-raid-precautions", "british-colonial-history", "civil-defense", "interwar", "world-war-two"]
+tags: ["evidence-none", "1939", "ai-draft", "air-raid-precautions", "british-colonial-history", "civil-defense", "interwar", "world-war-two"]
 summary: "Amid escalating global tensions in 1939, the Hong Kong government formally enacted Air Raid Precautions to prepare the colony for potential aerial bombardment from the Japanese empire."
 description: "Amid escalating global tensions in 1939, the Hong Kong government formally enacted Air Raid Precautions to prepare the colony for potential aerial bombardment from the Japanese empire."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The implementation of Air Raid Precautions marked a critical turning point in Ho
 
 - [ ] The precise legislative or administrative mechanism used to enact Air Raid Precautions in 1939
 - [ ] The exact number and capacity of air-raid shelters completed by the end of 1939
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific legislative mechanism and the statistics on air-raid shelter numbers and capacities in 1939 Hong Kong is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

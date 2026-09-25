@@ -4,11 +4,11 @@ title_zh: "保良局的成立"
 date: 1878-01-01
 year: 1878
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
+tags: ["evidence-b", "1878", "ai-draft", "colonial-history", "mui-tsai", "philanthropy", "po-leung-kuk", "social-welfare", "victorian-colony"]
 summary: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 description: "In 1878, prominent Chinese merchants in Hong Kong established the Po Leung Kuk to combat the widespread trafficking of women and children, marking a significant milestone in local self-governance and community welfare."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,6 +41,16 @@ The founding of the Po Leung Kuk represented a crucial precedent for Chinese par
 
 - [ ] The exact petition date and founding members listed in the initial 1878 colonial records
 - [ ] The precise nature of the relationship between the Po Leung Kuk and the Registrar General's Office during its first decade
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Special Committee Report on Po Leung Kuk*, HK LegCo Sessional Papers 1893; *Hong Kong Government Gazette*, Ordinance No. 12 of 1893. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade B:** Jaschok, Maria (1988), *Concubines and Bondservants: A Social History of Chinese Women in Hong Kong*, Zed Books, ISBN 978-0862327828; Miners, Norman (1981), *JRASHKB*, Vol. 21, pp. 91–113. [ISBN ✓](https://openlibrary.org/isbn/9780862327828) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+- **Grade C:** Po Leung Kuk Museum, "History and Heritage of Po Leung Kuk", https://www.poleungkuk.org.hk. [site ?](https://www.poleungkuk.org.hk) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
+
+**Disputes or myths:** Western missionaries claimed Po Leung Kuk protected patriarchal slavery by preserving the *mui tsai* system, whereas Chinese founders viewed it as essential moral social protection.
 
 ## Evidence
 

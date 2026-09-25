@@ -74,6 +74,16 @@ Corroborates: It provides visual evidence of the devastating impact the typhoon 
 Corroborates: It corroborates the devastating impact of the typhoon on maritime infrastructure and buildings.
 
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Observatory Official Report on the Typhoon of 18th September 1906, Hong Kong Sessional Papers, 1906; Colonial Office Records, CO 129/335. [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/335)
+- **Grade B:** Campbell, I. (2005), "The Great Hong Kong Typhoon of 1906", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 45, pp. 121–140, https://www.jstor.org/stable/23889818. [link ✓](https://www.jstor.org/stable/23889818)
+- **Grade C:** Hong Kong Observatory, "Severe Typhoons in Hong Kong History", https://www.hko.gov.hk. [site ?](https://www.hko.gov.hk)
+
+**Disputes or myths:** Public sentiment blamed the Royal Observatory for negligence in warning the public; official inquiries proved the cyclone formed rapidly in immediate offshore waters outside telegraphic range.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **A**

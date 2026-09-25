@@ -809,7 +809,8 @@
       "date": "1810-04-20",
       "summary": "Cheung Po Tsai surrendered his massive pirate fleet to Qing authorities, ending an era of maritime piracy centered around Lantau Island and Hong Kong waters.",
       "status": "done",
-      "file": "05-opium-war/1810-surrender-of-pirate-admiral-cheung-po-tsai.md"
+      "file": "05-opium-war/1810-surrender-of-pirate-admiral-cheung-po-tsai.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -818,7 +819,8 @@
       "date": "1821",
       "summary": "Qing crackdowns at Canton forced Western merchants to anchor armed opium receiving hulks off Lintin Island, making surrounding Hong Kong waters the epicenter of illicit trade.",
       "status": "done",
-      "file": "05-opium-war/1821-opium-depots-shift-to-lintin-island.md"
+      "file": "05-opium-war/1821-opium-depots-shift-to-lintin-island.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -827,7 +829,8 @@
       "date": "1832",
       "summary": "The Qing military expanded Tung Chung Fort on Lantau Island to curb maritime smuggling and assert imperial authority in the Pearl River estuary.",
       "status": "done",
-      "file": "05-opium-war/1832-reinforcement-of-tung-chung-fort.md"
+      "file": "05-opium-war/1832-reinforcement-of-tung-chung-fort.md",
+      "verified": "no-reference"
     },
     {
       "era": "05-opium-war",
@@ -836,7 +839,8 @@
       "date": "1834-04-22",
       "summary": "The end of the British East India Company's trade monopoly unleashed private commercial houses like Jardine, Matheson & Co., dramatically escalating tensions with Qing authorities.",
       "status": "done",
-      "file": "05-opium-war/1834-abolition-of-the-east-india-company-monopoly.md"
+      "file": "05-opium-war/1834-abolition-of-the-east-india-company-monopoly.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -845,7 +849,8 @@
       "date": "1834-09",
       "summary": "Lord Napier's failed diplomatic mission and military standoff underscored the irreconcilable differences between British diplomatic norms and the Canton system.",
       "status": "done",
-      "file": "05-opium-war/1834-the-napier-affair-in-canton.md"
+      "file": "05-opium-war/1834-the-napier-affair-in-canton.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -854,7 +859,8 @@
       "date": "1839-03-24",
       "summary": "Special Imperial Commissioner Lin Zexu blockaded foreign factories in Canton and confiscated over 20,000 chests of opium, triggering British military retaliation.",
       "status": "done",
-      "file": "05-opium-war/1839-lin-zexu-enforces-opium-blockade.md"
+      "file": "05-opium-war/1839-lin-zexu-enforces-opium-blockade.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -863,7 +869,8 @@
       "date": "1839-06-03",
       "summary": "Lin Zexu's public dissolution of surrendered foreign opium at Humen firmly closed the door to diplomatic compromise and made war inevitable.",
       "status": "done",
-      "file": "05-opium-war/1839-destruction-of-confiscated-opium-at-humen.md"
+      "file": "05-opium-war/1839-destruction-of-confiscated-opium-at-humen.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -872,7 +879,8 @@
       "date": "1839-07-07",
       "summary": "A fatal brawl involving foreign sailors and villager Lin Weixi in Kowloon sparked a jurisdictional crisis when Charles Elliot refused to surrender British subjects to Qing courts.",
       "status": "done",
-      "file": "05-opium-war/1839-the-lin-weixi-affair-in-tsim-sha-tsui.md"
+      "file": "05-opium-war/1839-the-lin-weixi-affair-in-tsim-sha-tsui.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -881,7 +889,8 @@
       "date": "1839-08-26",
       "summary": "Expelled from Macau under Qing pressure, the British merchant community took refuge aboard ships anchored in Victoria Harbour, proving its strategic and maritime value.",
       "status": "done",
-      "file": "05-opium-war/1839-evacuation-of-british-community-to-hong-kong-anchorage.md"
+      "file": "05-opium-war/1839-evacuation-of-british-community-to-hong-kong-anchorage.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -890,7 +899,8 @@
       "date": "1839-09-04",
       "summary": "A naval clash off Kowloon between British pinnaces and Qing war junks marked the first military engagement of the First Opium War in Hong Kong waters.",
       "status": "done",
-      "file": "05-opium-war/1839-the-battle-of-kowloon.md"
+      "file": "05-opium-war/1839-the-battle-of-kowloon.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -899,7 +909,8 @@
       "date": "1839-11-03",
       "summary": "British Royal Navy frigates destroyed a Qing squadron at the Bocca Tigris, escalating localized disputes into full-scale naval warfare.",
       "status": "done",
-      "file": "05-opium-war/1839-the-battle-of-chuenpi.md"
+      "file": "05-opium-war/1839-the-battle-of-chuenpi.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -908,7 +919,8 @@
       "date": "1840-06-21",
       "summary": "A large British military armada arrived in Hong Kong waters to establish a secure forward operating base before launching offensives along China's eastern coast.",
       "status": "done",
-      "file": "05-opium-war/1840-british-expeditionary-fleet-gathers-in-hong-kong.md"
+      "file": "05-opium-war/1840-british-expeditionary-fleet-gathers-in-hong-kong.md",
+      "verified": "no-reference"
     },
     {
       "era": "05-opium-war",
@@ -917,7 +929,8 @@
       "date": "1841-01-20",
       "summary": "Plenipotentiaries Charles Elliot and Qishan preliminarily agreed to terms that included the cession of Hong Kong Island to Great Britain.",
       "status": "done",
-      "file": "05-opium-war/1841-negotiation-of-the-convention-of-chuenpi.md"
+      "file": "05-opium-war/1841-negotiation-of-the-convention-of-chuenpi.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -926,7 +939,8 @@
       "date": "1841-01-26",
       "summary": "Commodore Sir Gordon Bremer landed at Possession Point and raised the Union Jack, inaugurating British colonial rule over Hong Kong.",
       "status": "done",
-      "file": "05-opium-war/1841-formal-british-possession-of-hong-kong-island.md"
+      "file": "05-opium-war/1841-formal-british-possession-of-hong-kong-island.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -935,7 +949,8 @@
       "date": "1841-02-02",
       "summary": "Charles Elliot issued proclamations guaranteeing that indigenous villagers on Hong Kong Island would retain their property, religious practices, and customary Chinese laws.",
       "status": "done",
-      "file": "05-opium-war/1841-elliot-guarantees-local-chinese-customary-rights.md"
+      "file": "05-opium-war/1841-elliot-guarantees-local-chinese-customary-rights.md",
+      "verified": "no-reference"
     },
     {
       "era": "05-opium-war",
@@ -944,7 +959,8 @@
       "date": "1841-05-15",
       "summary": "The colonial administration conducted a preliminary census recording approximately 7,450 local villagers, stonecutters, and Tanka boat-dwellers living on the island.",
       "status": "done",
-      "file": "05-opium-war/1841-hong-kongs-first-colonial-census.md"
+      "file": "05-opium-war/1841-hong-kongs-first-colonial-census.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -953,7 +969,8 @@
       "date": "1841-06-07",
       "summary": "Charles Elliot designated Hong Kong an open, duty-free port, laying the institutional cornerstone for its emergence as a global trade and shipping entrepôt.",
       "status": "done",
-      "file": "05-opium-war/1841-hong-kong-declared-a-free-port.md"
+      "file": "05-opium-war/1841-hong-kong-declared-a-free-port.md",
+      "verified": "no-reference"
     },
     {
       "era": "05-opium-war",
@@ -962,7 +979,8 @@
       "date": "1841-06-14",
       "summary": "British authorities auctioned initial waterfront lots in what became Victoria City, sparking rapid civilian construction of godowns, wharves, and merchant houses.",
       "status": "done",
-      "file": "05-opium-war/1841-first-public-land-auction-in-hong-kong.md"
+      "file": "05-opium-war/1841-first-public-land-auction-in-hong-kong.md",
+      "verified": "no-reference"
     },
     {
       "era": "05-opium-war",
@@ -971,7 +989,8 @@
       "date": "1841-08-10",
       "summary": "Sir Henry Pottinger arrived to replace Elliot, expanding the scale of the northern military campaign while consolidating formal colonial governance ashore.",
       "status": "done",
-      "file": "05-opium-war/1841-arrival-of-plenipotentiary-sir-henry-pottinger.md"
+      "file": "05-opium-war/1841-arrival-of-plenipotentiary-sir-henry-pottinger.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "05-opium-war",
@@ -980,7 +999,8 @@
       "date": "1842-08-29",
       "summary": "Great Britain and the Qing Empire signed the Treaty of Nanking, officially ending the First Opium War and ceding Hong Kong Island to the British Crown in perpetuity.",
       "status": "done",
-      "file": "05-opium-war/1841-signing-of-the-treaty-of-nanking.md"
+      "file": "05-opium-war/1841-signing-of-the-treaty-of-nanking.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "06-early-colony",
@@ -989,7 +1009,8 @@
       "date": "1841-01-26",
       "summary": "Commodore James Bremer claims Hong Kong Island for the British Crown, establishing the initial military presence and colonial foothold.",
       "status": "done",
-      "file": "06-early-colony/1841-british-landing-at-possession-point.md"
+      "file": "06-early-colony/1841-british-landing-at-possession-point.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "06-early-colony",
@@ -998,7 +1019,8 @@
       "date": "1843-06-26",
       "summary": "Hong Kong is officially declared a British colony, and Sir Henry Pottinger is sworn in as its first Governor.",
       "status": "done",
-      "file": "06-early-colony/1843-proclamation-of-hong-kong-as-a-crown-colony.md"
+      "file": "06-early-colony/1843-proclamation-of-hong-kong-as-a-crown-colony.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1007,7 +1029,8 @@
       "date": "1844-05-01",
       "summary": "One of the world's first modern police forces is established to maintain order among a highly diverse and transient population.",
       "status": "done",
-      "file": "06-early-colony/1844-establishment-of-the-hong-kong-police-force.md"
+      "file": "06-early-colony/1844-establishment-of-the-hong-kong-police-force.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "06-early-colony",
@@ -1016,7 +1039,8 @@
       "date": "1844-11-04",
       "summary": "Chinese merchants and laborers strike against a registration ordinance and poll tax, forcing the colonial government to back down.",
       "status": "done",
-      "file": "06-early-colony/1844-first-mass-protest-and-strike.md"
+      "file": "06-early-colony/1844-first-mass-protest-and-strike.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1025,7 +1049,8 @@
       "date": "1845-02-20",
       "summary": "The launch of Hong Kong's most influential early English newspaper marks the development of a local press and public sphere.",
       "status": "done",
-      "file": "06-early-colony/1845-founding-of-the-china-mail-newspaper.md"
+      "file": "06-early-colony/1845-founding-of-the-china-mail-newspaper.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "06-early-colony",
@@ -1034,7 +1059,8 @@
       "date": "1846-05-26",
       "summary": "The exclusive social hub opens for British officials and merchants, symbolizing the strict racial and social hierarchies of the early colony.",
       "status": "done",
-      "file": "06-early-colony/1846-opening-of-the-hong-kong-club.md"
+      "file": "06-early-colony/1846-opening-of-the-hong-kong-club.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1043,7 +1069,8 @@
       "date": "1847",
       "summary": "Built on Hollywood Road, this temple becomes the religious, social, and informal judicial center for the growing Chinese community.",
       "status": "done",
-      "file": "06-early-colony/1847-construction-of-the-man-mo-temple.md"
+      "file": "06-early-colony/1847-construction-of-the-man-mo-temple.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1052,7 +1079,8 @@
       "date": "1849-03-11",
       "summary": "The completion of the Anglican cathedral establishes a permanent symbol of British religious authority and colonial prestige.",
       "status": "done",
-      "file": "06-early-colony/1849-consecration-of-st-johns-cathedral.md"
+      "file": "06-early-colony/1849-consecration-of-st-johns-cathedral.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1061,7 +1089,8 @@
       "date": "1850",
       "summary": "The outbreak of civil war in mainland China drives wealthy Chinese merchants and refugees to Hong Kong, boosting the local economy and population.",
       "status": "done",
-      "file": "06-early-colony/1850-taiping-rebellion-prompts-chinese-refugee-influx.md"
+      "file": "06-early-colony/1850-taiping-rebellion-prompts-chinese-refugee-influx.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1070,7 +1099,8 @@
       "date": "1851-12-28",
       "summary": "A devastating fire destroys hundreds of Chinese homes, prompting the city's first major land reclamation project along Bonham Strand.",
       "status": "done",
-      "file": "06-early-colony/1851-the-great-sheung-wan-fire.md"
+      "file": "06-early-colony/1851-the-great-sheung-wan-fire.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1079,7 +1109,8 @@
       "date": "1853",
       "summary": "Missionary James Legge begins publishing his English translations of Chinese classics, laying the groundwork for cross-cultural academic exchange.",
       "status": "done",
-      "file": "06-early-colony/1853-introduction-of-bilingual-chinese-classics-translation.md"
+      "file": "06-early-colony/1853-introduction-of-bilingual-chinese-classics-translation.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1088,7 +1119,8 @@
       "date": "1854-04-13",
       "summary": "Governor Bowring takes office, advocating for free trade, public works, and the political representation of Chinese residents.",
       "status": "done",
-      "file": "06-early-colony/1854-sir-john-bowring-assumes-governorship.md"
+      "file": "06-early-colony/1854-sir-john-bowring-assumes-governorship.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",
@@ -1097,7 +1129,8 @@
       "date": "1856",
       "summary": "The colonial administration begins funding local Chinese schools, initiating a formal system of state-supported bilingual education.",
       "status": "done",
-      "file": "06-early-colony/1856-establishment-of-government-aided-chinese-schools.md"
+      "file": "06-early-colony/1856-establishment-of-government-aided-chinese-schools.md",
+      "verified": "no-reference"
     },
     {
       "era": "06-early-colony",

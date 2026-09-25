@@ -4,10 +4,11 @@ title_zh: "香港上海匯豐銀行第三代總行大廈落成"
 date: 1935-10-10
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1930s", "1935", "ai-draft", "architecture", "colonial-history", "financial-history", "hsbc", "interwar"]
+tags: ["evidence-none", "1930s", "1935", "ai-draft", "architecture", "colonial-history", "financial-history", "hsbc", "interwar"]
 summary: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
 description: "On October 10, 1935, the Hongkong and Shanghai Banking Corporation opened its third-generation headquarters in Victoria, standing as a marvel of modernist architecture and the tallest building in Asia at the time."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The opening of the third HSBC building was widely celebrated as a testament to H
 
 - [ ] Verify whether the building was officially the tallest in Asia upon its opening on October 10, 1935.
 - [ ] Confirm if the choice of October 10 for the opening ceremony was intentional or coincidental regarding Double Ten Day.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the building's height relative to other Asian buildings in 1935 and the historical context or intent behind selecting October 10 as its opening date.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

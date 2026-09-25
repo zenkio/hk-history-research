@@ -4,7 +4,7 @@ title_zh: "穿鼻之戰"
 date: 1839-11-03
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["evidence-a", "photo-corroborated", "1839", "ai-draft", "bocca-tigris", "charles-elliot", "first-opium-war", "opium-war", "qing-dynasty", "royal-navy"]
+tags: ["wikipedia-checked", "evidence-a", "photo-corroborated", "1839", "ai-draft", "bocca-tigris", "charles-elliot", "first-opium-war", "opium-war", "qing-dynasty", "royal-navy"]
 summary: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First Opium War."
 description: "On November 3, 1839, British Royal Navy warships engaged and defeated a Qing dynasty naval squadron at the Bocca Tigris, marking a decisive escalation into full-scale naval warfare during the early stages of the First…"
 confidence: ai-draft
@@ -40,28 +40,15 @@ The Battle of Chuenpi (**穿鼻之戰**) is widely viewed by historians as the c
 - [[02_Entities/Places/bocca-tigris|Bocca Tigris (虎門)]]
 - [[02_Entities/Places/canton|Canton (廣州)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Exact number of Qing war junks deployed and lost during the engagement on November 3, 1839
-- [ ] Direct orders given by Charles Elliot to the commanders of HMS Volage and HMS Hyacinth prior to the engagement
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Exact number of Qing war junks deployed and lost during the engagement on November 3, 1839. The text states that one junk was blown up and three were sunk, but it does not mention the total number of junks deployed.
+- ✅ **agrees with Wikipedia**: Direct orders given by Charles Elliot to the commanders of HMS Volage and HMS Hyacinth prior to the engagement. The text states that Elliot ordered HMS Hyacinth and HMS Volage to be positioned 1 mile south of the Chuenpi battery on 27 October.
 
-![A first-hand 1839 drawing depicting the naval battle between British warships and Chinese junks near Chuenpi.](https://upload.wikimedia.org/wikipedia/commons/8/82/Chuenpee_battle_1839.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Battle of Chuenpi](https://en.wikipedia.org/wiki/Battle_of_Chuenpi)
 
-*A first-hand 1839 drawing depicting the naval battle between British warships and Chinese junks near Chuenpi.* (artwork). Peter William Hamilton, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chuenpee_battle_1839.jpg).
-Corroborates: It provides a contemporary visual representation of the naval engagement that marked a decisive escalation in the First Opium War.
-
-
-## Research notes
-
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-24. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
-
-- **Grade A:** Captain H. Smith to Rear-Admiral F.L. Maitland, 3 November 1839, UK National Archives, ADM 1/5496; *The Chinese Repository*, Vol. 8, No. 7 (November 1839), pp. 486–491. [link ✓](https://poodle-banjo-jhsp.squarespace.com/s/the-opium-wars.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=ADM%201/5496)
-- **Grade B:** Fay, P.W. (1997), *The Opium War, 1840-1842: Barbarians in the Celestial Empire*, University of North Carolina Press, ISBN: 0807847143. [ISBN ✓](https://openlibrary.org/isbn/0807847143) [link ✗](https://military-history.fandom.com/wiki/Second\_Battle\_of\_Chuenpi)
-- **Grade C:** National Maritime Museum Greenwich Archive Collections. [link ✓](https://discovery.nationalarchives.gov.uk/details/r/C4320)
-
-**Disputes or myths:** Western historians frequently date the formal military start of the Opium War to this naval battle, whereas Qing authorities viewed earlier food blockades as active warfare.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

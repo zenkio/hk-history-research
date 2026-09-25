@@ -4,7 +4,7 @@ title_zh: "反對逃犯條例修訂草案遊行"
 date: 2019-06-09
 year: 2019
 era: "Political contention and protest"
-tags: ["2019", "ai-draft", "contention", "extradition-bill", "june-9", "one-country-two-systems", "protest", "rule-of-law"]
+tags: ["photo-corroborated", "2019", "ai-draft", "contention", "extradition-bill", "june-9", "one-country-two-systems", "protest", "rule-of-law"]
 summary: "On June 9, 2019, an estimated one million people marched through Hong Kong to protest a proposed extradition bill, marking the beginning of months of unprecedented civil unrest."
 description: "On June 9, 2019, an estimated one million people marched through Hong Kong to protest a proposed extradition bill, marking the beginning of months of unprecedented civil unrest."
 confidence: ai-draft
@@ -40,5 +40,20 @@ The demonstration marked a watershed moment in contemporary Hong Kong history. T
 
 - [ ] Organizer and police estimates of the crowd size on June 9, 2019
 - [ ] The exact legislative timeline and official government statements regarding the suspension of the bill
+
+## Photos from this period
+
+![Police officers in tactical gear stand on a street in Central, Hong Kong, with people holding umbrellas in the background.](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_09.jpg/960px-Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Police officers in tactical gear stand on a street in Central, Hong Kong, with people holding umbrellas in the background.* (contemporary photo). Studio Incendo, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_09.jpg).
+Corroborates: The image illustrates the visual atmosphere and the types of actors, such as police and protesters, involved in the period of civil unrest described.
+⚠️ Possible conflict: The image was taken in May 2020, whereas the specific event mentioned in the summary took place on June 9, 2019.
+
+![A dense crowd of people wearing face masks on Wyndham Street in Central, Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_05.jpg/960px-Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A dense crowd of people wearing face masks on Wyndham Street in Central, Hong Kong.* (later photo of the site). Studio Incendo, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Protest_in_Central_HK_2020MAY27_by_Studio_Incendo_05.jpg).
+Corroborates: The image depicts the area involved in the protests during the period of civil unrest.
+⚠️ Possible conflict: The photograph was taken on May 27, 2020, which is a year after the specific June 9, 2019, event described.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

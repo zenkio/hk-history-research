@@ -4,7 +4,7 @@ title_zh: "英國東印度公司專營權廢除"
 date: 1834-04-22
 year: 1834
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1834", "ai-draft", "canton-system", "east-india-company", "first-opium-war", "free-trade", "jardine-matheson", "opium-war"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1834", "ai-draft", "canton-system", "east-india-company", "first-opium-war", "free-trade", "jardine-matheson", "opium-war"]
 summary: "On April 22, 1834, the British East India Company lost its monopoly on the China trade, unleashing private merchant houses and sharply escalating commercial and diplomatic tensions with Qing authorities."
 description: "On April 22, 1834, the British East India Company lost its monopoly on the China trade, unleashing private merchant houses and sharply escalating commercial and diplomatic tensions with Qing authorities."
 confidence: ai-draft
@@ -53,18 +53,22 @@ The abolition of the monopoly fundamentally transformed the dynamics of Sino-Bri
 - [[02_Entities/Places/pearl-river-delta|Pearl River Delta (珠江三角洲)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] The exact statutory date the East India Company monopoly officially ended in 1834.
-- [ ] The precise diplomatic titles and communication methods used by Lord Napier upon his arrival in Macao.
-- [ ] The extent to which private merchant houses directly influenced the parliamentary debates leading to the 1833 Charter Act.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact statutory date the East India Company monopoly officially ended in 1834.. The text states the monopoly was revoked under the terms of the Saint Helena Act 1833.
+- ❔ **not in Wikipedia**: The precise diplomatic titles and communication methods used by Lord Napier upon his arrival in Macao.. The reference text does not mention Lord Napier or Macao.
+- ❔ **not in Wikipedia**: The extent to which private merchant houses directly influenced the parliamentary debates leading to the 1833 Charter Act.. The text does not provide information regarding the influence of merchant houses on the parliamentary debates for the 1833 Act.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Company rule in India](https://en.wikipedia.org/wiki/Company_rule_in_India), [Wikipedia: Government of India Act 1833](https://en.wikipedia.org/wiki/Government_of_India_Act_1833)
 
-**Still needed:** Evidence for all three claims—the 1834 statutory date, Lord Napier's diplomatic conduct in Macao, and the influence of merchant houses on the 1833 Charter Act—is missing.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Between Monopoly and Free Trade: The English East India Company, 1600–1757](https://openlibrary.org/isbn/9780691159065) (ISBN)
+- ✓ [The East India Company: A History](https://openlibrary.org/isbn/9781317897651) (ISBN)
+- ✗ [The Anarchy: The Relentless Rise of the East India Company](https://openlibrary.org/isbn/9781635573954) (ISBN) _ISBN is: The Anarchy: The East India Company, Corporate Violence, and the Pillage of an Empire_
+- ✓ [The East India Company and Religion, 1698–1858](https://openlibrary.org/isbn/9781843837329) (ISBN)
+- ✓ [The East India Company and the Natural World](https://openlibrary.org/isbn/9781349491094) (ISBN)
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

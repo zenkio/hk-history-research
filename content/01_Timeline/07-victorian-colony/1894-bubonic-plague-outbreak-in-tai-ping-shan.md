@@ -44,6 +44,16 @@ The **1894** outbreak resulted in the deaths of over **2,000** people and led to
 - [ ] Alexandre Yersin arrived in Hong Kong in May 1894 to independently identify the plague bacillus concurrently with Kitasato Shibasaburo.
 - [ ] The colonial government demolished specific tenement blocks in Tai Ping Shan immediately following the peak of the epidemic.
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Report of the Medical Officer of Health on the Epidemic of Bubonic Plague*, HK LegCo Sessional Papers 1894; *Hong Kong Government Gazette*, May 1894; TNA CO 129/263. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/263)
+- **Grade B:** Pryor, E.G. (1975), "The Great Plague of Hong Kong", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 15, pp. 61–70, https://www.jstor.org/stable/23881648. [link ✓](https://www.jstor.org/stable/23881648) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en)
+- **Grade C:** Hong Kong Museum of Medical Sciences, "1894 Bubonic Plague Exhibition", https://www.hkmms.org.hk. [site ?](https://www.hkmms.org.hk) [link ✗](https://brill.com/display/book/edcoll/9789004383722/BP000018.xml?language=en) [link ✗](https://hkjapaneseclub.org/assets/admin/upfile/Cemetery-EN20230214.pdf)
+
+**Disputes or myths:** Colonial authorities blamed Chinese cultural filthiness, but modern research proves military "whitewashing" raids and house destruction triggered panic and accelerated regional disease spread.
+
 ## Evidence
 
 > [!abstract] Evidence grade: **B**

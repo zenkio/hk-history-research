@@ -4,10 +4,11 @@ title_zh: "日軍登陸香港島"
 date: 1941-12-18
 year: 1941
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1941", "ai-draft", "amphibious-landing", "battle-of-hong-kong", "british-garrison", "japanese-occupation", "pacific-war", "world-war-ii"]
+tags: ["evidence-none", "1941", "ai-draft", "amphibious-landing", "battle-of-hong-kong", "british-garrison", "japanese-occupation", "pacific-war", "world-war-ii"]
 summary: "On December 18, 1941, Imperial Japanese forces successfully crossed Victoria Harbour under the cover of darkness and artillery bombardment, establishing a critical beachhead on Hong Kong Island and accelerating the colony's eventual surrender."
 description: "On December 18, 1941, Imperial Japanese forces successfully crossed Victoria Harbour under the cover of darkness and artillery bombardment, establishing a critical beachhead on Hong Kong Island and accelerating the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The successful amphibious landing marked the beginning of the end for the defens
 
 - [ ] Exact timing and waves of the Japanese troop movements across Victoria Harbour on the night of December 18, 1941
 - [ ] The precise casualty figures sustained by both defending Allied troops and landing Japanese forces during the initial beachhead establishment
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific historical troop movements, timing, and casualty figures for the December 18, 1941, landing on Hong Kong Island is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

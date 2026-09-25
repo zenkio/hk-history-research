@@ -4,10 +4,11 @@ title_zh: "五月逃港潮"
 date: 1962-01-01
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1962", "ai-draft", "colonial-history", "great-leap-forward", "migration", "postwar-refugees", "refugee-crisis"]
+tags: ["evidence-b", "1962", "ai-draft", "colonial-history", "great-leap-forward", "migration", "postwar-refugees", "refugee-crisis"]
 summary: "In May 1962, tens of thousands of mainland Chinese refugees flooded across the border into Hong Kong, escaping the devastating aftermath of the Great Leap Forward and overwhelming the colonial administration's emergency services."
 description: "In May 1962, tens of thousands of mainland Chinese refugees flooded across the border into Hong Kong, escaping the devastating aftermath of the Great Leap Forward and overwhelming the colonial administration's emergency…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,17 @@ The **May Exodus** (逃港潮) marked a turning point in Hong Kong's demographic
 - [ ] Exact daily tallies of border crossers during May 1962
 - [ ] The precise number of forced repatriations conducted by colonial authorities
 - [ ] The degree of tacit official permission given by Guangdong authorities during the initial surge
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Glen Peterson (2012). *The Uneven Development of the International Refugee Regime in Postwar Asia: Evidence from China, Hong Kong and Indonesia*. Journal of Refugee Studies.](https://doi.org/10.1093/jrs/fes009) (claims 2, 3): The study of the refugee regime in China and Hong Kong covers the management and policies regarding refugee populations.
+
+**Still needed:** Specific data for the 1962 crisis, including exact daily crossing tallies, precise repatriation numbers, and the official stance of Guangdong authorities, is still needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

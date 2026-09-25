@@ -4,10 +4,11 @@ title_zh: "英國婦孺疏散"
 date: 1940-07-03
 year: 1940
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1940", "ai-draft", "british-empire", "evacuation", "hong-kong-history", "interwar", "pacific-war", "world-war-ii"]
+tags: ["evidence-b", "1940", "ai-draft", "british-empire", "evacuation", "hong-kong-history", "interwar", "pacific-war", "world-war-ii"]
 summary: "In July 1940, facing the escalating threat of Japanese expansionism, the Hong Kong colonial government ordered the compulsory evacuation of over 3,000 European women and children to Australia."
 description: "In July 1940, facing the escalating threat of Japanese expansionism, the Hong Kong colonial government ordered the compulsory evacuation of over 3,000 European women and children to Australia."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,19 @@ The evacuation underscored the British realization of Hong Kong's military vulne
 
 - [ ] The exact number of European women and children evacuated from Hong Kong in July 1940.
 - [ ] The precise destinations and vessels used for the July 1940 evacuation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Tony Banham (2017). *Reduced to a Symbolical Scale: The Evacuation of British Women and Children from Hong Kong to Australia in 1940*. Project Muse (Johns Hopkins University).](https://openalex.org/W2755826674) (claims 1, 2): This scholarship discusses the compulsory 1940 evacuation of British families from Hong Kong to Australia.
+- [Vivian Kong Wai-yan (2015). *"Clearing the decks" : the evacuation of British women and children from Hong Kong to Australia in 1940*.](https://doi.org/10.5353/th_b5760966) (claims 1, 2): This source details the 1940 evacuation to Australia and includes an approximate number of evacuees.
+- [Vivian Kong (2018). *‘Hong Kong is my Home’: The 1940 Evacuation and Hong Kong-Britons*. The Journal of Imperial & Commonwealth History.](https://doi.org/10.1080/03086534.2018.1539727) (claims 1, 2): This work examines the 1940 evacuation of Hong Kong Britons to Australia.
+
+**Still needed:** The exact number of evacuees and the specific list of vessels and destinations used for the July 1940 evacuation.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -64,6 +64,16 @@ Corroborates: It provides visual evidence of the devastating destruction caused 
 Corroborates: It provides visual evidence of the devastation caused by the storm in Hong Kong.
 
 
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** *Report on the Typhoon of September 22nd and 23rd, 1874*, HK LegCo Sessional Papers 1874; *The Hong Kong Daily Press*, September 25, 1874; TNA CO 129/168. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/168)
+- **Grade B:** Campbell, Ian (2005), "Typhoons in Hong Kong: The Great Typhoon of 1874", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 45, pp. 43–67, https://www.jstor.org/stable/23890172. [link ✓](https://www.jstor.org/stable/23890172) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf)
+- **Grade C:** Hong Kong Observatory, "Historical Typhoons in Hong Kong", https://www.hko.gov.hk. [site ?](https://www.hko.gov.hk) [wiki ?](https://en.wikipedia.org/wiki/Handover\_of\_Hong\_Kong)
+
+**Disputes or myths:** Colonial reports blamed the high casualties entirely on unpreventable natural force, whereas modern historians highlight severe municipal neglect of working-class boat dwellers (*Tanka*).
+
 ## Evidence
 
 > [!abstract] Evidence grade: **A**

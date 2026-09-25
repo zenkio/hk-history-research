@@ -4,10 +4,11 @@ title_zh: "恢復文治政府與歐曬計劃"
 date: 1946-05-01
 year: 1946
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1946", "ai-draft", "british-colonial-history", "civil-government", "constitutional-reform", "postwar-hong-kong", "postwar-refugees", "young-plan"]
+tags: ["evidence-none", "1946", "ai-draft", "british-colonial-history", "civil-government", "constitutional-reform", "postwar-hong-kong", "postwar-refugees", "young-plan"]
 summary: "Following the end of Japanese occupation, civilian administration was restored in Hong Kong under Governor Sir Mark Young, who proposed limited political reforms for greater local representation that were ultimately shelved."
 description: "Following the end of Japanese occupation, civilian administration was restored in Hong Kong under Governor Sir Mark Young, who proposed limited political reforms for greater local representation that were ultimately…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The episode marked a crucial juncture in Hong Kong's political development, repr
 
 - [ ] Did Governor Mark Young officially announce the constitutional reform plan specifically on 1 May 1946?
 - [ ] What were the exact proposed proportions of elected versus appointed members in the original Young Plan municipal council?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to confirm the specific date of Governor Mark Young's announcement of the reform plan and the exact proposed ratio of elected to appointed members in the municipal council.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

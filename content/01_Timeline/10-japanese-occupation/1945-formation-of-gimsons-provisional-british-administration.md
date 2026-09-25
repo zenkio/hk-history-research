@@ -4,10 +4,11 @@ title_zh: "詹遜臨時香港政府之成立"
 date: 1945-08-23
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "british-administration", "franklin-gimson", "japanese-occupation", "post-war-restoration", "world-war-ii"]
+tags: ["evidence-none", "1945", "ai-draft", "british-administration", "franklin-gimson", "japanese-occupation", "post-war-restoration", "world-war-ii"]
 summary: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
 description: "Following the sudden Japanese surrender in August 1945, imprisoned British Colonial Secretary Franklin Gimson established a provisional civil administration in Victoria before the arrival of Allied military forces."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,11 @@ The formation of Gimson's provisional administration was a crucial step in the i
 
 - [ ] Did Franklin Gimson officially establish the provisional administration precisely on August 23, 1945?
 - [ ] Which specific buildings were utilized by Gimson and his staff during the provisional administration prior to Harcourt's arrival?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

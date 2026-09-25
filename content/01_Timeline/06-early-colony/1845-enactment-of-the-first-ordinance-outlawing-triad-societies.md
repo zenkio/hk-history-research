@@ -4,10 +4,11 @@ title_zh: "第一條取結社法例之頒布"
 date: 1845-03-01
 year: 1845
 era: "The early colony"
-tags: ["1845", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "legislation", "organized-crime", "triads"]
+tags: ["evidence-b", "1845", "ai-draft", "british-hong-kong", "colonial-history", "early-colony", "legislation", "organized-crime", "triads"]
 summary: "In March 1845, the colonial government passed Ordinance No. 1 of 1845, officially outlawing Chinese secret societies and marking the beginning of a prolonged struggle between British authorities and underground criminal syndicates in Hong Kong."
 description: "In March 1845, the colonial government passed Ordinance No."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,16 @@ This enactment marked the official commencement of the colonial state's long-run
 
 - [ ] Ordinance No. 1 of 1845 was specifically enacted on or around March 1, 1845.
 - [ ] Governor John Francis Davis spearheaded the legislative efforts against secret societies during this period.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Ordinance No. 1 of 1844, Enclosure in TNA CO 129/6. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/national-custom-debating-female-servitude-in-late-nineteenthcentury-hong-kong1/213F3E4CD65129F92905B2768A0A3A50) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/6)
+- **Grade B:** Watson, Rubie S. (1991), "National Custom: Debating Female Servitude in Late Nineteenth-Century Hong Kong," *Modern Asian Studies*, Cambridge University Press, DOI:10.1017/S0026749X00001099. [DOI ?](https://doi.org/10.1017/S0026749X00001099) [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/national-custom-debating-female-servitude-in-late-nineteenthcentury-hong-kong1/213F3E4CD65129F92905B2768A0A3A50)
+- **Grade C:** Historical Laws of Hong Kong Online, University of Hong Kong Libraries, https://lib.hku.hk/. [site ?](https://lib.hku.hk/) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Challenges the claim that British rule eradicated forced labor; administrators deliberately exempted the Cantonese *mui tsai* system by defining it as benign native tradition.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -4,10 +4,11 @@ title_zh: "日本天皇宣佈無條件投降廣播"
 date: 1945-08-15
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "british-colonial-history", "japanese-occupation", "surrender", "world-war-ii"]
+tags: ["evidence-none", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
 description: "On August 15, 1945, Japanese Emperor Hirohito broadcast the acceptance of the Potsdam Declaration, abruptly ending the Pacific War and creating an immediate power vacuum in occupied Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The broadcast marked the cessation of active hostilities in Hong Kong and the te
 
 - [ ] Exact details of how and when the radio broadcast was heard by military and civilian personnel within occupied Hong Kong on August 15, 1945
 - [ ] The precise command structure and communication logs of the Japanese garrison in Hong Kong immediately following the Emperor's announcement
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the specific reception of the surrender broadcast by personnel in Hong Kong and the Japanese garrison's command logs is still needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

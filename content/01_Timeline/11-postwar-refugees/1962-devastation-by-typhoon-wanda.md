@@ -4,10 +4,11 @@ title_zh: "溫黛颱風的災難"
 date: 1962-09-01
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1962", "ai-draft", "disaster-relief", "postwar-refugees", "squatter-homes", "typhoon-wanda", "urban-planning", "weather-disaster"]
+tags: ["evidence-none", "1962", "ai-draft", "disaster-relief", "postwar-refugees", "squatter-homes", "typhoon-wanda", "urban-planning", "weather-disaster"]
 summary: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements. This disaster exposed the vulnerabilities of the rapidly expanding postwar population and accelerated long-term improvements in local emergency infrastructure and housing policy."
 description: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The immediate aftermath of Typhoon Wanda forced a critical reassessment of gover
 
 - [ ] Verify the exact official death toll and missing persons count reported by the colonial government following Typhoon Wanda.
 - [ ] Check contemporary government records regarding the precise wind speeds and storm surge levels recorded at the Royal Observatory on September 1, 1962.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Official colonial government reports and meteorological records from the Royal Observatory from September 1962 are needed to verify the death toll, missing persons, wind speeds, and storm surge levels.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

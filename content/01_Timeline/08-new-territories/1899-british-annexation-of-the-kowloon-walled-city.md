@@ -4,11 +4,11 @@ title_zh: "英軍佔領九龍寨城"
 date: 1899-12-27
 year: 1899
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1899", "ai-draft", "british-imperialism", "colonial-history", "kowloon-walled-city", "new-territories", "qing-dynasty"]
+tags: ["evidence-b", "1899", "ai-draft", "british-imperialism", "colonial-history", "kowloon-walled-city", "new-territories", "qing-dynasty"]
 summary: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave. This event created a complex jurisdictional anomaly that would persist for decades."
 description: "On December 27, 1899, British forces unilaterally occupied the Kowloon Walled City, expelling Qing Dynasty officials and establishing full colonial control over the enclave."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,6 +45,16 @@ The annexation marked a decisive assertion of unilateral British authority in vi
 
 - [ ] British troops entered and occupied the Kowloon Walled City on December 27, 1899.
 - [ ] Governor Sir Henry Arthur Blake ordered the expulsion of Qing officials from the Walled City.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1898-1918.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Colonial Office Records, Chamberlain to Blake, 4 December 1899, CO 129/294, pp. 465–479, UK National Archives; Foreign Office Records, FO 17/1397. [link ✗](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/254106173/2024\_Leung\_Chui\_Wa\_1874836\_ethesis.pdf) [link ✓](https://www.cambridge.org/core/books/transborder-fugitives-extradition-and-political-crimes-in-modern-china/notes/59B1946D7EA4BFC994FAFC4436318180) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/294) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=FO%2017/1397)
+- **Grade B:** Kwong, Chi Man, and Tsoi, Yiu Lun (2014), *Eastern Fortress: A Military History of Hong Kong, 1840-1970*, Hong Kong University Press, ISBN: 9789888208715. [ISBN ✓](https://openlibrary.org/isbn/9789888208715) [link ✗](https://kclpure.kcl.ac.uk/portal/files/135167856/2020\_Kwan\_Ching\_Yin\_Nathan\_1563225\_ethesis.pdf)
+- **Grade C:** Antiquities and Monuments Office, "Kowloon Walled City Park", Leisure and Cultural Services Department, https://www.amo.gov.hk. [site ?](https://www.amo.gov.hk)
+
+**Disputes or myths:** Popular narrative asserts the Kowloon Walled City remained an extraterritorial enclave by continuous treaty agreement, but Britain unilaterally revoked Qing administrative jurisdiction via Order in Council in late 1899.
 
 ## Evidence
 

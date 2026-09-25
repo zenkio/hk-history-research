@@ -4,10 +4,11 @@ title_zh: "城門水塘落成"
 date: 1936-01-30
 year: 1936
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1936", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "shing-mun-reservoir", "water-supply"]
+tags: ["evidence-none", "1936", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "shing-mun-reservoir", "water-supply"]
 summary: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
 description: "In January 1936, the completion of the Shing Mun Reservoir significantly expanded Hong Kong's water storage capacity to address the needs of a rapidly growing population."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The completion of the Shing Mun Reservoir marked a major milestone in Hong Kong'
 
 - [ ] Did the official opening ceremony take place precisely on January 30, 1936?
 - [ ] What were the exact displacement figures for local villagers in the Shing Mun valley?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed to confirm the exact date of the Shing Mun Reservoir's official opening ceremony and the specific number of villagers displaced from the Shing Mun valley.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

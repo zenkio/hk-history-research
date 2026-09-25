@@ -3,7 +3,7 @@
   "used": {
     "Gemini 3.1 Flash Lite": 28,
     "Gemini 3.5 Flash Lite": 324,
-    "Gemma 4 31B": 198,
+    "Gemma 4 31B": 245,
     "Gemini 2.5 Flash": 1,
     "Gemini 2.5 Flash Lite": 1,
     "Gemini 3.8 Flash": 3,
@@ -11,9 +11,9 @@
     "Gemini 3.6 Flash": 4,
     "Gemini 3.5 Flash": 4,
     "Gemini 3 Flash": 3,
-    "OpenRouter Qwen": 9,
-    "OpenRouter DeepSeek": 9,
-    "Gemma 4 26B": 81
+    "OpenRouter Qwen": 14,
+    "OpenRouter DeepSeek": 14,
+    "Gemma 4 26B": 194
   },
   "parked": {
     "Gemini 2.5 Flash": "unavailable as gemini-2.5-flash: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models",
@@ -94,8 +94,8 @@
   ],
   "provider_used": {
     "openrouter": {
-      "day": "2026-09-24",
-      "count": 18
+      "day": "2026-09-25",
+      "count": 10
     }
   }
 }

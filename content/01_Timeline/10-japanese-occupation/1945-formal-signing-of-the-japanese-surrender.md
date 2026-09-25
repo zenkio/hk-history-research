@@ -4,10 +4,11 @@ title_zh: "日軍投降儀式正式簽署"
 date: 1945-09-16
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "british-administration", "government-house", "japanese-occupation", "surrender", "world-war-ii"]
+tags: ["evidence-none", "1945", "ai-draft", "british-administration", "government-house", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
 description: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ This event symbolized the restoration of pre-war sovereignty and the closure of 
 
 - [ ] The exact signatures and military ranks present at the Government House surrender ceremony on September 16, 1945.
 - [ ] The precise sequence of events leading Rear Admiral Harcourt to establish the initial military administration at Government House.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Specific historical records or accounts detailing the surrender ceremony on September 16, 1945, including the participants' ranks and the specific actions of Rear Admiral Harcourt, are required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "赤柱拘留營的建立"
 date: 1942-01-19
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "battle-of-hong-kong", "civilian-internees", "japanese-occupation", "stanley-internment-camp", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "battle-of-hong-kong", "civilian-internees", "japanese-occupation", "stanley-internment-camp", "world-war-ii"]
 summary: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on **January 19, 1942**, confining nearly 3,000 British and Allied civilians under increasingly harsh conditions."
 description: "Following the fall of Hong Kong in December 1941, Japanese authorities established the Stanley Internment Camp on January 19, 1942, confining nearly 3,000 British and Allied civilians under increasingly harsh…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The establishment of Stanley Internment Camp marked a profound disruption of the
 
 - [ ] Exact census figures of civilian internees transferred to Stanley on January 19, 1942
 - [ ] The precise administrative orders issued by the Japanese military regarding the segregation of Western civilians
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence is needed regarding the exact census figures for civilian internees transferred to Stanley on January 19, 1942, and the specific Japanese military administrative orders concerning the segregation of Western civilians.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "香港重光"
 date: 1945-08-30
 year: 1945
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["photo-corroborated", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "liberation", "postwar-recovery", "postwar-refugees", "world-war-ii"]
+tags: ["evidence-none", "photo-corroborated", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "liberation", "postwar-recovery", "postwar-refugees", "world-war-ii"]
 summary: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
 description: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -67,6 +68,14 @@ Corroborates: It visually documents the end of the Japanese military occupation 
 
 *The vehicle deck of a Landing Ship Tank (LST) transporting military equipment for the British Reoccupation of Hong Kong in 1945.* (contemporary photo). No 9 Army Film &amp; Photographic Unit, Watson R (Sergeant), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HM_LST-403_en-route_to_participate_in_the_British_Reoccupation_of_Hong_Kong,_1945_SE4950.jpg).
 Corroborates: It corroborates the involvement of British naval forces and the transport of military assets to reclaim Hong Kong after the Japanese surrender.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting Rear-Admiral Cecil Harcourt's arrival in August 1945 and the surrender ceremony in September 1945 is required.
 
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

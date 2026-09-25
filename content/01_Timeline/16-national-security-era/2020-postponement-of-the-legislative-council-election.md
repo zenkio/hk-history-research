@@ -4,7 +4,7 @@ title_zh: "延期立法會選舉"
 date: 2020-07-31
 year: 2020
 era: "The National Security Law era"
-tags: ["2020", "ai-draft", "carrie-lam", "covid-19", "election-postponement", "legislative-council", "national-security-era", "national-security-law"]
+tags: ["photo-corroborated", "2020", "ai-draft", "carrie-lam", "covid-19", "election-postponement", "legislative-council", "national-security-era", "national-security-law"]
 summary: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
 description: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
 confidence: ai-draft
@@ -43,5 +43,18 @@ The delay of the election marked a watershed moment in Hong Kong's constitutiona
 
 - [ ] The exact invocation of the Emergency Regulations Ordinance by the Chief Executive on July 31, 2020
 - [ ] The subsequent ruling by the NPCSC regarding the extension of the legislative term
+
+## Photos from this period
+
+![A portrait of Starry Lee Wai-king, a prominent member of the Legislative Council.](https://upload.wikimedia.org/wikipedia/commons/9/9a/Starry_Lee_Wai-king_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A portrait of Starry Lee Wai-king, a prominent member of the Legislative Council.* (contemporary photo). 湯惠芸/海彥, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Starry_Lee_Wai-king_2016.jpg).
+Corroborates: It provides a visual of a key political figure within the institution affected by the election postponement.
+
+![A portrait of Starry Lee, a DAB legislator.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Starry_Lee.jpg/960px-Starry_Lee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A portrait of Starry Lee, a DAB legislator.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Starry_Lee.jpg).
+Corroborates: It depicts a prominent legislator of the Legislative Council, which was the subject of the election postponement.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

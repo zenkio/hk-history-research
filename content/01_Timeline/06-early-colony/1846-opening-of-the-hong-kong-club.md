@@ -4,11 +4,11 @@ title_zh: "香港會所開張"
 date: 1846-05-26
 year: 1846
 era: "The early colony"
-tags: ["evidence-none", "1846", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-club", "social-history"]
+tags: ["evidence-a", "1846", "ai-draft", "british-empire", "colonial-history", "early-colony", "hong-kong-club", "social-history"]
 summary: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
 description: "Established on May 26, 1846, the Hong Kong Club served as the premier social and networking hub for the colony's British elite, reflecting the stark social and racial divisions of early colonial society."
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,6 +43,16 @@ The opening of the club marked the consolidation of a distinct British expatriat
 
 - [ ] The exact founding date of the Hong Kong Club as May 26, 1846
 - [ ] The original membership criteria and restrictions during the 1840s
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Despatches on Hong Kong Club Land Grant, TNA CO 129/30 &amp; CO 129/31; *The China Mail* (May 1846). [link ✓](https://www.cambridge.org/core/books/multiracial-britishness/britishers/4679039C1E98133CB2EA6DCBB2A55C04) [link ✓](https://gwulo.com/node/5497) [link ✓](https://lib.hku.hk/cgi-bin/co129/129227.pl?keyword=hong%20kong) [link ✗](https://research-information.bris.ac.uk/files/214002594/Final\_Copy\_2019\_10\_01\_Chan\_C\_PhD\_Redacted.pdf) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/30) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/31)
+- **Grade B:** Mizuta, S. (2023), "Commercial Architecture of 19th Century Hong Kong," *Scholarly Review*, ISSN:2767-1844. [link ✓](https://www.scholarlyreview.org/article/127392-harmony-and-duality-the-british-chinese-dialogue-in-19th-century-hong-kong-visual-culture-and-urban-spaces.pdf) [link ✗](https://scholars.hkbu.edu.hk/files/55021392/OA-0352.pdf)
+- **Grade C:** Gwulo: Old Hong Kong History Database, https://gwulo.com/node/5497. [link ✓](https://gwulo.com/node/5497)
+
+**Disputes or myths:** Disproves the belief that elite non-European merchants could gain entry if wealthy; membership strictly excluded Chinese, Baghdadi Jews, Parsees, and women for decades.
 
 ## Evidence
 

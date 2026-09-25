@@ -4,10 +4,11 @@ title_zh: "孫中山在香港大學的演講"
 date: 1923-02-20
 year: 1923
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1923", "ai-draft", "british-hong-kong", "chinese-nationalism", "hku", "interwar", "sun-yat-sen"]
+tags: ["evidence-none", "1923", "ai-draft", "british-hong-kong", "chinese-nationalism", "hku", "interwar", "sun-yat-sen"]
 summary: "In February 1923, Republic of China founding father Sun Yat-sen delivered a landmark speech at the University of Hong Kong, reflecting on how the colony's orderly environment directly inspired his revolutionary ambitions."
 description: "In February 1923, Republic of China founding father Sun Yat-sen delivered a landmark speech at the University of Hong Kong, reflecting on how the colony's orderly environment directly inspired his revolutionary…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The address remains a frequently cited text in the historiography of modern Hong
 
 - [ ] Sun Yat-sen delivered a speech at the University of Hong Kong on February 20, 1923
 - [ ] Sun explicitly stated during the address that his revolutionary ideas were born in Hong Kong due to its good government
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting Sun Yat-sen's address at HKU on February 20, 1923, and the transcript or record of his claims regarding his revolutionary ideas.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,11 +4,11 @@ title_zh: "首次大規模示威與罷工"
 date: 1844-11-04
 year: 1844
 era: "The early colony"
-tags: ["evidence-none", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "labor-strike", "protest"]
+tags: ["evidence-b", "1844", "ai-draft", "colonial-history", "early-colony", "hong-kong-history", "labor-strike", "protest"]
 summary: "In **November 1844**, Chinese merchants and laborers in early colonial Hong Kong organized a successful general strike and mass protest against a government registration ordinance and poll tax, compelling the British colonial administration to back down."
 description: "In November 1844, Chinese merchants and laborers in early colonial Hong Kong organized a successful general strike and mass protest against a government registration ordinance and poll tax, compelling the British…"
 confidence: ai-draft
-evidence_grade: none
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,6 +46,16 @@ This event is widely recognized by historians as the first major instance of col
 - [ ] Governor Sir John Francis Davis enacted a specific registration ordinance and poll tax in late 1844.
 - [ ] A coordinated general strike and cessation of commerce occurred on or around November 4, 1844.
 - [ ] The colonial government officially repealed or suspended the ordinance as a direct result of the protests.
+
+## Research notes
+
+> [!note] From Gemini Deep Research (01-1842-1860.md), imported 2026-09-25. References were checked automatically: ✓ verified (DOI/ISBN title matches, or link works), ✗ failed (wrong or unreachable, treat with suspicion), ? not independently verifiable.
+
+- **Grade A:** Hong Kong Ordinance No. 16 of 1844 ("Registration of Inhabitants"), TNA CO 129/6. [link ✗](https://www.tandfonline.com/doi/full/10.1080/03086534.2025.2591814) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/6)
+- **Grade B:** Lowe, Lisa (2015), *The Intimacies of Four Continents*, Duke University Press, DOI:10.1215/9780822375647. [DOI ✓](https://doi.org/10.1215/9780822375647)
+- **Grade C:** Hong Kong Government Reports Online (1842–1941), https://lib.hku.hk/. [site ?](https://lib.hku.hk/) [link ✗](https://www.grs.gov.hk/en/related\_sites.html)
+
+**Disputes or myths:** Overturns the popular notion that early Chinese migrants were politically passive; local traders and laborers effectively organized collective civil disobedience against colonial tax laws.
 
 ## Evidence
 

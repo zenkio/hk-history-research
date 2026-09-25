@@ -4,7 +4,7 @@ title_zh: "鴉片貨船轉移內伶仃島"
 date: 1821-01-01
 year: 1821
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1821", "ai-draft", "british-imperialism", "canton-trade", "first-opium-war", "lintin-island", "opium-war", "smuggling"]
+tags: ["wikipedia-checked", "evidence-none", "1821", "ai-draft", "british-imperialism", "canton-trade", "first-opium-war", "lintin-island", "opium-war", "smuggling"]
 summary: "In **1821**, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the illicit drug trade."
 description: "In 1821, intensified Qing crackdowns on the opium trade at Canton forced foreign merchants to relocate their floating storage depots to Lintin Island, turning the waters surrounding Hong Kong into the epicenter of the…"
 confidence: ai-draft
@@ -42,17 +42,15 @@ The establishment of the Lintin depot system fundamentally transformed the geogr
 - [[02_Entities/Places/canton|Canton (廣州)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- [ ] Exact date and administrative specifics of the 1821 Qing edicts that directly triggered the permanent anchoring of hulks at Lintin Island
-- [ ] The precise timeline when private British firms began utilizing armed receiving hulks compared to the East India Company
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact date and administrative specifics of the 1821 Qing edicts that directly triggered the permanent anchoring of hulks at Lintin Island. The text mentions that merchants moved to Lintin Island following Qing bans, but it does not mention 1821 edicts or the use of hulks.
+- ❔ **not in Wikipedia**: The precise timeline when private British firms began utilizing armed receiving hulks compared to the East India Company. The reference text does not mention private British firms, armed receiving hulks, or the East India Company.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-24; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Zhuhai](https://en.wikipedia.org/wiki/Zhuhai)
 
-**Still needed:** Evidence for both the 1821 Qing edicts and the specific timeline regarding the use of receiving hulks by private firms versus the East India Company is still needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -94,6 +94,14 @@ Site config is in `quartz.config.default.yaml`. Key settings:
 
 **Output format:** Files written as `.md` with YAML frontmatter containing `title`, `tags`, `summary`, `confidence`, `ingested`, `date`.
 
+## Git workflow
+
+- The owner reviews and merges every pull request; Claude opens them and never pushes to `main`.
+- **One branch per pull request.** Start each new piece of work on a new branch from the latest
+  `origin/main` (`git fetch origin && git checkout -b claude/<short-topic> origin/main`). Never reuse
+  a branch whose pull request has been merged, even for a follow-up.
+- The pipeline commits to `main` every hour, so fetch right before branching and before pushing.
+
 ## Important Constraints
 
 - The `quartz/` directory MUST be committed to git — the build fails without it since the package is private and not available from npm.

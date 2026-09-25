@@ -4,7 +4,7 @@ title_zh: "一九六五年香港銀行危機"
 date: 1965-02-06
 year: 1965
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1965", "ai-draft", "banking-crisis", "financial-regulation", "hang-seng-bank", "hsbc", "postwar-refugees"]
+tags: ["wikipedia-checked", "evidence-none", "1965", "ai-draft", "banking-crisis", "financial-regulation", "hang-seng-bank", "hsbc", "postwar-refugees"]
 summary: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
 description: "In February 1965, a severe financial panic triggered massive bank runs across local Chinese-owned institutions in Hong Kong, leading to major regulatory overhauls and a shift in the territory's banking landscape."
 confidence: ai-draft
@@ -36,17 +36,15 @@ The crisis exposed vulnerabilities in Hong Kong's loosely regulated financial sy
 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date and sequence of the run on Ming Tak Bank on February 6, 1965
-- ❔ The exact percentage and terms under which HSBC acquired its stake in Hang Seng Bank
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact date and sequence of the run on Ming Tak Bank on February 6, 1965. The reference text does not mention Ming Tak Bank or a bank run occurring in 1965.
+- ❔ **not in Wikipedia**: The exact percentage and terms under which HSBC acquired its stake in Hang Seng Bank. The reference text does not mention Hang Seng Bank or any acquisition of its shares by HSBC.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: History of banking in Hong Kong](https://en.wikipedia.org/wiki/History_of_banking_in_Hong_Kong)
 
-**Still needed:** Sources specifically detailing the Hong Kong Banking Crisis of February 1965 are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

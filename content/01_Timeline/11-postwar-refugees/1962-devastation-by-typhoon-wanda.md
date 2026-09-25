@@ -4,7 +4,7 @@ title_zh: "溫黛颱風的災難"
 date: 1962-09-01
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1962", "ai-draft", "disaster-relief", "postwar-refugees", "squatter-homes", "typhoon-wanda", "urban-planning", "weather-disaster"]
+tags: ["wikipedia-checked", "evidence-none", "1962", "ai-draft", "disaster-relief", "postwar-refugees", "squatter-homes", "typhoon-wanda", "urban-planning", "weather-disaster"]
 summary: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements. This disaster exposed the vulnerabilities of the rapidly expanding postwar population and accelerated long-term improvements in local emergency infrastructure and housing policy."
 description: "In September 1962, Typhoon Wanda struck Hong Kong with catastrophic force, resulting in over 130 deaths and widespread destruction of squatter settlements."
 confidence: ai-draft
@@ -36,17 +36,17 @@ The immediate aftermath of Typhoon Wanda forced a critical reassessment of gover
 - [[02_Entities/Places/sha-tin|Sha Tin (沙田)]]
 - [[02_Entities/Places/tsuen-wan|Tsuen Wan (荃灣)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify the exact official death toll and missing persons count reported by the colonial government following Typhoon Wanda.
-- ❔ Check contemporary government records regarding the precise wind speeds and storm surge levels recorded at the Royal Observatory on September 1, 1962.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Verify the exact official death toll and missing persons count reported by the colonial government following Typhoon Wanda. The reference text does not provide the death toll or missing persons count for Typhoon Wanda.
+- ❔ **not in Wikipedia**: Check contemporary government records regarding the precise wind speeds and storm surge levels recorded at the Royal Observatory on September 1, 1962. The reference text does not contain any information regarding weather records from September 1, 1962.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Typhoon Hato](https://en.wikipedia.org/wiki/Typhoon_Hato), [Wikipedia: 1965 Pacific typhoon season](https://en.wikipedia.org/wiki/1965_Pacific_typhoon_season)
 
-**Still needed:** Official colonial government reports and meteorological records from the Royal Observatory from September 1962 are needed to verify the death toll, missing persons, wind speeds, and storm surge levels.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Track analysis and storm surge investigation of 2017 Typhoon Hato: were the warning signals issued in Macau and Hong Kong timed appropriately?](https://doi.org/10.1080/17499518.2018.1465573) (DOI)
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

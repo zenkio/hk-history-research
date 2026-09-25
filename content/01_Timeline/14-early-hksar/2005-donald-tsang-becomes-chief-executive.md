@@ -4,10 +4,11 @@ title_zh: "曾蔭權就任行政長官"
 date: 2005-06-21
 year: 2005
 era: "The early HKSAR"
-tags: ["2005", "ai-draft", "chief-executive", "donald-tsang", "early-hksar", "hksar-history", "hong-kong-politics"]
+tags: ["evidence-none", "2005", "ai-draft", "chief-executive", "donald-tsang", "early-hksar", "hksar-history", "hong-kong-politics"]
 summary: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
 description: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ By early **2005**, the administration of Hong Kong's first Chief Executive, **Tu
 
 - ❔ Donald Tsang officially took office on June 21, 2005
 - ❔ The election was uncontested due to a lack of sufficient nominations for rival candidates
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence confirming Donald Tsang's appointment or inauguration as the Chief Executive of Hong Kong on June 21, 2005.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

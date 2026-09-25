@@ -4,10 +4,11 @@ title_zh: "北京發表香港一國兩制白皮書"
 date: 2014-06-10
 year: 2014
 era: "Political contention and protest"
-tags: ["2014", "ai-draft", "basic-law", "comprehensive-jurisdiction", "contention", "one-country-two-systems", "white-paper"]
+tags: ["evidence-none", "2014", "ai-draft", "basic-law", "comprehensive-jurisdiction", "contention", "one-country-two-systems", "white-paper"]
 summary: "On June 10, 2014, the State Council of the People's Republic of China released a landmark white paper asserting comprehensive jurisdiction over Hong Kong, a move that intensified local political anxieties."
 description: "On June 10, 2014, the State Council of the People's Republic of China released a landmark white paper asserting comprehensive jurisdiction over Hong Kong, a move that intensified local political anxieties."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The release of the white paper sparked immediate and widespread controversy in H
 - ❔ The State Council published the white paper on June 10, 2014.
 - ❔ The white paper explicitly used the term 'comprehensive jurisdiction' (全面管治權) regarding Beijing's authority over Hong Kong.
 - ❔ The document categorized judges as part of the 'administrators' required to be patriotic.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically addressing the June 10, 2014, White Paper issued by Beijing on Hong Kong is needed.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

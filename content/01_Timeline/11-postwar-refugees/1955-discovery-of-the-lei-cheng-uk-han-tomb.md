@@ -4,7 +4,7 @@ title_zh: "李鄭屋漢墓的發現"
 date: 1955-08-09
 year: 1955
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "photo-corroborated", "1955", "ai-draft", "archaeology", "colonial-history", "han-dynasty", "lei-cheng-uk", "postwar-hong-kong", "postwar-refugees"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1955", "ai-draft", "archaeology", "colonial-history", "han-dynasty", "lei-cheng-uk", "postwar-hong-kong", "postwar-refugees"]
 summary: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese civilization in Hong Kong."
 description: "In August 1955, workers leveling a hillside for resettlement housing in Sham Shui Po uncovered an ancient brick tomb dating to the Eastern Han dynasty, providing tangible archaeological evidence of early Chinese…"
 confidence: ai-draft
@@ -39,26 +39,16 @@ Before this discovery, knowledge of Hong Kong's early history relied heavily on 
 - [[02_Entities/Places/sham-shui-po|Sham Shui Po (深水埗)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Construction workers uncovered the tomb on August 9, 1955.
-- ❔ Over fifty grave goods were recovered from the multi-chamber tomb.
-- ❔ The tomb structure is definitively dated to the Eastern Han dynasty.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Construction workers uncovered the tomb on August 9, 1955. The text states the tomb was discovered in August 1955 while the government was levelling a hill slope, but it does not specify the exact day or the specific people who uncovered it.
+- ❔ **not in Wikipedia**: Over fifty grave goods were recovered from the multi-chamber tomb. While the text states 58 items were found, it describes the tomb as cross-shaped rather than multi-chamber.
+- ❔ **not in Wikipedia**: The tomb structure is definitively dated to the Eastern Han dynasty. The text states it is believed the tomb was built during the Eastern Han dynasty, but does not specify if the dating is definitive.
 
-![A large crowd gathers at the hillside where the Lei Cheng Uk Han Tomb was discovered in 1955.](https://upload.wikimedia.org/wikipedia/commons/4/4c/Lcutomb_1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: Lei Cheng Uk Han Tomb Museum](https://en.wikipedia.org/wiki/Lei_Cheng_Uk_Han_Tomb_Museum)
 
-*A large crowd gathers at the hillside where the Lei Cheng Uk Han Tomb was discovered in 1955.* (contemporary photo). Sing Pao, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lcutomb_1955.jpg).
-Corroborates: It provides a visual record of the discovery of the ancient tomb as described in the event.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence is needed to verify the specific discovery date, the number of grave goods recovered, and the definitive dating of the Lei Cheng Uk Han Tomb.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

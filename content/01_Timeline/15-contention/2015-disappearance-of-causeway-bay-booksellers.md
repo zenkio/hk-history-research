@@ -4,10 +4,11 @@ title_zh: "銅鑼灣書店股員失蹤事件"
 date: 2015-10-17
 year: 2015
 era: "Political contention and protest"
-tags: ["photo-corroborated", "2015", "ai-draft", "causeway-bay-books", "contention", "cross-border-enforcement", "free-speech", "one-country-two-systems"]
+tags: ["evidence-none", "photo-corroborated", "2015", "ai-draft", "causeway-bay-books", "contention", "cross-border-enforcement", "free-speech", "one-country-two-systems"]
 summary: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the erosion of the 'One Country, Two Systems' framework."
 description: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -74,6 +75,14 @@ Corroborates: The image shows government officials and people involved in the di
 
 *Artist Kacey Wong performs a protest piece where he is bound and gagged to symbolize the disappearances of the Causeway Bay Booksellers.* (contemporary photo). Kacey Wong, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kidnap_by_Kacey_Wong_(cropped).jpg).
 Corroborates: The image illustrates the public protest and the atmosphere of concern surrounding the disappearances.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically naming or detailing the 2015 disappearance of the Causeway Bay Booksellers is required.
 
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -4,10 +4,11 @@ title_zh: "議員宣誓風波失資格"
 date: 2016-10-12
 year: 2016
 era: "Political contention and protest"
-tags: ["photo-corroborated", "2016", "ai-draft", "basic-law", "beijing-intervention", "contention", "disqualification", "legislative-council", "localism", "oath-taking-controversy"]
+tags: ["evidence-none", "photo-corroborated", "2016", "ai-draft", "basic-law", "beijing-intervention", "contention", "disqualification", "legislative-council", "localism", "oath-taking-controversy"]
 summary: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to their disqualification."
 description: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -69,6 +70,14 @@ Corroborates: The image depicts Nathan Law, one of the key figures involved in t
 
 *Nathan Law, a pro-democracy lawmaker, is pictured speaking into a microphone.* (contemporary photo). VOA - Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC13.jpg).
 Corroborates: The image shows one of the key lawmakers who was disqualified due to the oath-taking controversy.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically addressing the 2016 oath-taking controversy and the subsequent disqualification of lawmakers is required.
 
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

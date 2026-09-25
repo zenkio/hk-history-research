@@ -4,7 +4,7 @@ title_zh: "恆生指數股災"
 date: 1973-03-09
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1973", "ai-draft", "financial-regulation", "hang-seng-index", "maclehose-era", "riots-and-reform", "stock-market-crash"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1973", "ai-draft", "financial-regulation", "hang-seng-index", "maclehose-era", "riots-and-reform", "stock-market-crash"]
 summary: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors. The financial disaster exposed the urgent need for tighter regulatory oversight and catalysed significant modernization of the territory's financial infrastructure."
 description: "In March 1973, Hong Kong's unprecedented stock market bubble burst, causing the Hang Seng Index to plummet and wiping out the savings of countless retail investors."
 confidence: ai-draft
@@ -41,18 +41,16 @@ The **1973** crash laid bare the deficiencies of a largely unregulated financial
 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Hang Seng Index peaked at 1,774.96 points on March 9, 1973.
-- ❔ The market index subsequently fell to around 150 points in 1974.
-- ❔ Four distinct stock exchanges were operating in Hong Kong during the early 1970s.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The Hang Seng Index peaked at 1,774.96 points on March 9, 1973. The text mentions the index fell from 1,800 in early 1973, but does not specify a peak of 1,774.96 or a date of March 9.
+- ⚠️ **differs from Wikipedia**: The market index subsequently fell to around 150 points in 1974. The text states the Hong Kong Hang Seng Index fell to close to 300.
+- ✅ **agrees with Wikipedia**: Four distinct stock exchanges were operating in Hong Kong during the early 1970s. The text states that by 1972, Hong Kong had four stock exchanges in operation.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Stock Exchange](https://en.wikipedia.org/wiki/Hong_Kong_Stock_Exchange), [Wikipedia: 1973–1974 stock market crash](https://en.wikipedia.org/wiki/1973%E2%80%931974_stock_market_crash)
 
-**Still needed:** Evidence specifically documenting the Hang Seng Index crash on March 9, 1973, including its causes and market impact.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

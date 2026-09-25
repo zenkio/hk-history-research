@@ -4,10 +4,11 @@ title_zh: "七一大游行與基本法第二十三條立法爭議"
 date: 2003-07-01
 year: 2003
 era: "The early HKSAR"
-tags: ["2003", "ai-draft", "article-23", "civil-society", "early-hksar", "july-1st-march", "one-country-two-systems", "tung-chee-hwa"]
+tags: ["evidence-none", "2003", "ai-draft", "article-23", "civil-society", "early-hksar", "july-1st-march", "one-country-two-systems", "tung-chee-hwa"]
 summary: "On July 1, 2003, over half a million Hong Kong residents marched against proposed national security legislation, leading the government to shelve the bill and catalyzing the city's modern pro-democracy movement."
 description: "On July 1, 2003, over half a million Hong Kong residents marched against proposed national security legislation, leading the government to shelve the bill and catalyzing the city's modern pro-democracy movement."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -50,5 +51,13 @@ Historians and political scientists note that the event marked the beginning of 
 - ❔ Exact crowd size estimates provided by police versus organizers on July 1, 2003
 - ❔ The precise sequence of events leading to James Tien's resignation from the Executive Council
 - ❔ The exact date the Article 23 bill was formally withdrawn from the Legislative Council
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the July 1, 2003, protests against the Article 23 National Security Bill is needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

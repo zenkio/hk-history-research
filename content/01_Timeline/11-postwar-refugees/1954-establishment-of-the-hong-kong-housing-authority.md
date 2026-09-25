@@ -4,7 +4,7 @@ title_zh: "香港房屋委員會之成立"
 date: 1954-01-01
 year: 1954
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1954", "ai-draft", "housing-authority", "postwar-recovery", "postwar-refugees", "shek-kip-mei-fire", "social-welfare", "urban-development"]
+tags: ["wikipedia-checked", "evidence-none", "1954", "ai-draft", "housing-authority", "postwar-recovery", "postwar-refugees", "shek-kip-mei-fire", "social-welfare", "urban-development"]
 summary: "In **1954**, the colonial government established the Hong Kong Housing Authority to address severe housing shortages and the proliferation of squatter settlements following rapid postwar population growth. This body marked a pivotal shift toward state-led permanent public housing development."
 description: "In 1954, the colonial government established the Hong Kong Housing Authority to address severe housing shortages and the proliferation of squatter settlements following rapid postwar population growth."
 confidence: ai-draft
@@ -39,17 +39,17 @@ The creation of the Housing Authority laid the permanent foundation for Hong Kon
 - [[02_Entities/Places/shek-kip-mei|Shek Kip Mei (石硤尾)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The precise legislative mechanism and exact date of the establishment of the Hong Kong Housing Authority in 1954.
-- ❔ The direct administrative relationship between the newly formed Housing Authority and the Resettlement Department in the immediate aftermath of the Shek Kip Mei fire.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The precise legislative mechanism and exact date of the establishment of the Hong Kong Housing Authority in 1954. The text mentions the 1954 Housing Ordinance as the mechanism but does not provide an exact date for the establishment in 1954.
+- ❔ **not in Wikipedia**: The direct administrative relationship between the newly formed Housing Authority and the Resettlement Department in the immediate aftermath of the Shek Kip Mei fire. The text states that both the Resettlement Department and the first Housing Authority were formed in 1954, but it does not describe their administrative relationship at that time.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Housing Authority](https://en.wikipedia.org/wiki/Hong_Kong_Housing_Authority), [Wikipedia: Public housing in Hong Kong](https://en.wikipedia.org/wiki/Public_housing_in_Hong_Kong)
 
-**Still needed:** Evidence detailing the legislative mechanism, the exact establishment date in 1954, and the administrative link between the Housing Authority and the Resettlement Department is required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [The Shek Kip Mei Myth: Squatters, Fires and Colonial Rule in Hong Kong, 1950-1963](https://openlibrary.org/isbn/9789622097926) (ISBN)
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,7 +4,7 @@ title_zh: "一九六七年香港暴動"
 date: 1967-05-06
 year: 1967
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-b", "photo-corroborated", "1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "1967", "1967-riots", "ai-draft", "british-colonial-era", "cultural-revolution", "maclehose-reforms", "riots-and-reform", "urban-terrorism"]
 summary: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British colonial administration."
 description: "Spurred by the Cultural Revolution in mainland China, labor disputes in May 1967 escalated into months of violent confrontations and a massive bomb campaign led by local pro-communist elements against the British…"
 confidence: ai-draft
@@ -44,47 +44,15 @@ The **1967 Leftist Riots** marked a major turning point in Hong Kong’s modern 
 - [[02_Entities/Places/government-house|Government House (香港禮賓府)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact number of real versus dummy bombs planted during the 1967 campaign according to police records.
-- ❔ The precise degree of direct command or financial support given by Beijing authorities to the local struggle committee.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: Exact number of real versus dummy bombs planted during the 1967 campaign according to police records. The text states that police and British Forces experts defused as many as 8,000 bombs, of which 1,100 were real.
+- ❔ **not in Wikipedia**: The precise degree of direct command or financial support given by Beijing authorities to the local struggle committee. The text does not specify the degree of direct command or financial support provided by Beijing to the struggle committee.
 
-![A newspaper clipping from the Wah Kiu Yat Po reporting on leftist students planting bombs and causing traffic disruptions.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg/960px-Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: 1967 Hong Kong riots](https://en.wikipedia.org/wiki/1967_Hong_Kong_riots)
 
-*A newspaper clipping from the Wah Kiu Yat Po reporting on leftist students planting bombs and causing traffic disruptions.* (document). 華僑日報（Wah Kiu Yat Po）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Student_of_leftist_school_planted_bombs_in_Mong_Kok_during_1967_Hong_Kong_riot_wk1967-10-14_p8.jpg).
-Corroborates: It corroborates the massive bomb campaign led by pro-communist elements against the British colonial administration during the 1967 riots.
-
-![A newspaper clipping from July 26, 1967, reporting that three television stars received threatening letters from leftist rioters.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Leung_Shun_Yin%2C_Pong_Bik_Wan%2C_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg/960px-Leung_Shun_Yin%2C_Pong_Bik_Wan%2C_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A newspaper clipping from July 26, 1967, reporting that three television stars received threatening letters from leftist rioters.* (document). 工商日報（Kung Sheung Daily News）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Leung_Shun_Yin,_Pong_Bik_Wan,_Lai_Yuen_Ling_were_intimidated_by_leftist_during_1967_Hong_Kong_riot_ks1967-07-26_p4.jpg).
-Corroborates: It corroborates the atmosphere of intimidation and the targeting of public figures by pro-communist elements during the 1967 riots.
-
-![A confrontation between the Hong Kong Police and protesters during the 1967 Leftist Riots.](https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1967_Hong_Kong_riots-Communists_and_Police.jpg/960px-1967_Hong_Kong_riots-Communists_and_Police.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A confrontation between the Hong Kong Police and protesters during the 1967 Leftist Riots.* (contemporary photo). Roger Wollstadt, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1967_Hong_Kong_riots-Communists_and_Police.jpg).
-Corroborates: It illustrates the violent confrontations and security operations undertaken by the British colonial administration during the riots.
-
-![A newspaper clipping from October 1967 reporting on rewards for reporting hidden explosives and praising the Hong Kong Police.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg/960px-Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A newspaper clipping from October 1967 reporting on rewards for reporting hidden explosives and praising the Hong Kong Police.* (document). 華僑日報（Wah Kiu Yat Po）, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_Police_Force_counter_leftist_terrorist_activities_in_1967_wk1967-10-14_p8.jpg).
-Corroborates: It corroborates the massive bomb campaign and police response during the 1967 Leftist Riots.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Clement Tsz Ming Tong (2016). *The Hong Kong week of 1967 and the emergence of Hong Kong identity through contradistinction*. Journal of the Royal Asiatic Society Hong Kong Branch.](https://openalex.org/W2991204887): Discusses the 1967 riots and their influence on the emergence of Hong Kong identity.
-- [Gary Ka-wai Cheung (2009). *Hong Kong’s Watershed*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888052363): Provides an account and critical analysis of the 1967 riots based on declassified files.
-- [ (2009). *May Days in Hong Kong*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888052561): Studies the causes and impact of the anti-colonial riots that erupted in May 1967.
-- [Victor Fan (2019). *Extraterritoriality: Locating Hong Kong Cinema and Media*.](https://doi.org/10.1515/9781474440448): Discusses Hong Kong cinema and media in the context of the 1967 Leftist Riots.
-
-**Still needed:** No specific claims were provided to evaluate, so it is unclear if additional evidence is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

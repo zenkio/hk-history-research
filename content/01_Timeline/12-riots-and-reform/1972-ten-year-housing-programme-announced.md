@@ -4,7 +4,7 @@ title_zh: "十年建屋計劃公布"
 date: 1972-10-18
 year: 1972
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1972", "ai-draft", "housing-policy", "mac-lehose-era", "new-towns", "public-housing", "riots-and-reform", "urban-development"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1972", "ai-draft", "housing-policy", "mac-lehose-era", "new-towns", "public-housing", "riots-and-reform", "urban-development"]
 summary: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through new public estates and New Towns."
 description: "In October 1972, Governor Sir Murray MacLehose announced an ambitious Ten-Year Housing Programme aimed at providing adequate housing for 1.8 million people, fundamentally transforming Hong Kong's urban landscape through…"
 confidence: ai-draft
@@ -39,18 +39,16 @@ The announcement marked a watershed moment in Hong Kong's socioeconomic governan
 - [[02_Entities/Places/tsuen-wan|Tsuen Wan (荃灣)]]
 - [[02_Entities/Places/shek-kip-mei|Shek Kip Mei (石硤尾)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Governor Sir Murray MacLehose formally announced the Ten-Year Housing Programme on October 18, 1972.
-- ❔ The programme initially aimed to house 1.8 million people over a ten-year period.
-- ❔ The Hong Kong Housing Authority was established in 1973 to consolidate public housing responsibilities.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Governor Sir Murray MacLehose formally announced the Ten-Year Housing Programme on October 18, 1972. The text states that the Government of Hong Kong announced a ten-year plan for the public provision of housing in 1973.
+- ✅ **agrees with Wikipedia**: The programme initially aimed to house 1.8 million people over a ten-year period. The text states that the objective of the ten-year plan was to provide 1.8 million people with "satisfactory accommodation".
+- ⚠️ **differs from Wikipedia**: The Hong Kong Housing Authority was established in 1973 to consolidate public housing responsibilities. The text states that the first Housing Authority was formed in 1954 through the enactment of the 1954 Housing Ordinance.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Public housing in Hong Kong](https://en.wikipedia.org/wiki/Public_housing_in_Hong_Kong), [Wikipedia: Housing in Hong Kong](https://en.wikipedia.org/wiki/Housing_in_Hong_Kong)
 
-**Still needed:** Evidence specifically discussing the 1972 announcement of the Ten-Year Housing Programme in Hong Kong is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

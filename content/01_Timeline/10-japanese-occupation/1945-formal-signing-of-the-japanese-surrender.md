@@ -4,7 +4,7 @@ title_zh: "日軍投降儀式正式簽署"
 date: 1945-09-16
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["evidence-none", "1945", "ai-draft", "british-administration", "government-house", "japanese-occupation", "surrender", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "1945", "ai-draft", "british-administration", "government-house", "japanese-occupation", "surrender", "world-war-ii"]
 summary: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
 description: "On September 16, 1945, Japanese military commanders officially signed the instrument of surrender at Government House, bringing a formal end to the three years and eight months of Japanese occupation in Hong Kong."
 confidence: ai-draft
@@ -38,17 +38,15 @@ This event symbolized the restoration of pre-war sovereignty and the closure of 
 - [[02_Entities/Places/government-house|Government House (港督府)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact signatures and military ranks present at the Government House surrender ceremony on September 16, 1945.
-- ❔ The precise sequence of events leading Rear Admiral Harcourt to establish the initial military administration at Government House.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact signatures and military ranks present at the Government House surrender ceremony on September 16, 1945. The text mentions Rear Admiral Harcourt, Maj.-Gen. Umekichi Okada, and Vice Admiral Ruitaro Fujita were present, but does not provide a list of exact signatures.
+- ❔ **not in Wikipedia**: The precise sequence of events leading Rear Admiral Harcourt to establish the initial military administration at Government House. The text mentions Harcourt's arrival on August 30 and the surrender ceremony on September 16, but does not detail a precise sequence for establishing a military administration at Government House.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Japanese occupation of Hong Kong](https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong)
 
-**Still needed:** Specific historical records or accounts detailing the surrender ceremony on September 16, 1945, including the participants' ranks and the specific actions of Rear Admiral Harcourt, are required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "著名藝人張國榮逝世"
 date: 2003-04-01
 year: 2003
 era: "The early HKSAR"
-tags: ["2003", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-cinema", "leslie-cheung", "sars-2003"]
+tags: ["evidence-none", "2003", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-cinema", "leslie-cheung", "sars-2003"]
 summary: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
 description: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The sudden loss of such a major cultural figure compounded the collective trauma
 - ❔ Leslie Cheung died on April 1, 2003, after falling from the Mandarin Oriental Hotel in Central.
 - ❔ Cheung was pronounced dead at Queen Mary Hospital at the age of 46.
 - ❔ A suicide note mentioning severe depression was recovered by the police.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the death of pop icon Leslie Cheung on April 1, 2003, is needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

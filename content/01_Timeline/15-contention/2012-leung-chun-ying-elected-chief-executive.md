@@ -4,10 +4,11 @@ title_zh: "梁振英當選香港行政長官"
 date: 2012-03-25
 year: 2012
 era: "Political contention and protest"
-tags: ["2012", "ai-draft", "beijing-relations", "chief-executive-election", "contention", "leung-chun-ying", "localism", "umbrella-movement"]
+tags: ["evidence-none", "2012", "ai-draft", "beijing-relations", "chief-executive-election", "contention", "leung-chun-ying", "localism", "umbrella-movement"]
 summary: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang. His victory marked the beginning of a deeply polarized political era that would see intensifying debates over democratic reform and local identity."
 description: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ Leung's tenure as Chief Executive is widely viewed by historians and political a
 - ❔ Leung Chun-ying received 689 votes from the Election Committee on March 25, 2012.
 - ❔ Henry Tang received 285 votes and Albert Ho received 42 votes in the same election.
 - ❔ Leung Chun-ying assumed office as Chief Executive on July 1, 2012.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 2012 Chief Executive election, such as the election results, the candidates, or the specific political events surrounding Leung Chun-ying's victory.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

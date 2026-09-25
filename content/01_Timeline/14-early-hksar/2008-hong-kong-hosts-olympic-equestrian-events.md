@@ -4,10 +4,11 @@ title_zh: "香港主辦奧運馬術比賽"
 date: 2008-08-08
 year: 2008
 era: "The early HKSAR"
-tags: ["2008", "ai-draft", "beijing-olympics", "early-hksar", "equestrian-events", "one-country-two-systems", "patriotism"]
+tags: ["evidence-b", "2008", "ai-draft", "beijing-olympics", "early-hksar", "equestrian-events", "one-country-two-systems", "patriotism"]
 summary: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the city."
 description: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,16 @@ At the same time, the event sparked diverse political interpretations regarding 
 
 - ❔ Equine disease control regulations were the primary reason for moving the equestrian events to Hong Kong.
 - ❔ The International Olympic Committee officially rated the Hong Kong equestrian venues among the best in Olympic history.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Glos Ho (2012). *Olympic culture shock: when equestrianism galloped to Hong Kong*. Asia Pacific Journal of Sport and Social Science.](https://doi.org/10.1080/21640629.2012.681889) (claims 1): It directly discusses Hong Kong co-hosting the 2008 Olympic equestrian events.
+- [Brian Bridges (2011). *The making of a modest mega-event: Hong Kong and the 2009 EastAsian games*. The International Journal of the History of Sport.](https://doi.org/10.1080/09523367.2011.626692) (claims 1): It mentions Hong Kong's involvement in hosting the 2008 Olympic equestrian events.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

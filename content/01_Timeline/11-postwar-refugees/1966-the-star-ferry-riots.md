@@ -4,7 +4,7 @@ title_zh: "天星小輪加價暴動"
 date: 1966-04-04
 year: 1966
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "photo-corroborated", "1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1960s", "1966", "ai-draft", "british-colonial-rule", "hong-kong-history", "postwar-refugees", "protests", "star-ferry-riots"]
 summary: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 description: "In April 1966, a proposal to increase Star Ferry fares by five cents sparked widespread protests and civil unrest in Hong Kong, reflecting deep-seated socioeconomic grievances under British colonial administration."
 confidence: ai-draft
@@ -43,26 +43,18 @@ The Star Ferry Riots marked a turning point in Hong Kong's postwar history. Whil
 - [[02_Entities/Places/tsim-sha-tsui|Tsim Sha Tsui (尖沙咀)]]
 - [[02_Entities/Places/yau-ma-tei|Yau Ma Tei (油麻地)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date So Sau-chung began his hunger strike at the Star Ferry pier
-- ❔ The precise number of casualties and arrests recorded during the April 1966 disturbances
-- ❔ The specific findings and recommendations of the Kowloon Disturbances 1966 Commission of Inquiry
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact date So Sau-chung began his hunger strike at the Star Ferry pier. The text states he began his hunger strike on the morning of 4 April.
+- ❔ **not in Wikipedia**: The precise number of casualties and arrests recorded during the April 1966 disturbances. The text does not provide the number of casualties or the total number of arrests, only the number of people brought before courts and sentenced.
+- ✅ **agrees with Wikipedia**: The specific findings and recommendations of the Kowloon Disturbances 1966 Commission of Inquiry. The text states the inquiry found social insecurity and distrust were key causes and recommended the creation of the function of district officers.
 
-![A petition form created by Elsie Elliot to oppose the increase in public transport fares in 1966.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Elliot_petition.jpg/960px-Elliot_petition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: 1966 Hong Kong riots](https://en.wikipedia.org/wiki/1966_Hong_Kong_riots), [Wikipedia: Star Ferry](https://en.wikipedia.org/wiki/Star_Ferry)
 
-*A petition form created by Elsie Elliot to oppose the increase in public transport fares in 1966.* (document). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elliot_petition.jpg).
-Corroborates: It corroborates the widespread public opposition and organized protests against the proposed Star Ferry fare increase.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence specifically discussing the Star Ferry Riots of April 4, 1966, is needed.
-
+- ✓ [Remaking Places and Fashioning an Opposition Discourse: Struggle over the Star Ferry Pier and the Queen's Pier in Hong Kong](https://doi.org/10.1068/d16409) (DOI)
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,10 +4,11 @@ title_zh: "港珠澳大橋開通"
 date: 2018-10-23
 year: 2018
 era: "Political contention and protest"
-tags: ["photo-corroborated", "2018", "ai-draft", "contention", "economy", "greater-bay-area", "infrastructure", "regional-integration", "transportation"]
+tags: ["evidence-b", "photo-corroborated", "2018", "ai-draft", "contention", "economy", "greater-bay-area", "infrastructure", "regional-integration", "transportation"]
 summary: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta. The megaproject was designed to advance regional integration, though it sparked considerable debate over costs, utility, and political autonomy."
 description: "On October 23, 2018, the Hong Kong-Zhuhai-Macau Bridge officially opened, physically connecting Hong Kong, Macau, and Zhuhai across the Pearl River Delta."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -56,6 +57,21 @@ The bridge physically integrated Hong Kong deeper into the economic apparatus of
 
 *A gold HZM Bridge Shuttle Bus is pictured in Hong Kong a few days before the official opening of the Hong Kong-Zhuhai-Macau Bridge.* (contemporary photo). N509FZ, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:VR5910_at_Hung_Hom_Ferry_(20181020084026).jpg).
 Corroborates: It illustrates the specialized transport services established to facilitate travel across the new bridge connection.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Xiangdong Hu, Shengjun Deng, Hui Ren (2016). *In Situ Test Study on Freezing Scheme of Freeze-Sealing Pipe Roof Applied to the Gongbei Tunnel in the Hong Kong-Zhuhai-Macau Bridge*. Applied Sciences.](https://doi.org/10.3390/app7010027) (claims 1): Discusses the engineering and construction techniques used for a tunnel in the bridge.
+- [Aimin Sha, Wei Jiang, Jinhuan Shan (2022). *Pavement structure and materials design for sea-crossing bridges and tunnel: Case study of the Hong Kong–Zhuhai–Macau Bridge*. Journal of Road Engineering.](https://doi.org/10.1016/j.jreng.2022.05.002) (claims 1): Discusses the design and materials used in the bridge's construction.
+- [Yang Song (2018). *The Strategy of Hong Kong-Zhuhai-Macao Economic Integration Development under the Background of Hong Kong-Zhuhai-Macao Bridge*. Proceedings of the 3rd International Conference on Contemporary Education, Social Sciences and Humanities (ICCESSH 2018).](https://doi.org/10.2991/iccessh-18.2018.219) (claims 1): Discusses the economic impact of the bridge's opening.
+- [Xinghong Jiang, Qing Lang, Qiang Jing (2022). *An Improved Wavelet Threshold Denoising Method for Health Monitoring Data: A Case Study of the Hong Kong-Zhuhai-Macao Bridge Immersed Tunnel*. Applied Sciences.](https://doi.org/10.3390/app12136743) (claims 1): Discusses the health monitoring systems for the bridge's immersed tunnel.
+
+**Still needed:** Evidence confirming the specific opening date of 2018-10-23 is needed.
 
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

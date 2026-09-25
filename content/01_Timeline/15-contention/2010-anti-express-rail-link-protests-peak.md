@@ -4,10 +4,11 @@ title_zh: "反對高鐵撥款示威達到高峰"
 date: 2010-01-16
 year: 2010
 era: "Political contention and protest"
-tags: ["2010", "ai-draft", "contention", "express-rail-link", "infrastructure", "localism", "protests", "youth-activism"]
+tags: ["evidence-none", "2010", "ai-draft", "contention", "express-rail-link", "infrastructure", "localism", "protests", "youth-activism"]
 summary: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political activism."
 description: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The events of January 2010 are widely viewed by historians and political analyst
 
 - ❔ The exact number of demonstrators gathered outside the Legislative Council complex on January 16, 2010.
 - ❔ The precise procedural steps and voting tally during the Finance Committee meeting on the day of the funding approval.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting or analyzing the 2010 Anti-Express Rail Link protests is required.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

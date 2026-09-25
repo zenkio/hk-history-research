@@ -4,10 +4,11 @@ title_zh: "元朗襲擊事件動搖公眾信任"
 date: 2019-07-21
 year: 2019
 era: "Political contention and protest"
-tags: ["2019", "2019-protests", "721-incident", "ai-draft", "contention", "new-territories", "police-trust", "yuen-long-attack"]
+tags: ["evidence-none", "2019", "2019-protests", "721-incident", "ai-draft", "contention", "new-territories", "police-trust", "yuen-long-attack"]
 summary: "On July 21, 2019, a violent attack by armed men against commuters and protesters at the Yuen Long MTR station severely damaged public trust in the police and deepened the city's political crisis."
 description: "On July 21, 2019, a violent attack by armed men against commuters and protesters at the Yuen Long MTR station severely damaged public trust in the police and deepened the city's political crisis."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The **July 21 incident** marked a watershed moment in the **2019** protests. Whi
 
 - ❔ The exact timeline of emergency calls made to the Yuen Long police station and the corresponding police dispatch logs.
 - ❔ Official and independent investigations regarding the extent of coordination between the attackers and local community or political figures.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Yuen Long attack on July 21, 2019, and its effect on public trust is needed.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

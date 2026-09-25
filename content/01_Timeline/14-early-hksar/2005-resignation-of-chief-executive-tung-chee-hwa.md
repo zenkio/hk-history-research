@@ -4,10 +4,11 @@ title_zh: "董建華辭任行政長官"
 date: 2005-03-12
 year: 2005
 era: "The early HKSAR"
-tags: ["2005", "ai-draft", "chief-executive", "early-hksar", "hksar-history", "political-crisis", "resignation", "tung-chee-hwa"]
+tags: ["evidence-b", "2005", "ai-draft", "chief-executive", "early-hksar", "hksar-history", "political-crisis", "resignation", "tung-chee-hwa"]
 summary: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public popularity."
 description: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,15 @@ The resignation marked a watershed moment in the political history of the early 
 
 - ❔ Tung Chee-hwa officially submitted his resignation on March 12, 2005, citing health reasons.
 - ❔ Tung was appointed as a Vice-Chairman of the CPPCC shortly after stepping down.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Byt Tai (2005). *A Tale of the Unexpected: Tung's Resignation and the Ensuing Constitutional Controversy*. The HKU Scholars Hub (University of Hong Kong).](https://openalex.org/W2249231621) (claims 1): It specifically addresses Tung Chee-hwa's resignation in March 2005 and the related constitutional controversy.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

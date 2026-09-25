@@ -4,10 +4,11 @@ title_zh: "廣深港高速鐵路香港段開幕及實施一地兩檢"
 date: 2018-09-23
 year: 2018
 era: "Political contention and protest"
-tags: ["2018", "ai-draft", "co-location-scheme", "contention", "high-speed-rail", "legal-controversy", "transportation", "west-kowloon-station"]
+tags: ["evidence-none", "2018", "ai-draft", "co-location-scheme", "contention", "high-speed-rail", "legal-controversy", "transportation", "west-kowloon-station"]
 summary: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
 description: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The implementation of the co-location arrangement marked a major milestone in ph
 
 - ❔ The Guangzhou-Shenzhen-Hong Kong Express Rail Link officially opened on September 23, 2018.
 - ❔ The co-location scheme established a Mainland Port Area within West Kowloon Station subject to mainland Chinese jurisdiction.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence concerning the specific opening of the Hong Kong High-Speed Rail Link in September 2018 and details regarding the implementation of the co-location scheme is required.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

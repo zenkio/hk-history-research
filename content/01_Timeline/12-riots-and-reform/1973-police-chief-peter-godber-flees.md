@@ -4,7 +4,7 @@ title_zh: "總警司葛柏潛逃事件"
 date: 1973-06-08
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1973", "ai-draft", "icac", "maclehose-reforms", "peter-godber", "police-corruption", "riots-and-reform"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1973", "ai-draft", "icac", "maclehose-reforms", "peter-godber", "police-corruption", "riots-and-reform"]
 summary: "The **1973** flight of Chief Superintendent **Peter Godber** (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission Against Corruption (ICAC)."
 description: "The 1973 flight of Chief Superintendent Peter Godber (葛柏) from Hong Kong while under investigation for massive corruption sparked intense public fury, directly catalyzing the establishment of the Independent Commission…"
 confidence: ai-draft
@@ -38,18 +38,18 @@ Faced with an escalating crisis that threatened the legitimacy of colonial rule,
 - [[02_Entities/Places/kai-tak-airport|Kai Tak Airport (啟德機場)]]
 - [[02_Entities/Places/london|London (倫敦)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Peter Godber boarded a flight out of Kai Tak Airport on June 8, 1973.
-- ❔ Governor Murray MacLehose announced the creation of the ICAC in October 1973 in direct response to the Godber affair.
-- ❔ Godber was extradited from the United Kingdom back to Hong Kong in 1974.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Peter Godber boarded a flight out of Kai Tak Airport on June 8, 1973. The text states that on 8 June, he walked onto a plane at Kai Tak Airport for London.
+- ⚠️ **differs from Wikipedia**: Governor Murray MacLehose announced the creation of the ICAC in October 1973 in direct response to the Godber affair. The text states that the creation of the ICAC occurred in 1974.
+- ⚠️ **differs from Wikipedia**: Godber was extradited from the United Kingdom back to Hong Kong in 1974. The text states he was extradited to Hong Kong on 7 January 1975.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Peter Godber](https://en.wikipedia.org/wiki/Peter_Godber), [Wikipedia: Hong Kong Police Force](https://en.wikipedia.org/wiki/Hong_Kong_Police_Force)
 
-**Still needed:** Evidence specifically documenting the identity of Peter Godber, his role as Police Chief, the circumstances of his corruption scandal, and his flight from Hong Kong in 1973.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [The Crusade Against Corruption in Hong Kong in the 1970s: Governor [[Murray MacLehose, Baron MacLehose of Beoch](https://doi.org/10.1177/0920203X13482244) (DOI)
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

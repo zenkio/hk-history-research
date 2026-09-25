@@ -4,7 +4,7 @@ title_zh: "民政主任計劃推行"
 date: 1968-06-18
 year: 1968
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1968", "ai-draft", "colonial-governance", "district-administration", "grassroots-communication", "maclehose-era", "riots-and-reform"]
+tags: ["wikipedia-checked", "evidence-none", "1968", "ai-draft", "colonial-governance", "district-administration", "grassroots-communication", "maclehose-era", "riots-and-reform"]
 summary: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
 description: "In June 1968, the colonial government launched the City District Officer Scheme to improve communication with grassroots communities in the wake of the 1967 riots."
 confidence: ai-draft
@@ -36,17 +36,15 @@ The scheme marked a significant pivot in colonial governance away from pure elit
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact launch date of the City District Officer Scheme was June 18, 1968.
-- ❔ The specific number and boundaries of the initial districts established under the 1968 scheme.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact launch date of the City District Officer Scheme was June 18, 1968. The text states the government established city district offices in 1968, but does not specify the exact date.
+- ❔ **not in Wikipedia**: The specific number and boundaries of the initial districts established under the 1968 scheme. The text mentions the establishment of city district offices in 1968 but does not provide the number of districts or their boundaries.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: District councils of Hong Kong](https://en.wikipedia.org/wiki/District_councils_of_Hong_Kong)
 
-**Still needed:** Evidence regarding the establishment, purpose, or specific details of the City District Officer (CDO) scheme launched in 1968 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

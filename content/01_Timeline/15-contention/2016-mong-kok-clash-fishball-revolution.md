@@ -4,10 +4,11 @@ title_zh: "旺角騷亂"
 date: 2016-02-08
 year: 2016
 era: "Political contention and protest"
-tags: ["photo-corroborated", "2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
+tags: ["evidence-none", "photo-corroborated", "2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
 summary: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into hours of street battles between protesters and police."
 description: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -65,6 +66,14 @@ Corroborates: The image illustrates the chaotic scene and emergency response dur
 
 *A street scene at night showing a crowd of people amidst smoke, debris, and loose pavement bricks during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg).
 Corroborates: The image corroborates the description of violent street battles and the chaotic environment of the Mong Kok clash.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the Mong Kok Clash (Fishball Revolution) of February 8, 2016, are required.
 
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -4,10 +4,11 @@ title_zh: "簽署內地與香港關於建立更緊密經貿關係的安排"
 date: 2003-06-29
 year: 2003
 era: "The early HKSAR"
-tags: ["2003", "ai-draft", "cepa", "early-hksar", "economic-recovery", "free-trade", "hksar-history", "sars-2003"]
+tags: ["evidence-b", "2003", "ai-draft", "cepa", "early-hksar", "economic-recovery", "free-trade", "hksar-history", "sars-2003"]
 summary: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial crisis and the SARS outbreak."
 description: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,18 @@ CEPA represented the first free trade agreement concluded by Hong Kong and the f
 
 - ❔ CEPA was officially signed on June 29, 2003.
 - ❔ Tung Chee-hwa and Song Defu were the principal signatories for their respective governments.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Bruno Cabrillac (2004). *A Bilateral Trade Agreement Between Hong Kong and China: CEPA*. China Perspectives.](https://doi.org/10.4000/chinaperspectives.3002): Explicitly confirms the signing of CEPA on June 29, 2003.
+- [Tayden Fung Chan (2020). *The Guangdong–Hong Kong–Macao Greater Bay Area: Enhancing Collaborative Governance of the CEPA Implementation and Regional Integration*. China An International Journal.](https://doi.org/10.1353/chn.2020.0011): Confirms that CEPA was signed between Hong Kong and mainland China in 2003.
+
+**Still needed:** Official government documentation or the full text of the signed agreement.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

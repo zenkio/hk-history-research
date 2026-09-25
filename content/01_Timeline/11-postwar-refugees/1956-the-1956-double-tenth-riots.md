@@ -4,7 +4,7 @@ title_zh: "一九五六年雙十暴動"
 date: 1956-10-10
 year: 1956
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-b", "1956", "ai-draft", "british-colonial-history", "chinese-civil-war", "cold-war", "double-tenth-riots", "kuomintang", "postwar-refugees"]
+tags: ["wikipedia-checked", "evidence-b", "1956", "ai-draft", "british-colonial-history", "chinese-civil-war", "cold-war", "double-tenth-riots", "kuomintang", "postwar-refugees"]
 summary: "The 1956 Double Tenth Riots were severe civil disturbances in Hong Kong sparked by political friction between pro-Nationalist and pro-Communist factions, resulting in significant casualties and highlighting deep-seated societal divides."
 description: "The 1956 Double Tenth Riots were severe civil disturbances in Hong Kong sparked by political friction between pro-Nationalist and pro-Communist factions, resulting in significant casualties and highlighting deep-seated…"
 confidence: ai-draft
@@ -42,21 +42,15 @@ The riots served as a stark wake-up call for the British colonial administration
 - [[02_Entities/Places/tsuen-wan|Tsuen Wan (荃灣)]]
 - [[02_Entities/Places/sham-shui-po|Sham Shui Po (深水埗)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact casualty figures and death toll reported by the colonial government versus independent estimates
-- ❔ The precise sequence of events regarding the removal of the Nationalist flag at the Li Uk Yew resettlement estate
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact casualty figures and death toll reported by the colonial government versus independent estimates. The text provides total deaths and injuries but does not distinguish between colonial government reports and independent estimates.
+- ❔ **not in Wikipedia**: The precise sequence of events regarding the removal of the Nationalist flag at the Li Uk Yew resettlement estate. The text describes a sequence of events at the Lei Cheng Uk Resettlement Area, but does not mention the Li Uk Yew resettlement estate.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: 1956 Hong Kong riots](https://en.wikipedia.org/wiki/1956_Hong_Kong_riots)
 
-### Scholarship (grade B)
-
-- [Chu Wai Li (2016). *More than a potential threat: The PRC's intervention during the double tenth incident*. Journal of the Royal Asiatic Society Hong Kong Branch.](https://openalex.org/W3094358838) (claims 1, 2): It is a scholarly paper specifically analyzing the 1956 Double Tenth riots and their impact on Hong Kong's security policies.
-
-**Still needed:** Detailed casualty figures and the chronological sequence of the flag removal at the Li Uk Yew estate are still required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

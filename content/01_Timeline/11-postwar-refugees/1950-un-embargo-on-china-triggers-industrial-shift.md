@@ -4,7 +4,7 @@ title_zh: "聯合國對華禁令觸發工業轉型"
 date: 1950-12-16
 year: 1950
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1950", "ai-draft", "entrepot-trade", "industrialisation", "korean-war", "post-war-history", "postwar-refugees", "un-embargo"]
+tags: ["wikipedia-checked", "evidence-none", "1950", "ai-draft", "entrepot-trade", "industrialisation", "korean-war", "post-war-history", "postwar-refugees", "un-embargo"]
 summary: "The imposition of a United Nations trade embargo against China during the Korean War in December 1950 dismantled Hong Kong's traditional entrepôt economy, forcing a rapid and transformative shift toward export-oriented manufacturing."
 description: "The imposition of a United Nations trade embargo against China during the Korean War in December 1950 dismantled Hong Kong's traditional entrepôt economy, forcing a rapid and transformative shift toward export-oriented…"
 confidence: ai-draft
@@ -38,17 +38,15 @@ The embargo is widely viewed by historians as the catalyst for Hong Kong's mirac
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/china|China (中國)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact enforcement mechanisms and local implementation timeline of the UN embargo in Hong Kong in December 1950.
-- ❔ The precise rate of factory establishment and capital migration from Shanghai to Hong Kong immediately following the embargo.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact enforcement mechanisms and local implementation timeline of the UN embargo in Hong Kong in December 1950. The reference text does not mention a UN embargo or any implementation details regarding Hong Kong.
+- ❔ **not in Wikipedia**: The precise rate of factory establishment and capital migration from Shanghai to Hong Kong immediately following the embargo. The reference text does not contain information about factory establishment or capital migration from Shanghai to Hong Kong.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: China–United States relations](https://en.wikipedia.org/wiki/China%E2%80%93United_States_relations)
 
-**Still needed:** Evidence regarding the specific implementation of the 1950 UN embargo in Hong Kong and quantitative data on factory and capital migration from Shanghai to Hong Kong is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

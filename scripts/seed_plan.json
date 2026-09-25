@@ -2011,7 +2011,8 @@
       "date": "1945-08-30",
       "summary": "Rear-Admiral Cecil Harcourt arrived with a British fleet, liberating the territory and restoring British rule over Hong Kong.",
       "status": "done",
-      "file": "10-japanese-occupation/1945-royal-navy-liberation-of-hong-kong.md"
+      "file": "10-japanese-occupation/1945-royal-navy-liberation-of-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "10-japanese-occupation",
@@ -2020,7 +2021,8 @@
       "date": "1945-09-16",
       "summary": "Japanese military commanders officially signed the instrument of surrender at Government House, closing the occupation period.",
       "status": "done",
-      "file": "10-japanese-occupation/1945-formal-signing-of-the-japanese-surrender.md"
+      "file": "10-japanese-occupation/1945-formal-signing-of-the-japanese-surrender.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2029,7 +2031,8 @@
       "date": "1945-08-30",
       "summary": "British Royal Navy forces under Rear-Admiral Cecil Harcourt reclaimed Hong Kong following Japan's surrender, ending three and a half years of harsh occupation.",
       "status": "done",
-      "file": "11-postwar-refugees/1945-liberation-of-hong-kong-from-japanese-occupation.md"
+      "file": "11-postwar-refugees/1945-liberation-of-hong-kong-from-japanese-occupation.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2038,7 +2041,8 @@
       "date": "1946-05-01",
       "summary": "Governor Sir Mark Young returned to restore civilian administration and proposed political reforms for self-governance, though the plan was later abandoned.",
       "status": "done",
-      "file": "11-postwar-refugees/1946-restoration-of-civil-government-and-the-young-plan.md"
+      "file": "11-postwar-refugees/1946-restoration-of-civil-government-and-the-young-plan.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2047,7 +2051,9 @@
       "date": "1949",
       "summary": "Hundreds of thousands of refugees fled mainland China following the Communist victory, dramatically expanding Hong Kong's population and providing cheap labor and capital.",
       "status": "done",
-      "file": "11-postwar-refugees/1949-mass-refugee-influx-from-chinese-civil-war.md"
+      "file": "11-postwar-refugees/1949-mass-refugee-influx-from-chinese-civil-war.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2056,7 +2062,9 @@
       "date": "1950",
       "summary": "The colonial government relocated thousands of Kuomintang loyalist refugees to Rennie's Mill, creating a unique pro-Nationalist enclave in Hong Kong.",
       "status": "done",
-      "file": "11-postwar-refugees/1950-establishment-of-tiu-keng-leng-refugee-camp.md"
+      "file": "11-postwar-refugees/1950-establishment-of-tiu-keng-leng-refugee-camp.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2065,7 +2073,8 @@
       "date": "1950-12-16",
       "summary": "The United Nations imposed a trade embargo against China during the Korean War, forcing Hong Kong to pivot from an entrepôt trade economy to export-oriented manufacturing.",
       "status": "done",
-      "file": "11-postwar-refugees/1950-un-embargo-on-china-triggers-industrial-shift.md"
+      "file": "11-postwar-refugees/1950-un-embargo-on-china-triggers-industrial-shift.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2074,7 +2083,9 @@
       "date": "1953-12-25",
       "summary": "A massive squatter settlement fire left over 50,000 refugees homeless, compelling the colonial government to launch its iconic public housing program.",
       "status": "done",
-      "file": "11-postwar-refugees/1953-the-disastrous-shek-kip-mei-fire.md"
+      "file": "11-postwar-refugees/1953-the-disastrous-shek-kip-mei-fire.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2083,7 +2094,8 @@
       "date": "1954",
       "summary": "The government established official housing bodies to build permanent multi-storey resettlement estates, fundamentally shaping urban development and social welfare.",
       "status": "done",
-      "file": "11-postwar-refugees/1954-establishment-of-the-hong-kong-housing-authority.md"
+      "file": "11-postwar-refugees/1954-establishment-of-the-hong-kong-housing-authority.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2092,7 +2104,8 @@
       "date": "1955-08-09",
       "summary": "Workers excavating for a housing estate uncovered an Eastern Han dynasty tomb, providing direct archaeological evidence of Hong Kong's ancient Chinese history.",
       "status": "done",
-      "file": "11-postwar-refugees/1955-discovery-of-the-lei-cheng-uk-han-tomb.md"
+      "file": "11-postwar-refugees/1955-discovery-of-the-lei-cheng-uk-han-tomb.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2101,7 +2114,8 @@
       "date": "1956-10-10",
       "summary": "Clashes between pro-Kuomintang and pro-Communist factions turned violent, causing scores of deaths and demonstrating deep political divisions within the population.",
       "status": "done",
-      "file": "11-postwar-refugees/1956-the-1956-double-tenth-riots.md"
+      "file": "11-postwar-refugees/1956-the-1956-double-tenth-riots.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2110,7 +2124,8 @@
       "date": "1957-05-29",
       "summary": "Hong Kong's first television station began broadcasting as a cable service, pioneering popular visual entertainment and local media culture.",
       "status": "done",
-      "file": "11-postwar-refugees/1957-launch-of-rediffusion-television.md"
+      "file": "11-postwar-refugees/1957-launch-of-rediffusion-television.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2119,7 +2134,8 @@
       "date": "1958-09-12",
       "summary": "A new runway reclaimed from Victoria Harbour opened, allowing modern long-range aircraft to land and bolstering Hong Kong's position as a global aviation hub.",
       "status": "done",
-      "file": "11-postwar-refugees/1958-completion-of-kai-tak-airport-runway-extension.md"
+      "file": "11-postwar-refugees/1958-completion-of-kai-tak-airport-runway-extension.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2128,7 +2144,8 @@
       "date": "1959-08-26",
       "summary": "The launch of CRHK provided accessible, Cantonese-language news and entertainment, becoming an essential part of daily life for working-class residents.",
       "status": "done",
-      "file": "11-postwar-refugees/1959-establishment-of-commercial-radio-hong-kong.md"
+      "file": "11-postwar-refugees/1959-establishment-of-commercial-radio-hong-kong.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2137,7 +2154,9 @@
       "date": "1961-03-07",
       "summary": "The government conducted its first comprehensive modern census, revealing a population exceeding 3 million and highlighting urgent civic planning needs.",
       "status": "done",
-      "file": "11-postwar-refugees/1961-first-modern-hong-kong-population-census.md"
+      "file": "11-postwar-refugees/1961-first-modern-hong-kong-population-census.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2146,7 +2165,9 @@
       "date": "1962-05",
       "summary": "Fleeing the aftermath of China's Great Leap Forward, tens of thousands of refugees crossed the border in weeks, stretching social services to their limits.",
       "status": "done",
-      "file": "11-postwar-refugees/1962-the-may-exodus-refugee-crisis.md"
+      "file": "11-postwar-refugees/1962-the-may-exodus-refugee-crisis.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2155,7 +2176,8 @@
       "date": "1962-09-01",
       "summary": "Category 5 Typhoon Wanda struck Hong Kong, causing over 130 deaths, destroying thousands of squatter homes, and prompting upgrades to emergency infrastructure.",
       "status": "done",
-      "file": "11-postwar-refugees/1962-devastation-by-typhoon-wanda.md"
+      "file": "11-postwar-refugees/1962-devastation-by-typhoon-wanda.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2164,7 +2186,9 @@
       "date": "1963",
       "summary": "An unprecedented dry spell forced the government to restrict mains water supply to just four hours every four days, severely disrupting daily life and industry.",
       "status": "done",
-      "file": "11-postwar-refugees/1963-severe-drought-and-strict-water-rationing.md"
+      "file": "11-postwar-refugees/1963-severe-drought-and-strict-water-rationing.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2173,7 +2197,8 @@
       "date": "1964-04-22",
       "summary": "Hong Kong signed an agreement with Guangdong province to import river water, establishing a crucial long-term pipeline to solve the city's severe water shortages.",
       "status": "done",
-      "file": "11-postwar-refugees/1964-signing-of-dongjiang-shenzhen-water-supply-agreement.md"
+      "file": "11-postwar-refugees/1964-signing-of-dongjiang-shenzhen-water-supply-agreement.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2182,7 +2207,8 @@
       "date": "1965-02-06",
       "summary": "Bank runs on local institutions led to financial panic, prompting regulation overhauls and HSBC's acquisition of a controlling stake in Hang Seng Bank.",
       "status": "done",
-      "file": "11-postwar-refugees/1965-hong-kong-banking-crisis-of-1965.md"
+      "file": "11-postwar-refugees/1965-hong-kong-banking-crisis-of-1965.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "11-postwar-refugees",
@@ -2191,7 +2217,9 @@
       "date": "1965",
       "summary": "Rapid industrial growth peaked in the mid-1960s as Hong Kong became a leading world exporter of garments, plastic toys, and light manufactured goods.",
       "status": "done",
-      "file": "11-postwar-refugees/1965-rise-of-hong-kong-as-a-global-textile-hub.md"
+      "file": "11-postwar-refugees/1965-rise-of-hong-kong-as-a-global-textile-hub.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "11-postwar-refugees",
@@ -2200,7 +2228,8 @@
       "date": "1966-04-04",
       "summary": "Protests over a five-cent fare increase escalated into civil unrest, highlighting growing youth dissatisfaction and economic pressures under colonial rule.",
       "status": "done",
-      "file": "11-postwar-refugees/1966-the-star-ferry-riots.md"
+      "file": "11-postwar-refugees/1966-the-star-ferry-riots.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2209,7 +2238,8 @@
       "date": "1966-04-04",
       "summary": "A youth-led protest against a five-cent fare hike escalated into riots, exposing deep-seated social discontent and a generational divide in post-war Hong Kong.",
       "status": "done",
-      "file": "12-riots-and-reform/1966-star-ferry-riots.md"
+      "file": "12-riots-and-reform/1966-star-ferry-riots.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2218,7 +2248,8 @@
       "date": "1967-05-06",
       "summary": "Spurred by China's Cultural Revolution, violent confrontations and bomb campaigns forced the British administration to radically rethink social policies and public engagement.",
       "status": "done",
-      "file": "12-riots-and-reform/1967-1967-leftist-riots.md"
+      "file": "12-riots-and-reform/1967-1967-leftist-riots.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2227,7 +2258,8 @@
       "date": "1968-06-18",
       "summary": "The colonial government established local district offices to bridge the gap between administrators and citizens, improving grassroots communication after the riots.",
       "status": "done",
-      "file": "12-riots-and-reform/1968-city-district-officer-scheme-launched.md"
+      "file": "12-riots-and-reform/1968-city-district-officer-scheme-launched.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2236,7 +2268,9 @@
       "date": "1969-12-06",
       "summary": "Organized by the government, this major cultural event aimed to defuse youth alienation and foster a distinct sense of Hong Kong civic identity.",
       "status": "done",
-      "file": "12-riots-and-reform/1969-first-festival-of-hong-kong.md"
+      "file": "12-riots-and-reform/1969-first-festival-of-hong-kong.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "12-riots-and-reform",
@@ -2245,7 +2279,8 @@
       "date": "1971-11-19",
       "summary": "Sir Murray MacLehose assumed the governorship, launching an unprecedented era of social, economic, and infrastructure reforms that shaped modern Hong Kong.",
       "status": "done",
-      "file": "12-riots-and-reform/1971-governor-murray-maclehose-arrives.md"
+      "file": "12-riots-and-reform/1971-governor-murray-maclehose-arrives.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2254,7 +2289,8 @@
       "date": "1972-10-18",
       "summary": "MacLehose launched a massive public housing expansion to house 1.8 million people, leading to the development of integrated 'New Towns' like Sha Tin.",
       "status": "done",
-      "file": "12-riots-and-reform/1972-ten-year-housing-programme-announced.md"
+      "file": "12-riots-and-reform/1972-ten-year-housing-programme-announced.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2263,7 +2299,8 @@
       "date": "1973-03-09",
       "summary": "The Hong Kong stock market bubble burst, triggering a severe financial crash that exposed the urgent need for tighter regulatory oversight.",
       "status": "done",
-      "file": "12-riots-and-reform/1973-hang-seng-index-stock-market-crash.md"
+      "file": "12-riots-and-reform/1973-hang-seng-index-stock-market-crash.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",
@@ -2272,7 +2309,8 @@
       "date": "1973-06-08",
       "summary": "The escape of a corrupt Chief Police Superintendent under investigation sparked massive public outrage, catalyzing demands for systemic anti-graft reform.",
       "status": "done",
-      "file": "12-riots-and-reform/1973-police-chief-peter-godber-flees.md"
+      "file": "12-riots-and-reform/1973-police-chief-peter-godber-flees.md",
+      "verified": "2026-09-25"
     },
     {
       "era": "12-riots-and-reform",

@@ -4,7 +4,7 @@ title_zh: "民主黨成立"
 date: 1994-10-02
 year: 1994
 era: "Sino-British negotiations and the transition"
-tags: ["1994", "ai-draft", "democracy", "democratic-party", "electoral-reform", "hong-kong-history", "political-transition", "transition"]
+tags: ["photo-corroborated", "1994", "ai-draft", "democracy", "democratic-party", "electoral-reform", "hong-kong-history", "political-transition", "transition"]
 summary: "On October 2, 1994, the United Democrats of Hong Kong and Meeting Point merged to form the Democratic Party, marking a major consolidation of the pro-democracy camp during the transition period."
 description: "On October 2, 1994, the United Democrats of Hong Kong and Meeting Point merged to form the Democratic Party, marking a major consolidation of the pro-democracy camp during the transition period."
 confidence: ai-draft
@@ -43,5 +43,13 @@ The formation of the Democratic Party represented the most significant consolida
 - ❔ Date of the official founding ceremony of the Democratic Party
 - ❔ List of founding members of the merger
 - ❔ Official internal documents regarding the platform consensus between United Democrats and Meeting Point
+
+## Photos from this period
+
+![Speaker Nancy Pelosi and Martin Lee, a founder of the Democratic Party.](https://upload.wikimedia.org/wikipedia/commons/7/7e/Pelosi_%26_Lee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*Speaker Nancy Pelosi and Martin Lee, a founder of the Democratic Party.* (contemporary photo). Speaker Pelosi, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pelosi_%26_Lee.jpg).
+Corroborates: It shows Martin Lee, one of the key figures involved in the formation of the Democratic Party.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

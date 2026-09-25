@@ -4,7 +4,7 @@ title_zh: "天星小輪加價事件"
 date: 1966-04-04
 year: 1966
 era: "Riots and the MacLehose reforms"
-tags: ["evidence-none", "1960s", "1966", "ai-draft", "colonial-history", "protest", "riots-and-reform", "social-unrest", "star-ferry-riots"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1960s", "1966", "ai-draft", "colonial-history", "protest", "riots-and-reform", "social-unrest", "star-ferry-riots"]
 summary: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
 description: "A 1966 protest against a five-cent fare increase by the Star Ferry escalated into multi-day civil unrest in Kowloon, marking a critical turning point in post-war Hong Kong's social and political history."
 confidence: ai-draft
@@ -47,18 +47,18 @@ The **Star Ferry Riots** shattered the complacency of the colonial administratio
 - [[02_Entities/Places/jordan|Jordan (佐敦)]]
 - [[02_Entities/Places/yau-ma-tei|Yau Ma Tei (油麻地)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Elliott Ngok-shun began his hunger strike on April 4, 1966.
-- ❔ The exact casualty and arrest figures reported during the April 1966 disturbances.
-- ❔ The precise legislative mechanism and public consultation process used by the Star Ferry Company for the 1966 fare increase.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Elliott Ngok-shun began his hunger strike on April 4, 1966. The text states that So Sau-chung began his hunger strike on 4 April 1966.
+- ❔ **not in Wikipedia**: The exact casualty and arrest figures reported during the April 1966 disturbances. The text provides some arrest figures but does not mention casualty figures.
+- ❔ **not in Wikipedia**: The precise legislative mechanism and public consultation process used by the Star Ferry Company for the 1966 fare increase. The text mentions that the Transport Advisory Committee approved the increase and that Star Ferry consulted the Hongkong and Yaumati Ferry, but does not detail a precise legislative mechanism or public consultation process.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 1966 Hong Kong riots](https://en.wikipedia.org/wiki/1966_Hong_Kong_riots), [Wikipedia: Star Ferry](https://en.wikipedia.org/wiki/Star_Ferry)
 
-**Still needed:** Evidence specifically detailing the Star Ferry Riots of April 4, 1966, is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Remaking Places and Fashioning an Opposition Discourse: Struggle over the Star Ferry Pier and the Queen's Pier in Hong Kong](https://doi.org/10.1068/d16409) (DOI)
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

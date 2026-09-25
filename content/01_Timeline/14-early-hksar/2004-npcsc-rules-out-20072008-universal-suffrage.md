@@ -4,10 +4,11 @@ title_zh: "全國人大常委會否決二零零七年及二零零八年普選"
 date: 2004-04-06
 year: 2004
 era: "The early HKSAR"
-tags: ["2004", "ai-draft", "basic-law", "early-hksar", "npcsc", "one-country-two-systems", "political-reform", "universal-suffrage"]
+tags: ["evidence-none", "2004", "ai-draft", "basic-law", "early-hksar", "npcsc", "one-country-two-systems", "political-reform", "universal-suffrage"]
 summary: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense local and international debate."
 description: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The April 2004 ruling marked a major turning point in Hong Kong's constitutional
 
 - ❔ The NPCSC issued its official interpretation regarding the 2007 and 2008 elections on April 6, 2004.
 - ❔ The interpretation established a formal five-step mechanism for amending Hong Kong's electoral methods.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the NPCSC's decision in April 2004 regarding the exclusion of universal suffrage for the 2007/2008 period is required.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

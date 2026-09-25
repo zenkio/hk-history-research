@@ -4,10 +4,11 @@ title_zh: "沙士疫情重創香港"
 date: 2003-03-11
 year: 2003
 era: "The early HKSAR"
-tags: ["2003", "ai-draft", "amoy-gardens", "early-hksar", "economy", "hksar-history", "public-health", "sars-2003"]
+tags: ["evidence-b", "2003", "ai-draft", "amoy-gardens", "early-hksar", "economy", "hksar-history", "public-health", "sars-2003"]
 summary: "In the spring of **2003**, the Severe Acute Respiratory Syndrome epidemic struck Hong Kong, causing profound public health trauma, social panic, and severe economic contraction."
 description: "In the spring of 2003, the Severe Acute Respiratory Syndrome epidemic struck Hong Kong, causing profound public health trauma, social panic, and severe economic contraction."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,18 @@ The epidemic severely crippled Hong Kong's economy, particularly tourism, retail
 - ❔ Exact epidemiological tracing of the index patient to the Metropole Hotel
 - ❔ Total infection and death toll statistics officially recognized by the World Health Organization
 - ❔ Specific timeline of the government response and Hospital Authority coordination
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [SSC Chim, SKW Tsui, KCA Chan (2003). *Genomic characterisation of the severe acute respiratory syndrome coronavirus of Amoy Gardens outbreak in Hong Kong*. The Lancet.](https://doi.org/10.1016/s0140-6736(03)14901-x): Directly concerns the SARS outbreak in Hong Kong, specifically the Amoy Gardens event.
+- [Laura Hawryluck, Stephen E. Lapinsky, Thomas E. Stewart (2005). *Clinical review: SARS - lessons in disaster management.*. Critical Care.](https://doi.org/10.1186/cc3041): Discusses SARS in the context of disaster management, relevant to the 'crippling' of the city.
+
+**Still needed:** Evidence detailing the specific socio-economic impact on Hong Kong and verification of the date March 11, 2003.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

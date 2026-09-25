@@ -4,10 +4,11 @@ title_zh: "全國人大常委會關於香港特首普選問題的決定"
 date: 2014-08-31
 year: 2014
 era: "Political contention and protest"
-tags: ["2014", "ai-draft", "basic-law", "contention", "hong-kong-politics", "npcsc-831-decision", "umbrella-movement", "universal-suffrage"]
+tags: ["evidence-b", "2014", "ai-draft", "basic-law", "contention", "hong-kong-politics", "npcsc-831-decision", "umbrella-movement", "universal-suffrage"]
 summary: "On August 31, 2014, the Standing Committee of the National People's Congress issued a restrictive framework for Hong Kong's future Chief Executive elections, effectively dashing hopes for open nominations and setting the stage for prolonged civil disobedience."
 description: "On August 31, 2014, the Standing Committee of the National People's Congress issued a restrictive framework for Hong Kong's future Chief Executive elections, effectively dashing hopes for open nominations and setting…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The decision shattered expectations among local pro-democracy groups that unhind
 
 - ❔ The NPCSC officially released its resolution on universal suffrage in Hong Kong on August 31, 2014.
 - ❔ The decision required Chief Executive candidates to be endorsed by a majority of a broadly representative nominating committee.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Alvin Y.H. Cheung (2017). *Road to Nowhere: Hong Kong's Democratization and China's Obligations Under Public International Law*.](https://doi.org/10.31219/osf.io/djbcz_v1): It discusses the 2017 electoral reform debate, which was the direct consequence of the 831 decision.
+
+**Still needed:** Since no explicit claims were provided, specific text or details of the 831 decision are needed to verify the page's content.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

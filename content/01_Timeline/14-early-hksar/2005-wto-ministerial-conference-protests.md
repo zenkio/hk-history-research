@@ -4,10 +4,11 @@ title_zh: "世貿 ministerial 會議示威"
 date: 2005-12-13
 year: 2005
 era: "The early HKSAR"
-tags: ["photo-corroborated", "2005", "ai-draft", "anti-globalization", "early-hksar", "hong-kong-police", "south-korean-farmers", "wan-chai", "wto-protests"]
+tags: ["evidence-b", "photo-corroborated", "2005", "ai-draft", "anti-globalization", "early-hksar", "hong-kong-police", "south-korean-farmers", "wan-chai", "wto-protests"]
 summary: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
 description: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -63,6 +64,16 @@ Corroborates: The photo captures the direct confrontation between protesters and
 
 *A blue public notice in Hong Kong prohibiting the manufacture or possession of explosives, written in several languages including Korean.* (artefact). Andrew Ciceri, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WTO_Hong_Kong-_Public_Notice_(2632796125).jpg).
 Corroborates: The sign reflects the security measures and multilingual context in Hong Kong just prior to the WTO ministerial conference protests involving South Korean groups.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Lawrence Ka-Ki Ho (2019). *Policing transnational protests in an Asian context: The WTO Sixth Ministerial Conference in Hong Kong*. DOAJ (DOAJ: Directory of Open Access Journals).](https://openalex.org/W4293417138): It directly discusses the policing of the 2005 WTO Sixth Ministerial Conference protests in Hong Kong.
 
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

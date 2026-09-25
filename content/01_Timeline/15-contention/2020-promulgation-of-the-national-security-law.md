@@ -4,10 +4,11 @@ title_zh: "頒布香港國安法"
 date: 2020-06-30
 year: 2020
 era: "Political contention and protest"
-tags: ["2020", "ai-draft", "contention", "hong-kong-history", "national-security-law", "one-country-two-systems", "political-contention"]
+tags: ["evidence-b", "2020", "ai-draft", "contention", "hong-kong-history", "national-security-law", "one-country-two-systems", "political-contention"]
 summary: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, fundamentally transforming the city's legal and political environment."
 description: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, fundamentally transforming the city's legal and political…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,20 @@ The promulgation of the National Security Law marked a watershed moment in Hong 
 
 - ❔ The National Security Law was enacted and came into effect on June 30, 2020.
 - ❔ The law was added to Annex III of the Basic Law without passing through Hong Kong's Legislative Council.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Simon N. M. Young (2020). *The Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region*. International Legal Materials.](https://doi.org/10.1017/ilm.2020.64): Confirms the law was passed on June 30, 2020, by the NPCSC.
+- [Edward R. Vickers, Paul Morris (2022). *Accelerating Hong Kong’s reeducation: ‘mainlandisation’, securitisation and the 2020 National Security Law*. Comparative Education.](https://doi.org/10.1080/03050068.2022.2046878): Discusses the impact of the 2020 National Security Law on education.
+- [Peter Baehr (2022). *Hong Kong Universities in the Shadow of the National Security Law*. Society.](https://doi.org/10.1007/s12115-022-00709-9): Discusses the impact of the National Security Law on Hong Kong universities.
+- [Surabhi Chopra, Eva Pils (2022). *The Hong Kong National Security Law and the Struggle over Rule of Law and Democracy in Hong Kong*. Federal Law Review.](https://doi.org/10.1177/0067205x221107410): Discusses the enactment of the law in June 2020 and its interaction with the rule of law.
+
+**Still needed:** Official government gazette or the primary legal text of the Law itself.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

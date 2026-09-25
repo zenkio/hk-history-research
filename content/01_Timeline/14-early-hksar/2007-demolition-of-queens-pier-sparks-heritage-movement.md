@@ -4,10 +4,11 @@ title_zh: "皇后碼頭拆卸 促成本土保育運動"
 date: 2007-08-01
 year: 2007
 era: "The early HKSAR"
-tags: ["2007", "ai-draft", "civil-society", "early-hksar", "heritage-conservation", "hksar-history", "queens-pier", "urban-reclamation"]
+tags: ["evidence-none", "2007", "ai-draft", "civil-society", "early-hksar", "heritage-conservation", "hksar-history", "queens-pier", "urban-reclamation"]
 summary: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
 description: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ Urban planning debates during this period exposed deep-seated divisions over the
 
 - ❔ Did the physical clearance and repossession of Queen's Pier by the government occur precisely on August 1, 2007?
 - ❔ Were all dismantled structural components of Queen's Pier successfully stored for future reconstruction according to official government statements?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the demolition of Queen's Pier and the resulting heritage conservation movement in 2007.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -4,10 +4,11 @@ title_zh: "區議會選舉民主派壓倒性勝出"
 date: 2019-11-24
 year: 2019
 era: "Political contention and protest"
-tags: ["2019", "2019-protests", "ai-draft", "contention", "democracy", "district-council-elections", "local-government", "voting"]
+tags: ["evidence-b", "2019", "2019-protests", "ai-draft", "contention", "democracy", "district-council-elections", "local-government", "voting"]
 summary: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
 description: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,18 @@ The outcome was widely interpreted as a clear, quantifiable expression of public
 
 - ❔ Voter turnout reached 71.2% with nearly 2.94 million votes cast.
 - ❔ Pro-democracy candidates won control of 17 out of 18 District Councils.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Ho‐fung Hung (2020). *The Unrest of 2019, the National Security Law, and the Future of Hong Kong: A Comparative-International Perspective*. The SAIS review of international affairs.](https://doi.org/10.1353/sais.2020.0021): Mentions a landslide victory following the 2019 uprising in Hong Kong.
+- [Ngok Ma (2024). *Local councils as movement resource: Post-anti-extradition movement district councils in Hong Kong*. Journal of Civil Society.](https://doi.org/10.1080/17448689.2024.2397465): Explicitly discusses the landslide victory of candidates in the District Council elections.
+
+**Still needed:** Official election results and specific data confirming the landslide victory on November 24, 2019.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -4,7 +4,7 @@ title_zh: "香港重光"
 date: 1945-08-30
 year: 1945
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "photo-corroborated", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "liberation", "postwar-recovery", "postwar-refugees", "world-war-ii"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "1945", "ai-draft", "british-colonial-history", "japanese-occupation", "liberation", "postwar-recovery", "postwar-refugees", "world-war-ii"]
 summary: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
 description: "On August 30, 1945, British naval forces led by Rear-Admiral Cecil Harcourt reclaimed Hong Kong, ending three and a half years of brutal Japanese military occupation and initiating the postwar recovery era."
 confidence: ai-draft
@@ -42,40 +42,15 @@ The liberation ended the immediate wartime suffering and initiated a rapid trans
 - [[02_Entities/Places/victoria-harbour|Victoria Harbour (維多利亞港)]]
 - [[02_Entities/Places/government-house|Government House (香港禮賓府)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945.
-- ❔ The formal surrender ceremony took place at Government House on September 16, 1945.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Rear-Admiral Cecil Harcourt arrived in Victoria Harbour on August 30, 1945. The text states that Rear Admiral Sir Cecil Harcourt sailed into Hong Kong on 30 August 1945, but does not explicitly specify Victoria Harbour as the arrival point.
+- ✅ **agrees with Wikipedia**: The formal surrender ceremony took place at Government House on September 16, 1945. The text states that on 16 September 1945, Harcourt formally accepted the Japanese surrender at Government House.
 
-![A ceremony at the Cenotaph in Central, Hong Kong, marking the city's liberation from Japanese occupation in 1945.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/1945_liberation_of_Hong_Kong_at_Cenotaph.jpg/960px-1945_liberation_of_Hong_Kong_at_Cenotaph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Japanese occupation of Hong Kong](https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong)
 
-*A ceremony at the Cenotaph in Central, Hong Kong, marking the city's liberation from Japanese occupation in 1945.* (contemporary photo). Unknown authorUnknown author, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1945_liberation_of_Hong_Kong_at_Cenotaph.jpg).
-Corroborates: It corroborates the reclamation of Hong Kong and the initiation of the postwar recovery era with the presence of British and Chinese flags.
-
-![A British officer of the 3rd Commando Brigade searches a surrendered Japanese officer during the reoccupation of Hong Kong in 1945.](https://upload.wikimedia.org/wikipedia/commons/c/cf/The_British_Reoccupation_of_Hong_Kong%2C_1945_SE4985.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*A British officer of the 3rd Commando Brigade searches a surrendered Japanese officer during the reoccupation of Hong Kong in 1945.* (contemporary photo). No 9 Army Film &amp; Photographic Unit, Watson R (Sergeant), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_British_Reoccupation_of_Hong_Kong,_1945_SE4985.jpg).
-Corroborates: It corroborates the reclaim of Hong Kong by British forces and the end of the Japanese military occupation.
-
-![A British soldier from the 3rd Commando Brigade accepts the surrender of Japanese soldiers in Hong Kong, 1945.](https://upload.wikimedia.org/wikipedia/commons/2/21/The_British_Reoccupation_of_Hong_Kong%2C_1945_SE4983.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*A British soldier from the 3rd Commando Brigade accepts the surrender of Japanese soldiers in Hong Kong, 1945.* (contemporary photo). No 9 Army Film &amp; Photographic Unit, Watson R (Sergeant), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_British_Reoccupation_of_Hong_Kong,_1945_SE4983.jpg).
-Corroborates: It visually documents the end of the Japanese military occupation of Hong Kong.
-
-![The vehicle deck of a Landing Ship Tank (LST) transporting military equipment for the British Reoccupation of Hong Kong in 1945.](https://upload.wikimedia.org/wikipedia/commons/7/7d/HM_LST-403_en-route_to_participate_in_the_British_Reoccupation_of_Hong_Kong%2C_1945_SE4950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*The vehicle deck of a Landing Ship Tank (LST) transporting military equipment for the British Reoccupation of Hong Kong in 1945.* (contemporary photo). No 9 Army Film &amp; Photographic Unit, Watson R (Sergeant), Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HM_LST-403_en-route_to_participate_in_the_British_Reoccupation_of_Hong_Kong,_1945_SE4950.jpg).
-Corroborates: It corroborates the involvement of British naval forces and the transport of military assets to reclaim Hong Kong after the Japanese surrender.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence specifically documenting Rear-Admiral Cecil Harcourt's arrival in August 1945 and the surrender ceremony in September 1945 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

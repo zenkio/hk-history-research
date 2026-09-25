@@ -4,10 +4,11 @@ title_zh: "政務司司長陳方安生辭職"
 date: 2001-04-30
 year: 2001
 era: "The early HKSAR"
-tags: ["2001", "ai-draft", "anson-chan", "civil-service", "early-hksar", "hksar-history", "political-tensions", "tung-chee-hwa"]
+tags: ["evidence-none", "2001", "ai-draft", "anson-chan", "civil-service", "early-hksar", "hksar-history", "political-tensions", "tung-chee-hwa"]
 summary: "In **April 2001**, Chief Secretary **Anson Chan** announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region. Her departure highlighted growing friction between the traditional, fiercely independent civil service and Beijing-appointed leadership."
 description: "In April 2001, Chief Secretary Anson Chan announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ On **13 January 2001**, **Chan** unexpectedly announced that she would step down
 
 - ❔ Anson Chan announced her resignation on January 13, 2001, and officially stepped down on April 30, 2001.
 - ❔ Donald Tsang succeeded Anson Chan as Chief Secretary.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the resignation of Anson Chan on April 30, 2001, are needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

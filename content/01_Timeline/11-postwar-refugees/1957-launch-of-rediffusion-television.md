@@ -4,7 +4,7 @@ title_zh: "麗的映聲啟播"
 date: 1957-05-29
 year: 1957
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1957", "ai-draft", "broadcasting", "mass-media", "postwar-hong-kong", "postwar-refugees", "rediffusion", "television-history"]
+tags: ["wikipedia-checked", "evidence-none", "1957", "ai-draft", "broadcasting", "mass-media", "postwar-hong-kong", "postwar-refugees", "rediffusion", "television-history"]
 summary: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
 description: "On May 29, 1957, Rediffusion Television launched Hong Kong's first commercial television service, marking a monumental shift in the territory's media landscape and popular culture."
 confidence: ai-draft
@@ -34,17 +34,15 @@ The introduction of television fundamentally altered how local residents consume
 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did Rediffusion Television officially launch its wired broadcast service on May 29, 1957?
-- ❔ Was Rediffusion Television the first television broadcasting service in Hong Kong and the Chinese-speaking world?
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Did Rediffusion Television officially launch its wired broadcast service on May 29, 1957?. The text states it became a subscription cable television station on 29 May 1957.
+- ❔ **not in Wikipedia**: Was Rediffusion Television the first television broadcasting service in Hong Kong and the Chinese-speaking world?. The text states it was the first broadcaster in Hong Kong and in a majority-Chinese city, but does not mention the Chinese-speaking world.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Rediffusion Television](https://en.wikipedia.org/wiki/Rediffusion_Television), [Wikipedia: Rediffusion](https://en.wikipedia.org/wiki/Rediffusion)
 
-**Still needed:** Evidence verifying the specific launch date of Rediffusion Television's wired service and its status as the first broadcasting service in Hong Kong and the Chinese-speaking world is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

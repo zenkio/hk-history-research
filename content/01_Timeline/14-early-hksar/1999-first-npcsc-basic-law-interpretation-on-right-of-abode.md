@@ -4,10 +4,11 @@ title_zh: "全國人大常委員會首次釋法"
 date: 1999-06-26
 year: 1999
 era: "The early HKSAR"
-tags: ["1999", "ai-draft", "basic-law", "early-hksar", "judicial-independence", "npcsc-interpretation", "one-country-two-systems", "right-of-abode"]
+tags: ["evidence-none", "1999", "ai-draft", "basic-law", "early-hksar", "judicial-independence", "npcsc-interpretation", "one-country-two-systems", "right-of-abode"]
 summary: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for mainland-born children and sparking intense debate over judicial independence and the 'One Country, Two Systems' framework."
 description: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The **June 26, 1999** interpretation marked a watershed moment in the history of
 
 - ❔ The exact phrasing and constitutional justification provided in the NPCSC interpretation issued on June 26, 1999.
 - ❔ The precise statistical estimates of potential migrants cited by the Hong Kong government to justify seeking the interpretation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically discussing the 1999 NPCSC interpretation on the Right of Abode are needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

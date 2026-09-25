@@ -4,10 +4,11 @@ title_zh: "2019冠狀病毒病疫情抵港"
 date: 2020-01-23
 year: 2020
 era: "Political contention and protest"
-tags: ["2020", "ai-draft", "border-control", "contention", "covid-19", "protest-movement", "public-health"]
+tags: ["evidence-none", "2020", "ai-draft", "border-control", "contention", "covid-19", "protest-movement", "public-health"]
 summary: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the previous year."
 description: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The onset of the pandemic marked a watershed moment for Hong Kong society. The i
 
 - ❔ The first two COVID-19 cases in Hong Kong were officially confirmed on January 23, 2020.
 - ❔ The arrival of the pandemic directly coincided with a significant reduction in large-scale street protests.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the arrival of COVID-19 in Hong Kong on January 23, 2020.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

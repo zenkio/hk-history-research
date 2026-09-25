@@ -4,10 +4,11 @@ title_zh: "學民思潮成立"
 date: 2011-05-29
 year: 2011
 era: "Political contention and protest"
-tags: ["2011", "ai-draft", "civic-activism", "contention", "joshua-wong", "national-education", "scholarism", "student-movement"]
+tags: ["evidence-none", "2011", "ai-draft", "civic-activism", "contention", "joshua-wong", "national-education", "scholarism", "student-movement"]
 summary: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
 description: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The foundation of Scholarism marked a turning point in Hong Kong political histo
 
 - ❔ Scholarism was officially founded on May 29, 2011.
 - ❔ The primary initial objective of Scholarism was to oppose the Moral and National Education curriculum.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically confirming the founding date and details of the Scholarism youth activist group is needed.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

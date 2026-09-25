@@ -4,10 +4,11 @@ title_zh: "香港舉辦北京奧運馬術比賽"
 date: 2008-08-09
 year: 2008
 era: "Political contention and protest"
-tags: ["2008", "ai-draft", "civic-pride", "contention", "equestrian", "hong-kong-jockey-club", "olympic-games"]
+tags: ["evidence-b", "2008", "ai-draft", "civic-pride", "contention", "equestrian", "hong-kong-jockey-club", "olympic-games"]
 summary: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
 description: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,16 @@ The successful hosting of the equestrian events is widely viewed by historians a
 - ❔ The equestrian events were officially relocated to Hong Kong due to equine disease and quarantine requirements.
 - ❔ The Hong Kong Jockey Club funded and constructed the primary competition venues at Sha Tin and Beas River.
 - ❔ The events took place between August 9 and August 20, 2008.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Glos Ho (2012). *Olympic culture shock: when equestrianism galloped to Hong Kong*. Asia Pacific Journal of Sport and Social Science.](https://doi.org/10.1080/21640629.2012.681889): Directly discusses Hong Kong co-hosting the equestrian events for the 2008 Beijing Olympics.
+- [Brian Bridges (2011). *The making of a modest mega-event: Hong Kong and the 2009 EastAsian games*. The International Journal of the History of Sport.](https://doi.org/10.1080/09523367.2011.626692): Mentions Hong Kong's role in hosting the equestrian events during the 2008 Olympics.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -4,7 +4,7 @@ title_zh: "啟德機場跑道 延長工程完成"
 date: 1958-09-12
 year: 1958
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1958", "ai-draft", "aviation", "infrastructure", "kai-tak", "postwar-hong-kong", "postwar-refugees", "reclamation"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1958", "ai-draft", "aviation", "infrastructure", "kai-tak", "postwar-hong-kong", "postwar-refugees", "reclamation"]
 summary: "On September 12, 1958, the newly reclaimed runway at Kai Tak Airport officially opened, marking a major milestone in Hong Kong's development as an international aviation hub."
 description: "On September 12, 1958, the newly reclaimed runway at Kai Tak Airport officially opened, marking a major milestone in Hong Kong's development as an international aviation hub."
 confidence: ai-draft
@@ -40,18 +40,18 @@ The completion of the runway extension fundamentally transformed Kai Tak into a 
 - [[02_Entities/Places/kowloon-bay|Kowloon Bay (九龍灣)]]
 - [[02_Entities/Places/kowloon-city|Kowloon City (九龍城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact official opening date of the Kai Tak runway extension was September 12, 1958.
-- ❔ The runway length upon completion was 8,360 feet.
-- ❔ Hill-levelling at Ngau Chi Wan provided the fill material for the Kowloon Bay reclamation.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact official opening date of the Kai Tak runway extension was September 12, 1958. The text states the runway was completed in 1958 but does not provide a specific month or day.
+- ⚠️ **differs from Wikipedia**: The runway length upon completion was 8,360 feet. The text states the runway was 8,350 ft long.
+- ❔ **not in Wikipedia**: Hill-levelling at Ngau Chi Wan provided the fill material for the Kowloon Bay reclamation. The text does not mention Ngau Chi Wan or the source of the fill material used for the reclamation.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Kai Tak Airport](https://en.wikipedia.org/wiki/Kai_Tak_Airport), [Wikipedia: Hong Kong International Airport](https://en.wikipedia.org/wiki/Hong_Kong_International_Airport)
 
-**Still needed:** Evidence is needed to verify the 1958 opening date, the specific runway length at that time, and the use of Ngau Chi Wan hill-levelling material for reclamation.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Urban regeneration and heritage preservation with public participation: the case of the Kai Tak runway in Hong Kong](https://doi.org/10.2174/1874453200902010035) (DOI)
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

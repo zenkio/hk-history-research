@@ -4,10 +4,11 @@ title_zh: "撤回國民教育科"
 date: 2012-09-08
 year: 2012
 era: "Political contention and protest"
-tags: ["2012", "ai-draft", "civil-society", "contention", "identity", "national-education", "scholarism", "student-protest"]
+tags: ["evidence-b", "2012", "ai-draft", "civil-society", "contention", "identity", "national-education", "scholarism", "student-protest"]
 summary: "In September 2012, massive student-led sit-ins and hunger strikes outside the government headquarters compelled the Hong Kong administration to shelve its controversial Moral and National Education curriculum."
 description: "In September 2012, massive student-led sit-ins and hunger strikes outside the government headquarters compelled the Hong Kong administration to shelve its controversial Moral and National Education curriculum."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The suspension and subsequent indefinite shelving of the curriculum marked a maj
 
 - ❔ The exact timeline of the September 8, 2012 announcement by Chief Executive Leung Chun-ying regarding the shelving of the curriculum guidelines.
 - ❔ The precise number of participants and organizations involved in the Tamar sit-ins.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Anthony S. Chow (2014). *Understanding Policy Change: Multiple Streams and National Education Curriculum Policy in Hong Kong*. Journal of Public Administration and Governance.](https://doi.org/10.5296/jpag.v4i2.5184): It specifically analyzes the policymaking process of the Moral and National Education (MNE) curriculum in Hong Kong.
+
+**Still needed:** Direct evidence or official records confirming the withdrawal of the curriculum on the specific date of September 8, 2012.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

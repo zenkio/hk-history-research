@@ -4,7 +4,7 @@ title_zh: "香港商業電台啟播"
 date: 1959-08-26
 year: 1959
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["evidence-none", "1950s", "1959", "ai-draft", "cantonese-culture", "commercial-radio", "mass-media", "postwar-hong-kong", "postwar-refugees"]
+tags: ["wikipedia-checked", "evidence-none", "1950s", "1959", "ai-draft", "cantonese-culture", "commercial-radio", "mass-media", "postwar-hong-kong", "postwar-refugees"]
 summary: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that quickly became embedded in working-class daily life."
 description: "The launch of Commercial Radio Hong Kong in August 1959 introduced a major new commercial broadcasting alternative to the government-run service, offering accessible Cantonese-language news and entertainment that…"
 confidence: ai-draft
@@ -43,17 +43,15 @@ Later scholarship often highlights how private broadcasters like CRHK navigated 
 - [[02_Entities/People/george-ho|George Ho (何佐芝)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959.
-- ❔ George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-25. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959. The text states that CRHK was founded on 26 August 1959, but it does not specify when broadcasting officially commenced.
+- ✅ **agrees with Wikipedia**: George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited. The text states that CRHK, also known as Hong Kong Commercial Broadcasting Company Limited, was founded by George Ho Cho-chi.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Commercial Radio Hong Kong](https://en.wikipedia.org/wiki/Commercial_Radio_Hong_Kong)
 
-**Still needed:** Evidence is needed to confirm the official commencement date of Commercial Radio Hong Kong and the identity of its primary founder, George Ho.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

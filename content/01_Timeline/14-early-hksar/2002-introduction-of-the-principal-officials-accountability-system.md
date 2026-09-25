@@ -4,10 +4,11 @@ title_zh: "主要官員問責制引入"
 date: 2002-07-01
 year: 2002
 era: "The early HKSAR"
-tags: ["2002", "ai-draft", "civil-service", "early-hksar", "governance", "hksar-history", "principal-officials-accountability-syste", "tung-chee-hwa"]
+tags: ["evidence-none", "2002", "ai-draft", "civil-service", "early-hksar", "governance", "hksar-history", "principal-officials-accountability-syste", "tung-chee-hwa"]
 summary: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
 description: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ Later scholarship and political analysts view the accountability system as a wat
 
 - ❔ The exact date the Principal Officials Accountability System took effect was July 1, 2002.
 - ❔ Top policy secretaries ceased to be career civil servants and became political appointees under the new system.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the introduction and implementation of the Principal Officials Accountability System (POAS) in 2002 is needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

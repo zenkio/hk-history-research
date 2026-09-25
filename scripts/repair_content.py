@@ -10,6 +10,8 @@
    source post embeds a YouTube video we have not summarised yet, so
    process_ingestion.py rewrites it from the full article and the video.
 3. Duplicates: `name_123456.md` copies of `name.md` with the same title are removed.
+4. Claim lists: "- [ ]" task items become "- ❔". Quartz draws task items as boxes readers
+   can tick, which saves nothing and looks as if a claim had been checked.
 
 Usage: python3 scripts/repair_content.py [--commit]
 """
@@ -139,6 +141,19 @@ def requeue_thin(pages):
     return requeued
 
 
+def plain_claim_markers(pages):
+    changed = 0
+    for path, fm, body in pages:
+        if fm is None or "- [ ] " not in body:
+            continue
+        new = re.sub(r"^- \[ \] ", "- ❔ ", body, flags=re.M)
+        if new != body:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("---" + fm + "---" + new)
+            changed += 1
+    return changed
+
+
 def load_pages():
     pages = []
     for path in glob.glob(os.path.join(CONTENT, "**", "*.md"), recursive=True):
@@ -170,7 +185,9 @@ if __name__ == "__main__":
     requeued = 0 if args.no_fetch else requeue_thin(pages)
     pages = [p for p in pages if os.path.exists(p[0])]
     fixed = fix_summaries(load_pages())
-    print(f"[repair] removed {removed} duplicates, re-queued {requeued} thin pages, fixed {fixed} summaries")
+    markers = plain_claim_markers(load_pages())
+    print(f"[repair] removed {removed} duplicates, re-queued {requeued} thin pages, fixed {fixed} summaries, "
+          f"replaced tick boxes on {markers} pages")
     if args.commit:
         try:
             git_commit()

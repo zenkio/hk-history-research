@@ -164,7 +164,7 @@ class ModelPool:
         entries = [m for m in self.models.values() if m.get("provider") == "openrouter"]
         if not entries:
             return
-        self.or_key = os.environ.get("OPENROUTER_API_KEY")
+        self.or_key = (os.environ.get("OPENROUTER_API_KEY") or "").strip()  # a pasted secret can carry a space or newline
         free = []
         if self.or_key:
             try:
@@ -417,6 +417,12 @@ class ModelPool:
                     # This model can't see images/video; another in the routing may.
                     print(f"  [pool] {key} cannot take this media; skipping it for media this run")
                     self.no_media.add(key)
+                    return None
+                elif re.match(r"(401|403)\b", msg) or "Missing Authentication" in msg or "API_KEY_INVALID" in msg:
+                    # A bad or missing key will not fix itself mid-run: skip the model, keep the quota.
+                    print(f"  [pool] {key} rejected the API key ({msg[:80]}); skipped for this run. "
+                          "Check the repository secret for spaces or line breaks.")
+                    self.unavailable.add(key)
                     return None
                 elif "400" in msg or "INVALID_ARGUMENT" in msg:
                     raise RequestRejected(msg[:300])

@@ -58,6 +58,7 @@ CORE_ERA_START = "05-opium-war"
 TRANSLATE_WITH_AI = False
 # Upper bounds per run; in practice the run's time budget stops the workers first.
 PHOTO_EVENTS_PER_RUN = 60
+WIKI_SEARCH_VERSION = 2  # pages found off-topic by an older search are retried once
 VERIFY_PAGES_PER_RUN = 80  # Gemma: ~30 s a page, leaves time for drafting
 EVIDENCE_PAGES_PER_RUN = 150
 COMMIT_EVERY = 25  # push partial progress so a killed job loses little and the site fills in gradually
@@ -159,6 +160,8 @@ VERIFY_PROMPT = """You are fact-checking a draft page of a Hong Kong history web
 Check each claim below against the reference text only (extracts from Wikipedia).
 "supported": the text states it. "contradicted": the text states something different
 (give the correct fact). "unclear": the text does not cover it. Do not use outside knowledge.
+Use "contradicted" only when the text states a different fact (a different date, name, number or
+outcome). A claim that is really a question or asks for detail the text lacks is "unclear".
 If the reference text is about a different subject than this page, set "on_topic" to false.
 
 Page title: {title}
@@ -318,7 +321,9 @@ def write_event_page(era, ev, data, model):
         body += [f"- {entity_link('place', x)}" for x in data.get("places", [])]
     if data.get("claims_to_verify"):
         body += ["", "## Claims to verify", ""]
-        body += [f"- [ ] {c}" for c in data["claims_to_verify"]]
+        # A plain marker, not "- [ ]": Quartz renders task boxes that readers can tick, which
+        # saves nothing and looks as if the claim had been checked.
+        body += [f"- ❔ {c}" for c in data["claims_to_verify"]]
     body += ["", f"Part of: [[01_Timeline/{era}/index|{name}]]"]
     meta = {
         "title": yaml_str(ev["title"]),
@@ -397,7 +402,8 @@ def _apply_verification_unlocked(path, verdicts, sources, model, cites=()):
     for v in verdicts:
         status = str(v.get("status", "unclear")).strip().lower()
         icon, words = label.get(status, label["unclear"])
-        lines.append(f"- {icon} **{words}**: {v.get('claim', '')}. {v.get('note', '')}".rstrip())
+        claim = str(v.get("claim", "")).strip().rstrip(".")
+        lines.append(f"- {icon} **{words}**: {claim}. {v.get('note', '')}".rstrip())
     if sources:
         lines += ["", "**Articles compared:** " + ", ".join(f"[{s['title']}]({s['uri']})" for s in sources)]
     if cites:
@@ -422,13 +428,16 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
     for ev in by_priority(plan["events"]):
         if time.time() > deadline or checked >= limit or pool.total_remaining("verify") == 0:
             break
-        if ev["status"] != "done" or ev.get("verified"):
+        if ev["status"] != "done" or (ev.get("verified") and ev["verified"] != "no-reference"):
             continue
+        if ev.get("verified") == "no-reference" and ev.get("wiki_search") == WIKI_SEARCH_VERSION:
+            continue  # already tried with the current search
         path = os.path.join(TIMELINE_DIR, ev["file"])
         if not os.path.exists(path):
             continue
         with open(path, encoding="utf-8") as f:
-            claims = re.findall(r"^- \[ \] (.+)$", f.read(), flags=re.MULTILINE)
+            section = re.search(r"## Claims to verify\n(.*?)(?=\n## |\nPart of: |\Z)", f.read(), re.S)
+            claims = re.findall(r"^- (?:\[ \]|❔) (.+)$", section.group(1), re.M) if section else []
         if not claims:
             ev["verified"] = "no-claims"
             continue
@@ -439,7 +448,7 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
             print(f"[verify] Wikipedia unreachable ({e}); stopping fact-checks for this run")
             break
         if not reference:
-            ev["verified"] = "no-reference"
+            ev["verified"], ev["wiki_search"] = "no-reference", WIKI_SEARCH_VERSION
             save_plan(plan)
             continue
         try:
@@ -450,7 +459,7 @@ def verify_pages(pool, plan, deadline, limit=VERIFY_PAGES_PER_RUN):
         verdicts = data.get("verdicts", []) if isinstance(data, dict) else []
         if isinstance(data, dict) and data.get("on_topic") is False:
             print(f"[verify] {ev['file']}: Wikipedia articles found are off-topic ({', '.join(titles)})")
-            ev["verified"] = "no-reference"
+            ev["verified"], ev["wiki_search"] = "no-reference", WIKI_SEARCH_VERSION
             save_plan(plan)
             continue
         if not verdicts:

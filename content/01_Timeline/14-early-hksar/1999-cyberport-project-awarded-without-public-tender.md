@@ -4,10 +4,11 @@ title_zh: "數碼港項目未經公開招標批出"
 date: 1999-03-03
 year: 1999
 era: "The early HKSAR"
-tags: ["1999", "ai-draft", "crony-capitalism", "cyberport", "early-hksar", "economy", "hksar-history", "pccw", "tung-chee-hwa"]
+tags: ["evidence-none", "1999", "ai-draft", "crony-capitalism", "cyberport", "early-hksar", "economy", "hksar-history", "pccw", "tung-chee-hwa"]
 summary: "In March 1999, the Hong Kong government controversially granted the Cyberport development rights to Richard Li's PCCW without an open bidding process, intensifying debates over government-business collusion."
 description: "In March 1999, the Hong Kong government controversially granted the Cyberport development rights to Richard Li's PCCW without an open bidding process, intensifying debates over government-business collusion."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The no-bid award became a watershed moment in early HKSAR history, crystallizing
 
 - ❔ The exact date of the formal announcement granting the Cyberport project to Richard Li's company without public tender.
 - ❔ The specific financial arrangements and residential-commercial land-use ratios negotiated between the HKSAR government and Pacific Century Group.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the 1999 Cyberport project award or documentation regarding the decision to bypass a public tender is required.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

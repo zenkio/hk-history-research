@@ -4,7 +4,7 @@ title_zh: "全國人大常委會否決二零零七年及二零零八年普選"
 date: 2004-04-06
 year: 2004
 era: "The early HKSAR"
-tags: ["evidence-none", "2004", "ai-draft", "basic-law", "early-hksar", "npcsc", "one-country-two-systems", "political-reform", "universal-suffrage"]
+tags: ["wikipedia-checked", "evidence-none", "2004", "ai-draft", "basic-law", "early-hksar", "npcsc", "one-country-two-systems", "political-reform", "universal-suffrage"]
 summary: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense local and international debate."
 description: "On April 6, 2004, the National People's Congress Standing Committee interpreted the Basic Law to rule out universal suffrage for the 2007 Chief Executive election and 2008 Legislative Council elections, drawing intense…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ The April 2004 ruling marked a major turning point in Hong Kong's constitutional
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The NPCSC issued its official interpretation regarding the 2007 and 2008 elections on April 6, 2004.
-- ❔ The interpretation established a formal five-step mechanism for amending Hong Kong's electoral methods.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The NPCSC issued its official interpretation regarding the 2007 and 2008 elections on April 6, 2004. The text mentions an NPCSC interpretation on April 6 but does not provide a year or explicitly state its subject.
+- ❔ **not in Wikipedia**: The interpretation established a formal five-step mechanism for amending Hong Kong's electoral methods. The reference text does not mention a five-step mechanism.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 2012 Dual Universal Suffrage (Hong Kong)](https://en.wikipedia.org/wiki/2012_Dual_Universal_Suffrage_%28Hong_Kong%29)
 
-**Still needed:** Evidence specifically documenting the NPCSC's decision in April 2004 regarding the exclusion of universal suffrage for the 2007/2008 period is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

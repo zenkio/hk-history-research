@@ -4,7 +4,7 @@ title_zh: "學民思潮成立"
 date: 2011-05-29
 year: 2011
 era: "Political contention and protest"
-tags: ["evidence-none", "2011", "ai-draft", "civic-activism", "contention", "joshua-wong", "national-education", "scholarism", "student-movement"]
+tags: ["wikipedia-checked", "evidence-none", "2011", "ai-draft", "civic-activism", "contention", "joshua-wong", "national-education", "scholarism", "student-movement"]
 summary: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
 description: "On May 29, 2011, the high school student activist group Scholarism was founded in Hong Kong primarily to oppose the government's proposed Moral and National Education curriculum."
 confidence: ai-draft
@@ -35,17 +35,15 @@ The foundation of Scholarism marked a turning point in Hong Kong political histo
 - [[02_Entities/People/joshua-wong|Joshua Wong (黃之鋒)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Scholarism was officially founded on May 29, 2011.
-- ❔ The primary initial objective of Scholarism was to oppose the Moral and National Education curriculum.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Scholarism was officially founded on May 29, 2011. The text states the group was founded on 29 May 2011.
+- ✅ **agrees with Wikipedia**: The primary initial objective of Scholarism was to oppose the Moral and National Education curriculum. The text states the group was originally formed as 'Scholarism – The Alliance Against Moral & National Education'.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Scholarism](https://en.wikipedia.org/wiki/Scholarism)
 
-**Still needed:** Evidence specifically confirming the founding date and details of the Scholarism youth activist group is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

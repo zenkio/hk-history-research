@@ -4,7 +4,7 @@ title_zh: "主要官員問責制引入"
 date: 2002-07-01
 year: 2002
 era: "The early HKSAR"
-tags: ["evidence-none", "2002", "ai-draft", "civil-service", "early-hksar", "governance", "hksar-history", "principal-officials-accountability-syste", "tung-chee-hwa"]
+tags: ["wikipedia-checked", "evidence-none", "2002", "ai-draft", "civil-service", "early-hksar", "governance", "hksar-history", "principal-officials-accountability-syste", "tung-chee-hwa"]
 summary: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
 description: "On July 1, 2002, Chief Executive Tung Chee-hwa implemented the Principal Officials Accountability System, shifting top policy-making roles from the traditional civil service to politically appointed ministers."
 confidence: ai-draft
@@ -36,17 +36,15 @@ Later scholarship and political analysts view the accountability system as a wat
 - [[02_Entities/People/tung-chee-hwa|Tung Chee-hwa (董建華)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date the Principal Officials Accountability System took effect was July 1, 2002.
-- ❔ Top policy secretaries ceased to be career civil servants and became political appointees under the new system.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact date the Principal Officials Accountability System took effect was July 1, 2002. The text states the introduction of the system was on 1 July 2002.
+- ✅ **agrees with Wikipedia**: Top policy secretaries ceased to be career civil servants and became political appointees under the new system. The text states that secretaries of departments and bureaux are political appointees and were previously civil servants.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Principal officials of Hong Kong](https://en.wikipedia.org/wiki/Principal_officials_of_Hong_Kong), [Wikipedia: Principal Officials Accountability System](https://en.wikipedia.org/wiki/Principal_Officials_Accountability_System)
 
-**Still needed:** Evidence specifically regarding the introduction and implementation of the Principal Officials Accountability System (POAS) in 2002 is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

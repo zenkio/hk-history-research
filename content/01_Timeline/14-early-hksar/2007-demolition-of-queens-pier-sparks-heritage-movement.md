@@ -4,7 +4,7 @@ title_zh: "皇后碼頭拆卸 促成本土保育運動"
 date: 2007-08-01
 year: 2007
 era: "The early HKSAR"
-tags: ["evidence-none", "2007", "ai-draft", "civil-society", "early-hksar", "heritage-conservation", "hksar-history", "queens-pier", "urban-reclamation"]
+tags: ["wikipedia-checked", "evidence-none", "2007", "ai-draft", "civil-society", "early-hksar", "heritage-conservation", "hksar-history", "queens-pier", "urban-reclamation"]
 summary: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
 description: "The dismantling of Queen's Pier in August 2007 following prolonged protests galvanized a new wave of local heritage activism in Hong Kong, highlighting tensions between rapid urban development and collective identity."
 confidence: ai-draft
@@ -42,17 +42,17 @@ Urban planning debates during this period exposed deep-seated divisions over the
 - [[02_Entities/Places/central|Central (中環)]]
 - [[02_Entities/Places/edinburgh-place-ferry-pier|Edinburgh Place Ferry Pier (愛丁堡廣場碼頭)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the physical clearance and repossession of Queen's Pier by the government occur precisely on August 1, 2007?
-- ❔ Were all dismantled structural components of Queen's Pier successfully stored for future reconstruction according to official government statements?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the physical clearance and repossession of Queen's Pier by the government occur precisely on August 1, 2007?. The text mentions the demolition of the Edinburgh Place Ferry Pier was completed in early 2007, but it does not provide a date for the demolition of Queen's Pier.
+- ❔ **not in Wikipedia**: Were all dismantled structural components of Queen's Pier successfully stored for future reconstruction according to official government statements?. The text mentions that the government promised to recreate the third-generation Star Ferry Pier landmark, but it does not mention the storage of Queen's Pier components.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Edinburgh Place Ferry Pier](https://en.wikipedia.org/wiki/Edinburgh_Place_Ferry_Pier)
 
-**Still needed:** Evidence specifically documenting the demolition of Queen's Pier and the resulting heritage conservation movement in 2007.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Remaking Places and Fashioning an Opposition Discourse: Struggle over the Star Ferry Pier and the Queen's Pier in Hong Kong](https://doi.org/10.1068/d16409) (DOI)
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

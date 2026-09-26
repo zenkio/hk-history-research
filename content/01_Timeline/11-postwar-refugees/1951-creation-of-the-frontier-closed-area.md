@@ -4,10 +4,11 @@ title_zh: "設定邊境禁區"
 date: 1951-01-01
 year: 1951
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["photo-corroborated", "1951", "ai-draft", "border-control", "frontier-closed-area", "illegal-immigration", "new-territories", "postwar-history", "postwar-refugees", "smuggling"]
+tags: ["evidence-none", "photo-corroborated", "1951", "ai-draft", "border-control", "frontier-closed-area", "illegal-immigration", "new-territories", "postwar-history", "postwar-refugees", "smuggling"]
 summary: "In **June 1951**, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
 description: "In June 1951, the colonial government established the Frontier Closed Area along the border with mainland China to control illegal immigration and smuggling amidst shifting geopolitical tensions."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -65,6 +66,14 @@ Corroborates: It provides visual evidence of the existence and designation of th
 
 *A sign marking the Frontier Closed Area stands next to a fence overlooking the Ng Tung River in Sheung Shui.* (later photo of the site). SSTF Zhang's Zhen 201108, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_%E4%B8%8A%E6%B0%B4_Sheung_Shui_%E6%A2%A7%E6%A1%90%E6%B2%B3_Ng_Tung_River_near_%E5%BE%97%E6%9C%88%E6%A8%93%E8%AD%A6%E5%B4%97_Tak_Yuet_Lau_Police_Post_November_2020_SS2_17.jpg).
 Corroborates: The image shows the physical boundary and signage of the Frontier Closed Area established in 1951.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically concerning the legal, administrative, or political establishment of the Frontier Closed Area in 1951 is needed.
 
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,7 +4,7 @@ title_zh: "個人遊推出"
 date: 2003-07-28
 year: 2003
 era: "The early HKSAR"
-tags: ["evidence-b", "2003", "ai-draft", "early-hksar", "economy", "hksar", "individual-visit-scheme", "sars", "tourism"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "2003", "ai-draft", "early-hksar", "economy", "hksar", "individual-visit-scheme", "sars", "tourism"]
 summary: "Launched on July 28, 2003, the Individual Visit Scheme fundamentally transformed Hong Kong's tourism and retail sectors by allowing mainland Chinese residents to visit the city independently."
 description: "Launched on July 28, 2003, the Individual Visit Scheme fundamentally transformed Hong Kong's tourism and retail sectors by allowing mainland Chinese residents to visit the city independently."
 confidence: ai-draft
@@ -39,21 +39,15 @@ The scheme triggered an unprecedented tourism and retail boom in Hong Kong, inje
 - [[02_Entities/Places/tsim-sha-tsui|Tsim Sha Tsui (尖沙咀)]]
 - [[02_Entities/Places/causeway-bay|Causeway Bay (銅鑼灣)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Individual Visit Scheme was officially launched on July 28, 2003.
-- ❔ The pilot program initially covered four Guangdong cities: Guangzhou, Shenzhen, Zhuhai, and Foshan.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The Individual Visit Scheme was officially launched on July 28, 2003. The text states the scheme began on 28 July 2003.
+- ⚠️ **differs from Wikipedia**: The pilot program initially covered four Guangdong cities: Guangzhou, Shenzhen, Zhuhai, and Foshan. The text states the scheme initially covered 8 cities in Guangdong: Dongguan, Foshan, Guangzhou, Huizhou, Jiangmen, Shenzhen, Zhongshan and Zhuhai.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Individual Visit Scheme](https://en.wikipedia.org/wiki/Individual_Visit_Scheme)
 
-### Scholarship (grade B)
-
-- [Ka Ming Cheng (2011). *Tourism demand in Hong Kong: income, prices, and visa restrictions*. Current Issues in Tourism.](https://doi.org/10.1080/13683500.2011.569011): Discusses visa restrictions and tourism demand from Mainland China to Hong Kong, which is the core of the Individual Visit Scheme.
-
-**Still needed:** Primary sources or official documentation specifically detailing the announcement and implementation of the Individual Visit Scheme on July 28, 2003.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

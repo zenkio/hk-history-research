@@ -4,10 +4,11 @@ title_zh: "獅子山下首播"
 date: 1972-10-18
 year: 1972
 era: "Riots and the MacLehose reforms"
-tags: ["1972", "ai-draft", "hong-kong-identity", "lion-rock-spirit", "maclehose-era", "riots-and-reform", "rthk", "television-history"]
+tags: ["evidence-none", "1972", "ai-draft", "hong-kong-identity", "lion-rock-spirit", "maclehose-era", "riots-and-reform", "rthk", "television-history"]
 summary: "The premiere of Radio Television Hong Kong's drama series 'Below the Lion Rock' in October 1972 marked the beginning of a cultural milestone that reflected the socio-economic realities of grassroots citizens and contributed to the shaping of a distinct local Hong Kong identity."
 description: "The premiere of Radio Television Hong Kong's drama series 'Below the Lion Rock' in October 1972 marked the beginning of a cultural milestone that reflected the socio-economic realities of grassroots citizens and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The series is widely regarded by cultural historians as a catalyst for the cryst
 
 - ❔ Radio Television Hong Kong broadcast the premiere of "Below the Lion Rock" on October 18, 1972.
 - ❔ The series began as a 15-minute black-and-white production before transitioning to color and longer formats.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the premiere date and details of the 'Below the Lion Rock' television series is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

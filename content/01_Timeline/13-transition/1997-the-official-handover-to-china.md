@@ -4,7 +4,7 @@ title_zh: "香港主權移交"
 date: 1997-07-01
 year: 1997
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-b", "1997", "ai-draft", "british-colonial-history", "handover", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
+tags: ["wikipedia-checked", "evidence-b", "1997", "ai-draft", "british-colonial-history", "handover", "one-country-two-systems", "sino-british-joint-declaration", "transition"]
 summary: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
 description: "On July 1, 1997, the sovereignty of Hong Kong was officially transferred from the United Kingdom to the People's Republic of China, ending over 150 years of British colonial rule."
 confidence: ai-draft
@@ -42,23 +42,15 @@ This event marked a major milestone in modern Chinese history, concluding the er
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact sequence of protocol and flag-raising timings during the midnight ceremony on July 1, 1997.
-- ❔ The precise number of foreign dignitaries and local representatives in attendance at the Hong Kong Convention and Exhibition Centre.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact sequence of protocol and flag-raising timings during the midnight ceremony on July 1, 1997. The text mentions the ceremony's start and end times and that the handover occurred at midnight, but it does not provide a sequence of protocol or flag-raising timings.
+- ❔ **not in Wikipedia**: The precise number of foreign dignitaries and local representatives in attendance at the Hong Kong Convention and Exhibition Centre. The text mentions a cocktail reception for 4,000 guests and 5 main representatives for each country, but it does not provide a precise total number of foreign dignitaries and local representatives.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Handover of Hong Kong](https://en.wikipedia.org/wiki/Handover_of_Hong_Kong), [Wikipedia: Hong Kong handover ceremony](https://en.wikipedia.org/wiki/Hong_Kong_handover_ceremony)
 
-### Scholarship (grade B)
-
-- [Ken Hyland (1997). *Language Attitudes at the Handover*. English World-Wide A Journal of Varieties of English.](https://doi.org/10.1075/eww.18.2.03hyl): Discusses language attitudes during the 1997 handover and the end of British rule.
-- [Zhongdang Pan, Chin-Chuan Lee, Joseph Chan (2001). *Orchestrating the Family-Nation Chorus: Chinese Media and Nationalism in the Hong Kong Handover*. Mass Communication & Society.](https://doi.org/10.1207/s15327825mcs0403_05): Examines media discourses and nationalism surrounding the handover event.
-- [Gordon Mathews (1997). *Hèunggóngyàhn: On the past, present, and future of Hong Kong identity*. Bulletin of Concerned Asian Scholars.](https://doi.org/10.1080/14672715.1997.10413089): Focuses on the political and cultural transition of the 1 July 1997 return to China.
-
-**Still needed:** Official records or first-hand accounts specifically documenting the handover ceremony on 1 July 1997 are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "海底隧道通車"
 date: 1972-08-02
 year: 1972
 era: "Riots and the MacLehose reforms"
-tags: ["1972", "ai-draft", "cross-harbour-tunnel", "infrastructure", "maclehose-era", "riots-and-reform", "transportation"]
+tags: ["evidence-a", "1972", "ai-draft", "cross-harbour-tunnel", "infrastructure", "maclehose-era", "riots-and-reform", "transportation"]
 summary: "On August 2, 1972, the opening of the Cross-Harbour Tunnel established the first permanent road link between Hong Kong Island and Kowloon, fundamentally transforming the territory's transportation, commerce, and daily life."
 description: "On August 2, 1972, the opening of the Cross-Harbour Tunnel established the first permanent road link between Hong Kong Island and Kowloon, fundamentally transforming the territory's transportation, commerce, and daily…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,17 @@ The tunnel marked a monumental milestone in Hong Kong's infrastructure developme
 - ❔ The Cross-Harbour Tunnel officially opened to traffic on August 2, 1972.
 - ❔ Construction of the tunnel began in 1969 using a submerged tube method.
 - ❔ The project was executed under a franchise granted to the Cross-Harbour Tunnel Company led by Sir Kenneth Fung Ping-fan and Sir Douglas Clague.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), MINT 20/4269, 1971 Jan 01 - 1972 Dec 31. Hong Kong: order for medals to commemorate the opening of the Cross-Harbour Tunnel.](https://discovery.nationalarchives.gov.uk/details/r/C11181393): This archive record directly mentions medals created to commemorate the opening of the Cross-Harbour Tunnel.
+
+**Still needed:** Comprehensive documentation of the opening event, such as news reports from August 1972 or official government records of the ceremony.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

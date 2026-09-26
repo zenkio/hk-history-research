@@ -4,7 +4,7 @@ title_zh: "香港科技大學的創立"
 date: 1986-01-01
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["1986", "ai-draft", "colonial-administration", "economic-transition", "higher-education", "hong-kong-history", "science-and-technology", "transition"]
+tags: ["photo-corroborated", "1986", "ai-draft", "colonial-administration", "economic-transition", "higher-education", "hong-kong-history", "science-and-technology", "transition"]
 summary: "In 1986, the colonial administration decided to establish the Hong Kong University of Science and Technology (HKUST) to address the territory's urgent need for a high-tech skilled workforce during the transition period."
 description: "In 1986, the colonial administration decided to establish the Hong Kong University of Science and Technology (HKUST) to address the territory's urgent need for a high-tech skilled workforce during the transition period."
 confidence: ai-draft
@@ -39,5 +39,23 @@ The creation of HKUST is widely viewed as a pivotal moment in Hong Kong's late-c
 
 - ❔ The precise date of the initial government approval for the campus in 1986.
 - ❔ The official reasoning provided in the Legislative Council transcripts regarding the focus on science and technology during the mid-1980s.
+
+## Photos from this period
+
+![A covered walkway at the Hong Kong University of Science and Technology campus.](https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Hong_Kong_University_of_Science_and_Technology_-_panoramio.jpg/960px-Hong_Kong_University_of_Science_and_Technology_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A covered walkway at the Hong Kong University of Science and Technology campus.* (later photo of the site). wanghongliu, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_University_of_Science_and_Technology_-_panoramio.jpg).
+Corroborates: It depicts the physical campus of the institution established following the decision in 1986.
+
+![A panoramic view of Clear Water Bay, Hong Kong, showing the coastline and local architecture.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Clear_Water_Bay%2C_Hong_Kong_-_panoramio_%282%29.jpg/960px-Clear_Water_Bay%2C_Hong_Kong_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A panoramic view of Clear Water Bay, Hong Kong, showing the coastline and local architecture.* (later photo of the site). fading, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clear_Water_Bay,_Hong_Kong_-_panoramio_(2).jpg).
+Corroborates: It shows the geographic location where the Hong Kong University of Science and Technology was established.
+
+![A panoramic view of Clear Water Bay, the location of the Hong Kong University of Science and Technology.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Clear_Water_Bay%2C_Hong_Kong_-_panoramio_%281%29.jpg/960px-Clear_Water_Bay%2C_Hong_Kong_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A panoramic view of Clear Water Bay, the location of the Hong Kong University of Science and Technology.* (later photo of the site). fading, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clear_Water_Bay,_Hong_Kong_-_panoramio_(1).jpg).
+Corroborates: It shows the geographical site where the university was established.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

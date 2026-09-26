@@ -4,7 +4,7 @@ title_zh: "赤鱲角香港國際機場啟用"
 date: 1998-07-06
 year: 1998
 era: "The early HKSAR"
-tags: ["evidence-b", "1998", "ai-draft", "aviation", "chek-lap-kok", "early-hksar", "hksar", "infrastructure", "kai-tak"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "1998", "ai-draft", "aviation", "chek-lap-kok", "early-hksar", "hksar", "infrastructure", "kai-tak"]
 summary: "On July 6, 1998, the new Hong Kong International Airport opened at Chek Lap Kok, replacing the legendary Kai Tak Airport and marking a monumental engineering milestone for the newly established HKSAR."
 description: "On July 6, 1998, the new Hong Kong International Airport opened at Chek Lap Kok, replacing the legendary Kai Tak Airport and marking a monumental engineering milestone for the newly established HKSAR."
 confidence: ai-draft
@@ -41,22 +41,15 @@ Despite the initial operational hiccups, the opening of the Chek Lap Kok facilit
 - [[02_Entities/Places/lantau-island|Lantau Island (大嶼山)]]
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The official opening date of the Chek Lap Kok airport was July 6, 1998.
-- ❔ The transition period involved moving all aircraft and equipment from Kai Tak to Chek Lap Kok overnight.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The official opening date of the Chek Lap Kok airport was July 6, 1998. The airport was officially opened on 2 July 1998, though actual operation commenced on 6 July 1998.
+- ❔ **not in Wikipedia**: The transition period involved moving all aircraft and equipment from Kai Tak to Chek Lap Kok overnight. The reference text does not mention the logistics of moving aircraft and equipment during the transition period.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Chek Lap Kok](https://en.wikipedia.org/wiki/Chek_Lap_Kok), [Wikipedia: Hong Kong International Airport](https://en.wikipedia.org/wiki/Hong_Kong_International_Airport)
 
-### Scholarship (grade B)
-
-- [Avril Thomson, D. E. Oakervee (1999). *Hong Kong International Airport—construction*. Proceedings of the Institution of Civil Engineers - Civil Engineering.](https://doi.org/10.1680/icien.1999.126.5.35): Discusses the construction process of the airport at Chek Lap Kok.
-- [Avril Thomson, D. E. Oakervee (1998). *HONG KONG INTERNATIONAL AIRPORTS - CONSTRUCTION.*. Proceedings of the Institution of Civil Engineers - Civil Engineering.](https://doi.org/10.1680/icien.1998.126.5.35): Discusses the construction process of the airport at Chek Lap Kok.
-
-**Still needed:** Specific evidence or accounts regarding the official opening ceremony and activities on July 6, 1998.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -4,10 +4,11 @@ title_zh: "九龍城寨清拆衝突"
 date: 1948-01-01
 year: 1948
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1948", "ai-draft", "british-colonial-history", "kowloon-walled-city", "postwar-refugees", "riots", "sino-british-relations", "squatters"]
+tags: ["evidence-none", "1948", "ai-draft", "british-colonial-history", "kowloon-walled-city", "postwar-refugees", "riots", "sino-british-relations", "squatters"]
 summary: "In January 1948, British colonial attempts to clear and demolish the Kowloon Walled City triggered violent protests and a diplomatic standoff with the Chinese Nationalist government over sovereignty and jurisdiction."
 description: "In January 1948, British colonial attempts to clear and demolish the Kowloon Walled City triggered violent protests and a diplomatic standoff with the Chinese Nationalist government over sovereignty and jurisdiction."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The 1948 eviction crisis cemented the Kowloon Walled City's status as a near-aut
 
 - ❔ Exact casualty numbers resulting from the January 1948 clashes between residents and colonial police.
 - ❔ The precise diplomatic communications exchanged between the Foreign Office in London, the British Embassy in Nanjing, and the Hong Kong Government regarding the suspension of the eviction order.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 1948 Kowloon Walled City eviction riots is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

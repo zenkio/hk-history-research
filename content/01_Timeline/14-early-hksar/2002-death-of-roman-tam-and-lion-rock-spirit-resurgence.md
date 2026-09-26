@@ -4,10 +4,11 @@ title_zh: "羅文逝世與獅子山精神重塑"
 date: 2002-10-18
 year: 2002
 era: "The early HKSAR"
-tags: ["2002", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-economy", "lion-rock-spirit"]
+tags: ["evidence-none", "2002", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-economy", "lion-rock-spirit"]
 summary: "The passing of legendary Cantopop singer Roman Tam in October 2002 coincided with severe economic hardships in Hong Kong, propelling his classic song 'Below the Lion Rock' into a powerful cultural symbol of collective resilience."
 description: "The passing of legendary Cantopop singer Roman Tam in October 2002 coincided with severe economic hardships in Hong Kong, propelling his classic song 'Below the Lion Rock' into a powerful cultural symbol of collective…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ In the wake of Tam's passing and ongoing economic distress, 'Below the Lion Rock
 
 - ❔ Roman Tam passed away on October 18, 2002, at Queen Mary Hospital.
 - ❔ The song 'Below the Lion Rock' was originally released in 1979 as a television theme song.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the death of Roman Tam on October 18, 2002, and documentation of a 'Lion Rock Spirit' resurgence following his death.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

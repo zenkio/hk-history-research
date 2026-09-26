@@ -4,10 +4,11 @@ title_zh: "拆卸中環天星碼頭"
 date: 2006-11-12
 year: 2006
 era: "The early HKSAR"
-tags: ["photo-corroborated", "2006", "ai-draft", "civil-protest", "early-hksar", "heritage-conservation", "hksar-history", "localism", "star-ferry", "urban-development"]
+tags: ["evidence-b", "photo-corroborated", "2006", "ai-draft", "civil-protest", "early-hksar", "heritage-conservation", "hksar-history", "localism", "star-ferry", "urban-development"]
 summary: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
 description: "The November 2006 demolition of the third-generation Central Star Ferry Pier sparked intense public protests, marking a watershed moment for heritage conservation and local identity in early HKSAR history."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -51,6 +52,18 @@ The destruction of the Central Star Ferry Pier is widely regarded by historians 
 
 *Hand-drawn protest signs and drawings by citizens hanging at the Central Star Ferry Pier on its last day of operation.* (artwork). me (cychk), CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:3rd_Central_Star_Ferry_Pier_111106.JPG).
 Corroborates: The image illustrates the public sentiment and protests against the demolition of the pier as mentioned in the page summary.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Kim-wah Chai (2009). *Central Star ferry pier : policy, politics and protest in the making of heritage in Hong Kong*.](https://doi.org/10.5353/th_b4758135): This source specifically focuses on the demolition of the Central Star Ferry Pier in 2006 and the associated protests.
+
+**Still needed:** Specific evidence verifying the events and details of the demolition date November 12, 2006.
 
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

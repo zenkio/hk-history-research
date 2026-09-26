@@ -4,7 +4,7 @@ title_zh: "梁振英當選香港行政長官"
 date: 2012-03-25
 year: 2012
 era: "Political contention and protest"
-tags: ["evidence-none", "2012", "ai-draft", "beijing-relations", "chief-executive-election", "contention", "leung-chun-ying", "localism", "umbrella-movement"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "2012", "ai-draft", "beijing-relations", "chief-executive-election", "contention", "leung-chun-ying", "localism", "umbrella-movement"]
 summary: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang. His victory marked the beginning of a deeply polarized political era that would see intensifying debates over democratic reform and local identity."
 description: "On March 25, 2012, Leung Chun-ying was selected as the fourth-term Chief Executive of Hong Kong, succeeding Donald Tsang."
 confidence: ai-draft
@@ -41,18 +41,16 @@ Leung's tenure as Chief Executive is widely viewed by historians and political a
 - [[02_Entities/People/donald-tsang|Donald Tsang (曾蔭權)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Leung Chun-ying received 689 votes from the Election Committee on March 25, 2012.
-- ❔ Henry Tang received 285 votes and Albert Ho received 42 votes in the same election.
-- ❔ Leung Chun-ying assumed office as Chief Executive on July 1, 2012.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Leung Chun-ying received 689 votes from the Election Committee on March 25, 2012. The text states Leung secured 689 votes on 25 March 2012.
+- ⚠️ **differs from Wikipedia**: Henry Tang received 285 votes and Albert Ho received 42 votes in the same election. The text states Albert Ho received 76 votes.
+- ✅ **agrees with Wikipedia**: Leung Chun-ying assumed office as Chief Executive on July 1, 2012. The text states Leung assumed office as Chief Executive on 1 July 2012.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Leung Chun-ying](https://en.wikipedia.org/wiki/Leung_Chun-ying), [Wikipedia: Chief Executive of Hong Kong](https://en.wikipedia.org/wiki/Chief_Executive_of_Hong_Kong)
 
-**Still needed:** Evidence specifically documenting the 2012 Chief Executive election, such as the election results, the candidates, or the specific political events surrounding Leung Chun-ying's victory.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

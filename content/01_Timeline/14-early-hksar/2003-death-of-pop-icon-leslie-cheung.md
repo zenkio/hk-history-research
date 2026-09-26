@@ -4,7 +4,7 @@ title_zh: "著名藝人張國榮逝世"
 date: 2003-04-01
 year: 2003
 era: "The early HKSAR"
-tags: ["evidence-none", "2003", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-cinema", "leslie-cheung", "sars-2003"]
+tags: ["wikipedia-checked", "evidence-none", "2003", "ai-draft", "cantopop", "cultural-history", "early-hksar", "hong-kong-cinema", "leslie-cheung", "sars-2003"]
 summary: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
 description: "On April 1, 2003, legendary Cantopop star and actor Leslie Cheung committed suicide in central Hong Kong, plunging the city into profound grief during the height of the SARS outbreak."
 confidence: ai-draft
@@ -39,18 +39,16 @@ The sudden loss of such a major cultural figure compounded the collective trauma
 - [[02_Entities/Places/mandarin-oriental-hotel|Mandarin Oriental Hotel (文華東方酒店)]]
 - [[02_Entities/Places/queen-mary-hospital|Queen Mary Hospital (瑪麗醫院)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Leslie Cheung died on April 1, 2003, after falling from the Mandarin Oriental Hotel in Central.
-- ❔ Cheung was pronounced dead at Queen Mary Hospital at the age of 46.
-- ❔ A suicide note mentioning severe depression was recovered by the police.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Leslie Cheung died on April 1, 2003, after falling from the Mandarin Oriental Hotel in Central. The text states that Cheung died on April 1, 2003, after leaping from the Mandarin Oriental hotel in the Central district.
+- ❔ **not in Wikipedia**: Cheung was pronounced dead at Queen Mary Hospital at the age of 46. The text confirms he was 46 years old at the time of his death, but it does not mention Queen Mary Hospital.
+- ❔ **not in Wikipedia**: A suicide note mentioning severe depression was recovered by the police. The text states that he left a suicide note regarding his depression, but does not mention that the police recovered it.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Leslie Cheung](https://en.wikipedia.org/wiki/Leslie_Cheung)
 
-**Still needed:** Evidence specifically detailing the death of pop icon Leslie Cheung on April 1, 2003, is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

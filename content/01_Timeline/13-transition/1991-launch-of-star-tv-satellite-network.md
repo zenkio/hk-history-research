@@ -4,10 +4,11 @@ title_zh: "衛星電視開播"
 date: 1991-05-08
 year: 1991
 era: "Sino-British negotiations and the transition"
-tags: ["1991", "ai-draft", "cantopop", "hutchison-whampoa", "media-history", "satellite-television", "star-tv", "transition"]
+tags: ["evidence-none", "1991", "ai-draft", "cantopop", "hutchison-whampoa", "media-history", "satellite-television", "star-tv", "transition"]
 summary: "On May 8, 1991, Satellite Television Asian Region (STAR TV) was launched in Hong Kong, marking the birth of Asia's first multi-channel satellite television network and transforming the territory into a regional broadcasting hub."
 description: "On May 8, 1991, Satellite Television Asian Region (STAR TV) was launched in Hong Kong, marking the birth of Asia's first multi-channel satellite television network and transforming the territory into a regional…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The launch of STAR TV cemented Hong Kong's status as a premier regional media an
 - ❔ STAR TV officially launched on May 8, 1991
 - ❔ The network utilized the AsiaSat 1 satellite for its initial transmissions
 - ❔ The initial broadcast featured five distinct channels supported by advertising
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the specific launch date and details of the STAR TV Satellite Network in May 1991 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

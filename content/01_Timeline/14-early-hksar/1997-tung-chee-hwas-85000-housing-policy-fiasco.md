@@ -4,10 +4,11 @@ title_zh: "董建華八萬五住屋政策挫敗"
 date: 1997-10-08
 year: 1997
 era: "The early HKSAR"
-tags: ["1997", "ai-draft", "asian-financial-crisis", "early-hksar", "hksar-history", "housing-policy", "negative-equity", "tung-chee-hwa"]
+tags: ["evidence-none", "1997", "ai-draft", "asian-financial-crisis", "early-hksar", "hksar-history", "housing-policy", "negative-equity", "tung-chee-hwa"]
 summary: "Introduced in October 1997 by Chief Executive Tung Chee-hwa, the ambitious 85,000-unit housing policy aimed to solve Hong Kong's chronic housing shortage, but instead collided with the Asian Financial Crisis to trigger a severe property market collapse and widespread negative equity."
 description: "Introduced in October 1997 by Chief Executive Tung Chee-hwa, the ambitious 85,000-unit housing policy aimed to solve Hong Kong's chronic housing shortage, but instead collided with the Asian Financial Crisis to trigger…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,11 @@ The 85,000 housing policy became a defining misstep of the early HKSAR era, seve
 - ❔ Tung Chee-hwa announced the 85,000 housing target in his policy address on October 8, 1997.
 - ❔ Hong Kong property prices dropped by over 50 percent following the Asian Financial Crisis.
 - ❔ The government officially dropped the 85,000 housing target by 2002.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

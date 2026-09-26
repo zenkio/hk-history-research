@@ -4,10 +4,11 @@ title_zh: "香港藝術節首航"
 date: 1973-02-26
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["1973", "ai-draft", "cultural-history", "hong-kong-arts-festival", "maclehose-era", "performing-arts", "riots-and-reform"]
+tags: ["evidence-none", "1973", "ai-draft", "cultural-history", "hong-kong-arts-festival", "maclehose-era", "performing-arts", "riots-and-reform"]
 summary: "The first Hong Kong Arts Festival was held in February 1973, marking a major milestone in the territory's cultural development during the governorship of Sir Murray MacLehose."
 description: "The first Hong Kong Arts Festival was held in February 1973, marking a major milestone in the territory's cultural development during the governorship of Sir Murray MacLehose."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The establishment of the festival is widely viewed by historians as a pivotal mo
 
 - ❔ The inaugural Hong Kong Arts Festival officially opened on February 26, 1973.
 - ❔ Sir Murray MacLehose actively championed the establishment of the festival as part of his broader social and cultural reforms.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the inaugural Hong Kong Arts Festival held in February 1973 is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

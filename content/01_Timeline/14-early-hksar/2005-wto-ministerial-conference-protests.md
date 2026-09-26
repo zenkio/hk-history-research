@@ -4,7 +4,7 @@ title_zh: "世貿 ministerial 會議示威"
 date: 2005-12-13
 year: 2005
 era: "The early HKSAR"
-tags: ["evidence-b", "photo-corroborated", "2005", "ai-draft", "anti-globalization", "early-hksar", "hong-kong-police", "south-korean-farmers", "wan-chai", "wto-protests"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "2005", "ai-draft", "anti-globalization", "early-hksar", "hong-kong-police", "south-korean-farmers", "wan-chai", "wto-protests"]
 summary: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
 description: "In December 2005, Hong Kong hosted the Sixth WTO Ministerial Conference, which became the backdrop for intense and violent anti-globalization protests primarily led by South Korean farmers."
 confidence: ai-draft
@@ -38,42 +38,15 @@ The protests put local security forces and the 'One Country, Two Systems' framew
 - [[02_Entities/Places/hong-kong-convention-and-exhibition-centre|Hong Kong Convention and Exhibition Centre (香港會議展覽中心)]]
 - [[02_Entities/Places/victoria-park|Victoria Park (維多利亞公園)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact number of protesters detained and prosecuted in Hong Kong courts following the December 2005 clashes
-- ❔ Official police casualty figures and specific crowd control munitions deployed during the Wan Chai protests
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: Exact number of protesters detained and prosecuted in Hong Kong courts following the December 2005 clashes. The text states around 910 (or almost 1000) people were arrested, 14 were charged, and none were convicted.
+- ✅ **agrees with Wikipedia**: Official police casualty figures and specific crowd control munitions deployed during the Wan Chai protests. The text mentions two police officers were injured and that batons, riot gas, pepper spray, tear gas, and fire hoses were used.
 
-![A large crowd consisting of protesters, media personnel, and security forces in helmets during the WTO protests in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/WTO_Ministerial_Conference_2005_Protest.jpg/960px-WTO_Ministerial_Conference_2005_Protest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: World Trade Organization Ministerial Conference of 2005](https://en.wikipedia.org/wiki/World_Trade_Organization_Ministerial_Conference_of_2005)
 
-*A large crowd consisting of protesters, media personnel, and security forces in helmets during the WTO protests in Hong Kong.* (contemporary photo). DCrow123 at English Wikipedia, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WTO_Ministerial_Conference_2005_Protest.jpg).
-Corroborates: It corroborates the intense atmosphere and large-scale public presence during the 2005 WTO Ministerial Conference protests.
-
-![A large crowd of protesters gathers near the Victoria Harbor waterfront in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hong_Kong_WTO_protesters_2005.jpg/960px-Hong_Kong_WTO_protesters_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A large crowd of protesters gathers near the Victoria Harbor waterfront in Hong Kong.* (contemporary photo). Drew Crofton, aka DCrow123 at en.wikipedia, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_WTO_protesters_2005.jpg).
-Corroborates: It illustrates the scale of the demonstrations held during the 2005 WTO Ministerial Conference.
-
-![Korean protesters confront a line of Hong Kong police officers during the WTO Ministerial Conference protests in Wan Chai.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/WTO_protesters_confront_Hong_Kong_police_2005.jpg/960px-WTO_protesters_confront_Hong_Kong_police_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Korean protesters confront a line of Hong Kong police officers during the WTO Ministerial Conference protests in Wan Chai.* (contemporary photo). Cardith, CC BY-SA 2.5, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WTO_protesters_confront_Hong_Kong_police_2005.jpg).
-Corroborates: The photo captures the direct confrontation between protesters and police during the 2005 WTO Ministerial Conference, as described in the text.
-
-![A blue public notice in Hong Kong prohibiting the manufacture or possession of explosives, written in several languages including Korean.](https://upload.wikimedia.org/wikipedia/commons/e/e4/WTO_Hong_Kong-_Public_Notice_%282632796125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
-
-*A blue public notice in Hong Kong prohibiting the manufacture or possession of explosives, written in several languages including Korean.* (artefact). Andrew Ciceri, CC BY-SA 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WTO_Hong_Kong-_Public_Notice_(2632796125).jpg).
-Corroborates: The sign reflects the security measures and multilingual context in Hong Kong just prior to the WTO ministerial conference protests involving South Korean groups.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Lawrence Ka-Ki Ho (2019). *Policing transnational protests in an Asian context: The WTO Sixth Ministerial Conference in Hong Kong*. DOAJ (DOAJ: Directory of Open Access Journals).](https://openalex.org/W4293417138): It directly discusses the policing of the 2005 WTO Sixth Ministerial Conference protests in Hong Kong.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

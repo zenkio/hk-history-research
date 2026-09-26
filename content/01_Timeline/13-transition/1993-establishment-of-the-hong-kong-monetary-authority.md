@@ -4,10 +4,11 @@ title_zh: "香港金融管理局的成立"
 date: 1993-04-01
 year: 1993
 era: "Sino-British negotiations and the transition"
-tags: ["1993", "ai-draft", "banking-sector", "exchange-fund", "financial-regulation", "hkma", "sino-british-transition", "transition"]
+tags: ["evidence-none", "1993", "ai-draft", "banking-sector", "exchange-fund", "financial-regulation", "hkma", "sino-british-transition", "transition"]
 summary: "On April 1, 1993, the Hong Kong Monetary Authority was established through the merger of the Office of the Commissioner of Banking and the Exchange Fund Office, centralizing the territory's financial regulation and currency management ahead of the 1997 handover."
 description: "On April 1, 1993, the Hong Kong Monetary Authority was established through the merger of the Office of the Commissioner of Banking and the Exchange Fund Office, centralizing the territory's financial regulation and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The creation of the HKMA marked a major milestone in the modernization of Hong K
 - ❔ The Hong Kong Monetary Authority was officially established on April 1, 1993.
 - ❔ The HKMA was formed by merging the Office of the Commissioner of Banking and the Exchange Fund Office.
 - ❔ Joseph Yam served as the first Chief Executive of the HKMA.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the historical or legislative establishment of the Hong Kong Monetary Authority in 1993 is required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

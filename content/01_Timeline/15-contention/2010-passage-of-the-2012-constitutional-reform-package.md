@@ -4,7 +4,7 @@ title_zh: "二零一二年香港政治体制改革方案通過"
 date: 2010-06-25
 year: 2010
 era: "Political contention and protest"
-tags: ["evidence-b", "2010", "ai-draft", "basic-law", "constitutional-reform", "contention", "legislative-council", "pan-democrats"]
+tags: ["wikipedia-checked", "evidence-b", "2010", "ai-draft", "basic-law", "constitutional-reform", "contention", "legislative-council", "pan-democrats"]
 summary: "In June 2010, Hong Kong's Legislative Council passed a modified constitutional reform package for the 2012 elections, marking a rare instance of political compromise between Beijing, the SAR government, and moderate pro-democracy legislators."
 description: "In June 2010, Hong Kong's Legislative Council passed a modified constitutional reform package for the 2012 elections, marking a rare instance of political compromise between Beijing, the SAR government, and moderate…"
 confidence: ai-draft
@@ -44,22 +44,16 @@ The **2012** reform package represented a watershed moment in Hong Kong's politi
 - [[02_Entities/People/donald-tsang|Donald Tsang (曾蔭權)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of the passage of the 2012 constitutional reform package in June 2010
-- ❔ The precise structural changes to the Legislative Council and Election Committee seats
-- ❔ The nature and extent of direct negotiations between the Democratic Party and Beijing officials in 2010
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact date of the passage of the 2012 constitutional reform package in June 2010. The text states that the consultation package was accepted by LegCo on 25 June 2010.
+- ✅ **agrees with Wikipedia**: The precise structural changes to the Legislative Council and Election Committee seats. The text states the Election Committee was increased from 800 to 1,200 members and the number of Legislative Council members increased from 60 to 70, including five additional district council constituency seats.
+- ✅ **agrees with Wikipedia**: The nature and extent of direct negotiations between the Democratic Party and Beijing officials in 2010. The text states that Li Gang, the deputy director of the central government's liaison office, met with Democratic Party leaders Emily Lau, Cheung Man-kwong and Albert Ho on 24 May 2010.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: 2010 Hong Kong electoral reform](https://en.wikipedia.org/wiki/2010_Hong_Kong_electoral_reform)
 
-### Scholarship (grade B)
-
-- [Michael F. Martin (2012). *Prospects for Democracy in Hong Kong: The 2012 Election Reforms*. University of North Texas Digital Library (University of North Texas).](https://openalex.org/W1513147485): The source specifically addresses the 2012 election reforms mentioned in the topic.
-
-**Still needed:** Evidence specifically confirming the passage of the 2012 Constitutional Reform Package on the date of June 25, 2010.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

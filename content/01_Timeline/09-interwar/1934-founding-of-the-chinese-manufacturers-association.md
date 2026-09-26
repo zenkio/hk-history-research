@@ -4,10 +4,11 @@ title_zh: "中華廠商聯合會的成立"
 date: 1934-01-01
 year: 1934
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1934", "ai-draft", "economic-history", "imperial-preference", "interwar", "manufacturing", "trade-policy"]
+tags: ["evidence-none", "1934", "ai-draft", "economic-history", "imperial-preference", "interwar", "manufacturing", "trade-policy"]
 summary: "In 1934, local industrialists established the Chinese Manufacturers' Association to promote locally made goods and navigate imperial trade policies, marking a crucial step in Hong Kong's transition toward an industrial manufacturing economy."
 description: "In 1934, local industrialists established the Chinese Manufacturers' Association to promote locally made goods and navigate imperial trade policies, marking a crucial step in Hong Kong's transition toward an industrial…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The founding of the Chinese Manufacturers' Association reflected Hong Kong's str
 
 - ❔ The Chinese Manufacturers' Association was formally established in 1934.
 - ❔ The pursuit of Imperial Preference tariff benefits was a primary catalyst for the association's creation.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the founding of the Chinese Manufacturers' Association in 1934 is still needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

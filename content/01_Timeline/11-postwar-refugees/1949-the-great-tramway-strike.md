@@ -4,10 +4,11 @@ title_zh: "電車工潮"
 date: 1949-01-01
 year: 1949
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1949", "ai-draft", "cold-war", "colonial-history", "labor-history", "leftist-unions", "postwar-refugees", "tramway-strike"]
+tags: ["evidence-a", "1949", "ai-draft", "cold-war", "colonial-history", "labor-history", "leftist-unions", "postwar-refugees", "tramway-strike"]
 summary: "The 1949–1950 Great Tramway Strike was a major labor dispute organized by pro-Beijing trade unions that severely disrupted public transport and heightened Cold War tensions in colonial Hong Kong."
 description: "The 1949–1950 Great Tramway Strike was a major labor dispute organized by pro-Beijing trade unions that severely disrupted public transport and heightened Cold War tensions in colonial Hong Kong."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The strike marked a crucial turning point in Hong Kong's labor and political his
 
 - ❔ Exact dates of the beginning and end of the Tramway Strike between December 1949 and February 1950
 - ❔ The precise nature of the settlement terms agreed upon by the Tramways management and the union
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), CAB 195/7/67, 07 February 1950. Record Type: Notebook. Former Reference: CM (50) 4. Agenda: 1. Agricultural Review; 2. Bamangwato Tribe: Chieftainship; 3. Germany; 4. Indo China; 5. Hong Kong: Tramway Strike.](https://discovery.nationalarchives.gov.uk/details/r/D7739464) (claims 1): The archive record's agenda explicitly lists a 'Hong Kong: Tramway Strike'.
+
+**Still needed:** Detailed information regarding the specific causes, key figures, and the resolution of the strike is still needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

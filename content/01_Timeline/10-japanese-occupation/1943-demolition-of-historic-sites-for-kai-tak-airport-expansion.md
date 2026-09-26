@@ -4,10 +4,11 @@ title_zh: "擴建啟德機場拆 毀歷史古蹟"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "heritage-destruction", "japanese-occupation", "kai-tak-airport", "kowloon-walled-city", "sung-wong-toi", "world-war-ii"]
+tags: ["evidence-none", "1943", "ai-draft", "heritage-destruction", "japanese-occupation", "kai-tak-airport", "kowloon-walled-city", "sung-wong-toi", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong in January 1943, occupation authorities forced local laborers to demolish significant historical landmarks, including the Kowloon Walled City walls and the ancient Sung Wong Toi rock, to facilitate the expansion of Kai Tak Airport for military use."
 description: "During the Japanese occupation of Hong Kong in January 1943, occupation authorities forced local laborers to demolish significant historical landmarks, including the Kowloon Walled City walls and the ancient Sung Wong…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The destruction of these sites represented a profound loss of tangible heritage 
 
 - ❔ Did the demolition of the Kowloon Walled City walls and Sung Wong Toi specifically begin in January 1943, or was it spread across a different timeline during the occupation?
 - ❔ What precise volume of materials from the historic sites was reused for the Kai Tak runway expansion?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the expansion of Kai Tak Airport in the 1940s and the demolition of historic sites during that period is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

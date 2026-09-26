@@ -4,10 +4,11 @@ title_zh: "華人廟宇條例通過"
 date: 1928-01-01
 year: 1928
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1928", "ai-draft", "chinese-elites", "chinese-temples-ordinance", "colonial-governance", "interwar", "interwar-hong-kong", "religious-institutions"]
+tags: ["evidence-none", "1928", "ai-draft", "chinese-elites", "chinese-temples-ordinance", "colonial-governance", "interwar", "interwar-hong-kong", "religious-institutions"]
 summary: "In **1928**, the Hong Kong colonial government enacted the Chinese Temples Ordinance to establish centralized bureaucratic oversight over traditional Chinese religious properties and revenues, formalizing state-community mediation through co-opted Chinese elites."
 description: "In 1928, the Hong Kong colonial government enacted the Chinese Temples Ordinance to establish centralized bureaucratic oversight over traditional Chinese religious properties and revenues, formalizing state-community…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The ordinance marked a significant expansion of colonial state reach into the so
 - ❔ The Chinese Temples Ordinance was officially enacted in the year 1928.
 - ❔ The Chinese Temples Committee was established to oversee temple registration and surplus revenues.
 - ❔ The legislation was introduced partly in response to the aftermath of the 1925-1926 Canton-Hong Kong strike and boycott.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the passage and details of the Chinese Temples Ordinance of 1928 is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

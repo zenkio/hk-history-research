@@ -4,7 +4,7 @@ title_zh: "雨傘運動啟動"
 date: 2014-09-28
 year: 2014
 era: "Political contention and protest"
-tags: ["evidence-b", "2014", "ai-draft", "civil-disobedience", "contention", "protest", "umbrella-movement", "universal-suffrage"]
+tags: ["wikipedia-checked", "evidence-b", "2014", "ai-draft", "civil-disobedience", "contention", "protest", "umbrella-movement", "universal-suffrage"]
 summary: "On September 28, 2014, police fired tear gas at pro-democracy protesters in Hong Kong, sparking a 79-day occupation of major thoroughfares demanding genuine universal suffrage."
 description: "On September 28, 2014, police fired tear gas at pro-democracy protesters in Hong Kong, sparking a 79-day occupation of major thoroughfares demanding genuine universal suffrage."
 confidence: ai-draft
@@ -44,22 +44,16 @@ The movement marked one of the most protracted periods of civil unrest in Hong K
 - [[02_Entities/Places/mong-kok|Mong Kok (旺角)]]
 - [[02_Entities/Places/causeway-bay|Causeway Bay (銅鑼灣)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of tear gas rounds fired by police on September 28, 2014
-- ❔ The precise peak number of participants occupying the various sites during the 79 days
-- ❔ The formal internal directives given to the police force prior to the deployment of tear gas
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact number of tear gas rounds fired by police on September 28, 2014. The text mentions that tear gas was used on September 28 but does not provide the specific number of rounds fired.
+- ❔ **not in Wikipedia**: The precise peak number of participants occupying the various sites during the 79 days. The text does not mention the peak number of participants for the occupation sites.
+- ❔ **not in Wikipedia**: The formal internal directives given to the police force prior to the deployment of tear gas. The text does not contain information regarding formal internal directives given to the police force.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Umbrella Movement](https://en.wikipedia.org/wiki/Umbrella_Movement)
 
-### Scholarship (grade B)
-
-- [Samson Yuen (2015). *Hong Kong After the Umbrella Movement*. China Perspectives.](https://doi.org/10.4000/chinaperspectives.6656) (claims 1): It describes the specific events of September 28, including the use of tear gas and the siege of government headquarters.
-
-**Still needed:** Further evidence is needed to provide a complete chronological account and the specific triggers of the movement's launch.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

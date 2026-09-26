@@ -4,7 +4,7 @@ title_zh: "簽署內地與香港關於建立更緊密經貿關係的安排"
 date: 2003-06-29
 year: 2003
 era: "The early HKSAR"
-tags: ["evidence-b", "2003", "ai-draft", "cepa", "early-hksar", "economic-recovery", "free-trade", "hksar-history", "sars-2003"]
+tags: ["wikipedia-checked", "evidence-b", "2003", "ai-draft", "cepa", "early-hksar", "economic-recovery", "free-trade", "hksar-history", "sars-2003"]
 summary: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial crisis and the SARS outbreak."
 description: "On June 29, 2003, Hong Kong and Mainland China signed the Closer Economic Partnership Arrangement (CEPA), marking a significant milestone in economic integration to help boost recovery following the Asian financial…"
 confidence: ai-draft
@@ -37,22 +37,15 @@ CEPA represented the first free trade agreement concluded by Hong Kong and the f
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/mainland-china|Mainland China (中國內地)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ CEPA was officially signed on June 29, 2003.
-- ❔ Tung Chee-hwa and Song Defu were the principal signatories for their respective governments.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: CEPA was officially signed on June 29, 2003. The reference text states that the Mainland and Hong Kong Closer Economic Partnership Arrangement was signed on 29 June 2003.
+- ❔ **not in Wikipedia**: Tung Chee-hwa and Song Defu were the principal signatories for their respective governments. The reference text does not mention the names of the signatories.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Mainland and Hong Kong Closer Economic Partnership Arrangement](https://en.wikipedia.org/wiki/Mainland_and_Hong_Kong_Closer_Economic_Partnership_Arrangement), [Wikipedia: Closer Economic Partnership Arrangement](https://en.wikipedia.org/wiki/Closer_Economic_Partnership_Arrangement)
 
-### Scholarship (grade B)
-
-- [Bruno Cabrillac (2004). *A Bilateral Trade Agreement Between Hong Kong and China: CEPA*. China Perspectives.](https://doi.org/10.4000/chinaperspectives.3002): Explicitly confirms the signing of CEPA on June 29, 2003.
-- [Tayden Fung Chan (2020). *The Guangdong–Hong Kong–Macao Greater Bay Area: Enhancing Collaborative Governance of the CEPA Implementation and Regional Integration*. China An International Journal.](https://doi.org/10.1353/chn.2020.0011): Confirms that CEPA was signed between Hong Kong and mainland China in 2003.
-
-**Still needed:** Official government documentation or the full text of the signed agreement.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

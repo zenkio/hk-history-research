@@ -4,10 +4,11 @@ title_zh: "盧少蘭暫停領匯上市"
 date: 2004-12-14
 year: 2004
 era: "The early HKSAR"
-tags: ["2004", "ai-draft", "early-hksar", "housing-policy", "judicial-review", "link-reit", "privatization", "public-housing"]
+tags: ["evidence-none", "2004", "ai-draft", "early-hksar", "housing-policy", "judicial-review", "link-reit", "privatization", "public-housing"]
 summary: "In December 2004, public housing resident Lo Siu-lan successfully obtained a legal injunction that temporarily halted the mega initial public offering of Link REIT, sparking intense debate over the governance and privatization of public assets in the early HKSAR."
 description: "In December 2004, public housing resident Lo Siu-lan successfully obtained a legal injunction that temporarily halted the mega initial public offering of Link REIT, sparking intense debate over the governance and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,11 @@ The episode marked a watershed moment in early HKSAR history, highlighting the r
 
 - ❔ The exact date of the Court of Appeal injunction obtained by Lo Siu-lan was December 14, 2004.
 - ❔ The number of retail and parking facilities initially packaged into Link REIT was approximately 180.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

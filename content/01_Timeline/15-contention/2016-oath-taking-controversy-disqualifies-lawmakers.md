@@ -4,7 +4,7 @@ title_zh: "議員宣誓風波失資格"
 date: 2016-10-12
 year: 2016
 era: "Political contention and protest"
-tags: ["evidence-none", "photo-corroborated", "2016", "ai-draft", "basic-law", "beijing-intervention", "contention", "disqualification", "legislative-council", "localism", "oath-taking-controversy"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "2016", "ai-draft", "basic-law", "beijing-intervention", "contention", "disqualification", "legislative-council", "localism", "oath-taking-controversy"]
 summary: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to their disqualification."
 description: "During the Legislative Council swearing-in ceremony on October 12, 2016, several newly elected localist and pro-democracy lawmakers altered their oaths, triggering a legal and political crisis that ultimately led to…"
 confidence: ai-draft
@@ -44,40 +44,15 @@ The oath-taking controversy marked a major turning point in Hong Kong's politica
 - [[02_Entities/People/yiu-chung-yim|Yiu Chung-yim (姚松炎)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The NPC Standing Committee issued an interpretation of Basic Law Article 104 in November 2016.
-- ❔ Six legislators were ultimately disqualified through court rulings stemming from the oath-taking ceremony on October 12, 2016.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The NPC Standing Committee issued an interpretation of Basic Law Article 104 in November 2016. The National People's Congress Standing Committee (NPCSC) interpreted Article 104 of the Basic Law on 7 November 2016.
+- ✅ **agrees with Wikipedia**: Six legislators were ultimately disqualified through court rulings stemming from the oath-taking ceremony on October 12, 2016. The controversy surrounding the oaths on 12 October 2016 resulted in the disqualification of six members by the court.
 
-![Alvin Yeung, leader of the Civic Party, speaking into a microphone.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC15.jpg/960px-%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Hong Kong Legislative Council oath of office controversy](https://en.wikipedia.org/wiki/Hong_Kong_Legislative_Council_oath_of_office_controversy)
 
-*Alvin Yeung, leader of the Civic Party, speaking into a microphone.* (contemporary photo). VOA - Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC15.jpg).
-Corroborates: The image depicts Alvin Yeung, one of the pro-democracy lawmakers who was disqualified as a result of the oath-taking controversy.
-
-![Democratic Party Chairman Wu Chi-wai speaking at a press conference.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC1.jpg/960px-%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Democratic Party Chairman Wu Chi-wai speaking at a press conference.* (contemporary photo). VOA - Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC1.jpg).
-Corroborates: The image depicts a prominent pro-democracy lawmaker during the period of the legal and political crises surrounding the oath-taking controversy.
-
-![A portrait of Nathan Law, a pro-democracy lawmaker who was disqualified following the oath-taking controversy.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC3.jpg/960px-%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A portrait of Nathan Law, a pro-democracy lawmaker who was disqualified following the oath-taking controversy.* (contemporary photo). VOA - Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC3.jpg).
-Corroborates: The image depicts Nathan Law, one of the key figures involved in the oath-taking controversy mentioned on the page.
-
-![Nathan Law, a pro-democracy lawmaker, is pictured speaking into a microphone.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC13.jpg/960px-%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Nathan Law, a pro-democracy lawmaker, is pictured speaking into a microphone.* (contemporary photo). VOA - Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%86%8D%E6%9C%894%E5%90%8D%E9%A6%99%E6%B8%AF%E6%B0%91%E4%B8%BB%E6%B4%BE%E7%AB%8B%E6%B3%95%E6%9C%83%E8%AD%B0%E5%93%A1%E8%A2%AB%E6%B3%95%E5%BA%AD%E5%8F%96%E6%B6%88%E8%B3%87%E6%A0%BC13.jpg).
-Corroborates: The image shows one of the key lawmakers who was disqualified due to the oath-taking controversy.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence specifically addressing the 2016 oath-taking controversy and the subsequent disqualification of lawmakers is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

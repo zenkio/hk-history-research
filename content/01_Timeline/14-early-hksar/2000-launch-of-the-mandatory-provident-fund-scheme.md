@@ -4,7 +4,7 @@ title_zh: "強積金制度正式生效"
 date: 2000-12-01
 year: 2000
 era: "The early HKSAR"
-tags: ["evidence-b", "2000", "ai-draft", "early-hksar", "economy", "hksar-history", "mandatory-provident-fund", "retirement-protection", "social-security"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "2000", "ai-draft", "early-hksar", "economy", "hksar-history", "mandatory-provident-fund", "retirement-protection", "social-security"]
 summary: "On December 1, 2000, the Hong Kong Special Administrative Region government officially launched the Mandatory Provident Fund (強制性公積金) scheme, establishing a compulsory, privately-managed contributory retirement protection system for the local workforce."
 description: "On December 1, 2000, the Hong Kong Special Administrative Region government officially launched the Mandatory Provident Fund (強制性公積金) scheme, establishing a compulsory, privately-managed contributory retirement…"
 confidence: ai-draft
@@ -35,22 +35,15 @@ The launch of the MPF represented a watershed moment in the development of Hong 
 - [[02_Entities/People/tung-chee-hwa|Tung Chee-hwa (董建華)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Mandatory Provident Fund scheme officially commenced operation on December 1, 2000.
-- ❔ Participation was made compulsory for most employees aged 18 to 64 and their employers.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The Mandatory Provident Fund scheme officially commenced operation on December 1, 2000. The text states that employers were required to enrol their employees in an MPF plan by 1 December 2000.
+- ⚠️ **differs from Wikipedia**: Participation was made compulsory for most employees aged 18 to 64 and their employers. The text says the system is mandatory for employees with a contract of 60 days or more and self-employed individuals between ages 18 and 65.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Mandatory Provident Fund](https://en.wikipedia.org/wiki/Mandatory_Provident_Fund)
 
-### Scholarship (grade B)
-
-- [Alan Siu (2002). *Hong Kong's Mandatory Provident Fund*. RePEc: Research Papers in Economics.](https://openalex.org/W7422783): Discusses the Mandatory Provident Fund scheme in Hong Kong.
-- [Ricky S. Wong (2014). *Risk Attitude towards Mandatory Retirement Protection in Hong Kong: Why Are Risky Investments More Attractive?*. Asian Social Science.](https://doi.org/10.5539/ass.v10n6p205): Explicitly mentions that the government launched the Mandatory Provident Fund (MPF) scheme.
-
-**Still needed:** Evidence specifically confirming the launch date of 2000-12-01.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

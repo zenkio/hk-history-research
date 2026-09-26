@@ -4,7 +4,7 @@ title_zh: "政務司司長陳方安生辭職"
 date: 2001-04-30
 year: 2001
 era: "The early HKSAR"
-tags: ["evidence-none", "2001", "ai-draft", "anson-chan", "civil-service", "early-hksar", "hksar-history", "political-tensions", "tung-chee-hwa"]
+tags: ["wikipedia-checked", "evidence-none", "2001", "ai-draft", "anson-chan", "civil-service", "early-hksar", "hksar-history", "political-tensions", "tung-chee-hwa"]
 summary: "In **April 2001**, Chief Secretary **Anson Chan** announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region. Her departure highlighted growing friction between the traditional, fiercely independent civil service and Beijing-appointed leadership."
 description: "In April 2001, Chief Secretary Anson Chan announced her early retirement from the civil service, marking a pivotal moment in the governance of the early Hong Kong Special Administrative Region."
 confidence: ai-draft
@@ -44,17 +44,15 @@ On **13 January 2001**, **Chan** unexpectedly announced that she would step down
 - [[02_Entities/People/donald-tsang|Donald Tsang (曾蔭權)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Anson Chan announced her resignation on January 13, 2001, and officially stepped down on April 30, 2001.
-- ❔ Donald Tsang succeeded Anson Chan as Chief Secretary.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Anson Chan announced her resignation on January 13, 2001, and officially stepped down on April 30, 2001. The text states she announced her resignation in January 2001 and stepped down in April 2001, but does not provide the specific days.
+- ❔ **not in Wikipedia**: Donald Tsang succeeded Anson Chan as Chief Secretary. The text does not mention who succeeded Anson Chan as Chief Secretary.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Anson Chan](https://en.wikipedia.org/wiki/Anson_Chan)
 
-**Still needed:** Sources specifically documenting the resignation of Anson Chan on April 30, 2001, are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -4,7 +4,7 @@ title_zh: "反對高鐵撥款示威達到高峰"
 date: 2010-01-16
 year: 2010
 era: "Political contention and protest"
-tags: ["evidence-none", "2010", "ai-draft", "contention", "express-rail-link", "infrastructure", "localism", "protests", "youth-activism"]
+tags: ["wikipedia-checked", "evidence-none", "2010", "ai-draft", "contention", "express-rail-link", "infrastructure", "localism", "protests", "youth-activism"]
 summary: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political activism."
 description: "On January 16, 2010, anti-Express Rail Link protests in Hong Kong reached a dramatic crescendo as thousands of demonstrators surrounded the Legislative Council complex, marking a turning point in local political…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ The events of January 2010 are widely viewed by historians and political analyst
 - [[02_Entities/Places/choi-yuen-tsuen|Choi Yuen Tsuen (菜園村)]]
 - [[02_Entities/Places/legislative-council-complex|Legislative Council Complex (立法會綜合大樓)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of demonstrators gathered outside the Legislative Council complex on January 16, 2010.
-- ❔ The precise procedural steps and voting tally during the Finance Committee meeting on the day of the funding approval.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact number of demonstrators gathered outside the Legislative Council complex on January 16, 2010. The text provides estimates of 10,000 from organizers and 1,700 from police, rather than an exact number.
+- ❔ **not in Wikipedia**: The precise procedural steps and voting tally during the Finance Committee meeting on the day of the funding approval. The text provides the voting tally (31 to 21) but does not detail the precise procedural steps.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Anti-Hong Kong Express Rail Link movement](https://en.wikipedia.org/wiki/Anti-Hong_Kong_Express_Rail_Link_movement), [Wikipedia: 2019–2020 Hong Kong protests](https://en.wikipedia.org/wiki/2019%E2%80%932020_Hong_Kong_protests)
 
-**Still needed:** Evidence specifically documenting or analyzing the 2010 Anti-Express Rail Link protests is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

@@ -4,7 +4,7 @@ title_zh: "日落告別儀式"
 date: 1997-06-30
 year: 1997
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1997", "ai-draft", "british-colonial-rule", "hms-tamar", "hong-kong-handover", "sino-british-joint-declaration", "transition"]
+tags: ["wikipedia-checked", "evidence-none", "1997", "ai-draft", "british-colonial-rule", "hms-tamar", "hong-kong-handover", "sino-british-joint-declaration", "transition"]
 summary: "Held on June 30, 1997, amid heavy rain at the HMS Tamar naval base, the Sunset Farewell Ceremony marked the official conclusion of 156 years of British colonial administration in Hong Kong."
 description: "Held on June 30, 1997, amid heavy rain at the HMS Tamar naval base, the Sunset Farewell Ceremony marked the official conclusion of 156 years of British colonial administration in Hong Kong."
 confidence: ai-draft
@@ -41,17 +41,15 @@ The ceremony served as the dramatic visual conclusion to the British presence in
 - [[02_Entities/Places/kowloon-peninsula|Kowloon Peninsula (九龍半島)]]
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact timeline and protocol of the Sunset Farewell Ceremony at HMS Tamar on June 30, 1997
-- ❔ Weather conditions and precise attendance list of dignitaries at the farewell event
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact timeline and protocol of the Sunset Farewell Ceremony at HMS Tamar on June 30, 1997. The text provides the start time and some ceremony highlights, but not a full timeline or protocol.
+- ❔ **not in Wikipedia**: Weather conditions and precise attendance list of dignitaries at the farewell event. The text does not mention weather conditions or provide a precise attendance list of dignitaries.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong handover ceremony](https://en.wikipedia.org/wiki/Hong_Kong_handover_ceremony)
 
-**Still needed:** Evidence specifically regarding the Sunset Farewell Ceremony held on June 30, 1997, is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

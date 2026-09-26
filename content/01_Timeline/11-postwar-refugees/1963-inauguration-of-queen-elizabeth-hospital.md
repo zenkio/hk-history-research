@@ -4,10 +4,11 @@ title_zh: "伊利沙伯醫院開幕"
 date: 1963-09-10
 year: 1963
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1960s", "1963", "ai-draft", "colonial-history", "infrastructure", "postwar-hong-kong", "postwar-refugees", "public-health"]
+tags: ["evidence-none", "1960s", "1963", "ai-draft", "colonial-history", "infrastructure", "postwar-hong-kong", "postwar-refugees", "public-health"]
 summary: "On September 10, 1963, the inauguration of Queen Elizabeth Hospital marked a major expansion of public healthcare capacity in British Hong Kong, opening as the largest general hospital in the Commonwealth to serve a rapidly growing population."
 description: "On September 10, 1963, the inauguration of Queen Elizabeth Hospital marked a major expansion of public healthcare capacity in British Hong Kong, opening as the largest general hospital in the Commonwealth to serve a…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The establishment of the hospital represented a crucial milestone in the develop
 
 - ❔ Queen Elizabeth Hospital was the largest general hospital in the British Commonwealth at the time of its opening.
 - ❔ The inauguration ceremony took place specifically on September 10, 1963.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the inauguration date and ceremony details of Queen Elizabeth Hospital in 1963 is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

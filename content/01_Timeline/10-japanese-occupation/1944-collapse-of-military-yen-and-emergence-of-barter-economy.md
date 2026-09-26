@@ -4,10 +4,11 @@ title_zh: "軍票崩潰與物物交換經濟的出現"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "barter-economy", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
+tags: ["evidence-none", "1944", "ai-draft", "barter-economy", "hyperinflation", "japanese-occupation", "military-yen", "world-war-ii"]
 summary: "By December 1944, severe hyperinflation rendered Japanese military yen virtually worthless in occupied Hong Kong, compelling residents to abandon currency entirely in favor of a barter economy to secure basic survival necessities like rice."
 description: "By December 1944, severe hyperinflation rendered Japanese military yen virtually worthless in occupied Hong Kong, compelling residents to abandon currency entirely in favor of a barter economy to secure basic survival…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The total collapse of the monetary system exposed the complete failure of Japane
 - ❔ Specific exchange rates or inflation indices for the military yen in December 1944
 - ❔ Official decrees regarding the prohibition of the Hong Kong dollar and enforcement of military yen
 - ❔ Quantifiable black market volumes of rice traded for specific luxury items
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically covering the hyperinflation and collapse of the Japanese Military Yen in Hong Kong and the resulting shift to a barter economy during the WWII occupation.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

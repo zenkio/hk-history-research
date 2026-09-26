@@ -4,10 +4,11 @@ title_zh: "郊野公園條例制定"
 date: 1976-08-16
 year: 1976
 era: "Riots and the MacLehose reforms"
-tags: ["1970s", "1976", "ai-draft", "country-parks", "environmental-conservation", "maclehose-reforms", "riots-and-reform", "urban-planning"]
+tags: ["evidence-none", "1970s", "1976", "ai-draft", "country-parks", "environmental-conservation", "maclehose-reforms", "riots-and-reform", "urban-planning"]
 summary: "On August 16, 1976, the enactment of the Country Parks Ordinance formally established the legal framework for protecting Hong Kong's major natural areas, preserving vast tracts of countryside amid rapid urban expansion."
 description: "On August 16, 1976, the enactment of the Country Parks Ordinance formally established the legal framework for protecting Hong Kong's major natural areas, preserving vast tracts of countryside amid rapid urban expansion."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The ordinance played a defining role in shaping Hong Kong's unique geographic an
 
 - ❔ The Country Parks Ordinance was formally enacted on August 16, 1976.
 - ❔ The legislation established the Country Parks Authority and the Country Parks Board.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the history, enactment, or legal details of the Country Parks Ordinance of 1976 is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

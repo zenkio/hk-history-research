@@ -4,10 +4,11 @@ title_zh: "保衛中國同盟成立"
 date: 1938-06-14
 year: 1938
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1938", "ai-draft", "british-hong-kong", "china-defense-league", "humanitarian-aid", "interwar", "second-sino-japanese-war", "soong-ching-ling"]
+tags: ["evidence-none", "1938", "ai-draft", "british-hong-kong", "china-defense-league", "humanitarian-aid", "interwar", "second-sino-japanese-war", "soong-ching-ling"]
 summary: "In June 1938, Soong Ching-ling founded the China Defense League in Hong Kong to coordinate international humanitarian relief and medical supplies for China's anti-Japanese resistance."
 description: "In June 1938, Soong Ching-ling founded the China Defense League in Hong Kong to coordinate international humanitarian relief and medical supplies for China's anti-Japanese resistance."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The establishment of the League marked a major milestone in mobilizing global so
 
 - ❔ The exact founding date of the China Defense League as June 14, 1938
 - ❔ The specific logistical routes used by the League to transport medical supplies from Hong Kong to mainland resistance zones
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment of the China Defense League on June 14, 1938, in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

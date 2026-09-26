@@ -4,10 +4,11 @@ title_zh: "公屋短樁醜聞"
 date: 2000-06-24
 year: 2000
 era: "The early HKSAR"
-tags: ["2000", "ai-draft", "early-hksar", "governance", "housing-authority", "infrastructure", "public-housing", "scandal"]
+tags: ["evidence-b", "2000", "ai-draft", "early-hksar", "governance", "housing-authority", "infrastructure", "public-housing", "scandal"]
 summary: "The discovery of severely substandard foundations in newly built public housing estates in 2000 led to high-profile resignations and systemic reforms in Hong Kong's construction governance."
 description: "The discovery of severely substandard foundations in newly built public housing estates in 2000 led to high-profile resignations and systemic reforms in Hong Kong's construction governance."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,17 @@ The short-piling scandal marked a watershed moment for governance and public wor
 
 - ❔ Did two blocks of Yu Chui Court get demolished due to short piling?
 - ❔ Did Rosanna Wong resign on June 24, 2000?
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Vivian W.Y. Tam, Liyin Shen, C. M. Tam (2005). *Investigating the intentional quality risks in public foundation projects: A Hong Kong study*. Building and Environment.](https://doi.org/10.1016/j.buildenv.2005.08.025): The study investigates intentional quality risks in Hong Kong public foundation projects, which is the core subject of the short-piling scandal.
+
+**Still needed:** Specific reports, news archives, or official investigation documents detailing the June 2000 short-piling scandal are needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

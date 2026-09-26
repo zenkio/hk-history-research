@@ -4,10 +4,11 @@ title_zh: "戰時稅收與所得稅之引入"
 date: 1940-01-01
 year: 1940
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1940", "ai-draft", "colonial-history", "income-tax", "interwar", "public-finance", "war-revenue", "world-war-two"]
+tags: ["evidence-none", "1940", "ai-draft", "colonial-history", "income-tax", "interwar", "public-finance", "war-revenue", "world-war-two"]
 summary: "Facing mounting financial pressures from the Second World War and an influx of refugees, the Hong Kong government introduced the colony's first direct income and profits taxes in 1940, breaking with a long-standing tradition of indirect taxation."
 description: "Facing mounting financial pressures from the Second World War and an influx of refugees, the Hong Kong government introduced the colony's first direct income and profits taxes in 1940, breaking with a long-standing…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ Historians generally view the introduction of the 1940 income tax as a watershed
 
 - ❔ The exact date and legislative mechanics of the War Revenue Ordinance passed in 1940
 - ❔ The specific allocation of tax revenues between local defense and imperial war efforts
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the introduction of the War Revenue and Income Tax in Hong Kong on January 1, 1940, is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

@@ -4,7 +4,7 @@ title_zh: "董建華當選首任行政長官"
 date: 1996-12-11
 year: 1996
 era: "Sino-British negotiations and the transition"
-tags: ["evidence-none", "1996", "ai-draft", "basic-law", "chief-executive", "hong-kong-handover", "sino-british-joint-declaration", "transition", "tung-chee-hwa"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1996", "ai-draft", "basic-law", "chief-executive", "hong-kong-handover", "sino-british-joint-declaration", "transition", "tung-chee-hwa"]
 summary: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
 description: "On December 11, 1996, shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of the Hong Kong Special Administrative Region."
 confidence: ai-draft
@@ -41,17 +41,15 @@ The selection of **Tung Chee-hwa** symbolized both continuity and change for Hon
 - [[02_Entities/Places/shenzhen|Shenzhen (深圳)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Tung Chee-hwa received exactly 320 votes out of 400 from the Selection Committee on December 11, 1996.
-- ❔ The Selection Committee meeting for the vote was held in Shenzhen.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Tung Chee-hwa received exactly 320 votes out of 400 from the Selection Committee on December 11, 1996. On 11 December 1996, a 400-member Selection Committee elected Tung Chee-hwa, who received 320 votes.
+- ⚠️ **differs from Wikipedia**: The Selection Committee meeting for the vote was held in Shenzhen. The election was held at the Hong Kong Convention and Exhibition Centre (HKCEC).
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chief Executive of Hong Kong](https://en.wikipedia.org/wiki/Chief_Executive_of_Hong_Kong), [Wikipedia: 1996 Hong Kong Chief Executive election](https://en.wikipedia.org/wiki/1996_Hong_Kong_Chief_Executive_election)
 
-**Still needed:** Evidence specifically concerning the selection process, election details, or biography of Tung Chee-hwa as the first Chief Executive.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

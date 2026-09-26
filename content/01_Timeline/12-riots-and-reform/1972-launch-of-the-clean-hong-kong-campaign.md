@@ -4,10 +4,11 @@ title_zh: "「清潔香港」運動啟動"
 date: 1972-11-01
 year: 1972
 era: "Riots and the MacLehose reforms"
-tags: ["1972", "ai-draft", "civic-campaigns", "clean-hong-kong", "maclehose-era", "miss-lap-sap", "public-hygiene", "riots-and-reform"]
+tags: ["evidence-none", "1972", "ai-draft", "civic-campaigns", "clean-hong-kong", "maclehose-era", "miss-lap-sap", "public-hygiene", "riots-and-reform"]
 summary: "In November 1972, the Hong Kong government launched the large-scale Clean Hong Kong campaign, introducing the iconic mascot Miss Lap Sap to improve public hygiene and foster civic consciousness."
 description: "In November 1972, the Hong Kong government launched the large-scale Clean Hong Kong campaign, introducing the iconic mascot Miss Lap Sap to improve public hygiene and foster civic consciousness."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The campaign marked a turning point in government-led civic mobilization and pub
 
 - ❔ The Clean Hong Kong campaign was officially launched on November 1, 1972.
 - ❔ Miss Lap Sap and Lap Sap Chung were introduced as mascots during this period.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the 'Clean Hong Kong' Campaign launched on November 1, 1972, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

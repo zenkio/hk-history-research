@@ -4,10 +4,11 @@ title_zh: "強制平民勞工築造山防碉堡"
 date: 1945-01-01
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "bunkers", "forced-labor", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1945", "ai-draft", "bunkers", "forced-labor", "japanese-occupation", "world-war-ii"]
 summary: "In June 1945, facing the increasing likelihood of an Allied amphibious assault, the Japanese occupation authorities instituted a mass civilian labor draft to construct extensive underground defense networks and hillside bunkers across Hong Kong."
 description: "In June 1945, facing the increasing likelihood of an Allied amphibious assault, the Japanese occupation authorities instituted a mass civilian labor draft to construct extensive underground defense networks and hillside…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,11 @@ This late-war mobilization marked one of the most severe disruptions to the civi
 
 - ❔ Specific execution dates and scale of the civilian labor draft ordered by the Japanese military administration in June 1945
 - ❔ Exact number of civilians conscripted for hillside tunnel and bunker construction in the final months of the occupation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,7 +4,7 @@ title_zh: "香港主辦奧運馬術比賽"
 date: 2008-08-08
 year: 2008
 era: "The early HKSAR"
-tags: ["evidence-b", "2008", "ai-draft", "beijing-olympics", "early-hksar", "equestrian-events", "one-country-two-systems", "patriotism"]
+tags: ["wikipedia-checked", "evidence-b", "2008", "ai-draft", "beijing-olympics", "early-hksar", "equestrian-events", "one-country-two-systems", "patriotism"]
 summary: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the city."
 description: "In August 2008, Hong Kong successfully co-hosted the Beijing Summer Olympic Games by organizing the equestrian events, marking a unique moment of international participation and heightened patriotic sentiment in the…"
 confidence: ai-draft
@@ -46,20 +46,17 @@ At the same time, the event sparked diverse political interpretations regarding 
 - [[02_Entities/Places/sha-tin|Sha Tin (沙田)]]
 - [[02_Entities/Places/sheung-shui|Sheung Shui (上水)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Equine disease control regulations were the primary reason for moving the equestrian events to Hong Kong.
-- ❔ The International Olympic Committee officially rated the Hong Kong equestrian venues among the best in Olympic history.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Equine disease control regulations were the primary reason for moving the equestrian events to Hong Kong. The text states events were held in Hong Kong rather than Beijing due to high levels of equine disease in Beijing and Hong Kong's high standards for quarantine.
+- ❔ **not in Wikipedia**: The International Olympic Committee officially rated the Hong Kong equestrian venues among the best in Olympic history. The text describes the venues and facilities but does not mention any official rating by the IOC.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Equestrian events at the Summer Olympics](https://en.wikipedia.org/wiki/Equestrian_events_at_the_Summer_Olympics), [Wikipedia: Equestrian events at the 2008 Summer Olympics](https://en.wikipedia.org/wiki/Equestrian_events_at_the_2008_Summer_Olympics)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Glos Ho (2012). *Olympic culture shock: when equestrianism galloped to Hong Kong*. Asia Pacific Journal of Sport and Social Science.](https://doi.org/10.1080/21640629.2012.681889) (claims 1): It directly discusses Hong Kong co-hosting the 2008 Olympic equestrian events.
-- [Brian Bridges (2011). *The making of a modest mega-event: Hong Kong and the 2009 EastAsian games*. The International Journal of the History of Sport.](https://doi.org/10.1080/09523367.2011.626692) (claims 1): It mentions Hong Kong's involvement in hosting the 2008 Olympic equestrian events.
-
+- ✓ [The Olympic motto through the lens of equestrian sports](https://doi.org/10.1093/af/vfac025) (DOI)
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

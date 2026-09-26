@@ -4,10 +4,11 @@ title_zh: "香港 - 日本神社動土"
 date: 1943-05-19
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "imperial-rule", "japanese-occupation", "mount-cameron", "shinto-shrine", "world-war-ii"]
+tags: ["evidence-none", "1943", "ai-draft", "imperial-rule", "japanese-occupation", "mount-cameron", "shinto-shrine", "world-war-ii"]
 summary: "On May 19, 1943, Japanese occupation authorities held a groundbreaking ceremony for the grand Hong Kong Shinto Shrine on Mount Cameron, aiming to physically and spiritually cement imperial hegemony over the territory."
 description: "On May 19, 1943, Japanese occupation authorities held a groundbreaking ceremony for the grand Hong Kong Shinto Shrine on Mount Cameron, aiming to physically and spiritually cement imperial hegemony over the territory."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,11 @@ The initiation of the shrine project represented the most visible architectural 
 
 - ❔ Was the groundbreaking ceremony for the Hong Kong Shinto Shrine officially held precisely on May 19, 1943?
 - ❔ To what extent was construction completed before the Japanese surrender in 1945?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

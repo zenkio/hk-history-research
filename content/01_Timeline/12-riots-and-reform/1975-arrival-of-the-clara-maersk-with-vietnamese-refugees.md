@@ -4,10 +4,11 @@ title_zh: "克娜馬斯號運載越南難民抵達"
 date: 1975-05-04
 year: 1975
 era: "Riots and the MacLehose reforms"
-tags: ["1975", "ai-draft", "clara-maersk", "mac-lehose-era", "port-of-first-asylum", "riots-and-reform", "vietnamese-refugees"]
+tags: ["evidence-b", "1975", "ai-draft", "clara-maersk", "mac-lehose-era", "port-of-first-asylum", "riots-and-reform", "vietnamese-refugees"]
 summary: "On May 4, 1975, the Danish freighter Clara Maersk arrived in Hong Kong carrying over 3,700 Vietnamese refugees, marking the beginning of Hong Kong's quarter-century role as a port of first asylum."
 description: "On May 4, 1975, the Danish freighter Clara Maersk arrived in Hong Kong carrying over 3,700 Vietnamese refugees, marking the beginning of Hong Kong's quarter-century role as a port of first asylum."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,17 @@ The arrival of the **Clara Maersk** is widely recognized by historians as the de
 - ❔ The exact number of refugees on board the Clara Maersk was approximately 3,700.
 - ❔ The Clara Maersk arrived in Hong Kong on May 4, 1975.
 - ❔ The colonial government briefly delayed disembarkation upon the ship's arrival.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Joe Thomas (2017). *Introduction*.](https://doi.org/10.4324/9781315201481-8) (claims 1): It explicitly mentions the arrival of the Clara Maersk in Hong Kong on May 4, 1975.
+
+**Still needed:** Specific details such as the exact number of refugees on board or the specific cargo of the ship are not fully detailed in the snippet.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

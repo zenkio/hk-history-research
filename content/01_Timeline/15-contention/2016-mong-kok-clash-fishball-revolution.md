@@ -4,7 +4,7 @@ title_zh: "旺角騷亂"
 date: 2016-02-08
 year: 2016
 era: "Political contention and protest"
-tags: ["evidence-none", "photo-corroborated", "2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "2016", "ai-draft", "contention", "localism", "lunar-new-year", "mong-kok-clash", "protest-history"]
 summary: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into hours of street battles between protesters and police."
 description: "The Mong Kok clash of February 2016 marked a violent escalation in Hong Kong's political unrest, beginning as a confrontation over the regulation of unlicensed street hawkers during the Lunar New Year and erupting into…"
 confidence: ai-draft
@@ -40,40 +40,15 @@ The events, frequently labeled by participants and media as the "Fishball Revolu
 - [[02_Entities/Places/mong-kok|Mong Kok (旺角)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Police fired two warning shots into the air during the clashes on February 9, 2016.
-- ❔ The confrontation began as a dispute over unlicensed Lunar New Year street hawkers.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: Police fired two warning shots into the air during the clashes on February 9, 2016. An officer fired two warning shots into the air at around 2 am on the morning following February 8, which is February 9.
+- ✅ **agrees with Wikipedia**: The confrontation began as a dispute over unlicensed Lunar New Year street hawkers. The text states the incident occurred following the government's crackdown on unlicensed street hawkers during the Chinese New Year holidays.
 
-![A metal bucket containing bricks used by protesters during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2016_Mong_Kok_civil_unrest_drum.jpg/960px-2016_Mong_Kok_civil_unrest_drum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: 2016 Mong Kok civil unrest](https://en.wikipedia.org/wiki/2016_Mong_Kok_civil_unrest)
 
-*A metal bucket containing bricks used by protesters during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_drum.jpg).
-Corroborates: It illustrates the use of improvised materials like bricks during the street battles of the Mong Kok clash.
-
-![Silhouetted figures stand near a fire and barriers on a street during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2016_Mong_Kok_civil_unrest_fire_Barrier.jpg/960px-2016_Mong_Kok_civil_unrest_fire_Barrier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Silhouetted figures stand near a fire and barriers on a street during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_fire_Barrier.jpg).
-Corroborates: It corroborates the description of violent street clashes and the use of fires and obstacles during the unrest.
-
-![A firefighter stands next to a fire engine in Mong Kok at night, with a crowd and smoke visible in the background.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/2016_Mong_Kok_civil_unrest_fireman.jpg/960px-2016_Mong_Kok_civil_unrest_fireman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A firefighter stands next to a fire engine in Mong Kok at night, with a crowd and smoke visible in the background.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_fireman.jpg).
-Corroborates: The image illustrates the chaotic scene and emergency response during the Mong Kok unrest.
-
-![A street scene at night showing a crowd of people amidst smoke, debris, and loose pavement bricks during the Mong Kok unrest.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg/960px-2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A street scene at night showing a crowd of people amidst smoke, debris, and loose pavement bricks during the Mong Kok unrest.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_Pry_up_Bricks.jpg).
-Corroborates: The image corroborates the description of violent street battles and the chaotic environment of the Mong Kok clash.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Sources specifically documenting the Mong Kok Clash (Fishball Revolution) of February 8, 2016, are required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

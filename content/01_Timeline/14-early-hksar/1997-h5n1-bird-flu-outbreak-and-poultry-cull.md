@@ -4,7 +4,7 @@ title_zh: "H5N1禽流感爆發與殺雞行动"
 date: 1997-12-29
 year: 1997
 era: "The early HKSAR"
-tags: ["evidence-b", "1997", "ai-draft", "bird-flu", "early-hksar", "h5n1", "poultry-cull", "public-health"]
+tags: ["wikipedia-checked", "evidence-b", "1997", "ai-draft", "bird-flu", "early-hksar", "h5n1", "poultry-cull", "public-health"]
 summary: "In late December 1997, the newly established Hong Kong Special Administrative Region government ordered the slaughter of approximately 1.3 million chickens to halt the world's first documented outbreak of the H5N1 avian influenza in humans."
 description: "In late December 1997, the newly established Hong Kong Special Administrative Region government ordered the slaughter of approximately 1.3 million chickens to halt the world's first documented outbreak of the H5N1 avian…"
 confidence: ai-draft
@@ -38,21 +38,21 @@ The drastic intervention successfully halted the immediate outbreak, with no fur
 - [[02_Entities/People/tung-chee-hwa|Tung Chee-hwa (董建華)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact total number of poultry culled during the late December 1997 operation
-- ❔ The precise date the H5N1 virus was first isolated and identified in the index patient
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact total number of poultry culled during the late December 1997 operation. The text states the entire domestic poultry population within the territory was killed to stop the 1997 Hong Kong outbreak, but it does not provide a specific number.
+- ❔ **not in Wikipedia**: The precise date the H5N1 virus was first isolated and identified in the index patient. The text confirms human infection in 18 individuals during the 1997 Hong Kong outbreak, but does not provide a precise date or reference an index patient.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Influenza A virus subtype H5N1](https://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H5N1)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Trevor Maxwell Ellis, Rachel Bousfield, Lucy A. Bissett (2004). *Investigation of outbreaks of highly pathogenic H5N1 avian influenza in waterfowl and wild birds in Hong Kong in late 2002*. Avian Pathology.](https://doi.org/10.1080/03079450400003601) (claims 1, 3): It confirms that H5N1 outbreaks occurred in Hong Kong in 1997.
-
-**Still needed:** Evidence regarding the poultry cull and the specific date of December 29, 1997.
-
+- ✓ [Outbreak of Avian Influenza A(H5N1) Virus Infection in Hong Kong in 1997](https://doi.org/10.1086/338820) (DOI)
+- ✓ [H5N1 Virus Attachment to Lower Respiratory Tract](https://doi.org/10.1126/science.1125548) (DOI)
+- ✓ [New Genotype of Avian Influenza H5N1 Viruses Isolated from Tree Sparrows in China](https://doi.org/10.1128/JVI.79.24.15460-15466.2005) (DOI)
+- ✓ [Influenza H5/H7 Virus Vaccination in Poultry and Reduction of Zoonotic Infections, Guangdong Province, China, 2017–18](https://doi.org/10.3201/eid2501.181259) (DOI)
+- ✓ [Recent Changes in Patterns of Mammal Infection with Highly Pathogenic Avian Influenza A(H5N1) Virus Worldwide](https://doi.org/10.3201/eid3003.231098) (DOI)
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

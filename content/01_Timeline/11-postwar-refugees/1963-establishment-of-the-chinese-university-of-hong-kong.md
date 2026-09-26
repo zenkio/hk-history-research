@@ -4,10 +4,11 @@ title_zh: "香港中文大學的成立"
 date: 1963-10-17
 year: 1963
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1960s", "1963", "ai-draft", "bilingual-education", "chinese-university-of-hong-kong", "higher-education", "postwar-hong-kong", "postwar-refugees"]
+tags: ["evidence-a", "1960s", "1963", "ai-draft", "bilingual-education", "chinese-university-of-hong-kong", "higher-education", "postwar-hong-kong", "postwar-refugees"]
 summary: "On **October 17, 1963**, the Chinese University of Hong Kong was formally established through the amalgamation of three existing post-secondary colleges, providing a federal, bilingual alternative to the University of Hong Kong."
 description: "On October 17, 1963, the Chinese University of Hong Kong was formally established through the amalgamation of three existing post-secondary colleges, providing a federal, bilingual alternative to the University of Hong…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,15 @@ The establishment marked a major milestone in local educational history by insti
 - ❔ The Chinese University of Hong Kong was formally established on October 17, 1963.
 - ❔ Li Cho-ming served as the university's first vice-chancellor.
 - ❔ The university was formed through the amalgamation of New Asia College, Chung Chi College, and United College.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [The National Archives (UK), BW 90/1599, 1963-1974. Establishment and inauguration of the university, 1963; correspondence and papers dealing with IUC's advice and assistance, 1966-1974. With Chinese University of Hong Kong Ordinance 1963; architect's ](https://discovery.nationalarchives.gov.uk/details/r/C631232): This archive record directly pertains to the establishment, inauguration, and the 1963 Ordinance of the Chinese University of Hong Kong.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

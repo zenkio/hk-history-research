@@ -4,10 +4,11 @@ title_zh: "塑膠花製造業的興起"
 date: 1957-01-01
 year: 1957
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950s", "1957", "ai-draft", "cottage-labour", "light-industry", "manufacturing-boom", "plastic-flowers", "postwar-economy", "postwar-refugees"]
+tags: ["evidence-none", "1950s", "1957", "ai-draft", "cottage-labour", "light-industry", "manufacturing-boom", "plastic-flowers", "postwar-economy", "postwar-refugees"]
 summary: "Beginning around 1957, the rapid expansion of plastic flower production transformed Hong Kong's economy, driving its light industrial revolution and providing widespread home-assembly employment."
 description: "Beginning around 1957, the rapid expansion of plastic flower production transformed Hong Kong's economy, driving its light industrial revolution and providing widespread home-assembly employment."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The plastic flower boom marked a critical turning point in Hong Kong's transitio
 
 - ❔ The precise year when plastic flower manufacturing became the dominant sector of Hong Kong's light exports.
 - ❔ The exact percentage of the urban workforce engaged in home-assembly outwork during the peak years of 1957 to 1960.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the rise, economic impact, and historical context of the plastic flower manufacturing industry in Hong Kong.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

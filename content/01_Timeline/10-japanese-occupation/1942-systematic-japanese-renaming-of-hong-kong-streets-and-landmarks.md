@@ -4,10 +4,11 @@ title_zh: "日軍係統性更換香港街道及地標名稱"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "colonial-history", "japanese-occupation", "urban-history", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "colonial-history", "japanese-occupation", "urban-history", "world-war-ii"]
 summary: "In April 1942, the Japanese military administration systematically replaced British colonial place names in Hong Kong with Japanese titles to erase Western influence and promote imperial assimilation."
 description: "In April 1942, the Japanese military administration systematically replaced British colonial place names in Hong Kong with Japanese titles to erase Western influence and promote imperial assimilation."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The renaming campaign served as a powerful tool of psychological warfare and cul
 
 - ❔ Did the systematic renaming of Hong Kong streets officially take place specifically in April 1942?
 - ❔ Were Queen's Road and Victoria Peak officially renamed to Meiji-dori and Kasugayama respectively?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Japanese renaming of Hong Kong streets and landmarks between 1941 and 1945 is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

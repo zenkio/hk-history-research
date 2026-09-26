@@ -4,10 +4,11 @@ title_zh: "香港樂壇「四大天王」的崛起"
 date: 1992-01-01
 year: 1992
 era: "Sino-British negotiations and the transition"
-tags: ["1992", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-culture", "mass-media", "soft-power", "transition"]
+tags: ["evidence-none", "1992", "ai-draft", "cantopop", "four-heavenly-kings", "hong-kong-culture", "mass-media", "soft-power", "transition"]
 summary: "In 1992, the Hong Kong entertainment industry consolidated around four dominant male pop stars, a phenomenon that marked a commercial peak for Cantopop and projected the city's soft power across the Chinese-speaking world."
 description: "In 1992, the Hong Kong entertainment industry consolidated around four dominant male pop stars, a phenomenon that marked a commercial peak for Cantopop and projected the city's soft power across the Chinese-speaking…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -49,5 +50,13 @@ The cementing of the Four Heavenly Kings represented the absolute zenith of Cant
 
 - ❔ The exact newspaper and date in 1992 when the term 'Four Heavenly Kings' was first coined in print.
 - ❔ The specific sales figures and award ceremonies that formally solidified the status of the four singers in 1992.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the rise, impact, or individual careers of the 'Four Heavenly Kings' is required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

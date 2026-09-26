@@ -4,10 +4,11 @@ title_zh: "機動交通崩潰與人力運輸興起"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "fuel-shortage", "japanese-occupation", "rickshaws", "transport-history", "world-war-two"]
+tags: ["evidence-none", "1943", "ai-draft", "fuel-shortage", "japanese-occupation", "rickshaws", "transport-history", "world-war-two"]
 summary: "By October 1943, severe fuel blockades and resource shortages during the Japanese occupation completely paralyzed Hong Kong's motorized transport, forcing the population to rely on walking, bicycles, and revived rickshaw networks."
 description: "By October 1943, severe fuel blockades and resource shortages during the Japanese occupation completely paralyzed Hong Kong's motorized transport, forcing the population to rely on walking, bicycles, and revived…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The collapse of motorized transit severely disrupted the economic recovery and d
 
 - ❔ Exact operational status of China Motor Bus and Hongkong Tramways in October 1943
 - ❔ Specific Japanese military directives regarding civilian bicycle registration and rickshaw permits in 1943
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the historical shift from motorized to human-powered transport specifically in Hong Kong during the 1940s is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

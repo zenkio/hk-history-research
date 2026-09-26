@@ -4,10 +4,11 @@ title_zh: "「香港女兒」梅豔芳逝世"
 date: 2003-12-30
 year: 2003
 era: "The early HKSAR"
-tags: ["2003", "ai-draft", "anita-mui", "cantopop", "early-hksar", "hksar-history", "hong-kong-cinema"]
+tags: ["evidence-b", "2003", "ai-draft", "anita-mui", "cantopop", "early-hksar", "hksar-history", "hong-kong-cinema"]
 summary: "The passing of iconic singer and actress Anita Mui on December 30, 2003, deeply mourned by the public, capped off a particularly tragic year for Hong Kong and marked a profound milestone in the collective memory of the territory."
 description: "The passing of iconic singer and actress Anita Mui on December 30, 2003, deeply mourned by the public, capped off a particularly tragic year for Hong Kong and marked a profound milestone in the collective memory of the…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,17 @@ The death of **Anita Mui** became a defining cultural moment for the early HKSAR
 - ❔ Anita Mui passed away on December 30, 2003, at the Hong Kong Sanatorium & Hospital.
 - ❔ Mui publicly announced her cervical cancer diagnosis in September 2003.
 - ❔ Her farewell concert series took place at the Hong Kong Coliseum in November 2003.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Cui Tingting (2022). *The Construction of Female Identity in Chinese Biographical Film Anita Through the Lens of Male Gaze*. Asian Journal of Social Science Studies.](https://doi.org/10.20849/ajsss.v7i8.1269) (claims 1): The source discusses Anita Mui's identity and her journey from a child performer to a recognized music idol.
+
+**Still needed:** Evidence regarding the specific circumstances and cause of her death on December 30, 2003, is needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

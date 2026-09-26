@@ -4,10 +4,11 @@ title_zh: "巴士阿叔事件"
 date: 2006-04-27
 year: 2006
 era: "The early HKSAR"
-tags: ["2006", "ai-draft", "bus-uncle", "early-hksar", "hksar-history", "internet-culture", "urban-life", "viral-video"]
+tags: ["evidence-none", "2006", "ai-draft", "bus-uncle", "early-hksar", "hksar-history", "internet-culture", "urban-life", "viral-video"]
 summary: "In April 2006, a secretly filmed mobile phone video of a heated argument between two passengers on a Hong Kong bus became one of the territory's earliest international internet viral sensations."
 description: "In April 2006, a secretly filmed mobile phone video of a heated argument between two passengers on a Hong Kong bus became one of the territory's earliest international internet viral sensations."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The incident is widely viewed by media scholars and sociologists as a watershed 
 
 - ❔ The exact date the video was filmed on KMB Route 68X
 - ❔ The precise viewership statistics reported by international media at the time
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Specific primary or secondary sources documenting the 2006 Bus Uncle viral video incident are needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

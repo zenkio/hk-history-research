@@ -4,10 +4,11 @@ title_zh: "中聯電影企業有限公司之創立"
 date: 1952-01-01
 year: 1952
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1952", "ai-draft", "cantonese-cinema", "film-history", "postwar-hong-kong", "postwar-refugees", "social-realism", "union-film"]
+tags: ["evidence-b", "1952", "ai-draft", "cantonese-cinema", "film-history", "postwar-hong-kong", "postwar-refugees", "social-realism", "union-film"]
 summary: "Established in July 1952, Union Film Enterprise was a pioneering Hong Kong film cooperative that sought to elevate the artistic and moral standards of Cantonese-language cinema through socially conscious storytelling."
 description: "Established in July 1952, Union Film Enterprise was a pioneering Hong Kong film cooperative that sought to elevate the artistic and moral standards of Cantonese-language cinema through socially conscious storytelling."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,17 @@ The founding of Union Film is widely viewed by film historians as a watershed mo
 
 - ❔ Union Film Enterprise was officially incorporated in July 1952.
 - ❔ The cooperative model utilized by Union Film fundamentally altered production standards across the broader Cantonese film industry.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Yeh, Emilie Yueh-yu (2017). *Early Film Culture in Hong Kong, Taiwan, and Republican China*. University of Michigan Press eBooks.](https://doi.org/10.3998/mpub.9731616) (claims 1): This scholarship explores early cinema culture in Hong Kong, which is the relevant historical context for the film enterprise.
+
+**Still needed:** Specific primary or secondary evidence confirming the exact founding date and establishment of Union Film Enterprise is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

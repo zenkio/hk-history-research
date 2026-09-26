@@ -4,10 +4,11 @@ title_zh: "引入越南難民甄別政策"
 date: 1988-06-16
 year: 1988
 era: "Sino-British negotiations and the transition"
-tags: ["1988", "ai-draft", "boat-people", "closed-camps", "immigration-policy", "sino-british-transition", "transition", "vietnamese-refugees"]
+tags: ["evidence-b", "1988", "ai-draft", "boat-people", "closed-camps", "immigration-policy", "sino-british-transition", "transition", "vietnamese-refugees"]
 summary: "On June 16, 1988, the Hong Kong government abandoned its long-standing policy of granting temporary refuge to all Vietnamese asylum seekers, introducing a mandatory screening process to distinguish political refugees from economic migrants."
 description: "On June 16, 1988, the Hong Kong government abandoned its long-standing policy of granting temporary refuge to all Vietnamese asylum seekers, introducing a mandatory screening process to distinguish political refugees…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,17 @@ The implementation of the screening policy marked a fundamental turning point in
 
 - ❔ The exact administrative mechanisms and legal criteria used by the Hong Kong government during the June 1988 screening process.
 - ❔ The precise diplomatic communications between British, Hong Kong, and Vietnamese authorities preceding the implementation of the policy.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Arthur C. Helton (1991). *Judicial Review of the Refugee Status Determination Procedure for Vietnamese Asylum Seekers in Hong Kong*. bepress Legal Repository.](https://openalex.org/W2791947658) (claims 1): It directly discusses the refugee status determination procedure for Vietnamese asylum seekers in Hong Kong.
+
+**Still needed:** Official documentation or government records specifically confirming the implementation date of the screening policy as June 16, 1988.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "實施鄰組家庭監視制度"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "japanese-occupation", "social-control", "surveillance", "tonarigumi", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "japanese-occupation", "social-control", "surveillance", "tonarigumi", "world-war-ii"]
 summary: "In April 1942, Japanese occupation authorities in Hong Kong formally introduced the Tonarigumi neighborhood surveillance system to enforce collective responsibility, monitor urban residents, and suppress anti-Japanese activities."
 description: "In April 1942, Japanese occupation authorities in Hong Kong formally introduced the Tonarigumi neighborhood surveillance system to enforce collective responsibility, monitor urban residents, and suppress anti-Japanese…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The establishment of the **Tonarigumi** marked a critical phase in the instituti
 
 - ❔ The exact formal decree date and rollout timeline of the Tonarigumi system across different urban districts of Hong Kong in April 1942.
 - ❔ The specific administrative structure and penalty mechanisms enforced by neighborhood leaders under the Japanese military administration.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the implementation of the Tonarigumi system in Hong Kong is still needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

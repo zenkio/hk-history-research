@@ -2603,7 +2603,8 @@
       "date": "1996-03-30",
       "summary": "Tens of thousands of residents queued overnight at the Immigration Department to apply for British National (Overseas) status before the registration deadline.",
       "status": "done",
-      "file": "13-transition/1996-the-great-bno-passport-application-rush.md"
+      "file": "13-transition/1996-the-great-bno-passport-application-rush.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "13-transition",
@@ -2612,7 +2613,8 @@
       "date": "1996-12-11",
       "summary": "Shipping tycoon Tung Chee-hwa was chosen by a Beijing-backed Selection Committee to become the first Chief Executive of post-handover Hong Kong.",
       "status": "done",
-      "file": "13-transition/1996-tung-chee-hwa-selected-first-chief-executive.md"
+      "file": "13-transition/1996-tung-chee-hwa-selected-first-chief-executive.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "13-transition",
@@ -2621,7 +2623,8 @@
       "date": "1997-06-30",
       "summary": "British forces and administrators held a rain-soaked farewell ceremony at HMS Tamar, symbolically marking the end of 156 years of British colonial rule.",
       "status": "done",
-      "file": "13-transition/1997-the-sunset-farewell-ceremony.md"
+      "file": "13-transition/1997-the-sunset-farewell-ceremony.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "13-transition",
@@ -2630,7 +2633,8 @@
       "date": "1997-07-01",
       "summary": "The sovereignty of Hong Kong was officially transferred to the People's Republic of China at midnight, establishing the Hong Kong Special Administrative Region.",
       "status": "done",
-      "file": "13-transition/1997-the-official-handover-to-china.md"
+      "file": "13-transition/1997-the-official-handover-to-china.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2639,7 +2643,8 @@
       "date": "1997-07-01",
       "summary": "The United Kingdom transfers control of Hong Kong to the People's Republic of China, establishing the Hong Kong Special Administrative Region under the 'One Country, Two Systems' framework.",
       "status": "done",
-      "file": "14-early-hksar/1997-transfer-of-sovereignty-over-hong-kong.md"
+      "file": "14-early-hksar/1997-transfer-of-sovereignty-over-hong-kong.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2648,7 +2653,9 @@
       "date": "1997-10-23",
       "summary": "Hong Kong monetary authorities successfully defend the currency peg against speculative attacks during the Asian Financial Crisis, though at a heavy cost to local stock and property markets.",
       "status": "done",
-      "file": "14-early-hksar/1997-defense-of-the-hong-kong-dollar-peg.md"
+      "file": "14-early-hksar/1997-defense-of-the-hong-kong-dollar-peg.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "14-early-hksar",
@@ -2657,7 +2664,8 @@
       "date": "1997-12-29",
       "summary": "Following the first human deaths from the H5N1 avian influenza virus, the government orders a slaughter of 1.3 million chickens, initiating a new era of strict public health vigilance.",
       "status": "done",
-      "file": "14-early-hksar/1997-h5n1-bird-flu-outbreak-and-poultry-cull.md"
+      "file": "14-early-hksar/1997-h5n1-bird-flu-outbreak-and-poultry-cull.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2666,7 +2674,8 @@
       "date": "1998-07-06",
       "summary": "The iconic Kai Tak Airport closes and the new state-of-the-art international airport opens on reclaimed land, boosting Hong Kong's role as a global aviation and logistics hub.",
       "status": "done",
-      "file": "14-early-hksar/1998-opening-of-chek-lap-kok-international-airport.md"
+      "file": "14-early-hksar/1998-opening-of-chek-lap-kok-international-airport.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2675,7 +2684,8 @@
       "date": "1999-06-26",
       "summary": "Following a controversial Court of Final Appeal ruling on mainland children's right of abode, Beijing issues its first interpretation of the Basic Law, establishing a precedent that alters judicial independence dynamics.",
       "status": "done",
-      "file": "14-early-hksar/1999-first-npcsc-basic-law-interpretation-on-right-of-abode.md"
+      "file": "14-early-hksar/1999-first-npcsc-basic-law-interpretation-on-right-of-abode.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2684,7 +2694,8 @@
       "date": "2000-12-01",
       "summary": "The government launches a compulsory retirement saving scheme for the workforce, marking a significant milestone in the development of Hong Kong's social security system.",
       "status": "done",
-      "file": "14-early-hksar/2000-launch-of-the-mandatory-provident-fund-scheme.md"
+      "file": "14-early-hksar/2000-launch-of-the-mandatory-provident-fund-scheme.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2693,7 +2704,8 @@
       "date": "2001-04-30",
       "summary": "The standard-bearer of the civil service resigns early, signaling growing tensions between career bureaucrats and Beijing-appointed political leaders.",
       "status": "done",
-      "file": "14-early-hksar/2001-resignation-of-chief-secretary-anson-chan.md"
+      "file": "14-early-hksar/2001-resignation-of-chief-secretary-anson-chan.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2702,7 +2714,8 @@
       "date": "2002-07-01",
       "summary": "Chief Executive Tung Chee-hwa introduces a cabinet-style system of politically appointed officials, transforming the civil service's traditional role in policy-making.",
       "status": "done",
-      "file": "14-early-hksar/2002-introduction-of-the-principal-officials-accountability-system.md"
+      "file": "14-early-hksar/2002-introduction-of-the-principal-officials-accountability-system.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2711,7 +2724,9 @@
       "date": "2003-03-11",
       "summary": "Severe Acute Respiratory Syndrome spreads rapidly, infecting 1,755 people and killing 299, deeply traumatizing the community and devastating the local economy.",
       "status": "done",
-      "file": "14-early-hksar/2003-the-sars-outbreak-cripples-the-city.md"
+      "file": "14-early-hksar/2003-the-sars-outbreak-cripples-the-city.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "14-early-hksar",
@@ -2720,7 +2735,8 @@
       "date": "2003-04-01",
       "summary": "The tragic suicide of the legendary Cantopop star and actor during the height of the SARS crisis causes widespread public grief and symbolizes the end of a golden cultural era.",
       "status": "done",
-      "file": "14-early-hksar/2003-death-of-pop-icon-leslie-cheung.md"
+      "file": "14-early-hksar/2003-death-of-pop-icon-leslie-cheung.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2729,7 +2745,8 @@
       "date": "2003-06-29",
       "summary": "Hong Kong and Mainland China sign a free trade agreement to accelerate economic recovery by granting preferential access for Hong Kong goods and services to the mainland market.",
       "status": "done",
-      "file": "14-early-hksar/2003-signing-of-the-closer-economic-partnership-arrangement.md"
+      "file": "14-early-hksar/2003-signing-of-the-closer-economic-partnership-arrangement.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2738,7 +2755,8 @@
       "date": "2003-07-01",
       "summary": "Over half a million residents march to protest proposed anti-subversion laws, forcing the government to shelve the legislation and igniting a powerful pro-democracy civil society movement.",
       "status": "done",
-      "file": "14-early-hksar/2003-massive-protest-against-article-23-national-security-bill.md"
+      "file": "14-early-hksar/2003-massive-protest-against-article-23-national-security-bill.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2747,7 +2765,8 @@
       "date": "2003-07-28",
       "summary": "Beijing allows mainland travelers from select cities to visit Hong Kong individually rather than in tour groups, sparking a massive tourism boom and deeply reshaping the local retail economy.",
       "status": "done",
-      "file": "14-early-hksar/2003-launch-of-the-individual-visit-scheme.md"
+      "file": "14-early-hksar/2003-launch-of-the-individual-visit-scheme.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2756,7 +2775,8 @@
       "date": "2004-04-06",
       "summary": "The National People's Congress Standing Committee rules out direct elections for the Chief Executive and Legislative Council in the upcoming term, stalling democratic reforms.",
       "status": "done",
-      "file": "14-early-hksar/2004-npcsc-rules-out-20072008-universal-suffrage.md"
+      "file": "14-early-hksar/2004-npcsc-rules-out-20072008-universal-suffrage.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2765,7 +2785,8 @@
       "date": "2005-03-12",
       "summary": "Unpopular and beset by political crises, Hong Kong's first post-handover leader resigns midway through his second term, officially citing health reasons.",
       "status": "done",
-      "file": "14-early-hksar/2005-resignation-of-chief-executive-tung-chee-hwa.md"
+      "file": "14-early-hksar/2005-resignation-of-chief-executive-tung-chee-hwa.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2774,7 +2795,8 @@
       "date": "2005-06-21",
       "summary": "The former career civil servant and Financial Secretary wins the uncontested by-election to succeed Tung Chee-hwa, promising a pragmatist approach to governance.",
       "status": "done",
-      "file": "14-early-hksar/2005-donald-tsang-becomes-chief-executive.md"
+      "file": "14-early-hksar/2005-donald-tsang-becomes-chief-executive.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2783,7 +2805,8 @@
       "date": "2005-09-12",
       "summary": "The opening of the American-branded theme park on Lantau Island represents a major government investment to position Hong Kong as a family tourist destination.",
       "status": "done",
-      "file": "14-early-hksar/2005-opening-of-hong-kong-disneyland.md"
+      "file": "14-early-hksar/2005-opening-of-hong-kong-disneyland.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2792,7 +2815,8 @@
       "date": "2005-12-13",
       "summary": "Violent anti-globalization protests, led primarily by South Korean farmers, clash with police in Wan Chai during the World Trade Organization summit, putting local security forces to the test.",
       "status": "done",
-      "file": "14-early-hksar/2005-wto-ministerial-conference-protests.md"
+      "file": "14-early-hksar/2005-wto-ministerial-conference-protests.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2801,7 +2825,8 @@
       "date": "2007-08-01",
       "summary": "Activists occupy the historic Queen's Pier in a failed bid to prevent its demolition, marking the birth of a modern conservation movement centered on Hong Kong identity.",
       "status": "done",
-      "file": "14-early-hksar/2007-demolition-of-queens-pier-sparks-heritage-movement.md"
+      "file": "14-early-hksar/2007-demolition-of-queens-pier-sparks-heritage-movement.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "14-early-hksar",
@@ -2810,7 +2835,8 @@
       "date": "2008-08-08",
       "summary": "Hong Kong co-hosts the Beijing Summer Olympics by staging the equestrian competitions, which coincides with a historic peak of Chinese patriotic sentiment among local residents.",
       "status": "done",
-      "file": "14-early-hksar/2008-hong-kong-hosts-olympic-equestrian-events.md"
+      "file": "14-early-hksar/2008-hong-kong-hosts-olympic-equestrian-events.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2819,7 +2845,8 @@
       "date": "2008-08-09",
       "summary": "Hong Kong hosting the Olympic equestrian events marked a historic peak in local civic pride and affinity with Chinese national identity.",
       "status": "done",
-      "file": "15-contention/2008-hong-kong-hosts-beijing-olympic-equestrian-events.md"
+      "file": "15-contention/2008-hong-kong-hosts-beijing-olympic-equestrian-events.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2828,7 +2855,8 @@
       "date": "2010-01-16",
       "summary": "Mass protests against a multi-billion dollar high-speed rail link to the mainland birthed a new era of youth-led localist and environmental activism.",
       "status": "done",
-      "file": "15-contention/2010-anti-express-rail-link-protests-peak.md"
+      "file": "15-contention/2010-anti-express-rail-link-protests-peak.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2837,7 +2865,8 @@
       "date": "2010-06-25",
       "summary": "The government passed a compromised electoral reform package after receiving rare backing from moderate pan-democrats.",
       "status": "done",
-      "file": "15-contention/2010-passage-of-the-2012-constitutional-reform-package.md"
+      "file": "15-contention/2010-passage-of-the-2012-constitutional-reform-package.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2846,7 +2875,8 @@
       "date": "2011-05-29",
       "summary": "The high school student activist group Scholarism was founded to oppose the government's proposed pro-Beijing national education curriculum.",
       "status": "done",
-      "file": "15-contention/2011-foundation-of-scholarism-youth-activist-group.md"
+      "file": "15-contention/2011-foundation-of-scholarism-youth-activist-group.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2855,7 +2885,8 @@
       "date": "2012-03-25",
       "summary": "Leung Chun-ying was selected as Chief Executive, ushering in a highly polarized political era characterized by hardening localist sentiment.",
       "status": "done",
-      "file": "15-contention/2012-leung-chun-ying-elected-chief-executive.md"
+      "file": "15-contention/2012-leung-chun-ying-elected-chief-executive.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2864,7 +2895,9 @@
       "date": "2012-09-08",
       "summary": "Massive student-led sit-ins forced the government to shelve its controversial moral and national education curriculum.",
       "status": "done",
-      "file": "15-contention/2012-withdrawal-of-national-education-curriculum.md"
+      "file": "15-contention/2012-withdrawal-of-national-education-curriculum.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "15-contention",
@@ -2873,7 +2906,9 @@
       "date": "2014-06-10",
       "summary": "Beijing asserted its 'comprehensive jurisdiction' over Hong Kong in a landmark policy document that alarmed local pro-democracy groups.",
       "status": "done",
-      "file": "15-contention/2014-beijing-issues-white-paper-on-hong-kong.md"
+      "file": "15-contention/2014-beijing-issues-white-paper-on-hong-kong.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "15-contention",
@@ -2882,7 +2917,9 @@
       "date": "2014-08-31",
       "summary": "The Chinese government restricted future Chief Executive elections to pre-vetted candidates, triggering deep local disappointment and fueling protest plans.",
       "status": "done",
-      "file": "15-contention/2014-npcsc-announces-the-831-decision-on-suffrage.md"
+      "file": "15-contention/2014-npcsc-announces-the-831-decision-on-suffrage.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "15-contention",
@@ -2891,7 +2928,8 @@
       "date": "2014-09-28",
       "summary": "Pro-democracy protesters occupied major thoroughfares for 79 days demanding genuine universal suffrage after police fired tear gas at crowds.",
       "status": "done",
-      "file": "15-contention/2014-launch-of-the-umbrella-movement.md"
+      "file": "15-contention/2014-launch-of-the-umbrella-movement.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2900,7 +2938,8 @@
       "date": "2015-10-17",
       "summary": "The mysterious disappearance of five local publishers into mainland custody heightened fears over the erosion of free speech and 'One Country, Two Systems.'",
       "status": "done",
-      "file": "15-contention/2015-disappearance-of-causeway-bay-booksellers.md"
+      "file": "15-contention/2015-disappearance-of-causeway-bay-booksellers.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2909,7 +2948,8 @@
       "date": "2016-02-08",
       "summary": "Clashes erupted in Mong Kok between localists and police over unlicensed food stalls, signaling a tactical shift toward militant street action.",
       "status": "done",
-      "file": "15-contention/2016-mong-kok-clash-fishball-revolution.md"
+      "file": "15-contention/2016-mong-kok-clash-fishball-revolution.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2918,7 +2958,8 @@
       "date": "2016-10-12",
       "summary": "Six newly elected pro-democracy and localist legislators were disqualified for altering their official oaths of office during the swearing-in ceremony.",
       "status": "done",
-      "file": "15-contention/2016-oath-taking-controversy-disqualifies-lawmakers.md"
+      "file": "15-contention/2016-oath-taking-controversy-disqualifies-lawmakers.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",

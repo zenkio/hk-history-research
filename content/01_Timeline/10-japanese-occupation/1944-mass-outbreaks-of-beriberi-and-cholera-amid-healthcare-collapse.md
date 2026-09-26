@@ -4,10 +4,11 @@ title_zh: "醫療系統崩潰下的腳氣病與霍亂大流行"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "beriberi", "cholera", "japanese-occupation", "malnutrition", "public-health", "world-war-two"]
+tags: ["evidence-none", "1944", "ai-draft", "beriberi", "cholera", "japanese-occupation", "malnutrition", "public-health", "world-war-two"]
 summary: "By **1944**, severe food shortages, rationing, and the collapse of municipal sanitation under the Japanese occupation triggered devastating outbreaks of beriberi and cholera throughout Hong Kong."
 description: "By 1944, severe food shortages, rationing, and the collapse of municipal sanitation under the Japanese occupation triggered devastating outbreaks of beriberi and cholera throughout Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The health crisis of **1944** underscored the devastating human cost of the occu
 
 - ❔ Exact mortality statistics for beriberi and cholera in March 1944.
 - ❔ The specific distribution channels and rationing amounts of Vitamin B1-rich foods during early 1944.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting outbreaks of beriberi and cholera and the state of healthcare in Hong Kong during 1944.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

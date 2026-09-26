@@ -4,10 +4,11 @@ title_zh: "律敦治結核療養院開幕"
 date: 1949-02-23
 year: 1949
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1949", "ai-draft", "colonial-era", "philanthropy", "postwar-history", "postwar-refugees", "public-health", "tuberculosis"]
+tags: ["evidence-none", "1949", "ai-draft", "colonial-era", "philanthropy", "postwar-history", "postwar-refugees", "public-health", "tuberculosis"]
 summary: "On February 23, 1949, the Ruttonjee Sanatorium officially opened in Wan Chai, marking a major milestone in postwar Hong Kong's public health history by addressing the territory's devastating tuberculosis crisis."
 description: "On February 23, 1949, the Ruttonjee Sanatorium officially opened in Wan Chai, marking a major milestone in postwar Hong Kong's public health history by addressing the territory's devastating tuberculosis crisis."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The opening of the sanatorium marked a critical turning point in Hong Kong's pub
 
 - ❔ The exact opening date of the Ruttonjee Sanatorium was February 23, 1949.
 - ❔ Tuberculosis was the leading cause of death in postwar Hong Kong.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the specific opening ceremony or establishment of the Ruttonjee Sanatorium in February 1949.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

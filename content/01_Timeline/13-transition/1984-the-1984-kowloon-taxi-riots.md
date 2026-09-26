@@ -4,10 +4,11 @@ title_zh: "一九八四年九龍德士騷動"
 date: 1984-01-13
 year: 1984
 era: "Sino-British negotiations and the transition"
-tags: ["1984", "ai-draft", "kowloon", "labor-strike", "sino-british-negotiations", "taxi-riots", "transition"]
+tags: ["evidence-none", "1984", "ai-draft", "kowloon", "labor-strike", "sino-british-negotiations", "taxi-riots", "transition"]
 summary: "In January 1984, a strike by Hong Kong taxi drivers protesting government tax and license fee increases escalated into widespread rioting in Kowloon, exposing broader economic anxieties during the ongoing Sino-British negotiations."
 description: "In January 1984, a strike by Hong Kong taxi drivers protesting government tax and license fee increases escalated into widespread rioting in Kowloon, exposing broader economic anxieties during the ongoing Sino-British…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The **1984 Kowloon Taxi Riots** shocked the colonial government, serving as a st
 - ❔ The exact date the taxi strike and subsequent riots began was January 13, 1984.
 - ❔ The specific tax and license fee increases proposed by the colonial government that triggered the drivers' strike.
 - ❔ The total number of arrests, injuries, and the extent of property damage reported during the Kowloon disturbances.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 1984 Kowloon Taxi Riots, such as contemporary news reports, police records, or historical accounts of that specific event, is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

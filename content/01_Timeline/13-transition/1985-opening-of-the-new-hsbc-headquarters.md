@@ -4,10 +4,11 @@ title_zh: "香港上海匯豐銀行總行大廈開幕"
 date: 1985-11-18
 year: 1985
 era: "Sino-British negotiations and the transition"
-tags: ["1985", "ai-draft", "architecture", "central", "financial-hub", "hsbc", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-none", "1985", "ai-draft", "architecture", "central", "financial-hub", "hsbc", "sino-british-joint-declaration", "transition"]
 summary: "On November 18, 1985, the iconic high-tech headquarters of the Hongkong and Shanghai Banking Corporation opened in Central, serving as a powerful architectural statement of confidence during the Sino-British transition period."
 description: "On November 18, 1985, the iconic high-tech headquarters of the Hongkong and Shanghai Banking Corporation opened in Central, serving as a powerful architectural statement of confidence during the Sino-British transition…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The opening of the HSBC headquarters served as a tangible manifestation of corpo
 - ❔ The exact official opening date of the HSBC headquarters was November 18, 1985.
 - ❔ The building was financed entirely as a statement of confidence in the 1984 Joint Declaration.
 - ❔ The construction made it the most expensive building in the world at that specific time.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the opening ceremony or history of the new HSBC headquarters in 1985 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

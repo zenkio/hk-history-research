@@ -4,10 +4,11 @@ title_zh: "一九二九年香港嚴重旱災"
 date: 1929-01-01
 year: 1929
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1929", "ai-draft", "colonial-history", "drought", "infrastructure", "interwar", "water-crisis"]
+tags: ["evidence-none", "1929", "ai-draft", "colonial-history", "drought", "infrastructure", "interwar", "water-crisis"]
 summary: "An acute drought in 1929 triggered severe water rationing and emergency water imports by sea to Hong Kong, exposing critical infrastructure vulnerabilities and accelerating long-term reservoir development."
 description: "An acute drought in 1929 triggered severe water rationing and emergency water imports by sea to Hong Kong, exposing critical infrastructure vulnerabilities and accelerating long-term reservoir development."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ Historians note that while the immediate crisis was managed through emergency lo
 
 - ❔ Exact daily water rationing schedules implemented in 1929
 - ❔ Specific volume and sources of emergency water imported by sea in 1929
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 1929 Hong Kong water crisis is missing from the provided sources.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

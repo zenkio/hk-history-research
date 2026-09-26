@@ -4,10 +4,11 @@ title_zh: "保釣運動抗議"
 date: 1971-07-07
 year: 1971
 era: "Riots and the MacLehose reforms"
-tags: ["1971", "ai-draft", "defend-diaoyu-islands", "political-consciousness", "riots-and-reform", "student-activism", "victoria-park"]
+tags: ["evidence-none", "1971", "ai-draft", "defend-diaoyu-islands", "political-consciousness", "riots-and-reform", "student-activism", "victoria-park"]
 summary: "On July 7, 1971, student activists in Hong Kong gathered in Victoria Park to protest the impending handover of the disputed Diaoyu Islands to Japan, marking a watershed moment for local youth activism and political consciousness."
 description: "On July 7, 1971, student activists in Hong Kong gathered in Victoria Park to protest the impending handover of the disputed Diaoyu Islands to Japan, marking a watershed moment for local youth activism and political…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ While the geopolitical outcome of the territorial dispute remained unchanged, th
 
 - ❔ Exact police troop numbers and arrest figures during the July 7, 1971 Victoria Park demonstration
 - ❔ The precise organizational links between overseas Chinese student groups in the US and university student unions in Hong Kong in mid-1971
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Historical accounts or specific evidence regarding the 1971 Diaoyu Islands Movement Protests in Hong Kong.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,10 +4,11 @@ title_zh: "瑪麗醫院開幕"
 date: 1937-04-13
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1937", "ai-draft", "british-colonial-era", "interwar", "medical-history", "public-health", "queen-mary-hospital", "university-of-hong-kong"]
+tags: ["evidence-a", "1937", "ai-draft", "british-colonial-era", "interwar", "medical-history", "public-health", "queen-mary-hospital", "university-of-hong-kong"]
 summary: "On April 13, 1937, Queen Mary Hospital officially opened as the British colony's premier public teaching facility, marking a major advancement in Hong Kong's medical infrastructure and clinical education."
 description: "On April 13, 1937, Queen Mary Hospital officially opened as the British colony's premier public teaching facility, marking a major advancement in Hong Kong's medical infrastructure and clinical education."
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,17 @@ The establishment of the hospital significantly elevated the standard of modern 
 
 - ❔ Queen Mary Hospital officially opened on April 13, 1937
 - ❔ The hospital was established to serve as the primary teaching facility for the University of Hong Kong Faculty of Medicine
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [*Hong Kong Telegraph 1937-04-05* (1937), Internet Archive.](https://archive.org/details/NPTG19370405): It discusses the official opening arrangements for the Queen Mary Hospital in April 1937.
+
+**Still needed:** Evidence specifically confirming the opening date of April 13, 1937, and details of the event.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

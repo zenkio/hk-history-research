@@ -4,7 +4,7 @@ title_zh: "銅鑼灣書店股員失蹤事件"
 date: 2015-10-17
 year: 2015
 era: "Political contention and protest"
-tags: ["evidence-none", "photo-corroborated", "2015", "ai-draft", "causeway-bay-books", "contention", "cross-border-enforcement", "free-speech", "one-country-two-systems"]
+tags: ["wikipedia-checked", "evidence-none", "photo-corroborated", "2015", "ai-draft", "causeway-bay-books", "contention", "cross-border-enforcement", "free-speech", "one-country-two-systems"]
 summary: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the erosion of the 'One Country, Two Systems' framework."
 description: "Between late 2015 and early 2016, five individuals connected to the Causeway Bay Books store in Hong Kong mysteriously vanished, sparking widespread international concern over cross-border law enforcement and the…"
 confidence: ai-draft
@@ -49,40 +49,15 @@ The incident became a watershed moment for Hong Kong's political landscape. It s
 - [[02_Entities/Places/thailand|Thailand (泰國)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Lee Bo's exact method of crossing the border without his home return permit
-- ❔ The precise legal justifications provided by mainland authorities for detaining each of the five booksellers
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: Lee Bo's exact method of crossing the border without his home return permit. The text mentions a member was in Shenzhen without necessary travel documents and notes a rumor about speedboats, but does not state the exact method used by Lee Bo.
+- ❔ **not in Wikipedia**: The precise legal justifications provided by mainland authorities for detaining each of the five booksellers. The text states that Lam Wing-kee was not told what offence he had committed, but it does not provide the legal justifications used by authorities for the detentions.
 
-![Electrical installations at the premises of the Causeway Bay Books store on Lockhart Road, photographed in 2019.](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E9%A7%B1%E5%85%8B%E9%81%93_Lockhart_Road_bookstore_June_2019_SSG_02.jpg/960px-HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E9%A7%B1%E5%85%8B%E9%81%93_Lockhart_Road_bookstore_June_2019_SSG_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Causeway Bay Books](https://en.wikipedia.org/wiki/Causeway_Bay_Books), [Wikipedia: Causeway Bay Books disappearances](https://en.wikipedia.org/wiki/Causeway_Bay_Books_disappearances)
 
-*Electrical installations at the premises of the Causeway Bay Books store on Lockhart Road, photographed in 2019.* (later photo of the site). Shekart KOOsci, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E9%A7%B1%E5%85%8B%E9%81%93_Lockhart_Road_bookstore_June_2019_SSG_02.jpg).
-Corroborates: It provides a visual record of the physical location associated with the disappeared booksellers.
-
-![The entrance and signage of the Causeway Bay Bookstore in Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Causeway_Bay_Bookstore.jpg/960px-Causeway_Bay_Bookstore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*The entrance and signage of the Causeway Bay Bookstore in Hong Kong.* (contemporary photo). Exploringlife, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Causeway_Bay_Bookstore.jpg).
-Corroborates: It shows the physical location of the bookstore that was central to the disappearance incident.
-
-![Rimsky Yuen, CY Leung, Lai Tung-kwok, and Tony Wong speak at a press event.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/%E6%A2%81%E6%8C%AF%E8%8B%B1%E5%9B%9E%E6%87%89%E6%9E%97%E6%A6%AE%E5%9F%BA%E4%BA%8B%E4%BB%B6.jpg/960px-%E6%A2%81%E6%8C%AF%E8%8B%B1%E5%9B%9E%E6%87%89%E6%9E%97%E6%A6%AE%E5%9F%BA%E4%BA%8B%E4%BB%B6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Rimsky Yuen, CY Leung, Lai Tung-kwok, and Tony Wong speak at a press event.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E6%A2%81%E6%8C%AF%E8%8B%B1%E5%9B%9E%E6%87%89%E6%9E%97%E6%A6%AE%E5%9F%BA%E4%BA%8B%E4%BB%B6.jpg).
-Corroborates: The image shows government officials and people involved in the disappearance of the Causeway Bay Booksellers responding to the incident.
-
-![Artist Kacey Wong performs a protest piece where he is bound and gagged to symbolize the disappearances of the Causeway Bay Booksellers.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Kidnap_by_Kacey_Wong_%28cropped%29.jpg/960px-Kidnap_by_Kacey_Wong_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*Artist Kacey Wong performs a protest piece where he is bound and gagged to symbolize the disappearances of the Causeway Bay Booksellers.* (contemporary photo). Kacey Wong, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kidnap_by_Kacey_Wong_(cropped).jpg).
-Corroborates: The image illustrates the public protest and the atmosphere of concern surrounding the disappearances.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence specifically naming or detailing the 2015 disappearance of the Causeway Bay Booksellers is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

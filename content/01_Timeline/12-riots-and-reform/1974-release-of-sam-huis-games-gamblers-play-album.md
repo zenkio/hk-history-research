@@ -4,10 +4,11 @@ title_zh: "許冠傑《鬼馬雙星》專輯發行"
 date: 1974-10-17
 year: 1974
 era: "Riots and the MacLehose reforms"
-tags: ["1970s", "1974", "ai-draft", "cantonese-music", "cantopop", "hong-kong-culture", "riots-and-reform", "sam-hui"]
+tags: ["evidence-none", "1970s", "1974", "ai-draft", "cantonese-music", "cantopop", "hong-kong-culture", "riots-and-reform", "sam-hui"]
 summary: "In October 1974, singer-songwriter **Sam Hui** released the album **Games Gamblers Play** (鬼馬雙星), a cultural milestone that popularized vernacular Cantonese lyrics in pop music and helped launch the golden age of Cantopop."
 description: "In October 1974, singer-songwriter Sam Hui released the album Games Gamblers Play (鬼馬雙星), a cultural milestone that popularized vernacular Cantonese lyrics in pop music and helped launch the golden age of Cantopop."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,11 @@ The massive popularity of the album is widely credited by music historians with 
 
 - ❔ Did the album Games Gamblers Play officially release on October 17, 1974?
 - ❔ Did the album break existing local sales records upon its release?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,7 +4,7 @@ title_zh: "全國人大常委員會首次釋法"
 date: 1999-06-26
 year: 1999
 era: "The early HKSAR"
-tags: ["evidence-none", "1999", "ai-draft", "basic-law", "early-hksar", "judicial-independence", "npcsc-interpretation", "one-country-two-systems", "right-of-abode"]
+tags: ["wikipedia-checked", "evidence-none", "1999", "ai-draft", "basic-law", "early-hksar", "judicial-independence", "npcsc-interpretation", "one-country-two-systems", "right-of-abode"]
 summary: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for mainland-born children and sparking intense debate over judicial independence and the 'One Country, Two Systems' framework."
 description: "In June 1999, the Standing Committee of the National People's Congress issued its first interpretation of the Hong Kong Basic Law, overturning a landmark Court of Final Appeal ruling regarding the right of abode for…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ The **June 26, 1999** interpretation marked a watershed moment in the history of
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact phrasing and constitutional justification provided in the NPCSC interpretation issued on June 26, 1999.
-- ❔ The precise statistical estimates of potential migrants cited by the Hong Kong government to justify seeking the interpretation.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact phrasing and constitutional justification provided in the NPCSC interpretation issued on June 26, 1999. The text mentions the interpretation was adopted on June 26, 1999, but does not provide the exact phrasing or the constitutional justification included in it.
+- ✅ **agrees with Wikipedia**: The precise statistical estimates of potential migrants cited by the Hong Kong government to justify seeking the interpretation. The text states the regional government expected 1.67 million new immigrants from the mainland would seek to acquire the right of abode over the next decade.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Right of abode in Hong Kong](https://en.wikipedia.org/wiki/Right_of_abode_in_Hong_Kong), [Wikipedia: Hong Kong Basic Law](https://en.wikipedia.org/wiki/Hong_Kong_Basic_Law)
 
-**Still needed:** Sources specifically discussing the 1999 NPCSC interpretation on the Right of Abode are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

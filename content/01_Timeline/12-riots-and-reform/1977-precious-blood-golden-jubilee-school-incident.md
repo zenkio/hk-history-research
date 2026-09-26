@@ -4,10 +4,11 @@ title_zh: "金禧學校事件"
 date: 1977-01-01
 year: 1977
 era: "Riots and the MacLehose reforms"
-tags: ["1977", "ai-draft", "maclehose-era", "riots-and-reform", "school-corruption", "social-activism", "student-movement", "teacher-unions"]
+tags: ["evidence-none", "1977", "ai-draft", "maclehose-era", "riots-and-reform", "school-corruption", "social-activism", "student-movement", "teacher-unions"]
 summary: "The 1977-1978 Precious Blood Golden Jubilee School Incident was a major student and teacher protest against alleged corruption and mismanagement by the school principal, catalyzing the growth of independent social activism and professional unionism in Hong Kong."
 description: "The 1977-1978 Precious Blood Golden Jubilee School Incident was a major student and teacher protest against alleged corruption and mismanagement by the school principal, catalyzing the growth of independent social…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The incident is widely regarded by historians as a watershed moment in Hong Kong
 
 - ❔ The exact timeline of student and teacher strikes between late 1977 and 1978
 - ❔ The specific administrative interventions and decisions made by the Hong Kong Government's Education Department during the crisis
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Specific documentation or reports regarding the incident at Precious Blood Golden Jubilee School in 1977 are required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

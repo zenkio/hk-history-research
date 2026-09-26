@@ -4,7 +4,7 @@ title_zh: "香港舉辦北京奧運馬術比賽"
 date: 2008-08-09
 year: 2008
 era: "Political contention and protest"
-tags: ["evidence-b", "2008", "ai-draft", "civic-pride", "contention", "equestrian", "hong-kong-jockey-club", "olympic-games"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "2008", "ai-draft", "civic-pride", "contention", "equestrian", "hong-kong-jockey-club", "olympic-games"]
 summary: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
 description: "In August 2008, Hong Kong hosted the equestrian events of the Beijing Olympic Games, marking a rare moment of widespread civic pride and participation in a mainland-led national milestone."
 confidence: ai-draft
@@ -45,21 +45,16 @@ The successful hosting of the equestrian events is widely viewed by historians a
 - [[02_Entities/Places/sheung-shui|Sheung Shui (上水)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The equestrian events were officially relocated to Hong Kong due to equine disease and quarantine requirements.
-- ❔ The Hong Kong Jockey Club funded and constructed the primary competition venues at Sha Tin and Beas River.
-- ❔ The events took place between August 9 and August 20, 2008.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The equestrian events were officially relocated to Hong Kong due to equine disease and quarantine requirements. The text states events were held in Hong Kong rather than Beijing due to high levels of equine disease in Beijing and Hong Kong's high standards for quarantine.
+- ❔ **not in Wikipedia**: The Hong Kong Jockey Club funded and constructed the primary competition venues at Sha Tin and Beas River. The text mentions venues at Sha Tin and Beas River, but it does not specify who funded or constructed them.
+- ⚠️ **differs from Wikipedia**: The events took place between August 9 and August 20, 2008. The text states the competitions were held from 9 August to 21 August.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Equestrian events at the Summer Olympics](https://en.wikipedia.org/wiki/Equestrian_events_at_the_Summer_Olympics), [Wikipedia: Equestrian events at the 2008 Summer Olympics](https://en.wikipedia.org/wiki/Equestrian_events_at_the_2008_Summer_Olympics)
 
-### Scholarship (grade B)
-
-- [Glos Ho (2012). *Olympic culture shock: when equestrianism galloped to Hong Kong*. Asia Pacific Journal of Sport and Social Science.](https://doi.org/10.1080/21640629.2012.681889): Directly discusses Hong Kong co-hosting the equestrian events for the 2008 Beijing Olympics.
-- [Brian Bridges (2011). *The making of a modest mega-event: Hong Kong and the 2009 EastAsian games*. The International Journal of the History of Sport.](https://doi.org/10.1080/09523367.2011.626692): Mentions Hong Kong's role in hosting the equestrian events during the 2008 Olympics.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

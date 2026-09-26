@@ -4,7 +4,7 @@ title_zh: "曾蔭權就任行政長官"
 date: 2005-06-21
 year: 2005
 era: "The early HKSAR"
-tags: ["evidence-none", "2005", "ai-draft", "chief-executive", "donald-tsang", "early-hksar", "hksar-history", "hong-kong-politics"]
+tags: ["wikipedia-checked", "evidence-none", "2005", "ai-draft", "chief-executive", "donald-tsang", "early-hksar", "hksar-history", "hong-kong-politics"]
 summary: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
 description: "Following the resignation of Tung Chee-hwa, career civil servant Donald Tsang Yam-kuen assumed the office of Chief Executive on June 21, 2005, following an uncontested by-election."
 confidence: ai-draft
@@ -39,17 +39,15 @@ By early **2005**, the administration of Hong Kong's first Chief Executive, **Tu
 - [[02_Entities/People/tung-chee-hwa|Tung Chee-hwa (董建華)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Donald Tsang officially took office on June 21, 2005
-- ❔ The election was uncontested due to a lack of sufficient nominations for rival candidates
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Donald Tsang officially took office on June 21, 2005. The text states he was formally appointed by the central government as the Chief Executive on 21 June 2005.
+- ❔ **not in Wikipedia**: The election was uncontested due to a lack of sufficient nominations for rival candidates. The text states he was elected unopposed, but it does not provide the reason for the lack of rival candidates.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chief Executive of Hong Kong](https://en.wikipedia.org/wiki/Chief_Executive_of_Hong_Kong), [Wikipedia: Donald Tsang](https://en.wikipedia.org/wiki/Donald_Tsang)
 
-**Still needed:** Evidence confirming Donald Tsang's appointment or inauguration as the Chief Executive of Hong Kong on June 21, 2005.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

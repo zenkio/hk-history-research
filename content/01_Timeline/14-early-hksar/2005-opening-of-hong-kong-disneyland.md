@@ -4,7 +4,7 @@ title_zh: "香港迪士尼樂園開幕"
 date: 2005-09-12
 year: 2005
 era: "The early HKSAR"
-tags: ["evidence-b", "2005", "ai-draft", "early-hksar", "economy", "hksar-government", "hong-kong-disneyland", "lantau-island", "tourism"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "2005", "ai-draft", "early-hksar", "economy", "hksar-government", "hong-kong-disneyland", "lantau-island", "tourism"]
 summary: "On September 12, 2005, Hong Kong Disneyland officially opened on Lantau Island as part of a joint venture between the HKSAR Government and The Walt Disney Company to boost tourism and economic recovery."
 description: "On September 12, 2005, Hong Kong Disneyland officially opened on Lantau Island as part of a joint venture between the HKSAR Government and The Walt Disney Company to boost tourism and economic recovery."
 confidence: ai-draft
@@ -42,24 +42,15 @@ The opening of the park represented a key strategic effort by the government to 
 - [[02_Entities/Places/lantau-island|Lantau Island (大嶼山)]]
 - [[02_Entities/Places/pennys-bay|Penny's Bay (竹篙灣)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact financial breakdown of the joint venture agreement signed in November 1999 between the HKSAR Government and The Walt Disney Company.
-- ❔ Official attendance figures recorded during the first year of Hong Kong Disneyland's operation compared to initial government projections.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact financial breakdown of the joint venture agreement signed in November 1999 between the HKSAR Government and The Walt Disney Company. The master project agreement was signed in November 2000, and the text does not provide a full financial breakdown of the agreement.
+- ✅ **agrees with Wikipedia**: Official attendance figures recorded during the first year of Hong Kong Disneyland's operation compared to initial government projections. The park had about 5.2 million guests in its first year, missing the 5.6 million target.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Hong Kong Disneyland](https://en.wikipedia.org/wiki/Hong_Kong_Disneyland), [Wikipedia: Hong Kong Disneyland Resort](https://en.wikipedia.org/wiki/Hong_Kong_Disneyland_Resort)
 
-### Scholarship (grade B)
-
-- [Kimburley Choi (2011). *Disneyfication and Localisation: The Cultural Globalisation Process of Hong Kong Disneyland*. Urban Studies.](https://doi.org/10.1177/0042098011402234) (claims 1): Discusses the public perception of the park following its opening in 2005.
-- [Jonathan Matusitz (2009). *Disney’s successful adaptation in Hong Kong: A glocalization perspective*. Asia Pacific Journal of Management.](https://doi.org/10.1007/s10490-009-9179-7) (claims 1): Examines Disney's adaptation and presence within the Hong Kong context.
-- [Sabrina Mittermeier (2021). *A Cultural History of the Disneyland Theme Parks: Middle Class Kingdoms*.](https://openalex.org/W3156931379) (claims 1): Provides a historical study specifically including the Hong Kong Disneyland theme park.
-- [Benjamin C. Esty (2001). *Chase's Strategy for Syndicating the Hong Kong Disneyland Loan (A&B) Harvard Business School Publishing*. SSRN Electronic Journal.](https://openalex.org/W2257637303) (claims 1): Relates to the financial strategies used to fund the Hong Kong Disneyland project.
-
-**Still needed:** Specific evidence or documentation confirming the exact opening date of September 12, 2005, and details of the opening day festivities.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

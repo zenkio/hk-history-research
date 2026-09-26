@@ -4,10 +4,11 @@ title_zh: "街坊福利會的復興"
 date: 1949-01-01
 year: 1949
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1949", "ai-draft", "community-organising", "kaifong-associations", "postwar-history", "postwar-refugees", "refugees", "social-welfare"]
+tags: ["evidence-none", "1949", "ai-draft", "community-organising", "kaifong-associations", "postwar-history", "postwar-refugees", "refugees", "social-welfare"]
 summary: "Beginning in November 1949 with the establishment of the Sham Shui Po Kaifong Association, traditional neighborhood mutual-aid networks were revived to deliver essential social welfare and relief to the massive influx of refugees arriving in post-war Hong Kong."
 description: "Beginning in November 1949 with the establishment of the Sham Shui Po Kaifong Association, traditional neighborhood mutual-aid networks were revived to deliver essential social welfare and relief to the massive influx…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The revival of the *kaifong* associations represented a crucial turning point in
 
 - ❔ The Sham Shui Po Kaifong Association was formally established in November 1949.
 - ❔ The Secretariat for Chinese Affairs actively encouraged and supervised the revival of the kaifong associations.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the history and the 1949 revival of Kaifong Welfare Associations in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

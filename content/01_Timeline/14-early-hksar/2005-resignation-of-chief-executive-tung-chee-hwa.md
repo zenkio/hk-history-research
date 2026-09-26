@@ -4,7 +4,7 @@ title_zh: "董建華辭任行政長官"
 date: 2005-03-12
 year: 2005
 era: "The early HKSAR"
-tags: ["evidence-b", "2005", "ai-draft", "chief-executive", "early-hksar", "hksar-history", "political-crisis", "resignation", "tung-chee-hwa"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "2005", "ai-draft", "chief-executive", "early-hksar", "hksar-history", "political-crisis", "resignation", "tung-chee-hwa"]
 summary: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public popularity."
 description: "Hong Kong's first post-handover leader, Tung Chee-hwa, resigned midway through his second term on March 12, 2005, officially citing health reasons following a period of mounting political pressure and low public…"
 confidence: ai-draft
@@ -41,19 +41,15 @@ The resignation marked a watershed moment in the political history of the early 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Tung Chee-hwa officially submitted his resignation on March 12, 2005, citing health reasons.
-- ❔ Tung was appointed as a Vice-Chairman of the CPPCC shortly after stepping down.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Tung Chee-hwa officially submitted his resignation on March 12, 2005, citing health reasons. Tung announced that he had tendered his resignation due to health problems on 10 March 2005.
+- ✅ **agrees with Wikipedia**: Tung was appointed as a Vice-Chairman of the CPPCC shortly after stepping down. The text states that in March 2005, after resigning as Chief Executive, he was appointed vice-chairman of the CPPCC.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Tung Chee-hwa](https://en.wikipedia.org/wiki/Tung_Chee-hwa), [Wikipedia: Chief Executive of Hong Kong](https://en.wikipedia.org/wiki/Chief_Executive_of_Hong_Kong)
 
-### Scholarship (grade B)
-
-- [Byt Tai (2005). *A Tale of the Unexpected: Tung's Resignation and the Ensuing Constitutional Controversy*. The HKU Scholars Hub (University of Hong Kong).](https://openalex.org/W2249231621) (claims 1): It specifically addresses Tung Chee-hwa's resignation in March 2005 and the related constitutional controversy.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

@@ -4,10 +4,11 @@ title_zh: "日軍拆卸銅像作戰時金屬之用"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "bronze-statues", "cultural-heritage", "hsbc-lions", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "bronze-statues", "cultural-heritage", "hsbc-lions", "japanese-occupation", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, historic public monuments including the Queen Victoria statue and HSBC's bronze lions were dismantled and shipped to Japan to be melted down for war materials."
 description: "During the Japanese occupation of Hong Kong, historic public monuments including the Queen Victoria statue and HSBC's bronze lions were dismantled and shipped to Japan to be melted down for war materials."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The removal of the royal and commercial monuments represented a deliberate attem
 
 - ❔ Exact shipping manifests and dates for the transport of Hong Kong bronze statues to Japan in 1942
 - ❔ The precise metallurgical composition and ultimate fate of the specific statues melted in Japan versus those found and returned after 1945
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the dismantling of bronze royal statues for Japanese war scrap in 1942 is still needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

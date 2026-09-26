@@ -4,10 +4,11 @@ title_zh: "香港放棄銀本位"
 date: 1935-12-05
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1935", "ai-draft", "british-empire", "currency-reform", "economy", "hong-kong-dollar", "interwar", "silver-standard"]
+tags: ["evidence-none", "1935", "ai-draft", "british-empire", "currency-reform", "economy", "hong-kong-dollar", "interwar", "silver-standard"]
 summary: "In December 1935, Hong Kong officially abandoned the silver standard and pegged its currency to the British pound, aligning with monetary reforms in mainland China."
 description: "In December 1935, Hong Kong officially abandoned the silver standard and pegged its currency to the British pound, aligning with monetary reforms in mainland China."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ This monetary pivot fundamentally integrated Hong Kong's financial infrastructur
 
 - ❔ The exact legislative steps and emergency procedures used by the Hong Kong Legislative Council on December 5, 1935.
 - ❔ The initial exchange rate fixed between the Hong Kong dollar and sterling under the 1935 Currency Ordinance.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically discussing Hong Kong's abandonment of the silver standard in 1935 are needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

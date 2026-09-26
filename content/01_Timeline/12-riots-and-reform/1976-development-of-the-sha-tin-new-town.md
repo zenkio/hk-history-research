@@ -4,7 +4,7 @@ title_zh: "沙田新市鎮發展"
 date: 1976-01-01
 year: 1976
 era: "Riots and the MacLehose reforms"
-tags: ["1976", "ai-draft", "hong-kong-history", "maclehose-reforms", "new-towns", "post-war-hong-kong", "riots-and-reform", "urban-development"]
+tags: ["photo-corroborated", "1976", "ai-draft", "hong-kong-history", "maclehose-reforms", "new-towns", "post-war-hong-kong", "riots-and-reform", "urban-development"]
 summary: "The development of Sha Tin New Town in the 1970s marked a pivotal shift in colonial urban planning, transitioning from dense inner-city habitation to organized suburban growth."
 description: "The development of Sha Tin New Town in the 1970s marked a pivotal shift in colonial urban planning, transitioning from dense inner-city habitation to organized suburban growth."
 confidence: ai-draft
@@ -42,5 +42,18 @@ Sha Tin served as a model for subsequent New Town projects across Hong Kong. It 
 - ❔ The official commencement date of the Sha Tin New Town project.
 - ❔ The total planned versus actual population capacity during the 1976 phase.
 - ❔ The extent of compensation policies for indigenous villagers displaced by the reclamation.
+
+## Photos from this period
+
+![An aerial view of the Shing Mun River area in Sha Tin during the early stages of its new town development.](https://upload.wikimedia.org/wikipedia/commons/7/75/ShaTin-ShingMunRiver-EarlyStageOfDevelopment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*An aerial view of the Shing Mun River area in Sha Tin during the early stages of its new town development.* (contemporary photo). User Alanmak on en.wikipedia, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ShaTin-ShingMunRiver-EarlyStageOfDevelopment.jpg).
+Corroborates: The image visually demonstrates the early-stage urban planning and construction characteristic of the Sha Tin New Town development.
+
+![A panoramic view of the Shing Mun River in Sha Tin, surrounded by high-rise residential buildings at sunset.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/%E2%80%9C%E6%B2%99%E7%94%B0%E5%9F%8E%E9%96%80%E6%B2%B3%E6%97%A5%E8%90%BD_Sunset_in_Shatin_Shing_Mun_River%E2%80%9D_%E9%A6%99%E6%B8%AF%E5%85%A8%E6%99%AF%E6%94%9D%E5%BD%B1_Hong_Kong_Panoramic_Photography_SML.20130306.7D.26953-SML.20130306.7D.26963-Pano.Cylindrical.166x72_%288556232281%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A panoramic view of the Shing Mun River in Sha Tin, surrounded by high-rise residential buildings at sunset.* (later photo of the site). See-ming Lee from Hong Kong SAR, China, CC BY 2.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E2%80%9C%E6%B2%99%E7%94%B0%E5%9F%8E%E9%96%80%E6%B2%B3%E6%97%A5%E8%90%BD_Sunset_in_Shatin_Shing_Mun_River%E2%80%9D_%E9%A6%99%E6%B8%AF%E5%85%A8%E6%99%AF%E6%94%9D%E5%BD%B1_Hong_Kong_Panoramic_Photography_SML.20130306.7D.26953-SML.20130306.7D.26963-Pano.Cylindrical.166x72_(8556232281).jpg).
+Corroborates: It illustrates the modern, high-density urban landscape that resulted from the Sha Tin New Town development project.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

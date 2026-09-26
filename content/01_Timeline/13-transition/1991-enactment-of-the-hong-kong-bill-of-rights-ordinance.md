@@ -4,10 +4,11 @@ title_zh: "香港人權法案條例"
 date: 1991-06-08
 year: 1991
 era: "Sino-British negotiations and the transition"
-tags: ["1991", "ai-draft", "bill-of-rights", "human-liberties", "legal-history", "sino-british-joint-declaration", "transition"]
+tags: ["evidence-none", "1991", "ai-draft", "bill-of-rights", "human-liberties", "legal-history", "sino-british-joint-declaration", "transition"]
 summary: "On June 8, 1991, the colonial Hong Kong government enacted the Hong Kong Bill of Rights Ordinance to incorporate key international human rights covenants into local law, seeking to bolster public confidence ahead of the 1997 handover."
 description: "On June 8, 1991, the colonial Hong Kong government enacted the Hong Kong Bill of Rights Ordinance to incorporate key international human rights covenants into local law, seeking to bolster public confidence ahead of the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The ordinance represented a watershed moment in Hong Kong legal history, shiftin
 - ❔ The Hong Kong Bill of Rights Ordinance was enacted on June 8, 1991.
 - ❔ The ordinance incorporated the International Covenant on Civil and Political Rights into local Hong Kong law.
 - ❔ Beijing authorities criticized the legislation for allegedly overriding other laws improperly.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically confirming the enactment and context of the Hong Kong Bill of Rights Ordinance in 1991 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -4,10 +4,11 @@ title_zh: "香港大會堂落成啟用"
 date: 1962-03-02
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1960s", "1962", "ai-draft", "architecture", "city-hall", "colonial-history", "culture", "postwar-refugees"]
+tags: ["evidence-none", "1960s", "1962", "ai-draft", "architecture", "city-hall", "colonial-history", "culture", "postwar-refugees"]
 summary: "On March 2, 1962, the new Hong Kong City Hall opened as a modernist civic hub, providing accessible cultural and community spaces for the populace."
 description: "On March 2, 1962, the new Hong Kong City Hall opened as a modernist civic hub, providing accessible cultural and community spaces for the populace."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ Historians generally view the opening of the City Hall as a milestone in the dev
 
 - ❔ The exact seating capacities of the concert hall and theatre at the time of opening in 1962.
 - ❔ The precise financial breakdown of the public funds used to construct the modernist complex.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the opening ceremony, construction, or official details of the New Hong Kong City Hall in 1962 is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

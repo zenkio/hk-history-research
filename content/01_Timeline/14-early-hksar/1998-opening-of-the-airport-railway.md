@@ -4,7 +4,7 @@ title_zh: "機場鐵路通車"
 date: 1998-06-22
 year: 1998
 era: "The early HKSAR"
-tags: ["1998", "ai-draft", "airport-express", "early-hksar", "hksar-history", "infrastructure", "mtr", "urban-development"]
+tags: ["photo-corroborated", "1998", "ai-draft", "airport-express", "early-hksar", "hksar-history", "infrastructure", "mtr", "urban-development"]
 summary: "On June 22, 1998, the MTR's Airport Railway officially commenced service, providing a critical transport link between the newly opened Hong Kong International Airport at Chek Lap Kok and the Central business district."
 description: "On June 22, 1998, the MTR's Airport Railway officially commenced service, providing a critical transport link between the newly opened Hong Kong International Airport at Chek Lap Kok and the Central business district."
 confidence: ai-draft
@@ -42,5 +42,13 @@ The completion of the railway fundamentally altered the physical and economic ge
 - ❔ Exact date of the Airport Railway's commercial opening
 - ❔ The specific breakdown of project funding between colonial and post-1997 budgets
 - ❔ Inauguration details involving specific government officials
+
+## Photos from this period
+
+![A commemorative plaque at Hong Kong Station marking the unveiling of the Airport Railway by Chief Executive Tung Chee Hwa in June 1998.](https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/MTR_HOK_%2821%29.JPG/960px-MTR_HOK_%2821%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A commemorative plaque at Hong Kong Station marking the unveiling of the Airport Railway by Chief Executive Tung Chee Hwa in June 1998.* (artefact). Hokachung, CC BY 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MTR_HOK_(21).JPG).
+Corroborates: It corroborates the event's occurrence and the location (Hong Kong Station) associated with the opening of the Airport Railway.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

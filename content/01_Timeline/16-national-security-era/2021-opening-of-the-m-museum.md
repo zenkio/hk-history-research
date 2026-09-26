@@ -4,10 +4,11 @@ title_zh: "M+博物館開幕"
 date: 2021-11-12
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "contemporary-art", "cultural-policy", "m-plus", "national-security-era", "national-security-law", "west-kowloon"]
+tags: ["evidence-none", "2021", "ai-draft", "contemporary-art", "cultural-policy", "m-plus", "national-security-era", "national-security-law", "west-kowloon"]
 summary: "On November 12, 2021, Asia's first global museum of contemporary visual culture opened in the West Kowloon Cultural District, immediately drawing public acclaim alongside intense scrutiny regarding artistic freedom under the National Security Law."
 description: "On November 12, 2021, Asia's first global museum of contemporary visual culture opened in the West Kowloon Cultural District, immediately drawing public acclaim alongside intense scrutiny regarding artistic freedom…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The launch of **M+** marked a watershed moment for Hong Kong's cultural sector. 
 
 - ❔ M+ officially opened to the public on November 12, 2021.
 - ❔ The Sigg Collection formed a central part of the inaugural exhibitions.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically confirming the opening of the M+ Museum on November 12, 2021, is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

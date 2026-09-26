@@ -4,7 +4,7 @@ title_zh: "頒布香港國安法"
 date: 2020-06-30
 year: 2020
 era: "Political contention and protest"
-tags: ["evidence-b", "2020", "ai-draft", "contention", "hong-kong-history", "national-security-law", "one-country-two-systems", "political-contention"]
+tags: ["wikipedia-checked", "evidence-b", "2020", "ai-draft", "contention", "hong-kong-history", "national-security-law", "one-country-two-systems", "political-contention"]
 summary: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, fundamentally transforming the city's legal and political environment."
 description: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, fundamentally transforming the city's legal and political…"
 confidence: ai-draft
@@ -41,24 +41,17 @@ The promulgation of the National Security Law marked a watershed moment in Hong 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The National Security Law was enacted and came into effect on June 30, 2020.
-- ❔ The law was added to Annex III of the Basic Law without passing through Hong Kong's Legislative Council.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The National Security Law was enacted and came into effect on June 30, 2020. The law was passed on 30 June 2020 and came into force the same day.
+- ✅ **agrees with Wikipedia**: The law was added to Annex III of the Basic Law without passing through Hong Kong's Legislative Council. The text states that enactment by inclusion in Annex III does not require a vote in the LegCo.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: 2020 Hong Kong national security law](https://en.wikipedia.org/wiki/2020_Hong_Kong_national_security_law), [Wikipedia: National People's Congress decision on Hong Kong national security legislation](https://en.wikipedia.org/wiki/National_People%27s_Congress_decision_on_Hong_Kong_national_security_legislation)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Simon N. M. Young (2020). *The Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region*. International Legal Materials.](https://doi.org/10.1017/ilm.2020.64): Confirms the law was passed on June 30, 2020, by the NPCSC.
-- [Edward R. Vickers, Paul Morris (2022). *Accelerating Hong Kong’s reeducation: ‘mainlandisation’, securitisation and the 2020 National Security Law*. Comparative Education.](https://doi.org/10.1080/03050068.2022.2046878): Discusses the impact of the 2020 National Security Law on education.
-- [Peter Baehr (2022). *Hong Kong Universities in the Shadow of the National Security Law*. Society.](https://doi.org/10.1007/s12115-022-00709-9): Discusses the impact of the National Security Law on Hong Kong universities.
-- [Surabhi Chopra, Eva Pils (2022). *The Hong Kong National Security Law and the Struggle over Rule of Law and Democracy in Hong Kong*. Federal Law Review.](https://doi.org/10.1177/0067205x221107410): Discusses the enactment of the law in June 2020 and its interaction with the rule of law.
-
-**Still needed:** Official government gazette or the primary legal text of the Law itself.
-
+- ✓ [Hong Kong's contentious national security law concerns some academics](https://doi.org/10.1038/d41586-020-01693-y) (DOI)
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

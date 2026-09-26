@@ -4,7 +4,7 @@ title_zh: "取消強制酒店檢疫"
 date: 2022-09-26
 year: 2022
 era: "The National Security Law era"
-tags: ["evidence-none", "2022", "ai-draft", "aviation", "covid-19", "economic-reopening", "john-lee", "national-security-era", "public-health"]
+tags: ["wikipedia-checked", "evidence-none", "2022", "ai-draft", "aviation", "covid-19", "economic-reopening", "john-lee", "national-security-era", "public-health"]
 summary: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of its economic reopening."
 description: "In September 2022, Hong Kong replaced its stringent mandatory hotel quarantine for inbound travelers with a '0+3' scheme, marking a major turning point in the city's pandemic management and signaling the beginning of…"
 confidence: ai-draft
@@ -38,17 +38,15 @@ The implementation of the '0+3' scheme represented a pivotal psychological and l
 - [[02_Entities/People/john-lee|John Lee (李家超)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Mandatory hotel quarantine was replaced by the '0+3' scheme on September 26, 2022.
-- ❔ Chief Executive John Lee announced the policy change on September 24, 2022.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Mandatory hotel quarantine was replaced by the '0+3' scheme on September 26, 2022. The reference text does not mention a '0+3' scheme or any policy change occurring on September 26, 2022.
+- ❔ **not in Wikipedia**: Chief Executive John Lee announced the policy change on September 24, 2022. The reference text does not mention any announcement by Chief Executive John Lee on September 24, 2022.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: COVID-19 pandemic in Hong Kong](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Hong_Kong)
 
-**Still needed:** Specific news reports or official government announcements regarding Hong Kong's decision to scrap mandatory hotel quarantine in September 2022 are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

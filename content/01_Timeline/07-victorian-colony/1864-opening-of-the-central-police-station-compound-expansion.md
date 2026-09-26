@@ -4,10 +4,11 @@ title_zh: "中區警署建築群擴建工程落成"
 date: 1864-01-01
 year: 1864
 era: "Kowloon and the Victorian colony"
-tags: ["1864", "ai-draft", "colonial-history", "law-enforcement", "urban-growth", "victorian-colony", "victorian-era"]
+tags: ["evidence-none", "1864", "ai-draft", "colonial-history", "law-enforcement", "urban-growth", "victorian-colony", "victorian-era"]
 summary: "In **1864**, the Central Police Station Compound in Hong Kong underwent a significant expansion to bolster colonial law enforcement infrastructure amid rapid population growth and urban crime."
 description: "In 1864, the Central Police Station Compound in Hong Kong underwent a significant expansion to bolster colonial law enforcement infrastructure amid rapid population growth and urban crime."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ Historians view the **1864** expansion as a physical manifestation of the consol
 
 - ❔ Specific architectural completion dates for the Central Police Station expansion in 1864
 - ❔ Exact correspondence between population growth statistics and the commissioning of the 1864 police compound expansion
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the opening of the Central Police Station Compound expansion in 1864 is missing.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

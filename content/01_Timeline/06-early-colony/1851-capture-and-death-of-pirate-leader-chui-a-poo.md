@@ -4,10 +4,11 @@ title_zh: "海盜頭目徐亞保之落網與身亡"
 date: 1851-01-01
 year: 1851
 era: "The early colony"
-tags: ["1851", "ai-draft", "early-colony", "maritime-security", "piracy", "royal-navy"]
+tags: ["evidence-none", "1851", "ai-draft", "early-colony", "maritime-security", "piracy", "royal-navy"]
 summary: "The **1851** arrest and subsequent death in custody of the notorious pirate leader **Chui A-poo** (徐亞保) underscored the severe maritime security challenges facing the early British colony of Hong Kong and its regional trade networks."
 description: "The 1851 arrest and subsequent death in custody of the notorious pirate leader Chui A-poo (徐亞保) underscored the severe maritime security challenges facing the early British colony of Hong Kong and its regional trade…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,11 @@ The downfall of **Chui A-poo** marked a significant, albeit partial, milestone i
 
 - ❔ Chui A-poo was captured in the year 1851.
 - ❔ Chui A-poo died in colonial custody prior to the conclusion of his trial.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

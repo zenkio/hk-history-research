@@ -4,10 +4,11 @@ title_zh: "馬禮遜教育學會之成立"
 date: 1839-01-01
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "canton-trade", "education", "first-opium-war", "morrison-education-society", "opium-war", "protestant-missions"]
+tags: ["evidence-none", "1839", "ai-draft", "canton-trade", "education", "first-opium-war", "morrison-education-society", "opium-war", "protestant-missions"]
 summary: "Founded in 1839 to promote Western education among Chinese youth, the Morrison Education Society marked an early organized effort in cross-cultural intellectual engagement during the turbulent prelude to British colonial rule."
 description: "Founded in 1839 to promote Western education among Chinese youth, the Morrison Education Society marked an early organized effort in cross-cultural intellectual engagement during the turbulent prelude to British…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ Historians view the society as a foundational institution in the educational his
 
 - ❔ The Morrison Education Society was formally established in the year 1839.
 - ❔ Yung Wing attended the Morrison Education Society School.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the establishment of the Morrison Education Society in 1839 is missing.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

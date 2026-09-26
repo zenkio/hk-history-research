@@ -4,10 +4,11 @@ title_zh: "協恩女子中學前身創立"
 date: 1860-01-01
 year: 1860
 era: "The early colony"
-tags: ["1860", "ai-draft", "early-colony", "female-education", "missionary-schools", "social-history"]
+tags: ["evidence-none", "1860", "ai-draft", "early-colony", "female-education", "missionary-schools", "social-history"]
 summary: "Established in 1860, the Diocesan Native Female Training School was founded to provide education for local Chinese girls, marking a pioneering step in female education and social advancement in the early colony."
 description: "Established in 1860, the Diocesan Native Female Training School was founded to provide education for local Chinese girls, marking a pioneering step in female education and social advancement in the early colony."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The founding of the school represented a crucial milestone as one of the earlies
 
 - ❔ The exact founding date of the Diocesan Native Female Training School in 1860
 - ❔ The initial enrollment numbers and demographic makeup of the first students
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the founding of the Diocesan Native Female Training School in 1860 is needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

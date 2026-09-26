@@ -4,10 +4,11 @@ title_zh: "D&G分店禁止拍照爭議引發反內地遊客示威"
 date: 2012-01-05
 year: 2012
 era: "Political contention and protest"
-tags: ["2012", "ai-draft", "anti-mainland-protests", "canton-road", "contention", "dolce-and-gabbana", "individual-visit-scheme", "localism"]
+tags: ["evidence-none", "2012", "ai-draft", "anti-mainland-protests", "canton-road", "contention", "dolce-and-gabbana", "individual-visit-scheme", "localism"]
 summary: "In January 2012, public anger erupted outside the flagship store of Italian luxury brand Dolce & Gabbana in Tsim Sha Tsui after security guards barred locals from taking photographs while permitting mainland Chinese tourists to do so. This incident catalyzed broader societal tensions regarding the economic and cultural impact of mainland visitors on Hong Kong."
 description: "In January 2012, public anger erupted outside the flagship store of Italian luxury brand Dolce & Gabbana in Tsim Sha Tsui after security guards barred locals from taking photographs while permitting mainland Chinese…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The Dolce & Gabbana controversy is widely viewed by historians and sociologists 
 - ❔ Dolce & Gabbana security guards prohibited locals from photographing the storefront exterior on January 5, 2012.
 - ❔ A protest involving several hundred demonstrators took place outside the Tsim Sha Tsui store on January 8, 2012.
 - ❔ Store staff justified the photography ban by claiming the pavement was private property.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the 2012 D&G photo controversy and the subsequent anti-mainland tourism protests in Hong Kong.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

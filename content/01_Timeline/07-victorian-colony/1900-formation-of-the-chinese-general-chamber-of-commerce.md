@@ -4,10 +4,11 @@ title_zh: "香港中華總商會的成立"
 date: 1900-01-01
 year: 1900
 era: "Kowloon and the Victorian colony"
-tags: ["1900", "ai-draft", "chinese-elites", "chinese-general-chamber-of-commerce", "colonial-hong-kong", "economic-history", "merchant-networks", "victorian-colony"]
+tags: ["evidence-none", "1900", "ai-draft", "chinese-elites", "chinese-general-chamber-of-commerce", "colonial-hong-kong", "economic-history", "merchant-networks", "victorian-colony"]
 summary: "Emerging around the turn of the twentieth century from late 19th-century merchant networks, the Chinese General Chamber of Commerce provided Chinese business leaders with an institutional platform to coordinate commercial interests and interact with the colonial administration."
 description: "Emerging around the turn of the twentieth century from late 19th-century merchant networks, the Chinese General Chamber of Commerce provided Chinese business leaders with an institutional platform to coordinate…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The establishment of the Chamber marked a pivotal shift in the socio-political l
 
 - ❔ The exact foundational year and formal registration details of the Chinese General Chamber of Commerce around 1900
 - ❔ The initial level of formal recognition granted by the British colonial administration to the Chinese General Chamber of Commerce upon its establishment
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the formation of the Chinese General Chamber of Commerce in 1900 is missing.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,10 +4,11 @@ title_zh: "灣仔 Canton Bazaar 開p"
 date: 1841-01-01
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "canton-bazaar", "chinese-merchants", "colonial-history", "first-opium-war", "opium-war", "wan-chai"]
+tags: ["evidence-none", "1841", "ai-draft", "canton-bazaar", "chinese-merchants", "colonial-history", "first-opium-war", "opium-war", "wan-chai"]
 summary: "Established around 1841, the Canton Bazaar (廣府墟) was an early commercial settlement in Wan Chai created by Chinese merchants and laborers to support the expanding British military and trading presence on Hong Kong Island."
 description: "Established around 1841, the Canton Bazaar (廣府墟) was an early commercial settlement in Wan Chai created by Chinese merchants and laborers to support the expanding British military and trading presence on Hong Kong…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The opening of the Canton Bazaar marked an important early chapter in the integr
 
 - ❔ The exact establishment date of the Canton Bazaar in Wan Chai as 1841
 - ❔ The specific extent of official British involvement in planning the Canton Bazaar versus spontaneous Chinese settlement
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the opening of the Canton Bazaar in Wan Chai on January 1, 1841, is still needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

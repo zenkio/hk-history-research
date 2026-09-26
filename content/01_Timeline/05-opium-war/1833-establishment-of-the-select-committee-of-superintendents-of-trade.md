@@ -4,10 +4,11 @@ title_zh: "駐粵商務監督委員會的成立"
 date: 1833-01-01
 year: 1833
 era: "Canton trade and the First Opium War"
-tags: ["1833", "ai-draft", "british-diplomacy", "canton-system", "east-india-company", "first-opium-war", "opium-war"]
+tags: ["evidence-none", "1833", "ai-draft", "british-diplomacy", "canton-system", "east-india-company", "first-opium-war", "opium-war"]
 summary: "In 1833, the British government abolished the East India Company's monopoly on the China trade and established the Select Committee of Superintendents of Trade in Canton, marking a pivotal transition from corporate commerce to direct state-to-state diplomacy."
 description: "In 1833, the British government abolished the East India Company's monopoly on the China trade and established the Select Committee of Superintendents of Trade in Canton, marking a pivotal transition from corporate…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The transition from corporate monopoly to Crown representation fundamentally alt
 
 - ❔ The exact statutory act abolishing the East India Company's trade monopoly took effect in 1833.
 - ❔ The Qing imperial court formally rejected the credentials of the British Superintendents of Trade upon their arrival in Canton.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment of the Select Committee of Superintendents of Trade in 1833 is needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -4,10 +4,11 @@ title_zh: "文咸填海計劃之始"
 date: 1851-01-01
 year: 1851
 era: "The early colony"
-tags: ["1850s", "1851", "ai-draft", "colonial-history", "early-colony", "reclamation", "sheung-wan-fire", "urban-development"]
+tags: ["evidence-none", "1850s", "1851", "ai-draft", "colonial-history", "early-colony", "reclamation", "sheung-wan-fire", "urban-development"]
 summary: "Following a catastrophic fire in Sheung Wan in 1851, colonial authorities initiated the Bonham Strand reclamation project to expand commercial land and mitigate urban congestion."
 description: "Following a catastrophic fire in Sheung Wan in 1851, colonial authorities initiated the Bonham Strand reclamation project to expand commercial land and mitigate urban congestion."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,11 @@ Bonham Strand marked Hong Kong's first major coastal reclamation project, settin
 
 - ❔ The exact date and casualty or property damage statistics of the 1851 Sheung Wan fire
 - ❔ The precise administrative decrees and engineering contracts issued by Governor Bonham for the Bonham Strand reclamation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

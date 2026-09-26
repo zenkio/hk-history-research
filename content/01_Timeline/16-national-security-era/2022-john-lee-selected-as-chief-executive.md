@@ -4,7 +4,7 @@ title_zh: "李家超當選行政長官"
 date: 2022-05-08
 year: 2022
 era: "The National Security Law era"
-tags: ["evidence-none", "2022", "ai-draft", "chief-executive", "electoral-reform", "national-security-era", "national-security-law", "patriots-administering-hong-kong"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "2022", "ai-draft", "chief-executive", "electoral-reform", "national-security-era", "national-security-law", "patriots-administering-hong-kong"]
 summary: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
 description: "On May 8, 2022, former Chief Secretary for Administration John Lee was selected as the sixth-term Chief Executive of Hong Kong in an uncontested election under an overhauled electoral system."
 confidence: ai-draft
@@ -38,17 +38,15 @@ On **May 8, 2022**, **John Lee** (李家超), who had recently resigned from his
 - [[02_Entities/People/john-lee|John Lee (李家超)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ John Lee received 1,416 support votes out of 1,464 cast on May 8, 2022.
-- ❔ John Lee was the sole candidate in the 2022 Chief Executive election.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: John Lee received 1,416 support votes out of 1,464 cast on May 8, 2022. The text states he received 1,416 support votes, 8 votes were against him, and 4 were blank, totaling 1,428 votes cast (with 33 electors not casting ballots from a total of 1,461 members).
+- ✅ **agrees with Wikipedia**: John Lee was the sole candidate in the 2022 Chief Executive election. The text explicitly states that John Lee was the sole candidate approved by the central government and the only candidate to be nominated.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chief Executive of Hong Kong](https://en.wikipedia.org/wiki/Chief_Executive_of_Hong_Kong), [Wikipedia: 2022 Hong Kong Chief Executive election](https://en.wikipedia.org/wiki/2022_Hong_Kong_Chief_Executive_election)
 
-**Still needed:** Evidence concerning the election or selection process of John Lee as Chief Executive in May 2022 is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

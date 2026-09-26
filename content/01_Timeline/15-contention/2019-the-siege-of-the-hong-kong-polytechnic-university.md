@@ -4,10 +4,11 @@ title_zh: "香港理工大學圍困事件"
 date: 2019-11-17
 year: 2019
 era: "Political contention and protest"
-tags: ["photo-corroborated", "2019", "2019-protests", "ai-draft", "civil-unrest", "contention", "hong-kong-history", "polyu-siege"]
+tags: ["evidence-b", "photo-corroborated", "2019", "2019-protests", "ai-draft", "civil-unrest", "contention", "hong-kong-history", "polyu-siege"]
 summary: "Beginning on **November 17, 2019**, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of the 2019 social unrest."
 description: "Beginning on November 17, 2019, the Hong Kong Polytechnic University became the site of a dramatic twelve-day standoff between police and entrenched protesters, marking one of the most violent and defining episodes of…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -61,6 +62,18 @@ Corroborates: It illustrates the disruption of normal campus activities and the 
 
 *A view of fire and smoke near the stairs at the Hong Kong Polytechnic University during the 2019 protests.* (contemporary photo). 梁柏堅（表弟） Pakkin Leung, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HKPU_Entrance_with_fire_20191118.jpg).
 Corroborates: It corroborates the description of the violent standoff and unrest at the university campus.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Zibang Xiao (2020). *How has newspaper coverage influenced young Singaporeans' perception of the Hong Kong police siege of the Hong Kong Polytechnic University?*. DR-NTU (Nanyang Technological University).](https://openalex.org/W3034216473): This source specifically addresses the Hong Kong police siege of the Hong Kong Polytechnic University.
+
+**Still needed:** Detailed factual accounts and a timeline of the siege events are needed, as the available source focuses on media perception.
 
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

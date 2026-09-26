@@ -4,10 +4,11 @@ title_zh: "醫療傳道會醫院的建立"
 date: 1841-01-01
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "colonial-era", "first-opium-war", "medical-history", "missionaries", "opium-war", "public-health"]
+tags: ["evidence-none", "1841", "ai-draft", "colonial-era", "first-opium-war", "medical-history", "missionaries", "opium-war", "public-health"]
 summary: "In **1841**, the Medical Missionary Society in China established a hospital facility to provide Western medical care to local Chinese populations and foreign sailors amid rampant tropical diseases."
 description: "In 1841, the Medical Missionary Society in China established a hospital facility to provide Western medical care to local Chinese populations and foreign sailors amid rampant tropical diseases."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The establishment of the hospital marked the tentative beginning of institutiona
 
 - ❔ The exact opening date and specific location of the Medical Missionary Society Hospital in Hong Kong in 1841
 - ❔ The extent of local Chinese patient attendance at the early missionary hospital versus British military personnel
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment of the Medical Missionary Society Hospital in 1841 is needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

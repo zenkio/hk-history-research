@@ -4,10 +4,11 @@ title_zh: "香港故宮文化博物館開幕"
 date: 2022-07-03
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "ai-draft", "cultural-policy", "forbidden-city", "hong-kong-palace-museum", "national-security-era", "national-security-law-era", "west-kowloon"]
+tags: ["evidence-none", "2022", "ai-draft", "cultural-policy", "forbidden-city", "hong-kong-palace-museum", "national-security-era", "national-security-law-era", "west-kowloon"]
 summary: "On July 3, 2022, the Hong Kong Palace Museum officially opened in the West Kowloon Cultural District, displaying over 900 artifacts on loan from Beijing's Palace Museum to enhance cultural ties and public education."
 description: "On July 3, 2022, the Hong Kong Palace Museum officially opened in the West Kowloon Cultural District, displaying over 900 artifacts on loan from Beijing's Palace Museum to enhance cultural ties and public education."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The opening of the museum marked a significant milestone in Hong Kong's cultural
 
 - ❔ The exact number and conservation conditions of artifacts loaned from the Beijing Palace Museum for the inaugural exhibition.
 - ❔ The total construction cost and funding sources for the Hong Kong Palace Museum building project.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the specific opening date and details of the Hong Kong Palace Museum in 2022 is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

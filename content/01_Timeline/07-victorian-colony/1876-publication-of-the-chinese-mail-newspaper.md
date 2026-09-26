@@ -4,7 +4,7 @@ title_zh: "《華字日報》之出版"
 date: 1876-01-01
 year: 1876
 era: "Kowloon and the Victorian colony"
-tags: ["1876", "ai-draft", "chinese-mail", "media-history", "press-freedom", "victorian-colony", "victorian-hong-kong"]
+tags: ["photo-corroborated", "1876", "ai-draft", "chinese-mail", "media-history", "press-freedom", "victorian-colony", "victorian-hong-kong"]
 summary: "The establishment of Chinese-language newspapers like the Chinese Mail (華字日報) in **1876** marked a pivotal development in Hong Kong's media landscape, providing platforms for local discourse during the Victorian colonial era."
 description: "The establishment of Chinese-language newspapers like the Chinese Mail (華字日報) in 1876 marked a pivotal development in Hong Kong's media landscape, providing platforms for local discourse during the Victorian colonial…"
 confidence: ai-draft
@@ -41,5 +41,29 @@ The introduction of these Chinese-language media platforms provided a vital chan
 
 - ❔ The precise founding date and ownership structure of Wah Tze Yat Po in relation to The Chinese Mail in 1876
 - ❔ The extent of colonial censorship applied to Chinese-language newspapers during the 1870s
+
+## Photos from this period
+
+![A news report from the Chinese Mail (華字日報) dated July 2, 1936, regarding tram route realignment in Hong Kong.](https://upload.wikimedia.org/wikipedia/commons/4/40/1936_The_China_Mail_Hong_Kong_trams.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A news report from the Chinese Mail (華字日報) dated July 2, 1936, regarding tram route realignment in Hong Kong.* (document). The China Mail, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:1936_The_China_Mail_Hong_Kong_trams.jpg).
+Corroborates: It serves as a direct document and example of the Chinese Mail newspaper mentioned in the event.
+
+![A newspaper clipping from the Chinese Mail (華字日報) dated July 24, 1907, reporting on beer products from a brewery in Wong Nai Chung.](https://upload.wikimedia.org/wikipedia/commons/9/9f/Cm19070724p3_Beer_news_in_1907_Hong_Kong.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A newspaper clipping from the Chinese Mail (華字日報) dated July 24, 1907, reporting on beer products from a brewery in Wong Nai Chung.* (document). 華字日報, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cm19070724p3_Beer_news_in_1907_Hong_Kong.png).
+Corroborates: It provides a primary source example of the content and layout of the Chinese Mail newspaper mentioned in the text.
+
+![The front page of The China Mail newspaper, dated Thursday, 1st February, 1866.](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/The_China_Mail_1-2-1866.png/960px-The_China_Mail_1-2-1866.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*The front page of The China Mail newspaper, dated Thursday, 1st February, 1866.* (document). unknown, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_China_Mail_1-2-1866.png).
+Corroborates: It provides a primary source document for the newspaper mentioned in the event.
+⚠️ Possible conflict: The date on the newspaper (1866) is ten years earlier than the date specified in the event description (1876).
+
+![A clipping from the Chinese Mail (華字日報) dated July 21, 1939, reporting on the forced migration of Po Kong Village.](https://upload.wikimedia.org/wikipedia/commons/8/87/WTYP_19390721_Forced_migration_from_Po_Kong_Village.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*A clipping from the Chinese Mail (華字日報) dated July 21, 1939, reporting on the forced migration of Po Kong Village.* (document). Chinese Mail, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WTYP_19390721_Forced_migration_from_Po_Kong_Village.png).
+Corroborates: It provides a concrete example of the Chinese Mail serving as a platform for local discourse in colonial Hong Kong.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

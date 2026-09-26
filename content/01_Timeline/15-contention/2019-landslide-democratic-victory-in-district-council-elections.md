@@ -4,7 +4,7 @@ title_zh: "區議會選舉民主派壓倒性勝出"
 date: 2019-11-24
 year: 2019
 era: "Political contention and protest"
-tags: ["evidence-b", "2019", "2019-protests", "ai-draft", "contention", "democracy", "district-council-elections", "local-government", "voting"]
+tags: ["wikipedia-checked", "evidence-b", "2019", "2019-protests", "ai-draft", "contention", "democracy", "district-council-elections", "local-government", "voting"]
 summary: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
 description: "On November 24, 2019, Hong Kong held its District Council elections amidst months of anti-extradition bill protests, resulting in a historic and unprecedented landslide victory for the pro-democracy camp."
 confidence: ai-draft
@@ -35,22 +35,15 @@ The outcome was widely interpreted as a clear, quantifiable expression of public
 - [[02_Entities/People/carrie-lam|Carrie Lam (林鄭月娥)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Voter turnout reached 71.2% with nearly 2.94 million votes cast.
-- ❔ Pro-democracy candidates won control of 17 out of 18 District Councils.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Voter turnout reached 71.2% with nearly 2.94 million votes cast. The text mentions a landslide victory in local elections following the 2019 protests but does not provide voter turnout or total vote counts.
+- ❔ **not in Wikipedia**: Pro-democracy candidates won control of 17 out of 18 District Councils. The text states the party won a landslide victory in local elections but does not specify the number of District Councils controlled.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Democratic Party (Hong Kong)](https://en.wikipedia.org/wiki/Democratic_Party_%28Hong_Kong%29)
 
-### Scholarship (grade B)
-
-- [Ho‐fung Hung (2020). *The Unrest of 2019, the National Security Law, and the Future of Hong Kong: A Comparative-International Perspective*. The SAIS review of international affairs.](https://doi.org/10.1353/sais.2020.0021): Mentions a landslide victory following the 2019 uprising in Hong Kong.
-- [Ngok Ma (2024). *Local councils as movement resource: Post-anti-extradition movement district councils in Hong Kong*. Journal of Civil Society.](https://doi.org/10.1080/17448689.2024.2397465): Explicitly discusses the landslide victory of candidates in the District Council elections.
-
-**Still needed:** Official election results and specific data confirming the landslide victory on November 24, 2019.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

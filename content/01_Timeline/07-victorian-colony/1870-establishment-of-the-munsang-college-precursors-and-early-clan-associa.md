@@ -4,10 +4,11 @@ title_zh: "民生書院前身與早期宗親會之建立"
 date: 1870-01-01
 year: 1870
 era: "Kowloon and the Victorian colony"
-tags: ["1870", "ai-draft", "clan-associations", "colonial-era", "education-history", "migration", "mutual-aid", "victorian-colony"]
+tags: ["evidence-none", "1870", "ai-draft", "clan-associations", "colonial-era", "education-history", "migration", "mutual-aid", "victorian-colony"]
 summary: "During the 1870s, the burgeoning migrant Chinese population in British Hong Kong established vital clan associations and early educational precursors to provide mutual aid and preserve cultural heritage."
 description: "During the 1870s, the burgeoning migrant Chinese population in British Hong Kong established vital clan associations and early educational precursors to provide mutual aid and preserve cultural heritage."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,11 @@ The proliferation of clan associations and educational initiatives in the **1870
 
 - ❔ The precise timeline and founding dates of specific clan associations operating in Kowloon during the 1870s.
 - ❔ The direct institutional lineages connecting 1870s educational precursors to later schools such as Munsang College.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,7 +4,7 @@ title_zh: "實施《維護國家安全條例》"
 date: 2024-03-23
 year: 2024
 era: "The National Security Law era"
-tags: ["evidence-none", "2024", "ai-draft", "article-23", "basic-law", "hong-kong-politics", "legislation", "national-security", "national-security-era"]
+tags: ["wikipedia-checked", "evidence-none", "2024", "ai-draft", "article-23", "basic-law", "hong-kong-politics", "legislation", "national-security", "national-security-era"]
 summary: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
 description: "On March 23, 2024, Hong Kong enacted its own domestic national security legislation under Article 23 of the Basic Law, fulfilling a constitutional requirement to prohibit treason, sedition, and theft of state secrets."
 confidence: ai-draft
@@ -35,17 +35,17 @@ The enactment marked the fulfillment of Hong Kong's long-standing constitutional
 - [[02_Entities/People/john-lee|John Lee (李家超)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Safeguarding National Security Bill was passed unanimously by the Legislative Council on March 19, 2024.
-- ❔ The ordinance officially took effect upon gazettal on March 23, 2024.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The Safeguarding National Security Bill was passed unanimously by the Legislative Council on March 19, 2024. The text states the bill was passed on 19 March 2024, but does not mention if the vote was unanimous.
+- ❔ **not in Wikipedia**: The ordinance officially took effect upon gazettal on March 23, 2024. The text states the law came into effect on 23 March 2024, but does not mention gazettal.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Article 23](https://en.wikipedia.org/wiki/Article_23), [Wikipedia: 2020 Hong Kong national security law](https://en.wikipedia.org/wiki/2020_Hong_Kong_national_security_law)
 
-**Still needed:** Evidence specifically documenting the enactment of the Article 23 Safeguarding National Security Ordinance in March 2024 is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Hong Kong's contentious national security law concerns some academics](https://doi.org/10.1038/d41586-020-01693-y) (DOI)
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

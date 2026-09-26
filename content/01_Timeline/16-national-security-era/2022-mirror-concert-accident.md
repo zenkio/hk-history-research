@@ -4,7 +4,7 @@ title_zh: "MIRROR演唱會事故"
 date: 2022-07-28
 year: 2022
 era: "The National Security Law era"
-tags: ["evidence-none", "photo-corroborated", "2022", "ai-draft", "concert-accident", "hong-kong-coliseum", "mirror", "national-security-era", "pop-culture", "stage-safety"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "photo-corroborated", "2022", "ai-draft", "concert-accident", "hong-kong-coliseum", "mirror", "national-security-era", "pop-culture", "stage-safety"]
 summary: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety and labor conditions."
 description: "On July 28, 2022, a massive video screen fell during a concert by the popular boy band Mirror at the Hong Kong Coliseum, resulting in severe injuries to two dancers and triggering widespread scrutiny over event safety…"
 confidence: ai-draft
@@ -40,30 +40,15 @@ The accident exposed systemic safety oversights and regulatory gaps within the H
 - [[02_Entities/Places/hong-kong-coliseum|Hong Kong Coliseum (香港體育館)]]
 - [[02_Entities/Places/hung-hom|Hung Hom (紅磡)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of the concert accident was July 28, 2022.
-- ❔ Dancer Lee Kai-yin sustained severe spinal injuries from the falling screen.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ✅ **agrees with Wikipedia**: The exact date of the concert accident was July 28, 2022. The text states that a large overhead video screen fell down on 28 July 2022.
+- ⚠️ **differs from Wikipedia**: Dancer Lee Kai-yin sustained severe spinal injuries from the falling screen. The text states Li Kai-yin suffered serious damage to his nerves, while the second dancer, Chang Tsz-fung, had injuries to his pelvis and cervical spine.
 
-![A wide view of the stage and audience during the MIRROR.WE.ARE LIVE CONCERT 2022 at the Hong Kong Coliseum.](https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_Suspension.jpg/960px-MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_Suspension.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+**Articles compared:** [Wikipedia: Mirror (group)](https://en.wikipedia.org/wiki/Mirror_%28group%29)
 
-*A wide view of the stage and audience during the MIRROR.WE.ARE LIVE CONCERT 2022 at the Hong Kong Coliseum.* (contemporary photo). zh:am730, CC BY 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_Suspension.jpg).
-Corroborates: It provides visual context for the concert venue and the scale of the event where the accident took place.
-
-![A large LED screen falls onto performers on stage during a Mirror concert at the Hong Kong Coliseum.](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_screen_hitting_dancer.jpg/960px-MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_screen_hitting_dancer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A large LED screen falls onto performers on stage during a Mirror concert at the Hong Kong Coliseum.* (contemporary photo). am730, CC BY 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MIRROR.WE.ARE_LIVE_CONCERT_2022_Day_4_screen_hitting_dancer.jpg).
-Corroborates: The image provides a visual record of the accident described on the page, showing the falling screen and the stage setting.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
-
-**Still needed:** Evidence specifically regarding the Mirror concert accident on July 28, 2022, is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

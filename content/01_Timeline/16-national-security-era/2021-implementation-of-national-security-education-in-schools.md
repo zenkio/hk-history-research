@@ -4,10 +4,11 @@ title_zh: "學校實施國家安全教育"
 date: 2021-01-01
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "curriculum", "education-reform", "national-security-era", "national-security-law", "patriotism", "schools"]
+tags: ["evidence-none", "2021", "ai-draft", "curriculum", "education-reform", "national-security-era", "national-security-law", "patriotism", "schools"]
 summary: "In September 2021, the Hong Kong government introduced comprehensive national security education across all primary and secondary schools to foster patriotism and law-abiding awareness."
 description: "In September 2021, the Hong Kong government introduced comprehensive national security education across all primary and secondary schools to foster patriotism and law-abiding awareness."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ This educational reform marked a pivotal transition in Hong Kong's pedagogical l
 
 - ❔ Official Education Bureau curriculum guidelines issued for September 2021
 - ❔ Specific subject name changes from Liberal Studies to Citizenship and Social Development
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific policies, curriculum, or implementation details of National Security Education in Hong Kong schools is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

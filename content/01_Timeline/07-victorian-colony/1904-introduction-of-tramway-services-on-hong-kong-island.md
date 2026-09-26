@@ -4,10 +4,11 @@ title_zh: "香港島電車服務之引入"
 date: 1904-07-20
 year: 1904
 era: "Kowloon and the Victorian colony"
-tags: ["1904", "ai-draft", "colonial-infrastructure", "public-transport", "tramways", "urban-history", "victorian-colony"]
+tags: ["evidence-none", "1904", "ai-draft", "colonial-infrastructure", "public-transport", "tramways", "urban-history", "victorian-colony"]
 summary: "The introduction of the electric tramway system in July 1904 fundamentally transformed urban commuting, daily life, and commercial geography along the northern shore of Hong Kong Island."
 description: "The introduction of the electric tramway system in July 1904 fundamentally transformed urban commuting, daily life, and commercial geography along the northern shore of Hong Kong Island."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The tramway drastically reshaped the spatial dynamics of Hong Kong Island by con
 
 - ❔ The electric tramway system officially commenced operations on July 20, 1904.
 - ❔ The original concession was operated by the Electric Traction Company of Hong Kong Limited before becoming Hong Kong Tramways.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the introduction of tramway services on Hong Kong Island on July 20, 1904, is needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

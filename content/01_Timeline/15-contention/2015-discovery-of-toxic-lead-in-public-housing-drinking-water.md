@@ -4,10 +4,11 @@ title_zh: "公共屋邨食水含鉛超標事件"
 date: 2015-07-05
 year: 2015
 era: "Political contention and protest"
-tags: ["2015", "ai-draft", "contention", "governance", "public-health", "public-housing", "water-contamination"]
+tags: ["evidence-none", "2015", "ai-draft", "contention", "governance", "public-health", "public-housing", "water-contamination"]
 summary: "In **July 2015**, routine testing at a newly completed public housing estate revealed dangerous levels of lead in the drinking water, igniting a widespread public health scare and exposing systemic regulatory failures in construction and plumbing."
 description: "In July 2015, routine testing at a newly completed public housing estate revealed dangerous levels of lead in the drinking water, igniting a widespread public health scare and exposing systemic regulatory failures in…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The scandal led to intense public outcry and demands for accountability from gov
 
 - ❔ Did the Democratic Party publicly announce the Kai Ching Estate lead findings on July 5, 2015?
 - ❔ What were the exact blood lead levels recorded among affected residents during the initial screenings?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the discovery of lead contamination in Hong Kong public housing drinking water in 2015 is required.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

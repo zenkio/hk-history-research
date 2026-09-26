@@ -4,10 +4,11 @@ title_zh: "強制使用「安心出行」流動應用程式進入公眾場所"
 date: 2021-12-09
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "covid-19", "digital-privacy", "leave-homesafe", "national-security-era", "public-health", "surveillance"]
+tags: ["evidence-b", "2021", "ai-draft", "covid-19", "digital-privacy", "leave-homesafe", "national-security-era", "public-health", "surveillance"]
 summary: "On December 9, 2021, the Hong Kong government expanded the mandatory use of its 'LeaveHomeSafe' digital contact tracing application to virtually all regulated public premises, significantly shifting public health policy and intensifying local and international debates regarding digital privacy and state surveillance."
 description: "On December 9, 2021, the Hong Kong government expanded the mandatory use of its 'LeaveHomeSafe' digital contact tracing application to virtually all regulated public premises, significantly shifting public health policy…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,17 @@ The enforcement of the mandatory app usage marked a critical intersection of pub
 
 - ❔ The exact date the universal mandate for LeaveHomeSafe took effect across almost all public venues was December 9, 2021.
 - ❔ Exemptions were provided for specific demographics such as young children and the elderly under designated conditions.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Kris Hartley, Austin M. Aldag (2024). *Public Trust in Covid-19 Tracking Technology: A Survey of Attitudes About Hong Kong’s LeaveHomeSafe Mobile App*. Social Indicators Research.](https://doi.org/10.1007/s11205-024-03471-z) (claims 1): The source specifically examines the LeaveHomeSafe mobile app used in Hong Kong.
+
+**Still needed:** Direct evidence or official announcements confirming the specific mandate for LeaveHomeSafe app usage in public venues on 2021-12-09.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

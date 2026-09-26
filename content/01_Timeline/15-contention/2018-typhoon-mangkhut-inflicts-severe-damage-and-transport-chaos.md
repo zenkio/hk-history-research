@@ -4,10 +4,11 @@ title_zh: "山竹颱風造成嚴重破壞與交通混亂"
 date: 2018-09-16
 year: 2018
 era: "Political contention and protest"
-tags: ["2018", "ai-draft", "contention", "extreme-weather", "labor-rights", "natural-disaster", "transport-chaos", "typhoon-mangkhut"]
+tags: ["evidence-none", "2018", "ai-draft", "contention", "extreme-weather", "labor-rights", "natural-disaster", "transport-chaos", "typhoon-mangkhut"]
 summary: "On September 16, 2018, Super Typhoon Mangkhut battered Hong Kong, causing widespread destruction, severe transport gridlock, and intense public debate over labor policies during extreme weather."
 description: "On September 16, 2018, Super Typhoon Mangkhut battered Hong Kong, causing widespread destruction, severe transport gridlock, and intense public debate over labor policies during extreme weather."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,11 @@ The aftermath of Typhoon Mangkhut triggered intense public debate regarding gove
 
 - ❔ The Hong Kong Observatory issued Hurricane Signal No. 10 on September 16, 2018.
 - ❔ Severe transport gridlock occurred on September 17, 2018, due to blocked roads and suspended rail services.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

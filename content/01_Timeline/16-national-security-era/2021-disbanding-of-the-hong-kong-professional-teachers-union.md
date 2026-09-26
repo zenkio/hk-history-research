@@ -4,10 +4,11 @@ title_zh: "香港教育專業人員協會解散"
 date: 2021-08-10
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "civil-society", "hong-kong-history", "labor-unions", "national-security-era", "national-security-law", "teachers-union"]
+tags: ["evidence-none", "2021", "ai-draft", "civil-society", "hong-kong-history", "labor-unions", "national-security-era", "national-security-law", "teachers-union"]
 summary: "The Hong Kong Professional Teachers' Union, the city's largest teachers' organization, formally dissolved on August 10, 2021, following intense criticism from mainland Chinese state media and local authorities amid the implementation of the National Security Law."
 description: "The Hong Kong Professional Teachers' Union, the city's largest teachers' organization, formally dissolved on August 10, 2021, following intense criticism from mainland Chinese state media and local authorities amid the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The dissolution of the PTU is widely regarded by observers as a major milestone 
 
 - ❔ The exact date of the dissolution vote and announcement by the PTU leadership was August 10, 2021.
 - ❔ The PTU was founded in 1973 and was recognized as Hong Kong's largest single-industry trade union at the time of its closure.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Specific evidence or reports documenting the disbanding of the Hong Kong Professional Teachers' Union on August 10, 2021, is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

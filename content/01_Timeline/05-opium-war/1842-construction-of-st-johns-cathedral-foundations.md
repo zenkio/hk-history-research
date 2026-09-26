@@ -4,10 +4,11 @@ title_zh: "聖公會聖約翰座堂奠基"
 date: 1842-01-01
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["1842", "ai-draft", "british-colonial-history", "church-of-england", "first-opium-war", "opium-war", "st-johns-cathedral"]
+tags: ["evidence-none", "1842", "ai-draft", "british-colonial-history", "church-of-england", "first-opium-war", "opium-war", "st-johns-cathedral"]
 summary: "In 1842, foundational work began for St. John's Cathedral in the newly established British colony of Hong Kong, marking the physical and institutional roots of the Church of England in the territory."
 description: "In 1842, foundational work began for St. John's Cathedral in the newly established British colony of Hong Kong, marking the physical and institutional roots of the Church of England in the territory."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The construction of the cathedral foundations carried multiple layers of meaning
 
 - ❔ Exact date of the initial ground-breaking or foundation laying for St. John's Cathedral in 1842
 - ❔ The precise land grant allocation process overseen by Sir Henry Pottinger for Anglican church use
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the construction of St. John's Cathedral foundations in 1842 is needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

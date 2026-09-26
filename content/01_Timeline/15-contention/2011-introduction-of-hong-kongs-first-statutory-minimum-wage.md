@@ -4,10 +4,11 @@ title_zh: "香港實施首個法定最低工資"
 date: 2011-05-01
 year: 2011
 era: "Political contention and protest"
-tags: ["2011", "ai-draft", "contention", "economic-policy", "labor-rights", "minimum-wage", "wealth-inequality"]
+tags: ["evidence-none", "2011", "ai-draft", "contention", "economic-policy", "labor-rights", "minimum-wage", "wealth-inequality"]
 summary: "On May 1, 2011, Hong Kong enacted its first-ever statutory minimum wage, setting an initial rate of HK$28 per hour to protect low-income workers against severe wealth disparity. This landmark legislation fundamentally shifted the territory's traditionally laissez-faire labor market policies."
 description: "On May 1, 2011, Hong Kong enacted its first-ever statutory minimum wage, setting an initial rate of HK$28 per hour to protect low-income workers against severe wealth disparity."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The introduction of the statutory minimum wage marked a historic turning point f
 
 - ❔ The statutory minimum wage of HK$28 per hour took effect on May 1, 2011.
 - ❔ The Minimum Wage Ordinance exempted live-in domestic helpers and certain other specific groups.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically discussing the introduction, legislation, or implementation of Hong Kong's statutory minimum wage around 2011.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

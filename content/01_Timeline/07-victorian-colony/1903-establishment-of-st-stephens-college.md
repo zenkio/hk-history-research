@@ -4,10 +4,11 @@ title_zh: "聖士提反書院創立"
 date: 1903-01-01
 year: 1903
 era: "Kowloon and the Victorian colony"
-tags: ["1903", "ai-draft", "anglican-church", "bilingualism", "colonial-hong-kong", "education-history", "st-stephens-college", "victorian-colony"]
+tags: ["evidence-none", "1903", "ai-draft", "anglican-church", "bilingualism", "colonial-hong-kong", "education-history", "st-stephens-college", "victorian-colony"]
 summary: "Established in 1903, St. Stephen's College was founded in Hong Kong to provide a bilingual education blending Western and Chinese traditions, reflecting the maturation of the colony's educational landscape and the rise of a bilingual elite."
 description: "Established in 1903, St."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The founding of St. Stephen's College marked a significant milestone in the evol
 
 - ❔ St. Stephen's College was officially established in the year 1903.
 - ❔ Bishop Joseph Hoare played a central role in the founding of the college.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment of St. Stephen's College in 1903 is needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

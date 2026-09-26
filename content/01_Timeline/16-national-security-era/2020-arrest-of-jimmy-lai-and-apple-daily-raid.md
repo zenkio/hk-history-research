@@ -4,7 +4,7 @@ title_zh: "黎智英被捕與蘋果日報搜查"
 date: 2020-08-10
 year: 2020
 era: "The National Security Law era"
-tags: ["evidence-none", "2020", "ai-draft", "apple-daily", "jimmy-lai", "media-censorship", "national-security-era", "national-security-law", "press-freedom"]
+tags: ["wikipedia-checked", "evidence-none", "2020", "ai-draft", "apple-daily", "jimmy-lai", "media-censorship", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom. This event marked a profound turning point for press freedom and civil liberties in the territory."
 description: "On August 10, 2020, media tycoon Jimmy Lai and several executives of Next Digital were arrested under Hong Kong's National Security Law, followed by a major police raid on the Apple Daily newsroom."
 confidence: ai-draft
@@ -39,17 +39,15 @@ The raid and subsequent arrests were widely interpreted as a watershed moment fo
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/tseung-kwan-o|Tseung Kwan O (將軍澳)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Over 200 police officers participated in the August 10, 2020 raid on Apple Daily.
-- ❔ Jimmy Lai was arrested on suspicion of colluding with foreign forces and conspiracy to defraud.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Over 200 police officers participated in the August 10, 2020 raid on Apple Daily. The text states that over 200 national security officers raided the Apple Daily offices on 10 August 2020.
+- ✅ **agrees with Wikipedia**: Jimmy Lai was arrested on suspicion of colluding with foreign forces and conspiracy to defraud. The text states that Lai was arrested for alleged collusion with foreign forces and fraud.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Jimmy Lai](https://en.wikipedia.org/wiki/Jimmy_Lai), [Wikipedia: Apple Daily](https://en.wikipedia.org/wiki/Apple_Daily)
 
-**Still needed:** Sources specifically documenting the arrest of Jimmy Lai and the raid on Apple Daily on August 10, 2020.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

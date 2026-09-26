@@ -4,10 +4,11 @@ title_zh: "立法會否決中央政改方案"
 date: 2015-06-18
 year: 2015
 era: "Political contention and protest"
-tags: ["2015", "ai-draft", "beijing", "contention", "electoral-reform", "legislative-council", "umbrella-movement", "universal-suffrage"]
+tags: ["evidence-none", "2015", "ai-draft", "beijing", "contention", "electoral-reform", "legislative-council", "umbrella-movement", "universal-suffrage"]
 summary: "On June 18, 2015, Hong Kong's Legislative Council overwhelmingly rejected a Beijing-backed electoral reform package after a bizarre legislative blunder involving pro-establishment lawmakers. The vote effectively stalled any near-term transition to universal suffrage for the Chief Executive."
 description: "On June 18, 2015, Hong Kong's Legislative Council overwhelmingly rejected a Beijing-backed electoral reform package after a bizarre legislative blunder involving pro-establishment lawmakers."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -50,5 +51,13 @@ The veto of the reform package froze Hong Kong's constitutional development, lea
 - ❔ The exact vote count was 28 against and 8 in favor.
 - ❔ The number of pro-establishment lawmakers who walked out of the chamber prior to the vote.
 - ❔ The specific justification provided by pro-establishment lawmakers for leaving the chamber.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Legislative Council's veto of the 2015 electoral reform bill is missing.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

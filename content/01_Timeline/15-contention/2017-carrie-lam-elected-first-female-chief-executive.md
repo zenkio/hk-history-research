@@ -4,7 +4,7 @@ title_zh: "林鄭月娥當選首位女特首"
 date: 2017-03-26
 year: 2017
 era: "Political contention and protest"
-tags: ["evidence-none", "2017", "2017-election", "ai-draft", "carrie-lam", "chief-executive", "contention", "election-committee", "hong-kong-politics"]
+tags: ["wikipedia-checked", "evidence-none", "2017", "2017-election", "ai-draft", "carrie-lam", "chief-executive", "contention", "election-committee", "hong-kong-politics"]
 summary: "On March 26, 2017, Carrie Lam was chosen as Hong Kong's first female Chief Executive, securing 777 votes from the Election Committee amid deep political divisions."
 description: "On March 26, 2017, Carrie Lam was chosen as Hong Kong's first female Chief Executive, securing 777 votes from the Election Committee amid deep political divisions."
 confidence: ai-draft
@@ -41,17 +41,17 @@ The election was historically significant for producing Hong Kong's first female
 - [[02_Entities/People/leung-chun-ying|Leung Chun-ying (梁振英)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Carrie Lam received 777 votes in the March 26, 2017 election.
-- ❔ Carrie Lam took office on July 1, 2017.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Carrie Lam received 777 votes in the March 26, 2017 election. The text states that on 26 March 2017, Lam was elected Chief Executive with 777 votes.
+- ✅ **agrees with Wikipedia**: Carrie Lam took office on July 1, 2017. The text states that Lam was sworn in on 1 July 2017 and her period of governance began on that date.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Carrie Lam](https://en.wikipedia.org/wiki/Carrie_Lam), [Wikipedia: Lam government](https://en.wikipedia.org/wiki/Lam_government)
 
-**Still needed:** Evidence confirming the specific event of Carrie Lam being elected as Hong Kong's first female Chief Executive in 2017 is required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Digital Representation in an Electoral Campaign Influenced by Mainland China: The 2017 Hong Kong Chief Executive Election](https://doi.org/10.1142/S101325111950005X) (DOI)
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

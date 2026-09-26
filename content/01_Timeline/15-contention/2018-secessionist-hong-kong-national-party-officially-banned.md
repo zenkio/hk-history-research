@@ -4,10 +4,11 @@ title_zh: "香港民族黨被正式取締"
 date: 2018-09-24
 year: 2018
 era: "Political contention and protest"
-tags: ["2018", "ai-draft", "contention", "hong-kong-history", "hong-kong-national-party", "localism", "national-security", "societies-ordinance"]
+tags: ["evidence-none", "2018", "ai-draft", "contention", "hong-kong-history", "hong-kong-national-party", "localism", "national-security", "societies-ordinance"]
 summary: "On September 24, 2018, the Hong Kong government officially banned the pro-independence Hong Kong National Party under the Societies Ordinance, marking the first time a political organization was outlawed since the 1997 handover."
 description: "On September 24, 2018, the Hong Kong government officially banned the pro-independence Hong Kong National Party under the Societies Ordinance, marking the first time a political organization was outlawed since the 1997…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The ban represented a watershed moment for political expression and freedom of a
 
 - ❔ The Hong Kong National Party was officially banned on September 24, 2018.
 - ❔ This was the first time a political group was outlawed under the Societies Ordinance since the 1997 handover.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the specific official ban of the Hong Kong National Party on September 24, 2018, is required.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

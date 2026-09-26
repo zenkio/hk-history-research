@@ -4,10 +4,11 @@ title_zh: "香港碼頭工人罷工"
 date: 2013-03-28
 year: 2013
 era: "Political contention and protest"
-tags: ["2013", "ai-draft", "contention", "dock-workers-strike", "income-inequality", "kwai-tsing", "labor-rights"]
+tags: ["evidence-none", "2013", "ai-draft", "contention", "dock-workers-strike", "income-inequality", "kwai-tsing", "labor-rights"]
 summary: "Beginning on March 28, 2013, contract workers at the Kwai Tsing Container Terminals launched a historic 40-day strike to protest stagnant wages and grueling working conditions, drawing widespread public attention to severe wealth disparity and corporate power in Hong Kong."
 description: "Beginning on March 28, 2013, contract workers at the Kwai Tsing Container Terminals launched a historic 40-day strike to protest stagnant wages and grueling working conditions, drawing widespread public attention to…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The **2013** dock workers strike is widely regarded as a watershed moment in con
 - ❔ Did the strike officially begin on March 28, 2013?
 - ❔ Did the final settlement result in a 9.8 percent wage increase?
 - ❔ Were the strikes entirely organized by the Union of Hong Kong Dockers?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 2013 Hong Kong Dock Workers Strike over stagnant wages is needed.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

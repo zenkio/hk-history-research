@@ -4,7 +4,7 @@ title_zh: "香港支聯會解散"
 date: 2021-09-25
 year: 2021
 era: "The National Security Law era"
-tags: ["evidence-none", "2021", "ai-draft", "civil-society", "hong-kong-alliance", "national-security-era", "national-security-law", "pro-democracy", "tiananmen-vigil"]
+tags: ["wikipedia-checked", "evidence-none", "2021", "ai-draft", "civil-society", "hong-kong-alliance", "national-security-era", "national-security-law", "pro-democracy", "tiananmen-vigil"]
 summary: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
 description: "On September 25, 2021, the Hong Kong Alliance in Support of Patriotic Democratic Movements of China voted to dissolve following intense pressure and investigations under the National Security Law."
 confidence: ai-draft
@@ -46,17 +46,15 @@ The dissolution of the Hong Kong Alliance marked a major turning point in Hong K
 - [[02_Entities/Places/victoria-park|Victoria Park (維多利亞公園)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact vote tally among Alliance members to dissolve on September 25, 2021
-- ❔ The formal legal notices and correspondence exchanged between the Hong Kong Police Force and the Alliance regarding the 'foreign agent' designation
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact vote tally among Alliance members to dissolve on September 25, 2021. At the 25 September meeting, the Alliance decided to disband with 41 members voting in favour and four against.
+- ✅ **agrees with Wikipedia**: The formal legal notices and correspondence exchanged between the Hong Kong Police Force and the Alliance regarding the 'foreign agent' designation. Police served a letter on 25 August accusing the Alliance of collusion with foreign forces, and the Alliance responded with an open letter on 7 September rejecting the request.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Alliance in Support of Patriotic Democratic Movements of China](https://en.wikipedia.org/wiki/Hong_Kong_Alliance_in_Support_of_Patriotic_Democratic_Movements_of_China)
 
-**Still needed:** Evidence documenting the dissolution of the Hong Kong Alliance on September 25, 2021, is missing.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

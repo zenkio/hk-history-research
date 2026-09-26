@@ -4,10 +4,11 @@ title_zh: "英國推出英國國民（海外）簽證計劃"
 date: 2021-01-31
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "bno-visa", "demographics", "emigration", "national-security-era", "national-security-law", "sino-british-relations"]
+tags: ["evidence-b", "2021", "ai-draft", "bno-visa", "demographics", "emigration", "national-security-era", "national-security-law", "sino-british-relations"]
 summary: "On January 31, 2021, the British government launched a bespoke visa pathway for British National (Overseas) passport holders, enabling eligible Hong Kong residents and their dependents to move, work, and study in the United Kingdom."
 description: "On January 31, 2021, the British government launched a bespoke visa pathway for British National (Overseas) passport holders, enabling eligible Hong Kong residents and their dependents to move, work, and study in the…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,17 @@ The launch of the visa scheme precipitated a significant demographic shift in Ho
 
 - ❔ The exact number of applications submitted to the UK Home Office in the first year of the BNO visa scheme
 - ❔ The formal diplomatic protests issued by the Chinese Ministry of Foreign Affairs regarding the BNO passport non-recognition policy
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Ronaldo Au-Yeung (2022). *State Responsibility: International Legal Explanation of the United Kingdom’s Citizenship Provision to Hong Kong British National Overseas*.](https://doi.org/10.31235/osf.io/d9bv2) (claims 1): The article discusses the UK's citizenship provisions specifically for Hong Kong British National Overseas (BNO) holders.
+
+**Still needed:** Primary evidence, such as a UK government announcement or news report from January 2021, is needed to confirm the specific launch and date of the BNO visa scheme.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

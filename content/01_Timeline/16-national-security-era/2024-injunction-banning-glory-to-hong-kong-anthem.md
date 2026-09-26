@@ -4,10 +4,11 @@ title_zh: "禁制令禁止《願榮光歸香港》"
 date: 2024-05-08
 year: 2024
 era: "The National Security Law era"
-tags: ["2024", "ai-draft", "censorship", "freedom-of-speech", "glory-to-hong-kong", "judiciary", "national-security-era", "national-security-law"]
+tags: ["evidence-none", "2024", "ai-draft", "censorship", "freedom-of-speech", "glory-to-hong-kong", "judiciary", "national-security-era", "national-security-law"]
 summary: "On May 8, 2024, the High Court of Hong Kong granted an injunction to ban the unlawful broadcasting, distribution, or performance of the 2019 protest song 'Glory to Hong Kong' (願榮光歸香港), marking a significant legal milestone under the National Security Law era."
 description: "On May 8, 2024, the High Court of Hong Kong granted an injunction to ban the unlawful broadcasting, distribution, or performance of the 2019 protest song 'Glory to Hong Kong' (願榮光歸香港), marking a significant legal…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ This legal action represents the first time a specific musical composition has b
 
 - ❔ The Court of Appeal granted the injunction banning 'Glory to Hong Kong' on May 8, 2024.
 - ❔ The Department of Justice originally applied for the injunction in June 2023 and was initially refused in July 2023.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the legal injunction issued on May 8, 2024, regarding the 'Glory to Hong Kong' anthem is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

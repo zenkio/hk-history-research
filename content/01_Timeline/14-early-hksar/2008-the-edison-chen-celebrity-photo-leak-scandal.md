@@ -4,10 +4,11 @@ title_zh: "陳冠希藝人易手照片外洩事件"
 date: 2008-01-27
 year: 2008
 era: "The early HKSAR"
-tags: ["2008", "ai-draft", "cybercrime", "early-hksar", "edison-chen", "hong-kong-media", "internet-privacy", "photo-leak"]
+tags: ["evidence-b", "2008", "ai-draft", "cybercrime", "early-hksar", "edison-chen", "hong-kong-media", "internet-privacy", "photo-leak"]
 summary: "In January 2008, the mass online leak of private, sexually explicit photographs involving Hong Kong entertainer Edison Chen and multiple prominent female celebrities sparked a massive cultural and legal crisis regarding privacy, morality, and cybercrime."
 description: "In January 2008, the mass online leak of private, sexually explicit photographs involving Hong Kong entertainer Edison Chen and multiple prominent female celebrities sparked a massive cultural and legal crisis regarding…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,17 @@ The scandal served as a watershed moment for internet culture, digital privacy, 
 
 - ❔ The exact date when the first photographs were uploaded to internet forums in January 2008
 - ❔ The precise number of arrests made by the Hong Kong Police Force during the initial weeks of the investigation
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Kara Chan (2011). *Tween Girls’ Sexuality and a Media Scandal in Hong Kong*. HKBU Institutional Repository (Hong Kong Baptist University).](https://openalex.org/W2611431347): Analyzes a media scandal in Hong Kong related to sexuality, which aligns with the topic.
+
+**Still needed:** Factual accounts, news reports, and a detailed timeline of the 2008 Edison Chen photo leak scandal.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

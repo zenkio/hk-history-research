@@ -4,7 +4,7 @@ title_zh: "香港四十七人案裁決"
 date: 2024-05-30
 year: 2024
 era: "The National Security Law era"
-tags: ["evidence-none", "2024", "ai-draft", "hong-kong-47", "legal-history", "national-security-era", "national-security-law", "subversion-trial"]
+tags: ["wikipedia-checked", "evidence-none", "2024", "ai-draft", "hong-kong-47", "legal-history", "national-security-era", "national-security-law", "subversion-trial"]
 summary: "On May 30, 2024, a Hong Kong court convicted fourteen pro-democracy activists of subversion under the Beijing-imposed National Security Law, concluding the territory's largest mass trial under the legislation."
 description: "On May 30, 2024, a Hong Kong court convicted fourteen pro-democracy activists of subversion under the Beijing-imposed National Security Law, concluding the territory's largest mass trial under the legislation."
 confidence: ai-draft
@@ -42,17 +42,15 @@ Legal scholars and international observers view the verdicts as a watershed mome
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/west-kowloon-magistrates-courts|West Kowloon Magistrates' Courts (西九龍裁判法院)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the court deliver verdicts on May 30, 2024?
-- ❔ Were exactly 14 defendants convicted on that date out of the 47 accused?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the court deliver verdicts on May 30, 2024?. The text states that verdicts were delivered in May 2024, but does not specify the exact date.
+- ❔ **not in Wikipedia**: Were exactly 14 defendants convicted on that date out of the 47 accused?. The text mentions 14 defendants were found guilty in May 2024, but it does not confirm if this happened on May 30.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong 47](https://en.wikipedia.org/wiki/Hong_Kong_47)
 
-**Still needed:** Evidence specifically regarding the verdicts, defendants, and legal outcomes of the Hong Kong 47 trial on May 30, 2024, is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

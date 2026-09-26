@@ -4,10 +4,11 @@ title_zh: "雅麗氏紀念醫院之創立"
 date: 1887-02-16
 year: 1887
 era: "Kowloon and the Victorian colony"
-tags: ["1887", "19th-century", "ai-draft", "alice-memorial-hospital", "ho-kai", "hong-kong-college-of-medicine", "london-missionary-society", "medical-history", "victorian-colony"]
+tags: ["evidence-b", "1887", "19th-century", "ai-draft", "alice-memorial-hospital", "ho-kai", "hong-kong-college-of-medicine", "london-missionary-society", "medical-history", "victorian-colony"]
 summary: "Established on February 16, 1887, the Alice Memorial Hospital was founded by the London Missionary Society to provide Western medical care to the underprivileged Chinese community in Hong Kong and laid the foundational groundwork for modern medical education in the colony."
 description: "Established on February 16, 1887, the Alice Memorial Hospital was founded by the London Missionary Society to provide Western medical care to the underprivileged Chinese community in Hong Kong and laid the foundational…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -50,5 +51,17 @@ From a historiographical standpoint, the hospital exemplifies the complex interp
 - ❔ The Alice Memorial Hospital officially opened on February 16, 1887.
 - ❔ Ho Kai funded the hospital in memory of his wife Alice Ho Mian-soc.
 - ❔ The hospital directly led to the founding of the Hong Kong College of Medicine for Chinese.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [TW Wong (2021). *Dr Man-Kai Wan and the medical students of the Hong Kong College of Medicine at Nethersole Hospital in 1898*. Hong Kong Medical Journal.](https://doi.org/10.12809/hkmj-hkmms202112): Mentions the Alice Memorial Hospital and its operational history prior to 1893.
+
+**Still needed:** Evidence specifically confirming the establishment date of 1887-02-16.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

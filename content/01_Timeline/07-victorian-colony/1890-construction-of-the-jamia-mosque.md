@@ -4,10 +4,11 @@ title_zh: "回教徒清真寺擴建"
 date: 1890-01-01
 year: 1890
 era: "Kowloon and the Victorian colony"
-tags: ["1890", "ai-draft", "ethnic-minorities", "islam-in-hong-kong", "jamia-mosque", "shelley-street", "victorian-colony", "victorian-era"]
+tags: ["evidence-b", "1890", "ai-draft", "ethnic-minorities", "islam-in-hong-kong", "jamia-mosque", "shelley-street", "victorian-colony", "victorian-era"]
 summary: "In **1890**, the Jamia Mosque on Shelley Street underwent a major rebuilding and expansion to accommodate Hong Kong's growing and diverse Muslim community."
 description: "In 1890, the Jamia Mosque on Shelley Street underwent a major rebuilding and expansion to accommodate Hong Kong's growing and diverse Muslim community."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,17 @@ The reconstruction of the Jamia Mosque stands as a physical testament to the mul
 
 - ❔ The exact completion date of the 1890 rebuilding of the Jamia Mosque.
 - ❔ The precise composition and financial contributors behind the 1890 expansion.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [J Li, Mohd Roslan Mohd Nor (2023). *Masjid Kowloon: A Case Study of Coexistence Culture in Hong Kong*. IntechOpen eBooks.](https://doi.org/10.5772/intechopen.109459): The source focuses on Masjid Kowloon, which is the Jamia Mosque.
+
+**Still needed:** Specific evidence confirming the construction details and the 1890 date.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

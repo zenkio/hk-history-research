@@ -2968,7 +2968,8 @@
       "date": "2017-03-26",
       "summary": "Carrie Lam was chosen as Chief Executive, promising to heal political divisions but later presiding over the city's most disruptive crisis.",
       "status": "done",
-      "file": "15-contention/2017-carrie-lam-elected-first-female-chief-executive.md"
+      "file": "15-contention/2017-carrie-lam-elected-first-female-chief-executive.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2977,7 +2978,8 @@
       "date": "2018-09-23",
       "summary": "The opening of the Guangzhou-Shenzhen-Hong Kong Express Rail Link introduced mainland Chinese law enforcement inside Hong Kong's West Kowloon terminus.",
       "status": "done",
-      "file": "15-contention/2018-high-speed-rail-link-opens-with-co-location-scheme.md"
+      "file": "15-contention/2018-high-speed-rail-link-opens-with-co-location-scheme.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2986,7 +2988,8 @@
       "date": "2018-10-23",
       "summary": "The massive bridge megaproject opened to physically integrate Hong Kong deeper into China's Greater Bay Area development plan.",
       "status": "done",
-      "file": "15-contention/2018-opening-of-hong-kong-zhuhai-macau-bridge.md"
+      "file": "15-contention/2018-opening-of-hong-kong-zhuhai-macau-bridge.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -2995,7 +2998,8 @@
       "date": "2019-06-09",
       "summary": "Over one million citizens marched against a proposed bill allowing extraditions to mainland China, sparking months of escalating civil unrest.",
       "status": "done",
-      "file": "15-contention/2019-mass-protest-against-the-extradition-bill.md"
+      "file": "15-contention/2019-mass-protest-against-the-extradition-bill.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -3004,7 +3008,9 @@
       "date": "2019-07-21",
       "summary": "An attack on commuters and protesters by armed men in Yuen Long, combined with a delayed police response, marked a critical breakdown in public trust.",
       "status": "done",
-      "file": "15-contention/2019-yuen-long-attack-shakes-public-trust.md"
+      "file": "15-contention/2019-yuen-long-attack-shakes-public-trust.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "15-contention",
@@ -3013,7 +3019,8 @@
       "date": "2019-11-24",
       "summary": "Pro-democracy candidates won a historic, sweeping landslide victory in local elections, illustrating overwhelming public support for the protest movement.",
       "status": "done",
-      "file": "15-contention/2019-landslide-democratic-victory-in-district-council-elections.md"
+      "file": "15-contention/2019-landslide-democratic-victory-in-district-council-elections.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -3022,7 +3029,8 @@
       "date": "2020-01-23",
       "summary": "The onset of the coronavirus pandemic shifted public priorities, prompted early border measures, and effectively halted massive street protests.",
       "status": "done",
-      "file": "15-contention/2020-arrival-of-covid-19-pandemic.md"
+      "file": "15-contention/2020-arrival-of-covid-19-pandemic.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "15-contention",
@@ -3031,7 +3039,8 @@
       "date": "2020-06-30",
       "summary": "Beijing bypassed Hong Kong's legislature to enact a sweeping law that fundamentally reshaped the city's political, legal, and civil landscape.",
       "status": "done",
-      "file": "15-contention/2020-promulgation-of-the-national-security-law.md"
+      "file": "15-contention/2020-promulgation-of-the-national-security-law.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3040,7 +3049,8 @@
       "date": "2020-06-30",
       "summary": "Beijing bypasses Hong Kong's legislature to impose a sweeping security law, fundamentally altering the city's legal framework and civil liberties.",
       "status": "done",
-      "file": "16-national-security-era/2020-enactment-of-the-national-security-law.md"
+      "file": "16-national-security-era/2020-enactment-of-the-national-security-law.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3049,7 +3059,8 @@
       "date": "2020-07-31",
       "summary": "The government delays the highly anticipated legislative elections by a year, officially citing COVID-19 concerns amid high political tensions.",
       "status": "done",
-      "file": "16-national-security-era/2020-postponement-of-the-legislative-council-election.md"
+      "file": "16-national-security-era/2020-postponement-of-the-legislative-council-election.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3058,7 +3069,8 @@
       "date": "2020-08-10",
       "summary": "Media tycoon Jimmy Lai is arrested under the National Security Law, signalling a dramatic shift in press freedom and media independence.",
       "status": "done",
-      "file": "16-national-security-era/2020-arrest-of-jimmy-lai-and-apple-daily-raid.md"
+      "file": "16-national-security-era/2020-arrest-of-jimmy-lai-and-apple-daily-raid.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3067,7 +3079,9 @@
       "date": "2021-01-06",
       "summary": "Police arrest dozens of activists for participating in an unofficial primary election, in the largest single NSL crackdown to date.",
       "status": "done",
-      "file": "16-national-security-era/2021-mass-arrest-of-53-pro-democracy-activists.md"
+      "file": "16-national-security-era/2021-mass-arrest-of-53-pro-democracy-activists.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "16-national-security-era",
@@ -3076,7 +3090,8 @@
       "date": "2021-03-11",
       "summary": "China's parliament approves drastic changes to Hong Kong's electoral system, establishing a patriots-only screening mechanism.",
       "status": "done",
-      "file": "16-national-security-era/2021-electoral-overhaul-by-beijing.md"
+      "file": "16-national-security-era/2021-electoral-overhaul-by-beijing.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3085,7 +3100,8 @@
       "date": "2021-06-24",
       "summary": "The pro-democracy newspaper prints its final edition after its assets are frozen, marking the end of an era for local media.",
       "status": "done",
-      "file": "16-national-security-era/2021-forced-closure-of-apple-daily.md"
+      "file": "16-national-security-era/2021-forced-closure-of-apple-daily.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3094,7 +3110,8 @@
       "date": "2021-09-25",
       "summary": "The civic group organizing annual Tiananmen Square vigils disbands under intense national security investigation.",
       "status": "done",
-      "file": "16-national-security-era/2021-dissolution-of-the-hong-kong-alliance.md"
+      "file": "16-national-security-era/2021-dissolution-of-the-hong-kong-alliance.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3103,7 +3120,8 @@
       "date": "2021-12-22",
       "summary": "The University of Hong Kong dismantles a famous sculpture commemorating the Tiananmen Square victims, sparking cultural censorship concerns.",
       "status": "done",
-      "file": "16-national-security-era/2021-removal-of-the-pillar-of-shame.md"
+      "file": "16-national-security-era/2021-removal-of-the-pillar-of-shame.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3112,7 +3130,8 @@
       "date": "2021-12-29",
       "summary": "The prominent independent online media outlet closes after police raid its office and arrest its senior editors.",
       "status": "done",
-      "file": "16-national-security-era/2021-stand-news-shuts-down-after-raid.md"
+      "file": "16-national-security-era/2021-stand-news-shuts-down-after-raid.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3121,7 +3140,8 @@
       "date": "2022-02",
       "summary": "Hong Kong suffers its worst COVID-19 outbreak, straining healthcare systems, causing high mortality rates, and triggering strict lockdowns.",
       "status": "done",
-      "file": "16-national-security-era/2022-fifth-wave-of-covid-19-overwhelms-city.md"
+      "file": "16-national-security-era/2022-fifth-wave-of-covid-19-overwhelms-city.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3130,7 +3150,8 @@
       "date": "2022-05-08",
       "summary": "Former security chief John Lee is chosen as Chief Executive in an uncontested election, solidifying security-focused governance.",
       "status": "done",
-      "file": "16-national-security-era/2022-john-lee-selected-as-chief-executive.md"
+      "file": "16-national-security-era/2022-john-lee-selected-as-chief-executive.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3139,7 +3160,8 @@
       "date": "2022-07-28",
       "summary": "A giant video screen falls onto dancers during a concert by C-pop sensation Mirror, sparking public outrage over stage safety regulations.",
       "status": "done",
-      "file": "16-national-security-era/2022-mirror-concert-accident.md"
+      "file": "16-national-security-era/2022-mirror-concert-accident.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3148,7 +3170,8 @@
       "date": "2022-09-26",
       "summary": "The government replaces hotel quarantine with a '0+3' scheme, beginning the post-pandemic economic reopening process.",
       "status": "done",
-      "file": "16-national-security-era/2022-scrapping-of-mandatory-hotel-quarantine.md"
+      "file": "16-national-security-era/2022-scrapping-of-mandatory-hotel-quarantine.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3157,7 +3180,8 @@
       "date": "2022-11-28",
       "summary": "Hong Kong students and citizens hold blank sheets of paper in solidarity with mainland China's anti-lockdown demonstrations.",
       "status": "done",
-      "file": "16-national-security-era/2022-a4-paper-protests-in-hong-kong.md"
+      "file": "16-national-security-era/2022-a4-paper-protests-in-hong-kong.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3166,7 +3190,9 @@
       "date": "2023-01-08",
       "summary": "Hong Kong opens its land borders with mainland China for travel without quarantine after three years of pandemic isolation.",
       "status": "done",
-      "file": "16-national-security-era/2023-reopening-of-the-border-with-mainland-china.md"
+      "file": "16-national-security-era/2023-reopening-of-the-border-with-mainland-china.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "16-national-security-era",
@@ -3175,7 +3201,8 @@
       "date": "2023-02-06",
       "summary": "The landmark National Security Law trial of forty-seven prominent democrats begins under intense international scrutiny.",
       "status": "done",
-      "file": "16-national-security-era/2023-trial-of-the-hong-kong-47-begins.md"
+      "file": "16-national-security-era/2023-trial-of-the-hong-kong-47-begins.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3184,7 +3211,8 @@
       "date": "2023-09-07",
       "summary": "Hong Kong experiences its heaviest rainfall in 140 years, causing widespread urban flooding, landslides, and infrastructure damage.",
       "status": "done",
-      "file": "16-national-security-era/2023-record-breaking-rainfall-and-flooding.md"
+      "file": "16-national-security-era/2023-record-breaking-rainfall-and-flooding.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3193,7 +3221,8 @@
       "date": "2023-12-10",
       "summary": "The overhauled local elections record a historic low turnout of 27.5% after direct-elected seats are slashed and opposition candidates excluded.",
       "status": "done",
-      "file": "16-national-security-era/2023-district-council-elections-with-lowest-turnout.md"
+      "file": "16-national-security-era/2023-district-council-elections-with-lowest-turnout.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3202,7 +3231,8 @@
       "date": "2024-03-23",
       "summary": "Hong Kong passes its own domestic national security law, known as Article 23, expanding state powers and definitions of espionage.",
       "status": "done",
-      "file": "16-national-security-era/2024-enactment-of-article-23-security-law.md"
+      "file": "16-national-security-era/2024-enactment-of-article-23-security-law.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "16-national-security-era",
@@ -3211,7 +3241,8 @@
       "date": "2024-05-30",
       "summary": "A high court convicts fourteen pro-democracy activists under the National Security Law, concluding a historic subversion trial.",
       "status": "done",
-      "file": "16-national-security-era/2024-verdicts-in-the-hong-kong-47-trial.md"
+      "file": "16-national-security-era/2024-verdicts-in-the-hong-kong-47-trial.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3220,7 +3251,9 @@
       "date": "1841",
       "summary": "The layout of the first urban center established a colonial spatial hierarchy that separated European residential areas from Chinese districts.",
       "status": "done",
-      "file": "06-early-colony/1841-establishment-of-the-victoria-city-grid.md"
+      "file": "06-early-colony/1841-establishment-of-the-victoria-city-grid.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "06-early-colony",

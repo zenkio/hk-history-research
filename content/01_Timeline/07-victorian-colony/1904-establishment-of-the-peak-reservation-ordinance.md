@@ -4,10 +4,11 @@ title_zh: "山頂保留條例之立定"
 date: 1904-01-01
 year: 1904
 era: "Kowloon and the Victorian colony"
-tags: ["1904", "ai-draft", "british-hong-kong", "colonial-history", "peak-reservation-ordinance", "racial-segregation", "urban-planning", "victorian-colony"]
+tags: ["evidence-none", "1904", "ai-draft", "british-hong-kong", "colonial-history", "peak-reservation-ordinance", "racial-segregation", "urban-planning", "victorian-colony"]
 summary: "Enacted in 1904, the Peak Reservation Ordinance legally restricted Victoria Peak exclusively for European residential use, cementing deep-seated colonial social and racial stratification in Hong Kong."
 description: "Enacted in 1904, the Peak Reservation Ordinance legally restricted Victoria Peak exclusively for European residential use, cementing deep-seated colonial social and racial stratification in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ This ordinance marked a profound turning point in the social and spatial organiz
 
 - ❔ The Peak Reservation Ordinance was officially enacted in the year 1904 under Governor Matthew Nathan.
 - ❔ The legislation explicitly required the Governor's special exemption for non-Europeans to reside in the Peak district.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the Establishment of the Peak Reservation Ordinance of 1904 is needed.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

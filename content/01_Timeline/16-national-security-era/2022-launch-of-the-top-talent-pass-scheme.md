@@ -4,10 +4,11 @@ title_zh: "高端人才通行證計劃推出"
 date: 2022-12-28
 year: 2022
 era: "The National Security Law era"
-tags: ["2022", "ai-draft", "emigration-wave", "immigration-policy", "john-lee", "national-security-era", "top-talent-pass-scheme", "workforce"]
+tags: ["evidence-none", "2022", "ai-draft", "emigration-wave", "immigration-policy", "john-lee", "national-security-era", "top-talent-pass-scheme", "workforce"]
 summary: "In December 2022, the Hong Kong government introduced the Top Talent Pass Scheme to attract global professionals and high-earning individuals to the city, following a significant wave of emigration and demographic shifts."
 description: "In December 2022, the Hong Kong government introduced the Top Talent Pass Scheme to attract global professionals and high-earning individuals to the city, following a significant wave of emigration and demographic…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The launch of the scheme marked a pivotal moment in Hong Kong's post-pandemic go
 
 - ❔ The Top Talent Pass Scheme officially began accepting applications on December 28, 2022.
 - ❔ The scheme specifically targets high earners and graduates from top global universities across three distinct categories.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the announcement, details, and implementation of the Top Talent Pass Scheme launched in December 2022 is needed.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

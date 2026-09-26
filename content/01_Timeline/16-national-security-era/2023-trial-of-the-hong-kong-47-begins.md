@@ -4,7 +4,7 @@ title_zh: "香港四十七人案開審"
 date: 2023-02-06
 year: 2023
 era: "The National Security Law era"
-tags: ["evidence-none", "2023", "ai-draft", "hong-kong-47", "judicial-system", "national-security-era", "national-security-law", "pro-democracy", "subversion-trial"]
+tags: ["wikipedia-checked", "evidence-none", "2023", "ai-draft", "hong-kong-47", "judicial-system", "national-security-era", "national-security-law", "pro-democracy", "subversion-trial"]
 summary: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
 description: "On February 6, 2023, the landmark subversion trial of forty-seven prominent Hong Kong pro-democracy figures began under the National Security Law, drawing intense international scrutiny."
 confidence: ai-draft
@@ -41,17 +41,15 @@ The trial represents the largest single prosecution under the National Security 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/west-kowloon-magistrates-courts|West Kowloon Magistrates' Courts (西九龍裁判法院)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of defendants who pleaded guilty versus those who maintained their innocence at the start of the trial on February 6, 2023.
-- ❔ The procedural composition of the three-judge panel hearing the case without a jury under the National Security Law.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact number of defendants who pleaded guilty versus those who maintained their innocence at the start of the trial on February 6, 2023. The text mentions 29 guilty pleas in August 2022 and subsequent changes by Ng Kin-wai and Mike Lam, and that 16 of 18 defendants repeated not guilty pleas on February 6, but it does not state a final consolidated total for both groups.
+- ❔ **not in Wikipedia**: The procedural composition of the three-judge panel hearing the case without a jury under the National Security Law. The text identifies the three national security judges as Andrew Chan, Johnny Chan and Alex Lee, but it does not mention whether the trial was without a jury.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong 47](https://en.wikipedia.org/wiki/Hong_Kong_47)
 
-**Still needed:** Evidence regarding the 2023 trial of the Hong Kong 47 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

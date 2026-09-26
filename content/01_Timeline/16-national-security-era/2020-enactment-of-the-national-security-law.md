@@ -4,7 +4,7 @@ title_zh: "實施香港國安法"
 date: 2020-06-30
 year: 2020
 era: "The National Security Law era"
-tags: ["evidence-b", "2020", "ai-draft", "civil-liberties", "legal-system", "national-security-era", "national-security-law", "one-country-two-systems"]
+tags: ["wikipedia-checked", "evidence-b", "2020", "ai-draft", "civil-liberties", "legal-system", "national-security-era", "national-security-law", "one-country-two-systems"]
 summary: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, marking a fundamental turning point in the city's legal and political landscape."
 description: "On June 30, 2020, Beijing enacted the Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, marking a fundamental turning point in the city's legal and…"
 confidence: ai-draft
@@ -39,24 +39,15 @@ The enactment of the law fundamentally altered Hong Kong's legal framework and c
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/beijing|Beijing (北京)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact vote count and unanimous passage by the NPCSC on June 30, 2020
-- ❔ The precise wording added to Annex III of the Basic Law
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The exact vote count and unanimous passage by the NPCSC on June 30, 2020. The NPCSC passed the law unanimously, with 163 votes for and none against, on 30 June 2020.
+- ❔ **not in Wikipedia**: The precise wording added to Annex III of the Basic Law. The reference text does not provide the precise wording added to Annex III.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: 2020 Hong Kong national security law](https://en.wikipedia.org/wiki/2020_Hong_Kong_national_security_law), [Wikipedia: National People's Congress decision on Hong Kong national security legislation](https://en.wikipedia.org/wiki/National_People%27s_Congress_decision_on_Hong_Kong_national_security_legislation)
 
-### Scholarship (grade B)
-
-- [Mona Wang, Jonathan D. Mayer (2022). *Self-Censorship Under Law: A Case Study of the Hong Kong National Security Law*. arXiv (Cornell University).](https://doi.org/10.48550/arxiv.2210.11636): Studies self-censorship and discourse changes induced by the Hong Kong National Security Law.
-- [Johannes Chan (2022). *National Security Law in Hong Kong: One Year On*. SSRN Electronic Journal.](https://doi.org/10.2139/ssrn.3956272): Analyzes the National Security Law one year after its implementation.
-- [Tetsuro Kobayashi, Jaehyun Song, Polly Chan (2021). *Does repression undermine opposition demands? The case of the Hong Kong National Security Law*. Japanese Journal of Political Science.](https://doi.org/10.1017/s1468109921000256): Examines political repression and opposition demands under the National Security Law.
-- [Lau Siu‐kai (2021). *The National Security Law: political and social effects on the governance of the Hong Kong Special Administrative Region*. Public Administration and Policy.](https://doi.org/10.1108/pap-08-2021-0050): Identifies the political and social effects of the National Security Law on Hong Kong governance.
-
-**Still needed:** Primary sources such as the actual text of the law and official government announcements from June 30, 2020.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

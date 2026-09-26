@@ -4,10 +4,11 @@ title_zh: "拔萃女書院之創立"
 date: 1860-01-01
 year: 1860
 era: "Kowloon and the Victorian colony"
-tags: ["1860", "ai-draft", "diocesan-girls-school", "education-history", "missionary-schools", "victorian-colony", "womens-history"]
+tags: ["evidence-b", "1860", "ai-draft", "diocesan-girls-school", "education-history", "missionary-schools", "victorian-colony", "womens-history"]
 summary: "Founded in 1860 as the Diocesan Native Female Training School, this institution marked an early and significant step toward formal education for girls in the colonial era."
 description: "Founded in 1860 as the Diocesan Native Female Training School, this institution marked an early and significant step toward formal education for girls in the colonial era."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The founding of the school is widely recognized by historians as a foundational 
 
 - ❔ The exact founding date and initial location of the Diocesan Native Female Training School in 1860
 - ❔ The initial enrollment numbers and curriculum taught during the school's first decade of operation
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Moira M. W. Chan-Yeung (2022). *Daily Giving Service*. Hong Kong University Press eBooks.](https://doi.org/10.1515/9789888754403): It is a comprehensive history of the Diocesan Girls' School in Hong Kong.
+
+**Still needed:** Evidence specifically documenting the establishment of the school on January 1, 1860.
+
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

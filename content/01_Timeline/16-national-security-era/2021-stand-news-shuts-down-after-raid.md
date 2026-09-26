@@ -4,7 +4,7 @@ title_zh: "立場新聞因搜查被迫停運"
 date: 2021-12-29
 year: 2021
 era: "The National Security Law era"
-tags: ["evidence-none", "2021", "ai-draft", "media-shutdown", "national-security-era", "national-security-law", "press-freedom", "stand-news"]
+tags: ["wikipedia-checked", "evidence-none", "2021", "ai-draft", "media-shutdown", "national-security-era", "national-security-law", "press-freedom", "stand-news"]
 summary: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
 description: "On December 29, 2021, prominent independent online media outlet Stand News (立場新聞) ceased operations following a police raid and the arrests of its senior figures under the colonial-era sedition ordinance."
 confidence: ai-draft
@@ -43,17 +43,15 @@ The closure of Stand News marked a major turning point for press freedom in Hong
 - [[02_Entities/People/margaret-ng|Margaret Ng (吳靄儀)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact number of police officers deployed during the December 29, 2021 raid
-- ❔ The precise amount of assets frozen by authorities during the operation
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact number of police officers deployed during the December 29, 2021 raid. The text states that over 200 officers were involved, but does not provide an exact number.
+- ✅ **agrees with Wikipedia**: The precise amount of assets frozen by authorities during the operation. The text states that Hong Kong police froze HK$61 million in assets related to Stand News.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Stand News](https://en.wikipedia.org/wiki/Stand_News), [Wikipedia: Stand News raids and arrests](https://en.wikipedia.org/wiki/Stand_News_raids_and_arrests)
 
-**Still needed:** Sources specifically documenting the December 2021 raid on Stand News and its subsequent closure are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

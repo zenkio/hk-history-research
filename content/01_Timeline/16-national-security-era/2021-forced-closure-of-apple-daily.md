@@ -4,7 +4,7 @@ title_zh: "《蘋果日報》被迫停刊"
 date: 2021-06-24
 year: 2021
 era: "The National Security Law era"
-tags: ["evidence-none", "2021", "ai-draft", "apple-daily", "media-history", "national-security-era", "national-security-law", "press-freedom"]
+tags: ["wikipedia-checked", "evidence-none", "2021", "ai-draft", "apple-daily", "media-history", "national-security-era", "national-security-law", "press-freedom"]
 summary: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in Hong Kong."
 description: "On June 24, 2021, the pro-democracy newspaper Apple Daily printed its final edition following the freezing of its corporate assets under the National Security Law, marking a profound turning point for press freedom in…"
 confidence: ai-draft
@@ -35,17 +35,15 @@ The cessation of *Apple Daily* is widely regarded by observers as a watershed mo
 - [[02_Entities/People/jimmy-lai|Jimmy Lai (黎智英)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Apple Daily published its final edition on June 24, 2021, after corporate assets were frozen by authorities.
-- ❔ Next Digital and Apple Daily executives were arrested under the National Security Law in June 2021.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Apple Daily published its final edition on June 24, 2021, after corporate assets were frozen by authorities. The text states the final issue was published on 24 June and the paper was forced to cease operations following the freezing of its capital.
+- ✅ **agrees with Wikipedia**: Next Digital and Apple Daily executives were arrested under the National Security Law in June 2021. The text states five Next Digital executives were arrested on 17 June 2021 and charged under the national security law.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Apple Daily](https://en.wikipedia.org/wiki/Apple_Daily), [Wikipedia: Apple Daily raids and arrests](https://en.wikipedia.org/wiki/Apple_Daily_raids_and_arrests)
 
-**Still needed:** Evidence specifically detailing the forced closure of Apple Daily on June 24, 2021, is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

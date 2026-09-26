@@ -4,10 +4,11 @@ title_zh: "跑馬地墳場啟用"
 date: 1845-01-01
 year: 1845
 era: "The early colony"
-tags: ["1845", "ai-draft", "colonial-history", "early-colony", "happy-valley-cemetery", "mortality", "public-health"]
+tags: ["evidence-none", "1845", "ai-draft", "colonial-history", "early-colony", "happy-valley-cemetery", "mortality", "public-health"]
 summary: "Established in 1845 to address catastrophic mortality rates among the early colonial population, the Happy Valley Cemetery provided a multi-faith burial ground that underscored the severe public health challenges faced by the fledgling British colony."
 description: "Established in 1845 to address catastrophic mortality rates among the early colonial population, the Happy Valley Cemetery provided a multi-faith burial ground that underscored the severe public health challenges faced…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ Later scholarship often examines the cemetery not only as a response to a public
 
 - ❔ The exact official opening date or year of the Happy Valley Cemetery as 1845 in primary colonial records
 - ❔ The specific allocation of multi-faith plots during the initial 1845 layout
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the opening of the Happy Valley Cemetery on January 1, 1845, is still needed.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

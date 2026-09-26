@@ -4,10 +4,11 @@ title_zh: "香港電視發牌風波大型示威"
 date: 2013-10-20
 year: 2013
 era: "Political contention and protest"
-tags: ["2013", "ai-draft", "contention", "free-to-air-license", "hktv", "media-freedom", "protests"]
+tags: ["evidence-b", "2013", "ai-draft", "contention", "free-to-air-license", "hktv", "media-freedom", "protests"]
 summary: "On October 20, 2013, tens of thousands of Hong Kong citizens demonstrated outside the government headquarters to protest the Executive Council's rejection of Hong Kong Television Network's free-to-air broadcasting license application, reflecting widespread public anxiety over declining media pluralism and freedom of expression."
 description: "On October 20, 2013, tens of thousands of Hong Kong citizens demonstrated outside the government headquarters to protest the Executive Council's rejection of Hong Kong Television Network's free-to-air broadcasting…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,17 @@ The HKTV license denial and the subsequent protests crystallized broader grievan
 
 - ❔ The exact number of participants who attended the October 20, 2013 protest outside the government headquarters.
 - ❔ The precise statutory reasons documented in the Executive Council's confidential deliberation records regarding the HKTV license rejection.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Wendy Chan Wing Lam (2015). *Social Movement Driven by Interplay of Traditional and Social Media: The Case of HKTV*. International Journal of Computer and Communication Engineering.](https://doi.org/10.17706/ijcce.2015.4.6.409-416): It specifically analyzes the HKTV social movement and the role of media in organizing it.
+
+**Still needed:** Specific primary sources or reports detailing the events and scale of the protests on October 20, 2013.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

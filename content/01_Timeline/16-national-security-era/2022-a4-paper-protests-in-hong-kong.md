@@ -4,7 +4,7 @@ title_zh: "香港白紙運動"
 date: 2022-11-28
 year: 2022
 era: "The National Security Law era"
-tags: ["evidence-none", "2022", "a4-paper-protests", "ai-draft", "free-speech", "national-security-era", "national-security-law", "student-activism", "zero-covid"]
+tags: ["wikipedia-checked", "evidence-none", "2022", "a4-paper-protests", "ai-draft", "free-speech", "national-security-era", "national-security-law", "student-activism", "zero-covid"]
 summary: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
 description: "In late November 2022, students and residents in Hong Kong held blank sheets of white paper to express solidarity with mainland Chinese demonstrators protesting strict zero-COVID lockdowns."
 confidence: ai-draft
@@ -40,17 +40,17 @@ Operating under the strictures of the **National Security Law** enacted in June 
 - [[02_Entities/Places/central|Central (中環)]]
 - [[02_Entities/Places/ürümqi|Ürümqi (烏魯木齊)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact dates and locations of student gatherings involving blank paper in Hong Kong in late November 2022
-- ❔ Specific police intervention numbers and arrests related to the A4 paper demonstrations in Hong Kong
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: Exact dates and locations of student gatherings involving blank paper in Hong Kong in late November 2022. The text states that a group of students held up blank pieces of paper at the University of Hong Kong on 27 November.
+- ❔ **not in Wikipedia**: Specific police intervention numbers and arrests related to the A4 paper demonstrations in Hong Kong. The text mentions that no arrests were made regarding students distributing leaflets in Hong Kong, but it does not provide specific police intervention numbers or arrest data for those holding blank paper.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 2022 COVID-19 protests in China](https://en.wikipedia.org/wiki/2022_COVID-19_protests_in_China), [Wikipedia: 1989 Tiananmen Square protests and massacre](https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre)
 
-**Still needed:** Evidence specifically documenting the A4 paper protests that occurred on November 28, 2022, is required.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Diasporic citizen journalism: Exploring the discussion on the 2022 blank paper protests in the Chinese twitter community](https://doi.org/10.1177/14648849241250191) (DOI)
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

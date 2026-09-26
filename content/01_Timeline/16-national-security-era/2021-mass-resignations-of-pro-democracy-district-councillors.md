@@ -4,10 +4,11 @@ title_zh: "民主派區議員總辭"
 date: 2021-01-01
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "district-councils", "local-politics", "mass-resignation", "national-security-era", "national-security-law"]
+tags: ["evidence-none", "2021", "ai-draft", "district-councils", "local-politics", "mass-resignation", "national-security-era", "national-security-law"]
 summary: "In July 2021, over 200 pro-democracy district councillors resigned en masse following widespread media reports that Beijing authorities planned to disqualify them and retroactively demand the repayment of all public salaries and allowances."
 description: "In July 2021, over 200 pro-democracy district councillors resigned en masse following widespread media reports that Beijing authorities planned to disqualify them and retroactively demand the repayment of all public…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The mass resignations marked the virtual elimination of the organized opposition
 
 - ❔ Exact cumulative number of pro-democracy district councillors who resigned in July 2021
 - ❔ Verification of official threats regarding the retroactive recovery of operational expenses and salaries
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the mass resignations of pro-democracy district councillors in Hong Kong in early 2021 is required.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

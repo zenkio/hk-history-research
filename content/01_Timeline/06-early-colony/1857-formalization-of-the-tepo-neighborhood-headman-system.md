@@ -4,10 +4,11 @@ title_zh: "地保制度的正式確立"
 date: 1857-01-01
 year: 1857
 era: "The early colony"
-tags: ["1857", "ai-draft", "community-policing", "early-colony", "indirect-rule", "john-bowring", "tepo-system"]
+tags: ["evidence-none", "1857", "ai-draft", "community-policing", "early-colony", "indirect-rule", "john-bowring", "tepo-system"]
 summary: "In **1857**, Governor John Bowring formally recognized the Chinese neighborhood headman system, known as the Tepo (地保), to assist colonial authorities with local administration, security, and community policing."
 description: "In 1857, Governor John Bowring formally recognized the Chinese neighborhood headman system, known as the Tepo (地保), to assist colonial authorities with local administration, security, and community policing."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,11 @@ The formalization of the Tepo system laid the early foundation for indirect rule
 
 - ❔ Governor John Bowring officially formalized the Tepo neighborhood headman system specifically in the year 1857.
 - ❔ The Tepo headmen were officially tasked by the colonial government with reporting crimes and assisting in urban security.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

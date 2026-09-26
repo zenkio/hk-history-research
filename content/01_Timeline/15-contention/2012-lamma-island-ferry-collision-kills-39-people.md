@@ -4,10 +4,11 @@ title_zh: "南丫島撞船事故釀39死"
 date: 2012-10-01
 year: 2012
 era: "Political contention and protest"
-tags: ["2012", "ai-draft", "contention", "lamma-island", "marine-department", "maritime-disaster", "public-safety", "safety-regulation"]
+tags: ["evidence-none", "2012", "ai-draft", "contention", "lamma-island", "marine-department", "maritime-disaster", "public-safety", "safety-regulation"]
 summary: "On October 1, 2012, a fatal collision between two passenger ferries off Lamma Island resulted in the deaths of 39 people, exposing deep-seated regulatory failures within the Hong Kong government."
 description: "On October 1, 2012, a fatal collision between two passenger ferries off Lamma Island resulted in the deaths of 39 people, exposing deep-seated regulatory failures within the Hong Kong government."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,13 @@ The disaster shocked the public, contrasting sharply with Hong Kong's reputation
 - ❔ The exact number of fatalities was 39, including eight children.
 - ❔ The Lamma IV sank within approximately two to three minutes after the collision.
 - ❔ The Commission of Inquiry report highlighted that the Marine Department had failed to check the vessel's stability compliance for 16 years.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically detailing the 2012 Lamma Island ferry collision, including death tolls and official accident reports.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

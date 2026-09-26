@@ -4,7 +4,7 @@ title_zh: "廣深港高速鐵路香港段開幕及實施一地兩檢"
 date: 2018-09-23
 year: 2018
 era: "Political contention and protest"
-tags: ["evidence-none", "2018", "ai-draft", "co-location-scheme", "contention", "high-speed-rail", "legal-controversy", "transportation", "west-kowloon-station"]
+tags: ["wikipedia-checked", "evidence-none", "2018", "ai-draft", "co-location-scheme", "contention", "high-speed-rail", "legal-controversy", "transportation", "west-kowloon-station"]
 summary: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
 description: "On September 23, 2018, the Guangzhou-Shenzhen-Hong Kong Express Rail Link opened, connecting Hong Kong to the mainland Chinese high-speed rail network through a controversial 'co-location' arrangement."
 confidence: ai-draft
@@ -37,17 +37,15 @@ The implementation of the co-location arrangement marked a major milestone in ph
 - [[02_Entities/Places/shenzhen|Shenzhen (深圳)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Guangzhou-Shenzhen-Hong Kong Express Rail Link officially opened on September 23, 2018.
-- ❔ The co-location scheme established a Mainland Port Area within West Kowloon Station subject to mainland Chinese jurisdiction.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The Guangzhou-Shenzhen-Hong Kong Express Rail Link officially opened on September 23, 2018. The text mentions mainland Chinese personnel have operated in the area since September 2018, but it does not specify an official opening date of September 23.
+- ✅ **agrees with Wikipedia**: The co-location scheme established a Mainland Port Area within West Kowloon Station subject to mainland Chinese jurisdiction. The text states the Mainland Port Area is an area inside West Kowloon station where the laws of mainland China, rather than Hong Kong, are enforced.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Guangzhou–Shenzhen–Hong Kong Express Rail Link](https://en.wikipedia.org/wiki/Guangzhou%E2%80%93Shenzhen%E2%80%93Hong_Kong_Express_Rail_Link)
 
-**Still needed:** Evidence concerning the specific opening of the Hong Kong High-Speed Rail Link in September 2018 and details regarding the implementation of the co-location scheme is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

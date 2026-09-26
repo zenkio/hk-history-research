@@ -4,7 +4,7 @@ title_zh: "移除國殤之柱"
 date: 2021-12-22
 year: 2021
 era: "The National Security Law era"
-tags: ["evidence-none", "2021", "ai-draft", "censorship", "freedom-of-expression", "national-security-era", "national-security-law", "pillar-of-shame", "tiananmen-square", "university-of-hong-kong"]
+tags: ["wikipedia-checked", "evidence-none", "2021", "ai-draft", "censorship", "freedom-of-expression", "national-security-era", "national-security-law", "pillar-of-shame", "tiananmen-square", "university-of-hong-kong"]
 summary: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes under the National Security Law."
 description: "In December 2021, the University of Hong Kong dismantled and removed the Pillar of Shame, a prominent sculpture commemorating the victims of the 1989 Tiananmen Square crackdown, amidst intensifying political changes…"
 confidence: ai-draft
@@ -40,17 +40,15 @@ The removal of the Pillar of Shame marked a significant turning point in Hong Ko
 - [[02_Entities/Places/kam-tin|Kam Tin (錦田)]]
 - [[02_Entities/Places/tiananmen-square|Tiananmen Square (天安門廣場)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact legal justifications provided by the University of Hong Kong council for the removal.
-- ❔ The current physical location and preservation status of the dismantled sculpture components.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact legal justifications provided by the University of Hong Kong council for the removal. The reference text states that the university did not cite any specific reason for the request to remove the statue.
+- ❔ **not in Wikipedia**: The current physical location and preservation status of the dismantled sculpture components. The text states the statue was seized by Hong Kong's National Security Department but does not mention its preservation status.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Pillar of Shame](https://en.wikipedia.org/wiki/Pillar_of_Shame)
 
-**Still needed:** Sources specifically documenting the event of the Pillar of Shame's removal on December 22, 2021, are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

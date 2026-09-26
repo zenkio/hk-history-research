@@ -4,7 +4,7 @@ title_zh: "世紀暴雨與水浸"
 date: 2023-09-07
 year: 2023
 era: "The National Security Law era"
-tags: ["evidence-none", "2023", "ai-draft", "climate-change", "extreme-weather", "flooding", "infrastructure", "national-security-era", "typhoon-haikui"]
+tags: ["wikipedia-checked", "evidence-none", "2023", "ai-draft", "climate-change", "extreme-weather", "flooding", "infrastructure", "national-security-era", "typhoon-haikui"]
 summary: "On **September 7, 2023**, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui. The unprecedented downpour caused widespread urban flooding, transport paralysis, and infrastructure damage across the territory."
 description: "On September 7, 2023, Hong Kong experienced its heaviest rainfall since records began in 1884, triggered by the remnants of Typhoon Haikui."
 confidence: ai-draft
@@ -39,17 +39,15 @@ The event severely tested the resilience of Hong Kong's civil infrastructure and
 - [[02_Entities/Places/kowloon|Kowloon (九龍)]]
 - [[02_Entities/Places/new-territories|New Territories (新界)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the Hong Kong Observatory officially record 158.1 millimeters of rain between 11:00 PM and midnight on September 7, 2023?
-- ❔ Were all financial markets completely suspended during the extreme conditions period?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Did the Hong Kong Observatory officially record 158.1 millimeters of rain between 11:00 PM and midnight on September 7, 2023?. The HKO headquarters recorded 158.1 millimetres of rainfall between 11:00 p.m. on 7 September and 12:00 a.m. on 8 September, but the claim is phrased as a question.
+- ❔ **not in Wikipedia**: Were all financial markets completely suspended during the extreme conditions period?. The text mentions school closures and recommendations for non-essential employees to not report for duty, but does not mention financial markets.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: 2023 Hong Kong rainstorm and floods](https://en.wikipedia.org/wiki/2023_Hong_Kong_rainstorm_and_floods)
 
-**Still needed:** Evidence documenting the specific rainfall intensity, flood extent, and impact of the September 7, 2023, event in Hong Kong is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

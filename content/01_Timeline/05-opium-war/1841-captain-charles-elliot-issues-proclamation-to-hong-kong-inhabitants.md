@@ -4,10 +4,11 @@ title_zh: "義律發佈香港居民佈告"
 date: 1841-01-29
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["1841", "ai-draft", "british-occupation", "charles-elliot", "colonial-history", "first-opium-war", "opium-war"]
+tags: ["evidence-none", "1841", "ai-draft", "british-occupation", "charles-elliot", "colonial-history", "first-opium-war", "opium-war"]
 summary: "On January 29, 1841, British Plenipotentiary Captain Charles Elliot issued a proclamation assuring Hong Kong inhabitants of protection under British governance while respecting local customs, property, and religious practices to stabilize the newly occupied territory."
 description: "On January 29, 1841, British Plenipotentiary Captain Charles Elliot issued a proclamation assuring Hong Kong inhabitants of protection under British governance while respecting local customs, property, and religious…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The proclamation represents the foundational administrative document of British 
 
 - ❔ Captain Charles Elliot issued the specific proclamation to the inhabitants of Hong Kong on January 29, 1841.
 - ❔ The proclamation explicitly promised protection of local property, religious practices, and native customs under British governance.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting Captain Charles Elliot's proclamation to the inhabitants of Hong Kong on January 29, 1841, is needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

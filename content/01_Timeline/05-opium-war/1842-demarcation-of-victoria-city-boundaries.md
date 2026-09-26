@@ -4,10 +4,11 @@ title_zh: "維多利亞城界線劃定"
 date: 1842-01-01
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["1842", "ai-draft", "colonial-history", "first-opium-war", "land-tenure", "opium-war", "urban-planning", "victoria-city"]
+tags: ["evidence-none", "1842", "ai-draft", "colonial-history", "first-opium-war", "land-tenure", "opium-war", "urban-planning", "victoria-city"]
 summary: "In **1842**, following the initial British occupation of Hong Kong Island, colonial authorities began the formal demarcation of the first urban settlement, named Victoria City. This spatial blueprint laid the administrative and geographical foundation for the future development of the colony's northern shore."
 description: "In 1842, following the initial British occupation of Hong Kong Island, colonial authorities began the formal demarcation of the first urban settlement, named Victoria City."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ The demarcation of Victoria City's boundaries represents a crucial turning point
 
 - ❔ The exact extent and markers used for the Victoria City boundaries specifically in the year 1842, as opposed to later statutory expansions in 1857 and 1903.
 - ❔ The degree to which formal municipal boundary ordinances were enacted in 1842 versus informal administrative surveying.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the 1842 demarcation of Victoria City boundaries in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

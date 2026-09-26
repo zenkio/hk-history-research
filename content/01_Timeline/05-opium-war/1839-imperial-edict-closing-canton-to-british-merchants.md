@@ -4,10 +4,11 @@ title_zh: "清廷下令斷絕對英貿易"
 date: 1839-12-06
 year: 1839
 era: "Canton trade and the First Opium War"
-tags: ["1839", "ai-draft", "canton-trade", "first-opium-war", "imperial-edict", "lin-zexu", "opium-war", "pearl-river-delta"]
+tags: ["evidence-none", "1839", "ai-draft", "canton-trade", "first-opium-war", "imperial-edict", "lin-zexu", "opium-war", "pearl-river-delta"]
 summary: "On December 6, 1839, the Qing court escalated hostilities by ordering the complete cessation of all trade with Britain, forcing British merchants and officials to abandon Canton and relocate their operations to the Pearl River estuary."
 description: "On December 6, 1839, the Qing court escalated hostilities by ordering the complete cessation of all trade with Britain, forcing British merchants and officials to abandon Canton and relocate their operations to the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,5 +46,13 @@ This total prohibition marked a point of no return in Qing-British relations, ex
 
 - ❔ Did the imperial edict formally take effect specifically on December 6, 1839, or was this the date of transmission or receipt by local authorities?
 - ❔ To what extent did clandestine trade continue between British merchants and Chinese intermediaries despite the total ban?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting or discussing the Imperial Edict of December 6, 1839, which closed Canton to British merchants, are needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

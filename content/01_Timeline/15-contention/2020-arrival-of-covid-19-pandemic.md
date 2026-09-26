@@ -4,7 +4,7 @@ title_zh: "2019冠狀病毒病疫情抵港"
 date: 2020-01-23
 year: 2020
 era: "Political contention and protest"
-tags: ["evidence-none", "2020", "ai-draft", "border-control", "contention", "covid-19", "protest-movement", "public-health"]
+tags: ["wikipedia-checked", "evidence-none", "2020", "ai-draft", "border-control", "contention", "covid-19", "protest-movement", "public-health"]
 summary: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the previous year."
 description: "The arrival of the COVID-19 pandemic in early 2020 drastically altered Hong Kong's public health landscape and effectively suspended the widespread political protests that had dominated the territory throughout the…"
 confidence: ai-draft
@@ -36,17 +36,17 @@ The onset of the pandemic marked a watershed moment for Hong Kong society. The i
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/wuhan|Wuhan (武漢)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The first two COVID-19 cases in Hong Kong were officially confirmed on January 23, 2020.
-- ❔ The arrival of the pandemic directly coincided with a significant reduction in large-scale street protests.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ✅ **agrees with Wikipedia**: The first two COVID-19 cases in Hong Kong were officially confirmed on January 23, 2020. The text states that the two cases identified on 22 January were listed as 'Highly Suspected Cases' and were confirmed positive the following day.
+- ✅ **agrees with Wikipedia**: The arrival of the pandemic directly coincided with a significant reduction in large-scale street protests. The text states that as the coronavirus crisis escalated in February and March 2020, the scale of protests dwindled and large-scale protests gave way to the pandemic.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: COVID-19 pandemic in Hong Kong](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Hong_Kong), [Wikipedia: COVID-19 pandemic in China](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_China)
 
-**Still needed:** Sources specifically documenting the arrival of COVID-19 in Hong Kong on January 23, 2020.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [Casino capitalism in the era of COVID-19: examining Macau's pandemic response](https://doi.org/10.1108/STICS-09-2020-0025) (DOI)
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

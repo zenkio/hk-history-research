@@ -4,10 +4,11 @@ title_zh: "香港總商會籌備"
 date: 1842-01-01
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["1842", "agency-houses", "ai-draft", "canton-trade", "chamber-of-commerce", "colonial-history", "opium-war"]
+tags: ["evidence-none", "1842", "agency-houses", "ai-draft", "canton-trade", "chamber-of-commerce", "colonial-history", "opium-war"]
 summary: "Following the conclusion of hostilities in the First Opium War in 1842, British mercantile houses in Hong Kong began organizing to advocate for their commercial interests and push for essential infrastructural development."
 description: "Following the conclusion of hostilities in the First Opium War in 1842, British mercantile houses in Hong Kong began organizing to advocate for their commercial interests and push for essential infrastructural…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ Early mercantile coordination set the precedent for the powerful influence of bu
 
 - ❔ Specific archival records of formal merchant meetings held in 1842 regarding chamber organization prior to the official 1861 charter
 - ❔ Direct correspondence between early agency houses and colonial administrators concerning port infrastructure
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Sources specifically documenting the establishment of the Hong Kong General Chamber of Commerce in 1842 are needed.
+
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

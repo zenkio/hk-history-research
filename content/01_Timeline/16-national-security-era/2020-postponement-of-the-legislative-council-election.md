@@ -4,7 +4,7 @@ title_zh: "延期立法會選舉"
 date: 2020-07-31
 year: 2020
 era: "The National Security Law era"
-tags: ["evidence-b", "photo-corroborated", "2020", "ai-draft", "carrie-lam", "covid-19", "election-postponement", "legislative-council", "national-security-era", "national-security-law"]
+tags: ["wikipedia-checked", "evidence-b", "photo-corroborated", "2020", "ai-draft", "carrie-lam", "covid-19", "election-postponement", "legislative-council", "national-security-era", "national-security-law"]
 summary: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
 description: "In July 2020, the Hong Kong government announced the postponement of the Legislative Council general election for one year, officially citing public health concerns related to the COVID-19 pandemic."
 confidence: ai-draft
@@ -40,34 +40,15 @@ The delay of the election marked a watershed moment in Hong Kong's constitutiona
 - [[02_Entities/People/carrie-lam|Carrie Lam (林鄭月娥)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact invocation of the Emergency Regulations Ordinance by the Chief Executive on July 31, 2020
-- ❔ The subsequent ruling by the NPCSC regarding the extension of the legislative term
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Photos from this period
+- ❔ **not in Wikipedia**: The exact invocation of the Emergency Regulations Ordinance by the Chief Executive on July 31, 2020. The text mentions the government postponed the election in July 2020 due to the COVID-19 spike but does not mention the Emergency Regulations Ordinance or the specific date of July 31.
+- ✅ **agrees with Wikipedia**: The subsequent ruling by the NPCSC regarding the extension of the legislative term. The text states that the NPCSC decided in August that the sitting Legislative Council should continue with its duties for at least one year.
 
-![A portrait of Starry Lee Wai-king, a prominent member of the Legislative Council.](https://upload.wikimedia.org/wikipedia/commons/9/9a/Starry_Lee_Wai-king_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+**Articles compared:** [Wikipedia: 2025 Hong Kong legislative election](https://en.wikipedia.org/wiki/2025_Hong_Kong_legislative_election), [Wikipedia: Legislative Council of Hong Kong](https://en.wikipedia.org/wiki/Legislative_Council_of_Hong_Kong)
 
-*A portrait of Starry Lee Wai-king, a prominent member of the Legislative Council.* (contemporary photo). 湯惠芸/海彥, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Starry_Lee_Wai-king_2016.jpg).
-Corroborates: It provides a visual of a key political figure within the institution affected by the election postponement.
-
-![A portrait of Starry Lee, a DAB legislator.](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Starry_Lee.jpg/960px-Starry_Lee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A portrait of Starry Lee, a DAB legislator.* (contemporary photo). Iris Tong, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Starry_Lee.jpg).
-Corroborates: It depicts a prominent legislator of the Legislative Council, which was the subject of the election postponement.
-
-
-## Evidence
-
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
-
-### Scholarship (grade B)
-
-- [Kris Hartley, Darryl S. L. Jarvis (2020). *Policymaking in a low-trust state: legitimacy, state capacity, and responses to COVID-19 in Hong Kong*. Policy and Society.](https://doi.org/10.1080/14494035.2020.1783791): The paper discusses Hong Kong's policymaking and responses to COVID-19 in 2020, providing the context for why the election was postponed.
-
-**Still needed:** Direct evidence, such as official government announcements or contemporary news reports, specifically regarding the decision to postpone the 2020 Legislative Council election.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

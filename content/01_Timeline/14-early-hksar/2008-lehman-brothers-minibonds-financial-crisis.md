@@ -4,10 +4,11 @@ title_zh: "雷曼兄弟迷你債券金融危機"
 date: 2008-09-15
 year: 2008
 era: "The early HKSAR"
-tags: ["2008", "ai-draft", "banking-regulation", "early-hksar", "financial-crisis", "lehman-brothers", "minibonds", "protests"]
+tags: ["evidence-b", "2008", "ai-draft", "banking-regulation", "early-hksar", "financial-crisis", "lehman-brothers", "minibonds", "protests"]
 summary: "The collapse of Lehman Brothers in 2008 exposed tens of thousands of Hong Kong retail investors to massive losses on complex credit-linked notes, sparking widespread protests and intense scrutiny of local banking regulatory practices."
 description: "The collapse of Lehman Brothers in 2008 exposed tens of thousands of Hong Kong retail investors to massive losses on complex credit-linked notes, sparking widespread protests and intense scrutiny of local banking…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,17 @@ The crisis exposed severe vulnerabilities in Hong Kong's dual-regulatory framewo
 
 - ❔ The exact number of affected retail investors in Hong Kong holding Lehman-backed structured products.
 - ❔ The precise recovery percentages achieved under the subsequent Lehman Minibonds settlement schemes.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 31B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Gary Soo, Y Zhao, Dennis Cai (2010). *Better ways of resolving disputes in Hong Kong: some insights from the Lehman-Brothers Related Investment Product Dispute Mediation and Arbitration Scheme*. bepress Legal Repository.](https://openalex.org/W193834331): Explicitly discusses the Lehman Brothers related investment product disputes in Hong Kong.
+
+**Still needed:** Evidence detailing the specific nature of the minibonds, the scale of the crisis, and the subsequent regulatory impact is needed.
+
 
 Part of: [[01_Timeline/14-early-hksar/index|The early HKSAR]]

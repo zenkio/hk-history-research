@@ -4,10 +4,11 @@ title_zh: "《香港電訊報》出版"
 date: 1881-06-15
 year: 1881
 era: "Kowloon and the Victorian colony"
-tags: ["photo-corroborated", "1881", "ai-draft", "hong-kong-telegraph", "journalism", "media-history", "victorian-colony"]
+tags: ["evidence-none", "photo-corroborated", "1881", "ai-draft", "hong-kong-telegraph", "journalism", "media-history", "victorian-colony"]
 summary: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
 description: "The launch of the English-language newspaper the Hong Kong Telegraph in June 1881 expanded the colony's media landscape, introducing new perspectives on local politics and commerce."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -53,6 +54,14 @@ Corroborates: It provides a visual example of the Hong Kong Telegraph, the newsp
 
 *A composite image featuring a front page of The Hongkong Telegraph and a photograph of the newspaper's office.* (document). Arnold Wright, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tcitp_d359_the_hong_kong_telegraph.jpg).
 Corroborates: It provides a visual record of the publication's appearance and its operational space.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the first publication or founding of the Hong Kong Telegraph on June 15, 1881, is needed.
 
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

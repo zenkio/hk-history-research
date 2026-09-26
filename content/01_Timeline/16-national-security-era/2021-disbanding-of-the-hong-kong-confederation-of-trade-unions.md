@@ -4,10 +4,11 @@ title_zh: "香港職工會聯盟解散"
 date: 2021-10-03
 year: 2021
 era: "The National Security Law era"
-tags: ["2021", "ai-draft", "civil-society", "hkctu", "hong-kong-history", "labor-movement", "national-security-era", "national-security-law"]
+tags: ["evidence-b", "2021", "ai-draft", "civil-society", "hkctu", "hong-kong-history", "labor-movement", "national-security-era", "national-security-law"]
 summary: "The Hong Kong Confederation of Trade Unions, the city's largest independent labor coalition, dissolved in October 2021 after 31 years of operations amid increasing political pressure under the National Security Law."
 description: "The Hong Kong Confederation of Trade Unions, the city's largest independent labor coalition, dissolved in October 2021 after 31 years of operations amid increasing political pressure under the National Security Law."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,17 @@ The disbanding of the HKCTU marked a major turning point for the local labor mov
 
 - ❔ The exact vote tally among HKCTU delegates during the October 3, 2021 dissolution meeting
 - ❔ The precise nature and timeline of official warnings or investigations directed at HKCTU leadership prior to the vote
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Au Loong Yu (2022). *The Annihilation of Hong Kong’s Civil Society: Implications and Weaknesses*. Made in China Journal.](https://doi.org/10.22459/mic.06.03.2021.08) (claims 1): It discusses the purge of trade unions in Hong Kong following the implementation of the National Security Law.
+
+**Still needed:** Evidence that specifically names the Hong Kong Confederation of Trade Unions and confirms its disbanding on 2021-10-03.
+
 
 Part of: [[01_Timeline/16-national-security-era/index|The National Security Law era]]

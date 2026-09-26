@@ -1,10 +1,9 @@
 {
-  "day": "2026-09-25",
+  "day": "2026-09-26",
   "used": {
-    "OpenRouter Qwen": 50,
-    "Gemma 4 31B": 329,
-    "Gemma 4 26B": 293,
-    "Gemini 3.1 Flash Lite": 4
+    "OpenRouter Qwen": 9,
+    "Gemma 4 31B": 89,
+    "Gemma 4 26B": 43
   },
   "parked": {},
   "resolved": {
@@ -80,7 +79,7 @@
   "provider_used": {
     "openrouter": {
       "day": "2026-09-26",
-      "count": 0
+      "count": 9
     }
   }
 }

@@ -4,10 +4,11 @@ title_zh: "基本法諮詢委員會之成立"
 date: 1985-01-01
 year: 1985
 era: "Sino-British negotiations and the transition"
-tags: ["1985", "ai-draft", "basic-law", "constitutional-drafting", "decolonization", "political-history", "sino-british-negotiations", "transition"]
+tags: ["evidence-none", "1985", "ai-draft", "basic-law", "constitutional-drafting", "decolonization", "political-history", "sino-british-negotiations", "transition"]
 summary: "In 1985, the Basic Law Consultative Committee (基本法諮詢委員會) was formed to facilitate public participation in the drafting of Hong Kong's mini-constitution following the Sino-British Joint Declaration."
 description: "In 1985, the Basic Law Consultative Committee (基本法諮詢委員會) was formed to facilitate public participation in the drafting of Hong Kong's mini-constitution following the Sino-British Joint Declaration."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The establishment of the BLCC was a milestone in Hong Kong’s political develop
 - ❔ Exact number of initial members of the BLCC in 1985
 - ❔ The official mandate provided by the Basic Law Drafting Committee to the BLCC
 - ❔ The historical breakdown of professional representation within the 180-member committee
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment, composition, and functions of the Basic Law Consultative Committee in 1985 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

@@ -3262,7 +3262,8 @@
       "date": "1841",
       "summary": "The construction of the first prison marked the formal assertion of British legal authority over a rapidly expanding, diverse population.",
       "status": "done",
-      "file": "06-early-colony/1841-establishment-of-the-victoria-gaol.md"
+      "file": "06-early-colony/1841-establishment-of-the-victoria-gaol.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3271,7 +3272,8 @@
       "date": "1843",
       "summary": "This institution unified the interests of colonial merchant houses, cementing the city's role as a commercial hub.",
       "status": "done",
-      "file": "06-early-colony/1843-formation-of-the-hong-kong-chamber-of-commerce.md"
+      "file": "06-early-colony/1843-formation-of-the-hong-kong-chamber-of-commerce.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3280,7 +3282,8 @@
       "date": "1845",
       "summary": "The launch of the first official government newspaper standardized colonial administration and the public recording of legislative policy.",
       "status": "done",
-      "file": "06-early-colony/1845-publication-of-the-hong-kong-gazette.md"
+      "file": "06-early-colony/1845-publication-of-the-hong-kong-gazette.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3289,7 +3292,8 @@
       "date": "1847",
       "summary": "The establishment of the Apostolic Prefecture introduced new social services and educational frameworks beyond the Anglican influence.",
       "status": "done",
-      "file": "06-early-colony/1847-arrival-of-the-first-roman-catholic-missionaries.md"
+      "file": "06-early-colony/1847-arrival-of-the-first-roman-catholic-missionaries.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3298,7 +3302,9 @@
       "date": "1848",
       "summary": "This controversial act required all Chinese residents to register, reflecting colonial anxiety regarding the mobile and transient population.",
       "status": "done",
-      "file": "06-early-colony/1848-passing-of-the-registration-ordinance.md"
+      "file": "06-early-colony/1848-passing-of-the-registration-ordinance.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "06-early-colony",
@@ -3307,7 +3313,8 @@
       "date": "1850",
       "summary": "The creation of rudimentary medical care for locals began the slow integration of Western medicine into the Chinese community.",
       "status": "done",
-      "file": "06-early-colony/1850-establishment-of-the-first-hospital-for-chinese.md"
+      "file": "06-early-colony/1850-establishment-of-the-first-hospital-for-chinese.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3316,7 +3323,8 @@
       "date": "1851",
       "summary": "This development signaled the early aspirations of the colony to become an intellectual and cultural center for the region.",
       "status": "done",
-      "file": "06-early-colony/1851-opening-of-the-first-public-library.md"
+      "file": "06-early-colony/1851-opening-of-the-first-public-library.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "06-early-colony",
@@ -3325,7 +3333,9 @@
       "date": "1855",
       "summary": "Local merchants acting as intermediaries gained economic power, bridging the gap between Western firms and Chinese manufacturers.",
       "status": "done",
-      "file": "06-early-colony/1855-rise-of-the-first-chinese-comprador-networks.md"
+      "file": "06-early-colony/1855-rise-of-the-first-chinese-comprador-networks.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "06-early-colony",
@@ -3334,7 +3344,9 @@
       "date": "1859",
       "summary": "The institutionalization of land sales established the foundational 'high land price' policy that remains central to the city's finances.",
       "status": "done",
-      "file": "06-early-colony/1859-first-systematic-land-auctions-for-public-development.md"
+      "file": "06-early-colony/1859-first-systematic-land-auctions-for-public-development.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "01-prehistory",
@@ -3703,7 +3715,9 @@
       "date": "1819",
       "summary": "The Qing administration completed an updated county gazetteer that documented the lineage settlements, geography, and local economy across Hong Kong prior to British arrival.",
       "status": "done",
-      "file": "05-opium-war/1819-compilation-of-the-revised-xinan-county-gazetteer.md"
+      "file": "05-opium-war/1819-compilation-of-the-revised-xinan-county-gazetteer.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "05-opium-war",
@@ -3712,7 +3726,8 @@
       "date": "1839-11-04",
       "summary": "Qing coastal forces under Lin Zexu and Guan Tianpei engaged British naval vessels on the Kowloon peninsula, accelerating the militarization of local waters.",
       "status": "done",
-      "file": "05-opium-war/1839-the-battle-of-kwun-chung.md"
+      "file": "05-opium-war/1839-the-battle-of-kwun-chung.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3721,7 +3736,8 @@
       "date": "1841-04-22",
       "summary": "Pope Gregory XVI established an independent Catholic jurisdiction headed by Theodor Joset, initiating structured Western religious and welfare institutions on the island.",
       "status": "done",
-      "file": "05-opium-war/1841-creation-of-the-apostolic-prefecture-of-hong-kong.md"
+      "file": "05-opium-war/1841-creation-of-the-apostolic-prefecture-of-hong-kong.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3730,7 +3746,8 @@
       "date": "1841-04-30",
       "summary": "Captain William Caine took office to head the magistracy and nascent police force, establishing British civil and criminal legal administration over European and Chinese residents.",
       "status": "done",
-      "file": "05-opium-war/1841-william-caine-appointed-as-first-chief-magistrate.md"
+      "file": "05-opium-war/1841-william-caine-appointed-as-first-chief-magistrate.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3739,7 +3756,9 @@
       "date": "1841-06",
       "summary": "British royal engineers and local labourers began paving Hong Kong's first major artery, anchoring early urban growth along the northern shoreline of Hong Kong Island.",
       "status": "done",
-      "file": "05-opium-war/1841-construction-commences-on-queens-road.md"
+      "file": "05-opium-war/1841-construction-commences-on-queens-road.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "05-opium-war",
@@ -3748,7 +3767,8 @@
       "date": "1841-07-21",
       "summary": "A destructive typhoon flattened early matshed settlements, wrecked fleet shipping, and exposed the severe environmental vulnerabilities facing the infant colonial outpost.",
       "status": "done",
-      "file": "05-opium-war/1841-the-great-typhoon-of-1841.md"
+      "file": "05-opium-war/1841-the-great-typhoon-of-1841.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3757,7 +3777,9 @@
       "date": "1841-08",
       "summary": "Chinese provisioner Loo Aqui and local merchants established permanent commercial shops and housing in Sheung Wan, forming Hong Kong's first organized Chinese mercantile quarter.",
       "status": "done",
-      "file": "05-opium-war/1841-loo-aqui-founds-the-sheung-wan-lower-bazaar.md"
+      "file": "05-opium-war/1841-loo-aqui-founds-the-sheung-wan-lower-bazaar.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "05-opium-war",
@@ -3766,7 +3788,8 @@
       "date": "1841-11",
       "summary": "The leading British trading firm completed the first substantial European stone godowns and wharves at East Point, cementing private corporate influence over island infrastructure.",
       "status": "done",
-      "file": "05-opium-war/1841-jardine-matheson-co-builds-east-point-settlement.md"
+      "file": "05-opium-war/1841-jardine-matheson-co-builds-east-point-settlement.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3775,7 +3798,8 @@
       "date": "1842-03-17",
       "summary": "Hong Kong's earliest regular independent English-language newspaper began printing, creating a key medium for public record, merchant advocacy, and colonial debate.",
       "status": "done",
-      "file": "05-opium-war/1842-launch-of-the-friend-of-china-newspaper.md"
+      "file": "05-opium-war/1842-launch-of-the-friend-of-china-newspaper.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "05-opium-war",
@@ -3784,7 +3808,8 @@
       "date": "1842-06",
       "summary": "A deadly epidemic of malaria and typhus struck British garrisons and early settlers, prompting the initial construction of permanent military cantonments and rudimentary sanitation policies.",
       "status": "done",
-      "file": "05-opium-war/1842-first-major-outbreak-of-hong-kong-fever.md"
+      "file": "05-opium-war/1842-first-major-outbreak-of-hong-kong-fever.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3793,7 +3818,8 @@
       "date": "1863-07-01",
       "summary": "Formed to consolidate the region's dockyards, it drove Hong Kong's industrial ship-repair economy and mobilized a massive Chinese migrant labor force.",
       "status": "done",
-      "file": "07-victorian-colony/1863-establishment-of-the-hongkong-and-whampoa-dock-company.md"
+      "file": "07-victorian-colony/1863-establishment-of-the-hongkong-and-whampoa-dock-company.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3802,7 +3828,8 @@
       "date": "1866",
       "summary": "Formed to police Chinese neighborhoods, this force empowered local Chinese elites to manage local security and eventually became an influential advisory body.",
       "status": "done",
-      "file": "07-victorian-colony/1866-creation-of-the-district-watch-force.md"
+      "file": "07-victorian-colony/1866-creation-of-the-district-watch-force.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3811,7 +3838,9 @@
       "date": "1867-07-19",
       "summary": "This controversial legislation legalized and strictly regulated brothels to protect British military health, deeply impacting colonial gender relations and social policing.",
       "status": "done",
-      "file": "07-victorian-colony/1867-passage-of-the-venereal-diseases-ordinance.md"
+      "file": "07-victorian-colony/1867-passage-of-the-venereal-diseases-ordinance.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "07-victorian-colony",
@@ -3820,7 +3849,8 @@
       "date": "1871-08-06",
       "summary": "Serving as both a scientific research hub and a public park, the gardens introduced new flora to the region and became a vital recreational space for Victorian residents.",
       "status": "done",
-      "file": "07-victorian-colony/1871-opening-of-the-hong-kong-botanical-gardens.md"
+      "file": "07-victorian-colony/1871-opening-of-the-hong-kong-botanical-gardens.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3829,7 +3859,8 @@
       "date": "1874-02-05",
       "summary": "As the first daily newspaper entirely owned and managed by Chinese, it catalyzed local political discourse and reformist ideas in South China.",
       "status": "done",
-      "file": "07-victorian-colony/1874-wang-tao-founds-the-tsun-wan-yat-po.md"
+      "file": "07-victorian-colony/1874-wang-tao-founds-the-tsun-wan-yat-po.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3838,7 +3869,9 @@
       "date": "1880",
       "summary": "Imported from Japan, these human-pulled rickshaws revolutionized urban public transportation and provided vital employment for thousands of working-class coolies.",
       "status": "done",
-      "file": "07-victorian-colony/1880-introduction-of-the-jinrikisha-to-hong-kong.md"
+      "file": "07-victorian-colony/1880-introduction-of-the-jinrikisha-to-hong-kong.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "07-victorian-colony",
@@ -3847,7 +3880,8 @@
       "date": "1883-06-05",
       "summary": "Created to address deteriorating public health, this precursor to the Urban Council marked a significant shift toward municipal governance and sanitary reform.",
       "status": "done",
-      "file": "07-victorian-colony/1883-establishment-of-the-sanitary-board.md"
+      "file": "07-victorian-colony/1883-establishment-of-the-sanitary-board.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3856,7 +3890,8 @@
       "date": "1884-11-04",
       "summary": "Established to formalize horse racing at Happy Valley, the club quickly became a cornerstone of colonial elite leisure and cross-cultural social networking.",
       "status": "done",
-      "file": "07-victorian-colony/1884-founding-of-the-hong-kong-jockey-club.md"
+      "file": "07-victorian-colony/1884-founding-of-the-hong-kong-jockey-club.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3865,7 +3900,8 @@
       "date": "1886-07",
       "summary": "Established in Pok Fu Lam, this venture aimed to provide safe, disease-free milk to the colony, drastically improving local public health standards.",
       "status": "done",
-      "file": "07-victorian-colony/1886-sir-patrick-manson-founds-the-dairy-farm-company.md"
+      "file": "07-victorian-colony/1886-sir-patrick-manson-founds-the-dairy-farm-company.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "07-victorian-colony",
@@ -3874,7 +3910,8 @@
       "date": "1888-05",
       "summary": "The Parsi businessman initiated structured steam ferry crossings, laying the foundation for the iconic cross-harbor transit link between Kowloon and Hong Kong Island.",
       "status": "done",
-      "file": "07-victorian-colony/1888-introduction-of-regular-star-ferry-services-by-dorabjee-naorojee.md"
+      "file": "07-victorian-colony/1888-introduction-of-regular-star-ferry-services-by-dorabjee-naorojee.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "08-new-territories",
@@ -3883,7 +3920,9 @@
       "date": "1900",
       "summary": "The British colonial government established a dedicated Land Court to register and systematically convert traditional Chinese land ownership in the newly leased territory into Crown leases.",
       "status": "done",
-      "file": "08-new-territories/1900-establishment-of-the-new-territories-land-court.md"
+      "file": "08-new-territories/1900-establishment-of-the-new-territories-land-court.md",
+      "verified": "no-reference",
+      "wiki_search": 2
     },
     {
       "era": "08-new-territories",
@@ -3892,7 +3931,8 @@
       "date": "1902",
       "summary": "Osbert Chadwick's second major report exposed horrific sanitary conditions in Chinese tenements, driving the passage of the landmark Public Health and Buildings Ordinance of 1903.",
       "status": "done",
-      "file": "08-new-territories/1902-the-chadwick-report-on-municipal-sanitation.md"
+      "file": "08-new-territories/1902-the-chadwick-report-on-municipal-sanitation.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "08-new-territories",
@@ -3901,7 +3941,8 @@
       "date": "1904-06-03",
       "summary": "As Hong Kong's first dedicated maternity hospital, this facility revolutionized local healthcare by training Chinese midwives and promoting Western obstetrics.",
       "status": "done",
-      "file": "08-new-territories/1904-opening-of-the-alice-memorial-maternity-hospital.md"
+      "file": "08-new-territories/1904-opening-of-the-alice-memorial-maternity-hospital.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "08-new-territories",
@@ -3910,7 +3951,8 @@
       "date": "1905",
       "summary": "Hong Kong's Chinese merchant guilds successfully boycotted American imports to protest against the United States' discriminatory Chinese Exclusion Act.",
       "status": "done",
-      "file": "08-new-territories/1905-the-anti-american-boycott-by-chinese-merchants.md"
+      "file": "08-new-territories/1905-the-anti-american-boycott-by-chinese-merchants.md",
+      "verified": "2026-09-26"
     },
     {
       "era": "08-new-territories",

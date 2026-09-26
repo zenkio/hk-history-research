@@ -4,10 +4,11 @@ title_zh: "華僑協會成立"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "collaboration", "japanese-occupation", "local-elites", "wartime-economy", "world-war-ii"]
+tags: ["evidence-none", "1943", "ai-draft", "collaboration", "japanese-occupation", "local-elites", "wartime-economy", "world-war-ii"]
 summary: "In August 1943, the Japanese occupation authorities established the Overseas Chinese Association to co-opt local elites and mobilize resources for the war effort."
 description: "In August 1943, the Japanese occupation authorities established the Overseas Chinese Association to co-opt local elites and mobilize resources for the war effort."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -37,5 +38,13 @@ The creation of the Overseas Chinese Association highlights the complex dynamics
 
 - ❔ The exact founding date and structural mandate of the Overseas Chinese Association in August 1943
 - ❔ The specific identities and internal dynamics of the local elites appointed to lead the association
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the establishment of the Overseas Chinese Association on January 1, 1943, is still needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

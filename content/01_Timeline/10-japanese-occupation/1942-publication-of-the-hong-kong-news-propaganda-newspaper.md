@@ -4,10 +4,11 @@ title_zh: "《香港新聞》宣傳報章的出版"
 date: 1942-06-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "censorship", "hong-kong-news", "japanese-occupation", "propaganda", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "censorship", "hong-kong-news", "japanese-occupation", "propaganda", "world-war-ii"]
 summary: "Following the British surrender of Hong Kong in December 1941, the Japanese military administration established the Hong Kong News to serve as its primary English-language propaganda organ. The publication enforced strict censorship and promoted Japanese cultural assimilation until the end of the occupation in 1945."
 description: "Following the British surrender of Hong Kong in December 1941, the Japanese military administration established the Hong Kong News to serve as its primary English-language propaganda organ."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The newspaper remains a critical primary source for documenting daily life, admi
 
 - ❔ The exact launch date of the Hong Kong News in 1942
 - ❔ The extent of circulation and readership among the remaining foreign and local populations during the occupation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the existence, content, and publication details of the 'Hong Kong News' newspaper during the Japanese occupation in 1942.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "《工會登記條例》之頒布"
 date: 1948-01-01
 year: 1948
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1948", "ai-draft", "colonial-history", "kmt-ccp-rivalry", "labour-movement", "postwar-refugees", "trade-unions"]
+tags: ["evidence-none", "1948", "ai-draft", "colonial-history", "kmt-ccp-rivalry", "labour-movement", "postwar-refugees", "trade-unions"]
 summary: "In 1948, the colonial government enacted the Trade Union Registration Ordinance, bringing labor organizations under strict official supervision and deeply entrenching the Chinese Civil War's political divide within the local workforce."
 description: "In 1948, the colonial government enacted the Trade Union Registration Ordinance, bringing labor organizations under strict official supervision and deeply entrenching the Chinese Civil War's political divide within the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The ordinance marked a turning point in the governance of labor in Hong Kong, es
 
 - ❔ The exact legislative mechanics and enforcement priorities of the 1948 Trade Union Registration Ordinance regarding external political affiliations.
 - ❔ The immediate registration statistics and dissolution rates of labor unions following the enactment of the 1948 ordinance.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the enactment or content of the Trade Union Registration Ordinance of 1948 is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

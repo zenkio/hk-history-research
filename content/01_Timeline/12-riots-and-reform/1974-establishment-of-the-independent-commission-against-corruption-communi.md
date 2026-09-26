@@ -4,10 +4,11 @@ title_zh: "廉政公署社區關係處成立"
 date: 1974-02-15
 year: 1974
 era: "Riots and the MacLehose reforms"
-tags: ["1974", "ai-draft", "anti-corruption", "colonial-history", "community-relations", "icac", "maclehose-reforms", "riots-and-reform"]
+tags: ["evidence-b", "1974", "ai-draft", "anti-corruption", "colonial-history", "community-relations", "icac", "maclehose-reforms", "riots-and-reform"]
 summary: "Established in February 1974 alongside the Independent Commission Against Corruption, the Community Relations Department pioneered public education and engagement strategies to shift societal attitudes and root out deep-seated systemic corruption in daily life."
 description: "Established in February 1974 alongside the Independent Commission Against Corruption, the Community Relations Department pioneered public education and engagement strategies to shift societal attitudes and root out…"
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -46,5 +47,17 @@ The creation of the CRD marked a pioneering milestone in global anti-corruption 
 
 - ❔ Did the Community Relations Department officially commence operations on February 15, 1974, alongside the rest of the ICAC?
 - ❔ What were the precise statutory functions assigned to the Community Relations Department under the initial 1974 ordinance?
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Ming Li Hsieh (2016). *A Case Study: Lessons from the Hong Kong Independent Commission Against Corruption*. International Journal of Criminology and Sociology.](https://doi.org/10.6000/1929-4409.2017.06.02) (claims 1): The article examines the ICAC's three-pronged approach, which includes the Community Relations Department as one of its core components.
+
+**Still needed:** Historical evidence or official records specifically verifying the establishment date of the Community Relations Department as 1974-02-15.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

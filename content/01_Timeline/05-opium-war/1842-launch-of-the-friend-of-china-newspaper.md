@@ -4,7 +4,7 @@ title_zh: "《中國之友》報創刊"
 date: 1842-03-17
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["evidence-b", "1842", "ai-draft", "british-colonial-history", "first-opium-war", "journalism", "mercantilism", "opium-war", "print-media"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-b", "1842", "ai-draft", "british-colonial-history", "first-opium-war", "journalism", "mercantilism", "opium-war", "print-media"]
 summary: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
 description: "On March 17, 1842, Hong Kong's earliest regular independent English-language newspaper, The Friend of China (中國之友), began publication, establishing a vital medium for merchant advocacy and colonial discourse."
 confidence: ai-draft
@@ -41,19 +41,15 @@ The launch of the newspaper marked a critical milestone in the development of Ho
 - [[02_Entities/Places/canton|Canton (廣州)]]
 - [[02_Entities/Places/macao|Macao (澳門)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact founding date of The Friend of China was March 17, 1842.
-- ❔ George Wyndham Cooke was the initial founder and editor of the newspaper.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ✅ **agrees with Wikipedia**: The exact founding date of The Friend of China was March 17, 1842. The text states the newspaper was first published on 17 March 1842.
+- ⚠️ **differs from Wikipedia**: George Wyndham Cooke was the initial founder and editor of the newspaper. The text states the newspaper was founded by James White and Reverend John L. Shuck.
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: South China Morning Post](https://en.wikipedia.org/wiki/South_China_Morning_Post), [Wikipedia: The Friend of China](https://en.wikipedia.org/wiki/The_Friend_of_China)
 
-- **Grade A:** *The Friend of China and Hongkong Gazette*, Vol. 1, No. 1 (24 March 1842); UK National Archives, CO 129/2. [link ✓](https://www.cambridge.org/core/journals/law-and-history-review/article/from-reciprocity-to-territoriality-extradition-the-opium-war-and-the-idea-of-british-sovereignty-in-hong-kong-184244/8C9DAD4944D66B8A54F079D28CB309BE) [link ✗](https://en.wikisource.org/wiki/Europe\_in\_China/Chapter\_13) [link ✓](https://houghton.hk/china1793-1844-part-12/) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/2)
-- **Grade B:** Sweeting, A. (1990), *Education in Hong Kong, Pre-1841 to 1941: Fact and Opinion*, Hong Kong University Press. [link ✗](https://theartsjournal.org/index.php/site/article/download/528/302/1533)
-- **Grade C:** Hong Kong Newspaper Collection, HKU Libraries Digital Repository, https://lib.hku.hk. [site ?](https://lib.hku.hk) [link ✗](https://wiki.fibis.org/w/Hong\_Kong) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view)
-
-**Disputes or myths:** Often categorized as an independent press organ, it functioned under direct government financial patronage until the official *Hong Kong Government Gazette* was established.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

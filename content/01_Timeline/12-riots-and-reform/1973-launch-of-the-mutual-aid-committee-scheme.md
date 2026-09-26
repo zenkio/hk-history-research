@@ -4,10 +4,11 @@ title_zh: "互助委員會計劃啟動"
 date: 1973-03-29
 year: 1973
 era: "Riots and the MacLehose reforms"
-tags: ["1973", "ai-draft", "grassroots-mobilization", "maclehose-reforms", "mutual-aid-committees", "public-housing", "riots-and-reform", "urban-governance"]
+tags: ["evidence-none", "1973", "ai-draft", "grassroots-mobilization", "maclehose-reforms", "mutual-aid-committees", "public-housing", "riots-and-reform", "urban-governance"]
 summary: "In March 1973, the colonial government officially launched the Mutual Aid Committee (MAC) scheme to foster grassroots community building, improve urban security, and enhance civic participation across Hong Kong's expanding public housing estates."
 description: "In March 1973, the colonial government officially launched the Mutual Aid Committee (MAC) scheme to foster grassroots community building, improve urban security, and enhance civic participation across Hong Kong's…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The MAC scheme rapidly expanded across the territory, eventually encompassing th
 
 - ❔ The exact administrative rollout date of March 29, 1973 for the formal scheme launch.
 - ❔ The initial total number of Mutual Aid Committees established within the first year of the scheme.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the launch, purpose, and implementation of the Mutual Aid Committee Scheme in March 1973 is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

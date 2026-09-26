@@ -4,7 +4,7 @@ title_zh: "一八四一年己丑風災"
 date: 1841-07-21
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["photo-corroborated", "evidence-a", "1841", "ai-draft", "colonial-history", "first-opium-war", "natural-disaster", "opium-war", "typhoon"]
+tags: ["wikipedia-checked", "photo-corroborated", "evidence-a", "1841", "ai-draft", "colonial-history", "first-opium-war", "natural-disaster", "opium-war", "typhoon"]
 summary: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental vulnerabilities of the island."
 description: "On July 21, 1841, a catastrophic typhoon struck the newly established British colonial outpost of Hong Kong, devastating early matshed settlements, destroying shipping fleets, and exposing the severe environmental…"
 confidence: ai-draft
@@ -39,32 +39,15 @@ The disaster served as a brutal awakening for the British colonial authorities r
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/pearl-river-delta|Pearl River Delta (珠江三角洲)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Did the Great Typhoon specifically strike Hong Kong on July 21, 1841?
-- ❔ What was the exact extent of the damage to the British fleet and matshed settlements according to primary naval records?
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: Did the Great Typhoon specifically strike Hong Kong on July 21, 1841?. The reference text mentions typhoons in mainland China but does not mention a Great Typhoon or the date July 21, 1841.
+- ❔ **not in Wikipedia**: What was the exact extent of the damage to the British fleet and matshed settlements according to primary naval records?. The reference text does not provide information regarding damage to the British fleet or matshed settlements.
 
-> [!note] From Gemini Deep Research (01-1834-1842.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: History of Hong Kong (1800s–1930s)](https://en.wikipedia.org/wiki/History_of_Hong_Kong_%281800s%E2%80%931930s%29)
 
-- **Grade A:** Meteorological Logs &amp; Colonial Despatches, July 1841, UK National Archives, CO 129/1, fo. 210–225; *Canton Register*, Vol. 14, No. 29 (20 July 1841). [link ✓](https://archive.org/download/linzexuyapianzha00hong/linzexuyapianzha00hong.pdf) [link ✓](https://houghton.hk/hong-kong-part-1/) [link ✓](https://sillares.uanl.mx/index.php/s/article/view/140) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/1)
-- **Grade B:** Pryor, M. (2015), "Street Tree Planting in Hong Kong in the Early Colonial Period (1842-98)", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 55, pp. 33–56. [link ✗](https://www.researchgate.net/publication/290549944\_Watching\_over\_Hong\_Kong\_Private\_policing\_1841-1941)
-- **Grade C:** Gwulo: Old Hong Kong Database, https://gwulo.com/node/8740. [link ✓](https://gwulo.com/node/8740) [link ✗](https://wiki.fibis.org/w/Hong\_Kong)
-
-**Disputes or myths:** The destruction was cited in Parliament as proof that Hong Kong was unviable, nearly driving the British Cabinet to abandon the territory altogether.
-
-## Photos from this period
-
-![An 1841 watercolor depiction of a typhoon in Hong Kong showing several ships struggling in heavy seas.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Typhoon_in_Hong_Kong_1841-07-21.jpg/960px-Typhoon_in_Hong_Kong_1841-07-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*An 1841 watercolor depiction of a typhoon in Hong Kong showing several ships struggling in heavy seas.* (artwork). Edward H. Cree, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Typhoon_in_Hong_Kong_1841-07-21.jpg).
-Corroborates: It corroborates the occurrence of a devastating typhoon on July 21, 1841, that impacted shipping in Hong Kong.
-
-![A watercolor painting depicting the HMS Rattlesnake and other vessels struggling in the turbulent waters of Hong Kong Harbour during a typhoon on July 21, 1841.](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/21_July_1841._HMS_Rattlesnake._Typhoon_in_Hong_Kong_Harbour.jpg/960px-21_July_1841._HMS_Rattlesnake._Typhoon_in_Hong_Kong_Harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-
-*A watercolor painting depicting the HMS Rattlesnake and other vessels struggling in the turbulent waters of Hong Kong Harbour during a typhoon on July 21, 1841.* (artwork). Cree, Edward Hodges, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:21_July_1841._HMS_Rattlesnake._Typhoon_in_Hong_Kong_Harbour.jpg).
-Corroborates: It visually corroborates the occurrence of a severe typhoon in Hong Kong harbor on the specified date, showing the impact on maritime vessels.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

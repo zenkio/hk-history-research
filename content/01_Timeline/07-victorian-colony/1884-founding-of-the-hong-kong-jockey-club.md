@@ -4,7 +4,7 @@ title_zh: "香港賽馬會成立"
 date: 1884-11-04
 year: 1884
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1884", "ai-draft", "colonial-history", "happy-valley", "hong-kong-jockey-club", "horse-racing", "victorian-colony", "victorian-era"]
+tags: ["wikipedia-checked", "evidence-none", "1884", "ai-draft", "colonial-history", "happy-valley", "hong-kong-jockey-club", "horse-racing", "victorian-colony", "victorian-era"]
 summary: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
 description: "On November 4, 1884, the Hong Kong Jockey Club was formally established to organize and regulate horse racing at Happy Valley, evolving into a central pillar of colonial elite society and community philanthropy."
 confidence: ai-draft
@@ -41,18 +41,16 @@ Over time, the institution cemented horse racing as a permanent fixture of Hong 
 - [[02_Entities/Places/happy-valley|Happy Valley (快活谷)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of establishment as November 4, 1884, in primary club records
-- ❔ The original founding members and their exact corporate affiliations
-- ❔ The precise timeline of Chinese merchant admission to full club membership
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact date of establishment as November 4, 1884, in primary club records. The text states the club was founded in 1884 but does not provide a specific day or mention primary club records.
+- ❔ **not in Wikipedia**: The original founding members and their exact corporate affiliations. The text mentions the club was founded in 1884 as an amateur body but does not list specific founding members or their affiliations.
+- ❔ **not in Wikipedia**: The precise timeline of Chinese merchant admission to full club membership. The text states there were no Chinese members until the 20th century but does not provide a precise timeline for their admission.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Jockey Club](https://en.wikipedia.org/wiki/Hong_Kong_Jockey_Club)
 
-**Still needed:** Evidence or historical documents regarding the founding of the Hong Kong Jockey Club in 1884 are needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

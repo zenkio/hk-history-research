@@ -4,10 +4,11 @@ title_zh: "南華體育會之成立"
 date: 1910-01-01
 year: 1910
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1910", "ai-draft", "colonial-society", "interwar", "interwar-hong-kong", "local-identity", "south-china-athletic-association", "sports-history"]
+tags: ["evidence-none", "1910", "ai-draft", "colonial-society", "interwar", "interwar-hong-kong", "local-identity", "south-china-athletic-association", "sports-history"]
 summary: "Founded in the early 20th century and rising to prominence during the interwar period, the South China Athletic Association became a vital institution for fostering a distinct local Chinese identity through competitive sports."
 description: "Founded in the early 20th century and rising to prominence during the interwar period, the South China Athletic Association became a vital institution for fostering a distinct local Chinese identity through competitive…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The prominence of the South China Athletic Association during the interwar years
 
 - ❔ The exact timeline and founding circumstances of the Chinese Athletic Association around 1910 and its formal transition into the South China Athletic Association in 1920.
 - ❔ The extent of racial segregation in colonial Hong Kong sports clubs during the early 20th century.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment or founding of the South China Athletic Association in 1910 is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

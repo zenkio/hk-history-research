@@ -4,7 +4,7 @@ title_zh: "華人醫院之建立"
 date: 1850-01-01
 year: 1850
 era: "The early colony"
-tags: ["evidence-none", "1850", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "public-health", "social-welfare", "western-medicine"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1850", "ai-draft", "colonial-history", "early-colony", "early-hong-kong", "public-health", "social-welfare", "western-medicine"]
 summary: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
 description: "In 1850, the first medical facility dedicated to the Chinese population was established, marking an early attempt to introduce Western clinical practices to the local community in the nascent colony."
 confidence: ai-draft
@@ -35,18 +35,16 @@ The establishment of this hospital represents a pivotal moment in the history of
 - [[02_Entities/People/none-specifically-identified-as-primary-founders|None specifically identified as primary founders]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verification of the specific 1850 founding date and the physical location of the initial hospital premises.
-- ❔ Documentation confirming the funding sources of the original 1850 infirmary.
-- ❔ Records detailing the specific medical treatments provided to the local population during this period.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Verification of the specific 1850 founding date and the physical location of the initial hospital premises. The Hong Kong Sanatorium & Hospital was founded in 1922 in Happy Valley, not 1850.
+- ❔ **not in Wikipedia**: Documentation confirming the funding sources of the original 1850 infirmary. The text does not mention the funding sources of the hospital.
+- ❔ **not in Wikipedia**: Records detailing the specific medical treatments provided to the local population during this period. The text does not provide details regarding specific medical treatments.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Queen Mary Hospital (Hong Kong)](https://en.wikipedia.org/wiki/Queen_Mary_Hospital_%28Hong_Kong%29), [Wikipedia: Hong Kong Sanatorium & Hospital](https://en.wikipedia.org/wiki/Hong_Kong_Sanatorium_%26_Hospital)
 
-**Still needed:** Evidence regarding the founding or establishment of the first hospital dedicated to the Chinese population in Hong Kong is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -4,10 +4,11 @@ title_zh: "秘密地下情報網的運作"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "british-army-aid-group", "intelligence-network", "japanese-occupation", "kempeitai", "world-war-ii"]
+tags: ["evidence-none", "1944", "ai-draft", "british-army-aid-group", "intelligence-network", "japanese-occupation", "kempeitai", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, underground operatives collaborating with the British Army Aid Group gathered crucial military intelligence inside the occupied city despite severe risks of torture and execution by the Kempeitai."
 description: "During the Japanese occupation of Hong Kong, underground operatives collaborating with the British Army Aid Group gathered crucial military intelligence inside the occupied city despite severe risks of torture and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The intelligence gathered by the Hong Kong underground network provided the Alli
 
 - ❔ Exact volume and specific operational targets of intelligence transmitted by the underground network to the BAAG
 - ❔ The precise organizational links between urban underground agents and rural guerrilla forces such as the Hong Kong-Kowloon Independent Brigade
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Historical evidence regarding secret intelligence networks in Hong Kong during the Japanese occupation in 1944 is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

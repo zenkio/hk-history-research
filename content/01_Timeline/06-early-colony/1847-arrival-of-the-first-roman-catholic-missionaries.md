@@ -4,7 +4,7 @@ title_zh: "第一批羅馬天主教傳教士抵達"
 date: 1847-01-01
 year: 1847
 era: "The early colony"
-tags: ["evidence-none", "1847", "ai-draft", "colonial-history", "early-colony", "education-history", "nineteenth-century", "religious-history", "social-welfare"]
+tags: ["wikipedia-checked", "evidence-none", "1847", "ai-draft", "colonial-history", "early-colony", "education-history", "nineteenth-century", "religious-history", "social-welfare"]
 summary: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
 description: "In 1847, the Roman Catholic Church established a formal presence in the nascent British colony, marking a shift in the religious and social landscape beyond the established Anglican framework."
 confidence: ai-draft
@@ -37,18 +37,16 @@ The establishment of the Catholic mission introduced a new layer of social servi
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact date of the formal establishment of the Apostolic Prefecture.
-- ❔ The extent to which Anglican colonial officials actively opposed the Catholic mission in the 1840s.
-- ❔ The number of local converts during the initial years of the mission.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The exact date of the formal establishment of the Apostolic Prefecture. The text states the prefecture was created in 1841, but does not provide the exact date.
+- ❔ **not in Wikipedia**: The extent to which Anglican colonial officials actively opposed the Catholic mission in the 1840s. The text does not mention Anglican colonial officials or any opposition to the Catholic mission.
+- ❔ **not in Wikipedia**: The number of local converts during the initial years of the mission. The text provides Catholic population figures for 2022, but does not mention the number of converts during the initial years.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Diocese of Hong Kong](https://en.wikipedia.org/wiki/Diocese_of_Hong_Kong)
 
-**Still needed:** Evidence specifically documenting the arrival of the first Roman Catholic missionaries in Hong Kong in 1847 is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -4,10 +4,11 @@ title_zh: "小學擴展計劃之推行"
 date: 1961-01-01
 year: 1961
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1961", "ai-draft", "colonial-history", "industrialisation", "postwar-recovery", "postwar-refugees", "primary-education", "social-welfare"]
+tags: ["evidence-none", "1961", "ai-draft", "colonial-history", "industrialisation", "postwar-recovery", "postwar-refugees", "primary-education", "social-welfare"]
 summary: "In **1961**, the Hong Kong government launched the Primary Education Expansion Scheme to massively increase subsidized primary school places, addressing the severe educational deficit among the surging postwar youth population."
 description: "In 1961, the Hong Kong government launched the Primary Education Expansion Scheme to massively increase subsidized primary school places, addressing the severe educational deficit among the surging postwar youth…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ This policy marked a turning point in the colonial government's social welfare r
 
 - ❔ The exact numerical targets set by the Primary Education Expansion Scheme in 1961
 - ❔ The precise proportion of government-funded versus private school places following the scheme's implementation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the implementation, historical context, or impact of the 1961 Primary Education Expansion Scheme in Hong Kong is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

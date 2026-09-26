@@ -4,10 +4,11 @@ title_zh: "保良局永久總會址落成"
 date: 1932-01-01
 year: 1932
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1932", "ai-draft", "chinese-philanthropy", "interwar", "interwar-hong-kong", "po-leung-kuk", "social-welfare", "women-and-children"]
+tags: ["evidence-none", "1932", "ai-draft", "chinese-philanthropy", "interwar", "interwar-hong-kong", "po-leung-kuk", "social-welfare", "women-and-children"]
 summary: "In 1932, the Po Leung Kuk completed its expanded permanent headquarters on Leighton Road, solidifying its position as the preeminent Chinese-run welfare and child-protection institution in British Hong Kong during the interwar period."
 description: "In 1932, the Po Leung Kuk completed its expanded permanent headquarters on Leighton Road, solidifying its position as the preeminent Chinese-run welfare and child-protection institution in British Hong Kong during the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The establishment of the Leighton Road facility marked a crucial milestone in th
 - ❔ The Po Leung Kuk permanent headquarters on Leighton Road was completed and inaugurated in 1932.
 - ❔ The original premises of the Po Leung Kuk were located on Upper Station Street.
 - ❔ The organization was founded in 1878 specifically to combat kidnapping and human trafficking.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the founding or construction of the Po Leung Kuk permanent headquarters in 1932 is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

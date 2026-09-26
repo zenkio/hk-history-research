@@ -4,10 +4,11 @@ title_zh: "電線電車系統的引入"
 date: 1922-01-01
 year: 1922
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1920s", "1922", "ai-draft", "colonial-infrastructure", "hong-kong-tramways", "interwar", "public-transport", "urban-history"]
+tags: ["evidence-none", "1920s", "1922", "ai-draft", "colonial-infrastructure", "hong-kong-tramways", "interwar", "public-transport", "urban-history"]
 summary: "The modernization of Hong Kong's tram system in the early 1920s improved urban transit infrastructure, facilitating mass mobility for the growing working-class population amid labor unrest."
 description: "The modernization of Hong Kong's tram system in the early 1920s improved urban transit infrastructure, facilitating mass mobility for the growing working-class population amid labor unrest."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The expansion of the electric tram network fundamentally altered urban daily lif
 
 - ❔ Exact timeline of the double-tracking and electrical system upgrades between 1920 and 1925
 - ❔ Direct correlation between the 1922 strikes and tramway operational policy changes
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the introduction of the Tramway Electric Tracking System in Hong Kong in 1922 is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

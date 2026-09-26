@@ -4,7 +4,7 @@ title_zh: "香港海事青年團之成立"
 date: 1950-02-12
 year: 1950
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950", "ai-draft", "british-colonial-era", "cold-war", "maritime-history", "postwar-refugees", "sea-cadet-corps", "youth-organisations"]
+tags: ["photo-corroborated", "1950", "ai-draft", "british-colonial-era", "cold-war", "maritime-history", "postwar-refugees", "sea-cadet-corps", "youth-organisations"]
 summary: "Established on **February 12, 1950**, the Hong Kong Sea Cadet Corps was formed to provide maritime training and foster discipline among local youth against the backdrop of early Cold War tensions."
 description: "Established on February 12, 1950, the Hong Kong Sea Cadet Corps was formed to provide maritime training and foster discipline among local youth against the backdrop of early Cold War tensions."
 confidence: ai-draft
@@ -41,5 +41,13 @@ The formation of the Corps reflected broader colonial administrative efforts to 
 
 - ❔ The exact founding date of the Hong Kong Sea Cadet Corps as February 12, 1950
 - ❔ The direct involvement and sponsorship of the Royal Navy at the time of establishment
+
+## Photos from this period
+
+![The logo of the Hong Kong Sea Cadet Corps.](https://upload.wikimedia.org/wikipedia/commons/3/3d/Hong_Kong_Sea_Cadet_Corps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*The logo of the Hong Kong Sea Cadet Corps.* (artwork). Sea Cadet, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_Sea_Cadet_Corps.jpg).
+Corroborates: It provides a visual identification of the organization established in 1950.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,7 +4,7 @@ title_zh: "九龍渡海小輪公司定期服務之開辦"
 date: 1888-01-01
 year: 1888
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1880s", "1888", "ai-draft", "colonial-history", "dorabjee-naorojee", "public-transport", "star-ferry", "victoria-harbour", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-none", "1880s", "1888", "ai-draft", "colonial-history", "dorabjee-naorojee", "public-transport", "star-ferry", "victoria-harbour", "victorian-colony"]
 summary: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
 description: "In May 1888, Parsi businessman Dorabjee Naorojee established the first structured steam ferry service across Victoria Harbour, laying the operational foundations for what would become the iconic Star Ferry."
 confidence: ai-draft
@@ -42,15 +42,15 @@ The establishment of Naorojee's regular steam ferry service marked a pivotal tur
 - [[02_Entities/Places/tsim-sha-tsui|Tsim Sha Tsui (尖沙咀)]]
 - [[02_Entities/Places/central|Central (中環)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Dorabjee Naorojee launched the regularized steam ferry service across Victoria Harbour in May 1888.
-- ❔ The enterprise was formally incorporated or reorganized as the Star Ferry Company in 1898.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Dorabjee Naorojee launched the regularized steam ferry service across Victoria Harbour in May 1888. The text states the company was founded by Dorabjee Naorojee Mithaiwala in 1888, but does not specify the month or if the service was regularized.
+- ✅ **agrees with Wikipedia**: The enterprise was formally incorporated or reorganized as the Star Ferry Company in 1898. The text states the company adopted its present name in 1898 and was incorporated into the 'Star Ferry Co Ltd' in that year.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Star Ferry](https://en.wikipedia.org/wiki/Star_Ferry)
 
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

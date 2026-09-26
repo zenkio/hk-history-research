@@ -4,10 +4,11 @@ title_zh: "香港仔水塘建造工程"
 date: 1931-01-01
 year: 1931
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1931", "aberdeen-reservoir", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "public-works", "water-supply"]
+tags: ["evidence-none", "1931", "aberdeen-reservoir", "ai-draft", "colonial-infrastructure", "interwar", "interwar-hong-kong", "public-works", "water-supply"]
 summary: "Completed in 1931, the Aberdeen Reservoir was a major infrastructure project undertaken by the colonial government to alleviate severe water shortages in a rapidly growing Hong Kong."
 description: "Completed in 1931, the Aberdeen Reservoir was a major infrastructure project undertaken by the colonial government to alleviate severe water shortages in a rapidly growing Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The project represented a critical step in the infrastructural modernization of 
 
 - ❔ Exact completion date of the Aberdeen Reservoir as 1931
 - ❔ Specific engineering composition of the upper and lower Aberdeen dams
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the engineering, timeline, or construction process of the Aberdeen Reservoir in the 1930s is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

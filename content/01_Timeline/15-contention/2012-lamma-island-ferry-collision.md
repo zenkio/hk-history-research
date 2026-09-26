@@ -4,7 +4,7 @@ title_zh: "南丫島撞船事故"
 date: 2012-10-01
 year: 2012
 era: "Political contention and protest"
-tags: ["2012", "ai-draft", "contention", "hong-kong-history", "lamma-island-ferry-collision", "marine-department", "maritime-disaster", "public-safety"]
+tags: ["photo-corroborated", "2012", "ai-draft", "contention", "hong-kong-history", "lamma-island-ferry-collision", "marine-department", "maritime-disaster", "public-safety"]
 summary: "On October 1, 2012, a fatal collision between two passenger vessels off Lamma Island resulted in 39 deaths, sparking widespread public grief and exposing significant regulatory lapses in Hong Kong's maritime safety management."
 description: "On October 1, 2012, a fatal collision between two passenger vessels off Lamma Island resulted in 39 deaths, sparking widespread public grief and exposing significant regulatory lapses in Hong Kong's maritime safety…"
 confidence: ai-draft
@@ -42,5 +42,28 @@ The disaster was one of Hong Kong's deadliest maritime accidents in decades, pro
 - ❔ The exact collision time was approximately 8:23 p.m. on October 1, 2012.
 - ❔ The death toll resulting from the collision was 39 people.
 - ❔ The Commission of Inquiry identified systemic failures within the Marine Department.
+
+## Photos from this period
+
+![Hong Kong Chief Executive Leung Chun-ying leads a minute of silence for the victims of the Lamma Island ferry collision.](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Hong_Kong_mourns_Lamma_ferry_victims_01.jpg/960px-Hong_Kong_mourns_Lamma_ferry_victims_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Hong Kong Chief Executive Leung Chun-ying leads a minute of silence for the victims of the Lamma Island ferry collision.* (contemporary photo). 美国之音 谭嘉琪拍摄, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_mourns_Lamma_ferry_victims_01.jpg).
+Corroborates: It illustrates the official mourning process that occurred in the wake of the tragedy.
+
+![Hong Kong Chief Executive Leung Chun-ying and Chief Secretary Carrie Lam are seen mourning the victims of the Lamma ferry collision.](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Hong_Kong_mourns_Lamma_ferry_victims_02.jpg/960px-Hong_Kong_mourns_Lamma_ferry_victims_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*Hong Kong Chief Executive Leung Chun-ying and Chief Secretary Carrie Lam are seen mourning the victims of the Lamma ferry collision.* (contemporary photo). 美国之音 谭嘉琪拍摄, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hong_Kong_mourns_Lamma_ferry_victims_02.jpg).
+Corroborates: The image corroborates the public and official grief that followed the tragedy.
+
+![People are seen posting notes and signing a condolence area at a pier in Central, Hong Kong.](https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/People_signed_the_condolence_book_at_Lamma_Island_pier_in_Central.jpg/960px-People_signed_the_condolence_book_at_Lamma_Island_pier_in_Central.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*People are seen posting notes and signing a condolence area at a pier in Central, Hong Kong.* (contemporary photo). Ngchikit, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:People_signed_the_condolence_book_at_Lamma_Island_pier_in_Central.jpg).
+Corroborates: It corroborates the mention of widespread public grief following the ferry collision.
+
+![A makeshift memorial covered in handwritten notes and flowers is set up to mourn the victims of the Lamma Island ferry collision.](https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MK_HKFSU_Federation_of_Students_%E5%AD%B8%E8%81%AF_at_Lamma_Island_pier_October_2012.jpg/960px-MK_HKFSU_Federation_of_Students_%E5%AD%B8%E8%81%AF_at_Lamma_Island_pier_October_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+
+*A makeshift memorial covered in handwritten notes and flowers is set up to mourn the victims of the Lamma Island ferry collision.* (contemporary photo). MKFSU2012, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MK_HKFSU_Federation_of_Students_%E5%AD%B8%E8%81%AF_at_Lamma_Island_pier_October_2012.jpg).
+Corroborates: The image illustrates the widespread public grief that followed the maritime disaster.
+
 
 Part of: [[01_Timeline/15-contention/index|Political contention and protest]]

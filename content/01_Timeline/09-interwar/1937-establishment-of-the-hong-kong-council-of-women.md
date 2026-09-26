@@ -4,10 +4,11 @@ title_zh: "香港婦女委員會之成立"
 date: 1937-01-01
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1937", "ai-draft", "civil-society", "feminism", "interwar", "interwar-hong-kong", "social-welfare", "women-rights"]
+tags: ["evidence-none", "1937", "ai-draft", "civil-society", "feminism", "interwar", "interwar-hong-kong", "social-welfare", "women-rights"]
 summary: "In 1937, the Hong Kong Council of Women was established to advocate for women's rights and social welfare, marking a crucial step in local civil society development."
 description: "In 1937, the Hong Kong Council of Women was established to advocate for women's rights and social welfare, marking a crucial step in local civil society development."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The creation of the council marked a significant milestone in the history of loc
 
 - ❔ Exact founding date and founding members of the Hong Kong Council of Women in 1937
 - ❔ The precise organizational relationship between the council and existing anti-mui-tsai campaigns
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the founding, purpose, or activities of the Hong Kong Council of Women in or around 1937 is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

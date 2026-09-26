@@ -4,10 +4,11 @@ title_zh: "香港警察機動步隊成立"
 date: 1958-02-17
 year: 1958
 era: "Riots and the MacLehose reforms"
-tags: ["1958", "1967-riots", "ai-draft", "civil-unrest", "colonial-history", "law-enforcement", "police-tactical-unit", "riots-and-reform"]
+tags: ["evidence-none", "1958", "1967-riots", "ai-draft", "civil-unrest", "colonial-history", "law-enforcement", "police-tactical-unit", "riots-and-reform"]
 summary: "Established on February 17, 1958, the Police Tactical Unit (PTU) was formed to manage rising civil unrest in colonial Hong Kong, later becoming the frontline security force during the turbulent political protests of the late 1960s."
 description: "Established on February 17, 1958, the Police Tactical Unit (PTU) was formed to manage rising civil unrest in colonial Hong Kong, later becoming the frontline security force during the turbulent political protests of the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The creation of the PTU marked a turning point in Hong Kong's internal security 
 
 - ❔ The exact formal establishment date of the Police Tactical Unit as February 17, 1958.
 - ❔ The initial operational scope and deployment strategies mandated for the PTU at its inception.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the establishment and early history of the Hong Kong Police Tactical Unit (PTU) in 1958 is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

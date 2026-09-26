@@ -4,10 +4,11 @@ title_zh: "日佔時期砍伐林木作柴薪"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "deforestation", "environmental-history", "fuel-shortage", "japanese-occupation", "world-war-ii"]
+tags: ["evidence-none", "1944", "ai-draft", "deforestation", "environmental-history", "fuel-shortage", "japanese-occupation", "world-war-ii"]
 summary: "During the final years of the Japanese occupation of Hong Kong from 1944 to 1945, acute fuel shortages led to widespread and indiscriminate logging across the territory's hillsides, resulting in severe ecological devastation."
 description: "During the final years of the Japanese occupation of Hong Kong from 1944 to 1945, acute fuel shortages led to widespread and indiscriminate logging across the territory's hillsides, resulting in severe ecological…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The catastrophic loss of forest cover triggered severe secondary environmental c
 
 - ❔ The exact volume or percentage of forest cover lost specifically between 1944 and 1945.
 - ❔ The formal ordinances or rationing permits issued by the Japanese occupation authorities regarding wood collection.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting deforestation for urban firewood collection in Hong Kong around 1944 is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

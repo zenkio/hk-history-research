@@ -4,10 +4,11 @@ title_zh: "日本語學校開辦"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "assimilation", "education", "japanese-occupation", "language-policy", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "assimilation", "education", "japanese-occupation", "language-policy", "world-war-ii"]
 summary: "In **July 1942**, the Japanese military administration established language schools in occupied Hong Kong to mandate Japanese language learning for civil servants, teachers, and students as part of a broader Japanization policy."
 description: "In July 1942, the Japanese military administration established language schools in occupied Hong Kong to mandate Japanese language learning for civil servants, teachers, and students as part of a broader Japanization…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The enforcement of language education serves as a primary example of wartime cul
 
 - ❔ Specific administrative decrees mandating Japanese language classes for civil servants and teachers issued in July 1942
 - ❔ Enrollment numbers and specific founding dates of the official Japanese Language School in Hong Kong
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the opening or establishment of a Japanese language school in Hong Kong in 1942 is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

@@ -4,10 +4,11 @@ title_zh: "香港中華廠商聯合會工展會"
 date: 1962-01-01
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1962", "ai-draft", "chinese-manufacturers-association", "economy", "industrialization", "made-in-hong-kong", "postwar-recovery", "postwar-refugees"]
+tags: ["evidence-none", "1962", "ai-draft", "chinese-manufacturers-association", "economy", "industrialization", "made-in-hong-kong", "postwar-recovery", "postwar-refugees"]
 summary: "The Chinese Manufacturers' Association Exhibition, first launched earlier but reaching a major milestone by **1962**, served as the premier showcase for the rapidly expanding 'Made in Hong Kong' manufacturing sector, boosting local industrial confidence and civic pride during a period of massive demographic and economic transition."
 description: "The Chinese Manufacturers' Association Exhibition, first launched earlier but reaching a major milestone by 1962, served as the premier showcase for the rapidly expanding 'Made in Hong Kong' manufacturing sector…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ The exhibition was widely regarded as a pivotal morale booster, fostering a dist
 
 - ❔ Specific visitor attendance numbers for the 1962 exhibition according to official Chinese Manufacturers' Association reports
 - ❔ Exact venue locations utilized by the exhibition in 1962
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the inauguration or details of the Chinese Manufacturers' Association Exhibition in 1962 is required.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

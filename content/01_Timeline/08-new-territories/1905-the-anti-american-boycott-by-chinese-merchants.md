@@ -4,7 +4,7 @@ title_zh: "華商抵制美貨運動"
 date: 1905-01-01
 year: 1905
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1905", "ai-draft", "anti-american-boycott", "chinese-exclusion-act", "colonial-history", "merchant-guilds", "new-territories"]
+tags: ["wikipedia-checked", "evidence-none", "1905", "ai-draft", "anti-american-boycott", "chinese-exclusion-act", "colonial-history", "merchant-guilds", "new-territories"]
 summary: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the local Chinese community."
 description: "In 1905, Chinese merchants in Hong Kong organized a powerful boycott of American goods to protest the United States' discriminatory Chinese Exclusion Act, demonstrating the growing economic and political clout of the…"
 confidence: ai-draft
@@ -39,17 +39,15 @@ The **1905** anti-American boycott marked a watershed moment in the political aw
 - [[02_Entities/Places/guangzhou|Guangzhou (廣州)]]
 - [[02_Entities/Places/shanghai|Shanghai (上海)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The precise extent of financial losses suffered by American import businesses in Hong Kong during the 1905 boycott.
-- ❔ The degree of direct involvement or tacit approval by the Qing government regarding the Hong Kong merchant operations.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: The precise extent of financial losses suffered by American import businesses in Hong Kong during the 1905 boycott. The text states the boycott caused a small economic impact in China, but it does not mention Hong Kong or provide precise financial figures.
+- ❔ **not in Wikipedia**: The degree of direct involvement or tacit approval by the Qing government regarding the Hong Kong merchant operations. The text mentions the organizers of the boycott opposed the government and that merchants in south and central China implemented it, but it does not mention Hong Kong or the government's involvement in the boycott.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Chinese Exclusion Act](https://en.wikipedia.org/wiki/Chinese_Exclusion_Act), [Wikipedia: Anti-American sentiment in China](https://en.wikipedia.org/wiki/Anti-American_sentiment_in_China)
 
-**Still needed:** Evidence specifically documenting the Anti-American Boycott by Chinese Merchants in 1905 is missing.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

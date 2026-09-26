@@ -4,10 +4,11 @@ title_zh: "租務(終止通知)條例"
 date: 1962-01-01
 year: 1962
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1962", "ai-draft", "colonial-history", "housing-crisis", "postwar-hong-kong", "postwar-refugees", "social-welfare", "tenancy-law"]
+tags: ["evidence-none", "1962", "ai-draft", "colonial-history", "housing-crisis", "postwar-hong-kong", "postwar-refugees", "social-welfare", "tenancy-law"]
 summary: "In 1962, the Hong Kong government passed the Tenancy (Notice of Termination) Ordinance to combat severe housing shortages, runaway rents, and arbitrary evictions that plagued the overcrowded urban areas during the postwar manufacturing boom."
 description: "In 1962, the Hong Kong government passed the Tenancy (Notice of Termination) Ordinance to combat severe housing shortages, runaway rents, and arbitrary evictions that plagued the overcrowded urban areas during the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The ordinance marked a critical turning point in the evolution of Hong Kong’s 
 
 - ❔ The exact legislative mechanics and specific provisions of the Tenancy (Notice of Termination) Ordinance passed in 1962.
 - ❔ The extent of enforcement and the number of eviction disputes brought before the courts following the ordinance's enactment.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the passage and implementation of the Tenancy (Notice of Termination) Ordinance in Hong Kong on January 1, 1962, is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

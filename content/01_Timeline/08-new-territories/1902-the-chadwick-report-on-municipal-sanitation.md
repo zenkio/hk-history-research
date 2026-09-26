@@ -4,7 +4,7 @@ title_zh: "查德威克市政衞生報告"
 date: 1902-01-01
 year: 1902
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1902", "ai-draft", "colonial-history", "epidemic", "housing-reform", "new-territories", "public-health", "sanitation"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1902", "ai-draft", "colonial-history", "epidemic", "housing-reform", "new-territories", "public-health", "sanitation"]
 summary: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major legislative reform."
 description: "In 1902, sanitary engineer Osbert Chadwick delivered a damning second report on Hong Kong's municipal conditions, exposing severe overcrowding and poor drainage in Chinese tenements that ultimately catalyzed major…"
 confidence: ai-draft
@@ -37,17 +37,17 @@ The findings of the **1902** report served as the direct catalyst for sweeping l
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Osbert Chadwick authored a second major sanitary report specifically in the year 1902
-- ❔ The 1903 Public Health and Buildings Ordinance was a direct legislative result of the 1902 Chadwick Report
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Osbert Chadwick authored a second major sanitary report specifically in the year 1902. The text refers to royal commissioner Edwin Chadwick, not Osbert Chadwick.
+- ❔ **not in Wikipedia**: The 1903 Public Health and Buildings Ordinance was a direct legislative result of the 1902 Chadwick Report. The reference text does not mention the 1903 Public Health and Buildings Ordinance or a report from 1902.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: History of water supply and sanitation](https://en.wikipedia.org/wiki/History_of_water_supply_and_sanitation)
 
-**Still needed:** A source specifically discussing the contents, findings, or historical impact of the 1902 Chadwick Report on Municipal Sanitation in Hong Kong is needed.
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
+- ✓ [The Role of Public Health Improvements in Health Advances: The 20th Century United States](https://doi.org/10.1353/dem.2005.0002) (DOI)
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

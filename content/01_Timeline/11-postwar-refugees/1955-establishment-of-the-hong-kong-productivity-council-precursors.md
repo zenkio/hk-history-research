@@ -4,10 +4,11 @@ title_zh: "香港生產力促進局前身之建立"
 date: 1955-01-01
 year: 1955
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1955", "ai-draft", "colonial-era", "economic-history", "industrialisation", "manufacturing", "postwar-recovery", "postwar-refugees"]
+tags: ["evidence-none", "1955", "ai-draft", "colonial-era", "economic-history", "industrialisation", "manufacturing", "postwar-recovery", "postwar-refugees"]
 summary: "During the mid-1950s, amidst rapid post-war industrial expansion, early institutional efforts emerged to modernize Hong Kong's manufacturing sector and improve export competitiveness."
 description: "During the mid-1950s, amidst rapid post-war industrial expansion, early institutional efforts emerged to modernize Hong Kong's manufacturing sector and improve export competitiveness."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ These early modernization efforts marked a critical pivot in Hong Kong's economi
 
 - ❔ Specific advisory committees or institutional precursors active in 1955 that directly contributed to the formation of the Hong Kong Productivity Council.
 - ❔ The extent of formal colonial government funding and coordination for industrial modernization prior to the official founding of the HKPC in 1967.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically concerning the establishment of the Hong Kong Productivity Council precursors around 1955 is missing.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

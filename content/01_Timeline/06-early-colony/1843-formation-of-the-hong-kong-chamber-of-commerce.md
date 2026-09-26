@@ -4,7 +4,7 @@ title_zh: "香港總商會之成立"
 date: 1843-01-01
 year: 1843
 era: "The early colony"
-tags: ["evidence-none", "1843", "ai-draft", "british-empire", "colonial-history", "early-colony", "economic-development", "merchant-history", "trade-policy"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1843", "ai-draft", "british-empire", "colonial-history", "early-colony", "economic-development", "merchant-history", "trade-policy"]
 summary: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
 description: "Established in 1843, the Hong Kong Chamber of Commerce (香港總商會) unified the influence of the fledgling colony's merchant houses, solidifying Hong Kong's identity as a strategic commercial entrepôt."
 confidence: ai-draft
@@ -38,18 +38,16 @@ While the Chamber’s early years focused on consolidating British mercantile co
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact inaugural meeting date in 1843.
-- ❔ The full list of founding merchant houses excluding Chinese firms.
-- ❔ The specific legislative influence exerted by the Chamber in its first five years.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact inaugural meeting date in 1843. The Hong Kong General Chamber of Commerce was founded on 29 May 1861.
+- ❔ **not in Wikipedia**: The full list of founding merchant houses excluding Chinese firms. The text mentions Jardine, Matheson & Co and a total of 62 original companies, but does not provide a full list.
+- ❔ **not in Wikipedia**: The specific legislative influence exerted by the Chamber in its first five years. The text does not mention specific legislative influence exerted by the Chamber during its first five years.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong General Chamber of Commerce](https://en.wikipedia.org/wiki/Hong_Kong_General_Chamber_of_Commerce), [Wikipedia: Chinese General Chamber of Commerce](https://en.wikipedia.org/wiki/Chinese_General_Chamber_of_Commerce)
 
-**Still needed:** Evidence regarding the specific founding, purpose, or early members of the Hong Kong Chamber of Commerce in 1843 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

@@ -4,10 +4,11 @@ title_zh: "配給證制度之實施"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "food-shortage", "japanese-occupation", "ration-system", "world-war-two"]
+tags: ["evidence-none", "1943", "ai-draft", "food-shortage", "japanese-occupation", "ration-system", "world-war-two"]
 summary: "In March 1943, the Japanese military administration formally introduced a strict household rationing system for staple foods like rice in occupied Hong Kong, compounding severe supply shortages and forcing residents into dangerous survival measures."
 description: "In March 1943, the Japanese military administration formally introduced a strict household rationing system for staple foods like rice in occupied Hong Kong, compounding severe supply shortages and forcing residents…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The implementation of the ration coupon system marked a turning point in the tot
 - ❔ Exact implementation date of the comprehensive staple food rationing system in March 1943
 - ❔ Specific caloric values or weight allocations assigned per person under the official ration coupons
 - ❔ Mechanisms of distribution used by neighborhood associations during the occupation
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the introduction of the ration coupon system in Hong Kong in 1943 is entirely missing.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

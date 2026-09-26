@@ -4,10 +4,11 @@ title_zh: "《吉廷斯教育報告書》的發表"
 date: 1967-01-01
 year: 1967
 era: "Riots and the MacLehose reforms"
-tags: ["1967", "1967-riots", "ai-draft", "colonial-history", "education-reform", "gittins-report", "riots-and-reform", "social-welfare"]
+tags: ["evidence-none", "1967", "1967-riots", "ai-draft", "colonial-history", "education-reform", "gittins-report", "riots-and-reform", "social-welfare"]
 summary: "Commissioned in the wake of social unrest, the 1967 Gittins Report exposed severe deficiencies in Hong Kong's primary education system and laid the groundwork for future reforms aimed at improving social stability."
 description: "Commissioned in the wake of social unrest, the 1967 Gittins Report exposed severe deficiencies in Hong Kong's primary education system and laid the groundwork for future reforms aimed at improving social stability."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ Although the report's recommendations were not immediately implemented in full, 
 
 - ❔ The Gittins Report was officially published in 1967 following the onset of the 1967 riots.
 - ❔ Hubert Roy Gittins chaired the committee that produced the primary education report.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically discussing the 1967 Gittins Report on education in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

@@ -4,10 +4,11 @@ title_zh: "香港人權法案條例通過"
 date: 1991-06-08
 year: 1991
 era: "Sino-British negotiations and the transition"
-tags: ["1991", "ai-draft", "colonial-history", "constitutional-law", "handover", "human-rights", "legal-system", "transition"]
+tags: ["evidence-none", "1991", "ai-draft", "colonial-history", "constitutional-law", "handover", "human-rights", "legal-system", "transition"]
 summary: "On June 8, 1991, the Hong Kong government enacted the Bill of Rights Ordinance to incorporate the International Covenant on Civil and Political Rights into local law ahead of the 1997 handover."
 description: "On June 8, 1991, the Hong Kong government enacted the Bill of Rights Ordinance to incorporate the International Covenant on Civil and Political Rights into local law ahead of the 1997 handover."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The ordinance marked a pivotal moment in Hong Kong’s constitutional developmen
 - ❔ Verify the specific date of the final legislative reading on June 8, 1991.
 - ❔ Confirm the specific amendments made to the Letters Patent in relation to the Bill of Rights.
 - ❔ Cross-reference Beijing's formal diplomatic protests regarding the ordinance to the British government.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the legislative process, debate, or enactment of the Hong Kong Bill of Rights Ordinance in June 1991 is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

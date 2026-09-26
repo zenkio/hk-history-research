@@ -4,10 +4,11 @@ title_zh: "金禧事件"
 date: 1977-05-19
 year: 1977
 era: "Riots and the MacLehose reforms"
-tags: ["1977", "ai-draft", "civil-engagement", "colonial-history", "education-reform", "golden-jubilee-incident", "riots-and-reform", "student-movement"]
+tags: ["evidence-none", "1977", "ai-draft", "civil-engagement", "colonial-history", "education-reform", "golden-jubilee-incident", "riots-and-reform", "student-movement"]
 summary: "The Golden Jubilee Incident of 1977 was a major student and teacher mobilization protesting alleged corruption within a Catholic school, which catalyzed broader political awareness and youth activism in late-colonial Hong Kong."
 description: "The Golden Jubilee Incident of 1977 was a major student and teacher mobilization protesting alleged corruption within a Catholic school, which catalyzed broader political awareness and youth activism in late-colonial…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The Golden Jubilee Incident is widely viewed by historians as a watershed moment
 - ❔ The exact timeline of protests and negotiations between May 1977 and July 1978
 - ❔ The specific financial allegations leveled against the school management committee
 - ❔ The precise number of students and teachers affected by the school closure
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the 'Golden Jubilee Incident' on May 19, 1977, such as contemporaneous news reports or historical analyses of that specific event, is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

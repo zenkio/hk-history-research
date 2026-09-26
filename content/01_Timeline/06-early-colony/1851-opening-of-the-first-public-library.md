@@ -4,7 +4,7 @@ title_zh: "第一所公共圖書館的成立"
 date: 1851-01-01
 year: 1851
 era: "The early colony"
-tags: ["evidence-none", "1851", "ai-draft", "colonial-history", "cultural-development", "early-colony", "education-history", "nineteenth-century", "public-libraries", "victoria-city"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1851", "ai-draft", "colonial-history", "cultural-development", "early-colony", "education-history", "nineteenth-century", "public-libraries", "victoria-city"]
 summary: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
 description: "In 1851, the establishment of the first public library in Hong Kong marked an early effort by the colonial administration to provide formal educational resources to the burgeoning settlement."
 confidence: ai-draft
@@ -37,18 +37,16 @@ Historians identify the establishment of this library as a symbolic turning poin
 - [[02_Entities/Places/victoria|Victoria (維多利亞城)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Verify the exact month of the library's opening in 1851 in primary government records.
-- ❔ Confirm the physical location of the 1851 library within the Victoria district.
-- ❔ Determine the primary language composition of the library's initial catalogue.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: Verify the exact month of the library's opening in 1851 in primary government records. The text states the first public library of Hong Kong was established in 1869, not 1851.
+- ❔ **not in Wikipedia**: Confirm the physical location of the 1851 library within the Victoria district. The text does not mention an 1851 library or a location in the Victoria district.
+- ❔ **not in Wikipedia**: Determine the primary language composition of the library's initial catalogue. The text does not mention the language composition of the initial library's catalogue.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Hong Kong Public Libraries](https://en.wikipedia.org/wiki/Hong_Kong_Public_Libraries), [Wikipedia: Hong Kong Central Library](https://en.wikipedia.org/wiki/Hong_Kong_Central_Library)
 
-**Still needed:** Evidence specifically documenting the opening of the first public library in Hong Kong in 1851 is needed.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/06-early-colony/index|The early colony]]

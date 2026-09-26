@@ -4,7 +4,7 @@ title_zh: "香港黃埔船塢公司之成立"
 date: 1863-07-01
 year: 1863
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-a", "1863", "ai-draft", "british-colony", "industrial-economy", "kowloon", "maritime-history", "shipbuilding", "victorian-colony"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-a", "1863", "ai-draft", "british-colony", "industrial-economy", "kowloon", "maritime-history", "shipbuilding", "victorian-colony"]
 summary: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
 description: "In July 1863, the Hongkong and Whampoa Dock Company was officially formed by consolidating major dockyard operations in the region, laying the foundation for Hong Kong's heavy industrial and ship-repair economy."
 confidence: ai-draft
@@ -37,21 +37,15 @@ The creation of the dock company marked a pivotal transition for Hong Kong from 
 - [[02_Entities/Places/aberdeen|Aberdeen (香港仔)]]
 - [[02_Entities/Places/hung-hom|Hung Hom (紅磡)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The exact formal incorporation date of July 1, 1863 as recorded in primary commercial registries.
-- ❔ The initial list of consolidated assets and founders involved in the formation of the company.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The exact formal incorporation date of July 1, 1863 as recorded in primary commercial registries. The text states the Hong Kong and Whampoa Dock Company was founded in 1866.
+- ❔ **not in Wikipedia**: The initial list of consolidated assets and founders involved in the formation of the company. The text identifies the founders as Douglas Lapraik and Thomas Sutherland but does not provide a list of consolidated assets.
 
-> [!abstract] Evidence grade: **A**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: Hong Kong and Whampoa Dock](https://en.wikipedia.org/wiki/Hong_Kong_and_Whampoa_Dock), [Wikipedia: Hongkong Electric Company](https://en.wikipedia.org/wiki/Hongkong_Electric_Company)
 
-### Primary sources (grade A)
-
-- [*Hong Kong Daily Press 1877-02-15* (1877), Internet Archive.](https://archive.org/details/NPDP18770215) (claims 1): The source explicitly mentions the 'HONGKONG AND WHAMPOA DOCK COMPANY LIMITED' in its title/note.
-
-**Still needed:** Primary source evidence or academic documentation specifically verifying the company's establishment date and founding details in 1863.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

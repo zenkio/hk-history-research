@@ -4,10 +4,11 @@ title_zh: "山頂纜車啟用"
 date: 1888-05-30
 year: 1888
 era: "The New Territories lease and the early 20th century"
-tags: ["1880s", "1888", "ai-draft", "colonial-history", "new-territories", "peak-tram", "transportation", "urban-development"]
+tags: ["evidence-none", "1880s", "1888", "ai-draft", "colonial-history", "new-territories", "peak-tram", "transportation", "urban-development"]
 summary: "On May 30, 1888, the Peak Tramway officially commenced operations, connecting the central business district of Hong Kong to Victoria Peak and transforming the geographic and social landscape of the colony."
 description: "On May 30, 1888, the Peak Tramway officially commenced operations, connecting the central business district of Hong Kong to Victoria Peak and transforming the geographic and social landscape of the colony."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,13 @@ The opening of the funicular railway fundamentally reshaped Hong Kong's urban ge
 - ❔ The Peak Tramway officially opened on May 30, 1888.
 - ❔ Sir George William Des Voeux officially inaugurated the tramway.
 - ❔ Alexander Findlay Smith held the primary franchise for the tramway's construction.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** A contemporary news report or official document from May 1888 that explicitly confirms the opening of the Peak Tramway on 1888-05-30.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

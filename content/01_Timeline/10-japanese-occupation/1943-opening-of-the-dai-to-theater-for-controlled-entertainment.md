@@ -4,10 +4,11 @@ title_zh: "大東戲院重開與統制娛樂"
 date: 1943-01-01
 year: 1943
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1943", "ai-draft", "cinema", "cultural-assimilation", "japanese-occupation", "propaganda", "world-war-ii"]
+tags: ["evidence-none", "1943", "ai-draft", "cinema", "cultural-assimilation", "japanese-occupation", "propaganda", "world-war-ii"]
 summary: "In May 1943, the Japanese occupation authorities reopened the former Pearl Theater as the Dai To Theater (大東戲院) to broadcast military propaganda and enforce cultural assimilation among the local population."
 description: "In May 1943, the Japanese occupation authorities reopened the former Pearl Theater as the Dai To Theater (大東戲院) to broadcast military propaganda and enforce cultural assimilation among the local population."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The opening of the Dai To Theater exemplifies the broader policy of total mobili
 
 - ❔ Did the Dai To Theater officially open specifically in May 1943?
 - ❔ Was the Dai To Theater the direct successor to the Pearl Theater?
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the opening of the Dai To Theater for Controlled Entertainment on January 1, 1943, is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

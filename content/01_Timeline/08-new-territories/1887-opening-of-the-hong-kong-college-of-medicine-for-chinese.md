@@ -4,10 +4,11 @@ title_zh: "香港華人西醫書院開辦"
 date: 1887-10-01
 year: 1887
 era: "The New Territories lease and the early 20th century"
-tags: ["1887", "ai-draft", "colonial-hong-kong", "higher-education", "london-missionary-society", "medical-history", "new-territories", "sun-yat-sen"]
+tags: ["evidence-a", "1887", "ai-draft", "colonial-hong-kong", "higher-education", "london-missionary-society", "medical-history", "new-territories", "sun-yat-sen"]
 summary: "Established in October 1887 by the London Missionary Society, the Hong Kong College of Medicine for Chinese provided formal Western medical training to local students and notably educated future revolutionary leader Sun Yat-sen."
 description: "Established in October 1887 by the London Missionary Society, the Hong Kong College of Medicine for Chinese provided formal Western medical training to local students and notably educated future revolutionary leader Sun…"
 confidence: ai-draft
+evidence_grade: A
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -43,5 +44,15 @@ The college represents a pivotal milestone in the history of Hong Kong education
 - ❔ The college officially opened around October 1887 under the auspices of the London Missionary Society.
 - ❔ Sun Yat-sen was among the inaugural or earliest cohorts of students at the institution.
 - ❔ The college eventually merged to become the Faculty of Medicine at the University of Hong Kong.
+
+## Evidence
+
+> [!abstract] Evidence grade: **A**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Primary sources (grade A)
+
+- [*Hong Kong Daily Press 1888-10-03* (1888), Internet Archive.](https://archive.org/details/NPDP18881003) (claims 1): It explicitly mentions the anniversary of the college's opening and its second year of existence in 1888.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

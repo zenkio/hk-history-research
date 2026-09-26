@@ -4,7 +4,7 @@ title_zh: "天主教香港監牧區之建立"
 date: 1841-04-22
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1841", "ai-draft", "apostolic-prefecture", "catholic-church", "colonial-history", "first-opium-war", "opium-war", "religion"]
+tags: ["wikipedia-checked", "evidence-none", "1841", "ai-draft", "apostolic-prefecture", "catholic-church", "colonial-history", "first-opium-war", "opium-war", "religion"]
 summary: "On April 22, 1841, Pope Gregory XVI established the Apostolic Prefecture of Hong Kong, separating the territory's Catholic administration from the Diocese of Macau and appointing Father Theodor Joset as its first prefect."
 description: "On April 22, 1841, Pope Gregory XVI established the Apostolic Prefecture of Hong Kong, separating the territory's Catholic administration from the Diocese of Macau and appointing Father Theodor Joset as its first…"
 confidence: ai-draft
@@ -41,17 +41,15 @@ The creation of the Apostolic Prefecture marked a pivotal moment in the institut
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 - [[02_Entities/Places/macau|Macau (澳門)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Pope Gregory XVI formally decreed the establishment of the Apostolic Prefecture of Hong Kong on April 22, 1841.
-- ❔ Father Theodor Joset was appointed as the first Prefect Apostolic of Hong Kong.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Pope Gregory XVI formally decreed the establishment of the Apostolic Prefecture of Hong Kong on April 22, 1841. The text states Pope Gregory XVI created the prefecture in 1841, but does not specify the exact date of April 22.
+- ✅ **agrees with Wikipedia**: Father Theodor Joset was appointed as the first Prefect Apostolic of Hong Kong. The text states that Theodore Joset became the first prefect apostolic.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Diocese of Hong Kong](https://en.wikipedia.org/wiki/Diocese_of_Hong_Kong)
 
-**Still needed:** Evidence specific to the establishment of the Apostolic Prefecture of Hong Kong in 1841 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

@@ -4,7 +4,7 @@ title_zh: "香港熱第一次大爆發"
 date: 1842-01-01
 year: 1842
 era: "Canton trade and the First Opium War"
-tags: ["evidence-none", "1842", "ai-draft", "british-military", "first-opium-war", "hong-kong-fever", "malaria", "opium-war", "public-health"]
+tags: ["wikipedia-checked", "evidence-none", "1842", "ai-draft", "british-military", "first-opium-war", "hong-kong-fever", "malaria", "opium-war", "public-health"]
 summary: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of the fledgling colony."
 description: "In June 1842, a devastating epidemic of malaria and other fevers swept through the newly established British garrison and early settlers on Hong Kong Island, claiming hundreds of lives and threatening the viability of…"
 confidence: ai-draft
@@ -43,17 +43,15 @@ The epidemic severely tested the resolve of the early British administration and
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/victoria-city|Victoria City (維多利亞城)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Exact mortality statistics for British troops during the June 1842 outbreak
-- ❔ Specific engineering and sanitation decrees issued by the colonial government in response to the epidemic
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Exact mortality statistics for British troops during the June 1842 outbreak. The text mentions a high death rate and soldiers succumbing to malaria, but provides no specific statistics or a June 1842 date.
+- ❔ **not in Wikipedia**: Specific engineering and sanitation decrees issued by the colonial government in response to the epidemic. The text mentions the redirection of the Wong Nai Chung river for horse-racing development, not as a sanitation decree in response to an epidemic.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Happy Valley, Hong Kong](https://en.wikipedia.org/wiki/Happy_Valley%2C_Hong_Kong)
 
-**Still needed:** Evidence regarding a major disease outbreak in Hong Kong occurring around 1842 is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

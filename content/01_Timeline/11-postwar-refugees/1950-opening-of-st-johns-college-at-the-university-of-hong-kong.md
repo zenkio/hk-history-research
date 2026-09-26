@@ -4,10 +4,11 @@ title_zh: "香港大學聖約翰學院開幕"
 date: 1950-01-01
 year: 1950
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1950", "ai-draft", "higher-education", "postwar-recovery", "postwar-refugees", "st-johns-college", "university-of-hong-kong"]
+tags: ["evidence-none", "1950", "ai-draft", "higher-education", "postwar-recovery", "postwar-refugees", "st-johns-college", "university-of-hong-kong"]
 summary: "In **1950**, the formal opening of St. John's College marked a pivotal moment in the revival of residential campus life and higher education at the University of Hong Kong following the severe disruptions of the Pacific War."
 description: "In 1950, the formal opening of St. John's College marked a pivotal moment in the revival of residential campus life and higher education at the University of Hong Kong following the severe disruptions of the Pacific War."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The establishment and reopening of collegiate housing in the early postwar years
 
 - ❔ Exact opening date and official ceremonies associated with St. John's College in 1950
 - ❔ The extent of wartime damage and the precise timeline of the rebuilding of St. John's College facilities
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the opening of St. John's College at the University of Hong Kong on January 1, 1950, is missing.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

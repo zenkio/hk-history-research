@@ -4,10 +4,11 @@ title_zh: "香港大學醫學會成立"
 date: 1923-01-01
 year: 1923
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1923", "ai-draft", "higher-education", "interwar", "interwar-period", "medical-history", "professional-networks", "public-health"]
+tags: ["evidence-none", "1923", "ai-draft", "higher-education", "interwar", "interwar-period", "medical-history", "professional-networks", "public-health"]
 summary: "Established in 1923, the University of Hong Kong Medical Society became a key professional and academic network for medical students and practitioners, advancing modern healthcare and public health standards in the territory."
 description: "Established in 1923, the University of Hong Kong Medical Society became a key professional and academic network for medical students and practitioners, advancing modern healthcare and public health standards in the…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The foundation of the Society marked an important milestone in the institutional
 
 - ❔ The University of Hong Kong Medical Society was formally established in 1923.
 - ❔ The Society served as a primary platform for medical students to discuss clinical cases and research.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the founding of the University of Hong Kong Medical Society in 1923 is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

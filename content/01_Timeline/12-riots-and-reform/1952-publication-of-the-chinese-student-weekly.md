@@ -4,10 +4,11 @@ title_zh: "中國學生週報之出版"
 date: 1952-07-27
 year: 1952
 era: "Riots and the MacLehose reforms"
-tags: ["1952", "ai-draft", "chinese-student-weekly", "hong-kong-history", "local-identity", "maclehose-era", "post-war-hong-kong", "riots-and-reform"]
+tags: ["evidence-none", "1952", "ai-draft", "chinese-student-weekly", "hong-kong-history", "local-identity", "maclehose-era", "post-war-hong-kong", "riots-and-reform"]
 summary: "First published on July 27, 1952, the Chinese Student Weekly became a pivotal cultural and intellectual platform for generations of Hong Kong youth, fostering a distinct local identity during the turbulent decades leading into the MacLehose era."
 description: "First published on July 27, 1952, the Chinese Student Weekly became a pivotal cultural and intellectual platform for generations of Hong Kong youth, fostering a distinct local identity during the turbulent decades…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ Although the magazine's active years slightly predated the peak of the 1960s rio
 
 - ❔ Exact founding date of July 27, 1952 for the Chinese Student Weekly
 - ❔ Full operational history and structural ties of the Hong Kong Student International Publishing Society
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically concerning the existence and content of the 'Chinese Student Weekly' publication from July 27, 1952, is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

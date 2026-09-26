@@ -4,10 +4,11 @@ title_zh: "香港中文大學創校"
 date: 1963-10-17
 year: 1963
 era: "Riots and the MacLehose reforms"
-tags: ["1963", "ai-draft", "chinese-university", "higher-education", "hong-kong-history", "maclehose-era", "riots-and-reform", "student-activism"]
+tags: ["evidence-none", "1963", "ai-draft", "chinese-university", "higher-education", "hong-kong-history", "maclehose-era", "riots-and-reform", "student-activism"]
 summary: "Established on October 17, 1963, the Chinese University of Hong Kong was created to provide higher education primarily in the Chinese medium, eventually becoming a major hub for local intellectual movements and social activism."
 description: "Established on October 17, 1963, the Chinese University of Hong Kong was created to provide higher education primarily in the Chinese medium, eventually becoming a major hub for local intellectual movements and social…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ CUHK filled a crucial gap by offering tertiary instruction in Chinese, shaping g
 
 - ❔ The Chinese University of Hong Kong was formally established on October 17, 1963.
 - ❔ The university initially integrated Chung Chi College, New Asia College, and United College under a federal structure.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the founding or official opening ceremony of the Chinese University of Hong Kong in October 1963.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

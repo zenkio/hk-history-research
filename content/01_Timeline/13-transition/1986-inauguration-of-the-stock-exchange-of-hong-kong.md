@@ -4,10 +4,11 @@ title_zh: "香港聯合交易所成立"
 date: 1986-04-02
 year: 1986
 era: "Sino-British negotiations and the transition"
-tags: ["1986", "ai-draft", "british-colonial-era", "economic-development", "financial-markets", "hong-kong-history", "stock-exchange", "transition"]
+tags: ["evidence-none", "1986", "ai-draft", "british-colonial-era", "economic-development", "financial-markets", "hong-kong-history", "stock-exchange", "transition"]
 summary: "On April 2, 1986, four separate stock exchanges merged to form the Stock Exchange of Hong Kong, marking a pivotal modernization of the city's financial infrastructure during the transitional period."
 description: "On April 2, 1986, four separate stock exchanges merged to form the Stock Exchange of Hong Kong, marking a pivotal modernization of the city's financial infrastructure during the transitional period."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The unification is widely regarded by economic historians as a turning point tha
 - ❔ Verify the specific date of the official opening of the unified exchange in 1986.
 - ❔ Confirm the official list of the four founding exchanges that comprised the merger.
 - ❔ Examine legislative records regarding the Stock Exchanges Unification Ordinance.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically confirming the inauguration of the Stock Exchange of Hong Kong on April 2, 1986, is required.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

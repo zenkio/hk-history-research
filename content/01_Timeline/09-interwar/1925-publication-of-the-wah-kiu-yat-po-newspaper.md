@@ -4,10 +4,11 @@ title_zh: "華僑日報創刊"
 date: 1925-01-01
 year: 1925
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["photo-corroborated", "1925", "ai-draft", "canton-hong-kong-strike", "chinese-language-media", "colonial-history", "interwar", "interwar-period", "wah-kiu-yat-po"]
+tags: ["evidence-none", "photo-corroborated", "1925", "ai-draft", "canton-hong-kong-strike", "chinese-language-media", "colonial-history", "interwar", "interwar-period", "wah-kiu-yat-po"]
 summary: "The founding of the Wah Kiu Yat Po in 1925 marked the emergence of a major Chinese-language voice in Hong Kong during a period of intense regional socio-political turbulence."
 description: "The founding of the Wah Kiu Yat Po in 1925 marked the emergence of a major Chinese-language voice in Hong Kong during a period of intense regional socio-political turbulence."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -62,6 +63,14 @@ Corroborates: It provides an example of the newspaper's content and its role as 
 
 *A newspaper clipping from the Wah Kiu Yat Po featuring a photograph and article about Mok Ping-ching, the 1959 Miss Hong Kong winner.* (document). 華僑日報（Wah Kiu Yat Po）記者司徒亮, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Miss_Hong_Kong_Pageant_1959_Winner_back_from_London_in_1961.jpg).
 Corroborates: It serves as a document and visual example of the publication mentioned in the text.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically regarding the founding, publication history, or content of the Wah Kiu Yat Po newspaper in 1925.
 
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

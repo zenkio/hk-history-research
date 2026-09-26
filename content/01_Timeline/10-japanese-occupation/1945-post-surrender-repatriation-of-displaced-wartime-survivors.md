@@ -4,10 +4,11 @@ title_zh: "投降後流離失所的戰時倖存者遣返"
 date: 1945-01-01
 year: 1945
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1945", "ai-draft", "british-military-administration", "japanese-occupation", "post-war-reconstruction", "refugees", "repatriation"]
+tags: ["evidence-none", "1945", "ai-draft", "british-military-administration", "japanese-occupation", "post-war-reconstruction", "refugees", "repatriation"]
 summary: "Following the liberation of Hong Kong in September 1945, British military administration and local authorities faced an immense humanitarian crisis in feeding, sheltering, and repatriating hundreds of thousands of displaced residents and refugees."
 description: "Following the liberation of Hong Kong in September 1945, British military administration and local authorities faced an immense humanitarian crisis in feeding, sheltering, and repatriating hundreds of thousands of…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The repatriation process marked the chaotic first phase of Hong Kong's postwar r
 
 - ❔ Precise population statistics of returning refugees in September 1945
 - ❔ Specific casualty and mortality rates in BMA-run refugee camps
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically addressing the repatriation of displaced wartime survivors in Hong Kong after the 1945 surrender is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

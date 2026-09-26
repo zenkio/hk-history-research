@@ -4,10 +4,11 @@ title_zh: "香港工會聯合會成立"
 date: 1948-04-20
 year: 1948
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1948", "ai-draft", "ftu", "labor-movement", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
+tags: ["evidence-none", "1948", "ai-draft", "ftu", "labor-movement", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
 summary: "The Hong Kong Federation of Trade Unions was established in 1948 amidst postwar economic hardship and rising political tensions, quickly emerging as a dominant force in local labor and leftist politics."
 description: "The Hong Kong Federation of Trade Unions was established in 1948 amidst postwar economic hardship and rising political tensions, quickly emerging as a dominant force in local labor and leftist politics."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The formation of the FTU marked a turning point in Hong Kong's social and politi
 
 - ❔ The exact founding date of the Hong Kong Federation of Trade Unions on April 20, 1948
 - ❔ The precise list of founding trade unions and their initial membership numbers
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically detailing the formation of the Hong Kong Federation of Trade Unions on April 20, 1948, is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

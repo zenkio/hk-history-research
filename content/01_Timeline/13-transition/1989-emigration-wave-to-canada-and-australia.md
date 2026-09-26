@@ -4,10 +4,11 @@ title_zh: "加拿大與澳洲移民潮"
 date: 1989-01-01
 year: 1989
 era: "Sino-British negotiations and the transition"
-tags: ["1989", "1989-crackdown", "ai-draft", "brain-drain", "diaspora", "emigration", "sino-british-negotiations", "transition", "transition-period"]
+tags: ["evidence-b", "1989", "1989-crackdown", "ai-draft", "brain-drain", "diaspora", "emigration", "sino-british-negotiations", "transition", "transition-period"]
 summary: "Following the events of 1989, Hong Kong experienced a significant exodus of professional talent as residents sought stability and residency in Commonwealth nations."
 description: "Following the events of 1989, Hong Kong experienced a significant exodus of professional talent as residents sought stability and residency in Commonwealth nations."
 confidence: ai-draft
+evidence_grade: B
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,17 @@ The mass emigration reshaped the social and demographic fabric of the city. Whil
 - ❔ Verify the specific annual emigration numbers for 1989-1992 reported by the Hong Kong government.
 - ❔ Confirm the impact of the 'astronaut' phenomenon on the 1990s civil service retention rates.
 - ❔ Check legislative records regarding the government's response to professional staff vacancies during the 1990-1992 period.
+
+## Evidence
+
+> [!abstract] Evidence grade: **B**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-26. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+
+### Scholarship (grade B)
+
+- [Wong Siu-Lun (1992). *Emigration and Stability in Hong Kong*. Asian Survey.](https://doi.org/10.2307/2645049) (claims 1): The source discusses the large-scale emigration and brain drain from Hong Kong during the period following 1989.
+
+**Still needed:** Evidence specifically linking the 1989 Hong Kong emigration wave to the destinations of Canada and Australia.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

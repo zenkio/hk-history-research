@@ -4,10 +4,11 @@ title_zh: "強制性公積金制度規劃"
 date: 1987-01-01
 year: 1987
 era: "Sino-British negotiations and the transition"
-tags: ["1987", "ai-draft", "colonial-policy", "hong-kong-history", "mpf", "retirement-planning", "social-welfare", "transition"]
+tags: ["evidence-none", "1987", "ai-draft", "colonial-policy", "hong-kong-history", "mpf", "retirement-planning", "social-welfare", "transition"]
 summary: "Beginning in 1987, the colonial administration initiated formal discussions on a compulsory retirement protection scheme to address the social security needs of an aging population ahead of the 1997 handover."
 description: "Beginning in 1987, the colonial administration initiated formal discussions on a compulsory retirement protection scheme to address the social security needs of an aging population ahead of the 1997 handover."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.1 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The initiation of these proposals in **1987** served as a cornerstone for late-c
 
 - ❔ The specific sequence of public consultation papers released between 1987 and 1992.
 - ❔ The official stance of major chambers of commerce regarding the initial 1987 proposals.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific legislative process, policy development, and historical implementation timeline of the Mandatory Provident Fund (MPF) in Hong Kong is needed.
+
 
 Part of: [[01_Timeline/13-transition/index|Sino-British negotiations and the transition]]

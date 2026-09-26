@@ -4,10 +4,11 @@ title_zh: "香港中華員生會成立"
 date: 1945-12-30
 year: 1945
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1945", "ai-draft", "civil-service", "colonial-administration", "labor-history", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
+tags: ["evidence-none", "1945", "ai-draft", "civil-service", "colonial-administration", "labor-history", "postwar-hong-kong", "postwar-refugees", "trade-unions"]
 summary: "The founding of the Hong Kong Chinese Civil Servants' Association in late 1945 marked a crucial early milestone in local labor organization and representation for Chinese employees within the colonial administration."
 description: "The founding of the Hong Kong Chinese Civil Servants' Association in late 1945 marked a crucial early milestone in local labor organization and representation for Chinese employees within the colonial administration."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ The establishment of the association is viewed by historians as an important wat
 
 - ❔ The Hong Kong Chinese Civil Servants' Association was formally established on December 30, 1945.
 - ❔ The association was founded specifically to advocate for local Chinese employees within the colonial administration during the post-war recovery period.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the establishment of the Hong Kong Chinese Civil Servants' Association on December 30, 1945, is still needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,7 +4,7 @@ title_zh: "雅麗氏紀念產科醫院開幕"
 date: 1904-06-03
 year: 1904
 era: "The New Territories lease and the early 20th century"
-tags: ["evidence-none", "1904", "ai-draft", "british-colony", "healthcare", "maternity-hospital", "medical-history", "new-territories"]
+tags: ["wikipedia-checked", "wikipedia-differs", "evidence-none", "1904", "ai-draft", "british-colony", "healthcare", "maternity-hospital", "medical-history", "new-territories"]
 summary: "On June 3, 1904, the Alice Memorial Maternity Hospital opened as Hong Kong's first dedicated maternity facility, significantly expanding maternal healthcare and training opportunities for Chinese midwives under colonial administration."
 description: "On June 3, 1904, the Alice Memorial Maternity Hospital opened as Hong Kong's first dedicated maternity facility, significantly expanding maternal healthcare and training opportunities for Chinese midwives under colonial…"
 confidence: ai-draft
@@ -37,17 +37,15 @@ The establishment of the hospital marked a pivotal moment in the modernization o
 
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Alice Memorial Maternity Hospital officially opened on June 3, 1904.
-- ❔ It was recognized as Hong Kong's first dedicated maternity hospital.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ⚠️ **differs from Wikipedia**: The Alice Memorial Maternity Hospital officially opened on June 3, 1904. The text states the hospital was opened on 7 July 1904.
+- ✅ **agrees with Wikipedia**: It was recognized as Hong Kong's first dedicated maternity hospital. The text states it was the first maternity hospital in Hong Kong.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Alice Ho Miu Ling Nethersole Hospital](https://en.wikipedia.org/wiki/Alice_Ho_Miu_Ling_Nethersole_Hospital), [Wikipedia: Old Tsan Yuk Maternity Hospital](https://en.wikipedia.org/wiki/Old_Tsan_Yuk_Maternity_Hospital)
 
-**Still needed:** Evidence specifically confirming the opening of the Alice Memorial Maternity Hospital on June 3, 1904.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

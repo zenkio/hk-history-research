@@ -4,10 +4,11 @@ title_zh: "屯門新市鎮發展"
 date: 1974-01-01
 year: 1974
 era: "Riots and the MacLehose reforms"
-tags: ["1974", "ai-draft", "decentralization", "housing", "maclehose-era", "new-towns", "riots-and-reform", "urban-planning"]
+tags: ["evidence-none", "1974", "ai-draft", "decentralization", "housing", "maclehose-era", "new-towns", "riots-and-reform", "urban-planning"]
 summary: "In **1974**, the colonial government formally initiated development on the Tuen Mun New Town, marking a cornerstone of Governor **Sir Murray MacLehose**'s ambitious decentralization strategy to alleviate severe inner-city congestion."
 description: "In 1974, the colonial government formally initiated development on the Tuen Mun New Town, marking a cornerstone of Governor Sir Murray MacLehose's ambitious decentralization strategy to alleviate severe inner-city…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -41,5 +42,13 @@ The opening and subsequent development of Tuen Mun New Town fundamentally reshap
 
 - ❔ The exact administrative milestones and dates marking the formal opening of Tuen Mun New Town in 1974.
 - ❔ Official population projections and initial housing targets set for Tuen Mun during its early planning stages.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the planning, development, or official opening of the Tuen Mun New Town in 1974 is required.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

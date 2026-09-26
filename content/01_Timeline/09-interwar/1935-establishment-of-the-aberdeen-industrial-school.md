@@ -4,10 +4,11 @@ title_zh: "香港仔工業學校的建立"
 date: 1935-01-01
 year: 1935
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1935", "ai-draft", "catholic-church", "interwar", "interwar-hong-kong", "juvenile-welfare", "social-welfare", "vocational-education"]
+tags: ["evidence-none", "1935", "ai-draft", "catholic-church", "interwar", "interwar-hong-kong", "juvenile-welfare", "social-welfare", "vocational-education"]
 summary: "In 1935, the Salesians of Don Bosco established the Aberdeen Industrial School to provide vocational training and welfare support for disadvantaged youth during a period of rapid population growth in Hong Kong."
 description: "In 1935, the Salesians of Don Bosco established the Aberdeen Industrial School to provide vocational training and welfare support for disadvantaged youth during a period of rapid population growth in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The founding of the school marked a notable development in the history of Hong K
 
 - ❔ The exact opening date and official naming records of the Aberdeen Industrial School in 1935 colonial administration and Salesian archival records.
 - ❔ The precise nature and extent of financial subsidies provided by the Hong Kong government to the Salesians for the school's establishment.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the founding and history of the Aberdeen Industrial School is required.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

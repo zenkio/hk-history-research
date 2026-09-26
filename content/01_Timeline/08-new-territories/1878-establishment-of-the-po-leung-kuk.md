@@ -4,10 +4,11 @@ title_zh: "保良局的成立"
 date: 1878-11-08
 year: 1878
 era: "The New Territories lease and the early 20th century"
-tags: ["1878", "ai-draft", "chinese-philanthropy", "colonial-history", "human-trafficking", "new-territories", "po-leung-kuk", "social-welfare"]
+tags: ["evidence-none", "1878", "ai-draft", "chinese-philanthropy", "colonial-history", "human-trafficking", "new-territories", "po-leung-kuk", "social-welfare"]
 summary: "Established in November 1878, the Po Leung Kuk was founded by local Chinese elites with colonial government support to combat the rampant kidnapping and trafficking of women and children in Hong Kong."
 description: "Established in November 1878, the Po Leung Kuk was founded by local Chinese elites with colonial government support to combat the rampant kidnapping and trafficking of women and children in Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ The founding of the Po Leung Kuk marked a crucial milestone in early Hong Kong h
 
 - ❔ The exact date of the formal establishment and petition approval by Governor John Pope Hennessy on November 8, 1878.
 - ❔ The precise original name and membership composition of the founding Chinese merchants.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the actual founding and establishment of the Po Leung Kuk in 1878 is needed.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

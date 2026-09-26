@@ -4,10 +4,11 @@ title_zh: "驅逐香港難民回廣東"
 date: 1942-01-01
 year: 1942
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1942", "ai-draft", "forced-evacuation", "hong-kong-history", "japanese-occupation", "refugees", "world-war-ii"]
+tags: ["evidence-none", "1942", "ai-draft", "forced-evacuation", "hong-kong-history", "japanese-occupation", "refugees", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong, occupation authorities forcibly deported over one million starving urban residents across the border to mainland China to alleviate severe local food shortages."
 description: "During the Japanese occupation of Hong Kong, occupation authorities forcibly deported over one million starving urban residents across the border to mainland China to alleviate severe local food shortages."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The forced evacuation stands as one of the most severe humanitarian disasters of
 
 - ❔ Exact total number of residents forcibly deported between 1942 and 1943
 - ❔ The precise administrative mechanism and level of local elite participation in executing the repatriation quotas
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the forced relocation or evacuation of destitute residents from Hong Kong to Guangdong during the Japanese occupation in 1942 is required.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

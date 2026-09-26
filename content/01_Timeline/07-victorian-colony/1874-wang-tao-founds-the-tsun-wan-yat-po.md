@@ -4,7 +4,7 @@ title_zh: "王韜創立循環日報"
 date: 1874-02-05
 year: 1874
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-none", "1874", "ai-draft", "chinese-journalism", "colonial-history", "late-qing-reform", "tsun-wan-yat-po", "victorian-colony", "wang-tao"]
+tags: ["wikipedia-checked", "evidence-none", "1874", "ai-draft", "chinese-journalism", "colonial-history", "late-qing-reform", "tsun-wan-yat-po", "victorian-colony", "wang-tao"]
 summary: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
 description: "In February 1874, the influential intellectual Wang Tao established the Tsun Wan Yat Po, marking a milestone as the first daily Chinese-owned and managed newspaper in Hong Kong."
 confidence: ai-draft
@@ -40,18 +40,16 @@ The founding of the *Tsun Wan Yat Po* is widely recognized as a turning point in
 - [[02_Entities/People/ng-choy|Ng Choy (伍才)]]
 - [[02_Entities/Places/hong-kong|Hong Kong (香港)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Tsun Wan Yat Po was the very first daily newspaper entirely owned and managed by Chinese in Hong Kong.
-- ❔ The exact launch date of the newspaper was February 5, 1874.
-- ❔ Ng Choy provided financial backing for the establishment of the newspaper.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Tsun Wan Yat Po was the very first daily newspaper entirely owned and managed by Chinese in Hong Kong. The text states it was the first Chinese daily newspaper in history, but does not mention ownership or management.
+- ✅ **agrees with Wikipedia**: The exact launch date of the newspaper was February 5, 1874. The text states that Wang Tao founded Tsun-wan yat-po on 5 February 1874.
+- ❔ **not in Wikipedia**: Ng Choy provided financial backing for the establishment of the newspaper. The reference text does not mention Ng Choy.
 
-> [!abstract] Evidence grade: **none**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-25; nothing relevant found yet.
+**Articles compared:** [Wikipedia: Wang Tao (translator)](https://en.wikipedia.org/wiki/Wang_Tao_%28translator%29)
 
-**Still needed:** Evidence confirming the founding of the Tsun Wan Yat Po by Wang Tao on February 5, 1874, is required.
-
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

@@ -4,7 +4,7 @@ title_zh: "衛生局之成立"
 date: 1883-06-05
 year: 1883
 era: "Kowloon and the Victorian colony"
-tags: ["evidence-b", "1883", "ai-draft", "colonial-history", "municipal-governance", "public-health", "sanitary-board", "urban-reform", "victorian-colony"]
+tags: ["wikipedia-checked", "evidence-b", "1883", "ai-draft", "colonial-history", "municipal-governance", "public-health", "sanitary-board", "urban-reform", "victorian-colony"]
 summary: "Established on June 5, 1883, the Sanitary Board marked Hong Kong's first formal step toward institutionalized municipal governance and public health reform amidst deteriorating sanitary conditions."
 description: "Established on June 5, 1883, the Sanitary Board marked Hong Kong's first formal step toward institutionalized municipal governance and public health reform amidst deteriorating sanitary conditions."
 confidence: ai-draft
@@ -40,19 +40,15 @@ Historians generally view the creation of the Sanitary Board as a critical precu
 - [[02_Entities/Places/hong-kong-island|Hong Kong Island (香港島)]]
 - [[02_Entities/Places/tai-ping-shan|Tai Ping Shan (太平山)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ The Sanitary Board was formally established on June 5, 1883 under the Public Health Ordinance.
-- ❔ The Board initially functioned as a departmental committee rather than an independent municipal council.
+> [!warning] Compared with Wikipedia by Gemma 4 26B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Research notes
+- ❔ **not in Wikipedia**: The Sanitary Board was formally established on June 5, 1883 under the Public Health Ordinance. The reference text does not mention the date of establishment or the Public Health Ordinance.
+- ❔ **not in Wikipedia**: The Board initially functioned as a departmental committee rather than an independent municipal council. The reference text does not describe the initial functional structure of the Board.
 
-> [!note] From Gemini Deep Research (01-1860-1898.md), imported 2026-09-25. References were checked automatically: ✓ the DOI/ISBN title matches or the link works, ✗ wrong or unreachable (treat with suspicion), ? not checkable (homepage, encyclopedia, archive reference). A working link does not by itself prove the claim: the page's evidence grade counts only archive and record links (A) and scholarly works (B).
+**Articles compared:** [Wikipedia: 1923 Hong Kong sanitary board election](https://en.wikipedia.org/wiki/1923_Hong_Kong_sanitary_board_election), [Wikipedia: 1917 Hong Kong sanitary board election](https://en.wikipedia.org/wiki/1917_Hong_Kong_sanitary_board_election)
 
-- **Grade A:** *Sanitary Board Ordinance*, HK Ordinance No. 7 of 1883, *Hong Kong Government Gazette*, April 1883; TNA CO 129/208. [link ✓](https://hkupress.hku.hk/image/catalog/pdf-preview/9789888139286.pdf) [link ✓](https://scholarlypublications.universiteitleiden.nl/access/item%3A4107987/view) [link ✗](https://brill.com/view/journals/arwh/8/1/article-p83\_6.xml?language=en) [archive ref ?](https://discovery.nationalarchives.gov.uk/results/r?_q=CO%20129/208)
-- **Grade B:** Evans, Dafydd (1972), "Chinatown Conditions in Early Hong Kong", *Journal of the Royal Asiatic Society Hong Kong Branch*, Vol. 12, pp. 150–178. [link ✓](https://www.cambridge.org/core/journals/modern-asian-studies/article/middlemen-colonial-officials-and-corruption-the-rise-and-fall-of-government-compradors-in-hong-kong-1840s1850s/3FEEB31B0048E26C7B6F30224939E41A) [link ✓](https://static1.squarespace.com/static/55c6cfc1e4b0ac80892866af/t/676820d5dc3ca37d5847fe81/1734877403377/MASTER+Index+Vols+1-64+BANHAM+2024.pdf)
-- **Grade C:** Food and Environmental Hygiene Department, "History of Public Health Governance", https://www.fehd.gov.hk. [site ?](https://www.fehd.gov.hk) [link ✗](https://www.emerald.com/stics/article/12/2/98/364326/A-night-soil-collection-point-the-public-toilets)
-
-**Disputes or myths:** Officials claimed the Board modernized hygiene smoothly, but Chinese landlords fiercely resisted its mandates, creating administrative paralysis over property rights and night-soil profits.
+_The compared articles cite no book or paper with a DOI/ISBN on this topic._
 
 Part of: [[01_Timeline/07-victorian-colony/index|Kowloon and the Victorian colony]]

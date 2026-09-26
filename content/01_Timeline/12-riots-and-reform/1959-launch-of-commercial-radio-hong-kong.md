@@ -4,10 +4,11 @@ title_zh: "香港商業廣播有限公司啟播"
 date: 1959-08-26
 year: 1959
 era: "Riots and the MacLehose reforms"
-tags: ["1950s", "1959", "ai-draft", "broadcasting-history", "cantonese-pop-culture", "commercial-radio", "mass-media", "riots-and-reform"]
+tags: ["evidence-none", "1950s", "1959", "ai-draft", "broadcasting-history", "cantonese-pop-culture", "commercial-radio", "mass-media", "riots-and-reform"]
 summary: "On August 26, 1959, Commercial Radio Hong Kong officially commenced broadcasting, introducing the territory's first major commercial radio competitor to Rediffusion and the state-backed Radio Hong Kong."
 description: "On August 26, 1959, Commercial Radio Hong Kong officially commenced broadcasting, introducing the territory's first major commercial radio competitor to Rediffusion and the state-backed Radio Hong Kong."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -38,5 +39,13 @@ The launch of Commercial Radio marked a watershed moment in Hong Kong media hist
 
 - ❔ Commercial Radio Hong Kong officially commenced broadcasting on August 26, 1959.
 - ❔ George Ho was the primary founder behind the establishment of the Hong Kong Commercial Broadcasting Company Limited.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence regarding the specific launch date and historical details of Commercial Radio Hong Kong in 1959 is needed.
+
 
 Part of: [[01_Timeline/12-riots-and-reform/index|Riots and the MacLehose reforms]]

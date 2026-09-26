@@ -4,10 +4,11 @@ title_zh: "人力車引入香港"
 date: 1874-01-01
 year: 1874
 era: "The New Territories lease and the early 20th century"
-tags: ["photo-corroborated", "1874", "ai-draft", "colonial-history", "new-territories", "public-transport", "rickshaw", "urban-mobility"]
+tags: ["evidence-none", "photo-corroborated", "1874", "ai-draft", "colonial-history", "new-territories", "public-transport", "rickshaw", "urban-mobility"]
 summary: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
 description: "First introduced in the 1870s from Japan, the rickshaw transformed urban mobility in Hong Kong by providing an affordable and flexible mode of public transport prior to the era of mechanized trams."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -45,6 +46,14 @@ The rickshaw revolutionized daily urban mobility in Hong Kong, serving as the ba
 
 *A photograph from the late 1860s showing a sedan chair and its operators on a waterfront in Hong Kong.* (contemporary photo). unknown, CC BY 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Peak,_Hong_Kong._Wellcome_L0055587.jpg).
 Corroborates: It provides visual context for the mode of public transport used in Hong Kong immediately before the introduction of the rickshaw.
+
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specific to the introduction and early history of rickshaws in Hong Kong is needed.
 
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

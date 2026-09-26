@@ -4,10 +4,11 @@ title_zh: "香港漁民秘密營救盟軍飛行員"
 date: 1944-01-01
 year: 1944
 era: "Battle of Hong Kong and the Japanese occupation"
-tags: ["1944", "ai-draft", "allied-airmen", "east-river-column", "japanese-occupation", "maritime-history", "resistance-movement", "world-war-ii"]
+tags: ["evidence-none", "1944", "ai-draft", "allied-airmen", "east-river-column", "japanese-occupation", "maritime-history", "resistance-movement", "world-war-ii"]
 summary: "During the Japanese occupation of Hong Kong in 1944, local fishermen and clandestine resistance networks risked their lives to shelter downed American pilots and smuggle them safely into Free China."
 description: "During the Japanese occupation of Hong Kong in 1944, local fishermen and clandestine resistance networks risked their lives to shelter downed American pilots and smuggle them safely into Free China."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ For decades, mainstream historical narratives primarily credited formal military
 
 - ❔ The precise number of American airmen rescued by local fishermen in Hong Kong waters during 1944
 - ❔ The exact coordination mechanisms between independent fishermen and the East River Column during maritime evacuations
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the rescue of Allied airmen by local fishermen in Hong Kong around January 1944 is needed.
+
 
 Part of: [[01_Timeline/10-japanese-occupation/index|Battle of Hong Kong and the Japanese occupation]]

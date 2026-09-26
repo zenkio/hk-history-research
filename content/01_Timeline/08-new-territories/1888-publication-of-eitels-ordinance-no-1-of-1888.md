@@ -4,10 +4,11 @@ title_zh: "1888年艾特爾第1號條例的頒布"
 date: 1888-01-01
 year: 1888
 era: "The New Territories lease and the early 20th century"
-tags: ["1888", "ai-draft", "colonial-history", "new-territories", "public-health", "spatial-segregation", "urban-planning"]
+tags: ["evidence-none", "1888", "ai-draft", "colonial-history", "new-territories", "public-health", "spatial-segregation", "urban-planning"]
 summary: "In **1888**, colonial authorities enacted Ordinance No. 1, largely shaped by Inspector of Schools **Ernest John Eitel**, formalizing residential separation policies that restricted Chinese residency in specific upscale districts of Hong Kong."
 description: "In 1888, colonial authorities enacted Ordinance No."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -40,5 +41,13 @@ This legislation marked a turning point in the urban development and social stra
 
 - ❔ Exact legislative wording and provisions of Ordinance No. 1 of 1888 regarding residential restrictions
 - ❔ The precise extent of Ernest John Eitel's authorship and influence over the final text of the ordinance
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically related to the publication or contents of Eitel's Ordinance No. 1 of 1888 is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

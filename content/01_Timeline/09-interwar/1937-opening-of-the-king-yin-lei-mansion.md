@@ -4,10 +4,11 @@ title_zh: "景賢里大宅落成"
 date: 1937-01-01
 year: 1937
 era: "Interwar Hong Kong: strikes, boycotts and growth"
-tags: ["1937", "ai-draft", "architecture", "colonial-history", "heritage-conservation", "interwar", "king-yin-lei", "mid-levels"]
+tags: ["evidence-none", "1937", "ai-draft", "architecture", "colonial-history", "heritage-conservation", "interwar", "king-yin-lei", "mid-levels"]
 summary: "Completed in 1937, the King Yin Lei mansion in Mid-Levels stands as a prominent example of Chinese Renaissance architecture, commissioned by wealthy industrialists during a period of economic growth in colonial Hong Kong."
 description: "Completed in 1937, the King Yin Lei mansion in Mid-Levels stands as a prominent example of Chinese Renaissance architecture, commissioned by wealthy industrialists during a period of economic growth in colonial Hong…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -47,5 +48,13 @@ King Yin Lei is widely recognized by architectural historians as a masterpiece o
 - ❔ The mansion was completed precisely in the year 1937.
 - ❔ Shum Tsik-sum and his wife commissioned the original construction under the name Yee Kuk.
 - ❔ Chan Gin-hip and Lee Ming-shu served as the principal architects for the estate.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence confirming the construction and opening date of the King Yin Lei Mansion is needed.
+
 
 Part of: [[01_Timeline/09-interwar/index|Interwar Hong Kong: strikes, boycotts and growth]]

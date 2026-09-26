@@ -4,10 +4,11 @@ title_zh: "戰後粵語電影制片廠制度的創立"
 date: 1952-01-01
 year: 1952
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1952", "ai-draft", "cantonese-cinema", "cultural-identity", "film-history", "postwar-recovery", "postwar-refugees", "refugees"]
+tags: ["evidence-none", "1952", "ai-draft", "cantonese-cinema", "cultural-identity", "film-history", "postwar-recovery", "postwar-refugees", "refugees"]
 summary: "Around 1952, the establishment of structured studio systems in Hong Kong marked the beginning of a golden age for local Cantonese filmmaking, providing a cultural outlet for a rapidly growing refugee population."
 description: "Around 1952, the establishment of structured studio systems in Hong Kong marked the beginning of a golden age for local Cantonese filmmaking, providing a cultural outlet for a rapidly growing refugee population."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -42,5 +43,13 @@ This emerging studio system catalyzed a golden age of post-war Cantonese cinema.
 
 - ❔ The precise timeline of how the post-war studio infrastructure consolidated around the year 1952
 - ❔ The extent of cross-migration of Shanghai and Guangzhou film personnel into the Hong Kong studio system
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence specifically documenting the founding of the Cantonese cinema studio system in 1952 is needed.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,10 +4,11 @@ title_zh: "荃灣成為香港首個衛星城市"
 date: 1958-01-01
 year: 1958
 era: "Postwar recovery, refugees and industrialisation"
-tags: ["1958", "ai-draft", "industrialisation", "new-territories", "postwar-hong-kong", "postwar-refugees", "satellite-town", "urban-planning"]
+tags: ["evidence-none", "1958", "ai-draft", "industrialisation", "new-territories", "postwar-hong-kong", "postwar-refugees", "satellite-town", "urban-planning"]
 summary: "In **1958**, the colonial government designated Tsuen Wan as Hong Kong's first satellite town, transforming a traditional rural and industrial area into a planned urban hub to accommodate rapid population growth and industrial expansion."
 description: "In 1958, the colonial government designated Tsuen Wan as Hong Kong's first satellite town, transforming a traditional rural and industrial area into a planned urban hub to accommodate rapid population growth and…"
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -39,5 +40,13 @@ Tsuen Wan's development marked a major turning point in Hong Kong's urban planni
 
 - ❔ The exact formal date or policy document in 1958 that designated Tsuen Wan as Hong Kong's first satellite town
 - ❔ The precise timeline of land reclamation and population growth in Tsuen Wan between 1950 and 1960
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence concerning the urban planning and development history of Tsuen Wan, specifically its designation and establishment as Hong Kong's first satellite town in the late 1950s.
+
 
 Part of: [[01_Timeline/11-postwar-refugees/index|Postwar recovery, refugees and industrialisation]]

@@ -4,10 +4,11 @@ title_zh: "天星小輪服務啟航"
 date: 1888-01-01
 year: 1888
 era: "The New Territories lease and the early 20th century"
-tags: ["1888", "ai-draft", "colonial-era", "new-territories", "star-ferry", "transport-history", "urban-development", "victoria-harbour"]
+tags: ["evidence-none", "1888", "ai-draft", "colonial-era", "new-territories", "star-ferry", "transport-history", "urban-development", "victoria-harbour"]
 summary: "The establishment of the cross-harbour ferry service in the late 19th century laid the foundation for modern urban integration between Hong Kong Island and the Kowloon Peninsula."
 description: "The establishment of the cross-harbour ferry service in the late 19th century laid the foundation for modern urban integration between Hong Kong Island and the Kowloon Peninsula."
 confidence: ai-draft
+evidence_grade: none
 draft_model: Gemini 3.5 Flash Lite
 ingested: 2026-09-23
 ---
@@ -44,5 +45,13 @@ The inauguration of the ferry service fundamentally transformed the daily integr
 
 - ❔ Dorabjee Naorojee Mithaiwala founded the initial cross-harbour ferry service in 1888.
 - ❔ The Star Ferry Company was formally incorporated in 1898 under the leadership of Catchick Paul Chater.
+
+## Evidence
+
+> [!abstract] Evidence grade: **none**
+> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), searched on 2026-09-26; nothing relevant found yet.
+
+**Still needed:** Evidence documenting the specific inauguration of the Star Ferry service in 1888 is required.
+
 
 Part of: [[01_Timeline/08-new-territories/index|The New Territories lease and the early 20th century]]

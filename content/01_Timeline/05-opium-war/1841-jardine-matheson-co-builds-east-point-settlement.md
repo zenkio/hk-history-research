@@ -4,7 +4,7 @@ title_zh: "渣甸洋行於東角建立聚落"
 date: 1841-01-01
 year: 1841
 era: "Canton trade and the First Opium War"
-tags: ["evidence-b", "1841", "ai-draft", "colonial-infrastructure", "east-point", "first-opium-war", "godowns", "jardine-matheson", "opium-war"]
+tags: ["wikipedia-checked", "evidence-b", "1841", "ai-draft", "colonial-infrastructure", "east-point", "first-opium-war", "godowns", "jardine-matheson", "opium-war"]
 summary: "In November **1841**, the prominent British trading house Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point, establishing private corporate dominance over the newly occupied territory's early infrastructure."
 description: "In November 1841, the prominent British trading house Jardine, Matheson & Co."
 confidence: ai-draft
@@ -43,21 +43,20 @@ The establishment of the **East Point** settlement marked a crucial moment in th
 - [[02_Entities/Places/canton|Canton (廣州)]]
 - [[02_Entities/Places/macau|Macau (澳門)]]
 
-## Claims to verify
+## Wikipedia cross-check
 
-- ❔ Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point in November 1841.
-- ❔ The land at East Point was acquired through the earliest government land sales conducted by the early British administration on Hong Kong Island.
+> [!warning] Compared with Wikipedia by Gemma 4 31B on 2026-09-26. Wikipedia can be edited by anyone, so agreement is not proof and does not raise the evidence grade. Where the two differ, either may be wrong: see the evidence section and the sources Wikipedia cites.
 
-## Evidence
+- ❔ **not in Wikipedia**: Jardine, Matheson & Co. completed the first substantial European stone godowns and wharves at East Point in November 1841. The text states Jardines were the first to build a house using brick and stone at East Point and mentions a warehouse dated 1843, but does not provide a completion date of November 1841.
+- ✅ **agrees with Wikipedia**: The land at East Point was acquired through the earliest government land sales conducted by the early British administration on Hong Kong Island. The text states that the first lots in Hong Kong were sold on 14 June 1841, and three of these at East Point were purchased by Jardines.
 
-> [!abstract] Evidence grade: **B**
-> Sources from the UK National Archives, Internet Archive (pre-1950 publications) and OpenAlex (scholarship), filtered for relevance by Gemma 4 26B on 2026-09-25. They are about this topic; they have not all been read in full, so individual claims above may still need checking.
+**Articles compared:** [Wikipedia: History of Jardine Matheson & Co.](https://en.wikipedia.org/wiki/History_of_Jardine_Matheson_%26_Co.)
 
-### Scholarship (grade B)
+**Sources Wikipedia cites** (DOI/ISBN checked against Crossref/Open Library; not yet read against the claims):
 
-- [Stan Neal (2015). *Jardine Matheson and Chinese Migration in the British Empire, 1833-1853*. Northumbria Research Link (Northumbria University).](https://openalex.org/W2762076288) (claims 1): It examines the activities of Jardine, Matheson & Co. during the exact period (1833-1853) the settlement was established.
-
-**Still needed:** Specific evidence documenting the construction and establishment of the East Point Settlement by Jardine, Matheson & Co.
-
+- ✓ [Jardine Matheson – Traders of the Far East](https://openlibrary.org/isbn/0297825011) (ISBN)
+- ✓ [Western Enterprise in Late Ch'ing China: A Selective Survey of Jardine, Matheson & Company's Operations, 1842–1895 in Harvard East Asian Monographs 26](https://openlibrary.org/isbn/9780674950108) (ISBN)
+- ✓ [The thistle and the jade:a celebration of 175 years of Jardine Matheson](https://openlibrary.org/isbn/9780711228306) (ISBN)
+- ✓ [A Business in Risk – Jardine Matheson and the Hong Kong Trading Industry](https://openlibrary.org/isbn/9780275980351) (ISBN)
 
 Part of: [[01_Timeline/05-opium-war/index|Canton trade and the First Opium War]]

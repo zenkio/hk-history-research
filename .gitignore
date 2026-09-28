@@ -1,0 +1,26 @@
+venv/
+node_modules/
+.env
+server.pid
+server.log
+pipeline.log
+public/
+__pycache__/
+quartz/.quartz-cache/
+
+# Data lives in the private repository zenkio/hk-history-data; never commit it here.
+content/
+research/
+04_Ingestion_Queue/
+drive/
+logs/
+scripts/state/
+scripts/seed_plan.json
+scripts/quota_state.json
+scripts/repaired_urls.json
+scripts/seen_urls.json
+BACKLOG.md
+PRODUCT.md
+GEMINI.md
+index.md
+index.html

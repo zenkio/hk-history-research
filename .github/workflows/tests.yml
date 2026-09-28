@@ -1,0 +1,56 @@
+name: Tests
+
+# The pipeline's unit and integration tests (offline, with fakes) plus the checks that read every
+# real page, run on the private content from zenkio/hk-history-data. Test output only names files
+# that fail a check.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the data repository
+        uses: actions/checkout@v4
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v4
+        with:
+          path: _code
+
+      # Catches workflow mistakes tests can't: bad expressions, invalid variable names.
+      - name: Lint workflows
+        run: |
+          pip install --quiet "actionlint-py>=1.7"
+          actionlint _code/.github/workflows/*.yml
+
+      # Unlike the pipeline, this job never commits, so the code's .gitignore comes too (a test reads it).
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude README.md \
+            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt -r requirements-dev.txt --quiet
+
+      - name: Every script compiles
+        run: python -m py_compile scripts/*.py
+
+      - name: Run tests
+        run: python -m pytest tests -q

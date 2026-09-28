@@ -1,0 +1,11 @@
+Copyright (c) 2026 Zenkio. All rights reserved.
+
+This repository's own code, content and data (everything outside the quartz/ folder,
+including content/, research/, scripts/ and scripts/state/) may not be copied, modified,
+redistributed or used for any purpose without written permission from the copyright holder.
+Viewing and forking on GitHub are allowed only as GitHub's Terms of Service require.
+
+The quartz/ folder is Quartz by Jacky Zhao, used under the MIT License: see quartz/LICENSE.txt.
+
+Third-party material quoted or linked on the site (photographs, archive records, publications)
+remains under its own licence or copyright, credited where it is used.

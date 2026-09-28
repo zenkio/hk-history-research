@@ -1,6 +1,6 @@
 # HK History Research: pipeline
 
-The code behind **[HK History Research](https://zenkio.github.io/hk-history-research/)**, a
+The code behind **[HK History Research](https://hkhistory.zenkio.uk/)**, a
 history of Hong Kong from 1841 to today in which every page carries an **evidence grade** and links
 to the archive records, newspapers and scholarship behind it.
 

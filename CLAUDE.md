@@ -34,7 +34,7 @@ RSS Feeds → fetch_sources.py → 04_Ingestion_Queue/
 
 **Automation (this repository's workflows):** every job checks out **hk-history-data as the working folder** (secret `DATA_REPO_TOKEN`: fine-grained, Contents read/write on hk-history-data only) and copies this repository's code on top (`rsync`, excluding `.git`, `.gitignore`, README, CLAUDE.md, LICENSE). The scripts therefore find `content/` and `scripts/state/` where they always did, and their `git push` goes to the data repository.
 - `.github/workflows/ingestion.yml` — the pipeline (fetch, repair, classify, seed; 45-minute seeding cap). **Off unless the repository variable `PIPELINE_ON_ACTIONS=on`**: it runs either here or on our own Oracle machine, never both (same quota, same branch). Script output goes to `$LOG`, saved by `scripts/save_log.sh` to the `logs` branch of hk-history-data (last 7 days, one commit, force-replaced), because public run logs would expose page names, queries and grades. A test checks every script step redirects.
-- `.github/workflows/deploy.yml` — builds Quartz from the data, trims the search index (`scripts/trim_search_index.py`: page text cut to its opening) and publishes to GitHub Pages at `zenkio.github.io/hk-history-research`, on push to main and every 3 hours. Only the built site is ever uploaded as an artifact (artifacts of a public repo are downloadable; a test checks).
+- `.github/workflows/deploy.yml` — builds Quartz from the data, trims the search index (`scripts/trim_search_index.py`: page text cut to its opening) and publishes to GitHub Pages at `hkhistory.zenkio.uk` (custom domain, set in Settings > Pages; DNS: CNAME `hkhistory` → `zenkio.github.io`), on push to main and every 3 hours. Only the built site is ever uploaded as an artifact (artifacts of a public repo are downloadable; a test checks).
 - `tests.yml` (every PR; `actionlint`, then pytest on the real content) and `site-build.yml` (full build when a PR touches the site setup).
 - Not open source: `LICENSE` reserves all rights outside `quartz/` (Quartz's MIT licence is `quartz/LICENSE.txt`).
 
@@ -66,7 +66,7 @@ python3 scripts/seed_history.py --minutes 30 --no-commit  # AI-draft history pag
 ## Quartz Configuration
 
 Site config is in `quartz.config.default.yaml`. Key settings:
-- `baseUrl`: `zenkio.github.io/hk-history-research`
+- `baseUrl`: `hkhistory.zenkio.uk` (must match the Pages custom domain; Quartz also writes it to `CNAME`)
 - `pageTitle`: `HK History Research`
 - Layout components are in `quartz.layout.ts`
 - Content files must be `.md` with YAML frontmatter

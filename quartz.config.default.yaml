@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: zenkio.github.io/hk-history-research
+  baseUrl: hkhistory.zenkio.uk
   ignorePatterns:
     - private
     - templates

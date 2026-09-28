@@ -1,0 +1,79 @@
+name: Deploy site
+
+# Builds the site from the private data repository (zenkio/hk-history-data) and publishes it to
+# GitHub Pages at zenkio.github.io/hk-history-research. The built pages are public anyway; the
+# Markdown, research notes and evidence state never leave the runner.
+#
+# The data repository is the working folder (Quartz reads content/ and its git history for page
+# dates); this repository's code is copied on top of it for the length of the job.
+# Secret DATA_REPO_TOKEN: fine-grained token, Contents read/write on hk-history-data only.
+
+on:
+  push:
+    branches: [main]
+  # The pipeline commits to the data repository, which cannot trigger this workflow: rebuild every 3 hours.
+  schedule:
+    - cron: '50 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the data repository
+        uses: actions/checkout@v4
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          fetch-depth: 0  # page dates come from git history
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v4
+        with:
+          path: _code
+
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
+            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run install-plugins
+      - run: npm run quartz -- build
+
+      # Quartz's search index holds the full text of every page; keep only the opening lines.
+      - name: Trim the search index
+        run: python3 scripts/trim_search_index.py public
+
+      - run: touch public/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  pages:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

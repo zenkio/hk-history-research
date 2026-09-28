@@ -1,0 +1,96 @@
+name: Pipeline
+
+# Runs the research pipeline on the private data repository (zenkio/hk-history-data): fetch RSS,
+# repair, classify, then evidence, Wikipedia cross-check, photos and drafting. Every change is
+# committed to the data repository, never to this one.
+#
+# Off unless the repository variable PIPELINE_ON_ACTIONS is "on": the pipeline runs either here or
+# on our own machine (Oracle), never both, because both would count the same AI quota and push
+# to the same branch. A manual run (Run workflow) always works.
+#
+# Run logs of a public repository are public, and the pipeline's output names pages, queries and
+# grades. So each step writes its output to a file that is saved to the `logs` branch of the data
+# repository (last 7 days, one commit, replaced each time); this log only shows which steps ran.
+
+on:
+  schedule:
+    # Hourly: Gemma is limited per minute, so every hour not running is capacity lost.
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  pipeline:
+    if: github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - name: Check out the data repository
+        uses: actions/checkout@v4
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}  # also lets the scripts push to it
+          fetch-depth: 0
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v4
+        with:
+          path: _code
+
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
+            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "LOG=$RUNNER_TEMP/$(date -u +%Y-%m-%d)-run-${{ github.run_id }}.log" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt --quiet
+
+      - name: Fetch new articles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/fetch_sources.py >> "$LOG" 2>&1
+
+      - name: Repair summaries and thin pages
+        run: python3 scripts/repair_content.py --commit >> "$LOG" 2>&1
+
+      - name: Classify and publish
+        timeout-minutes: 25
+        continue-on-error: true  # evidence and research import in the next step must still run
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
+        run: python3 scripts/process_ingestion.py >> "$LOG" 2>&1
+
+      - name: Evidence, cross-check, photos and drafting
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python3 scripts/seed_history.py --minutes 45 >> "$LOG" 2>&1
+
+      - name: Save the log to the data repository (branch logs)
+        if: always()
+        run: bash scripts/save_log.sh "$LOG"
+
+      - name: Where to read the details
+        if: failure()
+        run: echo "A step failed. The full output is on the logs branch of hk-history-data."

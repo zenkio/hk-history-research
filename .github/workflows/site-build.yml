@@ -1,0 +1,45 @@
+name: Site build check
+
+# For pull requests that touch the site setup: a full Quartz build of the real (private) content,
+# so a broken config or plugin is caught before it reaches the live site. Nothing is published.
+on:
+  pull_request:
+    paths: ["quartz/**", "quartz.*", "package.json", "package-lock.json", ".github/workflows/deploy.yml",
+            "scripts/trim_search_index.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the data repository
+        uses: actions/checkout@v4
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          fetch-depth: 0
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v4
+        with:
+          path: _code
+
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
+            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run install-plugins
+      - run: npm run quartz -- build
+      - run: python3 scripts/trim_search_index.py public

@@ -112,3 +112,20 @@ def test_robots_txt_blocks_ai_crawlers_and_is_published():
     for name in ("deploy.yml", "site-build.yml"):
         steps = workflow(name)["jobs"]["build"]["steps"]
         assert any("cp site/robots.txt public/robots.txt" in s.get("run", "") for s in steps), name
+
+
+# Oldest major version of each action that runs on Node 24. GitHub removed Node 20 from its
+# runners on 2026-09-23; older versions only ran because GitHub forced them onto Node 24, with a
+# deprecation warning in every run (owner, 2026-09-29).
+NODE24_MAJORS = {"actions/checkout": 5, "actions/setup-python": 6, "actions/setup-node": 5,
+                 "actions/upload-pages-artifact": 4, "actions/deploy-pages": 5}
+
+
+def test_workflows_use_actions_that_run_on_node24():
+    used = []
+    for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+        for name, major in re.findall(r"uses:\s*(actions/[\w-]+)@v(\d+)", open(path, encoding="utf-8").read()):
+            used.append(name)
+            assert name in NODE24_MAJORS, f"{name}: add its first Node 24 major to NODE24_MAJORS"
+            assert int(major) >= NODE24_MAJORS[name], f"{os.path.basename(path)}: {name}@v{major} runs on Node 20"
+    assert "actions/checkout" in used

@@ -32,14 +32,14 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Check out the data repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}
           fetch-depth: 0  # page dates come from git history
 
       - name: Check out this repository's code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: _code
 
@@ -49,7 +49,7 @@ jobs:
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -67,9 +67,7 @@ jobs:
       - name: Trim the search index
         run: python3 scripts/trim_search_index.py public
 
-      - run: touch public/.nojekyll
-
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -82,4 +80,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

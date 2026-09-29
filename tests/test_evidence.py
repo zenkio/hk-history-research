@@ -191,3 +191,35 @@ def test_audit_answered_by_the_same_model_is_not_recorded(write_page, monkeypatc
     judge_page(write_page, monkeypatch, timeline, [], [("OpenAlex", lambda q: [dict(B_PAPER)])],
                second_model="nemotron-ultra")
     assert state.load("evidence_audit") == {}
+
+
+# --- the event itself is claim 1 (PR #4: archive files named after the event could only be
+# background reading, so graded pages fell to none under JUDGE_VERSION 2) ---
+
+class PromptJudge(SaysJudge):
+    def generate_json(self, role, prompt, only=None, **k):
+        self.prompt = prompt
+        return super().generate_json(role, prompt, only=only, **k)
+
+
+def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_page, monkeypatch, timeline):
+    write_page("p.md", "Signing of the Treaty", 1900, claims=())
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+    pool = PromptJudge([{"id": "c1", "relation": "supports", "claims": [1], "why": "file on the treaty"}])
+    done = {}
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
+    assert "1. Signing of the Treaty took place in Hong Kong (1900)" in pool.prompt
+    assert "no explicit claims" not in pool.prompt
+    assert done == {"p.md": "A"}
+
+
+def test_pages_left_with_only_background_reading_are_judged_again_once(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 2})
+    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards the grade)\n\n- x\n")
+    write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
+    write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
+    done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
+    assert ev.reopen_for_rejudge(done) == 1
+    assert done == {"empty.md": "none", "graded.md": "B"}
+    done["bg.md"] = "none"
+    assert ev.reopen_for_rejudge(done) == 0  # only once per JUDGE_VERSION

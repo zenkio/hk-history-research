@@ -63,6 +63,11 @@ the general subject is not evidence for a specific event (a study of Chinese anc
 not evidence for one Hong Kong ancestral hall; a history of the Qing collapse is not evidence for
 what happened in Hong Kong in 1911). When unsure, leave it out.
 
+Claim 1 is the event itself. An archive record or contemporary publication whose title or note
+shows it documents this event, or a scholarly work specifically about this event, supports claim 1
+(and any other claim its title or note bears on). A work that only mentions the event in passing is
+background.
+
 For each kept candidate, judging only from its title and note:
 - "relation": "supports" if it bears directly on one or more numbered claims and agrees with them;
   "contradicts" if it bears on a claim and disagrees (e.g. a different date, place or outcome);
@@ -283,6 +288,13 @@ def search_summary(query, candidates, failed, kept):
     return f'  [evidence] "{query}": {", ".join(counts)}; {judged}'
 
 
+def event_claims(title, date, claims):
+    """The page's claims, led by the event itself. Without it an archive file named after the event
+    could only be background (the judge found no detailed claim its title confirms), and a page with
+    no claims list could never earn a grade."""
+    return [f"{title} took place in Hong Kong ({date})"] + list(claims)
+
+
 def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
     source failed and nothing was found, so the page is not wrongly recorded as searched."""
@@ -302,7 +314,7 @@ def evidence_for_page(pool, path):
         c["id"] = f"c{i}"
     listing = "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}"
                         for c in candidates)
-    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(claims, 1)) or "(no explicit claims; judge by topic)"
+    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
     kept = judged(data, candidates)
@@ -384,29 +396,38 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 2  # 2: supports / contradicts / background; background no longer earns a grade
+JUDGE_VERSION = 3  # 2: supports / contradicts / background; background no longer earns a grade
+# 3: claim 1 is the event itself, so a record or study of this event counts again
+
+
+def _to_rejudge(version, grade, text):
+    """Whether a page should be judged again, given the JUDGE_VERSION last applied."""
+    if version < 2 and grade in ("A", "B") and "\n## Evidence\n" in text:
+        return True  # graded under the looser rule
+    return version < 3 and grade == "none" and "\n### Background reading" in text  # kept, none could count
 
 
 def reopen_for_rejudge(done_map):
-    """Once per JUDGE_VERSION, judge again the pages this engine graded A or B under the older, looser
-    rule. Pages whose grade came from Deep Research notes are left alone: re-judging them would
+    """Once per JUDGE_VERSION, judge again the pages the older rule may have got wrong (`_to_rejudge`).
+    Pages whose grade came from Deep Research notes are left alone: re-judging them would
     overwrite a grade this engine did not give."""
     import state
     meta = state.load("evidence_meta")
-    if meta.get("judge_version", 1) >= JUDGE_VERSION:
+    version = meta.get("judge_version", 1)
+    if version >= JUDGE_VERSION:
         return 0
     reopened = []
     for rel, grade in list(done_map.items()):
         path = os.path.join(TIMELINE_DIR, rel)
-        if grade not in ("A", "B") or not os.path.exists(path):
+        if grade not in ("A", "B", "none") or not os.path.exists(path):
             continue
         text = read_page(path)[0]
-        if "\n## Evidence\n" in text and "\n## Research notes\n" not in text:
+        if _to_rejudge(version, grade, text) and "\n## Research notes\n" not in text:
             del done_map[rel]
             reopened.append(rel)
     meta["judge_version"] = JUDGE_VERSION
     state.save("evidence_meta", meta)
-    print(f"[evidence] {len(reopened)} graded pages will be judged again under the stricter rule")
+    print(f"[evidence] {len(reopened)} pages will be judged again under the new rule")
     return len(reopened)
 
 

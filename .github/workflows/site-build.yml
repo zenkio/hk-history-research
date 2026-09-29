@@ -42,4 +42,9 @@ jobs:
       - run: npm ci
       - run: npm run install-plugins
       - run: npm run quartz -- build
+
+      # Asks AI crawlers not to collect the pages; search engines stay welcome. Quartz only
+      # publishes content, so the file is copied to the site root here.
+      - name: Add robots.txt
+        run: cp site/robots.txt public/robots.txt
       - run: python3 scripts/trim_search_index.py public

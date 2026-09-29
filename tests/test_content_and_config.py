@@ -98,3 +98,17 @@ def test_site_address_is_the_custom_domain():
     # The site moved to its own domain (2026-09-28); baseUrl feeds the sitemap, RSS, previews and CNAME.
     cfg = open(os.path.join(ROOT, "quartz.config.default.yaml"), encoding="utf-8").read()
     assert re.search(r"^  baseUrl: hkhistory\.zenkio\.uk$", cfg, re.M)
+
+
+def test_robots_txt_blocks_ai_crawlers_and_is_published():
+    # Owner, 2026-09-29: the content is the asset; ask AI crawlers not to collect it.
+    text = open(os.path.join(ROOT, "site", "robots.txt"), encoding="utf-8").read()
+    groups = [g for g in text.split("\n\n") if "User-agent" in g]
+    blocked = next(g for g in groups if "Disallow: /" in g)
+    for bot in ("GPTBot", "ClaudeBot", "CCBot", "Google-Extended", "PerplexityBot", "Bytespider"):
+        assert f"User-agent: {bot}\n" in blocked + "\n", bot
+    assert "User-agent: Googlebot" not in text, "search engines must stay allowed"
+    assert "Sitemap: https://hkhistory.zenkio.uk/sitemap.xml" in text
+    for name in ("deploy.yml", "site-build.yml"):
+        steps = workflow(name)["jobs"]["build"]["steps"]
+        assert any("cp site/robots.txt public/robots.txt" in s.get("run", "") for s in steps), name

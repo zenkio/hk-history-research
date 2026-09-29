@@ -92,3 +92,9 @@ def test_public_repo_ignores_every_data_path():
     for path in ("content/", "research/", "04_Ingestion_Queue/", "scripts/state/", "scripts/seed_plan.json",
                  "scripts/quota_state.json", "BACKLOG.md", "PRODUCT.md", "logs/"):
         assert path in ignored, path
+
+
+def test_site_address_is_the_custom_domain():
+    # The site moved to its own domain (2026-09-28); baseUrl feeds the sitemap, RSS, previews and CNAME.
+    cfg = open(os.path.join(ROOT, "quartz.config.default.yaml"), encoding="utf-8").read()
+    assert re.search(r"^  baseUrl: hkhistory\.zenkio\.uk$", cfg, re.M)

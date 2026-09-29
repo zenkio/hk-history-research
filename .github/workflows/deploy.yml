@@ -1,8 +1,9 @@
 name: Deploy site
 
 # Builds the site from the private data repository (zenkio/hk-history-data) and publishes it to
-# GitHub Pages at zenkio.github.io/hk-history-research. The built pages are public anyway; the
-# Markdown, research notes and evidence state never leave the runner.
+# GitHub Pages at hkhistory.zenkio.uk (custom domain; the old zenkio.github.io address redirects to
+# it). The built pages are public anyway; the Markdown, research notes and evidence state never
+# leave the runner.
 #
 # The data repository is the working folder (Quartz reads content/ and its git history for page
 # dates); this repository's code is copied on top of it for the length of the job.

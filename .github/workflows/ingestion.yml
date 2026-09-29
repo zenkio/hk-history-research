@@ -35,14 +35,14 @@ jobs:
     timeout-minutes: 75
     steps:
       - name: Check out the data repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}  # also lets the scripts push to it
           fetch-depth: 0
 
       - name: Check out this repository's code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: _code
 
@@ -55,7 +55,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "LOG=$RUNNER_TEMP/$(date -u +%Y-%m-%d)-run-${{ github.run_id }}.log" >> "$GITHUB_ENV"
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip

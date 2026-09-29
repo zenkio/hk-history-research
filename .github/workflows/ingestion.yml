@@ -14,14 +14,16 @@ name: Pipeline
 
 on:
   schedule:
-    # Hourly: Gemma is limited per minute, so every hour not running is capacity lost.
-    # Minute 17, not near :00: GitHub drops scheduled runs under load at the top of the hour,
-    # and ':05' fired once in seven hours on 2026-09-29 (Deploy at ':50' kept firing).
+    # Gemma is limited per minute, so every hour not running is capacity lost. GitHub drops most
+    # scheduled runs of this repository (on 2026-09-29: 2 of 14 hourly runs, 3 of 5 deploys), so each
+    # successful run queues the next one (last step); this schedule only restarts the chain after a
+    # failure. Minute 17 keeps clear of the busiest time, the top of the hour.
     - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: write  # only to queue the next run (last step)
 
 concurrency:
   group: pipeline
@@ -92,6 +94,15 @@ jobs:
       - name: Save the log to the data repository (branch logs)
         if: always()
         run: bash scripts/save_log.sh "$LOG"
+
+      # Scheduled runs are unreliable here, so the pipeline keeps itself going: a successful run
+      # queues the next (the concurrency group makes it wait). Only while switched on; a failed run
+      # ends the chain, and the schedule starts it again. GITHUB_TOKEN may start workflow_dispatch.
+      - name: Queue the next run
+        if: success() && vars.PIPELINE_ON_ACTIONS == 'on'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ingestion.yml --repo "$GITHUB_REPOSITORY" --ref main
 
       - name: Where to read the details
         if: failure()

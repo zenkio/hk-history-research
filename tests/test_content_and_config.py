@@ -44,6 +44,25 @@ def test_pipeline_is_off_unless_switched_on():
         "github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'"
 
 
+
+def test_scheduled_runs_avoid_the_top_of_the_hour():
+    # GitHub drops scheduled runs under load near :00; ':05' fired once in seven hours (PR #5).
+    for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+        for minute in re.findall(r"cron:\s*'(\S+) ", open(path, encoding="utf-8").read()):
+            assert minute.isdigit() and 10 <= int(minute) <= 50, f"{os.path.basename(path)}: minute {minute}"
+
+
+def test_pipeline_queues_its_next_run_only_while_switched_on():
+    # GitHub dropped 12 of 14 scheduled runs on 2026-09-29 (PR #5): each successful run queues the
+    # next, but never while the pipeline runs elsewhere, and never after a failure (no retry loop).
+    wf = workflow("ingestion.yml")
+    step = wf["jobs"]["pipeline"]["steps"][-2]
+    assert step["name"] == "Queue the next run"
+    assert step["if"] == "success() && vars.PIPELINE_ON_ACTIONS == 'on'"
+    assert "gh workflow run ingestion.yml" in step["run"] and "--ref main" in step["run"]
+    assert wf["permissions"] == {"contents": "read", "actions": "write"}
+    assert wf["concurrency"]["cancel-in-progress"] is False  # the queued run waits, never cancels
+
 def test_workflows_publish_nothing_but_the_built_site():
     # Artifacts of a public repository can be downloaded by anyone: only the built site may be uploaded.
     for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):

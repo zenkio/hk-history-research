@@ -44,6 +44,13 @@ def test_pipeline_is_off_unless_switched_on():
         "github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'"
 
 
+
+def test_scheduled_runs_avoid_the_top_of_the_hour():
+    # GitHub drops scheduled runs under load near :00; ':05' fired once in seven hours (PR #5).
+    for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+        for minute in re.findall(r"cron:\s*'(\S+) ", open(path, encoding="utf-8").read()):
+            assert minute.isdigit() and 10 <= int(minute) <= 50, f"{os.path.basename(path)}: minute {minute}"
+
 def test_workflows_publish_nothing_but_the_built_site():
     # Artifacts of a public repository can be downloaded by anyone: only the built site may be uploaded.
     for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):

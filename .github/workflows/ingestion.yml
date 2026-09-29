@@ -15,7 +15,9 @@ name: Pipeline
 on:
   schedule:
     # Hourly: Gemma is limited per minute, so every hour not running is capacity lost.
-    - cron: '5 * * * *'
+    # Minute 17, not near :00: GitHub drops scheduled runs under load at the top of the hour,
+    # and ':05' fired once in seven hours on 2026-09-29 (Deploy at ':50' kept firing).
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:

@@ -58,6 +58,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "LOG=$RUNNER_TEMP/$(date -u +%Y-%m-%d)-run-${{ github.run_id }}.log" >> "$GITHUB_ENV"
+          echo "RUN_STARTED=$(date +%s)" >> "$GITHUB_ENV"
 
       - uses: actions/setup-python@v7
         with:
@@ -99,11 +100,19 @@ jobs:
       # Scheduled runs are unreliable here, so the pipeline keeps itself going: a successful run
       # queues the next (the concurrency group makes it wait). Only while switched on; a failed run
       # ends the chain, and the schedule starts it again. GITHUB_TOKEN may start workflow_dispatch.
+      # Only a busy run (20+ minutes) queues the next: an idle one takes 2 minutes, and queueing
+      # after it started 317 runs on 2026-09-30. With nothing to do, the hourly schedule is enough.
       - name: Queue the next run
         if: success() && vars.PIPELINE_ON_ACTIONS == 'on'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run ingestion.yml --repo "$GITHUB_REPOSITORY" --ref main
+        run: |
+          minutes=$(( ($(date +%s) - RUN_STARTED) / 60 ))
+          if [ "$minutes" -lt 20 ]; then
+            echo "This run took $minutes minutes, so there was little to do: the next run waits for the schedule."
+          else
+            gh workflow run ingestion.yml --repo "$GITHUB_REPOSITORY" --ref main
+          fi
 
       - name: Where to read the details
         if: failure()

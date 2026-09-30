@@ -32,6 +32,7 @@ import urllib.request
 from datetime import datetime
 
 from gemini_pool import QuotaExhausted, RequestRejected
+import jev
 from state import PAGE_LOCK, atomic_write
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -324,6 +325,9 @@ def evidence_for_page(pool, path):
         return "retry"  # a source we could not search may still hold evidence
     if _rng.random() < AUDIT_SHARE:
         audit(pool, path, prompt, candidates, kept, model)
+    if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
+        _jev_count[0] += 1
+        jev_audit(path, title, date, claims, candidates, kept, model)
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 
@@ -374,6 +378,59 @@ def audit(pool, path, prompt, candidates, kept, model):
           f"{rec['same']}/{rec['candidates']} candidates judged the same")
     return rec
 
+
+
+# FreeJev as a third, independent judge (a pilot, 2026-09-30): the same question as the evidence
+# judge, one Choice per search result, with probabilities. Recorded next to the LLM audits so the two
+# can be compared; the page keeps the first judge's decision. Free credits are finite (about 6 per
+# page), hence the share and the per-run cap.
+JEV_SHARE = 0.15
+JEV_PAGES_PER_RUN = 4
+_jev_count = [0]
+JEV_CRITERIA = {
+    "out": "Not about this event: a different event, place or period, or only the general subject.",
+    "background": "About this event, but bears on none of the numbered claims.",
+    "supports": "Bears on a numbered claim and agrees with it. A record or study of this event supports claim 1.",
+    "contradicts": "Bears on a numbered claim and disagrees with it (a different date, place or outcome).",
+}
+
+
+def jev_audit(path, title, date, claims, candidates, kept, model):
+    """Judge the same search results with Jev and record the agreement in evidence_audit.json ("jev")."""
+    import state
+    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
+    labels, probs = {}, []
+    for start in range(0, len(candidates), jev.MAX_QUESTIONS):
+        chunk = candidates[start:start + jev.MAX_QUESTIONS]
+        page = (f"Page of a Hong Kong history website: {title} ({date})\nClaims:\n{claim_text}\n\n"
+                "Search results (id | type | year | title | note):\n"
+                + "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}" for c in chunk))
+        questions = {c["id"]: {"type": "choice", "criteria": JEV_CRITERIA,
+                               "instructions": f"Judging only from its title and note, how does search result {c['id']} relate to this page?"}
+                     for c in chunk}
+        answers = jev.decide(page, questions)
+        if answers is None:
+            return None
+        for c in chunk:
+            got = jev.choice_of(answers.get(c["id"]), JEV_CRITERIA)
+            if got is None:
+                print(f"  [jev] unreadable answer for {c['id']}: {jev.shape(answers.get(c['id']))}")
+                return None
+            labels[c["id"]], p = got
+            if p is not None:
+                probs.append(p)
+    jev_kept = [dict(c, relation=labels[c["id"]]) for c in candidates if labels[c["id"]] != "out"]
+    first, second = decisions(kept, candidates), [labels[c["id"]] for c in candidates]
+    rec = {"page": os.path.relpath(path, TIMELINE_DIR), "date": datetime.now().strftime("%Y-%m-%d"),
+           "models": [model, "Jev"], "grades": [grade_of(kept), grade_of(jev_kept)],
+           "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second)),
+           "mean_probability": round(sum(probs) / len(probs), 3) if probs else None}
+    log = state.load("evidence_audit")
+    log.setdefault("jev", []).append(rec)
+    state.save("evidence_audit", log)
+    print(f"  [jev] audit: grade {rec['grades'][1]} vs {rec['grades'][0]}, {rec['same']}/{rec['candidates']} "
+          f"results judged the same" + (f", mean confidence {rec['mean_probability']:.2f}" if probs else ""))
+    return rec
 
 MAX_RETRIES_PER_RUN = 20  # pages left for later before the batch gives up on a failing source
 SEARCH_VERSION = 3  # 2: failed sources no longer mark a page as searched; 3: descriptive words dropped from queries

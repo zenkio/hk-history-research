@@ -89,6 +89,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          FREEJEV_API_KEY: ${{ secrets.FREEJEV_API_KEY }}
         run: python3 scripts/seed_history.py --minutes 45 >> "$LOG" 2>&1
 
       - name: Save the log to the data repository (branch logs)

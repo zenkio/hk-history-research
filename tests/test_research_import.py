@@ -139,3 +139,36 @@ def test_regrade_removes_notes_a_looser_matcher_put_on_the_wrong_page(tmp_path, 
     text = triad.read_text()
     assert "## Research notes" not in text and "evidence_grade: none" in text
     assert state.load("research")["grading_version"] == ri.GRADING_VERSION
+
+
+# --- saving imports (PR #9) ---------------------------------------------------------------------
+# Drafting was finished, so seed_history never committed: every run since 2026-09-30 imported the
+# inbox again and threw the result away. And a prose file with no table would have vanished into done/.
+
+TABLE = ("| # | Event | Date (YYYY or YYYY-MM-DD) | What happened (one sentence) | Grade A source |\n"
+         "|---|---|---|---|---|\n| 1 | Opening of a ferry pier | 1999 | x | none |\n")
+
+
+def test_prose_file_without_a_table_stays_in_the_inbox(tmp_path, monkeypatch, capsys):
+    inbox = tmp_path / "inbox"
+    inbox.mkdir()
+    monkeypatch.setattr(ri, "INBOX", str(inbox))
+    monkeypatch.setattr(ri, "UNMATCHED", str(tmp_path / "unmatched.md"))
+    (inbox / "prose.md").write_text("An essay about the period, with sources but no table.", encoding="utf-8")
+    (inbox / "table.md").write_text(TABLE, encoding="utf-8")
+    ri.import_inbox(EVENTS, {})
+    assert (inbox / "prose.md").exists(), "nothing could be imported, so it must not disappear"
+    assert (inbox / "done" / "table.md").exists() and not (inbox / "table.md").exists()
+    assert "prose.md: no table with an Event column found; left in the inbox" in capsys.readouterr().out
+
+
+def test_seeding_commits_even_when_no_page_was_drafted(monkeypatch):
+    import seed_history
+    commits = []
+    monkeypatch.setenv("OPENROUTER_API_KEY", "or-key")
+    monkeypatch.setattr(seed_history, "run", lambda *a, **k: 0)  # drafting finished: 0 tasks
+    monkeypatch.setattr(seed_history, "git_commit", lambda: commits.append(1))
+    seed_history.main(["--minutes", "1"])
+    assert commits == [1], "imports and evidence from the workers must be saved"
+    seed_history.main(["--minutes", "1", "--no-commit"])
+    assert commits == [1]

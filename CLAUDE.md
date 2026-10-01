@@ -119,9 +119,17 @@ python -m pytest tests -q
 - Locally: copy the code over a clone of hk-history-data (`tar` or `rsync`, excluding `.git`) and run
   `python -m pytest tests -q` there; in this repository alone the content checks find no pages.
 
+## Working with the owner
+
+- **Ask before implementing when in doubt.** If a request is ambiguous, a choice is the owner's to make
+  (naming, scope, cost, anything visible on the site), or you are unsure what was meant (even a
+  possible typo), say so and ask first. Asking costs one message; a wrong guess costs a PR, a review
+  and a revert.
+
 ## Git workflow
 
 - Code changes are pull requests here; content, research and backlog changes are pull requests in hk-history-data.
+  Both repositories follow the same rules below (branch names included).
 - The owner reviews and merges every pull request; Claude opens them and never pushes to `main`.
 - **At most one open pull request from Claude at a time** (across both repositories). While it is open, add further work to
   that same branch (it is not merged yet) and update its description; don't open a second one.

@@ -664,14 +664,21 @@ def git_commit():
     print("Git push completed.")
 
 
+def any_ai_key():
+    """Google or OpenRouter: without Google (Google key rejected from 2026-09-30) evidence and the
+    Wikipedia cross-check still run on OpenRouter."""
+    from gemini_pool import OPENROUTER_KEY_NAMES
+    return any((os.environ.get(n) or "").strip() for n in ("GEMINI_API_KEY",) + OPENROUTER_KEY_NAMES)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--max-calls", type=int, default=10_000, help="stop after this many tasks")
     ap.add_argument("--minutes", type=float, default=120, help="stop after this many minutes")
     ap.add_argument("--no-commit", action="store_true", help="write files but skip git commit/push")
     args = ap.parse_args()
-    if not os.environ.get("GEMINI_API_KEY"):
-        sys.exit("GEMINI_API_KEY is not set")
+    if not any_ai_key():
+        sys.exit("No AI key set (GEMINI_API_KEY, OPENROUTER_API_KEY or OPEN_ROUTER_KEY_RESEARCHER)")
     ran = run(args.max_calls, args.minutes, commit=not args.no_commit)
     if ran and not args.no_commit:
         git_commit()

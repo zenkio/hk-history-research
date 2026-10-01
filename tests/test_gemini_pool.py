@@ -110,3 +110,75 @@ def test_real_config_routes_evidence_and_verify_to_the_large_models_first():
         assert cfg["routing"][role][:2] == ["OpenRouter Large", "OpenRouter Medium"], role
     openrouter_rpm = sum(m["rpm"] for m in cfg["models"] if m.get("provider") == "openrouter")
     assert openrouter_rpm < 20, "OpenRouter's per-minute free limit is shared by the account"
+
+
+# --- Google unavailable (Google key rejected from 2026-09-30; PR #8) --------------------------------
+# Every run kept sending rejected calls: a model list, then each Gemini/Gemma model in turn.
+
+GOOGLE_AND_OR = {"Gemini 3.1 Flash Lite": {"provider": "google"}, "Gemma 4 31B": {"provider": "google"},
+                 "OpenRouter Medium": {"provider": "openrouter"}}
+
+
+def real_pool(monkeypatch, tmp_path, client=None, key=None):
+    monkeypatch.setattr(gp, "STATE_FILE", str(tmp_path / "quota_state.json"))
+    for name in ("GEMINI_API_KEY",) + gp.OPENROUTER_KEY_NAMES:
+        monkeypatch.delenv(name, raising=False)
+    if key:
+        monkeypatch.setenv("GEMINI_API_KEY", key)
+    monkeypatch.setattr(gp.genai, "Client", client or (lambda **k: (_ for _ in ()).throw(AssertionError("Google client made"))))
+    return gp.ModelPool()
+
+
+def test_no_gemini_key_means_no_google_client_and_no_google_models(monkeypatch, tmp_path):
+    pool = real_pool(monkeypatch, tmp_path)
+    google = {k for k, m in pool.models.items() if m.get("provider", "google") == "google"}
+    assert google and google <= pool.unavailable
+    assert pool.client is None and pool.google_off == "no GEMINI_API_KEY"
+    assert all(pool.remaining(k, "classify") == 0 for k in google)
+
+
+def test_rejected_model_list_turns_google_off_before_any_model_call(monkeypatch, tmp_path):
+    class Rejecting:
+        def __init__(self, **k):
+            self.models = self
+
+        def list(self):
+            raise Exception("401 UNAUTHENTICATED. The bound service account is disabled")
+    pool = real_pool(monkeypatch, tmp_path, client=Rejecting, key="dead-key")
+    assert pool.google_off.startswith("the key was rejected")
+    assert {k for k, m in pool.models.items() if m.get("provider", "google") == "google"} <= pool.unavailable
+
+
+def test_one_google_refusal_stops_every_google_model_and_openrouter_takes_over(make_pool):
+    p = make_pool(GOOGLE_AND_OR, {"classify": list(GOOGLE_AND_OR)})
+    p.google_off = None
+    google_calls = []
+
+    def refuse(m, *a, **k):
+        google_calls.append(m["display"])
+        raise Exception("401 UNAUTHENTICATED. {'error': {'code': 401}}")
+    p._call_google = refuse
+    p._call_openrouter = lambda m, prompt: ('{"ok": 1}', [], 10)
+    p.remaining = lambda k, r: 0 if k in p.unavailable else 5
+    data, model, _ = p.generate_json("classify", "x")
+    assert (data, model) == ({"ok": 1}, "OpenRouter Medium")
+    assert google_calls == ["Gemini 3.1 Flash Lite"], "the second Google model is never tried"
+    assert {"Gemini 3.1 Flash Lite", "Gemma 4 31B"} <= p.unavailable
+
+
+def test_real_config_classifies_with_openrouter_when_google_is_unavailable():
+    cfg = json.load(open(os.path.join(os.path.dirname(__file__), "..", "scripts", "models.json"), encoding="utf-8"))
+    providers = {m["display"]: m.get("provider", "google") for m in cfg["models"]}
+    for role in ("classify", "video_text", "evidence", "verify"):
+        assert any(providers[k] == "openrouter" for k in cfg["routing"][role]), role
+
+
+def test_seeding_runs_on_openrouter_alone(monkeypatch):
+    import seed_history
+    for name in ("GEMINI_API_KEY",) + gp.OPENROUTER_KEY_NAMES:
+        monkeypatch.delenv(name, raising=False)
+    assert not seed_history.any_ai_key()
+    monkeypatch.setenv("GEMINI_API_KEY", "  ")
+    assert not seed_history.any_ai_key(), "a blank secret is no key"
+    monkeypatch.setenv("OPENROUTER_API_KEY", "or-key")
+    assert seed_history.any_ai_key()

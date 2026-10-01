@@ -54,3 +54,16 @@ def test_off_topic_reference_writes_nothing(write_page, monkeypatch):
     ev = {"file": "p.md", "title": "Hong Kong Club", "year": 1846, "status": "done", "era": "06-early-colony"}
     assert sh.verify_pages(OffTopic(), {"events": [ev]}, time.time() + 60) == 0
     assert "## Claims to verify" in path.read_text() and ev["verified"] == "no-reference"
+
+
+def test_cross_check_keeps_the_sections_after_the_claims(write_page, timeline):
+    # hk-history-data PR #25: replacing up to "Part of:" deleted 98 Evidence, 26 Research notes and
+    # 58 photo sections. Only the claims section may be replaced.
+    later = ("\n## Evidence\n\n> [!abstract] Evidence grade: **B**\n\n- [Paper](https://doi.org/10.1/x) (supports claim 1): y\n"
+             "\n## Research notes\n\nnotes\n\n## Photos from this period\n\nphotos\n")
+    p = write_page("p.md", "Founding of the Police", 1844, grade="B", extra=later)
+    sh.apply_verification(str(p), [{"claim": "Founded in 1844", "status": "supported", "note": "ok"}], [], "m")
+    text = p.read_text(encoding="utf-8")
+    assert "## Wikipedia cross-check" in text and "## Claims to verify" not in text
+    for kept in ("## Evidence", "Evidence grade: **B**", "## Research notes", "## Photos from this period", "Part of: "):
+        assert kept in text, kept

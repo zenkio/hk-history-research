@@ -88,6 +88,11 @@ def _same_model(configured, candidate):
     return all(ALLOWED_EXTRA.match(t) for t in have if t not in want)
 
 
+def _is_auth_error(msg):
+    return bool(re.match(r"(401|403)\b", msg)) or any(
+        k in msg for k in ("UNAUTHENTICATED", "PERMISSION_DENIED", "API_KEY_INVALID", "Missing Authentication"))
+
+
 def _is_transient(msg):
     return any(k in msg for k in ("503", "500", "UNAVAILABLE", "INTERNAL", "DEADLINE_EXCEEDED", "timed out", "overloaded"))
 
@@ -128,19 +133,34 @@ class ModelPool:
         self.models = {m["display"]: m for m in self.config["models"]}
         self.routing = {k: v for k, v in self.config["routing"].items() if not k.startswith("_")}
         self.tz = ZoneInfo(self.config.get("quota_reset_timezone", "America/Los_Angeles"))
-        self.client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
         self.last_call = {}
         self.token_log = {}
         self.no_media = set()  # models found this run to reject image/video input
         self.unavailable = set()  # models not usable in this run only (missing key, no free match)
+        self.google_off = None  # why Google (Gemini and Gemma) is not called in this run
+        key = (os.environ.get("GEMINI_API_KEY") or "").strip()
+        self.client = genai.Client(api_key=key) if key else None
         self.cooldown = {}  # model -> time until which it is skipped after repeated overloads
         # Thread safety: seed_history runs several workers on one pool. `lock` guards the
         # quota state; one lock per model serialises pacing so RPM/TPM hold across threads.
         self.lock = threading.RLock()
         self.model_locks = {}
         self.state = self._load_state()
-        self._resolve_ids()
+        if self.client is None:
+            self._google_off("no GEMINI_API_KEY")
+        else:
+            self._resolve_ids()
         self._resolve_openrouter()
+
+    def _google_off(self, reason):
+        """Stop calling Google (Gemini and Gemma) for the rest of the run. When Google rejected the key
+        on 2026-09-30, every run still sent it a model list and a call per model: one refusal or a
+        missing key now means no further Google calls at all."""
+        if self.google_off:
+            return
+        self.google_off = reason
+        self.unavailable |= {k for k, m in self.models.items() if m.get("provider", "google") == "google"}
+        print(f"  [pool] Google models off for this run: {reason}")
 
     # ---- setup -------------------------------------------------------
     def _resolve_ids(self):
@@ -149,6 +169,12 @@ class ModelPool:
             available = [m for m in self.client.models.list()
                          if "generateContent" in (getattr(m, "supported_actions", None) or ["generateContent"])]
         except Exception as e:
+            if _is_auth_error(str(e)):
+                for m in self.models.values():
+                    if m.get("provider", "google") == "google":
+                        m.setdefault("api_id", m["id"])
+                self._google_off(f"the key was rejected ({str(e)[:60]})")
+                return
             print(f"  [pool] models.list failed ({str(e)[:80]}); using configured ids")
             available = []
         ids = [a.name.split("/")[-1] for a in available]
@@ -473,9 +499,12 @@ class ModelPool:
                     print(f"  [pool] {key} cannot take this media; skipping it for media this run")
                     self.no_media.add(key)
                     return None
-                elif re.match(r"(401|403)\b", msg) or "Missing Authentication" in msg or "API_KEY_INVALID" in msg:
+                elif _is_auth_error(msg):
                     if self._provider(key) == "openrouter" and self._next_openrouter_key():
                         continue  # retry this call with the next key
+                    if self._provider(key) == "google":
+                        self._google_off(f"{key} rejected the key ({msg[:60]})")
+                        return None
                     # A bad or missing key will not fix itself mid-run: skip the model, keep the quota.
                     print(f"  [pool] {key} rejected the API key ({msg[:80]}); skipped for this run. "
                           "Check the repository secret for spaces or line breaks.")

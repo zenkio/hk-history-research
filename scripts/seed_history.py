@@ -39,7 +39,7 @@ from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary
 from translate import translate_batch
 from photos import photos_batch
-from evidence import evidence_batch, write_status_page
+from evidence import evidence_batch, jev_trial, write_status_page
 from research_import import import_inbox
 import state
 import wikipedia
@@ -413,7 +413,11 @@ def _apply_verification_unlocked(path, verdicts, sources, model, cites=()):
     elif sources:
         lines += ["", "_The compared articles cite no book or paper with a DOI/ISBN on this topic._"]
     block = "\n".join(lines) + "\n\n"
-    text = re.sub(r"## Claims to verify\n.*?(?=Part of: )", lambda _: block, text, count=1, flags=re.DOTALL)
+    # Replace the claims section only: up to the next section, not to "Part of:". Up to "Part of:" it
+    # also deleted the Evidence, Research notes and photo sections added after it (98 + 26 + 58, restored
+    # from git in hk-history-data PR #25).
+    text = re.sub(r"## Claims to verify\n.*?(?=^## |^Part of: )", lambda _: block, text, count=1,
+                  flags=re.DOTALL | re.MULTILINE)
     differs = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
     extra = '"wikipedia-checked"' + (', "wikipedia-differs"' if differs else "")
     text = re.sub(r"^tags: \[", lambda _: f"tags: [{extra}, ", text, count=1, flags=re.MULTILINE)
@@ -529,6 +533,7 @@ def research_worker(pool, events, deadline):
     state.save("evidence", grades)
     n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
                        save=lambda d: state.save("evidence", d))
+    jev_trial(grades, deadline)
     write_status_page(events, grades)
     return n
 

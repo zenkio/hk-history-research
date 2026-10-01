@@ -395,7 +395,7 @@ JEV_CRITERIA = {
 }
 
 
-def jev_audit(path, title, date, claims, candidates, kept, model):
+def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
     """Judge the same search results with Jev and record the agreement in evidence_audit.json ("jev")."""
     import state
     claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
@@ -424,13 +424,87 @@ def jev_audit(path, title, date, claims, candidates, kept, model):
     rec = {"page": os.path.relpath(path, TIMELINE_DIR), "date": datetime.now().strftime("%Y-%m-%d"),
            "models": [model, "Jev"], "grades": [grade_of(kept), grade_of(jev_kept)],
            "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second)),
-           "mean_probability": round(sum(probs) / len(probs), 3) if probs else None}
+           "mean_probability": round(sum(probs) / len(probs), 3) if probs else None,
+           "labels": [[a, b] for a, b in zip(first, second)]}
+    if trial:
+        rec["trial"] = True
     log = state.load("evidence_audit")
     log.setdefault("jev", []).append(rec)
     state.save("evidence_audit", log)
     print(f"  [jev] audit: grade {rec['grades'][1]} vs {rec['grades'][0]}, {rec['same']}/{rec['candidates']} "
           f"results judged the same" + (f", mean confidence {rec['mean_probability']:.2f}" if probs else ""))
     return rec
+
+
+# Jev trial (owner, 2026-10-01): every page had been judged before the pilot started, so Jev was never
+# asked. The trial searches again for already-judged pages and compares Jev with the labels the
+# evidence judge left on each page, until JEV_TRIAL_PAGES pages are done (about 6 credits a page).
+JEV_TRIAL_PAGES = 100
+JEV_TRIAL_PER_RUN = 50
+_LISTED = re.compile(r"^- \[(?:[^\]]|\](?!\())*\]\((https?://[^)\s]+)\)(?: \(([^)]*)\))?:")
+
+
+def page_labels(text):
+    """url -> supports / contradicts / background, from the page's ## Evidence section."""
+    m = re.search(r"\n## Evidence\n(.*?)(?=\n## |\Z)", text, re.S)
+    labels, background = {}, False
+    for line in (m.group(1) if m else "").splitlines():
+        if line.startswith("### "):
+            background = line.startswith("### Background reading")
+            continue
+        hit = _LISTED.match(line)
+        if hit:
+            url, what = hit.group(1), hit.group(2) or ""
+            labels[url] = "background" if background else ("contradicts" if "contradicts" in what else "supports")
+    return labels
+
+
+def jev_trial(done_map, deadline, limit=JEV_TRIAL_PER_RUN):
+    """Audit already-judged pages with Jev until JEV_TRIAL_PAGES are recorded. Only search results the
+    first judge also saw can be compared, so a result is "out" for the first judge unless the page lists it."""
+    import state
+    if not jev.available():
+        return 0
+    done = {a["page"] for a in state.load("evidence_audit").get("jev", []) if a.get("trial")}
+    todo = [rel for rel, g in sorted(done_map.items()) if g in ("A", "B", "none") and rel not in done]
+    random.Random(0).shuffle(todo)  # a fixed mix of eras and grades, the same order every run
+    n = 0
+    for rel in todo:
+        if len(done) + n >= JEV_TRIAL_PAGES or n >= limit or time.time() > deadline or not jev.available():
+            break
+        path = os.path.join(TIMELINE_DIR, rel)
+        if not os.path.exists(path):
+            continue
+        text, title, date, claims = read_page(path)
+        if "\n## Evidence\n" not in text or "\n## Research notes\n" in text:
+            continue  # never judged by the engine, or graded from Deep Research
+        candidates, failed = gather(keywords(title))
+        if failed or not candidates:
+            continue
+        for i, c in enumerate(candidates, 1):
+            c["id"] = f"c{i}"
+        labels = page_labels(text)
+        kept = [dict(c, relation=labels[c["url"]]) for c in candidates if c["url"] in labels]
+        if jev_audit(path, title, date, claims, candidates, kept, "evidence judge", trial=True):
+            n += 1
+    total = len(done) + n
+    if n or total < JEV_TRIAL_PAGES:
+        print(f"[jev] trial: {n} pages this run, {total}/{JEV_TRIAL_PAGES} in all. {jev_trial_summary()}")
+    return n
+
+
+def jev_trial_summary():
+    """One line: how often Jev agreed with the evidence judge on the trial pages."""
+    import state
+    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial")]
+    pairs = [p for a in recs for p in a.get("labels", [])]
+    if not pairs:
+        return "No trial results yet."
+    same_grade = sum(a["grades"][0] == a["grades"][1] for a in recs)
+    kept_first = [p for p in pairs if p[0] != "out"]
+    return (f"Same grade on {same_grade}/{len(recs)} pages; same label on {sum(a == b for a, b in pairs)}/{len(pairs)} "
+            f"results; of the {len(kept_first)} results the judge kept, Jev agreed on "
+            f"{sum(a == b for a, b in kept_first)}.")
 
 MAX_RETRIES_PER_RUN = 20  # pages left for later before the batch gives up on a failing source
 SEARCH_VERSION = 3  # 2: failed sources no longer mark a page as searched; 3: descriptive words dropped from queries

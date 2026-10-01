@@ -150,3 +150,51 @@ def test_pipeline_passes_the_jev_key_to_the_evidence_step():
     import os
     wf = open(os.path.join(os.path.dirname(__file__), "..", ".github", "workflows", "ingestion.yml")).read()
     assert "FREEJEV_API_KEY: ${{ secrets.FREEJEV_API_KEY }}" in wf
+
+
+# --- the Jev trial on already-judged pages (owner, 2026-10-01: 100 pages) ----------------------
+
+EVIDENCE = ("\n## Evidence\n\n> [!abstract] Evidence grade: **A**\n\n### Primary sources (grade A)\n\n"
+            "- [CO 129/1 (1900)](https://x/1) (supports claim 1): the file\n"
+            "- [CO 129/3](https://x/3) (⚠ **contradicts** claim 2): other date\n\n"
+            "### Background reading (does not count towards the grade)\n\n- [Study](https://x/2): general\n")
+
+
+def test_page_labels_read_the_judges_decisions_from_the_page():
+    assert ev.page_labels("x" + EVIDENCE + "\n## Photos\n\n- [p](https://x/9): photo\n") == {
+        "https://x/1": "supports", "https://x/3": "contradicts", "https://x/2": "background"}
+    assert ev.page_labels("no evidence here") == {}
+
+
+def test_trial_compares_jev_with_the_page_and_stops_at_the_total(write_page, timeline, monkeypatch):
+    monkeypatch.setattr(ev, "JEV_TRIAL_PAGES", 2)
+    for i in range(3):
+        write_page(f"p{i}.md", f"Event {i}", 1900, extra=EVIDENCE)
+    write_page("research.md", "Researched", 1900, extra=EVIDENCE + "\n## Research notes\n\nx\n")
+    write_page("unjudged.md", "Plain", 1900)
+    monkeypatch.setattr(ev, "gather", lambda q: (candidates(3), []))  # urls https://x/1..3
+    seen = []
+
+    def fake_audit(path, title, date, claims, cands, kept, model, trial=False):
+        seen.append(path.rsplit("/", 1)[-1])
+        assert trial and {c["url"]: c["relation"] for c in kept} == {
+            "https://x/1": "supports", "https://x/2": "background", "https://x/3": "contradicts"}
+        log = state.load("evidence_audit")
+        log.setdefault("jev", []).append({"page": path, "trial": True, "grades": ["A", "A"], "labels": []})
+        state.save("evidence_audit", log)
+        return True
+    monkeypatch.setattr(ev, "jev_audit", fake_audit)
+    done = {"p0.md": "A", "p1.md": "B", "p2.md": "none", "research.md": "A", "unjudged.md": "none"}
+    assert ev.jev_trial(done, time.time() + 60) == 2
+    assert "research.md" not in seen and "unjudged.md" not in seen
+    assert ev.jev_trial(done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_PAGES"
+
+
+def test_trial_records_labels_and_summarises(write_page, timeline, monkeypatch):
+    path = write_page("p.md", "Signing of the Treaty", 1900)
+    monkeypatch.setattr(jev, "decide", lambda page, q: {k: ("supports" if k == "c1" else "out") for k in q})
+    kept = [dict(candidates(2)[0], relation="supports"), dict(candidates(2)[1], relation="background")]
+    rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], candidates(2), kept, "judge", trial=True)
+    assert rec["trial"] and rec["labels"] == [["supports", "supports"], ["background", "out"]]
+    assert ev.jev_trial_summary() == ("Same grade on 1/1 pages; same label on 1/2 results; "
+                                      "of the 2 results the judge kept, Jev agreed on 1.")

@@ -339,6 +339,13 @@ def import_inbox(events, grades):
     files = sorted(glob.glob(os.path.join(INBOX, "*.md")))
     unmatched, attached = [], 0
     for fpath in files:
+        with open(fpath, encoding="utf-8") as f:
+            if not parse_tables(f.read()):
+                # Prose without a table (e.g. a summary export): nothing can be imported, so it stays
+                # in the inbox for the owner to replace with the table version, instead of vanishing into done/.
+                print(f"[research] {os.path.basename(fpath)}: no table with an Event column found; "
+                      "left in the inbox. Replace it with the Deep Research table export.")
+                continue
         attached += import_file(fpath, events, grades, unmatched)
         os.makedirs(done_dir, exist_ok=True)
         shutil.move(fpath, os.path.join(done_dir, os.path.basename(fpath)))

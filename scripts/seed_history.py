@@ -671,14 +671,20 @@ def any_ai_key():
     return any((os.environ.get(n) or "").strip() for n in ("GEMINI_API_KEY",) + OPENROUTER_KEY_NAMES)
 
 
-if __name__ == "__main__":
+def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--max-calls", type=int, default=10_000, help="stop after this many tasks")
     ap.add_argument("--minutes", type=float, default=120, help="stop after this many minutes")
     ap.add_argument("--no-commit", action="store_true", help="write files but skip git commit/push")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
     if not any_ai_key():
         sys.exit("No AI key set (GEMINI_API_KEY, OPENROUTER_API_KEY or OPEN_ROUTER_KEY_RESEARCHER)")
-    ran = run(args.max_calls, args.minutes, commit=not args.no_commit)
-    if ran and not args.no_commit:
+    run(args.max_calls, args.minutes, commit=not args.no_commit)
+    # Always commit what changed (git_commit skips a clean tree): run() counts only drafting tasks, so
+    # once drafting was done, Deep Research imports and evidence from the workers were never saved.
+    if not args.no_commit:
         git_commit()
+
+
+if __name__ == "__main__":
+    main()

@@ -125,10 +125,10 @@ python -m pytest tests -q
 - The owner reviews and merges every pull request; Claude opens them and never pushes to `main`.
 - **At most one open pull request from Claude at a time** (across both repositories). While it is open, add further work to
   that same branch (it is not merged yet) and update its description; don't open a second one.
-- **A new branch after every merge, named `vive-coding-<YYYYMMDD-HHMM>`** (UTC, the time it is created).
+- **A new branch after every merge, named `vibe-coding-<YYYYMMDD-HHMM>`** (UTC, the time it is created).
   Development is continuous and one pull request often carries several changes, so branch names
   carry no topic. Once that pull request is merged, start the next piece of work on a new branch from
-  the latest `origin/main` (`git fetch origin && git checkout -b vive-coding-$(date -u +%Y%m%d-%H%M)
+  the latest `origin/main` (`git fetch origin && git checkout -b vibe-coding-$(date -u +%Y%m%d-%H%M)
   origin/main`). Never reuse a branch whose pull request has been merged, even for a follow-up.
 - The pipeline commits to hk-history-data's `main` every hour, so fetch it right before branching and before pushing there.
 

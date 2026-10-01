@@ -533,7 +533,7 @@ def research_worker(pool, events, deadline):
     state.save("evidence", grades)
     n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
                        save=lambda d: state.save("evidence", d))
-    jev_trial(grades, deadline)
+    jev_trial(pool, grades, deadline)
     write_status_page(events, grades)
     return n
 

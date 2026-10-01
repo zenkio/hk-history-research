@@ -128,7 +128,7 @@ def test_jev_audit_asks_at_most_16_questions_a_call_and_records_agreement(write_
     monkeypatch.setattr(jev, "decide", decide)
     kept = [dict(cands[0], relation="supports", claims=[1]), dict(cands[1], relation="background", claims=[])]
     rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], cands, kept, "nemotron-ultra")
-    assert [len(q) for q in sent] == [16, 2, 4], "labels for 18 results, then 4 reason questions on the one dispute"
+    assert [len(q) for q in sent] == [16, 2, 3], "labels for 18 results, then 3 reason questions on the one dispute"
     assert rec["models"] == ["nemotron-ultra", "Jev"] and rec["grades"] == ["A", "A"]
     assert rec["same"] == 17 and rec["candidates"] == 18  # c2: background vs out
     assert rec["mean_probability"] == 0.9
@@ -182,55 +182,74 @@ def test_pipeline_passes_the_jev_key_to_the_evidence_step():
 
 # --- the Jev trial on already-judged pages (owner, 2026-10-01: 100 pages) ----------------------
 
-EVIDENCE = ("\n## Evidence\n\n> [!abstract] Evidence grade: **A**\n\n### Primary sources (grade A)\n\n"
-            "- [CO 129/1 (1900)](https://x/1) (supports claim 1): the file\n"
-            "- [CO 129/3](https://x/3) (⚠ **contradicts** claim 2): other date\n\n"
-            "### Background reading (does not count towards the grade)\n\n- [Study](https://x/2): general\n")
+class TrialJudge:
+    """The evidence judge in the trial: keeps c1 as supports and c3 as background."""
+    routing = {"evidence": ["nemotron-ultra"]}
+
+    def __init__(self):
+        self.calls = 0
+
+    def generate_json(self, role, prompt, **k):
+        self.calls += 1
+        return {"relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "names it"},
+                             {"id": "c3", "relation": "background", "claims": [], "why": "general"}]}, "nemotron-ultra", []
 
 
-def test_page_labels_read_the_judges_decisions_from_the_page():
-    assert ev.page_labels("x" + EVIDENCE + "\n## Photos\n\n- [p](https://x/9): photo\n") == {
-        "https://x/1": "supports", "https://x/3": "contradicts", "https://x/2": "background"}
-    assert ev.page_labels("no evidence here") == {}
+EVIDENCE = "\n## Evidence\n\n> [!abstract] Evidence grade: **A**\n\n- [CO 129/1](https://x/1) (supports claim 1): the file\n"
 
 
-def test_trial_compares_jev_with_the_page_and_stops_at_the_total(write_page, timeline, monkeypatch):
+def test_trial_asks_the_judge_again_on_the_same_results_and_stops_at_the_total(write_page, timeline, monkeypatch):
+    # PR #12: version 1 compared Jev with the page's list, but the judge may never have seen a result
+    # the page leaves out, so both judges now label the same search results
     monkeypatch.setattr(ev, "JEV_TRIAL_PAGES", 2)
     for i in range(3):
         write_page(f"p{i}.md", f"Event {i}", 1900, extra=EVIDENCE)
     write_page("research.md", "Researched", 1900, extra=EVIDENCE + "\n## Research notes\n\nx\n")
     write_page("unjudged.md", "Plain", 1900)
-    monkeypatch.setattr(ev, "gather", lambda q: (candidates(3), []))  # urls https://x/1..3
+    monkeypatch.setattr(ev, "gather", lambda q: (candidates(3), []))
     seen = []
 
     def fake_audit(path, title, date, claims, cands, kept, model, trial=False):
         seen.append(path.rsplit("/", 1)[-1])
-        assert trial and {c["url"]: c["relation"] for c in kept} == {
-            "https://x/1": "supports", "https://x/2": "background", "https://x/3": "contradicts"}
+        assert trial == ev.TRIAL_VERSION and model == "nemotron-ultra"
+        assert [c["id"] for c in cands] == ["c1", "c2", "c3"]
+        assert {c["id"]: (c["relation"], c["why"]) for c in kept} == {"c1": ("supports", "names it"),
+                                                                       "c3": ("background", "general")}
         log = state.load("evidence_audit")
-        log.setdefault("jev", []).append({"page": path, "trial": True, "grades": ["A", "A"], "labels": []})
+        log.setdefault("jev", []).append({"page": path.rsplit("/", 1)[-1], "trial": trial, "grades": ["A", "A"], "labels": []})
         state.save("evidence_audit", log)
         return True
     monkeypatch.setattr(ev, "jev_audit", fake_audit)
+    judge = TrialJudge()
     done = {"p0.md": "A", "p1.md": "B", "p2.md": "none", "research.md": "A", "unjudged.md": "none"}
-    assert ev.jev_trial(done, time.time() + 60) == 2
+    assert ev.jev_trial(judge, done, time.time() + 60) == 2 and judge.calls == 2
     assert "research.md" not in seen and "unjudged.md" not in seen
-    assert ev.jev_trial(done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_PAGES"
+    assert ev.jev_trial(judge, done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_PAGES"
+
+
+def test_version_1_trial_records_do_not_count(write_page, timeline, monkeypatch):
+    state.save("evidence_audit", {"jev": [{"page": "p0.md", "trial": True, "grades": ["A", "none"],
+                                           "labels": [["supports", "out"]]}]})
+    assert ev.jev_trial_summary() == "No trial results yet."
+    write_page("p0.md", "Event", 1900, extra=EVIDENCE)
+    monkeypatch.setattr(ev, "gather", lambda q: (candidates(1), []))
+    monkeypatch.setattr(jev, "decide", lambda page, q: {k: "supports" for k in q})
+    assert ev.jev_trial(TrialJudge(), {"p0.md": "A"}, time.time() + 60) == 1, "the page is tried again"
 
 
 def test_trial_records_labels_and_summarises(write_page, timeline, monkeypatch):
     path = write_page("p.md", "Signing of the Treaty", 1900)
     monkeypatch.setattr(jev, "decide", lambda page, q: {k: ("supports" if k == "c1" else "out") for k in q})
     kept = [dict(candidates(2)[0], relation="supports"), dict(candidates(2)[1], relation="background")]
-    rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], candidates(2), kept, "judge", trial=True)
-    assert rec["trial"] and rec["labels"] == [["supports", "supports"], ["background", "out"]]
+    rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], candidates(2), kept, "judge", trial=ev.TRIAL_VERSION)
+    assert rec["trial"] == ev.TRIAL_VERSION and rec["labels"] == [["supports", "supports"], ["background", "out"]]
     assert ev.jev_trial_summary() == ("Same grade on 1/1 pages; same label on 1/2 results; "
                                       "of the 2 results the judge kept, Jev agreed on 1.")
 
 
 # --- reasons where the two judges disagree (owner, 2026-10-01) --------------------------------
 
-REASONS = {"about": "connected", "when": "before", "shows": "mention", "fit": "silent"}
+ANSWERS = {"about": "forerunner", "shows": "mention", "check": "right"}
 
 
 def test_disputes_record_both_judges_reasons(write_page, timeline, monkeypatch, capsys):
@@ -239,35 +258,42 @@ def test_disputes_record_both_judges_reasons(write_page, timeline, monkeypatch, 
     calls = []
 
     def decide(page, questions):
-        calls.append(sorted(questions))
+        calls.append(questions)
         if "c1" in questions:  # the labelling call: Jev disagrees on c2 and c3
             return {"c1": "out", "c2": "contradicts", "c3": "out"}
         assert "c1 |" not in page, "the reasons call shows only the disputed results"
-        return {q: REASONS[q.split("_", 1)[1]] for q in questions}
+        assert "names the exhibition" not in page, "the judge's words stay out of the shared text"
+        return {q: ANSWERS[q.split("_", 1)[1]] for q in questions}
     monkeypatch.setattr(jev, "decide", decide)
     kept = [dict(cands[2], relation="supports", why="The record names the exhibition.")]
     rec = ev.jev_audit(str(path), "First Industrial Exhibition", 1914, [], cands, kept, "judge")
-    assert calls[1] == sorted(f"c{i}_{k}" for i in (2, 3) for k in ev.JEV_REASONS)
+    asked = calls[1]
+    assert sorted(asked) == sorted(f"c{i}_{k}" for i in (2, 3) for k in ("about", "shows", "check"))
+    assert "left search result c2 out" in asked["c2_check"]["instructions"]
+    assert set(asked["c2_check"]["criteria"]) == {"right", "wrong"}
+    assert "'supports', because: \"The record names the exhibition.\"" in asked["c3_check"]["instructions"]
+    assert set(asked["c3_check"]["criteria"]) == {"right", "overstated", "wrong"}
     d2, d3 = rec["disputes"]
-    assert (d2["judge"], d2["judge_why"], d2["jev"], d2["jev_why"]) == ("out", "", "contradicts", REASONS)
+    assert (d2["judge"], d2["judge_why"], d2["jev"], d2["jev_why"]) == ("out", "", "contradicts", ANSWERS)
     assert (d3["judge"], d3["judge_why"], d3["jev"]) == ("supports", "The record names the exhibition.", "out")
     assert d2["url"] == "https://x/2" and d2["title"] == "Record 2"
     assert state.load("evidence_audit")["jev"][0]["disputes"] == rec["disputes"]
     out = capsys.readouterr().out
     assert ("judge out: no reason given (the judge explains only results it keeps) | Jev contradicts: "
-            "about something connected, not the event; made before the event; only mentions the subject; "
-            "neither agrees nor disagrees") in out
+            "a plan or forerunner, not the event; only mentions it; the judge is right") in out
     assert "judge supports: The record names the exhibition." in out
 
 
 def test_reason_questions_fit_16_to_a_call(monkeypatch):
     sent = []
+    disputed = [(c, "out", "") for c in candidates(11)]
     monkeypatch.setattr(jev, "decide", lambda page, q: sent.append(len(q)) or {})
-    ev.jev_reasons("T", 1900, "1. x", candidates(9))
-    assert sent == [16], "an empty answer stops asking"
+    ev.jev_reasons("T", 1900, "1. x", disputed)
+    assert sent == [15], "an empty answer stops asking"
     sent.clear()
-    monkeypatch.setattr(jev, "decide", lambda page, q: sent.append(len(q)) or {k: "event" for k in q})
-    assert len(ev.jev_reasons("T", 1900, "1. x", candidates(9))) == 9 and sent == [16, 16, 4]
+    monkeypatch.setattr(jev, "decide", lambda page, q: sent.append(len(q)) or {k: "right" for k in q})
+    got = ev.jev_reasons("T", 1900, "1. x", disputed)
+    assert sent == [15, 15, 3] and len(got) == 11 and got["c1"] == {"check": "right"}
 
 
 def test_no_dispute_means_no_reason_questions(write_page, timeline, monkeypatch):
@@ -276,8 +302,3 @@ def test_no_dispute_means_no_reason_questions(write_page, timeline, monkeypatch)
     monkeypatch.setattr(jev, "decide", lambda page, q: calls.append(q) or {k: "out" for k in q})
     rec = ev.jev_audit(str(path), "Treaty", 1900, [], candidates(3), [], "m")
     assert len(calls) == 1 and "disputes" not in rec
-
-
-def test_trial_reads_the_judges_reasons_from_the_page():
-    assert ev.page_entries("x" + EVIDENCE)["https://x/1"] == ("supports", "the file")
-    assert ev.page_entries("x" + EVIDENCE)["https://x/2"] == ("background", "general")

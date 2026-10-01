@@ -128,7 +128,7 @@ def test_jev_audit_asks_at_most_16_questions_a_call_and_records_agreement(write_
     monkeypatch.setattr(jev, "decide", decide)
     kept = [dict(cands[0], relation="supports", claims=[1]), dict(cands[1], relation="background", claims=[])]
     rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], cands, kept, "nemotron-ultra")
-    assert [len(q) for q in sent] == [16, 2]
+    assert [len(q) for q in sent] == [16, 2, 4], "labels for 18 results, then 4 reason questions on the one dispute"
     assert rec["models"] == ["nemotron-ultra", "Jev"] and rec["grades"] == ["A", "A"]
     assert rec["same"] == 17 and rec["candidates"] == 18  # c2: background vs out
     assert rec["mean_probability"] == 0.9
@@ -226,3 +226,58 @@ def test_trial_records_labels_and_summarises(write_page, timeline, monkeypatch):
     assert rec["trial"] and rec["labels"] == [["supports", "supports"], ["background", "out"]]
     assert ev.jev_trial_summary() == ("Same grade on 1/1 pages; same label on 1/2 results; "
                                       "of the 2 results the judge kept, Jev agreed on 1.")
+
+
+# --- reasons where the two judges disagree (owner, 2026-10-01) --------------------------------
+
+REASONS = {"about": "connected", "when": "before", "shows": "mention", "fit": "silent"}
+
+
+def test_disputes_record_both_judges_reasons(write_page, timeline, monkeypatch, capsys):
+    path = write_page("p.md", "First Industrial Exhibition", 1914)
+    cands = candidates(3)
+    calls = []
+
+    def decide(page, questions):
+        calls.append(sorted(questions))
+        if "c1" in questions:  # the labelling call: Jev disagrees on c2 and c3
+            return {"c1": "out", "c2": "contradicts", "c3": "out"}
+        assert "c1 |" not in page, "the reasons call shows only the disputed results"
+        return {q: REASONS[q.split("_", 1)[1]] for q in questions}
+    monkeypatch.setattr(jev, "decide", decide)
+    kept = [dict(cands[2], relation="supports", why="The record names the exhibition.")]
+    rec = ev.jev_audit(str(path), "First Industrial Exhibition", 1914, [], cands, kept, "judge")
+    assert calls[1] == sorted(f"c{i}_{k}" for i in (2, 3) for k in ev.JEV_REASONS)
+    d2, d3 = rec["disputes"]
+    assert (d2["judge"], d2["judge_why"], d2["jev"], d2["jev_why"]) == ("out", "", "contradicts", REASONS)
+    assert (d3["judge"], d3["judge_why"], d3["jev"]) == ("supports", "The record names the exhibition.", "out")
+    assert d2["url"] == "https://x/2" and d2["title"] == "Record 2"
+    assert state.load("evidence_audit")["jev"][0]["disputes"] == rec["disputes"]
+    out = capsys.readouterr().out
+    assert ("judge out: no reason given (the judge explains only results it keeps) | Jev contradicts: "
+            "about something connected, not the event; made before the event; only mentions the subject; "
+            "neither agrees nor disagrees") in out
+    assert "judge supports: The record names the exhibition." in out
+
+
+def test_reason_questions_fit_16_to_a_call(monkeypatch):
+    sent = []
+    monkeypatch.setattr(jev, "decide", lambda page, q: sent.append(len(q)) or {})
+    ev.jev_reasons("T", 1900, "1. x", candidates(9))
+    assert sent == [16], "an empty answer stops asking"
+    sent.clear()
+    monkeypatch.setattr(jev, "decide", lambda page, q: sent.append(len(q)) or {k: "event" for k in q})
+    assert len(ev.jev_reasons("T", 1900, "1. x", candidates(9))) == 9 and sent == [16, 16, 4]
+
+
+def test_no_dispute_means_no_reason_questions(write_page, timeline, monkeypatch):
+    path = write_page("p.md", "Treaty", 1900)
+    calls = []
+    monkeypatch.setattr(jev, "decide", lambda page, q: calls.append(q) or {k: "out" for k in q})
+    rec = ev.jev_audit(str(path), "Treaty", 1900, [], candidates(3), [], "m")
+    assert len(calls) == 1 and "disputes" not in rec
+
+
+def test_trial_reads_the_judges_reasons_from_the_page():
+    assert ev.page_entries("x" + EVIDENCE)["https://x/1"] == ("supports", "the file")
+    assert ev.page_entries("x" + EVIDENCE)["https://x/2"] == ("background", "general")

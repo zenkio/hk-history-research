@@ -20,6 +20,9 @@ import uuid
 URL = "https://freejev.org/api/v1/decisions"
 MAX_QUESTIONS = 16
 RESERVE_CREDITS = 500  # stop before the balance runs out, so a manual test still has credits
+# Cloudflare in front of FreeJev answers Python's default "Python-urllib" agent with 403 (error 1010)
+# before the key is even read; that looked like a rejected key on 2026-10-01.
+USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 
 _state = {"off": None, "remaining": None}  # why Jev is off for this run, last known balance
 
@@ -38,6 +41,7 @@ def _post(body):
         "Authorization": f"Bearer {os.environ['FREEJEV_API_KEY'].strip()}",
         "Content-Type": "application/json",
         "Idempotency-Key": str(uuid.uuid4()),
+        "User-Agent": USER_AGENT,
     })
     with urllib.request.urlopen(req, timeout=90) as r:
         return json.load(r)
@@ -57,7 +61,9 @@ def decide(state, questions):
             if code == 402:
                 _off("no credits left (402)")
             elif code in (401, 403):
-                _off(f"key rejected ({code}); check the FREEJEV_API_KEY secret")
+                body = e.read(200).decode("utf-8", "replace")
+                _off("blocked by the site's bot filter (403, Cloudflare 1010)" if "1010" in body
+                     else f"key rejected ({code}); check the FREEJEV_API_KEY secret")
             elif code == 429 and attempt == 0:
                 time.sleep(60)
                 continue

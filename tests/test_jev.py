@@ -79,6 +79,34 @@ def test_low_balance_keeps_the_reserve(monkeypatch):
     assert not jev.available()
 
 
+def test_requests_name_our_agent_so_cloudflare_lets_them_through(monkeypatch):
+    # PR #11: Python's default "Python-urllib" agent got 403 (Cloudflare 1010), read as a bad key
+    sent = []
+
+    class Resp(io.BytesIO):
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            pass
+
+    def urlopen(req, timeout):
+        sent.append(req)
+        return Resp(b'{"answers": {}}')
+    monkeypatch.setattr(jev.urllib.request, "urlopen", urlopen)
+    jev._post({"state": "s", "questions": {}})
+    agent = sent[0].get_header("User-agent")
+    assert agent and "urllib" not in agent.lower()
+
+
+def test_bot_filter_403_is_not_reported_as_a_bad_key(monkeypatch, capsys):
+    err = urllib.error.HTTPError(jev.URL, 403, "x", {}, io.BytesIO(b"error code: 1010"))
+    monkeypatch.setattr(jev, "_post", lambda body: (_ for _ in ()).throw(err))
+    assert jev.decide("s", {"q": {}}) is None and not jev.available()
+    out = capsys.readouterr().out
+    assert "bot filter" in out and "key rejected" not in out
+
+
 # --- the evidence audit -----------------------------------------------------------------------
 
 def candidates(n):

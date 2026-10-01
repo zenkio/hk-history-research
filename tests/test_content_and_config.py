@@ -60,6 +60,9 @@ def test_pipeline_queues_its_next_run_only_while_switched_on():
     assert step["name"] == "Queue the next run"
     assert step["if"] == "success() && vars.PIPELINE_ON_ACTIONS == 'on'"
     assert "gh workflow run ingestion.yml" in step["run"] and "--ref main" in step["run"]
+    # Only after a busy run: idle runs take 2 minutes, and queueing after them looped (PR #7).
+    assert '-lt 20 ]' in step["run"] and "RUN_STARTED" in step["run"]
+    assert any('RUN_STARTED=$(date +%s)' in s.get("run", "") for s in wf["jobs"]["pipeline"]["steps"][:3])
     assert wf["permissions"] == {"contents": "read", "actions": "write"}
     assert wf["concurrency"]["cancel-in-progress"] is False  # the queued run waits, never cancels
 

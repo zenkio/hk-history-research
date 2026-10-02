@@ -299,11 +299,13 @@ def event_claims(title, date, claims):
 def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
     source failed and nothing was found, so the page is not wrongly recorded as searched."""
-    _, title, date, claims = read_page(path)
+    text, title, date, claims = read_page(path)
     query = keywords(title)
     candidates, failed = gather(query)
     if len(failed) == len(SOURCES):
         return None
+    if failed and "\n## Evidence\n" in text:
+        return "retry"  # judged before: a partial search must not replace a full one
     if not candidates and failed:
         return "retry"
     if not candidates:
@@ -392,9 +394,9 @@ def audit(pool, path, prompt, candidates, kept, model):
 # dropped real evidence the judge kept), but its reason answers single out the judge's own mistakes:
 # Jev never changes a page itself; where it disagrees with reasons that hold together, the evidence
 # judge looks again at that one result (`second_look`) and its second decision stands. About 3
-# credits a page, from the owner's free credits, hence the per-run cap.
+# credits a page, from the owner's free credits; Jev stops itself below jev.RESERVE_CREDITS.
 JEV_SHARE = 1.0
-JEV_PAGES_PER_RUN = 20
+JEV_PAGES_PER_RUN = 150  # as many as the evidence batch judges in a run (EVIDENCE_PAGES_PER_RUN)
 _jev_count = [0]
 JEV_CRITERIA = {
     "out": "Not about this event: a different event, place or period, or only the general subject.",
@@ -600,15 +602,19 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 3  # 2: supports / contradicts / background; background no longer earns a grade
-# 3: claim 1 is the event itself, so a record or study of this event counts again
+JUDGE_VERSION = 4  # 2: supports / contradicts / background; background no longer earns a grade
+# 3: claim 1 is the event itself, so a record or study of this event counts
+# 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras
+JEV_REVIEW_FROM = "05-opium-war"  # seed_history.CORE_ERA_START: 1841 on
 
 
-def _to_rejudge(version, grade, text):
+def _to_rejudge(version, grade, text, rel=""):
     """Whether a page should be judged again, given the JUDGE_VERSION last applied."""
     if version < 2 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # graded under the looser rule
-    return version < 3 and grade == "none" and "\n### Background reading" in text  # kept, none could count
+    if version < 3 and grade == "none" and "\n### Background reading" in text:
+        return True  # kept, none could count
+    return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 
 def reopen_for_rejudge(done_map):
@@ -626,9 +632,10 @@ def reopen_for_rejudge(done_map):
         if grade not in ("A", "B", "none") or not os.path.exists(path):
             continue
         text = read_page(path)[0]
-        if _to_rejudge(version, grade, text) and "\n## Research notes\n" not in text:
+        if _to_rejudge(version, grade, text, rel) and "\n## Research notes\n" not in text:
             del done_map[rel]
             reopened.append(rel)
+            meta.setdefault("rejudged_from", {})[rel] = grade  # to report what the new round changed
     meta["judge_version"] = JUDGE_VERSION
     state.save("evidence_meta", meta)
     print(f"[evidence] {len(reopened)} pages will be judged again under the new rule")

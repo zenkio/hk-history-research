@@ -153,6 +153,7 @@ class Judge:
 
 def test_evidence_run_audits_with_jev_up_to_the_per_run_cap(write_page, timeline, monkeypatch):
     monkeypatch.setattr(ev, "JEV_SHARE", 1)
+    monkeypatch.setattr(ev, "JEV_PAGES_PER_RUN", 4)
     monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(1))])
     audited = []
     monkeypatch.setattr(ev, "jev_audit", lambda path, *a: audited.append(path))
@@ -307,3 +308,36 @@ def test_jev_without_good_reasons_changes_nothing(write_page, timeline, monkeypa
 def test_pipeline_no_longer_runs_the_trial():
     import seed_history
     assert not hasattr(ev, "jev_trial") and "jev_trial" not in open(seed_history.__file__).read()
+
+
+# --- the review round of the core eras (owner, 2026-10-02) -----------------------------------
+
+def test_core_pages_judged_by_the_engine_are_reviewed_once(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 3})
+    ev_text = "\n## Evidence\n\n- [x](https://x/1) (supports claim 1): y\n"
+    write_page("05-opium-war/a.md", "Treaty", extra=ev_text)
+    write_page("16-national-security-era/b.md", "Law", extra=ev_text)
+    write_page("04-ming-and-qing/c.md", "Older", extra=ev_text)
+    write_page("05-opium-war/dr.md", "Researched", extra=ev_text + "\n## Research notes\n\nx\n")
+    write_page("05-opium-war/never.md", "Plain")
+    done = {"05-opium-war/a.md": "A", "16-national-security-era/b.md": "none", "04-ming-and-qing/c.md": "B",
+            "05-opium-war/dr.md": "A", "05-opium-war/never.md": "none"}
+    assert ev.reopen_for_rejudge(done) == 2
+    assert "05-opium-war/a.md" not in done and "16-national-security-era/b.md" not in done
+    assert state.load("evidence_meta")["rejudged_from"] == {"05-opium-war/a.md": "A", "16-national-security-era/b.md": "none"}
+    assert ev.reopen_for_rejudge(done) == 0, "once per JUDGE_VERSION"
+
+
+def test_a_judged_page_keeps_its_evidence_when_a_source_is_down(write_page, timeline, monkeypatch):
+    def down(q):
+        raise OSError("timed out")
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(2)), ("Internet Archive", down)])
+    path = write_page("p.md", "Event", 1900, extra="\n## Evidence\n\n- [x](https://x/9) (supports claim 1): y\n")
+    before = path.read_text()
+    assert ev.evidence_for_page(LookAgainJudge(), str(path)) == "retry"
+    assert path.read_text() == before
+
+
+def test_core_era_matches_seed_history():
+    import seed_history
+    assert ev.JEV_REVIEW_FROM == seed_history.CORE_ERA_START

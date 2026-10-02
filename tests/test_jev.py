@@ -180,81 +180,6 @@ def test_pipeline_passes_the_jev_key_to_the_evidence_step():
     assert "FREEJEV_API_KEY: ${{ secrets.FREEJEV_API_KEY }}" in wf
 
 
-# --- the Jev trial on already-judged pages (owner, 2026-10-01: 100 pages) ----------------------
-
-class TrialJudge:
-    """The evidence judge in the trial: keeps c1 as supports and c3 as background."""
-    routing = {"evidence": ["nemotron-ultra"]}
-
-    def __init__(self):
-        self.calls = 0
-
-    def generate_json(self, role, prompt, **k):
-        self.calls += 1
-        return {"relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "names it"},
-                             {"id": "c3", "relation": "background", "claims": [], "why": "general"}]}, "nemotron-ultra", []
-
-
-EVIDENCE = "\n## Evidence\n\n> [!abstract] Evidence grade: **A**\n\n- [CO 129/1](https://x/1) (supports claim 1): the file\n"
-
-
-def test_trial_asks_the_judge_again_on_the_same_results_then_goes_on_to_graded_pages(write_page, timeline, monkeypatch):
-    # PR #12: version 1 compared Jev with the page's list, but the judge may never have seen a result
-    # the page leaves out, so both judges now label the same search results
-    monkeypatch.setattr(ev, "JEV_TRIAL_PAGES", 2)
-    monkeypatch.setattr(ev, "JEV_TRIAL_GRADED_PAGES", 1)
-    for i in range(4):
-        write_page(f"p{i}.md", f"Event {i}", 1900, extra=EVIDENCE)
-    write_page("research.md", "Researched", 1900, extra=EVIDENCE + "\n## Research notes\n\nx\n")
-    write_page("unjudged.md", "Plain", 1900)
-    monkeypatch.setattr(ev, "gather", lambda q: (candidates(3), []))
-    seen = []
-
-    def fake_audit(path, title, date, claims, cands, kept, model, trial=False, phase=None):
-        seen.append((path.rsplit("/", 1)[-1], phase))
-        assert trial == ev.TRIAL_VERSION and model == "nemotron-ultra"
-        assert [c["id"] for c in cands] == ["c1", "c2", "c3"]
-        assert {c["id"]: (c["relation"], c["why"]) for c in kept} == {"c1": ("supports", "names it"),
-                                                                       "c3": ("background", "general")}
-        log = state.load("evidence_audit")
-        rec = {"page": path.rsplit("/", 1)[-1], "trial": trial, "grades": ["A", "A"], "labels": []}
-        if phase:
-            rec["phase"] = phase
-        log.setdefault("jev", []).append(rec)
-        state.save("evidence_audit", log)
-        return True
-    monkeypatch.setattr(ev, "jev_audit", fake_audit)
-    judge = TrialJudge()
-    done = {"p0.md": "A", "p1.md": "B", "p2.md": "none", "p3.md": "A", "research.md": "A", "unjudged.md": "none"}
-    assert ev.jev_trial(judge, done, time.time() + 60) == 2 and judge.calls == 2
-    assert all(phase is None for _, phase in seen)
-    assert ev.jev_trial(judge, done, time.time() + 60) == 1, "then a graded page not yet tried"
-    page, phase = seen[-1]
-    assert phase == "graded" and done[page] in ("A", "B") and page not in [p for p, _ in seen[:-1]]
-    assert ev.jev_trial(judge, done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_GRADED_PAGES"
-    assert "research.md" not in [p for p, _ in seen] and "unjudged.md" not in [p for p, _ in seen]
-
-
-def test_version_1_trial_records_do_not_count(write_page, timeline, monkeypatch):
-    state.save("evidence_audit", {"jev": [{"page": "p0.md", "trial": True, "grades": ["A", "none"],
-                                           "labels": [["supports", "out"]]}]})
-    assert ev.jev_trial_summary() == "No trial results yet."
-    write_page("p0.md", "Event", 1900, extra=EVIDENCE)
-    monkeypatch.setattr(ev, "gather", lambda q: (candidates(1), []))
-    monkeypatch.setattr(jev, "decide", lambda page, q: {k: "supports" for k in q})
-    assert ev.jev_trial(TrialJudge(), {"p0.md": "A"}, time.time() + 60) == 1, "the page is tried again"
-
-
-def test_trial_records_labels_and_summarises(write_page, timeline, monkeypatch):
-    path = write_page("p.md", "Signing of the Treaty", 1900)
-    monkeypatch.setattr(jev, "decide", lambda page, q: {k: ("supports" if k == "c1" else "out") for k in q})
-    kept = [dict(candidates(2)[0], relation="supports"), dict(candidates(2)[1], relation="background")]
-    rec = ev.jev_audit(str(path), "Signing of the Treaty", 1900, [], candidates(2), kept, "judge", trial=ev.TRIAL_VERSION)
-    assert rec["trial"] == ev.TRIAL_VERSION and rec["labels"] == [["supports", "supports"], ["background", "out"]]
-    assert ev.jev_trial_summary() == ("Same grade on 1/1 pages; same label on 1/2 results; "
-                                      "of the 2 results the judge kept, Jev agreed on 1.")
-
-
 # --- reasons where the two judges disagree (owner, 2026-10-01) --------------------------------
 
 ANSWERS = {"about": "forerunner", "shows": "mention", "check": "right"}
@@ -310,3 +235,75 @@ def test_no_dispute_means_no_reason_questions(write_page, timeline, monkeypatch)
     monkeypatch.setattr(jev, "decide", lambda page, q: calls.append(q) or {k: "out" for k in q})
     rec = ev.jev_audit(str(path), "Treaty", 1900, [], candidates(3), [], "m")
     assert len(calls) == 1 and "disputes" not in rec
+
+
+# --- Jev as a tip-off: the judge looks again (owner, 2026-10-02) -----------------------------
+
+@pytest.mark.parametrize("judge_label, jev_label, why, expected", [
+    ("out", "supports", {"about": "event", "shows": "happened"}, True),          # HKTV, Amoy Gardens
+    ("out", "supports", {"about": "moment", "shows": "mention"}, False),         # 2009 Games for 2008 Olympics
+    ("out", "supports", {"about": "unrelated", "shows": "nothing"}, False),      # a Cabinet record, tramway strike
+    ("supports", "background", {"about": "moment", "shows": "mention", "check": "wrong"}, True),   # mui tsai 1925
+    ("supports", "background", {"about": "event", "shows": "detail", "check": "overstated"}, False),  # the 1898 Convention
+    ("contradicts", "supports", {"about": "event", "shows": "mention"}, False),  # 1922 dates: both count it
+])
+def test_second_look_only_where_jevs_reasons_back_its_label(judge_label, jev_label, why, expected):
+    assert ev.worth_second_look({"judge": judge_label, "jev": jev_label, "jev_why": why}) is expected
+
+
+class LookAgainJudge:
+    """Keeps Record 1 the first time; on a second look alone it drops Record 1 and keeps Record 2."""
+    routing = {"evidence": ["nemotron-ultra"]}
+
+    def __init__(self):
+        self.prompts = []
+
+    def generate_json(self, role, prompt, **k):
+        self.prompts.append(prompt)
+        alone = sum(f"Record {i} |" in prompt for i in (1, 2, 3)) == 1
+        if alone and "Record 2 |" in prompt:
+            return {"relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "a study of it"}]}, "m", []
+        if alone:
+            return {"relevant": []}, "m", []
+        return {"relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "first look"}]}, "m", []
+
+
+def jev_disagrees(c1_why, c2_why):
+    def decide(page, questions):
+        if "c1" in questions:
+            return {"c1": "out", "c2": "supports", "c3": "out"}
+        why = {"c1": c1_why, "c2": c2_why}
+        return {q: why[q.split("_")[0]][q.split("_")[1]] for q in questions}
+    return decide
+
+
+def test_judge_looks_again_where_jev_has_good_reasons_and_its_second_decision_stands(write_page, timeline, monkeypatch):
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(3))])
+    monkeypatch.setattr(jev, "decide", jev_disagrees({"about": "moment", "shows": "mention", "check": "wrong"},
+                                                     {"about": "event", "shows": "happened", "check": "wrong"}))
+    write_page("p.md", "Event", 1900)
+    judge, done = LookAgainJudge(), {}
+    ev.evidence_batch(judge, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
+    assert len(judge.prompts) == 3, "the first look, then one look at each disputed result"
+    assert done == {"p.md": "B"}, "Record 1 (an archive record) dropped, Record 2 (a study) kept"
+    page = (timeline / "p.md").read_text()
+    assert "https://x/2" in page and "https://x/1" not in page
+    looks = state.load("evidence_audit")["jev"][-1]["second_look"]
+    assert [(o["url"], o["judge"], o["jev"], o["second"]) for o in looks] == [
+        ("https://x/1", "supports", "out", "out"), ("https://x/2", "out", "supports", "supports")]
+
+
+def test_jev_without_good_reasons_changes_nothing(write_page, timeline, monkeypatch):
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(3))])
+    monkeypatch.setattr(jev, "decide", jev_disagrees({"about": "event", "shows": "happened", "check": "right"},
+                                                     {"about": "moment", "shows": "mention", "check": "wrong"}))
+    write_page("p.md", "Event", 1900)
+    judge, done = LookAgainJudge(), {}
+    ev.evidence_batch(judge, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
+    assert len(judge.prompts) == 1 and done == {"p.md": "A"}
+    assert "second_look" not in state.load("evidence_audit")["jev"][-1]
+
+
+def test_pipeline_no_longer_runs_the_trial():
+    import seed_history
+    assert not hasattr(ev, "jev_trial") and "jev_trial" not in open(seed_history.__file__).read()

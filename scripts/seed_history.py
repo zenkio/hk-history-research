@@ -39,7 +39,7 @@ from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary
 from translate import translate_batch
 from photos import photos_batch
-from evidence import evidence_batch, jev_trial, write_status_page
+from evidence import evidence_batch, write_status_page
 from research_import import import_inbox
 import state
 import wikipedia
@@ -533,7 +533,6 @@ def research_worker(pool, events, deadline):
     state.save("evidence", grades)
     n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
                        save=lambda d: state.save("evidence", d))
-    jev_trial(pool, grades, deadline)
     write_status_page(events, grades)
     return n
 

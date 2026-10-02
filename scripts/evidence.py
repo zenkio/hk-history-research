@@ -313,14 +313,16 @@ def evidence_for_page(pool, path):
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
-    grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
-    if grade == "none" and failed:
-        return "retry"  # a source we could not search may still hold evidence
     if _rng.random() < AUDIT_SHARE:
         audit(pool, path, prompt, candidates, kept, model)
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
-        jev_audit(path, title, date, claims, candidates, kept, model)
+        rec = jev_audit(path, title, date, claims, candidates, kept, model)
+        if rec and rec.get("disputes"):
+            kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
+    grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
+    if grade == "none" and failed:
+        return "retry"  # a source we could not search may still hold evidence
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 
@@ -385,12 +387,14 @@ def audit(pool, path, prompt, candidates, kept, model):
 
 
 
-# FreeJev as a third, independent judge (a pilot, 2026-09-30): the same question as the evidence
-# judge, one Choice per search result, with probabilities. Recorded next to the LLM audits so the two
-# can be compared; the page keeps the first judge's decision. Free credits are finite (about 6 per
-# page), hence the share and the per-run cap.
-JEV_SHARE = 0.15
-JEV_PAGES_PER_RUN = 4
+# FreeJev as a tip-off for the evidence judge (owner, 2026-10-02). A trial on 144 pages found Jev a
+# poor judge on its own (on pages with evidence it agreed with the judge on half the results and
+# dropped real evidence the judge kept), but its reason answers single out the judge's own mistakes:
+# Jev never changes a page itself; where it disagrees with reasons that hold together, the evidence
+# judge looks again at that one result (`second_look`) and its second decision stands. About 3
+# credits a page, from the owner's free credits, hence the per-run cap.
+JEV_SHARE = 1.0
+JEV_PAGES_PER_RUN = 20
 _jev_count = [0]
 JEV_CRITERIA = {
     "out": "Not about this event: a different event, place or period, or only the general subject.",
@@ -530,74 +534,50 @@ def reason_text(why):
     return "; ".join(phrases[k][a][1] for k, a in why.items() if k in phrases and a in phrases[k])
 
 
-# Jev trial (owner, 2026-10-01): every page had been judged before the pilot started, so Jev was never
-# asked. The trial searches again for already-judged pages and has both judges label the same results,
-# until JEV_TRIAL_PAGES pages are done (about 2 credits and one free OpenRouter call a page).
-# Version 1 compared Jev with the labels left on each page, but a result the page did not list may
-# never have been shown to the judge (searches return different results over time), which made false
-# disputes; version 2 asks the judge again, so both see the same results. Only version 2 counts.
-JEV_TRIAL_PAGES = 100
-JEV_TRIAL_PER_RUN = 50
-TRIAL_VERSION = 2
-# Most pages have no evidence, so 100 random pages gave only 7 results either judge kept (owner,
-# 2026-10-02): the trial then goes on to pages graded A or B, where kept results turn up, up to this many.
-JEV_TRIAL_GRADED_PAGES = 100
+def worth_second_look(d):
+    """A dispute where Jev's own reasons back its label (trial, 2026-10-02: this kept every case where
+    Jev caught a real error of the judge and dropped almost every case where Jev was wrong)."""
+    why = d.get("jev_why") or {}
+    if d["jev"] in COUNTED and d["judge"] not in COUNTED:  # evidence the judge may have missed
+        return why.get("about") == "event" and why.get("shows") in ("happened", "detail")
+    if d["judge"] in COUNTED and d["jev"] not in COUNTED:  # evidence the judge may have over-counted
+        return (why.get("about") in ("moment", "forerunner", "general", "unrelated")
+                and why.get("shows") in ("mention", "nothing") and why.get("check") in ("wrong", "overstated"))
+    return False
 
 
-def jev_trial(pool, done_map, deadline, limit=JEV_TRIAL_PER_RUN):
-    """Audit already-judged pages with Jev and the evidence judge until JEV_TRIAL_PAGES are recorded."""
+def second_look(pool, title, date, claims, candidates, kept, disputes):
+    """Have the evidence judge look again, on its own, at each result `worth_second_look`; its second
+    decision replaces the first. Returns the new kept list (in search order); the outcomes are added
+    to the latest Jev record."""
     import state
-    if not jev.available():
-        return 0
-    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION]
-    done = {a["page"] for a in recs}
-    if len(done) < JEV_TRIAL_PAGES:
-        phase, grades, left = None, ("A", "B", "none"), JEV_TRIAL_PAGES - len(done)
-    else:
-        phase, grades = "graded", ("A", "B")
-        left = JEV_TRIAL_GRADED_PAGES - sum(a.get("phase") == "graded" for a in recs)
-    todo = [rel for rel, g in sorted(done_map.items()) if g in grades and rel not in done]
-    random.Random(0).shuffle(todo)  # a fixed mix of eras and grades, the same order every run
-    if left <= 0 or not todo:
-        return 0
-    n = 0
-    for rel in todo:
-        if n >= left or n >= limit or time.time() > deadline or not jev.available():
-            break
-        path = os.path.join(TIMELINE_DIR, rel)
-        if not os.path.exists(path):
-            continue
-        text, title, date, claims = read_page(path)
-        if "\n## Evidence\n" not in text or "\n## Research notes\n" in text:
-            continue  # never judged by the engine, or graded from Deep Research
-        candidates, failed = gather(keywords(title))
-        if failed or not candidates:
+    by_url = {c["url"]: c for c in candidates}
+    decided = {c["url"]: c for c in kept}
+    outcomes = []
+    for d in disputes:
+        c = by_url.get(d["url"])
+        if not c or not worth_second_look(d):
             continue
         try:
-            _, model, _, kept = judge(pool, title, date, claims, candidates)
+            _, _, _, again = judge(pool, title, date, claims, [dict(c)])
         except Exception as e:
-            print(f"  [jev] trial: evidence judge unavailable ({str(e)[:80]}); stopping the trial for this run")
-            break
-        if jev_audit(path, title, date, claims, candidates, kept, model, trial=TRIAL_VERSION, phase=phase):
-            n += 1
-    stage = f"{len(done) + n}/{JEV_TRIAL_PAGES} in all" if phase is None else \
-        f"graded pages: {JEV_TRIAL_GRADED_PAGES - left + n}/{JEV_TRIAL_GRADED_PAGES} ({len(todo) - n} more available)"
-    print(f"[jev] trial: {n} pages this run, {stage}. {jev_trial_summary()}")
-    return n
+            print(f"    [evidence] second look failed ({str(e)[:80]}); the first decision stands")
+            continue
+        if again:
+            decided[c["url"]] = dict(again[0], id=c["id"])
+        else:
+            decided.pop(c["url"], None)
+        second = again[0]["relation"] if again else "out"
+        outcomes.append({"url": c["url"], "judge": d["judge"], "jev": d["jev"], "second": second})
+        print(f"    [evidence] second look: {c['title'][:70]} ({c['year']}): judge {d['judge']}, Jev {d['jev']}"
+              f" -> {second}")
+    if outcomes:
+        log = state.load("evidence_audit")
+        if log.get("jev"):
+            log["jev"][-1]["second_look"] = outcomes
+            state.save("evidence_audit", log)
+    return [decided[c["url"]] for c in candidates if c["url"] in decided]
 
-
-def jev_trial_summary():
-    """One line: how often Jev agreed with the evidence judge on the trial pages."""
-    import state
-    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION]
-    pairs = [p for a in recs for p in a.get("labels", [])]
-    if not pairs:
-        return "No trial results yet."
-    same_grade = sum(a["grades"][0] == a["grades"][1] for a in recs)
-    kept_first = [p for p in pairs if p[0] != "out"]
-    return (f"Same grade on {same_grade}/{len(recs)} pages; same label on {sum(a == b for a, b in pairs)}/{len(pairs)} "
-            f"results; of the {len(kept_first)} results the judge kept, Jev agreed on "
-            f"{sum(a == b for a, b in kept_first)}.")
 
 MAX_RETRIES_PER_RUN = 20  # pages left for later before the batch gives up on a failing source
 SEARCH_VERSION = 3  # 2: failed sources no longer mark a page as searched; 3: descriptive words dropped from queries

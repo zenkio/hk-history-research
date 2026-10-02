@@ -198,33 +198,41 @@ class TrialJudge:
 EVIDENCE = "\n## Evidence\n\n> [!abstract] Evidence grade: **A**\n\n- [CO 129/1](https://x/1) (supports claim 1): the file\n"
 
 
-def test_trial_asks_the_judge_again_on_the_same_results_and_stops_at_the_total(write_page, timeline, monkeypatch):
+def test_trial_asks_the_judge_again_on_the_same_results_then_goes_on_to_graded_pages(write_page, timeline, monkeypatch):
     # PR #12: version 1 compared Jev with the page's list, but the judge may never have seen a result
     # the page leaves out, so both judges now label the same search results
     monkeypatch.setattr(ev, "JEV_TRIAL_PAGES", 2)
-    for i in range(3):
+    monkeypatch.setattr(ev, "JEV_TRIAL_GRADED_PAGES", 1)
+    for i in range(4):
         write_page(f"p{i}.md", f"Event {i}", 1900, extra=EVIDENCE)
     write_page("research.md", "Researched", 1900, extra=EVIDENCE + "\n## Research notes\n\nx\n")
     write_page("unjudged.md", "Plain", 1900)
     monkeypatch.setattr(ev, "gather", lambda q: (candidates(3), []))
     seen = []
 
-    def fake_audit(path, title, date, claims, cands, kept, model, trial=False):
-        seen.append(path.rsplit("/", 1)[-1])
+    def fake_audit(path, title, date, claims, cands, kept, model, trial=False, phase=None):
+        seen.append((path.rsplit("/", 1)[-1], phase))
         assert trial == ev.TRIAL_VERSION and model == "nemotron-ultra"
         assert [c["id"] for c in cands] == ["c1", "c2", "c3"]
         assert {c["id"]: (c["relation"], c["why"]) for c in kept} == {"c1": ("supports", "names it"),
                                                                        "c3": ("background", "general")}
         log = state.load("evidence_audit")
-        log.setdefault("jev", []).append({"page": path.rsplit("/", 1)[-1], "trial": trial, "grades": ["A", "A"], "labels": []})
+        rec = {"page": path.rsplit("/", 1)[-1], "trial": trial, "grades": ["A", "A"], "labels": []}
+        if phase:
+            rec["phase"] = phase
+        log.setdefault("jev", []).append(rec)
         state.save("evidence_audit", log)
         return True
     monkeypatch.setattr(ev, "jev_audit", fake_audit)
     judge = TrialJudge()
-    done = {"p0.md": "A", "p1.md": "B", "p2.md": "none", "research.md": "A", "unjudged.md": "none"}
+    done = {"p0.md": "A", "p1.md": "B", "p2.md": "none", "p3.md": "A", "research.md": "A", "unjudged.md": "none"}
     assert ev.jev_trial(judge, done, time.time() + 60) == 2 and judge.calls == 2
-    assert "research.md" not in seen and "unjudged.md" not in seen
-    assert ev.jev_trial(judge, done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_PAGES"
+    assert all(phase is None for _, phase in seen)
+    assert ev.jev_trial(judge, done, time.time() + 60) == 1, "then a graded page not yet tried"
+    page, phase = seen[-1]
+    assert phase == "graded" and done[page] in ("A", "B") and page not in [p for p, _ in seen[:-1]]
+    assert ev.jev_trial(judge, done, time.time() + 60) == 0, "the trial ends at JEV_TRIAL_GRADED_PAGES"
+    assert "research.md" not in [p for p, _ in seen] and "unjudged.md" not in [p for p, _ in seen]
 
 
 def test_version_1_trial_records_do_not_count(write_page, timeline, monkeypatch):

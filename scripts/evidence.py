@@ -441,7 +441,7 @@ def _check_question(c, judge_label, judge_why):
             f"\"{judge_why or 'no reason given'}\". Is that right?", JEV_CHECK_KEPT)
 
 
-def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
+def jev_audit(path, title, date, claims, candidates, kept, model, trial=False, phase=None):
     """Judge the same search results with Jev and record the agreement in evidence_audit.json ("jev")."""
     import state
     claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
@@ -472,6 +472,8 @@ def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
            "labels": [[a, b] for a, b in zip(first, second)]}
     if trial:
         rec["trial"] = trial
+    if phase:
+        rec["phase"] = phase
     disputed = [(c, a, b) for c, a, b in zip(candidates, first, second) if a != b]
     if disputed:
         why = {c["id"]: c.get("why", "") for c in kept}
@@ -537,6 +539,9 @@ def reason_text(why):
 JEV_TRIAL_PAGES = 100
 JEV_TRIAL_PER_RUN = 50
 TRIAL_VERSION = 2
+# Most pages have no evidence, so 100 random pages gave only 7 results either judge kept (owner,
+# 2026-10-02): the trial then goes on to pages graded A or B, where kept results turn up, up to this many.
+JEV_TRIAL_GRADED_PAGES = 100
 
 
 def jev_trial(pool, done_map, deadline, limit=JEV_TRIAL_PER_RUN):
@@ -544,12 +549,20 @@ def jev_trial(pool, done_map, deadline, limit=JEV_TRIAL_PER_RUN):
     import state
     if not jev.available():
         return 0
-    done = {a["page"] for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION}
-    todo = [rel for rel, g in sorted(done_map.items()) if g in ("A", "B", "none") and rel not in done]
+    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION]
+    done = {a["page"] for a in recs}
+    if len(done) < JEV_TRIAL_PAGES:
+        phase, grades, left = None, ("A", "B", "none"), JEV_TRIAL_PAGES - len(done)
+    else:
+        phase, grades = "graded", ("A", "B")
+        left = JEV_TRIAL_GRADED_PAGES - sum(a.get("phase") == "graded" for a in recs)
+    todo = [rel for rel, g in sorted(done_map.items()) if g in grades and rel not in done]
     random.Random(0).shuffle(todo)  # a fixed mix of eras and grades, the same order every run
+    if left <= 0 or not todo:
+        return 0
     n = 0
     for rel in todo:
-        if len(done) + n >= JEV_TRIAL_PAGES or n >= limit or time.time() > deadline or not jev.available():
+        if n >= left or n >= limit or time.time() > deadline or not jev.available():
             break
         path = os.path.join(TIMELINE_DIR, rel)
         if not os.path.exists(path):
@@ -565,11 +578,11 @@ def jev_trial(pool, done_map, deadline, limit=JEV_TRIAL_PER_RUN):
         except Exception as e:
             print(f"  [jev] trial: evidence judge unavailable ({str(e)[:80]}); stopping the trial for this run")
             break
-        if jev_audit(path, title, date, claims, candidates, kept, model, trial=TRIAL_VERSION):
+        if jev_audit(path, title, date, claims, candidates, kept, model, trial=TRIAL_VERSION, phase=phase):
             n += 1
-    total = len(done) + n
-    if n or total < JEV_TRIAL_PAGES:
-        print(f"[jev] trial: {n} pages this run, {total}/{JEV_TRIAL_PAGES} in all. {jev_trial_summary()}")
+    stage = f"{len(done) + n}/{JEV_TRIAL_PAGES} in all" if phase is None else \
+        f"graded pages: {JEV_TRIAL_GRADED_PAGES - left + n}/{JEV_TRIAL_GRADED_PAGES} ({len(todo) - n} more available)"
+    print(f"[jev] trial: {n} pages this run, {stage}. {jev_trial_summary()}")
     return n
 
 

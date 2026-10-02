@@ -311,14 +311,7 @@ def evidence_for_page(pool, path):
         grade, lines = evidence_block([], "", "search")
         write_evidence(path, grade, lines)
         return grade
-    for i, c in enumerate(candidates, 1):
-        c["id"] = f"c{i}"
-    listing = "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}"
-                        for c in candidates)
-    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
-    prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
-    data, model, _ = pool.generate_json("evidence", prompt)
-    kept = judged(data, candidates)
+    data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
     grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
     if grade == "none" and failed:
@@ -330,6 +323,18 @@ def evidence_for_page(pool, path):
         jev_audit(path, title, date, claims, candidates, kept, model)
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
+
+
+def judge(pool, title, date, claims, candidates):
+    """Number the candidates and have the evidence role judge them: (data, model, prompt, kept)."""
+    for i, c in enumerate(candidates, 1):
+        c["id"] = f"c{i}"
+    listing = "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}"
+                        for c in candidates)
+    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
+    prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
+    data, model, _ = pool.generate_json("evidence", prompt)
+    return data, model, prompt, judged(data, candidates)
 
 
 def judged(data, candidates):
@@ -394,6 +399,47 @@ JEV_CRITERIA = {
     "contradicts": "Bears on a numbered claim and disagrees with it (a different date, place or outcome).",
 }
 
+# Jev gives labels, never reasons, so where it and the evidence judge disagree it answers these
+# multiple-choice questions about the result (owner, 2026-10-01). "about" names the usual ways a
+# result goes wrong (the 2022 study of a biopic counted for Anita Mui's death; an 1893 proposal for
+# a 1914 exhibition). key: (question, {answer: (meaning for Jev, short phrase for the log)})
+JEV_REASONS = {
+    "about": ("What is search result {id} about?", {
+        "event": ("This event itself.", "about this event"),
+        "moment": ("The same person, place or organisation, but a different moment or episode.",
+                   "same subject, different moment"),
+        "forerunner": ("A plan, proposal, cause or forerunner of the event, not the event itself.",
+                       "a plan or forerunner, not the event"),
+        "general": ("Only the general subject or period.", "only the general subject"),
+        "unrelated": ("Something unrelated; any match with the page is only a shared word.", "unrelated"),
+    }),
+    "shows": ("What can search result {id} show about this event?", {
+        "happened": ("That the event happened: a record, report or study of it.", "shows the event happened"),
+        "detail": ("A detail of the event: its date, place, people, numbers or outcome.", "shows a detail of it"),
+        "mention": ("Nothing beyond a passing mention of the event or its subject.", "only mentions it"),
+        "nothing": ("Nothing about the event.", "shows nothing about it"),
+    }),
+}
+# The third question checks the evidence judge's own decision. Its words go only into this question,
+# never into the text Jev reads for the other questions, so they cannot sway those answers.
+JEV_CHECK_KEPT = {
+    "right": ("Yes: the reason is true and makes the result evidence for this event.", "the judge is right"),
+    "overstated": ("Partly: the result says less than the reason claims.", "the judge overstates it"),
+    "wrong": ("No: the reason is wrong or does not make the result evidence for this event.", "the judge is wrong"),
+}
+JEV_CHECK_OUT = {
+    "right": ("Yes: the result is not evidence for this event.", "the judge is right"),
+    "wrong": ("No: the result supports or contradicts a claim about this event.", "the judge is wrong"),
+}
+
+
+def _check_question(c, judge_label, judge_why):
+    if judge_label == "out":
+        return (f"The evidence judge left search result {c['id']} out as not evidence for this event. Is that right?",
+                JEV_CHECK_OUT)
+    return (f"The evidence judge counted search result {c['id']} as '{judge_label}', because: "
+            f"\"{judge_why or 'no reason given'}\". Is that right?", JEV_CHECK_KEPT)
+
 
 def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
     """Judge the same search results with Jev and record the agreement in evidence_audit.json ("jev")."""
@@ -402,9 +448,7 @@ def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
     labels, probs = {}, []
     for start in range(0, len(candidates), jev.MAX_QUESTIONS):
         chunk = candidates[start:start + jev.MAX_QUESTIONS]
-        page = (f"Page of a Hong Kong history website: {title} ({date})\nClaims:\n{claim_text}\n\n"
-                "Search results (id | type | year | title | note):\n"
-                + "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}" for c in chunk))
+        page = _jev_state(title, date, claim_text, chunk)
         questions = {c["id"]: {"type": "choice", "criteria": JEV_CRITERIA,
                                "instructions": f"Judging only from its title and note, how does search result {c['id']} relate to this page?"}
                      for c in chunk}
@@ -427,45 +471,80 @@ def jev_audit(path, title, date, claims, candidates, kept, model, trial=False):
            "mean_probability": round(sum(probs) / len(probs), 3) if probs else None,
            "labels": [[a, b] for a, b in zip(first, second)]}
     if trial:
-        rec["trial"] = True
+        rec["trial"] = trial
+    disputed = [(c, a, b) for c, a, b in zip(candidates, first, second) if a != b]
+    if disputed:
+        why = {c["id"]: c.get("why", "") for c in kept}
+        reasons = jev_reasons(title, date, claim_text, [(c, a, why.get(c["id"], "")) for c, a, _ in disputed])
+        rec["disputes"] = [{"title": c["title"][:150], "url": c["url"], "kind": c["kind"], "year": c["year"],
+                            "judge": a, "judge_why": why.get(c["id"], ""), "jev": b,
+                            "jev_why": reasons.get(c["id"], {})} for c, a, b in disputed]
     log = state.load("evidence_audit")
     log.setdefault("jev", []).append(rec)
     state.save("evidence_audit", log)
     print(f"  [jev] audit: grade {rec['grades'][1]} vs {rec['grades'][0]}, {rec['same']}/{rec['candidates']} "
           f"results judged the same" + (f", mean confidence {rec['mean_probability']:.2f}" if probs else ""))
+    for d in rec.get("disputes", []):
+        print(f"    [jev] dispute: {d['title'][:80]} ({d['year']}): judge {d['judge']}: "
+              f"{d['judge_why'] or 'no reason given (the judge explains only results it keeps)'} | "
+              f"Jev {d['jev']}: {reason_text(d['jev_why']) or 'no reasons'}")
     return rec
 
 
+def _jev_state(title, date, claim_text, results):
+    return (f"Page of a Hong Kong history website: {title} ({date})\nClaims:\n{claim_text}\n\n"
+            "Search results (id | type | year | title | note):\n"
+            + "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}" for c in results))
+
+
+def jev_reasons(title, date, claim_text, disputed):
+    """disputed: (result, judge's label, judge's reason). Returns id -> {question: answer} for the
+    JEV_REASONS questions and "check" (is the judge right?); results Jev could not answer are left out."""
+    per_call = jev.MAX_QUESTIONS // (len(JEV_REASONS) + 1)
+    out = {}
+    for start in range(0, len(disputed), per_call):
+        chunk = disputed[start:start + per_call]
+        asked = {}
+        for c, label, why in chunk:
+            for key, (q, answers) in JEV_REASONS.items():
+                asked[f"{c['id']}_{key}"] = (c["id"], key, q.format(id=c["id"]), answers)
+            q, answers = _check_question(c, label, why)
+            asked[f"{c['id']}_check"] = (c["id"], "check", q, answers)
+        questions = {qid: {"type": "choice", "instructions": q, "criteria": {a: m for a, (m, _) in answers.items()}}
+                     for qid, (_, _, q, answers) in asked.items()}
+        answers = jev.decide(_jev_state(title, date, claim_text, [c for c, _, _ in chunk]), questions)
+        if not answers:
+            break
+        for qid, (cid, key, _, options) in asked.items():
+            hit = jev.choice_of(answers.get(qid), options)
+            if hit:
+                out.setdefault(cid, {})[key] = hit[0]
+    return out
+
+
+def reason_text(why):
+    """Jev's answers to the reason questions as a short phrase for logs and reports."""
+    phrases = {**{k: opts for k, (_, opts) in JEV_REASONS.items()}, "check": {**JEV_CHECK_OUT, **JEV_CHECK_KEPT}}
+    return "; ".join(phrases[k][a][1] for k, a in why.items() if k in phrases and a in phrases[k])
+
+
 # Jev trial (owner, 2026-10-01): every page had been judged before the pilot started, so Jev was never
-# asked. The trial searches again for already-judged pages and compares Jev with the labels the
-# evidence judge left on each page, until JEV_TRIAL_PAGES pages are done (about 6 credits a page).
+# asked. The trial searches again for already-judged pages and has both judges label the same results,
+# until JEV_TRIAL_PAGES pages are done (about 2 credits and one free OpenRouter call a page).
+# Version 1 compared Jev with the labels left on each page, but a result the page did not list may
+# never have been shown to the judge (searches return different results over time), which made false
+# disputes; version 2 asks the judge again, so both see the same results. Only version 2 counts.
 JEV_TRIAL_PAGES = 100
 JEV_TRIAL_PER_RUN = 50
-_LISTED = re.compile(r"^- \[(?:[^\]]|\](?!\())*\]\((https?://[^)\s]+)\)(?: \(([^)]*)\))?:")
+TRIAL_VERSION = 2
 
 
-def page_labels(text):
-    """url -> supports / contradicts / background, from the page's ## Evidence section."""
-    m = re.search(r"\n## Evidence\n(.*?)(?=\n## |\Z)", text, re.S)
-    labels, background = {}, False
-    for line in (m.group(1) if m else "").splitlines():
-        if line.startswith("### "):
-            background = line.startswith("### Background reading")
-            continue
-        hit = _LISTED.match(line)
-        if hit:
-            url, what = hit.group(1), hit.group(2) or ""
-            labels[url] = "background" if background else ("contradicts" if "contradicts" in what else "supports")
-    return labels
-
-
-def jev_trial(done_map, deadline, limit=JEV_TRIAL_PER_RUN):
-    """Audit already-judged pages with Jev until JEV_TRIAL_PAGES are recorded. Only search results the
-    first judge also saw can be compared, so a result is "out" for the first judge unless the page lists it."""
+def jev_trial(pool, done_map, deadline, limit=JEV_TRIAL_PER_RUN):
+    """Audit already-judged pages with Jev and the evidence judge until JEV_TRIAL_PAGES are recorded."""
     import state
     if not jev.available():
         return 0
-    done = {a["page"] for a in state.load("evidence_audit").get("jev", []) if a.get("trial")}
+    done = {a["page"] for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION}
     todo = [rel for rel, g in sorted(done_map.items()) if g in ("A", "B", "none") and rel not in done]
     random.Random(0).shuffle(todo)  # a fixed mix of eras and grades, the same order every run
     n = 0
@@ -481,11 +560,12 @@ def jev_trial(done_map, deadline, limit=JEV_TRIAL_PER_RUN):
         candidates, failed = gather(keywords(title))
         if failed or not candidates:
             continue
-        for i, c in enumerate(candidates, 1):
-            c["id"] = f"c{i}"
-        labels = page_labels(text)
-        kept = [dict(c, relation=labels[c["url"]]) for c in candidates if c["url"] in labels]
-        if jev_audit(path, title, date, claims, candidates, kept, "evidence judge", trial=True):
+        try:
+            _, model, _, kept = judge(pool, title, date, claims, candidates)
+        except Exception as e:
+            print(f"  [jev] trial: evidence judge unavailable ({str(e)[:80]}); stopping the trial for this run")
+            break
+        if jev_audit(path, title, date, claims, candidates, kept, model, trial=TRIAL_VERSION):
             n += 1
     total = len(done) + n
     if n or total < JEV_TRIAL_PAGES:
@@ -496,7 +576,7 @@ def jev_trial(done_map, deadline, limit=JEV_TRIAL_PER_RUN):
 def jev_trial_summary():
     """One line: how often Jev agreed with the evidence judge on the trial pages."""
     import state
-    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial")]
+    recs = [a for a in state.load("evidence_audit").get("jev", []) if a.get("trial") == TRIAL_VERSION]
     pairs = [p for a in recs for p in a.get("labels", [])]
     if not pairs:
         return "No trial results yet."

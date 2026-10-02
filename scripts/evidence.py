@@ -81,6 +81,7 @@ Respond with ONLY this JSON:
 {{"relevant": [{{"id": "c3", "relation": "supports", "claims": [1, 2], "why": "One short sentence"}}],
   "missing": "One sentence on what evidence is still needed, or empty"}}"""
 
+RANK = {"none": 0, "B": 1, "A": 2}
 COUNTED = ("supports", "contradicts")  # relations that earn a grade; "background" is listed only
 AUDIT_SHARE = 0.05  # share of judged pages that a second model judges again, to measure agreement
 _rng = random.Random()
@@ -315,16 +316,26 @@ def evidence_for_page(pool, path):
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
+    looked_down = False
     if _rng.random() < AUDIT_SHARE:
         audit(pool, path, prompt, candidates, kept, model)
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
         rec = jev_audit(path, title, date, claims, candidates, kept, model)
         if rec and rec.get("disputes"):
+            counted = {c["url"] for c in kept if c.get("relation") in COUNTED}
             kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
+            looked_down = bool(counted - {c["url"] for c in kept if c.get("relation") in COUNTED})
     grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
     if grade == "none" and failed:
         return "retry"  # a source we could not search may still hold evidence
+    before = (re.search(r"(?m)^evidence_grade: (\w+)", text) or [None, None])[1]
+    if before in RANK and RANK[grade] < RANK[before] and not looked_down:
+        # A search returns different results over time: on 2026-10-02 judging pages again from a new
+        # search dropped evidence found earlier (36 grades fell, mostly not through Jev). Only the
+        # judge's second look at a result may lower a grade; otherwise the earlier evidence stands.
+        print(f"[evidence] {os.path.basename(path)}: a new search gives {grade}, below {before}; earlier evidence kept")
+        return before
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 

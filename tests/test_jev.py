@@ -341,3 +341,44 @@ def test_a_judged_page_keeps_its_evidence_when_a_source_is_down(write_page, time
 def test_core_era_matches_seed_history():
     import seed_history
     assert ev.JEV_REVIEW_FROM == seed_history.CORE_ERA_START
+
+
+# --- a new search never lowers a grade by itself (PR #16) ------------------------------------
+
+def graded_page(write_page, grade):
+    path = write_page("05-opium-war/p.md", "Event", 1900, extra="\n## Evidence\n\n- [old](https://x/9) (supports claim 1): found before\n")
+    path.write_text(path.read_text().replace("---\n", f"---\nevidence_grade: {grade}\n", 1))
+    return path
+
+
+class KeepsNothing:
+    routing = {"evidence": ["nemotron-ultra"]}
+
+    def generate_json(self, role, prompt, **k):
+        return {"relevant": []}, "m", []
+
+
+def test_a_new_search_alone_does_not_lower_a_grade(write_page, timeline, monkeypatch):
+    # PR #16: JUDGE_VERSION 4 rebuilt Evidence from a new search and 36 pages lost grades they had
+    monkeypatch.setenv("FREEJEV_API_KEY", "")
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(2))])
+    path = graded_page(write_page, "B")
+    before = path.read_text()
+    assert ev.evidence_for_page(KeepsNothing(), str(path)) == "B"
+    assert path.read_text() == before, "the earlier evidence stands"
+
+
+def test_a_second_look_may_lower_a_grade(write_page, timeline, monkeypatch):
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(3))])
+    monkeypatch.setattr(jev, "decide", jev_disagrees({"about": "moment", "shows": "mention", "check": "wrong"},
+                                                     {"about": "moment", "shows": "mention", "check": "right"}))
+    path = graded_page(write_page, "A")
+    assert ev.evidence_for_page(LookAgainJudge(), str(path)) == "none"
+    assert "https://x/1" not in path.read_text()
+
+
+def test_a_higher_grade_from_a_new_search_is_written(write_page, timeline, monkeypatch):
+    monkeypatch.setenv("FREEJEV_API_KEY", "")
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(3))])
+    path = graded_page(write_page, "B")
+    assert ev.evidence_for_page(LookAgainJudge(), str(path)) == "A" and "https://x/1" in path.read_text()

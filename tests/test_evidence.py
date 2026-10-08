@@ -154,12 +154,36 @@ def test_supports_without_a_claim_counts_as_background(write_page, monkeypatch, 
     assert done == {"p.md": "none"}
 
 
-def test_a_contradicting_record_grades_the_page_and_flags_it(write_page, monkeypatch, timeline):
+def test_a_contradicting_record_does_not_raise_the_grade_and_is_shown_separately(write_page, monkeypatch, timeline):
     done, text, _ = judge_page(write_page, monkeypatch, timeline,
                                [{"id": "c1", "relation": "contradicts", "claims": [1], "why": "dated 1850"}],
                                [("National Archives", lambda q: [dict(A_RECORD)])])
+    assert done == {"p.md": "none"}
+    assert "evidence_grade: none" in text
+    assert "### Contradictory evidence (does not count as support)" in text
+    assert "⚠ contradicts claim 1" in text and '"evidence-contradicts"' in text
+
+
+def test_supporting_record_still_earns_grade(write_page, monkeypatch, timeline):
+    done, text, _ = judge_page(write_page, monkeypatch, timeline,
+                               [{"id": "c1", "relation": "supports", "claims": [1], "why": "dated 1849"}],
+                               [("National Archives", lambda q: [dict(A_RECORD)])])
     assert done == {"p.md": "A"}
-    assert "⚠ **contradicts** claim 1" in text and '"evidence-contradicts"' in text
+    assert "supports claim 1" in text
+
+
+def test_new_judgement_can_downgrade_a_stale_grade_and_records_history(write_page, monkeypatch, timeline):
+    import state
+    write_page("p.md", "Consecration of St John's Cathedral", 1849, grade="A")
+    monkeypatch.setattr(ev, "SOURCES", [("OpenAlex", lambda q: [dict(B_PAPER)])])
+    pool = SaysJudge([{"id": "c1", "relation": "supports", "claims": [1], "why": "specific study"}])
+    done = {}
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
+    assert done == {"p.md": "B"}
+    assert "evidence_grade: B" in (timeline / "p.md").read_text(encoding="utf-8")
+    changes = state.load("evidence_meta")["grade_changes"]
+    assert changes[-1]["from"] == "A" and changes[-1]["to"] == "B"
+    assert changes[-1]["contradiction_found"] is False
 
 
 def test_graded_pages_are_judged_again_once_but_research_graded_pages_are_not(write_page, timeline):

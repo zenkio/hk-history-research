@@ -253,9 +253,10 @@ def analyze_and_route(pool, filepath):
     except QuotaExhausted:
         raise  # leave the file queued for the next run
     except Exception as e:
-        print(f"LLM failed for {os.path.basename(filepath)}: {e}")
-        os.replace(filepath, os.path.join(UNVERIFIED_DIR, os.path.basename(filepath)))
-        return
+        # A transient classification failure is not a historical judgement. Keep the source
+        # in the ingestion queue so a later run can retry; never silently consume it as processed.
+        print(f"LLM failed for {os.path.basename(filepath)}: {e}; leaving it queued for retry")
+        raise RuntimeError(f"Classification failed for {os.path.basename(filepath)}; source remains queued") from e
 
     title = analysis.get("title", meta.get("title", "Untitled"))
     narrative = analysis.get("narrative", "")

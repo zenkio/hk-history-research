@@ -237,13 +237,14 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
     assert done == {"p.md": "A"}
 
 
-def test_pages_left_with_only_background_reading_are_judged_again_once(write_page, timeline):
+def test_legacy_background_and_support_grades_are_rejudged_once(write_page, timeline):
     state.save("evidence_meta", {"judge_version": 2})
     write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards the grade)\n\n- x\n")
     write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
     write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
-    assert ev.reopen_for_rejudge(done) == 1
-    assert done == {"empty.md": "none", "graded.md": "B"}
+    assert ev.reopen_for_rejudge(done) == 2
+    assert done == {"empty.md": "none"}
     done["bg.md"] = "none"
+    done["graded.md"] = "B"
     assert ev.reopen_for_rejudge(done) == 0  # only once per JUDGE_VERSION

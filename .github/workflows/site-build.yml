@@ -34,6 +34,9 @@ jobs:
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
+      - name: Validate publication eligibility
+        run: python3 scripts/publication_gate.py
+
       - uses: actions/setup-node@v7
         with:
           node-version: 22

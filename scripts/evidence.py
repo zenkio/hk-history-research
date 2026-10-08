@@ -82,7 +82,8 @@ Respond with ONLY this JSON:
   "missing": "One sentence on what evidence is still needed, or empty"}}"""
 
 RANK = {"none": 0, "B": 1, "A": 2}
-COUNTED = ("supports", "contradicts")  # relations that earn a grade; "background" is listed only
+RELATIONS = ("supports", "contradicts")
+COUNTED = ("supports",)  # only direct supporting evidence can raise the evidence grade
 AUDIT_SHARE = 0.05  # share of judged pages that a second model judges again, to measure agreement
 _rng = random.Random()
 
@@ -190,34 +191,38 @@ def read_page(path):
 
 
 def grade_of(kept):
-    """A if a primary source supports or contradicts a claim, B if only scholarship does; background
-    reading grades nothing (the 2026-09-28 audit found general-topic works graded as evidence)."""
-    counted = [c for c in kept if c.get("relation") in COUNTED]
+    """Grade supporting evidence only. Contradictions are important, but are not support."""
+    counted = [c for c in kept if c.get("relation") == "supports"]
     return "A" if any(c["grade"] == "A" for c in counted) else ("B" if counted else "none")
 
 
 def evidence_block(kept, missing, model):
     grade = grade_of(kept)
     today = datetime.now().strftime("%Y-%m-%d")
-    how = (f"judged by {model} on {today}. Only sources that support or contradict a claim count towards the grade; "
-           "they have not all been read in full, so individual claims above may still need checking." if kept else
+    how = (f"judged by {model} on {today}. Only sources judged to support a claim count towards the grade; "
+           "contradictions are listed separately and block treating the affected claim as settled. "
+           "Sources have not all been read in full, so individual claims still need checking." if kept else
            f"searched on {today}; nothing relevant found yet.")
     lines = ["## Evidence", "",
              f"> [!abstract] Evidence grade: **{grade}**",
              f"> Sources from the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
              f"OpenAlex (scholarship), {how}", ""]
-    counted = [c for c in kept if c.get("relation") in COUNTED]
+    supporting = [c for c in kept if c.get("relation") == "supports"]
     for label, g in (("Primary sources (grade A)", "A"), ("Scholarship (grade B)", "B")):
-        items = [c for c in counted if c["grade"] == g]
+        items = [c for c in supporting if c["grade"] == g]
         if items:
             lines += [f"### {label}", ""]
             for c in items:
                 claims = ", ".join(map(str, c.get("claims") or []))
-                what = (f"⚠ **contradicts** claim {claims}" if c["relation"] == "contradicts"
-                        else f"supports claim {claims}" if claims else "supports")
-                lines.append(f"- [{c['cite']}]({c['url']}) ({what}): {c.get('why', '')}")
+                lines.append(f"- [{c['cite']}]({c['url']}) (supports claim {claims}): {c.get('why', '')}")
             lines.append("")
-    background = [c for c in kept if c.get("relation") not in COUNTED]
+    contradicting = [c for c in kept if c.get("relation") == "contradicts"]
+    if contradicting:
+        lines += ["### Contradictory evidence (does not count as support)", ""]
+        lines += [f"- [{c['cite']}]({c['url']}) (⚠ contradicts claim {', '.join(map(str, c.get('claims') or []))}): {c.get('why', '')}"
+                  for c in contradicting]
+        lines.append("")
+    background = [c for c in kept if c.get("relation") == "background"]
     if background:
         lines += ["### Background reading (does not count towards the grade)", ""]
         lines += [f"- [{c['cite']}]({c['url']}): {c.get('why', '')}" for c in background]
@@ -330,12 +335,20 @@ def evidence_for_page(pool, path):
     if grade == "none" and failed:
         return "retry"  # a source we could not search may still hold evidence
     before = (re.search(r"(?m)^evidence_grade: (\w+)", text) or [None, None])[1]
-    if before in RANK and RANK[grade] < RANK[before] and not looked_down:
-        # A search returns different results over time: on 2026-10-02 judging pages again from a new
-        # search dropped evidence found earlier (36 grades fell, mostly not through Jev). Only the
-        # judge's second look at a result may lower a grade; otherwise the earlier evidence stands.
-        print(f"[evidence] {os.path.basename(path)}: a new search gives {grade}, below {before}; earlier evidence kept")
-        return before
+    if before in RANK and before != grade:
+        # Preserve the audit trail, but never let a stale grade override the current judgement.
+        import state
+        meta = state.load("evidence_meta")
+        meta.setdefault("grade_changes", []).append({
+            "page": os.path.relpath(path, TIMELINE_DIR),
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "from": before,
+            "to": grade,
+            "reason": "rejudged evidence",
+            "contradiction_found": any(c.get("relation") == "contradicts" for c in kept),
+        })
+        state.save("evidence_meta", meta)
+        print(f"[evidence] {os.path.basename(path)}: grade changed {before} -> {grade}; change recorded")
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 
@@ -364,7 +377,7 @@ def judged(data, candidates):
         c["claims"] = [n for n in r.get("claims") or [] if isinstance(n, int)]
         c["why"] = r.get("why", "")
         relation = str(r.get("relation", "")).lower()
-        c["relation"] = relation if relation in COUNTED and c["claims"] else "background"
+        c["relation"] = relation if relation in RELATIONS and c["claims"] else "background"
         kept.append(c)
     return kept
 
@@ -551,9 +564,9 @@ def worth_second_look(d):
     """A dispute where Jev's own reasons back its label (trial, 2026-10-02: this kept every case where
     Jev caught a real error of the judge and dropped almost every case where Jev was wrong)."""
     why = d.get("jev_why") or {}
-    if d["jev"] in COUNTED and d["judge"] not in COUNTED:  # evidence the judge may have missed
+    if d["jev"] in RELATIONS and d["judge"] not in RELATIONS:  # evidence the judge may have missed
         return why.get("about") == "event" and why.get("shows") in ("happened", "detail")
-    if d["judge"] in COUNTED and d["jev"] not in COUNTED:  # evidence the judge may have over-counted
+    if d["judge"] in RELATIONS and d["jev"] not in RELATIONS:  # evidence the judge may have over-counted
         return (why.get("about") in ("moment", "forerunner", "general", "unrelated")
                 and why.get("shows") in ("mention", "nothing") and why.get("check") in ("wrong", "overstated"))
     return False
@@ -613,7 +626,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 4  # 2: supports / contradicts / background; background no longer earns a grade
+JUDGE_VERSION = 5  # 5: contradictions no longer raise grades; stale grades can be downgraded with an audit trail
+# 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
 # 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras
 JEV_REVIEW_FROM = "05-opium-war"  # seed_history.CORE_ERA_START: 1841 on

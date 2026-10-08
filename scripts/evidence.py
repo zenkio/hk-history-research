@@ -639,6 +639,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # graded under the looser rule
     if version < 3 and grade == "none" and "\n### Background reading" in text:
         return True  # kept, none could count
+    if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
+        return True  # prior grades counted contradictions as support; recompute under support-only grading
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

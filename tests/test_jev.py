@@ -322,9 +322,14 @@ def test_core_pages_judged_by_the_engine_are_reviewed_once(write_page, timeline)
     write_page("05-opium-war/never.md", "Plain")
     done = {"05-opium-war/a.md": "A", "16-national-security-era/b.md": "none", "04-ming-and-qing/c.md": "B",
             "05-opium-war/dr.md": "A", "05-opium-war/never.md": "none"}
-    assert ev.reopen_for_rejudge(done) == 2
+    assert ev.reopen_for_rejudge(done) == 3
     assert "05-opium-war/a.md" not in done and "16-national-security-era/b.md" not in done
-    assert state.load("evidence_meta")["rejudged_from"] == {"05-opium-war/a.md": "A", "16-national-security-era/b.md": "none"}
+    assert "04-ming-and-qing/c.md" not in done
+    assert state.load("evidence_meta")["rejudged_from"] == {
+        "05-opium-war/a.md": "A",
+        "16-national-security-era/b.md": "none",
+        "04-ming-and-qing/c.md": "B",
+    }
     assert ev.reopen_for_rejudge(done) == 0, "once per JUDGE_VERSION"
 
 
@@ -343,7 +348,7 @@ def test_core_era_matches_seed_history():
     assert ev.JEV_REVIEW_FROM == seed_history.CORE_ERA_START
 
 
-# --- a new search never lowers a grade by itself (PR #16) ------------------------------------
+# --- a new judgement can lower a stale grade, recording the change -----------------------------
 
 def graded_page(write_page, grade):
     path = write_page("05-opium-war/p.md", "Event", 1900, extra="\n## Evidence\n\n- [old](https://x/9) (supports claim 1): found before\n")
@@ -358,14 +363,16 @@ class KeepsNothing:
         return {"relevant": []}, "m", []
 
 
-def test_a_new_search_alone_does_not_lower_a_grade(write_page, timeline, monkeypatch):
-    # PR #16: JUDGE_VERSION 4 rebuilt Evidence from a new search and 36 pages lost grades they had
+def test_a_new_judgement_can_lower_a_grade_and_records_the_change(write_page, timeline, monkeypatch):
+    import state
     monkeypatch.setenv("FREEJEV_API_KEY", "")
     monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: candidates(2))])
     path = graded_page(write_page, "B")
-    before = path.read_text()
-    assert ev.evidence_for_page(KeepsNothing(), str(path)) == "B"
-    assert path.read_text() == before, "the earlier evidence stands"
+    assert ev.evidence_for_page(KeepsNothing(), str(path)) == "none"
+    assert "evidence_grade: none" in path.read_text()
+    change = state.load("evidence_meta")["grade_changes"][-1]
+    assert (change["from"], change["to"]) == ("B", "none")
+    assert change["page"] == "05-opium-war/p.md"
 
 
 def test_a_second_look_may_lower_a_grade(write_page, timeline, monkeypatch):

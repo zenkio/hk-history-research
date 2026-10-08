@@ -6,7 +6,8 @@ import evidence as ev
 import state
 
 A_RECORD = {"kind": "archive record", "grade": "A", "year": 1900, "title": "CO 129 Treaty file",
-            "url": "https://discovery.nationalarchives.gov.uk/details/r/1", "cite": "CO 129/1", "note": "n",\n            "passage": "The treaty was signed in Hong Kong in 1849.", "passage_status": "inspectable_record"}
+            "url": "https://discovery.nationalarchives.gov.uk/details/r/1", "cite": "CO 129/1", "note": "n",
+            "passage": "The treaty was signed in Hong Kong in 1849.", "passage_status": "inspectable_record"}
 
 
 class Judge:
@@ -81,7 +82,8 @@ def test_openalex_sends_the_api_key_when_set(monkeypatch):
     # Since Feb 2026 OpenAlex gives 100 credits a day without a key (10 searches): run 27's 429s.
     seen = []
     monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: seen.append(url) or {"results": []})
-    monkeypatch.setenv("OPENALEX_API_KEY", " key123\n")
+    monkeypatch.setenv("OPENALEX_API_KEY", " key123
+")
     ev.openalex("Tung Wah")
     monkeypatch.delenv("OPENALEX_API_KEY")
     ev.openalex("Tung Wah")
@@ -113,7 +115,9 @@ def test_log_line_for_a_search_that_found_nothing(write_page, monkeypatch, capsy
 # --- stricter judging (2026-09-28 audit: general-topic works were graded as evidence) ---------
 
 B_PAPER = {"kind": "scholarship", "grade": "B", "year": 2009, "title": "Chinese ancestor worship in general",
-           "url": "https://doi.org/10.1/x", "cite": "Lakos (2009)", "note": "n",\n           "passage": "This study examines the founding and history of the institution in Hong Kong.",\n           "passage_status": "inspectable_abstract"}
+           "url": "https://doi.org/10.1/x", "cite": "Lakos (2009)", "note": "n",
+           "passage": "This study examines the founding and history of the institution in Hong Kong.",
+           "passage_status": "inspectable_abstract"}
 
 
 class SaysJudge:
@@ -187,8 +191,20 @@ def test_new_judgement_can_downgrade_a_stale_grade_and_records_history(write_pag
 
 
 def test_graded_pages_are_judged_again_once_but_research_graded_pages_are_not(write_page, timeline):
-    engine = write_page("engine.md", "Treaty signing", extra="\n## Evidence\n\nold judgement\n")
-    write_page("research.md", "Police founding", extra="\n## Evidence\n\nx\n\n## Research notes\n\ny\n")
+    engine = write_page("engine.md", "Treaty signing", extra="
+## Evidence
+
+old judgement
+")
+    write_page("research.md", "Police founding", extra="
+## Evidence
+
+x
+
+## Research notes
+
+y
+")
     done = {"engine.md": "B", "research.md": "A", "none.md": "none", "gone.md": "A"}
     assert ev.reopen_for_rejudge(done) == 1
     assert done == {"research.md": "A", "none.md": "none", "gone.md": "A"}
@@ -207,7 +223,8 @@ def test_audit_asks_a_different_model_and_records_agreement(write_page, monkeypa
     (rec,) = state.load("evidence_audit")["audits"]
     assert rec["models"] == ["nemotron-ultra", "nemotron-super"] and rec["grades"] == ["B", "none"]
     assert (rec["same"], rec["candidates"]) == (1, 2)  # c2 left out by both; c1 judged differently
-    assert "same grade on 0%" in "\n".join(ev.audit_summary())
+    assert "same grade on 0%" in "
+".join(ev.audit_summary())
 
 
 def test_audit_answered_by_the_same_model_is_not_recorded(write_page, monkeypatch, timeline):
@@ -239,9 +256,25 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
 
 def test_legacy_background_and_support_grades_are_rejudged_once(write_page, timeline):
     state.save("evidence_meta", {"judge_version": 2})
-    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards the grade)\n\n- x\n")
-    write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
-    write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
+    write_page("bg.md", "Harbour survey", extra="
+## Evidence
+
+### Background reading (does not count towards the grade)
+
+- x
+")
+    write_page("empty.md", "Plague", extra="
+## Evidence
+
+nothing relevant found yet
+")
+    write_page("graded.md", "Treaty", extra="
+## Evidence
+
+### Background reading
+
+- x
+")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
     assert ev.reopen_for_rejudge(done) == 2
     assert done == {"empty.md": "none"}

@@ -513,10 +513,10 @@ def next_task(plan):
     for slug, _, _ in ERAS:
         if not plan["eras"][slug]["overview"]:
             return ("overview", slug)
-    pending = by_priority(e for e in plan["events"] if e["status"] == "pending")
+    pending = by_priority(e for e in plan["events"] if e["status"] in ("pending", "failed"))
     if pending:
         return ("draft", pending[0])
-    ents = [e for e in plan["entities"].values() if e["status"] == "pending"]
+    ents = [e for e in plan["entities"].values() if e["status"] in ("pending", "failed")]
     if ents:
         return ("entity", max(ents, key=lambda e: len(e["mentions"])))
     # Everything drafted: deepen the thinnest era that still has rounds left.
@@ -543,26 +543,30 @@ def photos_worker(pool, events, deadline):
                         save=lambda d: state.save("photos", d))
 
 
-def start_worker(name, fn, results):
+def start_worker(name, fn, results, failures=None):
     def target():
         try:
             results[name] = fn()
-        except Exception:
+        except Exception as e:
             print(f"[{name}] worker crashed:")
             traceback.print_exc()
             results[name] = 0
+            if failures is not None:
+                failures.append({"stage": name, "error": f"{type(e).__name__}: {e}"})
     t = threading.Thread(target=target, name=name, daemon=True)
     t.start()
     return t
 
 
-def run(max_calls, minutes, commit=False):
+def run(max_calls, minutes, commit=False, failures=None):
     """Three workers run in parallel, each on a different quota, so a slow or exhausted
     provider only holds up its own work:
       research (thread): OpenRouter + archive APIs -> Deep Research import, evidence
       photos   (thread): Gemma vision + Commons    -> photo evidence
       gemini   (main):   Gemini 2.5 / 3.x           -> fact-check, then drafting
     """
+    failures = failures if failures is not None else []
+    started_at = datetime.now().isoformat(timespec="seconds")
     pool = ModelPool()
     plan = load_plan()
     deadline = time.time() + minutes * 60
@@ -570,8 +574,8 @@ def run(max_calls, minutes, commit=False):
     print(f"Model ids: {pool.state['resolved']}")
     events = by_priority(plan["events"])  # snapshot: workers never see the drafting loop's appends
     results = {}
-    workers = [start_worker("research", lambda: research_worker(pool, events, deadline), results),
-               start_worker("photos", lambda: photos_worker(pool, events, deadline), results)]
+    workers = [start_worker("research", lambda: research_worker(pool, events, deadline), results, failures),
+               start_worker("photos", lambda: photos_worker(pool, events, deadline), results, failures)]
 
     done = verify_pages(pool, plan, deadline)
     if TRANSLATE_WITH_AI:
@@ -586,6 +590,7 @@ def run(max_calls, minutes, commit=False):
                 done += translate_batch(pool, plan, deadline, limit=max_calls - done, save=save_plan)
             break
         kind, arg = task
+        task_failed = False
         try:
             if kind == "outline":
                 outline(pool, plan, arg, 20)
@@ -624,13 +629,17 @@ def run(max_calls, minutes, commit=False):
             print(f"Out of quota: {e}")
             break
         except Exception as e:
-            # A malformed response should not stall the queue forever.
-            print(f"[{kind}] failed: {e}")
+            # Never mark a failed required step as complete. Save partial progress and
+            # stop this run so the same failed task cannot spin until the deadline.
+            print(f"[{kind}] failed: {type(e).__name__}: {e}")
+            failures.append({"stage": kind, "task": arg.get("file", arg.get("title", arg)) if isinstance(arg, dict) else arg,
+                             "error": f"{type(e).__name__}: {e}"})
             if kind in ("draft", "entity"):
                 arg["status"] = "failed"
-            elif kind in ("outline", "overview"):
-                plan["eras"][arg]["outlined" if kind == "outline" else "overview"] = True
+            task_failed = True
         save_plan(plan)
+        if task_failed:
+            break
         done += 1
         if commit and done % COMMIT_EVERY == 0:
             try:
@@ -647,9 +656,18 @@ def run(max_calls, minutes, commit=False):
         counts[e["status"]] = counts.get(e["status"], 0) + 1
     ent_done = sum(1 for e in plan["entities"].values() if e["status"] == "done")
     checked = sum(1 for e in plan["events"] if e.get("verified"))
+    plan["last_run"] = {
+        "started_at": started_at,
+        "finished_at": datetime.now().isoformat(timespec="seconds"),
+        "status": "partial_failure" if failures else "success",
+        "failures": failures,
+    }
+    save_plan(plan)
     print(f"Workers: {results}")
     print(f"Ran {done} tasks. Events: {counts}, Wikipedia-checked {checked}. "
           f"Entities: {ent_done}/{len(plan['entities'])}. Quota now: {pool.summary()}")
+    if failures:
+        print(f"PIPELINE PARTIAL FAILURE: {len(failures)} required stage(s) failed; successful partial work was retained.")
     return done
 
 
@@ -683,11 +701,15 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if not any_ai_key():
         sys.exit("No AI key set (GEMINI_API_KEY, OPENROUTER_API_KEY or OPEN_ROUTER_KEY_RESEARCHER)")
-    run(args.max_calls, args.minutes, commit=not args.no_commit)
+    failures = []
+    run(args.max_calls, args.minutes, commit=not args.no_commit, failures=failures)
     # Always commit what changed (git_commit skips a clean tree): run() counts only drafting tasks, so
     # once drafting was done, Deep Research imports and evidence from the workers were never saved.
+    # Commit successful partial work and its failure record, then fail the workflow visibly.
     if not args.no_commit:
         git_commit()
+    if failures:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

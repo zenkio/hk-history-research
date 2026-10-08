@@ -638,7 +638,7 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 5  # 5: contradictions no longer raise grades; stale grades can be downgraded with an audit trail
+JUDGE_VERSION = 6  # 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
 # 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras

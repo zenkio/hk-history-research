@@ -6,7 +6,8 @@ import evidence as ev
 import state
 
 A_RECORD = {"kind": "archive record", "grade": "A", "year": 1900, "title": "CO 129 Treaty file",
-            "url": "https://discovery.nationalarchives.gov.uk/details/r/1", "cite": "CO 129/1", "note": "n"}
+            "url": "https://discovery.nationalarchives.gov.uk/details/r/1", "cite": "CO 129/1", "note": "n",
+            "passage": "The treaty was signed in Hong Kong in 1849.", "passage_status": "inspectable_record"}
 
 
 class Judge:
@@ -113,7 +114,9 @@ def test_log_line_for_a_search_that_found_nothing(write_page, monkeypatch, capsy
 # --- stricter judging (2026-09-28 audit: general-topic works were graded as evidence) ---------
 
 B_PAPER = {"kind": "scholarship", "grade": "B", "year": 2009, "title": "Chinese ancestor worship in general",
-           "url": "https://doi.org/10.1/x", "cite": "Lakos (2009)", "note": "n"}
+           "url": "https://doi.org/10.1/x", "cite": "Lakos (2009)", "note": "n",
+           "passage": "This study examines the founding and history of the institution in Hong Kong.",
+           "passage_status": "inspectable_abstract"}
 
 
 class SaysJudge:
@@ -317,3 +320,23 @@ def test_main_exits_nonzero_after_pipeline_failure(monkeypatch):
     with pytest.raises(SystemExit) as exc:
         sh.main(["--no-commit"])
     assert exc.value.code == 1
+
+
+def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page, monkeypatch, timeline):
+    metadata_only = dict(A_RECORD, passage="", passage_status="metadata_only")
+    done, text, _ = judge_page(write_page, monkeypatch, timeline,
+                               [{"id": "c1", "relation": "supports", "claims": [1], "why": "title looks relevant"}],
+                               [("National Archives", lambda q: [metadata_only])])
+    assert done == {"p.md": "none"}
+    assert "evidence_grade: none" in text
+    assert "### Background reading (does not count towards the grade)" in text
+    assert "Source passage not inspected" in text
+
+
+def test_judge_prompt_includes_inspectable_passage_and_status(write_page, monkeypatch, timeline):
+    pool = PromptJudge([{"id": "c1", "relation": "supports", "claims": [1], "why": "passage states date"}])
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+    write_page("p.md", "Signing of the Treaty", 1849)
+    ev.evidence_batch(pool, {}, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
+    assert "passage_status: inspectable_record" in pool.prompt
+    assert "The treaty was signed in Hong Kong in 1849." in pool.prompt

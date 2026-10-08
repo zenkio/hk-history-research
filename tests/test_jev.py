@@ -111,7 +111,8 @@ def test_bot_filter_403_is_not_reported_as_a_bad_key(monkeypatch, capsys):
 
 def candidates(n):
     return [{"id": f"c{i}", "kind": "archive record" if i % 2 else "scholarship", "grade": "A" if i % 2 else "B",
-             "year": 1900, "title": f"Record {i}", "note": "n", "url": f"https://x/{i}", "cite": f"C{i}"}
+             "year": 1900, "title": f"Record {i}", "note": "n", "passage": f"Inspected source text about Record {i}.",
+             "passage_status": "inspectable_text", "url": f"https://x/{i}", "cite": f"C{i}"}
             for i in range(1, n + 1)]
 
 

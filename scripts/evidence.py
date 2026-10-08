@@ -56,8 +56,14 @@ Page: {title} ({date})
 Claims made on the page:
 {claims}
 
-Candidate sources found by search (id, type, year, title, note):
+Candidate sources found by search (id, type, year, title, note, inspectable passage):
 {candidates}
+
+A title, catalogue description or search snippet is not the same as reading the source. The passage
+field is usable text inspected from the source itself (for scholarship, an abstract is acceptable for
+claims it directly states). If passage_status is metadata_only or passage is empty, it cannot support
+or contradict a factual claim: at most classify it as background or exclude it, and say the source
+still needs inspection.
 
 Keep a candidate ONLY if it is about THIS event: the same event, place and period. A work on
 the general subject is not evidence for a specific event (a study of Chinese ancestor worship is
@@ -136,7 +142,8 @@ def openalex(query, year=None):
         out.append({"kind": "scholarship", "grade": "B", "year": w.get("publication_year"),
                     "title": w["title"], "url": url,
                     "cite": f"{authors} ({w.get('publication_year')}). *{w['title']}*." + (f" {venue}." if venue else ""),
-                    "note": abstract or venue})
+                    "note": abstract or venue,
+                    "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only"})
     return out
 
 
@@ -153,7 +160,7 @@ def national_archives(query):
         out.append({"kind": "archive record", "grade": "A", "year": r.get("coveringDates", ""),
                     "title": f"{ref}: {desc[:160]}", "url": f"https://discovery.nationalarchives.gov.uk/details/r/{r.get('id')}",
                     "cite": f"The National Archives (UK), {ref}, {r.get('coveringDates', '')}. {desc[:200]}",
-                    "note": desc[:300]})
+                    "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
     return out
 
 
@@ -171,7 +178,8 @@ def internet_archive(query):
         out.append({"kind": "contemporary publication", "grade": "A", "year": d.get("year"),
                     "title": d.get("title", d["identifier"]), "url": f"https://archive.org/details/{d['identifier']}",
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', d['identifier'])}* ({d.get('year', 'n.d.')}), Internet Archive.",
-                    "note": re.sub(r"<[^>]+>", "", desc)[:300]})
+                    "note": re.sub(r"<[^>]+>", "", desc)[:300],
+                    "passage": "", "passage_status": "metadata_only"})
     return out
 
 
@@ -354,8 +362,11 @@ def judge(pool, title, date, claims, candidates):
     """Number the candidates and have the evidence role judge them: (data, model, prompt, kept)."""
     for i, c in enumerate(candidates, 1):
         c["id"] = f"c{i}"
-    listing = "\n".join(f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | {c['note'][:220]}"
-                        for c in candidates)
+    listing = "\n".join(
+        f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | note: {c['note'][:180]} "
+        f"| passage_status: {c.get('passage_status', 'metadata_only')} "
+        f"| passage: {c.get('passage', '')[:1200]}"
+        for c in candidates)
     claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
@@ -374,7 +385,11 @@ def judged(data, candidates):
         c["claims"] = [n for n in r.get("claims") or [] if isinstance(n, int)]
         c["why"] = r.get("why", "")
         relation = str(r.get("relation", "")).lower()
-        c["relation"] = relation if relation in RELATIONS and c["claims"] else "background"
+        # Fail closed: only an inspected passage may support or contradict a claim.
+        has_passage = bool(str(c.get("passage", "")).strip()) and c.get("passage_status") != "metadata_only"
+        c["relation"] = relation if relation in RELATIONS and c["claims"] and has_passage else "background"
+        if relation in RELATIONS and not has_passage:
+            c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
         kept.append(c)
     return kept
 

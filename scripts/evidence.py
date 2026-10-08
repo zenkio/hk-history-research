@@ -321,16 +321,13 @@ def evidence_for_page(pool, path):
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
-    looked_down = False
     if _rng.random() < AUDIT_SHARE:
         audit(pool, path, prompt, candidates, kept, model)
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
         rec = jev_audit(path, title, date, claims, candidates, kept, model)
         if rec and rec.get("disputes"):
-            counted = {c["url"] for c in kept if c.get("relation") in COUNTED}
             kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
-            looked_down = bool(counted - {c["url"] for c in kept if c.get("relation") in COUNTED})
     grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
     if grade == "none" and failed:
         return "retry"  # a source we could not search may still hold evidence

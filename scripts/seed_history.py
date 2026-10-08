@@ -516,7 +516,7 @@ def next_task(plan):
     pending = by_priority(e for e in plan["events"] if e["status"] in ("pending", "failed"))
     if pending:
         return ("draft", pending[0])
-    ents = [e for e in plan["entities"].values() if e["status"] == "pending"]
+    ents = [e for e in plan["entities"].values() if e["status"] in ("pending", "failed")]
     if ents:
         return ("entity", max(ents, key=lambda e: len(e["mentions"])))
     # Everything drafted: deepen the thinnest era that still has rounds left.

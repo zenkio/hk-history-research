@@ -248,3 +248,72 @@ def test_legacy_background_and_support_grades_are_rejudged_once(write_page, time
     done["bg.md"] = "none"
     done["graded.md"] = "B"
     assert ev.reopen_for_rejudge(done) == 0  # only once per JUDGE_VERSION
+
+
+# --- P0 pipeline failure safety ---------------------------------------------------------------
+
+def test_failed_required_task_is_not_marked_complete_and_run_is_recorded(monkeypatch):
+    import seed_history as sh
+
+    class Pool:
+        state = {"resolved": {}}
+        def summary(self):
+            return "fake quota"
+
+    plan = {
+        "eras": {slug: {"outlined": False, "overview": False, "rounds": 0}
+                 for slug, _, _ in sh.ERAS},
+        "events": [],
+        "entities": {},
+    }
+    saved = []
+    failures = []
+    monkeypatch.setattr(sh, "ModelPool", Pool)
+    monkeypatch.setattr(sh, "load_plan", lambda: plan)
+    monkeypatch.setattr(sh, "save_plan", lambda p: saved.append(dict(p)))
+    monkeypatch.setattr(sh, "research_worker", lambda *a: 0)
+    monkeypatch.setattr(sh, "photos_worker", lambda *a: 0)
+    monkeypatch.setattr(sh, "verify_pages", lambda *a: 0)
+
+    def fail_outline(*a, **k):
+        raise RuntimeError("model response malformed")
+    monkeypatch.setattr(sh, "outline", fail_outline)
+
+    sh.run(max_calls=1, minutes=1, failures=failures)
+
+    first_era = sh.ERAS[0][0]
+    assert plan["eras"][first_era]["outlined"] is False
+    assert plan["last_run"]["status"] == "partial_failure"
+    assert plan["last_run"]["failures"][0]["stage"] == "outline"
+    assert failures[0]["error"] == "RuntimeError: model response malformed"
+
+
+def test_worker_crash_is_added_to_failure_record():
+    import seed_history as sh
+
+    results, failures = {}, []
+    def crash():
+        raise RuntimeError("source worker crashed")
+
+    thread = sh.start_worker("research", crash, results, failures)
+    thread.join(timeout=2)
+
+    assert not thread.is_alive()
+    assert results["research"] == 0
+    assert failures == [{"stage": "research", "error": "RuntimeError: source worker crashed"}]
+
+
+def test_main_exits_nonzero_after_pipeline_failure(monkeypatch):
+    import seed_history as sh
+
+    monkeypatch.setattr(sh, "any_ai_key", lambda: True)
+    monkeypatch.setattr(sh, "git_commit", lambda: None)
+
+    def failed_run(*args, failures, **kwargs):
+        failures.append({"stage": "research", "error": "RuntimeError: worker crashed"})
+        return 0
+    monkeypatch.setattr(sh, "run", failed_run)
+
+    with pytest.raises(SystemExit) as exc:
+        sh.main(["--no-commit"])
+    assert exc.value.code == 1

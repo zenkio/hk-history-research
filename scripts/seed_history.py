@@ -535,12 +535,17 @@ def research_worker(pool, events, deadline):
     import_inbox(events, grades)
     state.save("evidence", grades)
     try:
-        return evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
-                              save=lambda d: state.save("evidence", d))
-    finally:
-        # Even a partial failure should leave the public coverage summary consistent with
-        # successfully persisted work; the worker failure is still raised to the pipeline.
-        write_status_page(events, grades)
+        n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
+                           save=lambda d: state.save("evidence", d))
+    except Exception:
+        # Preserve the original research error if refreshing the summary also fails.
+        try:
+            write_status_page(events, grades)
+        except Exception as summary_error:
+            print(f"[research] could not refresh evidence coverage summary: {summary_error}")
+        raise
+    write_status_page(events, grades)
+    return n
 
 
 def photos_worker(pool, events, deadline):

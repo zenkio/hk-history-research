@@ -29,7 +29,7 @@ import random
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 
 from gemini_pool import QuotaExhausted, RequestRejected
 import jev
@@ -125,16 +125,33 @@ def claim_search_queries(title, claims):
     return queries
 
 
+def reserve_openalex_search():
+    """Reserve one anonymous OpenAlex search from its documented 10-search daily allowance."""
+    if (os.environ.get("OPENALEX_API_KEY") or "").strip():
+        return True
+    import state
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    budget = state.load("source_budget")
+    if budget.get("date") != today:
+        budget = {"date": today, "openalex_searches": 0}
+    if int(budget.get("openalex_searches", 0)) >= 10:
+        return False
+    budget["openalex_searches"] = int(budget.get("openalex_searches", 0)) + 1
+    state.save("source_budget", budget)
+    return True
+
+
 def gather_claim_candidates(queries):
     """Search each query, deduplicate URLs, and bound the prompt size per source."""
     combined, seen, successful_sources, queried_sources = [], set(), set(), set()
     max_per_source = 12
     has_openalex_key = bool((os.environ.get("OPENALEX_API_KEY") or "").strip())
+    use_openalex = reserve_openalex_search()
     for query_index, query in enumerate(queries):
         # OpenAlex's anonymous allowance is only 10 searches/day. Search it once per page
         # without a key; claim-specific queries still run against the archive adapter(s).
         selected_sources = SOURCES
-        if query_index > 0 and not has_openalex_key:
+        if (query_index > 0 or not use_openalex) and not has_openalex_key:
             selected_sources = [(name, fn) for name, fn in SOURCES if name != "OpenAlex"]
         queried_sources.update(name for name, _ in selected_sources)
         candidates, failed = gather(query, sources=selected_sources)

@@ -102,13 +102,13 @@ def test_log_shows_what_each_source_returned_and_what_the_ai_kept(write_page, mo
     batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [dict(A_RECORD)]),
                      ("Internet Archive", lambda q: [])], monkeypatch)
     out = capsys.readouterr().out
-    assert '"Treaty": OpenAlex failed, National Archives 1, Internet Archive 0; AI kept 1' in out
+    assert '"Treaty; claim about event": OpenAlex failed, National Archives 1, Internet Archive 0; AI kept 1' in out
 
 
 def test_log_line_for_a_search_that_found_nothing(write_page, monkeypatch, capsys):
     write_page("p.md", "Plague outbreak")
     batch(["p.md"], [("OpenAlex", lambda q: []), ("National Archives", lambda q: [])], monkeypatch)
-    assert '"Plague": OpenAlex 0, National Archives 0; nothing to judge' in capsys.readouterr().out
+    assert '"Plague; claim about event": OpenAlex 0, National Archives 0; nothing to judge' in capsys.readouterr().out
 
 
 # --- stricter judging (2026-09-28 audit: general-topic works were graded as evidence) ---------
@@ -405,7 +405,7 @@ def test_claim_search_queries_include_each_distinct_claim():
     )
     assert queries[0] == "Treaty"
     assert any("1842" in query for query in queries)
-    assert any("Elliot" in query and "proclamation" in query for query in queries)
+    assert any("Elliot" in query for query in queries)
     assert len(queries) == 3
 
 

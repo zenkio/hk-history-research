@@ -52,13 +52,13 @@ def test_legacy_error_marker_is_reopened_for_retry(write_page, monkeypatch):
     assert done == {"pending.md": "B"}
 
 
-def test_page_with_no_results_while_a_source_is_down_is_not_recorded(write_page, monkeypatch):
-    # A failed retrieval must be visible as a partial failure and remain retryable.
+def test_page_with_no_results_while_a_source_is_down_remains_pending(write_page, monkeypatch, capsys):
+    # Incomplete retrieval stays retryable without failing the entire scheduled run.
     write_page("p.md", "Plague outbreak")
     done = {}
-    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
-        batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch, done)
+    batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch, done)
     assert done == {}
+    assert "remain pending" in capsys.readouterr().out
 
 
 def test_evidence_found_elsewhere_is_kept_while_a_source_is_down(write_page, monkeypatch, timeline):
@@ -73,7 +73,7 @@ def test_all_sources_answering_with_nothing_is_recorded_none(write_page, monkeyp
     assert batch(["p.md"], [("OpenAlex", lambda q: []), ("National Archives", lambda q: [])], monkeypatch) == {"p.md": "none"}
 
 
-def test_failing_source_is_rested_after_three_failures(write_page, monkeypatch):
+def test_failing_source_is_rested_after_three_failures(write_page, monkeypatch, capsys):
     calls = []
 
     def counting_fail(q):
@@ -81,9 +81,10 @@ def test_failing_source_is_rested_after_three_failures(write_page, monkeypatch):
         fail(q)
     for i in range(5):
         write_page(f"p{i}.md", f"Harbour event {'abcde'[i]}")
-    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
-        batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
+    done = batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
     assert len(calls) == ev.SOURCE_FAILS_TO_REST
+    assert len(done) == 0
+    assert "remain pending" in capsys.readouterr().out
 
 
 def test_old_none_results_are_searched_again_once():
@@ -361,7 +362,7 @@ def test_rejected_evidence_judgement_is_not_marked_done_and_fails_batch(write_pa
 
     monkeypatch.setattr(ev, "evidence_for_page", reject)
     done = {}
-    with pytest.raises(RuntimeError, match="Evidence batch partially failed"):
+    with pytest.raises(RuntimeError, match="Evidence batch had .* blocking failure"):
         ev.evidence_batch(
             object(), done, [{"file": "pending.md", "status": "done"}],
             time.time() + 10, limit=1,

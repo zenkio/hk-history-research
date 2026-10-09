@@ -55,6 +55,10 @@ jobs:
       - name: Run tests
         run: python -m pytest tests -q
 
+      # Apply only draft metadata/warnings in this ephemeral CI checkout; narratives and sources are untouched.
+      - name: Label legacy AI drafts in CI workspace
+        run: python3 scripts/label_legacy_ai_drafts.py --write
+
       # Exercise the exact publication gate used by deployment against the real private corpus.
       - name: Validate publication eligibility against private corpus
         run: python3 scripts/publication_gate.py

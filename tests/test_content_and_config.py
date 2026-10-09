@@ -44,10 +44,15 @@ def test_public_pipeline_log_never_shows_script_output():
     assert ">> \"$LOG\"" not in marker["run"]
 
 
-def test_pipeline_is_off_unless_switched_on():
-    # It runs either on Actions or on our own machine, never both (same quota, same branch).
-    assert workflow("ingestion.yml")["jobs"]["pipeline"]["if"] == \
-        "github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'"
+def test_pipeline_runs_on_a_bounded_daily_schedule_without_self_queueing():
+    wf = workflow("ingestion.yml")
+    assert wf["on"]["schedule"] == [{"cron": "17 3 * * *"}]
+    assert "workflow_dispatch" in wf["on"]
+    assert "if" not in wf["jobs"]["pipeline"]
+    assert wf["permissions"] == {"contents": "read"}
+    assert wf["concurrency"]["cancel-in-progress"] is False
+    assert not any(s.get("name") == "Queue the next run"
+                   for s in wf["jobs"]["pipeline"]["steps"])
 
 
 
@@ -58,19 +63,12 @@ def test_scheduled_runs_avoid_the_top_of_the_hour():
             assert minute.isdigit() and 10 <= int(minute) <= 50, f"{os.path.basename(path)}: minute {minute}"
 
 
-def test_pipeline_queues_its_next_run_only_while_switched_on():
-    # GitHub dropped 12 of 14 scheduled runs on 2026-09-29 (PR #5): each successful run queues the
-    # next, but never while the pipeline runs elsewhere, and never after a failure (no retry loop).
+def test_pipeline_has_no_automatic_self_queue():
     wf = workflow("ingestion.yml")
-    step = wf["jobs"]["pipeline"]["steps"][-2]
-    assert step["name"] == "Queue the next run"
-    assert step["if"] == "success() && vars.PIPELINE_ON_ACTIONS == 'on'"
-    assert "gh workflow run ingestion.yml" in step["run"] and "--ref main" in step["run"]
-    # Only after a busy run: idle runs take 2 minutes, and queueing after them looped (PR #7).
-    assert '-lt 20 ]' in step["run"] and "RUN_STARTED" in step["run"]
-    assert any('RUN_STARTED=$(date +%s)' in s.get("run", "") for s in wf["jobs"]["pipeline"]["steps"][:3])
-    assert wf["permissions"] == {"contents": "read", "actions": "write"}
-    assert wf["concurrency"]["cancel-in-progress"] is False  # the queued run waits, never cancels
+    steps = wf["jobs"]["pipeline"]["steps"]
+    assert not any("gh workflow run ingestion.yml" in s.get("run", "") for s in steps)
+    assert wf["permissions"] == {"contents": "read"}
+    assert wf["concurrency"]["cancel-in-progress"] is False
 
 def test_workflows_publish_nothing_but_the_built_site():
     # Artifacts of a public repository can be downloaded by anyone: only the built site may be uploaded.

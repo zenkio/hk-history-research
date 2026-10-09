@@ -425,3 +425,18 @@ def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
     assert len(candidates) == 7
     assert len({(c["source"], c["url"]) for c in candidates}) == len(candidates)
     assert any(c["url"] == "https://archive.example/claim two" for c in candidates)
+
+
+def test_claim_search_uses_openalex_only_once_without_api_key(monkeypatch):
+    monkeypatch.delenv("OPENALEX_API_KEY", raising=False)
+    monkeypatch.setattr(ev, "SOURCES", [("OpenAlex", lambda q: []), ("Archive", lambda q: [])])
+    calls = []
+
+    def fake_gather(query, sources=None):
+        calls.append((query, [name for name, _ in sources]))
+        return [], []
+
+    monkeypatch.setattr(ev, "gather", fake_gather)
+    ev.gather_claim_candidates(["event title", "first claim", "second claim"])
+    assert "OpenAlex" in calls[0][1]
+    assert all("OpenAlex" not in source_names for _, source_names in calls[1:])

@@ -39,6 +39,19 @@ def batch(pages, sources, monkeypatch, done=None):
     return done
 
 
+
+def test_legacy_error_marker_is_reopened_for_retry(write_page, monkeypatch):
+    write_page("pending.md", "Example event")
+    monkeypatch.setattr(ev, "evidence_for_page", lambda *args, **kwargs: "B")
+    done = {"pending.md": "error"}
+    result = ev.evidence_batch(
+        Judge(), done, [{"file": "pending.md", "status": "done"}],
+        time.time() + 10, limit=1,
+    )
+    assert result == 1
+    assert done == {"pending.md": "B"}
+
+
 def test_page_with_no_results_while_a_source_is_down_is_not_recorded(write_page, monkeypatch):
     # A failed retrieval must be visible as a partial failure and remain retryable.
     write_page("p.md", "Plague outbreak")

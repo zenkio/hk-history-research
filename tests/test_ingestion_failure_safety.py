@@ -2,6 +2,31 @@
 import process_ingestion as ingestion
 
 
+def test_git_persistence_failure_fails_ingestion_step(tmp_path, monkeypatch):
+    (tmp_path / "content").mkdir()
+    monkeypatch.setattr(ingestion, "PROJECT_ROOT", str(tmp_path))
+    calls = []
+
+    def fake_run(args, cwd=None, check=False):
+        calls.append(args)
+        if args[:3] == ["git", "diff", "--cached"]:
+            return type("Result", (), {"returncode": 1})()
+        if args[:2] == ["git", "push"]:
+            raise ingestion.subprocess.CalledProcessError(1, args)
+        return type("Result", (), {"returncode": 0})()
+
+    monkeypatch.setattr(ingestion.subprocess, "run", fake_run)
+
+    try:
+        ingestion.run_git_commit()
+    except RuntimeError as exc:
+        assert "may not have been persisted" in str(exc)
+    else:
+        raise AssertionError("persistence failure must fail the ingestion step")
+
+    assert any(call[:2] == ["git", "push"] for call in calls)
+
+
 
 def test_successful_ingestion_is_still_an_unverified_ai_hypothesis(tmp_path, monkeypatch):
     queue = tmp_path / "queue"

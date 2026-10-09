@@ -53,32 +53,38 @@ jobs:
         with:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}  # fine-grained token, restricted to the private data repo
+          path: data
           fetch-depth: 0
 
       - name: Put the code over the data
+        working-directory: data
         run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
-          rm -rf _code
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md ../_code/ ./
+          rm -rf ../_code
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "LOG=$RUNNER_TEMP/$(date -u +%Y-%m-%d)-run-${{ github.run_id }}.log" >> "$GITHUB_ENV"
           echo "RUN_STARTED=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: Fetch new articles
+        working-directory: data
         id: fetch_sources
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/fetch_sources.py >> "$LOG" 2>&1
 
       - name: Repair summaries and thin pages
+        working-directory: data
         id: repair
         run: python3 scripts/repair_content.py --commit >> "$LOG" 2>&1
 
       - name: Label legacy AI drafts in private content
+        working-directory: data
         id: label_drafts
         run: python3 scripts/label_legacy_ai_drafts.py --write --quiet >> "$LOG" 2>&1
 
       - name: Classify and publish
+        working-directory: data
         id: classify
         timeout-minutes: 25
         continue-on-error: true  # run evidence/research even if classification fails; failure is surfaced below
@@ -89,6 +95,7 @@ jobs:
         run: python3 scripts/process_ingestion.py >> "$LOG" 2>&1
 
       - name: Evidence, cross-check, photos and drafting
+        working-directory: data
         id: seed
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -101,18 +108,21 @@ jobs:
       # Continue-on-error lets evidence research run after classification errors, but the overall
       # run must still fail so the issue is visible in Actions.
       - name: Fail run if classification failed
+        working-directory: data
         if: steps.classify.outcome == 'failure'
         run: |
           echo "CLASSIFICATION_FAILURE: classify/publish failed. The source should remain queued; see the private diagnostic log." | tee -a "$LOG"
           exit 1
 
       - name: Save the log to the data repository (branch logs)
+        working-directory: data
         id: save_log
         if: always()
         run: bash scripts/save_log.sh "$LOG"
 
       # Do not leave last_run.status as success when any earlier stage failed.
       - name: Record partial-failure state
+        working-directory: data
         if: failure()
         env:
           PIPELINE_OUTCOMES: fetch_sources=${{ steps.fetch_sources.outcome }},repair=${{ steps.repair.outcome }},label_drafts=${{ steps.label_drafts.outcome }},classify=${{ steps.classify.outcome }},seed=${{ steps.seed.outcome }},save_log=${{ steps.save_log.outcome }}
@@ -126,5 +136,6 @@ jobs:
           fi
 
       - name: Where to read the details
+        working-directory: data
         if: failure()
         run: echo "A step failed. The full output is on the logs branch of hk-history-data."

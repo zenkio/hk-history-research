@@ -472,3 +472,35 @@ def test_anonymous_openalex_budget_is_capped_at_ten_searches_per_utc_day(tmp_pat
     assert not ev.reserve_openalex_search()
     budget = state.load("source_budget")
     assert budget["openalex_searches"] == 10
+
+
+def test_national_archives_adapter_accepts_documented_pascal_case_response(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "Records": [{
+            "Id": "A123",
+            "Reference": "CO 129/1",
+            "Title": "Hong Kong administrative dispatch",
+            "Description": "Catalogue description only.",
+            "CoveringDates": "1841-1842",
+        }]
+    })
+    results = ev.national_archives("Hong Kong administration")
+    assert len(results) == 1
+    assert results[0]["url"].endswith("/details/r/A123")
+    assert results[0]["year"] == "1841-1842"
+    assert results[0]["passage_status"] == "metadata_only"
+    assert results[0]["passage"] == ""
+
+
+def test_national_archives_adapter_keeps_lower_camel_case_compatibility(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "records": [{
+            "id": "A456",
+            "reference": "CO 129/2",
+            "title": "Another archive entry",
+            "coveringDates": "1842",
+        }]
+    })
+    results = ev.national_archives("Hong Kong administration")
+    assert len(results) == 1
+    assert results[0]["url"].endswith("/details/r/A456")

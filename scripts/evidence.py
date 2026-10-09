@@ -679,9 +679,9 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
     if version < 7 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
         return True  # prior prompt told the judge to rely on titles/notes, not inspected passages
+    return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 
 def reopen_for_rejudge(done_map):

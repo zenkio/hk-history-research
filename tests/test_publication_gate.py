@@ -82,8 +82,8 @@ def test_malformed_frontmatter_cannot_hide_explicit_publication_marker(tmp_path)
     page = tmp_path / "event.md"
     content = """---
 title: "Broken published page"
-publication_status: published
-verification_status: verified
+publication_status: "published"
+verification_status: "verified"
 claims:
   - id: claim:example-date
     text: "The event occurred in 1841."

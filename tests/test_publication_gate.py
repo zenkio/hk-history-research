@@ -98,7 +98,7 @@ def test_metadata_only_source_cannot_support_publication(tmp_path):
     page = tmp_path / "event.md"
     content = published_page().replace("passage_status: inspectable", "passage_status: metadata_only")
     errors = gate.validate_page(page, content)
-    assert any("requires inspectable evidence passage" in error for error in errors)
+    assert any("requires an inspectable evidence passage tied to its own source URL" in error for error in errors)
 
 
 def test_short_placeholder_passage_cannot_support_publication(tmp_path):
@@ -115,7 +115,7 @@ def test_support_status_cannot_be_backed_only_by_contradictory_evidence(tmp_path
     page = tmp_path / "event.md"
     content = published_page().replace("relation: supports", "relation: contradicts")
     errors = gate.validate_page(page, content)
-    assert any("supported claims require an evidence relation of supports" in error for error in errors)
+    assert any("supported claims require inspectable evidence with relation supports" in error for error in errors)
 
 
 
@@ -139,14 +139,14 @@ def test_passage_from_an_unlinked_source_cannot_validate_another_source_url(tmp_
         '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."\\n      - title: "Unlinked passage"\\n        relation: supports\\n        passage_status: inspectable\\n        passage: "This unrelated passage is long enough but has no source URL linked to it."',
     )
     errors = gate.validate_page(page, content)
-    assert any("tied to its own source URL" in error for error in errors)
+    assert any("requires an inspectable evidence passage tied to its own source URL" in error for error in errors)
 
 
 def test_disputed_claim_requires_contradictory_evidence(tmp_path):
     page = tmp_path / "event.md"
     content = published_page(claim_status="disputed", verification_status="disputed")
     errors = gate.validate_page(page, content)
-    assert any("disputed claims require an evidence relation of contradicts" in error for error in errors)
+    assert any("disputed claims require inspectable evidence with relation contradicts" in error for error in errors)
 
 
 def test_engine_inspectable_record_status_can_pass_gate(tmp_path):

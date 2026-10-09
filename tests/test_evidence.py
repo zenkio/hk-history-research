@@ -206,6 +206,27 @@ def test_supporting_record_still_earns_grade(write_page, monkeypatch, timeline):
     assert "supports claim 1" in text
 
 
+def test_complete_empty_search_downgrades_stale_grade_and_records_history(write_page, monkeypatch, timeline):
+    import state
+    write_page("p.md", "Consecration of St John's Cathedral", 1849, grade="A")
+    monkeypatch.setattr(ev, "SOURCES", [
+        ("National Archives", lambda q: []),
+        ("OpenAlex", lambda q: []),
+    ])
+
+    done = {}
+    ev.evidence_batch(
+        Judge(), done, [{"file": "p.md", "status": "done"}],
+        time.time() + 60, limit=5,
+    )
+
+    assert done == {"p.md": "none"}
+    assert "evidence_grade: none" in (timeline / "p.md").read_text(encoding="utf-8")
+    changes = state.load("evidence_meta")["grade_changes"]
+    assert changes[-1]["from"] == "A" and changes[-1]["to"] == "none"
+    assert changes[-1]["contradiction_found"] is False
+
+
 def test_new_judgement_can_downgrade_a_stale_grade_and_records_history(write_page, monkeypatch, timeline):
     import state
     write_page("p.md", "Consecration of St John's Cathedral", 1849, grade="A")

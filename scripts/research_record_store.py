@@ -130,6 +130,8 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             "text": text,
             "claim_type": "other",
             "status": "unverified",
+            "is_current": True,
+            "superseded_at": None,
             "importance": "core",
             "created_from": "migration",
             "created_at": timestamp,
@@ -172,6 +174,8 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
                 "claim_id": claim_id,
                 "relation": relation,
                 "passage_status": passage_status,
+                "is_current": True,
+                "superseded_at": None,
                 "passage": passage if passage_status == "inspectable" else None,
                 "locator": candidate.get("locator"),
                 "source_date": str(candidate.get("year")) if candidate.get("year") else None,
@@ -220,7 +224,15 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
         }))
 
     claim_path = records_dir / "claims.jsonl"
-    existing_claims = {row["id"]: row for row in _read_jsonl(claim_path)}
+    existing_claim_rows = _read_jsonl(claim_path)
+    existing_claims = {row["id"]: row for row in existing_claim_rows}
+    current_claim_ids = {row["id"] for row in claim_rows}
+    for existing in existing_claim_rows:
+        if existing.get("event_id") == event_id and existing.get("id") not in current_claim_ids:
+            if existing.get("is_current", True):
+                existing["is_current"] = False
+                existing["superseded_at"] = timestamp
+    _write_jsonl(claim_path, existing_claim_rows)
     for row in claim_rows:
         existing = existing_claims.get(row["id"])
         verdict = claim_statuses.get(row["id"], "unverified")
@@ -234,10 +246,22 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             row["created_from"] = existing.get("created_from", row["created_from"])
             row["provenance"] = existing.get("provenance", row["provenance"])
     _upsert(claim_path, claim_rows, "id")
+
+    evidence_path = records_dir / "evidence.jsonl"
+    existing_evidence = _read_jsonl(evidence_path)
+    affected_claim_ids = {
+        row["id"] for row in existing_claim_rows if row.get("event_id") == event_id
+    } | current_claim_ids
+    for item in existing_evidence:
+        if item.get("claim_id") in affected_claim_ids and item.get("is_current", True):
+            item["is_current"] = False
+            item["superseded_at"] = timestamp
+    if existing_evidence:
+        _write_jsonl(evidence_path, existing_evidence)
     if source_rows:
         _upsert(records_dir / "sources.jsonl", source_rows, "source_id")
     if evidence_rows:
-        _upsert(records_dir / "evidence.jsonl", evidence_rows, "evidence_id")
+        _upsert(evidence_path, evidence_rows, "evidence_id")
     if judgement_rows:
         _upsert(records_dir / "judgements.jsonl", judgement_rows, "judgement_id")
     return {"event_id": event_id, "claims": len(claim_rows), "sources": len(source_rows), "evidence": len(evidence_rows), "judgements": len(judgement_rows)}

@@ -63,7 +63,7 @@ Use the passage field as the deciding evidence whenever it contains inspected so
 The title and note may identify the source, but they are metadata and must NOT be used to infer historical facts
 or to support/contradict a claim when the passage does not establish that fact.
 
-If passage_status is metadata_only, passage is empty, or the passage is not about the numbered claim,
+If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
 the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
 Never infer the contents of an archive record from its catalogue description or title.
 
@@ -411,7 +411,8 @@ def judged(data, candidates):
         c["why"] = r.get("why", "")
         relation = str(r.get("relation", "")).lower()
         # Fail closed: only an inspected passage may support or contradict a claim.
-        has_passage = bool(str(c.get("passage", "")).strip()) and c.get("passage_status") != "metadata_only"
+        has_passage = (bool(str(c.get("passage", "")).strip()) and
+                       c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"})
         c["relation"] = relation if relation in RELATIONS and c["claims"] and has_passage else "background"
         if relation in RELATIONS and not has_passage:
             c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."

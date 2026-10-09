@@ -25,9 +25,10 @@ def fail(q):
 
 
 @pytest.fixture(autouse=True)
-def fresh_sources(monkeypatch):
+def fresh_sources(monkeypatch, tmp_path):
     monkeypatch.setattr(ev, "_source_fails", {})
     monkeypatch.setattr(ev, "AUDIT_SHARE", 0)  # the audit test turns it on
+    monkeypatch.setattr(ev, "RESEARCH_RECORDS_DIR", str(tmp_path / "research-records"))
 
 
 def batch(pages, sources, monkeypatch, done=None):

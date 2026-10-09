@@ -86,7 +86,7 @@ def build_records(content_root, now=None, limit=None):
     content_root = Path(content_root).resolve()
     timestamp = now or datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
     claims, sources, claim_extraction_queue = [], [], []
-pages_seen, pages_without_claims, explicit_claims_extracted = 0, [], []
+    pages_seen, pages_without_claims, explicit_claims_extracted = 0, [], 0
     paths = sorted(content_root.rglob("*.md"))
     if limit is not None:
         paths = paths[:limit]
@@ -222,7 +222,7 @@ def main(argv=None):
         print(f"Migration preview failed: {exc}", file=sys.stderr)
         return 2
     print(f"Pages scanned: {result['pages_seen']}")
-    print(f"Explicit claims extracted: {len(result['claims'])}")
+    print(f"Explicit claims extracted: {result['explicit_claims_extracted']}")
     print(f"Total claim records prepared: {len(result['claims'])}")
     print(f"Source candidates retained: {len(result['sources'])}")
     print(f"Pages with no explicit Claims to verify section: {len(result['pages_without_explicit_claims'])}")

@@ -314,7 +314,7 @@ def internet_archive(query):
         desc = " ".join(desc) if isinstance(desc, list) else (desc or "")
         identifier = d.get("identifier", "")
         passage = internet_archive_text(identifier) if identifier else None
-        out.append({"kind": "contemporary publication", "grade": "A", "year": d.get("year"),
+        out.append({"kind": "digitised publication", "grade": "B", "year": d.get("year"),
                     "title": d.get("title", identifier), "url": f"https://archive.org/details/{identifier}",
                     "catalogue_reference": identifier,
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",

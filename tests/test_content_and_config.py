@@ -46,8 +46,9 @@ def test_public_pipeline_log_never_shows_script_output():
 
 def test_pipeline_runs_on_a_bounded_daily_schedule_without_self_queueing():
     wf = workflow("ingestion.yml")
-    assert wf["on"]["schedule"] == [{"cron": "17 3 * * *"}]
-    assert "workflow_dispatch" in wf["on"]
+    triggers = wf.get("on", wf.get(True, {}))  # PyYAML's YAML 1.1 parser treats 'on' as boolean
+    assert triggers["schedule"] == [{"cron": "17 3 * * *"}]
+    assert "workflow_dispatch" in triggers
     assert "if" not in wf["jobs"]["pipeline"]
     assert wf["permissions"] == {"contents": "read"}
     assert wf["concurrency"]["cancel-in-progress"] is False

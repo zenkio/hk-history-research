@@ -19,6 +19,8 @@ claims:
     status: {claim_status}
     evidence:
       - https://example.org/archive-record
+        passage_status: inspectable
+        passage: "The contemporary archive record explicitly describes the event and its date in the official register."
 ---
 
 ## Evidence

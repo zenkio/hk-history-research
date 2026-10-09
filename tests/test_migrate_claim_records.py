@@ -63,5 +63,18 @@ def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):
     ]) == 0
     claims = [json.loads(line) for line in (output / "claims.jsonl").read_text(encoding="utf-8").splitlines()]
     assert len(claims) == 1
-    assert claims[0]["id"] == "claim:1841-example-claim-01"
+    assert claims[0]["id"].startswith("claim:1841-example-")
     assert (output / "claim-extraction-queue.jsonl").exists()
+
+
+def test_claim_ids_do_not_change_when_bullets_are_reordered(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    page = root / "1841-example.md"
+    header = "---\ntitle: Example\n---\n## Claims to verify\n"
+    first = "- Date is 1841.\n- Elliot issued a proclamation.\n"
+    page.write_text(header + first, encoding="utf-8")
+    a = {item["text"]: item["id"] for item in migration.build_records(root)["claims"]}
+    page.write_text(header + "- Elliot issued a proclamation.\n- Date is 1841.\n", encoding="utf-8")
+    b = {item["text"]: item["id"] for item in migration.build_records(root)["claims"]}
+    assert a == b

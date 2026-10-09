@@ -306,7 +306,7 @@ def analyze_and_route(pool, filepath):
     ]
     output = "\n".join(lines)
 
-    atomic_write(output_path, output + "\\n")
+    atomic_write(output_path, output + "\n")
 
     os.remove(filepath)
     # A re-queued page (repair_content.py) is only removed once its replacement exists.

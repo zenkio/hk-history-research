@@ -70,7 +70,7 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
             "relation": "contradicts", "passage_status": "inspectable",
             "passage": "A second inspected historical record explicitly gives a different date for this event.",
             "url": "https://example.org/contradictory-record", "is_current": True,
-        }) + "\\n")
+        }) + chr(10))
     errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
 

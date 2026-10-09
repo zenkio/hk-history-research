@@ -410,6 +410,7 @@ def test_claim_search_queries_include_each_distinct_claim():
 
 
 def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
+    monkeypatch.setattr(ev, "reserve_openalex_search", lambda: True)
     monkeypatch.setattr(ev, "SOURCES", [("Archive", lambda q: []), ("Scholarship", lambda q: [])])
 
     def fake_gather(query, sources=None):
@@ -428,6 +429,7 @@ def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
 
 
 def test_claim_search_uses_openalex_only_once_without_api_key(monkeypatch):
+    monkeypatch.setattr(ev, "reserve_openalex_search", lambda: True)
     monkeypatch.delenv("OPENALEX_API_KEY", raising=False)
     monkeypatch.setattr(ev, "SOURCES", [("OpenAlex", lambda q: []), ("Archive", lambda q: [])])
     calls = []
@@ -460,3 +462,13 @@ def test_read_page_extracts_current_question_mark_claim_bullets(tmp_path):
         "The treaty was signed in 1841.",
         "Elliot issued the proclamation.",
     ]
+
+
+def test_anonymous_openalex_budget_is_capped_at_ten_searches_per_utc_day(tmp_path, monkeypatch):
+    import state
+    monkeypatch.delenv("OPENALEX_API_KEY", raising=False)
+    monkeypatch.setattr(state, "STATE_DIR", str(tmp_path))
+    assert all(ev.reserve_openalex_search() for _ in range(10))
+    assert not ev.reserve_openalex_search()
+    budget = state.load("source_budget")
+    assert budget["openalex_searches"] == 10

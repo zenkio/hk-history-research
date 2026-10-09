@@ -491,6 +491,7 @@ def test_national_archives_adapter_accepts_documented_pascal_case_response(monke
     results = ev.national_archives("Hong Kong administration")
     assert len(results) == 1
     assert results[0]["url"].endswith("/details/r/A123")
+    assert results[0]["catalogue_reference"] == "CO 129/1"
     assert results[0]["year"] == "1841-1842"
     assert results[0]["passage_status"] == "metadata_only"
     assert results[0]["passage"] == ""

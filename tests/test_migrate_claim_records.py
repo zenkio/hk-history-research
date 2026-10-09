@@ -4,6 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import migrate_claim_records as migration
+import research_record_store as store
 
 
 def test_migration_extracts_only_explicit_claim_bullets_and_preserves_source_candidates(tmp_path):
@@ -93,6 +94,7 @@ def test_migration_seeds_unverified_event_date_claim_without_inventing_support(t
     result = migration.build_records(root, now="2026-10-09T10:00:00Z")
     event_claim = next(c for c in result["claims"] if c["provenance"]["extraction"] == "event title/date")
     assert event_claim["text"] == "Treaty signing occurred in 1841."
+    assert event_claim["id"] == store.claim_id_for("event:1841-example", event_claim["text"])
     assert event_claim["status"] == "unverified"
     assert result["explicit_claims_extracted"] == 0
     assert len(result["claim_extraction_queue"]) == 1

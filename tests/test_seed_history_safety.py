@@ -27,6 +27,40 @@ def test_generated_event_page_is_explicitly_unverified_ai_hypothesis(tmp_path, m
     assert 'Claims to verify' in page
 
 
+
+def test_worker_timeout_is_recorded_as_partial_failure(monkeypatch):
+    plan = {
+        "eras": {slug: {"outlined": True, "overview": True, "rounds": seed.MAX_ROUNDS}
+                 for slug, _, _ in seed.ERAS},
+        "events": [],
+        "entities": {},
+    }
+    class Pool:
+        state = {"resolved": {}}
+        def summary(self):
+            return "fake quota"
+    class StuckThread:
+        def __init__(self, name):
+            self.name = name
+        def join(self, timeout=None):
+            pass
+        def is_alive(self):
+            return True
+
+    monkeypatch.setattr(seed, "ModelPool", Pool)
+    monkeypatch.setattr(seed, "load_plan", lambda: plan)
+    monkeypatch.setattr(seed, "save_plan", lambda p: None)
+    monkeypatch.setattr(seed, "verify_pages", lambda *args: 0)
+    monkeypatch.setattr(seed, "start_worker", lambda name, *args, **kwargs: StuckThread(name))
+    failures = []
+
+    seed.run(max_calls=0, minutes=0, failures=failures)
+
+    assert {item["stage"] for item in failures} == {"research", "photos"}
+    assert all("did not finish before shutdown deadline" in item["error"] for item in failures)
+    assert plan["last_run"]["status"] == "partial_failure"
+
+
 def test_failed_atomic_page_write_preserves_previous_page(tmp_path, monkeypatch):
     page = tmp_path / "existing.md"
     page.write_text("previous complete page\n", encoding="utf-8")

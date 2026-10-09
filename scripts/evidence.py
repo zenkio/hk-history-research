@@ -241,7 +241,9 @@ def internet_archive_ai_processing_allowed(metadata):
     return (
         "creativecommons.org/publicdomain/mark" in normalized
         or "creativecommons.org/publicdomain/zero" in normalized
-        or "public domain" in normalized
+        or ("public domain" in normalized
+            and "not public domain" not in normalized
+            and "not in the public domain" not in normalized)
     )
 
 

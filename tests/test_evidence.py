@@ -246,8 +246,8 @@ def test_legacy_background_and_support_grades_are_rejudged_once(write_page, time
     write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
     write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
-    assert ev.reopen_for_rejudge(done) == 2
-    assert done == {"empty.md": "none"}
+    assert ev.reopen_for_rejudge(done) == 3
+    assert done == {}
     done["bg.md"] = "none"
     done["graded.md"] = "B"
     assert ev.reopen_for_rejudge(done) == 0  # only once per JUDGE_VERSION

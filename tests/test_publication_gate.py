@@ -78,6 +78,20 @@ def test_valid_claim_level_page_can_be_published(tmp_path):
     assert gate.validate_page(page, published_page(), records_dir=tmp_path) == []
 
 
+def test_malformed_frontmatter_cannot_hide_explicit_publication_marker(tmp_path):
+    page = tmp_path / "event.md"
+    content = """---
+title: "Broken published page"
+publication_status: published
+verification_status: verified
+claims:
+  - id: claim:example-date
+    text: "The event occurred in 1841."
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("frontmatter is missing or malformed" in error for error in errors)
+
+
 
 
 def test_fabricated_inline_passage_cannot_replace_the_structured_passage(tmp_path):

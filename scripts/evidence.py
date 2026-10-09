@@ -37,6 +37,7 @@ from state import PAGE_LOCK, atomic_write
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
+RESEARCH_RECORDS_DIR = os.path.join(PROJECT_ROOT, "research", "records")
 USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 PRIMARY_BEFORE = 1950   # printed before this year counts as a primary/contemporary publication
 PER_SOURCE = 6
@@ -439,6 +440,12 @@ def evidence_for_page(pool, path):
     if not candidates:
         print(search_summary(query, candidates, failed, None))
         grade, lines = evidence_block([], "", "search")
+        from research_record_store import persist_page_judgement
+        persisted = persist_page_judgement(
+            path, TIMELINE_DIR, title, date, claims, [], None, JUDGE_VERSION,
+            records_dir=RESEARCH_RECORDS_DIR,
+        )
+        print(f"[evidence] structured records: {persisted}")
         write_evidence(path, grade, lines)
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
@@ -468,6 +475,12 @@ def evidence_for_page(pool, path):
         })
         state.save("evidence_meta", meta)
         print(f"[evidence] {os.path.basename(path)}: grade changed {before} -> {grade}; change recorded")
+    from research_record_store import persist_page_judgement
+    persisted = persist_page_judgement(
+        path, TIMELINE_DIR, title, date, claims, kept, model, JUDGE_VERSION,
+        records_dir=RESEARCH_RECORDS_DIR,
+    )
+    print(f"[evidence] structured records: {persisted}")
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 

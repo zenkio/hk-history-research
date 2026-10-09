@@ -19,6 +19,7 @@ claims:
     status: {claim_status}
     evidence:
       - https://example.org/archive-record
+        relation: supports
         passage_status: inspectable
         passage: "The contemporary archive record explicitly describes the event and its date in the official register."
 ---
@@ -108,3 +109,17 @@ def test_short_placeholder_passage_cannot_support_publication(tmp_path):
     )
     errors = gate.validate_page(page, content)
     assert any("at least 30 characters" in error for error in errors)
+
+
+def test_support_status_cannot_be_backed_only_by_contradictory_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace("relation: supports", "relation: contradicts")
+    errors = gate.validate_page(page, content)
+    assert any("supported claims require an evidence relation of supports" in error for error in errors)
+
+
+def test_disputed_claim_requires_contradictory_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page(claim_status="disputed", verification_status="disputed")
+    errors = gate.validate_page(page, content)
+    assert any("disputed claims require an evidence relation of contradicts" in error for error in errors)

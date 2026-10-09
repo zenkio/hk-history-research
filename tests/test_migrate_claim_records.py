@@ -106,9 +106,9 @@ def test_repeated_write_preserves_existing_verdicts_and_research_metadata(tmp_pa
     root.mkdir()
     page = root / "1841-example.md"
     page.write_text(
-        '---\\ntitle: Example\\nyear: 1841\\n---\\n'
-        '## Claims to verify\\n- The event happened in 1841.\\n'
-        '## Evidence\\n[Archive catalogue](https://example.org/catalogue/1)\\n',
+        '---\ntitle: Example\nyear: 1841\n---\n'
+        '## Claims to verify\n- The event happened in 1841.\n'
+        '## Evidence\n[Archive catalogue](https://example.org/catalogue/1)\n',
         encoding="utf-8",
     )
     output = tmp_path / "records"

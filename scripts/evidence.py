@@ -359,7 +359,7 @@ def evidence_block(kept, missing, model):
              f"> Sources from the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
              f"OpenAlex (scholarship), {how}", ""]
     supporting = [c for c in kept if c.get("relation") == "supports"]
-    for label, g in (("Primary sources (grade A)", "A"), ("Scholarship (grade B)", "B")):
+    for label, g in (("Primary-source coverage (A)", "A"), ("Scholarship coverage (B)", "B")):
         items = [c for c in supporting if c["grade"] == g]
         if items:
             lines += [f"### {label}", ""]
@@ -375,7 +375,7 @@ def evidence_block(kept, missing, model):
         lines.append("")
     background = [c for c in kept if c.get("relation") == "background"]
     if background:
-        lines += ["### Background reading (does not count towards the grade)", ""]
+        lines += ["### Background reading (does not count towards coverage)", ""]
         lines += [f"- [{c['cite']}]({c['url']}): {c.get('why', '')}" for c in background]
         lines.append("")
     if missing:

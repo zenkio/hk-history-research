@@ -4,7 +4,7 @@ name: Site build check
 # so a broken config or plugin is caught before it reaches the live site. Nothing is published.
 on:
   pull_request:
-    paths: ["quartz/**", "quartz.*", "package.json", "package-lock.json", ".github/workflows/deploy.yml",
+    paths: ["quartz/**", "quartz.*", "package.json", "package-lock.json", ".github/workflows/deploy.yml", ".github/workflows/site-build.yml",
             "scripts/trim_search_index.py"]
   workflow_dispatch:
 

@@ -530,3 +530,18 @@ def test_internet_archive_rights_gate_rejects_explicit_non_public_domain_text():
     assert ev.internet_archive_ai_processing_allowed({
         "metadata": {"rights": "Public domain"}
     })
+
+
+def test_frontmatter_declared_chinese_title_and_aliases_join_claim_search():
+    page = (
+        '---\ntitle: "Treaty signing"\n'
+        'title_zh: "條約簽署"\n'
+        'aliases: ["Treaty of Nanking", "Nanking Treaty"]\n'
+        '---\n'
+    )
+    aliases = ev.frontmatter_aliases(page)
+    assert aliases == ["條約簽署", "Treaty of Nanking", "Nanking Treaty"]
+    queries = ev.claim_search_queries("Treaty signing", ["The treaty was signed in 1842."], aliases)
+    assert "條約簽署" in queries
+    assert "Treaty of Nanking" in queries
+    assert "Nanking Treaty" in queries

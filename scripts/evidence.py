@@ -484,7 +484,7 @@ def evidence_for_page(pool, path):
     if not candidates:
         print(search_summary(query, candidates, failed, None))
         grade, lines = evidence_block([], "", "search")
-        before = (re.search(r"(?m)^evidence_grade: (\\w+)", text) or [None, None])[1]
+        before = (re.search(r"(?m)^evidence_grade: (\w+)", text) or [None, None])[1]
         record_grade_change(path, before, grade)
         from research_record_store import persist_page_judgement
         persisted = persist_page_judgement(

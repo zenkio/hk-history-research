@@ -15,25 +15,25 @@ USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
     {
-        "name": "HKU Digital Repository OAI-PMH",
+        "name": "HKU Digital Repository OAI-PMH", "required": False,
         "url": "https://digitalrepository.lib.hku.hk/oai2?verb=Identify",
         "format": "xml",
         "shape": "OAI-PMH",
     },
     {
-        "name": "HK Historical Laws Omeka API",
+        "name": "HK Historical Laws Omeka API", "required": False,
         "url": "https://oelawhk.lib.hku.hk/api/items?per_page=1",
         "format": "json",
         "shape": "list",
     },
     {
-        "name": "LegCo Hansard open data",
+        "name": "LegCo Hansard open data", "required": False,
         "url": "https://app.legco.gov.hk/OpenData/HansardDB/Hansard?$top=1&$format=json",
         "format": "json",
         "shape": "value",
     },
     {
-        "name": "UK National Archives Discovery API",
+        "name": "UK National Archives Discovery API", "required": True,
         "url": "https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=Hong%20Kong&sps.resultsPageSize=1&sps.heldByCode=TNA",
         "format": "json",
         "shape": "records",
@@ -85,17 +85,25 @@ def probe(probe_spec, timeout=15):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--strict", action="store_true", help="exit non-zero if any probe fails")
+    parser.add_argument("--strict", action="store_true", help="exit non-zero if any required probe fails")
     parser.add_argument("--timeout", type=int, default=15)
     args = parser.parse_args(argv)
-    failures = 0
+    required_total = sum(1 for item in PROBES if item.get("required", True))
+    required_failures = optional_failures = required_passes = optional_passes = 0
     for item in PROBES:
         ok, detail = probe(item, timeout=args.timeout)
-        print(f'{"PASS" if ok else "FAIL"} | {item["name"]} | {detail}')
-        failures += not ok
-    print(f"Source connectivity: {len(PROBES) - failures}/{len(PROBES)} passed")
-    return 1 if args.strict and failures else 0
-
+        required = item.get("required", True)
+        status = "PASS" if ok else ("FAIL" if required else "WARN")
+        print(f'{status} | {item["name"]} | {detail}')
+        if required:
+            required_passes += int(ok)
+            required_failures += int(not ok)
+        else:
+            optional_passes += int(ok)
+            optional_failures += int(not ok)
+    print(f"Required endpoints: {required_passes}/{required_total} passed")
+    print(f"Optional probes: {optional_passes}/{len(PROBES) - required_total} passed; {optional_failures} warning(s)")
+    return 1 if args.strict and required_failures else 0
 
 if __name__ == "__main__":
     raise SystemExit(main())

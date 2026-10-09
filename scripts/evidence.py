@@ -197,6 +197,7 @@ def openalex(query, year=None):
         url = w.get("doi") or w.get("id")
         out.append({"kind": "scholarship", "grade": "B", "year": w.get("publication_year"),
                     "title": w["title"], "url": url,
+                    "catalogue_reference": w.get("doi") or w.get("id"),
                     "cite": f"{authors} ({w.get('publication_year')}). *{w['title']}*." + (f" {venue}." if venue else ""),
                     "note": abstract or venue,
                     "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only"})
@@ -225,6 +226,7 @@ def national_archives(query):
                     "title": f"{ref}: {desc[:160]}",
                     "url": f"https://discovery.nationalarchives.gov.uk/details/r/{identifier}",
                     "cite": f"The National Archives (UK), {ref}, {covering_dates}. {desc[:200]}",
+                    "catalogue_reference": ref,
                     "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
     return out
 
@@ -290,6 +292,7 @@ def internet_archive(query):
         passage = internet_archive_text(identifier) if identifier else None
         out.append({"kind": "contemporary publication", "grade": "A", "year": d.get("year"),
                     "title": d.get("title", identifier), "url": f"https://archive.org/details/{identifier}",
+                    "catalogue_reference": identifier,
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
                     "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only"})

@@ -107,6 +107,26 @@ def load_structured_records(records_dir):
             else:
                 errors.append(f"{filename}:{line_no}: record must be a JSON object")
         loaded[kind] = rows
+
+    # JSON Schema checks shape; these checks enforce the cross-record links that JSON Schema
+    # cannot express. A dangling or mismatched evidence record must not be silently ignored.
+    claim_ids = {row.get("id") for row in loaded["claims"]}
+    source_by_id = {row.get("source_id"): row for row in loaded["sources"]}
+    evidence_ids = {row.get("evidence_id") for row in loaded["evidence"]}
+    for index, row in enumerate(loaded["evidence"], start=1):
+        if row.get("claim_id") not in claim_ids:
+            errors.append(f"evidence.jsonl record {index}: unknown claim_id {row.get('claim_id')}")
+        source = source_by_id.get(row.get("source_id"))
+        if source is None:
+            errors.append(f"evidence.jsonl record {index}: unknown source_id {row.get('source_id')}")
+        elif str(source.get("stable_url") or "").strip() != str(row.get("url") or "").strip():
+            errors.append(f"evidence.jsonl record {index}: evidence URL does not match source stable_url")
+    for index, row in enumerate(loaded["judgements"], start=1):
+        if row.get("claim_id") not in claim_ids:
+            errors.append(f"judgements.jsonl record {index}: unknown claim_id {row.get('claim_id')}")
+        for evidence_id in row.get("evidence_ids", []):
+            if evidence_id not in evidence_ids:
+                errors.append(f"judgements.jsonl record {index}: unknown evidence_id {evidence_id}")
     return loaded, errors
 
 

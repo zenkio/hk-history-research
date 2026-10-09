@@ -369,16 +369,16 @@ def test_rejected_evidence_judgement_is_not_marked_done_and_fails_batch(write_pa
     assert "pending.md" not in done
 
 
-def test_incomplete_evidence_search_remains_pending_and_fails_batch(write_page, monkeypatch, timeline):
+def test_incomplete_evidence_search_remains_pending_without_failing_batch(write_page, monkeypatch, timeline, capsys):
     write_page("pending.md", "Example event", 1841)
     monkeypatch.setattr(ev, "evidence_for_page", lambda *args, **kwargs: "retry")
     done = {}
-    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
-        ev.evidence_batch(
-            object(), done, [{"file": "pending.md", "status": "done"}],
-            time.time() + 10, limit=1,
-        )
+    ev.evidence_batch(
+        object(), done, [{"file": "pending.md", "status": "done"}],
+        time.time() + 10, limit=1,
+    )
     assert "pending.md" not in done
+    assert "remain pending" in capsys.readouterr().out
 
 
 

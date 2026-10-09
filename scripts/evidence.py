@@ -843,6 +843,7 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
     if reopened and save:
         save(done_map)
     done = retries = 0
+    failures = []
     for ev in events:
         rel = ev.get("file")
         if not rel or rel in done_map or ev.get("status") != "done":
@@ -857,15 +858,22 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         except QuotaExhausted:
             break
         except RequestRejected as e:
-            print(f"[evidence] {rel} rejected: {str(e)[:100]}")
-            done_map[rel] = "error"
+            # Do not put an error sentinel in done_map: membership there means "finished" and
+            # would permanently suppress retries on later runs.
+            message = f"{rel}: evidence judgement rejected: {str(e)[:100]}"
+            print(f"[evidence] {message}; leaving page pending for retry")
+            failures.append(message)
             continue
         if grade is None:
-            print("[evidence] every source unreachable; stopping for this run")
+            message = f"{rel}: every evidence source was unreachable; page remains pending"
+            print(f"[evidence] {message}")
+            failures.append(message)
             break
         if grade == "retry":
             retries += 1
-            print(f"[evidence] {rel}: nothing found while a source was down; retried in a later run")
+            message = f"{rel}: retrieval was incomplete; page remains pending for a later run"
+            print(f"[evidence] {message}")
+            failures.append(message)
             if retries >= MAX_RETRIES_PER_RUN:
                 print("[evidence] a source keeps failing; stopping evidence for this run")
                 break
@@ -875,6 +883,12 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         print(f"[evidence] {rel}: grade {grade}")
         if save:
             save(done_map)
+    if failures:
+        # Successful pages remain persisted, but the worker must report a partial failure to
+        # seed_history so the run cannot be recorded as wholly successful.
+        raise RuntimeError(
+            f"Evidence batch partially failed for {len(failures)} page(s): " + "; ".join(failures[:5])
+        )
     return done
 
 

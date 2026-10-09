@@ -76,7 +76,7 @@ jobs:
         run: python3 scripts/repair_content.py --commit >> "$LOG" 2>&1
 
       - name: Label legacy AI drafts in private content
-        run: python3 scripts/label_legacy_ai_drafts.py --write
+        run: python3 scripts/label_legacy_ai_drafts.py --write --quiet >> "$LOG" 2>&1
 
       - name: Classify and publish
         id: classify

@@ -55,7 +55,7 @@ def inspect_response(probe, status, content_type, body):
             if probe["shape"] == "list":
                 ok = isinstance(data, list)
             else:
-                ok = isinstance(data, dict) and probe["shape"] in data
+                ok = isinstance(data, dict) and any(str(key).casefold() == probe["shape"].casefold() for key in data)
         if not ok:
             return False, f"unexpected {probe['format'].upper()} response shape"
     except (ValueError, ET.ParseError, UnicodeError) as exc:

@@ -123,7 +123,7 @@ def test_jev_audit_asks_at_most_16_questions_a_call_and_records_agreement(write_
 
     def decide(page, questions):
         sent.append(sorted(questions))
-        assert "1. Signing of the Treaty took place in Hong Kong" in page
+        assert "1. Signing of the Treaty occurred in 1900" in page
         return {q: {"choice": "supports" if q == "c1" else "out", "probabilities": {"supports": 0.9, "out": 0.9}}
                 for q in questions}
     monkeypatch.setattr(jev, "decide", decide)

@@ -75,6 +75,9 @@ jobs:
       - name: Repair summaries and thin pages
         run: python3 scripts/repair_content.py --commit >> "$LOG" 2>&1
 
+      - name: Label legacy AI drafts in private content
+        run: python3 scripts/label_legacy_ai_drafts.py --write
+
       - name: Classify and publish
         id: classify
         timeout-minutes: 25

@@ -349,12 +349,13 @@ def grade_of(kept):
 def evidence_block(kept, missing, model):
     grade = grade_of(kept)
     today = datetime.now().strftime("%Y-%m-%d")
-    how = (f"judged by {model} on {today}. Only sources judged to support a claim count towards the grade; "
-           "contradictions are listed separately and block treating the affected claim as settled. "
-           "Sources have not all been read in full, so individual claims still need checking." if kept else
-           f"searched on {today}; nothing relevant found yet.")
+    how = (f"judged by {model} on {today}. This is source coverage, not a verification verdict: only sources "
+           "judged to support a claim count towards coverage; contradictions are listed separately and block "
+           "treating the affected claim as settled. Sources have not all been read in full, so individual claims "
+           "still need checking." if kept else
+           f"searched on {today}; no relevant evidence was found. This is not proof that the draft is true or false.")
     lines = ["## Evidence", "",
-             f"> [!abstract] Evidence grade: **{grade}**",
+             f"> [!abstract] Evidence coverage: **{grade}** (not a verification verdict)",
              f"> Sources from the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
              f"OpenAlex (scholarship), {how}", ""]
     supporting = [c for c in kept if c.get("relation") == "supports"]
@@ -920,10 +921,11 @@ def write_status_page(events, grades):
     from collections import Counter
     total = sum(1 for e in events if e.get("status") == "done")
     c = Counter(grades.values())
-    lines = ["---", 'title: "Evidence status"', 'description: "How many AI-drafted pages have archive or scholarly evidence attached."',
+    lines = ["---", 'title: "Evidence coverage"', 'description: "Source coverage on AI-drafted history pages; this is not a claim-verification score."',
              "---", "",
              f"_Updated {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC._", "",
-             "| Grade | Meaning | Pages |", "|---|---|---|",
+             "**Important:** A/B/none measure source coverage, not historical correctness. AI-drafted pages remain hypotheses; a linked source or high coverage level does not verify every statement.", "",
+             "| Coverage | Meaning | Pages |", "|---|---|---|",
              f"| [[tags/evidence-a\\|A]] | Primary sources linked (archives, contemporary publications) | {c.get('A', 0)} |",
              f"| [[tags/evidence-b\\|B]] | Scholarship linked (articles, academic books) | {c.get('B', 0)} |",
              f"| [[tags/evidence-none\\|none]] | Searched, nothing relevant found yet | {c.get('none', 0)} |",

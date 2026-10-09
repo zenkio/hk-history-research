@@ -11,7 +11,7 @@ def write_jsonl(path, rows):
     path.write_text("".join(json.dumps(row) + "\n" for row in rows), encoding="utf-8")
 
 
-def claim_record(updated_at):
+def claim_record(updated_at, status="unverified"):
     return {
         "record_type": "claim",
         "schema_version": 1,
@@ -19,7 +19,7 @@ def claim_record(updated_at):
         "event_id": "event:1841-example",
         "text": "The event occurred in 1841.",
         "claim_type": "date",
-        "status": "unverified",
+        "status": status,
         "importance": "core",
         "created_from": "migration",
         "created_at": "2026-10-01T00:00:00Z",
@@ -100,3 +100,11 @@ def test_report_identifies_invalid_json_lines(tmp_path):
     report = health.build_report(tmp_path)
     assert len(report["validation_errors"]) == 1
     assert "invalid JSON" in report["validation_errors"][0]
+
+
+def test_contradicted_core_claim_remains_unresolved(tmp_path):
+    for filename in health.FILES.values():
+        (tmp_path / filename).write_text("", encoding="utf-8")
+    write_jsonl(tmp_path / "claims.jsonl", [claim_record("2026-10-01T00:00:00Z", "contradicted")])
+    report = health.build_report(tmp_path)
+    assert report["core_claims_unresolved"] == 1

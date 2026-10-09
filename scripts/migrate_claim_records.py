@@ -17,6 +17,7 @@ from urllib.parse import urlparse
 
 from research_records import require_valid_record
 from research_record_store import claim_id_for, normalize_claim_text
+from state import atomic_write
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CONTENT_ROOT = PROJECT_ROOT / "content" / "01_Timeline"
@@ -199,11 +200,47 @@ def build_records(content_root, now=None, limit=None):
     }
 
 
+def merge_existing_records(path, incoming, key):
+    """Merge a migration into existing records without resetting later research state.
+
+    Existing records win on status, timestamps, provenance and inspected metadata. New
+    records fill gaps, and source event links are unioned. Unrelated records are retained.
+    """
+    existing = []
+    if path.exists():
+        for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line.strip():
+                continue
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"{path}:{line_no}: invalid JSON: {exc.msg}") from exc
+            if not isinstance(record, dict) or not record.get(key):
+                raise ValueError(f"{path}:{line_no}: existing record must be an object with {key}")
+            existing.append(require_valid_record(record))
+
+    merged = {}
+    for record in existing:
+        merged[record[key]] = record
+    for record in incoming:
+        record = require_valid_record(record)
+        identity = record[key]
+        previous = merged.get(identity)
+        if previous:
+            combined = {**record, **previous}
+            if key == "source_id":
+                combined["event_ids"] = sorted(set(previous.get("event_ids", []) + record.get("event_ids", [])))
+            merged[identity] = require_valid_record(combined)
+        else:
+            merged[identity] = record
+    return list(merged.values())
+
+
 def write_jsonl(path, records):
+    """Atomically write a fully prepared JSONL snapshot."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="\n") as handle:
-        for record in records:
-            handle.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
+    content = "".join(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n" for record in records)
+    atomic_write(str(path), content)
 
 
 def main(argv=None):
@@ -232,10 +269,16 @@ def main(argv=None):
     if not args.write:
         print("Preview only; no files written. Re-run with --write to save JSONL records.")
         return 0
-    write_jsonl(args.output_dir / "claims.jsonl", result["claims"])
-    write_jsonl(args.output_dir / "sources.jsonl", result["sources"])
-    write_jsonl(args.output_dir / "claim-extraction-queue.jsonl", result["claim_extraction_queue"])
-    print(f"Wrote records to {args.output_dir}")
+    # Merge all outputs before writing any file: repeated migration must never reset a
+    # previously judged claim to unverified or erase source/evidence links from later runs.
+    output_claims = merge_existing_records(args.output_dir / "claims.jsonl", result["claims"], "id")
+    output_sources = merge_existing_records(args.output_dir / "sources.jsonl", result["sources"], "source_id")
+    output_queue = merge_existing_records(args.output_dir / "claim-extraction-queue.jsonl",
+                                          result["claim_extraction_queue"], "task_id")
+    write_jsonl(args.output_dir / "claims.jsonl", output_claims)
+    write_jsonl(args.output_dir / "sources.jsonl", output_sources)
+    write_jsonl(args.output_dir / "claim-extraction-queue.jsonl", output_queue)
+    print(f"Wrote/merged records to {args.output_dir}")
     return 0
 
 

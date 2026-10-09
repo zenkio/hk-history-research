@@ -33,7 +33,7 @@ def test_public_pipeline_log_never_shows_script_output():
     # and grades. Every script step must send its output to $LOG (saved to the private data repo).
     steps = workflow("ingestion.yml")["jobs"]["pipeline"]["steps"]
     runs = [s["run"] for s in steps if "python3 scripts/" in s.get("run", "")]
-    assert len(runs) == 4
+    assert len(runs) == 5
     for run in runs:
         assert run.rstrip().endswith('>> "$LOG" 2>&1'), run
 

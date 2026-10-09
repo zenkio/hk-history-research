@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: pipeline
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   PYTHONUNBUFFERED: "1"

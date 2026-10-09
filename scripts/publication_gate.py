@@ -101,9 +101,12 @@ def validate_page(path, text):
         passage = claim["passage"].strip().strip(chr(34) + chr(39))
         if len(passage) < 30:
             errors.append(f"{label}: claim requires a non-empty inspectable evidence passage (at least 30 characters)")
-        if claim["status"] == "supported" and "supports" not in claim["evidence_relations"]:
+        relations = set(claim["evidence_relations"])
+        if claim["status"] == "supported" and "supports" not in relations:
             errors.append(f"{label}: supported claims require an evidence relation of supports")
-        if claim["status"] == "disputed" and "contradicts" not in claim["evidence_relations"]:
+        if claim["status"] == "supported" and "contradicts" in relations:
+            errors.append(f"{label}: contradictory evidence blocks a supported verdict; mark the claim disputed")
+        if claim["status"] == "disputed" and "contradicts" not in relations:
             errors.append(f"{label}: disputed claims require an evidence relation of contradicts")
 
     if any(claim["status"] == "disputed" for claim in claims) and verification_status != "disputed":

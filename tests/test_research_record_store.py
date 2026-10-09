@@ -130,3 +130,11 @@ def test_date_evidence_does_not_automatically_support_location_claim(tmp_path):
     location_claim = next(c for c in claims if c["text"] == "The event occurred in Hong Kong.")
     assert date_claim["status"] == "supported"
     assert location_claim["status"] == "unverified"
+
+
+def test_markdown_claim_normalisation_keeps_migration_and_store_ids_aligned():
+    event_id = "event:05-opium-war-1841-example"
+    raw = "**The event** happened [in January](https://example.org/date) 1841."
+    normalized = "The event happened in January 1841."
+    assert store.normalize_claim_text(raw) == normalized
+    assert store.claim_id_for(event_id, raw) == store.claim_id_for(event_id, normalized)

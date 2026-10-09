@@ -1,0 +1,245 @@
+"""Persist claim-level evidence and judgements as validated, auditable JSONL records."""
+import hashlib
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urlparse
+
+from research_records import require_valid_record
+from state import atomic_write
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_RECORDS_DIR = PROJECT_ROOT / "research" / "records"
+INSPECTABLE_STATUSES = {"inspectable_text", "inspectable_abstract", "inspectable_record"}
+
+
+def slug(value):
+    value = value.lower().replace("\\", "-").replace("/", "-")
+    value = re.sub(r"[^a-z0-9._-]+", "-", value)
+    return re.sub(r"-+", "-", value).strip("-") or "untitled"
+
+
+def event_id_for_relative_path(relative_path):
+    return "event:" + slug(Path(relative_path).with_suffix("").as_posix())
+
+
+def claim_id_for(event_id, text):
+    normalized = re.sub(r"\s+", " ", text).strip().casefold()
+    digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:10]
+    return f"claim:{event_id.removeprefix('event:')}-{digest}"
+
+
+def source_id_for(url):
+    return "source:" + hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
+
+
+def _read_jsonl(path):
+    if not path.exists():
+        return []
+    rows = []
+    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        if not line.strip():
+            continue
+        try:
+            rows.append(json.loads(line))
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"{path}:{line_no}: invalid JSON: {exc.msg}") from exc
+    return rows
+
+
+def _write_jsonl(path, rows):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    content = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows)
+    atomic_write(path, content)
+
+
+def _upsert(path, rows, key):
+    current = _read_jsonl(path)
+    positions = {row[key]: index for index, row in enumerate(current) if key in row}
+    for row in rows:
+        row = require_valid_record(row)
+        identity = row[key]
+        if identity in positions:
+            index = positions[identity]
+            previous = current[index]
+            if row.get("record_type") == "source":
+                row["event_ids"] = sorted(set(previous.get("event_ids", []) + row.get("event_ids", [])))
+            current[index] = {**previous, **row}
+        else:
+            positions[identity] = len(current)
+            current.append(row)
+    _write_jsonl(path, current)
+
+
+def _source_metadata(candidate, event_id, timestamp):
+    url = str(candidate.get("url") or "").strip()
+    if not url:
+        return None
+    source_name = str(candidate.get("source") or "Unknown source")
+    if source_name == "OpenAlex":
+        source_type, authority, method = "academic_work", "scholarly", "api"
+        rights = "OpenAlex metadata is released under CC0; abstract text is used only as supplied in metadata."
+    elif source_name == "National Archives":
+        source_type, authority, method = "archive_record", "institutional", "metadata_only"
+        rights = "Catalogue metadata only; the description is not an inspected source passage."
+    elif source_name == "Internet Archive":
+        source_type, authority = "other", "unknown"
+        method = "ocr" if candidate.get("passage_status") == "inspectable_text" else "metadata_only"
+        rights = "OCR is processed only when item metadata explicitly signals public-domain/CC0; verify item-specific rights before reuse."
+    else:
+        source_type, authority, method = "other", "unknown", "other"
+        rights = "Source authority and rights require manual review."
+    return require_valid_record({
+        "record_type": "source",
+        "schema_version": 1,
+        "source_id": source_id_for(url),
+        "title": str(candidate.get("title") or urlparse(url).netloc or source_name)[:500],
+        "institution": source_name,
+        "event_ids": [event_id],
+        "source_type": source_type,
+        "authority_level": authority,
+        "coverage": None,
+        "language": "und",
+        "stable_url": url,
+        "catalogue_reference": str(candidate.get("cite") or "")[:500] or None,
+        "retrieval_method": method,
+        "publication_date": str(candidate.get("year")) if candidate.get("year") else None,
+        "discovered_at": timestamp,
+        "rights_notes": rights,
+    })
+
+
+def persist_page_judgement(path, timeline_root, title, date, claims, kept, model, prompt_version, records_dir=None):
+    """Upsert claim/source/evidence records and append a versioned judgement per claim."""
+    records_dir = Path(records_dir or DEFAULT_RECORDS_DIR)
+    relative_path = Path(path).resolve().relative_to(Path(timeline_root).resolve()).as_posix()
+    event_id = event_id_for_relative_path(relative_path)
+    timestamp_dt = datetime.now(timezone.utc)
+    timestamp = timestamp_dt.isoformat(timespec="seconds").replace("+00:00", "Z")
+    timestamp_slug = timestamp_dt.strftime("%Y%m%dt%H%M%Sz").lower()
+    claim_texts = [f"{title} took place in Hong Kong ({date})", *claims]
+    claim_rows = []
+    for index, text in enumerate(claim_texts):
+        claim_id = claim_id_for(event_id, text)
+        claim_rows.append({
+            "record_type": "claim",
+            "schema_version": 1,
+            "id": claim_id,
+            "event_id": event_id,
+            "text": text,
+            "claim_type": "other",
+            "status": "unverified",
+            "importance": "core",
+            "created_from": "migration",
+            "created_at": timestamp,
+            "updated_at": timestamp,
+            "provenance": {
+                "source_page": f"content/01_Timeline/{relative_path}",
+                "extraction": "event title/date" if index == 0 else "explicit Claims to verify bullet",
+            },
+        })
+
+    source_rows, evidence_rows, claim_relations = [], [], {}
+    for candidate in kept:
+        url = str(candidate.get("url") or "").strip()
+        if not url:
+            continue
+        source = _source_metadata(candidate, event_id, timestamp)
+        if source:
+            source_rows.append(source)
+        candidate_status = candidate.get("passage_status", "metadata_only")
+        passage = str(candidate.get("passage") or "").strip()
+        passage_status = "inspectable" if candidate_status in INSPECTABLE_STATUSES and len(passage) >= 30 else (
+            "retrieval_failed" if candidate_status == "retrieval_failed" else "metadata_only"
+        )
+        for claim_number in candidate.get("claims") or []:
+            if not isinstance(claim_number, int) or claim_number < 1 or claim_number > len(claim_texts):
+                continue
+            claim_text = claim_texts[claim_number - 1]
+            claim_id = claim_id_for(event_id, claim_text)
+            source_id = source_id_for(url)
+            evidence_digest = hashlib.sha256(
+                f"{source_id}|{claim_id}|{url}|{passage}".encode("utf-8")
+            ).hexdigest()[:16]
+            relation = candidate.get("relation", "background")
+            relation = relation if relation in {"supports", "contradicts", "partial", "background", "undetermined"} else "undetermined"
+            evidence = require_valid_record({
+                "record_type": "evidence",
+                "schema_version": 1,
+                "evidence_id": f"evidence:{evidence_digest}",
+                "source_id": source_id,
+                "claim_id": claim_id,
+                "relation": relation,
+                "passage_status": passage_status,
+                "passage": passage if passage_status == "inspectable" else None,
+                "locator": candidate.get("locator"),
+                "source_date": str(candidate.get("year")) if candidate.get("year") else None,
+                "url": url,
+                "retrieved_at": timestamp,
+                "retrieval_notes": str(candidate.get("why") or candidate.get("note") or "")[:1000] or None,
+            })
+            evidence_rows.append(evidence)
+            claim_relations.setdefault(claim_id, []).append(evidence)
+
+    claim_statuses = {}
+    judgement_rows = []
+    for claim_id, claim_evidence in claim_relations.items():
+        inspected = [item for item in claim_evidence if item["passage_status"] == "inspectable"]
+        relations = {item["relation"] for item in inspected}
+        if "supports" in relations and "contradicts" in relations:
+            verdict, uncertainty = "partial", "Inspected evidence conflicts; resolve the disagreement before treating the claim as settled."
+        elif "supports" in relations:
+            verdict, uncertainty = "supported", "At least one inspectable passage directly supports the claim; continue checking for contrary evidence."
+        elif "contradicts" in relations:
+            verdict, uncertainty = "contradicted", "At least one inspectable passage directly contradicts the claim; review before publication."
+        elif "partial" in relations:
+            verdict, uncertainty = "partial", "Inspectable evidence only partly addresses the claim."
+        else:
+            verdict, uncertainty = "unverified", "No inspectable passage directly establishes or contradicts this claim."
+        claim_statuses[claim_id] = verdict
+        evidence_ids = sorted({item["evidence_id"] for item in claim_evidence})
+        if evidence_ids:
+            rationale = " ".join(
+                str(item.get("retrieval_notes") or "").strip()
+                for item in claim_evidence if item.get("retrieval_notes")
+            )[:2000] or uncertainty
+            judgement_rows.append(require_valid_record({
+                "record_type": "judgement",
+                "schema_version": 1,
+                "judgement_id": f"judgement:{claim_id.removeprefix('claim:')}-v{prompt_version}-{timestamp_slug}",
+                "claim_id": claim_id,
+                "evidence_ids": evidence_ids,
+                "verdict": verdict,
+                "rationale": rationale,
+                "uncertainty": uncertainty,
+                "model": model,
+                "prompt_version": str(prompt_version),
+                "judged_at": timestamp,
+            }))
+
+    claim_path = records_dir / "claims.jsonl"
+    existing_claims = {row["id"]: row for row in _read_jsonl(claim_path)}
+    for row in claim_rows:
+        existing = existing_claims.get(row["id"])
+        if existing:
+            verdict = claim_statuses.get(row["id"], existing.get("status", "unverified"))
+            if verdict != existing.get("status"):
+                row["status"] = verdict
+                row["updated_at"] = timestamp
+            else:
+                row["status"] = existing.get("status", "unverified")
+                row["updated_at"] = existing.get("updated_at", row["updated_at"])
+                row["created_at"] = existing.get("created_at", row["created_at"])
+                row["created_from"] = existing.get("created_from", row["created_from"])
+                row["provenance"] = existing.get("provenance", row["provenance"])
+        else:
+            row["status"] = claim_statuses.get(row["id"], "unverified")
+        _upsert(claim_path, [row], "id")
+    if source_rows:
+        _upsert(records_dir / "sources.jsonl", source_rows, "source_id")
+    if evidence_rows:
+        _upsert(records_dir / "evidence.jsonl", evidence_rows, "evidence_id")
+    if judgement_rows:
+        _write_jsonl(records_dir / "judgements.jsonl", _read_jsonl(records_dir / "judgements.jsonl") + judgement_rows)
+    return {"event_id": event_id, "claims": len(claim_rows), "sources": len(source_rows), "evidence": len(evidence_rows), "judgements": len(judgement_rows)}

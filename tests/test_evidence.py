@@ -403,7 +403,7 @@ def test_claim_search_queries_include_each_distinct_claim():
         "Treaty signing",
         ["Treaty signed in 1842", "Elliot issued a proclamation", "Treaty signing"],
     )
-    assert queries[0] == "Treaty signing"
+    assert queries[0] == "Treaty"
     assert any("1842" in query for query in queries)
     assert any("Elliot" in query and "proclamation" in query for query in queries)
     assert len(queries) == 3

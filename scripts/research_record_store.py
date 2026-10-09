@@ -135,7 +135,7 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             "id": claim_id,
             "event_id": event_id,
             "text": text,
-            "claim_type": "other",
+            "claim_type": "date" if index == 0 else "other",
             "status": "unverified",
             "is_current": True,
             "superseded_at": None,

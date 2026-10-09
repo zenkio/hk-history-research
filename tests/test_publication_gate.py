@@ -128,6 +128,20 @@ def test_contradictory_evidence_blocks_a_supported_claim(tmp_path):
     errors = gate.validate_page(page, content)
     assert any("contradictory evidence blocks a supported verdict" in error for error in errors)
 
+
+def test_passage_from_an_unlinked_source_cannot_validate_another_source_url(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace(
+        "passage_status: inspectable",
+        "passage_status: metadata_only",
+    ).replace(
+        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."',
+        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."\\n      - title: "Unlinked passage"\\n        relation: supports\\n        passage_status: inspectable\\n        passage: "This unrelated passage is long enough but has no source URL linked to it."',
+    )
+    errors = gate.validate_page(page, content)
+    assert any("tied to its own source URL" in error for error in errors)
+
+
 def test_disputed_claim_requires_contradictory_evidence(tmp_path):
     page = tmp_path / "event.md"
     content = published_page(claim_status="disputed", verification_status="disputed")

@@ -41,6 +41,10 @@ def test_migration_does_not_invent_claims_for_pages_without_claim_section(tmp_pa
     result = migration.build_records(root, now="2026-10-09T10:00:00Z")
     assert result["claims"] == []
     assert result["pages_without_explicit_claims"] == ["1841-example.md"]
+    assert len(result["claim_extraction_queue"]) == 1
+    task = result["claim_extraction_queue"][0]
+    assert task["status"] == "queued"
+    assert task["priority"] == "deferred"
 
 
 def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):
@@ -60,3 +64,4 @@ def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):
     claims = [json.loads(line) for line in (output / "claims.jsonl").read_text(encoding="utf-8").splitlines()]
     assert len(claims) == 1
     assert claims[0]["id"] == "claim:1841-example-claim-01"
+    assert (output / "claim-extraction-queue.jsonl").exists()

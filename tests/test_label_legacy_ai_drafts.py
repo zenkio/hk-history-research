@@ -56,6 +56,7 @@ def test_explicitly_verified_source_feed_page_is_not_downgraded():
 title: Reviewed event
 confidence: reviewed
 source_feed: archive-feed
+origin: ai
 verification_status: verified
 ---
 

@@ -227,10 +227,30 @@ def national_archives(query):
                     "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
     return out
 
+def internet_archive_ai_processing_allowed(metadata):
+    """Default-deny OCR processing unless item metadata explicitly marks it public domain/CC0."""
+    item = metadata.get("metadata") or {}
+    values = [
+        item.get("licenseurl"), item.get("license"), item.get("rights"),
+        item.get("rightsstatement"), metadata.get("licenseurl"), metadata.get("rights"),
+    ]
+    for value in values:
+        if isinstance(value, list):
+            values.extend(value)
+    normalized = " ".join(str(value).casefold() for value in values if value)
+    return (
+        "creativecommons.org/publicdomain/mark" in normalized
+        or "creativecommons.org/publicdomain/zero" in normalized
+        or "public domain" in normalized
+    )
+
+
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""
     try:
         metadata = _get_json(f"https://archive.org/metadata/{urllib.parse.quote(identifier, safe='')}")
+        if not internet_archive_ai_processing_allowed(metadata):
+            return None  # no explicit public-domain/CC0 rights signal: metadata-only discovery
         files = metadata.get("files") or []
         names = [item.get("name", "") for item in files if item.get("name")]
         # Internet Archive's usual OCR output. Do not treat item descriptions or PDFs as text.

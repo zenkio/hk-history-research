@@ -16,6 +16,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from research_records import require_valid_record
+from research_record_store import claim_id_for, normalize_claim_text
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CONTENT_ROOT = PROJECT_ROOT / "content" / "01_Timeline"
@@ -110,9 +111,8 @@ def build_records(content_root, now=None, limit=None):
             }
             claim_extraction_queue.append(require_valid_record(task))
         for claim_text in page_claims:
-            normalized_claim = re.sub(r"\s+", " ", claim_text).strip().casefold()
-            claim_digest = hashlib.sha256(normalized_claim.encode("utf-8")).hexdigest()[:10]
-            claim_id = f"claim:{event_id.removeprefix('event:')}-{claim_digest}"
+            claim_text = normalize_claim_text(claim_text)
+            claim_id = claim_id_for(event_id, claim_text)
             record = {
                 "record_type": "claim",
                 "schema_version": 1,

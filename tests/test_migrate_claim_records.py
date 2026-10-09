@@ -13,7 +13,7 @@ def test_migration_extracts_only_explicit_claim_bullets_and_preserves_source_can
     page.write_text(
         "---\ntitle: Example\ntags: [ai-draft]\n---\n"
         "## What happened\nThe event happened in 1841.\n"
-        "## Claims to verify\n- The event happened in January 1841.\n"
+        "## Claims to verify\n- ❔ The event happened in January 1841.\n"
         "- The proclamation was issued by Elliot.\n"
         "## Evidence\n[Archive catalogue](https://example.org/catalogue/1)\n"
         "[Wikipedia](https://en.wikipedia.org/wiki/Example)\n",
@@ -24,6 +24,7 @@ def test_migration_extracts_only_explicit_claim_bullets_and_preserves_source_can
     assert result["pages_seen"] == 1
     assert len(result["claims"]) == 2
     assert result["claims"][0]["status"] == "unverified"
+    assert result["claims"][0]["text"] == "The event happened in January 1841."
     assert result["claims"][0]["importance"] == "core"
     assert len(result["sources"]) == 1
     assert result["sources"][0]["authority_level"] == "discovery_only"

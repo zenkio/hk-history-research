@@ -52,7 +52,7 @@ def write_structured_records(records_dir, *, status="supported", relation="suppo
         "stable_url": "https://example.org/archive-record", "catalogue_reference": "EX-1",
         "retrieval_method": "manual", "publication_date": "1841",
         "discovered_at": "2026-10-09T00:00:00Z", "rights_notes": "Test fixture.",
-    }) + "\\n", encoding="utf-8")
+    }) + "\n", encoding="utf-8")
     (records_dir / "evidence.jsonl").write_text(json.dumps({
         "record_type": "evidence", "schema_version": 1,
         "claim_id": "claim:example-date", "evidence_id": "evidence:example",

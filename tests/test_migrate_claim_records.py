@@ -28,6 +28,7 @@ def test_migration_extracts_only_explicit_claim_bullets_and_preserves_source_can
     assert result["claims"][0]["importance"] == "core"
     assert len(result["sources"]) == 1
     assert result["sources"][0]["authority_level"] == "discovery_only"
+    assert result["sources"][0]["language"] == "und"
     assert result["sources"][0]["event_ids"] == ["event:1841-example"]
     assert "passage" not in result["sources"][0]
 

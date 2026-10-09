@@ -59,30 +59,28 @@ Claims made on the page:
 Candidate sources found by search (id, type, year, title, note, inspectable passage):
 {candidates}
 
-A title, catalogue description or search snippet is not the same as reading the source. The passage
-field is usable text inspected from the source itself (for scholarship, an abstract is acceptable for
-claims it directly states). If passage_status is metadata_only or passage is empty, it cannot support
-or contradict a factual claim: at most classify it as background or exclude it, and say the source
-still needs inspection.
+Use the passage field as the deciding evidence whenever it contains inspected source text or an academic abstract.
+The title and note may identify the source, but they are metadata and must NOT be used to infer historical facts
+or to support/contradict a claim when the passage does not establish that fact.
 
-Keep a candidate ONLY if it is about THIS event: the same event, place and period. A work on
-the general subject is not evidence for a specific event (a study of Chinese ancestor worship is
-not evidence for one Hong Kong ancestral hall; a history of the Qing collapse is not evidence for
-what happened in Hong Kong in 1911). When unsure, leave it out.
+If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
+the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
+Never infer the contents of an archive record from its catalogue description or title.
 
-Claim 1 is the event itself. An archive record or contemporary publication whose title or note
-shows it documents this event, or a scholarly work specifically about this event, supports claim 1
-(and any other claim its title or note bears on). A work that only mentions the event in passing is
-background.
+For each candidate, compare the actual passage with the numbered claims. Record only claims that the
+passage directly addresses, and state what the passage establishes. If the passage is ambiguous or only
+partly supports a claim, explain the limitation rather than overstating the evidence.
 
-For each kept candidate, judging only from its title and note:
-- "relation": "supports" if it bears directly on one or more numbered claims and agrees with them;
-  "contradicts" if it bears on a claim and disagrees (e.g. a different date, place or outcome);
-  "background" if it is about this event but does not bear on any specific claim.
-- "claims": the claim numbers it bears on (empty for background).
-- "why": one sentence naming what in the title or note bears on the claim. Say no more than the
-  title and note show.
+Claim 1 is the event itself. It is supported only when the inspected passage directly documents this event
+or establishes that it happened; a matching title or catalogue entry alone is not enough.
 
+For each kept candidate:
+- "relation": "supports" if the passage directly supports one or more numbered claims;
+  "contradicts" if the passage directly conflicts with a claim; "background" if it is relevant but
+  does not establish or conflict with a specific claim.
+- "claims": the claim numbers directly addressed by the passage (empty for background).
+- "why": one short sentence describing the passage itself and the limit of what it proves.
+If no passage directly bears on a claim, do not label it supports or contradicts.
 Respond with ONLY this JSON:
 {{"relevant": [{{"id": "c3", "relation": "supports", "claims": [1, 2], "why": "One short sentence"}}],
   "missing": "One sentence on what evidence is still needed, or empty"}}"""
@@ -413,7 +411,8 @@ def judged(data, candidates):
         c["why"] = r.get("why", "")
         relation = str(r.get("relation", "")).lower()
         # Fail closed: only an inspected passage may support or contradict a claim.
-        has_passage = bool(str(c.get("passage", "")).strip()) and c.get("passage_status") != "metadata_only"
+        has_passage = (bool(str(c.get("passage", "")).strip()) and
+                       c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"})
         c["relation"] = relation if relation in RELATIONS and c["claims"] and has_passage else "background"
         if relation in RELATIONS and not has_passage:
             c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
@@ -665,7 +664,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 6  # 6: only inspectable source passages may support or contradict claims
+JUDGE_VERSION = 7  # 7: judge support from inspected passages, not titles/metadata
+# 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
 # 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras
@@ -680,6 +680,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
+    if version < 7 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # prior prompt told the judge to rely on titles/notes, not inspected passages
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

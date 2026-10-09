@@ -7,7 +7,7 @@ import publication_gate as gate
 
 
 def published_page(*, confidence="reviewed", verification_status="verified",
-                   claim_status="supported", publication_status="published"):
+                   claim_status="supported", publication_status="published", evidence_relation="supports"):
     return f"""---
 title: "Example event"
 confidence: {confidence}
@@ -20,7 +20,7 @@ claims:
     status: {claim_status}
     evidence:
       - https://example.org/archive-record
-        relation: supports
+        relation: {evidence_relation}
         passage_status: inspectable
         passage: "The contemporary archive record explicitly describes the event and its date in the official register."
 ---
@@ -200,6 +200,18 @@ def test_disputed_claim_requires_contradictory_evidence(tmp_path):
     content = published_page(claim_status="disputed", verification_status="disputed")
     errors = gate.validate_page(page, content)
     assert any("disputed claims require inspectable evidence with relation contradicts" in error for error in errors)
+
+
+
+def test_explicit_dispute_with_current_contradiction_can_be_published(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path, status="partial", relation="contradicts")
+    content = published_page(
+        claim_status="disputed",
+        verification_status="disputed",
+        evidence_relation="contradicts",
+    )
+    assert gate.validate_page(page, content, records_dir=tmp_path) == []
 
 
 def test_engine_inspectable_record_status_can_pass_gate(tmp_path):

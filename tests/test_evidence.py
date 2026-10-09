@@ -440,3 +440,23 @@ def test_claim_search_uses_openalex_only_once_without_api_key(monkeypatch):
     ev.gather_claim_candidates(["event title", "first claim", "second claim"])
     assert "OpenAlex" in calls[0][1]
     assert all("OpenAlex" not in source_names for _, source_names in calls[1:])
+
+
+def test_read_page_extracts_current_question_mark_claim_bullets(tmp_path):
+    page = tmp_path / "event.md"
+    page.write_text(
+        '---\ntitle: "Test event"\nyear: 1841\n---\n'
+        '## Claims to verify\n'
+        '- ❔ The treaty was signed in 1841.\n'
+        '- [ ] Elliot issued the proclamation.\n'
+        '## Wikipedia cross-check\n'
+        '- ✅ **agrees with Wikipedia**: a different reference claim.\n',
+        encoding="utf-8",
+    )
+    _, title, date, claims = ev.read_page(str(page))
+    assert title == "Test event"
+    assert date == "1841"
+    assert claims[:2] == [
+        "The treaty was signed in 1841.",
+        "Elliot issued the proclamation.",
+    ]

@@ -122,12 +122,15 @@ def test_support_status_cannot_be_backed_only_by_contradictory_evidence(tmp_path
 def test_contradictory_evidence_blocks_a_supported_claim(tmp_path):
     page = tmp_path / "event.md"
     content = published_page().replace(
-        "relation: supports",
-        "relation: supports\n        relation: contradicts",
+        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."',
+        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."' + chr(10)
+        + '      - https://example.org/contradictory-record' + chr(10)
+        + '        relation: contradicts' + chr(10)
+        + '        passage_status: inspectable' + chr(10)
+        + '        passage: "A second inspected record explicitly gives a different date for this event."',
     )
     errors = gate.validate_page(page, content)
     assert any("contradictory evidence blocks a supported verdict" in error for error in errors)
-
 
 def test_passage_from_an_unlinked_source_cannot_validate_another_source_url(tmp_path):
     page = tmp_path / "event.md"
@@ -136,11 +139,14 @@ def test_passage_from_an_unlinked_source_cannot_validate_another_source_url(tmp_
         "passage_status: metadata_only",
     ).replace(
         '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."',
-        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."\\n      - title: "Unlinked passage"\\n        relation: supports\\n        passage_status: inspectable\\n        passage: "This unrelated passage is long enough but has no source URL linked to it."',
+        '        passage: "The contemporary archive record explicitly describes the event and its date in the official register."' + chr(10)
+        + '      - title: "Unlinked passage"' + chr(10)
+        + '        relation: supports' + chr(10)
+        + '        passage_status: inspectable' + chr(10)
+        + '        passage: "This unrelated passage is long enough but has no source URL linked to it."',
     )
     errors = gate.validate_page(page, content)
     assert any("requires an inspectable evidence passage tied to its own source URL" in error for error in errors)
-
 
 def test_disputed_claim_requires_contradictory_evidence(tmp_path):
     page = tmp_path / "event.md"

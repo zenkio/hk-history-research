@@ -117,7 +117,7 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
     event_id = event_id_for_relative_path(relative_path)
     timestamp_dt = datetime.now(timezone.utc)
     timestamp = timestamp_dt.isoformat(timespec="seconds").replace("+00:00", "Z")
-    timestamp_slug = timestamp_dt.strftime("%Y%m%dt%H%M%Sz").lower()
+    timestamp_slug = timestamp_dt.strftime("%Y%m%dt%H%M%S%fZ").lower()
     claim_texts = [f"{title} took place in Hong Kong ({date})", *claims]
     claim_rows = []
     for index, text in enumerate(claim_texts):
@@ -184,7 +184,9 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
 
     claim_statuses = {}
     judgement_rows = []
-    for claim_id, claim_evidence in claim_relations.items():
+    for claim_text in claim_texts:
+        claim_id = claim_id_for(event_id, claim_text)
+        claim_evidence = claim_relations.get(claim_id, [])
         inspected = [item for item in claim_evidence if item["passage_status"] == "inspectable"]
         relations = {item["relation"] for item in inspected}
         if "supports" in relations and "contradicts" in relations:
@@ -199,47 +201,43 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             verdict, uncertainty = "unverified", "No inspectable passage directly establishes or contradicts this claim."
         claim_statuses[claim_id] = verdict
         evidence_ids = sorted({item["evidence_id"] for item in claim_evidence})
-        if evidence_ids:
-            rationale = " ".join(
-                str(item.get("retrieval_notes") or "").strip()
-                for item in claim_evidence if item.get("retrieval_notes")
-            )[:2000] or uncertainty
-            judgement_rows.append(require_valid_record({
-                "record_type": "judgement",
-                "schema_version": 1,
-                "judgement_id": f"judgement:{claim_id.removeprefix('claim:')}-v{prompt_version}-{timestamp_slug}",
-                "claim_id": claim_id,
-                "evidence_ids": evidence_ids,
-                "verdict": verdict,
-                "rationale": rationale,
-                "uncertainty": uncertainty,
-                "model": model,
-                "prompt_version": str(prompt_version),
-                "judged_at": timestamp,
-            }))
+        rationale = " ".join(
+            str(item.get("retrieval_notes") or "").strip()
+            for item in claim_evidence if item.get("retrieval_notes")
+        )[:2000] or uncertainty
+        judgement_rows.append(require_valid_record({
+            "record_type": "judgement",
+            "schema_version": 1,
+            "judgement_id": f"judgement:{claim_id.removeprefix('claim:')}-v{prompt_version}-{timestamp_slug}",
+            "claim_id": claim_id,
+            "evidence_ids": evidence_ids,
+            "verdict": verdict,
+            "rationale": rationale,
+            "uncertainty": uncertainty,
+            "model": model,
+            "prompt_version": str(prompt_version),
+            "judged_at": timestamp,
+        }))
 
     claim_path = records_dir / "claims.jsonl"
     existing_claims = {row["id"]: row for row in _read_jsonl(claim_path)}
     for row in claim_rows:
         existing = existing_claims.get(row["id"])
+        verdict = claim_statuses.get(row["id"], "unverified")
+        row["status"] = verdict
         if existing:
-            verdict = claim_statuses.get(row["id"], existing.get("status", "unverified"))
             if verdict != existing.get("status"):
-                row["status"] = verdict
                 row["updated_at"] = timestamp
             else:
-                row["status"] = existing.get("status", "unverified")
                 row["updated_at"] = existing.get("updated_at", row["updated_at"])
-                row["created_at"] = existing.get("created_at", row["created_at"])
-                row["created_from"] = existing.get("created_from", row["created_from"])
-                row["provenance"] = existing.get("provenance", row["provenance"])
-        else:
-            row["status"] = claim_statuses.get(row["id"], "unverified")
-        _upsert(claim_path, [row], "id")
+            row["created_at"] = existing.get("created_at", row["created_at"])
+            row["created_from"] = existing.get("created_from", row["created_from"])
+            row["provenance"] = existing.get("provenance", row["provenance"])
+    _upsert(claim_path, claim_rows, "id")
     if source_rows:
         _upsert(records_dir / "sources.jsonl", source_rows, "source_id")
     if evidence_rows:
         _upsert(records_dir / "evidence.jsonl", evidence_rows, "evidence_id")
     if judgement_rows:
-        _write_jsonl(records_dir / "judgements.jsonl", _read_jsonl(records_dir / "judgements.jsonl") + judgement_rows)
+        _upsert(records_dir / "judgements.jsonl", judgement_rows, "judgement_id")
     return {"event_id": event_id, "claims": len(claim_rows), "sources": len(source_rows), "evidence": len(evidence_rows), "judgements": len(judgement_rows)}

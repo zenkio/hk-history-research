@@ -44,7 +44,7 @@ def parse_claims(frontmatter):
         if not chunk.strip():
             continue
         def value(key):
-            found = re.search(rf"(?m)^\\s*{re.escape(key)}:\\s*(.*?)\\s*$", chunk)
+            found = re.search(rf"(?m)^\s*{re.escape(key)}:\s*(.*?)\s*$", chunk)
             return found.group(1).strip().strip('"').strip("'") if found else ""
         claims.append({
             "id": value("id"),

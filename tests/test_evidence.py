@@ -519,3 +519,12 @@ def test_internet_archive_ocr_is_not_downloaded_without_explicit_open_rights(mon
     })
     monkeypatch.setattr(ev.urllib.request, "urlopen", forbidden_download)
     assert ev.internet_archive_text("restricted-book") is None
+
+
+def test_internet_archive_rights_gate_rejects_explicit_non_public_domain_text():
+    assert not ev.internet_archive_ai_processing_allowed({
+        "metadata": {"rights": "This item is not in the public domain."}
+    })
+    assert ev.internet_archive_ai_processing_allowed({
+        "metadata": {"rights": "Public domain"}
+    })

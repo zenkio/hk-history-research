@@ -342,6 +342,9 @@ def run_git_commit():
         print("Git push completed.")
     except subprocess.CalledProcessError as e:
         print(f"Git operation failed: {e}")
+        # Do not report the ingestion step as successful when generated pages or queue
+        # state may not have reached the canonical data repository.
+        raise RuntimeError("Git operation failed; ingestion changes may not have been persisted") from e
 
 
 if __name__ == "__main__":

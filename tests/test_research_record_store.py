@@ -52,6 +52,7 @@ def test_record_store_persists_and_then_supersedes_claim_evidence(tmp_path):
     claims = read_jsonl(records / "claims.jsonl")
     event_claim = next(c for c in claims if c["text"] == "Example event occurred in 1841.")
     assert event_claim["status"] == "supported"
+    assert event_claim["claim_type"] == "date"
     assert event_claim["is_current"] is True
     evidence = read_jsonl(records / "evidence.jsonl")
     assert evidence[0]["passage_status"] == "inspectable"

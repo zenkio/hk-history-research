@@ -125,7 +125,7 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
     timestamp_dt = datetime.now(timezone.utc)
     timestamp = timestamp_dt.isoformat(timespec="seconds").replace("+00:00", "Z")
     timestamp_slug = timestamp_dt.strftime("%Y%m%dt%H%M%S%fZ").lower()
-    claim_texts = [f"{title} took place in Hong Kong ({date})", *[normalize_claim_text(item) for item in claims]]
+    claim_texts = [f"{title} occurred in {date}." if date else f"{title} occurred.", *[normalize_claim_text(item) for item in claims]]
     claim_rows = []
     for index, text in enumerate(claim_texts):
         claim_id = claim_id_for(event_id, text)

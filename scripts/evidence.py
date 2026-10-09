@@ -445,11 +445,9 @@ def search_summary(query, candidates, failed, kept):
 
 
 def event_claims(title, date, claims):
-    """The page's claims, led by the event itself. Without it an archive file named after the event
-    could only be background (the judge found no detailed claim its title confirms), and a page with
-    no claims list could never earn a grade."""
-    return [f"{title} took place in Hong Kong ({date})"] + list(claims)
-
+    """Lead with the event/date claim without assuming every event happened in Hong Kong."""
+    event_claim = f"{title} occurred in {date}." if date else f"{title} occurred."
+    return [event_claim] + list(claims)
 
 def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
@@ -793,7 +791,7 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 7  # 7: judge support from inspected passages, not titles/metadata
+JUDGE_VERSION = 8  # 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
@@ -809,8 +807,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    if version < 7 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
-        return True  # prior prompt told the judge to rely on titles/notes, not inspected passages
+    if version < 8 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # prior judge version used metadata-led instructions or the implicit Hong Kong location claim
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

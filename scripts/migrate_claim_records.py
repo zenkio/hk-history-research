@@ -121,6 +121,8 @@ def build_records(content_root, now=None, limit=None):
                 "text": claim_text,
                 "claim_type": "other",
                 "status": "unverified",
+                "is_current": True,
+                "superseded_at": None,
                 "importance": "core",
                 "created_from": "migration",
                 "created_at": timestamp,

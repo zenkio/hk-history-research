@@ -83,7 +83,7 @@ def load_structured_records(records_dir):
     loaded = {}
     errors = []
     from research_records import validate_record
-    for kind, filename in (("claims", "claims.jsonl"), ("evidence", "evidence.jsonl"), ("judgements", "judgements.jsonl")):
+    for kind, filename in (("claims", "claims.jsonl"), ("sources", "sources.jsonl"), ("evidence", "evidence.jsonl"), ("judgements", "judgements.jsonl")):
         path = records_dir / filename
         if not path.is_file():
             errors.append(f"structured research records missing: {filename}")
@@ -129,12 +129,18 @@ def validate_against_records(claim, records, record_errors):
         key=lambda row: str(row.get("judged_at", "")),
     )
     latest_verdict = str(judgements[-1].get("verdict", "")).lower() if judgements else ""
+    sources_by_id = {
+        row.get("source_id"): row for row in records["sources"]
+        if row.get("source_id")
+    }
     current_evidence = [
         row for row in records["evidence"]
         if row.get("claim_id") == claim["id"] and row.get("is_current", True)
         and row.get("passage_status") == "inspectable"
         and len(str(row.get("passage") or "").strip()) >= 30
         and str(row.get("url") or "").strip()
+        and row.get("source_id") in sources_by_id
+        and str(sources_by_id[row.get("source_id")].get("stable_url") or "").strip() == str(row.get("url") or "").strip()
     ]
     inline_urls = {item["url"] for item in claim["evidence"] if item["url"]}
     record_urls = {str(row.get("url") or "").strip() for row in current_evidence}

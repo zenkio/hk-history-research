@@ -616,9 +616,11 @@ def run(max_calls, minutes, commit=False, failures=None):
                 data, model, _ = pool.generate_json("draft", EVENT_PROMPT.format(
                     name=name, span=span, title=ev["title"], date=ev["date"] or ev["year"],
                     summary=ev["summary"], style=STYLE))
+                # Complete all data-derived bookkeeping before replacing the page. If this step
+                # fails, the previous page stays intact and the task remains retryable.
+                register_entities(plan, ev, data)
                 ev["file"] = write_event_page(ev["era"], ev, data, model)
                 ev["status"] = "done"
-                register_entities(plan, ev, data)
                 print(f"[draft] {ev['file']} ({model})")
             elif kind == "entity":
                 ent = arg

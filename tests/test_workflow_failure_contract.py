@@ -8,6 +8,7 @@ WORKFLOW = ROOT / ".github" / "workflows" / "ingestion.yml"
 
 def test_classification_failure_is_not_silently_reported_as_success():
     workflow = WORKFLOW.read_text(encoding="utf-8")
+    assert "cancel-in-progress: false" in workflow
 
     classify = workflow.index("- name: Classify and publish")
     evidence = workflow.index("- name: Evidence, cross-check, photos and drafting")

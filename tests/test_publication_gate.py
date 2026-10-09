@@ -78,6 +78,28 @@ def test_valid_claim_level_page_can_be_published(tmp_path):
     assert gate.validate_page(page, published_page(), records_dir=tmp_path) == []
 
 
+def test_malformed_frontmatter_cannot_hide_explicit_publication_marker(tmp_path):
+    page = tmp_path / "event.md"
+    content = """---
+title: "Broken published page"
+publication_status: "published"
+verification_status: "verified"
+claims:
+  - id: claim:example-date
+    text: "The event occurred in 1841."
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("frontmatter is missing or malformed" in error for error in errors)
+
+def test_publication_gate_main_fails_on_malformed_published_frontmatter(tmp_path):
+    page = tmp_path / "broken.md"
+    page.write_text(
+        "---\ntitle: Broken\npublication_status: published\nverification_status: verified\n",
+        encoding="utf-8",
+    )
+    assert gate.main([str(tmp_path)]) == 1
+
+
 
 
 def test_fabricated_inline_passage_cannot_replace_the_structured_passage(tmp_path):
@@ -122,6 +144,22 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
         }) + chr(10))
     errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
+
+
+def test_publication_requires_latest_judgement_to_reference_inline_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path)
+    judgement_path = tmp_path / "judgements.jsonl"
+    judgement = json.loads(judgement_path.read_text(encoding="utf-8"))
+    judgement["evidence_ids"] = []
+    judgement_path.write_text(json.dumps(judgement) + chr(10), encoding="utf-8")
+
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+
+    assert any(
+        "latest structured judgement must reference the current inline evidence passage" in error
+        for error in errors
+    )
 
 
 def test_mismatched_source_catalogue_url_fails_closed(tmp_path):
@@ -315,3 +353,28 @@ def test_engine_inspectable_record_status_can_pass_gate(tmp_path):
     content = published_page().replace("passage_status: inspectable", "passage_status: inspectable_record")
     write_structured_records(tmp_path)
     assert gate.validate_page(page, content, records_dir=tmp_path) == []
+
+
+def test_inline_yaml_comment_cannot_hide_published_status(tmp_path):
+    page = tmp_path / "event.md"
+    content = """---
+title: "Broken published page"
+publication_status: published # explicit release marker
+verification_status: disputed
+---
+Narrative without claim records.
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("claim-level records" in error for error in errors)
+
+
+def test_inline_yaml_comment_cannot_hide_ai_draft_status(tmp_path):
+    page = tmp_path / "draft.md"
+    content = """---
+title: "Legacy draft"
+confidence: ai-draft # must remain visibly marked
+---
+Narrative without an AI-draft warning.
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("must display the explicit AI draft research warning" in error for error in errors)

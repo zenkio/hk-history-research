@@ -16,6 +16,26 @@ PUBLISHABLE_CLAIM_STATUSES = {"supported", "disputed"}
 CORE_PUBLISHABLE_STATUSES = {"supported", "disputed"}
 
 
+def strip_yaml_comment(value):
+    """Remove a YAML inline comment without treating # inside quoted values as a comment."""
+    quote = None
+    escaped = False
+    for index, char in enumerate(value):
+        if quote:
+            if quote == '"' and char == "\\" and not escaped:
+                escaped = True
+                continue
+            if char == quote and not escaped:
+                quote = None
+            escaped = False
+            continue
+        if char in ("'", '"'):
+            quote = char
+        elif char == "#" and (index == 0 or value[index - 1].isspace()):
+            return value[:index].rstrip()
+    return value.strip()
+
+
 def parse_frontmatter(text):
     match = re.match(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", text, re.DOTALL)
     if not match:
@@ -25,7 +45,7 @@ def parse_frontmatter(text):
     for line in raw.splitlines():
         scalar = re.match(r"^([A-Za-z_][A-Za-z0-9_-]*):\s*(.*?)\s*$", line)
         if scalar:
-            fields[scalar.group(1)] = scalar.group(2).strip().strip('"').strip("'")
+            fields[scalar.group(1)] = strip_yaml_comment(scalar.group(2)).strip().strip('"').strip("'")
     return fields, raw
 
 
@@ -148,7 +168,9 @@ def validate_against_records(claim, records, record_errors):
         (row for row in records["judgements"] if row.get("claim_id") == claim["id"]),
         key=lambda row: str(row.get("judged_at", "")),
     )
-    latest_verdict = str(judgements[-1].get("verdict", "")).lower() if judgements else ""
+    latest_judgement = judgements[-1] if judgements else None
+    latest_verdict = str(latest_judgement.get("verdict", "")).lower() if latest_judgement else ""
+    latest_judged_evidence_ids = set(latest_judgement.get("evidence_ids", [])) if latest_judgement else set()
     sources_by_id = {
         row.get("source_id"): row for row in records["sources"]
         if row.get("source_id")
@@ -181,7 +203,15 @@ def validate_against_records(claim, records, record_errors):
     if not linked_current_evidence:
         errors.append(f"{label}: inline evidence URL, relation and passage must match a current structured inspectable evidence record")
     relations = {str(row.get("relation", "")).lower() for row in current_evidence}
-    linked_relations = {str(row.get("relation", "")).lower() for row in linked_current_evidence}
+    judged_linked_evidence = [
+        row for row in linked_current_evidence
+        if row.get("evidence_id") in latest_judged_evidence_ids
+    ]
+    if linked_current_evidence and not judged_linked_evidence:
+        errors.append(
+            f"{label}: latest structured judgement must reference the current inline evidence passage"
+        )
+    linked_relations = {str(row.get("relation", "")).lower() for row in judged_linked_evidence}
     if claim["status"] == "supported":
         if status != "supported" or latest_verdict != "supported":
             errors.append(f"{label}: supported publication requires the latest structured claim and judgement to be supported")
@@ -200,6 +230,12 @@ def validate_against_records(claim, records, record_errors):
 def validate_page(path, text, records_dir=None):
     fields, frontmatter = parse_frontmatter(text)
     if fields is None:
+        # A broken frontmatter delimiter must not hide an explicit publication claim.
+        if re.search(
+            r"""(?im)^\s*(?:publication_status\s*:\s*['"]?published['"]?|verification_status\s*:\s*['"]?verified['"]?)\s*(?:#.*)?$""",
+            text,
+        ):
+            return ["published/verified marker present but frontmatter is missing or malformed"]
         return []
     errors = []
     publication_status = fields.get("publication_status", "").lower()
@@ -284,6 +320,10 @@ def main(argv=None):
             continue
         fields, _ = parse_frontmatter(text)
         if fields is None:
+            errors = validate_page(path, text)
+            if errors:
+                checked += 1
+                failures.append((path, errors))
             continue
         if fields.get("publication_status", "").lower() == PUBLISHED_STATUS or fields.get("verification_status", "").lower() == "verified":
             checked += 1

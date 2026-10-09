@@ -37,18 +37,29 @@ def write_structured_records(records_dir, *, status="supported", relation="suppo
     claim_status = status
     verdict = status
     (records_dir / "claims.jsonl").write_text(json.dumps({
-        "record_type": "claim", "id": "claim:example-date", "event_id": "event:example",
-        "text": "The event occurred in 1841.", "status": claim_status, "is_current": True,
+        "record_type": "claim", "schema_version": 1,
+        "id": "claim:example-date", "event_id": "event:example",
+        "text": "The event occurred in 1841.", "claim_type": "date",
+        "status": claim_status, "importance": "core", "created_from": "manual",
+        "created_at": "2026-10-01T00:00:00Z", "updated_at": "2026-10-09T00:00:00Z",
+        "is_current": True, "superseded_at": None, "provenance": {"source_page": "example.md"},
     }) + "\n", encoding="utf-8")
     (records_dir / "evidence.jsonl").write_text(json.dumps({
-        "record_type": "evidence", "claim_id": "claim:example-date",
-        "evidence_id": "evidence:example", "source_id": "source:example",
-        "relation": relation, "passage_status": "inspectable", "passage": passage,
-        "url": "https://example.org/archive-record", "is_current": True,
+        "record_type": "evidence", "schema_version": 1,
+        "claim_id": "claim:example-date", "evidence_id": "evidence:example",
+        "source_id": "source:example", "relation": relation,
+        "passage_status": "inspectable", "passage": passage,
+        "url": "https://example.org/archive-record", "retrieved_at": "2026-10-09T00:00:00Z",
+        "is_current": True, "superseded_at": None, "locator": "page 1",
+        "source_date": "1841", "retrieval_notes": "Inspected source passage.",
     }) + "\n", encoding="utf-8")
     (records_dir / "judgements.jsonl").write_text(json.dumps({
-        "record_type": "judgement", "claim_id": "claim:example-date",
-        "verdict": verdict, "judged_at": "2026-10-09T00:00:00Z",
+        "record_type": "judgement", "schema_version": 1,
+        "judgement_id": "judgement:example", "claim_id": "claim:example-date",
+        "evidence_ids": ["evidence:example"], "verdict": verdict,
+        "rationale": "The inspected passage directly addresses the claim.",
+        "uncertainty": "No further uncertainty recorded.", "model": "test-model",
+        "prompt_version": "1", "judged_at": "2026-10-09T00:00:00Z",
     }) + "\n", encoding="utf-8")
 
 
@@ -65,11 +76,15 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     evidence_path = tmp_path / "evidence.jsonl"
     with evidence_path.open("a", encoding="utf-8") as stream:
         stream.write(json.dumps({
-            "record_type": "evidence", "claim_id": "claim:example-date",
-            "evidence_id": "evidence:contradiction", "source_id": "source:contradiction",
-            "relation": "contradicts", "passage_status": "inspectable",
+            "record_type": "evidence", "schema_version": 1,
+            "claim_id": "claim:example-date", "evidence_id": "evidence:contradiction",
+            "source_id": "source:contradiction", "relation": "contradicts",
+            "passage_status": "inspectable",
             "passage": "A second inspected historical record explicitly gives a different date for this event.",
-            "url": "https://example.org/contradictory-record", "is_current": True,
+            "url": "https://example.org/contradictory-record",
+            "retrieved_at": "2026-10-09T00:00:00Z", "is_current": True,
+            "superseded_at": None, "locator": "page 2", "source_date": "1842",
+            "retrieval_notes": "Contradictory inspected passage.",
         }) + chr(10))
     errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)

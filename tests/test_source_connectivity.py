@@ -24,3 +24,14 @@ def test_probe_rejects_wrong_xml_root():
     ok, detail = probe.inspect_response(spec, 200, "application/xml", b"<Error>not an OAI response</Error>")
     assert not ok
     assert "unexpected XML response shape" in detail
+
+
+def test_strict_connectivity_mode_only_fails_required_endpoints(monkeypatch):
+    monkeypatch.setattr(probe, "PROBES", [
+        {"name": "optional", "required": False},
+        {"name": "required", "required": True},
+    ])
+    monkeypatch.setattr(probe, "probe", lambda item, timeout=15: (item["name"] == "required", "mock result"))
+    assert probe.main(["--strict"]) == 0
+    monkeypatch.setattr(probe, "probe", lambda item, timeout=15: (False, "mock failure"))
+    assert probe.main(["--strict"]) == 1

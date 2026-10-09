@@ -353,3 +353,28 @@ def test_engine_inspectable_record_status_can_pass_gate(tmp_path):
     content = published_page().replace("passage_status: inspectable", "passage_status: inspectable_record")
     write_structured_records(tmp_path)
     assert gate.validate_page(page, content, records_dir=tmp_path) == []
+
+
+def test_inline_yaml_comment_cannot_hide_published_status(tmp_path):
+    page = tmp_path / "event.md"
+    content = """---
+title: "Broken published page"
+publication_status: published # explicit release marker
+verification_status: disputed
+---
+Narrative without claim records.
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("claim-level records" in error for error in errors)
+
+
+def test_inline_yaml_comment_cannot_hide_ai_draft_status(tmp_path):
+    page = tmp_path / "draft.md"
+    content = """---
+title: "Legacy draft"
+confidence: ai-draft # must remain visibly marked
+---
+Narrative without an AI-draft warning.
+"""
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("must display the explicit AI draft research warning" in error for error in errors)

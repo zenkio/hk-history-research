@@ -295,7 +295,8 @@ def internet_archive(query):
     return out
 
 
-SOURCES = [("OpenAlex", openalex), ("National Archives", national_archives), ("Internet Archive", internet_archive)]
+# Prefer primary/official and contemporary sources before scholarly discovery metadata.
+SOURCES = [("National Archives", national_archives), ("Internet Archive", internet_archive), ("OpenAlex", openalex)]
 
 
 # ---- page handling -----------------------------------------------------

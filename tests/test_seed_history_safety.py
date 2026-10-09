@@ -29,6 +29,25 @@ def test_generated_event_page_is_explicitly_unverified_ai_hypothesis(tmp_path, m
 
 
 
+
+def test_research_failure_still_refreshes_coverage_summary(monkeypatch):
+    calls = []
+    monkeypatch.setattr(seed, "import_inbox", lambda *args, **kwargs: None)
+    monkeypatch.setattr(seed.state, "load", lambda *args, **kwargs: {})
+    monkeypatch.setattr(seed.state, "save", lambda *args, **kwargs: None)
+    monkeypatch.setattr(seed, "evidence_batch", lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("retrieval failed")))
+    monkeypatch.setattr(seed, "write_status_page", lambda *args, **kwargs: calls.append("refreshed"))
+
+    try:
+        seed.research_worker(object(), [], 0)
+    except RuntimeError as exc:
+        assert "retrieval failed" in str(exc)
+    else:
+        raise AssertionError("research failure should propagate")
+
+    assert calls == ["refreshed"]
+
+
 def test_failed_draft_bookkeeping_preserves_existing_page(monkeypatch, tmp_path):
     page = tmp_path / "05-opium-war" / "1841-example-event.md"
     page.parent.mkdir(parents=True)

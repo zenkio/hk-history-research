@@ -534,10 +534,13 @@ def research_worker(pool, events, deadline):
     grades = state.load("evidence")
     import_inbox(events, grades)
     state.save("evidence", grades)
-    n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
-                       save=lambda d: state.save("evidence", d))
-    write_status_page(events, grades)
-    return n
+    try:
+        return evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
+                              save=lambda d: state.save("evidence", d))
+    finally:
+        # Even a partial failure should leave the public coverage summary consistent with
+        # successfully persisted work; the worker failure is still raised to the pipeline.
+        write_status_page(events, grades)
 
 
 def photos_worker(pool, events, deadline):

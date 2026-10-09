@@ -109,7 +109,7 @@ def build_records(content_root, now=None, limit=None):
             event_claim_id = claim_id_for(event_id, event_claim_text)
             event_claim = {
                 "record_type": "claim", "schema_version": 1, "id": event_claim_id,
-                "event_id": event_id, "text": event_claim_text, "claim_type": "other",
+                "event_id": event_id, "text": event_claim_text, "claim_type": "date",
                 "status": "unverified", "is_current": True, "superseded_at": None,
                 "importance": "core", "created_from": "migration", "created_at": timestamp,
                 "updated_at": timestamp,

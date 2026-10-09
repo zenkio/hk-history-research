@@ -44,7 +44,7 @@ def parse_claims(frontmatter):
         if not chunk.strip():
             continue
         def value(key):
-            found = re.search(rf"(?m)^ {{0,4}}{re.escape(key)}:\s*(.*?)\s*$", chunk)
+            found = re.search(rf"(?m)^\\s*{re.escape(key)}:\\s*(.*?)\\s*$", chunk)
             return found.group(1).strip().strip('"').strip("'") if found else ""
         claims.append({
             "id": value("id"),
@@ -52,6 +52,8 @@ def parse_claims(frontmatter):
             "importance": value("importance").lower(),
             "status": value("status").lower(),
             "evidence_urls": re.findall(r"https?://[^\s\]>)\"']+", chunk),
+            "passage_status": value("passage_status").lower(),
+            "passage": value("passage").strip(),
         })
     return claims
 
@@ -93,6 +95,11 @@ def validate_page(path, text):
             errors.append(f"{label}: core claim is unresolved")
         if not claim["evidence_urls"]:
             errors.append(f"{label}: claim requires at least one direct evidence URL")
+        if claim["passage_status"] != "inspectable":
+            errors.append(f"{label}: claim requires inspectable evidence passage; metadata-only sources are not proof")
+        passage = claim["passage"].strip().strip(chr(34) + chr(39))
+        if len(passage) < 30:
+            errors.append(f"{label}: claim requires a non-empty inspectable evidence passage (at least 30 characters)")
 
     if any(claim["status"] == "disputed" for claim in claims) and verification_status != "disputed":
         errors.append("pages with disputed claims must set verification_status: disputed")

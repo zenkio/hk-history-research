@@ -4,26 +4,18 @@ name: Pipeline
 # repair, classify, then evidence, Wikipedia cross-check, photos and drafting. Every change is
 # committed to the data repository, never to this one.
 #
-# Off unless the repository variable PIPELINE_ON_ACTIONS is "on": the pipeline runs either here or
-# on our own machine (Oracle), never both, because both would count the same AI quota and push
-# to the same branch. A manual run (Run workflow) always works.
+# Automatic triggers and self-queuing are intentionally disabled to prevent unattended long-running
+# jobs. Run manually with "Run workflow" when a research run is needed.
 #
 # Run logs of a public repository are public, and the pipeline's output names pages, queries and
 # grades. So each step writes its output to a file that is saved to the `logs` branch of the data
 # repository (last 7 days, one commit, replaced each time); this log only shows which steps ran.
 
 on:
-  schedule:
-    # Gemma is limited per minute, so every hour not running is capacity lost. GitHub drops most
-    # scheduled runs of this repository (on 2026-09-29: 2 of 14 hourly runs, 3 of 5 deploys), so each
-    # successful run queues the next one (last step); this schedule only restarts the chain after a
-    # failure. Minute 17 keeps clear of the busiest time, the top of the hour.
-    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
-  actions: write  # only to queue the next run (last step)
 
 concurrency:
   group: pipeline
@@ -34,7 +26,6 @@ env:
 
 jobs:
   pipeline:
-    if: github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'
     runs-on: ubuntu-latest
     timeout-minutes: 75
     steps:
@@ -128,23 +119,6 @@ jobs:
             git commit -m "auto(pipeline): record partial failure"
             git pull --rebase --autostash origin main
             git push origin main
-          fi
-
-      # Scheduled runs are unreliable here, so the pipeline keeps itself going: a successful run
-      # queues the next (the concurrency group makes it wait). Only while switched on; a failed run
-      # ends the chain, and the schedule starts it again. GITHUB_TOKEN may start workflow_dispatch.
-      # Only a busy run (20+ minutes) queues the next: an idle one takes 2 minutes, and queueing
-      # after it started 317 runs on 2026-09-30. With nothing to do, the hourly schedule is enough.
-      - name: Queue the next run
-        if: success() && vars.PIPELINE_ON_ACTIONS == 'on'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          minutes=$(( ($(date +%s) - RUN_STARTED) / 60 ))
-          if [ "$minutes" -lt 20 ]; then
-            echo "This run took $minutes minutes, so there was little to do: the next run waits for the schedule."
-          else
-            gh workflow run ingestion.yml --repo "$GITHUB_REPOSITORY" --ref main
           fi
 
       - name: Where to read the details

@@ -1,0 +1,62 @@
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import migrate_claim_records as migration
+
+
+def test_migration_extracts_only_explicit_claim_bullets_and_preserves_source_candidates(tmp_path):
+    root = tmp_path / "content" / "01_Timeline"
+    root.mkdir(parents=True)
+    page = root / "1841-example.md"
+    page.write_text(
+        "---\ntitle: Example\ntags: [ai-draft]\n---\n"
+        "## What happened\nThe event happened in 1841.\n"
+        "## Claims to verify\n- The event happened in January 1841.\n"
+        "- The proclamation was issued by Elliot.\n"
+        "## Evidence\n[Archive catalogue](https://example.org/catalogue/1)\n"
+        "[Wikipedia](https://en.wikipedia.org/wiki/Example)\n",
+        encoding="utf-8",
+    )
+    result = migration.build_records(root, now="2026-10-09T10:00:00Z")
+
+    assert result["pages_seen"] == 1
+    assert len(result["claims"]) == 2
+    assert result["claims"][0]["status"] == "unverified"
+    assert result["claims"][0]["importance"] == "core"
+    assert len(result["sources"]) == 1
+    assert result["sources"][0]["authority_level"] == "discovery_only"
+    assert result["sources"][0]["event_ids"] == ["event:1841-example"]
+    assert "passage" not in result["sources"][0]
+
+
+def test_migration_does_not_invent_claims_for_pages_without_claim_section(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    (root / "1841-example.md").write_text(
+        "---\ntitle: Example\n---\n## What happened\nA narrative claim in prose.\n",
+        encoding="utf-8",
+    )
+    result = migration.build_records(root, now="2026-10-09T10:00:00Z")
+    assert result["claims"] == []
+    assert result["pages_without_explicit_claims"] == ["1841-example.md"]
+
+
+def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    (root / "1841-example.md").write_text(
+        "---\ntitle: Example\n---\n## Claims to verify\n- A claim to verify.\n",
+        encoding="utf-8",
+    )
+    output = tmp_path / "records"
+    assert migration.main(["--content-root", str(root), "--output-dir", str(output)]) == 0
+    assert not output.exists()
+
+    assert migration.main([
+        "--content-root", str(root), "--output-dir", str(output), "--write"
+    ]) == 0
+    claims = [json.loads(line) for line in (output / "claims.jsonl").read_text(encoding="utf-8").splitlines()]
+    assert len(claims) == 1
+    assert claims[0]["id"] == "claim:1841-example-claim-01"

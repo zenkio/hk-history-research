@@ -41,6 +41,9 @@ jobs:
       - name: Install publication-record schema validator
         run: python -m pip install --quiet "jsonschema>=4.23"
 
+      - name: Label legacy AI drafts before site build
+        run: python scripts/label_legacy_ai_drafts.py --write
+
       - name: Validate publication eligibility
         run: python scripts/publication_gate.py
 

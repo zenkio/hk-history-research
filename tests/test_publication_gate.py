@@ -126,6 +126,21 @@ tags: ["ai-draft"]
     assert gate.validate_page(page, content) == []
 
 
+
+def test_ai_draft_without_visible_warning_fails_gate(tmp_path):
+    page = tmp_path / "legacy.md"
+    content = """---
+title: "Legacy draft"
+confidence: ai-draft
+origin: ai
+verification_status: unverified
+---
+Historical narrative without a warning.
+"""
+    errors = gate.validate_page(page, content)
+    assert any("must display the explicit AI draft research warning" in error for error in errors)
+
+
 def test_published_page_requires_claim_records_and_evidence_section(tmp_path):
     page = tmp_path / "event.md"
     content = """---

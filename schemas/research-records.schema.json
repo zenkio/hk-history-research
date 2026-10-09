@@ -102,6 +102,18 @@
         },
         "provenance": {
           "type": "object"
+        },
+        "is_current": {
+          "type": "boolean",
+          "description": "Whether this record belongs to the current version of its source page."
+        },
+        "superseded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When a later page run superseded this record; null while current."
         }
       }
     },
@@ -306,6 +318,18 @@
             "string",
             "null"
           ]
+        },
+        "is_current": {
+          "type": "boolean",
+          "description": "Whether this record belongs to the current version of its source page."
+        },
+        "superseded_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When a later page run superseded this record; null while current."
         }
       },
       "allOf": [

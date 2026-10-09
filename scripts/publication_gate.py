@@ -53,7 +53,7 @@ def parse_claims(frontmatter):
             "status": value("status").lower(),
             "evidence_urls": re.findall(r"https?://[^\s\]>)\"']+", chunk),
             "passage_status": value("passage_status").lower(),
-            "evidence_relations": [relation.lower() for relation in re.findall(r"(?m)^\s*relation:\s*(.*?)\s*$", chunk)],
+            "evidence_relations": [relation.lower() for relation in re.findall(r"(?m)^[ \t]*relation:[ \t]*(.*?)[ \t]*$", chunk)],
             "passage": value("passage").strip(),
         })
     return claims

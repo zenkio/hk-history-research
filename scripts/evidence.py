@@ -164,6 +164,31 @@ def national_archives(query):
     return out
 
 
+def internet_archive_text(identifier, max_chars=5000):
+    """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""
+    try:
+        metadata = _get_json(f"https://archive.org/metadata/{urllib.parse.quote(identifier, safe='')}")
+        files = metadata.get("files") or []
+        names = [item.get("name", "") for item in files if item.get("name")]
+        # Internet Archive's usual OCR output. Do not treat item descriptions or PDFs as text.
+        candidates = [n for n in names if n.lower().endswith("_djvu.txt")]
+        if not candidates:
+            return None
+        name = candidates[0]
+        url = "https://archive.org/download/" + urllib.parse.quote(identifier, safe="") + "/" + urllib.parse.quote(name, safe="/")
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=20) as response:
+            raw = response.read(100_001)
+        text = raw.decode("utf-8", errors="replace")
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"\\s+", " ", text).strip()
+        if len(text) < 300 or re.search(r"(?i)<!doctype html|<html|access denied|item not available", text[:1000]):
+            return None
+        return text[:max_chars]
+    except (OSError, ValueError, KeyError, urllib.error.URLError, TimeoutError):
+        return None
+
+
 def internet_archive(query):
     q = f"({query}) AND mediatype:texts AND date:[1800-01-01 TO {PRIMARY_BEFORE - 1}-12-31] AND (\"Hong Kong\" OR Hongkong)"
     params = [("q", q), ("rows", str(PER_SOURCE)), ("output", "json")]
@@ -175,11 +200,13 @@ def internet_archive(query):
         creator = ", ".join(creator[:2]) if isinstance(creator, list) else (creator or "")
         desc = d.get("description")
         desc = " ".join(desc) if isinstance(desc, list) else (desc or "")
+        identifier = d.get("identifier", "")
+        passage = internet_archive_text(identifier) if identifier else None
         out.append({"kind": "contemporary publication", "grade": "A", "year": d.get("year"),
-                    "title": d.get("title", d["identifier"]), "url": f"https://archive.org/details/{d['identifier']}",
-                    "cite": f"{creator + ', ' if creator else ''}*{d.get('title', d['identifier'])}* ({d.get('year', 'n.d.')}), Internet Archive.",
+                    "title": d.get("title", identifier), "url": f"https://archive.org/details/{identifier}",
+                    "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
-                    "passage": "", "passage_status": "metadata_only"})
+                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only"})
     return out
 
 

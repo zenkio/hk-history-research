@@ -340,3 +340,40 @@ def test_judge_prompt_includes_inspectable_passage_and_status(write_page, monkey
     ev.evidence_batch(pool, {}, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
     assert "passage_status: inspectable_record" in pool.prompt
     assert "The treaty was signed in Hong Kong in 1849." in pool.prompt
+
+
+
+def test_internet_archive_text_requires_an_ocr_text_file(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {"files": [{"name": "book.pdf"}]})
+    assert ev.internet_archive_text("sample-book") is None
+
+
+def test_internet_archive_text_accepts_downloaded_ocr_text(monkeypatch):
+    class Response:
+        def __enter__(self):
+            return self
+        def __exit__(self, *args):
+            return False
+        def read(self, limit):
+            return ("This is inspected OCR text from the scanned historical publication. " * 12).encode()
+
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {"files": [{"name": "sample-book_djvu.txt"}]})
+    monkeypatch.setattr(ev.urllib.request, "urlopen", lambda req, timeout=20: Response())
+    text = ev.internet_archive_text("sample-book")
+    assert text and len(text) >= 300
+    assert "inspected OCR text" in text
+
+
+def test_internet_archive_search_marks_only_downloaded_text_as_inspectable(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "response": {"docs": [
+            {"identifier": "with-ocr", "title": "Hong Kong report", "year": "1900"},
+            {"identifier": "without-ocr", "title": "Hong Kong register", "year": "1901"},
+        ]} if "advancedsearch.php" in url else {"files": []}
+    })
+    monkeypatch.setattr(ev, "internet_archive_text", lambda identifier: "Readable source passage " * 20 if identifier == "with-ocr" else None)
+    results = ev.internet_archive("Hong Kong report")
+    assert results[0]["passage_status"] == "inspectable_text"
+    assert results[0]["passage"]
+    assert results[1]["passage_status"] == "metadata_only"
+    assert results[1]["passage"] == ""

@@ -846,7 +846,14 @@ def reopen_for_rejudge(done_map):
 
 def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
     """Attach evidence to event pages in `events` order; progress in done_map (rel -> grade)."""
-    reopened = reopen_unsearched(done_map) + reopen_for_rejudge(done_map)
+    # Older runs wrote the literal "error" sentinel into done_map after a rejected
+    # judgement. Membership means completed, so remove those legacy entries to let them retry.
+    legacy_errors = [rel for rel, grade in done_map.items() if grade == "error"]
+    for rel in legacy_errors:
+        del done_map[rel]
+    if legacy_errors:
+        print(f"[evidence] {len(legacy_errors)} pages with legacy error markers will be retried")
+    reopened = len(legacy_errors) + reopen_unsearched(done_map) + reopen_for_rejudge(done_map)
     if reopened and save:
         save(done_map)
     done = retries = 0

@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Probe public source API endpoints from the current runtime without retaining source content.
+
+This is a connectivity/schema smoke test, not a historical search and not permission to
+send retrieved material to an AI service. Use --strict in CI/manual workflow to fail if
+any endpoint is unreachable or returns an unexpected response shape.
+"""
+import argparse
+import json
+import urllib.error
+import urllib.request
+import xml.etree.ElementTree as ET
+
+USER_AGENT = "hk-history-research-source-probe/1.0"
+MAX_BYTES = 64 * 1024
+PROBES = [
+    {
+        "name": "HKU Digital Repository OAI-PMH",
+        "url": "https://digitalrepository.lib.hku.hk/oai2?verb=Identify",
+        "format": "xml",
+        "shape": "OAI-PMH",
+    },
+    {
+        "name": "HK Historical Laws Omeka API",
+        "url": "https://oelawhk.lib.hku.hk/api/items?per_page=1",
+        "format": "json",
+        "shape": "list",
+    },
+    {
+        "name": "LegCo Hansard open data",
+        "url": "https://app.legco.gov.hk/OpenData/HansardDB/Hansard?$top=1&$format=json",
+        "format": "json",
+        "shape": "value",
+    },
+    {
+        "name": "UK National Archives Discovery API",
+        "url": "https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=Hong%20Kong&sps.resultsPageSize=1&sps.heldByCode=TNA",
+        "format": "json",
+        "shape": "records",
+    },
+]
+
+
+def inspect_response(probe, status, content_type, body):
+    if status < 200 or status >= 300:
+        return False, f"HTTP {status}"
+    if not body:
+        return False, "empty response"
+    try:
+        if probe["format"] == "xml":
+            root = ET.fromstring(body)
+            ok = probe["shape"] in root.tag
+        else:
+            data = json.loads(body.decode("utf-8"))
+            if probe["shape"] == "list":
+                ok = isinstance(data, list)
+            else:
+                ok = isinstance(data, dict) and probe["shape"] in data
+        if not ok:
+            return False, f"unexpected {probe['format'].upper()} response shape"
+    except (ValueError, ET.ParseError, UnicodeError) as exc:
+        return False, f"invalid {probe['format'].upper()} response: {type(exc).__name__}"
+    return True, f"HTTP {status}; {content_type or 'content type unknown'}; {len(body)} bytes"
+
+
+def probe(probe_spec, timeout=15):
+    request = urllib.request.Request(
+        probe_spec["url"],
+        headers={"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/xml"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = response.read(MAX_BYTES + 1)
+            if len(body) > MAX_BYTES:
+                return False, f"response exceeded {MAX_BYTES} byte safety limit"
+            return inspect_response(
+                probe_spec,
+                getattr(response, "status", 200),
+                response.headers.get("Content-Type", ""),
+                body,
+            )
+    except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
+        return False, f"{type(exc).__name__}: {str(exc)[:160]}"
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--strict", action="store_true", help="exit non-zero if any probe fails")
+    parser.add_argument("--timeout", type=int, default=15)
+    args = parser.parse_args(argv)
+    failures = 0
+    for item in PROBES:
+        ok, detail = probe(item, timeout=args.timeout)
+        print(f'{"PASS" if ok else "FAIL"} | {item["name"]} | {detail}')
+        failures += not ok
+    print(f"Source connectivity: {len(PROBES) - failures}/{len(PROBES)} passed")
+    return 1 if args.strict and failures else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

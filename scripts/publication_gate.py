@@ -16,6 +16,26 @@ PUBLISHABLE_CLAIM_STATUSES = {"supported", "disputed"}
 CORE_PUBLISHABLE_STATUSES = {"supported", "disputed"}
 
 
+def strip_yaml_comment(value):
+    """Remove a YAML inline comment without treating # inside quoted values as a comment."""
+    quote = None
+    escaped = False
+    for index, char in enumerate(value):
+        if quote:
+            if quote == '"' and char == "\\" and not escaped:
+                escaped = True
+                continue
+            if char == quote and not escaped:
+                quote = None
+            escaped = False
+            continue
+        if char in ("'", '"'):
+            quote = char
+        elif char == "#" and (index == 0 or value[index - 1].isspace()):
+            return value[:index].rstrip()
+    return value.strip()
+
+
 def parse_frontmatter(text):
     match = re.match(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", text, re.DOTALL)
     if not match:
@@ -25,7 +45,7 @@ def parse_frontmatter(text):
     for line in raw.splitlines():
         scalar = re.match(r"^([A-Za-z_][A-Za-z0-9_-]*):\s*(.*?)\s*$", line)
         if scalar:
-            fields[scalar.group(1)] = scalar.group(2).strip().strip('"').strip("'")
+            fields[scalar.group(1)] = strip_yaml_comment(scalar.group(2)).strip().strip('"').strip("'")
     return fields, raw
 
 

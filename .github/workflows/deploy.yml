@@ -47,8 +47,7 @@ jobs:
 
       - name: Put the code over the data
         run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \\
-            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
       - uses: actions/setup-python@v7

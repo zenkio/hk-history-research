@@ -49,6 +49,9 @@ jobs:
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
+      - name: Install publication-record schema validator
+        run: python3 -m pip install --quiet "jsonschema>=4.23"
+
       - name: Validate publication eligibility
         run: python3 scripts/publication_gate.py
 

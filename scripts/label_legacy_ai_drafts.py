@@ -63,6 +63,8 @@ def label_page(text):
                     lines[index] = f"{key}: {value}"
                     changed = True
                 return
+        lines.append(f"{key}: {value}")
+        changed = True
 
     old_confidence = meta.get("confidence", "")
     if old_confidence and old_confidence.lower() != "ai-draft" and not meta.get("source_confidence"):

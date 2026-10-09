@@ -45,7 +45,7 @@ def mark_plan_failure(plan_path, outcomes, now=None):
         "failures": prior,
     })
     plan["last_run"] = last_run
-    atomic_write(str(plan_path), json.dumps(plan, ensure_ascii=False, indent=2) + "\\n")
+    atomic_write(str(plan_path), json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
     print(f"Recorded partial pipeline failure for {len(failed)} failed stage(s) in {plan_path.name}.")
     return len(failed)
 

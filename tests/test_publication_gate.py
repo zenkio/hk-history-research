@@ -44,6 +44,15 @@ def write_structured_records(records_dir, *, status="supported", relation="suppo
         "created_at": "2026-10-01T00:00:00Z", "updated_at": "2026-10-09T00:00:00Z",
         "is_current": True, "superseded_at": None, "provenance": {"source_page": "example.md"},
     }) + "\n", encoding="utf-8")
+    (records_dir / "sources.jsonl").write_text(json.dumps({
+        "record_type": "source", "schema_version": 1, "source_id": "source:example",
+        "title": "Example archive record", "institution": "Example archive",
+        "event_ids": ["event:example"], "source_type": "archive_record",
+        "authority_level": "institutional", "coverage": None, "language": "en",
+        "stable_url": "https://example.org/archive-record", "catalogue_reference": "EX-1",
+        "retrieval_method": "manual", "publication_date": "1841",
+        "discovered_at": "2026-10-09T00:00:00Z", "rights_notes": "Test fixture.",
+    }) + "\\n", encoding="utf-8")
     (records_dir / "evidence.jsonl").write_text(json.dumps({
         "record_type": "evidence", "schema_version": 1,
         "claim_id": "claim:example-date", "evidence_id": "evidence:example",
@@ -75,6 +84,17 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     write_structured_records(tmp_path)
     evidence_path = tmp_path / "evidence.jsonl"
     with evidence_path.open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps({
+            "record_type": "source", "schema_version": 1,
+            "source_id": "source:contradiction", "title": "Contradictory archive record",
+            "institution": "Example archive", "event_ids": ["event:example"],
+            "source_type": "archive_record", "authority_level": "institutional",
+            "coverage": None, "language": "en",
+            "stable_url": "https://example.org/contradictory-record",
+            "catalogue_reference": "EX-2", "retrieval_method": "manual",
+            "publication_date": "1842", "discovered_at": "2026-10-09T00:00:00Z",
+            "rights_notes": "Test fixture.",
+        }) + chr(10))
         stream.write(json.dumps({
             "record_type": "evidence", "schema_version": 1,
             "claim_id": "claim:example-date", "evidence_id": "evidence:contradiction",

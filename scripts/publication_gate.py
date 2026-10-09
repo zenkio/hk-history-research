@@ -82,6 +82,7 @@ def load_structured_records(records_dir):
     records_dir = Path(records_dir or PROJECT_ROOT / "research" / "records")
     loaded = {}
     errors = []
+    from research_records import validate_record
     for kind, filename in (("claims", "claims.jsonl"), ("evidence", "evidence.jsonl"), ("judgements", "judgements.jsonl")):
         path = records_dir / filename
         if not path.is_file():
@@ -98,7 +99,11 @@ def load_structured_records(records_dir):
                 errors.append(f"{filename}:{line_no}: invalid JSON ({exc})")
                 continue
             if isinstance(row, dict):
-                rows.append(row)
+                schema_errors = validate_record(row)
+                if schema_errors:
+                    errors.append(f"{filename}:{line_no}: invalid research record: " + "; ".join(schema_errors))
+                else:
+                    rows.append(row)
             else:
                 errors.append(f"{filename}:{line_no}: record must be a JSON object")
         loaded[kind] = rows

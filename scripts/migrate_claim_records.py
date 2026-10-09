@@ -108,11 +108,14 @@ def build_records(content_root, now=None, limit=None):
                 "created_at": timestamp,
             }
             claim_extraction_queue.append(require_valid_record(task))
-        for index, claim_text in enumerate(page_claims, start=1):
+        for claim_text in page_claims:
+            normalized_claim = re.sub(r"\\s+", " ", claim_text).strip().casefold()
+            claim_digest = hashlib.sha256(normalized_claim.encode("utf-8")).hexdigest()[:10]
+            claim_id = f"claim:{event_id.removeprefix('event:')}-{claim_digest}"
             record = {
                 "record_type": "claim",
                 "schema_version": 1,
-                "id": f"claim:{event_id.removeprefix('event:')}-claim-{index:02d}",
+                "id": claim_id,
                 "event_id": event_id,
                 "text": claim_text,
                 "claim_type": "other",

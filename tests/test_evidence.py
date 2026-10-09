@@ -355,6 +355,24 @@ def test_incomplete_evidence_search_remains_pending_and_fails_batch(write_page, 
     assert "pending.md" not in done
 
 
+
+def test_malformed_judge_response_fails_instead_of_recording_no_evidence(write_page, monkeypatch):
+    write_page("pending.md", "Example event", 1841)
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+
+    class MalformedJudge:
+        def generate_json(self, *args, **kwargs):
+            return {"kept": []}, "test-model", []
+
+    done = {}
+    with pytest.raises(ValueError, match="Evidence judge returned an invalid response"):
+        ev.evidence_batch(
+            MalformedJudge(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
 def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page, monkeypatch, timeline):
     metadata_only = dict(A_RECORD, passage="", passage_status="metadata_only")
     done, text, _ = judge_page(write_page, monkeypatch, timeline,

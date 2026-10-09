@@ -80,3 +80,19 @@ def test_claim_ids_do_not_change_when_bullets_are_reordered(tmp_path):
     page.write_text(header + "- Elliot issued a proclamation.\n- Date is 1841.\n", encoding="utf-8")
     b = {item["text"]: item["id"] for item in migration.build_records(root)["claims"]}
     assert a == b
+
+
+def test_migration_seeds_unverified_event_date_claim_without_inventing_support(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    (root / "1841-example.md").write_text(
+        '---\ntitle: "Treaty signing"\nyear: 1841\n---\n'
+        '## What happened\nThe draft says the treaty was signed.\n',
+        encoding="utf-8",
+    )
+    result = migration.build_records(root, now="2026-10-09T10:00:00Z")
+    event_claim = next(c for c in result["claims"] if c["provenance"]["extraction"] == "event title/date")
+    assert event_claim["text"] == "Treaty signing occurred in 1841."
+    assert event_claim["status"] == "unverified"
+    assert result["explicit_claims_extracted"] == 0
+    assert len(result["claim_extraction_queue"]) == 1

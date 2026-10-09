@@ -4,8 +4,8 @@ name: Pipeline
 # repair, classify, then evidence, Wikipedia cross-check, photos and drafting. Every change is
 # committed to the data repository, never to this one.
 #
-# Run daily at 03:17 UTC (away from the top of the hour) and allow manual runs. There is deliberately
-# no self-queuing: one bounded run per day avoids an accidental chain of long-running jobs.
+# Run daily at 03:17 UTC (away from the top of the hour) and allow manual runs. If a newer
+# Pipeline run starts, cancel the older one so the newest request gets the available runner.
 #
 # Run logs of a public repository are public, and the pipeline's output names pages, queries and
 # grades. Script output is redirected to a log saved only on the private data repository's logs
@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: pipeline
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 env:
   PYTHONUNBUFFERED: "1"

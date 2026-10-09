@@ -102,7 +102,7 @@ def _source_metadata(candidate, event_id, timestamp):
         "coverage": None,
         "language": "und",
         "stable_url": url,
-        "catalogue_reference": str(candidate.get("cite") or "")[:500] or None,
+        "catalogue_reference": str(candidate.get("catalogue_reference") or "")[:500] or None,
         "retrieval_method": method,
         "publication_date": str(candidate.get("year")) if candidate.get("year") else None,
         "discovered_at": timestamp,

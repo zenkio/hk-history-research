@@ -652,7 +652,9 @@ def run(max_calls, minutes, commit=False, failures=None):
     for t in workers:
         t.join(timeout=max(0, deadline - time.time()) + 180)
         if t.is_alive():
-            print(f"[{t.name}] still running at the deadline; its progress so far is saved")
+            message = "worker did not finish before shutdown deadline; run is incomplete"
+            print(f"[{t.name}] {message}; saved partial progress is retained")
+            failures.append({"stage": t.name, "error": message})
     done += sum(results.values())
     counts = {}
     for e in plan["events"]:

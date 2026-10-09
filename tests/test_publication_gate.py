@@ -89,3 +89,20 @@ No claim records.
     errors = gate.validate_page(page, content)
     assert any("claim-level records" in error for error in errors)
     assert any("Evidence section" in error for error in errors)
+
+
+def test_metadata_only_source_cannot_support_publication(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace("passage_status: inspectable", "passage_status: metadata_only")
+    errors = gate.validate_page(page, content)
+    assert any("requires inspectable evidence passage" in error for error in errors)
+
+
+def test_short_placeholder_passage_cannot_support_publication(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace(
+        "The contemporary archive record explicitly describes the event and its date in the official register.",
+        "Source says event happened.",
+    )
+    errors = gate.validate_page(page, content)
+    assert any("at least 30 characters" in error for error in errors)

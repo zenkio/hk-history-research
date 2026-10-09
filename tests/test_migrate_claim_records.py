@@ -99,3 +99,41 @@ def test_migration_seeds_unverified_event_date_claim_without_inventing_support(t
     assert event_claim["status"] == "unverified"
     assert result["explicit_claims_extracted"] == 0
     assert len(result["claim_extraction_queue"]) == 1
+
+
+def test_repeated_write_preserves_existing_verdicts_and_research_metadata(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    page = root / "1841-example.md"
+    page.write_text(
+        '---\\ntitle: Example\\nyear: 1841\\n---\\n'
+        '## Claims to verify\\n- The event happened in 1841.\\n'
+        '## Evidence\\n[Archive catalogue](https://example.org/catalogue/1)\\n',
+        encoding="utf-8",
+    )
+    output = tmp_path / "records"
+    args = ["--content-root", str(root), "--output-dir", str(output), "--write"]
+    assert migration.main(args) == 0
+
+    claims_path = output / "claims.jsonl"
+    claims = [json.loads(line) for line in claims_path.read_text(encoding="utf-8").splitlines()]
+    claims[0]["status"] = "supported"
+    claims[0]["updated_at"] = "2026-10-01T00:00:00Z"
+    migration.write_jsonl(claims_path, claims)
+
+    sources_path = output / "sources.jsonl"
+    sources = [json.loads(line) for line in sources_path.read_text(encoding="utf-8").splitlines()]
+    sources[0]["event_ids"] = sorted(set(sources[0]["event_ids"] + ["event:previously-researched"]))
+    sources[0]["authority_level"] = "institutional"
+    migration.write_jsonl(sources_path, sources)
+
+    assert migration.main(args) == 0
+    claims_after = [json.loads(line) for line in claims_path.read_text(encoding="utf-8").splitlines()]
+    preserved = next(row for row in claims_after if row["id"] == claims[0]["id"])
+    assert preserved["status"] == "supported"
+    assert preserved["updated_at"] == "2026-10-01T00:00:00Z"
+
+    sources_after = [json.loads(line) for line in sources_path.read_text(encoding="utf-8").splitlines()]
+    source = next(row for row in sources_after if row["stable_url"] == "https://example.org/catalogue/1")
+    assert source["authority_level"] == "institutional"
+    assert source["event_ids"] == ["event:1841-example", "event:previously-researched"]

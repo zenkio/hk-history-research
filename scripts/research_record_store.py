@@ -51,7 +51,7 @@ def _read_jsonl(path):
 def _write_jsonl(path, rows):
     path.parent.mkdir(parents=True, exist_ok=True)
     content = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows)
-    atomic_write(path, content)
+    atomic_write(str(path), content)
 
 
 def _upsert(path, rows, key):

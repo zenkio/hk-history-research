@@ -4,14 +4,16 @@ name: Pipeline
 # repair, classify, then evidence, Wikipedia cross-check, photos and drafting. Every change is
 # committed to the data repository, never to this one.
 #
-# Automatic triggers and self-queuing are intentionally disabled to prevent unattended long-running
-# jobs. Run manually with "Run workflow" when a research run is needed.
+# Run daily at 03:17 UTC (away from the top of the hour) and allow manual runs. There is deliberately
+# no self-queuing: one bounded run per day avoids an accidental chain of long-running jobs.
 #
 # Run logs of a public repository are public, and the pipeline's output names pages, queries and
-# grades. So each step writes its output to a file that is saved to the `logs` branch of the data
-# repository (last 7 days, one commit, replaced each time); this log only shows which steps ran.
+# grades. Script output is redirected to a log saved only on the private data repository's logs
+# branch; workflow console output should remain non-sensitive.
 
 on:
+  schedule:
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -33,17 +35,18 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
-          token: ${{ secrets.DATA_REPO_TOKEN }}  # also lets the scripts push to it
+          token: ${{ secrets.DATA_REPO_TOKEN }}  # fine-grained token, restricted to the private data repo
           fetch-depth: 0
 
       - name: Check out this repository's code
         uses: actions/checkout@v7
         with:
           path: _code
+          persist-credentials: false
 
       - name: Put the code over the data
         run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \\
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
           git config user.name "github-actions[bot]"
@@ -75,7 +78,7 @@ jobs:
       - name: Classify and publish
         id: classify
         timeout-minutes: 25
-        continue-on-error: true  # run evidence/research even if classification fails; the failure is surfaced below
+        continue-on-error: true  # run evidence/research even if classification fails; failure is surfaced below
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -92,13 +95,12 @@ jobs:
           FREEJEV_API_KEY: ${{ secrets.FREEJEV_API_KEY }}
         run: python3 scripts/seed_history.py --minutes 45 >> "$LOG" 2>&1
 
-      # continue-on-error lets evidence research run after a classification error, but it must not
-      # make the whole workflow green. Fail only after the diagnostic log has been written by the
-      # always() step below; this also prevents Queue the next run from treating a partial run as success.
+      # Continue-on-error lets evidence research run after classification errors, but the overall
+      # run must still fail so the issue is visible in Actions.
       - name: Fail run if classification failed
         if: steps.classify.outcome == 'failure'
         run: |
-          echo "CLASSIFICATION_FAILURE: classify/publish failed. The source should remain queued; see the preceding log entries." | tee -a "$LOG"
+          echo "CLASSIFICATION_FAILURE: classify/publish failed. The source should remain queued; see the private diagnostic log." | tee -a "$LOG"
           exit 1
 
       - name: Save the log to the data repository (branch logs)
@@ -106,8 +108,7 @@ jobs:
         if: always()
         run: bash scripts/save_log.sh "$LOG"
 
-      # Keep the persisted run status honest too: seed_history can finish successfully even when
-      # an earlier ingestion stage failed. The workflow must not leave last_run.status as success.
+      # Do not leave last_run.status as success when any earlier stage failed.
       - name: Record partial-failure state
         if: failure()
         env:

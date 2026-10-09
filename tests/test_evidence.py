@@ -236,7 +236,7 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
     pool = PromptJudge([{"id": "c1", "relation": "supports", "claims": [1], "why": "file on the treaty"}])
     done = {}
     ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
-    assert "1. Signing of the Treaty took place in Hong Kong (1900)" in pool.prompt
+    assert "1. Signing of the Treaty occurred in 1900." in pool.prompt
     assert "no explicit claims" not in pool.prompt
     assert done == {"p.md": "A"}
 

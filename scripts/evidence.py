@@ -522,6 +522,12 @@ def judge(pool, title, date, claims, candidates):
     claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
+    if not isinstance(data, dict) or not isinstance(data.get("relevant"), list):
+        raise ValueError("Evidence judge returned an invalid response: 'relevant' must be a list")
+    candidate_ids = {candidate["id"] for candidate in candidates}
+    for item in data["relevant"]:
+        if not isinstance(item, dict) or str(item.get("id", "")) not in candidate_ids:
+            raise ValueError("Evidence judge returned a malformed item or unknown candidate id")
     return data, model, prompt, judged(data, candidates)
 
 

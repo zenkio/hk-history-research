@@ -181,4 +181,5 @@ def test_disputed_claim_requires_contradictory_evidence(tmp_path):
 def test_engine_inspectable_record_status_can_pass_gate(tmp_path):
     page = tmp_path / "event.md"
     content = published_page().replace("passage_status: inspectable", "passage_status: inspectable_record")
-    assert gate.validate_page(page, content) == []
+    write_structured_records(tmp_path)
+    assert gate.validate_page(page, content, records_dir=tmp_path) == []

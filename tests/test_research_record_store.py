@@ -63,7 +63,7 @@ def test_record_store_persists_and_then_supersedes_claim_evidence(tmp_path):
         [], None, 7, records_dir=records,
     )
     claims = read_jsonl(records / "claims.jsonl")
-    event_claim = next(c for c in claims if c["text"] == "Example event took place in Hong Kong (1841)")
+    event_claim = next(c for c in claims if c["text"] == "Example event occurred in 1841.")
     assert event_claim["status"] == "unverified"
     evidence = read_jsonl(records / "evidence.jsonl")
     assert evidence[0]["is_current"] is False
@@ -99,7 +99,7 @@ def test_conflicting_inspectable_passages_leave_core_claim_partial(tmp_path):
         records_dir=records,
     )
     claims = read_jsonl(records / "claims.jsonl")
-    event_claim = next(c for c in claims if c["text"] == "Example event took place in Hong Kong (1841)")
+    event_claim = next(c for c in claims if c["text"] == "Example event occurred in 1841.")
     assert event_claim["status"] == "partial"
     judgements = read_jsonl(records / "judgements.jsonl")
     event_judgement = next(j for j in judgements if j["claim_id"] == event_claim["id"])

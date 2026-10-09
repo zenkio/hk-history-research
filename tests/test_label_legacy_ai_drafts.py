@@ -32,6 +32,25 @@ The existing narrative must remain byte-for-byte unchanged.
     assert again == updated
 
 
+
+def test_write_mode_applies_labels_atomically(tmp_path):
+    page = tmp_path / "legacy.md"
+    page.write_text("""---
+title: Legacy event
+confidence: medium
+source_feed: archive-feed
+---
+
+Legacy narrative.
+""", encoding="utf-8")
+    assert labels.main(["--content-root", str(tmp_path), "--write"]) == 0
+    updated = page.read_text(encoding="utf-8")
+    assert "confidence: ai-draft" in updated
+    assert "source_confidence: medium" in updated
+    assert "> [!warning] AI draft — research hypothesis" in updated
+    assert "Legacy narrative." in updated
+
+
 def test_explicitly_verified_source_feed_page_is_not_downgraded():
     original = """---
 title: Reviewed event

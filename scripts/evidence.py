@@ -144,7 +144,7 @@ def gather_claim_candidates(queries):
             source = candidate.get("source", "")
             url = candidate.get("url") or candidate.get("doi") or candidate.get("title")
             key = (source, str(url).casefold())
-            if not url or key in seen or per_query_counts.get(source, 0) >= 3:
+            if not url or key in seen or per_query_counts.get(source, 0) >= max(1, max_per_source // max(1, len(queries))):
                 continue
             if sum(1 for item in combined if item.get("source") == source) >= max_per_source:
                 continue

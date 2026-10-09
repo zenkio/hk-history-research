@@ -858,6 +858,7 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         save(done_map)
     done = retries = 0
     failures = []
+    blocking_failures = []
     for ev in events:
         rel = ev.get("file")
         if not rel or rel in done_map or ev.get("status") != "done":
@@ -877,11 +878,13 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
             message = f"{rel}: evidence judgement rejected: {str(e)[:100]}"
             print(f"[evidence] {message}; leaving page pending for retry")
             failures.append(message)
+            blocking_failures.append(message)
             continue
         if grade is None:
             message = f"{rel}: every evidence source was unreachable; page remains pending"
             print(f"[evidence] {message}")
             failures.append(message)
+            blocking_failures.append(message)
             break
         if grade == "retry":
             retries += 1
@@ -889,7 +892,7 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
             print(f"[evidence] {message}")
             failures.append(message)
             if retries >= MAX_RETRIES_PER_RUN:
-                print("[evidence] a source keeps failing; stopping evidence for this run")
+                print("[evidence] transient source failures reached the per-run limit; remaining pages stay pending")
                 break
             continue
         done_map[rel] = grade
@@ -897,12 +900,17 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         print(f"[evidence] {rel}: grade {grade}")
         if save:
             save(done_map)
-    if failures:
-        # Successful pages remain persisted, but the worker must report a partial failure to
-        # seed_history so the run cannot be recorded as wholly successful.
+    if blocking_failures:
+        # Provider/model failures are blocking: the run must not be recorded as wholly successful.
         raise RuntimeError(
-            f"Evidence batch partially failed for {len(failures)} page(s): " + "; ".join(failures[:5])
+            f"Evidence batch had {len(blocking_failures)} blocking failure(s): "
+            + "; ".join(blocking_failures[:5])
         )
+    if failures:
+        # Retrieval gaps are recoverable: pages were deliberately not marked complete and will be
+        # retried on a later run. Do not turn routine upstream 429/502 outages into a red pipeline.
+        print(f"[evidence] warning: {len(failures)} page(s) remain pending after incomplete retrieval; "
+              "successful work is saved and these pages will be retried on a later run")
     return done
 
 

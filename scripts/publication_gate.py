@@ -300,6 +300,10 @@ def main(argv=None):
             continue
         fields, _ = parse_frontmatter(text)
         if fields is None:
+            errors = validate_page(path, text)
+            if errors:
+                checked += 1
+                failures.append((path, errors))
             continue
         if fields.get("publication_status", "").lower() == PUBLISHED_STATUS or fields.get("verification_status", "").lower() == "verified":
             checked += 1

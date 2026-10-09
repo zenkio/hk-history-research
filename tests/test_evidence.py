@@ -323,6 +323,35 @@ def test_main_exits_nonzero_after_pipeline_failure(monkeypatch):
     assert exc.value.code == 1
 
 
+
+def test_rejected_evidence_judgement_is_not_marked_done_and_fails_batch(write_page, monkeypatch, timeline):
+    write_page("pending.md", "Example event", 1841)
+
+    def reject(*args, **kwargs):
+        raise ev.RequestRejected("provider rejected the request")
+
+    monkeypatch.setattr(ev, "evidence_for_page", reject)
+    done = {}
+    with pytest.raises(RuntimeError, match="Evidence batch partially failed"):
+        ev.evidence_batch(
+            object(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
+def test_incomplete_evidence_search_remains_pending_and_fails_batch(write_page, monkeypatch, timeline):
+    write_page("pending.md", "Example event", 1841)
+    monkeypatch.setattr(ev, "evidence_for_page", lambda *args, **kwargs: "retry")
+    done = {}
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        ev.evidence_batch(
+            object(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
 def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page, monkeypatch, timeline):
     metadata_only = dict(A_RECORD, passage="", passage_status="metadata_only")
     done, text, _ = judge_page(write_page, monkeypatch, timeline,

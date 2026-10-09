@@ -1,20 +1,20 @@
 name: Deploy site
 
 # Builds the site from the private data repository (zenkio/hk-history-data) and publishes it to
-# GitHub Pages at hkhistory.zenkio.uk (custom domain; the old zenkio.github.io address redirects to
-# it). The built pages are public anyway; the Markdown, research notes and evidence state never
-# leave the runner.
+# hkhistory.zenkio.uk. The Markdown, research notes and evidence state stay on the runner; only the
+# built public site is published.
 #
-# The data repository is the working folder (Quartz reads content/ and its git history for page
-# dates); this repository's code is copied on top of it for the length of the job.
-# Secret DATA_REPO_TOKEN: fine-grained token, Contents read/write on hk-history-data only.
+# The research pipeline runs daily at 03:17 UTC. Rebuild at 05:17 UTC to allow up to 75 minutes for
+# research plus a buffer, rather than rebuilding every 3 hours and retaining many large artifacts.
+# Keep push and manual triggers for code changes and recovery.
+#
+# DATA_REPO_TOKEN should be a fine-grained token restricted to Contents read/write on hk-history-data.
 
 on:
   push:
     branches: [main]
-  # The pipeline commits to the data repository, which cannot trigger this workflow: rebuild every 3 hours.
   schedule:
-    - cron: '50 */3 * * *'
+    - cron: '17 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -36,16 +36,18 @@ jobs:
         with:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}
-          fetch-depth: 0  # page dates come from git history
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Check out this repository's code
         uses: actions/checkout@v7
         with:
           path: _code
+          persist-credentials: false
 
       - name: Put the code over the data
         run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \\
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
@@ -71,8 +73,7 @@ jobs:
       - run: npm run install-plugins
       - run: npm run quartz -- build
 
-      # Asks AI crawlers not to collect the pages; search engines stay welcome. Quartz only
-      # publishes content, so the file is copied to the site root here.
+      # Asks AI crawlers not to collect the pages; search engines stay welcome.
       - name: Add robots.txt
         run: cp site/robots.txt public/robots.txt
 

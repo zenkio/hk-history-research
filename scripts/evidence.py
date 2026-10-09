@@ -207,17 +207,25 @@ def national_archives(query):
               "sps.heldByCode": "TNA"}
     data = _get_json("https://discovery.nationalarchives.gov.uk/API/search/records?" + urllib.parse.urlencode(params),
                      accept_json=True)
+    # Discovery's documented JSON examples use PascalCase, while older responses/mocks
+    # have appeared lower-camel. Accept both rather than silently returning zero records.
+    records = data.get("records") or data.get("Records") or []
     out = []
-    for r in data.get("records", []):
-        ref, desc = r.get("reference", ""), re.sub(r"<[^>]+>", "", r.get("description") or r.get("title") or "")
-        if not ref:
+    for record in records:
+        ref = record.get("reference") or record.get("Reference") or record.get("CitableReference") or ""
+        desc = (record.get("description") or record.get("Description") or
+                record.get("title") or record.get("Title") or record.get("Content") or "")
+        desc = re.sub(r"<[^>]+>", "", str(desc))
+        covering_dates = record.get("coveringDates") or record.get("CoveringDates") or ""
+        identifier = record.get("id") or record.get("Id")
+        if not ref or not identifier:
             continue
-        out.append({"kind": "archive record", "grade": "A", "year": r.get("coveringDates", ""),
-                    "title": f"{ref}: {desc[:160]}", "url": f"https://discovery.nationalarchives.gov.uk/details/r/{r.get('id')}",
-                    "cite": f"The National Archives (UK), {ref}, {r.get('coveringDates', '')}. {desc[:200]}",
+        out.append({"kind": "archive record", "grade": "A", "year": covering_dates,
+                    "title": f"{ref}: {desc[:160]}",
+                    "url": f"https://discovery.nationalarchives.gov.uk/details/r/{identifier}",
+                    "cite": f"The National Archives (UK), {ref}, {covering_dates}. {desc[:200]}",
                     "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
     return out
-
 
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""

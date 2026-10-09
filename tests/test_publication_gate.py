@@ -1,3 +1,4 @@
+import json
 import sys
 from pathlib import Path
 
@@ -30,9 +31,31 @@ claims:
 """
 
 
+
+def write_structured_records(records_dir, *, status="supported", relation="supports"):
+    passage = "The contemporary archive record explicitly describes the event and its date in the official register."
+    claim_status = status
+    verdict = status
+    (records_dir / "claims.jsonl").write_text(json.dumps({
+        "record_type": "claim", "id": "claim:example-date", "event_id": "event:example",
+        "text": "The event occurred in 1841.", "status": claim_status, "is_current": True,
+    }) + "\\n", encoding="utf-8")
+    (records_dir / "evidence.jsonl").write_text(json.dumps({
+        "record_type": "evidence", "claim_id": "claim:example-date",
+        "evidence_id": "evidence:example", "source_id": "source:example",
+        "relation": relation, "passage_status": "inspectable", "passage": passage,
+        "url": "https://example.org/archive-record", "is_current": True,
+    }) + "\\n", encoding="utf-8")
+    (records_dir / "judgements.jsonl").write_text(json.dumps({
+        "record_type": "judgement", "claim_id": "claim:example-date",
+        "verdict": verdict, "judged_at": "2026-10-09T00:00:00Z",
+    }) + "\\n", encoding="utf-8")
+
+
 def test_valid_claim_level_page_can_be_published(tmp_path):
     page = tmp_path / "event.md"
-    assert gate.validate_page(page, published_page()) == []
+    write_structured_records(tmp_path)
+    assert gate.validate_page(page, published_page(), records_dir=tmp_path) == []
 
 
 def test_ai_draft_cannot_be_published_even_with_evidence_grade(tmp_path):

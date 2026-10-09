@@ -36,7 +36,7 @@ jobs:
   pipeline:
     if: github.event_name != 'schedule' || vars.PIPELINE_ON_ACTIONS == 'on'
     runs-on: ubuntu-latest
-    timeout-minutes: 95
+    timeout-minutes: 110
     steps:
       - name: Check out the data repository
         uses: actions/checkout@v7

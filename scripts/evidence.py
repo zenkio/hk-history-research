@@ -322,7 +322,6 @@ def _write_evidence_unlocked(path, grade, lines, contradicts=False):
         tag += ', "evidence-contradicts"'
     text = re.sub(r"^tags: \[", f"tags: [{tag}, ", text, count=1, flags=re.M)
     atomic_write(path, text)
-        f.write(text)
 
 
 SOURCE_FAILS_TO_REST = 3  # consecutive failures before a source is skipped for the rest of the run

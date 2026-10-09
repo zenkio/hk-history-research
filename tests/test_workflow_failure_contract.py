@@ -30,3 +30,10 @@ def test_classification_failure_is_not_silently_reported_as_success():
     assert "steps.classify.outcome" in failure_block
     assert "git push origin main" in failure_block
     assert "if: success() && vars.PIPELINE_ON_ACTIONS == 'on'" in workflow[queue_next:]
+
+def test_job_timeout_leaves_time_for_seed_failure_cleanup():
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    job = workflow.index("jobs:")
+    seed = workflow.index("- name: Evidence, cross-check, photos and drafting")
+    assert "timeout-minutes: 95" in workflow[job:seed]
+    assert "timeout-minutes: 50" in workflow[seed:]

@@ -116,10 +116,32 @@ def keywords(title):
     return " ".join(words[:8])
 
 
-def claim_search_queries(title, claims):
+def frontmatter_aliases(text):
+    """Read explicitly declared Chinese titles and aliases without guessing alternate names."""
+    match = re.match(r"\A---\s*\n(.*?)\n---", text, re.S)
+    if not match:
+        return []
+    frontmatter = match.group(1)
+    aliases = []
+    for key in ("title_zh", "aliases", "historical_names", "alternative_names"):
+        field = re.search(rf"(?m)^{key}:\s*(.*?)\s*$", frontmatter)
+        if not field:
+            continue
+        value = field.group(1).strip()
+        if value.startswith("[") and value.endswith("]"):
+            values = re.findall(r"""['"]([^'"]+)['"]""", value)
+        else:
+            values = [value.strip("'\" ")]
+        for item in values:
+            if item and item not in aliases:
+                aliases.append(item)
+    return aliases
+
+
+def claim_search_queries(title, claims, aliases=()):
     """Build one title query plus a distinct query for every explicit claim."""
     queries = []
-    for text in [title, *claims]:
+    for text in [title, *aliases, *claims]:
         query = keywords(text)
         if query and query.casefold() not in {q.casefold() for q in queries}:
             queries.append(query)
@@ -434,7 +456,7 @@ def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
     source failed and nothing was found, so the page is not wrongly recorded as searched."""
     text, title, date, claims = read_page(path)
-    queries = claim_search_queries(title, claims)
+    queries = claim_search_queries(title, claims, frontmatter_aliases(text))
     candidates, failed = gather_claim_candidates(queries)
     query = "; ".join(queries)
     if len(failed) == len(SOURCES):

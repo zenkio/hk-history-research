@@ -288,7 +288,7 @@ def _write_evidence_unlocked(path, grade, lines, contradicts=False):
     if contradicts:  # a source disagrees with the draft: a lead for the myths and disputes hub
         tag += ', "evidence-contradicts"'
     text = re.sub(r"^tags: \[", f"tags: [{tag}, ", text, count=1, flags=re.M)
-    with open(path, "w", encoding="utf-8") as f:
+    atomic_write(path, text)
         f.write(text)
 
 

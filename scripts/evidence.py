@@ -127,11 +127,18 @@ def claim_search_queries(title, claims):
 
 def gather_claim_candidates(queries):
     """Search each query, deduplicate URLs, and bound the prompt size per source."""
-    combined, seen, successful_sources = [], set(), set()
+    combined, seen, successful_sources, queried_sources = [], set(), set(), set()
     max_per_source = 12
-    for query in queries:
-        candidates, failed = gather(query)
-        successful_sources.update(name for name, _ in SOURCES if name not in failed)
+    has_openalex_key = bool((os.environ.get("OPENALEX_API_KEY") or "").strip())
+    for query_index, query in enumerate(queries):
+        # OpenAlex's anonymous allowance is only 10 searches/day. Search it once per page
+        # without a key; claim-specific queries still run against the archive adapter(s).
+        selected_sources = SOURCES
+        if query_index > 0 and not has_openalex_key:
+            selected_sources = [(name, fn) for name, fn in SOURCES if name != "OpenAlex"]
+        queried_sources.update(name for name, _ in selected_sources)
+        candidates, failed = gather(query, sources=selected_sources)
+        successful_sources.update(name for name, _ in selected_sources if name not in failed)
         per_query_counts = {}
         for candidate in candidates:
             source = candidate.get("source", "")
@@ -144,7 +151,7 @@ def gather_claim_candidates(queries):
             seen.add(key)
             combined.append(candidate)
             per_query_counts[source] = per_query_counts.get(source, 0) + 1
-    failed = [name for name, _ in SOURCES if name not in successful_sources]
+    failed = [name for name in queried_sources if name not in successful_sources]
     return combined, failed
 
 
@@ -328,11 +335,11 @@ SOURCE_FAILS_TO_REST = 3  # consecutive failures before a source is skipped for 
 _source_fails = {}
 
 
-def gather(query):
+def gather(query, sources=None):
     """Candidates from every source. A source that fails is skipped, not fatal; one that keeps
     failing is rested for the rest of the run (and still reported as failed for each page)."""
     found, failed = [], []
-    for name, fn in SOURCES:
+    for name, fn in (SOURCES if sources is None else sources):
         if _source_fails.get(name, 0) >= SOURCE_FAILS_TO_REST:
             failed.append(name)
             continue

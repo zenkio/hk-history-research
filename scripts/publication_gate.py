@@ -212,7 +212,7 @@ def validate_page(path, text, records_dir=None):
     if fields is None:
         # A broken frontmatter delimiter must not hide an explicit publication claim.
         if re.search(
-            r"(?im)^(?:publication_status\\s*:\\s*published|verification_status\\s*:\\s*verified)\\s*$",
+            r"(?im)^(?:publication_status\s*:\s*published|verification_status\s*:\s*verified)\\s*$",
             text,
         ):
             return ["published/verified marker present but frontmatter is missing or malformed"]

@@ -255,14 +255,16 @@ def national_archives(query):
 
 def internet_archive_ai_processing_allowed(metadata):
     """Default-deny OCR processing unless item metadata explicitly marks it public domain/CC0."""
-    item = metadata.get("metadata") or {}
-    values = [
-        item.get("licenseurl"), item.get("license"), item.get("rights"),
-        item.get("rightsstatement"), metadata.get("licenseurl"), metadata.get("rights"),
-    ]
-    for value in values:
-        if isinstance(value, list):
-            values.extend(value)
+    values = []
+    for container in (metadata.get("metadata") or {}, metadata):
+        if not isinstance(container, dict):
+            continue
+        for key in ("licenseurl", "license", "rights", "rightsstatement"):
+            value = container.get(key)
+            if isinstance(value, list):
+                values.extend(value)
+            elif value:
+                values.append(value)
     normalized = " ".join(str(value).casefold() for value in values if value)
     return (
         "creativecommons.org/publicdomain/mark" in normalized
@@ -271,7 +273,6 @@ def internet_archive_ai_processing_allowed(metadata):
             and "not public domain" not in normalized
             and "not in the public domain" not in normalized)
     )
-
 
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""

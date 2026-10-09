@@ -58,6 +58,30 @@ def test_valid_claim_level_page_can_be_published(tmp_path):
     assert gate.validate_page(page, published_page(), records_dir=tmp_path) == []
 
 
+
+def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path)
+    evidence_path = tmp_path / "evidence.jsonl"
+    with evidence_path.open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps({
+            "record_type": "evidence", "claim_id": "claim:example-date",
+            "evidence_id": "evidence:contradiction", "source_id": "source:contradiction",
+            "relation": "contradicts", "passage_status": "inspectable",
+            "passage": "A second inspected historical record explicitly gives a different date for this event.",
+            "url": "https://example.org/contradictory-record", "is_current": True,
+        }) + "\\n")
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+    assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
+
+
+def test_structured_unverified_claim_cannot_be_published_as_supported(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path, status="unverified", relation="background")
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+    assert any("latest structured claim and judgement to be supported" in error for error in errors)
+
+
 def test_ai_draft_cannot_be_published_even_with_evidence_grade(tmp_path):
     page = tmp_path / "event.md"
     errors = gate.validate_page(page, published_page(confidence="ai-draft"))

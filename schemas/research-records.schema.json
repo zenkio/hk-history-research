@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zenkio.github.io/hk-history-research/schemas/research-records.schema.json",
+  "title": "HK History Research records",
+  "description": "Version 1 records for claim-level verification. Source discovery is distinct from inspected evidence and judgement.",
+  "oneOf": [
+    { "$ref": "#/$defs/claim" },
+    { "$ref": "#/$defs/source" },
+    { "$ref": "#/$defs/evidence" },
+    { "$ref": "#/$defs/judgement" }
+  ],
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "schema_version", "id", "event_id", "text", "claim_type", "status", "importance", "created_from", "created_at", "updated_at"],
+      "properties": {
+        "record_type": { "const": "claim" },
+        "schema_version": { "const": 1 },
+        "id": { "type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$" },
+        "event_id": { "type": "string", "pattern": "^event:[a-z0-9][a-z0-9._-]*$" },
+        "text": { "type": "string", "minLength": 1 },
+        "claim_type": { "enum": ["date", "place", "people", "cause", "action", "outcome", "scale", "context", "other"] },
+        "status": { "enum": ["unverified", "supported", "contradicted", "partial", "insufficient"] },
+        "importance": { "enum": ["core", "supporting"] },
+        "created_from": { "enum": ["ai_draft", "imported_research", "manual", "migration"] },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "provenance": { "type": "object" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "schema_version", "source_id", "title", "source_type", "authority_level", "language", "retrieval_method", "discovered_at"],
+      "properties": {
+        "record_type": { "const": "source" },
+        "schema_version": { "const": 1 },
+        "source_id": { "type": "string", "pattern": "^source:[a-z0-9][a-z0-9._-]*$" },
+        "title": { "type": "string", "minLength": 1 },
+        "institution": { "type": ["string", "null"] },
+        "source_type": { "enum": ["government_record", "archive_record", "contemporary_publication", "academic_work", "institutional_collection", "specialist_collection", "community_source", "reference", "other"] },
+        "authority_level": { "enum": ["primary", "scholarly", "institutional", "specialist", "discovery_only", "unknown"] },
+        "coverage": { "type": ["string", "null"] },
+        "language": { "type": "string", "minLength": 2 },
+        "stable_url": { "type": ["string", "null"], "format": "uri" },
+        "catalogue_reference": { "type": ["string", "null"] },
+        "retrieval_method": { "enum": ["api", "web", "ocr", "manual", "metadata_only", "imported", "other"] },
+        "publication_date": { "type": ["string", "null"] },
+        "discovered_at": { "type": "string", "format": "date-time" },
+        "rights_notes": { "type": ["string", "null"] }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "schema_version", "evidence_id", "source_id", "claim_id", "relation", "passage_status", "retrieved_at"],
+      "properties": {
+        "record_type": { "const": "evidence" },
+        "schema_version": { "const": 1 },
+        "evidence_id": { "type": "string", "pattern": "^evidence:[a-z0-9][a-z0-9._-]*$" },
+        "source_id": { "type": "string", "pattern": "^source:[a-z0-9][a-z0-9._-]*$" },
+        "claim_id": { "type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$" },
+        "relation": { "enum": ["supports", "contradicts", "partial", "background", "undetermined"] },
+        "passage_status": { "enum": ["inspectable", "metadata_only", "retrieval_failed"] },
+        "passage": { "type": ["string", "null"] },
+        "locator": { "type": ["string", "null"], "description": "Page, section, paragraph, archive reference, or timestamp." },
+        "source_date": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "retrieved_at": { "type": "string", "format": "date-time" },
+        "retrieval_notes": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "passage_status": { "const": "inspectable" } }, "required": ["passage_status"] },
+          "then": { "properties": { "passage": { "type": "string", "minLength": 1 } }, "required": ["passage"] }
+        }
+      ]
+    },
+    "judgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "schema_version", "judgement_id", "claim_id", "evidence_ids", "verdict", "rationale", "uncertainty", "judged_at"],
+      "properties": {
+        "record_type": { "const": "judgement" },
+        "schema_version": { "const": 1 },
+        "judgement_id": { "type": "string", "pattern": "^judgement:[a-z0-9][a-z0-9._-]*$" },
+        "claim_id": { "type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$" },
+        "evidence_ids": { "type": "array", "items": { "type": "string", "pattern": "^evidence:[a-z0-9][a-z0-9._-]*$" } },
+        "verdict": { "enum": ["supported", "contradicted", "partial", "insufficient", "unverified"] },
+        "rationale": { "type": "string", "minLength": 1 },
+        "uncertainty": { "type": "string" },
+        "model": { "type": ["string", "null"] },
+        "prompt_version": { "type": ["string", "null"] },
+        "judged_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

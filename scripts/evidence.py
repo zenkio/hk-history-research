@@ -115,6 +115,39 @@ def keywords(title):
     return " ".join(words[:8])
 
 
+def claim_search_queries(title, claims):
+    """Build one title query plus a distinct query for every explicit claim."""
+    queries = []
+    for text in [title, *claims]:
+        query = keywords(text)
+        if query and query.casefold() not in {q.casefold() for q in queries}:
+            queries.append(query)
+    return queries
+
+
+def gather_claim_candidates(queries):
+    """Search each query, deduplicate URLs, and bound the prompt size per source."""
+    combined, seen, successful_sources = [], set(), set()
+    max_per_source = 12
+    for query in queries:
+        candidates, failed = gather(query)
+        successful_sources.update(name for name, _ in SOURCES if name not in failed)
+        per_query_counts = {}
+        for candidate in candidates:
+            source = candidate.get("source", "")
+            url = candidate.get("url") or candidate.get("doi") or candidate.get("title")
+            key = (source, str(url).casefold())
+            if not url or key in seen or per_query_counts.get(source, 0) >= 3:
+                continue
+            if sum(1 for item in combined if item.get("source") == source) >= max_per_source:
+                continue
+            seen.add(key)
+            combined.append(candidate)
+            per_query_counts[source] = per_query_counts.get(source, 0) + 1
+    failed = [name for name, _ in SOURCES if name not in successful_sources]
+    return combined, failed
+
+
 # ---- sources -----------------------------------------------------------
 
 def openalex(query, year=None):
@@ -339,8 +372,9 @@ def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
     source failed and nothing was found, so the page is not wrongly recorded as searched."""
     text, title, date, claims = read_page(path)
-    query = keywords(title)
-    candidates, failed = gather(query)
+    queries = claim_search_queries(title, claims)
+    candidates, failed = gather_claim_candidates(queries)
+    query = "; ".join(queries)
     if len(failed) == len(SOURCES):
         return None
     if failed and "\n## Evidence\n" in text:

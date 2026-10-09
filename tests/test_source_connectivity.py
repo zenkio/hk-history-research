@@ -7,7 +7,7 @@ import check_source_connectivity as probe
 
 def test_probe_validates_expected_json_shape():
     spec = {"format": "json", "shape": "records"}
-    ok, detail = probe.inspect_response(spec, 200, "application/json", b'{"records": []}')
+    ok, detail = probe.inspect_response(spec, 200, "application/json", b'{"Records": []}')
     assert ok
     assert "200" in detail
 

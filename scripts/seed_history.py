@@ -195,8 +195,7 @@ def load_plan():
 
 
 def save_plan(plan):
-    with open(PLAN_FILE, "w", encoding="utf-8") as f:
-        json.dump(plan, f, indent=2, ensure_ascii=False)
+    state.atomic_write(PLAN_FILE, json.dumps(plan, indent=2, ensure_ascii=False) + "\n")
 
 
 def make_slug(text, max_len=70):
@@ -335,6 +334,8 @@ def write_event_page(era, ev, data, model):
         "summary": yaml_str(data.get("summary", ev.get("summary", ""))),
         "description": yaml_str(make_summary(data.get("summary") or ev.get("summary", ""))),
         "confidence": "ai-draft",
+        "origin": "ai",
+        "verification_status": "unverified",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
     }
@@ -351,6 +352,8 @@ def write_overview_page(era, data, model):
         "summary": yaml_str(data.get("summary", "")),
         "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
+        "origin": "ai",
+        "verification_status": "unverified",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
     }
@@ -374,6 +377,8 @@ def write_entity_page(ent, data, model):
         "summary": yaml_str(data.get("summary", "")),
         "description": yaml_str(make_summary(data.get("summary", ""))),
         "confidence": "ai-draft",
+        "origin": "ai",
+        "verification_status": "unverified",
         "draft_model": model,
         "ingested": datetime.now().strftime("%Y-%m-%d"),
     }
@@ -421,8 +426,7 @@ def _apply_verification_unlocked(path, verdicts, sources, model, cites=()):
     differs = any(str(v.get("status", "")).lower() == "contradicted" for v in verdicts)
     extra = '"wikipedia-checked"' + (', "wikipedia-differs"' if differs else "")
     text = re.sub(r"^tags: \[", lambda _: f"tags: [{extra}, ", text, count=1, flags=re.MULTILINE)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(text)
+    state.atomic_write(path, text)
     return differs
 
 

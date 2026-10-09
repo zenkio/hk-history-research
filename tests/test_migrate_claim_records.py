@@ -44,7 +44,7 @@ def test_migration_does_not_invent_claims_for_pages_without_claim_section(tmp_pa
     assert len(result["claim_extraction_queue"]) == 1
     task = result["claim_extraction_queue"][0]
     assert task["status"] == "queued"
-    assert task["priority"] == "deferred"
+    assert task["priority"] == "core"
 
 
 def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):

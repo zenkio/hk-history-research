@@ -30,34 +30,53 @@ def parse_frontmatter(text):
 
 
 def parse_claims(frontmatter):
-    """Parse the deliberately small, documented YAML subset used for claim records."""
+    """Parse claim records and their nested evidence entries from the documented YAML subset."""
     match = re.search(
-        r"(?ms)^claims:\s*\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:\s*|\Z)",
+        r"(?ms)^claims:[ \t]*\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:[ \t]*|\Z)",
         frontmatter,
     )
     if not match:
         return []
     block = match.group(1)
-    chunks = re.split(r"(?m)^\s{2}-\s+", block)
+    chunks = re.split(r"(?m)^[ \t]{2}-[ \t]+", block)
     claims = []
+
+    def scalar(key, text):
+        found = re.search(rf"(?m)^[ \t]*{re.escape(key)}:[ \t]*(.*?)[ \t]*$", text)
+        return found.group(1).strip().strip('"').strip("'") if found else ""
+
     for chunk in chunks:
         if not chunk.strip():
             continue
-        def value(key):
-            found = re.search(rf"(?m)^\s*{re.escape(key)}:\s*(.*?)\s*$", chunk)
-            return found.group(1).strip().strip('"').strip("'") if found else ""
+        evidence_match = re.search(
+            r"(?ms)^[ \t]{4}evidence:[ \t]*\n(.*?)(?=^[ \t]{4}[A-Za-z_][A-Za-z0-9_-]*:[ \t]*|\Z)",
+            chunk,
+        )
+        evidence_block = evidence_match.group(1) if evidence_match else ""
+        evidence = []
+        for entry in re.split(r"(?m)^[ \t]{6}-[ \t]+", evidence_block):
+            urls = re.findall(r"https?://[^\s\]>)\"']+", entry)
+            if not urls and not re.search(r"(?m)^[ \t]*relation:", entry):
+                continue
+            evidence.append({
+                "url": urls[0] if urls else "",
+                "relation": scalar("relation", entry).lower(),
+                "passage_status": scalar("passage_status", entry).lower(),
+                "passage": scalar("passage", entry).strip(),
+            })
         claims.append({
-            "id": value("id"),
-            "text": value("text"),
-            "importance": value("importance").lower(),
-            "status": value("status").lower(),
-            "evidence_urls": re.findall(r"https?://[^\s\]>)\"']+", chunk),
-            "passage_status": value("passage_status").lower(),
-            "evidence_relations": [relation.lower() for relation in re.findall(r"(?m)^[ \t]*relation:[ \t]*(.*?)[ \t]*$", chunk)],
-            "passage": value("passage").strip(),
+            "id": scalar("id", chunk),
+            "text": scalar("text", chunk),
+            "importance": scalar("importance", chunk).lower(),
+            "status": scalar("status", chunk).lower(),
+            "evidence": evidence,
+            # Kept as derived fields for diagnostics/backward-compatible callers.
+            "evidence_urls": [item["url"] for item in evidence if item["url"]],
+            "passage_status": scalar("passage_status", chunk).lower(),
+            "evidence_relations": [item["relation"] for item in evidence if item["relation"]],
+            "passage": scalar("passage", chunk).strip(),
         })
     return claims
-
 
 def validate_page(path, text):
     fields, frontmatter = parse_frontmatter(text)
@@ -94,20 +113,25 @@ def validate_page(path, text):
             errors.append(f"{label}: status must be supported or explicitly disputed")
         if claim["importance"] == "core" and claim["status"] not in CORE_PUBLISHABLE_STATUSES:
             errors.append(f"{label}: core claim is unresolved")
-        if not claim["evidence_urls"]:
+        evidence = claim["evidence"]
+        if not evidence or not any(item["url"] for item in evidence):
             errors.append(f"{label}: claim requires at least one direct evidence URL")
-        if claim["passage_status"] not in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}:
-            errors.append(f"{label}: claim requires inspectable evidence passage; metadata-only sources are not proof")
-        passage = claim["passage"].strip().strip(chr(34) + chr(39))
-        if len(passage) < 30:
-            errors.append(f"{label}: claim requires a non-empty inspectable evidence passage (at least 30 characters)")
-        relations = set(claim["evidence_relations"])
+        inspectable = []
+        for item in evidence:
+            passage = item["passage"].strip().strip(chr(34) + chr(39))
+            if (item["url"]
+                    and item["passage_status"] in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}
+                    and len(passage) >= 30):
+                inspectable.append(item)
+        if not inspectable:
+            errors.append(f"{label}: claim requires an inspectable evidence passage tied to its own source URL (at least 30 characters)")
+        relations = {item["relation"] for item in inspectable}
         if claim["status"] == "supported" and "supports" not in relations:
-            errors.append(f"{label}: supported claims require an evidence relation of supports")
+            errors.append(f"{label}: supported claims require inspectable evidence with relation supports")
         if claim["status"] == "supported" and "contradicts" in relations:
             errors.append(f"{label}: contradictory evidence blocks a supported verdict; mark the claim disputed")
         if claim["status"] == "disputed" and "contradicts" not in relations:
-            errors.append(f"{label}: disputed claims require an evidence relation of contradicts")
+            errors.append(f"{label}: disputed claims require inspectable evidence with relation contradicts")
 
     if any(claim["status"] == "disputed" for claim in claims) and verification_status != "disputed":
         errors.append("pages with disputed claims must set verification_status: disputed")

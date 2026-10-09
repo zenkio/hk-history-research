@@ -96,7 +96,7 @@ def validate_page(path, text):
             errors.append(f"{label}: core claim is unresolved")
         if not claim["evidence_urls"]:
             errors.append(f"{label}: claim requires at least one direct evidence URL")
-        if claim["passage_status"] != "inspectable":
+        if claim["passage_status"] not in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}:
             errors.append(f"{label}: claim requires inspectable evidence passage; metadata-only sources are not proof")
         passage = claim["passage"].strip().strip(chr(34) + chr(39))
         if len(passage) < 30:

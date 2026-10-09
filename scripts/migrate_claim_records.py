@@ -76,7 +76,7 @@ def build_records(content_root, now=None, limit=None):
     """Build validated claim and source-candidate records without changing source pages."""
     content_root = Path(content_root).resolve()
     timestamp = now or datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    claims, sources = [], []
+    claims, sources, claim_extraction_queue = [], [], []
     pages_seen, pages_without_claims = 0, []
     paths = sorted(content_root.rglob("*.md"))
     if limit is not None:

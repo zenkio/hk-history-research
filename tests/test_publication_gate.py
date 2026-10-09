@@ -91,6 +91,14 @@ claims:
     errors = gate.validate_page(page, content, records_dir=tmp_path)
     assert any("frontmatter is missing or malformed" in error for error in errors)
 
+def test_publication_gate_main_fails_on_malformed_published_frontmatter(tmp_path):
+    page = tmp_path / "broken.md"
+    page.write_text(
+        "---\\ntitle: Broken\\npublication_status: published\\nverification_status: verified\\n",
+        encoding="utf-8",
+    )
+    assert gate.main([str(tmp_path)]) == 1
+
 
 
 

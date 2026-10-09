@@ -91,7 +91,7 @@ def build_report(records_dir, stale_days=30, now=None):
         "claims_total": len(claims),
         "claim_status_counts": dict(Counter(c["status"] for c in claims)),
         "core_claims_unresolved": sum(
-            1 for c in claims if c["importance"] == "core" and c["status"] in {"unverified", "partial", "insufficient"}
+            1 for c in claims if c["importance"] == "core" and c["status"] in {"unverified", "partial", "insufficient", "contradicted"}
         ),
         "claims_without_evidence": len(missing_evidence),
         "claims_without_inspectable_passage": len(no_inspectable_passage),

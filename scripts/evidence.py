@@ -130,6 +130,8 @@ def frontmatter_aliases(text):
         value = field.group(1).strip()
         if value.startswith("[") and value.endswith("]"):
             values = re.findall(r"""['"]([^'"]+)['"]""", value)
+            if not values:
+                values = [item.strip().strip("'\" ") for item in value[1:-1].split(",")]
         else:
             values = [value.strip("'\" ")]
         for item in values:

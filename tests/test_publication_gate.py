@@ -118,6 +118,16 @@ def test_support_status_cannot_be_backed_only_by_contradictory_evidence(tmp_path
     assert any("supported claims require an evidence relation of supports" in error for error in errors)
 
 
+
+def test_contradictory_evidence_blocks_a_supported_claim(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace(
+        "        passage: \"The contemporary archive record explicitly describes the event and its date in the official register.\"",
+        "        passage: \"The contemporary archive record explicitly describes the event and its date in the official register.\\n      - https://example.org/contradictory-record\\n        relation: contradicts\\n        passage_status: inspectable\\n        passage: \"A second inspected record explicitly gives a different date for this event.\"",
+    )
+    errors = gate.validate_page(page, content)
+    assert any("contradictory evidence blocks a supported verdict" in error for error in errors)
+
 def test_disputed_claim_requires_contradictory_evidence(tmp_path):
     page = tmp_path / "event.md"
     content = published_page(claim_status="disputed", verification_status="disputed")

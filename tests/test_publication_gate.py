@@ -123,6 +123,18 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
 
+
+def test_mismatched_source_catalogue_url_fails_closed(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path)
+    source_path = tmp_path / "sources.jsonl"
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    source["stable_url"] = "https://example.org/a-different-record"
+    source_path.write_text(json.dumps(source) + chr(10), encoding="utf-8")
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+    assert any("evidence URL does not match source stable_url" in error for error in errors)
+
+
 def test_structured_unverified_claim_cannot_be_published_as_supported(tmp_path):
     page = tmp_path / "event.md"
     write_structured_records(tmp_path, status="unverified", relation="background")

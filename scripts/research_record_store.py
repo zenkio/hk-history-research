@@ -24,8 +24,15 @@ def event_id_for_relative_path(relative_path):
     return "event:" + slug(Path(relative_path).with_suffix("").as_posix())
 
 
+def normalize_claim_text(text):
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", str(text))
+    value = re.sub(r"[*_~]", "", value)
+    value = re.sub(r"^(?:❔|\[[ xX]\])\s*", "", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
 def claim_id_for(event_id, text):
-    normalized = re.sub(r"\s+", " ", text).strip().casefold()
+    normalized = normalize_claim_text(text).casefold()
     digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:10]
     return f"claim:{event_id.removeprefix('event:')}-{digest}"
 
@@ -118,7 +125,7 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
     timestamp_dt = datetime.now(timezone.utc)
     timestamp = timestamp_dt.isoformat(timespec="seconds").replace("+00:00", "Z")
     timestamp_slug = timestamp_dt.strftime("%Y%m%dt%H%M%S%fZ").lower()
-    claim_texts = [f"{title} took place in Hong Kong ({date})", *claims]
+    claim_texts = [f"{title} took place in Hong Kong ({date})", *[normalize_claim_text(item) for item in claims]]
     claim_rows = []
     for index, text in enumerate(claim_texts):
         claim_id = claim_id_for(event_id, text)

@@ -377,3 +377,22 @@ def test_internet_archive_search_marks_only_downloaded_text_as_inspectable(monke
     assert results[0]["passage"]
     assert results[1]["passage_status"] == "metadata_only"
     assert results[1]["passage"] == ""
+
+
+def test_failed_atomic_evidence_write_preserves_previous_page(tmp_path, monkeypatch):
+    page = tmp_path / "event.md"
+    original = "---\ntitle: Example\nconfidence: ai-draft\n---\n\nOriginal body.\n"
+    page.write_text(original, encoding="utf-8")
+
+    def fail_write(*args, **kwargs):
+        raise OSError("simulated disk write failure")
+
+    monkeypatch.setattr(ev, "atomic_write", fail_write)
+    try:
+        ev.write_evidence(str(page), "A", ["## Evidence", "New evidence"])
+    except OSError:
+        pass
+    else:
+        raise AssertionError("simulated write failure should propagate")
+
+    assert page.read_text(encoding="utf-8") == original

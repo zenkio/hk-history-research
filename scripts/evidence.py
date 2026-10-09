@@ -663,7 +663,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 6  # 6: only inspectable source passages may support or contradict claims
+JUDGE_VERSION = 7  # 7: judge support from inspected passages, not titles/metadata
+# 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
 # 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras
@@ -679,6 +680,8 @@ def _to_rejudge(version, grade, text, rel=""):
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
+    if version < 7 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # prior prompt told the judge to rely on titles/notes, not inspected passages
 
 
 def reopen_for_rejudge(done_map):

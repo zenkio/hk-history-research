@@ -346,6 +346,24 @@ def grade_of(kept):
     return "A" if any(c["grade"] == "A" for c in counted) else ("B" if counted else "none")
 
 
+def record_grade_change(path, before, after, contradiction_found=False):
+    """Persist every evidence-grade change, including a complete search with zero results."""
+    if before not in RANK or before == after:
+        return
+    import state
+    meta = state.load("evidence_meta")
+    meta.setdefault("grade_changes", []).append({
+        "page": os.path.relpath(path, TIMELINE_DIR),
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "from": before,
+        "to": after,
+        "reason": "rejudged evidence",
+        "contradiction_found": bool(contradiction_found),
+    })
+    state.save("evidence_meta", meta)
+    print(f"[evidence] {os.path.basename(path)}: grade changed {before} -> {after}; change recorded")
+
+
 def evidence_block(kept, missing, model):
     grade = grade_of(kept)
     today = datetime.now().strftime("%Y-%m-%d")
@@ -466,6 +484,8 @@ def evidence_for_page(pool, path):
     if not candidates:
         print(search_summary(query, candidates, failed, None))
         grade, lines = evidence_block([], "", "search")
+        before = (re.search(r"(?m)^evidence_grade: (\\w+)", text) or [None, None])[1]
+        record_grade_change(path, before, grade)
         from research_record_store import persist_page_judgement
         persisted = persist_page_judgement(
             path, TIMELINE_DIR, title, date, claims, [], None, JUDGE_VERSION,
@@ -487,20 +507,11 @@ def evidence_for_page(pool, path):
     if grade == "none" and failed:
         return "retry"  # a source we could not search may still hold evidence
     before = (re.search(r"(?m)^evidence_grade: (\w+)", text) or [None, None])[1]
-    if before in RANK and before != grade:
-        # Preserve the audit trail, but never let a stale grade override the current judgement.
-        import state
-        meta = state.load("evidence_meta")
-        meta.setdefault("grade_changes", []).append({
-            "page": os.path.relpath(path, TIMELINE_DIR),
-            "date": datetime.now().strftime("%Y-%m-%d"),
-            "from": before,
-            "to": grade,
-            "reason": "rejudged evidence",
-            "contradiction_found": any(c.get("relation") == "contradicts" for c in kept),
-        })
-        state.save("evidence_meta", meta)
-        print(f"[evidence] {os.path.basename(path)}: grade changed {before} -> {grade}; change recorded")
+    # Preserve the audit trail, but never let a stale grade override the current judgement.
+    record_grade_change(
+        path, before, grade,
+        contradiction_found=any(c.get("relation") == "contradicts" for c in kept),
+    )
     from research_record_store import persist_page_judgement
     persisted = persist_page_judgement(
         path, TIMELINE_DIR, title, date, claims, kept, model, JUDGE_VERSION,

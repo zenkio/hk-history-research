@@ -124,6 +124,22 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
 
 
+def test_publication_requires_latest_judgement_to_reference_inline_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path)
+    judgement_path = tmp_path / "judgements.jsonl"
+    judgement = json.loads(judgement_path.read_text(encoding="utf-8"))
+    judgement["evidence_ids"] = []
+    judgement_path.write_text(json.dumps(judgement) + chr(10), encoding="utf-8")
+
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+
+    assert any(
+        "latest structured judgement must reference the current inline evidence passage" in error
+        for error in errors
+    )
+
+
 def test_mismatched_source_catalogue_url_fails_closed(tmp_path):
     page = tmp_path / "event.md"
     write_structured_records(tmp_path)

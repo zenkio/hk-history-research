@@ -38,6 +38,13 @@ def event_id_for(path, content_root):
     return "event:" + slug(relative.as_posix())
 
 
+def frontmatter_value(text, key):
+    match = re.match(r"\A---\s*\n(.*?)\n---", text, re.S)
+    if not match:
+        return ""
+    value = re.search(rf'(?m)^{re.escape(key)}: *"?(.*?)"?$', match.group(1))
+    return value.group(1).strip() if value else ""
+
 def extract_claim_bullets(text):
     """Return only explicit bullets under a Claims to verify heading."""
     match = CLAIMS_HEADING.search(text)
@@ -79,7 +86,7 @@ def build_records(content_root, now=None, limit=None):
     content_root = Path(content_root).resolve()
     timestamp = now or datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
     claims, sources, claim_extraction_queue = [], [], []
-    pages_seen, pages_without_claims = 0, []
+pages_seen, pages_without_claims, explicit_claims_extracted = 0, [], []
     paths = sorted(content_root.rglob("*.md"))
     if limit is not None:
         paths = paths[:limit]
@@ -93,6 +100,24 @@ def build_records(content_root, now=None, limit=None):
         pages_seen += 1
         event_id = event_id_for(path, content_root)
         page_claims = extract_claim_bullets(text)
+        explicit_claims_extracted += len(page_claims)
+        seen_claim_ids = set()
+        event_title = frontmatter_value(text, "title")
+        event_date = frontmatter_value(text, "date") or frontmatter_value(text, "year")
+        if event_title and event_date:
+            event_claim_text = f"{event_title} occurred in {event_date}."
+            event_claim_id = claim_id_for(event_id, event_claim_text)
+            event_claim = {
+                "record_type": "claim", "schema_version": 1, "id": event_claim_id,
+                "event_id": event_id, "text": event_claim_text, "claim_type": "other",
+                "status": "unverified", "is_current": True, "superseded_at": None,
+                "importance": "core", "created_from": "migration", "created_at": timestamp,
+                "updated_at": timestamp,
+                "provenance": {"source_page": path.relative_to(content_root.parent).as_posix(),
+                               "extraction": "event title/date"},
+            }
+            claims.append(require_valid_record(event_claim))
+            seen_claim_ids.add(event_claim_id)
         if not page_claims:
             pages_without_claims.append(path.relative_to(content_root).as_posix())
             relative_page = path.relative_to(content_root.parent).as_posix()
@@ -113,6 +138,9 @@ def build_records(content_root, now=None, limit=None):
         for claim_text in page_claims:
             claim_text = normalize_claim_text(claim_text)
             claim_id = claim_id_for(event_id, claim_text)
+            if claim_id in seen_claim_ids:
+                continue
+            seen_claim_ids.add(claim_id)
             record = {
                 "record_type": "claim",
                 "schema_version": 1,
@@ -165,6 +193,7 @@ def build_records(content_root, now=None, limit=None):
         "pages_seen": pages_seen,
         "pages_without_explicit_claims": pages_without_claims,
         "claims": claims,
+        "explicit_claims_extracted": explicit_claims_extracted,
         "sources": [unique_sources[key] for key in sorted(unique_sources)],
         "claim_extraction_queue": claim_extraction_queue,
     }
@@ -194,6 +223,7 @@ def main(argv=None):
         return 2
     print(f"Pages scanned: {result['pages_seen']}")
     print(f"Explicit claims extracted: {len(result['claims'])}")
+    print(f"Total claim records prepared: {len(result['claims'])}")
     print(f"Source candidates retained: {len(result['sources'])}")
     print(f"Pages with no explicit Claims to verify section: {len(result['pages_without_explicit_claims'])}")
     print(f"Claim-extraction tasks queued: {len(result['claim_extraction_queue'])}")

@@ -91,6 +91,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--content-root", type=Path, default=DEFAULT_CONTENT_ROOT)
     parser.add_argument("--write", action="store_true", help="apply labels; default is preview only")
+    parser.add_argument("--quiet", action="store_true", help="suppress file paths; useful for public CI logs")
     args = parser.parse_args(argv)
     if not args.content_root.is_dir():
         print(f"Content root not found: {args.content_root}", file=sys.stderr)
@@ -110,7 +111,8 @@ def main(argv=None):
         if not modified:
             continue
         changed += 1
-        print(f"{'Updated' if args.write else 'Would update'}: {path.relative_to(args.content_root)}")
+        if not args.quiet:
+            print(f"{'Updated' if args.write else 'Would update'}: {path.relative_to(args.content_root)}")
         if args.write:
             from state import atomic_write
             atomic_write(str(path), updated)

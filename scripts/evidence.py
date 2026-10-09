@@ -223,8 +223,7 @@ def openalex(query, year=None):
                     "catalogue_reference": w.get("doi") or w.get("id"),
                     "cite": f"{authors} ({w.get('publication_year')}). *{w['title']}*." + (f" {venue}." if venue else ""),
                     "note": abstract or venue,
-                    "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only"})
-                    "locator": "Abstract (OpenAlex work record)",
+                    "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only", "locator": "Abstract (OpenAlex work record)"})
     return out
 
 
@@ -251,8 +250,7 @@ def national_archives(query):
                     "url": f"https://discovery.nationalarchives.gov.uk/details/r/{identifier}",
                     "cite": f"The National Archives (UK), {ref}, {covering_dates}. {desc[:200]}",
                     "catalogue_reference": ref,
-                    "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
-                    "locator": f"National Archives catalogue record {ref}",
+                    "note": desc[:300], "passage": "", "passage_status": "metadata_only", "locator": f"National Archives catalogue record {ref}"})
     return out
 
 def internet_archive_ai_processing_allowed(metadata):
@@ -320,8 +318,7 @@ def internet_archive(query):
                     "catalogue_reference": identifier,
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
-                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only"})
-                    "locator": f"Internet Archive OCR text for {identifier}",
+                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only", "locator": f"Internet Archive OCR text for {identifier}"})
     return out
 
 

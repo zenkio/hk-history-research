@@ -40,9 +40,11 @@ def batch(pages, sources, monkeypatch, done=None):
 
 
 def test_page_with_no_results_while_a_source_is_down_is_not_recorded(write_page, monkeypatch):
-    # PR #18: OpenAlex 429s left 96 of 150 pages marked "none" for good.
+    # A failed retrieval must be visible as a partial failure and remain retryable.
     write_page("p.md", "Plague outbreak")
-    done = batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch)
+    done = {}
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch, done)
     assert done == {}
 
 
@@ -66,7 +68,8 @@ def test_failing_source_is_rested_after_three_failures(write_page, monkeypatch):
         fail(q)
     for i in range(5):
         write_page(f"p{i}.md", f"Harbour event {'abcde'[i]}")
-    batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
     assert len(calls) == ev.SOURCE_FAILS_TO_REST
 
 

@@ -151,7 +151,20 @@ def test_background_reading_is_listed_but_earns_no_grade(write_page, monkeypatch
                                   [("OpenAlex", lambda q: [dict(B_PAPER)])])
     assert done == {"p.md": "none"} and "evidence_grade: none" in text
     assert len(pool.calls) == 1, "one AI call per page"
-    assert "### Background reading (does not count towards the grade)" in text and "Lakos (2009)" in text
+    assert "### Background reading (does not count towards coverage)" in text and "Lakos (2009)" in text
+
+
+
+def test_evidence_section_labels_grade_as_coverage_not_verification(write_page, monkeypatch, timeline):
+    done, text, _ = judge_page(
+        write_page, monkeypatch, timeline,
+        [{"id": "c1", "relation": "supports", "claims": [1], "why": "passage directly supports"}],
+        [("National Archives", lambda q: [dict(A_RECORD)])],
+    )
+    assert done == {"p.md": "A"}
+    assert "Evidence coverage: **A** (not a verification verdict)" in text
+    assert "source coverage, not a verification verdict" in text
+    assert "Evidence grade:" not in text
 
 
 def test_supports_without_a_claim_counts_as_background(write_page, monkeypatch, timeline):
@@ -246,7 +259,7 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
 
 def test_legacy_background_and_support_grades_are_rejudged_once(write_page, timeline):
     state.save("evidence_meta", {"judge_version": 2})
-    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards the grade)\n\n- x\n")
+    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards coverage)\n\n- x\n")
     write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
     write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
@@ -380,7 +393,7 @@ def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page,
                                [("National Archives", lambda q: [metadata_only])])
     assert done == {"p.md": "none"}
     assert "evidence_grade: none" in text
-    assert "### Background reading (does not count towards the grade)" in text
+    assert "### Background reading (does not count towards coverage)" in text
     assert "Source passage not inspected" in text
 
 

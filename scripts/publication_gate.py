@@ -77,8 +77,81 @@ def parse_claims(frontmatter):
             "passage": scalar("passage", chunk).strip(),
         })
     return claims
+def load_structured_records(records_dir):
+    """Load the current claim/evidence state used by the research pipeline; malformed/missing data fails closed."""
+    records_dir = Path(records_dir or PROJECT_ROOT / "research" / "records")
+    loaded = {}
+    errors = []
+    for kind, filename in (("claims", "claims.jsonl"), ("evidence", "evidence.jsonl"), ("judgements", "judgements.jsonl")):
+        path = records_dir / filename
+        if not path.is_file():
+            errors.append(f"structured research records missing: {filename}")
+            loaded[kind] = []
+            continue
+        rows = []
+        for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line.strip():
+                continue
+            try:
+                row = __import__("json").loads(line)
+            except ValueError as exc:
+                errors.append(f"{filename}:{line_no}: invalid JSON ({exc})")
+                continue
+            if isinstance(row, dict):
+                rows.append(row)
+            else:
+                errors.append(f"{filename}:{line_no}: record must be a JSON object")
+        loaded[kind] = rows
+    return loaded, errors
 
-def validate_page(path, text):
+
+def validate_against_records(claim, records, record_errors):
+    """Require the inline publication claim to agree with the latest structured judgement and evidence."""
+    label = claim["id"] or "claim"
+    errors = [f"{label}: {error}" for error in record_errors]
+    if record_errors:
+        return errors
+    claim_rows = [
+        row for row in records["claims"]
+        if row.get("id") == claim["id"] and row.get("is_current", True)
+    ]
+    if not claim_rows:
+        return [f"{label}: no current structured claim record; AI-only claims cannot be published"]
+    current = claim_rows[-1]
+    status = str(current.get("status", "")).lower()
+    judgements = sorted(
+        (row for row in records["judgements"] if row.get("claim_id") == claim["id"]),
+        key=lambda row: str(row.get("judged_at", "")),
+    )
+    latest_verdict = str(judgements[-1].get("verdict", "")).lower() if judgements else ""
+    current_evidence = [
+        row for row in records["evidence"]
+        if row.get("claim_id") == claim["id"] and row.get("is_current", True)
+        and row.get("passage_status") == "inspectable"
+        and len(str(row.get("passage") or "").strip()) >= 30
+        and str(row.get("url") or "").strip()
+    ]
+    inline_urls = {item["url"] for item in claim["evidence"] if item["url"]}
+    record_urls = {str(row.get("url") or "").strip() for row in current_evidence}
+    if not inline_urls.intersection(record_urls):
+        errors.append(f"{label}: inline evidence must link to a current structured inspectable evidence record")
+    relations = {str(row.get("relation", "")).lower() for row in current_evidence}
+    if claim["status"] == "supported":
+        if status != "supported" or latest_verdict != "supported":
+            errors.append(f"{label}: supported publication requires the latest structured claim and judgement to be supported")
+        if "contradicts" in relations:
+            errors.append(f"{label}: current structured contradictory evidence blocks a supported verdict; mark the claim disputed")
+        if "supports" not in relations:
+            errors.append(f"{label}: no current structured inspectable supporting evidence")
+    elif claim["status"] == "disputed":
+        if status not in {"partial", "contradicted"} or latest_verdict not in {"partial", "contradicted"}:
+            errors.append(f"{label}: disputed publication requires a current partial/contradicted structured judgement")
+        if "contradicts" not in relations:
+            errors.append(f"{label}: disputed publication requires current structured inspectable contradictory evidence")
+    return errors
+
+
+def validate_page(path, text, records_dir=None):
     fields, frontmatter = parse_frontmatter(text)
     if fields is None:
         return []
@@ -102,6 +175,7 @@ def validate_page(path, text):
     claims = parse_claims(frontmatter)
     if not claims:
         errors.append("published pages require claim-level records under frontmatter 'claims:'")
+    records, record_errors = load_structured_records(records_dir)
 
     for index, claim in enumerate(claims, start=1):
         label = claim["id"] or f"claim #{index}"
@@ -132,6 +206,7 @@ def validate_page(path, text):
             errors.append(f"{label}: contradictory evidence blocks a supported verdict; mark the claim disputed")
         if claim["status"] == "disputed" and "contradicts" not in relations:
             errors.append(f"{label}: disputed claims require inspectable evidence with relation contradicts")
+        errors.extend(validate_against_records(claim, records, record_errors))
 
     if any(claim["status"] == "disputed" for claim in claims) and verification_status != "disputed":
         errors.append("pages with disputed claims must set verification_status: disputed")

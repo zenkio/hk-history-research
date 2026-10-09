@@ -49,6 +49,16 @@ jobs:
             --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install publication-record schema validator
+        run: python -m pip install --quiet "jsonschema>=4.23"
+
+      - name: Label legacy AI drafts before publication
+        run: python scripts/label_legacy_ai_drafts.py --write --quiet
+
       - name: Validate publication eligibility
         run: python3 scripts/publication_gate.py
 

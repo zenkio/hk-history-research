@@ -9,6 +9,7 @@ from datetime import datetime
 from gemini_pool import ModelPool, QuotaExhausted
 from textutil import make_summary, yaml_quote
 from photos import describe_source_photos, source_photo_section
+from state import atomic_write
 import videos as yt
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -280,11 +281,17 @@ def analyze_and_route(pool, filepath):
         f"tags: {tags_yaml}",
         f"summary: {yaml_quote(make_summary(narrative))}",
         f"description: {yaml_quote(make_summary(narrative))}",
-        f"confidence: {confidence}",
+        "confidence: ai-draft",
+        f"source_confidence: {confidence}",
+        "origin: ai",
+        "verification_status: unverified",
         f"source_feed: {feed_name}",
         f'source_url: "{url}"',
         f"ingested: {datetime.now().strftime('%Y-%m-%d')}",
         "---",
+        "",
+        "> [!warning] AI draft — research hypothesis",
+        "> AI-generated summary from a discovered source. It has not been independently verified against inspectable historical evidence; treat it as a research lead, not established history.",
         "",
         narrative,
         "",
@@ -299,8 +306,7 @@ def analyze_and_route(pool, filepath):
     ]
     output = "\n".join(lines)
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(output)
+    atomic_write(output_path, output + "\n")
 
     os.remove(filepath)
     # A re-queued page (repair_content.py) is only removed once its replacement exists.

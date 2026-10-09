@@ -349,16 +349,17 @@ def grade_of(kept):
 def evidence_block(kept, missing, model):
     grade = grade_of(kept)
     today = datetime.now().strftime("%Y-%m-%d")
-    how = (f"judged by {model} on {today}. Only sources judged to support a claim count towards the grade; "
-           "contradictions are listed separately and block treating the affected claim as settled. "
-           "Sources have not all been read in full, so individual claims still need checking." if kept else
-           f"searched on {today}; nothing relevant found yet.")
+    how = (f"judged by {model} on {today}. This is source coverage, not a verification verdict: only sources "
+           "judged to support a claim count towards coverage; contradictions are listed separately and block "
+           "treating the affected claim as settled. Sources have not all been read in full, so individual claims "
+           "still need checking." if kept else
+           f"searched on {today}; no relevant evidence was found. This is not proof that the draft is true or false.")
     lines = ["## Evidence", "",
-             f"> [!abstract] Evidence grade: **{grade}**",
+             f"> [!abstract] Evidence coverage: **{grade}** (not a verification verdict)",
              f"> Sources from the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
              f"OpenAlex (scholarship), {how}", ""]
     supporting = [c for c in kept if c.get("relation") == "supports"]
-    for label, g in (("Primary sources (grade A)", "A"), ("Scholarship (grade B)", "B")):
+    for label, g in (("Primary-source coverage (A)", "A"), ("Scholarship coverage (B)", "B")):
         items = [c for c in supporting if c["grade"] == g]
         if items:
             lines += [f"### {label}", ""]
@@ -374,7 +375,7 @@ def evidence_block(kept, missing, model):
         lines.append("")
     background = [c for c in kept if c.get("relation") == "background"]
     if background:
-        lines += ["### Background reading (does not count towards the grade)", ""]
+        lines += ["### Background reading (does not count towards coverage)", ""]
         lines += [f"- [{c['cite']}]({c['url']}): {c.get('why', '')}" for c in background]
         lines.append("")
     if missing:
@@ -522,6 +523,12 @@ def judge(pool, title, date, claims, candidates):
     claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
+    if not isinstance(data, dict) or not isinstance(data.get("relevant"), list):
+        raise ValueError("Evidence judge returned an invalid response: 'relevant' must be a list")
+    candidate_ids = {candidate["id"] for candidate in candidates}
+    for item in data["relevant"]:
+        if not isinstance(item, dict) or str(item.get("id", "")) not in candidate_ids:
+            raise ValueError("Evidence judge returned a malformed item or unknown candidate id")
     return data, model, prompt, judged(data, candidates)
 
 
@@ -839,10 +846,18 @@ def reopen_for_rejudge(done_map):
 
 def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
     """Attach evidence to event pages in `events` order; progress in done_map (rel -> grade)."""
-    reopened = reopen_unsearched(done_map) + reopen_for_rejudge(done_map)
+    # Older runs wrote the literal "error" sentinel into done_map after a rejected
+    # judgement. Membership means completed, so remove those legacy entries to let them retry.
+    legacy_errors = [rel for rel, grade in done_map.items() if grade == "error"]
+    for rel in legacy_errors:
+        del done_map[rel]
+    if legacy_errors:
+        print(f"[evidence] {len(legacy_errors)} pages with legacy error markers will be retried")
+    reopened = len(legacy_errors) + reopen_unsearched(done_map) + reopen_for_rejudge(done_map)
     if reopened and save:
         save(done_map)
     done = retries = 0
+    failures = []
     for ev in events:
         rel = ev.get("file")
         if not rel or rel in done_map or ev.get("status") != "done":
@@ -857,15 +872,22 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         except QuotaExhausted:
             break
         except RequestRejected as e:
-            print(f"[evidence] {rel} rejected: {str(e)[:100]}")
-            done_map[rel] = "error"
+            # Do not put an error sentinel in done_map: membership there means "finished" and
+            # would permanently suppress retries on later runs.
+            message = f"{rel}: evidence judgement rejected: {str(e)[:100]}"
+            print(f"[evidence] {message}; leaving page pending for retry")
+            failures.append(message)
             continue
         if grade is None:
-            print("[evidence] every source unreachable; stopping for this run")
+            message = f"{rel}: every evidence source was unreachable; page remains pending"
+            print(f"[evidence] {message}")
+            failures.append(message)
             break
         if grade == "retry":
             retries += 1
-            print(f"[evidence] {rel}: nothing found while a source was down; retried in a later run")
+            message = f"{rel}: retrieval was incomplete; page remains pending for a later run"
+            print(f"[evidence] {message}")
+            failures.append(message)
             if retries >= MAX_RETRIES_PER_RUN:
                 print("[evidence] a source keeps failing; stopping evidence for this run")
                 break
@@ -875,6 +897,12 @@ def evidence_batch(pool, done_map, events, deadline, limit=None, save=None):
         print(f"[evidence] {rel}: grade {grade}")
         if save:
             save(done_map)
+    if failures:
+        # Successful pages remain persisted, but the worker must report a partial failure to
+        # seed_history so the run cannot be recorded as wholly successful.
+        raise RuntimeError(
+            f"Evidence batch partially failed for {len(failures)} page(s): " + "; ".join(failures[:5])
+        )
     return done
 
 
@@ -900,10 +928,11 @@ def write_status_page(events, grades):
     from collections import Counter
     total = sum(1 for e in events if e.get("status") == "done")
     c = Counter(grades.values())
-    lines = ["---", 'title: "Evidence status"', 'description: "How many AI-drafted pages have archive or scholarly evidence attached."',
+    lines = ["---", 'title: "Evidence coverage"', 'description: "Source coverage on AI-drafted history pages; this is not a claim-verification score."',
              "---", "",
              f"_Updated {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC._", "",
-             "| Grade | Meaning | Pages |", "|---|---|---|",
+             "**Important:** A/B/none measure source coverage, not historical correctness. AI-drafted pages remain hypotheses; a linked source or high coverage level does not verify every statement.", "",
+             "| Coverage | Meaning | Pages |", "|---|---|---|",
              f"| [[tags/evidence-a\\|A]] | Primary sources linked (archives, contemporary publications) | {c.get('A', 0)} |",
              f"| [[tags/evidence-b\\|B]] | Scholarship linked (articles, academic books) | {c.get('B', 0)} |",
              f"| [[tags/evidence-none\\|none]] | Searched, nothing relevant found yet | {c.get('none', 0)} |",

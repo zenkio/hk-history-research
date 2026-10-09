@@ -27,6 +27,106 @@ def test_generated_event_page_is_explicitly_unverified_ai_hypothesis(tmp_path, m
     assert 'Claims to verify' in page
 
 
+
+
+
+def test_research_failure_still_refreshes_coverage_summary(monkeypatch):
+    calls = []
+    monkeypatch.setattr(seed, "import_inbox", lambda *args, **kwargs: None)
+    monkeypatch.setattr(seed.state, "load", lambda *args, **kwargs: {})
+    monkeypatch.setattr(seed.state, "save", lambda *args, **kwargs: None)
+    monkeypatch.setattr(seed, "evidence_batch", lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("retrieval failed")))
+    monkeypatch.setattr(seed, "write_status_page", lambda *args, **kwargs: calls.append("refreshed"))
+
+    try:
+        seed.research_worker(object(), [], 0)
+    except RuntimeError as exc:
+        assert "retrieval failed" in str(exc)
+    else:
+        raise AssertionError("research failure should propagate")
+
+    assert calls == ["refreshed"]
+
+
+def test_failed_draft_bookkeeping_preserves_existing_page(monkeypatch, tmp_path):
+    page = tmp_path / "05-opium-war" / "1841-example-event.md"
+    page.parent.mkdir(parents=True)
+    page.write_text("previous complete page\\n", encoding="utf-8")
+    event = {
+        "era": "05-opium-war", "title": "Example Event", "year": 1841,
+        "date": "1841", "summary": "Example", "status": "pending", "file": page.name,
+    }
+    plan = {
+        "eras": {slug: {"outlined": True, "overview": True, "rounds": seed.MAX_ROUNDS}
+                 for slug, _, _ in seed.ERAS},
+        "events": [event],
+        "entities": {},
+    }
+    class Pool:
+        state = {"resolved": {}}
+        def summary(self):
+            return "fake quota"
+        def generate_json(self, *args, **kwargs):
+            return {"title_zh": "示例", "summary": "summary", "body": "draft", "tags": []}, "test-model", []
+
+    class FinishedThread:
+        def __init__(self, name):
+            self.name = name
+        def join(self, timeout=None):
+            pass
+        def is_alive(self):
+            return False
+
+    monkeypatch.setattr(seed, "TIMELINE_DIR", str(tmp_path))
+    monkeypatch.setattr(seed, "ModelPool", Pool)
+    monkeypatch.setattr(seed, "load_plan", lambda: plan)
+    monkeypatch.setattr(seed, "save_plan", lambda p: None)
+    monkeypatch.setattr(seed, "verify_pages", lambda *args: 0)
+    monkeypatch.setattr(seed, "start_worker", lambda name, *args, **kwargs: FinishedThread(name))
+    monkeypatch.setattr(seed, "register_entities", lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("bad entity data")))
+    failures = []
+
+    seed.run(max_calls=1, minutes=1, failures=failures)
+
+    assert page.read_text(encoding="utf-8") == "previous complete page\\n"
+    assert event["status"] == "failed"
+    assert plan["last_run"]["status"] == "partial_failure"
+    assert failures[0]["stage"] == "draft"
+
+
+def test_worker_timeout_is_recorded_as_partial_failure(monkeypatch):
+    plan = {
+        "eras": {slug: {"outlined": True, "overview": True, "rounds": seed.MAX_ROUNDS}
+                 for slug, _, _ in seed.ERAS},
+        "events": [],
+        "entities": {},
+    }
+    class Pool:
+        state = {"resolved": {}}
+        def summary(self):
+            return "fake quota"
+    class StuckThread:
+        def __init__(self, name):
+            self.name = name
+        def join(self, timeout=None):
+            pass
+        def is_alive(self):
+            return True
+
+    monkeypatch.setattr(seed, "ModelPool", Pool)
+    monkeypatch.setattr(seed, "load_plan", lambda: plan)
+    monkeypatch.setattr(seed, "save_plan", lambda p: None)
+    monkeypatch.setattr(seed, "verify_pages", lambda *args: 0)
+    monkeypatch.setattr(seed, "start_worker", lambda name, *args, **kwargs: StuckThread(name))
+    failures = []
+
+    seed.run(max_calls=0, minutes=0, failures=failures)
+
+    assert {item["stage"] for item in failures} == {"research", "photos"}
+    assert all("did not finish before shutdown deadline" in item["error"] for item in failures)
+    assert plan["last_run"]["status"] == "partial_failure"
+
+
 def test_failed_atomic_page_write_preserves_previous_page(tmp_path, monkeypatch):
     page = tmp_path / "existing.md"
     page.write_text("previous complete page\n", encoding="utf-8")

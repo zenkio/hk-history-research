@@ -30,36 +30,174 @@ def parse_frontmatter(text):
 
 
 def parse_claims(frontmatter):
-    """Parse the deliberately small, documented YAML subset used for claim records."""
+    """Parse claim records and their nested evidence entries from the documented YAML subset."""
     match = re.search(
-        r"(?ms)^claims:\s*\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:\s*|\Z)",
+        r"(?ms)^claims:[ \t]*\n(.*?)(?=^[A-Za-z_][A-Za-z0-9_-]*:[ \t]*|\Z)",
         frontmatter,
     )
     if not match:
         return []
     block = match.group(1)
-    chunks = re.split(r"(?m)^\s{2}-\s+", block)
+    chunks = re.split(r"(?m)^[ \t]{2}-[ \t]+", block)
     claims = []
+
+    def scalar(key, text):
+        found = re.search(rf"(?m)^[ \t]*{re.escape(key)}:[ \t]*(.*?)[ \t]*$", text)
+        return found.group(1).strip().strip('"').strip("'") if found else ""
+
     for chunk in chunks:
         if not chunk.strip():
             continue
-        def value(key):
-            found = re.search(rf"(?m)^\s*{re.escape(key)}:\s*(.*?)\s*$", chunk)
-            return found.group(1).strip().strip('"').strip("'") if found else ""
+        evidence_match = re.search(
+            r"(?ms)^[ \t]{4}evidence:[ \t]*\n(.*?)(?=^[ \t]{4}[A-Za-z_][A-Za-z0-9_-]*:[ \t]*|\Z)",
+            chunk,
+        )
+        evidence_block = evidence_match.group(1) if evidence_match else ""
+        evidence = []
+        for entry in re.split(r"(?m)^[ \t]{6}-[ \t]+", evidence_block):
+            urls = re.findall(r"https?://[^\s\]>)\"']+", entry)
+            if not urls and not re.search(r"(?m)^[ \t]*relation:", entry):
+                continue
+            evidence.append({
+                "url": urls[0] if urls else "",
+                "relation": scalar("relation", entry).lower(),
+                "passage_status": scalar("passage_status", entry).lower(),
+                "passage": scalar("passage", entry).strip(),
+            })
         claims.append({
-            "id": value("id"),
-            "text": value("text"),
-            "importance": value("importance").lower(),
-            "status": value("status").lower(),
-            "evidence_urls": re.findall(r"https?://[^\s\]>)\"']+", chunk),
-            "passage_status": value("passage_status").lower(),
-            "evidence_relations": [relation.lower() for relation in re.findall(r"(?m)^\s*relation:\s*(.*?)\s*$", chunk)],
-            "passage": value("passage").strip(),
+            "id": scalar("id", chunk),
+            "text": scalar("text", chunk),
+            "importance": scalar("importance", chunk).lower(),
+            "status": scalar("status", chunk).lower(),
+            "evidence": evidence,
+            # Kept as derived fields for diagnostics/backward-compatible callers.
+            "evidence_urls": [item["url"] for item in evidence if item["url"]],
+            "passage_status": scalar("passage_status", chunk).lower(),
+            "evidence_relations": [item["relation"] for item in evidence if item["relation"]],
+            "passage": scalar("passage", chunk).strip(),
         })
     return claims
+def load_structured_records(records_dir):
+    """Load the current claim/evidence state used by the research pipeline; malformed/missing data fails closed."""
+    records_dir = Path(records_dir or PROJECT_ROOT / "research" / "records")
+    loaded = {}
+    errors = []
+    from research_records import validate_record
+    for kind, filename in (("claims", "claims.jsonl"), ("sources", "sources.jsonl"), ("evidence", "evidence.jsonl"), ("judgements", "judgements.jsonl")):
+        path = records_dir / filename
+        if not path.is_file():
+            errors.append(f"structured research records missing: {filename}")
+            loaded[kind] = []
+            continue
+        rows = []
+        for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line.strip():
+                continue
+            try:
+                row = __import__("json").loads(line)
+            except ValueError as exc:
+                errors.append(f"{filename}:{line_no}: invalid JSON ({exc})")
+                continue
+            if isinstance(row, dict):
+                schema_errors = validate_record(row)
+                if schema_errors:
+                    errors.append(f"{filename}:{line_no}: invalid research record: " + "; ".join(schema_errors))
+                else:
+                    rows.append(row)
+            else:
+                errors.append(f"{filename}:{line_no}: record must be a JSON object")
+        loaded[kind] = rows
+
+    # JSON Schema checks shape; these checks enforce the cross-record links that JSON Schema
+    # cannot express. A dangling or mismatched evidence record must not be silently ignored.
+    claim_ids = {row.get("id") for row in loaded["claims"]}
+    source_by_id = {row.get("source_id"): row for row in loaded["sources"]}
+    evidence_ids = {row.get("evidence_id") for row in loaded["evidence"]}
+    for index, row in enumerate(loaded["evidence"], start=1):
+        if row.get("claim_id") not in claim_ids:
+            errors.append(f"evidence.jsonl record {index}: unknown claim_id {row.get('claim_id')}")
+        source = source_by_id.get(row.get("source_id"))
+        if source is None:
+            errors.append(f"evidence.jsonl record {index}: unknown source_id {row.get('source_id')}")
+        elif str(source.get("stable_url") or "").strip() != str(row.get("url") or "").strip():
+            errors.append(f"evidence.jsonl record {index}: evidence URL does not match source stable_url")
+    for index, row in enumerate(loaded["judgements"], start=1):
+        if row.get("claim_id") not in claim_ids:
+            errors.append(f"judgements.jsonl record {index}: unknown claim_id {row.get('claim_id')}")
+        for evidence_id in row.get("evidence_ids", []):
+            if evidence_id not in evidence_ids:
+                errors.append(f"judgements.jsonl record {index}: unknown evidence_id {evidence_id}")
+    return loaded, errors
 
 
-def validate_page(path, text):
+def validate_against_records(claim, records, record_errors):
+    """Require the inline publication claim to agree with the latest structured judgement and evidence."""
+    label = claim["id"] or "claim"
+    errors = [f"{label}: {error}" for error in record_errors]
+    if record_errors:
+        return errors
+    claim_rows = [
+        row for row in records["claims"]
+        if row.get("id") == claim["id"] and row.get("is_current", True)
+    ]
+    if not claim_rows:
+        return [f"{label}: no current structured claim record; AI-only claims cannot be published"]
+    current = claim_rows[-1]
+    status = str(current.get("status", "")).lower()
+    judgements = sorted(
+        (row for row in records["judgements"] if row.get("claim_id") == claim["id"]),
+        key=lambda row: str(row.get("judged_at", "")),
+    )
+    latest_verdict = str(judgements[-1].get("verdict", "")).lower() if judgements else ""
+    sources_by_id = {
+        row.get("source_id"): row for row in records["sources"]
+        if row.get("source_id")
+    }
+    current_evidence = [
+        row for row in records["evidence"]
+        if row.get("claim_id") == claim["id"] and row.get("is_current", True)
+        and row.get("passage_status") == "inspectable"
+        and len(str(row.get("passage") or "").strip()) >= 30
+        and str(row.get("url") or "").strip()
+        and row.get("source_id") in sources_by_id
+        and str(sources_by_id[row.get("source_id")].get("stable_url") or "").strip() == str(row.get("url") or "").strip()
+    ]
+    inline_evidence = [
+        item for item in claim["evidence"]
+        if item["url"]
+        and item["passage_status"] in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}
+        and len(item["passage"].strip().strip(chr(34) + chr(39))) >= 30
+    ]
+    linked_current_evidence = []
+    for inline in inline_evidence:
+        inline_passage = " ".join(inline["passage"].strip().strip(chr(34) + chr(39)).split())
+        for row in current_evidence:
+            if (str(row.get("url") or "").strip() != inline["url"]
+                    or str(row.get("relation", "")).lower() != inline["relation"]):
+                continue
+            record_passage = " ".join(str(row.get("passage") or "").strip().split())
+            if inline_passage in record_passage or record_passage in inline_passage:
+                linked_current_evidence.append(row)
+    if not linked_current_evidence:
+        errors.append(f"{label}: inline evidence URL, relation and passage must match a current structured inspectable evidence record")
+    relations = {str(row.get("relation", "")).lower() for row in current_evidence}
+    linked_relations = {str(row.get("relation", "")).lower() for row in linked_current_evidence}
+    if claim["status"] == "supported":
+        if status != "supported" or latest_verdict != "supported":
+            errors.append(f"{label}: supported publication requires the latest structured claim and judgement to be supported")
+        if "contradicts" in relations:
+            errors.append(f"{label}: current structured contradictory evidence blocks a supported verdict; mark the claim disputed")
+        if "supports" not in relations or "supports" not in linked_relations:
+            errors.append(f"{label}: no current structured inspectable supporting evidence linked to the inline passage")
+    elif claim["status"] == "disputed":
+        if status not in {"partial", "contradicted"} or latest_verdict not in {"partial", "contradicted"}:
+            errors.append(f"{label}: disputed publication requires a current partial/contradicted structured judgement")
+        if "contradicts" not in relations or "contradicts" not in linked_relations:
+            errors.append(f"{label}: disputed publication requires current structured inspectable contradictory evidence linked to the inline passage")
+    return errors
+
+
+def validate_page(path, text, records_dir=None):
     fields, frontmatter = parse_frontmatter(text)
     if fields is None:
         return []
@@ -67,8 +205,12 @@ def validate_page(path, text):
     publication_status = fields.get("publication_status", "").lower()
     verification_status = fields.get("verification_status", "").lower()
     confidence = fields.get("confidence", "").lower()
+    origin = fields.get("origin", "").lower()
     tags = fields.get("tags", "").lower()
+    is_ai_draft = (confidence == "ai-draft" or "ai-draft" in tags or ((origin == "ai" or bool(fields.get("source_feed"))) and verification_status != "verified" and publication_status != "published"))
 
+    if is_ai_draft and not re.search(r"(?im)^>\s*\[!warning\]\s*AI draft\b", text):
+        errors.append("AI-drafted pages must display the explicit AI draft research warning")
     if verification_status == "verified" and publication_status != PUBLISHED_STATUS:
         errors.append("verification_status: verified requires publication_status: published")
 
@@ -83,6 +225,7 @@ def validate_page(path, text):
     claims = parse_claims(frontmatter)
     if not claims:
         errors.append("published pages require claim-level records under frontmatter 'claims:'")
+    records, record_errors = load_structured_records(records_dir)
 
     for index, claim in enumerate(claims, start=1):
         label = claim["id"] or f"claim #{index}"
@@ -94,17 +237,26 @@ def validate_page(path, text):
             errors.append(f"{label}: status must be supported or explicitly disputed")
         if claim["importance"] == "core" and claim["status"] not in CORE_PUBLISHABLE_STATUSES:
             errors.append(f"{label}: core claim is unresolved")
-        if not claim["evidence_urls"]:
+        evidence = claim["evidence"]
+        if not evidence or not any(item["url"] for item in evidence):
             errors.append(f"{label}: claim requires at least one direct evidence URL")
-        if claim["passage_status"] not in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}:
-            errors.append(f"{label}: claim requires inspectable evidence passage; metadata-only sources are not proof")
-        passage = claim["passage"].strip().strip(chr(34) + chr(39))
-        if len(passage) < 30:
-            errors.append(f"{label}: claim requires a non-empty inspectable evidence passage (at least 30 characters)")
-        if claim["status"] == "supported" and "supports" not in claim["evidence_relations"]:
-            errors.append(f"{label}: supported claims require an evidence relation of supports")
-        if claim["status"] == "disputed" and "contradicts" not in claim["evidence_relations"]:
-            errors.append(f"{label}: disputed claims require an evidence relation of contradicts")
+        inspectable = []
+        for item in evidence:
+            passage = item["passage"].strip().strip(chr(34) + chr(39))
+            if (item["url"]
+                    and item["passage_status"] in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}
+                    and len(passage) >= 30):
+                inspectable.append(item)
+        if not inspectable:
+            errors.append(f"{label}: claim requires an inspectable evidence passage tied to its own source URL (at least 30 characters)")
+        relations = {item["relation"] for item in inspectable}
+        if claim["status"] == "supported" and "supports" not in relations:
+            errors.append(f"{label}: supported claims require inspectable evidence with relation supports")
+        if claim["status"] == "supported" and "contradicts" in relations:
+            errors.append(f"{label}: contradictory evidence blocks a supported verdict; mark the claim disputed")
+        if claim["status"] == "disputed" and "contradicts" not in relations:
+            errors.append(f"{label}: disputed claims require inspectable evidence with relation contradicts")
+        errors.extend(validate_against_records(claim, records, record_errors))
 
     if any(claim["status"] == "disputed" for claim in claims) and verification_status != "disputed":
         errors.append("pages with disputed claims must set verification_status: disputed")

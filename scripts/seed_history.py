@@ -534,8 +534,16 @@ def research_worker(pool, events, deadline):
     grades = state.load("evidence")
     import_inbox(events, grades)
     state.save("evidence", grades)
-    n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
-                       save=lambda d: state.save("evidence", d))
+    try:
+        n = evidence_batch(pool, grades, events, deadline, limit=EVIDENCE_PAGES_PER_RUN,
+                           save=lambda d: state.save("evidence", d))
+    except Exception:
+        # Preserve the original research error if refreshing the summary also fails.
+        try:
+            write_status_page(events, grades)
+        except Exception as summary_error:
+            print(f"[research] could not refresh evidence coverage summary: {summary_error}")
+        raise
     write_status_page(events, grades)
     return n
 
@@ -616,9 +624,11 @@ def run(max_calls, minutes, commit=False, failures=None):
                 data, model, _ = pool.generate_json("draft", EVENT_PROMPT.format(
                     name=name, span=span, title=ev["title"], date=ev["date"] or ev["year"],
                     summary=ev["summary"], style=STYLE))
+                # Complete all data-derived bookkeeping before replacing the page. If this step
+                # fails, the previous page stays intact and the task remains retryable.
+                register_entities(plan, ev, data)
                 ev["file"] = write_event_page(ev["era"], ev, data, model)
                 ev["status"] = "done"
-                register_entities(plan, ev, data)
                 print(f"[draft] {ev['file']} ({model})")
             elif kind == "entity":
                 ent = arg
@@ -652,7 +662,9 @@ def run(max_calls, minutes, commit=False, failures=None):
     for t in workers:
         t.join(timeout=max(0, deadline - time.time()) + 180)
         if t.is_alive():
-            print(f"[{t.name}] still running at the deadline; its progress so far is saved")
+            message = "worker did not finish before shutdown deadline; run is incomplete"
+            print(f"[{t.name}] {message}; saved partial progress is retained")
+            failures.append({"stage": t.name, "error": message})
     done += sum(results.values())
     counts = {}
     for e in plan["events"]:

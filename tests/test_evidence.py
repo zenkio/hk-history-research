@@ -39,10 +39,25 @@ def batch(pages, sources, monkeypatch, done=None):
     return done
 
 
+
+def test_legacy_error_marker_is_reopened_for_retry(write_page, monkeypatch):
+    write_page("pending.md", "Example event")
+    monkeypatch.setattr(ev, "evidence_for_page", lambda *args, **kwargs: "B")
+    done = {"pending.md": "error"}
+    result = ev.evidence_batch(
+        Judge(), done, [{"file": "pending.md", "status": "done"}],
+        time.time() + 10, limit=1,
+    )
+    assert result == 1
+    assert done == {"pending.md": "B"}
+
+
 def test_page_with_no_results_while_a_source_is_down_is_not_recorded(write_page, monkeypatch):
-    # PR #18: OpenAlex 429s left 96 of 150 pages marked "none" for good.
+    # A failed retrieval must be visible as a partial failure and remain retryable.
     write_page("p.md", "Plague outbreak")
-    done = batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch)
+    done = {}
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [])], monkeypatch, done)
     assert done == {}
 
 
@@ -66,7 +81,8 @@ def test_failing_source_is_rested_after_three_failures(write_page, monkeypatch):
         fail(q)
     for i in range(5):
         write_page(f"p{i}.md", f"Harbour event {'abcde'[i]}")
-    batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        batch([f"p{i}.md" for i in range(5)], [("OpenAlex", counting_fail), ("National Archives", lambda q: [])], monkeypatch)
     assert len(calls) == ev.SOURCE_FAILS_TO_REST
 
 
@@ -148,7 +164,20 @@ def test_background_reading_is_listed_but_earns_no_grade(write_page, monkeypatch
                                   [("OpenAlex", lambda q: [dict(B_PAPER)])])
     assert done == {"p.md": "none"} and "evidence_grade: none" in text
     assert len(pool.calls) == 1, "one AI call per page"
-    assert "### Background reading (does not count towards the grade)" in text and "Lakos (2009)" in text
+    assert "### Background reading (does not count towards coverage)" in text and "Lakos (2009)" in text
+
+
+
+def test_evidence_section_labels_grade_as_coverage_not_verification(write_page, monkeypatch, timeline):
+    done, text, _ = judge_page(
+        write_page, monkeypatch, timeline,
+        [{"id": "c1", "relation": "supports", "claims": [1], "why": "passage directly supports"}],
+        [("National Archives", lambda q: [dict(A_RECORD)])],
+    )
+    assert done == {"p.md": "A"}
+    assert "Evidence coverage: **A** (not a verification verdict)" in text
+    assert "source coverage, not a verification verdict" in text
+    assert "Evidence grade:" not in text
 
 
 def test_supports_without_a_claim_counts_as_background(write_page, monkeypatch, timeline):
@@ -243,7 +272,7 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
 
 def test_legacy_background_and_support_grades_are_rejudged_once(write_page, timeline):
     state.save("evidence_meta", {"judge_version": 2})
-    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards the grade)\n\n- x\n")
+    write_page("bg.md", "Harbour survey", extra="\n## Evidence\n\n### Background reading (does not count towards coverage)\n\n- x\n")
     write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
     write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
@@ -323,6 +352,53 @@ def test_main_exits_nonzero_after_pipeline_failure(monkeypatch):
     assert exc.value.code == 1
 
 
+
+def test_rejected_evidence_judgement_is_not_marked_done_and_fails_batch(write_page, monkeypatch, timeline):
+    write_page("pending.md", "Example event", 1841)
+
+    def reject(*args, **kwargs):
+        raise ev.RequestRejected("provider rejected the request")
+
+    monkeypatch.setattr(ev, "evidence_for_page", reject)
+    done = {}
+    with pytest.raises(RuntimeError, match="Evidence batch partially failed"):
+        ev.evidence_batch(
+            object(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
+def test_incomplete_evidence_search_remains_pending_and_fails_batch(write_page, monkeypatch, timeline):
+    write_page("pending.md", "Example event", 1841)
+    monkeypatch.setattr(ev, "evidence_for_page", lambda *args, **kwargs: "retry")
+    done = {}
+    with pytest.raises(RuntimeError, match="retrieval was incomplete"):
+        ev.evidence_batch(
+            object(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
+
+def test_malformed_judge_response_fails_instead_of_recording_no_evidence(write_page, monkeypatch):
+    write_page("pending.md", "Example event", 1841)
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+
+    class MalformedJudge:
+        def generate_json(self, *args, **kwargs):
+            return {"kept": []}, "test-model", []
+
+    done = {}
+    with pytest.raises(ValueError, match="Evidence judge returned an invalid response"):
+        ev.evidence_batch(
+            MalformedJudge(), done, [{"file": "pending.md", "status": "done"}],
+            time.time() + 10, limit=1,
+        )
+    assert "pending.md" not in done
+
+
 def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page, monkeypatch, timeline):
     metadata_only = dict(A_RECORD, passage="", passage_status="metadata_only")
     done, text, _ = judge_page(write_page, monkeypatch, timeline,
@@ -330,7 +406,7 @@ def test_metadata_only_candidate_cannot_support_claim_or_raise_grade(write_page,
                                [("National Archives", lambda q: [metadata_only])])
     assert done == {"p.md": "none"}
     assert "evidence_grade: none" in text
-    assert "### Background reading (does not count towards the grade)" in text
+    assert "### Background reading (does not count towards coverage)" in text
     assert "Source passage not inspected" in text
 
 

@@ -32,10 +32,16 @@ def test_public_pipeline_log_never_shows_script_output():
     # This repository is public, so its run logs are too; the pipeline's output names pages, queries
     # and grades. Every script step must send its output to $LOG (saved to the private data repo).
     steps = workflow("ingestion.yml")["jobs"]["pipeline"]["steps"]
-    runs = [s["run"] for s in steps if "python3 scripts/" in s.get("run", "")]
-    assert len(runs) == 4
+    runs = [s["run"] for s in steps
+            if "python3 scripts/" in s.get("run", "") and '>> "$LOG" 2>&1' in s.get("run", "")]
+    assert len(runs) == 5
     for run in runs:
         assert run.rstrip().endswith('>> "$LOG" 2>&1'), run
+    # The failure-state marker may print only generic stage names and the plan filename; it must
+    # never dump the private plan or page-level research details into this public repository's log.
+    marker = next(s for s in steps if s.get("name") == "Record partial-failure state")
+    assert "mark_pipeline_failure.py --outcomes" in marker["run"]
+    assert ">> \"$LOG\"" not in marker["run"]
 
 
 def test_pipeline_is_off_unless_switched_on():

@@ -357,7 +357,10 @@ def test_internet_archive_text_accepts_downloaded_ocr_text(monkeypatch):
         def read(self, limit):
             return ("This is inspected OCR text from the scanned historical publication. " * 12).encode()
 
-    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {"files": [{"name": "sample-book_djvu.txt"}]})
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "files": [{"name": "sample-book_djvu.txt"}],
+        "metadata": {"licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/"},
+    })
     monkeypatch.setattr(ev.urllib.request, "urlopen", lambda req, timeout=20: Response())
     text = ev.internet_archive_text("sample-book")
     assert text and len(text) >= 300
@@ -504,3 +507,15 @@ def test_national_archives_adapter_keeps_lower_camel_case_compatibility(monkeypa
     results = ev.national_archives("Hong Kong administration")
     assert len(results) == 1
     assert results[0]["url"].endswith("/details/r/A456")
+
+
+def test_internet_archive_ocr_is_not_downloaded_without_explicit_open_rights(monkeypatch):
+    def forbidden_download(*args, **kwargs):
+        raise AssertionError("OCR download must not occur without an explicit rights signal")
+
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "files": [{"name": "restricted-book_djvu.txt"}],
+        "metadata": {},
+    })
+    monkeypatch.setattr(ev.urllib.request, "urlopen", forbidden_download)
+    assert ev.internet_archive_text("restricted-book") is None

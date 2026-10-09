@@ -68,14 +68,17 @@ jobs:
       - run: pip install -r requirements.txt --quiet
 
       - name: Fetch new articles
+        id: fetch_sources
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/fetch_sources.py >> "$LOG" 2>&1
 
       - name: Repair summaries and thin pages
+        id: repair
         run: python3 scripts/repair_content.py --commit >> "$LOG" 2>&1
 
       - name: Label legacy AI drafts in private content
+        id: label_drafts
         run: python3 scripts/label_legacy_ai_drafts.py --write --quiet >> "$LOG" 2>&1
 
       - name: Classify and publish
@@ -89,6 +92,7 @@ jobs:
         run: python3 scripts/process_ingestion.py >> "$LOG" 2>&1
 
       - name: Evidence, cross-check, photos and drafting
+        id: seed
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -107,8 +111,24 @@ jobs:
           exit 1
 
       - name: Save the log to the data repository (branch logs)
+        id: save_log
         if: always()
         run: bash scripts/save_log.sh "$LOG"
+
+      # Keep the persisted run status honest too: seed_history can finish successfully even when
+      # an earlier ingestion stage failed. The workflow must not leave last_run.status as success.
+      - name: Record partial-failure state
+        if: failure()
+        env:
+          PIPELINE_OUTCOMES: fetch_sources=${{ steps.fetch_sources.outcome }},repair=${{ steps.repair.outcome }},label_drafts=${{ steps.label_drafts.outcome }},classify=${{ steps.classify.outcome }},seed=${{ steps.seed.outcome }},save_log=${{ steps.save_log.outcome }}
+        run: |
+          python3 scripts/mark_pipeline_failure.py --outcomes "$PIPELINE_OUTCOMES"
+          git add -- scripts/seed_plan.json
+          if ! git diff --cached --quiet; then
+            git commit -m "auto(pipeline): record partial failure"
+            git pull --rebase --autostash origin main
+            git push origin main
+          fi
 
       # Scheduled runs are unreliable here, so the pipeline keeps itself going: a successful run
       # queues the next (the concurrency group makes it wait). Only while switched on; a failed run

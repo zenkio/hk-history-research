@@ -296,8 +296,7 @@ def write_page(path, meta, body_lines):
         "Treat it as a starting outline and verify claims before relying on them.",
         "",
     ]
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines + body_lines).rstrip() + "\n")
+    state.atomic_write(path, "\n".join(lines + body_lines).rstrip() + "\n")
 
 
 def tag_list(tags):

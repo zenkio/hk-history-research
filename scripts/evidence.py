@@ -200,8 +200,7 @@ def gather_claim_candidates(queries):
 # ---- sources -----------------------------------------------------------
 
 def openalex(query, year=None):
-    params = {"search": f"{query} Hong Kong", "per-page": str(PER_SOURCE),
-              "select": "id,doi,title,publication_year,type,authorships,primary_location,abstract_inverted_index"}
+    params = {"search": f"{query} Hong Kong", "per-page": str(PER_SOURCE), "select": "id,doi,title,publication_year,type,authorships,primary_location,abstract_inverted_index"}
     # Since Feb 2026 OpenAlex allows only 100 credits a day without a key (a search costs 10),
     # and 100,000 with a free key from openalex.org/settings/api.
     key = (os.environ.get("OPENALEX_API_KEY") or "").strip()

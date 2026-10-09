@@ -39,6 +39,7 @@
         "source_id": { "type": "string", "pattern": "^source:[a-z0-9][a-z0-9._-]*$" },
         "title": { "type": "string", "minLength": 1 },
         "institution": { "type": ["string", "null"] },
+        "event_ids": { "type": "array", "items": { "type": "string", "pattern": "^event:[a-z0-9][a-z0-9._-]*$" }, "uniqueItems": true },
         "source_type": { "enum": ["government_record", "archive_record", "contemporary_publication", "academic_work", "institutional_collection", "specialist_collection", "community_source", "reference", "other"] },
         "authority_level": { "enum": ["primary", "scholarly", "institutional", "specialist", "discovery_only", "unknown"] },
         "coverage": { "type": ["string", "null"] },

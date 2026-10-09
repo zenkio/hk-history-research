@@ -93,6 +93,21 @@ def build_records(content_root, now=None, limit=None):
         page_claims = extract_claim_bullets(text)
         if not page_claims:
             pages_without_claims.append(path.relative_to(content_root).as_posix())
+            relative_page = path.relative_to(content_root.parent).as_posix()
+            era_slug = path.relative_to(content_root).parts[0] if len(path.relative_to(content_root).parts) > 1 else ""
+            priority = "core" if era_slug >= "05-opium-war" else "deferred"
+            task = {
+                "record_type": "claim_extraction_task",
+                "schema_version": 1,
+                "task_id": "task:claim-extraction-" + event_id.removeprefix("event:"),
+                "event_id": event_id,
+                "source_page": relative_page,
+                "status": "queued",
+                "priority": priority,
+                "reason": "No explicit Claims to verify section; claim extraction is required before claim-level verification.",
+                "created_at": timestamp,
+            }
+            claim_extraction_queue.append(require_valid_record(task))
         for index, claim_text in enumerate(page_claims, start=1):
             record = {
                 "record_type": "claim",
@@ -145,6 +160,7 @@ def build_records(content_root, now=None, limit=None):
         "pages_without_explicit_claims": pages_without_claims,
         "claims": claims,
         "sources": [unique_sources[key] for key in sorted(unique_sources)],
+        "claim_extraction_queue": claim_extraction_queue,
     }
 
 
@@ -174,6 +190,7 @@ def main(argv=None):
     print(f"Explicit claims extracted: {len(result['claims'])}")
     print(f"Source candidates retained: {len(result['sources'])}")
     print(f"Pages with no explicit Claims to verify section: {len(result['pages_without_explicit_claims'])}")
+    print(f"Claim-extraction tasks queued: {len(result['claim_extraction_queue'])}")
     if result["pages_without_explicit_claims"]:
         print("Those pages remain unmigrated for claim extraction; no claims were invented.")
     if not args.write:
@@ -181,6 +198,7 @@ def main(argv=None):
         return 0
     write_jsonl(args.output_dir / "claims.jsonl", result["claims"])
     write_jsonl(args.output_dir / "sources.jsonl", result["sources"])
+    write_jsonl(args.output_dir / "claim-extraction-queue.jsonl", result["claim_extraction_queue"])
     print(f"Wrote records to {args.output_dir}")
     return 0
 

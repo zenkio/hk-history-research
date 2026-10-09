@@ -17,3 +17,18 @@ def test_prompt_version_change_reopens_previous_evidence_judgements():
     assert evidence.JUDGE_VERSION == 7
     assert evidence._to_rejudge(6, "A", page, "06-early-colony/example.md")
     assert evidence._to_rejudge(6, "none", page, "06-early-colony/example.md")
+
+
+def test_missing_or_unknown_passage_status_cannot_support_a_claim():
+    candidate = {
+        "id": "c1",
+        "title": "Apparently relevant record",
+        "note": "Metadata description",
+        "passage": "This text exists but its inspection status was never recorded.",
+    }
+    result = evidence.judged(
+        {"relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "text seems relevant"}]},
+        [candidate],
+    )
+    assert result[0]["relation"] == "background"
+    assert "Source passage not inspected" in result[0]["why"]

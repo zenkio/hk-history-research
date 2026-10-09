@@ -123,7 +123,7 @@ def test_contradictory_evidence_blocks_a_supported_claim(tmp_path):
     page = tmp_path / "event.md"
     content = published_page().replace(
         "relation: supports",
-        "relation: supports\\n        relation: contradicts",
+        "relation: supports\n        relation: contradicts",
     )
     errors = gate.validate_page(page, content)
     assert any("contradictory evidence blocks a supported verdict" in error for error in errors)

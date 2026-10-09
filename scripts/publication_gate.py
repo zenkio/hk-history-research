@@ -159,8 +159,12 @@ def validate_page(path, text, records_dir=None):
     publication_status = fields.get("publication_status", "").lower()
     verification_status = fields.get("verification_status", "").lower()
     confidence = fields.get("confidence", "").lower()
+    origin = fields.get("origin", "").lower()
     tags = fields.get("tags", "").lower()
+    is_ai_draft = confidence == "ai-draft" or origin == "ai" or "ai-draft" in tags
 
+    if is_ai_draft and not re.search(r"(?im)^>\\s*\\[!warning\\]\\s*AI draft\\b", text):
+        errors.append("AI-drafted pages must display the explicit AI draft research warning")
     if verification_status == "verified" and publication_status != PUBLISHED_STATUS:
         errors.append("verification_status: verified requires publication_status: published")
 

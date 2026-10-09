@@ -95,7 +95,7 @@ def build_records(content_root, now=None, limit=None):
             pages_without_claims.append(path.relative_to(content_root).as_posix())
             relative_page = path.relative_to(content_root.parent).as_posix()
             era_slug = path.relative_to(content_root).parts[0] if len(path.relative_to(content_root).parts) > 1 else ""
-            priority = "core" if era_slug >= "05-opium-war" else "deferred"
+            priority = "core" if era_slug >= "05-opium-war" or re.search(r"(?:18[4-9]\\d|19\\d{2}|20\\d{2})", path.stem) else "deferred"
             task = {
                 "record_type": "claim_extraction_task",
                 "schema_version": 1,

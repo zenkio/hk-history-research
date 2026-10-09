@@ -179,7 +179,7 @@ def internet_archive_text(identifier, max_chars=5000):
             raw = response.read(100_001)
         text = raw.decode("utf-8", errors="replace")
         text = re.sub(r"<[^>]+>", " ", text)
-        text = re.sub(r"\\s+", " ", text).strip()
+        text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 300 or re.search(r"(?i)<!doctype html|<html|access denied|item not available", text[:1000]):
             return None
         return text[:max_chars]

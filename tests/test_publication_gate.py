@@ -208,6 +208,20 @@ Historical narrative without a warning.
     assert any("must display the explicit AI draft research warning" in error for error in errors)
 
 
+
+def test_legacy_ingestion_page_requires_ai_draft_warning(tmp_path):
+    page = tmp_path / "legacy-ingestion.md"
+    content = """---
+title: "Imported history"
+source_feed: "test-feed"
+confidence: medium
+---
+AI-generated narrative with no draft warning.
+"""
+    errors = gate.validate_page(page, content)
+    assert any("must display the explicit AI draft research warning" in error for error in errors)
+
+
 def test_published_page_requires_claim_records_and_evidence_section(tmp_path):
     page = tmp_path / "event.md"
     content = """---

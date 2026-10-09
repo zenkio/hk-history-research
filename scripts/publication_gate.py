@@ -210,6 +210,12 @@ def validate_against_records(claim, records, record_errors):
 def validate_page(path, text, records_dir=None):
     fields, frontmatter = parse_frontmatter(text)
     if fields is None:
+        # A broken frontmatter delimiter must not hide an explicit publication claim.
+        if re.search(
+            r"(?im)^(?:publication_status\\s*:\\s*published|verification_status\\s*:\\s*verified)\\s*$",
+            text,
+        ):
+            return ["published/verified marker present but frontmatter is missing or malformed"]
         return []
     errors = []
     publication_status = fields.get("publication_status", "").lower()

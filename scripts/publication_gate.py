@@ -142,23 +142,38 @@ def validate_against_records(claim, records, record_errors):
         and row.get("source_id") in sources_by_id
         and str(sources_by_id[row.get("source_id")].get("stable_url") or "").strip() == str(row.get("url") or "").strip()
     ]
-    inline_urls = {item["url"] for item in claim["evidence"] if item["url"]}
-    record_urls = {str(row.get("url") or "").strip() for row in current_evidence}
-    if not inline_urls.intersection(record_urls):
-        errors.append(f"{label}: inline evidence must link to a current structured inspectable evidence record")
+    inline_evidence = [
+        item for item in claim["evidence"]
+        if item["url"]
+        and item["passage_status"] in {"inspectable", "inspectable_text", "inspectable_abstract", "inspectable_record"}
+        and len(item["passage"].strip().strip(chr(34) + chr(39))) >= 30
+    ]
+    linked_current_evidence = []
+    for inline in inline_evidence:
+        inline_passage = " ".join(inline["passage"].strip().strip(chr(34) + chr(39)).split())
+        for row in current_evidence:
+            if (str(row.get("url") or "").strip() != inline["url"]
+                    or str(row.get("relation", "")).lower() != inline["relation"]):
+                continue
+            record_passage = " ".join(str(row.get("passage") or "").strip().split())
+            if inline_passage in record_passage or record_passage in inline_passage:
+                linked_current_evidence.append(row)
+    if not linked_current_evidence:
+        errors.append(f"{label}: inline evidence URL, relation and passage must match a current structured inspectable evidence record")
     relations = {str(row.get("relation", "")).lower() for row in current_evidence}
+    linked_relations = {str(row.get("relation", "")).lower() for row in linked_current_evidence}
     if claim["status"] == "supported":
         if status != "supported" or latest_verdict != "supported":
             errors.append(f"{label}: supported publication requires the latest structured claim and judgement to be supported")
         if "contradicts" in relations:
             errors.append(f"{label}: current structured contradictory evidence blocks a supported verdict; mark the claim disputed")
-        if "supports" not in relations:
-            errors.append(f"{label}: no current structured inspectable supporting evidence")
+        if "supports" not in relations or "supports" not in linked_relations:
+            errors.append(f"{label}: no current structured inspectable supporting evidence linked to the inline passage")
     elif claim["status"] == "disputed":
         if status not in {"partial", "contradicted"} or latest_verdict not in {"partial", "contradicted"}:
             errors.append(f"{label}: disputed publication requires a current partial/contradicted structured judgement")
-        if "contradicts" not in relations:
-            errors.append(f"{label}: disputed publication requires current structured inspectable contradictory evidence")
+        if "contradicts" not in relations or "contradicts" not in linked_relations:
+            errors.append(f"{label}: disputed publication requires current structured inspectable contradictory evidence linked to the inline passage")
     return errors
 
 

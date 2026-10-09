@@ -35,5 +35,5 @@ def test_job_timeout_leaves_time_for_seed_failure_cleanup():
     workflow = WORKFLOW.read_text(encoding="utf-8")
     job = workflow.index("jobs:")
     seed = workflow.index("- name: Evidence, cross-check, photos and drafting")
-    assert "timeout-minutes: 95" in workflow[job:seed]
+    assert "timeout-minutes: 110" in workflow[job:seed]
     assert "timeout-minutes: 50" in workflow[seed:]

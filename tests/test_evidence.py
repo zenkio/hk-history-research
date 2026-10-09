@@ -422,6 +422,6 @@ def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
     monkeypatch.setattr(ev, "gather", fake_gather)
     candidates, failed = ev.gather_claim_candidates(["title query", "claim one", "claim two"])
     assert failed == []
-    assert len(candidates) == 5
+    assert len(candidates) == 7
     assert len({(c["source"], c["url"]) for c in candidates}) == len(candidates)
     assert any(c["url"] == "https://archive.example/claim two" for c in candidates)

@@ -29,7 +29,7 @@ import random
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 
 from gemini_pool import QuotaExhausted, RequestRejected
 import jev
@@ -37,6 +37,7 @@ from state import PAGE_LOCK, atomic_write
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMELINE_DIR = os.path.join(PROJECT_ROOT, "content", "01_Timeline")
+RESEARCH_RECORDS_DIR = os.path.join(PROJECT_ROOT, "research", "records")
 USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 PRIMARY_BEFORE = 1950   # printed before this year counts as a primary/contemporary publication
 PER_SOURCE = 6
@@ -59,30 +60,28 @@ Claims made on the page:
 Candidate sources found by search (id, type, year, title, note, inspectable passage):
 {candidates}
 
-A title, catalogue description or search snippet is not the same as reading the source. The passage
-field is usable text inspected from the source itself (for scholarship, an abstract is acceptable for
-claims it directly states). If passage_status is metadata_only or passage is empty, it cannot support
-or contradict a factual claim: at most classify it as background or exclude it, and say the source
-still needs inspection.
+Use the passage field as the deciding evidence whenever it contains inspected source text or an academic abstract.
+The title and note may identify the source, but they are metadata and must NOT be used to infer historical facts
+or to support/contradict a claim when the passage does not establish that fact.
 
-Keep a candidate ONLY if it is about THIS event: the same event, place and period. A work on
-the general subject is not evidence for a specific event (a study of Chinese ancestor worship is
-not evidence for one Hong Kong ancestral hall; a history of the Qing collapse is not evidence for
-what happened in Hong Kong in 1911). When unsure, leave it out.
+If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
+the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
+Never infer the contents of an archive record from its catalogue description or title.
 
-Claim 1 is the event itself. An archive record or contemporary publication whose title or note
-shows it documents this event, or a scholarly work specifically about this event, supports claim 1
-(and any other claim its title or note bears on). A work that only mentions the event in passing is
-background.
+For each candidate, compare the actual passage with the numbered claims. Record only claims that the
+passage directly addresses, and state what the passage establishes. If the passage is ambiguous or only
+partly supports a claim, explain the limitation rather than overstating the evidence.
 
-For each kept candidate, judging only from its title and note:
-- "relation": "supports" if it bears directly on one or more numbered claims and agrees with them;
-  "contradicts" if it bears on a claim and disagrees (e.g. a different date, place or outcome);
-  "background" if it is about this event but does not bear on any specific claim.
-- "claims": the claim numbers it bears on (empty for background).
-- "why": one sentence naming what in the title or note bears on the claim. Say no more than the
-  title and note show.
+Claim 1 is the event itself. It is supported only when the inspected passage directly documents this event
+or establishes that it happened; a matching title or catalogue entry alone is not enough.
 
+For each kept candidate:
+- "relation": "supports" if the passage directly supports one or more numbered claims;
+  "contradicts" if the passage directly conflicts with a claim; "background" if it is relevant but
+  does not establish or conflict with a specific claim.
+- "claims": the claim numbers directly addressed by the passage (empty for background).
+- "why": one short sentence describing the passage itself and the limit of what it proves.
+If no passage directly bears on a claim, do not label it supports or contradicts.
 Respond with ONLY this JSON:
 {{"relevant": [{{"id": "c3", "relation": "supports", "claims": [1, 2], "why": "One short sentence"}}],
   "missing": "One sentence on what evidence is still needed, or empty"}}"""
@@ -117,11 +116,91 @@ def keywords(title):
     return " ".join(words[:8])
 
 
+def frontmatter_aliases(text):
+    """Read explicitly declared Chinese titles and aliases without guessing alternate names."""
+    match = re.match(r"\A---\s*\n(.*?)\n---", text, re.S)
+    if not match:
+        return []
+    frontmatter = match.group(1)
+    aliases = []
+    for key in ("title_zh", "aliases", "historical_names", "alternative_names"):
+        field = re.search(rf"(?m)^{key}:\s*(.*?)\s*$", frontmatter)
+        if not field:
+            continue
+        value = field.group(1).strip()
+        if value.startswith("[") and value.endswith("]"):
+            values = re.findall(r"""['"]([^'"]+)['"]""", value)
+            if not values:
+                values = [item.strip().strip("'\" ") for item in value[1:-1].split(",")]
+        else:
+            values = [value.strip("'\" ")]
+        for item in values:
+            if item and item not in aliases:
+                aliases.append(item)
+    return aliases
+
+
+def claim_search_queries(title, claims, aliases=()):
+    """Build one title query plus a distinct query for every explicit claim."""
+    queries = []
+    for text in [title, *aliases, *claims]:
+        query = keywords(text)
+        if query and query.casefold() not in {q.casefold() for q in queries}:
+            queries.append(query)
+    return queries
+
+
+def reserve_openalex_search():
+    """Reserve one anonymous OpenAlex search from its documented 10-search daily allowance."""
+    if (os.environ.get("OPENALEX_API_KEY") or "").strip():
+        return True
+    import state
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    budget = state.load("source_budget")
+    if budget.get("date") != today:
+        budget = {"date": today, "openalex_searches": 0}
+    if int(budget.get("openalex_searches", 0)) >= 10:
+        return False
+    budget["openalex_searches"] = int(budget.get("openalex_searches", 0)) + 1
+    state.save("source_budget", budget)
+    return True
+
+
+def gather_claim_candidates(queries):
+    """Search each query, deduplicate URLs, and bound the prompt size per source."""
+    combined, seen, successful_sources, queried_sources = [], set(), set(), set()
+    max_per_source = 12
+    has_openalex_key = bool((os.environ.get("OPENALEX_API_KEY") or "").strip())
+    use_openalex = reserve_openalex_search()
+    for query_index, query in enumerate(queries):
+        # OpenAlex's anonymous allowance is only 10 searches/day. Search it once per page
+        # without a key; claim-specific queries still run against the archive adapter(s).
+        selected_sources = SOURCES
+        if (query_index > 0 or not use_openalex) and not has_openalex_key:
+            selected_sources = [(name, fn) for name, fn in SOURCES if name != "OpenAlex"]
+        queried_sources.update(name for name, _ in selected_sources)
+        candidates, failed = gather(query, sources=selected_sources)
+        successful_sources.update(name for name, _ in selected_sources if name not in failed)
+        per_query_counts = {}
+        for candidate in candidates:
+            source = candidate.get("source", "")
+            url = candidate.get("url") or candidate.get("doi") or candidate.get("title")
+            key = (source, str(url).casefold())
+            if not url or key in seen or per_query_counts.get(source, 0) >= max(1, max_per_source // max(1, len(queries))):
+                continue
+            if sum(1 for item in combined if item.get("source") == source) >= max_per_source:
+                continue
+            seen.add(key)
+            combined.append(candidate)
+            per_query_counts[source] = per_query_counts.get(source, 0) + 1
+    failed = [name for name in queried_sources if name not in successful_sources]
+    return combined, failed
+
+
 # ---- sources -----------------------------------------------------------
 
 def openalex(query, year=None):
-    params = {"search": f"{query} Hong Kong", "per-page": str(PER_SOURCE),
-              "select": "id,doi,title,publication_year,type,authorships,primary_location,abstract_inverted_index"}
+    params = {"search": f"{query} Hong Kong", "per-page": str(PER_SOURCE), "select": "id,doi,title,publication_year,type,authorships,primary_location,abstract_inverted_index"}
     # Since Feb 2026 OpenAlex allows only 100 credits a day without a key (a search costs 10),
     # and 100,000 with a free key from openalex.org/settings/api.
     key = (os.environ.get("OPENALEX_API_KEY") or "").strip()
@@ -141,9 +220,10 @@ def openalex(query, year=None):
         url = w.get("doi") or w.get("id")
         out.append({"kind": "scholarship", "grade": "B", "year": w.get("publication_year"),
                     "title": w["title"], "url": url,
+                    "catalogue_reference": w.get("doi") or w.get("id"),
                     "cite": f"{authors} ({w.get('publication_year')}). *{w['title']}*." + (f" {venue}." if venue else ""),
                     "note": abstract or venue,
-                    "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only"})
+                    "passage": abstract, "passage_status": "inspectable_abstract" if abstract else "metadata_only", "locator": "Abstract (OpenAlex work record)"})
     return out
 
 
@@ -152,22 +232,54 @@ def national_archives(query):
               "sps.heldByCode": "TNA"}
     data = _get_json("https://discovery.nationalarchives.gov.uk/API/search/records?" + urllib.parse.urlencode(params),
                      accept_json=True)
+    # Discovery's documented JSON examples use PascalCase, while older responses/mocks
+    # have appeared lower-camel. Accept both rather than silently returning zero records.
+    records = data.get("records") or data.get("Records") or []
     out = []
-    for r in data.get("records", []):
-        ref, desc = r.get("reference", ""), re.sub(r"<[^>]+>", "", r.get("description") or r.get("title") or "")
-        if not ref:
+    for record in records:
+        ref = record.get("reference") or record.get("Reference") or record.get("CitableReference") or ""
+        desc = (record.get("description") or record.get("Description") or
+                record.get("title") or record.get("Title") or record.get("Content") or "")
+        desc = re.sub(r"<[^>]+>", "", str(desc))
+        covering_dates = record.get("coveringDates") or record.get("CoveringDates") or ""
+        identifier = record.get("id") or record.get("Id")
+        if not ref or not identifier:
             continue
-        out.append({"kind": "archive record", "grade": "A", "year": r.get("coveringDates", ""),
-                    "title": f"{ref}: {desc[:160]}", "url": f"https://discovery.nationalarchives.gov.uk/details/r/{r.get('id')}",
-                    "cite": f"The National Archives (UK), {ref}, {r.get('coveringDates', '')}. {desc[:200]}",
-                    "note": desc[:300], "passage": "", "passage_status": "metadata_only"})
+        out.append({"kind": "archive record", "grade": "A", "year": covering_dates,
+                    "title": f"{ref}: {desc[:160]}",
+                    "url": f"https://discovery.nationalarchives.gov.uk/details/r/{identifier}",
+                    "cite": f"The National Archives (UK), {ref}, {covering_dates}. {desc[:200]}",
+                    "catalogue_reference": ref,
+                    "note": desc[:300], "passage": "", "passage_status": "metadata_only", "locator": f"National Archives catalogue record {ref}"})
     return out
 
+def internet_archive_ai_processing_allowed(metadata):
+    """Default-deny OCR processing unless item metadata explicitly marks it public domain/CC0."""
+    values = []
+    for container in (metadata.get("metadata") or {}, metadata):
+        if not isinstance(container, dict):
+            continue
+        for key in ("licenseurl", "license", "rights", "rightsstatement"):
+            value = container.get(key)
+            if isinstance(value, list):
+                values.extend(value)
+            elif value:
+                values.append(value)
+    normalized = " ".join(str(value).casefold() for value in values if value)
+    return (
+        "creativecommons.org/publicdomain/mark" in normalized
+        or "creativecommons.org/publicdomain/zero" in normalized
+        or ("public domain" in normalized
+            and "not public domain" not in normalized
+            and "not in the public domain" not in normalized)
+    )
 
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""
     try:
         metadata = _get_json(f"https://archive.org/metadata/{urllib.parse.quote(identifier, safe='')}")
+        if not internet_archive_ai_processing_allowed(metadata):
+            return None  # no explicit public-domain/CC0 rights signal: metadata-only discovery
         files = metadata.get("files") or []
         names = [item.get("name", "") for item in files if item.get("name")]
         # Internet Archive's usual OCR output. Do not treat item descriptions or PDFs as text.
@@ -181,7 +293,7 @@ def internet_archive_text(identifier, max_chars=5000):
             raw = response.read(100_001)
         text = raw.decode("utf-8", errors="replace")
         text = re.sub(r"<[^>]+>", " ", text)
-        text = re.sub(r"\\s+", " ", text).strip()
+        text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 300 or re.search(r"(?i)<!doctype html|<html|access denied|item not available", text[:1000]):
             return None
         return text[:max_chars]
@@ -202,15 +314,17 @@ def internet_archive(query):
         desc = " ".join(desc) if isinstance(desc, list) else (desc or "")
         identifier = d.get("identifier", "")
         passage = internet_archive_text(identifier) if identifier else None
-        out.append({"kind": "contemporary publication", "grade": "A", "year": d.get("year"),
+        out.append({"kind": "digitised publication", "grade": "B", "year": d.get("year"),
                     "title": d.get("title", identifier), "url": f"https://archive.org/details/{identifier}",
+                    "catalogue_reference": identifier,
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
-                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only"})
+                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only", "locator": f"Internet Archive OCR text for {identifier}"})
     return out
 
 
-SOURCES = [("OpenAlex", openalex), ("National Archives", national_archives), ("Internet Archive", internet_archive)]
+# Prefer primary/official and contemporary sources before scholarly discovery metadata.
+SOURCES = [("National Archives", national_archives), ("Internet Archive", internet_archive), ("OpenAlex", openalex)]
 
 
 # ---- page handling -----------------------------------------------------
@@ -220,7 +334,8 @@ def read_page(path):
         text = f.read()
     fm = text.split("---", 2)[1] if text.startswith("---") else ""
     get = lambda k: (re.search(rf'^{k}: *"?(.*?)"?$', fm, re.M) or [None, ""])[1]
-    claims = re.findall(r"^- \[ \] (.+)$", text, re.M)
+    claim_section = re.search(r"(?ms)^## Claims to verify\s*\n(.*?)(?=^## |\Z)", text)
+    claims = re.findall(r"^- (?:\[\s*\]|❔)\s+(.+)$", claim_section.group(1), re.M) if claim_section else []
     claims += [c for c in re.findall(r"^- [✅❌❔] \*\*\w+\*\*: (.+?)\.(?: |$)", text, re.M)]
     return text, get("title"), get("date") or get("year"), claims
 
@@ -290,19 +405,18 @@ def _write_evidence_unlocked(path, grade, lines, contradicts=False):
     if contradicts:  # a source disagrees with the draft: a lead for the myths and disputes hub
         tag += ', "evidence-contradicts"'
     text = re.sub(r"^tags: \[", f"tags: [{tag}, ", text, count=1, flags=re.M)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(text)
+    atomic_write(path, text)
 
 
 SOURCE_FAILS_TO_REST = 3  # consecutive failures before a source is skipped for the rest of the run
 _source_fails = {}
 
 
-def gather(query):
+def gather(query, sources=None):
     """Candidates from every source. A source that fails is skipped, not fatal; one that keeps
     failing is rested for the rest of the run (and still reported as failed for each page)."""
     found, failed = [], []
-    for name, fn in SOURCES:
+    for name, fn in (SOURCES if sources is None else sources):
         if _source_fails.get(name, 0) >= SOURCE_FAILS_TO_REST:
             failed.append(name)
             continue
@@ -331,18 +445,17 @@ def search_summary(query, candidates, failed, kept):
 
 
 def event_claims(title, date, claims):
-    """The page's claims, led by the event itself. Without it an archive file named after the event
-    could only be background (the judge found no detailed claim its title confirms), and a page with
-    no claims list could never earn a grade."""
-    return [f"{title} took place in Hong Kong ({date})"] + list(claims)
-
+    """Lead with the event/date claim without assuming every event happened in Hong Kong."""
+    event_claim = f"{title} occurred in {date}." if date else f"{title} occurred."
+    return [event_claim] + list(claims)
 
 def evidence_for_page(pool, path):
     """Returns the grade written; None if nothing could be searched (stop this run); "retry" if a
     source failed and nothing was found, so the page is not wrongly recorded as searched."""
     text, title, date, claims = read_page(path)
-    query = keywords(title)
-    candidates, failed = gather(query)
+    queries = claim_search_queries(title, claims, frontmatter_aliases(text))
+    candidates, failed = gather_claim_candidates(queries)
+    query = "; ".join(queries)
     if len(failed) == len(SOURCES):
         return None
     if failed and "\n## Evidence\n" in text:
@@ -352,6 +465,12 @@ def evidence_for_page(pool, path):
     if not candidates:
         print(search_summary(query, candidates, failed, None))
         grade, lines = evidence_block([], "", "search")
+        from research_record_store import persist_page_judgement
+        persisted = persist_page_judgement(
+            path, TIMELINE_DIR, title, date, claims, [], None, JUDGE_VERSION,
+            records_dir=RESEARCH_RECORDS_DIR,
+        )
+        print(f"[evidence] structured records: {persisted}")
         write_evidence(path, grade, lines)
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
@@ -381,6 +500,12 @@ def evidence_for_page(pool, path):
         })
         state.save("evidence_meta", meta)
         print(f"[evidence] {os.path.basename(path)}: grade changed {before} -> {grade}; change recorded")
+    from research_record_store import persist_page_judgement
+    persisted = persist_page_judgement(
+        path, TIMELINE_DIR, title, date, claims, kept, model, JUDGE_VERSION,
+        records_dir=RESEARCH_RECORDS_DIR,
+    )
+    print(f"[evidence] structured records: {persisted}")
     write_evidence(path, grade, lines, contradicts=any(c.get("relation") == "contradicts" for c in kept))
     return grade
 
@@ -413,7 +538,8 @@ def judged(data, candidates):
         c["why"] = r.get("why", "")
         relation = str(r.get("relation", "")).lower()
         # Fail closed: only an inspected passage may support or contradict a claim.
-        has_passage = bool(str(c.get("passage", "")).strip()) and c.get("passage_status") != "metadata_only"
+        has_passage = (bool(str(c.get("passage", "")).strip()) and
+                       c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"})
         c["relation"] = relation if relation in RELATIONS and c["claims"] and has_passage else "background"
         if relation in RELATIONS and not has_passage:
             c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
@@ -665,7 +791,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 6  # 6: only inspectable source passages may support or contradict claims
+JUDGE_VERSION = 8  # 8: neutral event/date claim; no implicit Hong Kong location assertion
+# 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
 # 4: Jev's tip-offs and the judge's second look (owner, 2026-10-02), on the core eras
@@ -680,6 +807,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
+    if version < 8 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # prior judge version used metadata-led instructions or the implicit Hong Kong location claim
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

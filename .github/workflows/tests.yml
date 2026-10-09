@@ -54,3 +54,7 @@ jobs:
 
       - name: Run tests
         run: python -m pytest tests -q
+
+      # Read the real private corpus but never write migrated records in CI.
+      - name: Preview claim-record migration against private corpus
+        run: python3 scripts/migrate_claim_records.py

@@ -19,6 +19,9 @@ claims:
     status: {claim_status}
     evidence:
       - https://example.org/archive-record
+        relation: supports
+        passage_status: inspectable
+        passage: "The contemporary archive record explicitly describes the event and its date in the official register."
 ---
 
 ## Evidence
@@ -89,3 +92,40 @@ No claim records.
     errors = gate.validate_page(page, content)
     assert any("claim-level records" in error for error in errors)
     assert any("Evidence section" in error for error in errors)
+
+
+def test_metadata_only_source_cannot_support_publication(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace("passage_status: inspectable", "passage_status: metadata_only")
+    errors = gate.validate_page(page, content)
+    assert any("requires inspectable evidence passage" in error for error in errors)
+
+
+def test_short_placeholder_passage_cannot_support_publication(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace(
+        "The contemporary archive record explicitly describes the event and its date in the official register.",
+        "Source says event happened.",
+    )
+    errors = gate.validate_page(page, content)
+    assert any("at least 30 characters" in error for error in errors)
+
+
+def test_support_status_cannot_be_backed_only_by_contradictory_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace("relation: supports", "relation: contradicts")
+    errors = gate.validate_page(page, content)
+    assert any("supported claims require an evidence relation of supports" in error for error in errors)
+
+
+def test_disputed_claim_requires_contradictory_evidence(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page(claim_status="disputed", verification_status="disputed")
+    errors = gate.validate_page(page, content)
+    assert any("disputed claims require an evidence relation of contradicts" in error for error in errors)
+
+
+def test_engine_inspectable_record_status_can_pass_gate(tmp_path):
+    page = tmp_path / "event.md"
+    content = published_page().replace("passage_status: inspectable", "passage_status: inspectable_record")
+    assert gate.validate_page(page, content) == []

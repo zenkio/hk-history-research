@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Two repositories.** This one (`zenkio/hk-history-research`, **public**) holds only code: `scripts/`, `tests/`, `quartz/`, site config and workflows. The content, research, evidence state, `BACKLOG.md` and `PRODUCT.md` live in **`zenkio/hk-history-data` (private)**. Never copy content, research notes, state files or pipeline output into this repository, its issues, PR text or workflow logs.
 
-**Read `BACKLOG.md` first** (in hk-history-data), and `PRODUCT.md` for what we are building, how it runs and how it may earn money. `BACKLOG.md` is the single source of truth for scope (1841 to today first), priorities (verification before new content), the burning list and the decisions log. Put new ideas in its Inbox; don't start them unprompted. Deep Research hand-offs live in `research/` (prompts to give the owner, results in `research/inbox/`).
+**Read `BACKLOG.md` first** (in hk-history-data), and `PRODUCT.md` for what we are building, how it runs and how it may earn money. The canonical verification implementation plan is `HISTORY_VERIFICATION_UPGRADE_PLAN.md` at the root of `hk-history-data`; do not keep a duplicate plan in this public code repository. `BACKLOG.md` is the single source of truth for scope (1841 to today first), priorities (verification before new content), the burning list and the decisions log. Put new ideas in its Inbox; don't start them unprompted. Deep Research hand-offs live in `research/` (prompts to give the owner, results in `research/inbox/`).
 
 ## Project Purpose
 

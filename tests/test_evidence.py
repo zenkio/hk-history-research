@@ -25,9 +25,10 @@ def fail(q):
 
 
 @pytest.fixture(autouse=True)
-def fresh_sources(monkeypatch):
+def fresh_sources(monkeypatch, tmp_path):
     monkeypatch.setattr(ev, "_source_fails", {})
     monkeypatch.setattr(ev, "AUDIT_SHARE", 0)  # the audit test turns it on
+    monkeypatch.setattr(ev, "RESEARCH_RECORDS_DIR", str(tmp_path / "research-records"))
 
 
 def batch(pages, sources, monkeypatch, done=None):
@@ -102,13 +103,13 @@ def test_log_shows_what_each_source_returned_and_what_the_ai_kept(write_page, mo
     batch(["p.md"], [("OpenAlex", fail), ("National Archives", lambda q: [dict(A_RECORD)]),
                      ("Internet Archive", lambda q: [])], monkeypatch)
     out = capsys.readouterr().out
-    assert '"Treaty": OpenAlex failed, National Archives 1, Internet Archive 0; AI kept 1' in out
+    assert '"Treaty; claim about event": OpenAlex failed, National Archives 1, Internet Archive 0; AI kept 1' in out
 
 
 def test_log_line_for_a_search_that_found_nothing(write_page, monkeypatch, capsys):
     write_page("p.md", "Plague outbreak")
     batch(["p.md"], [("OpenAlex", lambda q: []), ("National Archives", lambda q: [])], monkeypatch)
-    assert '"Plague": OpenAlex 0, National Archives 0; nothing to judge' in capsys.readouterr().out
+    assert '"Plague; claim about event": OpenAlex 0, National Archives 0; nothing to judge' in capsys.readouterr().out
 
 
 # --- stricter judging (2026-09-28 audit: general-topic works were graded as evidence) ---------
@@ -235,7 +236,7 @@ def test_the_event_itself_is_claim_1_so_a_record_of_it_can_grade_the_page(write_
     pool = PromptJudge([{"id": "c1", "relation": "supports", "claims": [1], "why": "file on the treaty"}])
     done = {}
     ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
-    assert "1. Signing of the Treaty took place in Hong Kong (1900)" in pool.prompt
+    assert "1. Signing of the Treaty occurred in 1900." in pool.prompt
     assert "no explicit claims" not in pool.prompt
     assert done == {"p.md": "A"}
 
@@ -246,8 +247,8 @@ def test_legacy_background_and_support_grades_are_rejudged_once(write_page, time
     write_page("empty.md", "Plague", extra="\n## Evidence\n\nnothing relevant found yet\n")
     write_page("graded.md", "Treaty", extra="\n## Evidence\n\n### Background reading\n\n- x\n")
     done = {"bg.md": "none", "empty.md": "none", "graded.md": "B"}
-    assert ev.reopen_for_rejudge(done) == 2
-    assert done == {"empty.md": "none"}
+    assert ev.reopen_for_rejudge(done) == 3
+    assert done == {}
     done["bg.md"] = "none"
     done["graded.md"] = "B"
     assert ev.reopen_for_rejudge(done) == 0  # only once per JUDGE_VERSION
@@ -357,7 +358,10 @@ def test_internet_archive_text_accepts_downloaded_ocr_text(monkeypatch):
         def read(self, limit):
             return ("This is inspected OCR text from the scanned historical publication. " * 12).encode()
 
-    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {"files": [{"name": "sample-book_djvu.txt"}]})
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "files": [{"name": "sample-book_djvu.txt"}],
+        "metadata": {"licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/"},
+    })
     monkeypatch.setattr(ev.urllib.request, "urlopen", lambda req, timeout=20: Response())
     text = ev.internet_archive_text("sample-book")
     assert text and len(text) >= 300
@@ -374,6 +378,172 @@ def test_internet_archive_search_marks_only_downloaded_text_as_inspectable(monke
     monkeypatch.setattr(ev, "internet_archive_text", lambda identifier: "Readable source passage " * 20 if identifier == "with-ocr" else None)
     results = ev.internet_archive("Hong Kong report")
     assert results[0]["passage_status"] == "inspectable_text"
+    assert results[0]["kind"] == "digitised publication"
+    assert results[0]["grade"] == "B"
     assert results[0]["passage"]
     assert results[1]["passage_status"] == "metadata_only"
     assert results[1]["passage"] == ""
+
+
+def test_failed_atomic_evidence_write_preserves_previous_page(tmp_path, monkeypatch):
+    page = tmp_path / "event.md"
+    original = "---\ntitle: Example\nconfidence: ai-draft\n---\n\nOriginal body.\n"
+    page.write_text(original, encoding="utf-8")
+
+    def fail_write(*args, **kwargs):
+        raise OSError("simulated disk write failure")
+
+    monkeypatch.setattr(ev, "atomic_write", fail_write)
+    try:
+        ev.write_evidence(str(page), "A", ["## Evidence", "New evidence"])
+    except OSError:
+        pass
+    else:
+        raise AssertionError("simulated write failure should propagate")
+
+    assert page.read_text(encoding="utf-8") == original
+
+
+def test_claim_search_queries_include_each_distinct_claim():
+    queries = ev.claim_search_queries(
+        "Treaty signing",
+        ["Treaty signed in 1842", "Elliot issued a proclamation", "Treaty signing"],
+    )
+    assert queries[0] == "Treaty"
+    assert any("1842" in query for query in queries)
+    assert any("Elliot" in query for query in queries)
+    assert len(queries) == 3
+
+
+def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
+    monkeypatch.setattr(ev, "reserve_openalex_search", lambda: True)
+    monkeypatch.setattr(ev, "SOURCES", [("Archive", lambda q: []), ("Scholarship", lambda q: [])])
+
+    def fake_gather(query, sources=None):
+        return [
+            {"source": "Archive", "url": f"https://archive.example/{query}", "title": query},
+            {"source": "Archive", "url": "https://archive.example/shared", "title": "shared"},
+            {"source": "Scholarship", "url": f"https://scholar.example/{query}", "title": query},
+        ], []
+
+    monkeypatch.setattr(ev, "gather", fake_gather)
+    candidates, failed = ev.gather_claim_candidates(["title query", "claim one", "claim two"])
+    assert failed == []
+    assert len(candidates) == 7
+    assert len({(c["source"], c["url"]) for c in candidates}) == len(candidates)
+    assert any(c["url"] == "https://archive.example/claim two" for c in candidates)
+
+
+def test_claim_search_uses_openalex_only_once_without_api_key(monkeypatch):
+    monkeypatch.setattr(ev, "reserve_openalex_search", lambda: True)
+    monkeypatch.delenv("OPENALEX_API_KEY", raising=False)
+    monkeypatch.setattr(ev, "SOURCES", [("OpenAlex", lambda q: []), ("Archive", lambda q: [])])
+    calls = []
+
+    def fake_gather(query, sources=None):
+        calls.append((query, [name for name, _ in sources]))
+        return [], []
+
+    monkeypatch.setattr(ev, "gather", fake_gather)
+    ev.gather_claim_candidates(["event title", "first claim", "second claim"])
+    assert "OpenAlex" in calls[0][1]
+    assert all("OpenAlex" not in source_names for _, source_names in calls[1:])
+
+
+def test_read_page_extracts_current_question_mark_claim_bullets(tmp_path):
+    page = tmp_path / "event.md"
+    page.write_text(
+        '---\ntitle: "Test event"\nyear: 1841\n---\n'
+        '## Claims to verify\n'
+        '- ❔ The treaty was signed in 1841.\n'
+        '- [ ] Elliot issued the proclamation.\n'
+        '## Wikipedia cross-check\n'
+        '- ✅ **agrees with Wikipedia**: a different reference claim.\n',
+        encoding="utf-8",
+    )
+    _, title, date, claims = ev.read_page(str(page))
+    assert title == "Test event"
+    assert date == "1841"
+    assert claims[:2] == [
+        "The treaty was signed in 1841.",
+        "Elliot issued the proclamation.",
+    ]
+
+
+def test_anonymous_openalex_budget_is_capped_at_ten_searches_per_utc_day(tmp_path, monkeypatch):
+    import state
+    monkeypatch.delenv("OPENALEX_API_KEY", raising=False)
+    monkeypatch.setattr(state, "STATE_DIR", str(tmp_path))
+    assert all(ev.reserve_openalex_search() for _ in range(10))
+    assert not ev.reserve_openalex_search()
+    budget = state.load("source_budget")
+    assert budget["openalex_searches"] == 10
+
+
+def test_national_archives_adapter_accepts_documented_pascal_case_response(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "Records": [{
+            "Id": "A123",
+            "Reference": "CO 129/1",
+            "Title": "Hong Kong administrative dispatch",
+            "Description": "Catalogue description only.",
+            "CoveringDates": "1841-1842",
+        }]
+    })
+    results = ev.national_archives("Hong Kong administration")
+    assert len(results) == 1
+    assert results[0]["url"].endswith("/details/r/A123")
+    assert results[0]["catalogue_reference"] == "CO 129/1"
+    assert results[0]["year"] == "1841-1842"
+    assert results[0]["passage_status"] == "metadata_only"
+    assert results[0]["passage"] == ""
+
+
+def test_national_archives_adapter_keeps_lower_camel_case_compatibility(monkeypatch):
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "records": [{
+            "id": "A456",
+            "reference": "CO 129/2",
+            "title": "Another archive entry",
+            "coveringDates": "1842",
+        }]
+    })
+    results = ev.national_archives("Hong Kong administration")
+    assert len(results) == 1
+    assert results[0]["url"].endswith("/details/r/A456")
+
+
+def test_internet_archive_ocr_is_not_downloaded_without_explicit_open_rights(monkeypatch):
+    def forbidden_download(*args, **kwargs):
+        raise AssertionError("OCR download must not occur without an explicit rights signal")
+
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: {
+        "files": [{"name": "restricted-book_djvu.txt"}],
+        "metadata": {},
+    })
+    monkeypatch.setattr(ev.urllib.request, "urlopen", forbidden_download)
+    assert ev.internet_archive_text("restricted-book") is None
+
+
+def test_internet_archive_rights_gate_rejects_explicit_non_public_domain_text():
+    assert not ev.internet_archive_ai_processing_allowed({
+        "metadata": {"rights": "This item is not in the public domain."}
+    })
+    assert ev.internet_archive_ai_processing_allowed({
+        "metadata": {"rights": "Public domain"}
+    })
+
+
+def test_frontmatter_declared_chinese_title_and_aliases_join_claim_search():
+    page = (
+        '---\ntitle: "Treaty signing"\n'
+        'title_zh: "條約簽署"\n'
+        'aliases: ["Treaty of Nanking", "Nanking Treaty"]\n'
+        '---\n'
+    )
+    aliases = ev.frontmatter_aliases(page)
+    assert aliases == ["條約簽署", "Treaty of Nanking", "Nanking Treaty"]
+    queries = ev.claim_search_queries("Treaty signing", ["The treaty was signed in 1842."], aliases)
+    assert "條約簽署" in queries
+    assert any("Treaty" in query and "Nanking" in query for query in queries)
+    assert "Nanking Treaty" in queries

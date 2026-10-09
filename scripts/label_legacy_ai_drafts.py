@@ -35,11 +35,11 @@ def needs_warning(meta):
     verification = meta.get("verification_status", "").lower()
     publication = meta.get("publication_status", "").lower()
     tags = meta.get("tags", "").lower()
-    if confidence == "ai-draft" or origin == "ai" or "ai-draft" in tags:
+    if confidence == "ai-draft" or "ai-draft" in tags:
         return True
     # Legacy feed-ingested pages used confidence=high/medium/low without stating that
     # the narrative itself was AI-written. Do not downgrade pages explicitly verified/published.
-    return bool(meta.get("source_feed")) and verification != "verified" and publication != "published"
+    return (origin == "ai" or bool(meta.get("source_feed"))) and verification != "verified" and publication != "published"
 
 
 def label_page(text):

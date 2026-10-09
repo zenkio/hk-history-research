@@ -258,7 +258,7 @@ def read_page(path):
         text = f.read()
     fm = text.split("---", 2)[1] if text.startswith("---") else ""
     get = lambda k: (re.search(rf'^{k}: *"?(.*?)"?$', fm, re.M) or [None, ""])[1]
-    claims = re.findall(r"^- \[ \] (.+)$", text, re.M)
+    claims = re.findall(r"^- (?:\[\s*\]|❔)\s+(.+)$", text, re.M)
     claims += [c for c in re.findall(r"^- [✅❌❔] \*\*\w+\*\*: (.+?)\.(?: |$)", text, re.M)]
     return text, get("title"), get("date") or get("year"), claims
 

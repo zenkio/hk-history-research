@@ -412,7 +412,7 @@ def test_claim_search_queries_include_each_distinct_claim():
 def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
     monkeypatch.setattr(ev, "SOURCES", [("Archive", lambda q: []), ("Scholarship", lambda q: [])])
 
-    def fake_gather(query):
+    def fake_gather(query, sources=None):
         return [
             {"source": "Archive", "url": f"https://archive.example/{query}", "title": query},
             {"source": "Archive", "url": "https://archive.example/shared", "title": "shared"},

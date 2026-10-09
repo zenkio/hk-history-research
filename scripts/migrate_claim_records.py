@@ -143,7 +143,7 @@ def build_records(content_root, now=None, limit=None):
                 "source_type": "other",
                 "authority_level": "discovery_only",
                 "coverage": None,
-                "language": "en",
+                "language": "und",
                 "stable_url": url,
                 "catalogue_reference": None,
                 "retrieval_method": "imported",

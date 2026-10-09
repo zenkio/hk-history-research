@@ -109,7 +109,7 @@ def build_records(content_root, now=None, limit=None):
             }
             claim_extraction_queue.append(require_valid_record(task))
         for claim_text in page_claims:
-            normalized_claim = re.sub(r"\\s+", " ", claim_text).strip().casefold()
+            normalized_claim = re.sub(r"\s+", " ", claim_text).strip().casefold()
             claim_digest = hashlib.sha256(normalized_claim.encode("utf-8")).hexdigest()[:10]
             claim_id = f"claim:{event_id.removeprefix('event:')}-{claim_digest}"
             record = {

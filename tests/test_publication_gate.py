@@ -82,6 +82,13 @@ def test_structured_unverified_claim_cannot_be_published_as_supported(tmp_path):
     assert any("latest structured claim and judgement to be supported" in error for error in errors)
 
 
+
+def test_published_claim_without_structured_records_fails_closed(tmp_path):
+    page = tmp_path / "event.md"
+    errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
+    assert any("structured research records missing" in error for error in errors)
+
+
 def test_ai_draft_cannot_be_published_even_with_evidence_grade(tmp_path):
     page = tmp_path / "event.md"
     errors = gate.validate_page(page, published_page(confidence="ai-draft"))

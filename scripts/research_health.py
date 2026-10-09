@@ -48,9 +48,9 @@ def build_report(records_dir, stale_days=30, now=None):
         if not path.exists():
             missing.append(filename)
 
-    claims = loaded["claims"]
+    claims = [row for row in loaded["claims"] if row.get("is_current", True)]
     sources = loaded["sources"]
-    evidence = loaded["evidence"]
+    evidence = [row for row in loaded["evidence"] if row.get("is_current", True)]
     judgements = loaded["judgements"]
     queue = loaded["queue"]
     evidence_by_claim = {}

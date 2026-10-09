@@ -94,8 +94,8 @@ def test_fabricated_inline_passage_cannot_replace_the_structured_passage(tmp_pat
 def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     page = tmp_path / "event.md"
     write_structured_records(tmp_path)
-    evidence_path = tmp_path / "evidence.jsonl"
-    with evidence_path.open("a", encoding="utf-8") as stream:
+    source_path = tmp_path / "sources.jsonl"
+    with source_path.open("a", encoding="utf-8") as stream:
         stream.write(json.dumps({
             "record_type": "source", "schema_version": 1,
             "source_id": "source:contradiction", "title": "Contradictory archive record",
@@ -107,6 +107,8 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
             "publication_date": "1842", "discovered_at": "2026-10-09T00:00:00Z",
             "rights_notes": "Test fixture.",
         }) + chr(10))
+    evidence_path = tmp_path / "evidence.jsonl"
+    with evidence_path.open("a", encoding="utf-8") as stream:
         stream.write(json.dumps({
             "record_type": "evidence", "schema_version": 1,
             "claim_id": "claim:example-date", "evidence_id": "evidence:contradiction",
@@ -120,7 +122,6 @@ def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
         }) + chr(10))
     errors = gate.validate_page(page, published_page(), records_dir=tmp_path)
     assert any("current structured contradictory evidence blocks a supported verdict" in error for error in errors)
-
 
 def test_structured_unverified_claim_cannot_be_published_as_supported(tmp_path):
     page = tmp_path / "event.md"

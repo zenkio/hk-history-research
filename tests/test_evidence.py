@@ -396,3 +396,32 @@ def test_failed_atomic_evidence_write_preserves_previous_page(tmp_path, monkeypa
         raise AssertionError("simulated write failure should propagate")
 
     assert page.read_text(encoding="utf-8") == original
+
+
+def test_claim_search_queries_include_each_distinct_claim():
+    queries = ev.claim_search_queries(
+        "Treaty signing",
+        ["Treaty signed in 1842", "Elliot issued a proclamation", "Treaty signing"],
+    )
+    assert queries[0] == "Treaty signing"
+    assert any("1842" in query for query in queries)
+    assert any("Elliot" in query and "proclamation" in query for query in queries)
+    assert len(queries) == 3
+
+
+def test_claim_candidate_search_deduplicates_and_limits_results(monkeypatch):
+    monkeypatch.setattr(ev, "SOURCES", [("Archive", lambda q: []), ("Scholarship", lambda q: [])])
+
+    def fake_gather(query):
+        return [
+            {"source": "Archive", "url": f"https://archive.example/{query}", "title": query},
+            {"source": "Archive", "url": "https://archive.example/shared", "title": "shared"},
+            {"source": "Scholarship", "url": f"https://scholar.example/{query}", "title": query},
+        ], []
+
+    monkeypatch.setattr(ev, "gather", fake_gather)
+    candidates, failed = ev.gather_claim_candidates(["title query", "claim one", "claim two"])
+    assert failed == []
+    assert len(candidates) == 5
+    assert len({(c["source"], c["url"]) for c in candidates}) == len(candidates)
+    assert any(c["url"] == "https://archive.example/claim two" for c in candidates)

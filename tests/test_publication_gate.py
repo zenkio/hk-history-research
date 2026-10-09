@@ -79,6 +79,18 @@ def test_valid_claim_level_page_can_be_published(tmp_path):
 
 
 
+
+def test_fabricated_inline_passage_cannot_replace_the_structured_passage(tmp_path):
+    page = tmp_path / "event.md"
+    write_structured_records(tmp_path)
+    content = published_page().replace(
+        "The contemporary archive record explicitly describes the event and its date in the official register.",
+        "This fabricated passage is long enough to pass a length-only check but is not the stored excerpt.",
+    )
+    errors = gate.validate_page(page, content, records_dir=tmp_path)
+    assert any("URL, relation and passage must match a current structured inspectable evidence record" in error for error in errors)
+
+
 def test_current_structured_contradiction_blocks_page_that_omits_it(tmp_path):
     page = tmp_path / "event.md"
     write_structured_records(tmp_path)

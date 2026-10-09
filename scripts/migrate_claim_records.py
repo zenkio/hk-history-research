@@ -52,7 +52,7 @@ def extract_claim_bullets(text):
             continue
         claim = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", bullet.group(1))
         claim = re.sub(r"[*_~]", "", claim).strip()
-        claim = re.sub(r"^(?:❔|\\[[ xX]\\])\\s*", "", claim).strip()
+        claim = re.sub(r"^(?:❔|\[[ xX]\])\s*", "", claim).strip()
         if claim and claim not in claims:
             claims.append(claim)
     return claims

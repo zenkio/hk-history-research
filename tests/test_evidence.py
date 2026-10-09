@@ -378,6 +378,8 @@ def test_internet_archive_search_marks_only_downloaded_text_as_inspectable(monke
     monkeypatch.setattr(ev, "internet_archive_text", lambda identifier: "Readable source passage " * 20 if identifier == "with-ocr" else None)
     results = ev.internet_archive("Hong Kong report")
     assert results[0]["passage_status"] == "inspectable_text"
+    assert results[0]["kind"] == "digitised publication"
+    assert results[0]["grade"] == "B"
     assert results[0]["passage"]
     assert results[1]["passage_status"] == "metadata_only"
     assert results[1]["passage"] == ""

@@ -1070,3 +1070,17 @@ def test_judge_prompt_distinguishes_occupation_from_treaty_cession():
     assert "military landing/occupation, treaty cession" in pool.prompt
     assert "does not by itself contradict an earlier occupation date" in pool.prompt
     assert "Hong Kong became a British possession at the end of the Opium War" in pool.prompt
+
+
+def test_legislation_source_is_searched_only_for_first_page_query(monkeypatch):
+    legislation_queries = []
+    monkeypatch.setattr(ev, "SOURCES", [
+        ("Legislation.gov.uk", lambda q: legislation_queries.append(q) or []),
+        ("Other source", lambda q: []),
+    ])
+    monkeypatch.setattr(ev, "reserve_openalex_search", lambda: True)
+    monkeypatch.setenv("OPENALEX_API_KEY", "test-key")
+    candidates, failed = ev.gather_claim_candidates(["British Nationality Act 1990", "citizenship registration"])
+    assert candidates == []
+    assert failed == []
+    assert legislation_queries == ["British Nationality Act 1990"]

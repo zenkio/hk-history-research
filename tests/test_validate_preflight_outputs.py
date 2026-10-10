@@ -20,7 +20,7 @@ def valid_record(page):
             "source_page": f"content/01_Timeline/{page}",
             "source_excerpt": "A grounded historical claim.",
             "model": "test-model",
-            "prompt_version": 2,
+            "prompt_version": 3,
         },
     }
 
@@ -81,3 +81,17 @@ def test_manifest_fails_closed_for_missing_pages_and_never_approves_publication(
     assert manifest["acceptance"]["bulk_extraction_approved"] is False
     assert manifest["acceptance"]["publication_approved"] is False
     assert manifest["acceptance"]["live_records_modified"] is False
+
+
+
+def test_validator_rejects_claims_over_35_words(tmp_path):
+    page = EXPECTED["mpf"]
+    record = valid_record(page)
+    record["text"] = " ".join(["word"] * 36)
+    output = tmp_path / "mpf.jsonl"
+    output.write_text(json.dumps(record) + "\n", encoding="utf-8")
+
+    result = validate_file(output, page)
+
+    assert result["status"] == "failed"
+    assert result["reason"] == "claim_too_long"

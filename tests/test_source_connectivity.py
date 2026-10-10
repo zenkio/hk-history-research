@@ -247,3 +247,35 @@ def test_tna_detail_probe_only_accepts_official_https_host():
     )
 
 
+
+
+def test_detail_probe_reports_shape_for_non_success_html_without_following_assets(monkeypatch):
+    class Response:
+        status = 202
+        headers = {"Content-Type": "text/html"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b'<html><a href="/record.pdf">record</a></html>'
+
+    class Opener:
+        def open(self, request, timeout=15):
+            return Response()
+
+    monkeypatch.setattr(probe.urllib.request, "build_opener", lambda *args: Opener())
+    detail = probe.probe_record_detail(
+        "https://discovery.nationalarchives.gov.uk/details/r/123",
+        "discovery.nationalarchives.gov.uk",
+    )
+    assert "detail HTTP 202" in detail
+    assert "anchor links=1" in detail
+    assert "file-like/asset links=1 (types=pdf:1)" in detail
+    assert "non-success HTTP response" in detail
+    assert "no files fetched" in detail
+
+

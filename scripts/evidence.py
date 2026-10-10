@@ -61,12 +61,14 @@ Page: {title} ({date})
 Claims made on the page:
 {claims}
 
-Candidate sources found by search (id, type, year, title, note, inspectable passage):
+Candidate sources found by search (id, type, year, institution, authority level, title, note, inspectable passage):
 {candidates}
 
 Use the passage field as the deciding evidence whenever it contains inspected source text or an academic abstract.
-The title and note may identify the source, but they are metadata and must NOT be used to infer historical facts
-or to support/contradict a claim when the passage does not establish that fact.
+The title, note, institution and authority level are metadata, not historical evidence. Do NOT use them to infer facts
+or to support/contradict a claim when the passage does not establish that fact. Authority is a provenance signal,
+not a verdict: a high-authority source still needs a claim-specific passage, and conflicting inspectable passages
+must remain visible rather than being silently resolved by source rank.
 
 If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
 the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
@@ -575,7 +577,9 @@ def judge(pool, title, date, claims, candidates):
     for i, c in enumerate(candidates, 1):
         c["id"] = f"c{i}"
     listing = "\n".join(
-        f"{c['id']} | {c['kind']} | {c['year']} | {c['title'][:150]} | note: {c['note'][:180]} "
+        f"{c['id']} | {c['kind']} | year: {c['year']} | institution: {c.get('institution', '')} "
+        f"| authority_level: {c.get('authority_level', '')} | source_type: {c.get('source_type', '')} "
+        f"| title: {c['title'][:150]} | note: {c['note'][:180]} "
         f"| passage_status: {c.get('passage_status', 'metadata_only')} "
         f"| passage: {c.get('passage', '')[:1200]}"
         for c in candidates)

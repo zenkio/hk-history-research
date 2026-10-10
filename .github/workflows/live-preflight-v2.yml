@@ -33,7 +33,7 @@ jobs:
           cache-dependency-path: _code/requirements.txt
 
       - name: Install dependencies
-        run: pip install -r _code/requirements.txt --quiet
+        run: pip install -r _code/requirements.txt pytest --quiet
 
       - name: Run focused preflight unit tests
         run: |

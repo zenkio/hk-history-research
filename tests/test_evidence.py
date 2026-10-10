@@ -660,11 +660,13 @@ def test_gather_routes_registered_sources_through_registry_and_keeps_provenance(
         coverage="Test coverage",
         stable_url="https://example.org/",
         retrieval_method="api",
+        rights_policy="item_rights_gate",
         search=lambda query: [{
             "title": "Test record",
             "url": "https://example.org/record",
             "passage": "The inspected record directly describes this example event.",
             "passage_status": "inspectable_record",
+            "rights_status": "public_domain_or_cc0",
         }],
     )
     registry = SourceRegistry([adapter])

@@ -51,7 +51,7 @@ def parse_page(text):
                 claim = re.sub(r"^(?:❔|\[[ xX]\])\s*", "", claim).strip()
                 if claim and claim not in claims:
                     claims.append(claim)
-    return title, date, body, claims
+    return title, date, narrative_prose(body), claims
 
 
 def run_extraction(page_path, pool, timeline_root=DEFAULT_TIMELINE_ROOT, created_at=None):

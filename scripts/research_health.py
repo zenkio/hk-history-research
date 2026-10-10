@@ -8,7 +8,10 @@ from pathlib import Path
 
 from research_records import validate_record
 
-DEFAULT_RECORDS_DIR = Path(__file__).resolve().parent.parent / "research" / "records"
+DEFAULT_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_RECORDS_DIR = DEFAULT_PROJECT_ROOT / "research" / "records"
+DEFAULT_EVIDENCE_STATE = Path(__file__).resolve().parent / "state" / "evidence.json"
+DEFAULT_TIMELINE_DIR = DEFAULT_PROJECT_ROOT / "content" / "01_Timeline"
 FILES = {
     "claims": "claims.jsonl",
     "sources": "sources.jsonl",
@@ -38,7 +41,32 @@ def read_jsonl(path, label):
     return records, errors
 
 
-def build_report(records_dir, stale_days=30, now=None):
+
+
+def _page_key_from_source_page(source_page):
+    if not isinstance(source_page, str) or not source_page.strip():
+        return None
+    normalized = source_page.replace("\\", "/").lstrip("/")
+    if "01_Timeline/" in normalized:
+        return normalized.split("01_Timeline/", 1)[1]
+    if normalized.startswith("content/"):
+        normalized = normalized[len("content/"):]
+    if normalized.startswith("01_Timeline/"):
+        normalized = normalized[len("01_Timeline/"):]
+    return normalized or None
+
+
+def _load_evidence_state(path):
+    path = Path(path)
+    if not path.exists():
+        return None
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    return value if isinstance(value, dict) else None
+
+def build_report(records_dir, stale_days=30, now=None, evidence_state_path=DEFAULT_EVIDENCE_STATE, content_root=DEFAULT_TIMELINE_DIR):
     records_dir = Path(records_dir)
     loaded, errors, missing = {}, [], []
     for key, filename in FILES.items():
@@ -86,8 +114,37 @@ def build_report(records_dir, stale_days=30, now=None):
         )
     ]
     missing_judgement = [c["id"] for c in claims if not judgements_by_claim.get(c["id"])]
+    evidence_state = _load_evidence_state(evidence_state_path)
+    claims_without_search_state = None
+    claims_without_source_page = None
+    pages_without_search_state = None
+    timeline_pages_total = None
+    evidence_state_pages = None
+    if evidence_state is not None:
+        searched_pages = {str(key).replace("\\", "/") for key in evidence_state}
+        claim_page_keys = [_page_key_from_source_page(
+            claim.get("provenance", {}).get("source_page") if isinstance(claim.get("provenance"), dict) else None
+        ) for claim in claims]
+        claims_without_source_page = sum(1 for key in claim_page_keys if not key)
+        claims_without_search_state = sum(1 for key in claim_page_keys if not key or key not in searched_pages)
+        evidence_state_pages = len(searched_pages)
+        timeline_root = Path(content_root)
+        if timeline_root.is_dir():
+            page_paths = [path for path in timeline_root.rglob("*.md")
+                          if not any(part.startswith(".") for part in path.relative_to(timeline_root).parts)]
+            timeline_pages_total = len(page_paths)
+            pages_without_search_state = sum(
+                1 for path in page_paths
+                if path.relative_to(timeline_root).as_posix() not in searched_pages
+            )
     report = {
         "records_dir": str(records_dir),
+        "claims_without_search_state": claims_without_search_state,
+        "claims_without_source_page": claims_without_source_page,
+        "pages_without_search_state": pages_without_search_state,
+        "timeline_pages_total": timeline_pages_total,
+        "evidence_state_pages": evidence_state_pages,
+        "evidence_state_missing": evidence_state is None,
         "claims_total": len(claims),
         "claim_status_counts": dict(Counter(c["status"] for c in claims)),
         "core_claims_unresolved": sum(
@@ -122,6 +179,12 @@ def print_report(report):
         ("queued_claim_extraction_tasks", "Queued claim-extraction tasks"),
     ]:
         print(f"{label}: {report[key]}")
+    if report["evidence_state_missing"]:
+        print("Claims without search state: unavailable (evidence state file missing or invalid)")
+    else:
+        print(f"Claims without search state: {report['claims_without_search_state']}")
+        print(f"Claims without source page: {report['claims_without_source_page']}")
+        print(f"Timeline pages without search state: {report['pages_without_search_state']} of {report['timeline_pages_total']}")
     if report["missing_files"]:
         print("Missing record files: " + ", ".join(report["missing_files"]))
     for error in report["validation_errors"]:

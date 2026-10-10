@@ -3,6 +3,7 @@ name: One-off evidence-first extraction pilot v7
 # Intentionally limited to this temporary experiment branch. Outputs contain excerpts from
 # private draft pages, so they are committed only to a private data-repository experiment branch.
 # Do not merge this workflow into main.
+# Required-anchor checks measure coverage against the current AI draft, not historical truth.
 on:
   push:
     branches:

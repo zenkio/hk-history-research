@@ -15,6 +15,12 @@ USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
     {
+        "name": "Hong Kong Government Records Service catalogue", "required": False,
+        "url": "https://search.grs.gov.hk/en/search.xhtml?q=Hong%20Kong",
+        "format": "html",
+        "shape": "Search Results",
+    },
+    {
         "name": "HKU Digital Repository OAI-PMH", "required": False,
         "url": "https://digitalrepository.lib.hku.hk/oai2?verb=Identify",
         "format": "xml",
@@ -50,6 +56,9 @@ def inspect_response(probe, status, content_type, body):
         if probe["format"] == "xml":
             root = ET.fromstring(body)
             ok = probe["shape"] in root.tag
+        elif probe["format"] == "html":
+            page = body.decode("utf-8", errors="replace").casefold()
+            ok = "<html" in page and probe["shape"].casefold() in page
         else:
             data = json.loads(body.decode("utf-8"))
             if probe["shape"] == "list":
@@ -66,7 +75,7 @@ def inspect_response(probe, status, content_type, body):
 def probe(probe_spec, timeout=15):
     request = urllib.request.Request(
         probe_spec["url"],
-        headers={"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/xml"},
+        headers={"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/xml, text/html"},
     )
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:

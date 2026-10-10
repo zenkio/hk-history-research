@@ -157,3 +157,23 @@ def test_extraction_over_limit_fails_instead_of_silently_dropping_claims():
     }
     with pytest.raises(ValueError, match="Refusing to truncate"):
         validate_atomic_claims(response, "Claim one. Claim two.", max_claims=1)
+
+
+def test_claims_cannot_add_unanchored_dates_or_quantities():
+    with pytest.raises(ValueError, match="no claims grounded"):
+        validate_atomic_claims({
+            "claims": [{
+                "text": "The government rejected the scheme in 1987.",
+                "source_excerpt": "The government considered the scheme.",
+            }]
+        }, "The government considered the scheme.")
+
+
+def test_claims_cannot_reverse_polarity_relative_to_their_excerpt():
+    with pytest.raises(ValueError, match="no claims grounded"):
+        validate_atomic_claims({
+            "claims": [{
+                "text": "The scheme was not established.",
+                "source_excerpt": "The scheme was established.",
+            }]
+        }, "The scheme was established.")

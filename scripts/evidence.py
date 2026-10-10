@@ -998,8 +998,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    if version < 10 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
-        return True  # version 10: short passages fail closed; partial and authority rules apply
+    if version < 11 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # version 11: exact-date precision and event-stage distinctions apply
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

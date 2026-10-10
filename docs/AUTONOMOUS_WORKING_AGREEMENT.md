@@ -45,9 +45,10 @@ This policy applies to work in both `zenkio/hk-history-research` (public code) a
 
 ## Response and context budget
 
-- Default to a compact status: **Done / CI / Next / Blocked**; usually 3–6 bullets and under 120 words.
-- State only material changes and decisions. Link PRs/commits instead of narrating implementation details; give test details only when failed, surprising, or decision-relevant.
-- Do not repeat the user's request, recap established context, restate the backlog, or provide a plan when you can execute the work.
-- Ask only necessary owner questions, bundle them, and keep working on independent tasks.
+- Default to **Done / CI / Next / Blocked**, usually 2–4 bullets and under 60 words.
+- Report only material changes, CI result, next action, and genuine blockers. Link PRs/commits instead of narrating implementation details.
+- Do not paste logs, list every file changed, repeat the user's request, recap established context, restate the backlog, or give a plan instead of executing it.
+- Include detailed test output only for failures, surprising results, or a decision the owner must make.
+- Ask only necessary owner questions; bundle them concisely and continue independent work.
 - Keep durable technical details in repository notes/checkpoints, not in chat. In chat, include the exact next task and any owner action needed.
 - Be concise and factual. Do not claim a check, merge, deployment, or publication succeeded unless verified. If blocked, state the cause, completed work, and resume point.

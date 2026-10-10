@@ -892,11 +892,26 @@ def test_exact_number_not_established_by_approximate_passage_is_partial(write_pa
 
 
 
-def test_judge_version_9_reopens_old_pages_for_partial_and_authority_rules(write_page, timeline):
-    state.save("evidence_meta", {"judge_version": 8})
-    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 8.\n")
+def test_judge_version_10_reopens_old_pages_for_short_passage_rules(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 9})
+    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 9.\n")
     done = {"old.md": "B"}
-    assert ev.JUDGE_VERSION == 9
+    assert ev.JUDGE_VERSION == 10
     assert ev.reopen_for_rejudge(done) == 1
     assert done == {}
-    assert state.load("evidence_meta")["judge_version"] == 9
+    assert state.load("evidence_meta")["judge_version"] == 10
+
+
+
+def test_short_inspectable_fragment_cannot_support_or_partially_support_claim():
+    candidate = dict(A_RECORD, id="c1", passage="1841", passage_status="inspectable_text")
+    for relation in ("supports", "contradicts", "partial"):
+        kept = ev.judged({
+            "relevant": [{"id": "c1", "relation": relation, "claims": [1], "why": "The date appears in the fragment."}]
+        }, [candidate], claim_count=1)
+        assert kept[0]["relation"] == "background"
+        assert "too short" in kept[0]["why"]
+
+
+def test_judge_prompt_rejects_contextless_fragments():
+    assert "fewer than 30 characters" in ev.JUDGE_PROMPT

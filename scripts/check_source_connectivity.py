@@ -18,10 +18,22 @@ USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
     {
-        "name": "Hong Kong Public Libraries MMIS", "required": False,
+        "name": "Hong Kong Public Libraries MMIS legacy hostname", "required": False,
         "url": "https://mmis.hkpl.gov.hk/",
         "format": "html",
         "shape": "Multimedia Information System",
+    },
+    {
+        "name": "HKPL Digital Collection (current MMIS successor)", "required": False,
+        "url": "https://sls.hkpl.gov.hk/digital-collection/en/",
+        "format": "html",
+        "shape": "Digital Collection",
+    },
+    {
+        "name": "HKU Scholars Hub OAI-PMH", "required": False,
+        "url": "https://hub.hku.hk/oai/request?verb=Identify",
+        "format": "xml",
+        "shape": "OAI-PMH",
     },
     {
         "name": "Hong Kong Government Records Service catalogue", "required": False,
@@ -30,7 +42,7 @@ PROBES = [
         "shape": "Search Results",
     },
     {
-        "name": "HKU Digital Repository OAI-PMH", "required": False,
+        "name": "HKUL DigitalRepository OAI-PMH candidate endpoint", "required": False,
         "url": "https://digitalrepository.lib.hku.hk/oai2?verb=Identify",
         "format": "xml",
         "shape": "OAI-PMH",

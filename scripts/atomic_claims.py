@@ -56,7 +56,7 @@ Existing claims to verify:
 
 
 def _normalise_space(value):
-    return re.sub(r"\\s+", " ", str(value or "")).strip()
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
 def _normalised_contains(haystack, needle):
@@ -87,7 +87,7 @@ def validate_atomic_claims(response, source_material, max_claims=MAX_CLAIMS):
             claim_type = "other"
         if importance not in IMPORTANCE:
             importance = "supporting"
-        key = text.casefold()
+        key = _normalise_space(text).casefold()
         if key in seen:
             continue
         seen.add(key)
@@ -152,7 +152,7 @@ def build_claim_records(claims, *, event_id, source_page, model, prompt_version,
 def extract_atomic_claims(pool, *, title, date, draft_text, existing_claims=()):
     """Ask the configured AI pool to extract claims, then validate source provenance."""
     existing = list(existing_claims or ())
-    source_material = "\\n".join([str(draft_text or ""), *[str(item) for item in existing]])
+    source_material = "\n".join([str(draft_text or ""), *[str(item) for item in existing]])
     prompt = ATOMIC_CLAIM_PROMPT.format(
         title=str(title or ""),
         date=str(date or ""),

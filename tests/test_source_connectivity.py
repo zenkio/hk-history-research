@@ -78,3 +78,54 @@ def test_mmis_probe_uses_official_https_homepage_as_optional():
     assert spec["required"] is False
     assert spec["url"] == "https://mmis.hkpl.gov.hk/"
     assert spec["format"] == "html"
+
+
+
+def test_grs_live_probe_reports_metadata_only_record_link_count(monkeypatch):
+    spec = next(item for item in probe.PROBES if item["name"] == "Hong Kong Government Records Service catalogue")
+    monkeypatch.setattr(
+        probe,
+        "parse_grs_catalogue_results",
+        lambda html, query: [{"passage_status": "metadata_only"}],
+    )
+
+    class Response:
+        status = 200
+        headers = {"Content-Type": "text/html"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b"<html><body>Search Results</body></html>"
+
+    monkeypatch.setattr(probe.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    ok, detail = probe.probe(spec)
+    assert ok
+    assert "parser found 1 metadata-only record link" in detail
+
+
+def test_grs_live_probe_warns_when_parser_finds_no_record_links(monkeypatch):
+    spec = next(item for item in probe.PROBES if item["name"] == "Hong Kong Government Records Service catalogue")
+    monkeypatch.setattr(probe, "parse_grs_catalogue_results", lambda html, query: [])
+
+    class Response:
+        status = 200
+        headers = {"Content-Type": "text/html"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b"<html><body>Search Results</body></html>"
+
+    monkeypatch.setattr(probe.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    ok, detail = probe.probe(spec)
+    assert not ok
+    assert "parser found 0 metadata-only record links" in detail

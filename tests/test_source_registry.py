@@ -168,3 +168,16 @@ def test_unsupported_rights_policy_is_rejected():
     with pytest.raises(ValueError, match="unsupported rights_policy"):
         SourceRegistry([source("bad-policy", lambda query: [], rights_policy="unknown")])
 
+
+
+def test_metadata_only_status_clears_any_accidentally_supplied_passage():
+    registry = SourceRegistry([source("catalogue", lambda query: [
+        {"title": "Catalogue entry", "passage": "Text that must not be sent to the model.",
+         "passage_status": "metadata_only"},
+    ], rights_policy="metadata_only")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "passage cleared before AI judgement" in candidate["registry_note"]
+
+

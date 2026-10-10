@@ -140,7 +140,8 @@ def build_preview(records, event_id):
             "",
         ]
         for item in unresolved_core:
-            lines.append(f"- **{_markdown_safe(item['text'])}** ({item['claim_id']}): {'; '.join(item['reasons'])}")
+            claim_status = next((row.get("status", "unknown") for row in claims if row.get("id") == item["claim_id"]), "unknown")
+            lines.append(f"- **{_markdown_safe(item['text'])}** ({item['claim_id']}; status: {claim_status}): {'; '.join(item['reasons'])}")
         lines.append("")
 
     if included:

@@ -72,6 +72,17 @@ def inspect_response(probe, status, content_type, body):
     return True, f"HTTP {status}; {content_type or 'content type unknown'}; {len(body)} bytes"
 
 
+def inspect_bounded_response(probe_spec, status, content_type, body):
+    """Validate response shape within the byte budget; HTML probes need only a bounded sample."""
+    if len(body) > MAX_BYTES:
+        if probe_spec.get("format") == "html":
+            ok, detail = inspect_response(probe_spec, status, content_type, body[:MAX_BYTES])
+            if ok:
+                return True, f"{detail}; inspected first {MAX_BYTES} bytes only (response truncated)"
+        return False, f"response exceeded {MAX_BYTES} byte safety limit"
+    return inspect_response(probe_spec, status, content_type, body)
+
+
 def probe(probe_spec, timeout=15):
     request = urllib.request.Request(
         probe_spec["url"],
@@ -80,9 +91,7 @@ def probe(probe_spec, timeout=15):
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             body = response.read(MAX_BYTES + 1)
-            if len(body) > MAX_BYTES:
-                return False, f"response exceeded {MAX_BYTES} byte safety limit"
-            return inspect_response(
+            return inspect_bounded_response(
                 probe_spec,
                 getattr(response, "status", 200),
                 response.headers.get("Content-Type", ""),

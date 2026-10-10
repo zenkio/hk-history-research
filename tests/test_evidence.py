@@ -865,13 +865,12 @@ def test_relevant_looking_title_does_not_override_contradictory_passage(write_pa
     )
     monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [candidate])])
     done = {}
-    ev.evidence_batch(
-        SaysJudge([{"id": "c1", "relation": "contradicts", "claims": [2],
-                    "why": "The inspected passage explicitly gives 1850, contradicting 1849."}]),
-        done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1,
-    )
+    pool = PromptJudge([{"id": "c1", "relation": "contradicts", "claims": [2],
+                          "why": "The inspected passage explicitly gives 1850, contradicting 1849."}])
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
     rendered = page.read_text(encoding="utf-8")
-    assert "Treaty signed in 1849" in rendered
+    assert "title: Treaty signed in 1849" in pool.prompt
+    assert "The treaty was signed in 1850, not 1849." in pool.prompt
     assert "The treaty was signed in 1850, not 1849." in rendered
     assert "contradicts claim 2" in rendered
     assert "supports claim 2" not in rendered

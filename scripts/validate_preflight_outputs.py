@@ -63,6 +63,9 @@ def validate_file(path, expected_page, timeline_root):
                 if validate_record(row):
                     reason = "schema_invalid"
                     break
+                if not isinstance(provenance.get("source_excerpt"), str) or not provenance["source_excerpt"].strip():
+                    reason = "missing_source_excerpt"
+                    break
                 source_path = Path(timeline_root) / expected_page
                 if not source_path.is_file():
                     reason = "source_page_missing"

@@ -105,6 +105,18 @@ PROBES = [
         "shape": "Digital Collection",
     },
     {
+        "name": "Hong Kong Memory official terms", "required": False,
+        "url": "https://www.hkmemory.hk/en/terms_of_use.html",
+        "format": "html",
+        "shape": "Terms of use",
+    },
+    {
+        "name": "Hong Kong Memory pre-war official documents collection", "required": False,
+        "url": "https://www.hkmemory.hk/en/collections-education-official_documents.html",
+        "format": "html",
+        "shape": "Official documents",
+    },
+    {
         "name": "HKU Scholars Hub OAI-PMH", "required": False,
         "url": "https://hub.hku.hk/oai/request?verb=Identify",
         "format": "xml",

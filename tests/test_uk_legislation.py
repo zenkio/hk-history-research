@@ -52,7 +52,7 @@ def test_search_returns_official_inspectable_text_and_ignores_external_links(mon
     assert "Site navigation" not in row["passage"]
     assert row["rights_status"] == "open_government_licence"
     assert calls == [
-        "https://www.legislation.gov.uk/search?title=British+Nationality+Act+1990",
+        "https://www.legislation.gov.uk/search?title=British+Nationality+Act+1990+Hong+Kong",
         "https://www.legislation.gov.uk/ukpga/1990/34",
     ]
 

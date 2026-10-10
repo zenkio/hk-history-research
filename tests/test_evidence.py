@@ -861,8 +861,10 @@ def test_conflicting_inspectable_sources_are_both_preserved(write_page, monkeypa
         {"id": "c2", "relation": "contradicts", "claims": [2], "why": "The passage states 1850 instead."},
     ]
     sources = [
-        ("National Archives", lambda q: [dict(A_RECORD, passage="The treaty was signed in 1849.")]),
-        ("OpenAlex", lambda q: [dict(B_PAPER, passage="The treaty was signed in 1850, not 1849.")]),
+        ("National Archives", lambda q: [dict(A_RECORD, passage="The treaty was signed in 1849.",
+                                             institution="National Archives", authority_level="primary")]),
+        ("OpenAlex", lambda q: [dict(B_PAPER, passage="The treaty was signed in 1850, not 1849.",
+                                     institution="OpenAlex", authority_level="scholarly")]),
     ]
     done = {}
     monkeypatch.setattr(ev, "SOURCES", sources)

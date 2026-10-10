@@ -6,13 +6,13 @@ name: One-off evidence-first extraction pilot v5
 on:
   push:
     branches:
-      - experiment/run-live-preflight-v5-20261010
+      - experiment/run-live-preflight-v6-20261010
 
 permissions:
   contents: read
 
 concurrency:
-  group: evidence-first-live-preflight-v5
+  group: evidence-first-live-preflight-v6
   cancel-in-progress: true
 
 jobs:
@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
-          ref: experiment/preflight-model-output-v5-20261010
+          ref: experiment/preflight-model-output-v6-20261010
           token: ${{ secrets.DATA_REPO_TOKEN }}
           path: data
           fetch-depth: 0
@@ -93,7 +93,7 @@ jobs:
           OUT: ${{ runner.temp }}/preflight
         run: |
           set -euo pipefail
-          DEST="data/experiments/model-output/2026-10-10/prompt-v5"
+          DEST="data/experiments/model-output/2026-10-10/prompt-v6"
           mkdir -p "$DEST"
           shopt -s nullglob
           files=("$OUT"/*.jsonl "$OUT"/*.stderr "$OUT"/manifest.json)
@@ -117,7 +117,7 @@ jobs:
             exit 1
           fi
           git -C data diff --cached --check
-          git -C data commit -m "experiment: save isolated preflight prompt-v5 outputs"
+          git -C data commit -m "experiment: save isolated preflight prompt-v6 outputs"
           git -C data push origin HEAD:experiment/preflight-model-output-v5-20261010
 
       - name: Fail if any reference-page extraction failed
@@ -132,8 +132,8 @@ jobs:
           with open(os.environ["MANIFEST"], encoding="utf-8") as handle:
               manifest = json.load(handle)
           failures = manifest.get("failures", {})
-          if manifest.get("prompt_version") != 5:
-              print("FAIL | manifest prompt version must be 5")
+          if manifest.get("prompt_version") != 6:
+              print("FAIL | manifest prompt version must be 6")
               sys.exit(1)
           if len(manifest.get("files", [])) != 4:
               print("FAIL | manifest must contain exactly four reference pages")

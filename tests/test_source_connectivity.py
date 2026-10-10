@@ -129,3 +129,17 @@ def test_grs_live_probe_warns_when_parser_finds_no_record_links(monkeypatch):
     ok, detail = probe.probe(spec)
     assert not ok
     assert "parser found 0 metadata-only record links" in detail
+
+
+
+def test_current_hkpl_and_hku_repository_probes_are_optional_https():
+    expected = {
+        "HKPL Digital Collection (current MMIS successor)": "https://sls.hkpl.gov.hk/digital-collection/en/",
+        "HKU Scholars Hub OAI-PMH": "https://hub.hku.hk/oai/request?verb=Identify",
+    }
+    by_name = {item["name"]: item for item in probe.PROBES}
+    for name, url in expected.items():
+        assert name in by_name
+        assert by_name[name]["url"] == url
+        assert by_name[name]["required"] is False
+        assert url.startswith("https://")

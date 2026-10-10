@@ -15,16 +15,16 @@ CLAIM_TYPES = {
 }
 IMPORTANCE = {"core", "supporting"}
 NEGATION_OR_DENIAL = re.compile(
-    r"\\b(?:not|never|no|neither|without|none|nothing|cannot|can't|didn't|doesn't|"
+    r"\b(?:not|never|no|neither|without|none|nothing|cannot|can't|didn't|doesn't|"
     r"wasn't|weren't|isn't|aren't|hasn't|haven't|hadn't|failed|rejected|refused|"
-    r"denied|prohibited|forbidden|impossible)\\b",
+    r"denied|prohibited|forbidden|impossible)\b",
     re.IGNORECASE,
 )
 
 
 def _number_tokens(value):
     """Return normalised numeric fragments so claims cannot invent dates or quantities."""
-    return {token.replace(",", "") for token in re.findall(r"\\d[\\d,]*", str(value or ""))}
+    return {token.replace(",", "") for token in re.findall(r"\d[\d,]*", str(value or ""))}
 
 
 def _faithful_to_excerpt(claim_text, excerpt):

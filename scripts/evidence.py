@@ -316,7 +316,7 @@ def internet_archive_ai_processing_allowed(metadata):
             in ("/publicdomain/mark/1.0", "/publicdomain/zero/1.0")
         ):
             return True
-        normalised = re.sub(r"[\\s.,;:]+", " ", raw.casefold()).strip()
+        normalised = re.sub(r"[\s.,;:]+", " ", raw.casefold()).strip()
         # Only exact, well-known labels are accepted; descriptive prose is not a grant.
         return normalised in {
             "public domain",

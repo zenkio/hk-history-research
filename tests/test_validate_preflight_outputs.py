@@ -5,24 +5,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from atomic_claims import build_claim_records
 from validate_preflight_outputs import EXPECTED, build_manifest, validate_file
 
 
 def valid_record(page):
-    return {
-        "record_type": "claim",
-        "schema_version": 1,
-        "id": "claim:test-001",
-        "event_id": "event:test",
-        "text": "A grounded historical claim.",
-        "status": "unverified",
-        "provenance": {
-            "source_page": f"content/01_Timeline/{page}",
+    return build_claim_records(
+        [{
+            "text": "A grounded historical claim.",
             "source_excerpt": "A grounded historical claim.",
-            "model": "test-model",
-            "prompt_version": 3,
-        },
-    }
+            "claim_type": "action",
+            "importance": "core",
+        }],
+        event_id="event:test",
+        source_page=f"content/01_Timeline/{page}",
+        model="test-model",
+        prompt_version=3,
+        created_at="2026-10-10T00:00:00Z",
+    )[0]
 
 
 def test_validator_accepts_nonempty_schema_valid_unverified_records(tmp_path):

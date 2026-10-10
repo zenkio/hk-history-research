@@ -96,7 +96,8 @@ RANK = {"none": 0, "B": 1, "A": 2}
 RELATIONS = ("supports", "contradicts", "partial")
 MIN_INSPECTABLE_PASSAGE_LENGTH = 30
 COUNTED = ("supports",)  # only direct supporting evidence can raise the evidence grade
-AUDIT_SHARE = 0.05  # share of judged pages that a second model judges again, to measure agreement
+AUDIT_SHARE = 0.05  # baseline share for second-model passage audits
+PRIORITY_AUDIT_SHARE = 0.25  # higher sampling rate for weak-source/numeric/date-risk claims
 _rng = random.Random()
 
 
@@ -547,13 +548,18 @@ def evidence_for_page(pool, path):
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
-    if _rng.random() < AUDIT_SHARE:
-        audit(pool, path, prompt, candidates, kept, model, claim_count=len(event_claims(title, date, claims)))
+    rec = None
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
         rec = jev_audit(path, title, date, claims, candidates, kept, model)
         if rec and rec.get("disputes"):
             kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
+    priority_reasons = audit_priority_reasons(title, date, claims, kept)
+    if rec and any(d.get("judge") in RELATIONS or d.get("jev") in RELATIONS for d in rec.get("disputes", [])):
+        priority_reasons.append("model disagreement on a relevant candidate")
+    if should_run_full_audit(priority_reasons, _rng.random()):
+        audit(pool, path, prompt, candidates, kept, model,
+              claim_count=len(event_claims(title, date, claims)), priority_reasons=priority_reasons)
     grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)
     if grade == "none" and failed:
         return "retry"  # a source we could not search may still hold evidence
@@ -650,7 +656,49 @@ def decisions(kept, candidates):
     return [got.get(c["id"], "out") for c in candidates]
 
 
-def audit(pool, path, prompt, candidates, kept, model, claim_count=None):
+
+
+def audit_priority_reasons(title, date, claims, kept):
+    """Return reasons to sample a page for a second-model passage audit."""
+    claim_text = " ".join([str(title or ""), str(date or "")] + [str(item) for item in (claims or [])])
+    reasons = []
+    relations = {str(item.get("relation", "")).lower() for item in kept if isinstance(item, dict)}
+    if "contradicts" in relations:
+        reasons.append("contradiction present")
+    if "partial" in relations:
+        reasons.append("partial evidence present")
+    if re.search(r"\b(?:killed|deaths?|casualties|injured|wounded|fatalities|percent(?:age)?|million|billion|exactly|at least|more than|less than|only|first|largest|smallest|never|all|sole)\b", claim_text, re.I) and re.search(r"\d", claim_text):
+        reasons.append("high-impact number or absolute claim")
+    claim_years = set(re.findall(r"\b(?:18|19|20)\d{2}\b", " ".join(str(item) for item in (claims or []))))
+    if claim_years:
+        for item in kept:
+            if item.get("relation") not in {"supports", "partial"}:
+                continue
+            passage_years = set(re.findall(r"\b(?:18|19|20)\d{2}\b", str(item.get("passage") or "")))
+            if passage_years and not (claim_years & passage_years):
+                reasons.append("claim/passage year mismatch")
+                break
+    if any(
+        str(item.get("authority_level", "")).strip().lower() in {"unknown", "low"}
+        and item.get("relation") in RELATIONS
+        for item in kept
+    ):
+        reasons.append("weak or unknown source authority")
+    return list(dict.fromkeys(reasons))
+
+
+def should_run_full_audit(priority_reasons, random_value, baseline_share=None, priority_share=None):
+    """Always audit contradictions/partial evidence; sample other risks at 25%, baseline at 5%."""
+    reasons = set(priority_reasons or ())
+    baseline_share = AUDIT_SHARE if baseline_share is None else baseline_share
+    priority_share = PRIORITY_AUDIT_SHARE if priority_share is None else priority_share
+    if reasons & {"contradiction present", "partial evidence present"}:
+        return True
+    if reasons:
+        return random_value < priority_share
+    return random_value < baseline_share
+
+def audit(pool, path, prompt, candidates, kept, model, claim_count=None, priority_reasons=None):
     """Ask a second, different model the same question and record how far the two agree. The page
     keeps the first model's judgement; the agreement rate is shown on the Evidence status page."""
     import state
@@ -665,12 +713,14 @@ def audit(pool, path, prompt, candidates, kept, model, claim_count=None):
     first, second = decisions(kept, candidates), decisions(judged(data2, candidates, claim_count=claim_count), candidates)
     rec = {"page": os.path.relpath(path, TIMELINE_DIR), "date": datetime.now().strftime("%Y-%m-%d"),
            "models": [model, model2], "grades": [grade_of(kept), grade_of(judged(data2, candidates, claim_count=claim_count))],
-           "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second))}
+           "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second)),
+           "priority_reasons": list(priority_reasons or [])}
     log = state.load("evidence_audit")
     log.setdefault("audits", []).append(rec)
     state.save("evidence_audit", log)
     print(f"  [evidence] audit by {model2}: grade {rec['grades'][1]} vs {rec['grades'][0]}, "
-          f"{rec['same']}/{rec['candidates']} candidates judged the same")
+          f"{rec['same']}/{rec['candidates']} candidates judged the same"
+          + (f"; priority: {', '.join(rec['priority_reasons'])}" if rec["priority_reasons"] else ""))
     return rec
 
 

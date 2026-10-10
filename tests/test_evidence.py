@@ -915,3 +915,29 @@ def test_short_inspectable_fragment_cannot_support_or_partially_support_claim():
 
 def test_judge_prompt_rejects_contextless_fragments():
     assert "fewer than 30 characters" in ev.JUDGE_PROMPT
+
+
+
+def test_audit_priority_reasons_flag_contradictions_partial_and_high_impact_numbers():
+    reasons = ev.audit_priority_reasons(
+        "Tatsu Maru boycott", "1908-02-05",
+        ["Exactly 3,000 people were injured in the 1908 incident."],
+        [
+            {"relation": "partial", "passage": "About 3,000 people were affected in 1907.", "authority_level": "unknown"},
+            {"relation": "contradicts", "passage": "The event occurred in 1907."},
+        ],
+    )
+    assert "contradiction present" in reasons
+    assert "partial evidence present" in reasons
+    assert "high-impact number or absolute claim" in reasons
+    assert "claim/passage year mismatch" in reasons
+    assert "weak or unknown source authority" in reasons
+
+
+def test_full_audit_sampling_prioritizes_critical_and_high_risk_cases():
+    assert ev.should_run_full_audit(["contradiction present"], 0.99) is True
+    assert ev.should_run_full_audit(["partial evidence present"], 0.99) is True
+    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.24, priority_share=0.25) is True
+    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.26, priority_share=0.25) is False
+    assert ev.should_run_full_audit([], 0.04, baseline_share=0.05) is True
+    assert ev.should_run_full_audit([], 0.06, baseline_share=0.05) is False

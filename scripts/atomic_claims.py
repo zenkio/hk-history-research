@@ -17,12 +17,12 @@ CLAIM_TYPES = {
 IMPORTANCE = {"core", "supporting"}
 SUPPORTING_ONLY_TYPES = {"cause", "context", "interpretation", "other"}
 CORE_CONTEXT_PATTERN = re.compile(
-    r"\\b(?:aim(?:s|ed)? to|intend(?:s|ed)? to|intended|view(?:s|ed)?|interpret(?:s|ed)?|"
+    r"\b(?:aim(?:s|ed)? to|intend(?:s|ed)? to|intended|view(?:s|ed)?|interpret(?:s|ed)?|"
     r"argu(?:e|es|ed)|believ(?:e|es|ed)|consider(?:s|ed)|fear(?:s|ed)|highlight(?:s|ed)|"
     r"demonstrat(?:e|es|ed)|illustrat(?:e|s|ed)|reflect(?:s|ed)|suggest(?:s|ed)|"
     r"symboli[sz](?:e|es|ed)|mark(?:s|ed)?|indicat(?:e|es|ed)|reveal(?:s|ed)|"
     r"identif(?:y|ies|ied)|faced pressure|debate(?:d)?|watershed|effectively|increasingly|"
-    r"capable of coordinated|modernization|modernisation|shift(?:ed)? responsibility)\\b",
+    r"capable of coordinated|modernization|modernisation|shift(?:ed)? responsibility)\b",
     re.IGNORECASE,
 )
 NEGATION_OR_DENIAL = re.compile(

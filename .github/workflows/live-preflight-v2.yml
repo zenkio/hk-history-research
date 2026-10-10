@@ -134,7 +134,7 @@ jobs:
           git -C data add "experiments/model-output/2026-10-10/prompt-v2"
           git -C data diff --cached --check
           git -C data commit -m "experiment: save isolated preflight model outputs"
-          git -C data push origin HEAD:experiment/preflight-model-output-20261010
+          git -C data push origin HEAD:experiment/preflight-model-output-v2-20261010
 
       - name: Fail if any reference-page extraction failed
         env:

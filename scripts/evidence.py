@@ -444,9 +444,20 @@ def gather(query, sources=None):
             failed.append(name)
             continue
         try:
-            got = fn(query)
-            for c in got:
-                c["source"] = name
+            registered = SOURCE_REGISTRY.definition_for_name(name)
+            if registered is not None and registered.search is fn:
+                result = SOURCE_REGISTRY.search(query, source_ids=[registered.source_id])
+                failure = next((item for item in result["failures"] if item["source_id"] == registered.source_id), None)
+                if failure:
+                    raise RuntimeError(f"{failure['error_type']}: {failure['error']}")
+                got = result["candidates"]
+                for candidate in got:
+                    candidate["source"] = name
+            else:
+                # Keep test injection and third-party adapters backward compatible.
+                got = fn(query)
+                for candidate in got:
+                    candidate["source"] = name
             found += got
             _source_fails[name] = 0
         except Exception as e:

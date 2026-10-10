@@ -42,7 +42,7 @@ def test_search_attaches_provenance_and_preserves_metadata_only_status():
     result = registry.search("Hong Kong 1841")
     candidate = result["candidates"][0]
     assert result["query"] == "Hong Kong 1841"
-    assert candidate["source_id"] == "catalogue"
+    assert candidate["registry_source_id"] == "catalogue"
     assert candidate["institution"] == "Test archive"
     assert candidate["passage_status"] == "metadata_only"
     assert result["failures"] == []
@@ -97,3 +97,11 @@ def test_evidence_uses_registry_as_its_default_adapter_list():
     assert [name for name, _ in evidence.SOURCES] == [
         "UK National Archives Discovery", "Internet Archive", "OpenAlex",
     ]
+
+
+def test_search_reports_success_even_when_an_adapter_returns_zero_results():
+    registry = SourceRegistry([source("empty-archive", lambda query: [])])
+    result = registry.search("event")
+    assert result["candidates"] == []
+    assert result["failures"] == []
+    assert result["successful_source_ids"] == ["empty-archive"]

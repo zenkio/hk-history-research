@@ -50,6 +50,29 @@ def test_migration_does_not_invent_claims_for_pages_without_claim_section(tmp_pa
     assert task["priority"] == "core"
 
 
+def test_extraction_queue_core_priority_uses_the_1841_cutoff_not_folder_name(tmp_path):
+    root = tmp_path / "timeline"
+    era = root / "05-opium-war"
+    era.mkdir(parents=True)
+    for year in (1810, 1840, 1841):
+        (era / f"{year}-example.md").write_text(
+            f"---\\ntitle: Example {year}\\nyear: {year}\\n---\\n"
+            "## Narrative\\nNo explicit claim section.\\n",
+            encoding="utf-8",
+        )
+
+    result = migration.build_records(root, now="2026-10-09T10:00:00Z")
+    priorities = {
+        Path(task["source_page"]).stem: task["priority"]
+        for task in result["claim_extraction_queue"]
+    }
+    assert priorities == {
+        "1810-example": "deferred",
+        "1840-example": "deferred",
+        "1841-example": "core",
+    }
+
+
 def test_migration_writes_jsonl_only_when_explicitly_requested(tmp_path):
     root = tmp_path / "timeline"
     root.mkdir()

@@ -738,3 +738,43 @@ def test_grs_catalogue_parser_normalizes_nested_and_multiline_title_text():
     assert candidate["title"] == "Hong Kong Government Records"
     assert candidate["passage_status"] == "metadata_only"
     assert candidate["passage"] == ""
+
+
+
+def test_judged_drops_claim_numbers_outside_current_page_claim_range():
+    candidate = dict(A_RECORD, id="c1", passage_status="inspectable_record", passage="Record explicitly states the treaty was signed in 1849.")
+    kept = ev.judged({
+        "relevant": [{"id": "c1", "relation": "supports", "claims": [1, 99], "why": "The passage states the date."}]
+    }, [candidate], claim_count=1)
+    assert kept[0]["claims"] == [1]
+    assert kept[0]["relation"] == "supports"
+
+
+def test_judged_with_only_out_of_range_claim_number_becomes_background():
+    candidate = dict(A_RECORD, id="c1", passage_status="inspectable_record", passage="Record explicitly states the treaty was signed in 1849.")
+    kept = ev.judged({
+        "relevant": [{"id": "c1", "relation": "supports", "claims": [99], "why": "The passage states the date."}]
+    }, [candidate], claim_count=1)
+    assert kept[0]["claims"] == []
+    assert kept[0]["relation"] == "background"
+
+
+def test_judged_requires_an_explanatory_rationale_to_support_a_claim():
+    candidate = dict(A_RECORD, id="c1", passage_status="inspectable_record", passage="Record explicitly states the treaty was signed in 1849.")
+    kept = ev.judged({
+        "relevant": [{"id": "c1", "relation": "supports", "claims": [1], "why": "   "}]
+    }, [candidate], claim_count=1)
+    assert kept[0]["relation"] == "background"
+    assert "rationale" in kept[0]["why"]
+
+
+def test_judged_rejects_boolean_claim_numbers_and_malformed_items():
+    candidate = dict(A_RECORD, id="c1", passage_status="inspectable_record", passage="A passage.")
+    kept = ev.judged({
+        "relevant": [
+            None,
+            {"id": "c1", "relation": "supports", "claims": [True], "why": "A rationale."},
+        ]
+    }, [candidate], claim_count=1)
+    assert kept[0]["claims"] == []
+    assert kept[0]["relation"] == "background"

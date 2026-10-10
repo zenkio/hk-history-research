@@ -539,7 +539,7 @@ def evidence_for_page(pool, path):
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
     if _rng.random() < AUDIT_SHARE:
-        audit(pool, path, prompt, candidates, kept, model)
+        audit(pool, path, prompt, candidates, kept, model, claim_count=len(event_claims(title, date, claims)))
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
         rec = jev_audit(path, title, date, claims, candidates, kept, model)
@@ -573,7 +573,7 @@ def judge(pool, title, date, claims, candidates):
         f"| passage_status: {c.get('passage_status', 'metadata_only')} "
         f"| passage: {c.get('passage', '')[:1200]}"
         for c in candidates)
-    claim_text = "\n".join(f"{i}. {c}" for i, c in enumerate(event_claims(title, date, claims), 1))
+    claim_text = "\n".join(f"{i}. {claim}" for i, claim in enumerate(event_claims(title, date, claims), 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
     if not isinstance(data, dict) or not isinstance(data.get("relevant"), list):
@@ -582,27 +582,49 @@ def judge(pool, title, date, claims, candidates):
     for item in data["relevant"]:
         if not isinstance(item, dict) or str(item.get("id", "")) not in candidate_ids:
             raise ValueError("Evidence judge returned a malformed item or unknown candidate id")
-    return data, model, prompt, judged(data, candidates)
+    claim_count = len(event_claims(title, date, claims))
+    return data, model, prompt, judged(data, candidates, claim_count=claim_count)
 
 
-def judged(data, candidates):
-    """The candidates the model kept, each with relation, claims and why. A relation the model did not
-    give, or "supports" with no claim named, is treated as background: it cannot raise the grade."""
+def judged(data, candidates, claim_count=None):
+    """Keep a judgement only when it names valid claims and explains its decision.
+
+    Invalid claim numbers, missing rationales, and uninspectable passages fail closed to
+    background; they must not raise evidence coverage or create an unsupported contradiction.
+    """
     by_id = {c["id"]: dict(c) for c in candidates}
     kept = []
-    for r in data.get("relevant", []) if isinstance(data, dict) else []:
-        c = by_id.pop(str(r.get("id")), None)
+    relevant = data.get("relevant", []) if isinstance(data, dict) else []
+    if not isinstance(relevant, list):
+        return kept
+    for r in relevant:
+        if not isinstance(r, dict):
+            continue
+        c = by_id.pop(str(r.get("id", "")), None)
         if not c:
             continue
-        c["claims"] = [n for n in r.get("claims") or [] if isinstance(n, int)]
-        c["why"] = r.get("why", "")
+        raw_claims = r.get("claims")
+        if not isinstance(raw_claims, list):
+            raw_claims = []
+        valid_claims = []
+        for number in raw_claims:
+            if isinstance(number, int) and not isinstance(number, bool) and number >= 1:
+                if claim_count is None or number <= claim_count:
+                    if number not in valid_claims:
+                        valid_claims.append(number)
+        c["claims"] = valid_claims
+        why = r.get("why", "")
+        c["why"] = why.strip() if isinstance(why, str) else ""
         relation = str(r.get("relation", "")).lower()
         # Fail closed: only an inspected passage may support or contradict a claim.
         has_passage = (bool(str(c.get("passage", "")).strip()) and
                        c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"})
-        c["relation"] = relation if relation in RELATIONS and c["claims"] and has_passage else "background"
+        valid_judgement = relation in RELATIONS and c["claims"] and bool(c["why"]) and has_passage
+        c["relation"] = relation if valid_judgement else "background"
         if relation in RELATIONS and not has_passage:
             c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
+        elif relation in RELATIONS and not valid_judgement:
+            c["why"] = "Judgement lacks a valid claim reference or explanatory rationale; treated as background."
         kept.append(c)
     return kept
 
@@ -613,7 +635,7 @@ def decisions(kept, candidates):
     return [got.get(c["id"], "out") for c in candidates]
 
 
-def audit(pool, path, prompt, candidates, kept, model):
+def audit(pool, path, prompt, candidates, kept, model, claim_count=None):
     """Ask a second, different model the same question and record how far the two agree. The page
     keeps the first model's judgement; the agreement rate is shown on the Evidence status page."""
     import state
@@ -625,9 +647,9 @@ def audit(pool, path, prompt, candidates, kept, model):
         return None
     if model2 == model:
         return None
-    first, second = decisions(kept, candidates), decisions(judged(data2, candidates), candidates)
+    first, second = decisions(kept, candidates), decisions(judged(data2, candidates, claim_count=claim_count), candidates)
     rec = {"page": os.path.relpath(path, TIMELINE_DIR), "date": datetime.now().strftime("%Y-%m-%d"),
-           "models": [model, model2], "grades": [grade_of(kept), grade_of(judged(data2, candidates))],
+           "models": [model, model2], "grades": [grade_of(kept), grade_of(judged(data2, candidates, claim_count=claim_count))],
            "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second))}
     log = state.load("evidence_audit")
     log.setdefault("audits", []).append(rec)

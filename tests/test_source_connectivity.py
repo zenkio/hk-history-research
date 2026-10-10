@@ -299,7 +299,7 @@ def test_legislation_title_search_is_an_optional_https_probe():
     )
     assert spec["url"] == (
         "https://www.legislation.gov.uk/search?title="
-        "British%20Nationality%20%28Hong%20Kong%29%20Act%201990"
+        "British+Nationality+Act+1990+Hong+Kong"
     )
     assert spec["format"] == "html"
     assert spec["shape"] == "British Nationality (Hong Kong) Act 1990"

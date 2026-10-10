@@ -97,3 +97,33 @@ def test_limit_zero_emits_the_full_queue(monkeypatch, tmp_path, capsys):
     assert queue.main(["--limit", "0", "--output", str(output)]) == 0
     assert len(output.read_text(encoding="utf-8").splitlines()) == 2
     assert "2 of 2 eligible claim(s)" in capsys.readouterr().err
+
+
+
+def test_queue_prioritizes_core_period_and_then_internal_link_count(tmp_path):
+    content = tmp_path / "content"
+    timeline = content / "01_Timeline"
+    timeline.mkdir(parents=True)
+    (timeline / "1841-unlinked.md").write_text("---\ntitle: Unlinked 1841\n---\n", encoding="utf-8")
+    (timeline / "1842-linked.md").write_text("---\ntitle: Linked 1842\n---\n", encoding="utf-8")
+    (timeline / "1830-old.md").write_text("---\ntitle: Old 1830\n---\n", encoding="utf-8")
+    (content / "ref-a.md").write_text("[[01_Timeline/1842-linked]] [[01_Timeline/1830-old]]\n", encoding="utf-8")
+    (content / "ref-b.md").write_text("[[01_Timeline/1842-linked]] [[01_Timeline/1830-old]]\n", encoding="utf-8")
+    (content / "ref-c.md").write_text("[[01_Timeline/1830-old]]\n", encoding="utf-8")
+    claims = [
+        {"id": "c1841", "event_id": "event:05-opium-war-1841-unlinked", "importance": "core",
+         "status": "unverified", "text": "An 1841 claim", "updated_at": "2026-10-01T00:00:00Z",
+         "is_current": True, "provenance": {"source_page": "content/01_Timeline/1841-unlinked.md"}},
+        {"id": "c1842", "event_id": "event:05-opium-war-1842-linked", "importance": "core",
+         "status": "unverified", "text": "An 1842 claim", "updated_at": "2026-10-02T00:00:00Z",
+         "is_current": True, "provenance": {"source_page": "content/01_Timeline/1842-linked.md"}},
+        {"id": "c1830", "event_id": "event:05-opium-war-1830-old", "importance": "core",
+         "status": "unverified", "text": "An 1830 claim", "updated_at": "2026-10-03T00:00:00Z",
+         "is_current": True, "provenance": {"source_page": "content/01_Timeline/1830-old.md"}},
+    ]
+    result = queue.build_queue({"claims": claims, "sources": [], "evidence": [], "judgements": []}, content_root=content)
+    assert [row["claim_id"] for row in result] == ["c1842", "c1841", "c1830"]
+    assert result[0]["core_period"] is True
+    assert result[0]["internal_link_count"] == 2
+    assert result[1]["internal_link_count"] == 0
+    assert result[2]["core_period"] is False

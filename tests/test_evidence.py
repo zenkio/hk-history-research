@@ -889,3 +889,14 @@ def test_exact_number_not_established_by_approximate_passage_is_partial(write_pa
     assert "Partially supporting evidence (does not count towards coverage)" in text
     evidence_section = text.split("## Evidence", 1)[1].split("Part of:", 1)[0]
     assert "Exactly 102 people attended the meeting." not in evidence_section
+
+
+
+def test_judge_version_9_reopens_old_pages_for_partial_and_authority_rules(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 8})
+    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 8.\n")
+    done = {"old.md": "B"}
+    assert ev.JUDGE_VERSION == 9
+    assert ev.reopen_for_rejudge(done) == 1
+    assert done == {}
+    assert state.load("evidence_meta")["judge_version"] == 9

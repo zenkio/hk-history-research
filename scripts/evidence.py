@@ -884,7 +884,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 8  # 8: neutral event/date claim; no implicit Hong Kong location assertion
+JUDGE_VERSION = 9  # 9: partial evidence is distinct; source authority is context, not proof
+# 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts
@@ -900,8 +901,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    if version < 8 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
-        return True  # prior judge version used metadata-led instructions or the implicit Hong Kong location claim
+    if version < 9 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # version 9: partial evidence is distinct; authority is context, not proof
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

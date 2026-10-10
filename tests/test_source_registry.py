@@ -181,3 +181,16 @@ def test_metadata_only_status_clears_any_accidentally_supplied_passage():
     assert "passage cleared before AI judgement" in candidate["registry_note"]
 
 
+
+
+def test_cc0_dataset_policy_does_not_authorize_full_text_passages():
+    registry = SourceRegistry([source("cc0", lambda query: [
+        {"title": "Full text", "passage": "Full text is not the OpenAlex abstract dataset.",
+         "passage_status": "inspectable_text"},
+    ], rights_policy="cc0_dataset")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "cc0_dataset" in candidate["registry_note"]
+
+

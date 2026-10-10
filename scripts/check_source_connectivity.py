@@ -12,6 +12,8 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 
+from grs_catalogue import parse_grs_catalogue_results
+
 USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
@@ -103,12 +105,20 @@ def probe(probe_spec, timeout=15):
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             body = response.read(MAX_BYTES + 1)
-            return inspect_bounded_response(
+            ok, detail = inspect_bounded_response(
                 probe_spec,
                 getattr(response, "status", 200),
                 response.headers.get("Content-Type", ""),
                 body,
             )
+            if probe_spec.get("name") == "Hong Kong Government Records Service catalogue" and ok:
+                sample = body[:MAX_BYTES].decode("utf-8", errors="replace")
+                candidates = parse_grs_catalogue_results(sample, "Hong Kong")
+                count = len(candidates)
+                if count == 0:
+                    return False, f"{detail}; parser found 0 metadata-only record links in bounded sample"
+                return True, f"{detail}; parser found {count} metadata-only record link(s) in bounded sample"
+            return ok, detail
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return False, f"{type(exc).__name__}: {str(exc)[:160]}"
 

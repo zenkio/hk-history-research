@@ -991,3 +991,29 @@ def test_exact_date_in_passage_can_still_support_exact_date_claim(write_page, mo
     rendered = page.read_text(encoding="utf-8")
     assert "supports claim 2" in rendered
     assert "Partially supporting evidence" not in rendered
+
+
+def test_judge_prompt_distinguishes_occupation_from_treaty_cession():
+    passage = (
+        "Hong Kong became a British possession at the end of the Opium War (1839-42). "
+        "The island was ceded to the British Crown under the Treaty of Nanking concluded in 1842."
+    )
+    candidate = dict(
+        A_RECORD,
+        title="British possession of Hong Kong Island",
+        note="Scholarly abstract",
+        passage=passage,
+        passage_status="inspectable_abstract",
+    )
+    pool = PromptJudge([{
+        "id": "c1", "relation": "background", "claims": [],
+        "why": "This passage describes treaty cession, not the earlier landing and occupation.",
+    }])
+    ev.judge(
+        pool, "British occupation of Hong Kong Island", 1841,
+        ["British forces occupied Hong Kong Island on 26 January 1841."],
+        [candidate],
+    )
+    assert "military landing/occupation, treaty cession" in pool.prompt
+    assert "does not by itself contradict an earlier occupation date" in pool.prompt
+    assert "Hong Kong became a British possession at the end of the Opium War" in pool.prompt

@@ -980,7 +980,7 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 10  # 10: short passages fail closed; partial evidence and authority metadata are distinct
+JUDGE_VERSION = 11  # 10: short passages fail closed; partial evidence and authority metadata are distinct
 # 9: partial evidence is distinct; source authority is context, not proof
 # 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims

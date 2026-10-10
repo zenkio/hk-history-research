@@ -112,3 +112,12 @@ def test_supporting_claim_can_be_previewed_while_unresolved_core_is_flagged():
     assert result["core_evidence_gate_passed"] is False
     assert "The harbour was busy." in result["markdown"]
     assert "The event occurred in 1841." not in result["markdown"]
+
+
+def test_supporting_only_event_cannot_pass_core_gate():
+    data = records()
+    data["claims"][0]["importance"] = "supporting"
+    result = build_preview(data, EVENT)
+    assert result["claims_included"] == 1
+    assert result["core_evidence_gate_passed"] is False
+    assert "No core claims were present" in result["markdown"]

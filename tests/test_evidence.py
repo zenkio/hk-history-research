@@ -937,7 +937,7 @@ def test_audit_priority_reasons_flag_contradictions_partial_and_high_impact_numb
 def test_full_audit_sampling_prioritizes_critical_and_high_risk_cases():
     assert ev.should_run_full_audit(["contradiction present"], 0.99) is True
     assert ev.should_run_full_audit(["partial evidence present"], 0.99) is True
-    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.24) is True
-    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.26) is False
-    assert ev.should_run_full_audit([], 0.04) is True
-    assert ev.should_run_full_audit([], 0.06) is False
+    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.24, priority_share=0.25) is True
+    assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.26, priority_share=0.25) is False
+    assert ev.should_run_full_audit([], 0.04, baseline_share=0.05) is True
+    assert ev.should_run_full_audit([], 0.06, baseline_share=0.05) is False

@@ -2,6 +2,10 @@
 
 This is the shared operating policy for ChatGPT, Claude Code, and any other coding agent working on this project. Follow it whenever the owner asks to continue, fix, audit, implement, or otherwise work on HK History Research, even if the request is only “continue”.
 
+## Where this policy applies
+
+This policy applies to work in both `zenkio/hk-history-research` (public code) and `zenkio/hk-history-data` (private content/research), regardless of which repository the owner mentions first. If the private repository's older `CLAUDE.md` says to ask before implementing or says the owner must merge every PR, this newer owner-approved agreement takes precedence for the current work. Keep repository-specific guidance aligned in the next permitted PR to the private repository; do not create a second simultaneous PR just to update documentation.
+
 ## Default mode: continue autonomously
 
 - Treat a project-work request as permission to inspect the real repository state and execute the next appropriate work, not merely propose a plan.

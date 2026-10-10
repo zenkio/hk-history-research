@@ -21,13 +21,17 @@ MAX_BYTES = 64 * 1024
 GRS_HOST = "search.grs.gov.hk"
 
 
-def _is_grs_https_url(url):
+def _is_https_host_url(url, host):
     parsed = urlsplit(url)
-    return parsed.scheme == "https" and parsed.hostname == GRS_HOST
+    return parsed.scheme == "https" and parsed.hostname == host
 
 
-def _grs_detail_link_summary(body):
-    """Summarise only link counts from a bounded GRS detail HTML sample."""
+def _is_grs_https_url(url):
+    return _is_https_host_url(url, GRS_HOST)
+
+
+def _detail_link_summary(body):
+    """Summarise only link counts/types from a bounded archive detail HTML sample."""
     decoded = body.decode("utf-8", errors="replace")
     hrefs = re.findall(r"""(?i)\bhref\s*=\s*["']([^"']+)["']""", decoded)
     asset_links = []
@@ -51,32 +55,36 @@ def _grs_detail_link_summary(body):
     }
 
 
-class _SameGRSHostRedirectHandler(urllib.request.HTTPRedirectHandler):
-    """Follow redirects only when they remain on the official HTTPS GRS host."""
+class _SameHostRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Follow redirects only when they remain on the approved HTTPS host."""
+
+    def __init__(self, allowed_host):
+        super().__init__()
+        self.allowed_host = allowed_host
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        if not _is_grs_https_url(newurl):
+        if not _is_https_host_url(newurl, self.allowed_host):
             raise urllib.error.HTTPError(
-                req.full_url, code, "redirect outside approved GRS HTTPS host", headers, fp
+                req.full_url, code, "redirect outside approved HTTPS host", headers, fp
             )
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def probe_grs_record_detail(url, timeout=15):
+def probe_record_detail(url, allowed_host, timeout=15):
     """Inspect one record-detail HTML sample; never fetch linked PDFs or images."""
-    if not _is_grs_https_url(url):
-        return "detail page skipped: URL is not on the official GRS HTTPS host"
+    if not _is_https_host_url(url, allowed_host):
+        return f"detail page skipped: URL is not on approved HTTPS host {allowed_host}"
     request = urllib.request.Request(
         url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"}
     )
-    opener = urllib.request.build_opener(_SameGRSHostRedirectHandler())
+    opener = urllib.request.build_opener(_SameHostRedirectHandler(allowed_host))
     try:
         with opener.open(request, timeout=timeout) as response:
             body = response.read(MAX_BYTES + 1)
             status = getattr(response, "status", 200)
             content_type = response.headers.get("Content-Type", "")
             sample = body[:MAX_BYTES]
-            summary = _grs_detail_link_summary(sample)
+            summary = _detail_link_summary(sample)
             if status < 200 or status >= 300:
                 return f"detail HTTP {status}; no file fetched"
             if not summary["is_html"]:
@@ -89,6 +97,15 @@ def probe_grs_record_detail(url, timeout=15):
             )
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return f"detail probe unavailable: {type(exc).__name__}: {str(exc)[:120]}"
+
+
+def probe_grs_record_detail(url, timeout=15):
+    return probe_record_detail(url, GRS_HOST, timeout=timeout)
+
+
+def probe_tna_record_detail(url, timeout=15):
+    return probe_record_detail(url, "discovery.nationalarchives.gov.uk", timeout=timeout)
+
 
 
 PROBES = [
@@ -230,6 +247,16 @@ def probe(probe_spec, timeout=15):
                     return False, f"{detail}; parser found 0 metadata-only record links in bounded sample"
                 detail_probe = probe_grs_record_detail(candidates[0]["url"], timeout=timeout)
                 return True, f"{detail}; parser found {count} metadata-only record link(s) in bounded sample; first record detail: {detail_probe}"
+            if probe_spec.get("name") == "UK National Archives Discovery API" and ok:
+                data = json.loads(body[:MAX_BYTES].decode("utf-8", errors="replace"))
+                records = data.get("records") or data.get("Records") or []
+                if records:
+                    first = records[0]
+                    identifier = first.get("id") or first.get("Id")
+                    if identifier:
+                        url = f"https://discovery.nationalarchives.gov.uk/details/r/{identifier}"
+                        detail_probe = probe_tna_record_detail(url, timeout=timeout)
+                        return True, f"{detail}; first record detail: {detail_probe}"
             return ok, detail
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return False, f"{type(exc).__name__}: {str(exc)[:160]}"

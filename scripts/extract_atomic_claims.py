@@ -24,7 +24,7 @@ FRONTMATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*\n(.*)\Z", re.S)
 
 EXCLUDED_EXTRACTION_HEADINGS = {
     "claims to verify", "claim to verify", "evidence", "sources", "source",
-    "references", "further reading",
+    "references", "further reading", "wikipedia cross-check", "people and places", "see also",
 }
 
 

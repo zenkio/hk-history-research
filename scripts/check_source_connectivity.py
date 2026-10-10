@@ -190,7 +190,7 @@ PROBES = [
     },
     {
         "name": "Legislation.gov.uk title search for Hong Kong Act", "required": False,
-        "url": "https://www.legislation.gov.uk/search?title=British%20Nationality%20%28Hong%20Kong%29%20Act%201990",
+        "url": "https://www.legislation.gov.uk/search?title=British+Nationality+Act+1990+Hong+Kong",
         "format": "html",
         "shape": "British Nationality (Hong Kong) Act 1990",
     },

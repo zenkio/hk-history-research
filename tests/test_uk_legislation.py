@@ -52,7 +52,7 @@ def test_search_returns_official_inspectable_text_and_ignores_external_links(mon
     assert "Site navigation" not in row["passage"]
     assert row["rights_status"] == "open_government_licence"
     assert calls == [
-        "https://www.legislation.gov.uk/search?title=British+Nationality+Act+1990",
+        "https://www.legislation.gov.uk/search?title=British+Nationality+Act+1990+Hong+Kong",
         "https://www.legislation.gov.uk/ukpga/1990/34",
     ]
 
@@ -82,3 +82,18 @@ def test_query_url_host_validation_and_five_second_pacing(monkeypatch):
         assert "Only HTTPS URLs" in str(exc)
     else:
         raise AssertionError("non-official host must be rejected")
+
+
+def test_search_does_not_append_hong_kong_twice(monkeypatch):
+    seen = []
+
+    def fake_fetch(url):
+        seen.append(url)
+        return SEARCH_HTML if "/search?" in url else ACT_HTML
+
+    monkeypatch.setattr(uk, "_fetch_html", fake_fetch)
+    uk.search("British Nationality Act 1990 Hong Kong")
+    assert seen[0] == (
+        "https://www.legislation.gov.uk/search?title="
+        "British+Nationality+Act+1990+Hong+Kong"
+    )

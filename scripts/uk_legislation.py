@@ -193,13 +193,15 @@ def search(query):
     if not _query_is_relevant(query):
         return []
 
-    search_url = f"{BASE_URL}/search?{urllib.parse.urlencode({'title': query})}"
+    # Prefer titles explicitly about Hong Kong, since this adapter is not a general UK-law search.
+    title_query = query if "hong kong" in query.casefold() else f"{query} Hong Kong"
+    search_url = f"{BASE_URL}/search?{urllib.parse.urlencode({'title': title_query})}"
     search_html = _fetch_html(search_url)
     links = _parse_search_links(search_html)
     if not links:
         return []
 
-    query_tokens = {token.casefold() for token in re.findall(r"[a-z0-9]+", query)}
+    query_tokens = {token.casefold() for token in re.findall(r"[a-z0-9]+", title_query)}
     ranked = sorted(
         links,
         key=lambda item: sum(

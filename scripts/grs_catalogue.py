@@ -34,7 +34,7 @@ class _GRSCatalogueParser(HTMLParser):
         if tag.lower() != "a" or self._active is None:
             return
         href = self._active["href"]
-        title = re.sub(r"\\s+", " ", " ".join(self._active["text"])).strip()
+        title = re.sub(r"\s+", " ", " ".join(self._active["text"])).strip()
         self._active = None
         if title and href:
             self.results.append({"title": title, "href": href})

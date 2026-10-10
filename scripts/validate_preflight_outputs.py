@@ -2,10 +2,12 @@
 """Validate isolated preflight JSONL outputs and always write a non-sensitive manifest."""
 import hashlib
 import json
+import argparse
 import re
 import sys
 from pathlib import Path
 
+from extract_atomic_claims import parse_page
 from research_records import validate_record
 
 EXPECTED = {
@@ -16,7 +18,7 @@ EXPECTED = {
 }
 
 
-def validate_file(path, expected_page):
+def validate_file(path, expected_page, timeline_root):
     if not path.is_file():
         return {"file": path.name, "status": "failed", "reason": "output_missing", "claim_count": 0}
     raw = path.read_bytes()
@@ -61,6 +63,20 @@ def validate_file(path, expected_page):
                 if validate_record(row):
                     reason = "schema_invalid"
                     break
+                source_path = Path(timeline_root) / expected_page
+                if not source_path.is_file():
+                    reason = "source_page_missing"
+                    break
+                try:
+                    _, _, source_prose, explicit_claims = parse_page(source_path.read_text(encoding="utf-8"))
+                except (OSError, ValueError):
+                    reason = "source_page_unreadable"
+                    break
+                source_material = "\n".join([source_prose, *explicit_claims])
+                normalise = lambda value: re.sub(r"\s+", " ", re.sub(r"[*_~]", "", re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", str(value or "")))).strip().casefold()
+                if normalise(provenance["source_excerpt"]) not in normalise(source_material):
+                    reason = "source_excerpt_not_grounded"
+                    break
                 checks = [
                     (row.get("record_type") == "claim", "invalid_record_type"),
                     (row.get("schema_version") == 1, "invalid_schema_version"),
@@ -92,8 +108,8 @@ def validate_file(path, expected_page):
     return entry
 
 
-def build_manifest(out_dir):
-    files = [validate_file(out_dir / f"{name}.jsonl", page) for name, page in EXPECTED.items()]
+def build_manifest(out_dir, timeline_root):
+    files = [validate_file(out_dir / f"{name}.jsonl", page, timeline_root) for name, page in EXPECTED.items()]
     failures = {item["file"]: item.get("reason", "validation_failed")
                 for item in files if item["status"] != "success"}
     return {
@@ -112,9 +128,13 @@ def build_manifest(out_dir):
 
 
 def main(argv=None):
-    out_dir = Path((argv or sys.argv[1:])[0]).resolve()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("out_dir", type=Path)
+    parser.add_argument("--timeline-root", type=Path, required=True)
+    args = parser.parse_args(argv)
+    out_dir = args.out_dir.resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
-    manifest = build_manifest(out_dir)
+    manifest = build_manifest(out_dir, args.timeline_root.resolve())
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print("PREFLIGHT_SUMMARY " + json.dumps({
         "successful_pages": sum(item["status"] == "success" for item in manifest["files"]),

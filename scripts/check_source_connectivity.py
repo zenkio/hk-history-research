@@ -7,6 +7,7 @@ any endpoint is unreachable or returns an unexpected response shape.
 """
 import argparse
 import json
+import re
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -14,6 +15,12 @@ import xml.etree.ElementTree as ET
 USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
+    {
+        "name": "Hong Kong Public Libraries MMIS", "required": False,
+        "url": "https://mmis.hkpl.gov.hk/",
+        "format": "html",
+        "shape": "Multimedia Information System",
+    },
     {
         "name": "Hong Kong Government Records Service catalogue", "required": False,
         "url": "https://search.grs.gov.hk/en/search.xhtml?q=Hong%20Kong",
@@ -57,8 +64,13 @@ def inspect_response(probe, status, content_type, body):
             root = ET.fromstring(body)
             ok = probe["shape"] in root.tag
         elif probe["format"] == "html":
-            page = body.decode("utf-8", errors="replace").casefold()
+            decoded = body.decode("utf-8", errors="replace")
+            page = decoded.casefold()
             ok = "<html" in page and probe["shape"].casefold() in page
+            if not ok:
+                title_match = re.search(r"<title[^>]*>(.*?)</title>", decoded, flags=re.I | re.S)
+                title = re.sub(r"<[^>]+>", " ", title_match.group(1)).strip()[:120] if title_match else "no title tag"
+                return False, f"unexpected HTML response shape; title={title!r}"
         else:
             data = json.loads(body.decode("utf-8"))
             if probe["shape"] == "list":

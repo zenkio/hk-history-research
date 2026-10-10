@@ -215,6 +215,30 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             evidence_rows.append(evidence)
             claim_relations.setdefault(claim_id, []).append(evidence)
 
+    # Keep current inspectable evidence referenced by a manual judgement when the exact
+    # claim is unchanged. Scheduled AI passes must not erase a human's source audit just
+    # because their own retrieval found nothing. If the claim text changes, normal
+    # supersession below still retires the old evidence.
+    evidence_path = records_dir / "evidence.jsonl"
+    existing_evidence = _read_jsonl(evidence_path)
+    existing_judgements = _read_jsonl(records_dir / "judgements.jsonl")
+    current_claim_ids = {row["id"] for row in claim_rows}
+    manual_evidence_ids = {
+        evidence_id
+        for judgement in existing_judgements
+        if str(judgement.get("prompt_version") or "").startswith("manual-")
+        for evidence_id in judgement.get("evidence_ids", [])
+    }
+    for item in existing_evidence:
+        if (
+            item.get("is_current", True)
+            and item.get("evidence_id") in manual_evidence_ids
+            and item.get("claim_id") in current_claim_ids
+        ):
+            related = claim_relations.setdefault(item["claim_id"], [])
+            if all(row.get("evidence_id") != item.get("evidence_id") for row in related):
+                related.append(item)
+
     claim_statuses = {}
     judgement_rows = []
     for claim_text in claim_texts:
@@ -255,7 +279,6 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
     claim_path = records_dir / "claims.jsonl"
     existing_claim_rows = _read_jsonl(claim_path)
     existing_claims = {row["id"]: row for row in existing_claim_rows}
-    current_claim_ids = {row["id"] for row in claim_rows}
     for existing in existing_claim_rows:
         if existing.get("event_id") == event_id and existing.get("id") not in current_claim_ids:
             if existing.get("is_current", True):
@@ -276,13 +299,13 @@ def persist_page_judgement(path, timeline_root, title, date, claims, kept, model
             row["provenance"] = existing.get("provenance", row["provenance"])
     _upsert(claim_path, claim_rows, "id")
 
-    evidence_path = records_dir / "evidence.jsonl"
-    existing_evidence = _read_jsonl(evidence_path)
     affected_claim_ids = {
         row["id"] for row in existing_claim_rows if row.get("event_id") == event_id
     } | current_claim_ids
     for item in existing_evidence:
         if item.get("claim_id") in affected_claim_ids and item.get("is_current", True):
+            if item.get("evidence_id") in manual_evidence_ids and item.get("claim_id") in current_claim_ids:
+                continue
             item["is_current"] = False
             item["superseded_at"] = timestamp
     if existing_evidence:

@@ -15,6 +15,12 @@ USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
     {
+        "name": "Hong Kong Government Records Service catalogue", "required": False,
+        "url": "https://search.grs.gov.hk/en/search.xhtml?q=Hong%20Kong",
+        "format": "html",
+        "shape": "Search Results",
+    },
+    {
         "name": "HKU Digital Repository OAI-PMH", "required": False,
         "url": "https://digitalrepository.lib.hku.hk/oai2?verb=Identify",
         "format": "xml",
@@ -50,6 +56,9 @@ def inspect_response(probe, status, content_type, body):
         if probe["format"] == "xml":
             root = ET.fromstring(body)
             ok = probe["shape"] in root.tag
+        elif probe["format"] == "html":
+            page = body.decode("utf-8", errors="replace").casefold()
+            ok = "<html" in page and probe["shape"].casefold() in page
         else:
             data = json.loads(body.decode("utf-8"))
             if probe["shape"] == "list":
@@ -63,17 +72,26 @@ def inspect_response(probe, status, content_type, body):
     return True, f"HTTP {status}; {content_type or 'content type unknown'}; {len(body)} bytes"
 
 
+def inspect_bounded_response(probe_spec, status, content_type, body):
+    """Validate response shape within the byte budget; HTML probes need only a bounded sample."""
+    if len(body) > MAX_BYTES:
+        if probe_spec.get("format") == "html":
+            ok, detail = inspect_response(probe_spec, status, content_type, body[:MAX_BYTES])
+            if ok:
+                return True, f"{detail}; inspected first {MAX_BYTES} bytes only (response truncated)"
+        return False, f"response exceeded {MAX_BYTES} byte safety limit"
+    return inspect_response(probe_spec, status, content_type, body)
+
+
 def probe(probe_spec, timeout=15):
     request = urllib.request.Request(
         probe_spec["url"],
-        headers={"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/xml"},
+        headers={"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/xml, text/html"},
     )
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             body = response.read(MAX_BYTES + 1)
-            if len(body) > MAX_BYTES:
-                return False, f"response exceeded {MAX_BYTES} byte safety limit"
-            return inspect_response(
+            return inspect_bounded_response(
                 probe_spec,
                 getattr(response, "status", 200),
                 response.headers.get("Content-Type", ""),

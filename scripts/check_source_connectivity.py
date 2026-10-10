@@ -8,6 +8,7 @@ any endpoint is unreachable or returns an unexpected response shape.
 import argparse
 import json
 import re
+import time
 from html import unescape as html_unescape
 import urllib.error
 import urllib.request
@@ -18,6 +19,7 @@ from grs_catalogue import parse_grs_catalogue_results
 
 USER_AGENT = "hk-history-research-source-probe/1.0 (+https://github.com/zenkio/hk-history-research)"
 MAX_BYTES = 64 * 1024
+MIN_HOST_INTERVAL_SECONDS = 5
 GRS_HOST = "search.grs.gov.hk"
 
 
@@ -181,6 +183,12 @@ PROBES = [
         "shape": "British Nationality (Hong Kong) Act 1990",
     },
     {
+        "name": "Legislation.gov.uk title search for Hong Kong Act", "required": False,
+        "url": "https://www.legislation.gov.uk/search?title=British%20Nationality%20%28Hong%20Kong%29%20Act%201990",
+        "format": "html",
+        "shape": "British Nationality (Hong Kong) Act 1990",
+    },
+    {
         "name": "UK National Archives Discovery API", "required": True,
         "url": "https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=Hong%20Kong&sps.resultsPageSize=1&sps.heldByCode=TNA",
         "format": "json",
@@ -274,7 +282,16 @@ def main(argv=None):
     args = parser.parse_args(argv)
     required_total = sum(1 for item in PROBES if item.get("required", True))
     required_failures = optional_failures = required_passes = optional_passes = 0
+    last_host = None
+    last_request_started_at = None
     for item in PROBES:
+        host = urlsplit(item.get("url", "")).hostname
+        if host and host == last_host and last_request_started_at is not None:
+            elapsed = time.monotonic() - last_request_started_at
+            if elapsed < MIN_HOST_INTERVAL_SECONDS:
+                time.sleep(MIN_HOST_INTERVAL_SECONDS - elapsed)
+        last_request_started_at = time.monotonic() if host else None
+        last_host = host
         ok, detail = probe(item, timeout=args.timeout)
         required = item.get("required", True)
         status = "PASS" if ok else ("FAIL" if required else "WARN")

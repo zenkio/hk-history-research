@@ -30,7 +30,7 @@ def prepare_source(tmp_path, page, prose="A grounded historical claim."):
     source = timeline_root / page
     source.parent.mkdir(parents=True, exist_ok=True)
     source.write_text(
-        f'---\\ntitle: "Test event"\\ndate: 1842\\n---\\n{prose}\\n',
+        f'---\ntitle: "Test event"\ndate: 1842\n---\n{prose}\n',
         encoding="utf-8",
     )
     return timeline_root
@@ -40,7 +40,7 @@ def test_validator_accepts_nonempty_schema_valid_unverified_records(tmp_path):
     page = EXPECTED["mpf"]
     timeline_root = prepare_source(tmp_path, page)
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(valid_record(page)) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(valid_record(page)) + "\n", encoding="utf-8")
 
     result = validate_file(output, page, timeline_root)
 
@@ -65,7 +65,7 @@ def test_validator_rejects_supported_claim_status(tmp_path):
     record = valid_record(page)
     record["status"] = "supported"
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(record) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(record) + "\n", encoding="utf-8")
 
     result = validate_file(output, page, timeline_root)
 
@@ -79,11 +79,11 @@ def test_validator_rejects_wrong_source_page_and_duplicate_ids(tmp_path):
     record = valid_record(page)
     record["provenance"]["source_page"] = "content/01_Timeline/wrong.md"
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(record) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(record) + "\n", encoding="utf-8")
     assert validate_file(output, page, timeline_root)["reason"] == "source_page_mismatch"
 
     record["provenance"]["source_page"] = f"content/01_Timeline/{page}"
-    output.write_text(json.dumps(record) + "\\n" + json.dumps(record) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(record) + "\n" + json.dumps(record) + "\n", encoding="utf-8")
     assert validate_file(output, page, timeline_root)["reason"] == "duplicate_record_ids"
 
 
@@ -91,7 +91,7 @@ def test_validator_rejects_excerpt_not_present_in_source(tmp_path):
     page = EXPECTED["mpf"]
     timeline_root = prepare_source(tmp_path, page, prose="Different source sentence.")
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(valid_record(page)) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(valid_record(page)) + "\n", encoding="utf-8")
 
     result = validate_file(output, page, timeline_root)
 
@@ -115,7 +115,7 @@ def test_validator_rejects_claims_over_35_words(tmp_path):
     record = valid_record(page)
     record["text"] = " ".join(["word"] * 36)
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(record) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(record) + "\n", encoding="utf-8")
 
     result = validate_file(output, page, timeline_root)
 

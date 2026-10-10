@@ -548,6 +548,7 @@ def evidence_for_page(pool, path):
         return grade
     data, model, prompt, kept = judge(pool, title, date, claims, candidates)
     print(search_summary(query, candidates, failed, len(kept)))
+    baseline_audit_selected = _rng.random() < AUDIT_SHARE
     rec = None
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
@@ -555,9 +556,26 @@ def evidence_for_page(pool, path):
         if rec and rec.get("disputes"):
             kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
     priority_reasons = audit_priority_reasons(title, date, claims, kept)
-    if rec and any(d.get("judge") in RELATIONS or d.get("jev") in RELATIONS for d in rec.get("disputes", [])):
-        priority_reasons.append("model disagreement on a relevant candidate")
-    if should_run_full_audit(priority_reasons, _rng.random()):
+    if rec and rec.get("disputes"):
+        audit_log = state.load("evidence_audit")
+        latest_jev = next((item for item in reversed(audit_log.get("jev", []))
+                           if item.get("page") == rec.get("page")), None)
+        outcomes = latest_jev.get("second_look", []) if latest_jev else []
+        unresolved_disagreement = not outcomes or any(
+            outcome.get("second") != outcome.get("jev") for outcome in outcomes
+        )
+        if unresolved_disagreement and any(
+            d.get("judge") in RELATIONS or d.get("jev") in RELATIONS for d in rec.get("disputes", [])
+        ):
+            priority_reasons.append("model disagreement on a relevant candidate")
+    critical_audit = bool(set(priority_reasons) & {"contradiction present", "partial evidence present"})
+    if critical_audit:
+        run_full_audit = True
+    elif priority_reasons:
+        run_full_audit = should_run_full_audit(priority_reasons, _rng.random())
+    else:
+        run_full_audit = baseline_audit_selected
+    if run_full_audit:
         audit(pool, path, prompt, candidates, kept, model,
               claim_count=len(event_claims(title, date, claims)), priority_reasons=priority_reasons)
     grade, lines = evidence_block(kept, data.get("missing", "") if isinstance(data, dict) else "", model)

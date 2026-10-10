@@ -86,13 +86,14 @@ def test_default_registry_wraps_existing_adapters_without_network_calls():
     registry = build_default_registry()
     rows = registry.list_sources()
     assert {row["source_id"] for row in rows} == {
-        "hk-government-records-service", "uk-national-archives-discovery", "internet-archive", "openalex",
+        "hk-government-records-service", "uk-national-archives-discovery", "uk-legislation-gov", "internet-archive", "openalex",
     }
     assert all(row["stable_url"].startswith("https://") for row in rows)
     policies = {row["source_id"]: row["rights_policy"] for row in rows}
     assert policies == {
         "hk-government-records-service": "metadata_only",
         "uk-national-archives-discovery": "metadata_only",
+        "uk-legislation-gov": "open_government_licence",
         "internet-archive": "item_rights_gate",
         "openalex": "cc0_dataset",
     }
@@ -103,7 +104,7 @@ def test_evidence_uses_registry_as_its_default_adapter_list():
 
     assert evidence.SOURCES == evidence.SOURCE_REGISTRY.adapters()
     assert [name for name, _ in evidence.SOURCES] == [
-        "Hong Kong Government Records Service", "UK National Archives Discovery", "Internet Archive", "OpenAlex",
+        "Hong Kong Government Records Service", "UK National Archives Discovery", "Legislation.gov.uk", "Internet Archive", "OpenAlex",
     ]
 
 

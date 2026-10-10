@@ -128,6 +128,9 @@ jobs:
           with open(os.environ["MANIFEST"], encoding="utf-8") as handle:
               manifest = json.load(handle)
           failures = manifest.get("failures", {})
+          if manifest.get("prompt_version") != 3:
+              print("FAIL | manifest prompt version must be 3")
+              sys.exit(1)
           if len(manifest.get("files", [])) != 4:
               print("FAIL | manifest must contain exactly four reference pages")
               sys.exit(1)
@@ -137,6 +140,9 @@ jobs:
                   print(f"  {filename}: {reason}")
               sys.exit(1)
           acceptance = manifest.get("acceptance", {})
+          if acceptance.get("all_claims_unverified") is not True:
+              print("FAIL | all extracted claims must remain unverified")
+              sys.exit(1)
           if acceptance.get("live_records_modified") is not False:
               print("FAIL | isolation assertion missing or unsafe")
               sys.exit(1)

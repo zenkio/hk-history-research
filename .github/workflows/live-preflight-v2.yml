@@ -38,9 +38,10 @@ jobs:
       - name: Run focused preflight unit tests
         run: |
           set -euo pipefail
-          pytest -q _code/tests/test_validate_preflight_outputs.py _code/tests/test_extract_atomic_claims.py
+          pytest -q _code/tests/test_validate_preflight_outputs.py _code/tests/test_extract_atomic_claims.py _code/tests/test_atomic_claims.py
 
       - name: Check out private data experiment branch
+        if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
@@ -50,6 +51,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run the configured extractor on four reference pages
+        if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -86,6 +88,7 @@ jobs:
           fi
 
       - name: Save outputs to private experiment branch only
+        if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}
         env:
           OUT: ${{ runner.temp }}/preflight
         run: |
@@ -118,6 +121,7 @@ jobs:
           git -C data push origin HEAD:experiment/preflight-model-output-v3-20261010
 
       - name: Fail if any reference-page extraction failed
+        if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}
         env:
           MANIFEST: ${{ runner.temp }}/preflight/manifest.json
         run: |

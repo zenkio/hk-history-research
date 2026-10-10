@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: evidence-first-live-preflight
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   extract:
@@ -54,41 +54,65 @@ jobs:
           set -euo pipefail
           OUT="$RUNNER_TEMP/preflight"
           mkdir -p "$OUT"
-          python _code/scripts/extract_atomic_claims.py \
-            data/content/01_Timeline/13-transition/1987-implementation-of-the-mandatory-provident-fund-planning.md \
-            --timeline-root data/content/01_Timeline --output "$OUT/mpf.jsonl"
-          python _code/scripts/extract_atomic_claims.py \
-            data/content/01_Timeline/08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md \
-            --timeline-root data/content/01_Timeline --output "$OUT/tatsu-maru.jsonl"
-          python _code/scripts/extract_atomic_claims.py \
-            data/content/01_Timeline/05-opium-war/1841-formal-british-possession-of-hong-kong-island.md \
-            --timeline-root data/content/01_Timeline --output "$OUT/occupation-1841.jsonl"
-          python _code/scripts/extract_atomic_claims.py \
-            data/content/01_Timeline/08-new-territories/1901-assassination-of-yeung-ku-wan.md \
-            --timeline-root data/content/01_Timeline --output "$OUT/yeung-ku-wan.jsonl"
-          python - "$OUT" <<'PY'
+          failures=()
+          run_page() {
+            name="$1"
+            page="$2"
+            if python _code/scripts/extract_atomic_claims.py "data/content/01_Timeline/$page" \
+              --timeline-root data/content/01_Timeline --output "$OUT/$name.jsonl" \
+              2>"$OUT/$name.stderr"; then
+              echo "PAGE_RESULT $name=success"
+            else
+              rc=$?
+              failures+=("$name:$rc")
+              echo "PAGE_RESULT $name=failed exit=$rc"
+            fi
+          }
+          run_page mpf "13-transition/1987-implementation-of-the-mandatory-provident-fund-planning.md"
+          run_page tatsu-maru "08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md"
+          run_page occupation-1841 "05-opium-war/1841-formal-british-possession-of-hong-kong-island.md"
+          run_page yeung-ku-wan "08-new-territories/1901-assassination-of-yeung-ku-wan.md"
+          python - "$OUT" "${failures[@]}" <<'PY'
           import hashlib
           import json
           import sys
           from pathlib import Path
 
           out = Path(sys.argv[1])
-          manifest = {"experiment": "evidence-first-preflight", "files": []}
+          failed = {}
+          for item in sys.argv[2:]:
+              name, _, code = item.partition(":")
+              failed[name] = int(code or "1")
+          manifest = {
+              "experiment": "evidence-first-preflight",
+              "files": [],
+              "failures": failed,
+          }
           for name in ("mpf", "tatsu-maru", "occupation-1841", "yeung-ku-wan"):
               path = out / f"{name}.jsonl"
+              if not path.exists():
+                  manifest["files"].append({
+                      "file": path.name,
+                      "status": "failed",
+                      "exit_code": failed.get(name),
+                  })
+                  continue
               raw = path.read_bytes()
               rows = [json.loads(line) for line in raw.decode("utf-8").splitlines() if line.strip()]
               manifest["files"].append({
                   "file": path.name,
+                  "status": "success",
                   "claim_count": len(rows),
                   "sha256": hashlib.sha256(raw).hexdigest(),
                   "models": sorted({row.get("provenance", {}).get("model", "") for row in rows if row.get("provenance", {}).get("model")}),
                   "prompt_versions": sorted({row.get("provenance", {}).get("prompt_version", "") for row in rows if row.get("provenance", {}).get("prompt_version")}),
               })
           (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-          print("PASS | four private reference-page extractions completed; only counts, model/prompt versions and hashes will be logged")
-          for item in manifest["files"]:
-              print(f"  {item['file']}: claims={item['claim_count']}; sha256={item['sha256'][:12]}; models={','.join(item['models']) or 'none'}")
+          print("PREFLIGHT_SUMMARY " + json.dumps({
+              "successful_pages": sum(1 for item in manifest["files"] if item["status"] == "success"),
+              "failed_pages": len(failed),
+              "claim_counts": {item["file"]: item.get("claim_count", 0) for item in manifest["files"]},
+          }, sort_keys=True))
           PY
 
       - name: Save outputs to private experiment branch only

@@ -35,6 +35,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r _code/requirements.txt --quiet
 
+      - name: Run focused preflight unit tests
+        run: |
+          set -euo pipefail
+          pytest -q _code/tests/test_validate_preflight_outputs.py _code/tests/test_extract_atomic_claims.py
+
       - name: Check out private data experiment branch
         uses: actions/checkout@v7
         with:

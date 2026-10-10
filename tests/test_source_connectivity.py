@@ -279,3 +279,14 @@ def test_detail_probe_reports_shape_for_accepted_html_without_following_assets(m
     assert "no files fetched" in detail
 
 
+
+
+def test_legislation_gov_uk_known_hong_kong_act_is_an_optional_https_probe():
+    spec = next(
+        item for item in probe.PROBES
+        if item["name"] == "Legislation.gov.uk — British Nationality (Hong Kong) Act 1990 text"
+    )
+    assert spec["url"] == "https://www.legislation.gov.uk/ukpga/1990/34"
+    assert spec["format"] == "html"
+    assert spec["shape"] == "British Nationality (Hong Kong) Act 1990"
+    assert spec["required"] is False

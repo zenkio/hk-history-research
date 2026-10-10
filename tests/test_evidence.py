@@ -825,3 +825,67 @@ def test_judge_can_support_date_without_claiming_location(write_page, monkeypatc
     assert "3. The treaty was signed in Hong Kong." in pool.prompt
     assert "supports claim 2" in text
     assert "supports claim 3" not in text
+
+
+
+def test_judge_prompt_separates_source_authority_from_claim_evidence():
+    candidate = dict(
+        A_RECORD,
+        id="c1",
+        institution="Public Records Office",
+        authority_level="official",
+        source_type="archive_record",
+    )
+
+    class Pool:
+        def generate_json(self, role, prompt, **kwargs):
+            self.prompt = prompt
+            return {"relevant": [{
+                "id": "c1", "relation": "supports", "claims": [2],
+                "why": "The inspected passage directly states the date.",
+            }]}, "test-model", []
+
+    pool = Pool()
+    _, _, prompt, kept = ev.judge(pool, "Treaty signing", 1849, ["The treaty was signed in 1849."], [candidate])
+    assert "institution: Public Records Office" in prompt
+    assert "authority_level: official" in prompt
+    assert "Authority is a provenance signal" in prompt
+    assert kept[0]["claims"] == [2]
+    assert kept[0]["relation"] == "supports"
+
+
+def test_conflicting_inspectable_sources_are_both_preserved(write_page, monkeypatch, timeline):
+    page = write_page("p.md", "Treaty signing", 1849, claims=("The treaty was signed in 1849.",))
+    relevant = [
+        {"id": "c1", "relation": "supports", "claims": [2], "why": "The passage states 1849."},
+        {"id": "c2", "relation": "contradicts", "claims": [2], "why": "The passage states 1850 instead."},
+    ]
+    sources = [
+        ("National Archives", lambda q: [dict(A_RECORD, passage="The treaty was signed in 1849.")]),
+        ("OpenAlex", lambda q: [dict(B_PAPER, passage="The treaty was signed in 1850, not 1849.")]),
+    ]
+    done = {}
+    monkeypatch.setattr(ev, "SOURCES", sources)
+    ev.evidence_batch(SaysJudge(relevant), done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
+    text = page.read_text(encoding="utf-8")
+    assert "supports claim 2" in text
+    assert "contradicts claim 2" in text
+    assert "evidence-contradicts" in text
+
+
+def test_exact_number_not_established_by_approximate_passage_is_partial(write_page, monkeypatch, timeline):
+    page = write_page("p.md", "Meeting attendance", 1900, claims=("Exactly 102 people attended the meeting.",))
+    relevant = [{
+        "id": "c1", "relation": "partial", "claims": [2],
+        "why": "The passage says about 100 people, not exactly 102.",
+    }]
+    monkeypatch.setattr(ev, "SOURCES", [
+        ("OpenAlex", lambda q: [dict(B_PAPER, passage="About 100 people attended the meeting.")]),
+    ])
+    done = {}
+    ev.evidence_batch(SaysJudge(relevant), done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
+    text = page.read_text(encoding="utf-8")
+    assert "evidence_grade: none" in text
+    assert "Partially supporting evidence (does not count towards coverage)" in text
+    evidence_section = text.split("## Evidence", 1)[1].split("Part of:", 1)[0]
+    assert "Exactly 102 people attended the meeting." not in evidence_section

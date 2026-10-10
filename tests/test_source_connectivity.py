@@ -166,7 +166,7 @@ def test_grs_detail_link_summary_counts_file_like_links_without_exposing_urls():
         b'<html><body><a href="/en/arcview.xhtml?eid=123">record</a>'
         b'<a href="/download/scan.pdf">scan</a><a href="/search.xhtml">search</a></body></html>'
     )
-    summary = probe._grs_detail_link_summary(body)
+    summary = probe._detail_link_summary(body)
     assert summary == {"is_html": True, "anchor_links": 3, "file_like_links": 1, "asset_types": {"pdf": 1}}
     assert "scan.pdf" not in str(summary)
 
@@ -197,5 +197,85 @@ def test_hong_kong_memory_terms_and_official_documents_are_optional_https_probes
         assert by_name[name]["format"] == "html"
         assert by_name[name]["required"] is False
         assert url.startswith("https://")
+
+
+
+
+def test_tna_live_probe_inspects_first_record_detail_without_fetching_files(monkeypatch):
+    spec = next(item for item in probe.PROBES if item["name"] == "UK National Archives Discovery API")
+
+    class Response:
+        status = 200
+        headers = {"Content-Type": "application/json"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b'{"records": [{"id": "123", "reference": "CO 129"}]}'
+
+    monkeypatch.setattr(probe.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    seen = {}
+
+    def inspect(url, timeout=15):
+        seen["url"] = url
+        return "detail HTTP 200; file-like/asset links=2 (types=pdf:2); no files fetched"
+
+    monkeypatch.setattr(probe, "probe_tna_record_detail", inspect)
+    ok, detail = probe.probe(spec)
+    assert ok
+    assert seen["url"] == "https://discovery.nationalarchives.gov.uk/details/r/123"
+    assert "first record detail: detail HTTP 200" in detail
+    assert "no files fetched" in detail
+
+
+def test_tna_detail_probe_only_accepts_official_https_host():
+    assert probe._is_https_host_url(
+        "https://discovery.nationalarchives.gov.uk/details/r/123",
+        "discovery.nationalarchives.gov.uk",
+    )
+    assert not probe._is_https_host_url(
+        "http://discovery.nationalarchives.gov.uk/details/r/123",
+        "discovery.nationalarchives.gov.uk",
+    )
+    assert not probe._is_https_host_url(
+        "https://example.org/details/r/123",
+        "discovery.nationalarchives.gov.uk",
+    )
+
+
+
+
+def test_detail_probe_reports_shape_for_accepted_html_without_following_assets(monkeypatch):
+    class Response:
+        status = 202
+        headers = {"Content-Type": "text/html"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b'<html><a href="/record.pdf">record</a></html>'
+
+    class Opener:
+        def open(self, request, timeout=15):
+            return Response()
+
+    monkeypatch.setattr(probe.urllib.request, "build_opener", lambda *args: Opener())
+    detail = probe.probe_record_detail(
+        "https://discovery.nationalarchives.gov.uk/details/r/123",
+        "discovery.nationalarchives.gov.uk",
+    )
+    assert "detail HTTP 202" in detail
+    assert "anchor links=1" in detail
+    assert "file-like/asset links=1 (types=pdf:1)" in detail
+    assert "; response; no files fetched" in detail
+    assert "no files fetched" in detail
 
 

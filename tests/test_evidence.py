@@ -680,3 +680,30 @@ def test_gather_routes_registered_sources_through_registry_and_keeps_provenance(
     assert found[0]["institution"] == "Test Archive Institution"
     assert found[0]["authority_level"] == "primary"
     assert found[0]["passage_status"] == "inspectable_record"
+
+
+def test_grs_catalogue_parser_extracts_record_links_as_metadata_only():
+    html = """
+    <html><body>
+      <a href="/en/search.xhtml?q=Hong+Kong">Search Results</a>
+      <a href="/en/redirect.xhtml?eid=YWJjMTIz%3D%3D&amp;ls=q%3Dfire&amp;q=fire&amp;t=0">Shek Kip Mei Fire record</a>
+      <a href="/en/redirect.xhtml?eid=YWJjMTIz%3D%3D&amp;ls=q%3Dfire&amp;q=fire&amp;t=0">Duplicate record link</a>
+      <a href="/en/arcview.xhtml?q=fire">No record ID</a>
+    </body></html>
+    """
+    candidates = ev.parse_grs_catalogue_results(html, "fire")
+    assert len(candidates) == 1
+    candidate = candidates[0]
+    assert candidate["title"] == "Shek Kip Mei Fire record"
+    assert "/en/arcview.xhtml?" in candidate["url"]
+    assert "eid=" in candidate["url"]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "not an inspected historical passage" in candidate["note"]
+
+
+def test_grs_catalogue_never_claims_metadata_as_passage():
+    html = '<a href="/en/redirect.xhtml?eid=abc&amp;q=1841">Hong Kong records</a>'
+    candidate = ev.parse_grs_catalogue_results(html, "1841")[0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""

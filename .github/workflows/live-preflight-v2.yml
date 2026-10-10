@@ -6,7 +6,7 @@ name: One-off evidence-first extraction pilot v3
 on:
   push:
     branches:
-      - experiment/run-live-preflight-v2-20261010
+      - experiment/run-live-preflight-v3-20261010
 
 permissions:
   contents: read

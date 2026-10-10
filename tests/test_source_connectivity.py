@@ -167,7 +167,7 @@ def test_grs_detail_link_summary_counts_file_like_links_without_exposing_urls():
         b'<a href="/download/scan.pdf">scan</a><a href="/search.xhtml">search</a></body></html>'
     )
     summary = probe._grs_detail_link_summary(body)
-    assert summary == {"is_html": True, "anchor_links": 3, "file_like_links": 1}
+    assert summary == {"is_html": True, "anchor_links": 3, "file_like_links": 1, "asset_types": {"pdf": 1}}
     assert "scan.pdf" not in str(summary)
 
 

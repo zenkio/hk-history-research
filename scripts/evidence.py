@@ -323,8 +323,12 @@ def internet_archive(query):
     return out
 
 
-# Prefer primary/official and contemporary sources before scholarly discovery metadata.
-SOURCES = [("National Archives", national_archives), ("Internet Archive", internet_archive), ("OpenAlex", openalex)]
+# The registry is the single source of truth for adapter metadata and ordering. Keep the
+# legacy tuple interface so existing evidence batching and tests remain backward compatible.
+from source_registry import build_default_registry
+
+SOURCE_REGISTRY = build_default_registry()
+SOURCES = SOURCE_REGISTRY.adapters()
 
 
 # ---- page handling -----------------------------------------------------

@@ -123,7 +123,7 @@ class SourceRegistry:
                         status = "metadata_only"
                     rights_policy = source.rights_policy
                     rights_allowed = (
-                        rights_policy == "cc0_dataset"
+                        (rights_policy == "cc0_dataset" and status == "inspectable_abstract")
                         or (
                             rights_policy == "item_rights_gate"
                             and candidate.get("rights_status") == "public_domain_or_cc0"

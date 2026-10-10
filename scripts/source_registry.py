@@ -71,6 +71,10 @@ class SourceRegistry:
         """Return the legacy (name, callable) pairs used by evidence.py and existing tests."""
         return [(source.name, source.search) for source in self._sources.values()]
 
+    def definition_for_name(self, name):
+        """Return a registered adapter by its display name, or None if it is not registered."""
+        return next((source for source in self._sources.values() if source.name == name), None)
+
     def search(self, query, source_ids=None):
         """Search selected adapters, returning candidates and explicit adapter failures.
 
@@ -81,7 +85,7 @@ class SourceRegistry:
         if not isinstance(query, str) or not query.strip():
             raise ValueError("query must be a non-empty string")
         selected = list(self._sources) if source_ids is None else list(source_ids)
-        candidates, failures = [], []
+        candidates, failures, successful_source_ids = [], [], []
         for source_id in selected:
             source = self.get(source_id)  # unknown IDs are programmer/configuration errors
             try:
@@ -104,7 +108,8 @@ class SourceRegistry:
                             "downgraded to metadata_only."
                         )
                     candidate.update({
-                        "source_id": source.source_id,
+                        "registry_source_id": source.source_id,
+                        "source_name": source.name,
                         "institution": source.institution,
                         "source_type": source.source_type,
                         "authority_level": source.authority_level,
@@ -114,6 +119,7 @@ class SourceRegistry:
                         "rights_notes": source.rights_notes,
                     })
                     candidates.append(candidate)
+                successful_source_ids.append(source.source_id)
             except Exception as exc:
                 failures.append({
                     "source_id": source.source_id,
@@ -121,7 +127,12 @@ class SourceRegistry:
                     "error_type": type(exc).__name__,
                     "error": str(exc)[:240],
                 })
-        return {"query": query, "candidates": candidates, "failures": failures}
+        return {
+            "query": query,
+            "candidates": candidates,
+            "failures": failures,
+            "successful_source_ids": successful_source_ids,
+        }
 
 
 def build_default_registry():

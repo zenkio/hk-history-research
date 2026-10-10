@@ -67,8 +67,7 @@ Candidate sources found by search (id, type, year, institution, authority level,
 Use the passage field as the deciding evidence whenever it contains inspected source text or an academic abstract.
 The title, note, institution and authority level are metadata, not historical evidence. Do NOT use them to infer facts
 or to support/contradict a claim when the passage does not establish that fact. Very short fragments without enough
-context (fewer than 30 characters) must be background, not support/contradiction/partial. Authority is a provenance
-signal, not a verdict: a high-authority source still needs a claim-specific passage, and conflicting inspectable
+context (fewer than 30 characters) must be background, not support/contradiction/partial. Authority is a provenance signal, not a verdict: a high-authority source still needs a claim-specific passage, and conflicting inspectable
 passages must remain visible rather than being silently resolved by source rank.
 
 If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,

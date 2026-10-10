@@ -22,6 +22,31 @@ NEXT_HEADING = re.compile(r"(?m)^#{1,4}\s+")
 FRONTMATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*\n(.*)\Z", re.S)
 
 
+EXCLUDED_EXTRACTION_HEADINGS = {
+    "claims to verify", "claim to verify", "evidence", "sources", "source",
+    "references", "further reading",
+}
+
+
+def narrative_prose(body):
+    """Keep draft prose, excluding research/evidence sections that are not the draft itself."""
+    kept = []
+    skipped_level = None
+    for line in body.splitlines():
+        heading = re.match(r"^(#{1,6})\s+(.+?)\s*#*\s*$", line)
+        if heading:
+            level = len(heading.group(1))
+            name = re.sub(r"\s+", " ", heading.group(2)).strip().casefold()
+            if skipped_level is not None and level <= skipped_level:
+                skipped_level = None
+            if skipped_level is None and name in EXCLUDED_EXTRACTION_HEADINGS:
+                skipped_level = level
+                continue
+        if skipped_level is None:
+            kept.append(line)
+    return "\n".join(kept).strip()
+
+
 def parse_page(text):
     """Return title, date, prose, and existing explicit claim bullets."""
     match = FRONTMATTER.match(text)
@@ -51,7 +76,7 @@ def parse_page(text):
                 claim = re.sub(r"^(?:❔|\[[ xX]\])\s*", "", claim).strip()
                 if claim and claim not in claims:
                     claims.append(claim)
-    return title, date, body, claims
+    return title, date, narrative_prose(body), claims
 
 
 def run_extraction(page_path, pool, timeline_root=DEFAULT_TIMELINE_ROOT, created_at=None):

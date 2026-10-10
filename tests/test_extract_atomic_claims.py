@@ -62,3 +62,20 @@ def test_single_page_prototype_rejects_page_outside_timeline(tmp_path):
     outside.write_text("---\ntitle: Outside\n---\nA draft.", encoding="utf-8")
     with pytest.raises(ValueError, match="inside timeline root"):
         run_extraction(outside, object(), timeline_root=tmp_path / "timeline")
+
+
+def test_parse_page_excludes_research_sections_from_extraction_prose():
+    title, date, prose, claims = parse_page(
+        '---\ntitle: "Harbour trade"\ndate: 1842\n---\n'
+        'The harbour was used for trade.\n\n'
+        '## Claims to verify\n- The harbour served foreign merchants.\n\n'
+        '## Evidence\nA catalogue note says the harbour was busy.\n'
+        '### Source notes\nMore metadata not part of the original draft.\n\n'
+        '## Background\nThe harbour predates the event.\n'
+    )
+    assert "The harbour was used for trade." in prose
+    assert "The harbour predates the event." in prose
+    assert "The harbour served foreign merchants." not in prose
+    assert "catalogue note" not in prose
+    assert "More metadata" not in prose
+    assert claims == ["The harbour served foreign merchants."]

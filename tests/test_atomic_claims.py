@@ -146,3 +146,14 @@ def test_claim_record_ids_are_deterministic_and_event_ids_are_checked():
     assert first[0]["id"] == second[0]["id"]
     with pytest.raises(ValueError, match="event_id"):
         build_claim_records([claim], **{**kwargs, "event_id": "harbour"})
+
+
+def test_extraction_over_limit_fails_instead_of_silently_dropping_claims():
+    response = {
+        "claims": [
+            {"text": "Claim one.", "source_excerpt": "Claim one."},
+            {"text": "Claim two.", "source_excerpt": "Claim two."},
+        ]
+    }
+    with pytest.raises(ValueError, match="Refusing to truncate"):
+        validate_atomic_claims(response, "Claim one. Claim two.", max_claims=1)

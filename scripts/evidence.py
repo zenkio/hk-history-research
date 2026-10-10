@@ -66,9 +66,10 @@ Candidate sources found by search (id, type, year, institution, authority level,
 
 Use the passage field as the deciding evidence whenever it contains inspected source text or an academic abstract.
 The title, note, institution and authority level are metadata, not historical evidence. Do NOT use them to infer facts
-or to support/contradict a claim when the passage does not establish that fact. Authority is a provenance signal,
-not a verdict: a high-authority source still needs a claim-specific passage, and conflicting inspectable passages
-must remain visible rather than being silently resolved by source rank.
+or to support/contradict a claim when the passage does not establish that fact. Very short fragments without enough
+context (fewer than 30 characters) must be background, not support/contradiction/partial. Authority is a provenance
+signal, not a verdict: a high-authority source still needs a claim-specific passage, and conflicting inspectable
+passages must remain visible rather than being silently resolved by source rank.
 
 If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
 the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
@@ -94,6 +95,7 @@ Respond with ONLY this JSON:
 
 RANK = {"none": 0, "B": 1, "A": 2}
 RELATIONS = ("supports", "contradicts", "partial")
+MIN_INSPECTABLE_PASSAGE_LENGTH = 30
 COUNTED = ("supports",)  # only direct supporting evidence can raise the evidence grade
 AUDIT_SHARE = 0.05  # share of judged pages that a second model judges again, to measure agreement
 _rng = random.Random()
@@ -627,12 +629,16 @@ def judged(data, candidates, claim_count=None):
         c["why"] = why.strip() if isinstance(why, str) else ""
         relation = str(r.get("relation", "")).lower()
         # Fail closed: only an inspected passage may support or contradict a claim.
-        has_passage = (bool(str(c.get("passage", "")).strip()) and
-                       c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"})
+        passage_text = str(c.get("passage", "")).strip()
+        passage_status_valid = c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"}
+        has_passage = passage_status_valid and len(passage_text) >= MIN_INSPECTABLE_PASSAGE_LENGTH
         valid_judgement = relation in RELATIONS and c["claims"] and bool(c["why"]) and has_passage
         c["relation"] = relation if valid_judgement else "background"
         if relation in RELATIONS and not has_passage:
-            c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
+            if passage_status_valid and passage_text and len(passage_text) < MIN_INSPECTABLE_PASSAGE_LENGTH:
+                c["why"] = "Inspected passage is too short to establish this claim; treated as background."
+            else:
+                c["why"] = "Source passage not inspected; metadata alone cannot establish this claim."
         elif relation in RELATIONS and not valid_judgement:
             c["why"] = "Judgement lacks a valid claim reference or explanatory rationale; treated as background."
         kept.append(c)
@@ -884,7 +890,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 9  # 9: partial evidence is distinct; source authority is context, not proof
+JUDGE_VERSION = 10  # 10: short passages fail closed; partial evidence and authority metadata are distinct
+# 9: partial evidence is distinct; source authority is context, not proof
 # 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
@@ -901,8 +908,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    if version < 9 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
-        return True  # version 9: partial evidence is distinct; authority is context, not proof
+    if version < 10 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # version 10: short passages fail closed; partial and authority rules apply
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

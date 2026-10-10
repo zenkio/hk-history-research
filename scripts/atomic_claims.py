@@ -4,8 +4,9 @@ This module is deliberately not wired into the scheduled pipeline yet. It establ
 testable contract: generated claims must include an excerpt grounded in supplied draft
 material, and can be serialized into the existing versioned research-record schema.
 """
-import hashlib
 import re
+
+from research_record_store import claim_id_for
 
 MAX_CLAIMS = 40
 CLAIM_TYPES = {
@@ -116,15 +117,13 @@ def build_claim_records(claims, *, event_id, source_page, model, prompt_version,
     if not str(created_at or "").strip():
         raise ValueError("created_at is required")
 
-    page_key = re.sub(r"[^a-z0-9._-]+", "-", str(source_page).lower()).strip("-.") or "page"
     records = []
     for claim in claims:
         text = _normalise_space(claim.get("text"))
         excerpt = _normalise_space(claim.get("source_excerpt"))
         if not text or not excerpt:
             raise ValueError("Each claim record requires text and source_excerpt provenance")
-        digest = hashlib.sha256(f"{source_page}\\0{text.casefold()}".encode("utf-8")).hexdigest()[:12]
-        record_id = f"claim:{page_key[:80]}-{digest}"
+        record_id = claim_id_for(event_id, text)
         records.append({
             "record_type": "claim",
             "schema_version": 1,

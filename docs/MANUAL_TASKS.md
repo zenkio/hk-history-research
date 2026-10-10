@@ -15,7 +15,16 @@ This file is the durable hand-off ledger for actions that genuinely require the 
 
 ## Open tasks
 
-_No confirmed human-only tasks recorded yet. Agents should add tasks here as they discover them._
+### [OPEN] Resolve Trove API access and permitted-use terms
+
+- **Why human interaction is required:** Trove's access process may require an API key, an account-specific application, and answers about intended use. The owner must verify and approve any representations made to the archive and accept applicable terms. No key or permission should be assumed to exist.
+- **Blocks:** Any Trove API integration that needs authenticated access, and any use of Trove material beyond the currently approved metadata-only workflow. Independent source-coverage and inspectable-passage work can continue.
+- **Owner decision/action:** Confirm whether Trove has already been contacted or an API key has been issued. If not, review Trove's current API access/usage requirements, answer the intended-use questions accurately for this research project, and review the final application before submission. Do not paste API keys or account secrets into chat or this public repository.
+- **Agent recommendation:** Keep Trove metadata-only until the archive's requirements and any relevant permissions are clear. Do not fetch or send restricted full text/OCR to an AI service based on API availability alone.
+- **Claude browser prompt:** `For my HK History Research project, inspect Trove's official API access and usage requirements using my authorised logged-in browser session. Determine whether an API key/application is needed and identify the questions and terms that require my confirmation. Draft accurate proposed answers based on the project purpose, but do not invent facts, submit the application, accept terms on my behalf, or reveal/store any key. Stop at the review step and report the official page URLs, required owner decisions, and next safe action.`
+- **Gemini browser guide prompt:** `Guide me through Trove's official API access/usage process one step at a time. Tell me what page to open and what each question or term means in plain English. Help me draft truthful answers for my HK History Research project, but wait for my confirmation at each step and do not ask me to paste passwords or API keys into chat. Stop before final submission or acceptance of terms and tell me what non-sensitive confirmation to report to my coding agent.`
+- **Resume when:** The owner confirms existing access, or provides non-sensitive confirmation that the application/usage requirements are resolved. Store any secret only in the appropriate private secret store, never in repository files or this public ledger.
+- **Status/evidence:** The private backlog identifies Trove API access/usage clarification as outstanding. No key or permission has been verified in this session.
 
 ## Task template
 

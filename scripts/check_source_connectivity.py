@@ -16,7 +16,7 @@ from urllib.parse import urlsplit
 
 from grs_catalogue import parse_grs_catalogue_results
 
-USER_AGENT = "hk-history-research-source-probe/1.0"
+USER_AGENT = "hk-history-research-source-probe/1.0 (+https://github.com/zenkio/hk-history-research)"
 MAX_BYTES = 64 * 1024
 GRS_HOST = "search.grs.gov.hk"
 
@@ -173,6 +173,12 @@ PROBES = [
         "url": "https://www.legco.gov.hk/en/open-legco/open-data/hansard-database.html",
         "format": "html",
         "shape": "Database on Official Record of Proceedings",
+    },
+    {
+        "name": "Legislation.gov.uk — British Nationality (Hong Kong) Act 1990 text", "required": False,
+        "url": "https://www.legislation.gov.uk/ukpga/1990/34",
+        "format": "html",
+        "shape": "British Nationality (Hong Kong) Act 1990",
     },
     {
         "name": "UK National Archives Discovery API", "required": True,

@@ -194,7 +194,7 @@ def search(query):
         return []
 
     # Prefer titles explicitly about Hong Kong, since this adapter is not a general UK-law search.
-    title_query = query if re.search(r"\\bhong\\s+kong\\b", query, re.I) else f"{query} Hong Kong"
+    title_query = query if "hong kong" in query.casefold() else f"{query} Hong Kong"
     search_url = f"{BASE_URL}/search?{urllib.parse.urlencode({'title': title_query})}"
     search_html = _fetch_html(search_url)
     links = _parse_search_links(search_html)

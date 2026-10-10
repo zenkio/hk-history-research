@@ -81,17 +81,17 @@ or establishes that it happened; a matching title or catalogue entry alone is no
 
 For each kept candidate:
 - "relation": "supports" if the passage directly supports one or more numbered claims;
-  "contradicts" if the passage directly conflicts with a claim; "background" if it is relevant but
-  does not establish or conflict with a specific claim.
+  "contradicts" if the passage directly conflicts with a claim; "partial" if it directly establishes
+  only part of a claim; "background" if it is relevant but does not establish or conflict with a claim.
 - "claims": the claim numbers directly addressed by the passage (empty for background).
 - "why": one short sentence describing the passage itself and the limit of what it proves.
-If no passage directly bears on a claim, do not label it supports or contradicts.
+If no passage directly bears on a claim, do not label it supports, contradicts, or partial.
 Respond with ONLY this JSON:
 {{"relevant": [{{"id": "c3", "relation": "supports", "claims": [1, 2], "why": "One short sentence"}}],
   "missing": "One sentence on what evidence is still needed, or empty"}}"""
 
 RANK = {"none": 0, "B": 1, "A": 2}
-RELATIONS = ("supports", "contradicts")
+RELATIONS = ("supports", "contradicts", "partial")
 COUNTED = ("supports",)  # only direct supporting evidence can raise the evidence grade
 AUDIT_SHARE = 0.05  # share of judged pages that a second model judges again, to measure agreement
 _rng = random.Random()
@@ -422,6 +422,12 @@ def evidence_block(kept, missing, model):
         lines += [f"- [{c['cite']}]({c['url']}) (⚠ contradicts claim {', '.join(map(str, c.get('claims') or []))}): {c.get('why', '')}"
                   for c in contradicting]
         lines.append("")
+    partial = [c for c in kept if c.get("relation") == "partial"]
+    if partial:
+        lines += ["### Partially supporting evidence (does not count towards coverage)", ""]
+        lines += [f"- [{c['cite']}]({c['url']}) (partially supports claim {', '.join(map(str, c.get('claims') or []))}): {c.get('why', '')}"
+                  for c in partial]
+        lines.append("")
     background = [c for c in kept if c.get("relation") == "background"]
     if background:
         lines += ["### Background reading (does not count towards coverage)", ""]
@@ -673,6 +679,7 @@ JEV_CRITERIA = {
     "out": "Not about this event: a different event, place or period, or only the general subject.",
     "background": "About this event, but bears on none of the numbered claims.",
     "supports": "Bears on a numbered claim and agrees with it. A record or study of this event supports claim 1.",
+    "partial": "Directly supports only part of a numbered claim; do not treat the whole claim as established.",
     "contradicts": "Bears on a numbered claim and disagrees with it (a different date, place or outcome).",
 }
 

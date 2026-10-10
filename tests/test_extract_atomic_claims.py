@@ -71,6 +71,8 @@ def test_parse_page_excludes_research_sections_from_extraction_prose():
         '## Claims to verify\n- The harbour served foreign merchants.\n\n'
         '## Evidence\nA catalogue note says the harbour was busy.\n'
         '### Source notes\nMore metadata not part of the original draft.\n\n'
+        '## People and places\n- [[02_Entities/Places/hong-kong|Hong Kong]]\n\n'
+        '## Wikipedia cross-check\n- The draft omits a precise date.\n\n'
         '## Background\nThe harbour predates the event.\n'
     )
     assert "The harbour was used for trade." in prose
@@ -78,4 +80,6 @@ def test_parse_page_excludes_research_sections_from_extraction_prose():
     assert "The harbour served foreign merchants." not in prose
     assert "catalogue note" not in prose
     assert "More metadata" not in prose
+    assert "Hong Kong" not in prose
+    assert "omits a precise date" not in prose
     assert claims == ["The harbour served foreign merchants."]

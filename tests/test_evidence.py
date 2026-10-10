@@ -645,3 +645,38 @@ def test_frontmatter_declared_chinese_title_and_aliases_join_claim_search():
     assert "條約簽署" in queries
     assert any("Treaty" in query and "Nanking" in query for query in queries)
     assert "Nanking Treaty" in queries
+
+
+def test_gather_routes_registered_sources_through_registry_and_keeps_provenance(monkeypatch):
+    from source_registry import SourceDefinition, SourceRegistry
+
+    adapter = SourceDefinition(
+        source_id="test-archive",
+        name="Registry Test Archive",
+        institution="Test Archive Institution",
+        source_type="archive_record",
+        authority_level="primary",
+        language="en",
+        coverage="Test coverage",
+        stable_url="https://example.org/",
+        retrieval_method="api",
+        search=lambda query: [{
+            "title": "Test record",
+            "url": "https://example.org/record",
+            "passage": "The inspected record directly describes this example event.",
+            "passage_status": "inspectable_record",
+        }],
+    )
+    registry = SourceRegistry([adapter])
+    monkeypatch.setattr(ev, "SOURCE_REGISTRY", registry)
+    monkeypatch.setattr(ev, "SOURCES", registry.adapters())
+
+    found, failed = ev.gather("example event")
+
+    assert failed == []
+    assert len(found) == 1
+    assert found[0]["source"] == "Registry Test Archive"
+    assert found[0]["registry_source_id"] == "test-archive"
+    assert found[0]["institution"] == "Test Archive Institution"
+    assert found[0]["authority_level"] == "primary"
+    assert found[0]["passage_status"] == "inspectable_record"

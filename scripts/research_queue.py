@@ -82,11 +82,17 @@ def build_queue(records, limit=None):
         if status == "supported" and inspectable and judgement:
             continue
 
+        contradictions = [row for row in claim_evidence if row.get("relation") == "contradicts"
+                          and row.get("passage_status") == "inspectable"
+                          and isinstance(row.get("passage"), str)
+                          and len(row["passage"].strip()) >= MIN_PASSAGE_LENGTH]
         reasons = []
         if claim.get("importance") == "core":
             reasons.append("core claim")
         if status in UNRESOLVED:
             reasons.append(f"status={status}")
+        if contradictions:
+            reasons.append("inspectable contradiction present")
         if not inspectable:
             reasons.append("no inspectable passage")
         if not judgement:
@@ -111,6 +117,12 @@ def build_queue(records, limit=None):
             "evidence_count": len(claim_evidence),
             "inspectable_passage_count": len(inspectable),
             "latest_judgement_verdict": judgement.get("verdict") if judgement else None,
+            "latest_judgement_rationale": judgement.get("rationale") if judgement else None,
+            "latest_judgement_uncertainty": judgement.get("uncertainty") if judgement else None,
+            "judged_evidence_ids": list(judgement.get("evidence_ids") or []) if judgement else [],
+            "evidence_ids": [row.get("evidence_id") for row in claim_evidence if row.get("evidence_id")],
+            "source_ids": sorted({row.get("source_id") for row in claim_evidence if row.get("source_id")}),
+            "has_inspectable_contradiction": bool(contradictions),
             "priority_reasons": reasons,
         }))
 
@@ -122,19 +134,20 @@ def build_queue(records, limit=None):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--records-dir", type=Path, default=DEFAULT_RECORDS_DIR)
-    parser.add_argument("--limit", type=int, default=100)
+    parser.add_argument("--limit", type=int, default=100, help="maximum items to emit; use 0 for the full queue")
     parser.add_argument("--output", type=Path, help="Create a new JSONL file; never overwrite")
     args = parser.parse_args(argv)
     try:
         records = load_records(args.records_dir)
-        queue = build_queue(records, limit=args.limit)
+        full_queue = build_queue(records)
+        queue = full_queue[:args.limit] if args.limit > 0 else full_queue
         output = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in queue)
         if args.output:
             with args.output.open("x", encoding="utf-8") as handle:
                 handle.write(output)
         else:
             sys.stdout.write(output)
-        print(f"Research queue: {len(queue)} claim(s) emitted; read-only; no research records changed.", file=sys.stderr)
+        print(f"Research queue: {len(queue)} of {len(full_queue)} eligible claim(s) emitted; read-only; no research records changed.", file=sys.stderr)
         return 0
     except (OSError, ValueError) as exc:
         print(f"Research queue failed: {exc}", file=sys.stderr)

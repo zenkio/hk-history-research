@@ -290,3 +290,31 @@ def test_legislation_gov_uk_known_hong_kong_act_is_an_optional_https_probe():
     assert spec["format"] == "html"
     assert spec["shape"] == "British Nationality (Hong Kong) Act 1990"
     assert spec["required"] is False
+
+
+def test_legislation_title_search_is_an_optional_https_probe():
+    spec = next(
+        item for item in probe.PROBES
+        if item["name"] == "Legislation.gov.uk title search for Hong Kong Act"
+    )
+    assert spec["url"] == (
+        "https://www.legislation.gov.uk/search?title="
+        "British%20Nationality%20%28Hong%20Kong%29%20Act%201990"
+    )
+    assert spec["format"] == "html"
+    assert spec["shape"] == "British Nationality (Hong Kong) Act 1990"
+    assert spec["required"] is False
+
+
+def test_source_probes_respect_five_second_same_host_delay(monkeypatch):
+    monkeypatch.setattr(probe, "PROBES", [
+        {"name": "first", "required": False, "url": "https://example.org/a"},
+        {"name": "second", "required": False, "url": "https://example.org/b"},
+    ])
+    clock = iter([10.0, 10.0, 10.0])
+    monkeypatch.setattr(probe.time, "monotonic", lambda: next(clock))
+    sleeps = []
+    monkeypatch.setattr(probe.time, "sleep", sleeps.append)
+    monkeypatch.setattr(probe, "probe", lambda item, timeout=15: (True, "ok"))
+    assert probe.main([]) == 0
+    assert sleeps == [5]

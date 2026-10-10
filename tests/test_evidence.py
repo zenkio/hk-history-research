@@ -816,7 +816,7 @@ def test_judge_can_support_date_without_claiming_location(write_page, monkeypatc
                 "why": "The passage states the signing date, but not the location.",
             }]}, "test-model", []
 
-    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD, passage="The treaty was signed on 29 August 1849.")])])
     pool = DateOnlyJudge()
     done = {}
     ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)

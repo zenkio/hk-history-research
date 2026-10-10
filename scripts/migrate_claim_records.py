@@ -39,6 +39,26 @@ def event_id_for(path, content_root):
     return "event:" + slug(relative.as_posix())
 
 
+def migration_event_date(text):
+    """Avoid treating a conventional YYYY-01-01 placeholder as a known exact date."""
+    date_value = frontmatter_value(text, "date")
+    year_value = frontmatter_value(text, "year")
+    match = re.fullmatch(r"(\d{4})-01-01", date_value)
+    if not match or year_value != match.group(1):
+        return date_value or year_value
+
+    frontmatter = re.match(r"\A---\s*\n.*?\n---\s*\n(.*)\Z", text, re.S)
+    body = frontmatter.group(1) if frontmatter else text
+    year = match.group(1)
+    explicit_january_first = re.search(
+        rf"(?i)(?:\b{year}-01-01\b|\b1\s+January\s+{year}\b|"
+        rf"\bJanuary\s+1,?\s+{year}\b|\bJan(?:uary)?\s+1,?\s+{year}\b|"
+        rf"\b1\s+Jan(?:uary)?\s+{year}\b)",
+        body,
+    )
+    return date_value if explicit_january_first else year_value
+
+
 def frontmatter_value(text, key):
     match = re.match(r"\A---\s*\n(.*?)\n---", text, re.S)
     if not match:
@@ -104,7 +124,7 @@ def build_records(content_root, now=None, limit=None):
         explicit_claims_extracted += len(page_claims)
         seen_claim_ids = set()
         event_title = frontmatter_value(text, "title")
-        event_date = frontmatter_value(text, "date") or frontmatter_value(text, "year")
+        event_date = migration_event_date(text)
         if event_title and event_date:
             event_claim_text = f"{event_title} occurred in {event_date}."
             event_claim_id = claim_id_for(event_id, event_claim_text)

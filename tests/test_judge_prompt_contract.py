@@ -14,7 +14,7 @@ def test_judge_prompt_prioritises_passages_over_metadata():
 
 def test_prompt_version_change_reopens_previous_evidence_judgements():
     page = "# Example\n\n## Evidence\nOld judgement based on metadata.\n"
-    assert evidence.JUDGE_VERSION == 10
+    assert evidence.JUDGE_VERSION == 11
     assert evidence._to_rejudge(7, "A", page, "06-early-colony/example.md")
     assert evidence._to_rejudge(6, "none", page, "06-early-colony/example.md")
 

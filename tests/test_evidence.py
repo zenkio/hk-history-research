@@ -915,14 +915,14 @@ def test_exact_number_not_established_by_approximate_passage_is_partial(write_pa
 
 
 
-def test_judge_version_10_reopens_old_pages_for_short_passage_rules(write_page, timeline):
-    state.save("evidence_meta", {"judge_version": 9})
-    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 9.\n")
+def test_judge_version_11_reopens_old_pages_for_precision_rules(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 10})
+    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 10.\n")
     done = {"old.md": "B"}
-    assert ev.JUDGE_VERSION == 10
+    assert ev.JUDGE_VERSION == 11
     assert ev.reopen_for_rejudge(done) == 1
     assert done == {}
-    assert state.load("evidence_meta")["judge_version"] == 10
+    assert state.load("evidence_meta")["judge_version"] == 11
 
 
 
@@ -964,3 +964,77 @@ def test_full_audit_sampling_prioritizes_critical_and_high_risk_cases():
     assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.26, priority_share=0.25) is False
     assert ev.should_run_full_audit([], 0.04, baseline_share=0.05) is True
     assert ev.should_run_full_audit([], 0.06, baseline_share=0.05) is False
+
+
+def test_year_only_passage_is_partial_for_exact_calendar_date_claim(write_page, monkeypatch, timeline):
+    page = write_page(
+        "p.md", "Temple construction", 1847,
+        claims=("The temple was built on 1 January 1847.",),
+    )
+    monkeypatch.setattr(ev, "SOURCES", [
+        ("OpenAlex", lambda q: [dict(
+            B_PAPER,
+            passage="The temple compound was built in 1847, with three buildings.",
+            passage_status="inspectable_abstract",
+        )]),
+    ])
+    pool = PromptJudge([{
+        "id": "c1", "relation": "supports", "claims": [2],
+        "why": "The passage says the compound was built in 1847.",
+    }])
+    done = {}
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
+    rendered = page.read_text(encoding="utf-8")
+    assert "The passage establishes the year but not the exact day/month; treated as partial." in rendered
+    assert "Partially supporting evidence (does not count towards coverage)" in rendered
+    assert "partially supports claim 2)" in rendered
+    assert "(⚠ supports claim 2)" not in rendered
+
+
+def test_exact_date_in_passage_can_still_support_exact_date_claim(write_page, monkeypatch, timeline):
+    page = write_page(
+        "p.md", "Treaty signing", 1849,
+        claims=("The treaty was signed on 29 August 1849.",),
+    )
+    monkeypatch.setattr(ev, "SOURCES", [
+        ("National Archives", lambda q: [dict(
+            A_RECORD,
+            passage="The treaty was signed on 29 August 1849.",
+            passage_status="inspectable_record",
+        )]),
+    ])
+    pool = PromptJudge([{
+        "id": "c1", "relation": "supports", "claims": [2],
+        "why": "The passage explicitly states 29 August 1849.",
+    }])
+    done = {}
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
+    rendered = page.read_text(encoding="utf-8")
+    assert "supports claim 2" in rendered
+    assert "Partially supporting evidence" not in rendered
+
+
+def test_judge_prompt_distinguishes_occupation_from_treaty_cession():
+    passage = (
+        "Hong Kong became a British possession at the end of the Opium War (1839-42). "
+        "The island was ceded to the British Crown under the Treaty of Nanking concluded in 1842."
+    )
+    candidate = dict(
+        A_RECORD,
+        title="British possession of Hong Kong Island",
+        note="Scholarly abstract",
+        passage=passage,
+        passage_status="inspectable_abstract",
+    )
+    pool = PromptJudge([{
+        "id": "c1", "relation": "background", "claims": [],
+        "why": "This passage describes treaty cession, not the earlier landing and occupation.",
+    }])
+    ev.judge(
+        pool, "British occupation of Hong Kong Island", 1841,
+        ["British forces occupied Hong Kong Island on 26 January 1841."],
+        [candidate],
+    )
+    assert "military landing/occupation, treaty cession" in pool.prompt
+    assert "does not by itself contradict an earlier occupation date" in pool.prompt
+    assert "Hong Kong became a British possession at the end of the Opium War" in pool.prompt

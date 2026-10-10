@@ -73,6 +73,7 @@ passages must remain visible rather than being silently resolved by source rank.
 If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
 the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
 Never infer the contents of an archive record from its catalogue description or title.
+Distinguish related but different historical stages and legal concepts: military landing/occupation, treaty cession, and declaration or establishment of a colony are not interchangeable. A passage describing a later treaty cession does not by itself contradict an earlier occupation date. If the passage's terminology is ambiguous, classify it as partial or background and explain the distinction rather than inferring a contradiction.
 
 For each candidate, compare the actual passage with the numbered claims. Record only claims that the
 passage directly addresses, and state what the passage establishes. If the passage is ambiguous or only
@@ -579,6 +580,32 @@ def evidence_for_page(pool, path):
     return grade
 
 
+_MONTH_NUMBER = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+_MONTH_PATTERN = r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
+
+
+def _explicit_full_dates(text):
+    """Extract explicit YYYY-MM-DD / day-month-year dates without inferring missing precision."""
+    text = str(text or "")
+    dates = set()
+    for match in re.finditer(r"(?<!\d)((?:18|19|20)\d{2})[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\d|3[01])(?!\d)", text):
+        dates.add((int(match.group(1)), int(match.group(2)), int(match.group(3))))
+    for match in re.finditer(
+        rf"(?i)\b(\d{{1,2}})\s+({_MONTH_PATTERN})\s+((?:18|19|20)\d{{2}})\b",
+        text,
+    ):
+        dates.add((int(match.group(3)), _MONTH_NUMBER[match.group(2)[:3].lower()], int(match.group(1))))
+    for match in re.finditer(
+        rf"(?i)\b({_MONTH_PATTERN})\s+(\d{{1,2}}),?\s+((?:18|19|20)\d{{2}})\b",
+        text,
+    ):
+        dates.add((int(match.group(3)), _MONTH_NUMBER[match.group(1)[:3].lower()], int(match.group(2))))
+    return dates
+
+
 def judge(pool, title, date, claims, candidates):
     """Number the candidates and have the evidence role judge them: (data, model, prompt, kept)."""
     for i, c in enumerate(candidates, 1):
@@ -590,7 +617,8 @@ def judge(pool, title, date, claims, candidates):
         f"| passage_status: {c.get('passage_status', 'metadata_only')} "
         f"| passage: {c.get('passage', '')[:1200]}"
         for c in candidates)
-    claim_text = "\n".join(f"{i}. {claim}" for i, claim in enumerate(event_claims(title, date, claims), 1))
+    claim_texts = event_claims(title, date, claims)
+    claim_text = "\n".join(f"{i}. {claim}" for i, claim in enumerate(claim_texts, 1))
     prompt = JUDGE_PROMPT.format(title=title, date=date, claims=claim_text, candidates=listing)
     data, model, _ = pool.generate_json("evidence", prompt)
     if not isinstance(data, dict) or not isinstance(data.get("relevant"), list):
@@ -599,11 +627,11 @@ def judge(pool, title, date, claims, candidates):
     for item in data["relevant"]:
         if not isinstance(item, dict) or str(item.get("id", "")) not in candidate_ids:
             raise ValueError("Evidence judge returned a malformed item or unknown candidate id")
-    claim_count = len(event_claims(title, date, claims))
-    return data, model, prompt, judged(data, candidates, claim_count=claim_count)
+    claim_count = len(claim_texts)
+    return data, model, prompt, judged(data, candidates, claim_count=claim_count, claim_texts=claim_texts)
 
 
-def judged(data, candidates, claim_count=None):
+def judged(data, candidates, claim_count=None, claim_texts=None):
     """Keep a judgement only when it names valid claims and explains its decision.
 
     Invalid claim numbers, missing rationales, and uninspectable passages fail closed to
@@ -638,6 +666,19 @@ def judged(data, candidates, claim_count=None):
         passage_status_valid = c.get("passage_status") in {"inspectable_text", "inspectable_abstract", "inspectable_record"}
         has_passage = passage_status_valid and len(passage_text) >= MIN_INSPECTABLE_PASSAGE_LENGTH
         valid_judgement = relation in RELATIONS and c["claims"] and bool(c["why"]) and has_passage
+        # A year-only passage cannot support a claim that asserts an exact calendar date.
+        # Keep the inspected passage, but downgrade the relation so it cannot raise coverage.
+        if relation == "supports" and valid_judgement and claim_texts:
+            passage_dates = _explicit_full_dates(passage_text)
+            for claim_number in c["claims"]:
+                claim_dates = _explicit_full_dates(claim_texts[claim_number - 1])
+                if not claim_dates or any(value in passage_dates for value in claim_dates):
+                    continue
+                claim_years = {value[0] for value in claim_dates}
+                if any(re.search(rf"(?<!\d){year}(?!\d)", passage_text) for year in claim_years):
+                    relation = "partial"
+                    c["why"] = "The passage establishes the year but not the exact day/month; treated as partial."
+                    break
         c["relation"] = relation if valid_judgement else "background"
         if relation in RELATIONS and not has_passage:
             if passage_status_valid and passage_text and len(passage_text) < MIN_INSPECTABLE_PASSAGE_LENGTH:
@@ -939,7 +980,7 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 10  # 10: short passages fail closed; partial evidence and authority metadata are distinct
+JUDGE_VERSION = 11  # 10: short passages fail closed; partial evidence and authority metadata are distinct
 # 9: partial evidence is distinct; source authority is context, not proof
 # 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims
@@ -957,8 +998,8 @@ def _to_rejudge(version, grade, text, rel=""):
         return True  # kept, none could count
     if version < 5 and grade in ("A", "B") and "\n## Evidence\n" in text:
         return True  # prior grades counted contradictions as support; recompute under support-only grading
-    if version < 10 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
-        return True  # version 10: short passages fail closed; partial and authority rules apply
+    if version < 11 and grade in ("A", "B", "none") and "\n## Evidence\n" in text:
+        return True  # version 11: exact-date precision and event-stage distinctions apply
     return version < 4 and "/" in rel and rel.split("/")[0] >= JEV_REVIEW_FROM and "\n## Evidence\n" in text
 
 

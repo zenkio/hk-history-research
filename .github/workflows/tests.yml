@@ -82,8 +82,8 @@ jobs:
           from pathlib import Path
 
           preview = Path(sys.argv[1]).read_text(encoding="utf-8")
-          included = re.search(r"Supported claims included: (\\d+)", preview)
-          unresolved = re.search(r"Unresolved core claims: (\\d+)", preview)
+          included = re.search(r"Supported claims included: (\d+)", preview)
+          unresolved = re.search(r"Unresolved core claims: (\d+)", preview)
           assert "RESEARCH PREVIEW — NOT PUBLISHED" in preview
           assert "Core evidence gate: NOT PASSED" in preview
           assert "claim:15-contention-2014-beijing-issues-white-paper-on-hong-kong-067e6e9272" in preview

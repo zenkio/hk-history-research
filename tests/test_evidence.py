@@ -966,7 +966,8 @@ def test_year_only_passage_is_partial_for_exact_calendar_date_claim(write_page, 
     rendered = page.read_text(encoding="utf-8")
     assert "The passage establishes the year but not the exact day/month; treated as partial." in rendered
     assert "Partially supporting evidence (does not count towards coverage)" in rendered
-    assert "supports claim 2" not in rendered
+    assert "(⚠ partially supports claim 2)" in rendered
+    assert "(⚠ supports claim 2)" not in rendered
 
 
 def test_exact_date_in_passage_can_still_support_exact_date_claim(write_page, monkeypatch, timeline):

@@ -711,12 +711,14 @@ def audit(pool, path, prompt, candidates, kept, model, claim_count=None, priorit
     first, second = decisions(kept, candidates), decisions(judged(data2, candidates, claim_count=claim_count), candidates)
     rec = {"page": os.path.relpath(path, TIMELINE_DIR), "date": datetime.now().strftime("%Y-%m-%d"),
            "models": [model, model2], "grades": [grade_of(kept), grade_of(judged(data2, candidates, claim_count=claim_count))],
-           "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second))}
+           "candidates": len(candidates), "same": sum(a == b for a, b in zip(first, second)),
+           "priority_reasons": list(priority_reasons or [])}
     log = state.load("evidence_audit")
     log.setdefault("audits", []).append(rec)
     state.save("evidence_audit", log)
     print(f"  [evidence] audit by {model2}: grade {rec['grades'][1]} vs {rec['grades'][0]}, "
-          f"{rec['same']}/{rec['candidates']} candidates judged the same")
+          f"{rec['same']}/{rec['candidates']} candidates judged the same"
+          + (f"; priority: {', '.join(rec['priority_reasons'])}" if rec["priority_reasons"] else ""))
     return rec
 
 

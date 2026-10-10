@@ -9,11 +9,22 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 40
+PROMPT_VERSION = 2
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
 }
 IMPORTANCE = {"core", "supporting"}
+SUPPORTING_ONLY_TYPES = {"cause", "context", "interpretation", "other"}
+CORE_CONTEXT_PATTERN = re.compile(
+    r"\b(?:aim(?:s|ed)? to|intend(?:s|ed)? to|intended|view(?:s|ed)?|interpret(?:s|ed)?|"
+    r"argu(?:e|es|ed)|believ(?:e|es|ed)|consider(?:s|ed)|fear(?:s|ed)|highlight(?:s|ed)|"
+    r"demonstrat(?:e|es|ed)|illustrat(?:e|s|ed)|reflect(?:s|ed)|suggest(?:s|ed)|"
+    r"symboli[sz](?:e|es|ed)|mark(?:s|ed)?|indicat(?:e|es|ed)|reveal(?:s|ed)|"
+    r"identif(?:y|ies|ied)|faced pressure|debate(?:d)?|watershed|effectively|increasingly|"
+    r"capable of coordinated|modernization|modernisation|shift(?:ed)? responsibility)\b",
+    re.IGNORECASE,
+)
 NEGATION_OR_DENIAL = re.compile(
     r"\b(?:not|never|no|neither|without|none|nothing|cannot|can't|didn't|doesn't|"
     r"wasn't|weren't|isn't|aren't|hasn't|haven't|hadn't|failed|rejected|refused|"
@@ -32,6 +43,16 @@ def _faithful_to_excerpt(claim_text, excerpt):
     if not _number_tokens(claim_text).issubset(_number_tokens(excerpt)):
         return False
     return bool(NEGATION_OR_DENIAL.search(claim_text)) == bool(NEGATION_OR_DENIAL.search(excerpt))
+
+def _normalise_importance(claim_text, claim_type, importance):
+    """Keep core priority for event-defining facts, not interpretation or context."""
+    if importance not in IMPORTANCE:
+        importance = "supporting"
+    if claim_type in SUPPORTING_ONLY_TYPES or CORE_CONTEXT_PATTERN.search(claim_text):
+        return "supporting"
+    return importance
+
+
 RECORD_CLAIM_TYPES = {
     "date": "date",
     "place": "place",
@@ -53,6 +74,11 @@ Split compound statements when their parts could be true/false separately or nee
 Keep exact dates, places, people, causes, actions, outcomes, quantities and interpretations precise.
 Do not add facts from your own knowledge. Do not turn speculation into fact; preserve uncertainty in the wording.
 Avoid duplicate claims. Include claims already listed as "claims to verify" if they are useful, but merge exact duplicates.
+
+Importance rules:
+- Mark a claim core only if it is necessary to identify the event: its date/year, place, primary actor, defining action, or immediate direct outcome.
+- Mark background, context, causes, motives, stakeholder opinions, interpretations, and later consequences as supporting.
+- Never mark cause, context, interpretation, or other claim types as core. If uncertain, choose supporting.
 
 For every claim return:
 - text: one concise, standalone claim, without adding information absent from the source
@@ -111,8 +137,7 @@ def validate_atomic_claims(response, source_material, max_claims=MAX_CLAIMS):
             continue
         if claim_type not in CLAIM_TYPES:
             claim_type = "other"
-        if importance not in IMPORTANCE:
-            importance = "supporting"
+        importance = _normalise_importance(text, claim_type, importance)
         key = _normalise_space(text).casefold()
         if key in seen:
             continue
@@ -187,4 +212,4 @@ def extract_atomic_claims(pool, *, title, date, draft_text, existing_claims=()):
     )
     response, model, _ = pool.generate_json("evidence", prompt)
     claims = validate_atomic_claims(response, source_material)
-    return {"claims": claims, "model": model, "prompt_version": 1}
+    return {"claims": claims, "model": model, "prompt_version": PROMPT_VERSION}

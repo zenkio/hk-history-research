@@ -96,7 +96,7 @@ def test_extractor_uses_evidence_role_and_returns_model_and_version():
     assert pool.role == "evidence"
     assert "Harbour trade" in pool.prompt
     assert result["model"] == "fake-model"
-    assert result["prompt_version"] == 1
+    assert result["prompt_version"] == 2
     assert result["claims"][0]["text"] == "The harbour was used for trade."
 
 
@@ -177,3 +177,31 @@ def test_claims_cannot_reverse_polarity_relative_to_their_excerpt():
                 "source_excerpt": "The scheme was established.",
             }]
         }, "The scheme was established.")
+
+
+def test_context_and_interpretation_claims_are_not_marked_core():
+    response = {
+        "claims": [
+            {
+                "text": "The administration intended to reduce future fiscal burden.",
+                "source_excerpt": "The administration intended to reduce future fiscal burden.",
+                "claim_type": "cause",
+                "importance": "core",
+            },
+            {
+                "text": "The proposal underwent extensive public and legislative debate for nearly a decade.",
+                "source_excerpt": "The proposal underwent extensive public and legislative debate for nearly a decade.",
+                "claim_type": "action",
+                "importance": "core",
+            },
+            {
+                "text": "British forces landed on Hong Kong Island.",
+                "source_excerpt": "British forces landed on Hong Kong Island.",
+                "claim_type": "action",
+                "importance": "core",
+            },
+        ]
+    }
+    material = "\\n".join(item["source_excerpt"] for item in response["claims"])
+    claims = validate_atomic_claims(response, material)
+    assert [claim["importance"] for claim in claims] == ["supporting", "supporting", "core"]

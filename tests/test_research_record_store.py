@@ -182,3 +182,81 @@ def test_registry_metadata_for_scholarship_is_not_downgraded_to_unknown():
     assert source["authority_level"] == "scholarly"
     assert source["language"] == "en"
     assert source["coverage"] == "Scholarly abstracts"
+
+
+def test_manual_evidence_survives_automatic_rejudgement_when_claim_is_unchanged(tmp_path):
+    timeline = tmp_path / "timeline"
+    page = timeline / "05-opium-war" / "1841-example.md"
+    page.parent.mkdir(parents=True)
+    page.write_text("---\ntitle: Example\n---\n", encoding="utf-8")
+    records = tmp_path / "records"
+    candidate = {
+        "source": "Manual official-source audit",
+        "title": "Official record",
+        "url": "https://example.org/manual-evidence",
+        "passage": "The official source states the mint was constructed in 1864.",
+        "passage_status": "inspectable_text",
+        "relation": "contradicts",
+        "claims": [1],
+        "why": "Manual source audit; exact passage inspected.",
+    }
+    store.persist_page_judgement(
+        page, timeline, "Example event", "1846", [], [candidate],
+        None, "manual-source-audit-2026-10-10", records_dir=records,
+    )
+
+    store.persist_page_judgement(
+        page, timeline, "Example event", "1846", [], [],
+        "test-model", 12, records_dir=records,
+    )
+
+    claim = next(
+        row for row in read_jsonl(records / "claims.jsonl")
+        if row["text"] == "Example event occurred in 1846."
+    )
+    evidence = read_jsonl(records / "evidence.jsonl")
+    current_evidence = [row for row in evidence if row.get("is_current")]
+    assert claim["status"] == "contradicted"
+    assert len(current_evidence) == 1
+    assert current_evidence[0]["relation"] == "contradicts"
+    judgements = [
+        row for row in read_jsonl(records / "judgements.jsonl")
+        if row["claim_id"] == claim["id"]
+    ]
+    latest = max(judgements, key=lambda row: row["judged_at"])
+    assert latest["verdict"] == "contradicted"
+    assert current_evidence[0]["evidence_id"] in latest["evidence_ids"]
+
+
+def test_manual_evidence_is_superseded_when_claim_text_changes(tmp_path):
+    timeline = tmp_path / "timeline"
+    page = timeline / "05-opium-war" / "1841-example.md"
+    page.parent.mkdir(parents=True)
+    page.write_text("---\ntitle: Example\n---\n", encoding="utf-8")
+    records = tmp_path / "records"
+    candidate = {
+        "source": "Manual official-source audit",
+        "title": "Official record",
+        "url": "https://example.org/manual-evidence",
+        "passage": "The official source states the mint was constructed in 1864.",
+        "passage_status": "inspectable_text",
+        "relation": "contradicts",
+        "claims": [1],
+        "why": "Manual source audit; exact passage inspected.",
+    }
+    store.persist_page_judgement(
+        page, timeline, "Example event", "1846", [], [candidate],
+        None, "manual-source-audit-2026-10-10", records_dir=records,
+    )
+    store.persist_page_judgement(
+        page, timeline, "Example event", "1864", [], [],
+        "test-model", 12, records_dir=records,
+    )
+    evidence = read_jsonl(records / "evidence.jsonl")
+    assert len(evidence) == 1
+    assert evidence[0]["is_current"] is False
+    claims = read_jsonl(records / "claims.jsonl")
+    old_claim = next(row for row in claims if row["text"] == "Example event occurred in 1846.")
+    new_claim = next(row for row in claims if row["text"] == "Example event occurred in 1864.")
+    assert old_claim["is_current"] is False
+    assert new_claim["status"] == "unverified"

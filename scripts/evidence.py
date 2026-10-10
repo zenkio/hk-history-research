@@ -687,14 +687,16 @@ def audit_priority_reasons(title, date, claims, kept):
     return list(dict.fromkeys(reasons))
 
 
-def should_run_full_audit(priority_reasons, random_value):
+def should_run_full_audit(priority_reasons, random_value, baseline_share=None, priority_share=None):
     """Always audit contradictions/partial evidence; sample other risks at 25%, baseline at 5%."""
     reasons = set(priority_reasons or ())
+    baseline_share = AUDIT_SHARE if baseline_share is None else baseline_share
+    priority_share = PRIORITY_AUDIT_SHARE if priority_share is None else priority_share
     if reasons & {"contradiction present", "partial evidence present"}:
         return True
     if reasons:
-        return random_value < PRIORITY_AUDIT_SHARE
-    return random_value < AUDIT_SHARE
+        return random_value < priority_share
+    return random_value < baseline_share
 
 def audit(pool, path, prompt, candidates, kept, model, claim_count=None, priority_reasons=None):
     """Ask a second, different model the same question and record how far the two agree. The page

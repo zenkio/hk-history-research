@@ -894,14 +894,14 @@ def test_exact_number_not_established_by_approximate_passage_is_partial(write_pa
 
 
 
-def test_judge_version_10_reopens_old_pages_for_short_passage_rules(write_page, timeline):
-    state.save("evidence_meta", {"judge_version": 9})
-    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 9.\n")
+def test_judge_version_11_reopens_old_pages_for_precision_rules(write_page, timeline):
+    state.save("evidence_meta", {"judge_version": 10})
+    write_page("old.md", "Treaty signing", extra="\n## Evidence\n\nOld judgement from version 10.\n")
     done = {"old.md": "B"}
-    assert ev.JUDGE_VERSION == 10
+    assert ev.JUDGE_VERSION == 11
     assert ev.reopen_for_rejudge(done) == 1
     assert done == {}
-    assert state.load("evidence_meta")["judge_version"] == 10
+    assert state.load("evidence_meta")["judge_version"] == 11
 
 
 

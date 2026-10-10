@@ -94,3 +94,8 @@ jobs:
 
       - name: Report research coverage health (read-only)
         run: python3 scripts/research_health.py
+
+      - name: Build prioritised claim queue (read-only)
+        env:
+          QUEUE_PATH: ${{ runner.temp }}/research-queue.jsonl
+        run: python3 scripts/research_queue.py --limit 100 --output "$QUEUE_PATH"

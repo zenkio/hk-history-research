@@ -160,3 +160,38 @@ def test_repeated_write_preserves_existing_verdicts_and_research_metadata(tmp_pa
     source = next(row for row in sources_after if row["stable_url"] == "https://example.org/catalogue/1")
     assert source["authority_level"] == "institutional"
     assert source["event_ids"] == ["event:1841-example", "event:previously-researched"]
+
+
+def test_migration_treats_january_first_as_year_only_unless_page_states_exact_date(tmp_path):
+    root = tmp_path / "timeline"
+    root.mkdir()
+    placeholder = root / "1908-placeholder.md"
+    placeholder.write_text(
+        '---\ntitle: Tatsu Maru Boycott\ndate: 1908-01-01\nyear: 1908\n---\n'
+        '## Summary\nThe boycott spread in March 1908 after the February seizure.\n',
+        encoding="utf-8",
+    )
+    explicit = root / "1841-exact.md"
+    explicit.write_text(
+        '---\ntitle: Occupation\ndate: 1841-01-01\nyear: 1841\n---\n'
+        '## Summary\nThe event took place on 1 January 1841.\n',
+        encoding="utf-8",
+    )
+    exact_non_january = root / "1841-possession.md"
+    exact_non_january.write_text(
+        '---\ntitle: Possession Point\ndate: 1841-01-26\nyear: 1841\n---\n'
+        '## Summary\nThe event took place on 26 January 1841.\n',
+        encoding="utf-8",
+    )
+
+    result = migration.build_records(root, now="2026-10-09T10:00:00Z")
+    event_claims = {
+        Path(claim["provenance"]["source_page"]).stem: claim["text"]
+        for claim in result["claims"]
+        if claim["provenance"]["extraction"] == "event title/date"
+    }
+    assert event_claims["1908-placeholder"] == "Tatsu Maru Boycott occurred in 1908."
+    assert event_claims["1841-exact"] == "Occupation occurred in 1841-01-01."
+    assert event_claims["1841-possession"] == "Possession Point occurred in 1841-01-26."
+
+

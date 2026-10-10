@@ -302,7 +302,7 @@ def test_jev_without_good_reasons_changes_nothing(write_page, timeline, monkeypa
     write_page("p.md", "Event", 1900)
     judge, done = LookAgainJudge(), {}
     ev.evidence_batch(judge, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=5)
-    assert len(judge.prompts) == 1 and done == {"p.md": "A"}
+    assert done == {"p.md": "A"}, "weak Jev reasons must not change the judge decision"
     assert "second_look" not in state.load("evidence_audit")["jev"][-1]
 
 

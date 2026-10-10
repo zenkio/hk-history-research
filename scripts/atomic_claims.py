@@ -72,9 +72,15 @@ def validate_atomic_claims(response, source_material, max_claims=MAX_CLAIMS):
     if not isinstance(response, dict) or not isinstance(response.get("claims"), list):
         raise ValueError("Atomic claim extraction must return a JSON object with a claims list")
 
+    if len(response["claims"]) > max_claims:
+        raise ValueError(
+            f"Atomic claim extraction returned {len(response['claims'])} claims; "
+            f"maximum is {max_claims}. Refusing to truncate potentially important claims."
+        )
+
     validated = []
     seen = set()
-    for item in response["claims"][:max_claims]:
+    for item in response["claims"]:
         if not isinstance(item, dict):
             continue
         text = _normalise_space(item.get("text"))

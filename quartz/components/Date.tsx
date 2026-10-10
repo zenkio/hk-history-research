@@ -18,10 +18,17 @@ export function getDate(data: QuartzPluginData): Date | undefined {
 }
 
 export function formatDate(d: Date, locale: ValidLocale = "en-US"): string {
+  // Year-only frontmatter dates are parsed as 1 January by JavaScript.
+  // Render that sentinel as a year rather than inventing day/month precision.
+  if (d.getMonth() === 0 && d.getDate() === 1) {
+    return d.toLocaleDateString(locale, { year: "numeric", timeZone: "UTC" })
+  }
+
   return d.toLocaleDateString(locale, {
     year: "numeric",
     month: "short",
     day: "2-digit",
+    timeZone: "UTC",
   })
 }
 

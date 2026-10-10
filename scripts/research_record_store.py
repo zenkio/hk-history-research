@@ -84,36 +84,58 @@ def _source_metadata(candidate, event_id, timestamp):
     if not url:
         return None
     source_name = str(candidate.get("source") or "Unknown source")
-    if source_name == "OpenAlex":
-        source_type, authority, method = "academic_work", "scholarly", "api"
-        rights = "OpenAlex metadata is released under CC0; abstract text is used only as supplied in metadata."
-    elif source_name == "National Archives":
-        source_type, authority, method = "archive_record", "institutional", "metadata_only"
-        rights = "Catalogue metadata only; the description is not an inspected source passage."
-    elif source_name == "Internet Archive":
-        source_type, authority = "other", "unknown"
-        method = "ocr" if candidate.get("passage_status") == "inspectable_text" else "metadata_only"
-        rights = "OCR is processed only when item metadata explicitly signals public-domain/CC0; verify item-specific rights before reuse."
-    else:
-        source_type, authority, method = "other", "unknown", "other"
-        rights = "Source authority and rights require manual review."
+    allowed_types = {
+        "government_record", "archive_record", "contemporary_publication", "academic_work",
+        "institutional_collection", "specialist_collection", "community_source", "reference", "other",
+    }
+    allowed_authorities = {"primary", "scholarly", "institutional", "specialist", "discovery_only", "unknown"}
+    allowed_methods = {"api", "web", "ocr", "manual", "metadata_only", "imported", "other"}
+
+    # Prefer the registry's explicit source-family metadata. Fall back to the legacy
+    # mapping for old candidates and test fixtures that predate registry provenance.
+    source_type = candidate.get("source_type")
+    authority = candidate.get("authority_level")
+    method = candidate.get("retrieval_method")
+    institution = candidate.get("institution") or source_name
+    coverage = candidate.get("source_coverage")
+    language = candidate.get("language") or "und"
+    rights = candidate.get("rights_notes")
+    if source_type not in allowed_types or authority not in allowed_authorities:
+        if source_name == "OpenAlex":
+            source_type, authority, method = "academic_work", "scholarly", "api"
+            rights = rights or "OpenAlex metadata is released under CC0; abstract text is used only as supplied in metadata."
+        elif source_name in {"National Archives", "UK National Archives Discovery"}:
+            source_type, authority = "archive_record", "institutional"
+            method = method or "metadata_only"
+            rights = rights or "Catalogue metadata only; the description is not an inspected source passage."
+        elif source_name == "Internet Archive":
+            source_type, authority = "contemporary_publication", "unknown"
+            method = method or ("ocr" if candidate.get("passage_status") == "inspectable_text" else "metadata_only")
+            rights = rights or "OCR is processed only when item metadata explicitly signals public-domain/CC0; verify item-specific rights before reuse."
+        else:
+            source_type, authority, method = "other", "unknown", method or "other"
+            rights = rights or "Source authority and rights require manual review."
+    if method not in allowed_methods:
+        method = "other"
+    if source_name == "Internet Archive" and candidate.get("passage_status") == "inspectable_text":
+        method = "ocr"
     return require_valid_record({
         "record_type": "source",
         "schema_version": 1,
         "source_id": source_id_for(url),
         "title": str(candidate.get("title") or urlparse(url).netloc or source_name)[:500],
-        "institution": source_name,
+        "institution": institution,
         "event_ids": [event_id],
         "source_type": source_type,
         "authority_level": authority,
-        "coverage": None,
-        "language": "und",
+        "coverage": coverage,
+        "language": language,
         "stable_url": url,
         "catalogue_reference": str(candidate.get("catalogue_reference") or "")[:500] or None,
         "retrieval_method": method,
         "publication_date": str(candidate.get("year")) if candidate.get("year") else None,
         "discovered_at": timestamp,
-        "rights_notes": rights,
+        "rights_notes": rights or "Source-specific rights and terms require manual review.",
     })
 
 

@@ -707,3 +707,21 @@ def test_grs_catalogue_never_claims_metadata_as_passage():
     candidate = ev.parse_grs_catalogue_results(html, "1841")[0]
     assert candidate["passage_status"] == "metadata_only"
     assert candidate["passage"] == ""
+
+
+def test_grs_adapter_fails_closed_on_unexpected_html_page(monkeypatch):
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+        def read(self, limit):
+            return b"<html><body>Service unavailable</body></html>"
+
+    monkeypatch.setattr(ev.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    with pytest.raises(ValueError, match="unexpected HTML"):
+        ev.grs_catalogue("Hong Kong history")

@@ -58,11 +58,5 @@ def test_queue_output_is_jsonl_and_never_overwrites_existing_file(tmp_path, monk
     assert queue.main(["--output", str(output)]) == 0
     assert output.read_text(encoding="utf-8") == ""
     assert "read-only" in capsys.readouterr().err
-    try:
-        queue.main(["--output", str(output)])
-    except SystemExit:
-        raise
-    except Exception:
-        pass
-    else:
-        raise AssertionError("expected exclusive file creation to reject overwrite")
+    assert queue.main(["--output", str(output)]) == 2
+    assert "FileExistsError" in capsys.readouterr().err or "File exists" in capsys.readouterr().err

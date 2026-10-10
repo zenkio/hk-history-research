@@ -177,3 +177,25 @@ def test_grs_detail_probe_only_accepts_official_https_host():
     assert not probe._is_grs_https_url("https://example.org/record.pdf")
 
 
+
+
+def test_hong_kong_memory_terms_and_official_documents_are_optional_https_probes():
+    expected = {
+        "Hong Kong Memory official terms": (
+            "https://www.hkmemory.hk/en/terms_of_use.html", "Terms of use"
+        ),
+        "Hong Kong Memory pre-war official documents collection": (
+            "https://www.hkmemory.hk/en/collections-education-official_documents.html",
+            "Official documents",
+        ),
+    }
+    by_name = {item["name"]: item for item in probe.PROBES}
+    for name, (url, marker) in expected.items():
+        assert name in by_name
+        assert by_name[name]["url"] == url
+        assert by_name[name]["shape"] == marker
+        assert by_name[name]["format"] == "html"
+        assert by_name[name]["required"] is False
+        assert url.startswith("https://")
+
+

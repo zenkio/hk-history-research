@@ -103,9 +103,11 @@ def test_grs_live_probe_reports_metadata_only_record_link_count(monkeypatch):
             return b"<html><body>Search Results</body></html>"
 
     monkeypatch.setattr(probe.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    monkeypatch.setattr(probe, "probe_grs_record_detail", lambda url, timeout=15: "detail HTTP 200; file-like/asset links=0; no files fetched")
     ok, detail = probe.probe(spec)
     assert ok
     assert "parser found 1 metadata-only record link" in detail
+    assert "file-like/asset links=0" in detail
 
 
 def test_grs_live_probe_warns_when_parser_finds_no_record_links(monkeypatch):
@@ -126,6 +128,7 @@ def test_grs_live_probe_warns_when_parser_finds_no_record_links(monkeypatch):
             return b"<html><body>Search Results</body></html>"
 
     monkeypatch.setattr(probe.urllib.request, "urlopen", lambda *args, **kwargs: Response())
+    monkeypatch.setattr(probe, "probe_grs_record_detail", lambda url, timeout=15: "not inspected")
     ok, detail = probe.probe(spec)
     assert not ok
     assert "parser found 0 metadata-only record links" in detail
@@ -156,3 +159,21 @@ def test_legco_bills_api_and_hansard_docs_are_optional_https_probes():
         assert by_name[name]["url"] == url
         assert by_name[name]["required"] is False
         assert url.startswith("https://")
+
+
+def test_grs_detail_link_summary_counts_file_like_links_without_exposing_urls():
+    body = (
+        b'<html><body><a href="/en/arcview.xhtml?eid=123">record</a>'
+        b'<a href="/download/scan.pdf">scan</a><a href="/search.xhtml">search</a></body></html>'
+    )
+    summary = probe._grs_detail_link_summary(body)
+    assert summary == {"is_html": True, "anchor_links": 3, "file_like_links": 1}
+    assert "scan.pdf" not in str(summary)
+
+
+def test_grs_detail_probe_only_accepts_official_https_host():
+    assert probe._is_grs_https_url("https://search.grs.gov.hk/en/arcview.xhtml?eid=123")
+    assert not probe._is_grs_https_url("http://search.grs.gov.hk/en/arcview.xhtml?eid=123")
+    assert not probe._is_grs_https_url("https://example.org/record.pdf")
+
+

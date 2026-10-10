@@ -1,4 +1,4 @@
-name: One-off evidence-first extraction pilot
+name: One-off evidence-first extraction pilot v3
 
 # Intentionally limited to this temporary experiment branch. Outputs contain excerpts from
 # private draft pages, so they are committed only to a private data-repository experiment branch.
@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: evidence-first-live-preflight-v2
+  group: evidence-first-live-preflight-v3
   cancel-in-progress: true
 
 jobs:

@@ -122,8 +122,12 @@ def build_records(content_root, now=None, limit=None):
         if not page_claims:
             pages_without_claims.append(path.relative_to(content_root).as_posix())
             relative_page = path.relative_to(content_root.parent).as_posix()
-            era_slug = path.relative_to(content_root).parts[0] if len(path.relative_to(content_root).parts) > 1 else ""
-            priority = "core" if era_slug >= "05-opium-war" or re.search(r"(?:18[4-9]\d|19\d{2}|20\d{2})", path.stem) else "deferred"
+            # Core-period priority starts at 1841, not at an era-folder boundary.
+            # Prefer the page date when present; otherwise use the filename year.
+            year_source = event_date or path.stem
+            year_match = re.search(r"(?<!\d)(18\d{2}|19\d{2}|20\d{2})(?!\d)", year_source)
+            event_year = int(year_match.group(0)) if year_match else None
+            priority = "core" if event_year is not None and event_year >= 1841 else "deferred"
             task = {
                 "record_type": "claim_extraction_task",
                 "schema_version": 1,

@@ -887,4 +887,5 @@ def test_exact_number_not_established_by_approximate_passage_is_partial(write_pa
     text = page.read_text(encoding="utf-8")
     assert "evidence_grade: none" in text
     assert "Partially supporting evidence (does not count towards coverage)" in text
-    assert "Exactly 102 people attended the meeting." not in text.split("### Scholarship coverage")[0]
+    evidence_section = text.split("## Evidence", 1)[1].split("Part of:", 1)[0]
+    assert "Exactly 102 people attended the meeting." not in evidence_section

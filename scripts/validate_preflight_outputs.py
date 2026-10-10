@@ -6,6 +6,8 @@ import re
 import sys
 from pathlib import Path
 
+from research_records import validate_record
+
 EXPECTED = {
     "mpf": "13-transition/1987-implementation-of-the-mandatory-provident-fund-planning.md",
     "tatsu-maru": "08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md",
@@ -55,6 +57,9 @@ def validate_file(path, expected_page):
                 provenance = row.get("provenance")
                 if not isinstance(provenance, dict):
                     reason = "missing_provenance"
+                    break
+                if validate_record(row):
+                    reason = "schema_invalid"
                     break
                 checks = [
                     (row.get("record_type") == "claim", "invalid_record_type"),

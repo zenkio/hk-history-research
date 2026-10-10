@@ -89,7 +89,7 @@ def validate_file(path, expected_page, timeline_root):
                     (isinstance(provenance.get("source_excerpt"), str) and bool(provenance["source_excerpt"].strip()), "missing_source_excerpt"),
                     (provenance.get("source_page") == f"content/01_Timeline/{expected_page}", "source_page_mismatch"),
                     (isinstance(provenance.get("model"), str) and bool(provenance["model"].strip()), "missing_model"),
-                    (provenance.get("prompt_version") == 5, "prompt_version_mismatch"),
+                    (provenance.get("prompt_version") == 6, "prompt_version_mismatch"),
                     (len(re.findall(r"\b\w+\b", row.get("text", ""))) <= 35, "claim_too_long"),
                 ]
                 reason = next((message for valid, message in checks if not valid), "")
@@ -117,7 +117,7 @@ def build_manifest(out_dir, timeline_root):
                 for item in files if item["status"] != "success"}
     return {
         "experiment": "evidence-first-preflight",
-        "prompt_version": 5,
+        "prompt_version": 6,
         "files": files,
         "failures": failures,
         "acceptance": {

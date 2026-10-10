@@ -923,8 +923,8 @@ def test_audit_priority_reasons_flag_contradictions_partial_and_high_impact_numb
         "Tatsu Maru boycott", "1908-02-05",
         ["Exactly 3,000 people were injured in the 1908 incident."],
         [
-            {"relation": "partial", "passage": "About 3,000 people were affected.", "authority_level": "unknown"},
-            {"relation": "contradicts", "passage": "The event occurred in 1907, not 1908."},
+            {"relation": "partial", "passage": "About 3,000 people were affected in 1907.", "authority_level": "unknown"},
+            {"relation": "contradicts", "passage": "The event occurred in 1907."},
         ],
     )
     assert "contradiction present" in reasons

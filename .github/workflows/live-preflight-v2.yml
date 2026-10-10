@@ -63,7 +63,7 @@ jobs:
           run_page() {
             name="$1"
             page="$2"
-            if python _code/scripts/extract_atomic_claims.py "data/content/01_Timeline/$page" \
+            if timeout --signal=TERM --kill-after=10s 6m python _code/scripts/extract_atomic_claims.py "data/content/01_Timeline/$page" \
               --timeline-root data/content/01_Timeline --output "$OUT/$name.jsonl" \
               2>"$OUT/$name.stderr"; then
               echo "PAGE_RESULT $name=success"

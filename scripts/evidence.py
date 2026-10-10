@@ -884,7 +884,8 @@ def reopen_unsearched(done_map):
     return len(stale)
 
 
-JUDGE_VERSION = 8  # 8: neutral event/date claim; no implicit Hong Kong location assertion
+JUDGE_VERSION = 9  # 9: partial evidence is distinct; source authority is context, not proof
+# 8: neutral event/date claim; no implicit Hong Kong location assertion
 # 6: only inspectable source passages may support or contradict claims
 # 2: supports / contradicts / background; background no longer earns a grade
 # 3: claim 1 is the event itself, so a record or study of this event counts

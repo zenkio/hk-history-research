@@ -96,7 +96,7 @@ def test_extractor_uses_evidence_role_and_returns_model_and_version():
     assert pool.role == "evidence"
     assert "Harbour trade" in pool.prompt
     assert result["model"] == "fake-model"
-    assert result["prompt_version"] == 3
+    assert result["prompt_version"] == 4
     assert result["claims"][0]["text"] == "The harbour was used for trade."
 
 

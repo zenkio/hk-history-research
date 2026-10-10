@@ -187,6 +187,10 @@ def gather_claim_candidates(queries):
         selected_sources = SOURCES
         if (query_index > 0 or not use_openalex) and not has_openalex_key:
             selected_sources = [(name, fn) for name, fn in SOURCES if name != "OpenAlex"]
+        # Legislation title search is rate-limited and is most useful for the page title.
+        # Avoid repeating the same law search for every claim/alias on the page.
+        if query_index > 0:
+            selected_sources = [(name, fn) for name, fn in selected_sources if name != "Legislation.gov.uk"]
         queried_sources.update(name for name, _ in selected_sources)
         candidates, failed = gather(query, sources=selected_sources)
         successful_sources.update(name for name, _ in selected_sources if name not in failed)
@@ -446,7 +450,7 @@ def evidence_block(kept, missing, model):
            f"searched on {today}; no relevant evidence was found. This is not proof that the draft is true or false.")
     lines = ["## Evidence", "",
              f"> [!abstract] Evidence coverage: **{grade}** (not a verification verdict)",
-             f"> Sources from the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
+             f"> Sources from Legislation.gov.uk, the UK National Archives, Internet Archive (pre-{PRIMARY_BEFORE} publications) and "
              f"OpenAlex (scholarship), {how}", ""]
     supporting = [c for c in kept if c.get("relation") == "supports"]
     for label, g in (("Primary-source coverage (A)", "A"), ("Scholarship coverage (B)", "B")):
@@ -996,13 +1000,12 @@ def second_look(pool, title, date, claims, candidates, kept, disputes):
 
 
 MAX_RETRIES_PER_RUN = 20  # pages left for later before the batch gives up on a failing source
-SEARCH_VERSION = 3  # 2: failed sources no longer mark a page as searched; 3: descriptive words dropped from queries
+SEARCH_VERSION = 4  # 4: add rights-gated, rate-limited legislation.gov.uk retrieval
 
 
 def reopen_unsearched(done_map):
-    """Once per SEARCH_VERSION, forget "none" results: before version 2 a page was recorded as
-    "no evidence" even when OpenAlex had refused the search, and before version 3 queries kept
-    words like "Disastrous", so those are searched again. Pages with an A or B grade are kept."""
+    """Once per SEARCH_VERSION, forget "none" results after a material search improvement.
+    Pages with an A or B grade are kept; new source coverage is not a historical verification."""
     import state
     meta = state.load("evidence_meta")
     if meta.get("search_version", 1) >= SEARCH_VERSION:

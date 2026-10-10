@@ -16,7 +16,7 @@ ALLOWED_PASSAGE_STATUSES = INSPECTABLE_STATUSES | frozenset({
 })
 
 RIGHTS_POLICIES = frozenset({
-    "metadata_only", "cc0_dataset", "item_rights_gate", "review_required",
+    "metadata_only", "cc0_dataset", "item_rights_gate", "open_government_licence", "review_required",
 })
 
 
@@ -128,6 +128,11 @@ class SourceRegistry:
                             rights_policy == "item_rights_gate"
                             and candidate.get("rights_status") == "public_domain_or_cc0"
                         )
+                        or (
+                            rights_policy == "open_government_licence"
+                            and status == "inspectable_text"
+                            and candidate.get("rights_status") == "open_government_licence"
+                        )
                     )
                     if status in INSPECTABLE_STATUSES and not rights_allowed:
                         candidate["passage_status"] = "metadata_only"
@@ -171,6 +176,7 @@ def build_default_registry():
     """Wrap the existing, tested discovery adapters without changing pipeline wiring."""
     # Import lazily to avoid a module cycle: evidence.py remains the owner of adapters.
     import evidence
+    from uk_legislation import search as search_uk_legislation
 
     return SourceRegistry([
         SourceDefinition(
@@ -200,6 +206,20 @@ def build_default_registry():
             search=evidence.national_archives,
             rights_notes="Catalogue metadata only unless an inspectable record passage is separately retrieved.",
             rights_policy="metadata_only",
+        ),
+        SourceDefinition(
+            source_id="uk-legislation-gov",
+            name="Legislation.gov.uk",
+            institution="The National Archives (UK)",
+            source_type="government_record",
+            authority_level="primary",
+            language="en",
+            coverage="Official UK legislation; title search and inspectable statutory text relevant to Hong Kong history",
+            stable_url="https://www.legislation.gov.uk/search",
+            retrieval_method="web",
+            search=search_uk_legislation,
+            rights_notes="Legislation text is reusable under the Open Government Licence with attribution; preserve item-specific contributor notices and follow the site's 5-second crawl delay and robots.txt.",
+            rights_policy="open_government_licence",
         ),
         SourceDefinition(
             source_id="internet-archive",

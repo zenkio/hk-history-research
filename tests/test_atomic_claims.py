@@ -148,6 +148,21 @@ def test_claim_record_ids_are_deterministic_and_event_ids_are_checked():
         build_claim_records([claim], **{**kwargs, "event_id": "harbour"})
 
 
+
+def test_extraction_allows_more_than_forty_claims_without_semantic_truncation():
+    claims = [
+        {
+            "text": f"Distinct source fact number {i} is recorded.",
+            "source_excerpt": f"Distinct source fact number {i} is recorded.",
+            "claim_type": "action",
+            "importance": "supporting",
+        }
+        for i in range(41)
+    ]
+    source = " ".join(item["source_excerpt"] for item in claims)
+    validated = validate_atomic_claims({"claims": claims}, source)
+    assert len(validated) == 41
+
 def test_technical_runaway_guard_fails_instead_of_silently_dropping_claims():
     response = {
         "claims": [

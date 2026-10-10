@@ -351,7 +351,9 @@ def internet_archive(query):
                     "catalogue_reference": identifier,
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
-                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only", "locator": f"Internet Archive OCR text for {identifier}"})
+                    "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only",
+                    "rights_status": "public_domain_or_cc0" if passage else "not_verified",
+                    "locator": f"Internet Archive OCR text for {identifier}"})
     return out
 
 

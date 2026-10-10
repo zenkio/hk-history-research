@@ -15,6 +15,10 @@ ALLOWED_PASSAGE_STATUSES = INSPECTABLE_STATUSES | frozenset({
     "metadata_only", "retrieval_failed",
 })
 
+RIGHTS_POLICIES = frozenset({
+    "metadata_only", "cc0_dataset", "item_rights_gate", "review_required",
+})
+
 
 @dataclass(frozen=True)
 class SourceDefinition:
@@ -31,6 +35,7 @@ class SourceDefinition:
     retrieval_method: str
     search: Callable[[str], Iterable[dict]]
     rights_notes: str = "Review source-specific rights and terms before reuse or AI processing."
+    rights_policy: str = "review_required"
 
 
 class SourceRegistry:
@@ -50,6 +55,8 @@ class SourceRegistry:
             raise ValueError(f"duplicate source_id: {source.source_id}")
         if not callable(source.search):
             raise TypeError("source search adapter must be callable")
+        if source.rights_policy not in RIGHTS_POLICIES:
+            raise ValueError(f"unsupported rights_policy: {source.rights_policy}")
         self._sources[source.source_id] = source
         return source
 
@@ -60,7 +67,7 @@ class SourceRegistry:
         """Return stable metadata only; callable adapters are deliberately excluded."""
         fields = (
             "source_id", "name", "institution", "source_type", "authority_level",
-            "language", "coverage", "stable_url", "retrieval_method", "rights_notes",
+            "language", "coverage", "stable_url", "retrieval_method", "rights_notes", "rights_policy",
         )
         return [
             {field: getattr(source, field) for field in fields}
@@ -98,6 +105,12 @@ class SourceRegistry:
                     if status not in ALLOWED_PASSAGE_STATUSES:
                         raise ValueError(f"unsupported passage_status: {status}")
                     passage = candidate.get("passage")
+                    if status not in INSPECTABLE_STATUSES and passage:
+                        candidate["passage"] = ""
+                        candidate["registry_note"] = (
+                            "Non-inspectable passage status; passage cleared before AI judgement."
+                        )
+                        passage = ""
                     if status in INSPECTABLE_STATUSES and not (
                         isinstance(passage, str) and passage.strip()
                     ):
@@ -107,6 +120,24 @@ class SourceRegistry:
                             "Adapter labelled this inspectable, but supplied no passage; "
                             "downgraded to metadata_only."
                         )
+                        status = "metadata_only"
+                    rights_policy = source.rights_policy
+                    rights_allowed = (
+                        (rights_policy == "cc0_dataset" and status == "inspectable_abstract")
+                        or (
+                            rights_policy == "item_rights_gate"
+                            and candidate.get("rights_status") == "public_domain_or_cc0"
+                        )
+                    )
+                    if status in INSPECTABLE_STATUSES and not rights_allowed:
+                        candidate["passage_status"] = "metadata_only"
+                        candidate["passage"] = ""
+                        prior_note = candidate.get("registry_note", "")
+                        rights_note = (
+                            f"Source rights policy '{rights_policy}' does not permit this passage "
+                            "to be sent for AI judgement; downgraded to metadata_only."
+                        )
+                        candidate["registry_note"] = f"{prior_note} {rights_note}".strip()
                     candidate.update({
                         "registry_source_id": source.source_id,
                         "source_name": source.name,
@@ -117,6 +148,7 @@ class SourceRegistry:
                         "retrieval_method": source.retrieval_method,
                         "source_coverage": source.coverage,
                         "rights_notes": source.rights_notes,
+                        "rights_policy": source.rights_policy,
                     })
                     candidates.append(candidate)
                 successful_source_ids.append(source.source_id)
@@ -153,6 +185,7 @@ def build_default_registry():
             retrieval_method="web",
             search=evidence.grs_catalogue,
             rights_notes="Catalogue metadata only. Record detail pages are not treated as inspectable historical passages; access conditions may apply.",
+            rights_policy="metadata_only",
         ),
         SourceDefinition(
             source_id="uk-national-archives-discovery",
@@ -166,6 +199,7 @@ def build_default_registry():
             retrieval_method="api",
             search=evidence.national_archives,
             rights_notes="Catalogue metadata only unless an inspectable record passage is separately retrieved.",
+            rights_policy="metadata_only",
         ),
         SourceDefinition(
             source_id="internet-archive",
@@ -179,6 +213,7 @@ def build_default_registry():
             retrieval_method="api",
             search=evidence.internet_archive,
             rights_notes="OCR processing remains default-deny unless item metadata explicitly signals public domain or CC0.",
+            rights_policy="item_rights_gate",
         ),
         SourceDefinition(
             source_id="openalex",
@@ -191,6 +226,7 @@ def build_default_registry():
             stable_url="https://openalex.org/",
             retrieval_method="api",
             search=evidence.openalex,
-            rights_notes="Use discovery metadata and abstracts within source terms; inspect the cited work for stronger claims.",
+            rights_notes="OpenAlex states its dataset is CC0; this covers supplied dataset/abstract content, not underlying publisher full text or separate copies.",
+            rights_policy="cc0_dataset",
         ),
     ])

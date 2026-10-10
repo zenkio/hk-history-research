@@ -146,3 +146,10 @@ python -m pytest tests -q
 - New ingested content goes to `content/` subdirs (not root `01_Timeline/` etc.) so Quartz can render it.
 - The pipeline pushes to hk-history-data with `DATA_REPO_TOKEN`; this repository's workflows only need `contents: read` (plus Pages permissions for deploy, and `actions: write` for the pipeline to queue its next run).
 - Raw data files in root `01_Timeline/`, `03_Angles/` are legacy and not rendered by Quartz.
+
+
+## Autonomous working agreement (applies to every session)
+
+Read [`docs/AUTONOMOUS_WORKING_AGREEMENT.md`](docs/AUTONOMOUS_WORKING_AGREEMENT.md) and follow it for every task. It is the shared operating policy for Claude Code, ChatGPT, and other agents.
+
+**This agreement supersedes conflicting generic wording above** about asking before each implementation decision or requiring the owner to merge every PR. The owner has asked agents to continue autonomously through the backlog, check/retry CI, and merge when all required checks are green and repository protections permit it. Ask only for genuinely owner-controlled decisions or material blockers. Do not stop merely to report progress or because CI is still running; continue safe independent work and re-check it. Never bypass branch protection or treat green software CI as historical verification.

@@ -26,6 +26,7 @@ def test_registry_lists_stable_metadata_without_adapter_callable():
     row = registry.list_sources()[0]
     assert row["source_id"] == "test-archive"
     assert row["institution"] == "Test archive"
+    assert row["rights_policy"] == "review_required"
     assert "search" not in row
 
 
@@ -88,6 +89,13 @@ def test_default_registry_wraps_existing_adapters_without_network_calls():
         "hk-government-records-service", "uk-national-archives-discovery", "internet-archive", "openalex",
     }
     assert all(row["stable_url"].startswith("https://") for row in rows)
+    policies = {row["source_id"]: row["rights_policy"] for row in rows}
+    assert policies == {
+        "hk-government-records-service": "metadata_only",
+        "uk-national-archives-discovery": "metadata_only",
+        "internet-archive": "item_rights_gate",
+        "openalex": "cc0_dataset",
+    }
 
 
 def test_evidence_uses_registry_as_its_default_adapter_list():
@@ -105,3 +113,84 @@ def test_search_reports_success_even_when_an_adapter_returns_zero_results():
     assert result["candidates"] == []
     assert result["failures"] == []
     assert result["successful_source_ids"] == ["empty-archive"]
+
+
+def test_unreviewed_source_cannot_send_inspectable_passage_to_judge():
+    registry = SourceRegistry([source("unreviewed", lambda query: [
+        {"title": "Record", "passage": "A real passage of sufficient length.", "passage_status": "inspectable_record"},
+    ])])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "rights policy 'review_required'" in candidate["registry_note"]
+
+
+def test_cc0_dataset_policy_allows_inspectable_dataset_content():
+    registry = SourceRegistry([source("cc0", lambda query: [
+        {"title": "Abstract", "passage": "Abstract text supplied in the CC0 dataset.", "passage_status": "inspectable_abstract"},
+    ], rights_policy="cc0_dataset")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "inspectable_abstract"
+    assert candidate["passage"] == "Abstract text supplied in the CC0 dataset."
+
+
+def test_item_rights_gate_requires_explicit_public_domain_or_cc0_status():
+    registry = SourceRegistry([source("archive", lambda query: [
+        {"title": "OCR", "passage": "A passage whose item rights are unknown.", "passage_status": "inspectable_text"},
+    ], rights_policy="item_rights_gate")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "item_rights_gate" in candidate["registry_note"]
+
+
+def test_item_rights_gate_allows_explicit_public_domain_or_cc0_status():
+    registry = SourceRegistry([source("archive", lambda query: [
+        {"title": "OCR", "passage": "A passage with explicit item rights.", "passage_status": "inspectable_text",
+         "rights_status": "public_domain_or_cc0"},
+    ], rights_policy="item_rights_gate")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "inspectable_text"
+    assert candidate["rights_status"] == "public_domain_or_cc0"
+
+
+def test_metadata_only_policy_downgrades_even_a_populated_passage():
+    registry = SourceRegistry([source("catalogue", lambda query: [
+        {"title": "Archive metadata", "passage": "A passage accidentally returned by adapter.",
+         "passage_status": "inspectable_record"},
+    ], rights_policy="metadata_only")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+
+
+def test_unsupported_rights_policy_is_rejected():
+    with pytest.raises(ValueError, match="unsupported rights_policy"):
+        SourceRegistry([source("bad-policy", lambda query: [], rights_policy="unknown")])
+
+
+
+def test_metadata_only_status_clears_any_accidentally_supplied_passage():
+    registry = SourceRegistry([source("catalogue", lambda query: [
+        {"title": "Catalogue entry", "passage": "Text that must not be sent to the model.",
+         "passage_status": "metadata_only"},
+    ], rights_policy="metadata_only")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "passage cleared before AI judgement" in candidate["registry_note"]
+
+
+
+
+def test_cc0_dataset_policy_does_not_authorize_full_text_passages():
+    registry = SourceRegistry([source("cc0", lambda query: [
+        {"title": "Full text", "passage": "Full text is not the OpenAlex abstract dataset.",
+         "passage_status": "inspectable_text"},
+    ], rights_policy="cc0_dataset")])
+    candidate = registry.search("event")["candidates"][0]
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""
+    assert "cc0_dataset" in candidate["registry_note"]
+
+

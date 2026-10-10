@@ -67,6 +67,10 @@ class SourceRegistry:
             for source in self._sources.values()
         ]
 
+    def adapters(self):
+        """Return the legacy (name, callable) pairs used by evidence.py and existing tests."""
+        return [(source.name, source.search) for source in self._sources.values()]
+
     def search(self, query, source_ids=None):
         """Search selected adapters, returning candidates and explicit adapter failures.
 

@@ -72,48 +72,13 @@ jobs:
           run_page tatsu-maru "08-new-territories/1908-the-tatsu-maru-boycott-and-anti-japanese-movement.md"
           run_page occupation-1841 "05-opium-war/1841-formal-british-possession-of-hong-kong-island.md"
           run_page yeung-ku-wan "08-new-territories/1901-assassination-of-yeung-ku-wan.md"
-          python - "$OUT" "${failures[@]}" <<'PY'
-          import hashlib
-          import json
-          import sys
-          from pathlib import Path
-
-          out = Path(sys.argv[1])
-          failed = {}
-          for item in sys.argv[2:]:
-              name, _, code = item.partition(":")
-              failed[name] = int(code or "1")
-          manifest = {
-              "experiment": "evidence-first-preflight",
-              "files": [],
-              "failures": failed,
-          }
-          for name in ("mpf", "tatsu-maru", "occupation-1841", "yeung-ku-wan"):
-              path = out / f"{name}.jsonl"
-              if not path.exists():
-                  manifest["files"].append({
-                      "file": path.name,
-                      "status": "failed",
-                      "exit_code": failed.get(name),
-                  })
-                  continue
-              raw = path.read_bytes()
-              rows = [json.loads(line) for line in raw.decode("utf-8").splitlines() if line.strip()]
-              manifest["files"].append({
-                  "file": path.name,
-                  "status": "success",
-                  "claim_count": len(rows),
-                  "sha256": hashlib.sha256(raw).hexdigest(),
-                  "models": sorted({row.get("provenance", {}).get("model", "") for row in rows if row.get("provenance", {}).get("model")}),
-                  "prompt_versions": sorted({row.get("provenance", {}).get("prompt_version", "") for row in rows if row.get("provenance", {}).get("prompt_version")}),
-              })
-          (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-          print("PREFLIGHT_SUMMARY " + json.dumps({
-              "successful_pages": sum(1 for item in manifest["files"] if item["status"] == "success"),
-              "failed_pages": len(failed),
-              "claim_counts": {item["file"]: item.get("claim_count", 0) for item in manifest["files"]},
-          }, sort_keys=True))
-          PY
+          # Validate every output and write a manifest even when extraction failed.
+          # Keep the job alive long enough to commit diagnostic artefacts privately.
+          if python _code/scripts/validate_preflight_outputs.py "$OUT"; then
+            echo "PREFLIGHT_VALIDATION completed"
+          else
+            echo "PREFLIGHT_VALIDATION has failures; outputs will be saved privately before the job fails"
+          fi
 
       - name: Save outputs to private experiment branch only
         env:
@@ -147,8 +112,20 @@ jobs:
           with open(os.environ["MANIFEST"], encoding="utf-8") as handle:
               manifest = json.load(handle)
           failures = manifest.get("failures", {})
-          if failures:
-              print("Preflight extraction failures:", ", ".join(sorted(failures)))
+          if len(manifest.get("files", [])) != 4:
+              print("FAIL | manifest must contain exactly four reference pages")
               sys.exit(1)
-          print("PASS | all four reference-page extractions completed")
+          if failures:
+              print("FAIL | preflight acceptance checks failed:")
+              for filename, reason in sorted(failures.items()):
+                  print(f"  {filename}: {reason}")
+              sys.exit(1)
+          acceptance = manifest.get("acceptance", {})
+          if acceptance.get("live_records_modified") is not False:
+              print("FAIL | isolation assertion missing or unsafe")
+              sys.exit(1)
+          if acceptance.get("bulk_extraction_approved") is not False or acceptance.get("publication_approved") is not False:
+              print("FAIL | preflight must never approve bulk extraction or publication")
+              sys.exit(1)
+          print("PASS | all four reference pages have non-empty valid unverified records")
           PY

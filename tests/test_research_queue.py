@@ -59,4 +59,5 @@ def test_queue_output_is_jsonl_and_never_overwrites_existing_file(tmp_path, monk
     assert output.read_text(encoding="utf-8") == ""
     assert "read-only" in capsys.readouterr().err
     assert queue.main(["--output", str(output)]) == 2
-    assert "FileExistsError" in capsys.readouterr().err or "File exists" in capsys.readouterr().err
+    error = capsys.readouterr().err
+    assert "FileExistsError" in error or "File exists" in error

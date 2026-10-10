@@ -85,7 +85,7 @@ def test_default_registry_wraps_existing_adapters_without_network_calls():
     registry = build_default_registry()
     rows = registry.list_sources()
     assert {row["source_id"] for row in rows} == {
-        "uk-national-archives-discovery", "internet-archive", "openalex",
+        "hk-government-records-service", "uk-national-archives-discovery", "internet-archive", "openalex",
     }
     assert all(row["stable_url"].startswith("https://") for row in rows)
 
@@ -95,7 +95,7 @@ def test_evidence_uses_registry_as_its_default_adapter_list():
 
     assert evidence.SOURCES == evidence.SOURCE_REGISTRY.adapters()
     assert [name for name, _ in evidence.SOURCES] == [
-        "UK National Archives Discovery", "Internet Archive", "OpenAlex",
+        "Hong Kong Government Records Service", "UK National Archives Discovery", "Internet Archive", "OpenAlex",
     ]
 
 

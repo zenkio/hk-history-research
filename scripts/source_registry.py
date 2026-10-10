@@ -142,6 +142,19 @@ def build_default_registry():
 
     return SourceRegistry([
         SourceDefinition(
+            source_id="hk-government-records-service",
+            name="Hong Kong Government Records Service",
+            institution="Government Records Service, Public Records Office",
+            source_type="archive_record",
+            authority_level="primary",
+            language="en",
+            coverage="Online catalogue of Hong Kong government archival records; this adapter retrieves catalogue metadata only",
+            stable_url="https://search.grs.gov.hk/en/index.xhtml",
+            retrieval_method="web",
+            search=evidence.grs_catalogue,
+            rights_notes="Catalogue metadata only. Record detail pages are not treated as inspectable historical passages; access conditions may apply.",
+        ),
+        SourceDefinition(
             source_id="uk-national-archives-discovery",
             name="UK National Archives Discovery",
             institution="The National Archives (UK)",

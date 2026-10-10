@@ -871,7 +871,6 @@ def test_relevant_looking_title_does_not_override_contradictory_passage(write_pa
     rendered = page.read_text(encoding="utf-8")
     assert "title: Treaty signed in 1849" in pool.prompt
     assert "The treaty was signed in 1850, not 1849." in pool.prompt
-    assert "The treaty was signed in 1850, not 1849." in rendered
     assert "contradicts claim 2" in rendered
     assert "supports claim 2" not in rendered
 

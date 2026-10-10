@@ -151,3 +151,30 @@ def test_real_corpus_white_paper_preview_keeps_unsupported_core_claim_unresolved
     assert result["claims_included"] == 3
     assert "claim:15-contention-2014-beijing-issues-white-paper-on-hong-kong-067e6e9272" in unresolved_ids
     assert "NOT PUBLISHED" in result["markdown"]
+
+
+@pytest.mark.parametrize(
+    "event_id",
+    [
+        "event:05-opium-war-1841-formal-british-possession-of-hong-kong-island",
+        "event:08-new-territories-1901-assassination-of-yeung-ku-wan",
+        "event:08-new-territories-1908-the-tatsu-maru-boycott-and-anti-japanese-movement",
+        "event:13-transition-1987-implementation-of-the-mandatory-provident-fund-planning",
+    ],
+)
+def test_real_corpus_risk_cases_remain_preview_only_and_fail_closed(event_id):
+    if not (DEFAULT_RECORDS_DIR / "claims.jsonl").exists():
+        pytest.skip("private research records are only available in the data-repo CI workspace")
+    data = load_records(DEFAULT_RECORDS_DIR)
+    assert any(
+        row.get("event_id") == event_id
+        and row.get("importance") == "core"
+        and row.get("is_current", True) is True
+        for row in data["claims"]
+    ), f"expected a current core claim for {event_id}"
+
+    result = build_preview(data, event_id)
+    assert result["preview_only"] is True
+    assert result["core_evidence_gate_passed"] is False, event_id
+    assert "RESEARCH PREVIEW — NOT PUBLISHED" in result["markdown"]
+    assert "NOT PASSED" in result["markdown"]

@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from atomic_claims import build_claim_records
-from validate_preflight_outputs import EXPECTED, build_manifest, validate_file
+from validate_preflight_outputs import EXPECTED, build_manifest, missing_required_anchors, validate_file
 
 
 def valid_record(page):
@@ -20,7 +20,7 @@ def valid_record(page):
         event_id="event:test",
         source_page=f"content/01_Timeline/{page}",
         model="test-model",
-        prompt_version=6,
+        prompt_version=7,
         created_at="2026-10-10T00:00:00Z",
     )[0]
 
@@ -121,3 +121,19 @@ def test_validator_rejects_claims_over_35_words(tmp_path):
 
     assert result["status"] == "failed"
     assert result["reason"] == "claim_too_long"
+
+
+def test_coverage_gate_rejects_missing_core_anchors():
+    rows = [{"text": "The ship was released and a boycott followed.", "importance": "supporting"}]
+    missing = missing_required_anchors("tatsu-maru", rows)
+    assert any("february 1908" in item for item in missing)
+    assert any("march 1908" in item for item in missing)
+
+
+def test_coverage_gate_accepts_required_anchors_across_claims():
+    rows = [
+        {"text": "In February 1908 the Tatsu Maru was detained.", "importance": "core"},
+        {"text": "The vessel was released.", "importance": "core"},
+        {"text": "A boycott began in March 1908.", "importance": "core"},
+    ]
+    assert missing_required_anchors("tatsu-maru", rows) == []

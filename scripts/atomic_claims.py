@@ -9,7 +9,7 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 150  # Technical runaway guard only; never truncate output.
-PROMPT_VERSION = 6
+PROMPT_VERSION = 7
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
@@ -70,6 +70,14 @@ RECORD_CLAIM_TYPES = {
 ATOMIC_CLAIM_PROMPT = """Extract independently testable historical claims from this Hong Kong history draft.
 
 A claim must express one factual or interpretive proposition that can be researched independently.
+Before extracting, inspect the entire supplied narrative and all existing claims-to-verify. Preserve every event-defining fact explicitly stated in the draft; do not select only the easiest or most prominent statements.
+Coverage requirements:
+- Preserve every distinct explicit date/year attached to the event's main action, a decision, injury, death, release, or direct outcome. Keep different dates as separate claims; do not collapse a sequence into one date.
+- Preserve the principal actor, defining action, and specific location when stated.
+- Preserve direct outcomes such as a death the following day, a vessel's release, or a formal decision.
+- Keep related stages distinct (for example, ship seizure, diplomatic settlement/release, and a later boycott; occupation and later treaty cession).
+- The title/frontmatter date does not replace dates in the narrative. Never infer an exact day from a year-only date.
+- Do not use claim count or brevity as a reason to omit a material fact.
 Split compound statements when their parts could be true/false separately or need different evidence.
 Each claim should be no more than 30 words; split longer sentences into separate propositions rather than compressing several facts into one.
 Do not target a fixed number of claims. Preserve all material, independently testable facts in the supplied draft, especially the event's defining date, actors, actions, formal declarations, immediate outcomes, and concrete details that distinguish this event from others. Do not omit a material fact merely to make the output shorter. Keep genuinely independent propositions separate, but merge paraphrases and repeated descriptions of the same proposition. The caller enforces a generous technical ceiling of 150 claims to prevent runaway output; this is not a semantic target. If that ceiling is exceeded, fail explicitly rather than truncating.

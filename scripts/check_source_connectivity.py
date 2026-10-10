@@ -8,14 +8,82 @@ any endpoint is unreachable or returns an unexpected response shape.
 import argparse
 import json
 import re
+from html import unescape as html_unescape
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+from urllib.parse import urlsplit
 
 from grs_catalogue import parse_grs_catalogue_results
 
 USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
+GRS_HOST = "search.grs.gov.hk"
+
+
+def _is_grs_https_url(url):
+    parsed = urlsplit(url)
+    return parsed.scheme == "https" and parsed.hostname == GRS_HOST
+
+
+def _grs_detail_link_summary(body):
+    """Summarise only link counts from a bounded GRS detail HTML sample."""
+    decoded = body.decode("utf-8", errors="replace")
+    hrefs = re.findall(r"""(?i)\bhref\s*=\s*["']([^"']+)["']""", decoded)
+    asset_links = []
+    for href in hrefs:
+        normalized = html_unescape(href).casefold()
+        path = urlsplit(normalized).path
+        if path.endswith((".pdf", ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".jp2", ".djvu")) or re.search(
+            r"(?:download|attachment|scan|digitalobject)", normalized
+        ):
+            asset_links.append(path)
+    return {
+        "is_html": "<html" in decoded.casefold(),
+        "anchor_links": len(hrefs),
+        "file_like_links": len(asset_links),
+    }
+
+
+class _SameGRSHostRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Follow redirects only when they remain on the official HTTPS GRS host."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if not _is_grs_https_url(newurl):
+            raise urllib.error.HTTPError(
+                req.full_url, code, "redirect outside approved GRS HTTPS host", headers, fp
+            )
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def probe_grs_record_detail(url, timeout=15):
+    """Inspect one record-detail HTML sample; never fetch linked PDFs or images."""
+    if not _is_grs_https_url(url):
+        return "detail page skipped: URL is not on the official GRS HTTPS host"
+    request = urllib.request.Request(
+        url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"}
+    )
+    opener = urllib.request.build_opener(_SameGRSHostRedirectHandler())
+    try:
+        with opener.open(request, timeout=timeout) as response:
+            body = response.read(MAX_BYTES + 1)
+            status = getattr(response, "status", 200)
+            content_type = response.headers.get("Content-Type", "")
+            sample = body[:MAX_BYTES]
+            summary = _grs_detail_link_summary(sample)
+            if status < 200 or status >= 300:
+                return f"detail HTTP {status}; no file fetched"
+            if not summary["is_html"]:
+                return f"detail HTTP {status}; unexpected non-HTML response; no file fetched"
+            return (
+                f"detail HTTP {status}; {content_type or 'content type unknown'}; "
+                f"inspected {len(sample)} bounded bytes; anchor links={summary['anchor_links']}; "
+                f"file-like/asset links={summary['file_like_links']}; no files fetched"
+            )
+    except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
+        return f"detail probe unavailable: {type(exc).__name__}: {str(exc)[:120]}"
+
+
 PROBES = [
     {
         "name": "Hong Kong Public Libraries MMIS legacy hostname", "required": False,
@@ -141,7 +209,8 @@ def probe(probe_spec, timeout=15):
                 count = len(candidates)
                 if count == 0:
                     return False, f"{detail}; parser found 0 metadata-only record links in bounded sample"
-                return True, f"{detail}; parser found {count} metadata-only record link(s) in bounded sample"
+                detail_probe = probe_grs_record_detail(candidates[0]["url"], timeout=timeout)
+                return True, f"{detail}; parser found {count} metadata-only record link(s) in bounded sample; first record detail: {detail_probe}"
             return ok, detail
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return False, f"{type(exc).__name__}: {str(exc)[:160]}"

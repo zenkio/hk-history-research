@@ -249,7 +249,7 @@ def test_tna_detail_probe_only_accepts_official_https_host():
 
 
 
-def test_detail_probe_reports_shape_for_non_success_html_without_following_assets(monkeypatch):
+def test_detail_probe_reports_shape_for_accepted_html_without_following_assets(monkeypatch):
     class Response:
         status = 202
         headers = {"Content-Type": "text/html"}
@@ -275,7 +275,7 @@ def test_detail_probe_reports_shape_for_non_success_html_without_following_asset
     assert "detail HTTP 202" in detail
     assert "anchor links=1" in detail
     assert "file-like/asset links=1 (types=pdf:1)" in detail
-    assert "non-success HTTP response" in detail
+    assert "; response; no files fetched" in detail
     assert "no files fetched" in detail
 
 

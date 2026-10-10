@@ -63,8 +63,13 @@ def inspect_response(probe, status, content_type, body):
             root = ET.fromstring(body)
             ok = probe["shape"] in root.tag
         elif probe["format"] == "html":
-            page = body.decode("utf-8", errors="replace").casefold()
+            decoded = body.decode("utf-8", errors="replace")
+            page = decoded.casefold()
             ok = "<html" in page and probe["shape"].casefold() in page
+            if not ok:
+                title_match = re.search(r"<title[^>]*>(.*?)</title>", decoded, flags=re.I | re.S)
+                title = re.sub(r"<[^>]+>", " ", title_match.group(1)).strip()[:120] if title_match else "no title tag"
+                return False, f"unexpected HTML response shape; title={title!r}"
         else:
             data = json.loads(body.decode("utf-8"))
             if probe["shape"] == "list":

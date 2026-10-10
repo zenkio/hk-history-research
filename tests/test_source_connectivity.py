@@ -143,3 +143,16 @@ def test_current_hkpl_and_hku_repository_probes_are_optional_https():
         assert by_name[name]["url"] == url
         assert by_name[name]["required"] is False
         assert url.startswith("https://")
+
+
+
+def test_legco_bills_api_and_hansard_docs_are_optional_https_probes():
+    expected = {
+        "LegCo Bills open data (bills since 1844)": "https://app.legco.gov.hk/BillsDB/odata/Vbills?$top=1&$format=json",
+        "LegCo Hansard API documentation": "https://www.legco.gov.hk/en/open-legco/open-data/hansard-database.html",
+    }
+    by_name = {item["name"]: item for item in probe.PROBES}
+    for name, url in expected.items():
+        assert by_name[name]["url"] == url
+        assert by_name[name]["required"] is False
+        assert url.startswith("https://")

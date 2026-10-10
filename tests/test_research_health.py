@@ -108,3 +108,36 @@ def test_contradicted_core_claim_remains_unresolved(tmp_path):
     write_jsonl(tmp_path / "claims.jsonl", [claim_record("2026-10-01T00:00:00Z", "contradicted")])
     report = health.build_report(tmp_path)
     assert report["core_claims_unresolved"] == 1
+
+
+
+def test_report_distinguishes_claims_without_search_state(tmp_path):
+    records_dir = tmp_path / "records"
+    records_dir.mkdir()
+    for filename in health.FILES.values():
+        (records_dir / filename).write_text("", encoding="utf-8")
+    first = claim_record("2026-10-01T00:00:00Z")
+    first["provenance"]["source_page"] = "content/01_Timeline/era/a.md"
+    second = dict(first)
+    second["id"] = "claim:1842-date"
+    second["event_id"] = "event:1842-example"
+    second["provenance"] = {"source_page": "content/01_Timeline/era/b.md"}
+    write_jsonl(records_dir / "claims.jsonl", [first, second])
+
+    timeline = tmp_path / "content" / "01_Timeline" / "era"
+    timeline.mkdir(parents=True)
+    (timeline / "a.md").write_text("# A\n", encoding="utf-8")
+    (timeline / "b.md").write_text("# B\n", encoding="utf-8")
+    state_path = tmp_path / "evidence.json"
+    state_path.write_text(json.dumps({"era/a.md": "B"}), encoding="utf-8")
+
+    report = health.build_report(
+        records_dir,
+        evidence_state_path=state_path,
+        content_root=tmp_path / "content" / "01_Timeline",
+    )
+    assert report["claims_without_search_state"] == 1
+    assert report["claims_without_source_page"] == 0
+    assert report["pages_without_search_state"] == 1
+    assert report["timeline_pages_total"] == 2
+    assert report["evidence_state_pages"] == 1

@@ -86,7 +86,7 @@ def test_grs_live_probe_reports_metadata_only_record_link_count(monkeypatch):
     monkeypatch.setattr(
         probe,
         "parse_grs_catalogue_results",
-        lambda html, query: [{"passage_status": "metadata_only"}],
+        lambda html, query: [{"passage_status": "metadata_only", "url": "https://search.grs.gov.hk/en/arcview.xhtml?eid=123"}],
     )
 
     class Response:

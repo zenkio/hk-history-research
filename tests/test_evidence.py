@@ -725,3 +725,16 @@ def test_grs_adapter_fails_closed_on_unexpected_html_page(monkeypatch):
     monkeypatch.setattr(ev.urllib.request, "urlopen", lambda *args, **kwargs: Response())
     with pytest.raises(ValueError, match="unexpected HTML"):
         ev.grs_catalogue("Hong Kong history")
+
+
+def test_grs_catalogue_parser_normalizes_nested_and_multiline_title_text():
+    html = """
+    <a href="/en/redirect.xhtml?eid=abc&amp;q=1841">
+      <span>Hong Kong</span>
+      <strong>  Government   Records </strong>
+    </a>
+    """
+    candidate = ev.parse_grs_catalogue_results(html, "1841")[0]
+    assert candidate["title"] == "Hong Kong Government Records"
+    assert candidate["passage_status"] == "metadata_only"
+    assert candidate["passage"] == ""

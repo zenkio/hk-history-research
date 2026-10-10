@@ -42,7 +42,7 @@ def test_search_attaches_provenance_and_preserves_metadata_only_status():
     result = registry.search("Hong Kong 1841")
     candidate = result["candidates"][0]
     assert result["query"] == "Hong Kong 1841"
-    assert candidate["source_id"] == "catalogue"
+    assert candidate["registry_source_id"] == "catalogue"
     assert candidate["institution"] == "Test archive"
     assert candidate["passage_status"] == "metadata_only"
     assert result["failures"] == []

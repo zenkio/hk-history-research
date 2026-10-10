@@ -93,7 +93,7 @@ jobs:
           OUT: ${{ runner.temp }}/preflight
         run: |
           set -euo pipefail
-          DEST="data/experiments/model-output/2026-10-10/prompt-v7"
+          DEST="data/experiments/model-output/2026-10-11/prompt-v7"
           mkdir -p "$DEST"
           shopt -s nullglob
           files=("$OUT"/*.jsonl "$OUT"/*.stderr "$OUT"/manifest.json)

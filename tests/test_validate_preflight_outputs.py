@@ -38,14 +38,30 @@ def prepare_source(tmp_path, page, prose="A grounded historical claim."):
 
 def test_validator_accepts_nonempty_schema_valid_unverified_records(tmp_path):
     page = EXPECTED["mpf"]
-    timeline_root = prepare_source(tmp_path, page)
+    text = "In 1987 the consultation paper discussed employees and employers."
+    timeline_root = prepare_source(tmp_path, page, prose=text)
+    record = build_claim_records(
+        [{
+            "text": text,
+            "source_excerpt": text,
+            "claim_type": "action",
+            "importance": "core",
+        }],
+        event_id="event:test",
+        source_page=f"content/01_Timeline/{page}",
+        model="test-model",
+        prompt_version=7,
+        created_at="2026-10-10T00:00:00Z",
+    )[0]
     output = tmp_path / "mpf.jsonl"
-    output.write_text(json.dumps(valid_record(page)) + "\n", encoding="utf-8")
+    output.write_text(json.dumps(record) + "\n", encoding="utf-8")
 
     result = validate_file(output, page, timeline_root)
 
     assert result["status"] == "success"
     assert result["claim_count"] == 1
+    assert result["core_count"] == 1
+    assert result["missing_required_anchors"] == []
     assert len(result["sha256"]) == 64
 
 

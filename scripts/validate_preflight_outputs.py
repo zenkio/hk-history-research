@@ -40,7 +40,7 @@ REQUIRED_ANCHORS = {
 
 
 def _normalised_anchor_text(value):
-    return re.sub(r"\\s+", " ", re.sub(r"[^a-z0-9]+", " ", str(value or "").casefold())).strip()
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", str(value or "").casefold())).strip()
 
 
 def missing_required_anchors(page_name, rows):

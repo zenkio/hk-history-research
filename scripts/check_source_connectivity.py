@@ -85,15 +85,14 @@ def probe_record_detail(url, allowed_host, timeout=15):
             content_type = response.headers.get("Content-Type", "")
             sample = body[:MAX_BYTES]
             summary = _detail_link_summary(sample)
-            if status < 200 or status >= 300:
-                return f"detail HTTP {status}; no file fetched"
-            if not summary["is_html"]:
-                return f"detail HTTP {status}; unexpected non-HTML response; no file fetched"
             asset_types = ",".join(f"{kind}:{count}" for kind, count in sorted(summary["asset_types"].items())) or "none"
+            response_note = "non-success HTTP response" if status < 200 or status >= 300 else "response"
+            html_note = "" if summary["is_html"] else "; unexpected non-HTML response"
             return (
                 f"detail HTTP {status}; {content_type or 'content type unknown'}; "
                 f"inspected {len(sample)} bounded bytes; anchor links={summary['anchor_links']}; "
-                f"file-like/asset links={summary['file_like_links']} (types={asset_types}); no files fetched"
+                f"file-like/asset links={summary['file_like_links']} (types={asset_types}); "
+                f"{response_note}{html_note}; no files fetched"
             )
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return f"detail probe unavailable: {type(exc).__name__}: {str(exc)[:120]}"

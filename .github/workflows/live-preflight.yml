@@ -101,7 +101,7 @@ jobs:
           cp "$OUT"/*.jsonl "$OUT"/manifest.json "$DEST"/
           git -C data config user.name "github-actions[bot]"
           git -C data config user.email "github-actions[bot]@users.noreply.github.com"
-          git -C data add "$DEST"
+          git -C data add "experiments/model-output/2026-10-10"
           git -C data diff --cached --check
           git -C data commit -m "experiment: save isolated preflight model outputs"
           git -C data push origin HEAD:experiment/preflight-model-output-20261010

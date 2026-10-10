@@ -9,7 +9,7 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 40
-PROMPT_VERSION = 2
+PROMPT_VERSION = 3
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
@@ -70,10 +70,19 @@ RECORD_CLAIM_TYPES = {
 ATOMIC_CLAIM_PROMPT = """Extract independently testable historical claims from this Hong Kong history draft.
 
 A claim must express one factual or interpretive proposition that can be researched independently.
-Split compound statements when their parts could be true/false separately or need different evidence.
-Keep exact dates, places, people, causes, actions, outcomes, quantities and interpretations precise.
+Before writing claims, inspect every paragraph and every existing "claims to verify" item. Preserve the draft's event-defining facts instead of selecting only the easiest or most prominent statements.
+Coverage requirements:
+- Include each distinct explicit date/year that anchors an event, action, injury, death, release, decision, or outcome. Preserve sequences with different dates as separate claims; never collapse them into one date.
+- Include the defining action, the principal actor, and the specific place when the draft states them.
+- Include immediate outcomes that are explicitly stated, including death or release, even when they occur after the main event date.
+- Preserve distinctions between related stages of an event (for example, seizure, diplomatic settlement/release, and a later boycott; occupation and later treaty cession).
+- Treat the page's title/frontmatter date as context, not a substitute for dates stated in the narrative. Never infer an exact day from a year-only date.
+Split compound statements only when their parts can be independently checked or require different evidence.
 Do not add facts from your own knowledge. Do not turn speculation into fact; preserve uncertainty in the wording.
-Avoid duplicate claims. Include claims already listed as "claims to verify" if they are useful, but merge exact duplicates.
+Deduplication requirements:
+- State each distinct proposition once. Do not create several near-synonymous claims from one sentence or split a list of equivalent descriptions into separate claims.
+- Keep the claim's scope no broader than the excerpt; do not promote a possible cause, motive, interpretation, or disputed allegation into established fact.
+- Include useful existing "claims to verify" items only when grounded in the supplied draft prose; merge them with equivalent extracted claims.
 
 Importance rules:
 - Mark a claim core only if it is necessary to identify the event: its date/year, place, primary actor, defining action, or immediate direct outcome.

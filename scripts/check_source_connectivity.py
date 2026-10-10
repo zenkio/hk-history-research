@@ -15,6 +15,12 @@ USER_AGENT = "hk-history-research-source-probe/1.0"
 MAX_BYTES = 64 * 1024
 PROBES = [
     {
+        "name": "Hong Kong Public Libraries MMIS", "required": False,
+        "url": "https://mmis.hkpl.gov.hk/",
+        "format": "html",
+        "shape": "Multimedia Information System",
+    },
+    {
         "name": "Hong Kong Government Records Service catalogue", "required": False,
         "url": "https://search.grs.gov.hk/en/search.xhtml?q=Hong%20Kong",
         "format": "html",

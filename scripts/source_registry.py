@@ -105,6 +105,12 @@ class SourceRegistry:
                     if status not in ALLOWED_PASSAGE_STATUSES:
                         raise ValueError(f"unsupported passage_status: {status}")
                     passage = candidate.get("passage")
+                    if status not in INSPECTABLE_STATUSES and passage:
+                        candidate["passage"] = ""
+                        candidate["registry_note"] = (
+                            "Non-inspectable passage status; passage cleared before AI judgement."
+                        )
+                        passage = ""
                     if status in INSPECTABLE_STATUSES and not (
                         isinstance(passage, str) and passage.strip()
                     ):

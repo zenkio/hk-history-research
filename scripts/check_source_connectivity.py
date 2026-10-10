@@ -60,6 +60,18 @@ PROBES = [
         "shape": "value",
     },
     {
+        "name": "LegCo Bills open data (bills since 1844)", "required": False,
+        "url": "https://app.legco.gov.hk/BillsDB/odata/Vbills?$top=1&$format=json",
+        "format": "json",
+        "shape": "value",
+    },
+    {
+        "name": "LegCo Hansard API documentation", "required": False,
+        "url": "https://www.legco.gov.hk/en/open-legco/open-data/hansard-database.html",
+        "format": "html",
+        "shape": "Database on Official Record of Proceedings",
+    },
+    {
         "name": "UK National Archives Discovery API", "required": True,
         "url": "https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=Hong%20Kong&sps.resultsPageSize=1&sps.heldByCode=TNA",
         "format": "json",

@@ -9,7 +9,7 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 40
-PROMPT_VERSION = 4
+PROMPT_VERSION = 5
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
@@ -73,6 +73,8 @@ A claim must express one factual or interpretive proposition that can be researc
 Split compound statements when their parts could be true/false separately or need different evidence.
 Each claim should be no more than 30 words; split longer sentences into separate propositions rather than compressing several facts into one.
 Return at most 40 claims. If more than 40 plausible claims exist, prioritise event-defining core facts and the most material independently testable supporting claims; omit lower-value background details rather than exceeding the limit.
+Avoid near-duplicates and paraphrases of the same proposition. When a source sentence lists several participants who jointly performed the same action, keep them together in one claim unless their roles or actions differ materially or participant identity is independently important. Do not create separate claims that differ only by substituting one member of a group when the source describes a shared action.
+Avoid low-value claims that merely restate vague adjectives such as "comprehensive", "significant", or "important". Include an evaluative or historiographical claim only when it states a distinct proposition that can be researched independently.
 Keep exactly one independently testable proposition per claim. Avoid chaining clauses with "and", "while", "although", "which", or "thereby" when they express separate facts or consequences.
 Keep exact dates, places, people, causes, actions, outcomes, quantities and interpretations precise.
 Do not add facts from your own knowledge. Do not turn speculation into fact; preserve uncertainty in the wording.

@@ -98,4 +98,33 @@ jobs:
       - name: Build prioritised claim queue (read-only)
         env:
           QUEUE_PATH: ${{ runner.temp }}/research-queue.jsonl
-        run: python3 scripts/research_queue.py --limit 100 --output "$QUEUE_PATH"
+        run: |
+          python3 scripts/research_queue.py --limit 100 --output "$QUEUE_PATH"
+          # Audit the real-corpus ranking without logging private claim text, IDs, or page paths.
+          python3 - "$QUEUE_PATH" <<'PY'
+          import json
+          import sys
+          from collections import Counter
+          from pathlib import Path
+
+          rows = [json.loads(line) for line in Path(sys.argv[1]).read_text(encoding="utf-8").splitlines() if line.strip()]
+          assert all(row.get("priority") == index + 1 for index, row in enumerate(rows)), "queue priorities must be contiguous and sorted"
+          assert all(row.get("claim_id") and isinstance(row.get("priority_reasons"), list) for row in rows), "queue rows need claim identity and reasons"
+          print(f"PASS | live queue audit | sampled={len(rows)}; priority_order=contiguous; output=metadata-only")
+          print("Queue sample (no claim text/IDs):")
+          for row in rows[:10]:
+              reasons = ",".join(reason for reason in row.get("priority_reasons", []) if reason in {
+                  "core claim", "core period (1841+)", "no inspectable passage", "no judgement",
+                  "inspectable contradiction present"
+              })
+              print(
+                  "  "
+                  f"priority={row['priority']} year={row.get('event_year')} "
+                  f"period={'core' if row.get('core_period') else 'pre-core/unknown'} "
+                  f"importance={row.get('importance')} status={row.get('status')} "
+                  f"evidence={row.get('evidence_count')} passages={row.get('inspectable_passage_count')} "
+                  f"judgement={row.get('latest_judgement_verdict')} links={row.get('internal_link_count')} "
+                  f"flags={reasons or 'none'}"
+              )
+          print("Queue sample status counts:", dict(sorted(Counter(row.get("status") for row in rows).items())))
+          PY

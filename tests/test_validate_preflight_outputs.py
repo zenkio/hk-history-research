@@ -20,7 +20,7 @@ def valid_record(page):
         event_id="event:test",
         source_page=f"content/01_Timeline/{page}",
         model="test-model",
-        prompt_version=3,
+        prompt_version=4,
         created_at="2026-10-10T00:00:00Z",
     )[0]
 

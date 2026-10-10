@@ -50,7 +50,7 @@ def test_validator_rejects_empty_output(tmp_path):
 def test_validator_rejects_verified_or_published_claim_status(tmp_path):
     page = EXPECTED["mpf"]
     record = valid_record(page)
-    record["status"] = "verified"
+    record["status"] = "supported"
     output = tmp_path / "mpf.jsonl"
     output.write_text(json.dumps(record) + "\n", encoding="utf-8")
 

@@ -286,7 +286,11 @@ def grs_catalogue(query):
 
 
 def internet_archive_ai_processing_allowed(metadata):
-    """Default-deny OCR processing unless item metadata explicitly marks it public domain/CC0."""
+    """Default-deny OCR unless metadata contains an unambiguous, recognised open-rights value.
+
+    Do not use substring matching on free-text rights statements: phrases such as
+    "public domain status uncertain" must not authorise OCR to be sent for AI judgement.
+    """
     values = []
     for container in (metadata.get("metadata") or {}, metadata):
         if not isinstance(container, dict):
@@ -294,17 +298,47 @@ def internet_archive_ai_processing_allowed(metadata):
         for key in ("licenseurl", "license", "rights", "rightsstatement"):
             value = container.get(key)
             if isinstance(value, list):
-                values.extend(value)
+                values.extend((key, item) for item in value if item)
             elif value:
-                values.append(value)
-    normalized = " ".join(str(value).casefold() for value in values if value)
-    return (
-        "creativecommons.org/publicdomain/mark" in normalized
-        or "creativecommons.org/publicdomain/zero" in normalized
-        or ("public domain" in normalized
-            and "not public domain" not in normalized
-            and "not in the public domain" not in normalized)
+                values.append((key, value))
+
+    def recognised_open_rights(key, value):
+        if not isinstance(value, str):
+            return False
+        raw = value.strip()
+        if not raw:
+            return False
+        parsed = urllib.parse.urlparse(raw)
+        if (
+            parsed.scheme.casefold() in ("http", "https")
+            and (parsed.hostname or "").casefold() == "creativecommons.org"
+            and re.sub(r"/+", "/", parsed.path).rstrip("/")
+            in ("/publicdomain/mark/1.0", "/publicdomain/zero/1.0")
+        ):
+            return True
+        normalised = re.sub(r"[\\s.,;:]+", " ", raw.casefold()).strip()
+        # Only exact, well-known labels are accepted; descriptive prose is not a grant.
+        return normalised in {
+            "public domain",
+            "public domain mark",
+            "public domain mark 1.0",
+            "cc0",
+            "cc0 1.0",
+            "cc0 1.0 universal",
+        }
+
+    restrictive_or_uncertain = (
+        "not in the public domain", "not public domain", "not cc0",
+        "all rights reserved", "rights unclear", "status unclear",
+        "status uncertain", "uncertain", "disputed", "restricted",
+        "permission required", "not cleared", "copyrighted",
     )
+    for _, value in values:
+        if isinstance(value, str):
+            normalised = value.casefold()
+            if any(marker in normalised for marker in restrictive_or_uncertain):
+                return False
+    return any(recognised_open_rights(key, value) for key, value in values)
 
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""

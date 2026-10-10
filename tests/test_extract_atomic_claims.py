@@ -66,12 +66,12 @@ def test_single_page_prototype_rejects_page_outside_timeline(tmp_path):
 
 def test_parse_page_excludes_research_sections_from_extraction_prose():
     title, date, prose, claims = parse_page(
-        '---\\ntitle: "Harbour trade"\\ndate: 1842\\n---\\n'
-        'The harbour was used for trade.\\n\\n'
-        '## Claims to verify\\n- The harbour served foreign merchants.\\n\\n'
-        '## Evidence\\nA catalogue note says the harbour was busy.\\n'
-        '### Source notes\\nMore metadata not part of the original draft.\\n\\n'
-        '## Background\\nThe harbour predates the event.\\n'
+        '---\ntitle: "Harbour trade"\ndate: 1842\n---\n'
+        'The harbour was used for trade.\n\n'
+        '## Claims to verify\n- The harbour served foreign merchants.\n\n'
+        '## Evidence\nA catalogue note says the harbour was busy.\n'
+        '### Source notes\nMore metadata not part of the original draft.\n\n'
+        '## Background\nThe harbour predates the event.\n'
     )
     assert "The harbour was used for trade." in prose
     assert "The harbour predates the event." in prose

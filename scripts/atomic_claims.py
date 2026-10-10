@@ -9,7 +9,7 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 40
-PROMPT_VERSION = 2
+PROMPT_VERSION = 3
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
@@ -71,6 +71,8 @@ ATOMIC_CLAIM_PROMPT = """Extract independently testable historical claims from t
 
 A claim must express one factual or interpretive proposition that can be researched independently.
 Split compound statements when their parts could be true/false separately or need different evidence.
+Each claim should be no more than 30 words; split longer sentences into separate propositions rather than compressing several facts into one.
+Keep exactly one independently testable proposition per claim. Avoid chaining clauses with "and", "while", "although", "which", or "thereby" when they express separate facts or consequences.
 Keep exact dates, places, people, causes, actions, outcomes, quantities and interpretations precise.
 Do not add facts from your own knowledge. Do not turn speculation into fact; preserve uncertainty in the wording.
 Avoid duplicate claims. Include claims already listed as "claims to verify" if they are useful, but merge exact duplicates.

@@ -302,7 +302,7 @@ def internet_archive_ai_processing_allowed(metadata):
             elif value:
                 values.append((key, value))
 
-    def recognised_open_rights(key, value):
+    def recognised_open_rights(value):
         if not isinstance(value, str):
             return False
         raw = value.strip()
@@ -338,7 +338,7 @@ def internet_archive_ai_processing_allowed(metadata):
             normalised = value.casefold()
             if any(marker in normalised for marker in restrictive_or_uncertain):
                 return False
-    return any(recognised_open_rights(key, value) for key, value in values)
+    return any(recognised_open_rights(value) for _, value in values)
 
 def internet_archive_text(identifier, max_chars=5000):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""

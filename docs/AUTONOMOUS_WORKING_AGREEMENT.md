@@ -43,8 +43,11 @@ This policy applies to work in both `zenkio/hk-history-research` (public code) a
 - Keep migration and live-data changes preview-only unless the active backlog and explicit project decisions authorise the next step.
 - Never copy private content, research notes, evidence state, or pipeline output into the public code repository, its PR descriptions, issues, or public workflow logs.
 
-## How to report
+## Response and context budget
 
-- Be concise and factual. Report what changed, links to the relevant PR/commit, exact CI status, what was merged (if anything), and the next concrete task.
-- Do not claim that a check, merge, deployment, or publication succeeded unless you verified it.
-- If a hard execution limit or genuine blocker prevents completion, say what stopped, what was completed, and where the next session should resume. Do not frame avoidable early stopping as a system limitation.
+- Default to a compact status: **Done / CI / Next / Blocked**; usually 3–6 bullets and under 120 words.
+- State only material changes and decisions. Link PRs/commits instead of narrating implementation details; give test details only when failed, surprising, or decision-relevant.
+- Do not repeat the user's request, recap established context, restate the backlog, or provide a plan when you can execute the work.
+- Ask only necessary owner questions, bundle them, and keep working on independent tasks.
+- Keep durable technical details in repository notes/checkpoints, not in chat. In chat, include the exact next task and any owner action needed.
+- Be concise and factual. Do not claim a check, merge, deployment, or publication succeeded unless verified. If blocked, state the cause, completed work, and resume point.

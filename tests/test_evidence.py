@@ -964,3 +964,29 @@ def test_full_audit_sampling_prioritizes_critical_and_high_risk_cases():
     assert ev.should_run_full_audit(["high-impact number or absolute claim"], 0.26, priority_share=0.25) is False
     assert ev.should_run_full_audit([], 0.04, baseline_share=0.05) is True
     assert ev.should_run_full_audit([], 0.06, baseline_share=0.05) is False
+
+
+def test_judge_prompt_distinguishes_occupation_from_treaty_cession():
+    passage = (
+        "Hong Kong became a British possession at the end of the Opium War (1839-42). "
+        "The island was ceded to the British Crown under the Treaty of Nanking concluded in 1842."
+    )
+    candidate = dict(
+        A_RECORD,
+        title="British possession of Hong Kong Island",
+        note="Scholarly abstract",
+        passage=passage,
+        passage_status="inspectable_abstract",
+    )
+    pool = PromptJudge([{
+        "id": "c1", "relation": "background", "claims": [],
+        "why": "This passage describes treaty cession, not the earlier landing and occupation.",
+    }])
+    ev.judge(
+        pool, "British occupation of Hong Kong Island", 1841,
+        ["British forces occupied Hong Kong Island on 26 January 1841."],
+        [candidate],
+    )
+    assert "military landing/occupation, treaty cession" in pool.prompt
+    assert "does not by itself contradict an earlier occupation date" in pool.prompt
+    assert "Hong Kong became a British possession at the end of the Opium War" in pool.prompt

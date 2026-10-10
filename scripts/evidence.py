@@ -73,6 +73,7 @@ passages must remain visible rather than being silently resolved by source rank.
 If passage_status is not one of inspectable_text, inspectable_abstract, or inspectable_record, the passage is empty, or the passage is not about the numbered claim,
 the candidate cannot support or contradict that claim. At most classify it as background, or exclude it.
 Never infer the contents of an archive record from its catalogue description or title.
+Distinguish related but different historical stages and legal concepts: military landing/occupation, treaty cession, and declaration or establishment of a colony are not interchangeable. A passage describing a later treaty cession does not by itself contradict an earlier occupation date. If the passage's terminology is ambiguous, classify it as partial or background and explain the distinction rather than inferring a contradiction.
 
 For each candidate, compare the actual passage with the numbered claims. Record only claims that the
 passage directly addresses, and state what the passage establishes. If the passage is ambiguous or only

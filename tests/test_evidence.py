@@ -900,3 +900,18 @@ def test_judge_version_9_reopens_old_pages_for_partial_and_authority_rules(write
     assert ev.reopen_for_rejudge(done) == 1
     assert done == {}
     assert state.load("evidence_meta")["judge_version"] == 9
+
+
+
+def test_short_inspectable_fragment_cannot_support_or_partially_support_claim():
+    candidate = dict(A_RECORD, id="c1", passage="1841", passage_status="inspectable_text")
+    for relation in ("supports", "contradicts", "partial"):
+        kept = ev.judged({
+            "relevant": [{"id": "c1", "relation": relation, "claims": [1], "why": "The date appears in the fragment."}]
+        }, [candidate], claim_count=1)
+        assert kept[0]["relation"] == "background"
+        assert "too short" in kept[0]["why"]
+
+
+def test_judge_prompt_rejects_contextless_fragments():
+    assert "fewer than 30 characters" in ev.JUDGE_PROMPT

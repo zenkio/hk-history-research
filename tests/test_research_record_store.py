@@ -139,3 +139,46 @@ def test_markdown_claim_normalisation_keeps_migration_and_store_ids_aligned():
     normalized = "The event happened in January 1841."
     assert store.normalize_claim_text(raw) == normalized
     assert store.claim_id_for(event_id, raw) == store.claim_id_for(event_id, normalized)
+
+
+def test_source_metadata_preserves_registry_family_and_rights_metadata():
+    source = store._source_metadata({
+        "source": "UK National Archives Discovery",
+        "institution": "The National Archives (UK)",
+        "source_type": "archive_record",
+        "authority_level": "primary",
+        "language": "en",
+        "source_coverage": "UK-held archival catalogue records relating to Hong Kong",
+        "retrieval_method": "api",
+        "rights_notes": "Catalogue metadata only; not an inspected passage.",
+        "title": "CO 129 record",
+        "url": "https://discovery.nationalarchives.gov.uk/details/r/123",
+        "passage_status": "metadata_only",
+    }, "event:example", "2026-10-10T00:00:00Z")
+    assert source["source_type"] == "archive_record"
+    assert source["authority_level"] == "primary"
+    assert source["institution"] == "The National Archives (UK)"
+    assert source["language"] == "en"
+    assert source["coverage"] == "UK-held archival catalogue records relating to Hong Kong"
+    assert source["retrieval_method"] == "api"
+    assert source["rights_notes"] == "Catalogue metadata only; not an inspected passage."
+
+
+def test_registry_metadata_for_scholarship_is_not_downgraded_to_unknown():
+    source = store._source_metadata({
+        "source": "OpenAlex",
+        "institution": "OpenAlex",
+        "source_type": "academic_work",
+        "authority_level": "scholarly",
+        "language": "en",
+        "source_coverage": "Scholarly abstracts",
+        "retrieval_method": "api",
+        "rights_notes": "Abstract is not a substitute for full text.",
+        "title": "Academic abstract",
+        "url": "https://doi.org/10.1000/example",
+        "passage_status": "inspectable_abstract",
+    }, "event:example", "2026-10-10T00:00:00Z")
+    assert source["source_type"] == "academic_work"
+    assert source["authority_level"] == "scholarly"
+    assert source["language"] == "en"
+    assert source["coverage"] == "Scholarly abstracts"

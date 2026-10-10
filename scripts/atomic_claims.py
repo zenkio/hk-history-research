@@ -27,7 +27,7 @@ For every claim return:
 - claim_type: one of date, place, person, cause, action, outcome, quantity, institution, context, interpretation, other
 - importance: core or supporting
 
-Return JSON only: {"claims":[{"text":"...","source_excerpt":"...","claim_type":"action","importance":"core"}]}
+Return JSON only: {{"claims":[{{"text":"...","source_excerpt":"...","claim_type":"action","importance":"core"}}]}}
 
 Title: {title}
 Date: {date}

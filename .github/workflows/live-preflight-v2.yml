@@ -79,7 +79,7 @@ jobs:
           run_page yeung-ku-wan "08-new-territories/1901-assassination-of-yeung-ku-wan.md"
           # Validate every output and write a manifest even when extraction failed.
           # Keep the job alive long enough to commit diagnostic artefacts privately.
-          if python _code/scripts/validate_preflight_outputs.py "$OUT"; then
+          if python _code/scripts/validate_preflight_outputs.py "$OUT" --timeline-root data/content/01_Timeline; then
             echo "PREFLIGHT_VALIDATION completed"
           else
             echo "PREFLIGHT_VALIDATION has failures; outputs will be saved privately before the job fails"

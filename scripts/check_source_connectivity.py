@@ -7,6 +7,7 @@ any endpoint is unreachable or returns an unexpected response shape.
 """
 import argparse
 import json
+import re
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET

@@ -71,3 +71,10 @@ def test_bounded_probe_still_rejects_oversized_json():
     ok, detail = probe.inspect_bounded_response(spec, 200, "application/json", body)
     assert not ok
     assert "safety limit" in detail
+
+
+def test_mmis_probe_uses_official_https_homepage_as_optional():
+    spec = next(item for item in probe.PROBES if item["name"] == "Hong Kong Public Libraries MMIS")
+    assert spec["required"] is False
+    assert spec["url"] == "https://mmis.hkpl.gov.hk/"
+    assert spec["format"] == "html"

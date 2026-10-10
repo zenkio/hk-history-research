@@ -2,6 +2,7 @@
 """Validate isolated preflight JSONL outputs and always write a non-sensitive manifest."""
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -64,7 +65,8 @@ def validate_file(path, expected_page):
                     (isinstance(provenance.get("source_excerpt"), str) and bool(provenance["source_excerpt"].strip()), "missing_source_excerpt"),
                     (provenance.get("source_page") == f"content/01_Timeline/{expected_page}", "source_page_mismatch"),
                     (isinstance(provenance.get("model"), str) and bool(provenance["model"].strip()), "missing_model"),
-                    (provenance.get("prompt_version") == 2, "prompt_version_mismatch"),
+                    (provenance.get("prompt_version") == 3, "prompt_version_mismatch"),
+                    (len(re.findall(r"\b\w+\b", row.get("text", ""))) <= 35, "claim_too_long"),
                 ]
                 reason = next((message for valid, message in checks if not valid), "")
                 if reason:
@@ -91,7 +93,7 @@ def build_manifest(out_dir):
                 for item in files if item["status"] != "success"}
     return {
         "experiment": "evidence-first-preflight",
-        "prompt_version": 2,
+        "prompt_version": 3,
         "files": files,
         "failures": failures,
         "acceptance": {

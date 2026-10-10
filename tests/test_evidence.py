@@ -778,3 +778,50 @@ def test_judged_rejects_boolean_claim_numbers_and_malformed_items():
     }, [candidate], claim_count=1)
     assert kept[0]["claims"] == []
     assert kept[0]["relation"] == "background"
+
+
+
+def test_partial_evidence_is_displayed_separately_and_does_not_raise_grade(write_page, monkeypatch, timeline):
+    done, text, _ = judge_page(
+        write_page, monkeypatch, timeline,
+        [{"id": "c1", "relation": "partial", "claims": [1], "why": "The abstract supports the date but not the full claim."}],
+        [("OpenAlex", lambda q: [dict(B_PAPER)])],
+    )
+    assert done == {"p.md": "none"}
+    assert "evidence_grade: none" in text
+    assert "### Partially supporting evidence (does not count towards coverage)" in text
+    assert "partially supports claim 1" in text
+    assert "The abstract supports the date but not the full claim." in text
+
+
+def test_partial_judgement_requires_inspectable_passage():
+    metadata_only = dict(A_RECORD, id="c1", passage="", passage_status="metadata_only")
+    kept = ev.judged({
+        "relevant": [{"id": "c1", "relation": "partial", "claims": [1], "why": "The title looks related."}]
+    }, [metadata_only], claim_count=1)
+    assert kept[0]["relation"] == "background"
+    assert "Source passage not inspected" in kept[0]["why"]
+
+
+def test_judge_can_support_date_without_claiming_location(write_page, monkeypatch, timeline):
+    page = write_page("p.md", "Treaty signing", 1849, claims=(
+        "The treaty was signed on 29 August 1849.",
+        "The treaty was signed in Hong Kong.",
+    ))
+    class DateOnlyJudge:
+        def generate_json(self, role, prompt, **kwargs):
+            self.prompt = prompt
+            return {"relevant": [{
+                "id": "c1", "relation": "supports", "claims": [2],
+                "why": "The passage states the signing date, but not the location.",
+            }]}, "test-model", []
+
+    monkeypatch.setattr(ev, "SOURCES", [("National Archives", lambda q: [dict(A_RECORD)])])
+    pool = DateOnlyJudge()
+    done = {}
+    ev.evidence_batch(pool, done, [{"file": "p.md", "status": "done"}], time.time() + 60, limit=1)
+    text = page.read_text(encoding="utf-8")
+    assert "2. The treaty was signed on 29 August 1849." in pool.prompt
+    assert "3. The treaty was signed in Hong Kong." in pool.prompt
+    assert "supports claim 2" in text
+    assert "supports claim 3" not in text

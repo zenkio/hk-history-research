@@ -31,17 +31,23 @@ def _grs_detail_link_summary(body):
     decoded = body.decode("utf-8", errors="replace")
     hrefs = re.findall(r"""(?i)\bhref\s*=\s*["']([^"']+)["']""", decoded)
     asset_links = []
+    asset_types = {}
+    extensions = (".pdf", ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".jp2", ".djvu")
     for href in hrefs:
         normalized = html_unescape(href).casefold()
         path = urlsplit(normalized).path
-        if path.endswith((".pdf", ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".jp2", ".djvu")) or re.search(
-            r"(?:download|attachment|scan|digitalobject)", normalized
-        ):
+        extension = next((item[1:] for item in extensions if path.endswith(item)), None)
+        if extension:
             asset_links.append(path)
+            asset_types[extension] = asset_types.get(extension, 0) + 1
+        elif re.search(r"(?:download|attachment|scan|digitalobject)", normalized):
+            asset_links.append(path)
+            asset_types["other"] = asset_types.get("other", 0) + 1
     return {
         "is_html": "<html" in decoded.casefold(),
         "anchor_links": len(hrefs),
         "file_like_links": len(asset_links),
+        "asset_types": asset_types,
     }
 
 
@@ -75,10 +81,11 @@ def probe_grs_record_detail(url, timeout=15):
                 return f"detail HTTP {status}; no file fetched"
             if not summary["is_html"]:
                 return f"detail HTTP {status}; unexpected non-HTML response; no file fetched"
+            asset_types = ",".join(f"{kind}:{count}" for kind, count in sorted(summary["asset_types"].items())) or "none"
             return (
                 f"detail HTTP {status}; {content_type or 'content type unknown'}; "
                 f"inspected {len(sample)} bounded bytes; anchor links={summary['anchor_links']}; "
-                f"file-like/asset links={summary['file_like_links']}; no files fetched"
+                f"file-like/asset links={summary['file_like_links']} (types={asset_types}); no files fetched"
             )
     except (OSError, TimeoutError, urllib.error.URLError, ValueError) as exc:
         return f"detail probe unavailable: {type(exc).__name__}: {str(exc)[:120]}"

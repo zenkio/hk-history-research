@@ -632,6 +632,36 @@ def test_internet_archive_rights_gate_rejects_explicit_non_public_domain_text():
     })
 
 
+def test_internet_archive_rights_gate_rejects_ambiguous_free_text():
+    for statement in (
+        "Public domain status is uncertain",
+        "This item may be public domain but is not cleared for reuse",
+        "Public domain status disputed",
+        "The copyright status is unclear",
+    ):
+        assert not ev.internet_archive_ai_processing_allowed({
+            "metadata": {"rights": statement}
+        })
+
+
+def test_internet_archive_rights_gate_rejects_conflicting_metadata():
+    assert not ev.internet_archive_ai_processing_allowed({
+        "metadata": {
+            "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "rights": "Public domain status uncertain",
+        }
+    })
+
+
+def test_internet_archive_rights_gate_accepts_recognised_cc0_url_and_exact_label():
+    assert ev.internet_archive_ai_processing_allowed({
+        "metadata": {"licenseurl": "https://creativecommons.org/publicdomain/zero/1.0/"}
+    })
+    assert ev.internet_archive_ai_processing_allowed({
+        "metadata": {"license": "CC0 1.0 Universal"}
+    })
+
+
 def test_frontmatter_declared_chinese_title_and_aliases_join_claim_search():
     page = (
         '---\ntitle: "Treaty signing"\n'

@@ -1,5 +1,7 @@
 """Regression tests for the preview-only narrative reconstruction gate."""
-from reconstruct_narrative import build_preview
+import pytest
+
+from reconstruct_narrative import DEFAULT_RECORDS_DIR, build_preview, load_records
 
 
 EVENT = "event:05-opium-war-1841-example"
@@ -135,3 +137,17 @@ def test_supporting_only_event_cannot_pass_core_gate():
     assert result["claims_included"] == 1
     assert result["core_evidence_gate_passed"] is False
     assert "No core claims were present" in result["markdown"]
+
+
+
+def test_real_corpus_white_paper_preview_keeps_unsupported_core_claim_unresolved():
+    if not (DEFAULT_RECORDS_DIR / "claims.jsonl").exists():
+        pytest.skip("private research records are only available in the data-repo CI workspace")
+    event_id = "event:15-contention-2014-beijing-issues-white-paper-on-hong-kong"
+    result = build_preview(load_records(DEFAULT_RECORDS_DIR), event_id)
+    unresolved_ids = {item["claim_id"] for item in result["unresolved_core_claims"]}
+    assert result["preview_only"] is True
+    assert result["core_evidence_gate_passed"] is False
+    assert result["claims_included"] == 3
+    assert "claim:15-contention-2014-beijing-issues-white-paper-on-hong-kong-067e6e9272" in unresolved_ids
+    assert "NOT PUBLISHED" in result["markdown"]

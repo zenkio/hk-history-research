@@ -14,6 +14,24 @@ CLAIM_TYPES = {
     "institution", "context", "interpretation", "other",
 }
 IMPORTANCE = {"core", "supporting"}
+NEGATION_OR_DENIAL = re.compile(
+    r"\\b(?:not|never|no|neither|without|none|nothing|cannot|can't|didn't|doesn't|"
+    r"wasn't|weren't|isn't|aren't|hasn't|haven't|hadn't|failed|rejected|refused|"
+    r"denied|prohibited|forbidden|impossible)\\b",
+    re.IGNORECASE,
+)
+
+
+def _number_tokens(value):
+    """Return normalised numeric fragments so claims cannot invent dates or quantities."""
+    return {token.replace(",", "") for token in re.findall(r"\\d[\\d,]*", str(value or ""))}
+
+
+def _faithful_to_excerpt(claim_text, excerpt):
+    """Conservative guards against adding precise numbers or reversing a proposition."""
+    if not _number_tokens(claim_text).issubset(_number_tokens(excerpt)):
+        return False
+    return bool(NEGATION_OR_DENIAL.search(claim_text)) == bool(NEGATION_OR_DENIAL.search(excerpt))
 RECORD_CLAIM_TYPES = {
     "date": "date",
     "place": "place",
@@ -88,6 +106,8 @@ def validate_atomic_claims(response, source_material, max_claims=MAX_CLAIMS):
         claim_type = str(item.get("claim_type") or "other").strip().lower()
         importance = str(item.get("importance") or "supporting").strip().lower()
         if not text or not excerpt or not _normalised_contains(source_material, excerpt):
+            continue
+        if not _faithful_to_excerpt(text, excerpt):
             continue
         if claim_type not in CLAIM_TYPES:
             claim_type = "other"

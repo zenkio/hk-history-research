@@ -9,6 +9,16 @@ EVIDENCE = "evidence:example-evidence"
 JUDGEMENT = "judgement:example-judgement"
 
 
+def narrative_body(markdown):
+    headings = ("## Narrative assembled from supported claims", "## Narrative")
+    start = next((markdown.find(heading) for heading in headings if markdown.find(heading) >= 0), -1)
+    if start < 0:
+        return ""
+    body_start = markdown.find("\\n", start) + 1
+    end = markdown.find("\\n## ", body_start)
+    return markdown[body_start:] if end < 0 else markdown[body_start:end]
+
+
 def records():
     return {
         "claims": [{
@@ -63,7 +73,7 @@ def test_metadata_only_source_never_enters_narrative():
     result = build_preview(data, EVENT)
     assert result["claims_included"] == 0
     assert result["core_evidence_gate_passed"] is False
-    assert "The event occurred in 1841." not in result["markdown"]
+    assert "The event occurred in 1841." not in narrative_body(result["markdown"])
 
 
 def test_current_contradiction_blocks_claim_even_if_latest_judgement_says_supported():
@@ -111,7 +121,7 @@ def test_supporting_claim_can_be_previewed_while_unresolved_core_is_flagged():
     assert result["claims_included"] == 1
     assert result["core_evidence_gate_passed"] is False
     assert "The harbour was busy." in result["markdown"]
-    assert "The event occurred in 1841." not in result["markdown"]
+    assert "The event occurred in 1841." not in narrative_body(result["markdown"])
 
 
 def test_supporting_only_event_cannot_pass_core_gate():

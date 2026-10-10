@@ -55,3 +55,19 @@ def test_probe_rejects_html_without_expected_catalogue_marker():
     )
     assert not ok
     assert "unexpected HTML response shape" in detail
+
+
+def test_bounded_probe_accepts_large_html_when_marker_is_in_sample():
+    spec = {"format": "html", "shape": "Search Results"}
+    body = b"<html><body>Search Results</body></html>" + b"x" * probe.MAX_BYTES
+    ok, detail = probe.inspect_bounded_response(spec, 200, "text/html", body)
+    assert ok
+    assert "inspected first" in detail
+
+
+def test_bounded_probe_still_rejects_oversized_json():
+    spec = {"format": "json", "shape": "records"}
+    body = b'{"records": []}' + b" " * probe.MAX_BYTES
+    ok, detail = probe.inspect_bounded_response(spec, 200, "application/json", body)
+    assert not ok
+    assert "safety limit" in detail

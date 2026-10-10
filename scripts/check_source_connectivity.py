@@ -140,7 +140,13 @@ PROBES = [
         "format": "xml",
         "shape": "OAI-PMH",
     },
+
     {
+        "name": "CUHK Digital Repository OAI-PMH", "required": False,
+        "url": "https://repository.lib.cuhk.edu.hk/oai?verb=Identify",
+        "format": "xml",
+        "shape": "OAI-PMH",
+    },    {
         "name": "Hong Kong Government Records Service catalogue", "required": False,
         "url": "https://search.grs.gov.hk/en/search.xhtml?q=Hong%20Kong",
         "format": "html",

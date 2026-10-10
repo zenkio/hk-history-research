@@ -318,3 +318,11 @@ def test_source_probes_respect_five_second_same_host_delay(monkeypatch):
     monkeypatch.setattr(probe, "probe", lambda item, timeout=15: (True, "ok"))
     assert probe.main([]) == 0
     assert sleeps == [5]
+
+
+def test_cuhk_repository_oai_endpoint_is_optional_metadata_probe():
+    spec = next(item for item in probe.PROBES if item["name"] == "CUHK Digital Repository OAI-PMH")
+    assert spec["url"] == "https://repository.lib.cuhk.edu.hk/oai?verb=Identify"
+    assert spec["format"] == "xml"
+    assert spec["shape"] == "OAI-PMH"
+    assert spec["required"] is False

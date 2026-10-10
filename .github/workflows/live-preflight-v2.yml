@@ -1,4 +1,4 @@
-name: One-off evidence-first extraction pilot v5
+name: One-off evidence-first extraction pilot v6
 
 # Intentionally limited to this temporary experiment branch. Outputs contain excerpts from
 # private draft pages, so they are committed only to a private data-repository experiment branch.
@@ -109,8 +109,8 @@ jobs:
             git -C data status --short -- content/01_Timeline research/records
             exit 1
           fi
-          git -C data add "experiments/model-output/2026-10-10/prompt-v5"
-          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-10/prompt-v5/' || true)"
+          git -C data add "experiments/model-output/2026-10-10/prompt-v6"
+          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-10/prompt-v6/' || true)"
           if [[ -n "$unexpected" ]]; then
             echo "Unexpected staged paths; refusing to commit"
             printf '%s\n' "$unexpected"
@@ -118,7 +118,7 @@ jobs:
           fi
           git -C data diff --cached --check
           git -C data commit -m "experiment: save isolated preflight prompt-v6 outputs"
-          git -C data push origin HEAD:experiment/preflight-model-output-v5-20261010
+          git -C data push origin HEAD:experiment/preflight-model-output-v6-20261010
 
       - name: Fail if any reference-page extraction failed
         if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}

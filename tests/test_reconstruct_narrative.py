@@ -10,13 +10,17 @@ JUDGEMENT = "judgement:example-judgement"
 
 
 def narrative_body(markdown):
-    headings = ("## Narrative assembled from supported claims", "## Narrative")
-    start = next((markdown.find(heading) for heading in headings if markdown.find(heading) >= 0), -1)
-    if start < 0:
-        return ""
-    body_start = markdown.find("\\n", start) + 1
-    end = markdown.find("\\n## ", body_start)
-    return markdown[body_start:] if end < 0 else markdown[body_start:end]
+    lines = markdown.splitlines()
+    active, body = False, []
+    for line in lines:
+        if line.startswith("## Narrative assembled from supported claims") or line == "## Narrative":
+            active = True
+            continue
+        if active and line.startswith("## "):
+            break
+        if active:
+            body.append(line)
+    return "\\n".join(body)
 
 
 def records():

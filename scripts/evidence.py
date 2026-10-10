@@ -551,7 +551,7 @@ def evidence_for_page(pool, path):
     rec = None
     if jev.available() and _jev_count[0] < JEV_PAGES_PER_RUN and _rng.random() < JEV_SHARE:
         _jev_count[0] += 1
-        rec = jev_audit(pool, title, date, claims, candidates, kept, model)
+        rec = jev_audit(path, title, date, claims, candidates, kept, model)
         if rec and rec.get("disputes"):
             kept = second_look(pool, title, date, claims, candidates, kept, rec["disputes"])
     priority_reasons = audit_priority_reasons(title, date, claims, kept)

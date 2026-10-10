@@ -66,6 +66,7 @@ def build_preview(records, event_id):
         ):
             latest_judgement[claim_id] = row
 
+    core_claims = [claim for claim in claims if claim.get("importance") == "core"]
     included, unresolved_core = [], []
     for claim in claims:
         claim_id = claim.get("id")
@@ -117,6 +118,7 @@ def build_preview(records, event_id):
                 "reasons": reasons or ["evidence gate not met"],
             })
 
+    core_gate_passed = bool(core_claims) and not unresolved_core
     lines = [
         "# Research narrative preview",
         "",
@@ -125,9 +127,11 @@ def build_preview(records, event_id):
         f"Event: {event_id}",
         f"Supported claims included: {len(included)}",
         f"Unresolved core claims: {len(unresolved_core)}",
-        f"Core evidence gate: {'passed for this preview' if not unresolved_core else 'NOT PASSED'}",
+        f"Core evidence gate: {'passed for this preview' if core_gate_passed else 'NOT PASSED'}",
         "",
     ]
+    if not core_claims:
+        lines += ["No core claims were present; the prototype cannot pass the core evidence gate without them.", ""]
     if unresolved_core:
         lines += [
             "## Unresolved core claims",
@@ -170,7 +174,7 @@ def build_preview(records, event_id):
     return {
         "event_id": event_id,
         "preview_only": True,
-        "core_evidence_gate_passed": not unresolved_core and bool(claims),
+        "core_evidence_gate_passed": core_gate_passed,
         "claims_included": len(included),
         "unresolved_core_claims": unresolved_core,
         "markdown": "\n".join(lines),

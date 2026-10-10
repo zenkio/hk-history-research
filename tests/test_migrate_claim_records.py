@@ -56,8 +56,8 @@ def test_extraction_queue_core_priority_uses_the_1841_cutoff_not_folder_name(tmp
     era.mkdir(parents=True)
     for year in (1810, 1840, 1841):
         (era / f"{year}-example.md").write_text(
-            f"---\\ntitle: Example {year}\\nyear: {year}\\n---\\n"
-            "## Narrative\\nNo explicit claim section.\\n",
+            f"---\ntitle: Example {year}\nyear: {year}\n---\n"
+            "## Narrative\nNo explicit claim section.\n",
             encoding="utf-8",
         )
 

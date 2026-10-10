@@ -66,3 +66,28 @@ jobs:
       # Read the real private corpus but never write migrated records in CI.
       - name: Preview claim-record migration against private corpus
         run: python3 scripts/migrate_claim_records.py
+
+      # Run the real-corpus preview in the runner's temporary directory. Only summary
+      # counts/status are logged; the private claim text and excerpts are not printed.
+      - name: Run isolated real-page narrative preview
+        env:
+          PREVIEW_PATH: ${{ runner.temp }}/white-paper-preview.md
+        run: |
+          python3 scripts/reconstruct_narrative.py \
+            --event-id event:15-contention-2014-beijing-issues-white-paper-on-hong-kong \
+            --output "$PREVIEW_PATH"
+          python3 - "$PREVIEW_PATH" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          preview = Path(sys.argv[1]).read_text(encoding="utf-8")
+          included = re.search(r"Supported claims included: (\\d+)", preview)
+          unresolved = re.search(r"Unresolved core claims: (\\d+)", preview)
+          assert "RESEARCH PREVIEW — NOT PUBLISHED" in preview
+          assert "Core evidence gate: NOT PASSED" in preview
+          assert "claim:15-contention-2014-beijing-issues-white-paper-on-hong-kong-067e6e9272" in preview
+          assert included and included.group(1) == "3", "expected three claims with current inspectable supporting evidence"
+          assert unresolved and unresolved.group(1) == "1", "the unsupported judges claim must remain unresolved"
+          print(f"PASS | real-page preview | included={included.group(1)}; unresolved_core={unresolved.group(1)}; gate=NOT PASSED; preview only")
+          PY

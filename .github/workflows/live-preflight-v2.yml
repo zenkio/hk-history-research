@@ -1,4 +1,4 @@
-name: One-off evidence-first extraction pilot v4
+name: One-off evidence-first extraction pilot v5
 
 # Intentionally limited to this temporary experiment branch. Outputs contain excerpts from
 # private draft pages, so they are committed only to a private data-repository experiment branch.
@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: evidence-first-live-preflight-v4
+  group: evidence-first-live-preflight-v5
   cancel-in-progress: true
 
 jobs:
@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
-          ref: experiment/preflight-model-output-v4-20261010
+          ref: experiment/preflight-model-output-v5-20261010
           token: ${{ secrets.DATA_REPO_TOKEN }}
           path: data
           fetch-depth: 0
@@ -93,7 +93,7 @@ jobs:
           OUT: ${{ runner.temp }}/preflight
         run: |
           set -euo pipefail
-          DEST="data/experiments/model-output/2026-10-10/prompt-v4"
+          DEST="data/experiments/model-output/2026-10-10/prompt-v5"
           mkdir -p "$DEST"
           shopt -s nullglob
           files=("$OUT"/*.jsonl "$OUT"/*.stderr "$OUT"/manifest.json)
@@ -109,16 +109,16 @@ jobs:
             git -C data status --short -- content/01_Timeline research/records
             exit 1
           fi
-          git -C data add "experiments/model-output/2026-10-10/prompt-v4"
-          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-10/prompt-v4/' || true)"
+          git -C data add "experiments/model-output/2026-10-10/prompt-v5"
+          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-10/prompt-v5/' || true)"
           if [[ -n "$unexpected" ]]; then
             echo "Unexpected staged paths; refusing to commit"
             printf '%s\n' "$unexpected"
             exit 1
           fi
           git -C data diff --cached --check
-          git -C data commit -m "experiment: save isolated preflight prompt-v4 outputs"
-          git -C data push origin HEAD:experiment/preflight-model-output-v4-20261010
+          git -C data commit -m "experiment: save isolated preflight prompt-v5 outputs"
+          git -C data push origin HEAD:experiment/preflight-model-output-v5-20261010
 
       - name: Fail if any reference-page extraction failed
         if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}
@@ -132,8 +132,8 @@ jobs:
           with open(os.environ["MANIFEST"], encoding="utf-8") as handle:
               manifest = json.load(handle)
           failures = manifest.get("failures", {})
-          if manifest.get("prompt_version") != 4:
-              print("FAIL | manifest prompt version must be 4")
+          if manifest.get("prompt_version") != 5:
+              print("FAIL | manifest prompt version must be 5")
               sys.exit(1)
           if len(manifest.get("files", [])) != 4:
               print("FAIL | manifest must contain exactly four reference pages")

@@ -1,9 +1,10 @@
 """Experimental, provenance-preserving extraction of atomic claims from draft history.
 
-This module is deliberately not wired into the scheduled pipeline yet. The first slice
-establishes a testable contract: a generated claim is accepted only when the model also
-returns an excerpt that can be found in the supplied draft or existing claim list.
+This module is deliberately not wired into the scheduled pipeline yet. It establishes a
+testable contract: generated claims must include an excerpt grounded in supplied draft
+material, and can be serialized into the existing versioned research-record schema.
 """
+import hashlib
 import re
 
 MAX_CLAIMS = 40
@@ -12,6 +13,19 @@ CLAIM_TYPES = {
     "institution", "context", "interpretation", "other",
 }
 IMPORTANCE = {"core", "supporting"}
+RECORD_CLAIM_TYPES = {
+    "date": "date",
+    "place": "place",
+    "person": "people",
+    "cause": "cause",
+    "action": "action",
+    "outcome": "outcome",
+    "quantity": "scale",
+    "institution": "context",
+    "context": "context",
+    "interpretation": "other",
+    "other": "other",
+}
 
 ATOMIC_CLAIM_PROMPT = """Extract independently testable historical claims from this Hong Kong history draft.
 
@@ -41,7 +55,7 @@ Existing claims to verify:
 
 
 def _normalise_space(value):
-    return re.sub(r"\s+", " ", str(value or "")).strip()
+    return re.sub(r"\\s+", " ", str(value or "")).strip()
 
 
 def _normalised_contains(haystack, needle):
@@ -89,15 +103,62 @@ def validate_atomic_claims(response, source_material, max_claims=MAX_CLAIMS):
     return validated
 
 
+def build_claim_records(claims, *, event_id, source_page, model, prompt_version, created_at):
+    """Serialize extracted claims as existing schema-v1 records without asserting truth.
+
+    IDs are deterministic for the same page and claim text. Re-running extraction therefore
+    does not create random IDs; version/supersession policy remains the caller's responsibility.
+    """
+    if not re.fullmatch(r"event:[a-z0-9][a-z0-9._-]*", str(event_id or "")):
+        raise ValueError("event_id must be a schema-valid event: identifier")
+    if not str(source_page or "").strip():
+        raise ValueError("source_page is required")
+    if not str(created_at or "").strip():
+        raise ValueError("created_at is required")
+
+    page_key = re.sub(r"[^a-z0-9._-]+", "-", str(source_page).lower()).strip("-.") or "page"
+    records = []
+    for claim in claims:
+        text = _normalise_space(claim.get("text"))
+        excerpt = _normalise_space(claim.get("source_excerpt"))
+        if not text or not excerpt:
+            raise ValueError("Each claim record requires text and source_excerpt provenance")
+        digest = hashlib.sha256(f"{source_page}\\0{text.casefold()}".encode("utf-8")).hexdigest()[:12]
+        record_id = f"claim:{page_key[:80]}-{digest}"
+        records.append({
+            "record_type": "claim",
+            "schema_version": 1,
+            "id": record_id,
+            "event_id": event_id,
+            "text": text,
+            "claim_type": RECORD_CLAIM_TYPES.get(claim.get("claim_type"), "other"),
+            "status": "unverified",
+            "importance": claim.get("importance") if claim.get("importance") in IMPORTANCE else "supporting",
+            "created_from": "ai_draft",
+            "created_at": created_at,
+            "updated_at": created_at,
+            "provenance": {
+                "source_page": source_page,
+                "source_excerpt": excerpt,
+                "extraction": claim.get("extraction", "ai_with_source_excerpt"),
+                "model": model,
+                "prompt_version": prompt_version,
+            },
+            "is_current": True,
+            "superseded_at": None,
+        })
+    return records
+
+
 def extract_atomic_claims(pool, *, title, date, draft_text, existing_claims=()):
     """Ask the configured AI pool to extract claims, then validate source provenance."""
     existing = list(existing_claims or ())
-    source_material = "\n".join([str(draft_text or ""), *[str(item) for item in existing]])
+    source_material = "\\n".join([str(draft_text or ""), *[str(item) for item in existing]])
     prompt = ATOMIC_CLAIM_PROMPT.format(
         title=str(title or ""),
         date=str(date or ""),
         draft_text=str(draft_text or "")[:18000],
-        existing_claims="\n".join(f"- {item}" for item in existing)[:6000] or "(none)",
+        existing_claims="\\n".join(f"- {item}" for item in existing)[:6000] or "(none)",
     )
     response, model, _ = pool.generate_json("evidence", prompt)
     claims = validate_atomic_claims(response, source_material)

@@ -4,10 +4,13 @@
 For each event page (1841 onward first), the page's title and claims are searched in
 three free sources that need no API key:
 
+  A  Hong Kong Government Records Service: Hong Kong archival catalogue metadata.
   A  UK National Archives Discovery: catalogue entries of primary records
      (e.g. CO 129, Hong Kong original correspondence).
   A  Internet Archive: books and official publications printed before 1950.
   B  OpenAlex: scholarly articles and books (with DOI and abstract).
+
+GRS and National Archives search results are catalogue metadata, not inspected passages.
 
 One AI call (role "evidence") then reads the candidates next to the page's claims and
 keeps only those genuinely about the page's topic, noting which claim each one
@@ -338,6 +341,8 @@ def grs_catalogue(query):
         raw = response.read(GRS_MAX_BYTES + 1)
     truncated = len(raw) > GRS_MAX_BYTES
     html = raw[:GRS_MAX_BYTES].decode("utf-8", errors="replace")
+    if "search results" not in html.casefold():
+        raise ValueError("GRS catalogue returned an unexpected HTML page")
     results = parse_grs_catalogue_results(html, query)
     if truncated and not results:
         raise ValueError("GRS catalogue response exceeded the byte limit before any record links could be inspected")

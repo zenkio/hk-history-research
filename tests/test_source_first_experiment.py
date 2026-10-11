@@ -427,7 +427,7 @@ def test_comparison_model_is_another_family_and_only_for_the_experiment():
     cfg = json.loads((ROOT / "scripts" / "models.json").read_text(encoding="utf-8"))
     entry = next(m for m in cfg["models"] if m["display"] == "OpenRouter Compare")
     assert entry["provider"] == "openrouter"
-    assert not any("nemotron" in pick for pick in entry["pick"])
+    assert not any("nemotron" in pick for pick in entry["pick"]) and "nemotron" in entry["avoid"]
     names = [m["display"] for m in cfg["models"]]
     # Resolved after Large and Medium, so it cannot take the model they picked.
     assert names.index("OpenRouter Compare") > names.index("OpenRouter Medium") > names.index("OpenRouter Large")

@@ -182,3 +182,33 @@ def test_seeding_runs_on_openrouter_alone(monkeypatch):
     assert not seed_history.any_ai_key(), "a blank secret is no key"
     monkeypatch.setenv("OPENROUTER_API_KEY", "or-key")
     assert seed_history.any_ai_key()
+
+
+# Run 38181951012: no free model matched the comparison model's preferences, so the v2.1
+# comparison run had no model. "*" now takes the largest free model left, never an avoided family.
+def resolve_with_free(monkeypatch, make_pool, entries, free_ids):
+    p = make_pool({}, {}, or_keys=[("OPENROUTER_API_KEY", "k")])
+    p.models = {e["display"]: {"provider": "openrouter", **e} for e in entries}
+    p.state = {}
+    monkeypatch.setattr(p, "_read_openrouter_limit", lambda entries: None)
+    data = {"data": [{"id": i, "context_length": 1000 - n} for n, i in enumerate(free_ids)]}
+    monkeypatch.setattr(gp.urllib.request, "urlopen", lambda *a, **k: FakeResponse(data))
+    p._resolve_openrouter()
+    return {name: m["api_id"] for name, m in p.models.items()}
+
+
+def test_wildcard_pick_takes_largest_free_model_outside_avoided_family(monkeypatch, make_pool):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    ids = resolve_with_free(monkeypatch, make_pool, [
+        {"display": "Large", "pick": ["nemotron-3-ultra"]},
+        {"display": "Compare", "pick": ["deepseek", "*"], "avoid": ["nemotron"]},
+    ], ["nvidia/nemotron-3-ultra:free", "nvidia/nemotron-3-super:free", "acme/big-chat:free"])
+    assert ids == {"Large": "nvidia/nemotron-3-ultra:free", "Compare": "acme/big-chat:free"}
+
+
+def test_avoided_family_is_never_picked_even_by_preference(monkeypatch, make_pool):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    ids = resolve_with_free(monkeypatch, make_pool, [
+        {"display": "Compare", "pick": ["super", "*"], "avoid": ["nemotron"]},
+    ], ["nvidia/nemotron-3-super:free"])
+    assert ids == {"Compare": None}

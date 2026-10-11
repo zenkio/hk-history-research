@@ -8,7 +8,8 @@ closest saved copy, which a reviewer can open even after the live page changes.
 
 Only hashes and metadata are written: the page itself is never saved, because the internal
 processing basis covers short excerpts, not copies of whole pages. A page that cannot be fetched
-is recorded as an access failure with its error; it never stops the run.
+is recorded as an access failure with its error; when the Internet Archive has a copy, that copy is
+hashed and checked instead (status archived_copy_only). Nothing here ever stops the run.
 """
 import argparse
 import datetime
@@ -52,11 +53,22 @@ def page_text(data, content_type):
     return html.unescape(re.sub(r"<[^>]+>", " ", text))
 
 
+def squeeze(text):
+    """Letters and digits only: PDF text breaks lines and words where a passage does not."""
+    return re.sub(r"[\W_]+", "", fold(text))
+
+
 def passage_found(passage, text):
     """True/False when the page text could be read, None when it could not."""
     if text is None:
         return None
-    return fold(passage) in fold(text)
+    # Run 38181951012 missed an AAB PDF sentence that is on the page: compare squeezed text too.
+    return fold(passage) in fold(text) or squeeze(passage) in squeeze(text)
+
+
+def archived_copy_url(snapshot, url):
+    """The raw bytes of a Wayback copy (the id_ form omits the archive's banner)."""
+    return f"https://web.archive.org/web/{snapshot['timestamp']}id_/{url}"
 
 
 def fetch(url, opener=urllib.request.urlopen):
@@ -102,13 +114,23 @@ def snapshot_packets(packets, opener=urllib.request.urlopen):
                 except Exception as exc:
                     record.update(status="access_failure", error=f"{type(exc).__name__}: {str(exc)[:200]}")
                 record["wayback"] = wayback(url, opener)
+                if record["status"] == "access_failure" and record["wayback"]:
+                    # The live page failed (an SSL error, a 429): hash the archived copy instead,
+                    # so a reviewer still has a fixed copy to check the passage against.
+                    try:
+                        _, content_type, data, _ = fetch(archived_copy_url(record["wayback"], url), opener)
+                        record["wayback"].update(sha256=hashlib.sha256(data).hexdigest(), bytes=len(data))
+                        record["_text"] = page_text(data, content_type)
+                        record["status"] = "archived_copy_only"
+                    except Exception as exc:
+                        record["wayback"]["error"] = f"{type(exc).__name__}: {str(exc)[:200]}"
                 pages[url] = record
             record = pages[url]
             record["sources"].append({
                 "packet": name,
                 "source_id": source.get("source_id"),
                 "passage_found": passage_found(source.get("passage"), record.get("_text"))
-                if record["status"] == "fetched" else None,
+                if record["status"] in ("fetched", "archived_copy_only") else None,
             })
     for record in pages.values():
         record.pop("_text", None)

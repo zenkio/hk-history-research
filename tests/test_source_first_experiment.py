@@ -447,3 +447,28 @@ def test_workflow_offers_both_roles_and_saves_snapshots():
     assert role["default"] == "evidence" and tuple(role["options"]) == source_first.MODEL_ROLES
     assert '--role "$MODEL_ROLE"' in text
     assert 'scripts/source_snapshot.py "${packets[@]}"' in text and "snapshots.json" in text
+
+
+# Prompt revision 5: the blind review of run 38181951012 found gaps calling whole sources silent
+# ("No inspected record describes the rioting" of an article titled "Rioting & Looting").
+def test_gaps_and_limits_calling_a_source_silent_are_set_aside():
+    result = valid_result()
+    result["gaps"] = ["No inspected record describes the rioting.",
+                      "No supplied excerpt describes the rioting.",
+                      "Harbour records for 1841 were not accessible (see access log)."]
+    result["perspectives"][0]["known_limits"] = (
+        "The Yearbook does not specify which side refused. The supplied excerpt does not name the officer.")
+    source_first.screen_silence(result)
+    assert result["gaps"] == ["No supplied excerpt describes the rioting.",
+                              "Harbour records for 1841 were not accessible (see access log)."]
+    assert result["perspectives"][0]["known_limits"] == "The supplied excerpt does not name the officer."
+    assert [g["text"] for g in result["rejected_gaps"]] == [
+        "No inspected record describes the rioting.",
+        "P1 known_limits: The Yearbook does not specify which side refused."]
+
+
+def test_run_records_rejected_gaps():
+    result = valid_result()
+    result["gaps"] = ["The record is silent on the date."]
+    out = source_first.run_source_first(packet(), FakePool([json.dumps(result)]))
+    assert out["result"]["gaps"] == [] and out["manifest"]["rejected_gap_count"] == 1

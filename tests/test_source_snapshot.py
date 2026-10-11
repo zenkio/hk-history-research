@@ -80,3 +80,21 @@ def test_unreadable_pdf_is_unchecked_not_missing(monkeypatch):
     monkeypatch.setitem(sys.modules, "pypdf", None)  # as on a runner without pypdf
     assert snap.page_text(b"%PDF-1.4 binary", "application/pdf") is None
     assert snap.passage_found("any passage", None) is None
+
+
+def test_failed_live_page_is_checked_against_its_archived_copy():
+    # Run 38181951012: the LegCo PDF failed with an SSL error but the Internet Archive had a copy.
+    url = "https://records.example/a"
+    archived = snap.archived_copy_url({"timestamp": "20240101000000"}, url)
+    pages = snap.snapshot_packets(packets(("old", url, "the 'new' pier-head was built")), opener({archived: PAGE}))
+    record = pages[url]
+    assert record["status"] == "archived_copy_only" and "connection refused" in record["error"]
+    assert record["wayback"]["sha256"] == snap.hashlib.sha256(PAGE).hexdigest()
+    assert record["sources"][0]["passage_found"] is True
+
+
+def test_passage_split_across_pdf_lines_is_found():
+    # Run 38181951012 reported an AAB sentence missing although it is on the page.
+    text = "The murder took place in the even-\ning of 10 Janu ary 1901, when he was"
+    assert snap.passage_found("The murder took place in the evening of 10 January 1901", text)
+    assert not snap.passage_found("The murder took place in the morning", text)

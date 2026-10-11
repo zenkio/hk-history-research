@@ -248,9 +248,12 @@ class FakePool:
         self.replies = list(replies)
         self.models = {"OpenRouter Large": {"api_id": "vendor/large-model:free"}}
         self.calls = 0
+        self.roles, self.prompts = [], []
 
     def generate_text(self, role, prompt, parse, only=None):
-        assert role == "evidence" and "INSPECTED SOURCE RECORDS" in prompt
+        assert role in source_first.MODEL_ROLES and "INSPECTED SOURCE RECORDS" in prompt
+        self.roles.append(role)
+        self.prompts.append(prompt)
         for text in self.replies:
             self.calls += 1
             try:
@@ -379,3 +382,68 @@ def test_single_quoted_names_and_opening_adverbs_are_read_correctly():
     kept, rejected = source_first.screen_claims(value, result)
     assert [c["claim_id"] for c in kept] == ["C1"] and rejected == []
     assert source_first.names_in("Retrospectively records the Ordinance.") == {"Ordinance"}
+
+
+# Packet revision 4 (data PR #66) added access_log: records tried but not inspected (E13).
+def access_entry(**extra):
+    return {"record_family": "Colonial letters, volume 9", "url": "https://archive.example/vol9",
+            "attempted": "2026-10-11", "result": "access_failure", "error": "fetch error", **extra}
+
+
+def test_access_log_is_shown_to_the_model_as_not_evidence():
+    value = packet()
+    value["access_log"] = [access_entry()]
+    prompt = source_first.build_source_first_prompt(value)
+    assert "RECORDS TRIED BUT NOT INSPECTED (not evidence" in prompt
+    assert "Colonial letters, volume 9" in prompt
+    assert "RECORDS TRIED BUT NOT INSPECTED" not in source_first.build_source_first_prompt(packet())
+
+
+def test_access_log_entries_must_be_complete_and_use_known_results():
+    for bad in ([{"url": "https://archive.example/vol9"}], [access_entry(result="maybe")], "not a list"):
+        value = packet()
+        value["access_log"] = bad
+        try:
+            source_first.validate_source_packet(value)
+        except ValueError:
+            continue
+        raise AssertionError(f"accepted access_log {bad!r}")
+
+
+def test_comparison_role_is_used_and_recorded():
+    pool = FakePool([json.dumps(valid_result())])
+    out = source_first.run_source_first(packet(), pool, role="source_first_compare")
+    assert pool.roles == ["source_first_compare"]
+    assert out["manifest"]["model_role"] == "source_first_compare"
+    try:
+        source_first.run_source_first(packet(), FakePool([]), role="draft")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("an unknown role was accepted")
+
+
+def test_comparison_model_is_another_family_and_only_for_the_experiment():
+    cfg = json.loads((ROOT / "scripts" / "models.json").read_text(encoding="utf-8"))
+    entry = next(m for m in cfg["models"] if m["display"] == "OpenRouter Compare")
+    assert entry["provider"] == "openrouter"
+    assert not any("nemotron" in pick for pick in entry["pick"])
+    names = [m["display"] for m in cfg["models"]]
+    # Resolved after Large and Medium, so it cannot take the model they picked.
+    assert names.index("OpenRouter Compare") > names.index("OpenRouter Medium") > names.index("OpenRouter Large")
+    users = [role for role, models in cfg["routing"].items()
+             if not role.startswith("_") and "OpenRouter Compare" in models]
+    assert users == ["source_first_compare"]
+    for role in source_first.MODEL_ROLES:
+        assert role in cfg["routing"]
+
+
+def test_workflow_offers_both_roles_and_saves_snapshots():
+    import yaml
+    text = (ROOT / ".github" / "workflows" / "v2-1-source-first.yml").read_text(encoding="utf-8")
+    flow = yaml.safe_load(text)
+    on = flow.get("on", flow.get(True))
+    role = on["workflow_dispatch"]["inputs"]["model_role"]
+    assert role["default"] == "evidence" and tuple(role["options"]) == source_first.MODEL_ROLES
+    assert '--role "$MODEL_ROLE"' in text
+    assert 'scripts/source_snapshot.py "${packets[@]}"' in text and "snapshots.json" in text

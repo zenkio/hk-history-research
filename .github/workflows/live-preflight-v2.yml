@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: evidence-first-live-preflight-v7
+  group: evidence-first-live-preflight-v8
   cancel-in-progress: true
 
 jobs:
@@ -110,16 +110,16 @@ jobs:
             git -C data status --short -- content/01_Timeline research/records
             exit 1
           fi
-          git -C data add "experiments/model-output/2026-10-11/prompt-v7"
-          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-11/prompt-v7/' || true)"
+          git -C data add "experiments/model-output/2026-10-11/prompt-v8"
+          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-11/prompt-v8/' || true)"
           if [[ -n "$unexpected" ]]; then
             echo "Unexpected staged paths; refusing to commit"
             printf '%s\n' "$unexpected"
             exit 1
           fi
           git -C data diff --cached --check
-          git -C data commit -m "experiment: save isolated preflight prompt-v7 outputs"
-          git -C data push origin HEAD:experiment/preflight-model-output-v7-20261011
+          git -C data commit -m "experiment: save isolated preflight prompt-v8 outputs"
+          git -C data push origin HEAD:experiment/preflight-model-output-v8-20261011
 
       - name: Fail if any reference-page extraction failed
         if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}

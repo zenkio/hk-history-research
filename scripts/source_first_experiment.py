@@ -47,13 +47,18 @@ def validate_source_packet(packet):
         if not source_id or source_id in seen:
             raise ValueError("source_id values must be non-empty and unique")
         seen.add(source_id)
-        for field in ("title", "institution", "url", "source_type", "locator", "language"):
+        for field in ("title", "institution", "url", "source_type", "locator", "language", "processing_basis", "public_reuse_status"):
             if not normalise(source.get(field)):
                 raise ValueError(f"source {source_id} missing required field: {field}")
         if source.get("inspection_status") != "inspected":
             raise ValueError(f"source {source_id} is not marked inspected")
         if source.get("rights_status") != "approved_for_processing":
             raise ValueError(f"source {source_id} has not passed rights/processing review")
+        basis = normalise(source.get("processing_basis")).casefold()
+        if "internal research only" not in basis:
+            raise ValueError(f"source {source_id} lacks a scoped internal-research processing basis")
+        if source.get("public_reuse_status") != "not_approved":
+            raise ValueError(f"source {source_id} public reuse must remain explicitly not approved")
         if len(normalise(source.get("passage"))) < 20:
             raise ValueError(f"source {source_id} has no usable inspected passage")
     return packet
@@ -74,6 +79,8 @@ def build_source_first_prompt(packet):
             "locator": source["locator"],
             "language": source["language"],
             "creator_perspective": source.get("creator_perspective", ""),
+            "processing_basis": source["processing_basis"],
+            "public_reuse_status": source["public_reuse_status"],
             "passage": source["passage"],
         })
     return f"""You are conducting an isolated source-first Hong Kong history research experiment.

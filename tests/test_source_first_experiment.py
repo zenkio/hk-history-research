@@ -221,14 +221,14 @@ def test_hedged_claim_is_set_aside_not_kept():
 
 def test_claim_year_must_come_from_linked_passage_or_record_date():
     value = packet()
-    value["sources"][0]["passage"] += " The treaty was signed in 1842."
+    value["sources"][0]["passage"] += " The Treaty of Nanking was signed in 1842."
     result = valid_result()
     result["candidate_claims"] = [
-        {"claim_id": "C1", "text": "The treaty was signed in 1842.", "claim_type": "date",
+        {"claim_id": "C1", "text": "The Treaty of Nanking was signed in 1842.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
-        {"claim_id": "C2", "text": "The flag at Possession Point was hoisted before 2021.", "claim_type": "date",
+        {"claim_id": "C2", "text": "The British flag at Possession Point was hoisted before 2021.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
-        {"claim_id": "C3", "text": "The island was formally occupied in 1843.", "claim_type": "date",
+        {"claim_id": "C3", "text": "The British formally occupied the island in 1843.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
     ]
     kept, rejected = source_first.screen_claims(value, result)
@@ -270,7 +270,7 @@ def test_invalid_reply_is_retried_and_run_is_traceable_to_packet_and_model():
     value["sources"].append(zh)
     good = valid_result()
     good["record_statements"].append(statement("S2", "zh-record", "该条约于一八四二年签订", "第1段", "retrospective_summary"))
-    good["candidate_claims"].append({"claim_id": "C2", "text": "A treaty was signed in 1842.", "claim_type": "date",
+    good["candidate_claims"].append({"claim_id": "C2", "text": "The Treaty of Nanking was signed in 1842.", "claim_type": "date",
                                      "source_statement_ids": ["S2"], "status": "unverified"})
     bad = json.loads(json.dumps(good))
     bad["record_statements"][0]["source_excerpt"] = "an invented excerpt"
@@ -303,14 +303,14 @@ def claim(cid, text):
 
 def test_names_absent_from_the_excerpt_are_set_aside():
     value = packet()
-    value["sources"][0]["passage"] = "He was shot in his classroom by agents sent from the capital in 1901."
+    value["sources"][0]["passage"] = "Chan Ming was shot in his classroom by agents sent from the capital in 1901."
     result = valid_result()
-    result["record_statements"][0]["source_excerpt"] = "He was shot in his classroom"
+    result["record_statements"][0]["source_excerpt"] = "Chan Ming was shot in his classroom"
     result["candidate_claims"] = [
-        claim("C1", "He was shot in his classroom in 1901."),
+        claim("C1", "Chan Ming was shot in his classroom in 1901."),
         claim("C2", "The teacher Lee Wing was shot in his classroom."),   # name from the title, not the excerpt
         claim("C3", "An anti-Foreign boycott followed the shooting."),    # label from the event question
-        claim("C4", "The shooting happened in the colony's capital."),
+        claim("C4", "Chan Ming was shot in the colony's capital."),
     ]
     kept, rejected = source_first.screen_claims(value, result)
     assert [c["claim_id"] for c in kept] == ["C1", "C4"]
@@ -472,3 +472,25 @@ def test_run_records_rejected_gaps():
     result["gaps"] = ["The record is silent on the date."]
     out = source_first.run_source_first(packet(), FakePool([json.dumps(result)]))
     assert out["result"]["gaps"] == [] and out["manifest"]["rejected_gap_count"] == 1
+
+
+# Prompt revision 6: the blind review of run 38183413733 failed E6 on claims such as
+# "The murder took place in the evening of 10 January" that name no subject.
+def test_claim_without_a_named_subject_is_set_aside():
+    result = valid_result()
+    result["candidate_claims"] = [
+        {"claim_id": "C1", "text": "The occupation took place on 26 January.", "claim_type": "date",
+         "source_statement_ids": ["S1"], "status": "unverified"},
+        {"claim_id": "C2", "text": "The island was formally occupied after the British flag was hoisted.",
+         "claim_type": "action", "source_statement_ids": ["S1"], "status": "unverified"}]
+    kept, rejected = source_first.screen_claims(packet(), result)
+    assert [c["claim_id"] for c in kept] == ["C2"]
+    assert any("no named subject" in r for r in rejected[0]["rejection_reasons"])
+
+
+def test_comparison_model_prefers_gemma_4_31b():
+    # Run 38184409660: the only free non-Nemotron models were gated, previews or small;
+    # Gemma 4 31B is free on OpenRouter and of another family.
+    cfg = json.loads((ROOT / "scripts" / "models.json").read_text(encoding="utf-8"))
+    entry = next(m for m in cfg["models"] if m["display"] == "OpenRouter Compare")
+    assert entry["pick"][0] == "gemma-4-31b" and entry["pick"][-1] == "*"

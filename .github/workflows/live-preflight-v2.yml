@@ -110,8 +110,8 @@ jobs:
             git -C data status --short -- content/01_Timeline research/records
             exit 1
           fi
-          git -C data add "experiments/model-output/2026-10-10/prompt-v6"
-          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-10/prompt-v6/' || true)"
+          git -C data add "experiments/model-output/2026-10-11/prompt-v7"
+          unexpected="$(git -C data diff --cached --name-only | grep -v '^experiments/model-output/2026-10-11/prompt-v7/' || true)"
           if [[ -n "$unexpected" ]]; then
             echo "Unexpected staged paths; refusing to commit"
             printf '%s\n' "$unexpected"
@@ -119,7 +119,7 @@ jobs:
           fi
           git -C data diff --cached --check
           git -C data commit -m "experiment: save isolated preflight prompt-v7 outputs"
-          git -C data push origin HEAD:experiment/preflight-model-output-v6-20261010
+          git -C data push origin HEAD:experiment/preflight-model-output-v7-20261011
 
       - name: Fail if any reference-page extraction failed
         if: ${{ startsWith(github.event.head_commit.message, 'test:') == false }}

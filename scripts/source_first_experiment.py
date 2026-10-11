@@ -15,8 +15,9 @@ from pathlib import Path
 
 PROMPT_VERSION = "2.1"
 # Revision of the v2.1 prompt and validator. r2 (after reviewing run 38169605722) added the
-# source_type/statement_kind rule, the claim screens and the reproducibility manifest.
-PROMPT_REVISION = 2
+# source_type/statement_kind rule, the claim screens and the reproducibility manifest. r3 (after
+# the blind second review of run 38177919398) added record_context and the name screen.
+PROMPT_REVISION = 3
 STATEMENT_KINDS = {
     "assertion", "allegation", "denial", "opinion", "official_action",
     "retrospective_summary", "uncertain_ocr", "reported_speech",
@@ -37,6 +38,11 @@ HEDGE_RE = re.compile(r"\b(presumably|probably|likely|possibly|perhaps|apparentl
 YEAR_RE = re.compile(r"(?<!\d)(1[0-9]{3}|20[0-9]{2})(?!\d)")
 CHINESE_DIGITS = dict(zip("〇零一二三四五六七八九", "00123456789"))
 CHINESE_YEAR_RE = re.compile("[〇零一二三四五六七八九]{4}")
+# Run 38177919398 filled names, offices and dates in from record titles and the event question
+# ("Yeung Ku-wan" for an excerpt that says "He", "anti-Japanese" for one that says "the boycott").
+# A capitalised word in a claim must occur in a linked passage or that record's record_context.
+WORD_RE = re.compile(r"[A-Za-z][A-Za-z'\u2019-]*")
+SENTENCE_STARTERS = {"a", "an", "the", "he", "she", "it", "they", "this", "that", "in", "on", "at", "by"}
 
 
 def normalise(value):
@@ -60,6 +66,21 @@ def years_in(text):
     for match in CHINESE_YEAR_RE.findall(text):
         found.add("".join(CHINESE_DIGITS[c] for c in match))
     return found
+
+
+def words_in(text):
+    """Lower-cased words, possessive 's dropped, so "Hong Kong's" matches "Hong Kong"."""
+    return {re.sub(r"['\u2019]s$", "", w).casefold() for w in WORD_RE.findall(str(text or ""))}
+
+
+def names_in(text):
+    """Words written with a capital letter, other than a sentence-opening function word."""
+    words = WORD_RE.findall(str(text or ""))
+    # A perspective position often opens with its verb ("Reports the denial ...").
+    if words and (words[0].casefold() in SENTENCE_STARTERS
+                  or (words[0][1:].islower() and words[0].casefold().endswith(("s", "ed", "ing")))):
+        words = words[1:]
+    return {re.sub(r"['\u2019]s$", "", w) for w in words if any(c.isupper() for c in w)}
 
 
 def validate_source_packet(packet):
@@ -96,6 +117,10 @@ def validate_source_packet(packet):
             raise ValueError(f"source {source_id} public reuse must remain explicitly not approved")
         if len(normalise(source.get("passage"))) < 20:
             raise ValueError(f"source {source_id} has no usable inspected passage")
+        context = source.get("record_context", {})
+        if not isinstance(context, dict) or not all(
+                isinstance(v, str) and normalise(v) for v in context.values()):
+            raise ValueError(f"source {source_id} record_context must map names to non-empty text")
     return packet
 
 
@@ -118,6 +143,7 @@ def build_source_first_prompt(packet):
             "processing_basis": source["processing_basis"],
             "public_reuse_status": source["public_reuse_status"],
             "passage": source["passage"],
+            "record_context": source.get("record_context", {}),
         })
     return f"""You are conducting an isolated source-first Hong Kong history research experiment.
 Prompt version: {PROMPT_VERSION}
@@ -134,7 +160,9 @@ RULES
 - First record what each source actually states. Preserve the distinction between the document's statement and historical truth.
 - Attribute allegations, opinions, denials, reported speech, and retrospective summaries to their speaker/creator.
 - A catalogue title is not a passage; only the supplied inspected passages may ground record statements.
-- Title, institution, date and locator fields identify a record; they are not facts about the event. Do not move places, dates or names from them into claims or perspectives.
+- Title, institution, date and locator fields identify a record; they are not facts about the event. Do not move places, dates or names from them, or from the research question, into claims or perspectives.
+- record_context states who is speaking or what the record is (for example the speaker of a debate passage). It may be used to attribute a statement, never as a fact about the event.
+- Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. If the passage says "He" or "the boycott", keep those words and add a gap rather than supplying the name.
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
 - statement_kind follows the record: a source_type containing "retrospective" or "heritage" gives retrospective_summary, reported_speech or opinion; a contemporary or primary record is never retrospective_summary.
 - Keep legal status, physical action, later outcome, and retrospective interpretation as separate propositions.
@@ -251,31 +279,63 @@ def validate_source_first_output(packet, result):
     }
 
 
-def screen_claims(packet, result):
-    """Set aside claims that add speculation or years the linked records do not contain.
+def unsupported_details(sources, text):
+    """Why text says more than its linked sources: hedges, years and names they do not contain.
 
-    Returns (kept, rejected); each rejected claim carries the reasons. Years may come from a
-    linked source's passage or its source_date (the record's own date), nowhere else.
+    Years may come from a passage, its record_context or its source_date (the record's own
+    date); names only from a passage or record_context. Names are not checked against
+    non-English records, whose wording the model has translated.
+    """
+    passages = [s["passage"] for s in sources] + [v for s in sources for v in s.get("record_context", {}).values()]
+    reasons = []
+    hedge = HEDGE_RE.search(text)
+    if hedge:
+        reasons.append(f"speculative wording: {hedge.group(0)}")
+    known_years = set()
+    for value in passages + [s.get("source_date") for s in sources]:
+        known_years |= years_in(value)
+    extra_years = sorted(years_in(text) - known_years)
+    if extra_years:
+        reasons.append("year not in the linked records: " + ", ".join(extra_years))
+    if all(normalise(s["language"]).casefold().startswith("en") for s in sources):
+        known_words = set().union(*(words_in(p) for p in passages))
+        extra_names = sorted(n for n in names_in(text) if n.casefold() not in known_words)
+        if extra_names:
+            reasons.append("name not in the linked records: " + ", ".join(extra_names))
+    return reasons
+
+
+def screen_claims(packet, result):
+    """Set aside claims that add speculation, years or names the linked records do not contain.
+
+    Returns (kept, rejected); each rejected claim carries the reasons.
     """
     sources = {s["source_id"]: s for s in packet["sources"]}
     statements = {normalise(s.get("statement_id")): s for s in result["record_statements"]}
     kept, rejected = [], []
     for claim in result["candidate_claims"]:
-        linked = {statements[ref]["source_id"] for ref in claim["source_statement_ids"]}
-        known_years = set()
-        for source_id in linked:
-            known_years |= years_in(sources[source_id]["passage"]) | years_in(sources[source_id].get("source_date"))
-        reasons = []
-        hedge = HEDGE_RE.search(claim["text"])
-        if hedge:
-            reasons.append(f"speculative wording: {hedge.group(0)}")
-        extra_years = sorted(years_in(claim["text"]) - known_years)
-        if extra_years:
-            reasons.append("year not in the linked records: " + ", ".join(extra_years))
+        linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in claim["source_statement_ids"]})]
+        reasons = unsupported_details(linked, claim["text"])
         if reasons:
             rejected.append({**claim, "rejection_reasons": reasons})
         else:
             kept.append(claim)
+    return kept, rejected
+
+
+def screen_perspectives(packet, result):
+    """Like screen_claims, for each perspective's documented_position (the actor's name is
+    record identity and is not checked)."""
+    sources = {s["source_id"]: s for s in packet["sources"]}
+    statements = {normalise(s.get("statement_id")): s for s in result["record_statements"]}
+    kept, rejected = [], []
+    for row in result["perspectives"]:
+        linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in row["source_statement_ids"]})]
+        reasons = unsupported_details(linked, row["documented_position"])
+        if reasons:
+            rejected.append({**row, "rejection_reasons": reasons})
+        else:
+            kept.append(row)
     return kept, rejected
 
 
@@ -317,10 +377,14 @@ def run_source_first(packet, pool, packet_file=None, packet_bytes=None):
     manifest = validate_source_first_output(packet, response)
     kept, rejected = screen_claims(packet, response)
     response["candidate_claims"], response["rejected_claims"] = kept, rejected
+    kept_views, rejected_views = screen_perspectives(packet, response)
+    response["perspectives"], response["rejected_perspectives"] = kept_views, rejected_views
     annotate(packet, response)
     manifest.update({
         "candidate_claim_count": len(kept),
         "rejected_claim_count": len(rejected),
+        "perspective_count": len(kept_views),
+        "rejected_perspective_count": len(rejected_views),
         "model": model,
         "model_api_id": pool.models.get(model, {}).get("api_id", model),
         "prompt_revision": PROMPT_REVISION,

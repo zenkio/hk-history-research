@@ -212,3 +212,42 @@ def test_avoided_family_is_never_picked_even_by_preference(monkeypatch, make_poo
         {"display": "Compare", "pick": ["super", "*"], "avoid": ["nemotron"]},
     ], ["nvidia/nemotron-3-super:free"])
     assert ids == {"Compare": None}
+
+
+# Run 38182972425: a free model answered 403 "only available on ..." and the pool dropped the
+# account's only OpenRouter key, so every OpenRouter model was off for the run.
+GATED = '403 {"error":{"message":"vendor/gated:free is only available on another plan"}}'
+
+
+def test_openrouter_403_refuses_the_model_not_the_key(make_pool):
+    models = {"OpenRouter Large": {"provider": "openrouter", "api_id": "vendor/gated:free"},
+              "OpenRouter Medium": {"provider": "openrouter", "api_id": "vendor/ok:free"}}
+    p = make_pool(models, {"evidence": ["OpenRouter Large", "OpenRouter Medium"]},
+                  or_keys=[("OPENROUTER_API_KEY", "k")])
+
+    def call(m, prompt):
+        if m["api_id"] == "vendor/gated:free":
+            raise Exception(GATED)
+        return '{"ok": 1}', [], 10
+    p._call_openrouter = call
+    assert p._generate("evidence", "x", gp._parse_json, False, None, None)[1] == "OpenRouter Medium"
+    assert p.or_keys == [("OPENROUTER_API_KEY", "k")] and "OpenRouter Large" in p.unavailable
+
+
+def test_wildcard_entry_moves_to_the_next_free_model_after_a_403(make_pool):
+    models = {"OpenRouter Compare": {"provider": "openrouter", "api_id": "vendor/gated:free",
+                                     "pick": ["deepseek", "*"], "avoid": ["nemotron"]}}
+    p = make_pool(models, {"source_first_compare": ["OpenRouter Compare"]}, or_keys=[("OPENROUTER_API_KEY", "k")])
+    p.or_free = ["vendor/gated:free", "nvidia/nemotron-x:free", "acme/open:free"]
+    p.or_refused = set()
+    used = []
+
+    def call(m, prompt):
+        used.append(m["api_id"])
+        if m["api_id"] == "vendor/gated:free":
+            raise Exception(GATED)
+        return '{"ok": 1}', [], 10
+    p._call_openrouter = call
+    assert p._generate("source_first_compare", "x", gp._parse_json, False, None, None)[1] == "OpenRouter Compare"
+    assert used == ["vendor/gated:free", "acme/open:free"]
+    assert p.models["OpenRouter Compare"]["api_id"] == "acme/open:free"

@@ -237,6 +237,22 @@ class ModelPool:
                          else f"no free model matching {m.get('pick')} (free now: {', '.join(d['id'] for d in free[:15]) or 'none'})"))
             self.state.setdefault("resolved", {})[m["display"]] = hit
         self.state["openrouter_free"] = [d["id"] for d in free]
+        self.or_free, self.or_refused = [d["id"] for d in free], set()
+
+    def _repick_openrouter(self, m, msg):
+        """For an entry ending its picks with "*": move to the next free model after a refusal."""
+        if "*" not in m.get("pick", []):
+            return False
+        self.or_refused.add(m["api_id"])
+        taken = {e.get("api_id") for e in self.models.values() if e.get("provider") == "openrouter"}
+        avoid = [a.lower() for a in m.get("avoid", [])]
+        nxt = next((i for i in getattr(self, "or_free", []) if i not in taken and i not in self.or_refused
+                    and not any(a in i.lower() for a in avoid)), None)
+        if not nxt:
+            return False
+        print(f"  [pool] {m['display']}: {m['api_id']} refused ({msg[:80]}); trying {nxt}")
+        m["api_id"] = nxt
+        return True
 
     def _read_openrouter_limit(self, entries):
         """Ask OpenRouter which daily limit this account has; keep the smaller one if it can't say."""
@@ -504,6 +520,14 @@ class ModelPool:
                     # This model can't see images/video; another in the routing may.
                     print(f"  [pool] {key} cannot take this media; skipping it for media this run")
                     self.no_media.add(key)
+                    return None
+                elif self._provider(key) == "openrouter" and msg.startswith("403"):
+                    # OpenRouter answers a bad key with 401; a 403 refuses this model only (e.g.
+                    # "only available on ..."). Run 38182972425 dropped the account's only key on one.
+                    if self._repick_openrouter(m, msg):
+                        continue
+                    print(f"  [pool] {key} refused {m['api_id']} ({msg[:120]}); skipped for this run")
+                    self.unavailable.add(key)
                     return None
                 elif _is_auth_error(msg):
                     if self._provider(key) == "openrouter" and self._next_openrouter_key():

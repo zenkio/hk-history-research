@@ -84,9 +84,11 @@ jobs:
             echo "packet directory not found: $packet_root" >> "$PRIVATE_LOG"
             failed=1
           else
-            mapfile -t packets < <(find "$packet_root" -maxdepth 1 -type f -name '*.json' | sort)
+            # MANIFEST.json describes the packet set; it is not itself a source packet.
+            # Never treat every JSON file in a directory as a data record.
+            mapfile -t packets < <(find "$packet_root" -maxdepth 1 -type f -name '*.json' ! -name 'MANIFEST.json' | sort)
             if (( ${#packets[@]} == 0 )); then
-              echo "no JSON source packets found: $packet_root" >> "$PRIVATE_LOG"
+              echo "no eligible JSON source packets found: $packet_root" >> "$PRIVATE_LOG"
               failed=1
             elif (( MAX_PACKETS < 1 || MAX_PACKETS > 4 )); then
               echo "max_packets must be between 1 and 4" >> "$PRIVATE_LOG"

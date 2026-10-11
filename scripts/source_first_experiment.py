@@ -21,7 +21,11 @@ PROMPT_VERSION = "2.1"
 # were tried and could not be inspected, and adds a comparison-model role. r5 (after the blind
 # review of run 38181951012) screens gaps and limits that call a whole source silent (E10) and
 # forbids giving an actor a nationality or office the passage gives only to something else (E4).
-PROMPT_REVISION = 5
+# r6 (after the blind review of run 38183413733) sets aside claims with no named subject (E6:
+# "The murder took place ...") and says a stated plan or target is an assertion (E7).
+PROMPT_REVISION = 6
+MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
+          "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
 # family, so a second model can be compared before the prompt is changed again.
 MODEL_ROLES = ("evidence", "source_first_compare")
@@ -202,6 +206,8 @@ RULES
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
 - Write every gap and known limit about missing information with the word "excerpt" (for example "No supplied excerpt describes ..." or "The supplied excerpt does not name ..."). Code discards a gap or limit sentence that says a record, source or document is silent without saying "excerpt".
 - Do not give an actor a nationality, office or affiliation that the passage attaches only to something else (a "naval landing party hoisted the British flag" does not say the party was British).
+- A stated plan, target or intention ("the target is to ... by 1998") is an assertion, not official_action; official_action is something done (enacted, signed, appointed).
+- Every candidate claim names its subject with a proper name ("Yeung Ku-wan", "the Mandatory Provident Fund Schemes Ordinance"); code sets aside a claim whose only capitalised word is a month.
 - statement_kind follows the record: a source_type containing "retrospective" or "heritage" gives retrospective_summary, reported_speech or opinion; a contemporary or primary record is never retrospective_summary.
 - Keep legal status, physical action, later outcome, and retrospective interpretation as separate propositions.
 - A characterisation in a record (for example that a party was "forced") is claim_type interpretation, not cause.
@@ -354,6 +360,8 @@ def screen_claims(packet, result):
     for claim in result["candidate_claims"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in claim["source_statement_ids"]})]
         reasons = unsupported_details(linked, claim["text"])
+        if not names_in(claim["text"]) - MONTHS:
+            reasons.append("no named subject (E6): name who or what the claim is about, or leave it as a gap")
         if reasons:
             rejected.append({**claim, "rejection_reasons": reasons})
         else:

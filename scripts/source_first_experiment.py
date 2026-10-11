@@ -68,9 +68,14 @@ def years_in(text):
     return found
 
 
+def _bare(word):
+    """Drop a possessive 's and a closing quote mark: "Kong's" -> "Kong", "Society'" -> "Society"."""
+    return re.sub(r"['\u2019]s$", "", word).rstrip("'\u2019")
+
+
 def words_in(text):
-    """Lower-cased words, possessive 's dropped, so "Hong Kong's" matches "Hong Kong"."""
-    return {re.sub(r"['\u2019]s$", "", w).casefold() for w in WORD_RE.findall(str(text or ""))}
+    """Lower-cased bare words, so "Hong Kong's" matches "Hong Kong"."""
+    return {_bare(w).casefold() for w in WORD_RE.findall(str(text or ""))}
 
 
 def names_in(text):
@@ -78,9 +83,9 @@ def names_in(text):
     words = WORD_RE.findall(str(text or ""))
     # A perspective position often opens with its verb ("Reports the denial ...").
     if words and (words[0].casefold() in SENTENCE_STARTERS
-                  or (words[0][1:].islower() and words[0].casefold().endswith(("s", "ed", "ing")))):
+                  or (words[0][1:].islower() and words[0].casefold().endswith(("s", "ed", "ing", "ly")))):
         words = words[1:]
-    return {re.sub(r"['\u2019]s$", "", w) for w in words if any(c.isupper() for c in w)}
+    return {_bare(w) for w in words if any(c.isupper() for c in w)}
 
 
 def validate_source_packet(packet):

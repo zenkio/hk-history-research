@@ -25,3 +25,10 @@ def test_v21_workflow_normalises_integral_number_input_before_bash_arithmetic():
     assert '[[ "$raw_max_packets" =~ ^([1-4])(\\.0+)?$ ]]' in workflow
     assert 'MAX_PACKETS="${BASH_REMATCH[1]}"' in workflow
     assert "max_packets must be an integer between 1 and 4" in workflow
+
+def test_v21_outputs_are_named_after_their_packet():
+    """Run 38169605722 saved sample-02 for the fourth packet in the manifest; names must say which."""
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    assert 'name=$(basename "$packet" .json)' in workflow
+    assert "sample=$(printf 'sample-%02d-%s' \"$index\" \"$name\")" in workflow
+    assert '"packet_git_blob_sha": manifest.get("packet_git_blob_sha")' in workflow

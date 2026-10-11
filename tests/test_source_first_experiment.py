@@ -44,8 +44,9 @@ def valid_result():
         }],
         "candidate_claims": [{
             "claim_id": "C1",
-            # No year: the passage says only "On 26 January" (screen_claims sets aside unstated years).
-            "text": "The Yearbook states that Hong Kong Island was formally occupied on 26 January.",
+            # Only the passage's own words: it gives no year, and names neither "Hong Kong" nor the
+            # Yearbook (screen_claims sets aside unstated years and names; attribution is added by code).
+            "text": "The island was formally occupied on 26 January after the British flag was hoisted.",
             "claim_type": "date",
             "source_statement_ids": ["S1"],
             "status": "unverified",
@@ -225,7 +226,7 @@ def test_claim_year_must_come_from_linked_passage_or_record_date():
     result["candidate_claims"] = [
         {"claim_id": "C1", "text": "The treaty was signed in 1842.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
-        {"claim_id": "C2", "text": "The Yearbook was published in 2021.", "claim_type": "date",
+        {"claim_id": "C2", "text": "The flag at Possession Point was hoisted before 2021.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
         {"claim_id": "C3", "text": "The island was formally occupied in 1843.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
@@ -288,3 +289,80 @@ def test_invalid_reply_is_retried_and_run_is_traceable_to_packet_and_model():
     assert out["result"]["candidate_claims"][1]["attribution"] == [{
         "statement_id": "S2", "source_id": "zh-record", "institution": "A newspaper",
         "statement_kind": "retrospective_summary"}]
+
+
+# Revision 3: the blind second review of run 38177919398 found names, offices and dates filled in
+# from record titles and the event question rather than the excerpt.
+
+def claim(cid, text):
+    return {"claim_id": cid, "text": text, "claim_type": "other", "source_statement_ids": ["S1"], "status": "unverified"}
+
+
+def test_names_absent_from_the_excerpt_are_set_aside():
+    value = packet()
+    value["sources"][0]["passage"] = "He was shot in his classroom by agents sent from the capital in 1901."
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "He was shot in his classroom"
+    result["candidate_claims"] = [
+        claim("C1", "He was shot in his classroom in 1901."),
+        claim("C2", "The teacher Lee Wing was shot in his classroom."),   # name from the title, not the excerpt
+        claim("C3", "An anti-Foreign boycott followed the shooting."),    # label from the event question
+        claim("C4", "The shooting happened in the colony's capital."),
+    ]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C1", "C4"]
+    assert rejected[0]["rejection_reasons"] == ["name not in the linked records: Lee, Wing"]
+    assert rejected[1]["rejection_reasons"] == ["name not in the linked records: anti-Foreign"]
+
+
+def test_record_context_may_name_the_speaker_and_date():
+    value = packet()
+    value["sources"][0]["passage"] = "I am opposed to any proposal to set up such a fund in this territory."
+    value["sources"][0]["record_context"] = {"speaker": "Mr Alan WONG, member of the Legislative Council",
+                                             "record_date": "13 May 1987"}
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "I am opposed to any proposal"
+    result["candidate_claims"] = [claim("C1", "Alan Wong of the Legislative Council opposed the fund on 13 May 1987."),
+                                  claim("C2", "Alan Wong of LegCo opposed the fund.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C1"]
+    assert rejected[0]["rejection_reasons"] == ["name not in the linked records: LegCo"]
+    assert '"record_context"' in source_first.build_source_first_prompt(value)
+
+
+def test_record_context_must_be_text():
+    value = packet()
+    value["sources"][0]["record_context"] = {"speaker": ""}
+    try:
+        source_first.validate_source_packet(value)
+        assert False, "empty record_context must fail"
+    except ValueError as exc:
+        assert "record_context must map names to non-empty text" in str(exc)
+
+
+def test_perspective_position_is_screened_like_a_claim():
+    result = valid_result()
+    result["perspectives"].append({
+        "perspective_id": "P2", "actor_or_institution": "Hong Kong Government (Yearbook)",
+        "documented_position": "The occupation took place near Hollywood Road.",
+        "source_statement_ids": ["S1"], "known_limits": "Retrospective."})
+    kept, rejected = source_first.screen_perspectives(packet(), result)
+    assert [p["perspective_id"] for p in kept] == ["P1"]
+    assert rejected[0]["rejection_reasons"] == ["name not in the linked records: Hollywood, Road"]
+
+
+def test_names_are_not_checked_against_translated_records():
+    value = packet()
+    value["sources"][0].update(language="zh", passage="该条约于一八四二年签订，此后由双方政府分别批准并生效。")
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "该条约于一八四二年签订"
+    result["candidate_claims"] = [claim("C1", "The Treaty was signed in 1842."), claim("C2", "The Treaty was signed in 1843.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C1"]
+    assert rejected[0]["rejection_reasons"] == ["year not in the linked records: 1843"]
+
+
+def test_opening_verb_of_a_position_is_not_a_name():
+    assert source_first.names_in("Reports the denial to the Governor.") == {"Governor"}
+    assert source_first.names_in("Frames the case as the cause.") == set()
+    assert source_first.names_in("Clydesdale opposed the fund.") == {"Clydesdale"}

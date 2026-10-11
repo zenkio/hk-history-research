@@ -1,0 +1,167 @@
+name: V2.1 source-first model experiment
+
+# Explicit dispatch only. The workflow must never run as part of the scheduled research pipeline.
+# Source packets must have inspected passages and rights_status=approved_for_processing.
+# All generated content and diagnostics are saved only to a private experiment branch.
+on:
+  workflow_dispatch:
+    inputs:
+      packet_dir:
+        description: Private source-packet directory relative to the data repository
+        required: true
+        type: string
+        default: experiments/v2-1/source-packets
+      max_packets:
+        description: Maximum number of approved packets to process (1-4)
+        required: true
+        type: number
+        default: 4
+
+permissions:
+  contents: read
+
+concurrency:
+  group: source-first-v2-1
+  cancel-in-progress: false
+
+jobs:
+  source-first:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out private research data
+        uses: actions/checkout@v7
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: data
+          fetch-depth: 0
+
+      - name: Check out research code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Overlay research code in isolated workspace
+        run: |
+          set -euo pipefail
+          rsync -a --exclude .git --exclude .github --exclude .gitignore \
+            --exclude README.md --exclude CLAUDE.md --exclude LICENSE \
+            --exclude CODE_OF_CONDUCT.md _code/ data/
+          rm -rf _code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+
+      - name: Install research dependencies
+        working-directory: data
+        run: pip install -r requirements.txt -r requirements-dev.txt --quiet
+
+      # Keep all source text, prompts, model responses and error detail private.
+      - name: Run approved source-first packets
+        working-directory: data
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
+          PACKET_DIR: ${{ inputs.packet_dir }}
+          MAX_PACKETS: ${{ inputs.max_packets }}
+          PRIVATE_OUTPUT: ${{ runner.temp }}/v2-1-output
+          PRIVATE_LOG: ${{ runner.temp }}/v2-1-diagnostics.log
+        shell: bash
+        run: |
+          set -uo pipefail
+          mkdir -p "$PRIVATE_OUTPUT"
+          : > "$PRIVATE_LOG"
+          failed=0
+          packet_root="$PACKET_DIR"
+          if [[ ! -d "$packet_root" ]]; then
+            echo "packet directory not found: $packet_root" >> "$PRIVATE_LOG"
+            failed=1
+          else
+            mapfile -t packets < <(find "$packet_root" -maxdepth 1 -type f -name '*.json' | sort)
+            if (( ${#packets[@]} == 0 )); then
+              echo "no JSON source packets found: $packet_root" >> "$PRIVATE_LOG"
+              failed=1
+            elif (( MAX_PACKETS < 1 || MAX_PACKETS > 4 )); then
+              echo "max_packets must be between 1 and 4" >> "$PRIVATE_LOG"
+              failed=1
+            else
+              if (( ${#packets[@]} > MAX_PACKETS )); then
+                packets=("${packets[@]:0:MAX_PACKETS}")
+              fi
+              index=0
+              for packet in "${packets[@]}"; do
+                index=$((index + 1))
+                sample=$(printf 'sample-%02d' "$index")
+                if ! python3 scripts/source_first_experiment.py "$packet" \
+                  --output "$PRIVATE_OUTPUT/$sample.json" >>"$PRIVATE_LOG" 2>&1; then
+                  echo "FAIL | source-first packet | sample=$sample; details withheld" 
+                  failed=1
+                  break
+                fi
+              done
+            fi
+          fi
+          python3 - "$PRIVATE_OUTPUT" "$GITHUB_RUN_ID" "$GITHUB_SHA" "$failed" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          root = Path(sys.argv[1])
+          run_id, code_sha, failed = sys.argv[2], sys.argv[3], sys.argv[4] == "1"
+          rows = []
+          for path in sorted(root.glob("sample-*.json")):
+              try:
+                  value = json.loads(path.read_text(encoding="utf-8"))
+                  rows.append({
+                      "sample": path.stem,
+                      "source_count": value.get("manifest", {}).get("source_count"),
+                      "statement_count": value.get("manifest", {}).get("statement_count"),
+                      "candidate_claim_count": value.get("manifest", {}).get("candidate_claim_count"),
+                      "perspective_count": value.get("manifest", {}).get("perspective_count"),
+                      "all_unverified": value.get("manifest", {}).get("status") == "unverified",
+                  })
+              except Exception:
+                  rows.append({"sample": path.stem, "output_parse_failed": True})
+                  failed = True
+          (root / "summary.json").write_text(json.dumps({
+              "purpose": "isolated v2.1 source-first experiment; not a corpus migration",
+              "run_id": run_id,
+              "code_commit": code_sha,
+              "prompt_version": "2.1",
+              "status": "failed" if failed else "completed_unverified",
+              "samples": rows,
+              "live_records_modified": False,
+              "bulk_extraction_approved": False,
+              "publication_approved": False,
+          }, indent=2) + "\n", encoding="utf-8")
+          print(f"V2.1 summary | status={'failed' if failed else 'completed_unverified'} | samples={len(rows)} | private output")
+          PY
+          cp "$PRIVATE_LOG" "$PRIVATE_OUTPUT/diagnostics.log"
+          exit "$failed"
+
+      - name: Save output and diagnostics to private experiment branch
+        if: always()
+        working-directory: data
+        env:
+          PRIVATE_OUTPUT: ${{ runner.temp }}/v2-1-output
+          PRIVATE_BRANCH: experiment/v2-1-model-output-${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          test -d "$PRIVATE_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$PRIVATE_BRANCH"
+          target="experiments/v2-1/model-runs/${GITHUB_RUN_ID}"
+          mkdir -p "$target"
+          cp "$PRIVATE_OUTPUT"/* "$target/"
+          git add "$target"
+          git commit -m "experiment: save isolated v2.1 source-first output"
+          git push origin "$PRIVATE_BRANCH"
+          echo "Private v2.1 output saved to $PRIVATE_BRANCH"

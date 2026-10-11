@@ -366,3 +366,16 @@ def test_opening_verb_of_a_position_is_not_a_name():
     assert source_first.names_in("Reports the denial to the Governor.") == {"Governor"}
     assert source_first.names_in("Frames the case as the cause.") == set()
     assert source_first.names_in("Clydesdale opposed the fund.") == {"Clydesdale"}
+
+
+def test_single_quoted_names_and_opening_adverbs_are_read_correctly():
+    """Run 38179505829 set aside "the Viceroy denied ... a 'National Disgrace Society'" because the
+    closing quote stuck to "Society", and a position opening "Retrospectively records ..."."""
+    value = packet()
+    value["sources"][0]["passage"] = 'the Viceroy denies the existence of a "National Disgrace Society" in Canton.'
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "the Viceroy denies the existence"
+    result["candidate_claims"] = [claim("C1", "The Viceroy denied the existence of a 'National Disgrace Society' in Canton.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C1"] and rejected == []
+    assert source_first.names_in("Retrospectively records the Ordinance.") == {"Ordinance"}

@@ -251,3 +251,36 @@ def test_wildcard_entry_moves_to_the_next_free_model_after_a_403(make_pool):
     assert p._generate("source_first_compare", "x", gp._parse_json, False, None, None)[1] == "OpenRouter Compare"
     assert used == ["vendor/gated:free", "acme/open:free"]
     assert p.models["OpenRouter Compare"]["api_id"] == "acme/open:free"
+
+
+# Run 38183882474: the wildcard fell through to preview models; one failed every request with
+# 400 "Provider returned error", which ended the run instead of moving to the next free model.
+def test_wildcard_moves_on_after_a_provider_error_and_tries_previews_last(make_pool):
+    models = {"OpenRouter Compare": {"provider": "openrouter", "api_id": "acme/broken:free",
+                                     "pick": ["*"], "avoid": ["nemotron"]}}
+    p = make_pool(models, {"source_first_compare": ["OpenRouter Compare"]}, or_keys=[("OPENROUTER_API_KEY", "k")])
+    p.or_free = ["acme/broken:free", "acme/x-preview:free", "acme/stable:free"]
+    p.or_refused = set()
+    used = []
+
+    def call(m, prompt):
+        used.append(m["api_id"])
+        if m["api_id"] == "acme/broken:free":
+            raise Exception('400 {"error":{"message":"Provider returned error","code":400}}')
+        return '{"ok": 1}', [], 10
+    p._call_openrouter = call
+    assert p._generate("source_first_compare", "x", gp._parse_json, False, None, None)[1] == "OpenRouter Compare"
+    assert used == ["acme/broken:free", "acme/stable:free"]
+
+
+def test_a_400_on_a_fixed_model_is_still_a_rejected_request(make_pool):
+    p = make_pool(OR, ROUTING, or_keys=[("OPENROUTER_API_KEY", "k")])
+    p.or_free, p.or_refused = ["other:free"], set()
+    p._call_openrouter = lambda m, prompt: (_ for _ in ()).throw(
+        Exception('400 {"error":{"message":"Provider returned error"}}'))
+    try:
+        p._generate("evidence", "x", gp._parse_json, False, None, None)
+    except gp.RequestRejected:
+        pass
+    else:
+        raise AssertionError("a fixed model's 400 must not silently switch models")

@@ -224,9 +224,12 @@ class ModelPool:
             avoid = [a.lower() for a in m.get("avoid", [])]
             usable = [d["id"] for d in free
                       if d["id"] not in taken and not any(a in d["id"].lower() for a in avoid)]
-            hit = next((i for pref in m.get("pick", []) for i in usable
+            hit = next((i for pref in m.get("pick", []) for i in self._wildcard_order(usable, pref)
                         if pref == "*" or pref.lower() in i.lower()), None)
             m["api_id"] = hit
+            if "*" in m.get("pick", []):
+                # Run 38183882474 fell through to unusable previews; the log shows what was on offer.
+                print(f"  [pool] {m['display']} picked {hit}; free now: {', '.join(d['id'] for d in free[:40])}")
             if hit:
                 taken.add(hit)
             else:
@@ -239,6 +242,13 @@ class ModelPool:
         self.state["openrouter_free"] = [d["id"] for d in free]
         self.or_free, self.or_refused = [d["id"] for d in free], set()
 
+    @staticmethod
+    def _wildcard_order(ids, pref):
+        """For "*", previews come last: they answered 400s and 403s in run 38183882474."""
+        if pref != "*":
+            return ids
+        return sorted(ids, key=lambda i: "preview" in i.lower())
+
     def _repick_openrouter(self, m, msg):
         """For an entry ending its picks with "*": move to the next free model after a refusal."""
         if "*" not in m.get("pick", []):
@@ -246,7 +256,7 @@ class ModelPool:
         self.or_refused.add(m["api_id"])
         taken = {e.get("api_id") for e in self.models.values() if e.get("provider") == "openrouter"}
         avoid = [a.lower() for a in m.get("avoid", [])]
-        nxt = next((i for i in getattr(self, "or_free", []) if i not in taken and i not in self.or_refused
+        nxt = next((i for i in self._wildcard_order(getattr(self, "or_free", []), "*") if i not in taken and i not in self.or_refused
                     and not any(a in i.lower() for a in avoid)), None)
         if not nxt:
             return False
@@ -541,6 +551,11 @@ class ModelPool:
                     self.unavailable.add(key)
                     return None
                 elif "400" in msg or "INVALID_ARGUMENT" in msg:
+                    # A free model whose provider fails every request (run 38183882474) is
+                    # replaced when the entry may pick any free model; otherwise the request is bad.
+                    if (self._provider(key) == "openrouter" and "Provider returned error" in msg
+                            and self._repick_openrouter(m, msg)):
+                        continue
                     raise RequestRejected(msg[:300])
                 elif "404" in msg or "NOT_FOUND" in msg or "not supported" in msg.lower():
                     self._park(key, f"unavailable as {m['api_id']}: {msg[:160]}")

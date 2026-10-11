@@ -52,8 +52,8 @@ def validate_source_packet(packet):
                 raise ValueError(f"source {source_id} missing required field: {field}")
         if source.get("inspection_status") != "inspected":
             raise ValueError(f"source {source_id} is not marked inspected")
-        if source.get("rights_status") != "approved_for_processing":
-            raise ValueError(f"source {source_id} has not passed rights/processing review")
+        if source.get("processing_status") != "approved_for_internal_research":
+            raise ValueError(f"source {source_id} has not passed internal processing review")
         basis = normalise(source.get("processing_basis")).casefold()
         if "internal research only" not in basis:
             raise ValueError(f"source {source_id} lacks a scoped internal-research processing basis")
@@ -79,6 +79,7 @@ def build_source_first_prompt(packet):
             "locator": source["locator"],
             "language": source["language"],
             "creator_perspective": source.get("creator_perspective", ""),
+            "processing_status": source["processing_status"],
             "processing_basis": source["processing_basis"],
             "public_reuse_status": source["public_reuse_status"],
             "passage": source["passage"],

@@ -104,7 +104,7 @@ RULES
 - Build perspectives only from identifiable speakers, institutions, or groups evidenced by the records. Do not invent motives or claim a perspective represents everyone.
 - Record absent voices, unresolved disputes, OCR/translation issues, and the next records needed.
 - Do not calculate source trust scores, declare claims verified, or write a final narrative.
-- Return only valid JSON with this schema:
+- Return only valid JSON with this schema. Enum values are case-sensitive and must match the allowed values below exactly; do not invent synonyms or use values outside the enumerations:
 {{
   "record_statements": [{{
     "statement_id": "S1",

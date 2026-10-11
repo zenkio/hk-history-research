@@ -18,11 +18,22 @@ PROMPT_VERSION = "2.1"
 # source_type/statement_kind rule, the claim screens and the reproducibility manifest. r3 (after
 # the blind second review of run 38177919398) added record_context and the name screen. r4 (after
 # the reviews of run 38180297601) shows the packet's access_log, so gaps can name records that
-# were tried and could not be inspected, and adds a comparison-model role.
-PROMPT_REVISION = 4
+# were tried and could not be inspected, and adds a comparison-model role. r5 (after the blind
+# review of run 38181951012) screens gaps and limits that call a whole source silent (E10) and
+# forbids giving an actor a nationality or office the passage gives only to something else (E4).
+PROMPT_REVISION = 5
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
 # family, so a second model can be compared before the prompt is changed again.
 MODEL_ROLES = ("evidence", "source_first_compare")
+# A gap or limit saying a record or source is silent (E10): only short excerpts were inspected, so
+# such wording must name the excerpt. Run 38181951012 said "No inspected record describes the
+# rioting" of an article titled "Rioting & Looting". What a record cannot establish or confirm is a
+# limit of its kind, not silence, and stays.
+SILENCE_RE = re.compile(
+    r"\b(no|none of the)\s+(inspected\s+|supplied\s+|other\s+)?(record|source|document|account)s?\b"
+    r"|\b(does|do|did)\s+not\s+(specify|mention|state|say|name|describe|identify|address|provide|give"
+    r"|detail|record|cite|distinguish|explain)\b"
+    r"|\bsilent\b", re.I)
 ACCESS_RESULTS = {"access_failure", "not_fetched", "inspected_not_relevant"}
 STATEMENT_KINDS = {
     "assertion", "allegation", "denial", "opinion", "official_action",
@@ -189,6 +200,8 @@ RULES
 - record_context states who is speaking or what the record is (for example the speaker of a debate passage). It may be used to attribute a statement, never as a fact about the event.
 - Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. If the passage says "He" or "the boycott", keep those words and add a gap rather than supplying the name.
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
+- Write every gap and known limit about missing information with the word "excerpt" (for example "No supplied excerpt describes ..." or "The supplied excerpt does not name ..."). Code discards a gap or limit sentence that says a record, source or document is silent without saying "excerpt".
+- Do not give an actor a nationality, office or affiliation that the passage attaches only to something else (a "naval landing party hoisted the British flag" does not say the party was British).
 - statement_kind follows the record: a source_type containing "retrospective" or "heritage" gives retrospective_summary, reported_speech or opinion; a contemporary or primary record is never retrospective_summary.
 - Keep legal status, physical action, later outcome, and retrospective interpretation as separate propositions.
 - A characterisation in a record (for example that a party was "forced") is claim_type interpretation, not cause.
@@ -364,6 +377,28 @@ def screen_perspectives(packet, result):
     return kept, rejected
 
 
+def states_source_silence(text):
+    """True when text says a record or source is silent without limiting that to the excerpt."""
+    return bool(SILENCE_RE.search(str(text or ""))) and "excerpt" not in str(text).casefold()
+
+
+def screen_silence(result):
+    """Move gaps, and limit sentences, that call a whole source silent to rejected_gaps (E10)."""
+    kept, rejected = [], []
+    for gap in result.get("gaps", []):
+        (rejected if states_source_silence(gap) else kept).append(gap)
+    result["gaps"] = kept
+    for row in result.get("perspectives", []):
+        sentences = re.split(r"(?<=[.;])\s+", normalise(row.get("known_limits")))
+        bad = [x for x in sentences if states_source_silence(x)]
+        if bad:
+            row["known_limits"] = " ".join(x for x in sentences if x not in bad)
+            rejected.extend(f'{row.get("perspective_id")} known_limits: {x}' for x in bad)
+    result["rejected_gaps"] = [{"text": g, "rejection_reasons": [
+        "states that a source is silent; only short excerpts were inspected"]} for g in rejected]
+    return result
+
+
 def annotate(packet, result):
     """Add what the code, not the model, knows: who each claim is attributed to and
     which statements quote a translated (non-English) source."""
@@ -406,12 +441,14 @@ def run_source_first(packet, pool, packet_file=None, packet_bytes=None, role="ev
     response["candidate_claims"], response["rejected_claims"] = kept, rejected
     kept_views, rejected_views = screen_perspectives(packet, response)
     response["perspectives"], response["rejected_perspectives"] = kept_views, rejected_views
+    screen_silence(response)
     annotate(packet, response)
     manifest.update({
         "candidate_claim_count": len(kept),
         "rejected_claim_count": len(rejected),
         "perspective_count": len(kept_views),
         "rejected_perspective_count": len(rejected_views),
+        "rejected_gap_count": len(response["rejected_gaps"]),
         "model": model,
         "model_role": role,
         "model_api_id": pool.models.get(model, {}).get("api_id", model),

@@ -79,8 +79,20 @@ jobs:
           mkdir -p "$PRIVATE_OUTPUT"
           : > "$PRIVATE_LOG"
           failed=0
+          # workflow_dispatch number inputs can arrive as "4.0"; normalise
+          # only integral values in the allowed range before Bash arithmetic.
+          raw_max_packets="${MAX_PACKETS:-4}"
+          if [[ "$raw_max_packets" =~ ^([1-4])(\.0+)?$ ]]; then
+            MAX_PACKETS="${BASH_REMATCH[1]}"
+          else
+            echo "max_packets must be an integer between 1 and 4" >> "$PRIVATE_LOG"
+            failed=1
+            MAX_PACKETS=0
+          fi
           packet_root="$PACKET_DIR"
-          if [[ ! -d "$packet_root" ]]; then
+          if (( failed != 0 )); then
+            :
+          elif [[ ! -d "$packet_root" ]]; then
             echo "packet directory not found: $packet_root" >> "$PRIVATE_LOG"
             failed=1
           else

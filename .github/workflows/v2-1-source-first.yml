@@ -1,7 +1,7 @@
 name: V2.1 source-first model experiment
 
 # Explicit dispatch only. The workflow must never run as part of the scheduled research pipeline.
-# Source packets must have inspected passages and rights_status=approved_for_processing.
+# Source packets must have inspected passages and processing_status=approved_for_internal_research.
 # All generated content and diagnostics are saved only to a private experiment branch.
 on:
   workflow_dispatch:

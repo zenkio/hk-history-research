@@ -21,7 +21,9 @@ def packet():
             "locator": "Chapter 22, printed p. 322, lines 122-126",
             "language": "en",
             "inspection_status": "inspected",
-            "rights_status": "approved_for_processing",
+            "processing_status": "approved_for_internal_research",
+            "processing_basis": "Internal research only; short excerpt for source-first analysis, with attribution retained; no public redistribution.",
+            "public_reuse_status": "not_approved",
             "creator_perspective": "Hong Kong government retrospective account",
             "passage": "On 26 January, a naval landing party hoisted the British flag at Possession Point and the island was formally occupied.",
         }],
@@ -82,12 +84,26 @@ def test_source_packet_rejects_catalogue_only_and_unreviewed_rights():
     except ValueError as exc:
         assert "not marked inspected" in str(exc)
     value = packet()
-    value["sources"][0]["rights_status"] = "review_required"
+    value["sources"][0]["processing_status"] = "review_required"
     try:
         source_first.validate_source_packet(value)
         assert False, "rights review must fail closed"
     except ValueError as exc:
-        assert "not passed rights/processing review" in str(exc)
+        assert "not passed internal processing review" in str(exc)
+    value = packet()
+    value["sources"][0]["public_reuse_status"] = "approved"
+    try:
+        source_first.validate_source_packet(value)
+        assert False, "processing approval must not imply public reuse"
+    except ValueError as exc:
+        assert "public reuse must remain explicitly not approved" in str(exc)
+    value = packet()
+    value["sources"][0]["processing_basis"] = "Unknown"
+    try:
+        source_first.validate_source_packet(value)
+        assert False, "processing basis must be scoped to internal research"
+    except ValueError as exc:
+        assert "scoped internal-research processing basis" in str(exc)
 
 
 def test_output_requires_exact_passage_excerpt_and_valid_links():

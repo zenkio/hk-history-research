@@ -9,7 +9,7 @@ import re
 from research_record_store import claim_id_for
 
 MAX_CLAIMS = 150  # Technical runaway guard only; never truncate output.
-PROMPT_VERSION = 7
+PROMPT_VERSION = 8
 CLAIM_TYPES = {
     "date", "place", "person", "cause", "action", "outcome", "quantity",
     "institution", "context", "interpretation", "other",
@@ -71,6 +71,13 @@ ATOMIC_CLAIM_PROMPT = """Extract independently testable historical claims from t
 
 A claim must express one factual or interpretive proposition that can be researched independently.
 Before extracting, inspect the entire supplied narrative and all existing claims-to-verify. Preserve every event-defining fact explicitly stated in the draft; do not select only the easiest or most prominent statements.
+
+Mandatory completeness audit before returning JSON:
+- Review the draft prose sentence by sentence and ensure each independently testable factual proposition is represented by a claim.
+- Check every explicit event date/year, named person, named place, named official document, formal decision, defining action, and immediate direct outcome against the claims list. Add any missing proposition before returning.
+- Do not count the title/frontmatter date or a background mention as coverage of a different event date/action in the prose.
+- Do not omit a defining fact because another claim already mentions the same person or year in a different relationship.
+- The output must preserve the event's chronology and scope, not just produce plausible background facts.
 Coverage requirements:
 - Preserve every distinct explicit date/year attached to the event's main action, a decision, injury, death, release, or direct outcome. Keep different dates as separate claims; do not collapse a sequence into one date.
 - Preserve the principal actor, defining action, and specific location when stated.
@@ -89,9 +96,10 @@ Do not add facts from your own knowledge. Do not turn speculation into fact; pre
 Avoid duplicate claims. Include claims already listed as "claims to verify" if they are useful, but merge exact duplicates.
 
 Importance rules:
-- Mark a claim core only if it is necessary to identify the event: its date/year, place, primary actor, defining action, or immediate direct outcome.
+- The event-defining date/year, primary actor, defining action, and immediate direct outcome are core when explicitly stated in the draft. These may be separate core claims.
 - Mark background, context, causes, motives, stakeholder opinions, interpretations, and later consequences as supporting.
-- Never mark cause, context, interpretation, or other claim types as core. If uncertain, choose supporting.
+- Never mark cause, context, interpretation, or other claim types as core.
+- Do not downgrade a central date, named primary actor, or defining action to supporting merely to be conservative. If the page has a defining event action in the prose, at least one action claim should be core; if it has an explicit event date and primary actor, represent them in core claim(s).
 
 For every claim return:
 - text: one concise, standalone claim, without adding information absent from the source

@@ -1,4 +1,4 @@
-name: One-off evidence-first extraction pilot v7
+name: One-off evidence-first extraction pilot v8
 
 # Intentionally limited to this temporary experiment branch. Outputs contain excerpts from
 # private draft pages, so they are committed only to a private data-repository experiment branch.
@@ -7,7 +7,7 @@ name: One-off evidence-first extraction pilot v7
 on:
   push:
     branches:
-      - preflight-run/v7-completeness
+      - preflight-run/v8-coverage
 
 permissions:
   contents: read
@@ -46,7 +46,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
-          ref: experiment/preflight-model-output-v7-20261011
+          ref: experiment/preflight-model-output-v8-20261011
           token: ${{ secrets.DATA_REPO_TOKEN }}
           path: data
           fetch-depth: 0
@@ -94,7 +94,7 @@ jobs:
           OUT: ${{ runner.temp }}/preflight
         run: |
           set -euo pipefail
-          DEST="data/experiments/model-output/2026-10-11/prompt-v7"
+          DEST="data/experiments/model-output/2026-10-11/prompt-v8"
           mkdir -p "$DEST"
           shopt -s nullglob
           files=("$OUT"/*.jsonl "$OUT"/*.stderr "$OUT"/manifest.json)
@@ -133,8 +133,8 @@ jobs:
           with open(os.environ["MANIFEST"], encoding="utf-8") as handle:
               manifest = json.load(handle)
           failures = manifest.get("failures", {})
-          if manifest.get("prompt_version") != 7:
-              print("FAIL | manifest prompt version must be 7")
+          if manifest.get("prompt_version") != 8:
+              print("FAIL | manifest prompt version must be 8")
               sys.exit(1)
           if len(manifest.get("files", [])) != 4:
               print("FAIL | manifest must contain exactly four reference pages")

@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from atomic_claims import build_claim_records
-from validate_preflight_outputs import EXPECTED, build_manifest, missing_required_anchors, validate_file
+from validate_preflight_outputs import EXPECTED, build_manifest, missing_core_anchors, missing_required_anchors, validate_file
 
 
 def valid_record(page):
@@ -20,7 +20,7 @@ def valid_record(page):
         event_id="event:test",
         source_page=f"content/01_Timeline/{page}",
         model="test-model",
-        prompt_version=7,
+        prompt_version=8,
         created_at="2026-10-10T00:00:00Z",
     )[0]
 
@@ -153,3 +153,29 @@ def test_coverage_gate_accepts_required_anchors_across_claims():
         {"text": "A boycott began in March 1908.", "importance": "core"},
     ]
     assert missing_required_anchors("tatsu-maru", rows) == []
+
+
+def test_coverage_gate_rejects_required_event_anchors_not_marked_core():
+    rows = [
+        {"text": "The administration discussed the 26 January 1841 landing.", "importance": "supporting"},
+        {"text": "The British forces established a foothold.", "importance": "supporting"},
+    ]
+    missing = missing_core_anchors("occupation-1841", rows)
+    assert any("january 26 1841" in item for item in missing)
+    assert any("gordon bremer" in item for item in missing)
+
+
+def test_coverage_gate_accepts_event_date_actor_and_place_as_core():
+    rows = [
+        {"text": "Commodore Sir Gordon Bremer landed on Hong Kong Island on January 26, 1841.", "importance": "core"},
+        {"text": "The landing site was later named Possession Point.", "importance": "supporting"},
+    ]
+    assert missing_core_anchors("occupation-1841", rows) == []
+
+
+def test_mpf_event_defining_year_and_consultation_paper_must_be_core():
+    rows = [
+        {"text": "In 1987 the Hong Kong government released a consultation paper.", "importance": "core"},
+        {"text": "The scheme required contributions from employees and employers.", "importance": "supporting"},
+    ]
+    assert missing_core_anchors("mpf", rows) == []

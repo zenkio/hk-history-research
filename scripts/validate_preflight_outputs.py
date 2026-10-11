@@ -19,6 +19,20 @@ EXPECTED = {
 
 # These anchors are present in the draft pages; they check extraction coverage,
 # not whether the draft itself is historically correct.
+# Core anchors must occur in core claim text, not just somewhere in the extracted list.
+CORE_REQUIRED_ANCHORS = {
+    "mpf": [["1987"], ["consultation paper"]],
+    "tatsu-maru": [["march 1908", "march of 1908", "mar 1908"], ["boycott"]],
+    "occupation-1841": [
+        ["january 26 1841", "26 january 1841", "26th january 1841", "january 26th 1841"],
+        ["gordon bremer"], ["hong kong island"],
+    ],
+    "yeung-ku-wan": [
+        ["january 10 1901", "10 january 1901", "10th january 1901", "january 10th 1901"],
+        ["chen lin"], ["yeung ku wan"],
+    ],
+}
+
 REQUIRED_ANCHORS = {
     "mpf": [["1987"], ["consultation paper"], ["employees"], ["employers"]],
     "tatsu-maru": [
@@ -48,6 +62,18 @@ def missing_required_anchors(page_name, rows):
     combined = _normalised_anchor_text(" ".join(str(row.get("text", "")) for row in rows))
     missing = []
     for alternatives in REQUIRED_ANCHORS.get(page_name, []):
+        if not any(_normalised_anchor_text(alias) in combined for alias in alternatives):
+            missing.append(" | ".join(alternatives))
+    return missing
+
+
+def missing_core_anchors(page_name, rows):
+    """Return event-defining anchors not represented in core claim text."""
+    combined = _normalised_anchor_text(" ".join(
+        str(row.get("text", "")) for row in rows if row.get("importance") == "core"
+    ))
+    missing = []
+    for alternatives in CORE_REQUIRED_ANCHORS.get(page_name, []):
         if not any(_normalised_anchor_text(alias) in combined for alias in alternatives):
             missing.append(" | ".join(alternatives))
     return missing
@@ -124,7 +150,7 @@ def validate_file(path, expected_page, timeline_root):
                     (isinstance(provenance.get("source_excerpt"), str) and bool(provenance["source_excerpt"].strip()), "missing_source_excerpt"),
                     (provenance.get("source_page") == f"content/01_Timeline/{expected_page}", "source_page_mismatch"),
                     (isinstance(provenance.get("model"), str) and bool(provenance["model"].strip()), "missing_model"),
-                    (provenance.get("prompt_version") == 7, "prompt_version_mismatch"),
+                    (provenance.get("prompt_version") == 8, "prompt_version_mismatch"),
                     (len(re.findall(r"\b\w+\b", row.get("text", ""))) <= 35, "claim_too_long"),
                 ]
                 reason = next((message for valid, message in checks if not valid), "")
@@ -132,9 +158,12 @@ def validate_file(path, expected_page, timeline_root):
                     break
 
     missing_anchors = missing_required_anchors(path.stem, rows)
+    missing_core = missing_core_anchors(path.stem, rows)
     core_count = sum(row.get("importance") == "core" for row in rows)
     if not reason and missing_anchors:
         reason = "missing_required_anchors"
+    if not reason and missing_core:
+        reason = "missing_core_anchors"
     if not reason and core_count == 0:
         reason = "no_core_claims"
 
@@ -144,6 +173,7 @@ def validate_file(path, expected_page, timeline_root):
         "claim_count": len(rows),
         "core_count": core_count,
         "missing_required_anchors": missing_anchors,
+        "missing_core_anchors": missing_core,
         "sha256": hashlib.sha256(raw).hexdigest(),
         "models": sorted({r["provenance"]["model"] for r in rows
                           if isinstance(r.get("provenance"), dict) and r["provenance"].get("model")}),
@@ -161,7 +191,7 @@ def build_manifest(out_dir, timeline_root):
                 for item in files if item["status"] != "success"}
     return {
         "experiment": "evidence-first-preflight",
-        "prompt_version": 7,
+        "prompt_version": 8,
         "files": files,
         "failures": failures,
         "acceptance": {

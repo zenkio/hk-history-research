@@ -219,8 +219,13 @@ class ModelPool:
                 print(f"  [pool] OpenRouter model list failed: {str(e)[:80]}")
         taken = set()
         for m in entries:
-            hit = next((d["id"] for pref in m.get("pick", []) for d in free
-                        if pref.lower() in d["id"].lower() and d["id"] not in taken), None)
+            # "avoid" keeps a family out (the v2.1 comparison model must not be Nemotron);
+            # "*" as the last pick takes the largest free model left when no preference matches.
+            avoid = [a.lower() for a in m.get("avoid", [])]
+            usable = [d["id"] for d in free
+                      if d["id"] not in taken and not any(a in d["id"].lower() for a in avoid)]
+            hit = next((i for pref in m.get("pick", []) for i in usable
+                        if pref == "*" or pref.lower() in i.lower()), None)
             m["api_id"] = hit
             if hit:
                 taken.add(hit)
@@ -228,7 +233,8 @@ class ModelPool:
                 # Not parked for the day: a later step may have the key, and the free list changes.
                 self.unavailable.add(m["display"])
                 print(f"  [pool] {m['display']} skipped this run: "
-                      + ("no OpenRouter key (" + " / ".join(OPENROUTER_KEY_NAMES) + ")" if not self.or_key else f"no free model matching {m.get('pick')}"))
+                      + ("no OpenRouter key (" + " / ".join(OPENROUTER_KEY_NAMES) + ")" if not self.or_key
+                         else f"no free model matching {m.get('pick')} (free now: {', '.join(d['id'] for d in free[:15]) or 'none'})"))
             self.state.setdefault("resolved", {})[m["display"]] = hit
         self.state["openrouter_free"] = [d["id"] for d in free]
 

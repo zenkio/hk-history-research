@@ -140,7 +140,7 @@ def test_robots_txt_blocks_ai_crawlers_and_maintenance_output_is_published():
         config = workflow(name)
         steps = [step for job in config["jobs"].values() for step in job["steps"]]
         assert any("prepare_maintenance_site.py" in step.get("run", "") for step in steps), name
-        assert not any("repository: zenkio/hk-history-data" in step.get("run", "") for step in steps), name
+        assert not any(step.get("with", {}).get("repository") == "zenkio/hk-history-data" for step in steps), name
 
 
 # Oldest major version of each action that runs on Node 24. GitHub removed Node 20 from its

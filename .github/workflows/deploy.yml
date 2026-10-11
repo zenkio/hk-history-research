@@ -1,14 +1,8 @@
-name: Deploy site
+name: Deploy maintenance site
 
-# Builds the site from the private data repository (zenkio/hk-history-data) and publishes it to
-# hkhistory.zenkio.uk. The Markdown, research notes and evidence state stay on the runner; only the
-# built public site is published.
-#
-# The research pipeline runs daily at 03:17 UTC. Rebuild at 05:17 UTC to allow up to 75 minutes for
-# research plus a buffer, rather than rebuilding every 3 hours and retaining many large artifacts.
-# Keep push and manual triggers for code changes and recovery.
-#
-# DATA_REPO_TOKEN should be a fine-grained token restricted to Contents read/write on hk-history-data.
+# The public history site is intentionally in maintenance mode. Do not check out or build
+# the private history corpus here: every deployment must publish only the claim-free notice.
+# Keep the schedule and push trigger so routine deployments cannot restore old history pages.
 
 on:
   push:
@@ -29,56 +23,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 5
     steps:
-      - name: Check out the data repository
+      - name: Check out site code
         uses: actions/checkout@v7
         with:
-          repository: zenkio/hk-history-data
-          token: ${{ secrets.DATA_REPO_TOKEN }}
-          fetch-depth: 0
           persist-credentials: false
-
-      - name: Check out this repository's code
-        uses: actions/checkout@v7
-        with:
-          path: _code
-          persist-credentials: false
-
-      - name: Put the code over the data
-        run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
-          rm -rf _code
 
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
-      - name: Install publication-record schema validator
-        run: python -m pip install --quiet "jsonschema>=4.23"
-
-      - name: Label legacy AI drafts before publication
-        run: python scripts/label_legacy_ai_drafts.py --write --quiet
-
-      - name: Validate publication eligibility
-        run: python3 scripts/publication_gate.py
-
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: npm
-
-      - run: npm ci
-      - run: npm run install-plugins
-      - run: npm run quartz -- build
-
-      # Asks AI crawlers not to collect the pages; search engines stay welcome.
-      - name: Add robots.txt
-        run: cp site/robots.txt public/robots.txt
-
-      # Quartz's search index holds the full text of every page; keep only the opening lines.
-      - name: Trim the search index
-        run: python3 scripts/trim_search_index.py public
+      - name: Build allow-listed maintenance-only output
+        run: |
+          set -euo pipefail
+          python tests/test_prepare_maintenance_site.py
+          python scripts/prepare_maintenance_site.py --output public
+          python - <<'PY'
+          from pathlib import Path
+          root = Path("public")
+          expected = {"index.html", "robots.txt", "CNAME"}
+          actual = {p.name for p in root.iterdir()}
+          if actual != expected:
+              raise SystemExit(f"Unexpected public output files: {sorted(actual)}")
+          html = (root / "index.html").read_text(encoding="utf-8").lower()
+          if '<meta name="robots" content="noindex, nofollow">' not in html:
+              raise SystemExit("Maintenance page is missing noindex")
+          if "sitemap:" in (root / "robots.txt").read_text(encoding="utf-8").lower():
+              raise SystemExit("Maintenance robots.txt must not advertise a sitemap")
+          print("PASS: deployment artifact contains only maintenance page, robots.txt and CNAME")
+          PY
 
       - uses: actions/upload-pages-artifact@v5
         with:

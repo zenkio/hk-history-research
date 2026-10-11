@@ -1,63 +1,49 @@
-name: Site build check
+name: Maintenance site check
 
-# For pull requests that touch the site setup: a full Quartz build of the real (private) content,
-# so a broken config or plugin is caught before it reaches the live site. Nothing is published.
+# Validate the maintenance-only artifact without checking out or building private history data.
 on:
   pull_request:
-    paths: ["quartz/**", "quartz.*", "package.json", "package-lock.json", ".github/workflows/deploy.yml", ".github/workflows/site-build.yml",
-            "scripts/trim_search_index.py"]
+    paths:
+      - ".github/workflows/deploy.yml"
+      - ".github/workflows/site-build.yml"
+      - "scripts/prepare_maintenance_site.py"
+      - "site/maintenance.html"
+      - "site/robots.txt"
+      - "site/CNAME"
+      - "tests/test_prepare_maintenance_site.py"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  maintenance-output:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 5
     steps:
-      - name: Check out the data repository
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
         with:
-          repository: zenkio/hk-history-data
-          token: ${{ secrets.DATA_REPO_TOKEN }}
-          fetch-depth: 0
-
-      - name: Check out this repository's code
-        uses: actions/checkout@v7
-        with:
-          path: _code
-
-      - name: Put the code over the data
-        run: |
-          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md \
-            --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
-          rm -rf _code
+          persist-credentials: false
 
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
-      - name: Install publication-record schema validator
-        run: python -m pip install --quiet "jsonschema>=4.23"
+      - name: Run maintenance output regression tests
+        run: python tests/test_prepare_maintenance_site.py
 
-      - name: Label legacy AI drafts before site build
-        run: python scripts/label_legacy_ai_drafts.py --write --quiet
-
-      - name: Validate publication eligibility
-        run: python scripts/publication_gate.py
-
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: npm
-
-      - run: npm ci
-      - run: npm run install-plugins
-      - run: npm run quartz -- build
-
-      # Asks AI crawlers not to collect the pages; search engines stay welcome. Quartz only
-      # publishes content, so the file is copied to the site root here.
-      - name: Add robots.txt
-        run: cp site/robots.txt public/robots.txt
-      - run: python3 scripts/trim_search_index.py public
+      - name: Verify generated output is allow-listed
+        run: |
+          set -euo pipefail
+          python scripts/prepare_maintenance_site.py --output public
+          python - <<'PY'
+          from pathlib import Path
+          root = Path("public")
+          expected = {"index.html", "robots.txt", "CNAME"}
+          actual = {p.name for p in root.iterdir()}
+          assert actual == expected, f"Unexpected files: {sorted(actual)}"
+          html = (root / "index.html").read_text(encoding="utf-8").lower()
+          assert '<meta name="robots" content="noindex, nofollow">' in html
+          assert "sitemap:" not in (root / "robots.txt").read_text(encoding="utf-8").lower()
+          print("PASS: maintenance-only output is safe")
+          PY

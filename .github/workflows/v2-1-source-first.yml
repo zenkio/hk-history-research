@@ -112,7 +112,10 @@ jobs:
               index=0
               for packet in "${packets[@]}"; do
                 index=$((index + 1))
-                sample=$(printf 'sample-%02d' "$index")
+                # Name each output after its packet so a sample can be traced without guessing.
+                name=$(basename "$packet" .json)
+                sample=$(printf 'sample-%02d-%s' "$index" "$name")
+                echo "== $sample" >>"$PRIVATE_LOG"
                 if ! python3 scripts/source_first_experiment.py "$packet" \
                   --output "$PRIVATE_OUTPUT/$sample.json" >>"$PRIVATE_LOG" 2>&1; then
                   echo "FAIL | source-first packet | sample=$sample; details withheld" 
@@ -133,8 +136,13 @@ jobs:
           for path in sorted(root.glob("sample-*.json")):
               try:
                   value = json.loads(path.read_text(encoding="utf-8"))
+                  manifest = value.get("manifest", {})
                   rows.append({
                       "sample": path.stem,
+                      "packet_file": manifest.get("packet_file"),
+                      "packet_git_blob_sha": manifest.get("packet_git_blob_sha"),
+                      "model_api_id": manifest.get("model_api_id"),
+                      "rejected_claim_count": manifest.get("rejected_claim_count"),
                       "source_count": value.get("manifest", {}).get("source_count"),
                       "statement_count": value.get("manifest", {}).get("statement_count"),
                       "candidate_claim_count": value.get("manifest", {}).get("candidate_claim_count"),
@@ -149,6 +157,7 @@ jobs:
               "run_id": run_id,
               "code_commit": code_sha,
               "prompt_version": "2.1",
+              "prompt_revision": 2,
               "status": "failed" if failed else "completed_unverified",
               "samples": rows,
               "live_records_modified": False,

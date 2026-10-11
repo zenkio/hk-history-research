@@ -6,12 +6,17 @@ It emits attributed record statements, candidate claims, perspective leads, and 
 It never writes to the live research store or generates publishable narrative.
 """
 import argparse
+import datetime
+import hashlib
 import json
 import re
 import sys
 from pathlib import Path
 
 PROMPT_VERSION = "2.1"
+# Revision of the v2.1 prompt and validator. r2 (after reviewing run 38169605722) added the
+# source_type/statement_kind rule, the claim screens and the reproducibility manifest.
+PROMPT_REVISION = 2
 STATEMENT_KINDS = {
     "assertion", "allegation", "denial", "opinion", "official_action",
     "retrospective_summary", "uncertain_ocr", "reported_speech",
@@ -21,10 +26,40 @@ CLAIM_TYPES = {
     "institution", "legal_status", "cause", "context", "interpretation", "other",
 }
 RELATIONS = {"supports", "contradicts", "partially_supports", "background", "not_relevant"}
+# A retrospective or heritage account can only summarise or report; a contemporary record is never
+# a retrospective summary. Run 38157183242 labelled a 1997 Yearbook summary "official_action" and
+# run 38169605722 labelled a 1908 newspaper report "retrospective_summary".
+RETROSPECTIVE_KINDS = {"retrospective_summary", "reported_speech", "opinion", "uncertain_ocr"}
+# Speculation the model adds to a claim is not in the record (run 38169605722: "(presumably in
+# Hong Kong)"). Such claims are set aside, not kept as candidates.
+HEDGE_RE = re.compile(r"\b(presumably|probably|likely|possibly|perhaps|apparently|may have|might have|"
+                      r"it is believed|it is thought)\b", re.IGNORECASE)
+YEAR_RE = re.compile(r"(?<!\d)(1[0-9]{3}|20[0-9]{2})(?!\d)")
+CHINESE_DIGITS = dict(zip("〇零一二三四五六七八九", "00123456789"))
+CHINESE_YEAR_RE = re.compile("[〇零一二三四五六七八九]{4}")
 
 
 def normalise(value):
     return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def source_era(source_type):
+    """'retrospective', 'contemporary' or 'other', from the packet's source_type."""
+    kind = normalise(source_type).casefold()
+    if "retrospective" in kind or "heritage" in kind:
+        return "retrospective"
+    if kind.startswith("contemporary") or "primary" in kind:
+        return "contemporary"
+    return "other"
+
+
+def years_in(text):
+    """Four-digit years in text, including years written in Chinese numerals (一八四二)."""
+    text = str(text or "")
+    found = set(YEAR_RE.findall(text))
+    for match in CHINESE_YEAR_RE.findall(text):
+        found.add("".join(CHINESE_DIGITS[c] for c in match))
+    return found
 
 
 def validate_source_packet(packet):
@@ -99,8 +134,12 @@ RULES
 - First record what each source actually states. Preserve the distinction between the document's statement and historical truth.
 - Attribute allegations, opinions, denials, reported speech, and retrospective summaries to their speaker/creator.
 - A catalogue title is not a passage; only the supplied inspected passages may ground record statements.
+- Title, institution, date and locator fields identify a record; they are not facts about the event. Do not move places, dates or names from them into claims or perspectives.
+- Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
+- statement_kind follows the record: a source_type containing "retrospective" or "heritage" gives retrospective_summary, reported_speech or opinion; a contemporary or primary record is never retrospective_summary.
 - Keep legal status, physical action, later outcome, and retrospective interpretation as separate propositions.
-- Extract one independently testable proposition per candidate claim. Keep source_statement_ids.
+- A characterisation in a record (for example that a party was "forced") is claim_type interpretation, not cause.
+- Extract one independently testable proposition per candidate claim, naming its subject (not "the victim" or "the island"). Do not hedge or guess ("presumably", "likely"): leave an unstated detail out and add a gap. Keep source_statement_ids.
 - Build perspectives only from identifiable speakers, institutions, or groups evidenced by the records. Do not invent motives or claim a perspective represents everyone.
 - Record absent voices, unresolved disputes, OCR/translation issues, and the next records needed.
 - Do not calculate source trust scores, declare claims verified, or write a final narrative.
@@ -165,6 +204,11 @@ def validate_source_first_output(packet, result):
             raise ValueError(f"statement {sid} refers to unknown source")
         if row.get("statement_kind") not in STATEMENT_KINDS:
             raise ValueError(f"statement {sid} has invalid statement_kind")
+        era = source_era(sources[source_id]["source_type"])
+        if era == "retrospective" and row["statement_kind"] not in RETROSPECTIVE_KINDS:
+            raise ValueError(f"statement {sid} from a retrospective source cannot be {row['statement_kind']}")
+        if era == "contemporary" and row["statement_kind"] == "retrospective_summary":
+            raise ValueError(f"statement {sid} from a contemporary record cannot be a retrospective_summary")
         excerpt = normalise(row.get("source_excerpt"))
         passage = normalise(sources[source_id]["passage"])
         if not excerpt or excerpt not in passage:
@@ -207,12 +251,87 @@ def validate_source_first_output(packet, result):
     }
 
 
-def run_source_first(packet, pool):
+def screen_claims(packet, result):
+    """Set aside claims that add speculation or years the linked records do not contain.
+
+    Returns (kept, rejected); each rejected claim carries the reasons. Years may come from a
+    linked source's passage or its source_date (the record's own date), nowhere else.
+    """
+    sources = {s["source_id"]: s for s in packet["sources"]}
+    statements = {normalise(s.get("statement_id")): s for s in result["record_statements"]}
+    kept, rejected = [], []
+    for claim in result["candidate_claims"]:
+        linked = {statements[ref]["source_id"] for ref in claim["source_statement_ids"]}
+        known_years = set()
+        for source_id in linked:
+            known_years |= years_in(sources[source_id]["passage"]) | years_in(sources[source_id].get("source_date"))
+        reasons = []
+        hedge = HEDGE_RE.search(claim["text"])
+        if hedge:
+            reasons.append(f"speculative wording: {hedge.group(0)}")
+        extra_years = sorted(years_in(claim["text"]) - known_years)
+        if extra_years:
+            reasons.append("year not in the linked records: " + ", ".join(extra_years))
+        if reasons:
+            rejected.append({**claim, "rejection_reasons": reasons})
+        else:
+            kept.append(claim)
+    return kept, rejected
+
+
+def annotate(packet, result):
+    """Add what the code, not the model, knows: who each claim is attributed to and
+    which statements quote a translated (non-English) source."""
+    sources = {s["source_id"]: s for s in packet["sources"]}
+    statements = {normalise(s.get("statement_id")): s for s in result["record_statements"]}
+    for row in result["record_statements"]:
+        if not normalise(sources[row["source_id"]]["language"]).casefold().startswith("en"):
+            row["translation_status"] = "model_translation_unverified"
+    for claim in result["candidate_claims"] + result.get("rejected_claims", []):
+        claim["attribution"] = [
+            {"statement_id": ref, "source_id": statements[ref]["source_id"],
+             "institution": sources[statements[ref]["source_id"]]["institution"],
+             "statement_kind": statements[ref]["statement_kind"]}
+            for ref in claim["source_statement_ids"]]
+    return result
+
+
+def git_blob_sha(data):
+    """The id git gives these bytes, so a run can be matched to the packet MANIFEST."""
+    return hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+
+
+def run_source_first(packet, pool, packet_file=None, packet_bytes=None):
     """Run extraction in memory only; callers must save to an isolated experiment branch."""
     prompt = build_source_first_prompt(packet)
-    response, model, _ = pool.generate_json("evidence", prompt)
+
+    from gemini_pool import _parse_json
+
+    def parse(text):
+        # A reply that fails validation is an unusable reply: the pool asks again.
+        value = _parse_json(text)
+        validate_source_first_output(packet, value)
+        return value
+
+    response, model, _ = pool.generate_text("evidence", prompt, parse)
     manifest = validate_source_first_output(packet, response)
-    manifest["model"] = model
+    kept, rejected = screen_claims(packet, response)
+    response["candidate_claims"], response["rejected_claims"] = kept, rejected
+    annotate(packet, response)
+    manifest.update({
+        "candidate_claim_count": len(kept),
+        "rejected_claim_count": len(rejected),
+        "model": model,
+        "model_api_id": pool.models.get(model, {}).get("api_id", model),
+        "prompt_revision": PROMPT_REVISION,
+        "prompt_sha256": hashlib.sha256(prompt.encode("utf-8")).hexdigest(),
+        "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    })
+    if packet_file:
+        manifest["packet_file"] = packet_file
+    if packet_bytes is not None:
+        manifest["packet_git_blob_sha"] = git_blob_sha(packet_bytes)
+        manifest["packet_sha256"] = hashlib.sha256(packet_bytes).hexdigest()
     return {"manifest": manifest, "result": response}
 
 
@@ -223,17 +342,19 @@ def main(argv=None):
     parser.add_argument("--validate-only", action="store_true", help="Validate input packet without model call")
     args = parser.parse_args(argv)
     try:
-        packet = json.loads(args.packet.read_text(encoding="utf-8"))
+        packet_bytes = args.packet.read_bytes()
+        packet = json.loads(packet_bytes.decode("utf-8"))
         validate_source_packet(packet)
         if args.validate_only:
             output = {"valid": True, "prompt_version": PROMPT_VERSION, "source_count": len(packet["sources"])}
         else:
             from gemini_pool import ModelPool
-            output = run_source_first(packet, ModelPool())
+            output = run_source_first(packet, ModelPool(), args.packet.name, packet_bytes)
         with args.output.open("x", encoding="utf-8") as handle:
             json.dump(output, handle, ensure_ascii=False, indent=2, sort_keys=True)
             handle.write("\n")
-        print(f"v{PROMPT_VERSION} source-first packet processed; output isolated; no live records changed.", file=sys.stderr)
+        print(f"v{PROMPT_VERSION} source-first packet {args.packet.name} processed; output isolated; "
+              "no live records changed.", file=sys.stderr)
         return 0
     except (OSError, ValueError, RuntimeError, json.JSONDecodeError) as exc:
         print(f"Source-first experiment failed closed: {exc}", file=sys.stderr)

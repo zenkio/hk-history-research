@@ -479,11 +479,12 @@ def test_gaps_and_limits_calling_a_source_silent_are_set_aside():
     result["perspectives"][0]["known_limits"] = (
         "The Yearbook does not specify which side refused. The supplied excerpt does not name the officer.")
     source_first.screen_silence(result)
-    assert result["gaps"] == ["No supplied excerpt describes the rioting.",
+    # r11: "No inspected record" is narrowed to the excerpt it implies, not set aside.
+    assert result["gaps"] == ["No inspected excerpt describes the rioting.",
+                              "No supplied excerpt describes the rioting.",
                               "Harbour records for 1841 were not accessible (see access log)."]
     assert result["perspectives"][0]["known_limits"] == "The supplied excerpt does not name the officer."
     assert [g["text"] for g in result["rejected_gaps"]] == [
-        "No inspected record describes the rioting.",
         "P1 known_limits: The Yearbook does not specify which side refused."]
 
 
@@ -702,3 +703,41 @@ def test_access_log_becomes_gaps_written_by_code():
     assert result["gaps"][0] == "No supplied excerpt gives the Qing court's view."
     assert result["gaps"][1].startswith("Inspected and not relevant: Foreign Relations (FRUS) documents d480 and d485")
     assert result["rejected_gaps"][0]["rejection_reasons"] == ["restates the access log, which code reports as written"]
+
+
+def test_supplied_source_gap_is_narrowed_to_the_excerpt_not_lost():
+    # Run 38190464406 lost all four provident-fund gaps for saying "No supplied source ...".
+    result = valid_result()
+    result["gaps"] = ["No supplied source details the 1995 debate.",
+                      "The Yearbook does not mention the 1995 debate."]
+    source_first.screen_silence(result)
+    assert result["gaps"] == ["No supplied excerpt details the 1995 debate."]
+    assert result["narrowed_gaps"] == [{"model_text": "No supplied source details the 1995 debate.",
+                                        "kept_as": "No supplied excerpt details the 1995 debate."}]
+    assert [g["text"] for g in result["rejected_gaps"]] == ["The Yearbook does not mention the 1995 debate."]
+
+
+def test_reported_group_gets_a_perspective_written_by_code():
+    # Run 38190464406: the speaker-as-actor perspective was rightly set aside and nothing replaced it.
+    value = packet()
+    value["sources"][0].update(passage="Setting up such a fund is one of the solutions agreed.",
+                               record_context={"speaker": "Mr Alan WONG", "reported_position_of": "Members at the joint meeting"})
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "Setting up such a fund is one of the solutions"
+    result["perspectives"] = []
+    source_first.group_perspectives(value, result)
+    row = result["perspectives"][0]
+    assert row["actor_or_institution"] == "Members at the joint meeting, as reported by Mr Alan WONG"
+    assert row["documented_position"] == "Setting up such a fund is one of the solutions"
+    assert row["written_by"] == "code" and row["source_statement_ids"] == ["S1"]
+    source_first.group_perspectives(value, result)
+    assert len(result["perspectives"]) == 1
+
+
+def test_limit_left_after_a_removed_clause_ends_cleanly_and_reference_counts_as_silence():
+    result = valid_result()
+    result["gaps"] = ["The two supplied records do not directly reference each other."]
+    result["perspectives"][0]["known_limits"] = "The supplied excerpt is retrospective; it does not cite contemporary evidence."
+    source_first.screen_silence(result)
+    assert result["gaps"] == ["The two supplied excerpts do not directly reference each other."]
+    assert result["perspectives"][0]["known_limits"] == "The supplied excerpt is retrospective."

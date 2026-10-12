@@ -36,7 +36,11 @@ PROMPT_VERSION = "2.1"
 # its source; a record_context reported_position_of names the group a speaker reported, and that
 # group is the perspective's actor; "Neither side ..." has no named subject; and the access log
 # becomes gaps written by code, so the model cannot misstate it.
-PROMPT_REVISION = 10
+# r11 (after the blind review of run 38190464406): a gap saying "No supplied source ..." is
+# narrowed to "No supplied excerpt ..." (what it implies) and kept, with the model's wording
+# recorded; code writes the perspective of a reported group that no perspective covers; a limit
+# left after a removed clause ends cleanly; "do not (directly) reference" counts as silence.
+PROMPT_REVISION = 11
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -48,8 +52,8 @@ MODEL_ROLES = ("evidence", "source_first_compare")
 # limit of its kind, not silence, and stays.
 SILENCE_RE = re.compile(
     r"\b(no|none of the)\s+(inspected\s+|supplied\s+|other\s+)?(record|source|document|account)s?\b"
-    r"|\b(does|do|did)\s+not\s+(specify|mention|state|say|name|describe|identify|address|provide|give"
-    r"|detail|record|cite|distinguish|explain)\b"
+    r"|\b(does|do|did)\s+not\s+(?:\w+ly\s+)?(specify|mention|state|say|name|describe|identify|address|provide|give"
+    r"|detail|record|cite|distinguish|explain|reference|link)\b"
     r"|\bsilent\b", re.I)
 ACCESS_RESULTS = {"access_failure", "not_fetched", "inspected_not_relevant"}
 STATEMENT_KINDS = {
@@ -523,22 +527,66 @@ def screen_perspectives(packet, result):
     return kept, rejected
 
 
+def group_perspectives(packet, result):
+    """Add, written by code, the perspective of each group a record reports (record_context
+    reported_position_of) that no kept perspective covers: run 38190464406 gave it to the
+    speaker alone, the screen set that aside, and the group's view was lost."""
+    sources = {s["source_id"]: s for s in packet["sources"]}
+    covered = {ref for row in result["perspectives"] for ref in row["source_statement_ids"]}
+    for row in result["record_statements"]:
+        context = sources[row["source_id"]].get("record_context", {})
+        group = context.get("reported_position_of")
+        sid = normalise(row.get("statement_id"))
+        if group and sid not in covered:
+            speaker = context.get("speaker") or context.get("author") or sources[row["source_id"]]["institution"]
+            result["perspectives"].append({
+                "perspective_id": f"G{len(result['perspectives']) + 1}",
+                "actor_or_institution": f"{group}, as reported by {speaker}",
+                "documented_position": row["source_excerpt"],
+                "source_statement_ids": [sid],
+                "known_limits": "The position is the supplied excerpt as reported by the speaker; the excerpt does not give the group's own record.",
+                "written_by": "code"})
+    return result
+
+
 def states_source_silence(text):
     """True when text says a record or source is silent without limiting that to the excerpt."""
     return bool(SILENCE_RE.search(str(text or ""))) and "excerpt" not in str(text).casefold()
 
 
+# "No supplied source details X" says more than was inspected; "No supplied excerpt details X"
+# is the narrower statement it implies, so code keeps that instead of losing the gap (run
+# 38190464406 lost all four provident-fund gaps to this wording).
+SUPPLIED_SOURCE_RE = re.compile(r"\b(supplied|inspected) (source|record|document)(s?)\b", re.I)
+
+
+def narrow_to_excerpt(text):
+    """text with "supplied source/record/document" read as "supplied excerpt", when that is all
+    that makes it call a whole source silent; otherwise None."""
+    narrowed = SUPPLIED_SOURCE_RE.sub(lambda m: f"{m.group(1)} excerpt{m.group(3)}", text)
+    return narrowed if narrowed != text and not states_source_silence(narrowed) else None
+
+
 def screen_silence(result):
-    """Move gaps, and limit sentences, that call a whole source silent to rejected_gaps (E10)."""
+    """Move gaps, and limit sentences, that call a whole source silent to rejected_gaps (E10);
+    a gap that only says "supplied source" for "supplied excerpt" is narrowed and kept."""
     kept, rejected = [], []
+    result["narrowed_gaps"] = []
     for gap in result.get("gaps", []):
-        (rejected if states_source_silence(gap) else kept).append(gap)
+        if not states_source_silence(gap):
+            kept.append(gap)
+        elif narrow_to_excerpt(gap):
+            kept.append(narrow_to_excerpt(gap))
+            result["narrowed_gaps"].append({"model_text": gap, "kept_as": narrow_to_excerpt(gap)})
+        else:
+            rejected.append(gap)
     result["gaps"] = kept
     for row in result.get("perspectives", []):
         sentences = re.split(r"(?<=[.;])\s+", normalise(row.get("known_limits")))
         bad = [x for x in sentences if states_source_silence(x)]
         if bad:
-            row["known_limits"] = " ".join(x for x in sentences if x not in bad)
+            # Run 38190464406 left limits ending "...;" after a clause was removed.
+            row["known_limits"] = re.sub(r"[;,]\s*$", ".", " ".join(x for x in sentences if x not in bad))
             rejected.extend(f'{row.get("perspective_id")} known_limits: {x}' for x in bad)
     result["rejected_gaps"] = [{"text": g, "rejection_reasons": [
         "states that a source is silent; only short excerpts were inspected"]} for g in rejected]
@@ -615,6 +663,7 @@ def run_source_first(packet, pool, packet_file=None, packet_bytes=None, role="ev
     response["candidate_claims"], response["rejected_claims"] = kept, rejected
     kept_views, rejected_views = screen_perspectives(packet, response)
     response["perspectives"], response["rejected_perspectives"] = kept_views, rejected_views
+    group_perspectives(packet, response)
     screen_silence(response)
     access_gaps(packet, response)
     annotate(packet, response)

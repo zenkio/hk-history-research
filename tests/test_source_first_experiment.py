@@ -741,3 +741,19 @@ def test_limit_left_after_a_removed_clause_ends_cleanly_and_reference_counts_as_
     source_first.screen_silence(result)
     assert result["gaps"] == ["The two supplied excerpts do not directly reference each other."]
     assert result["perspectives"][0]["known_limits"] == "The supplied excerpt is retrospective."
+
+
+def test_position_may_name_its_institution_and_missing_voice_gap_is_kept():
+    # Run 38191713158 set aside both.
+    result = valid_result()
+    result["perspectives"][0]["documented_position"] = "The Hong Kong Government records that the island was formally occupied."
+    kept, rejected = source_first.screen_perspectives(packet(), result)
+    assert len(kept) == 1 and not rejected
+    value = packet()
+    value["access_log"] = [access_entry(record_family="Colonial Office correspondence, volume 351")]
+    result["gaps"] = ["No supplied excerpt gives the Colonial Office's view.",
+                      "The Colonial Office volume 351 pages were not inspected."]
+    result["rejected_gaps"] = []
+    source_first.access_gaps(value, result)
+    assert result["gaps"][0] == "No supplied excerpt gives the Colonial Office's view."
+    assert [g["text"] for g in result["rejected_gaps"]] == ["The Colonial Office volume 351 pages were not inspected."]

@@ -40,7 +40,9 @@ PROMPT_VERSION = "2.1"
 # narrowed to "No supplied excerpt ..." (what it implies) and kept, with the model's wording
 # recorded; code writes the perspective of a reported group that no perspective covers; a limit
 # left after a removed clause ends cleanly; "do not (directly) reference" counts as silence.
-PROMPT_REVISION = 11
+# r12 (after run 38191713158): a perspective's position may name its own record's institution;
+# only a gap about access is compared with the access log.
+PROMPT_REVISION = 12
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -509,7 +511,9 @@ def screen_perspectives(packet, result):
     kept, rejected = [], []
     for row in result["perspectives"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in row["source_statement_ids"]})]
-        reasons = unsupported_details(linked, row["documented_position"])
+        # A position is its actor's own, so it may name the record's institution (run 38191713158
+        # set aside "The Hong Kong Government records ..." for naming Hong Kong).
+        reasons = unsupported_details(linked, row["documented_position"], attributing=True)
         stranger = actor_unlike_creator(linked, row["actor_or_institution"])
         if stranger:
             reasons.append("actor is not the author, speaker or publisher of a linked record: " + ", ".join(stranger))
@@ -608,7 +612,9 @@ def access_gaps(packet, result):
     for gap in result.get("gaps", []):
         said = {n.casefold() for n in names_in(gap)}
         about_access = bool(ACCESS_WORDS_RE.search(gap))
-        if any(len(m & said) >= 2 or (about_access and m & said) for m in marks):
+        # Only a gap about access (run 38191713158 set aside a gap naming the Colonial Office
+        # as a missing voice because the access log names it too).
+        if about_access and any(m & said for m in marks):
             result.setdefault("rejected_gaps", []).append({"text": gap, "rejection_reasons": [
                 "restates the access log, which code reports as written"]})
         else:

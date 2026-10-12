@@ -26,7 +26,9 @@ PROMPT_VERSION = "2.1"
 # r7 (after run 38185409550) checks attribution in code: a perspective's actor must be the record's
 # author or speaker, a claim from an opinion, reported speech or a speech must name its source, and
 # names in claims from a translated record are checked against the packet's English translation.
-PROMPT_REVISION = 7
+# r8 (after run 38186782932) asks a named speaker's, author's or publisher's interpretation, outcome
+# or cause to be attributed, and no longer its plain dates and places.
+PROMPT_REVISION = 8
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -73,6 +75,10 @@ SENTENCE_STARTERS = {"a", "an", "the", "he", "she", "it", "they", "this", "that"
 CREATOR_KEYS = ("speaker", "author", "publisher")
 # Statement kinds that are someone's words or view, so a claim drawn from them names whose.
 ATTRIBUTED_KINDS = {"opinion", "allegation", "denial", "reported_speech"}
+# Claim types that judge or explain rather than report: drawn from a named speaker, author or
+# publisher, they name it (run 38186782932 kept a newspaper's "remote cause of the rioting" as
+# fact). A date or place a speech states is its factual statement and is attributed in metadata.
+EVALUATIVE_TYPES = {"interpretation", "outcome", "cause", "context", "other"}
 # Capitalised words that identify no one: a claim saying "Hong Kong" does not name its source.
 GENERIC_NAMES = {"hong", "kong", "mr", "mrs", "ms", "dr", "the", "of", "and", "h.b.m"}
 
@@ -221,7 +227,7 @@ RULES
 - Title, institution, date and locator fields identify a record; they are not facts about the event. Do not move places, dates or names from them, or from the research question, into claims or perspectives.
 - passage_en is the packet's English translation of a non-English passage. Quote source_excerpt from passage; take names in claims only from passage_en, and add no agent or name that passage_en lacks.
 - A perspective's actor_or_institution is the record's own author, speaker or publisher (its institution or record_context). Someone whose words the record reports (a denial in a consular letter) is not a perspective's actor: the perspective is the reporter's, and documented_position says what it reports.
-- A claim drawn from an opinion, allegation, denial, reported speech or a speaker's words names that source in its text ("Mr CLYDESDALE opposed ...", "The Evening Post attributed ..."); code sets aside one that does not.
+- A claim drawn from an opinion, allegation, denial or reported speech, and an interpretation, outcome, cause, context or other claim drawn from a record with a named speaker, author or publisher, names that source in its text ("Mr CLYDESDALE opposed ...", "The Evening Post attributed ..."); code sets aside one that does not.
 - record_context states who is speaking or what the record is (for example the speaker of a debate passage). It may be used to attribute a statement, never as a fact about the event.
 - Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. If the passage says "He" or "the boycott", keep those words and add a gap rather than supplying the name.
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
@@ -405,17 +411,20 @@ def actor_unlike_creator(sources, actor):
                   if n.casefold() not in known and n.casefold() not in initials)
 
 
-def needs_attribution(source, statement):
-    return statement["statement_kind"] in ATTRIBUTED_KINDS or "speaker" in source.get("record_context", {})
+def needs_attribution(source, statement, claim_type):
+    if statement["statement_kind"] in ATTRIBUTED_KINDS:
+        return True
+    context = source.get("record_context", {})
+    return claim_type in EVALUATIVE_TYPES and any(k in context for k in CREATOR_KEYS)
 
 
-def unattributed(sources, statements, text):
-    """Why a claim drawn from someone's words does not say whose they are."""
+def unattributed(sources, statements, text, claim_type):
+    """Why a claim drawn from someone's words or judgement does not say whose they are."""
     said = {n.casefold() for n in names_in(text)}
     missing = []
     for statement in statements:
         source = sources[statement["source_id"]]
-        if needs_attribution(source, statement):
+        if needs_attribution(source, statement, claim_type):
             names = creator_names(source)
             if names and not names & said:
                 missing.append(source["source_id"])
@@ -433,7 +442,8 @@ def screen_claims(packet, result):
     for claim in result["candidate_claims"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in claim["source_statement_ids"]})]
         reasons = unsupported_details(linked, claim["text"])
-        reasons += unattributed(sources, [statements[ref] for ref in claim["source_statement_ids"]], claim["text"])
+        reasons += unattributed(sources, [statements[ref] for ref in claim["source_statement_ids"]],
+                                claim["text"], claim.get("claim_type"))
         if not names_in(claim["text"]) - MONTHS:
             reasons.append("no named subject (E6): name who or what the claim is about, or leave it as a gap")
         if reasons:

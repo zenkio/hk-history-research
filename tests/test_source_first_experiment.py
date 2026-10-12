@@ -586,3 +586,20 @@ def test_claim_from_a_speakers_words_must_name_the_speaker_whatever_the_kind():
 def test_claim_from_a_plain_summary_needs_no_attribution():
     kept, rejected = source_first.screen_claims(packet(), valid_result())
     assert len(kept) == 1 and not rejected
+
+
+def test_speakers_date_needs_no_attribution_but_a_publishers_cause_does():
+    """Run 38186782932 kept a newspaper's 'remote cause of the rioting' as fact (kind assertion)
+    and set aside a speech's plain start date for not naming the speaker."""
+    value = packet()
+    value["sources"][0].update(passage="The Scheme started on 1 December 2000; the boycott was the cause of the rioting.",
+                               record_context={"publisher": "Evening Star (newspaper)"})
+    result = valid_result()
+    result["record_statements"][0].update(source_excerpt="The Scheme started on 1 December 2000", statement_kind="assertion")
+    result["candidate_claims"] = [
+        dict(claim("C1", "The Scheme started on 1 December 2000."), claim_type="date"),
+        dict(claim("C2", "The boycott was the cause of the Rioting."), claim_type="cause"),
+        dict(claim("C3", "The Evening Star gave the boycott as the cause of the Rioting."), claim_type="cause")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C1", "C3"]
+    assert rejected[0]["rejection_reasons"] == ["does not name whose words it reports (hk-yearbook-2021)"]

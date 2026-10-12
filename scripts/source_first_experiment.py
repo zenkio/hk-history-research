@@ -28,7 +28,10 @@ PROMPT_VERSION = "2.1"
 # names in claims from a translated record are checked against the packet's English translation.
 # r8 (after run 38186782932) asks a named speaker's, author's or publisher's interpretation, outcome
 # or cause to be attributed, and no longer its plain dates and places.
-PROMPT_REVISION = 8
+# r9 (after the blind review of run 38187661859) asks any record's interpretation or cause to be
+# attributed in the claim text, sets aside "The murder was ..." (a subject with no name), and asks
+# for gaps naming missing voices and differences between records.
+PROMPT_REVISION = 9
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -79,6 +82,12 @@ ATTRIBUTED_KINDS = {"opinion", "allegation", "denial", "reported_speech"}
 # publisher, they name it (run 38186782932 kept a newspaper's "remote cause of the rioting" as
 # fact). A date or place a speech states is its factual statement and is attributed in metadata.
 EVALUATIVE_TYPES = {"interpretation", "outcome", "cause", "context", "other"}
+# A judgement of what something was or why it happened names its source whoever made the record:
+# run 38187661859 kept "The Qing government was forced to sign ..." (PRC Foreign Ministry) and
+# "The murder was instigated by ..." (Antiquities Advisory Board) as plain facts.
+JUDGED_TYPES = {"interpretation", "cause"}
+# "The murder was instigated ...": a subject of lower-case words before its verb names no one.
+UNNAMED_SUBJECT_RE = re.compile(r"^(?:[Tt]he|[Aa]n?)\s+([a-z][\w'-]*\s+){0,4}?(was|were|is|are|has|had|have|took|marks|marked)\b")
 # Capitalised words that identify no one: a claim saying "Hong Kong" does not name its source.
 GENERIC_NAMES = {"hong", "kong", "mr", "mrs", "ms", "dr", "the", "of", "and", "h.b.m"}
 
@@ -241,6 +250,9 @@ RULES
 - Extract one independently testable proposition per candidate claim, naming its subject (not "the victim" or "the island"). Do not hedge or guess ("presumably", "likely"): leave an unstated detail out and add a gap. Keep source_statement_ids.
 - Build perspectives only from identifiable speakers, institutions, or groups evidenced by the records. Do not invent motives or claim a perspective represents everyone.
 - Record absent voices, unresolved disputes, OCR/translation issues, and the next records needed.
+- When the research question asks whose perspectives are represented or missing, add a gap naming each party to the events that no supplied record speaks for (for example the other side of a dispute).
+- When two records describe the same thing differently (who acted, where, on whose orders), add a gap naming both records and the difference.
+- An interpretation or cause claim names the record's institution or author in its text ("The PRC Ministry of Foreign Affairs describes ..."), whoever made the record.
 - Do not calculate source trust scores, declare claims verified, or write a final narrative.
 - Return only valid JSON with this schema. Enum values are case-sensitive and must match the allowed values below exactly; do not invent synonyms or use values outside the enumerations:
 {{
@@ -350,12 +362,13 @@ def validate_source_first_output(packet, result):
     }
 
 
-def unsupported_details(sources, text):
+def unsupported_details(sources, text, attributing=False):
     """Why text says more than its linked sources: hedges, years and names they do not contain.
 
     Years may come from a passage, its record_context or its source_date (the record's own
-    date); names only from a passage or record_context, and for a non-English record from the
-    packet's English translation (passage_en). Without one, names are not checked.
+    date); names only from a passage, record_context or, when attributing, the record's
+    institution, and for a non-English record from the packet's English translation (passage_en).
+    Without one, names are not checked.
     """
     passages = [s["passage"] for s in sources] + [v for s in sources for v in s.get("record_context", {}).values()]
     reasons = []
@@ -372,7 +385,11 @@ def unsupported_details(sources, text):
                for s in sources]
     if all(english):
         context = [v for s in sources for v in s.get("record_context", {}).values()]
-        known_words = set().union(*(words_in(p) for p in english + context))
+        # A claim that must name its source may name the record's institution (r9); other claims
+        # may not (run 38186782932: "The Hong Kong government's target ...").
+        makers = [s["institution"] for s in sources] if attributing else []
+        known_words = set().union(*(words_in(p) for p in english + context + makers),
+                                  *(acronyms_in(m) for m in makers))
         extra_names = sorted(n for n in names_in(text) if n.casefold() not in known_words)
         if extra_names:
             reasons.append("name not in the linked records: " + ", ".join(extra_names))
@@ -412,7 +429,7 @@ def actor_unlike_creator(sources, actor):
 
 
 def needs_attribution(source, statement, claim_type):
-    if statement["statement_kind"] in ATTRIBUTED_KINDS:
+    if statement["statement_kind"] in ATTRIBUTED_KINDS or claim_type in JUDGED_TYPES:
         return True
     context = source.get("record_context", {})
     return claim_type in EVALUATIVE_TYPES and any(k in context for k in CREATOR_KEYS)
@@ -426,7 +443,7 @@ def unattributed(sources, statements, text, claim_type):
         source = sources[statement["source_id"]]
         if needs_attribution(source, statement, claim_type):
             names = creator_names(source)
-            if names and not names & said:
+            if names and not (names | acronyms_in(source["institution"])) & said:
                 missing.append(source["source_id"])
     return [f"does not name whose words it reports ({', '.join(sorted(set(missing)))})"] if missing else []
 
@@ -441,10 +458,12 @@ def screen_claims(packet, result):
     kept, rejected = [], []
     for claim in result["candidate_claims"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in claim["source_statement_ids"]})]
-        reasons = unsupported_details(linked, claim["text"])
-        reasons += unattributed(sources, [statements[ref] for ref in claim["source_statement_ids"]],
-                                claim["text"], claim.get("claim_type"))
-        if not names_in(claim["text"]) - MONTHS:
+        claim_statements = [statements[ref] for ref in claim["source_statement_ids"]]
+        attributing = any(needs_attribution(sources[s["source_id"]], s, claim.get("claim_type"))
+                          for s in claim_statements)
+        reasons = unsupported_details(linked, claim["text"], attributing)
+        reasons += unattributed(sources, claim_statements, claim["text"], claim.get("claim_type"))
+        if not names_in(claim["text"]) - MONTHS or UNNAMED_SUBJECT_RE.match(normalise(claim["text"])):
             reasons.append("no named subject (E6): name who or what the claim is about, or leave it as a gap")
         if reasons:
             rejected.append({**claim, "rejection_reasons": reasons})

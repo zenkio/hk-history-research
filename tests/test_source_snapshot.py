@@ -98,3 +98,37 @@ def test_passage_split_across_pdf_lines_is_found():
     text = "The murder took place in the even-\ning of 10 Janu ary 1901, when he was"
     assert snap.passage_found("The murder took place in the evening of 10 January 1901", text)
     assert not snap.passage_found("The murder took place in the morning", text)
+
+
+def test_rate_limited_page_is_fetched_again_after_waiting():
+    # Run 38187661859: HistSyn answered 429, so its page had no hash (E3).
+    url = "https://records.example/a"
+    tries = []
+
+    def open_(request, timeout=None):
+        if request.full_url.startswith(snap.WAYBACK):
+            return Response(WAYBACK_REPLY, request.full_url, "application/json")
+        tries.append(request.full_url)
+        if len(tries) == 1:
+            raise snap.urllib.error.HTTPError(url, 429, "Too Many Requests", {"Retry-After": "5"}, None)
+        return Response(PAGE, url)
+    record = snap.snapshot_packets(packets(("busy", url, "the 'new' pier-head was built")), open_)[url]
+    assert record["status"] == "fetched" and len(tries) == 2
+
+
+def test_archive_copy_is_asked_for_directly_when_the_lookup_finds_none():
+    # Run 38187661859: the archive's lookup gave nothing for a LegCo PDF with an SSL error.
+    url = "https://records.example/a"
+
+    def open_(request, timeout=None):
+        asked = request.full_url
+        if asked.startswith(snap.WAYBACK):
+            return Response(b'{"archived_snapshots": {}}', asked, "application/json")
+        if asked.startswith("https://web.archive.org/web/") and asked.endswith("id_/" + url):
+            return Response(PAGE, f"https://web.archive.org/web/20250101000000id_/{url}")
+        raise OSError("certificate verify failed")
+    record = snap.snapshot_packets(packets(("pdf", url, "the 'new' pier-head was built")), open_)[url]
+    assert record["status"] == "archived_copy_only" and "certificate" in record["error"]
+    assert record["wayback"]["timestamp"] == "20250101000000"
+    assert record["wayback"]["sha256"] == snap.hashlib.sha256(PAGE).hexdigest()
+    assert record["sources"][0]["passage_found"] is True

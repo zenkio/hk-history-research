@@ -9,6 +9,7 @@ import argparse
 import datetime
 import hashlib
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -42,7 +43,10 @@ PROMPT_VERSION = "2.1"
 # left after a removed clause ends cleanly; "do not (directly) reference" counts as silence.
 # r12 (after run 38191713158): a perspective's position may name its own record's institution;
 # only a gap about access is compared with the access log.
-PROMPT_REVISION = 12
+# r13 (after the blind review of run 38192662462): a gap that cites "metadata" or the record
+# context (packet notes, not the excerpt) is set aside; "describe ... differently" is asked for
+# unless the excerpts cannot both be true; each output records the code commit that made it.
+PROMPT_REVISION = 13
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -273,7 +277,8 @@ RULES
 - When the research question asks whose perspectives are represented or missing, add a gap naming each party to the events that no supplied record speaks for (for example the other side of a dispute).
 - When record_context gives reported_position_of, the passage is that group's position as the speaker reported it: the perspective's actor is that group (for example "Members at the joint meeting, as reported by Mr CHAN"), not the speaker alone.
 - A subject such as "Neither side" or "Both parties" names no one; if the excerpt does not name the parties, leave the point as a gap.
-- When two records describe the same thing differently (who acted, where, on whose orders), add a gap naming both records and the difference.
+- When two records describe the same thing differently (who acted, where, on whose orders), add a gap naming both records and the difference. Say the records "describe it differently" and quote both wordings; say they "disagree" or "conflict" only when both cannot be true (a classroom and a residence may be one building).
+- A gap is about the sources' own content. Do not cite metadata, record_context, packet notes or OCR remarks as if they were in an excerpt.
 - An interpretation or cause claim names the record's institution or author in its text ("The PRC Ministry of Foreign Affairs describes ..."), whoever made the record.
 - Do not calculate source trust scores, declare claims verified, or write a final narrative.
 - Return only valid JSON with this schema. Enum values are case-sensitive and must match the allowed values below exactly; do not invent synonyms or use values outside the enumerations:
@@ -601,6 +606,23 @@ ACCESS_WORDS_RE = re.compile(r"\b(not inspected|were tried|was tried|access fail
                              r"|could not be (inspected|fetched|reached)|inspected and)\b", re.I)
 
 
+METADATA_GAP_RE = re.compile(r"\b(metadata|record[_ ]context|packet notes?)\b", re.I)
+
+
+def screen_metadata_gaps(result):
+    """Set aside gaps that cite packet metadata as if it were in an excerpt (run 38192662462 had a
+    Tatsu Maru gap crediting the excerpt with "OCR corruption noted in source metadata")."""
+    kept = []
+    for gap in result.get("gaps", []):
+        if METADATA_GAP_RE.search(gap):
+            result.setdefault("rejected_gaps", []).append({"text": gap, "rejection_reasons": [
+                "cites packet metadata, which is not part of any excerpt"]})
+        else:
+            kept.append(gap)
+    result["gaps"] = kept
+    return result
+
+
 def access_gaps(packet, result):
     """Write the access log as gaps, and set aside model gaps that restate it (run 38188919305
     called inspected, not-relevant FRUS documents "not inspected" and possibly relevant)."""
@@ -671,6 +693,7 @@ def run_source_first(packet, pool, packet_file=None, packet_bytes=None, role="ev
     response["perspectives"], response["rejected_perspectives"] = kept_views, rejected_views
     group_perspectives(packet, response)
     screen_silence(response)
+    screen_metadata_gaps(response)
     access_gaps(packet, response)
     annotate(packet, response)
     manifest.update({
@@ -683,6 +706,8 @@ def run_source_first(packet, pool, packet_file=None, packet_bytes=None, role="ev
         "model_role": role,
         "model_api_id": pool.models.get(model, {}).get("api_id", model),
         "prompt_revision": PROMPT_REVISION,
+        # E15: the output itself names the code that made it (run 38192662462 had it only in summary.json).
+        "code_commit": os.environ.get("GITHUB_SHA"),
         "prompt_sha256": hashlib.sha256(prompt.encode("utf-8")).hexdigest(),
         "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     })

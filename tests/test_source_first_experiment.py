@@ -757,3 +757,22 @@ def test_position_may_name_its_institution_and_missing_voice_gap_is_kept():
     source_first.access_gaps(value, result)
     assert result["gaps"][0] == "No supplied excerpt gives the Colonial Office's view."
     assert [g["text"] for g in result["rejected_gaps"]] == ["The Colonial Office volume 351 pages were not inspected."]
+
+
+def test_gap_citing_packet_metadata_is_set_aside():
+    # Run 38192662462 (r12) kept a Tatsu Maru gap crediting the excerpt with "OCR corruption
+    # noted in source metadata"; the note is the packet's, not the excerpt's.
+    result = valid_result()
+    result["rejected_gaps"] = []
+    result["gaps"] = ["The excerpt has loaded characterisation; OCR corruption noted in source metadata.",
+                      "No supplied excerpt gives the Colonial Office's view."]
+    source_first.screen_metadata_gaps(result)
+    assert result["gaps"] == ["No supplied excerpt gives the Colonial Office's view."]
+    assert len(result["rejected_gaps"]) == 1
+
+
+def test_output_manifest_records_the_code_commit(monkeypatch):
+    # Run 38192662462: only summary.json named the commit, so a sample file could not be traced (E15).
+    monkeypatch.setenv("GITHUB_SHA", "abc123")
+    out = source_first.run_source_first(packet(), FakePool([json.dumps(valid_result())]))
+    assert out["manifest"]["code_commit"] == "abc123"

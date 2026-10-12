@@ -172,7 +172,7 @@ jobs:
               "run_id": run_id,
               "code_commit": code_sha,
               "prompt_version": "2.1",
-              "prompt_revision": 6,
+              "prompt_revision": 7,
               "model_role": role,
               "snapshots_saved": (root / "snapshots.json").exists(),
               "status": "failed" if failed else "completed_unverified",

@@ -266,7 +266,9 @@ class FakePool:
 def test_invalid_reply_is_retried_and_run_is_traceable_to_packet_and_model():
     value = packet()
     zh = contemporary_source(source_id="zh-record", language="zh", source_type="official_policy_retrospective",
-                             passage="该条约于一八四二年签订，此后由双方政府分别批准并生效。", locator="第1段")
+                             passage="该条约于一八四二年签订，此后由双方政府分别批准并生效。", locator="第1段",
+                             passage_en="The Treaty of Nanking was signed in 1842 and then ratified by both governments.",
+                             passage_en_by="Packet curator, literal translation")
     value["sources"].append(zh)
     good = valid_result()
     good["record_statements"].append(statement("S2", "zh-record", "该条约于一八四二年签订", "第1段", "retrospective_summary"))
@@ -354,15 +356,33 @@ def test_perspective_position_is_screened_like_a_claim():
     assert rejected[0]["rejection_reasons"] == ["name not in the linked records: Hollywood, Road"]
 
 
-def test_names_are_not_checked_against_translated_records():
+def test_names_in_translated_records_are_checked_against_the_packet_translation():
+    """Run 38185409550 added "Britain" to a claim from a Chinese passage that names no agent;
+    names were not checked against non-English records at all."""
     value = packet()
-    value["sources"][0].update(language="zh", passage="该条约于一八四二年签订，此后由双方政府分别批准并生效。")
+    value["sources"][0].update(language="zh", passage="强迫该国政府于一八四二年签订条约，此后由双方政府分别批准并生效。",
+                               passage_en="forced the government to sign the Treaty in 1842; both governments then ratified it.",
+                               passage_en_by="Packet curator, literal translation")
     result = valid_result()
-    result["record_statements"][0]["source_excerpt"] = "该条约于一八四二年签订"
-    result["candidate_claims"] = [claim("C1", "The Treaty was signed in 1842."), claim("C2", "The Treaty was signed in 1843.")]
+    result["record_statements"][0]["source_excerpt"] = "强迫该国政府于一八四二年签订条约"
+    result["candidate_claims"] = [claim("C1", "The Treaty was signed in 1842."),
+                                  claim("C2", "The Treaty was signed in 1843."),
+                                  claim("C3", "Britain forced the government to sign the Treaty in 1842.")]
     kept, rejected = source_first.screen_claims(value, result)
     assert [c["claim_id"] for c in kept] == ["C1"]
     assert rejected[0]["rejection_reasons"] == ["year not in the linked records: 1843"]
+    assert rejected[1]["rejection_reasons"] == ["name not in the linked records: Britain"]
+    assert '"passage_en"' in source_first.build_source_first_prompt(value)
+
+
+def test_non_english_source_needs_a_packet_translation():
+    value = packet()
+    value["sources"][0].update(language="zh", passage="该条约于一八四二年签订，此后由双方政府分别批准并生效。")
+    try:
+        source_first.validate_source_packet(value)
+        assert False, "a non-English source without passage_en must fail"
+    except ValueError as exc:
+        assert "passage_en and passage_en_by are required" in str(exc)
 
 
 def test_opening_verb_of_a_position_is_not_a_name():
@@ -494,3 +514,75 @@ def test_comparison_model_prefers_gemma_4_31b():
     cfg = json.loads((ROOT / "scripts" / "models.json").read_text(encoding="utf-8"))
     entry = next(m for m in cfg["models"] if m["display"] == "OpenRouter Compare")
     assert entry["pick"][0] == "gemma-4-31b" and entry["pick"][-1] == "*"
+
+
+# Revision 7: run 38185409550 gave a reported person a perspective in his own voice and stated a
+# speaker's evaluation as an outcome without naming him.
+
+def reported_packet():
+    value = packet()
+    value["sources"][0].update(
+        institution="Consulate General, Canton (letter filed in Colonial Office series)",
+        source_type="contemporary_consular_letter", source_date="1908-11-14",
+        passage="The Viceroy denies the existence of the society in Canton, as we were told on the 12th.",
+        record_context={"author": "Consulate General at Canton, letter"})
+    return value
+
+
+def reported_result(kind="reported_speech"):
+    result = valid_result()
+    result["record_statements"][0].update(source_excerpt="The Viceroy denies the existence of the society",
+                                          statement_kind=kind)
+    return result
+
+
+def test_perspective_actor_must_be_the_records_author_or_speaker():
+    result = reported_result()
+    result["perspectives"] = [
+        {"perspective_id": "P1", "actor_or_institution": "the Viceroy (of Canton)",
+         "documented_position": "Denies the existence of the society.", "source_statement_ids": ["S1"], "known_limits": "Reported."},
+        {"perspective_id": "P2", "actor_or_institution": "Consulate General, Canton",
+         "documented_position": "Reports that the Viceroy denies the existence of the society.",
+         "source_statement_ids": ["S1"], "known_limits": "Reported."}]
+    kept, rejected = source_first.screen_perspectives(reported_packet(), result)
+    assert [p["perspective_id"] for p in kept] == ["P2"]
+    assert rejected[0]["rejection_reasons"] == [
+        "actor is not the author, speaker or publisher of a linked record: Viceroy"]
+
+
+def test_perspective_actor_may_be_an_acronym_of_the_institution():
+    value = packet()
+    value["sources"][0]["institution"] = "Ministry of Foreign Affairs of the People's Republic of China"
+    result = valid_result()
+    result["perspectives"][0]["actor_or_institution"] = "PRC Ministry of Foreign Affairs"
+    kept, rejected = source_first.screen_perspectives(value, result)
+    assert len(kept) == 1 and not rejected
+
+
+def test_claim_from_reported_words_must_name_their_source():
+    result = reported_result()
+    result["candidate_claims"] = [
+        claim("C1", "The Viceroy denied the existence of the society in Canton."),
+        claim("C2", "The Consulate General reported that the Viceroy denied the existence of the society.")]
+    kept, rejected = source_first.screen_claims(reported_packet(), result)
+    assert [c["claim_id"] for c in kept] == ["C2"]
+    # "Canton" is in the passage too, so it does not name the letter's author.
+    assert rejected[0]["rejection_reasons"] == ["does not name whose words it reports (hk-yearbook-2021)"]
+
+
+def test_claim_from_a_speakers_words_must_name_the_speaker_whatever_the_kind():
+    value = packet()
+    value["sources"][0].update(passage="The start of the scheme thus marks an important milestone for the workforce.",
+                               record_context={"speaker": "Tony Lam, Permanent Secretary"})
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "The start of the scheme thus marks an important milestone"
+    result["candidate_claims"] = [claim("C1", "The start of the Scheme marked an important milestone."),
+                                  claim("C2", "Tony Lam called the start of the Scheme an important milestone.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C2"]
+    assert rejected[0]["rejection_reasons"] == ["does not name whose words it reports (hk-yearbook-2021)"]
+
+
+def test_claim_from_a_plain_summary_needs_no_attribution():
+    kept, rejected = source_first.screen_claims(packet(), valid_result())
+    assert len(kept) == 1 and not rejected

@@ -23,7 +23,10 @@ PROMPT_VERSION = "2.1"
 # forbids giving an actor a nationality or office the passage gives only to something else (E4).
 # r6 (after the blind review of run 38183413733) sets aside claims with no named subject (E6:
 # "The murder took place ...") and says a stated plan or target is an assertion (E7).
-PROMPT_REVISION = 6
+# r7 (after run 38185409550) checks attribution in code: a perspective's actor must be the record's
+# author or speaker, a claim from an opinion, reported speech or a speech must name its source, and
+# names in claims from a translated record are checked against the packet's English translation.
+PROMPT_REVISION = 7
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -64,6 +67,14 @@ CHINESE_YEAR_RE = re.compile("[〇零一二三四五六七八九]{4}")
 # A capitalised word in a claim must occur in a linked passage or that record's record_context.
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'\u2019-]*")
 SENTENCE_STARTERS = {"a", "an", "the", "he", "she", "it", "they", "this", "that", "in", "on", "at", "by"}
+# record_context keys that say who made a record. Run 38185409550 gave "the Viceroy", whose denial a
+# consulate letter reports, a perspective in his own voice, and stated a Permanent Secretary's
+# "important milestone" as an outcome without naming him.
+CREATOR_KEYS = ("speaker", "author", "publisher")
+# Statement kinds that are someone's words or view, so a claim drawn from them names whose.
+ATTRIBUTED_KINDS = {"opinion", "allegation", "denial", "reported_speech"}
+# Capitalised words that identify no one: a claim saying "Hong Kong" does not name its source.
+GENERIC_NAMES = {"hong", "kong", "mr", "mrs", "ms", "dr", "the", "of", "and", "h.b.m"}
 
 
 def normalise(value):
@@ -143,6 +154,11 @@ def validate_source_packet(packet):
             raise ValueError(f"source {source_id} public reuse must remain explicitly not approved")
         if len(normalise(source.get("passage"))) < 20:
             raise ValueError(f"source {source_id} has no usable inspected passage")
+        if not normalise(source["language"]).casefold().startswith("en"):
+            # Names in claims are checked against English text (run 38185409550 added "Britain"
+            # to a claim from a Chinese passage that names no agent).
+            if len(normalise(source.get("passage_en"))) < 10 or not normalise(source.get("passage_en_by")):
+                raise ValueError(f"source {source_id} is not in English: passage_en and passage_en_by are required")
         context = source.get("record_context", {})
         if not isinstance(context, dict) or not all(
                 isinstance(v, str) and normalise(v) for v in context.values()):
@@ -180,6 +196,8 @@ def build_source_first_prompt(packet):
             "passage": source["passage"],
             "record_context": source.get("record_context", {}),
         })
+        if source.get("passage_en"):
+            records[-1]["passage_en"] = source["passage_en"]
     log = [{k: entry.get(k, "") for k in ("record_family", "url", "attempted", "result", "error")}
            for entry in packet.get("access_log", [])]
     access = ("\nRECORDS TRIED BUT NOT INSPECTED (not evidence; name them in gaps where they matter)\n"
@@ -201,6 +219,9 @@ RULES
 - Attribute allegations, opinions, denials, reported speech, and retrospective summaries to their speaker/creator.
 - A catalogue title is not a passage; only the supplied inspected passages may ground record statements.
 - Title, institution, date and locator fields identify a record; they are not facts about the event. Do not move places, dates or names from them, or from the research question, into claims or perspectives.
+- passage_en is the packet's English translation of a non-English passage. Quote source_excerpt from passage; take names in claims only from passage_en, and add no agent or name that passage_en lacks.
+- A perspective's actor_or_institution is the record's own author, speaker or publisher (its institution or record_context). Someone whose words the record reports (a denial in a consular letter) is not a perspective's actor: the perspective is the reporter's, and documented_position says what it reports.
+- A claim drawn from an opinion, allegation, denial, reported speech or a speaker's words names that source in its text ("Mr CLYDESDALE opposed ...", "The Evening Post attributed ..."); code sets aside one that does not.
 - record_context states who is speaking or what the record is (for example the speaker of a debate passage). It may be used to attribute a statement, never as a fact about the event.
 - Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. If the passage says "He" or "the boycott", keep those words and add a gap rather than supplying the name.
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
@@ -327,8 +348,8 @@ def unsupported_details(sources, text):
     """Why text says more than its linked sources: hedges, years and names they do not contain.
 
     Years may come from a passage, its record_context or its source_date (the record's own
-    date); names only from a passage or record_context. Names are not checked against
-    non-English records, whose wording the model has translated.
+    date); names only from a passage or record_context, and for a non-English record from the
+    packet's English translation (passage_en). Without one, names are not checked.
     """
     passages = [s["passage"] for s in sources] + [v for s in sources for v in s.get("record_context", {}).values()]
     reasons = []
@@ -341,12 +362,64 @@ def unsupported_details(sources, text):
     extra_years = sorted(years_in(text) - known_years)
     if extra_years:
         reasons.append("year not in the linked records: " + ", ".join(extra_years))
-    if all(normalise(s["language"]).casefold().startswith("en") for s in sources):
-        known_words = set().union(*(words_in(p) for p in passages))
+    english = [s["passage"] if normalise(s["language"]).casefold().startswith("en") else s.get("passage_en")
+               for s in sources]
+    if all(english):
+        context = [v for s in sources for v in s.get("record_context", {}).values()]
+        known_words = set().union(*(words_in(p) for p in english + context))
         extra_names = sorted(n for n in names_in(text) if n.casefold() not in known_words)
         if extra_names:
             reasons.append("name not in the linked records: " + ", ".join(extra_names))
     return reasons
+
+
+def creator_names(source):
+    """Lower-cased names that identify who made a record: its institution and the speaker,
+    author or publisher in record_context, less words its passage also uses (a consulate in
+    Canton whose letter mentions Canton is not named by "Canton")."""
+    identity = " ".join([source["institution"]] + [source.get("record_context", {}).get(k, "") for k in CREATOR_KEYS])
+    in_text = words_in(source["passage"]) | words_in(source.get("passage_en"))
+    return {n.casefold() for n in names_in(identity)} - in_text - GENERIC_NAMES
+
+
+def acronyms_in(text):
+    """Initials of each run of capitalised words ("People's Republic of China" -> "prc")."""
+    found, run = set(), []
+    for word in WORD_RE.findall(str(text or "")) + ["."]:
+        if word[0].isupper():
+            run.append(word[0].casefold())
+            for i in range(len(run) - 1):
+                found.add("".join(run[i:]))
+        elif word.casefold() not in ("of", "and", "for"):
+            run = []
+    return found
+
+
+def actor_unlike_creator(sources, actor):
+    """Names in a perspective's actor that no linked record's author, speaker or publisher has."""
+    identity = " ".join(" ".join([s["institution"], s.get("title", "")]
+                                 + [s.get("record_context", {}).get(k, "") for k in CREATOR_KEYS])
+                        for s in sources)
+    known, initials = words_in(identity), acronyms_in(identity)
+    return sorted(n for n in names_in(actor) - MONTHS
+                  if n.casefold() not in known and n.casefold() not in initials)
+
+
+def needs_attribution(source, statement):
+    return statement["statement_kind"] in ATTRIBUTED_KINDS or "speaker" in source.get("record_context", {})
+
+
+def unattributed(sources, statements, text):
+    """Why a claim drawn from someone's words does not say whose they are."""
+    said = {n.casefold() for n in names_in(text)}
+    missing = []
+    for statement in statements:
+        source = sources[statement["source_id"]]
+        if needs_attribution(source, statement):
+            names = creator_names(source)
+            if names and not names & said:
+                missing.append(source["source_id"])
+    return [f"does not name whose words it reports ({', '.join(sorted(set(missing)))})"] if missing else []
 
 
 def screen_claims(packet, result):
@@ -360,6 +433,7 @@ def screen_claims(packet, result):
     for claim in result["candidate_claims"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in claim["source_statement_ids"]})]
         reasons = unsupported_details(linked, claim["text"])
+        reasons += unattributed(sources, [statements[ref] for ref in claim["source_statement_ids"]], claim["text"])
         if not names_in(claim["text"]) - MONTHS:
             reasons.append("no named subject (E6): name who or what the claim is about, or leave it as a gap")
         if reasons:
@@ -370,14 +444,17 @@ def screen_claims(packet, result):
 
 
 def screen_perspectives(packet, result):
-    """Like screen_claims, for each perspective's documented_position (the actor's name is
-    record identity and is not checked)."""
+    """Like screen_claims, for each perspective's documented_position; its actor must be the
+    author, speaker or publisher of a linked record."""
     sources = {s["source_id"]: s for s in packet["sources"]}
     statements = {normalise(s.get("statement_id")): s for s in result["record_statements"]}
     kept, rejected = [], []
     for row in result["perspectives"]:
         linked = [sources[sid] for sid in sorted({statements[ref]["source_id"] for ref in row["source_statement_ids"]})]
         reasons = unsupported_details(linked, row["documented_position"])
+        stranger = actor_unlike_creator(linked, row["actor_or_institution"])
+        if stranger:
+            reasons.append("actor is not the author, speaker or publisher of a linked record: " + ", ".join(stranger))
         if reasons:
             rejected.append({**row, "rejection_reasons": reasons})
         else:

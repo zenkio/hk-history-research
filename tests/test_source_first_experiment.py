@@ -634,3 +634,71 @@ def test_subject_of_lower_case_words_is_not_named():
     kept, rejected = source_first.screen_claims(value, result)
     assert [c["claim_id"] for c in kept] == ["C2"]
     assert rejected[0]["rejection_reasons"][-1].startswith("no named subject (E6)")
+
+
+# Revision 10: the blind review of run 38188919305.
+
+def test_attribution_required_terms_need_the_source_named_whatever_the_claim_type():
+    value = packet()
+    value["attribution_required_terms"] = ["Southern"]
+    value["sources"][0].update(institution="Heritage Office",
+                               passage="Chan Ming was shot in his classroom by agents sent by the Southern Bureau.")
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "Chan Ming was shot in his classroom"
+    result["candidate_claims"] = [
+        dict(claim("C1", "Agents sent by the Southern Bureau shot Chan Ming."), claim_type="action"),
+        dict(claim("C2", "The Heritage Office says agents sent by the Southern Bureau shot Chan Ming."), claim_type="action"),
+        dict(claim("C3", "Chan Ming was shot in his classroom."), claim_type="place")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C2", "C3"]
+    assert rejected[0]["rejection_reasons"] == ["does not name whose words it reports (hk-yearbook-2021)"]
+    assert "WORDS A CLAIM MAY USE ONLY WHEN IT NAMES ITS SOURCE: Southern" in source_first.build_source_first_prompt(value)
+    value["attribution_required_terms"] = [""]
+    try:
+        source_first.validate_source_packet(value)
+        assert False, "empty terms must fail"
+    except ValueError as exc:
+        assert "attribution_required_terms" in str(exc)
+
+
+def test_reported_group_position_belongs_to_the_group():
+    value = packet()
+    value["sources"][0].update(passage="Setting up such a fund is one of the solutions agreed.",
+                               record_context={"speaker": "Mr Alan WONG", "reported_position_of": "Members at the joint meeting of 5 May"})
+    result = valid_result()
+    result["record_statements"][0].update(source_excerpt="Setting up such a fund is one of the solutions",
+                                          statement_kind="reported_speech")
+    result["perspectives"] = [
+        {"perspective_id": "P1", "actor_or_institution": "Mr Alan WONG", "documented_position": "Setting up such a fund is one of the solutions.",
+         "source_statement_ids": ["S1"], "known_limits": "Reported."},
+        {"perspective_id": "P2", "actor_or_institution": "Members at the joint meeting, as reported by Mr Alan WONG",
+         "documented_position": "Setting up such a fund is one of the solutions.", "source_statement_ids": ["S1"], "known_limits": "Reported."}]
+    kept, rejected = source_first.screen_perspectives(value, result)
+    assert [p["perspective_id"] for p in kept] == ["P2"]
+    assert rejected[0]["rejection_reasons"] == [
+        "actor must be the group whose position the record reports: Members at the joint meeting of 5 May"]
+
+
+def test_neither_side_is_not_a_named_subject():
+    value = packet()
+    value["sources"][0]["passage"] = "Neither side accepted the Chuenpi terms, and the British and Qing envoys parted."
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "Neither side accepted the Chuenpi terms"
+    result["candidate_claims"] = [claim("C1", "Neither side accepted the Chuenpi terms."),
+                                  claim("C2", "The British and Qing envoys parted.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C2"]
+
+
+def test_access_log_becomes_gaps_written_by_code():
+    value = packet()
+    value["access_log"] = [access_entry(record_family="Foreign Relations (FRUS) documents d480 and d485",
+                                        result="inspected_not_relevant")]
+    result = valid_result()
+    result["gaps"] = ["The FRUS documents were not inspected and may be relevant.",
+                      "No supplied excerpt gives the Qing court's view."]
+    result["rejected_gaps"] = []
+    source_first.access_gaps(value, result)
+    assert result["gaps"][0] == "No supplied excerpt gives the Qing court's view."
+    assert result["gaps"][1].startswith("Inspected and not relevant: Foreign Relations (FRUS) documents d480 and d485")
+    assert result["rejected_gaps"][0]["rejection_reasons"] == ["restates the access log, which code reports as written"]

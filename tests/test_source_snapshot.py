@@ -132,3 +132,27 @@ def test_archive_copy_is_asked_for_directly_when_the_lookup_finds_none():
     assert record["wayback"]["timestamp"] == "20250101000000"
     assert record["wayback"]["sha256"] == snap.hashlib.sha256(PAGE).hexdigest()
     assert record["sources"][0]["passage_found"] is True
+
+
+def test_network_errors_are_tried_again_but_certificate_errors_are_not():
+    # Run 38188919305 lost three pages to "Network is unreachable" / "Connection refused".
+    url = "https://records.example/a"
+    tries = []
+
+    def flaky(request, timeout=None):
+        tries.append(request.full_url)
+        if len(tries) < 3:
+            raise snap.urllib.error.URLError(OSError(101, "Network is unreachable"))
+        return Response(PAGE, url)
+    assert snap.fetch(url, flaky)[2] == PAGE and len(tries) == 3
+
+    tries.clear()
+
+    def bad_certificate(request, timeout=None):
+        tries.append(request.full_url)
+        raise snap.urllib.error.URLError("[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed")
+    try:
+        snap.fetch(url, bad_certificate)
+        assert False, "a certificate error must not be retried"
+    except snap.urllib.error.URLError:
+        assert len(tries) == 1

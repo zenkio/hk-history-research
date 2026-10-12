@@ -28,7 +28,7 @@ from pathlib import Path
 USER_AGENT = "hk-history-research/2.1 (source snapshot; https://github.com/zenkio/hk-history-research)"
 WAYBACK = "https://archive.org/wayback/available?url="
 TIMEOUT = 30
-# A 429 is waited out once (Retry-After, at most this long) before the page counts as failed.
+# A transient failure waits (Retry-After for a 429, at most this long) before the next try.
 MAX_RETRY_WAIT = 60
 # Characters that differ between a page and a copied excerpt without changing the words.
 FOLD = str.maketrans({"‑": "-", "‐": "-", "–": "-", "—": "-", " ": " ",
@@ -75,21 +75,33 @@ def archived_copy_url(snapshot, url):
     return f"https://web.archive.org/web/{snapshot['timestamp']}id_/{url}"
 
 
-def fetch(url, opener=urllib.request.urlopen, retry=True):
+def transient(exc):
+    """True for a failure worth trying again: a 429 or 5xx, or a network error other than TLS."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return exc.code == 429 or exc.code >= 500
+    if isinstance(exc, urllib.error.URLError):
+        return "CERTIFICATE" not in str(exc.reason).upper()
+    return isinstance(exc, (ConnectionError, TimeoutError))
+
+
+def fetch(url, opener=urllib.request.urlopen, attempts=3):
+    """Fetch url, trying a transient failure up to attempts times. Run 38187661859 lost a page
+    to a 429 and run 38188919305 three to "Network is unreachable" and "Connection refused"."""
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with opener(request, timeout=TIMEOUT) as response:
-            return response.status, response.headers.get("Content-Type", ""), response.read(), response.geturl()
-    except urllib.error.HTTPError as exc:
-        # Run 38187661859: HistSyn answered 429 and its page had no hash (E3). Wait once.
-        if exc.code != 429 or not retry:
-            raise
+    for attempt in range(1, attempts + 1):
         try:
-            wait = int((exc.headers or {}).get("Retry-After") or 10)
-        except ValueError:
-            wait = 10
-        time.sleep(min(max(wait, 1), MAX_RETRY_WAIT))
-        return fetch(url, opener, retry=False)
+            with opener(request, timeout=TIMEOUT) as response:
+                return response.status, response.headers.get("Content-Type", ""), response.read(), response.geturl()
+        except Exception as exc:
+            if attempt == attempts or not transient(exc):
+                raise
+            wait = 5 * 3 ** (attempt - 1)
+            if isinstance(exc, urllib.error.HTTPError):
+                try:
+                    wait = int((exc.headers or {}).get("Retry-After") or wait)
+                except ValueError:
+                    pass
+            time.sleep(min(max(wait, 1), MAX_RETRY_WAIT))
 
 
 def direct_archive_copy(url, opener=urllib.request.urlopen):

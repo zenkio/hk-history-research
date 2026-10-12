@@ -19,6 +19,8 @@ import io
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -26,6 +28,8 @@ from pathlib import Path
 USER_AGENT = "hk-history-research/2.1 (source snapshot; https://github.com/zenkio/hk-history-research)"
 WAYBACK = "https://archive.org/wayback/available?url="
 TIMEOUT = 30
+# A 429 is waited out once (Retry-After, at most this long) before the page counts as failed.
+MAX_RETRY_WAIT = 60
 # Characters that differ between a page and a copied excerpt without changing the words.
 FOLD = str.maketrans({"‑": "-", "‐": "-", "–": "-", "—": "-", " ": " ",
                       "‘": "'", "’": "'", "“": '"', "”": '"'})
@@ -71,10 +75,30 @@ def archived_copy_url(snapshot, url):
     return f"https://web.archive.org/web/{snapshot['timestamp']}id_/{url}"
 
 
-def fetch(url, opener=urllib.request.urlopen):
+def fetch(url, opener=urllib.request.urlopen, retry=True):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with opener(request, timeout=TIMEOUT) as response:
-        return response.status, response.headers.get("Content-Type", ""), response.read(), response.geturl()
+    try:
+        with opener(request, timeout=TIMEOUT) as response:
+            return response.status, response.headers.get("Content-Type", ""), response.read(), response.geturl()
+    except urllib.error.HTTPError as exc:
+        # Run 38187661859: HistSyn answered 429 and its page had no hash (E3). Wait once.
+        if exc.code != 429 or not retry:
+            raise
+        try:
+            wait = int((exc.headers or {}).get("Retry-After") or 10)
+        except ValueError:
+            wait = 10
+        time.sleep(min(max(wait, 1), MAX_RETRY_WAIT))
+        return fetch(url, opener, retry=False)
+
+
+def direct_archive_copy(url, opener=urllib.request.urlopen):
+    """The archive's copy nearest today, asked for directly, when its availability API finds none
+    (run 38187661859 got no answer from it for a LegCo PDF it had found before)."""
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d")
+    _, content_type, data, final_url = fetch(f"https://web.archive.org/web/{stamp}id_/{url}", opener)
+    found = re.search(r"/web/(\d{8,14})", final_url or "")
+    return {"url": final_url, "timestamp": found.group(1) if found else None}, content_type, data
 
 
 def wayback(url, opener=urllib.request.urlopen):
@@ -114,7 +138,15 @@ def snapshot_packets(packets, opener=urllib.request.urlopen):
                 except Exception as exc:
                     record.update(status="access_failure", error=f"{type(exc).__name__}: {str(exc)[:200]}")
                 record["wayback"] = wayback(url, opener)
-                if record["status"] == "access_failure" and record["wayback"]:
+                if record["status"] == "access_failure" and not record["wayback"]:
+                    try:
+                        copy, content_type, data = direct_archive_copy(url, opener)
+                        record["wayback"] = {**copy, "sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
+                        record["_text"] = page_text(data, content_type)
+                        record["status"] = "archived_copy_only"
+                    except Exception as exc:
+                        record["archive_error"] = f"{type(exc).__name__}: {str(exc)[:200]}"
+                elif record["status"] == "access_failure" and record["wayback"]:
                     # The live page failed (an SSL error, a 429): hash the archived copy instead,
                     # so a reviewer still has a fixed copy to check the passage against.
                     try:

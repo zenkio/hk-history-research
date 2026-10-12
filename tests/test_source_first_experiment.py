@@ -46,7 +46,7 @@ def valid_result():
             "claim_id": "C1",
             # Only the passage's own words: it gives no year, and names neither "Hong Kong" nor the
             # Yearbook (screen_claims sets aside unstated years and names; attribution is added by code).
-            "text": "The island was formally occupied on 26 January after the British flag was hoisted.",
+            "text": "The British flag was hoisted on 26 January and the island was formally occupied.",
             "claim_type": "date",
             "source_statement_ids": ["S1"],
             "status": "unverified",
@@ -501,7 +501,7 @@ def test_claim_without_a_named_subject_is_set_aside():
     result["candidate_claims"] = [
         {"claim_id": "C1", "text": "The occupation took place on 26 January.", "claim_type": "date",
          "source_statement_ids": ["S1"], "status": "unverified"},
-        {"claim_id": "C2", "text": "The island was formally occupied after the British flag was hoisted.",
+        {"claim_id": "C2", "text": "The British flag was hoisted and the island was formally occupied.",
          "claim_type": "action", "source_statement_ids": ["S1"], "status": "unverified"}]
     kept, rejected = source_first.screen_claims(packet(), result)
     assert [c["claim_id"] for c in kept] == ["C2"]
@@ -602,4 +602,35 @@ def test_speakers_date_needs_no_attribution_but_a_publishers_cause_does():
         dict(claim("C3", "The Evening Star gave the boycott as the cause of the Rioting."), claim_type="cause")]
     kept, rejected = source_first.screen_claims(value, result)
     assert [c["claim_id"] for c in kept] == ["C1", "C3"]
+    assert rejected[0]["rejection_reasons"][0] == "does not name whose words it reports (hk-yearbook-2021)"
+
+
+# Revision 9: the blind review of run 38187661859 found judgements kept as plain facts when the
+# record had no named speaker, and "The murder was instigated ..." kept with no named subject.
+
+def test_interpretation_or_cause_names_its_source_whoever_made_the_record():
+    value = packet()
+    value["sources"][0].update(institution="Ministry of Foreign Affairs of the People's Republic of China",
+                               passage="The Qing court was forced to sign the Treaty in 1842 and ceded the island.")
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = "The Qing court was forced to sign the Treaty"
+    result["candidate_claims"] = [
+        dict(claim("C1", "The Qing court was forced to sign the Treaty in 1842."), claim_type="interpretation"),
+        dict(claim("C2", "The PRC Ministry of Foreign Affairs says the Qing court was forced to sign the Treaty."),
+             claim_type="interpretation"),
+        dict(claim("C3", "The Qing court signed the Treaty in 1842."), claim_type="date")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C2", "C3"]
     assert rejected[0]["rejection_reasons"] == ["does not name whose words it reports (hk-yearbook-2021)"]
+
+
+def test_subject_of_lower_case_words_is_not_named():
+    result = valid_result()
+    value = packet()
+    value["sources"][0]["passage"] = "The murder of Chan Ming was instigated by the Southern Bureau."
+    result["record_statements"][0]["source_excerpt"] = "The murder of Chan Ming was instigated"
+    result["candidate_claims"] = [claim("C1", "The murder was instigated by the Southern Bureau."),
+                                  claim("C2", "The murder of Chan Ming was instigated by the Southern Bureau.")]
+    kept, rejected = source_first.screen_claims(value, result)
+    assert [c["claim_id"] for c in kept] == ["C2"]
+    assert rejected[0]["rejection_reasons"][-1].startswith("no named subject (E6)")

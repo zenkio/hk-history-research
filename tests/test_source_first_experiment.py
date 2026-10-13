@@ -776,3 +776,18 @@ def test_output_manifest_records_the_code_commit(monkeypatch):
     monkeypatch.setenv("GITHUB_SHA", "abc123")
     out = source_first.run_source_first(packet(), FakePool([json.dumps(valid_result())]))
     assert out["manifest"]["code_commit"] == "abc123"
+
+
+def test_claim_may_take_its_subjects_name_from_record_context_and_is_flagged():
+    # Owner decision 2026-10-13: a claim needs its subject's name. Run 38193843773's Yeung claim
+    # named him although the excerpt said only "he"; it is kept, and flagged.
+    value = packet()
+    value["sources"][0]["passage"] = "He was shot dead on 10 January in his residence."
+    value["sources"][0]["record_context"] = {"subject": "Harbour Master Tam Ling"}
+    result = valid_result()
+    result["record_statements"][0]["source_excerpt"] = value["sources"][0]["passage"]
+    result["candidate_claims"][0]["text"] = "Tam Ling was shot dead in his residence."
+    kept, rejected = source_first.screen_claims(value, result)
+    assert not rejected and kept[0]["name_from_record_context"] == ["Ling", "Tam"]
+    plain, _ = source_first.screen_claims(packet(), valid_result())
+    assert "name_from_record_context" not in plain[0]

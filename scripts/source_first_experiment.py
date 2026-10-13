@@ -46,7 +46,9 @@ PROMPT_VERSION = "2.1"
 # r13 (after the blind review of run 38192662462): a gap that cites "metadata" or the record
 # context (packet notes, not the excerpt) is set aside; "describe ... differently" is asked for
 # unless the excerpts cannot both be true; each output records the code commit that made it.
-PROMPT_REVISION = 13
+# r14 (owner decision 2026-10-13: a claim needs its subject's name): a name found only in the
+# record's record_context is allowed and the kept claim is flagged name_from_record_context.
+PROMPT_REVISION = 14
 MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"}
 # Roles a run may use: the evidence routing (Nemotron first) or one comparison model of another
@@ -262,7 +264,7 @@ RULES
 - A perspective's actor_or_institution is the record's own author, speaker or publisher (its institution or record_context). Someone whose words the record reports (a denial in a consular letter) is not a perspective's actor: the perspective is the reporter's, and documented_position says what it reports.
 - A claim drawn from an opinion, allegation, denial or reported speech, and an interpretation, outcome, cause, context or other claim drawn from a record with a named speaker, author or publisher, names that source in its text ("Mr CLYDESDALE opposed ...", "The Evening Post attributed ..."); code sets aside one that does not.
 - record_context states who is speaking or what the record is (for example the speaker of a debate passage). It may be used to attribute a statement, never as a fact about the event.
-- Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. If the passage says "He" or "the boycott", keep those words and add a gap rather than supplying the name.
+- Every name, office, place and date in a claim or perspective position must appear in a linked passage or that record's record_context. A claim must name its subject: if the passage says only "he" or a title, use the name the record_context gives for the record's subject (code flags such a claim). Never supply a name from your own knowledge.
 - Each passage is a short excerpt of a longer source. When it does not mention something, say "the supplied excerpt does not state ..."; never say the source as a whole is silent.
 - Write every gap and known limit about missing information with the word "excerpt" (for example "No supplied excerpt describes ..." or "The supplied excerpt does not name ..."). Code discards a gap or limit sentence that says a record, source or document is silent without saying "excerpt".
 - Do not give an actor a nationality, office or affiliation that the passage attaches only to something else (a "naval landing party hoisted the British flag" does not say the party was British).
@@ -504,8 +506,21 @@ def screen_claims(packet, result):
         if reasons:
             rejected.append({**claim, "rejection_reasons": reasons})
         else:
-            kept.append(claim)
+            from_notes = names_from_context_only(linked, claim["text"])
+            kept.append({**claim, "name_from_record_context": from_notes} if from_notes else claim)
     return kept, rejected
+
+
+def names_from_context_only(sources, text):
+    """Names in text found in a linked record's record_context but in none of its passages, so a
+    reader knows the record itself did not name them (owner decision 2026-10-13)."""
+    english = [s["passage"] if normalise(s["language"]).casefold().startswith("en") else s.get("passage_en")
+               for s in sources]
+    in_passages = set().union(*(words_in(p) for p in english if p))
+    return sorted(n for n in names_in(text)
+                  if n.casefold() not in in_passages and n not in MONTHS
+                  and any(n.casefold() in words_in(v) for src in sources
+                          for v in src.get("record_context", {}).values()))
 
 
 def screen_perspectives(packet, result):

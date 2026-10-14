@@ -134,3 +134,23 @@ def test_workflow_offers_the_extract_mode_with_private_output():
     assert on["workflow_dispatch"]["inputs"]["mode"]["options"] == ["score", "extract"]
     assert 'scripts/extract_records.py --model' in text
     assert '--output "$PRIVATE_OUTPUT/records.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1' in text
+
+
+def test_a_topic_whose_question_names_no_year_takes_the_era_of_its_earliest_dated_fact():
+    # Run 38639138642: undated Yeung facts got no era, so two records disagreeing on the place
+    # were never compared.
+    packet = {"event_question": "What do records establish about the harbour office opening?", "sources": [
+        source("a", "On 3 March 1850 the harbour office opened."),
+        source("b", "The harbour office opened.", institution="Example Gazette",
+               source_type="official_retrospective", source_date="2021")]}  # its date is not the event's
+    topic = er.run(fake_model(["3", "3"]), [("p.json", packet)])[0]
+    assert [f["year"] for f in topic["facts"]] == [1850, None]
+    assert [f["era"] for f in topic["facts"]] == [["06-early-colony"], ["06-early-colony"]]
+    assert len(topic["unsure_links"]) + len(topic["links"]) == 0  # the pair was asked: "different event"
+    assert len(er.candidate_pairs(topic["facts"])) == 1
+
+
+def test_the_link_question_says_a_more_precise_date_is_the_same_fact():
+    # Run 38639138642 marked "in 1901" against "on 10 January 1901" as a conflict.
+    same, differ = er.LINK_CHOICES[0][1], er.LINK_CHOICES[1][1]
+    assert "more precise" in same and "contradict" in differ

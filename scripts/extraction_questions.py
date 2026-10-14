@@ -44,8 +44,8 @@ Leave a line empty after the colon when the sentence does not say it.
 
 For each fact write these 7 lines:
 FACT
-subject: who or what does the action or has it done to them; empty if the sentence leaves it out
-action: what happened or was done (the verb and its object; leave out "not")
+subject: who or what does the action or has it done to them; empty if the sentence leaves it out; never "which" or "that": copy the words they stand for
+action: what happened or was done (the verb and its object; leave out "not"); after "is" or "was", keep what follows it
 agent: who did it, only when the sentence names someone other than the subject
 when: the date or time the sentence gives for this fact
 where: the place the sentence gives for this fact

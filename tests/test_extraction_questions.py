@@ -300,3 +300,10 @@ def test_phrase_ends_pass_by_overlap_but_dates_and_places_must_be_exact():
         return GOOD_FACT.replace("where: Pier Head", "where: Head") if prompt.startswith("Copy facts") \
             else perfect_model(prompt)
     assert not sem.score_model(wrong_place, KEY, {"s1": RECORD})["steps_passed"]["B_facts"]
+
+
+def test_the_facts_prompt_keeps_what_follows_was_and_rejects_relative_pronouns_as_subjects():
+    # Run 38639138642: "The remote cause of the rioting was the famous ... case" became the action
+    # "was", and "the boycott which followed" the subject "which".
+    assert 'after "is" or "was", keep what follows it' in eq.FACTS_PROMPT
+    assert 'never "which" or "that"' in eq.FACTS_PROMPT

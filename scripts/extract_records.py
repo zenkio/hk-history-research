@@ -29,8 +29,9 @@ APPROVED = "approved_for_internal_research"
 OFFICIAL_WORDS = ("official", "legislative", "archival")
 
 LINK_CHOICES = (
-    ("same_fact", "They state the same fact"),
-    ("different_detail", "They describe the same event but differ on a detail (when, where, who or what)"),
+    # Run 38639138642 marked "in 1901" against "on 10 January 1901" as a conflict.
+    ("same_fact", "They state the same fact (one may be more precise, such as a full date where the other gives the year)"),
+    ("different_detail", "They describe the same event but contradict each other on a detail (a different date, place, person or action)"),
     ("different_event", "They are about different steps or events of the same story"),
     ("unrelated", "They are unrelated"),
 )
@@ -89,6 +90,14 @@ def extract_topic(ask, packet):
                     label=claim_label(record), sentence=sentence, year=year, era=fx.eras_of(year, era),
                     angle=answer["angle"], tags=answer["tags"], log=answer["log"],
                     statement=fx.write_statement(sentence, fact, record)))
+    if era is None:
+        # Run 38639138642: the Yeung question names no year, so undated facts got no era and the
+        # classroom / residence conflict was never asked. The topic's earliest dated fact sets it.
+        years = [f["year"] for f in facts if f["year"] is not None]
+        era = (fx.eras_of(min(years)) or [None])[0] if years else None
+        for fact in facts:
+            if not fact["era"] and era:
+                fact["era"] = [era]
     return facts, skipped
 
 

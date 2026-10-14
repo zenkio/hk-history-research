@@ -3,15 +3,16 @@ name: V2.2 model scoring on the answer key
 # Explicit dispatch only; never part of the scheduled pipeline. mode=score: each listed model
 # answers the single V2.2 questions for every sentence of the private answer key and is scored step
 # by step. mode=extract: the first listed model extracts and links facts from the approved packets.
+# mode=links: each listed model links the answer key's facts and is scored on the private link key.
 # Sentences, answers and scores are saved only to a private experiment branch of the data repository.
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: score = models against the answer key; extract = end to end on the packets with the first model
+        description: score = models against the answer key; extract = end to end on the packets with the first model; links = linking against the link key
         required: true
         type: choice
-        options: [score, extract]
+        options: [score, extract, links]
         default: score
       models:
         description: Comma-separated model names from the fact_extraction_trial routing role
@@ -94,6 +95,13 @@ jobs:
             python3 -u scripts/extract_records.py --model "$(cut -d, -f1 <<<"$MODELS" | xargs)" \
               --packets experiments/v2-1/source-packets \
               --output "$PRIVATE_OUTPUT/records.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+          elif [[ "$MODE" == links ]]; then
+            python3 -u scripts/score_links.py --minutes 100 \
+              --key experiments/v2-2/answer-key.json \
+              --link-key experiments/v2-2/link-key.json \
+              --packets experiments/v2-1/source-packets \
+              --models "$MODELS" \
+              --output "$PRIVATE_OUTPUT/links.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
           else
             # --minutes stays well under the job timeout, so scores are saved (run 38531845034 kept none).
             python3 -u scripts/score_extraction_models.py --minutes 100 \

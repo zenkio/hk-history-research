@@ -96,6 +96,28 @@ class OutOfTime(Exception):
     """The run's time budget is spent; the sentences done so far are scored."""
 
 
+def trial_ask(pool, name, deadline, calls, rests):
+    """ask(prompt) forced onto one model: a busy model is rested and asked again (TRIAL_RESTS);
+    OutOfTime when a rest would pass the deadline. calls and rests are lists the caller counts."""
+    from gemini_pool import QuotaExhausted
+
+    def ask(prompt):
+        while True:
+            calls.append(1)
+            try:
+                return pool.generate_text(ROLE, prompt, str, only=[name])[0]
+            except QuotaExhausted:
+                if len(rests) >= TRIAL_RESTS or pool.remaining(name, ROLE) == 0:
+                    raise
+                if deadline is not None and time.time() + REST_SECONDS >= deadline:
+                    raise OutOfTime() from None
+                rests.append(1)
+                print(f"{name} | busy; resting {REST_SECONDS}s ({len(rests)}/{TRIAL_RESTS})")
+                time.sleep(REST_SECONDS)
+                pool.cooldown.pop(name, None)
+    return ask
+
+
 def score_model(ask, key, records, limit=None, stop_on=(), deadline=None):
     """Run steps B-E with one model on every key sentence; returns the model's result entry. An
     exception in stop_on (the model's budget ran out) or the deadline (time.time()) ends the run;
@@ -150,25 +172,8 @@ def main(argv=None):
         else:
             if pool.models[name].get("provider") == "openrouter":
                 pool.models[name]["rpd"] = max(pool.models[name]["rpd"], TRIAL_RPD)
-            calls = []
-
-            rests = []
-
-            def ask(prompt, name=name, calls=calls, rests=rests):
-                while True:
-                    calls.append(1)
-                    try:
-                        return pool.generate_text(ROLE, prompt, str, only=[name])[0]
-                    except QuotaExhausted:
-                        if len(rests) >= TRIAL_RESTS or pool.remaining(name, ROLE) == 0:
-                            raise
-                        if deadline is not None and time.time() + REST_SECONDS >= deadline:
-                            raise OutOfTime() from None
-                        rests.append(1)
-                        print(f"{name} | busy; resting {REST_SECONDS}s ({len(rests)}/{TRIAL_RESTS})")
-                        time.sleep(REST_SECONDS)
-                        pool.cooldown.pop(name, None)
-
+            calls, rests = [], []
+            ask = trial_ask(pool, name, deadline, calls, rests)
             entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,),
                                      deadline=deadline))
             entry["calls"] = len(calls)

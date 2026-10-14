@@ -10,7 +10,7 @@ on:
         description: Comma-separated model names from the fact_extraction_trial routing role
         required: true
         type: string
-        default: Gemma 4 31B, Gemini 3.1 Flash Lite, Gemini 3.5 Flash Lite, OpenRouter Large, OpenRouter Medium, OpenRouter Compare
+        default: OpenRouter Large, OpenRouter Medium, Gemma 4 31B, Gemini 3.1 Flash Lite, Gemini 3.5 Flash Lite, OpenRouter Compare
       limit:
         description: Score only the first N sentences of the key (0 = all)
         required: true
@@ -28,7 +28,7 @@ concurrency:
 jobs:
   score:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - name: Check out private research data
         uses: actions/checkout@v7
@@ -82,7 +82,8 @@ jobs:
             limit_args=(--limit "${BASH_REMATCH[1]}")
           fi
           failed=0
-          python3 scripts/score_extraction_models.py \
+          # --minutes stays well under the job timeout, so scores are saved (run 38531845034 kept none).
+          python3 -u scripts/score_extraction_models.py --minutes 100 \
             --key experiments/v2-2/answer-key.json \
             --packets experiments/v2-1/source-packets \
             --models "$MODELS" "${limit_args[@]}" \

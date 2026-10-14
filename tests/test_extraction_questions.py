@@ -286,3 +286,17 @@ def test_scores_are_saved_after_each_model_and_the_time_budget_stops_the_run(tmp
     a, b = json.loads(out.read_text())["results"]
     assert a["sentences_done"] == 2 and not a["stopped"]  # 100 s of the 90 s budget: the last sentence finishes
     assert b["sentences_done"] == 0 and b["stopped"] == "stopped after 0 sentences: OutOfTime"
+
+
+def test_phrase_ends_pass_by_overlap_but_dates_and_places_must_be_exact():
+    # Run 38539796609: Nemotron Ultra's subject, action and agent misses were all phrase ends
+    # ("claimed possession" / "claimed possession of Hong Kong Island").
+    def short_action(prompt):
+        return GOOD_FACT.replace("action: was opened", "action: opened") if prompt.startswith("Copy facts") \
+            else perfect_model(prompt)
+    assert sem.score_model(short_action, KEY, {"s1": RECORD})["steps_passed"]["B_facts"]
+
+    def wrong_place(prompt):
+        return GOOD_FACT.replace("where: Pier Head", "where: Head") if prompt.startswith("Copy facts") \
+            else perfect_model(prompt)
+    assert not sem.score_model(wrong_place, KEY, {"s1": RECORD})["steps_passed"]["B_facts"]

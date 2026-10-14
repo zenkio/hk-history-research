@@ -13,6 +13,7 @@ the private experiment branch, and the printed lines carry only model names and 
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 
 import fact_extraction as fx
@@ -26,6 +27,9 @@ STEPS = {
     "D_angle": (("view_of", "stance"), CHOICE_BAR),
     "E_tags": (("tags",), SPAN_BAR),
 }
+# A free model whose provider is busy (429s) is rested and asked again, at most this many times
+# per model (run 38525325652: Gemma on OpenRouter gave up after its first call).
+TRIAL_RESTS, REST_SECONDS = 3, 300
 # The experiment's own budget: the per-entry OpenRouter limit (50) splits the account's day between
 # pipeline roles; the pipeline is in maintenance mode, and the account-wide limit still applies.
 TRIAL_RPD = 1000
@@ -133,9 +137,20 @@ def main(argv=None):
                 pool.models[name]["rpd"] = max(pool.models[name]["rpd"], TRIAL_RPD)
             calls = []
 
-            def ask(prompt, name=name, calls=calls):
-                calls.append(1)
-                return pool.generate_text(ROLE, prompt, str, only=[name])[0]
+            rests = []
+
+            def ask(prompt, name=name, calls=calls, rests=rests):
+                while True:
+                    calls.append(1)
+                    try:
+                        return pool.generate_text(ROLE, prompt, str, only=[name])[0]
+                    except QuotaExhausted:
+                        if len(rests) >= TRIAL_RESTS or pool.remaining(name, ROLE) == 0:
+                            raise
+                        rests.append(1)
+                        print(f"{name} | busy; resting {REST_SECONDS}s ({len(rests)}/{TRIAL_RESTS})")
+                        time.sleep(REST_SECONDS)
+                        pool.cooldown.pop(name, None)
 
             entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,)))
             entry["calls"] = len(calls)

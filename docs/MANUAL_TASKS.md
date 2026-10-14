@@ -26,6 +26,15 @@ This file is the durable hand-off ledger for actions that genuinely require the 
 - **Resume when:** The owner decides the intended funding model and confirms the permitted-use response, or provides non-sensitive confirmation that access/terms are resolved. Store any secret only in the appropriate private secret store, never in repository files or this public ledger.
 - **Status/evidence (2026-10-10):** Owner has not replied to Trove; monetisation remains undecided. No API key or permission has been verified. Continue independent P1 work and metadata-only discovery where permitted.
 
+### [OPEN] Optional: a working Gemini API key for Flash Lite scoring
+
+- **Why human interaction is required:** API keys are created in Google AI Studio under the owner's account and stored as repository secrets by the owner.
+- **Blocks:** Only scoring Gemini Flash Lite on the V2.2 extraction steps. The 2026-10-14 scoring run found no `GEMINI_API_KEY` secret, so every Google model was skipped. Gemma 4 is still scored through OpenRouter's free copy, and Nemotron needs no Google key.
+- **Owner decision/action:** Decide whether Flash Lite should be a candidate. If yes, create a free-tier key in AI Studio and save it as the `GEMINI_API_KEY` secret of this repository (Settings > Secrets and variables > Actions).
+- **Agent recommendation:** Skip it unless Gemma and Nemotron both fail a step; Google rejected the previous key on 2026-09-30.
+- **Resume when:** The secret exists; the next scoring run logs Google models as available.
+- **Status/evidence (2026-10-14):** Scoring run log: "Google models off for this run: no GEMINI_API_KEY".
+
 ## Task template
 
 Copy this block for each new item:

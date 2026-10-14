@@ -77,9 +77,12 @@ def test_choices_must_be_a_number_on_the_list():
 def test_whose_view_lists_the_record_voices_and_accepts_a_name_copied_from_the_sentence():
     record = dict(RECORD, record_context={"speaker": "Mr LEE (attendance list: LEE Tak), member of the Council",
                                           "reported_position_of": "Members at the meeting"})
-    assert eq.voices(record) == ["Example Harbour Department", "Mr LEE", "Members at the meeting"]
+    assert [name for name, _ in eq.voices(record)] == ["Example Harbour Department", "Mr LEE", "Members at the meeting"]
     log = []
-    assert eq.ask_view(scripted("2"), SENTENCE, record, log) == "Mr LEE"
+    ask = scripted("2")
+    assert eq.ask_view(ask, SENTENCE, record, log) == "Mr LEE"
+    # Run 38525325652: without roles, a speech was given to the institution that published it.
+    assert "2. Mr LEE (the speaker)" in ask.prompts[0] and "3. Members at the meeting (whose position" in ask.prompts[0]
     assert eq.ask_view(scripted('4: "the Harbour Master"'), SENTENCE, record, log) == "the Harbour Master"
     assert eq.ask_view(scripted("4: the Governor", "4: Governor"), SENTENCE, record, log) == ""
     assert log[-1] == {"step": "view_of", "dropped": "no usable answer"}
@@ -198,3 +201,51 @@ def test_scoring_workflow_is_dispatch_only_private_and_never_overlaps_other_expe
     assert set(defaults) <= set(cfg["routing"][sem.ROLE])
     assert '>"$PRIVATE_OUTPUT/diagnostics.log" 2>&1' in text  # replies never reach the public run log
     assert "experiment/v2-2-model-scores-" in text
+
+
+def test_a_label_left_empty_and_run_into_the_next_one_is_not_read_as_a_tag():
+    # Run 38525325652: the reply line "people: groups:" became the people tag "groups:".
+    assert eq.parse_tags("people: groups:\nplaces: Pier Head") == {
+        "people": [], "groups": [], "places": ["Pier Head"], "things": []}
+
+
+def test_the_facts_prompt_shows_a_subjectless_fragment_and_keeps_dates_to_their_own_clause():
+    # Run 38525325652: fragments such as "shot dead in his residence" got no fact at all, and a date
+    # from one clause was copied into the other clause's fact.
+    text = eq.FACTS_PROMPT
+    assert "Sentence: closed by the governor in 1903" in text and "subject:\naction: closed" in text
+    assert "only the date and place written in its own part of the sentence" in text
+
+
+def test_a_busy_model_is_rested_and_asked_again_a_limited_number_of_times(tmp_path, monkeypatch):
+    import gemini_pool
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    (packets / "topic.json").write_text(json.dumps({"sources": [RECORD]}))
+    (tmp_path / "key.json").write_text(json.dumps(KEY))
+    failures = {"Model A": 2, "Model B": 99}
+    slept = []
+    monkeypatch.setattr(sem.time, "sleep", slept.append)
+
+    class FakePool:
+        routing = {sem.ROLE: ["Model A", "Model B"]}
+        models = {"Model A": {"api_id": "a"}, "Model B": {"api_id": "b"}}
+        cooldown = {}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            if failures[only[0]]:
+                failures[only[0]] -= 1
+                raise gemini_pool.QuotaExhausted("busy")
+            return parse(perfect_model(prompt)), only[0], []
+
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    out = tmp_path / "scores.json"
+    assert sem.main(["--key", str(tmp_path / "key.json"), "--packets", str(packets),
+                     "--models", "Model A,Model B", "--output", str(out)]) == 0
+    a, b = json.loads(out.read_text())["results"]
+    assert a["sentences_done"] == 1 and a["steps_passed"]["B_facts"]
+    assert b["sentences_done"] == 0 and b["stopped"].startswith("stopped after 0 sentences")
+    assert slept == [sem.REST_SECONDS] * (2 + sem.TRIAL_RESTS)

@@ -130,25 +130,40 @@ def _same_span(got, expected):
     return normalise_span(got) == normalise_span(expected)
 
 
+def _near_span(got, expected):
+    """Equal, or one span inside the other; both empty counts, one empty does not."""
+    a, b = normalise_span(got), normalise_span(expected)
+    return a == b or bool(a and b and (a in b or b in a))
+
+
 def score(answers, key):
     """Score model answers against the answer key, field by field.
 
     answers: {source_id: {"facts": [...], "angle": {...}, "tags": {...}}}. Each expected fact is
-    matched to the answer fact with the same action (normalised), else counted as missed.
-    Returns {field: [correct, total]} plus "invented_spans" (spans not in the sentence).
+    matched to an unused answer fact with the same action (normalised), else one whose action
+    contains the expected one or lies inside it ("was opened" / "opened"), else counted as missed.
+    Returns {field: [correct, total]} plus "invented_spans" (spans not in the sentence) and, for
+    each slot, "near_<slot>": [exact or one span inside the other, total], which shows how many
+    misses are only a different span boundary.
     """
-    totals = {k: [0, 0] for k in SLOTS + ("negated", "kind", "facts_found", "view_of", "stance", "tags")}
+    totals = {k: [0, 0] for k in SLOTS + ("negated", "kind", "facts_found", "view_of", "stance", "tags")
+              + tuple(f"near_{slot}" for slot in SLOTS)}
     invented = 0
     for row in key["sentences"]:
         got = answers.get(row["source_id"], {})
         for fact in got.get("facts", []):
             invented += len(span_errors(fact, row["sentence"]))
         invented += len(span_errors({"tags": got.get("tags", {})}, row["sentence"]))
+        unused = list(got.get("facts", []))
         for want in row["facts"]:
             totals["facts_found"][1] += 1
-            match = next((f for f in got.get("facts", []) if _same_span(f.get("action"), want["action"])), None)
+            match = (next((f for f in unused if _same_span(f.get("action"), want["action"])), None)
+                     or next((f for f in unused if _near_span(f.get("action"), want["action"])), None))
+            if match:
+                unused.remove(match)
             for slot in SLOTS:
                 totals[slot][1] += 1
+                totals[f"near_{slot}"][1] += 1
             totals["negated"][1] += 1
             totals["kind"][1] += 1
             if not match:
@@ -156,6 +171,7 @@ def score(answers, key):
             totals["facts_found"][0] += 1
             for slot in SLOTS:
                 totals[slot][0] += _same_span(match.get(slot), want[slot])
+                totals[f"near_{slot}"][0] += _near_span(match.get(slot), want[slot])
             totals["negated"][0] += bool(match.get("negated")) == want["negated"]
             totals["kind"][0] += match.get("kind") in want["kind"]
         angle = got.get("angle", {})

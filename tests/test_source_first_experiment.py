@@ -453,7 +453,7 @@ def test_comparison_model_is_another_family_and_only_for_the_experiment():
     assert names.index("OpenRouter Compare") > names.index("OpenRouter Medium") > names.index("OpenRouter Large")
     users = [role for role, models in cfg["routing"].items()
              if not role.startswith("_") and "OpenRouter Compare" in models]
-    assert users == ["source_first_compare"]
+    assert users == ["source_first_compare", "fact_extraction_trial"]  # both experiment-only roles
     for role in source_first.MODEL_ROLES:
         assert role in cfg["routing"]
 

@@ -249,3 +249,40 @@ def test_a_busy_model_is_rested_and_asked_again_a_limited_number_of_times(tmp_pa
     assert a["sentences_done"] == 1 and a["steps_passed"]["B_facts"]
     assert b["sentences_done"] == 0 and b["stopped"].startswith("stopped after 0 sentences")
     assert slept == [sem.REST_SECONDS] * (2 + sem.TRIAL_RESTS)
+
+
+def test_scores_are_saved_after_each_model_and_the_time_budget_stops_the_run(tmp_path, monkeypatch):
+    # Run 38531845034 hit the job's timeout with every score held until the end, and saved nothing.
+    import gemini_pool
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    (packets / "topic.json").write_text(json.dumps({"sources": [RECORD]}))
+    (tmp_path / "key.json").write_text(json.dumps({"sentences": KEY["sentences"] * 2}))
+    clock = [0.0]
+    monkeypatch.setattr(sem.time, "time", lambda: clock[0])
+
+    class FakePool:
+        routing = {sem.ROLE: ["Model A", "Model B", "Model C"]}
+        models = {"Model A": {"api_id": "a"}, "Model B": {"api_id": "b"}, "Model C": {"api_id": "c"}}
+        cooldown = {}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            if only[0] == "Model C":
+                raise RuntimeError("runner lost")
+            clock[0] += 10  # each question takes 10 s: one sentence is 50 s
+            return parse(perfect_model(prompt)), only[0], []
+
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    out = tmp_path / "scores.json"
+    args = ["--key", str(tmp_path / "key.json"), "--packets", str(packets), "--output", str(out)]
+    with pytest.raises(RuntimeError):
+        sem.main(args + ["--models", "Model A,Model C"])
+    assert [r["model"] for r in json.loads(out.read_text())["results"]] == ["Model A"]
+    clock[0] = 0.0
+    sem.main(args + ["--minutes", "1.5", "--models", "Model A,Model B"])
+    a, b = json.loads(out.read_text())["results"]
+    assert a["sentences_done"] == 2 and not a["stopped"]  # 100 s of the 90 s budget: the last sentence finishes
+    assert b["sentences_done"] == 0 and b["stopped"] == "stopped after 0 sentences: OutOfTime"

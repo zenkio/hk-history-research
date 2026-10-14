@@ -88,15 +88,23 @@ def era_score(answers, key):
     return [right, total]
 
 
-def score_model(ask, key, records, limit=None, stop_on=()):
+class OutOfTime(Exception):
+    """The run's time budget is spent; the sentences done so far are scored."""
+
+
+def score_model(ask, key, records, limit=None, stop_on=(), deadline=None):
     """Run steps B-E with one model on every key sentence; returns the model's result entry. An
-    exception in stop_on (the model's budget ran out) ends the run; the sentences done are scored."""
+    exception in stop_on (the model's budget ran out) or the deadline (time.time()) ends the run;
+    the sentences done are scored."""
     answers, done, stopped = {}, 0, ""
     for row in key["sentences"][:limit]:
+        if deadline is not None and time.time() >= deadline:
+            stopped = f"stopped after {done} sentences: {OutOfTime.__name__}"
+            break
         record = records[row["source_id"]]
         try:
             answer = extract_sentence(ask, row["sentence"], record)
-        except stop_on as exc:
+        except (OutOfTime,) + tuple(stop_on) as exc:
             stopped = f"stopped after {done} sentences: {type(exc).__name__}"
             break
         answers[row["source_id"]] = finish(answer, row, record)
@@ -115,6 +123,8 @@ def main(argv=None):
     parser.add_argument("--models", required=True, help="comma-separated display names from models.json")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None, help="score only the first N sentences")
+    parser.add_argument("--minutes", type=float, default=None,
+                        help="stop asking after this many minutes (keep it under the job's timeout)")
     args = parser.parse_args(argv)
 
     from gemini_pool import ModelPool, QuotaExhausted
@@ -125,6 +135,7 @@ def main(argv=None):
         print(f"answer key names {len(missing)} source ids no packet has; stopping", file=sys.stderr)
         return 2
     pool = ModelPool()
+    deadline = time.time() + args.minutes * 60 if args.minutes else None
     results = []
     for name in [m.strip() for m in args.models.split(",") if m.strip()]:
         entry = {"model": name}
@@ -147,25 +158,34 @@ def main(argv=None):
                     except QuotaExhausted:
                         if len(rests) >= TRIAL_RESTS or pool.remaining(name, ROLE) == 0:
                             raise
+                        if deadline is not None and time.time() + REST_SECONDS >= deadline:
+                            raise OutOfTime() from None
                         rests.append(1)
                         print(f"{name} | busy; resting {REST_SECONDS}s ({len(rests)}/{TRIAL_RESTS})")
                         time.sleep(REST_SECONDS)
                         pool.cooldown.pop(name, None)
 
-            entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,)))
+            entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,),
+                                     deadline=deadline))
             entry["calls"] = len(calls)
             entry["api_id"] = pool.models[name].get("api_id")
         results.append(entry)
         passed = entry.get("steps_passed")
         print(f"{name} | " + (", ".join(f"{s} {'pass' if ok else 'fail'}" for s, ok in passed.items())
-                             if passed else entry.get("error", "")))
-    with args.output.open("x", encoding="utf-8") as handle:
-        json.dump({"purpose": "v2.2 model scoring on the answer key; experiment only, no live records changed",
-                   "answer_key_sentences": len(key["sentences"][:args.limit]),
-                   "bars": {"spans": SPAN_BAR, "choices": CHOICE_BAR, "invented_spans": 0},
-                   "results": results}, handle, ensure_ascii=False, indent=2)
-        handle.write("\n")
+                             if passed else entry.get("error", "")), flush=True)
+        # Saved after every model: run 38531845034 hit the job timeout and kept nothing.
+        save(args.output, key, args.limit, results)
     return 0
+
+
+def save(path, key, limit, results):
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps({
+        "purpose": "v2.2 model scoring on the answer key; experiment only, no live records changed",
+        "answer_key_sentences": len(key["sentences"][:limit]),
+        "bars": {"spans": SPAN_BAR, "choices": CHOICE_BAR, "invented_spans": 0},
+        "results": results}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(path)
 
 
 if __name__ == "__main__":

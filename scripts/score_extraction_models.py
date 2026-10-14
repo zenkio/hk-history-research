@@ -21,11 +21,15 @@ from extraction_questions import extract_sentence
 
 ROLE = "fact_extraction_trial"
 SPAN_BAR, CHOICE_BAR = 0.95, 0.90
+# Who, what and by whom are judged by overlap: the stored statement quotes the record word for
+# word, so where a copied phrase ends does not change what is stored (run 38539796609: Nemotron
+# Ultra's misses there were all phrase ends). Dates and places stay exact: they place a fact in an
+# era and link it to other records. Tags are judged by overlap for the same reason.
 STEPS = {
-    "B_facts": (("facts_found", "subject", "action", "agent", "when", "where", "negated"), SPAN_BAR),
+    "B_facts": (("facts_found", "near_subject", "near_action", "near_agent", "when", "where", "negated"), SPAN_BAR),
     "C_kind": (("kind",), CHOICE_BAR),
     "D_angle": (("view_of", "stance"), CHOICE_BAR),
-    "E_tags": (("tags",), SPAN_BAR),
+    "E_tags": (("near_tags",), SPAN_BAR),
 }
 # A free model whose provider is busy (429s) is rested and asked again, at most this many times
 # per model (run 38525325652: Gemma on OpenRouter gave up after its first call).

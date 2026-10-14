@@ -89,5 +89,23 @@ def test_score_matches_a_fact_by_overlapping_action_and_reports_near_spans():
     answers = {"s1": {"facts": [{"subject": "harbour office", "action": "opened", "agent": "",
                                  "when": "On 3 March 1850", "where": "Pier Head", "kind": "event"}]}}
     result = fx.score(answers, key)
-    assert result["facts_found"] == [1, 2] and result["action"] == [0, 2] and result["near_action"] == [1, 2]
-    assert result["when"] == [1, 2]  # a leading "On" is ignored
+    assert result["facts_found"] == [1, 2] and result["action"] == [0, 1] and result["near_action"] == [1, 1]
+    assert result["when"] == [1, 1]  # a leading "On" is ignored
+
+
+def test_a_missed_fact_counts_once_under_facts_found_not_again_as_a_wrong_kind_or_slot():
+    # Run 38525325652: Nemotron's kinds were all right, but each fact it missed also counted as a
+    # wrong kind and wrong slots, so step C failed for step B's misses.
+    key = {"sentences": [{
+        "source_id": "s1", "sentence": SENTENCE,
+        "facts": [{"subject": "the harbour office", "action": "was opened", "agent": "", "when": "", "where": "",
+                   "negated": False, "kind": ["event"]},
+                  {"subject": "", "action": "by the Harbour Master", "agent": "", "when": "", "where": "",
+                   "negated": False, "kind": ["event"]}],
+        "angle": {"view_of": "x", "stance": ["neutral"]},
+        "tags": {"people": ["Harbour Master"], "groups": [], "places": [], "things": []}}]}
+    answers = {"s1": {"facts": [{"subject": "the harbour office", "action": "was opened", "kind": "event"}],
+                      "tags": {"people": ["the Harbour Master"], "places": ["Pier"]}}}
+    result = fx.score(answers, key)
+    assert result["facts_found"] == [1, 2] and result["kind"] == [1, 1] and result["subject"] == [1, 1]
+    assert result["tags"] == [1, 2] and result["near_tags"] == [1, 2]  # "Pier" is near nothing in the key

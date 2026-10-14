@@ -143,11 +143,12 @@ def score(answers, key):
     matched to an unused answer fact with the same action (normalised), else one whose action
     contains the expected one or lies inside it ("was opened" / "opened"), else counted as missed.
     Returns {field: [correct, total]} plus "invented_spans" (spans not in the sentence) and, for
-    each slot, "near_<slot>": [exact or one span inside the other, total], which shows how many
-    misses are only a different span boundary.
+    each slot and for tags, "near_<field>": [exact or one span inside the other, total], which
+    shows how many misses are only a different span boundary. Slots, negated and kind are counted
+    over the facts found only; a missed fact counts under facts_found.
     """
     totals = {k: [0, 0] for k in SLOTS + ("negated", "kind", "facts_found", "view_of", "stance", "tags")
-              + tuple(f"near_{slot}" for slot in SLOTS)}
+              + tuple(f"near_{slot}" for slot in SLOTS) + ("near_tags",)}
     invented = 0
     for row in key["sentences"]:
         got = answers.get(row["source_id"], {})
@@ -159,16 +160,18 @@ def score(answers, key):
             totals["facts_found"][1] += 1
             match = (next((f for f in unused if _same_span(f.get("action"), want["action"])), None)
                      or next((f for f in unused if _near_span(f.get("action"), want["action"])), None))
-            if match:
-                unused.remove(match)
+            if not match:
+                continue
+            unused.remove(match)
+            totals["facts_found"][0] += 1
+            # Slots and kind are judged on the facts the model found; a missed fact counts once,
+            # under facts_found (run 38525325652 failed C on Nemotron, whose kinds were all right,
+            # because each missed fact also counted as a wrong kind).
             for slot in SLOTS:
                 totals[slot][1] += 1
                 totals[f"near_{slot}"][1] += 1
             totals["negated"][1] += 1
             totals["kind"][1] += 1
-            if not match:
-                continue
-            totals["facts_found"][0] += 1
             for slot in SLOTS:
                 totals[slot][0] += _same_span(match.get(slot), want[slot])
                 totals[f"near_{slot}"][0] += _near_span(match.get(slot), want[slot])
@@ -184,5 +187,9 @@ def score(answers, key):
             have = {normalise_span(t) for t in got.get("tags", {}).get(kind, [])}
             totals["tags"][1] += len(want | have)
             totals["tags"][0] += len(want & have)
+            # near: a tag that only adds or drops words ("Tatsu Maru case" / "Tatsu Maru") still links.
+            near = sum(any(_near_span(h, w) for h in have) for w in want)
+            totals["near_tags"][1] += len(want) + sum(not any(_near_span(h, w) for w in want) for h in have)
+            totals["near_tags"][0] += near
     totals["invented_spans"] = invented
     return totals

@@ -19,7 +19,8 @@ from fact_extraction import KINDS, SLOTS, STANCES, TAG_KINDS, span_errors
 
 MAX_FACTS = 3
 # Record-note fields that name whose words a record gives (speaker of a debate, author of a letter).
-VOICE_FIELDS = ("speaker", "author", "publisher", "reported_position_of")
+VOICE_FIELDS = {"speaker": "the speaker", "author": "the author", "publisher": "the publisher",
+                "reported_position_of": "whose position the record reports"}
 SOMEONE_ELSE = "someone else named in the sentence"
 
 KIND_LABELS = {
@@ -43,14 +44,17 @@ Leave a line empty after the colon when the sentence does not say it.
 
 For each fact write these 7 lines:
 FACT
-subject: who or what the fact is about
+subject: who or what does the action or has it done to them; empty if the sentence leaves it out
 action: what happened or was done (the verb and its object; leave out "not")
 agent: who did it, only when the sentence names someone other than the subject
 when: the date or time the sentence gives for this fact
 where: the place the sentence gives for this fact
 not_happened: yes if the sentence says it did not happen, otherwise no
 
-Write at most 3 facts. If the sentence states no fact, write only: NONE
+Each verb is its own fact: "landed ... and claimed ..." is two facts.
+Each fact takes only the date and place written in its own part of the sentence.
+The sentence may be a piece cut from a longer sentence, with no subject. Still write its fact.
+Write at most 3 facts. Write only NONE if the sentence states no fact at all.
 
 Example
 Sentence: On 3 March 1850, the harbour office was opened at Pier Head by the Harbour Master.
@@ -63,19 +67,29 @@ where: Pier Head
 not_happened: no
 
 Example
-Sentence: The council did not approve the new bridge, and the mayor resigned in 1902.
+Sentence: The council did not approve the new bridge at Ferry Point, and the mayor resigned in 1902.
 FACT
 subject: The council
 action: approve the new bridge
 agent:
 when:
-where:
+where: Ferry Point
 not_happened: yes
 FACT
 subject: the mayor
 action: resigned
 agent:
 when: 1902
+where:
+not_happened: no
+
+Example
+Sentence: closed by the governor in 1903 after the fire at the old market
+FACT
+subject:
+action: closed
+agent: the governor
+when: 1903
 where:
 not_happened: no
 
@@ -109,7 +123,8 @@ Sentence: {sentence}
 Answer with the number only."""
 
 VIEW_PROMPT = """Whose view or words does this sentence give?
-It comes from a record by {institution}.
+It comes from a record held by {institution}.
+A speaker's or author's sentence gives their own words, unless it says it reports what someone else said or thinks.
 Sentence: {sentence}
 {options}
 Answer with the number only. If you choose {other}, write the number, a colon, and the name copied exactly from the sentence (for example "{other}: the Harbour Master")."""
@@ -163,7 +178,8 @@ def parse_tags(text):
     tags = {kind: [] for kind in TAG_KINDS}
     for line in _lines(text):
         label, _, value = line.partition(":")
-        if label.strip().lower() in tags and value.strip():
+        # "people: groups:" (run 38525325652) is an empty line run into the next label.
+        if label.strip().lower() in tags and value.strip() and value.strip().rstrip(":").lower() not in tags:
             tags[label.strip().lower()] = [_unquote(t) for t in value.split(";") if t.strip()]
     return tags
 
@@ -237,22 +253,27 @@ def ask_kind(ask, sentence, fact, log):
 
 
 def voices(record):
-    """Step D's list of whose view a sentence may give: the record's institution, then the people
-    the record notes name. A note like "Mr X (attendance list: ...), member of ..." becomes "Mr X"."""
-    found = [record.get("institution", "")]
+    """Step D's list of whose view a sentence may give, as (name, role) pairs: the record's
+    institution, then the people the record notes name. A note like "Mr X (attendance list: ...),
+    member of ..." becomes "Mr X"."""
+    found = [(record.get("institution", ""), "the institution that holds the record")]
     notes = record.get("record_context") or {}
-    for field in VOICE_FIELDS:
+    for field, role in VOICE_FIELDS.items():
         value = re.split(r" \(|, member of ", str(notes.get(field) or ""))[0].strip()
-        if value and value not in found:
-            found.append(value)
-    return [v for v in found if v]
+        if value and value not in [name for name, _ in found]:
+            found.append((value, role))
+    return [(name, role) for name, role in found if name]
 
 
 def ask_view(ask, sentence, record, log):
     """Step D, whose view: a voice from the record, or a name copied from the sentence."""
-    options = voices(record) + [SOMEONE_ELSE]
+    named = voices(record)
+    # The model sees each voice's role (run 38525325652: without it, a speech was given to the
+    # institution that published it); the answer is the name alone.
+    options = [name for name, _ in named] + [SOMEONE_ELSE]
+    labels = [f"{name} ({role})" for name, role in named] + [SOMEONE_ELSE]
     prompt = VIEW_PROMPT.format(institution=record.get("institution", ""), sentence=sentence,
-                                options=_numbered(options), other=len(options))
+                                options=_numbered(labels), other=len(options))
     reply = ask(prompt)
     answer = parse_choice(reply, len(options))
     name = _unquote(str(reply).partition(":")[2].strip().rstrip(".")) if answer == len(options) else ""

@@ -73,3 +73,21 @@ def test_score_counts_fields_and_invented_spans():
     assert result["where"] == [1, 1]  # a leading "at" is ignored when comparing
     assert result["stance"] == [0, 1] and result["tags"] == [1, 2]
     assert result["invented_spans"] == 1  # the tag "Kowloon" is not in the sentence
+
+
+def test_score_matches_a_fact_by_overlapping_action_and_reports_near_spans():
+    # PR #105: "opened" for the key's "was opened" counted the whole fact as missed, and one answer
+    # fact could match two expected facts with the same action.
+    key = {"sentences": [{
+        "source_id": "s1", "sentence": SENTENCE,
+        "facts": [{"subject": "the harbour office", "action": "was opened", "agent": "", "when": "3 March 1850",
+                   "where": "Pier Head", "negated": False, "kind": ["event"]},
+                  {"subject": "the harbour office", "action": "was opened", "agent": "", "when": "",
+                   "where": "", "negated": False, "kind": ["event"]}],
+        "angle": {"view_of": "x", "stance": ["neutral"]},
+        "tags": {"people": [], "groups": [], "places": [], "things": []}}]}
+    answers = {"s1": {"facts": [{"subject": "harbour office", "action": "opened", "agent": "",
+                                 "when": "On 3 March 1850", "where": "Pier Head", "kind": "event"}]}}
+    result = fx.score(answers, key)
+    assert result["facts_found"] == [1, 2] and result["action"] == [0, 2] and result["near_action"] == [1, 2]
+    assert result["when"] == [1, 2]  # a leading "On" is ignored

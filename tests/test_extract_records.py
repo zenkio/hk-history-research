@@ -141,8 +141,10 @@ def test_a_topic_whose_question_names_no_year_takes_the_era_of_its_earliest_date
     # were never compared.
     packet = {"event_question": "What do records establish about the harbour office opening?", "sources": [
         source("a", "On 3 March 1850 the harbour office opened."),
-        source("b", "The harbour office opened.", institution="Example Gazette")]}
+        source("b", "The harbour office opened.", institution="Example Gazette",
+               source_type="official_retrospective", source_date="2021")]}  # its date is not the event's
     topic = er.run(fake_model(["3", "3"]), [("p.json", packet)])[0]
+    assert [f["year"] for f in topic["facts"]] == [1850, None]
     assert [f["era"] for f in topic["facts"]] == [["06-early-colony"], ["06-early-colony"]]
     assert len(topic["unsure_links"]) + len(topic["links"]) == 0  # the pair was asked: "different event"
     assert len(er.candidate_pairs(topic["facts"])) == 1

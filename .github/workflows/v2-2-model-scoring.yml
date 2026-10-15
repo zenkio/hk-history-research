@@ -4,15 +4,17 @@ name: V2.2 model scoring on the answer key
 # answers the single V2.2 questions for every sentence of the private answer key and is scored step
 # by step. mode=extract: the first listed model extracts and links facts from the approved packets.
 # mode=links: each listed model links the answer key's facts and is scored on the private link key.
+# mode=verify: extract as above, then search archives for records from other institutions about
+# facts only one source states; the candidates are saved for review, never added to the packets.
 # Sentences, answers and scores are saved only to a private experiment branch of the data repository.
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: score = models against the answer key; extract = end to end on the packets with the first model; links = linking against the link key
+        description: score = models against the answer key; extract = end to end on the packets with the first model; links = linking against the link key; verify = extract, then find independent records
         required: true
         type: choice
-        options: [score, extract, links]
+        options: [score, extract, links, verify]
         default: score
       models:
         description: Comma-separated model names from the fact_extraction_trial routing role
@@ -91,10 +93,16 @@ jobs:
             limit_args=(--limit "${BASH_REMATCH[1]}")
           fi
           failed=0
-          if [[ "$MODE" == extract ]]; then
-            python3 -u scripts/extract_records.py --model "$(cut -d, -f1 <<<"$MODELS" | xargs)" \
+          if [[ "$MODE" == extract || "$MODE" == verify ]]; then
+            model="$(cut -d, -f1 <<<"$MODELS" | xargs)"
+            python3 -u scripts/extract_records.py --model "$model" \
               --packets experiments/v2-1/source-packets \
               --output "$PRIVATE_OUTPUT/records.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+            if [[ "$MODE" == verify && $failed == 0 ]]; then
+              python3 -u scripts/find_independent_records.py --model "$model" \
+                --records "$PRIVATE_OUTPUT/records.json" \
+                --output "$PRIVATE_OUTPUT/candidates.json" >>"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+            fi
           elif [[ "$MODE" == links ]]; then
             python3 -u scripts/score_links.py --minutes 100 \
               --key experiments/v2-2/answer-key.json \

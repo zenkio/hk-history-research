@@ -78,6 +78,15 @@ def covers(record_year, year):
     return bool(year and years and min(years) <= int(year) <= max(years))
 
 
+def text_of(candidate):
+    """What the candidate says: its readable passage, else the catalogue note, else its title (a
+    Records Service file is described only by its title, e.g. "Newscuttings on Central Provident
+    Fund"; run 38667312335 offered none of them)."""
+    # Only a catalogue title describes content: a newspaper's title is its name and date.
+    title = candidate.get("title") if candidate.get("kind") == "archive record" else ""
+    return candidate.get("passage") or candidate.get("note") or title or ""
+
+
 def matching_sentences(text, fact, fallback=(), record_year=""):
     """Numbered-question material: the candidate's sentences that share the fact's year or at least
     two of its terms (no model call). When the candidate's own date covers the fact's year (an
@@ -124,7 +133,7 @@ def ask_sentence(ask, fact, sentences):
 
 
 def candidate_record(candidate, sentence, fact, fallback=()):
-    text = candidate.get("passage") or candidate.get("note") or ""
+    text = text_of(candidate)
     url = candidate.get("url") or candidate.get("catalogue_reference") or ""
     return {
         "source_id": "v-" + hashlib.sha1(f"{url}|{sentence}".encode()).hexdigest()[:10],
@@ -144,6 +153,7 @@ def find_for_topic(ask, topic, gather):
     records, log, searched = [], [], {}
     families = {f["family"] for f in topic["facts"]}
     topic_terms = [t for f in topic["facts"] for t in terms_of(f)]
+    topic_years = sorted({f["year"] for f in topic["facts"] if f.get("year")})
     for fact in [f for f in topic["facts"] if searchable(f)]:
         if len(records) >= RECORDS_PER_TOPIC:
             log.append({"fact": fact["id"], "skipped": "topic limit reached"})
@@ -156,7 +166,7 @@ def find_for_topic(ask, topic, gather):
             searched[query] = gather(query)
         found, failed = searched[query]
         entry = {"fact": fact["id"], "query": query, "found": len(found), "failed_sources": failed,
-                 "other_family": 0, "asked": 0, "kept": 0, "candidates": []}
+                 "other_family": 0, "asked": 0, "kept": 0, "candidates": [], "leads": []}
         for candidate in found:
             if entry["asked"] >= CANDIDATES_PER_FACT or len(records) >= RECORDS_PER_TOPIC:
                 break
@@ -169,8 +179,12 @@ def find_for_topic(ask, topic, gather):
                 seen["outcome"] = "same source family"
                 continue
             entry["other_family"] += 1
-            sentences = matching_sentences(candidate.get("passage") or candidate.get("note"), fact, topic_terms,
-                                           candidate.get("year"))
+            sentences = matching_sentences(text_of(candidate), fact, topic_terms, candidate.get("year"))
+            if not candidate.get("passage") and any(covers(candidate.get("year"), y) for y in topic_years):
+                # A record of the event's own time whose text the adapter cannot read here (run
+                # 38667312335: 1901 Hong Kong newspapers on Yeung Ku-wan) is a lead for inspection.
+                entry["leads"].append({"source": seen["source"], "title": seen["title"], "year": seen["year"],
+                                       "url": candidate.get("url", "")})
             if not sentences:
                 seen["outcome"] = "no sentence shares the year or terms"
                 continue

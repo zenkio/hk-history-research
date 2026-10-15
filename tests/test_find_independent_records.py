@@ -151,3 +151,24 @@ def test_the_log_says_what_each_candidate_was_and_why_it_went_no_further():
     outcomes = [(c["title"], c["outcome"]) for c in log[0]["candidates"]]
     assert outcomes == [("", "same source family"), ("CO 1/2", "no sentence shares the year or terms"),
                         ("CO 1/1", "kept")]
+
+
+def test_a_file_known_only_by_its_title_is_read_by_its_title():
+    # Run 38667312335: Records Service files have a title and no description, and none was offered.
+    grs = {"source": "Hong Kong Government Records Service", "kind": "archive record", "year": "",
+           "url": "https://example.org/grs/1", "title": "Harbour Office and Pier Ordinance files"}
+    gather, _ = gather_returning(grs)
+    records, log = fr.find_for_topic(lambda prompt: "1", TOPIC, gather)
+    assert records[0]["passage"] == "Harbour Office and Pier Ordinance files"
+
+
+def test_an_unreadable_record_of_the_events_own_time_is_listed_as_a_lead():
+    # Run 38667312335: 1901 newspapers about Yeung Ku-wan came back with no readable text.
+    paper = {"source": "Internet Archive", "kind": "digitised publication", "year": "1850",
+             "url": "https://example.org/ia/1", "title": "Example Gazette 1850-03-04", "passage": ""}
+    later = dict(paper, year="1934", url="https://example.org/ia/2", title="Example Gazette 1934-01-08")
+    gather, _ = gather_returning(paper, later)
+    records, log = fr.find_for_topic(lambda prompt: "1", TOPIC, gather)
+    assert records == []
+    assert log[0]["leads"] == [{"source": "Internet Archive", "title": "Example Gazette 1850-03-04",
+                                "year": "1850", "url": "https://example.org/ia/1"}]

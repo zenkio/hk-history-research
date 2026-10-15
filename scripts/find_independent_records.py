@@ -59,6 +59,7 @@ def terms_of(fact, fallback=()):
     for group in (notes, named, tags.get("things", []), tags.get("places", [])):
         for term in group:
             term = term.split(" (")[0].strip()  # "Ordinance (MPFO)": the bracket is an abbreviation
+            term = re.sub(r"['’]s$", "", term)  # run 38660927145 searched for "government's"
             key = term.casefold()
             if key not in seen and key not in NOT_SEARCH_TERMS:
                 seen.add(key)
@@ -71,16 +72,25 @@ def query_for(fact, fallback=()):
     return " ".join(f'"{t}"' if " " in t else t for t in terms_of(fact, fallback)[:2])
 
 
-def matching_sentences(text, fact, fallback=()):
+def covers(record_year, year):
+    """Whether a candidate's date ("1908", "1849-1851", "1 Jan 1900 - 31 Dec 1909") covers the year."""
+    years = [int(y) for y in re.findall(r"\b(1[5-9]\d\d|20\d\d)\b", str(record_year or ""))]
+    return bool(year and years and min(years) <= int(year) <= max(years))
+
+
+def matching_sentences(text, fact, fallback=(), record_year=""):
     """Numbered-question material: the candidate's sentences that share the fact's year or at least
-    two of its terms (no model call)."""
+    two of its terms (no model call). When the candidate's own date covers the fact's year (an
+    archive file's covering dates), one shared term is enough: catalogue descriptions rarely repeat
+    the year (run 38660927145 asked about none of the Tatsu Maru candidates)."""
     terms = [t.casefold() for t in terms_of(fact, fallback)]
     year = str(fact.get("year") or "")
+    needed = 1 if len(terms) == 1 or covers(record_year, fact.get("year")) else 2
     kept = []
     for sentence in fx.split_sentences(text or ""):
         folded = sentence.casefold()
         shared = sum(term in folded for term in terms)
-        if (year and year in sentence) or shared >= 2 or (shared and len(terms) == 1):
+        if (year and year in sentence) or shared >= needed:
             kept.append(sentence)
     return kept[:MAX_SENTENCES]
 
@@ -146,18 +156,27 @@ def find_for_topic(ask, topic, gather):
             searched[query] = gather(query)
         found, failed = searched[query]
         entry = {"fact": fact["id"], "query": query, "found": len(found), "failed_sources": failed,
-                 "other_family": 0, "asked": 0, "kept": 0}
+                 "other_family": 0, "asked": 0, "kept": 0, "candidates": []}
         for candidate in found:
             if entry["asked"] >= CANDIDATES_PER_FACT or len(records) >= RECORDS_PER_TOPIC:
                 break
+            # What was found and why it went no further (private log): run 38660927145 kept only
+            # counts, so its empty results could not be diagnosed.
+            seen = {"source": candidate.get("source", ""), "year": str(candidate.get("year") or ""),
+                    "title": str(candidate.get("title") or "")[:100]}
+            entry["candidates"].append(seen)
             if er.source_family({"institution": institution_of(candidate)}) in families:
+                seen["outcome"] = "same source family"
                 continue
             entry["other_family"] += 1
-            sentences = matching_sentences(candidate.get("passage") or candidate.get("note"), fact, topic_terms)
+            sentences = matching_sentences(candidate.get("passage") or candidate.get("note"), fact, topic_terms,
+                                           candidate.get("year"))
             if not sentences:
+                seen["outcome"] = "no sentence shares the year or terms"
                 continue
             entry["asked"] += 1
             choice = ask_sentence(ask, fact, sentences)
+            seen["outcome"] = "kept" if choice else "model: none of these"
             if choice:
                 records.append(candidate_record(candidate, sentences[choice - 1], fact, topic_terms))
                 entry["kept"] += 1

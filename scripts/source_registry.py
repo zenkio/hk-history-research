@@ -20,6 +20,12 @@ RIGHTS_POLICIES = frozenset({
 })
 
 
+# Item rights an adapter may report for a passage AI can read. "published_before_1929" is only ever
+# set by evidence.internet_archive_rights while PRE_1929_FOR_INTERNAL_RESEARCH is on (owner decision
+# 2026-10-16); run 38905674242 read 1901 newspapers and this gate cleared them as unlabelled.
+ITEM_RIGHTS_READABLE = {"public_domain_or_cc0", "published_before_1929"}
+
+
 @dataclass(frozen=True)
 class SourceDefinition:
     """Stable source-family metadata plus a callable search adapter."""
@@ -126,7 +132,7 @@ class SourceRegistry:
                         (rights_policy == "cc0_dataset" and status == "inspectable_abstract")
                         or (
                             rights_policy == "item_rights_gate"
-                            and candidate.get("rights_status") == "public_domain_or_cc0"
+                            and candidate.get("rights_status") in ITEM_RIGHTS_READABLE
                         )
                         or (
                             rights_policy == "open_government_licence"

@@ -1119,3 +1119,28 @@ def test_the_pre_1929_switch_never_opens_later_or_undated_items(monkeypatch):
     assert ev.internet_archive_rights({"metadata": {"date": "1908-03-17"}}) == "published_before_1929"
     assert ev.internet_archive_rights(_ia_metadata("1950", "https://creativecommons.org/publicdomain/zero/1.0/")) \
         == "public_domain_or_cc0"
+
+
+def test_a_pre_1929_passage_survives_the_registry_rights_gate(monkeypatch):
+    # Run 38905674242 (2026-10-16): the 1901 newspapers were read, then the registry cleared their
+    # text because only "public_domain_or_cc0" passed its item rights gate.
+    class Response:
+        def __enter__(self):
+            return self
+        def __exit__(self, *args):
+            return False
+        def read(self, limit):
+            return ("Report of the murder in Gage Street of the schoolmaster. " * 12).encode()
+
+    def get_json(url, accept_json=False):
+        if "advancedsearch" in url:
+            return {"response": {"docs": [{"identifier": "NPDP19010208", "title": "Daily Press", "year": "1901"}]}}
+        return _ia_metadata("1901")
+    monkeypatch.setattr(ev, "_get_json", get_json)
+    monkeypatch.setattr(ev.urllib.request, "urlopen", lambda req, timeout=20: Response())
+    sources = [("Internet Archive", ev.internet_archive)]
+    found, failed = ev.gather('"Yeung Ku-wan"', sources=sources)
+    assert failed == [] and found[0]["passage"] == ""  # switch off: metadata only
+    monkeypatch.setattr(ev, "PRE_1929_FOR_INTERNAL_RESEARCH", True)
+    found, _ = ev.gather('"Yeung Ku-wan"', sources=sources)
+    assert "Gage Street" in found[0]["passage"] and found[0]["rights_status"] == "published_before_1929"

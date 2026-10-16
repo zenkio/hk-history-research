@@ -307,3 +307,15 @@ def test_the_facts_prompt_keeps_what_follows_was_and_rejects_relative_pronouns_a
     # "was", and "the boycott which followed" the subject "which".
     assert 'after "is" or "was", keep what follows it' in eq.FACTS_PROMPT
     assert 'never "which" or "that"' in eq.FACTS_PROMPT
+
+
+def test_a_trial_opens_the_model_under_test_to_the_trial_limits():
+    # 2026-10-16: trial-only OpenRouter entries are listed at 1 RPM so the shared limit holds.
+    class Pool:
+        models = {"Trial": {"provider": "openrouter", "rpm": 1, "rpd": 50},
+                  "Gemini": {"provider": "google", "rpm": 15, "rpd": 20}}
+    pool = Pool()
+    sem.open_for_trial(pool, "Trial")
+    sem.open_for_trial(pool, "Gemini")
+    assert pool.models["Trial"] == {"provider": "openrouter", "rpm": sem.TRIAL_RPM, "rpd": sem.TRIAL_RPD}
+    assert pool.models["Gemini"] == {"provider": "google", "rpm": 15, "rpd": 20}

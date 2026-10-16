@@ -21,7 +21,7 @@ from pathlib import Path
 
 import extract_records as er
 import fact_extraction as fx
-from score_extraction_models import ROLE, TRIAL_RPD, OutOfTime, trial_ask
+from score_extraction_models import ROLE, OutOfTime, open_for_trial, trial_ask
 
 RIGHT_BAR = 0.90
 
@@ -127,8 +127,7 @@ def main(argv=None):
         elif pool.remaining(name, ROLE) == 0:
             entry["error"] = "unavailable in this run (no key, rejected key or no free match)"
         else:
-            if pool.models[name].get("provider") == "openrouter":
-                pool.models[name]["rpd"] = max(pool.models[name]["rpd"], TRIAL_RPD)
+            open_for_trial(pool, name)
             calls, rests = [], []
             entry.update(score_model(trial_ask(pool, name, deadline, calls, rests), topics, link_key,
                                      stop_on=(QuotaExhausted,), deadline=deadline))

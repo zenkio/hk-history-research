@@ -177,3 +177,11 @@ def test_an_unreadable_record_of_the_events_own_time_is_listed_as_a_lead():
     assert records == []
     assert log[0]["leads"] == [{"source": "Internet Archive", "title": "Example Gazette 1850-03-04",
                                 "year": "1850", "url": "https://example.org/ia/1"}]
+
+
+def test_the_workflow_can_verify_from_an_earlier_runs_saved_records():
+    # Runs 10-12 (2026-10-16) stopped on 504s from the extraction model before any search.
+    text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
+    assert 'if [[ "$MODE" == verify && -n "$RECORDS_RUN" ]]; then' in text
+    assert 'if [[ "$RECORDS_RUN" =~ ^[0-9]+$ ]]; then' in text  # a run id only, never a path or ref
+    assert 'git show "origin/experiment/v2-2-model-scores-$RECORDS_RUN:experiments/v2-2/model-runs/$RECORDS_RUN/records.json"' in text

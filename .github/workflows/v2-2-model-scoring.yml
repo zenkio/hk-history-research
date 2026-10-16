@@ -6,6 +6,8 @@ name: V2.2 model scoring on the answer key
 # mode=links: each listed model links the answer key's facts and is scored on the private link key.
 # mode=verify: extract as above, then search archives for records from other institutions about
 # facts only one source states; the candidates are saved for review, never added to the packets.
+# With records_run, verify reuses that run's saved extraction (runs 10-12 stopped on 504s from the
+# extraction model before the search began).
 # Sentences, answers and scores are saved only to a private experiment branch of the data repository.
 on:
   workflow_dispatch:
@@ -26,6 +28,11 @@ on:
         required: true
         type: number
         default: 0
+      records_run:
+        description: verify only, optional - reuse records.json saved by this earlier run id instead of extracting again
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -83,6 +90,7 @@ jobs:
           MODE: ${{ inputs.mode }}
           MODELS: ${{ inputs.models }}
           LIMIT: ${{ inputs.limit }}
+          RECORDS_RUN: ${{ inputs.records_run }}
           PRIVATE_OUTPUT: ${{ runner.temp }}/v2-2-output
         shell: bash
         run: |
@@ -93,7 +101,20 @@ jobs:
             limit_args=(--limit "${BASH_REMATCH[1]}")
           fi
           failed=0
-          if [[ "$MODE" == extract || "$MODE" == verify ]]; then
+          if [[ "$MODE" == verify && -n "$RECORDS_RUN" ]]; then
+            model="$(cut -d, -f1 <<<"$MODELS" | xargs)"
+            if [[ "$RECORDS_RUN" =~ ^[0-9]+$ ]]; then
+              git show "origin/experiment/v2-2-model-scores-$RECORDS_RUN:experiments/v2-2/model-runs/$RECORDS_RUN/records.json" \
+                >"$PRIVATE_OUTPUT/records.json" 2>"$PRIVATE_OUTPUT/diagnostics.log" || failed=1
+            else
+              echo "records_run must be a run id" >"$PRIVATE_OUTPUT/diagnostics.log"; failed=1
+            fi
+            if [[ $failed == 0 ]]; then
+              python3 -u scripts/find_independent_records.py --model "$model" \
+                --records "$PRIVATE_OUTPUT/records.json" \
+                --output "$PRIVATE_OUTPUT/candidates.json" >>"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+            fi
+          elif [[ "$MODE" == extract || "$MODE" == verify ]]; then
             model="$(cut -d, -f1 <<<"$MODELS" | xargs)"
             python3 -u scripts/extract_records.py --model "$model" \
               --packets experiments/v2-1/source-packets \

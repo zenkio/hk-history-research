@@ -233,14 +233,13 @@ def main(argv=None):
     # A whole newspaper issue: the article may be anywhere in it. Only sentences sharing the fact's
     # year or terms are shown to the model, and only a hash of the text is kept.
     evidence.IA_READ_BYTES, evidence.IA_TEXT_CHARS = 2_000_000, 2_000_000
-    from score_extraction_models import TRIAL_RPD
+    from score_extraction_models import open_for_trial
     extracted = json.loads(args.records.read_text(encoding="utf-8"))
     pool = ModelPool()
     if args.model not in pool.routing.get(er.ROLE, []) or pool.remaining(args.model, er.ROLE) == 0:
         print(f"{args.model} is not usable in this run", file=sys.stderr)
         return 2
-    if pool.models[args.model].get("provider") == "openrouter":
-        pool.models[args.model]["rpd"] = max(pool.models[args.model]["rpd"], TRIAL_RPD)
+    open_for_trial(pool, args.model)
     calls = []
 
     def ask(prompt):

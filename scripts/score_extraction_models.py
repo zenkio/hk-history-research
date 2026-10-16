@@ -37,6 +37,16 @@ TRIAL_RESTS, REST_SECONDS = 3, 300
 # The experiment's own budget: the per-entry OpenRouter limit (50) splits the account's day between
 # pipeline roles; the pipeline is in maintenance mode, and the account-wide limit still applies.
 TRIAL_RPD = 1000
+# Trial-only OpenRouter entries are listed at 1 RPM so the pipeline's shared per-minute limit holds;
+# a trial calls one model at a time, so it may use most of that limit.
+TRIAL_RPM = 9
+
+
+def open_for_trial(pool, name):
+    """An OpenRouter model under trial may use the credits' daily limit and TRIAL_RPM."""
+    if pool.models[name].get("provider") == "openrouter":
+        pool.models[name]["rpd"] = max(pool.models[name].get("rpd", 0), TRIAL_RPD)
+        pool.models[name]["rpm"] = max(pool.models[name].get("rpm", 0), TRIAL_RPM)
 
 
 def load_records(packet_dir):
@@ -170,8 +180,7 @@ def main(argv=None):
         elif pool.remaining(name, ROLE) == 0:
             entry["error"] = "unavailable in this run (no key, rejected key or no free match)"
         else:
-            if pool.models[name].get("provider") == "openrouter":
-                pool.models[name]["rpd"] = max(pool.models[name]["rpd"], TRIAL_RPD)
+            open_for_trial(pool, name)
             calls, rests = [], []
             ask = trial_ask(pool, name, deadline, calls, rests)
             entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,),

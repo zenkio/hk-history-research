@@ -175,13 +175,12 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     from gemini_pool import ModelPool
-    from score_extraction_models import TRIAL_RPD
+    from score_extraction_models import open_for_trial
     pool = ModelPool()
     if args.model not in pool.routing.get(ROLE, []) or pool.remaining(args.model, ROLE) == 0:
         print(f"{args.model} is not usable in this run", file=sys.stderr)
         return 2
-    if pool.models[args.model].get("provider") == "openrouter":
-        pool.models[args.model]["rpd"] = max(pool.models[args.model]["rpd"], TRIAL_RPD)
+    open_for_trial(pool, args.model)
     calls = []
 
     def ask(prompt):

@@ -91,10 +91,13 @@ def matching_sentences(text, fact, fallback=(), record_year=""):
     """Numbered-question material: the candidate's sentences that share the fact's year or at least
     two of its terms (no model call). When the candidate's own date covers the fact's year (an
     archive file's covering dates), one shared term is enough: catalogue descriptions rarely repeat
-    the year (run 38660927145 asked about none of the Tatsu Maru candidates)."""
+    the year (run 38660927145 asked about none of the Tatsu Maru candidates). In such a record the
+    year itself tells nothing (a 1908 newspaper prints 1908 on every notice), so a term must be
+    shared: run 38906795423 kept a dated shipping notice for the Tatsu Maru boycott."""
     terms = [t.casefold() for t in terms_of(fact, fallback)]
-    year = str(fact.get("year") or "")
-    needed = 1 if len(terms) == 1 or covers(record_year, fact.get("year")) else 2
+    dated_to_year = covers(record_year, fact.get("year"))
+    year = "" if dated_to_year else str(fact.get("year") or "")
+    needed = 1 if len(terms) == 1 or dated_to_year else 2
     kept = []
     for sentence in fx.split_sentences(text or ""):
         folded = sentence.casefold()
@@ -145,6 +148,8 @@ def candidate_record(candidate, sentence, fact, fallback=()):
         "retrieved_text_sha256": hashlib.sha256(text.encode()).hexdigest(),
         "inspection_status": "not_inspected", "processing_status": "awaiting_review",
         "public_reuse_not_approved": True,
+        # Why AI could read the text (e.g. "published_before_1929"); empty for catalogue records.
+        "rights_status": candidate.get("rights_status", "") if candidate.get("passage") else "",
     }
 
 

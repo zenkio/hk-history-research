@@ -185,3 +185,19 @@ def test_the_workflow_can_verify_from_an_earlier_runs_saved_records():
     assert 'if [[ "$MODE" == verify && -n "$RECORDS_RUN" ]]; then' in text
     assert 'if [[ "$RECORDS_RUN" =~ ^[0-9]+$ ]]; then' in text  # a run id only, never a path or ref
     assert 'git show "origin/experiment/v2-2-model-scores-$RECORDS_RUN:experiments/v2-2/model-runs/$RECORDS_RUN/records.json"' in text
+
+
+def test_in_a_record_of_the_facts_own_year_the_year_alone_does_not_match():
+    # Run 38906795423 kept "Hongkong, March 15, 1908. NOTICE." from a 1908 newspaper.
+    text = "Hongkong, March 15, 1850. NOTICE. The Pier Ordinance was read a second time."
+    assert fr.matching_sentences(text, fact("x"), record_year="1850") == ["The Pier Ordinance was read a second time."]
+    assert "Hongkong, March 15, 1850." in fr.matching_sentences(text, fact("x"), record_year="1923")
+
+
+def test_a_kept_record_says_why_its_text_could_be_read():
+    paper = {"source": "Internet Archive", "kind": "digitised publication", "year": "1923",
+             "url": "https://example.org/ia/3", "passage": "The Harbour Office opened in 1850 under the Pier Ordinance.",
+             "rights_status": "published_before_1929"}
+    gather, _ = gather_returning(paper)
+    records, _ = fr.find_for_topic(lambda prompt: "1", TOPIC, gather)
+    assert records[0]["rights_status"] == "published_before_1929"

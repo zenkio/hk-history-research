@@ -207,6 +207,12 @@ def main(argv=None):
 
     import evidence
     from gemini_pool import ModelPool
+    # Owner decision 2026-10-16: scanned items published before 1929 may be read for this internal
+    # search (the 1901 and 1908 Hong Kong newspapers carry no rights label).
+    evidence.PRE_1929_FOR_INTERNAL_RESEARCH = True
+    # A whole newspaper issue: the article may be anywhere in it. Only sentences sharing the fact's
+    # year or terms are shown to the model, and only a hash of the text is kept.
+    evidence.IA_READ_BYTES, evidence.IA_TEXT_CHARS = 2_000_000, 2_000_000
     from score_extraction_models import TRIAL_RPD
     extracted = json.loads(args.records.read_text(encoding="utf-8"))
     pool = ModelPool()

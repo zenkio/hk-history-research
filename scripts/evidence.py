@@ -344,11 +344,47 @@ def internet_archive_ai_processing_allowed(metadata):
                 return False
     return any(recognised_open_rights(value) for _, value in values)
 
-def internet_archive_text(identifier, max_chars=5000):
+# Owner decision 2026-10-16: items published before 1929 (out of copyright in the US) may be read
+# by AI for internal research even without an explicit rights label. Off by default, so the
+# pipeline keeps the default-deny rule; the V2.2 verification search switches it on.
+PRE_1929_FOR_INTERNAL_RESEARCH = False
+OUT_OF_COPYRIGHT_BEFORE = 1929
+# How much OCR text is read and kept. A newspaper issue runs to hundreds of KB and its first 5,000
+# characters are mostly advertisements, so the verification search raises both.
+IA_READ_BYTES, IA_TEXT_CHARS = 100_000, 5000
+# identifier -> why its OCR was read ("public_domain_or_cc0" or "published_before_1929").
+IA_RIGHTS = {}
+
+
+def internet_archive_published_year(metadata):
+    """The item's own publication year from its metadata (year, else date), or None."""
+    meta = metadata.get("metadata") if isinstance(metadata.get("metadata"), dict) else {}
+    for key in ("year", "date"):
+        value = meta.get(key)
+        value = value[0] if isinstance(value, list) and value else value
+        found = re.match(r"\s*(\d{4})", str(value or ""))
+        if found:
+            return int(found.group(1))
+    return None
+
+
+def internet_archive_rights(metadata):
+    """Why OCR may go to AI, or None: an explicit open-rights label always; publication before 1929
+    only when PRE_1929_FOR_INTERNAL_RESEARCH is on."""
+    if internet_archive_ai_processing_allowed(metadata):
+        return "public_domain_or_cc0"
+    year = internet_archive_published_year(metadata)
+    if PRE_1929_FOR_INTERNAL_RESEARCH and year is not None and year < OUT_OF_COPYRIGHT_BEFORE:
+        return "published_before_1929"
+    return None
+
+
+def internet_archive_text(identifier, max_chars=None):
     """Fetch a real Internet Archive OCR text file; return None for metadata/errors."""
     try:
         metadata = _get_json(f"https://archive.org/metadata/{urllib.parse.quote(identifier, safe='')}")
-        if not internet_archive_ai_processing_allowed(metadata):
+        rights = internet_archive_rights(metadata)
+        if not rights:
             return None  # no explicit public-domain/CC0 rights signal: metadata-only discovery
         files = metadata.get("files") or []
         names = [item.get("name", "") for item in files if item.get("name")]
@@ -360,13 +396,14 @@ def internet_archive_text(identifier, max_chars=5000):
         url = "https://archive.org/download/" + urllib.parse.quote(identifier, safe="") + "/" + urllib.parse.quote(name, safe="/")
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=20) as response:
-            raw = response.read(100_001)
+            raw = response.read(IA_READ_BYTES + 1)
         text = raw.decode("utf-8", errors="replace")
         text = re.sub(r"<[^>]+>", " ", text)
         text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 300 or re.search(r"(?i)<!doctype html|<html|access denied|item not available", text[:1000]):
             return None
-        return text[:max_chars]
+        IA_RIGHTS[identifier] = rights
+        return text[:max_chars or IA_TEXT_CHARS]
     except (OSError, ValueError, KeyError, urllib.error.URLError, TimeoutError):
         return None
 
@@ -390,7 +427,7 @@ def internet_archive(query):
                     "cite": f"{creator + ', ' if creator else ''}*{d.get('title', identifier)}* ({d.get('year', 'n.d.')}), Internet Archive.",
                     "note": re.sub(r"<[^>]+>", "", desc)[:300],
                     "passage": passage or "", "passage_status": "inspectable_text" if passage else "metadata_only",
-                    "rights_status": "public_domain_or_cc0" if passage else "not_verified",
+                    "rights_status": IA_RIGHTS.get(identifier, "public_domain_or_cc0") if passage else "not_verified",
                     "locator": f"Internet Archive OCR text for {identifier}"})
     return out
 

@@ -154,3 +154,9 @@ def test_the_link_question_says_a_more_precise_date_is_the_same_fact():
     # Run 38639138642 marked "in 1901" against "on 10 January 1901" as a conflict.
     same, differ = er.LINK_CHOICES[0][1], er.LINK_CHOICES[1][1]
     assert "more precise" in same and "contradict" in differ
+
+
+def test_a_semicolon_ends_the_institution_name_too():
+    # Run 38972366561 put two reports of the same newspaper in different source families.
+    assert er.source_family({"institution": "Example Mail (newspaper); scan digitised by Example Archive"}) == \
+        er.source_family({"institution": "Example Mail (newspaper), from its correspondent; scan digitised"})

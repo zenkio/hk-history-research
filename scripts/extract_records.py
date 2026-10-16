@@ -16,6 +16,7 @@ Output is private research data (sentences, statements): it belongs on a private
 import argparse
 import itertools
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -60,8 +61,9 @@ def claim_label(record):
 
 def source_family(record):
     """Records from the same institution are one source family ("Hong Kong Government" and
-    "Hong Kong Government, news.gov.hk" are one)."""
-    return str(record.get("institution", "")).split(",")[0].strip().casefold()
+    "Hong Kong Government, news.gov.hk" are one). A semicolon also ends the name: run 38972366561
+    put two China Mail reports in different families ("China Mail (...); scan digitised ...")."""
+    return re.split(r"[,;]", str(record.get("institution", "")))[0].strip().casefold()
 
 
 def eligible(record):

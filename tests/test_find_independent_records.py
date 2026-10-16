@@ -104,6 +104,9 @@ def test_main_writes_candidates_apart_from_the_packets(tmp_path, monkeypatch):
     import evidence
     import gemini_pool
     monkeypatch.setattr(evidence, "gather", gather_returning(ARCHIVE)[0])
+    monkeypatch.setattr(evidence, "PRE_1929_FOR_INTERNAL_RESEARCH", False)  # restored after the test
+    monkeypatch.setattr(evidence, "IA_READ_BYTES", evidence.IA_READ_BYTES)
+    monkeypatch.setattr(evidence, "IA_TEXT_CHARS", evidence.IA_TEXT_CHARS)
 
     class FakePool:
         routing = {fr.er.ROLE: ["Model A"]}
@@ -120,6 +123,8 @@ def test_main_writes_candidates_apart_from_the_packets(tmp_path, monkeypatch):
     assert fr.main(["--records", str(tmp_path / "records.json"), "--model", "Model A", "--output", str(out)]) == 0
     result = json.loads(out.read_text())
     assert result["calls"] == 1 and result["live_records_modified"] is False
+    assert evidence.PRE_1929_FOR_INTERNAL_RESEARCH is True  # owner decision 2026-10-16
+    assert evidence.IA_TEXT_CHARS >= 1_000_000  # a whole newspaper issue, not its first page of adverts
     assert result["topics"][0]["candidate_records"][0]["for_fact"] == "a#s1f1"
 
 

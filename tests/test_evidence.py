@@ -1084,3 +1084,38 @@ def test_legislation_source_is_searched_only_for_first_page_query(monkeypatch):
     assert candidates == []
     assert failed == []
     assert legislation_queries == ["British Nationality Act 1990"]
+
+
+def _ia_metadata(year, rights=None):
+    meta = {"year": year}
+    if rights:
+        meta["licenseurl"] = rights
+    return {"files": [{"name": "paper_djvu.txt"}], "metadata": meta}
+
+
+def test_pre_1929_items_are_read_only_when_the_internal_research_switch_is_on(monkeypatch):
+    # Owner decision 2026-10-16: 1901 and 1908 Hong Kong newspapers carry no rights label.
+    class Response:
+        def __enter__(self):
+            return self
+        def __exit__(self, *args):
+            return False
+        def read(self, limit):
+            return ("Report of the murder in Gage Street of the schoolmaster. " * 12).encode()
+
+    monkeypatch.setattr(ev, "_get_json", lambda url, accept_json=False: _ia_metadata("1901"))
+    monkeypatch.setattr(ev.urllib.request, "urlopen", lambda req, timeout=20: Response())
+    assert ev.PRE_1929_FOR_INTERNAL_RESEARCH is False  # the pipeline keeps the default-deny rule
+    assert ev.internet_archive_text("NPDP19010208") is None
+    monkeypatch.setattr(ev, "PRE_1929_FOR_INTERNAL_RESEARCH", True)
+    assert "Gage Street" in ev.internet_archive_text("NPDP19010208")
+    assert ev.IA_RIGHTS["NPDP19010208"] == "published_before_1929"
+
+
+def test_the_pre_1929_switch_never_opens_later_or_undated_items(monkeypatch):
+    monkeypatch.setattr(ev, "PRE_1929_FOR_INTERNAL_RESEARCH", True)
+    assert ev.internet_archive_rights(_ia_metadata("1929")) is None
+    assert ev.internet_archive_rights({"metadata": {}}) is None
+    assert ev.internet_archive_rights({"metadata": {"date": "1908-03-17"}}) == "published_before_1929"
+    assert ev.internet_archive_rights(_ia_metadata("1950", "https://creativecommons.org/publicdomain/zero/1.0/")) \
+        == "public_domain_or_cc0"

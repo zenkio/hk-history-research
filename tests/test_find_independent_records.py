@@ -201,3 +201,18 @@ def test_a_kept_record_says_why_its_text_could_be_read():
     gather, _ = gather_returning(paper)
     records, _ = fr.find_for_topic(lambda prompt: "1", TOPIC, gather)
     assert records[0]["rights_status"] == "published_before_1929"
+
+
+def test_a_sentence_from_an_open_text_keeps_its_surroundings_for_inspection():
+    # Run 38908381376: the 1908 newspaper sentences could not be inspected without their article.
+    before = " ".join(f"b{i}" for i in range(100))
+    after = " ".join(f"A{i}" for i in range(100))
+    sentence = "The Harbour Office opened in 1850 under the Pier Ordinance."
+    paper = {"source": "Internet Archive", "kind": "digitised publication", "year": "1923",
+             "url": "https://example.org/ia/4", "passage": f"{before}. {sentence} {after}.",
+             "rights_status": "published_before_1929"}
+    gather, _ = gather_returning(paper, dict(ARCHIVE, url="https://example.org/r/9"))
+    records, _ = fr.find_for_topic(lambda prompt: "1", TOPIC, gather)
+    context = records[0]["inspection_context"].split()
+    assert context[0] == "b20" and context[-1] == "A79" and sentence in records[0]["inspection_context"]
+    assert records[1]["inspection_context"] == ""  # a catalogue note has no rights status

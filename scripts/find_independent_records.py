@@ -31,6 +31,9 @@ SEARCH_KINDS = {"event", "plan_or_target", "allegation", "denial"}
 SEARCH_STATUSES = {"not yet corroborated", "challenged by another source"}
 MAX_WORDS = 25
 MAX_SENTENCES = 8
+# Words kept on each side of a chosen sentence from an openly readable text (pre-1929, PD or CC0),
+# so Claude can inspect what the sentence is part of; the excerpt rule applies to the passage only.
+CONTEXT_WORDS = 80
 CANDIDATES_PER_FACT = 6
 RECORDS_PER_TOPIC = 5
 # Words that name no event: the adapters add "Hong Kong" to every query themselves.
@@ -150,7 +153,19 @@ def candidate_record(candidate, sentence, fact, fallback=()):
         "public_reuse_not_approved": True,
         # Why AI could read the text (e.g. "published_before_1929"); empty for catalogue records.
         "rights_status": candidate.get("rights_status", "") if candidate.get("passage") else "",
+        "inspection_context": context_of(text, sentence) if candidate.get("rights_status") and
+        candidate.get("passage") else "",
     }
+
+
+def context_of(text, sentence):
+    """CONTEXT_WORDS words before and after the sentence in the record's text, for inspection only
+    (run 38908381376: a 1908 newspaper sentence could not be inspected without its article)."""
+    words, target = (text or "").split(), sentence.split()
+    for i in range(len(words) - len(target) + 1):
+        if words[i:i + len(target)] == target:
+            return " ".join(words[max(0, i - CONTEXT_WORDS):i + len(target) + CONTEXT_WORDS])
+    return ""
 
 
 def find_for_topic(ask, topic, gather):

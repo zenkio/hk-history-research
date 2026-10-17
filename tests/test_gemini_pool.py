@@ -284,3 +284,61 @@ def test_a_400_on_a_fixed_model_is_still_a_rejected_request(make_pool):
         pass
     else:
         raise AssertionError("a fixed model's 400 must not silently switch models")
+
+
+# 2026-10-17: no free OpenRouter model could finish V2.2 extraction, and the owner chose the AI gateway.
+GW = {"Gateway Extract": {"provider": "gateway", "task": "extract", "needs": {"accuracy": "exact"}, "api_id": ""}}
+
+
+def gateway_pool(make_pool, monkeypatch, reply):
+    p = make_pool(GW, {"fact_extraction_trial": ["Gateway Extract"]})
+    p.gateway_token = "agw_test"
+    sent = []
+
+    def urlopen(req, timeout=None):
+        sent.append(req)
+        if isinstance(reply, Exception):
+            raise reply
+        return FakeResponse(reply)
+    monkeypatch.setattr(gp.urllib.request, "urlopen", urlopen)
+    return p, sent
+
+
+def test_a_gateway_entry_asks_for_its_task_and_keeps_the_models_that_answered(make_pool, monkeypatch):
+    usage = {"modelId": "google/gemini-x", "billing": "free", "costUsd": 0, "tokens": {"input": 5, "output": 3}}
+    p, sent = gateway_pool(make_pool, monkeypatch, {"output": {"text": "FACT"}, "usage": usage})
+    assert p._generate("fact_extraction_trial", "Copy facts", str, False, ["Gateway Extract"], None)[0] == "FACT"
+    body = json.loads(sent[0].data)
+    assert body == {"capability": "llm.generate", "input": {"prompt": "Copy facts"},
+                    "options": {"task": "extract", "needs": {"accuracy": "exact"}}}
+    assert sent[0].get_header("Authorization") == "Bearer agw_test"
+    assert "hk-history-research" in sent[0].get_header("User-agent")
+    assert p.models["Gateway Extract"]["api_id"] == "google/gemini-x"
+
+
+def test_a_paid_gateway_answer_is_refused(make_pool, monkeypatch):
+    import pytest
+    usage = {"modelId": "google/gemini-paid", "billing": "paid", "costUsd": 0.01}
+    p, _ = gateway_pool(make_pool, monkeypatch, {"output": {"text": "FACT"}, "usage": usage})
+    with pytest.raises(gp.RequestRejected):
+        p._generate("fact_extraction_trial", "Copy facts", str, False, ["Gateway Extract"], None)
+
+
+def test_gateway_quota_errors_rest_the_entry_instead_of_rejecting_the_request(make_pool, monkeypatch):
+    import urllib.error
+    body = io.BytesIO(json.dumps({"error": {"code": "quota_exhausted", "message": "none left"}}).encode())
+    err = urllib.error.HTTPError(gp.GATEWAY_URL, 429, "Too Many Requests", {}, body)
+    p, _ = gateway_pool(make_pool, monkeypatch, err)
+    assert p._try_model("Gateway Extract", "fact_extraction_trial", "x", False, str) is None
+    assert p.cooldown["Gateway Extract"] > 0
+
+
+def test_gateway_entries_are_off_without_a_token_and_the_workflow_passes_one(monkeypatch):
+    monkeypatch.delenv("AI_GATEWAY_TOKEN", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setattr(gp.ModelPool, "_resolve_openrouter", lambda self: None)
+    pool = gp.ModelPool()
+    assert "Gateway Extract" in pool.unavailable and pool.remaining("Gateway Extract", "fact_extraction_trial") == 0
+    from pathlib import Path
+    flow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
+    assert "AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}" in flow

@@ -163,7 +163,7 @@ def main(argv=None):
                         help="stop asking after this many minutes (keep it under the job's timeout)")
     args = parser.parse_args(argv)
 
-    from gemini_pool import ModelPool, QuotaExhausted
+    from gemini_pool import ModelPool, QuotaExhausted, RequestRejected
     key = json.loads(args.key.read_text(encoding="utf-8"))
     records = load_records(args.packets)
     missing = [r["source_id"] for r in key["sentences"] if r["source_id"] not in records]
@@ -183,8 +183,10 @@ def main(argv=None):
             open_for_trial(pool, name)
             calls, rests = [], []
             ask = trial_ask(pool, name, deadline, calls, rests)
-            entry.update(score_model(ask, key, records, args.limit, stop_on=(QuotaExhausted,),
-                                     deadline=deadline))
+            # A rejected request ends this model's trial only: run 38985642200 lost every later
+            # model when one provider answered 400.
+            entry.update(score_model(ask, key, records, args.limit,
+                                     stop_on=(QuotaExhausted, RequestRejected), deadline=deadline))
             entry["calls"] = len(calls)
             entry["api_id"] = pool.models[name].get("api_id")
         results.append(entry)

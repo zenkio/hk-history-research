@@ -117,3 +117,33 @@ def test_the_workflow_runs_the_link_score_into_the_private_output():
     text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
     assert "scripts/score_links.py --minutes 100" in text
     assert '--output "$PRIVATE_OUTPUT/links.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1' in text
+
+
+def test_a_rejected_request_ends_that_models_link_trial_only(tmp_path, monkeypatch):
+    # Run 38985642200: a provider's 400 (RequestRejected) stopped the whole extraction scoring run.
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    (packets / "p.json").write_text(json.dumps(PACKETS[0][1]))
+    (tmp_path / "key.json").write_text(json.dumps(KEY))
+    (tmp_path / "links.json").write_text(json.dumps(LINK_KEY))
+    import gemini_pool
+
+    class FakePool:
+        routing = {sl.ROLE: ["Model A", "Model B"]}
+        models = {"Model A": {"api_id": "a"}, "Model B": {"api_id": "b"}}
+        cooldown = {}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            if only[0] == "Model A":
+                raise gemini_pool.RequestRejected("400 Provider returned error")
+            return parse(model(RIGHT)(prompt)), only[0], []
+
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    out = tmp_path / "out.json"
+    assert sl.main(["--key", str(tmp_path / "key.json"), "--link-key", str(tmp_path / "links.json"),
+                    "--packets", str(packets), "--models", "Model A, Model B", "--output", str(out)]) == 0
+    a, b = json.loads(out.read_text())["results"]
+    assert "RequestRejected" in a["stopped"] and b["passed"]

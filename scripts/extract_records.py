@@ -172,36 +172,49 @@ def main(argv=None):
     parser.add_argument("--packets", type=Path, required=True)
     parser.add_argument("--model", required=True, help="a display name from the fact_extraction_trial role")
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--minutes", type=float, default=None,
+                        help="stop asking after this many minutes (keep it under the job's timeout)")
     args = parser.parse_args(argv)
 
     from gemini_pool import ModelPool
-    from score_extraction_models import open_for_trial
+    from score_extraction_models import OutOfTime, open_for_trial
     pool = ModelPool()
     if args.model not in pool.routing.get(ROLE, []) or pool.remaining(args.model, ROLE) == 0:
         print(f"{args.model} is not usable in this run", file=sys.stderr)
         return 2
     open_for_trial(pool, args.model)
-    calls = []
+    started, calls = time.time(), []
+    deadline = started + args.minutes * 60 if args.minutes else None
 
     def ask(prompt):
+        if deadline is not None and time.time() >= deadline:
+            raise OutOfTime()
         calls.append(1)
         return pool.generate_text(ROLE, prompt, str, only=[args.model])[0]
 
-    started, topics, stopped = time.time(), [], ""
-    try:
-        run(ask, load_packets(args.packets), topics)
-    except Exception as exc:  # keep the finished topics; the log says why it stopped
-        stopped = f"stopped after {len(topics)} topics: {type(exc).__name__}"
-        print(stopped, file=sys.stderr)
-    args.output.write_text(json.dumps({
-        "purpose": "v2.2 end-to-end extraction and linking; experiment only, no live records changed",
-        "model": args.model, "api_id": pool.models[args.model].get("api_id"), "calls": len(calls),
-        "minutes": round((time.time() - started) / 60, 1), "stopped": stopped, "topics": topics,
-        "live_records_modified": False, "publication_approved": False,
-    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    for topic in topics:
+    def save():
+        args.output.write_text(json.dumps({
+            "purpose": "v2.2 end-to-end extraction and linking; experiment only, no live records changed",
+            "model": args.model, "api_id": pool.models[args.model].get("api_id"), "calls": len(calls),
+            "minutes": round((time.time() - started) / 60, 1), "stopped": stopped, "topics": topics,
+            "live_records_modified": False, "publication_approved": False,
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Saved after every topic: run 39002894226 hit the job's timeout and kept nothing.
+    topics, stopped = [], ""
+    for packet in load_packets(args.packets):
+        try:
+            run(ask, [packet], topics)
+        except Exception as exc:  # keep the finished topics; the log says why it stopped
+            stopped = f"stopped after {len(topics)} topics: {type(exc).__name__}"
+            print(stopped, file=sys.stderr)
+        save()
+        if stopped:
+            break
+        topic = topics[-1]
         print(f"{topic['packet']} | facts {len(topic['facts'])} | links {len(topic['links'])} | "
-              f"unsure {len(topic['unsure_links'])} | skipped {len(topic['skipped_sources'])}", flush=True)
+              f"unsure {len(topic['unsure_links'])} | skipped {len(topic['skipped_sources'])} | "
+              f"{len(calls)} calls, {round((time.time() - started) / 60)} min", flush=True)
     return 1 if stopped else 0
 
 

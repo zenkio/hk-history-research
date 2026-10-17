@@ -26,6 +26,15 @@ This file is the durable hand-off ledger for actions that genuinely require the 
 - **Resume when:** The owner decides the intended funding model and confirms the permitted-use response, or provides non-sensitive confirmation that access/terms are resolved. Store any secret only in the appropriate private secret store, never in repository files or this public ledger.
 - **Status/evidence (2026-10-10):** Owner has not replied to Trove; monetisation remains undecided. No API key or permission has been verified. Continue independent P1 work and metadata-only discovery where permitted.
 
+### [OPEN] An AI gateway token for V2.2 extraction
+
+- **Why human interaction is required:** gateway tokens are created in the gateway's admin page, which only the owner can sign in to, and repository secrets are set by the owner.
+- **Blocks:** V2.2 extraction and linking with the gateway (owner's choice, 2026-10-17), after no free OpenRouter model could finish an extraction run.
+- **Owner decision/action:** At https://aigateway.zenkio.uk/admin, open (or create) the project for hk-history-research and copy its **build token** (starts `agw_`, free models only; not the runtime token). Save it as the `AI_GATEWAY_TOKEN` secret of this repository (Settings > Secrets and variables > Actions > New repository secret).
+- **Agent recommendation:** Use the build token: it can never spend money.
+- **Resume when:** The secret exists; a scoring run with model `Gateway Extract` no longer reports it unavailable.
+- **Status/evidence (2026-10-17):** code support merged in this repository; secret not yet set.
+
 ### [OPEN] Optional: a working Gemini API key for Flash Lite scoring
 
 - **Why human interaction is required:** API keys are created in Google AI Studio under the owner's account and stored as repository secrets by the owner.

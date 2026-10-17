@@ -35,6 +35,11 @@ CONFIG_FILE = os.path.join(SCRIPTS_DIR, "models.json")
 STATE_FILE = os.path.join(SCRIPTS_DIR, "quota_state.json")
 OPENROUTER_KEY_NAMES = ("OPENROUTER_API_KEY", "OPEN_ROUTER_KEY_RESEARCHER")
 OPENROUTER_URL = "https://openrouter.ai/api/v1"
+# The owner's AI gateway (zenkio/ai-gateway): it picks a free model for a task, from its own keys.
+GATEWAY_URL = "https://aigateway.zenkio.uk"
+GATEWAY_TOKEN_NAME = "AI_GATEWAY_TOKEN"
+# Cloudflare in front of the gateway refuses Python's default user agent (error 1010).
+USER_AGENT = "hk-history-research/1.0 (https://github.com/zenkio/hk-history-research)"
 # Free-list entries that are not general text models.
 OPENROUTER_SKIP = re.compile(r"(vl|vision|coder|math|embed|guard|audio|image|ocr)", re.I)
 EXPECTED_OUTPUT_TOKENS = 1500
@@ -151,6 +156,9 @@ class ModelPool:
         else:
             self._resolve_ids()
         self._resolve_openrouter()
+        self.gateway_token = (os.environ.get(GATEWAY_TOKEN_NAME) or "").strip()
+        if not self.gateway_token:
+            self.unavailable |= {k for k, m in self.models.items() if m.get("provider") == "gateway"}
 
     def _google_off(self, reason):
         """Stop calling Google (Gemini and Gemma) for the rest of the run. When Google rejected the key
@@ -179,7 +187,7 @@ class ModelPool:
             available = []
         ids = [a.name.split("/")[-1] for a in available]
         for m in self.models.values():
-            if m.get("provider") == "openrouter":
+            if m.get("provider") in ("openrouter", "gateway"):
                 continue
             if m["id"] in ids or not ids:
                 m["api_id"] = m["id"]
@@ -479,6 +487,44 @@ class ModelPool:
         text = data["choices"][0]["message"].get("content") or ""
         return text, [], (data.get("usage") or {}).get("total_tokens")
 
+    def _call_gateway(self, m, prompt):
+        """One llm.generate call through the AI gateway. The entry names a task and needs, never a
+        model unless it pins "models"; the models that answered are kept in m["api_id"]."""
+        options = {"task": m.get("task", "general"), "needs": m.get("needs", {})}
+        if m.get("models"):
+            options["models"] = m["models"]
+        body = json.dumps({"capability": "llm.generate", "input": {"prompt": prompt},
+                           "options": options}).encode()
+        req = urllib.request.Request(f"{GATEWAY_URL}/v1/run", data=body, headers={
+            "Authorization": f"Bearer {self.gateway_token}", "Content-Type": "application/json",
+            "User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                data = json.load(r)
+        except urllib.error.HTTPError as e:
+            raw = e.read().decode(errors="replace")
+            try:
+                err = json.loads(raw).get("error") or {}
+            except ValueError:
+                err = {}
+            code = err.get("code", "")
+            # The gateway's codes, mapped onto the messages _try_model already handles.
+            if code in ("quota_exhausted", "all_models_failed", "rate_limited"):
+                raise Exception(f"429 gateway {code}: {err.get('message', '')[:200]}")
+            raise Exception(f"{e.code} gateway {code}: {(err.get('message') or raw)[:200]}")
+        usage = data.get("usage") or {}
+        if usage.get("billing", "free") != "free" or usage.get("costUsd"):
+            # "400" makes _try_model raise RequestRejected: no paid call is ever retried.
+            raise Exception(f"400 gateway billed a paid model ({usage.get('modelId')}); free models only")
+        served = usage.get("modelId") or usage.get("model") or ""
+        with self.lock:
+            seen = [x for x in (m.get("api_id") or "").split(", ") if x]
+            if served and served not in seen:
+                m["api_id"] = ", ".join(seen + [served])
+        tokens = usage.get("tokens") or {}
+        return (data.get("output") or {}).get("text") or "", [], \
+            (tokens.get("input") or 0) + (tokens.get("output") or 0) or None
+
     def _try_model(self, key, role, prompt, search, parse, media=None):
         m = self.models[key]
         if self.cooldown.get(key, 0) > time.time():
@@ -494,6 +540,8 @@ class ModelPool:
             try:
                 if self._provider(key) == "openrouter":
                     text, sources, tokens = self._call_openrouter(m, prompt)
+                elif self._provider(key) == "gateway":
+                    text, sources, tokens = self._call_gateway(m, prompt)
                 else:
                     text, sources, tokens = self._call_google(m, prompt, search, parse is _parse_json, media)
                 with self.lock:

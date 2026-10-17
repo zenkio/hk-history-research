@@ -144,11 +144,18 @@ def test_real_corpus_white_paper_preview_keeps_unsupported_core_claim_unresolved
     if not (DEFAULT_RECORDS_DIR / "claims.jsonl").exists():
         pytest.skip("private research records are only available in the data-repo CI workspace")
     event_id = "event:15-contention-2014-beijing-issues-white-paper-on-hong-kong"
-    result = build_preview(load_records(DEFAULT_RECORDS_DIR), event_id)
+    records = load_records(DEFAULT_RECORDS_DIR)
+    result = build_preview(records, event_id)
     unresolved_ids = {item["claim_id"] for item in result["unresolved_core_claims"]}
     assert result["preview_only"] is True
     assert result["core_evidence_gate_passed"] is False
-    assert result["claims_included"] == 3
+    # The live evidence judge re-grades these claims (2026-10-17 it moved three from supported to
+    # partial), so the count follows the records: only supported claims may be included, and every
+    # other core claim must be listed as unresolved, never dropped.
+    claims = [c for c in records["claims"] if c.get("event_id") == event_id and c.get("is_current")]
+    supported = [c for c in claims if c.get("status") == "supported"]
+    assert result["claims_included"] <= len(supported)
+    assert {c["id"] for c in claims if c.get("importance") == "core" and c.get("status") != "supported"} <= unresolved_ids
     assert "claim:15-contention-2014-beijing-issues-white-paper-on-hong-kong-067e6e9272" in unresolved_ids
     assert "NOT PUBLISHED" in result["markdown"]
 

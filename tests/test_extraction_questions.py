@@ -319,3 +319,33 @@ def test_a_trial_opens_the_model_under_test_to_the_trial_limits():
     sem.open_for_trial(pool, "Gemini")
     assert pool.models["Trial"] == {"provider": "openrouter", "rpm": sem.TRIAL_RPM, "rpd": sem.TRIAL_RPD}
     assert pool.models["Gemini"] == {"provider": "google", "rpm": 15, "rpd": 20}
+
+
+def test_a_rejected_request_ends_that_models_trial_and_the_next_model_is_still_scored(tmp_path, monkeypatch):
+    # Run 38985642200: one provider answered 400 (RequestRejected) and the whole run stopped unsaved.
+    import gemini_pool
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    (packets / "topic.json").write_text(json.dumps({"sources": [RECORD]}))
+    (tmp_path / "key.json").write_text(json.dumps(KEY))
+
+    class FakePool:
+        routing = {sem.ROLE: ["Model A", "Model B"]}
+        models = {"Model A": {"api_id": "a"}, "Model B": {"api_id": "b"}}
+        cooldown = {}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            if only[0] == "Model A":
+                raise gemini_pool.RequestRejected("400 Provider returned error")
+            return parse(perfect_model(prompt)), only[0], []
+
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    out = tmp_path / "scores.json"
+    assert sem.main(["--key", str(tmp_path / "key.json"), "--packets", str(packets),
+                     "--models", "Model A,Model B", "--output", str(out)]) == 0
+    a, b = json.loads(out.read_text())["results"]
+    assert a["stopped"] == "stopped after 0 sentences: RequestRejected"
+    assert b["sentences_done"] == 1 and b["steps_passed"]["B_facts"]

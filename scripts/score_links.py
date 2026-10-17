@@ -107,7 +107,7 @@ def main(argv=None):
                         help="stop asking after this many minutes (keep it under the job's timeout)")
     args = parser.parse_args(argv)
 
-    from gemini_pool import ModelPool, QuotaExhausted
+    from gemini_pool import ModelPool, QuotaExhausted, RequestRejected
     key = json.loads(args.key.read_text(encoding="utf-8"))
     link_key = json.loads(args.link_key.read_text(encoding="utf-8"))
     topics = key_facts(key, er.load_packets(args.packets))
@@ -130,7 +130,7 @@ def main(argv=None):
             open_for_trial(pool, name)
             calls, rests = [], []
             entry.update(score_model(trial_ask(pool, name, deadline, calls, rests), topics, link_key,
-                                     stop_on=(QuotaExhausted,), deadline=deadline))
+                                     stop_on=(QuotaExhausted, RequestRejected), deadline=deadline))
             entry["calls"] = len(calls)
             entry["api_id"] = pool.models[name].get("api_id")
         results.append(entry)

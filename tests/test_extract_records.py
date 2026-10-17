@@ -160,3 +160,36 @@ def test_a_semicolon_ends_the_institution_name_too():
     # Run 38972366561 put two reports of the same newspaper in different source families.
     assert er.source_family({"institution": "Example Mail (newspaper); scan digitised by Example Archive"}) == \
         er.source_family({"institution": "Example Mail (newspaper), from its correspondent; scan digitised"})
+
+
+def test_the_time_budget_stops_extraction_and_the_finished_topics_are_saved(tmp_path, monkeypatch):
+    # Run 39002894226: extraction with a slow model hit the job's timeout and saved nothing.
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    for name in "ab":
+        (packets / f"{name}.json").write_text(json.dumps({"event_question": QUESTION, "sources": [
+            source(name, "On 3 March 1850 the harbour office opened.")]}))
+    model, clock, out = fake_model([]), [0.0], tmp_path / "records.json"
+    monkeypatch.setattr(er.time, "time", lambda: clock[0])
+
+    class FakePool:
+        routing = {er.ROLE: ["Model A"]}
+        models = {"Model A": {"api_id": "a-1"}}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            if out.exists():  # topic a is saved, so this is topic b: each question takes a minute
+                clock[0] += 60
+            return parse(model(prompt)), only[0], []
+
+    import gemini_pool
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    assert er.main(["--packets", str(packets), "--model", "Model A", "--output", str(out),
+                    "--minutes", "2"]) == 1
+    result = json.loads(out.read_text())
+    assert [t["packet"] for t in result["topics"]] == ["a.json"]
+    assert result["stopped"] == "stopped after 1 topics: OutOfTime"
+    text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
+    assert "scripts/extract_records.py --model \"$model\" --minutes 100" in text

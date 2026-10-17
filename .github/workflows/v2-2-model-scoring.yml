@@ -116,7 +116,7 @@ jobs:
             fi
           elif [[ "$MODE" == extract || "$MODE" == verify ]]; then
             model="$(cut -d, -f1 <<<"$MODELS" | xargs)"
-            python3 -u scripts/extract_records.py --model "$model" \
+            python3 -u scripts/extract_records.py --model "$model" --minutes 100 \
               --packets experiments/v2-1/source-packets \
               --output "$PRIVATE_OUTPUT/records.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
             if [[ "$MODE" == verify && $failed == 0 ]]; then

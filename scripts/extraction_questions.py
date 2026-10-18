@@ -97,6 +97,35 @@ Now the real sentence.
 Sentence: {sentence}
 """
 
+# Asked only when FACTS_PROMPT finds no fact. A sentence can name an event with a noun and no verb
+# ("the assassination of ... at No. 62, Gage Street"); run 39083483800 gave no fact for such a letter.
+EVENT_PROMPT = """Name the event in one sentence that has no verb for it.
+Copy words exactly as they are written in the sentence. Never add, change, shorten or explain words.
+Leave a line empty after the colon when the sentence does not say it.
+
+Write these 5 lines:
+EVENT
+event: the words naming what happened (a noun such as "the fire" or "the opening")
+subject: who or what it happened to (the words after "of", without "of"); empty if not named
+agent: who did it, only when the sentence names them
+when: the date or time the sentence gives for it
+where: the place the sentence gives for it
+
+Write only NONE if the sentence names no event at all.
+
+Example
+Sentence: the burning of the old market at Pier Head in 1903 by rioters
+EVENT
+event: the burning
+subject: the old market
+agent: rioters
+when: 1903
+where: Pier Head
+
+Now the real sentence.
+Sentence: {sentence}
+"""
+
 TAGS_PROMPT = """List the names in one sentence, copied exactly as they are written in it.
 people: persons or titles of persons (for example a governor)
 groups: organisations, governments, armies, companies, societies
@@ -197,14 +226,32 @@ def _retry_prompt(prompt, errors):
             "Answer again. Copy words exactly from the sentence, or leave the line empty.")
 
 
-def ask_facts(ask, sentence, log):
-    """Step B. Facts whose spans are still wrong after one retry are dropped and logged."""
-    prompt = FACTS_PROMPT.format(sentence=sentence)
-    facts = parse_facts(ask(prompt))[:MAX_FACTS]
+def parse_event(text):
+    """An EVENT block -> one fact dict whose action is the event's noun; [] for NONE."""
+    for line in _lines(text):
+        if line.upper().rstrip(":") == "EVENT":
+            break
+    else:
+        return []
+    fact = {slot: "" for slot in SLOTS}
+    fact["negated"] = False
+    for line in _lines(text):
+        label, _, value = line.partition(":")
+        label = label.strip().lower()
+        if label == "event":
+            fact["action"] = _unquote(value.strip())
+        elif label in SLOTS and label != "action":
+            fact[label] = _unquote(value.strip())
+    return [fact] if fact["action"] else []
+
+
+def _ask_checked(ask, prompt, parse, sentence, log):
+    """One question with one retry; facts whose spans are still wrong are dropped and logged."""
+    facts = parse(ask(prompt))[:MAX_FACTS]
     errors = [e for f in facts for e in fact_errors(f, sentence)]
     if errors:
         log.append({"step": "facts", "retry": errors})
-        facts = parse_facts(ask(_retry_prompt(prompt, errors)))[:MAX_FACTS]
+        facts = parse(ask(_retry_prompt(prompt, errors)))[:MAX_FACTS]
     kept = []
     for fact in facts:
         bad = fact_errors(fact, sentence)
@@ -212,6 +259,16 @@ def ask_facts(ask, sentence, log):
             log.append({"step": "facts", "dropped": fact, "errors": bad})
         else:
             kept.append(fact)
+    return kept
+
+
+def ask_facts(ask, sentence, log):
+    """Step B. With no fact found, the sentence is asked once for an event named by a noun."""
+    kept = _ask_checked(ask, FACTS_PROMPT.format(sentence=sentence), parse_facts, sentence, log)
+    if not kept:
+        kept = _ask_checked(ask, EVENT_PROMPT.format(sentence=sentence), parse_event, sentence, log)
+        if kept:
+            log.append({"step": "facts", "event_noun": kept[0]["action"]})
     return kept
 
 

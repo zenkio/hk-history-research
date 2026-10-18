@@ -180,7 +180,7 @@ def test_the_trial_role_lists_only_models_that_exist():
     assert set(trial) <= names and {"Gemma 4 31B", "Gemini 3.1 Flash Lite", "OpenRouter Large"} <= set(trial)
 
 
-@pytest.mark.parametrize("prompt", [eq.FACTS_PROMPT, eq.TAGS_PROMPT])
+@pytest.mark.parametrize("prompt", [eq.FACTS_PROMPT, eq.EVENT_PROMPT, eq.TAGS_PROMPT])
 def test_copy_prompts_show_one_sentence_and_no_research_question(prompt):
     other = "The ferry pier closed in 1851."
     text = prompt.format(sentence=other)
@@ -349,3 +349,25 @@ def test_a_rejected_request_ends_that_models_trial_and_the_next_model_is_still_s
     a, b = json.loads(out.read_text())["results"]
     assert a["stopped"] == "stopped after 0 sentences: RequestRejected"
     assert b["sentences_done"] == 1 and b["steps_passed"]["B_facts"]
+
+
+NOUN_SENTENCE = "the burning of the ferry pier at Pier Head"
+
+
+def test_a_sentence_with_no_verb_is_asked_for_the_event_its_noun_names():
+    # Run 39083483800 (PR #124): a letter's "the assassination of ... at No. 62, Gage Street" gave no
+    # fact, because the facts question wants a verb.
+    ask = scripted("NONE", "EVENT\nevent: the burning\nsubject: the ferry pier\nagent:\nwhen:\nwhere: Pier Head")
+    log = []
+    facts = eq.ask_facts(ask, NOUN_SENTENCE, log)
+    assert facts == [{"subject": "the ferry pier", "action": "the burning", "agent": "", "when": "",
+                      "where": "Pier Head", "negated": False}]
+    assert ask.prompts[1].startswith("Name the event") and log == [{"step": "facts", "event_noun": "the burning"}]
+
+
+def test_the_event_question_is_checked_like_the_facts_and_none_stays_none():
+    ask = scripted("NONE", "EVENT\nevent: the fire\nsubject:\nagent:\nwhen:\nwhere:", "NONE")
+    log = []
+    assert eq.ask_facts(ask, NOUN_SENTENCE, log) == []
+    assert 'action "the fire" is not copied from the sentence' in ask.prompts[2]
+    assert eq.ask_facts(scripted(GOOD_FACT), SENTENCE, []) and eq.parse_event("NONE") == []

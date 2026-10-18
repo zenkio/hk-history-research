@@ -193,3 +193,20 @@ def test_the_time_budget_stops_extraction_and_the_finished_topics_are_saved(tmp_
     assert result["stopped"] == "stopped after 1 topics: OutOfTime"
     text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
     assert "scripts/extract_records.py --model \"$model\" --minutes 100" in text
+
+
+def test_a_support_from_a_fact_with_no_date_or_place_does_not_confirm_them():
+    # Run 39088685255 (PR #125): a record with no date "supported" another record's exact date.
+    def fact(fid, source, family, when="", where=""):
+        return {"id": fid, "source_id": source, "family": family, "label": "claim", "year": 1850,
+                "subject": "he", "action": "opened", "when": when, "where": where, "kind": "event"}
+    dated = fact("a#1", "a", "board", when="3 March 1850", where="Pier Head")
+    letter = fact("b#1", "b", "letter")
+    placed = fact("c#1", "c", "paper", where="Pier Head")
+    er.settle([dated, letter, placed], [
+        {"a": "a#1", "b": "b#1", "kind": "supports", "same_source_family": False},
+        {"a": "a#1", "b": "c#1", "kind": "supports", "same_source_family": False}])
+    assert dated["status"] == "supported by another source"
+    assert "No other source gives its date." in dated["gaps"]
+    assert "No other source gives its place." not in dated["gaps"]
+    assert not any(g.startswith("No other source") for g in letter["gaps"])

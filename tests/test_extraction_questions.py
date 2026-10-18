@@ -355,7 +355,7 @@ NOUN_SENTENCE = "the burning of the ferry pier at Pier Head"
 
 
 def test_a_sentence_with_no_verb_is_asked_for_the_event_its_noun_names():
-    # Run 39083483800 (PR #124): a letter's "the assassination of ... at No. 62, Gage Street" gave no
+    # Run 39083483800 (PR #124): a sentence naming its event only as a noun gave no
     # fact, because the facts question wants a verb.
     ask = scripted("NONE", "EVENT\nevent: the burning\nsubject: the ferry pier\nagent:\nwhen:\nwhere: Pier Head")
     log = []

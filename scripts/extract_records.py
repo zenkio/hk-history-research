@@ -146,6 +146,13 @@ def settle(facts, links):
         fact["gaps"] = fx.gaps_for(gap_fact, fact["year"], single_source=not supported)
         if fact["gaps"] and fact["gaps"][-1].startswith("Only one source"):
             fact["gaps"][-1] = f"Only one source so far ({fact['label']}, not yet corroborated)."
+        # Run 39088685255: a record giving no date "supported" another record's exact date.
+        # A support link confirms only the details both facts state.
+        by_id = {f["id"]: f for f in facts}
+        backers = [by_id[l["b"] if l["a"] == fact["id"] else l["a"]] for l in mine if l["kind"] == "supports"]
+        for slot, what in (("when", "date"), ("where", "place")):
+            if backers and fact.get(slot) and not any(b.get(slot) for b in backers):
+                fact["gaps"].append(f"No other source gives its {what}.")
 
 
 def run(ask, packets, topics=None):

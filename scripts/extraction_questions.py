@@ -97,6 +97,10 @@ Now the real sentence.
 Sentence: {sentence}
 """
 
+FACTS_AGAIN = """
+Your previous answer wrote no fact. Write NONE only if nothing at all happened or was said to be so;
+otherwise write each fact in the FACT format above."""
+
 # Asked only when FACTS_PROMPT finds no fact. A sentence can name an event with a noun and no verb
 # ("the burning of the pier at Pier Head"); run 39083483800 gave no fact for such a sentence.
 EVENT_PROMPT = """Name the event in one sentence that has no verb for it.
@@ -263,8 +267,19 @@ def _ask_checked(ask, prompt, parse, sentence, log):
 
 
 def ask_facts(ask, sentence, log):
-    """Step B. With no fact found, the sentence is asked once for an event named by a noun."""
-    kept = _ask_checked(ask, FACTS_PROMPT.format(sentence=sentence), parse_facts, sentence, log)
+    """Step B. A first answer with no fact is asked once more (run 39125631809: the gateway answered
+    nothing for 5 plain sentences), then the sentence is asked for an event named by a noun."""
+    replies = []
+
+    def spy(prompt):
+        replies.append(ask(prompt))
+        return replies[-1]
+
+    prompt = FACTS_PROMPT.format(sentence=sentence)
+    kept = _ask_checked(spy, prompt, parse_facts, sentence, log)
+    if not kept and not any(parse_facts(r) for r in replies):
+        log.append({"step": "facts", "no_fact_in_reply": str(replies[0])[:60]})
+        kept = _ask_checked(spy, prompt + FACTS_AGAIN, parse_facts, sentence, log)
     if not kept:
         kept = _ask_checked(ask, EVENT_PROMPT.format(sentence=sentence), parse_event, sentence, log)
         if kept:

@@ -357,20 +357,28 @@ NOUN_SENTENCE = "the burning of the ferry pier at Pier Head"
 def test_a_sentence_with_no_verb_is_asked_for_the_event_its_noun_names():
     # Run 39083483800 (PR #124): a sentence naming its event only as a noun gave no
     # fact, because the facts question wants a verb.
-    ask = scripted("NONE", "EVENT\nevent: the burning\nsubject: the ferry pier\nagent:\nwhen:\nwhere: Pier Head")
+    ask = scripted("NONE", "NONE", "EVENT\nevent: the burning\nsubject: the ferry pier\nagent:\nwhen:\nwhere: Pier Head")
     log = []
     facts = eq.ask_facts(ask, NOUN_SENTENCE, log)
     assert facts == [{"subject": "the ferry pier", "action": "the burning", "agent": "", "when": "",
                       "where": "Pier Head", "negated": False}]
-    assert ask.prompts[1].startswith("Name the event") and log == [{"step": "facts", "event_noun": "the burning"}]
+    assert ask.prompts[2].startswith("Name the event") and log[-1] == {"step": "facts", "event_noun": "the burning"}
 
 
 def test_the_event_question_is_checked_like_the_facts_and_none_stays_none():
-    ask = scripted("NONE", "EVENT\nevent: the fire\nsubject:\nagent:\nwhen:\nwhere:", "NONE")
+    ask = scripted("NONE", "NONE", "EVENT\nevent: the fire\nsubject:\nagent:\nwhen:\nwhere:", "NONE", "NONE")
     log = []
     assert eq.ask_facts(ask, NOUN_SENTENCE, log) == []
-    assert 'action "the fire" is not copied from the sentence' in ask.prompts[2]
+    assert 'action "the fire" is not copied from the sentence' in ask.prompts[3]
     assert eq.ask_facts(scripted(GOOD_FACT), SENTENCE, []) and eq.parse_event("NONE") == []
+
+
+def test_a_first_answer_with_no_fact_is_asked_again_before_the_event_question():
+    # PR #128: run 39125631809 got no fact from the gateway for 5 plain sentences.
+    ask = scripted("", GOOD_FACT)
+    log = []
+    assert eq.ask_facts(ask, SENTENCE, log)
+    assert "wrote no fact" in ask.prompts[1] and log == [{"step": "facts", "no_fact_in_reply": ""}]
 
 
 def test_a_synthetic_row_brings_its_own_record_and_is_counted(tmp_path, monkeypatch):

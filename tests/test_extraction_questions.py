@@ -371,3 +371,57 @@ def test_the_event_question_is_checked_like_the_facts_and_none_stays_none():
     assert eq.ask_facts(ask, NOUN_SENTENCE, log) == []
     assert 'action "the fire" is not copied from the sentence' in ask.prompts[2]
     assert eq.ask_facts(scripted(GOOD_FACT), SENTENCE, []) and eq.parse_event("NONE") == []
+
+
+def test_a_synthetic_row_brings_its_own_record_and_is_counted(tmp_path, monkeypatch):
+    # PR #127: the answer key grew with invented sentences whose records sit in the key, not in a
+    # packet, so extraction and link scoring never see them.
+    packets = tmp_path / "packets"
+    packets.mkdir()
+    (packets / "topic.json").write_text(json.dumps({"sources": [RECORD]}))
+    synthetic = dict(KEY["sentences"][0], source_id="synthetic-01", synthetic=True)
+    key = dict(KEY, sentences=KEY["sentences"] + [synthetic],
+               records={"synthetic-01": dict(RECORD, source_id="synthetic-01", synthetic=True)})
+    (tmp_path / "key.json").write_text(json.dumps(key))
+
+    class FakePool:
+        routing = {sem.ROLE: ["Model A"]}
+        models = {"Model A": {"api_id": "a-1"}}
+
+        def remaining(self, name, role):
+            return 10
+
+        def generate_text(self, role, prompt, parse, only=None):
+            return parse(perfect_model(prompt)), only[0], []
+
+    import gemini_pool
+    monkeypatch.setattr(gemini_pool, "ModelPool", FakePool)
+    out = tmp_path / "scores.json"
+    args = ["--key", str(tmp_path / "key.json"), "--packets", str(packets), "--models", "Model A",
+            "--output", str(out)]
+    assert sem.main(args) == 0
+    saved = json.loads(out.read_text())
+    assert saved["answer_key_sentences"] == 2 and saved["answer_key_synthetic"] == 1
+    assert saved["results"][0]["sentences_done"] == 2
+    (tmp_path / "key.json").write_text(json.dumps(dict(key, records={})))
+    assert sem.main(args) == 2  # without its record the synthetic row stops the run
+
+
+def test_the_real_answer_key_copies_every_span_and_synthetic_rows_have_records():
+    from fact_extraction import SLOTS, span_errors
+    path = Path(__file__).resolve().parents[1] / "experiments" / "v2-2" / "answer-key.json"
+    if not path.exists():
+        pytest.skip("answer key is in the data repository")
+    key = json.loads(path.read_text(encoding="utf-8"))
+    ids = [r["source_id"] for r in key["sentences"]]
+    assert len(ids) == len(set(ids))
+    packets = sem.load_records(path.parents[1] / "v2-1" / "source-packets")
+    for row in key["sentences"]:
+        if row.get("synthetic"):
+            assert row["source_id"] in key["records"] and row["source_id"] not in packets
+        else:
+            assert row["source_id"] in packets
+        assert row["era"] or row["year"] is None
+        for fact in row["facts"]:
+            assert not span_errors({slot: fact[slot] for slot in SLOTS}, row["sentence"]), row["source_id"]
+        assert not span_errors({"tags": row["tags"]}, row["sentence"]), row["source_id"]

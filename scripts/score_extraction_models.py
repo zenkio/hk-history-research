@@ -166,6 +166,9 @@ def main(argv=None):
     from gemini_pool import ModelPool, QuotaExhausted, RequestRejected
     key = json.loads(args.key.read_text(encoding="utf-8"))
     records = load_records(args.packets)
+    # Synthetic rows (invented sentences) bring their own records; they are in no packet, so
+    # extraction and link scoring never touch them.
+    records.update(key.get("records", {}))
     missing = [r["source_id"] for r in key["sentences"] if r["source_id"] not in records]
     if missing:
         print(f"answer key names {len(missing)} source ids no packet has; stopping", file=sys.stderr)
@@ -203,6 +206,7 @@ def save(path, key, limit, results):
     tmp.write_text(json.dumps({
         "purpose": "v2.2 model scoring on the answer key; experiment only, no live records changed",
         "answer_key_sentences": len(key["sentences"][:limit]),
+        "answer_key_synthetic": sum(bool(r.get("synthetic")) for r in key["sentences"][:limit]),
         "bars": {"spans": SPAN_BAR, "choices": CHOICE_BAR, "invented_spans": 0},
         "results": results}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     tmp.replace(path)

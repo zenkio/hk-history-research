@@ -8,15 +8,18 @@ name: V2.2 model scoring on the answer key
 # facts only one source states; the candidates are saved for review, never added to the packets.
 # With records_run, verify reuses that run's saved extraction (runs 10-12 stopped on 504s from the
 # extraction model before the search began).
+# mode=consensus: every listed model answers the key's sentences, the answers are pooled into settled /
+# single / questioned claims with who backed each, and single claims are checked by another model
+# (owner direction 2026-10-18); history.jsonl is the day-to-day record of what each model found.
 # Sentences, answers and scores are saved only to a private experiment branch of the data repository.
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: score = models against the answer key; extract = end to end on the packets with the first model; links = linking against the link key; verify = extract, then find independent records
+        description: score = models against the answer key; consensus = several models pooled, single claims cross-checked; extract = end to end on the packets with the first model; links = linking against the link key; verify = extract, then find independent records
         required: true
         type: choice
-        options: [score, extract, links, verify]
+        options: [score, extract, links, verify, consensus]
         default: score
       models:
         description: Comma-separated model names from the fact_extraction_trial routing role
@@ -132,6 +135,13 @@ jobs:
               --packets experiments/v2-1/source-packets \
               --models "$MODELS" \
               --output "$PRIVATE_OUTPUT/links.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+          elif [[ "$MODE" == consensus ]]; then
+            python3 -u scripts/consensus_run.py --minutes 100 \
+              --key experiments/v2-2/answer-key.json \
+              --packets experiments/v2-1/source-packets \
+              --models "$MODELS" "${limit_args[@]}" \
+              --history-in experiments/v2-2/consensus-history.jsonl \
+              --output-dir "$PRIVATE_OUTPUT" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
           else
             # --minutes stays well under the job timeout, so scores are saved (run 38531845034 kept none).
             python3 -u scripts/score_extraction_models.py --minutes 100 \

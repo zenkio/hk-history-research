@@ -33,10 +33,13 @@ LINK_CHOICES = (
     # Run 38639138642 marked "in 1901" against "on 10 January 1901" as a conflict.
     ("same_fact", "They state the same fact (one may be more precise, such as a full date where the other gives the year)"),
     ("different_detail", "They describe the same event but contradict each other on a detail (a different date, place, person or action)"),
+    # Run 39088685255 marked a street address against "in his classroom" as a conflict.
+    ("compatible_detail", "They describe the same event and give different details that can both be true (such as a street address and a room)"),
     ("different_event", "They are about different steps or events of the same story"),
     ("unrelated", "They are unrelated"),
 )
-# Design §4: the same fact supports; a different detail of the same event challenges.
+# Design §4: the same fact supports; a different detail of the same event challenges; details that
+# can both be true make no link.
 LINK_KINDS = {"same_fact": "supports", "different_detail": "challenges"}
 
 LINK_PROMPT = """Two statements come from records gathered about this question: {question}

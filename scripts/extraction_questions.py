@@ -98,7 +98,7 @@ Sentence: {sentence}
 """
 
 # Asked only when FACTS_PROMPT finds no fact. A sentence can name an event with a noun and no verb
-# ("the assassination of ... at No. 62, Gage Street"); run 39083483800 gave no fact for such a letter.
+# ("the burning of the pier at Pier Head"); run 39083483800 gave no fact for such a sentence.
 EVENT_PROMPT = """Name the event in one sentence that has no verb for it.
 Copy words exactly as they are written in the sentence. Never add, change, shorten or explain words.
 Leave a line empty after the colon when the sentence does not say it.

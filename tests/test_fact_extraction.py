@@ -109,3 +109,9 @@ def test_a_missed_fact_counts_once_under_facts_found_not_again_as_a_wrong_kind_o
     result = fx.score(answers, key)
     assert result["facts_found"] == [1, 2] and result["kind"] == [1, 1] and result["subject"] == [1, 1]
     assert result["tags"] == [1, 2] and result["near_tags"] == [1, 2]  # "Pier" is near nothing in the key
+
+
+def test_a_day_without_a_year_is_a_missing_year_not_a_missing_date():
+    # Run 39083483800 (PR #124): "On 26 January" had the gap "The excerpt states no date".
+    gaps = fx.gaps_for({"subject": "a party", "when": "26 January", "where": "the beach"}, None)
+    assert "The excerpt states no year." in gaps and "The excerpt states no date." not in gaps

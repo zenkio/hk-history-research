@@ -118,7 +118,8 @@ def gaps_for(fact, year, single_source=True):
     if not fact.get("subject") and not fact.get("subject_from_notes"):
         gaps.append("The excerpt does not name who or what this is about.")
     if year is None:
-        gaps.append("The excerpt states no date.")
+        # Run 39083483800: "On 26 January" was given the gap "no date"; it has a date but no year.
+        gaps.append("The excerpt states no year." if fact.get("when") else "The excerpt states no date.")
     if not fact.get("where") and fact.get("kind", ["event"])[0] == "event":
         gaps.append("The excerpt states no place.")
     if single_source:

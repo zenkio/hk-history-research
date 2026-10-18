@@ -131,9 +131,11 @@ def test_workflow_offers_the_extract_mode_with_private_output():
     import yaml
     text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
     on = yaml.safe_load(text).get("on") or yaml.safe_load(text)[True]
-    assert on["workflow_dispatch"]["inputs"]["mode"]["options"] == ["score", "extract", "links", "verify"]
+    assert on["workflow_dispatch"]["inputs"]["mode"]["options"] == ["score", "extract", "links", "verify", "consensus"]
     assert 'scripts/extract_records.py --model' in text
     assert '--output "$PRIVATE_OUTPUT/records.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1' in text
+    # The consensus mode keeps sentences and answers private too.
+    assert '--output-dir "$PRIVATE_OUTPUT" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1' in text
 
 
 def test_a_topic_whose_question_names_no_year_takes_the_era_of_its_earliest_dated_fact():

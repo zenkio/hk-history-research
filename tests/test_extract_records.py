@@ -210,3 +210,15 @@ def test_a_support_from_a_fact_with_no_date_or_place_does_not_confirm_them():
     assert "No other source gives its date." in dated["gaps"]
     assert "No other source gives its place." not in dated["gaps"]
     assert not any(g.startswith("No other source") for g in letter["gaps"])
+
+
+def test_details_that_can_both_be_true_make_no_link():
+    # Run 39088685255 (PR #126): a street address "challenged" a record placing the event in a room.
+    labels = [label for _, label in er.LINK_CHOICES]
+    compatible = labels.index(next(l for l in labels if "can both be true" in l)) + 1
+    packet = {"event_question": QUESTION, "sources": [
+        source("a", "On 3 March 1850 the harbour office opened."),
+        source("b", "The harbour office opened on 3 March 1850.", institution="Example Gazette")]}
+    topic = er.run(fake_model([str(compatible), str(compatible)]), [("t.json", packet)])[0]
+    assert topic["links"] == [] and topic["unsure_links"] == []
+    assert er.LINK_KINDS.get("compatible_detail") is None

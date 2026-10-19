@@ -342,3 +342,135 @@ def test_gateway_entries_are_off_without_a_token_and_the_workflow_passes_one(mon
     from pathlib import Path
     flow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
     assert "AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}" in flow
+
+
+# 2026-10-19 (gateway v0.29.0): the gateway now says its real rate, busy models and Retry-After, so the
+# caller's fixed "10 a minute" is only an upper bound. PR: gateway-live-pacing.
+class LiveResponse:
+    def __init__(self, data, headers=None):
+        self.body, self.headers = json.dumps(data).encode(), headers or {}
+
+    def __enter__(self):
+        return self
+
+    def read(self, *a):
+        return self.body
+
+    def __exit__(self, *a):
+        return False
+
+
+def live_pool(make_pool, monkeypatch, replies):
+    """A gateway pool whose urlopen answers each request in turn (an exception is raised)."""
+    p = make_pool(GW, {"fact_extraction_trial": ["Gateway Extract"]})
+    p.gateway_token = "agw_test"
+    sent = []
+
+    def urlopen(req, timeout=None):
+        sent.append(req)
+        reply = replies.pop(0)
+        if isinstance(reply, Exception):
+            raise reply
+        return reply
+    monkeypatch.setattr(gp.urllib.request, "urlopen", urlopen)
+    return p, sent
+
+
+FREE = {"modelId": "m", "billing": "free", "costUsd": 0}
+
+
+def busy_error(headers, busy):
+    import urllib.error
+    body = io.BytesIO(json.dumps({"error": {"code": "quota_exhausted", "message": "none free",
+                                            "details": {"busy": busy}}}).encode())
+    return urllib.error.HTTPError(gp.GATEWAY_URL, 429, "Too Many Requests", headers, body)
+
+
+def test_the_gateways_capacity_is_read_at_the_start_and_null_is_never_a_number(make_pool, monkeypatch):
+    quota = {"models": [], "capacity": {"perMinute": 31, "minIntervalMs": 1940, "concurrency": 3, "freeNow": 4}}
+    p, sent = live_pool(make_pool, monkeypatch, [LiveResponse(quota)])
+    p._read_gateway_capacity()
+    assert sent[0].full_url == f"{gp.GATEWAY_URL}/v1/quota?task=extract&accuracy=exact"
+    live = p.gateway_live["Gateway Extract"]
+    assert live["min_interval_s"] == 1.94 and live["concurrency"] == 3 and live["next_free_at"] is None
+    # nulls from a gateway that knows nothing yet leave the earlier values, not zero
+    p._note_gateway_pace("Gateway Extract", None, None, None)
+    assert p.gateway_live["Gateway Extract"]["min_interval_s"] == 1.94
+
+
+def test_calls_are_paced_at_the_gateways_gap_but_never_faster_than_models_json(make_pool, monkeypatch):
+    slept = []
+    monkeypatch.setattr(gp.time, "sleep", slept.append)
+    p = make_pool(GW, {"fact_extraction_trial": ["Gateway Extract"]})
+    p.models["Gateway Extract"]["rpm"] = 10          # upper bound: 6 s between calls
+    p.last_call = {"Gateway Extract": gp.time.time()}
+    p.token_log = {}
+    p._note_gateway_pace("Gateway Extract", 2000, None, None)
+    gp.ModelPool._pace_locked(p, "Gateway Extract", "x", 0)
+    assert 5 < slept[0] <= 6                          # the gateway's 2 s loses to the 6 s bound
+    slept.clear()
+    p.models["Gateway Extract"]["rpm"] = 60          # bound 1 s
+    p.last_call = {"Gateway Extract": gp.time.time()}
+    gp.ModelPool._pace_locked(p, "Gateway Extract", "x", 0)
+    assert 1 < slept[0] <= 2                          # now the gateway's 2 s (no 15% margin on top) holds
+
+
+def test_a_busy_answer_rests_the_entry_for_retry_after_and_excludes_the_busy_models(make_pool, monkeypatch):
+    soon = gp.datetime.fromtimestamp(gp.time.time() + 90, __import__("datetime").timezone.utc).isoformat()
+    err = busy_error({"Retry-After": "45", "X-Gateway-Next-Free-At": soon},
+                     [{"model": "gemma-4-31b", "freeAt": soon, "reason": "resting: minute_limit"}])
+    ok = LiveResponse({"output": {"text": "FACT"}, "usage": FREE})
+    p, sent = live_pool(make_pool, monkeypatch, [err, ok])
+    assert p._try_model("Gateway Extract", "fact_extraction_trial", "x", False, str) is None
+    rest = p.cooldown["Gateway Extract"] - gp.time.time()
+    assert 40 < rest <= 45                            # Retry-After, not the blind 300 s
+    assert 40 < p.gateway_wait("Gateway Extract") <= 45
+    p.cooldown.clear()
+    monkeypatch.setattr(gp.time, "sleep", lambda s: None)
+    p.gateway_live["Gateway Extract"]["next_free_at"] = None
+    assert p._try_model("Gateway Extract", "fact_extraction_trial", "x", False, str)[0] == "FACT"
+    assert json.loads(sent[1].data)["options"]["exclude"] == ["gemma-4-31b"]
+    assert p.gateway_wait("Gateway Extract") is None  # an answer clears the rest
+
+
+def test_nothing_free_for_a_long_time_rests_the_entry_without_calling(make_pool, monkeypatch):
+    import datetime
+    far = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=30)).isoformat()
+    p, sent = live_pool(make_pool, monkeypatch, [])
+    p._note_gateway_pace("Gateway Extract", None, None, far)
+    assert p._try_model("Gateway Extract", "fact_extraction_trial", "x", False, str) is None
+    assert sent == []                                  # no request while the gateway says nothing is free
+    assert p.cooldown["Gateway Extract"] - gp.time.time() > 1700
+
+
+def test_a_short_wait_for_next_free_is_waited_out_and_the_answers_headers_update_the_pace(make_pool, monkeypatch):
+    import datetime
+    near = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(seconds=20)).isoformat()
+    slept = []
+    monkeypatch.setattr(gp.time, "sleep", slept.append)
+    ok = LiveResponse({"output": {"text": "FACT"}, "usage": FREE}, {"X-Gateway-Min-Interval-Ms": "3500"})
+    p, _ = live_pool(make_pool, monkeypatch, [ok])
+    p._note_gateway_pace("Gateway Extract", 1000, None, near)
+    assert p._try_model("Gateway Extract", "fact_extraction_trial", "x", False, str)[0] == "FACT"
+    assert 15 < slept[0] <= 20
+    live = p.gateway_live["Gateway Extract"]
+    assert live["min_interval_s"] == 3.5 and live["next_free_at"] is None
+
+
+def test_the_trial_rests_exactly_as_long_as_the_gateway_said(make_pool, monkeypatch):
+    import score_extraction_models as sem
+    slept = []
+    monkeypatch.setattr(sem.time, "sleep", slept.append)
+    p = make_pool(GW, {"fact_extraction_trial": ["Gateway Extract"]})
+    p.remaining = lambda k, r: 5
+    p.gateway_live["Gateway Extract"] = {"busy": {}, "retry_until": gp.time.time() + 30}
+    calls = []
+
+    def generate_text(role, prompt, parse, only=None):
+        calls.append(1)
+        if len(calls) == 1:
+            raise gp.QuotaExhausted("busy")
+        return ("FACT",)
+    p.generate_text = generate_text
+    assert sem.trial_ask(p, "Gateway Extract", None, [], [])("q") == "FACT"
+    assert 29 < slept[0] < 32                          # not the fixed 300 s

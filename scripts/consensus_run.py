@@ -112,6 +112,9 @@ def main(argv=None):
                                  "calls": len(calls.get(m, []))} for m in status},
                   "claims": summary(sentences), "per_model": fc.model_report(rows),
                   "since_earlier_runs": fc.changes(previous, rows) if previous else None}
+        pace = pool.gateway_summary() if hasattr(pool, "gateway_summary") else ""
+        if pace:
+            report["gateway_pace"] = pace
         out = args.output_dir
         (out / "consensus.json").write_text(json.dumps({
             "purpose": "v2.2 multi-AI consensus; experiment only, no live records changed",
@@ -125,6 +128,9 @@ def main(argv=None):
                                              stop_on=(QuotaExhausted, RequestRejected), deadline=deadline,
                                              save=save)
     save(sentences, rows, stopped)
+    pace = pool.gateway_summary() if hasattr(pool, "gateway_summary") else ""
+    if pace:
+        print(pace, flush=True)
     print(f"sentences {len(sentences)} | claims {summary(sentences)} | stopped {stopped}", flush=True)
     return 0
 

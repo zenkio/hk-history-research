@@ -92,6 +92,7 @@ def make_pool():
         p = object.__new__(gp.ModelPool)
         p.lock = threading.RLock()
         p.unavailable, p.no_media, p.cooldown, p.token_log = set(), set(), {}, {}
+        p.gateway_live, p.gateway_slots, p.gateway_seen = {}, {}, []
         p.models = {name: {"rpd": 1000, "rpm": 30, "tpm": 10 ** 6, "display": name, "api_id": name, **m}
                     for name, m in models.items()}
         p.routing = routing

@@ -122,8 +122,13 @@ def trial_ask(pool, name, deadline, calls, rests):
                 if deadline is not None and time.time() + REST_SECONDS >= deadline:
                     raise OutOfTime() from None
                 rests.append(1)
-                print(f"{name} | busy; resting {REST_SECONDS}s ({len(rests)}/{TRIAL_RESTS})")
-                time.sleep(REST_SECONDS)
+                # The gateway says when it is free again; the others get the fixed rest.
+                said = pool.gateway_wait(name) if hasattr(pool, "gateway_wait") else None
+                rest = REST_SECONDS if said is None else said + 1
+                if deadline is not None and time.time() + rest >= deadline:
+                    raise OutOfTime() from None
+                print(f"{name} | busy; resting {int(rest)}s ({len(rests)}/{TRIAL_RESTS})")
+                time.sleep(rest)
                 pool.cooldown.pop(name, None)
     return ask
 
@@ -192,6 +197,9 @@ def main(argv=None):
                                      stop_on=(QuotaExhausted, RequestRejected), deadline=deadline))
             entry["calls"] = len(calls)
             entry["api_id"] = pool.models[name].get("api_id")
+            if pool.models[name].get("provider") == "gateway":
+                entry["gateway_pace"] = pool.gateway_summary()
+                print(f"{name} | {entry['gateway_pace']}", flush=True)
         results.append(entry)
         passed = entry.get("steps_passed")
         print(f"{name} | " + (", ".join(f"{s} {'pass' if ok else 'fail'}" for s, ok in passed.items())

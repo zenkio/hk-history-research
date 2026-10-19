@@ -54,12 +54,42 @@ COOLDOWN_SECONDS = 600   # skip a model this long after it exhausts its overload
 # retrying cost run 15 ~38 minutes of the research worker. Rest the model and let the next one
 # in the routing (Gemma) take the call instead.
 RATE_LIMIT_COOLDOWN = 300
+# The gateway says when its models are free again (nextFreeAt, Retry-After, details.busy): a call
+# waits for that up to this long, and a longer wait rests the entry until then.
+GATEWAY_MAX_WAIT = 120
 # OpenRouter's daily free-model limit: 50 calls, or 1,000 once the account has bought at least
 # 10 credits (lifetime). models.json assumed 50, leaving 950 calls a day unused.
 OPENROUTER_FREE_TIER_RPD = 50
 OPENROUTER_CREDITS_RPD = 1000
 # Suffix tokens an API id may add to a configured name and still be the same model.
 ALLOWED_EXTRA = re.compile(r"^(preview|latest|exp|it|a\d+b|\d+)$")
+
+
+class GatewayBusy(Exception):
+    """The gateway answered 429 and said until when (Retry-After) and which models are busy."""
+    def __init__(self, message, retry_after=None):
+        super().__init__(message)
+        self.retry_after = retry_after
+
+
+def _parse_time(text):
+    """ISO time (the gateway's freeAt) -> epoch seconds, None when absent or unreadable."""
+    try:
+        return datetime.fromisoformat(str(text).replace("Z", "+00:00")).timestamp()
+    except (TypeError, ValueError):
+        return None
+
+
+def _positive(value):
+    """A number the gateway really sent (JSON number or header text); null, junk and zero mean
+    unknown, never a number."""
+    if isinstance(value, bool) or value is None:
+        return None
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    return number if number > 0 else None
 
 
 class QuotaExhausted(Exception):
@@ -157,8 +187,68 @@ class ModelPool:
             self._resolve_ids()
         self._resolve_openrouter()
         self.gateway_token = (os.environ.get(GATEWAY_TOKEN_NAME) or "").strip()
+        # What the gateway says about its own rate, per entry: min_interval_s, concurrency,
+        # next_free_at (epoch), retry_until (epoch), busy {model: epoch}. models.json's rpm is only
+        # the upper bound on the rate and the fallback while the gateway has said nothing.
+        self.gateway_live = {}
+        self.gateway_slots = {}
+        self.gateway_seen = []  # (time, status, advertised min interval) per call, for the report
         if not self.gateway_token:
             self.unavailable |= {k for k, m in self.models.items() if m.get("provider") == "gateway"}
+        else:
+            self._read_gateway_capacity()
+
+    def _read_gateway_capacity(self):
+        """GET /v1/quota for each gateway entry's task: the real rate, read once at the start."""
+        for key, m in self.models.items():
+            if m.get("provider") != "gateway" or key in self.unavailable:
+                continue
+            needs = m.get("needs") or {}
+            query = f"task={m.get('task', 'general')}" + (f"&accuracy={needs['accuracy']}" if needs.get("accuracy") else "")
+            req = urllib.request.Request(f"{GATEWAY_URL}/v1/quota?{query}", headers={
+                "Authorization": f"Bearer {self.gateway_token}", "User-Agent": USER_AGENT})
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    capacity = json.load(r).get("capacity") or {}
+            except Exception as e:
+                print(f"  [pool] {key}: gateway capacity unreadable ({type(e).__name__}); using the configured rate")
+                capacity = {}
+            self._note_gateway_pace(key, capacity.get("minIntervalMs"), capacity.get("concurrency"),
+                                    capacity.get("nextFreeAt") if not capacity.get("freeNow") else None)
+            live = self.gateway_live.get(key, {})
+            self.gateway_slots[key] = threading.Semaphore(int(live.get("concurrency") or 1))
+            print(f"  [pool] {key}: gateway says {capacity.get('perMinute')} a minute, min interval "
+                  f"{capacity.get('minIntervalMs')} ms, concurrency {capacity.get('concurrency')}, "
+                  f"free now {capacity.get('freeNow')}")
+
+    def _note_gateway_pace(self, key, min_interval_ms, concurrency, next_free_at):
+        """Keep what the gateway just said; a missing value keeps the earlier one, never becomes 0."""
+        with self.lock:
+            live = self.gateway_live.setdefault(key, {"busy": {}})
+            interval = _positive(min_interval_ms)
+            if interval is not None:
+                live["min_interval_s"] = interval / 1000
+            if _positive(concurrency) is not None:
+                live["concurrency"] = int(_positive(concurrency))
+            live["next_free_at"] = _parse_time(next_free_at) if next_free_at else None
+
+    def gateway_wait(self, key):
+        """Seconds until the gateway said this entry may be asked again, None if it said nothing."""
+        until = self.gateway_live.get(key, {}).get("retry_until")
+        return max(until - time.time(), 0) if until else None
+
+    def gateway_summary(self):
+        """One line for the log: what the gateway advertised against what happened."""
+        if not self.gateway_seen:
+            return ""
+        intervals = [i for _, _, i in self.gateway_seen if i]
+        stamps = [t for t, status, _ in self.gateway_seen if status == 200]
+        gaps = [b - a for a, b in zip(stamps, stamps[1:])]
+        busy = sum(status == 429 for _, status, _ in self.gateway_seen)
+        return (f"gateway: {len(self.gateway_seen)} calls, {busy} busy answers; advertised min interval "
+                f"{min(intervals):.1f}-{max(intervals):.1f}s; " if intervals else
+                f"gateway: {len(self.gateway_seen)} calls, {busy} busy answers; no pace advertised; ") + \
+            (f"mean gap between answers {sum(gaps) / len(gaps):.1f}s" if gaps else "no gaps to measure")
 
     def _google_off(self, reason):
         """Stop calling Google (Gemini and Gemma) for the rest of the run. When Google rejected the key
@@ -384,7 +474,12 @@ class ModelPool:
 
     def _pace_locked(self, key, prompt, extra):
         m = self.models[key]
-        wait = self.last_call.get(key, 0) + 60.0 / m["rpm"] * 1.15 - time.time()
+        interval = 60.0 / m["rpm"] * 1.15
+        live_gap = self.gateway_live.get(key, {}).get("min_interval_s") if m.get("provider") == "gateway" else None
+        if live_gap:
+            # The gateway's measured gap replaces the 15% margin, and never beats models.json's rate.
+            interval = max(live_gap, 60.0 / m["rpm"])
+        wait = self.last_call.get(key, 0) + interval - time.time()
         if wait > 0:
             time.sleep(wait)
         # Tokens per minute: sliding 60s window of real usage.
@@ -489,18 +584,35 @@ class ModelPool:
 
     def _call_gateway(self, m, prompt):
         """One llm.generate call through the AI gateway. The entry names a task and needs, never a
-        model unless it pins "models"; the models that answered are kept in m["api_id"]."""
+        model unless it pins "models"; the models that answered are kept in m["api_id"]. The
+        gateway's own pace (headers, busy list, Retry-After) steers the next call."""
+        key = next(k for k, v in self.models.items() if v is m)
+        live = self.gateway_live.setdefault(key, {"busy": {}})
+        now = time.time()
+        free_at = live.get("next_free_at")
+        if free_at and free_at > now:
+            if free_at - now > GATEWAY_MAX_WAIT:
+                live["retry_until"] = free_at
+                raise GatewayBusy(f"429 gateway quota_exhausted: nothing free until {int(free_at - now)}s from now",
+                                  free_at - now)
+            print(f"  [pool] {key}: gateway has nothing free for {int(free_at - now)}s; waiting")
+            time.sleep(free_at - now)
         options = {"task": m.get("task", "general"), "needs": m.get("needs", {})}
         if m.get("models"):
             options["models"] = m["models"]
+        busy = [name for name, until in live["busy"].items() if until > time.time()]
+        if busy:
+            options["exclude"] = busy  # rest exactly the models the gateway named, use the others
         body = json.dumps({"capability": "llm.generate", "input": {"prompt": prompt},
                            "options": options}).encode()
         req = urllib.request.Request(f"{GATEWAY_URL}/v1/run", data=body, headers={
             "Authorization": f"Bearer {self.gateway_token}", "Content-Type": "application/json",
             "User-Agent": USER_AGENT})
         try:
-            with urllib.request.urlopen(req, timeout=300) as r:
-                data = json.load(r)
+            with self.gateway_slots.setdefault(key, threading.Semaphore(1)):
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    headers = getattr(r, "headers", None) or {}
+                    data = json.load(r)
         except urllib.error.HTTPError as e:
             raw = e.read().decode(errors="replace")
             try:
@@ -508,10 +620,28 @@ class ModelPool:
             except ValueError:
                 err = {}
             code = err.get("code", "")
+            headers = e.headers or {}
+            self._note_gateway_pace(key, headers.get("X-Gateway-Min-Interval-Ms"), None,
+                                    headers.get("X-Gateway-Next-Free-At"))
+            self.gateway_seen.append((time.time(), e.code, live.get("min_interval_s")))
             # The gateway's codes, mapped onto the messages _try_model already handles.
             if code in ("quota_exhausted", "all_models_failed", "rate_limited"):
-                raise Exception(f"429 gateway {code}: {err.get('message', '')[:200]}")
+                retry_after = _positive(headers.get("Retry-After"))
+                for entry in (err.get("details") or {}).get("busy") or []:
+                    until = _parse_time(entry.get("freeAt"))
+                    if entry.get("model") and until:
+                        live["busy"][entry["model"]] = until
+                if retry_after:
+                    live["retry_until"] = time.time() + retry_after
+                raise GatewayBusy(f"429 gateway {code}: {err.get('message', '')[:200]}", retry_after)
             raise Exception(f"{e.code} gateway {code}: {(err.get('message') or raw)[:200]}")
+        # A free answer carries the live pace; nextFreeAt appears only when nothing is free.
+        capacity = (data.get("quota") or {}).get("capacity") or {}
+        self._note_gateway_pace(
+            key, headers.get("X-Gateway-Min-Interval-Ms") or capacity.get("minIntervalMs"), capacity.get("concurrency"),
+            headers.get("X-Gateway-Next-Free-At") or (capacity.get("nextFreeAt") if not capacity.get("freeNow") else None))
+        live.pop("retry_until", None)
+        self.gateway_seen.append((time.time(), 200, live.get("min_interval_s")))
         usage = data.get("usage") or {}
         if usage.get("billing", "free") != "free" or usage.get("costUsd"):
             # "400" makes _try_model raise RequestRejected: no paid call is ever retried.
@@ -553,6 +683,12 @@ class ModelPool:
                 print(f"  [pool] {key} returned an unusable reply, retrying")
             except Exception as e:
                 msg = str(e)
+                if isinstance(e, GatewayBusy) and not _is_daily_quota(msg):
+                    # Not before the time the gateway named (Retry-After), else the usual rest.
+                    rest = e.retry_after or RATE_LIMIT_COOLDOWN
+                    self.cooldown[key] = time.time() + rest
+                    print(f"  [pool] {key} busy at the gateway; resting it {int(rest)}s as it said")
+                    return None
                 if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
                     if _is_daily_quota(msg):
                         self._park(key, "daily quota hit")

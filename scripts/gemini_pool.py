@@ -192,6 +192,7 @@ class ModelPool:
         # the upper bound on the rate and the fallback while the gateway has said nothing.
         self.gateway_live = {}
         self.gateway_slots = {}
+        self.gateway_quota = {}  # what GET /v1/quota said at the start, kept for the private report
         self.gateway_seen = []  # (time, status, advertised min interval) per call, for the report
         if not self.gateway_token:
             self.unavailable |= {k for k, m in self.models.items() if m.get("provider") == "gateway"}
@@ -209,7 +210,11 @@ class ModelPool:
                 "Authorization": f"Bearer {self.gateway_token}", "User-Agent": USER_AGENT})
             try:
                 with urllib.request.urlopen(req, timeout=30) as r:
-                    capacity = json.load(r).get("capacity") or {}
+                    body = json.load(r)
+                capacity = body.get("capacity") or {}
+                models = [{f: x.get(f) for f in ("model", "rpm", "rpmSource", "rpmLeft", "freeAt", "freeAtReason")}
+                          for x in (body.get("models") or []) if isinstance(x, dict)]
+                self.gateway_quota[key] = {"capacity": capacity, "models": models}
             except Exception as e:
                 print(f"  [pool] {key}: gateway capacity unreadable ({type(e).__name__}); using the configured rate")
                 capacity = {}
@@ -219,7 +224,9 @@ class ModelPool:
             self.gateway_slots[key] = threading.Semaphore(int(live.get("concurrency") or 1))
             print(f"  [pool] {key}: gateway says {capacity.get('perMinute')} a minute, min interval "
                   f"{capacity.get('minIntervalMs')} ms, concurrency {capacity.get('concurrency')}, "
-                  f"free now {capacity.get('freeNow')}")
+                  f"free now {capacity.get('freeNow')}, per minute known {capacity.get('perMinuteKnown')}")
+            for x in self.gateway_quota.get(key, {}).get("models", []):
+                print(f"  [pool] {key}: model {x}")
 
     def _note_gateway_pace(self, key, min_interval_ms, concurrency, next_free_at):
         """Keep what the gateway just said; a missing value keeps the earlier one, never becomes 0."""

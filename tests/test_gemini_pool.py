@@ -398,6 +398,18 @@ def test_the_gateways_capacity_is_read_at_the_start_and_null_is_never_a_number(m
     assert p.gateway_live["Gateway Extract"]["min_interval_s"] == 1.94
 
 
+def test_the_whole_capacity_block_and_each_models_rpm_are_kept_for_the_report(make_pool, monkeypatch, capsys):
+    quota = {"capacity": {"perMinute": 4, "perMinuteKnown": False, "minIntervalMs": 15000, "freeNow": 2},
+             "models": [{"model": "m1", "rpm": 4, "rpmSource": "table", "freeAt": None, "secret": "x"}]}
+    p, _ = live_pool(make_pool, monkeypatch, [LiveResponse(quota)])
+    p._read_gateway_capacity()
+    kept = p.gateway_quota["Gateway Extract"]
+    assert kept["capacity"]["perMinuteKnown"] is False
+    assert kept["models"] == [{"model": "m1", "rpm": 4, "rpmSource": "table", "rpmLeft": None,
+                               "freeAt": None, "freeAtReason": None}]
+    assert "per minute known False" in capsys.readouterr().out
+
+
 def test_calls_are_paced_at_the_gateways_gap_but_never_faster_than_models_json(make_pool, monkeypatch):
     slept = []
     monkeypatch.setattr(gp.time, "sleep", slept.append)

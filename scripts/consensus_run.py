@@ -115,6 +115,8 @@ def main(argv=None):
         pace = pool.gateway_summary() if hasattr(pool, "gateway_summary") else ""
         if pace:
             report["gateway_pace"] = pace
+        if getattr(pool, "gateway_quota", None):
+            report["gateway_quota"] = pool.gateway_quota
         out = args.output_dir
         (out / "consensus.json").write_text(json.dumps({
             "purpose": "v2.2 multi-AI consensus; experiment only, no live records changed",

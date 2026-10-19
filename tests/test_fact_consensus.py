@@ -161,6 +161,18 @@ def test_a_run_pools_the_models_checks_single_claims_and_drops_a_model_that_runs
     assert [r["model"] for r in rows] == ["A"] and rows[0]["found"] is True
 
 
+def test_models_answer_a_sentence_side_by_side_not_one_after_another(monkeypatch):
+    import threading
+    both_inside = threading.Barrier(2, timeout=5)   # only passes if both models are asking at once
+    monkeypatch.setattr(cr, "extract_sentence", lambda ask, sentence, record: ask(sentence))
+
+    def ask(sentence):
+        both_inside.wait()
+        return answer([fact("was opened", subject="the harbour office")])
+    sentences, rows, stopped = cr.run_consensus({"A": ask, "B": ask}, KEY, {"s1": RECORD}, "9", "2026-10-19")
+    assert stopped == {} and sentences[0]["pooled"]["facts"][0]["backed_by"] == ["A", "B"]
+
+
 def test_main_stops_with_a_message_when_no_model_can_be_used(tmp_path, monkeypatch, capsys):
     packets = tmp_path / "packets"
     packets.mkdir()

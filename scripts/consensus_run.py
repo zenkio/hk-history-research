@@ -16,6 +16,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import fact_consensus as fc
@@ -32,15 +33,24 @@ def run_consensus(asks, key, records, run_id, date, limit=None, stop_on=(), dead
             for model in live:
                 stopped[model] = "time budget spent"
             break
-        answers = {}
-        for model, ask in list(live.items()):
+        records_of = records[row["source_id"]]
+
+        def one(model, ask):
             try:
-                answer = extract_sentence(ask, row["sentence"], records[row["source_id"]])
+                return model, finish(extract_sentence(ask, row["sentence"], records_of), row, records_of), None
             except (OutOfTime,) + tuple(stop_on) as exc:
+                return model, None, exc
+
+        # the models answer side by side: each is paced by its own limits, so a slow one only delays itself
+        with ThreadPoolExecutor(max_workers=len(live) or 1) as workers:
+            results = list(workers.map(lambda item: one(*item), list(live.items())))
+        answers = {}
+        for model, answer, exc in results:
+            if exc is not None:
                 stopped[model] = type(exc).__name__
                 del live[model]
-                continue
-            answers[model] = finish(answer, row, records[row["source_id"]])
+            else:
+                answers[model] = answer
         if not answers:
             break
         pooled = fc.pool_sentence(answers)

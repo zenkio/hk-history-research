@@ -691,12 +691,13 @@ class ModelPool:
                     return None
                 if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
                     if _is_daily_quota(msg):
+                        # Park this model only. The same words come from the account's allowance and
+                        # from one upstream model's own limit; stopping every OpenRouter model on one
+                        # model's 429 left Medium with a single call in run 39152869221. If the
+                        # account really is spent, each other model gets the same answer and parks
+                        # in turn. Our own count (`_count`) still ends the provider at its daily cap.
                         self._park(key, "daily quota hit")
-                        rec, cap = self._provider_used(self._provider(key))
-                        if rec is not None:
-                            # OpenRouter's free limit is account-wide: stop every model on it.
-                            rec["count"] = cap
-                            self.save()
+                        print(f"  [pool] {key} 429 said: {' '.join(msg.split())[:200]}")
                         return None
                     rate_limited += 1
                     if self._provider(key) == "openrouter" or rate_limited >= 2:

@@ -474,3 +474,28 @@ def test_the_trial_rests_exactly_as_long_as_the_gateway_said(make_pool, monkeypa
     p.generate_text = generate_text
     assert sem.trial_ask(p, "Gateway Extract", None, [], [])("q") == "FACT"
     assert 29 < slept[0] < 32                          # not the fixed 300 s
+
+
+# 2026-10-19: run 39152869221 parked OpenRouter Large on a "per day" 429 after one call and the pool
+# stopped OpenRouter Medium too, though the account's allowance (1,000 a day) was not used up.
+def test_one_openrouter_models_daily_429_parks_only_that_model(make_pool):
+    p = make_pool({"OpenRouter Large": {"provider": "openrouter"}, "OpenRouter Medium": {"provider": "openrouter"}},
+                  {"verify": ["OpenRouter Large", "OpenRouter Medium"]})
+    p.state = {"day": "d", "used": {}, "parked": {}}
+    p.config["providers"]["openrouter"]["rpd"] = 1000
+    p.save = lambda: None
+    p.remaining = lambda k, r: 0 if k in p.state["parked"] else 5
+    calls = []
+
+    def call(m, prompt):
+        calls.append(m["display"])
+        if m["display"] == "OpenRouter Large":
+            raise Exception("429 Rate limit exceeded: free-models-per-day")
+        return "ok", [], 3
+    p._call_openrouter = call
+    rec = {"count": 1}
+    p._provider_used = lambda provider: (rec, 1000)
+    assert p._try_model("OpenRouter Large", "verify", "x", False, str) is None
+    assert "OpenRouter Large" in p.state["parked"] and "OpenRouter Medium" not in p.state["parked"]
+    assert rec["count"] == 1  # the provider-wide count is not pushed to its cap
+    assert p._try_model("OpenRouter Medium", "verify", "x", False, str)[0] == "ok"

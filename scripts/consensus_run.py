@@ -24,9 +24,10 @@ from extraction_questions import extract_sentence
 from score_extraction_models import OutOfTime, ROLE, load_records, open_for_trial, trial_ask, finish
 
 
-def run_consensus(asks, key, records, run_id, date, limit=None, stop_on=(), deadline=None, save=None):
-    """asks: {model: ask}. Returns (sentences, history rows, {model: stopped reason})."""
-    live, stopped = dict(asks), {}
+def run_consensus(asks, key, records, run_id, date, limit=None, stop_on=(), deadline=None, save=None, spares=None):
+    """asks: {model: ask}. Returns (sentences, history rows, {model: stopped reason}). spares: {model: ask}
+    that join, one for each model dropped, from the next sentence on."""
+    live, stopped, spares = dict(asks), {}, dict(spares or {})
     sentences, rows = [], []
     for row in key["sentences"][:limit]:
         if deadline is not None and time.time() >= deadline:
@@ -49,6 +50,9 @@ def run_consensus(asks, key, records, run_id, date, limit=None, stop_on=(), dead
             if exc is not None:
                 stopped[model] = type(exc).__name__
                 del live[model]
+                if spares:
+                    spare = next(iter(spares))
+                    live[spare] = spares.pop(spare)
             else:
                 answers[model] = answer
         if not answers:
@@ -81,6 +85,8 @@ def main(argv=None):
     parser.add_argument("--models", required=True, help="comma-separated display names from models.json")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--history-in", type=Path, default=None, help="earlier history.jsonl, to report changes")
+    parser.add_argument("--spares", default="", help="comma-separated models that replace one that is dropped")
+    parser.add_argument("--rests", type=int, default=1, help="rests a busy model gets before it is dropped")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--minutes", type=float, default=None)
     args = parser.parse_args(argv)
@@ -95,8 +101,10 @@ def main(argv=None):
         return 2
     pool = ModelPool()
     deadline = time.time() + args.minutes * 60 if args.minutes else None
-    asks, status, calls = {}, {}, {}
-    for name in [m.strip() for m in args.models.split(",") if m.strip()]:
+    asks, status, calls, spares = {}, {}, {}, {}
+    names = [m.strip() for m in args.models.split(",") if m.strip()]
+    spare_names = [m.strip() for m in args.spares.split(",") if m.strip()]
+    for name in names + spare_names:
         if name not in pool.routing.get(ROLE, []):
             status[name] = f"not in routing role {ROLE}"
         elif pool.remaining(name, ROLE) == 0:
@@ -104,8 +112,9 @@ def main(argv=None):
         else:
             open_for_trial(pool, name)
             calls[name] = []
-            asks[name] = trial_ask(pool, name, deadline, calls[name], [])
-            status[name] = "used"
+            ask = trial_ask(pool, name, deadline, calls[name], [], max_rests=args.rests)
+            (spares if name in spare_names else asks)[name] = ask
+            status[name] = "spare" if name in spare_names else "used"
     for name, text in status.items():
         print(f"{name} | {text}", flush=True)
     if not asks:
@@ -118,7 +127,7 @@ def main(argv=None):
 
     def save(sentences, rows, stopped):
         report = {"models": {m: {"status": status[m], "stopped": stopped.get(m, ""),
-                                 "api_id": pool.models[m].get("api_id") if m in asks else None,
+                                 "api_id": pool.models[m].get("api_id") if m in asks or m in spares else None,
                                  "calls": len(calls.get(m, []))} for m in status},
                   "claims": summary(sentences), "per_model": fc.model_report(rows),
                   "since_earlier_runs": fc.changes(previous, rows) if previous else None}
@@ -138,7 +147,7 @@ def main(argv=None):
 
     sentences, rows, stopped = run_consensus(asks, key, records, run_id, date, args.limit,
                                              stop_on=(QuotaExhausted, RequestRejected), deadline=deadline,
-                                             save=save)
+                                             save=save, spares=spares)
     save(sentences, rows, stopped)
     pace = pool.gateway_summary() if hasattr(pool, "gateway_summary") else ""
     if pace:

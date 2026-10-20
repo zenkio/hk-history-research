@@ -106,8 +106,8 @@ class OutOfTime(Exception):
     """The run's time budget is spent; the sentences done so far are scored."""
 
 
-def trial_ask(pool, name, deadline, calls, rests):
-    """ask(prompt) forced onto one model: a busy model is rested and asked again (TRIAL_RESTS);
+def trial_ask(pool, name, deadline, calls, rests, max_rests=TRIAL_RESTS):
+    """ask(prompt) forced onto one model: a busy model is rested and asked again (max_rests, TRIAL_RESTS by default);
     OutOfTime when a rest would pass the deadline. calls and rests are lists the caller counts."""
     from gemini_pool import QuotaExhausted
 
@@ -117,7 +117,7 @@ def trial_ask(pool, name, deadline, calls, rests):
             try:
                 return pool.generate_text(ROLE, prompt, str, only=[name])[0]
             except QuotaExhausted:
-                if len(rests) >= TRIAL_RESTS or pool.remaining(name, ROLE) == 0:
+                if len(rests) >= max_rests or pool.remaining(name, ROLE) == 0:
                     raise
                 if deadline is not None and time.time() + REST_SECONDS >= deadline:
                     raise OutOfTime() from None
@@ -127,7 +127,7 @@ def trial_ask(pool, name, deadline, calls, rests):
                 rest = REST_SECONDS if said is None else said + 1
                 if deadline is not None and time.time() + rest >= deadline:
                     raise OutOfTime() from None
-                print(f"{name} | busy; resting {int(rest)}s ({len(rests)}/{TRIAL_RESTS})")
+                print(f"{name} | busy; resting {int(rest)}s ({len(rests)}/{max_rests})")
                 time.sleep(rest)
                 pool.cooldown.pop(name, None)
     return ask

@@ -173,6 +173,23 @@ def test_models_answer_a_sentence_side_by_side_not_one_after_another(monkeypatch
     assert stopped == {} and sentences[0]["pooled"]["facts"][0]["backed_by"] == ["A", "B"]
 
 
+def test_a_spare_model_takes_the_place_of_one_that_is_dropped(monkeypatch):
+    class OutOfQuota(Exception):
+        pass
+    monkeypatch.setattr(cr, "extract_sentence", lambda ask, sentence, record: ask(sentence))
+    key = {"sentences": [KEY["sentences"][0], KEY["sentences"][0]]}
+
+    def good(sentence):
+        return answer([fact("was opened", subject="the harbour office")])
+
+    def broken(sentence):
+        raise OutOfQuota()
+    sentences, rows, stopped = cr.run_consensus({"A": good, "B": broken}, key, {"s1": RECORD}, "9", "2026-10-20",
+                                                stop_on=(OutOfQuota,), spares={"C": good, "D": good})
+    assert stopped == {"B": "OutOfQuota"}
+    assert sentences[1]["pooled"]["facts"][0]["backed_by"] == ["A", "C"]   # C joined for the second sentence; D unused
+
+
 def test_main_stops_with_a_message_when_no_model_can_be_used(tmp_path, monkeypatch, capsys):
     packets = tmp_path / "packets"
     packets.mkdir()

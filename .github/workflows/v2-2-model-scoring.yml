@@ -31,6 +31,11 @@ on:
         required: true
         type: number
         default: 0
+      spares:
+        description: consensus only, optional - comma-separated models that replace one that is dropped for timeouts or quota
+        required: false
+        type: string
+        default: ''
       records_run:
         description: verify only, optional - reuse records.json saved by this earlier run id instead of extracting again
         required: false
@@ -93,6 +98,7 @@ jobs:
           AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
           MODE: ${{ inputs.mode }}
           MODELS: ${{ inputs.models }}
+          SPARES: ${{ inputs.spares }}
           LIMIT: ${{ inputs.limit }}
           RECORDS_RUN: ${{ inputs.records_run }}
           PRIVATE_OUTPUT: ${{ runner.temp }}/v2-2-output
@@ -139,7 +145,7 @@ jobs:
             python3 -u scripts/consensus_run.py --minutes 100 \
               --key experiments/v2-2/answer-key.json \
               --packets experiments/v2-1/source-packets \
-              --models "$MODELS" "${limit_args[@]}" \
+              --models "$MODELS" --spares "$SPARES" "${limit_args[@]}" \
               --history-in experiments/v2-2/consensus-history.jsonl \
               --output-dir "$PRIVATE_OUTPUT" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
           else

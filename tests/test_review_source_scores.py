@@ -48,3 +48,24 @@ def test_gateway_review_entry_asks_for_general_work_so_it_can_use_gemini_and_gem
     entry = next(m for m in cfg["models"] if m["display"] == "Gateway Review")
     assert entry["provider"] == "gateway" and entry["task"] == "general" and not entry["needs"].get("accuracy")
     assert "Gateway Review" in cfg["routing"]["fact_extraction_trial"]
+
+
+def test_models_answer_side_by_side_and_a_partial_result_is_kept():
+    import threading
+    barrier = threading.Barrier(2, timeout=5)  # both models must be asking at once, or this times out
+
+    def waits(prompt):
+        barrier.wait()
+        return reply(9)
+
+    saved = []
+    reviews = rs.review({"M1": waits, "M2": waits}, {"full_marks": 100, "sources": {"a": {"score": 90}}},
+                        {"a": RECORDS["a"]}, on_progress=lambda r: saved.append(dict(r)))
+    assert set(reviews["a"]["plain"]) == {"M1", "M2"} and len(saved) == 2
+
+
+def test_a_model_that_runs_out_of_time_leaves_the_others_results():
+    def out(prompt):
+        raise rs.OutOfTime()
+    reviews = rs.review({"M1": lambda p: reply(8), "M2": out}, TABLE, RECORDS)
+    assert set(reviews["a"]["plain"]) == {"M1"}

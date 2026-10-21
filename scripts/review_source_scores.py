@@ -14,6 +14,7 @@ import re
 import statistics
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from score_extraction_models import ROLE, OutOfTime, load_records, open_for_trial, trial_ask
@@ -61,26 +62,40 @@ def share_of(ratings):
     return sum(ratings.values()) / (10 * len(CRITERIA))
 
 
-def review(asks, table, records):
-    """{source_id: {kind: {model: share}}} where kind is 'plain' or 'contested' (only where the table has one)."""
+def review_one(ask, table, records):
+    """{source_id: {kind: share}} for one model; a source it cannot rate is left out."""
     out = {}
     for source_id, entry in table["sources"].items():
         record = records.get(source_id)
         if record is None:
             continue
         kinds = [("plain", False)] + ([("contested", True)] if (entry.get("by_kind") or {}).get("contested") is not None else [])
-        out[source_id] = {}
         for kind, contested in kinds:
-            shares = {}
-            for model, ask in asks.items():
-                try:
-                    ratings = parse_ratings(ask(prompt_for(record, contested)))
-                except OutOfTime:
-                    continue
-                if ratings:
-                    shares[model] = share_of(ratings)
-            out[source_id][kind] = shares
+            try:
+                ratings = parse_ratings(ask(prompt_for(record, contested)))
+            except OutOfTime:
+                return out
+            if ratings:
+                out.setdefault(source_id, {})[kind] = share_of(ratings)
     return out
+
+
+def review(asks, table, records, on_progress=None):
+    """{source_id: {kind: {model: share}}}, kind 'plain' or 'contested' (only where the table has one).
+    The models answer side by side, each paced by its own limits: run 49 asked them one after another, a
+    busy model rested for the whole run and nothing was saved. on_progress(reviews) is called whenever a
+    model finishes, so a partial result is kept."""
+    reviews = {s: {} for s in table["sources"] if s in records}
+    with ThreadPoolExecutor(max_workers=len(asks) or 1) as workers:
+        futures = {workers.submit(review_one, ask, table, records): model for model, ask in asks.items()}
+        for future in as_completed(futures):
+            model = futures[future]
+            for source_id, kinds in future.result().items():
+                for kind, share in kinds.items():
+                    reviews[source_id].setdefault(kind, {})[model] = share
+            if on_progress:
+                on_progress(reviews)
+    return reviews
 
 
 def summarise(table, reviews):
@@ -135,11 +150,14 @@ def main(argv=None):
                 raise OutOfTime() from None
         return run
 
-    reviews = review({m: guarded(a) for m, a in asks.items()}, table, records)
+    def save(reviews):
+        args.output.write_text(json.dumps({
+            "purpose": "v2.2 source reliability review by independent models; draft scores were not shown to them",
+            "models": list(asks), "reviews": reviews, "summary": summarise(table, reviews)}, indent=1), encoding="utf-8")
+
+    reviews = review({m: guarded(a) for m, a in asks.items()}, table, records, on_progress=save)
     summary = summarise(table, reviews)
-    args.output.write_text(json.dumps({
-        "purpose": "v2.2 source reliability review by independent models; draft scores were not shown to them",
-        "models": list(asks), "reviews": reviews, "summary": summary}, indent=1), encoding="utf-8")
+    save(reviews)
     print(f"reviewed {len(reviews)} sources with {len(asks)} models | compared {summary['sources_compared']} | "
           f"median spread {summary['median_spread']} | disputes {len(summary['disputes'])}")
     return 0 if asks else 2

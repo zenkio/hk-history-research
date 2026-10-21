@@ -51,21 +51,21 @@ def test_a_weak_source_cannot_challenge_a_reliable_one_but_is_noted():
 
 
 def test_a_source_clearly_below_the_origin_cannot_challenge_even_if_reliable():
-    assert not sr.may_challenge(0.66, 0.92) and sr.may_challenge(0.85, 0.92)
-    r = sr.resolve([v("a", "record", 0.92), v("b", "paper", 0.66)])
+    assert not sr.may_challenge(0.61, 0.95) and sr.may_challenge(0.75, 0.92)
+    r = sr.resolve([v("a", "record", 0.95), v("b", "paper", 0.61)])
     assert r["challenges"] == [] and len(r["noted_disputes"]) == 1
 
 
 def test_a_reliable_source_saying_something_different_challenges_and_lowers_confidence():
-    r = sr.resolve([v("a", "record", 0.92), v("b", "yearbook", 0.85)])
+    r = sr.resolve([v("a", "record", 0.92), v("b", "yearbook", 0.75)])
     assert r["status"] == sr.LEADING and r["leading"] == "a" and len(r["challenges"]) == 1
     assert r["confidence"] < 0.92
 
 
 def test_conflicts_lean_to_the_highest_score_unless_it_is_too_close_to_call():
-    r = sr.resolve([v("a", "yearbook", 0.80), v("b", "paper", 0.66)])
+    r = sr.resolve([v("a", "yearbook", 0.80), v("b", "paper", 0.62)])
     assert r["leading"] == "a" and r["status"] == sr.LEADING
-    close = sr.resolve([v("a", "yearbook", 0.80), v("b", "party", 0.78)])
+    close = sr.resolve([v("a", "yearbook", 0.80), v("b", "party", 0.70)])
     assert close["status"] == sr.DISPUTED and not close["accepted"]
     assert set(close["versions"]) == {"a", "b"}          # nothing is dropped
 

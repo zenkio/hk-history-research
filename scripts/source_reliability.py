@@ -16,8 +16,8 @@ from pathlib import Path
 TIERS = (("primary_record", 0.90), ("authoritative", 0.75), ("reliable", 0.60), ("cautious", 0.40), ("weak", 0.0))
 ACCEPT_FLOOR = 0.60       # a fact from a source below this is a lead, not yet a fact
 CHALLENGE_FLOOR = 0.60    # a source below this never challenges
-CHALLENGE_MARGIN = 0.10   # nor one this far below the source of the fact
-CLOSE_CALL = 0.05         # top versions closer than this (the scoring error of the reviewers) are disputed
+CHALLENGE_MARGIN = 0.30   # nor one this far below the source of the fact: two reviewer spreads (run 39595961375)
+CLOSE_CALL = 0.15         # top versions closer than this (the scoring error of the reviewers, median spread 0.157 in run 39595961375) are disputed
 CHALLENGE_WEIGHT = 0.5    # a standing challenge from a source at level 1.0 halves the confidence
 
 LEADING, DISPUTED = "leading", "disputed"

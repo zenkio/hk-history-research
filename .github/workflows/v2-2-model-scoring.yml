@@ -90,6 +90,20 @@ jobs:
         working-directory: data
         run: pip install -r requirements.txt --quiet
 
+      # Owner rule 2026-10-21: check every model's quota before anything runs (run 48 started with OpenRouter's day spent).
+      - name: Check quota before running
+        id: preflight
+        working-directory: data
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          MODELS: ${{ inputs.models }}
+          SPARES: ${{ inputs.spares }}
+        run: python3 -u scripts/quota_preflight.py --mode "$MODE" --models "$MODELS" --spares "$SPARES"
+
       # Model replies and sentences stay private: all script output goes to the private log.
       - name: Score models
         working-directory: data
@@ -168,7 +182,7 @@ jobs:
           exit "$failed"
 
       - name: Save scores to private experiment branch
-        if: always()
+        if: always() && steps.preflight.outcome == 'success'
         working-directory: data
         env:
           PRIVATE_OUTPUT: ${{ runner.temp }}/v2-2-output

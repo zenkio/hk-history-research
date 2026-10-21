@@ -40,3 +40,11 @@ def test_draft_far_from_the_reviewers_is_listed_as_disputed():
     reviews = {"a": {"plain": {"M1": 0.6, "M2": 0.7}}, "b": {"plain": {"M1": 0.5, "M2": 0.5}}}
     summary = rs.summarise(TABLE, reviews)
     assert [d["source_id"] for d in summary["disputes"]] == ["a"]
+
+
+def test_gateway_review_entry_asks_for_general_work_so_it_can_use_gemini_and_gemma():
+    import json
+    cfg = json.loads((Path(__file__).resolve().parents[1] / "scripts" / "models.json").read_text())
+    entry = next(m for m in cfg["models"] if m["display"] == "Gateway Review")
+    assert entry["provider"] == "gateway" and entry["task"] == "general" and not entry["needs"].get("accuracy")
+    assert "Gateway Review" in cfg["routing"]["fact_extraction_trial"]

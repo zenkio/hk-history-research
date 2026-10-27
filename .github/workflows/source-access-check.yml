@@ -1,0 +1,89 @@
+name: Source access check
+
+# Explicit dispatch (or started by the experiment queue). Fetches each candidate source in the given file
+# once to learn whether the pipeline can read it, and writes the results and the access-blocked work list
+# to a private experiment branch of the data repository. Makes no AI call. Pages are not saved.
+on:
+  workflow_dispatch:
+    inputs:
+      candidates:
+        description: Path of the candidate sources file in the data repository
+        required: true
+        type: string
+        default: experiments/spotcheck/candidate-sources.json
+
+permissions:
+  contents: read
+
+# Shares the V2.1 group, so experiment runs never overlap.
+concurrency:
+  group: source-first-v2-1
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out private research data
+        uses: actions/checkout@v7
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: data
+          fetch-depth: 0
+
+      - name: Check out research code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Overlay research code in isolated workspace
+        run: |
+          set -euo pipefail
+          rsync -a --exclude .git --exclude .github --exclude .gitignore \
+            --exclude README.md --exclude CLAUDE.md --exclude LICENSE \
+            --exclude CODE_OF_CONDUCT.md _code/ data/
+          rm -rf _code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+
+      - name: Install research dependencies
+        working-directory: data
+        run: pip install -r requirements.txt --quiet
+
+      # Source names and addresses stay private: the script prints counts only.
+      - name: Check the candidate sources
+        working-directory: data
+        env:
+          CANDIDATES: ${{ inputs.candidates }}
+          PRIVATE_OUTPUT: ${{ runner.temp }}/source-access
+        run: |
+          set -euo pipefail
+          if [[ "$CANDIDATES" != experiments/*.json || "$CANDIDATES" == *..* || ! -f "$CANDIDATES" ]]; then
+            echo "candidates must be an existing experiments/*.json file"; exit 1
+          fi
+          python3 -u scripts/source_access_check.py "$CANDIDATES" --output-dir "$PRIVATE_OUTPUT"
+
+      - name: Save results to private experiment branch
+        working-directory: data
+        env:
+          PRIVATE_OUTPUT: ${{ runner.temp }}/source-access
+          PRIVATE_BRANCH: experiment/source-access-${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$PRIVATE_BRANCH"
+          target="experiments/spotcheck/access-runs/${GITHUB_RUN_ID}"
+          mkdir -p "$target"
+          cp "$PRIVATE_OUTPUT"/* "$target/"
+          git add "$target"
+          git commit -m "experiment: source access check"
+          git push origin "$PRIVATE_BRANCH"

@@ -63,7 +63,7 @@ jobs:
         run: |
           set -euo pipefail
           busy=false
-          for wf in v2-2-model-scoring.yml v2-1-source-first.yml; do
+          for wf in v2-2-model-scoring.yml v2-1-source-first.yml source-access-check.yml; do
             for st in queued in_progress; do
               n=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$wf" --status "$st" --json databaseId --jq length)
               [ "$n" -gt 0 ] && busy=true
@@ -90,12 +90,18 @@ jobs:
         if: steps.pick.outputs.job_id != ''
         env:
           GH_TOKEN: ${{ github.token }}
+          WORKFLOW: ${{ steps.pick.outputs.workflow }}
+          CANDIDATES: ${{ steps.pick.outputs.candidates }}
           MODE: ${{ steps.pick.outputs.mode }}
           MODELS: ${{ steps.pick.outputs.models }}
           DOC: ${{ steps.pick.outputs.document }}
           LIMIT: ${{ steps.pick.outputs.limit }}
         run: |
           set -euo pipefail
+          if [ "$WORKFLOW" = source-access-check.yml ]; then
+            gh workflow run source-access-check.yml --repo "$GITHUB_REPOSITORY" --ref main -f "candidates=$CANDIDATES"
+            exit 0
+          fi
           args=(-f "mode=$MODE" -f "models=$MODELS" -f "limit=$LIMIT")
           [ -n "$DOC" ] && args+=(-f "document=$DOC")
           gh workflow run v2-2-model-scoring.yml --repo "$GITHUB_REPOSITORY" --ref main "${args[@]}"

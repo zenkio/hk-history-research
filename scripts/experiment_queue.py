@@ -15,7 +15,10 @@ import sys
 from quota_preflight import ESTIMATE, FIRST_MODEL_ONLY, check
 
 QUEUE = "experiments/queue.json"
-REQUIRED = ("id", "mode", "models", "approved_by", "approved_on")
+REQUIRED = ("id", "approved_by", "approved_on")
+# The workflows a job may start. The scoring workflow uses AI quota; the access check makes no AI call.
+SCORING = "v2-2-model-scoring.yml"
+ACCESS_CHECK = "source-access-check.yml"
 
 
 def load(path=QUEUE):
@@ -31,13 +34,20 @@ def next_job(queue):
     for job in queue.get("jobs", []):
         if job.get("status", "pending") != "pending":
             continue
-        if any(not job.get(k) for k in REQUIRED) or job["mode"] not in ESTIMATE:
+        if any(not job.get(k) for k in REQUIRED):
+            continue
+        if job.get("workflow") == ACCESS_CHECK:
+            if not job.get("candidates"):
+                continue
+        elif job.get("workflow", SCORING) != SCORING or job.get("mode") not in ESTIMATE or not job.get("models"):
             continue
         return job
     return None
 
 
 def models_of(job):
+    if job.get("workflow") == ACCESS_CHECK:
+        return []
     names = [m.strip() for m in job["models"].split(",") if m.strip()]
     return names[:1] if job["mode"] in FIRST_MODEL_ONLY else names
 
@@ -57,6 +67,8 @@ def decide(queue, pool, busy):
         return None, "no approved pending job"
     if busy:
         return None, "another experiment run is active"
+    if job.get("workflow") == ACCESS_CHECK:
+        return job, "no AI quota needed"
     problems = check(pool, models_of(job), ESTIMATE[job["mode"]])
     if problems:
         return None, f"quota does not fit job {job['id']}: " + "; ".join(problems)
@@ -81,12 +93,16 @@ def main(argv=None):
         return 0
 
     from gemini_pool import ModelPool
-    job, reason = decide(queue, ModelPool() if next_job(queue) and not args.busy else None, args.busy)
+    pending = next_job(queue)
+    needs_pool = pending and not args.busy and pending.get("workflow") != ACCESS_CHECK
+    job, reason = decide(queue, ModelPool() if needs_pool else None, args.busy)
     print(f"queue: {reason}")
     if job and os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-            for key, value in (("job_id", job["id"]), ("mode", job["mode"]), ("models", job["models"]),
-                               ("document", job.get("document", "")), ("limit", job.get("limit", 0))):
+            for key, value in (("job_id", job["id"]), ("workflow", job.get("workflow", SCORING)),
+                               ("mode", job.get("mode", "")), ("models", job.get("models", "")),
+                               ("document", job.get("document", "")), ("limit", job.get("limit", 0)),
+                               ("candidates", job.get("candidates", ""))):
                 out.write(f"{key}={value}\n")
     return 0
 

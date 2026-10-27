@@ -1,0 +1,55 @@
+name: Experiment quota report
+
+# Read-only and manual: prints how many calls each experiment model has left today and which run sizes
+# fit (model names and counts only, so the public log is safe). Makes no model call and spends no quota.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out private research data
+        uses: actions/checkout@v7
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: data
+
+      - name: Check out research code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Overlay research code in isolated workspace
+        run: |
+          set -euo pipefail
+          rsync -a --exclude .git --exclude .github --exclude .gitignore \
+            --exclude README.md --exclude CLAUDE.md --exclude LICENSE \
+            --exclude CODE_OF_CONDUCT.md _code/ data/
+          rm -rf _code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+
+      - name: Install research dependencies
+        working-directory: data
+        run: pip install -r requirements.txt --quiet
+
+      - name: Report quota
+        working-directory: data
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPEN_ROUTER_KEY_RESEARCHER: ${{ secrets.OPEN_ROUTER_KEY_RESEARCHER }}
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+        run: python3 -u scripts/quota_report.py

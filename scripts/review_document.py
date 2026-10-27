@@ -51,18 +51,23 @@ def parse_review(text):
     return {"verdict": verdict, "problems": problems[:MAX_PROBLEMS]}
 
 
+UNREADABLE = {}  # model -> its unreadable replies, saved to the private output only (never printed)
+
+
 def review(asks, document, on_progress=None):
     """{model: review or None}; the models answer side by side and a partial result is kept."""
     prompt = prompt_for(document)
     results = {}
 
-    def one(ask):
+    def one(ask, model=None):
         try:
             text = ask(prompt)
         except OutOfTime:
             print("a model ran out of time or quota before it answered")
             return None
         got = parse_review(text)
+        if got is None:
+            UNREADABLE.setdefault(model, []).append(text or "")
         if got is None:  # one shorter retry: a long answer is often cut off before its closing brace
             try:
                 text = ask(prompt + "\n\nYour answer must be short: at most 4 problems, each field under 40 words, JSON only.")
@@ -75,7 +80,7 @@ def review(asks, document, on_progress=None):
         return got
 
     with ThreadPoolExecutor(max_workers=len(asks) or 1) as workers:
-        futures = {workers.submit(one, ask): model for model, ask in asks.items()}
+        futures = {workers.submit(one, ask, model): model for model, ask in asks.items()}
         for future in as_completed(futures):
             results[futures[future]] = future.result()
             if on_progress:
@@ -121,7 +126,7 @@ def main(argv=None):
     def save(results):
         args.output.write_text(json.dumps({
             "purpose": "independent model review of a design document; models did not see each other's answers",
-            "document": args.document.name, "reviews": results, "summary": summarise(results)}, indent=1), encoding="utf-8")
+            "document": args.document.name, "reviews": results, "unreadable_replies": UNREADABLE, "summary": summarise(results)}, indent=1), encoding="utf-8")
 
     results = review({m: guarded(a) for m, a in asks.items()}, document, on_progress=save)
     save(results)

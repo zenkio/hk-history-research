@@ -48,3 +48,13 @@ def test_marking_runs_a_job_once():
 
 def test_missing_queue_file_is_an_empty_queue(tmp_path):
     assert eq.load(str(tmp_path / "none.json")) == {"jobs": []}
+
+
+def test_a_source_access_job_needs_no_models_or_quota():
+    job = {"id": "access-1", "workflow": "source-access-check.yml", "candidates": "experiments/spotcheck/candidate-sources.json",
+           "approved_by": "Zenkio", "approved_on": "2026-10-27"}
+    assert eq.next_job({"jobs": [job]})["id"] == "access-1"
+    assert eq.decide({"jobs": [job]}, None, busy=False)[0]["id"] == "access-1"
+    assert eq.decide({"jobs": [job]}, None, busy=True)[0] is None
+    assert eq.next_job({"jobs": [dict(job, candidates="")]}) is None
+    assert eq.next_job({"jobs": [dict(job, workflow="other.yml", mode="document", models="A")]}) is None

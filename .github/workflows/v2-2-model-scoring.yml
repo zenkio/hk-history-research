@@ -13,15 +13,17 @@ name: V2.2 model scoring on the answer key
 # (owner direction 2026-10-18); history.jsonl is the day-to-day record of what each model found.
 # mode=review: every listed model scores each source in experiments/v2-2/source-reliability.json from its
 # description alone (never shown the draft score); the spread sets the close-call gap, far-off drafts are listed.
+# mode=document: every listed model reviews the design document at the `document` path alone and lists objections
+# (owner rule 2026-10-26: Claude is not the only judge of the source weighting scheme).
 # Sentences, answers and scores are saved only to a private experiment branch of the data repository.
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: score = models against the answer key; consensus = several models pooled, single claims cross-checked; review = models score the draft source reliability table; extract = end to end on the packets with the first model; links = linking against the link key; verify = extract, then find independent records
+        description: score = models against the answer key; consensus = several models pooled, single claims cross-checked; review = models score the draft source reliability table; document = models critique the design document at the document path; extract = end to end on the packets with the first model; links = linking against the link key; verify = extract, then find independent records
         required: true
         type: choice
-        options: [score, extract, links, verify, consensus, review]
+        options: [score, extract, links, verify, consensus, review, document]
         default: score
       models:
         description: Comma-separated model names from the fact_extraction_trial routing role
@@ -38,6 +40,11 @@ on:
         required: false
         type: string
         default: ''
+      document:
+        description: document mode only - path of the design document in the data repository
+        required: false
+        type: string
+        default: research/SOURCE_WEIGHTING_PROPOSAL.md
       records_run:
         description: verify only, optional - reuse records.json saved by this earlier run id instead of extracting again
         required: false
@@ -117,6 +124,7 @@ jobs:
           SPARES: ${{ inputs.spares }}
           LIMIT: ${{ inputs.limit }}
           RECORDS_RUN: ${{ inputs.records_run }}
+          DOCUMENT: ${{ inputs.document }}
           PRIVATE_OUTPUT: ${{ runner.temp }}/v2-2-output
         shell: bash
         run: |
@@ -163,6 +171,13 @@ jobs:
               --packets experiments/v2-1/source-packets \
               --models "$MODELS" \
               --output "$PRIVATE_OUTPUT/source-review.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+          elif [[ "$MODE" == document ]]; then
+            if [[ "$DOCUMENT" == research/*.md && "$DOCUMENT" != *..* && -f "$DOCUMENT" ]]; then
+              python3 -u scripts/review_document.py --minutes 100 --document "$DOCUMENT" \
+                --models "$MODELS" --output "$PRIVATE_OUTPUT/document-review.json" >"$PRIVATE_OUTPUT/diagnostics.log" 2>&1 || failed=1
+            else
+              echo "document must be an existing research/*.md file" >"$PRIVATE_OUTPUT/diagnostics.log"; failed=1
+            fi
           elif [[ "$MODE" == consensus ]]; then
             python3 -u scripts/consensus_run.py --minutes 100 \
               --key experiments/v2-2/answer-key.json \

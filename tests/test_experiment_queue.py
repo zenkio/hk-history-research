@@ -58,3 +58,10 @@ def test_a_source_access_job_needs_no_models_or_quota():
     assert eq.decide({"jobs": [job]}, None, busy=True)[0] is None
     assert eq.next_job({"jobs": [dict(job, candidates="")]}) is None
     assert eq.next_job({"jobs": [dict(job, workflow="other.yml", mode="document", models="A")]}) is None
+
+
+def test_an_edition_finder_job_reads_its_queries_file_and_needs_no_quota():
+    job = {"id": "ed-1", "workflow": "edition-finder.yml", "queries": "experiments/spotcheck/edition-queries.json",
+           "approved_by": "Zenkio", "approved_on": "2026-10-27"}
+    assert eq.decide({"jobs": [job]}, None, busy=False)[0]["id"] == "ed-1"
+    assert eq.next_job({"jobs": [dict(job, queries="")]}) is None

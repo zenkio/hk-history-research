@@ -31,3 +31,19 @@ def test_models_are_asked_alone_and_a_failed_one_is_counted_not_hidden():
     summary = rd.summarise(results)
     assert summary["models_asked"] == 2 and summary["models_answered"] == 1
     assert summary["verdicts"]["needs_changes"] == 1 and summary["problems_listed"] == 1
+
+
+def test_verdict_spelling_is_normalised():
+    assert rd.parse_review('{"verdict": "Needs Changes", "problems": []}')["verdict"] == "needs_changes"
+
+
+def test_unreadable_first_answer_gets_one_shorter_retry():
+    answers = iter(["cut off {\"verdict\": \"unsound\", \"prob", GOOD])
+    seen = []
+
+    def ask(prompt):
+        seen.append(prompt)
+        return next(answers)
+
+    results = rd.review({"M1": ask}, "doc")
+    assert results["M1"]["verdict"] == "needs_changes" and len(seen) == 2 and "at most 4 problems" in seen[1]

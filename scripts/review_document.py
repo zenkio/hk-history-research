@@ -40,7 +40,7 @@ def parse_review(text):
         return None
     try:
         data = json.loads(match.group(0))
-        verdict = data["verdict"]
+        verdict = str(data["verdict"]).strip().lower().replace(" ", "_").replace("-", "_")
         raw = data["problems"]
     except (ValueError, KeyError, TypeError):
         return None
@@ -63,6 +63,13 @@ def review(asks, document, on_progress=None):
             print("a model ran out of time or quota before it answered")
             return None
         got = parse_review(text)
+        if got is None:  # one shorter retry: a long answer is often cut off before its closing brace
+            try:
+                text = ask(prompt + "\n\nYour answer must be short: at most 4 problems, each field under 40 words, JSON only.")
+            except OutOfTime:
+                print("a model ran out of time or quota on the shorter retry")
+                return None
+            got = parse_review(text)
         if got is None:  # lengths only: the reply may quote the private document
             print(f"a reply could not be read ({len(text or '')} characters)")
         return got

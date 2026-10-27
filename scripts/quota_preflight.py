@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from score_extraction_models import ROLE
 
 # Rough calls one model makes in a run of each mode (the whole answer key is 49 sentences).
-ESTIMATE = {"review": 40, "score": 520, "consensus": 520, "links": 120, "extract": 150, "verify": 150}
+ESTIMATE = {"review": 40, "document": 3, "score": 520, "consensus": 520, "links": 120, "extract": 150, "verify": 150}
 FIRST_MODEL_ONLY = ("extract", "verify")
 GATEWAY_WAIT_LIMIT = 120  # seconds; a gateway free again sooner than this is fine (the pool waits for it)
 

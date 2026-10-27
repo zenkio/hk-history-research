@@ -63,7 +63,7 @@ jobs:
         run: |
           set -euo pipefail
           busy=false
-          for wf in v2-2-model-scoring.yml v2-1-source-first.yml source-access-check.yml; do
+          for wf in v2-2-model-scoring.yml v2-1-source-first.yml source-access-check.yml edition-finder.yml; do
             for st in queued in_progress; do
               n=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$wf" --status "$st" --json databaseId --jq length)
               [ "$n" -gt 0 ] && busy=true
@@ -91,7 +91,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           WORKFLOW: ${{ steps.pick.outputs.workflow }}
-          CANDIDATES: ${{ steps.pick.outputs.candidates }}
+          INPUT: ${{ steps.pick.outputs.input }}
           MODE: ${{ steps.pick.outputs.mode }}
           MODELS: ${{ steps.pick.outputs.models }}
           DOC: ${{ steps.pick.outputs.document }}
@@ -99,7 +99,11 @@ jobs:
         run: |
           set -euo pipefail
           if [ "$WORKFLOW" = source-access-check.yml ]; then
-            gh workflow run source-access-check.yml --repo "$GITHUB_REPOSITORY" --ref main -f "candidates=$CANDIDATES"
+            gh workflow run source-access-check.yml --repo "$GITHUB_REPOSITORY" --ref main -f "candidates=$INPUT"
+            exit 0
+          fi
+          if [ "$WORKFLOW" = edition-finder.yml ]; then
+            gh workflow run edition-finder.yml --repo "$GITHUB_REPOSITORY" --ref main -f "queries=$INPUT"
             exit 0
           fi
           args=(-f "mode=$MODE" -f "models=$MODELS" -f "limit=$LIMIT")

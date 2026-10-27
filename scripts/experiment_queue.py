@@ -19,6 +19,9 @@ REQUIRED = ("id", "approved_by", "approved_on")
 # The workflows a job may start. The scoring workflow uses AI quota; the access check makes no AI call.
 SCORING = "v2-2-model-scoring.yml"
 ACCESS_CHECK = "source-access-check.yml"
+EDITION_FINDER = "edition-finder.yml"
+# Workflows that make no AI call, with the job field naming the data-repository file each one reads.
+NO_AI = {ACCESS_CHECK: "candidates", EDITION_FINDER: "queries"}
 
 
 def load(path=QUEUE):
@@ -36,8 +39,8 @@ def next_job(queue):
             continue
         if any(not job.get(k) for k in REQUIRED):
             continue
-        if job.get("workflow") == ACCESS_CHECK:
-            if not job.get("candidates"):
+        if job.get("workflow") in NO_AI:
+            if not job.get(NO_AI[job["workflow"]]):
                 continue
         elif job.get("workflow", SCORING) != SCORING or job.get("mode") not in ESTIMATE or not job.get("models"):
             continue
@@ -46,7 +49,7 @@ def next_job(queue):
 
 
 def models_of(job):
-    if job.get("workflow") == ACCESS_CHECK:
+    if job.get("workflow") in NO_AI:
         return []
     names = [m.strip() for m in job["models"].split(",") if m.strip()]
     return names[:1] if job["mode"] in FIRST_MODEL_ONLY else names
@@ -67,7 +70,7 @@ def decide(queue, pool, busy):
         return None, "no approved pending job"
     if busy:
         return None, "another experiment run is active"
-    if job.get("workflow") == ACCESS_CHECK:
+    if job.get("workflow") in NO_AI:
         return job, "no AI quota needed"
     problems = check(pool, models_of(job), ESTIMATE[job["mode"]])
     if problems:
@@ -94,7 +97,7 @@ def main(argv=None):
 
     from gemini_pool import ModelPool
     pending = next_job(queue)
-    needs_pool = pending and not args.busy and pending.get("workflow") != ACCESS_CHECK
+    needs_pool = pending and not args.busy and pending.get("workflow") not in NO_AI
     job, reason = decide(queue, ModelPool() if needs_pool else None, args.busy)
     print(f"queue: {reason}")
     if job and os.environ.get("GITHUB_OUTPUT"):
@@ -102,7 +105,7 @@ def main(argv=None):
             for key, value in (("job_id", job["id"]), ("workflow", job.get("workflow", SCORING)),
                                ("mode", job.get("mode", "")), ("models", job.get("models", "")),
                                ("document", job.get("document", "")), ("limit", job.get("limit", 0)),
-                               ("candidates", job.get("candidates", ""))):
+                               ("input", job.get(NO_AI.get(job.get("workflow"), ""), ""))):
                 out.write(f"{key}={value}\n")
     return 0
 

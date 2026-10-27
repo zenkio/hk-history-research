@@ -18,6 +18,7 @@ from score_extraction_models import ROLE
 # Rough calls one model makes in a run of each mode (the whole answer key is 49 sentences).
 ESTIMATE = {"review": 40, "document": 3, "score": 520, "consensus": 520, "links": 120, "extract": 150, "verify": 150}
 FIRST_MODEL_ONLY = ("extract", "verify")
+RUN_MINUTES = 90  # the scoring job stops its work at 100 minutes and saves what is done
 GATEWAY_WAIT_LIMIT = 120  # seconds; a gateway free again sooner than this is fine (the pool waits for it)
 
 
@@ -53,6 +54,28 @@ def gateway_problem(pool, name):
         if wait is not None and wait > GATEWAY_WAIT_LIMIT:
             return f"gateway not free for {int(wait)} s"
     return None
+
+
+def minutes_needed(pool, name, need):
+    """Minutes `need` calls take at the model's own pace: the gateway's reported minimum gap, else models.json rpm."""
+    quota = pool.gateway_quota.get(name) or {}
+    gap_ms = (quota.get("capacity") or {}).get("minIntervalMs")
+    if gap_ms:
+        return need * gap_ms / 60000
+    rpm = pool.models.get(name, {}).get("rpm")
+    return need / rpm if rpm else 0
+
+
+def pace_notes(pool, models, need):
+    """One line per model that cannot make all its calls inside the run, with the share it can make.
+    Not a stop: the scoring modes save partial results, but the owner is told before the run (2026-10-27)."""
+    notes = []
+    for name in models:
+        slow = minutes_needed(pool, name, need)
+        if slow > RUN_MINUTES:
+            notes.append(f"{name}: {need} calls need about {int(slow)} minutes at its pace; "
+                         f"about {int(100 * RUN_MINUTES / slow)}% will be done in the {RUN_MINUTES}-minute run")
+    return notes
 
 
 def check(pool, models, need, allow_unchecked=False):
@@ -105,6 +128,8 @@ def main(argv=None):
     stopping = [p for p in problems if p.split(":")[0] in names]
     for p in problems:
         print(("STOP " if p in stopping else "note ") + p)
+    for line in pace_notes(pool, names, need):
+        print("slow " + line)
     if stopping:
         print(f"quota check failed for {len(stopping)} of {len(names)} models; not starting the run")
         return 1

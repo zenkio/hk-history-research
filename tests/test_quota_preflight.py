@@ -61,3 +61,16 @@ def test_unknown_model_is_reported():
 def test_workflow_runs_the_check_before_scoring():
     text = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "v2-2-model-scoring.yml").read_text()
     assert text.index("quota_preflight.py") < text.index("name: Score models")
+
+
+def test_pace_notes_name_models_that_cannot_finish_but_do_not_stop_the_run():
+    slow = {"S": {"provider": "google", "rpm": 1}, "F": {"provider": "google", "rpm": 60}}
+    notes = qp.pace_notes(FakePool(slow), ["S", "F"], 520)
+    assert len(notes) == 1 and notes[0].startswith("S:") and "17%" in notes[0]
+    assert qp.check(FakePool(slow), ["S", "F"], 520) == []  # quota is enough; pace only warns
+
+
+def test_gateway_pace_comes_from_its_reported_minimum_gap():
+    quota = {"GW": {"capacity": {"freeNow": 3, "minIntervalMs": 12000}, "models": []}}
+    assert qp.pace_notes(FakePool(MODELS, gateway_quota=quota), ["GW"], 520)  # 104 minutes
+    assert qp.pace_notes(FakePool(MODELS, gateway_quota=quota), ["GW"], 40) == []

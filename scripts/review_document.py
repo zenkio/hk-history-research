@@ -58,9 +58,14 @@ def review(asks, document, on_progress=None):
 
     def one(ask):
         try:
-            return parse_review(ask(prompt))
+            text = ask(prompt)
         except OutOfTime:
+            print("a model ran out of time or quota before it answered")
             return None
+        got = parse_review(text)
+        if got is None:  # lengths only: the reply may quote the private document
+            print(f"a reply could not be read ({len(text or '')} characters)")
+        return got
 
     with ThreadPoolExecutor(max_workers=len(asks) or 1) as workers:
         futures = {workers.submit(one, ask): model for model, ask in asks.items()}

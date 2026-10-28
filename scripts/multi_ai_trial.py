@@ -56,11 +56,16 @@ def prompt_for(event):
             "Keep it under 700 words.")
 
 
-def request_body(event, model, seed):
-    return {"capability": "llm.generate",
+def request_body(event, model, seed, exclude=None):
+    body = {"capability": "llm.generate",
             "input": {"system": SYSTEM, "prompt": prompt_for(event)},
-            "options": {"task": "general", "models": [model], "temperature": 0, "seed": seed,
+            "options": {"task": "general", "temperature": 0, "seed": seed,
                         "maxOutputTokens": MAX_OUTPUT_TOKENS}}
+    if model.startswith("auto"):  # the gateway chooses, but never a model that already answered this event
+        body["options"]["exclude"] = list(exclude or [])
+    else:
+        body["options"]["models"] = [model]
+    return body
 
 
 def post_gateway(body, token, key):
@@ -85,7 +90,7 @@ def post_gateway(body, token, key):
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
                 continue
-            raise Exception(f"{e.code} {code}")
+            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:400]}".strip())
     raise Exception("rate_limited twice")
 
 
@@ -106,22 +111,25 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
     """Draft every event with every pinned model, then the repeat test. `post(body, key)` makes one call."""
     records, failures, last_call = [], [], {}
 
-    def ask(event, model, key):
+    def ask(event, model, key, exclude=None):
         gap = MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0))
         if gap > 0:
             sleep(gap)
         last_call[model] = time.time()
-        return record_of(event, model, post(request_body(event, model, seed), key))
+        return record_of(event, model, post(request_body(event, model, seed, exclude), key))
 
     for event in events:
+        answered = []  # models that already wrote this event (used by the "auto" entries)
         for model in models:
             try:
-                records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}"))
+                records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
+                if records[-1]["answered_model"]:
+                    answered.append(records[-1]["answered_model"])
             except QuotaExhausted:
                 failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
                 return records, [], failures
             except Exception as exc:
-                failures.append({"event": event["id"], "model": model, "error": str(exc)[:100]})
+                failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
     repeat = []
     target = next((e for e in events if e["id"] == repeat_event), None)
     if target and repeats > 1:
@@ -135,7 +143,7 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                     failures.append({"event": target["id"], "model": model, "error": "quota_exhausted"})
                     break
                 except Exception as exc:
-                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:100]})
+                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})
             if hashes:
                 repeat.append({"model": model, "calls": len(hashes), "distinct_answers": len(set(hashes))})
     return records, repeat, failures
@@ -151,6 +159,11 @@ def summarise(records, repeat, failures):
             applied[str(r["temperature_applied"])] = applied.get(str(r["temperature_applied"]), 0) + 1
         truncated = sum(1 for r in rows if r["finish_reason"] == "length")
         lines.append(f"{model}: {len(rows)} answers, temperature_applied {applied}, truncated {truncated}")
+    errors = {}
+    for f in failures:
+        errors[f["error"]] = errors.get(f["error"], 0) + 1
+    for error, count in sorted(errors.items()):
+        lines.append(f"failure x{count}: {error}")
     for row in repeat:
         lines.append(f"repeat {row['model']}: {row['calls']} calls, {row['distinct_answers']} distinct answers")
     return "\n".join(lines)
@@ -164,6 +177,7 @@ def main(argv=None):
     ap.add_argument("--seed", type=int, default=DEFAULT_SEED)
     ap.add_argument("--repeat-event", default=None)
     ap.add_argument("--repeats", type=int, default=0)
+    ap.add_argument("--limit", type=int, default=0, help="only the first N events (0 = all)")
     args = ap.parse_args(argv)
     token = (os.environ.get("AI_GATEWAY_TOKEN") or "").strip()
     if not token:
@@ -171,6 +185,8 @@ def main(argv=None):
         return 1
     events = json.loads(Path(args.events).read_text(encoding="utf-8"))
     models = [m.strip() for m in args.models.split(",") if m.strip()]
+    if args.limit:
+        events = events[:args.limit]
     if not events or not models:
         print("no events or no models")
         return 1

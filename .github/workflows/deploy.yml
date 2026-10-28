@@ -1,8 +1,17 @@
-name: Deploy maintenance site
+name: Deploy draft preview
 
-# The public history site is intentionally in maintenance mode. Do not check out or build
-# the private history corpus here: every deployment must publish only the claim-free notice.
-# Keep the schedule and push trigger so routine deployments cannot restore old history pages.
+# Draft preview (owner decision 2026-10-28, replacing the maintenance-only page of 2026-10-11): builds the
+# site from the private data repository (zenkio/hk-history-data) and publishes it to hkhistory.zenkio.uk.
+# The AI-draft pages are shown, each labelled as an unverified AI draft with its draft_model, and the whole
+# site is told to stay out of search engines (noindex on every page, no sitemap, robots.txt disallow all).
+# The Markdown, research notes and evidence state stay on the runner; only the built public site is published.
+# To go back to the maintenance page, publish scripts/prepare_maintenance_site.py output instead.
+#
+# The research pipeline runs daily at 03:17 UTC. Rebuild at 05:17 UTC to allow up to 75 minutes for
+# research plus a buffer, rather than rebuilding every 3 hours and retaining many large artifacts.
+# Keep push and manual triggers for code changes and recovery.
+#
+# DATA_REPO_TOKEN should be a fine-grained token restricted to Contents read/write on hk-history-data.
 
 on:
   push:
@@ -23,36 +32,64 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 30
     steps:
-      - name: Check out site code
+      - name: Check out the data repository
         uses: actions/checkout@v7
         with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          fetch-depth: 0
           persist-credentials: false
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          persist-credentials: false
+
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
 
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
-      - name: Build allow-listed maintenance-only output
+      - name: Install publication-record schema validator
+        run: python -m pip install --quiet "jsonschema>=4.23"
+
+      - name: Label legacy AI drafts before publication
+        run: python scripts/label_legacy_ai_drafts.py --write --quiet
+
+      - name: Validate publication eligibility
+        run: python3 scripts/publication_gate.py
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run install-plugins
+      - run: npm run quartz -- build
+
+      # Quartz's search index holds the full text of every page; keep only the opening lines.
+      - name: Trim the search index
+        run: python3 scripts/trim_search_index.py public
+
+      # Keep the draft preview out of search engines and refuse to publish if any page lacks the tag.
+      - name: Tell search engines to ignore the preview
         run: |
           set -euo pipefail
-          python tests/test_prepare_maintenance_site.py
-          python scripts/prepare_maintenance_site.py --output public
-          python - <<'PY'
-          from pathlib import Path
-          root = Path("public")
-          expected = {"index.html", "robots.txt", "CNAME"}
-          actual = {p.name for p in root.iterdir()}
-          if actual != expected:
-              raise SystemExit(f"Unexpected public output files: {sorted(actual)}")
-          html = (root / "index.html").read_text(encoding="utf-8").lower()
-          if '<meta name="robots" content="noindex, nofollow">' not in html:
-              raise SystemExit("Maintenance page is missing noindex")
-          if "sitemap:" in (root / "robots.txt").read_text(encoding="utf-8").lower():
-              raise SystemExit("Maintenance robots.txt must not advertise a sitemap")
-          print("PASS: deployment artifact contains only maintenance page, robots.txt and CNAME")
-          PY
+          python3 scripts/preview_noindex.py public
+          test ! -e public/sitemap.xml
+          grep -q '^Disallow: /$' public/robots.txt
+          if grep -qiE '^(Allow:|Sitemap:)' public/robots.txt; then echo "robots.txt must only disallow"; exit 1; fi
+          missing=$(grep -RLi 'name="robots" content="noindex' public --include='*.html' || true)
+          if [[ -n "$missing" ]]; then echo "pages without noindex:"; echo "$missing" | wc -l; exit 1; fi
+          echo "PASS: every page has noindex, no sitemap, robots.txt disallows all"
 
       - uses: actions/upload-pages-artifact@v5
         with:

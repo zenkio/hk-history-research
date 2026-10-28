@@ -1,23 +1,23 @@
-name: Maintenance site check
+name: Preview site check
 
-# Validate the maintenance-only artifact without checking out or building private history data.
+# Validate the draft-preview helpers without checking out or building private history data.
 on:
   pull_request:
     paths:
       - ".github/workflows/deploy.yml"
       - ".github/workflows/site-build.yml"
+      - "scripts/preview_noindex.py"
       - "scripts/prepare_maintenance_site.py"
-      - "site/maintenance.html"
-      - "site/robots.txt"
-      - "site/CNAME"
+      - "tests/test_preview_noindex.py"
       - "tests/test_prepare_maintenance_site.py"
+      - "site/**"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  maintenance-output:
+  preview-helpers:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -29,21 +29,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run maintenance output regression tests
-        run: python tests/test_prepare_maintenance_site.py
-
-      - name: Verify generated output is allow-listed
+      - name: Run the preview and maintenance output tests
         run: |
-          set -euo pipefail
-          python scripts/prepare_maintenance_site.py --output public
-          python - <<'PY'
-          from pathlib import Path
-          root = Path("public")
-          expected = {"index.html", "robots.txt", "CNAME"}
-          actual = {p.name for p in root.iterdir()}
-          assert actual == expected, f"Unexpected files: {sorted(actual)}"
-          html = (root / "index.html").read_text(encoding="utf-8").lower()
-          assert '<meta name="robots" content="noindex, nofollow">' in html
-          assert "sitemap:" not in (root / "robots.txt").read_text(encoding="utf-8").lower()
-          print("PASS: maintenance-only output is safe")
-          PY
+          python -m pip install --quiet pytest
+          python tests/test_prepare_maintenance_site.py
+          python -m pytest tests/test_preview_noindex.py -q

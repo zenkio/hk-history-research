@@ -86,8 +86,7 @@ jobs:
           python3 scripts/preview_noindex.py public
           test ! -e public/sitemap.xml
           grep -q '^Disallow: /$' public/robots.txt
-          ! grep -qi '^Allow:' public/robots.txt
-          ! grep -qi 'sitemap:' public/robots.txt
+          if grep -qiE '^(Allow:|Sitemap:)' public/robots.txt; then echo "robots.txt must only disallow"; exit 1; fi
           missing=$(grep -RLi 'name="robots" content="noindex' public --include='*.html' || true)
           if [[ -n "$missing" ]]; then echo "pages without noindex:"; echo "$missing" | wc -l; exit 1; fi
           echo "PASS: every page has noindex, no sitemap, robots.txt disallows all"

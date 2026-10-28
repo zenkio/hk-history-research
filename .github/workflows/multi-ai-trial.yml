@@ -17,7 +17,7 @@ on:
         type: string
         default: experiments/multi-ai/events.json
       models:
-        description: Comma-separated gateway model names, one answer each per event
+        description: Comma-separated exact model ids from /v1/models, or "list" to print the pinnable models only
         required: true
         type: string
       repeat_event:
@@ -89,8 +89,12 @@ jobs:
           PRIVATE_OUTPUT: ${{ runner.temp }}/multi-ai
         run: |
           set -euo pipefail
-          if [[ "$EVENTS" != experiments/*.json || "$EVENTS" == *..* || ! -f "$EVENTS" ]]; then
+          if [[ "$MODELS" != "list" && ( "$EVENTS" != experiments/*.json || "$EVENTS" == *..* || ! -f "$EVENTS" ) ]]; then
             echo "events must be an existing experiments/*.json file"; exit 1
+          fi
+          if [[ "$MODELS" == "list" ]]; then
+            python3 -u scripts/multi_ai_trial.py --list-models --output-dir "$PRIVATE_OUTPUT"
+            exit 0
           fi
           args=(--models "$MODELS" --output-dir "$PRIVATE_OUTPUT" --limit "${LIMIT:-0}")
           if [[ -n "$REPEAT_EVENT" ]]; then args+=(--repeat-event "$REPEAT_EVENT" --repeats "$REPEATS"); fi

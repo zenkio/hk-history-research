@@ -90,8 +90,17 @@ def post_gateway(body, token, key):
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
                 continue
-            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:400]}".strip())
+            detail = json.dumps(err.get("details"), ensure_ascii=False)[:600] if err.get("details") else ""
+            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:300]} {detail}".strip())
     raise Exception("rate_limited twice")
+
+
+def list_models(token):
+    """GET /v1/models: the exact ids that can be pinned (gateway v0.32+). Returns the parsed answer."""
+    req = urllib.request.Request(f"{GATEWAY_URL}/v1/models", headers={
+        "Authorization": f"Bearer {token}", "User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.load(r)
 
 
 def record_of(event, model, data):
@@ -110,6 +119,7 @@ def record_of(event, model, data):
 def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=time.sleep):
     """Draft every event with every pinned model, then the repeat test. `post(body, key)` makes one call."""
     records, failures, last_call = [], [], {}
+    rested = set()  # pinned models out of quota: skipped for the rest of the run, the others go on
 
     def ask(event, model, key, exclude=None):
         gap = MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0))
@@ -121,19 +131,25 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
     for event in events:
         answered = []  # models that already wrote this event (used by the "auto" entries)
         for model in models:
+            if model in rested:
+                continue
             try:
                 records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
                 if records[-1]["answered_model"]:
                     answered.append(records[-1]["answered_model"])
             except QuotaExhausted:
                 failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
-                return records, [], failures
+                rested.add(model)
+                if len(rested) == len(models):
+                    return records, [], failures
             except Exception as exc:
                 failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
     repeat = []
     target = next((e for e in events if e["id"] == repeat_event), None)
     if target and repeats > 1:
         for model in models:
+            if model in rested:
+                continue
             hashes = []
             for i in range(repeats):
                 try:
@@ -171,9 +187,10 @@ def summarise(records, repeat, failures):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("events", help="JSON file: a list of {id, title, year}")
-    ap.add_argument("--models", required=True, help="comma-separated gateway model names (pinned, one per answer)")
-    ap.add_argument("--output-dir", required=True)
+    ap.add_argument("events", nargs="?", help="JSON file: a list of {id, title, year}")
+    ap.add_argument("--models", default="", help="comma-separated gateway model names (pinned, one per answer)")
+    ap.add_argument("--list-models", action="store_true", help="print the gateway's pinnable models and stop")
+    ap.add_argument("--output-dir", default="")
     ap.add_argument("--seed", type=int, default=DEFAULT_SEED)
     ap.add_argument("--repeat-event", default=None)
     ap.add_argument("--repeats", type=int, default=0)
@@ -182,6 +199,16 @@ def main(argv=None):
     token = (os.environ.get("AI_GATEWAY_TOKEN") or "").strip()
     if not token:
         print("AI_GATEWAY_TOKEN is not set; nothing was run")
+        return 1
+    if args.list_models:
+        data = list_models(token)
+        print(json.dumps(data, ensure_ascii=False, indent=1)[:20000])
+        if args.output_dir:
+            Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+            (Path(args.output_dir) / "models.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        return 0
+    if not args.events or not args.output_dir:
+        print("events file and --output-dir are required")
         return 1
     events = json.loads(Path(args.events).read_text(encoding="utf-8"))
     models = [m.strip() for m in args.models.split(",") if m.strip()]

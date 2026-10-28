@@ -54,7 +54,7 @@ def test_quota_exhausted_stops_the_run_and_a_paid_answer_is_refused():
         raise mat.QuotaExhausted("quota_exhausted")
 
     records, _, failures = mat.run_trial(EVENTS, ["a", "b"], 1, post, sleep=lambda s: None)
-    assert records == [] and failures[0]["error"] == "quota_exhausted" and len(failures) == 1
+    assert records == [] and failures[0]["error"] == "quota_exhausted" and len(failures) == 2  # a, then b; then stop
 
     def paid(body, key):
         return answer("a", billing="paid")
@@ -117,3 +117,24 @@ def test_auto_entries_let_the_gateway_choose_but_exclude_models_that_already_ans
     assert all("models" not in o for o in bodies)
     assert [o["exclude"] for o in bodies] == [[], ["alpha-id"], ["alpha-id", "beta-id"]]
     assert [r["answered_model"] for r in records] == ["alpha-id", "beta-id", "gamma-id"]
+
+
+def test_list_models_prints_and_saves_the_gateway_list_without_events(tmp_path, monkeypatch, capsys):
+    monkeypatch.setenv("AI_GATEWAY_TOKEN", "t")
+    monkeypatch.setattr(mat, "list_models", lambda token: {"models": [{"id": "m1", "free": True}]})
+    assert mat.main(["--list-models", "--output-dir", str(tmp_path)]) == 0
+    assert '"m1"' in capsys.readouterr().out
+    assert json.loads((tmp_path / "models.json").read_text())["models"][0]["id"] == "m1"
+
+
+def test_one_model_out_of_quota_is_skipped_and_the_others_go_on():
+    # the first real run stopped after one answer because gemma-4-31b had no quota left (PR for this fix)
+    def post(body, key):
+        model = body["options"]["models"][0]
+        if model == "a":
+            raise mat.QuotaExhausted("quota_exhausted")
+        return answer(model)
+
+    records, repeat, failures = mat.run_trial(EVENTS, ["a", "b"], 1, post, repeat_event="e1", repeats=2, sleep=lambda s: None)
+    assert [r["asked_model"] for r in records] == ["b", "b"]
+    assert len(failures) == 1 and repeat == [{"model": "b", "calls": 2, "distinct_answers": 1}]

@@ -90,7 +90,8 @@ def post_gateway(body, token, key):
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
                 continue
-            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:400]}".strip())
+            detail = json.dumps(err.get("details"), ensure_ascii=False)[:600] if err.get("details") else ""
+            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:300]} {detail}".strip())
     raise Exception("rate_limited twice")
 
 

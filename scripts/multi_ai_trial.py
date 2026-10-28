@@ -85,7 +85,7 @@ def post_gateway(body, token, key):
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
                 continue
-            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:120]}".strip())
+            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:400]}".strip())
     raise Exception("rate_limited twice")
 
 
@@ -121,7 +121,7 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                 failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
                 return records, [], failures
             except Exception as exc:
-                failures.append({"event": event["id"], "model": model, "error": str(exc)[:100]})
+                failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
     repeat = []
     target = next((e for e in events if e["id"] == repeat_event), None)
     if target and repeats > 1:
@@ -135,7 +135,7 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                     failures.append({"event": target["id"], "model": model, "error": "quota_exhausted"})
                     break
                 except Exception as exc:
-                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:100]})
+                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})
             if hashes:
                 repeat.append({"model": model, "calls": len(hashes), "distinct_answers": len(set(hashes))})
     return records, repeat, failures

@@ -1,0 +1,108 @@
+name: Multi-AI draft trial
+
+# Explicit dispatch only. Several free models, each pinned through the AI gateway, draft the same events at
+# temperature 0 with a seed; the drafts and a repeat test are written to a private experiment branch of the
+# data repository. Never touches content/. The log prints counts only.
+on:
+  workflow_dispatch:
+    inputs:
+      data_ref:
+        description: Branch of the data repository to read the events file from (default main)
+        required: false
+        type: string
+        default: main
+      events:
+        description: Path of the events file in the data repository (JSON list of id, title, year)
+        required: true
+        type: string
+        default: experiments/multi-ai/events.json
+      models:
+        description: Comma-separated gateway model names, one answer each per event
+        required: true
+        type: string
+      repeat_event:
+        description: Event id for the repeat test (empty to skip)
+        required: false
+        type: string
+        default: ''
+      repeats:
+        description: Calls per model in the repeat test
+        required: false
+        type: string
+        default: '5'
+
+permissions:
+  contents: read
+
+# Shares the experiment group, so experiment runs never overlap.
+concurrency:
+  group: source-first-v2-1
+  cancel-in-progress: false
+
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out private research data
+        uses: actions/checkout@v7
+        with:
+          repository: zenkio/hk-history-data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: data
+          ref: ${{ inputs.data_ref }}
+          fetch-depth: 0
+
+      - name: Check out research code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Overlay research code in isolated workspace
+        run: |
+          set -euo pipefail
+          rsync -a --exclude .git --exclude .github --exclude .gitignore \
+            --exclude README.md --exclude CLAUDE.md --exclude LICENSE \
+            --exclude CODE_OF_CONDUCT.md _code/ data/
+          rm -rf _code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Draft the events with each model
+        working-directory: data
+        env:
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+          EVENTS: ${{ inputs.events }}
+          MODELS: ${{ inputs.models }}
+          REPEAT_EVENT: ${{ inputs.repeat_event }}
+          REPEATS: ${{ inputs.repeats }}
+          PRIVATE_OUTPUT: ${{ runner.temp }}/multi-ai
+        run: |
+          set -euo pipefail
+          if [[ "$EVENTS" != experiments/*.json || "$EVENTS" == *..* || ! -f "$EVENTS" ]]; then
+            echo "events must be an existing experiments/*.json file"; exit 1
+          fi
+          args=(--models "$MODELS" --output-dir "$PRIVATE_OUTPUT")
+          if [[ -n "$REPEAT_EVENT" ]]; then args+=(--repeat-event "$REPEAT_EVENT" --repeats "$REPEATS"); fi
+          python3 -u scripts/multi_ai_trial.py "$EVENTS" "${args[@]}"
+
+      - name: Save results to private experiment branch
+        working-directory: data
+        env:
+          PRIVATE_OUTPUT: ${{ runner.temp }}/multi-ai
+          PRIVATE_BRANCH: experiment/multi-ai-${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$PRIVATE_BRANCH"
+          target="experiments/multi-ai/runs/${GITHUB_RUN_ID}"
+          mkdir -p "$target"
+          cp "$PRIVATE_OUTPUT"/* "$target/"
+          git add "$target"
+          git commit -m "experiment: multi-AI draft trial"
+          git push origin "$PRIVATE_BRANCH"

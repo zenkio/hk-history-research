@@ -85,7 +85,7 @@ def post_gateway(body, token, key):
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
                 continue
-            raise Exception(f"{e.code} {code}")
+            raise Exception(f"{e.code} {code} {(err.get('message') or '')[:120]}".strip())
     raise Exception("rate_limited twice")
 
 
@@ -151,6 +151,11 @@ def summarise(records, repeat, failures):
             applied[str(r["temperature_applied"])] = applied.get(str(r["temperature_applied"]), 0) + 1
         truncated = sum(1 for r in rows if r["finish_reason"] == "length")
         lines.append(f"{model}: {len(rows)} answers, temperature_applied {applied}, truncated {truncated}")
+    errors = {}
+    for f in failures:
+        errors[f["error"]] = errors.get(f["error"], 0) + 1
+    for error, count in sorted(errors.items()):
+        lines.append(f"failure x{count}: {error}")
     for row in repeat:
         lines.append(f"repeat {row['model']}: {row['calls']} calls, {row['distinct_answers']} distinct answers")
     return "\n".join(lines)
@@ -164,6 +169,7 @@ def main(argv=None):
     ap.add_argument("--seed", type=int, default=DEFAULT_SEED)
     ap.add_argument("--repeat-event", default=None)
     ap.add_argument("--repeats", type=int, default=0)
+    ap.add_argument("--limit", type=int, default=0, help="only the first N events (0 = all)")
     args = ap.parse_args(argv)
     token = (os.environ.get("AI_GATEWAY_TOKEN") or "").strip()
     if not token:
@@ -171,6 +177,8 @@ def main(argv=None):
         return 1
     events = json.loads(Path(args.events).read_text(encoding="utf-8"))
     models = [m.strip() for m in args.models.split(",") if m.strip()]
+    if args.limit:
+        events = events[:args.limit]
     if not events or not models:
         print("no events or no models")
         return 1

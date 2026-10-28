@@ -85,3 +85,20 @@ def test_main_refuses_without_token(tmp_path, monkeypatch):
     events = tmp_path / "e.json"
     events.write_text(json.dumps(EVENTS))
     assert mat.main([str(events), "--models", "a", "--output-dir", str(tmp_path / "o")]) == 1
+
+
+def test_summary_counts_failures_by_error_so_a_failed_run_can_be_diagnosed():
+    out = mat.summarise([], [], [{"event": "e1", "model": "a", "error": "400 bad_request"},
+                                  {"event": "e2", "model": "a", "error": "400 bad_request"}])
+    assert "failure x2: 400 bad_request" in out
+
+
+def test_limit_takes_only_the_first_events(tmp_path, monkeypatch):
+    monkeypatch.setenv("AI_GATEWAY_TOKEN", "t")
+    seen = []
+    monkeypatch.setattr(mat, "post_gateway", lambda body, token, key: seen.append(key) or answer("m"))
+    monkeypatch.setattr(mat.time, "sleep", lambda s: None)
+    events = tmp_path / "e.json"
+    events.write_text(json.dumps(EVENTS))
+    assert mat.main([str(events), "--models", "m", "--output-dir", str(tmp_path / "o"), "--limit", "1"]) == 0
+    assert len(seen) == 1

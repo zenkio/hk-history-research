@@ -25,6 +25,11 @@ on:
         required: false
         type: string
         default: ''
+      limit:
+        description: Only the first N events (0 = all)
+        required: false
+        type: string
+        default: '0'
       repeats:
         description: Calls per model in the repeat test
         required: false
@@ -80,17 +85,19 @@ jobs:
           MODELS: ${{ inputs.models }}
           REPEAT_EVENT: ${{ inputs.repeat_event }}
           REPEATS: ${{ inputs.repeats }}
+          LIMIT: ${{ inputs.limit }}
           PRIVATE_OUTPUT: ${{ runner.temp }}/multi-ai
         run: |
           set -euo pipefail
           if [[ "$EVENTS" != experiments/*.json || "$EVENTS" == *..* || ! -f "$EVENTS" ]]; then
             echo "events must be an existing experiments/*.json file"; exit 1
           fi
-          args=(--models "$MODELS" --output-dir "$PRIVATE_OUTPUT")
+          args=(--models "$MODELS" --output-dir "$PRIVATE_OUTPUT" --limit "${LIMIT:-0}")
           if [[ -n "$REPEAT_EVENT" ]]; then args+=(--repeat-event "$REPEAT_EVENT" --repeats "$REPEATS"); fi
           python3 -u scripts/multi_ai_trial.py "$EVENTS" "${args[@]}"
 
       - name: Save results to private experiment branch
+        if: always()
         working-directory: data
         env:
           PRIVATE_OUTPUT: ${{ runner.temp }}/multi-ai

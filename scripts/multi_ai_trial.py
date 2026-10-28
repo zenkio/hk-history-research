@@ -118,6 +118,7 @@ def record_of(event, model, data):
 def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=time.sleep):
     """Draft every event with every pinned model, then the repeat test. `post(body, key)` makes one call."""
     records, failures, last_call = [], [], {}
+    rested = set()  # pinned models out of quota: skipped for the rest of the run, the others go on
 
     def ask(event, model, key, exclude=None):
         gap = MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0))
@@ -129,19 +130,25 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
     for event in events:
         answered = []  # models that already wrote this event (used by the "auto" entries)
         for model in models:
+            if model in rested:
+                continue
             try:
                 records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
                 if records[-1]["answered_model"]:
                     answered.append(records[-1]["answered_model"])
             except QuotaExhausted:
                 failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
-                return records, [], failures
+                rested.add(model)
+                if len(rested) == len(models):
+                    return records, [], failures
             except Exception as exc:
                 failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
     repeat = []
     target = next((e for e in events if e["id"] == repeat_event), None)
     if target and repeats > 1:
         for model in models:
+            if model in rested:
+                continue
             hashes = []
             for i in range(repeats):
                 try:

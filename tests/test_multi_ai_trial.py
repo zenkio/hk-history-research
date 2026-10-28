@@ -102,3 +102,18 @@ def test_limit_takes_only_the_first_events(tmp_path, monkeypatch):
     events.write_text(json.dumps(EVENTS))
     assert mat.main([str(events), "--models", "m", "--output-dir", str(tmp_path / "o"), "--limit", "1"]) == 0
     assert len(seen) == 1
+
+
+def test_auto_entries_let_the_gateway_choose_but_exclude_models_that_already_answered():
+    bodies = []
+    names = iter(["alpha", "beta", "gamma"])
+
+    def post(body, key):
+        bodies.append(body["options"])
+        return answer(next(names))
+
+    records, _, failures = mat.run_trial(EVENTS[:1], ["auto1", "auto2", "auto3"], 1, post, sleep=lambda s: None)
+    assert not failures and len(records) == 3
+    assert all("models" not in o for o in bodies)
+    assert [o["exclude"] for o in bodies] == [[], ["alpha-id"], ["alpha-id", "beta-id"]]
+    assert [r["answered_model"] for r in records] == ["alpha-id", "beta-id", "gamma-id"]

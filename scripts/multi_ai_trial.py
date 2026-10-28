@@ -56,11 +56,16 @@ def prompt_for(event):
             "Keep it under 700 words.")
 
 
-def request_body(event, model, seed):
-    return {"capability": "llm.generate",
+def request_body(event, model, seed, exclude=None):
+    body = {"capability": "llm.generate",
             "input": {"system": SYSTEM, "prompt": prompt_for(event)},
-            "options": {"task": "general", "models": [model], "temperature": 0, "seed": seed,
+            "options": {"task": "general", "temperature": 0, "seed": seed,
                         "maxOutputTokens": MAX_OUTPUT_TOKENS}}
+    if model.startswith("auto"):  # the gateway chooses, but never a model that already answered this event
+        body["options"]["exclude"] = list(exclude or [])
+    else:
+        body["options"]["models"] = [model]
+    return body
 
 
 def post_gateway(body, token, key):
@@ -106,17 +111,20 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
     """Draft every event with every pinned model, then the repeat test. `post(body, key)` makes one call."""
     records, failures, last_call = [], [], {}
 
-    def ask(event, model, key):
+    def ask(event, model, key, exclude=None):
         gap = MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0))
         if gap > 0:
             sleep(gap)
         last_call[model] = time.time()
-        return record_of(event, model, post(request_body(event, model, seed), key))
+        return record_of(event, model, post(request_body(event, model, seed, exclude), key))
 
     for event in events:
+        answered = []  # models that already wrote this event (used by the "auto" entries)
         for model in models:
             try:
-                records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}"))
+                records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
+                if records[-1]["answered_model"]:
+                    answered.append(records[-1]["answered_model"])
             except QuotaExhausted:
                 failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
                 return records, [], failures

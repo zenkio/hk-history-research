@@ -94,6 +94,14 @@ def post_gateway(body, token, key):
     raise Exception("rate_limited twice")
 
 
+def list_models(token):
+    """GET /v1/models: the exact ids that can be pinned (gateway v0.32+). Returns the parsed answer."""
+    req = urllib.request.Request(f"{GATEWAY_URL}/v1/models", headers={
+        "Authorization": f"Bearer {token}", "User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.load(r)
+
+
 def record_of(event, model, data):
     """What is stored for one answer: the text plus what the gateway says it really did."""
     choice = data.get("choice") or {}
@@ -171,9 +179,10 @@ def summarise(records, repeat, failures):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("events", help="JSON file: a list of {id, title, year}")
-    ap.add_argument("--models", required=True, help="comma-separated gateway model names (pinned, one per answer)")
-    ap.add_argument("--output-dir", required=True)
+    ap.add_argument("events", nargs="?", help="JSON file: a list of {id, title, year}")
+    ap.add_argument("--models", default="", help="comma-separated gateway model names (pinned, one per answer)")
+    ap.add_argument("--list-models", action="store_true", help="print the gateway's pinnable models and stop")
+    ap.add_argument("--output-dir", default="")
     ap.add_argument("--seed", type=int, default=DEFAULT_SEED)
     ap.add_argument("--repeat-event", default=None)
     ap.add_argument("--repeats", type=int, default=0)
@@ -182,6 +191,16 @@ def main(argv=None):
     token = (os.environ.get("AI_GATEWAY_TOKEN") or "").strip()
     if not token:
         print("AI_GATEWAY_TOKEN is not set; nothing was run")
+        return 1
+    if args.list_models:
+        data = list_models(token)
+        print(json.dumps(data, ensure_ascii=False, indent=1)[:20000])
+        if args.output_dir:
+            Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+            (Path(args.output_dir) / "models.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        return 0
+    if not args.events or not args.output_dir:
+        print("events file and --output-dir are required")
         return 1
     events = json.loads(Path(args.events).read_text(encoding="utf-8"))
     models = [m.strip() for m in args.models.split(",") if m.strip()]

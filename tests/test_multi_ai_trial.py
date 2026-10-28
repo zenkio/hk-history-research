@@ -117,3 +117,11 @@ def test_auto_entries_let_the_gateway_choose_but_exclude_models_that_already_ans
     assert all("models" not in o for o in bodies)
     assert [o["exclude"] for o in bodies] == [[], ["alpha-id"], ["alpha-id", "beta-id"]]
     assert [r["answered_model"] for r in records] == ["alpha-id", "beta-id", "gamma-id"]
+
+
+def test_list_models_prints_and_saves_the_gateway_list_without_events(tmp_path, monkeypatch, capsys):
+    monkeypatch.setenv("AI_GATEWAY_TOKEN", "t")
+    monkeypatch.setattr(mat, "list_models", lambda token: {"models": [{"id": "m1", "free": True}]})
+    assert mat.main(["--list-models", "--output-dir", str(tmp_path)]) == 0
+    assert '"m1"' in capsys.readouterr().out
+    assert json.loads((tmp_path / "models.json").read_text())["models"][0]["id"] == "m1"

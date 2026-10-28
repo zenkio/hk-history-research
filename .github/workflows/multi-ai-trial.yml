@@ -6,6 +6,11 @@ name: Multi-AI draft trial
 on:
   workflow_dispatch:
     inputs:
+      data_ref:
+        description: Branch of the data repository to read the events file from (default main)
+        required: false
+        type: string
+        default: main
       events:
         description: Path of the events file in the data repository (JSON list of id, title, year)
         required: true
@@ -45,6 +50,7 @@ jobs:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}
           path: data
+          ref: ${{ inputs.data_ref }}
           fetch-depth: 0
 
       - name: Check out research code

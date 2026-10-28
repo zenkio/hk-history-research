@@ -136,11 +136,19 @@ def test_robots_txt_blocks_ai_crawlers_and_maintenance_output_is_published():
         assert f"User-agent: {bot}\n" in blocked + "\n", bot
     assert "User-agent: Googlebot" not in text, "search engines must stay allowed"
     assert "Sitemap: https://hkhistory.zenkio.uk/sitemap.xml" in text
-    for name in ("deploy.yml", "site-build.yml"):
-        config = workflow(name)
-        steps = [step for job in config["jobs"].values() for step in job["steps"]]
-        assert any("prepare_maintenance_site.py" in step.get("run", "") for step in steps), name
-        assert not any(step.get("with", {}).get("repository") == "zenkio/hk-history-data" for step in steps), name
+    # Draft preview (2026-10-28): the deploy builds the AI-draft site but must tell search engines to
+    # ignore it, and must not publish anything that failed the publication gate.
+    steps = [step for job in workflow("deploy.yml")["jobs"].values() for step in job["steps"]]
+    runs = " ".join(step.get("run", "") for step in steps)
+    assert "label_legacy_ai_drafts.py" in runs and "publication_gate.py" in runs
+    assert runs.index("publication_gate.py") < runs.index("quartz")
+    assert runs.index("quartz") < runs.index("preview_noindex.py")
+    assert "site/robots.txt" not in runs, "the preview must not publish the permissive robots.txt"
+    uploads = [i for i, step in enumerate(steps) if "upload-pages-artifact" in step.get("uses", "")]
+    noindex = [i for i, step in enumerate(steps) if "preview_noindex.py" in step.get("run", "")]
+    assert noindex and uploads and noindex[0] < uploads[0]
+    checks = [step for job in workflow("site-build.yml")["jobs"].values() for step in job["steps"]]
+    assert any("test_preview_noindex" in step.get("run", "") for step in checks)
 
 
 # Oldest major version of each action that runs on Node 24. GitHub removed Node 20 from its

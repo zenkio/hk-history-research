@@ -5,7 +5,10 @@ name: Deploy draft preview
 # The AI-draft pages are shown, each labelled as an unverified AI draft with its draft_model, and the whole
 # site is told to stay out of search engines (noindex on every page, no sitemap, robots.txt disallow all).
 # The Markdown, research notes and evidence state stay on the runner; only the built public site is published.
-# To go back to the maintenance page, publish scripts/prepare_maintenance_site.py output instead.
+# Owner decision 2026-10-29: until the whole research flow is done the live site shows only the maintenance page and
+# drafts are looked at on the Cloudflare preview (preview.yml). The repository variable LIVE_SITE_MODE=draft
+# (Settings > Variables) switches the live site back to the AI-draft site; unset or anything else = maintenance.
+# Maintenance mode never checks out the data repository.
 #
 # The research pipeline runs daily at 03:17 UTC. Rebuild at 05:17 UTC to allow up to 75 minutes for
 # research plus a buffer, rather than rebuilding every 3 hours and retaining many large artifacts.
@@ -33,8 +36,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      DRAFT: ${{ vars.LIVE_SITE_MODE == 'draft' }}
     steps:
+      - name: Check out this repository (maintenance page only)
+        if: env.DRAFT != 'true'
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Prepare the maintenance-only site
+        if: env.DRAFT != 'true'
+        run: python3 scripts/prepare_maintenance_site.py --output public
+
       - name: Check out the data repository
+        if: env.DRAFT == 'true'
         uses: actions/checkout@v7
         with:
           repository: zenkio/hk-history-data
@@ -43,44 +59,56 @@ jobs:
           persist-credentials: false
 
       - name: Check out this repository's code
+        if: env.DRAFT == 'true'
         uses: actions/checkout@v7
         with:
           path: _code
           persist-credentials: false
 
       - name: Put the code over the data
+        if: env.DRAFT == 'true'
         run: |
           rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
           rm -rf _code
 
       - uses: actions/setup-python@v7
+        if: env.DRAFT == 'true'
         with:
           python-version: '3.12'
 
       - name: Install publication-record schema validator
+        if: env.DRAFT == 'true'
         run: python -m pip install --quiet "jsonschema>=4.23"
 
       - name: Label legacy AI drafts before publication
+        if: env.DRAFT == 'true'
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 
       - name: Validate publication eligibility
+        if: env.DRAFT == 'true'
         run: python3 scripts/publication_gate.py
 
       - uses: actions/setup-node@v7
+        if: env.DRAFT == 'true'
         with:
           node-version: 22
           cache: npm
 
       - run: npm ci
+        if: env.DRAFT == 'true'
       - run: npm run install-plugins
+        if: env.DRAFT == 'true'
       - run: npm run quartz -- build
+        if: env.DRAFT == 'true'
 
       # Quartz's search index holds the full text of every page; keep only the opening lines.
       - name: Trim the search index
+        if: env.DRAFT == 'true'
         run: python3 scripts/trim_search_index.py public
 
       # Keep the draft preview out of search engines and refuse to publish if any page lacks the tag.
       - name: Tell search engines to ignore the preview
+        if: env.DRAFT == 'true'
         run: |
           set -euo pipefail
           python3 scripts/preview_noindex.py public

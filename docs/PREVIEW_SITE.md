@@ -6,7 +6,7 @@ Pages, so unmerged data or code changes can be looked at before they reach the l
 
 Run it: Actions > "Preview site (Cloudflare Pages)" > Run workflow, `data_ref` = the data PR's branch.
 Code comes from the branch the workflow is run on. The log prints the preview address
-(`<branch-slug>.<project>.pages.dev`; `main` of the data repo is the project's production address).
+(the one preview slot: the project's production deployment, `<project>.pages.dev` and the custom domain; each run replaces the previous one).
 
 ## One-time setup (owner, in Cloudflare and GitHub settings)
 
@@ -17,7 +17,7 @@ Code comes from the branch the workflow is run on. The log prints the preview ad
 3. Cloudflare Zero Trust > Access > Applications: protect `*.hkhistory-preview.pages.dev` and
    `hkhistory-preview.pages.dev` with a policy allowing only the owner's email. Do this BEFORE the first run:
    a preview can hold unmerged private data, and is otherwise public to anyone with the address.
-4. Optional: a custom domain such as `preview.hkhistory.zenkio.uk` on the Pages project.
+4. Custom domain `preview.hkhistory.zenkio.uk` on the Pages project (needs zenkio.uk's DNS on Cloudflare; adds one DNS record). Put the same Access policy on it and keep it on the `pages.dev` name too.
 
 Previews are noindex (the same check as the live site) and are not a place for secrets or private notes:
 only the built pages are uploaded, never the Markdown, research or state.

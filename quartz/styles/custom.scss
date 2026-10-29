@@ -16,15 +16,28 @@
     color: var(--darkgray);
   }
 
+  // In the narrative the tip is anchored to the paragraph (left edge) so it never runs off the box.
+  p {
+    position: relative;
+  }
+
   p .fact {
     display: inline;
+    position: static;
     font-weight: inherit;
+  }
+
+  p .fact .fact-tip {
+    top: auto;
+    left: 0;
+    margin-top: 1.6em;
   }
 
   .cons-facts-title {
     margin: 1rem 0 0;
     font-weight: 700;
     color: var(--secondary);
+    cursor: pointer;
   }
 
   .cons-facts {

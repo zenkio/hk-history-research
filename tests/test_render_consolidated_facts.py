@@ -49,7 +49,7 @@ def test_narrative_wraps_marked_facts_with_their_tip_and_escapes_the_rest(tmp_pa
     rc.build(tmp_path)
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert "<p><strong>Lead.</strong> Signed <span class=\"fact fact-accepted\" tabindex=\"0\">in 1842 &lt;ok&gt;" in text
-    assert text.index("Lead.") < text.index("Facts at a glance")  # narrative above the list
+    assert text.index("Lead.") < text.index("All 2 facts and who backs them")  # narrative above the list
 
 
 def test_narrative_with_unknown_fact_id_fails(tmp_path):

@@ -32,7 +32,8 @@ def esc(text):
 def tip(fact):
     rows = []
     backed = fact.get("backed_by_ai", [])
-    rows.append("<b>Backed by AI:</b> " + (", ".join(esc(b["model"]) for b in backed) or "none"))
+    rows.append(("<b>Only this AI:</b> " if len(backed) == 1 else "<b>Backed by AI:</b> ")
+                + (", ".join(esc(b["model"]) for b in backed) or "none"))
     if fact.get("differs"):
         rows.append("<b>Says differently:</b> " + "; ".join(
             f'{esc(d["model"])} ({esc(d["said"])})' for d in fact["differs"]))
@@ -88,8 +89,8 @@ def render(record):
         '<label class="fact-switch"><input type="checkbox" checked> '
         "Show which AI backs each fact (hover, or tap on a phone)</label>",
         *narrative,
-        '<p class="cons-facts-title">Facts at a glance</p>',
-        '<ul class="cons-facts">', *items, "</ul>", "</div>"])
+        f'<details class="cons-facts-box"><summary class="cons-facts-title">All {len(items)} facts and who backs them</summary>',
+        '<ul class="cons-facts">', *items, "</ul>", "</details>", "</div>"])
 
 
 def build(root=Path(".")):

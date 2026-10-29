@@ -81,6 +81,17 @@ def test_workflows_publish_nothing_but_the_built_site():
                     assert uses.startswith("actions/upload-pages-artifact"), (path, uses)
 
 
+def test_preview_workflow_is_manual_only_and_never_touches_the_live_site():
+    # The preview (owner request 2026-10-29) must not run on push or schedule, and must not use GitHub Pages.
+    wf = workflow("preview.yml")
+    triggers = wf.get("on", wf.get(True))
+    assert set(triggers) == {"workflow_dispatch"}
+    text = open(os.path.join(ROOT, ".github", "workflows", "preview.yml"), encoding="utf-8").read()
+    assert "deploy-pages" not in text and "upload-pages-artifact" not in text
+    assert "preview_noindex.py" in text and "wrangler" in text
+    assert wf["permissions"] == {"contents": "read"}
+
+
 def test_licence_keeps_quartz_mit_and_reserves_the_rest():
     assert "MIT License" in open(os.path.join(ROOT, "quartz", "LICENSE.txt"), encoding="utf-8").read()
     assert "All rights reserved" in open(os.path.join(ROOT, "LICENSE"), encoding="utf-8").read()

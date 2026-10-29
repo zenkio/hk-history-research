@@ -1,0 +1,109 @@
+name: Preview site (Cloudflare Pages)
+
+# Owner request 2026-10-29: a SEPARATE preview, so unfinished data or code changes can be looked at before
+# they reach the live site (hkhistory.zenkio.uk, deploy.yml, which this workflow never touches).
+# Manual only. Builds the same site as deploy.yml from a chosen branch of the private data repository
+# (data_ref, e.g. the branch of an open data pull request) with this repository's code (the branch it runs
+# on), then uploads the built site to a Cloudflare Pages project. Each data_ref gets its own preview address
+# (<branch-slug>.<project>.pages.dev). Nothing is deployed until the secrets below exist.
+# The preview is noindex like the live site. Its content can be unmerged private data, so the Cloudflare Pages
+# project must be put behind Cloudflare Access (owner's email only): see docs/PREVIEW_SITE.md.
+# Secrets: DATA_REPO_TOKEN (as deploy.yml), CLOUDFLARE_API_TOKEN (Pages edit only), CLOUDFLARE_ACCOUNT_ID.
+# Variable: CLOUDFLARE_PREVIEW_PROJECT (the Pages project name, default hkhistory-preview).
+
+on:
+  workflow_dispatch:
+    inputs:
+      data_ref:
+        description: 'Branch of zenkio/hk-history-data to preview (an open data PR branch, or main)'
+        required: true
+        default: main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-${{ inputs.data_ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PROJECT: ${{ vars.CLOUDFLARE_PREVIEW_PROJECT || 'hkhistory-preview' }}
+      DATA_REF: ${{ inputs.data_ref }}
+    steps:
+      - name: Check the Cloudflare secrets exist
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [[ -z "$CF_TOKEN" || -z "$CF_ACCOUNT" ]]; then
+            echo "CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are not set: see docs/PREVIEW_SITE.md"
+            exit 1
+          fi
+
+      - name: Check out the chosen data branch
+        uses: actions/checkout@v7
+        with:
+          repository: zenkio/hk-history-data
+          ref: ${{ inputs.data_ref }}
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Check out this repository's code
+        uses: actions/checkout@v7
+        with:
+          path: _code
+          persist-credentials: false
+
+      - name: Put the code over the data
+        run: |
+          rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude README.md --exclude CLAUDE.md --exclude LICENSE --exclude CODE_OF_CONDUCT.md _code/ ./
+          rm -rf _code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install publication-record schema validator
+        run: python -m pip install --quiet "jsonschema>=4.23"
+
+      - name: Label legacy AI drafts before publication
+        run: python scripts/label_legacy_ai_drafts.py --write --quiet
+
+      - name: Validate publication eligibility
+        run: python3 scripts/publication_gate.py
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run install-plugins
+      - run: npm run quartz -- build
+
+      - name: Trim the search index
+        run: python3 scripts/trim_search_index.py public
+
+      - name: Tell search engines to ignore the preview
+        run: |
+          set -euo pipefail
+          python3 scripts/preview_noindex.py public
+          test ! -e public/sitemap.xml
+          grep -q '^Disallow: /$' public/robots.txt
+          missing=$(grep -RLi 'name="robots" content="noindex' public --include='*.html' || true)
+          if [[ -n "$missing" ]]; then echo "pages without noindex:"; echo "$missing" | wc -l; exit 1; fi
+          echo "PASS: every page has noindex, no sitemap, robots.txt disallows all"
+
+      - name: Upload the built site to Cloudflare Pages
+        run: |
+          set -euo pipefail
+          slug=$(echo "$DATA_REF" | tr -c 'A-Za-z0-9\n' '-' | cut -c1-40)
+          npx --yes wrangler@4.45.0 pages deploy public --project-name "$PROJECT" --branch "$slug" --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

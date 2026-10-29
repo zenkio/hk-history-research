@@ -85,7 +85,8 @@ def post_gateway(body, token, key):
                 err = {}
             code = err.get("code", "")
             if code == "quota_exhausted":
-                raise QuotaExhausted(code)
+                detail = json.dumps(err.get("details"), ensure_ascii=False)[:600] if err.get("details") else ""
+                raise QuotaExhausted(f"quota_exhausted {(err.get('message') or '')[:200]} {detail}".strip())
             if code == "rate_limited" and attempt == 1:
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
@@ -137,8 +138,8 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                 records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
                 if records[-1]["answered_model"]:
                     answered.append(records[-1]["answered_model"])
-            except QuotaExhausted:
-                failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
+            except QuotaExhausted as exc:
+                failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
                 rested.add(model)
                 if len(rested) == len(models):
                     return records, [], failures
@@ -155,8 +156,8 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                 try:
                     # a new idempotency key each time, or the gateway would replay the first answer
                     hashes.append(ask(target, model, f"repeat-{target['id']}-{model}-{seed}-{i}")["sha256"])
-                except QuotaExhausted:
-                    failures.append({"event": target["id"], "model": model, "error": "quota_exhausted"})
+                except QuotaExhausted as exc:
+                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})
                     break
                 except Exception as exc:
                     failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})

@@ -89,6 +89,7 @@ def test_preview_workflow_is_manual_only_and_never_touches_the_live_site():
     text = open(os.path.join(ROOT, ".github", "workflows", "preview.yml"), encoding="utf-8").read()
     assert "deploy-pages" not in text and "upload-pages-artifact" not in text
     assert "preview_noindex.py" in text and "wrangler" in text
+    assert text.index("preview_whats_new.py") < text.index("label_legacy_ai_drafts.py")  # PR: "What's new" in the preview only
     assert wf["permissions"] == {"contents": "read"}
 
 

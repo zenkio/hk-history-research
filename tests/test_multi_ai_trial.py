@@ -173,3 +173,17 @@ def test_a_rest_that_ends_soon_is_waited_for_and_the_call_retried():
     records, _, failures = mat.run_trial(EVENTS[:1], ["a"], 1, post, sleep=slept.append)
     assert len(records) == 1 and not failures and len(calls) == 2
     assert any(25 < s < 40 for s in slept)  # it waited for the rest to end
+
+
+def test_a_model_with_a_short_rest_is_tried_again_for_the_next_event():
+    # run 15 (2026-10-29): nemotron and gemma were given up for good after one minute limit
+    calls = []
+
+    def post(body, key):
+        calls.append(body["options"]["models"][0])
+        if len(calls) == 1:
+            raise mat.QuotaExhausted("quota_exhausted first is free again at 2999-01-01T00:00:00Z")
+        return answer("a")
+
+    records, _, failures = mat.run_trial(EVENTS, ["a"], 1, post, sleep=lambda s: None)
+    assert len(records) == 1 and len(failures) == 1 and calls == ["a", "a"]  # event 2 still asked

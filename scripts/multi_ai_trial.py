@@ -166,7 +166,8 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                     answered.append(records[-1]["answered_model"])
             except QuotaExhausted as exc:
                 failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
-                rested.add(model)
+                if rest_seconds(str(exc)) is None:  # no "free again at" time: out for the day, so skip it from now on
+                    rested.add(model)
                 if len(rested) == len(models):
                     return records, [], failures
             except Exception as exc:

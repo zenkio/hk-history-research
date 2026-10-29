@@ -138,3 +138,38 @@ def test_one_model_out_of_quota_is_skipped_and_the_others_go_on():
     records, repeat, failures = mat.run_trial(EVENTS, ["a", "b"], 1, post, repeat_event="e1", repeats=2, sleep=lambda s: None)
     assert [r["asked_model"] for r in records] == ["b", "b"]
     assert len(failures) == 1 and repeat == [{"model": "b", "calls": 2, "distinct_answers": 1}]
+
+
+def test_a_short_rest_is_waited_out_once_and_the_model_is_not_given_up():
+    # the 2026-10-29 run gave up on every model after one minute limit ("free again at ...")
+    from datetime import datetime, timezone
+    now = datetime(2026, 10, 29, 0, 20, 0, tzinfo=timezone.utc)
+    assert mat.rest_seconds("is free again at 2026-10-29T00:20:14.389Z (x)", now) == 14.389
+    assert mat.rest_seconds("no time here", now) is None
+    calls, slept = [], []
+
+    def post(body, key):
+        calls.append(key)
+        if len(calls) == 1:
+            raise mat.QuotaExhausted("quota_exhausted is free again at 2999-01-01T00:00:00Z")
+        return answer("a")
+
+    # far in the future: longer than the cap, so it is given up at once (no endless wait)
+    records, _, failures = mat.run_trial(EVENTS[:1], ["a"], 1, post, sleep=slept.append)
+    assert records == [] and len(failures) == 1 and len(calls) == 1
+
+
+def test_a_rest_that_ends_soon_is_waited_for_and_the_call_retried():
+    from datetime import datetime, timedelta, timezone
+    soon = (datetime.now(timezone.utc) + timedelta(seconds=30)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    calls, slept = [], []
+
+    def post(body, key):
+        calls.append(key)
+        if len(calls) == 1:
+            raise mat.QuotaExhausted(f"quota_exhausted first is free again at {soon}")
+        return answer("a")
+
+    records, _, failures = mat.run_trial(EVENTS[:1], ["a"], 1, post, sleep=slept.append)
+    assert len(records) == 1 and not failures and len(calls) == 2
+    assert any(25 < s < 40 for s in slept)  # it waited for the rest to end

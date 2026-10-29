@@ -57,7 +57,7 @@ def render(record):
         '<div class="consolidated">',
         '<p class="cons-note">The claims the AI drafts below mostly agree on, kept as a list of facts. '
         "Agreement between AIs is not evidence; official sources will be added to each fact later.</p>",
-        '<label class="fact-switch"><input type="checkbox" class="fact-hover-switch" checked> '
+        '<label class="fact-switch"><input type="checkbox" checked> '
         "Show which AI backs each fact (hover, or tap on a phone)</label>",
         '<ul class="cons-facts">', *items, "</ul>", "</div>"])
 

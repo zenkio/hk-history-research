@@ -30,7 +30,7 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
     assert rc.build(tmp_path) == [str(tmp_path / "content/05_Multi_AI/e.md")]
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert rc.MARKER not in text and "## Consolidated version" in text and "## Next" in text
-    assert 'class="fact-hover-switch" checked' in text
+    assert '<input type="checkbox" checked>' in text
     assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text and "Not mentioned by:</b> D" in text
     assert "Treaty text" in text and "none yet" in text
     assert "Signed &lt;1842&gt;" in text  # page text is escaped

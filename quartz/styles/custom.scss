@@ -61,9 +61,9 @@
     font-weight: 400;
   }
 
-  // The tip shows only while the switch is on.
-  &:has(.fact-hover-switch:checked) .fact:hover .fact-tip,
-  &:has(.fact-hover-switch:checked) .fact:focus .fact-tip {
+  // The tip shows only while the switch is on. (Quartz rewrites the input's class, so match it by its wrapper.)
+  &:has(.fact-switch input:checked) .fact:hover .fact-tip,
+  &:has(.fact-switch input:checked) .fact:focus .fact-tip {
     display: block;
   }
 

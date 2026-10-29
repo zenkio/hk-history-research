@@ -12,7 +12,8 @@ RECORD = {"event": "e", "facts": [
      "backed_by_ai": [{"model": "A", "said": "1842"}, {"model": "B", "said": "1842"}],
      "differs": [{"model": "C", "said": "1843"}], "not_mentioned_by": ["D"], "backed_by_sources": []},
     {"id": "f2", "kind": "number", "text": "21 million", "status": "disputed",
-     "backed_by_ai": [], "backed_by_sources": [{"source": "Treaty text"}]}]}
+     "backed_by_ai": [], "backed_by_sources": [{"source": "Treaty text"}]}],
+    "narrative": ["**Lead.** Signed {{f1|in 1842 <ok>}} and cost {{f2|21 million}}."]}
 
 
 def setup(tmp_path, marker=True, record=True):
@@ -40,4 +41,20 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
 def test_missing_record_file_fails_loudly(tmp_path):
     setup(tmp_path, record=False)
     with pytest.raises(SystemExit, match="missing"):
+        rc.build(tmp_path)
+
+
+def test_narrative_wraps_marked_facts_with_their_tip_and_escapes_the_rest(tmp_path):
+    setup(tmp_path)
+    rc.build(tmp_path)
+    text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
+    assert "<p><strong>Lead.</strong> Signed <span class=\"fact fact-accepted\" tabindex=\"0\">in 1842 &lt;ok&gt;" in text
+    assert text.index("Lead.") < text.index("Facts at a glance")  # narrative above the list
+
+
+def test_narrative_with_unknown_fact_id_fails(tmp_path):
+    setup(tmp_path)
+    bad = dict(RECORD, narrative=["x {{nope|y}}"])
+    (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(bad))
+    with pytest.raises(SystemExit, match="unknown fact id"):
         rc.build(tmp_path)

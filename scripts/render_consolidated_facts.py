@@ -13,6 +13,7 @@ a tap on a phone focuses the fact and shows the tip.
 import argparse
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -44,7 +45,34 @@ def tip(fact):
     return '<span class="fact-tip">' + "<br>".join(rows) + "</span>"
 
 
+TOKEN = re.compile(r"\{\{([\w-]+)\|(.*?)\}\}")
+BOLD = re.compile(r"\*\*(.+?)\*\*")
+
+
+def fact_span(fact, text):
+    status = esc(fact.get("status", "accepted"))
+    return f'<span class="fact fact-{status}" tabindex="0">{text}{tip(fact)}</span>'
+
+
+def paragraph(text, facts):
+    """One narrative paragraph as HTML: **bold** and {{fact-id|text}} markers; everything else is escaped."""
+    def inline(match):
+        fact = facts.get(match.group(1))
+        if fact is None:
+            raise SystemExit(f"narrative names an unknown fact id: {match.group(1)}")
+        return fact_span(fact, esc(match.group(2)))
+    parts, last = [], 0
+    for match in TOKEN.finditer(text):
+        parts.append(BOLD.sub(r"<strong>\1</strong>", esc(text[last:match.start()])))
+        parts.append(inline(match))
+        last = match.end()
+    parts.append(BOLD.sub(r"<strong>\1</strong>", esc(text[last:])))
+    return "<p>" + "".join(parts) + "</p>"
+
+
 def render(record):
+    facts = {f["id"]: f for f in record["facts"]}
+    narrative = [paragraph(t, facts) for t in record.get("narrative", [])]
     items = []
     for fact in record["facts"]:
         kind = KINDS.get(fact.get("kind"), "Fact")
@@ -55,10 +83,12 @@ def render(record):
     return "\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
-        '<p class="cons-note">The claims the AI drafts below mostly agree on, kept as a list of facts. '
+        '<p class="cons-note">One account written from what the AI drafts below say (unverified). Underlined facts show which AIs back them. '
         "Agreement between AIs is not evidence; official sources will be added to each fact later.</p>",
         '<label class="fact-switch"><input type="checkbox" checked> '
         "Show which AI backs each fact (hover, or tap on a phone)</label>",
+        *narrative,
+        '<p class="cons-facts-title">Facts at a glance</p>',
         '<ul class="cons-facts">', *items, "</ul>", "</div>"])
 
 

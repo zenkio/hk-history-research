@@ -16,6 +16,17 @@
     color: var(--darkgray);
   }
 
+  p .fact {
+    display: inline;
+    font-weight: inherit;
+  }
+
+  .cons-facts-title {
+    margin: 1rem 0 0;
+    font-weight: 700;
+    color: var(--secondary);
+  }
+
   .cons-facts {
     list-style: none;
     padding-left: 0;

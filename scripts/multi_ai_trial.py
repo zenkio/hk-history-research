@@ -91,7 +91,7 @@ def post_gateway(body, token, key):
             code = err.get("code", "")
             if code == "quota_exhausted":
                 detail = json.dumps(err.get("details"), ensure_ascii=False)[:600] if err.get("details") else ""
-                raise QuotaExhausted(f"quota_exhausted {(err.get('message') or '')[:200]} {detail}".strip())
+                raise QuotaExhausted(f"quota_exhausted {(err.get('message') or '')[:400]} {detail}".strip())
             if code == "rate_limited" and attempt == 1:
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)

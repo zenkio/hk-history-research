@@ -187,3 +187,23 @@ def test_a_model_with_a_short_rest_is_tried_again_for_the_next_event():
 
     records, _, failures = mat.run_trial(EVENTS, ["a"], 1, post, sleep=lambda s: None)
     assert len(records) == 1 and len(failures) == 1 and calls == ["a", "a"]  # event 2 still asked
+
+
+def test_the_free_again_time_survives_in_a_long_gateway_message(monkeypatch):
+    # run 16 (2026-10-29): the message was cut at 200 characters inside the time, so nemotron was given up for good
+    import io
+    import urllib.error
+    msg = ("The requested models (nvidia/nemotron-3-ultra-550b-a55b:free) are out of quota, resting or at their "
+           "spend cap (budget free); the first, nvidia/nemotron-3-ultra-550b-a55b:free, is free again at 2026-10-29T00:50:21.221Z")
+    body = json.dumps({"error": {"code": "quota_exhausted", "message": msg}}).encode()
+
+    def boom(req, timeout=0):
+        raise urllib.error.HTTPError("u", 429, "x", {}, io.BytesIO(body))
+
+    monkeypatch.setattr(mat.urllib.request, "urlopen", boom)
+    try:
+        mat.post_gateway({}, "t", "k")
+    except mat.QuotaExhausted as exc:
+        assert mat.rest_seconds(str(exc)) is not None
+    else:
+        raise AssertionError("expected QuotaExhausted")

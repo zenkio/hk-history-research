@@ -77,6 +77,9 @@ jobs:
       - name: Label legacy AI drafts before publication
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 
+      - name: Render the consolidated facts of the multi-AI pages
+        run: python3 scripts/render_consolidated_facts.py
+
       - name: Validate publication eligibility
         run: python3 scripts/publication_gate.py
 

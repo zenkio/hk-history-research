@@ -1,0 +1,43 @@
+import json
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import render_consolidated_facts as rc
+
+RECORD = {"event": "e", "facts": [
+    {"id": "f1", "kind": "date", "text": "Signed <1842>", "status": "accepted",
+     "backed_by_ai": [{"model": "A", "said": "1842"}, {"model": "B", "said": "1842"}],
+     "differs": [{"model": "C", "said": "1843"}], "not_mentioned_by": ["D"], "backed_by_sources": []},
+    {"id": "f2", "kind": "number", "text": "21 million", "status": "disputed",
+     "backed_by_ai": [], "backed_by_sources": [{"source": "Treaty text"}]}]}
+
+
+def setup(tmp_path, marker=True, record=True):
+    (tmp_path / "content/05_Multi_AI").mkdir(parents=True)
+    (tmp_path / "content/05_Multi_AI/e.md").write_text(
+        "---\ntitle: E\n---\n\nIntro\n\n" + (rc.MARKER if marker else "") + "\n\n## Next\n")
+    (tmp_path / "content/05_Multi_AI/other.md").write_text("no marker\n")
+    if record:
+        (tmp_path / "data/consolidated_facts").mkdir(parents=True)
+        (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(RECORD))
+
+
+def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
+    setup(tmp_path)
+    assert rc.build(tmp_path) == [str(tmp_path / "content/05_Multi_AI/e.md")]
+    text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
+    assert rc.MARKER not in text and "## Consolidated version" in text and "## Next" in text
+    assert 'class="fact-hover-switch" checked' in text
+    assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text and "Not mentioned by:</b> D" in text
+    assert "Treaty text" in text and "none yet" in text
+    assert "Signed &lt;1842&gt;" in text  # page text is escaped
+    assert (tmp_path / "content/05_Multi_AI/other.md").read_text() == "no marker\n"
+
+
+def test_missing_record_file_fails_loudly(tmp_path):
+    setup(tmp_path, record=False)
+    with pytest.raises(SystemExit, match="missing"):
+        rc.build(tmp_path)

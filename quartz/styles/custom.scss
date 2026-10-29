@@ -1,3 +1,73 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Consolidated version of the multi-AI pages (scripts/render_consolidated_facts.py): its own look, and a
+// switch (plain checkbox) that turns the "which AI backs this fact" layer on or off.
+.consolidated {
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  background: var(--highlight);
+  padding: 0.8rem 1.2rem;
+  margin: 1rem 0 1.5rem;
+
+  .cons-note {
+    margin-top: 0;
+    color: var(--darkgray);
+  }
+
+  .cons-facts {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.6rem 0 0;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .fact {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted var(--secondary);
+    font-weight: 600;
+    outline: none;
+  }
+
+  .fact-kind {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-right: 0.4rem;
+    font-weight: 700;
+  }
+
+  .fact-tip {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 20;
+    min-width: 16rem;
+    max-width: min(28rem, 90vw);
+    margin-top: 0.3rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    background: var(--light);
+    color: var(--dark);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  // The tip shows only while the switch is on.
+  &:has(.fact-hover-switch:checked) .fact:hover .fact-tip,
+  &:has(.fact-hover-switch:checked) .fact:focus .fact-tip {
+    display: block;
+  }
+
+  .fact-disputed {
+    border-bottom-color: #c0392b;
+  }
+}

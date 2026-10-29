@@ -15,6 +15,8 @@ the log prints counts only (the repository is public, the events and answers are
 only: a billed answer stops the run. Needs AI_GATEWAY_TOKEN.
 """
 import argparse
+import re
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -32,6 +34,9 @@ DEFAULT_SEED = 20261028
 # OpenRouter's free pool allows 8 calls a minute per model; stay under it.
 MIN_GAP_PER_MODEL_S = 9
 MAX_RATE_WAIT_S = 120
+# OpenRouter's free pool allows about 20 calls a minute for the whole account, whatever the model.
+MIN_GAP_ANY_S = 4
+MAX_REST_WAIT_S = 180
 
 SYSTEM = ("You are a careful historian of Hong Kong, China and Britain. Write plainly and factually. "
           "Give only what you are confident of; where unsure, say 'uncertain' and do not guess dates, "
@@ -85,7 +90,8 @@ def post_gateway(body, token, key):
                 err = {}
             code = err.get("code", "")
             if code == "quota_exhausted":
-                raise QuotaExhausted(code)
+                detail = json.dumps(err.get("details"), ensure_ascii=False)[:600] if err.get("details") else ""
+                raise QuotaExhausted(f"quota_exhausted {(err.get('message') or '')[:200]} {detail}".strip())
             if code == "rate_limited" and attempt == 1:
                 wait = min(float(e.headers.get("Retry-After") or 30), MAX_RATE_WAIT_S)
                 time.sleep(wait)
@@ -116,17 +122,38 @@ def record_of(event, model, data):
             "sha256": hashlib.sha256(text.encode()).hexdigest(), "text": text}
 
 
+def rest_seconds(message, now=None):
+    """Seconds until the gateway says a rested model is free again ('is free again at <ISO time>'), else None."""
+    m = re.search(r"free again at (\d{4}-\d\d-\d\dT[\d:.]+Z?)", message or "")
+    if not m:
+        return None
+    try:
+        when = datetime.fromisoformat(m.group(1).rstrip("Z")).replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+    return max(0.0, (when - (now or datetime.now(timezone.utc))).total_seconds())
+
+
 def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=time.sleep):
     """Draft every event with every pinned model, then the repeat test. `post(body, key)` makes one call."""
     records, failures, last_call = [], [], {}
     rested = set()  # pinned models out of quota: skipped for the rest of the run, the others go on
 
     def ask(event, model, key, exclude=None):
-        gap = MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0))
-        if gap > 0:
-            sleep(gap)
-        last_call[model] = time.time()
-        return record_of(event, model, post(request_body(event, model, seed, exclude), key))
+        for attempt in (1, 2):
+            gap = max(MIN_GAP_PER_MODEL_S - (time.time() - last_call.get(model, 0)),
+                      MIN_GAP_ANY_S - (time.time() - last_call.get("*", 0)))
+            if gap > 0:
+                sleep(gap)
+            last_call[model] = last_call["*"] = time.time()
+            try:
+                return record_of(event, model, post(request_body(event, model, seed, exclude), key))
+            except QuotaExhausted as exc:
+                # a minute limit or a short rest: wait until the gateway says the model is free again, once
+                wait = rest_seconds(str(exc))
+                if attempt == 2 or wait is None or wait > MAX_REST_WAIT_S:
+                    raise
+                sleep(wait + 2)
 
     for event in events:
         answered = []  # models that already wrote this event (used by the "auto" entries)
@@ -137,9 +164,10 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                 records.append(ask(event, model, f"draft-{event['id']}-{model}-{seed}", answered))
                 if records[-1]["answered_model"]:
                     answered.append(records[-1]["answered_model"])
-            except QuotaExhausted:
-                failures.append({"event": event["id"], "model": model, "error": "quota_exhausted"})
-                rested.add(model)
+            except QuotaExhausted as exc:
+                failures.append({"event": event["id"], "model": model, "error": str(exc)[:450]})
+                if rest_seconds(str(exc)) is None:  # no "free again at" time: out for the day, so skip it from now on
+                    rested.add(model)
                 if len(rested) == len(models):
                     return records, [], failures
             except Exception as exc:
@@ -155,8 +183,8 @@ def run_trial(events, models, seed, post, repeat_event=None, repeats=0, sleep=ti
                 try:
                     # a new idempotency key each time, or the gateway would replay the first answer
                     hashes.append(ask(target, model, f"repeat-{target['id']}-{model}-{seed}-{i}")["sha256"])
-                except QuotaExhausted:
-                    failures.append({"event": target["id"], "model": model, "error": "quota_exhausted"})
+                except QuotaExhausted as exc:
+                    failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})
                     break
                 except Exception as exc:
                     failures.append({"event": target["id"], "model": model, "error": str(exc)[:450]})

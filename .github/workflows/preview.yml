@@ -71,6 +71,9 @@ jobs:
       - name: Install publication-record schema validator
         run: python -m pip install --quiet "jsonschema>=4.23"
 
+      - name: Mark what is new compared with main (preview only)
+        run: python3 scripts/preview_whats_new.py --base origin/main
+
       - name: Label legacy AI drafts before publication
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 

@@ -4,8 +4,8 @@ name: Preview site (Cloudflare Pages)
 # they reach the live site (hkhistory.zenkio.uk, deploy.yml, which this workflow never touches).
 # Manual only. Builds the same site as deploy.yml from a chosen branch of the private data repository
 # (data_ref, e.g. the branch of an open data pull request) with this repository's code (the branch it runs
-# on), then uploads the built site to a Cloudflare Pages project. Each data_ref gets its own preview address
-# (<branch-slug>.<project>.pages.dev). Nothing is deployed until the secrets below exist.
+# on), then uploads the built site to a Cloudflare Pages project. The preview is one slot (the project's production
+# deployment, preview.hkhistory.zenkio.uk): each run replaces the previous one. Nothing is deployed until the secrets below exist.
 # The preview is noindex like the live site. Its content can be unmerged private data, so the Cloudflare Pages
 # project must be put behind Cloudflare Access (owner's email only): see docs/PREVIEW_SITE.md.
 # Secrets: DATA_REPO_TOKEN (as deploy.yml), CLOUDFLARE_API_TOKEN (Pages edit only), CLOUDFLARE_ACCOUNT_ID.
@@ -102,8 +102,10 @@ jobs:
       - name: Upload the built site to Cloudflare Pages
         run: |
           set -euo pipefail
-          slug=$(echo "$DATA_REF" | tr -c 'A-Za-z0-9\n' '-' | cut -c1-40)
-          npx --yes wrangler@4.45.0 pages deploy public --project-name "$PROJECT" --branch "$slug" --commit-dirty=true
+          # Always the project's production branch: the custom domain (preview.hkhistory.zenkio.uk) serves only
+          # production, so the preview is one slot that shows the data branch run last.
+          msg=$(echo "preview of data branch $DATA_REF" | tr -c 'A-Za-z0-9 ._/-' '-' | cut -c1-100)
+          npx --yes wrangler@4.45.0 pages deploy public --project-name "$PROJECT" --branch main --commit-message "$msg" --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

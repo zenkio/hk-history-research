@@ -261,6 +261,7 @@
   @media (hover: none), (pointer: coarse) {
     p .sent {
       -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
       -webkit-user-select: none;
       user-select: none;
     }

@@ -2,6 +2,9 @@
 // (the hover tip does not exist there). A tap elsewhere closes it. Listeners sit on the document, so they
 // work on every page and survive SPA navigation.
 const HOLD_MS = 2000
+const SLACK_PX = 12 // a real finger always jitters a little; only a real drag (scrolling) cancels the hold
+let startX = 0
+let startY = 0
 let timer: number | undefined
 let open: Element | null = null
 
@@ -23,6 +26,8 @@ document.addEventListener(
   "touchstart",
   (e) => {
     cancel()
+    startX = e.touches[0]?.clientX ?? 0
+    startY = e.touches[0]?.clientY ?? 0
     const sentence = sentenceAt(e.target)
     if (!sentence) {
       close()
@@ -37,9 +42,18 @@ document.addEventListener(
   { passive: true },
 )
 
-for (const name of ["touchend", "touchmove", "touchcancel"]) {
+for (const name of ["touchend", "touchcancel"]) {
   document.addEventListener(name, cancel, { passive: true })
 }
+
+document.addEventListener(
+  "touchmove",
+  (e) => {
+    const t = e.touches[0]
+    if (t && Math.hypot(t.clientX - startX, t.clientY - startY) > SLACK_PX) cancel()
+  },
+  { passive: true },
+)
 
 // The browser's own long-press menu / text selection must not fire on a held sentence.
 document.addEventListener("contextmenu", (e) => {

@@ -1,7 +1,7 @@
-// Consolidated multi-AI pages on touch screens: hold a sentence for 2 seconds to see which AIs back it
+// Consolidated multi-AI pages on touch screens: hold a sentence for a moment to see which AIs back it
 // (the hover tip does not exist there). A tap elsewhere closes it. Listeners sit on the document, so they
 // work on every page and survive SPA navigation.
-const HOLD_MS = 2000
+const HOLD_MS = 1300
 const SLACK_PX = 12 // a real finger always jitters a little; only a real drag (scrolling) cancels the hold
 let startX = 0
 let startY = 0

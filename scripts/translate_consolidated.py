@@ -4,7 +4,7 @@
 The English consolidated text stays the master. Per section an AI (pinned through the gateway) translates the
 numbered sentences, one line each, so `unit["zh"]` lines up with `unit["text"]` and the backers recorded for the
 English sentence hold for the translation. Code checks every answer: same number of lines, Chinese characters in
-each, every number of the English sentence present, no Latin words beyond the names the sentence itself has.
+each, every number of the English sentence present, no lower-case English words left over.
 Problems go back to the AI for up to MAX_TRIES tries; a section that still fails keeps no translation (the page
 shows its English). The checks prove the translation is complete and keeps the figures, not that it is good.
 
@@ -24,6 +24,7 @@ MAX_TRIES = cp.MAX_TRIES
 SYSTEM = ("You translate English history text into Traditional Chinese as written in Hong Kong. You translate "
           "faithfully: you add nothing, drop nothing and keep every number, date and name.")
 CJK = re.compile(r"[一-鿿]")
+ENGLISH_WORD = re.compile(r"\b[a-z]{3,}\b")  # a lower-case English word left untranslated
 NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
 LINE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
 
@@ -57,6 +58,9 @@ def check(raw, texts):
     for i, (en, zh) in enumerate(zip(texts, out), 1):
         if not CJK.search(zh):
             problems.append(f"[{i}] is not Chinese")
+        left = ENGLISH_WORD.findall(zh)
+        if left:
+            problems.append(f"[{i}] left English words untranslated: {', '.join(left[:3])}")
         zh_numbers = numbers(zh)
         missing = [n for n in numbers(en) if n not in zh_numbers and n not in zh.replace(",", "")]
         if missing:

@@ -68,3 +68,8 @@ def test_check_rewrite_flags_a_lost_sentence_and_an_invented_number():
     dropped = ["The treaty was signed on 29 August 1842 and 29 August 1843. Opium paid for tea in China."]
     problems, uncovered = cd.check_rewrite(PAGE, dropped)
     assert any("Pottinger" in u for u in uncovered)
+
+
+def test_a_fact_already_marked_by_hand_is_not_marked_again():
+    marked, placed = cd.mark_facts(["Signed {{f1|on 29 August 1842}} and again 29 August 1842."], FACTS)
+    assert marked[0].count("{{f1|") == 1 and "f1" in placed

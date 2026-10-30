@@ -101,8 +101,10 @@ def mark_facts(paragraphs, facts):
     fact (at least 35% of the fact's words, and two of them, appear in the sentence). Returns the paragraphs and
     the ids placed. A fact whose sentence is not found stays unmarked in the text (it is still in the list)."""
     out = list(paragraphs)
-    placed = set()
+    placed = set(re.findall(r"\{\{([\w-]+)\|", " ".join(out)))  # markers written by hand stay as they are
     for fact in facts:
+        if fact["id"] in placed:
+            continue
         wanted = [n for n in re.findall(r"\d[\d,.]*\d|\d", fact["text"]) if len(n.strip(",.")) >= 2]
         wanted.sort(key=len, reverse=True)  # the year or the large figure first
         words = {w for w in toks(fact["text"]) if not w[0].isdigit()}

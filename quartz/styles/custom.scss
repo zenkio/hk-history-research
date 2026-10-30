@@ -25,12 +25,24 @@
   p .sent {
     display: inline;
     position: static;
-    border-bottom: 1px dotted var(--secondary);
     outline: none;
   }
 
-  p .sent.fact-disputed {
-    border-bottom-color: #c0392b;
+  // Highlight (not underline): every sentence is written from AI drafts. Shown while the switch is on.
+  &:has(.fact-switch input:checked) p .sent {
+    background: color-mix(in srgb, var(--secondary) 16%, transparent);
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  &:has(.fact-switch input:checked) p .sent:hover,
+  &:has(.fact-switch input:checked) p .sent:focus {
+    background: color-mix(in srgb, var(--secondary) 30%, transparent);
+  }
+
+  &:has(.fact-switch input:checked) p .sent.fact-disputed {
+    background: rgba(192, 57, 43, 0.16);
   }
 
   p .sent .fact-in {

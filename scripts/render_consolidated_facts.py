@@ -126,7 +126,7 @@ def render(record):
     return "\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
-        '<p class="cons-note">One account written from what the AI drafts below say (unverified). Underlined sentences show which AIs back them (switch at the bottom right, off by default). '
+        '<p class="cons-note">One account written from what the AI drafts below say (unverified). Highlighted sentences (switch at the bottom right, off by default) show which AIs back them. '
         "Agreement between AIs is not evidence; official sources will be added to each fact later.</p>",
         '<label class="fact-switch"><input type="checkbox"> '
         "Show which AI backs each sentence</label>",

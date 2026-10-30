@@ -39,6 +39,13 @@
       -webkit-box-decoration-break: clone;
     }
 
+    // Dark theme: a pale tint at 30% turns the area grey and light text loses contrast, so use a fainter tint
+    // and pure white text.
+    :root[saved-theme="dark"] & p .sent:hover {
+      background: color-mix(in srgb, var(--hl, #cfe4fb) 14%, transparent);
+      color: #fff;
+    }
+
     &:has(.fact-switch input:checked) p .sent:hover {
       background: var(--hl, #cfe4fb);
       color: #222;

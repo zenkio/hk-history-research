@@ -29,9 +29,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  consolidate:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    outputs:
+      pages: ${{ steps.pages.outputs.pages }}
+    steps:
+      - id: pages
+        env:
+          PAGES: ${{ inputs.pages }}
+        run: |
+          set -euo pipefail
+          for p in $PAGES; do
+            if [[ ! "$p" =~ ^[a-z0-9-]+$ ]]; then echo "bad page name"; exit 1; fi
+          done
+          echo "pages=$(python3 -c 'import json,sys; print(json.dumps(sys.argv[1].split()))' "$PAGES")" >> "$GITHUB_OUTPUT"
+
+  consolidate:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        page: ${{ fromJSON(needs.plan.outputs.pages) }}
     steps:
       - name: Check out private research data
         uses: actions/checkout@v7
@@ -65,22 +86,20 @@ jobs:
         working-directory: data
         env:
           AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
-          PAGES: ${{ inputs.pages }}
+          PAGE: ${{ matrix.page }}
           MODEL: ${{ inputs.model }}
         run: |
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
-          for p in $PAGES; do
-            if [[ ! "$p" =~ ^[a-z0-9-]+$ || ! -f "content/05_Multi_AI/$p.md" ]]; then echo "bad page name"; exit 1; fi
-            python3 -u scripts/consolidate_pipeline.py "content/05_Multi_AI/$p.md" "data/consolidated_facts/$p.json" \
-              --model "$MODEL" --report "experiments/consolidate/reports/$p.json" || true
-          done
+          if [[ ! -f "content/05_Multi_AI/$PAGE.md" ]]; then echo "no such page"; exit 1; fi
+          python3 -u scripts/consolidate_pipeline.py "content/05_Multi_AI/$PAGE.md" "data/consolidated_facts/$PAGE.json" \
+            --model "$MODEL" --report "experiments/consolidate/reports/$PAGE.json" || true
 
       - name: Save results to a private branch
         if: always()
         working-directory: data
         env:
-          PRIVATE_BRANCH: experiment/consolidate-${{ github.run_id }}
+          PRIVATE_BRANCH: experiment/consolidate-${{ github.run_id }}-${{ matrix.page }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"

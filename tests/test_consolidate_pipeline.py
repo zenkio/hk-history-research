@@ -124,3 +124,13 @@ def test_dropped_connection_is_waited_out_and_two_sentences_on_a_line_are_refuse
     lines, _ = cp.parse_fold("[C1,N1] The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking. "
                              "Pottinger signed for Britain.", 1, 1)
     assert any("two sentences on one line" in p for p in cp.check_fold(lines, cur, ["Pottinger signed for Britain."]))
+
+
+def test_a_source_sentence_squeezed_to_a_hint_is_refused():
+    cur = [{"text": "Lin Zexu was appointed by the Daoguang Emperor with full authority to suppress the opium trade.", "by": ["A"]}]
+    squeezed = "[C1] Lin was appointed."
+    lines, _ = cp.parse_fold(squeezed, 1, 0)
+    assert any("kept too little" in p for p in cp.check_fold(lines, cur, []))
+    kept = "[C1] Lin Zexu was appointed by the Daoguang Emperor with full authority to suppress the trade."
+    lines, _ = cp.parse_fold(kept, 1, 0)
+    assert not any("kept too little" in p for p in cp.check_fold(lines, cur, []))

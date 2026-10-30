@@ -26,6 +26,7 @@ import consolidate_drafts as cd
 
 MAX_TRIES = 3
 MAX_SENTENCE_WORDS = 45
+MIN_KEPT = 0.6  # share of a source sentence's content words that its citing lines must hold
 RETRY_WAITS = (30, 60, 120, 240)  # seconds between tries of a call the gateway could not serve (overloaded, 5xx)
 DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
 FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|xing|"
@@ -116,6 +117,13 @@ def check_fold(lines, current, new):
             if len(t) >= 4 and len(prev) >= 4 and len(t & prev) / len(t | prev) > 0.6:
                 problems.append(f"repeats itself: {text[:60]}")
         seen.append(t)
+    # nothing may shrink to a hint: the lines that cite a sentence must hold most of its content words
+    for kind, items in (("C", [u["text"] for u in current]), ("N", new)):
+        for i, src in enumerate(items, 1):
+            held = cd.toks(" ".join(t for c, n, t in lines if i in (c if kind == "C" else n)))
+            want = cd.toks(src)
+            if len(want) >= 4 and len(want & held) / len(want) < MIN_KEPT:
+                problems.append(f"{kind}{i} kept too little of its content: {src[:70]}")
     for x in sorted(cd.nums(all_src) - cd.nums(" ".join(t for _, _, t in lines))):
         problems.append(f"number missing: {x}")
     return problems

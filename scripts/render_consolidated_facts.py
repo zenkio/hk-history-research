@@ -40,7 +40,8 @@ def tip(fact):
     sources = fact.get("backed_by_sources", [])
     if sources:
         rows.append("<b>Official sources:</b> " + "; ".join(esc(s.get("source", s)) for s in sources))
-    rows.append("<i>" + esc(STATUS.get(fact.get("status"), fact.get("status", ""))) + "</i>")
+    if fact.get("status", "accepted") != "accepted":  # everything shown is accepted, so only say when it is not
+        rows.append("<i>" + esc(STATUS.get(fact.get("status"), fact.get("status", ""))) + "</i>")
     return '<span class="fact-tip">' + "<br>".join(rows) + "</span>"
 
 

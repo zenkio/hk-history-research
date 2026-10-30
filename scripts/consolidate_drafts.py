@@ -92,6 +92,29 @@ def build(page_md):
         if added: res.append("**More from the other drafts.** "+" ".join(added))
     return res,stats
 
+def plan(page_md):
+    """Per section: the base draft's sentences and the sentences of the other drafts that add something
+    (same rule as build). Returns (base_name, {i: base_sentences}, {i: [(model, sentence)]})."""
+    c=callouts(page_md)
+    base_name=[k for k in c if k.startswith("Nemotron")][0]
+    S={k:sections(v) for k,v in c.items()}
+    base_sents={i:sentences(S[base_name].get(i,[])) for i in range(7)}
+    allbase=" ".join(" ".join(v) for v in base_sents.values())
+    bt=toks(allbase); bn=nums(allbase)
+    added={}
+    for i in range(7):
+        added[i]=[]; seen=[]
+        for k in c:
+            if k==base_name: continue
+            for snt in sentences(S[k].get(i,[])):
+                t=toks(snt)
+                if len(t)<3: continue
+                if not (nums(snt)-bn or len(t&bt)/len(t)<0.65): continue
+                if any(len(t&a)/max(1,len(t|a))>0.6 for a in seen): continue
+                added[i].append((short(k),snt)); seen.append(t)
+    return base_name,base_sents,added
+
+
 MONTHS="January|February|March|April|May|June|July|August|September|October|November|December"
 UNITS="million|chests|chest|sacks|tonnes|taels|warships|troops|years|days|rounds|sq|square|per|km|miles"
 

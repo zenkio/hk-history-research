@@ -167,19 +167,27 @@ def units_of(lines, current, draft):
     return units
 
 
+PARALLEL_SECTIONS = 4  # the seven sections of one fold are independent, so they are written side by side
+
+
 def run(page_md, record, call, tries=MAX_TRIES):
+    from concurrent.futures import ThreadPoolExecutor
     order = cd.draft_order(page_md)
     sections = {i: [] for i in range(7)}
     report = {"drafts": [d for d, _ in order], "folds": []}
+    started = time.time()
     for k, (draft, secs) in enumerate(order):
-        for i in range(7):
-            units, left, used = fold_section(call, cd.CANON[i], sections[i], secs.get(i, []), draft, tries)
+        with ThreadPoolExecutor(PARALLEL_SECTIONS) as pool:
+            results = list(pool.map(
+                lambda i: fold_section(call, cd.CANON[i], sections[i], secs.get(i, []), draft, tries), range(7)))
+        for i, (units, left, used) in enumerate(results):
             sections[i] = units
             if used:  # 0 tries = nothing to merge (a section only one draft has)
                 report["folds"].append({"draft": draft, "section": cd.CANON[i], "tries": used,
                                         "fallback": bool(left), "problems": left})
                 print(f"[consolidate] +{draft} / {cd.CANON[i]}: {used} tries, "
                       f"{'FELL BACK' if left else 'ok'}, {len(left)} problems", flush=True)
+        print(f"[consolidate] draft {k + 1} of {len(order)} folded in, {int(time.time() - started)} s", flush=True)
     record["sections"] = [{"title": cd.CANON[i], "units": [dict(u, facts=cd.facts_in(u["text"], record["facts"]))
                                                            for u in sections[i]]} for i in range(7)]
     paragraphs = [f"**{i + 1}. {cd.CANON[i]}** " + " ".join(u["text"] for u in sections[i]) for i in range(7)]

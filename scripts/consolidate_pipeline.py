@@ -145,8 +145,12 @@ def gateway_call(model, token, seed=20261030):
             try:
                 data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
                 return mt.record_of({"id": "consolidate"}, model, data)["text"]
-            except mt.QuotaExhausted:
-                raise
+            except mt.QuotaExhausted as e:  # a resting model says when it is free again: wait that long (max 10 min)
+                rest = mt.rest_seconds(str(e))
+                if rest is None or rest > 600 or wait is None:
+                    raise WriterUnavailable(str(e)[:200])
+                time.sleep(rest + 5)
+                continue
             except Exception as e:  # overloaded / timeout / 5xx: wait and ask again; anything else is a bug
                 transient = re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
                 if not transient:

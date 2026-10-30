@@ -79,3 +79,19 @@ def test_gateway_call_waits_and_asks_again_when_the_model_is_overloaded(monkeypa
     import pytest
     with pytest.raises(Exception, match="no_eligible_route"):  # a real bug is not retried or hidden
         cp.gateway_call("m", "t")("sys", "prompt")
+
+
+def test_gateway_call_waits_for_a_resting_model_to_be_free_again(monkeypatch):
+    import multi_ai_trial as mt
+    slept = []
+    calls = []
+
+    def fake_post(body, token, key):
+        calls.append(1)
+        if len(calls) == 1:
+            raise mt.QuotaExhausted("quota_exhausted resting, is free again at 2999-01-01T00:00:00Z")
+        return {"output": {"text": "ok"}, "usage": {"billing": "free"}}
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(mt, "rest_seconds", lambda m, now=None: 42.0)
+    monkeypatch.setattr(cp.time, "sleep", slept.append)
+    assert cp.gateway_call("m", "t")("s", "p") == "ok" and slept == [47.0]

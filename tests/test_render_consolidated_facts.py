@@ -33,7 +33,7 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
     assert rc.MARKER not in text and "## Consolidated version" in text and "## Next" in text
     assert '<input type="checkbox">' in text  # switch starts off (no "checked" on it)
     assert text.count('type="radio"') == len(rc.COLOURS) and text.count(" checked>") == 1  # one default colour
-    assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text and "(1843)" in text
     assert "not yet checked" not in text  # plain accepted is not repeated (owner 2026-10-30)
     assert "<i>disputed</i>" in text
     assert "Not mentioned" not in text  # owner rule 2026-10-30: never list who did not mention a fact
@@ -58,8 +58,8 @@ def test_each_sentence_is_one_hover_span_with_its_ais_and_facts(tmp_path):
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert text.count('<span class="sent') == 2
     assert '<p><strong>Lead.</strong> <span class="sent fact-disputed" tabindex="0">Signed <mark class="fact-in">in 1842 &lt;ok&gt;</mark>' in text
-    assert "<b>Backed by AI:</b> A, B<br><b>in 1842 &lt;ok&gt;</b>: A, B" in text
-    assert "<b>Backed by AI:</b> A</span></span></p>" in text  # sentence without a fact still shows its AIs
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span><br><b>in 1842 &lt;ok&gt;</b>: <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span></span></span></p>" in text  # sentence without a fact still shows its AIs
     assert text.index("Lead.") < text.index("All 2 facts and who backs them")  # narrative above the list
 
 
@@ -80,5 +80,5 @@ def test_sections_with_units_are_rendered_exactly_with_their_backers(tmp_path):
     rc.build(tmp_path)
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert text.count('<span class="sent') == 2  # the first unit holds two sentences but is one hover span
-    assert "<b>Backed by AI:</b> A, B<br><b>Signed &lt;1842&gt;</b>: A, B" in text
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span><br><b>Signed &lt;1842&gt;</b>: <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text
     assert "<strong>1. What happened</strong>" in text

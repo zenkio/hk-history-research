@@ -29,14 +29,19 @@ def esc(text):
     return html.escape(str(text), quote=True)
 
 
+def name(model):
+    """Model names must not be translated by the reader's browser."""
+    return f'<span translate="no">{esc(model)}</span>'
+
+
 def tip(fact):
     rows = []
     backed = fact.get("backed_by_ai", [])
     rows.append(("<b>Only this AI:</b> " if len(backed) == 1 else "<b>Backed by AI:</b> ")
-                + (", ".join(esc(b["model"]) for b in backed) or "none"))
+                + (", ".join(name(b["model"]) for b in backed) or "none"))
     if fact.get("differs"):
         rows.append("<b>Says differently:</b> " + "; ".join(
-            f'{esc(d["model"])} ({esc(d["said"])})' for d in fact["differs"]))
+            f'{name(d["model"])} ({esc(d["said"])})' for d in fact["differs"]))
     sources = fact.get("backed_by_sources", [])
     if sources:
         rows.append("<b>Official sources:</b> " + "; ".join(esc(s.get("source", s)) for s in sources))
@@ -83,13 +88,13 @@ def sentence_span(sentence, facts, models, fact_ids=()):
     inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []
     if models:
-        rows.append("<b>Backed by AI:</b> " + ", ".join(esc(m) for m in models))
+        rows.append("<b>Backed by AI:</b> " + ", ".join(name(m) for m in models))
     for fact, shown in inside:
         backed = [b["model"] for b in fact.get("backed_by_ai", [])]
-        row = f"<b>{esc(shown)}</b>: " + (", ".join(esc(m) for m in backed) or "none")
+        row = f"<b>{esc(shown)}</b>: " + (", ".join(name(m) for m in backed) or "none")
         if fact.get("differs"):
             row += " &middot; says differently: " + "; ".join(
-                f'{esc(d["model"])} ({esc(d["said"])})' for d in fact["differs"])
+                f'{name(d["model"])} ({esc(d["said"])})' for d in fact["differs"])
         sources = fact.get("backed_by_sources", [])
         if sources:
             row += " &middot; official sources: " + "; ".join(esc(x.get("source", x)) for x in sources)

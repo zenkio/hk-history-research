@@ -28,21 +28,16 @@
     outline: none;
   }
 
-  // Highlight (not underline): every sentence is written from AI drafts. Shown while the switch is on.
-  &:has(.fact-switch input:checked) p .sent {
-    background: color-mix(in srgb, var(--secondary) 16%, transparent);
-    border-radius: 3px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-  }
-
-  &:has(.fact-switch input:checked) p .sent:hover,
-  &:has(.fact-switch input:checked) p .sent:focus {
-    background: color-mix(in srgb, var(--secondary) 30%, transparent);
-  }
-
-  &:has(.fact-switch input:checked) p .sent.fact-disputed {
-    background: rgba(192, 57, 43, 0.16);
+  // Desktop only (owner 2026-10-30): with the switch on, hovering a sentence turns it yellow and shows its tip.
+  // Nothing is highlighted at rest, and touch screens get neither the switch nor the floating tip.
+  @media (hover: hover) and (pointer: fine) {
+    &:has(.fact-switch input:checked) p .sent:hover {
+      background: #ffe94d;
+      color: #222;
+      border-radius: 3px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
   }
 
   p .sent .fact-in {
@@ -182,11 +177,17 @@
   }
 
   // The tip shows only while the switch is on. (Quartz rewrites the input's class, so match it by its wrapper.)
-  &:has(.fact-switch input:checked) .fact:hover .fact-tip,
-  &:has(.fact-switch input:checked) .fact:focus .fact-tip,
-  &:has(.fact-switch input:checked) .sent:hover .fact-tip,
-  &:has(.fact-switch input:checked) .sent:focus .fact-tip {
-    display: block;
+  @media (hover: hover) and (pointer: fine) {
+    &:has(.fact-switch input:checked) .fact:hover .fact-tip,
+    &:has(.fact-switch input:checked) .sent:hover .fact-tip {
+      display: block;
+    }
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    .fact-switch {
+      display: none;
+    }
   }
 
   .fact-disputed {

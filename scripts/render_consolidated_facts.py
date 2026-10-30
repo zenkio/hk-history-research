@@ -45,7 +45,7 @@ def tip(fact):
     return '<span class="fact-tip">' + "<br>".join(rows) + "</span>"
 
 
-COLOURS = ["butter", "mint", "sky", "rose", "peach", "lilac"]  # soft highlight colours; the first is the default
+COLOURS = ["sky", "butter", "mint", "rose", "peach", "lilac"]  # soft highlight colours; the first is the default
 TOKEN = re.compile(r"\{\{([\w-]+)\|(.*?)\}\}")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 

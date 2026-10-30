@@ -32,7 +32,7 @@
   // Nothing is highlighted at rest, and touch screens get neither the switch nor the floating tip.
   @media (hover: hover) and (pointer: fine) {
     &:has(.fact-switch input:checked) p .sent:hover {
-      background: var(--hl, #fff1a8);
+      background: var(--hl, #cfe4fb);
       color: #222;
       border-radius: 3px;
       box-decoration-break: clone;
@@ -247,7 +247,7 @@
 
   // Touch screens: a sentence held for about a second (quartz/components/scripts/facthold.inline.ts) opens its tip.
   p .sent.hold-open {
-    background: var(--hl, #fff1a8);
+    background: var(--hl, #cfe4fb);
     color: #222;
     border-radius: 3px;
     box-decoration-break: clone;

@@ -21,7 +21,7 @@ import sys
 import consolidate_drafts as cd
 
 MAX_TRIES = 3
-DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a50b:free"
+DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
 FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|"
                        r"other (?:ai|models?|sources?)|according to)\b", re.I)
 SYSTEM = ("You merge several texts about the same history topic into one flowing passage. You use only what "

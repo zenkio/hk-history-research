@@ -325,3 +325,10 @@ html:not([data-lang="en"]) .lang-en {
     }
   }
 }
+
+// Chinese proper-name mark (專名號): a straight underline under names of people, places, states.
+.pn {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}

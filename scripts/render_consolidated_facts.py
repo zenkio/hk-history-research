@@ -72,6 +72,14 @@ def split_sentences(text):
     return head, [x for x in SENTENCE_END.split(text[len(head):]) if x.strip()]
 
 
+NAME_MARK = re.compile(r"⟦([^⟦⟧]+)⟧")
+
+
+def mark_names(escaped):
+    """Chinese proper-name mark (專名號): names the translation wrapped in ⟦ ⟧ are drawn underlined."""
+    return NAME_MARK.sub(r'<span class="pn">\1</span>', escaped)
+
+
 def sentence_span(sentence, facts, models, fact_ids=(), english=None):
     """A sentence, wholly underlined; hovering anywhere in it shows which AIs back it and its facts."""
     inside, parts, last = [], [], 0
@@ -85,7 +93,7 @@ def sentence_span(sentence, facts, models, fact_ids=(), english=None):
         last = match.end()
     parts.append(BOLD.sub(r"<strong>\1</strong>", esc(sentence[last:])))
     if english:  # sentence is a translation: both are in the page, the language switch shows one
-        parts = [f'<span class="lang-zh">{"".join(parts)}</span><span class="lang-en" lang="en">{esc(english)}</span>']
+        parts = [f'<span class="lang-zh">{mark_names("".join(parts))}</span><span class="lang-en" lang="en">{esc(english)}</span>']
     shown_ids = {f["id"] for f, _ in inside}
     inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []

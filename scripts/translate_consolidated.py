@@ -26,13 +26,16 @@ SYSTEM = ("You translate English history text into Traditional Chinese as writte
 CJK = re.compile(r"[一-鿿]")
 ENGLISH_WORD = re.compile(r"\b[a-z]{3,}\b")  # a lower-case English word left untranslated
 NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
+MARK = re.compile(r"⟦([^⟦⟧]+)⟧")  # proper-name mark (專名號): the renderer draws these names underlined
 LINE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
 
 
 def prompt(title, texts, feedback=None):
     lines = [f"Section: {title}", "", "Translate each numbered sentence into Traditional Chinese (Hong Kong usage, "
              "standard Chinese names for people, places and treaties).", "Output exactly one line per sentence: "
-             "`[n] translation`, with the same numbers, in the same order. No other text.", "Keep every figure and "
+             "`[n] translation`, with the same numbers, in the same order. No other text.", "Wrap every proper name in "
+             "⟦ ⟧ as the Chinese proper-name mark (專名號): names of people, places, countries, dynasties and "
+             "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Not titles of documents, not common words.", "Keep every figure and "
              "date as in the English. Do not merge or split sentences.", ""]
     lines += [f"[{i}] {t}" for i, t in enumerate(texts, 1)]
     if feedback:
@@ -56,6 +59,8 @@ def check(raw, texts):
         return [], problems
     out = [found[i] for i in range(1, len(texts) + 1)]
     for i, (en, zh) in enumerate(zip(texts, out), 1):
+        if MARK.sub("", zh).count("⟦") or MARK.sub("", zh).count("⟧"):
+            problems.append(f"[{i}] has an unmatched or nested ⟦ ⟧")
         if not CJK.search(zh):
             problems.append(f"[{i}] is not Chinese")
         left = ENGLISH_WORD.findall(zh)

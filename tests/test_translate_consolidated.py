@@ -46,3 +46,11 @@ def test_page_has_language_switch_and_chinese_headings_only_with_a_translation()
     assert 'data-lang="zh"' in html and "背景" in html and "顯示每句由哪些 AI 支持" in html
     plain = rc.render({"event": "e", "facts": [], "sections": [{"title": "Background", "units": [unit]}]})
     assert "lang-switch" not in plain and "lang-zh" not in plain and "**" not in plain
+
+
+def test_name_marks_are_kept_checked_and_drawn_underlined():
+    out, problems = tc.check("[1] ⟦林則徐⟧於1839年抵達。\n[2] 約20,283箱。", TEXTS)
+    assert not problems and out[0].startswith("⟦林則徐⟧")
+    assert "unmatched" in tc.check("[1] ⟦林則徐於1839年抵達。\n[2] 約20,283箱。", TEXTS)[1][0]
+    unit = {"text": TEXTS[0], "by": ["A"], "facts": [], "zh": out[0]}
+    assert '<span class="pn">林則徐</span>' in rc.paragraph_from_units("**1. x** ", [unit], {})

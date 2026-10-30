@@ -15,6 +15,7 @@ and checks it.
 Usage (in the data checkout): consolidate_pipeline.py <page.md> <record.json> [--model ID] [--report FILE]
 """
 import argparse
+import http.client
 import json
 import os
 import re
@@ -58,7 +59,7 @@ def fold_prompt(title, current, new, feedback=None):
               "- Same point in both texts: say it once and tag it with both.",
               "- Only linking words or phrases may be new. No new fact, name, number or explanation.",
               "- Never write 'draft', 'text', 'source', 'AI', 'model' or any model name.",
-              "- One point per sentence, at most 35 words. Do not join points with endless commas.",
+              "- One point per sentence, at most 35 words, and exactly one sentence per line. Do not join points with endless commas.",
               "- Output the tagged lines only: no heading, no list marks, no other text."]
     if feedback:
         lines += ["", "Your last try failed these checks, fix them:"] + [f"- {f}" for f in feedback]
@@ -107,6 +108,8 @@ def check_fold(lines, current, new):
         t = cd.toks(text)
         if len(t) >= 3 and len(t & cd.toks(src)) / len(t) < 0.5:
             problems.append(f"words not found in the sentences it names: {text[:80]}")
+        if len(split_sentences(text)) > 1:
+            problems.append(f"two sentences on one line, give each its own line: {text[:60]}")
         if len(text.split()) > MAX_SENTENCE_WORDS:
             problems.append(f"sentence too long ({len(text.split())} words), split it: {text[:60]}")
         for prev in seen:
@@ -200,9 +203,10 @@ def gateway_call(model, token, seed=20261030):
                     raise WriterUnavailable(str(e)[:200])
                 time.sleep(rest + 5)
                 continue
-            except Exception as e:  # overloaded / timeout / 5xx: wait and ask again; anything else is a bug
-                transient = re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
-                if not transient:
+            except Exception as e:  # overloaded / timeout / 5xx / dropped connection: wait and ask again
+                transient = isinstance(e, (OSError, http.client.HTTPException)) or \
+                    re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
+                if not transient:  # anything else is a bug: show it
                     raise
                 if wait is None:
                     raise WriterUnavailable(str(e)[:200])

@@ -104,3 +104,23 @@ def test_gateway_call_waits_for_a_resting_model_to_be_free_again(monkeypatch):
     monkeypatch.setattr(mt, "rest_seconds", lambda m, now=None: 42.0)
     monkeypatch.setattr(cp.time, "sleep", slept.append)
     assert cp.gateway_call("m", "t")("s", "p") == "ok" and slept == [47.0]
+
+
+def test_dropped_connection_is_waited_out_and_two_sentences_on_a_line_are_refused(monkeypatch):
+    import http.client
+    import multi_ai_trial as mt
+    answers = [http.client.RemoteDisconnected("Remote end closed connection without response"),
+               {"output": {"text": "ok"}, "usage": {"billing": "free"}}]
+
+    def fake_post(body, token, key):
+        a = answers.pop(0)
+        if isinstance(a, Exception):
+            raise a
+        return a
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(cp.time, "sleep", lambda s: None)
+    assert cp.gateway_call("m", "t")("s", "p") == "ok"
+    cur = [{"text": "The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking.", "by": ["A"]}]
+    lines, _ = cp.parse_fold("[C1,N1] The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking. "
+                             "Pottinger signed for Britain.", 1, 1)
+    assert any("two sentences on one line" in p for p in cp.check_fold(lines, cur, ["Pottinger signed for Britain."]))

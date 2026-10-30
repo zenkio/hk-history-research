@@ -97,6 +97,7 @@ def run(page_md, record, call, tries=MAX_TRIES):
                   facts_marked=len(placed), facts=len(record["facts"]),
                   words=sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs))
     record["narrative"] = paragraphs
+    record["sentence_ai"] = cd.sentence_backing(page_md, paragraphs)
     return record, report
 
 

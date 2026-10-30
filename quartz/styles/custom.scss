@@ -21,6 +21,30 @@
     position: relative;
   }
 
+  // Whole sentences carry the hover; the facts inside are only lightly marked.
+  p .sent {
+    display: inline;
+    position: static;
+    border-bottom: 1px dotted var(--secondary);
+    outline: none;
+  }
+
+  p .sent.fact-disputed {
+    border-bottom-color: #c0392b;
+  }
+
+  p .sent .fact-in {
+    background: none;
+    color: inherit;
+    font-weight: 600;
+  }
+
+  p .sent .fact-tip {
+    top: auto;
+    left: 0;
+    margin-top: 1.6em;
+  }
+
   p .fact {
     display: inline;
     position: static;
@@ -147,7 +171,9 @@
 
   // The tip shows only while the switch is on. (Quartz rewrites the input's class, so match it by its wrapper.)
   &:has(.fact-switch input:checked) .fact:hover .fact-tip,
-  &:has(.fact-switch input:checked) .fact:focus .fact-tip {
+  &:has(.fact-switch input:checked) .fact:focus .fact-tip,
+  &:has(.fact-switch input:checked) .sent:hover .fact-tip,
+  &:has(.fact-switch input:checked) .sent:focus .fact-tip {
     display: block;
   }
 

@@ -254,18 +254,41 @@ def check_rewrite(page_md, paragraphs):
     return problems, uncovered
 
 
+def sentence_backing(page_md, paragraphs, share=0.5):
+    """For each sentence of each narrative paragraph, the drafts that hold it: those with at least `share` of the
+    sentence's content words. Mechanical (word overlap), not a judgement of meaning. Lines up with
+    render_consolidated_facts.split_sentences."""
+    from render_consolidated_facts import split_sentences, TOKEN
+    drafts={short(k):toks(" ".join(v)) for k,v in callouts(page_md).items()}
+    out=[]
+    for para in paragraphs:
+        row=[]
+        for snt in split_sentences(para)[1]:
+            t=toks(TOKEN.sub(lambda m:m.group(2),snt))
+            row.append([k for k,d in drafts.items() if len(t)>=2 and len(t&d)/len(t)>=share])
+        out.append(row)
+    return out
+
+
 def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("page")
     ap.add_argument("record")
+    ap.add_argument("--backing-only", action="store_true",
+                    help="keep the narrative, only recompute which drafts hold each sentence")
     args = ap.parse_args(argv)
     page_md = open(args.page, encoding="utf-8").read()
     record = json.load(open(args.record, encoding="utf-8"))
+    if args.backing_only:
+        record["sentence_ai"] = sentence_backing(page_md, record["narrative"])
+        json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        return 0
     paragraphs, stats = build(page_md)
     problems = check(page_md, paragraphs)
     paragraphs, placed = mark_facts(paragraphs, record["facts"])
     record["narrative"] = paragraphs
+    record["sentence_ai"] = sentence_backing(page_md, paragraphs)
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     words = sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs)
     print(f"{args.page}: {stats['added']} of {stats['seen']} other-draft sentences added, {words} words, "

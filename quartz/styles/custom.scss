@@ -32,7 +32,7 @@
   // Nothing is highlighted at rest, and touch screens get neither the switch nor the floating tip.
   @media (hover: hover) and (pointer: fine) {
     &:has(.fact-switch input:checked) p .sent:hover {
-      background: #ffe94d;
+      background: var(--hl, #fff1a8);
       color: #222;
       border-radius: 3px;
       box-decoration-break: clone;
@@ -184,9 +184,71 @@
     }
   }
 
+  // Highlight colour: a row of swatches above the switch, shown only while the switch is on.
+  .fact-colors {
+    position: fixed;
+    right: 1rem;
+    bottom: 4.4rem;
+    z-index: 50;
+    display: none;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    border: 2px solid var(--secondary);
+    border-radius: 999px;
+    background: var(--light);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    label {
+      display: block;
+      cursor: pointer;
+    }
+
+    input {
+      appearance: none;
+      -webkit-appearance: none;
+      display: block;
+      width: 1.3rem;
+      height: 1.3rem;
+      margin: 0;
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      background: var(--swatch);
+      box-shadow: 0 0 0 1px #888;
+      cursor: pointer;
+
+      &::after {
+        content: none;
+      }
+
+      &:checked {
+        border-color: var(--dark);
+      }
+    }
+
+    .hl-butter { --swatch: #fff1a8; }
+    .hl-mint { --swatch: #cdeedb; }
+    .hl-sky { --swatch: #cfe4fb; }
+    .hl-rose { --swatch: #fbd5df; }
+    .hl-peach { --swatch: #fddcbc; }
+    .hl-lilac { --swatch: #e3d8f6; }
+  }
+
+  &:has(.fact-switch input:checked) .fact-colors {
+    display: flex;
+  }
+
+  &:has(.hl-butter input:checked) { --hl: #fff1a8; }
+  &:has(.hl-mint input:checked) { --hl: #cdeedb; }
+  &:has(.hl-sky input:checked) { --hl: #cfe4fb; }
+  &:has(.hl-rose input:checked) { --hl: #fbd5df; }
+  &:has(.hl-peach input:checked) { --hl: #fddcbc; }
+  &:has(.hl-lilac input:checked) { --hl: #e3d8f6; }
+
   @media (hover: none), (pointer: coarse) {
-    .fact-switch {
-      display: none;
+    .fact-switch,
+    .fact-colors {
+      display: none !important;
     }
   }
 

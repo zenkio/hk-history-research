@@ -31,7 +31,8 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
     assert rc.build(tmp_path) == [str(tmp_path / "content/05_Multi_AI/e.md")]
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert rc.MARKER not in text and "## Consolidated version" in text and "## Next" in text
-    assert '<input type="checkbox">' in text and "checked" not in text  # switch starts off
+    assert '<input type="checkbox">' in text  # switch starts off (no "checked" on it)
+    assert text.count('type="radio"') == len(rc.COLOURS) and text.count(" checked>") == 1  # one default colour
     assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text
     assert "not yet checked" not in text  # plain accepted is not repeated (owner 2026-10-30)
     assert "<i>disputed</i>" in text

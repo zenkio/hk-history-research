@@ -45,6 +45,7 @@ def tip(fact):
     return '<span class="fact-tip">' + "<br>".join(rows) + "</span>"
 
 
+COLOURS = ["butter", "mint", "sky", "rose", "peach", "lilac"]  # soft highlight colours; the first is the default
 TOKEN = re.compile(r"\{\{([\w-]+)\|(.*?)\}\}")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 
@@ -130,6 +131,10 @@ def render(record):
         "Agreement between AIs is not evidence; official sources will be added to each fact later.</p>",
         '<label class="fact-switch"><input type="checkbox"> '
         "Show which AI backs each sentence</label>",
+        '<span class="fact-colors" role="group" aria-label="Highlight colour">'
+        + "".join(f'<label class="hl-{c}" title="{c}"><input type="radio" name="hl" value="{c}"'
+                  f'{" checked" if c == COLOURS[0] else ""}></label>' for c in COLOURS)
+        + "</span>",
         *narrative,
         f'<details class="cons-facts-box"><summary class="cons-facts-title">All {len(items)} facts and who backs them</summary>',
         '<ul class="cons-facts">', *items, "</ul>", "</details>", "</div>"])

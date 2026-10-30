@@ -117,8 +117,8 @@ def mark_facts(paragraphs, facts):
                     if len(shared) < 2 or score < 0.35 or (best and score <= best[0]):
                         continue
                     for num in wanted:
-                        m = re.search(r"(?:\b\d{1,2} (?:%s) )?(?:\b(?:%s) \d{1,2},? )?(?<![\w.,])%s(?:[–-]\d[\d,.]*)?(?: (?:%s)\b)?"
-                                      % (MONTHS, MONTHS, re.escape(num), UNITS), seg.group(0))
+                        m = re.search(r"(?:\b\d{1,2} )?(?:(?:%s) (?:\d{1,2},? )?)?(?<![\w.,])%s(?:[–-]\d[\d,.]*)?(?: (?:%s|%s)\b)?"
+                                      % (MONTHS, re.escape(num), MONTHS, UNITS), seg.group(0))
                         if m and m.group(0).strip():
                             best = (score, pi, piece_start + seg.start() + m.start(), piece_start + seg.start() + m.end())
                             break
@@ -126,6 +126,40 @@ def mark_facts(paragraphs, facts):
             _, pi, start, end = best
             para = out[pi]
             out[pi] = para[:start] + "{{%s|%s}}" % (fact["id"], para[start:end].strip().replace("|", "/")) + para[end:]
+            placed.add(fact["id"])
+    # Second pass: facts without a usable number are marked on the phrase (4 to 14 words) of their best
+    # sentence that holds most of the fact's words.
+    for fact in facts:
+        if fact["id"] in placed:
+            continue
+        words = {w for w in toks(fact["text"]) if not w[0].isdigit()} | {w for w in toks(fact["text"])}
+        if len(words) < 2:
+            continue
+        best = None
+        for pi, para in enumerate(out):
+            for piece_start, piece in _plain_pieces(para):
+                for seg in re.finditer(r"[^.!?]+(?:\.\d[^.!?]*)*[.!?]?", piece):
+                    toks_in = [(m, toks(m.group(0))) for m in re.finditer(r"\S+", seg.group(0))]
+                    shared_all = words & toks(seg.group(0))
+                    if len(shared_all) < 2 or len(shared_all) / len(words) < 0.35:
+                        continue
+                    for i in range(len(toks_in)):
+                        for j in range(i + 3, min(len(toks_in), i + 14)):
+                            window = toks_in[i:j + 1]
+                            count = len(set().union(*[t for _, t in window]) & words)
+                            if not (words & window[0][1]) or not (words & window[-1][1]):
+                                continue
+                            key = (count, -(j - i))
+                            if count >= 2 and (best is None or key > best[0]):
+                                a = piece_start + seg.start() + window[0][0].start()
+                                b = piece_start + seg.start() + window[-1][0].end()
+                                best = (key, pi, a, b)
+        if best:
+            _, pi, a, b = best
+            para = out[pi]
+            text = para[a:b].rstrip(",;:")
+            b = a + len(text)
+            out[pi] = para[:a] + "{{%s|%s}}" % (fact["id"], text.replace("|", "/")) + para[b:]
             placed.add(fact["id"])
     return out, placed
 

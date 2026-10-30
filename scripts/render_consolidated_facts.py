@@ -72,7 +72,7 @@ def split_sentences(text):
     return head, [x for x in SENTENCE_END.split(text[len(head):]) if x.strip()]
 
 
-def sentence_span(sentence, facts, models, fact_ids=()):
+def sentence_span(sentence, facts, models, fact_ids=(), english=None):
     """A sentence, wholly underlined; hovering anywhere in it shows which AIs back it and its facts."""
     inside, parts, last = [], [], 0
     for match in TOKEN.finditer(sentence):
@@ -87,6 +87,8 @@ def sentence_span(sentence, facts, models, fact_ids=()):
     shown_ids = {f["id"] for f, _ in inside}
     inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []
+    if english:  # the sentence shown is a translation: keep the English master one hover away
+        rows.append(f'<b>English:</b> <span lang="en">{esc(english)}</span>')
     if models:
         rows.append("<b>Backed by AI:</b> " + ", ".join(name(m) for m in models))
     for fact, shown in inside:
@@ -124,7 +126,8 @@ def paragraph(text, facts, models=None, fact_ids=None):
 def paragraph_from_units(head, units, facts):
     """A paragraph built from exact units {text, by, facts}: no re-splitting, so the backing lines up for sure."""
     return "<p>" + BOLD.sub(r"<strong>\1</strong>", esc(head)) + " ".join(
-        sentence_span(u["text"], facts, u.get("by", []), u.get("facts", ())) for u in units) + "</p>"
+        sentence_span(u.get("zh") or u["text"], facts, u.get("by", []), u.get("facts", ()),
+                      u["text"] if u.get("zh") else None) for u in units) + "</p>"
 
 
 def render(record):

@@ -18,6 +18,10 @@ on:
         description: 'Branch of zenkio/hk-history-data to preview (an open data PR branch, or main)'
         required: true
         default: main
+      quick:
+        description: 'Quick preview: build only the pages that are new or changed compared with main (about 2 minutes instead of 12; links to other pages, search and the graph are incomplete)'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -33,6 +37,7 @@ jobs:
     env:
       PROJECT: ${{ vars.CLOUDFLARE_PREVIEW_PROJECT || 'hkhistory-preview' }}
       DATA_REF: ${{ inputs.data_ref }}
+      QUICK: ${{ inputs.quick }}
     steps:
       - name: Check the Cloudflare secrets exist
         env:
@@ -72,10 +77,18 @@ jobs:
         run: python -m pip install --quiet "jsonschema>=4.23"
 
       - name: Mark what is new compared with main (preview only)
-        run: python3 scripts/preview_whats_new.py --base origin/main
+        run: |
+          if [[ "$QUICK" == "true" ]]; then
+            python3 scripts/preview_whats_new.py --base origin/main --quick
+          else
+            python3 scripts/preview_whats_new.py --base origin/main
+          fi
 
       - name: Label legacy AI drafts before publication
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
+
+      - name: Render the consolidated facts of the multi-AI pages
+        run: python3 scripts/render_consolidated_facts.py
 
       - name: Validate publication eligibility
         run: python3 scripts/publication_gate.py

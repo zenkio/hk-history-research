@@ -84,6 +84,10 @@ jobs:
         if: env.DRAFT == 'true'
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 
+      - name: Render the consolidated facts of the multi-AI pages
+        if: env.DRAFT == 'true'
+        run: python3 scripts/render_consolidated_facts.py
+
       - name: Validate publication eligibility
         if: env.DRAFT == 'true'
         run: python3 scripts/publication_gate.py

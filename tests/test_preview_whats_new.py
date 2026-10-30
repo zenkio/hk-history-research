@@ -46,3 +46,13 @@ def test_branch_equal_to_base_says_so(tmp_path, monkeypatch):
     git(tmp_path, "checkout", "base")
     pw.build("base")
     assert "no page differences" in (tmp_path / "content/00_Meta/Whats_New.md").read_text()
+
+
+def test_quick_preview_keeps_only_new_changed_home_and_whats_new(tmp_path, monkeypatch):
+    repo(tmp_path, monkeypatch)
+    (tmp_path / "content/index.md").write_text(page("Home"))
+    changes = pw.build("base")
+    assert pw.prune(changes) == 1  # only "same.md" goes
+    left = sorted(str(f.relative_to(tmp_path)) for f in (tmp_path / "content").rglob("*.md"))
+    assert left == ["content/00_Meta/Whats_New.md", "content/01_Timeline/new.md",
+                    "content/01_Timeline/old.md", "content/index.md"]

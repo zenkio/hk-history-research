@@ -91,11 +91,27 @@ def build(base, root=Path(".")):
     return changes
 
 
+def prune(changes, root=Path(".")):
+    """Quick preview: delete every page under content/ that is not new or changed (and not the home page or
+    the What's new page), so Quartz builds a handful of pages instead of the whole site. Links to the removed
+    pages, search and the graph are incomplete in such a build. Returns how many pages were removed."""
+    keep = {root / path for status in changes.values() for path in status} | {root / PAGE, root / CONTENT / "index.md"}
+    removed = 0
+    for file in sorted((root / CONTENT).rglob("*.md")):
+        if file not in keep:
+            file.unlink()
+            removed += 1
+    return removed
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", default="origin/main")
+    parser.add_argument("--quick", action="store_true", help="then keep only the new and changed pages")
     args = parser.parse_args()
     changes = build(args.base)
+    if args.quick:
+        print(f"quick preview: removed {prune(changes)} unchanged pages")
     print(f"preview what's new: {len(changes['A'])} new, {len(changes['M'])} changed")
 
 

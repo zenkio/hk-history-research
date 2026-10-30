@@ -31,8 +31,18 @@ def test_translation_is_set_and_rendered_with_english_in_the_tip():
     tc.run(record, lambda s, p: "[1] 林則徐於1839年抵達。")
     assert record["sections"][0]["units"][0]["zh"].startswith("林則徐")
     html = rc.paragraph_from_units("**1. x** ", record["sections"][0]["units"], {})
-    assert "林則徐於1839年抵達。" in html and "<b>English:</b>" in html and TEXTS[0] in html
+    assert 'class="lang-zh"' in html and "林則徐於1839年抵達。" in html
+    assert f'<span class="lang-en" lang="en">{TEXTS[0]}</span>' in html
 
 
 def test_untranslated_english_word_is_caught():
     assert "left English words" in tc.check("[1] 林則徐於1839年抵達。\n[2] 約20,283箱 one million 箱。", TEXTS)[1][0]
+
+
+def test_page_has_language_switch_and_chinese_headings_only_with_a_translation():
+    unit = {"text": TEXTS[0], "by": ["A"], "facts": []}
+    rec = {"event": "e", "facts": [], "sections": [{"title": "Background", "units": [dict(unit, zh="林則徐抵達。")]}]}
+    html = rc.render(rec)
+    assert 'data-lang="zh"' in html and "背景" in html and "顯示每句由哪些 AI 支持" in html
+    plain = rc.render({"event": "e", "facts": [], "sections": [{"title": "Background", "units": [unit]}]})
+    assert "lang-switch" not in plain and "lang-zh" not in plain and "**" not in plain

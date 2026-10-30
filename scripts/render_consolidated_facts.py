@@ -84,11 +84,11 @@ def sentence_span(sentence, facts, models, fact_ids=(), english=None):
         parts.append(f'<mark class="fact-in">{esc(match.group(2))}</mark>')
         last = match.end()
     parts.append(BOLD.sub(r"<strong>\1</strong>", esc(sentence[last:])))
+    if english:  # sentence is a translation: both are in the page, the language switch shows one
+        parts = [f'<span class="lang-zh">{"".join(parts)}</span><span class="lang-en" lang="en">{esc(english)}</span>']
     shown_ids = {f["id"] for f, _ in inside}
     inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []
-    if english:  # the sentence shown is a translation: keep the English master one hover away
-        rows.append(f'<b>English:</b> <span lang="en">{esc(english)}</span>')
     if models:
         rows.append("<b>Backed by AI:</b> " + ", ".join(name(m) for m in models))
     for fact, shown in inside:
@@ -123,9 +123,29 @@ def paragraph(text, facts, models=None, fact_ids=None):
     return "<p>" + out + "</p>"
 
 
+ZH_TITLES = {"What happened": "事件經過", "Background": "背景", "Hong Kong at this time": "當時的香港",
+             "China at this time": "當時的中國", "Britain at this time": "當時的英國", "Consequences": "後果",
+             "Uncertain or disputed points": "不確定或有爭議之處"}
+
+
+def both(english, chinese, translated):
+    return (f'<span class="lang-zh">{chinese}</span><span class="lang-en" lang="en">{english}</span>'
+            if translated else english)
+
+
+def heading(number, title, translated):
+    """Section heading; in both languages when the section has a Chinese version."""
+    if not (translated and title in ZH_TITLES):
+        return f"**{number}. {title}** "
+    return (f'<strong>{number}. <span class="lang-zh">{ZH_TITLES[title]}</span>'
+            f'<span class="lang-en" lang="en">{esc(title)}</span></strong> ')
+
+
 def paragraph_from_units(head, units, facts):
-    """A paragraph built from exact units {text, by, facts}: no re-splitting, so the backing lines up for sure."""
-    return "<p>" + BOLD.sub(r"<strong>\1</strong>", esc(head)) + " ".join(
+    """A paragraph built from exact units {text, by, facts}: no re-splitting, so the backing lines up for sure.
+    `head` is Markdown (**bold**) or ready HTML from heading()."""
+    head_html = head if head.startswith("<strong>") else BOLD.sub(r"<strong>\1</strong>", esc(head))
+    return "<p>" + head_html + " ".join(
         sentence_span(u.get("zh") or u["text"], facts, u.get("by", []), u.get("facts", ()),
                       u["text"] if u.get("zh") else None) for u in units) + "</p>"
 
@@ -135,11 +155,13 @@ def render(record):
     ai = record.get("sentence_ai", [])
     sf = record.get("sentence_facts", [])
     if record.get("sections"):  # written by the fold pipeline: exact sentence units with their backers
-        narrative = [paragraph_from_units(f"**{i + 1}. {sec['title']}** ", sec["units"], facts)
+        narrative = [paragraph_from_units(heading(i + 1, sec["title"], all(u.get("zh") for u in sec["units"])),
+                                         sec["units"], facts)
                      for i, sec in enumerate(record["sections"])]
     else:
         narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None, sf[i] if i < len(sf) else None)
                      for i, t in enumerate(record.get("narrative", []))]
+    has_zh = any(u.get("zh") for sec in record.get("sections", []) for u in sec["units"])
     items = []
     for fact in record["facts"]:
         kind = KINDS.get(fact.get("kind"), "Fact")
@@ -150,10 +172,15 @@ def render(record):
     return "\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
-        '<p class="cons-note">One account written from what the AI drafts below say (unverified). On a computer, turn on the switch at the bottom right and point at a sentence to see which AIs back it; on a phone, hold a sentence for a moment. '
-        "Agreement between AIs is not evidence; official sources will be added to each fact later.</p>",
+        *([ '<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="zh">中文</button>'
+           '<button type="button" data-lang="en">English</button></span>'] if has_zh else []),
+        '<p class="cons-note">' + both(
+            "One account written from what the AI drafts below say (unverified). On a computer, turn on the switch at the bottom right and point at a sentence to see which AIs back it; on a phone, hold a sentence for a moment. "
+            "Agreement between AIs is not evidence; official sources will be added to each fact later.",
+            "根據下方各 AI 草稿寫成的綜合版本（未經核實）。電腦版請開啟右下角的開關，再把滑鼠移到句子上，即可看到哪些 AI 支持；手機版請按住句子片刻。"
+            "多個 AI 意見一致並不等於有證據；官方來源日後會逐項加入。", has_zh) + "</p>",
         '<label class="fact-switch"><input type="checkbox"> '
-        "Show which AI backs each sentence</label>",
+        + both("Show which AI backs each sentence", "顯示每句由哪些 AI 支持", has_zh) + "</label>",
         '<span class="fact-colors" role="group" aria-label="Highlight colour">'
         + "".join(f'<label class="hl-{c}" title="{c}"><input type="radio" name="hl" value="{c}"'
                   f'{" checked" if c == COLOURS[0] else ""}></label>' for c in COLOURS)

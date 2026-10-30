@@ -295,3 +295,33 @@
   border-color: #d4a017;
   background: rgba(212, 160, 23, 0.15);
 }
+
+// Language switch: Traditional Chinese is the default; `lang.inline.ts` sets data-lang on <html>.
+// Without a Chinese version the page only has the English text, so there is nothing to hide.
+html[data-lang="en"] .lang-zh,
+html:not([data-lang="en"]) .lang-en {
+  display: none;
+}
+
+.lang-switch {
+  display: inline-flex;
+  margin: 0 0 0.6rem;
+  border: 1px solid var(--secondary);
+  border-radius: 999px;
+  overflow: hidden;
+
+  button {
+    padding: 0.25rem 0.9rem;
+    border: 0;
+    background: var(--light);
+    color: var(--darkgray);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    &[aria-pressed="true"] {
+      background: var(--secondary);
+      color: var(--light);
+    }
+  }
+}

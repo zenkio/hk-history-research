@@ -113,3 +113,22 @@
     border-bottom-color: #c0392b;
   }
 }
+
+// Status badge under a page title: draft / not compared with sources.
+.status-badge {
+  display: inline-block;
+  margin: 0.2rem 0 0.8rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--lightgray);
+  background: var(--highlight);
+  color: var(--darkgray);
+}
+
+.status-draft {
+  border-color: #d4a017;
+  background: rgba(212, 160, 23, 0.15);
+}

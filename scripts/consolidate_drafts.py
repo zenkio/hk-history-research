@@ -254,6 +254,16 @@ def check_rewrite(page_md, paragraphs):
     return problems, uncovered
 
 
+def draft_order(page_md):
+    """[(short name, {section index: sentences})]: the base draft (Nemotron) first, then the others by length,
+    longest first, so the richest are folded in while the structure is still forming."""
+    c=callouts(page_md)
+    base=[k for k in c if k.startswith("Nemotron")][0]
+    secs={k:{i:sentences(v) for i,v in sections(c[k]).items()} for k in c}
+    size=lambda k:-sum(len(" ".join(v).split()) for v in secs[k].values())
+    return [(short(k),secs[k]) for k in [base]+sorted((k for k in c if k!=base),key=size)]
+
+
 def sentence_backing(page_md, paragraphs, share=0.5):
     """For each sentence of each narrative paragraph, the drafts that hold it: those with at least `share` of the
     sentence's content words. Mechanical (word overlap), not a judgement of meaning. Lines up with
@@ -270,20 +280,20 @@ def sentence_backing(page_md, paragraphs, share=0.5):
     return out
 
 
+def facts_in(sentence, facts, share=0.6):
+    """Ids of the fact records a sentence states: at least `share` of the fact's content words are in the
+    sentence and every number of the fact is too. Mechanical."""
+    t=toks(sentence); n=nums(sentence)
+    return [f["id"] for f in facts
+            if len(toks(f["text"]))>=2 and nums(f["text"])<=n
+            and len(toks(f["text"])&t)/len(toks(f["text"]))>=share]
+
+
 def sentence_facts(paragraphs, facts, share=0.6):
-    """For each sentence, the ids of the fact records it states: at least `share` of the fact's content words are
-    in the sentence and every number of the fact is too. Mechanical; lines up with split_sentences."""
+    """Per paragraph, per sentence: `facts_in`. Lines up with render_consolidated_facts.split_sentences."""
     from render_consolidated_facts import split_sentences, TOKEN
-    out=[]
-    for para in paragraphs:
-        row=[]
-        for snt in split_sentences(para)[1]:
-            plain=TOKEN.sub(lambda m:m.group(2),snt); t=toks(plain); n=nums(plain)
-            row.append([f["id"] for f in facts
-                        if len(toks(f["text"]))>=2 and nums(f["text"])<=n
-                        and len(toks(f["text"])&t)/len(toks(f["text"]))>=share])
-        out.append(row)
-    return out
+    return [[facts_in(TOKEN.sub(lambda m:m.group(2),snt),facts,share) for snt in split_sentences(para)[1]]
+            for para in paragraphs]
 
 
 def main(argv=None):

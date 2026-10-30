@@ -116,12 +116,22 @@ def paragraph(text, facts, models=None, fact_ids=None):
     return "<p>" + out + "</p>"
 
 
+def paragraph_from_units(head, units, facts):
+    """A paragraph built from exact units {text, by, facts}: no re-splitting, so the backing lines up for sure."""
+    return "<p>" + BOLD.sub(r"<strong>\1</strong>", esc(head)) + " ".join(
+        sentence_span(u["text"], facts, u.get("by", []), u.get("facts", ())) for u in units) + "</p>"
+
+
 def render(record):
     facts = {f["id"]: f for f in record["facts"]}
     ai = record.get("sentence_ai", [])
     sf = record.get("sentence_facts", [])
-    narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None, sf[i] if i < len(sf) else None)
-                 for i, t in enumerate(record.get("narrative", []))]
+    if record.get("sections"):  # written by the fold pipeline: exact sentence units with their backers
+        narrative = [paragraph_from_units(f"**{i + 1}. {sec['title']}** ", sec["units"], facts)
+                     for i, sec in enumerate(record["sections"])]
+    else:
+        narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None, sf[i] if i < len(sf) else None)
+                     for i, t in enumerate(record.get("narrative", []))]
     items = []
     for fact in record["facts"]:
         kind = KINDS.get(fact.get("kind"), "Fact")

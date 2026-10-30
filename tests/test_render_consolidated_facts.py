@@ -69,3 +69,16 @@ def test_narrative_with_unknown_fact_id_fails(tmp_path):
     (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(bad))
     with pytest.raises(SystemExit, match="unknown fact id"):
         rc.build(tmp_path)
+
+
+def test_sections_with_units_are_rendered_exactly_with_their_backers(tmp_path):
+    setup(tmp_path)
+    rec = dict(RECORD, narrative=[], sections=[{"title": "What happened", "units": [
+        {"text": "Signed in 1842. Not split again.", "by": ["A", "B"], "facts": ["f1"]},
+        {"text": "Only here.", "by": ["C"]}]}])
+    (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(rec))
+    rc.build(tmp_path)
+    text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
+    assert text.count('<span class="sent') == 2  # the first unit holds two sentences but is one hover span
+    assert "<b>Backed by AI:</b> A, B<br><b>Signed &lt;1842&gt;</b>: A, B" in text
+    assert "<strong>1. What happened</strong>" in text

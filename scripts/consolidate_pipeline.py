@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Consolidate the multi-AI drafts of any page into one fluent text, with automatic checks and retries.
+"""Consolidate the multi-AI drafts of any page, one draft at a time (owner idea 2026-10-30).
 
-Owner direction 2026-10-30: one reusable program that does the whole task for any topic. Per section the
-writer (an AI pinned through the gateway, default Nemotron) gets the base draft and the sentences of the other
-drafts that add something, and must weave them into one flowing text. It may add connectors only: no new
-fact, number or name, no model or draft names, no "one draft says". Each section is checked in code; the
-problems go back to the writer for up to MAX_TRIES tries, then the section falls back to the plain
-base-plus-additions text (flagged in the report). The whole text then passes `consolidate_drafts.check_rewrite`.
-Fact markers are placed by `consolidate_drafts.mark_facts`. The report lists every problem and fallback, so the
-program can be tuned from real results. The checks prove the text comes from the drafts, not that it is true.
+The first draft (Nemotron 3 Ultra) is the consolidated version as it stands. Each further draft is folded in:
+per section, an AI (pinned through the gateway) gets the current consolidated sentences and the new draft's
+sentences and writes the next version, tagging every sentence with the numbered sentences it is made from
+(`[C2,N1] text`). Who backs a sentence is then recorded by the process itself: the backers of the current
+sentences it uses, plus the new draft when it uses a new sentence. Code checks every fold: every current and
+every new sentence is used, no number that neither input has, no model or draft names, short sentences, no
+repeats, each sentence's words found in the inputs it names. Problems go back to the AI for up to MAX_TRIES
+tries; then the section falls back to current + new sentences unchanged (flagged in the report). The checks
+prove the text comes from the drafts, not that it is true. The writer is an AI; this program only feeds it
+and checks it.
 
 Usage (in the data checkout): consolidate_pipeline.py <page.md> <record.json> [--model ID] [--report FILE]
 """
@@ -22,115 +24,162 @@ import time
 import consolidate_drafts as cd
 
 MAX_TRIES = 3
+MAX_SENTENCE_WORDS = 45
 RETRY_WAITS = (30, 60, 120, 240)  # seconds between tries of a call the gateway could not serve (overloaded, 5xx)
+DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
+FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|xing|"
+                       r"other (?:ai|models?|sources?)|according to)\b", re.I)
+SYSTEM = ("You merge texts about the same history topic into one flowing passage. You use only what the texts "
+          "say. You never add a fact, name, date, number or explanation of your own.")
+LINE = re.compile(r"^\s*\[([CN0-9,\s]+)\]\s*(.+?)\s*$")
 
 
 class WriterUnavailable(Exception):
     pass
-MAX_SENTENCE_WORDS = 45
-DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
-FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|"
-                       r"other (?:ai|models?|sources?)|according to)\b", re.I)
-SYSTEM = ("You merge several texts about the same history topic into one flowing passage. You use only what "
-          "the texts say. You never add a fact, name, date, number or explanation of your own.")
 
 
-def cd_sentences(text):
-    from render_consolidated_facts import split_sentences
-    return split_sentences(text)[1] or [text]
+def split_sentences(text):
+    from render_consolidated_facts import split_sentences as sp
+    return sp(text)[1] or [text]
 
 
-def section_prompt(title, base, extra, feedback=None):
-    lines = [f"Section: {title}", "", "MAIN TEXT:", " ".join(base), "", "EXTRA POINTS (from other texts):"]
-    lines += [f"- {s}" for _, s in extra] or ["- (none)"]
-    lines += ["", "Rewrite the MAIN TEXT as one fluent passage that also includes EVERY extra point.",
+def fold_prompt(title, current, new, feedback=None):
+    lines = [f"Section: {title}", "", "CURRENT TEXT (numbered):"]
+    lines += [f"C{i}. {u['text']}" for i, u in enumerate(current, 1)]
+    lines += ["", "NEW TEXT (numbered):"] + [f"N{i}. {t}" for i, t in enumerate(new, 1)]
+    lines += ["", "Write the updated section: the CURRENT TEXT with everything the NEW TEXT adds worked in.",
+              "Output one sentence per line. Start each line with tags in square brackets naming the numbered "
+              "sentences it is made from, e.g. `[C1,C2] ...`, `[C3,N1] ...` or `[N2] ...`.",
               "Rules:",
-              "- Keep every point of the MAIN TEXT; the result must not be shorter than it.",
-              "- Work each extra point into the sentence where it belongs, in your own smooth wording.",
-              "- Where an extra point differs from or contradicts the main text, state both versions naturally "
-              "(for example 'X, although another account gives Y'). Do not choose between them.",
+              "- Every C and every N sentence must be used in at least one line. Nothing may be dropped.",
+              "- Keep the CURRENT wording wherever the NEW TEXT adds nothing (then tag it with its C numbers only).",
+              "- Put each new point where it belongs, in smooth wording. Where the NEW TEXT differs from the CURRENT "
+              "TEXT, state both versions naturally (for example 'X, although another account gives Y') and tag both.",
+              "- Same point in both texts: say it once and tag it with both.",
               "- Only linking words or phrases may be new. No new fact, name, number or explanation.",
-              "- Short sentences: one point per sentence, at most 35 words. Do not join points with endless commas.",
-              "- If several texts say the same thing, say it once, in the clearest wording.",
               "- Never write 'draft', 'text', 'source', 'AI', 'model' or any model name.",
-              "- Output the passage only: plain text, no heading, no list."]
+              "- One point per sentence, at most 35 words. Do not join points with endless commas.",
+              "- Output the tagged lines only: no heading, no list marks, no other text."]
     if feedback:
         lines += ["", "Your last try failed these checks, fix them:"] + [f"- {f}" for f in feedback]
     return "\n".join(lines)
 
 
-def check_section(text, base, extra):
-    """Problems of one written section (empty list = passes)."""
+def parse_fold(raw, n_cur, n_new):
+    """[(cur_indexes, new_indexes, text)], plus problems with the tags themselves."""
+    out, problems = [], []
+    for line in raw.splitlines():
+        if not line.strip():
+            continue
+        m = LINE.match(line)
+        if not m:
+            problems.append(f"line without [tags]: {line[:60]}")
+            continue
+        cur = {int(x) for x in re.findall(r"C(\d+)", m.group(1))}
+        new = {int(x) for x in re.findall(r"N(\d+)", m.group(1))}
+        if not (cur or new) or any(not 1 <= i <= n_cur for i in cur) or any(not 1 <= i <= n_new for i in new):
+            problems.append(f"unknown sentence number in [{m.group(1)}]")
+            continue
+        out.append((sorted(cur), sorted(new), m.group(2)))
+    return out, problems
+
+
+def check_fold(lines, current, new):
+    """Problems of one folded section (empty list = passes)."""
     problems = []
-    srcs = " ".join(base) + " " + " ".join(s for _, s in extra)
-    have = cd.toks(text)
-    for n in sorted(cd.nums(text) - cd.nums(srcs)):
-        problems.append(f"number not in the texts: {n}")
-    for n in sorted(cd.nums(srcs) - cd.nums(text)):
-        problems.append(f"number missing: {n}")
-    m = FORBIDDEN.search(text)
-    if m:
-        problems.append(f"do not write '{m.group(0)}'")
-    for who, s in list(extra) + [("main", s) for s in base]:
-        t = cd.toks(s)
-        if len(t) >= 3 and len(t & have) / len(t) < 0.6:
-            problems.append(f"point missing: {s[:140]}")
-    sents = cd_sentences(text)
-    for x in sents:
-        if len(x.split()) > MAX_SENTENCE_WORDS:
-            problems.append(f"sentence too long ({len(x.split())} words), split it: {x[:80]}")
-    for i, a in enumerate(sents):
-        ta = cd.toks(a)
-        for b in sents[i + 1:]:
-            tb = cd.toks(b)
-            if len(ta) >= 4 and len(tb) >= 4 and len(ta & tb) / len(ta | tb) > 0.6:
-                problems.append(f"repeats itself: {b[:80]}")
-    if len(text.split()) < sum(len(s.split()) for s in base):
-        problems.append("shorter than the main text")
+    used_c = {i for c, _, _ in lines for i in c}
+    used_n = {i for _, n, _ in lines for i in n}
+    for i in range(1, len(current) + 1):
+        if i not in used_c:
+            problems.append(f"C{i} not used: {current[i - 1]['text'][:70]}")
+    for i in range(1, len(new) + 1):
+        if i not in used_n:
+            problems.append(f"N{i} not used: {new[i - 1][:70]}")
+    all_src = " ".join(u["text"] for u in current) + " " + " ".join(new)
+    seen = []
+    for c, n, text in lines:
+        src = " ".join([current[i - 1]["text"] for i in c] + [new[i - 1] for i in n])
+        for x in sorted(cd.nums(text) - cd.nums(all_src)):
+            problems.append(f"number not in the texts: {x}")
+        m = FORBIDDEN.search(text)
+        if m and not FORBIDDEN.search(all_src):
+            problems.append(f"do not write '{m.group(0)}'")
+        t = cd.toks(text)
+        if len(t) >= 3 and len(t & cd.toks(src)) / len(t) < 0.5:
+            problems.append(f"words not found in the sentences it names: {text[:80]}")
+        if len(text.split()) > MAX_SENTENCE_WORDS:
+            problems.append(f"sentence too long ({len(text.split())} words), split it: {text[:60]}")
+        for prev in seen:
+            if len(t) >= 4 and len(prev) >= 4 and len(t & prev) / len(t | prev) > 0.6:
+                problems.append(f"repeats itself: {text[:60]}")
+        seen.append(t)
+    for x in sorted(cd.nums(all_src) - cd.nums(" ".join(t for _, _, t in lines))):
+        problems.append(f"number missing: {x}")
     return problems
 
 
-def write_section(call, title, base, extra, tries=MAX_TRIES):
-    """Returns (text, problems_left, tries_used); falls back to the plain merge when no try passes."""
+def fold_section(call, title, current, new, draft, tries=MAX_TRIES):
+    """Folds one draft's sentences `new` into `current` ([{text, by}]). Returns (units, problems_left, tries)."""
+    if not new:
+        return current, [], 0
+    if not current:
+        return [{"text": t, "by": [draft]} for t in new], [], 0
     feedback, best = None, None
     for n in range(1, tries + 1):
         try:
-            raw = call(SYSTEM, section_prompt(title, base, extra, feedback))
+            raw = call(SYSTEM, fold_prompt(title, current, new, feedback))
         except WriterUnavailable:
             feedback = None
-            best = best or ("", ["writer unavailable"])
+            best = best or (None, ["writer unavailable"])
             continue
-        text = re.sub(r"\s+", " ", raw).strip()
-        text = re.sub(r"^\**\d+\.\s*[^.]*?\**\s*", "", text) if text.startswith(("**", "#")) else text
-        problems = check_section(text, base, extra)
-        if best is None or len(problems) < len(best[1]):
-            best = (text, problems)
+        lines, problems = parse_fold(raw, len(current), len(new))
+        problems += check_fold(lines, current, new)
+        if best is None or best[0] is None or len(problems) < len(best[1]):
+            best = (lines, problems)
         if not problems:
-            return text, [], n
+            return units_of(lines, current, draft), [], n
         feedback = problems[:12]
-    plain = " ".join(base) + (" " + " ".join(s for _, s in extra) if extra else "")
-    return plain, best[1], tries
+    return current + [{"text": t, "by": [draft]} for t in new], best[1] or ["no usable answer"], tries
+
+
+def units_of(lines, current, draft):
+    units = []
+    for c, n, text in lines:
+        by = []
+        for i in c:
+            for m in current[i - 1]["by"]:
+                if m not in by:
+                    by.append(m)
+        if n and draft not in by:
+            by.append(draft)
+        units.append({"text": text, "by": by})
+    return units
 
 
 def run(page_md, record, call, tries=MAX_TRIES):
-    _, base, added = cd.plan(page_md)
-    paragraphs, report = [], {"sections": []}
-    for i in range(7):
-        title = cd.CANON[i]
-        text, left, used = write_section(call, title, base[i], added[i], tries)
-        report["sections"].append({"section": title, "tries": used, "fallback": bool(left),
-                                   "problems": left})
-        print(f"[consolidate] {title}: {used} tries, {'FELL BACK' if left else 'ok'}, {len(left)} problems", flush=True)
-        paragraphs.append(f"**{i + 1}. {title}** {text}")
+    order = cd.draft_order(page_md)
+    sections = {i: [] for i in range(7)}
+    report = {"drafts": [d for d, _ in order], "folds": []}
+    for k, (draft, secs) in enumerate(order):
+        for i in range(7):
+            units, left, used = fold_section(call, cd.CANON[i], sections[i], secs.get(i, []), draft, tries)
+            sections[i] = units
+            if used:  # 0 tries = nothing to merge (a section only one draft has)
+                report["folds"].append({"draft": draft, "section": cd.CANON[i], "tries": used,
+                                        "fallback": bool(left), "problems": left})
+                print(f"[consolidate] +{draft} / {cd.CANON[i]}: {used} tries, "
+                      f"{'FELL BACK' if left else 'ok'}, {len(left)} problems", flush=True)
+    record["sections"] = [{"title": cd.CANON[i], "units": [dict(u, facts=cd.facts_in(u["text"], record["facts"]))
+                                                           for u in sections[i]]} for i in range(7)]
+    paragraphs = [f"**{i + 1}. {cd.CANON[i]}** " + " ".join(u["text"] for u in sections[i]) for i in range(7)]
     problems, uncovered = cd.check_rewrite(page_md, paragraphs)
-    placed = []  # no inline marks: the sentence hover lists the facts a sentence states (sentence_facts)
-    report.update(whole_text_problems=problems, uncovered=len(uncovered),
-                  facts_marked=0, facts=len(record["facts"]),
-                  words=sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs))
     record["narrative"] = paragraphs
-    record["sentence_ai"] = cd.sentence_backing(page_md, paragraphs)
-    record["sentence_facts"] = cd.sentence_facts(paragraphs, record["facts"])
-    report["facts_in_sentences"] = len({i for row in record["sentence_facts"] for ids in row for i in ids})
+    record["sentence_ai"] = [[u["by"] for u in sections[i]] for i in range(7)]
+    record["sentence_facts"] = [[cd.facts_in(u["text"], record["facts"]) for u in sections[i]] for i in range(7)]
+    report.update(whole_text_problems=problems, uncovered=len(uncovered),
+                  facts_in_sentences=len({f for row in record["sentence_facts"] for ids in row for f in ids}),
+                  facts=len(record["facts"]), words=sum(len(p.split()) for p in paragraphs),
+                  sentences=sum(len(sections[i]) for i in range(7)))
     return record, report
 
 
@@ -174,10 +223,10 @@ def main(argv=None):
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if args.report:
         json.dump(report, open(args.report, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    fb = sum(s["fallback"] for s in report["sections"])
-    print(f"{args.page}: {report['words']} words, {fb} of 7 sections fell back, "
+    fb = sum(f["fallback"] for f in report["folds"])
+    print(f"{args.page}: {report['words']} words in {report['sentences']} sentences, {fb} of {len(report['folds'])} folds fell back, "
           f"{len(report['whole_text_problems'])} whole-text problems, {report['uncovered']} uncovered, "
-          f"{report.get("facts_in_sentences", 0)} of {report["facts"]} facts found in sentences")
+          f"{report['facts_in_sentences']} of {report['facts']} facts found in sentences")
     return 1 if fb or report["whole_text_problems"] else 0
 
 

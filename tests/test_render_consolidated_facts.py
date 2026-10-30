@@ -34,7 +34,7 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
     assert '<input type="checkbox" checked>' in text
     assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text
     assert "Not mentioned" not in text  # owner rule 2026-10-30: never list who did not mention a fact
-    assert "Treaty text" in text and "none yet" not in text and text.count("Official sources") == 1
+    assert "Treaty text" in text and "none yet" not in text and text.count("Official sources") == 2  # only f2 (narrative tip + list); f1 has none
     assert "Signed &lt;1842&gt;" in text  # page text is escaped
     assert (tmp_path / "content/05_Multi_AI/other.md").read_text() == "no marker\n"
 

@@ -56,3 +56,15 @@ def test_dates_of_a_fact_get_a_hover_marker_once():
     marked, placed = cd.mark_facts(paragraphs, FACTS)
     text = " ".join(marked)
     assert placed == {"f1"} and "{{f1|29 August 1842}}" in text and text.count("{{f1|") == 1
+
+
+def test_check_rewrite_flags_a_lost_sentence_and_an_invented_number():
+    ok = ["The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking, and Pottinger signed for "
+          "Britain, while another draft gives 29 August 1843. Opium from India paid for tea and silk in China."]
+    problems, uncovered = cd.check_rewrite(PAGE, ok)
+    assert problems == [] and uncovered == []
+    invented = [ok[0] + " It cost 500 men."]
+    assert any("no draft has: 500" in p for p in cd.check_rewrite(PAGE, invented)[0])
+    dropped = ["The treaty was signed on 29 August 1842 and 29 August 1843. Opium paid for tea in China."]
+    problems, uncovered = cd.check_rewrite(PAGE, dropped)
+    assert any("Pottinger" in u for u in uncovered)

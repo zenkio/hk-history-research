@@ -165,6 +165,36 @@ def check(page_md, paragraphs):
     return problems
 
 
+def check_rewrite(page_md, paragraphs):
+    """Checks for a fluent rewrite of the sources (written by a person or an AI): every sentence of the base and
+    of the other drafts must have most of its content words in the text, the text may hold no number that no
+    draft has, and it must be longer than the base. Returns (problems, uncovered_sentences)."""
+    plain = re.sub(r"\{\{[\w-]+\|(.*?)\}\}", r"\1", " ".join(paragraphs))
+    have = toks(plain)
+    c = callouts(page_md)
+    problems, uncovered = [], []
+    allnums = set()
+    base_name = [k for k in c if k.startswith("Nemotron")][0]
+    base_words = 0
+    for k, v in c.items():
+        secs = sections(v)
+        for i in range(7):
+            for snt in sentences(secs.get(i, [])):
+                allnums |= nums(snt)
+                if k == base_name:
+                    base_words += len(snt.split())
+                t = toks(snt)
+                if len(t) >= 3 and len(t & have) / len(t) < 0.6:
+                    uncovered.append(f"[{k}] {snt}")
+    for n in sorted(allnums - nums(plain)):
+        problems.append("number from a draft is missing: " + n)
+    for n in sorted(nums(plain) - allnums):
+        problems.append("number in the text that no draft has: " + n)
+    if len(plain.split()) < base_words:
+        problems.append(f"shorter than the base: {len(plain.split())} < {base_words} words")
+    return problems, uncovered
+
+
 def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser()

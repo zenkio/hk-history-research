@@ -37,11 +37,9 @@ def tip(fact):
     if fact.get("differs"):
         rows.append("<b>Says differently:</b> " + "; ".join(
             f'{esc(d["model"])} ({esc(d["said"])})' for d in fact["differs"]))
-    if fact.get("not_mentioned_by"):
-        rows.append("<b>Not mentioned by:</b> " + ", ".join(esc(m) for m in fact["not_mentioned_by"]))
     sources = fact.get("backed_by_sources", [])
-    rows.append("<b>Official sources:</b> " + (
-        "; ".join(esc(s.get("source", s)) for s in sources) if sources else "none yet"))
+    if sources:
+        rows.append("<b>Official sources:</b> " + "; ".join(esc(s.get("source", s)) for s in sources))
     rows.append("<i>" + esc(STATUS.get(fact.get("status"), fact.get("status", ""))) + "</i>")
     return '<span class="fact-tip">' + "<br>".join(rows) + "</span>"
 

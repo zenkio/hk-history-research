@@ -52,3 +52,30 @@ def test_sentence_facts_link_a_fact_to_the_sentences_that_state_it():
     facts = [{"id": "f1", "text": "Treaty signed 29 August 1842"}, {"id": "f2", "text": "Opium paid for tea"}]
     paras = ["**1. X** The treaty was signed on 29 August 1842 aboard HMS Cornwallis. Nothing else here."]
     assert cd.sentence_facts(paras, facts) == [[["f1"], []]]
+
+
+def test_unavailable_writer_falls_back_instead_of_crashing():
+    def call(system, prompt):
+        raise cp.WriterUnavailable("502 overloaded")
+    rec, report = cp.run(PAGE, record(), call, tries=2)
+    assert all(s["fallback"] for s in report["sections"])
+    assert "writer unavailable" in report["sections"][0]["problems"]
+    assert "Pottinger signed for Britain." in " ".join(rec["narrative"])
+
+
+def test_gateway_call_waits_and_asks_again_when_the_model_is_overloaded(monkeypatch):
+    import multi_ai_trial as mt
+    answers = [Exception("502 all_models_failed overloaded"), {"output": {"text": "ok"}, "usage": {"billing": "free"}}]
+
+    def fake_post(body, token, key):
+        a = answers.pop(0)
+        if isinstance(a, Exception):
+            raise a
+        return a
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(cp.time, "sleep", lambda s: None)
+    assert cp.gateway_call("m", "t")("sys", "prompt") == "ok"
+    monkeypatch.setattr(mt, "post_gateway", lambda *a: (_ for _ in ()).throw(Exception("422 no_eligible_route")))
+    import pytest
+    with pytest.raises(Exception, match="no_eligible_route"):  # a real bug is not retried or hidden
+        cp.gateway_call("m", "t")("sys", "prompt")

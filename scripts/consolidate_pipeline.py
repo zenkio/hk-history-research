@@ -17,10 +17,16 @@ import json
 import os
 import re
 import sys
+import time
 
 import consolidate_drafts as cd
 
 MAX_TRIES = 3
+RETRY_WAITS = (30, 60, 120, 240)  # seconds between tries of a call the gateway could not serve (overloaded, 5xx)
+
+
+class WriterUnavailable(Exception):
+    pass
 MAX_SENTENCE_WORDS = 45
 DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
 FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|"
@@ -88,7 +94,13 @@ def write_section(call, title, base, extra, tries=MAX_TRIES):
     """Returns (text, problems_left, tries_used); falls back to the plain merge when no try passes."""
     feedback, best = None, None
     for n in range(1, tries + 1):
-        text = re.sub(r"\s+", " ", call(SYSTEM, section_prompt(title, base, extra, feedback))).strip()
+        try:
+            raw = call(SYSTEM, section_prompt(title, base, extra, feedback))
+        except WriterUnavailable:
+            feedback = None
+            best = best or ("", ["writer unavailable"])
+            continue
+        text = re.sub(r"\s+", " ", raw).strip()
         text = re.sub(r"^\**\d+\.\s*[^.]*?\**\s*", "", text) if text.startswith(("**", "#")) else text
         problems = check_section(text, base, extra)
         if best is None or len(problems) < len(best[1]):
@@ -108,6 +120,7 @@ def run(page_md, record, call, tries=MAX_TRIES):
         text, left, used = write_section(call, title, base[i], added[i], tries)
         report["sections"].append({"section": title, "tries": used, "fallback": bool(left),
                                    "problems": left})
+        print(f"[consolidate] {title}: {used} tries, {'FELL BACK' if left else 'ok'}, {len(left)} problems", flush=True)
         paragraphs.append(f"**{i + 1}. {title}** {text}")
     problems, uncovered = cd.check_rewrite(page_md, paragraphs)
     placed = []  # no inline marks: the sentence hover lists the facts a sentence states (sentence_facts)
@@ -128,8 +141,19 @@ def gateway_call(model, token, seed=20261030):
         body = {"capability": "llm.generate", "input": {"system": system, "prompt": prompt},
                 "options": {"task": "general", "temperature": 0, "seed": seed,
                             "maxOutputTokens": mt.MAX_OUTPUT_TOKENS, "models": [model]}}
-        data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}")
-        return mt.record_of({"id": "consolidate"}, model, data)["text"]
+        for wait in (*RETRY_WAITS, None):
+            try:
+                data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
+                return mt.record_of({"id": "consolidate"}, model, data)["text"]
+            except mt.QuotaExhausted:
+                raise
+            except Exception as e:  # overloaded / timeout / 5xx: wait and ask again; anything else is a bug
+                transient = re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
+                if not transient:
+                    raise
+                if wait is None:
+                    raise WriterUnavailable(str(e)[:200])
+                time.sleep(wait)
     return call
 
 

@@ -86,6 +86,7 @@
   }
 
   // The switch floats at the bottom right so it can be reached from anywhere on the page; off by default.
+  // The native checkbox is drawn as a clear on/off slider (Quartz otherwise styles it almost invisible).
   .fact-switch {
     position: fixed;
     right: 1rem;
@@ -93,14 +94,55 @@
     z-index: 50;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid var(--lightgray);
+    gap: 0.6rem;
+    padding: 0.5rem 0.9rem;
+    border: 2px solid var(--secondary);
     border-radius: 999px;
     background: var(--light);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    font-size: 0.85rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--darkgray);
     cursor: pointer;
+
+    input {
+      appearance: none;
+      -webkit-appearance: none;
+      position: relative;
+      flex: none;
+      width: 2.6rem;
+      height: 1.4rem;
+      margin: 0;
+      border: 0;
+      border-radius: 999px;
+      background: #9aa0a6;
+      cursor: pointer;
+      transition: background 0.15s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: #fff;
+        transition: left 0.15s;
+      }
+
+      &:checked {
+        background: var(--secondary);
+      }
+
+      &:checked::before {
+        left: 1.4rem;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
   }
 
   // The tip shows only while the switch is on. (Quartz rewrites the input's class, so match it by its wrapper.)

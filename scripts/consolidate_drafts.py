@@ -39,6 +39,9 @@ def sections(lines):
     secs={}; cur=None
     for l in lines:
         if l.startswith("_Model") or l.startswith("_Author"): continue
+        plain=re.match(r"^(\d)\.\s*([^:.]+?)(?::[^.]*)?\.?\s*$",l)  # an unbolded heading ("1. What happened: when, ...")
+        if plain and len(l.split())<=14 and canon_idx(plain.group(2),None) is not None:
+            cur=canon_idx(plain.group(2),None); secs.setdefault(cur,[]); continue
         m=re.match(r"\*\*(\d)\.\s*([^*]+?)\*\*\s*(.*)$",l) or re.match(r"\*\*()([^*]+?)\.\*\*\s*(.*)$",l)
         if m and (m.group(1) or l.startswith("**") ):
             idx=canon_idx(m.group(2),m.group(1) or None)

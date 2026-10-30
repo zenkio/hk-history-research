@@ -21,10 +21,10 @@ on:
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
       step:
-        description: consolidate (fold the drafts) or translate (add a Traditional Chinese version to a consolidated record)
+        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) or review (flag sentences that conflict with others)
         required: false
         type: choice
-        options: [consolidate, translate]
+        options: [consolidate, translate, review]
         default: consolidate
 
 permissions:
@@ -99,6 +99,11 @@ jobs:
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
           if [[ ! -f "content/05_Multi_AI/$PAGE.md" ]]; then echo "no such page"; exit 1; fi
+          if [[ "$STEP" == "review" ]]; then
+            python3 -u scripts/review_consolidated.py "data/consolidated_facts/$PAGE.json" \
+              --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-review.json" || true
+            exit 0
+          fi
           if [[ "$STEP" == "translate" ]]; then
             python3 -u scripts/translate_consolidated.py "data/consolidated_facts/$PAGE.json" \
               --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-zh.json" || true

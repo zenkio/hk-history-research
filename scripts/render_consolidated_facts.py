@@ -80,7 +80,7 @@ def mark_names(escaped):
     return NAME_MARK.sub(r'<span class="pn">\1</span>', escaped)
 
 
-def sentence_span(sentence, facts, models, fact_ids=(), english=None):
+def sentence_span(sentence, facts, models, fact_ids=(), english=None, conflict=None):
     """A sentence, wholly underlined; hovering anywhere in it shows which AIs back it and its facts."""
     inside, parts, last = [], [], 0
     for match in TOKEN.finditer(sentence):
@@ -111,9 +111,12 @@ def sentence_span(sentence, facts, models, fact_ids=(), english=None):
         if fact.get("status", "accepted") != "accepted":
             row += " &middot; <i>" + esc(STATUS.get(fact.get("status"), fact.get("status", ""))) + "</i>"
         rows.append(row)
+    if conflict:
+        rows.append("<i>Disputed: an AI reviewer found this sentence conflicts with another sentence on this page ("
+                    + esc(conflict.get("note", "")) + ")</i>")
     if not rows:
         return "".join(parts)
-    status = " fact-disputed" if any(f.get("status") == "disputed" for f, _ in inside) else ""
+    status = " fact-disputed" if conflict or any(f.get("status") == "disputed" for f, _ in inside) else ""
     return (f'<span class="sent{status}" tabindex="0">{"".join(parts)}'
             f'<span class="fact-tip">{"<br>".join(rows)}</span></span>')
 
@@ -155,7 +158,7 @@ def paragraph_from_units(head, units, facts):
     head_html = head if head.startswith("<strong>") else BOLD.sub(r"<strong>\1</strong>", esc(head))
     return "<p>" + head_html + " ".join(
         sentence_span(u.get("zh") or u["text"], facts, u.get("by", []), u.get("facts", ()),
-                      u["text"] if u.get("zh") else None) for u in units) + "</p>"
+                      u["text"] if u.get("zh") else None, u.get("conflict")) for u in units) + "</p>"
 
 
 def render(record):

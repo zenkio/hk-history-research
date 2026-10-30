@@ -37,3 +37,18 @@ def test_invented_number_is_refused():
     assert any("1999" in p for p in cp.check_section(GOOD + " In 1999 it ended.",
               ["The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking."],
               [("Claude", "Pottinger signed for Britain.")]))
+
+
+def test_long_and_repeated_sentences_are_refused():
+    base = ["The treaty was signed on 29 August 1842 aboard HMS Cornwallis off Nanking."]
+    long_text = base[0][:-1] + " and " + " and ".join(["the signing was long"] * 12) + "."
+    assert any("too long" in p for p in cp.check_section(long_text, base, []))
+    twice = base[0] + " The treaty was signed on 29 August 1842 aboard HMS Cornwallis at Nanking."
+    assert any("repeats itself" in p for p in cp.check_section(twice, base, []))
+
+
+def test_sentence_facts_link_a_fact_to_the_sentences_that_state_it():
+    import consolidate_drafts as cd
+    facts = [{"id": "f1", "text": "Treaty signed 29 August 1842"}, {"id": "f2", "text": "Opium paid for tea"}]
+    paras = ["**1. X** The treaty was signed on 29 August 1842 aboard HMS Cornwallis. Nothing else here."]
+    assert cd.sentence_facts(paras, facts) == [[["f1"], []]]

@@ -31,7 +31,7 @@ concurrency:
 jobs:
   consolidate:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - name: Check out private research data
         uses: actions/checkout@v7

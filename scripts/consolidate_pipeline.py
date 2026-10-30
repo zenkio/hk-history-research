@@ -21,11 +21,17 @@ import sys
 import consolidate_drafts as cd
 
 MAX_TRIES = 3
+MAX_SENTENCE_WORDS = 45
 DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
 FORBIDDEN = re.compile(r"\b(drafts?|nemotron|gemini|gemma|claude|gpt|llama|deepseek|qwen|mistral|"
                        r"other (?:ai|models?|sources?)|according to)\b", re.I)
 SYSTEM = ("You merge several texts about the same history topic into one flowing passage. You use only what "
           "the texts say. You never add a fact, name, date, number or explanation of your own.")
+
+
+def cd_sentences(text):
+    from render_consolidated_facts import split_sentences
+    return split_sentences(text)[1] or [text]
 
 
 def section_prompt(title, base, extra, feedback=None):
@@ -38,6 +44,8 @@ def section_prompt(title, base, extra, feedback=None):
               "- Where an extra point differs from or contradicts the main text, state both versions naturally "
               "(for example 'X, although another account gives Y'). Do not choose between them.",
               "- Only linking words or phrases may be new. No new fact, name, number or explanation.",
+              "- Short sentences: one point per sentence, at most 35 words. Do not join points with endless commas.",
+              "- If several texts say the same thing, say it once, in the clearest wording.",
               "- Never write 'draft', 'text', 'source', 'AI', 'model' or any model name.",
               "- Output the passage only: plain text, no heading, no list."]
     if feedback:
@@ -61,6 +69,16 @@ def check_section(text, base, extra):
         t = cd.toks(s)
         if len(t) >= 3 and len(t & have) / len(t) < 0.6:
             problems.append(f"point missing: {s[:140]}")
+    sents = cd_sentences(text)
+    for x in sents:
+        if len(x.split()) > MAX_SENTENCE_WORDS:
+            problems.append(f"sentence too long ({len(x.split())} words), split it: {x[:80]}")
+    for i, a in enumerate(sents):
+        ta = cd.toks(a)
+        for b in sents[i + 1:]:
+            tb = cd.toks(b)
+            if len(ta) >= 4 and len(tb) >= 4 and len(ta & tb) / len(ta | tb) > 0.6:
+                problems.append(f"repeats itself: {b[:80]}")
     if len(text.split()) < sum(len(s.split()) for s in base):
         problems.append("shorter than the main text")
     return problems
@@ -92,12 +110,14 @@ def run(page_md, record, call, tries=MAX_TRIES):
                                    "problems": left})
         paragraphs.append(f"**{i + 1}. {title}** {text}")
     problems, uncovered = cd.check_rewrite(page_md, paragraphs)
-    paragraphs, placed = cd.mark_facts(paragraphs, record["facts"])
+    placed = []  # no inline marks: the sentence hover lists the facts a sentence states (sentence_facts)
     report.update(whole_text_problems=problems, uncovered=len(uncovered),
-                  facts_marked=len(placed), facts=len(record["facts"]),
+                  facts_marked=0, facts=len(record["facts"]),
                   words=sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs))
     record["narrative"] = paragraphs
     record["sentence_ai"] = cd.sentence_backing(page_md, paragraphs)
+    record["sentence_facts"] = cd.sentence_facts(paragraphs, record["facts"])
+    report["facts_in_sentences"] = len({i for row in record["sentence_facts"] for ids in row for i in ids})
     return record, report
 
 
@@ -129,7 +149,7 @@ def main(argv=None):
     fb = sum(s["fallback"] for s in report["sections"])
     print(f"{args.page}: {report['words']} words, {fb} of 7 sections fell back, "
           f"{len(report['whole_text_problems'])} whole-text problems, {report['uncovered']} uncovered, "
-          f"{report['facts_marked']} of {report['facts']} facts marked")
+          f"{report.get("facts_in_sentences", 0)} of {report["facts"]} facts found in sentences")
     return 1 if fb or report["whole_text_problems"] else 0
 
 

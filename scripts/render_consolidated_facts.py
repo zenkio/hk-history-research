@@ -67,7 +67,7 @@ def split_sentences(text):
     return head, [x for x in SENTENCE_END.split(text[len(head):]) if x.strip()]
 
 
-def sentence_span(sentence, facts, models):
+def sentence_span(sentence, facts, models, fact_ids=()):
     """A sentence, wholly underlined; hovering anywhere in it shows which AIs back it and its facts."""
     inside, parts, last = [], [], 0
     for match in TOKEN.finditer(sentence):
@@ -79,6 +79,8 @@ def sentence_span(sentence, facts, models):
         parts.append(f'<mark class="fact-in">{esc(match.group(2))}</mark>')
         last = match.end()
     parts.append(BOLD.sub(r"<strong>\1</strong>", esc(sentence[last:])))
+    shown_ids = {f["id"] for f, _ in inside}
+    inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []
     if models:
         rows.append("<b>Backed by AI:</b> " + ", ".join(esc(m) for m in models))
@@ -101,13 +103,15 @@ def sentence_span(sentence, facts, models):
             f'<span class="fact-tip">{"<br>".join(rows)}</span></span>')
 
 
-def paragraph(text, facts, models=None):
+def paragraph(text, facts, models=None, fact_ids=None):
     """One narrative paragraph as HTML: **bold**, {{fact-id|text}} markers and one hover span per sentence;
     everything else is escaped. `models` lists, per sentence, the AIs whose drafts hold it."""
     head, sentences = split_sentences(text)
     models = models or []
+    fact_ids = fact_ids or []
     out = BOLD.sub(r"<strong>\1</strong>", esc(head))
-    out += " ".join(sentence_span(x, facts, models[i] if i < len(models) else [])
+    out += " ".join(sentence_span(x, facts, models[i] if i < len(models) else [],
+                                        fact_ids[i] if i < len(fact_ids) else ())
                     for i, x in enumerate(sentences))
     return "<p>" + out + "</p>"
 
@@ -115,7 +119,8 @@ def paragraph(text, facts, models=None):
 def render(record):
     facts = {f["id"]: f for f in record["facts"]}
     ai = record.get("sentence_ai", [])
-    narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None)
+    sf = record.get("sentence_facts", [])
+    narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None, sf[i] if i < len(sf) else None)
                  for i, t in enumerate(record.get("narrative", []))]
     items = []
     for fact in record["facts"]:

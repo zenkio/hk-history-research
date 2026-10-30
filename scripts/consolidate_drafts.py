@@ -270,6 +270,22 @@ def sentence_backing(page_md, paragraphs, share=0.5):
     return out
 
 
+def sentence_facts(paragraphs, facts, share=0.6):
+    """For each sentence, the ids of the fact records it states: at least `share` of the fact's content words are
+    in the sentence and every number of the fact is too. Mechanical; lines up with split_sentences."""
+    from render_consolidated_facts import split_sentences, TOKEN
+    out=[]
+    for para in paragraphs:
+        row=[]
+        for snt in split_sentences(para)[1]:
+            plain=TOKEN.sub(lambda m:m.group(2),snt); t=toks(plain); n=nums(plain)
+            row.append([f["id"] for f in facts
+                        if len(toks(f["text"]))>=2 and nums(f["text"])<=n
+                        and len(toks(f["text"])&t)/len(toks(f["text"]))>=share])
+        out.append(row)
+    return out
+
+
 def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser()
@@ -282,6 +298,7 @@ def main(argv=None):
     record = json.load(open(args.record, encoding="utf-8"))
     if args.backing_only:
         record["sentence_ai"] = sentence_backing(page_md, record["narrative"])
+        record["sentence_facts"] = sentence_facts(record["narrative"], record["facts"])
         json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         return 0
     paragraphs, stats = build(page_md)
@@ -289,6 +306,7 @@ def main(argv=None):
     paragraphs, placed = mark_facts(paragraphs, record["facts"])
     record["narrative"] = paragraphs
     record["sentence_ai"] = sentence_backing(page_md, paragraphs)
+    record["sentence_facts"] = sentence_facts(paragraphs, record["facts"])
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     words = sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs)
     print(f"{args.page}: {stats['added']} of {stats['seen']} other-draft sentences added, {words} words, "

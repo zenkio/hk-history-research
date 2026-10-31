@@ -44,8 +44,23 @@ def prompt(title, units, feedback=None):
     return "\n".join(lines)
 
 
+CHUNK = 7  # a long section is tidied in runs of this many neighbouring sentences: the AI drops sentences from long lists
+
+
 def tidy_section(call, title, units, tries=cp.MAX_TRIES):
-    """(units, problems_left, tries). Falls back to the unchanged units."""
+    """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences."""
+    if len(units) <= CHUNK + 2:
+        return tidy_chunk(call, title, units, tries)
+    out, left, used = [], [], 0
+    for k in range(0, len(units), CHUNK):
+        chunk, problems, n = tidy_chunk(call, title, units[k:k + CHUNK], tries)
+        out += chunk
+        left += problems
+        used = max(used, n)
+    return out, left, used
+
+
+def tidy_chunk(call, title, units, tries=cp.MAX_TRIES):
     if len(units) < 2:
         return units, [], 0
     feedback, problems = None, []

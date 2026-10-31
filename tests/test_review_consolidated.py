@@ -5,7 +5,9 @@ import render_consolidated_facts as rc
 def record():
     texts = ["Britain imported Chinese tea and silk.", "China imported British tea and silk.", "Opium paid for tea.",
              "The war began in 1839."]
-    return {"facts": [], "sections": [{"title": "Background", "units": [{"text": t, "by": ["A"], "facts": []} for t in texts]}]}
+    units = [{"text": t, "by": ["A"], "facts": []} for t in texts]
+    units[0]["by"] = ["A", "B"]  # the sentence several AIs back
+    return {"facts": [], "sections": [{"title": "Background", "units": units}]}
 
 
 def answer(system, prompt):
@@ -52,3 +54,20 @@ def test_prompt_shows_how_many_ais_back_each_sentence():
     asked = next(p for p in seen if p.startswith("SENTENCE:\nChina imported"))
     assert "SENTENCE:\nChina imported British tea and silk. (backed by 1 AI)" in asked
     assert "Britain imported Chinese tea and silk. (backed by 3 AIs)" in asked
+
+
+def test_only_the_side_fewer_ais_back_is_flagged_when_both_sides_report_each_other():
+    rec = record()
+    units = rec["sections"][0]["units"]
+    units[0]["by"] = ["A", "B", "C"]
+
+    def both(system, prompt):
+        sentence = prompt.split("SENTENCE:\n")[1].split("\n")[0]
+        if sentence.startswith("China imported"):
+            return "CONFLICT [1]: reversed"
+        if sentence.startswith("Britain imported"):
+            return "CONFLICT [1]: reversed"  # lists "China imported" first among its related sentences
+        return "NONE"
+
+    rv.run(rec, both, "M")
+    assert "conflict" not in units[0] and "conflict" in units[1]

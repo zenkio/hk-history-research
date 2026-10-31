@@ -55,8 +55,9 @@ def prompt(sentence, others, own="", backed=()):
               "look hardest when a sentence backed by few AIs differs from related sentences backed by many.", "Does SENTENCE say the opposite of a related sentence, so that both cannot be true: who did what "
               "to whom, which direction something went, whether something happened? Different dates or figures given "
               "as separate accounts, extra detail, or a related sentence about another aspect of the same subject "
-              "are NOT conflicts. A sentence that says something was absent in one respect does not conflict "
-              "with one that says it was present in another respect.",
+              "are NOT conflicts. Two sentences conflict only when they are about the same thing at the same "
+              "time. A sentence that says something was absent in one respect (no colony, no rule) does not conflict "
+              "with one that says it was present in another respect (ships, people, a visit).",
               "Answer with exactly one line: `CONFLICT [n]: short reason` naming the related sentence, or `NONE`."]
     return "\n".join(lines)
 
@@ -83,14 +84,31 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
     units = flat(record)
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
         results = list(pool.map(lambda i: review_one(call, units, i, tries), range(len(units))))
-    flagged, unreviewed = [], 0
+    pairs = {}  # sentence index -> (index of the sentence it conflicts with, reason)
+    unreviewed = 0
     for i, (hit, ok) in enumerate(results):
-        units[i].pop("conflict", None)
         unreviewed += not ok
         if hit:
-            j, note = hit
-            units[i]["conflict"] = {"with": [units[j]["text"]], "note": note, "judged_by": model}
-            flagged.append({"text": units[i]["text"], "with": units[j]["text"], "note": note})
+            pairs[i] = hit
+    # Both sides of a conflict are usually reported, but only the side fewer AIs back is the outlier; the other is
+    # kept. (How many AIs back a sentence is a hint where the error is, not proof; equal backing flags both.)
+    chosen = {}
+    for i, (j, note) in pairs.items():
+        mine, theirs = len(units[i].get("by", [])), len(units[j].get("by", []))
+        if mine < theirs:
+            chosen[i] = (j, note)
+        elif mine == theirs:
+            chosen[i] = (j, note)
+            chosen.setdefault(j, (i, note))
+        else:
+            chosen.setdefault(j, (i, note))
+    flagged = []
+    for i, u in enumerate(units):
+        u.pop("conflict", None)
+        if i in chosen:
+            j, note = chosen[i]
+            u["conflict"] = {"with": [units[j]["text"]], "note": note, "judged_by": model}
+            flagged.append({"text": u["text"], "with": units[j]["text"], "note": note})
     tally = {}  # per AI: sentences it backs that were flagged, of all the sentences it backs (a rating input)
     for u in units:
         for ai in u.get("by", []):

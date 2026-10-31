@@ -367,3 +367,64 @@ html:not([data-lang="en"]) .lang-en {
     cursor: pointer;
   }
 }
+
+// Flow chart on the method page: boxes joined by arrows; who does each step (AI or program) is shown by the border.
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  margin: 0.5rem 0 1rem;
+
+  .flow-step {
+    position: relative;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    background: var(--light);
+
+    p {
+      margin: 0.3rem 0 0;
+      font-size: 0.9rem;
+    }
+
+    b {
+      display: block;
+    }
+  }
+
+  .flow-ai {
+    border-color: var(--secondary);
+  }
+
+  .flow-program {
+    border-color: var(--tertiary);
+  }
+
+  .flow-next {
+    border-style: dashed;
+  }
+
+  .flow-tag {
+    float: right;
+    margin-left: 0.6rem;
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    background: var(--highlight);
+    font-size: 0.75rem;
+  }
+
+  .flow-arrow {
+    align-self: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--gray);
+  }
+}
+
+.flow-note {
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid var(--secondary);
+  background: var(--highlight);
+  font-size: 0.9rem;
+}

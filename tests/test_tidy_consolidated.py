@@ -54,8 +54,27 @@ def test_a_long_section_is_tidied_in_chunks_and_each_chunk_is_answered_on_its_ow
 
     def echo(system, prompt):  # answers every numbered sentence unchanged
         asked.append(prompt)
-        return "\n".join(f"[C{n}] {t}" for n, t in re.findall(r"^C(\d+)\. (.+)$", prompt, re.M))
+        return "\n".join(f"[C{n}] {t}" for n, t in re.findall(r"^C(\d+)\. (.+?) \(backed by", prompt, re.M))
 
     out, rep = td.run(rec, echo)
     assert len(asked) == 2 and len(out["sections"][0]["units"]) == 12 and not rep["sections"][0]["fallback"]
     assert "Alpha" in asked[0] and "Alpha" not in asked[1] and "Lima" in asked[1]
+
+
+def test_a_sentence_only_a_low_trust_ai_backs_may_be_left_out_and_is_kept_in_the_record():
+    rec = record()
+    rec["sections"][0]["units"][3]["by"] = ["Xing 4.0"]
+    answer = ("[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea.\n"
+              "[C3] Another account says it was flushed into the Pearl River.\n[C4] OMIT")
+    out, rep = td.run(rec, lambda s, p: answer)
+    assert [u["text"][:12] for u in out["sections"][0]["units"]] == ["The drug was", "Another acco"]
+    assert out["omitted"][0]["by"] == ["Xing 4.0"] and out["omitted"][0]["section"] == "What happened"
+
+
+def test_a_sentence_many_ais_back_may_not_be_left_out():
+    answer = ("[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea.\n"
+              "[C3] Another account says it was flushed into the Pearl River.\n[C4] Lin reported the work done on 26 June.\n[C2] OMIT")
+    rec = record()
+    asked = []
+    out, rep = td.run(rec, lambda s, p: asked.append(p) or answer)
+    assert rep["sections"][0]["fallback"] and "may not be left out" in asked[1] and out["omitted"] == []

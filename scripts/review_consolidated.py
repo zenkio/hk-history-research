@@ -3,9 +3,9 @@
 
 The fold only guarantees nothing was dropped; it cannot see that a sentence one AI wrote says the opposite of
 what the others say (e.g. China "importing British tea" where five drafts have Britain importing Chinese tea).
-Here an AI (pinned through the gateway) reads every numbered sentence of the page and lists sentences that
-cannot both be true with another sentence, one line each: `[n] conflicts with [m]: short reason`. Code checks
-the numbers exist and differ and the reason is non-empty; each flagged unit gets `conflict: {with, note}` and the
+One call over the whole page missed this, so each sentence is checked on its own against the few sentences that
+share most words with it (an AI pinned through the gateway answers `CONFLICT [n]: reason` or `NONE`). Code
+checks the answer form and that [n] is one of the sentences shown; each flagged unit gets `conflict: {with, note}` and the
 page shows it as disputed. Different figures or dates that the text already presents as separate accounts
 ("another account gives ...") are not conflicts. This is an AI judgement, recorded as such (`judged_by`), not a
 finding of fact.
@@ -20,68 +20,77 @@ import sys
 
 import consolidate_pipeline as cp
 
-SYSTEM = ("You check a history text for internal contradictions. You use only what the numbered sentences say, "
-          "never outside knowledge of your own about what is true.")
-LINE = re.compile(r"^\s*\[(\d+)\]\s*conflicts? with\s*\[(\d+)\]\s*:\s*(.+?)\s*$", re.I)
+SYSTEM = ("You check one history sentence against related sentences from the same page. You use only what the "
+          "sentences say, never outside knowledge of your own about what is true.")
+ANSWER = re.compile(r"^\s*(?:CONFLICT\s*\[(\d+)\]\s*:\s*(.+?)|NONE)\s*$", re.I | re.S)
+RELATED = 6  # related sentences shown with each sentence
+STOP = set("the a an of in to and was were is are for on at by with as that this it its from which their his her "
+           "had has have be been who not but or also after before into over under than then".split())
 
 
 def flat(record):
     return [u for sec in record["sections"] for u in sec["units"]]
 
 
-def prompt(units):
-    lines = ["Below are numbered sentences from one page about one topic.", "",
-             "List every sentence that cannot be true at the same time as another sentence in the list, because "
-             "it says the opposite (who did what to whom, which direction something went, whether something "
-             "happened). Do not list sentences that only add detail, or that give a different date or figure "
-             "as a separate account (for example 'another account gives ...').",
-             "Output one line per conflict: `[n] conflicts with [m]: short reason`, where [n] is the sentence "
-             "that stands apart from the rest and [m] one it conflicts with. If there is none, output `NONE`.", ""]
-    return "\n".join(lines + [f"[{i}] {u['text']}" for i, u in enumerate(units, 1)])
+def words(text):
+    return {w for w in re.findall(r"[a-z0-9]+", text.lower()) if w not in STOP and len(w) > 2}
 
 
-def parse(raw, count):
-    found, problems = [], []
-    for line in raw.splitlines():
-        if not line.strip() or line.strip().upper().startswith("NONE"):
-            continue
-        m = LINE.match(line)
-        if not m:
-            problems.append(f"not a conflict line: {line[:60]}")
-            continue
-        n, other, note = int(m.group(1)), int(m.group(2)), m.group(3)
-        if not (1 <= n <= count and 1 <= other <= count) or n == other:
-            problems.append(f"bad numbers in: {line[:60]}")
-            continue
-        found.append((n, other, note))
-    return found, problems
+def related(units, i):
+    """The sentences sharing the most content words with sentence i (so a reversed relation sits beside its twin)."""
+    mine = words(units[i]["text"])
+    scored = sorted(((len(mine & words(u["text"])), j) for j, u in enumerate(units) if j != i), reverse=True)
+    return [j for score, j in scored[:RELATED] if score]
+
+
+def prompt(sentence, others):
+    lines = ["SENTENCE:", sentence, "", "RELATED SENTENCES:"] + [f"[{k}] {t}" for k, t in enumerate(others, 1)]
+    lines += ["", "Does SENTENCE say the opposite of a related sentence, so that both cannot be true: who did what "
+              "to whom, which direction something went, whether something happened? Different dates or figures given "
+              "as separate accounts, extra detail, or a related sentence about another aspect of the same subject "
+              "are NOT conflicts. A sentence that says something was absent in one respect does not conflict "
+              "with one that says it was present in another respect.",
+              "Answer with exactly one line: `CONFLICT [n]: short reason` naming the related sentence, or `NONE`."]
+    return "\n".join(lines)
+
+
+def review_one(call, units, i, tries):
+    others = related(units, i)
+    if not others:  # nothing to conflict with
+        return None, True
+    feedback = ""
+    for _ in range(tries):
+        raw = call(SYSTEM, prompt(units[i]["text"], [units[j]["text"] for j in others]) + feedback).strip()
+        m = ANSWER.match(raw.splitlines()[0] if raw else "")
+        if m and not m.group(1):
+            return None, True
+        if m and 1 <= int(m.group(1)) <= len(others):
+            return (others[int(m.group(1)) - 1], m.group(2)), True
+        feedback = "\n\nYour last answer was not in the required form. Answer with one line only."
+    return None, False
 
 
 def run(record, call, model="", tries=cp.MAX_TRIES):
+    from concurrent.futures import ThreadPoolExecutor
     units = flat(record)
-    feedback, problems = [], []
-    for attempt in range(1, tries + 1):
-        raw = call(SYSTEM, prompt(units) + ("\n\nFix these problems in your last answer:\n- " + "\n- ".join(feedback)
-                                            if feedback else ""))
-        found, problems = parse(raw, len(units))
-        if not problems:
-            break
-        feedback = problems
-    else:
-        return record, {"reviewed": False, "problems": problems, "conflicts": 0}
-    for u in units:
-        u.pop("conflict", None)
-    for n, other, note in found:
-        units[n - 1]["conflict"] = {"with": [units[other - 1]["text"]], "note": note, "judged_by": model}
+    with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
+        results = list(pool.map(lambda i: review_one(call, units, i, tries), range(len(units))))
+    flagged, unreviewed = [], 0
+    for i, (hit, ok) in enumerate(results):
+        units[i].pop("conflict", None)
+        unreviewed += not ok
+        if hit:
+            j, note = hit
+            units[i]["conflict"] = {"with": [units[j]["text"]], "note": note, "judged_by": model}
+            flagged.append({"text": units[i]["text"], "with": units[j]["text"], "note": note})
     tally = {}  # per AI: sentences it backs that were flagged, of all the sentences it backs (a rating input)
     for u in units:
         for ai in u.get("by", []):
             row = tally.setdefault(ai, {"flagged": 0, "sentences": 0})
             row["sentences"] += 1
             row["flagged"] += bool(u.get("conflict"))
-    return record, {"reviewed": True, "problems": [], "conflicts": len(found), "by_ai": tally,
-                    "flagged": [{"text": units[n - 1]["text"], "with": units[o - 1]["text"], "note": note}
-                                for n, o, note in found]}
+    return record, {"reviewed": unreviewed == 0, "unreviewed": unreviewed, "conflicts": len(flagged),
+                    "by_ai": tally, "flagged": flagged}
 
 
 def main(argv=None):

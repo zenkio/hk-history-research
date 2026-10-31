@@ -39,6 +39,9 @@ def sections(lines):
     secs={}; cur=None
     for l in lines:
         if l.startswith("_Model") or l.startswith("_Author"): continue
+        plain=re.match(r"^(\d)\.\s*([^:.]+?)(?::[^.]*)?\.?\s*$",l)  # an unbolded heading ("1. What happened: when, ...")
+        if plain and len(l.split())<=14 and canon_idx(plain.group(2),None) is not None:
+            cur=canon_idx(plain.group(2),None); secs.setdefault(cur,[]); continue
         m=re.match(r"\*\*(\d)\.\s*([^*]+?)\*\*\s*(.*)$",l) or re.match(r"\*\*()([^*]+?)\.\*\*\s*(.*)$",l)
         if m and (m.group(1) or l.startswith("**") ):
             idx=canon_idx(m.group(2),m.group(1) or None)
@@ -254,18 +257,69 @@ def check_rewrite(page_md, paragraphs):
     return problems, uncovered
 
 
+def draft_order(page_md):
+    """[(short name, {section index: sentences})]: the base draft (Nemotron) first, then the others by length,
+    longest first, so the richest are folded in while the structure is still forming."""
+    c=callouts(page_md)
+    base=[k for k in c if k.startswith("Nemotron")][0]
+    secs={k:{i:sentences(v) for i,v in sections(c[k]).items()} for k in c}
+    size=lambda k:-sum(len(" ".join(v).split()) for v in secs[k].values())
+    return [(short(k),secs[k]) for k in [base]+sorted((k for k in c if k!=base),key=size)]
+
+
+def sentence_backing(page_md, paragraphs, share=0.5):
+    """For each sentence of each narrative paragraph, the drafts that hold it: those with at least `share` of the
+    sentence's content words. Mechanical (word overlap), not a judgement of meaning. Lines up with
+    render_consolidated_facts.split_sentences."""
+    from render_consolidated_facts import split_sentences, TOKEN
+    drafts={short(k):toks(" ".join(v)) for k,v in callouts(page_md).items()}
+    out=[]
+    for para in paragraphs:
+        row=[]
+        for snt in split_sentences(para)[1]:
+            t=toks(TOKEN.sub(lambda m:m.group(2),snt))
+            row.append([k for k,d in drafts.items() if len(t)>=2 and len(t&d)/len(t)>=share])
+        out.append(row)
+    return out
+
+
+def facts_in(sentence, facts, share=0.6):
+    """Ids of the fact records a sentence states: at least `share` of the fact's content words are in the
+    sentence and every number of the fact is too. Mechanical."""
+    t=toks(sentence); n=nums(sentence)
+    return [f["id"] for f in facts
+            if len(toks(f["text"]))>=2 and nums(f["text"])<=n
+            and len(toks(f["text"])&t)/len(toks(f["text"]))>=share]
+
+
+def sentence_facts(paragraphs, facts, share=0.6):
+    """Per paragraph, per sentence: `facts_in`. Lines up with render_consolidated_facts.split_sentences."""
+    from render_consolidated_facts import split_sentences, TOKEN
+    return [[facts_in(TOKEN.sub(lambda m:m.group(2),snt),facts,share) for snt in split_sentences(para)[1]]
+            for para in paragraphs]
+
+
 def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("page")
     ap.add_argument("record")
+    ap.add_argument("--backing-only", action="store_true",
+                    help="keep the narrative, only recompute which drafts hold each sentence")
     args = ap.parse_args(argv)
     page_md = open(args.page, encoding="utf-8").read()
     record = json.load(open(args.record, encoding="utf-8"))
+    if args.backing_only:
+        record["sentence_ai"] = sentence_backing(page_md, record["narrative"])
+        record["sentence_facts"] = sentence_facts(record["narrative"], record["facts"])
+        json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        return 0
     paragraphs, stats = build(page_md)
     problems = check(page_md, paragraphs)
     paragraphs, placed = mark_facts(paragraphs, record["facts"])
     record["narrative"] = paragraphs
+    record["sentence_ai"] = sentence_backing(page_md, paragraphs)
+    record["sentence_facts"] = sentence_facts(paragraphs, record["facts"])
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     words = sum(len(re.sub(r"\{\{[\w-]+\|", "", p).split()) for p in paragraphs)
     print(f"{args.page}: {stats['added']} of {stats['seen']} other-draft sentences added, {words} words, "

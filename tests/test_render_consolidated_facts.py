@@ -31,12 +31,13 @@ def test_marker_becomes_a_consolidated_block_with_switch_and_tips(tmp_path):
     assert rc.build(tmp_path) == [str(tmp_path / "content/05_Multi_AI/e.md")]
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
     assert rc.MARKER not in text and "## Consolidated version" in text and "## Next" in text
-    assert '<input type="checkbox">' in text and "checked" not in text  # switch starts off
-    assert "<b>Backed by AI:</b> A, B" in text and "C (1843)" in text
+    assert '<input type="checkbox">' in text  # switch starts off (no "checked" on it)
+    assert text.count('type="radio"') == len(rc.COLOURS) and text.count(" checked>") == 1  # one default colour
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text and "(1843)" in text
     assert "not yet checked" not in text  # plain accepted is not repeated (owner 2026-10-30)
     assert "<i>disputed</i>" in text
     assert "Not mentioned" not in text  # owner rule 2026-10-30: never list who did not mention a fact
-    assert "Treaty text" in text and "none yet" not in text and text.count("Official sources") == 2  # only f2 (narrative tip + list); f1 has none
+    assert "Treaty text" in text and "none yet" not in text and text.lower().count("official sources") == 3  # the intro note, then only f2 (sentence tip + list); f1 has none
     assert "Signed &lt;1842&gt;" in text  # page text is escaped
     assert (tmp_path / "content/05_Multi_AI/other.md").read_text() == "no marker\n"
 
@@ -47,11 +48,18 @@ def test_missing_record_file_fails_loudly(tmp_path):
         rc.build(tmp_path)
 
 
-def test_narrative_wraps_marked_facts_with_their_tip_and_escapes_the_rest(tmp_path):
+def test_each_sentence_is_one_hover_span_with_its_ais_and_facts(tmp_path):
+    # owner 2026-10-30: the whole sentence is underlined and shows the tip, not only the date inside it
     setup(tmp_path)
+    rec = dict(RECORD, narrative=["**Lead.** Signed {{f1|in 1842 <ok>}} and cost {{f2|21 million}}. Plain second one."],
+               sentence_ai=[[["A", "B"], ["A"]]])
+    (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(rec))
     rc.build(tmp_path)
     text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
-    assert "<p><strong>Lead.</strong> Signed <span class=\"fact fact-accepted\" tabindex=\"0\">in 1842 &lt;ok&gt;" in text
+    assert text.count('<span class="sent') == 2
+    assert '<p><strong>Lead.</strong> <span class="sent fact-disputed" tabindex="0">Signed <mark class="fact-in">in 1842 &lt;ok&gt;</mark>' in text
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span><br><b>in 1842 &lt;ok&gt;</b>: <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span></span></span></p>" in text  # sentence without a fact still shows its AIs
     assert text.index("Lead.") < text.index("All 2 facts and who backs them")  # narrative above the list
 
 
@@ -61,3 +69,16 @@ def test_narrative_with_unknown_fact_id_fails(tmp_path):
     (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(bad))
     with pytest.raises(SystemExit, match="unknown fact id"):
         rc.build(tmp_path)
+
+
+def test_sections_with_units_are_rendered_exactly_with_their_backers(tmp_path):
+    setup(tmp_path)
+    rec = dict(RECORD, narrative=[], sections=[{"title": "What happened", "units": [
+        {"text": "Signed in 1842. Not split again.", "by": ["A", "B"], "facts": ["f1"]},
+        {"text": "Only here.", "by": ["C"]}]}])
+    (tmp_path / "data/consolidated_facts/e.json").write_text(json.dumps(rec))
+    rc.build(tmp_path)
+    text = (tmp_path / "content/05_Multi_AI/e.md").read_text()
+    assert text.count('<span class="sent') == 2  # the first unit holds two sentences but is one hover span
+    assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span><br><b>Signed &lt;1842&gt;</b>: <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text
+    assert "<strong>1. What happened</strong>" in text

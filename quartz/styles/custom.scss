@@ -21,6 +21,52 @@
     position: relative;
   }
 
+  // Whole sentences carry the hover; the facts inside are only lightly marked.
+  p .sent {
+    display: inline;
+    position: static;
+    outline: none;
+  }
+
+  // Desktop only (owner 2026-10-30): with the switch on, hovering a sentence turns it yellow and shows its tip.
+  // Nothing is highlighted at rest, and touch screens get neither the switch nor the floating tip.
+  @media (hover: hover) and (pointer: fine) {
+    // Switch off (owner 2026-10-31): only a very light tint under the pointer, to help reading; no tip.
+    p .sent:hover {
+      background: color-mix(in srgb, var(--hl, #cfe4fb) 30%, transparent);
+      border-radius: 3px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    // Dark theme: a pale tint at 30% turns the area grey and light text loses contrast, so use a fainter tint
+    // and pure white text.
+    :root[saved-theme="dark"] & p .sent:hover {
+      background: color-mix(in srgb, var(--hl, #cfe4fb) 14%, transparent);
+      color: #fff;
+    }
+
+    &:has(.fact-switch input:checked) p .sent:hover {
+      background: var(--hl, #cfe4fb);
+      color: #222;
+      border-radius: 3px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+  }
+
+  p .sent .fact-in {
+    background: none;
+    color: inherit;
+    font-weight: 600;
+  }
+
+  p .sent .fact-tip {
+    top: auto;
+    left: 0;
+    margin-top: 1.6em;
+  }
+
   p .fact {
     display: inline;
     position: static;
@@ -146,9 +192,99 @@
   }
 
   // The tip shows only while the switch is on. (Quartz rewrites the input's class, so match it by its wrapper.)
-  &:has(.fact-switch input:checked) .fact:hover .fact-tip,
-  &:has(.fact-switch input:checked) .fact:focus .fact-tip {
+  @media (hover: hover) and (pointer: fine) {
+    &:has(.fact-switch input:checked) .fact:hover .fact-tip,
+    &:has(.fact-switch input:checked) .sent:hover .fact-tip {
+      display: block;
+    }
+  }
+
+  // Highlight colour: a row of swatches above the switch, shown only while the switch is on.
+  .fact-colors {
+    position: fixed;
+    right: 1rem;
+    bottom: 4.4rem;
+    z-index: 50;
+    display: none;
+    gap: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    border: 2px solid var(--secondary);
+    border-radius: 999px;
+    background: var(--light);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    label {
+      display: block;
+      cursor: pointer;
+    }
+
+    input {
+      appearance: none;
+      -webkit-appearance: none;
+      display: block;
+      width: 1.3rem;
+      height: 1.3rem;
+      margin: 0;
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      background: var(--swatch);
+      box-shadow: 0 0 0 1px #888;
+      cursor: pointer;
+
+      &::after {
+        content: none;
+      }
+
+      &:checked {
+        border-color: var(--dark);
+      }
+    }
+
+    .hl-butter { --swatch: #fff1a8; }
+    .hl-mint { --swatch: #cdeedb; }
+    .hl-sky { --swatch: #cfe4fb; }
+    .hl-rose { --swatch: #fbd5df; }
+    .hl-peach { --swatch: #fddcbc; }
+    .hl-lilac { --swatch: #e3d8f6; }
+  }
+
+  &:has(.fact-switch input:checked) .fact-colors {
+    display: flex;
+  }
+
+  &:has(.hl-butter input:checked) { --hl: #fff1a8; }
+  &:has(.hl-mint input:checked) { --hl: #cdeedb; }
+  &:has(.hl-sky input:checked) { --hl: #cfe4fb; }
+  &:has(.hl-rose input:checked) { --hl: #fbd5df; }
+  &:has(.hl-peach input:checked) { --hl: #fddcbc; }
+  &:has(.hl-lilac input:checked) { --hl: #e3d8f6; }
+
+  // Touch screens: a sentence held for about a second (quartz/components/scripts/facthold.inline.ts) opens its tip.
+  p .sent.hold-open {
+    background: var(--hl, #cfe4fb);
+    color: #222;
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  p .sent.hold-open .fact-tip {
     display: block;
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    p .sent {
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .fact-switch,
+    .fact-colors {
+      display: none !important;
+    }
   }
 
   .fact-disputed {
@@ -173,4 +309,122 @@
 .status-draft {
   border-color: #d4a017;
   background: rgba(212, 160, 23, 0.15);
+}
+
+// Language switch: Traditional Chinese is the default; `lang.inline.ts` sets data-lang on <html>.
+// Without a Chinese version the page only has the English text, so there is nothing to hide.
+html[data-lang="en"] .lang-zh,
+html:not([data-lang="en"]) .lang-en {
+  display: none;
+}
+
+.lang-switch {
+  display: inline-flex;
+  margin: 0 0 0.6rem;
+  border: 1px solid var(--secondary);
+  border-radius: 999px;
+  overflow: hidden;
+
+  button {
+    padding: 0.25rem 0.9rem;
+    border: 0;
+    background: var(--light);
+    color: var(--darkgray);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    &[aria-pressed="true"] {
+      background: var(--secondary);
+      color: var(--light);
+    }
+  }
+}
+
+// Chinese proper-name mark (專名號): a straight underline under names of people, places, states.
+.pn {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+// Sentences an AI reviewer found conflicting with another sentence are hidden until the reader asks (owner 2026-10-31).
+.consolidated {
+  .sent.flagged {
+    display: none;
+  }
+
+  &:has(.flag-switch input:checked) .sent.flagged {
+    display: inline;
+    border-bottom: 1px dashed var(--secondary);
+    opacity: 0.8;
+  }
+
+  .flag-switch {
+    display: block;
+    margin: 0 0 0.6rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+}
+
+// Flow chart on the method page: boxes joined by arrows; who does each step (AI or program) is shown by the border.
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  margin: 0.5rem 0 1rem;
+
+  .flow-step {
+    position: relative;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    background: var(--light);
+
+    p {
+      margin: 0.3rem 0 0;
+      font-size: 0.9rem;
+    }
+
+    b {
+      display: block;
+    }
+  }
+
+  .flow-ai {
+    border-color: var(--secondary);
+  }
+
+  .flow-program {
+    border-color: var(--tertiary);
+  }
+
+  .flow-next {
+    border-style: dashed;
+  }
+
+  .flow-tag {
+    float: right;
+    margin-left: 0.6rem;
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    background: var(--highlight);
+    font-size: 0.75rem;
+  }
+
+  .flow-arrow {
+    align-self: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--gray);
+  }
+}
+
+.flow-note {
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid var(--secondary);
+  background: var(--highlight);
+  font-size: 0.9rem;
 }

@@ -6,6 +6,9 @@ import { QuartzEmitterPlugin } from "../types"
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
+// @ts-ignore
+import factHoldScript from "../../components/scripts/facthold.inline"
+import langScript from "../../components/scripts/lang.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
@@ -83,6 +86,10 @@ async function joinScripts(scripts: string[]): Promise<string> {
 
 function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentResources) {
   const cfg = ctx.cfg.configuration
+
+  // hold a sentence of a consolidated multi-AI page to see who backs it (touch screens)
+  componentResources.afterDOMLoaded.push(factHoldScript)
+  componentResources.afterDOMLoaded.push(langScript)
 
   // popovers
   if (cfg.enablePopovers) {

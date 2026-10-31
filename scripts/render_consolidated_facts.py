@@ -116,7 +116,8 @@ def sentence_span(sentence, facts, models, fact_ids=(), english=None, conflict=N
                     + esc(conflict.get("note", "")) + ")</i>")
     if not rows:
         return "".join(parts)
-    status = " fact-disputed" if conflict or any(f.get("status") == "disputed" for f, _ in inside) else ""
+    status = " fact-disputed flagged" if conflict else (
+        " fact-disputed" if any(f.get("status") == "disputed" for f, _ in inside) else "")
     return (f'<span class="sent{status}" tabindex="0">{"".join(parts)}'
             f'<span class="fact-tip">{"<br>".join(rows)}</span></span>')
 
@@ -172,6 +173,7 @@ def render(record):
     else:
         narrative = [paragraph(t, facts, ai[i] if i < len(ai) else None, sf[i] if i < len(sf) else None)
                      for i, t in enumerate(record.get("narrative", []))]
+    flagged = sum(1 for sec in record.get("sections", []) for u in sec["units"] if u.get("conflict"))
     has_zh = any(u.get("zh") for sec in record.get("sections", []) for u in sec["units"])
     items = []
     for fact in record["facts"]:
@@ -185,6 +187,9 @@ def render(record):
         '<div class="consolidated">',
         *([ '<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="zh">中文</button>'
            '<button type="button" data-lang="en">English</button></span>'] if has_zh else []),
+        *([ '<label class="flag-switch"><input type="checkbox"> '
+           + both(f"Show {flagged} sentence(s) an AI reviewer flagged as conflicting (hidden by default)",
+                  f"顯示 {flagged} 句被 AI 審查員標為互相矛盾的句子（預設隱藏）", has_zh) + "</label>"] if flagged else []),
         '<p class="cons-note">' + both(
             "One account written from what the AI drafts below say (unverified). On a computer, turn on the switch at the bottom right and point at a sentence to see which AIs back it; on a phone, hold a sentence for a moment. "
             "Agreement between AIs is not evidence; official sources will be added to each fact later.",

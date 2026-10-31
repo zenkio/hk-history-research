@@ -347,3 +347,23 @@ html:not([data-lang="en"]) .lang-en {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
+
+// Sentences an AI reviewer found conflicting with another sentence are hidden until the reader asks (owner 2026-10-31).
+.consolidated {
+  .sent.flagged {
+    display: none;
+  }
+
+  &:has(.flag-switch input:checked) .sent.flagged {
+    display: inline;
+    border-bottom: 1px dashed var(--secondary);
+    opacity: 0.8;
+  }
+
+  .flag-switch {
+    display: block;
+    margin: 0 0 0.6rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+}

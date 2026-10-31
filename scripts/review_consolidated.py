@@ -73,7 +73,13 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
         u.pop("conflict", None)
     for n, other, note in found:
         units[n - 1]["conflict"] = {"with": [units[other - 1]["text"]], "note": note, "judged_by": model}
-    return record, {"reviewed": True, "problems": [], "conflicts": len(found),
+    tally = {}  # per AI: sentences it backs that were flagged, of all the sentences it backs (a rating input)
+    for u in units:
+        for ai in u.get("by", []):
+            row = tally.setdefault(ai, {"flagged": 0, "sentences": 0})
+            row["sentences"] += 1
+            row["flagged"] += bool(u.get("conflict"))
+    return record, {"reviewed": True, "problems": [], "conflicts": len(found), "by_ai": tally,
                     "flagged": [{"text": units[n - 1]["text"], "with": units[o - 1]["text"], "note": note}
                                 for n, o, note in found]}
 

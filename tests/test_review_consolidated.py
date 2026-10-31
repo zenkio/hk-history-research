@@ -106,3 +106,11 @@ def test_a_figure_far_from_a_related_sentences_figure_is_flagged_on_the_side_few
 
     rv.run(rec, call, "M")
     assert "conflict" not in units[0] and units[1]["conflict"]["note"].startswith("figure differs")
+
+
+def test_a_figure_is_not_flagged_on_a_sentence_many_ais_back_even_if_a_merged_sentence_quotes_both_figures():
+    units = [{"text": "Opium of about 20,000 chests was destroyed.", "by": ["A", "B", "C"], "facts": []},
+             {"text": "Figures vary, about 20,000 chests or over one million chests.", "by": ["A", "B", "C", "D"], "facts": []}]
+    rec = {"facts": [], "sections": [{"title": "S", "units": units}]}
+    rv.run(rec, lambda s, p: "OUTLIER [1]: figures differ" if "OUTLIER" in p else "NONE", "M")
+    assert all("conflict" not in u for u in units)

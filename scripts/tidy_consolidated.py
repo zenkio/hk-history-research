@@ -55,7 +55,9 @@ def tidy_section(call, title, units, tries=cp.MAX_TRIES):
         except cp.WriterUnavailable:
             problems = ["writer unavailable"]
             continue
-        lines, problems = cp.parse_fold(raw, len(units), 0)
+        # a model sometimes thinks aloud before the answer: only the tagged lines count
+        tagged = "\n".join(x for x in raw.splitlines() if cp.LINE.match(x))
+        lines, problems = cp.parse_fold(tagged, len(units), 0)
         problems += cp.check_fold(lines, units, [])
         if not problems:
             return carry(cp.units_of(lines, units, None), units), [], n

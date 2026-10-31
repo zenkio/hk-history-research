@@ -23,6 +23,7 @@ import consolidate_pipeline as cp
 SYSTEM = ("You check one history sentence against related sentences from the same page. You use only what the "
           "sentences say, never outside knowledge of your own about what is true.")
 ANSWER = re.compile(r"^\s*(?:CONFLICT\s*\[(\d+)\]\s*:\s*(.+?)|NONE)\s*$", re.I | re.S)
+LONE = 2  # a figure is flagged only on a sentence this few AIs back
 RELATED = 6  # related sentences shown with each sentence
 STOP = set("the a an of in to and was were is are for on at by with as that this it its from which their his her "
            "had has have be been who not but or also after before into over under than then".split())
@@ -123,8 +124,11 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
     unreviewed = 0
     for i, (hit, ok) in enumerate(results):
         unreviewed += not ok
-        if hit and hit[1].startswith("figure differs"):  # already a narrow question, and "another account" does not excuse a 50-fold figure
-            pairs[i] = hit
+        if hit and hit[1].startswith("figure differs"):
+            # already a narrow question, and "another account" does not excuse a 50-fold figure. Only a lone
+            # sentence is flagged (merged sentences quote several figures, so their backing counts are inflated).
+            if len(units[i].get("by", [])) <= LONE and len(units[i].get("by", [])) < len(units[hit[0]].get("by", [])):
+                pairs[i] = hit
         elif hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
             note = confirm(call, units[i]["text"], units[hit[0]]["text"])
             if note:

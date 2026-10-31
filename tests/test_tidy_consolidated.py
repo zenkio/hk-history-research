@@ -34,3 +34,8 @@ def test_a_merge_that_drops_a_sentence_or_adds_a_number_is_retried_then_left_alo
     rec, rep = td.run(record(), call)
     assert len(asked) == td.cp.MAX_TRIES and rep["sections"][0]["fallback"]
     assert len(rec["sections"][0]["units"]) == 4 and "not used" in asked[1] or "number" in asked[1]
+
+
+def test_thinking_aloud_before_the_answer_is_ignored():
+    rec, rep = td.run(record(), lambda s, p: "We need to merge the sentences that say the same thing.\n" + GOOD)
+    assert not rep["sections"][0]["fallback"] and rep["sections"][0]["after"] == 3

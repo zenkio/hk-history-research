@@ -21,10 +21,10 @@ on:
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
       step:
-        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) or polish (tidy, then translate, then review, in that order)
+        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) polish (tidy, then translate, then review, in that order) or kidread (a ten-year-old's questions about the page)
         required: false
         type: choice
-        options: [consolidate, translate, review, tidy, polish]
+        options: [consolidate, translate, review, tidy, polish, kidread]
         default: consolidate
 
 permissions:
@@ -109,6 +109,11 @@ jobs:
             python3 -u scripts/review_consolidated.py "$REC" --model "$MODEL" --report "$REP-review.json" || true
           fi
           if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then exit 0; fi
+          if [[ "$STEP" == "kidread" ]]; then
+            python3 -u scripts/kid_read_consolidated.py "data/consolidated_facts/$PAGE.json" \
+              --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-kidread.json" || true
+            exit 0
+          fi
           if [[ "$STEP" == "review" ]]; then
             python3 -u scripts/review_consolidated.py "data/consolidated_facts/$PAGE.json" \
               --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-review.json" || true

@@ -11,6 +11,8 @@ def record():
 
 
 def answer(system, prompt):
+    if prompt.startswith("SENTENCE A:"):
+        return "CONTRADICTORY: reversed" if "China imported" in prompt.split("SENTENCE B:")[0] or "China imported" in prompt else "COMPATIBLE"
     sentence = prompt.split("SENTENCE:\n")[1].split("\n")[0]
     if sentence.startswith("China imported"):
         return "CONFLICT [1]: direction of the tea trade is reversed"
@@ -62,6 +64,8 @@ def test_only_the_side_fewer_ais_back_is_flagged_when_both_sides_report_each_oth
     units[0]["by"] = ["A", "B", "C"]
 
     def both(system, prompt):
+        if prompt.startswith("SENTENCE A:"):
+            return "CONTRADICTORY: reversed"
         sentence = prompt.split("SENTENCE:\n")[1].split("\n")[0]
         if sentence.startswith("China imported"):
             return "CONFLICT [1]: reversed"
@@ -71,3 +75,20 @@ def test_only_the_side_fewer_ais_back_is_flagged_when_both_sides_report_each_oth
 
     rv.run(rec, both, "M")
     assert "conflict" not in units[0] and "conflict" in units[1]
+
+
+def test_a_pair_the_second_question_finds_compatible_is_not_flagged():
+    def call(system, prompt):
+        if prompt.startswith("SENTENCE A:"):
+            return "COMPATIBLE"
+        return "CONFLICT [1]: x" if prompt.split("SENTENCE:\n")[1].startswith("China imported") else "NONE"
+
+    rec, rep = rv.run(record(), call, "M")
+    assert rep["conflicts"] == 0
+
+
+def test_a_sentence_that_already_names_another_account_is_not_asked_about():
+    rec = record()
+    rec["sections"][0]["units"][1]["text"] = "Another account says China imported British tea and silk."
+    rec2, rep = rv.run(rec, lambda s, p: "CONFLICT [1]: x" if "Another account" in p else "NONE", "M")
+    assert rep["conflicts"] == 0

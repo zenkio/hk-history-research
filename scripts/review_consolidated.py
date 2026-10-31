@@ -79,6 +79,22 @@ def review_one(call, units, i, tries):
     return None, False
 
 
+CONFIRM = re.compile(r"^\s*CONTRADICTORY\b\s*:?\s*(.*)$", re.I | re.S)
+ACCOUNT = re.compile(r"\b(another|one|a further|further|other) (account|source|version|draft|estimate)s?\b|"
+                     r"\balthough\b|\bwhile (some|others)\b", re.I)
+
+
+def confirm(call, first, second):
+    """A second, narrow question on a flagged pair: only a pair that cannot both be true under any reading stays."""
+    raw = call(SYSTEM, "SENTENCE A: " + first + "\nSENTENCE B: " + second + "\n\nCan A and B both be true at the same "
+               "time? Try to find a reading in which they are compatible: they may be about different aspects, "
+               "places, moments or sources, one may add detail to the other, or one may state a different figure or "
+               "detail as a separate account. Answer `COMPATIBLE`, or `CONTRADICTORY: short reason` only if no such "
+               "reading exists (for example they give opposite directions of the same exchange).")
+    m = CONFIRM.match(raw.strip().splitlines()[0] if raw.strip() else "")
+    return (m.group(1) or "contradictory") if m else None
+
+
 def run(record, call, model="", tries=cp.MAX_TRIES):
     from concurrent.futures import ThreadPoolExecutor
     units = flat(record)
@@ -88,8 +104,10 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
     unreviewed = 0
     for i, (hit, ok) in enumerate(results):
         unreviewed += not ok
-        if hit:
-            pairs[i] = hit
+        if hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
+            note = confirm(call, units[i]["text"], units[hit[0]]["text"])
+            if note:
+                pairs[i] = (hit[0], note)
     # Both sides of a conflict are usually reported, but only the side fewer AIs back is the outlier; the other is
     # kept. (How many AIs back a sentence is a hint where the error is, not proof; equal backing flags both.)
     chosen = {}

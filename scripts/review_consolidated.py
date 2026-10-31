@@ -43,9 +43,16 @@ def related(units, i):
     return [j for score, j in scored[:RELATED] if score]
 
 
-def prompt(sentence, others):
-    lines = ["SENTENCE:", sentence, "", "RELATED SENTENCES:"] + [f"[{k}] {t}" for k, t in enumerate(others, 1)]
-    lines += ["", "Does SENTENCE say the opposite of a related sentence, so that both cannot be true: who did what "
+def backing(unit):
+    n = len(unit.get("by", []))
+    return f" (backed by {n} AI{'s' if n != 1 else ''})"
+
+
+def prompt(sentence, others, own="", backed=()):
+    lines = ["SENTENCE:", sentence + own, "", "RELATED SENTENCES:"] + [
+        f"[{k}] {t}{b}" for k, (t, b) in enumerate(zip(others, backed or [""] * len(others)), 1)]
+    lines += ["", "How many AIs back a sentence is only a hint where to look, never proof that it is right: "
+              "look hardest when a sentence backed by few AIs differs from related sentences backed by many.", "Does SENTENCE say the opposite of a related sentence, so that both cannot be true: who did what "
               "to whom, which direction something went, whether something happened? Different dates or figures given "
               "as separate accounts, extra detail, or a related sentence about another aspect of the same subject "
               "are NOT conflicts. A sentence that says something was absent in one respect does not conflict "
@@ -60,7 +67,8 @@ def review_one(call, units, i, tries):
         return None, True
     feedback = ""
     for _ in range(tries):
-        raw = call(SYSTEM, prompt(units[i]["text"], [units[j]["text"] for j in others]) + feedback).strip()
+        raw = call(SYSTEM, prompt(units[i]["text"], [units[j]["text"] for j in others], backing(units[i]),
+                                  [backing(units[j]) for j in others]) + feedback).strip()
         m = ANSWER.match(raw.splitlines()[0] if raw else "")
         if m and not m.group(1):
             return None, True

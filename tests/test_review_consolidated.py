@@ -42,3 +42,13 @@ def test_flagged_sentences_are_marked_and_hidden_behind_a_switch():
     assert 'class="sent fact-disputed flagged"' in html and 'class="flag-switch"' in html and "1 sentence(s)" in html
     clean, _ = rv.run(record(), lambda s, p: "NONE")
     assert "flag-switch" not in rc.render(clean)
+
+
+def test_prompt_shows_how_many_ais_back_each_sentence():
+    rec = record()
+    rec["sections"][0]["units"][0]["by"] = ["A", "B", "C"]
+    seen = []
+    rv.run(rec, lambda s, p: seen.append(p) or "NONE", "M")
+    asked = next(p for p in seen if p.startswith("SENTENCE:\nChina imported"))
+    assert "SENTENCE:\nChina imported British tea and silk. (backed by 1 AI)" in asked
+    assert "Britain imported Chinese tea and silk. (backed by 3 AIs)" in asked

@@ -92,3 +92,17 @@ def test_a_sentence_that_already_names_another_account_is_not_asked_about():
     rec["sections"][0]["units"][1]["text"] = "Another account says China imported British tea and silk."
     rec2, rep = rv.run(rec, lambda s, p: "CONFLICT [1]: x" if "Another account" in p else "NONE", "M")
     assert rep["conflicts"] == 0
+
+
+def test_a_figure_far_from_a_related_sentences_figure_is_flagged_on_the_side_fewer_ais_back():
+    texts = ["About 20,000 chests of opium were destroyed at Humen.", "Over one million chests of opium were destroyed at Humen."]
+    units = [{"text": t, "by": b, "facts": []} for t, b in zip(texts, (["A", "B", "C"], ["D"]))]
+    rec = {"facts": [], "sections": [{"title": "S", "units": units}]}
+
+    def call(system, prompt):
+        if prompt.startswith("SENTENCE:\n") and "Answer one line: `OUTLIER" in prompt:
+            return "OUTLIER [1]: 20,000 against over one million" 
+        return "NONE"
+
+    rv.run(rec, call, "M")
+    assert "conflict" not in units[0] and units[1]["conflict"]["note"].startswith("figure differs")

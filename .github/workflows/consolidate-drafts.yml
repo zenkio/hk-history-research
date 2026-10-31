@@ -21,10 +21,10 @@ on:
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
       step:
-        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) or review (flag sentences that conflict with others)
+        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) or polish (tidy, then translate, then review, in that order)
         required: false
         type: choice
-        options: [consolidate, translate, review]
+        options: [consolidate, translate, review, tidy, polish]
         default: consolidate
 
 permissions:
@@ -99,6 +99,16 @@ jobs:
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
           if [[ ! -f "content/05_Multi_AI/$PAGE.md" ]]; then echo "no such page"; exit 1; fi
+          REC="data/consolidated_facts/$PAGE.json"
+          REP="experiments/consolidate/reports/$PAGE"
+          if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then
+            python3 -u scripts/tidy_consolidated.py "$REC" --model "$MODEL" --report "$REP-tidy.json" || true
+          fi
+          if [[ "$STEP" == "polish" ]]; then
+            python3 -u scripts/translate_consolidated.py "$REC" --model "$MODEL" --report "$REP-zh.json" || true
+            python3 -u scripts/review_consolidated.py "$REC" --model "$MODEL" --report "$REP-review.json" || true
+          fi
+          if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then exit 0; fi
           if [[ "$STEP" == "review" ]]; then
             python3 -u scripts/review_consolidated.py "data/consolidated_facts/$PAGE.json" \
               --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-review.json" || true

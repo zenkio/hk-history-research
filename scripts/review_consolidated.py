@@ -62,6 +62,25 @@ def prompt(sentence, others, own="", backed=()):
     return "\n".join(lines)
 
 
+FIGURE = re.compile(r"\d|\b(?:hundred|thousand|million|billion)s?\b", re.I)
+OUTLIER = re.compile(r"^\s*OUTLIER\s*\[(\d+)\]\s*:\s*(.+?)\s*$", re.I | re.S)
+
+
+def figure_outlier(call, units, i, others):
+    """A figure for the same quantity that is several times larger or smaller than a related sentence's figure."""
+    if not FIGURE.search(units[i]["text"]):
+        return None
+    pool = [j for j in others if FIGURE.search(units[j]["text"])]
+    if not pool:
+        return None
+    raw = call(SYSTEM, "SENTENCE:\n" + units[i]["text"] + "\n\nRELATED SENTENCES:\n" + "\n".join(
+        f"[{k}] {units[j]['text']}" for k, j in enumerate(pool, 1)) + "\n\nDo SENTENCE and a related sentence give a "
+        "figure for the same quantity (chests, people, years, tonnes) that differs by a factor of three or more? "
+        "Answer one line: `OUTLIER [n]: short reason`, or `NONE`.")
+    m = OUTLIER.match(raw.strip().splitlines()[0] if raw.strip() else "")
+    return (pool[int(m.group(1)) - 1], "figure differs: " + m.group(2)) if m and 1 <= int(m.group(1)) <= len(pool) else None
+
+
 def review_one(call, units, i, tries):
     others = related(units, i)
     if not others:  # nothing to conflict with
@@ -72,7 +91,7 @@ def review_one(call, units, i, tries):
                                   [backing(units[j]) for j in others]) + feedback).strip()
         m = ANSWER.match(raw.splitlines()[0] if raw else "")
         if m and not m.group(1):
-            return None, True
+            return figure_outlier(call, units, i, others), True
         if m and 1 <= int(m.group(1)) <= len(others):
             return (others[int(m.group(1)) - 1], m.group(2)), True
         feedback = "\n\nYour last answer was not in the required form. Answer with one line only."
@@ -104,7 +123,9 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
     unreviewed = 0
     for i, (hit, ok) in enumerate(results):
         unreviewed += not ok
-        if hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
+        if hit and hit[1].startswith("figure differs"):  # already a narrow question, and "another account" does not excuse a 50-fold figure
+            pairs[i] = hit
+        elif hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
             note = confirm(call, units[i]["text"], units[hit[0]]["text"])
             if note:
                 pairs[i] = (hit[0], note)

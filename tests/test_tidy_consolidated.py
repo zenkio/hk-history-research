@@ -66,7 +66,7 @@ def test_a_sentence_only_a_low_trust_ai_backs_may_be_left_out_and_is_kept_in_the
     rec["sections"][0]["units"][3]["by"] = ["Xing 4.0"]
     answer = ("[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea.\n"
               "[C3] Another account says it was flushed into the Pearl River.\n[C4] OMIT")
-    out, rep = td.run(rec, lambda s, p: answer)
+    out, rep = td.run(rec, lambda s, p: answer, low_trust=["Xing 4.0"])
     assert [u["text"][:12] for u in out["sections"][0]["units"]] == ["The drug was", "Another acco"]
     assert out["omitted"][0]["by"] == ["Xing 4.0"] and out["omitted"][0]["section"] == "What happened"
 
@@ -78,3 +78,12 @@ def test_a_sentence_many_ais_back_may_not_be_left_out():
     asked = []
     out, rep = td.run(rec, lambda s, p: asked.append(p) or answer)
     assert rep["sections"][0]["fallback"] and "may not be left out" in asked[1] and out["omitted"] == []
+
+
+def test_nothing_may_be_left_out_unless_an_ai_is_on_the_low_trust_list():
+    rec = record()
+    rec["sections"][0]["units"][3]["by"] = ["Xing 4.0"]
+    answer = ("[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea.\n"
+              "[C3] Another account says it was flushed into the Pearl River.\n[C4] OMIT")
+    out, rep = td.run(rec, lambda s, p: answer)
+    assert rep["sections"][0]["fallback"] and out["omitted"] == [] and td.LOW_TRUST == []

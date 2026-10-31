@@ -8,7 +8,7 @@ made from (`[C1,C4] ...`): sentences that say the same thing become one, and a d
 Pearl River, a different figure) stays visible in the wording. The same program checks as the fold apply (every
 sentence used, no number or name not in the sentences, nothing shrunk to a hint, short, no repeats); the backers
 of a merged sentence are the union of its sources' backers. A section that fails its checks keeps its sentences
-unchanged. Sentences that only AIs on a low-trust list back (owner 2026-10-31: Xing 4.0 for now, until there is a rating)
+unchanged. Sentences that only AIs on a low-trust list back (none for now: owner 2026-10-31 wants weak AIs kept until there is proof)
 may be left out (`[C5] OMIT`); they are kept in `record["omitted"]`, never deleted. Translations and review flags belong to the old sentences, so merged sentences have none and the
 translate and review steps run again after this one.
 
@@ -23,7 +23,7 @@ from concurrent.futures import ThreadPoolExecutor
 import consolidate_drafts as cd
 import consolidate_pipeline as cp
 
-LOW_TRUST = ["Xing 4.0"]  # AIs whose lone statements may be left out (owner 2026-10-31); to be replaced by a rating
+LOW_TRUST = []  # AIs whose lone sentences may be left out. Empty (owner 2026-10-31: no proof a weak AI is wrong, keep them); needs a rating first
 OMIT = "OMIT"
 SYSTEM = ("You tidy a history text by merging sentences that say the same thing. You use only what the "
           "sentences say. You never add a fact, name, date, number or explanation of your own.")

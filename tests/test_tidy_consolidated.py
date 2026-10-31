@@ -43,8 +43,12 @@ def test_thinking_aloud_before_the_answer_is_ignored():
 
 def test_a_long_section_is_tidied_in_chunks_and_each_chunk_is_answered_on_its_own():
     import re
-    texts = [f"Fact number {w} happened at the harbour." for w in
-             "alpha bravo charlie delta echo foxtrot golf hotel india juliet kilo lima".split()]
+    texts = ["Alpha ships anchored near Macao.", "Bravo merchants stored opium aboard hulks.",
+             "Charlie officials inspected Canton warehouses.", "Delta soldiers guarded Humen forts.",
+             "Echo traders petitioned London parliament.", "Foxtrot villagers farmed rice terraces.",
+             "Golf fishermen mended nets daily.", "Hotel scholars debated tribute customs.",
+             "India growers harvested poppy crops.", "Juliet captains charted Pearl River channels.",
+             "Kilo clerks recorded silver payments.", "Lima envoys carried imperial edicts."]
     rec = {"facts": [], "sections": [{"title": "S", "units": [{"text": t, "by": ["A"], "facts": []} for t in texts]}]}
     asked = []
 
@@ -54,4 +58,4 @@ def test_a_long_section_is_tidied_in_chunks_and_each_chunk_is_answered_on_its_ow
 
     out, rep = td.run(rec, echo)
     assert len(asked) == 2 and len(out["sections"][0]["units"]) == 12 and not rep["sections"][0]["fallback"]
-    assert "alpha" in asked[0] and "alpha" not in asked[1] and "lima" in asked[1]
+    assert "Alpha" in asked[0] and "Alpha" not in asked[1] and "Lima" in asked[1]

@@ -62,3 +62,11 @@ def test_english_month_left_in_the_chinese_is_a_problem():
     assert any("July" in p for p in problems)
     _, ok = tc.check("[1] 主權於1997年7月1日移交。", ["Sovereignty passed on 1 July 1997."])
     assert not ok
+
+
+def test_an_overloaded_model_leaves_the_section_untranslated_instead_of_crashing():
+    def down(system, prompt):
+        raise tc.cp.WriterUnavailable("503")
+    rec = {"sections": [{"title": "S", "units": [{"text": "Hello world.", "by": ["A"]}]}]}
+    rec, rep = tc.run(rec, down)
+    assert rep["sections"][0]["translated"] is False and "zh" not in rec["sections"][0]["units"][0]

@@ -71,3 +71,21 @@ def test_steps_done_before_status_files_can_be_adopted_so_they_are_not_run_again
     ps.adopt("p", ["fold", "tidy", "translate"], root)
     monkeypatch.setattr(ps, "execute", fake_execute(log))
     assert ps.run_page("p", None, "M", root=root) == ["review", "kidread"]
+
+
+def test_an_overloaded_model_pauses_the_page_without_using_up_an_attempt(tmp_path, monkeypatch):
+    # run 41375955401: translate crashed on "all models overloaded" and the run lost the step
+    root, log = setup(tmp_path), []
+    good = fake_execute(log)
+
+    def execute(step, *a):
+        if step == "translate" and "down" not in log:
+            log.append("down")
+            raise ps.cp.WriterUnavailable("503 overloaded")
+        return good(step, *a)
+
+    monkeypatch.setattr(ps, "execute", execute)
+    assert ps.run_page("p", None, "M", root=root) == ["fold", "tidy"]
+    st = json.loads((root / ps.STATUS / "p.json").read_text())
+    assert st["translate"]["state"] == "waiting" and st["translate"]["attempts"] == 0
+    assert ps.run_page("p", None, "M", root=root) == ["translate", "review", "kidread"]

@@ -79,7 +79,12 @@ def translate_section(call, title, texts, tries=MAX_TRIES):
         return [], [], 0
     feedback, problems = None, []
     for attempt in range(1, tries + 1):
-        out, problems = check(call(SYSTEM, prompt(title, texts, feedback)), texts)
+        try:
+            raw = call(SYSTEM, prompt(title, texts, feedback))
+        except cp.WriterUnavailable:  # the gateway model is overloaded: this section is left for the next run
+            problems = ["writer unavailable"]
+            continue
+        out, problems = check(raw, texts)
         if not problems:
             return out, [], attempt
         feedback = problems

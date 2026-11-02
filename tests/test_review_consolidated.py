@@ -114,3 +114,10 @@ def test_a_figure_is_not_flagged_on_a_sentence_many_ais_back_even_if_a_merged_se
     rec = {"facts": [], "sections": [{"title": "S", "units": units}]}
     rv.run(rec, lambda s, p: "OUTLIER [1]: figures differ" if "OUTLIER" in p else "NONE", "M")
     assert all("conflict" not in u for u in units)
+
+
+def test_an_overloaded_model_makes_sentences_unreviewed_instead_of_crashing():
+    def down(system, prompt):
+        raise rv.cp.WriterUnavailable("503")
+    rec, rep = rv.run(record(), down, "M")
+    assert not rep["reviewed"] and rep["unreviewed"] == 3

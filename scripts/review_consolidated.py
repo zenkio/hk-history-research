@@ -88,8 +88,11 @@ def review_one(call, units, i, tries):
         return None, True
     feedback = ""
     for _ in range(tries):
-        raw = call(SYSTEM, prompt(units[i]["text"], [units[j]["text"] for j in others], backing(units[i]),
-                                  [backing(units[j]) for j in others]) + feedback).strip()
+        try:
+            raw = call(SYSTEM, prompt(units[i]["text"], [units[j]["text"] for j in others], backing(units[i]),
+                                      [backing(units[j]) for j in others]) + feedback).strip()
+        except cp.WriterUnavailable:  # overloaded: counted as not reviewed, never a crash
+            return None, False
         m = ANSWER.match(raw.splitlines()[0] if raw else "")
         if m and not m.group(1):
             return figure_outlier(call, units, i, others), True

@@ -116,7 +116,16 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         step = next_step(status, page_md)
         if step is None:
             break
-        record, report = execute(step, page_md, record, call, model)
+        try:
+            record, report = execute(step, page_md, record, call, model)
+        except cp.WriterUnavailable as e:  # the gateway model stays overloaded: wait, do not count an attempt
+            prev = status.get(step, {})
+            status[step] = {"state": "waiting", "attempts": prev.get("attempts", 0), "gaps": [str(e)[:120]],
+                            "model": model, "input": expected_input(step, status, page_md), "after": None,
+                            "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
+            save(st_path, status)
+            print(f"[status] {page}: {step} waiting, the writer model is unavailable", flush=True)
+            break
         left = gaps(step, record, report)
         prev = status.get(step, {})
         attempts = prev.get("attempts", 0) + 1 if prev.get("input") == expected_input(step, status, page_md) else 1

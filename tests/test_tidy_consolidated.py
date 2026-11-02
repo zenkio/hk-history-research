@@ -32,7 +32,7 @@ def test_a_merge_that_drops_a_sentence_or_adds_a_number_is_retried_then_left_alo
         return "[C1,C2] The drug was mixed with lime in 1840.\n[C4] Lin reported the work done on 26 June."
 
     rec, rep = td.run(record(), call)
-    assert len(asked) == td.cp.MAX_TRIES and rep["sections"][0]["fallback"]
+    assert len(asked) >= td.cp.MAX_TRIES and rep["sections"][0]["fallback"]  # the halves are tried too
     assert len(rec["sections"][0]["units"]) == 4 and "not used" in asked[1] or "number" in asked[1]
 
 
@@ -87,3 +87,16 @@ def test_nothing_may_be_left_out_unless_an_ai_is_on_the_low_trust_list():
               "[C3] Another account says it was flushed into the Pearl River.\n[C4] OMIT")
     out, rep = td.run(rec, lambda s, p: answer)
     assert rep["sections"][0]["fallback"] and out["omitted"] == [] and td.LOW_TRUST == []
+
+
+def test_a_chunk_that_fails_as_a_whole_is_tried_again_in_halves():
+    # owner 2026-10-31: the Joint Declaration section kept its duplicates because the whole chunk failed one check
+    def call(s, p):
+        if "C3." in p and "C1." in p:  # the whole chunk: unusable answer
+            return "[C1] The drug was flushed."
+        if "Pearl" not in p:
+            return "[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea."
+        return "[C1] Another account says it was flushed into the Pearl River.\n[C2] Lin reported the work done on 26 June."
+
+    rec, rep = td.run(record(), call)
+    assert [u["text"][:12] for u in rec["sections"][0]["units"]] == ["The drug was", "Another acco", "Lin reported"]

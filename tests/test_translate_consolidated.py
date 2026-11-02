@@ -54,3 +54,11 @@ def test_name_marks_are_kept_checked_and_drawn_underlined():
     assert "unmatched" in tc.check("[1] ⟦林則徐於1839年抵達。\n[2] 約20,283箱。", TEXTS)[1][0]
     unit = {"text": TEXTS[0], "by": ["A"], "facts": [], "zh": out[0]}
     assert '<span class="pn">林則徐</span>' in rc.paragraph_from_units("**1. x** ", [unit], {})
+
+
+def test_english_month_left_in_the_chinese_is_a_problem():
+    # owner 2026-10-31: "主權於1 July 1997移交" mixed English into the Chinese version
+    _, problems = tc.check("[1] 主權於1 July 1997移交。", ["Sovereignty passed on 1 July 1997."])
+    assert any("July" in p for p in problems)
+    _, ok = tc.check("[1] 主權於1997年7月1日移交。", ["Sovereignty passed on 1 July 1997."])
+    assert not ok

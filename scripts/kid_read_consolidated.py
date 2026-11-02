@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""A 10-year-old's reading of a consolidated record (owner 2026-10-31).
+"""A general reader's pass over a consolidated record (owner 2026-10-31).
 
-Before a page goes public an AI reads it as a ten-year-old and lists the words and points it cannot follow
-("what is 行館?", "who is Elliot?"). The questions are kept in `record["questions"]`, one per term and language,
+Before a page goes public an AI reads it as a reader of a set level (English B1, Chinese Hong Kong junior
+secondary, about TOCFL level 3; the owner found a ten-year-old asked too many easy questions) and lists the words
+and points it cannot follow ("what is 行館?", "who is Elliot?"), at most five per section and language. The questions are kept in `record["questions"]`, one per term and language,
 so the answer can be researched later (the reader asks no outside source here). A term the record's `glossary`
 already explains is not asked again. English and Chinese are read apart because a term can be easy in one language
 and hard in the other. The AI only asks; it never answers or changes the text. Code checks the answer form and that
@@ -19,8 +20,12 @@ from concurrent.futures import ThreadPoolExecutor
 
 import consolidate_pipeline as cp
 
-SYSTEM = ("You are a curious ten-year-old who reads a history text. You say honestly which words and points you "
-          "do not understand. You never answer your own questions and never use knowledge to explain.")
+LEVELS = {"en": "B1 on the CEFR scale (an intermediate English reader)",
+          "zh": "a Hong Kong junior secondary student (中三), about TOCFL level 3"}
+MAX_PER_SECTION = 5
+SYSTEM = ("You are a curious reader who knows little Hong Kong history and reads a history text. You say honestly "
+          "which words and points you do not understand. You never answer your own questions and never use "
+          "knowledge to explain.")
 LINE = re.compile(r"^\s*Q\s*\[(\d+)\]\s*\|\s*(.+?)\s*\|\s*(.+?)\s*$")
 MARK = re.compile(r"[⟦⟧]")
 LANGS = {"en": "English", "zh": "Traditional Chinese (Hong Kong)"}
@@ -28,10 +33,12 @@ LANGS = {"en": "English", "zh": "Traditional Chinese (Hong Kong)"}
 
 def prompt(lang, title, texts):
     lines = [f"Section: {title}", "", "TEXT (numbered sentences):"] + [f"[{i}] {t}" for i, t in enumerate(texts, 1)]
-    lines += ["", f"You are ten years old and read this text in {LANGS[lang]}. List up to 8 words, names or points you "
-              "cannot follow: a hard word, a person or place you do not know, a custom or idea nobody explains, "
-              "or a claim that makes you wonder why. One per line, in exactly this form:",
-              f"Q [n] | the term, copied exactly from sentence n | your question as a child, in {LANGS[lang]}",
+    lines += ["", f"Your reading level is {LEVELS[lang]}; you read this text in {LANGS[lang]}. List at most "
+              f"{MAX_PER_SECTION} words, names or points you cannot follow at that level: a specialist word, a person or "
+              "place you would not know, a custom or idea nobody explains, or a claim that makes you wonder why. "
+              "Skip everyday words and well-known places. One per line, in exactly this form:",
+              f"Q [n] | the term, copied exactly from sentence n | your question, in {LANGS[lang]}"
+              + (" (written standard Chinese, not Cantonese colloquial words such as 係咩)" if lang == "zh" else ""),
               "If you understand everything, answer `NONE`. Output only those lines."]
     return "\n".join(lines)
 
@@ -49,7 +56,7 @@ def ask(call, lang, title, texts, tries=cp.MAX_TRIES):
         got = [(int(n), t.strip("「」\"' "), q) for n, t, q in found
                if 1 <= int(n) <= len(texts) and t.strip("「」\"' ") in texts[int(n) - 1]]
         if got:
-            return got
+            return got[:MAX_PER_SECTION]
     return None
 
 

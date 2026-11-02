@@ -25,6 +25,7 @@ SYSTEM = ("You translate English history text into Traditional Chinese as writte
           "faithfully: you add nothing, drop nothing and keep every number, date and name.")
 CJK = re.compile(r"[一-鿿]")
 ENGLISH_WORD = re.compile(r"\b[a-z]{3,}\b")  # a lower-case English word left untranslated
+MONTH = re.compile(r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b", re.I)
 NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
 MARK = re.compile(r"⟦([^⟦⟧]+)⟧")  # proper-name mark (專名號): the renderer draws these names underlined
 LINE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
@@ -63,7 +64,7 @@ def check(raw, texts):
             problems.append(f"[{i}] has an unmatched or nested ⟦ ⟧")
         if not CJK.search(zh):
             problems.append(f"[{i}] is not Chinese")
-        left = ENGLISH_WORD.findall(zh)
+        left = ENGLISH_WORD.findall(zh) + MONTH.findall(zh)  # "1 July 1997" must read 1997年7月1日
         if left:
             problems.append(f"[{i}] left English words untranslated: {', '.join(left[:3])}")
         zh_numbers = numbers(zh)

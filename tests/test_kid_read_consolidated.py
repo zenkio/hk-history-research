@@ -25,3 +25,11 @@ def test_none_and_unreadable_answers():
     assert rep["questions"] == 0 and rep["unread"] == 0
     rec, rep = kr.run(record(), lambda s, p: "blah", "M")
     assert rep["unread"] == 2
+
+
+def test_at_most_five_questions_a_section_and_the_level_is_named():
+    texts = ["Alpha beta gamma delta epsilon zeta eta."]
+    asked = []
+    many = "\n".join(f"Q [1] | {w} | What is {w}?" for w in ["Alpha", "beta", "gamma", "delta", "epsilon", "zeta"])
+    got = kr.ask(lambda s, p: asked.append(p) or many, "en", "S", texts)
+    assert len(got) == kr.MAX_PER_SECTION and "B1" in asked[0]

@@ -102,6 +102,12 @@ def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omit
                 omitted += [dict(units[i - 1], reason="only low-trust AIs back it") for i in sorted(left_out)]
             return merged, [], n
         feedback = problems[:12]
+    if len(units) > 2:  # owner 2026-10-31: a long chunk can fail a check as a whole; its halves often pass
+        mid = len(units) // 2
+        first, p1, _ = tidy_chunk(call, title, units[:mid], 2, low_trust, omitted)
+        second, p2, _ = tidy_chunk(call, title, units[mid:], 2, low_trust, omitted)
+        if not (p1 and p2):
+            return first + second, p1 + p2, tries
     return units, problems, tries
 
 

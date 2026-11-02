@@ -21,11 +21,21 @@ on:
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
       step:
-        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) polish (tidy, then translate, then review, in that order) or kidread (a ten-year-old's questions about the page)
+        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) polish (tidy, then translate, then review, in that order) kidread (questions a general reader would ask) or auto (only the steps a page still needs, from its status file)
         required: false
         type: choice
-        options: [consolidate, translate, review, tidy, polish, kidread]
+        options: [consolidate, translate, review, tidy, polish, kidread, auto]
         default: consolidate
+      adopt:
+        description: With step auto, the steps this page already went through before status files existed (e.g. fold,tidy,translate,review)
+        required: false
+        type: string
+        default: ''
+      max_steps:
+        description: With step auto, how many steps to run per page in this call
+        required: false
+        type: string
+        default: '12'
 
 permissions:
   contents: read
@@ -95,12 +105,19 @@ jobs:
           PAGE: ${{ matrix.page }}
           MODEL: ${{ inputs.model }}
           STEP: ${{ inputs.step }}
+          ADOPT: ${{ inputs.adopt }}
+          MAX_STEPS: ${{ inputs.max_steps }}
         run: |
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
           if [[ ! -f "content/05_Multi_AI/$PAGE.md" ]]; then echo "no such page"; exit 1; fi
           REC="data/consolidated_facts/$PAGE.json"
           REP="experiments/consolidate/reports/$PAGE"
+          if [[ "$STEP" == "auto" ]]; then
+            if [[ -n "$ADOPT" ]]; then python3 -u scripts/page_status.py "$PAGE" --adopt "$ADOPT"; fi
+            python3 -u scripts/page_status.py "$PAGE" --model "$MODEL" --max-steps "$MAX_STEPS" || true
+            exit 0
+          fi
           if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then
             python3 -u scripts/tidy_consolidated.py "$REC" --model "$MODEL" --report "$REP-tidy.json" || true
           fi
@@ -137,7 +154,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$PRIVATE_BRANCH"
-          git add data/consolidated_facts experiments/consolidate
+          git add data/consolidated_facts data/consolidated_status experiments/consolidate
           if git diff --cached --quiet; then echo "nothing was written"; exit 0; fi
           git commit -m "experiment: consolidate drafts"
           git push origin "$PRIVATE_BRANCH"

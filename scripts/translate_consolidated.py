@@ -94,6 +94,10 @@ def translate_section(call, title, texts, tries=MAX_TRIES):
 def run(record, call, tries=MAX_TRIES, only_missing=True):
     """Translates the sections that still have an untranslated sentence (owner 2026-10-31: do only what is missing)."""
     report = {"sections": []}
+    for sec in record["sections"]:  # a Chinese sentence from before the English-month check is translated again
+        for u in sec["units"]:
+            if u.get("zh") and MONTH.search(u["zh"]):
+                u.pop("zh")
     sections = [s for s in record["sections"] if not only_missing or not all(u.get("zh") for u in s["units"])]
     started = time.time()
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:

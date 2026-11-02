@@ -70,3 +70,12 @@ def test_an_overloaded_model_leaves_the_section_untranslated_instead_of_crashing
     rec = {"sections": [{"title": "S", "units": [{"text": "Hello world.", "by": ["A"]}]}]}
     rec, rep = tc.run(rec, down)
     assert rep["sections"][0]["translated"] is False and "zh" not in rec["sections"][0]["units"][0]
+
+
+def test_an_old_chinese_sentence_with_an_english_month_is_translated_again():
+    def good(system, prompt):
+        return "[1] 主權於1997年7月1日移交。"
+    rec = {"sections": [{"title": "S", "units": [{"text": "Sovereignty passed on 1 July 1997.", "by": ["A"],
+                                                  "zh": "主權於1 July 1997移交。"}]}]}
+    rec, rep = tc.run(rec, good)
+    assert rec["sections"][0]["units"][0]["zh"] == "主權於1997年7月1日移交。"

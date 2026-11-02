@@ -94,7 +94,7 @@ def test_a_chunk_that_fails_as_a_whole_is_tried_again_in_halves():
     def call(s, p):
         if "C3." in p and "C1." in p:  # the whole chunk: unusable answer
             return "[C1] The drug was flushed."
-        if "Pearl" not in p:
+        if "Lin reported" not in p:
             return "[C1,C2] The drug was mixed with lime and salt in trenches, then flushed into the sea."
         return "[C1] Another account says it was flushed into the Pearl River.\n[C2] Lin reported the work done on 26 June."
 

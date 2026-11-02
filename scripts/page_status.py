@@ -10,7 +10,7 @@ left gaps (a section not merged, a sentence not translated) is `partial` and is 
 accepted as it is, so a page never loops. Only the steps that are stale or missing run, one page after another,
 within a budget of steps; the status is saved after every step.
 
-Usage (in the data checkout): page_status.py <page> [<page> ...] [--model ID] [--max-steps N] [--show] [--adopt fold,tidy,...]
+Usage (in the data checkout): page_status.py <page> [<page> ...] [--model ID] [--max-steps N] [--show] [--adopt fold,tidy,...] [--retry translate,...]
 """
 import argparse
 import hashlib
@@ -152,6 +152,16 @@ def adopt(page, steps, root=Path(".")):
     return status
 
 
+def retry(page, steps, root=Path(".")):
+    """Forgets the state of the given steps (attempts used up, gaps accepted) so the next run does them again."""
+    st_path = root / STATUS / f"{page}.json"
+    status = load(st_path, {})
+    for step in steps:
+        status.pop(step, None)
+    save(st_path, status)
+    return status
+
+
 def show(page, root=Path(".")):
     page_md = (root / PAGES / f"{page}.md").read_text(encoding="utf-8")
     status = load(root / STATUS / f"{page}.json", {})
@@ -166,7 +176,11 @@ def main(argv=None):
     ap.add_argument("--max-steps", type=int, default=12, help="steps to run per page in this call")
     ap.add_argument("--show", action="store_true")
     ap.add_argument("--adopt", help="comma-separated steps already done before status files existed, e.g. fold,tidy")
+    ap.add_argument("--retry", help="comma-separated steps to forget so they run again, e.g. translate")
     args = ap.parse_args(argv)
+    if args.retry:
+        for p in args.pages:
+            retry(p, args.retry.split(","))
     if args.adopt:
         for p in args.pages:
             adopt(p, args.adopt.split(","))

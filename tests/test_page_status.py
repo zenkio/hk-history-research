@@ -89,3 +89,13 @@ def test_an_overloaded_model_pauses_the_page_without_using_up_an_attempt(tmp_pat
     st = json.loads((root / ps.STATUS / "p.json").read_text())
     assert st["translate"]["state"] == "waiting" and st["translate"]["attempts"] == 0
     assert ps.run_page("p", None, "M", root=root) == ["translate", "review", "kidread"]
+
+
+def test_retry_forgets_an_accepted_step_so_only_that_step_runs_again(tmp_path, monkeypatch):
+    root, log = setup(tmp_path), []
+    monkeypatch.setattr(ps, "execute", fake_execute(log, partial=("translate",)))
+    ps.run_page("p", None, "M", root=root)
+    log.clear()
+    ps.retry("p", ["translate"], root)
+    monkeypatch.setattr(ps, "execute", fake_execute(log))
+    assert ps.run_page("p", None, "M", root=root) == ["translate"]

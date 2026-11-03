@@ -32,7 +32,7 @@ def test_a_crash_in_one_page_does_not_stop_the_others_and_is_quarantined(tmp_pat
     root, log = setup(tmp_path, queue={}), []
     ok = fake_execute(log)
 
-    def execute(step, page_md, record, call, model):
+    def execute(step, page_md, record, call, model, repair=False):
         if page_md == "drafts a":
             raise ValueError("boom")
         return ok(step, page_md, record, call, model)
@@ -55,7 +55,7 @@ def test_a_crash_in_one_page_does_not_stop_the_others_and_is_quarantined(tmp_pat
 def test_overloaded_gateway_stops_the_run_after_two_waiting_pages(tmp_path, monkeypatch):
     root = setup(tmp_path, pages=("a", "b", "c", "d"), queue={})
 
-    def execute(step, page_md, record, call, model):
+    def execute(step, page_md, record, call, model, repair=False):
         raise cq.cp.WriterUnavailable("busy")
     monkeypatch.setattr(ps, "execute", execute)
     done, issues = cq.run_queue(None, "M", root)
@@ -65,7 +65,7 @@ def test_overloaded_gateway_stops_the_run_after_two_waiting_pages(tmp_path, monk
 
 def test_waiting_page_is_tried_again_and_its_issue_closes(tmp_path, monkeypatch):
     root, log = setup(tmp_path, pages=("a",), queue={}), []
-    monkeypatch.setattr(ps, "execute", lambda *a: (_ for _ in ()).throw(cq.cp.WriterUnavailable("busy")))
+    monkeypatch.setattr(ps, "execute", lambda *a, **kw: (_ for _ in ()).throw(cq.cp.WriterUnavailable("busy")))
     assert cq.summary(cq.run_queue(None, "M", root)[1])["waiting"] == 1
     monkeypatch.setattr(ps, "execute", fake_execute(log))
     assert cq.summary(cq.run_queue(None, "M", root)[1])["waiting"] == 0

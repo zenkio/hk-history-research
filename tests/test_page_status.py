@@ -10,7 +10,7 @@ def setup(tmp_path):
 
 
 def fake_execute(log, partial=()):
-    def execute(step, page_md, record, call, model):
+    def execute(step, page_md, record, call, model, repair=False):
         log.append(step)
         if step == "fold":
             record["sections"] = [{"title": "S", "units": [{"text": f"Sentence of {page_md}.", "by": ["A"]}]}]
@@ -78,7 +78,7 @@ def test_an_overloaded_model_pauses_the_page_without_using_up_an_attempt(tmp_pat
     root, log = setup(tmp_path), []
     good = fake_execute(log)
 
-    def execute(step, *a):
+    def execute(step, *a, **kw):
         if step == "translate" and "down" not in log:
             log.append("down")
             raise ps.cp.WriterUnavailable("503 overloaded")
@@ -99,3 +99,19 @@ def test_retry_forgets_an_accepted_step_so_only_that_step_runs_again(tmp_path, m
     ps.retry("p", ["translate"], root)
     monkeypatch.setattr(ps, "execute", fake_execute(log))
     assert ps.run_page("p", None, "M", root=root) == ["translate"]
+
+
+def test_a_forgotten_step_runs_as_a_repair_but_a_first_run_does_not(tmp_path, monkeypatch):
+    root, seen = setup(tmp_path), []
+    base = fake_execute([])
+
+    def execute(step, page_md, record, call, model, repair=False):
+        seen.append((step, repair))
+        return base(step, page_md, record, call, model)
+    monkeypatch.setattr(ps, "execute", execute)
+    ps.run_page("p", None, "M", root=root)
+    assert all(not r for _, r in seen)
+    seen.clear()
+    ps.retry("p", ["tidy"], root)
+    ps.run_page("p", None, "M", root=root)
+    assert seen[0] == ("tidy", True)

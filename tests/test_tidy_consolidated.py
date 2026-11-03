@@ -129,3 +129,19 @@ def test_a_merge_that_leaves_the_same_point_twice_is_sent_back_once_then_kept_an
     dups = []
     out, _, _ = td.tidy_chunk(lambda s, p: "[C1] The Convention of Peking ended the Second Opium War.\n[C2] It ended the Second Opium War in 1860.\n[C3] France signed a separate convention.", "S", units, 2, [], None, dups)
     assert len(out) == 3 and dups  # still twice after the tries: kept, and counted so the page status shows it
+
+
+def test_a_repair_run_tidies_only_the_sections_that_still_repeat_a_point():
+    import tidy_consolidated as td
+    clean = [{"text": "Lin arrived in Canton in 1839.", "by": ["A"], "zh": "中"}, {"text": "France signed a convention.", "by": ["A"], "zh": "中"}]
+    dirty = [{"text": "The Convention of Peking ended the Second Opium War.", "by": ["A"]},
+             {"text": "It ended the Second Opium War in 1860.", "by": ["B"]}]
+    rec = {"facts": [], "sections": [{"title": "Clean", "units": clean}, {"title": "Dirty", "units": dirty}]}
+    asked = []
+
+    def call(system, prompt):
+        asked.append(prompt)
+        return "[C1,C2] The Convention of Peking ended the Second Opium War in 1860."
+    rec, report = td.run(rec, call, only_problems=True)
+    assert len(asked) == 1 and "Dirty" in asked[0] and report["redone"] == 1
+    assert [u["text"] for u in rec["sections"][0]["units"]] == [u["text"] for u in clean] and len(rec["sections"][1]["units"]) == 1

@@ -164,15 +164,22 @@ def carry(merged, old):
     return [dict(by_text[u["text"]], by=u["by"]) if u["text"] in by_text else u for u in merged]
 
 
-def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST):
+def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, only_problems=False):
+    """With only_problems, a section is tidied again only if it still tells a point twice; the others stay as they are."""
     sections = record["sections"]
+    todo = {k for k, s in enumerate(sections)
+            if not only_problems or near_duplicates([u["text"] for u in s["units"]])}
     gone = [[] for _ in sections]  # per section, so the parallel workers never share a list
     twice = [[] for _ in sections]
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
         results = list(pool.map(lambda k: tidy_section(call, sections[k]["title"], sections[k]["units"], tries,
-                                                       low_trust, gone[k], twice[k]), range(len(sections))))
-    record["omitted"] = [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
-    report = {"sections": [], "omitted": len(record["omitted"])}
+                                                       low_trust, gone[k], twice[k]) if k in todo
+                                else (sections[k]["units"], [], 0), range(len(sections))))
+    if only_problems:  # what earlier runs left out stays recorded
+        record["omitted"] = list(record.get("omitted", [])) + [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
+    else:
+        record["omitted"] = [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
+    report = {"sections": [], "omitted": len(record["omitted"]), "redone": len(todo)}
     for k, (sec, (units, left, used)) in enumerate(zip(sections, results)):
         before = len(sec["units"])
         sec["units"] = [u if "facts" in u else dict(u, facts=cd.facts_in(u["text"], record["facts"])) for u in units]

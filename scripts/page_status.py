@@ -95,11 +95,11 @@ def gaps(step, record, report):
     return [] if not report.get("unread") else [f"{report['unread']} readings unread"]
 
 
-def execute(step, page_md, record, call, model):
+def execute(step, page_md, record, call, model, repair=False):
     if step == "fold":
         return cp.run(page_md, record, call)
     if step == "tidy":
-        return td.run(record, call)
+        return td.run(record, call, only_problems=repair)  # a repeat run only redoes the sections that still have a problem
     if step == "translate":
         title = next((l[6:].strip().strip("\"'") for l in page_md.splitlines()[:12] if l.startswith("title:")), "")
         if title and record.get("title") != title:
@@ -107,7 +107,7 @@ def execute(step, page_md, record, call, model):
         return tc.run(record, call)
     if step == "review":
         return rv.run(record, call, model)
-    return kr.run(record, call, model)
+    return kr.run(record, call, model, only_problems=repair)
 
 
 def run_page(page, call, model="", max_steps=12, root=Path(".")):
@@ -122,7 +122,7 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         if step is None:
             break
         try:
-            record, report = execute(step, page_md, record, call, model)
+            record, report = execute(step, page_md, record, call, model, repair=step in status)
         except cp.WriterUnavailable as e:  # the gateway model stays overloaded: wait, do not count an attempt
             prev = status.get(step, {})
             status[step] = {"state": "waiting", "attempts": prev.get("attempts", 0), "gaps": [str(e)[:120]],
@@ -161,8 +161,9 @@ def retry(page, steps, root=Path(".")):
     """Forgets the state of the given steps (attempts used up, gaps accepted) so the next run does them again."""
     st_path = root / STATUS / f"{page}.json"
     status = load(st_path, {})
-    for step in steps:
-        status.pop(step, None)
+    for step in steps:  # kept as a marker: the next run of the step is a repair that redoes only what is wrong
+        status[step] = {"state": "forgotten", "attempts": 0, "gaps": [], "input": None, "after": None,
+                        "model": status.get(step, {}).get("model", "")}
     save(st_path, status)
     return status
 

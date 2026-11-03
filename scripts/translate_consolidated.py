@@ -127,17 +127,16 @@ def run(record, call, tries=MAX_TRIES, only_missing=True):
                 u.pop("zh")
     sections = [s for s in record["sections"] if not only_missing or not all(u.get("zh") for u in s["units"])]
     started = time.time()
+    wanted = [[u for u in s["units"] if not only_missing or not u.get("zh")] for s in sections]  # only the sentences that lack Chinese
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
-        results = list(pool.map(lambda s: translate_section(call, s["title"], [u["text"] for u in s["units"]], tries),
-                                sections))
-    for sec, (zh, left, used) in zip(sections, results):
-        for unit, line in zip(sec["units"], zh):
+        results = list(pool.map(lambda sw: translate_section(call, sw[0]["title"], [u["text"] for u in sw[1]], tries),
+                                zip(sections, wanted)))
+    for sec, units, (zh, left, used) in zip(sections, wanted, results):
+        for unit, line in zip(units, zh):
             unit["zh"] = line
-        if not zh:
-            for unit in sec["units"]:
-                unit.pop("zh", None)
-        report["sections"].append({"section": sec["title"], "tries": used, "translated": bool(zh), "problems": left})
-        print(f"[translate] {sec['title']}: {used} tries, {'ok' if zh else 'NOT TRANSLATED'}, "
+        report["sections"].append({"section": sec["title"], "tries": used, "translated": bool(zh), "problems": left,
+                                   "sentences": len(units)})
+        print(f"[translate] {sec['title']}: {len(units)} sentences, {used} tries, {'ok' if zh else 'NOT TRANSLATED'}, "
               f"{len(left)} problems", flush=True)
     report["title_problems"] = translate_titles(call, record, tries)
     print(f"[translate] headings: {'ok' if not report['title_problems'] else 'NOT TRANSLATED'}", flush=True)

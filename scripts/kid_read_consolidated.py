@@ -12,6 +12,7 @@ the term really stands in the sentence it names.
 Usage (in the data checkout): kid_read_consolidated.py <record.json> [--model ID] [--report FILE]
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -64,34 +65,51 @@ def ask(call, lang, title, texts, tries=cp.MAX_TRIES):
     return None
 
 
-def run(record, call, model="", tries=cp.MAX_TRIES):
+def run(record, call, model="", tries=cp.MAX_TRIES, only_problems=False):
+    """Questions per section and language. With only_problems, a (section, language) is asked again only when one of
+    its questions went stale (its sentence is gone, or a Chinese question is in colloquial Cantonese) or its sentences
+    changed since it was read (`record["kid_read"]` keeps a fingerprint per section and language); the rest stay."""
     known = {t.lower() for t in record.get("glossary", {})}
-    jobs = []
+    old, prev = record.get("questions", []), record.get("kid_read")
+    texts_of = {sec["title"]: [u["text"] for u in sec["units"]] for sec in record["sections"]}
+    stale = {(q["section"], q["lang"]) for q in old
+             if q["sentence"] not in texts_of.get(q["section"], []) or (q["lang"] == "zh" and cp.cantonese(q["question"]))}
+    jobs, fingerprints = [], {}
     for s, sec in enumerate(record["sections"]):
         for lang in LANGS:
             units = sec["units"]
             if lang == "zh" and not all(u.get("zh") for u in units):
                 continue
             texts = [MARK.sub("", u["zh"]) if lang == "zh" else u["text"] for u in units]
+            key = f"{sec['title']}|{lang}"
+            fingerprints[key] = hashlib.sha256("\n".join(texts).encode()).hexdigest()[:12]
+            if only_problems and old and (sec["title"], lang) not in stale and (prev is None or prev.get(key) == fingerprints[key]):
+                continue  # still good: not asked again
             jobs.append((s, lang, texts))
+    redo = {(record["sections"][s]["title"], lang) for s, lang, _ in jobs}
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
         results = list(pool.map(lambda j: ask(call, j[1], record["sections"][j[0]]["title"], j[2], tries), jobs))
-    questions, seen, unread = [], set(), 0
+    kept = [q for q in old if (q["section"], q["lang"]) not in redo] if only_problems else []
+    questions, seen, unread = [], {(q["lang"], q["term"].lower()) for q in kept}, 0
+    questions.extend(kept)
     for (s, lang, texts), got in zip(jobs, results):
         if got is None:
             unread += 1
+            fingerprints.pop(f"{record['sections'][s]['title']}|{lang}", None)  # not read: ask again next time
             continue
         for n, term, question in got:
             key = (lang, term.lower())
             if key in seen or term.lower() in known:
                 continue
             seen.add(key)
-            questions.append({"id": f"kid-{len(questions) + 1}", "lang": lang, "applies_to": [lang], "term": term,
+            questions.append({"id": "", "lang": lang, "applies_to": [lang], "term": term,
                               "question": question, "section": record["sections"][s]["title"],
                               "sentence": record["sections"][s]["units"][n - 1]["text"], "asked_by": "kid-reader",
                               "judged_by": model, "status": "open", "answer": None})
-    record["questions"] = questions
-    return record, {"questions": len(questions), "unread": unread,
+    for i, q in enumerate(questions, 1):
+        q["id"] = f"kid-{i}"
+    record["questions"], record["kid_read"] = questions, fingerprints
+    return record, {"questions": len(questions), "unread": unread, "asked_again": len(jobs),
                     "by_lang": {l: sum(q["lang"] == l for q in questions) for l in LANGS},
                     "terms": [(q["lang"], q["term"]) for q in questions]}
 

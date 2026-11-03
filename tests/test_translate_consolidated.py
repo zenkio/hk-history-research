@@ -108,3 +108,17 @@ def test_page_and_section_titles_are_translated_checked_and_not_asked_twice():
     assert rec["title_zh"] == "⟦北京條約⟧" and rec["sections"][1]["title_zh"] == "後果"
     assert "Cantonese" in calls[1]  # the first answer was sent back
     assert tc.translate_titles(lambda s, p: 1 / 0, rec) == []  # nothing missing: no call
+
+
+def test_only_the_sentences_without_chinese_are_sent_to_the_translator():
+    import translate_consolidated as tc
+    rec = {"sections": [{"title": "S", "units": [{"text": "One.", "zh": "一。"}, {"text": "Two.", "zh": "佢係二。"},
+                                                 {"text": "Three."}]}]}
+    seen = []
+
+    def call(system, prompt):
+        seen.append(prompt)
+        return "[1] 二。\n[2] 三。"
+    tc.run(rec, call)
+    assert "Two." in seen[0] and "Three." in seen[0] and "One." not in seen[0]
+    assert [u["zh"] for u in rec["sections"][0]["units"]] == ["一。", "二。", "三。"]

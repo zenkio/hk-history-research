@@ -41,3 +41,22 @@ def test_a_chinese_question_in_colloquial_cantonese_is_never_kept():
     ans = "Q [1] | 九龍 | 九龍割讓究係英國要求抑或中國主動提議？\nQ [2] | 義律 | 義律是誰？"
     got = kr.ask(lambda s, p: ans, "zh", "S", texts, tries=2)
     assert got == [(2, "義律", "義律是誰？")]
+
+
+def test_a_repair_run_asks_again_only_where_a_question_went_stale():
+    rec = record()
+    rec["sections"].append({"title": "Other", "units": [{"text": "Peace came.", "zh": "和平來臨。", "by": ["A"]}]})
+    kr.run(rec, lambda s, p: "NONE" if ("Peace" in p or "和平" in p) else kid(s, p), "M")
+    first = [q["id"] for q in rec["questions"] if q["section"] == "Other"]
+    for q in rec["questions"]:
+        if q["lang"] == "zh" and q["term"] == "行館":
+            q["question"] = "行館係咩？"  # colloquial Cantonese: stale
+    asked = []
+
+    def call(system, prompt):
+        asked.append(prompt)
+        return "NONE" if ("Peace" in prompt or "和平" in prompt) else kid(system, prompt)
+    rec, rep = kr.run(rec, call, "M", only_problems=True)
+    assert len(asked) == 1 and "What happened" in asked[0] and rep["asked_again"] == 1
+    assert not any(kr.cp.cantonese(q["question"]) for q in rec["questions"] if q["lang"] == "zh")
+    assert len(rec["questions"]) == len({q["id"] for q in rec["questions"]})

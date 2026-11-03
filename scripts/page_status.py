@@ -23,6 +23,7 @@ from pathlib import Path
 import consolidate_pipeline as cp
 import kid_read_consolidated as kr
 import quality_gate as qg
+import ai_verify as av
 import review_consolidated as rv
 import tidy_consolidated as td
 import translate_consolidated as tc
@@ -130,9 +131,14 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         step = next_step(status, page_md)
         if step is None:  # every step is current: the quality gate looks for defects and starts a repair round
             findings = qg.check(record)
+            ai = None
+            if not findings and call is not None:  # the program checks are clean: the AI proofreader reads what rules cannot judge
+                findings, ai = av.verify(record, call, model)
+                av.apply(record, findings)
+                save(rec_path, record)
             gate = status.get("gate", {})
             rounds = gate.get("rounds", 0)
-            status["gate"] = {"rounds": rounds, "counts": qg.summary(findings), "findings": findings[:25],
+            status["gate"] = {"rounds": rounds, "counts": qg.summary(findings), "findings": findings[:25], "ai": ai,
                               "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
             # a step already accepted with gaps was given up on: its defects wait in the issue list, not another round
             fixable = [s for s in qg.steps_to_repair(findings) if status.get(s, {}).get("state") != "accepted"]

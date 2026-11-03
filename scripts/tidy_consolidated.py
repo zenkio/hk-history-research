@@ -94,10 +94,15 @@ def rejoin_fragments(units):
     return out
 
 
-def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None):
+def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None, flagged=()):
     """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences.
     Repeats that fall in different chunks are tidied together afterwards (the Zongli Yamen sentence stood twice)."""
     units = rejoin_fragments(units)
+    if flagged:  # the proofreader pointed at sentences (indexes of the units before this tidy): one chunk, with a hint
+        hint = [(f"C{p[0] + 1} and C{p[1] + 1} tell the same point in different words: make them ONE line tagged with both"
+                 if len(p) == 2 else f"C{p[0] + 1} is hard to follow: say it clearly using only what the sentences say")
+                for p in flagged if all(i < len(units) for i in p)]
+        return tidy_chunk(call, title, units, tries, low_trust, omitted, dups, hint or None)
     if len(units) <= CHUNK + 2:
         return tidy_chunk(call, title, units, tries, low_trust, omitted, dups)
     out, left, used = [], [], 0
@@ -157,10 +162,10 @@ def near_duplicates(texts):
     return pairs
 
 
-def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None):
+def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None, hint=None):
     if len(units) < 2:
         return units, [], 0
-    feedback, problems, best = None, [], None
+    feedback, problems, best = hint, [], None
     for n in range(1, tries + 1):
         try:
             raw = call(SYSTEM, prompt(title, units, low_trust, feedback))
@@ -217,14 +222,16 @@ def carry(merged, old):
 def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, only_problems=False):
     """With only_problems, a section is tidied again only if it still tells a point twice; the others stay as they are."""
     sections = record["sections"]
+    flags = record.pop("review_flags", {})  # sentences the AI proofreader pointed at, by section title
     todo = {k for k, s in enumerate(sections)
-            if not only_problems or near_duplicates([u["text"] for u in s["units"]])
+            if not only_problems or s["title"] in flags or near_duplicates([u["text"] for u in s["units"]])
             or any(bad_sentence(u["text"]) for u in s["units"])}
     gone = [[] for _ in sections]  # per section, so the parallel workers never share a list
     twice = [[] for _ in sections]
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
         results = list(pool.map(lambda k: tidy_section(call, sections[k]["title"], sections[k]["units"], tries,
-                                                       low_trust, gone[k], twice[k]) if k in todo
+                                                       low_trust, gone[k], twice[k],
+                                                       flags.get(sections[k]["title"], ())) if k in todo
                                 else (sections[k]["units"], [], 0), range(len(sections))))
     if only_problems:  # what earlier runs left out stays recorded
         record["omitted"] = list(record.get("omitted", [])) + [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]

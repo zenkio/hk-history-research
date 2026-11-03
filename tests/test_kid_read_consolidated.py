@@ -33,3 +33,11 @@ def test_at_most_five_questions_a_section_and_the_level_is_named():
     many = "\n".join(f"Q [1] | {w} | What is {w}?" for w in ["Alpha", "beta", "gamma", "delta", "epsilon", "zeta"])
     got = kr.ask(lambda s, p: asked.append(p) or many, "en", "S", texts)
     assert len(got) == kr.MAX_PER_SECTION and "B1" in asked[0]
+
+
+def test_a_chinese_question_in_colloquial_cantonese_is_never_kept():
+    """Zenkio 2026-11-03: '九龍割讓究係英國要求抑或中國主動提議' is Cantonese, not written Chinese."""
+    texts = ["九龍被割讓。", "義律到達。"]
+    ans = "Q [1] | 九龍 | 九龍割讓究係英國要求抑或中國主動提議？\nQ [2] | 義律 | 義律是誰？"
+    got = kr.ask(lambda s, p: ans, "zh", "S", texts, tries=2)
+    assert got == [(2, "義律", "義律是誰？")]

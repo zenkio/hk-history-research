@@ -79,3 +79,20 @@ def test_an_old_chinese_sentence_with_an_english_month_is_translated_again():
                                                   "zh": "主權於1 July 1997移交。"}]}]}
     rec, rep = tc.run(rec, good)
     assert rec["sections"][0]["units"][0]["zh"] == "主權於1997年7月1日移交。"
+
+
+def test_colloquial_cantonese_is_a_problem_but_written_chinese_with_關係_is_not():
+    import consolidate_pipeline as cp
+    assert "究係" in cp.cantonese("九龍割讓究係英國要求抑或中國主動提議") and "邊個" in cp.cantonese("趙紫陽係邊個？")
+    assert cp.cantonese("兩國關係與聯係，是誰簽署的？") == []
+    import translate_consolidated as tc
+    out, problems = tc.check("[1] 佢係首相。", ["He was Prime Minister."])
+    assert any("Cantonese" in p for p in problems)
+
+
+def test_an_old_cantonese_translation_is_translated_again():
+    import translate_consolidated as tc
+    rec = {"sections": [{"title": "S", "units": [{"text": "He was Prime Minister.", "zh": "佢係首相。"}]}]}
+    calls = []
+    rec, _ = tc.run(rec, lambda s, p: calls.append(1) or "[1] 他是首相。")
+    assert calls and rec["sections"][0]["units"][0]["zh"] == "他是首相。"

@@ -38,7 +38,7 @@ def prompt(lang, title, texts):
               "place you would not know, a custom or idea nobody explains, or a claim that makes you wonder why. "
               "Skip everyday words and well-known places. One per line, in exactly this form:",
               f"Q [n] | the term, copied exactly from sentence n | your question, in {LANGS[lang]}"
-              + (" (written standard Chinese, not Cantonese colloquial words such as 係咩)" if lang == "zh" else ""),
+              + (" " + cp.WRITTEN_CHINESE if lang == "zh" else ""),
               "If you understand everything, answer `NONE`. Output only those lines."]
     return "\n".join(lines)
 
@@ -55,7 +55,11 @@ def ask(call, lang, title, texts, tries=cp.MAX_TRIES):
         found = [m.groups() for m in map(LINE.match, raw.splitlines()) if m]
         got = [(int(n), t.strip("「」\"' "), q) for n, t, q in found
                if 1 <= int(n) <= len(texts) and t.strip("「」\"' ") in texts[int(n) - 1]]
-        if got:
+        slang = [g for g in got if lang == "zh" and cp.cantonese(g[2])]
+        got = [g for g in got if g not in slang]  # a question in colloquial Cantonese is never kept
+        if got and not slang:
+            return got[:MAX_PER_SECTION]
+        if got and slang and _ == tries - 1:
             return got[:MAX_PER_SECTION]
     return None
 

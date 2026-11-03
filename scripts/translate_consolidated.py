@@ -37,7 +37,7 @@ def prompt(title, texts, feedback=None):
              "`[n] translation`, with the same numbers, in the same order. No other text.", "Wrap every proper name in "
              "⟦ ⟧ as the Chinese proper-name mark (專名號): names of people, places, countries, dynasties and "
              "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Not titles of documents, not common words.", "Keep every figure and "
-             "date as in the English. Do not merge or split sentences.", ""]
+             "date as in the English. Do not merge or split sentences.", cp.WRITTEN_CHINESE, ""]
     lines += [f"[{i}] {t}" for i, t in enumerate(texts, 1)]
     if feedback:
         lines += ["", "Your previous answer had these problems; fix them:"] + [f"- {f}" for f in feedback]
@@ -64,6 +64,9 @@ def check(raw, texts):
             problems.append(f"[{i}] has an unmatched or nested ⟦ ⟧")
         if not CJK.search(zh):
             problems.append(f"[{i}] is not Chinese")
+        slang = cp.cantonese(zh)
+        if slang:
+            problems.append(f"[{i}] uses colloquial Cantonese ({', '.join(slang[:3])}): write standard written Chinese")
         left = ENGLISH_WORD.findall(zh) + MONTH.findall(zh)  # "1 July 1997" must read 1997年7月1日
         if left:
             problems.append(f"[{i}] left English words untranslated: {', '.join(left[:3])}")
@@ -96,7 +99,7 @@ def run(record, call, tries=MAX_TRIES, only_missing=True):
     report = {"sections": []}
     for sec in record["sections"]:  # a Chinese sentence from before the English-month check is translated again
         for u in sec["units"]:
-            if u.get("zh") and MONTH.search(u["zh"]):
+            if u.get("zh") and (MONTH.search(u["zh"]) or cp.cantonese(u["zh"])):
                 u.pop("zh")
     sections = [s for s in record["sections"] if not only_missing or not all(u.get("zh") for u in s["units"])]
     started = time.time()

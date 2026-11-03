@@ -36,6 +36,18 @@ SYSTEM = ("You merge texts about the same history topic into one flowing passage
 LINE = re.compile(r"^\s*\[([CN0-9,\s]+)\]\s*(.+?)\s*$")
 
 
+# Colloquial Cantonese written down (owner 2026-11-03: "究係" in a reader question): the Chinese text must be written
+# standard Chinese. 係 alone is fine inside 關係, 聯係, 體係; the other characters have no written-Chinese use.
+CANTONESE = re.compile(r"[嘅咗唔咩哋冇喺嚟畀啲嘢咁佢嗰哩]|(?<![關聯體])係|究係|邊個|邊度|點樣|點解|而家|[做行住睇講食]緊")
+WRITTEN_CHINESE = ("Write standard written Chinese (書面語: 是, 的, 什麼, 誰, 他, 沒有, 為什麼), never colloquial "
+                   "Cantonese such as 係, 嘅, 咗, 唔, 咩, 佢, 哋, 冇, 究係, 邊個.")
+
+
+def cantonese(text):
+    """The colloquial Cantonese words found in a Chinese text (empty = written Chinese)."""
+    return sorted({m.group(0) for m in CANTONESE.finditer(text)})
+
+
 class WriterUnavailable(Exception):
     pass
 

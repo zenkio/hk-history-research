@@ -64,12 +64,23 @@ SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9“\"(\[{*])")
 HEAD = re.compile(r"^\*\*[^*]+\*\*\s*")
 
 
+# "(r. 1821–1850)" and "c. 1840" are not sentence ends (owner 2026-11-03: a sentence was cut at "r.")
+ABBREVIATION_END = re.compile(r"(?:^|[\s(\[])(?:r|c|ca|b|d|fl|Mr|Mrs|Dr|St|No|Nos|vs|cf|approx|e\.g|i\.e)\.$")
+
+
 def split_sentences(text):
     """(heading, [sentences]) of one narrative paragraph; shared with consolidate_drafts so that
     `sentence_ai[paragraph][sentence]` lines up with what is rendered."""
     m = HEAD.match(text)
     head = m.group(0) if m else ""
-    return head, [x for x in SENTENCE_END.split(text[len(head):]) if x.strip()]
+    body, parts, last = text[len(head):], [], 0
+    for match in SENTENCE_END.finditer(body):
+        if ABBREVIATION_END.search(body[last:match.start()]):
+            continue
+        parts.append(body[last:match.start()])
+        last = match.end()
+    parts.append(body[last:])
+    return head, [x for x in parts if x.strip()]
 
 
 NAME_MARK = re.compile(r"⟦([^⟦⟧]+)⟧")

@@ -64,8 +64,23 @@ def prompt(title, units, low_trust, feedback=None):
 CHUNK = 7  # a long section is tidied in runs of this many neighbouring sentences: the AI drops sentences from long lists
 
 
+def rejoin_fragments(units):
+    """A sentence cut inside brackets or after an abbreviation ("(r. ") is joined to the next one again."""
+    out = []
+    for u in units:
+        if out and (out[-1]["text"].count("(") > out[-1]["text"].count(")")
+                    or ABBREV.search(out[-1]["text"])):
+            a = out.pop()
+            u = {"text": a["text"].rstrip() + " " + u["text"], "by": sorted(set(a.get("by", [])) | set(u.get("by", []))),
+                 "facts": sorted(set(a.get("facts", [])) | set(u.get("facts", [])))}
+        out.append(u)
+    return out
+
+
 def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None):
-    """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences."""
+    """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences.
+    Repeats that fall in different chunks are tidied together afterwards (the Zongli Yamen sentence stood twice)."""
+    units = rejoin_fragments(units)
     if len(units) <= CHUNK + 2:
         return tidy_chunk(call, title, units, tries, low_trust, omitted, dups)
     out, left, used = [], [], 0
@@ -74,6 +89,23 @@ def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, om
         out += chunk
         left += problems
         used = max(used, n)
+    pairs = near_duplicates([u["text"] for u in out])
+    if pairs:
+        if dups is not None:
+            del dups[:]  # recounted below on the whole section
+        for i, j in pairs[:4]:  # tidy each repeating pair together; the merged line stays where the first stood
+            if i >= len(out) or j >= len(out) or i == j:
+                continue
+            merged, problems, n = tidy_chunk(call, title, [out[i], out[j]], tries, low_trust, omitted, dups)
+            if not problems and len(merged) == 1:
+                out[i] = merged[0]
+                out[j] = None
+                out = [u for u in out if u is not None]
+                break  # indexes moved: the next pair is found again below
+        pairs = near_duplicates([u["text"] for u in out])
+        if dups is not None:
+            del dups[:]
+            dups += [out[i]["text"][:60] for i, _ in pairs]
     return out, left, used
 
 
@@ -82,6 +114,7 @@ STOP = set("the a an of to and in on by for was were is are it its this that wit
 SPELL = {"tientsin": "tianjin", "peking": "beijing", "nanking": "nanjing", "taels": "tael", "canton": "guangzhou"}
 DUP_SHARE = 0.5  # share of the shorter sentence's content words that the other one has too
 DUP_MIN = 3
+ABBREV = re.compile(r"(?:^|[\s(\[])(?:r|c|ca|b|d|fl|Mr|Mrs|Dr|St|No|vs|cf|approx)\.\s*$")
 
 
 def keywords(text):

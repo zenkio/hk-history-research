@@ -145,3 +145,34 @@ def test_a_repair_run_tidies_only_the_sections_that_still_repeat_a_point():
     rec, report = td.run(rec, call, only_problems=True)
     assert len(asked) == 1 and "Dirty" in asked[0] and report["redone"] == 1
     assert [u["text"] for u in rec["sections"][0]["units"]] == [u["text"] for u in clean] and len(rec["sections"][1]["units"]) == 1
+
+
+def test_a_sentence_cut_at_an_abbreviation_is_joined_again_and_not_cut_in_the_first_place():
+    import tidy_consolidated as td
+    import render_consolidated_facts as r
+    text = "The Qing Dynasty under the Xianfeng Emperor (r. 1850–1861) was weak. Prince Gong set up the office."
+    assert r.split_sentences(text)[1] == ["The Qing Dynasty under the Xianfeng Emperor (r. 1850–1861) was weak.", "Prince Gong set up the office."]
+    cut = [{"text": "The Qing Dynasty under the Xianfeng Emperor (r. ", "by": ["A"]}, {"text": "1850–1861) was weak.", "by": ["B"]}]
+    assert [u["text"] for u in td.rejoin_fragments(cut)] == ["The Qing Dynasty under the Xianfeng Emperor (r.  1850–1861) was weak.".replace("  ", " ")]
+    assert td.rejoin_fragments(cut)[0]["by"] == ["A", "B"]
+
+
+def test_repeats_that_fall_in_different_chunks_are_tidied_together():
+    import tidy_consolidated as td
+    texts = ["Lin Zexu arrived in Canton in March 1839.", "Elliot ordered the merchants to surrender opium.",
+             "The Thirteen Factories were blockaded for weeks.", "Parliament debated an expedition in April 1840.",
+             "Palmerston wrote instructions to the fleet.", "Chusan fell to the British in July 1840.",
+             "Qishan negotiated at Taku before the Chuenpi talks."] + \
+            ["Prince Gong established the Zongli Yamen in 1861, beginning the Tongzhi Restoration.",
+             "Another unrelated point about trade tariffs.", "More on opium chests and silver.",
+             "Prince Gong set up the Zongli Yamen in 1861."]
+    units = [{"text": x, "by": ["A"]} for x in texts]
+
+    def call(system, prompt):
+        lines = [l for l in prompt.splitlines() if l.startswith("C") and ". " in l]
+        if len(lines) == 2 and "Zongli" in prompt:
+            return "[C1,C2] Prince Gong established the Zongli Yamen in 1861, beginning the Tongzhi Restoration."
+        return "\n".join(f"[C{i}] " + l.split(". ", 1)[1].rsplit(" (backed", 1)[0] for i, l in enumerate(lines, 1))
+    dups = []
+    out, problems, _ = td.tidy_section(call, "S", units, 2, [], None, dups)
+    assert len(out) == len(texts) - 1 and dups == [] and sum("Zongli" in u["text"] for u in out) == 1

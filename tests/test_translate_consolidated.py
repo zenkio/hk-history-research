@@ -96,3 +96,15 @@ def test_an_old_cantonese_translation_is_translated_again():
     calls = []
     rec, _ = tc.run(rec, lambda s, p: calls.append(1) or "[1] 他是首相。")
     assert calls and rec["sections"][0]["units"][0]["zh"] == "他是首相。"
+
+
+def test_page_and_section_titles_are_translated_checked_and_not_asked_twice():
+    import translate_consolidated as tc
+    rec = {"title": "Convention of Peking", "sections": [{"title": "What happened", "units": []},
+                                                         {"title": "Consequences", "units": []}]}
+    answers = iter(["[1] 佢係北京條約\n[2] 事件經過\n[3] 後果", "[1] ⟦北京條約⟧\n[2] 事件經過\n[3] 後果"])
+    calls = []
+    assert tc.translate_titles(lambda s, p: calls.append(p) or next(answers), rec) == []
+    assert rec["title_zh"] == "⟦北京條約⟧" and rec["sections"][1]["title_zh"] == "後果"
+    assert "Cantonese" in calls[1]  # the first answer was sent back
+    assert tc.translate_titles(lambda s, p: 1 / 0, rec) == []  # nothing missing: no call

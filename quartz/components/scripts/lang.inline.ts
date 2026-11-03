@@ -13,6 +13,15 @@ function stored(): string {
 
 function apply(lang: string) {
   document.documentElement.setAttribute("data-lang", lang)
+  // the page title (heading and browser tab) follows the language when the page carries both titles
+  const names = document.querySelector<HTMLElement>(".page-title-i18n")
+  const title = names?.dataset[lang === "en" ? "en" : "zh"]
+  if (title) {
+    const h1 = document.querySelector<HTMLElement>(".article-title, article h1")
+    if (h1) h1.textContent = title
+    const other = names?.dataset[lang === "en" ? "zh" : "en"]
+    document.title = other && document.title.includes(other) ? document.title.replace(other, title) : document.title
+  }
   document.querySelectorAll<HTMLElement>(".lang-switch button").forEach((b) => {
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang))
   })

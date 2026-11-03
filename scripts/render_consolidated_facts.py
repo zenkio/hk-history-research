@@ -145,11 +145,12 @@ def both(english, chinese, translated):
             if translated else english)
 
 
-def heading(number, title, translated):
+def heading(number, title, translated, title_zh=None):
     """Section heading; in both languages when the section has a Chinese version."""
-    if not (translated and title in ZH_TITLES):
+    title_zh = title_zh or ZH_TITLES.get(title)
+    if not (translated and title_zh):
         return f"**{number}. {title}** "
-    return (f'<strong>{number}. <span class="lang-zh">{ZH_TITLES[title]}</span>'
+    return (f'<strong>{number}. <span class="lang-zh">{esc(title_zh)}</span>'
             f'<span class="lang-en" lang="en">{esc(title)}</span></strong> ')
 
 
@@ -167,7 +168,7 @@ def render(record):
     ai = record.get("sentence_ai", [])
     sf = record.get("sentence_facts", [])
     if record.get("sections"):  # written by the fold pipeline: exact sentence units with their backers
-        narrative = [paragraph_from_units(heading(i + 1, sec["title"], all(u.get("zh") for u in sec["units"])),
+        narrative = [paragraph_from_units(heading(i + 1, sec["title"], all(u.get("zh") for u in sec["units"]), sec.get("title_zh")),
                                          sec["units"], facts)
                      for i, sec in enumerate(record["sections"])]
     else:
@@ -185,6 +186,8 @@ def render(record):
     return "\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
+        *([f'<span class="page-title-i18n" hidden data-en="{esc(record["title"])}" data-zh="{esc(record["title_zh"])}"></span>']
+          if record.get("title") and record.get("title_zh") else []),
         *([ '<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="zh">中文</button>'
            '<button type="button" data-lang="en">English</button></span>'] if has_zh else []),
         *([ '<label class="flag-switch"><input type="checkbox"> '

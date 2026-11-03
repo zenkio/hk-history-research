@@ -88,7 +88,8 @@ def gaps(step, record, report):
         return [s["section"] for s in report["sections"] if s["fallback"]] + \
             [f"{s['section']} (repeats left: {s['repeats']})" for s in report["sections"] if s.get("repeats")]
     if step == "translate":
-        return [f"{s['title']}" for s in record["sections"] if not all(u.get("zh") for u in s["units"])]
+        return [f"{s['title']}" for s in record["sections"] if not all(u.get("zh") for u in s["units"])] + \
+            [f"headings: {p}" for p in report.get("title_problems", [])[:3]]
     if step == "review":
         return [] if report.get("reviewed") else [f"{report.get('unreviewed')} sentences not reviewed"]
     return [] if not report.get("unread") else [f"{report['unread']} readings unread"]
@@ -100,6 +101,9 @@ def execute(step, page_md, record, call, model):
     if step == "tidy":
         return td.run(record, call)
     if step == "translate":
+        title = next((l[6:].strip().strip("\"'") for l in page_md.splitlines()[:12] if l.startswith("title:")), "")
+        if title and record.get("title") != title:
+            record["title"], _ = title, record.pop("title_zh", None)
         return tc.run(record, call)
     if step == "review":
         return rv.run(record, call, model)

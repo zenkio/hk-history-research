@@ -82,3 +82,12 @@ def test_sections_with_units_are_rendered_exactly_with_their_backers(tmp_path):
     assert text.count('<span class="sent') == 2  # the first unit holds two sentences but is one hover span
     assert "<b>Backed by AI:</b> <span translate=\"no\">A</span>, <span translate=\"no\">B</span><br><b>Signed &lt;1842&gt;</b>: <span translate=\"no\">A</span>, <span translate=\"no\">B</span>" in text
     assert "<strong>1. What happened</strong>" in text
+
+
+def test_translated_section_title_and_page_title_are_rendered_for_the_language_switch():
+    import render_consolidated_facts as r
+    assert "後果x" in r.heading(6, "Consequences", True, "後果x") and "當時的中國" in r.heading(4, "China at this time", True)
+    rec = {"facts": [], "title": "Peking", "title_zh": "北京條約",
+           "sections": [{"title": "Consequences", "title_zh": "後果x", "units": [{"text": "E.", "zh": "中。", "by": ["A"]}]}]}
+    html = r.render(rec)
+    assert 'data-zh="北京條約"' in html and 'data-en="Peking"' in html and "後果x" in html

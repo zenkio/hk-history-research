@@ -94,6 +94,30 @@ def translate_section(call, title, texts, tries=MAX_TRIES):
     return [], problems, tries
 
 
+def translate_titles(call, record, tries=MAX_TRIES):
+    """Traditional Chinese for the page title (`record["title"]`) and every section title (owner 2026-11-03:
+    headings are translated too). Stored as record["title_zh"] and section["title_zh"]. [] = done, else the problems."""
+    names = ([record["title"]] if record.get("title") else []) + [s["title"] for s in record["sections"]]
+    have = ([record.get("title_zh")] if record.get("title") else []) + [s.get("title_zh") for s in record["sections"]]
+    if not names or all(h and not cp.cantonese(h) for h in have):
+        return []
+    problems = []
+    for _ in range(tries):
+        try:
+            raw = call(SYSTEM, prompt("Headings of one page", names, problems or None))
+        except cp.WriterUnavailable:
+            problems = ["writer unavailable"]
+            continue
+        out, problems = check(raw, names)
+        if not problems:
+            if record.get("title"):
+                record["title_zh"], out = out[0], out[1:]
+            for sec, zh in zip(record["sections"], out):
+                sec["title_zh"] = zh
+            return []
+    return problems
+
+
 def run(record, call, tries=MAX_TRIES, only_missing=True):
     """Translates the sections that still have an untranslated sentence (owner 2026-10-31: do only what is missing)."""
     report = {"sections": []}
@@ -115,6 +139,8 @@ def run(record, call, tries=MAX_TRIES, only_missing=True):
         report["sections"].append({"section": sec["title"], "tries": used, "translated": bool(zh), "problems": left})
         print(f"[translate] {sec['title']}: {used} tries, {'ok' if zh else 'NOT TRANSLATED'}, "
               f"{len(left)} problems", flush=True)
+    report["title_problems"] = translate_titles(call, record, tries)
+    print(f"[translate] headings: {'ok' if not report['title_problems'] else 'NOT TRANSLATED'}", flush=True)
     print(f"[translate] done in {int(time.time() - started)} s", flush=True)
     return record, report
 

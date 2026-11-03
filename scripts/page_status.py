@@ -22,12 +22,14 @@ from pathlib import Path
 
 import consolidate_pipeline as cp
 import kid_read_consolidated as kr
+import quality_gate as qg
 import review_consolidated as rv
 import tidy_consolidated as td
 import translate_consolidated as tc
 
 STEPS = ["fold", "tidy", "translate", "review", "kidread"]
 MAX_ATTEMPTS = 2
+GATE_ROUNDS = 2  # repair rounds the quality gate may start for one page
 PAGES = Path("content/05_Multi_AI")
 RECORDS = Path("data/consolidated_facts")
 STATUS = Path("data/consolidated_status")
@@ -110,6 +112,13 @@ def execute(step, page_md, record, call, model, repair=False):
     return kr.run(record, call, model, only_problems=repair)
 
 
+def forget(status, steps):
+    """Marks steps to run again; the next run of each is a repair that redoes only what is wrong."""
+    for step in steps:
+        status[step] = {"state": "forgotten", "attempts": 0, "gaps": [], "input": None, "after": None,
+                        "model": status.get(step, {}).get("model", "")}
+
+
 def run_page(page, call, model="", max_steps=12, root=Path(".")):
     """Runs up to max_steps open steps of one page; returns the names of the steps it ran."""
     page_md = (root / PAGES / f"{page}.md").read_text(encoding="utf-8")
@@ -119,7 +128,21 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
     ran = []
     while len(ran) < max_steps:
         step = next_step(status, page_md)
-        if step is None:
+        if step is None:  # every step is current: the quality gate looks for defects and starts a repair round
+            findings = qg.check(record)
+            gate = status.get("gate", {})
+            rounds = gate.get("rounds", 0)
+            status["gate"] = {"rounds": rounds, "counts": qg.summary(findings), "findings": findings[:25],
+                              "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
+            # a step already accepted with gaps was given up on: its defects wait in the issue list, not another round
+            fixable = [s for s in qg.steps_to_repair(findings) if status.get(s, {}).get("state") != "accepted"]
+            if findings and fixable and rounds < GATE_ROUNDS:
+                status["gate"]["rounds"] = rounds + 1
+                forget(status, fixable)
+                print(f"[status] {page}: quality gate round {rounds + 1}: {qg.summary(findings)}", flush=True)
+                continue
+            if not findings:
+                status["gate"]["rounds"] = 0  # clean: a later new defect gets its rounds again
             break
         try:
             record, report = execute(step, page_md, record, call, model, repair=step in status)

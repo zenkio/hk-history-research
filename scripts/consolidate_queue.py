@@ -106,6 +106,9 @@ def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=t
                     record_issue(issues, "gaps", page, step, f"{len(s['gaps'])} gaps: " + "; ".join(s["gaps"][:3]))
                 else:
                     issues[key].update(open=True, last=now())
+        for check, n in (status.get("gate", {}).get("counts") or {}).items():  # defects the gate could not repair
+            keep.add(f"{page}|{check}|quality")
+            record_issue(issues, "quality", page, check, f"{n} finding(s) left after the repair rounds")
         close_issues(issues, page, keep)
         ps.save(root / ISSUES, issues)
         waiting_in_row = waiting_in_row + 1 if any(f"{page}|{s}|waiting" in keep for s in ps.STEPS) else 0
@@ -119,7 +122,7 @@ def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=t
 
 def summary(issues):
     open_ = [e for e in issues.values() if e.get("open")]
-    return {k: sum(1 for e in open_ if e["kind"] == k) for k in ("crash", "waiting", "gaps", "gateway")}
+    return {k: sum(1 for e in open_ if e["kind"] == k) for k in ("crash", "waiting", "gaps", "gateway", "quality")}
 
 
 def main(argv=None):

@@ -88,3 +88,22 @@ def test_time_budget_stops_before_the_next_page(tmp_path, monkeypatch):
     ticks = iter([0, 0, 99999, 99999, 99999, 99999])
     done, _ = cq.run_queue(None, "M", root, minutes=1, clock=lambda: next(ticks))
     assert [p for p, _ in done] == ["a"]
+
+
+def test_defects_the_gate_could_not_repair_become_quality_issues_and_close_when_gone(tmp_path, monkeypatch):
+    root, log = setup(tmp_path, pages=("a",), queue={}), []
+    base = fake_execute(log)
+    bad = {"on": True}
+
+    def execute(step, page_md, record, call, model, repair=False):
+        record, report = base(step, page_md, record, call, model)
+        if step == "translate" and bad["on"]:
+            record["sections"][0]["units"][0]["zh"] = "佢係首相。"
+        return record, report
+    monkeypatch.setattr(ps, "execute", execute)
+    _, issues = cq.run_queue(None, "M", root)
+    assert issues["a|cantonese|quality"]["open"] and cq.summary(issues)["quality"] == 1
+    bad["on"] = False
+    ps.retry("a", ["translate"], root)
+    _, issues = cq.run_queue(None, "M", root)
+    assert not issues["a|cantonese|quality"]["open"]

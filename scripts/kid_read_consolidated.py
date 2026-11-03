@@ -73,7 +73,8 @@ def run(record, call, model="", tries=cp.MAX_TRIES, only_problems=False):
     old, prev = record.get("questions", []), record.get("kid_read")
     texts_of = {sec["title"]: [u["text"] for u in sec["units"]] for sec in record["sections"]}
     stale = {(q["section"], q["lang"]) for q in old
-             if q["sentence"] not in texts_of.get(q["section"], []) or (q["lang"] == "zh" and cp.cantonese(q["question"]))}
+             if q["sentence"] not in texts_of.get(q["section"], []) or (q["lang"] == "zh" and cp.cantonese(q["question"]))
+             or (q["lang"] == "en" and q["term"] not in q["sentence"])}
     jobs, fingerprints = [], {}
     for s, sec in enumerate(record["sections"]):
         for lang in LANGS:

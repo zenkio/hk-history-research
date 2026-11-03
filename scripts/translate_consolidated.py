@@ -27,6 +27,7 @@ CJK = re.compile(r"[一-鿿]")
 ENGLISH_WORD = re.compile(r"\b[a-z]{3,}\b")  # a lower-case English word left untranslated
 MONTH = re.compile(r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b", re.I)
 NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
+END_ZH = ("。", "！", "？", "」", "）", "”", ".", "』")
 MARK = re.compile(r"⟦([^⟦⟧]+)⟧")  # proper-name mark (專名號): the renderer draws these names underlined
 LINE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
 
@@ -123,7 +124,9 @@ def run(record, call, tries=MAX_TRIES, only_missing=True):
     report = {"sections": []}
     for sec in record["sections"]:  # a Chinese sentence from before the English-month check is translated again
         for u in sec["units"]:
-            if u.get("zh") and (MONTH.search(u["zh"]) or cp.cantonese(u["zh"])):
+            zh = u.get("zh")
+            if zh and (MONTH.search(zh) or cp.cantonese(zh) or ENGLISH_WORD.search(MARK.sub("", zh))
+                       or not zh.strip().endswith(END_ZH)):
                 u.pop("zh")
     sections = [s for s in record["sections"] if not only_missing or not all(u.get("zh") for u in s["units"])]
     started = time.time()

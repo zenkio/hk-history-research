@@ -65,7 +65,8 @@ HEAD = re.compile(r"^\*\*[^*]+\*\*\s*")
 
 
 # "(r. 1821–1850)" and "c. 1840" are not sentence ends (owner 2026-11-03: a sentence was cut at "r.")
-ABBREVIATION_END = re.compile(r"(?:^|[\s(\[])(?:r|c|ca|b|d|fl|Mr|Mrs|Dr|St|No|Nos|vs|cf|approx|e\.g|i\.e)\.$")
+ABBREVIATION_END = re.compile(r"(?:^|[\s(\[])(?:Mr|Mrs|Dr|St|No|Nos|vs|cf|approx|e\.g|i\.e)\.$")
+YEAR_ABBREVIATION_END = re.compile(r"(?:^|[\s(\[])(?:r|c|ca|b|d|fl)\.$")  # only before a year: "(r. 1821", "c. 1840"; "Plan B. The" ends a sentence
 
 
 def split_sentences(text):
@@ -75,7 +76,8 @@ def split_sentences(text):
     head = m.group(0) if m else ""
     body, parts, last = text[len(head):], [], 0
     for match in SENTENCE_END.finditer(body):
-        if ABBREVIATION_END.search(body[last:match.start()]):
+        before = body[last:match.start()]
+        if ABBREVIATION_END.search(before) or (YEAR_ABBREVIATION_END.search(before) and body[match.end():match.end() + 1].isdigit()):
             continue
         parts.append(body[last:match.start()])
         last = match.end()

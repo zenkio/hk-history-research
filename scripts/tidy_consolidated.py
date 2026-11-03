@@ -64,6 +64,23 @@ def prompt(title, units, low_trust, feedback=None):
 CHUNK = 7  # a long section is tidied in runs of this many neighbouring sentences: the AI drops sentences from long lists
 
 
+LEAK = re.compile(r"\b(?:AIs?|Nemotron|Gemini|Gemma|ChatGPT)\b")  # words about how the text was made never belong in it
+END_EN = (".", "!", "?", '"', "”", ")", "'", "’")
+MAX_WORDS = 60
+
+
+def bad_sentence(text):
+    """Why a sentence is not fit to show (cut, unfinished, too long, talks about AI), or None."""
+    text = text.strip()
+    if not text.endswith(END_EN) or text.count("(") > text.count(")") or ABBREV.search(text):
+        return "fragment"
+    if len(text.split()) > MAX_WORDS:
+        return "too_long"
+    if LEAK.search(text):
+        return "leaked"
+    return None
+
+
 def rejoin_fragments(units):
     """A sentence cut inside brackets or after an abbreviation ("(r. ") is joined to the next one again."""
     out = []
@@ -114,7 +131,7 @@ STOP = set("the a an of to and in on by for was were is are it its this that wit
 SPELL = {"tientsin": "tianjin", "peking": "beijing", "nanking": "nanjing", "taels": "tael", "canton": "guangzhou"}
 DUP_SHARE = 0.5  # share of the shorter sentence's content words that the other one has too
 DUP_MIN = 3
-ABBREV = re.compile(r"(?:^|[\s(\[])(?:r|c|ca|b|d|fl|Mr|Mrs|Dr|St|No|vs|cf|approx)\.\s*$")
+ABBREV = re.compile(r"(?:^|[\s(\[])(?:Mr|Mrs|Dr|St|No|vs|cf|approx|ca)\.\s*$")  # a sentence cannot end here
 
 
 def keywords(text):
@@ -201,7 +218,8 @@ def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, only_problems=Fal
     """With only_problems, a section is tidied again only if it still tells a point twice; the others stay as they are."""
     sections = record["sections"]
     todo = {k for k, s in enumerate(sections)
-            if not only_problems or near_duplicates([u["text"] for u in s["units"]])}
+            if not only_problems or near_duplicates([u["text"] for u in s["units"]])
+            or any(bad_sentence(u["text"]) for u in s["units"])}
     gone = [[] for _ in sections]  # per section, so the parallel workers never share a list
     twice = [[] for _ in sections]
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:

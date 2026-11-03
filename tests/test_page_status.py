@@ -20,8 +20,9 @@ def fake_execute(log, partial=()):
         if step == "translate":
             if step not in partial:
                 for s in record["sections"]:
+                    s["title_zh"] = "段"
                     for u in s["units"]:
-                        u["zh"] = "中"
+                        u["zh"] = "中。"
             return record, {}
         if step == "review":
             return record, {"reviewed": True}
@@ -67,7 +68,7 @@ def test_steps_done_before_status_files_can_be_adopted_so_they_are_not_run_again
     root, log = setup(tmp_path), []
     (root / "data/consolidated_facts").mkdir(parents=True)
     (root / "data/consolidated_facts/p.json").write_text(json.dumps(
-        {"facts": [], "sections": [{"title": "S", "units": [{"text": "x", "by": ["A"], "zh": "中"}]}]}))
+        {"facts": [], "sections": [{"title": "S", "title_zh": "段", "units": [{"text": "x.", "by": ["A"], "zh": "中。"}]}]}))
     ps.adopt("p", ["fold", "tidy", "translate"], root)
     monkeypatch.setattr(ps, "execute", fake_execute(log))
     assert ps.run_page("p", None, "M", root=root) == ["review", "kidread"]

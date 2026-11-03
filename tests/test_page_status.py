@@ -116,3 +116,31 @@ def test_a_forgotten_step_runs_as_a_repair_but_a_first_run_does_not(tmp_path, mo
     ps.retry("p", ["tidy"], root)
     ps.run_page("p", None, "M", root=root)
     assert seen[0] == ("tidy", True)
+
+
+def test_a_step_left_with_gaps_because_the_model_was_down_does_not_use_up_its_attempts(tmp_path, monkeypatch):
+    # nt-lease-1898, run 36/37: the gateway was overloaded, translate and tidy failed twice and were "accepted"
+    # with the headings untranslated; a down model is not a bad text, so the step stays open for the next run
+    root = setup(tmp_path)
+    good = fake_execute([])
+
+    def down(system, user):
+        raise ps.cp.WriterUnavailable("503")
+
+    def execute(step, page_md, record, call, model, repair=False):
+        if step == "translate":
+            try:
+                call("s", "u")
+            except ps.cp.WriterUnavailable:
+                pass
+            record, report = good(step, page_md, record, call, model)
+            return record, dict(report, partial=True)
+        return good(step, page_md, record, call, model)
+
+    monkeypatch.setattr(ps, "execute", execute)
+    monkeypatch.setattr(ps, "gaps", lambda step, record, report: ["headings: writer unavailable"] if step == "translate" else [])
+    for _ in range(3):
+        ran = ps.run_page("p", down, "M", root=root)
+        assert ran[-1] == "translate"
+    st = json.loads((root / ps.STATUS / "p.json").read_text())
+    assert st["translate"]["state"] == "partial" and st["translate"]["attempts"] == 0

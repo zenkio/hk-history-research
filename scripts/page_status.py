@@ -150,8 +150,17 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
             if not findings:
                 status["gate"]["rounds"] = 0  # clean: a later new defect gets its rounds again
             break
+        overloaded = []
+
+        def counted(system, user, _call=call):  # remembers that the gateway model failed during this step
+            try:
+                return _call(system, user)
+            except cp.WriterUnavailable:
+                overloaded.append(1)
+                raise
         try:
-            record, report = execute(step, page_md, record, call, model, repair=step in status)
+            record, report = execute(step, page_md, record, counted if call is not None else None, model,
+                                     repair=step in status)
         except cp.WriterUnavailable as e:  # the gateway model stays overloaded: wait, do not count an attempt
             prev = status.get(step, {})
             status[step] = {"state": "waiting", "attempts": prev.get("attempts", 0), "gaps": [str(e)[:120]],
@@ -163,6 +172,8 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         left = gaps(step, record, report)
         prev = status.get(step, {})
         attempts = prev.get("attempts", 0) + 1 if prev.get("input") == expected_input(step, status, page_md) else 1
+        if left and overloaded:  # the model was down, not the text bad: this try does not use up the attempts
+            attempts = prev.get("attempts", 0) if prev.get("input") == expected_input(step, status, page_md) else 0
         status[step] = {"state": "partial" if left else "done", "attempts": attempts, "gaps": left[:10], "model": model,
                         "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                         "input": expected_input(step, status, page_md), "after": texts_hash(record)}
@@ -170,6 +181,8 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         save(st_path, status)
         ran.append(step)
         print(f"[status] {page}: {step} -> {status[step]['state']} (attempt {attempts}, {len(left)} gaps)", flush=True)
+        if left and overloaded:  # the gateway is struggling: stop here, the next run goes on
+            break
     save(st_path, status)
     return ran
 

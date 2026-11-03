@@ -84,14 +84,14 @@ jobs:
           MODEL: ${{ inputs.model || 'nvidia/nemotron-3-ultra-550b-a55b:free' }}
         run: |
           set -euo pipefail
-          python3 -u scripts/consolidate_queue.py --model "$MODEL" || true
+          python3 -u scripts/consolidate_queue.py --model "$MODEL" --plan || true
 
       - name: Save results to the private branch
         if: always()
         working-directory: data
         run: |
           set -euo pipefail
-          git add data/consolidated_facts data/consolidated_status
+          git add data/consolidated_facts data/consolidated_status data/consolidated_queue.json
           if git diff --cached --quiet; then echo "nothing was written"; exit 0; fi
           git commit -m "auto: consolidate queue"
           git push origin auto/consolidate-queue

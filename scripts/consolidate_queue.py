@@ -128,6 +128,7 @@ def main(argv=None):
     ap.add_argument("--minutes", type=int)
     ap.add_argument("--max-steps", type=int)
     ap.add_argument("--show", action="store_true")
+    ap.add_argument("--plan", action="store_true", help="afterwards, if the queue is nearly empty, let the AI propose missing topics")
     ap.add_argument("--clear", help="forget the crash record of a page so it runs again")
     args = ap.parse_args(argv)
     root = Path(".")
@@ -146,6 +147,9 @@ def main(argv=None):
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),
                              args.max_steps or queue.get("max_steps", 12))
     print(f"[queue] pages worked: {len(done)}; open issues: {json.dumps(summary(issues))}", flush=True)
+    if args.plan:
+        import plan_queue
+        plan_queue.plan(call, args.model, root)
     return 0
 
 

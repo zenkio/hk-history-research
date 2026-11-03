@@ -85,7 +85,8 @@ def gaps(step, record, report):
     if step == "fold":
         return [f"{f['draft']} / {f['section']}" for f in report.get("folds", []) if f["fallback"]] + report.get("whole_text_problems", [])
     if step == "tidy":
-        return [s["section"] for s in report["sections"] if s["fallback"]]
+        return [s["section"] for s in report["sections"] if s["fallback"]] + \
+            [f"{s['section']} (repeats left: {s['repeats']})" for s in report["sections"] if s.get("repeats")]
     if step == "translate":
         return [f"{s['title']}" for s in record["sections"] if not all(u.get("zh") for u in s["units"])]
     if step == "review":

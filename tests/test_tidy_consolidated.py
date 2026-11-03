@@ -100,3 +100,32 @@ def test_a_chunk_that_fails_as_a_whole_is_tried_again_in_halves():
 
     rec, rep = td.run(record(), call)
     assert [u["text"][:12] for u in rec["sections"][0]["units"]] == ["The drug was", "Another acco", "Lin reported"]
+
+
+def test_near_duplicates_find_the_same_point_told_twice_but_not_different_points():
+    import tidy_consolidated as td
+    same = ["It ended the Second Opium War (1856-1860).", "The Convention of Peking concluded the Second Opium War.",
+            "China ratified the 1858 Treaty of Tientsin and ceded the Kowloon Peninsula south of Boundary Street.",
+            "Britain secured ratification of the 1858 Treaty of Tianjin and the Kowloon Peninsula south of Boundary Street."]
+    assert td.near_duplicates(same) == [(0, 1), (2, 3)]
+    assert td.near_duplicates(["Britain gained Hong Kong Island in 1842.", "Britain gained Kowloon in 1860."]) == []
+
+
+def test_a_merge_that_leaves_the_same_point_twice_is_sent_back_once_then_kept_and_counted():
+    import tidy_consolidated as td
+    units = [{"text": "The Convention of Peking ended the Second Opium War.", "by": ["A"]},
+             {"text": "It ended the Second Opium War in 1860.", "by": ["B"]},
+             {"text": "France signed a separate convention.", "by": ["A"]}]
+    prompts = []
+
+    def call(system, prompt):
+        prompts.append(prompt)
+        if len(prompts) == 1:  # identity: nothing merged
+            return "[C1] The Convention of Peking ended the Second Opium War.\n[C2] It ended the Second Opium War in 1860.\n[C3] France signed a separate convention."
+        return "[C1,C2] The Convention of Peking ended the Second Opium War in 1860.\n[C3] France signed a separate convention."
+    dups = []
+    out, problems, used = td.tidy_chunk(call, "S", units, 2, [], None, dups)
+    assert len(out) == 2 and problems == [] and dups == [] and "tell the same point twice" in prompts[1]
+    dups = []
+    out, _, _ = td.tidy_chunk(lambda s, p: "[C1] The Convention of Peking ended the Second Opium War.\n[C2] It ended the Second Opium War in 1860.\n[C3] France signed a separate convention.", "S", units, 2, [], None, dups)
+    assert len(out) == 3 and dups  # still twice after the tries: kept, and counted so the page status shows it

@@ -17,6 +17,7 @@ Usage (in the data checkout): tidy_consolidated.py <record.json> [--model ID] [-
 import argparse
 import json
 import os
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
@@ -63,23 +64,53 @@ def prompt(title, units, low_trust, feedback=None):
 CHUNK = 7  # a long section is tidied in runs of this many neighbouring sentences: the AI drops sentences from long lists
 
 
-def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None):
+def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None):
     """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences."""
     if len(units) <= CHUNK + 2:
-        return tidy_chunk(call, title, units, tries, low_trust, omitted)
+        return tidy_chunk(call, title, units, tries, low_trust, omitted, dups)
     out, left, used = [], [], 0
     for k in range(0, len(units), CHUNK):
-        chunk, problems, n = tidy_chunk(call, title, units[k:k + CHUNK], tries, low_trust, omitted)
+        chunk, problems, n = tidy_chunk(call, title, units[k:k + CHUNK], tries, low_trust, omitted, dups)
         out += chunk
         left += problems
         used = max(used, n)
     return out, left, used
 
 
-def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None):
+STOP = set("the a an of to and in on by for was were is are it its this that with as at from which after also had has "
+           "have be been or their his her than into over then who they he she not but".split())
+SPELL = {"tientsin": "tianjin", "peking": "beijing", "nanking": "nanjing", "taels": "tael", "canton": "guangzhou"}
+DUP_SHARE = 0.5  # share of the shorter sentence's content words that the other one has too
+DUP_MIN = 3
+
+
+def keywords(text):
+    out = set()
+    for w in re.findall(r"[a-z0-9]+", text.lower()):
+        w = SPELL.get(w, w)
+        if w in STOP:
+            continue
+        if len(w) > 5:
+            w = re.sub(r"(ing|ed|es|s)$", "", w)
+        out.add(w)
+    return out
+
+
+def near_duplicates(texts):
+    """Pairs (i, j) of sentences that share most of their content words: the same point told twice (owner 2026-11-03)."""
+    keys, pairs = [keywords(t) for t in texts], []
+    for i in range(len(texts)):
+        for j in range(i + 1, len(texts)):
+            shared = len(keys[i] & keys[j])
+            if shared >= DUP_MIN and shared / max(1, min(len(keys[i]), len(keys[j]))) >= DUP_SHARE:
+                pairs.append((i, j))
+    return pairs
+
+
+def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None):
     if len(units) < 2:
         return units, [], 0
-    feedback, problems = None, []
+    feedback, problems, best = None, [], None
     for n in range(1, tries + 1):
         try:
             raw = call(SYSTEM, prompt(title, units, low_trust, feedback))
@@ -98,14 +129,30 @@ def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omit
         problems += cp.check_fold(kept + [([i], [], units[i - 1]["text"]) for i in sorted(left_out)], units, [])
         if not problems:
             merged = carry(cp.units_of(kept, units, None), units)
+            twice = near_duplicates([u["text"] for u in merged])
+            if twice and n < tries:  # the same point told twice: send the pairs back (tags name the old sentences)
+                best = (merged, [dict(units[i - 1], reason="only low-trust AIs back it") for i in sorted(left_out)])
+                tags = ["[" + ",".join(f"C{i}" for i in c) + "]" for c, _, _ in kept]
+                feedback = [f"lines {tags[i]} and {tags[j]} still tell the same point twice: make them ONE line tagged "
+                            f"with both (a differing date or figure goes in brackets)" for i, j in twice[:6]
+                            if len(tags) == len(merged)] or ["some lines still repeat the same point: merge them"]
+                continue
             if omitted is not None:
                 omitted += [dict(units[i - 1], reason="only low-trust AIs back it") for i in sorted(left_out)]
+            if twice and dups is not None:
+                dups += [merged[i]["text"][:60] for i, _ in twice]
             return merged, [], n
         feedback = problems[:12]
+    if best:  # a later try broke a check: keep the earlier merge, which only had repeats left
+        if omitted is not None:
+            omitted += best[1]
+        if dups is not None:
+            dups += ["repeat left"]
+        return best[0], [], tries
     if len(units) > 2:  # owner 2026-10-31: a long chunk can fail a check as a whole; its halves often pass
         mid = len(units) // 2
-        first, p1, _ = tidy_chunk(call, title, units[:mid], 2, low_trust, omitted)
-        second, p2, _ = tidy_chunk(call, title, units[mid:], 2, low_trust, omitted)
+        first, p1, _ = tidy_chunk(call, title, units[:mid], 2, low_trust, omitted, dups)
+        second, p2, _ = tidy_chunk(call, title, units[mid:], 2, low_trust, omitted, dups)
         if not (p1 and p2):
             return first + second, p1 + p2, tries
     return units, problems, tries
@@ -120,18 +167,19 @@ def carry(merged, old):
 def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST):
     sections = record["sections"]
     gone = [[] for _ in sections]  # per section, so the parallel workers never share a list
+    twice = [[] for _ in sections]
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
         results = list(pool.map(lambda k: tidy_section(call, sections[k]["title"], sections[k]["units"], tries,
-                                                       low_trust, gone[k]), range(len(sections))))
+                                                       low_trust, gone[k], twice[k]), range(len(sections))))
     record["omitted"] = [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
     report = {"sections": [], "omitted": len(record["omitted"])}
-    for sec, (units, left, used) in zip(sections, results):
+    for k, (sec, (units, left, used)) in enumerate(zip(sections, results)):
         before = len(sec["units"])
         sec["units"] = [u if "facts" in u else dict(u, facts=cd.facts_in(u["text"], record["facts"])) for u in units]
         report["sections"].append({"section": sec["title"], "before": before, "after": len(units), "tries": used,
-                                   "fallback": bool(left), "problems": left})
+                                   "fallback": bool(left), "problems": left, "repeats": len(twice[k])})
         print(f"[tidy] {sec['title']}: {before} -> {len(units)} sentences, {used} tries, "
-              f"{'KEPT AS IT WAS' if left else 'ok'}", flush=True)
+              f"{'KEPT AS IT WAS' if left else 'ok'}, {len(twice[k])} repeats left", flush=True)
     record["narrative"] = [f"**{i + 1}. {s['title']}** " + " ".join(u["text"] for u in s["units"])
                            for i, s in enumerate(sections)]
     record["sentence_ai"] = [[u["by"] for u in s["units"]] for s in sections]

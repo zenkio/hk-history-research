@@ -91,3 +91,12 @@ def test_translated_section_title_and_page_title_are_rendered_for_the_language_s
            "sections": [{"title": "Consequences", "title_zh": "後果x", "units": [{"text": "E.", "zh": "中。", "by": ["A"]}]}]}
     html = r.render(rec)
     assert 'data-zh="北京條約"' in html and 'data-en="Peking"' in html and "後果x" in html
+
+
+def test_name_marks_in_titles_are_drawn_or_dropped_never_shown_as_brackets():
+    # lin-humen, owner 2026-11-04: the Chinese page title showed ⟦林則徐⟧在⟦虎門⟧銷毀鴉片 with the raw marks
+    import render_consolidated_facts as r
+    assert r.heading(1, "S", True, "⟦林則徐⟧在⟦虎門⟧").count("⟦") == 0
+    assert '<span class="pn">林則徐</span>' in r.heading(1, "S", True, "⟦林則徐⟧在⟦虎門⟧")
+    assert r.strip_marks("⟦林則徐⟧在⟦虎門⟧銷毀鴉片") == "林則徐在虎門銷毀鴉片"
+    assert r.strip_marks_left("a ⟦b") == "a b"

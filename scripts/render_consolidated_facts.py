@@ -93,6 +93,16 @@ def mark_names(escaped):
     return NAME_MARK.sub(r'<span class="pn">\1</span>', escaped)
 
 
+def strip_marks_left(page):
+    """Safety net: a mark that no rule above turned into markup (a stray one) never reaches the reader."""
+    return re.sub(r"[⟦⟧]", "", page)
+
+
+def strip_marks(text):
+    """Text for places that cannot hold markup (browser tab, page title): the name mark is dropped, not shown as ⟦ ⟧."""
+    return re.sub(r"[⟦⟧]", "", text)
+
+
 def sentence_span(sentence, facts, models, fact_ids=(), english=None, conflict=None):
     """A sentence, wholly underlined; hovering anywhere in it shows which AIs back it and its facts."""
     inside, parts, last = [], [], 0
@@ -163,7 +173,7 @@ def heading(number, title, translated, title_zh=None):
     title_zh = title_zh or ZH_TITLES.get(title)
     if not (translated and title_zh):
         return f"**{number}. {title}** "
-    return (f'<strong>{number}. <span class="lang-zh">{esc(title_zh)}</span>'
+    return (f'<strong>{number}. <span class="lang-zh">{mark_names(esc(title_zh))}</span>'
             f'<span class="lang-en" lang="en">{esc(title)}</span></strong> ')
 
 
@@ -196,10 +206,10 @@ def render(record):
         items.append(
             f'<li><span class="fact fact-{status}" tabindex="0"><span class="fact-kind">{kind}</span> '
             f'{esc(fact["text"])}{tip(fact)}</span></li>')
-    return "\n".join([
+    return strip_marks_left("\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
-        *([f'<span class="page-title-i18n" hidden data-en="{esc(record["title"])}" data-zh="{esc(record["title_zh"])}"></span>']
+        *([f'<span class="page-title-i18n" hidden data-en="{esc(record["title"])}" data-zh="{esc(strip_marks(record["title_zh"]))}"></span>']
           if record.get("title") and record.get("title_zh") else []),
         *([ '<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="zh">中文</button>'
            '<button type="button" data-lang="en">English</button></span>'] if has_zh else []),
@@ -219,7 +229,7 @@ def render(record):
         + "</span>",
         *narrative,
         f'<details class="cons-facts-box"><summary class="cons-facts-title">All {len(items)} facts and who backs them</summary>',
-        '<ul class="cons-facts">', *items, "</ul>", "</details>", "</div>"])
+        '<ul class="cons-facts">', *items, "</ul>", "</details>", "</div>"]))
 
 
 def build(root=Path(".")):

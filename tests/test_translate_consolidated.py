@@ -105,7 +105,7 @@ def test_page_and_section_titles_are_translated_checked_and_not_asked_twice():
     answers = iter(["[1] 佢係北京條約\n[2] 事件經過\n[3] 後果", "[1] ⟦北京條約⟧\n[2] 事件經過\n[3] 後果"])
     calls = []
     assert tc.translate_titles(lambda s, p: calls.append(p) or next(answers), rec) == []
-    assert rec["title_zh"] == "⟦北京條約⟧" and rec["sections"][1]["title_zh"] == "後果"
+    assert rec["title_zh"] == "《北京條約》" and rec["sections"][1]["title_zh"] == "後果"
     assert "Cantonese" in calls[1]  # the first answer was sent back
     assert tc.translate_titles(lambda s, p: 1 / 0, rec) == []  # nothing missing: no call
 
@@ -122,3 +122,14 @@ def test_only_the_sentences_without_chinese_are_sent_to_the_translator():
     tc.run(rec, call)
     assert "Two." in seen[0] and "Three." in seen[0] and "One." not in seen[0]
     assert [u["zh"] for u in rec["sections"][0]["units"]] == ["一。", "二。", "三。"]
+
+
+def test_treaty_names_get_book_title_marks_not_the_name_underline():
+    # peking-1860, owner 2026-11-04: ⟦北京條約⟧ should not be underlined as a name
+    import translate_consolidated as tc
+    assert tc.fix_marks("⟦北京條約⟧與九龍割讓") == "《北京條約》與九龍割讓"
+    assert tc.fix_marks("《⟦南京條約⟧》") == "《南京條約》"
+    assert tc.fix_marks("⟦林則徐⟧在⟦虎門⟧") == "⟦林則徐⟧在⟦虎門⟧"
+    rec = {"title_zh": "⟦北京條約⟧", "sections": [{"title_zh": "x", "units": [{"text": "a", "zh": "簽訂⟦天津條約⟧。"}]}]}
+    assert tc.normalize_record(rec) == 2 and rec["sections"][0]["units"][0]["zh"] == "簽訂《天津條約》。"
+    assert tc.normalize_record(rec) == 0

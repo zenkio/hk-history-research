@@ -37,7 +37,8 @@ def prompt(title, texts, feedback=None):
              "standard Chinese names for people, places and treaties).", "Output exactly one line per sentence: "
              "`[n] translation`, with the same numbers, in the same order. No other text.", "Wrap every proper name in "
              "⟦ ⟧ as the Chinese proper-name mark (專名號): names of people, places, countries, dynasties and "
-             "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Not titles of documents, not common words.", "Keep every figure and "
+             "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Never mark the name of a treaty, declaration or other document: write it "
+             "in 《 》 instead, e.g. 《南京條約》. Not common words.", "Keep every figure and "
              "date as in the English. Do not merge or split sentences.", cp.WRITTEN_CHINESE, ""]
     lines += [f"[{i}] {t}" for i, t in enumerate(texts, 1)]
     if feedback:
@@ -47,6 +48,33 @@ def prompt(title, texts, feedback=None):
 
 def numbers(text):
     return [n.replace(",", "") for n in NUMBER.findall(text)]
+
+
+DOC_WORDS = r"(?:條約|條例|協定|協議|宣言|聲明|公約|章程|法案|諭令?|詔書?|通商章程)"
+DOC_MARK = re.compile(r"⟦([^⟦⟧]*" + DOC_WORDS + r")⟧")
+
+
+def fix_marks(zh):
+    """Names of documents (treaties, declarations) take the title mark 《 》, not the name underline (owner 2026-11-04:
+    ⟦北京條約⟧ is wrong); a mark inside 《 》 is dropped. Deterministic, so no AI call is needed for it."""
+    zh = re.sub(r"《([^》]*)》", lambda m: "《" + MARK.sub(r"\1", m.group(1)) + "》", zh)
+    return DOC_MARK.sub(r"《\1》", zh)
+
+
+def normalize_record(record):
+    """fix_marks on every Chinese text of the record; returns how many texts changed."""
+    changed = 0
+    def fix(holder, key):
+        nonlocal changed
+        old = holder.get(key)
+        if old and (new := fix_marks(old)) != old:
+            holder[key], changed = new, changed + 1
+    fix(record, "title_zh")
+    for sec in record["sections"]:
+        fix(sec, "title_zh")
+        for u in sec["units"]:
+            fix(u, "zh")
+    return changed
 
 
 def check(raw, texts):
@@ -90,7 +118,7 @@ def translate_section(call, title, texts, tries=MAX_TRIES):
             continue
         out, problems = check(raw, texts)
         if not problems:
-            return out, [], attempt
+            return [fix_marks(x) for x in out], [], attempt
         feedback = problems
     return [], problems, tries
 
@@ -111,6 +139,7 @@ def translate_titles(call, record, tries=MAX_TRIES):
             continue
         out, problems = check(raw, names)
         if not problems:
+            out = [fix_marks(x) for x in out]
             if record.get("title"):
                 record["title_zh"], out = out[0], out[1:]
             for sec, zh in zip(record["sections"], out):

@@ -134,6 +134,8 @@ def run_page(page, call, model="", max_steps=12, root=Path("."), ctl=None):
             print(f"[status] {page}: not starting {step}: {why}", flush=True)
             break
         if step is None:  # every step is current: the quality gate looks for defects and starts a repair round
+            if tc.normalize_record(record):  # free, deterministic text fixes first (e.g. treaty names in 《 》, not underlined)
+                save(rec_path, record)
             findings = qg.check(record)
             ai = None
             if not findings and call is not None and (ctl is None or not ctl.reason_to_stop()):  # the program checks are clean: the AI proofreader reads what rules cannot judge

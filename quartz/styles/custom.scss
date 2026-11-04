@@ -475,3 +475,23 @@ body.has-global-lang .consolidated > .lang-switch:not(.global) {
     overflow-y: auto;
   }
 }
+
+// recent additions: compact list (title and date on few lines, no tag chips)
+.recent-notes {
+  .recent-ul > li {
+    margin: 0 0 0.5rem;
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.3;
+  }
+  .desc,
+  .meta {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  .tags {
+    display: none;
+  }
+}

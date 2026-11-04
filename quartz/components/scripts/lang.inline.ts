@@ -69,7 +69,7 @@ function slugOf(el: Element): string {
 }
 
 // fixed words of the interface
-const UI_ZH: Record<string, string> = { Explorer: "目錄", "Graph View": "關係圖", Graph: "關係圖", Backlinks: "連入的頁面", "Table of Contents": "本頁目錄" }
+const UI_ZH: Record<string, string> = { Explorer: "目錄", "Graph View": "關係圖", Graph: "關係圖", Backlinks: "連入的頁面", "Recent Additions": "最近新增", "Table of Contents": "本頁目錄" }
 
 function applyMenu(lang: string) {
   if (!titlesZh) return void loadTitles()

@@ -95,7 +95,7 @@ def mark_names(escaped):
 
 def strip_marks_left(page):
     """Safety net: a mark that no rule above turned into markup (a stray one) never reaches the reader."""
-    return re.sub(r"[⟦⟧]", "", page)
+    return re.sub(r'(data-zh="[^"]*")|[⟦⟧]', lambda m: m.group(1) or "", page)  # the title attribute keeps them: the page script draws them
 
 
 def strip_marks(text):
@@ -209,7 +209,7 @@ def render(record):
     return strip_marks_left("\n".join([
         "## Consolidated version (main claims)", "",
         '<div class="consolidated">',
-        *([f'<span class="page-title-i18n" hidden data-en="{esc(record["title"])}" data-zh="{esc(strip_marks(record["title_zh"]))}"></span>']
+        *([f'<span class="page-title-i18n" hidden data-en="{esc(record["title"])}" data-zh="{esc(record["title_zh"])}"></span>']
           if record.get("title") and record.get("title_zh") else []),
         *([ '<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="zh">中文</button>'
            '<button type="button" data-lang="en">English</button></span>'] if has_zh else []),

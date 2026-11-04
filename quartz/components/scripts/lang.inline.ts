@@ -18,9 +18,24 @@ function apply(lang: string) {
   const title = names?.dataset[lang === "en" ? "en" : "zh"]
   if (title) {
     const h1 = document.querySelector<HTMLElement>(".article-title, article h1")
-    if (h1) h1.textContent = title
+    const plain = (t: string) => t.replace(/[⟦⟧]/g, "")
+    if (h1) {
+      // Chinese proper-name mark (專名號): names between ⟦ ⟧ are underlined in the heading; the tab cannot hold markup
+      h1.textContent = ""
+      title.split(/(⟦[^⟦⟧]+⟧)/).forEach((part) => {
+        if (/^⟦.*⟧$/.test(part)) {
+          const span = document.createElement("span")
+          span.className = "pn"
+          span.textContent = plain(part)
+          h1.appendChild(span)
+        } else if (part) h1.appendChild(document.createTextNode(part))
+      })
+    }
     const other = names?.dataset[lang === "en" ? "zh" : "en"]
-    document.title = other && document.title.includes(other) ? document.title.replace(other, title) : document.title
+    document.title =
+      other && document.title.includes(plain(other))
+        ? document.title.replace(plain(other), plain(title))
+        : document.title
   }
   document.querySelectorAll<HTMLElement>(".lang-switch button").forEach((b) => {
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang))

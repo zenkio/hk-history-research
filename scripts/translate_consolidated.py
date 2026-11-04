@@ -63,6 +63,7 @@ def fix_punctuation(zh):
     """Chinese punctuation is full-width and takes a whole character cell, so no space is left beside it, and a number
     sits against its unit (1843年, not 1843 年) (owner 2026-11-04). Half-width , ; : ? ! and ( ) next to Chinese become
     full-width; straight double quotes around Chinese become 「 」 (Hong Kong style)."""
+    zh = re.sub(rf"(?<=[{CJK_CHAR}])\s+(?=[,;:?!](?:\s|$))", "", zh)
     zh = re.sub(rf"(?<=[{CJK_CHAR}])([,;:?!])", lambda m: FULL[m.group(1)], zh)
     zh = re.sub(rf"([,;:?!])(?=[{CJK_CHAR}])", lambda m: FULL[m.group(1)], zh)
     zh = re.sub(rf"(?<=[{CJK_CHAR}])\.(?=\s|$)", "。", zh)

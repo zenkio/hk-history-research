@@ -109,3 +109,20 @@ def test_a_ledger_that_cannot_be_written_does_not_stop_the_call(tmp_path, monkey
         raise OSError("disk")
     monkeypatch.setattr(rc, "_save", broken)
     assert c.wrap(lambda s, p: "ok", "p", "tidy")("s", "p") == "ok"
+
+
+def test_the_model_the_gateway_reports_is_counted_and_a_different_one_is_a_mismatch(tmp_path):
+    import consolidate_pipeline as cp
+    c = rc.Control(tmp_path, signals=False, expected="nvidia/nemotron-3-ultra-550b-a55b:free")
+
+    def call(model):
+        def f(s, p):
+            cp.SERVED.model = model
+            return "ok"
+        return f
+    c.wrap(call("nvidia/nemotron-3-ultra-550b-a55b:free"), "p", "tidy")("s", "p")
+    c.wrap(call("nvidia/nemotron-3-ultra-550b-a55b"), "p", "tidy")("s", "p")  # same model, no ':free' tag
+    assert c.mismatches() == 0
+    c.wrap(call("google/gemma-4-26b:free"), "p", "tidy")("s", "p")
+    u = json.loads((tmp_path / rc.USAGE).read_text())["pages"]["p"]["tidy"]
+    assert c.mismatches() == 1 and u["models"]["google/gemma-4-26b:free"] == 1 and u["calls"] == 3

@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 
 import consolidate_drafts as cd
@@ -214,6 +215,9 @@ def run(page_md, record, call, tries=MAX_TRIES):
     return record, report
 
 
+SERVED = threading.local()  # the model id the gateway reports for the last answer in this thread
+
+
 def gateway_call(model, token, seed=20261030):
     import multi_ai_trial as mt
 
@@ -224,7 +228,9 @@ def gateway_call(model, token, seed=20261030):
         for wait in (*RETRY_WAITS, None):
             try:
                 data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
-                return mt.record_of({"id": "consolidate"}, model, data)["text"]
+                rec = mt.record_of({"id": "consolidate"}, model, data)
+                SERVED.model = rec.get("answered_model")
+                return rec["text"]
             except mt.QuotaExhausted as e:  # a resting model says when it is free again: wait that long (max 10 min)
                 rest = mt.rest_seconds(str(e))
                 if rest is None or rest > 600 or wait is None:

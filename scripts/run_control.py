@@ -48,8 +48,15 @@ def today():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
+def same_model(asked, served):
+    """The model the gateway reports is the one we pinned (ids may differ by a ':free' tag or a date suffix)."""
+    a, b = (asked or "").split(":")[0].lower(), (served or "").split(":")[0].lower()
+    return bool(a) and bool(b) and (a.startswith(b) or b.startswith(a))
+
+
 class Control:
-    def __init__(self, root=Path("."), signals=True):
+    def __init__(self, root=Path("."), signals=True, expected=None):
+        self.expected = expected  # the pinned model id: an answer from another model is counted as a mismatch
         self.root = Path(root)
         self.signalled = None
         self.lock = threading.Lock()  # the writer calls come from a thread pool
@@ -82,19 +89,36 @@ class Control:
             return f"daily budget of {budget} calls spent"
         return None
 
-    def record(self, page, step, calls=0, failed=0, tin=0, tout=0):
+    def record(self, page, step, calls=0, failed=0, tin=0, tout=0, served=None):
         with self.lock:
-            self._record(page, step, calls, failed, tin, tout)
+            self._record(page, step, calls, failed, tin, tout, served)
 
-    def _record(self, page, step, calls, failed, tin, tout):
+    def _record(self, page, step, calls, failed, tin, tout, served=None):
         for bucket in (self.usage["days"].setdefault(today(), {}),
                        self.usage["pages"].setdefault(page, {}).setdefault(step, {})):
             for k, v in (("calls", calls), ("failed", failed), ("in", tin), ("out", tout)):
                 bucket[k] = bucket.get(k, 0) + v
+            if served is not None:  # which model the gateway says it really used, per call
+                models = bucket.setdefault("models", {})
+                models[served] = models.get(served, 0) + 1
+                if self.expected and not same_model(self.expected, served):
+                    bucket["mismatch"] = bucket.get("mismatch", 0) + 1
         try:
             _save(self.root / USAGE, self.usage)
         except OSError as e:  # the ledger is bookkeeping: losing a write must never stop the pipeline (run 41929679016)
             print(f"[usage] could not save the usage ledger: {type(e).__name__}", flush=True)
+
+    def served_model(self):
+        import consolidate_pipeline as cp  # the gateway call leaves the answering model's id here
+        return getattr(cp.SERVED, "model", None)
+
+    def forget_served(self):
+        import consolidate_pipeline as cp
+        cp.SERVED.model = None  # so an answer that does not report its model is not credited to the previous one
+
+    def mismatches(self):
+        """How many answers (all pages, all steps) came from a model other than the pinned one."""
+        return sum(st.get("mismatch", 0) for steps in self.usage["pages"].values() for st in steps.values())
 
     def wrap(self, call, page, step):
         """The writer call, counted, and refused once the pipeline must stop."""
@@ -105,11 +129,13 @@ class Control:
             reason = self.reason_to_stop()
             if reason:
                 raise Stopped(reason)
+            self.forget_served()
             try:
                 text = call(system, prompt)
             except Exception:
                 self.record(page, step, calls=1, failed=1, tin=tokens(system) + tokens(prompt))
                 raise
-            self.record(page, step, calls=1, tin=tokens(system) + tokens(prompt), tout=tokens(text))
+            self.record(page, step, calls=1, tin=tokens(system) + tokens(prompt), tout=tokens(text),
+                        served=self.served_model())
             return text
         return counted

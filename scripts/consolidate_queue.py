@@ -151,9 +151,13 @@ def main(argv=None):
                           "pages": [ps.show(p, root) for p in pages_of(root, queue)]}, ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
-    ctl = rc.Control(root)
+    ctl = rc.Control(root, expected=args.model)
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),
                              args.max_steps or queue.get("max_steps", 12), ctl=ctl)
+    if ctl.mismatches():  # the gateway answered with another model than the pinned one: surface it
+        ps.save(root / ISSUES, issues)
+        record_issue(issues, "gateway", "*", "model", f"{ctl.mismatches()} answers came from a model other than {args.model}")
+        ps.save(root / ISSUES, issues)
     print(f"[queue] pages worked: {len(done)}; open issues: {json.dumps(summary(issues))}", flush=True)
     if args.plan:
         import plan_queue

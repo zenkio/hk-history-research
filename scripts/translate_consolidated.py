@@ -37,7 +37,7 @@ def prompt(title, texts, feedback=None):
              "standard Chinese names for people, places and treaties).", "Output exactly one line per sentence: "
              "`[n] translation`, with the same numbers, in the same order. No other text.", "Wrap every proper name in "
              "⟦ ⟧ as the Chinese proper-name mark (專名號): names of people, places, countries, dynasties and "
-             "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Never mark the name of a treaty, declaration or other document: write it "
+             "organisations, e.g. ⟦林則徐⟧, ⟦虎門⟧, ⟦大清⟧. Punctuation is full-width with no spaces beside it (，。；：？！、), use 、 between items of a list of nouns, 「 」 for quotations, and write numbers against their unit (1843年). Never mark the name of a treaty, declaration or other document: write it "
              "in 《 》 instead, e.g. 《南京條約》. Not common words.", "Keep every figure and "
              "date as in the English. Do not merge or split sentences.", cp.WRITTEN_CHINESE, ""]
     lines += [f"[{i}] {t}" for i, t in enumerate(texts, 1)]
@@ -54,11 +54,32 @@ DOC_WORDS = r"(?:條約|條例|協定|協議|宣言|聲明|公約|章程|法案|
 DOC_MARK = re.compile(r"⟦([^⟦⟧]*" + DOC_WORDS + r")⟧")
 
 
+FULL = {",": "，", ";": "；", ":": "：", "?": "？", "!": "！"}
+CJK_CHAR = "\u4e00-\u9fff"
+PUNCT_ZH = "，。、；：？！「」『』《》（）〈〉……——"
+
+
+def fix_punctuation(zh):
+    """Chinese punctuation is full-width and takes a whole character cell, so no space is left beside it, and a number
+    sits against its unit (1843年, not 1843 年) (owner 2026-11-04). Half-width , ; : ? ! and ( ) next to Chinese become
+    full-width; straight double quotes around Chinese become 「 」 (Hong Kong style)."""
+    zh = re.sub(rf"(?<=[{CJK_CHAR}])([,;:?!])", lambda m: FULL[m.group(1)], zh)
+    zh = re.sub(rf"([,;:?!])(?=[{CJK_CHAR}])", lambda m: FULL[m.group(1)], zh)
+    zh = re.sub(rf"(?<=[{CJK_CHAR}])\.(?=\s|$)", "。", zh)
+    zh = re.sub(rf"\(([^()]*[{CJK_CHAR}][^()]*)\)", r"（\1）", zh)
+    zh = re.sub(rf'"([^"]*[{CJK_CHAR}][^"]*)"', r"「\1」", zh)
+    zh = re.sub(rf"\s+(?=[{PUNCT_ZH}])", "", zh)  # no space before punctuation
+    zh = re.sub(rf"(?<=[{PUNCT_ZH}])\s+", "", zh)  # none after it either
+    zh = re.sub(rf"(?<=\d) +(?=[{CJK_CHAR}])", "", zh)  # 1843 年 -> 1843年
+    zh = re.sub(rf"(?<=[{CJK_CHAR}]) +(?=\d)", "", zh)
+    return zh
+
+
 def fix_marks(zh):
     """Names of documents (treaties, declarations) take the title mark 《 》, not the name underline (owner 2026-11-04:
     ⟦北京條約⟧ is wrong); a mark inside 《 》 is dropped. Deterministic, so no AI call is needed for it."""
     zh = re.sub(r"《([^》]*)》", lambda m: "《" + MARK.sub(r"\1", m.group(1)) + "》", zh)
-    return DOC_MARK.sub(r"《\1》", zh)
+    return fix_punctuation(DOC_MARK.sub(r"《\1》", zh))
 
 
 def normalize_record(record):
@@ -70,6 +91,10 @@ def normalize_record(record):
         if old and (new := fix_marks(old)) != old:
             holder[key], changed = new, changed + 1
     fix(record, "title_zh")
+    for q in record.get("questions") or []:  # reader questions in Chinese follow the same rules
+        if q.get("lang") == "zh":
+            fix(q, "question")
+            fix(q, "term")
     for sec in record["sections"]:
         fix(sec, "title_zh")
         for u in sec["units"]:

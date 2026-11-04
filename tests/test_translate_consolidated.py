@@ -133,3 +133,22 @@ def test_treaty_names_get_book_title_marks_not_the_name_underline():
     rec = {"title_zh": "⟦北京條約⟧", "sections": [{"title_zh": "x", "units": [{"text": "a", "zh": "簽訂⟦天津條約⟧。"}]}]}
     assert tc.normalize_record(rec) == 2 and rec["sections"][0]["units"][0]["zh"] == "簽訂《天津條約》。"
     assert tc.normalize_record(rec) == 0
+
+
+def test_chinese_punctuation_is_full_width_without_spaces_and_numbers_touch_their_unit():
+    # owner 2026-11-04: full-width marks fill a whole cell, no blank is added beside them
+    import translate_consolidated as tc
+    assert tc.fix_punctuation("到 1860 年，該殖民地") == "到1860年，該殖民地"
+    assert tc.fix_punctuation("英國,法國;俄國") == "英國，法國；俄國"
+    assert tc.fix_punctuation("條約。 後來 ， 他") == "條約。後來，他"
+    assert tc.fix_punctuation('他說"可以"。') == "他說「可以」。"
+    assert tc.fix_punctuation("英國(Britain)與法國") == "英國(Britain)與法國"
+    assert tc.fix_punctuation("英國(大英)與法國") == "英國（大英）與法國"
+    assert tc.fix_punctuation("3.5 億 與 1,000 人") == "3.5億 與1,000人"
+    assert tc.fix_marks("⟦香港⟧自 1843 年起") == "⟦香港⟧自1843年起"
+
+
+def test_chinese_reader_questions_get_the_same_punctuation_fixes():
+    import translate_consolidated as tc
+    rec = {"sections": [], "questions": [{"lang": "zh", "question": "這是什麼,為什麼 ?", "term": "x"}, {"lang": "en", "question": "a , b"}]}
+    assert tc.normalize_record(rec) == 1 and rec["questions"][0]["question"] == "這是什麼，為什麼？" and rec["questions"][1]["question"] == "a , b"

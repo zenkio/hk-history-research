@@ -161,7 +161,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$PRIVATE_BRANCH"
-          git add data/consolidated_facts data/consolidated_status experiments/consolidate
+          git add data/consolidated_facts data/consolidated_status data/consolidated_usage.json experiments/consolidate
           if git diff --cached --quiet; then echo "nothing was written"; exit 0; fi
           git commit -m "experiment: consolidate drafts"
           git push origin "$PRIVATE_BRANCH"

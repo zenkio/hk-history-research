@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import consolidate_pipeline as cp
+import run_control as rc
 import kid_read_consolidated as kr
 import quality_gate as qg
 import ai_verify as av
@@ -120,7 +121,7 @@ def forget(status, steps):
                         "model": status.get(step, {}).get("model", "")}
 
 
-def run_page(page, call, model="", max_steps=12, root=Path(".")):
+def run_page(page, call, model="", max_steps=12, root=Path("."), ctl=None):
     """Runs up to max_steps open steps of one page; returns the names of the steps it ran."""
     page_md = (root / PAGES / f"{page}.md").read_text(encoding="utf-8")
     rec_path, st_path = root / RECORDS / f"{page}.json", root / STATUS / f"{page}.json"
@@ -129,11 +130,14 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
     ran = []
     while len(ran) < max_steps:
         step = next_step(status, page_md)
+        if ctl is not None and step is not None and (why := ctl.reason_to_stop()):
+            print(f"[status] {page}: not starting {step}: {why}", flush=True)
+            break
         if step is None:  # every step is current: the quality gate looks for defects and starts a repair round
             findings = qg.check(record)
             ai = None
-            if not findings and call is not None:  # the program checks are clean: the AI proofreader reads what rules cannot judge
-                findings, ai = av.verify(record, call, model)
+            if not findings and call is not None and (ctl is None or not ctl.reason_to_stop()):  # the program checks are clean: the AI proofreader reads what rules cannot judge
+                findings, ai = av.verify(record, ctl.wrap(call, page, "gate") if ctl else call, model)
                 av.apply(record, findings)
                 save(rec_path, record)
             gate = status.get("gate", {})
@@ -152,7 +156,9 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
             break
         overloaded = []
 
-        def counted(system, user, _call=call):  # remembers that the gateway model failed during this step
+        base = ctl.wrap(call, page, step) if ctl is not None else call
+
+        def counted(system, user, _call=base):  # remembers that the gateway model failed during this step
             try:
                 return _call(system, user)
             except cp.WriterUnavailable:
@@ -161,6 +167,9 @@ def run_page(page, call, model="", max_steps=12, root=Path(".")):
         try:
             record, report = execute(step, page_md, record, counted if call is not None else None, model,
                                      repair=step in status)
+        except rc.Stopped as e:  # paused / budget spent / signal: leave the step open, the next run resumes it
+            print(f"[status] {page}: {step} left open: {e}", flush=True)
+            break
         except cp.WriterUnavailable as e:  # the gateway model stays overloaded: wait, do not count an attempt
             prev = status.get(step, {})
             status[step] = {"state": "waiting", "attempts": prev.get("attempts", 0), "gaps": [str(e)[:120]],
@@ -238,8 +247,9 @@ def main(argv=None):
             print(json.dumps(show(p), ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
+    ctl = rc.Control()
     for p in args.pages:
-        run_page(p, call, args.model, args.max_steps)
+        run_page(p, call, args.model, args.max_steps, ctl=ctl)
     return 0
 
 

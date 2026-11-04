@@ -25,6 +25,7 @@ from pathlib import Path
 
 import consolidate_pipeline as cp
 import page_status as ps
+import run_control as rc
 
 QUEUE = Path("data/consolidated_queue.json")
 ISSUES = ps.STATUS / "_issues.json"
@@ -69,11 +70,14 @@ def heal(root, page, issues):
             return
 
 
-def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=time.time):
+def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=time.time, ctl=None):
     queue = ps.load(root / QUEUE, {})
     issues = ps.load(root / ISSUES, {})
     started, waiting_in_row, done = clock(), 0, []
     for page in pages_of(root, queue):
+        if ctl is not None and (why := ctl.reason_to_stop()):
+            print(f"[queue] not starting more work: {why}; everything done so far is saved, the next run resumes", flush=True)
+            break
         if clock() - started > minutes * 60:
             print("[queue] time budget used, the rest waits for the next run", flush=True)
             break
@@ -85,7 +89,7 @@ def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=t
         if ps.next_step(ps.load(root / ps.STATUS / f"{page}.json", {}), page_md) is None:
             continue
         try:
-            ran = ps.run_page(page, call, model, max_steps, root)
+            ran = ps.run_page(page, call, model, max_steps, root, ctl=ctl)
         except Exception as e:  # one bad page must not stop the others
             record_issue(issues, "crash", page, "run", f"{type(e).__name__}: {e}")
             print(f"[queue] {page}: crashed ({type(e).__name__})", flush=True)
@@ -147,8 +151,9 @@ def main(argv=None):
                           "pages": [ps.show(p, root) for p in pages_of(root, queue)]}, ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
+    ctl = rc.Control(root)
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),
-                             args.max_steps or queue.get("max_steps", 12))
+                             args.max_steps or queue.get("max_steps", 12), ctl=ctl)
     print(f"[queue] pages worked: {len(done)}; open issues: {json.dumps(summary(issues))}", flush=True)
     if args.plan:
         import plan_queue

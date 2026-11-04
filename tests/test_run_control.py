@@ -1,0 +1,90 @@
+import json
+
+import pytest
+
+import consolidate_queue as cq
+import page_status as ps
+import run_control as rc
+import usage_report as ur
+from test_page_status import setup, fake_execute
+
+
+def ctl(tmp_path, **settings):
+    (tmp_path / "data").mkdir(exist_ok=True)
+    if settings:
+        (tmp_path / rc.CONTROL).write_text(json.dumps(settings))
+    return rc.Control(tmp_path, signals=False)
+
+
+def test_calls_are_counted_per_page_and_step_with_estimated_tokens(tmp_path):
+    c = ctl(tmp_path)
+    call = c.wrap(lambda s, p: "x" * 40, "p", "tidy")
+    call("a" * 8, "b" * 8)
+    u = json.loads((tmp_path / rc.USAGE).read_text())
+    assert u["pages"]["p"]["tidy"] == {"calls": 1, "failed": 0, "in": 4, "out": 10}
+    assert u["days"][rc.today()]["calls"] == 1
+
+
+def test_a_failed_call_is_counted_as_used_quota(tmp_path):
+    c = ctl(tmp_path)
+
+    def boom(s, p):
+        raise OSError("503")
+    with pytest.raises(OSError):
+        c.wrap(boom, "p", "tidy")("s", "p")
+    assert json.loads((tmp_path / rc.USAGE).read_text())["pages"]["p"]["tidy"]["failed"] == 1
+
+
+def test_paused_pipeline_starts_no_call_and_resumes_when_unpaused(tmp_path, monkeypatch):
+    root, log = setup(tmp_path), []
+    monkeypatch.setattr(ps, "execute", fake_execute(log))
+    (root / "data").mkdir(exist_ok=True)
+    (root / rc.CONTROL).write_text(json.dumps({"paused": True, "reason": "gateway needed elsewhere"}))
+    c = rc.Control(root, signals=False)
+    assert ps.run_page("p", lambda s, p: "x", "M", root=root, ctl=c) == []
+    (root / "data").mkdir(exist_ok=True)
+    (root / rc.CONTROL).write_text(json.dumps({"paused": False}))
+    assert ps.run_page("p", lambda s, p: "x", "M", root=root, ctl=c)[0] == "fold"
+
+
+def test_daily_budget_stops_the_run_in_the_middle_of_a_step_and_the_step_stays_open(tmp_path, monkeypatch):
+    root = setup(tmp_path)
+    (root / "data").mkdir(exist_ok=True)
+    (root / rc.CONTROL).write_text(json.dumps({"daily_calls": 2}))
+    c = rc.Control(root, signals=False)
+
+    def execute(step, page_md, record, call, model, repair=False):
+        for _ in range(5):
+            call("s", "p")
+        return record, {}
+    monkeypatch.setattr(ps, "execute", execute)
+    assert ps.run_page("p", lambda s, p: "ok", "M", root=root, ctl=c) == []
+    assert c.calls_today() == 2
+    st = json.loads((root / ps.STATUS / "p.json").read_text()) if (root / ps.STATUS / "p.json").exists() else {}
+    assert not st.get("fold", {}).get("state") in ("done", "accepted", "partial")
+
+
+def test_a_signal_stops_before_the_next_call(tmp_path):
+    c = ctl(tmp_path)
+    c.signalled = "SIGTERM"
+    with pytest.raises(rc.Stopped):
+        c.wrap(lambda s, p: "x", "p", "tidy")("s", "p")
+
+
+def test_queue_stops_when_paused_and_saves_nothing_lost(tmp_path, monkeypatch):
+    root = setup(tmp_path)
+    (root / "data").mkdir(exist_ok=True)
+    (root / rc.CONTROL).write_text(json.dumps({"paused": True}))
+    c = rc.Control(root, signals=False)
+    done, _ = cq.run_queue(lambda s, p: "x", "M", root, ctl=c)
+    assert done == []
+
+
+def test_report_gives_the_average_cost_of_a_complete_page_and_pages_per_day():
+    usage = {"pages": {"a": {"fold": {"calls": 20, "failed": 2, "in": 40000, "out": 10000},
+                              "kidread": {"calls": 10, "failed": 0, "in": 10000, "out": 2000}},
+                       "b": {"fold": {"calls": 5, "failed": 0, "in": 1000, "out": 500}}}}
+    r = ur.report(usage, price_in=1, price_out=2, daily_calls=300)
+    assert r["pages_complete"] == 1 and r["average_per_page"]["calls"] == 30
+    assert r["pages_per_day_at_budget"] == 10.0 and r["days_for_120_pages_at_budget"] == 12.0
+    assert r["paid_cost_per_page_usd"] == round((50000 * 1 + 12000 * 2) / 1e6, 4)

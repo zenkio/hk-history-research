@@ -18,14 +18,14 @@ FOLDERS = {"00_Meta": "專案資料", "01_Timeline": "時間線", "02_Entities":
 
 
 def build(root=Path(".")):
-    titles = dict(FOLDERS)
+    titles = {k.lower(): v for k, v in FOLDERS.items()}  # Quartz writes every slug in lower case
     for path in sorted((root / FACTS).glob("*.json")):
         try:
             zh = json.loads(path.read_text(encoding="utf-8")).get("title_zh")
         except ValueError:
             continue
         if zh and (root / "content" / PAGES / f"{path.stem}.md").exists():
-            titles[f"{PAGES}/{path.stem}"] = re.sub(r"[⟦⟧]", "", zh)
+            titles[f"{PAGES}/{path.stem}".lower()] = re.sub(r"[⟦⟧]", "", zh)
     return titles
 
 

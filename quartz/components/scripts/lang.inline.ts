@@ -61,18 +61,28 @@ async function loadTitles() {
 
 function slugOf(el: Element): string {
   const folder = (el as HTMLElement).dataset?.folderpath
-  if (folder) return folder.replace(/\/$/, "")
+  if (folder) return folder.replace(/\/(index)?$/, "").toLowerCase()
   const href = el.getAttribute("href")
   if (!href) return ""
   const path = new URL(href, location.href).pathname
-  return decodeURIComponent(path).replace(/^\//, "").replace(/\.html$/, "").replace(/\/(index)?$/, "")
+  return decodeURIComponent(path).replace(/^\//, "").replace(/\.html$/, "").replace(/\/(index)?$/, "").toLowerCase()
 }
+
+// fixed words of the interface
+const UI_ZH: Record<string, string> = { Explorer: "目錄", "Graph View": "關係圖", Graph: "關係圖", Backlinks: "連入的頁面", "Table of Contents": "本頁目錄" }
 
 function applyMenu(lang: string) {
   if (!titlesZh) return void loadTitles()
+  document.querySelectorAll<HTMLElement>(".sidebar h2, .sidebar h3").forEach((h) => {
+    if (h.dataset.en === undefined) h.dataset.en = h.textContent ?? ""
+    const wanted = lang === "zh" ? (UI_ZH[h.dataset.en.trim()] ?? h.dataset.en) : h.dataset.en
+    if (h.textContent !== wanted) h.textContent = wanted
+  })
+  const seen = new Set<HTMLElement>() // one name per label: a container and its title must not fight over the text
   document.querySelectorAll<HTMLElement>(".explorer a[href], .explorer [data-folderpath]").forEach((el) => {
     const target = el.querySelector<HTMLElement>(".folder-title") ?? (el.children.length === 0 ? el : null)
-    if (!target) return
+    if (!target || seen.has(target)) return
+    seen.add(target)
     if (target.dataset.en === undefined) target.dataset.en = target.textContent ?? ""
     const zh = lang === "zh" ? titlesZh![slugOf(el)] : undefined
     const wanted = zh ?? target.dataset.en
@@ -155,7 +165,12 @@ function setup() {
   const explorer = document.querySelector(".explorer")
   if (explorer instanceof HTMLElement && !explorer.dataset.langObserved) {
     explorer.dataset.langObserved = "1"
-    new MutationObserver(() => applyMenu(stored())).observe(explorer, { childList: true, subtree: true })
+    const watch = new MutationObserver(() => {
+      watch.disconnect() // our own text changes must not wake us again
+      applyMenu(stored())
+      watch.observe(explorer, { childList: true, subtree: true })
+    })
+    watch.observe(explorer, { childList: true, subtree: true })
   }
 }
 

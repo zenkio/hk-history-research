@@ -105,6 +105,9 @@ jobs:
       - name: Trim the search index
         run: python3 scripts/trim_search_index.py public
 
+      - name: Chinese names for the left menu
+        run: python3 scripts/titles_zh.py public
+
       - name: Tell search engines to ignore the preview
         run: |
           set -euo pipefail

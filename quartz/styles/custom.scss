@@ -428,3 +428,50 @@ html:not([data-lang="en"]) .lang-en {
   background: var(--highlight);
   font-size: 0.9rem;
 }
+
+// global language switch in the left sidebar; the page-level one is then redundant
+.lang-switch.global {
+  margin: 0.4rem 0 0.6rem;
+}
+body.has-global-lang .consolidated > .lang-switch:not(.global) {
+  display: none;
+}
+
+// the graph: collapsible, closed by default; the clip keeps its width so it draws correctly when opened
+.graph {
+  .graph-toggle {
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "▾ ";
+    }
+  }
+  .graph-help {
+    margin: 0.2rem 0 0.5rem;
+    font-size: 0.8rem;
+    color: var(--gray);
+    line-height: 1.4;
+  }
+  &.collapsed {
+    .graph-toggle::before {
+      content: "▸ ";
+    }
+    .graph-outer,
+    .graph-help {
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+      visibility: hidden;
+      border: 0;
+    }
+  }
+}
+
+// the right column can be taller than the screen: it scrolls instead of running off the page
+@media all and (min-width: 1200px) {
+  .sidebar.right {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}

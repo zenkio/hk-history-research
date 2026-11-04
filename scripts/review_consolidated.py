@@ -118,24 +118,55 @@ def confirm(call, first, second):
     return (m.group(1) or "contradictory") if m else None
 
 
+def cache_key(units, i):
+    """A sentence's verdict only depends on its own text and on the sentences it is compared with."""
+    import hashlib
+    others = sorted(units[j]["text"] for j in related(units, i))
+    return hashlib.sha1(("\n".join([units[i]["text"], "|", *others])).encode("utf-8")).hexdigest()[:16]
+
+
+def judge(call, units, i, tries):
+    """The verdict on one sentence: ((index of the conflicting sentence, reason) or None, whether it was reviewed)."""
+    hit, ok = review_one(call, units, i, tries)
+    if hit and hit[1].startswith("figure differs"):
+        # already a narrow question, and "another account" does not excuse a 50-fold figure. Only a lone
+        # sentence is flagged (merged sentences quote several figures, so their backing counts are inflated).
+        if len(units[i].get("by", [])) <= LONE and len(units[i].get("by", [])) < len(units[hit[0]].get("by", [])):
+            return hit, ok
+    elif hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
+        note = confirm(call, units[i]["text"], units[hit[0]]["text"])
+        if note:
+            return (hit[0], note), ok
+    return None, ok
+
+
 def run(record, call, model="", tries=cp.MAX_TRIES):
+    """Reviews only the sentences that are new or whose neighbours changed since their last verdict (record["review_cache"]);
+    a whole page used to cost about 200 calls every time."""
     from concurrent.futures import ThreadPoolExecutor
     units = flat(record)
+    cache = record.get("review_cache", {})
+    keys = [cache_key(units, i) for i in range(len(units))]
+    todo = [i for i in range(len(units)) if keys[i] not in cache]
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
-        results = list(pool.map(lambda i: review_one(call, units, i, tries), range(len(units))))
+        fresh = dict(zip(todo, pool.map(lambda i: judge(call, units, i, tries), todo)))
+    texts = {u["text"]: j for j, u in enumerate(units)}
     pairs = {}  # sentence index -> (index of the sentence it conflicts with, reason)
-    unreviewed = 0
-    for i, (hit, ok) in enumerate(results):
-        unreviewed += not ok
-        if hit and hit[1].startswith("figure differs"):
-            # already a narrow question, and "another account" does not excuse a 50-fold figure. Only a lone
-            # sentence is flagged (merged sentences quote several figures, so their backing counts are inflated).
-            if len(units[i].get("by", [])) <= LONE and len(units[i].get("by", [])) < len(units[hit[0]].get("by", [])):
-                pairs[i] = hit
-        elif hit and not ACCOUNT.search(units[i]["text"]):  # a sentence that already presents a separate account is not a conflict
-            note = confirm(call, units[i]["text"], units[hit[0]]["text"])
-            if note:
-                pairs[i] = (hit[0], note)
+    unreviewed, new_cache = 0, {}
+    for i in range(len(units)):
+        if i in fresh:
+            pair, ok = fresh[i]
+            unreviewed += not ok
+            if ok:
+                new_cache[keys[i]] = {"with": units[pair[0]]["text"] if pair else None, "note": pair[1] if pair else None}
+        else:
+            c = cache[keys[i]]
+            pair = (texts[c["with"]], c["note"]) if c["with"] in texts else None
+            new_cache[keys[i]] = c
+        if pair:
+            pairs[i] = pair
+    record["review_cache"] = new_cache
+    report_reused = len(units) - len(todo)
     # Both sides of a conflict are usually reported, but only the side fewer AIs back is the outlier; the other is
     # kept. (How many AIs back a sentence is a hint where the error is, not proof; equal backing flags both.)
     chosen = {}
@@ -162,7 +193,7 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
             row["sentences"] += 1
             row["flagged"] += bool(u.get("conflict"))
     return record, {"reviewed": unreviewed == 0, "unreviewed": unreviewed, "conflicts": len(flagged),
-                    "by_ai": tally, "flagged": flagged}
+                    "by_ai": tally, "flagged": flagged, "reused": report_reused, "asked": len(todo)}
 
 
 def main(argv=None):

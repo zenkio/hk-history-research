@@ -121,3 +121,20 @@ def test_an_overloaded_model_makes_sentences_unreviewed_instead_of_crashing():
         raise rv.cp.WriterUnavailable("503")
     rec, rep = rv.run(record(), down, "M")
     assert not rep["reviewed"] and rep["unreviewed"] == 3
+
+
+def test_a_second_review_asks_nothing_and_keeps_the_verdicts():
+    # nt-lease-1898 used ~200 calls for one review of one page; only new or changed sentences should be asked
+    rec, rep = rv.run(record(), answer, "M")
+    asked = []
+    rec, rep2 = rv.run(rec, lambda s, p: asked.append(p) or "NONE", "M")
+    assert asked == [] and rep2["asked"] == 0 and rep2["reused"] == 4
+    assert rep2["conflicts"] == 1 and rec["sections"][0]["units"][1]["conflict"]["judged_by"] == "M"
+
+
+def test_only_the_changed_sentence_and_its_neighbours_are_asked_again():
+    rec, _ = rv.run(record(), answer, "M")
+    rec["sections"][0]["units"][3]["text"] = "The war began in 1840."  # shares no words with the tea sentences
+    asked = []
+    rec, rep = rv.run(rec, lambda s, p: asked.append(p) or "NONE", "M")
+    assert rep["asked"] == 1 and rep["reused"] == 3 and rep["conflicts"] == 1

@@ -12,6 +12,7 @@ without losing work, and it must know what a page costs.
 """
 import json
 import signal
+import threading
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -51,6 +52,7 @@ class Control:
     def __init__(self, root=Path("."), signals=True):
         self.root = Path(root)
         self.signalled = None
+        self.lock = threading.Lock()  # the writer calls come from a thread pool
         self.usage = _load(self.root / USAGE, {"days": {}, "pages": {}})
         if signals:
             for sig in (signal.SIGTERM, signal.SIGINT):
@@ -81,11 +83,18 @@ class Control:
         return None
 
     def record(self, page, step, calls=0, failed=0, tin=0, tout=0):
+        with self.lock:
+            self._record(page, step, calls, failed, tin, tout)
+
+    def _record(self, page, step, calls, failed, tin, tout):
         for bucket in (self.usage["days"].setdefault(today(), {}),
                        self.usage["pages"].setdefault(page, {}).setdefault(step, {})):
             for k, v in (("calls", calls), ("failed", failed), ("in", tin), ("out", tout)):
                 bucket[k] = bucket.get(k, 0) + v
-        _save(self.root / USAGE, self.usage)
+        try:
+            _save(self.root / USAGE, self.usage)
+        except OSError as e:  # the ledger is bookkeeping: losing a write must never stop the pipeline (run 41929679016)
+            print(f"[usage] could not save the usage ledger: {type(e).__name__}", flush=True)
 
     def wrap(self, call, page, step):
         """The writer call, counted, and refused once the pipeline must stop."""

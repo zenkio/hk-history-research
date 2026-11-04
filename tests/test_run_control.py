@@ -88,3 +88,24 @@ def test_report_gives_the_average_cost_of_a_complete_page_and_pages_per_day():
     assert r["pages_complete"] == 1 and r["average_per_page"]["calls"] == 30
     assert r["pages_per_day_at_budget"] == 10.0 and r["days_for_120_pages_at_budget"] == 12.0
     assert r["paid_cost_per_page_usd"] == round((50000 * 1 + 12000 * 2) / 1e6, 4)
+
+
+def test_many_threads_counting_calls_at_once_do_not_crash_or_lose_counts(tmp_path):
+    # run 41929679016: the review step calls the writer from a thread pool; the unlocked ledger write failed with
+    # FileNotFoundError and stopped the page
+    from concurrent.futures import ThreadPoolExecutor
+    c = ctl(tmp_path)
+    call = c.wrap(lambda s, p: "ok", "p", "review")
+    with ThreadPoolExecutor(12) as pool:
+        list(pool.map(lambda _: call("s", "p"), range(200)))
+    assert json.loads((tmp_path / rc.USAGE).read_text())["pages"]["p"]["review"]["calls"] == 200
+    assert c.calls_today() == 200
+
+
+def test_a_ledger_that_cannot_be_written_does_not_stop_the_call(tmp_path, monkeypatch):
+    c = ctl(tmp_path)
+
+    def broken(*a, **k):
+        raise OSError("disk")
+    monkeypatch.setattr(rc, "_save", broken)
+    assert c.wrap(lambda s, p: "ok", "p", "tidy")("s", "p") == "ok"

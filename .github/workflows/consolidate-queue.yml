@@ -1,5 +1,6 @@
 name: Consolidate queue (auto)
 
+# trigger run 2
 # Runs the multi-AI page pipeline from the list in data/consolidated_queue.json of the private data repository
 # (scripts/consolidate_queue.py): only the steps a page still needs, self-healing within bounds, unresolved
 # problems written to data/consolidated_status/_issues.json. Results go to the private branch

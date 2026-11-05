@@ -211,8 +211,8 @@ plugins:
     enabled: true
     options:
       title: "Recent Additions"
-      limit: 8
-      showTags: true
+      limit: 5
+      showTags: false
       hideTagPages: true
     layout:
       position: right

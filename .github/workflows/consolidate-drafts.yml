@@ -19,7 +19,33 @@ on:
         description: Exact id of the writer model (from /v1/models)
         required: false
         type: string
-        default: nvidia/nemotron-3-ultra-550b-a50b:free
+        default: nvidia/nemotron-3-ultra-550b-a55b:free
+      step:
+        description: consolidate (fold the drafts) translate (add a Traditional Chinese version) review (flag sentences that conflict with others), tidy (merge near-duplicate sentences) polish (tidy, then translate, then review, in that order) kidread (questions a general reader would ask) or auto (only the steps a page still needs, from its status file)
+        required: false
+        type: choice
+        options: [consolidate, translate, review, tidy, polish, kidread, auto]
+        default: consolidate
+      adopt:
+        description: With step auto, the steps this page already went through before status files existed (e.g. fold,tidy,translate,review)
+        required: false
+        type: string
+        default: ''
+      retry:
+        description: With step auto, steps to forget so they run again even if they were accepted with gaps (e.g. translate)
+        required: false
+        type: string
+        default: ''
+      retranslate:
+        description: With step translate, translate every sentence again (model trials; results go to the experiment branch only)
+        required: false
+        type: boolean
+        default: false
+      max_steps:
+        description: With step auto, how many steps to run per page in this call
+        required: false
+        type: string
+        default: '12'
 
 permissions:
   contents: read
@@ -29,9 +55,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  consolidate:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    outputs:
+      pages: ${{ steps.pages.outputs.pages }}
+    steps:
+      - id: pages
+        env:
+          PAGES: ${{ inputs.pages }}
+        run: |
+          set -euo pipefail
+          for p in $PAGES; do
+            if [[ ! "$p" =~ ^[a-z0-9-]+$ ]]; then echo "bad page name"; exit 1; fi
+          done
+          echo "pages=$(python3 -c 'import json,sys; print(json.dumps(sys.argv[1].split()))' "$PAGES")" >> "$GITHUB_OUTPUT"
+
+  consolidate:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        page: ${{ fromJSON(needs.plan.outputs.pages) }}
     steps:
       - name: Check out private research data
         uses: actions/checkout@v7
@@ -65,27 +112,63 @@ jobs:
         working-directory: data
         env:
           AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
-          PAGES: ${{ inputs.pages }}
+          PAGE: ${{ matrix.page }}
           MODEL: ${{ inputs.model }}
+          STEP: ${{ inputs.step }}
+          ADOPT: ${{ inputs.adopt }}
+          RETRY: ${{ inputs.retry }}
+          MAX_STEPS: ${{ inputs.max_steps }}
+          RETRANSLATE: ${{ inputs.retranslate }}
         run: |
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
-          for p in $PAGES; do
-            if [[ ! "$p" =~ ^[a-z0-9-]+$ || ! -f "content/05_Multi_AI/$p.md" ]]; then echo "bad page name"; exit 1; fi
-            python3 -u scripts/consolidate_pipeline.py "content/05_Multi_AI/$p.md" "data/consolidated_facts/$p.json" \
-              --model "$MODEL" --report "experiments/consolidate/reports/$p.json" || true
-          done
+          if [[ ! -f "content/05_Multi_AI/$PAGE.md" ]]; then echo "no such page"; exit 1; fi
+          REC="data/consolidated_facts/$PAGE.json"
+          REP="experiments/consolidate/reports/$PAGE"
+          if [[ "$STEP" == "auto" ]]; then
+            if [[ -n "$ADOPT" ]]; then python3 -u scripts/page_status.py "$PAGE" --adopt "$ADOPT"; fi
+            if [[ -n "$RETRY" ]]; then python3 -u scripts/page_status.py "$PAGE" --retry "$RETRY"; fi
+            python3 -u scripts/page_status.py "$PAGE" --model "$MODEL" --max-steps "$MAX_STEPS" || true
+            exit 0
+          fi
+          if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then
+            python3 -u scripts/tidy_consolidated.py "$REC" --model "$MODEL" --report "$REP-tidy.json" || true
+          fi
+          if [[ "$STEP" == "polish" ]]; then
+            python3 -u scripts/translate_consolidated.py "$REC" --model "$MODEL" --report "$REP-zh.json" || true
+            python3 -u scripts/review_consolidated.py "$REC" --model "$MODEL" --report "$REP-review.json" || true
+          fi
+          if [[ "$STEP" == "tidy" || "$STEP" == "polish" ]]; then exit 0; fi
+          if [[ "$STEP" == "kidread" ]]; then
+            python3 -u scripts/kid_read_consolidated.py "data/consolidated_facts/$PAGE.json" \
+              --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-kidread.json" || true
+            exit 0
+          fi
+          if [[ "$STEP" == "review" ]]; then
+            python3 -u scripts/review_consolidated.py "data/consolidated_facts/$PAGE.json" \
+              --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-review.json" || true
+            exit 0
+          fi
+          if [[ "$STEP" == "translate" ]]; then
+            ALL=""; if [[ "$RETRANSLATE" == "true" ]]; then ALL="--all"; fi
+            python3 -u scripts/translate_consolidated.py "data/consolidated_facts/$PAGE.json" $ALL \
+              --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-zh.json" || true
+            exit 0
+          fi
+          python3 -u scripts/consolidate_pipeline.py "content/05_Multi_AI/$PAGE.md" "data/consolidated_facts/$PAGE.json" \
+            --model "$MODEL" --report "experiments/consolidate/reports/$PAGE.json" || true
 
       - name: Save results to a private branch
         if: always()
         working-directory: data
         env:
-          PRIVATE_BRANCH: experiment/consolidate-${{ github.run_id }}
+          PRIVATE_BRANCH: experiment/consolidate-${{ github.run_id }}-${{ matrix.page }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$PRIVATE_BRANCH"
-          git add data/consolidated_facts experiments/consolidate
+          git add data/consolidated_facts data/consolidated_status data/consolidated_usage.json experiments/consolidate
+          if git diff --cached --quiet; then echo "nothing was written"; exit 0; fi
           git commit -m "experiment: consolidate drafts"
           git push origin "$PRIVATE_BRANCH"

@@ -73,3 +73,20 @@ def test_check_rewrite_flags_a_lost_sentence_and_an_invented_number():
 def test_a_fact_already_marked_by_hand_is_not_marked_again():
     marked, placed = cd.mark_facts(["Signed {{f1|on 29 August 1842}} and again 29 August 1842."], FACTS)
     assert marked[0].count("{{f1|") == 1 and "f1" in placed
+
+
+def test_unbolded_numbered_headings_are_read_as_sections():
+    # a draft whose headings are plain lines ("1. What happened: when, where, who, in short.") once gave no sections at all
+    page = PAGE + """
+> [!info]- Xing 4.0: AI draft, unverified
+> _Model `z`_
+>
+> 1. What happened: when, where, who, in short.
+> Lin Zexu ordered the opium destroyed at Humen.
+>
+> 2. Background: why it happened.
+> The trade drained silver from China.
+"""
+    drafts = dict(cd.draft_order(page))
+    assert drafts["Xing 4.0"][0] == ["Lin Zexu ordered the opium destroyed at Humen."]
+    assert drafts["Xing 4.0"][1] == ["The trade drained silver from China."]

@@ -1,0 +1,43 @@
+name: List gateway models
+
+# Prints the model ids the AI gateway can pin (ids only, nothing private), so a trial can name one.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'gateway-models/**'
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: GET /v1/models
+        env:
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+        run: |
+          curl -fsS -H "Authorization: Bearer $AI_GATEWAY_TOKEN" https://aigateway.zenkio.uk/v1/models \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); m=d.get("data",d.get("models",d)); [print(x.get("id",x) if isinstance(x,dict) else x) for x in m]'
+      - name: Probe one small answer per model (timing only)
+        env:
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.error
+          for model in ("gemma-4-26b-a4b-it", "google/gemma-4-31b-it:free", "nvidia/nemotron-3-ultra-550b-a55b:free"):
+              body = {"capability": "llm.generate", "input": {"system": "Answer briefly.", "prompt": "Name the year the Sino-British Joint Declaration was signed. One sentence."},
+                      "options": {"task": "general", "temperature": 0, "maxOutputTokens": 100, "models": [model]}}
+              req = urllib.request.Request("https://aigateway.zenkio.uk/v1/run", data=json.dumps(body).encode(), headers={
+                  "Authorization": "Bearer " + os.environ["AI_GATEWAY_TOKEN"], "Content-Type": "application/json", "User-Agent": "hk-history-probe"})
+              t = time.time()
+              try:
+                  d = json.load(urllib.request.urlopen(req, timeout=120))
+                  print(model, "OK", round(time.time() - t, 1), "s", (d.get("usage") or {}).get("modelId"), (d.get("choice") or {}).get("finishReason"), len((d.get("output") or {}).get("text", "")), "chars")
+              except urllib.error.HTTPError as e:
+                  print(model, "HTTP", e.code, round(time.time() - t, 1), "s", e.read()[:300])
+              except Exception as e:
+                  print(model, "ERR", type(e).__name__, round(time.time() - t, 1), "s", str(e)[:200])
+          PY

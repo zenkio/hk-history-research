@@ -110,6 +110,10 @@ jobs:
         if: env.DRAFT == 'true'
         run: python3 scripts/trim_search_index.py public
 
+      - name: Chinese names for the left menu
+        if: env.DRAFT == 'true'
+        run: python3 scripts/titles_zh.py public
+
       # Keep the draft preview out of search engines and refuse to publish if any page lacks the tag.
       - name: Tell search engines to ignore the preview
         if: env.DRAFT == 'true'

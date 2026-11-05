@@ -1,0 +1,274 @@
+#!/usr/bin/env python3
+"""Merge near-duplicate sentences of a consolidated record (owner 2026-10-31).
+
+Folding keeps every sentence of every draft, so five drafts that all say "mixed with lime and salt and flushed
+into the sea" leave five almost identical sentences in a row. Per section, an AI (pinned through the gateway)
+gets the numbered sentences and writes the section again, one line per point, tagged with the sentences it is
+made from (`[C1,C4] ...`): sentences that say the same thing become one, and a difference that matters (sea or
+Pearl River, a different figure) stays visible in the wording. The same program checks as the fold apply (every
+sentence used, no number or name not in the sentences, nothing shrunk to a hint, short, no repeats); the backers
+of a merged sentence are the union of its sources' backers. A section that fails its checks keeps its sentences
+unchanged. Sentences that only AIs on a low-trust list back (none for now: owner 2026-10-31 wants weak AIs kept until there is proof)
+may be left out (`[C5] OMIT`); they are kept in `record["omitted"]`, never deleted. Translations and review flags belong to the old sentences, so merged sentences have none and the
+translate and review steps run again after this one.
+
+Usage (in the data checkout): tidy_consolidated.py <record.json> [--model ID] [--report FILE]
+"""
+import argparse
+import json
+import os
+import re
+import sys
+from concurrent.futures import ThreadPoolExecutor
+
+import consolidate_drafts as cd
+import consolidate_pipeline as cp
+
+LOW_TRUST = []  # AIs whose lone sentences may be left out. Empty (owner 2026-10-31: no proof a weak AI is wrong, keep them); needs a rating first
+OMIT = "OMIT"
+SYSTEM = ("You tidy a history text by merging sentences that say the same thing. You use only what the "
+          "sentences say. You never add a fact, name, date, number or explanation of your own.")
+
+
+def omittable(unit, low_trust):
+    """A sentence that only low-trust AIs back may be left out of the merged text."""
+    return bool(unit.get("by")) and set(unit["by"]) <= set(low_trust)
+
+
+def prompt(title, units, low_trust, feedback=None):
+    lines = [f"Section: {title}", "", "SENTENCES (numbered, with how many AIs back each):"]
+    for i, u in enumerate(units, 1):
+        n = len(u["by"])
+        mark = f" [backed only by a low-trust AI: may be {OMIT}ted]" if omittable(u, low_trust) else ""
+        lines.append(f"C{i}. {u['text']} (backed by {n} AI{'s' if n != 1 else ''}){mark}")
+    lines += ["", "Write the section again so that sentences about the same point become ONE sentence.",
+              "Output one sentence per line, each starting with tags in square brackets naming the numbered "
+              "sentences it is made from, e.g. `[C1,C4] ...`.", "Rules:",
+              "- Every sentence must be used in at least one line, or be left out by writing `[C5] " + OMIT + "` "
+              "(only allowed for sentences marked as omittable).",
+              "- Sentences that differ only slightly (a range against a single figure, a loose date against an exact "
+              "one, a slightly different method) are one point: state the version most AIs back, and add the other "
+              "version in brackets, e.g. 'into the sea (another account: the Pearl River)', 'about 1,200 tonnes "
+              "(another account: 1,000 to 1,200)', 'June to July 1839 (another account: 3 to 25 June)'.",
+              "- Do not repeat the same point in several sentences.",
+              "- A sentence about a different point stays on its own line, unchanged.",
+              "- Only linking words and the bracketed alternatives may be new. No new fact, name, number or explanation.",
+              "- Never write 'draft', 'text', 'source', 'AI', 'model' or a model name.",
+              "- At most 40 words per sentence, exactly one sentence per line.",
+              "- Output the tagged lines only: no heading, no list marks, no other text."]
+    if feedback:
+        lines += ["", "Your last try failed these checks, fix them:"] + [f"- {f}" for f in feedback]
+    return "\n".join(lines)
+
+
+CHUNK = 7  # a long section is tidied in runs of this many neighbouring sentences: the AI drops sentences from long lists
+
+
+LEAK = re.compile(r"\b(?:AIs?|Nemotron|Gemini|Gemma|ChatGPT)\b")  # words about how the text was made never belong in it
+END_EN = (".", "!", "?", '"', "”", ")", "'", "’")
+MAX_WORDS = 60
+
+
+def bad_sentence(text):
+    """Why a sentence is not fit to show (cut, unfinished, too long, talks about AI), or None."""
+    text = text.strip()
+    if not text.endswith(END_EN) or text.count("(") > text.count(")") or ABBREV.search(text):
+        return "fragment"
+    if len(text.split()) > MAX_WORDS:
+        return "too_long"
+    if LEAK.search(text):
+        return "leaked"
+    return None
+
+
+def rejoin_fragments(units):
+    """A sentence cut inside brackets or after an abbreviation ("(r. ") is joined to the next one again."""
+    out = []
+    for u in units:
+        if out and (out[-1]["text"].count("(") > out[-1]["text"].count(")")
+                    or ABBREV.search(out[-1]["text"])):
+            a = out.pop()
+            u = {"text": a["text"].rstrip() + " " + u["text"], "by": sorted(set(a.get("by", [])) | set(u.get("by", []))),
+                 "facts": sorted(set(a.get("facts", [])) | set(u.get("facts", [])))}
+        out.append(u)
+    return out
+
+
+def tidy_section(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None, flagged=()):
+    """(units, problems_left, tries). A long section is tidied chunk by chunk; a chunk that fails keeps its sentences.
+    Repeats that fall in different chunks are tidied together afterwards (the Zongli Yamen sentence stood twice)."""
+    units = rejoin_fragments(units)
+    if flagged:  # the proofreader pointed at sentences (indexes of the units before this tidy): one chunk, with a hint
+        hint = [(f"C{p[0] + 1} and C{p[1] + 1} tell the same point in different words: make them ONE line tagged with both"
+                 if len(p) == 2 else f"C{p[0] + 1} is hard to follow: say it clearly using only what the sentences say")
+                for p in flagged if all(i < len(units) for i in p)]
+        return tidy_chunk(call, title, units, tries, low_trust, omitted, dups, hint or None)
+    if len(units) <= CHUNK + 2:
+        return tidy_chunk(call, title, units, tries, low_trust, omitted, dups)
+    out, left, used = [], [], 0
+    for k in range(0, len(units), CHUNK):
+        chunk, problems, n = tidy_chunk(call, title, units[k:k + CHUNK], tries, low_trust, omitted, dups)
+        out += chunk
+        left += problems
+        used = max(used, n)
+    pairs = near_duplicates([u["text"] for u in out])
+    if pairs:
+        if dups is not None:
+            del dups[:]  # recounted below on the whole section
+        for i, j in pairs[:4]:  # tidy each repeating pair together; the merged line stays where the first stood
+            if i >= len(out) or j >= len(out) or i == j:
+                continue
+            merged, problems, n = tidy_chunk(call, title, [out[i], out[j]], tries, low_trust, omitted, dups)
+            if not problems and len(merged) == 1:
+                out[i] = merged[0]
+                out[j] = None
+                out = [u for u in out if u is not None]
+                break  # indexes moved: the next pair is found again below
+        pairs = near_duplicates([u["text"] for u in out])
+        if dups is not None:
+            del dups[:]
+            dups += [out[i]["text"][:60] for i, _ in pairs]
+    return out, left, used
+
+
+STOP = set("the a an of to and in on by for was were is are it its this that with as at from which after also had has "
+           "have be been or their his her than into over then who they he she not but".split())
+SPELL = {"tientsin": "tianjin", "peking": "beijing", "nanking": "nanjing", "taels": "tael", "canton": "guangzhou"}
+DUP_SHARE = 0.5  # share of the shorter sentence's content words that the other one has too
+DUP_MIN = 3
+ABBREV = re.compile(r"(?:^|[\s(\[])(?:Mr|Mrs|Dr|St|No|vs|cf|approx|ca)\.\s*$")  # a sentence cannot end here
+
+
+def keywords(text):
+    out = set()
+    for w in re.findall(r"[a-z0-9]+", text.lower()):
+        w = SPELL.get(w, w)
+        if w in STOP:
+            continue
+        if len(w) > 5:
+            w = re.sub(r"(ing|ed|es|s)$", "", w)
+        out.add(w)
+    return out
+
+
+def near_duplicates(texts):
+    """Pairs (i, j) of sentences that share most of their content words: the same point told twice (owner 2026-11-03)."""
+    keys, pairs = [keywords(t) for t in texts], []
+    for i in range(len(texts)):
+        for j in range(i + 1, len(texts)):
+            shared = len(keys[i] & keys[j])
+            if shared >= DUP_MIN and shared / max(1, min(len(keys[i]), len(keys[j]))) >= DUP_SHARE:
+                pairs.append((i, j))
+    return pairs
+
+
+def tidy_chunk(call, title, units, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, omitted=None, dups=None, hint=None):
+    if len(units) < 2:
+        return units, [], 0
+    feedback, problems, best = hint, [], None
+    for n in range(1, tries + 1):
+        try:
+            raw = call(SYSTEM, prompt(title, units, low_trust, feedback))
+        except cp.WriterUnavailable:
+            problems = ["writer unavailable"]
+            continue
+        # a model sometimes thinks aloud before the answer: only the tagged lines count
+        tagged = "\n".join(x for x in raw.splitlines() if cp.LINE.match(x))
+        lines, problems = cp.parse_fold(tagged, len(units), 0)
+        left_out = {i for c, _, text in lines if text.strip().upper() == OMIT for i in c}
+        for i in sorted(left_out):
+            if not omittable(units[i - 1], low_trust):
+                problems.append(f"C{i} may not be left out: it is backed by more than low-trust AIs")
+        # for the checks a left-out sentence counts as used, with its own words
+        kept = [(c, nn, text) for c, nn, text in lines if text.strip().upper() != OMIT]
+        problems += cp.check_fold(kept + [([i], [], units[i - 1]["text"]) for i in sorted(left_out)], units, [])
+        if not problems:
+            merged = carry(cp.units_of(kept, units, None), units)
+            twice = near_duplicates([u["text"] for u in merged])
+            if twice and n < tries:  # the same point told twice: send the pairs back (tags name the old sentences)
+                best = (merged, [dict(units[i - 1], reason="only low-trust AIs back it") for i in sorted(left_out)])
+                tags = ["[" + ",".join(f"C{i}" for i in c) + "]" for c, _, _ in kept]
+                feedback = [f"lines {tags[i]} and {tags[j]} still tell the same point twice: make them ONE line tagged "
+                            f"with both (a differing date or figure goes in brackets)" for i, j in twice[:6]
+                            if len(tags) == len(merged)] or ["some lines still repeat the same point: merge them"]
+                continue
+            if omitted is not None:
+                omitted += [dict(units[i - 1], reason="only low-trust AIs back it") for i in sorted(left_out)]
+            if twice and dups is not None:
+                dups += [merged[i]["text"][:60] for i, _ in twice]
+            return merged, [], n
+        feedback = problems[:12]
+    if best:  # a later try broke a check: keep the earlier merge, which only had repeats left
+        if omitted is not None:
+            omitted += best[1]
+        if dups is not None:
+            dups += ["repeat left"]
+        return best[0], [], tries
+    if len(units) > 2:  # owner 2026-10-31: a long chunk can fail a check as a whole; its halves often pass
+        mid = len(units) // 2
+        first, p1, _ = tidy_chunk(call, title, units[:mid], 2, low_trust, omitted, dups)
+        second, p2, _ = tidy_chunk(call, title, units[mid:], 2, low_trust, omitted, dups)
+        if not (p1 and p2):
+            return first + second, p1 + p2, tries
+    return units, problems, tries
+
+
+def carry(merged, old):
+    """A sentence that came through unchanged keeps its translation, flag and facts."""
+    by_text = {u["text"]: u for u in old}
+    return [dict(by_text[u["text"]], by=u["by"]) if u["text"] in by_text else u for u in merged]
+
+
+def run(record, call, tries=cp.MAX_TRIES, low_trust=LOW_TRUST, only_problems=False):
+    """With only_problems, a section is tidied again only if it still tells a point twice; the others stay as they are."""
+    sections = record["sections"]
+    flags = record.pop("review_flags", {})  # sentences the AI proofreader pointed at, by section title
+    todo = {k for k, s in enumerate(sections)
+            if not only_problems or s["title"] in flags or near_duplicates([u["text"] for u in s["units"]])
+            or any(bad_sentence(u["text"]) for u in s["units"])}
+    gone = [[] for _ in sections]  # per section, so the parallel workers never share a list
+    twice = [[] for _ in sections]
+    with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
+        results = list(pool.map(lambda k: tidy_section(call, sections[k]["title"], sections[k]["units"], tries,
+                                                       low_trust, gone[k], twice[k],
+                                                       flags.get(sections[k]["title"], ())) if k in todo
+                                else (sections[k]["units"], [], 0), range(len(sections))))
+    if only_problems:  # what earlier runs left out stays recorded
+        record["omitted"] = list(record.get("omitted", [])) + [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
+    else:
+        record["omitted"] = [dict(u, section=sections[k]["title"]) for k in range(len(sections)) for u in gone[k]]
+    report = {"sections": [], "omitted": len(record["omitted"]), "redone": len(todo)}
+    for k, (sec, (units, left, used)) in enumerate(zip(sections, results)):
+        before = len(sec["units"])
+        sec["units"] = [u if "facts" in u else dict(u, facts=cd.facts_in(u["text"], record["facts"])) for u in units]
+        report["sections"].append({"section": sec["title"], "before": before, "after": len(units), "tries": used,
+                                   "fallback": bool(left), "problems": left, "repeats": len(twice[k])})
+        print(f"[tidy] {sec['title']}: {before} -> {len(units)} sentences, {used} tries, "
+              f"{'KEPT AS IT WAS' if left else 'ok'}, {len(twice[k])} repeats left", flush=True)
+    record["narrative"] = [f"**{i + 1}. {s['title']}** " + " ".join(u["text"] for u in s["units"])
+                           for i, s in enumerate(sections)]
+    record["sentence_ai"] = [[u["by"] for u in s["units"]] for s in sections]
+    record["sentence_facts"] = [[u["facts"] for u in s["units"]] for s in sections]
+    return record, report
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("record")
+    ap.add_argument("--model", default=cp.DEFAULT_MODEL)
+    ap.add_argument("--report")
+    ap.add_argument("--low-trust", nargs="*", default=LOW_TRUST, help="AIs whose lone sentences may be left out")
+    args = ap.parse_args(argv)
+    record = json.load(open(args.record, encoding="utf-8"))
+    record, report = run(record, cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"]), low_trust=args.low_trust)
+    json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if args.report:
+        json.dump(report, open(args.report, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    kept = [s for s in report["sections"] if s["fallback"]]
+    print(f"{args.record}: {sum(s['before'] for s in report['sections'])} -> "
+          f"{sum(s['after'] for s in report['sections'])} sentences, {len(kept)} section(s) unchanged")
+    return 1 if kept else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

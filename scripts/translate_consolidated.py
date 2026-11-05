@@ -207,9 +207,11 @@ def main(argv=None):
     ap.add_argument("record")
     ap.add_argument("--model", default=cp.DEFAULT_MODEL)
     ap.add_argument("--report")
+    ap.add_argument("--all", action="store_true", help="translate every sentence again, not only those without Chinese (model trials)")
     args = ap.parse_args(argv)
     record = json.load(open(args.record, encoding="utf-8"))
-    record, report = run(record, cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"]))
+    record, report = run(record, cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"]),
+                          only_missing=not args.all)
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if args.report:
         json.dump(report, open(args.report, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

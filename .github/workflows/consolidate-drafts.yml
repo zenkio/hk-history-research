@@ -36,6 +36,11 @@ on:
         required: false
         type: string
         default: ''
+      retranslate:
+        description: With step translate, translate every sentence again (model trials; results go to the experiment branch only)
+        required: false
+        type: boolean
+        default: false
       max_steps:
         description: With step auto, how many steps to run per page in this call
         required: false
@@ -113,6 +118,7 @@ jobs:
           ADOPT: ${{ inputs.adopt }}
           RETRY: ${{ inputs.retry }}
           MAX_STEPS: ${{ inputs.max_steps }}
+          RETRANSLATE: ${{ inputs.retranslate }}
         run: |
           set -euo pipefail
           mkdir -p experiments/consolidate/reports
@@ -144,7 +150,8 @@ jobs:
             exit 0
           fi
           if [[ "$STEP" == "translate" ]]; then
-            python3 -u scripts/translate_consolidated.py "data/consolidated_facts/$PAGE.json" \
+            ALL=""; if [[ "$RETRANSLATE" == "true" ]]; then ALL="--all"; fi
+            python3 -u scripts/translate_consolidated.py "data/consolidated_facts/$PAGE.json" $ALL \
               --model "$MODEL" --report "experiments/consolidate/reports/$PAGE-zh.json" || true
             exit 0
           fi

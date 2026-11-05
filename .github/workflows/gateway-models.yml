@@ -3,6 +3,9 @@ name: List gateway models
 # Prints the model ids the AI gateway can pin (ids only, nothing private), so a trial can name one.
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - 'gateway-models/**'
 
 permissions:
   contents: read

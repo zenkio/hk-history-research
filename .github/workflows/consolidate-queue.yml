@@ -18,6 +18,9 @@ on:
         required: false
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
+  push:
+    branches:
+      - 'queue-run/**'
   schedule:
     - cron: '17 3 * * *'
 
@@ -30,7 +33,7 @@ concurrency:
 
 jobs:
   queue:
-    if: github.event_name == 'workflow_dispatch' || vars.QUEUE_ON == 'on'
+    if: github.event_name != 'schedule' || vars.QUEUE_ON == 'on'
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -40,7 +43,7 @@ jobs:
           repository: zenkio/hk-history-data
           token: ${{ secrets.DATA_REPO_TOKEN }}
           path: data
-          ref: ${{ inputs.data_ref || vars.QUEUE_DATA_REF || 'main' }}
+          ref: ${{ inputs.data_ref || vars.QUEUE_DATA_REF || 'claude/project-thread-0ylpkc' }}
           fetch-depth: 0
 
       - name: Continue from the results of earlier runs

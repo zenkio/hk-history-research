@@ -1,0 +1,20 @@
+name: List gateway models
+
+# Prints the model ids the AI gateway can pin (ids only, nothing private), so a trial can name one.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: GET /v1/models
+        env:
+          AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
+        run: |
+          curl -fsS -H "Authorization: Bearer $AI_GATEWAY_TOKEN" https://aigateway.zenkio.uk/v1/models \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin); m=d.get("data",d.get("models",d)); [print(x.get("id",x) if isinstance(x,dict) else x) for x in m]'

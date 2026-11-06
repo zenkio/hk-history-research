@@ -218,34 +218,86 @@ def run(page_md, record, call, tries=MAX_TRIES):
 SERVED = threading.local()  # the model id the gateway reports for the last answer in this thread
 
 
-def gateway_call(model, token, seed=20261030):
+FALLBACK_REST_S = 60  # a model that just failed is not asked again for this long while another in the chain is free
+
+
+def parse_chain(primary, fallbacks):
+    """The pinned model first, then the fallbacks in order; duplicates dropped. `fallbacks` is a list or a comma string."""
+    if isinstance(fallbacks, str):
+        fallbacks = [f.strip() for f in fallbacks.split(",")]
+    chain = []
+    for m in [primary, *(fallbacks or [])]:
+        if m and m not in chain:
+            chain.append(m)
+    return chain
+
+
+def gateway_call(model, token, seed=20261030, fallbacks=None):
+    """The writer call. `model` is pinned (temperature 0). If it is overloaded, rate limited or resting, the next model of
+    `fallbacks` is asked at once instead of waiting; only when every model in the chain failed does the call wait
+    (RETRY_WAITS, or until the earliest resting model is free) and start the chain again. The model that really answered
+    is left in SERVED so the usage ledger and the review can record it per answer."""
     import multi_ai_trial as mt
+    chain = parse_chain(model, os.environ.get("FALLBACK_MODELS", "") if fallbacks is None else fallbacks)
+    resting = {}  # model -> time.time() until which it is skipped
 
     def call(system, prompt):
-        body = {"capability": "llm.generate", "input": {"system": system, "prompt": prompt},
-                "options": {"task": "general", "temperature": 0, "seed": seed,
-                            "maxOutputTokens": mt.MAX_OUTPUT_TOKENS, "models": [model]}}
         for wait in (*RETRY_WAITS, None):
-            try:
-                data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
-                rec = mt.record_of({"id": "consolidate"}, model, data)
-                SERVED.model = rec.get("answered_model")
-                return rec["text"]
-            except mt.QuotaExhausted as e:  # a resting model says when it is free again: wait that long (max 10 min)
-                rest = mt.rest_seconds(str(e))
-                if rest is None or rest > 600 or wait is None:
-                    raise WriterUnavailable(str(e)[:200])
-                time.sleep(rest + 5)
+            failed, rests = [], []
+            last = Exception("every model in the chain is resting")
+            for m in chain:
+                if resting.get(m, 0) > time.time() and len(chain) > 1:
+                    failed.append(m)
+                    continue
+                body = {"capability": "llm.generate", "input": {"system": system, "prompt": prompt},
+                        "options": {"task": "general", "temperature": 0, "seed": seed,
+                                    "maxOutputTokens": mt.MAX_OUTPUT_TOKENS, "models": [m]}}
+                try:
+                    data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
+                    rec = mt.record_of({"id": "consolidate"}, m, data)
+                    SERVED.model = rec.get("answered_model") or m
+                    return rec["text"]
+                except mt.QuotaExhausted as e:  # a resting model says when it is free again
+                    rest = mt.rest_seconds(str(e))
+                    rests.append(rest)
+                    resting[m] = time.time() + (rest if rest is not None else FALLBACK_REST_S)
+                    failed.append(m)
+                    last = e
+                except Exception as e:  # overloaded / timeout / 5xx / dropped connection: try the next model
+                    transient = isinstance(e, (OSError, http.client.HTTPException)) or \
+                        re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
+                    if not transient:  # anything else is a bug: show it
+                        raise
+                    resting[m] = time.time() + FALLBACK_REST_S
+                    rests.append(None)
+                    failed.append(m)
+                    last = e
+            # every model in the chain failed this round
+            known = [r for r in rests if r is not None]
+            if rests and len(known) == len(rests):  # all resting with a known time: wait for the earliest (max 10 min)
+                soonest = min(known)
+                if soonest > 600 or wait is None:
+                    raise WriterUnavailable(str(last)[:200])
+                time.sleep(soonest + 5)
                 continue
-            except Exception as e:  # overloaded / timeout / 5xx / dropped connection: wait and ask again
-                transient = isinstance(e, (OSError, http.client.HTTPException)) or \
-                    re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
-                if not transient:  # anything else is a bug: show it
-                    raise
-                if wait is None:
-                    raise WriterUnavailable(str(e)[:200])
-                time.sleep(wait)
+            if wait is None or (rests and not known and isinstance(last, mt.QuotaExhausted)):
+                raise WriterUnavailable(str(last)[:200])
+            time.sleep(wait)
     return call
+
+
+def tracked(call):
+    """`call` plus the list of models that answered it: [wrapped_call, served_models]. A verdict can then say which
+    models gave it (never a single unnamed judge)."""
+    served = []
+
+    def wrapped(system, prompt):
+        SERVED.model = None
+        text = call(system, prompt)
+        if getattr(SERVED, "model", None):
+            served.append(SERVED.model)
+        return text
+    return wrapped, served
 
 
 def main(argv=None):
@@ -253,11 +305,12 @@ def main(argv=None):
     ap.add_argument("page")
     ap.add_argument("record")
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--fallbacks", default=os.environ.get("FALLBACK_MODELS", ""), help="comma-separated, tried in order when the pinned model is overloaded")
     ap.add_argument("--report")
     args = ap.parse_args(argv)
     page_md = open(args.page, encoding="utf-8").read()
     record = json.load(open(args.record, encoding="utf-8"))
-    record, report = run(page_md, record, gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"]))
+    record, report = run(page_md, record, gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"], fallbacks=args.fallbacks))
     json.dump(record, open(args.record, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if args.report:
         json.dump(report, open(args.report, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

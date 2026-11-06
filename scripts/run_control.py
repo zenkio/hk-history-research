@@ -56,7 +56,10 @@ def same_model(asked, served):
 
 class Control:
     def __init__(self, root=Path("."), signals=True, expected=None):
-        self.expected = expected  # the pinned model id: an answer from another model is counted as a mismatch
+        # the pinned model id, or the chain [pinned, fallback, ...]: an answer from a model outside the chain is a
+        # mismatch (alarm); one from a fallback inside the chain is counted as `fallback`, not as an alarm
+        self.chain = [expected] if isinstance(expected, str) else list(expected or [])
+        self.expected = self.chain[0] if self.chain else None
         self.root = Path(root)
         self.signalled = None
         self.lock = threading.Lock()  # the writer calls come from a thread pool
@@ -102,7 +105,10 @@ class Control:
                 models = bucket.setdefault("models", {})
                 models[served] = models.get(served, 0) + 1
                 if self.expected and not same_model(self.expected, served):
-                    bucket["mismatch"] = bucket.get("mismatch", 0) + 1
+                    if any(same_model(m, served) for m in self.chain[1:]):
+                        bucket["fallback"] = bucket.get("fallback", 0) + 1
+                    else:
+                        bucket["mismatch"] = bucket.get("mismatch", 0) + 1
         try:
             _save(self.root / USAGE, self.usage)
         except OSError as e:  # the ledger is bookkeeping: losing a write must never stop the pipeline (run 41929679016)
@@ -115,6 +121,10 @@ class Control:
     def forget_served(self):
         import consolidate_pipeline as cp
         cp.SERVED.model = None  # so an answer that does not report its model is not credited to the previous one
+
+    def fallbacks(self):
+        """How many answers (all pages, all steps) came from a fallback model of the chain instead of the pinned one."""
+        return sum(st.get("fallback", 0) for steps in self.usage["pages"].values() for st in steps.values())
 
     def mismatches(self):
         """How many answers (all pages, all steps) came from a model other than the pinned one."""

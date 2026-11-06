@@ -249,7 +249,7 @@ def main(argv=None):
             print(json.dumps(show(p), ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
-    ctl = rc.Control(expected=args.model)
+    ctl = rc.Control(expected=cp.parse_chain(args.model, os.environ.get("FALLBACK_MODELS", "")))
     for p in args.pages:
         run_page(p, call, args.model, args.max_steps, ctl=ctl)
     return 0

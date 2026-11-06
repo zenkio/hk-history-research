@@ -151,13 +151,15 @@ def main(argv=None):
                           "pages": [ps.show(p, root) for p in pages_of(root, queue)]}, ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
-    ctl = rc.Control(root, expected=args.model)
+    ctl = rc.Control(root, expected=cp.parse_chain(args.model, os.environ.get("FALLBACK_MODELS", "")))
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),
                              args.max_steps or queue.get("max_steps", 12), ctl=ctl)
     if ctl.mismatches():  # the gateway answered with another model than the pinned one: surface it
         ps.save(root / ISSUES, issues)
-        record_issue(issues, "gateway", "*", "model", f"{ctl.mismatches()} answers came from a model other than {args.model}")
+        record_issue(issues, "gateway", "*", "model", f"{ctl.mismatches()} answers came from a model outside the chain {cp.parse_chain(args.model, os.environ.get('FALLBACK_MODELS', ''))}")
         ps.save(root / ISSUES, issues)
+    if ctl.fallbacks():
+        print(f"[queue] {ctl.fallbacks()} answers came from fallback models (named per step in the usage ledger)", flush=True)
     print(f"[queue] pages worked: {len(done)}; open issues: {json.dumps(summary(issues))}", flush=True)
     if args.plan:
         import plan_queue

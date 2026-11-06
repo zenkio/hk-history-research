@@ -221,6 +221,14 @@ SERVED = threading.local()  # the model id the gateway reports for the last answ
 FALLBACK_REST_S = 60  # a model that just failed is not asked again for this long while another in the chain is free
 
 
+def _why(e):
+    """Only the error code words (never page text) for the call log: e.g. '502 all_models_failed', 'scope_paused: account per-minute limit'."""
+    text = str(e)
+    codes = re.findall(r"\b(?:[45]\d\d|all_models_failed|overloaded|rate_limited|quota_exhausted|timeout)\b", text)
+    scope = re.search(r"scope_paused: [a-z -]+limit|resting|spend cap", text)
+    return " ".join(dict.fromkeys(codes)) + (f" [{scope.group(0)}]" if scope else "") or type(e).__name__
+
+
 def parse_chain(primary, fallbacks):
     """The pinned model first, then the fallbacks in order; duplicates dropped. `fallbacks` is a list or a comma string."""
     if isinstance(fallbacks, str):
@@ -252,13 +260,16 @@ def gateway_call(model, token, seed=20261030, fallbacks=None):
                 body = {"capability": "llm.generate", "input": {"system": system, "prompt": prompt},
                         "options": {"task": "general", "temperature": 0, "seed": seed,
                                     "maxOutputTokens": mt.MAX_OUTPUT_TOKENS, "models": [m]}}
+                t0 = time.time()
                 try:
                     data = mt.post_gateway(body, token, f"cons-{abs(hash(prompt))}-{time.time_ns()}")
                     rec = mt.record_of({"id": "consolidate"}, m, data)
                     SERVED.model = rec.get("answered_model") or m
+                    print(f"[gw] asked={m} served={SERVED.model} ok {time.time() - t0:.1f}s", flush=True)
                     return rec["text"]
                 except mt.QuotaExhausted as e:  # a resting model says when it is free again
                     rest = mt.rest_seconds(str(e))
+                    print(f"[gw] asked={m} {_why(e)} {time.time() - t0:.1f}s rest={rest}", flush=True)
                     rests.append(rest)
                     resting[m] = time.time() + (rest if rest is not None else FALLBACK_REST_S)
                     failed.append(m)
@@ -268,6 +279,7 @@ def gateway_call(model, token, seed=20261030, fallbacks=None):
                         re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
                     if not transient:  # anything else is a bug: show it
                         raise
+                    print(f"[gw] asked={m} {_why(e)} {time.time() - t0:.1f}s", flush=True)
                     resting[m] = time.time() + FALLBACK_REST_S
                     rests.append(None)
                     failed.append(m)

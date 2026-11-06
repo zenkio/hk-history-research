@@ -181,3 +181,18 @@ def test_a_newer_version_of_a_fallback_family_is_a_fallback_not_a_mismatch(tmp_p
     ctl = rc.Control(tmp_path, signals=False, expected=["nvidia/nemotron-3-ultra-550b-a55b:free", "gemini-3.5-flash"])
     ctl._record("p", "fold", 1, 0, 1, 1, "gemini-3.6-flash")  # run of 2026-11-06: 7 false alarms
     assert ctl.fallbacks() == 1 and ctl.mismatches() == 0
+
+
+def test_every_gateway_call_is_logged_with_model_outcome_and_error_codes_only(monkeypatch, capsys):
+    import multi_ai_trial as mt
+
+    def fake_post(body, token, key):
+        if body["options"]["models"][0] == "a":
+            raise mt.QuotaExhausted("quota_exhausted (scope_paused: account per-minute limit) secret page words")
+        return {"output": {"text": "ok"}, "usage": {"billing": "free", "modelId": "b"}}
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(cp.time, "sleep", lambda s: None)
+    cp.gateway_call("a", "t", fallbacks="b")("s", "p")
+    out = capsys.readouterr().out
+    assert "asked=a" in out and "quota_exhausted" in out and "per-minute limit" in out and "asked=b served=b ok" in out
+    assert "secret" not in out

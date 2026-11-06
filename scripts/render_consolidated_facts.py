@@ -29,6 +29,30 @@ def esc(text):
     return html.escape(str(text), quote=True)
 
 
+# Treaty and event names that have a page of their own become links (first mention on a page only, never to the page itself).
+PAGE_LINKS = [
+    ("nanking-1842", r"Treaty of Nanking|Treaty of Nanjing|南京條約"),
+    ("peking-1860", r"Convention of Peking|Convention of Beijing|Treaty of Peking|北京條約"),
+    ("nt-lease-1898", r"Convention for the Extension of Hong Kong Territory|Second Convention of Peking|展拓香港界址專條"),
+    ("jd-1984", r"Sino-British Joint Declaration|中英聯合聲明"),
+    ("handover-1997", r"handover of Hong Kong|Handover of Hong Kong|香港回歸中國"),
+]
+_LINK_STATE = {"slug": None, "seen": set()}
+
+
+def link_names(escaped, lang="en"):
+    """Turn the first mention of a known treaty or event name into a link to its page. Works on escaped text only."""
+    for slug, pattern in PAGE_LINKS:
+        if slug == _LINK_STATE["slug"] or (slug, lang) in _LINK_STATE["seen"]:
+            continue
+        match = re.search(pattern, escaped)
+        if match:
+            _LINK_STATE["seen"].add((slug, lang))
+            escaped = (escaped[:match.start()] + f'<a href="/05_multi_ai/{slug}">{match.group(0)}</a>'
+                       + escaped[match.end():])
+    return escaped
+
+
 def name(model):
     """Model names must not be translated by the reader's browser."""
     return f'<span translate="no">{esc(model)}</span>'
@@ -111,12 +135,12 @@ def sentence_span(sentence, facts, models, fact_ids=(), english=None, conflict=N
         if fact is None:
             raise SystemExit(f"narrative names an unknown fact id: {match.group(1)}")
         inside.append((fact, match.group(2)))
-        parts.append(BOLD.sub(r"<strong>\1</strong>", esc(sentence[last:match.start()])))
+        parts.append(BOLD.sub(r"<strong>\1</strong>", link_names(esc(sentence[last:match.start()]), "zh" if english else "en")))
         parts.append(f'<mark class="fact-in">{esc(match.group(2))}</mark>')
         last = match.end()
-    parts.append(BOLD.sub(r"<strong>\1</strong>", esc(sentence[last:])))
+    parts.append(BOLD.sub(r"<strong>\1</strong>", link_names(esc(sentence[last:]), "zh" if english else "en")))
     if english:  # sentence is a translation: both are in the page, the language switch shows one
-        parts = [f'<span class="lang-zh">{mark_names("".join(parts))}</span><span class="lang-en" lang="en">{esc(english)}</span>']
+        parts = [f'<span class="lang-zh">{mark_names("".join(parts))}</span><span class="lang-en" lang="en">{link_names(esc(english))}</span>']
     shown_ids = {f["id"] for f, _ in inside}
     inside += [(facts[i], facts[i]["text"]) for i in fact_ids if i in facts and i not in shown_ids]
     rows = []
@@ -186,7 +210,8 @@ def paragraph_from_units(head, units, facts):
                       u["text"] if u.get("zh") else None, u.get("conflict")) for u in units) + "</p>"
 
 
-def render(record):
+def render(record, slug=None):
+    _LINK_STATE.update(slug=slug, seen=set())
     facts = {f["id"]: f for f in record["facts"]}
     ai = record.get("sentence_ai", [])
     sf = record.get("sentence_facts", [])
@@ -242,7 +267,7 @@ def build(root=Path(".")):
         if not record_file.is_file():
             raise SystemExit(f"{page}: has the marker but {record_file} is missing")
         record = json.loads(record_file.read_text(encoding="utf-8"))
-        page.write_text(text.replace(MARKER, render(record), 1), encoding="utf-8")
+        page.write_text(text.replace(MARKER, render(record, page.stem), 1), encoding="utf-8")
         done.append(str(page))
     return done
 

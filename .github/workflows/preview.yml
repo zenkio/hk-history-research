@@ -87,6 +87,9 @@ jobs:
       - name: Label legacy AI drafts before publication
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 
+      - name: Hide sections that are not shown (preview)
+        run: python3 scripts/site_visibility.py --mode preview
+
       - name: Render the consolidated facts of the multi-AI pages
         run: python3 scripts/render_consolidated_facts.py
 
@@ -107,6 +110,9 @@ jobs:
 
       - name: Chinese names for the left menu
         run: python3 scripts/titles_zh.py public
+
+      - name: Order of the left menu
+        run: python3 scripts/menu_order.py public
 
       - name: Tell search engines to ignore the preview
         run: |

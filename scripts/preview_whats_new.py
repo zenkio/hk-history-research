@@ -7,7 +7,7 @@ Run in the data checkout before the Quartz build (preview.yml only; the live dep
 * compares the checked-out branch with the base (default `origin/main`) by `git diff --name-status base...HEAD`;
 * adds tag `preview-new` or `preview-changed` to each added / modified page under `content/`
   (Quartz makes `/tags/preview-new` list them) and a callout under the front matter;
-* writes `content/00_Meta/Whats_New.md` linking every such page, newest sections first.
+* writes `content/Whats_New.md` linking every such page, newest sections first.
 
 Only the working copy of the build is touched; nothing is committed. A branch equal to main gets a page saying so.
 """
@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 CONTENT = "content/"
-PAGE = Path("content/00_Meta/Whats_New.md")
+PAGE = Path("content/Whats_New.md")
 TAGS = re.compile(r"^tags:\s*\[(.*?)\]\s*$", re.M)
 FRONT = re.compile(r"\A---\n.*?\n---\n", re.S)
 TITLE = re.compile(r'^title:\s*"?(.*?)"?\s*$', re.M)
@@ -57,7 +57,7 @@ def mark(text, tag, note):
         head = head[:found.start()] + 'tags: [' + (items + ", " if items else "") + f'"{tag}"]' + head[found.end():]
     elif not found:
         head = head[:-4] + f'tags: ["{tag}"]\n---\n'
-    return head + f"\n> [!info] {note}\n> Shown only in the preview. See [[00_Meta/Whats_New|What's new]].\n" + body
+    return head + f"\n> [!info] {note}\n> Shown only in the preview. See [[Whats_New|What's new]].\n" + body
 
 
 def link(path, title):

@@ -84,6 +84,10 @@ jobs:
         if: env.DRAFT == 'true'
         run: python scripts/label_legacy_ai_drafts.py --write --quiet
 
+      - name: Hide sections that are not shown (production)
+        if: env.DRAFT == 'true'
+        run: python3 scripts/site_visibility.py --mode production
+
       - name: Render the consolidated facts of the multi-AI pages
         if: env.DRAFT == 'true'
         run: python3 scripts/render_consolidated_facts.py
@@ -113,6 +117,10 @@ jobs:
       - name: Chinese names for the left menu
         if: env.DRAFT == 'true'
         run: python3 scripts/titles_zh.py public
+
+      - name: Order of the left menu
+        if: env.DRAFT == 'true'
+        run: python3 scripts/menu_order.py public
 
       # Keep the draft preview out of search engines and refuse to publish if any page lacks the tag.
       - name: Tell search engines to ignore the preview

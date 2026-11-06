@@ -170,7 +170,7 @@ def test_usage_ledger_counts_fallback_answers_apart_from_foreign_ones(tmp_path):
     import run_control as rc
     ctl = rc.Control(tmp_path, signals=False, expected=["nvidia/nemotron-3-ultra-550b-a55b:free", "fb/model:free"])
     ctl.chain.append("gemini-3.5-flash")
-    for served in ("nvidia/nemotron-3-ultra-550b-a55b", "fb/model:free", "other/model"):
+    for served in ("nvidia/nemotron-3-ultra-550b-a55b", "fb/model:free", "zzz/unrelated:free"):
         ctl._record("p", "review", 1, 0, 1, 1, served)
     st = ctl.usage["pages"]["p"]["review"]
     assert (st.get("fallback"), st.get("mismatch")) == (1, 1) and ctl.fallbacks() == 1 and ctl.mismatches() == 1

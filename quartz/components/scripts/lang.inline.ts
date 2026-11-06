@@ -90,6 +90,45 @@ function applyMenu(lang: string) {
   })
 }
 
+// ---- menu order (owner 2026-11-06): What's New, Timeline, People, Places first; people and places by importance ----
+let menuOrder: Record<string, string[]> | null = null
+let orderLoading = false
+
+async function loadOrder() {
+  if (menuOrder || orderLoading) return
+  orderLoading = true
+  try {
+    const res = await fetch("/static/menu-order.json")
+    menuOrder = res.ok ? (await res.json()).order ?? {} : {}
+  } catch {
+    menuOrder = {}
+  }
+  reorderMenu()
+}
+
+function reorderMenu() {
+  if (!menuOrder) return void loadOrder()
+  document.querySelectorAll<HTMLElement>(".explorer ul").forEach((ul) => {
+    const items = Array.from(ul.children).filter((c): c is HTMLElement => c.tagName === "LI")
+    if (items.length < 2) return
+    const slugs = items.map((li) => {
+      const el = li.querySelector("[data-folderpath], a[href]")
+      return el ? slugOf(el) : ""
+    })
+    const first = slugs.find((s) => s) ?? ""
+    const parent = first.includes("/") ? first.slice(0, first.lastIndexOf("/")) : ""
+    const wanted = menuOrder![parent]
+    if (!wanted) return
+    const rank = (i: number) => {
+      const at = wanted.indexOf(slugs[i])
+      return at < 0 ? wanted.length + i : at
+    }
+    const sorted = items.map((_, i) => i).sort((a, b) => rank(a) - rank(b))
+    if (sorted.every((v, i) => v === i)) return // already in order: touching the menu would wake the observer again
+    sorted.forEach((i) => ul.appendChild(items[i]))
+  })
+}
+
 function ensureGlobalSwitch(lang: string) {
   const side = document.querySelector<HTMLElement>(".sidebar.left")
   if (!side || side.querySelector(".lang-switch.global")) return
@@ -162,12 +201,14 @@ function setup() {
   ensureGlobalSwitch(stored())
   setupGraph()
   apply(stored())
+  reorderMenu()
   const explorer = document.querySelector(".explorer")
   if (explorer instanceof HTMLElement && !explorer.dataset.langObserved) {
     explorer.dataset.langObserved = "1"
     const watch = new MutationObserver(() => {
       watch.disconnect() // our own text changes must not wake us again
       applyMenu(stored())
+      reorderMenu()
       watch.observe(explorer, { childList: true, subtree: true })
     })
     watch.observe(explorer, { childList: true, subtree: true })

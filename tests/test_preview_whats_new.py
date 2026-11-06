@@ -44,8 +44,9 @@ def test_new_and_changed_pages_are_tagged_and_listed(tmp_path, monkeypatch):
 def test_branch_equal_to_base_says_so(tmp_path, monkeypatch):
     repo(tmp_path, monkeypatch)
     git(tmp_path, "checkout", "base")
+    monkeypatch.setattr(pw, "recent_pages", lambda days: {"A": [], "M": []})  # nothing recent either
     pw.build("base")
-    assert "no page differences" in (tmp_path / "content/Whats_New.md").read_text()
+    assert "No page differences" in (tmp_path / "content/Whats_New.md").read_text()
 
 
 def test_quick_preview_keeps_only_new_changed_home_and_whats_new(tmp_path, monkeypatch):
@@ -56,3 +57,14 @@ def test_quick_preview_keeps_only_new_changed_home_and_whats_new(tmp_path, monke
     left = sorted(str(f.relative_to(tmp_path)) for f in (tmp_path / "content").rglob("*.md"))
     assert left == ["content/01_Timeline/new.md", "content/01_Timeline/old.md",
                     "content/Whats_New.md", "content/index.md"]
+
+
+def test_branch_equal_to_base_lists_what_main_gained_lately(tmp_path, monkeypatch):
+    # owner 2026-11-06: previewing main showed an empty "What's new" because it was compared with itself
+    repo(tmp_path, monkeypatch)
+    git(tmp_path, "checkout", "main")
+    git(tmp_path, "merge", "-q", "feature")
+    changes = pw.build("main")
+    assert changes["A"] == ["content/01_Timeline/new.md", "content/01_Timeline/old.md", "content/01_Timeline/same.md"]
+    listing = (tmp_path / "content/Whats_New.md").read_text()
+    assert "gained in the last 7 days" in listing and "New / One" in listing

@@ -19,6 +19,7 @@ from pathlib import Path
 
 CONTENT = "content/"
 PAGE = Path("content/Whats_New.md")
+RECENT_DAYS = 7
 TAGS = re.compile(r"^tags:\s*\[(.*?)\]\s*$", re.M)
 FRONT = re.compile(r"\A---\n.*?\n---\n", re.S)
 TITLE = re.compile(r'^title:\s*"?(.*?)"?\s*$', re.M)
@@ -38,6 +39,20 @@ def changed_pages(base, run=subprocess.run):
         if status in found and path.endswith(".md") and path != str(PAGE):
             found[status].append(path)
     return {k: sorted(v) for k, v in found.items()}
+
+
+def recent_pages(days, run=subprocess.run):
+    """When the previewed branch equals the base there is nothing to compare, so show what main itself gained lately:
+    pages added (A) or changed (M) by commits of the last `days` days that still exist."""
+    out = run(["git", "log", f"--since={days}.days", "--name-status", "--no-renames", "--format=", "--", CONTENT],
+              capture_output=True, text=True, check=True).stdout
+    added, touched = set(), set()
+    for line in out.splitlines():
+        status, _, path = line.partition("\t")
+        if not path.endswith(".md") or path == str(PAGE) or not Path(path).exists():
+            continue
+        (added if status == "A" else touched).add(path)
+    return {"A": sorted(added), "M": sorted(touched - added)}
 
 
 def title_of(text, path):
@@ -67,9 +82,13 @@ def link(path, title):
 
 def build(base, root=Path(".")):
     changes = changed_pages(base)
+    recent = False
+    if not any(changes.values()):
+        changes, recent = recent_pages(RECENT_DAYS), True
     lines = ["---", 'title: "What\'s new in this preview"', 'tags: ["preview-meta"]',
              'description: "Pages added or changed in the previewed data branch compared with main."', "---", "",
-             f"Compared with `{base}`. This page exists only in the preview.", ""]
+             (f"The previewed branch equals `{base}`, so this lists what `{base}` gained in the last {RECENT_DAYS} days. "
+              if recent else f"Compared with `{base}`. ") + "This page exists only in the preview.", ""]
     total = 0
     for status, (tag, heading) in LABELS.items():
         pages = changes[status]
@@ -84,7 +103,7 @@ def build(base, root=Path(".")):
             lines.append(link(path, title_of(text, path)))
         lines.append("")
     if not total:
-        lines += ["The previewed branch has no page differences from main.", ""]
+        lines += [f"No page differences from {base}" + (f" and none added in the last {RECENT_DAYS} days." if recent else "."), ""]
     target = root / PAGE
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n".join(lines), encoding="utf-8")

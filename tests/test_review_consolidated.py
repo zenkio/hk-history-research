@@ -138,3 +138,21 @@ def test_only_the_changed_sentence_and_its_neighbours_are_asked_again():
     asked = []
     rec, rep = rv.run(rec, lambda s, p: asked.append(p) or "NONE", "M")
     assert rep["asked"] == 1 and rep["reused"] == 3 and rep["conflicts"] == 1
+
+
+def test_verdict_from_a_fallback_model_names_it_and_is_asked_again_by_the_pinned_model():
+    import consolidate_pipeline as cp
+    import review_consolidated as rv
+    rec = {"sections": [{"units": [{"text": "Britain imported tea from China in the 1830s.", "by": ["A", "B"]},
+                                   {"text": "China imported tea from Britain in the 1830s.", "by": ["C"]}]}]}
+    state = {"model": "fb/model"}
+
+    def call(system, prompt):
+        cp.SERVED.model = state["model"]
+        return "NONE"
+    rec, rep = rv.run(rec, call, model="pinned/model")
+    cached = list(rec["review_cache"].values())
+    assert all(c["fallback"] and c["models"] == ["fb/model"] for c in cached)
+    state["model"] = "pinned/model"
+    rec, rep = rv.run(rec, call, model="pinned/model")
+    assert rep["asked"] == 2 and not any(c.get("fallback") for c in rec["review_cache"].values())

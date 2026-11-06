@@ -19,6 +19,7 @@ import re
 import sys
 
 import consolidate_pipeline as cp
+from run_control import same_model as rc_same
 
 SYSTEM = ("You check one history sentence against related sentences from the same page. You use only what the "
           "sentences say, never outside knowledge of your own about what is true.")
@@ -147,22 +148,39 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
     units = flat(record)
     cache = record.get("review_cache", {})
     keys = [cache_key(units, i) for i in range(len(units))]
-    todo = [i for i in range(len(units)) if keys[i] not in cache]
+    # a verdict given by a fallback model (the pinned one was overloaded) is asked again by the pinned model on a later
+    # run: no single fallback model stays the only judge of a sentence
+    todo = [i for i in range(len(units)) if keys[i] not in cache or cache[keys[i]].get("fallback")]
+
+    def judged(i):
+        tcall, served = cp.tracked(call)
+        out = judge(tcall, units, i, tries)
+        return out, sorted(set(served))
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
-        fresh = dict(zip(todo, pool.map(lambda i: judge(call, units, i, tries), todo)))
+        fresh = dict(zip(todo, pool.map(judged, todo)))
     texts = {u["text"]: j for j, u in enumerate(units)}
     pairs = {}  # sentence index -> (index of the sentence it conflicts with, reason)
     unreviewed, new_cache = 0, {}
+    judges = {}  # sentence index -> models that really answered for it (when they differ from the pinned one)
     for i in range(len(units)):
         if i in fresh:
-            pair, ok = fresh[i]
+            (pair, ok), served = fresh[i]
             unreviewed += not ok
+            others = [m for m in served if model and not rc_same(model, m)]
+            if others:
+                judges[i] = served
             if ok:
                 new_cache[keys[i]] = {"with": units[pair[0]]["text"] if pair else None, "note": pair[1] if pair else None}
+                if served:
+                    new_cache[keys[i]]["models"] = served
+                if others:
+                    new_cache[keys[i]]["fallback"] = True
         else:
             c = cache[keys[i]]
             pair = (texts[c["with"]], c["note"]) if c["with"] in texts else None
             new_cache[keys[i]] = c
+            if c.get("models"):
+                judges[i] = c["models"]
         if pair:
             pairs[i] = pair
     record["review_cache"] = new_cache
@@ -184,7 +202,7 @@ def run(record, call, model="", tries=cp.MAX_TRIES):
         u.pop("conflict", None)
         if i in chosen:
             j, note = chosen[i]
-            u["conflict"] = {"with": [units[j]["text"]], "note": note, "judged_by": model}
+            u["conflict"] = {"with": [units[j]["text"]], "note": note, "judged_by": ", ".join(judges.get(i) or [model])}
             flagged.append({"text": u["text"], "with": units[j]["text"], "note": note})
     tally = {}  # per AI: sentences it backs that were flagged, of all the sentences it backs (a rating input)
     for u in units:

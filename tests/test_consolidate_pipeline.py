@@ -134,3 +134,42 @@ def test_a_source_sentence_squeezed_to_a_hint_is_refused():
     kept = "[C1] Lin Zexu was appointed by the Daoguang Emperor with full authority to suppress the trade."
     lines, _ = cp.parse_fold(kept, 1, 0)
     assert not any("kept too little" in p for p in cp.check_fold(lines, cur, []))
+
+
+def test_overloaded_model_falls_back_to_the_next_at_once_and_the_answering_model_is_recorded(monkeypatch):
+    import multi_ai_trial as mt
+    asked, slept = [], []
+
+    def fake_post(body, token, key):
+        m = body["options"]["models"][0]
+        asked.append(m)
+        assert body["options"]["temperature"] == 0
+        if m == "primary":
+            raise Exception("502 all_models_failed overloaded")
+        return {"output": {"text": "ok"}, "usage": {"billing": "free", "modelId": m}}
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(cp.time, "sleep", slept.append)
+    call = cp.gateway_call("primary", "t", fallbacks="fb1, fb2")
+    assert call("s", "p") == "ok" and asked == ["primary", "fb1"] and slept == []  # no waiting
+    assert cp.SERVED.model == "fb1"
+    call("s", "p2")  # the failed primary rests briefly: it is not hammered again
+    assert asked[2:] == ["fb1"]
+
+
+def test_whole_chain_overloaded_waits_then_asks_again_and_gives_up_as_unavailable(monkeypatch):
+    import multi_ai_trial as mt
+    monkeypatch.setattr(mt, "post_gateway", lambda *a: (_ for _ in ()).throw(Exception("429 rate_limited")))
+    slept = []
+    monkeypatch.setattr(cp.time, "sleep", slept.append)
+    with pytest.raises(cp.WriterUnavailable):
+        cp.gateway_call("a", "t", fallbacks=["b"])("s", "p")
+    assert slept == list(cp.RETRY_WAITS)
+
+
+def test_usage_ledger_counts_fallback_answers_apart_from_foreign_ones(tmp_path):
+    import run_control as rc
+    ctl = rc.Control(tmp_path, signals=False, expected=["nvidia/nemotron-3-ultra-550b-a55b:free", "fb/model:free"])
+    for served in ("nvidia/nemotron-3-ultra-550b-a55b", "fb/model:free", "other/model"):
+        ctl._record("p", "review", 1, 0, 1, 1, served)
+    st = ctl.usage["pages"]["p"]["review"]
+    assert (st.get("fallback"), st.get("mismatch")) == (1, 1) and ctl.fallbacks() == 1 and ctl.mismatches() == 1

@@ -18,6 +18,11 @@ on:
         required: false
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
+      fallbacks:
+        description: Comma-separated model ids tried in order when the writer is overloaded (empty = none)
+        required: false
+        type: string
+        default: nvidia/nemotron-3.5-lightning:free,gemini-3.5-flash,xingchen-agi/xing4.0-29b-a4b:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
   schedule:
     - cron: '17 3 * * *'
 
@@ -82,6 +87,7 @@ jobs:
         env:
           AI_GATEWAY_TOKEN: ${{ secrets.AI_GATEWAY_TOKEN }}
           MODEL: ${{ inputs.model || 'nvidia/nemotron-3-ultra-550b-a55b:free' }}
+          FALLBACK_MODELS: ${{ github.event_name == 'schedule' && 'nvidia/nemotron-3.5-lightning:free,gemini-3.5-flash,xingchen-agi/xing4.0-29b-a4b:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free' || inputs.fallbacks }}
         run: |
           set -euo pipefail
           python3 -u scripts/consolidate_queue.py --model "$MODEL" --plan || true

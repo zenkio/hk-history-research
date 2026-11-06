@@ -106,3 +106,15 @@ def test_safety_net_keeps_the_marks_of_the_title_attribute_for_the_page_script()
     import render_consolidated_facts as r
     out = r.strip_marks_left('<span data-zh="⟦林則徐⟧在⟦虎門⟧"></span> stray ⟦x')
     assert 'data-zh="⟦林則徐⟧在⟦虎門⟧"' in out and out.endswith("stray x")
+
+
+def test_treaty_names_link_to_their_pages_once_and_never_to_the_page_itself():
+    # owner 2026-11-06: "Treaty of Nanking" / 《南京條約》 on the 1997 page had no link to the Nanking page
+    import render_consolidated_facts as r
+    unit = {"text": "Hong Kong Island was ceded by the Treaty of Nanking; the Treaty of Nanking was followed by the Convention of Peking.",
+            "zh": "香港島根據《南京條約》割讓；《南京條約》之後有《北京條約》。", "by": ["A"]}
+    rec = {"facts": [], "sections": [{"title": "Background", "units": [unit]}]}
+    page = r.render(rec, "handover-1997")
+    assert page.count('href="/05_multi_ai/nanking-1842"') == 2  # once in Chinese, once in English
+    assert 'href="/05_multi_ai/peking-1860"' in page
+    assert 'href="/05_multi_ai/nanking-1842"' not in r.render(rec, "nanking-1842")

@@ -51,6 +51,9 @@ export function byDateAndAlphabeticalFolderFirst(): SortFn {
   }
 }
 
+// folder and tag pages: a few small tags on one line, never a tall stack (the rest show as +N)
+const MAX_LIST_TAGS = 3
+
 type Props = {
   limit?: number
   sort?: SortFn
@@ -84,7 +87,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 </h3>
               </div>
               <ul class="tags">
-                {tags.map((tag) => (
+                {tags.slice(0, MAX_LIST_TAGS).map((tag) => (
                   <li>
                     <a
                       class="internal tag-link"
@@ -94,6 +97,11 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                     </a>
                   </li>
                 ))}
+                {tags.length > MAX_LIST_TAGS && (
+                  <li class="more-tags" title={tags.slice(MAX_LIST_TAGS).join(", ")}>
+                    +{tags.length - MAX_LIST_TAGS}
+                  </li>
+                )}
               </ul>
             </div>
           </li>
@@ -108,7 +116,28 @@ PageList.css = `
   margin: 0;
 }
 
+.section > .meta {
+  font-size: 0.65rem;
+  opacity: 0.55;
+}
+
 .section > .tags {
   margin: 0;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  font-size: 0.7rem;
+}
+
+.section > .tags .tag-link {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.7rem;
+}
+
+.section > .tags .more-tags {
+  opacity: 0.6;
+  list-style: none;
 }
 `

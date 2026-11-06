@@ -54,6 +54,14 @@ def same_model(asked, served):
     return bool(a) and bool(b) and (a.startswith(b) or b.startswith(a))
 
 
+def same_family(asked, served):
+    """gemini-3.5-flash asked, gemini-3.6-flash served: the gateway may answer with a newer version of the same family."""
+    def fam(x):
+        x = (x or "").split(":")[0].lower().split("/")[-1]
+        return x.split("-")[0]
+    return bool(fam(asked)) and fam(asked) == fam(served)
+
+
 class Control:
     def __init__(self, root=Path("."), signals=True, expected=None):
         # the pinned model id, or the chain [pinned, fallback, ...]: an answer from a model outside the chain is a
@@ -105,7 +113,7 @@ class Control:
                 models = bucket.setdefault("models", {})
                 models[served] = models.get(served, 0) + 1
                 if self.expected and not same_model(self.expected, served):
-                    if any(same_model(m, served) for m in self.chain[1:]):
+                    if any(same_model(m, served) or same_family(m, served) for m in self.chain[1:]):
                         bucket["fallback"] = bucket.get("fallback", 0) + 1
                     else:
                         bucket["mismatch"] = bucket.get("mismatch", 0) + 1

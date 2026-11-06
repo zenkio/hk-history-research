@@ -180,7 +180,7 @@ def units_of(lines, current, draft):
     return units
 
 
-PARALLEL_SECTIONS = 4  # the seven sections of one fold are independent, so they are written side by side
+PARALLEL_SECTIONS = 2  # sections of one fold are independent, so they are written side by side; 4 at once timed out together on an overloaded writer (2026-11-06 runs)
 
 
 def run(page_md, record, call, tries=MAX_TRIES):

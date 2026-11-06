@@ -58,7 +58,14 @@ jobs:
             base=$(git rev-parse HEAD)
             git fetch origin auto/consolidate-queue
             git checkout -B auto/consolidate-queue FETCH_HEAD
-            git merge --no-edit "$base"
+            if ! git merge --no-edit "$base"; then
+              # the control file is the owner's switch on main (pause, daily cap): main wins; any other conflict stops the run
+              conflicts=$(git diff --name-only --diff-filter=U)
+              [ "$conflicts" = "data/consolidated_control.json" ] || { echo "unresolved conflicts: $conflicts"; exit 1; }
+              git checkout --theirs data/consolidated_control.json
+              git add data/consolidated_control.json
+              git commit --no-edit
+            fi
           else
             git checkout -b auto/consolidate-queue
           fi

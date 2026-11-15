@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "company-hq": {
+      "type": "http",
+      "url": "${HQ_URL}/mcp",
+      "headers": { "Authorization": "Bearer ${HQ_TOKEN}" }
+    }
+  }
+}

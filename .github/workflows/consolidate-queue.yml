@@ -4,7 +4,8 @@ name: Consolidate queue (auto)
 # (scripts/consolidate_queue.py): only the steps a page still needs, self-healing within bounds, unresolved
 # problems written to data/consolidated_status/_issues.json. Results go to the private branch
 # auto/consolidate-queue of the data repository; nothing is merged and the live site is not touched.
-# Scheduled runs happen only while the repository variable QUEUE_ON is "on" (and only from the default branch).
+# Scheduled runs happen unless the repository variable QUEUE_ON is "off" (and only from the default branch). Since 2026-11-16
+# the owner wants it on by default; set QUEUE_ON to "off" (or pause in data/consolidated_control.json) to stop it.
 on:
   workflow_dispatch:
     inputs:
@@ -35,7 +36,7 @@ concurrency:
 
 jobs:
   queue:
-    if: github.event_name == 'workflow_dispatch' || vars.QUEUE_ON == 'on'
+    if: github.event_name == 'workflow_dispatch' || vars.QUEUE_ON != 'off'
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:

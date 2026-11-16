@@ -107,3 +107,11 @@ def test_defects_the_gate_could_not_repair_become_quality_issues_and_close_when_
     ps.retry("a", ["translate"], root)
     _, issues = cq.run_queue(None, "M", root)
     assert not issues["a|cantonese|quality"]["open"]
+
+
+def test_workflow_saves_the_page_files_not_only_the_data():
+    # The first run that drafted pages (2026-11-16) lost them: the save step committed data/ only.
+    from pathlib import Path
+    wf = (Path(__file__).resolve().parent.parent / ".github/workflows/consolidate-queue.yml").read_text()
+    add = [l for l in wf.splitlines() if "git add" in l and "consolidated_queue.json" in l]
+    assert add and "content/05_Multi_AI" in add[0]

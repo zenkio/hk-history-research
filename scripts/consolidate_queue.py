@@ -151,6 +151,10 @@ def main(argv=None):
                           "pages": [ps.show(p, root) for p in pages_of(root, queue)]}, ensure_ascii=False))
         return 0
     call = cp.gateway_call(args.model, os.environ["AI_GATEWAY_TOKEN"])
+    if args.plan:  # topics the AI proposed (or the owner approved) become pages first, so this run already works on them
+        import draft_page
+        draft_page.draft_pending(root)
+        queue = ps.load(root / QUEUE, {})
     ctl = rc.Control(root, expected=cp.parse_chain(args.model, os.environ.get("FALLBACK_MODELS", "")))
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),
                              args.max_steps or queue.get("max_steps", 12), ctl=ctl)

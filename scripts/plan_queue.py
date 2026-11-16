@@ -65,7 +65,9 @@ def prompt(pages, eras, focus, proposals):
         "The owner's focus topics and order of work:", focus or "(none)", "",
         f"Name up to {MAX_NEW} topics that are missing and should be added next, following the owner's order of "
         "work (core story first: territory changes 1839-1997, then the Cultural Revolution and 1967, 1989, and "
-        "districts last). Each topic is one dated event or treaty a reader could look up. Do not repeat anything "
+        "districts last). Cover every major event of the story before adding detail or background topics: first "
+        "the missing events, treaties and turning points in date order, only then topics that enrich an existing "
+        "page. Each topic is one dated event or treaty a reader could look up. Do not repeat anything "
         "above. No ongoing criminal cases and no living private people. Write no history, only the topic.",
         "Output exactly one line per topic: `P | slug | title | year | reason` where slug is lower-case words "
         "joined by hyphens ending in the year (e.g. `convention-of-chuenpi-1841`), year is four digits, reason is "
@@ -107,7 +109,7 @@ def open_pages(root, queue):
 def promote(root, queue):
     """Proposals whose page now exists go into the queue's pages."""
     for p in queue.get("proposals", []):
-        if p["status"] == "proposed" and (root / ps.PAGES / f"{p['slug']}.md").exists():
+        if p["status"] in ("proposed", "approved") and (root / ps.PAGES / f"{p['slug']}.md").exists():
             p["status"] = "page-exists"
             queue.setdefault("pages", [])
             if queue["pages"] and p["slug"] not in queue["pages"]:
@@ -118,7 +120,7 @@ def promote(root, queue):
 def plan(call, model, root=Path(".")):
     queue = promote(root, ps.load(root / QUEUE, {}))
     proposals = queue.setdefault("proposals", [])
-    waiting = sum(1 for p in proposals if p["status"] == "proposed")
+    waiting = sum(1 for p in proposals if p["status"] in ("proposed", "approved"))
     if open_pages(root, queue) > LOW_WATER or waiting >= MAX_OPEN:
         ps.save(root / QUEUE, queue)
         print(f"[plan] enough work queued ({open_pages(root, queue)} pages open, {waiting} proposals): no new call", flush=True)

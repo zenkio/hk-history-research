@@ -232,7 +232,8 @@ def _why(e):
 def parse_chain(primary, fallbacks):
     """The pinned model first, then the fallbacks in order; duplicates dropped. `fallbacks` is a list or a comma string."""
     if isinstance(fallbacks, str):
-        fallbacks = [f.strip() for f in fallbacks.split(",")]
+        # "none" is how a manually started run says "no fallbacks": GitHub gives an empty workflow input its default
+        fallbacks = [] if fallbacks.strip().lower() == "none" else [f.strip() for f in fallbacks.split(",")]
     chain = []
     for m in [primary, *(fallbacks or [])]:
         if m and m not in chain:
@@ -275,6 +276,15 @@ def gateway_call(model, token, seed=20261030, fallbacks=None):
                     failed.append(m)
                     last = e
                 except Exception as e:  # overloaded / timeout / 5xx / dropped connection: try the next model
+                    if "no_eligible_route" in str(e) and len(chain) > 1:
+                        # the gateway cannot serve this model to this project at all (e.g. not free): skip it for
+                        # the rest of the run instead of crashing the page (the 2026-11-12 run died on Xing4.0)
+                        print(f"[gw] asked={m} {_why(e)} not available to this project, skipped for the run", flush=True)
+                        resting[m] = time.time() + 10**9
+                        rests.append(None)
+                        failed.append(m)
+                        last = e
+                        continue
                     transient = isinstance(e, (OSError, http.client.HTTPException)) or \
                         re.search(r"\b(5\d\d|overloaded|timeout|rate_limited)\b", str(e))
                     if not transient:  # anything else is a bug: show it

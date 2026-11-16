@@ -19,7 +19,7 @@ on:
         type: string
         default: nvidia/nemotron-3-ultra-550b-a55b:free
       fallbacks:
-        description: Comma-separated model ids tried in order when the writer is overloaded (empty = none)
+        description: Comma-separated model ids tried in order when the writer is overloaded (type none for no fallbacks; an empty value gets the default)
         required: false
         type: string
         default: nvidia/nemotron-3.5-lightning:free,gemini-3.5-flash,xingchen-agi/xing4.0-29b-a4b:free,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free

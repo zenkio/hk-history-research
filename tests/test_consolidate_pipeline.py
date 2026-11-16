@@ -196,3 +196,33 @@ def test_every_gateway_call_is_logged_with_model_outcome_and_error_codes_only(mo
     out = capsys.readouterr().out
     assert "asked=a" in out and "quota_exhausted" in out and "per-minute limit" in out and "asked=b served=b ok" in out
     assert "secret" not in out
+
+
+def test_a_fallback_the_gateway_cannot_serve_is_skipped_not_a_crash(monkeypatch):
+    # the 2026-11-12 queue run died on "422 no_eligible_route" for Xing4.0 (not free for this project)
+    import multi_ai_trial as mt
+    asked = []
+
+    def fake_post(body, token, key):
+        m = body["options"]["models"][0]
+        asked.append(m)
+        if m == "bad":
+            raise Exception("422 no_eligible_route None of the requested models (bad) is available")
+        if m == "writer":
+            raise Exception("502 overloaded")
+        return {"text": "ok"}
+
+    monkeypatch.setattr(mt, "post_gateway", fake_post)
+    monkeypatch.setattr(mt, "record_of", lambda meta, m, data: {"text": data["text"], "answered_model": m})
+    call = cp.gateway_call("writer", "t", fallbacks=["bad", "good"])
+    assert call("s", "p") == "ok"
+    assert asked == ["writer", "bad", "good"]
+    asked.clear()
+    assert call("s", "p") == "ok"
+    assert "bad" not in asked  # skipped for the rest of the run
+
+
+def test_fallbacks_none_means_no_fallbacks():
+    assert cp.parse_chain("writer", "none") == ["writer"]
+    assert cp.parse_chain("writer", " None ") == ["writer"]
+    assert cp.parse_chain("writer", "a,b") == ["writer", "a", "b"]

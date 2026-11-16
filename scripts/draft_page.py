@@ -29,9 +29,10 @@ SEED = mt.DEFAULT_SEED
 
 def next_topics(queue, root, limit=PER_RUN):
     """Proposals still without a page: approved ones by `order`, then proposed ones in the order they were made."""
-    todo = [p for p in queue.get("proposals", []) if p.get("status") in ("approved", "proposed")
+    # "page-exists" with no file is a page lost with a run that did not save it (2026-11-16): draft it again
+    todo = [p for p in queue.get("proposals", []) if p.get("status") in ("approved", "proposed", "page-exists")
             and not (root / ps.PAGES / f"{p['slug']}.md").exists()]
-    todo.sort(key=lambda p: (p["status"] != "approved", p.get("order", 10**6)))
+    todo.sort(key=lambda p: (p["status"] == "proposed", p.get("order", 10**6)))
     return todo[:limit]
 
 

@@ -105,7 +105,7 @@ jobs:
         working-directory: data
         run: |
           set -euo pipefail
-          git add data/consolidated_facts data/consolidated_status data/consolidated_queue.json data/consolidated_usage.json
+          git add content/05_Multi_AI data/consolidated_facts data/consolidated_status data/consolidated_queue.json data/consolidated_usage.json
           if git diff --cached --quiet; then echo "nothing was written"; exit 0; fi
           git commit -m "auto: consolidate queue"
           git push origin auto/consolidate-queue

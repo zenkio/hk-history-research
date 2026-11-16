@@ -72,3 +72,9 @@ def test_a_too_short_answer_is_not_a_draft(tmp_path):
     root = setup(tmp_path)
     gw = gateway_of({dp.REQUIRED[0]: "Too short.", "gemini-3.5-flash": DRAFT})
     assert dp.draft_pending(root, "t", gateway=gw) == []
+
+
+def test_a_page_marked_existing_but_missing_on_disk_is_drafted_again(tmp_path):
+    import draft_page as dp
+    q = {"proposals": [{"slug": "a", "status": "page-exists", "order": 1}]}
+    assert [p["slug"] for p in dp.next_topics(q, tmp_path)] == ["a"]

@@ -118,3 +118,16 @@ def test_treaty_names_link_to_their_pages_once_and_never_to_the_page_itself():
     assert page.count('href="/05_multi_ai/nanking-1842"') == 2  # once in Chinese, once in English
     assert 'href="/05_multi_ai/peking-1860"' in page
     assert 'href="/05_multi_ai/nanking-1842"' not in r.render(rec, "nanking-1842")
+
+
+def test_a_page_says_which_sentences_the_pipeline_has_not_finished():
+    # 2026-11-17: Bogue and British possession kept an English sentence after the repair rounds with nothing on the page
+    record = {"facts": [], "sections": [
+        {"title": "What happened", "units": [{"text": "A.", "by": ["X"]}, {"text": "B.", "zh": "乙。", "by": ["X"]}]},
+        {"title": "Consequences", "units": [{"text": "C.", "zh": "丙。", "by": ["X"]}]}]}
+    status = {"gate": {"findings": [{"check": "ai:confusing", "step": "tidy", "section": "Consequences", "where": 0}]}}
+    html = rc.render(record, "p", status)
+    assert 'class="cons-open-work"' in html
+    assert "translation (What happened #1)" in html and "wording (Consequences #1)" in html and "自動重試" in html
+    done = {"facts": [], "sections": [{"title": "S", "units": [{"text": "A.", "zh": "甲。", "by": ["X"]}]}]}
+    assert "cons-open-work" not in rc.render(done, "p", {"gate": {"findings": []}})

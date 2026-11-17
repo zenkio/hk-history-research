@@ -144,3 +144,25 @@ def test_a_step_left_with_gaps_because_the_model_was_down_does_not_use_up_its_at
         assert ran[-1] == "translate"
     st = json.loads((root / ps.STATUS / "p.json").read_text())
     assert st["translate"]["state"] == "partial" and st["translate"]["attempts"] == 0
+
+
+def test_a_page_whose_repair_rounds_ran_out_yesterday_gets_its_rounds_again_today(tmp_path, monkeypatch):
+    # 2026-11-17: Bogue and British possession kept an English sentence for good after two rounds on the first day
+    root, log = setup(tmp_path), []
+    monkeypatch.setattr(ps, "execute", fake_execute(log))
+    ps.run_page("p", None, "M", root=root)
+    rec_path, st_path = root / ps.RECORDS / "p.json", root / ps.STATUS / "p.json"
+    record, status = ps.load(rec_path, {}), ps.load(st_path, {})
+    record["sections"][0]["units"][0].pop("zh")
+    ps.save(rec_path, record)
+    status["gate"] = {"rounds": 2, "day": "2026-11-16"}
+    ps.save(st_path, status)
+    log.clear()
+    assert "translate" in ps.run_page("p", None, "M", root=root)
+    status = ps.load(st_path, {})
+    status["gate"] = {"rounds": 2, "day": ps.datetime.now(ps.timezone.utc).strftime("%Y-%m-%d")}
+    record["sections"][0]["units"][0].pop("zh", None)
+    ps.save(rec_path, record)
+    ps.save(st_path, status)
+    log.clear()
+    assert "translate" not in ps.run_page("p", None, "M", root=root)  # the same day: no third round

@@ -143,9 +143,13 @@ def run_page(page, call, model="", max_steps=12, root=Path("."), ctl=None):
                 av.apply(record, findings)
                 save(rec_path, record)
             gate = status.get("gate", {})
-            rounds = gate.get("rounds", 0)
-            status["gate"] = {"rounds": rounds, "counts": qg.summary(findings), "findings": findings[:25], "ai": ai,
-                              "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
+            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            # a page with defects left gets its repair rounds again on a new day: a better translator prompt or a model
+            # that is less overloaded may fix what two rounds could not (2026-11-17: Bogue and British possession pages
+            # kept English sentences for good), at most GATE_ROUNDS rounds a page and day
+            rounds = gate.get("rounds", 0) if gate.get("day") == today else 0
+            status["gate"] = {"rounds": rounds, "day": today, "counts": qg.summary(findings), "findings": findings[:25],
+                              "ai": ai, "at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
             # a step already accepted with gaps was given up on: its defects wait in the issue list, not another round
             fixable = [s for s in qg.steps_to_repair(findings) if status.get(s, {}).get("state") != "accepted"]
             if findings and fixable and rounds < GATE_ROUNDS:

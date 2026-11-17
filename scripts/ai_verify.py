@@ -95,6 +95,9 @@ def apply(record, findings):
             continue
         sec = next(s for s in record["sections"] if s["title"] == f["section"])
         if f["step"] == "translate":
-            sec["units"][f["where"]].pop("zh", None)
+            unit = sec["units"][f["where"]]
+            old = unit.pop("zh", None)
+            if old:  # the translator is told what was wrong, or it repeats the same mistake (2026-11-17: "Union Jack" as 聯邦旗)
+                unit["zh_rejected"] = {"zh": old, "why": f.get("detail", "")}
         else:
             flags.setdefault(f["section"], []).append(f["pair"] if f["check"] == "ai:same_point" else [f["where"]])

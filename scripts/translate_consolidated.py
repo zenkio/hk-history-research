@@ -132,10 +132,10 @@ def check(raw, texts):
     return out, problems
 
 
-def translate_section(call, title, texts, tries=MAX_TRIES):
+def translate_section(call, title, texts, tries=MAX_TRIES, hints=None):
     if not texts:
         return [], [], 0
-    feedback, problems = None, []
+    feedback, problems = hints or None, []
     for attempt in range(1, tries + 1):
         try:
             raw = call(SYSTEM, prompt(title, texts, feedback))
@@ -174,6 +174,12 @@ def translate_titles(call, record, tries=MAX_TRIES):
     return problems
 
 
+def rejected_hints(units):
+    """What the AI proofreader found wrong in an earlier translation of these sentences, as feedback for the translator."""
+    return [f"[{i}] an earlier translation \"{u['zh_rejected']['zh']}\" was rejected: {u['zh_rejected']['why']}"
+            for i, u in enumerate(units, 1) if u.get("zh_rejected")]
+
+
 def run(record, call, tries=MAX_TRIES, only_missing=True):
     """Translates the sections that still have an untranslated sentence (owner 2026-10-31: do only what is missing)."""
     report = {"sections": []}
@@ -187,11 +193,12 @@ def run(record, call, tries=MAX_TRIES, only_missing=True):
     started = time.time()
     wanted = [[u for u in s["units"] if not only_missing or not u.get("zh")] for s in sections]  # only the sentences that lack Chinese
     with ThreadPoolExecutor(cp.PARALLEL_SECTIONS) as pool:
-        results = list(pool.map(lambda sw: translate_section(call, sw[0]["title"], [u["text"] for u in sw[1]], tries),
-                                zip(sections, wanted)))
+        results = list(pool.map(lambda sw: translate_section(call, sw[0]["title"], [u["text"] for u in sw[1]], tries,
+                                                             rejected_hints(sw[1])), zip(sections, wanted)))
     for sec, units, (zh, left, used) in zip(sections, wanted, results):
         for unit, line in zip(units, zh):
             unit["zh"] = line
+            unit.pop("zh_rejected", None)
         report["sections"].append({"section": sec["title"], "tries": used, "translated": bool(zh), "problems": left,
                                    "sentences": len(units)})
         print(f"[translate] {sec['title']}: {len(units)} sentences, {used} tries, {'ok' if zh else 'NOT TRANSLATED'}, "

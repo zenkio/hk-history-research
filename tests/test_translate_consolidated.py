@@ -152,3 +152,21 @@ def test_chinese_reader_questions_get_the_same_punctuation_fixes():
     import translate_consolidated as tc
     rec = {"sections": [], "questions": [{"lang": "zh", "question": "這是什麼,為什麼 ?", "term": "x"}, {"lang": "en", "question": "a , b"}]}
     assert tc.normalize_record(rec) == 1 and rec["questions"][0]["question"] == "這是什麼，為什麼？" and rec["questions"][1]["question"] == "a , b"
+
+
+def test_a_translation_the_proofreader_rejected_is_retranslated_with_the_reason():
+    # the 2026-11-17 Chuenpi page: "Union Jack" came back as 聯邦旗 three times because the reason was never passed on
+    import ai_verify as av
+    rec = {"sections": [{"title": "S", "units": [{"text": "Lin arrived in 1839.", "zh": "林則徐於1839年抵達。"}]}]}
+    av.apply(rec, [{"check": "ai:unfaithful", "step": "translate", "section": "S", "where": 0, "pair": [0],
+                    "detail": "Lin is rendered as Elliot"}])
+    assert "zh" not in rec["sections"][0]["units"][0]
+    prompts = []
+
+    def call(system, prompt):
+        prompts.append(prompt)
+        return "[1] 林則徐於1839年抵達。"
+
+    tc.run(rec, call)
+    assert "was rejected: Lin is rendered as Elliot" in prompts[0]
+    assert rec["sections"][0]["units"][0]["zh"].startswith("林則徐") and "zh_rejected" not in rec["sections"][0]["units"][0]

@@ -154,6 +154,11 @@ def main(argv=None):
     if args.plan:  # topics the AI proposed (or the owner approved) become pages first, so this run already works on them
         import draft_page
         draft_page.draft_pending(root)
+        try:  # earlier pages about the same event become one more draft of the multi-AI page (owner 2026-11-17)
+            import adopt_existing
+            adopt_existing.adopt_pending(root)
+        except Exception as e:  # never stops the queue: the pages are worked on with what they have
+            print(f"[adopt] skipped: {cp._why(e)}", flush=True)
         queue = ps.load(root / QUEUE, {})
     ctl = rc.Control(root, expected=cp.parse_chain(args.model, os.environ.get("FALLBACK_MODELS", "")))
     done, issues = run_queue(call, args.model, root, args.minutes or queue.get("minutes", 150),

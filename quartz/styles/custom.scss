@@ -16,6 +16,15 @@
     color: var(--darkgray);
   }
 
+  // Sentences the pipeline has not finished (translation, wording): said on the page, retried by the nightly run.
+  .cons-open-work {
+    border-left: 4px solid #d9a400;
+    padding: 0.3rem 0.8rem;
+    margin: 0.5rem 0;
+    background: rgba(217, 164, 0, 0.12);
+    color: var(--darkgray);
+  }
+
   // In the narrative the tip is anchored to the paragraph (left edge) so it never runs off the box.
   p {
     position: relative;

@@ -210,7 +210,44 @@ def paragraph_from_units(head, units, facts):
                       u["text"] if u.get("zh") else None, u.get("conflict")) for u in units) + "</p>"
 
 
-def render(record, slug=None):
+TASKS = {"translate": ("translation", "翻譯"), "tidy": ("wording", "文字整理"), "fold": ("merging the drafts", "合併草稿")}
+
+
+def open_work(record, status=None):
+    """What the pipeline has not finished on this page, as [(task in English, in Chinese, where)] (owner 2026-11-17: a page
+    with a sentence still English must say so, and the nightly run retries it). From the record itself (a sentence with no
+    Chinese while the page has Chinese) and from the quality gate's findings that the repair rounds could not clear."""
+    work, seen = [], set()
+
+    def add(step, section, number):
+        key = (step, section, number)
+        if key not in seen:
+            seen.add(key)
+            en, zh = TASKS.get(step, (step, step))
+            work.append((en, zh, f"{section} #{number}"))
+    sections = record.get("sections", [])
+    if any(u.get("zh") for sec in sections for u in sec["units"]):
+        for sec in sections:
+            for i, u in enumerate(sec["units"], 1):
+                if not u.get("zh"):
+                    add("translate", sec["title"], i)
+    for f in (status or {}).get("gate", {}).get("findings", []):
+        if f.get("section") and isinstance(f.get("where"), int):
+            add(f.get("step", ""), f["section"], f["where"] + 1)
+    return work
+
+
+def open_work_note(work, translated):
+    if not work:
+        return []
+    en = "; ".join(f"{t} ({w})" for t, _, w in work)
+    zh = "；".join(f"{z}（{w}）" for _, z, w in work)
+    return ['<p class="cons-open-work">' + both(
+        f"Still being completed: {len(work)} sentence(s) are not finished yet: {esc(en)}. The pipeline retries them automatically at its next run.",
+        f"尚在完善：有 {len(work)} 句未完成：{esc(zh)}。流水線會在下次運行時自動重試。", translated) + "</p>"]
+
+
+def render(record, slug=None, pipeline_status=None):
     _LINK_STATE.update(slug=slug, seen=set())
     facts = {f["id"]: f for f in record["facts"]}
     ai = record.get("sentence_ai", [])
@@ -246,6 +283,7 @@ def render(record, slug=None):
             "Agreement between AIs is not evidence; official sources will be added to each fact later.",
             "根據下方各 AI 草稿寫成的綜合版本（未經核實）。電腦版請開啟右下角的開關，再把滑鼠移到句子上，即可看到哪些 AI 支持；手機版請按住句子片刻。"
             "多個 AI 意見一致並不等於有證據；官方來源日後會逐項加入。", has_zh) + "</p>",
+        *open_work_note(open_work(record, pipeline_status), has_zh),
         '<label class="fact-switch"><input type="checkbox"> '
         + both("Show which AI backs each sentence", "顯示每句由哪些 AI 支持", has_zh) + "</label>",
         '<span class="fact-colors" role="group" aria-label="Highlight colour">'
@@ -267,7 +305,9 @@ def build(root=Path(".")):
         if not record_file.is_file():
             raise SystemExit(f"{page}: has the marker but {record_file} is missing")
         record = json.loads(record_file.read_text(encoding="utf-8"))
-        page.write_text(text.replace(MARKER, render(record, page.stem), 1), encoding="utf-8")
+        status_file = root / "data/consolidated_status" / f"{page.stem}.json"
+        status = json.loads(status_file.read_text(encoding="utf-8")) if status_file.is_file() else None
+        page.write_text(text.replace(MARKER, render(record, page.stem, status), 1), encoding="utf-8")
         done.append(str(page))
     return done
 

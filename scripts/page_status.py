@@ -84,6 +84,16 @@ def next_step(status, page_md):
     return None
 
 
+def gate_can_retry(status):
+    """True when the quality gate left defects on a page whose steps are all current and may repair them again:
+    its rounds were used on an earlier day (2026-11-18: Bogue kept two English sentences because the queue skipped
+    every page whose steps were current, so the gate never looked at it again)."""
+    gate = status.get("gate", {})
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    rounds = gate.get("rounds", 0) if gate.get("day") == today else 0
+    return bool(gate.get("counts")) and rounds < GATE_ROUNDS
+
+
 def gaps(step, record, report):
     """Gaps a step left, from its report and the record (empty = clean)."""
     if step == "fold":

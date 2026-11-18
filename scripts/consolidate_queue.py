@@ -99,7 +99,8 @@ def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=t
             continue  # quarantined
         page_md = (root / ps.PAGES / f"{page}.md").read_text(encoding="utf-8")
         heal(root, page, issues)
-        if ps.next_step(ps.load(root / ps.STATUS / f"{page}.json", {}), page_md) is None:
+        status_now = ps.load(root / ps.STATUS / f"{page}.json", {})
+        if ps.next_step(status_now, page_md) is None and not ps.gate_can_retry(status_now):
             continue
         try:
             ran = ps.run_page(page, call, model, max_steps, root, ctl=ctl)

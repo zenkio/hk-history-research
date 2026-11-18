@@ -125,3 +125,21 @@ def test_the_page_worked_on_longest_ago_goes_first(tmp_path):
     assert cq.in_turn(root, ["a", "b", "c"]) == ["c", "b", "a"]  # c never worked on, then b, then a
     ps.save(root / ps.STATUS / "c.json", {"fold": {"state": "done", "at": "2026-11-18 01:00 UTC"}})
     assert cq.in_turn(root, ["a", "b", "c"]) == ["b", "c", "a"]  # ties keep the queue order
+
+
+def test_a_page_with_current_steps_but_defects_from_an_earlier_day_is_given_to_the_gate_again(tmp_path, monkeypatch):
+    root, log = setup(tmp_path, pages=("a",), queue={}), []
+    monkeypatch.setattr(ps, "execute", fake_execute(log))
+    cq.run_queue(None, "M", root)  # all steps current
+    status = ps.load(root / ps.STATUS / "a.json", {})
+    status["gate"] = {"rounds": ps.GATE_ROUNDS, "day": "2026-01-01", "counts": {"ai:unfaithful": 1}, "findings": []}
+    ps.save(root / ps.STATUS / "a.json", status)
+    ran = []
+    monkeypatch.setattr(ps, "run_page", lambda page, *a, **k: ran.append(page) or [])
+    cq.run_queue(None, "M", root)
+    assert ran == ["a"]
+    status["gate"]["counts"] = {}
+    ps.save(root / ps.STATUS / "a.json", status)
+    ran.clear()
+    cq.run_queue(None, "M", root)
+    assert ran == []  # clean pages are left alone

@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timezone
 
 import page_status as ps
 
@@ -166,3 +167,12 @@ def test_a_page_whose_repair_rounds_ran_out_yesterday_gets_its_rounds_again_toda
     ps.save(st_path, status)
     log.clear()
     assert "translate" not in ps.run_page("p", None, "M", root=root)  # the same day: no third round
+
+
+def test_gate_can_retry_only_with_defects_left_and_rounds_available():
+    """2026-11-18: Bogue kept English sentences; the queue skipped pages whose steps were current, so the gate never ran."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    assert not ps.gate_can_retry({})
+    assert not ps.gate_can_retry({"gate": {"rounds": 0, "day": today, "counts": {}}})  # clean
+    assert not ps.gate_can_retry({"gate": {"rounds": ps.GATE_ROUNDS, "day": today, "counts": {"ai:unfaithful": 1}}})
+    assert ps.gate_can_retry({"gate": {"rounds": ps.GATE_ROUNDS, "day": "2026-01-01", "counts": {"ai:unfaithful": 1}}})

@@ -57,6 +57,19 @@ def pages_of(root, queue):
     return [n for n in names if (root / ps.PAGES / f"{n}.md").exists()]
 
 
+def last_worked(root, page):
+    """When the pipeline last touched the page (the newest step or gate time; "" if never)."""
+    status = ps.load(root / ps.STATUS / f"{page}.json", {})
+    return max((v.get("at", "") for v in status.values() if isinstance(v, dict)), default="")
+
+
+def in_turn(root, pages):
+    """Pages not worked on for longest first: a page that took a whole run no longer starves the ones behind it
+    (2026-11-18: handover and Chuenpi used the 150 minutes in three runs in a row, so the 1841 British possession
+    and Bogue pages never got their translation repairs). The sort is stable, so the queue order breaks ties."""
+    return sorted(pages, key=lambda p: last_worked(root, p))
+
+
 def heal(root, page, issues):
     """Forgets a step that was accepted with gaps, once, so it runs again."""
     status = ps.load(root / ps.STATUS / f"{page}.json", {})
@@ -74,7 +87,7 @@ def run_queue(call, model="", root=Path("."), minutes=150, max_steps=12, clock=t
     queue = ps.load(root / QUEUE, {})
     issues = ps.load(root / ISSUES, {})
     started, waiting_in_row, done = clock(), 0, []
-    for page in pages_of(root, queue):
+    for page in in_turn(root, pages_of(root, queue)):
         if ctl is not None and (why := ctl.reason_to_stop()):
             print(f"[queue] not starting more work: {why}; everything done so far is saved, the next run resumes", flush=True)
             break

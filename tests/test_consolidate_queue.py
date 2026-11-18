@@ -115,3 +115,13 @@ def test_workflow_saves_the_page_files_not_only_the_data():
     wf = (Path(__file__).resolve().parent.parent / ".github/workflows/consolidate-queue.yml").read_text()
     add = [l for l in wf.splitlines() if "git add" in l and "consolidated_queue.json" in l]
     assert add and "content/05_Multi_AI" in add[0]
+
+
+def test_the_page_worked_on_longest_ago_goes_first(tmp_path):
+    """2026-11-18: the first two pages used the whole time budget in three runs, the third never got its turn."""
+    root = setup(tmp_path, queue={"pages": ["a", "b", "c"]})
+    ps.save(root / ps.STATUS / "a.json", {"fold": {"state": "done", "at": "2026-11-18 03:00 UTC"}})
+    ps.save(root / ps.STATUS / "b.json", {"fold": {"state": "done", "at": "2026-11-18 01:00 UTC"}})
+    assert cq.in_turn(root, ["a", "b", "c"]) == ["c", "b", "a"]  # c never worked on, then b, then a
+    ps.save(root / ps.STATUS / "c.json", {"fold": {"state": "done", "at": "2026-11-18 01:00 UTC"}})
+    assert cq.in_turn(root, ["a", "b", "c"]) == ["b", "c", "a"]  # ties keep the queue order
